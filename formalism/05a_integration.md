@@ -5,6 +5,8 @@ Date: 2026-07-11
 Depends on: [`01_signature.md`](01_signature.md), [`02_license_semantics.md`](02_license_semantics.md), [`03_consequence_update.md`](03_consequence_update.md), [`04_dominance_retention.md`](04_dominance_retention.md), [`05_atlas.md`](05_atlas.md)  
 Checkpoint: [`A_finite_stage_foundations.md`](../notes/checkpoints/A_finite_stage_foundations.md)
 
+> **Checkpoint A1 compactness notice.** This file's atom-level four-status presentation will be compressed in Task 13 to a separate well-formedness judgment plus three-valued meaningful atom assessments. Its named reason codes remain readable displays of indexed witnesses/obstacles, not primitive constructors. Task 11B must verify the legacy witness through that compact kernel rather than reproduce a closed reason-code enum.
+
 ## Executive resolution
 
 Task 11A compared three coherent interfaces:
@@ -313,7 +315,7 @@ Undefined > Refused > Withheld > Granted
 
 for the top-level diagnostic tag. Every component result remains in `Diag`.
 
-The top-level tag is never a sufficient safety report. In particular, an `Undefined` atom can dominate the aggregate tag while another required atom carries a certified safety refusal. Every action consumer must inspect `Diag` (or a lossless safety projection of it), and any certified safety refusal blocks action even when the displayed aggregate tag is `Undefined`. Task 13 must decide whether to retain this diagnostic obligation or adopt an explicit escalation product rather than a single four-chain tag.
+In this historical four-chain presentation, the top-level tag is never a sufficient safety report: an `Undefined` atom can dominate the aggregate while another required atom carries a certified safety refusal. Until consolidation, every action consumer must inspect `Diag` (or a lossless safety projection). The Checkpoint A1 compact kernel removes this semantic masking by evaluating atoms only after `WF` succeeds; a malformed request is `Undefined`, while every meaningful atom is refuted, open, or supported.
 
 ### 3.4 Satisfaction
 

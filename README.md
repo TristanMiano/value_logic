@@ -31,6 +31,8 @@ The current canonical profiles distinguish pragmatic reliance from two strengths
 
 None of these judgments claims global optimality, universal truth, or immunity from later revision.
 
+The detailed typed records in the early formalism are now treated as an elaboration/implementation schema. The planned paper-level core uses three principal carriers—evaluated use plans, reliance contexts, and finite epistemic states—with target worlds as a semantic index. Its four public outcomes are derived compactly: failed well-formedness gives `Undefined`; otherwise each requirement is refuted, open, or supported, and finite meet gives `Refused`, `Withheld`, or `Granted`. Named reason codes are diagnostic renderings of atom-indexed witnesses or obstacles, not primitive logical types.
+
 ## Repository map
 
 - [`TODO.md`](TODO.md) is the resumable project-control document and identifies the next task.

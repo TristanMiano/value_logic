@@ -1,16 +1,19 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: Task 5 specification, version 0.4 after external audit checkpoint A1
+Status: Task 5 specification, version 0.5 after Checkpoint A1 theorem/elegance amendment
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
 External audit checkpoint A1: 2026-07-11
+Checkpoint A1 theorem/elegance amendment: 2026-07-12
 
 ## Executive specification
 
 This project will develop and test a **finite-stage, domain-relative logic of licensed model use**. Its central judgment does not say that a theory is true. It records a bounded agent's present model-use status for a stated domain and purpose under a mandatory finite requirement profile `P`: `Lic_P`. Profiles state whether adequacy, fallback improvement, hard constraints, trace, finite comparison, coverage, bridge, or other typed atoms are required or merely reported.
 
 The semantic models are explicitly two-sorted pairs `<W,S>`: `W` carries target/world facts such as population risk, while `S` carries the bounded agent's finite record, certificates, library, and operational statuses. No soundness claim may treat a stage certificate as an unqualified world fact; it must state the certificate mode and the relation connecting the two sorts.
+
+The public mathematical core must be materially smaller than the typed implementation schema. Its target presentation has three principal carriers—evaluated use plans `E`, reliance/evaluation contexts `Q`, and finite epistemic states `S`—with worlds as a semantic index and profiles as finite requirement families. Tasks, frames, domains, losses, risk spaces, records, libraries, searches, budgets, certificates, reason displays, and provenance remain available as dependent data or elaborations without all becoming primitive paper-level sorts.
 
 The logic must explain several possibilities without conflating them: an older model may remain in actual use under another purpose, profile, subdomain, resource regime, or fallback role; it may remain adequate but unselected; or it may remain only in the archive after a successor is preferred. Several models may also remain simultaneously usable on overlapping domains. A basic ReLU MLP will be studied as a finite-stage implementation of selected scoring, status, gating, comparison, and routing parts of this logic, coupled where necessary to an external registry. The project will not assume that a fixed finite network contains an actually infinite sequence of future theories.
 
@@ -269,6 +272,8 @@ The formalism, architecture, experiments, and final exposition must satisfy the 
 - **DR-L10 — Scalarization discipline:** Scalar thresholds are used only with an explicit loss and scale; vector or partial-order alternatives remain available.
 - **DR-L11 — World/stage separation:** Target adequacy, finite-stage certification, and mixed claims are explicitly typed; soundness names a class of `<W,S>` pairs and a certificate-mode bridge.
 - **DR-L12 — Design/verdict separation:** Replacing a proposed definition is recorded as a superseded design default, not as falsification unless a separate forced-design proposition is stated and countermodeled.
+- **DR-L13 — Core economy:** A distinction becomes a primitive carrier or judgment only when a theorem, countermodel, or typing obstruction requires it. The detailed record schema belongs in an elaboration/implementation layer.
+- **DR-L14 — Factored status:** `Undefined` arises from failed well-formedness. Meaningful required atoms use `K_3={refuted,open,supported}` and finite meet to derive `Refused`, `Withheld`, or `Granted`; diagnostic reasons are indexed witnesses/obstacles rather than a closed global enum.
 
 ### Representational and neural requirements
 
@@ -282,7 +287,7 @@ The formalism, architecture, experiments, and final exposition must satisfy the 
 - **DR-N8 — Finite-stage capacity:** Network capacity and library size are reported; open-endedness is implemented by staged expansion or external memory.
 - **DR-N9 — Atlas distinction:** Activation-region geometry, scientific licensed regions, and router selection regions are evaluated separately.
 - **DR-N10 — Transparent interface:** The preferred system can return active models, component margins, chosen/fallback action, and provenance rather than only an argmax label.
-- **DR-N11 — Consistency by construction:** Component atoms and missingness are supervised; top-level four-way status is derived through the formal aggregation rule, with `Diag` and certified safety reasons preserved.
+- **DR-N11 — Consistency by construction:** Meaningful atom state and missingness/obstacles are supervised; static well-formedness is checked separately; top-level four-way status is derived through `WF + K_3`, with indexed diagnostics and safety projections preserved.
 
 ### Empirical and interpretability requirements
 
@@ -300,7 +305,7 @@ A successful project should produce:
 1. a typed finite-stage license language and semantics;
 2. consequence and update rules that keep object-level reasoning local to licensed domains;
 3. definitions of dominance, retention, domain splitting, overlap, bridge types, selection, fallback, and abstention;
-4. at least one nontrivial theorem or countertheorem about update persistence, open-ended stability, supersession, or retention;
+4. a theorem spine containing at least three paper-carrying results from distinct clusters: open-ended stability/impossibility, update/profile/diagnostic characterization, domain/router transport bounds, and neural representation/impossibility;
 5. an explicit ReLU representation or approximation result for a nontrivial finite fragment;
 6. an information audit showing what each neural quantity preserves and loses;
 7. a reproducible synthetic experiment involving overlap, gaps, supersession, and routing;
@@ -308,7 +313,7 @@ A successful project should produce:
 9. an audited, LaTeX-heavy Gist-compatible paper;
 10. a plain-text, low-equation Substack adaptation making the same qualified claims.
 
-The minimal publishable mathematical core is items 1–6 plus clear counterexamples and limitations. The experimental claims are publishable only to the strength actually supported by items 7–8.
+The minimal publishable mathematical core is items 1–6 plus clear counterexamples and limitations. Definitions, deterministic aggregation facts, standard set partitions, and one-line order lemmas do not count toward the three-result theorem spine, although they may support it. A failed target can count when replaced by a precise countertheorem with project-impact propagation. The experimental claims are publishable only to the strength actually supported by items 7–8.
 
 ## 12. Non-goals
 
@@ -350,7 +355,7 @@ The project must not move silently between these kinds. In particular, a formal 
 
 ### 14.1 Formal success
 
-The proposal succeeds formally if the signature and `<W,S>` semantics are typed, the consequence/update rules are unambiguous, at least one update/stability/supersession result requires more than unfolding a definition, and stronger invalid claims are exposed by counterexamples. Finite-algebra corollaries and definitional sanity checks remain useful but do not alone meet this bar. It fails if “logic” remains only a name for comparing scalar losses.
+The proposal succeeds formally if the compact signature and `<W,S>` semantics are typed, the detailed schema has a semantics-preserving elaboration into that core, and at least three paper-carrying results survive across distinct theorem clusters. The intended spine currently comprises: an atom-level stability/non-certifiability theorem; an update-persistence or profile-refinement characterization; a domain/routing or bridge risk bound; and a positive/negative ReLU representation result. Finite-algebra corollaries, definitional sanity checks, and renamed standard facts remain useful but do not count by themselves. It fails if “logic” remains only a name for comparing scalar losses or if the paper's mathematical weight is carried by record definitions rather than results.
 
 ### 14.2 Neural success
 
@@ -396,6 +401,8 @@ Task 11A selected profile-indexed licensing. Layered terms remain readable alias
 | certified adequacy | evidence supports adequacy at a stated calibration/confidence level | infallible proof |
 | license profile `P` | finite versioned set of required and report-only typed atoms plus validity/provenance | hidden or universal requirement set |
 | `Lic_P` | finite-stage grant for one model/use plan, scope, and explicit profile | truth, final belief, legal permission, or a grant under every profile |
+| `K_3` atom value | refuted, open, or supported state of one meaningful requirement | a type error or a complete explanation by itself |
+| diagnostic reason | atom-indexed counterwitness, obstacle, or support/provenance rendering | a closed primitive enum of every possible failure |
 | `P_rely` / use warrant | named profile requiring adequacy, fallback improvement, hard constraints, and trace | necessarily current comparative preference |
 | comparison status | dominated, relatively undefeated, certified undominated, incomparable, unknown, or undefined under a named finite profile/scope | basic adequacy or global optimality |
 | `P_pref-rel` / relative preferred use | `P_rely` plus no certified dominator in the evaluated set; unknown pairs disclosed | resolved or global optimality |
@@ -427,16 +434,21 @@ The following decisions are now project defaults unless a later theorem, experim
 10. The posts supply the motivational arc; proofs, experiments, and verified literature supply warrants for public factual claims.
 11. `Licensed model cover` is the weakest formal cover term; richer atlas, Pareto, splitting, bridge, merge, and policy/value machinery are extensions unless selected for the frozen core.
 12. Selectors declare their required profile; continued old-model use, usable-but-unselected status, and archive-only retention are different outcomes.
+13. The 28-sort Task 7 inventory is a typed elaboration, not the paper's primitive ontology; the compact core targets `E`, `Q`, and `S`, with `W` as a semantic index.
+14. Well-formedness is checked before evidence status. Meaningful atoms use `K_3`; `Undefined` is not another degree of evidential failure.
+15. Flat reason codes are presentation/implementation labels derived from atom identity, polarity, witness or obstacle, and provenance.
+16. The mathematical contribution is judged by a multi-cluster theorem spine, not by the number of definitions labeled “Theorem.”
 
 ## 18. Specification gates after external audit checkpoint A1
 
 Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A resolved the integration ambiguity by selecting mandatory profile-indexed `Lic_P`, defining canonical reliance/relative-preference/resolved-preference profiles, and validating them in one integrated witness. Checkpoint A1 repaired the witness scope, introduced `<W,S>` semantics, corrected the CPWL attribution, and identified the theorem/executability/motivation risks. Remaining gates are:
 
-- an executable, independently checked reference for the finite witness and status/update semantics (Task 11B);
+- an executable, independently checked compact `WF + K_3` reference for the finite witness and status/update semantics (Task 11B);
 - the strongest atom-level continuation-based stability/non-finality result available without covert truth or provability assumptions (Task 12);
 - verified primary-source positioning for the core consequence, evidence, awareness, partiality, and fallback structures (Task 12A);
-- the smallest two-sorted core syntax/semantics/proof system, usable atom/profile refinement order, status algebra, canonical glossary, and exact boundary between core and extensions (Task 13);
-- which core rules/results survive rigorous proof and countermodel audit (Task 14);
+- the smallest three-carrier/two-sorted core, typed elaboration map, usable atom/profile refinement order, diagnostic algebra, canonical glossary, and exact boundary between core and extensions (Task 13);
+- which core rules/results survive rigorous proof and countermodel audit, including update persistence, profile relative completeness, and diagnostic minimality (Task 14);
+- which domain-transport, routed-risk, and bridge-risk bounds survive with exact hypotheses (Task 14A);
 - the smallest structured encoding and ReLU fragment that preserves four-way status, signed component margins, active usable sets, comparison/selection information under the Task 11A design, fallback, and external trace pointers (Tasks 15–17);
 - the appropriate structured objective and simple baseline for multi-warrant, four-status, calibration, and abstention behavior (Task 18);
 - an independently defined synthetic generator and separate functional, calibration, retention, routing, and activation-alignment metrics (Tasks 19–21);

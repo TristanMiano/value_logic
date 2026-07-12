@@ -6,9 +6,11 @@ Scope: syntax and typing only; license truth conditions begin in Task 8
 
 > **Task 11A interface notice.** This historical signature predates mandatory profile indexing. Read its full bare `Lic` constructor as the strong named profile `Lic_{P_full^8}`, not as the universal meaning of licensing. Current-license and active-set views are profile-indexed. See [`05a_integration.md`, §16](05a_integration.md#16-repairs-to-completed-interfaces); Task 13 will consolidate the notation.
 
+> **Checkpoint A1 compactness notice.** The inventory below is a typed elaboration and implementation schema, not the intended primitive signature of the paper. Task 13 must compress the mathematical core to use plans, reliance/evaluation contexts, and finite epistemic states, with target worlds as a semantic index; the remaining types survive as dependent fields, witnesses, derived objects, or extensions. Do not reproduce the 28-sort table as the paper's core ontology.
+
 ## Executive decision
 
-The calculus will use a **many-sorted, finite-stage language with typed records and dependent task interfaces**. Its primitive objects are not truth degrees. They are agents, stages, versioned models, typed cases and domains, evaluation specifications, evidence records, libraries, search traces, costs, fallbacks, and provenance objects.
+This Task 7 elaboration uses a **many-sorted, finite-stage language with typed records and dependent task interfaces** to prevent invalid combinations. Its objects are not truth degrees. It names agents, stages, versioned models, typed cases and domains, evaluation specifications, evidence records, libraries, search traces, costs, fallbacks, and provenance—but Checkpoint A1 no longer treats every named record type as primitive in the paper-level calculus.
 
 A domain is neither always a set nor always a probability distribution. It is a typed **evaluation scope** that can expose several compatible views:
 
@@ -72,9 +74,9 @@ The calculus must not use one equality sign for every purpose.
 
 Two differently derived or versioned models can be extensionally equivalent while remaining different library entries. Two domains can have equal carriers while differing in distributions, tasks, frames, or provenance.
 
-## 2. Sort inventory
+## 2. Typed elaboration inventory
 
-The core sorts are:
+The elaborated schema names the following sorts. Task 13 must recover the compact `E,Q,S` reduct described in the notice above and justify any type retained as primitive:
 
 | Sort | Notation | Informal role |
 |---|---|---|

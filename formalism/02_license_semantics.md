@@ -7,6 +7,8 @@ Scope: finite-stage adequacy, certification, reliance, search closure, abstentio
 
 > **Task 11A interface notice.** This historical artifact predates mandatory profile indexing. Read its full bare `Lic` conjunction as the strong named profile `Lic_{P_full^8}`, not as the universal meaning of licensing. Read current-license and active-set views as profile-indexed. See [`05a_integration.md`, §16](05a_integration.md#16-repairs-to-completed-interfaces); Task 13 will consolidate the notation.
 
+> **Checkpoint A1 compactness notice.** The four public outcomes remain, but the flat reason-code list in §2 is illustrative implementation vocabulary rather than primitive logical syntax. The planned core first checks well-formedness (`Undefined` on failure), then assesses each meaningful requirement atom in `K_3={refuted,open,supported}` and aggregates by finite meet. Reasons factor through atom identity plus counterwitness, obstacle, and provenance. Task 13 will state the canonical algebra and prove its information properties.
+
 ## Executive definition
 
 A finite-stage license is an evidence-relative permission to rely on a versioned model for a typed evaluation scope. It is not a truth value assigned to the model.
@@ -142,7 +144,7 @@ Status =
   + Undefined(type_or_execution_error,trace?).
 ```
 
-Typical reasons include:
+Typical **derived display labels** include:
 
 ```text
 HardRiskViolation
@@ -160,6 +162,8 @@ LossMismatch
 UnavailableFallback
 BrokenProvenance.
 ```
+
+These labels abbreviate the requirement being assessed plus its witness, counterwitness, obstacle, or failed well-formedness derivation. They are not intended to form a closed exhaustive enum; the Checkpoint A1 compact core factors them through `WF + K_3`.
 
 ### 2.2 Conjunctive aggregation
 
