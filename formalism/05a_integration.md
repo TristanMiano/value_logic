@@ -7,6 +7,8 @@ Checkpoint: [`A_finite_stage_foundations.md`](../notes/checkpoints/A_finite_stag
 
 > **Checkpoint A1 compactness notice.** This file's atom-level four-status presentation will be compressed in Task 13 to a separate well-formedness judgment plus three-valued meaningful atom assessments. Its named reason codes remain readable displays of indexed witnesses/obstacles, not primitive constructors. Task 11B must verify the legacy witness through that compact kernel rather than reproduce a closed reason-code enum.
 
+> **Task 11B verification note.** The compact executable reference and its assertions are in [`verification/`](../verification/). `python -m verification` checks this file's finite witness tables, transitions, diagnostics, and local links. The implementation is a semantic regression oracle for later consolidation, not an additional primitive ontology.
+
 ## Executive resolution
 
 Task 11A compared three coherent interfaces:

@@ -40,6 +40,7 @@ The detailed typed records in the early formalism are now treated as an elaborat
 - [`notes/`](notes/) contains the project specification, claim ledger, literature map, checkpoint records, and focused research notes.
 - [`posts/`](posts/) contains earlier motivational writing. It informs the narrative but is not treated as proof or external evidence.
 - [`llm_convos/`](llm_convos/) contains the conversations from which several initial ideas were extracted and critically assessed.
+- [`verification/`](verification/) contains the standard-library executable semantics, integrated finite witness, tests, and local-link checker.
 - [`references.bib`](references.bib) is the working bibliography.
 
 The planned final public artifacts are:
@@ -63,8 +64,8 @@ The historical interfaces in `formalism/01_signature.md` through `formalism/05_a
 
 ## Project status
 
-Tasks 0–11A, Checkpoint A, and the unscheduled external-audit Checkpoint A1 are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed.
+Tasks 0–11B, Checkpoint A, and the unscheduled external-audit Checkpoint A1 are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed. The compact `WF + K_3` semantics and the complete finite witness are now executable and tested with `python -m verification`.
 
-The current next step is Task 11B: mechanizing and testing the integrated witness before further formalization.
+The current next step is Task 12: analyzing continuation-based open-endedness and non-finality.
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.
