@@ -1,0 +1,92 @@
+
+Unfairly Maligned
+
+These are neither musings nor ramblings, they are incredibly serious thoughts.
+By Thoth-Hermes
+· Launched 3 years ago
+By subscribing, you agree Substack's Terms of Use, and acknowledge its Information Collection Notice and Privacy Policy.
+Unfairly Maligned
+Unfairly Maligned
+Short(er) Form
+Condensed response to "hidden complexity of wishes"
+Thoth-Hermes
+Dec 08, 2024
+
+A debate surrounding Eliezer Yudkowsky’s post The Hidden Complexity of Wishes emerged, in which Eliezer responds to criticism saying,
+
+    (It has come to my attention that this article is currently being misrepresented as proof that I/MIRI previously advocated that it would be very difficult to get machine superintelligences to understand or predict human values. This would obviously be false, and also, is not what is being argued below. The example in the post below is not about an Artificial Intelligence literally at all! If the post were about what AIs supposedly can't do, the central example would have used an AI! The point that is made below will be about the algorithmic complexity of human values. This point is relevant within a larger argument, because it bears on the complexity of what you need to get an artificial superintelligence to want or value; rather than bearing on what a superintelligence supposedly could not predict or understand. -- EY, May 2024.)
+
+If we represent the debate by four perspectives, claim and counter-claim from the perspective of each, we have something like (these are my attempts at paraphrasing and condensing):
+
+    Eliezer Yudkowsky (the claim): Values are algorithmically complex. If they are specified incorrectly, bad things will happen. Values need to be shared completely.
+
+    Matthew Barnett (the counter-claim): Examples like GPT-4 show that values are easier to be learned than previously thought.
+
+    Yudkowsky (representing Barnett’s counter-claim): This has misunderstood the argument by mischaracterizing it as claiming that we claimed AI would not be able to understand human values. We claimed it would understand them just fine, but they wouldn’t necessarily have them.
+
+    Barnett (representing Yudkowsky’s (counter-counter)-claim): Yudkowsky is essentially arguing that GPT-4 represents progress in getting an AI to understand human values, but not have them. It is no more than the “genie knows but doesn’t care.” But this is confusing, because this is not literally what I said!
+
+Why I think that a simple argument renders this argument moot (but Barnett as being mostly correct here):
+
+Yudkowsky implies, in his original essay, that capabilities can be learned at a faster rate than values can be, which is why learning the wrong values would be catastrophic.
+
+Therefore, when we observed the example of GPT-4 doing what we want to a large extent, this should not update us towards believing that it learnt our values properly, merely that it had become very capable.
+
+For reasons that I gave sporadically throughout this long post, I think that actually, it does learn our values approximately, because of an isomorphism between a “capability representation” and a “value representation” of an agent.
+
+I’ll repeat it again in simple form here:
+
+    Assume we have some kind of representation of “state.” This would be expected to be as much of the universe as it is possible for an agent to detect via all of its sensory input channels. It could also, plausibly, be aware of some of its own state.
+
+    We have two possible representations of agents from this, and they are both functions of the input state:
+
+        A “policy” (what I was calling “capability” earlier), a mapping from an input state to an output state.
+
+        A “utility” function, a mapping from an input state to a real number. In both cases, the domain is shared but not the codomain.
+
+    There is an isomorphism between the two:
+
+        From “utility” —> “policy”, we simply equip the utility function with a decision theory. If the utility function is self-representational enough, it may already prefer a decision theory. At the very least it simply selects the next best state from the list of possible states that can be reached.
+
+        From “policy” —> “utility”, we reconstruct it approximately by sampling a huge number of trajectories of the policy over as much of the domain as possible. The “utility” at a given state (from another reachable state) is the number of times that state has been reached from it.
+
+    Therefore, an agent can be said to have a value for every element of the input domain. These values are not compressed as simple rules.
+
+Now, I think this is relevant to the argument because it seems to mean that AI agents like GPT-4 do learn a “value representation” that approximates whatever value representation was in their training data, namely, the full set of human-generated data which it learns to mimic.
+
+Consider as well illustrations of hypothesized value fragility such as (once again repeating a point made near the end of this post):
+
+    “like dialing nine out of ten phone digits correctly does not connect you to a person 90% similar to your friend”
+
+    “For example, all of our values except novelty might yield a future full of individuals replaying only one optimal experience through all eternity.”
+
+Both of these examples presuppose that values would be computed separately, from a smaller input domain than the full “policy” actually would require to be able to do any tasks with the required degree of magnitude and complexity.
+
+Both assume that a much simpler rule would be used to compute value than the thing actually doing the task, but the simple argument I gave above shows that the full representation of a value function would need to be at least as complex as the agent itself. It would be as if the value function were set equal to zero for huge swaths of the input domain - an input domain that would have to be large enough for the agent to be able to do anything complex enough to cause actual harm.
+
+Intuitively, you can think of these examples as requiring an agent that uses X as its input domain, which could involve sight, sound, etc., as well as being able to model its state internally well enough to be able to cause, say, the universe to feature individuals replaying one experience for all eternity. But the utility function it uses apparently only maps over a simple list of words for human “values.” This would actually be technically incorrect, because in order for it to do anything this complicated, its full utility function has to map over X, not just the list of words.
+
+In principle, one could design an adequately complicated value function that does map over all of X, and that approximates actually causing the universe to trend towards such a state, but such a function would not literally be as simple as the one described.
+
+My overall take is that we shouldn’t have expected any of the current frontier AI models to have learned a dangerously complicated but also highly contrived utility function like that.
+
+Subscribe to Unfairly Maligned
+By Thoth-Hermes · Launched 3 years ago
+These are neither musings nor ramblings, they are incredibly serious thoughts.
+By subscribing, you agree Substack's Terms of Use, and acknowledge its Information Collection Notice and Privacy Policy.
+Discussion about this post
+You're not (that) evil if you pick red
+[Update: full answer with o1 here.]
+Nov 27, 2024 • Thoth-Hermes
+Contra EA and Rationality
+The least charitable argument against these movements I'm comfortable with mustering.
+Sep 16, 2024 • Thoth-Hermes
+Utility- and Preference-Based Logics, and the “Logic” Implemented by Neural Networks
+From truth to value: preference logics, open-set semantics, and the geometry of ReLU reasoning
+Jan 4 • Thoth-Hermes
+Ready for more?
+© 2026 Thoth-Hermes IV · Privacy ∙ Terms ∙ Collection notice
+Start your Substack
+Get the app
+Substack is the home for great culture
+

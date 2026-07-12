@@ -1,0 +1,1696 @@
+ChatGPT
+
+Thu, Jul 2 at 10:16 PM
+
+Yes—if an agent is running the system, ϵϵ is better understood as an adequacy tolerance on a loss or discrepancy measure, not as one universal thing called “error.”
+
+A cleaner notation is:
+Adequate⁡(T,D,L,ϵ)iffLD(T)≤ϵ
+Adequate(T,D,L,ϵ)iffLD​(T)≤ϵ
+
+where:
+
+    TT is the theory,
+
+    DD is the domain of application,
+
+    LL specifies how mismatch is measured,
+
+    ϵϵ is the maximum acceptable mismatch.
+
+So ϵϵ has meaning only together with LL.
+Error can mean several different things
+
+For a prediction y^y^​ and observation yy, possible discrepancies include:
+∣y^−y∣
+∣y^​−y∣
+
+absolute error,
+(y^−y)2
+(y^​−y)2
+
+squared error,
+∣y^−y∣∣y∣
+∣y∣∣y^​−y∣​
+
+relative error, or, for probabilistic predictions,
+−log⁡PT(y)
+−logPT​(y)
+
+log loss.
+
+These are not interchangeable. They represent different ideas of what it means for a theory to perform badly.
+
+There are also broader possibilities:
+
+    failure to reproduce a probability distribution,
+
+    incorrect qualitative behavior,
+
+    poor counterfactual predictions,
+
+    excessive computational cost,
+
+    bad decisions produced by relying on the theory.
+
+Thus the appropriate loss may be:
+L(T)=Ex∼D[ℓ(T(x),y(x))]
+L(T)=Ex∼D​[ℓ(T(x),y(x))]
+
+where ℓℓ is a local loss and DD gives the situations over which performance matters.
+Does it have units?
+
+Sometimes.
+
+Absolute error inherits the units of the observable:
+∣x^−x∣=0.2 meters.
+∣x^−x∣=0.2 meters.
+
+Squared error has squared units:
+(x^−x)2=0.04 meters2.
+(x^−x)2=0.04 meters2.
+
+Relative error and many normalized losses are dimensionless:
+∣x^−x∣x=0.01.
+x∣x^−x∣​=0.01.
+
+For comparing theories across different observables, a dimensionless quantity is often preferable. One might normalize by measurement uncertainty or by a task-relevant scale:
+z=x^−xσx.
+z=σx​x^−x​.
+
+Then z=1z=1 means the prediction missed by one observational standard deviation.
+
+But normalization is substantive. Choosing the scale σxσx​ determines what kinds of mismatch count as important.
+Does it have bounds?
+
+That depends on the loss.
+
+Absolute and squared error usually lie in:
+[0,∞).
+[0,∞).
+
+Classification error lies in:
+[0,1].
+[0,1].
+
+Total variation distance between probability distributions lies in:
+[0,1].
+[0,1].
+
+Log loss is generally unbounded above because assigning nearly zero probability to an event that occurs can produce arbitrarily large loss.
+
+The threshold ϵϵ itself should normally be finite and task-dependent. For example:
+ϵorbital navigation<ϵclassroom illustration.
+ϵorbital navigation​<ϵclassroom illustration​.
+
+A Newtonian calculation might be adequate for drawing a rough planetary orbit but inadequate for GPS timing.
+It is usually not a single scalar
+
+A universal scalar ϵϵ would conceal too much. A theory may be excellent along one dimension and poor along another.
+
+A better representation is often a vector:
+ϵ=(ϵposition,ϵenergy,ϵtiming,ϵprobability).
+ϵ=(ϵposition​,ϵenergy​,ϵtiming​,ϵprobability​).
+
+Adequacy then means:
+Li(T,D)≤ϵifor every relevant i.
+Li​(T,D)≤ϵi​for every relevant i.
+
+Alternatively, the system can retain the whole loss profile instead of combining it into one number. This avoids arbitrary tradeoffs, such as deciding that a large timing error can be compensated for by a small energy error.
+For an agent, decision loss may be the deepest notion
+
+An agent generally does not care about predictive error for its own sake. It cares about the consequences of acting on a model.
+
+Suppose the true environment is ww, theory TT causes the agent to choose action aTaT​, and utility is U(a,w)U(a,w). Then the relevant loss could be regret:
+Ldecision(T)=U(a∗,w)−U(aT,w),
+Ldecision​(T)=U(a∗,w)−U(aT​,w),
+
+where a∗a∗ is the best action available with perfect information.
+
+This produces an important result: two theories can be empirically distinguishable but decision-equivalent for a particular agent. Conversely, a numerically tiny discrepancy can matter greatly near a critical threshold.
+
+For example, a 0.1%0.1% error may be irrelevant when estimating the height of a building, but catastrophic when predicting whether a spacecraft passes above or below a planetary atmosphere.
+
+So the most useful hierarchy is:
+raw discrepancy→normalized predictive loss→decision loss.
+raw discrepancy→normalized predictive loss→decision loss.
+The agent also has uncertainty about the loss
+
+The true expected loss is normally unknown. The agent only has an estimate:
+L^D(T).
+L
+D​(T).
+
+It should therefore represent something like:
+P(LD(T)≤ϵ∣E)≥α.
+P(LD​(T)≤ϵ∣E)≥α.
+
+This says:
+
+    Given current evidence, there is at least confidence αα that the theory’s loss in domain DD is below tolerance ϵϵ.
+
+That is stronger and more honest than simply asserting:
+LD(T)≤ϵ.
+LD​(T)≤ϵ.
+
+The full adequacy claim would therefore be:
+Adequate⁡(T,D,L,ϵ,α).
+Adequate(T,D,L,ϵ,α).
+Best interpretation
+
+In the logic we were constructing, ϵϵ should mean:
+
+    The largest task-relevant loss that the system is prepared to treat as negligible.
+
+It is not an intrinsic property of the theory alone. It depends on the observable, units, domain, measurement process, intended action, and costs of being wrong.
+
+So yes: for an operating agent, ϵϵ is most naturally a threshold applied to a loss functional. “Error” is merely the simplest special case, appropriate when there is one observable, one scale, and a straightforward notion of distance.
+
+Friday 12:53 PM
+I'm very interested in recursion or nested structures in something like "Adequate(Newtonian mechanics,D,ϵ)". It seems intuitively possible. For example, newtonian mechanics itself has rules and mechanisms for taking different approaches on different framings of a problem, for example. I could if I want to consider different things to be an "object" in a setup, work in one reference frame versus another, or change units, just to name a few things. Can you try your best to show that nesting these structures is possible?
+
+A useful way to make the nesting work is to stop treating “Newtonian mechanics” as one flat theory and treat it as a generator of model-building procedures. Then the adequacy claim can apply at several levels at once.
+
+Yes. The nesting is not only possible; it is probably necessary.
+
+The basic move is this: instead of treating
+Adequate⁡(Newtonian mechanics,D,ϵ)
+Adequate(Newtonian mechanics,D,ϵ)
+
+as one flat judgment, treat Newtonian mechanics as a model-building framework. It contains rules for constructing smaller models, choosing representations, changing frames, idealizing objects, and composing subsystems.
+
+So a more realistic form is:
+M=Build⁡(T,F,I,P)
+M=Build(T,F,I,P)
+
+where:
+T=theory
+T=theory
+F=framing choices
+F=framing choices
+I=idealizations
+I=idealizations
+P=parameters / measurements
+P=parameters / measurements
+
+and then the adequacy claim is:
+Adequate⁡(M,D,L,ϵ).
+Adequate(M,D,L,ϵ).
+
+But now FF, II, and PP can themselves be evaluated for adequacy.
+
+So we get nested adequacy claims like:
+Adequate⁡(Build⁡(Newtonian mechanics,F,I,P),D,L,ϵ).
+Adequate(Build(Newtonian mechanics,F,I,P),D,L,ϵ).
+
+Then inside that:
+Adequate⁡(F,DF,LF,ϵF)
+Adequate(F,DF​,LF​,ϵF​)
+Adequate⁡(I,DI,LI,ϵI)
+Adequate(I,DI​,LI​,ϵI​)
+Adequate⁡(P,DP,LP,ϵP)
+Adequate(P,DP​,LP​,ϵP​)
+
+The outer claim says: “The resulting Newtonian model is good enough.”
+
+The inner claims say: “The chosen reference frame, object boundaries, approximations, and parameter estimates are themselves good enough for this use.”
+Example: modeling a falling object
+
+Suppose we say:
+Adequate⁡(Newtonian mechanics,D,ϵ)
+Adequate(Newtonian mechanics,D,ϵ)
+
+for a falling ball near Earth.
+
+But even this simple case hides many nested modeling choices.
+
+We may choose:
+F1=Earth-fixed reference frame
+F1​=Earth-fixed reference frame
+I1=treat the ball as a point mass
+I1​=treat the ball as a point mass
+I2=ignore air resistance
+I2​=ignore air resistance
+I3=treat g as constant
+I3​=treat g as constant
+P1=g=9.8 m/s2
+P1​=g=9.8 m/s2
+
+Then the actual model is not just “Newtonian mechanics.” It is:
+M=Build⁡(Newtonian mechanics,F1,I1,I2,I3,P1).
+M=Build(Newtonian mechanics,F1​,I1​,I2​,I3​,P1​).
+
+The outer adequacy claim might be:
+Adequate⁡(M,short fall near Earth,1 cm).
+Adequate(M,short fall near Earth,1 cm).
+
+But this depends on nested adequacy claims:
+Adequate⁡(point-mass approximation,D,0.5 cm)
+Adequate(point-mass approximation,D,0.5 cm)
+Adequate⁡(ignore air resistance,D,0.4 cm)
+Adequate(ignore air resistance,D,0.4 cm)
+Adequate⁡(constant g,D,0.1 cm)
+Adequate(constant g,D,0.1 cm)
+
+Together they support the outer claim.
+
+This is very natural. The parent model inherits its adequacy from the adequacy of its sub-modeling choices.
+Error budgets make the nesting explicit
+
+A good way to formalize nesting is with an error budget.
+
+Suppose the total allowed loss is:
+ϵ.
+ϵ.
+
+Then we allocate sub-tolerances:
+ϵF+ϵI+ϵP+ϵN≤ϵ.
+ϵF​+ϵI​+ϵP​+ϵN​≤ϵ.
+
+For example:
+ϵF=loss from frame choice
+ϵF​=loss from frame choice
+ϵI=loss from idealization
+ϵI​=loss from idealization
+ϵP=loss from parameter uncertainty
+ϵP​=loss from parameter uncertainty
+ϵN=loss from numerical approximation.
+ϵN​=loss from numerical approximation.
+
+Then the parent adequacy claim becomes:
+Ltotal≤LF+LI+LP+LN≤ϵ.
+Ltotal​≤LF​+LI​+LP​+LN​≤ϵ.
+
+This gives a simple compositional rule:
+
+    If all the nested approximations are adequate within their local error budgets, then the whole model is adequate within the global error budget.
+
+This is exactly how a lot of practical modeling works.
+Reference frames are nested structures
+
+Take the choice of reference frame.
+
+Inside Newtonian mechanics, changing from one inertial frame to another is not a new empirical theory. It is a representation change:
+F↦F′.
+F↦F′.
+
+If the transformation is exact, then:
+L(F,F′)=0
+L(F,F′)=0
+
+for the relevant physical predictions.
+
+So one nested adequacy claim could be:
+Adequate⁡(Galilean frame transformation,D,0).
+Adequate(Galilean frame transformation,D,0).
+
+That says changing frame preserves the content of the model exactly.
+
+But if you use a rotating Earth-fixed frame and ignore fictitious forces, the transformation is no longer harmless. Then the nested adequacy claim might be:
+Adequate⁡(ignore Coriolis force,D,ϵC).
+Adequate(ignore Coriolis force,D,ϵC​).
+
+For a baseball pitch, ϵCϵC​ may be tiny. For atmospheric flows, it may be unacceptable. Same theory, different nested adequacy result.
+Unit changes are another nested case
+
+Changing units from meters to feet should not change physical content.
+
+So we could represent a unit conversion as a transformation UU, and say:
+Adequate⁡(U,D,0).
+Adequate(U,D,0).
+
+A correct unit transformation has zero physical error. But an agent can still make implementation mistakes: rounding, conversion errors, dimensional inconsistency, and so on.
+
+So there are two layers:
+Adequate⁡(unit transformation as mathematics,D,0)
+Adequate(unit transformation as mathematics,D,0)
+
+but perhaps:
+Adequate⁡(agent’s implemented conversion,D,ϵU).
+Adequate(agent’s implemented conversion,D,ϵU​).
+
+That is useful because the physical representation may be exact while the computational procedure is only approximately reliable.
+Object choice is a deeper nested structure
+
+Your “what counts as an object?” point is especially important.
+
+Suppose we model the Earth and Moon. We can choose:
+O1=Earth and Moon as point masses
+O1​=Earth and Moon as point masses
+
+or:
+O2=Earth and Moon as extended bodies
+O2​=Earth and Moon as extended bodies
+
+or:
+O3=Earth, Moon, oceans, atmosphere, oblateness, tides, etc.
+O3​=Earth, Moon, oceans, atmosphere, oblateness, tides, etc.
+
+These are not different physical laws. They are different decompositions of the world into objects and degrees of freedom.
+
+So the nested claim becomes:
+Adequate⁡(object decomposition Oi,D,ϵO).
+Adequate(object decomposition Oi​,D,ϵO​).
+
+For a rough orbital period, O1O1​ is adequate. For precision lunar laser ranging, O1O1​ is not adequate.
+
+So the theory contains a family of possible object-structures, and the agent needs a policy for choosing among them.
+Then the selection policy itself can be evaluated
+
+This is where the recursion becomes very interesting.
+
+Let:
+π(D,L,ϵ)
+π(D,L,ϵ)
+
+be a policy that chooses a model-building strategy for a problem.
+
+For example, ππ might say:
+
+    For slow macroscopic objects, use Newtonian mechanics.
+    For high velocities, use special relativity.
+    For strong gravity, use general relativity.
+    For microscopic systems, use quantum mechanics.
+
+Then the agent can evaluate not only the object-level model, but the policy that selected it:
+Adequate⁡(π,Dtasks,Ldecision,ϵπ).
+Adequate(π,Dtasks​,Ldecision​,ϵπ​).
+
+This says:
+
+    The model-selection policy tends to choose models that perform well enough over this class of tasks.
+
+Now we have genuine nesting:
+Adequate⁡(π,Dtasks,Ldecision,ϵπ)
+Adequate(π,Dtasks​,Ldecision​,ϵπ​)
+
+where ππ itself produces judgments like:
+Adequate⁡(M,D,L,ϵ).
+Adequate(M,D,L,ϵ).
+
+So the system can reason about its own model-selection procedure.
+The recursive form
+
+A compact recursive grammar might look like this:
+J::=Adequate⁡(X,D,L,ϵ)
+J::=Adequate(X,D,L,ϵ)
+
+where XX can be:
+X::=T∣M∣F∣I∣P∣π∣J.
+X::=T∣M∣F∣I∣P∣π∣J.
+
+That is, an adequacy judgment can apply to:
+
+    a theory,
+
+    a model,
+
+    a reference frame,
+
+    an idealization,
+
+    a parameter estimate,
+
+    a model-selection policy,
+
+    or another adequacy judgment.
+
+The last case gives you direct nesting:
+Adequate⁡(Adequate⁡(M,D,L,ϵ),D′,L′,ϵ′).
+Adequate(Adequate(M,D,L,ϵ),D′,L′,ϵ′).
+
+This does not mean “the proposition is physically adequate” in the same sense as a falling-body model. It means something like:
+
+    The adequacy judgment itself is reliable enough as a guide to action or inference.
+
+For example:
+Adequate⁡(agent’s judgment that Newtonian mechanics is adequate here,Dengineering,Lregret,ϵ′).
+Adequate(agent’s judgment that Newtonian mechanics is adequate here,Dengineering​,Lregret​,ϵ′).
+
+That is a meta-level adequacy claim.
+The hierarchy can look like this
+
+One possible nested structure is:
+Adequate⁡(agent,D0,ϵ0)
+Adequate(agent,D0​,ϵ0​)
+
+because the agent reliably chooses good models.
+
+Inside that:
+Adequate⁡(model-selection policy,D1,ϵ1)
+Adequate(model-selection policy,D1​,ϵ1​)
+
+because the policy reliably picks the right theory and approximation level.
+
+Inside that:
+Adequate⁡(Newtonian mechanics,D2,ϵ2)
+Adequate(Newtonian mechanics,D2​,ϵ2​)
+
+because Newtonian mechanics works in the chosen domain.
+
+Inside that:
+Adequate⁡(point-mass model,D3,ϵ3)
+Adequate(point-mass model,D3​,ϵ3​)
+
+because the object decomposition is good enough.
+
+Inside that:
+Adequate⁡(chosen coordinate frame,D4,ϵ4)
+Adequate(chosen coordinate frame,D4​,ϵ4​)
+
+because frame artifacts are negligible or properly corrected.
+
+Inside that:
+Adequate⁡(numerical solution,D5,ϵ5)
+Adequate(numerical solution,D5​,ϵ5​)
+
+because the computation approximates the equations well enough.
+
+So “Newtonian mechanics is adequate” is not atomic. It is a compressed summary of a whole nested tree.
+The important distinction: vertical versus horizontal nesting
+
+There are two kinds of nesting.
+
+Horizontal nesting is compositional:
+whole model=submodel1+submodel2+submodel3.
+whole model=submodel1​+submodel2​+submodel3​.
+
+Example: model a car as engine + wheels + chassis + road contact.
+
+Vertical nesting is meta-level:
+agent→policy→theory→model→approximation→calculation.
+agent→policy→theory→model→approximation→calculation.
+
+Your examples—object choice, reference frame, units—mostly live in the vertical structure. They are choices about how to represent and construct the model.
+The result
+
+So the nested version of the original predicate is something like:
+Adequate⁡(Build⁡(T,πT(D,L,ϵ)),D,L,ϵ)
+Adequate(Build(T,πT​(D,L,ϵ)),D,L,ϵ)
+
+where πTπT​ is a theory-internal or agent-level procedure for choosing framings, idealizations, coordinates, units, and solution methods.
+
+Then we can also ask:
+Adequate⁡(πT,Dtasks,Lregret,ϵπ).
+Adequate(πT​,Dtasks​,Lregret​,ϵπ​).
+
+That is the recursive move.
+
+The theory is adequate only partly because its equations are good. It is also adequate because it contains—or is paired with—adequate procedures for choosing the right abstraction level, coordinate frame, object decomposition, units, approximation scheme, and calculation method.
+
+In that sense, a mature physical theory is not just a set of claims about the world. It is a nested control system for generating locally adequate representations.
+
+Friday 2:53 PM
+
+This mapping is plausible, but the important flip is that a ReLU unit naturally represents a positive margin, not a bare proposition. So “adequate” becomes “how far above the adequacy threshold did this representation land?”
+
+Yes — this is a very natural way to force the ontology into neural-network form.
+
+The clean mapping is:
+Adequate⁡(M,D,ϵ)
+Adequate(M,D,ϵ)
+
+becomes something like:
+a=ReLU⁡(⟨w,ϕ(M,D)⟩+b)
+a=ReLU(⟨w,ϕ(M,D)⟩+b)
+
+where:
+ϕ(M,D)
+ϕ(M,D)
+
+is the vector encoding of the model-domain pair.
+
+Then:
+a>0
+a>0
+
+means “adequate,” and:
+a
+a
+
+itself measures the adequacy margin.
+
+So the ReLU is not just outputting truth/falsity. It outputs:
+max⁡(0,adequacy margin).
+max(0,adequacy margin).
+
+That is actually nicer than a Boolean predicate, because science often cares not only whether a model passes a threshold, but how comfortably it passes.
+
+The bias is close to ϵϵ, but with a sign convention. If the inner product estimates quality, then:
+a=ReLU⁡(Q(M,D)−θ)
+a=ReLU(Q(M,D)−θ)
+
+where θθ is the adequacy threshold.
+
+If the inner product estimates error/loss, then:
+a=ReLU⁡(ϵ−L(M,D)).
+a=ReLU(ϵ−L(M,D)).
+
+So:
+a>0
+a>0
+
+means:
+L(M,D)<ϵ.
+L(M,D)<ϵ.
+
+That is almost exactly:
+Adequate⁡(M,D,ϵ).
+Adequate(M,D,ϵ).
+
+In neural-network terms:
+ϵ
+ϵ
+
+is the threshold/bias,
+L(M,D)
+L(M,D)
+
+or Q(M,D)Q(M,D) is represented by the learned inner product,
+
+and ReLU is the gate that says:
+
+    this model-domain pairing is active as adequate only when the margin is positive.
+
+The key interpretation
+
+A neuron can be read as a soft predicate:
+Adequate⁡i(M,D)=ReLU⁡(⟨wi,ϕ(M,D)⟩+bi).
+Adequatei​(M,D)=ReLU(⟨wi​,ϕ(M,D)⟩+bi​).
+
+Each neuron asks:
+
+    Does this vector contain the pattern I care about strongly enough to cross my threshold?
+
+For example, a neuron might activate for:
+slow velocity + macroscopic object + weak gravity
+slow velocity + macroscopic object + weak gravity
+
+which is a domain where Newtonian mechanics tends to be adequate.
+
+Another neuron might activate for:
+high velocity
+high velocity
+
+which suppresses or routes away from Newtonian mechanics.
+
+Another might activate for:
+air resistance negligible.
+air resistance negligible.
+
+Another:
+point-mass approximation acceptable.
+point-mass approximation acceptable.
+
+Another:
+frame choice harmless.
+frame choice harmless.
+
+So “Newtonian mechanics is adequate here” is not one primitive fact. It is an activation pattern produced by many smaller adequacy detectors.
+The recursive/nested structure appears in the layers
+
+Let the original representation be:
+h0=ϕ(M,D).
+h0​=ϕ(M,D).
+
+The first layer computes basic adequacy-like features:
+h1=ReLU⁡(W1h0+b1).
+h1​=ReLU(W1​h0​+b1​).
+
+The entries of h1h1​ might mean things like:
+low speed adequate
+low speed adequate
+weak-field adequate
+weak-field adequate
+point-object adequate
+point-object adequate
+constant g adequate
+constant g adequate
+drag ignored adequately
+drag ignored adequately
+
+Then the second layer computes adequacy over those adequacy features:
+h2=ReLU⁡(W2h1+b2).
+h2​=ReLU(W2​h1​+b2​).
+
+Now h2h2​ can contain higher-level judgments like:
+Newtonian projectile model adequate
+Newtonian projectile model adequate
+
+or:
+orbital approximation adequate
+orbital approximation adequate
+
+or:
+engineering calculation adequate.
+engineering calculation adequate.
+
+Then another layer:
+h3=ReLU⁡(W3h2+b3)
+h3​=ReLU(W3​h2​+b3​)
+
+can represent things like:
+this whole modeling strategy is adequate for the agent’s decision.
+this whole modeling strategy is adequate for the agent’s decision.
+
+That is genuinely nested, because later adequacy-like predicates are operating over earlier adequacy-like predicates.
+
+The structure is:
+Adequate⁡3(Adequate⁡2(Adequate⁡1(M,D))).
+Adequate3​(Adequate2​(Adequate1​(M,D))).
+
+Not symbolically, but vectorially.
+The nice part: the inner product is “fit between representation and criterion”
+
+The term:
+⟨w,ϕ(M,D)⟩
+⟨w,ϕ(M,D)⟩
+
+can be interpreted as:
+
+    how strongly the current representation matches the learned adequacy criterion.
+
+The vector ϕ(M,D)ϕ(M,D) encodes the situation.
+
+The vector ww encodes the criterion.
+
+Their inner product is high when the situation aligns with the criterion.
+
+The bias says how much alignment is enough.
+
+The ReLU says only positive surplus matters.
+
+So a neuron is something like:
+activation=max⁡(0,fit−required fit).
+activation=max(0,fit−required fit).
+
+That maps very cleanly onto:
+adequacy=max⁡(0,model-domain fit−tolerance threshold).
+adequacy=max(0,model-domain fit−tolerance threshold).
+A better name: “adequacy margin”
+
+Instead of saying the neuron represents:
+Adequate⁡(M,D,ϵ)
+Adequate(M,D,ϵ)
+
+I would say it represents:
+MarginAdequate⁡(M,D,ϵ).
+MarginAdequate(M,D,ϵ).
+
+Defined as:
+A(M,D,ϵ)=max⁡(0,ϵ−L^(M,D)).
+A(M,D,ϵ)=max(0,ϵ−L
+(M,D)).
+
+Or, using quality rather than loss:
+A(M,D,θ)=max⁡(0,Q^(M,D)−θ).
+A(M,D,θ)=max(0,Q
+​(M,D)−θ).
+
+Then Boolean adequacy is recovered by:
+Adequate⁡(M,D,ϵ)  ⟺  A(M,D,ϵ)>0.
+Adequate(M,D,ϵ)⟺A(M,D,ϵ)>0.
+
+The ReLU activation is stronger than a truth value. It gives you the remaining slack.
+Why this works especially well for multi-layer networks
+
+A single ReLU neuron can represent a half-space:
+⟨w,x⟩+b>0.
+⟨w,x⟩+b>0.
+
+That is a simple thresholded adequacy region.
+
+But a multi-layer ReLU network composes many such regions. It can carve input-space into complicated piecewise-linear regions.
+
+So instead of one crude adequacy boundary:
+adequate vs inadequate,
+adequate vs inadequate,
+
+the network can learn many nested boundaries:
+adequate for classroom explanation
+adequate for classroom explanation
+adequate for bridge design
+adequate for bridge design
+adequate for spacecraft navigation
+adequate for spacecraft navigation
+adequate for GPS timing
+adequate for GPS timing
+adequate under this frame but not that frame
+adequate under this frame but not that frame
+adequate if this submodel is also active.
+adequate if this submodel is also active.
+
+That is exactly the kind of ontology you were aiming for: not facts as atomic propositions, but facts/models/domains as vectors, and adequacy as activation under learned thresholds.
+The stronger recursive form
+
+You could define the network itself as repeatedly applying an adequacy operator:
+ht+1=ReLU⁡(Wtht+bt).
+ht+1​=ReLU(Wt​ht​+bt​).
+
+Then each layer says:
+
+    take the current representational world and compute which adequacy features are active in it.
+
+At layer 0, the system has raw encodings:
+M,D,ϵ.
+M,D,ϵ.
+
+At layer 1, it has local adequacy features.
+
+At layer 2, it has adequacy-of-combinations.
+
+At layer 3, it has adequacy-of-modeling-strategy.
+
+At layer 4, it has adequacy-of-the-agent’s-own-judgment.
+
+So the recursion is:
+representation→adequacy activations→higher adequacy activations→meta-adequacy activations.
+representation→adequacy activations→higher adequacy activations→meta-adequacy activations.
+
+This is not classical recursion by self-reference, but it is neural recursion by representational re-encoding.
+The philosophical payoff
+
+This gives you a neural-network ontology where “beliefs” are not primarily propositions like:
+p=true.
+p=true.
+
+Instead, they are activated regions in vector space:
+ai>0.
+ai​>0.
+
+A “fact” becomes something more like:
+
+    a stable activation pattern that survives many transformations, contexts, and layers.
+
+A “theory” becomes:
+
+    a reusable region-transforming structure that generates adequate activations across domains.
+
+A “proof” or “justification” becomes:
+
+    a path of activations through layers.
+
+And “truth” is replaced operationally by:
+
+    high-margin, robust activation under many relevant embeddings and perturbations.
+
+So yes: the ReLU analogy is not superficial. It gives you a real implementation sketch:
+Adequate⁡(M,D,ϵ)≈ReLU⁡(⟨w,ϕ(M,D)⟩+b)
+Adequate(M,D,ϵ)≈ReLU(⟨w,ϕ(M,D)⟩+b)
+
+and deep networks give you the nested structure:
+An+1=ReLU⁡(WnAn+bn).
+An+1​=ReLU(Wn​An​+bn​).
+
+The resulting ontology is not “the world is made of true propositions.” It is closer to:
+
+    the agent’s world-model is a hierarchy of thresholded adequacy margins over vector-encoded situations.
+
+
+Saturday 3:39 PM
+What I want to see more of is how "models" and "domains" can be encoded as vectors as well as "tiled" in the sense that as a domain shifts between one and another, the model will shift too, and how this can all be encoded as weight matrices and dot products.
+
+Yes. The clean version is: encode domains as demand vectors, encode models as capability vectors, and let dot products compute whether a model’s capabilities match a domain’s demands.
+
+A domain vector might look like:
+d=[velocity scale,gravity strength,quantum relevance,object rigidity,required precision,time scale,noise level,computational budget]
+d=[velocity scale,gravity strength,quantum relevance,object rigidity,required precision,time scale,noise level,computational budget]
+
+A model vector might look like:
+m=[handles low speed,handles strong gravity,handles quantum effects,handles rigid bodies,precision ceiling,tractability,known failure modes]
+m=[handles low speed,handles strong gravity,handles quantum effects,handles rigid bodies,precision ceiling,tractability,known failure modes]
+
+Then adequacy is not a symbolic predicate. It is compatibility:
+s(M,D)=m⊤Ad+b
+s(M,D)=m⊤Ad+b
+
+where AA learns which model-features matter for which domain-features.
+
+If s(M,D)>0s(M,D)>0, the model is adequate. With ReLU:
+a(M,D)=ReLU⁡(m⊤Ad+b)
+a(M,D)=ReLU(m⊤Ad+b)
+
+the activation is the positive adequacy margin.
+1. Why use m⊤Adm⊤Ad, not just m⊤dm⊤d?
+
+A plain dot product assumes model-features and domain-features live in the same coordinate system:
+m⊤d.
+m⊤d.
+
+But usually they do not. “High velocity” in the domain should interact negatively with “low-speed approximation” in the model. “Strong gravity” should interact positively with “general-relativistic capacity.” So we insert a learned compatibility matrix:
+m⊤Ad.
+m⊤Ad.
+
+Each entry AijAij​ says:
+
+    how much model feature mimi​ matters for domain feature djdj​.
+
+For example:
+Alow-speed model,high velocity domain<0
+Alow-speed model,high velocity domain​<0
+
+while:
+Arelativistic model,high velocity domain>0.
+Arelativistic model,high velocity domain​>0.
+
+So the adequacy score becomes a learned interaction between model-capabilities and domain-demands.
+A
+2
+1
+3
+4
+0
+2
+×
+B
+5
+2
+1
+4
+3
+7
+=
+AB
+(AB)11=(2⋅5)+(1⋅1)+(3⋅3)=20(AB)11​=(2⋅5)+(1⋅1)+(3⋅3)=20
+Row
+12
+Column
+12
+Choose a result row and column. The highlighted row of A and column of B combine to produce that entry of AB.
+2. A simple model-selection layer
+
+Suppose we have several candidate models:
+m1=Newtonian projectile model
+m1​=Newtonian projectile model
+m2=Newtonian with drag
+m2​=Newtonian with drag
+m3=special relativity
+m3​=special relativity
+m4=general relativity
+m4​=general relativity
+m5=quantum model.
+m5​=quantum model.
+
+Stack them as rows in a matrix:
+M=[m1⊤m2⊤m3⊤m4⊤m5⊤].
+M=
+​m1⊤​m2⊤​m3⊤​m4⊤​m5⊤​​
+​.
+
+Then for a domain vector dd, compute:
+s=MAd+b.
+s=MAd+b.
+
+This gives one adequacy score per model:
+s=[s1,s2,s3,s4,s5].
+s=[s1​,s2​,s3​,s4​,s5​].
+
+Then apply ReLU:
+a=ReLU⁡(s).
+a=ReLU(s).
+
+Now ai>0ai​>0 means model ii is adequate for this domain.
+
+A soft selection could use:
+gi=eβsi∑jeβsj
+gi​=∑j​eβsj​eβsi​​
+
+so the chosen model representation is:
+mˉ(d)=∑igi(d)mi.
+mˉ(d)=i∑​gi​(d)mi​.
+
+This is the “tiling” idea: as dd moves through domain-space, the weights gi(d)gi​(d) shift from one model to another.
+3. Tiling domain space
+
+Each model has an adequacy region:
+Ri={d:mi⊤Ad+bi>0}.
+Ri​={d:mi⊤​Ad+bi​>0}.
+
+That region is a half-space if the score is linear. With many ReLU units, the regions become piecewise-linear tiles.
+
+So Newtonian mechanics might occupy a tile like:
+RNewtonian={d:v/c≪1, GM/(rc2)≪1, ℏ-effects negligible, ϵ not too strict}.
+RNewtonian​={d:v/c≪1,GM/(rc2)≪1,ℏ-effects negligible,ϵ not too strict}.
+
+Special relativity occupies a neighboring tile:
+RSR={d:v/c significant, GM/(rc2) small, ℏ-effects negligible}.
+RSR​={d:v/c significant,GM/(rc2) small,ℏ-effects negligible}.
+
+General relativity occupies another:
+RGR={d:GM/(rc2) significant}.
+RGR​={d:GM/(rc2) significant}.
+
+Quantum mechanics occupies another:
+RQM={d:small scale, ℏ-effects significant}.
+RQM​={d:small scale,ℏ-effects significant}.
+
+As the domain vector moves, the adequacy scores change continuously:
+dt→dt+1
+dt​→dt+1​
+si(t)=mi⊤Adt+bi.
+si​(t)=mi⊤​Adt​+bi​.
+
+At some boundary, Newtonian loses margin and special relativity gains margin:
+sNewtonian↓0
+sNewtonian​↓0
+sSR↑0.
+sSR​↑0.
+
+So the model does not need to switch by symbolic rule. The switch happens because the vector moves across an activation boundary.
+4. The model can shift smoothly, not just discretely
+
+A nice feature is that the “active model” can be a blend:
+mˉ(d)=gN(d)mN+gSR(d)mSR+gGR(d)mGR+gQM(d)mQM.
+mˉ(d)=gN​(d)mN​+gSR​(d)mSR​+gGR​(d)mGR​+gQM​(d)mQM​.
+
+When the domain is ordinary and slow:
+gN≈1.
+gN​≈1.
+
+When velocity increases:
+gN↓,gSR↑.
+gN​↓,gSR​↑.
+
+Near a boundary:
+mˉ(d)
+mˉ(d)
+
+contains both. That looks like an interpolation between model ontologies.
+
+This is useful because many real scientific transitions are not clean symbolic jumps. A theory becomes less adequate gradually as a parameter changes.
+5. A concrete two-dimensional toy example
+
+Let the domain vector be:
+d=[rvrg]=[v/cGM/(rc2)].
+d=[rv​rg​​]=[v/cGM/(rc2)​].
+
+Let the models be scored as:
+sN=1−10rv−20rg
+sN​=1−10rv​−20rg​
+sSR=−0.2+10rv−20rg
+sSR​=−0.2+10rv​−20rg​
+sGR=−0.2+20rg.
+sGR​=−0.2+20rg​.
+
+Then:
+aN=ReLU⁡(sN)
+aN​=ReLU(sN​)
+aSR=ReLU⁡(sSR)
+aSR​=ReLU(sSR​)
+aGR=ReLU⁡(sGR).
+aGR​=ReLU(sGR​).
+
+Interpretation:
+
+Newtonian mechanics activates when both rvrv​ and rgrg​ are small.
+
+Special relativity activates when rvrv​ is large but rgrg​ is small.
+
+General relativity activates when rgrg​ is large.
+
+This is a tiled vector-space ontology.
+
+The boundaries are simple lines:
+1−10rv−20rg=0
+1−10rv​−20rg​=0
+−0.2+10rv−20rg=0
+−0.2+10rv​−20rg​=0
+−0.2+20rg=0.
+−0.2+20rg​=0.
+
+A deeper ReLU network builds much more complicated tiles from many such boundaries.
+6. Where ϵϵ goes
+
+You can include ϵϵ directly inside the domain vector:
+d=[physical regime,required precision,allowed loss].
+d=[physical regime,required precision,allowed loss].
+
+Then stricter tolerance changes the domain.
+
+A model may be adequate for:
+ϵ=1%
+ϵ=1%
+
+but inadequate for:
+ϵ=10−9.
+ϵ=10−9.
+
+So “GPS timing” and “classroom projectile example” are different domains even if the physical object is similar.
+
+In vector form:
+dclassroom≠dGPS.
+dclassroom​=dGPS​.
+
+The same Newtonian model vector mNmN​ can have high compatibility with one and low compatibility with the other.
+7. Multi-layer version: local adequacy becomes higher adequacy
+
+First layer:
+h1=ReLU⁡(WDd+bD)
+h1​=ReLU(WD​d+bD​)
+
+extracts domain features:
+slow,weak gravity,macroscopic,rigid,low precision required.
+slow,weak gravity,macroscopic,rigid,low precision required.
+
+Second layer compares model vectors to those features:
+h2=ReLU⁡(MAh1+bM).
+h2​=ReLU(MAh1​+bM​).
+
+Now h2h2​ is a vector of model adequacy margins.
+
+Third layer can compute adequacy of model-combinations:
+h3=ReLU⁡(W3h2+b3).
+h3​=ReLU(W3​h2​+b3​).
+
+For example:
+h3
+h3​
+
+might represent:
+Newtonian + drag model adequate
+Newtonian + drag model adequate
+
+or:
+relativistic correction required
+relativistic correction required
+
+or:
+object decomposition inadequate.
+object decomposition inadequate.
+
+Fourth layer can compute action-relevance:
+h4=ReLU⁡(W4h3+b4).
+h4​=ReLU(W4​h3​+b4​).
+
+Now the network is not merely asking:
+
+    Which physical theory is true?
+
+It is asking:
+
+    Which representation is adequate for this domain, tolerance, and action?
+
+That is much closer to what you want.
+8. Models as vectors can also contain internal structure
+
+A model vector does not have to be a flat label. It can be composed from sub-vectors:
+m=[mlaws,mobjects,mframe,midealizations,msolver,mfailure modes].
+m=[mlaws​,mobjects​,mframe​,midealizations​,msolver​,mfailure modes​].
+
+For Newtonian projectile motion:
+mN=[Newton’s laws,point mass,Earth frame,constant g,ignore drag,closed-form parabola].
+mN​=[Newton’s laws,point mass,Earth frame,constant g,ignore drag,closed-form parabola].
+
+For Newtonian drag:
+mN+D=[Newton’s laws,extended/point hybrid,Earth frame,constant g,include drag,numerical ODE solver].
+mN+D​=[Newton’s laws,extended/point hybrid,Earth frame,constant g,include drag,numerical ODE solver].
+
+These vectors will be near each other in model-space because they share most structure. But they differ on the drag and solver dimensions.
+
+So model-space itself has geometry. Nearby models are not arbitrary neighbors; they share assumptions, mechanisms, and representational choices.
+9. The tiling can happen jointly over model-space and domain-space
+
+Instead of only scoring models against domains, define a joint vector:
+z=[m,d,m⊙d]
+z=[m,d,m⊙d]
+
+where m⊙dm⊙d represents feature interactions.
+
+Then:
+a=ReLU⁡(w⊤z+b).
+a=ReLU(w⊤z+b).
+
+This lets the network learn statements like:
+
+    “This model is adequate in this domain only when this specific model-feature meets this specific domain-demand.”
+
+For multiple adequacy predicates:
+a=ReLU⁡(Wz+b).
+a=ReLU(Wz+b).
+
+Now each row of WW is a learned adequacy detector.
+
+The system is literally tiling the joint space:
+M×D.
+M×D.
+
+That is the strongest version:
+not just domains tiled by models, but model-domain pairs tiled by adequacy predicates.
+not just domains tiled by models, but model-domain pairs tiled by adequacy predicates.
+10. The core picture
+
+The whole scheme can be compressed into this pipeline:
+d=ED(domain description)
+d=ED​(domain description)
+mi=EM(model i)
+mi​=EM​(model i)
+si=mi⊤Ad+bi
+si​=mi⊤​Ad+bi​
+ai=ReLU⁡(si)
+ai​=ReLU(si​)
+gi=softmax⁡(βsi)
+gi​=softmax(βsi​)
+mˉ(d)=∑igimi.
+mˉ(d)=i∑​gi​mi​.
+
+Meaning:
+
+    Encode the domain as a vector.
+
+    Encode each model as a vector.
+
+    Score model-domain compatibility by dot products.
+
+    Threshold or gate with ReLU.
+
+    Let the active model shift as the domain shifts.
+
+    Use deeper layers to produce higher-order adequacy judgments.
+
+This gives you exactly the ontology you are reaching for:
+
+    A model is not chosen by a symbolic if-then rule. It is activated by compatibility with a domain vector. As the domain moves through representation-space, model activations rise and fall, producing a tiled, layered, recursively compositional adequacy structure.
+
+
+Pasted markdown(19).md
+File
+Can you use Fable 5's feedback on this to improve what you just wrote? 
+
+Yes. Fable 5’s strongest correction is that the vectors should not be hand-labeled features like “handles strong gravity.” They should be derived from records of model performance, preferably in log, dimensionless coordinates; ϵϵ should enter as log⁡ϵlogϵ with a fixed positive weight; and the router needs an abstention option when no model is licensed.
+
+The improved version is:
+
+Do not begin by stipulating that a domain vector contains features like:
+
+[
+d=[
+\text{velocity scale},
+\text{gravity strength},
+\text{quantum relevance},
+\text{required precision}
+].
+]
+
+That is too symbolic. It smuggles prior adequacy judgments into the features. Instead, begin with a record bank.
+
+Suppose we have situations or records:
+
+[
+y_1,\dots,y_n
+]
+
+and models:
+
+[
+M_1,\dots,M_k.
+]
+
+Run each model on each record and measure its loss:
+
+[
+L_{ij}=L(M_i,y_j).
+]
+
+This gives a model-by-situation loss matrix:
+
+[
+L=
+\begin{bmatrix}
+L_{11} & L_{12} & \cdots \
+L_{21} & L_{22} & \cdots \
+\vdots & \vdots & \ddots
+\end{bmatrix}.
+]
+
+The adequacy relation is then grounded directly:
+
+[
+\operatorname{Adequate}(M_i,y_j,\epsilon)
+\iff
+L_{ij}\le \epsilon.
+]
+
+Now the vector ontology is not stipulated. It is learned by trying to explain this loss matrix.
+
+We seek model vectors (m_i), a domain encoder (\varphi(y_j)), and bias terms (c_i,r_j) such that:
+
+c_i+r_j-\langle m_i,\varphi(y_j)\rangle.
+]
+
+Here:
+
+[
+m_i
+]
+
+is the learned capability vector of model (M_i),
+
+[
+\varphi(y_j)
+]
+
+is the learned demand vector of situation (y_j),
+
+and the dot product measures compatibility.
+
+A high dot product means:
+
+    this model’s capabilities fit this situation’s demands.
+
+A low dot product means:
+
+    this model lacks something the situation requires.
+
+Then the adequacy gate is:
+
+\log \epsilon-\log \widehat L_i(y)
+]
+
+and:
+
+\operatorname{ReLU}(s_i(y,\epsilon)).
+]
+
+So:
+
+[
+\ell_i>0
+]
+
+means the model is adequate, while the magnitude of (\ell_i) is the safety margin in log-loss units.
+
+This is much better than saying:
+
+[
+\operatorname{ReLU}(m^\top A d+b).
+]
+
+The refined version is:
+
+[
+\operatorname{ReLU}(\log\epsilon-\log\widehat L(M,y)).
+]
+
+The ReLU is not merely detecting “fit.” It is detecting whether predicted loss is below tolerance.
+Why logs matter
+
+For physical domains, the natural coordinates should usually be dimensionless and logarithmic.
+
+Instead of using raw quantities like:
+
+[
+v,\quad r,\quad M,\quad \hbar
+]
+
+we use dimensionless groups such as:
+
+[
+\frac{v}{c},
+\qquad
+\frac{GM}{rc^2},
+\qquad
+\frac{\hbar}{S},
+\qquad
+\frac{F_{\text{drag}}}{F_{\text{grav}}}.
+]
+
+Then encode the domain as:
+
+[
+x=
+\left[
+\log\frac{v}{c},
+\log\frac{GM}{rc^2},
+\log\frac{\hbar}{S},
+\log\frac{F_{\text{drag}}}{F_{\text{grav}}}
+\right].
+]
+
+This is important because physical regime boundaries are often multiplicative or asymptotic. In raw coordinates, “(v/c\ll 1)” is awkward. In log coordinates, orders of magnitude become additive distances.
+
+For example, if the leading special-relativistic correction scales like:
+
+[
+\left(\frac{v}{c}\right)^2,
+]
+
+then in log coordinates:
+
+2\log\frac{v}{c}.
+]
+
+So the weight (2) is not arbitrary. It comes directly from perturbation theory.
+
+That is the deeper neural-network analogy: the weights can correspond to orders of neglected corrections.
+Models as omitted-correction profiles
+
+A model can be represented by what it neglects.
+
+For example, a simple Newtonian vacuum model neglects:
+
+[
+C(M)=
+{
+\text{special relativistic correction},
+\text{general relativistic correction},
+\text{quantum correction},
+\text{drag correction},
+\text{Coriolis correction}
+}.
+]
+
+Each omitted correction (c) has a leading size:
+
+[
+g_c(y).
+]
+
+Often this is approximately a monomial in dimensionless groups, so:
+
+\langle e_c,x\rangle+k_c.
+]
+
+Here (e_c) is an exponent vector. For the special-relativistic correction, one coordinate might literally have coefficient (2), because the correction scales like ((v/c)^2).
+
+The model’s error is dominated by the largest neglected correction:
+
+[
+\log L(M,y)
+\approx
+\max_{c\in C(M)}
+\left(
+\langle e_c,x\rangle+k_c
+\right).
+]
+
+Therefore the adequacy margin is:
+
+\min_{c\in C(M)}
+\left(
+\log\epsilon-\langle e_c,x\rangle-k_c
+\right).
+]
+
+This is a crucial improvement over my previous additive score.
+
+The model is adequate only if every important omitted correction is below tolerance. So the natural aggregator is not a sum; it is a minimum over safety margins.
+
+[
+\operatorname{Adequate}(M,y,\epsilon)
+\iff
+\forall c\in C(M),\quad
+\langle e_c,x\rangle+k_c\le \log\epsilon.
+]
+
+Equivalently:
+
+[
+s(M,y,\epsilon)>0.
+]
+
+So each model owns a region of domain-space:
+
+\left{
+x:
+\forall c\in C(M),
+\langle e_c,x\rangle+k_c\le \log\epsilon
+\right}.
+]
+
+This region is a polytope in log-coordinate space. The “tiling” of domains by models is therefore generated by correction thresholds.
+
+That is the more rigorous version of the earlier hand-drawn tile picture.
+Where (\epsilon) belongs
+
+(\epsilon) should not be buried as just another arbitrary feature of (d). It should enter structurally as:
+
+[
+\log\epsilon
+]
+
+with coefficient (+1) in every adequacy score:
+
+\log\epsilon-\log\widehat L(M,y).
+]
+
+This guarantees monotonicity:
+
+[
+\epsilon'\ge \epsilon
+\implies
+R_M(\epsilon')\supseteq R_M(\epsilon).
+]
+
+In words:
+
+    If a model is adequate at a stricter tolerance, it remains adequate at a looser tolerance.
+
+That should be true by architecture, not merely learned from data.
+
+Tightening (\epsilon) shrinks the model’s tile. Loosening (\epsilon) expands it. This makes tolerance a geometric translation of the adequacy boundary.
+Model choice as routing
+
+For a given domain (y), compute all margins:
+
+[
+s_1(y,\epsilon),\dots,s_k(y,\epsilon).
+]
+
+Then:
+
+[
+\ell_i=\operatorname{ReLU}(s_i).
+]
+
+A model is licensed if:
+
+[
+\ell_i>0.
+]
+
+The router can choose the model with the best margin:
+
+[
+i^*=\arg\max_i s_i.
+]
+
+But this should be done only among models with positive margins.
+
+If:
+
+[
+\max_i s_i\le 0,
+]
+
+then the system should abstain.
+
+This is another important correction. A softmax over models always selects someone. But a serious adequacy logic needs to say:
+
+    none of the available models is licensed here.
+
+That is the “Planck regime: no chart” case. The absence of an adequate model is itself a valid output.
+Smooth transitions and bridges
+
+The earlier idea of blending model embeddings needs care.
+
+It is fine to blend predictions:
+
+\sum_i g_i \widehat y_i.
+]
+
+It is also fine to use soft gates:
+
+\operatorname{softmax}(\beta s_i).
+]
+
+But saying that we blend “ontologies” by averaging model vectors is only meaningful if the model vectors have a compositional semantics.
+
+For example, if:
+
+m_{\text{base}}
++
+\sum_{c\in C(M)}
+\delta_c,
+]
+
+then adding or removing a correction has an interpretable vector effect. Newtonian mechanics plus drag is close to Newtonian mechanics because it shares the same base and differs by one correction component.
+
+But at major seams between theories, we should often expect bridges rather than naive interpolation. The better picture is:
+
+[
+\text{Newtonian chart}
+\leftrightarrow
+\text{post-Newtonian bridge}
+\leftrightarrow
+\text{relativistic chart}.
+]
+
+So the atlas contains models, corrections, and bridge models. It does not merely average incompatible ontologies.
+Concrete example
+
+Let the domain coordinates be:
+
+[
+x_1=\log_{10}(v/c),
+]
+
+[
+x_2=\log_{10}(GM/rc^2),
+]
+
+[
+x_3=\log_{10}(\hbar/S),
+]
+
+[
+x_4=\log_{10}(F_{\text{drag}}/F_{\text{grav}}).
+]
+
+For a classroom baseball, special relativity is absurdly tiny:
+
+[
+(v/c)^2\approx 10^{-15}.
+]
+
+General relativity and quantum effects are also tiny.
+
+But drag may be large enough to matter. So a vacuum Newtonian model may fail not because of relativity, but because of air resistance.
+
+That is exactly what a record-derived embedding should discover: the dominant inadequacy axis for classroom projectiles is likely drag, not relativity.
+
+For GPS, by contrast, the tolerance is much stricter. Even tiny relativistic corrections matter. So the Newtonian tile shrinks until it no longer covers the GPS domain.
+
+The same physical world has shifted domains because the tolerance changed.
+
+[
+\text{classroom projectile}
+\neq
+\text{GPS timing problem}
+]
+
+even if both involve macroscopic objects moving in Earth’s gravitational field.
+The deep network version
+
+The clean neural architecture is:
+
+[
+x=\varphi(y)
+]
+
+where (x) is preferably built from log dimensionless groups when physics gives them.
+
+Then each correction detector computes:
+
+[
+q_c(x)=\langle e_c,x\rangle+k_c.
+]
+
+This estimates the log-size of omitted correction (c).
+
+Each model has a set of omitted corrections (C(M)). Its predicted log-loss is:
+
+[
+\log \widehat L(M,y)
+\approx
+\max_{c\in C(M)} q_c(x).
+]
+
+Its adequacy margin is:
+
+\log\epsilon-
+\max_{c\in C(M)}q_c(x).
+]
+
+Then:
+
+[
+\ell(M,y,\epsilon)=\operatorname{ReLU}(s(M,y,\epsilon)).
+]
+
+A deeper network can learn the residual map:
+
+[
+\psi(\log\pi_1,\dots,\log\pi_k)
+]
+
+when the boundary is curved or when the obvious dimensionless groups do not fully capture the regime.
+
+So depth is not replacing the physics. Depth handles the leftover structure after symmetry, units, and perturbation theory have done their work.
+General recipe
+
+The practical recipe is:
+
+    Assemble a bank of records (y_j) and observed outcomes (o_j).
+
+    Run each model (M_i) on each record.
+
+    Store the loss tensor:
+
+[
+L_{ij}=L(M_i,y_j).
+]
+
+    Learn embeddings by fitting:
+
+c_i+r_j-\langle m_i,\varphi(y_j)\rangle.
+]
+
+    Gate by tolerance:
+
+\log\epsilon-\log\widehat L_i(y).
+]
+
+    License models with:
+
+[
+\operatorname{ReLU}(s_i)>0.
+]
+
+    Abstain if no model has positive margin.
+
+    Monitor residuals. If errors are structured, add a new axis, split a domain, or introduce a new model/correction.
+
+This turns conceptual innovation into geometry. A new theory or correction appears when the old embedding leaves structured residuals that cannot be compressed into the current coordinates.
+Final compressed form
+
+The improved ontology is:
+
+[
+\operatorname{Adequate}(M,y,\epsilon)
+\iff
+\log \widehat L(M,y)\le \log\epsilon.
+]
+
+The learned neural form is:
+
+c_M+r_y-\langle m,\varphi(y)\rangle.
+]
+
+The ReLU license is:
+
+\operatorname{ReLU}
+\left(
+\log\epsilon-\log \widehat L(M,y)
+\right).
+]
+
+The physics-informed perturbative form is:
+
+\operatorname{ReLU}
+\left[
+\min_{c\in C(M)}
+\left(
+\log\epsilon-\langle e_c,x\rangle-k_c
+\right)
+\right].
+]
+
+So the tiles are no longer arbitrary learned regions. They are, at leading order, the hyperplane arrangement generated by omitted correction thresholds.
+
+This is the version I would now prefer:
+
+    Models and domains are embedded by their role in explaining observed loss. Physical domains are encoded through log dimensionless groups. Model vectors are determined by the corrections they include or omit. (\epsilon) enters as (\log\epsilon), giving monotone adequacy regions by construction. ReLU gates license models only when their predicted loss is below tolerance, and the router abstains when no known model has positive margin. As the domain shifts, adequacy margins shift, tiles expand or shrink, and the active model changes because the loss geometry changes.
+
+The big upgrade is: instead of “vectors first, adequacy second,” this makes loss first, vectors derived, adequacy gated. That is a much stronger bridge from provisional scientific adequacy to neural-network ontology.
+
+
