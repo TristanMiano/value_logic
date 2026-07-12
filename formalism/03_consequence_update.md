@@ -5,6 +5,8 @@ Date: 2026-07-11
 Depends on: [`01_signature.md`](01_signature.md), [`02_license_semantics.md`](02_license_semantics.md)  
 Scope: what follows from licenses, local object-level reasoning, contradiction quarantine, record heredity, and revision
 
+> **Task 11A interface notice.** This historical artifact predates mandatory profile indexing. Read bare `Lic` as its locally specified named profile and every `CurrentLicenses` or active-set view as carrying an explicit profile `P`. See [`05a_integration.md`, §16](05a_integration.md#16-repairs-to-completed-interfaces); Task 13 will consolidate the notation.
+
 ## Executive definition
 
 The logic has three distinct consequence relations:
@@ -460,10 +462,11 @@ For well-typed premises and fixed `S`, `|-^lic_S` satisfies:
 1. **Typed reflexivity:** if `J in Gamma`, then `Gamma |-^lic_S J`.
 2. **Premise monotonicity:** if `Gamma subseteq Delta` and `Gamma |-^lic_S J`, then `Delta |-^lic_S J`.
 3. **Cut:** if `Gamma |-^lic_S J` and `Gamma union {J} |-^lic_S H`, then `Gamma |-^lic_S H`.
-4. **Label-preserving right weakening:** if `phi |-^obj_chi psi`, a licensed reliance on `[chi]phi` supports reliance on `[chi]psi` only when the license permits that inference/output kind.
-5. **Typed left equivalence:** interchangeable premises require a proved equivalence preserving types, context labels, and provenance-relevant content.
+4. **Typed left equivalence:** interchangeable premises require a proved equivalence preserving types, context labels, and provenance-relevant content.
 
-These are properties of the explicit closure rules, not claims that any new observation can be added without changing current licenses.
+The related **label-preserving right weakening rule** is a permission schema rather than a structural closure property of `|-^lic_S`: if `phi |-^obj_chi psi`, a licensed reliance on `[chi]phi` supports reliance on `[chi]psi` only when the license permits that inference/output kind.
+
+The four listed items are properties of the explicit closure rules, not claims that any new observation can be added without changing current licenses.
 
 ### 6.2 Failure of unrestricted monotonicity across stages
 
@@ -486,7 +489,7 @@ The later raw record may contain a correction, countercertificate, domain-shift 
 
 Define `u` to be **conservative for request `omega`** when:
 
-1. it does not change any request field;
+1. it preserves every substantive request field from `formalism/01_signature.md`, §15.4, while `Succ_u` rebinds only the stage-bound references to their child-stage versions;
 2. it does not add, correct, retract, or invalidate a dependency of `omega`;
 3. it does not change a certificate procedure or assumption used by `omega`;
 4. it does not expand a comparison/search scope relevant to `omega`;

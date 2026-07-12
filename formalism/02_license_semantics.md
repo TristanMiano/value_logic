@@ -5,6 +5,8 @@ Date: 2026-07-11
 Depends on: [`01_signature.md`](01_signature.md)  
 Scope: finite-stage adequacy, certification, reliance, search closure, abstention, and defeat; consequence and update rules begin in Task 9
 
+> **Task 11A interface notice.** This historical artifact predates mandatory profile indexing. Read its full bare `Lic` conjunction as the strong named profile `Lic_{P_full^8}`, not as the universal meaning of licensing. Read current-license and active-set views as profile-indexed. See [`05a_integration.md`, §16](05a_integration.md#16-repairs-to-completed-interfaces); Task 13 will consolidate the notation.
+
 ## Executive definition
 
 A finite-stage license is an evidence-relative permission to rely on a versioned model for a typed evaluation scope. It is not a truth value assigned to the model.
@@ -74,12 +76,26 @@ where:
 
 The structure does not contain an oracle saying which current theory is finally true. For formal analysis, the metalanguage may refer to target risks and data-generating states that the agent does not observe.
 
-### 1.2 Satisfaction and assessment
+### 1.2 World/stage models, satisfaction, and assessment
 
-Use two related notions:
+The semantic model is a pair:
 
 ```text
-S_{a,t} |= J
+M_{W,a,t} = <W,S_{a,t}>.
+```
+
+`W` is a metalanguage world/environment structure containing the population or data-generating objects needed to determine target risks. It is not assumed to be observed by the agent. `S_{a,t}` is the finite stage structure above. This gives three deliberately distinct judgment levels:
+
+```text
+W |=_world Adeq(m;q,epsilon)          -- target/world-level
+S_{a,t} |=_stage CertAdeq(...)        -- finite-stage evidential
+M_{W,a,t} |=_mixed J                  -- explicitly mixed, when needed.
+```
+
+For a stage-level judgment `J`, use two related notions:
+
+```text
+S_{a,t} |=_stage J
 ```
 
 means that judgment `J` obtains at the stage, while
@@ -93,10 +109,10 @@ returns its operational status and reasons.
 The connection is:
 
 ```text
-S_{a,t} |= J  iff  Assess_{a,t}(J) = Granted.
+S_{a,t} |=_stage J  iff  Assess_{a,t}(J) = Granted.
 ```
 
-This keeps a classical meta-level satisfaction relation available while preventing all non-grants from collapsing into one operational state.
+This keeps a classical meta-level satisfaction relation available while preventing all non-grants from collapsing into one operational state. When an older section uses undecorated `|=`, its formula family determines the sort; Task 13 must make the annotation explicit in the core grammar. A soundness claim must therefore name a class of pairs `<W,S>` and the certificate-mode relation connecting stage evidence to world facts.
 
 ### 1.3 Stage locality
 
@@ -202,7 +218,7 @@ Undefined risk makes `Adeq` undefined rather than false.
 ### 3.3 Adequacy semantics
 
 ```text
-S_{a,t} |= Adeq(m;q,epsilon)
+W |=_world Adeq(m;q,epsilon)
 ```
 
 iff
@@ -212,7 +228,7 @@ RiskDefined(m,q)
 and Risk_q(m) in A_q(epsilon).
 ```
 
-Although satisfaction is displayed with `S_{a,t}`, target adequacy itself is stage-invariant when `m`, `q`, `epsilon`, and the underlying population are unchanged. Its observability and certification are stage-relative.
+Target adequacy is determined by `W` and is stage-invariant when `m`, `q`, `epsilon`, and the underlying population are unchanged. Its observability and certification are stage-relative properties of `S_{a,t}`. The pair notation prevents a target fact unavailable to the agent from being smuggled through a stage-only satisfaction symbol.
 
 ### 3.4 Certified inadequacy
 
@@ -1120,7 +1136,6 @@ If
 
 ```text
 epsilon preceq_q epsilon'
-and A_q(epsilon) subseteq A_q(epsilon'),
 ```
 
 then
@@ -1129,7 +1144,7 @@ then
 Adeq(m;q,epsilon) => Adeq(m;q,epsilon').
 ```
 
-**Reason.** Membership in the smaller acceptable down-set implies membership in the larger one.
+**Reason.** Since `preceq_q` is transitive and `A_q(epsilon)=Down_q(epsilon)`, `epsilon preceq_q epsilon'` already entails `A_q(epsilon) subseteq A_q(epsilon')`. Membership in the smaller acceptable down-set therefore implies membership in the larger one. For non-principal application-supplied acceptable sets, the inclusion must instead be stated explicitly.
 
 Certificate monotonicity also holds for a fixed valid certificate and nested acceptable regions. It can fail operationally if changing `epsilon` triggers a different certificate protocol, fallback, or requirement profile.
 

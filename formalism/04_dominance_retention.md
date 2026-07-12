@@ -5,6 +5,8 @@ Date: 2026-07-11
 Depends on: [`01_signature.md`](01_signature.md), [`02_license_semantics.md`](02_license_semantics.md), [`03_consequence_update.md`](03_consequence_update.md)  
 Scope: scalar and multi-objective comparison, frontier semantics, retention, partial domination, and distribution-aware splits
 
+> **Task 11A interface notice.** This historical artifact predates mandatory profile indexing. Its `UFront` and `CFront` notions now supply comparison atoms to named `Lic_P` profiles; comparison does not universally belong to every license. Read current/frontier/use views as profile-indexed where licensing is involved. See [`05a_integration.md`, §16](05a_integration.md#16-repairs-to-completed-interfaces).
+
 ## Executive definition
 
 Dominance is not adequacy. Adequacy asks whether a candidate satisfies a hard task-relative requirement. Dominance asks whether another **eligible** candidate is no worse under every coordinate of a declared comparison profile and better under the profile's strictness rule.

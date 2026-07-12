@@ -54,7 +54,7 @@ This design does not decree that a comparatively dominated older model must rema
 
 An older model may therefore remain actually selected under another purpose, profile, subdomain, resource regime, or fallback role; remain usable but unselected; or remain only archived. All three cases occur in the integrated witness below.
 
-The universal inherited claim “an agent-level license includes a closure clause” is falsified as stated. Closure is required by some profiles, not all. The narrower profile-indexed claim is supported, and its project impact is recorded in the claim ledger.
+The inherited universal closure clause is superseded as a design default. The narrower formal claim that closure is forced by every coherent action-authorizing interface is falsified by the profile-indexed witness. Closure is required by some profiles, not all, and the distinction plus its project impact is recorded in the claim ledger.
 
 ## 1. Design alternatives
 
@@ -183,6 +183,19 @@ P : LicenseProfile = <
 
 `Req(P)` determines the top-level license status. `Report(P)` is always evaluated when possible but cannot by itself block the grant. This lets a reliance profile report current comparison status without requiring it.
 
+The `intended_use_role` field is typed:
+
+```text
+UseRole =
+    DiagnosticOnly
+  + Advisory
+  + ActionAuthorizing
+  + EmergencyException
+  + GovernanceException.
+```
+
+A profile is **action-authorizing** exactly when `intended_use_role=ActionAuthorizing`. Emergency and governance exceptions are separately typed so that they cannot silently inherit ordinary authorization semantics.
+
 ### 2.3 Well-formedness
 
 `WFProfile(P,omega,e)` requires:
@@ -192,7 +205,7 @@ P : LicenseProfile = <
 3. certificate interpretations are not silently mixed;
 4. comparison atoms name their profile, evaluated set, and closure strength;
 5. no two required atoms impose contradictory type identities;
-6. every full action-authorizing profile includes an explicit fallback or explicitly typed emergency/governance exception;
+6. every profile with `intended_use_role=ActionAuthorizing` includes an explicit fallback; `EmergencyException` and `GovernanceException` roles instead name their exceptional rule and trace;
 7. the profile is versioned and traceable;
 8. `Req(P)` is finite.
 
@@ -212,7 +225,8 @@ Define:
 ```text
 P_rely(q,epsilon,alpha,F,Delta,c,p)
   = <required={A,B,H,T},
-     report={current comparison status when available}>.
+     report={current comparison status when available},
+     intended_use_role=ActionAuthorizing>.
 ```
 
 For finite comparison profile `g`:
@@ -220,11 +234,13 @@ For finite comparison profile `g`:
 ```text
 P_pref-rel(...,g,K,sigma)
   = <required={A,B,H,T,
-               RelUndefeatedReq(D,g,K,sigma)}>.
+               RelUndefeatedReq(D,g,K,sigma)},
+     intended_use_role=ActionAuthorizing>.
 
 P_pref-cert(...,g,K,sigma)
   = <required={A,B,H,T,
-               CertUndominatedReq(D,g,K,sigma)}>.
+               CertUndominatedReq(D,g,K,sigma)},
+     intended_use_role=ActionAuthorizing>.
 ```
 
 These names are defaults, not universal normative mandates. An emergency selector, experiment, exploration policy, or regulated deployment can name another well-formed profile.
@@ -296,6 +312,8 @@ Undefined > Refused > Withheld > Granted
 ```
 
 for the top-level diagnostic tag. Every component result remains in `Diag`.
+
+The top-level tag is never a sufficient safety report. In particular, an `Undefined` atom can dominate the aggregate tag while another required atom carries a certified safety refusal. Every action consumer must inspect `Diag` (or a lossless safety projection of it), and any certified safety refusal blocks action even when the displayed aggregate tag is `Undefined`. Task 13 must decide whether to retain this diagnostic obligation or adopt an explicit escalation product rather than a single four-chain tag.
 
 ### 3.4 Satisfaction
 
@@ -553,9 +571,8 @@ Thus any scalar upper risk bound at most `0.20` satisfies hard adequacy and auto
 
 ```text
 D_O={a,b,c}
-D_S={b,c,d}
+D_S=D_N=D_cloud={b,c,d}
 D_Q={a,b}
-D_N={b,c,d}
 Gap={e}.
 ```
 
@@ -598,7 +615,15 @@ Robust(Q) in [0.21,0.24].
 
 The first three support hard risk adequacy. `Q` nevertheless fails the hard robustness constraint by countercertificate.
 
-A prespecified overlap comparison on `{b,c}` validly certifies:
+A prespecified overlap evaluation—not a free restriction of the whole-domain expected-risk certificates—also establishes:
+
+```text
+Risk_{D_overlap}(O) in [0.11,0.13]
+Risk_{D_overlap}(S) in [0.040,0.050],
+where D_overlap={b,c}.
+```
+
+Both entities therefore pass the comparison profile's hard adequacy filter on its own evaluation specification. The same overlap-scope joint comparison then validly certifies:
 
 ```text
 S scalar-risk dominates O on {b,c}.
@@ -613,7 +638,13 @@ Risk_{D_N}(N) in [0.035,0.050]
 Robust(N) in [0.05,0.08].
 ```
 
-A valid joint comparison certifies:
+A prespecified overlap certificate additionally gives:
+
+```text
+Risk_{D_overlap}(N) in [0.035,0.045].
+```
+
+Thus `N` and `O` both satisfy the comparison-scope adequacy filter, and a valid joint comparison certifies:
 
 ```text
 N scalar-risk dominates O on {b,c}.
@@ -622,7 +653,7 @@ N scalar-risk dominates O on {b,c}.
 For whole-domain cloud scalar score
 
 ```text
-score(e)=Risk_{D_S}(e)+0.005*deployment_cost(e),
+score(e)=Risk_{D_cloud}(e)+0.005*deployment_cost(e),
 ```
 
 a valid joint certificate gives:
@@ -633,6 +664,8 @@ score(S) in [0.054,0.056],
 ```
 
 so `N` dominates `S` under this named whole-domain profile.
+
+These are new, tighter joint score certificates; they are not obtained by ordinary interval propagation from the marginal risk certificates above. Marginal propagation alone gives overlapping score regions and would withhold the dominance claim.
 
 Recorded point estimates suggest `N` is better on `{b,c}` while `S` is better on `{d}`. Those cells were chosen after inspecting the new data and lack a simultaneous/selective comparison certificate. Their local target relation is operationally unknown at `t_1`.
 
@@ -652,6 +685,8 @@ Use canonical `P_rely` unless otherwise noted:
 | bare `Lic(O,D_O)` | `Undefined` | `MissingLicenseProfile` |
 
 Thus `Granted`, `Refused`, `Withheld`, and `Undefined` coexist in one finite structure without treating non-grants as one Boolean negation.
+
+For `omega_W`, `S` has a typed executable interface on `e`; `e` lies outside its certified/evaluated scope rather than outside its executable interface. The missing scope evidence therefore yields `Withheld`. By contrast, an absent or ill-typed interface on `e` would yield `Undefined` under the well-formedness rule.
 
 ### 8.2 Simultaneous usable plans
 
@@ -899,10 +934,13 @@ The witness uses versioned nodes:
 
 ```text
 models:       m_O^0,m_S^0,m_Q^0,m_N^0
-domains:      D_O^0,D_S^0,D_Q^0,D_N^0,D_edge^1,D_overlap^1
+domains:      D_O^0,D_S^0,D_Q^0,D_N^0,D_overlap^0,D_cloud^1,
+              D_edge^1,D_overlap^1
 data:         d_O^0,d_S^0,d_Q^0,d_N^1,d_O_leak^2,d_S_rebut^2
 procedures:   cert_risk^0,cert_compare^0,cert_split^1
-certificates: k_O^0,k_S^0,k_Q^0,k_N^1,k_NO^1,k_NS_cloud^1,k_S_bad^2
+certificates: k_O^0,k_S^0,k_Q^0,
+              k_O_overlap^0,k_S_overlap^0,
+              k_N^1,k_N_overlap^1,k_NO^1,k_NS_cloud^1,k_S_bad^2
 searches:     sigma_0,sigma_1
 profiles:     P_rely^0,P_pref-rel^0,P_pref-cert^0
 requests:     omega_*^{stage,profile}
@@ -984,7 +1022,7 @@ The witness therefore satisfies the requested complete finite provenance at the 
 | multiple bridge statuses | exact, approximate, decision, incompatible, unknown |
 | complete provenance | Section 13 graph schema and event links |
 
-No contradiction was found once profile identity was included in request identity. The apparent conflicts all came from comparing different profiles, scopes, stages, or evidence views as if they were one judgment.
+The external audit initially found one genuine scope inconsistency: the first version used overlap dominance without overlap-scope adequacy certificates, despite rejecting free restriction of expected-risk certificates. The repaired witness now includes the prespecified overlap certificates in Sections 7.6–7.7 and their provenance nodes in Section 13. After that repair, no contradiction remains in this finite witness; the other apparent conflicts come from comparing different profiles, scopes, stages, or evidence views as if they were one judgment.
 
 ## 15. Elementary results
 
@@ -1060,7 +1098,7 @@ There exists a well-formed action-authorizing license profile with no comparison
 
 **Witness.** `P_rely` requires adequacy, fallback improvement, hard constraints, and trace, and reports comparison when available without requiring it. `O` and `S` receive well-formed grants under it at `t_0`. `square`
 
-This proposition falsifies universal claim E05 while supporting the narrower statement that `P_pref-rel` and `P_pref-cert` contain explicit finite closure requirements.
+This proposition shows that closure is not forced by action authorization plus the retained project requirements. It supersedes E05 as a universal design default and supplies a countermodel only to the narrower formal claim that every coherent action-authorizing profile must contain closure. It does not “falsify” a stipulative definition merely by choosing another definition. The supported replacement is that `P_pref-rel` and `P_pref-cert` contain explicit finite closure requirements.
 
 ## 16. Repairs to completed interfaces
 
@@ -1193,13 +1231,13 @@ Inherited claim E05 states:
 
 > An agent-level license includes a closure clause: no better model was found in the retrieved/searched library under the available budget.
 
-The universal reading is falsified by Proposition 9 and the integrated witness. `P_rely` is a coherent, action-authorizing profile without required comparison closure. The scoped replacement is:
+As a proposed definition, the universal reading is superseded (`D1`) by the profile-indexed design rather than falsified. As the narrower formal claim that closure is forced by every coherent action-authorizing interface satisfying the retained requirements, it is falsified (`X1`) by Proposition 9 and the integrated witness: `P_rely` is coherent and action-authorizing without required comparison closure. The scoped replacement is:
 
 > A profile that authorizes comparative preferred use must state its finite search/closure requirement; `P_pref-rel` records no certified dominator in the evaluated set, while `P_pref-cert` additionally requires every relevant comparison resolved.
 
 ### 18.2 Project impact
 
-The falsification does not threaten the central goal. It changes the core interface and improves the theory-succession account:
+The design replacement and narrower falsification do not threaten the central goal. They change the core interface and improve the theory-succession account:
 
 - the paper must not claim every license is a best-known-model certificate;
 - Task 8's full license becomes one named strong profile;

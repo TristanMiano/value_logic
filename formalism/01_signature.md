@@ -4,6 +4,8 @@ Status: Task 7 formal specification, version 0.1
 Date: 2026-07-11  
 Scope: syntax and typing only; license truth conditions begin in Task 8
 
+> **Task 11A interface notice.** This historical signature predates mandatory profile indexing. Read its full bare `Lic` constructor as the strong named profile `Lic_{P_full^8}`, not as the universal meaning of licensing. Current-license and active-set views are profile-indexed. See [`05a_integration.md`, §16](05a_integration.md#16-repairs-to-completed-interfaces); Task 13 will consolidate the notation.
+
 ## Executive decision
 
 The calculus will use a **many-sorted, finite-stage language with typed records and dependent task interfaces**. Its primitive objects are not truth degrees. They are agents, stages, versioned models, typed cases and domains, evaluation specifications, evidence records, libraries, search traces, costs, fallbacks, and provenance objects.
@@ -1001,6 +1003,18 @@ sigma   : Search
 p       : Provenance
 R       : Record.
 ```
+
+For update semantics, partition these request positions into:
+
+```text
+Substantive(omega)
+  = <a,b,m,q,epsilon,alpha,F,Delta,c>
+
+StageBound(omega)
+  = <t,R,K,sigma,p>.
+```
+
+`Substantive` records what reliance question is being asked. `StageBound` records the finite-stage versions of the evidence, library/search, and provenance objects against which it is currently reassessed. A successor request may rebind `StageBound` positions to child-stage versions without claiming that the old request was mutated. Changing a substantive position creates a different reliance question. If an application treats a library, search protocol, or provenance requirement as a fixed substantive constraint, that constraint belongs inside `q`, `c`, or the later license profile; the reference to its current version remains stage-bound.
 
 When the context is fixed, write:
 

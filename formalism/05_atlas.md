@@ -5,6 +5,8 @@ Date: 2026-07-11
 Depends on: [`01_signature.md`](01_signature.md), [`02_license_semantics.md`](02_license_semantics.md), [`03_consequence_update.md`](03_consequence_update.md), [`04_dominance_retention.md`](04_dominance_retention.md)  
 Scope: finite-stage local model charts, partial covers, overlap compatibility, bridge composition, routing, and separation from ReLU activation geometry
 
+> **Task 11A interface notice.** This historical artifact predates mandatory profile indexing. Read chart-use and active-set views as `Charts^use(A,P)` and `Act_A(x,zeta,P)`; archive, comparison, selection, and profile-indexed use remain distinct. See [`05a_integration.md`, §16](05a_integration.md#16-repairs-to-completed-interfaces).
+
 ## Executive definition
 
 The weakest object needed by this project is a **finite licensed model cover**, not a differential-geometric atlas. At agent-stage `(a,t)`, it stores versioned local model/use-plan charts whose certified use domains may overlap, nest, coincide, or leave gaps.

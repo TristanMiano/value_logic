@@ -186,14 +186,15 @@ The intended architecture therefore needs an explicit null/fallback expert or ac
 ### Core sources
 
 - `MontufarEtAl2014` — linear-region complexity and depth. **Core/background** for expressivity, with architecture-dependent bounds.
-- `AroraEtAl2018` — ReLU networks and piecewise-linear representation results. **Core** for finite representability.
-- `HeEtAl2020` — explicit representation of general scalar CPWL functions in `R^d` by ReLU DNNs and depth/size bounds. **Core** for inherited claim F14.
+- `AroraEtAl2018` — exact scalar CPWL/ReLU representation and the `ceil(log2(d+1))` hidden-layer upper bound in Theorem 2.1. **Core** for finite representability and the inherited F14 depth claim.
+- `WangSun2005` — generalized hinging-hyperplane representation used in Arora et al.'s proof. **Core/bridge** for the representation backbone.
+- `HeEtAl2020` — detailed account of general scalar CPWL representation, neuron-size estimates, and FEM-specific depth results. **Core** for construction/size detail, not the original attribution of the general depth bound.
 - `Ovchinnikov2002` — max–min representation of piecewise-linear functions. **Core/bridge** for constructive lattice formulas.
 - `ZhangNaitzatLim2018` — equivalence of feedforward ReLU networks and tropical rational maps under the paper's conventions. **Bridge** for algebraic analysis.
 
 ### Verified finite result
 
-For ordinary finite feed-forward ReLU networks, the computed map is continuous and piecewise affine on a finite polyhedral decomposition. Conversely, cited representation results establish exact finite ReLU realizations for finite CPWL functions under their stated scalar/vector, domain, and architecture conventions. `HeEtAl2020` gives a detailed construction and an upper bound of `ceil(log2(d+1))` hidden layers for a general scalar CPWL function on `R^d` under its counting convention.
+For ordinary finite feed-forward ReLU networks, the computed map is continuous and piecewise affine on a finite polyhedral decomposition. Conversely, cited representation results establish exact finite ReLU realizations for finite CPWL functions under their stated scalar/vector, domain, and architecture conventions. `AroraEtAl2018`, Theorem 2.1, states the general scalar exact-representation result and `ceil(log2(d+1))` hidden-layer bound under its counting convention, using `WangSun2005`; `HeEtAl2020` gives a detailed construction account and neuron-size estimates.
 
 This supports a **finite representability theorem**, not the claims that:
 
@@ -316,7 +317,7 @@ The omitted items are not declared false. They are simply not carried into the v
 
 - **C07:** Belief states/history summaries can restore a Markov decision representation when they are sufficient statistics under the assumed POMDP model (`SmallwoodSondik1973`; `KaelblingLittmanCassandra1998`). This does not imply that every compressed history representation is sufficient.
 - **D01:** There exist genuine preference-logical families using ordered worlds, conditional preference statements, or evaluative measures. The broad family resemblance is supported, but no single universal “preference consequence” is established.
-- **F14:** Finite scalar CPWL maps admit exact finite ReLU representations under stated conventions; `HeEtAl2020` supplies a constructive general result and bound. The inherited conversation's unspecified architecture conventions still need normalization before a theorem is quoted.
+- **F14:** Finite scalar CPWL maps admit exact finite ReLU representations under stated conventions; `AroraEtAl2018`, Theorem 2.1, supplies the general representation and depth bound using `WangSun2005`, while `HeEtAl2020` supplies detailed construction/size analysis and FEM-specific results. The inherited conversation's unspecified architecture conventions still need normalization before a theorem is quoted.
 - **F17:** A bidirectional logical/network correspondence is supported for truncated-identity networks with rational/integer coefficient restrictions, not arbitrary ordinary ReLU networks (`CastroTrillas1998`; `AmatoDiNolaGerla2002`).
 
 ### Checked but still inconclusive (`I1`)

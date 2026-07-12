@@ -55,13 +55,14 @@ Work proceeds one numbered task or checkpoint per prompt. To resume the project 
 4. update its completion record, affected specifications, and claim dispositions; and
 5. stop before beginning the following item.
 
-Claims are classified before being accepted or rejected. A claim is first treated as supported, falsifiable and awaiting a test, or likely unfalsifiable. It is marked falsified only after a counterexample, proof, or sufficiently relevant empirical result is supplied. Every falsified inherited claim also records its impact on the overall project.
+Claims are classified before being accepted or rejected. A claim is first treated as supported, falsifiable and awaiting a test, or likely unfalsifiable. It is marked falsified only after a counterexample, proof, or sufficiently relevant empirical result is supplied; a replaced definition is instead recorded as a superseded design default. Every falsified inherited claim also records its impact on the overall project.
+
+The historical interfaces in `formalism/01_signature.md` through `formalism/05_atlas.md` predate Task 11A. Their bare `Lic` and unindexed current-use notation must be read through the profile-indexed mapping in [`formalism/05a_integration.md`, §16](formalism/05a_integration.md#16-repairs-to-completed-interfaces) until Task 13 consolidates the core.
 
 ## Project status
 
-Tasks 0–11A and Checkpoint A are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and an integrated finite witness have been developed.
+Tasks 0–11A, Checkpoint A, and the unscheduled external-audit Checkpoint A1 are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed.
 
-The current next step is Task 12: formalizing open-endedness, compatible continuations, profile-indexed stability, and the distinction between eventual stability, known stability, and semantic finality.
+The current next step is Task 11B: mechanizing and testing the integrated witness before further formalization.
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.
-
