@@ -1,12 +1,13 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: Task 5 specification, version 0.6 after Task 11B executable verification
+Status: Task 5 specification, version 0.7 after Task 12 open-endedness results
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
 External audit checkpoint A1: 2026-07-11
 Checkpoint A1 theorem/elegance amendment: 2026-07-12
 Task 11B executable verification: 2026-07-12
+Task 12 open-endedness analysis: 2026-07-12
 
 ## Executive specification
 
@@ -439,12 +440,15 @@ The following decisions are now project defaults unless a later theorem, experim
 14. Well-formedness is checked before evidence status. Meaningful atoms use `K_3`; `Undefined` is not another degree of evidential failure.
 15. Flat reason codes are presentation/implementation labels derived from atom identity, polarity, witness or obstacle, and provenance.
 16. The mathematical contribution is judged by a multi-cluster theorem spine, not by the number of definitions labeled “Theorem.”
+17. Stability fixes `(e,q,P)` and is separated into pathwise eventual stability, permanent current stability, and scheme-relative certified stability.
+18. Semantic finality and optional target truth remain metalanguage notions; their absence from the base grammar is not itself a non-finality theorem.
+19. Deterministic freeze, statistical margin/coverage, and open-library model addition are distinct stability regimes with different assumptions.
+20. Open-library non-finality is directional: a supported finite-library non-domination claim is defeasible by a valid dominator extension, while a persistent refutation may be stable.
 
 ## 18. Specification gates after external audit checkpoint A1
 
-Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A resolved the integration ambiguity by selecting mandatory profile-indexed `Lic_P`, defining canonical reliance/relative-preference/resolved-preference profiles, and validating them in one integrated witness. Checkpoint A1 repaired the witness scope, introduced `<W,S>` semantics, corrected the CPWL attribution, and identified the theorem/executability/motivation risks. Task 11B closed the executable-semantics gate with a compact standard-library `WF + K_3` kernel, a machine-checked three-stage witness, lossless indexed diagnostics, local-link validation, and continuous verification. Remaining gates are:
+Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A resolved the integration ambiguity by selecting mandatory profile-indexed `Lic_P`, defining canonical reliance/relative-preference/resolved-preference profiles, and validating them in one integrated witness. Checkpoint A1 repaired the witness scope, introduced `<W,S>` semantics, corrected the CPWL attribution, and identified the theorem/executability/motivation risks. Task 11B closed the executable-semantics gate with a compact standard-library `WF + K_3` kernel, a machine-checked three-stage witness, lossless indexed diagnostics, local-link validation, and continuous verification. Task 12 closed the open-endedness gate with continuation semantics, deterministic and statistical stabilization results, finite-prefix and open-library impossibility theorems, and separation countermodels; it rejected Löb/GL transfer and narrowed comparison non-finality to its correct positive polarity. Remaining gates are:
 
-- the strongest atom-level continuation-based stability/non-finality result available without covert truth or provability assumptions (Task 12);
 - verified primary-source positioning for the core consequence, evidence, awareness, partiality, and fallback structures (Task 12A);
 - the smallest three-carrier/two-sorted core, typed elaboration map, usable atom/profile refinement order, diagnostic algebra, canonical glossary, and exact boundary between core and extensions (Task 13);
 - which core rules/results survive rigorous proof and countermodel audit, including update persistence, profile relative completeness, and diagnostic minimality (Task 14);

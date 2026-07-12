@@ -64,8 +64,8 @@ The historical interfaces in `formalism/01_signature.md` through `formalism/05_a
 
 ## Project status
 
-Tasks 0–11B, Checkpoint A, and the unscheduled external-audit Checkpoint A1 are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed. The compact `WF + K_3` semantics and the complete finite witness are now executable and tested with `python -m verification`.
+Tasks 0–12, Checkpoint A, and the unscheduled external-audit Checkpoint A1 are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed. The compact `WF + K_3` semantics and the complete finite witness are executable and tested with `python -m verification`. Continuation semantics now separates current grants, eventual stability, certified stability, semantic finality, and optional truth, with positive stabilization theorems and conditional non-certifiability results.
 
-The current next step is Task 12: analyzing continuation-based open-endedness and non-finality.
+The current next step is Task 12A: filling the core-related literature gaps before freezing the compact calculus.
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.
