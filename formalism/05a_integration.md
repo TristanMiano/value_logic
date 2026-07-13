@@ -5,7 +5,7 @@ Date: 2026-07-11
 Depends on: [`01_signature.md`](01_signature.md), [`02_license_semantics.md`](02_license_semantics.md), [`03_consequence_update.md`](03_consequence_update.md), [`04_dominance_retention.md`](04_dominance_retention.md), [`05_atlas.md`](05_atlas.md)  
 Checkpoint: [`A_finite_stage_foundations.md`](../notes/checkpoints/A_finite_stage_foundations.md)
 
-> **Checkpoint A1 compactness notice.** This file's atom-level four-status presentation will be compressed in Task 13 to a separate well-formedness judgment plus three-valued meaningful atom assessments. Its named reason codes remain readable displays of indexed witnesses/obstacles, not primitive constructors. Task 11B must verify the legacy witness through that compact kernel rather than reproduce a closed reason-code enum.
+> **Task 13 canonical-core notice.** This file is the detailed integration witness and historical interface, not the paper-level ontology. Read its atom-level four-status presentation through [`07_core_calculus.md`](07_core_calculus.md): well-formedness is checked separately, meaningful atoms use `K_3`, and named reason codes are readable displays of indexed witnesses/obstacles rather than primitive constructors.
 
 > **Task 11B verification note.** The compact executable reference and its assertions are in [`verification/`](../verification/). `python -m verification` checks this file's finite witness tables, transitions, diagnostics, and local links. The implementation is a semantic regression oracle for later consolidation, not an additional primitive ontology.
 

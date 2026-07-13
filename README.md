@@ -31,7 +31,7 @@ The current canonical profiles distinguish pragmatic reliance from two strengths
 
 None of these judgments claims global optimality, universal truth, or immunity from later revision.
 
-The detailed typed records in the early formalism are now treated as an elaboration/implementation schema. The planned paper-level core uses three principal carriers—evaluated use plans, reliance contexts, and finite epistemic states—with target worlds as a semantic index. Its four public outcomes are derived compactly: failed well-formedness gives `Undefined`; otherwise each requirement is refuted, open, or supported, and finite meet gives `Refused`, `Withheld`, or `Granted`. Named reason codes are diagnostic renderings of atom-indexed witnesses or obstacles, not primitive logical types.
+The detailed typed records in the early formalism are now treated as an elaboration/implementation schema. The canonical paper-level core in [`formalism/07_core_calculus.md`](formalism/07_core_calculus.md) uses three principal carriers—evaluated use plans, reliance contexts, and finite epistemic states—with target worlds as a semantic index and profiles as finite parameterized syntax. Its four public outcomes are derived compactly: failed well-formedness gives `Undefined`; otherwise each requirement is refuted, open, or supported, and finite meet gives `Refused`, `Withheld`, or `Granted`. Named reason codes are diagnostic renderings of atom-indexed witnesses or obstacles, not primitive logical types.
 
 ## Repository map
 
@@ -60,12 +60,12 @@ Work proceeds one numbered task or checkpoint per prompt. To resume the project 
 
 Claims are classified before being accepted or rejected. A claim is first treated as supported, falsifiable and awaiting a test, or likely unfalsifiable. It is marked falsified only after a counterexample, proof, or sufficiently relevant empirical result is supplied; a replaced definition is instead recorded as a superseded design default. Every falsified inherited claim also records its impact on the overall project.
 
-The historical interfaces in `formalism/01_signature.md` through `formalism/05_atlas.md` predate Task 11A. Their bare `Lic` and unindexed current-use notation must be read through the profile-indexed mapping in [`formalism/05a_integration.md`, §16](formalism/05a_integration.md#16-repairs-to-completed-interfaces) until Task 13 consolidates the core.
+The historical interfaces in `formalism/01_signature.md` through `formalism/05a_integration.md` are detailed elaborations and provenance records. Their bare `Lic`, four-chain atom statuses, or unindexed current-use notation must be read through the canonical request, profile, and `WF + K_3` calculus in [`formalism/07_core_calculus.md`](formalism/07_core_calculus.md).
 
 ## Project status
 
-Tasks 0–12A, Checkpoint A, and the unscheduled external-audit Checkpoint A1 are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed. The compact `WF + K_3` semantics and the complete finite witness are executable and tested with `python -m verification`. Continuation semantics separates current grants, eventual stability, certified stability, semantic finality, and optional truth. The core-related literature has now been audited against primary sources with explicit theorem-transfer boundaries.
+Tasks 0–13, Checkpoint A, and the unscheduled external-audit Checkpoint A1 are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed. The compact `WF + K_3` semantics and the complete finite witness are executable and tested with `python -m verification`. Continuation semantics separates current grants, eventual stability, certified stability, semantic finality, and optional truth. The core-related literature has been audited against primary sources with explicit theorem-transfer boundaries. The compact core calculus now fixes the canonical request `(s,e,q,P)`, proves each coordinate indispensable by finite separators, and states the metatheory program.
 
-The current next step is Task 13: selecting and stating the smallest publishable core calculus.
+The current next step is Task 14: proving or refuting the compact core's metatheory.
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.
