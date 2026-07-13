@@ -1,6 +1,6 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: Task 5 specification, version 0.9b after architecture-neutrality amendment
+Status: Task 5 specification, version 1.0 after Task 14 metatheory audit
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
@@ -12,6 +12,7 @@ Task 12A core-literature audit: 2026-07-12
 Task 13 core-calculus selection: 2026-07-12
 Recursive-composition amendment: 2026-07-12
 Architecture-neutrality amendment: 2026-07-12
+Task 14 metatheory audit: 2026-07-12
 
 ## Executive specification
 
@@ -366,7 +367,7 @@ The project must not move silently between these kinds. In particular, a formal 
 
 ### 14.1 Formal success
 
-The proposal succeeds formally if the compact signature and `<W,S>` semantics are typed, the detailed schema has a semantics-preserving elaboration into that core, and at least three paper-carrying results survive across distinct theorem clusters. The intended spine currently comprises: an atom-level stability/non-certifiability theorem; an update-persistence or profile-refinement characterization; a domain/routing or bridge risk bound; and a positive/negative ReLU representation result. Finite-algebra corollaries, definitional sanity checks, and renamed standard facts remain useful but do not count by themselves. It fails if “logic” remains only a name for comparing scalar losses or if the paper's mathematical weight is carried by record definitions rather than results.
+The proposal succeeds formally if the compact signature and `<W,S>` semantics are typed, the detailed schema has a semantics-preserving elaboration into that core, and at least three paper-carrying results survive across distinct theorem clusters. The surviving spine now includes Task 12 stability/non-certifiability results and Task 14's observable-indexed update characterization, independent-fragment profile completeness, and query-induced diagnostic quotient. It still requires a domain/routing or bridge risk cluster and a positive/negative neural representation cluster. Finite-algebra corollaries, definitional sanity checks, and renamed standard facts remain useful but do not count by themselves. It fails if “logic” remains only a name for comparing scalar losses or if the paper's mathematical weight is carried by record definitions rather than results.
 
 ### 14.2 Neural success
 
@@ -464,12 +465,16 @@ The following decisions are now project defaults unless a later theorem, experim
 28. `NoLicensedModel` and fallback behavior are selector-level consequences of an empty active set; they are not atom reasons. Full atlas, bridge, Pareto, splitting, and policy/value structures remain formal extensions.
 29. Model atomicity is relative to the request interface. A core `e` may hide a finite well-founded graph of object, frame, formulation, solver, evaluator, and action choices; `L_q` names the target criterion rather than any fallible model used to estimate it. Cyclic evaluator/license dependence is not part of the ordinary core without explicit fixed-point semantics.
 30. ReLU is the canonical reference construction because it makes signed margins, threshold gates, CPWL representation, and activation geometry explicit. The license semantics and diagnostic interface are architecture-neutral; neither universal approximation nor a successful ReLU construction establishes uniqueness or optimality, and Checkpoints B–C own any narrowly scoped alternative comparison.
+31. Update invariance is indexed by both an allowed update class and an observable. Impact-path absence is sufficient under change-completeness and necessary only with path realizability; diagnostic, atom-value, public-status, and grant invariance are not interchangeable.
+32. The typed atom refinements are support-sound. Profile refinement is sound generally and relatively complete for finite independently realizable atom fragments; unrepresented conjunctive interactions are outside that completeness theorem.
+33. The minimal status representation is the quotient of the realizable atom-vector set by the supported profile queries. Singleton profiles make this quotient equality on `V`; `3^n` and `ceil(n log_2 3)` require full ternary independence, and `WF` needs a separate tagged channel.
+34. Operational support is not world-factive. Every target-adequacy or safety conclusion names a certificate-mode bridge and its admissible `<w,s>` class; likewise, gap fallback prevents unlicensed expert use but does not make the fallback target-safe without evidence.
+35. Finite acyclic component graphs can be reified as core plans, but component grants do not compose without direct composite evaluation or a proved error/cost/interface propagation certificate. Cyclic evaluator/license dependence remains an explicit fixed-point extension.
 
-## 18. Specification gates after Task 13
+## 18. Specification gates after Task 14
 
-Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A resolved the integration ambiguity by selecting mandatory profile-indexed `Lic_P`, defining canonical reliance/relative-preference/resolved-preference profiles, and validating them in one integrated witness. Checkpoint A1 repaired the witness scope, introduced `<W,S>` semantics, corrected the CPWL attribution, and identified the theorem/executability/motivation risks. Task 11B closed the executable-semantics gate with a compact standard-library `WF + K_3` kernel, a machine-checked three-stage witness, lossless indexed diagnostics, local-link validation, and continuous verification. Task 12 closed the open-endedness gate with continuation semantics, stabilization and impossibility theorems, and separation countermodels. Task 12A closed the core-literature gate with fifteen verified primary sources, an exact match/mismatch audit, a Strong-Kleene algebraic identification, and explicit no-transfer boundaries for output, evidence, awareness, conformal, and safe-baseline results. Task 13 closed the ontology/interface gate with the canonical three-carrier calculus, typed compression/elaboration, atom/profile refinement, central glossary, and coordinate-indispensability theorem. Remaining gates are:
+Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A resolved the integration ambiguity by selecting mandatory profile-indexed `Lic_P`, defining canonical reliance/relative-preference/resolved-preference profiles, and validating them in one integrated witness. Checkpoint A1 repaired the witness scope, introduced `<W,S>` semantics, corrected the CPWL attribution, and identified the theorem/executability/motivation risks. Task 11B closed the executable-semantics gate with a compact standard-library `WF + K_3` kernel, a machine-checked three-stage witness, lossless indexed diagnostics, local-link validation, and continuous verification. Task 12 closed the open-endedness gate with continuation semantics, stabilization and impossibility theorems, and separation countermodels. Task 12A closed the core-literature gate with fifteen verified primary sources, an exact match/mismatch audit, a Strong-Kleene algebraic identification, and explicit no-transfer boundaries for output, evidence, awareness, conformal, and safe-baseline results. Task 13 closed the ontology/interface gate with the canonical three-carrier calculus, typed compression/elaboration, atom/profile refinement, central glossary, and coordinate-indispensability theorem. Task 14 closed the core-metatheory gate with three characterization/separation results, exact scope qualifications, finite countermodels, and executable regression witnesses. Remaining gates are:
 
-- which core rules/results survive rigorous proof and countermodel audit, including update persistence, profile relative completeness, and diagnostic minimality (Task 14);
 - which domain-transport, routed-risk, and bridge-risk bounds survive with exact hypotheses (Task 14A);
 - the smallest architecture-neutral semantic interface and ReLU reference fragment that preserve four-way status, signed component margins, active usable sets, comparison/selection information under the Task 11A design, fallback, and external trace pointers, plus whether one narrowly motivated alternative should be compared (Tasks 15–17 and Checkpoints B–C);
 - the appropriate structured objective and simple baseline for multi-warrant, four-status, calibration, and abstention behavior (Task 18);

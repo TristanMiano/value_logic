@@ -6,6 +6,8 @@ Date: 2026-07-12
 
 Depends on: [`05a_integration.md`](05a_integration.md), [`06_open_endedness.md`](06_open_endedness.md), the executable [`WF + K_3` reference](../verification/README.md), and the [`core literature supplement`](../notes/literature_core_supplement.md)
 
+> **Task 14 audit notice.** [`08_metatheory.md`](08_metatheory.md) proves the typed refinement and update results, gives the finite countermodels, and narrows the diagnostic lower bound: singleton profiles distinguish the realizable vector set `V`, while `3^n` requires full ternary independence.
+
 ## Durable core summary
 
 This file replaces the historical implementation-level signature as the canonical paper-level calculus. It has three principal carriers:
@@ -41,9 +43,9 @@ refuted < open < supported.
 
 Required atoms aggregate by finite meet. Diagnostics are atom-indexed support witnesses, counterwitnesses, or obstacles with provenance; no closed reason-code type exists. Safety projections retain the complete diagnostics of refuted or open safety atoms. `NoLicensedModel` is not an atom: it is a selector-level display derived from an empty active set.
 
-The core includes a typed atom-refinement relation and a profile preorder. Under exact scope and parameter side conditions, stricter tolerances, larger required fallback advantages, stronger constraints/trace modes, and certified-undominated comparison can entail weaker atoms. A stronger profile grants only where the weaker profile grants. Task 14 must prove soundness and relative completeness for the frozen rules.
+The core includes a typed atom-refinement relation and a profile preorder. Under exact scope and parameter side conditions, stricter tolerances, larger required fallback advantages, stronger constraints/trace modes, and certified-undominated comparison can entail weaker atoms. A stronger profile grants only where the weaker profile grants. Task 14 proves soundness and relative completeness for the finite independently realizable fragment.
 
-Four finite separating models prove that no coordinate of `(s,e,q,P)` can be dropped while preserving assessment on all core models. This is the main completed result of Task 13. The larger metatheory—robust update persistence, profile relative completeness, diagnostic minimality, and mode-scoped soundness—remains explicitly assigned to Task 14.
+Four finite separating models prove that no coordinate of `(s,e,q,P)` can be dropped while preserving assessment on all core models. This is the main completed result of Task 13. Task 14 adds robust update persistence, profile relative completeness, the query-induced diagnostic quotient, and mode-scoped soundness/countermodels without adding a carrier.
 
 ## 1. Design criterion: mathematical core versus record schema
 
@@ -441,7 +443,7 @@ CertUndom(g,K) =>_A RelUndom(g,K).
 
 This is Task 11A's certified-to-relative implication. No rule exports either atom to a larger candidate universe or future library.
 
-Close `=>_A` under identity and transitivity. Task 14 must prove `=>_A` sound for the frozen atom semantics and determine relative completeness in an independent-atom fragment.
+Close `=>_A` under identity and transitivity. [`08_metatheory.md`](08_metatheory.md), Theorems 8–10, proves soundness and relative completeness in the finite independent-atom fragment.
 
 ## 8. Profile preorder
 
@@ -483,7 +485,7 @@ Assess(s,e,q,P)=Granted implies Assess(s,e,q,Q)=Granted.
 
 **Proof.** Grant under `P` supports every required `a`. Each required `b` of `Q` has a supported entailing witness `a`, so sound atom refinement supports `b`. The explicit side condition supplies well-formedness. Every required `Q` atom is supported, hence its meet is supported. For the schema relation, the side condition follows by definition. `square`
 
-The converse fails whenever `Q` omits a requirement that is open or refuted under `P`. This lemma is a finite order consequence; the paper-carrying Task 14 result is the exact soundness/relative-completeness characterization of the derivable preorder.
+The converse fails whenever `Q` omits a requirement that is open or refuted under `P`. The exact independent-fragment soundness/relative-completeness characterization is proved in [`08_metatheory.md`](08_metatheory.md), Theorem 10.
 
 ## 9. Labelled, output-producing consequence
 
@@ -526,7 +528,7 @@ Assess(s,e,q,P)=Granted
 Assess(s,e,q,Q)=Granted.
 ```
 
-Its semantic justification is Lemma 1; Task 14 audits the exact side conditions.
+Its semantic justification is Lemma 1; Task 14 proves the exact-side-condition result.
 
 ### Core rule `FALLBACK`
 
@@ -577,7 +579,7 @@ If `WF(r)` and every required diagnostic of `r` are identical at `s` and `s'`, t
 
 **Proof.** The same finite required value vector has the same meet. `square`
 
-This is only an extensional sufficient condition. Task 14 seeks the stronger characterization of which update classes guarantee diagnostic invariance from dependency-complete impact cones, and why path absence is not necessary without path realizability.
+This is only an extensional sufficient condition. [`08_metatheory.md`](08_metatheory.md), Theorem 5 and Countertheorem 6, gives the observable-specific impact-cone characterization and shows why path absence is not necessary without path realizability.
 
 ## 11. Two-sorted model semantics
 
@@ -688,7 +690,7 @@ For a rich historical record `D`, `J(C(D))` need not reconstruct extension field
 
 ### 13.3 Assessment-preservation obligation
 
-If detailed and core well-formedness agree and every detailed atom diagnostic maps to the same core address, `K_3` value, and provenance payload, then the two assessments agree by finite-meet functionality. Task 14 must state and prove the precise typed-elaboration invariance theorem; Task 11B supplies the executable regression witness.
+If detailed and core well-formedness agree and every detailed atom diagnostic maps to the same core address, `K_3` value, and provenance payload, then the two assessments agree by finite-meet functionality. [`08_metatheory.md`](08_metatheory.md), Theorem 26, proves typed-elaboration invariance; Task 11B supplies the executable regression witness.
 
 ## 14. Boundary between core and extensions
 
@@ -739,26 +741,26 @@ This table is the canonical notation index. Later artifacts must record any deli
 
 | result or target | dependency | classification | status / task |
 |---|---|---|---|
-| two-phase status normal form | `WF`, `K_3`, finite meet | definition plus standard algebra | implemented Task 11B; audit Task 14 |
+| two-phase status normal form | `WF`, `K_3`, finite meet | definition plus standard algebra | implemented Task 11B; proved/audited Task 14 |
 | meet commutative/associative/idempotent | Strong-Kleene chain | standard imported algebra | supported E16 |
-| profile grant antitonicity | atom-refinement soundness | elementary lemma | stated here; audit Task 14 |
+| profile grant antitonicity | atom-refinement soundness | elementary lemma | proved Task 14 |
 | coordinate indispensability | complete request interface | finite separating theorem/countermodels | proved here |
 | indistinguishable-prefix non-certifiability | continuation semantics | paper-carrying impossibility | proved Task 12 |
 | statistical stabilization / zero-error barrier | coverage, shrinkage, finite-prefix equivalence | convergence plus impossibility | proved Task 12 |
 | positive open-library non-finality | valid `AddModel` dominator continuation | paper-carrying impossibility | proved Task 12 |
-| robust update persistence | `Dep`, update class, path realizability | new characterization target | Task 14 |
-| profile refinement relative completeness | typed atom rules, independent-atom models | new characterization target | Task 14 |
-| minimal diagnostic quotient and bit bound | all supported profile queries, singleton profiles | new representation lower bound | Task 14 |
-| mode-scoped soundness | `<W,S>`, certificate-specific assumptions | theorem family, not one universal theorem | Task 14 |
+| robust update persistence | `Dep`, update class, path realizability | new observable-indexed characterization | proved Task 14 |
+| profile refinement relative completeness | typed atom rules, independent-atom models | new characterization with finite separator | proved Task 14 |
+| minimal diagnostic quotient and bit bound | realizable vectors, supported queries, singleton profiles; independence for `3^n` | new representation lower bound plus correction | proved/countermodeled Task 14 |
+| mode-scoped soundness | `<W,S>`, certificate-specific assumptions | conditional schema; universal factivity refuted | Task 14 |
 | finite plan-composition closure | typed component interfaces, propagation certificates, interaction assumptions | standard/extension lemma or countermodel family | Tasks 14–14A |
-| unrestricted rational monotony/global closure | state transitions/open library | negative/countermodel targets | Task 14 |
+| unrestricted rational-style persistence/global closure | state transitions/open library | negative/countermodel results | proved Task 14 |
 | subdomain/routed/bridge risk bounds | measure, router, loss, bridge hypotheses | cross-layer extension theorems | Task 14A |
 | finite ReLU reference representation and hard-seam characterization | diagnostic quotient, CPWL assumptions | representation/impossibility cluster for one architecture class, not an optimality claim | Task 17 |
 | semantic/activation alignment | synthetic and later real examples | empirical hypothesis | Tasks 19–25 |
 
-Definitions and imported three-element lattice facts do not count as the project's paper-carrying theorem contribution. Coordinate indispensability protects the interface but is a finite separation result; the principal theorem spine remains the Task 12 impossibilities plus the Task 14 characterization, Task 14A transport bounds, and Task 17 representation/seam results if they survive audit.
+Definitions and imported three-element lattice facts do not count as the project's paper-carrying theorem contribution. Coordinate indispensability protects the interface but is a finite separation result; the principal theorem spine now includes the Task 12 impossibilities and the three Task 14 characterization/separation results, with Task 14A transport bounds and Task 17 representation/seam results still pending.
 
-## 17. Decisions frozen for Task 14
+## 17. Decisions audited by Task 14
 
 1. The core has three principal carriers `E,Q,S`; `W` is a semantic index and profiles are finite syntax.
 2. A request is exactly `(s,e,q,P)`, and each coordinate is extensionally indispensable.
@@ -774,11 +776,11 @@ Definitions and imported three-element lattice facts do not count as the project
 12. Empty active sets derive fallback behavior and the display `NoLicensedModel`; they do not create an atom reason.
 13. Raw history is hereditary while current diagnostics are recomputed and may lapse or be rebutted.
 14. Bridges, Pareto/splitting, full atlases, mixtures, and policy/value work are extensions.
-15. Task 14 may repair a frozen rule only by proving a countermodel and propagating its project impact.
+15. Task 14 retained the frozen core rules and propagated every narrowed or refuted strengthening through the claim ledger.
 16. A core plan may elaborate into a finite well-founded component DAG, and evaluators may receive higher-order requests; cyclic evaluator/license dependence remains a fixed-point extension rather than an implicit core feature.
 
 ## Task conclusion
 
 The project now has one compact calculus rather than a stack of partially overlapping record schemas. It says what a bounded agent may currently rely on without turning usefulness into truth: choose a versioned use plan `e`, state the complete reliance context `q`, evaluate it in finite state `s`, and name the finite requirement profile `P`. Well-formedness is checked first; meaningful requirements are then refuted, open, or supported with explicit diagnostics; their finite meet yields the public outcome.
 
-This core is small enough to support real metatheory and explicit neural representation. It is also rich enough to preserve the project's central distinctions: absolute versus fallback-relative adequacy, basic reliance versus preferred use, unknown versus refuted requirements, simultaneous active models versus selection, historical retention versus current warrant, and finite evidence versus target-world truth. Task 14 can now test the calculus rather than another implementation inventory.
+This core is small enough to support real metatheory and explicit neural representation. It is also rich enough to preserve the project's central distinctions: absolute versus fallback-relative adequacy, basic reliance versus preferred use, unknown versus refuted requirements, simultaneous active models versus selection, historical retention versus current warrant, and finite evidence versus target-world truth. Task 14's audit retains the core while making its realizability, soundness, fallback, and composition qualifications explicit.

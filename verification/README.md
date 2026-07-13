@@ -10,4 +10,4 @@ From the repository root, run:
 python -m verification
 ```
 
-The command exercises the three-stage integrated witness and checks all local Markdown links. It uses only the Python standard library.
+The command exercises the three-stage integrated witness, the finite Task 14 separation/cardinality countermodels, and all local Markdown links. It uses only the Python standard library. The finite metatheory tests are regression witnesses, not a proof-assistant formalization; the proofs are in [`formalism/08_metatheory.md`](../formalism/08_metatheory.md).
