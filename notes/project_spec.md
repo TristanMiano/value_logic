@@ -1,6 +1,6 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: Task 5 specification, version 0.9 after Task 13 core-calculus selection
+Status: Task 5 specification, version 0.9a after recursive-composition amendment
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
@@ -10,6 +10,7 @@ Task 11B executable verification: 2026-07-12
 Task 12 open-endedness analysis: 2026-07-12
 Task 12A core-literature audit: 2026-07-12
 Task 13 core-calculus selection: 2026-07-12
+Recursive-composition amendment: 2026-07-12
 
 ## Executive specification
 
@@ -278,6 +279,7 @@ The formalism, architecture, experiments, and final exposition must satisfy the 
 - **DR-L12 — Design/verdict separation:** Replacing a proposed definition is recorded as a superseded design default, not as falsification unless a separate forced-design proposition is stated and countermodeled.
 - **DR-L13 — Core economy:** A distinction becomes a primitive carrier or judgment only when a theorem, countermodel, or typing obstruction requires it. The detailed record schema belongs in an elaboration/implementation layer.
 - **DR-L14 — Factored status:** `Undefined` arises from failed well-formedness. Meaningful required atoms use `K_3={refuted,open,supported}` and finite meet to derive `Refused`, `Withheld`, or `Granted`; diagnostic reasons are indexed witnesses/obstacles rather than a closed global enum.
+- **DR-L15 — Relative atomicity and disciplined recursion:** A use plan may elaborate to a finite typed component DAG, and a loss/consequence estimator may itself be licensed under a higher-order request. The criterion, its estimator, and the training objective remain distinct; component licenses require an explicit composition rule before they authorize the whole; cyclic self-reference requires separately stated fixed-point semantics.
 
 ### Representational and neural requirements
 
@@ -375,7 +377,7 @@ The strongest interpretability claim supported must match the evidence grade. Be
 
 ### 14.5 Expository success
 
-Both public artifacts must open with the derivation question: why `M` and `D` arise directly, why error and `epsilon` enter only after a risk/task and reliance rule are introduced, and how a fallback can induce a threshold. They must then separate the structured judgment from its neural representation and separate the two atlas notions before presenting results.
+Both public artifacts must open with the design questions: why `M` and `D` arise directly; why error and `epsilon` enter only after a risk/task and reliance rule are introduced; how a fallback can induce a threshold; where one model ends when a use plan is recursively composed; and how a target loss differs from a fallible model of loss. They must then separate the structured judgment from its neural representation and separate the two atlas notions before presenting results.
 
 ## 15. Proposed paper architecture
 
@@ -383,15 +385,16 @@ The motivating order should be:
 
 1. bounded action and theory succession;
 2. what is and is not forced by `Pi(M,D,epsilon)`;
-3. fallback/status quo and factored reliance;
-4. the location and preservation of information;
-5. overlapping scientific model covers versus ReLU activation complexes;
-6. the finite-stage license language and semantics;
-7. update, dominance, retention, and abstention results;
-8. ReLU representation and learning objectives;
-9. synthetic experiments and counterexamples;
-10. the policy/value interpretability bridge;
-11. philosophical interpretation, limitations, and open problems.
+3. relative model granularity, finite recursive composition, and modeled loss;
+4. fallback/status quo and factored reliance;
+5. the location and preservation of information;
+6. overlapping scientific model covers versus ReLU activation complexes;
+7. the finite-stage license language and semantics;
+8. update, dominance, retention, and abstention results;
+9. ReLU representation and learning objectives;
+10. synthetic experiments and counterexamples;
+11. the policy/value interpretability bridge;
+12. philosophical interpretation, limitations, and open problems.
 
 This preserves the posts' motivational direction—value and comparison before certainty, recursive evaluation recovering useful structure—while making the paper's actual claims depend only on explicit definitions, proofs, audited sources, and experiments.
 
@@ -454,6 +457,7 @@ The following decisions are now project defaults unless a later theorem, experim
 26. `E`, `Q`, and `S` are the only principal operational carriers. `W` is a semantic index, profile families are finite syntax, and the Task 7 record inventory is recovered by typed elaboration rather than promoted to primitive ontology.
 27. Profile strength is typed and parameter-sensitive: atom refinement requires exact scope/mode side conditions, request-local profile refinement lifts uniformly to schemas, and certified undominated status refines relative undefeated status only on the same evaluated set and valid search view.
 28. `NoLicensedModel` and fallback behavior are selector-level consequences of an empty active set; they are not atom reasons. Full atlas, bridge, Pareto, splitting, and policy/value structures remain formal extensions.
+29. Model atomicity is relative to the request interface. A core `e` may hide a finite well-founded graph of object, frame, formulation, solver, evaluator, and action choices; `L_q` names the target criterion rather than any fallible model used to estimate it. Cyclic evaluator/license dependence is not part of the ordinary core without explicit fixed-point semantics.
 
 ## 18. Specification gates after Task 13
 

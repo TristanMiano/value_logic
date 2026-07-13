@@ -70,6 +70,8 @@ Frame_e(q)     its declared representation/frame interface.
 
 Model identity, version, preprocessing, solver choice, and deployment wrapper belong to `e` whenever changing them can change risk or executable behavior. An underspecified theory family is not normally an element of `E`.
 
+The core treats `e` as atomic only relative to this interface. Its elaboration may be a finite dependency DAG of object/idealization choices, frames, formulations, submodels, solvers, loss/consequence estimators, and action rules. Two plans can return the same extensional answer yet remain different elements of `E` because their computation cost, robustness, trace, or behavior on other cases differs. Conversely, licenses for components do not by themselves license the composition: that requires a typed propagation certificate for errors, costs, interfaces, and interactions.
+
 ### 2.2 Reliance/evaluation contexts `Q`
 
 An element `q in Q` packages all data that determine the substantive use question. At minimum it contains:
@@ -96,6 +98,8 @@ Acc_q = {z : z <= epsilon_q}.
 The fallback is dependent data of `q`, not an element that must belong to `E`: deferring, requesting information, or maintaining the status quo need not be another predictive model.
 
 Changing the domain, loss, risk aggregator, task, tolerance, fallback, required margin, frame, or hard constraints changes `q` and therefore changes the request. It is not merely a new observation about the old request.
+
+`L_q` specifies the target criterion; it is not automatically the procedure used to estimate that criterion. A fallible model that predicts downstream outcomes, regret, computation cost, or `L_q` is part of an evaluated plan `e` or an evidence/certificate procedure recorded in `s`. It may itself be assessed by a higher-order request with another context. This permits finite well-founded nesting. A genuine cycle in which a request's result helps determine the very loss or evidence used to assess that request requires an explicit fixed-point or iterative semantics and is outside the ordinary core.
 
 ### 2.3 Finite epistemic states `S`
 
@@ -691,8 +695,8 @@ If detailed and core well-formedness agree and every detailed atom diagnostic ma
 | layer | included objects | reason |
 |---|---|---|
 | minimal core | `E,Q,S,->,W` index, finite profiles, `WF`, `K_3`, indexed diagnostics, active set/fallback, labelled use, abstract dependencies | required to type and assess scoped reliance and update |
-| canonical elaboration | detailed task/model/domain/certificate/search/provenance records and selector traces | implementation, audit, and witness construction |
-| formal extensions | bridges, transport, Pareto/frontier machinery, domain splits, mixtures, theory-framework relations | useful but not necessary for every license request |
+| canonical elaboration | detailed task/model/domain/certificate/search/provenance records, finite component DAGs, and selector traces | implementation, audit, and witness construction |
+| formal extensions | bridges, transport, Pareto/frontier machinery, domain splits, mixtures, theory-framework relations, cyclic fixed-point evaluators | useful but not necessary for every license request |
 | neural layer | encodings, margins, ReLU heads, routers, external registry | representation/learning of the calculus, not its semantics |
 | policy/value case study | policy reconstruction, value surrogates, causal interpretability probes | optional application to transparency |
 | metalanguage | eventual/certified stability, semantic finality, target truth | reasoning about sequences/worlds, not ordinary license derivation |
@@ -705,6 +709,7 @@ The term “atlas” names the richer licensed-cover extension. The core needs o
 |---|---|
 | `W`, `w` | target-world class and semantic index |
 | `E`, `e` | evaluated use-plan carrier and one versioned executable plan |
+| `Elab(e)` | optional finite well-founded component DAG hidden behind the core interface for `e` |
 | `Q`, `q` | context carrier and one domain/task/loss/tolerance/fallback/frame package |
 | `S`, `s`, `->` | finite epistemic-state carrier, one state, and refinement transition |
 | `K_s` | finite library represented in `s` |
@@ -745,6 +750,7 @@ This table is the canonical notation index. Later artifacts must record any deli
 | profile refinement relative completeness | typed atom rules, independent-atom models | new characterization target | Task 14 |
 | minimal diagnostic quotient and bit bound | all supported profile queries, singleton profiles | new representation lower bound | Task 14 |
 | mode-scoped soundness | `<W,S>`, certificate-specific assumptions | theorem family, not one universal theorem | Task 14 |
+| finite plan-composition closure | typed component interfaces, propagation certificates, interaction assumptions | standard/extension lemma or countermodel family | Tasks 14–14A |
 | unrestricted rational monotony/global closure | state transitions/open library | negative/countermodel targets | Task 14 |
 | subdomain/routed/bridge risk bounds | measure, router, loss, bridge hypotheses | cross-layer extension theorems | Task 14A |
 | finite ReLU representation and hard-seam characterization | diagnostic quotient, CPWL assumptions | representation/impossibility cluster | Task 17 |
@@ -769,6 +775,7 @@ Definitions and imported three-element lattice facts do not count as the project
 13. Raw history is hereditary while current diagnostics are recomputed and may lapse or be rebutted.
 14. Bridges, Pareto/splitting, full atlases, mixtures, and policy/value work are extensions.
 15. Task 14 may repair a frozen rule only by proving a countermodel and propagating its project impact.
+16. A core plan may elaborate into a finite well-founded component DAG, and evaluators may receive higher-order requests; cyclic evaluator/license dependence remains a fixed-point extension rather than an implicit core feature.
 
 ## Task conclusion
 
