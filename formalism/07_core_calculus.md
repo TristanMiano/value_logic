@@ -8,6 +8,8 @@ Depends on: [`05a_integration.md`](05a_integration.md), [`06_open_endedness.md`]
 
 > **Task 14 audit notice.** [`08_metatheory.md`](08_metatheory.md) proves the typed refinement and update results, gives the finite countermodels, and narrows the diagnostic lower bound: singleton profiles distinguish the realizable vector set `V`, while `3^n` requires full ternary independence.
 
+> **Task 14A extension notice.** [`08a_transport_routing.md`](08a_transport_routing.md) proves the measure-theoretic subdomain criterion, hard-router risk decomposition, Lipschitz bridge/blend bounds, finite plan-DAG sensitivity budget, and exact group-valued cycle/potential characterization. These remain typed extensions rather than new core carriers.
+
 ## Durable core summary
 
 This file replaces the historical implementation-level signature as the canonical paper-level calculus. It has three principal carriers:
@@ -754,11 +756,11 @@ This table is the canonical notation index. Later artifacts must record any deli
 | mode-scoped soundness | `<W,S>`, certificate-specific assumptions | conditional schema; universal factivity refuted | Task 14 |
 | finite plan-composition closure | typed component interfaces, propagation certificates, interaction assumptions | standard/extension lemma or countermodel family | Tasks 14–14A |
 | unrestricted rational-style persistence/global closure | state transitions/open library | negative/countermodel results | proved Task 14 |
-| subdomain/routed/bridge risk bounds | measure, router, loss, bridge hypotheses | cross-layer extension theorems | Task 14A |
+| subdomain/routed/bridge risk bounds | measure, router, loss, bridge hypotheses | cross-layer extension theorems | proved Task 14A |
 | finite ReLU reference representation and hard-seam characterization | diagnostic quotient, CPWL assumptions | representation/impossibility cluster for one architecture class, not an optimality claim | Task 17 |
 | semantic/activation alignment | synthetic and later real examples | empirical hypothesis | Tasks 19–25 |
 
-Definitions and imported three-element lattice facts do not count as the project's paper-carrying theorem contribution. Coordinate indispensability protects the interface but is a finite separation result; the principal theorem spine now includes the Task 12 impossibilities and the three Task 14 characterization/separation results, with Task 14A transport bounds and Task 17 representation/seam results still pending.
+Definitions and imported three-element lattice facts do not count as the project's paper-carrying theorem contribution. Coordinate indispensability protects the interface but is a finite separation result; the principal theorem spine now includes the Task 12 impossibilities, the three Task 14 characterization/separation results, and Task 14A's transport/routing cluster, with Task 17 representation/seam results still pending.
 
 ## 17. Decisions audited by Task 14
 

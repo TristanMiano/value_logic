@@ -10,4 +10,4 @@ From the repository root, run:
 python -m verification
 ```
 
-The command exercises the three-stage integrated witness, the finite Task 14 separation/cardinality countermodels, and all local Markdown links. It uses only the Python standard library. The finite metatheory tests are regression witnesses, not a proof-assistant formalization; the proofs are in [`formalism/08_metatheory.md`](../formalism/08_metatheory.md).
+The command exercises the three-stage integrated witness, the finite Task 14 separation/cardinality countermodels, the Task 14A transport/routing bounds, and all local Markdown links. It uses only the Python standard library. These finite theorem tests are regression witnesses, not a proof-assistant formalization; the proofs are in [`formalism/08_metatheory.md`](../formalism/08_metatheory.md) and [`formalism/08a_transport_routing.md`](../formalism/08a_transport_routing.md).

@@ -7,6 +7,8 @@ Scope: finite-stage local model charts, partial covers, overlap compatibility, b
 
 > **Task 11A interface notice.** This historical artifact predates mandatory profile indexing. Read chart-use and active-set views as `Charts^use(A,P)` and `Act_A(x,zeta,P)`; archive, comparison, selection, and profile-indexed use remain distinct. See [`05a_integration.md`, §16](05a_integration.md#16-repairs-to-completed-interfaces).
 
+> **Task 14A quantitative notice.** [`08a_transport_routing.md`](08a_transport_routing.md) characterizes subdomain restriction, decomposes deployed hard-router risk with selection/misroute/fallback terms, translates prediction bridges into task-risk bounds under Lipschitz hypotheses, and gives the exact group-valued cycle/potential theorem. The prediction-deviation results below do not by themselves imply those stronger task-risk conclusions.
+
 ## Executive definition
 
 The weakest object needed by this project is a **finite licensed model cover**, not a differential-geometric atlas. At agent-stage `(a,t)`, it stores versioned local model/use-plan charts whose certified use domains may overlap, nest, coincide, or leave gaps.

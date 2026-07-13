@@ -6,6 +6,8 @@ Date: 2026-07-12
 
 Depends on: [`07_core_calculus.md`](07_core_calculus.md), [`06_open_endedness.md`](06_open_endedness.md), and the executable [`WF + K_3` reference](../verification/README.md)
 
+> **Task 14A extension notice.** [`08a_transport_routing.md`](08a_transport_routing.md) supplies the quantitative subdomain, router, bridge/blend, and finite plan-DAG propagation theorems requested by this audit.
+
 ## Durable result summary
 
 This file audits the Task 13 calculus rather than adding another ontology. Three paper-carrying clusters survive, with two necessary qualifications.
@@ -534,7 +536,7 @@ There are two individually adequate components whose composition is inadequate u
 
 **Countermodel.** On a scalar quantity, let component `f` introduce error `0.06` and component `g` introduce another same-direction error `0.06`. Give each component its own well-formed adequacy request with tolerance `0.10`; both are supported. Under the composite request, the output error is `0.12`, so adequacy at `0.10` is refuted. All nonadequacy requirements can be held supported. `square`
 
-Correlated errors, unit/frame mismatch, nonlinear amplification, and combined computation cost give further separators. A positive composition theorem needs explicit propagation assumptions; Task 14A owns quantitative bounds such as subadditivity or Lipschitz control.
+Correlated errors, unit/frame mismatch, nonlinear amplification, and combined computation cost give further separators. [`08a_transport_routing.md`](08a_transport_routing.md), Theorem 15, supplies a positive finite-DAG composition bound under tube-valid local errors and downstream Lipschitz sensitivities.
 
 **Project impact.** A plan-DAG encoder may expose component statuses for explanation, but the symbolic decoder must consume an independently certified composite atom or a proven propagation certificate. It must not compute composite grant by simply meeting component grants.
 
@@ -568,7 +570,7 @@ If a Boolean grant variable `g` is stipulated to satisfy `g=not g`, it has no Bo
 | elaboration invariance and DAG reification | structural induction | core/elaboration bridge |
 | component-grant and cyclic-self-reference failures | finite counterexamples | recursive-modeling limits |
 
-The project is no longer theorem-light in the specific sense identified at Checkpoint A1: it has continuation impossibilities from Task 12 and three distinct Task 14 characterization/separation results. But several proofs are deliberately finite and structural. Task 14A must still supply a quantitatively substantive transport/routing cluster, and Task 17 must still establish the positive/negative neural representation cluster. Checkpoint B will decide whether the resulting spine is sufficient for the final paper.
+The project is no longer theorem-light in the specific sense identified at Checkpoint A1: it has continuation impossibilities from Task 12, three distinct Task 14 characterization/separation results, and Task 14A's quantitative transport/routing cluster. Many proofs are deliberately finite or use standard measure/Lipschitz machinery, so Task 17 must still establish the positive/negative neural representation cluster. Checkpoint B will decide whether the resulting spine is sufficient and how strongly the integrated extension results count as contributions.
 
 ## 12. Decisions carried forward
 
