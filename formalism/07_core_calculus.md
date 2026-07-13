@@ -755,6 +755,7 @@ This table is the canonical notation index. Later artifacts must record any deli
 | minimal diagnostic quotient and bit bound | realizable vectors, supported queries, singleton profiles; independence for `3^n` | new representation lower bound plus correction | proved/countermodeled Task 14 |
 | mode-scoped soundness | `<W,S>`, certificate-specific assumptions | conditional schema; universal factivity refuted | Task 14 |
 | finite plan-composition closure | typed component interfaces, propagation certificates, interaction assumptions | standard/extension lemma or countermodel family | Tasks 14–14A |
+| proof-carrying recursive plans and stratified system assessment | annotated payload/grade/certificate executors, checked constructors, grounded finite-rank dependencies | ambitious author-designated extension; imported program-logic facts must be separated | Task 14C |
 | unrestricted rational-style persistence/global closure | state transitions/open library | negative/countermodel results | proved Task 14 |
 | subdomain/routed/bridge risk bounds | measure, router, loss, bridge hypotheses | cross-layer extension theorems | proved Task 14A |
 | finite ReLU reference representation and hard-seam characterization | diagnostic quotient, CPWL assumptions | representation/impossibility cluster for one architecture class, not an optimality claim | Task 17 |
@@ -780,6 +781,7 @@ Definitions and imported three-element lattice facts do not count as the project
 14. Bridges, Pareto/splitting, full atlases, mixtures, and policy/value work are extensions.
 15. Task 14 retained the frozen core rules and propagated every narrowed or refuted strengthening through the claim ledger.
 16. A core plan may elaborate into a finite well-founded component DAG, and evaluators may receive higher-order requests; cyclic evaluator/license dependence remains a fixed-point extension rather than an implicit core feature.
+17. Checkpoint B's project-author amendment asks Task 14C to strengthen finite reification into certificate-carrying computation and grounded/stratified assessment of a frozen value-logic implementation. It does not treat an empirical margin as a proof or admit circular self-authorization.
 
 ## Task conclusion
 

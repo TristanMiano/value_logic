@@ -504,6 +504,8 @@ from a supported `RelUndom(e;g,K)` or `CertUndom(e;g,K)` over finite `K`.
 
 ## 10. Typed elaboration and recursive plan structure
 
+> **Checkpoint B project-author amendment.** The results below establish finite reification, conditional quantitative propagation, and failure of unconditional license composition. [`Task 14C`](../TODO.md) will ask the stronger positive question: whether typed plan constructors can transform payloads, quantitative grades, and certificate/provenance terms by induction, and whether a frozen value-logic implementation can be assessed through grounded finite-rank evidence without circular self-license.
+
 ### Theorem 26: typed elaboration invariance
 
 Let detailed records `D_1,D_2` compress to the same core request:

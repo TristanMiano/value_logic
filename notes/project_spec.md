@@ -1,6 +1,6 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: Task 5 specification, version 1.2 after Checkpoint B
+Status: Task 5 specification, version 1.3 after the Checkpoint B project-author amendment
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
@@ -15,6 +15,7 @@ Architecture-neutrality amendment: 2026-07-12
 Task 14 metatheory audit: 2026-07-12
 Task 14A transport/routing theorems: 2026-07-12
 Checkpoint B theorem/neural-roadmap review: 2026-07-12
+Checkpoint B proof-carrying/system-adequacy amendment: 2026-07-12
 
 ## Executive specification
 
@@ -88,6 +89,8 @@ The logic has three levels:
 2. **License level:** judgments about where and for what purpose those object-level operations may be relied upon.
 3. **Meta level:** claims about revision sequences, eventual stability, completeness, or finality.
 
+Within those levels, the word **theorem** must be qualified. A labelled object-model result `[e,q]phi`, an internal derivation `Gamma;s |-VL J`, an externally proved metatheorem about the calculus, and an accepted empirical certificate are different objects. Curry–Howard or proof-term semantics applies directly only to formal derivations or proof objects checked in a named formal system. An empirical confidence region or neural margin can support an operational atom under its certificate mode without becoming an unconditional proof of a target-world fact.
+
 Local object-level reasoning may remain classical or use whatever mathematics a model requires. Defeasibility enters primarily through licensing, routing, and update. Consequently, contradiction between two unrestricted theories need not produce global explosion: their usable claims remain indexed to domains and records.
 
 ## 4. The intended meaning of “theory” and “model”
@@ -105,6 +108,8 @@ For this project:
 The core license predicate will normally apply to an instantiated model or library entry because empirical risk cannot be assigned to an underspecified theory family without additional choices. The paper may call such an object a “theory” in motivating prose, but formal passages must identify the scored object.
 
 Two models can make similar predictions while differing in ontology, derivation, cost, or robustness. Conversely, two parameterizations may count as the same model for one question and different models for another. Model identity must therefore be a typed, versioned convention rather than something inferred solely from output equality.
+
+For finite recursive composition, the preferred annotated executor returns `(payload, quantitative grade/bound, certificate/provenance)`. The payload performs the task; the grade may include prediction error, risk-to-go, computational resources, or a vector of these; the certificate records why that grade may be used under a named verifier/mode/scope. Plan constructors may transform all three. This is stronger than reifying a DAG but weaker than claiming that every empirical bound is a deductive proof.
 
 ## 5. The intended meaning of “domain”
 
@@ -215,6 +220,10 @@ encoded model/domain/evidence record
 
 The signed preactivation remains semantically primary. `ReLU(s)>0` may gate licensed content and expose positive slack, but all nonpositive values collapse to zero. Where degree or cause of failure matters, the network must retain `s`, retain separate component margins, or use paired channels `(ReLU(s), ReLU(-s))`.
 
+A rectified channel may also be consumed as a downstream feature when it has a declared hypothesis index and its preactivation is a commensurate, certificate-valid adequacy grade—or a certified approximation with sufficient boundary separation. In that scoped score-as-content construction, a larger activation means larger positive normalized certificate-relative surplus, not automatically higher probability, world-level adequacy, lower unnormalized risk, or global superiority. General payloads and full diagnostics require separate channels. Exact joint use is permitted only when the representation is sufficient for both the declared license queries and the downstream computation; any use of margin magnitude must state units, normalization, or covariance under allowed rescaling.
+
+The neural component may propose a quantitative grade or certificate statistic. It does not prove its own adequacy. Formal proof terms are checked by a named checker, and empirical certificates require independently defined outcomes, calibration/audit evidence, mode, version, and provenance. A frozen neural-symbolic pipeline can itself be assessed as an ordinary plan under a higher-ranked context, but its self-confidence is not its sole warrant.
+
 Ordinary softmax cross-entropy is a baseline, not a foregone conclusion. It is poorly matched to cases in which several models are simultaneously adequate or no model is adequate unless a suitable multi-label or abstention construction is added. Task 18 will compare objectives.
 
 ## 8. The intended meaning of “handles indefinite succession”
@@ -288,6 +297,8 @@ The formalism, architecture, experiments, and final exposition must satisfy the 
 - **DR-L15 — Relative atomicity and disciplined recursion:** A use plan may elaborate to a finite typed component DAG, and a loss/consequence estimator may itself be licensed under a higher-order request. The criterion, its estimator, and the training objective remain distinct; component licenses require an explicit composition rule before they authorize the whole; cyclic self-reference requires separately stated fixed-point semantics.
 - **DR-L16 — Transport scope:** Every reused adequacy certificate states whether it covers only a parent mean, prespecified cells, router-selected subsets, an almost-sure pointwise bound, or a uniform/worst-case claim. Routing, bridging, blending, and plan composition expose the measure, coverage, regularity, sensitivity, and fallback assumptions used to transport risk.
 - **DR-L17 — Auditable dependency locality:** Current provenance dependencies and future update influence are separated. Each operational atom exposes a typed query/read footprint, including relevant negative reads and validity/correction closure; event schemas expose write footprints. A persistence claim must prove read/write locality or use an explicitly conservative impact overapproximation, and an iff explanation additionally requires observable-specific path realizability.
+- **DR-L18 — Proof-carrying composition:** A certified finite recursive plan separates computational payload, quantitative grade/bound, and evidence/provenance. Every admitted constructor states its output, grade, and certificate transformers plus interface, scope, frame, termination, and validity assumptions. Composite authorization uses a direct or constructed composite certificate, never the meet of component grants alone.
+- **DR-L19 — Theorem and reflection stratification:** Labelled object results, internal value-logic derivations, external metatheorems, and empirical certificate judgments remain distinct. Assessment of a value-logic implementation is an ordinary higher-order request grounded in typed base evidence or lower-ranked verifiers; self-endorsement and ungrounded support cycles cannot authorize themselves in the finite core.
 
 ### Representational and neural requirements
 
@@ -305,6 +316,8 @@ The formalism, architecture, experiments, and final exposition must satisfy the 
 - **DR-N12 — Architecture neutrality:** The semantic input/output contract is stated independently of ReLU. ReLU-specific CPWL and activation results are labeled as reference-architecture results; any alternative is chosen for a stated structural hypothesis and compared under matched semantic outputs with capacity and compute reported.
 - **DR-N13 — Quantitative routing interface:** A learned router exposes or permits auditing of selected-scope local risk, coverage, misroute and fallback mass/severity, and any bridge/sensitivity certificate used by the deployed-risk bound. Route-label accuracy alone is not treated as a risk guarantee.
 - **DR-N14 — Consumer-relative code claims:** Neural targets state the query family and distinguish a status-minimal quotient from a diagnostic/audit-preserving interface. Finite discrete-code cardinality or bit bounds are not presented as real-valued neural-width bounds without additional precision, robustness, noise, or decoder restrictions.
+- **DR-N15 — Joint computation/license sufficiency:** A dual-use representation is claimed only for a declared license-query family and downstream computation, with proof that equal codes imply equal required query answers and computational outputs. Equal adequacy margins with different payloads are an explicit failure case.
+- **DR-N16 — Typed dual-use margins:** Hypothesis-indexed ReLU channels may serve as positive certificate-relative adequacy surplus and downstream features only with an explicit channel map, common/normalized units, calibration, certificate validity or verified error envelope, domain, boundary convention, and scale transformation rule. Signed/open/missing status and proof/certificate data are not silently compressed into the positive activation.
 
 ### Empirical and interpretability requirements
 
@@ -323,14 +336,15 @@ A successful project should produce:
 2. consequence and update rules that keep object-level reasoning local to licensed domains;
 3. definitions of dominance, retention, domain splitting, overlap, bridge types, selection, fallback, and abstention;
 4. a theorem spine containing at least three paper-carrying results from distinct clusters: open-ended stability/impossibility, profile logic, calculus-specific update locality/persistence, and neural representation/impossibility; domain/router transport bounds remain load-bearing integration unless a genuinely new result is established;
-5. an architecture-neutral realization contract plus an explicit ReLU reference representation or approximation result for a nontrivial finite fragment;
-6. an information audit showing what each neural quantity preserves and loses;
-7. a reproducible synthetic experiment involving overlap, gaps, supersession, and routing;
-8. an interpretability analysis connected carefully to the policy/value reconstruction project;
-9. an audited, LaTeX-heavy Gist-compatible paper;
-10. a plain-text, low-equation Substack adaptation making the same qualified claims.
+5. a proved or sharply countermodeled certificate-carrying finite-plan construction, explicit theorem-level taxonomy, and grounded/stratified system-assessment result;
+6. an architecture-neutral realization contract plus an explicit ReLU reference representation or approximation result for a nontrivial finite fragment, including the conditions for dual-use adequacy features;
+7. an information audit showing what each neural quantity preserves and loses;
+8. a reproducible synthetic experiment involving overlap, gaps, supersession, routing, and a bounded system-adequacy audit;
+9. an interpretability analysis connected carefully to the policy/value reconstruction project;
+10. an audited, LaTeX-heavy Gist-compatible paper;
+11. a plain-text, low-equation Substack adaptation making the same qualified claims.
 
-The minimal publishable mathematical core is items 1–6 plus clear counterexamples and limitations. Definitions, deterministic aggregation facts, standard set partitions, and one-line order lemmas do not count toward the three-result theorem spine, although they may support it. A failed target can count when replaced by a precise countertheorem with project-impact propagation. The experimental claims are publishable only to the strength actually supported by items 7–8.
+The minimal publishable mathematical core is items 1–7 plus clear counterexamples and limitations. Definitions, deterministic aggregation facts, standard set partitions, and one-line order lemmas do not count toward the three-result theorem spine, although they may support it. A failed target can count when replaced by a precise countertheorem with project-impact propagation. The experimental claims are publishable only to the strength actually supported by items 8–9.
 
 ## 12. Non-goals
 
@@ -355,6 +369,9 @@ This project does **not** need to establish any of the following:
 17. a literal differential-geometric atlas structure unless later definitions and results genuinely require it;
 18. empirical confirmation of the motivational claims merely because the formalism is coherent or the synthetic experiment succeeds.
 19. that ReLU MLPs are uniquely compatible with the calculus, universally preferable, or empirically optimal among neural, symbolic, routing, monotone, graph, set, or hybrid architectures.
+20. that every ReLU hidden activation is an adequacy value, posterior probability, proposition, proof, or semantically identifiable feature.
+21. that a system's predicted confidence or self-issued license is sufficient evidence of its own adequacy.
+22. an unrestricted reflection principle, consistency proof, or uniquely determined cyclic self-license for value logic.
 
 The formalism is compatible with realism, anti-realism, and several pragmatic views because its central claim is conditional and operational: **given a bounded record, task, requirement profile, and any comparison policy that profile invokes, this model has this finite-stage use status here for these reasons**. The required and report-only atom assessments remain inspectable. Stronger metaphysical readings are optional interpretations and must not enter proofs as assumptions.
 
@@ -373,11 +390,11 @@ The project must not move silently between these kinds. In particular, a formal 
 
 ### 14.1 Formal success
 
-The proposal succeeds formally if the compact signature and `<W,S>` semantics are typed, the detailed schema has a semantics-preserving elaboration into that core, and at least three paper-carrying results survive across distinct theorem clusters. Checkpoint B's strict tally counts Task 14's independent-fragment profile result; counts Task 12's stability package after its precision and classical-positioning repairs; and counts the update cluster only after Task 14B derives locality/change-completeness from the actual atom clauses and event schemas. The query quotient is a representation bridge, while Task 14A's measure/Lipschitz/perturbation results are load-bearing standard integration rather than a novelty quota. A positive/negative neural representation cluster remains required and is expected to be the most distinctive result. Finite-algebra corollaries, standard bounds, definitional sanity checks, and renamed standard results remain useful but are not made novel by relabeling. It fails if “logic” remains only a name for comparing scalar losses or if mathematical weight is carried by record definitions rather than results.
+The proposal succeeds formally if the compact signature and `<W,S>` semantics are typed, the detailed schema has a semantics-preserving elaboration into that core, and at least three paper-carrying results survive across distinct theorem clusters. Checkpoint B's strict tally counts Task 14's independent-fragment profile result; counts Task 12's stability package after repair; and counts the update cluster only after Task 14B derives calculus-specific locality. Task 14C must additionally prove or sharply delimit finite proof-carrying composition, theorem levels, and grounded/stratified system assessment; imported program-logic facts do not count as novelty by renaming. The query quotient and Task 14A are supporting bridges/integration. A positive/negative neural representation cluster remains required and should include the joint-sufficiency boundary for dual-use activations. Standard facts and definitional checks remain useful but do not clear the contribution bar. The proposal fails if “logic” remains only scalar-loss comparison, if recursive composition is only a record schema, or if self-confidence is presented as self-certification.
 
 ### 14.2 Neural success
 
-The proposal succeeds representationally if an explicit finite ReLU reference construction or justified approximation implements a meaningful fragment while preserving the margins required by the semantics. This proves existence for one model class, not architectural uniqueness. It succeeds empirically only if the trained system generalizes and calibrates on held-out overlap, gap, and supersession cases; any architecture comparison must use the same semantic output contract and report capacity/compute differences. It fails if an argmax classifier is presented as the entire calculus or if rectified zeros conceal relevant failure information.
+The proposal succeeds representationally if an explicit finite ReLU reference construction or justified approximation implements a meaningful fragment while preserving required payload, grade, status, and audit distinctions. For dual-use channels it must prove joint sufficiency, boundary handling, and scale semantics; a proof-erased annotated plan may be neural while certificate verification remains symbolic. This proves existence for one model class, not architectural uniqueness. It succeeds empirically only if the trained system generalizes/calibrates on held-out succession and system-audit cases. It fails if argmax is the entire calculus, rectified zeros conceal failure information, arbitrary hidden activations are renamed adequacy, or self-confidence is used as the system certificate.
 
 ### 14.3 Atlas success
 
@@ -389,7 +406,7 @@ The strongest interpretability claim supported must match the evidence grade. Be
 
 ### 14.5 Expository success
 
-Both public artifacts must open with the design questions: why `M` and `D` arise directly; why error and `epsilon` enter only after a risk/task and reliance rule are introduced; how a fallback can induce a threshold; where one model ends when a use plan is recursively composed; and how a target loss differs from a fallible model of loss. They must then separate the structured judgment from its neural representation and separate the two atlas notions before presenting results.
+Both public artifacts must open with the design questions: why `M` and `D` arise directly; why error and `epsilon` enter only after a risk/task and reliance rule are introduced; how a fallback can induce a threshold; where one model ends when a use plan is recursively composed; how a target loss differs from a fallible model of loss; and when an adequacy margin can also be downstream computational content. They must explain object results, internal derivations, metatheorems, and empirical certificates before discussing self/system adequacy, then separate the structured judgment from its neural representation and the two atlas notions.
 
 ## 15. Proposed paper architecture
 
@@ -398,15 +415,16 @@ The motivating order should be:
 1. bounded action and theory succession;
 2. what is and is not forced by `Pi(M,D,epsilon)`;
 3. relative model granularity, finite recursive composition, and modeled loss;
-4. fallback/status quo and factored reliance;
-5. the location and preservation of information;
-6. overlapping scientific model covers versus ReLU activation complexes;
-7. the finite-stage license language and semantics;
-8. update, dominance, retention, and abstention results;
-9. architecture-neutral realization, the ReLU reference construction, justified alternatives, and learning objectives;
-10. synthetic experiments and counterexamples;
-11. the policy/value interpretability bridge;
-12. philosophical interpretation, limitations, and open problems.
+4. proof-carrying computation, theorem levels, and grounded system assessment;
+5. fallback/status quo and factored reliance;
+6. the location and preservation of information, including dual-use margins;
+7. overlapping scientific model covers versus ReLU activation complexes;
+8. the finite-stage license language and semantics;
+9. update, dominance, retention, and abstention results;
+10. architecture-neutral realization, the ReLU reference construction, justified alternatives, and learning objectives;
+11. synthetic experiments and counterexamples;
+12. the policy/value interpretability bridge;
+13. philosophical interpretation, limitations, and open problems.
 
 This preserves the posts' motivational direction—value and comparison before certainty, recursive evaluation recovering useful structure—while making the paper's actual claims depend only on explicit definitions, proofs, audited sources, and experiments.
 
@@ -418,6 +436,10 @@ Task 11A selected profile-indexed licensing. Layered terms remain readable alias
 |---|---|---|
 | adequacy | performance meets a stated risk condition on a domain | truth simpliciter |
 | certified adequacy | evidence supports adequacy at a stated calibration/confidence level | infallible proof |
+| quantitative grade/bound | typed error, risk-to-go, resource, or other value propagated with a computation | the certificate proving that the bound is valid |
+| proof/certificate term | checked formal evidence or mode-relative empirical evidence with scope, assumptions, version, and provenance | an arbitrary neural score or unconditional world truth |
+| object-model result | a labelled result of a named model, equation system, or object prover, possibly carrying a proof term in its own formal theory | automatically an internal value-logic derivation or unlabelled world truth |
+| internal value-logic theorem | a value-logic judgment derivable under stated premises, state, rules, and checked evidence | automatically an external metatheorem, object-theory proof, or unlabelled truth |
 | license profile `P` | finite versioned set of required and report-only typed atoms plus validity/provenance | hidden or universal requirement set |
 | `Lic_P` | finite-stage grant for one model/use plan, scope, and explicit profile | truth, final belief, legal permission, or a grant under every profile |
 | `K_3` atom value | refuted, open, or supported state of one meaningful requirement | a type error or a complete explanation by itself |
@@ -485,20 +507,27 @@ The following decisions are now project defaults unless a later theorem, experim
 42. The default neural factorization learns continuous atom sufficient statistics and calibrated uncertainty; exact metadata, mechanically decidable `WF`, profile roles, `K_3` aggregation, active-set masking, fallback, evaluated-set identity, and provenance remain symbolic or external unless a task explicitly makes one of them a learned evidence model.
 43. The query quotient is consumer-relative. Status-only codes need to refine `V/~_F` plus the required well-formedness observations, while diagnostic-preserving clients require a finer code. Discrete bit bounds do not imply real neural output width, and the `Ill/Well` presentation is a canonical decoded normal form rather than a mandatory internal representation.
 44. Task 17 targets architecture-neutral exact factorization, margin-robust decoding, an exact finite ReLU construction for CPWL statistics with an external decoder, a conforming-polyhedral seam characterization/obstruction, and the finite-output versus expandable-library limitation. Universal approximation alone satisfies none of these targets.
-45. The only nominated architecture alternatives before Checkpoint C are a monotone/lattice model for explicitly proved monotone coordinates and a hard mixture-of-experts router for discontinuous seams. The symbolic decoder is shared infrastructure; graph/set models remain conditional on Task 15 identifying a specific variable-library or plan-composition hypothesis.
+45. The leading architecture alternatives before Checkpoint C are a monotone/lattice model for explicitly proved monotone coordinates and a hard mixture-of-experts router for discontinuous seams. The symbolic decoder is shared infrastructure. The project-author amendment supplies a graph/set hypothesis—generalization and certificate propagation across explicit plan DAGs—but Task 15 must operationalize it and Checkpoint C may still reject it for insufficient power or fairness.
 46. The experiment is tiered: core succession/status/calibration first, routing/seams second, and composed-plan or fallible-estimator stress tests only when adequately powered. Activation-region alignment remains exploratory rather than a confirmatory success criterion.
+47. A finite recursively structured model is represented by a certificate-carrying executor whose output separates payload, quantitative grade/bound, and evidence/provenance. Plan constructors transform these components under typed contracts; the composite receives a new certificate rather than inheriting the conjunction of component grants.
+48. “Theorem” is level-indexed. Labelled object results, internal value-logic derivations, external metatheorems, and empirical certificate judgments are not interchangeable. Curry–Howard applies only to formal derivations/proof terms under a named checker; empirical support requires a certificate-mode world bridge.
+49. A ReLU activation may be both positive adequacy surplus and downstream content when its channel, statistic, units, calibration, domain, boundary, and consumer are declared and the code is jointly sufficient. Arbitrary hidden units and unnormalized cross-channel magnitudes receive no such interpretation.
+50. Joint positive rescaling can preserve a license boundary while changing margin magnitude. Any downstream use of the magnitude must transform covariantly or use a fixed normalization; multiplying a payload by a margin defines a new plan requiring evaluation.
+51. A frozen value-logic implementation may be assessed as a plan under an independently specified meta-context. Grounded finite-rank evidence is allowed; its own assertion is not its certificate, and direct self-license cycles require explicit fixed-point semantics.
+52. Task 14C precedes encoding and owns proof-carrying plan composition, theorem levels, grounded provenance, and stratified system assessment. Task 17 owns the neural joint-sufficiency and annotated CPWL/ReLU realization results; Task 19 tests system-level adequacy using separate audit evidence.
 
 ## 18. Specification gates after Checkpoint B
 
-Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A resolved the integration ambiguity by selecting mandatory profile-indexed `Lic_P`, defining canonical reliance/relative-preference/resolved-preference profiles, and validating them in one integrated witness. Checkpoint A1 repaired the witness scope, introduced `<W,S>` semantics, corrected the CPWL attribution, and identified the theorem/executability/motivation risks. Task 11B closed the executable-semantics gate with a compact standard-library `WF + K_3` kernel, a machine-checked three-stage witness, lossless indexed diagnostics, local-link validation, and continuous verification. Task 12 supplied continuation semantics, stabilization/impossibility results, and separation countermodels, with statement and classical-positioning repairs now assigned to Task 14B. Task 12A closed the core-literature gate. Task 13 closed the ontology/interface gate with the canonical three-carrier calculus. Task 14 proved the abstract update, profile, and diagnostic results; Checkpoint B found that the update cluster still needs a concrete reads-from/locality theorem before it counts as a theorem of the operational calculus. Task 14A closed the quantitative transport/routing gate with standard mathematics integrated into the typed license interface. Checkpoint B therefore adds exactly one focused repair gate before ML. Remaining gates are:
+Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A selected mandatory profile-indexed `Lic_P`; Checkpoint A1 repaired the witness and identified theorem/executability risks; Task 11B supplied the executable kernel. Tasks 12–14A supplied continuation, compact-core, metatheory, and quantitative transport results. Checkpoint B found that the update cluster still needs a concrete locality theorem and therefore added Task 14B. The project-author amendment then elevated recursive proof-carrying computation, theoremhood inside value logic, and grounded assessment of the system itself from discussion points to Task 14C, because those results must shape the neural interface before encoding. Remaining gates are:
 
 - the Task 14B canonical atom-locality/change-completeness theorem, statement/citation repairs, and executable-kernel hardening;
-- the smallest architecture-neutral semantic interface and ReLU reference fragment that preserve four-way status, signed component margins, active usable sets, comparison/selection information under the Task 11A design, fallback, and external trace pointers, plus whether one narrowly motivated alternative should be trained (Tasks 15–17 and Checkpoint C);
+- the Task 14C certificate-carrying finite-plan construction, theorem-level taxonomy, license lifting, grounded provenance, stratified system assessment, and exact Curry–Howard boundary;
+- the smallest architecture-neutral interface and ReLU reference fragment preserving payload/grade/certificate distinctions, four-way status, signed margins, joint license/computation sufficiency, active sets, selection/fallback, and external traces, plus whether one alternative should be trained (Tasks 15–17 and Checkpoint C);
 - the appropriate structured objective and simple baseline for multi-warrant, four-status, calibration, and abstention behavior (Task 18);
 - an independently defined synthetic generator and separate functional, calibration, retention, routing, and activation-alignment metrics (Tasks 19–21);
 - whether the recursive-judgment information promise receives a theorem/countertheorem or is demoted, and the strongest optional transparency claim that survives policy/value nonidentifiability and causal tests (Tasks 22–23, including Task 22A).
 
-These are research questions, not defects in the specification. A later task may revise a default, but it must record what evidence or formal obstacle caused the revision.
+These gates combine one known theorem/implementation repair (Task 14B) with open research questions and construction targets. A later task may revise a default, but it must record what evidence or formal obstacle caused the revision.
 
 ## Task conclusion
 
