@@ -1,6 +1,6 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: Task 5 specification, version 0.7 after Task 12 open-endedness results
+Status: Task 5 specification, version 0.8 after Task 12A core-literature audit
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
@@ -8,6 +8,7 @@ External audit checkpoint A1: 2026-07-11
 Checkpoint A1 theorem/elegance amendment: 2026-07-12
 Task 11B executable verification: 2026-07-12
 Task 12 open-endedness analysis: 2026-07-12
+Task 12A core-literature audit: 2026-07-12
 
 ## Executive specification
 
@@ -444,12 +445,15 @@ The following decisions are now project defaults unless a later theorem, experim
 18. Semantic finality and optional target truth remain metalanguage notions; their absence from the base grammar is not itself a non-finality theorem.
 19. Deterministic freeze, statistical margin/coverage, and open-library model addition are distinct stability regimes with different assumptions.
 20. Open-library non-finality is directional: a supported finite-library non-domination claim is defeasible by a valid dominator extension, while a persistent refutation may be stable.
+21. Licensed consequence is compared with input/output and labelled deduction as output-producing rather than truth-detaching; their source theorems are not inherited without translation.
+22. Evidence and provenance terms remain explicit but are not automatically factive proof terms.
+23. The well-formed meaningful atom meet is algebraically Strong Kleene; `WF` failure stays outside `K_3`, and Bochvar infection describes only the superseded four-chain.
+24. Certificate mode and parameters are explicit: task tolerance, confidence/failure level, and conformal miscoverage must not share one ambiguous `epsilon`; fallback improvement remains independent of hard adequacy.
 
 ## 18. Specification gates after external audit checkpoint A1
 
-Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A resolved the integration ambiguity by selecting mandatory profile-indexed `Lic_P`, defining canonical reliance/relative-preference/resolved-preference profiles, and validating them in one integrated witness. Checkpoint A1 repaired the witness scope, introduced `<W,S>` semantics, corrected the CPWL attribution, and identified the theorem/executability/motivation risks. Task 11B closed the executable-semantics gate with a compact standard-library `WF + K_3` kernel, a machine-checked three-stage witness, lossless indexed diagnostics, local-link validation, and continuous verification. Task 12 closed the open-endedness gate with continuation semantics, deterministic and statistical stabilization results, finite-prefix and open-library impossibility theorems, and separation countermodels; it rejected Löb/GL transfer and narrowed comparison non-finality to its correct positive polarity. Remaining gates are:
+Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A resolved the integration ambiguity by selecting mandatory profile-indexed `Lic_P`, defining canonical reliance/relative-preference/resolved-preference profiles, and validating them in one integrated witness. Checkpoint A1 repaired the witness scope, introduced `<W,S>` semantics, corrected the CPWL attribution, and identified the theorem/executability/motivation risks. Task 11B closed the executable-semantics gate with a compact standard-library `WF + K_3` kernel, a machine-checked three-stage witness, lossless indexed diagnostics, local-link validation, and continuous verification. Task 12 closed the open-endedness gate with continuation semantics, stabilization and impossibility theorems, and separation countermodels. Task 12A closed the core-literature gate with fifteen verified primary sources, an exact match/mismatch audit, a Strong-Kleene algebraic identification, and explicit no-transfer boundaries for output, evidence, awareness, conformal, and safe-baseline results. Remaining gates are:
 
-- verified primary-source positioning for the core consequence, evidence, awareness, partiality, and fallback structures (Task 12A);
 - the smallest three-carrier/two-sorted core, typed elaboration map, usable atom/profile refinement order, diagnostic algebra, canonical glossary, and exact boundary between core and extensions (Task 13);
 - which core rules/results survive rigorous proof and countermodel audit, including update persistence, profile relative completeness, and diagnostic minimality (Task 14);
 - which domain-transport, routed-risk, and bridge-risk bounds survive with exact hypotheses (Task 14A);

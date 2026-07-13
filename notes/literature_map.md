@@ -1,8 +1,12 @@
 # Literature Map and Citation Audit
 
-Status: Task 6 research map  
-Date: 2026-07-10  
+Status: Task 6 research map, amended by Task 12A
+
+Date: 2026-07-10; Task 12A amendment 2026-07-12
+
 Bibliography: [`references.bib`](../references.bib)
+
+Focused core audit: [`literature_core_supplement.md`](literature_core_supplement.md)
 
 ## Executive result
 
@@ -11,11 +15,17 @@ The project's exact combination appears to be novel enough to require a synthesi
 | Field | What it supplies | What it does not supply |
 |---|---|---|
 | belief revision/nonmonotonic logic | defeasible consequence, contraction/revision, defaults, preference orderings over beliefs | empirical loss, domain coverage, calibrated abstention, neural realization |
+| input/output logic | output-producing conditional operations without ordinary truth detachment or automatic input/output identity | empirical evidence, profile status, domains, provenance, open-library update |
+| justification and labelled deduction | explicit evidence terms and structured labelled formulas | automatic factivity for empirical certificates or a ready-made provenance calculus |
+| awareness/unawareness logic | represented versus unrepresented possibilities and bounded languages | a complete model universe or the project's continuation/non-finality theorem |
+| Strong-Kleene/partial-function logic | three-valued meet algebra and principled definedness/partiality | the project's evidential interpretation or its separate `WF` judgment |
 | formal learning theory | convergence with finitely many mind changes and no requirement that the learner know when convergence occurred | task-relative usefulness of theories that remain false; finite-sample calibration |
 | truthlikeness/verisimilitude | formal comparison of false theories relative to a truth target | a truth-neutral reliance license; generally requires a privileged target/world metric |
 | scientific structuralism/intertheory reduction | theories as structured families with applications; bridge/limit relations between theories | a trainable operational license predicate or routing architecture |
 | preference/decision logic | ordered worlds/options, partial preferences, thresholds, dominance, update | evidence-based model adequacy unless coupled to statistics and tasks |
 | selective prediction | explicit abstention and the risk–coverage tradeoff | retention of multiple theories, bridge relations, logical consequence |
+| conformal prediction | exchangeability-based marginal prediction-set validity at a chosen miscoverage level | direct certification of task risk below the project's tolerance |
+| safe policy improvement | high-confidence/robust improvement over a behavior-policy baseline and local fallback under uncertainty | guarantees outside the stated MDP, return, data, policy-class, and uncertainty assumptions |
 | mixture-of-experts | learned gating and local expert specialization | guarantees that experts are adequate, interpretable, or scientifically meaningful |
 | ReLU CPWL theory | finite piecewise-affine regions and exact representation results | SGD learnability, semantic alignment, infinite memory, scientific correspondence |
 | differentiable/neural-symbolic logic | techniques for compiling constraints or fuzzy/probabilistic logic into differentiable computation | the proposed theory-succession semantics unless it is separately defined |
@@ -338,13 +348,17 @@ The omitted items are not declared false. They are simply not carried into the v
 5. `ElYanivWiener2010`
 6. `Sneed1971`, especially theory identity, applications, reduction, and theory dynamics
 
-### Before Tasks 12–14 (limits, reflection, atlases)
+### Before Tasks 13–14 (core and metatheory)
 
 1. `Gold1967`
 2. `Kelly1996`
-3. `Batterman1995`
-4. `Nickles1973`
-5. `Lob1955` and `Solovay1976` only if a genuine provability operator survives formalization
+3. `MakinsonVanDerTorre2000`
+4. `Artemov2008` and `Gabbay1996`
+5. `FaginHalpern1988` and `HeifetzMeierSchipper2006`
+6. `Kleene1952`, with `BochvarBergmann1981` as the rejected infectious-design comparison
+7. `Batterman1995`
+8. `Nickles1973`
+9. `Lob1955` and `Solovay1976` only if a genuine provability operator survives formalization
 
 ### Before Tasks 15–18 (neural representation and objectives)
 
@@ -379,6 +393,20 @@ No audited source combines all of the following in one formal object:
 
 That conjunction is the plausible contribution. Novelty must be stated carefully: each component has close precedents, and the project must contribute a precise composition, theorem, or empirical result—not merely new names for existing pieces.
 
+## 17. Task 12A core-literature amendment
+
+Task 12A verified fifteen additional primary sources and records the full match/mismatch audit in [`literature_core_supplement.md`](literature_core_supplement.md). Its controlling conclusions are:
+
+- `MakinsonVanDerTorre2000` is the main precedent for output production without ordinary truth detachment, but its representation results are not inherited.
+- `Brewka1989` and `Horty2012` justify treating priorities, undercutting, and defeaters as formal possibilities; the compact core does not thereby become a default logic.
+- `Artemov2008` and `Gabbay1996` justify explicit evidence terms and structured labels; project certificates are not automatically factive proof terms.
+- `FaginHalpern1988` and `HeifetzMeierSchipper2006` supply the neighboring language for bounded awareness; Task 12's `AddModel` impossibility remains a project theorem.
+- The meaningful three-valued finite meet is algebraically Strong Kleene (`Kleene1952`). Bochvar infection describes the superseded four-chain, not the adopted `WF + K_3` kernel. `GavilanesFrancoLucioCarrasco1990` is a partial-function precedent whose calculus is not imported.
+- `VovkGammermanShafer2005` and `ShaferVovk2008` verify conformal prediction as a certificate mode, with conformal miscoverage kept distinct from task-risk tolerance.
+- `ThomasTheocharousGhavamzadeh2015`, `GhavamzadehPetrikChow2016`, and `LarocheTrichelairTachetDesCombes2019` provide the strongest operational precedent for fallback-relative improvement under uncertainty, subject to their RL assumptions.
+
+The only direct theorem import is the elementary Strong-Kleene finite-meet algebra after an explicit value relabeling. Every other relationship is structural or an elaboration template and requires a project-specific translation before source theorems apply.
+
 ## Task conclusion
 
-Task 6 establishes a verified primary-source bibliography and a division of intellectual labor among neighboring fields. The strongest immediate foundations are AGM/KLM for revision and defeasible consequence, Gold/Kelly for convergence without known arrival, selective prediction for fallback and abstention, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, and IRL for nonidentifiability constraints. Preference and differentiable logics supply design patterns, while truthlikeness and provability logic are optional stronger frameworks whose assumptions must not be imported silently.
+Task 6 established the initial verified bibliography and division of intellectual labor among neighboring fields. Task 12A closes the core-related gaps around output production, explicit evidence, awareness, partiality, conformal validity, and safe baseline improvement. The strongest immediate foundations are now AGM/KLM for revision, input/output logic for non-truth-producing consequence structure, Strong Kleene for the meaningful meet algebra, Gold/Kelly for convergence without known arrival, selective/conformal prediction and safe policy improvement for operational uncertainty and fallback, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, and IRL for nonidentifiability constraints. Their non-algebraic theorems remain source-specific until an exact translation is proved.
