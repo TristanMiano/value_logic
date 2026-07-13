@@ -11,7 +11,7 @@ The project asks whether a finite-stage, domain-relative logic of licensed relia
 - overlapping model domains, gaps, routing, and bridge conditions;
 - simultaneous usability, comparative preference, current selection, and archival retention;
 - revision after new evidence or the addition of a better model; and
-- a learnable implementation using a basic ReLU multilayer perceptron and structured losses.
+- a learnable implementation using a basic ReLU multilayer perceptron as the reference architecture, structured losses, and narrowly motivated alternatives where useful.
 
 ## Current formal direction
 

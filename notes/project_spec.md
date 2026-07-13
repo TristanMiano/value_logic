@@ -1,6 +1,6 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: Task 5 specification, version 0.9a after recursive-composition amendment
+Status: Task 5 specification, version 0.9b after architecture-neutrality amendment
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
@@ -11,6 +11,7 @@ Task 12 open-endedness analysis: 2026-07-12
 Task 12A core-literature audit: 2026-07-12
 Task 13 core-calculus selection: 2026-07-12
 Recursive-composition amendment: 2026-07-12
+Architecture-neutrality amendment: 2026-07-12
 
 ## Executive specification
 
@@ -20,7 +21,7 @@ The semantic models are explicitly two-sorted pairs `<W,S>`: `W` carries target/
 
 The public mathematical core must be materially smaller than the typed implementation schema. Its target presentation has three principal carriers—evaluated use plans `E`, reliance/evaluation contexts `Q`, and finite epistemic states `S`—with worlds as a semantic index and profiles as finite requirement families. Tasks, frames, domains, losses, risk spaces, records, libraries, searches, budgets, certificates, reason displays, and provenance remain available as dependent data or elaborations without all becoming primitive paper-level sorts.
 
-The logic must explain several possibilities without conflating them: an older model may remain in actual use under another purpose, profile, subdomain, resource regime, or fallback role; it may remain adequate but unselected; or it may remain only in the archive after a successor is preferred. Several models may also remain simultaneously usable on overlapping domains. A basic ReLU MLP will be studied as a finite-stage implementation of selected scoring, status, gating, comparison, and routing parts of this logic, coupled where necessary to an external registry. The project will not assume that a fixed finite network contains an actually infinite sequence of future theories.
+The logic must explain several possibilities without conflating them: an older model may remain in actual use under another purpose, profile, subdomain, resource regime, or fallback role; it may remain adequate but unselected; or it may remain only in the archive after a successor is preferred. Several models may also remain simultaneously usable on overlapping domains. A basic ReLU MLP will be studied as the analytically transparent finite-stage reference implementation of selected scoring, status, gating, comparison, and routing parts of this logic, coupled where necessary to an external registry. The semantics are not ReLU-specific, and later tasks may identify or test a more suitable architecture. The project will not assume that a fixed finite network contains an actually infinite sequence of future theories.
 
 The target is therefore neither a replacement for truth nor ordinary multiclass model selection. It is a formally specified and empirically testable calculus of **scoped reliance under fallibility**.
 
@@ -55,7 +56,7 @@ The paper may argue that value or usefulness is **epistemically prior for a boun
 
 The primary question is:
 
-> Can a finite-stage, evidence-relative logic represent the licensed use, overlap, supersession, retention, and revision of fallible models, and can its operational judgments be represented or learned by a basic ReLU MLP without erasing the information needed to explain those judgments?
+> Can a finite-stage, evidence-relative logic represent the licensed use, overlap, supersession, retention, and revision of fallible models, and can its operational judgments be represented or learned by an interpretable finite architecture—using a basic ReLU MLP as the reference case—without erasing the information needed to explain those judgments?
 
 Five subsidiary questions organize the project:
 
@@ -179,6 +180,8 @@ It is not the probability that the model is false. It is an operational boundary
 
 “Fits onto an MLP” will be evaluated at four distinct strengths.
 
+ReLU is a reference model class, not a semantic axiom, uniqueness theorem, or prior claim of empirical optimality. It is attractive because signed affine margins, threshold behavior, exact finite CPWL representation results, and activation-region geometry can be analyzed explicitly. Other architectures are compatible when they preserve or approximate the same typed inputs, atom-level sufficient statistics, diagnostics/missingness, and symbolic `WF + K_3` decoder interface. Universal approximation by itself is insufficient: it says nothing by itself about efficient size, learnability, calibration, preservation of provenance, semantic alignment, or interpretability.
+
 ### 7.1 Representability
 
 There is an explicit finite ReLU network, or a controlled approximation result, mapping encoded records/cases to the required signed risks, margins, license indicators, active sets, or routing outputs. A representation result must state its domain, error, network size/depth, boundary convention, and whether inputs such as model identities and tolerances are fixed or variable.
@@ -294,6 +297,7 @@ The formalism, architecture, experiments, and final exposition must satisfy the 
 - **DR-N9 — Atlas distinction:** Activation-region geometry, scientific licensed regions, and router selection regions are evaluated separately.
 - **DR-N10 — Transparent interface:** The preferred system can return active models, component margins, chosen/fallback action, and provenance rather than only an argmax label.
 - **DR-N11 — Consistency by construction:** Meaningful atom state and missingness/obstacles are supervised; static well-formedness is checked separately; top-level four-way status is derived through `WF + K_3`, with indexed diagnostics and safety projections preserved.
+- **DR-N12 — Architecture neutrality:** The semantic input/output contract is stated independently of ReLU. ReLU-specific CPWL and activation results are labeled as reference-architecture results; any alternative is chosen for a stated structural hypothesis and compared under matched semantic outputs with capacity and compute reported.
 
 ### Empirical and interpretability requirements
 
@@ -312,7 +316,7 @@ A successful project should produce:
 2. consequence and update rules that keep object-level reasoning local to licensed domains;
 3. definitions of dominance, retention, domain splitting, overlap, bridge types, selection, fallback, and abstention;
 4. a theorem spine containing at least three paper-carrying results from distinct clusters: open-ended stability/impossibility, update/profile/diagnostic characterization, domain/router transport bounds, and neural representation/impossibility;
-5. an explicit ReLU representation or approximation result for a nontrivial finite fragment;
+5. an architecture-neutral realization contract plus an explicit ReLU reference representation or approximation result for a nontrivial finite fragment;
 6. an information audit showing what each neural quantity preserves and loses;
 7. a reproducible synthetic experiment involving overlap, gaps, supersession, and routing;
 8. an interpretability analysis connected carefully to the policy/value reconstruction project;
@@ -343,6 +347,7 @@ This project does **not** need to establish any of the following:
 16. a complete logic of all scientific reasoning, a complete AGI epistemology, or a general theory of consciousness, agency, and value;
 17. a literal differential-geometric atlas structure unless later definitions and results genuinely require it;
 18. empirical confirmation of the motivational claims merely because the formalism is coherent or the synthetic experiment succeeds.
+19. that ReLU MLPs are uniquely compatible with the calculus, universally preferable, or empirically optimal among neural, symbolic, routing, monotone, graph, set, or hybrid architectures.
 
 The formalism is compatible with realism, anti-realism, and several pragmatic views because its central claim is conditional and operational: **given a bounded record, task, requirement profile, and any comparison policy that profile invokes, this model has this finite-stage use status here for these reasons**. The required and report-only atom assessments remain inspectable. Stronger metaphysical readings are optional interpretations and must not enter proofs as assumptions.
 
@@ -365,7 +370,7 @@ The proposal succeeds formally if the compact signature and `<W,S>` semantics ar
 
 ### 14.2 Neural success
 
-The proposal succeeds representationally if an explicit finite ReLU construction or justified approximation implements a meaningful fragment while preserving the margins required by the semantics. It succeeds empirically only if the trained system generalizes and calibrates on held-out overlap, gap, and supersession cases. It fails if an argmax classifier is presented as the entire calculus or if rectified zeros conceal relevant failure information.
+The proposal succeeds representationally if an explicit finite ReLU reference construction or justified approximation implements a meaningful fragment while preserving the margins required by the semantics. This proves existence for one model class, not architectural uniqueness. It succeeds empirically only if the trained system generalizes and calibrates on held-out overlap, gap, and supersession cases; any architecture comparison must use the same semantic output contract and report capacity/compute differences. It fails if an argmax classifier is presented as the entire calculus or if rectified zeros conceal relevant failure information.
 
 ### 14.3 Atlas success
 
@@ -391,7 +396,7 @@ The motivating order should be:
 6. overlapping scientific model covers versus ReLU activation complexes;
 7. the finite-stage license language and semantics;
 8. update, dominance, retention, and abstention results;
-9. ReLU representation and learning objectives;
+9. architecture-neutral realization, the ReLU reference construction, justified alternatives, and learning objectives;
 10. synthetic experiments and counterexamples;
 11. the policy/value interpretability bridge;
 12. philosophical interpretation, limitations, and open problems.
@@ -458,6 +463,7 @@ The following decisions are now project defaults unless a later theorem, experim
 27. Profile strength is typed and parameter-sensitive: atom refinement requires exact scope/mode side conditions, request-local profile refinement lifts uniformly to schemas, and certified undominated status refines relative undefeated status only on the same evaluated set and valid search view.
 28. `NoLicensedModel` and fallback behavior are selector-level consequences of an empty active set; they are not atom reasons. Full atlas, bridge, Pareto, splitting, and policy/value structures remain formal extensions.
 29. Model atomicity is relative to the request interface. A core `e` may hide a finite well-founded graph of object, frame, formulation, solver, evaluator, and action choices; `L_q` names the target criterion rather than any fallible model used to estimate it. Cyclic evaluator/license dependence is not part of the ordinary core without explicit fixed-point semantics.
+30. ReLU is the canonical reference construction because it makes signed margins, threshold gates, CPWL representation, and activation geometry explicit. The license semantics and diagnostic interface are architecture-neutral; neither universal approximation nor a successful ReLU construction establishes uniqueness or optimality, and Checkpoints B–C own any narrowly scoped alternative comparison.
 
 ## 18. Specification gates after Task 13
 
@@ -465,7 +471,7 @@ Tasks 7–11 resolved the broad signature, semantics, consequence/update, domina
 
 - which core rules/results survive rigorous proof and countermodel audit, including update persistence, profile relative completeness, and diagnostic minimality (Task 14);
 - which domain-transport, routed-risk, and bridge-risk bounds survive with exact hypotheses (Task 14A);
-- the smallest structured encoding and ReLU fragment that preserves four-way status, signed component margins, active usable sets, comparison/selection information under the Task 11A design, fallback, and external trace pointers (Tasks 15–17);
+- the smallest architecture-neutral semantic interface and ReLU reference fragment that preserve four-way status, signed component margins, active usable sets, comparison/selection information under the Task 11A design, fallback, and external trace pointers, plus whether one narrowly motivated alternative should be compared (Tasks 15–17 and Checkpoints B–C);
 - the appropriate structured objective and simple baseline for multi-warrant, four-status, calibration, and abstention behavior (Task 18);
 - an independently defined synthetic generator and separate functional, calibration, retention, routing, and activation-alignment metrics (Tasks 19–21);
 - whether the recursive-judgment information promise receives a theorem/countertheorem or is demoted, and the strongest optional transparency claim that survives policy/value nonidentifiability and causal tests (Tasks 22–23, including Task 22A).

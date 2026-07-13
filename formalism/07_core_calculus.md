@@ -697,7 +697,7 @@ If detailed and core well-formedness agree and every detailed atom diagnostic ma
 | minimal core | `E,Q,S,->,W` index, finite profiles, `WF`, `K_3`, indexed diagnostics, active set/fallback, labelled use, abstract dependencies | required to type and assess scoped reliance and update |
 | canonical elaboration | detailed task/model/domain/certificate/search/provenance records, finite component DAGs, and selector traces | implementation, audit, and witness construction |
 | formal extensions | bridges, transport, Pareto/frontier machinery, domain splits, mixtures, theory-framework relations, cyclic fixed-point evaluators | useful but not necessary for every license request |
-| neural layer | encodings, margins, ReLU heads, routers, external registry | representation/learning of the calculus, not its semantics |
+| neural layer | encodings, margins, learned scoring heads, routers, external registry; ReLU is the reference construction | representation/learning of the calculus, not its semantics |
 | policy/value case study | policy reconstruction, value surrogates, causal interpretability probes | optional application to transparency |
 | metalanguage | eventual/certified stability, semantic finality, target truth | reasoning about sequences/worlds, not ordinary license derivation |
 
@@ -753,7 +753,7 @@ This table is the canonical notation index. Later artifacts must record any deli
 | finite plan-composition closure | typed component interfaces, propagation certificates, interaction assumptions | standard/extension lemma or countermodel family | Tasks 14–14A |
 | unrestricted rational monotony/global closure | state transitions/open library | negative/countermodel targets | Task 14 |
 | subdomain/routed/bridge risk bounds | measure, router, loss, bridge hypotheses | cross-layer extension theorems | Task 14A |
-| finite ReLU representation and hard-seam characterization | diagnostic quotient, CPWL assumptions | representation/impossibility cluster | Task 17 |
+| finite ReLU reference representation and hard-seam characterization | diagnostic quotient, CPWL assumptions | representation/impossibility cluster for one architecture class, not an optimality claim | Task 17 |
 | semantic/activation alignment | synthetic and later real examples | empirical hypothesis | Tasks 19–25 |
 
 Definitions and imported three-element lattice facts do not count as the project's paper-carrying theorem contribution. Coordinate indispensability protects the interface but is a finite separation result; the principal theorem spine remains the Task 12 impossibilities plus the Task 14 characterization, Task 14A transport bounds, and Task 17 representation/seam results if they survive audit.
