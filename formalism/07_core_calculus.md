@@ -750,7 +750,7 @@ This table is the canonical notation index. Later artifacts must record any deli
 | indistinguishable-prefix non-certifiability | continuation semantics | paper-carrying impossibility | proved Task 12 |
 | statistical stabilization / zero-error barrier | coverage, shrinkage, finite-prefix equivalence | convergence plus impossibility | proved Task 12 |
 | positive open-library non-finality | valid `AddModel` dominator continuation | paper-carrying impossibility | proved Task 12 |
-| robust update persistence | `Dep`, update class, path realizability | new observable-indexed characterization | proved Task 14 |
+| robust update persistence | canonical read/write footprint, update class, path realizability | abstract observable-indexed characterization proved Task 14; calculus locality pending | Task 14B |
 | profile refinement relative completeness | typed atom rules, independent-atom models | new characterization with finite separator | proved Task 14 |
 | minimal diagnostic quotient and bit bound | realizable vectors, supported queries, singleton profiles; independence for `3^n` | new representation lower bound plus correction | proved/countermodeled Task 14 |
 | mode-scoped soundness | `<W,S>`, certificate-specific assumptions | conditional schema; universal factivity refuted | Task 14 |
@@ -760,7 +760,7 @@ This table is the canonical notation index. Later artifacts must record any deli
 | finite ReLU reference representation and hard-seam characterization | diagnostic quotient, CPWL assumptions | representation/impossibility cluster for one architecture class, not an optimality claim | Task 17 |
 | semantic/activation alignment | synthetic and later real examples | empirical hypothesis | Tasks 19–25 |
 
-Definitions and imported three-element lattice facts do not count as the project's paper-carrying theorem contribution. Coordinate indispensability protects the interface but is a finite separation result; the principal theorem spine now includes the Task 12 impossibilities, the three Task 14 characterization/separation results, and Task 14A's transport/routing cluster, with Task 17 representation/seam results still pending.
+Definitions and imported three-element lattice facts do not count as the project's paper-carrying theorem contribution. Coordinate indispensability protects the interface but is a finite separation result. Checkpoint B's strict tally counts the profile result, counts the Task 12 package after precision/positioning repair, and requires Task 14B to connect the abstract impact theorem to the operational clauses. Task 14A supplies load-bearing standard integration; Task 17's representation/seam cluster remains the prospective distinctive result.
 
 ## 17. Decisions audited by Task 14
 

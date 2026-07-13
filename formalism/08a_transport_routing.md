@@ -504,7 +504,7 @@ The architecture-neutral neural interface therefore needs more than an active-se
 | path-sensitivity DAG budget | finite perturbation-propagation theorem | composition extension |
 | cycle/potential equivalence | standard graph/group cocycle characterization | optional atlas extension |
 
-No priority or novelty over the underlying measure, Lipschitz, perturbation, or cocycle mathematics is claimed. The project contribution is their typed integration with profile-indexed licenses, gaps, fallbacks, diagnostics, and neural information requirements. Checkpoint B must count that integration honestly when deciding the final paper's theorem spine.
+No priority or novelty over the underlying measure, Lipschitz, perturbation, or cocycle mathematics is claimed. The project contribution is their typed integration with profile-indexed licenses, gaps, fallbacks, diagnostics, and neural information requirements. Checkpoint B classifies this cluster as load-bearing integration rather than an independent novelty headline.
 
 ## 10. Decisions carried forward
 

@@ -8,11 +8,13 @@ Depends on: [`07_core_calculus.md`](07_core_calculus.md), [`06_open_endedness.md
 
 > **Task 14A extension notice.** [`08a_transport_routing.md`](08a_transport_routing.md) supplies the quantitative subdomain, router, bridge/blend, and finite plan-DAG propagation theorems requested by this audit.
 
+> **Checkpoint B audit notice.** The abstract impact-graph characterization is correct, but it does not yet prove that the operational atom clauses generate a change-complete graph. [`Task 14B`](../TODO.md) will define typed query/read and event/write footprints and prove that calculus-specific locality corollary. It will also repair the base-local symbol in Theorem 10 and clarify that Theorem 14 is a canonical decoded normal form whose finite bit count is not a neural-width lower bound. See [`Checkpoint B`](../notes/checkpoints/B_core_metatheory.md) for the strict theorem tally.
+
 ## Durable result summary
 
-This file audits the Task 13 calculus rather than adding another ontology. Three paper-carrying clusters survive, with two necessary qualifications.
+This file audits the Task 13 calculus rather than adding another ontology. It proves three characterization/separation clusters, with the stricter paper-contribution tally qualified by Checkpoint B.
 
-1. **Robust update persistence is characterized by an observable-specific impact cone.** For a declared update class, absence of a graph path to the observed coordinates is sufficient when the dependency graph is change-complete. It is also necessary when every reachable observed coordinate has a realizing allowed status-changing path. Without that path realizability, a spurious dependency edge gives a finite countermodel to necessity. Diagnostic equality, atom-value equality, public-status equality, and continued grant require different observables.
+1. **Robust update persistence is characterized abstractly by an observable-specific impact cone.** For a declared update class, absence of a graph path to the observed coordinates is sufficient when the dependency graph is change-complete. It is also necessary when every reachable observed coordinate has a realizing allowed status-changing path. Without that path realizability, a spurious dependency edge gives a finite countermodel to necessity. Diagnostic equality, atom-value equality, public-status equality, and continued grant require different observables. Task 14B must still derive change-completeness from the concrete atom clauses and event writes before this counts as a calculus-specific paper result.
 2. **The typed atom and profile refinements are sound.** In the finite independent-atom fragment, they are relatively complete: whenever the syntactic profile refinement fails, a finite down-set model grants the alleged stronger profile and withholds the alleged weaker one. The completeness direction deliberately excludes unrepresented conjunctive interactions among atoms.
 3. **The minimal status representation is the quotient induced by the supported profile queries.** If singleton profiles are available, the quotient is equality on the set `V` of realizable atom vectors. Hence the exact number of distinguishable meaningful states is `|V|`. It becomes `3^n`, with worst-case fixed-length cost `ceil(n log_2 3)` bits, only when all `3^n` ternary vectors are realizable. Singleton availability alone does not imply independence; a two-atom refinement countermodel has seven rather than nine realizable vectors.
 
@@ -557,7 +559,7 @@ If a Boolean grant variable `g` is stipulated to satisfy `g=not g`, it has no Bo
 | `WF + K_3` normal form and meet algebra | definition plus standard finite-lattice fact | supporting infrastructure |
 | scoped four-outcome minimality | finite observation-separation lemma | interface justification |
 | safety projection scope | exact restriction lemma and limitation | audit/safety interface |
-| robust impact-cone iff under realizability | new characterization with finite countertheorem | paper-carrying core result |
+| robust impact-cone iff under realizability | abstract characterization with finite countertheorem | calculus-specific paper role conditional on Task 14B locality proof |
 | atom/profile soundness | core soundness theorem | necessary metatheory |
 | independent-fragment relative completeness | new finite separating characterization | paper-carrying core result |
 | query-induced diagnostic quotient | new sufficient-statistic characterization | paper-carrying core result |
@@ -570,7 +572,7 @@ If a Boolean grant variable `g` is stipulated to satisfy `g=not g`, it has no Bo
 | elaboration invariance and DAG reification | structural induction | core/elaboration bridge |
 | component-grant and cyclic-self-reference failures | finite counterexamples | recursive-modeling limits |
 
-The project is no longer theorem-light in the specific sense identified at Checkpoint A1: it has continuation impossibilities from Task 12, three distinct Task 14 characterization/separation results, and Task 14A's quantitative transport/routing cluster. Many proofs are deliberately finite or use standard measure/Lipschitz machinery, so Task 17 must still establish the positive/negative neural representation cluster. Checkpoint B will decide whether the resulting spine is sufficient and how strongly the integrated extension results count as contributions.
+Checkpoint B applies a stricter tally than theorem count alone. The profile relative-completeness result counts now; the stability package counts after statement/attribution repair; and the update cluster counts only after Task 14B proves locality/change-completeness for the actual atom clauses. The diagnostic quotient is a representation bridge, while Task 14A is load-bearing integration of mostly standard machinery rather than a novelty headline. After the focused Task 14B repair, the spine is sufficient to proceed, but Task 17 must still establish the positive/negative neural representation cluster.
 
 ## 12. Decisions carried forward
 

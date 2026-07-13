@@ -6,6 +6,8 @@ Date: 2026-07-12
 
 Depends on: [`05a_integration.md`](05a_integration.md) and the executable [`WF + K_3` reference](../verification/README.md)
 
+> **Checkpoint B audit notice.** The mathematical package remains in force, but [`Task 14B`](../TODO.md) must repair Theorem 3's eventual-index wording and state Theorem 4 explicitly as a stopping-time regime declaration (or add the stronger trajectory hypotheses), then position its classical finite-prefix/sequential-decision patterns with direct citations. Until that repair, cite the scoped conclusions through [`Checkpoint B`](../notes/checkpoints/B_core_metatheory.md).
+
 ## Durable result summary
 
 This task adds a meta-level continuation semantics without adding truth or finality predicates to the base license language. A node is a compatible world/stage pair carrying a finite epistemic state. For a fixed substantive query
