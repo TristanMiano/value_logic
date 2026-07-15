@@ -4,7 +4,7 @@ Date: 2026-07-12
 
 Trigger: completion of Tasks 14 and 14A, supplemented by the external audit in [`llm_convos/claude_audit_2026-07-12.md`](../../llm_convos/claude_audit_2026-07-12.md)
 
-Status: completed and amended by project-author guidance; Tasks 14B–16 completed, Task 17 next
+Status: completed and amended by project-author guidance; Tasks 14B–17 completed, Task 18 next
 
 ## Durable checkpoint result
 
@@ -14,7 +14,7 @@ The theorem bar was conditionally cleared at this checkpoint. The profile soundn
 
 The neural target is architecture-neutral and smaller than the complete formalism. Task 16 now supplies the reference realization: a ReLU module proposes dependency-scoped regions, uncertainty/validity, payloads, and grades; separately accepted calibration/checker records and a symbolic decoder produce diagnostics, profiles, active masks, and fallback. ReLU remains the reference witness for continuous piecewise-linear statistics rather than the semantics. Monotone/lattice and hard mixture-of-experts models retain their narrow monotonicity and discontinuous-seam hypotheses. Task 15's typed-DAG versus matched flat-plan question remains optional; Checkpoint C decides whether any comparator merits training.
 
-Task 17 remains the next prospective neural mathematical centerpiece. Its target statements were fixed below before Tasks 15–16 chose encodings and architecture. The subsequent project-author amendment's prior formal target—Task 14C's finite proof-carrying recursive plans, precise theorem levels, and stratified assessment of the value-logic system—is complete, and Task 15 now encodes its surviving interface.
+Task 17 is now complete as the prospective neural mathematical centerpiece. Its target statements were fixed below before Tasks 15–16 chose encodings and architecture, and [`ml/03_representation_theorems.md`](../../ml/03_representation_theorems.md) adjudicates all seven without replacing exact/robust/seam obligations by universal approximation. The subsequent project-author amendment's prior formal target—Task 14C's finite proof-carrying recursive plans, precise theorem levels, and stratified assessment of the value-logic system—is also complete, and Tasks 15–17 preserve its surviving interface.
 
 The amendment also accepts a positive version of the author's dual-use ReLU intuition. A channel can simultaneously express positive certificate-relative adequacy slack and serve as a downstream numerical feature when its preactivation has an explicit, certificate-valid margin semantics—or a verified approximation envelope with sufficient boundary separation—and the later computation is defined to consume that grade. This is a conditional construction, not an interpretation of arbitrary hidden activations. General payloads, full diagnostics, and proof evidence require more than the one rectified scalar.
 
@@ -53,7 +53,7 @@ The following tally applies the project's own rule that definitions, renamed sta
 | `WF + K_3`, meet algebra, four outcomes, safety projections, tolerance monotonicity, fallback, heredity, coordinate separation | Infrastructure or finite sanity results | Necessary for correctness and interface economy; excluded from the headline count |
 | Subdomain, router, bridge, plan-DAG, and cocycle results | Load-bearing integration | Standard measure, partition, Lipschitz, perturbation, and graph machinery, honestly integrated with licenses; not counted as an independent novelty cluster |
 | Proof-carrying recursive plans and stratified system assessment | **Completed Task 14C; integration result** | Proves the finite annotated-execution/root-license and grounded/ranked results; imported proof/program machinery is separated, so this is load-bearing integration rather than an independent novelty headline |
-| ReLU realization and hard-seam obstruction | Pending Task 17 | Expected to be the most distinctive remaining formal cluster |
+| ReLU realization and hard-seam obstruction | **Completed Task 17; representation cluster** | Proves exact consumer factorization, conservative robust decoding, finite CPWL/ReLU realization, the seam iff/discontinuity obstruction, library limits, the minimal named dual-use construction, and finite proof-erased plan realization |
 
 Task 14B clears the three-cluster pre-neural bar: profile completeness, the repaired/classically positioned stability package, and the calculus-specific locality/update cluster. This is a minimum, not permission to stop theorem development. Completed Task 14C is not added to inflate this tally: it answers the separate compositional-computation and system-license questions that now constrain the encoding. Unrelated metatheory merely to raise the theorem count remains rejected.
 
@@ -191,7 +191,7 @@ The exact abstraction begins with a **joint-sufficiency factorization condition*
 z(omega)=z(omega')
 ```
 
-implies both equal `F`-query answers and equal `C` outputs. Equivalently, the code equivalence induced by `z` refines the intersection of the license-query and computation equivalences. This equivalence is a definition-level characterization, not by itself a paper-carrying theorem. Task 17 must add a nontrivial construction or minimal quotient/factorization result for a specified channel family, plus an obstruction whenever equal adequacy margins hide different payloads.
+implies both equal `F`-query answers and equal `C` outputs. Equivalently, the code equivalence induced by `z` refines the intersection of the license-query and computation equivalences. This equivalence is a definition-level characterization, not by itself a paper-carrying theorem. Task 17 adds the missing result: exact atom states plus normalized positive margins are the minimal quotient for the coordinate-complete named-channel family, while an equal-adequacy/different-payload pair obstructs the scalar code.
 
 Using margin magnitude downstream also creates a scale obligation. License status may be invariant under a joint positive rescaling of loss, tolerance, and certificate bounds while `z` changes. A downstream computation using `z` must be covariant to that transformation or declare normalized, unit-bearing margins. Multiplying a model output by `ReLU(m)` is not a free gate: it suppresses boundary-supported outputs, scales content by margin units, and defines a new blended plan. The safe default keeps content and grade channels separate and uses a symbolic router; score-as-content remains an explicitly selected special case.
 
@@ -225,13 +225,13 @@ These results permit finite self-hosting or system-level adequacy without unrest
 
 Task 14C audited Curry–Howard, constructive/refinement and quantitative types, Hoare program logic, proof-carrying code, and certifying algorithms against primary sources. [`formalism/08c_proof_carrying_plans.md`](../../formalism/08c_proof_carrying_plans.md) classifies the underlying correspondence and induction machinery as prior art. The project result is the integration of certificate-carrying computation with defeasible, domain-relative, quantitative licenses—not the underlying machinery by itself.
 
-## Task 17 target statements frozen by this checkpoint
+## Task 17 target statements frozen by this checkpoint and now adjudicated
 
-Tasks 15 and 16 have now designed toward the following theorem statements rather than choosing convenient encodings first. Task 17 must adjudicate them.
+Tasks 15 and 16 designed toward the following theorem statements rather than choosing convenient encodings first. Task 17 has now adjudicated them in [`ml/03_representation_theorems.md`](../../ml/03_representation_theorems.md).
 
 1. **Architecture-neutral exact factorization.** For a declared input class and profile family `F`, an encoder/scorer plus deterministic decoder realizes every requested status exactly only if equal codes imply equal required `WF` observations and equal `V / ~_F` classes. Conversely, any code preserving those observations is status-sufficient. Diagnostic-preserving clients require the corresponding finer quotient.
 
-2. **Margin-robust approximate realization.** If every learned continuous sufficient statistic has uniform error at most `delta`, then requests separated from all relevant support/refutation boundaries by more than the propagated error decode exactly; requests inside the uncertainty band are conservatively open. The result must state how multiple statistics, profiles, and certificate modes propagate error.
+2. **Margin-robust approximate realization.** If every learned continuous sufficient statistic has uniform error at most `delta`, then requests sufficiently separated from all relevant support/refutation boundaries decode exactly; requests inside the uncertainty band are conservatively open. Task 17 sharpens “sufficiently”: affine statistic error propagates to raw margin radius `r`, conservative interval decoding is sound everywhere, and uniform ideal-decision recovery is guaranteed outside the `2r` ideal-margin band. Multiple statistics, profiles, and certificate modes retain separate radii and polarity.
 
 3. **Finite ReLU construction.** On a fixed finite-dimensional encoding, if the required real-valued atom statistics are continuous piecewise linear, a finite ReLU network with affine outputs computes them exactly under stated architecture, size/depth, and domain conventions. A fixed external, boundary-aware `WF + K_3` decoder then recovers the selected finite profile queries. Direct discrete `K_3` output and inclusive boundary decisions are not themselves continuous ReLU outputs.
 
@@ -243,7 +243,7 @@ Tasks 15 and 16 have now designed toward the following theorem statements rather
 
 7. **Annotated finite-plan ReLU realization.** If a fixed finite proof-erased annotated plan `(y_hat,b)` has CPWL primitives and grade transformers and all hard branches satisfy the required seam conditions, then the joint payload/grade map is CPWL and receives the exact finite ReLU construction. Proof/certificate terms remain externally checked; non-CPWL computation receives only a controlled approximation plus a verified envelope.
 
-These are targets, not results already proved. Task 17 must verify the exact CPWL representation hypotheses, global-domain/extension convention, boundary cases, and size/depth attribution from primary sources.
+All seven targets are now proved or sharply delimited. Task 17 verifies the exact CPWL hypotheses, global-domain/extension convention, inclusive boundaries, affine-output architecture, hidden-depth count, finite but potentially enormous size, and primary-source attribution. The fixed/expandable item remains an interface theorem rather than a neural capacity lower bound, and all empirical calibration/learning/alignment claims remain open.
 
 ## Architecture selection
 
@@ -253,7 +253,7 @@ Alternatives were screened by five criteria: preservation of the same semantic i
 |---|---|---|
 | ReLU MLP plus symbolic decoder | Exact continuous-CPWL statistic realization, inspectable threshold margins, and activation geometry | **Reference architecture** |
 | Monotone/lattice model | Does enforcing selected tolerance/refinement monotonicities improve extrapolation or calibration compared with learning them? | **Candidate comparator**, limited to coordinates whose monotonicity is actually proved |
-| Hard mixture of experts / external hard router | Does native discontinuous routing improve seam-mismatch cases while preserving license masking and fallback? | **Candidate comparator** and direct foil for Task 17 |
+| Hard mixture of experts / external hard router | Does native discontinuous routing improve seam-mismatch cases while preserving license masking and fallback? | **Candidate comparator** and direct foil for Task 17's completed discontinuity obstruction |
 | Neuro-symbolic decoder | Can exact `WF + K_3` aggregation prevent inconsistent aggregate status? | **Shared infrastructure**, not a comparator |
 | Graph/set model | Does explicit plan-DAG structure preserve grade/certificate composition and generalize across structurally distinct plans better than flattening? | Task 15 operationalizes a matched typed-DAG versus flat-plan hypothesis; Checkpoint C still decides whether the comparison is adequately powered |
 | Maxout | Another continuous piecewise-linear family | Not selected: currently redundant with the ReLU representation question |
@@ -293,7 +293,7 @@ Every unfinished item was reconsidered:
 | **Task 14C** | **Completed 2026-07-14.** Formalized theorem levels, proof-carrying recursive plans, composite-certificate license lifting, grounded provenance, finite-rank system assessment, and Curry–Howard/self-endorsement limits |
 | **Task 15** | **Completed 2026-07-14.** Fixed a query-family-specific neural/symbolic interface, dependency-scoped atom inputs, exact invariances, status-minimal versus audit-preserving codes, fixed/expandable libraries, and typed plan-node outputs. Graph/set structure is now an operationalized comparison to flattening, not a selected architecture |
 | **Task 16** | **Completed 2026-07-14.** Fixed a hybrid ReLU region/statistic scorer with external calibration/checking and symbolic decoding/masking; separate plan content/grade/evidence; explicit normalized dual-use hypothesis channels; fixed/shared library forms; and scoped monotone/lattice, hard-MoE, and graph/set variants |
-| **Task 17** | Strengthen around the seven frozen targets above, including joint sufficiency and annotated-plan realization. This is the prospective flagship neural theorem task |
+| **Task 17** | **Completed 2026-07-14.** Proved or delimited all seven targets, including the factor-of-two conservative decision band, exact global CPWL/ReLU convention, seam iff and rank-one corollary, finite-evaluation non-closure, minimal coordinate-complete dual-use code, and annotated-plan realization |
 | **Task 18** | Keep, but train sufficient statistics/calibration first. Optimization does not manufacture a proof; externally checked certificate targets and provenance remain distinct. Direct atom/status cross-entropy is auxiliary or a baseline |
 | **Checkpoint C** | Keep. It must choose at most one trained comparator unless two powered hypotheses survive and must check the blueprint against Task 17 rather than universal approximation |
 | **Task 19** | Retain as a tiered design: core succession first, routing/seams second, and a bounded certificate-carrying/system-adequacy case. Compare externally audited system licensing with self-confidence-only pseudo-licensing |
@@ -317,17 +317,17 @@ Every unfinished item was reconsidered:
 ## Risks after this checkpoint
 
 1. **Closed by Task 14B.** The task produced a case-analysis theorem connecting actual atom reads and event writes to change-completeness, not merely a longer dependency record.
-2. Task 17 could prove only that ReLU networks are universal approximators. That would not meet the frozen exact/robust/seam targets.
-3. **Interface risk closed by Task 15; publication risk remains.** The status quotient is explicitly consumer-relative, the audit code remains unquotiented, and the discrete bit result is not a neural-width claim. Tasks 17 and 31 must preserve that wording.
+2. **Closed by Task 17.** The task proves exact/robust/seam results and explicitly states that universal approximation establishes none of the semantic, proof, efficiency, learning, calibration, or interpretation claims.
+3. **Interface risk closed by Tasks 15 and 17; publication risk remains.** The status quotient is explicitly consumer-relative, the audit code remains unquotiented, and the discrete bit result is not a neural-width claim. Task 31 must preserve that wording.
 4. The experiment could become an omnibus benchmark too small to test any claim well. The tiered design is now required.
 5. The two comparator candidates could create breadth without power. Checkpoint C must select by a concrete hypothesis and fairness budget.
 6. The project may still overstate classical stability patterns or standard transport mathematics. Task 14B establishes the current attribution boundaries; Task 31 must re-audit the final wording.
-7. **Formally closed by Task 14C, encoded by Task 15, and architecturally preserved by Task 16; implementation risk remains.** Proof terms, accepted empirical certificates, and world bridges remain separate from neural grades. Tasks 17–21 must preserve that separation.
-8. **Architecturally narrowed by Task 16; theorem risk remains.** Dual-use channels now have exact hypothesis, address, normalization, calibration, and consumer registries. Task 17 must still prove joint sufficiency and scale semantics; otherwise the positive interpretation remains only a scoped construction and empirical hypothesis.
+7. **Formally closed by Task 14C, encoded by Task 15, architecturally preserved by Task 16, and representation-preserved by Task 17; implementation risk remains.** Proof terms, accepted empirical certificates, and world bridges remain separate from neural grades. Tasks 18–21 must preserve that separation.
+8. **Formal scoped claim closed by Task 17; empirical risk remains.** The exact state-plus-normalized-surplus code is minimal for the coordinate-complete named-channel family, with scale covariance, boundary collision, approximation, and equal-payload obstructions stated. Calibration, learned semantic alignment, and utility remain experimental.
 9. System-level licensing could become circular self-endorsement. Task 14C proves the grounded/ranked finite fragment and countermodels self-endorsement as target evidence; genuine cycles still require explicit fixed-point semantics.
 
-## Revised next task after the Task 16 closure
+## Revised next task after the Task 17 closure
 
-> **Task 17 — State and verify the ReLU/atlas representation results.**
+> **Task 18 — Decide the training objective.**
 
-Tasks 14B–16 are complete. Task 17 must now prove or sharply delimit the seven frozen representation targets for the fixed hybrid architecture, including the positive dual-use construction and exact boundary/scale limitations, without substituting universal approximation for the required results.
+Tasks 14B–17 are complete. Task 18 must now choose a structured objective and simple baseline for the fixed sufficient-statistic, calibration, atom, and routing targets without treating optimization success as a proof or training a production self-grant head.

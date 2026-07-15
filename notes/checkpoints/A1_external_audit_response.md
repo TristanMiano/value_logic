@@ -193,7 +193,7 @@ This compression creates useful supporting theorems: status normal form; commuta
 3. Task 14 owns update/profile/diagnostic characterizations, not a miscellaneous list of elementary consequences.
 4. New Task 14A owns expected-risk restriction, routed-risk, and bridge-risk bounds.
 5. Tasks 16–19 use atom-indexed state/witness data and derived reasons, not a flat reason vocabulary.
-6. Task 17 owns the hard-routing seam characterization and exact ReLU-plus-symbolic-decoder result.
+6. Task 17 subsequently proves the hard-routing seam characterization and exact ReLU-plus-symbolic-decoder result at the scoped global-CPWL strength.
 7. Checkpoint B must count characterization/impossibility results separately from definitions and standard lemmas and add a proof repair if the spine remains thin.
 
 No current theorem is claimed proved by this amendment. It chooses targets, simplifies the future core, and prevents the executable reference from freezing the verbose historical schema.

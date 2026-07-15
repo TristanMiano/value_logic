@@ -313,7 +313,7 @@ Selective prediction remains the closest precedent for fallback, coverage, and a
 
 ### 6.6 CPWL/ReLU
 
-Task 17 still needs precise primary-theorem statements and architecture conventions. It must additionally include the completed hard-routing discontinuity limitation, which prevents a blanket identification of the routed atlas with one ordinary ReLU output.
+Task 17 subsequently supplies the precise primary-theorem statements and architecture conventions, including the hard-routing discontinuity limitation that prevents a blanket identification of the routed atlas with one ordinary ReLU output.
 
 ### 6.7 Physics/intertheory example
 

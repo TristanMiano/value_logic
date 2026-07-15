@@ -1124,7 +1124,7 @@ Checkpoint A should now determine:
 - whether the Newtonian kinetic-energy bound is an adequate motivating physics example or needs a second historically grounded case;
 - which compatibility/cycle results require stronger proofs or literature support;
 - how the Task 15 representation will encode bridge status, uncertainty, relation cells, and provenance without a quadratic explosion in chart pairs;
-- whether Task 17 needs an explicit theorem distinguishing continuous ReLU scorers from discontinuous hard routed compositions;
+- how Task 17's explicit continuity/discontinuous-hard-routing obstruction should be operationalized in the matched experiment;
 - how Task 19 experiments will create exact, approximate, incompatible, and unknown overlaps without defining domains circularly from the trained network.
 
 **Post-checkpoint resolution.** Task 11A selects profile-indexed `Lic_P`. Read chart-use and active-set views as `Charts^use(A,P)` and `Act_A(x,zeta,P)`. Different selectors may induce different atlas views because each declares its required profile; archive, comparison, and selection information remain jointly displayable.

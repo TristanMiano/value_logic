@@ -338,7 +338,7 @@ The safe general interface keeps them separate:
 payload channel != quantitative grade != certificate/provenance.
 ```
 
-A scalar may serve both as adequacy surplus and downstream content only in the special jointly sufficient construction already scoped at Checkpoint B: the value has a named hypothesis, units/normalization, boundary rule, and independently valid certificate or approximation envelope. Even there, the scalar is not the certificate term. Task 15 may encode this interface; Task 17 must prove any neural realization. This note stops before choosing an architecture.
+A scalar may serve both as adequacy surplus and downstream content only in the special jointly sufficient construction already scoped at Checkpoint B: the value has a named hypothesis, units/normalization, boundary rule, and independently valid certificate or approximation envelope. Even there, the scalar is not the certificate term. Task 15 encodes this interface, and Task 17's [`ml/03_representation_theorems.md`](../ml/03_representation_theorems.md) proves the minimal coordinate-complete state-plus-surplus realization and its limitations. This note stops before choosing an architecture.
 
 ## 7. Result classification
 
@@ -378,4 +378,4 @@ These tests are finite regression witnesses, not a proof-assistant formalization
 
 Task 14C establishes the positive finite result requested by the project author. Programs in the plan library can both compute and carry checked claims about their quantitative behavior. The recursion is structural rather than self-justifying: every composite proof is assembled from accepted bases through declared transformers, and every value-logic self-assessment sits at a higher evidential rank than the records it evaluates.
 
-This is enough structure for Task 15 to encode recursive plans and for Task 17 to ask whether fixed finite annotated CPWL plans admit exact ReLU payload/grade realization with an external certificate checker. It is not a theorem that neural activations are proofs, that empirical certificates are infallible, or that the system can license itself from nothing.
+This is enough structure for Task 15 to encode recursive plans. Task 17 subsequently proves that fixed finite annotated CPWL plans with conforming hard branches admit exact ReLU payload/grade realization with an external certificate checker. It is not a theorem that neural activations are proofs, that empirical certificates are infallible, or that the system can license itself from nothing.

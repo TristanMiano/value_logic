@@ -771,10 +771,10 @@ This table is the canonical notation index. Later artifacts must record any deli
 | proof-carrying recursive plans and stratified system assessment | annotated payload/grade/certificate executors, checked constructors, grounded finite-rank dependencies | ambitious author-designated extension; imported program-logic facts must be separated | Task 14C |
 | unrestricted rational-style persistence/global closure | state transitions/open library | negative/countermodel results | proved Task 14 |
 | subdomain/routed/bridge risk bounds | measure, router, loss, bridge hypotheses | cross-layer extension theorems | proved Task 14A |
-| finite ReLU reference representation and hard-seam characterization | diagnostic quotient, CPWL assumptions | representation/impossibility cluster for one architecture class, not an optimality claim | Task 17 |
+| finite ReLU reference representation and hard-seam characterization | diagnostic quotient, CPWL assumptions | completed representation/impossibility cluster for one architecture class, not an optimality claim | [`Task 17`](../ml/03_representation_theorems.md) |
 | semantic/activation alignment | synthetic and later real examples | empirical hypothesis | Tasks 19–25 |
 
-Definitions and imported three-element lattice facts do not count as the project's paper-carrying theorem contribution. Coordinate indispensability protects the interface but is a finite separation result. After Task 14B, Checkpoint B's strict tally counts the profile result, the repaired and classically positioned Task 12 package, and the calculus-specific typed-locality/update cluster. Task 14A supplies load-bearing standard integration; Task 17's representation/seam cluster remains the prospective distinctive result.
+Definitions and imported three-element lattice facts do not count as the project's paper-carrying theorem contribution. Coordinate indispensability protects the interface but is a finite separation result. After Task 14B, Checkpoint B's strict tally counts the profile result, the repaired and classically positioned Task 12 package, and the calculus-specific typed-locality/update cluster. Task 14A supplies load-bearing standard integration; Task 17 now supplies the scoped representation/seam cluster.
 
 ## 17. Decisions audited by Task 14
 

@@ -340,7 +340,7 @@ singletons available  implies  3^n realizable states
 
 is false. `square`
 
-**Project impact.** Task 17 may use `3^n` as a worst-case lower bound by constructing `n` independent atoms. For an actual profile library it must use `|V|` or prove independence; otherwise it overstates the neural output information requirement.
+**Project impact.** Task 17's factorization theorem uses the actual query quotient and preserves this restriction. A `3^n` worst case requires `n` independently realizable atoms; finite discrete-bit counts are not converted into real neural-width bounds.
 
 ### Theorem 14: canonical decoded well-formedness separation
 
@@ -577,7 +577,7 @@ If a Boolean grant variable `g` is stipulated to satisfy `g=not g`, it has no Bo
 | component-grant and cyclic-self-reference failures | finite counterexamples | recursive-modeling limits |
 | proof-carrying plans and stratified system assessment | standard finite inductions plus project-specific license integration | Task 14C positive recursive-computation bridge |
 
-Checkpoint B applies a stricter tally than theorem count alone. Task 14B has now repaired and classically positioned the stability package, and its typed locality/change-completeness theorem makes the update cluster a result about the actual atom clauses. Together with profile relative completeness, the three-cluster pre-neural theorem bar is cleared. The diagnostic quotient remains a representation bridge, while Task 14A is load-bearing integration of mostly standard machinery rather than a novelty headline. Task 17 must still establish the positive/negative neural representation cluster rather than relying on this formal minimum.
+Checkpoint B applies a stricter tally than theorem count alone. Task 14B has now repaired and classically positioned the stability package, and its typed locality/change-completeness theorem makes the update cluster a result about the actual atom clauses. Together with profile relative completeness, the three-cluster pre-neural theorem bar is cleared. The diagnostic quotient remains a representation bridge, while Task 14A is load-bearing integration of mostly standard machinery rather than a novelty headline. Task 17 subsequently establishes the scoped positive/negative neural representation cluster in [`ml/03_representation_theorems.md`](../ml/03_representation_theorems.md) rather than relying on this formal minimum.
 
 ## 12. Decisions carried forward
 

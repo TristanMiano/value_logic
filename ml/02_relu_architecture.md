@@ -2,7 +2,7 @@
 
 Created: 2026-07-14
 Task: TODO Task 16
-Status: reference architecture fixed; representation proofs and training objective remain Tasks 17–18
+Status: reference architecture fixed; representation results completed in Task 17; training objective remains Task 18
 
 ## Executive decision
 
@@ -36,7 +36,7 @@ but `z=0` does not distinguish supported equality from open, refuted, missing, i
 
 The architecture admits the author's dual-use intuition in a deliberately narrow way. Named hypothesis channels with common normalization and accepted calibration may use `z_i` both as positive certificate-relative slack and as an input to a declared downstream computation. That computation is itself a plan to be evaluated. Arbitrary hidden units receive no adequacy interpretation, and variable expert payloads are not multiplied by margin magnitude as a semantics-free gate.
 
-This task fixes a construction, not its representation theorem. Task 17 must prove the exact CPWL, robust decoding, seam, expandable-library, joint-sufficiency, and annotated-plan claims. Task 18 must choose how to train and calibrate the proposed heads.
+This task fixes the construction. Task 17's [`03_representation_theorems.md`](03_representation_theorems.md) now proves the exact CPWL, robust decoding, seam, expandable-library, joint-sufficiency, and annotated-plan claims at their scoped strengths. Task 18 must choose how to train and calibrate the proposed heads.
 
 ## 1. The system boundary
 
@@ -176,7 +176,7 @@ J_hat-delta >  epsilon -> refutation
 otherwise              -> open.
 ```
 
-The width-`2 delta` uncertainty band is a deliberate open region. This is the scalar architecture that Task 17 must generalize and prove robust under its exact uniform-error assumptions.
+The width-`2 delta` estimate-space uncertainty band is a deliberate open region. Task 17 generalizes it: raw affine margin error is `r`, conservative decoding is sound, and uniform recovery of the ideal decision is guaranteed outside the `2r` ideal-margin band.
 
 ### 3.3 Fallback improvement
 
@@ -270,7 +270,7 @@ For the path-sensitivity instance,
 b_v=delta_v+sum_(u in pred(v)) L_(u,v)b_u.
 ```
 
-If sensitivities are fixed certified constants, this grade update is affine in the local bounds. If both sensitivities and bounds vary, their products are not automatically CPWL and are not silently assigned to the ReLU theorem. The external transformer may compute them, or Task 17 must assume a CPWL grade map or controlled approximation with a verified envelope.
+If sensitivities are fixed certified constants, this grade update is affine in the local bounds. If both sensitivities and bounds vary, their products are not automatically CPWL and are not silently assigned to the ReLU theorem. The external transformer may compute them, or Task 17's theorem requires a CPWL grade map or controlled approximation with a verified envelope.
 
 Component licenses are never met to produce a composite license. The composite diagnostic consumes the checked root claim produced by one of these two routes.
 
@@ -365,7 +365,7 @@ where `c` contains any separately required payload/content features. In this con
 - its positive magnitude is normalized certificate-relative adequacy slack; and
 - that same number is a feature used by the named downstream plan.
 
-This supplies the architecture requested by the project author. It does not yet prove that `(z,b,c)` is jointly sufficient for the selected license-query and computation families; Task 17 owns that theorem and its obstruction cases. The consumer weights and its outputs are part of a versioned plan that must itself be evaluated.
+This supplies the architecture requested by the project author. Task 17 proves that the exact-state-plus-normalized-surplus code is jointly sufficient and minimal for the coordinate-complete named-channel family, while general consumers still require the kernel test and obstruction cases. The consumer weights and outputs are part of a versioned plan that must itself be evaluated.
 
 ### 8.3 Classifier example
 
@@ -484,9 +484,9 @@ Task 15's explicit typed-DAG model remains an optional empirical comparator for 
 
 Checkpoint C will retain at most one trained non-ReLU comparison unless distinct hypotheses are adequately powered.
 
-## 13. Task 17 proof obligations exposed by the design
+## 13. Task 17 proof obligations and disposition
 
-This architecture deliberately leaves the following statements unproved:
+This architecture deliberately exposed the following statements; Task 17 now adjudicates them:
 
 1. exact factorization through the declared `WF` observations and `V/~_F`, with the finer diagnostic quotient;
 2. exact decoding outside propagated error bands and conservative openness inside them;
@@ -496,13 +496,13 @@ This architecture deliberately leaves the following statements unproved:
 6. a nontrivial joint-sufficiency construction for `(z,b,c)` plus scalar, boundary, and scale obstructions; and
 7. exact proof-erased payload/grade realization for a fixed annotated CPWL plan with external certificate terms.
 
-Task 17 must also state whether calibration maps, radius attachment, max/set reduction, grade propagation, and routing occur inside the proved ReLU map or in the external symbolic layer. It must not infer a neural-width bound from the finite status code or treat the canonical `Ill/Well` rendering as a required hidden representation.
+[`03_representation_theorems.md`](03_representation_theorems.md) proves (1)–(7) or gives the exact obstruction. It places global finite CPWL numerical maps inside the ReLU theorem; accepted calibration/evidence, `WF`, boundary-aware `K_3`, masks, routing, fallback, and certificates remain external. It also rejects a neural-width inference from finite status bits and treats `Ill/Well` only as a decoded normal form.
 
 ## 14. Executable semantic witness
 
 [`verification/relu_architecture.py`](../verification/relu_architecture.py) implements the architecture's exact wrapper using only the standard library. It separates learned proposals from certified radii; applies inclusive support, strict refutation, polarity, validity, conflict, and calibration gates; exposes signed and rectified channels; validates dual-use normalization registries; and restricts selection to the active set.
 
-[`verification/test_relu_architecture.py`](../verification/test_relu_architecture.py) contains thirteen regressions. They include supported equality with zero ReLU activation, conservative uncertainty-band openness, two-sided refutation versus one-sided withholding, favorable-score override by every invalid state, candidate/fallback evidence, comparable dual-use channels, inactive-candidate exclusion, fallback on a gap, explicit tie handling, exact payload routing, and the downstream-bias counterexample to ReLU-only quarantine. These are finite architecture witnesses, not neural training results or Task 17 proofs.
+[`verification/test_relu_architecture.py`](../verification/test_relu_architecture.py) contains thirteen regressions. They include supported equality with zero ReLU activation, conservative uncertainty-band openness, two-sided refutation versus one-sided withholding, favorable-score override by every invalid state, candidate/fallback evidence, comparable dual-use channels, inactive-candidate exclusion, fallback on a gap, explicit tie handling, exact payload routing, and the downstream-bias counterexample to ReLU-only quarantine. These are finite architecture witnesses; Task 17's separate theorem witnesses are linked from [`03_representation_theorems.md`](03_representation_theorems.md).
 
 ## 15. Decisions carried forward
 
@@ -516,7 +516,7 @@ Task 17 must also state whether calibration maps, radius attachment, max/set red
 8. Fixed indexed and candidate-conditioned shared ReLU designs implement the same semantic contract.
 9. Licensing precedes selection. Selection is restricted to the exact active set and falls back on gaps.
 10. ReLU zero alone does not quarantine downstream computation; the exact mask does.
-11. Named normalized hypothesis channels may be dual-use features, but their downstream consumer is a separately evaluated plan and Task 17 still owes joint sufficiency.
+11. Named normalized hypothesis channels may be dual-use features; Task 17 proves joint sufficiency and minimality for the coordinate-complete state-plus-surplus family, while the downstream consumer remains a separately evaluated plan.
 12. Separate content/grade channels are the general default; margin-scaled variable payloads require a new license.
 13. Aggregate-status, reason-code, self-grant, unmasked argmax, and predicted-certificate heads are excluded from production and allowed only as disconnected ablations where stated.
 14. Monotone/lattice and hard-MoE variants retain only their distinct scoped hypotheses; neither is presumed superior.
@@ -525,4 +525,4 @@ Task 17 must also state whether calibration maps, radius attachment, max/set red
 
 Task 16 derives a concrete ReLU realization of the architecture-neutral interface without assigning logical authority to the network. The scorer estimates reusable continuous quantities. Accepted calibration and checker records determine whether those quantities may enter the exact decoder. The decoder produces auditable atom states; profiles produce licenses; licenses produce an active mask; and a separate selector routes an unchanged payload or fallback.
 
-The construction makes the project's strongest neural intuition precise enough to test: a named ReLU activation can genuinely be both positive adequacy slack and computational feature. It also shows why that intuition is not the whole logic. Boundary support, negative and open status, evidence validity, payload identity, and proof all require channels outside the rectified scalar. Task 17 can now prove exactly which parts of this design ReLU realizes and where external symbolic structure is indispensable.
+The construction makes the project's strongest neural intuition precise enough to test: a named ReLU activation can genuinely be both positive adequacy slack and computational feature. It also shows why that intuition is not the whole logic. Boundary support, negative and open status, evidence validity, payload identity, and proof all require channels outside the rectified scalar. Task 17 now proves exactly which parts of this design ReLU realizes and where external symbolic structure is indispensable; Task 18 chooses how to learn them.

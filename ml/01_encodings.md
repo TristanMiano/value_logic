@@ -2,7 +2,7 @@
 
 Created: 2026-07-14
 Task: TODO Task 15
-Status: architecture-neutral encoding contract; no scorer or training objective selected
+Status: architecture-neutral encoding contract; instantiated by Tasks 16–17; training objective remains open
 
 ## Executive decision
 
@@ -28,7 +28,7 @@ The contract deliberately keeps three boundaries visible:
 2. a learned module may propose continuous sufficient statistics and calibrated error envelopes, but a prediction is not a certificate; and
 3. a plan exposes computational payload, quantitative grade, and certificate/provenance separately, even when a later theorem permits one named scalar to serve both as adequacy surplus and downstream content.
 
-This document fixes inputs, outputs, equivalences, and invariances. Task 16 now instantiates them in [`02_relu_architecture.md`](02_relu_architecture.md); Task 17 must prove or delimit the promised representation results. Nothing here is a neural-width bound or a proof that the proposed statistics are learnable.
+This document fixes inputs, outputs, equivalences, and invariances. Task 16 instantiates them in [`02_relu_architecture.md`](02_relu_architecture.md), and Task 17 proves or delimits the promised results in [`03_representation_theorems.md`](03_representation_theorems.md). Nothing here is a neural-width bound or a proof that the proposed statistics are learnable.
 
 ## 1. Scope and mathematical economy
 
@@ -448,7 +448,7 @@ A code `z` is jointly sufficient exactly when
 ker(z) subseteq ~_(F,C),
 ```
 
-equivalently when every member of `F union C` factors through `z`. The minimal abstract joint code is the quotient `Omega/~_(F,C)`. This is the correct target for Task 17; it is a definition-level factorization condition, not yet the promised nontrivial theorem.
+equivalently when every member of `F union C` factors through `z`. The minimal abstract joint code is the quotient `Omega/~_(F,C)`. Task 17 goes beyond this definition-level condition by proving minimality for the explicit coordinate-complete state-plus-normalized-surplus family and giving scalar, boundary, and scale obstructions.
 
 For named margins `m_i` and `z_i=ReLU(m_i)`, a dual-use interpretation additionally requires:
 
@@ -463,21 +463,21 @@ The author's classifier example is therefore coherent as a conditional construct
 
 An immediate obstruction remains: two plans may have equal adequacy margin and different predictions, costs, or traces. Then the scalar adequacy code identifies two points not equivalent under `C` and is not jointly sufficient. Likewise, a positive rescaling of loss, tolerance, and certificate bounds can preserve license status while changing margin magnitude. A downstream consumer must be covariant under that rescaling or consume a declared normalization. Multiplying a payload by an adequacy margin defines a new plan and requires its own evaluation.
 
-## 12. Task 17 readiness audit
+## 12. Task 17 result audit
 
-The contract can state each result frozen at Checkpoint B without assuming it:
+The contract stated each result frozen at Checkpoint B without assuming it; Task 17 now closes the corresponding burden:
 
-| Task 17 target | interface supplied here | remaining theorem burden |
+| Task 17 target | interface supplied here | Task 17 result |
 |---|---|---|
-| 1. architecture-neutral exact factorization | `WFObs_F`, `V/~_F`, diagnostic-preserving `c_audit`, and deterministic consumers | prove necessity/sufficiency on a declared input class; distinguish status and diagnostic quotients |
-| 2. margin-robust approximation | typed statistics, envelopes, exact boundary rules, and conservative open state | prove propagated error bounds for the selected statistics, profiles, and modes |
-| 3. exact finite ReLU for CPWL statistics | fixed finite numerical view and external decoder; no direct `K_3` output | verify CPWL, finite dimension, global/domain-extension convention, and exact ReLU construction |
-| 4. polyhedral hard seams | router/bridge quantities are a separate optional module with exact cell/scope metadata | prove the conforming-complex iff and discontinuity obstruction; no seam compatibility is assumed here |
-| 5. finite versus expandable library | fixed indexed and candidate-conditioned designs plus exact sparse/dense obligations | prove the stated interface limitation and scope any storage/precision assumptions |
-| 6. dual-use joint sufficiency | independently declared `F,C`, joint quotient, scalar separator, boundary and scale obligations | add a nontrivial construction/minimality or channel-family obstruction; definition alone does not count |
-| 7. annotated finite-plan realization | explicit payload/grade channels, finite DAG, seam/interface fields, external certificate/checker | prove CPWL closure/exact realization for the fixed plan; leave certificate terms outside the network |
+| 1. architecture-neutral exact factorization | `WFObs_F`, `V/~_F`, diagnostic-preserving `c_audit`, and deterministic consumers | exact kernel characterization and minimal public/audit quotients |
+| 2. margin-robust approximation | typed statistics, envelopes, exact boundary rules, and conservative open state | sound interval decoder; exact ideal recovery outside the explicit `2r` band |
+| 3. exact finite ReLU for CPWL statistics | fixed finite numerical view and external decoder; no direct `K_3` output | exact global finite CPWL construction with audited depth/size/domain conventions |
+| 4. polyhedral hard seams | router/bridge quantities are a separate optional module with exact cell/scope metadata | trace-agreement iff, rank-one facet corollary, and discontinuity obstruction |
+| 5. finite versus expandable library | fixed indexed and candidate-conditioned designs plus exact sparse/dense obligations | interface limitation, shared-score equivariance, and extension non-closure counterexample |
+| 6. dual-use joint sufficiency | independently declared `F,C`, joint quotient, scalar separator, boundary and scale obligations | minimal named coordinate-complete construction plus scalar/boundary/scale obstructions |
+| 7. annotated finite-plan realization | explicit payload/grade channels, finite DAG, seam/interface fields, external certificate/checker | CPWL closure and exact proof-erased payload/grade realization; certificates remain external |
 
-In particular, this document does **not** assume that the sufficient statistics are CPWL, that every seam matches, that a fixed scorer handles an unbounded registry, that a margin scalar preserves payload, or that a predicted grade proves its own validity. Those are exactly the questions the representation task must settle.
+In particular, this document does **not** assume that a learned target is CPWL, that every seam matches, that a fixed scorer handles an unbounded registry, that a margin scalar preserves payload, or that a predicted grade proves its own validity. Task 17's results apply only when their explicit hypotheses settle those points.
 
 ## 13. Decisions carried forward
 
@@ -498,4 +498,4 @@ In particular, this document does **not** assume that the sufficient statistics 
 
 Task 15 supplies a compact neural/symbolic boundary for the surviving logic. It can encode ordinary model/domain cases, variable libraries, and recursively structured plans without making the profile a hidden cause, flattening evidence into reason labels, or treating neural output as proof. It also gives the graph/set comparator a concrete structural hypothesis while leaving architecture choice open.
 
-Task 16 now derives the ReLU reference architecture in [`02_relu_architecture.md`](02_relu_architecture.md), preserving the exact metadata and decoder boundary fixed here, exposing separate plan payload/grade/validity/evidence channels, and treating dual-use activations only as a hypothesis-indexed construction. Task 17 is next.
+Task 16 derives the ReLU reference architecture in [`02_relu_architecture.md`](02_relu_architecture.md), preserving the exact metadata and decoder boundary fixed here, exposing separate plan payload/grade/validity/evidence channels, and treating dual-use activations only as a hypothesis-indexed construction. Task 17's [`03_representation_theorems.md`](03_representation_theorems.md) now proves the scoped positive construction and exact limitations. Task 18 is next.
