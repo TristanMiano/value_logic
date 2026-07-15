@@ -234,6 +234,11 @@ def _core_diagnostics(
         IMPROVEMENT: improvement,
         CONSTRAINTS: _hard_constraint(plan, f"k_resource_{plan.name}"),
         TRACE: supported(TRACE, f"trace:{plan.name}:{context.name}", (f"p_{plan.name}_{context.name}",)),
+        COMPARISON_REPORT: open_atom(
+            COMPARISON_REPORT,
+            "ComparisonNotEvaluated",
+            (f"comparison:none:{plan.name}:{context.name}",),
+        ),
     }
 
 
@@ -244,8 +249,16 @@ def _with_comparison(
 ) -> dict[str, Diagnostic]:
     result = dict(core)
     result[diagnostic.atom] = diagnostic
-    if report is not None:
-        result[COMPARISON_REPORT] = report
+    if report is None:
+        report = Diagnostic(
+            atom=COMPARISON_REPORT,
+            value=diagnostic.value,
+            support=diagnostic.support,
+            counterwitness=diagnostic.counterwitness,
+            obstacles=diagnostic.obstacles,
+            provenance=diagnostic.provenance,
+        )
+    result[COMPARISON_REPORT] = report
     return result
 
 

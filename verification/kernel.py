@@ -29,6 +29,14 @@ class Outcome(Enum):
     GRANTED = "Granted"
 
 
+class DiagnosticCompletenessError(ValueError):
+    """A purported well-formed core state omits an instantiated diagnostic.
+
+    Missing *evidence* is represented by an ``OPEN`` diagnostic.  Missing the
+    diagnostic record itself violates the totality contract for ``Diag(r)``.
+    """
+
+
 @dataclass(frozen=True, order=True)
 class Interval:
     lower: float
@@ -74,12 +82,22 @@ class Diagnostic:
             raise ValueError("diagnostic atom must be named")
         if not self.provenance:
             raise ValueError(f"diagnostic {self.atom!r} lacks provenance")
-        if self.value is AtomValue.SUPPORTED and not self.support:
-            raise ValueError(f"supported atom {self.atom!r} lacks a witness")
-        if self.value is AtomValue.REFUTED and not self.counterwitness:
-            raise ValueError(f"refuted atom {self.atom!r} lacks a counterwitness")
-        if self.value is AtomValue.OPEN and not self.obstacles:
-            raise ValueError(f"open atom {self.atom!r} lacks an obstacle")
+        payloads = {
+            AtomValue.SUPPORTED: self.support,
+            AtomValue.REFUTED: self.counterwitness,
+            AtomValue.OPEN: self.obstacles,
+        }
+        if not payloads[self.value]:
+            label = {
+                AtomValue.SUPPORTED: "witness",
+                AtomValue.REFUTED: "counterwitness",
+                AtomValue.OPEN: "obstacle",
+            }[self.value]
+            raise ValueError(f"{self.value.name.lower()} atom {self.atom!r} lacks a {label}")
+        if any(payloads[value] for value in AtomValue if value is not self.value):
+            raise ValueError(
+                f"diagnostic {self.atom!r} mixes payloads from distinct K_3 constructors"
+            )
 
 
 @dataclass(frozen=True)
@@ -283,15 +301,22 @@ def assess_request(state: EpistemicState, request_id: str) -> Assessment:
     assert request.profile is not None
     profile = state.profiles[request.profile]
     available = state.diagnostics.get(request_id, {})
-    missing = [atom for atom in profile.required if atom not in available]
+    expected = profile.required + profile.report_only
+    missing = [atom for atom in expected if atom not in available]
     if missing:
-        raise KeyError(f"request {request_id!r} lacks required diagnostics {missing}")
+        raise DiagnosticCompletenessError(
+            f"request {request_id!r} lacks instantiated diagnostics {missing}; "
+            "encode missing evidence with an open diagnostic"
+        )
 
     required = {atom: available[atom] for atom in profile.required}
     for atom, diagnostic in required.items():
         if diagnostic.atom != atom:
             raise ValueError(f"diagnostic key {atom!r} disagrees with atom {diagnostic.atom!r}")
-    reports = {atom: available[atom] for atom in profile.report_only if atom in available}
+    reports = {atom: available[atom] for atom in profile.report_only}
+    for atom, diagnostic in reports.items():
+        if diagnostic.atom != atom:
+            raise ValueError(f"diagnostic key {atom!r} disagrees with atom {diagnostic.atom!r}")
 
     aggregate = meet(diagnostic.value for diagnostic in required.values())
     outcome = {
@@ -390,10 +415,15 @@ def assess_relative_undefeated(
     provenance: Iterable[str],
     *,
     certified_dominators: Iterable[str] = (),
+    search_trace_valid: bool | None = True,
 ) -> Diagnostic:
     dominators = tuple(certified_dominators)
     if dominators:
         return refuted(atom, f"dominator:{dominators[0]}", provenance)
+    if search_trace_valid is None:
+        return open_atom(atom, "MissingSearchTrace", provenance)
+    if not search_trace_valid:
+        return open_atom(atom, "InvalidSearchTrace", provenance)
     return supported(atom, f"no-certified-dominator:{evaluated_scope}", provenance)
 
 
@@ -404,11 +434,16 @@ def assess_certified_undominated(
     *,
     certified_dominators: Iterable[str] = (),
     unknown_pairs: Iterable[str] = (),
+    search_trace_valid: bool | None = True,
 ) -> Diagnostic:
     dominators = tuple(certified_dominators)
     unknown = tuple(unknown_pairs)
     if dominators:
         return refuted(atom, f"dominator:{dominators[0]}", provenance)
+    if search_trace_valid is None:
+        return open_atom(atom, "MissingSearchTrace", provenance)
+    if not search_trace_valid:
+        return open_atom(atom, "InvalidSearchTrace", provenance)
     if unknown:
         return open_atom(atom, f"UnresolvedComparison:{','.join(unknown)}", provenance)
     return supported(atom, f"all-comparisons-resolved:{evaluated_scope}", provenance)

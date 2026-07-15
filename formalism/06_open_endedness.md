@@ -6,7 +6,7 @@ Date: 2026-07-12
 
 Depends on: [`05a_integration.md`](05a_integration.md) and the executable [`WF + K_3` reference](../verification/README.md)
 
-> **Checkpoint B audit notice.** The mathematical package remains in force, but [`Task 14B`](../TODO.md) must repair Theorem 3's eventual-index wording and state Theorem 4 explicitly as a stopping-time regime declaration (or add the stronger trajectory hypotheses), then position its classical finite-prefix/sequential-decision patterns with direct citations. Until that repair, cite the scoped conclusions through [`Checkpoint B`](../notes/checkpoints/B_core_metatheory.md).
+> **Task 14B repair notice.** [`08b_audit_repairs.md`](08b_audit_repairs.md) repairs Theorem 3's joint eventual index, states Theorem 4 as an adapted stopping-time regime theorem, and positions the finite-prefix/sequential-decision arguments as classical patterns. The scoped conclusions below now incorporate those repairs.
 
 ## Durable result summary
 
@@ -334,7 +334,7 @@ Along a path, assume:
 
 Then the adequacy atom is eventually stable. It is eventually supported when `theta<epsilon` and eventually refuted when `theta>epsilon`.
 
-**Proof.** Choose `N` such that `diam(C_n)<gamma` for every `n>=N`. If `theta<epsilon`, coverage implies
+**Proof.** Choose `N_coverage` beyond which coverage holds and `N_diameter` beyond which `diam(C_n)<gamma`. Set `N=max(N_coverage,N_diameter)`. If `theta<epsilon`, coverage implies for every `n>=N`
 
 ```text
 U_n <= theta + diam(C_n) < theta+gamma=epsilon,
@@ -358,33 +358,41 @@ Let `P` have finitely many required atoms. Along a path, suppose `WF(chi)` is ev
 
 **Proof.** Take the maximum of the finitely many atom stabilization indices and the `WF` index. Beyond it, the required vector and therefore its deterministic finite meet are constant. The permanent version applies the same argument at every descendant. `square`
 
-### Theorem 4: no uniform zero-error finite announcement in a rich family
+### Theorem 4: no uniform zero-error finite regime declaration in a rich family
 
-Let a statistical family contain laws `P_-` and `P_+` such that:
+Let `(F_n)` be the observation filtration. Let a statistical family contain laws `P_-` and `P_+` such that:
 
 ```text
 theta(P_-) < epsilon < theta(P_+),
 ```
 
-and their restrictions to every finite observation sigma-field `F_n` are mutually absolutely continuous. Let a stage-local procedure stop at finite time `tau` and announce either `supported forever` or `refuted forever`.
+and their restrictions to every finite observation sigma-field `F_n` are mutually absolutely continuous. Let `tau` be a possibly infinite stopping time and let the declaration `delta in {below,above}` on `{tau<infinity}` be `F_tau`-measurable, so
 
-If the procedure announces `supported forever` at a finite time with positive probability under `P_-`, then it makes that announcement with positive probability under `P_+`. Symmetrically, a finite `refuted forever` announcement that has positive probability under `P_+` has positive probability under `P_-`. Hence no such procedure is both zero-error over `{P_-,P_+}` and finite with positive probability on the corresponding correct side; in particular, no zero-error procedure stops almost surely under both laws.
+```text
+{tau=n and delta=d} in F_n
+```
+
+for every finite `n` and declaration `d`. Interpret `below` as the regime claim `theta(P)<epsilon` and `above` as `theta(P)>epsilon`.
+
+If the procedure declares `below` at a finite time with positive probability under `P_-`, then it makes that same, wrong-regime declaration with positive probability under `P_+`. Symmetrically, a finite `above` declaration that has positive probability under `P_+` has positive probability under `P_-`. Hence no such procedure is both zero-error over `{P_-,P_+}` and finite with positive probability on the corresponding correct side; in particular, no zero-error procedure stops almost surely under both laws.
 
 **Proof.** Suppose
 
 ```text
-P_-(tau<infinity and declaration=supported)>0.
+P_-(tau<infinity and delta=below)>0.
 ```
 
 This event is the countable union of the `F_n`-measurable events
 
 ```text
-E_n={tau=n and declaration=supported}.
+E_n={tau=n and delta=below}.
 ```
 
-Some `E_n` has positive `P_-` probability. Mutual absolute continuity on `F_n` gives `P_+(E_n)>0`. On `E_n`, the announcement is wrong under `P_+`. The opposite direction is identical. `square`
+Some `E_n` has positive `P_-` probability. Stopping-time adaptedness makes `E_n` an `F_n` event, and mutual absolute continuity on `F_n` gives `P_+(E_n)>0`. On `E_n`, `delta=below` is the wrong parameter-regime declaration under `P_+`. The opposite direction is identical. `square`
 
-This theorem does not deny high-confidence sequential certification, almost-sure eventual correctness under stronger assumptions, or practical stopping rules. It denies a particular conjunction: finite positive-probability announcement, uniform zero error, and a family whose opposite regimes cannot be excluded from any finite prefix.
+This theorem does not deny high-confidence sequential certification, almost-sure eventual correctness under stronger assumptions, or practical stopping rules. It denies a particular conjunction: finite positive-probability regime declaration, uniform zero error, and a family whose opposite regimes cannot be excluded from any finite prefix.
+
+It is deliberately not phrased as a claim that the displayed atom trajectory is already “supported forever” or “refuted forever.” If, under each law, eventual coverage and shrinking diameter hold almost surely, Theorem 3 makes the atom eventually match the parameter regime; under those additional assumptions the same argument yields the corresponding trajectory-level corollary.
 
 ### Countermodel 2: stabilization with no knowable arrival time
 
@@ -560,21 +568,27 @@ optional external SemFinal and True_w.
 
 Full branching graphs, confidence regions, dominator events, and freeze certificates can remain semantic constructions or extensions rather than primitive paper-level sorts.
 
-Task 14 should not attempt to prove unconditional stability from append-only records. It should instead characterize update classes that preserve the dependency projection of required atoms. Theorem 2 supplies the deterministic special case; Theorem 5 supplies a countertheorem for comparison profiles under candidate expansion.
+Task 14 consequently did not infer unconditional stability from append-only records; Tasks 14 and 14B instead characterize update classes and typed read/write conditions that preserve required diagnostics. Theorem 2 supplies the deterministic special case, while Theorem 5 supplies a countertheorem for comparison profiles under candidate expansion.
+
+### 13.1 Classical-pattern positioning
+
+Theorems 1 and 4 use classical patterns rather than claiming new general impossibility principles. Theorem 1 is a finite-observation indistinguishability argument in the convergence-versus-known-arrival tradition represented in this project's literature by Kelly (`Kelly1996`). Theorem 4 is an elementary stopping-time/local-change-of-measure argument in the sequential-testing setting initiated by Wald (`Wald1945`). The simultaneous-coverage premise used around Theorem 3 has classical confidence-sequence precedents in Darling and Robbins (`DarlingRobbins1967`) and Robbins (`Robbins1970`). Bahadur and Savage (`BahadurSavage1956`) prove a different, source-specific nonexistence result for broad nonparametric problems; it is related context, not a theorem imported here.
+
+The project-specific content lies in the typed continuation semantics, profile lifting, and especially the polarity-sensitive open-library result: supported finite-library non-domination remains defeasible under valid dominator extension, while a persistent dominator can stabilize refutation. [`08b_audit_repairs.md`](08b_audit_repairs.md) records the exact transfer boundary and verified metadata.
 
 ## 14. Theorem and countermodel audit
 
 | item | classification | principal assumptions | contribution |
 |---|---|---|---|
-| Theorem 1 | impossibility theorem | same finite state; one live alternative; stage-local verifier | separates present evidence from certifiable permanent stability |
+| Theorem 1 | classical-pattern impossibility restated in the license setting | same finite state; one live alternative; stage-local verifier | separates present evidence from certifiable permanent stability |
 | Theorem 2 | sufficient-condition theorem | deterministic evaluator; complete frozen dependencies and rules | identifies when internal stability certification is legitimate |
 | Theorem 3 | convergence theorem | eventual coverage; shrinking regions; nonzero margin | establishes pathwise statistical stabilization |
-| Theorem 4 | impossibility theorem | opposite regimes; finite-prefix mutual absolute continuity | rules out uniform zero-error finite arrival announcements |
+| Theorem 4 | classical sequential-decision pattern restated in the license setting | adapted stopping rule; opposite regimes; finite-prefix mutual absolute continuity | rules out uniform zero-error finite regime declarations |
 | Theorem 5 | impossibility theorem | supported comparison; valid history-preserving dominator extension | establishes positive open-library non-finality |
 | Proposition 6 | counterexample to overstatement | persistent existing dominator | refutes polarity-unrestricted comparison instability |
 | Countermodels 9.1–9.5 | separation results | explicit continuation patterns | separate extendability, convergence, profiles, and finality |
 
-Definitions such as `StableNow` and the observation that a live alternative negates it do not count by themselves as theorem weight. The substantive content is in the sufficient conditions and constructed indistinguishable or defeating continuations.
+Definitions such as `StableNow` and the observation that a live alternative negates it do not count by themselves as theorem weight. The classical-pattern results receive no novelty credit by renaming. The package's project contribution is the integration with typed licenses, profile transport, and the directional comparison construction.
 
 ## 15. Decisions fixed by Task 12
 

@@ -4,13 +4,13 @@ Date: 2026-07-12
 
 Trigger: completion of Tasks 14 and 14A, supplemented by the external audit in [`llm_convos/claude_audit_2026-07-12.md`](../../llm_convos/claude_audit_2026-07-12.md)
 
-Status: completed and amended by project-author guidance; Tasks 14B and 14C precede Task 15
+Status: completed and amended by project-author guidance; Task 14B completed, Task 14C next
 
 ## Durable checkpoint result
 
 The compact calculus is coherent enough to support a neural correspondence, and its mathematical center is no longer a record schema. The paper-level object remains the request `(s,e,q,P)` over the three principal carriers `E,Q,S`, with `W` semantic, `WF` separate from meaningful `K_3` atom values, and profiles supplying finite consumer queries. The quantitative atlas/router machinery remains an extension.
 
-The theorem bar is nevertheless only conditionally cleared. The profile soundness/relative-completeness cluster is a genuine logic result. The open-ended stability package is usable after small precision fixes and explicit attribution of its classical indistinguishability and sequential-decision patterns. The update-persistence characterization does not yet count as a theorem of the concrete calculus: its graph assumptions currently stipulate accurate influence without proving that the frozen atom clauses induce such a graph. A new Task 14B will close exactly this gap and repair the executable/reference-level defects found by the audit. This original checkpoint decision commissions no broader expansion *inside Task 14B*; the later author amendment deliberately adds the separate, bounded Task 14C.
+The theorem bar was conditionally cleared at this checkpoint. The profile soundness/relative-completeness cluster was a genuine logic result; the open-ended stability package needed small precision fixes and explicit attribution of its classical indistinguishability and sequential-decision patterns; and the update-persistence characterization did not yet count as a theorem of the concrete calculus because its graph assumptions stipulated accurate influence. Task 14B has since closed exactly this gap and repaired the executable/reference-level defects without broader expansion. The later author amendment deliberately adds the separate, bounded Task 14C.
 
 The neural target is architecture-neutral and smaller than the complete formalism. A learned component should supply dependency-scoped atom sufficient statistics and calibrated uncertainty; exact metadata, `WF`, profile roles, `K_3` aggregation, active-set masking, fallback, and provenance identity normally remain symbolic or external. ReLU remains the reference witness for continuous piecewise-linear statistics. Monotone/lattice and hard mixture-of-experts models remain the leading comparators for monotonicity and discontinuous seams. The author amendment gives a graph/set model one concrete plan-DAG hypothesis, but Task 15 must operationalize it before Checkpoint C decides whether it merits training.
 
@@ -46,16 +46,16 @@ The following tally applies the project's own rule that definitions, renamed sta
 
 | cluster | checkpoint verdict | paper role |
 |---|---|---|
-| Profile refinement, soundness, and independent-fragment relative completeness | **Counts**, subject to the Task 14B base-local notation repair | Cleanest self-contained logic result; finite separator makes the limitation explicit |
-| Deterministic/statistical/open-library stability package | **Counts after Task 14B** | Classical finite-prefix and sequential-decision patterns are inputs; profile-indexed regime separation and the support/refutation asymmetry are the project-specific synthesis |
-| Observable-indexed update persistence | **Does not yet count** | The abstract graph theorem is correct, but a canonical atom-locality/change-completeness theorem is required to make it a result about this calculus |
+| Profile refinement, soundness, and independent-fragment relative completeness | **Counts; Task 14B repair complete** | Instantiation-fiber statement is the cleanest self-contained logic result; finite separator makes the limitation explicit |
+| Deterministic/statistical/open-library stability package | **Counts; Task 14B repair complete** | Classical finite-prefix and sequential-decision patterns are inputs; profile-indexed regime separation and the support/refutation asymmetry are the project-specific synthesis |
+| Typed locality and observable-indexed update persistence | **Counts; Task 14B complete** | Complete-diagnostic locality and canonical graph change-completeness make the abstract persistence result calculus-specific; necessity remains path-realizability-relative |
 | Query-induced diagnostic quotient and corrected `|V|` bound | Supporting representation bridge | Generic query-kernel characterization applied usefully to the calculus; not a standalone novelty headline |
 | `WF + K_3`, meet algebra, four outcomes, safety projections, tolerance monotonicity, fallback, heredity, coordinate separation | Infrastructure or finite sanity results | Necessary for correctness and interface economy; excluded from the headline count |
 | Subdomain, router, bridge, plan-DAG, and cocycle results | Load-bearing integration | Standard measure, partition, Lipschitz, perturbation, and graph machinery, honestly integrated with licenses; not counted as an independent novelty cluster |
 | Proof-carrying recursive plans and stratified system assessment | Pending Task 14C | Ambitious author-designated target; counts only if the project proves more than imported program-logic machinery and states the empirical-certificate boundary exactly |
 | ReLU realization and hard-seam obstruction | Pending Task 17 | Expected to be the most distinctive remaining formal cluster |
 
-Thus the project has one clean cluster, one repairable/positioning-dependent cluster, and one cluster awaiting a concrete locality theorem. Task 14B is a genuine repair gate. The later author-directed Task 14C is not added to inflate this tally: it answers the separate compositional-computation and system-license questions that must constrain the encoding. Unrelated metatheory merely to raise the theorem count remains rejected.
+Task 14B clears the three-cluster pre-neural bar: profile completeness, the repaired/classically positioned stability package, and the calculus-specific locality/update cluster. This is a minimum, not permission to stop theorem development. The later author-directed Task 14C is not added to inflate this tally: it answers the separate compositional-computation and system-license questions that must constrain the encoding. Unrelated metatheory merely to raise the theorem count remains rejected.
 
 ## What the neural layer must and need not represent
 
@@ -272,11 +272,11 @@ The profile/query quotient may remove redundant status distinctions for a fixed 
 
 | audit item | decision and owner |
 |---|---|
-| C11–C13 | Accepted; Task 14B repairs the stability statements/proofs and the base-local profile notation |
-| C14–C15 | Accepted; Task 14B adds invalid-trace behavior and enforces diagnostic sum exclusivity |
-| C16 | Accepted; Task 14B upgrades the impact witness to exercise the kernel and upgrades or explicitly demotes the arithmetic-only composition check |
-| S6 | Accepted and strengthened to typed query/key footprints, negative reads, and event writes; Task 14B proves locality/change-completeness |
-| S7/L6 | Accepted; Task 14B adds direct classical-pattern positioning and verified primary citations without demoting the project-specific package |
+| C11–C13 | Completed in Task 14B: repaired the stability statements/proofs and instantiation-fiber profile notation |
+| C14–C15 | Completed in Task 14B: invalid/missing search is open and diagnostic sum exclusivity is enforced |
+| C16 | Completed in Task 14B: both regressions now exercise actual states, diagnostics, and assessments |
+| S6 | Completed in Task 14B: typed query/key footprints, negative reads, event writes, locality, and change-completeness |
+| S7/L6 | Completed in Task 14B: direct classical-pattern positioning and verified primary citations without demoting the project-specific package |
 | S8 | Accepted; the strict tally above controls the roadmap |
 | S9 proof assistant | Narrow Lean fragment remains attractive but is deferred to Checkpoint D; it must not delay the distinctive neural theorem cluster |
 | S9 notation script | Not a proof gate. The Task 13 glossary remains canonical; Task 25/31 retain the notation audit. Automation may be added later if a stable machine-readable grammar justifies it |
@@ -289,7 +289,7 @@ Every unfinished item was reconsidered:
 
 | item | decision after Checkpoint B |
 |---|---|
-| **Task 14B** | **Added and next.** One bounded proof/reference repair; no new broad metatheory |
+| **Task 14B** | **Completed 2026-07-14.** One bounded proof/reference/kernel repair; no new principal carrier or broad metatheory |
 | **Task 14C** | **Added by project-author amendment.** Formalize theorem levels, proof-carrying recursive plans, license lifting, grounded provenance, stratified system assessment, and Curry–Howard limits before encodings freeze |
 | **Task 15** | Narrow to a query-family-specific neural/symbolic interface, dependency-scoped atom inputs, invariances, minimal versus audit-preserving codes, and typed `(payload, grade, evidence/provenance)` plan-node outputs. Graph/set structure now has one concrete hypothesis but remains a comparison to flattening |
 | **Task 16** | Keep ReLU as a hybrid statistic scorer, not an end-to-end status classifier. Separate content, quantitative grade, validity/missingness, and proof/provenance pointers; use symbolic verification/decoding and separately licensed selection. Permit score-as-content only under the Task 17 joint-sufficiency conditions |
@@ -316,18 +316,18 @@ Every unfinished item was reconsidered:
 
 ## Risks after this checkpoint
 
-1. Task 14B could become another schema exercise. Its success condition is a case-analysis theorem connecting actual atom reads and event writes to change-completeness, not a longer dependency record.
+1. **Closed by Task 14B.** The task produced a case-analysis theorem connecting actual atom reads and event writes to change-completeness, not merely a longer dependency record.
 2. Task 17 could prove only that ReLU networks are universal approximators. That would not meet the frozen exact/robust/seam targets.
 3. The query quotient could be misread as permission to discard diagnostics or as a neural-width lower bound. Both readings are now explicitly prohibited.
 4. The experiment could become an omnibus benchmark too small to test any claim well. The tiered design is now required.
 5. The two comparator candidates could create breadth without power. Checkpoint C must select by a concrete hypothesis and fairness budget.
-6. The project may still overstate classical stability patterns or standard transport mathematics. Task 14B and Task 31 own explicit attribution/classification checks.
+6. The project may still overstate classical stability patterns or standard transport mathematics. Task 14B establishes the current attribution boundaries; Task 31 must re-audit the final wording.
 7. A proof-carrying computation claim could silently treat an empirical bound or neural confidence as a deductive proof. Task 14C must type proof terms, accepted empirical certificates, and world bridges separately.
 8. Dual-use activations could turn arbitrary hidden features into post-hoc “adequacy” scores. Task 17 must prove joint sufficiency and scale semantics for the declared channels; otherwise the interpretation remains an empirical hypothesis.
 9. System-level licensing could become circular self-endorsement. Only grounded, stratified assessment is in scope; genuine cycles require explicit fixed-point semantics.
 
-## Revised next task
+## Revised next task after the Task 14B closure
 
-> **Task 14B — Repair and instantiate the theorem spine.**
+> **Task 14C — Formalize proof-carrying recursive plans and stratified system assessment.**
 
-Task 14C follows Task 14B. Checkpoint B stops here and does not begin either task.
+Task 14B was completed as the bounded repair specified here. This checkpoint amendment records that closure but does not begin Task 14C.

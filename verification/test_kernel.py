@@ -9,8 +9,11 @@ import verification.kernel as kernel
 from verification.kernel import (
     AtomValue,
     Diagnostic,
+    DiagnosticCompletenessError,
     Interval,
     Outcome,
+    assess_certified_undominated,
+    assess_relative_undefeated,
     assess_request,
     meet,
     open_atom,
@@ -82,14 +85,54 @@ class KernelTests(unittest.TestCase):
                 Diagnostic("atom", value, provenance=("node",), **extra)
         with self.assertRaises(ValueError):
             supported("atom", "proof", ())
+        mixed_payloads = (
+            dict(value=AtomValue.SUPPORTED, support=("w",), obstacles=("o",)),
+            dict(value=AtomValue.OPEN, obstacles=("o",), counterwitness=("c",)),
+            dict(value=AtomValue.REFUTED, counterwitness=("c",), support=("w",)),
+        )
+        for fields in mixed_payloads:
+            with self.subTest(fields=fields), self.assertRaises(ValueError):
+                Diagnostic("atom", provenance=("node",), **fields)
 
     def test_missing_required_atom_is_an_fixture_error_not_a_semantic_outcome(self) -> None:
         state = WITNESS.states["t0"]
         diagnostics = {key: dict(value) for key, value in state.diagnostics.items()}
         del diagnostics["r_t0_O_rely"]["trace"]
         broken = replace(state, diagnostics=diagnostics)
-        with self.assertRaises(KeyError):
+        with self.assertRaises(DiagnosticCompletenessError):
             assess_request(broken, "r_t0_O_rely")
+
+    def test_missing_report_diagnostic_is_also_an_invalid_fixture(self) -> None:
+        state = WITNESS.states["t0"]
+        diagnostics = {key: dict(value) for key, value in state.diagnostics.items()}
+        del diagnostics["r_t0_O_rely"]["comparison_report"]
+        broken = replace(state, diagnostics=diagnostics)
+        with self.assertRaisesRegex(DiagnosticCompletenessError, "open diagnostic"):
+            assess_request(broken, "r_t0_O_rely")
+
+    def test_invalid_or_missing_comparison_search_is_open(self) -> None:
+        constructors = (assess_relative_undefeated, assess_certified_undominated)
+        for constructor in constructors:
+            for validity, obstacle in ((False, "InvalidSearchTrace"), (None, "MissingSearchTrace")):
+                with self.subTest(constructor=constructor.__name__, validity=validity):
+                    diagnostic = constructor(
+                        "comparison",
+                        "K",
+                        ("search",),
+                        search_trace_valid=validity,
+                    )
+                    self.assertIs(diagnostic.value, AtomValue.OPEN)
+                    self.assertEqual(diagnostic.obstacles, (obstacle,))
+
+    def test_valid_dominator_refutes_even_if_search_trace_is_invalid(self) -> None:
+        diagnostic = assess_relative_undefeated(
+            "comparison",
+            "K",
+            ("pair",),
+            certified_dominators=("d",),
+            search_trace_valid=False,
+        )
+        self.assertIs(diagnostic.value, AtomValue.REFUTED)
 
     def test_safety_projection_preserves_the_counterwitness(self) -> None:
         assessment = WITNESS.assessment("t0", "r_t0_Q_rely")

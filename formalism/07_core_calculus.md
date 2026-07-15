@@ -10,6 +10,8 @@ Depends on: [`05a_integration.md`](05a_integration.md), [`06_open_endedness.md`]
 
 > **Task 14A extension notice.** [`08a_transport_routing.md`](08a_transport_routing.md) proves the measure-theoretic subdomain criterion, hard-router risk decomposition, Lipschitz bridge/blend bounds, finite plan-DAG sensitivity budget, and exact group-valued cycle/potential characterization. These remain typed extensions rather than new core carriers.
 
+> **Task 14B locality notice.** [`08b_audit_repairs.md`](08b_audit_repairs.md) derives finite typed query/read footprints and event/write footprints for the clauses below, proves complete-diagnostic locality by cases, and proves the canonical event-to-key-to-slot graph change-complete. These footprints are derived interfaces, not new principal carriers.
+
 ## Durable core summary
 
 This file replaces the historical implementation-level signature as the canonical paper-level calculus. It has three principal carriers:
@@ -564,7 +566,16 @@ For meaningful atom `a` in request `r`, let
 Dep_s(r,a) subseteq_fin Hist_s
 ```
 
-name the support, assumptions, verifier versions, and comparison/search nodes on which its diagnostic depends. The core exposes only this abstract dependency query and reachability/impact projection; a full DAG is an elaboration.
+name the current support, assumptions, verifier versions, and comparison/search nodes that explain its diagnostic. This present provenance is not by itself a complete future-influence map because it cannot name an absent certificate or pair record.
+
+Task 14B therefore derives a second implementation interface
+
+```text
+Read_s(r,i) subseteq_fin TypedKey_s
+Write(u)    subseteq_fin TypedKey
+```
+
+from the frozen slot-instantiation and atom-evaluation clauses. Collection-index keys encode negative reads, and every insertion/correction/invalidation event writes the relevant index. [`08b_audit_repairs.md`](08b_audit_repairs.md), Theorem 1, proves that agreement on `Read_s(r,i)` preserves the complete diagnostic; its canonical event-to-key-to-slot graph is consequently change-complete. `TypedKey`, `Read`, and `Write` are derived views of `s` and the event semantics, not added carriers of the core model.
 
 ### 10.3 Core update principles
 
@@ -581,7 +592,7 @@ If `WF(r)` and every required diagnostic of `r` are identical at `s` and `s'`, t
 
 **Proof.** The same finite required value vector has the same meet. `square`
 
-This is only an extensional sufficient condition. [`08_metatheory.md`](08_metatheory.md), Theorem 5 and Countertheorem 6, gives the observable-specific impact-cone characterization and shows why path absence is not necessary without path realizability.
+This is only an extensional sufficient condition. [`08b_audit_repairs.md`](08b_audit_repairs.md) proves the calculus-specific disjoint-write condition that preserves those diagnostics; [`08_metatheory.md`](08_metatheory.md), Theorem 5 and Countertheorem 6, gives the observable-specific impact-cone characterization and shows why path absence is not necessary without path realizability.
 
 ## 11. Two-sorted model semantics
 
@@ -750,7 +761,7 @@ This table is the canonical notation index. Later artifacts must record any deli
 | indistinguishable-prefix non-certifiability | continuation semantics | paper-carrying impossibility | proved Task 12 |
 | statistical stabilization / zero-error barrier | coverage, shrinkage, finite-prefix equivalence | convergence plus impossibility | proved Task 12 |
 | positive open-library non-finality | valid `AddModel` dominator continuation | paper-carrying impossibility | proved Task 12 |
-| robust update persistence | canonical read/write footprint, update class, path realizability | abstract observable-indexed characterization proved Task 14; calculus locality pending | Task 14B |
+| robust update persistence | canonical read/write footprint, update class, path realizability | typed locality and change-completeness plus observable-indexed characterization; necessity remains realizability-relative | proved Tasks 14 and 14B |
 | profile refinement relative completeness | typed atom rules, independent-atom models | new characterization with finite separator | proved Task 14 |
 | minimal diagnostic quotient and bit bound | realizable vectors, supported queries, singleton profiles; independence for `3^n` | new representation lower bound plus correction | proved/countermodeled Task 14 |
 | mode-scoped soundness | `<W,S>`, certificate-specific assumptions | conditional schema; universal factivity refuted | Task 14 |
@@ -761,7 +772,7 @@ This table is the canonical notation index. Later artifacts must record any deli
 | finite ReLU reference representation and hard-seam characterization | diagnostic quotient, CPWL assumptions | representation/impossibility cluster for one architecture class, not an optimality claim | Task 17 |
 | semantic/activation alignment | synthetic and later real examples | empirical hypothesis | Tasks 19–25 |
 
-Definitions and imported three-element lattice facts do not count as the project's paper-carrying theorem contribution. Coordinate indispensability protects the interface but is a finite separation result. Checkpoint B's strict tally counts the profile result, counts the Task 12 package after precision/positioning repair, and requires Task 14B to connect the abstract impact theorem to the operational clauses. Task 14A supplies load-bearing standard integration; Task 17's representation/seam cluster remains the prospective distinctive result.
+Definitions and imported three-element lattice facts do not count as the project's paper-carrying theorem contribution. Coordinate indispensability protects the interface but is a finite separation result. After Task 14B, Checkpoint B's strict tally counts the profile result, the repaired and classically positioned Task 12 package, and the calculus-specific typed-locality/update cluster. Task 14A supplies load-bearing standard integration; Task 17's representation/seam cluster remains the prospective distinctive result.
 
 ## 17. Decisions audited by Task 14
 
@@ -782,6 +793,7 @@ Definitions and imported three-element lattice facts do not count as the project
 15. Task 14 retained the frozen core rules and propagated every narrowed or refuted strengthening through the claim ledger.
 16. A core plan may elaborate into a finite well-founded component DAG, and evaluators may receive higher-order requests; cyclic evaluator/license dependence remains a fixed-point extension rather than an implicit core feature.
 17. Checkpoint B's project-author amendment asks Task 14C to strengthen finite reification into certificate-carrying computation and grounded/stratified assessment of a frozen value-logic implementation. It does not treat an empirical margin as a proof or admit circular self-authorization.
+18. Task 14B distinguishes explanatory provenance from future-influence footprints, proves the frozen atom clauses local to typed reads, and makes the canonical event/write graph change-complete. Necessity of path absence remains conditional on observable-specific path realizability.
 
 ## Task conclusion
 

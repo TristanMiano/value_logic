@@ -10,7 +10,7 @@ from itertools import product
 import math
 import unittest
 
-from verification.kernel import AtomValue, Outcome
+from verification.kernel import AtomValue, Interval, Outcome, assess_upper_bound
 
 
 VALUES = tuple(AtomValue)
@@ -65,6 +65,34 @@ class MetatheoryFiniteWitnessTests(unittest.TestCase):
         }
         self.assertEqual(len(signatures), 7)
 
+    def test_seven_vectors_have_concrete_region_atom_witnesses(self) -> None:
+        regions = (
+            (Interval(0.21, 0.22), Interval(0.21, 0.22)),
+            (Interval(0.06, 0.07), Interval(0.19, 0.21)),
+            (Interval(0.15, 0.18), Interval(0.15, 0.18)),
+            (None, Interval(0.21, 0.22)),
+            (None, None),
+            (Interval(0.04, 0.06), Interval(0.04, 0.06)),
+            (Interval(0.04, 0.05), Interval(0.04, 0.05)),
+        )
+        realized = {
+            (
+                assess_upper_bound("a", strict, 0.05, "ka", ("ka",)).value,
+                assess_upper_bound("b", weak, 0.20, "kb", ("kb",)).value,
+            )
+            for strict, weak in regions
+        }
+        expected = {
+            (AtomValue.REFUTED, AtomValue.REFUTED),
+            (AtomValue.REFUTED, AtomValue.OPEN),
+            (AtomValue.REFUTED, AtomValue.SUPPORTED),
+            (AtomValue.OPEN, AtomValue.REFUTED),
+            (AtomValue.OPEN, AtomValue.OPEN),
+            (AtomValue.OPEN, AtomValue.SUPPORTED),
+            (AtomValue.SUPPORTED, AtomValue.SUPPORTED),
+        }
+        self.assertEqual(realized, expected)
+
     def test_missing_profile_refinement_has_a_finite_separator(self) -> None:
         # Only atom 0 entails atom 1.  Requiring atom 1 therefore does not
         # syntactically refine a profile requiring atom 0.
@@ -72,22 +100,6 @@ class MetatheoryFiniteWitnessTests(unittest.TestCase):
         self.assertTrue(respects_support_refinements(separator, ((0, 1),)))
         self.assertEqual(profile_outcome(separator, (1,)), Outcome.GRANTED)
         self.assertEqual(profile_outcome(separator, (0,)), Outcome.WITHHELD)
-
-    def test_spurious_impact_path_does_not_preclude_invariance(self) -> None:
-        graph_reaches_atom = True
-        allowed_endpoint_values = (AtomValue.SUPPORTED,)
-        robustly_invariant = all(
-            value is AtomValue.SUPPORTED for value in allowed_endpoint_values
-        )
-        self.assertTrue(graph_reaches_atom)
-        self.assertTrue(robustly_invariant)
-
-    def test_component_adequacy_does_not_imply_composite_adequacy(self) -> None:
-        tolerance = 0.10
-        component_errors = (0.06, 0.06)
-        self.assertTrue(all(error <= tolerance for error in component_errors))
-        self.assertGreater(sum(component_errors), tolerance)
-
 
 if __name__ == "__main__":
     unittest.main()

@@ -306,7 +306,7 @@ The only pre-existing numbered bibliography was in `posts/utility_preference_log
 | 7 | omitted | Real paper, but dominance-complexity details are downstream of current scope. |
 | 8 | included | CP-nets metadata and DOI verified. |
 | 9–10 | omitted | Real adjacent qualitative-decision papers; not needed for the minimal verified map. |
-| 11–14 | partly included | Wald omitted; Gilboa–Schmeidler and Seidenfeld–Schervish–Kadane included. The inherited DOI for the latter was wrong; corrected to `10.1214/aos/1034713653`. |
+| 11–14 | partly included | Wald was omitted in Task 6 but added and verified in Task 14B for the repaired stopping-time theorem; Gilboa–Schmeidler and Seidenfeld–Schervish–Kadane are included. The inherited DOI for the latter was wrong; corrected to `10.1214/aos/1034713653`. |
 | 15–21 | omitted | Adjacent preference-change, robust-optimization, elicitation, planning, and likelihood sources; none is needed to support a core Task 6 conclusion. |
 | 22 | included/corrected | Logic Tensor Networks cited by its 2022 journal version and DOI, not only the 2020 arXiv version. |
 | 23 | included with caveat | Logical Neural Networks retained as a 2020 preprint; do not cite it as a journal theorem. |
@@ -407,6 +407,19 @@ Task 12A verified fifteen additional primary sources and records the full match/
 
 The only direct theorem import is the elementary Strong-Kleene finite-meet algebra after an explicit value relabeling. Every other relationship is structural or an elaboration template and requires a project-specific translation before source theorems apply.
 
+## 18. Task 14B sequential-analysis amendment
+
+Task 14B verified four additional primary sources for the repaired stability package:
+
+| source | verified role | transfer boundary |
+|---|---|---|
+| `Wald1945` | foundational stopping-time/sequential-test setting | supplies classical context, not the project's exact local-equivalence theorem |
+| `DarlingRobbins1967` | early confidence-sequence construction | supports the existence of simultaneous sequential regions, not validity of an arbitrary project certificate |
+| `Robbins1970` | sequential methods with time-uniform/LIL structure | classical context for confidence-sequence behavior; no source theorem is silently imported |
+| `BahadurSavage1956` | primary nonexistence result in broad nonparametric problems | related impossibility, but stronger and hypothesis-specific; not identified with Task 12 Theorem 4 |
+
+Together with `Kelly1996`, these sources require Task 12's finite-prefix and zero-error stopping arguments to be presented as classical patterns restated in the license-continuation setting. The project-specific content is the typed integration with profile-indexed assessment and the directional open-library result. [`formalism/08b_audit_repairs.md`](../formalism/08b_audit_repairs.md) records the repaired hypotheses and novelty classification.
+
 ## Task conclusion
 
-Task 6 established the initial verified bibliography and division of intellectual labor among neighboring fields. Task 12A closes the core-related gaps around output production, explicit evidence, awareness, partiality, conformal validity, and safe baseline improvement. The strongest immediate foundations are now AGM/KLM for revision, input/output logic for non-truth-producing consequence structure, Strong Kleene for the meaningful meet algebra, Gold/Kelly for convergence without known arrival, selective/conformal prediction and safe policy improvement for operational uncertainty and fallback, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, and IRL for nonidentifiability constraints. Their non-algebraic theorems remain source-specific until an exact translation is proved.
+Task 6 established the initial verified bibliography and division of intellectual labor among neighboring fields. Task 12A closes the core-related gaps around output production, explicit evidence, awareness, partiality, conformal validity, and safe baseline improvement; Task 14B adds the precise sequential-analysis context needed by the stability package. The strongest immediate foundations are now AGM/KLM for revision, input/output logic for non-truth-producing consequence structure, Strong Kleene for the meaningful meet algebra, Gold/Kelly for convergence without known arrival, Wald/Darling–Robbins/Robbins for sequential testing and confidence sequences, selective/conformal prediction and safe policy improvement for operational uncertainty and fallback, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, and IRL for nonidentifiability constraints. Their non-algebraic theorems remain source-specific until an exact translation is proved.
