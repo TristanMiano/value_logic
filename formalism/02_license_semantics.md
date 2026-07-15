@@ -1223,7 +1223,7 @@ Task 8 intentionally leaves the following to later tasks:
 - the formal scalar/Pareto dominance relation, retention theorem, and distribution-aware domain splitting (Task 10);
 - bridge composition and atlas coverage (Task 11);
 - long-run stability, convergence, and non-finality (Tasks 12–14);
-- neural approximation of certificate, margin, and routing components (Tasks 15–18).
+- neural approximation of certificate-relative statistics, margins, and routing components under the Task 15 external-checker boundary (Tasks 16–18).
 
 Task 10 replaces the provisional `CertDominates` relation with typed scalar and Pareto definitions over eligible use plans. Task 11A then selects mandatory profile-indexed licensing: the full conjunction defined in this file is the named strong profile `P_full^8`, while other `Lic_P` profiles may omit required comparison closure. The core calculus must import the scoped dominance atom and the profile mapping rather than retain the placeholder or bare `Lic`.
 

@@ -114,7 +114,7 @@ The same construction can hide the bad region inside one member of any coarse fi
 
 Theorem 1 concludes an almost-sure, not everywhere, bound. Changing loss on a null set does not change any positive-measure conditional expectation. If a router or analyst chooses `A` using the same evaluation data, the population identity remains true for the resulting measurable set, but a finite-sample certificate needs simultaneous validity, sample splitting, or another selection-aware procedure. Measurability alone is not an operational answer to post-selection.
 
-**Project impact.** Aggregate expected adequacy must not be silently copied to learned subdomains. Task 15 must encode certificate scope, and the experiment must distinguish whole-domain evidence, prespecified-cell evidence, and pointwise/uniform support.
+**Project impact.** Aggregate expected adequacy must not be silently copied to learned subdomains. Task 15's exact atom address now retains certificate scope and risk functional; the experiment must distinguish whole-domain evidence, prespecified-cell evidence, and pointwise/uniform support.
 
 ## 3. Hard-router risk decomposition
 

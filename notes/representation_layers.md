@@ -958,7 +958,7 @@ Task 8 must define how statistical calibration turns predicted risk into a licen
 
 Task 10 must define scalar versus Pareto admissibility.
 
-Task 15 must compare model-ID, functional, loss-profile, structural, and hidden-state encodings experimentally.
+Task 15 compares model-ID, functional, loss-profile, and structural encodings at the interface level in [`ml/01_encodings.md`](../ml/01_encodings.md). Empirical comparison remains for the later experiment; hidden-state interpretation additionally requires the alignment tests fixed there.
 
 Task 16 must select the architecture, signed-score access, boundary convention, and abstention mechanism.
 
