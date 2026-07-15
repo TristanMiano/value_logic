@@ -330,4 +330,4 @@ Every unfinished item was reconsidered:
 
 > **Task 18 — Decide the training objective.**
 
-Tasks 14B–17 are complete. Task 18 must now choose a structured objective and simple baseline for the fixed sufficient-statistic, calibration, atom, and routing targets without treating optimization success as a proof or training a production self-grant head.
+Tasks 14B–17 were complete at this checkpoint. Task 18 has since chosen the structured statistic/interval objective, held-out calibration path, independent atom-classification baseline, and separate router loss without treating optimization success as a proof or training a production self-grant head; Checkpoint C now audits the combined blueprint.

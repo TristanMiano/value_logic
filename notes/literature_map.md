@@ -153,6 +153,8 @@ Preference formalisms can order candidate models or actions, but they do not tur
 - `Chow1957` and `Chow1970` — decision-theoretic reject options and optimal error/reject tradeoffs in classical recognition settings. **Core** for a fallback/reject action whose cost induces a threshold.
 - `ElYanivWiener2010` — selective classification and risk–coverage curves. **Core** for separating coverage from risk.
 - `GeifmanElYaniv2019` — an integrated neural reject option. **Core/bridge** for jointly learned prediction and selection.
+- `GneitingRaftery2007` — proper scoring rules and the interval score. **Core/bridge** for training a declared statistic/uncertainty target without identifying optimization with certification.
+- `AngelopoulosEtAl2024` — conformal control of expected monotone losses under its stated bounded-loss/calibration assumptions. **Bridge** for a possible direct risk-certificate mode, not an automatic consequence of ordinary conformal coverage.
 
 ### Direct relevance to `epsilon`
 
@@ -169,6 +171,8 @@ For the project, define a selective predictor as `(f,g)` where `f` predicts/rout
 ### Limitation
 
 Selective classification usually returns one label or rejects. The proposed system must additionally retain all adequate models, record overlapping licenses, and distinguish active set from selected model. Selective prediction supplies the gap behavior, not the entire atlas logic.
+
+Task 18 therefore adopts only the components that match the typed interface: an interval score for the learned center–radius proposal, a separately checked held-out calibration record, and joint reporting of coverage, selective risk, and fallback-inclusive deployed risk. The production active set remains externally decoded before selection.
 
 ## 7. Mixture-of-experts and model routing
 

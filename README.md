@@ -75,6 +75,8 @@ Task 14B closed Checkpoint B's focused repair gate. It proved every frozen atom 
 
 [`Task 17`](ml/03_representation_theorems.md) now supplies the representation theorem spine: exact status/audit factorization, conservative robust decoding, finite CPWL/ReLU realization, the hard-seam characterization and discontinuity obstruction, fixed-versus-expandable library limits, a minimal named dual-use channel construction with scale and boundary counterexamples, and exact proof-erased finite-plan payload/grade computation. These results preserve the external evidence, decoder, certificate, mask, and fallback boundary and do not claim learnability or semantic alignment.
 
-The current next step is Task 18: choose the structured training objective and simple baseline against this fixed representation target. ReLU remains a reference witness rather than a unique or presumptively optimal architecture.
+[`Task 18`](ml/04_losses.md) now fixes the learning contract: standardized schema-balanced center–radius statistic regression plus interval scoring, disjoint held-out calibration, exact polarity-aware symbolic decoding, conservative learned rejection, independent atom cross-entropy as a nonauthorizing baseline, and separate exact-mask router ranking with risk–coverage/fallback accounting.
+
+The current next step is Checkpoint C: reassess the complete neural representation/objective blueprint and select at most one adequately powered architecture comparison. ReLU remains a reference witness rather than a unique or presumptively optimal architecture.
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.

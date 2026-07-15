@@ -962,7 +962,7 @@ Task 15 compares model-ID, functional, loss-profile, and structural encodings at
 
 Task 16 now selects the hybrid architecture, signed and paired-score access, inclusive-support/strict-refutation boundary convention, and active-mask fallback mechanism in [`ml/02_relu_architecture.md`](../ml/02_relu_architecture.md).
 
-Task 18 must select losses for risk prediction, calibration, routing, and optional representation alignment.
+Task 18's [`../ml/04_losses.md`](../ml/04_losses.md) selects standardized center–radius statistic/interval training, disjoint held-out residual calibration, independent atom cross-entropy as the baseline, separate exact-mask router ranking, and optional representation-alignment probes outside authorization.
 
 Task 23 must test whether a recovered value/license representation aligns with the internal representations of the companion policy network rather than merely matching its actions.
 

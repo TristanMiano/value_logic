@@ -2,7 +2,7 @@
 
 Created: 2026-07-14
 Task: TODO Task 16
-Status: reference architecture fixed; representation results completed in Task 17; training objective remains Task 18
+Status: reference architecture fixed; representation results completed in Task 17; training objective completed in Task 18
 
 ## Executive decision
 
@@ -36,7 +36,7 @@ but `z=0` does not distinguish supported equality from open, refuted, missing, i
 
 The architecture admits the author's dual-use intuition in a deliberately narrow way. Named hypothesis channels with common normalization and accepted calibration may use `z_i` both as positive certificate-relative slack and as an input to a declared downstream computation. That computation is itself a plan to be evaluated. Arbitrary hidden units receive no adequacy interpretation, and variable expert payloads are not multiplied by margin magnitude as a semantics-free gate.
 
-This task fixes the construction. Task 17's [`03_representation_theorems.md`](03_representation_theorems.md) now proves the exact CPWL, robust decoding, seam, expandable-library, joint-sufficiency, and annotated-plan claims at their scoped strengths. Task 18 must choose how to train and calibrate the proposed heads.
+This task fixes the construction. Task 17's [`03_representation_theorems.md`](03_representation_theorems.md) now proves the exact CPWL, robust decoding, seam, expandable-library, joint-sufficiency, and annotated-plan claims at their scoped strengths. Task 18's [`04_losses.md`](04_losses.md) now selects standardized center–radius training, held-out residual calibration, the atom-classification baseline, and the separate router objective.
 
 ## 1. The system boundary
 

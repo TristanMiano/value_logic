@@ -855,7 +855,7 @@ Task 10 must replace scalar best-known comparison with Pareto dominance where re
 
 Task 16 now fixes inclusive support, strict refutation, conservative open error bands, and retained signed/paired-ReLU channels in [`ml/02_relu_architecture.md`](../ml/02_relu_architecture.md).
 
-Task 18 must decide whether cross-entropy trains adequacy, model selection, policy imitation, or some combination; these are not the same target.
+Task 18's [`../ml/04_losses.md`](../ml/04_losses.md) resolves this boundary: independent atom cross-entropy is a frozen-state fidelity baseline, structured statistic/interval loss trains adequacy-relevant quantitative proposals, and a separate masked ranking loss trains post-license selection. None is policy imitation unless a later task explicitly declares that target.
 
 ## Task conclusion
 

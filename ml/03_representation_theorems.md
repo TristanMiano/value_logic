@@ -893,6 +893,8 @@ statistics and proof-erased finite-plan computations, and named positive
 margin channels can legitimately serve as both adequacy surplus and downstream
 features. It cannot directly supply discrete boundary semantics, evidence
 validity, global open-library closure, discontinuous hard seams, certificates,
-or arbitrary computational payloads. Task 18 can now choose a training
-objective against this fixed target without confusing optimization success
-with any of those guarantees.
+or arbitrary computational payloads. Task 18's
+[`04_losses.md`](04_losses.md) now chooses the structured training objective,
+held-out calibration path, atom cross-entropy baseline, and separate router
+loss against this fixed target without confusing optimization success with any
+of those guarantees.
