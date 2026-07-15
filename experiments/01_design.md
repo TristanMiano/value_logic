@@ -1,11 +1,14 @@
 # Preregistration: the decisive value-logic experiment
 
-Status: **Task 19 design frozen in prose; no generator, learner, pilot, or final
-world has been implemented or inspected.** Task 19A may use only its disjoint
-pilot bank to replace the sample-size variables below by numbers, validate that
-the construction realizes the registered strata, and freeze a machine-readable
-protocol. Any substantive change requires a dated amendment before final-world
-generation.
+Status: **Task 19 prose preregistration and Task 19A generator-only pilot are
+complete.** The versioned machine-readable protocol is
+[`protocol_v1.json`](protocol_v1.json). No learner or production-role world was
+materialized, and final confirmation remains embargoed. Task 19A made two
+prospective amendments before production generation: paired-difference
+certificates now carry the later-dominance claim, and conservative
+design-alternative variance bounds replace an impossible pre-learner estimate
+of learned-arm paired variance. Any later substantive change requires a dated
+versioned amendment.
 
 This document preregisters one minimum publishable comparison and separates two
 optional extensions. It is a design for a synthetic semantics experiment, not
@@ -301,10 +304,20 @@ new valid two-sided evidence `U_J(O)=[.23,.25]` refutes `A`, so the request is
 is supported at equality. No learner is retrained.
 
 At stage 3, let `N` have `U_J=[.08,.12]`, `U_T=[40,44]` on the registered
-overlap/high region. Checked finite-set comparisons make `N` dominate the
-displayed `O/S` alternatives there and its scope fills the earlier extreme
-gap. `O` and `S` remain recorded; dominance changes comparative use, not their
-historical identity or every basic reliance judgment.
+overlap/high region. Those marginal intervals overlap the displayed `O/S`
+intervals and therefore do **not** alone prove strict componentwise dominance.
+Task 19A amendment `19A-A1` supplies checked paired-difference certificates
+
+```text
+J(N)-J(O) in [-.10,-.02],   T(N)-T(O) in [-7,-.5] ms,
+J(N)-J(S) in [-.08,-.005],  T(N)-T(S) in [-8,-.5] ms.
+```
+
+Their upper endpoints are strictly negative, so they certify dominance over
+the exact displayed finite set while permitting correlated marginal evidence.
+`N`'s scope fills the earlier extreme gap. `O` and `S` remain recorded;
+dominance changes comparative use, not their historical identity or every
+basic reliance judgment.
 
 ## 4. Scorer input firewall
 
@@ -579,10 +592,9 @@ a prospective amendment must replace it before final manifests exist.
 
 ## 11. Power and sample-size rule
 
-Task 19 fixes the rule, not the numerical `N`; Task 19A estimates its nuisance
-quantities only from disjoint pilot worlds. For each paired mean endpoint `e`,
-let `s_e,U` be the upper 95% confidence limit for the pilot standard deviation
-of per-world paired differences. With target power `.90`, use
+Task 19 fixes the rule before the numerical `N`. For each paired mean endpoint
+`e`, let `s_e,U` be the registered planning upper bound for the standard
+deviation of per-world paired differences. With target power `.90`, use
 
 ```text
 N_e = ceil(1.15 (z_(1-alpha_e)+z_.90)^2 s_e,U^2 / delta_e^2),
@@ -595,26 +607,40 @@ alternative `.10`; for the in-regime noninferiority gate use `alpha_e=.05`
 and `delta_e=.02`, the distance from `-.02` to the design alternative `0`.
 Power is computed on target-weighted world scores.
 
+Task 19A amendment `19A-A2` records that a generator-only pilot cannot observe
+paired differences from learners that Task 20 has not implemented. It would be
+misleading to manufacture proxy-arm results and call their SD a pilot estimate.
+The frozen protocol instead uses the largest Bernoulli-pair SD compatible with
+the registered design alternatives: `sqrt(.29)=.538516` for structured `.90`
+versus CE `.80` on the superiority endpoints, and `sqrt(.20)=.447214` for
+`.90` versus `.90` on the noninferiority guard. Coverage uses the more
+conservative of the observed oracle-balance pilot SD bound and worst complete
+within-world clustering at `p=.90`, namely `.30`. These are power-planning
+assumptions, not observed learner effects.
+
 For each `F36` group, compute the one-sample world-clustered coverage size for
 90% power against `H0:p<=.88` at design `p=.90`, one-sided `.025`, and also the
 size required for a 95% interval half-width at most `.02`. The pilot intraworld
 correlation and fixed per-world panel determine the effective variance; atom
 rows are never inserted as independent Bernoulli trials.
 
-Let `N_final` be the maximum of all core requirements, rounded up to a whole
-block, with a floor of **400 independent final worlds** and a cap of **5,000**.
+The resulting endpoint counts are 1,402 worlds for each superiority endpoint,
+4,925 for the in-regime guard, and 2,719 for each coverage group. Let `N_final`
+be the maximum of all core requirements, rounded up to a whole block, with a
+floor of **400 independent final worlds** and a cap of **5,000**.
 If the rule exceeds 5,000, Task 19A declares the core infeasible and records a
 versioned redesign; it may not shrink the effect margin or claim adequate power
 after looking at final outcomes.
 
-Role sizes are then frozen as
+Rounding 4,925 to the frozen 100-world block gives `N_final=5,000`. Role sizes
+are therefore frozen as
 
 ```text
-train worlds       = max(4 N_final, 2000)
-calibration worlds = max(N_final, 1000), with >=200 worlds per J/T group
-validation worlds  = N_final
-system-audit worlds= N_final
-confirmation worlds= N_final.
+train worlds       = 20,000 (16,000 fit; 4,000 internal selection)
+calibration worlds = 5,000, with >=200 worlds per J/T group
+validation worlds  = 5,000
+system-audit worlds= 5,000
+confirmation worlds=5,000.
 ```
 
 Eight paired fit seeds are used for every trained arm and required ablation.
@@ -629,11 +655,16 @@ seeds can never be promoted to a final role. Fit seeds are paired across arms;
 data-order and initialization coupling is recorded, with head-specific random
 draws isolated after the shared prefix.
 
-Training epoch caps, patience, learning-rate schedules, hyperparameter grids,
-and tie breakers are selected using train plus reject/router validation (and
-the disjoint Task 19A pilot for feasibility), then frozen. Calibration labels
-cannot choose a scorer; system-audit outcomes cannot tune a component. No
-optional stopping uses a confirmatory metric.
+The training-role roots are prospectively divided 80/20 into fitting and
+internal model selection. Scorer hyperparameters use only that internal
+selection partition; reject/router validation remains reserved for rejection
+and routing and cannot alter the scorer or envelope. The frozen grid is 18
+trials: learning rate in `{.0003,.001,.003}`, weight decay in
+`{0,.0001,.001}`, and trainable-parameter budget in `{12,000,20,000}` under
+AdamW, batch size 512, maximum 200 epochs, patience 20, minimum validation
+improvement `1e-5`, and gradient-norm clip 1.0. Calibration labels cannot
+choose a scorer; system-audit outcomes cannot tune a component. No optional
+stopping uses a confirmatory metric.
 
 Task 19A creates and hashes the final role manifests without generating a
 readable result summary. Task 21 runs the fully frozen confirmation entry point
@@ -726,6 +757,12 @@ human-readable rendering for the narrative fixture.
 
 ## 16. Optional routing/seam extension: hard MoE
 
+**Task 19A gate result: prospectively omitted.** The pilot contains no
+independent conforming/mismatched seam generator or defensible paired
+interaction-variance estimate, and adding one would displace the minimum core.
+No absence or negative result is inferred; this remains a future study against
+the frozen interface.
+
 This extension is omitted prospectively unless Task 19A shows 90% power for a
 paired architecture-by-seam interaction with at least 100 independent
 conforming seams and 100 independent mismatched seams in each evaluated role.
@@ -750,6 +787,13 @@ power/runtime gate fails or the extension would reduce core resources, hard
 MoE is omitted rather than run underpowered.
 
 ## 17. Optional certificate-carrying system extension
+
+**Task 19A gate result: deterministic integration witness only.** The
+root-count condition passes, but no Task 20 learned-grade adapter or empirical
+false-grant variance yet exists. The powered empirical comparison is therefore
+not activated. Existing and Task 20 regressions may exercise proof erasure,
+adapter/checker acceptance, invalid local certificates, cycle rejection, and
+audit/confirmation separation without marketing them as a powered result.
 
 This extension uses finite acyclic plan graphs only. Learned nodes may emit a
 typed payload and quantitative grade proposal. A registered adapter converts
@@ -796,6 +840,12 @@ Checkpoint C1 adjudicates `F35`, `F36`, optional extensions, and their project
 impacts separately. No post-hoc result may be relabeled preregistered.
 
 ## 20. Task 19A acceptance checklist
+
+Status: **passed on 256 pilot-only roots**; see
+[`00_pilot.md`](00_pilot.md) and
+[`pilot_results_v1.json`](pilot_results_v1.json). Production manifests contain
+only deterministic identifiers and hashes; their world payloads remain
+unmaterialized.
 
 Before Task 20 may implement learners, Task 19A must show on pilot-only roots
 that:
