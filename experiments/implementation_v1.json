@@ -1,0 +1,213 @@
+{
+  "implementation_version": "value-logic-implementation-v1.0.0",
+  "status": "frozen_before_any_production_or_final_payload",
+  "frozen_date": "2026-07-14",
+  "protocol_version": "value-logic-experiment-v1.0.0",
+  "protocol_sha256": "3467f5e2041e702d86855c72de34deb4b408240ed06a1d25418772e959f35ef4",
+  "manifests_sha256": "0819522ef0222e4dc6111f7434da68008179fcb93ea9668fe41ce92b200e3245",
+  "source_sha256": {
+    "learner.py": "58931c49e199e30940686a8c0c6deaabcfeb402c03892466563267bedae02f57",
+    "implementation.py": "bc49b8414ec3a7176e0a6cec2efbf0371c5abe8cdea0a6a982e499df2dc0a750",
+    "system_witness.py": "2def821edb440a7438046ed63909a952a716d71740a2b17b82a9f29248932031",
+    "run_experiment.py": "88f76138808067faa8ed1baa2134718a76ad0ce53b18bdd2391ee1ce21daf8ea"
+  },
+  "runtime": {
+    "python": "3.13.3",
+    "torch": "2.8.0+cpu",
+    "numpy": "2.2.5",
+    "deterministic_algorithms": true,
+    "torch_threads": 1,
+    "device": "cpu"
+  },
+  "features": {
+    "normalization_id": "task20-fixed-units-v1",
+    "schema_scales": {
+      "J": 0.1,
+      "T": 10.0
+    },
+    "closed_count": 25,
+    "ordered_names": [
+      "x",
+      "complexity",
+      "difficulty",
+      "stage_scaled",
+      "threshold_scaled",
+      "delta_scaled",
+      "fallback_scaled",
+      "well_formed",
+      "evidence_present",
+      "evidence_valid",
+      "evidence_current",
+      "checker_accepted",
+      "can_support",
+      "can_refute",
+      "evidence_width_design",
+      "plan_O",
+      "plan_S",
+      "plan_N",
+      "plan_F",
+      "schema_J",
+      "schema_T",
+      "mode_two_sided",
+      "mode_upper_only",
+      "mode_lower_only",
+      "mode_empirical_only"
+    ],
+    "learner_imports_generator_or_oracle": false,
+    "target_weight": "atom-stratum ratio times context-cell ratio"
+  },
+  "architectures": {
+    "hidden_layers": 2,
+    "activation": "ReLU",
+    "structured_head": "one affine vector head ordered center_J,radius_J,center_T,radius_T; radius coordinates rectified",
+    "cross_entropy_head": "one affine three-logit K3 head on an atom-conditioned row",
+    "capacity_options": {
+      "12000": {
+        "structured": {
+          "width": 96,
+          "parameters": 12196,
+          "flops": 24192
+        },
+        "cross_entropy": {
+          "width": 96,
+          "parameters": 12099,
+          "flops": 24000
+        },
+        "mismatch_fraction": 0.007953427353230568
+      },
+      "20000": {
+        "structured": {
+          "width": 127,
+          "parameters": 20070,
+          "flops": 39878
+        },
+        "cross_entropy": {
+          "width": 128,
+          "parameters": 20227,
+          "flops": 40192
+        },
+        "mismatch_fraction": 0.007762890195283532
+      }
+    }
+  },
+  "optimization_clarifications": {
+    "20-A1": "The registered 200-epoch structured maximum is split prospectively into at most 100 center epochs followed by at most 100 radius epochs. The trunk and center rows are restored exactly during radius optimization, so the center mapping remains frozen.",
+    "20-A2": "The registered batch size is 512 independent worlds. Each epoch takes one J and one T probe per selected world under a deterministic cycle that covers all 80 panel positions; validation is every 5 epochs and patience remains 20 epochs.",
+    "20-A3": "All 18 grid points are run once per arm with selection seed 101. A common final parameter budget minimizes summed within-arm relative regret; each arm chooses its own learning rate and weight decay within that shared budget. Eight paired final fits then use seeds 101,211,307,401,503,601,701,809.",
+    "20-A4": "Calibration uses exactly one pre-target hash-selected eligible probe per schema per calibration world, sampled proportional to the frozen joint target/design weight. Thus each schema has 5000 independent calibration scores rather than treating 200000 correlated atom rows as exchangeable.",
+    "20-A5": "The boundary endpoint is a deterministic four-query panel at upper+0.25 sigma, upper equality, midpoint crossing, and lower-0.25 sigma over the same frozen world/plan/statistic law; the random strict strata alone have probability zero of exactly realizing the .25 cutoff.",
+    "20-A6": "Tolerance transfer shifts each original declared threshold by d sigma for d in {-2,-1.5,1.5,2}. Monotonic upper-bound semantics structurally exclude Supported cells at negative shifts and Refuted cells at positive shifts, so the macro average is over the 16 realized schema/state/offset cells, not eight impossible Cartesian cells. No margin or null is changed.",
+    "20-A7": "Paired arms draw a common parent trunk per fit seed and slice the declared width; arm-specific head streams are isolated. At the 20k budget the 127-wide structured trunk is the exact shared prefix of the 128-wide CE trunk."
+  },
+  "calibration": {
+    "alpha": 0.1,
+    "groups": [
+      "J",
+      "T"
+    ],
+    "independent_unit": "world root",
+    "scores_per_world_per_group": 1,
+    "selection_hash": "sha256(calibration-row-v1|world_index|schema)",
+    "structured_and_center_only_get_distinct_bound_calibrators": true,
+    "unbounded_proposal_counts_covered_but_forces_Open": true
+  },
+  "required_ablations": {
+    "structured": "accepted learned radius plus held-out expansion",
+    "cross_entropy": "independent direct K3 logits with exact usability/polarity overrides",
+    "center_only": "zero learned radius plus its own common-convention accepted held-out expansion",
+    "unaccepted_radius": "production value always Open; shadow K3 reported only for fit comparison",
+    "self_confidence": "intentionally invalid confidence-as-authorization; production_active is always false"
+  },
+  "semantic_boundary": {
+    "exact_after_learning": [
+      "WF",
+      "evidence presence, validity, currency, checker binding, and polarity",
+      "inclusive support and strict refutation",
+      "indexed K3 diagnostics",
+      "profile meet and four public outcomes",
+      "simultaneous active sets and empty-set fallback",
+      "exact active masking and inactive selection probability zero"
+    ],
+    "F18_required": true,
+    "positive_relu_meaning": "only positive preactivation or a specifically named positive margin; never a grant by itself",
+    "zero_meaning": "no unique logical state"
+  },
+  "routing": {
+    "kind": "fixed post-license exact-mask selection",
+    "learned_reject_or_router_threshold": false,
+    "validation_role_needed": false,
+    "tie_order": [
+      "N",
+      "S",
+      "O"
+    ],
+    "empty_active_set": "F",
+    "inactive_selection_rate_required": 0.0
+  },
+  "trace_schema": {
+    "format": "100-world per-fit-seed compressed NPZ shards plus this schema and deterministic manifest regeneration",
+    "identity": "role, fit seed, shard world range, row order, frozen generator, and manifests recover world/trajectory/provenance/plan-family roots and atom/request addresses",
+    "coding": {
+      "K3": {
+        "0": "Refuted",
+        "1": "Open",
+        "2": "Supported"
+      },
+      "Outcome": {
+        "0": "Undefined",
+        "1": "Refused",
+        "2": "Withheld",
+        "3": "Granted"
+      },
+      "Plan": {
+        "0": "O",
+        "1": "S",
+        "2": "N",
+        "3": "F"
+      }
+    },
+    "contains": [
+      "raw structured vector and CE logits",
+      "reference and predicted K3 for in-regime, boundary, and transfer panels",
+      "signed support/refutation margins and paired ReLUs",
+      "center-only, unaccepted-shadow, unaccepted-production, and invalid-self-confidence states",
+      "request atom K3, WF-derived public outcomes, exact masks, and routes",
+      "fit/model/calibration hashes through fit marker and shard manifest"
+    ],
+    "evaluation_join": "reference columns are joined only after model fitting/calibration and final prediction; no joined column is a scorer input"
+  },
+  "system_extension": {
+    "evidence_grade": "deterministic_integration_witness_only",
+    "learned_grade_is_certificate": false,
+    "covers": [
+      "typed payload/grade/evidence",
+      "external learned-grade adapter binding",
+      "composite-certificate transformer",
+      "proof erasure",
+      "grounded dependencies",
+      "strict evaluation ranks",
+      "invalid local certificate and cycle rejection",
+      "audit/confirmation lineage separation"
+    ],
+    "powered_empirical_claim": false
+  },
+  "optional_extensions": {
+    "hard_moe": "omitted_prospectively",
+    "activation_alignment": "exploratory_only"
+  },
+  "entry_point": {
+    "module": "python -m experiments.run_experiment",
+    "task20_preflight": "--preflight",
+    "task20_smoke": "--smoke",
+    "task21_final": "--task21-final RUN-VALUE-LOGIC-FINAL-V1",
+    "final_guard": "final worlds are first materialized only after frozen source verification, grid selection, eight paired fits, separate calibration, model serialization, and a hashed fit-complete marker",
+    "rerun": "existing fit marker, model artifact, or raw result causes refusal"
+  },
+  "role_payloads_generated_at_freeze": {
+    "train": false,
+    "envelope_calibration": false,
+    "reject_router_validation": false,
+    "system_audit": false,
+    "final_confirmation": false
+  }
+}
