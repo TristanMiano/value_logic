@@ -1304,7 +1304,7 @@ Task 10 must decide:
 
 Tasks 12–13 must decide whether any convergence, stability, or provability modalities are added at the meta level. No GL/Löb principle is inherited by default.
 
-Task 15's [`ml/01_encodings.md`](../ml/01_encodings.md) now decides which record fields are explicit neural inputs, fixed context, learned statistics, external handles, or forbidden sole compression targets. Tasks 16–18 must preserve that boundary while selecting architecture and loss.
+Task 15's [`ml/01_encodings.md`](../ml/01_encodings.md) decides which record fields are explicit neural inputs, fixed context, learned statistics, external handles, or forbidden sole compression targets. Task 16's [`ml/02_relu_architecture.md`](../ml/02_relu_architecture.md) preserves that boundary in the hybrid reference; Tasks 17–18 must preserve it through proofs and loss selection.
 
 ## Task conclusion
 

@@ -820,7 +820,7 @@ value/license = value_or_license_head(h)
 **Strength:** relevant to policy-to-value interpretability; enables alignment tests.  
 **Risk:** shared representation can encourage but does not prove causal identity.
 
-Task 16 will choose or combine these after the formal objects and atlas requirements are fixed.
+Task 16 now chooses a hybrid ReLU statistic scorer plus exact symbolic decoder in [`ml/02_relu_architecture.md`](../ml/02_relu_architecture.md), using separate plan content/grade/evidence channels and exact active masking.
 
 ---
 
@@ -960,7 +960,7 @@ Task 10 must define scalar versus Pareto admissibility.
 
 Task 15 compares model-ID, functional, loss-profile, and structural encodings at the interface level in [`ml/01_encodings.md`](../ml/01_encodings.md). Empirical comparison remains for the later experiment; hidden-state interpretation additionally requires the alignment tests fixed there.
 
-Task 16 must select the architecture, signed-score access, boundary convention, and abstention mechanism.
+Task 16 now selects the hybrid architecture, signed and paired-score access, inclusive-support/strict-refutation boundary convention, and active-mask fallback mechanism in [`ml/02_relu_architecture.md`](../ml/02_relu_architecture.md).
 
 Task 18 must select losses for risk prediction, calibration, routing, and optional representation alignment.
 

@@ -28,7 +28,7 @@ The contract deliberately keeps three boundaries visible:
 2. a learned module may propose continuous sufficient statistics and calibrated error envelopes, but a prediction is not a certificate; and
 3. a plan exposes computational payload, quantitative grade, and certificate/provenance separately, even when a later theorem permits one named scalar to serve both as adequacy surplus and downstream content.
 
-This document fixes inputs, outputs, equivalences, and invariances. Task 16 may choose ReLU as the reference scorer, and Task 17 must prove or delimit the promised representation results. Nothing here is a neural-width bound or a proof that the proposed statistics are learnable.
+This document fixes inputs, outputs, equivalences, and invariances. Task 16 now instantiates them in [`02_relu_architecture.md`](02_relu_architecture.md); Task 17 must prove or delimit the promised representation results. Nothing here is a neural-width bound or a proof that the proposed statistics are learnable.
 
 ## 1. Scope and mathematical economy
 
@@ -181,7 +181,7 @@ m_support = inf(U_F) - (sup(U_e)+Delta),
 m_refute  = (inf(U_e)+Delta) - sup(U_F),
 ```
 
-with the same inclusive-support/strict-refutation convention. These are candidate statistics for Task 16, not a demand that every ordered risk space be scalarized.
+with the same inclusive-support/strict-refutation convention. Task 16 adopts these as the scalar reference statistics; this is not a demand that every ordered risk space be scalarized.
 
 ## 5. Profile consumption and two representation strengths
 
@@ -498,4 +498,4 @@ In particular, this document does **not** assume that the sufficient statistics 
 
 Task 15 supplies a compact neural/symbolic boundary for the surviving logic. It can encode ordinary model/domain cases, variable libraries, and recursively structured plans without making the profile a hidden cause, flattening evidence into reason labels, or treating neural output as proof. It also gives the graph/set comparator a concrete structural hypothesis while leaving architecture choice open.
 
-Task 16 may now derive a ReLU reference architecture against this contract. It must preserve the exact metadata and decoder boundary fixed here, expose separate plan payload/grade/validity/evidence channels, and treat dual-use activations only as a hypothesis-indexed construction.
+Task 16 now derives the ReLU reference architecture in [`02_relu_architecture.md`](02_relu_architecture.md), preserving the exact metadata and decoder boundary fixed here, exposing separate plan payload/grade/validity/evidence channels, and treating dual-use activations only as a hypothesis-indexed construction. Task 17 is next.

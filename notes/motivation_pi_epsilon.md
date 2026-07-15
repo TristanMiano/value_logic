@@ -853,7 +853,7 @@ Task 8 must define the finite-stage semantics and statistical interpretation of 
 
 Task 10 must replace scalar best-known comparison with Pareto dominance where required.
 
-Task 16 must choose the boundary convention and ensure the neural architecture preserves access to signed scores.
+Task 16 now fixes inclusive support, strict refutation, conservative open error bands, and retained signed/paired-ReLU channels in [`ml/02_relu_architecture.md`](../ml/02_relu_architecture.md).
 
 Task 18 must decide whether cross-entropy trains adequacy, model selection, policy imitation, or some combination; these are not the same target.
 

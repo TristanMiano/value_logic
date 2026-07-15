@@ -4,7 +4,7 @@ Date: 2026-07-12
 
 Trigger: completion of Tasks 14 and 14A, supplemented by the external audit in [`llm_convos/claude_audit_2026-07-12.md`](../../llm_convos/claude_audit_2026-07-12.md)
 
-Status: completed and amended by project-author guidance; Tasks 14B–15 completed, Task 16 next
+Status: completed and amended by project-author guidance; Tasks 14B–16 completed, Task 17 next
 
 ## Durable checkpoint result
 
@@ -12,7 +12,7 @@ The compact calculus is coherent enough to support a neural correspondence, and 
 
 The theorem bar was conditionally cleared at this checkpoint. The profile soundness/relative-completeness cluster was a genuine logic result; the open-ended stability package needed small precision fixes and explicit attribution of its classical indistinguishability and sequential-decision patterns; and the update-persistence characterization did not yet count as a theorem of the concrete calculus because its graph assumptions stipulated accurate influence. Task 14B subsequently closed exactly this gap and repaired the executable/reference-level defects without broader expansion. The later bounded Task 14C has also been completed: it supplies proof-carrying finite plans, composite-certificate lifting, grounded provenance, and finite-rank system assessment while classifying their structural inductions as established machinery.
 
-The neural target is architecture-neutral and smaller than the complete formalism. A learned component should supply dependency-scoped atom sufficient statistics and calibrated uncertainty; exact metadata, `WF`, profile roles, `K_3` aggregation, active-set masking, fallback, and provenance identity normally remain symbolic or external. ReLU remains the reference witness for continuous piecewise-linear statistics. Monotone/lattice and hard mixture-of-experts models remain the leading comparators for monotonicity and discontinuous seams. Task 15 has now operationalized the graph/set hypothesis as an isomorphism-aware typed-DAG versus matched flat-plan comparison on cost, robustness, grade propagation, and explanation; Checkpoint C still decides whether it merits training.
+The neural target is architecture-neutral and smaller than the complete formalism. Task 16 now supplies the reference realization: a ReLU module proposes dependency-scoped regions, uncertainty/validity, payloads, and grades; separately accepted calibration/checker records and a symbolic decoder produce diagnostics, profiles, active masks, and fallback. ReLU remains the reference witness for continuous piecewise-linear statistics rather than the semantics. Monotone/lattice and hard mixture-of-experts models retain their narrow monotonicity and discontinuous-seam hypotheses. Task 15's typed-DAG versus matched flat-plan question remains optional; Checkpoint C decides whether any comparator merits training.
 
 Task 17 remains the next prospective neural mathematical centerpiece. Its target statements were fixed below before Tasks 15–16 chose encodings and architecture. The subsequent project-author amendment's prior formal target—Task 14C's finite proof-carrying recursive plans, precise theorem levels, and stratified assessment of the value-logic system—is complete, and Task 15 now encodes its surviving interface.
 
@@ -227,7 +227,7 @@ Task 14C audited Curry–Howard, constructive/refinement and quantitative types,
 
 ## Task 17 target statements frozen by this checkpoint
 
-Tasks 15 and 16 must design toward the following theorem statements rather than choosing convenient encodings first.
+Tasks 15 and 16 have now designed toward the following theorem statements rather than choosing convenient encodings first. Task 17 must adjudicate them.
 
 1. **Architecture-neutral exact factorization.** For a declared input class and profile family `F`, an encoder/scorer plus deterministic decoder realizes every requested status exactly only if equal codes imply equal required `WF` observations and equal `V / ~_F` classes. Conversely, any code preserving those observations is status-sufficient. Diagnostic-preserving clients require the corresponding finer quotient.
 
@@ -292,7 +292,7 @@ Every unfinished item was reconsidered:
 | **Task 14B** | **Completed 2026-07-14.** One bounded proof/reference/kernel repair; no new principal carrier or broad metatheory |
 | **Task 14C** | **Completed 2026-07-14.** Formalized theorem levels, proof-carrying recursive plans, composite-certificate license lifting, grounded provenance, finite-rank system assessment, and Curry–Howard/self-endorsement limits |
 | **Task 15** | **Completed 2026-07-14.** Fixed a query-family-specific neural/symbolic interface, dependency-scoped atom inputs, exact invariances, status-minimal versus audit-preserving codes, fixed/expandable libraries, and typed plan-node outputs. Graph/set structure is now an operationalized comparison to flattening, not a selected architecture |
-| **Task 16** | Keep ReLU as a hybrid statistic scorer, not an end-to-end status classifier. Separate content, quantitative grade, validity/missingness, and proof/provenance pointers; use symbolic verification/decoding and separately licensed selection. Permit score-as-content only under the Task 17 joint-sufficiency conditions |
+| **Task 16** | **Completed 2026-07-14.** Fixed a hybrid ReLU region/statistic scorer with external calibration/checking and symbolic decoding/masking; separate plan content/grade/evidence; explicit normalized dual-use hypothesis channels; fixed/shared library forms; and scoped monotone/lattice, hard-MoE, and graph/set variants |
 | **Task 17** | Strengthen around the seven frozen targets above, including joint sufficiency and annotated-plan realization. This is the prospective flagship neural theorem task |
 | **Task 18** | Keep, but train sufficient statistics/calibration first. Optimization does not manufacture a proof; externally checked certificate targets and provenance remain distinct. Direct atom/status cross-entropy is auxiliary or a baseline |
 | **Checkpoint C** | Keep. It must choose at most one trained comparator unless two powered hypotheses survive and must check the blueprint against Task 17 rather than universal approximation |
@@ -322,12 +322,12 @@ Every unfinished item was reconsidered:
 4. The experiment could become an omnibus benchmark too small to test any claim well. The tiered design is now required.
 5. The two comparator candidates could create breadth without power. Checkpoint C must select by a concrete hypothesis and fairness budget.
 6. The project may still overstate classical stability patterns or standard transport mathematics. Task 14B establishes the current attribution boundaries; Task 31 must re-audit the final wording.
-7. **Formally closed by Task 14C and encoded by Task 15; implementation risk remains.** Proof terms, accepted empirical certificates, and world bridges are separately typed and survive the encoding boundary. Tasks 16–21 must preserve that separation.
-8. Dual-use activations could turn arbitrary hidden features into post-hoc “adequacy” scores. Task 17 must prove joint sufficiency and scale semantics for the declared channels; otherwise the interpretation remains an empirical hypothesis.
+7. **Formally closed by Task 14C, encoded by Task 15, and architecturally preserved by Task 16; implementation risk remains.** Proof terms, accepted empirical certificates, and world bridges remain separate from neural grades. Tasks 17–21 must preserve that separation.
+8. **Architecturally narrowed by Task 16; theorem risk remains.** Dual-use channels now have exact hypothesis, address, normalization, calibration, and consumer registries. Task 17 must still prove joint sufficiency and scale semantics; otherwise the positive interpretation remains only a scoped construction and empirical hypothesis.
 9. System-level licensing could become circular self-endorsement. Task 14C proves the grounded/ranked finite fragment and countermodels self-endorsement as target evidence; genuine cycles still require explicit fixed-point semantics.
 
-## Revised next task after the Task 15 closure
+## Revised next task after the Task 16 closure
 
-> **Task 16 — Derive the ReLU license architecture.**
+> **Task 17 — State and verify the ReLU/atlas representation results.**
 
-Tasks 14B–15 are complete. Task 16 must now instantiate the architecture-neutral contract as a hybrid ReLU reference design without turning predicted grades into certificates, losing inclusive boundaries or missingness, or assigning adequacy semantics to arbitrary hidden units.
+Tasks 14B–16 are complete. Task 17 must now prove or sharply delimit the seven frozen representation targets for the fixed hybrid architecture, including the positive dual-use construction and exact boundary/scale limitations, without substituting universal approximation for the required results.

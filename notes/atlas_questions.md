@@ -925,7 +925,7 @@ Task 11 should turn the provisional definitions into the formal atlas chapter.
 
 Task 15 should choose representations for model/domain/overlap records and external memory.
 
-Task 16 should choose whether the architecture is monolithic, expert-gated, or hybrid and how it preserves multiple simultaneous licenses.
+Task 16 now chooses a hybrid ReLU statistic scorer plus symbolic decoder/mask, preserving all simultaneous licenses before a separate active-set-restricted selector; hard MoE remains a seam-specific comparator in [`ml/02_relu_architecture.md`](../ml/02_relu_architecture.md).
 
 Task 17 should verify the CPWL, continuity, converse, rank-change, and depth results from primary sources.
 
