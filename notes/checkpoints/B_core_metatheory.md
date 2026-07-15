@@ -4,17 +4,17 @@ Date: 2026-07-12
 
 Trigger: completion of Tasks 14 and 14A, supplemented by the external audit in [`llm_convos/claude_audit_2026-07-12.md`](../../llm_convos/claude_audit_2026-07-12.md)
 
-Status: completed and amended by project-author guidance; Task 14B completed, Task 14C next
+Status: completed and amended by project-author guidance; Tasks 14B–14C completed, Task 15 next
 
 ## Durable checkpoint result
 
 The compact calculus is coherent enough to support a neural correspondence, and its mathematical center is no longer a record schema. The paper-level object remains the request `(s,e,q,P)` over the three principal carriers `E,Q,S`, with `W` semantic, `WF` separate from meaningful `K_3` atom values, and profiles supplying finite consumer queries. The quantitative atlas/router machinery remains an extension.
 
-The theorem bar was conditionally cleared at this checkpoint. The profile soundness/relative-completeness cluster was a genuine logic result; the open-ended stability package needed small precision fixes and explicit attribution of its classical indistinguishability and sequential-decision patterns; and the update-persistence characterization did not yet count as a theorem of the concrete calculus because its graph assumptions stipulated accurate influence. Task 14B has since closed exactly this gap and repaired the executable/reference-level defects without broader expansion. The later author amendment deliberately adds the separate, bounded Task 14C.
+The theorem bar was conditionally cleared at this checkpoint. The profile soundness/relative-completeness cluster was a genuine logic result; the open-ended stability package needed small precision fixes and explicit attribution of its classical indistinguishability and sequential-decision patterns; and the update-persistence characterization did not yet count as a theorem of the concrete calculus because its graph assumptions stipulated accurate influence. Task 14B subsequently closed exactly this gap and repaired the executable/reference-level defects without broader expansion. The later bounded Task 14C has also been completed: it supplies proof-carrying finite plans, composite-certificate lifting, grounded provenance, and finite-rank system assessment while classifying their structural inductions as established machinery.
 
 The neural target is architecture-neutral and smaller than the complete formalism. A learned component should supply dependency-scoped atom sufficient statistics and calibrated uncertainty; exact metadata, `WF`, profile roles, `K_3` aggregation, active-set masking, fallback, and provenance identity normally remain symbolic or external. ReLU remains the reference witness for continuous piecewise-linear statistics. Monotone/lattice and hard mixture-of-experts models remain the leading comparators for monotonicity and discontinuous seams. The author amendment gives a graph/set model one concrete plan-DAG hypothesis, but Task 15 must operationalize it before Checkpoint C decides whether it merits training.
 
-Task 17 is the next prospective neural mathematical centerpiece. Its target statements are fixed below before Tasks 15–16 choose encodings. A subsequent project-author amendment adds a prior formal target, Task 14C: finite proof-carrying recursive plans, a precise account of theoremhood inside the value logic, and stratified assessment of the value-logic system itself.
+Task 17 remains the next prospective neural mathematical centerpiece. Its target statements are fixed below before Tasks 15–16 choose encodings. The subsequent project-author amendment's prior formal target—Task 14C's finite proof-carrying recursive plans, precise theorem levels, and stratified assessment of the value-logic system—is now complete and constrains Task 15.
 
 The amendment also accepts a positive version of the author's dual-use ReLU intuition. A channel can simultaneously express positive certificate-relative adequacy slack and serve as a downstream numerical feature when its preactivation has an explicit, certificate-valid margin semantics—or a verified approximation envelope with sufficient boundary separation—and the later computation is defined to consume that grade. This is a conditional construction, not an interpretation of arbitrary hidden activations. General payloads, full diagnostics, and proof evidence require more than the one rectified scalar.
 
@@ -52,10 +52,10 @@ The following tally applies the project's own rule that definitions, renamed sta
 | Query-induced diagnostic quotient and corrected `|V|` bound | Supporting representation bridge | Generic query-kernel characterization applied usefully to the calculus; not a standalone novelty headline |
 | `WF + K_3`, meet algebra, four outcomes, safety projections, tolerance monotonicity, fallback, heredity, coordinate separation | Infrastructure or finite sanity results | Necessary for correctness and interface economy; excluded from the headline count |
 | Subdomain, router, bridge, plan-DAG, and cocycle results | Load-bearing integration | Standard measure, partition, Lipschitz, perturbation, and graph machinery, honestly integrated with licenses; not counted as an independent novelty cluster |
-| Proof-carrying recursive plans and stratified system assessment | Pending Task 14C | Ambitious author-designated target; counts only if the project proves more than imported program-logic machinery and states the empirical-certificate boundary exactly |
+| Proof-carrying recursive plans and stratified system assessment | **Completed Task 14C; integration result** | Proves the finite annotated-execution/root-license and grounded/ranked results; imported proof/program machinery is separated, so this is load-bearing integration rather than an independent novelty headline |
 | ReLU realization and hard-seam obstruction | Pending Task 17 | Expected to be the most distinctive remaining formal cluster |
 
-Task 14B clears the three-cluster pre-neural bar: profile completeness, the repaired/classically positioned stability package, and the calculus-specific locality/update cluster. This is a minimum, not permission to stop theorem development. The later author-directed Task 14C is not added to inflate this tally: it answers the separate compositional-computation and system-license questions that must constrain the encoding. Unrelated metatheory merely to raise the theorem count remains rejected.
+Task 14B clears the three-cluster pre-neural bar: profile completeness, the repaired/classically positioned stability package, and the calculus-specific locality/update cluster. This is a minimum, not permission to stop theorem development. Completed Task 14C is not added to inflate this tally: it answers the separate compositional-computation and system-license questions that now constrain the encoding. Unrelated metatheory merely to raise the theorem count remains rejected.
 
 ## What the neural layer must and need not represent
 
@@ -216,14 +216,14 @@ A frozen implementation of the encoder, scorer, decoder, router, or proof checke
 
 The meta-context must fix what is being evaluated: decoder fidelity, false-grant/false-refusal loss, calibration, routed risk, computational resources, derivation checking, or a stronger formal correctness contract. Evidence must come from typed base premises, independent checks, a higher-ranked verifier, or an explicitly sound certificate transformer. The system's own assertion of adequacy is not its sole evidence.
 
-Task 14C will seek two finite results:
+Task 14C now establishes two finite results:
 
 - **Grounded-provenance theorem.** In a finite acyclic support graph, every supported required atom has a provenance path to an explicitly typed base source. A closed mutually supporting component is syntactically impossible in this DAG fragment rather than excluded by the theorem.
 - **Stratified self-evaluation theorem.** If evaluator/request dependencies admit a finite rank, every evaluative edge points to lower rank or exogenous evidence, and every local evaluator is total and deterministic on its typed inputs, diagnostics and assessments are uniquely determined by induction. Reifying `e_VL` preserves this property.
 
 These results permit finite self-hosting or system-level adequacy without unrestricted reflection. A direct cycle in which the same grant supplies its own only evidence remains outside the core. A separate cyclic extension may show that an ungrounded positive cycle stays unsupported only after declaring an immediate-consequence operator, selecting (for example) its least fixed point, and proving the required monotonicity and soundness conditions; no such result is assumed here.
 
-Task 14C must audit Curry–Howard, refinement/dependent types, Hoare/program logics, proof-carrying code, certifying algorithms, graded/quantitative types, and related primary sources before claiming novelty. The likely project contribution is the integration of certificate-carrying computation with defeasible, domain-relative, quantitative licenses—not the underlying correspondence machinery by itself.
+Task 14C audited Curry–Howard, constructive/refinement and quantitative types, Hoare program logic, proof-carrying code, and certifying algorithms against primary sources. [`formalism/08c_proof_carrying_plans.md`](../../formalism/08c_proof_carrying_plans.md) classifies the underlying correspondence and induction machinery as prior art. The project result is the integration of certificate-carrying computation with defeasible, domain-relative, quantitative licenses—not the underlying machinery by itself.
 
 ## Task 17 target statements frozen by this checkpoint
 
@@ -290,7 +290,7 @@ Every unfinished item was reconsidered:
 | item | decision after Checkpoint B |
 |---|---|
 | **Task 14B** | **Completed 2026-07-14.** One bounded proof/reference/kernel repair; no new principal carrier or broad metatheory |
-| **Task 14C** | **Added by project-author amendment.** Formalize theorem levels, proof-carrying recursive plans, license lifting, grounded provenance, stratified system assessment, and Curry–Howard limits before encodings freeze |
+| **Task 14C** | **Completed 2026-07-14.** Formalized theorem levels, proof-carrying recursive plans, composite-certificate license lifting, grounded provenance, finite-rank system assessment, and Curry–Howard/self-endorsement limits |
 | **Task 15** | Narrow to a query-family-specific neural/symbolic interface, dependency-scoped atom inputs, invariances, minimal versus audit-preserving codes, and typed `(payload, grade, evidence/provenance)` plan-node outputs. Graph/set structure now has one concrete hypothesis but remains a comparison to flattening |
 | **Task 16** | Keep ReLU as a hybrid statistic scorer, not an end-to-end status classifier. Separate content, quantitative grade, validity/missingness, and proof/provenance pointers; use symbolic verification/decoding and separately licensed selection. Permit score-as-content only under the Task 17 joint-sufficiency conditions |
 | **Task 17** | Strengthen around the seven frozen targets above, including joint sufficiency and annotated-plan realization. This is the prospective flagship neural theorem task |
@@ -322,12 +322,12 @@ Every unfinished item was reconsidered:
 4. The experiment could become an omnibus benchmark too small to test any claim well. The tiered design is now required.
 5. The two comparator candidates could create breadth without power. Checkpoint C must select by a concrete hypothesis and fairness budget.
 6. The project may still overstate classical stability patterns or standard transport mathematics. Task 14B establishes the current attribution boundaries; Task 31 must re-audit the final wording.
-7. A proof-carrying computation claim could silently treat an empirical bound or neural confidence as a deductive proof. Task 14C must type proof terms, accepted empirical certificates, and world bridges separately.
+7. **Formally closed by Task 14C; implementation risk remains.** Proof terms, accepted empirical certificates, and world bridges are now separately typed. Tasks 15–21 must preserve that separation.
 8. Dual-use activations could turn arbitrary hidden features into post-hoc “adequacy” scores. Task 17 must prove joint sufficiency and scale semantics for the declared channels; otherwise the interpretation remains an empirical hypothesis.
-9. System-level licensing could become circular self-endorsement. Only grounded, stratified assessment is in scope; genuine cycles require explicit fixed-point semantics.
+9. System-level licensing could become circular self-endorsement. Task 14C proves the grounded/ranked finite fragment and countermodels self-endorsement as target evidence; genuine cycles still require explicit fixed-point semantics.
 
-## Revised next task after the Task 14B closure
+## Revised next task after the Task 14C closure
 
-> **Task 14C — Formalize proof-carrying recursive plans and stratified system assessment.**
+> **Task 15 — Specify operational encodings for cases, domains, models, and annotated plans.**
 
-Task 14B was completed as the bounded repair specified here. This checkpoint amendment records that closure but does not begin Task 14C.
+Tasks 14B and 14C are complete. Task 15 must now encode the surviving atom-footprint and annotated-plan interfaces without turning predicted grades into certificates or flattening away the distinctions Task 14C proved necessary.

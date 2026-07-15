@@ -506,7 +506,7 @@ from a supported `RelUndom(e;g,K)` or `CertUndom(e;g,K)` over finite `K`.
 
 ## 10. Typed elaboration and recursive plan structure
 
-> **Checkpoint B project-author amendment.** The results below establish finite reification, conditional quantitative propagation, and failure of unconditional license composition. [`Task 14C`](../TODO.md) will ask the stronger positive question: whether typed plan constructors can transform payloads, quantitative grades, and certificate/provenance terms by induction, and whether a frozen value-logic implementation can be assessed through grounded finite-rank evidence without circular self-license.
+> **Task 14C extension notice.** The results below establish finite reification, conditional quantitative propagation, and failure of unconditional license composition. [`08c_proof_carrying_plans.md`](08c_proof_carrying_plans.md) now supplies the stronger positive result: typed plan constructors transform payloads, quantitative grades, and certificate/provenance terms by topological induction; a checked root certificate lifts into an ordinary core request; and a frozen value-logic implementation has a unique grounded assessment under finite-rank evidence dependencies.
 
 ### Theorem 26: typed elaboration invariance
 
@@ -575,6 +575,7 @@ If a Boolean grant variable `g` is stipulated to satisfy `g=not g`, it has no Bo
 | unrestricted persistence/global closure failures | finite continuation countermodels | open-endedness qualifications |
 | elaboration invariance and DAG reification | structural induction | core/elaboration bridge |
 | component-grant and cyclic-self-reference failures | finite counterexamples | recursive-modeling limits |
+| proof-carrying plans and stratified system assessment | standard finite inductions plus project-specific license integration | Task 14C positive recursive-computation bridge |
 
 Checkpoint B applies a stricter tally than theorem count alone. Task 14B has now repaired and classically positioned the stability package, and its typed locality/change-completeness theorem makes the update cluster a result about the actual atom clauses. Together with profile relative completeness, the three-cluster pre-neural theorem bar is cleared. The diagnostic quotient remains a representation bridge, while Task 14A is load-bearing integration of mostly standard machinery rather than a novelty headline. Task 17 must still establish the positive/negative neural representation cluster rather than relying on this formal minimum.
 
@@ -596,6 +597,7 @@ Checkpoint B applies a stricter tally than theorem count alone. Task 14B has now
 14. Finite search never entails global closure.
 15. Finite acyclic plan composition is reifiable; component grants do not compose without a propagation theorem.
 16. Higher-order evaluation is allowed through new typed requests; cycles require an explicit fixed-point extension.
+17. Finite plans may carry payload, typed grade, and checked composite evidence; root licenses consume the composite certificate, and system assessment must be grounded and ranked.
 
 ## Task conclusion
 

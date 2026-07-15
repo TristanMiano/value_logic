@@ -12,6 +12,8 @@ Depends on: [`05a_integration.md`](05a_integration.md), [`06_open_endedness.md`]
 
 > **Task 14B locality notice.** [`08b_audit_repairs.md`](08b_audit_repairs.md) derives finite typed query/read footprints and event/write footprints for the clauses below, proves complete-diagnostic locality by cases, and proves the canonical event-to-key-to-slot graph change-complete. These footprints are derived interfaces, not new principal carriers.
 
+> **Task 14C composition notice.** [`08c_proof_carrying_plans.md`](08c_proof_carrying_plans.md) proves that finite well-founded plan constructors can jointly transform payloads, typed quantitative grades, and checked certificate/provenance terms. A valid root certificate can support an ordinary request; component grants are never composed directly. The same note gives grounded finite-DAG provenance and unique finite-rank system assessment without adding a core carrier.
+
 ## Durable core summary
 
 This file replaces the historical implementation-level signature as the canonical paper-level calculus. It has three principal carriers:

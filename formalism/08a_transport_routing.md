@@ -491,7 +491,7 @@ These are extension theorems because they require measure, routing, metric, Lips
 - a component propagation certificate records the DAG, local error domains, sensitivities, and resource aggregation;
 - a cycle audit is report-only unless a profile or transport operation explicitly requires path independence.
 
-Checkpoint B's project-author amendment assigns Task 14C to use Theorem 15 as one concrete quantitative-grade transformer in a proof-carrying plan constructor. The numerical bound becomes part of a composite certificate only when its tube, interface, frame, scope, and verifier assumptions are checked; the number alone is not the proof.
+[`08c_proof_carrying_plans.md`](08c_proof_carrying_plans.md), Corollary 2, now uses Theorem 15 as a concrete quantitative-grade transformer in a proof-carrying plan constructor. The numerical bound becomes part of a composite certificate only when its tube, interface, frame, scope, and verifier assumptions are checked; the number alone is not the proof.
 
 The architecture-neutral neural interface therefore needs more than an active-set or router-accuracy label. Depending on the requested theorem, it must preserve local risk scope, selected mass, misroute/fallback mass and severity, bridge disagreement and task sensitivity, component sensitivities, or cycle defect. ReLU can be the reference scorer for these quantities; none of the bounds is ReLU-specific.
 
