@@ -42,6 +42,7 @@ The detailed typed records in the early formalism are now treated as an elaborat
 - [`llm_convos/`](llm_convos/) contains the conversations from which several initial ideas were extracted and critically assessed.
 - [`verification/`](verification/) contains the standard-library executable semantics, integrated finite witness, tests, and local-link checker.
 - [`ml/`](ml/) contains the architecture-neutral encoding contract and, in later tasks, the reference neural architecture, representation results, and loss design.
+- [`experiments/`](experiments/) contains the preregistered synthetic study design and, in later tasks, its pilot, frozen protocol, implementation, and results.
 - [`references.bib`](references.bib) is the working bibliography.
 
 The planned final public artifacts are:
@@ -65,7 +66,7 @@ The historical interfaces in `formalism/01_signature.md` through `formalism/05a_
 
 ## Project status
 
-Tasks 0–18, Checkpoints A–C, and the unscheduled external-audit Checkpoint A1 are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed. The compact `WF + K_3` semantics and the complete finite witness are executable and tested with `python -m verification`. Continuation semantics separates current grants, eventual stability, certified stability, semantic finality, and optional truth. The compact core fixes `(s,e,q,P)` and has profile, diagnostic, soundness, update, and composition metatheory. Its quantitative extension characterizes subdomain restriction, decomposes hard-router risk, bounds bridge/blend task risk, propagates finite plan-DAG errors, and audits exact bridge cycles.
+Tasks 0–19, Checkpoints A–C, and the unscheduled external-audit Checkpoint A1 are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed. The compact `WF + K_3` semantics and the complete finite witness are executable and tested with `python -m verification`. Continuation semantics separates current grants, eventual stability, certified stability, semantic finality, and optional truth. The compact core fixes `(s,e,q,P)` and has profile, diagnostic, soundness, update, and composition metatheory. Its quantitative extension characterizes subdomain restriction, decomposes hard-router risk, bounds bridge/blend task risk, propagates finite plan-DAG errors, and audits exact bridge cycles.
 
 Task 14B closed Checkpoint B's focused repair gate. It proved every frozen atom evaluator local to a finite typed read footprint, including negative collection-index reads, and made the canonical event/write graph change-complete. [`Task 14C`](formalism/08c_proof_carrying_plans.md) then proved that finite typed plan DAGs can jointly compute payloads, propagate quantitative grades, and construct checked composite certificates whose erasure is the ordinary computation. It also established grounded finite-DAG provenance and unique finite-rank assessment of a frozen value-logic implementation, while showing that self-endorsement alone is not target-world evidence.
 
@@ -83,6 +84,8 @@ The [canonical worked example](ml/02_relu_architecture.md#84-worked-toy-one-plan
 
 [`Checkpoint C`](notes/checkpoints/C_neural_blueprint.md) confirms that the formal, neural, and objective layers form one implementable hybrid pipeline, while adding a scorer-input firewall, proposal-bound calibration records, five blocked evidential roles, and separate system-audit/confirmation roles. It narrows the minimum publishable experiment to the structured-versus-cross-entropy and marginal-calibration claims plus core failure ablations. No alternative architecture enters that minimum core; hard MoE is the only optional comparator and must pass a separate seam-power gate. The checkpoint also freezes a provisional reader-facing answer to why this value-logic design plausibly fits ReLU while repairing the stale idea that a positive activation grants or zero quarantines by itself.
 
-The current next step is **Task 19: preregister the decisive experiment**. ReLU remains a reference witness rather than a unique or presumptively optimal architecture.
+[`Task 19`](experiments/01_design.md) preregisters the decisive experiment before implementation. It freezes an independent synthetic succession/oracle law, the reusable `A and I and C` fixture, nonleaking inputs, immutable calibration binding, five lineage-blocked roles, exact target/design reweighting, numerical superiority/noninferiority margins, world-level paired inference and power, required failure ablations, and a final-test embargo. It also distinguishes marginal target-in-proposal coverage from finite usable evidence: an infinite proposal can preserve the former guarantee while forcing the atom Open. Hard MoE and certificate/system studies remain separately gated extensions.
+
+The current next step is **Task 19A: build, pilot, and freeze the generator and protocol**. ReLU remains a reference witness rather than a unique or presumptively optimal architecture.
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.
