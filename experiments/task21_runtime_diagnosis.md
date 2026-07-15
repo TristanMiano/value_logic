@@ -128,6 +128,27 @@ upper bound. Because final payloads have already been generated, this repair
 must receive a new implementation version and be disclosed as a protocol
 deviation even if the scientific estimand is bit-for-bit unchanged.
 
+### Author-directed implementation constraint
+
+The repair must not recreate a high-volume custom-Python-object kernel. Its hot
+path should be data-oriented and expressed first through mature NumPy and
+PyTorch array operations: fixed-width integer/float fields, structure-of-arrays
+blocks, batched predicates, and batched interval/status decoding. Python
+dataclasses, enums, mappings, and provenance records may remain at the
+configuration, audit, and rendering boundaries, where their volume is small;
+they should not be allocated and recursively inspected once per atom, ablation,
+seed, and world.
+
+If exact firewall, binding, or `K_3` operations cannot be expressed cleanly and
+efficiently through those library kernels, implement that bounded kernel in
+C++ and cross the Python boundary once per block rather than once per object.
+Use plain fixed-layout inputs/outputs and keep the Python and C++ reference
+implementations under exact differential tests. C++ is not itself a correctness
+proof, so the kernel must also use bounds-checked interfaces where practical,
+sanitizer/debug builds, deterministic seeds, and the same hash/equivalence
+gates. This policy addresses both the observed interpreter fragility and the
+much larger demonstrated Python dispatch/allocation cost.
+
 ## 6. Current disposition
 
 Task 21 is not complete. `F35`, `F36`, calibration, architecture comparison,
