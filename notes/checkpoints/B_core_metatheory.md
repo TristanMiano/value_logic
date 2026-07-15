@@ -4,7 +4,7 @@ Date: 2026-07-12
 
 Trigger: completion of Tasks 14 and 14A, supplemented by the external audit in [`llm_convos/claude_audit_2026-07-12.md`](../../llm_convos/claude_audit_2026-07-12.md)
 
-Status: completed and amended by project-author guidance; Tasks 14B–17 completed, Task 18 next
+Status: completed and amended by project-author guidance; Tasks 14B–18 and Checkpoint C subsequently completed
 
 ## Durable checkpoint result
 
@@ -12,7 +12,7 @@ The compact calculus is coherent enough to support a neural correspondence, and 
 
 The theorem bar was conditionally cleared at this checkpoint. The profile soundness/relative-completeness cluster was a genuine logic result; the open-ended stability package needed small precision fixes and explicit attribution of its classical indistinguishability and sequential-decision patterns; and the update-persistence characterization did not yet count as a theorem of the concrete calculus because its graph assumptions stipulated accurate influence. Task 14B subsequently closed exactly this gap and repaired the executable/reference-level defects without broader expansion. The later bounded Task 14C has also been completed: it supplies proof-carrying finite plans, composite-certificate lifting, grounded provenance, and finite-rank system assessment while classifying their structural inductions as established machinery.
 
-The neural target is architecture-neutral and smaller than the complete formalism. Task 16 now supplies the reference realization: a ReLU module proposes dependency-scoped regions, uncertainty/validity, payloads, and grades; separately accepted calibration/checker records and a symbolic decoder produce diagnostics, profiles, active masks, and fallback. ReLU remains the reference witness for continuous piecewise-linear statistics rather than the semantics. Monotone/lattice and hard mixture-of-experts models retain their narrow monotonicity and discontinuous-seam hypotheses. Task 15's typed-DAG versus matched flat-plan question remains optional; Checkpoint C decides whether any comparator merits training.
+The neural target is architecture-neutral and smaller than the complete formalism. Task 16 now supplies the reference realization: a ReLU module proposes dependency-scoped regions, uncertainty/validity, payloads, and grades; separately accepted calibration/checker records and a symbolic decoder produce diagnostics, profiles, active masks, and fallback. ReLU remains the reference witness for continuous piecewise-linear statistics rather than the semantics. Checkpoint C subsequently authorized no alternative architecture in the minimum empirical core: hard mixture-of-experts is the sole optional comparator, conditional on a separately powered discontinuous-seam study, while monotone/lattice and typed-DAG comparisons are deferred.
 
 Task 17 is now complete as the prospective neural mathematical centerpiece. Its target statements were fixed below before Tasks 15–16 chose encodings and architecture, and [`ml/03_representation_theorems.md`](../../ml/03_representation_theorems.md) adjudicates all seven without replacing exact/robust/seam obligations by universal approximation. The subsequent project-author amendment's prior formal target—Task 14C's finite proof-carrying recursive plans, precise theorem levels, and stratified assessment of the value-logic system—is also complete, and Tasks 15–17 preserve its surviving interface.
 
@@ -223,6 +223,12 @@ Task 14C now establishes two finite results:
 
 These results permit finite self-hosting or system-level adequacy without unrestricted reflection. A direct cycle in which the same grant supplies its own only evidence remains outside the core. A separate cyclic extension may show that an ungrounded positive cycle stays unsupported only after declaring an immediate-consequence operator, selecting (for example) its least fixed point, and proving the required monotonicity and soundness conditions; no such result is assumed here.
 
+Checkpoint C adds the missing classical positioning: this is the familiar
+Kripke--Fitting fixed-point apparatus over a partial/Strong-Kleene setting
+(`Kripke1975`; `Fitting1985`). The analogy does not import a cyclic value-logic
+semantics. The typed operator, evidence policy, selected fixed point, and
+world-soundness bridge would remain new obligations.
+
 Task 14C audited Curry–Howard, constructive/refinement and quantitative types, Hoare program logic, proof-carrying code, and certifying algorithms against primary sources. [`formalism/08c_proof_carrying_plans.md`](../../formalism/08c_proof_carrying_plans.md) classifies the underlying correspondence and induction machinery as prior art. The project result is the integration of certificate-carrying computation with defeasible, domain-relative, quantitative licenses—not the underlying machinery by itself.
 
 ## Task 17 target statements frozen by this checkpoint and now adjudicated
@@ -252,13 +258,13 @@ Alternatives were screened by five criteria: preservation of the same semantic i
 | architecture | nominated question | present decision |
 |---|---|---|
 | ReLU MLP plus symbolic decoder | Exact continuous-CPWL statistic realization, inspectable threshold margins, and activation geometry | **Reference architecture** |
-| Monotone/lattice model | Does enforcing selected tolerance/refinement monotonicities improve extrapolation or calibration compared with learning them? | **Candidate comparator**, limited to coordinates whose monotonicity is actually proved |
-| Hard mixture of experts / external hard router | Does native discontinuous routing improve seam-mismatch cases while preserving license masking and fallback? | **Candidate comparator** and direct foil for Task 17's completed discontinuity obstruction |
+| Monotone/lattice model | Does enforcing selected tolerance/refinement monotonicities improve extrapolation or calibration compared with learning them? | **Deferred by Checkpoint C**: no sufficiently important learned monotone coordinate was selected |
+| Hard mixture of experts / external hard router | Does native discontinuous routing improve seam-mismatch cases while preserving license masking and fallback? | **Sole optional comparator after Checkpoint C**, conditional on a separately powered seam-interaction study |
 | Neuro-symbolic decoder | Can exact `WF + K_3` aggregation prevent inconsistent aggregate status? | **Shared infrastructure**, not a comparator |
-| Graph/set model | Does explicit plan-DAG structure preserve grade/certificate composition and generalize across structurally distinct plans better than flattening? | Task 15 operationalizes a matched typed-DAG versus flat-plan hypothesis; Checkpoint C still decides whether the comparison is adequately powered |
+| Graph/set model | Does explicit plan-DAG structure preserve grade/certificate composition and generalize across structurally distinct plans better than flattening? | **Deferred by Checkpoint C**: the present illustrative DAGs cannot power structural generalization |
 | Maxout | Another continuous piecewise-linear family | Not selected: currently redundant with the ReLU representation question |
 
-Checkpoint C may select at most one trained comparator for the toy experiment unless two distinct, adequately powered hypotheses survive. Architectural monotonicity and hard routing must not be advertised as general interpretability improvements without evidence.
+Checkpoint C selected no trained architecture comparator for the minimum core. A hard-MoE seam study may enter only if Task 19A powers it separately under the frozen fairness contract. Architectural monotonicity and hard routing must not be advertised as general interpretability improvements without evidence.
 
 ## Mathematical economy
 
@@ -320,7 +326,7 @@ Every unfinished item was reconsidered:
 2. **Closed by Task 17.** The task proves exact/robust/seam results and explicitly states that universal approximation establishes none of the semantic, proof, efficiency, learning, calibration, or interpretation claims.
 3. **Interface risk closed by Tasks 15 and 17; publication risk remains.** The status quotient is explicitly consumer-relative, the audit code remains unquotiented, and the discrete bit result is not a neural-width claim. Task 31 must preserve that wording.
 4. The experiment could become an omnibus benchmark too small to test any claim well. The tiered design is now required.
-5. The two comparator candidates could create breadth without power. Checkpoint C must select by a concrete hypothesis and fairness budget.
+5. **Controlled by Checkpoint C; empirical risk remains.** No comparator enters the minimum core. Hard MoE is the only optional comparator and must pass a separate seam-hypothesis power and fairness gate in Task 19A.
 6. The project may still overstate classical stability patterns or standard transport mathematics. Task 14B establishes the current attribution boundaries; Task 31 must re-audit the final wording.
 7. **Formally closed by Task 14C, encoded by Task 15, architecturally preserved by Task 16, and representation-preserved by Task 17; implementation risk remains.** Proof terms, accepted empirical certificates, and world bridges remain separate from neural grades. Tasks 18–21 must preserve that separation.
 8. **Formal scoped claim closed by Task 17; empirical risk remains.** The exact state-plus-normalized-surplus code is minimal for the coordinate-complete named-channel family, with scale covariance, boundary collision, approximation, and equal-payload obstructions stated. Calibration, learned semantic alignment, and utility remain experimental.
@@ -330,4 +336,4 @@ Every unfinished item was reconsidered:
 
 > **Task 18 — Decide the training objective.**
 
-Tasks 14B–17 were complete at this checkpoint. Task 18 has since chosen the structured statistic/interval objective, held-out calibration path, independent atom-classification baseline, and separate router loss without treating optimization success as a proof or training a production self-grant head; Checkpoint C now audits the combined blueprint.
+Tasks 14B–17 were complete at this checkpoint. Task 18 has since chosen the structured statistic/interval objective, held-out calibration path, independent atom-classification baseline, and separate router loss without treating optimization success as a proof or training a production self-grant head. Checkpoint C subsequently audited the combined blueprint, narrowed the minimum experiment, and imposed the five-role protocol recorded in the current roadmap.

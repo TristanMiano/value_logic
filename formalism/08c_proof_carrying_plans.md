@@ -326,6 +326,14 @@ A future cyclic extension would have to declare:
 4. a selected fixed point, such as the least one; and
 5. a soundness theorem connecting that fixed point to accepted evidence.
 
+This is standard Kripke--Fitting apparatus rather than a new checklist.
+Kripke's partial fixed-point treatment of truth uses a Strong-Kleene setting
+(`Kripke1975`), and Fitting transports the Kripke--Kleene fixed-point pattern to
+logic programs (`Fitting1985`). Those sources establish neighboring cyclic
+semantics, not a semantics for this project's typed evidence, profiles,
+licenses, or target-world bridge. An extension would still have to define the
+project-specific operator and prove the last condition above.
+
 No such extension is assumed here. Consequently, this task makes no claim that an ungrounded positive cycle can or cannot create a grant under every possible cyclic semantics.
 
 ## 6. What the result says about adequacy values

@@ -480,7 +480,10 @@ Thus the output alone cannot distinguish:
 - a tiny failure `s=-0.001`;
 - a catastrophic failure `s=-10^6`.
 
-This is useful if failure should be quarantined—failed content contributes nothing—but harmful for diagnosis, learning, and transparency.
+This can silence that one nonpositive channel, which is useful inside an
+already authorized multiplicative content interface, but it does not
+quarantine a whole downstream network: biases and bypass paths can remain
+active. It is also harmful for diagnosis, learning, and transparency.
 
 ### 9.3 A two-channel signed representation
 
@@ -504,7 +507,10 @@ The pair is an exact representation of the signed scalar. A transparent architec
 - retain `s_minus` for diagnostics, defeat explanations, or learning;
 - treat `(0,0)` as exact boundary/indifference.
 
-This preserves quarantine at the content interface without destroying negative-margin information globally.
+Together with an exact symbolic active mask, this can preserve quarantine at a
+declared content interface without destroying negative-margin information
+globally. The ReLU pair alone does not authorize the route or prove
+non-explosion; Task 16's `F18` counterexample is the controlling correction.
 
 ### 9.4 The scale problem remains
 

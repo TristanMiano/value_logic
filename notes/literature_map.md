@@ -442,6 +442,25 @@ The primary sources force a conservative novelty statement. Structural induction
 
 No source above establishes that empirical certificates are infallible, that internal derivability entails target-world truth, or that unranked self-evaluation has a unique semantics.
 
+## 20. Checkpoint C locality and cyclic-semantics positioning
+
+Checkpoint C verified four primary sources needed to position the newest
+formal machinery at the same standard as the earlier stability and program
+logic results:
+
+| source | verified role | transfer boundary |
+|---|---|---|
+| `EswaranGrayLorieTraiger1976` | predicate locks make a logical predicate/index visible to insertions, addressing database phantoms | motivates Task 14B's negative collection-index read pattern; it does not prove the value-logic locality theorem |
+| `OHearnReynoldsYang2001` | local reasoning and the frame-rule pattern preserve assertions outside the modified resource | supplies the established vocabulary; the project's typed store, footprints, and disjoint-write proof are different objects |
+| `Kripke1975` | partial fixed-point treatment of truth in a Strong-Kleene setting | supplies a neighboring cyclic semantics, not a license or evidence operator |
+| `Fitting1985` | Kripke--Kleene fixed-point semantics for logic programs | explains the complete-order/operator/least-fixed-point checklist; it does not discharge the project's typed evidence or world-soundness obligations |
+
+The locality and cyclic-extension results therefore retain their current
+classification. Task 14B's clause-level footprint theorem is project-specific
+despite using a classical phantom-safe pattern. Task 14C proves only the finite
+acyclic/ranked fragment; a cyclic extension remains unconstructed and would
+need its own operator, fixed-point selection, and soundness theorem.
+
 ## Task conclusion
 
-Task 6 established the initial verified bibliography and division of intellectual labor among neighboring fields. Task 12A closes the core-related gaps around output production, explicit evidence, awareness, partiality, conformal validity, and safe baseline improvement; Task 14B adds the precise sequential-analysis context needed by the stability package; Task 14C positions proof-carrying recursive plans against the established programs-as-proofs, program-logic, refinement/quantitative-type, PCC, and certifying-algorithm traditions. The strongest immediate foundations are now AGM/KLM for revision, input/output logic for non-truth-producing consequence structure, Strong Kleene for the meaningful meet algebra, Gold/Kelly for convergence without known arrival, Wald/Darling–Robbins/Robbins for sequential testing and confidence sequences, selective/conformal prediction and safe policy improvement for operational uncertainty and fallback, Hoare/Curry--Howard and certificate-carrying computation for recursive plans, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, and IRL for nonidentifiability constraints. Their non-algebraic theorems remain source-specific until an exact translation is proved.
+Task 6 established the initial verified bibliography and division of intellectual labor among neighboring fields. Task 12A closes the core-related gaps around output production, explicit evidence, awareness, partiality, conformal validity, and safe baseline improvement; Task 14B adds the precise sequential-analysis context needed by the stability package; Task 14C positions proof-carrying recursive plans against the established programs-as-proofs, program-logic, refinement/quantitative-type, PCC, and certifying-algorithm traditions; and Checkpoint C adds the classical phantom/frame and Kripke--Fitting positioning for the newest locality and cyclic-boundary machinery. The strongest immediate foundations are now AGM/KLM for revision, input/output logic for non-truth-producing consequence structure, Strong Kleene for the meaningful meet algebra, Gold/Kelly for convergence without known arrival, Wald/Darling–Robbins/Robbins for sequential testing and confidence sequences, selective/conformal prediction and safe policy improvement for operational uncertainty and fallback, database/separation-logic locality patterns for update bookkeeping, Hoare/Curry--Howard and certificate-carrying computation for recursive plans, Kripke--Fitting for the explicitly deferred cyclic alternative, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, and IRL for nonidentifiability constraints. Their non-algebraic theorems remain source-specific until an exact translation is proved.

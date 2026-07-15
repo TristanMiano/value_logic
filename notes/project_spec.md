@@ -1,6 +1,6 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: Task 5 specification, version 1.5 after the Task 14C recursive-plan theorem package
+Status: living specification, version 1.6 after Checkpoint C neural/empirical review
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
@@ -18,6 +18,8 @@ Checkpoint B theorem/neural-roadmap review: 2026-07-12
 Checkpoint B proof-carrying/system-adequacy amendment: 2026-07-12
 Task 14B theorem-spine repair: 2026-07-14
 Task 14C proof-carrying plans and stratified assessment: 2026-07-14
+Tasks 15–18 neural interface, representation, and objective: 2026-07-14
+Checkpoint C neural/empirical/publication review: 2026-07-14
 
 ## Executive specification
 
@@ -194,7 +196,7 @@ ReLU is a reference model class, not a semantic axiom, uniqueness theorem, or pr
 
 ### 7.1 Representability
 
-There is an explicit finite ReLU network, or a controlled approximation result, mapping encoded records/cases to the required signed risks, margins, license indicators, active sets, or routing outputs. A representation result must state its domain, error, network size/depth, boundary convention, and whether inputs such as model identities and tolerances are fixed or variable.
+There is an explicit finite ReLU network, or a controlled approximation result, mapping permitted encoded records/cases to declared quantitative statistics, signed margins, payloads, grades, or utilities. Exact evidence validity, inclusive boundary state, direct `K_3`, active masks, and fallback normally remain in the external decoder rather than being counted as ReLU outputs. A representation result must state its domain, error, network size/depth, boundary convention, and whether inputs such as model identities and tolerances are fixed or variable.
 
 ### 7.2 Learnability
 
@@ -216,11 +218,13 @@ The provisional loss-first computation is:
 encoded model/domain/evidence record
     -> predicted risks or regrets
     -> component signed margins
-    -> positive ReLU license channels
-    -> active-set report and router/abstention decision
+    -> proposal-bound accepted evidence envelope
+    -> exact atom state and active mask
+    -> positive ReLU surplus for named consumers
+    -> masked router or fallback
 ```
 
-The signed preactivation remains semantically primary. `ReLU(s)>0` may gate licensed content and expose positive slack, but all nonpositive values collapse to zero. Where degree or cause of failure matters, the network must retain `s`, retain separate component margins, or use paired channels `(ReLU(s), ReLU(-s))`.
+The signed preactivation remains semantically primary. After the exact evidence gate and decoder establish support, `ReLU(s)>0` may expose positive slack to a named consumer, but it does not grant or quarantine by itself and all nonpositive values collapse to zero. Where boundary, degree, or cause matters, the system must retain `s`, separate component margins, the exact atom state, and evidence handles, or use paired channels `(ReLU(s), ReLU(-s))`. Exact active masking supplies authorization safety.
 
 A rectified channel may also be consumed as a downstream feature when it has a declared hypothesis index and its preactivation is a commensurate, certificate-valid adequacy grade—or a certified approximation with sufficient boundary separation. In that scoped score-as-content construction, a larger activation means larger positive normalized certificate-relative surplus, not automatically higher probability, world-level adequacy, lower unnormalized risk, or global superiority. General payloads and full diagnostics require separate channels. Exact joint use is permitted only when the representation is sufficient for both the declared license queries and the downstream computation; any use of margin magnitude must state units, normalization, or covariance under allowed rescaling.
 
@@ -415,13 +419,13 @@ Both public artifacts must open with the design questions: why `M` and `D` arise
 The motivating order should be:
 
 1. bounded action and theory succession;
-2. what is and is not forced by `Pi(M,D,epsilon)`;
-3. relative model granularity, finite recursive composition, and modeled loss;
-4. proof-carrying computation, theorem levels, and grounded system assessment;
-5. fallback/status quo and factored reliance;
-6. the location and preservation of information, including dual-use margins;
+2. what is and is not forced by `Pi(M,D,epsilon)`, including external and fallback-derived tolerance;
+3. finite-stage licenses, open evidence, overlap, gaps, and revision through one running example;
+4. relative model granularity, finite recursive composition, and modeled loss;
+5. proof-carrying computation, theorem levels, and grounded system assessment;
+6. the location and preservation of information, including the classifier/dual-use margin intuition;
 7. overlapping scientific model covers versus ReLU activation complexes;
-8. the finite-stage license language and semantics;
+8. the compact finite-stage license language and semantics;
 9. update, dominance, retention, and abstention results;
 10. architecture-neutral realization, the ReLU reference construction, justified alternatives, and learning objectives;
 11. synthetic experiments and counterexamples;
@@ -494,7 +498,7 @@ The following decisions are now project defaults unless a later theorem, experim
 27. Profile strength is typed and parameter-sensitive: atom refinement requires exact scope/mode side conditions, request-local profile refinement lifts uniformly to schemas, and certified undominated status refines relative undefeated status only on the same evaluated set and valid search view.
 28. `NoLicensedModel` and fallback behavior are selector-level consequences of an empty active set; they are not atom reasons. Full atlas, bridge, Pareto, splitting, and policy/value structures remain formal extensions.
 29. Model atomicity is relative to the request interface. A core `e` may hide a finite well-founded graph of object, frame, formulation, solver, evaluator, and action choices; `L_q` names the target criterion rather than any fallible model used to estimate it. Cyclic evaluator/license dependence is not part of the ordinary core without explicit fixed-point semantics.
-30. ReLU is the canonical reference construction because it makes signed margins, threshold gates, CPWL representation, and activation geometry explicit. The license semantics and diagnostic interface are architecture-neutral; neither universal approximation nor a successful ReLU construction establishes uniqueness or optimality. Checkpoint B nominated only monotone/lattice and hard-MoE hypotheses; Checkpoint C owns any trained comparison.
+30. ReLU is the canonical reference construction because it makes signed margins, threshold gates, CPWL representation, and activation geometry explicit. The license semantics and diagnostic interface are architecture-neutral; neither universal approximation nor a successful ReLU construction establishes uniqueness or optimality. Checkpoint C selects no alternative for the minimum empirical core and permits only a separately powered hard-MoE seam extension.
 31. Update invariance is indexed by both an allowed update class and an observable. Impact-path absence is sufficient under change-completeness and necessary only with path realizability; diagnostic, atom-value, public-status, and grant invariance are not interchangeable.
 32. The typed atom refinements are support-sound. Profile refinement is sound generally and relatively complete within finite independently realizable instantiation fibers; unrepresented conjunctive interactions and schema-uniform completeness are outside that theorem.
 33. The minimal status representation is the quotient of the realizable atom-vector set by the supported profile queries. Singleton profiles make this quotient equality on `V`; `3^n` and `ceil(n log_2 3)` require full ternary independence, and exact public decoding must distinguish the `WF` branch from meaningful status without requiring a literal internal tag.
@@ -509,14 +513,14 @@ The following decisions are now project defaults unless a later theorem, experim
 42. The default neural factorization learns continuous atom sufficient statistics and calibrated uncertainty; exact metadata, mechanically decidable `WF`, profile roles, `K_3` aggregation, active-set masking, fallback, evaluated-set identity, and provenance remain symbolic or external unless a task explicitly makes one of them a learned evidence model.
 43. The query quotient is consumer-relative. Status-only codes need to refine `V/~_F` plus the required well-formedness observations, while diagnostic-preserving clients require a finer code. Discrete bit bounds do not imply real neural output width, and the `Ill/Well` presentation is a canonical decoded normal form rather than a mandatory internal representation.
 44. Task 17 proves architecture-neutral exact factorization, margin-robust decoding with the explicit conservative decision band, an exact finite ReLU construction for global finite CPWL statistics with an external decoder, a conforming-polyhedral seam characterization/obstruction, and the finite-output versus expandable-library limitation. Universal approximation alone satisfies none of these results.
-45. The leading architecture alternatives before Checkpoint C are a monotone/lattice model for explicitly proved monotone coordinates and a hard mixture-of-experts router for discontinuous seams. The symbolic decoder is shared infrastructure. Task 15 operationalizes the graph/set hypothesis as a matched comparison between a flat plan-ID code and an isomorphism-aware typed DAG on extensionally equal payloads that differ in cost, robustness, grade propagation, or explanation; Checkpoint C may still reject it for insufficient power or fairness.
-46. The experiment is tiered: core succession/status/calibration first, routing/seams second, and composed-plan or fallible-estimator stress tests only when adequately powered. Activation-region alignment remains exploratory rather than a confirmatory success criterion.
+45. Checkpoint C authorizes no alternative architecture in the minimum empirical core. Hard mixture-of-experts is the sole eligible optional comparator because it directly tests discontinuous seam mismatch; it proceeds only after a separate power gate and otherwise remains a follow-up against the frozen generator. Monotone/lattice is deferred because tolerance monotonicity already belongs to the exact decoder, and the graph/set `F33` comparison is deferred until many independent structural separators can power it.
+46. The minimum publishable experiment is core succession/status plus `F35/H18.1`, registered marginal calibration `F36/H18.2`, an in-regime noninferiority guard, and Task 18 ablations 1–3 and 5. Routing/seams and certificate/system assessment are separately gated extensions; deterministic integration witnesses are not renamed powered empirical results. Activation-region alignment remains exploratory rather than a confirmatory success criterion.
 47. A finite recursively structured model is represented by a certificate-carrying executor whose output separates payload, quantitative grade/bound, and evidence/provenance. Task 14C proves by topological induction that locally certified typed constructors produce a checked root bundle whose proof erasure is the ordinary computation; Task 14A's path-sensitivity recurrence is a concrete grade/certificate transformer. The composite receives a new certificate rather than inheriting the conjunction of component grants.
 48. “Theorem” is level-indexed. Labelled object results, internal value-logic derivations, external metatheorems, and empirical certificate judgments are not interchangeable. Curry–Howard applies only to formal derivations/proof terms under a named checker; empirical support requires a certificate-mode world bridge. Task 14C's primary-source audit classifies proof/program correspondence, Hoare composition, refinement/quantitative typing, PCC, and certifying algorithms as prior machinery.
 49. A ReLU activation may be both positive certificate-relative adequacy surplus and downstream content when its channel, statistic, units, calibration, certificate validity or verified error envelope, domain, boundary, and consumer are declared and the code is jointly sufficient. Arbitrary hidden units and unnormalized cross-channel magnitudes receive no such interpretation.
 50. Joint positive rescaling can preserve a license boundary while changing margin magnitude. Any downstream use of the magnitude must transform covariantly or use a fixed normalization; multiplying a payload by a margin defines a new plan requiring evaluation.
 51. A frozen value-logic implementation may be assessed as a plan under an independently specified meta-context. Task 14C proves that finite acyclic support reaches typed bases when every zero-premise support is an accepted base, and that strict finite-rank dependencies with total deterministic local evaluators have a unique assessment. Its own assertion is not its certificate or a target-world fact, and direct self-license cycles require explicit fixed-point semantics.
-52. Tasks 14C–18 are complete. Task 18 fixes the structured statistic/uncertainty objective, held-out calibration path, independent atom-classification baseline, and separate router loss; Task 19 tests system-level adequacy using separate audit evidence after Checkpoint C audits the complete neural blueprint.
+52. Tasks 14C–18 and Checkpoint C are complete. Task 18 fixes the structured statistic/uncertainty objective, held-out calibration path, independent atom-classification baseline, and separate router loss. Checkpoint C confirms one hybrid blueprint, adds proposal-binding and leakage controls, chooses no core architecture comparator, and requires Task 19 preregistration followed by a separate pilot/freeze gate before implementation or final testing.
 53. Missing evidence is an open atom diagnostic, whereas a missing required or report diagnostic makes a purported well-formed core state invalid. Diagnostic payloads form a disjoint sum, and comparison atoms without a valid exact-set search are open unless a valid dominator already refutes them.
 54. The architecture-neutral atom input is its exact typed address plus the canonical projection of its Task 14B address-local read footprint. Profile slots form addresses and assign required/report/safety roles; two slots instantiating the same address consume the same atom record. Exact metadata and handles may have learned embeddings but cannot survive only as anonymous latent coordinates when the decoder or audit depends on their identity.
 55. The neural interface is query-family-specific. A status-only client may use the required `WF` observations plus `V/~_F`; an audit client retains unquotiented address-indexed diagnostics, safety roles, statistics/envelopes, and exact evidence references over a declared future address horizon. No finite code is claimed sufficient for arbitrary future profiles.
@@ -543,13 +547,19 @@ The following decisions are now project defaults unless a later theorem, experim
 76. Production states remain symbolic. Exact `WF`, evidence state, certificate polarity, inclusive support, strict refutation, `K_3` meet, active mask, and fallback derive the result. Independent three-way atom cross-entropy is the simple baseline; direct atom, aggregate status, reason, and self-grant heads are nonauthorizing auxiliaries or ablations.
 77. Router learning is separate from licensing. Pairwise ranking uses only exact-active, externally resolved comparable pairs; inactive, missing, unknown, and tied pairs are masked. Selective risk is reported jointly with coverage and fallback-inclusive deployed risk, and a fallback-induced threshold is distinct from a fixed adequacy tolerance unless the policy explicitly identifies them.
 78. Unit-bearing statistic losses and dual-use surplus channels use registered scales. Positive joint rescaling leaves the standardized objective, exact boundary state, and normalized surplus unchanged; regularization occurs in normalized coordinates and supplies no semantic-alignment guarantee.
+79. An accepted calibration envelope is an immutable bound record tying atom/statistic schema, candidate, units, scorer hash, split manifest, calibration procedure and parameters, scope/group, polarity, checker/version, validity interval, and provenance. The decoder rejects cross-record substitution.
+80. The experiment separates train, envelope calibration, reject/router validation, system audit, and final confirmation by latent generator world/trajectory, provenance root, and plan family. Atom rows, candidates, time variants, and training seeds are not independent target-world replicates.
+81. Structured and atom-cross-entropy arms share the permitted pre-outcome input and exact `WF`/missingness/validity/polarity machinery. Common endpoints are tolerance-transfer and boundary/status behavior; interval coverage and class-probability calibration remain different objects.
+82. Atomwise marginal coverage does not entail profile-conjunction, selected-subset, routed, or system guarantees. A frozen system's candidate certificate is built from lower-ranked audit data and its status is tested on untouched confirmation data; self-confidence-only pseudo-evidence is invalid by construction.
+83. The public narrative order is physics succession, reliance before final truth, fallback/status quo and the origin of `epsilon`, finite-stage licenses/overlap/revision, then the classifier and dual-use ReLU intuition. The neural fit was deliberately engineered at a typed boundary and mathematically delimited; the project does not claim that every continuous target is CPWL.
+84. Task 17's named state-plus-surplus code is minimal only for a consumer family containing all of its coordinate projections. It is a coordinate-separation result, not information-theoretic optimality for arbitrary external consumers, and it is not a headline contribution.
 
-## 18. Specification gates after Checkpoint B
+## 18. Specification gates after Checkpoint C
 
-Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A selected mandatory profile-indexed `Lic_P`; Checkpoint A1 repaired the witness and identified theorem/executability risks; Task 11B supplied the executable kernel. Tasks 12–14A supplied continuation, compact-core, metatheory, and quantitative transport results. Task 14B then closed Checkpoint B's focused gate by proving typed locality/change-completeness and repairing the statements, citations, and executable kernel. Task 14C closed the recursive-plan gate with proof erasure, a concrete path-sensitivity certificate, root-license lifting, grounded provenance, finite-rank system assessment, and the exact Curry--Howard/self-endorsement boundaries. Task 15 fixed the smallest query-family-specific atom and annotated-plan encoding contract, Task 16 fixed its hybrid ReLU reference realization, Task 17 proved or sharply delimited the seven representation targets, and Task 18 selected the structured statistic/uncertainty objective, held-out calibration path, independent atom-classification baseline, and separate router objective. Remaining gates are:
+Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A selected mandatory profile-indexed `Lic_P`; Checkpoint A1 repaired the witness and identified theorem/executability risks; Task 11B supplied the executable kernel. Tasks 12–14A supplied continuation, compact-core, metatheory, and quantitative transport results. Task 14B then closed Checkpoint B's focused gate by proving typed locality/change-completeness and repairing the statements, citations, and executable kernel. Task 14C closed the recursive-plan gate with proof erasure, a concrete path-sensitivity certificate, root-license lifting, grounded provenance, finite-rank system assessment, and the exact Curry--Howard/self-endorsement boundaries. Task 15 fixed the smallest query-family-specific atom and annotated-plan encoding contract, Task 16 fixed its hybrid ReLU reference realization, Task 17 proved or sharply delimited the seven representation targets, and Task 18 selected the structured statistic/uncertainty objective, held-out calibration path, independent atom-classification baseline, and separate router objective. Checkpoint C verified the combined hybrid blueprint, fixed the minimum empirical core and trust boundaries, selected hard MoE only as a conditionally powered seam extension, and added publication-narrative controls. Remaining gates are:
 
-- whether one alternative should be trained under a matched interface and adequate power (Checkpoint C);
-- an independently defined synthetic generator and separate functional, calibration, retention, routing, and activation-alignment metrics (Tasks 19–21);
+- preregistration, independent generator/oracle construction, disjoint pilot power analysis, and a frozen five-role protocol before learner implementation (Tasks 19–19A);
+- matched learner implementation and a single embargoed confirmatory run, followed by claim adjudication at Checkpoint C1 (Tasks 20–21 and Checkpoint C1);
 - whether the recursive-judgment information promise receives a theorem/countertheorem or is demoted, and the strongest optional transparency claim that survives policy/value nonidentifiability and causal tests (Tasks 22–23, including Task 22A).
 
 These are open research questions and construction targets rather than known defects in the completed core. A later task may revise a default, but it must record what evidence or formal obstacle caused the revision.

@@ -2,7 +2,7 @@
 
 Created: 2026-07-14
 Task: TODO Task 15
-Status: architecture-neutral encoding contract; instantiated by Tasks 16–17; training objective remains open
+Status: architecture-neutral contract instantiated by Tasks 16–18 and audited at Checkpoint C
 
 ## Executive decision
 
@@ -331,7 +331,10 @@ An explicit encoding retains the finite typed labeled graph: node operators and 
 
 > When structurally distinct plans are extensionally equal on observed payloads but differ in cost, robustness, grade propagation, or explanation, an explicit isomorphism-aware DAG representation should preserve and generalize those distinctions better than a matched flattened plan-ID baseline.
 
-This is falsifiable and not yet supported. It justifies considering a graph/set model at Checkpoint C; it does not require one, and it does not show that graph structure helps a payload-only task.
+This is falsifiable and not yet supported. Checkpoint C defers the trained
+graph/set comparison until a study has many independent typed plan families and
+true structural separators; the deferral is not an empirical verdict. Nothing
+here shows that graph structure helps a payload-only task.
 
 ## 8. Required invariances and non-invariances
 
@@ -498,4 +501,4 @@ In particular, this document does **not** assume that a learned target is CPWL, 
 
 Task 15 supplies a compact neural/symbolic boundary for the surviving logic. It can encode ordinary model/domain cases, variable libraries, and recursively structured plans without making the profile a hidden cause, flattening evidence into reason labels, or treating neural output as proof. It also gives the graph/set comparator a concrete structural hypothesis while leaving architecture choice open.
 
-Task 16 derives the ReLU reference architecture in [`02_relu_architecture.md`](02_relu_architecture.md), preserving the exact metadata and decoder boundary fixed here, exposing separate plan payload/grade/validity/evidence channels, and treating dual-use activations only as a hypothesis-indexed construction. Task 17's [`03_representation_theorems.md`](03_representation_theorems.md) now proves the scoped positive construction and exact limitations. Task 18 is next.
+Task 16 derives the ReLU reference architecture in [`02_relu_architecture.md`](02_relu_architecture.md), preserving the exact metadata and decoder boundary fixed here, exposing separate plan payload/grade/validity/evidence channels, and treating dual-use activations only as a hypothesis-indexed construction. Task 17's [`03_representation_theorems.md`](03_representation_theorems.md) proves the scoped positive construction and exact limitations, and Task 18's [`04_losses.md`](04_losses.md) fixes the structured statistic objective, held-out calibration proposal, symbolic decoder, atom-classification baseline, and separate router loss. Checkpoint C retains this architecture-neutral interface and makes its leakage, certificate-binding, and split requirements explicit for the experiment.

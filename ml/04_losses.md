@@ -114,21 +114,23 @@ typed region and score rather than an arbitrary scalarization.
 
 ### 2.1 Data split contract
 
-The minimum protocol is:
+After Checkpoint C, the experiment protocol is:
 
 ```text
-train          fit theta and training-only normalization constants
-calibration    fit eta_cal and learned-reject/router thresholds
-test/audit     evaluate once; construct no training or calibration target
+train                       fit theta and training-only normalization constants
+envelope calibration        fit eta_cal for the frozen scorer
+reject/router validation    fit rejection and selection thresholds
+system audit                construct lower-ranked system evidence
+final confirmation          evaluate the fully frozen system once
 ```
 
-Task 19 may split `calibration` again into envelope calibration and
-selection/threshold validation. The split identifiers, generator version,
-candidate registry, scopes, and grouping rules are stored in the calibration
-record. Train/calibration/test examples must be disjoint. Adaptive domain,
-group, or model selection performed after inspecting calibration results needs
-another held-out split, simultaneous correction, or a certificate mode that
-explicitly covers the adaptation.
+The split identifiers, generator version, candidate registry, scopes, and
+grouping rules are stored in the appropriate records. The five roles must be
+disjoint at the independent generator-world/trajectory, provenance-root, and
+plan-family levels registered in Task 19; row-ID disjointness alone is
+insufficient. Adaptive domain, group, or model selection performed after
+inspecting a held-out role needs another held-out role, simultaneous correction,
+or a certificate mode that explicitly covers the adaptation.
 
 ## 3. The primary statistic objective
 
@@ -647,7 +649,7 @@ The first implementation should follow this order:
    the center mapping, then fit the radius with the interval term. The scalar
    `L_primary` records the component tradeoff for model selection; joint shared-
    trunk fine-tuning is a named ablation. Tune ordinary hyperparameters without
-   inspecting the final test/audit split.
+   inspecting the system-audit or final-confirmation roles.
 4. Freeze the scorer. Compute calibration residuals and the finite
    `eta_cal` proposal on the calibration split.
 5. Run the external calibration/checker procedure and record assumptions,
@@ -655,11 +657,16 @@ The first implementation should follow this order:
    remain open.
 6. Decode all atom targets symbolically, derive profiles/public outcomes, and
    construct exact active masks.
-7. Train or tune the router on active, resolved comparisons only. Freeze it.
-8. Evaluate once on the test/audit split, including the cross-entropy baseline
-   and ablations.
-9. Construct system-level evidence from the separate Task 19 audit protocol;
-   do not reuse the system's own confidence as its certificate.
+7. Train or tune rejection thresholds and the router on their separate
+   validation role, using active, resolved comparisons only. Freeze them.
+8. Evaluate the learned arms and ablations on the lower-ranked system-audit
+   role and construct system-level evidence under the separate Task 19 audit
+   protocol. Do not reuse the system's own confidence as its certificate.
+9. Evaluate the completely frozen system and its audit-derived status once on
+   the untouched final-confirmation role. The five roles--train, envelope
+   calibration, reject/router validation, system audit, and final
+   confirmation--must be blocked by the independent units registered in Task
+   19, not merely by row identifiers.
 
 Joint end-to-end training is not forbidden forever, but it must preserve the
 same data, gradient, and authorization boundaries. In particular, a router or
@@ -746,7 +753,8 @@ small mathematical contract without a neural library. They verify:
 - exact-active/resolved pair masking in router ranking;
 - joint selective risk, coverage, and fallback-inclusive deployed risk;
 - scale-covariant, symbolically gated dual-use surplus; and
-- train/calibration/test split disjointness.
+- primitive train/calibration/test ID-overlap rejection (Task 19A must extend
+  this to the frozen five-role, group-blocked manifest).
 
 These are regression witnesses, not a proof assistant, trainer, empirical
 result, or accepted certificate.

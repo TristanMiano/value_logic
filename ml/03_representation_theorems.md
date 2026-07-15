@@ -2,7 +2,7 @@
 
 Created: 2026-07-14
 Task: TODO Task 17
-Status: seven frozen targets adjudicated; training and calibration remain Task 18
+Status: seven frozen targets adjudicated; Task 18 fixed training and calibration; Checkpoint C audited paper positioning
 
 ## Executive result
 
@@ -632,6 +632,12 @@ This is more than the bare definition-level condition: it identifies an
 explicit finite channel family, proves its minimal quotient for a
 coordinate-complete consumer class, and gives the exact ReLU realization of
 its numerical half.
+
+The minimality clause is relative to a consumer family deliberately containing
+every state and surplus coordinate projection. It is therefore a
+coordinate-separation result, not an information-theoretic optimality theorem
+for an independently supplied downstream consumer family; a weaker family may
+admit a strictly coarser quotient.
 
 ### 7.3 The classifier example
 

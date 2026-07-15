@@ -352,10 +352,27 @@ The reference implementation now mirrors the repaired semantics:
 
 ## 8. Result classification and project impact
 
+The negative-read device has a classical database analogue. Predicate locking
+was introduced to prevent a transaction from missing newly inserted records
+that satisfy a predicate—the database **phantom** problem
+(`EswaranGrayLorieTraiger1976`). Here a collection-index key plays the analogous
+bookkeeping role: absence is part of the read projection, and every insertion
+that could defeat that absence must write the index. This note does not import
+a concurrency-control theorem; Theorem 1 is still a clause-by-clause locality
+proof for this license calculus.
+
+The phrase **frame rule** is likewise used by analogy with local reasoning and
+separation logic (`OHearnReynoldsYang2001`), where a command that touches one
+resource can preserve a suitably disjoint assertion. Corollary 2 instead
+follows directly from this project's typed read/write agreement theorem. The
+shared pattern is locality under noninterference, not identity of state models,
+ownership semantics, or proof rules.
+
 | result | classification | project role |
 |---|---|---|
 | typed complete-diagnostic locality | calculus-specific case theorem | closes the main Task 14B proof gate |
-| disjoint-write frame rule | direct corollary | implementation/neural dependency contract |
+| negative collection-index reads | classical phantom-safe pattern, adapted here | makes future insertion visible to the calculus-specific footprint |
+| disjoint-write frame rule | classical locality vocabulary; direct project corollary | implementation/neural dependency contract |
 | canonical graph change-completeness | calculus-specific corollary | makes Task 14's abstract persistence result applicable |
 | necessity under path realizability | previously proved abstract characterization | remains instance- and observable-relative |
 | statistical index and stopping-time repairs | correctness repairs | preserve the scoped Task 12 results |

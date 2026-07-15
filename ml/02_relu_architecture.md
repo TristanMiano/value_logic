@@ -482,7 +482,10 @@ The hard router must expose the chosen tag, exact candidate set, route trace, fa
 
 Task 15's explicit typed-DAG model remains an optional empirical comparator for recursive-plan grade and explanation generalization. It must emit the same payload/grade/envelope proposals and preserve the same external checker/provenance packet. Task 16 does not add it to the ReLU reference or select it for training.
 
-Checkpoint C will retain at most one trained non-ReLU comparison unless distinct hypotheses are adequately powered.
+Checkpoint C selects no architecture alternative for the minimum empirical
+core. Hard MoE is the sole eligible optional comparison and proceeds only if a
+separate conforming-versus-mismatched seam study is adequately powered;
+monotone/lattice and graph/set comparisons are deferred.
 
 ## 13. Task 17 proof obligations and disposition
 
