@@ -393,7 +393,260 @@ then means that `person` has the largest positive normalized surplus among the d
 
 An `argmax` may be a declared label-selection policy only after the full required profile produces an exact active mask. It returns a selected label, not a new adequacy fact. Boundary ties need an explicit rule; an empty active set returns the named unknown/defer/fallback action.
 
-### 8.4 Default comparison: separate content and grade
+### 8.4 Worked toy: one plan, three requirements
+
+This example is the canonical reader-facing witness for the sign semantics. A
+candidate plan `M` is considered for one fixed domain and request. Its required
+profile is the conjunction
+
+```text
+P = A and I and C,
+```
+
+where
+
+```text
+A: expected task loss J(M) <= 0.20,
+I: J(M) <= J(F)-Delta = 0.35-0.05 = 0.30,
+C: latency T(M) <= 50 ms.
+```
+
+`A` is an adequacy atom, `I` is improvement over the fallback, and `C` is a hard
+constraint. Supporting `A` alone does not give the full license. Nor does the
+full license imply that `M` is true, globally best, or selected; it says only
+that this plan presently satisfies every required atom under the named evidence
+and context.
+
+The levels are therefore:
+
+1. **Predicted adequacy:** the learned statistic lies on the favorable side of
+   the threshold; this can be wrong and is not yet accepted evidence.
+2. **Certificate-relative atom support:** accepted evidence conservatively
+   supports `A` (or another individual atom).
+3. **Full profile license:** the request is well formed and every atom required
+   by `P` is supported. This is the `Granted` status for the fixed use plan.
+4. **Selection/use:** a later policy chooses among fully licensed plans, or uses
+   the fallback. Licensing does not force selection.
+
+#### Accepted intervals and two signed margins
+
+For a scalar upper-bound atom with threshold `t`, accepted interval
+`U=[lower,upper]`, and registered positive scale `sigma`, retain both
+
+```text
+s_support = t-upper,
+s_refute  = lower-t,
+z_support = ReLU(s_support/sigma),
+z_refute  = ReLU(s_refute/sigma).
+```
+
+Subject to valid evidence and its permitted polarity, the exact decoder uses
+
+```text
+Supported  when s_support >= 0,       # inclusive boundary
+Refuted    when s_refute  > 0,        # strict counter-side separation
+Open       otherwise.
+```
+
+The signed quantity `s_support` is **slack**: it is a distance from the support
+boundary in the original units and can be positive, zero, or negative. In this
+project, **surplus** names the normalized positive part `z_support` after the
+interval and evidence mode have been accepted. Thus positive slack and surplus
+refer to the same favorable direction, but they are not quite synonyms:
+surplus emphasizes the rectified, normalized number safe to expose to a named
+downstream consumer. Neither is a full license.
+
+Suppose the accepted envelopes are
+
+```text
+U_J = [0.14,0.18],       sigma_J = 0.01,
+U_T = [43,47] ms,        sigma_T = 1 ms.
+```
+
+Then
+
+```text
+                 s_support/sigma     s_refute/sigma     z_support
+A: loss <= .20          2                   -6               2
+I: loss <= .30         12                  -16              12
+C: time <= 50           3                   -7               3
+```
+
+All three exact atom states are `Supported`, and the normalized support-surplus
+vector is
+
+```text
+z = (2,12,3).
+```
+
+The same accepted loss interval supplies both `A` and `I`. The architecture
+therefore does not need one learned head per logical atom.
+
+#### What negative, zero, open, refuted, missing, and invalid mean
+
+Holding the adequacy threshold at `0.20` and `sigma_J=0.01` gives the complete
+boundary picture:
+
+| evidence for `J(M)` | normalized `s_support` | normalized `s_refute` | exact state | `z_support` | diagnostic reading |
+|---|---:|---:|---|---:|---|
+| accepted `[0.14,0.18]` | `2` | `-6` | `Supported` | `2` | strict positive support slack |
+| accepted `[0.17,0.20]` | `0` | `-3` | `Supported` | `0` | supported exactly at the inclusive boundary |
+| accepted `[0.18,0.22]` | `-2` | `-2` | `Open` | `0` | interval crosses the boundary |
+| accepted `[0.23,0.25]` | `-5` | `3` | `Refuted` | `0` | counter-side interval is strictly separated |
+| no evidence record | not semantically defined | not semantically defined | `Open` | stored as `0` only after masking | `Missing` |
+| expired/rejected record | untrusted even if numerically favorable | untrusted | `Open` | forced to `0` downstream | `Invalid/expired` |
+
+A negative support margin is not itself a logical state. Both the open interval
+and the refuted interval have negative `s_support`; the separate refutation
+margin and exact evidence state distinguish them. `Missing` and `Invalid` are
+diagnostic reasons for an open atom, not numerical forms of zero.
+`Refuted` likewise means that accepted counter-side evidence supports violation
+of this atom at this stage; it is not a declaration of final metaphysical
+falsehood.
+
+Negative values remain useful. A signed negative `s_support` records distance
+from established support and can be used for diagnostics, boundary-aware
+training, prioritizing new evidence, or sensitivity analysis. It can be passed
+through an affine coordinate directly or retained in paired ReLU form
+
+```text
+s_support = ReLU(s_support)-ReLU(-s_support).
+```
+
+But `ReLU(-s_support)>0` means only support shortfall. It does not mean
+refutation; the open row demonstrates why the distinct `s_refute`, evidence
+polarity, and exact decoder are required.
+
+Consequently, a rectified zero has no unique semantic reading. It can accompany
+supported equality, an unresolved interval, a refuted atom, missing evidence,
+or invalid evidence. The exact state and diagnostic determine which case is
+present.
+
+#### Encode the logical statement as a vector
+
+Use exact one-hot atom states
+
+```text
+Supported = (1,0,0),
+Open      = (0,1,0),
+Refuted   = (0,0,1).
+```
+
+For audit preservation, one possible fixed-request vector is
+
+```text
+v = [WF
+     | state_A | state_I | state_C
+     | valid_A,valid_I,valid_C
+     | missing_A,missing_I,missing_C
+     | m_support_A,m_support_I,m_support_C
+     | m_refute_A,m_refute_I,m_refute_C
+     | z_support_A,z_support_I,z_support_C
+     | z_refute_A,z_refute_I,z_refute_C].
+```
+
+Here `m_support=s_support/sigma` and `m_refute=s_refute/sigma` retain the signed
+normalized margins. Missing or invalid rows use a declared masked placeholder
+or sentinel for these coordinates; `valid` and `missing` make clear that the
+placeholder has no margin semantics.
+
+For the strictly supported envelopes above,
+
+```text
+v = [1
+     | 1,0,0 | 1,0,0 | 1,0,0
+     | 1,1,1
+     | 0,0,0
+     | 2,12,3
+     | -6,-16,-7
+     | 2,12,3
+     | 0,0,0].
+```
+
+This is intentionally redundant. The one-hot states answer the logic query;
+validity and missingness preserve why a state is usable or open; the signed
+margins retain favorable and unfavorable boundary distances; and the surplus
+coordinates retain nonnegative numerical room for downstream computation. A
+status-only consumer could use a smaller quotient, but it would lose audit and
+quantitative information.
+
+#### A simple exact ReLU operation on the vector
+
+Let `b_A,b_I,b_C` be the exact `Supported` coordinates and let `WF` be binary.
+For this fixed four-bit input, a ReLU computes conjunction exactly:
+
+```text
+g = ReLU(WF+b_A+b_I+b_C-3).
+```
+
+Because the inputs are exact bits, `g=1` iff the request is well formed and all
+three atoms are supported; otherwise `g=0`. In the displayed vector,
+
+```text
+g = ReLU(1+1+1+1-3) = 1.
+```
+
+This `g` is the grant bit for this already fixed request, not the complete
+license object: the latter also names `M`, domain, task, profile, stage,
+evidence, and provenance. The full one-hot vector remains necessary to
+distinguish the other public outcomes:
+
+```text
+WF=0                         -> Undefined/ill formed,
+WF=1 and any required R      -> Refused,
+WF=1, no R, and some O       -> Withheld,
+WF=1 and every required S    -> Granted.
+```
+
+The boundary row demonstrates why raw ReLU zero cannot replace the exact bit.
+If `A` is supported at equality, then `b_A=1` but `z_support_A=0`, so `g` can
+still equal `1`. If `C` is missing, then `state_C=Open`, `b_C=0`,
+`missing_C=1`, and `g=0`; this is `Withheld`, not `Refused`.
+
+#### Use surplus in a later computation without letting it grant
+
+Suppose a declared post-license ranking plan computes
+
+```text
+r_raw = ReLU(0.5 z_A + 0.1 z_I + 0.2 z_C - 1).
+```
+
+For `z=(2,12,3)`,
+
+```text
+r_raw = ReLU(1+1.2+0.6-1) = 1.8.
+```
+
+This illustrates genuine dual use: the same certificate-relative surplus
+coordinates quantify room inside their atom boundaries and feed a later
+numerical computation. But `r_raw` cannot grant the plan. If latency evidence
+is missing, `z_A` and `z_I` can still make `r_raw` positive. The selector must
+first require exact `g=1` (or equivalently restrict itself to the exact active
+set); otherwise it reproduces the falsified positivity-as-grant error. A
+positive ranking value ranks only already licensed candidates.
+
+#### Does this require more than one neural head?
+
+No fixed count is logically required. This toy can use one vector-valued neural
+output
+
+```text
+(center_J, proposed_radius_J, center_T, proposed_radius_T, optional_payload),
+```
+
+or separate loss, latency, and payload heads. `A` and `I` reuse the same loss
+coordinates with different thresholds. Held-out calibration and an external
+checker turn proposed regions into accepted envelopes. The state one-hots,
+validity/missing diagnostics, profile conjunction, grant bit, active mask, and
+fallback are exact derived quantities, not learned heads. A payload head is
+needed only if the plan must also produce a prediction or action, and its
+payload remains distinct from the adequacy surplus.
+
+The requirement is therefore **separate information and authorization paths**,
+not “one head per proposition.” One physical output layer may contain several
+typed coordinates, while one learned statistic may serve several logical atoms.
+
+### 8.5 Default comparison: separate content and grade
 
 The safer general interface is
 
@@ -405,7 +658,7 @@ with the selector routing the whole payload of a licensed plan. This preserves d
 
 The dual-use form is appropriate when a named downstream computation genuinely consumes normalized margin features. A fixed outgoing column `w_i z_i` is part of that declared downstream network. Multiplying a variable expert payload `y_i(x)` by `z_i`, or using margin as a mixture weight, creates a different generally non-CPWL computation with altered units and boundary behavior. It is forbidden unless that combined plan and its calibration/risk are separately specified and licensed.
 
-### 8.5 Scale covariance obligation
+### 8.6 Scale covariance obligation
 
 Under a joint positive rescaling of risk, tolerance, and error bounds by `lambda`, license status is unchanged while the raw margin is multiplied by `lambda`. Either normalization must transform as
 

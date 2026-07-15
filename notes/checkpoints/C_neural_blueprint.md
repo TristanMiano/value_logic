@@ -64,6 +64,8 @@ author's classifier intuition survives as a **named, staged dual-use surplus
 construction**, not as the claim that ordinary positive activations are grants.
 This distinction should be taught explicitly in both public artifacts because
 the rejected interpretation is natural and therefore likely to recur.
+Task 16 now supplies the canonical three-atom numerical/vector example that the
+experiment and both public artifacts must reuse.
 
 No completed task is reopened. The changes below are prospective integration,
 experimental, and publication controls.

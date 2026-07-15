@@ -502,6 +502,9 @@ boundary-aware atom state, profile aggregation, and the active mask determine
 authorization. The activation may then be consumed numerically by a declared
 downstream plan; it does not authorize that plan by its sign.
 
+The complete numerical and vector calculation is worked through in
+[`ml/02_relu_architecture.md`, §8.4](../ml/02_relu_architecture.md#84-worked-toy-one-plan-three-requirements).
+
 ### 9.4 Information lost for nonpositive scores
 
 For every `s<=0`,

@@ -1,6 +1,6 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: living specification, version 1.7 after Checkpoint C ReLU-sign clarification
+Status: living specification, version 1.8 after canonical ReLU-semantics toy
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
@@ -21,6 +21,7 @@ Task 14C proof-carrying plans and stratified assessment: 2026-07-14
 Tasks 15–18 neural interface, representation, and objective: 2026-07-14
 Checkpoint C neural/empirical/publication review: 2026-07-14
 Checkpoint C ReLU-sign interpretation clarification: 2026-07-14
+Canonical ReLU-semantics toy example: 2026-07-14
 
 ## Executive specification
 
@@ -555,6 +556,7 @@ The following decisions are now project defaults unless a later theorem, experim
 83. The public narrative order is physics succession, reliance before final truth, fallback/status quo and the origin of `epsilon`, finite-stage licenses/overlap/revision, then the classifier and dual-use ReLU intuition followed immediately by its sign-semantics correction. The neural fit was deliberately engineered at a typed boundary and mathematically delimited; the project does not claim that every continuous target is CPWL.
 84. Task 17's named state-plus-surplus code is minimal only for a consumer family containing all of its coordinate projections. It is a coordinate-separation result, not information-theoretic optimality for arbitrary external consumers, and it is not a headline contribution.
 85. The public artifacts must present the ReLU-sign correction as a semantic ladder: arbitrary positivity, predicted positive slack, accepted certificate-relative atom surplus, and full exact profile licensing are distinct. Supported equality is a required zero-activation counterexample, and bias/bypass behavior is the required counterexample to zero-as-quarantine. This is an author-intuition repair, not a minor implementation caveat.
+86. The canonical neural-semantics example is the three-required-atom profile `A and I and C`: loss adequacy, fallback improvement, and a latency constraint. It retains signed support/refutation margins, exact `K_3` one-hots, evidence validity/missingness, normalized surplus, and `WF`; a fixed ReLU conjunction over exact support bits may encode the grant answer for the fixed request, while a separate ReLU may consume surplus only after the exact active mask. Tasks 19, 29, and the public adaptations reuse this example rather than silently changing the meanings of zero, slack, surplus, adequacy, license, or selection.
 
 ## 18. Specification gates after Checkpoint C
 
