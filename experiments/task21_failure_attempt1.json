@@ -1,0 +1,34 @@
+{
+  "artifact_observation": {
+    "fit_marker_sha256": "ad48b716945edb146ed3692a26a2ffe93f32e13afe78e3d560d75a6fee57f3be",
+    "model_states_sha256": "38a939225b373694c194015b3b18c4e4be1a2a67c30fa8f065408b476894a9e7",
+    "raw_results_exists": false,
+    "trace_bytes_approx_gib": 0.535,
+    "trace_shards_by_fit_seed": {
+      "101": 50,
+      "211": 50,
+      "307": 50,
+      "401": 41
+    },
+    "trace_shards_total": 191
+  },
+  "classification": "unread_infrastructure_failure",
+  "command": "python -m experiments.run_experiment --task21-final RUN-VALUE-LOGIC-FINAL-V1",
+  "date": "2026-07-15",
+  "elapsed_minutes_approx": 35,
+  "failure": {
+    "fatal_message": "Fatal Python error: _PyEval_EvalFrameDefault: Executing a cache.",
+    "last_python_frame": "experiments/protocol.py:1095 in _audit_nested",
+    "phase": "final_confirmation_tolerance_transfer_payload_validation",
+    "process_exit_code": 1,
+    "runtime_state": "initialized"
+  },
+  "metrics_read_before_classification": false,
+  "recovery_constraint": "Only the preregistered identical-seed/configuration infrastructure-failure exception may be used; partial artifacts must not be interpreted as results.",
+  "runtime": {
+    "numpy": "2.2.5",
+    "python": "3.13.3",
+    "torch": "2.8.0+cpu"
+  },
+  "status": "failed_before_raw_result_completion"
+}
