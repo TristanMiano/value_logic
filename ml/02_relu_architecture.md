@@ -26,13 +26,21 @@ m_support = epsilon - upper(U_safe),
 m_refute  = lower(U_safe) - epsilon.
 ```
 
-The decoder supports at `m_support>=0`, refutes at `m_refute>0`, and otherwise stays open, subject to the certificate mode's permitted polarity. ReLU exposes positive normalized surplus
+The decoder supports at `m_support>=0`, refutes at `m_refute>0`, and otherwise stays open, subject to the certificate mode's permitted polarity. ReLU can expose positive normalized surplus
 
 ```text
 z=ReLU(m_support/sigma),
 ```
 
-but `z=0` does not distinguish supported equality from open, refuted, missing, invalid, or conflicted evidence. The signed margins, diagnostic, support bit, validity state, exact address, and evidence handles therefore remain available.
+but the interpretation comes from the construction of `m_support`, not from
+ReLU. For an arbitrary preactivation, `z>0` means only that the preactivation is
+positive. For a learned point margin it means predicted positive slack. Only
+when `m_support` is computed from the accepted conservative envelope does
+`z>0` mean strict certificate-relative surplus for this named atom and scope.
+Even then it is neither target-world truth nor a full profile license. Also,
+`z=0` does not distinguish supported equality from open, refuted, missing,
+invalid, or conflicted evidence. The signed margins, diagnostic, support bit,
+validity state, exact address, and evidence handles therefore remain available.
 
 The architecture admits the author's dual-use intuition in a deliberately narrow way. Named hypothesis channels with common normalization and accepted calibration may use `z_i` both as positive certificate-relative slack and as an input to a declared downstream computation. That computation is itself a plan to be evaluated. Arbitrary hidden units receive no adequacy interpretation, and variable expert payloads are not multiplied by margin magnitude as a semantics-free gate.
 
@@ -343,7 +351,7 @@ m_i=(epsilon_i-upper(U_i^safe))/sigma_i,
 z_i=ReLU(m_i).
 ```
 
-If the evidence gate fails, `m_i` has no accepted adequacy meaning. The numerical implementation sets its downstream `z_i` to zero and exposes the non-supported diagnostic and validity bit. The complete channel is therefore
+If the evidence gate fails, `m_i` has no accepted adequacy meaning. The numerical implementation sets its downstream `z_i` to zero and exposes the non-supported diagnostic and validity bit. If the gate succeeds, `z_i>0` means only strict positive normalized support surplus for this registered atom; supported equality still has `z_i=0`, and the remaining required atoms may still block the profile license. The complete channel is therefore
 
 ```text
 (z_i,b_i,m_i^signed,Diag_i,certificate/calibration handles),
@@ -427,7 +435,7 @@ The active set is computed symbolically from the complete required profile, not 
 
 Payload is routed unchanged by default. An empty active set returns the exact fallback rather than a dummy all-zero expert. The fallback's own target safety is still an evidential question; operational fallback prevents unlicensed library use, not harm in every world.
 
-### 9.1 Why ReLU zero is not quarantine by itself
+### 9.1 Why neither ReLU sign supplies authorization by itself
 
 A failed hidden unit has `ReLU(m)=0`, but a downstream computation can still fire through its bias or another path. For example,
 
@@ -435,7 +443,7 @@ A failed hidden unit has `ReLU(m)=0`, but a downstream computation can still fir
 y=3 ReLU(-10)+2+5=7.
 ```
 
-Thus the unqualified claim that the ReLU zero branch implements logical quarantine or non-explosion is false. Quarantine in this architecture comes from the exact active mask and restricted selector, not from one activation being zero. The ReLU channel is useful positive slack; it is not an authorization mechanism by itself.
+Thus the unqualified claim that the ReLU zero branch implements logical quarantine or non-explosion is false. The positive branch is not a grant either: an arbitrary positive hidden unit has no adequacy semantics, a positive learned margin may be wrong, and even accepted positive surplus settles only one atom. Authorization and quarantine in this architecture come from exact evidence/state/profile evaluation, the active mask, and the restricted selector. The ReLU channel is a useful numerical carrier after its meaning has been constructed; it is not an authorization mechanism by itself.
 
 ## 10. Forbidden production heads and allowed ablations
 
@@ -519,7 +527,7 @@ This architecture deliberately exposed the following statements; Task 17 now adj
 8. Fixed indexed and candidate-conditioned shared ReLU designs implement the same semantic contract.
 9. Licensing precedes selection. Selection is restricted to the exact active set and falls back on gaps.
 10. ReLU zero alone does not quarantine downstream computation; the exact mask does.
-11. Named normalized hypothesis channels may be dual-use features; Task 17 proves joint sufficiency and minimality for the coordinate-complete state-plus-surplus family, while the downstream consumer remains a separately evaluated plan.
+11. ReLU sign has no intrinsic adequacy semantics. Named normalized channels may be dual-use features only when their preactivations are the registered conservative atom margins; Task 17 proves joint sufficiency and minimality for the coordinate-complete state-plus-surplus family, while the full license and downstream consumer remain separately evaluated.
 12. Separate content/grade channels are the general default; margin-scaled variable payloads require a new license.
 13. Aggregate-status, reason-code, self-grant, unmasked argmax, and predicted-certificate heads are excluded from production and allowed only as disconnected ablations where stated.
 14. Monotone/lattice and hard-MoE variants retain only their distinct scoped hypotheses; neither is presumed superior.
@@ -528,4 +536,4 @@ This architecture deliberately exposed the following statements; Task 17 now adj
 
 Task 16 derives a concrete ReLU realization of the architecture-neutral interface without assigning logical authority to the network. The scorer estimates reusable continuous quantities. Accepted calibration and checker records determine whether those quantities may enter the exact decoder. The decoder produces auditable atom states; profiles produce licenses; licenses produce an active mask; and a separate selector routes an unchanged payload or fallback.
 
-The construction makes the project's strongest neural intuition precise enough to test: a named ReLU activation can genuinely be both positive adequacy slack and computational feature. It also shows why that intuition is not the whole logic. Boundary support, negative and open status, evidence validity, payload identity, and proof all require channels outside the rectified scalar. Task 17 now proves exactly which parts of this design ReLU realizes and where external symbolic structure is indispensable; Task 18 chooses how to learn them.
+The construction makes a conditional form of the project's strongest neural intuition precise enough to test: a named ReLU activation whose preactivation is the accepted conservative margin can genuinely be both strict certificate-relative atom surplus and a computational feature. An arbitrary positive activation means only positive preactivation, and a learned point margin means only predicted slack. Even the accepted surplus is not the whole logic. Boundary support, negative and open status, evidence validity, the remaining profile atoms, payload identity, and proof all require channels outside the rectified scalar. Task 17 now proves exactly which parts of this design ReLU realizes and where external symbolic structure is indispensable; Task 18 chooses how to learn them.

@@ -40,9 +40,30 @@ roadmap, and the path to `paper.md` and `substack_post.txt`
    explicitly consumer-family-relative; Task 14B is positioned against the
    database phantom and separation-logic frame patterns; and Task 14C's cyclic
    extension checklist is positioned against Kripke--Fitting semantics.
-7. **A stale top-level statement is repaired.** A positive ReLU value is not a
-   grant and a zero ReLU value is not global quarantine. Accepted evidence,
-   exact state, and exact active masking carry those roles.
+7. **A founding intuition is retained only conditionally.** A positive ReLU
+   value is not a grant and a zero ReLU value is not global quarantine. The
+   exact surviving interpretation is stated below; accepted evidence, exact
+   state/profile evaluation, and exact active masking carry authorization.
+
+### Author-intuition correction: what a positive ReLU value means
+
+This correction is important enough to state independently of the architecture
+details. For `z=ReLU(s)`, the sign has a four-level interpretation:
+
+| stage or object | warranted reading of `z>0` | what remains unwarranted |
+|---|---|---|
+| arbitrary hidden preactivation | `s>0`, nothing more | adequacy, evidence, truth, or an interpretable feature |
+| named learned margin `epsilon-J_hat` | predicted positive slack | actual threshold satisfaction or permission to rely |
+| conservative margin `epsilon-upper(U_safe)` bound to accepted evidence | strict certificate-relative surplus for one atom, scope, and mode | target-world truth, other atoms, or the full profile license |
+| complete exact profile plus active mask | the rectified surplus may be used by a declared downstream plan | authorization still comes from the exact profile/mask, not from `z` |
+
+The zero branch is equally nonsemantic by itself. Inclusive support at equality
+has `z=0`, as do negative, open, refuted, missing, invalid, and conflicted cases;
+biases and bypass paths can still produce nonzero downstream output. Thus the
+author's classifier intuition survives as a **named, staged dual-use surplus
+construction**, not as the claim that ordinary positive activations are grants.
+This distinction should be taught explicitly in both public artifacts because
+the rejected interpretation is natural and therefore likely to recur.
 
 No completed task is reopened. The changes below are prospective integration,
 experimental, and publication controls.
@@ -367,9 +388,12 @@ is provisional until Task 25 freezes it after the experiment.
 > open status, certificates, active masking, and fallback. When the numerical
 > map is global finite continuous piecewise affine, Task 17 proves that a
 > finite ReLU network realizes it exactly. A named normalized ReLU value can
-> then have a genuine dual use: after accepted evidence establishes support,
-> it is both positive adequacy surplus and numerical input to a later declared
-> computation.
+> then have a genuine dual use, but only by construction. An arbitrary positive
+> activation means only positive preactivation; a named learned margin means
+> predicted slack. After an accepted conservative envelope and exact decoder
+> establish the relevant atom, positive activation can mean strict
+> certificate-relative surplus and serve as numerical input to a later declared
+> computation. The full profile license still comes from exact state and mask.
 >
 > The limits are as important as the construction. ReLU zero merges supported
 > equality with failure and uncertainty. Equal adequacy values can hide
@@ -455,9 +479,13 @@ gate is therefore the right place to slow down.
 
 No failure was silent. The productive formal falsification was `F18`: zeroing
 one ReLU channel does not quarantine a network with biases or bypass paths.
-The project impact is already propagated to exact masking and required failure
-witnesses. Fable's earlier S6 proposal was also a specification failure, now
-recorded as such. No central claim in Tasks 14B--18 was otherwise falsified.
+Its complementary semantic correction is that positivity alone does not grant:
+meaning progresses from arbitrary sign, to predicted margin, to accepted
+certificate-relative atom surplus, and only then to exact profile licensing.
+The project impact is propagated to exact masking, required failure witnesses,
+and the public narrative. Fable's earlier S6 proposal was also a specification
+failure, now recorded as such. No central claim in Tasks 14B--18 was otherwise
+falsified.
 
 ### 8.5 Discoveries to surface
 

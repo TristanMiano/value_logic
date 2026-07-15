@@ -794,9 +794,12 @@ external atom-statistic targets
     -> separate learned selection or explicit fallback.
 ```
 
-This choice preserves the project's original intuition without turning a ReLU
-value into a truth degree. A normalized positive activation can carry certified
-surplus and feed a later computation, but only after the accepted envelope and
-symbolic state establish what that number means. Cross-entropy remains a fair
+This choice preserves a conditional form of the project's original intuition
+without turning a ReLU value into a truth degree or grant. An arbitrary positive
+activation means only positive preactivation; a named point margin means
+predicted slack. A normalized positive activation can carry strict
+certificate-relative surplus for one atom and feed a later computation only
+after the accepted envelope and symbolic state establish what that number
+means. The full profile and mask still authorize use. Cross-entropy remains a fair
 simple baseline; learned validity may only withhold; selective risk is reported
 with coverage and fallback harm; and no optimization loss certifies itself.

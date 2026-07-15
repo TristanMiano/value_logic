@@ -828,7 +828,15 @@ The following is a compact prose version suitable for adaptation later:
 
 > A bounded reasoner need not know whether a theory is finally true in order to know that relying on it produces smaller errors than relying on an alternative. This does not immediately give us a three-place logic of model, domain, and tolerance. It first gives us a model and a domain: Newtonian mechanics can succeed here and fail there. Error enters only when “succeeds” is operationalized against observations or the consequences of action. A tolerance enters when that graded performance is turned into a decision—use this model, keep the fallback, or abstain. Sometimes the tolerance is externally imposed by safety or precision. Sometimes it is induced by the status quo: a model is worth using only if it beats what we would otherwise do by enough to justify its cost. Thus `epsilon` is not a degree of falsity. It is a decision boundary on an explicitly chosen loss. And because observed error is itself estimated from finite evidence, the mature judgment must remain indexed by evidence, domain, and stage.
 
-This should appear before neural-network geometry. It motivates why a later ReLU score may cross zero: zero can represent indifference with a fallback, while positive activation represents surplus performance. It also explains why the signed preactivation must be retained—negative values say how much better the fallback is.
+This should appear before neural-network geometry. It motivates constructing a
+later signed fallback margin whose zero is the decision boundary. Rectifying a
+**predicted** margin exposes predicted surplus performance; rectifying a
+conservative margin bound to accepted evidence exposes certificate-relative
+strict surplus for that one atom. Neither positive activation is a full license,
+and zero itself also covers supported equality, negative, open, invalid, and
+missing cases. The signed preactivation and exact state must therefore be
+retained; negative values can say how much better the fallback is, while the
+symbolic profile and mask determine authorization.
 
 ---
 

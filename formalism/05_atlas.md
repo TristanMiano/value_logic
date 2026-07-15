@@ -1041,7 +1041,7 @@ An external discrete `argmax` or other discontinuous operation can implement the
 
 There exist faithful implementations with many activation cells per scientific state, and faithful scientific covers with several simultaneously active charts at a point but one generic activation pattern.
 
-**Proof.** For the first direction, add a hidden ReLU feature whose activation boundary crosses the input while downstream weights cancel it; the computed license/selection state is unchanged but the activation complex is refined. For the second, let two charts be licensed on the same domain while a scorer network is affine with one activation cell and outputs two positive license margins. Thus neither mapping is forced to be bijective. `square`
+**Proof.** For the first direction, add a hidden ReLU feature whose activation boundary crosses the input while downstream weights cancel it; the computed license/selection state is unchanged but the activation complex is refined. For the second, let two charts be licensed on the same domain by the external semantics while a scorer network is affine with one activation cell and outputs two positive named surplus coordinates. The exact licensed state remains separate from those coordinates. Thus neither mapping is forced to be bijective. `square`
 
 ### Proposition 8: low-speed kinetic-energy bridge bound
 

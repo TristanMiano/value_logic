@@ -18,7 +18,7 @@ At least seven distinguishable objects appear between the original pragmatic jud
 6. rectified gates or routing weights;
 7. licensed predictions, explanations, or actions.
 
-These layers carry different information. A positive ReLU activation can encode both a Boolean fact—“the margin is positive”—and a magnitude—“the candidate has this much positive slack.” But a zero activation merges exact indifference with every degree of failure. Therefore ReLU is naturally a **gate plus positive margin**, not a complete representation of the underlying judgment.
+These layers carry different information. For `z=ReLU(s)`, the only meaning supplied by ReLU itself is algebraic: `z>0` iff `s>0`, and then `z=s`. Any adequacy interpretation is inherited from how `s` was constructed. An arbitrary hidden unit has no such semantics; a named predicted margin carries predicted slack; and a conservative margin tied to accepted evidence can carry certificate-relative slack for one atom. None is a full profile license. A zero activation additionally merges supported equality with negative, open, refuted, missing, and invalid cases. ReLU is therefore a **conditional positive-margin carrier**, not an intrinsic license gate or a complete representation of the judgment.
 
 The central encoding problem is best stated loss-first:
 
@@ -428,6 +428,11 @@ Each score has a different meaning:
 - `s_base`: surplus relative to the outside option;
 - `s_lib`: slack relative to the best retrieved model.
 
+Because these examples use `J_hat`, they are first **predicted margins**. Their
+sign describes the estimator's output, not yet an accepted certificate or a
+world fact. Certificate-relative support requires an accepted error region and
+a conservative boundary margin such as `epsilon-upper(U_safe)`.
+
 A scalar combined license could use
 
 ```text
@@ -450,7 +455,7 @@ This is an example of deliberate compression: the minimum is sufficient for conj
 
 ---
 
-## 9. What ReLU represents
+## 9. What ReLU represents—and what it does not
 
 Let
 
@@ -458,15 +463,46 @@ Let
 a = ReLU(s) = max(0,s).
 ```
 
-### 9.1 Information retained for positive scores
+### 9.1 The unconditional algebraic meaning
 
-When `s>0`, the activation retains:
+Without assumptions about `s`, `a>0` entails exactly:
 
-- the fact that the strict threshold was passed;
-- the positive margin magnitude;
-- ordering among positive margins, subject to scale.
+- this preactivation is positive;
+- its positive magnitude is `a=s`; and
+- positive preactivations are ordered by `a` on the same scale.
 
-### 9.2 Information lost for nonpositive scores
+It does **not** entail adequacy, probability, evidence validity, truth,
+licensing, or human-interpretable feature identity. A generic learned hidden
+unit may be positive because of any distributed computation compatible with
+the network's loss.
+
+### 9.2 Semantics inherited from a named margin
+
+If `s=epsilon-J_hat`, then `a>0` means that the estimator predicts loss below
+the threshold. It is **predicted positive slack** and can be wrong.
+
+If instead
+
+```text
+s = (epsilon-upper(U_safe))/sigma
+```
+
+where `U_safe` is bound to accepted evidence with the declared scope, mode,
+polarity, checker, and validity conditions, then `a>0` means strict positive
+**certificate-relative support surplus for that atom**. It still does not mean
+target-world truth. At the inclusive supported boundary `upper(U_safe)=epsilon`,
+the atom is supported but `a=0`.
+
+### 9.3 Why positive surplus is not a license
+
+A full use license can require adequacy, fallback improvement, hard constraints,
+comparison/search, bridge, trace, or other atoms. Positive surplus for one atom
+does not establish the others. Exact `WF`, evidence validity and polarity,
+boundary-aware atom state, profile aggregation, and the active mask determine
+authorization. The activation may then be consumed numerically by a declared
+downstream plan; it does not authorize that plan by its sign.
+
+### 9.4 Information lost for nonpositive scores
 
 For every `s<=0`,
 
@@ -485,7 +521,7 @@ already authorized multiplicative content interface, but it does not
 quarantine a whole downstream network: biases and bypass paths can remain
 active. It is also harmful for diagnosis, learning, and transparency.
 
-### 9.3 A two-channel signed representation
+### 9.5 A two-channel signed representation
 
 Define
 
@@ -503,7 +539,8 @@ abs(s) = s_plus + s_minus.
 
 The pair is an exact representation of the signed scalar. A transparent architecture can:
 
-- route licensed content only through `s_plus`;
+- use `s_plus` as a numerical feature only on routes already authorized by the
+  exact active mask;
 - retain `s_minus` for diagnostics, defeat explanations, or learning;
 - treat `(0,0)` as exact boundary/indifference.
 
@@ -512,11 +549,11 @@ declared content interface without destroying negative-margin information
 globally. The ReLU pair alone does not authorize the route or prove
 non-explosion; Task 16's `F18` counterexample is the controlling correction.
 
-### 9.4 The scale problem remains
+### 9.6 The scale problem remains
 
 Even when ReLU preserves positive magnitude, that magnitude is meaningful only relative to the scale of `s`. Rescaling loss and tolerance rescales the margin. Downstream layers should not compare margins across tasks unless they are calibrated or normalized.
 
-### 9.5 ReLU is not a probability
+### 9.7 ReLU is not a probability
 
 An activation of `2` is not twice as true as an activation of `1`, nor is it a 200% probability. It is a margin in whatever units the comparison defines. A probability interpretation requires an additional calibrated link function and statistical semantics.
 
@@ -601,7 +638,9 @@ s_all = min(s_1,...,s_k).
 
 The condition `s_all>=0` is equivalent to every `s_i>=0`, so the minimum is sufficient for the Boolean conjunction. But `s_all` alone generally does not identify all failed conditions or their margins. Distinct margin vectors can have the same minimum.
 
-This justifies retaining the full margin vector alongside any combined gate.
+This justifies retaining the full margin vector alongside any combined scalar
+threshold. Whether those margins have predicted, certificate-relative, or
+license-level force remains a separate question.
 
 ---
 
@@ -663,6 +702,11 @@ to the next layer. One can read this as:
 ```text
 if test_i passes with margin h_i, transmit content direction v_i with that strength.
 ```
+
+Here “test passes” means only that the affine preactivation is positive. It is
+not a license claim unless the unit has the named conservative-margin
+construction, accepted evidence, and exact profile/mask interface specified
+later in Tasks 16–17.
 
 But a standard dense MLP does not guarantee that one unit corresponds to one human-interpretable license:
 
@@ -759,7 +803,7 @@ Compressing provenance into the activation may improve predictive performance bu
 | Risk predictor | `J_hat(M,D)` | Expected target loss | Loss decomposition and uncertainty | Calibrate and retain component risks |
 | Margin vector | `(s_hard,s_base,s_lib,...)` | Reasons for passing/failing | Raw observations and mechanisms | Preserve components and units |
 | Combined margin | `min_i s_i` | Conjunctive pass/fail and weakest slack | Identity of other failures | Keep component vector for diagnosis |
-| ReLU gate | `max(0,s)` | Positive grant and slack | Equality and all negative magnitudes | Retain signed score or negative channel |
+| ReLU channel | `max(0,s)` | Positive preactivation; predicted or certificate-relative slack only when inherited from the declared `s` | Equality, every negative magnitude, and all external evidence/profile distinctions | Name the construction; retain signed score, exact state/profile, and mask |
 | Router | model index/weights | Selected alternative or mixture | Rejected alternatives and near ties | Log candidate scores and abstention |
 | Expert output | prediction/action | Task result | Why the expert was licensed | Attach model/domain/trace |
 | Final action | discrete choice | Executed behavior | Almost all counterfactual structure | Preserve action rankings and margins |
@@ -793,12 +837,14 @@ s = Compare(J_hat, epsilon, baseline, library)
 **Strength:** separates empirical prediction from normative/pragmatic comparison.  
 **Risk:** latent factors remain non-identifiable and aggregation may be complex.
 
-### 16.3 Explicit gate plus expert library
+### 16.3 Exact active mask plus expert library
 
 ```text
-gate_i = LicenseScore(M_i,D)
+proposal_i = MarginOrRegionScore(M_i,D)
+state_i = ExactDecode(proposal_i,accepted_evidence_i)
+active_i = ExactProfileState(state_i,...)
 content_i = Expert_i(x)
-output = route(gate_i,content_i)
+output = route({i: active_i},content_i,optional_surplus_i)
 ```
 
 **Strength:** clean model identity, abstention, and traces.  
@@ -808,8 +854,9 @@ output = route(gate_i,content_i)
 
 ```text
 s = (s_hard,s_base,s_cost,s_robust,s_library)
-gate = all(s_i >= 0)
+proposed_pass = all(s_i >= 0)
 diagnostic = (ReLU(s), ReLU(-s))
+active = ExactProfile(accepted_evidence,exact_states)
 ```
 
 **Strength:** preserves reasons and defeat modes.  
@@ -929,7 +976,9 @@ The paper should introduce the neural mapping in this order:
 3. Ground the embeddings in observed/simulated loss profiles.
 4. Predict risk before thresholding it.
 5. Construct signed margins with explicit units and meanings.
-6. Use ReLU to propagate positive slack, not to represent the whole judgment.
+6. Explain first that positivity means only positive preactivation; then use
+   ReLU to propagate predicted or certificate-relative slack under its stated
+   construction, not to represent the whole judgment.
 7. Retain negative/component margins and provenance for transparency.
 8. Distinguish a pointwise gate from a domain-level certificate.
 9. Treat semantic alignment of hidden regions as an empirical target.
@@ -980,7 +1029,8 @@ The most defensible representation program is therefore loss-first and trace-pre
 
 - derive vectors from their role in predicting operational loss or negative utility;
 - preserve separate hard, baseline, and library margins;
-- retain signed scores even when only positive slack routes content;
+- retain signed scores even when accepted positive slack is used numerically on
+  an already mask-authorized route;
 - state the equivalence class identified by the embeddings;
 - keep provenance and domain scope accessible;
 - test, rather than assume, that internal neural regions correspond to meaningful licenses.
