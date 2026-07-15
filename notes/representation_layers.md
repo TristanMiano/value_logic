@@ -504,6 +504,9 @@ downstream plan; it does not authorize that plan by its sign.
 
 The complete numerical and vector calculation is worked through in
 [`ml/02_relu_architecture.md`, §8.4](../ml/02_relu_architecture.md#84-worked-toy-one-plan-three-requirements).
+It distinguishes a parameterized learned head from its scalar coordinates and
+from fixed decoder/ReLU channels. The logic generally needs multiple channels
+per atom, but this does not imply multiple independently learned heads per atom.
 
 ### 9.4 Information lost for nonpositive scores
 

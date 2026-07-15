@@ -66,6 +66,9 @@ This distinction should be taught explicitly in both public artifacts because
 the rejected interpretation is natural and therefore likely to recur.
 Task 16 now supplies the canonical three-atom numerical/vector example that the
 experiment and both public artifacts must reuse.
+That example also records the head/channel correction: two rectified margin
+channels need not be two learned heads, yet even their pair is insufficient for
+the logical state without exact boundary/evidence information.
 
 No completed task is reopened. The changes below are prospective integration,
 experimental, and publication controls.

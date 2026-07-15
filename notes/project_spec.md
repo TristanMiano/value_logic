@@ -1,6 +1,6 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: living specification, version 1.8 after canonical ReLU-semantics toy
+Status: living specification, version 1.9 after ReLU head/channel clarification
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
@@ -22,6 +22,7 @@ Tasks 15–18 neural interface, representation, and objective: 2026-07-14
 Checkpoint C neural/empirical/publication review: 2026-07-14
 Checkpoint C ReLU-sign interpretation clarification: 2026-07-14
 Canonical ReLU-semantics toy example: 2026-07-14
+ReLU learned-head versus semantic-channel clarification: 2026-07-14
 
 ## Executive specification
 
@@ -557,6 +558,7 @@ The following decisions are now project defaults unless a later theorem, experim
 84. Task 17's named state-plus-surplus code is minimal only for a consumer family containing all of its coordinate projections. It is a coordinate-separation result, not information-theoretic optimality for arbitrary external consumers, and it is not a headline contribution.
 85. The public artifacts must present the ReLU-sign correction as a semantic ladder: arbitrary positivity, predicted positive slack, accepted certificate-relative atom surplus, and full exact profile licensing are distinct. Supported equality is a required zero-activation counterexample, and bias/bypass behavior is the required counterexample to zero-as-quarantine. This is an author-intuition repair, not a minor implementation caveat.
 86. The canonical neural-semantics example is the three-required-atom profile `A and I and C`: loss adequacy, fallback improvement, and a latency constraint. It retains signed support/refutation margins, exact `K_3` one-hots, evidence validity/missingness, normalized surplus, and `WF`; a fixed ReLU conjunction over exact support bits may encode the grant answer for the fixed request, while a separate ReLU may consume surplus only after the exact active mask. Tasks 19, 29, and the public adaptations reuse this example rather than silently changing the meanings of zero, slack, surplus, adequacy, license, or selection.
+87. Learned heads, scalar coordinates, and fixed decoder channels are distinct. Two rectified channels `z_support,z_refute` may be deterministic functions of one shared learned interval rather than separately parameterized heads, but their pair is not sufficient for `K_3`: boundary support, open, missing, and invalid cases can all map to `(0,0)`. Multiple semantic channels per atom are therefore generally required by the selected audit-preserving interface, including exact state and evidence diagnostics, while the number and sharing pattern of learned heads remains an empirical architecture choice. This is not a lower bound on arbitrary real encodings of finitely many labels. One accepted statistic interval may serve several atoms with different thresholds.
 
 ## 18. Specification gates after Checkpoint C
 

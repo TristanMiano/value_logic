@@ -480,7 +480,13 @@ z = (2,12,3).
 ```
 
 The same accepted loss interval supplies both `A` and `I`. The architecture
-therefore does not need one learned head per logical atom.
+therefore does not need one independently learned interval or status head per
+logical atom. It does, however, need more than one **information channel** for
+the full semantics. The interval has two endpoints (or center and radius); the
+fixed decoder derives separate support and refutation margins; rectification
+produces two ReLU channels; and exact state, validity, and missingness remain
+beside them. “Several channels” and “several learned heads” are not the same
+claim.
 
 #### What negative, zero, open, refuted, missing, and invalid mean
 
@@ -521,6 +527,22 @@ Consequently, a rectified zero has no unique semantic reading. It can accompany
 supported equality, an unresolved interval, a refuted atom, missing evidence,
 or invalid evidence. The exact state and diagnostic determine which case is
 present.
+
+Even the **pair** of rectified values is insufficient. Under the inclusive
+boundary convention,
+
+```text
+strict support      -> (z_support>0, z_refute=0),
+strict refutation   -> (z_support=0, z_refute>0),
+boundary support    -> (0,0),
+open interval       -> (0,0),
+missing/invalid     -> (0,0) after masking.
+```
+
+Thus two ReLU channels expose positive evidence on either side, but they do not
+by themselves encode the three-valued atom or its evidence condition. At least
+the exact support/state information is additionally required for logical
+status, and validity/missing diagnostics are additionally required for audit.
 
 #### Encode the logical statement as a vector
 
@@ -627,24 +649,53 @@ positive ranking value ranks only already licensed candidates.
 
 #### Does this require more than one neural head?
 
-No fixed count is logically required. This toy can use one vector-valued neural
-output
+First distinguish three implementation notions:
+
+- a **learned head** is a parameterized output map trained from data;
+- an **output coordinate/channel** is one scalar carried by that map or by the
+  decoder; and
+- `ReLU(s_support/sigma)` and `ReLU(s_refute/sigma)` are fixed derived
+  operations once the interval, threshold, and scale are supplied. They are not
+  necessarily learned heads.
+
+More than one semantic channel per atom is generally required by this
+audit-preserving interface. More than one independently learned head per atom is
+not. This is not an information-theoretic lower bound on arbitrary real codes:
+a single scalar could encode three finite labels by convention, but it would not
+simultaneously retain the accepted interval, signed distances, boundary case,
+and evidence diagnostics used here.
+
+This toy can use one vector-valued neural head
 
 ```text
 (center_J, proposed_radius_J, center_T, proposed_radius_T, optional_payload),
 ```
 
 or separate loss, latency, and payload heads. `A` and `I` reuse the same loss
-coordinates with different thresholds. Held-out calibration and an external
-checker turn proposed regions into accepted envelopes. The state one-hots,
-validity/missing diagnostics, profile conjunction, grant bit, active mask, and
-fallback are exact derived quantities, not learned heads. A payload head is
-needed only if the plan must also produce a prediction or action, and its
-payload remains distinct from the adequacy surplus.
+coordinates with different thresholds. If heteroscedastic center and radius are
+both learned, the loss statistic needs at least two learned **coordinates**, but
+they may be emitted by one head. If the radius comes entirely from external
+held-out calibration, only the center need be learned for that statistic.
+
+Held-out calibration and an external checker turn proposed regions into
+accepted envelopes. The two signed margins and their two ReLU channels are then
+deterministic calculations. The state one-hots, validity/missing diagnostics,
+profile conjunction, grant bit, active mask, and fallback are exact derived
+quantities, not learned heads. A payload head is needed only if the plan must
+also produce a prediction or action, and its payload remains distinct from the
+adequacy surplus.
+
+A direct `K_3` classifier could instead use three logits per atom. That is the
+Task 18 baseline: it represents a predicted status distribution, but without
+the interval/evidence machinery it does not preserve tolerance transfer or
+manufacture a certificate. Whether separate learned center/radius/status heads
+optimize better than one shared vector head is an empirical architecture choice,
+not a logical theorem.
 
 The requirement is therefore **separate information and authorization paths**,
-not “one head per proposition.” One physical output layer may contain several
-typed coordinates, while one learned statistic may serve several logical atoms.
+not a fixed head count. One physical output layer may contain several typed
+coordinates, one learned statistic may serve several logical atoms, and one atom
+still requires several exact/derived channels to preserve its complete state.
 
 ### 8.5 Default comparison: separate content and grade
 
