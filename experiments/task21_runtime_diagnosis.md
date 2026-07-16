@@ -154,6 +154,16 @@ much larger demonstrated Python dispatch/allocation cost.
 Task 21 is not complete. `F35`, `F36`, calibration, architecture comparison,
 and empirical system claims remain unadjudicated. The partial attempt-2 model
 archive is retained locally and ignored by Git; it blocks accidental use of the
-old guarded entry point. No further run should occur until the project author
-chooses between the versioned execution-only repair above and abandoning the
-frozen empirical study.
+old guarded entry point.
+
+The project author selected the versioned execution-only repair. Task 20R
+completed it on 2026-07-16 as implementation v1.1, with direct NumPy/PyTorch
+blocks, a small allocation-free C++ decoder, exact differential/native tests,
+contract-bound stage checkpoints, and a layperson operator guide in
+[`03_execution_repair.md`](03_execution_repair.md). Its final pilot projected
+56.49 seconds for the 50 confirmation-evaluation blocks against a 900-second
+gate. That was infrastructure evidence on pilot-role data only: no v1.1
+selection, fit, calibration, confirmation, or raw-result artifact was
+generated. Task 21 may now resume through the four v1.1 staged commands in
+`TODO.md`; the failed/interrupted v1 artifacts are not valid repaired
+checkpoints.

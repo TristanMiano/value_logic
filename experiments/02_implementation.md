@@ -1,5 +1,7 @@
 # Task 20 experiment implementation
 
+> **Execution note (2026-07-16):** the scientific v1 implementation below remains frozen, but its high-volume custom-object evaluator failed during Task 21. The versioned execution-only repair, its safeguards, and layperson usage instructions are documented in [`03_execution_repair.md`](03_execution_repair.md). No v1.1 production or final-confirmation data was generated during that repair task.
+
 Status: **implemented and frozen on 2026-07-14 without materializing any
 train, calibration, validation, system-audit, or final-confirmation world.**
 The machine-readable contract is

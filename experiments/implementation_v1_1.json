@@ -1,0 +1,96 @@
+{
+  "implementation_version": "value-logic-implementation-v1.1.0",
+  "status": "frozen_execution_only_repair_before_v1_1_production",
+  "frozen_date": "2026-07-16",
+  "protocol_version": "value-logic-experiment-v1.0.0",
+  "protocol_sha256": "3467f5e2041e702d86855c72de34deb4b408240ed06a1d25418772e959f35ef4",
+  "manifests_sha256": "0819522ef0222e4dc6111f7434da68008179fcb93ea9668fe41ce92b200e3245",
+  "repair_scope": {
+    "scientific_estimand_changed": false,
+    "generator_or_oracle_changed": false,
+    "roles_or_lineage_changed": false,
+    "features_targets_models_losses_or_seeds_changed": false,
+    "calibration_or_endpoint_definitions_changed": false,
+    "execution_changes": [
+      "direct structure-of-arrays feature projection",
+      "world-block preparation reused across fit seeds",
+      "batched NumPy and PyTorch evaluation",
+      "block-level allocation-free C++ semantic decoder",
+      "separate resumable selection, fit, calibration, and confirmation checkpoints",
+      "atomic per-block metrics, trace shards, and completion markers"
+    ]
+  },
+  "source_sha256": {
+    "experiments/learner.py": "58931c49e199e30940686a8c0c6deaabcfeb402c03892466563267bedae02f57",
+    "experiments/implementation.py": "bc49b8414ec3a7176e0a6cec2efbf0371c5abe8cdea0a6a982e499df2dc0a750",
+    "experiments/system_witness.py": "2def821edb440a7438046ed63909a952a716d71740a2b17b82a9f29248932031",
+    "experiments/run_experiment.py": "88f76138808067faa8ed1baa2134718a76ad0ce53b18bdd2391ee1ce21daf8ea",
+    "experiments/build_cpp_kernel.py": "88c862ba7e0a39704ddb46e532d07b65d86ce8d4486f8c417ed27e39da67386f",
+    "experiments/cpp_kernel.py": "6e18d8bb5c996416e278baee4f124586a289f923ea459e4cd858b55d63311fcf",
+    "experiments/repaired_evaluator.py": "d9d1d45763a5928ee1a00a7a58e78d8febe7af692699e586cfafa83ab8922d52",
+    "experiments/run_repaired_experiment.py": "70e47a9a1eddc205d1ea1e19ef205a48c44b372b1a690319b5a66b55ba9b4bca",
+    "experiments/cpp/CMakeLists.txt": "1897e9d79de7cc18ad2c29034b640de2844b877c7e438ffd6ab3a0f0c2c36da8",
+    "experiments/cpp/value_logic_kernel.h": "0f1b6d4dc90cf70fe943a7b3e51749d58fcb11d0b12e87547cbf5fb68409e263",
+    "experiments/cpp/value_logic_kernel.cpp": "4c7b30b1bd51503ea9492246e11717c9b2005278499d8f554c6d56eb0c2e421e",
+    "experiments/cpp/value_logic_kernel_self_test.cpp": "b93a80190855bf0a074b9e773418a8da8040f5ecbec99144afbe0d3824e1c51d"
+  },
+  "runtime": {
+    "python": "3.13.14",
+    "torch": "2.8.0+cpu",
+    "numpy": "2.2.5",
+    "cmake": "4.0.1",
+    "reference_cpp_compiler": "MSVC 19.43.34810.0",
+    "deterministic_algorithms": true,
+    "torch_threads": 1,
+    "device": "cpu"
+  },
+  "equivalence_contract": {
+    "training_and_evaluation_features": "bitwise equality against v1 on disjoint pilot worlds",
+    "calibration": "same full and center-only bundles while reusing one model prediction",
+    "discrete_states_masks_routes_and_trace_fields": "exact equality against v1",
+    "world_metrics": "absolute tolerance 2e-12 only for scalar floating arithmetic",
+    "float_trace_fields": "absolute tolerance 1e-5 for batched-versus-single-world float32 matrix multiplication; maximum randomized-pilot observation before freeze was 7.62939453125e-6",
+    "numpy_cpp_decoder": "bitwise equality for all returned arrays on 10000 randomized rows",
+    "native_checks": "release and unoptimized Debug native self-tests must pass",
+    "performance_gate": "projected 5000-world, eight-seed confirmation evaluation must not exceed 900 seconds"
+  },
+  "native_kernel": {
+    "interface": "vl_decode_block_v1",
+    "ownership": "all arrays are contiguous and caller-owned",
+    "allocations_callbacks_or_python_objects": false,
+    "semantic_responsibilities": [
+      "accepted structured and center-only interval decoding",
+      "unaccepted learned-radius shadow decoding",
+      "cross-entropy K3 decoding with exact evidence and polarity overrides",
+      "invalid self-confidence ablation",
+      "signed margins and rectified normalized margins"
+    ]
+  },
+  "entry_point": {
+    "module": "python -m experiments.run_repaired_experiment",
+    "preflight": "--preflight",
+    "repair_pilot": "--pilot",
+    "task21_selection": "--task21-select PREPARE-VALUE-LOGIC-REPAIR-V1-1",
+    "task21_fit": "--task21-fit PREPARE-VALUE-LOGIC-REPAIR-V1-1",
+    "task21_calibration": "--task21-calibrate PREPARE-VALUE-LOGIC-REPAIR-V1-1",
+    "task21_confirmation": "--task21-confirm RUN-VALUE-LOGIC-REPAIR-FINAL-V1-1",
+    "ordering": "a current passing repair pilot is required before selection; each later stage requires the preceding hashed checkpoint",
+    "resumption": "completed blocks are reused only after their metrics and every trace-shard hash verify",
+    "final_guard": "confirmation uses a distinct exact token and cannot begin before selection, fitting, and calibration checkpoints exist"
+  },
+  "failure_provenance": {
+    "original_v1_sources_edited": false,
+    "attempt_1_record": "experiments/task21_failure_attempt1.json",
+    "attempt_2_record": "experiments/task21_interruption_attempt2.json",
+    "diagnosis": "experiments/task21_runtime_diagnosis.md",
+    "legacy_partial_artifacts_may_remain_ignored": true,
+    "legacy_metrics_or_final_result_read": false
+  },
+  "v1_1_payloads_generated_at_freeze": {
+    "selection": false,
+    "fits": false,
+    "envelope_calibration": false,
+    "final_confirmation": false,
+    "raw_result": false
+  }
+}
