@@ -1,0 +1,1773 @@
+{
+  "contract_sha256": "603dcceb0ecddd8ae71778d2432fe4af52500c1c6a49121e64d62e8f3b2e3685",
+  "elapsed_seconds": 675.3106960000005,
+  "final_payloads_generated": false,
+  "implementation_version": "value-logic-implementation-v1.1.0",
+  "selection": {
+    "cross_entropy": {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 20000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0
+      },
+      "validation_loss": 0.27224403647832035
+    },
+    "normalized_joint_regret": 0.0,
+    "parameter_budget": 20000,
+    "structured": {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.001,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 20000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0
+      },
+      "validation_loss": 0.5629540238826346
+    }
+  },
+  "status": "selection_complete",
+  "trials": [
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.0003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 12000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 96,
+          "inference_flops": 24000,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 12000,
+          "parameter_count": 12099
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "dbe9f05910e5dd6be088eb4488bdb4bfed7bef00047ca35f8aa758117a511965",
+        "phases": [
+          {
+            "best_epoch": 65,
+            "best_validation_loss": 0.40925854820554275,
+            "epochs_run": 85,
+            "optimizer_steps": 2720,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 15.513865699991584
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 96,
+          "inference_flops": 24192,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 12000,
+          "parameter_count": 12196
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "aa8314c0d1a02f1538807956d71ba7c23f90f0252d34bab4f6c98a08996e81d3",
+        "phases": [
+          {
+            "best_epoch": 40,
+            "best_validation_loss": 0.01932281006277687,
+            "epochs_run": 60,
+            "optimizer_steps": 1920,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 90,
+            "best_validation_loss": 0.5668080308013229,
+            "epochs_run": 100,
+            "optimizer_steps": 3200,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 27.61940300000424
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.0003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 20000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 128,
+          "inference_flops": 40192,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 20000,
+          "parameter_count": 20227
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "fbdde10510999efbd49815629c82db7ff734e4948bb5c104bc64ed331541fdce",
+        "phases": [
+          {
+            "best_epoch": 25,
+            "best_validation_loss": 0.44939089273511346,
+            "epochs_run": 45,
+            "optimizer_steps": 1440,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 10.559915000005276
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 127,
+          "inference_flops": 39878,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 20000,
+          "parameter_count": 20070
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "4b664eff2c203a341f21fcffbe3c3f154116e11937318ab32e4543e87ae172da",
+        "phases": [
+          {
+            "best_epoch": 65,
+            "best_validation_loss": 0.018917971484100397,
+            "epochs_run": 85,
+            "optimizer_steps": 2720,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 60,
+            "best_validation_loss": 0.5643225885991288,
+            "epochs_run": 80,
+            "optimizer_steps": 2560,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 37.42605870000261
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.0003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 12000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 96,
+          "inference_flops": 24000,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 12000,
+          "parameter_count": 12099
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "247f5c5bb10ffc592826af29c2cf305b2d5b75716efdaea990f019c1fe80b501",
+        "phases": [
+          {
+            "best_epoch": 185,
+            "best_validation_loss": 0.3644961741524827,
+            "epochs_run": 200,
+            "optimizer_steps": 6400,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 35.73824020000757
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 96,
+          "inference_flops": 24192,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 12000,
+          "parameter_count": 12196
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "675a327f0b3ec4c443115e20966595b73b195c1e7398cb9401e93528e403419e",
+        "phases": [
+          {
+            "best_epoch": 40,
+            "best_validation_loss": 0.019322770726718553,
+            "epochs_run": 60,
+            "optimizer_steps": 1920,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 90,
+            "best_validation_loss": 0.5669036061044239,
+            "epochs_run": 100,
+            "optimizer_steps": 3200,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 23.85061890000361
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.0003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 20000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 128,
+          "inference_flops": 40192,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 20000,
+          "parameter_count": 20227
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "12164091863b59715e4f85187043a0f0263c7dc5b4f9536d7cf022b3be213e3a",
+        "phases": [
+          {
+            "best_epoch": 25,
+            "best_validation_loss": 0.44652868654199696,
+            "epochs_run": 45,
+            "optimizer_steps": 1440,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 10.634634999994887
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 127,
+          "inference_flops": 39878,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 20000,
+          "parameter_count": 20070
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "010fba84850ec43f4c365c45c8d7bbdcdefef41fa3f4d508747351aeb77ca736",
+        "phases": [
+          {
+            "best_epoch": 65,
+            "best_validation_loss": 0.018920576718235653,
+            "epochs_run": 85,
+            "optimizer_steps": 2720,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 60,
+            "best_validation_loss": 0.564641877357971,
+            "epochs_run": 80,
+            "optimizer_steps": 2560,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 36.56393200000457
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.0003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 12000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 96,
+          "inference_flops": 24000,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 12000,
+          "parameter_count": 12099
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "bc475b177fcdd60bd032e52fcda2248c441707cb05173c648839639d581e4dc4",
+        "phases": [
+          {
+            "best_epoch": 85,
+            "best_validation_loss": 0.40488997529840703,
+            "epochs_run": 105,
+            "optimizer_steps": 3360,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 18.719216499986942
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 96,
+          "inference_flops": 24192,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 12000,
+          "parameter_count": 12196
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "501d0ec7a922ef561abd5c810d1ff408e0525d09153a8c325fe0d845054b95db",
+        "phases": [
+          {
+            "best_epoch": 40,
+            "best_validation_loss": 0.01931500886885331,
+            "epochs_run": 60,
+            "optimizer_steps": 1920,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 90,
+            "best_validation_loss": 0.5669557885307184,
+            "epochs_run": 100,
+            "optimizer_steps": 3200,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 24.160193100004108
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.0003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 20000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 128,
+          "inference_flops": 40192,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 20000,
+          "parameter_count": 20227
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "91db6a8a17003b944c2362cc7695bcc372a10b35441aab4bf730ebd237463144",
+        "phases": [
+          {
+            "best_epoch": 25,
+            "best_validation_loss": 0.44986079967711334,
+            "epochs_run": 45,
+            "optimizer_steps": 1440,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 8.588573600005475
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 127,
+          "inference_flops": 39878,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 20000,
+          "parameter_count": 20070
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.0003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "a64dc0a3bf7b049b3ca6c619c1a7b8cca4c9d6cb8f8d4d544db84d8ade83d34d",
+        "phases": [
+          {
+            "best_epoch": 65,
+            "best_validation_loss": 0.01892670811317825,
+            "epochs_run": 85,
+            "optimizer_steps": 2720,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 60,
+            "best_validation_loss": 0.5647172602140018,
+            "epochs_run": 80,
+            "optimizer_steps": 2560,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 27.78562850000162
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.001,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 12000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 96,
+          "inference_flops": 24000,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 12000,
+          "parameter_count": 12099
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "9dec11acba9fc2ac4d4bbb46d7f142835940b11b7c44ddd41d6830d83cf95a6b",
+        "phases": [
+          {
+            "best_epoch": 5,
+            "best_validation_loss": 0.6420266049150382,
+            "epochs_run": 25,
+            "optimizer_steps": 800,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 4.261438100002124
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 96,
+          "inference_flops": 24192,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 12000,
+          "parameter_count": 12196
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "315fb660aa7a0f603d183949531a810d7badb9e70a3f6c87e23fe97245d11971",
+        "phases": [
+          {
+            "best_epoch": 40,
+            "best_validation_loss": 0.019217839457614565,
+            "epochs_run": 60,
+            "optimizer_steps": 1920,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 35,
+            "best_validation_loss": 0.5818980820707569,
+            "epochs_run": 55,
+            "optimizer_steps": 1760,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 17.82957560000068
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.001,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 20000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 128,
+          "inference_flops": 40192,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 20000,
+          "parameter_count": 20227
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "ad3fb1fb1b397df4396a6dda4b991bd27c0d31ae383e0450997a35abf4aa7f3d",
+        "phases": [
+          {
+            "best_epoch": 5,
+            "best_validation_loss": 0.583530683208221,
+            "epochs_run": 25,
+            "optimizer_steps": 800,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 5.609996700004558
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 127,
+          "inference_flops": 39878,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 20000,
+          "parameter_count": 20070
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "6ef3ce21e14855fda2484bcee8f89201556e1963bc9b5ee4290e89e3293dc7db",
+        "phases": [
+          {
+            "best_epoch": 45,
+            "best_validation_loss": 0.01920729011908999,
+            "epochs_run": 65,
+            "optimizer_steps": 2080,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 60,
+            "best_validation_loss": 0.5629540238826346,
+            "epochs_run": 80,
+            "optimizer_steps": 2560,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 31.32876530000067
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.001,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 12000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 96,
+          "inference_flops": 24000,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 12000,
+          "parameter_count": 12099
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "6376c587e3fb0c77045915b3928aaf6496db3a570a52141c966d061e7b373648",
+        "phases": [
+          {
+            "best_epoch": 5,
+            "best_validation_loss": 0.6416788588834503,
+            "epochs_run": 25,
+            "optimizer_steps": 800,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 4.282170799997402
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 96,
+          "inference_flops": 24192,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 12000,
+          "parameter_count": 12196
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "7b72d72b49dc1469edee808cfa179e9811bb73bc58f51b2a26d9a2c5b387fb3f",
+        "phases": [
+          {
+            "best_epoch": 40,
+            "best_validation_loss": 0.01925880651967491,
+            "epochs_run": 60,
+            "optimizer_steps": 1920,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 35,
+            "best_validation_loss": 0.5815392142013218,
+            "epochs_run": 55,
+            "optimizer_steps": 1760,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 17.77287790000264
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.001,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 20000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 128,
+          "inference_flops": 40192,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 20000,
+          "parameter_count": 20227
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "ab41dad9eab0c31c8b7159c5a84e986a62edc3b9bd42e89504c7082eaf116705",
+        "phases": [
+          {
+            "best_epoch": 5,
+            "best_validation_loss": 0.5844734707750889,
+            "epochs_run": 25,
+            "optimizer_steps": 800,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 5.648308799994993
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 127,
+          "inference_flops": 39878,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 20000,
+          "parameter_count": 20070
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "74ef695f1d431b4df62ba070b397a5d87ed33509fb5e4b43c6167887057bdb8d",
+        "phases": [
+          {
+            "best_epoch": 45,
+            "best_validation_loss": 0.019253255613348355,
+            "epochs_run": 65,
+            "optimizer_steps": 2080,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 35,
+            "best_validation_loss": 0.566334238980985,
+            "epochs_run": 55,
+            "optimizer_steps": 1760,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 26.88158449999173
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.001,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 12000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 96,
+          "inference_flops": 24000,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 12000,
+          "parameter_count": 12099
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "4d61b1be5d2a2366c11252773896b913c6001a160574e15655ee73c268f655a2",
+        "phases": [
+          {
+            "best_epoch": 5,
+            "best_validation_loss": 0.6429278919851322,
+            "epochs_run": 25,
+            "optimizer_steps": 800,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 4.218205099998158
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 96,
+          "inference_flops": 24192,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 12000,
+          "parameter_count": 12196
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "dc90d3829117216d6780489d040c853c750b01edd611f2a313577eec4c3e3c0d",
+        "phases": [
+          {
+            "best_epoch": 40,
+            "best_validation_loss": 0.01929256407096904,
+            "epochs_run": 60,
+            "optimizer_steps": 1920,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 35,
+            "best_validation_loss": 0.5862166462682387,
+            "epochs_run": 55,
+            "optimizer_steps": 1760,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 17.447184499993455
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.001,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 20000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 128,
+          "inference_flops": 40192,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 20000,
+          "parameter_count": 20227
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "2e1fe4dd3384d988dea1e9c83933f3bb7c3a20b0bfaaccfe5c4be7f33df6f21b",
+        "phases": [
+          {
+            "best_epoch": 5,
+            "best_validation_loss": 0.5836298191006899,
+            "epochs_run": 25,
+            "optimizer_steps": 800,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 5.6567712999967625
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 127,
+          "inference_flops": 39878,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 20000,
+          "parameter_count": 20070
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.001,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "439206bdc7399d0d43673844dfd0fe2e2053da7dfbb7db5700801e78dfeba12f",
+        "phases": [
+          {
+            "best_epoch": 20,
+            "best_validation_loss": 0.019628057603358687,
+            "epochs_run": 40,
+            "optimizer_steps": 1280,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 30,
+            "best_validation_loss": 0.5740416401294807,
+            "epochs_run": 50,
+            "optimizer_steps": 1600,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 18.930288700008532
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 12000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 96,
+          "inference_flops": 24000,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 12000,
+          "parameter_count": 12099
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "8bff66d95044ae518d72c632300646e181fd927ed1dd898e17254cfac160c7e5",
+        "phases": [
+          {
+            "best_epoch": 65,
+            "best_validation_loss": 0.3639780184664888,
+            "epochs_run": 85,
+            "optimizer_steps": 2720,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 15.08437430000049
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 96,
+          "inference_flops": 24192,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 12000,
+          "parameter_count": 12196
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "351c7334b79ca116a21c4c4c9ac3ef81b94bea83d2b9b81c816dd7108d90489e",
+        "phases": [
+          {
+            "best_epoch": 45,
+            "best_validation_loss": 0.019941197750274933,
+            "epochs_run": 65,
+            "optimizer_steps": 2080,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 40,
+            "best_validation_loss": 0.5794357218423662,
+            "epochs_run": 60,
+            "optimizer_steps": 1920,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 19.12964959999954
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 20000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 128,
+          "inference_flops": 40192,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 20000,
+          "parameter_count": 20227
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "4cc1f99374c85e9c682b794606f88260c4a78a302494b89b618a1371e39c4924",
+        "phases": [
+          {
+            "best_epoch": 45,
+            "best_validation_loss": 0.27224403647832035,
+            "epochs_run": 65,
+            "optimizer_steps": 2080,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 15.359611299994867
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 127,
+          "inference_flops": 39878,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 20000,
+          "parameter_count": 20070
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0
+        },
+        "parameter_hash": "3bb1b65e0ef22c57bc71d96d838ad8cf1b7cf816b84cba045d7f5c37efd6f59d",
+        "phases": [
+          {
+            "best_epoch": 30,
+            "best_validation_loss": 0.01991801606963505,
+            "epochs_run": 50,
+            "optimizer_steps": 1600,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 10,
+            "best_validation_loss": 0.5805548717868217,
+            "epochs_run": 30,
+            "optimizer_steps": 960,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 18.244641400000546
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 12000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 96,
+          "inference_flops": 24000,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 12000,
+          "parameter_count": 12099
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "0ce311cac2dc9ae9d5fb0cfebaffcde67538b3c26e263c50a8e0a423a1db77a7",
+        "phases": [
+          {
+            "best_epoch": 25,
+            "best_validation_loss": 0.3555742749050782,
+            "epochs_run": 45,
+            "optimizer_steps": 1440,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 7.793002100006561
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 96,
+          "inference_flops": 24192,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 12000,
+          "parameter_count": 12196
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "045f9e346c5ddbdfe9b5fc9bc799ada07f722db069471178b278d170e1e61e79",
+        "phases": [
+          {
+            "best_epoch": 45,
+            "best_validation_loss": 0.019846483888229287,
+            "epochs_run": 65,
+            "optimizer_steps": 2080,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 80,
+            "best_validation_loss": 0.5733796490127768,
+            "epochs_run": 100,
+            "optimizer_steps": 3200,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 24.949754900007974
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 20000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.0001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 128,
+          "inference_flops": 40192,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 20000,
+          "parameter_count": 20227
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "91003e410ca2db49d2c90139aa485c26d019fc5cfe4a901d5541c70ea45aac0c",
+        "phases": [
+          {
+            "best_epoch": 45,
+            "best_validation_loss": 0.314835783988893,
+            "epochs_run": 65,
+            "optimizer_steps": 2080,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 15.12404520000564
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 127,
+          "inference_flops": 39878,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 20000,
+          "parameter_count": 20070
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.0001
+        },
+        "parameter_hash": "aacb98b3cce788953626d580fffc3f4906fffab64b71df7ff97503a98760cccc",
+        "phases": [
+          {
+            "best_epoch": 30,
+            "best_validation_loss": 0.01968429624065277,
+            "epochs_run": 50,
+            "optimizer_steps": 1600,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 40,
+            "best_validation_loss": 0.5728720328064673,
+            "epochs_run": 60,
+            "optimizer_steps": 1920,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 23.32526460000372
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 12000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 96,
+          "inference_flops": 24000,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 12000,
+          "parameter_count": 12099
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "eb37a7782cdee71205bc49d45f9264345ba7fc88c25afc6fa8c186a7dfdf9d08",
+        "phases": [
+          {
+            "best_epoch": 45,
+            "best_validation_loss": 0.37762369889432007,
+            "epochs_run": 65,
+            "optimizer_steps": 2080,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 11.59962120000273
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 96,
+          "inference_flops": 24192,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 12000,
+          "parameter_count": 12196
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 12000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "18b8949940cef86108a8f794a8e098dc1a8d3a21e82340327779006c5a3ffeb6",
+        "phases": [
+          {
+            "best_epoch": 100,
+            "best_validation_loss": 0.01926700850790043,
+            "epochs_run": 100,
+            "optimizer_steps": 3200,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 45,
+            "best_validation_loss": 0.5682911836403939,
+            "epochs_run": 65,
+            "optimizer_steps": 2080,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 26.40803649999725
+      }
+    },
+    {
+      "config": {
+        "batch_worlds": 512,
+        "center_epochs": 100,
+        "gradient_norm_clip": 1.0,
+        "learning_rate": 0.003,
+        "max_epochs": 200,
+        "minimum_improvement": 1e-05,
+        "parameter_budget": 20000,
+        "patience_epochs": 20,
+        "radius_epochs": 100,
+        "validation_cadence": 5,
+        "weight_decay": 0.001
+      },
+      "cross_entropy": {
+        "architecture": {
+          "arm": "cross_entropy",
+          "hidden_width": 128,
+          "inference_flops": 40192,
+          "input_dim": 25,
+          "output_dim": 3,
+          "parameter_budget": 20000,
+          "parameter_count": 20227
+        },
+        "arm": "cross_entropy",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "155815063016d34c52c97e0d8281834cba3aa3bf1f03a99947b788c890bc0012",
+        "phases": [
+          {
+            "best_epoch": 25,
+            "best_validation_loss": 0.427787795432762,
+            "epochs_run": 45,
+            "optimizer_steps": 1440,
+            "phase": "cross_entropy"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 6.36230130000331
+      },
+      "structured": {
+        "architecture": {
+          "arm": "structured",
+          "hidden_width": 127,
+          "inference_flops": 39878,
+          "input_dim": 25,
+          "output_dim": 4,
+          "parameter_budget": 20000,
+          "parameter_count": 20070
+        },
+        "arm": "structured",
+        "config": {
+          "batch_worlds": 512,
+          "center_epochs": 100,
+          "gradient_norm_clip": 1.0,
+          "learning_rate": 0.003,
+          "max_epochs": 200,
+          "minimum_improvement": 1e-05,
+          "parameter_budget": 20000,
+          "patience_epochs": 20,
+          "radius_epochs": 100,
+          "validation_cadence": 5,
+          "weight_decay": 0.001
+        },
+        "parameter_hash": "52c6cff58d83c80529bc906d98e84abeff4e4738cf39c352e7636baeb4f5e96f",
+        "phases": [
+          {
+            "best_epoch": 20,
+            "best_validation_loss": 0.019804291625251505,
+            "epochs_run": 40,
+            "optimizer_steps": 1280,
+            "phase": "center"
+          },
+          {
+            "best_epoch": 10,
+            "best_validation_loss": 0.5754269395671037,
+            "epochs_run": 30,
+            "optimizer_steps": 960,
+            "phase": "radius"
+          }
+        ],
+        "seed": 101,
+        "wall_seconds": 15.408735000004526
+      }
+    }
+  ]
+}

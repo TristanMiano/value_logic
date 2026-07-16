@@ -36,13 +36,14 @@ The detailed typed records in the early formalism are now treated as an elaborat
 ## Repository map
 
 - [`TODO.md`](TODO.md) is the resumable project-control document and identifies the next task.
+- [`CODE_GUIDE.md`](CODE_GUIDE.md) explains every Python/C++ component, common commands, experiment artifacts, and safety boundaries in plain language.
 - [`formalism/`](formalism/) contains the developing mathematical semantics, update rules, dominance results, atlas machinery, and integrated witness model.
 - [`notes/`](notes/) contains the project specification, claim ledger, literature map, checkpoint records, and focused research notes.
 - [`posts/`](posts/) contains earlier motivational writing. It informs the narrative but is not treated as proof or external evidence.
 - [`llm_convos/`](llm_convos/) contains the conversations from which several initial ideas were extracted and critically assessed.
 - [`verification/`](verification/) contains the standard-library executable semantics, integrated finite witness, tests, and local-link checker.
 - [`ml/`](ml/) contains the architecture-neutral encoding contract and, in later tasks, the reference neural architecture, representation results, and loss design.
-- [`experiments/`](experiments/) contains the preregistered synthetic study design and, in later tasks, its pilot, frozen protocol, implementation, and results.
+- [`experiments/`](experiments/) contains the preregistered synthetic study design, pilot, frozen protocol, implementation, completed run checkpoints, analysis, figures, and results.
 - [`references.bib`](references.bib) is the working bibliography.
 
 The planned final public artifacts are:
@@ -66,7 +67,7 @@ The historical interfaces in `formalism/01_signature.md` through `formalism/05a_
 
 ## Project status
 
-Tasks 0–20R, Checkpoints A–C, and the unscheduled external-audit Checkpoint A1 are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed. The compact `WF + K_3` semantics and the complete finite witness are executable and tested with `python -m verification`. Continuation semantics separates current grants, eventual stability, certified stability, semantic finality, and optional truth. The compact core fixes `(s,e,q,P)` and has profile, diagnostic, soundness, update, and composition metatheory. Its quantitative extension characterizes subdomain restriction, decomposes hard-router risk, bounds bridge/blend task risk, propagates finite plan-DAG errors, and audits exact bridge cycles.
+Tasks 0–21, Checkpoints A–C, and the unscheduled external-audit Checkpoint A1 are complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed. The compact `WF + K_3` semantics and the complete finite witness are executable and tested with `python -m verification`. Continuation semantics separates current grants, eventual stability, certified stability, semantic finality, and optional truth. The compact core fixes `(s,e,q,P)` and has profile, diagnostic, soundness, update, and composition metatheory. Its quantitative extension characterizes subdomain restriction, decomposes hard-router risk, bounds bridge/blend task risk, propagates finite plan-DAG errors, and audits exact bridge cycles.
 
 Task 14B closed Checkpoint B's focused repair gate. It proved every frozen atom evaluator local to a finite typed read footprint, including negative collection-index reads, and made the canonical event/write graph change-complete. [`Task 14C`](formalism/08c_proof_carrying_plans.md) then proved that finite typed plan DAGs can jointly compute payloads, propagate quantitative grades, and construct checked composite certificates whose erasure is the ordinary computation. It also established grounded finite-DAG provenance and unique finite-rank assessment of a frozen value-logic implementation, while showing that self-endorsement alone is not target-world evidence.
 
@@ -92,6 +93,8 @@ The [canonical worked example](ml/02_relu_architecture.md#84-worked-toy-one-plan
 
 [`Task 20R`](experiments/03_execution_repair.md) repairs the failed full-scale execution path without changing the frozen scientific design. It replaces millions of repeated Python-object audits with direct NumPy/PyTorch blocks and a small allocation-free C++ decoder, adds exact differential/native tests, and separates the future run into atomic resumable stages. Its pilot preserved discrete outputs exactly and passed the performance gate. It used pilot-role data only: no v1.1 production or final-confirmation payload was generated, and `F35/F36` remain untested.
 
-The current next step is **Task 21: run and analyze the frozen experiment once**. ReLU remains a reference witness rather than a unique or presumptively optimal architecture.
+[`Task 21`](experiments/02_results.md) completed that staged frozen run once. The structured center–radius arm decisively beats direct `K_3` cross-entropy under changed tolerances, but decisively loses the registered boundary and ordinary in-regime comparisons; `F35` is therefore mixed/inconclusive under its frozen decision rule, and the paper must present a transfer-versus-conservatism trade-off rather than general structured-objective superiority. Registered marginal target-in-proposal coverage passes for both `J` and `T`, supporting `F36` only in that exact scope. The machine-readable analysis, figures, stage hashes, execution deviations, unavailable secondaries, and claims not made are committed; large reproducible raw/model/trace products remain local and ignored by Git.
+
+The current next step is **Checkpoint C1: adjudicate and propagate the frozen empirical result before interpretation**. ReLU remains a reference witness rather than a unique or presumptively optimal architecture, and no outcome-selected confirmation rerun is authorized.
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.
