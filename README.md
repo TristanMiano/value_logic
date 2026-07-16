@@ -95,6 +95,8 @@ The [canonical worked example](ml/02_relu_architecture.md#84-worked-toy-one-plan
 
 [`Task 21`](experiments/02_results.md) completed that staged frozen run once. The structured center–radius arm decisively beats direct `K_3` cross-entropy under changed tolerances, but decisively loses the registered boundary and ordinary in-regime comparisons; `F35` is therefore mixed/inconclusive under its frozen decision rule, and the paper must present a transfer-versus-conservatism trade-off rather than general structured-objective superiority. Registered marginal target-in-proposal coverage passes for both `J` and `T`, supporting `F36` only in that exact scope. The machine-readable analysis, figures, stage hashes, execution deviations, unavailable secondaries, and claims not made are committed; large reproducible raw/model/trace products remain local and ignored by Git.
 
+The required [pre-Checkpoint C1 interpretation](notes/checkpoints/C1_precheckpoint_F35_interpretation.md) explains the result for human and external-audit readers. It emphasizes that “mixed” means decisive effects in opposite directions, separates the surviving information-retention motivation from the damaged structured-objective preference, and identifies the questions Checkpoint C1 must adjudicate.
+
 The current next step is **Checkpoint C1: adjudicate and propagate the frozen empirical result before interpretation**. ReLU remains a reference witness rather than a unique or presumptively optimal architecture, and no outcome-selected confirmation rerun is authorized.
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.
