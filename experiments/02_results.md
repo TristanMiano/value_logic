@@ -3,13 +3,24 @@
 Date: 2026-07-16  
 Scientific protocol: `value-logic-experiment-v1.0.0`  
 Execution amendment: `value-logic-implementation-v1.1.0`  
-Status: completed once; Checkpoint C1 must still perform the project-level adjudication
+Status: completed once; project-level adjudication completed at Checkpoint C1
+
+> **Checkpoint C1 adjudication (2026-07-18):** Aggregate `F35` remains `I1`,
+> mixed with decisive opposing effects. Its registered transfer component is
+> `F35a/S1`; boundary superiority and in-regime noninferiority are
+> `F35b/F35c/X1` at their registered margins. `F36/S1` remains marginal
+> target-in-proposal coverage only. The scorer receives the declared tolerance
+> and is re-evaluated per query, so the transfer result is no-retraining
+> generalization by a statistic-output interface, not literal reuse of one
+> invariant prediction region. Conservative dead-band geometry is a plausible
+> explanation, not a causally identified decomposition. See
+> [`C1_empirical_adjudication.md`](../notes/checkpoints/C1_empirical_adjudication.md).
 
 ## 1. Result in ordinary language
 
 The experiment did **not** establish one generally preferable neural encoding of the value logic.
 
-The structured network, which predicts a center and uncertainty radius before an exact decoder assigns `Refuted`, `Open`, or `Supported`, was exceptionally good when the same numerical prediction had to be reused under a changed tolerance. It was much worse than a direct three-class cross-entropy network on ordinary in-regime cases and on the preregistered boundary panel. This is a stable trade-off across all eight fit seeds, not an average hiding opposite seed-level results.
+The structured network, which predicts a center and uncertainty radius before an exact decoder assigns `Refuted`, `Open`, or `Supported`, generalized exceptionally well to changed-tolerance queries without retraining. It was much worse than a direct three-class cross-entropy network on ordinary in-regime cases and on the preregistered boundary panel. This is a stable trade-off across all eight fit seeds, not an average hiding opposite seed-level results.
 
 The held-out residual-expansion procedure did pass its narrower calibration claim: its proposed intervals contained the target at the registered marginal rate in both statistic groups. That result concerns target-in-proposal coverage only. It does not certify a whole profile, a selected route, a deployed system, or the truth of a model.
 

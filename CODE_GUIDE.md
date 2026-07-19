@@ -194,6 +194,7 @@ The experiment compares two matched ReLU multilayer perceptrons on artificial, e
 |---|---|---|
 | [`experiments/run_pilot.py`](experiments/run_pilot.py) | Runs the Task 19A **generator-only** pilot on 256 pilot worlds, checks exact panel quotas and invariants, calculates conservative design/power quantities, and writes the frozen pilot, protocol, and role-manifest JSON files. It never fits a learner or materializes production outcomes. | Use for provenance or regenerating the original preregistration artifacts after an explicitly reviewed protocol-version change. It is not the neural experiment. |
 | [`experiments/run_experiment.py`](experiments/run_experiment.py) | Implements the original v1 neural preflight, pilot-role smoke test, capacity search, fitting, per-world evaluation, trace writing, and guarded all-at-once final run. | Use `--preflight` or `--smoke` only for historical/reference checks. The all-at-once final path is retained for provenance and differential testing; use the repaired runner for operational Task 21 stages. |
+| [`experiments/artifact_io.py`](experiments/artifact_io.py) | Writes sorted, indented UTF-8 JSON with explicit LF bytes and an optional atomic rename. | New experiment versions use it to avoid platform-dependent newline hashes. Historical v1/v1.1 writers are source-hashed evidence and remain unchanged. |
 
 ### Repaired block-oriented path
 
@@ -243,6 +244,8 @@ It also emits signed support/refutation margins and their ReLU-positive parts. T
 
 JSON files are human-readable metadata or results. NPZ files are compressed NumPy arrays, used here for PyTorch model parameters. JSONL trace files contain one JSON record per line. Some later-stage artifacts may not exist until their stage completes.
 
+Several frozen JSON contracts use raw-byte SHA-256 hashes. Seven v1/v1.1 artifacts were originally written with CRLF on Windows; [`.gitattributes`](.gitattributes) now preserves their exact registered bytes instead of letting Git normalize them. Other JSON files retain their own existing bytes. Do not run a line-ending converter across the directory. New versions should use `artifact_io.py` or explicitly declare a different canonical serialization before hashing.
+
 | Artifact | Meaning |
 |---|---|
 | [`experiments/protocol_v1.json`](experiments/protocol_v1.json) | Frozen scientific design, role counts, hypotheses, estimands, thresholds, and embargo rules. |
@@ -277,6 +280,7 @@ Do not infer stage completion solely from a file name. The repaired runner verif
 - **Roles are not interchangeable.** Pilot, train, validation, calibration, system-audit, and final-confirmation worlds have distinct identities and purposes.
 - **Final confirmation is special.** Preflight, unit tests, the deterministic system witness, and repair pilots do not cross the final embargo. The explicit final token and an authorized Task 21 step do.
 - **Hash errors should be investigated.** Do not edit a contract hash, delete a checkpoint, or rename an old artifact merely to make a guard pass. An intentional code change needs a reviewed new implementation version and repeated equivalence checks.
+- **Line endings can be evidence.** Frozen raw-byte hashes cover the committed bytes, including newlines. Preserve `.gitattributes`; use the LF-stable writer for new versions rather than rewriting historical source-hashed runners or normalizing all JSON together.
 
 ## Troubleshooting
 
