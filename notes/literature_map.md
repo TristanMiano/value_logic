@@ -273,7 +273,7 @@ The literature supports the existing caution that a policy alone does not unique
 - a coarse observation may need history or a belief state;
 - extra environments, discount factors, interventions, or structural assumptions can improve identifiability.
 
-Task 22 sharpens the surviving result to **environment-relative policy evaluation with conditional behavioral reconstruction**. With the environment/return contract fixed, `pi` induces `V^pi`, `Q^pi`, and occupancy objects. Greedy use of `Q^pi` is ordinarily policy improvement and equals the original policy only under greediness and compatible tie-breaking. Full state–action occupancy can recover a Markov policy only on positive-occupancy states; state occupancy alone loses the action, and neither occupancy is utility. Thus the strongest near-term interpretability target is a licensed transparent surrogate, not unique recovery of reward, arbitrary-policy inversion, or the policy's true internal value mechanism.
+Task 22 separates a supported finite policy/value-like representation-existence construction from the companion's operational result, **environment-relative policy evaluation with conditional behavioral reconstruction**. With the environment/return contract fixed, `pi` induces `V^pi`, `Q^pi`, and occupancy objects. Greedy use of `Q^pi` is ordinarily policy improvement and equals the original policy only under greediness and compatible tie-breaking. Full state–action occupancy can recover a Markov policy only on positive-occupancy states; state occupancy alone loses the action, and neither occupancy is utility. Thus the strongest near-term interpretability target is a licensed transparent surrogate, not unique recovery of reward, arbitrary-policy inversion, or the policy's true internal value mechanism.
 
 ## 11. Provability logic and the Löbian discussion
 
@@ -378,16 +378,22 @@ The omitted items are not declared false. They are simply not carried into the v
 6. `GeifmanElYaniv2019`
 7. `AmatoDiNolaGerla2002` for the clipped-ReLU contrast
 
-### After Task 22, before Tasks 22A–23 (recursive judgment and policy/value interpretability)
+### After Task 22A, before Task 23 (recursive judgment and policy/value interpretability)
 
 Task 22 has now audited `NgRussell2000`, `CaoCohenSzpruch2021`,
 `KimEtAl2021`, `SkalseEtAl2023`, `ArmstrongMindermann2018`,
 `SuttonBarto2018`, `LarocheTachetDesCombes2023`, `Afriat1967`,
 `GneitingRaftery2007`, and the belief-state sources at the exact scopes recorded
-in `notes/policy_value_judgment.md`. Task 22A should use the proper-scoring
-premise only after stating its nuisance-conditioned baseline and should prove
-the separate mediation step from held-out outcome information to latent-task
-information. Task 23 should inherit the standard-return, occupancy, and
+in `notes/policy_value_judgment.md`. Task 22A now proves the scoped implication
+in `formalism/09_judgment_information.md`: strict-proper-score improvement over
+the true nuisance-conditioned Bayes baseline implies positive conditional
+outcome information; log-loss improvement `delta` lower-bounds it by `delta`
+nats; and explicit mediation transfers the bound to the outcome-identifiable
+task quotient. It also supplies the required baseline, leakage, nuisance,
+duplication, instability, and copying countermodels. `GneitingRaftery2007`
+supports the proper-scoring premise, not the project's latent quotient or
+recursive theorem; those steps are proved locally. Task 23 should inherit both
+the positive partial-information result and the standard-return, occupancy, and
 mechanism boundaries without treating them as a refutation of the separate
 finite representation-existence result.
 

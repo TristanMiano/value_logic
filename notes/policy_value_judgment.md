@@ -1,7 +1,7 @@
 # Task 22: Policy–Value Correspondence and Recursive-Judgment Audit
 
 Date: 2026-07-18
-Status: completed; Task 22A is next
+Status: completed; amended by the completed Task 22A theorem
 
 ## Durable decision summary
 
@@ -44,17 +44,15 @@ Status: completed; Task 22A is next
    separate value/Q regression, and greedy agreement tests in deterministic
    games. It does not use a policy “alone,” recover a unique reward, invert an
    arbitrary policy, or identify the policy network's mechanism.
-8. **Recursive judgment remains a conditional information hypothesis.** Good
-   prediction of held-out performance can establish information about an
-   outcome. It establishes information about latent task structure only under
-   non-leakage, nuisance-controlled baseline, stability, mediation, and
-   identifiability assumptions. Calibration alone and recursion alone are
-   insufficient.
-9. **Task 22A now has a precise target.** It must determine whether a strictly
-   proper-score improvement gives positive conditional information about the
-   held-out outcome and, under a declared conditional Markov structure, about
-   the latent task. It must also give countermodels when any required assumption
-   is removed.
+8. **Recursive judgment now has a scoped information theorem.** Task 22A proves
+   that positive population improvement under a strictly proper loss over the
+   true nuisance-conditioned Bayes baseline implies `I(J;Y|N)>0`. Under log
+   loss, an improvement of `delta` nats gives `I(J;Y|N)>=delta`.
+9. **Task information still requires mediation and a quotient.** If residual
+   judge–outcome dependence is mediated by latent task `Z`, the same lower bound
+   applies to the outcome-identifiable quotient `K=k_N(Z)`. Leakage, omitted
+   nuisance, duplicated task types, instability, calibration alone, and
+   recursion-by-copying block stronger readings.
 10. **These results do not alter the license calculus.** Policy/value material is
    optional motivation, a bounded companion case study, or future work. It is
    not a dependency of the finite-stage semantics, metatheory, neural
@@ -106,6 +104,42 @@ and belief-state sufficiency. The most directly controlling sources are:
 - [Smallwood and Sondik (1973)](https://doi.org/10.1287/opre.21.5.1071) and
   [Kaelbling, Littman, and Cassandra (1998)](https://doi.org/10.1016/S0004-3702(98)00023-X)
   on belief-state formulations for partial observability.
+
+## 1A. Author motivation for the policy/value interpretability bridge
+
+**Source status:** the following is a transparent paraphrase of project-author
+guidance supplied on 2026-07-18. It records intended motivation, not an
+independently established mathematical or empirical result.
+
+The author intends *policy* in a deliberately broad black-box sense: a bounded
+mapping that may perform essentially any computation on its state domain and
+emit a successor state or an action whose deterministic environment transition
+produces that successor. The attraction of policy-to-value reconstruction is
+therefore not limited to recovering a conventional reward table. A value
+function is envisioned as a particularly high-level model of agent behavior—a
+way of describing what states or prospects the black box acts as though it
+ranks, even when the underlying system contains no explicit utility module that
+can be read out.
+
+On this view, full mechanistic transparency may be unattainable and is not the
+only useful target. A learned model-of-a-model can still contain interpretable
+information: stable rankings, local comparisons, failure regions, or
+counterfactual predictions that compress some behavioral structure of the
+original policy. This is the intended reason to bridge
+`policy_value_isomorph` with value logic. The policy/value project supplies a
+candidate high-level surrogate; value logic can state the domain, evidence,
+margin, abstention, and provenance conditions under which reliance on that
+surrogate is warranted.
+
+The project's adjudicated restatement is slightly narrower than calling value
+*the* highest-level interpretability model. It treats value as one especially
+natural agent-level abstraction whose usefulness must be graded. The finite
+existence construction shows that a lossless value-like representation can be
+defined; the companion asks whether a semantically meaningful approximation can
+be learned; Task 23 must test whether the result is behaviorally useful,
+human-inspectable, stable, and perhaps representationally or causally faithful.
+It need not be the unique true internal utility to be informative, but action
+agreement alone is not yet interpretability.
 
 ## 2. Representational existence and the operational maps
 
@@ -321,7 +355,7 @@ state can restore a Markov control problem under a specified model. It does not
 identify an arbitrary learned compression, nor does it remove reward/planner
 ambiguity.
 
-## 6. Recursive judgment and the Task 22A boundary
+## 6. Recursive judgment after Task 22A
 
 The motivating idea behind `B01` is plausible only after separating three
 objects:
@@ -333,41 +367,53 @@ objects:
 
 A judge can predict `Y` using leakage, subject identity, base rates, or a stable
 nuisance without representing the task distinction of interest. A report can
-also be calibrated while remaining constant and uninformative. Conversely, a
-strictly proper-score improvement over the best nuisance-conditioned baseline
-is evidence that the report contains outcome-relevant predictive information.
-To transfer that conclusion from `Y` to `Z`, Task 22A needs a conditional
-mediation structure such as the Markov chain `J - Z - Y` given `N`, meaning
-`J` is independent of `Y` conditional on `(Z,N)`, or an equivalent explicit
-non-leakage assumption. Under such a condition, a data-processing
-argument is a plausible route from positive conditional information about `Y`
-to positive conditional information about `Z`.
+also be calibrated while remaining constant and uninformative. Task 22A now
+settles the positive direction in
+[`formalism/09_judgment_information.md`](../formalism/09_judgment_information.md):
 
-Task 22A must state and test at least these assumptions:
+```text
+positive strict-proper-score improvement over Bayes P(Y|N)
+    -> I(J;Y|N) > 0,
+
+log-loss improvement delta
+    -> I(J;Y|N) >= delta.
+```
+
+Define `K=k_N(Z)` by merging latent task labels with identical
+`P(Y|Z,N)`. Under `J` independent of `Y` conditional on `(Z,N)`, quotient
+mediation and data processing give
+
+```text
+I(J;K|N) >= I(J;Y|N).
+```
+
+Thus the surviving theorem uses these assumptions and interpretations:
 
 | assumption | required role |
 |---|---|
 | nondegenerate latent task `Z` | excludes a one-type or label-only tautology |
-| stable `P(Y|Z,N)` across train/test | makes task distinctions predictively meaningful |
+| stable `P(Y given Z,N)` across train/test | makes task distinctions predictively meaningful |
 | held-out outcome and lineage separation | blocks direct label or future-data leakage |
-| nuisance-complete baseline `P(Y|N)` | prevents base rate, identity, or difficulty from masquerading as task information |
-| strictly proper score or explicit loss gap | turns improvement into a distributional prediction statement |
+| nuisance-complete baseline `P(Y given N)` | prevents base rate, identity, or difficulty from masquerading as task information |
+| strictly proper score and positive population loss gap | turns improvement over the Bayes baseline into an outcome-information theorem |
 | mediation/non-leakage `J independent of Y given (Z,N)` | makes outcome information attributable to the scoped latent structure |
 | identifiable task quotient | limits recovery to distinctions that change observables; labels may remain permutation-equivalent |
 | independent evidence at each recursive level | prevents self-endorsement, copying, and collusive fixed points |
 | stationarity or modeled feedback | prevents evaluation incentives from silently changing the target |
 | replication under shift | separates stable structure from dataset-specific shortcuts |
 
-The required countermodels are equally important: remove the nuisance baseline
-and let identity predict outcomes; remove mediation and leak the future score;
-remove identifiability and duplicate a task type; remove stability and swap task
-effects after training; or reward recursive agreement so that judges coordinate
-on a convention unrelated to outcomes.
+Task 22A supplies the matching countermodels: a poor comparator can be beaten by
+an uninformative report; omitted identity can predict outcomes without task
+information; future leakage defeats mediation; duplicated types identify only
+the quotient; deployment instability destroys transfer; and copied recursive
+reports have zero incremental conditional information.
 
 Recursive evaluation does not itself provide ground truth. It may create a
 useful training/evidence architecture if later judgments are checked against
 independent outcomes, but additional levels can also amplify shared bias or
-collusion. `B02` therefore remains motivation/future empirical work. The slogan
+collusion. At recursive level `m`, the relevant gain is
+`I(J_m;Y|N,J_0,...,J_(m-1))`; copying makes it zero. `B02` therefore remains
+motivation/future empirical work. The slogan
 `T=J^2` is not a typed theorem and is excluded from technical claims unless a
 later artifact supplies domains, codomains, and an equivalence criterion.
 
@@ -383,7 +429,7 @@ later artifact supplies domains, codomains, and an equivalence criterion.
 | `C08`, value must match policy complexity | `X1` without counting dynamics/decision machinery; constant-value counterexample | omit except as a limitation |
 | `C09–C10`, LLM values and fragility conclusions | still underspecified/untested | future work or omit |
 | `C11`, policy-only non-identifiability | `S1` formal and literature-supported | formal paper boundary and case-study setup |
-| `B01`, task information from successful judgment | precise `T0` handed to Task 22A | formal paper only if Task 22A proves a scoped result; otherwise motivation/future work |
+| `B01`, task information from successful judgment | `S1` scoped proper-score/log-loss theorem; `X1` unqualified baseline, mediation, or recursion strengthening | compact formal-paper motivation theorem with adjacent countermodel; not a novelty headline |
 | `B02–B04`, recursive measurement/centroids/`T=J^2` | motivating or untyped; no theorem | Substack motivation with explicit caveat, or future work |
 | `B05`, improvement requires value change | `X1` as universal wording: fixed-objective world-model or policy learning is a counterexample | omit |
 | `G01–G03`, current companion code/test scope | `S1` by pinned code/test-contract inspection; tests not rerun here | companion case-study appendix/repository link |
@@ -394,9 +440,10 @@ central question. The formal paper may include the finite encoder proposition,
 then the policy-evaluation map and compact counterexamples to show why that
 existence result does not supply return semantics, identification, or a
 practical reconstruction guarantee.
-The Substack post may retain the intuition that successful judgment is pressured
-to track stable distinctions, but must identify it as a hypothesis pending Task
-22A. The companion repository belongs in a bounded case-study section only if
+The Substack post may state that successful held-out prediction forces
+outcome/task-quotient information only with the Task 22A baseline, mediation,
+and stability conditions. The companion repository belongs in a bounded
+case-study section only if
 Task 23 supplies a useful interpretability bridge. Equating the existence
 correspondence with standard return, occupancy-as-utility, value-complexity
 necessity, and unqualified claims that recursive judgment “measures fact” are
@@ -404,5 +451,4 @@ excluded. The qualified finite existence claim is retained.
 
 ## 8. Next task
 
-Proceed to **Task 22A — Prove, refute, or demote the recursive-judgment
-information claim**. Do not begin Task 23 during Task 22.
+Proceed to **Task 23 — Design the policy-to-value interpretability bridge**.
