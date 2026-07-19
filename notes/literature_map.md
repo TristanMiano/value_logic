@@ -500,6 +500,43 @@ despite using a classical phantom-safe pattern. Task 14C proves only the finite
 acyclic/ranked fragment; a cyclic extension remains unconstructed and would
 need its own operator, fixed-point selection, and soundness theorem.
 
+## 21. Task 25 publication-positioning freeze
+
+Task 25 adds no new literature claim. It uses the verified source map to keep
+the paper's intellectual division of labor explicit:
+
+- the profile-indexed finite-stage calculus and its instantiation-fiber
+  refinement result are the first headline cluster; Strong Kleene algebra,
+  labelled/input-output precedents, and belief-revision machinery remain
+  positioned as neighboring or imported infrastructure;
+- the open-ended stability package is the second cluster, with Gold/Kelly and
+  Wald/Darling--Robbins/Robbins/Bahadur--Savage named as classical learning and
+  sequential-analysis context rather than as identical theorems;
+- typed complete-diagnostic locality and change-completeness are the third
+  cluster, with phantom/predicate-lock and separation-logic frame rules as the
+  established patterns that the project instantiates for its actual atom
+  clauses;
+- the architecture-neutral representation/ReLU package is the fourth cluster;
+  CPWL/ReLU representation results are cited as inputs, while consumer-relative
+  factorization, the exact conservative band, named dual-use channels, and the
+  license-specific seam/library boundaries are the project's scoped synthesis;
+- transport, routing, path sensitivity, cycle potentials, proof-carrying
+  finite plans, and finite-rank assessment are load-bearing integrations of
+  standard mathematics and program/certificate ideas rather than extra novelty
+  headlines; and
+- Task 22A's proper-score/KL/data-processing result is a compact standard-
+  mathematics motivation theorem. Its Bayes-baseline, nuisance, mediation,
+  stability, leakage, and copying boundaries remain explicit, and it is not
+  advertised as a new information-theory contribution.
+
+The optional policy/value section uses the verified policy-evaluation, revealed-
+preference, and inverse-reinforcement-learning literature only to distinguish a
+finite lossless representation-existence result from standard return semantics,
+identification, and practical recovery. The project makes no claim about true-
+utility existence or recovery. [`paper_outline.md`](../paper_outline.md) fixes
+the source/result allocation, and Checkpoint D must confirm that this positioning
+survives the final scope review.
+
 ## Task conclusion
 
-Task 6 established the initial verified bibliography and division of intellectual labor among neighboring fields. Task 12A closes the core-related gaps around output production, explicit evidence, awareness, partiality, conformal validity, and safe baseline improvement; Task 14B adds the precise sequential-analysis context needed by the stability package; Task 14C positions proof-carrying recursive plans against the established programs-as-proofs, program-logic, refinement/quantitative-type, PCC, and certifying-algorithm traditions; Checkpoint C adds the classical phantom/frame and Kripke--Fitting positioning for the newest locality and cyclic-boundary machinery; and Task 24 selects those boundaries for publication without adding a literature-derived verdict. The strongest immediate foundations are now AGM/KLM for revision, input/output logic for non-truth-producing consequence structure, Strong Kleene for the meaningful meet algebra, Gold/Kelly for convergence without known arrival, Wald/Darling–Robbins/Robbins for sequential testing and confidence sequences, selective/conformal prediction and safe policy improvement for operational uncertainty and fallback, database/separation-logic locality patterns for update bookkeeping, Hoare/Curry--Howard and certificate-carrying computation for recursive plans, Kripke--Fitting for the explicitly deferred cyclic alternative, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, and IRL for nonidentifiability constraints. Their non-algebraic theorems remain source-specific until an exact translation is proved.
+Task 6 established the initial verified bibliography and division of intellectual labor among neighboring fields. Task 12A closes the core-related gaps around output production, explicit evidence, awareness, partiality, conformal validity, and safe baseline improvement; Task 14B adds the precise sequential-analysis context needed by the stability package; Task 14C positions proof-carrying recursive plans against the established programs-as-proofs, program-logic, refinement/quantitative-type, PCC, and certifying-algorithm traditions; Checkpoint C adds the classical phantom/frame and Kripke--Fitting positioning for the newest locality and cyclic-boundary machinery; Task 24 selects those boundaries for publication without adding a literature-derived verdict; and Task 25 freezes which results are headlines, integrations, empirical evidence, and optional motivation. The strongest immediate foundations are now AGM/KLM for revision, input/output logic for non-truth-producing consequence structure, Strong Kleene for the meaningful meet algebra, Gold/Kelly for convergence without known arrival, Wald/Darling–Robbins/Robbins for sequential testing and confidence sequences, selective/conformal prediction and safe policy improvement for operational uncertainty and fallback, database/separation-logic locality patterns for update bookkeeping, Hoare/Curry--Howard and certificate-carrying computation for recursive plans, Kripke--Fitting for the explicitly deferred cyclic alternative, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, and IRL for nonidentifiability constraints. Their non-algebraic theorems remain source-specific until an exact translation is proved.
