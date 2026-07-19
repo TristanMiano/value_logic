@@ -21,13 +21,12 @@ at inspected commit `097ea8897fb203b9b3a6ceafcb29e11bdc6cdd6c`
    representation of a bounded black-box policy. It does not claim that a true
    utility exists, that the surrogate recovers it, or that unlimited compute
    would make the surrogate the uniquely truest recoverable object.
-2. **Value is the project's first semantic foothold, not a proved metaphysical
-   primitive.** The author was led from policy reconstruction to pragmatic logic
+2. **Value is the project's first semantic foothold.** The author was led from policy reconstruction to pragmatic logic
    because value-like rankings were the first tractable semantic object he saw
    how to recover from behavior; beliefs were not recovered first and their
-   extraction was less direct. This is research motivation, not a theorem that
-   value is universally prior, that belief extraction is impossible, or that
-   every policy has an internal utility module.
+   extraction was less direct. This records research motivation. The project
+   makes no claim that value is universally prior, that belief extraction is
+   impossible, or that every policy has an internal utility module.
 3. **Three correspondence questions remain separate.** A finite lossless
    action-code or action-score representation proves abstract existence. A
    standard `V^pi` or `Q^pi` is instead fixed by a declared decision process and
@@ -40,10 +39,11 @@ at inspected commit `097ea8897fb203b9b3a6ceafcb29e11bdc6cdd6c`
    while exposing return estimates, counterfactual rankings, and failure
    regions. Whether that trade is useful is an empirical question; neither a
    real codomain nor exact behavioral agreement is interpretability by itself.
-5. **Interpretability is a profile, not one score.** Behavioral fidelity, value
-   fidelity, outcome/task information, domain validity, representational
+5. **Interpretability is represented as a profile.** Behavioral fidelity,
+   value fidelity, outcome/task information, domain validity, representational
    alignment, causal faithfulness, and human inspectability are separate axes.
-   Evidence on one axis must not be silently promoted to another.
+   The project does not combine them into a single interpretability score, and
+   evidence on one axis must not be silently promoted to another.
 6. **The value-logic bridge is an auditable reliance wrapper.** A reconstructed
    `V/Q` becomes an evaluated use plan under a context that fixes its target,
    domain, loss, fallback, tolerance, constraints, and evidence mode. Named
@@ -280,28 +280,32 @@ proposal validity.
 
 ## 7. Claim and publication disposition
 
-`G04` remains supported only as a separation result: behavior can be reproduced
-without shared mechanism. `G06` is now an operational seven-axis design, but its
+`G04` remains supported as a separation result: behavior can be reproduced
+without shared mechanism. `G06` is now an operational seven-axis design; its
 representational, causal, and human measurements remain unexecuted. `G05` is a
-specified falsifiable program rather than a positive transparency result.
+specified test program. The current artifacts supply no positive transparency
+measurement for that program.
 
 A positive **partial semantic-surrogate** claim would require declared
 environment/return semantics, held-out value or counterfactual-ranking fidelity,
 nontrivial domain coverage/usefulness, and auditable scope/traces. A mechanism
 claim additionally requires representational and causal evidence. A human
-interpretability claim requires comparative human-task evidence. Failure to
-beat the appropriate baseline at the preregistered fidelity/usefulness or human
-margin falsifies that grade for the tested setting; inadequate power or coverage
-makes it inconclusive, not supported.
+interpretability claim requires comparative human-task evidence. If a study
+misses its preregistered fidelity, usefulness, or human-task margin, that study
+does not support the corresponding grade at its tested scope. Inadequate power
+or coverage leaves the grade unresolved. Either outcome should guide a revised
+surrogate, domain, or evidence requirement rather than be promoted to a
+universal verdict about value-based interpretation.
 
 The formal paper may retain the finite representation-existence proposition,
 the environment-relative evaluation map, the Task 22A partial-information
 criterion, and this evidence-grade separation. It should state plainly that the
-policy/value interpretability bridge is designed but not empirically
-established. The blog may use the author's “value as the first semantic
-foothold” motivation with the true-utility non-claim adjacent. The current
-companion can be cited as a scoped implementation witness; any positive bridge
-result awaits its own preregistered tests.
+policy/value interpretability bridge has a design and that its proposed
+empirical measurements have not been run. The blog may use the author's “value
+as the first semantic foothold” motivation while stating explicitly that the
+project makes no claim about the existence or recovery of true utility. The
+current companion can be cited as a scoped implementation witness; any positive
+bridge result awaits its own preregistered tests.
 
 ## Task conclusion
 

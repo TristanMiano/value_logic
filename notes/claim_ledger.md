@@ -2,11 +2,11 @@
 
 Created: 2026-07-10  
 Task: TODO Task 1  
-Status: Living falsifiability ledger; later task results and scoped adjudications are recorded row by row.
+Status: Living claim-and-evidence ledger; later task results and scoped adjudications are recorded row by row.
 
 ## Purpose
 
-This ledger extracts the major claims inherited from the six local source files and the inspected `TristanMiano/policy_value_isomorph` repository. Its purpose is to make each claim precise enough to research, prove, refute, or test later. It is not a ranking of which claims sound plausible.
+This ledger extracts the major claims inherited from the six local source files and the inspected `TristanMiano/policy_value_isomorph` repository. Its purpose is to make each claim precise enough to research, construct, prove, delimit with counterexamples, or test later. It is not a ranking of which claims sound plausible.
 
 Positive and negative statements receive the same treatment. A universal denial is not accepted merely because it sounds cautious, and an ambitious positive statement is not rejected merely because it sounds strong.
 
@@ -38,19 +38,45 @@ Positive and negative statements receive the same treatment. A universal denial 
 - `R0`: companion repository contains code or tests bearing on the claim, but they were not run in this task.
 - `T0`: a test or proof strategy is proposed below but has not been performed.
 
-Later tasks may add `S1` (supported within a stated scope), `X1` (falsified within a stated scope), `I1` (tested but inconclusive), or `D1` (a proposed design/default was superseded for stated reasons rather than truth-evaluated). These dispositions are now assigned row by row as proofs, countermodels, experiments, verified literature, or explicit design comparisons become available. `D1` must not be used to disguise a falsified formal or empirical claim.
+Later tasks may add `S1` (supported within a stated scope), `X1` (a scoped formulation has a verified counterexample or contrary registered result), `I1` (tested but inconclusive), or `D1` (a proposed design/default was superseded for stated reasons rather than truth-evaluated). These dispositions are now assigned row by row as proofs, countermodels, experiments, verified literature, or explicit design comparisons become available. `D1` must not be used to hide a contrary formal or empirical result.
+
+### Constructive reading of dispositions
+
+The status labels are audit shorthand, not a commitment to treating every
+research idea as a proposition with a settled global truth value. In
+particular, `X1` says that one precisely scoped formulation is separated from
+its proposed conclusion by a verified witness. It does not negate every nearby
+formulation, and it should normally be followed by the added hypothesis,
+narrower construction, or revised empirical question that survives. Absence of
+evidence for a neighboring claim is recorded as unresolved or unmeasured; it is
+not evidence for the claim's negation.
+
+Public prose should also distinguish “X is established and this project makes
+no claim about Y” from “Y is false.” The compact phrase “X, not Y” should be
+avoided when the intended meaning is only that Y lies outside the established
+scope. [`limitations.md`](limitations.md) is the publication-facing selection
+matrix for these distinctions.
 
 ## Adjudication rule
 
 Every row states what later evidence would count as:
 
-- **support**: evidence for the scoped formulation, not for an unrestricted neighboring claim;
-- **falsification**: a verified counterexample/result against the scoped formulation;
-- **inconclusive**: an outcome that fails to distinguish the claim from alternatives.
+- **evidence target met** (historically “support”): evidence for the scoped
+  formulation, with no automatic transfer to neighboring claims;
+- **scoped separation or registered target missed** (historically
+  “falsification”): a verified counterexample/result showing that the stated
+  premises do not supply the proposed conclusion or that the tested
+  configuration misses its registered margin; and
+- **unresolved** (historically “inconclusive”): an outcome that does not
+  distinguish the claim from alternatives at the required power or scope.
 
-“Likely false” or “refuted” may be added only after a sufficiently similar claim is verified as falsified in the literature or after this project supplies a valid proof, countermodel, counterexample, or experiment.
+“Likely false” or “refuted” may be added as an audit description only after a
+sufficiently similar scoped claim has a verified literature result or the
+project supplies a valid proof, countermodel, counterexample, or experiment.
+Public prose should prefer the exact construction or observed margin over the
+administrative label.
 
-### Required project-impact analysis for falsification
+### Required project-impact analysis for scope-restricting negative results
 
 Every row receiving `X1`, “falsified,” “refuted,” or an equivalent negative disposition must include a **Project impact** statement in its adjudication cell. That statement must explain:
 
@@ -58,9 +84,9 @@ Every row receiving `X1`, “falsified,” “refuted,” or an equivalent negat
 2. which existing or planned artifacts, definitions, proofs, experiments, neural outputs, or public claims must change;
 3. which narrower claim or alternative mechanism survives, if any;
 4. whether the TODO roadmap needs a new repair task, reordered dependency, checkpoint question, or no structural change;
-5. the significance for the final paper and Substack post—especially whether the falsification should be a central limitation/result or a brief qualification.
+5. the significance for the final paper and Substack post—especially whether the scoped separation should be a central limitation/result or a brief qualification.
 
-The impact analysis must not soften a genuine falsification. Its purpose is to propagate the result through the project so that a locally rejected claim is not silently used elsewhere.
+The impact analysis must preserve what the scoped witness actually establishes. Its purpose is to propagate the boundary through the project, recover any constructive narrower result, and prevent a locally separated implication from being silently used elsewhere.
 
 ## Source key
 
@@ -232,7 +258,7 @@ Line references identify the current local files and may move if those source fi
 | G02 | In the current implementation, policy imitation uses masked cross-entropy, while value and Q models use MSE on rollout-derived fixed-perspective returns. | PVI commit `097ea889...`: `policy_mlp.py::train_policy_mlp`; `value_mlp.py::train_value_mlp`; `q_mlp.py::train_q_mlp`; `notes/policy_value_judgment.md`, §4 | IMPL | F | S1 pinned code-inspection scope | The inspected committed code has the stated manual objectives and sign convention. The README also records a prospective PyTorch-first migration decision, but the inspected implementation still uses the manual one-hidden-layer `tanh` paths. This objective fact does not establish reconstruction quality or mechanism. |
 | G03 | Existing tests provide behavioral evidence only at modest scoped thresholds (loss decrease, legal actions, action agreement, MAE, forced moves); they do not establish arbitrary-policy reconstruction. | PVI commit `097ea889...`: `tests/test_policy_mlp.py`, `test_value_mlp.py`, `test_q_mlp.py`, `test_rollout_and_recovery.py`; `notes/policy_value_judgment.md`, §4 | IMPL/EMP | F/E | S1 assertion-scope inspection/T0 runtime | Task 22 verified the assertions: loss decrease, legality, MAE at most `.40`, Q agreement at least `.55` in one small sampled setting, and simple forced moves. The tests were not rerun. Even passing them would not estimate held-out generalization across policies/games or prove inversion; greedy disagreement can be policy improvement. |
 | G04 | An independently trained value/Q surrogate can reproduce policy actions without sharing or identifying the policy network's internal mechanism. | Project `TODO.md`, “Cross-project interpretability goal”; PVI separate model modules; `notes/policy_value_judgment.md`, §§4, 7; `notes/policy_value_interpretability.md`, §§2–3 | FORM/EMP/Lit | F/E/Lit | S1 logical separation/T0 companion evidence | Behavioral equivalence does not identify a hidden implementation: a lookup table, basis-transformed network, or independently trained surrogate can implement the same actions with different internal causes. PVI has separate policy/value modules but no representation or intervention evidence. Task 23 preserves behavioral fidelity below representational alignment and causal faithfulness. **Project impact:** this is a central interpretability limitation, not a reason to discard the case study; a mechanism claim requires stable mapped/shared representations plus interventions or ablations on the policy, not only the surrogate. |
-| G05 | An environment-relative value surrogate could provide partial semantic transparency by exposing declared return/ranking content together with validity domains, margins, counterfactual transitions, abstentions, local surrogate rules, and traces—even without a true internal utility or complete mechanism recovery. | Project-author clarification 2026-07-18; Project `TODO.md`; synthesis of FABLE and PVI; `notes/policy_value_judgment.md`, §§1A, 4, 7; `notes/policy_value_interpretability.md` | EMP/FORM/INT | E/U | D1 bridge specified/T0 positive result | Task 23 specifies `ValueView`, `P_surrogate-rely`, orthogonal mechanism/human profiles, fair baselines, and support/falsify/inconclusive criteria. A positive partial-semantic claim requires declared environment/return semantics, held-out value or counterfactual-ranking fidelity, nontrivial coverage/usefulness, and auditable traces. Mechanism and human claims require their own evidence. `F35a` is only an analogy about changed-tolerance reuse; `F36` and named channels are not interpretability results, and `0.9962` fallback bars a usefulness claim for the tested structured configuration. **Support:** the surrogate clears preregistered fidelity and usefulness margins against appropriate baselines at its declared scope. **Falsify:** it fails those margins or humans gain no declared advantage at the human grade. **Inconclusive:** power, support, or coverage is inadequate. No true-utility existence or recovery claim is attempted. |
+| G05 | An environment-relative value surrogate could provide partial semantic transparency by exposing declared return/ranking content together with validity domains, margins, counterfactual transitions, abstentions, local surrogate rules, and traces—even without a true internal utility or complete mechanism recovery. | Project-author clarification 2026-07-18; Project `TODO.md`; synthesis of FABLE and PVI; `notes/policy_value_judgment.md`, §§1A, 4, 7; `notes/policy_value_interpretability.md` | EMP/FORM/INT | E/U | D1 bridge specified/T0 positive result | Task 23 specifies `ValueView`, `P_surrogate-rely`, orthogonal mechanism/human profiles, fair baselines, and scoped evidence outcomes. A positive partial-semantic claim requires declared environment/return semantics, held-out value or counterfactual-ranking fidelity, nontrivial coverage/usefulness, and auditable traces. Mechanism and human claims require their own evidence. `F35a` is only an analogy about changed-tolerance reuse; `F36` and named channels supply no interpretability measurement, and `0.9962` fallback prevents a usefulness claim for the tested structured configuration. **Evidence target met:** the surrogate clears preregistered fidelity and usefulness margins against appropriate baselines at its declared scope. **Evidence target missed:** the tested configuration supplies no support for that grade at its registered margin and should be revised or narrowed. **Unresolved:** power, support, or coverage is inadequate. The project makes no claim about true-utility existence or recovery. |
 | G06 | Behavioral fidelity, value fidelity, outcome/task-quotient information, domain validity, representational alignment, causal faithfulness, and human inspectability are distinct grades of interpretability and should not be collapsed into one score. | Project `TODO.md`, “Cross-project interpretability goal”; `notes/policy_value_judgment.md`, §§4, 7; `formalism/09_judgment_information.md`; `notes/policy_value_interpretability.md`, §3 | DEF/FORM/EMP | F/E/Lit | S1 conceptual/operational separation; T0 unrun metrics | Task 23 defines a seven-axis evidence profile and concrete tests for each axis. Task 22's counterexamples separate behavioral agreement from reward identification and mechanism; Task 22A supplies outcome information only at the Bayes-baseline/mediation scope; support and fallback separate domain validity from value fit. Representational, causal, and human measurements remain unexecuted. The paper may use the grade distinction but cannot claim unmeasured grades or average them into a single interpretability score. |
 
 ---
@@ -247,7 +273,7 @@ The most important dependencies to preserve in later work are:
 4. `F11–F15` concern the intrinsic CPWL structure of a ReLU function. Scientific semantic alignment (`F20`) is a separate empirical claim.
 5. `F05` depends on a predicted loss model and calibration; ReLU alone does not supply adequacy semantics.
 6. `E08` is a scientific-model atlas, whereas `F11–F12` describe an intrinsic network atlas. The bridge between them is `F20`.
-7. `G01–G03` concern the pinned companion implementation and unexecuted test contracts. `G04/G06` establish behavioral/mechanism and seven-axis interpretability separations. Task 23 makes `G05` a specified falsifiable partial-semantic-surrogate program, but any positive transparency performance remains companion/future work and makes no true-utility claim.
+7. `G01–G03` concern the pinned companion implementation and unexecuted test contracts. `G04/G06` establish behavioral/mechanism and seven-axis interpretability separations. Task 23 makes `G05` a specified, scoped partial-semantic-surrogate test program. Positive transparency performance remains companion/future work, and the project makes no claim about true-utility existence or recovery.
 8. `E09–E10` are now conditionally adjudicated by Task 12's exact continuation semantics. The separation and non-certifiability results may be used only with their stated freeze, indistinguishability, statistical-family, or `AddModel` assumptions; GL/Löb transfer remains excluded because no provability translation was constructed.
 9. `F21–F26` separate information preservation and identifiability from functional fit. A low-loss score or faithful router does not by itself identify unique semantic coordinates or one-unit/one-license structure.
 10. `E11–E14` define the overlapping partial scientific cover; `F27–F30` concern how a finite neural scorer/router can represent it. Neither set follows solely from the intrinsic CPWL claims `F11–F15`.
@@ -315,6 +341,7 @@ The following can be checked early without large experiments:
 - Task 16 instantiates the ReLU reference side of `F31`, fixes the named dual-use architecture for `F32`, supports the scoped `F05/F06/F19/F21/F23` interfaces, and falsifies ReLU-only quarantine `F18` with project impact. Task 17 proves or delimits the seven frozen representation claims, including the minimal scoped positive part of `F32`.
 - Task 18 selects standardized center–radius statistic/interval training, held-out residual calibration, independent atom cross-entropy as the nonauthorizing baseline, conservative learned rejection, and separate exact-mask router ranking. It adds `F35` without an empirical verdict.
 - Checkpoint C confirms the hybrid interface, adds `F36`, fixes `F35–F36` as the minimum powered core, and authorizes no architecture comparator there. Tasks 19–20 freeze proposal binding, nonleaking inputs, five blocked evidential roles, numerical margins, world-level inference/power, generator/oracle code, manifests, seeds, matched learner/calibration code, exact semantic channels, traces, and the guarded final entry point. Hard MoE failed its prospective gate and is omitted without an empirical disposition; `F33` is deferred, `F20` remains exploratory, and the system tier is deterministic-witness-only.
-- Task 21 completed the repaired frozen protocol once. Checkpoint C1 retains aggregate `F35=I1`, records `F35a=S1` and `F35b/F35c=X1` at the registered component margins, and retains `F36=S1` in its exact marginal scope. It records the transfer-versus-coverage result, matched-coverage drift, corrected conservative-geometry hypothesis, and no-rerun boundary. Tasks 22/22A remain independent; Tasks 24–34 inherit the scoped impacts after Task 23's design propagation.
-- Task 22 supports a finite lossless policy–value-like representation existence result while refuting only its unique/natural standard-return or occupancy strengthening. It separately refutes occupancy-as-utility and the unqualified value-complexity lower bound; supports environment-relative forward evaluation, conditional greedy/support reconstruction, and policy-only standard-return non-identifiability; and pins the companion implementation without running it. Task 22A proves scoped `B01` through a proper-score/log-loss information bound and outcome-identifiable task quotient, while countermodeling non-Bayes baselines, leakage, omitted nuisance, duplicated types, instability, and recursion-by-copying. Task 23 now specifies `G04–G06` through `ValueView`, profile-indexed reliance/mechanism/human interfaces, seven evidence axes, fair baselines, and repository allocation. It supplies no positive interpretability result and explicitly does not ask whether a true utility exists or is recovered.
+- Task 21 completed the repaired frozen protocol once. Checkpoint C1 retains aggregate `F35=I1`, records `F35a=S1` and `F35b/F35c=X1` at the registered component margins, and retains `F36=S1` in its exact marginal scope. It records the transfer-versus-coverage result, matched-coverage drift, corrected conservative-geometry hypothesis, and no-rerun boundary. Tasks 22/22A remain independent; Tasks 25–34 inherit the scoped impacts through Tasks 23–24.
+- Task 22 supports a finite lossless policy–value-like representation existence result. Its counterexamples separate that construction from unique/natural standard-return or occupancy inverses, occupancy-as-utility, and an unqualified value-complexity lower bound. Environment-relative forward evaluation, conditional greedy/support reconstruction, and policy-only standard-return non-identifiability remain available, and the companion implementation is pinned without being run. Task 22A proves scoped `B01` through a proper-score/log-loss information bound and outcome-identifiable task quotient, while its finite countermodels identify the need for Bayes baselines, lineage separation, nuisance control, mediation, stable kernels, and independent recursive evidence. Task 23 specifies `G04–G06` through `ValueView`, profile-indexed reliance/mechanism/human interfaces, seven evidence axes, fair baselines, and repository allocation. Its proposed positive interpretability measurements have not been run, and the project makes no claim about whether true utility exists or is recovered.
+- Task 24 selects the publication-facing boundaries in [`limitations.md`](limitations.md). It groups equivalent witnesses into six constructive matrices, pairs every exposed assumption with the narrower result that survives, freezes main/appendix/future placement, and makes the calibrated-nearly-non-granting and prospective trace obligations explicit. Task 25 should inherit that selection rather than reproduce the full ledger.
 - Task 31 should replace every remaining `U0/C0/L0/R0/T0` with a final scoped disposition or an explicit unresolved status.

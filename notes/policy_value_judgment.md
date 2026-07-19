@@ -133,9 +133,9 @@ The author also records the historical reason this route led to pragmatic
 logic: value was the first semantic object that seemed straightforward to
 recover from black-box behavior, whereas beliefs were not recovered first and
 their extraction was harder to formulate. The adjudicated project restatement
-is “value as a promising first semantic foothold,” not a theorem that value is
-metaphysically prior, that belief is reducible to value, or that belief
-extraction is impossible.
+is “value as a promising first semantic foothold.” The project makes no claim
+that value is metaphysically prior, that belief is reducible to value, or that
+belief extraction is impossible.
 
 On this view, full mechanistic transparency may be unattainable and is not the
 only useful target. A learned model-of-a-model can still contain interpretable

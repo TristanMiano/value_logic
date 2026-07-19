@@ -1,8 +1,8 @@
 # Literature Map and Citation Audit
 
-Status: Task 6 research map, amended through Task 23
+Status: Task 6 research map, amended through Task 24
 
-Date: 2026-07-10; Task 12A amendment 2026-07-12; Task 23 amendment 2026-07-18
+Date: 2026-07-10; Task 12A amendment 2026-07-12; Tasks 23--24 amendments 2026-07-18
 
 Bibliography: [`references.bib`](../references.bib)
 
@@ -378,7 +378,7 @@ The omitted items are not declared false. They are simply not carried into the v
 6. `GeifmanElYaniv2019`
 7. `AmatoDiNolaGerla2002` for the clipped-ReLU contrast
 
-### After Task 23 (recursive judgment and policy/value interpretability)
+### After Task 24 (recursive judgment, policy/value interpretability, and limitations)
 
 Task 22 has now audited `NgRussell2000`, `CaoCohenSzpruch2021`,
 `KimEtAl2021`, `SkalseEtAl2023`, `ArmstrongMindermann2018`,
@@ -411,6 +411,15 @@ interpretability requires a comparative user task. The author explicitly does
 not ask whether a true utility exists or is recovered. Until these tests run,
 the bridge belongs to a companion/future-work section rather than the core
 contribution set.
+
+Task 24 adds no theorem or literature transfer. It selects the existing formal,
+empirical, and implementation boundaries in [`limitations.md`](limitations.md)
+and reads the cited cautionary results constructively: each counterexample
+identifies a missing hypothesis or overextended implication, while the adjacent
+row records the narrower theorem or test design that remains available. The
+matrix does not turn literature gaps or unrun measurements into negative claims.
+It also keeps the project's scope declarations—especially neutrality about true
+utility and truth—separate from counterevidence.
 
 ## 16. Research gaps and likely contribution boundary
 
@@ -493,4 +502,4 @@ need its own operator, fixed-point selection, and soundness theorem.
 
 ## Task conclusion
 
-Task 6 established the initial verified bibliography and division of intellectual labor among neighboring fields. Task 12A closes the core-related gaps around output production, explicit evidence, awareness, partiality, conformal validity, and safe baseline improvement; Task 14B adds the precise sequential-analysis context needed by the stability package; Task 14C positions proof-carrying recursive plans against the established programs-as-proofs, program-logic, refinement/quantitative-type, PCC, and certifying-algorithm traditions; and Checkpoint C adds the classical phantom/frame and Kripke--Fitting positioning for the newest locality and cyclic-boundary machinery. The strongest immediate foundations are now AGM/KLM for revision, input/output logic for non-truth-producing consequence structure, Strong Kleene for the meaningful meet algebra, Gold/Kelly for convergence without known arrival, Wald/Darling–Robbins/Robbins for sequential testing and confidence sequences, selective/conformal prediction and safe policy improvement for operational uncertainty and fallback, database/separation-logic locality patterns for update bookkeeping, Hoare/Curry--Howard and certificate-carrying computation for recursive plans, Kripke--Fitting for the explicitly deferred cyclic alternative, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, and IRL for nonidentifiability constraints. Their non-algebraic theorems remain source-specific until an exact translation is proved.
+Task 6 established the initial verified bibliography and division of intellectual labor among neighboring fields. Task 12A closes the core-related gaps around output production, explicit evidence, awareness, partiality, conformal validity, and safe baseline improvement; Task 14B adds the precise sequential-analysis context needed by the stability package; Task 14C positions proof-carrying recursive plans against the established programs-as-proofs, program-logic, refinement/quantitative-type, PCC, and certifying-algorithm traditions; Checkpoint C adds the classical phantom/frame and Kripke--Fitting positioning for the newest locality and cyclic-boundary machinery; and Task 24 selects those boundaries for publication without adding a literature-derived verdict. The strongest immediate foundations are now AGM/KLM for revision, input/output logic for non-truth-producing consequence structure, Strong Kleene for the meaningful meet algebra, Gold/Kelly for convergence without known arrival, Wald/Darling–Robbins/Robbins for sequential testing and confidence sequences, selective/conformal prediction and safe policy improvement for operational uncertainty and fallback, database/separation-logic locality patterns for update bookkeeping, Hoare/Curry--Howard and certificate-carrying computation for recursive plans, Kripke--Fitting for the explicitly deferred cyclic alternative, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, and IRL for nonidentifiability constraints. Their non-algebraic theorems remain source-specific until an exact translation is proved.
