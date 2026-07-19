@@ -5,49 +5,57 @@ Status: completed; Task 22A is next
 
 ## Durable decision summary
 
-1. **There is no general policy–value isomorphism.** A policy does not determine
-   a reward, a standard return-based value function, or a unique internal
-   preference representation. Conversely, a state-value function does not in
-   general determine the original policy. The inherited universal claim `C01`
-   is refuted.
-2. **The strongest defensible correspondence is environment-relative forward
-   evaluation plus conditional behavioral reconstruction.** Once the state,
+1. **The representational existence claim was not refuted.** For finite action
+   sets, every deterministic policy has a lossless scalar code on the same state
+   domain, and it also has a lossless action-score representation decoded by a
+   fixed `argmax` rule. After restricting the representation space to the
+   encoder image, these constructions are genuine bijections. This supports a
+   precise finite existence form of `C01`.
+2. **The counterexamples reject a stronger identification, not existence.** A
+   policy does not determine a reward, a standard return-based value function,
+   or a unique, natural, or identifiable preference representation. Conversely,
+   a standard state-value function does not in general determine the original
+   policy. Thus `C01` must be split by scope rather than marked categorically
+   refuted.
+3. **The strongest result for the companion's particular reconstruction is
+   environment-relative forward evaluation plus conditional behavioral
+   reconstruction.** Once the state,
    dynamics, reward/return, horizon or discount, perspective, initial/evaluation
    distribution, and policy are fixed, the policy induces `V^pi`, `Q^pi`, and
    occupancy measures. A learned surrogate may approximate those objects.
-3. **Greedy use of `V^pi` or `Q^pi` is generally policy improvement, not
+4. **Greedy use of `V^pi` or `Q^pi` is generally policy improvement, not
    inversion.** It reconstructs the original policy only on states where that
    policy is already greedy with respect to its own value, with compatible
    tie-breaking and perspective conventions. Otherwise it deliberately returns
    a different policy.
-4. **Occupancy is behavioral distribution, not utility.** A full state–action
+5. **Occupancy is behavioral distribution, not utility.** A full state–action
    occupancy measure can recover a Markov policy on positively occupied states
    by conditionalization under the stated regularity conditions. State
    occupancy alone loses the action choice; neither object supplies reward or
    preference without additional assumptions.
-5. **Behavior supports only constrained rationalization.** Choices can impose
+6. **Behavior supports only constrained rationalization.** Choices can impose
    local ordinal inequalities when feasible sets and consistency assumptions
    are known. Cardinal reward, off-support behavior, planner imperfections, and
    mechanism remain non-identifiable. Constant rewards, reward invariances, and
    unknown planner/reward decompositions make unrestricted rationalization
    vacuous.
-6. **The companion repository is an instructive conditional case study.** At
+7. **The companion repository is an instructive conditional case study.** At
    the inspected commit it implements frozen-policy rollout evaluation,
    separate value/Q regression, and greedy agreement tests in deterministic
    games. It does not use a policy “alone,” recover a unique reward, invert an
    arbitrary policy, or identify the policy network's mechanism.
-7. **Recursive judgment remains a conditional information hypothesis.** Good
+8. **Recursive judgment remains a conditional information hypothesis.** Good
    prediction of held-out performance can establish information about an
    outcome. It establishes information about latent task structure only under
    non-leakage, nuisance-controlled baseline, stability, mediation, and
    identifiability assumptions. Calibration alone and recursion alone are
    insufficient.
-8. **Task 22A now has a precise target.** It must determine whether a strictly
+9. **Task 22A now has a precise target.** It must determine whether a strictly
    proper-score improvement gives positive conditional information about the
    held-out outcome and, under a declared conditional Markov structure, about
    the latent task. It must also give countermodels when any required assumption
    is removed.
-9. **These results do not alter the license calculus.** Policy/value material is
+10. **These results do not alter the license calculus.** Policy/value material is
    optional motivation, a bounded companion case study, or future work. It is
    not a dependency of the finite-stage semantics, metatheory, neural
    representation results, or frozen experiment.
@@ -99,7 +107,49 @@ and belief-state sufficiency. The most directly controlling sources are:
   [Kaelbling, Littman, and Cassandra (1998)](https://doi.org/10.1016/S0004-3702(98)00023-X)
   on belief-state formulations for partial observability.
 
-## 2. The maps that actually exist
+## 2. Representational existence and the operational maps
+
+### 2.1 A finite existence result
+
+The word *isomorphism* first needs objects and structure. At the weakest
+set-theoretic level, the finite deterministic existence claim is elementary.
+Let `S` be any state set, let `A` be a finite action alphabet, and fix an
+injective code `c:A -> R`. For the deterministic policy space `Pi = A^S`, define
+
+```text
+E_c(pi)(s) = c(pi(s)),
+D_c(u)(s)  = c^{-1}(u(s))  for u in c(A)^S.
+```
+
+Then `D_c o E_c = id_Pi` and `E_c o D_c = id_(c(A)^S)`. Thus `E_c` is a
+bijection between policies and a restricted class of real-valued functions on
+the same state domain. It is lossless even though its scalar labels and their
+ordering are conventional. This is a representation theorem, not yet a theorem
+that the scalar has return, preference, or cardinal-utility semantics.
+
+If decision semantics rather than a categorical scalar code is required, let
+
+```text
+U_pi(s,a) = 1 if a = pi(s), and 0 otherwise.
+D(U)(s)   = tie-broken argmax_a U(s,a).
+```
+
+Again `D(U_pi)=pi`; restricting the score space to the encoder image makes the
+maps inverse. A stochastic policy can similarly be represented by its
+state–action probability scores and recovered by normalization rather than
+`argmax`. These constructions establish existence but not uniqueness: many
+score functions induce the same policy, and different codings impose different
+geometry. For infinite action classes or when continuity, measurability,
+computability, naturality, or preservation of a richer algebra is required,
+those conditions must be stated and proved separately.
+
+This is the point missed by the initial Task 22 wording. Counterexamples against
+one proposed reconstruction cannot refute the existence of some encoding. They
+can show that the encoding is not the standard return value, not unique or
+canonical, not identified from observations, or not practically recoverable by
+the tested procedure.
+
+### 2.2 Standard return evaluation and practical reconstruction
 
 Fix an MDP or game specification
 
@@ -134,10 +184,18 @@ pi_rho(a|s) = rho(s,a) / sum_b rho(s,b), when the denominator is positive.
 already greedy with respect to its own action values and the chosen tie rule
 matches. `pi_rho` recovers a Markov behavior on the support of a full
 state–action occupancy measure; it says nothing about zero-occupancy states and
-does not recover a reward. These are conditional correspondences, not mutually
-inverse structure-preserving bijections.
+does not recover a reward. These particular standard-return and occupancy maps
+are conditional correspondences, not mutually inverse structure-preserving
+bijections. That limitation does not apply to every possible representational
+encoder such as `E_c` or `U_pi` above.
 
-For the final paper, the replacement for “policy–value isomorphism” is:
+The final paper and blog should preserve both formulations:
+
+> **Finite representational policy–value correspondence:** after fixing a
+> policy class, a value-like scalar or action-score representation class, and a
+> decoder, a lossless policy encoding exists; on the encoder image the maps are
+> inverse. This is an existence result, not a claim of uniqueness, naturality,
+> return semantics, identifiability, or easy reconstruction.
 
 > **Environment-relative policy evaluation with conditional behavioral
 > reconstruction:** a fixed policy and fully declared decision process induce
@@ -145,7 +203,7 @@ For the final paper, the replacement for “policy–value isomorphism” is:
 > stated supports and under stated greediness, tie-breaking, and information
 > assumptions.
 
-## 3. Four decisive counterexamples
+## 3. What four counterexamples do—and do not—show
 
 ### 3.1 A policy alone does not determine value
 
@@ -183,13 +241,17 @@ Full state–action occupancy can encode behavior on its support, and expected
 return can be written as an occupancy–reward pairing once a reward is supplied;
 neither fact identifies occupancy with reward.
 
-These examples refute `C01`, unrestricted `C03`, and unrestricted `C08`. A
-constant reward also makes every action optimal, rationalizing any policy while
-revealing no distinctive preference. Reward transformations and unknown
-planner/reward decompositions create wider equivalence classes documented by
-the IRL literature. Multiple environments, discounts, interventions, or
-structural restrictions can shrink those classes, but doing so adds assumptions
-rather than recovering a policy-only isomorphism.
+These examples refute unrestricted `C03`, unrestricted `C08`, and only the
+stronger reading of `C01` on which the inverse must be the standard
+return/occupancy construction, unique, canonical, or observationally
+identifiable. They do **not** refute the finite existence construction in
+§2.1. A constant reward also makes every action optimal, rationalizing any
+policy while revealing no distinctive preference. Reward transformations and
+unknown planner/reward decompositions create wider equivalence classes
+documented by the IRL literature. Multiple environments, discounts,
+interventions, or structural restrictions can shrink those classes, but doing
+so adds assumptions to standard-return identification rather than erasing the
+separate representation-existence result.
 
 ## 4. Companion-repository adjudication
 
@@ -216,13 +278,16 @@ agreement in one small sample, comparison with successor-value recovery, and
 simple forced moves. This is an implementation witness and test contract, not
 an estimate of generalization across policies, games, or distributions.
 
-Three interpretations are not licensed:
+Three interpretations of the companion experiment are not licensed:
 
-1. **Policy-only recovery.** The game, terminal utility, state convention,
-   perspective, rollout procedure, and sample distribution do essential work.
-2. **Inversion of an arbitrary policy.** The recovered `argmax/argmin` policy is
-   a greedy policy derived from `V^pi` or `Q^pi`; disagreement can be correct
-   policy improvement rather than reconstruction failure.
+1. **Policy-only recovery of standard return or reward.** The game, terminal
+   utility, state convention, perspective, rollout procedure, and sample
+   distribution do essential work.
+2. **Inversion of an arbitrary policy by this learned `V^pi/Q^pi` route.** The
+   recovered `argmax/argmin` policy is a greedy policy derived from `V^pi` or
+   `Q^pi`; disagreement can be correct policy improvement rather than
+   reconstruction failure. This says nothing against the direct existence
+   encoders in §2.1.
 3. **Mechanistic interpretability.** The policy and value networks are trained
    separately. Agreement does not identify shared hidden features, causal
    computation, reasons, or the policy's internal value representation.
@@ -310,7 +375,7 @@ later artifact supplies domains, codomains, and an equivalence criterion.
 
 | claim group | Task 22 disposition | provisional public location |
 |---|---|---|
-| `C01`, universal policy–value isomorphism | `X1` by the counterexamples above | central limitation; never a headline claim |
+| `C01`, policy–value isomorphism | `S1` for finite lossless representational existence; `X1` only for the standard-return/occupancy, unique, natural, or identifiable strengthening | concise formal/motivating proposition plus explicit semantic boundary |
 | `C02`, value plus environment and decision rule induces a policy | `S1` as a conditional construction, including ties | optional formal/case-study background |
 | `C03`, occupancy counts are utility | `X1` as a general identity; support-relative behavioral occupancy survives | limitation or omit |
 | `C04`, revealed ordering | `S1` only under known feasible sets and consistency/rationality assumptions | short related-work qualification |
@@ -324,15 +389,18 @@ later artifact supplies domains, codomains, and an equivalence criterion.
 | `G01–G03`, current companion code/test scope | `S1` by pinned code/test-contract inspection; tests not rerun here | companion case-study appendix/repository link |
 | `G04–G06`, mechanistic/transparency bridge | behavioral/mechanism separation is valid; empirical transparency remains `T0` | Task 23 and future work |
 
-The negative results affect optional motivation, not the project's central
-question. The formal paper may include the policy-evaluation map and compact
-counterexamples to show why licensed use requires explicit context and evidence.
+The scoped negative results affect optional motivation, not the project's
+central question. The formal paper may include the finite encoder proposition,
+then the policy-evaluation map and compact counterexamples to show why that
+existence result does not supply return semantics, identification, or a
+practical reconstruction guarantee.
 The Substack post may retain the intuition that successful judgment is pressured
 to track stable distinctions, but must identify it as a hypothesis pending Task
 22A. The companion repository belongs in a bounded case-study section only if
-Task 23 supplies a useful interpretability bridge. Universal policy–value
-equivalence, occupancy-as-utility, value-complexity necessity, and unqualified
-claims that recursive judgment “measures fact” are excluded.
+Task 23 supplies a useful interpretability bridge. Equating the existence
+correspondence with standard return, occupancy-as-utility, value-complexity
+necessity, and unqualified claims that recursive judgment “measures fact” are
+excluded. The qualified finite existence claim is retained.
 
 ## 8. Next task
 

@@ -379,7 +379,7 @@ Activation-region alignment is one empirical question, not the sole success crit
 
 ### 7.7 Keep policy/value work optional to the core
 
-Tasks 22–23 remain because transparency is an explicit project goal. They are not dependencies of the core logic or ReLU representation theorem. Task 22 must decide whether policy/value material belongs in the formal paper, only in the motivating post, or in a companion/future-work section. Task 23 proceeds as an explicitly conditional case-study design, not evidence for a universal policy–value isomorphism.
+Tasks 22–23 remain because transparency is an explicit project goal. They are not dependencies of the core logic or ReLU representation theorem. Task 22 must decide whether policy/value material belongs in the formal paper, only in the motivating post, or in a companion/future-work section. Task 23 proceeds as an explicitly conditional case-study design, not as evidence that a learned standard-return surrogate is a unique, natural, or identifiable policy inverse.
 
 ### 7.8 Expand limitations and claim freeze
 

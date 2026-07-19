@@ -29,7 +29,7 @@ The project's exact combination appears to be novel enough to require a synthesi
 | mixture-of-experts | learned gating and local expert specialization | guarantees that experts are adequate, interpretable, or scientifically meaningful |
 | ReLU CPWL theory | finite piecewise-affine regions and exact representation results | SGD learnability, semantic alignment, infinite memory, scientific correspondence |
 | differentiable/neural-symbolic logic | techniques for compiling constraints or fuzzy/probabilistic logic into differentiable computation | the proposed theory-succession semantics unless it is separately defined |
-| IRL/reward identifiability | precise limits on recovering value from behavior and conditions that reduce ambiguity | universal policy–value isomorphism or mechanistic explanation from output agreement |
+| IRL/reward identifiability | precise limits on recovering return/reward from behavior and conditions that reduce ambiguity | refutation of an abstract finite encoding-existence result or mechanistic explanation from output agreement |
 | provability logic | exact results about formal provability and self-reference | a ready-made semantics for empirical adequacy, open-ended inquiry, or model selection |
 
 The most defensible positioning is therefore:
@@ -387,8 +387,9 @@ Task 22 has now audited `NgRussell2000`, `CaoCohenSzpruch2021`,
 in `notes/policy_value_judgment.md`. Task 22A should use the proper-scoring
 premise only after stating its nuisance-conditioned baseline and should prove
 the separate mediation step from held-out outcome information to latent-task
-information. Task 23 should inherit the refuted isomorphism, occupancy, and
-mechanism boundaries rather than reopen them.
+information. Task 23 should inherit the standard-return, occupancy, and
+mechanism boundaries without treating them as a refutation of the separate
+finite representation-existence result.
 
 ## 16. Research gaps and likely contribution boundary
 
