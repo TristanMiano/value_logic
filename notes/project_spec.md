@@ -1,6 +1,6 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: living specification, version 2.3 after Checkpoint C1 empirical adjudication
+Status: living specification, version 2.4 after Task 22 policy/value and recursive-judgment audit
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
@@ -29,6 +29,7 @@ Task 20 frozen experiment implementation: 2026-07-14
 Task 20R execution-only repair: 2026-07-16
 Task 21 frozen confirmation and analysis: 2026-07-16
 Checkpoint C1 empirical adjudication: 2026-07-18
+Task 22 policy/value and recursive-judgment audit: 2026-07-18
 
 ## Executive specification
 
@@ -50,9 +51,9 @@ The recurring structure is:
 
 1. **A bounded agent must evaluate and act before it possesses a final theory.** Waiting for certainty is itself a practical policy, often with consequences.
 2. **Performance, preference, and value provide comparison signals before final truth is available.** An agent can observe that one model, judge, or policy performs better than another on a task without concluding that the winner is universally or finally correct.
-3. **Repeated evaluation can reveal structure.** A judge that must continue to judge its own judgments, survive new cases, and predict which methods will work is pressured to represent stable distinctions in the world. This is a research motivation, not yet a theorem that value uniquely recovers fact.
+3. **Repeated evaluation may reveal structure only under an auditable prediction model.** Above-baseline prediction of held-out outcomes can carry information, but attribution to latent task distinctions additionally requires nuisance-controlled baselines, non-leakage/mediation, stability, an identifiable quotient, and independent evidence rather than recursive copying or self-endorsement. Task 22A must prove or demote this motivation.
 4. **Scientific theories exhibit local retention under succession.** A successor may dominate an older theory in one regime while the older theory remains accurate enough, cheaper, more interpretable, or more robust in another.
-5. **Policy-to-value reconstruction is a smaller companion problem.** Behavior can induce value or preference constraints relative to an environment, return convention, and data distribution. A reconstructed value model may make decisions more inspectable, but behavioral reconstruction alone does not reveal the original policy's mechanism.
+5. **Environment-relative policy evaluation is a smaller companion problem.** A policy plus a declared environment, reward/return, state, horizon/discount, perspective, and evaluation distribution induces `V^pi`, `Q^pi`, and occupancy objects. Full state–action occupancy recovers behavior only on its support, while greedy value use is generally policy improvement and equals the original policy only under greediness/tie conditions. A surrogate may make decisions more inspectable, but neither agreement nor reward rationalization reveals the original policy's mechanism.
 6. **A neural implementation forces representational questions.** The project must say where model identity, domain information, evidence, error, comparative advantage, abstention, and provenance live. A positive ReLU value has no intrinsic license meaning: it becomes predicted slack only when its preactivation is a named learned margin and certificate-relative atom surplus only when that margin is conservatively constructed from accepted evidence. It is never the entire information state or a full license by itself.
 
 This yields the intended narrative:
@@ -417,7 +418,7 @@ The proposal succeeds if the scientific licensed cover, router partition, and ac
 
 ### 14.4 Interpretability success
 
-The strongest interpretability claim supported must match the evidence grade. Behavioral reconstruction is useful but insufficient for mechanistic claims. Representational or causal transparency requires stable probes, shared or mapped features, interventions/ablations, and explicit domain limits.
+The strongest interpretability claim supported must match the evidence grade. The companion supplies environment-relative policy evaluation and a conditional greedy-agreement case study, not a policy/value inverse. Behavioral reconstruction is useful but insufficient for mechanistic claims. Representational or causal transparency requires stable probes, shared or mapped features, interventions/ablations, and explicit domain limits.
 
 ### 14.5 Expository success
 
@@ -438,7 +439,7 @@ The motivating order should be:
 9. update, dominance, retention, and abstention results;
 10. architecture-neutral realization, the ReLU reference construction, justified alternatives, and learning objectives;
 11. synthetic experiments and counterexamples;
-12. the policy/value interpretability bridge;
+12. the optional environment-relative policy/value case study and interpretability bridge, only at the evidence grade surviving Tasks 22–23;
 13. philosophical interpretation, limitations, and open problems.
 
 This preserves the posts' motivational direction—value and comparison before certainty, recursive evaluation recovering useful structure—while making the paper's actual claims depend only on explicit definitions, proofs, audited sources, and experiments.
@@ -585,14 +586,22 @@ The following decisions are now project defaults unless a later theorem, experim
 105. Checkpoint C's matched-coverage comparison requirement did not survive into Task 19's raw boundary macro-accuracy primary. The frozen endpoint remains governing, but any future conservatism study must preregister matched coverage or full risk--coverage curves. Such a study is a new versioned experiment, never a repair or rescue of v1/v1.1.
 106. Deviation `21-D3` leaves target-weighted trace false assertions/misses, polarity/mode/diagnostic breakdowns, selected/deployed loss, and misroute severity unavailable. They cannot rescue or overturn the registered core. Future compact traces retain target/design weights, polarity, evidence mode, and sufficient diagnostics prospectively.
 107. The seven frozen JSON artifacts whose consumers recorded CRLF raw-byte hashes are byte-preserved with `.gitattributes`; other experiment JSON retains its existing bytes. The event is an execution-environment artifact-transport erratum with no identified scientific impact. Historical source-hashed writers remain frozen, while future versions use an explicit LF or separately declared canonical serialization. Local checks are required at completion; after an authorized push, public CI must be green or explicitly explained.
+108. Universal policy–value isomorphism is refuted. The same policy has different return values under different rewards, different policies can share a state-value function, and a value function does not identify reward, off-support behavior, planner imperfections, or neural mechanism. The replacement term is **environment-relative policy evaluation with conditional behavioral reconstruction**.
+109. A fully declared decision process and policy induce unique standard `V^pi/Q^pi` objects under the usual finite-horizon or discounted assumptions. Greedy use of `Q^pi` (or deterministic successor `V^pi` with the correct reward/perspective bookkeeping) is generally policy improvement, not an inverse. It reconstructs the original policy only where that policy is already greedy with compatible tie-breaking.
+110. State–action occupancy is a behavior distribution depending on dynamics, initial distribution, and horizon/discount. It can recover a Markov policy by conditionalization only on positive-occupancy states under the applicable regularity assumptions. State occupancy alone loses actions; neither occupancy is cardinal utility. Expected return becomes an occupancy–reward pairing only after reward is independently supplied.
+111. The companion `policy_value_isomorph` evidence is pinned to remote commit `097ea8897fb203b9b3a6ceafcb29e11bdc6cdd6c`. It is an implementation witness for rollout policy evaluation, separate value/Q fitting, and conditional greedy-agreement metrics in declared games. Task 22 did not run or modify its newline-dirty local checkout, and the case study supplies no reward uniqueness, arbitrary-policy inversion, or mechanism evidence.
+112. The unqualified claims that value representation must be at least as complex as policy and that improvement requires value change are refuted. Complexity can reside in dynamics, a policy, or tie-breaking while value remains constant; a fixed-objective agent can improve its model, estimator, search, or policy. Neither optional claim belongs in the public artifacts without a new scoped theorem.
+113. Recursive-judgment claim `B01` is now a conditional information target with latent task `Z`, held-out outcome `Y`, report `J`, and nuisance context `N`. Task 22A must determine whether strictly proper-score improvement over the best `N`-conditioned baseline implies positive `I(J;Y|N)` and, under an explicit mediation/non-leakage relation, positive information about the identifiable task quotient.
+114. Calibration, repeated agreement, and recursion alone do not establish factual measurement. Any positive recursive-judgment result requires stable task-conditioned outcomes, disjoint held-out lineage, a nuisance-complete baseline, independent evidence at recursive levels, controls for copying/collusion and feedback, and replication under shift. Until Task 22A resolves the formal target, recursive recovery remains labeled motivation or future work.
+115. Policy/value material is not a dependency of the finite-stage calculus, representation theorems, or frozen experiment. The formal paper may use the identifiability counterexamples and conditional forward map as a boundary; recursive judgment may enter the formal claim set only after Task 22A; the companion belongs in an optional case-study section only if Task 23 supplies a useful bridge.
 
-## 18. Specification gates after Checkpoint C1
+## 18. Specification gates after Task 22
 
-Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A selected mandatory profile-indexed `Lic_P`; Checkpoint A1 repaired the witness and identified theorem/executability risks; Task 11B supplied the executable kernel. Tasks 12–14A supplied continuation, compact-core, metatheory, and quantitative transport results. Task 14B then closed Checkpoint B's focused gate by proving typed locality/change-completeness and repairing the statements, citations, and executable kernel. Task 14C closed the recursive-plan gate with proof erasure, a concrete path-sensitivity certificate, root-license lifting, grounded provenance, finite-rank system assessment, and the exact Curry--Howard/self-endorsement boundaries. Tasks 15–18 fixed the query-family-specific encoding, hybrid ReLU reference realization, representation results, and structured learning/calibration proposal. Checkpoint C selected the minimum empirical core and trust boundaries. Tasks 19–20R preregistered, froze, implemented, and execution-hardened that core; Task 21 ran it once; and Checkpoint C1 propagated the component-level result and public-verification erratum without reopening confirmation.
+Tasks 7–11 resolved the broad signature, semantics, consequence/update, dominance/retention, and bridge/atlas questions. Task 11A selected mandatory profile-indexed `Lic_P`; Checkpoint A1 repaired the witness and identified theorem/executability risks; Task 11B supplied the executable kernel. Tasks 12–14A supplied continuation, compact-core, metatheory, and quantitative transport results. Task 14B then closed Checkpoint B's focused gate by proving typed locality/change-completeness and repairing the statements, citations, and executable kernel. Task 14C closed the recursive-plan gate with proof erasure, a concrete path-sensitivity certificate, root-license lifting, grounded provenance, finite-rank system assessment, and the exact Curry--Howard/self-endorsement boundaries. Tasks 15–18 fixed the query-family-specific encoding, hybrid ReLU reference realization, representation results, and structured learning/calibration proposal. Checkpoint C selected the minimum empirical core and trust boundaries. Tasks 19–20R preregistered, froze, implemented, and execution-hardened that core; Task 21 ran it once; Checkpoint C1 propagated the component-level result and public-verification erratum without reopening confirmation; and Task 22 refuted universal policy/value equivalence while fixing the exact recursive-judgment assumptions for Task 22A.
 
 Remaining gates are:
 
-- whether the recursive-judgment information promise receives a theorem/countertheorem or is demoted, and the strongest optional transparency claim that survives policy/value nonidentifiability and causal tests (Tasks 22–23, including Task 22A);
+- whether the recursive-judgment information promise receives a theorem/countertheorem or is demoted, and the strongest optional transparency claim that survives the now-settled policy/value nonidentifiability and causal boundaries (Tasks 22A–23);
 - whether the limitation matrix and frozen outline turn the formal and mixed empirical record into a coherent three-to-five-contribution paper rather than an inventory (Tasks 24–25 and Checkpoint D); and
 - the technical and reader audits before public formatting (Tasks 31/31A and Checkpoint E).
 

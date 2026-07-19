@@ -257,6 +257,10 @@ The most relevant construction patterns are:
 - `CaoCohenSzpruch2021` — characterizes reward equivalence for entropy-regularized settings and gives conditions under which multiple discounts/environments improve identification. **Core/caution**.
 - `KimEtAl2021` — necessary/sufficient reward-identification conditions in scoped MaxEnt settings. **Core/caution**.
 - `SkalseEtAl2023` — invariances and partial identifiability across reward-learning data sources. **Core/caution**.
+- `SuttonBarto2018` — policy evaluation and the policy-improvement theorem. **Core** for distinguishing greedy improvement from inversion of the evaluated policy.
+- `LarocheTachetDesCombes2023` — state–action occupancy as expected visits and occupancy-equivalent Markov policies under stated regularity conditions. **Core/caution** for support-relative behavioral recovery, not utility recovery.
+- `Afriat1967` — utility rationalization from finite choice data under explicit revealed-preference consistency conditions. **Caution** against turning arbitrary behavior into uniquely identified cardinal utility.
+- `GneitingRaftery2007` — strictly proper scoring rules elicit honest predictive distributions in expectation. **Core/bridge** for Task 22A's outcome-information premise, not by itself a latent-task identification theorem.
 - `SmallwoodSondik1973` and `KaelblingLittmanCassandra1998` — belief-state formulations under partial observability. **Core** support for enlarging state/history when the visible state is not sufficient.
 
 ### Consequences for the companion project
@@ -269,7 +273,7 @@ The literature supports the existing caution that a policy alone does not unique
 - a coarse observation may need history or a belief state;
 - extra environments, discount factors, interventions, or structural assumptions can improve identifiability.
 
-Thus the strongest near-term target is a **licensed transparent surrogate**, not unique recovery of the policy's true internal value function.
+Task 22 sharpens the surviving result to **environment-relative policy evaluation with conditional behavioral reconstruction**. With the environment/return contract fixed, `pi` induces `V^pi`, `Q^pi`, and occupancy objects. Greedy use of `Q^pi` is ordinarily policy improvement and equals the original policy only under greediness and compatible tie-breaking. Full state–action occupancy can recover a Markov policy only on positive-occupancy states; state occupancy alone loses the action, and neither occupancy is utility. Thus the strongest near-term interpretability target is a licensed transparent surrogate, not unique recovery of reward, arbitrary-policy inversion, or the policy's true internal value mechanism.
 
 ## 11. Provability logic and the Löbian discussion
 
@@ -374,13 +378,17 @@ The omitted items are not declared false. They are simply not carried into the v
 6. `GeifmanElYaniv2019`
 7. `AmatoDiNolaGerla2002` for the clipped-ReLU contrast
 
-### Before Tasks 22–23 (policy/value interpretability)
+### After Task 22, before Tasks 22A–23 (recursive judgment and policy/value interpretability)
 
-1. `NgRussell2000`
-2. `CaoCohenSzpruch2021`
-3. `SkalseEtAl2023`
-4. `ArmstrongMindermann2018`
-5. `KaelblingLittmanCassandra1998`
+Task 22 has now audited `NgRussell2000`, `CaoCohenSzpruch2021`,
+`KimEtAl2021`, `SkalseEtAl2023`, `ArmstrongMindermann2018`,
+`SuttonBarto2018`, `LarocheTachetDesCombes2023`, `Afriat1967`,
+`GneitingRaftery2007`, and the belief-state sources at the exact scopes recorded
+in `notes/policy_value_judgment.md`. Task 22A should use the proper-scoring
+premise only after stating its nuisance-conditioned baseline and should prove
+the separate mediation step from held-out outcome information to latent-task
+information. Task 23 should inherit the refuted isomorphism, occupancy, and
+mechanism boundaries rather than reopen them.
 
 ## 16. Research gaps and likely contribution boundary
 
