@@ -121,6 +121,22 @@ way of describing what states or prospects the black box acts as though it
 ranks, even when the underlying system contains no explicit utility module that
 can be read out.
 
+Additional project-author guidance supplied on 2026-07-18 makes the non-claim
+explicit. The project does not try to decide whether an arbitrary policy has a
+*true* utility function at all. Its practical target is an approximate
+value-function representation of the model. No claim is made that this
+surrogate recovers a true utility if one exists, or that an infinite-compute
+limit would identify a uniquely truest recoverable approximation. Those are
+separate questions and remain outside the project.
+
+The author also records the historical reason this route led to pragmatic
+logic: value was the first semantic object that seemed straightforward to
+recover from black-box behavior, whereas beliefs were not recovered first and
+their extraction was harder to formulate. The adjudicated project restatement
+is “value as a promising first semantic foothold,” not a theorem that value is
+metaphysically prior, that belief is reducible to value, or that belief
+extraction is impossible.
+
 On this view, full mechanistic transparency may be unattainable and is not the
 only useful target. A learned model-of-a-model can still contain interpretable
 information: stable rankings, local comparisons, failure regions, or
@@ -133,11 +149,11 @@ surrogate is warranted.
 
 The project's adjudicated restatement is slightly narrower than calling value
 *the* highest-level interpretability model. It treats value as one especially
-natural agent-level abstraction whose usefulness must be graded. The finite
+promising agent-level abstraction whose usefulness must be graded. The finite
 existence construction shows that a lossless value-like representation can be
 defined; the companion asks whether a semantically meaningful approximation can
-be learned; Task 23 must test whether the result is behaviorally useful,
-human-inspectable, stable, and perhaps representationally or causally faithful.
+be learned; Task 23 specifies separate tests of behavioral usefulness, domain
+stability, human inspectability, and representational or causal faithfulness.
 It need not be the unique true internal utility to be informative, but action
 agreement alone is not yet interpretability.
 
@@ -326,10 +342,10 @@ Three interpretations of the companion experiment are not licensed:
    separately. Agreement does not identify shared hidden features, causal
    computation, reasons, or the policy's internal value representation.
 
-Task 23 may use this repository as a conditional case study. It should report
-behavioral agreement, return/value fidelity, support and shift coverage, and
-then separately test representation and causal alignment. No result here makes
-the companion a core dependency of value logic.
+Task 23 uses this repository as a conditional implementation witness and
+allocates future behavioral agreement, return/value fidelity, support/shift,
+representation, and causal tests to it. No result here makes the companion a
+core dependency of value logic.
 
 ## 5. What behavior can rationally reveal
 
@@ -433,7 +449,7 @@ later artifact supplies domains, codomains, and an equivalence criterion.
 | `B02–B04`, recursive measurement/centroids/`T=J^2` | motivating or untyped; no theorem | Substack motivation with explicit caveat, or future work |
 | `B05`, improvement requires value change | `X1` as universal wording: fixed-objective world-model or policy learning is a counterexample | omit |
 | `G01–G03`, current companion code/test scope | `S1` by pinned code/test-contract inspection; tests not rerun here | companion case-study appendix/repository link |
-| `G04–G06`, mechanistic/transparency bridge | behavioral/mechanism separation is valid; empirical transparency remains `T0` | Task 23 and future work |
+| `G04–G06`, mechanistic/transparency bridge | seven-axis design and behavioral/mechanism separation are valid; empirical transparency remains `T0` | Task 23 design and future companion evidence |
 
 The scoped negative results affect optional motivation, not the project's
 central question. The formal paper may include the finite encoder proposition,
@@ -442,13 +458,16 @@ existence result does not supply return semantics, identification, or a
 practical reconstruction guarantee.
 The Substack post may state that successful held-out prediction forces
 outcome/task-quotient information only with the Task 22A baseline, mediation,
-and stability conditions. The companion repository belongs in a bounded
-case-study section only if
-Task 23 supplies a useful interpretability bridge. Equating the existence
+and stability conditions. Task 23 supplies an evaluation design but no positive
+interpretability result, so the companion repository remains an implementation
+witness and prospective bounded case study. Equating the existence
 correspondence with standard return, occupancy-as-utility, value-complexity
 necessity, and unqualified claims that recursive judgment “measures fact” are
 excluded. The qualified finite existence claim is retained.
 
-## 8. Next task
+## 8. Task 23 follow-through
 
-Proceed to **Task 23 — Design the policy-to-value interpretability bridge**.
+Task 23 is complete in
+[`policy_value_interpretability.md`](policy_value_interpretability.md). Its test
+program remains companion/future work. The repository now proceeds to **Task 24
+— Build the counterexample and limitations section**.

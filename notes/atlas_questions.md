@@ -931,7 +931,7 @@ Task 17 should verify the CPWL, continuity, converse, rank-change, and depth res
 
 Tasks 19–21 should use synthetic overlapping domains with a known gap and measure active-set, selection, bridge, and abstention fidelity.
 
-Task 23 should test whether the atlas representation makes the companion policy/value models more transparent rather than merely adding router complexity.
+Task 23's [`policy_value_interpretability.md`](policy_value_interpretability.md) makes this a seven-axis companion/future-work test rather than a positive result: domain/trace structure must improve declared usefulness or human audit performance, and router complexity alone is not transparency.
 
 ## Task conclusion
 

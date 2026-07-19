@@ -1,8 +1,8 @@
 # Literature Map and Citation Audit
 
-Status: Task 6 research map, amended by Task 12A
+Status: Task 6 research map, amended through Task 23
 
-Date: 2026-07-10; Task 12A amendment 2026-07-12
+Date: 2026-07-10; Task 12A amendment 2026-07-12; Task 23 amendment 2026-07-18
 
 Bibliography: [`references.bib`](../references.bib)
 
@@ -378,7 +378,7 @@ The omitted items are not declared false. They are simply not carried into the v
 6. `GeifmanElYaniv2019`
 7. `AmatoDiNolaGerla2002` for the clipped-ReLU contrast
 
-### After Task 22A, before Task 23 (recursive judgment and policy/value interpretability)
+### After Task 23 (recursive judgment and policy/value interpretability)
 
 Task 22 has now audited `NgRussell2000`, `CaoCohenSzpruch2021`,
 `KimEtAl2021`, `SkalseEtAl2023`, `ArmstrongMindermann2018`,
@@ -392,10 +392,25 @@ nats; and explicit mediation transfers the bound to the outcome-identifiable
 task quotient. It also supplies the required baseline, leakage, nuisance,
 duplication, instability, and copying countermodels. `GneitingRaftery2007`
 supports the proper-scoring premise, not the project's latent quotient or
-recursive theorem; those steps are proved locally. Task 23 should inherit both
+recursive theorem; those steps are proved locally. Task 23 inherits both
 the positive partial-information result and the standard-return, occupancy, and
 mechanism boundaries without treating them as a refutation of the separate
 finite representation-existence result.
+
+Task 23 adds no claim that a cited interpretability method establishes meaning
+by itself. It fixes a seven-axis evaluation design—behavioral fidelity, value
+fidelity, outcome/task-quotient information, domain validity, representational
+alignment, causal faithfulness, and human inspectability—and allocates probes,
+shared/independent encoder comparisons, counterfactual rankings,
+interventions/ablations, shift/risk--coverage tests, and human tasks. The design
+uses the existing IRL, policy-evaluation, proper-score, selective-prediction,
+and representation cautions rather than importing a new theorem. In particular,
+probe or subspace similarity is not causal evidence; manipulating a separately
+trained surrogate is not an intervention on the policy; and human
+interpretability requires a comparative user task. The author explicitly does
+not ask whether a true utility exists or is recovered. Until these tests run,
+the bridge belongs to a companion/future-work section rather than the core
+contribution set.
 
 ## 16. Research gaps and likely contribution boundary
 

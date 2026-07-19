@@ -545,7 +545,8 @@ and the ordinary world-to-record soundness bridge.
 
 ## 8. Handoff
 
-Task 23 may use the following exact claim and no stronger one:
+Task 23 uses the following exact claim and no stronger one in
+[`notes/policy_value_interpretability.md`](../notes/policy_value_interpretability.md):
 
 > A value-like surrogate or judge that achieves a certified positive held-out
 > log-loss improvement over the best declared nuisance-conditioned baseline

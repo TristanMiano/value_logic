@@ -1025,7 +1025,7 @@ Task 16 now selects the hybrid architecture, signed and paired-score access, inc
 
 Task 18's [`../ml/04_losses.md`](../ml/04_losses.md) selects standardized center–radius statistic/interval training, disjoint held-out residual calibration, independent atom cross-entropy as the baseline, separate exact-mask router ranking, and optional representation-alignment probes outside authorization.
 
-Task 23 must test whether a recovered value/license representation aligns with the internal representations of the companion policy network rather than merely matching its actions.
+Task 23's [`policy_value_interpretability.md`](policy_value_interpretability.md) allocates shared/independent-encoder probes, mapped-feature controls, and policy interventions to future companion work. Action matching remains behavioral fidelity rather than representational or causal alignment.
 
 ## Task conclusion
 
