@@ -4,6 +4,8 @@ Status: Task 22A completed
 
 Date: 2026-07-18
 
+Checkpoint D comparator-baseline precision amendment: 2026-07-21
+
 Depends on: [`notes/policy_value_judgment.md`](../notes/policy_value_judgment.md),
 claim `B01` in [`notes/claim_ledger.md`](../notes/claim_ledger.md), and the
 proper-scoring scope recorded for `GneitingRaftery2007` in
@@ -27,7 +29,11 @@ proper-scoring scope recorded for `GneitingRaftery2007` in
    ```
 
    Equality holds when the judge's predictive distribution is the true
-   conditional distribution of `Y` given `(J,N)`.
+   conditional distribution of `Y` given `(J,N)`. Against an arbitrary
+   `N`-measurable comparator `b`, the valid correction is
+   `I(J;Y|N)>=delta_b-Regret_N(b)` for the population gap `delta_b`; a positive
+   certified lower bound therefore needs the true Bayes comparator or accepted
+   population-gap and comparator-regret bounds.
 3. **General strict propriety gives positivity, not a score-independent Shannon
    bound.** The optimal proper-score improvement is an expected scoring-rule
    divergence. Strictness makes it positive exactly when conditional outcome
@@ -204,6 +210,30 @@ application needs, at minimum:
 Within value logic, an accepted confidence statement about `delta>0` could
 support a scoped evidence atom. Mutual information itself does not bypass the
 ordinary evidence mode, checker, profile, or world-to-record soundness bridge.
+
+For a practical log-loss comparison, let `b_N` be any `N`-measurable
+predictor with finite risk and define its nuisance-comparator regret by
+
+```text
+Regret_N(b) = E[KL(p_N || b_N)] >= 0.
+```
+
+Define `R_b^log=E[-log b_N(Y)]`. Then
+`R_b^log = R_N^log + Regret_N(b)`. If the population improvement of a
+`(J,N)`-measurable predictor over `b` is
+`delta_b = R_b^log - R_q^log`, Theorem 3 below gives
+
+```text
+I(J;Y|N) >= delta_b - Regret_N(b).               (1a)
+```
+
+Thus a certified positive numerical lower bound requires either the true Bayes
+nuisance predictor itself or a valid upper bound on the chosen comparator's
+regret, in addition to the finite-sample conditions above. More explicitly, if
+one accepted joint certificate gives `L_delta<=delta_b` and
+`Regret_N(b)<=U_regret`, then it gives
+`I(J;Y|N)>=L_delta-U_regret` on that certificate's stated coverage event.
+Merely declaring a flexible comparator “best” does not supply either bound.
 
 ## 3. Quantitative lower bounds
 
@@ -549,7 +579,7 @@ Task 23 uses the following exact claim and no stronger one in
 [`notes/policy_value_interpretability.md`](../notes/policy_value_interpretability.md):
 
 > A value-like surrogate or judge that achieves a certified positive held-out
-> log-loss improvement over the best declared nuisance-conditioned baseline
+> log-loss improvement over the true nuisance-conditioned Bayes baseline
 > carries at least that many nats of information about the outcome. If all
 > residual outcome dependence is mediated by an explicitly defined
 > outcome-identifiable task quotient, it carries at least that much information

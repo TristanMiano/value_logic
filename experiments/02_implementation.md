@@ -26,8 +26,12 @@ generator or oracle:
 - [`run_experiment.py`](run_experiment.py) is the sole preflight, smoke, and
   eventual Task 21 entry point.
 
-The frozen local runtime is Python 3.13.3, NumPy 2.2.5, and CPU PyTorch 2.8.0;
-the two Python packages are pinned in [`requirements.txt`](requirements.txt).
+The frozen learning runtime is Python 3.13.3, NumPy 2.2.5, and CPU PyTorch
+2.8.0. The v1.1 contract did not record the Matplotlib version used to render
+the already frozen figures. Checkpoint D prospectively pins Matplotlib 3.10.8
+for analysis imports and clean-checkout verification. All three packages are
+listed in [`requirements.txt`](requirements.txt); this later analysis-only pin
+changes no frozen learner, result, or existing figure artifact.
 
 Both learned arms receive the same ordered 25-coordinate pre-outcome vector.
 It includes context, declared threshold/fallback inputs, exact pre-outcome

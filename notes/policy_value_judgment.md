@@ -471,3 +471,20 @@ Task 23 is complete in
 [`policy_value_interpretability.md`](policy_value_interpretability.md). Its test
 program remains companion/future work. The repository now proceeds to **Task 24
 — Build the counterexample and limitations section**.
+
+## 9. Checkpoint D follow-up
+
+Checkpoint D preserves this note's finite encoder-image correspondence and its
+standard-return/identification boundaries. It adds Task 22B as a prospective
+operational theorem between abstract existence and an empirical companion
+study. The task will bound deterministic action disagreement by coordinatewise
+score error and intended action gaps, and it will keep raw `argmax` recovery
+separate from conservative certified non-abstention. It must also state the
+extra self-greediness condition for `Q^pi`, the full decision harness for a
+scalar `V^pi`, and the distinct distributional target for stochastic policies.
+
+This follow-up supplies no new empirical evidence and does not revise the
+meaning of “isomorphism.” The exact term remains available for the declared
+policy/encoder-image bijection. Learned behavioral reconstruction, return
+semantics, off-support generalization, and mechanism continue to be separate
+questions.

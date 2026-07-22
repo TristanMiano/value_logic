@@ -2,6 +2,8 @@
 
 Date: 2026-07-18
 
+Checkpoint D motivation, comparator, and companion-gate amendment: 2026-07-21
+
 Status: design complete; empirical bridge remains companion/future work
 
 Depends on: [`policy_value_judgment.md`](policy_value_judgment.md),
@@ -51,9 +53,13 @@ at inspected commit `097ea8897fb203b9b3a6ceafcb29e11bdc6cdd6c`
    while reporting the other interpretability axes. Bare `LicInterp` remains
    undefined.
 7. **Task 22A applies only when an outcome-information claim is made.** A
-   certified positive log-loss gain over the true declared
-   nuisance-conditioned Bayes baseline lower-bounds `I(J;Y|N)`. Only explicit
+   valid evaluation certificate that lower-bounds the population log-loss gain
+   over the true nuisance-conditioned Bayes baseline also lower-bounds
+   `I(J;Y|N)`. Only explicit
    mediation transfers that result to the outcome-identifiable task quotient.
+   A merely nuisance-conditioned comparator instead uses the lower bound
+   `delta_b-Regret_N(b)` for the population gap; empirical use needs an
+   accepted lower bound on `delta_b` and upper bound on comparator regret.
    The theorem does not establish readability, mechanism, causality, or a full
    latent ontology.
 8. **The companion is a conditional case study.** Its current separate policy,
@@ -71,6 +77,14 @@ at inspected commit `097ea8897fb203b9b3a6ceafcb29e11bdc6cdd6c`
     policy-to-value interpretability result belongs in a companion case-study or
     future-work section unless the relevant experiments are run. It is not a
     core contribution of the present repository.
+11. **Output semantics is a starting point for an inward research program.**
+    The author's further motivation is to ask whether a certified value-like
+    output semantics can guide recovery of stable semantic structure deeper in
+    a network. Tracing that meaning into an independently trained value
+    surrogate concerns the surrogate itself. A claim about the original policy
+    additionally needs an explicit alignment/readout link to policy hidden
+    states and policy-side interventions; representational alignment and causal
+    faithfulness remain independent gates.
 
 ## 1. Author objective and controlling non-claim
 
@@ -112,6 +126,19 @@ same black-box behavior. This motivated the turn toward pragmatic concepts of
 logic. The project's narrower restatement is that value is a promising first
 **semantic foothold** for this program. It does not assert an ontological
 reduction of belief to value or a universal theorem of semantic priority.
+
+The project author further proposes a future **semantics-backward** program:
+once the final value-like output has a declared and empirically licensed
+meaning, test whether that semantics can be traced inward through stable
+mappings, probes, and interventions on earlier layers. If those are the
+independently trained surrogate's layers, the result describes that surrogate.
+Transferring the interpretation to the original policy requires an explicit
+alignment or readout relation to policy hidden states plus policy-side
+interventions. This is recorded as motivation rather than a result. A semantic
+label on an output does not by itself identify hidden coordinates or show that
+the policy causally uses the surrogate's features; the representational-
+alignment and causal-faithfulness axes below are the gates for any such
+inference.
 
 ## 2. The object being reconstructed
 
@@ -181,7 +208,11 @@ already placed in `N`, then it cannot add conditional information; the baseline
 design must reflect the claim actually being tested. A finite game with an exact
 outcome law may permit the true nuisance Bayes comparator. A merely flexible
 learned comparator does not become Bayes-optimal by name, so any empirical
-application must qualify the theorem accordingly.
+application must use the correction
+`I(J;Y|N)>=delta_b-Regret_N(b)` for the population gap. Before reporting a
+positive numerical information bound, it must certify a lower bound on
+`delta_b` and an upper bound on comparator regret under a stated joint
+coverage rule.
 
 ## 4. Feeding `V/Q` into the profile-indexed license interface
 
@@ -246,11 +277,17 @@ force an explanatory value label.
 | held-out value and behavior fidelity | Split by trajectory/provenance root and policy seed; evaluate on-policy, reachable counterfactual, and deliberately off-policy states. Report value error/ranking separately from action agreement and task return. | companion repository |
 | fair surrogate baselines | Compare `V`, `Q`, direct policy imitation, lookup/rollout summaries, occupancy statistics, and simple low-dimensional heuristics under matched data/compute where applicable. Include intentionally suboptimal and stochastic policies so greedy improvement is visible. | companion repository |
 | counterfactual ranking | Query every legal alternative where feasible; compare predicted successor/action rankings with the declared return target, including tie and perspective changes. Treat reward/perspective changes as new contexts. | companion repository |
-| outcome-information audit | Freeze `J,Y,N`, lineage, score, and population; use an exact Bayes nuisance baseline where the finite game permits it, otherwise state the comparator limitation. Audit mediation before claiming task-quotient information. | theorem and synthetic countermodels here; empirical application in the companion |
+| outcome-information audit | Freeze `J,Y,N`, lineage, score, and population; use an exact Bayes nuisance baseline where the finite game permits it, otherwise certify an upper bound on comparator regret and apply the corrected bound. Audit mediation before claiming task-quotient information. | theorem and synthetic countermodels here; empirical application in the companion |
 | support, shift, and usefulness | Produce full risk--coverage curves and fallback mass/severity over held-out games or layouts, policy seeds, reachable/off-policy states, stochasticity, and history-dependent cases. Predeclare minimum useful coverage. | companion repository; broader domains in future work |
 | representation probes | Compare separate encoders with a shared-encoder policy/value variant. Cross-validate linear/orthogonal mappings, probes, and subspace similarity; include random, label-permuted, cross-seed, and function-preserving symmetry controls. | companion repository if architecture is instrumented |
 | causal tests | Intervene on or ablate proposed value-relevant policy features and test predicted changes in rankings/actions against matched nonsemantic ablations. Manipulating only the separate surrogate tests that surrogate, not the policy. | companion for instrumentable models; larger-agent studies are future work |
 | human readability | Blind participants to condition; compare the licensed value view with raw policy outputs, direct imitation explanations, and rollout tables on action prediction, failure detection, appropriate abstention, time, and calibration. | future work after nontrivial domain coverage is achieved |
+
+Any future companion experiment waits until its open PyTorch-migration Tasks
+23--29 are complete, records a fresh exact commit pin, and freezes thresholds
+and evidence roles before reading outcomes. The current pin remains a
+code-inspection reference; it is not a standing authorization to run or extend
+the companion study.
 
 All empirical thresholds should be frozen before the corresponding outcomes are
 inspected. Agreement should be tie-aware. Return, policy fidelity, and task

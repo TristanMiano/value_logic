@@ -284,7 +284,7 @@ Do not infer stage completion solely from a file name. The repaired runner verif
 
 ## Troubleshooting
 
-### Python cannot import NumPy or Torch
+### Python cannot import NumPy, Torch, or Matplotlib
 
 Activate the intended virtual environment and install the pinned requirements:
 
