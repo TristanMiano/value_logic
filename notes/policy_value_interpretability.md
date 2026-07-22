@@ -344,6 +344,36 @@ project makes no claim about the existence or recovery of true utility. The
 current companion can be cited as a scoped implementation witness; any positive
 bridge result awaits its own preregistered tests.
 
+## 8. Task 22B theorem handoff
+
+[`formalism/10_policy_value_reconstruction.md`](../formalism/10_policy_value_reconstruction.md)
+now supplies the conditional behavioral theorem anticipated by this design. A
+versioned deterministic policy, intended and approximate action scores,
+transparent legal-action/tie decoder, and named distribution obey the oracle
+bound
+
+```text
+D_mu(pi,pi_hat) <= mu{e>rho} + mu{g<=2rho}.
+```
+
+An action-authorizing `P_surrogate-rely` may require the resulting
+`DecodeStable` atom only when accepted evidence bounds those masses, supplies a
+pointwise envelope, or directly certifies held-out disagreement. Coordinate
+radius `rho` gives generic pairwise-gap radius `2rho`; true gap above `4rho` is
+a sufficient condition for conservative recovery without abstention. Neither
+the raw gap nor `DecodeStable` replaces value/ranking adequacy, support,
+improvement, trace, mechanism, causal, or human requirements.
+
+The theorem also fixes the experiment's reporting layers. `Q^pi` reconstruction
+is source-policy reconstruction only on the compatible self-greedy states;
+scalar `V^pi` reconstruction includes every harness component and its error
+propagation; modal and distributional stochastic fidelity are separate; and
+training, held-out IID, and coupled-trajectory conclusions use different
+fields. “Generalizes the same way” remains a prospective comparison of named
+learners and distributions. The theorem adds no positive result to the seven
+empirical interpretability axes beyond a formal route for certifying behavioral
+fidelity.
+
 ## Task conclusion
 
 Task 23 supplies a concrete route from a reconstructed `V/Q` to the canonical

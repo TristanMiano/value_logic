@@ -472,19 +472,27 @@ Task 23 is complete in
 program remains companion/future work. The repository now proceeds to **Task 24
 — Build the counterexample and limitations section**.
 
-## 9. Checkpoint D follow-up
+## 9. Task 22B follow-up
 
-Checkpoint D preserves this note's finite encoder-image correspondence and its
-standard-return/identification boundaries. It adds Task 22B as a prospective
-operational theorem between abstract existence and an empirical companion
-study. The task will bound deterministic action disagreement by coordinatewise
-score error and intended action gaps, and it will keep raw `argmax` recovery
-separate from conservative certified non-abstention. It must also state the
-extra self-greediness condition for `Q^pi`, the full decision harness for a
-scalar `V^pi`, and the distinct distributional target for stochastic policies.
+[`formalism/10_policy_value_reconstruction.md`](../formalism/10_policy_value_reconstruction.md)
+now supplies the operational theorem between abstract existence and an
+empirical companion study. Under a versioned finite legal-action contract, it
+proves
 
-This follow-up supplies no new empirical evidence and does not revise the
+```text
+D_mu(pi,pi_hat) <= mu{e>rho} + mu{g<=2rho},
+```
+
+gives a tight two-action witness, and derives accepted event-mass, pointwise,
+and held-out IID certificate routes. It keeps raw `2rho` recovery separate from
+the generic conservative `4rho` sufficient condition for guaranteed recovery
+plus non-abstention. Its typed variants state the extra self-greediness
+condition for `Q^pi`, propagate scalar-`V` error through a fully exposed
+decision harness, and use a distributional target for stochastic policies.
+
+The result supplies formal and executable evidence for claim `C12`; it supplies
+no learned-surrogate or companion empirical result. It does not revise the
 meaning of “isomorphism.” The exact term remains available for the declared
 policy/encoder-image bijection. Learned behavioral reconstruction, return
-semantics, off-support generalization, and mechanism continue to be separate
-questions.
+semantics, off-support generalization, trajectory behavior, and mechanism
+remain separately typed questions.

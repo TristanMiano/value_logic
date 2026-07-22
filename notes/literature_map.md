@@ -275,6 +275,34 @@ The literature supports the existing caution that a policy alone does not unique
 
 Task 22 separates a supported finite policy/value-like representation-existence construction from the companion's operational result, **environment-relative policy evaluation with conditional behavioral reconstruction**. With the environment/return contract fixed, `pi` induces `V^pi`, `Q^pi`, and occupancy objects. Greedy use of `Q^pi` is ordinarily policy improvement and equals the original policy only under greediness and compatible tie-breaking. Full state–action occupancy can recover a Markov policy only on positive-occupancy states; state occupancy alone loses the action, and neither occupancy is utility. Thus the strongest near-term interpretability target is a licensed transparent surrogate, not unique recovery of reward, arbitrary-policy inversion, or the policy's true internal value mechanism.
 
+### Task 22B behavioral-reconstruction sources
+
+- `RusuEtAl2015` — policy distillation trains a student from teacher action-value
+  outputs and evaluates the resulting policy in Atari. **Behavioral baseline**;
+  it does not make every distilled score a standard `Q^pi` or recover the
+  teacher's hidden mechanism.
+- `BellemareEtAl2016` — larger action gaps mitigate the effects of approximation
+  and estimation error on greedy policies in the paper's optimality-preserving
+  operator setting. **Motivation/neighbor**; Task 22B proves its elementary
+  coordinate-error factor independently.
+- `RossGordonBagnell2011` — sequential imitation violates the ordinary IID
+  premise because learner actions alter later observations; DAgger learns on
+  induced state distributions under its own reduction assumptions.
+  **Core/caution** for separating held-out state disagreement from trajectory
+  behavior.
+- `DAmourEtAl2022` — validation-equivalent predictors can differ substantially
+  on deployment stress tests. **Caution** against inferring shared inductive
+  bias or “same generalization” from training or IID agreement.
+- `Hoeffding1963` — bounded IID concentration. **Imported** for the direct
+  held-out disagreement upper bound, with the policy pair and target
+  distribution fixed independently of the holdout.
+
+Task 22B uses these sources to position the result rather than to outsource its
+proof. The raw oracle inequality follows from coordinatewise triangle
+inequalities, event inclusion, and a union bound. Policy distillation remains a
+future baseline, and the imitation/underspecification papers delimit sequential
+and off-distribution interpretations.
+
 ## 11. Provability logic and the Löbian discussion
 
 ### Primary sources
@@ -530,13 +558,28 @@ the paper's intellectual division of labor explicit:
   advertised as a new information-theory contribution.
 
 The optional policy/value section uses the verified policy-evaluation, revealed-
-preference, and inverse-reinforcement-learning literature only to distinguish a
-finite lossless representation-existence result from standard return semantics,
-identification, and practical recovery. The project makes no claim about true-
-utility existence or recovery. [`paper_outline.md`](../paper_outline.md) fixes
-the source/result allocation, and Checkpoint D must confirm that this positioning
-survives the final scope review.
+preference, inverse-reinforcement-learning, distillation, action-gap, imitation,
+and underspecification literature to distinguish a finite lossless
+representation-existence result from standard return semantics, identification,
+behavioral stability, and practical generalization. The project makes no claim
+about true-utility existence or recovery. Checkpoint D retained this placement,
+and Task 22B completed the independent oracle/certificate proof without adding
+an empirical companion result. [`paper_outline.md`](../paper_outline.md) fixes
+the source/result allocation.
+
+## 22. Task 22B policy/value reconstruction positioning
+
+Task 22B adds one optional standard-mathematics bridge result. Its raw
+`2rho` action-gap theorem, accepted event-mass/pointwise certificate corollaries,
+and direct Hoeffding holdout bound are proved in
+[`formalism/10_policy_value_reconstruction.md`](../formalism/10_policy_value_reconstruction.md).
+The generic `4rho` statement belongs to conservative recovery plus
+non-abstention, not to the raw argmax theorem. Return-semantic `Q`, scalar `V`
+plus a complete harness, stochastic distributional fidelity, and trajectory
+coupling remain distinct variants. The result is classified as a bounded
+integration/application rather than a new headline contribution or a theorem
+from the neighboring papers.
 
 ## Task conclusion
 
-Task 6 established the initial verified bibliography and division of intellectual labor among neighboring fields. Task 12A closes the core-related gaps around output production, explicit evidence, awareness, partiality, conformal validity, and safe baseline improvement; Task 14B adds the precise sequential-analysis context needed by the stability package; Task 14C positions proof-carrying recursive plans against the established programs-as-proofs, program-logic, refinement/quantitative-type, PCC, and certifying-algorithm traditions; Checkpoint C adds the classical phantom/frame and Kripke--Fitting positioning for the newest locality and cyclic-boundary machinery; Task 24 selects those boundaries for publication without adding a literature-derived verdict; and Task 25 freezes which results are headlines, integrations, empirical evidence, and optional motivation. The strongest immediate foundations are now AGM/KLM for revision, input/output logic for non-truth-producing consequence structure, Strong Kleene for the meaningful meet algebra, Gold/Kelly for convergence without known arrival, Wald/Darling–Robbins/Robbins for sequential testing and confidence sequences, selective/conformal prediction and safe policy improvement for operational uncertainty and fallback, database/separation-logic locality patterns for update bookkeeping, Hoare/Curry--Howard and certificate-carrying computation for recursive plans, Kripke--Fitting for the explicitly deferred cyclic alternative, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, and IRL for nonidentifiability constraints. Their non-algebraic theorems remain source-specific until an exact translation is proved.
+Task 6 established the initial verified bibliography and division of intellectual labor among neighboring fields. Task 12A closes the core-related gaps around output production, explicit evidence, awareness, partiality, conformal validity, and safe baseline improvement; Task 14B adds the precise sequential-analysis context needed by the stability package; Task 14C positions proof-carrying recursive plans against the established programs-as-proofs, program-logic, refinement/quantitative-type, PCC, and certifying-algorithm traditions; Checkpoint C adds the classical phantom/frame and Kripke--Fitting positioning for the newest locality and cyclic-boundary machinery; Task 24 selects those boundaries for publication without adding a literature-derived verdict; Task 25 freezes which results are headlines, integrations, empirical evidence, and optional motivation; and Task 22B positions its independent reconstruction proof against policy distillation, action-gap, imitation, and underspecification work. The strongest immediate foundations are now AGM/KLM for revision, input/output logic for non-truth-producing consequence structure, Strong Kleene for the meaningful meet algebra, Gold/Kelly for convergence without known arrival, Wald/Darling–Robbins/Robbins for sequential testing and confidence sequences, selective/conformal prediction and safe policy improvement for operational uncertainty and fallback, database/separation-logic locality patterns for update bookkeeping, Hoare/Curry--Howard and certificate-carrying computation for recursive plans, Kripke--Fitting for the explicitly deferred cyclic alternative, MoE for routing, CPWL theory for finite ReLU representation, intertheory-reduction work for bridge types, IRL for nonidentifiability constraints, and imitation/underspecification work for behavioral generalization boundaries. Their non-algebraic theorems remain source-specific until an exact translation is proved.

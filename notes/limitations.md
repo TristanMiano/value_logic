@@ -2,7 +2,7 @@
 
 Created: 2026-07-18
 Task: TODO Task 24
-Status: publication-facing boundary synthesis after Tasks 22--23 and Checkpoint C1
+Status: publication-facing boundary synthesis after Task 22B
 
 ## Executive selection
 
@@ -120,6 +120,7 @@ positive theorem; it does not mean that the project goal has failed.
 | `L24-V3` | Proper-score improvement against any convenient comparator establishes task information; outcome prediction alone identifies the latent task ontology. | [`09_judgment_information.md`](../formalism/09_judgment_information.md), Theorems 2, 3, and 6, Lemma 5, and Countermodels 6.1--6.4: a weak baseline, omitted nuisance, or leaked outcome can create an apparent gain without task information; duplicated labels are invisible to the outcome kernel. | Improvement over the true nuisance-conditioned Bayes baseline gives outcome information. Explicit mediation transfers it to the outcome-identifiable task quotient, which intentionally merges outcome-equivalent labels. | Bounds the recursive-judgment and semantic-surrogate motivation while preserving the exact information theorem. | **Main or compact sidebar**, with one omitted-nuisance/leakage witness; remaining countermodels in **appendix**. |
 | `L24-V4` | Behavioral agreement with an independently trained value surrogate identifies the policy's internal computation or makes the representation human-readable. | [`policy_value_judgment.md`](policy_value_judgment.md), §4, and [`policy_value_interpretability.md`](policy_value_interpretability.md), §§3--5: separate policy/value models can agree without shared representation; causal and human axes remain unmeasured. | Behavioral and value fidelity can support a scoped semantic surrogate. Mechanism and human-use claims have their own constructive probe, intervention, and comparative-user-study requirements. | Optional interpretability boundary. It places positive mechanism/human results in companion or future work. | **Main limitation** if the case study is mentioned; experiments in **future**. |
 | `L24-V5` | The project answers whether arbitrary policies possess true utility, recovers such utility, establishes value's metaphysical priority over belief, or reduces truth to usefulness. | The author clarifications recorded in [`policy_value_judgment.md`](policy_value_judgment.md), §1A, together with the two-sorted semantics and [`06_open_endedness.md`](../formalism/06_open_endedness.md), §12. These are scope declarations rather than negative theorems. | The project studies approximate environment-relative value-function representations as a promising first semantic foothold and a pragmatic logic of finite-stage reliance. It remains neutral on the neighboring metaphysical questions. | Protects the philosophical narrative from implying denials that the project has not argued for. | **Main**, motivation and conclusion; no “true utility is false” or “truth is only usefulness” language. |
+| `L24-V6` | A small training error, raw action gap, or action agreement automatically supplies an operational reconstruction certificate and trajectory guarantee. | [`10_policy_value_reconstruction.md`](../formalism/10_policy_value_reconstruction.md), Theorem 2, Proposition 9, and §§6--7: the raw bound uses true error/gap masses; a two-action witness attains the `2rho` boundary; training equality coexists with total off-support disagreement. | Accepted event-mass/pointwise evidence or an independent held-out bound can support `DecodeStable` for one named distribution. Coordinate radius gives pairwise-gap radius `2rho`; true gap above `4rho` is a generic sufficient condition for conservative recovery plus non-abstention. Trajectories need stepwise matched-history premises. | Makes the positive operational theorem usable without turning an oracle quantity or training statistic into a certificate. | **Main or sidebar** with the compact theorem; tightness, arrow types, and trajectory coupling in **Appendix F**. |
 
 ## 8. Cross-matrix paper allocation
 
@@ -132,7 +133,7 @@ pairs rather than collect every row in one late limitations section:
 | finite comparison, composition, and routing | `L24-F2`, `L24-F3`, `L24-A2` | search obstruction, path-sensitivity budget, full routed-risk decomposition |
 | ReLU reference realization | `L24-P1`, `L24-P3` | dual-use, scale, hard-seam, and finite-library details `L24-P2/P4/P5/F4` |
 | frozen empirical result | `L24-E4`, `L24-A5`, with `L24-E5` disclosed | future matched-coverage/deployed-risk study using the trace contract below |
-| policy/value and recursive-judgment motivation | `L24-V1`, `L24-V3`, `L24-V4/V5` | companion reconstruction, probes/interventions, and human studies |
+| policy/value and recursive-judgment motivation | `L24-V1`, `L24-V3`, `L24-V4/V5`, with `L24-V6` beside the operational theorem | companion reconstruction, probes/interventions, trajectory tests, and human studies |
 
 The atlas cycle row `L24-A3`, typed-base row `L24-R1`, and detailed scale row
 `L24-P4` are appendix material unless the final running example depends on

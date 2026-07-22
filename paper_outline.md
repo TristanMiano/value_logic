@@ -1,8 +1,8 @@
 # Paper Claim Freeze and Outline
 
-Status: frozen publication contract after Task 25, amended by Checkpoint D's
-pre-draft Task 22B gate
-Date: 2026-07-18; Checkpoint D amendment 2026-07-21
+Status: frozen publication contract after Task 25, amended by Checkpoint D and
+the completed Task 22B bridge theorem
+Date: 2026-07-18; Checkpoint D and Task 22B amendments 2026-07-21
 Target: one approximately 10,900-word main paper, technical appendices, and a
 separate 1,500--1,800-word public essay
 
@@ -15,12 +15,12 @@ Current adjudications override prospective language in preregistrations and
 pre-result architecture notes.
 
 Checkpoint D leaves the core contribution set and empirical claim set
-unchanged. Before drafting, Task 22B must either complete or constructively
-narrow one optional operational bridge proposition: an action-gap bound for
-policy reconstruction from approximate scores, with raw behavioral recovery,
-conservative certification, harness semantics, and distributional scope kept
-separate. This is a gate on optional §8, not a fifth headline contribution or
-authorization for a new experiment.
+unchanged. Task 22B has completed the optional operational bridge proposition:
+an action-gap bound for policy reconstruction from approximate scores, with raw
+behavioral recovery, accepted-evidence certification, conservative
+non-abstention, harness semantics, and distributional scope kept separate. It
+is available to optional §8 as a bounded integration result. It is not a fifth
+headline contribution or authorization for a new experiment.
 
 ## 1. Publication thesis and claim hierarchy
 
@@ -145,14 +145,14 @@ motivation. It cannot become a second main theorem spine.
    outcome/task-quotient information, domain validity, representational
    alignment, causal faithfulness, and human inspectability are distinct. Task
    23 specifies tests but supplies no positive causal or human evidence.
-6. **Operational reconstruction is conditionally admitted after Task 22B.**
-   The main text may state the oracle distribution-scoped action-gap
-   disagreement bound only after its proof and fixtures are complete, and may
-   call it certified only when accepted evidence bounds the error/gap masses.
-   It must distinguish raw `2 rho` argmax stability from the generic stronger
-   sufficient condition for a conservative decoder to certify and avoid
-   abstention, and it must state the full decision harness. This remains an
-   optional integration result.
+6. **Operational reconstruction is available at a conditional scope.** Task
+   22B proves the oracle distribution-scoped bound
+   `D_mu<=mu(e>rho)+mu(g<=2rho)` and gives accepted event-mass, pointwise, and
+   held-out IID certificate routes. Public prose may call the result certified
+   only under one of those evidence premises. It must distinguish raw `2 rho`
+   argmax stability from the generic `4 rho` sufficient condition for a
+   conservative decoder to recover and avoid abstention, and it must state the
+   full decision harness. This remains an optional integration result.
 7. **The inward semantic program is future work.** The author's motivating
    hope is that a licensed value-like output can anchor later recovery of
    semantic structure deeper in a network. Work inside an independently trained
@@ -528,11 +528,12 @@ hash/newline erratum, and reproducibility commands.
 - Mark the section independent of H1--H4.
 - State the finite action-code/action-score representation-existence
   proposition.
-- If Task 22B completes its gate, add one compact oracle behavioral bound and
-  evidence-certified corollary: raw disagreement is bounded by score-error mass
-  plus small-action-gap mass, and an operational certificate requires accepted
-  bounds on those masses. State the conservative decoder threshold separately;
-  do not present the action gap as a complete reliance license.
+- Add Task 22B's compact oracle behavioral bound and evidence-certified
+  corollary: raw disagreement is bounded by score-error mass plus
+  small-action-gap mass, and an operational certificate requires accepted
+  event-mass or pointwise bounds or a direct independent holdout certificate.
+  State the conservative decoder threshold separately; do not present the
+  action gap as a complete reliance license.
 - Place the same-policy/different-return or greedy-improvement construction
   immediately after it to separate representation from standard return
   semantics, inverse identification, and learnability.
@@ -549,7 +550,7 @@ hash/newline erratum, and reproducibility commands.
 **Dependencies:** [`notes/policy_value_judgment.md`](notes/policy_value_judgment.md),
 [`formalism/09_judgment_information.md`](formalism/09_judgment_information.md),
 [`notes/policy_value_interpretability.md`](notes/policy_value_interpretability.md),
-and, only after completion, `formalism/10_policy_value_reconstruction.md`.
+and [`formalism/10_policy_value_reconstruction.md`](formalism/10_policy_value_reconstruction.md).
 **Appendix F:** full finite encoding, MDP maps, identifiability constructions,
 raw/certified action-gap proof and tight witnesses, proper-score derivation,
 quotient proof, and remaining countermodels.
@@ -646,7 +647,7 @@ trace contract.
 | marginal proposal coverage | proposal-bound held-out calibration and frozen exchangeable groups | conformal-style marginal coverage | supported only at registered marginal scope | §7 / App. E |
 | aggregate objective and operational companions | all three frozen fidelity endpoints plus compact traces | registered conjunction; descriptive trace summaries | aggregate mixed with decisive opposing effects; unweighted trace misses `0.4611/0.3248` and target-weighted fallback `0.9962` delimit usefulness | §7 / App. E |
 | finite policy/value-like code | finite action alphabet and fixed injective code/decoder | elementary finite encoding | completed representation-existence proof | §8 / App. F |
-| policy reconstruction bound and certificate corollary | finite legal actions; transparent decoder/harness; intended winner; score error and action gap; named evaluation distribution; accepted event-mass or pointwise bounds for certification | triangle inequality plus finite fixtures | pending Task 22B; enters §8 only after proof, with oracle/raw/certified levels separated | §8 / App. F |
+| policy reconstruction bound and certificate corollary | finite legal actions; transparent decoder/harness; intended winner; score error and action gap; named evaluation distribution; accepted event-mass, pointwise, or direct holdout bounds for certification | triangle inequality, event inclusion, Hoeffding holdout bound, and 15 finite fixtures | completed Task 22B; oracle/raw/certified and conservative levels remain separated | §8 / App. F |
 | `delta`-nat information lower bound | true nuisance-conditioned Bayes baseline; finite log risk | log-loss/KL identity | completed standard-math application | §8 / App. F |
 | task-quotient transfer | conditional mediation and fixed outcome kernel | data processing | completed conditional application | §8 / App. F |
 
@@ -660,7 +661,7 @@ typed request -> exact assessment -> profile theorem
               -> ReLU reference and obstructions
               -> frozen learning evidence
 
-policy/value encoding -> Task 22B behavioral stability
+policy/value encoding -> completed behavioral stability theorem
 surrogate report + true Bayes baseline -> conditional information result
                       (parallel optional results, independent of the core chain)
 ```
@@ -885,7 +886,8 @@ margin → limits.
 - ReLU is one witness; representation does not establish learning, alignment,
   mechanism, or usefulness.
 - Briefly mention the finite policy/value-like encoding and environment-relative
-  surrogate motivation. If the audited paper retains Task 22B, describe its
+  surrogate motivation. If the audited paper retains the optional Task 22B
+  proposition, describe its
   action-gap guarantee in one sentence. State that the project does not
   investigate true-utility existence or claim recovery, and that training
   agreement supplies no general off-support guarantee.
@@ -925,7 +927,7 @@ margin → limits.
 
 This freezes the paper around four formal contribution clusters, one honestly
 mixed empirical result, one optional and explicitly bounded policy/value
-bridge, and a single succession example. Checkpoint D preserves that structure
-and adds Task 22B as a proof gate for one operational bridge proposition. If the
-task does not establish its scoped result cleanly, §8 retains only the already
-completed existence, information, and limitation material.
+bridge, and a single succession example. Checkpoint D preserves that structure,
+and Task 22B has discharged its proof gate with a scoped operational bridge
+proposition. Drafting may retain that proposition in §8 or cut it for narrative
+pressure without changing the four headline clusters.

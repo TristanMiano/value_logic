@@ -1,7 +1,12 @@
 # Checkpoint D: Pre-Draft Coherence and Policy/Value Rigor Gate
 
 Date: 2026-07-21
-Status: completed; Task 22B is next
+Status: completed; Task 22B gate fulfilled 2026-07-21
+
+Post-checkpoint amendment: Task 22B completed the theorem, fixtures, literature
+check, and propagation specified here. See
+[`formalism/10_policy_value_reconstruction.md`](../../formalism/10_policy_value_reconstruction.md).
+The prospective wording below is retained as the checkpoint's decision record.
 Scope: Tasks 22--25, Checkpoint C1 propagation into the frozen publication
 contract, External Audit V, the current public-verification signal, and every
 unfinished item through Task 34
@@ -430,5 +435,5 @@ changing any scientific artifact or empirical disposition. The local
 repository verification and link suite passes after these changes. Public CI
 for the repaired workflow is pending an authorized push.
 
-**Next task:** Task 22B — prove policy/value behavioral round-trip stability and
-delimit its semantic scope.
+**Gate outcome:** Task 22B completed the scoped policy/value behavioral
+round-trip theorem. The authoritative next task is Task 26.
