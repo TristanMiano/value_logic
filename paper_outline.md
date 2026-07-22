@@ -4,8 +4,9 @@ Status: frozen publication contract after Task 25, amended by Checkpoint D and
 the completed Task 22B bridge theorem
 Date: 2026-07-18; Checkpoint D and Task 22B amendments 2026-07-21
 Drafting status: Task 26 implemented the abstract, §§1--2, and §9 in
-[`paper.md`](paper.md) on 2026-07-21
-Target: one approximately 10,900-word main paper, technical appendices, and a
+[`paper.md`](paper.md) on 2026-07-21; its author amendment restores the
+originating Newton/Standard-Model/open-chain motivation
+Target: one approximately 11,100-word main paper, technical appendices, and a
 separate 1,500--1,800-word public essay
 
 This document selects the claims and argumentative order for the public
@@ -220,7 +221,16 @@ The project remains neutral on those neighboring questions.
 
 ### 2.1 Plain-language answer: “Why this value-logic design, and why hope it fits neural networks?”
 
-Physics often advances by limiting the reach of an older theory rather than erasing every use of it. A model can lose a claim to universal correctness while remaining dependable on a restricted domain, for a stated purpose and error tolerance. The proposed value logic records a bounded agent's current permission to rely on such a model. That permission is indexed by the model, domain, task loss, evidence, fallback, constraints, provenance, and finite library searched. The project remains neutral about whether the present theory is finally true.
+What does supersession mean if Newton's laws are “falsified” by modern physics
+under an unrestricted reading, yet remain taught to college students and used
+in engineering? The motivating expectation is that the Standard Model and our
+other best current frameworks will also be superseded. On that philosophical
+reading, even the best present models are “false” as unrestricted final
+descriptions, while their bounded uses can remain reliable. We do not know when
+the next supersession will occur or whether the chain ends. This is the
+author's motivation rather than a theorem or empirical premise of the paper.
+
+Physics often advances by limiting the reach of an older theory rather than erasing every use of it. A model can lose a claim to universal correctness while remaining dependable on a restricted domain, for a stated purpose and error tolerance. The proposed value logic records a bounded agent's current permission to rely on such a model. That permission is indexed by the model, domain, task loss, evidence, fallback, constraints, provenance, and finite library searched. The formal claims remain neutral about whether the present theory is finally true.
 
 A tolerance gets an operational meaning from what the agent would otherwise do. If a fallback has expected loss `.35` and a candidate must improve on it by `.05`, the fallback-derived threshold is `epsilon_B=.30`. A separate adequacy rule may require loss at most `.20`, while a constraint requires latency at most `50 ms`. In the running synthetic succession, an older local plan and a broader successor initially satisfy all three requirements on an overlap. Both can be licensed even if a router selects one. An uncovered region invokes the fallback. When the older plan's certificate expires, reliance is withheld because evidence has lapsed. When accepted evidence later places its loss above the boundary, reliance is refused. Tightening adequacy from `.20` to `.16` makes the older interval straddle the boundary while the successor is supported exactly at equality, without retraining. A later specialist fills the earlier gap and becomes preferable on a certified finite overlap while the older plans remain recorded.
 
@@ -230,7 +240,7 @@ An optional policy/value bridge asks whether an environment-relative value surro
 
 ### 2.2 Abstract-level version (100--150 words)
 
-Scientific models can be superseded while remaining useful on restricted domains. We formalize this situation as a finite-stage, evidence-relative license indexed by model, domain, task loss, fallback, tolerance, profile, and provenance. An architecture-neutral factorization lets learned modules propose reusable numerical statistics while exact checks preserve well-formedness, atom states, masking, and fallback; finite ReLU networks provide one reference realization. Retaining a reusable numerical statistic helped when the decision threshold changed, but the conservative uncertainty-and-decoding pipeline often converted informative predictions into abstentions. In the frozen synthetic experiment, no-retraining tolerance transfer and marginal proposal coverage were supported; boundary superiority and in-regime noninferiority were refuted at their registered margins; usable coverage was poor. Formal results characterize profile refinement, open-ended stability, update locality, robust representation, and boundary obstructions. The project makes no claim of architectural optimality, final truth, or true-utility recovery.
+Newton's laws are considered superseded—“falsified” by modern physics in an unrestricted sense—yet remain taught in college and used in engineering. We expect present physics, including the Standard Model, to be superseded in turn, without knowing whether the chain ends. We formalize a bounded agent's present reliance on such models as a finite-stage, evidence-relative license indexed by domain, task loss, fallback, tolerance, profile, and provenance. An architecture-neutral factorization lets learned modules propose reusable statistics while exact checks preserve states, masking, and fallback; finite ReLU networks supply one reference realization. In a frozen synthetic experiment, no-retraining tolerance transfer and marginal proposal coverage were supported, boundary superiority and in-regime noninferiority were refuted at their registered margins, and usable coverage was poor. Formal results characterize profile refinement, open-ended stability, update locality, robust representation, and boundary obstructions. These expectations motivate the paper; the formal claims remain neutral about final truth, architectural optimality, and true-utility recovery.
 
 ### 2.3 Running succession example: use this one everywhere
 
@@ -314,10 +324,10 @@ must be stated.
 
 ## 3. Section-level main-paper outline
 
-Target main-text length is approximately **10,940 words including the
+Target main-text length is approximately **11,100 words including the
 abstract**. Budgets are selection constraints, not invitations to fill space.
 
-### Abstract — 140 words
+### Abstract — 150 words
 
 - Use the frozen 100--150-word formulation in §2.2.
 - Name the four result clusters in compact form.
@@ -328,8 +338,12 @@ abstract**. Budgets are selection constraints, not invitations to fill space.
 **No appendix detail:** theorem numbers, internal claim IDs, optimizer or seed
 details.
 
-### 1. Introduction: reliance before finality — 900 words
+### 1. Introduction: reliance before finality — 1,050 words
 
+- Open with the author's original supersession question: Newton's laws are
+  “falsified” in the unrestricted sense while still taught and used; present
+  physics is expected to be superseded; and the chain has no known endpoint.
+  Mark this as philosophical motivation rather than a proved premise.
 - Open with local retention under scientific succession and the decision
   problem of a bounded agent.
 - Use the §2.1 answer as the conceptual lead, shortened only to avoid

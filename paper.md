@@ -4,29 +4,42 @@ Tristan Miano
 
 ## Abstract
 
-Scientific models can be superseded while remaining useful on restricted
-domains. We formalize this situation as a finite-stage, evidence-relative
-license indexed by model, domain, task loss, fallback, tolerance, profile, and
-provenance. An architecture-neutral factorization lets learned modules propose
-reusable numerical statistics while exact checks preserve well-formedness,
-atom states, masking, and fallback; finite ReLU networks provide one reference
-realization. Retaining a reusable numerical statistic helped when the decision
-threshold changed, but the conservative uncertainty-and-decoding pipeline often
-converted informative predictions into abstentions. In the frozen synthetic
-experiment, no-retraining tolerance transfer and marginal proposal coverage
-were supported; boundary superiority and in-regime noninferiority were refuted
-at their registered margins; usable coverage was poor. Formal results
-characterize profile refinement, open-ended stability, update locality, robust
-representation, and boundary obstructions. The project makes no claim of
-architectural optimality, final truth, or true-utility recovery.
+Newton's laws are considered superseded—“falsified” by modern physics in an
+unrestricted sense—yet remain taught in college and used in engineering. We
+expect present physics, including the Standard Model, to be superseded in turn,
+without knowing whether the chain ends. We formalize a bounded agent's present
+reliance on such models as a finite-stage,
+evidence-relative license indexed by domain, task loss, fallback, tolerance,
+profile, and provenance. An architecture-neutral factorization lets learned
+modules propose reusable statistics while exact checks preserve states,
+masking, and fallback; finite ReLU networks supply one reference realization.
+In a frozen synthetic experiment, no-retraining tolerance transfer and
+marginal proposal coverage were supported, boundary superiority and in-regime
+noninferiority were refuted at their registered margins, and usable coverage
+was poor. Formal results characterize profile refinement, open-ended
+stability, update locality, robust representation, and boundary obstructions.
+These expectations motivate the paper; the formal claims remain neutral about
+final truth, architectural optimality, and true-utility recovery.
 
 ## 1. Introduction: Reliance Before Finality
 
-Scientific succession creates a practical problem before it creates a final
-verdict. A successor can restrict the range in which an older model is
-dependable while leaving ordinary uses of that model intact. Meanwhile, an
-agent with finite evidence, computation, and a finite library must decide what
-to use now. The motivating question is therefore:
+What does it mean for a model to be superseded? Newton's laws are a familiar
+case. Modern physics supersedes—and, under an unrestricted reading,
+“falsifies”—them. Yet college students still learn those laws, and Newtonian
+models remain useful in engineering and other applications. We also expect the
+Standard Model and other current fundamental frameworks to be superseded in
+turn. On the motivating philosophical reading, this means that we regard even
+our best present models as “false” when they are read as unrestricted final
+descriptions: we expect future theories to expose limits that we do not yet
+know. We do not know when this will happen, or even whether the chain of
+supersession ends.
+
+That expectation is the paper's philosophical motivation, rather than a
+premise proved by its formal results. It creates a practical problem before a
+final verdict is available. A successor can restrict the range in which an
+older model is dependable while leaving ordinary uses of that model intact.
+Meanwhile, an agent with finite evidence, computation, and a finite library
+must decide what to use now. The motivating question is therefore:
 
 > Can a bounded agent represent present permission to rely on a fallible model,
 > preserve the reasons and limits of that permission, and revise it as evidence
