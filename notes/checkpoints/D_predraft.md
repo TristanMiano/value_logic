@@ -110,6 +110,13 @@ run-environment fact. Because this checkpoint is committed locally and the
 standing rule forbids an automatic push, a repaired public result cannot yet be
 observed; the first authorized push must be followed by a CI check.
 
+**Post-checkpoint observation, 2026-07-21.** After the authorized Task 22B push,
+GitHub Actions run
+[`29887626439`](https://github.com/TristanMiano/value_logic/actions/runs/29887626439)
+passed at exact head `2e6c85969fa4e8c5aa54de8c227bf770ab74d5e4`.
+This resolves the pending observation for the repaired workflow at that head;
+later commits still require their own local and public observations.
+
 ## 2. Does the frozen outline form one argument?
 
 Yes. The outline's strongest connective tissue is the running succession
@@ -422,9 +429,9 @@ the mathematical audit or as post-publication hardening.
 4. **Optional-section bloat.** The main §8 budget remains about 500 words. Full
    proofs, stochastic extensions, countermodels, and literature details belong
    in Appendix F or the repository note.
-5. **Public verification.** The workflow repair is locally reviewable but has
-   no public green run until an authorized push. That pending observation must
-   not be forgotten at Task 31 or the next push.
+5. **Public verification.** At checkpoint time the workflow repair had no
+   public green run. The post-checkpoint Task 22B push resolved that observation
+   with green run `29887626439`; Task 31 must still check the then-current head.
 
 ## 9. Completion and next task
 
@@ -433,7 +440,8 @@ amendment: Task 22B must finish the operational policy/value reconstruction
 bridge before prose drafting begins. Maintenance repairs are applied without
 changing any scientific artifact or empirical disposition. The local
 repository verification and link suite passes after these changes. Public CI
-for the repaired workflow is pending an authorized push.
+for the repaired workflow was pending at checkpoint completion and later passed
+as recorded in the post-checkpoint observation above.
 
 **Gate outcome:** Task 22B completed the scoped policy/value behavioral
 round-trip theorem. The authoritative next task is Task 26.

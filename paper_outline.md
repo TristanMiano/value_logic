@@ -3,6 +3,8 @@
 Status: frozen publication contract after Task 25, amended by Checkpoint D and
 the completed Task 22B bridge theorem
 Date: 2026-07-18; Checkpoint D and Task 22B amendments 2026-07-21
+Drafting status: Task 26 implemented the abstract, §§1--2, and §9 in
+[`paper.md`](paper.md) on 2026-07-21
 Target: one approximately 10,900-word main paper, technical appendices, and a
 separate 1,500--1,800-word public essay
 
