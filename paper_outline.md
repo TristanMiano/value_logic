@@ -3,13 +3,13 @@
 Status: frozen publication contract after Task 25, amended by Checkpoint D and
 the completed Task 22B bridge theorem
 Date: 2026-07-18; Checkpoint D and Task 22B amendments 2026-07-21
-Drafting status: Tasks 26--29 implemented the abstract, §§1--6 and §§8--9, and
-Appendices A--D and F in [`paper.md`](paper.md) through 2026-07-24. The draft
-restores the originating Newton/Standard-Model/open-chain motivation and now
-carries all four formal theorem clusters, their constructive boundaries, the
-learning and masking contract, and the optional policy/value bridge. Section 7,
-Appendix E, discussion, limitations, future work, and conclusion remain for
-Task 30.
+Drafting status: Tasks 26--30 implemented the complete substantive
+[`paper.md`](paper.md) draft through 2026-07-24: §§1--11 and Appendices A--F.
+The draft restores the originating Newton/Standard-Model/open-chain motivation,
+carries all four formal theorem clusters and their constructive boundaries,
+reports the complete frozen empirical trade-off, and keeps the optional
+policy/value bridge within its evidence grades. Mathematical/citation and
+reader/narrative audits remain for Tasks 31 and 31A.
 Target: one approximately 11,100-word main paper, technical appendices, and a
 separate 1,500--1,800-word public essay
 

@@ -37,7 +37,7 @@ Checkpoints are roadmap-review tasks, not ceremonial status updates. At each che
 
 Checkpoint edits apply prospectively. They may add follow-up work for a completed result, but they do not silently mark completed work undone or rewrite its history. Prefer stable checkpoint labels and suffixed new tasks over renumbering tasks that are already referenced elsewhere.
 
-**Next task: Task 30 — Draft the experiment, discussion, and conclusion.**
+**Next task: Task 31 — Perform the mathematical and citation audit.**
 
 ## Project question
 
@@ -684,9 +684,40 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
 
   The canonical `A and I and C` calculation now distinguishes arbitrary positivity, predicted slack, accepted certificate-relative atom surplus, a complete profile grant, and later active-set ranking. Supported equality, open/refuted/missing/invalid zero collisions, equal-margin/unequal-payload pairs, scale covariance, discontinuous seams, fixed-registry nonclosure, and the bias/bypass quarantine counterexample remain adjacent. The optional [Section 8](paper.md#8-optional-policyvalue-and-recursive-judgment-bridge) retains the exact finite encoder-image existence result and adds one compact raw `2 rho` oracle behavioral bound with its accepted event-mass corollary, while separately stating the generic conservative `4 rho` non-abstention condition, transparent scalar-`V` harness, return/self-greedy boundary, true-utility neutrality, `delta`-nat information result, mediation quotient, leakage case, and seven-axis transparency profile. [Appendix F](paper.md#appendix-f-policyvalue-information-and-transparency-details) contains the proofs, tight boundary fixtures, IID/trajectory scopes, and remaining constructive countermodels. The new sections contain no C1 numbers; Section 7 and all empirical adjudication remain assigned to Task 30. No formal or empirical claim disposition changed. All 177 repository checks pass in both the workspace and a clean archive with the Task 29 patch, including repository-link validation.
 
-- [ ] **Task 30 — Draft the experiment, discussion, and conclusion.**
+- [x] **Task 30 — Draft the experiment, discussion, and conclusion.**
 
   Complete the substantive draft of `paper.md` by writing §7's empirical results and then the discussion, limitations, future work, and conclusion. Lead the empirical adjudication with aggregate `F35=I1` as decisive opposing effects, then the `F35a--c` and `F36` grades; keep fallback mass, false assertions, and miss rates physically adjacent to fidelity/coverage. Disclose the unmatched-coverage design drift, `21-D3` unavailable secondaries, artifact-transport erratum, absence of an architecture comparison, and deterministic-only system witness. Present conservative dead-band geometry as a theory-consistent explanation without claiming an identified causal decomposition; any future matched-coverage study is new prospective work. Include negative/null outcomes and constructive project consequences, four-way/status and risk--coverage failures, update/retention and seam behavior. Separate functional fidelity, marginal calibration, certificate validity, routed risk, activation alignment, and policy/value evidence grades. The future-work section may state the semantics-backward program and bounded bridge-generalization question as unexecuted directions. Do not let synthetic success imply scientific realism, mechanistic transparency, system self-certification, or ReLU optimality.
+
+  Completed 2026-07-24. Added the complete frozen empirical narrative in
+  [`paper.md` Section 7](paper.md#7-a-frozen-synthetic-test-of-reusable-statistics-and-licensed-coverage),
+  followed by [discussion, limitations, future work](paper.md#10-discussion-limitations-and-future-work),
+  and the [conclusion](paper.md#11-conclusion). The aggregate result is
+  described as decisive opposing effects: changed-tolerance superiority is
+  supported, while the registered boundary-superiority and in-regime
+  noninferiority propositions are refuted at their margins. Marginal
+  target-in-proposal coverage is reported beside false assertions, misses,
+  four-outcome fidelity, and `0.9962` fallback mass. The text preserves the
+  no-retraining/threshold-conditioned scope and treats wider conservative
+  regions plus exact crossing-to-Open decoding as a theory-consistent account,
+  without claiming a causal decomposition.
+
+  Added [Appendix E](paper.md#appendix-e-frozen-experiment-complete-results-and-reproducibility)
+  with the generator equations, target/design sampling, role and firewall
+  contract, matched learners, calibration rule, inference and multiplicity,
+  full primary and ablation tables, deterministic succession/system witness,
+  all execution deviations, unavailable trace secondaries, stage hashes,
+  CRLF artifact-transport erratum, and WSL/Ubuntu verification path. The main
+  discussion discloses the unmatched-coverage design drift, absence of a hard
+  seam comparator, and deterministic-only system tier, and explicitly
+  separates functional fidelity, marginal calibration, certificate validity,
+  routed risk, activation alignment, and policy/value evidence. Prospective
+  matched-coverage, richer-trace, seam, shift, policy/value generalization, and
+  semantics-backward studies remain unexecuted. No empirical result was rerun
+  or regraded, and the paper makes no scientific-realism, mechanistic-
+  transparency, self-certification, or ReLU-optimality inference. All 177
+  repository checks pass in the workspace and in a clean archive with the
+  Task 30 patch; the WSL native/Python preflight also passes. Public CI remains
+  to be observed after the user pushes the local commit.
 
 - [ ] **Task 31 — Perform the mathematical and citation audit.**
 

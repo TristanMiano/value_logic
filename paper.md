@@ -1191,6 +1191,156 @@ system is useful at adequate coverage. Neural scores are numerical proposals;
 proofs and empirical certificates remain checked objects with explicit scope
 and provenance.
 
+## 7. A Frozen Synthetic Test of Reusable Statistics and Licensed Coverage
+
+### 7.1 Design and inferential scope
+
+The experiment asks whether the factorization in Section 6 provides a useful
+learning advantage over predicting the three meaningful atom states directly.
+It uses a synthetic succession with an older local plan, a broader successor,
+a later specialist, and a fallback. Conditional means for loss $J$ and latency
+$T$ are continuous piecewise-linear functions of a context, complexity, and
+pre-outcome difficulty coordinate. Hidden world-level intercepts and
+heteroscedastic noise make the oracle regions unavailable to the learners.
+Requests oversample equality and crossing cases, include missing and invalid
+evidence, and aggregate exact atom states into all four public outcomes:
+Granted, Withheld, Refused, and Undefined.
+
+The structured arm predicts a center and radius for $J$ and $T$. Its center is
+fitted first; a central interval score then fits the radius; and a disjoint
+calibration role supplies a checker-bound additive expansion. The exact
+decoder applies evidence mode, polarity, validity, $WF$, profile aggregation,
+masking, and fallback. The comparison arm uses a capacity-matched ReLU trunk
+and independent three-class cross-entropy heads, followed by the same exact
+nonlearned operations. Both arms receive the declared threshold as an input,
+but neither receives oracle endpoints, latent intercepts, oracle labels,
+outcomes, routes, or target-derived certificate information.
+
+Training, selection, calibration, system audit, and final confirmation use
+lineage-disjoint world roots. The final role contains 5,000 independent worlds.
+Eight fixed paired fit seeds are averaged inside each world before inference;
+the registered intervals use 10,000 paired world-bootstrap replicates. The
+study is therefore evidence about these learners under one frozen synthetic
+generator. It is not an empirical model of the history or truth of physics.
+Appendix E gives the generator, role manifest, estimands, multiplicity rules,
+and execution record.
+
+### 7.2 Decisive opposing effects
+
+The registered aggregate comparison was a conjunction: the structured arm had
+to exceed direct classification by $.05$ on changed-tolerance transfer and by
+$.05$ on a boundary panel, while remaining within $.02$ on ordinary in-regime
+fidelity. Only transfer passed. The reverse aggregate rule also failed because
+the transfer advantage was large and positive. “Mixed” therefore describes
+decisive opposing effects rather than imprecision or low power.
+
+| registered endpoint | structured | direct cross-entropy | paired difference | 95% paired interval | component disposition |
+|---|---:|---:|---:|---:|---|
+| changed-tolerance transfer | $.9436$ | $.7570$ | $+.1866$ | $[.1860,.1873]$ | superiority supported |
+| boundary-state fidelity | $.5196$ | $.7808$ | $-.2612$ | $[-.2636,-.2587]$ | registered superiority refuted at its margin |
+| ordinary in-regime fidelity | $.7764$ | $.8773$ | $-.1009$ | $[-.1022,-.0997]$ | registered noninferiority refuted at its margin |
+
+The sign of every difference was the same for all eight fits. The positive
+result is specifically no-retraining generalization under changed tolerances:
+the scorer sees each declared tolerance and is evaluated again for that query.
+It does not demonstrate literal reuse of one tolerance-invariant prediction
+region. Conversely, the observed cross-entropy advantages on boundary and
+in-regime fidelity are strong descriptive results. They were not registered as
+new confirmatory reverse hypotheses.
+
+![Registered fidelity endpoints](experiments/figures/primary_endpoints_v1_1.png)
+
+### 7.3 Calibration, errors, and fallback must be read together
+
+The structured proposals attained their separately registered marginal
+target-in-proposal coverage:
+
+| statistic group | observed coverage | 95% interval | Holm one-sided lower bound | registered lower margin |
+|---|---:|---:|---:|---:|
+| loss $J$ | $.9098$ | $[.9085,.9111]$ | $.9085$ | $.88$ |
+| latency $T$ | $.9044$ | $[.9031,.9058]$ | $.9033$ | $.88$ |
+
+Both coverage propositions are supported at this scope. The population is the
+frozen exchangeable target distribution, and the event is containment of the
+target by the proposed interval. This result supplies neither conditional
+coverage nor a guarantee for a whole profile, selected route, deployed loss,
+system, or target-world truth.
+
+The adjacent error and use statistics change the practical reading. The
+following trace summaries are unweighted design-distribution companions,
+whereas fallback mass is target-weighted:
+
+| behavior | structured | direct cross-entropy |
+|---|---:|---:|
+| false support | $.0087$ | $.0988$ |
+| false refutation | $.0146$ | $.1624$ |
+| missed support | $.4611$ | $.0640$ |
+| missed refutation | $.3248$ | $.0627$ |
+| target-weighted fallback mass | $.9962$ | $.9139$ |
+| target-weighted four-outcome fidelity | $.4976$ | $.5866$ |
+
+The structured pipeline made few wrong positive assertions while withholding
+many correct ones. Its marginal coverage and caution coexisted with almost
+universal fallback. The exact active mask also worked as designed: inactive
+selection was zero for both arms. That safety invariant says that an excluded
+plan was not reactivated; it does not show that a useful plan was licensed or
+that fallback risk was acceptable.
+
+![Registered marginal proposal coverage](experiments/figures/coverage_v1_1.png)
+
+The result is summarized by the distinction that motivated this test:
+
+> **Retaining a reusable numerical statistic helped when the decision threshold
+> changed. But wrapping that statistic in a conservative uncertainty-and-decoding
+> pipeline often turned informative predictions into abstentions.
+> Representational information, calibrated caution, and operational usefulness
+> are separate achievements.**
+
+### 7.4 What the negative results teach
+
+The required descriptive ablations reinforce the separation. Center-only and
+an unaccepted-radius shadow reached transfer fidelities $.9277$ and $.9278$,
+below the accepted structured result of $.9436$, but neither repaired its
+boundary deficit. Treating learned self-confidence as though it were accepted
+external evidence performed especially poorly: in-regime, boundary, and
+transfer fidelity were $.3444$, $.5570$, and $.2874$. The unaccepted production
+path withheld by construction. Cross-entropy probability diagnostics therefore
+cannot substitute for region coverage, while an unaccepted learned radius
+cannot substitute for a certificate.
+
+The observed geometry gives a theory-consistent explanation of the main
+trade-off. Accepted structured intervals were wider on average than the oracle
+intervals, and the exact decoder maps an interval that crosses a threshold to
+Open. At support equality, any upper-endpoint overshoot likewise changes the
+state from Supported to Open. This conservative dead band is consistent with
+high open-state fidelity, low false assertion, high miss, and high fallback.
+The experiment did not identify a causal decomposition among objective, fit,
+calibration expansion, threshold construction, decoder, generator, and their
+interactions. Marginal coverage does not imply pointwise endpoint overshoot,
+and the threshold input carries information about the generator construction.
+
+One preregistration-design drift further limits comparison. An earlier design
+requirement called for boundary performance at matched coverage, while the
+frozen primary endpoint compared raw macro fidelity under different
+abstention rates. The registered endpoint remains a valid comparison of the
+two complete frozen pipelines. It does not isolate representation quality at
+equal answer rate. No outcome-selected matched-coverage replacement was
+constructed; a future risk--coverage study must be frozen prospectively.
+
+Several planned secondaries are unavailable because the compact final traces
+omitted target/design weights, polarity, evidence mode, and sufficient
+diagnostics. Target-weighted false assertions and misses, selected and deployed
+task loss, and misroute severity cannot be reconstructed. Their absence cannot
+strengthen or rescue the registered endpoints. The hard mixture-of-experts
+comparison was prospectively omitted, so the study supplies no architecture
+ranking or empirical seam result. Finally, the succession and certificate
+checks were deterministic integration witnesses: they reproduced simultaneous
+grants, gap fallback, lapse to Withheld, rebuttal to Refused, preservation
+under an irrelevant update, later domination without archival erasure, proof
+erasure, grounded ranks, invalid-certificate rejection, and cycle rejection.
+They establish executable consistency with the formal interface. They are not
+powered evidence of system adequacy.
+
 ## 8. Optional Policy/Value and Recursive-Judgment Bridge
 
 This section is an optional motivation independent of the four formal
@@ -1433,6 +1583,164 @@ behavioral reconstruction on a named distribution. Standard return semantics,
 off-support generalization, identification, mechanistic alignment, and human
 interpretation require additional assumptions and tests. The project remains
 neutral about whether an arbitrary policy has a true utility function.
+
+## 10. Discussion, Limitations, and Future Work
+
+### 10.1 What survives the empirical trade-off
+
+The central formal result is a way to make bounded reliance explicit. A grant
+states that one versioned plan satisfies one finite profile under the current
+records and accepted evidence modes. It can coexist with an open question
+about final truth. It can also coexist with another grant in an overlap, a
+fallback in a gap, or archival retention after a successor becomes preferred.
+The update theorems then give constructive conditions for preservation:
+writes outside a complete typed footprint leave the diagnostic unchanged,
+while certificate expiry and counterevidence produce different transitions.
+The deterministic succession witness exercises these distinctions.
+
+The experiment weakens one proposed implementation default while sharpening
+the architecture-neutral thesis. A continuous statistic retained information
+useful when tolerances changed. The chosen center--radius objective,
+calibration, and exact decoder did not convert that information into strong
+current-threshold fidelity or useful answer coverage. Direct state
+classification showed the opposite profile on those endpoints. The
+constructive consequence is to treat reusable information and authorization
+behavior as separate design objectives, and to retain the exact state, mask,
+fallback, and evidence boundary even when the estimator changes.
+
+This also explains why the four public outcomes matter. Undefined identifies a
+malformed request before atom aggregation. Refused records accepted
+counterevidence. Withheld preserves unresolved, missing, invalid, or
+boundary-crossing evidence. Collapsing these cases into one reject label would
+hide whether the next useful action is to repair the request, gather evidence,
+revise the plan, or simply use the fallback. Conversely, a correct four-way
+label does not by itself guarantee low deployed loss; the routed-risk identity
+still charges fallback mass and severity.
+
+### 10.2 Evidence layers and present limits
+
+Six evidential layers should be reported separately.
+
+1. **Functional fidelity** measures agreement with frozen atom or four-outcome
+   labels. The registered transfer result, opposing boundary and in-regime
+   results, and descriptive four-outcome fidelity belong here.
+2. **Marginal calibration** concerns target containment by proposed intervals
+   under the named exchangeable groups. The two coverage results establish
+   that claim at their registered scope.
+3. **Certificate validity** additionally depends on a bound record's schema,
+   candidate, units, scorer, split, scope, polarity, checker, version, validity
+   interval, and provenance. The implementation checked this contract and the
+   deterministic witness rejected invalid evidence. The study did not
+   establish a population-wide theorem that future certificates remain valid.
+4. **Routed risk** combines selected-expert loss, fallback loss, coverage, and
+   routing error on their actual subdomains. The final compact traces do not
+   support selected/deployed loss or misroute-severity estimates, so no
+   deployed-risk conclusion is available.
+5. **Activation alignment** asks whether learned regions or hidden coordinates
+   align with scientific validity domains or causal computation. It was not
+   measured. The formal seam result shows that one continuous ReLU output
+   cannot exactly join disagreeing affine traces on a shared face; because the
+   hard-router comparator was omitted, no empirical architecture comparison
+   follows.
+6. **Policy/value evidence** is presently formal and conditional: finite
+   encoder-image existence, action-gap reconstruction bounds, and a scoped
+   information theorem. No companion reconstruction, off-support test,
+   intervention study, or human evaluation was run.
+
+Each positive statement is therefore attached to a population, version, and
+consumer. A current accepted record supports a target-world statement only
+through its named soundness bridge. A finite evaluated registry establishes
+relative comparison only over its recorded set; adding a later specialist may
+change the frontier without erasing earlier evidence or archive history.
+Likewise, component certificates do not automatically certify their
+composition. The root plan needs a checked transformer and a composite budget,
+and a router needs selected-scope and fallback evidence.
+
+The synthetic generator is deliberately legible and finite. It supports exact
+oracle labels and controlled boundary density, but it does not establish
+scientific realism, behavior on natural data, or the adequacy of any historical
+physical model. Exact CPWL/ReLU realization establishes a representational
+witness under declared hypotheses. The present study supplies no result that
+ReLU is optimal, that training recovers the formal construction, that a neural
+activation has an intrinsic proposition-like meaning, or that the system can
+certify itself. Grounded evidence and ranked evaluation were external
+requirements of the witness.
+
+The unmatched-coverage boundary comparison and the unavailable trace
+secondaries are material reporting limitations. Because the arms abstained at
+different rates, raw fidelity compares whole pipelines rather than isolated
+representations at equal operational coverage. The missing weights and route
+losses also prevent a retrospective risk--coverage reconstruction. These
+limitations are reasons to change a future protocol. They do not authorize a
+replacement endpoint or a rerun selected after the frozen result was observed.
+
+Reproducibility also exposed a versioned trust boundary. Seven frozen JSON
+artifacts were originally written with Windows CRLF line endings; Git
+transport had normalized them to LF and thereby broke their registered
+raw-byte hashes in a Linux checkout. Restoring the registered bytes and
+declaring them byte-preserved repaired public verification without changing
+their scientific content. New artifacts use an explicit LF writer. Appendix E
+records the erratum and the WSL/Ubuntu verification path.
+
+### 10.3 Prospective extensions
+
+A matched-coverage study should prospectively freeze either full
+risk--coverage curves or comparisons at common answer rates, retain candidate,
+fallback, and deployed losses, and record target/design weights, polarity,
+evidence mode, compact diagnostics, route, and misroute severity per decision.
+A factorial conservatism study could separately vary objective, radius fit,
+calibration expansion, and decoder rule. That would test the dead-band account
+rather than promote it retrospectively to an identified mechanism.
+
+A separately powered hard-seam comparison could evaluate a continuous shared
+network against an externally licensed hard router under matched capacity,
+compute, coverage, and route costs. Scientific case studies would require
+their own domain definitions, task losses, fallbacks, transport assumptions,
+and evidence modes. Temporal or distributional transfer cannot be inherited
+from the synthetic tolerance test; it needs a declared shift model or renewed
+evidence.
+
+The optional policy/value program has two further directions. One asks whether
+learned value-like surrogates preserve behavior off the training support and
+along induced trajectories under a transparent environment and decision
+harness. The other asks whether a licensed value-like output can serve as a
+semantic foothold for tracing stable meaning backward through representations
+using alignment probes and causal interventions. Shared behavior alone does
+not settle either question. Mechanistic and human-use evidence would require
+their own intervention and user-study designs. These programs have not yet
+been executed.
+
+## 11. Conclusion
+
+Supersession need not force a choice between unrestricted endorsement and
+discard. In the running succession, the older plan and successor can both be
+licensed on an overlap; a gap invokes the declared fallback; expiry withholds;
+counterevidence refuses; and a later specialist can become preferred while
+earlier evidence and archival history remain available. The finite-stage
+calculus represents these possibilities through typed requests, three
+meaningful atom states, four public outcomes, explicit evidence, and
+history-preserving updates.
+
+Finite proof-carrying plans extend the same discipline to composition and
+routing. An architecture-neutral factorization then permits learned numerical
+proposals while keeping validation, exact decoding, masks, registries, and
+fallback external. Finite ReLU networks provide one explicit representation
+witness for suitable continuous piecewise-linear statistics.
+
+The frozen experiment supplies the paper's most useful warning and opportunity.
+Retaining the statistic substantially improved changed-tolerance transfer, yet
+the tested conservative pipeline lost boundary and in-regime fidelity and
+almost always fell back. Marginal calibration still passed. Information
+retention, calibrated caution, and operational usefulness must therefore be
+measured as distinct achievements.
+
+The project constructs a logic of present, revisable reliance under bounded
+evidence. Questions about final scientific truth, neural mechanism, human
+interpretability, and the existence or recovery of true utility remain outside
+its established results. The framework makes those neighboring questions
+easier to state precisely because every positive license already names the
+domain, purpose, fallback, evidence, version, and limits of the reliance it
+authorizes.
 
 ## Appendix A. Core Syntax and Elaboration Reference
 
@@ -2152,6 +2460,308 @@ must make its numerical meaning stable; and accepted evidence must authorize
 the interpretation at the current stage. None of them turns a hidden
 coordinate into an ontology or an open-ended empirical record into a timeless
 proof.
+
+## Appendix E. Frozen Experiment, Complete Results, and Reproducibility
+
+### E.1 Generator and sampling design
+
+The protocol is `value-logic-experiment-v1.0.0`; the successful execution-only
+amendment is `value-logic-implementation-v1.1.0`. The statistical unit is a
+world root. Every root owns its trajectory, latent plan-family identities,
+requests, evidence, observations, and provenance descendants. Reused labels
+such as older plan and successor denote roles, never shared families across
+worlds. Lineage roots are disjoint across evidential roles.
+
+Each trajectory has $x\in[-1,1]$, complexity $c\in[0,1]$, and pre-outcome
+difficulty $h\in[0,1]$. The target law is uniform in these coordinates. The
+design stratifies $x$ while sampling $c,h$ independently:
+
+| context cell | interval | target mass | design mass |
+|---|---:|---:|---:|
+| older only | $[-1,-.35)$ | $.325$ | $.20$ |
+| older/successor overlap | $[-.35,.35]$ | $.35$ | $.30$ |
+| successor only | $(.35,.85]$ | $.25$ | $.25$ |
+| initial gap | $(.85,1]$ | $.075$ | $.25$ |
+
+The older, successor, later-specialist, and fallback domains are respectively
+$[-1,.35]$, $[-.35,.85]$, $[.15,1]$, and $[-1,1]$. With
+$R(u)=\max(0,u)$, the frozen conditional loss means are
+
+$$
+\begin{aligned}
+m_J(B)&=.32+.05c+.02|x|,\\
+m_J(M_{\rm old})&=.10+.03c+.04|x+.55|+.22R(x-.20)+b_J(M_{\rm old}),\\
+m_J(M_{\rm succ})&=.12+.05c+.035|x|+.08R(x-.75)+b_J(M_{\rm succ}),\\
+m_J(M_{\rm new})&=.09+.04c+.025|x-.55|+.06R(.10-x)+b_J(M_{\rm new}),
+\end{aligned}
+$$
+
+and the latency means in milliseconds are
+
+$$
+\begin{aligned}
+m_T(M_{\rm old})&=35+8c+5|x+.50|+b_T(M_{\rm old}),\\
+m_T(M_{\rm succ})&=42+6c+4|x|+b_T(M_{\rm succ}),\\
+m_T(M_{\rm new})&=38+7c+3|x-.50|+b_T(M_{\rm new}).
+\end{aligned}
+$$
+
+The hidden intercepts are independent with
+$b_J\sim\mathcal N(0,.006^2)$ and $b_T\sim\mathcal N(0,.8^2)$. Conditional
+scales are
+
+$$
+\sigma_J=.006+.006h+.002c,\qquad
+\sigma_T=.60+1.00h+.40c.
+$$
+
+A target is $t=m+\sigma\xi$ with independent standard-normal $\xi$. The oracle
+central $90\%$ region is
+
+$$
+U^*=[m-k\sigma,m+k\sigma],\qquad
+k=1.6448536269514722.
+$$
+
+For a smaller-is-better threshold $\epsilon$, exact support occurs when the
+evidence mode permits support and $\epsilon-u^*\geq0$. Exact refutation occurs
+when its mode permits refutation and $l^*-\epsilon>0$. All other meaningful
+cases are Open. The standalone probe panel contains 40 loss and 40 latency
+atoms per world. It oversamples difficult cases:
+
+| atom stratum | threshold construction | target mass | design mass |
+|---|---|---:|---:|
+| strict support | $\epsilon=u^*+d\sigma$, $d\sim U(.25,1.5)$ | $.40$ | $.25$ |
+| support equality | $\epsilon=u^*$ | $.05$ | $.20$ |
+| crossing or polarity-open | interior of $U^*$ | $.20$ | $.20$ |
+| missing-open | no evidence record | $.05$ | $.10$ |
+| invalid-open | rejected or mismatched record | $.05$ | $.10$ |
+| strict refutation | $\epsilon=l^*-d\sigma$ | $.25$ | $.15$ |
+
+Every target-distribution metric uses the fixed ratio of target mass to design
+mass. The core request profile requires adequacy relative to an absolute loss
+threshold, improvement over fallback by a declared amount, and a latency
+constraint. Each world contributes 40 requests: 12 constructed Granted, 12
+Withheld, 12 Refused, and 4 Undefined. Their target masses are
+$.35,.30,.30,.05$ and design masses are $.30,.30,.30,.10$. At least one fifth
+of well-formed requests contain a support-equality focal atom. Undefined comes
+from malformed units, binding, or profile data before meaningful atom
+aggregation.
+
+The succession fixture begins with older and successor plans, permits
+simultaneous licenses on their overlap, and sends the initial gap to fallback.
+It then expires an older-plan certificate, applies an irrelevant-footprint
+update, introduces refuting evidence, changes a tolerance without refitting,
+and finally adds the later specialist with checked comparisons.
+
+### E.2 Roles, firewall, learners, and calibration
+
+The frozen manifest contains 20,000 training roots and 5,000 roots for each of
+envelope calibration, reject/router validation, system audit, and final
+confirmation. The training role was divided into 16,000 fit and 4,000 internal
+selection roots. The validation and system-audit payloads were not spent:
+there was no learned reject threshold, learned router threshold, or powered
+system endpoint. The final confirmation role was materialized once after
+selection, fitting, and calibration had produced hash-bound checkpoints.
+
+Permitted scorer inputs comprise the exact typed atom address and
+dependency-scoped record projection; $x,c,h$ and pre-outcome plan features;
+schema, units, normalization, evidence mode, and polarity; declared thresholds
+and profile roles; registry and evaluated-set identity; and collection-design
+variables known before the target. Forbidden inputs include targets, oracle
+regions and states, hidden intercepts and noise, outcome or grant labels,
+active masks and routes, future stages, calibration residuals, audit records,
+final statistics, and cross-role summaries. Prediction arrays were frozen and
+hashed before joining oracle labels.
+
+The two learners use the same permitted inputs, two-hidden-layer ReLU family,
+optimizer family, minibatch size, update budget, normalization, internal
+selection information, and paired initialization rule. Trainable parameter
+counts differ by at most $2\%$. The selected common budget was 20,000
+parameters. The structured arm selected learning rate $.001$ and direct
+cross-entropy $.003$; both selected zero weight decay from the frozen grid.
+Eight paired seeds, $101,211,307,401,503,601,701,809$, produced 16 distinct
+model hashes.
+
+The structured head emits center and nonnegative-radius proposals for both
+$J$ and $T$. Standardized squared error fits the center. After the center is
+frozen, the central interval score at $\alpha=.10$ fits the radius. For each
+statistic group and fit, disjoint calibration roots supply nonnegative
+residuals
+
+$$
+R_i=\max\{\widehat l_i-t_i,t_i-\widehat u_i,0\}.
+$$
+
+The registered empirical quantile gives an additive expansion. The accepted
+record binds the candidate, target schema, units, scorer and head, training and
+calibration manifests, group, $\alpha$, quantile rule, evidence mode, polarity,
+scope, checker, validity, version, and provenance. An infinite interval counts
+as target-containing for the coverage estimand but is unusable evidence and
+opens the atom. In the completed run every expansion was finite; binding
+rejection and infinite-proposal rates were zero.
+
+The direct arm emits three logits for each meaningful atom state and uses
+independent cross-entropy. The common exact layer handles missing and invalid
+evidence, polarity, well-formedness, profile aggregation, active masking,
+selection, and fallback. Its Brier score $.1829$, ten-bin expected calibration
+error $.0935$, and negative log likelihood $.3194$ describe class
+probabilities. They have no implication for interval coverage or certificate
+validity.
+
+### E.3 Endpoints, inference, and numerical record
+
+The transfer endpoint is target-weighted state accuracy across the 16
+monotonicity-compatible combinations of statistic group, reference state, and
+threshold offsets $-2,-1.5,1.5,2$. The scorer is queried with each threshold
+without refitting. The boundary endpoint is macro state accuracy on near
+support, exact equality, crossing-open, and near refutation cases within
+normalized distance $.25$. The in-regime guard is target-weighted macro state
+accuracy on ordinary frozen-tolerance cases.
+
+The aggregate alternative required structured-minus-direct differences above
+$+.05$ for transfer and boundary, together with in-regime difference above
+$-.02$. Transfer and boundary formed a Holm one-sided family at level $.05$;
+in-regime noninferiority was an intersection gate. Coverage for $J$ and $T$
+formed a separate Holm one-sided family with null lower margin $.88$ against
+nominal $.90$. For each endpoint the design first computes the weighted metric
+inside a world and averages the eight paired fits. The primary bootstrap then
+resamples the 5,000 world roots with seed 19,012,026 for 10,000 replicates.
+
+The complete primary results are:
+
+| endpoint | structured | direct | difference | percentile 95% interval |
+|---|---:|---:|---:|---:|
+| tolerance transfer | $.9436177$ | $.7569837$ | $+.1866340$ | $[.1859927,.1872787]$ |
+| boundary | $.5196282$ | $.7807898$ | $-.2611616$ | $[-.2636213,-.2587362]$ |
+| in regime | $.7763731$ | $.8773037$ | $-.1009307$ | $[-.1021794,-.0996783]$ |
+
+The transfer Holm-adjusted one-sided $p$ value is $.00019998$. The aggregate
+conjunction does not pass; neither does its registered reverse-falsification
+rule. Component-level adjudication supports transfer superiority and refutes
+boundary superiority and in-regime noninferiority at their respective
+registered margins. Across the eight individual fits, differences ranged from
+$+.0969$ to $+.2468$ for transfer, $-.3046$ to $-.2349$ for boundary, and
+$-.1413$ to $-.0647$ in regime. Descriptive two-way world-and-seed bootstrap
+intervals were $[.1513,.2212]$, $[-.2789,-.2456]$, and
+$[-.1177,-.0833]$.
+
+| coverage group | estimate | percentile 95% interval | Holm lower bound |
+|---|---:|---:|---:|
+| $J$ | $.9097674$ | $[.9084673,.9110646]$ | $.9084673$ |
+| $T$ | $.9043917$ | $[.9030576,.9057591]$ | $.9032722$ |
+
+These are marginal target-in-proposal results under the exact generator and
+split contract. They do not estimate coverage conditional on state, context,
+selection, route, or deployed system.
+
+The required ablations are descriptive:
+
+| arm or ablation | in regime | boundary | transfer |
+|---|---:|---:|---:|
+| accepted structured region | $.7764$ | $.5196$ | $.9436$ |
+| direct cross-entropy | $.8773$ | $.7808$ | $.7570$ |
+| center only | $.7564$ | $.5116$ | $.9277$ |
+| unaccepted-radius shadow | $.7869$ | $.5405$ | $.9278$ |
+| invalid learned self-confidence | $.3444$ | $.5570$ | $.2874$ |
+
+The unweighted loss-state companions were, for structured versus direct:
+Open accuracy $.9910/.8120$, Supported accuracy $.5253/.9343$, Refuted accuracy
+$.6849/.9482$, false support $.0087/.0988$, false refutation
+$.0146/.1624$, missed support $.4611/.0640$, and missed refutation
+$.3248/.0627$. The latency pattern was similar. Target-weighted four-outcome
+fidelity was $.497607/.586604$; fallback mass was $.996216/.913948$.
+Inactive selection was exactly zero for both arms across all 40,000
+world/seed evaluations.
+
+Accepted loss regions had average width $.04006$, compared with an average
+oracle width of about $.03290$. This descriptive difference and the exact
+crossing-to-Open rule motivate the conservative dead-band account in Section
+7. They do not identify its causes.
+
+### E.4 Deterministic witness, deviations, and unavailable results
+
+The deterministic succession fixture returned no active plan in the initial
+gap and used fallback; retained both older and successor as simultaneously
+active where licensed; changed an expiry case to Withheld and a counterevidence
+case to Refused; preserved the selected diagnostic after an irrelevant update;
+and allowed the later specialist to dominate both recorded incumbents.
+Separate system checks exercised proof erasure, independent proof checking,
+grounded finite ranks, invalid local-certificate rejection, ungrounded-cycle
+rejection, and audit/confirmation lineage separation. Their evidence grade is
+deterministic fixture only.
+
+The execution and reporting record contains five deviations or limitations:
+
+1. The original object-heavy runner failed or was interrupted before a readable
+   result. Version 1.1 replaced repeated Python-object work with equivalent
+   arrays, batching, checkpointing, and a differentially tested C++ decoder.
+   Generator, estimands, roles, models, losses, seeds, calibration, endpoints,
+   and decision rules were unchanged.
+2. A first version-1.1 selection invocation ended after about nine seconds with
+   `Plan object is not callable`, before any checkpoint or result payload.
+   The unchanged source completed on a diagnostic retry.
+3. Compact traces omitted target/design weights, polarity, evidence mode, and
+   diagnostic labels. They cannot reconstruct target-weighted trace
+   false-assertion or miss rates, polarity/mode/diagnostic fidelity,
+   selected/deployed loss, or misroute severity. These results are unavailable.
+4. The protocol fixed bootstrap seed and replicate count but did not name the
+   pseudorandom algorithm. The analysis records NumPy `default_rng`/PCG64 and
+   the pinned NumPy version.
+5. Two post-final attempts to regenerate custom final-world metadata failed
+   before writing an analysis. The sealed raw results and traces were
+   unchanged. The completed analysis uses target-weighted metric rows and only
+   fixed-layout unweighted trace companions; it did not regenerate final
+   worlds.
+
+The hard mixture-of-experts feasibility/power gate failed prospectively, so no
+such learner was implemented or evaluated. No empirical seam, activation,
+architecture, or powered system comparison exists. There was no post-result
+matched-coverage analysis and there will be no reinterpretive replacement of
+the frozen raw-fidelity endpoint.
+
+### E.5 Hash chain, transport erratum, and WSL verification
+
+The compact successful-stage SHA-256 digests are:
+
+| artifact | SHA-256 |
+|---|---|
+| `selection_checkpoint_v1_1.json` | `84e7456a41d4bb19db943c47a6cc567f1a865fdfd6ea4693f88b5c5ceacac2b0` |
+| `fit_checkpoint_v1_1.json` | `1298e87f9346da493a35a1f41cdcc0e25b229ae160c4854321f36635c96df759` |
+| `calibration_checkpoint_v1_1.json` | `48663fa80a7fbec5d6c16c3a0febfdeaaa50fbe159ce3e0cbb0bc2185d48abac` |
+| local immutable `raw_results_v1_1.json` | `b7decc0ad233c0cbb5e70882001c914989026921357cd043b7e9a15bed4068fe` |
+| `analysis_v1_1.json` | `dbb1768625a268bdfefa72f85fbb1b076130fede8f07746d3f31c3f8df791728` |
+
+The raw result, model archive, progress blocks, and 400 trace shards are large
+reproducible run products and remain local and ignored. The repository commits
+the protocol, manifests, pilot, implementation record, compact checkpoints,
+analysis, figures, and hashes.
+
+The historical writers ran on Windows and wrote seven frozen JSON artifacts
+with CRLF bytes. Git later transported those files with LF bytes, so a clean
+Linux checkout did not match the raw-byte digests consumed during the run.
+Restoring the exact registered CRLF bytes recovered every hash without changing
+parsed content or any scientific result. [`.gitattributes`](.gitattributes)
+now preserves experiment JSON bytes. New versions can use the explicit LF
+writer in [`experiments/artifact_io.py`](experiments/artifact_io.py); historical
+source-hashed writers remain unchanged.
+
+From the repository root in WSL/Ubuntu, install the pinned packages and verify
+the committed evidence with
+
+```text
+python -m pip install -r experiments/requirements.txt
+python -m verification
+python -m experiments.run_repaired_experiment --preflight
+```
+
+The preflight verifies the frozen hashes, native/Python decoder equivalence,
+final-data guard, and deterministic system witness. The final-confirmation
+command is historical and must not be rerun: the confirmation role was
+materialized once, and the compact analysis is the public numerical record.
+The authoritative human-readable and machine-readable sources are
+[`experiments/02_results.md`](experiments/02_results.md) and
+[`experiments/analysis_v1_1.json`](experiments/analysis_v1_1.json).
 
 ## Appendix F. Policy/Value, Information, and Transparency Details
 
