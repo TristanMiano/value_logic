@@ -5,21 +5,20 @@ Tristan Miano
 ## Abstract
 
 Newton's laws are considered superseded—“falsified” by modern physics in an
-unrestricted sense—yet remain taught in college and used in engineering. We
-expect present physics, including the Standard Model, to be superseded in turn,
-without knowing whether the chain ends. We formalize a bounded agent's present
-reliance on such models as a finite-stage,
-evidence-relative license indexed by domain, task loss, fallback, tolerance,
-profile, and provenance. An architecture-neutral factorization lets learned
-modules propose reusable statistics while exact checks preserve states,
-masking, and fallback; finite ReLU networks supply one reference realization.
-In a frozen synthetic experiment, no-retraining tolerance transfer and
-marginal proposal coverage were supported, boundary superiority and in-regime
-noninferiority were refuted at their registered margins, and usable coverage
-was poor. Formal results characterize profile refinement, open-ended
-stability, update locality, robust representation, and boundary obstructions.
-These expectations motivate the paper; the formal claims remain neutral about
-final truth, architectural optimality, and true-utility recovery.
+unrestricted sense—yet remain taught and used. Their continued use exhibits
+pragmatic value: on a restricted domain, a fallible model may provide adequate
+predictions at lower computational or operational cost than invoking a
+successor. We expect present physics, including the Standard Model, to be
+superseded in turn, without knowing whether the chain ends. We formalize such
+value as a finite-stage, evidence-relative license indexed by domain, task
+loss, fallback, tolerance, profile, and provenance. An architecture-neutral
+factorization lets learned modules propose reusable statistics while exact
+checks preserve states and fallback; finite ReLU networks supply one reference
+realization. In a frozen synthetic experiment, tolerance transfer and marginal
+proposal coverage were supported, registered boundary superiority and
+in-regime noninferiority were refuted at their margins, and usable coverage was
+poor. Formal claims remain neutral about final truth, architectural
+optimality, and true-utility recovery.
 
 ## 1. Introduction: Reliance Before Finality
 
@@ -33,6 +32,20 @@ our best present models as “false” when they are read as unrestricted final
 descriptions: we expect future theories to expose limits that we do not yet
 know. We do not know when this will happen, or even whether the chain of
 supersession ends.
+
+The continued use of Newtonian models supplies the link from that fallibilist
+motivation to value. A successor may be more general or more accurate while
+also requiring different measurements, calculations, expertise, or operating
+costs. On a restricted domain, the older model may already keep the relevant
+error below tolerance and may be easier to compute, inspect, or deploy. The
+successor can therefore improve our account of the world without dominating
+every bounded use. In this paper, **pragmatic value** is this task-relative
+comparison: how well reliance serves a stated purpose under a named loss,
+domain, and cost, relative to a successor, fallback, or other available plan.
+The calculus does not define truth in terms of utility. It asks which reliance
+is warranted while final truth remains unsettled. A model's pragmatic value
+can survive the loss of an unrestricted truth claim, which is why supersession
+naturally leads to a logic of licensed use.
 
 That expectation is the paper's philosophical motivation, rather than a
 premise proved by its formal results. It creates a practical problem before a
@@ -282,6 +295,270 @@ activation cannot finish the diagnosis: supported equality, an interval
 crossing the boundary, and missing evidence can all yield zero. The exact state
 and provenance resolve that collision. This is the typed seam at which the
 paper's formal semantics meets its reference neural realization.
+
+## 3. A Compact Finite-Stage License Calculus
+
+### 3.1 Requests and their three operational carriers
+
+The shorthand $\Pi(M,D,\epsilon)$ has now done its motivational work. Its
+formal elaboration uses three principal carriers:
+
+$$
+E\quad\text{evaluated use plans},\qquad
+Q\quad\text{reliance contexts},\qquad
+S\quad\text{finite epistemic states}.
+$$
+
+An element $e\in E$ is a versioned executable plan: a predictor, equation set,
+simulator, controller, or finite composition with a fixed interface. An
+element $q\in Q$ packages the use question, including the typed domain $D_q$,
+task, frame, target loss $L_q$, risk aggregation, acceptable region,
+constraints, fallback $F_q$, required fallback advantage $\Delta_q$, and
+certificate modes. An element $s\in S$ contains the agent's finite represented
+library $K_s\subseteq_{\mathrm{fin}}E$, current records, evaluations, certificates,
+searches, dependencies, and provenance. A transition $s\to s'$ appends a
+declared event while preserving its history; a correction can invalidate an
+old record's current force without erasing its occurrence.
+
+Worlds $w\in W$ are semantic indices rather than operational inputs. They
+interpret target quantities such as population risk that need not be
+recoverable from the finite record. A request is
+
+$$
+\mathfrak r=(s,e,q,P)\in S\times E\times Q\times\mathsf{Profile},
+$$
+
+where $P$ is finite syntax selecting the requirements that matter. The
+compressed expression $\Pi(M,D,\epsilon)$ is thus replaced by a request whose
+loss, tolerance, fallback, evidence mode, and provenance are explicit.
+
+A finite composed plan may expose an annotated result
+$(\text{payload},\text{grade},\text{evidence})$. The payload performs the task;
+the grade is a typed bound or resource quantity; and the evidence component
+names the certificate, checker, scope, and provenance that warrant use of the
+grade. This is only an interface here. Component successes do not by
+themselves certify their composition; Section 5 will require a checked root
+certificate.
+
+The target criterion $L_q$, a learned estimator of $L_q$, and the optimizer's
+training objective are distinct typed objects. A fallible estimator can itself
+be represented by a plan and assessed through a higher-order request. The
+ordinary core admits finite, well-founded towers of such requests. A genuine
+self-referential cycle needs a separately specified fixed-point semantics.
+
+Four judgments that can otherwise be called a “theorem” or “proof” remain
+distinct:
+
+| form | status |
+|---|---|
+| $[e,q]\varphi$ | an object-model output produced by plan $e$ for context $q$ |
+| $\Gamma;s\vdash_{VL}J$ | an internal derivation in the frozen value logic from state-indexed premises |
+| $\vdash_{meta}T(VL)$ | an external mathematical metatheorem about the calculus or implementation |
+| $s\vdash_m\kappa:\mathsf{Claim}$ | a checker in certificate mode $m$ accepts evidence $\kappa$ for a typed claim |
+
+An accepted empirical certificate belongs to the fourth row. Its consequences
+for a target world depend on the declared soundness bridge; acceptance does
+not silently turn it into a deductive proof of a world fact.
+
+### 3.2 Profiles, typed atoms, and assessment
+
+A profile is a finite collection of typed atom templates with slot identity.
+The core examples are adequacy, improvement over the named fallback, hard
+constraints, traceability, and two finite comparison requirements. A
+relative-undefeated atom is supported when a valid declared search finds no
+certified dominator in the exact evaluated set, and it is refuted when one is
+found. A certified-undominated atom additionally requires every relevant
+comparison in that set to be resolved as non-dominating or ineligible. Neither
+ranges over unexamined future plans.
+The basic reliance profile $P_{\mathrm{rely}}$ requires adequacy, fallback
+improvement, hard constraints, and traceability. $P_{\mathrm{pref-rel}}$ adds
+relative-undefeated status, while $P_{\mathrm{pref-cert}}$ adds the stronger
+certified-undominated requirement.
+
+Instantiating a template at the request base $(s,e,q)$ produces an address
+
+$$
+a=\mathsf{kind}(\text{parameters};\text{scope, criterion, mode}).
+$$
+
+The address retains enough type information to prevent a certificate for one
+domain, loss, frame, candidate set, or checker mode from satisfying another.
+Each slot is either **required** or **report-only**. A designated safety subset
+of the required slots tells action consumers which unresolved or contrary
+diagnostics must be exposed. Report atoms enrich comparison and explanation;
+only required atoms determine authorization.
+
+The predicate $WF(\mathfrak r)$ checks that all four request components denote, $e$ is
+represented and executable on the requested cases, its output and frame match
+$q$, the finite profile instantiates to typed addresses, comparison scopes are
+exact, and action-authorizing profiles name a fallback. A wrong-unit latency
+request in the running example fails $WF$ and is **Undefined**. Missing latency
+evidence does not make the request ill typed; it leaves the latency atom open.
+
+For every well-formed request, each required or report address has a total
+finite-stage valuation
+
+$$
+\nu_s(e,q,a)\in K_3=\{-,?,+\},\qquad -<?<+,
+$$
+
+read as refuted, open, and supported. These are evidential states. The
+calculus makes no three-valued claim about truth itself. For a current
+nonempty certificate region $U_{\mathrm{cert}}$ and acceptable region $A$, the
+common clause is
+
+$$
+U_{\mathrm{cert}}\subseteq A\Rightarrow +,\qquad
+U_{\mathrm{cert}}\cap A=\varnothing\Rightarrow -,\qquad
+\text{missing or boundary-crossing evidence}\Rightarrow ?.
+$$
+
+Fallback improvement uses its own comparison. With smaller-is-better loss,
+candidate and fallback regions $U_{\mathrm{cert}}(e),U_{\mathrm{cert}}(F_q)$,
+and required advantage $\Delta$, support requires
+$\sup U_{\mathrm{cert}}(e)+\Delta\leq\inf U_{\mathrm{cert}}(F_q)$; separated
+evidence on the contrary side refutes the atom, and overlap leaves it open.
+
+At the initial state of the succession example, let $q_{.20}$ require
+adequacy $J(e)\leq.20$, improvement by $.05$ over $B$ with $J(B)=.35$, latency
+at most $50$ ms, and an accepted trace. The displayed loss and latency regions
+for both $M_{old}$ and $M_{succ}$ support all four requirements, so both plans
+can be licensed. Adequacy, fallback improvement, and comparative preference
+remain separate: the first imposes an absolute $.20$ ceiling, the second
+imposes the fallback-derived $.30$ ceiling, and a stronger profile may later
+ask which plan is undefeated within an exact finite evaluated set.
+
+Every valuation comes with exactly one indexed diagnostic:
+$\mathsf{Support}$ with witnesses, $\mathsf{Open}$ with obstacles, or
+$\mathsf{Refute}$ with counterwitnesses, always carrying provenance. Let
+$\mathsf{Diag}(\mathfrak r)$ be the complete address-to-diagnostic map. For the nonempty
+required address set, define
+
+$$
+\mu(\mathfrak r)=\bigwedge_{a\in\mathsf{Req}(P)}\nu_s(e,q,a).
+$$
+
+Assessment first checks well-formedness and then lifts this meet:
+
+$$
+\mathsf{Assess}(\mathfrak r)=
+\begin{cases}
+\mathsf{Undefined},&\neg WF(\mathfrak r),\\
+\mathsf{Refused},&WF(\mathfrak r)\ \text{and}\ \mu(\mathfrak r)=-,\\
+\mathsf{Withheld},&WF(\mathfrak r)\ \text{and}\ \mu(\mathfrak r)=?,\\
+\mathsf{Granted},&WF(\mathfrak r)\ \text{and}\ \mu(\mathfrak r)=+.
+\end{cases}
+$$
+
+Thus one refuted requirement defeats the request; with no refutation, one open
+requirement withholds it; a grant requires support for every required atom.
+The complete diagnostics preserve why these outcomes occurred.
+
+Typed refinement records when support for one atom is sufficient for another
+at the same scope, loss, frame, and certificate mode. Write $a\Rightarrow_A b$.
+A smaller acceptable region refines a larger one, a larger required fallback
+advantage refines a smaller one, and certified-undominated status refines
+relative-undefeated status on the same finite comparison set. At the changed
+adequacy threshold, for example,
+
+$$
+\mathsf{Adeq}(.16)\Rightarrow_A\mathsf{Adeq}(.20).
+$$
+
+The original interval for $M_{succ}$ supports the stricter atom at inclusive
+equality, while the interval for $M_{old}$ crosses $.16$ and leaves that atom
+open. A profile $P$ refines $Q$ when every required atom of $Q$ has a required
+refining witness in $P$. At a well-formed request base
+$\beta=(s,e,q)$, write this preorder as
+
+$$
+P\succeq_{prof}^{\beta}Q
+\quad\Longleftrightarrow\quad
+\forall b\in\mathsf{Req}_{\beta}(Q)\ \exists a\in\mathsf{Req}_{\beta}(P):
+a\Rightarrow_A b.
+$$
+
+Section 4 will state the exact soundness and finite-fragment completeness
+conditions; unmatched scopes or unrepresented interactions create no
+refinement edge.
+
+### 3.3 Licensed consequence, selection, and revision
+
+Let $\Gamma\vdash_{(e,q)}\varphi$ be the internal evaluation relation supplied
+by $e$ for $q$. When the request is Granted and $\varphi$ has the required type
+and scope, the use rule produces a labelled output
+
+$$
+\Gamma\Rightarrow_{[s,e,q,P]}[e,q]\varphi.
+$$
+
+The label remains attached. Export to another domain, detachment as target
+truth, or composition with another plan needs a separately validated bridge.
+More precisely, a certificate mode $m$ declares admissible world/state pairs
+$\mathcal C_m$. If its bridge establishes
+$\mathsf{Support}_m(s,a)\Rightarrow\mathsf{Target}_w(a)$ for every
+$\langle w,s\rangle\in\mathcal C_m$, then supported $m$-atoms receive exactly
+that target-world conclusion. A statistical bridge carries only its stated
+coverage or error guarantee.
+
+Licensing precedes selection. For a case $x$, define the active set
+
+$$
+\mathsf{Act}(s,q,P,x)=\{e\in K_s:x\in D_q,\ \mathsf{Exec}_e(q,x),
+\mathsf{Assess}(s,e,q,P)=\mathsf{Granted}\}.
+$$
+
+If it is empty, an action-authorizing selector may use only $F_q$ or a declared
+information/abstention action. `NoLicensedModel` is a display derived from this
+empty set, rather than an evidential atom. If the set is nonempty, a separate
+$q$-indexed policy selects among it. A plan can consequently be licensed but
+unselected, preferred on one finite overlap, or retained only in the library.
+
+Under $s\to s'$, the old history remains addressable and every standing request
+is recomputed from current diagnostics. Expiry of $M_{old}$'s loss certificate
+therefore changes support to open and produces Withheld. The later region
+$[.23,.25]$ lies beyond $.20$, producing a refuted adequacy atom and Refused.
+Changing the tolerance from $.20$ to $.16$ changes $q$ and creates a linked new
+request; it is a reassessment under a new standard. Adding and evaluating
+$M_{new}$ can change a finite comparison atom and selection while leaving basic
+licenses for old plans on other scopes intact.
+
+### 3.4 Open-ended stages
+
+To discuss succession, place the finite semantics in a continuation frame
+$\mathcal F=(N,\to,n_0,\mathsf{state},\mathsf{world})$. Each node carries a
+finite state and a semantic world index, and each compatible edge is a declared
+history-preserving update. Fix the substantive query
+$\chi=(e,q,P)$ and write
+
+$$
+A_\chi(n)=\mathsf{Assess}(\mathsf{state}(n),e,q,P).
+$$
+
+This fixed-query convention matters: replacing $e$, $q$, or $P$ asks a
+different question. A **current grant** says only $A_\chi(n)=\mathsf{Granted}$.
+For a path $(n_i)$, **eventual stability** and **permanent current stability**
+are respectively
+
+$$
+\exists N,z\ \forall i\geq N:\ A_\chi(n_i)=z,
+\qquad
+\forall m\geq n:\ A_\chi(m)=A_\chi(n).
+$$
+
+The first definition does not imply that the agent recognizes the stabilizing
+index. **Certified stability** adds a stage-local certificate whose named
+verifier is sound for that continuation class. Finally, **semantic finality**
+says that no proper continuation changes a declared projection of the whole
+problem; it is external metalanguage and is stronger than stability of one
+query.
+
+These definitions permit constructive questions about which frozen
+dependencies, evidence regimes, or live alternatives support each conclusion.
+They do not place a `Final` predicate inside the base license language. The
+calculus can therefore represent a useful present grant, later revision, and
+even pathwise stabilization while leaving the philosophical endpoint of theory
+succession open.
 
 ## 9. Related Work by Claim Boundary
 

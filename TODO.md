@@ -37,7 +37,7 @@ Checkpoints are roadmap-review tasks, not ceremonial status updates. At each che
 
 Checkpoint edits apply prospectively. They may add follow-up work for a completed result, but they do not silently mark completed work undone or rewrite its history. Prefer stable checkpoint labels and suffixed new tasks over renumbering tasks that are already referenced elsewhere.
 
-**Next task: Task 27 — Draft the formal definitions and semantics sections.**
+**Next task: Task 28 — Draft the theorem and proof sections.**
 
 ## Project question
 
@@ -660,9 +660,13 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
 
   **Author amendment before Task 27.** The abstract and introduction restore the originating supersession question from the earliest conversations: Newton's laws are “falsified” under an unrestricted modern reading while remaining taught and used; the Standard Model and other current frameworks are expected to be superseded; and no one knows whether that chain ends. The draft states transparently that this is the author's philosophical motivation. It is not presented as a theorem or an empirical premise of the formal results.
 
-- [ ] **Task 27 — Draft the formal definitions and semantics sections.**
+- [x] **Task 27 — Draft the formal definitions and semantics sections.**
 
   Extend `paper.md` with the compact `E,Q,S` signature, world index, typed atoms/refinement, profiles, `WF + K_3`, diagnostics, consequence/update, comparison/use, and open-ended stages, using the Task 19 running example throughout. Distinguish object-model results, internal value-logic derivations, metatheorems, and empirical certificate judgments. Introduce the finite certificate-carrying plan interface `(payload, grade, evidence)` only to the level needed to read its later results. Keep the main definitions sufficient to follow the theorem spine; leave full locality proofs, footprint keys, plan constructors, reason taxonomies, and atlas tables to Task 28's appendices or repository references.
+
+  Completed 2026-07-21. Added [Section 3 of the formal paper](paper.md#3-a-compact-finite-stage-license-calculus), which retires the motivational `Pi(M,D,epsilon)` shorthand in favor of `\mathfrak r=(s,e,q,P)`; fixes `E,Q,S` as the three operational carriers and `W` as a semantic index; and defines profiles, typed addresses, `WF`, `K_3`, complete indexed diagnostics, finite-meet assessment, atom/profile refinement, labelled use, the active set and fallback, history-preserving update, and fixed-query continuation stages. The Task 19 succession now witnesses well-formedness failure versus open evidence, simultaneous grants, absolute adequacy versus fallback improvement, changed-tolerance refinement, expiry, rebuttal, finite preference, and retention inside the formal presentation.
+
+  The section explicitly separates object-model output, internal value-logic derivation, external metatheorem, and accepted certificate judgment. It introduces `(payload, grade, evidence)` only as the interface needed for the later composition result and keeps the target loss, a learned estimator, and the optimizer objective typed separately. Full theorem proofs, locality footprints, constructor rules, taxonomies, and atlas tables remain deferred. The same task amends the [abstract and introduction](paper.md#abstract) and the [frozen outline wording](paper_outline.md#2-frozen-reader-facing-formulations) so retained use under supersession supplies the philosophical bridge to pragmatic value: a more general or accurate successor need not dominate an adequate, cheaper, or easier-to-deploy predecessor on every bounded task. This is stated as task-relative comparison rather than a definition of truth. No formal or empirical claim disposition changed.
 
 - [ ] **Task 28 — Draft the theorem and proof sections.**
 
