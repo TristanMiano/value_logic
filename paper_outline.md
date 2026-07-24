@@ -3,9 +3,11 @@
 Status: frozen publication contract after Task 25, amended by Checkpoint D and
 the completed Task 22B bridge theorem
 Date: 2026-07-18; Checkpoint D and Task 22B amendments 2026-07-21
-Drafting status: Task 26 implemented the abstract, §§1--2, and §9 in
-[`paper.md`](paper.md) on 2026-07-21; its author amendment restores the
-originating Newton/Standard-Model/open-chain motivation
+Drafting status: Tasks 26--28 implemented the abstract, §§1--5 and §9, and
+Appendices A--C in [`paper.md`](paper.md) through 2026-07-24. The draft restores
+the originating Newton/Standard-Model/open-chain motivation and now carries the
+settled H1--H3 theorem spine, constructive boundaries, and load-bearing finite
+composition/routing results.
 Target: one approximately 11,100-word main paper, technical appendices, and a
 separate 1,500--1,800-word public essay
 

@@ -1,6 +1,6 @@
 # Value Logic Project: Context and TODO
 
-Last updated: 2026-07-21
+Last updated: 2026-07-24
 
 ## Resume here
 
@@ -37,7 +37,7 @@ Checkpoints are roadmap-review tasks, not ceremonial status updates. At each che
 
 Checkpoint edits apply prospectively. They may add follow-up work for a completed result, but they do not silently mark completed work undone or rewrite its history. Prefer stable checkpoint labels and suffixed new tasks over renumbering tasks that are already referenced elsewhere.
 
-**Next task: Task 28 — Draft the theorem and proof sections.**
+**Next task: Task 29 — Draft the neural representation, learning, and interpretability sections.**
 
 ## Project question
 
@@ -668,9 +668,13 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
 
   The section explicitly separates object-model output, internal value-logic derivation, external metatheorem, and accepted certificate judgment. It introduces `(payload, grade, evidence)` only as the interface needed for the later composition result and keeps the target loss, a learned estimator, and the optimizer objective typed separately. Full theorem proofs, locality footprints, constructor rules, taxonomies, and atlas tables remain deferred. The same task amends the [abstract and introduction](paper.md#abstract) and the [frozen outline wording](paper_outline.md#2-frozen-reader-facing-formulations) so retained use under supersession supplies the philosophical bridge to pragmatic value: a more general or accurate successor need not dominate an adequate, cheaper, or easier-to-deploy predecessor on every bounded task. This is stated as task-relative comparison rather than a definition of truth. No formal or empirical claim disposition changed.
 
-- [ ] **Task 28 — Draft the theorem and proof sections.**
+- [x] **Task 28 — Draft the theorem and proof sections.**
 
   Extend `paper.md` with the settled H1--H3 theorem spine and its constructive countermodels: profile/refinement, open-ended stability, typed update locality/change-completeness, and the load-bearing finite composition/routing results. Present proof-carrying plans, proof erasure, license lifting, grounded provenance, stratified system assessment, and imported database/fixed-point/program-logic machinery as scoped integrations rather than additional novelty headlines. Give every displayed result a short significance paragraph tied to the running example. Move routine lemmas and full proofs to Appendices A--C. Do not duplicate H4's architecture-neutral/ReLU representation cluster, which Task 29 owns.
+
+  Completed 2026-07-24. Added [`paper.md` Sections 4--5](paper.md#4-open-succession-and-local-revision) and [Appendices A--C](paper.md#appendix-a-core-syntax-and-elaboration-reference). The main theorem spine now states finite-stage profile-refinement soundness and base-local relative completeness; the finite-prefix barrier; deterministic-freeze and margin-separated statistical stability; directional open-library nonfinality; and calculus-specific complete-diagnostic locality, disjoint-write invariance, and graph change-completeness. Each result is followed by its significance for `M_old`, `M_succ`, `M_new`, or fallback `B`, and by the constructive case that identifies the missing assumption: unrepresented conjunction, divergent continuations, zero target margin, later domination, or an empty-collection phantom insertion.
+
+  Section 5 presents annotated finite-DAG execution, proof erasure, checked root-license lifting, grounded provenance, unique finite-rank system assessment, the exact routed-risk decomposition, and path-sensitivity error propagation. The text classifies structural induction, program/proof-carrying machinery, predicate-lock/frame-rule analogies, sequential stopping arguments, and Kripke--Fitting fixed-point patterns as scoped integrations or neighboring established machinery. Component bounds of `.06+.06>.10`, parent-average selection, catastrophic fallback, untyped bases, self-endorsement, and unranked cycles remain adjacent. Appendices A--C contain the compact elaboration reference, complete profile/stability/locality proofs and footprint table, and the composition/routing/grounding proofs. H4 and all neural representation theorems remain for Task 29. No formal or empirical claim disposition changed. All 177 repository checks pass both in the workspace and in a clean archive with the staged Task 28 patch; edited files are LF-only. Public CI remains to be observed after the user pushes the local commit.
 
 - [ ] **Task 29 — Draft the neural representation, learning, and interpretability sections.**
 

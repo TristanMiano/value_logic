@@ -560,6 +560,375 @@ calculus can therefore represent a useful present grant, later revision, and
 even pathwise stabilization while leaving the philosophical endpoint of theory
 succession open.
 
+## 4. Open Succession and Local Revision
+
+### 4.1 Profile refinement at one finite stage
+
+The first result says when one profile is genuinely stronger than another.
+Fix a request base $\beta=(s,e,q)$ at which profiles $P,Q$ are well formed.
+Let $P\models_{prof}^{[\beta]}Q$ mean that every model in the declared
+base-local model class inside the fixed instantiation fiber that grants $P$
+also grants $Q$. Recall that
+$P\succeq_{prof}^{\beta}Q$ requires each atom of $Q$ to have a refining witness
+among the required atoms of $P$.
+
+**Theorem 1 (profile soundness and relative completeness).** Every sound typed
+profile refinement preserves grants:
+
+$$
+P\succeq_{prof}^{\beta}Q
+\quad\text{and}\quad
+\mathsf{Assess}(s,e,q,P)=\mathsf{Granted}
+\quad\Longrightarrow\quad
+\mathsf{Assess}(s,e,q,Q)=\mathsf{Granted}.
+$$
+
+On a finite independently realizable atom fragment inside the instantiation
+fiber $[\beta]_{P,Q}$, the converse characterization also holds:
+
+$$
+P\models_{prof}^{[\beta]}Q
+\quad\Longleftrightarrow\quad
+P\succeq_{prof}^{\beta}Q.
+$$
+
+The soundness proof projects each support witness along the typed atom rule and
+then takes the finite meet. For relative completeness, if refinement fails at
+a required atom $b$ of $Q$, take the downward closure of the required atoms of
+$P$. Independent realizability supplies a finite state supporting exactly that
+closure and leaving $b$ open; it grants $P$ and withholds $Q$. Appendix B gives
+the construction.
+
+For the running example, support at the stricter $.16$ adequacy boundary
+transports to the otherwise identical $.20$ requirement. A grant under
+$P_{\mathrm{pref-cert}}$ likewise transports to $P_{\mathrm{pref-rel}}$ and
+then to $P_{\mathrm{rely}}$ on the same request base. The theorem does not
+transport evidence across a changed domain, loss, frame, certificate mode, or
+evaluated set.
+
+Both restrictions in the second display do work. If the operational semantics
+contains a genuine conjunctive law $a_1\wedge a_2\models b$ but the syntax has
+only unary refinements, the profile requiring $a_1,a_2$ can semantically entail
+$b$ without a single witness atom. If the state change also changes an
+instantiated address or rule, the new base leaves $[\beta]_{P,Q}$. Schema-wide
+completeness would need the fragment hypothesis and well-formedness transfer at
+every base. Finally, a target-world twin can share the same supporting state
+while differing in actual risk; Theorem 1 orders operational grants and does
+not erase the mode-scoped world bridge.
+
+### 4.2 What can stabilize under continuing inquiry?
+
+A finite assessment can stabilize without announcing that its last change has
+occurred. The obstruction is constructive rather than a general thesis about
+unknowability.
+
+**Theorem 2 (finite-prefix barrier).** Suppose two roots $n,n'$ expose
+isomorphic finite states and the same current value $z$ for fixed
+$\chi=(e,q,P)$. If the value is permanent from $n$ but some descendant of
+$n'$ changes it, then no stage-local certificate scheme sound for both
+continuations can certify permanent current stability at their common finite
+state:
+
+$$
+n\sim_{fin}n',\quad A_\chi(n)=A_\chi(n')=z,\quad
+\mathsf{StableNow}_\chi(n),\quad
+\exists m'\geq n':A_\chi(m')\neq z
+\quad\Longrightarrow\quad
+\neg\mathsf{CertifiedStable}_\chi(n).
+$$
+
+A local verifier receives the same finite input at both roots. Acceptance at
+one therefore implies acceptance at the other, where the live descendant
+contradicts soundness. In the succession example, the current $M_{old}$ grant
+can have one continuation containing only irrelevant records and another whose
+next event expires its loss certificate. The shared prefix establishes the
+current grant; it cannot distinguish those futures.
+
+Positive stability results come from conditions that remove the live
+alternative.
+
+**Theorem 3 (two constructive stability regimes).** Let a deterministic atom
+have a finite dependency projection and evaluator $v_a=f_a(\mathsf{dep}_a,
+\mathsf{Rules}_a)$. If a checkable freeze certificate preserves those values,
+denotations, and rule versions under every admitted event, then
+
+$$
+\forall m\geq n:\ v_a(m)=v_a(n).
+$$
+
+For a statistical adequacy atom with target risk $\theta$, threshold
+$\epsilon$, and regions $C_i=[L_i,U_i]$, suppose coverage holds eventually,
+$\operatorname{diam}(C_i)\to0$, and
+$\gamma=|\theta-\epsilon|>0$. Then the atom eventually stabilizes as supported
+when $\theta<\epsilon$ and refuted when $\theta>\epsilon$.
+
+The deterministic clause is induction over declared events. The statistical
+clause chooses one index after both eventual coverage and diameter below
+$\gamma$ hold; inclusion then puts every later region strictly on the correct
+side. A finite profile stabilizes after the maximum of its finitely many atom
+indices and its well-formedness index. If simultaneous coverage has probability
+at least $1-\alpha$, the statistical conclusion has that stated guarantee on
+the declared sampling law.
+
+These conditions separate two possible stories about $M_{succ}$. A locked
+latency record and verifier can be permanently stable for a restricted event
+class. Repeated loss estimates can stabilize under a valid shrinking-region
+regime when true risk has margin from the threshold. At the changed $.16$
+boundary, however, the current interval ending at equality supplies no
+positive target margin. The theorem therefore gives no automatic stabilization
+claim there. Likewise, a proof of $T(e)\leq50$ does not survive an admissible
+correction to its units unless the correction path was excluded or frozen.
+
+Statistical stopping also has a familiar finite-prefix limit. If opposite-side
+laws are mutually absolutely continuous on every finite observation
+$\sigma$-field, a regime declaration made at a finite stopping time with
+positive probability under one law has positive probability under the other.
+No procedure in that family combines uniform zero error with finite
+positive-probability declarations on both sides. This is the classical
+sequential-testing pattern behind the distinction between convergence and
+certified arrival ([Wald 1945](https://doi.org/10.1214/aoms/1177731118);
+[Kelly 1996](https://doi.org/10.1093/oso/9780195091953.001.0001)), rather than
+a new impossibility principle.
+
+Finite-library comparison has a directional boundary.
+
+**Theorem 4 (open-library direction).** If a comparison atom for $e$ is
+supported at $n$ and a compatible continuation can add and validly evaluate a
+dominator $d$, then its present positive status is not permanently stable:
+
+$$
+\mathsf{Comp}_e(n)=+
+\quad\text{and}\quad
+\mathsf{AddDom}(e,q,n)
+\quad\Longrightarrow\quad
+\neg\mathsf{StableNow}_{\mathsf{Comp}_e}(n).
+$$
+
+The conclusion is polarity-specific. If an already accepted dominator remains
+valid in every continuation, the refutation of $e$ can remain stable while the
+library grows. In the example, adding $M_{new}$ defeats a required finite
+non-domination atom for an older plan on the certified overlap, while
+$P_{\mathrm{rely}}$ can remain Granted on another scope. The result therefore
+supports revisable finite preference; it supplies no claim that every grant is
+unstable or that every library must remain incomplete.
+
+### 4.3 Typed locality and change-completeness
+
+Current diagnostic provenance records why an atom has its present status. It
+may omit an absent record whose future insertion would change that status.
+Local revision therefore uses a derived finite read interface
+$\mathsf{Read}_s(\mathfrak r,i)$ for profile slot $i$ and a finite write set
+$\mathsf{Write}(u)$ for each event. Collection-index keys are read even when
+their collections are empty. They make absence—no certificate, pair record,
+or search trace—visible to a later insertion.
+
+**Theorem 5 (complete-diagnostic locality and graph change-completeness).** For
+fixed $(e,q,P)$ and evaluator versions, agreement on a slot's complete typed
+read projection preserves its instantiated address, diagnostic payload,
+provenance, and $K_3$ value:
+
+$$
+\mathsf{Env}(s;e,q,P)|_{\mathsf{Read}_s(\mathfrak r,i)}
+=
+\mathsf{Env}(s';e,q,P)|_{\mathsf{Read}_s(\mathfrak r,i)}
+\quad\Longrightarrow\quad
+\mathsf{Diag}_s(\mathfrak r,i)=\mathsf{Diag}_{s'}(\mathfrak r,i).
+$$
+
+Consequently,
+
+$$
+\mathsf{Write}(u)\cap\mathsf{Read}_s(\mathfrak r,i)=\varnothing
+\quad\Longrightarrow\quad
+\mathsf{Diag}_{s'}(\mathfrak r,i)=\mathsf{Diag}_s(\mathfrak r,i).
+$$
+
+The canonical graph with edges from events to written keys, keys to reading
+slots, required slots to assessment, and assessment to grant is
+change-complete: every actual change has a path from an event. Hence graph-path
+absence is sufficient for robust invariance. The converse requires
+path-realizability for the exact observable and update class; a conservative
+graph may contain an inert path.
+
+The proof is a finite case analysis over adequacy/constraint regions, fallback
+improvement, trace, the two comparison modes, and $WF$. Deterministic
+normalization ensures that equality preserves complete witness or obstacle
+payloads, rather than only their polarity. Appendix B gives the footprint table
+and proof.
+
+This theorem distinguishes the example's update paths mechanically. An
+archive-only event whose writes miss every relevant read key preserves the
+complete $M_{old}$ diagnostic. Expiry writes its current-validity and region
+indices, so preservation does not apply. Rebuttal writes a countercertificate
+index, and adding plus evaluating $M_{new}$ writes the exact evaluated-set,
+search, and pair indices used by comparison slots. Without an empty
+`PairIndex` read, inserting the first dominator record would be a database-style
+phantom: the diagnostic could change even though none of the previously extant
+member keys changed. Predicate-locking and frame-rule ideas are established
+analogies ([Eswaran et al. 1976](https://doi.org/10.1145/360363.360369);
+[O'Hearn, Reynolds, and Yang 2001](https://doi.org/10.1007/3-540-44802-0_1)).
+The theorem itself is the clause-by-clause locality result for this calculus,
+without importing either database concurrency semantics or separation-logic
+ownership.
+
+## 5. Finite Composition, Routing, and Evidence
+
+### 5.1 A checked composite is a new plan
+
+Let a finite directed acyclic plan graph have root $o$. At node $v$, an
+annotated executor returns
+
+$$
+\mathsf{Ann}_v(x)=\langle y_v,g_v,c_v\rangle,
+$$
+
+where $y_v$ is the ordinary payload, $g_v$ is a typed quantitative
+grade—including an error bound and resource map—and $c_v$ is a certificate
+term with checker identity and provenance. A constructor declares separate
+payload, grade, and certificate transformers plus its interface, scope, frame,
+and termination side conditions. The certificate transformer cannot declare
+its own output valid; acceptance comes from the mode and checker named by the
+request.
+
+**Theorem 6 (annotated execution, erasure, and license lifting).** Suppose the
+plan graph is finite and acyclic, edge types and frames match, payload and grade
+transformers are total and deterministic, primitives have accepted typed
+evidence, and every constructor has a locally sound certificate rule. Then the
+root bundle is unique, its composite certificate checks, provenance is
+preserved in topological order, and
+
+$$
+\mathsf{erase}(\mathsf{Ann}_o(x))=\mathsf{Run}_G(x).
+$$
+
+If the graph is reified as plan $e_G$, $WF(\mathfrak r)$ holds, the accepted
+root grade supports the instantiated adequacy and constraint atoms, and every
+other required atom is supported, then
+
+$$
+\mathsf{Assess}(s,e_G,q,P)=\mathsf{Granted}.
+$$
+
+The proof is topological induction: build each unique payload, transformed
+grade, and checked certificate after its predecessors, then erase the
+annotations. The second display is ordinary $WF+K_3$ assessment applied to the
+checked root claim. Structural induction, proof erasure, program logic, and
+consumer-checked proof-carrying code are established machinery; the scoped
+integration here is that formal and empirical certificate modes can feed one
+typed, defeasible license without identifying payload, bound, or evidence.
+
+For the running example, a predictor followed by a unit conversion, loss
+estimator, and router is one composed plan only after those interfaces and
+grades are propagated. Two sequential components can each have checked error
+$.06$ against a local $.10$ tolerance while their same-direction composite
+error is $.12$. Both leaf requests may be Granted while the root adequacy atom
+is Refused. Pairing certificate identifiers therefore cannot substitute for a
+root propagation rule.
+
+Grounding imposes a second condition. In a finite support derivation, every
+indegree-zero support node must be a typed accepted base, and derived rules must
+preserve their premises' provenance. For evaluator systems, assign a strict
+finite rank so each node reads only fixed exogenous inputs and completed
+lower-rank outputs.
+
+**Theorem 7 (grounded and stratified assessment).** A finite acyclic support
+derivation with typed bases grounds every supported required atom. A finite
+ranked system of total deterministic evaluators has exactly one global
+assignment of outputs, diagnostics, and assessments; if local rules preserve
+grounding, the global assignment is grounded as well.
+
+$$
+u\to v\ \text{as an evidence dependency}
+\quad\Longrightarrow\quad
+\rho(u)<\rho(v)
+\quad\Longrightarrow\quad
+\text{unique assessment by induction on }\rho.
+$$
+
+This permits an independently evaluated, versioned value-logic implementation
+to appear as an ordinary plan at a higher rank than its completed run records.
+Its same-run grant cannot be its sole evidence. A one-node acyclic “support”
+with no typed base is ungrounded; a closed pair in which each grant supports the
+other is cyclic. Equations such as $g=g$ and $g=\neg g$ are respectively
+nonunique and unsatisfiable in Boolean space, while changing to $K_3$ still
+does not choose an operator or fixed point. A cyclic extension would have to
+declare that machinery and prove its evidence bridge. Kripke–Kleene fixed-point
+semantics supplies a neighboring established pattern
+([Kripke 1975](https://doi.org/10.2307/2024634);
+[Fitting 1985](https://doi.org/10.1016/S0743-1066(85)80005-4)), not a ready-made
+semantics for these typed empirical licenses.
+
+### 5.2 Routed use exposes fallback and selected-scope risk
+
+A scientific licensed cover may overlap, but an executed router still induces
+a measurable partition. Let $\mathcal G_j$ be the event on which expert $j$ is
+selected and authorized, $\mathcal M$ the event on which an expert is selected
+outside the declared authorized/reference set, and $\mathcal B$ the explicit
+fallback event. These events partition the deployment population.
+
+**Theorem 8 (routed-risk decomposition).** For nonnegative integrable routed
+loss,
+
+$$
+R(h)=\sum_j\mu(\mathcal G_j)R_{\mathcal G_j}(\ell_j)
++\mu(\mathcal M)R_{\mathcal M}(\ell_h)
++\mu(\mathcal B)R_{\mathcal B}(\ell_F).
+$$
+
+If the three conditional terms are bounded by
+$\epsilon_j,L_M,L_F$, respectively, then
+
+$$
+R(h)\leq
+\sum_j\mu(\mathcal G_j)\epsilon_j
++L_M\mu(\mathcal M)+L_F\mu(\mathcal B).
+$$
+
+The proof splits the loss integral over the finite partition. It also shows
+why a router is a new evaluated plan: its risk depends on selected-subset loss,
+misrouting, fallback frequency, and fallback severity, rather than only on the
+licenses of its experts.
+
+In the succession example, $M_{old}$ and $M_{succ}$ may both be licensed on an
+overlap, $M_{new}$ may later be selected on a certified subregion, and the gap
+goes to $B$. A parent-domain mean does not automatically certify a selected
+subdomain. With loss $1$ on a $10\%$ subset and $0$ elsewhere, parent risk is
+$.1$ while the bad subset has risk $1$. A router that selects precisely that
+subset exposes the hidden loss. Likewise, the core fallback rule blocks an
+unlicensed expert but permits a fallback whose target loss is catastrophic.
+Theorem 8 therefore requires fallback mass and severity beside coverage; target
+safety of $B$ needs its own evidence.
+
+### 5.3 Quantitative grades propagate along paths
+
+For a finite plan DAG, let $\delta_v$ bound intrinsic error at node $v$ on the
+full reachable perturbation tube, and let $L_{u,v}$ be a certified downstream
+Lipschitz factor on edge $u\to v$. Let $W_{u,o}$ be the sum, over paths from
+$u$ to root $o$, of the products of their edge factors.
+
+**Theorem 9 (path-sensitivity certificate).** The root error satisfies
+
+$$
+e_o\leq\sum_{u\in V}W_{u,o}\delta_u.
+$$
+
+If the outer task loss is $K$-Lipschitz on the reached range, the corresponding
+two-sided risk difference is at most
+$K\sum_uW_{u,o}\delta_u$. Repeated substitution in a topological order proves
+the bound; Theorem 6 can carry the same arithmetic as the root grade and
+certificate.
+
+This result identifies the assumption missing from naive component addition.
+An upstream error $\delta$ followed by the map $y\mapsto Ky$ produces error
+$K\delta$, and a downstream certificate checked only at the nominal input need
+not hold at the perturbed input. For the composed succession plan, local bounds
+must cover the reachable tube and must be weighted by the unit converter,
+estimator, and router sensitivities. Resource grades remain separately typed:
+energy may add, latency may follow a critical path, and peak memory depends on
+schedule. These composition and routing results constrain later
+representations without selecting a neural architecture; that question begins
+in Section 6.
+
 ## 9. Related Work by Claim Boundary
 
 ### 9.1 Defeasible consequence, evidence, and succession
@@ -676,3 +1045,434 @@ behavioral reconstruction on a named distribution. Standard return semantics,
 off-support generalization, identification, mechanistic alignment, and human
 interpretation require additional assumptions and tests. The project remains
 neutral about whether an arbitrary policy has a true utility function.
+
+## Appendix A. Core Syntax and Elaboration Reference
+
+This appendix collects the exact finite core used by the proofs. It is a
+reference presentation of Section 3, rather than a second operational API.
+
+### A.1 Carriers and dependent fields
+
+The three carriers and semantic index have the following interfaces:
+
+| object | dependent data used by the core |
+|---|---|
+| $e\in E$ | versioned plan identity; $\mathsf{In}_e(q)$, $\mathsf{Exec}_e(q,x)$, output type, and frame |
+| $q\in Q$ | cases and domain; task and frame; target loss $L_q$ and risk aggregation; ordered risk space and acceptable region; fallback $F_q$ and advantage $\Delta_q$; constraints and certificate modes |
+| $s\in S$ | finite represented library $K_s$; records, evaluated set, certificates, searches, dependencies, provenance, and current-validity state |
+| $w\in W$ | target risk, target constraints, and optional target truth used only by a declared bridge or metalanguage |
+
+Changing a plan version, preprocessing rule, solver, or deployment wrapper can
+change $e$. Changing domain, task, loss, tolerance, fallback, frame, or
+constraint changes $q$. Appending an observation, correction, certificate,
+search, or model addition changes $s$. An edge $s\to s'$ preserves an
+injective embedding of historical events while permitting their current
+validity to change.
+
+A profile is the finite tuple
+
+$$
+P=(I_P,\mathsf{kind}_P,\theta_P,\mathsf{role}_P,\mathsf{Safe}_P).
+$$
+
+$I_P$ supplies slot identity; $\mathsf{kind}_P$ names a typed template;
+$\theta_P$ instantiates its parameters from $(s,e,q)$;
+$\mathsf{role}_P$ is required or report-only; and $\mathsf{Safe}_P$ selects
+required slots whose open or refuted diagnostics must be exposed. The frozen
+atom kinds are `Adeq`, `Improve`, finite families of `Constraint`, `Trace`,
+`RelUndom`, and `CertUndom`. An address contains its exact candidate, domain,
+loss, frame, criterion, evaluated set, and certificate mode whenever those
+fields are applicable.
+
+### A.2 Well-formedness, diagnostics, and assessment
+
+For $\mathfrak r=(s,e,q,P)$ and $\beta=(s,e,q)$,
+$WF(\mathfrak r)$ requires: the four components
+denote; $P$ is finite and has a required slot; $e\in K_s$; the requested plan
+is executable; output and frame interfaces match; every slot instantiates to a
+typed address; comparison addresses name an exact finite scope, set, and
+criterion; action-authorizing requests have an explicit fallback; and all
+units, constraints, and modes are meaningful. `WFDiag` records the first
+canonical failed obligation. Missing evidence occurs after $WF$ and produces
+an open diagnostic.
+
+For every instantiated required or report address, deterministic normalization
+of current records yields exactly one of
+
+$$
+\mathsf{Support}(a,\text{witnesses},\text{provenance}),\quad
+\mathsf{Open}(a,\text{obstacles},\text{provenance}),\quad
+\mathsf{Refute}(a,\text{counterwitnesses},\text{provenance}).
+$$
+
+Their constructors determine $\nu_s(e,q,a)=+,?,-$, respectively. The common
+clauses are:
+
+| atom | supported | refuted | open |
+|---|---|---|---|
+| `Adeq` or region constraint | current certified region is contained in the acceptable region | the two regions are disjoint | missing, conflicted, or boundary-crossing evidence |
+| `Improve` | $\sup U_e+\Delta_q\leq\inf U_F$ | $\inf U_e+\Delta_q>\sup U_F$ | missing or overlapping comparison |
+| `Trace` | named verifier accepts a dependency-complete trace | valid hard countertrace | missing, expired, conflicted, or unresolved trace |
+| `RelUndom` | valid exact-set search and no certified dominator | valid certified dominator | missing or invalid search after no dominator is found |
+| `CertUndom` | valid search and every relevant pair resolved non-dominating or ineligible | valid certified dominator | any unresolved relevant pair or invalid search |
+
+`Diag` is total on required and report slots. Safety projections retain the
+complete selected records, including their witnesses, obstacles, and
+provenance. For nonempty required set,
+
+$$
+\mu(\mathfrak r)=\bigwedge_{a\in\mathsf{Req}_\beta(P)}\nu_s(e,q,a),
+$$
+
+and $\mathsf{Assess}$ maps failed $WF$ to Undefined and the meaningful values
+$-,?,+$ to Refused, Withheld, and Granted.
+
+### A.3 Typed elaboration
+
+Detailed records are an elaboration of the same request. An implementation may
+represent frames, estimators, routers, proof terms, calibration records,
+resource maps, and provenance DAGs as explicit typed fields. Its compression
+back to $(s,e,q,P)$ must preserve $WF$, every required and report address, its
+$K_3$ value, and its complete transported diagnostic. Under that condition the
+elaborated and compact assessments agree. A finite plan DAG is reified as one
+$e_G$ only after its typed root payload, grade, and evidence have been
+constructed; the internal nodes remain available in its provenance and
+certificate.
+
+Object-model output $[e,q]\varphi$, internal derivation
+$\Gamma;s\vdash_{VL}J$, external metatheorem $\vdash_{meta}T(VL)$, and accepted
+certificate $s\vdash_m\kappa:\mathsf{Claim}$ remain separate through this
+elaboration. Only a mode-scoped bridge can turn the last object into its stated
+target-world conclusion.
+
+## Appendix B. Proofs and Separating Models for Theorems 1–5
+
+### B.1 Profile refinement
+
+**Proof of Theorem 1.** First prove every generating atom refinement sound for
+support. If $U\subseteq\mathsf{Acc}_1\subseteq\mathsf{Acc}_2$, the same region
+supports the second adequacy atom. If
+$\sup U_e+\Delta_1\leq\inf U_F$ and $\Delta_1\geq\Delta_2$, then
+$\sup U_e+\Delta_2\leq\inf U_F$. Constraint-region inclusion is identical to
+adequacy inclusion. A trace refinement exists only with a declared projection
+that maps every stronger-mode witness to a valid weaker-mode witness. On the
+same candidate, scope, criterion, mode, and finite evaluated set, a supported
+`CertUndom` record contains a valid search and resolves every relevant pair as
+non-dominating or ineligible; its canonical projection therefore supports
+`RelUndom`. Identity is sound, and support projections compose along
+transitivity.
+
+Suppose $P\succeq_{prof}^{\beta}Q$ and $P$ is Granted. Each required
+$b\in\mathsf{Req}_\beta(Q)$ has a required
+$a\in\mathsf{Req}_\beta(P)$ with $a\Rightarrow_A b$. Grant of $P$ supports
+$a$; atom soundness supports $b$. Hence every required $Q$ atom is supported,
+its meet is $+$, and the well-formed $Q$ request is Granted.
+
+For completeness, fix finite address set $\mathcal A$ and the instantiation
+fiber $[\beta]_{P,Q}$. Suppose $P\not\succeq_{prof}^{\beta}Q$. Some required
+$b$ of $Q$ has no required $P$ antecedent. Define
+
+$$
+D=\{c\in\mathcal A:\exists a\in\mathsf{Req}_\beta(P),\ a\Rightarrow_A c\}.
+$$
+
+$D$ is downward closed, contains every required $P$ address by identity, and
+omits $b$. Independent realizability supplies a finite state in the same fiber
+supporting exactly $D$; give every address outside $D$ an explicit open
+obstacle. The state grants $P$. It leaves $b$ open and has no refuted required
+$Q$ atom, so it withholds $Q$. Thus semantic entailment fails whenever the
+syntactic refinement fails. Together with soundness, this proves the
+equivalence. $\square$
+
+The independent-fragment condition cannot be deleted. Add a semantic law
+$a_1\wedge a_2\models b$ with no corresponding conjunctive syntactic rule.
+Then profile $\{a_1,a_2\}$ semantically entails $\{b\}$ although neither atom
+refines $b$. The fiber condition also cannot be deleted: alter $q$ or the
+evaluated-set field so one profile instantiates to a different address. The
+fixed-base separator no longer ranges over that request, and schema-wide
+completeness has not been established.
+
+Operational refinement remains separate from target factivity. Use one state
+$s$ with an accepted adequacy certificate and pair it with worlds $w_0,w_1$.
+Let target risk satisfy the acceptable region only in $w_0$. The same atom is
+supported and every profile theorem has the same result in both pairs, while
+the unqualified target claim differs. A mode bridge excludes $w_1$ only by an
+additional premise.
+
+### B.2 Continuation and stability results
+
+**Proof of Theorem 2.** A stage-local verifier receives isomorphic finite
+inputs at $n$ and $n'$, so it accepts the same certificate at both or neither.
+If it accepts one, soundness over the declared frame class implies permanent
+current stability at $n'$. The assumed descendant with a different assessment
+contradicts that implication. Hence no sound scheme accepts at the shared
+finite state. $\square$
+
+For deterministic freeze, topologically follow any finite path from $n$. At
+the base, the certificate checks $v_a(n)=k$. If the dependency projection and
+rule versions agree at one node with those at $n$, the local freeze condition
+on the next admitted event preserves them. Induction therefore gives, for
+every descendant $m$,
+
+$$
+v_a(m)=f_a(\mathsf{dep}_a(m),\mathsf{Rules}_a(m))
+=f_a(\mathsf{dep}_a(n),\mathsf{Rules}_a(n))=k.
+$$
+
+If this holds for every required atom and $WF$ is preserved, their finite meet
+and public assessment are preserved. A current formal proof without the freeze
+hypothesis is insufficient: certify normalized cost $9\leq10$, then append an
+authenticated correction showing that a unit error makes the cost $12$. The
+old derivation remains historical while its current premise lapses or is
+rebutted.
+
+For statistical stabilization, choose $N_{cov}$ after which
+$\theta\in C_i$ and $N_{diam}$ after which
+$\operatorname{diam}(C_i)<\gamma$. Set
+$N=\max(N_{cov},N_{diam})$. If $\theta<\epsilon$, then for $i\geq N$,
+
+$$
+U_i\leq\theta+\operatorname{diam}(C_i)
+<\theta+\gamma=\epsilon,
+$$
+
+so every later atom is supported. If $\theta>\epsilon$, then
+$L_i\geq\theta-\operatorname{diam}(C_i)>	heta-\gamma=\epsilon$, so every
+later atom is refuted. For finitely many required atoms, take the maximum of
+their stabilization indices and the eventual $WF$ index. At
+$\theta=\epsilon$, intervals may straddle forever, approach from the supported
+side, or alternate; shrinking diameter alone gives no conclusion.
+
+For the finite statistical-declaration boundary, suppose
+$\mathbb P_-(\tau<\infty,\delta=\text{below})>0$. This event is the countable
+union of $E_n=\{\tau=n,\delta=\text{below}\}\in\mathcal F_n$, so some $E_n$
+has positive $\mathbb P_-$ probability. Finite-prefix mutual absolute
+continuity gives $\mathbb P_+(E_n)>0$, where `below` is the wrong regime.
+Interchanging the laws proves the other direction. Thus a procedure cannot be
+uniformly zero-error and make finite positive-probability declarations on both
+correct sides in this family. This does not preclude high-confidence or
+almost-sure eventual correctness under stronger assumptions.
+
+**Proof of Theorem 4.** The `AddDom` witness supplies a descendant $m$ with a
+valid dominator and hence $\mathsf{Comp}_e(m)=-$. Since
+$\mathsf{Comp}_e(n)=+$, $m$ is a live alternative and permanent stability
+fails. Sound certified stability implies permanent stability, so no sound
+scheme certifies the positive comparison as permanent. $\square$
+
+The direction cannot be reversed into a polarity-free slogan. If a valid
+dominator $d_0$ already refutes the comparison and every continuation preserves
+that certificate, then every later comparison remains refuted even as further
+plans are added. Similarly, an indefinitely growing archive of plans
+inapplicable to $q$ can coexist with a permanently stable
+$P_{\mathrm{rely}}$ grant.
+
+### B.3 Footprints, locality, and update graphs
+
+For a fixed request skeleton and slot, the proof uses the following derived
+read families. Every row also reads the slot/address, relevant mode and verifier
+version, current-validity and correction closure, conflict/priority rule, and
+the collection index even when it is empty.
+
+| slot family | additional typed reads |
+|---|---|
+| `Adeq`, region constraint | certificate and region indices; every indexed certificate and region record |
+| `Improve` | the preceding reads for both candidate and named fallback; fallback identity; $\Delta_q$ and comparison order |
+| `Trace` | trace index; every indexed trace/countertrace and its current state |
+| `RelUndom` | exact evaluated-set index and entries; search index and records; every eligible-pair index and pair record |
+| `CertUndom` | all `RelUndom` reads plus current resolution or ineligibility of every relevant pair |
+| $WF$ | profile and slots; library membership; plan/interface; context/fallback; referenced versions, modes, units, and comparison view |
+
+An event writes every member it can change and its affected collection index.
+Thus an evidence insertion writes the certificate/region index; expiry or
+correction writes current validity and correction/index keys; a plan evaluation
+writes the exact evaluated-set entry and invalidated search view; and a pair or
+search update writes its member and index.
+
+**Proof of Theorem 5.** Equality of slot-instantiation keys first gives the
+same address. For a region atom, equality of certificate and region indices
+names the same finite records; equality of validity, correction, mode, and
+priority data gives the same deterministic normalized region and provenance.
+It is therefore missing, conflicted, contained, disjoint, or boundary-crossing
+in both states. `Improve` applies the same argument to candidate and fallback
+regions and then uses identical margin and order data. Trace equality gives the
+same accepted trace, hard countertrace, or open obstacle.
+
+For `RelUndom`, evaluated-set equality gives the same finite set. Search and
+pair indices make both present and absent possibilities equal. Normalization
+therefore finds the same valid dominators and search validity; the precedence
+valid dominator, otherwise valid search, otherwise open yields the same full
+diagnostic. `CertUndom` additionally reads every relevant pair resolution, so
+its all-resolved test agrees. Each $WF$ obligation is a deterministic query of
+the listed keys, hence both states have the same success or the same first
+canonical failure. Disjoint diagnostic constructors and deterministic
+normalization preserve payload and transported provenance, not only $K_3$.
+
+If $u:s\to s'$ has
+$\mathsf{Write}(u)\cap\mathsf{Read}_s(\mathfrak r,i)=\varnothing$, every read
+key is unchanged by the event contract, so the projection-equality result
+applies. Induction gives the finite-path frame rule with the footprint
+recomputed at each pre-state.
+
+Build the canonical graph using every reachable pre-state, with edges event to
+written key, key to reading slot, required slot to assessment, and assessment
+to grant, including $WF$ edges. If a diagnostic changes along a path, choose
+its first changing step. The contrapositive of locality gives a changed read
+key, and the event contract says that step wrote it; hence there is an
+event–key–slot path. Value, assessment, and grant changes extend the same path.
+This proves change-completeness. Path absence therefore implies invariance.
+Necessity needs path-realizability: a conservative static edge may be reachable
+in the graph even though no admitted event changes the chosen observable.
+$\square$
+
+For the phantom separator, begin with an empty pair-record collection and a
+valid exact-set search supporting `RelUndom`. If the footprint reads only
+existing members, it reads no pair key. Insert the first valid dominator pair;
+the atom becomes refuted while every previously read member is unchanged.
+Reading `PairIndex` in the empty state and requiring the insertion to write it
+restores the event–key–slot path.
+
+## Appendix C. Composition, Routing, and Grounding Proofs
+
+### C.1 Annotated execution and license lifting
+
+**Proof of Theorem 6.** Choose a topological order of the finite plan DAG. At a
+source node, totality determines $y_v$ and its declared grade transformer
+determines $g_v$. Independently accepted primitive evidence supplies $c_v$.
+The plain executor uses the same payload operation, so erasure agrees at the
+source.
+
+Assume unique checked bundles have been constructed for every predecessor of
+$v$. Type and frame agreement makes the payload transformer defined;
+determinism gives one $y_v$ and one $g_v$. The local certificate rule checks
+the canonical certificate transformer on the predecessor certificates and
+local evidence, while provenance union retains every predecessor source.
+Because the annotated and plain executors use the same payload transformer,
+erasure commutes at $v$. Induction reaches the root and proves uniqueness,
+checking, ordered provenance, and proof erasure.
+
+For license lifting, the accepted root certificate and acceptable grade support
+the composite adequacy and named constraint atoms. Every other required atom is
+supported by hypothesis. Their finite meet is $+$, and $WF$ excludes
+Undefined; hence the root request is Granted. This argument consumes the
+composite diagnostic. It never infers a root grant by meeting component grants.
+$\square$
+
+The $.06+$.06$ separator is a complete countermodel to unconditional
+composition. Give two sequential scalar components independently checked local
+error regions bounded by $.06$ and local tolerances $.10$. Let their errors
+have the same sign and let the parent grade rule be addition. Each local
+adequacy atom is supported, but root error $.12$ is disjoint from the parent
+acceptable region $[0,.10]$ and its adequacy atom is refuted. No certificate
+transformer can validly certify the false parent bound.
+
+The path-sensitivity constructor is one instance of Theorem 6. At node $v$ use
+
+$$
+g_v:\quad b_v=\delta_v+\sum_{u\in\operatorname{pred}(v)}L_{u,v}b_u,
+$$
+
+and let its certificate record the local tube, metric, interface, predecessor
+certificates, and arithmetic step. Topological construction yields the checked
+root path bound; resource maps propagate in parallel under their declared
+dimension-specific operators.
+
+### C.2 Grounding and evaluator ranks
+
+**Proof of Theorem 7.** Topologically order the finite support derivation. An
+indegree-zero support node is a typed base by hypothesis. At a derived node,
+every premise occurs earlier and, by induction, has a path from a typed base.
+Adding the declared rule edge gives a base-to-conclusion path; provenance union
+preserves the source and rule record. Apply this argument at every supported
+required atom.
+
+For the ranked system, every rank-zero evaluator reads only fixed exogenous
+inputs, so totality and determinism give a unique output, diagnostic, and
+assessment. Assume uniqueness below rank $k$. Each rank-$k$ evaluator reads
+only those unique lower-rank values and fixed inputs, so its total deterministic
+function has one output. Finite induction reaches the maximum rank. Run the
+grounding induction simultaneously: rank-zero support has typed exogenous
+bases, and each higher rank preserves their provenance together with its local
+sources. $\square$
+
+Acyclicity alone is insufficient: a zero-premise node labelled `supported`
+without a typed base is not a derivation from evidence. Grounding alone also
+does not establish target factivity. Pair the same grounded meta-state and
+system grant with two worlds, one where held-out assumptions transfer and one
+with an unrecorded shift. The assessment is the same and target risk differs.
+Only a mode-scoped bridge rules out the second pair.
+
+Closed mutual support is excluded from the DAG fragment. For future cyclic
+work, a declared ordered space and immediate-consequence operator could admit
+one or more fixed points, but existence, selection, and target soundness would
+be new obligations. The equations $g=g$ and $g=\neg g$ show why the ordinary
+finite core inherits no unique result merely from being written recursively.
+
+### C.3 Routed-risk identity and assumption-finding cases
+
+**Proof of Theorem 8.** The authorized-selection events
+$\mathcal G_1,\ldots,\mathcal G_m$, misroute event $\mathcal M$, and fallback
+event $\mathcal B$ form a finite measurable partition of the deployment space.
+Split the integral of routed loss over this partition:
+
+$$
+\int\ell_h\,d\mu=
+\sum_j\int_{\mathcal G_j}\ell_j\,d\mu
++\int_{\mathcal M}\ell_h\,d\mu
++\int_{\mathcal B}\ell_F\,d\mu.
+$$
+
+On a positive-measure event, each integral is its mass times its conditional
+mean; define a zero-measure contribution as zero without assigning a
+conditional mean. Substitution gives the exact decomposition. Replacing the
+conditional risks by $\epsilon_j,L_M,L_F$ gives the inequality. $\square$
+
+If $\mathcal G_j\subseteq C_j$ and only a whole-cell certificate
+$R_{C_j}(\ell_j)\leq\epsilon_j$ is available, nonnegative loss gives
+
+$$
+\int_{\mathcal G_j}\ell_j,d\mu
+\leq\int_{C_j}\ell_j,d\mu
+\leq\mu(C_j)\epsilon_j.
+$$
+
+The coefficient cannot generally be replaced by
+$\mu(\mathcal G_j)$. Split one cell into equal halves with losses $0$ and $1$,
+and select the expert only on the high-loss half. Whole-cell risk is $.5$ and
+the actual selected contribution is $.5$, while the naive rescaling gives
+$.25$. The broader parent-average separator takes loss $1$ on a set of mass
+$.1$ and $0$ elsewhere: parent risk is $.1$ and conditional risk on the bad set
+is $1$.
+
+Fallback frequency alone is likewise insufficient. For any small $p>0$, put
+fallback or misroute mass $p$ on cases with loss $1/p^2$; its risk contribution
+is $1/p$. The explicit gap ensures the selector does not execute an unlicensed
+expert, while a bound on deployed task risk still requires a severity or tail
+condition. Omitting an uncovered set from all partition cells simply drops its
+loss and invalidates the identity.
+
+### C.4 Path sensitivity
+
+**Proof of Theorem 9.** At every node, triangle inequality, the intrinsic error
+bound on the reachable perturbation tube, and coordinatewise Lipschitzness give
+
+$$
+e_v\leq\delta_v+
+\sum_{u\in\operatorname{pred}(v)}L_{u,v}e_u.
+$$
+
+Repeatedly substitute this recurrence in topological order. Each intrinsic
+error $\delta_u$ reaches root $o$ once for every directed path from $u$ to
+$o$, multiplied by the edge factors along that path. Finiteness and acyclicity
+make the expansion finite, and collecting coefficients yields
+$e_o\leq\sum_uW_{u,o}\delta_u$. If outer loss is $K$-Lipschitz, apply its
+pointwise inequality and integrate to obtain the two-sided risk-difference
+bound. $\square$
+
+Two assumptions are necessary. If the downstream ideal map is $y\mapsto Ky$,
+an upstream error $\delta$ becomes $K\delta$, so unweighted addition fails.
+If a downstream implementation is certified only at nominal input $0$ but an
+upstream error moves the input to $\delta>0$, the downstream error at
+$\delta$ can be arbitrary. Requiring intrinsic and Lipschitz bounds on the
+entire reachable perturbation tube blocks this case. Exact bridge-cycle and
+resource-accounting results remain in the repository supplement; neither is
+needed to derive the main theorem spine.
