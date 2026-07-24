@@ -37,7 +37,7 @@ Checkpoints are roadmap-review tasks, not ceremonial status updates. At each che
 
 Checkpoint edits apply prospectively. They may add follow-up work for a completed result, but they do not silently mark completed work undone or rewrite its history. Prefer stable checkpoint labels and suffixed new tasks over renumbering tasks that are already referenced elsewhere.
 
-**Next task: Task 31 — Perform the mathematical and citation audit.**
+**Next task: Task 31A — Perform the reader and narrative audit.**
 
 ## Project question
 
@@ -719,9 +719,27 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   Task 30 patch; the WSL native/Python preflight also passes. Public CI remains
   to be observed after the user pushes the local commit.
 
-- [ ] **Task 31 — Perform the mathematical and citation audit.**
+- [x] **Task 31 — Perform the mathematical and citation audit.**
 
   Check every symbol, definition, theorem dependency, proof, numerical claim, and citation. Verify compact/elaborated signatures; Task 14B footprints and phantom/frame positioning; Task 14C certified constructors, proof erasure, grade propagation, license lifting, ground sources, evaluator ranks, and Kripke–Fitting boundary; criterion/estimator/training-loss/certificate separation; and fixed-point claims. Audit calibration-record binding, blocked split roles, guarantee levels, query families, tags, bits versus width, inclusive boundaries, dual-use joint sufficiency and scale covariance, Task 17's consumer-relative minimality, proof/checker versions, empirical-versus-deductive evidence, universal approximation, and architecture comparisons. For Task 22B, rederive the raw oracle `2 rho` action-gap bound, its event-mass certificate corollary, the generic conservative `4 rho` sufficient condition, tie/singleton cases, harness accounting, `Q/V` variants, stochastic boundary, and pointwise/held-out/trajectory language; confirm every bridge citation is primary and that the exact existence claim is neither inflated nor categorically discarded. Recompute the `F35/F35a--c/F36` wording and intervals, ensure CE superiority is not called confirmatory, check that threshold-conditioned transfer is not described as invariant-region reuse, preserve the corrected C21 mechanism scope, and verify the C20 restored hash chain from a clean checkout. Check the actual public CI state after the next authorized push. Ensure no reason taxonomy or record schema is primitive without necessity; classify results honestly and confirm three paper-carrying clusters survive. Require primary sources or repository proof/experiment and authoritative physics. Optionally add the current ReLU depth-lower-bound frontier only if it sharpens a claim actually retained. Update the ledger and propagate every `X1` impact into `paper.md`; Task 33 must carry the surviving impacts into the later Substack adaptation.
+
+  Completed 2026-07-24. The complete disposition and recomputation record is
+  [`notes/mathematical_citation_audit.md`](notes/mathematical_citation_audit.md).
+  All four intended formal clusters survive. The audit rederived the profile,
+  continuation, locality, proof-plan, representation, proper-score, and
+  policy/value results; preserved the finite encoder-image existence claim;
+  recomputed the full `F35a--c/F36` record; and matched the eight registered
+  C20 hashes. It repaired report/task-risk and quotient/library notation, made
+  the root empty-path coefficient explicit, corrected three malformed formulas,
+  repaired Markdown/publisher citation destinations, and added authoritative
+  Caltech/CERN support for the physics motivation without turning expected
+  supersession into a theorem premise. The claim ledger now uses explicit `O1`
+  status for open or excluded work and contains no live
+  `U0/C0/L0/R0/T0` evidence cells. All 177 checks and the WSL native/Python
+  preflight pass in the workspace and a clean archive with the Task 31 patch.
+  Public CI for pushed Task 30 head `47b069e...` is green in
+  [run 30119108304](https://github.com/TristanMiano/value_logic/actions/runs/30119108304);
+  Task 31 CI awaits the user's push.
 
 - [ ] **Task 31A — Perform the reader and narrative audit.**
 

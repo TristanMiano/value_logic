@@ -1,8 +1,8 @@
 # Literature Map and Citation Audit
 
-Status: Task 6 research map, amended through Task 24
+Status: Task 6 research map, amended through Task 31
 
-Date: 2026-07-10; Task 12A amendment 2026-07-12; Tasks 23--24 amendments 2026-07-18
+Date: 2026-07-10; Task 12A amendment 2026-07-12; Tasks 23--24 amendment 2026-07-18; Task 31 amendment 2026-07-24
 
 Bibliography: [`references.bib`](../references.bib)
 
@@ -123,6 +123,23 @@ It does not establish that scientific theories literally form a differential-geo
 ### Candidate worked examples
 
 The literature repeatedly uses special relativity/Newtonian mechanics, wave/geometrical optics, and quantum/classical limits. Later examples must state the parameter, limiting operation, observable, norm/loss, and range over which the approximation is controlled. “Theory A reduces to theory B” is too compressed for the license calculus.
+
+### Authoritative physics check for the public motivation
+
+- `FeynmanLecturesNonrelativistic` — the official Caltech text explicitly
+  derives the familiar Newtonian momentum and force laws as the
+  nonrelativistic, low-velocity approximation. **Core factual support** for
+  restricted retention of Newtonian mechanics; it does not by itself quantify
+  every engineering domain or prove the philosophical thesis.
+- `CERNStandardModel` — CERN describes the Standard Model as extensively
+  tested within its scope while incomplete, including its omission of gravity.
+  **Core factual support** for present incompleteness; it does not establish
+  that a particular successor will arrive or that the succession chain is
+  endless.
+
+These are the authoritative sources used in the introduction. The expectation
+that current frameworks will be superseded remains attributed philosophical
+motivation rather than an empirical premise of the theorems.
 
 ## 5. Preference and decision logic
 

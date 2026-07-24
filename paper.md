@@ -33,6 +33,16 @@ descriptions: we expect future theories to expose limits that we do not yet
 know. We do not know when this will happen, or even whether the chain of
 supersession ends.
 
+The physical examples have a narrower evidential basis than that expectation.
+The nonrelativistic, low-velocity approximation recovers the familiar
+Newtonian momentum and force laws ([The Feynman Lectures on
+Physics](https://www.feynmanlectures.caltech.edu/TIPS_02.html)). CERN describes
+the Standard Model as both extensively tested within its domain and incomplete,
+including because it does not incorporate gravity ([CERN, “The Standard
+Model”](https://home.cern/science/physics/standard-model/)). These sources
+support restricted retention and present incompleteness. They do not establish
+that every current theory must have a successor.
+
 The continued use of Newtonian models supplies the link from that fallibilist
 motivation to value. A successor may be more general or more accurate while
 also requiring different measurements, calculations, expertise, or operating
@@ -855,7 +865,7 @@ does not choose an operator or fixed point. A cyclic extension would have to
 declare that machinery and prove its evidence bridge. Kripke–Kleene fixed-point
 semantics supplies a neighboring established pattern
 ([Kripke 1975](https://doi.org/10.2307/2024634);
-[Fitting 1985](https://doi.org/10.1016/S0743-1066(85)80005-4)), not a ready-made
+[Fitting 1985](https://doi.org/10.1016/S0743-1066%2885%2980005-4)), not a ready-made
 semantics for these typed empirical licenses.
 
 ### 5.2 Routed use exposes fallback and selected-scope risk
@@ -904,7 +914,8 @@ safety of $B$ needs its own evidence.
 For a finite plan DAG, let $\delta_v$ bound intrinsic error at node $v$ on the
 full reachable perturbation tube, and let $L_{u,v}$ be a certified downstream
 Lipschitz factor on edge $u\to v$. Let $W_{u,o}$ be the sum, over paths from
-$u$ to root $o$, of the products of their edge factors.
+$u$ to root $o$, of the products of their edge factors, with
+$W_{o,o}=1$ for the empty path and $W_{u,o}=0$ when no such path exists.
 
 **Theorem 9 (path-sensitivity certificate).** The root error satisfies
 
@@ -1419,25 +1430,25 @@ A harness that secretly looks up $\pi$ makes every scalar appear sufficient
 while storing the behavioral information outside the value.
 
 A second, standard information-theoretic result gives a narrower reason to
-study semantic reports. Let $J$ be a pre-outcome report, $Y$ a held-out
-outcome, and $N$ declared nuisance context. If a predictor using $(J,N)$ beats
+study semantic reports. Let $R$ be a pre-outcome report, $Y$ a held-out
+outcome, and $N$ declared nuisance context. If a predictor using $(R,N)$ beats
 the true $N$-conditioned Bayes predictor in population log loss by
 $\delta>0$ nats, then
 
 $$
-I(J;Y\mid N)
+I(R;Y\mid N)
 =\delta+
 \mathbb E\,\mathsf{KL}\!\left(
-P(Y\mid J,N)\,\|\,q(Y\mid J,N)\right)
+P(Y\mid R,N)\,\|\,q(Y\mid R,N)\right)
 \geq\delta.
 $$
 
-If $K$ groups latent tasks with the same conditional outcome law and
-$J\perp Y\mid(K,N)$, data processing also gives
-$I(J;K\mid N)\geq I(J;Y\mid N)$. The result identifies only this
+If $\bar Z$ groups latent tasks with the same conditional outcome law and
+$R\perp Y\mid(\bar Z,N)$, data processing also gives
+$I(R;\bar Z\mid N)\geq I(R;Y\mid N)$. The result identifies only this
 outcome-relevant quotient. Direct leakage shows why mediation and lineage are
 necessary: take an outcome bit $Y$ independent of a constant task and set
-$J=Y$; prediction is perfect although $J$ contains no task structure.
+$R=Y$; prediction is perfect although $R$ contains no task structure.
 
 Interpretability is therefore recorded as seven separate evidence axes:
 behavioral fidelity, value fidelity, outcome/task information, domain
@@ -1457,7 +1468,7 @@ AGM belief revision formalizes contraction and revision of deductively closed
 belief sets ([Alchourrón, Gärdenfors, and Makinson
 1985](https://doi.org/10.2307/2274239)), while preferential and cumulative
 logics characterize disciplined nonmonotonic consequence ([Kraus, Lehmann, and
-Magidor 1990](https://doi.org/10.1016/0004-3702(90)90101-5)). Value logic shares
+Magidor 1990](https://doi.org/10.1016/0004-3702%2890%2990101-5)). Value logic shares
 their concern with conclusions that survive some updates and fail after others.
 Its output is instead a typed status for an empirical use request carrying
 domain, loss, evidence, fallback, and provenance. Registry retention is also
@@ -1474,7 +1485,7 @@ explicit, mode-scoped evidence-to-world bridge; the finite-stage assessment is
 usable operationally under that bridge.
 
 Formal learning in the limit permits stabilization without a known final
-arrival ([Gold 1967](https://doi.org/10.1016/S0019-9958(67)91165-5); [Kelly
+arrival ([Gold 1967](https://doi.org/10.1016/S0019-9958%2867%2991165-5); [Kelly
 1996](https://doi.org/10.1093/oso/9780195091953.001.0001)). This helps separate
 eventual stabilization from a present certificate of permanence. Structural
 accounts of scientific theories and intertheory relations likewise motivate
@@ -1540,7 +1551,8 @@ license by itself.
 Finite feed-forward ReLU networks compute continuous piecewise-affine maps, and
 finite CPWL functions admit exact ReLU realizations under the cited conventions
 ([Arora et al. 2018](https://openreview.net/forum?id=B1J_rgWRW); [He et al.
-2020](https://doi.org/10.4208/jcm.1901-m2018-0160)). Those representation facts
+2020](https://computmath.cjoe.ac.cn/jcm/EN/10.4208/jcm.1901-m2018-0160)).
+Those representation facts
 are inputs to the reference construction. The paper's application is the typed
 factorization among learned statistics, exact states, diagnostics, masks,
 registry, and fallback, together with explicit seam and boundary conditions.
@@ -1933,7 +1945,7 @@ U_i\leq\theta+\operatorname{diam}(C_i)
 $$
 
 so every later atom is supported. If $\theta>\epsilon$, then
-$L_i\geq\theta-\operatorname{diam}(C_i)>	heta-\gamma=\epsilon$, so every
+$L_i\geq\theta-\operatorname{diam}(C_i)>\theta-\gamma=\epsilon$, so every
 later atom is refuted. For finitely many required atoms, take the maximum of
 their stabilization indices and the eventual $WF$ index. At
 $\theta=\epsilon$, intervals may straddle forever, approach from the supported
@@ -2126,8 +2138,8 @@ If $\mathcal G_j\subseteq C_j$ and only a whole-cell certificate
 $R_{C_j}(\ell_j)\leq\epsilon_j$ is available, nonnegative loss gives
 
 $$
-\int_{\mathcal G_j}\ell_j,d\mu
-\leq\int_{C_j}\ell_j,d\mu
+\int_{\mathcal G_j}\ell_j\,d\mu
+\leq\int_{C_j}\ell_j\,d\mu
 \leq\mu(C_j)\epsilon_j.
 $$
 
@@ -2159,7 +2171,8 @@ $$
 Repeatedly substitute this recurrence in topological order. Each intrinsic
 error $\delta_u$ reaches root $o$ once for every directed path from $u$ to
 $o$, multiplied by the edge factors along that path. Finiteness and acyclicity
-make the expansion finite, and collecting coefficients yields
+make the expansion finite. Taking the root's empty-path coefficient to be
+$W_{o,o}=1$ and absent-path coefficients to be zero, collecting terms yields
 $e_o\leq\sum_uW_{u,o}\delta_u$. If outer loss is $K$-Lipschitz, apply its
 pointwise inequality and integrate to obtain the two-sided risk-difference
 bound. $\square$
@@ -3082,52 +3095,53 @@ investigate the existence or recovery of a uniquely true utility.
 
 ### F.4 Proper-score information and the task quotient
 
-Let $J$ be a pre-outcome report, $Y$ a finite held-out outcome, and $N$ the
+Let $R$ be a pre-outcome report, $Y$ a finite held-out outcome, and $N$ the
 declared nuisance context. Write
 
 $$
 p_N=P(Y\in\cdot\mid N),\qquad
-p_{J,N}=P(Y\in\cdot\mid J,N),
+p_{R,N}=P(Y\in\cdot\mid R,N),
 $$
 
-and let $q_{J,N}$ be the predictor actually issued from $(J,N)$. Under log
-loss, the nuisance Bayes risk and judge risk are
+and let $q_{R,N}$ be the predictor actually issued from $(R,N)$. Under log
+loss, the nuisance Bayes risk and report-based risk are
 
 $$
-R_N=\mathbb E[-\log p_N(Y)],\qquad
-R_q=\mathbb E[-\log q_{J,N}(Y)].
+\mathcal L_N=\mathbb E[-\log p_N(Y)],\qquad
+\mathcal L_q=\mathbb E[-\log q_{R,N}(Y)].
 $$
 
-Conditioning on $(J,N)$ gives
+Conditioning on $(R,N)$ gives
 
 $$
-R_q=
-H(Y\mid J,N)+
-\mathbb E\,\mathsf{KL}(p_{J,N}\|q_{J,N}),
+\mathcal L_q=
+H(Y\mid R,N)+
+\mathbb E\,\mathsf{KL}(p_{R,N}\|q_{R,N}),
 $$
 
-while $R_N=H(Y\mid N)$. Since
-$I(J;Y\mid N)=H(Y\mid N)-H(Y\mid J,N)$,
+while $\mathcal L_N=H(Y\mid N)$. Since
+$I(R;Y\mid N)=H(Y\mid N)-H(Y\mid R,N)$,
 
 $$
-R_N-R_q=
-I(J;Y\mid N)-
-\mathbb E\,\mathsf{KL}(p_{J,N}\|q_{J,N}).
+\mathcal L_N-\mathcal L_q=
+I(R;Y\mid N)-
+\mathbb E\,\mathsf{KL}(p_{R,N}\|q_{R,N}).
 $$
 
 Rearranging proves the $\delta$-nat identity in Section 8. The true
 nuisance-conditioned Bayes baseline is load-bearing. Against an arbitrary
-$N$-measurable comparator $b_N$ with regret
+$N$-measurable comparator $b_N$, let
+$\mathcal L_b=\mathbb E[-\log b_N(Y)]$ and define its regret by
 
 $$
 \mathsf{Regret}_N(b)
 =\mathbb E\,\mathsf{KL}(p_N\|b_N),
 $$
 
-a population improvement $\delta_b=R_b-R_q$ gives only
+a population improvement $\delta_b=\mathcal L_b-\mathcal L_q$ gives only
 
 $$
-I(J;Y\mid N)\geq
+I(R;Y\mid N)\geq
 \delta_b-\mathsf{Regret}_N(b).
 $$
 
@@ -3144,14 +3158,15 @@ z\sim_n z'
 P(Y\mid Z=z,N=n)=P(Y\mid Z=z',N=n).
 $$
 
-Let $K=k_N(Z)$ denote the equivalence-class index, or the shared conditional
-outcome probability vector. Assume $J\perp Y\mid(Z,N)$. Conditioning on one
-$(K,N)$ class and summing over its $Z$-members shows that every member has the
-same outcome law, hence $J\perp Y\mid(K,N)$. The Markov chain
-$J-(K,N)-Y$ conditional on $N$ then gives
+Let $\bar Z=k_N(Z)$ denote the equivalence-class index, or the shared
+conditional outcome probability vector. Assume $R\perp Y\mid(Z,N)$.
+Conditioning on one $(\bar Z,N)$ class and summing over its $Z$-members shows
+that every member has the same outcome law, hence
+$R\perp Y\mid(\bar Z,N)$. The Markov chain
+$R-(\bar Z,N)-Y$ conditional on $N$ then gives
 
 $$
-I(J;K\mid N)\geq I(J;Y\mid N)
+I(R;\bar Z\mid N)\geq I(R;Y\mid N)
 $$
 
 by data processing. This transfers outcome information only to distinctions
@@ -3159,27 +3174,27 @@ visible in the chosen outcome law.
 
 Three countermodels delimit the conclusion.
 
-- **Misspecified baseline.** If $Y$ is a fair bit, $J$ is independent noise,
+- **Misspecified baseline.** If $Y$ is a fair bit, $R$ is independent noise,
   and a nuisance comparator always assigns probability $.9$ to zero, the
-  uninformative fair predictor using $J$ improves log loss over that comparator
-  while $I(J;Y)=0$. Comparator regret explains the apparent gain.
+  uninformative fair predictor using $R$ improves log loss over that comparator
+  while $I(R;Y)=0$. Comparator regret explains the apparent gain.
 - **Direct leakage.** Let the task quotient be constant and set the leaked
-  report $J=Y$. Its prediction can be perfect while it carries no task
-  distinction. Proper lineage would classify $J$ as post-outcome leakage; the
+  report $R=Y$. Its prediction can be perfect while it carries no task
+  distinction. Proper lineage would classify $R$ as post-outcome leakage; the
   quotient mediation condition also fails to support a task-information claim.
-- **Duplicated task labels.** Let a raw task label be $(K,U)$ where $U$ is an
-  independent duplicate index and outcomes depend only on $K$. No outcome
+- **Duplicated task labels.** Let a raw task label be $(\bar Z,U)$ where $U$ is
+  an independent duplicate index and outcomes depend only on $\bar Z$. No outcome
   evidence recovers $U$. The quotient removes exactly this unidentifiable
   distinction.
 
-For recursion, let $H_{m-1}=(J_0,\ldots,J_{m-1})$. The incremental Bayes
-log-loss gain from adding $J_m$ is
+For recursion, let $H_{m-1}=(R_0,\ldots,R_{m-1})$. The incremental Bayes
+log-loss gain from adding $R_m$ is
 
 $$
-I(J_m;Y\mid N,H_{m-1}).
+I(R_m;Y\mid N,H_{m-1}).
 $$
 
-If $J_m$ merely copies an earlier report, this quantity is zero even when
+If $R_m$ merely copies an earlier report, this quantity is zero even when
 agreement is perfect. Recursive judgment can add evidence only when it improves
 prediction beyond the full prior-report baseline under the same lineage and
 mediation requirements.
