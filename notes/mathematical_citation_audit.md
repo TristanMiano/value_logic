@@ -379,7 +379,7 @@ and cyclic fixed-point semantics. None is needed to support the present paper.
 - Clean archive: the Task 31 patch is applied to an archive of the parent
   commit, all 177 checks pass there, the preflight passes, and the eight
   registered artifact hashes match the table above.
-- Public CI for the pushed Task 30 parent commit
-  `47b069e4429d08181a1b72efd74f42f1f3065932` completed successfully on
-  2026-07-24. Task 31 is intentionally left as a local commit for the user to
-  push; its own public CI is therefore pending that push.
+- Public CI for the pushed Task 31 commit
+  `ca15a8390dc5fcffee5767a7a7aa9e8e4e954bc2` completed successfully on
+  2026-07-24 in
+  [run 30121757293](https://github.com/TristanMiano/value_logic/actions/runs/30121757293).

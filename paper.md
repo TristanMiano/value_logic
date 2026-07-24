@@ -33,36 +33,29 @@ descriptions: we expect future theories to expose limits that we do not yet
 know. We do not know when this will happen, or even whether the chain of
 supersession ends.
 
-The physical examples have a narrower evidential basis than that expectation.
-The nonrelativistic, low-velocity approximation recovers the familiar
-Newtonian momentum and force laws ([The Feynman Lectures on
-Physics](https://www.feynmanlectures.caltech.edu/TIPS_02.html)). CERN describes
-the Standard Model as both extensively tested within its domain and incomplete,
-including because it does not incorporate gravity ([CERN, “The Standard
-Model”](https://home.cern/science/physics/standard-model/)). These sources
-support restricted retention and present incompleteness. They do not establish
-that every current theory must have a successor.
+The physical evidence is narrower than that philosophical expectation. The
+nonrelativistic, low-velocity approximation recovers familiar Newtonian
+momentum and force laws ([The Feynman Lectures on
+Physics](https://www.feynmanlectures.caltech.edu/TIPS_02.html)), while CERN
+describes the Standard Model as extensively tested but incomplete, including
+because it omits gravity ([CERN, “The Standard
+Model”](https://home.cern/science/physics/standard-model/)). This supports
+restricted retention and present incompleteness; it does not prove that every
+current theory must have a successor.
 
-The continued use of Newtonian models supplies the link from that fallibilist
-motivation to value. A successor may be more general or more accurate while
-also requiring different measurements, calculations, expertise, or operating
-costs. On a restricted domain, the older model may already keep the relevant
-error below tolerance and may be easier to compute, inspect, or deploy. The
-successor can therefore improve our account of the world without dominating
-every bounded use. In this paper, **pragmatic value** is this task-relative
-comparison: how well reliance serves a stated purpose under a named loss,
-domain, and cost, relative to a successor, fallback, or other available plan.
-The calculus does not define truth in terms of utility. It asks which reliance
-is warranted while final truth remains unsettled. A model's pragmatic value
-can survive the loss of an unrestricted truth claim, which is why supersession
-naturally leads to a logic of licensed use.
+Continued Newtonian use links that fallibilist motivation to value. A more
+general or accurate successor may require different measurements, calculation,
+expertise, or cost, while an older model already meets a restricted tolerance
+and is easier to inspect or deploy. **Pragmatic value** here is task-relative:
+how well reliance serves a stated purpose under a named loss, domain, and cost,
+compared with a successor, fallback, or available plan. This does not define
+truth by utility. Because such value can survive an unrestricted truth claim,
+supersession leads naturally to licensed use.
 
-That expectation is the paper's philosophical motivation, rather than a
-premise proved by its formal results. It creates a practical problem before a
-final verdict is available. A successor can restrict the range in which an
-older model is dependable while leaving ordinary uses of that model intact.
-Meanwhile, an agent with finite evidence, computation, and a finite library
-must decide what to use now. The motivating question is therefore:
+This expectation motivates the paper; it is not a premise proved below. The
+practical problem arises before any final verdict: a successor can restrict an
+older model's dependable range while a bounded agent must still decide what to
+use now. The motivating question is:
 
 > Can a bounded agent represent present permission to rely on a fallible model,
 > preserve the reasons and limits of that permission, and revise it as evidence
@@ -89,16 +82,12 @@ $\epsilon_B(D)=J(B,D)-\Delta$. Beating that ceiling and satisfying an absolute
 adequacy constraint are separate requirements; a poor fallback can be easy to
 beat while the candidate remains unsuitable for use.
 
-The entity called a “model” is also relative to the operation being assessed.
-A single library entry may be an equation, a fitted predictor, or a finite
-plan that composes models, translations, estimators, and a router. We retain
-the internal structure when its errors and provenance matter, while permitting
-the complete plan to be assessed as one use candidate. Such a plan can return
-a payload, a quantitative grade or bound, and a certificate/provenance record.
-The task's target loss, a learned estimator of that loss, and the optimizer's
-training objective are typed separately. This permits finite, well-founded
-recursive evaluation without postulating one universal unmodeled loss at the
-end of every inquiry.
+The “model” being assessed may be an equation, fitted predictor, or finite
+plan composing models, translations, estimators, and a router. Its internal
+structure remains visible for error and provenance, while the complete plan
+can be assessed as one candidate. Payload, quantitative grade, and evidence
+remain separate, as do the task loss, an estimator of that loss, and the
+optimizer's training objective.
 
 The paper makes four formal contributions:
 
@@ -155,23 +144,17 @@ also was not an architecture comparison. ReLU is one analytically explicit
 reference witness; the architecture-neutral interface admits other
 realizations that preserve the same typed obligations.
 
-An optional motivation concerns black-box policies. A value-like,
-environment-relative surrogate is a promising high-level semantic view when
-complete transparency is unavailable. A finite encoder-image existence result
-and a conditional behavioral-reconstruction theorem make this bridge precise
-at bounded scopes. The project does not investigate whether arbitrary policies
-possess true utility functions, and it makes no claim that a surrogate recovers
-true utility. Section 8 will keep representational existence, standard return
-semantics, practical reconstruction, mechanism, and human interpretation as
-separate questions.
+For the optional black-box-policy motivation, a value-like,
+environment-relative surrogate may provide a high-level semantic view. Finite
+encoder-image existence and conditional behavioral reconstruction make a
+bounded bridge; they do not address whether true utility exists or is
+recovered. Section 8 separates representation, return semantics, practical
+reconstruction, mechanism, and human interpretation.
 
-Section 2 develops one succession decision and the origin of its tolerances.
-Sections 3–5 introduce the finite calculus, continuation and update results,
-and certificate-carrying composition. Sections 6–7 give the representation and
-learning interfaces together with the frozen evidence. Section 8 presents the
-optional policy/value motivation. Section 9 locates the claims among adjacent
-literatures, and Sections 10–11 discuss the resulting boundaries and return to
-the practical question.
+Section 2 carries one succession decision through the paper. Sections 3–6
+develop the calculus, revision results, composition rules, and representation;
+Section 7 tests one implementation. Sections 8–11 give the optional
+policy/value bridge, neighboring work, limitations, and conclusion.
 
 ## 2. One Succession Decision
 
@@ -308,6 +291,11 @@ paper's formal semantics meets its reference neural realization.
 
 ## 3. A Compact Finite-Stage License Calculus
 
+What must be recorded for “use this model here” to be a checkable, revisable
+judgment? The answer is a small operational request plus typed evidence and
+diagnostics; detailed implementation records elaborate that request without
+changing its meaning.
+
 ### 3.1 Requests and their three operational carriers
 
 The shorthand $\Pi(M,D,\epsilon)$ has now done its motivational work. Its
@@ -319,16 +307,13 @@ Q\quad\text{reliance contexts},\qquad
 S\quad\text{finite epistemic states}.
 $$
 
-An element $e\in E$ is a versioned executable plan: a predictor, equation set,
-simulator, controller, or finite composition with a fixed interface. An
-element $q\in Q$ packages the use question, including the typed domain $D_q$,
-task, frame, target loss $L_q$, risk aggregation, acceptable region,
-constraints, fallback $F_q$, required fallback advantage $\Delta_q$, and
-certificate modes. An element $s\in S$ contains the agent's finite represented
-library $K_s\subseteq_{\mathrm{fin}}E$, current records, evaluations, certificates,
-searches, dependencies, and provenance. A transition $s\to s'$ appends a
-declared event while preserving its history; a correction can invalidate an
-old record's current force without erasing its occurrence.
+An element $e\in E$ is a versioned executable plan. A context $q\in Q$ fixes
+the typed domain $D_q$, task, frame, target loss $L_q$, aggregation, acceptable
+region, constraints, fallback $F_q$, required advantage $\Delta_q$, and
+certificate modes. A state $s\in S$ contains the finite represented library
+$K_s\subseteq_{\mathrm{fin}}E$ and its current records and provenance. A
+transition appends an event; a correction can end an old record's current force
+without erasing its occurrence.
 
 Worlds $w\in W$ are semantic indices rather than operational inputs. They
 interpret target quantities such as population risk that need not be
@@ -342,48 +327,26 @@ where $P$ is finite syntax selecting the requirements that matter. The
 compressed expression $\Pi(M,D,\epsilon)$ is thus replaced by a request whose
 loss, tolerance, fallback, evidence mode, and provenance are explicit.
 
-A finite composed plan may expose an annotated result
-$(\text{payload},\text{grade},\text{evidence})$. The payload performs the task;
-the grade is a typed bound or resource quantity; and the evidence component
-names the certificate, checker, scope, and provenance that warrant use of the
-grade. This is only an interface here. Component successes do not by
-themselves certify their composition; Section 5 will require a checked root
-certificate.
+A composed plan may separate what it computes, a typed quantitative grade, and
+the evidence supporting that grade. Component success does not certify the
+root; Section 5 supplies that rule. The target criterion $L_q$, an estimator
+of it, and the optimizer's objective are also distinct.
 
-The target criterion $L_q$, a learned estimator of $L_q$, and the optimizer's
-training objective are distinct typed objects. A fallible estimator can itself
-be represented by a plan and assessed through a higher-order request. The
-ordinary core admits finite, well-founded towers of such requests. A genuine
-self-referential cycle needs a separately specified fixed-point semantics.
-
-Four judgments that can otherwise be called a “theorem” or “proof” remain
-distinct:
-
-| form | status |
-|---|---|
-| $[e,q]\varphi$ | an object-model output produced by plan $e$ for context $q$ |
-| $\Gamma;s\vdash_{VL}J$ | an internal derivation in the frozen value logic from state-indexed premises |
-| $\vdash_{meta}T(VL)$ | an external mathematical metatheorem about the calculus or implementation |
-| $s\vdash_m\kappa:\mathsf{Claim}$ | a checker in certificate mode $m$ accepts evidence $\kappa$ for a typed claim |
-
-An accepted empirical certificate belongs to the fourth row. Its consequences
-for a target world depend on the declared soundness bridge; acceptance does
-not silently turn it into a deductive proof of a world fact.
+Appendix A distinguishes object output, internal derivation, external
+metatheorem, and checker acceptance. Only a declared soundness bridge gives the
+last its stated target-world conclusion. Another grounded request permits
+finite higher-order assessment; cycles would need new fixed-point semantics.
 
 ### 3.2 Profiles, typed atoms, and assessment
 
-A profile is a finite collection of typed atom templates with slot identity.
-The core examples are adequacy, improvement over the named fallback, hard
-constraints, traceability, and two finite comparison requirements. A
-relative-undefeated atom is supported when a valid declared search finds no
-certified dominator in the exact evaluated set, and it is refuted when one is
-found. A certified-undominated atom additionally requires every relevant
-comparison in that set to be resolved as non-dominating or ineligible. Neither
-ranges over unexamined future plans.
-The basic reliance profile $P_{\mathrm{rely}}$ requires adequacy, fallback
-improvement, hard constraints, and traceability. $P_{\mathrm{pref-rel}}$ adds
-relative-undefeated status, while $P_{\mathrm{pref-cert}}$ adds the stronger
-certified-undominated requirement.
+A profile is a finite collection of typed atom templates with slot identity:
+adequacy, improvement over the named fallback, hard constraints, traceability,
+and optional finite-comparison requirements. The basic
+$P_{\mathrm{rely}}$ requires the first four. $P_{\mathrm{pref-rel}}$ also
+requires a valid exact-set search finding no certified dominator;
+$P_{\mathrm{pref-cert}}$ further requires every relevant pair in that set to
+be resolved as non-dominating or ineligible. Neither ranges over unexamined
+future plans.
 
 Instantiating a template at the request base $(s,e,q)$ produces an address
 
@@ -393,17 +356,15 @@ $$
 
 The address retains enough type information to prevent a certificate for one
 domain, loss, frame, candidate set, or checker mode from satisfying another.
-Each slot is either **required** or **report-only**. A designated safety subset
-of the required slots tells action consumers which unresolved or contrary
-diagnostics must be exposed. Report atoms enrich comparison and explanation;
-only required atoms determine authorization.
+Each slot is **required** or **report-only**. A safety subset identifies
+unresolved or contrary diagnostics that action consumers must see. Report
+atoms enrich explanation; only required atoms determine authorization.
 
-The predicate $WF(\mathfrak r)$ checks that all four request components denote, $e$ is
-represented and executable on the requested cases, its output and frame match
-$q$, the finite profile instantiates to typed addresses, comparison scopes are
-exact, and action-authorizing profiles name a fallback. A wrong-unit latency
-request in the running example fails $WF$ and is **Undefined**. Missing latency
-evidence does not make the request ill typed; it leaves the latency atom open.
+The predicate $WF(\mathfrak r)$ checks that the request denotes, the plan is
+represented and executable, output and frame match, profile addresses are
+typed, comparison scopes are exact, and action-authorizing profiles name a
+fallback. Wrong latency units in the example make the request
+**Undefined**. Missing latency evidence instead leaves a well-formed atom open.
 
 For every well-formed request, each required or report address has a total
 finite-stage valuation
@@ -429,19 +390,15 @@ and required advantage $\Delta$, support requires
 $\sup U_{\mathrm{cert}}(e)+\Delta\leq\inf U_{\mathrm{cert}}(F_q)$; separated
 evidence on the contrary side refutes the atom, and overlap leaves it open.
 
-At the initial state of the succession example, let $q_{.20}$ require
-adequacy $J(e)\leq.20$, improvement by $.05$ over $B$ with $J(B)=.35$, latency
-at most $50$ ms, and an accepted trace. The displayed loss and latency regions
-for both $M_{old}$ and $M_{succ}$ support all four requirements, so both plans
-can be licensed. Adequacy, fallback improvement, and comparative preference
-remain separate: the first imposes an absolute $.20$ ceiling, the second
-imposes the fallback-derived $.30$ ceiling, and a stronger profile may later
-ask which plan is undefeated within an exact finite evaluated set.
+In the succession example, $q_{.20}$ requires loss at most $.20$, improvement
+by $.05$ over $B$ at $.35$, latency at most $50$ ms, and a trace. The initial
+regions support all four requirements for $M_{old}$ and $M_{succ}$. The
+absolute $.20$ ceiling, fallback-derived $.30$ ceiling, and any finite-set
+preference comparison remain separate.
 
-Every valuation comes with exactly one indexed diagnostic:
-$\mathsf{Support}$ with witnesses, $\mathsf{Open}$ with obstacles, or
-$\mathsf{Refute}$ with counterwitnesses, always carrying provenance. Let
-$\mathsf{Diag}(\mathfrak r)$ be the complete address-to-diagnostic map. For the nonempty
+Every valuation has an indexed diagnostic—support with witnesses, open with
+obstacles, or refutation with counterwitnesses—and provenance. Let
+$\mathsf{Diag}(\mathfrak r)$ be the complete diagnostic map. For the nonempty
 required address set, define
 
 $$
@@ -464,22 +421,18 @@ Thus one refuted requirement defeats the request; with no refutation, one open
 requirement withholds it; a grant requires support for every required atom.
 The complete diagnostics preserve why these outcomes occurred.
 
-Typed refinement records when support for one atom is sufficient for another
-at the same scope, loss, frame, and certificate mode. Write $a\Rightarrow_A b$.
-A smaller acceptable region refines a larger one, a larger required fallback
-advantage refines a smaller one, and certified-undominated status refines
-relative-undefeated status on the same finite comparison set. At the changed
-adequacy threshold, for example,
+Typed refinement, written $a\Rightarrow_A b$, records when support for one atom
+suffices for another at the same scope, loss, frame, and certificate mode.
+Narrower acceptable regions and larger required fallback advantages refine
+weaker versions. For example,
 
 $$
 \mathsf{Adeq}(.16)\Rightarrow_A\mathsf{Adeq}(.20).
 $$
 
-The original interval for $M_{succ}$ supports the stricter atom at inclusive
-equality, while the interval for $M_{old}$ crosses $.16$ and leaves that atom
-open. A profile $P$ refines $Q$ when every required atom of $Q$ has a required
-refining witness in $P$. At a well-formed request base
-$\beta=(s,e,q)$, write this preorder as
+The original $M_{succ}$ interval supports the stricter atom at equality, while
+$M_{old}$ crosses $.16$ and remains open. At a well-formed request base
+$\beta=(s,e,q)$, profile refinement is
 
 $$
 P\succeq_{prof}^{\beta}Q
@@ -488,28 +441,23 @@ P\succeq_{prof}^{\beta}Q
 a\Rightarrow_A b.
 $$
 
-Section 4 will state the exact soundness and finite-fragment completeness
-conditions; unmatched scopes or unrepresented interactions create no
-refinement edge.
+Section 4 states soundness and finite-fragment completeness; unmatched scopes
+or unrepresented interactions create no edge.
 
 ### 3.3 Licensed consequence, selection, and revision
 
 Let $\Gamma\vdash_{(e,q)}\varphi$ be the internal evaluation relation supplied
-by $e$ for $q$. When the request is Granted and $\varphi$ has the required type
-and scope, the use rule produces a labelled output
+by $e$ for $q$. A Granted request with the required type and scope produces the
+labelled output
 
 $$
 \Gamma\Rightarrow_{[s,e,q,P]}[e,q]\varphi.
 $$
 
 The label remains attached. Export to another domain, detachment as target
-truth, or composition with another plan needs a separately validated bridge.
-More precisely, a certificate mode $m$ declares admissible world/state pairs
-$\mathcal C_m$. If its bridge establishes
-$\mathsf{Support}_m(s,a)\Rightarrow\mathsf{Target}_w(a)$ for every
-$\langle w,s\rangle\in\mathcal C_m$, then supported $m$-atoms receive exactly
-that target-world conclusion. A statistical bridge carries only its stated
-coverage or error guarantee.
+truth, or composition with another plan needs a validated bridge. A
+certificate mode states the admissible world/state class and conclusion; a
+statistical bridge carries only its named coverage or error guarantee.
 
 Licensing precedes selection. For a case $x$, define the active set
 
@@ -524,14 +472,11 @@ empty set, rather than an evidential atom. If the set is nonempty, a separate
 $q$-indexed policy selects among it. A plan can consequently be licensed but
 unselected, preferred on one finite overlap, or retained only in the library.
 
-Under $s\to s'$, the old history remains addressable and every standing request
-is recomputed from current diagnostics. Expiry of $M_{old}$'s loss certificate
-therefore changes support to open and produces Withheld. The later region
-$[.23,.25]$ lies beyond $.20$, producing a refuted adequacy atom and Refused.
-Changing the tolerance from $.20$ to $.16$ changes $q$ and creates a linked new
-request; it is a reassessment under a new standard. Adding and evaluating
-$M_{new}$ can change a finite comparison atom and selection while leaving basic
-licenses for old plans on other scopes intact.
+Under $s\to s'$, history remains addressable and standing requests are
+recomputed. Expiry opens $M_{old}$'s loss atom and withholds reliance; the later
+$[.23,.25]$ region refutes $.20$ adequacy. A $.16$ tolerance is a linked new
+request, and adding $M_{new}$ can alter finite comparison and selection while
+leaving basic licenses on other scopes intact.
 
 ### 3.4 Open-ended stages
 
@@ -545,10 +490,9 @@ $$
 A_\chi(n)=\mathsf{Assess}(\mathsf{state}(n),e,q,P).
 $$
 
-This fixed-query convention matters: replacing $e$, $q$, or $P$ asks a
-different question. A **current grant** says only $A_\chi(n)=\mathsf{Granted}$.
-For a path $(n_i)$, **eventual stability** and **permanent current stability**
-are respectively
+Replacing $e$, $q$, or $P$ asks a different question. A **current grant** says
+only $A_\chi(n)=\mathsf{Granted}$. Along a path $(n_i)$, **eventual stability**
+and **permanent current stability** are
 
 $$
 \exists N,z\ \forall i\geq N:\ A_\chi(n_i)=z,
@@ -556,19 +500,15 @@ $$
 \forall m\geq n:\ A_\chi(m)=A_\chi(n).
 $$
 
-The first definition does not imply that the agent recognizes the stabilizing
-index. **Certified stability** adds a stage-local certificate whose named
-verifier is sound for that continuation class. Finally, **semantic finality**
-says that no proper continuation changes a declared projection of the whole
-problem; it is external metalanguage and is stronger than stability of one
-query.
+The agent need not recognize the stabilizing index. **Certified stability**
+adds a sound stage-local certificate for the continuation class.
+**Semantic finality** says no proper continuation changes a declared
+projection of the whole problem; it is external to the base language and
+stronger than stability of one query.
 
-These definitions permit constructive questions about which frozen
-dependencies, evidence regimes, or live alternatives support each conclusion.
-They do not place a `Final` predicate inside the base license language. The
-calculus can therefore represent a useful present grant, later revision, and
-even pathwise stabilization while leaving the philosophical endpoint of theory
-succession open.
+The calculus can therefore express a useful present grant, later revision, and
+pathwise stabilization without placing a `Final` predicate inside the license
+language.
 
 ## 4. Open Succession and Local Revision
 
@@ -783,6 +723,10 @@ ownership.
 
 ## 5. Finite Composition, Routing, and Evidence
 
+Can licenses for parts be combined into a license for the whole plan? They can
+when the composite propagates payload, grade, and evidence and its root,
+routing, and fallback are assessed as parts of the new plan.
+
 ### 5.1 A checked composite is a new plan
 
 Let a finite directed acyclic plan graph have root $o$. At node $v$, an
@@ -792,13 +736,10 @@ $$
 \mathsf{Ann}_v(x)=\langle y_v,g_v,c_v\rangle,
 $$
 
-where $y_v$ is the ordinary payload, $g_v$ is a typed quantitative
-grade—including an error bound and resource map—and $c_v$ is a certificate
-term with checker identity and provenance. A constructor declares separate
-payload, grade, and certificate transformers plus its interface, scope, frame,
-and termination side conditions. The certificate transformer cannot declare
-its own output valid; acceptance comes from the mode and checker named by the
-request.
+where $y_v$ is the payload, $g_v$ a typed error or resource grade, and $c_v$ a
+certificate with checker identity and provenance. A constructor declares
+separate transformers and the required interfaces and side conditions; its
+certificate output is valid only when the request's checker accepts it.
 
 **Theorem 6 (annotated execution, erasure, and license lifting).** Suppose the
 plan graph is finite and acyclic, edge types and frames match, payload and grade
@@ -819,13 +760,11 @@ $$
 \mathsf{Assess}(s,e_G,q,P)=\mathsf{Granted}.
 $$
 
-The proof is topological induction: build each unique payload, transformed
-grade, and checked certificate after its predecessors, then erase the
-annotations. The second display is ordinary $WF+K_3$ assessment applied to the
-checked root claim. Structural induction, proof erasure, program logic, and
-consumer-checked proof-carrying code are established machinery; the scoped
-integration here is that formal and empirical certificate modes can feed one
-typed, defeasible license without identifying payload, bound, or evidence.
+Topological induction builds the bundle and proves erasure; ordinary
+$WF+K_3$ assessment then lifts its checked root claim. The established
+machinery is structural induction and consumer-checked proof carrying. Its
+role here is to let formal and empirical certificate modes feed one typed,
+defeasible license while keeping payload, grade, and evidence distinct.
 
 For the running example, a predictor followed by a unit conversion, loss
 estimator, and router is one composed plan only after those interfaces and
@@ -835,11 +774,9 @@ error is $.12$. Both leaf requests may be Granted while the root adequacy atom
 is Refused. Pairing certificate identifiers therefore cannot substitute for a
 root propagation rule.
 
-Grounding imposes a second condition. In a finite support derivation, every
-indegree-zero support node must be a typed accepted base, and derived rules must
-preserve their premises' provenance. For evaluator systems, assign a strict
-finite rank so each node reads only fixed exogenous inputs and completed
-lower-rank outputs.
+Grounding adds a second condition: every source of a finite support derivation
+is a typed accepted base, derived rules preserve provenance, and evaluators
+read only exogenous inputs and completed lower-rank outputs.
 
 **Theorem 7 (grounded and stratified assessment).** A finite acyclic support
 derivation with typed bases grounds every supported required atom. A finite
@@ -855,15 +792,12 @@ u\to v\ \text{as an evidence dependency}
 \text{unique assessment by induction on }\rho.
 $$
 
-This permits an independently evaluated, versioned value-logic implementation
-to appear as an ordinary plan at a higher rank than its completed run records.
-Its same-run grant cannot be its sole evidence. A one-node acyclic “support”
-with no typed base is ungrounded; a closed pair in which each grant supports the
-other is cyclic. Equations such as $g=g$ and $g=\neg g$ are respectively
-nonunique and unsatisfiable in Boolean space, while changing to $K_3$ still
-does not choose an operator or fixed point. A cyclic extension would have to
-declare that machinery and prove its evidence bridge. Kripke–Kleene fixed-point
-semantics supplies a neighboring established pattern
+This permits an independently evaluated value-logic implementation to appear
+as a plan above its completed run records; its same-run grant cannot be its
+sole evidence. An unsupported source is ungrounded, and mutually supporting
+grants are cyclic. Moving to $K_3$ does not choose an operator or fixed point.
+A cyclic extension would need to declare that machinery and its evidence
+bridge. Kripke–Kleene semantics supplies a neighboring established pattern
 ([Kripke 1975](https://doi.org/10.2307/2024634);
 [Fitting 1985](https://doi.org/10.1016/S0743-1066%2885%2980005-4)), not a ready-made
 semantics for these typed empirical licenses.
@@ -929,50 +863,39 @@ $K\sum_uW_{u,o}\delta_u$. Repeated substitution in a topological order proves
 the bound; Theorem 6 can carry the same arithmetic as the root grade and
 certificate.
 
-This result identifies the assumption missing from naive component addition.
-An upstream error $\delta$ followed by the map $y\mapsto Ky$ produces error
-$K\delta$, and a downstream certificate checked only at the nominal input need
-not hold at the perturbed input. For the composed succession plan, local bounds
-must cover the reachable tube and must be weighted by the unit converter,
-estimator, and router sensitivities. Resource grades remain separately typed:
-energy may add, latency may follow a critical path, and peak memory depends on
-schedule. These composition and routing results constrain later
-representations without selecting a neural architecture; that question begins
-in Section 6.
+This identifies the assumption missing from naive component addition. An error
+$\delta$ followed by $y\mapsto Ky$ becomes $K\delta$, and a certificate checked
+only at the nominal input may fail on the perturbation tube. The composed
+succession plan must weight local bounds by downstream sensitivities; resource
+grades keep their own propagation rules. These results constrain later
+representations without selecting an architecture.
 
 ## 6. Architecture-Neutral Representation and a ReLU Reference
 
 ### 6.1 What an implementation must preserve
 
-The representation problem begins with consumers, rather than with a neural
-architecture. For an instantiated atom address $a$, let
+What information must survive when a learned component helps implement the
+logic? The answer is fixed by its consumers before an architecture is chosen.
+For an atom address $a$, let
 
 $$
 x(s,e,q,a)=\left(a,\,
 \mathsf{Env}(s;e,q)|_{\mathsf{Read}_s((s,e,q),a)}\right).
 $$
 
-This is the exact address together with the dependency-scoped record projection
-from Section 4. A learned module may consume a numerical view of this object
-and propose a continuous statistic $\widehat t_a$, an error or uncertainty
-envelope $\widehat\eta_a$, and, when requested, a computational payload or
-quantitative grade. Exact address and unit fields, observation state,
-well-formedness, profile roles, checker and calibration versions, certificate
-polarity, registry identity, provenance handles, active masks, and fallback
-remain in a symbolic side packet. Embeddings of those fields may assist a
-scorer; they do not replace the exact fields on which decoding or audit
-depends.
+This is the exact address and its dependency-scoped record. A learned module
+may propose a statistic $\widehat t_a$, uncertainty envelope
+$\widehat\eta_a$, payload, or grade. Address and units, well-formedness,
+evidence/checker identity and polarity, provenance, masks, and fallback remain
+exact side information; embeddings cannot replace fields used by decoding or
+audit.
 
-Two useful representations answer different questions. Fix a finite public
-query family $\mathcal F$, and let $N_{\mathcal F}(\omega)$ be its complete
-well-formedness and public-status observation at input $\omega$. The
-status-minimal code is the quotient that identifies exactly those inputs on
-which every query in $\mathcal F$ agrees. It may erase which evidence was
-missing, which witness was used, or how far an estimate lay from a boundary.
-An audit interface is finer: it retains address-indexed diagnostics, signed
-statistics and envelopes, safety roles, exact registry and provenance
-references, and the plan dependencies requested by the auditor. No fixed
-finite code is claimed sufficient for every unspecified future query.
+For a finite public query family $\mathcal F$, let
+$N_{\mathcal F}(\omega)$ be its well-formedness and public-status observation.
+The status-minimal quotient identifies inputs on which all those queries
+agree. An audit interface is finer because it retains diagnostics, margins and
+envelopes, registry/provenance, and requested dependencies. No fixed finite
+code is sufficient for every unspecified future query.
 
 **Theorem 10 (consumer-relative factorization).** A representation
 $c:\Omega\to Z$ exactly serves the declared observation $N$ iff
@@ -986,23 +909,15 @@ image of $N$ is the coarsest exact code up to relabeling. The statement applies
 both to the public-query observation $N_{\mathcal F}$ and to any declared finer
 audit observation.
 
-If equal codes always have equal observations, define $d(c(\omega))=N(\omega)$;
-kernel inclusion makes the definition independent of the representative. The
-converse follows by applying $d$ to equal codes. This elementary quotient fact
-is the architecture-neutral spine of the representation result. A finite discrete image of size $m$
-needs $\lceil\log_2m\rceil$ bits under an ordinary distinguishable-symbol
-encoding. That cardinality statement supplies no neural-width bound: without
-precision, noise, robustness, or decoder-regularity assumptions, one real
-coordinate can name arbitrarily many finite states.
+Define $d(c(\omega))=N(\omega)$; kernel inclusion makes this independent of
+the representative, and factorization gives the converse. This quotient fact
+is the architecture-neutral spine. A finite image of size $m$ needs
+$\lceil\log_2m\rceil$ distinguishable bits, but that cardinality alone gives no
+neural-width bound.
 
-The same ownership rule applies to composed plans. A flat record may retain an
-exact plan ID plus sufficient features when the consumer asks only for its
-root output. A typed DAG record is needed when sharing, ports, frames,
-component costs, grade propagation, checker versions, or explanatory paths
-matter. In either form, the payload $y$, quantitative grade $g$, and
-certificate/provenance record $c$ remain distinct. Equal grades can accompany
-different predictions, costs, or traces, and a predicted grade is not its own
-proof.
+For composed plans, a flat record can serve root-output consumers; a typed DAG
+is needed when interfaces, shared components, grade propagation, or paths
+matter. Either way, payload, grade, and certificate/provenance remain distinct.
 
 ### 6.2 Error bands and the finite ReLU witness
 
@@ -1172,35 +1087,27 @@ validity interval. Missing or rejected evidence opens the atom. A learned
 validity head may conservatively reject a case; it cannot make unusable
 evidence valid.
 
-A direct three-way atom classifier is a legitimate predictive baseline for a
-frozen request. Its output label does not retain the statistic needed to answer a changed
-tolerance, and cross-entropy does not manufacture evidence. A router is trained
-against a separately declared selection cost, using only exact-active,
-externally resolved candidate pairs. At deployment, the exact mask is applied
-again before ranking. Section 7 evaluates one frozen implementation of these
-choices; its numerical adjudication is evidentially separate from Theorems
-10–12 and appears there.
+A direct three-way atom classifier is a legitimate baseline for a frozen
+request. Its label does not retain the statistic needed for a changed
+tolerance, and cross-entropy does not manufacture evidence. A router uses a
+separate selection cost and only exact-active candidates; the mask is reapplied
+at deployment. Section 7 evaluates these choices independently of Theorems
+10–12.
 
-Three further boundaries complete the representation result. First, affine experts on adjacent cells
-form one continuous CPWL map exactly when their traces agree on every common
-face. A discontinuous seam needs an external hard router or another declared
-architecture. Scientific validity domains, router cells, and ReLU activation
-cells are three different geometries; this study did not measure their
-alignment. Second, a fixed indexed output is bound to its finite registry.
-Candidate-conditioned shared scoring permits a variable number of external
-queries, while finite evaluation does not establish global closure when a new
-candidate can be added. Third, positive rescaling preserves boundary status
-but changes an unnormalized margin. Registered normalization
-$\sigma'=\lambda\sigma$, or a correspondingly covariant consumer, is required
-before cross-channel magnitude or ranking has stable meaning.
+Three boundaries complete the result. Adjacent affine experts form one
+continuous CPWL map exactly when their traces agree on common faces; otherwise
+a hard external router or another declared architecture is needed. Scientific
+domains, router cells, and ReLU activation cells are different geometries, and
+their alignment was not measured. A fixed indexed output is bound to its
+registry; candidate-conditioned scoring allows new queries without proving
+global closure. Finally, positive rescaling preserves boundary status but
+changes raw margins, so cross-channel use requires registered normalization or
+a covariant consumer.
 
-These results establish representability under stated hypotheses. They do not
-establish that an optimizer learns the representation, that the learned
-statistics are calibrated, that a hidden coordinate aligns with a scientific
-concept, that a certificate is valid under future evidence, or that a licensed
-system is useful at adequate coverage. Neural scores are numerical proposals;
-proofs and empirical certificates remain checked objects with explicit scope
-and provenance.
+The result establishes representability under stated hypotheses. Learning,
+calibration, scientific alignment, future certificate validity, and useful
+coverage require separate evidence. Neural scores remain proposals; proofs and
+empirical certificates remain checked, scoped objects.
 
 ## 7. A Frozen Synthetic Test of Reusable Statistics and Licensed Coverage
 
@@ -1227,14 +1134,11 @@ nonlearned operations. Both arms receive the declared threshold as an input,
 but neither receives oracle endpoints, latent intercepts, oracle labels,
 outcomes, routes, or target-derived certificate information.
 
-Training, selection, calibration, system audit, and final confirmation use
-lineage-disjoint world roots. The final role contains 5,000 independent worlds.
-Eight fixed paired fit seeds are averaged inside each world before inference;
-the registered intervals use 10,000 paired world-bootstrap replicates. The
-study is therefore evidence about these learners under one frozen synthetic
-generator. It is not an empirical model of the history or truth of physics.
-Appendix E gives the generator, role manifest, estimands, multiplicity rules,
-and execution record.
+Training, tuning, calibration, and final samples use lineage-disjoint world
+roots; world-first paired inference accounts for the fixed model fits. The
+study is evidence about these learners under one frozen synthetic generator,
+without being an empirical model of the history or truth of physics. Appendix
+E gives the full sampling, inference, and execution record.
 
 ### 7.2 Decisive opposing effects
 
@@ -1340,29 +1244,23 @@ constructed; a future risk--coverage study must be frozen prospectively.
 
 Several planned secondaries are unavailable because the compact final traces
 omitted target/design weights, polarity, evidence mode, and sufficient
-diagnostics. Target-weighted false assertions and misses, selected and deployed
-task loss, and misroute severity cannot be reconstructed. Their absence cannot
-strengthen or rescue the registered endpoints. The hard mixture-of-experts
-comparison was prospectively omitted, so the study supplies no architecture
-ranking or empirical seam result. Finally, the succession and certificate
-checks were deterministic integration witnesses: they reproduced simultaneous
-grants, gap fallback, lapse to Withheld, rebuttal to Refused, preservation
-under an irrelevant update, later domination without archival erasure, proof
-erasure, grounded ranks, invalid-certificate rejection, and cycle rejection.
-They establish executable consistency with the formal interface. They are not
+diagnostics. Target-weighted errors, deployed loss, and misroute severity
+cannot be reconstructed, so their absence cannot strengthen the registered
+endpoints. The prospectively omitted mixture-of-experts comparison supplies no
+architecture ranking. Deterministic witnesses reproduced the running
+succession, composition, grounding, and invalid-evidence boundary cases. They
+establish executable consistency with the formal interface; they are not
 powered evidence of system adequacy.
 
 ## 8. Optional Policy/Value and Recursive-Judgment Bridge
 
-This section is an optional motivation independent of the four formal
-contribution clusters. Its question is
-whether a black-box policy can be represented through a value-like semantic
-surrogate at a declared behavioral fidelity. The project makes no claim about
-whether an arbitrary policy has a true utility function, whether such a
-function exists, or whether any surrogate recovers it. For the author, value
-was the first tractable semantic foothold from which to imagine tracing meaning
-backward through a model; that is a research motivation, rather than a theorem
-that value is universally prior to belief or other semantics.
+Can a black-box policy acquire a value-like semantic representation at a
+declared behavioral fidelity? This optional motivation is independent of the
+four formal contributions. The project does not investigate whether arbitrary
+policies have true utility functions or whether a surrogate recovers one. For
+the author, value was the first tractable semantic foothold for imagining how
+meaning might be traced backward through a model; that is research history,
+without a claim that value is universally prior to other semantics.
 
 For a finite state set $X$ with finite nonempty legal-action sets, every
 deterministic policy $\pi$ has the canonical score representation
@@ -1402,32 +1300,20 @@ $$
 \Pr_\mu\{e>\rho\}+\Pr_\mu\{\gamma\leq2\rho\}.
 $$
 
-Accordingly, accepted event-mass bounds $\eta_e,\eta_\gamma$ certify behavioral
-disagreement at most $\min(1,\eta_e+\eta_\gamma)$ under their joint coverage
-and versioned scope. This is an oracle inequality until the true error and
-small-gap masses receive such evidence. A raw argmax is pointwise stable when
-$e\leq\rho$ and $\gamma>2\rho$. A conservative winner certificate based on the
-generic pairwise-gap radius $2\rho$ may additionally withhold; the stronger
-sufficient condition $\gamma>4\rho$ guarantees both correct recovery and
-non-abstention. Neither gap condition is a complete reliance license.
+Accepted bounds $\eta_e,\eta_\gamma$ therefore certify disagreement at most
+$\min(1,\eta_e+\eta_\gamma)$ within their joint scope. Before those event
+masses receive evidence, the result is an oracle inequality. Raw argmax is
+stable when $e\leq\rho$ and $\gamma>2\rho$; a conservative decoder can also
+avoid abstention under the stronger sufficient condition $\gamma>4\rho$.
+Neither condition is a complete reliance license.
 
-Standard return value adds substantive assumptions. $Q^\pi$ and $V^\pi$ are
-defined only relative to a fixed environment, reward, state or history,
-horizon or discount, and perspective. Greedy decoding of $Q^\pi$ returns
-$\pi$ only on the corresponding self-greedy subset; for a suboptimal source
-policy it can instead construct a policy improvement. A scalar $V$ needs a
-transparent harness exposing legal actions, transitions, rewards, discount,
-perspective, terminal convention, and tie rule. Under an accepted envelope
-$|\widehat V(y)-V(y)|\leq\epsilon_V(y)$, that harness propagates action-score
-error as
-
-$$
-|\widehat W_V(x,a)-W_V(x,a)|
-\leq\gamma_{\rm disc}\sum_yP(y\mid x,a)\epsilon_V(y).
-$$
-
-A harness that secretly looks up $\pi$ makes every scalar appear sufficient
-while storing the behavioral information outside the value.
+Standard return value adds an environment, reward, state or history, horizon
+or discount, and perspective. Greedy $Q^\pi$ recovers $\pi$ only on its
+self-greedy subset and may instead improve a suboptimal source policy. Scalar
+$V$ needs a transparent action/transition/reward harness; its accepted value
+error propagates to action-score error through the discounted transition
+kernel (Appendix F). A hidden policy lookup would merely store the behavioral
+information outside the value.
 
 A second, standard information-theoretic result gives a narrower reason to
 study semantic reports. Let $R$ be a pre-outcome report, $Y$ a held-out
@@ -1443,160 +1329,137 @@ P(Y\mid R,N)\,\|\,q(Y\mid R,N)\right)
 \geq\delta.
 $$
 
-If $\bar Z$ groups latent tasks with the same conditional outcome law and
-$R\perp Y\mid(\bar Z,N)$, data processing also gives
-$I(R;\bar Z\mid N)\geq I(R;Y\mid N)$. The result identifies only this
-outcome-relevant quotient. Direct leakage shows why mediation and lineage are
-necessary: take an outcome bit $Y$ independent of a constant task and set
-$R=Y$; prediction is perfect although $R$ contains no task structure.
+Under mediation, data processing transfers the bound to the
+outcome-identifiable task quotient $\bar Z$. Direct leakage gives the boundary:
+if $Y$ is independent of a constant task and $R=Y$, prediction is perfect but
+$R$ contains no task structure.
 
-Interpretability is therefore recorded as seven separate evidence axes:
-behavioral fidelity, value fidelity, outcome/task information, domain
-validity and useful coverage, representational alignment, causal faithfulness,
-and human inspectability. The present formal results supply an existence map,
-conditional behavioral bounds, and a scoped information calculation. They
-supply no positive measurement of alignment, causal use, or human benefit.
-Training-set agreement supplies no off-support, shared-mechanism, or coupled
-trajectory guarantee. Appendix F gives the proofs, harness qualifications, and
-constructive countermodels.
+The seven separate evidence axes are behavioral fidelity, value fidelity,
+outcome/task information, domain validity and useful coverage,
+representational alignment, causal faithfulness, and human inspectability.
+Here only existence, conditional behavioral bounds, and scoped information are
+established. Alignment, causal use, human benefit, off-support behavior, and
+coupled trajectories remain unmeasured; Appendix F gives the details.
 
 ## 9. Related Work by Claim Boundary
 
 ### 9.1 Defeasible consequence, evidence, and succession
 
-AGM belief revision formalizes contraction and revision of deductively closed
-belief sets ([Alchourrón, Gärdenfors, and Makinson
+AGM treats revision of deductively closed belief sets ([Alchourrón,
+Gärdenfors, and Makinson
 1985](https://doi.org/10.2307/2274239)), while preferential and cumulative
 logics characterize disciplined nonmonotonic consequence ([Kraus, Lehmann, and
-Magidor 1990](https://doi.org/10.1016/0004-3702%2890%2990101-5)). Value logic shares
-their concern with conclusions that survive some updates and fail after others.
-Its output is instead a typed status for an empirical use request carrying
-domain, loss, evidence, fallback, and provenance. Registry retention is also
-separate from membership in a currently accepted belief set.
+Magidor 1990](https://doi.org/10.1016/0004-3702%2890%2990101-5)). Value logic
+instead emits a typed empirical-use status carrying domain, loss, evidence,
+fallback, and provenance; registry retention is separate from current
+acceptance.
 
-Input/output logic is the closest precedent for producing an output without
-ordinary truth detachment ([Makinson and van der Torre
+Input/output logic supplies a precedent for output without ordinary truth
+detachment ([Makinson and van der Torre
 2000](https://doi.org/10.1023/A:1004748624537)). Labelled deduction and
 justification logic motivate structured labels and explicit evidence terms
 ([Gabbay 1996](https://doi.org/10.1093/oso/9780198538332.001.0001); [Artemov
-2008](https://doi.org/10.1017/S1755020308090060)). These precedents do not make
-an empirical interval factive. Here a target-world conclusion needs an
-explicit, mode-scoped evidence-to-world bridge; the finite-stage assessment is
-usable operationally under that bridge.
+2008](https://doi.org/10.1017/S1755020308090060)). Here an empirical interval
+supports a target-world conclusion only through an explicit, mode-scoped
+bridge.
 
-Formal learning in the limit permits stabilization without a known final
-arrival ([Gold 1967](https://doi.org/10.1016/S0019-9958%2867%2991165-5); [Kelly
-1996](https://doi.org/10.1093/oso/9780195091953.001.0001)). This helps separate
-eventual stabilization from a present certificate of permanence. Structural
-accounts of scientific theories and intertheory relations likewise motivate
-typed applications and bridges rather than a single undifferentiated
-succession relation ([Sneed 1971](https://doi.org/10.1007/978-94-010-3066-3);
-[Nickles 1973](https://doi.org/10.2307/2024906)). Our boundedness assumption is
-operational: the current evidence, computation, registry, and search are
-finite. The framework supplies no historical thesis that every scientific
-succession has the same form.
+Learning in the limit separates eventual stabilization from known arrival
+([Gold 1967](https://doi.org/10.1016/S0019-9958%2867%2991165-5); [Kelly
+1996](https://doi.org/10.1093/oso/9780195091953.001.0001)). Structural accounts
+of theories and intertheory relations motivate typed applications and bridges
+([Sneed 1971](https://doi.org/10.1007/978-94-010-3066-3); [Nickles
+1973](https://doi.org/10.2307/2024906)). The present boundedness assumption is
+operational—finite evidence, computation, registry, and search—without a
+historical thesis that every succession has one form.
 
 ### 9.2 Sequential uncertainty, abstention, and fallback
 
-Classical sequential testing and confidence sequences supply stopping-time and
-time-uniform uncertainty precedents ([Wald
+Sequential testing and confidence sequences supply stopping-time and
+time-uniform precedents ([Wald
 1945](https://doi.org/10.1214/aoms/1177731118); [Darling and Robbins
-1967](https://doi.org/10.1073/pnas.58.1.66)). Value logic imports no generic
-validity from those names: each certificate still declares its population,
-scope, procedure, and version. Selective classification gives the reject option
-and the risk–coverage distinction ([Chow
+1967](https://doi.org/10.1073/pnas.58.1.66)); every certificate here still
+declares its population, procedure, scope, and version. Selective
+classification gives rejection and risk–coverage ([Chow
 1970](https://doi.org/10.1109/TIT.1970.1054406); [El-Yaniv and Wiener
 2010](https://jmlr.org/papers/v11/el-yaniv10a.html)). Conformal prediction gives
 finite-sample marginal coverage under exchangeability ([Shafer and Vovk
-2008](https://www.jmlr.org/papers/v9/shafer08a.html)). Strictly proper scoring
-rules and the interval score provide the prediction-loss basis used in
-Sections 6 and 8 ([Gneiting and Raftery
-2007](https://doi.org/10.1198/016214506000001437)); the log-loss/KL identity
-and conditional data processing used there are standard information theory.
+2008](https://www.jmlr.org/papers/v9/shafer08a.html)); proper scoring and the
+interval score provide the prediction-loss basis ([Gneiting and Raftery
+2007](https://doi.org/10.1198/016214506000001437)).
 
-These tools occupy certificate and decision roles inside the framework. A
-marginal prediction-set guarantee is not automatically a guarantee that task
-risk is below $\epsilon$, that every profile requirement passes, or that routed
-deployment is safe. Likewise, rejection prevents use of an unlicensed expert
-while transferring the case to a fallback whose frequency and severity must be
-measured. The frozen experiment makes this separation concrete: marginal
-proposal coverage coexisted with near-universal target-weighted fallback.
+These tools occupy certificate and decision roles. Marginal prediction-set
+coverage does not establish profile adequacy or routed safety, and rejection
+transfers cases to a fallback whose frequency and severity matter. In the
+frozen experiment, marginal proposal coverage coexisted with near-universal
+target-weighted fallback.
 
 ### 9.3 Programs, proofs, and certifying computation
 
-Program logic, refinement and quantitative types, proof-carrying code, and
-certifying algorithms already provide compositional assertions, precise input
-types, consumer-checked proofs, resource grades, and output-plus-witness
-designs ([Hoare 1969](https://doi.org/10.1145/363235.363259); [Freeman and
+Program logic, quantitative types, proof-carrying code, and certifying
+algorithms provide compositional assertions, grades, checked proofs, and
+output-plus-witness designs ([Hoare
+1969](https://doi.org/10.1145/363235.363259); [Freeman and
 Pfenning 1991](https://www.cs.cmu.edu/~fp/papers/pldi91.pdf); [Atkey
 2018](https://doi.org/10.1145/3209108.3209189); [Necula
 1997](https://doi.org/10.1145/263699.263712); [McConnell et al.
-2011](https://doi.org/10.1016/j.cosrev.2010.09.009)). The paper's finite-plan
-result is an integration at a mixed formal/empirical boundary: a constructor
-jointly transforms payload, quantitative grade, and certificate/provenance, and
-a checked root record feeds a defeasible profile assessment. Structural
-induction and proof erasure are established machinery. An empirical confidence
-region becomes a usable certificate only under its named validation mode; it
-does not become a deductive proof merely by traveling with a computation.
+2011](https://doi.org/10.1016/j.cosrev.2010.09.009)). The finite-plan result
+integrates that established machinery at a mixed formal/empirical boundary:
+constructors transform payload, grade, and evidence, and a checked root feeds a
+defeasible assessment. An empirical region remains governed by its validation
+mode rather than becoming a deductive proof.
 
 ### 9.4 ReLU representation and expert routing
 
-Mixture-of-experts systems learn gates and local specialization ([Jacobs et al.
+Mixture-of-experts systems learn gates and specialization ([Jacobs et al.
 1991](https://doi.org/10.1162/neco.1991.3.1.79); [Jordan and Jacobs
-1994](https://doi.org/10.1162/neco.1994.6.2.181)). A learned gate can route every
-case, choose one expert when several are adequate, or specialize for reasons
-unrelated to the scientific domains. It therefore does not supply an epistemic
-license by itself.
+1994](https://doi.org/10.1162/neco.1994.6.2.181)); a learned gate can specialize
+for reasons unrelated to scientific domains and supplies no epistemic license
+by itself.
 
 Finite feed-forward ReLU networks compute continuous piecewise-affine maps, and
 finite CPWL functions admit exact ReLU realizations under the cited conventions
 ([Arora et al. 2018](https://openreview.net/forum?id=B1J_rgWRW); [He et al.
 2020](https://computmath.cjoe.ac.cn/jcm/EN/10.4208/jcm.1901-m2018-0160)).
-Those representation facts
-are inputs to the reference construction. The paper's application is the typed
-factorization among learned statistics, exact states, diagnostics, masks,
-registry, and fallback, together with explicit seam and boundary conditions.
-Exact representability supplies neither an SGD recovery theorem nor evidence
-that activation cells align with scientific regimes. The frozen experiment
-addresses one trained implementation and reports the transfer-versus-coverage
-trade-off; it does not establish architectural optimality.
+Those facts are inputs to the reference construction. The paper adds the typed
+factorization among learned statistics, exact states, masks, registry, and
+fallback, plus seam conditions. Exact representation gives neither an
+optimization theorem nor scientific-regime alignment; the frozen experiment
+tests one implementation without establishing architectural optimality.
 
 ### 9.5 Policy, value, and identification
 
-Standard policy evaluation defines $V^\pi$ and $Q^\pi$ only after an
-environment, return convention, state, horizon or discount, and perspective
-are fixed; greedy use is governed by policy-improvement results ([Sutton and
+Standard policy evaluation fixes an environment, return, state, horizon or
+discount, and perspective; greedy use follows policy improvement ([Sutton and
 Barto 2018](https://www.incompleteideas.net/book/the-book-2nd.html)). Revealed
 preference can rationalize finite choices under explicit consistency
 conditions ([Afriat 1967](https://doi.org/10.2307/2525382)). Inverse
-reinforcement learning and later identifiability analyses show why behavior
-alone generally leaves reward or reward-equivalence ambiguity ([Ng and Russell
+reinforcement learning and identifiability analyses show why behavior leaves
+reward-equivalence ambiguity ([Ng and Russell
 2000](https://ai.stanford.edu/~ang/papers/icml00-irl.pdf); [Skalse et al.
 2023](https://proceedings.mlr.press/v202/skalse23a.html)).
 
-Policy distillation provides a direct learned-surrogate precedent
+Policy distillation is a learned-surrogate precedent
 ([Rusu et al. 2015](https://arxiv.org/abs/1511.06295)), and action-gap methods
-motivate robustness of greedy choices to approximation
+motivate robust greedy choice
 ([Bellemare et al. 2016](https://doi.org/10.1609/aaai.v30i1.10303)). The
-factor-two proposition in Section 8 is proved directly for its finite score
-contract. Sequential imitation explains why a static IID disagreement rate
-does not automatically control induced trajectories
+Section 8 bound is proved for its finite score contract. Sequential imitation
+shows why static IID disagreement need not control induced trajectories
 ([Ross, Gordon, and Bagnell 2011](https://proceedings.mlr.press/v15/ross11a.html)),
-while underspecification results caution against inferring shared deployment
-behavior from similar in-domain performance
+while underspecification cautions against inferring shared deployment behavior
 ([D'Amour et al. 2022](https://jmlr.org/papers/v23/20-1335.html)).
 Appendix F's direct fixed-pair holdout certificate uses Hoeffding's bounded-sum
 inequality ([Hoeffding 1963](https://doi.org/10.1080/01621459.1963.10500830)).
 
-The optional bridge has a narrower constructive target. A fixed injective
-finite action code gives an exact policy/value-like encoder-image
-correspondence, and accepted score-error and action-gap evidence can certify
-behavioral reconstruction on a named distribution. Standard return semantics,
-off-support generalization, identification, mechanistic alignment, and human
-interpretation require additional assumptions and tests. The project remains
-neutral about whether an arbitrary policy has a true utility function.
+The optional bridge uses a fixed finite action code for exact encoder-image
+existence and accepted score-error/action-gap evidence for distribution-scoped
+behavioral reconstruction. Return semantics, off-support behavior,
+identification, mechanism, human interpretation, and true utility remain
+separate questions.
 
 ## 10. Discussion, Limitations, and Future Work
+
+What survives once the formal assumptions and empirical trade-off are read
+together?
 
 ### 10.1 What survives the empirical trade-off
 
@@ -1631,33 +1494,16 @@ still charges fallback mass and severity.
 
 ### 10.2 Evidence layers and present limits
 
-Six evidential layers should be reported separately.
+Six evidential layers should be reported separately:
 
-1. **Functional fidelity** measures agreement with frozen atom or four-outcome
-   labels. The registered transfer result, opposing boundary and in-regime
-   results, and descriptive four-outcome fidelity belong here.
-2. **Marginal calibration** concerns target containment by proposed intervals
-   under the named exchangeable groups. The two coverage results establish
-   that claim at their registered scope.
-3. **Certificate validity** additionally depends on a bound record's schema,
-   candidate, units, scorer, split, scope, polarity, checker, version, validity
-   interval, and provenance. The implementation checked this contract and the
-   deterministic witness rejected invalid evidence. The study did not
-   establish a population-wide theorem that future certificates remain valid.
-4. **Routed risk** combines selected-expert loss, fallback loss, coverage, and
-   routing error on their actual subdomains. The final compact traces do not
-   support selected/deployed loss or misroute-severity estimates, so no
-   deployed-risk conclusion is available.
-5. **Activation alignment** asks whether learned regions or hidden coordinates
-   align with scientific validity domains or causal computation. It was not
-   measured. The formal seam result shows that one continuous ReLU output
-   cannot exactly join disagreeing affine traces on a shared face; because the
-   hard-router comparator was omitted, no empirical architecture comparison
-   follows.
-6. **Policy/value evidence** is presently formal and conditional: finite
-   encoder-image existence, action-gap reconstruction bounds, and a scoped
-   information theorem. No companion reconstruction, off-support test,
-   intervention study, or human evaluation was run.
+| layer | present support and boundary |
+|---|---|
+| functional fidelity | registered tolerance transfer, opposing boundary and in-regime results, and descriptive four-outcome agreement |
+| marginal calibration | target containment for two named exchangeable groups |
+| certificate validity | a checked schema, candidate, units, split, scope, polarity, checker, version, and provenance; no guarantee for future records |
+| routed risk | no conclusion, because selected/deployed loss and misroute severity are unavailable |
+| activation alignment | unmeasured; the formal seam condition supplies no empirical architecture comparison |
+| policy/value evidence | finite existence, conditional action-gap bounds, and scoped information; no reconstruction run, off-support test, intervention, or human study |
 
 Each positive statement is therefore attached to a population, version, and
 consumer. A current accepted record supports a target-world statement only
@@ -1686,13 +1532,11 @@ losses also prevent a retrospective risk--coverage reconstruction. These
 limitations are reasons to change a future protocol. They do not authorize a
 replacement endpoint or a rerun selected after the frozen result was observed.
 
-Reproducibility also exposed a versioned trust boundary. Seven frozen JSON
-artifacts were originally written with Windows CRLF line endings; Git
-transport had normalized them to LF and thereby broke their registered
-raw-byte hashes in a Linux checkout. Restoring the registered bytes and
-declaring them byte-preserved repaired public verification without changing
-their scientific content. New artifacts use an explicit LF writer. Appendix E
-records the erratum and the WSL/Ubuntu verification path.
+Reproducibility exposed a versioned trust boundary: Git had normalized seven
+registered CRLF JSON artifacts and broken their raw-byte hashes in Linux.
+Restoring and marking those bytes as preserved repaired verification without
+changing scientific content; new artifacts use explicit LF. Appendix E records
+the erratum and WSL/Ubuntu path.
 
 ### 10.3 Prospective extensions
 

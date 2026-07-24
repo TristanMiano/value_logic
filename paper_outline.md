@@ -1,17 +1,22 @@
 # Paper Claim Freeze and Outline
 
-Status: frozen publication contract after Task 25, amended by Checkpoint D and
-the completed Task 22B bridge theorem
-Date: 2026-07-18; Checkpoint D and Task 22B amendments 2026-07-21
+Status: frozen publication contract after Task 25, amended through the
+completed Task 31A reader audit
+Date: 2026-07-18; latest audit amendment 2026-07-24
 Drafting status: Tasks 26--30 implemented the complete substantive
-[`paper.md`](paper.md) draft through 2026-07-24: §§1--11 and Appendices A--F.
-The draft restores the originating Newton/Standard-Model/open-chain motivation,
+[`paper.md`](paper.md) draft: §§1--11 and Appendices A--F. Tasks 31 and 31A
+completed the mathematical/citation and reader/narrative audits. The audited
+draft restores the originating Newton/Standard-Model/open-chain motivation,
 carries all four formal theorem clusters and their constructive boundaries,
 reports the complete frozen empirical trade-off, and keeps the optional
-policy/value bridge within its evidence grades. Mathematical/citation and
-reader/narrative audits remain for Tasks 31 and 31A.
+policy/value bridge within its evidence grades.
 Target: one approximately 11,100-word main paper, technical appendices, and a
 separate 1,500--1,800-word public essay
+
+The Task 31A count is 11,405 main-text words under the repository token rule,
+about 2.7% above the approximate target after removing 1,673 words of repeated
+interface, implementation, and qualification prose. The disposition and
+Substack handoff are in [`notes/reader_audit.md`](notes/reader_audit.md).
 
 This document selects the claims and argumentative order for the public
 artifacts. It is not a draft assembled from every repository result. A statement
@@ -791,7 +796,12 @@ difference.
 | **Appendix D** | encoding schemas, status/audit quotients, ReLU construction/depth, seam and registry proofs, dual-use minimality/scale, annotated-plan realization | untested architecture comparisons |
 | **Appendix E** | complete frozen protocol, analysis, ablations, deviations, trace limitations, artifact erratum, reproducibility | post-hoc replacement endpoints |
 | **Appendix F** | policy/value maps and countermodels; Task 22A proofs and remaining leakage/copying cases | claims that the case study validates H1--H4 |
-| **Appendix G** | notation crosswalk, public theorem/source map, reproducibility links, constructive limitations matrix, and prospective trace contract | internal claim grades in narrative prose |
+| **Repository supplement / possible Appendix G** | notation crosswalk, public theorem/source map, reproducibility links, constructive limitations matrix, and prospective trace contract | internal claim grades in narrative prose |
+
+Task 31A did not add Appendix G to the current paper. The reader path already
+has its needed notation, sources, and selected limitations; the full matrix and
+trace contract remain auditable repository supplements. Checkpoint E may add a
+compact publication supplement if packaging benefits from it.
 
 ## 8. Hard cut and demotion list
 

@@ -37,7 +37,7 @@ Checkpoints are roadmap-review tasks, not ceremonial status updates. At each che
 
 Checkpoint edits apply prospectively. They may add follow-up work for a completed result, but they do not silently mark completed work undone or rewrite its history. Prefer stable checkpoint labels and suffixed new tasks over renumbering tasks that are already referenced elsewhere.
 
-**Next task: Task 31A — Perform the reader and narrative audit.**
+**Next task: Checkpoint E — Reassess publication readiness after the full audit.**
 
 ## Project question
 
@@ -737,13 +737,32 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   status for open or excluded work and contains no live
   `U0/C0/L0/R0/T0` evidence cells. All 177 checks and the WSL native/Python
   preflight pass in the workspace and a clean archive with the Task 31 patch.
-  Public CI for pushed Task 30 head `47b069e...` is green in
-  [run 30119108304](https://github.com/TristanMiano/value_logic/actions/runs/30119108304);
-  Task 31 CI awaits the user's push.
+  Public CI for pushed Task 31 head `ca15a83...` is green in
+  [run 30121757293](https://github.com/TristanMiano/value_logic/actions/runs/30121757293).
 
-- [ ] **Task 31A — Perform the reader and narrative audit.**
+- [x] **Task 31A — Perform the reader and narrative audit.**
 
   Read the technically audited paper as a first-time mathematically literate reader. Check that the lead question is answered before machinery, fallback-derived `epsilon` appears early, every section answers a human question, every headline theorem has a significance sentence, notation is introduced before use, and the single running example remains visible. Ensure “mixed” cannot be read as low power, low false assertions cannot be read without near-universal fallback, and the dead-band account cannot be mistaken for either mystery or proved causation. Remove claim IDs, task language, audit banners, duplicated qualifications, inventory-style transitions, and implementation schemas not needed for the argument. Check the promised three-to-five contribution spine, main/appendix allocation, word budgets, and the future Substack adaptation. Record the audit and repairs in `notes/reader_audit.md`.
+
+  Completed 2026-07-24. The complete first-reader crosswalk, headline-result
+  significance check, empirical-hazard review, allocation decision, word
+  counts, and Substack handoff are in
+  [`notes/reader_audit.md`](notes/reader_audit.md). The lead answer and
+  fallback-derived `epsilon` precede machinery; the one succession remains
+  visible across the paper; and the four-contribution spine survives. Public
+  prose now states that “mixed” means decisive opposing effects, places low
+  false assertions beside misses and `0.9962` fallback, and presents the
+  dead-band geometry as an observed, theory-consistent explanation without
+  assigning causal shares. Repeated carrier, judgment, side-packet,
+  experiment-role, proof-mechanics, and limitations inventories were
+  compressed without changing a theorem, citation, or empirical value. Main
+  text fell from approximately 13,078 to 11,405 words, about 2.7% over the
+  approximate 11,100-word budget. Appendices A--F retain proofs,
+  reproducibility, and optional-bridge detail; a previously reserved Appendix
+  G remains a possible publication supplement rather than a current reader
+  requirement. All 177 checks and the WSL native/Python preflight pass in the
+  workspace and in a clean archive with the staged Task 31A patch; the patch
+  applies with whitespace errors rejected.
 
 - [ ] **Checkpoint E — Reassess publication readiness after the full audit.**
 

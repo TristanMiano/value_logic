@@ -129,6 +129,19 @@ exactly. The paper now uses collision-free report/quotient notation, states the
 root empty-path convention, repairs three malformed formulas and four citation
 destinations, and grounds its narrower physical examples in authoritative
 Caltech and CERN sources. All 177 repository checks and the WSL preflight pass
-in the workspace and a clean archive. **Task 31A is next.**
+in the workspace and a clean archive.
+
+[`Task 31A`](notes/reader_audit.md) completes the first-reader and narrative
+audit. The lead answer and fallback-derived tolerance precede machinery, every
+headline result has an adjacent significance explanation, the one succession
+example remains visible, and the four-contribution spine survives. The paper
+now makes “mixed” unambiguously mean decisive opposing effects, keeps low false
+assertions beside misses and `0.9962` fallback, and presents the dead-band
+account as theory-consistent without claiming an identified causal
+decomposition. Repeated interface, implementation, proof-mechanics, and
+limitations prose was compressed while every theorem, citation, and empirical
+value remained. The audited main text is approximately 11,405 words against
+the approximate 11,100-word contract; proofs and reproducibility details
+remain in Appendices A--F. **Checkpoint E is next.**
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.
