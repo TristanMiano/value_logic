@@ -3,11 +3,13 @@
 Status: frozen publication contract after Task 25, amended by Checkpoint D and
 the completed Task 22B bridge theorem
 Date: 2026-07-18; Checkpoint D and Task 22B amendments 2026-07-21
-Drafting status: Tasks 26--28 implemented the abstract, §§1--5 and §9, and
-Appendices A--C in [`paper.md`](paper.md) through 2026-07-24. The draft restores
-the originating Newton/Standard-Model/open-chain motivation and now carries the
-settled H1--H3 theorem spine, constructive boundaries, and load-bearing finite
-composition/routing results.
+Drafting status: Tasks 26--29 implemented the abstract, §§1--6 and §§8--9, and
+Appendices A--D and F in [`paper.md`](paper.md) through 2026-07-24. The draft
+restores the originating Newton/Standard-Model/open-chain motivation and now
+carries all four formal theorem clusters, their constructive boundaries, the
+learning and masking contract, and the optional policy/value bridge. Section 7,
+Appendix E, discussion, limitations, future work, and conclusion remain for
+Task 30.
 Target: one approximately 11,100-word main paper, technical appendices, and a
 separate 1,500--1,800-word public essay
 
@@ -959,5 +961,6 @@ This freezes the paper around four formal contribution clusters, one honestly
 mixed empirical result, one optional and explicitly bounded policy/value
 bridge, and a single succession example. Checkpoint D preserves that structure,
 and Task 22B has discharged its proof gate with a scoped operational bridge
-proposition. Drafting may retain that proposition in §8 or cut it for narrative
-pressure without changing the four headline clusters.
+proposition. Task 29 retains that proposition compactly in §8, with its full
+proof and countermodels in Appendix F; a later reader audit may still cut it
+for narrative pressure without changing the four headline clusters.

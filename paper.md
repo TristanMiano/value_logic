@@ -929,6 +929,376 @@ schedule. These composition and routing results constrain later
 representations without selecting a neural architecture; that question begins
 in Section 6.
 
+## 6. Architecture-Neutral Representation and a ReLU Reference
+
+### 6.1 What an implementation must preserve
+
+The representation problem begins with consumers, rather than with a neural
+architecture. For an instantiated atom address $a$, let
+
+$$
+x(s,e,q,a)=\left(a,\,
+\mathsf{Env}(s;e,q)|_{\mathsf{Read}_s((s,e,q),a)}\right).
+$$
+
+This is the exact address together with the dependency-scoped record projection
+from Section 4. A learned module may consume a numerical view of this object
+and propose a continuous statistic $\widehat t_a$, an error or uncertainty
+envelope $\widehat\eta_a$, and, when requested, a computational payload or
+quantitative grade. Exact address and unit fields, observation state,
+well-formedness, profile roles, checker and calibration versions, certificate
+polarity, registry identity, provenance handles, active masks, and fallback
+remain in a symbolic side packet. Embeddings of those fields may assist a
+scorer; they do not replace the exact fields on which decoding or audit
+depends.
+
+Two useful representations answer different questions. Fix a finite public
+query family $\mathcal F$, and let $N_{\mathcal F}(\omega)$ be its complete
+well-formedness and public-status observation at input $\omega$. The
+status-minimal code is the quotient that identifies exactly those inputs on
+which every query in $\mathcal F$ agrees. It may erase which evidence was
+missing, which witness was used, or how far an estimate lay from a boundary.
+An audit interface is finer: it retains address-indexed diagnostics, signed
+statistics and envelopes, safety roles, exact registry and provenance
+references, and the plan dependencies requested by the auditor. No fixed
+finite code is claimed sufficient for every unspecified future query.
+
+**Theorem 10 (consumer-relative factorization).** A representation
+$c:\Omega\to Z$ exactly serves the declared observation $N$ iff
+
+$$
+\ker(c)\subseteq\ker(N).
+$$
+
+Equivalently, there is a deterministic decoder $d$ with $d\circ c=N$. The
+image of $N$ is the coarsest exact code up to relabeling. The statement applies
+both to the public-query observation $N_{\mathcal F}$ and to any declared finer
+audit observation.
+
+If equal codes always have equal observations, define $d(c(\omega))=N(\omega)$;
+kernel inclusion makes the definition independent of the representative. The
+converse follows by applying $d$ to equal codes. This elementary quotient fact
+is the architecture-neutral spine of the representation result. A finite discrete image of size $m$
+needs $\lceil\log_2m\rceil$ bits under an ordinary distinguishable-symbol
+encoding. That cardinality statement supplies no neural-width bound: without
+precision, noise, robustness, or decoder-regularity assumptions, one real
+coordinate can name arbitrarily many finite states.
+
+The same ownership rule applies to composed plans. A flat record may retain an
+exact plan ID plus sufficient features when the consumer asks only for its
+root output. A typed DAG record is needed when sharing, ports, frames,
+component costs, grade propagation, checker versions, or explanatory paths
+matter. In either form, the payload $y$, quantitative grade $g$, and
+certificate/provenance record $c$ remain distinct. Equal grades can accompany
+different predictions, costs, or traces, and a predicted grade is not its own
+proof.
+
+### 6.2 Error bands and the finite ReLU witness
+
+Suppose an accepted external record establishes
+$|s_j-\widehat s_j|\leq\delta_j$ for a continuous statistic vector. For an
+affine decoder boundary
+
+$$
+b(s)=\alpha_0+\sum_j\alpha_js_j,
+\qquad
+\rho_{\mathrm{err}}=\sum_j|\alpha_j|\delta_j,
+$$
+
+we have $|b(s)-b(\widehat s)|\leq\rho_{\mathrm{err}}$. For an ideal supported
+relation $b(s)\leq0$, use the conservative interval
+
+$$
+B_{\widehat s}=
+[b(\widehat s)-\rho_{\mathrm{err}},
+ b(\widehat s)+\rho_{\mathrm{err}}].
+$$
+
+The external decoder supports when its upper endpoint is nonpositive, refutes
+when its lower endpoint is strictly positive, and otherwise remains open,
+subject to the accepted evidence mode's permitted polarity.
+
+**Theorem 11 (sound conservative decoding).** Every support or refutation from
+this decoder satisfies the corresponding ideal relation. It returns support
+whenever $b(s)\leq-2\rho_{\mathrm{err}}$, refutation whenever
+$b(s)>2\rho_{\mathrm{err}}$, and, in a two-sided mode, can remain open only
+inside the resulting doubled ideal-margin band.
+
+The factor two separates two claims. The raw boundary value is approximated
+within $\rho_{\mathrm{err}}$. A decoder that refuses to issue an unsupported
+decision everywhere the envelope holds is uniformly complete only beyond
+$2\rho_{\mathrm{err}}$. Equality stays on the supported side. Thus uncertainty
+near a boundary is represented as an open judgment, rather than silently
+converted into a class guess.
+
+ReLU now supplies one explicit realization. Write
+$\rho(u)=\max(0,u)$. A global finite continuous piecewise-affine (CPWL) scalar
+map on $\mathbb R^d$ is exactly realizable by a finite feed-forward ReLU network
+with affine output; finite vector maps follow by parallel composition.
+
+**Theorem 12 (finite ReLU reference witness).** If every requested statistic,
+payload coordinate, and quantitative-grade coordinate is global finite CPWL,
+then one finite ReLU network computes their joint numerical map exactly. Under
+the convention used here it needs at most
+$\lceil\log_2(d+1)\rceil$ hidden layers coordinatewise, although known general
+size bounds can be enormous. A statistic specified only on a restricted domain
+needs an explicit global CPWL extension before this theorem applies.
+
+The external layer still performs exact evidence checking, inclusive
+comparisons, $K_3$ atom construction, profile meet, masking, selection, and
+fallback. A discontinuous class label or checker acceptance does not become a
+continuous neural output because its boundary statistic is representable.
+Other architectures are compatible when they preserve this same typed
+interface; the representation result makes no uniqueness or optimality claim
+for ReLU.
+
+### 6.3 From a positive number to a licensed feature
+
+Return to the running plan $M$. Its required profile is
+
+$$
+P=A\wedge I\wedge C,
+$$
+
+where $A$ requires $J(M)\leq.20$, $I$ requires improvement over fallback
+$J(M)\leq.35-.05=.30$, and $C$ requires latency $T(M)\leq50$ ms. Suppose
+accepted intervals are
+
+$$
+U_J=[.14,.18],\qquad U_T=[43,47]\ {\rm ms},
+$$
+
+with registered scales $\sigma_J=.01$ and $\sigma_T=1$ ms. For threshold $t$,
+define
+
+$$
+s^+ = t-\sup U,\qquad s^-=\inf U-t,\qquad
+z=\rho(s^+/\sigma).
+$$
+
+The normalized support margins for $(A,I,C)$ are $(2,12,3)$, so the accepted
+certificate-relative surplus vector is $z=(2,12,3)$. The same numerical path
+must be read at five distinct stages:
+
+1. for an arbitrary hidden preactivation, positivity says only that the
+   preactivation is positive;
+2. for a learned point or interval margin, it says predicted favorable slack;
+3. after a named envelope and evidence mode are accepted, it can say strict
+   certificate-relative surplus for that one addressed atom; and
+4. a full license additionally requires $WF$ and exact support for every atom
+   in $A\wedge I\wedge C$; and
+5. a later ranking score has meaning only for a declared selector applied to
+   the already licensed active set.
+
+With exact support bits $b_A,b_I,b_C$, a ReLU can compute the fixed-request
+conjunction
+
+$$
+g=\rho(WF+b_A+b_I+b_C-3).
+$$
+
+Here $g=1$. It is a derived grant bit for the already specified request, rather
+than the complete license object with its plan, domain, profile, evidence, and
+provenance. Only after $g=1$ may a declared later ranking plan reuse the
+surpluses, for example
+
+$$
+r=\rho(.5z_A+.1z_I+.2z_C-1)=1.8.
+$$
+
+This is the scoped dual-use construction: named, normalized surplus is both a
+grade and input to a declared consumer, while exact state and evidence remain
+beside it. For a consumer family containing every state and surplus coordinate,
+the state-plus-surplus vector is its minimal quotient up to relabeling. A
+weaker consumer may admit a coarser code; a general prediction payload remains
+separate.
+
+The boundary cases explain the side channels. An accepted interval
+$[.17,.20]$ supports $A$ at equality while $z_A=0$. An interval
+$[.18,.22]$, a refuting interval $[.23,.25]$, missing evidence, and expired
+evidence also produce zero after rectification or masking. Exact atom state,
+signed refutation margin, validity, and diagnostic distinguish them. Zero does
+not quarantine a larger network either:
+
+$$
+3\rho(-10)+2+5=7.
+$$
+
+A bias or bypass can remain active. Authorization therefore comes from the
+exact active mask. The selector ranks only
+
+$$
+\mathcal A_P=\{e:\mathsf{Assess}(s,e,q,P)=\mathsf{Granted}\},
+$$
+
+and returns the declared fallback when $\mathcal A_P$ is empty. A high neural
+score cannot reactivate an excluded plan.
+
+### 6.4 Learning, calibration, and the limits of interpretation
+
+Four objects called “loss” must remain typed apart. The task criterion $L_q$
+and risk $J_q(e)$ state what operational success means. An estimator predicts a
+statistic or region relevant to that criterion. An optimization loss fits its
+parameters. A certificate mode states when the fitted output may support or
+refute an atom.
+
+For a scalar target $t$ and registered scale $\sigma$, the reference estimator
+emits a center $\widehat c$ and nonnegative proposed radius $\widehat r$. The
+center is fitted by standardized squared error. With the center frozen, the
+radius is fitted by the central interval score
+
+$$
+\mathsf{IS}_\alpha(l,u;t)
+=(u-l)+\frac{2}{\alpha}(l-t)_+
+       +\frac{2}{\alpha}(t-u)_+.
+$$
+
+On a disjoint calibration role, residuals
+$\max\{\widehat l-t,t-\widehat u,0\}$ determine a versioned additive expansion.
+That expansion remains a proposal until an external checker accepts its target
+schema, split lineage, scope, assumptions, polarity, units, scorer version, and
+validity interval. Missing or rejected evidence opens the atom. A learned
+validity head may conservatively reject a case; it cannot make unusable
+evidence valid.
+
+A direct three-way atom classifier is a legitimate predictive baseline for a
+frozen request. Its output label does not retain the statistic needed to answer a changed
+tolerance, and cross-entropy does not manufacture evidence. A router is trained
+against a separately declared selection cost, using only exact-active,
+externally resolved candidate pairs. At deployment, the exact mask is applied
+again before ranking. Section 7 evaluates one frozen implementation of these
+choices; its numerical adjudication is evidentially separate from Theorems
+10–12 and appears there.
+
+Three further boundaries complete the representation result. First, affine experts on adjacent cells
+form one continuous CPWL map exactly when their traces agree on every common
+face. A discontinuous seam needs an external hard router or another declared
+architecture. Scientific validity domains, router cells, and ReLU activation
+cells are three different geometries; this study did not measure their
+alignment. Second, a fixed indexed output is bound to its finite registry.
+Candidate-conditioned shared scoring permits a variable number of external
+queries, while finite evaluation does not establish global closure when a new
+candidate can be added. Third, positive rescaling preserves boundary status
+but changes an unnormalized margin. Registered normalization
+$\sigma'=\lambda\sigma$, or a correspondingly covariant consumer, is required
+before cross-channel magnitude or ranking has stable meaning.
+
+These results establish representability under stated hypotheses. They do not
+establish that an optimizer learns the representation, that the learned
+statistics are calibrated, that a hidden coordinate aligns with a scientific
+concept, that a certificate is valid under future evidence, or that a licensed
+system is useful at adequate coverage. Neural scores are numerical proposals;
+proofs and empirical certificates remain checked objects with explicit scope
+and provenance.
+
+## 8. Optional Policy/Value and Recursive-Judgment Bridge
+
+This section is an optional motivation independent of the four formal
+contribution clusters. Its question is
+whether a black-box policy can be represented through a value-like semantic
+surrogate at a declared behavioral fidelity. The project makes no claim about
+whether an arbitrary policy has a true utility function, whether such a
+function exists, or whether any surrogate recovers it. For the author, value
+was the first tractable semantic foothold from which to imagine tracing meaning
+backward through a model; that is a research motivation, rather than a theorem
+that value is universally prior to belief or other semantics.
+
+For a finite state set $X$ with finite nonempty legal-action sets, every
+deterministic policy $\pi$ has the canonical score representation
+
+$$
+E_{\rm can}(\pi)(x,a)=\mathbf 1\{a=\pi(x)\}.
+$$
+
+A tie-specified argmax decoder $D_\tau$ satisfies
+$D_\tau E_{\rm can}=\operatorname{id}$, and the reverse composite is the
+identity on the encoder image. This is an exact finite encoder-image
+isomorphism and existence result. By itself, this construction makes no claim
+about return semantics, uniqueness, naturality, interpretability, or practical
+learnability.
+
+**Proposition 13 (conditional behavioral reconstruction).** Let intended
+scores $W$ decode to $\pi$, approximate scores $\widehat W$ decode to
+$\widehat\pi$, and let $\mu$ be a named state distribution. Define coordinate
+error
+
+$$
+e(x)=\max_a|\widehat W(x,a)-W(x,a)|
+$$
+
+and the policy action gap
+
+$$
+\gamma(x)=W(x,\pi(x))-\max_{a\ne\pi(x)}W(x,a),
+$$
+
+with $\gamma=+\infty$ for a forced singleton action. Then, for every
+$\rho\geq0$,
+
+$$
+\Pr_\mu\{\widehat\pi\ne\pi\}
+\leq
+\Pr_\mu\{e>\rho\}+\Pr_\mu\{\gamma\leq2\rho\}.
+$$
+
+Accordingly, accepted event-mass bounds $\eta_e,\eta_\gamma$ certify behavioral
+disagreement at most $\min(1,\eta_e+\eta_\gamma)$ under their joint coverage
+and versioned scope. This is an oracle inequality until the true error and
+small-gap masses receive such evidence. A raw argmax is pointwise stable when
+$e\leq\rho$ and $\gamma>2\rho$. A conservative winner certificate based on the
+generic pairwise-gap radius $2\rho$ may additionally withhold; the stronger
+sufficient condition $\gamma>4\rho$ guarantees both correct recovery and
+non-abstention. Neither gap condition is a complete reliance license.
+
+Standard return value adds substantive assumptions. $Q^\pi$ and $V^\pi$ are
+defined only relative to a fixed environment, reward, state or history,
+horizon or discount, and perspective. Greedy decoding of $Q^\pi$ returns
+$\pi$ only on the corresponding self-greedy subset; for a suboptimal source
+policy it can instead construct a policy improvement. A scalar $V$ needs a
+transparent harness exposing legal actions, transitions, rewards, discount,
+perspective, terminal convention, and tie rule. Under an accepted envelope
+$|\widehat V(y)-V(y)|\leq\epsilon_V(y)$, that harness propagates action-score
+error as
+
+$$
+|\widehat W_V(x,a)-W_V(x,a)|
+\leq\gamma_{\rm disc}\sum_yP(y\mid x,a)\epsilon_V(y).
+$$
+
+A harness that secretly looks up $\pi$ makes every scalar appear sufficient
+while storing the behavioral information outside the value.
+
+A second, standard information-theoretic result gives a narrower reason to
+study semantic reports. Let $J$ be a pre-outcome report, $Y$ a held-out
+outcome, and $N$ declared nuisance context. If a predictor using $(J,N)$ beats
+the true $N$-conditioned Bayes predictor in population log loss by
+$\delta>0$ nats, then
+
+$$
+I(J;Y\mid N)
+=\delta+
+\mathbb E\,\mathsf{KL}\!\left(
+P(Y\mid J,N)\,\|\,q(Y\mid J,N)\right)
+\geq\delta.
+$$
+
+If $K$ groups latent tasks with the same conditional outcome law and
+$J\perp Y\mid(K,N)$, data processing also gives
+$I(J;K\mid N)\geq I(J;Y\mid N)$. The result identifies only this
+outcome-relevant quotient. Direct leakage shows why mediation and lineage are
+necessary: take an outcome bit $Y$ independent of a constant task and set
+$J=Y$; prediction is perfect although $J$ contains no task structure.
+
+Interpretability is therefore recorded as seven separate evidence axes:
+behavioral fidelity, value fidelity, outcome/task information, domain
+validity and useful coverage, representational alignment, causal faithfulness,
+and human inspectability. The present formal results supply an existence map,
+conditional behavioral bounds, and a scoped information calculation. They
+supply no positive measurement of alignment, causal use, or human benefit.
+Training-set agreement supplies no off-support, shared-mechanism, or coupled
+trajectory guarantee. Appendix F gives the proofs, harness qualifications, and
+constructive countermodels.
+
 ## 9. Related Work by Claim Boundary
 
 ### 9.1 Defeasible consequence, evidence, and succession
@@ -977,7 +1347,11 @@ and the risk–coverage distinction ([Chow
 1970](https://doi.org/10.1109/TIT.1970.1054406); [El-Yaniv and Wiener
 2010](https://jmlr.org/papers/v11/el-yaniv10a.html)). Conformal prediction gives
 finite-sample marginal coverage under exchangeability ([Shafer and Vovk
-2008](https://www.jmlr.org/papers/v9/shafer08a.html)).
+2008](https://www.jmlr.org/papers/v9/shafer08a.html)). Strictly proper scoring
+rules and the interval score provide the prediction-loss basis used in
+Sections 6 and 8 ([Gneiting and Raftery
+2007](https://doi.org/10.1198/016214506000001437)); the log-loss/KL identity
+and conditional data processing used there are standard information theory.
 
 These tools occupy certificate and decision roles inside the framework. A
 marginal prediction-set guarantee is not automatically a guarantee that task
@@ -1037,6 +1411,20 @@ reinforcement learning and later identifiability analyses show why behavior
 alone generally leaves reward or reward-equivalence ambiguity ([Ng and Russell
 2000](https://ai.stanford.edu/~ang/papers/icml00-irl.pdf); [Skalse et al.
 2023](https://proceedings.mlr.press/v202/skalse23a.html)).
+
+Policy distillation provides a direct learned-surrogate precedent
+([Rusu et al. 2015](https://arxiv.org/abs/1511.06295)), and action-gap methods
+motivate robustness of greedy choices to approximation
+([Bellemare et al. 2016](https://doi.org/10.1609/aaai.v30i1.10303)). The
+factor-two proposition in Section 8 is proved directly for its finite score
+contract. Sequential imitation explains why a static IID disagreement rate
+does not automatically control induced trajectories
+([Ross, Gordon, and Bagnell 2011](https://proceedings.mlr.press/v15/ross11a.html)),
+while underspecification results caution against inferring shared deployment
+behavior from similar in-domain performance
+([D'Amour et al. 2022](https://jmlr.org/papers/v23/20-1335.html)).
+Appendix F's direct fixed-pair holdout certificate uses Hoeffding's bounded-sum
+inequality ([Hoeffding 1963](https://doi.org/10.1080/01621459.1963.10500830)).
 
 The optional bridge has a narrower constructive target. A fixed injective
 finite action code gives an exact policy/value-like encoder-image
@@ -1476,3 +1864,735 @@ $\delta$ can be arbitrary. Requiring intrinsic and Lipschitz bounds on the
 entire reachable perturbation tube blocks this case. Exact bridge-cycle and
 resource-accounting results remain in the repository supplement; neither is
 needed to derive the main theorem spine.
+
+## Appendix D. Representation Proofs and Boundary Constructions
+
+### D.1 Exact inputs, public quotients, and audit codes
+
+Fix a finite input class $\Omega$ and public query family $\mathcal F$. An
+input contains either an addressed atom and its read projection, or a finite
+plan address and its declared numerical view. Its exact side packet retains:
+
+- the address, plan and context versions, task, frame, loss, aggregation,
+  tolerance, units, fallback, and evaluated candidate set;
+- presence, missingness, currentness, correction, conflict, evidence polarity,
+  checker and calibration versions, and registry membership;
+- profile roles, $WF$, exact collection identities, active mask, tie rule, and
+  fallback; and
+- certificate, provenance, source, loss-estimator, and plan-dependency
+  references.
+
+The learned view may repeat numerical or embedded forms of these fields. The
+side packet remains authoritative wherever identity or exact state affects a
+consumer. For meaningful atoms, let $v(\omega)$ be the finite valuation vector
+and write
+
+$$
+v\sim_{\mathcal F}v'
+\quad\Longleftrightarrow\quad
+\text{every query in }\mathcal F\text{ gives the same public answer}.
+$$
+
+The canonical public observation is
+
+$$
+N_{\mathcal F}(\omega)=
+\begin{cases}
+\mathsf{Ill}(w_{\mathcal F}(\omega)),&WF\text{ fails},\\
+\mathsf{Well}([v(\omega)]_{\mathcal F}),&WF\text{ holds}.
+\end{cases}
+$$
+
+The sum-type display is a decoded normal form, rather than a required storage
+layout. An audit observation $N_{\mathcal A}$ additionally retains the
+requested address-indexed diagnostic, statistic, envelope, safety role,
+certificate/checker handle, provenance reference, and plan dependency.
+Generally $\ker(N_{\mathcal A})\subseteq\ker(N_{\mathcal F})$: missing and
+expired evidence can yield the same public outcome while remaining different
+audit facts.
+
+**Proof of Theorem 10.** If $N=d\circ c$ and
+$c(\omega)=c(\omega')$, applying $d$ yields
+$N(\omega)=N(\omega')$; hence $\ker(c)\subseteq\ker(N)$. Conversely, assume
+the kernel inclusion and define
+
+$$
+d(z)=N(\omega)\quad\text{for any }\omega\text{ with }c(\omega)=z.
+$$
+
+Any two representatives have equal $N$-values, so $d$ is well defined on
+$\operatorname{im}(c)$ and $d\circ c=N$. The same definition shows that every
+exact code maps uniquely to $\operatorname{im}(N)$, making the latter the
+coarsest code up to one-to-one relabeling. Replacing $N_{\mathcal F}$ by
+$N_{\mathcal A}$ proves the audit form. $\square$
+
+If $\operatorname{im}(N)$ has $m$ members, an injective fixed-length binary
+code needs at least $\lceil\log_2m\rceil$ bits. This argument counts
+distinguishable finite symbols. It does not constrain real-valued neural width,
+parameter count, precision, robustness, sample complexity, or learnability.
+
+### D.2 Conservative boundary recovery
+
+Let the accepted statistic envelope give
+$|s_j-\widehat s_j|\leq\delta_j$ and let
+$b(s)=\alpha_0+\sum_j\alpha_js_j$. Triangle inequality gives
+
+$$
+|b(s)-b(\widehat s)|
+\leq\sum_j|\alpha_j||s_j-\widehat s_j|
+\leq\rho_{\mathrm{err}}.
+$$
+
+The true boundary value therefore lies in
+$[b(\widehat s)-\rho_{\mathrm{err}},
+b(\widehat s)+\rho_{\mathrm{err}}]$.
+
+**Proof of Theorem 11.** If the upper endpoint is at most zero, then
+$b(s)\leq0$; if the lower endpoint is positive, then $b(s)>0$. This proves
+soundness. If $b(s)\leq-2\rho_{\mathrm{err}}$, then
+
+$$
+b(\widehat s)+\rho_{\mathrm{err}}
+\leq b(s)+2\rho_{\mathrm{err}}\leq0,
+$$
+
+so the decoder supports. If $b(s)>2\rho_{\mathrm{err}}$, then
+
+$$
+b(\widehat s)-\rho_{\mathrm{err}}
+\geq b(s)-2\rho_{\mathrm{err}}>0,
+$$
+
+so it refutes. The contrapositives place every two-sided open output in
+$-2\rho_{\mathrm{err}}<b(s)\leq2\rho_{\mathrm{err}}$. $\square$
+
+For scalar risk, take $b(J)=J-\epsilon$ and accepted point error $\delta$.
+The decoder is
+
+$$
+\widehat J+\delta\leq\epsilon\Rightarrow\mathsf{Supported},
+\qquad
+\widehat J-\delta>\epsilon\Rightarrow\mathsf{Refuted},
+$$
+
+with $\mathsf{Open}$ otherwise. At $\delta=0$, $J=\epsilon$ is supported.
+For a finite profile, apply the calculation separately to every required and
+safety boundary. If the exact evidence gates remain valid and every relevant
+ideal margin lies outside its mode-relative doubled band, exact atom values,
+$K_3$ meet, public outcome, mask, and fallback decision agree with the ideal
+decoder. The audit record still retains the actual estimate and envelope.
+
+The doubled band is a uniform guarantee for the conservative decoder. A raw
+sign decoder needs only $|b(s)|>\rho_{\mathrm{err}}$ to recover the ideal sign,
+but within its error interval it can issue an unsupported decision. This is
+why approximation error, conservative decision recovery, and accepted
+authorization receive separate fields.
+
+### D.3 Exact CPWL realization and seam conditions
+
+Under the network convention used in Section 6, hidden layers are affine maps
+followed by coordinatewise ReLU and the final output is affine. The elementary
+identities
+
+$$
+\max(u,v)=\rho(u-v)+v,\qquad
+\min(u,v)=-\max(-u,-v)
+$$
+
+build balanced finite maxima and minima. A scalar global finite CPWL function
+on $\mathbb R^d$ can be expressed as a finite signed sum of maxima of at most
+$d+1$ affine functions and therefore by a finite ReLU network. The cited exact
+construction has total depth at most
+$\lceil\log_2(d+1)\rceil+1$, hence at most
+$\lceil\log_2(d+1)\rceil$ hidden layers under this convention.
+
+**Proof of Theorem 12.** Apply the scalar construction independently to each
+of the finitely many statistic, payload, and grade coordinates. Put the
+subnetworks in parallel, carry signed identities through any padding layers,
+and concatenate their affine outputs. The result is finite and exact on all of
+$\mathbb R^d$. If the target is initially defined only on $D\subseteq
+\mathbb R^d$, apply the construction to the separately supplied global finite
+CPWL extension and restrict it back to $D$. $\square$
+
+This is a finite existence theorem. A general rough construction size can grow
+exponentially in both the number of affine pieces and the number of their
+unique-order regions; those regions may themselves grow factorially. No
+efficiency or training conclusion follows.
+
+For seams, let a finite conforming polyhedral complex have affine expert
+$f_C(x)=A_Cx+b_C$ on every maximal cell $C$.
+
+**Seam characterization.** The hard assembly has a continuous extension
+agreeing with every cell expert iff $f_C=f_D$ on every relevant common face.
+Under this condition the extension is finite CPWL. If traces disagree at an
+accumulation point of a face, no ordinary continuous ReLU output can equal both
+one-sided expert limits.
+
+For sufficiency, agreement makes the finite closed-cell definitions
+well-defined on intersections; the gluing lemma gives continuity. Necessity
+follows by approaching a shared-face point through the relative interiors of
+both cells: continuity forces their affine limits to agree. A hard mixture of
+experts can retain a discontinuity, but then its route, tie, scope, and fallback
+are external obligations. If adjacent affine maps agree on the hyperplane
+$n^\top x=c$, then
+
+$$
+A_C-A_D=an^\top,\qquad b_C-b_D=-ac
+$$
+
+for some output vector $a$; this rank-one facet relation is a consequence of
+agreement on every tangent direction.
+
+### D.4 Registries and proof-erased plan maps
+
+A fixed indexed output
+
+$$
+T_K(x)=(t_e(x))_{e\in K}
+$$
+
+has no coordinate for $e_\star\notin K$. Adding one changes the interface.
+A shared candidate-conditioned scorer
+$f_\theta(x,\phi(e),r_e)$ can instead be applied pointwise to any finite
+external registry; restoring exact candidate identities makes the result
+permutation-equivariant. This shares parameters across a variable number of
+queries. It does not certify a novel candidate, remember an absent record, or
+compress an unbounded collection of independent evidence into one fixed
+summary.
+
+Finite non-domination remains indexed by the evaluated set. Pair two worlds
+that agree on every record in $K$; in one world there is no further candidate,
+and in the other an unseen $e_\star$ validly dominates $g$. Any evaluator
+restricted to $K$ receives the same input in both worlds, so it cannot infer
+global non-domination. Sparse pair evaluation is exact for the pairs it
+contains. Supporting exhaustive non-domination still needs a checked exact-set
+search or resolved evidence for every relevant pair.
+
+Now fix a finite acyclic typed plan DAG. Separate every node annotation into
+
+$$
+(y_v,g_v,\kappa_v,p_v),
+$$
+
+where $y_v$ is payload, $g_v$ quantitative grade, $\kappa_v$ the exact
+certificate/checker/assumption packet, and $p_v$ provenance and dependency
+rank. Assume numerical primitives and grade transformers are global finite
+CPWL, pairing and fan-out are finite, and every hard branch satisfies the seam
+condition.
+
+**Finite proof-erased plan realization.** The root numerical map
+$H_G(x)=(y_o(x),g_o(x))$ is global finite CPWL and therefore has an exact
+finite ReLU realization.
+
+Proceed in topological order. Finite Cartesian tupling, affine composition,
+ReLU, minimum, and maximum preserve CPWL after taking a finite common
+refinement. Composition of finite CPWL maps is CPWL because affine preimages of
+the finitely many target cells give a finite polyhedral refinement. Hard
+branches glue by the seam result. Theorem 12 then realizes the root map.
+$\kappa_v$ and $p_v$ remain outside this proof-erased numerical construction.
+
+A flat plan identity is sufficient only for consumers that factor through its
+retained fields. Two plans may have the same observed root payload while one
+shares an expensive subcomputation and the other duplicates it; or they may
+use different frames, grade transformers, assumptions, or checker versions.
+Any consumer asking for cost, robustness, or explanation separates such a
+pair, so a flat code omitting the separator is insufficient. A typed DAG record
+preserves the distinction without implying that a graph architecture will
+learn it better.
+
+### D.5 Dual-use minimality, boundaries, and scale
+
+Fix named hypothesis channels $i=1,\ldots,n$. Each channel declares an exact
+address, an accepted signed support margin $m_i$, a positive registered scale
+$\sigma_i$, an exact mode-relative state $r_i$, and downstream consumers. Let
+
+$$
+z_i=\rho(m_i/\sigma_i),\qquad
+R=(r_1,\ldots,r_n,z_1,\ldots,z_n).
+$$
+
+**Coordinate-complete sufficiency.** For the consumer family containing every
+state projection, every surplus projection, and declared functions of the
+complete vector $R$, the code $R$ is sufficient. It is minimal up to
+one-to-one relabeling for the subfamily containing all coordinate projections.
+
+Every declared consumer is a function of $R$ by construction. If another code
+$c$ serves every coordinate projection, equal $c$-codes imply equality of
+every $r_i$ and $z_i$, hence equality of $R$. The representative construction
+from Theorem 10 supplies a decoder from $\operatorname{im}(c)$ to
+$\operatorname{im}(R)$. If each margin is CPWL, its positive numerical
+coordinate is exactly ReLU-realizable. $\square$
+
+The result is deliberately consumer-relative. Let two plans have equal
+adequacy margin and different predictions or costs. Their scalar margin codes
+are equal while a payload or cost consumer separates them, so no deterministic
+function of that scalar realizes the consumer. The default plan interface
+therefore routes $(\mathit{payload},\mathit{grade},
+\mathit{diagnostic},\mathit{evidence})$ separately.
+
+The boundary gives a second separator. Supported equality has $m_i=0$, as can
+an open crossing interval; after masking, missing and invalid evidence can
+also have $z_i=0$. A state bit recovers logical status, while validity and
+diagnostic fields recover the audit distinction. The calculation
+$3\rho(-10)+2+5=7$ supplies a network-level separator: zeroing one channel
+does not silence biases or bypasses. Exact masking performs quarantine.
+
+Finally, under the positive unit change $m_i'=\lambda_i m_i$, logical status
+is unchanged while unnormalized surplus becomes $z_i'=\lambda_i z_i$. Setting
+$\sigma_i'=\lambda_i\sigma_i$ makes normalized surplus invariant. A linear
+consumer may instead transform covariantly by
+$A'=A\operatorname{diag}(\lambda_i^{-1})$. Independent unregistered rescalings
+can change cross-channel argmax. Multiplying a variable payload by a margin is
+generally bilinear, changes units and boundary behavior, and is a new plan
+requiring its own approximation, grade, and evidence.
+
+These constructions delimit three independent obligations: the code must
+retain information for its declared consumers; boundary and scale conventions
+must make its numerical meaning stable; and accepted evidence must authorize
+the interpretation at the current stage. None of them turns a hidden
+coordinate into an ontology or an open-ended empirical record into a timeless
+proof.
+
+## Appendix F. Policy/Value, Information, and Transparency Details
+
+### F.1 Exact encoder-image existence and semantic variants
+
+Let $X$ be finite and let each $x\in X$ have a finite nonempty legal-action
+set $\mathcal A_x$. For the deterministic policy class $\Pi$, define
+
+$$
+E_{\rm can}:\Pi\to\mathcal W,\qquad
+E_{\rm can}(\pi)(x,a)=\mathbf 1\{a=\pi(x)\},
+$$
+
+where $\mathcal W$ is the space of all real action-score tables on this legal
+action contract. Fix a total tie priority $\tau_x$ and let
+$D_\tau:\mathcal W\to\Pi$ choose its tie-broken score maximizer.
+
+For every $\pi$, its chosen action is the unique coordinate with score one, so
+
+$$
+D_\tau\circ E_{\rm can}=\operatorname{id}_\Pi.
+$$
+
+On $\operatorname{im}(E_{\rm can})$, decoding followed by encoding returns the
+same one-hot table:
+
+$$
+E_{\rm can}\circ D_\tau
+=\operatorname{id}_{\operatorname{im}(E_{\rm can})}.
+$$
+
+The two maps are therefore a bijection after restricting the score space to the
+encoder image. Outside that image, the reverse composite replaces a general
+score table by the canonical table for its winner. The exact correspondence is
+an existence construction. Many other injective codes exist, and this proof
+does not select a natural return, preference intensity, internal mechanism, or
+learning algorithm.
+
+Return-semantic action value is a different map. For a fixed fully specified
+decision process $M$, write
+
+$$
+F_M^Q(\pi)=Q^\pi,\qquad
+G_{M,\tau}(Q)=\text{tie-broken greedy policy for }Q.
+$$
+
+The policy composite is the identity exactly on the self-greedy subset
+
+$$
+\operatorname{Fix}_Q=
+\{\pi:\pi(x)=G_{M,\tau}(Q^\pi)(x)
+\text{ on every claimed state}\}.
+$$
+
+On $F_M^Q(\operatorname{Fix}_Q)$ the reverse composite is also the identity.
+There is no identity on all policies or all numerical $Q$-tables. In the
+standard finite discounted maximizing setting, global self-greediness is an
+optimality condition. A suboptimal policy can therefore map through $Q^\pi$
+and greedy decoding to an improved policy; disagreement in that case combines
+a semantic forward map with policy improvement, rather than demonstrating
+failure of the abstract encoder-image construction.
+
+A scalar state value has no action coordinate. A transparent one-step harness
+must declare
+
+$$
+H=(\mathcal A_x,P(\cdot\mid x,a),r(x,a),
+\gamma_{\rm disc},\sigma_x,\tau_x,\text{versions}),
+$$
+
+where $\sigma_x\in\{+1,-1\}$ translates the declared perspective into a
+maximization score. It constructs
+
+$$
+W_V(x,a)=
+\sigma_x\left[r(x,a)+\gamma_{\rm disc}
+\sum_yP(y\mid x,a)V(y)\right].
+$$
+
+If the harness is exact and accepted pointwise envelopes give
+$|\widehat V(y)-V(y)|\leq\epsilon_V(y)$, then
+
+$$
+\begin{aligned}
+|\widehat W_V(x,a)-W_V(x,a)|
+&=\gamma_{\rm disc}\left|
+\sum_yP(y\mid x,a)(\widehat V(y)-V(y))\right|\\
+&\leq\gamma_{\rm disc}
+\sum_yP(y\mid x,a)\epsilon_V(y).
+\end{aligned}
+$$
+
+Taking the maximum over legal actions supplies the coordinate radius used
+below. Learned rewards, transitions, state aggregation, perspective, or
+terminal conventions need their own error terms. A harness containing a hidden
+lookup $H(V,x)=\pi(x)$ can force a round trip while ignoring $V$; this valid
+program shows why harness transparency and complexity accounting are premises.
+
+For a stochastic policy, the normalized probability row itself is a lossless
+score representation:
+
+$$
+E_{\rm prob}(\pi)(x,a)=\pi(a\mid x),\qquad
+D_{\rm prob}(p)(a\mid x)=
+\frac{p(x,a)}{\sum_b p(x,b)}.
+$$
+
+These maps are inverse on the normalized simplex. Argmax instead retains only
+the modal action. The rows $(.51,.49)$ and $(.99,.01)$ have the same mode and
+total-variation distance $.48$. A stochastic reconstruction claim must bind a
+distributional metric such as expected total variation or finite log loss and
+state how deployment samples are coupled.
+
+### F.2 Raw reconstruction, accepted evidence, and conservative action
+
+Fix intended scores $W$, approximate scores $\widehat W$, decoder $D_\tau$,
+policy $\pi=D_\tau(W)$, approximation
+$\widehat\pi=D_\tau(\widehat W)$, and a named distribution $\mu$. Define
+
+$$
+e(x)=\max_{a\in\mathcal A_x}
+|\widehat W(x,a)-W(x,a)|
+$$
+
+and, when there is more than one legal action,
+
+$$
+\gamma(x)=W(x,\pi(x))-
+\max_{a\ne\pi(x)}W(x,a).
+$$
+
+Set $\gamma(x)=+\infty$ for a singleton legal-action set.
+
+**Pointwise stability lemma.** If $e(x)\leq\rho$ and
+$\gamma(x)>2\rho$, then $\widehat\pi(x)=\pi(x)$.
+
+For every $a\ne\pi(x)$,
+
+$$
+\begin{aligned}
+\widehat W(x,\pi(x))-\widehat W(x,a)
+&\geq W(x,\pi(x))-\rho-[W(x,a)+\rho]\\
+&\geq\gamma(x)-2\rho>0.
+\end{aligned}
+$$
+
+Thus $\pi(x)$ is the unique approximate maximizer. The singleton case is
+forced by the legal-action contract. $\square$
+
+The lemma gives the event inclusion
+
+$$
+\{\widehat\pi\ne\pi\}
+\subseteq
+\{e>\rho\}\cup\{\gamma\leq2\rho\}.
+$$
+
+Taking $\mu$ and applying the union bound proves Proposition 13. The displayed
+right side may be clipped at one; the unclipped sum usefully separates
+approximation error mass from small-gap mass.
+
+The coefficient two is tight for a coordinatewise statement. With two actions
+$a,b$, source action $a$, and $\rho>0$, take
+
+$$
+W(a)=2\rho,\quad W(b)=0,\quad
+\widehat W(a)=\widehat W(b)=\rho.
+$$
+
+Then $e=\rho$ and $\gamma=2\rho$; a tie priority favoring $b$ changes the
+decoded action. For a strict flip, choose $0<\zeta<2\rho$ and set
+
+$$
+W(a)=2\rho-\zeta,\quad W(b)=0,\quad
+\widehat W(a)=\rho-\zeta,\quad\widehat W(b)=\rho.
+$$
+
+For any proposed coefficient $c<2$, selecting
+$\zeta<(2-c)\rho$ gives $\gamma>c\rho$ while the approximate winner is $b$.
+The construction locates the necessary separation; it does not assert that all
+small-gap states are errors.
+
+For the canonical one-hot scores, every nonsingleton gap is one. An accepted
+pointwise coordinate envelope with $\rho<1/2$ therefore gives exact raw
+decoding throughout its declared domain. The numerical values zero and one in
+this construction remain conventional behavioral code.
+
+Proposition 13 is initially an oracle statement because $e$ and $\gamma$ refer
+to intended scores. If one accepted joint record establishes
+
+$$
+\mu\{e>\rho\}\leq\eta_e,\qquad
+\mu\{\gamma\leq2\rho\}\leq\eta_\gamma,
+$$
+
+then it certifies
+
+$$
+\Pr_\mu\{\widehat\pi\ne\pi\}
+\leq\min(1,\eta_e+\eta_\gamma)
+$$
+
+on the record's stated coverage event. Separate records need ordinary failure-
+probability accounting unless a sharper accepted dependence argument applies.
+Point estimates of the masses do not establish the premises. A pointwise
+accepted region $U$ on which both inequalities in the lemma hold instead gives
+disagreement at most $1-\mu(U)$.
+
+A direct independent holdout supplies a different route. Freeze the policy,
+surrogate, decoder, versions, and target distribution before observing IID
+$X_1,\ldots,X_n\sim\mu$, and let
+
+$$
+\widehat D_n=\frac1n\sum_i
+\mathbf 1\{\widehat\pi(X_i)\ne\pi(X_i)\}.
+$$
+
+Hoeffding's inequality gives, for $0<\alpha<1$,
+
+$$
+\Pr\!\left\{
+D_\mu(\pi,\widehat\pi)
+\leq\widehat D_n+
+\sqrt{\frac{\log(1/\alpha)}{2n}}
+\right\}\geq1-\alpha.
+$$
+
+This directly bounds disagreement under $\mu$; it does not identify the
+oracle inequality's two explanatory masses. Adaptive model, threshold,
+population, or report selection using the same holdout requires corresponding
+accounting.
+
+Raw decoding always returns an action. A conservative action certificate can
+instead withhold. Let $\widehat a$ be the approximate winner and
+
+$$
+\widehat\gamma=
+\widehat W(x,\widehat a)
+-\max_{b\ne\widehat a}\widehat W(x,b).
+$$
+
+Coordinate error at most $\rho$ gives pairwise-gap error at most $2\rho$ by
+triangle inequality. Hence $\widehat\gamma>2\rho$ certifies that
+$\widehat a$ is the unique intended winner. If the true policy gap satisfies
+$\gamma>4\rho$, the pointwise lemma first gives the correct raw winner, and its
+estimated gap is at least $\gamma-2\rho>2\rho$; the conservative rule therefore
+does not withhold. At $\gamma=4\rho$, opposite coordinate errors can leave
+estimated gap exactly $2\rho$, so strict certification may withhold even while
+the raw winner is correct. The $4\rho$ condition is sufficient for recovery
+plus generic non-abstention. It is not necessary for either, and it is not a
+substitute for value fidelity, domain validity, improvement, support,
+counterfactual, trace, or human-use requirements in a complete profile.
+
+### F.3 Scope and constructive countermodels
+
+The reconstruction statement has three distinct deployment scopes.
+
+1. A pointwise or finite-training-set bound ends on that stated set.
+2. An IID holdout estimates disagreement under its named $\mu$ for the frozen
+   pair. A teacher-trajectory distribution need not equal every reachable
+   deployment distribution.
+3. A trajectory guarantee needs time-indexed matched-history premises. If,
+   under a coupling, accepted bounds give
+   $\Pr(A_t\ne\widehat A_t\mid\text{histories agree before }t)
+   \leq\epsilon_t$, then first-divergence union accounting gives
+
+   $$
+   \Pr\{\text{any split by horizon }H\}
+   \leq\min\left(1,\sum_{t=0}^{H-1}\epsilon_t\right).
+   $$
+
+   A static disagreement rate does not supply these conditional visitation
+   bounds.
+
+The following finite constructions expose the required assumptions.
+
+**Off-support disagreement.** Let
+$X=\{x_{\rm train},x_{\rm deploy}\}$, set $\widehat W=W$ at the training state,
+and reverse the two scores at the deployment state. Training disagreement is
+zero under a point mass on the first state and deployment disagreement is one
+under a point mass on the second.
+
+**Zero and small gaps.** At $\gamma=0$, arbitrarily small perturbations can
+change a tie-broken action. Just below $2\rho$, the tightness construction
+causes a flip at coordinate error $\rho$. The theorem leaves these cases
+unresolved; it does not declare that every one actually disagrees.
+
+**Same policy, different return.** Use one fixed policy in two environments
+that have the same transitions but different reward functions. The behavioral
+code is unchanged and $V^\pi,Q^\pi$ differ. Thus a policy alone does not
+determine standard return semantics.
+
+**Greedy improvement.** In a one-step state, let the source policy choose an
+action of return zero while another legal action returns one. Greedy decoding
+of $Q^\pi$ chooses the latter. This separates reconstruction of the source
+behavior from a policy-improvement map.
+
+**Hidden policy lookup.** The harness $H(V,x)=\pi(x)$ reconstructs every policy
+from every scalar function while ignoring that function. It demonstrates why
+the harness must expose where behavioral information resides.
+
+**State aliasing.** Let two histories share visible observation $x$, while the
+policy chooses $a$ after one and $b$ after the other. No deterministic function
+of visible $x$ reproduces both. Enlarging the domain to an adequate history or
+belief state can restore a well-typed reconstruction question; the visible-
+state failure alone does not settle which enlargement is sufficient.
+
+**Occupancy without preference.** Two policies can have the same visited-state
+occupancy while choosing different actions within a state, and reward changes
+can alter preference while leaving occupancy fixed. Occupancy is useful
+behavioral-distribution evidence under its declared support; it does not
+identify cardinal utility.
+
+These constructions narrow the semantic claim while leaving the exact
+encoder-image existence result intact. The project asks whether a declared
+value-like surrogate is useful and faithful at measured scopes. It does not
+investigate the existence or recovery of a uniquely true utility.
+
+### F.4 Proper-score information and the task quotient
+
+Let $J$ be a pre-outcome report, $Y$ a finite held-out outcome, and $N$ the
+declared nuisance context. Write
+
+$$
+p_N=P(Y\in\cdot\mid N),\qquad
+p_{J,N}=P(Y\in\cdot\mid J,N),
+$$
+
+and let $q_{J,N}$ be the predictor actually issued from $(J,N)$. Under log
+loss, the nuisance Bayes risk and judge risk are
+
+$$
+R_N=\mathbb E[-\log p_N(Y)],\qquad
+R_q=\mathbb E[-\log q_{J,N}(Y)].
+$$
+
+Conditioning on $(J,N)$ gives
+
+$$
+R_q=
+H(Y\mid J,N)+
+\mathbb E\,\mathsf{KL}(p_{J,N}\|q_{J,N}),
+$$
+
+while $R_N=H(Y\mid N)$. Since
+$I(J;Y\mid N)=H(Y\mid N)-H(Y\mid J,N)$,
+
+$$
+R_N-R_q=
+I(J;Y\mid N)-
+\mathbb E\,\mathsf{KL}(p_{J,N}\|q_{J,N}).
+$$
+
+Rearranging proves the $\delta$-nat identity in Section 8. The true
+nuisance-conditioned Bayes baseline is load-bearing. Against an arbitrary
+$N$-measurable comparator $b_N$ with regret
+
+$$
+\mathsf{Regret}_N(b)
+=\mathbb E\,\mathsf{KL}(p_N\|b_N),
+$$
+
+a population improvement $\delta_b=R_b-R_q$ gives only
+
+$$
+I(J;Y\mid N)\geq
+\delta_b-\mathsf{Regret}_N(b).
+$$
+
+An empirical positive bound consequently needs accepted population-gap and
+comparator-regret bounds, frozen lineage, and accounting for report or task
+selection.
+
+Now let $Z$ be a latent task label and define the outcome-identifiable quotient
+at nuisance value $n$ by
+
+$$
+z\sim_n z'
+\quad\Longleftrightarrow\quad
+P(Y\mid Z=z,N=n)=P(Y\mid Z=z',N=n).
+$$
+
+Let $K=k_N(Z)$ denote the equivalence-class index, or the shared conditional
+outcome probability vector. Assume $J\perp Y\mid(Z,N)$. Conditioning on one
+$(K,N)$ class and summing over its $Z$-members shows that every member has the
+same outcome law, hence $J\perp Y\mid(K,N)$. The Markov chain
+$J-(K,N)-Y$ conditional on $N$ then gives
+
+$$
+I(J;K\mid N)\geq I(J;Y\mid N)
+$$
+
+by data processing. This transfers outcome information only to distinctions
+visible in the chosen outcome law.
+
+Three countermodels delimit the conclusion.
+
+- **Misspecified baseline.** If $Y$ is a fair bit, $J$ is independent noise,
+  and a nuisance comparator always assigns probability $.9$ to zero, the
+  uninformative fair predictor using $J$ improves log loss over that comparator
+  while $I(J;Y)=0$. Comparator regret explains the apparent gain.
+- **Direct leakage.** Let the task quotient be constant and set the leaked
+  report $J=Y$. Its prediction can be perfect while it carries no task
+  distinction. Proper lineage would classify $J$ as post-outcome leakage; the
+  quotient mediation condition also fails to support a task-information claim.
+- **Duplicated task labels.** Let a raw task label be $(K,U)$ where $U$ is an
+  independent duplicate index and outcomes depend only on $K$. No outcome
+  evidence recovers $U$. The quotient removes exactly this unidentifiable
+  distinction.
+
+For recursion, let $H_{m-1}=(J_0,\ldots,J_{m-1})$. The incremental Bayes
+log-loss gain from adding $J_m$ is
+
+$$
+I(J_m;Y\mid N,H_{m-1}).
+$$
+
+If $J_m$ merely copies an earlier report, this quantity is zero even when
+agreement is perfect. Recursive judgment can add evidence only when it improves
+prediction beyond the full prior-report baseline under the same lineage and
+mediation requirements.
+
+### F.5 Transparency as a vector of evidence
+
+The optional bridge uses seven separately reported grades.
+
+| axis | measured question | suitable evidence | an additional claim still requiring evidence |
+|---|---|---|---|
+| behavioral fidelity | Does value-guided decoding reproduce the frozen policy on the declared population? | held-out disagreement, action-distribution log loss or total variation, tie-aware coverage | return fidelity, mechanism, or beneficial behavior |
+| value fidelity | Does the surrogate predict the declared $V^\pi/Q^\pi$ target or its rankings? | held-out return error, calibrated intervals, ranking loss, decoded regret | a unique internal or true utility |
+| outcome/task information | Does a pre-outcome report improve proper prediction beyond the correct nuisance baseline? | accepted population log-loss gap and, for task transfer, a mediation audit | full latent identity, readability, or licensing |
+| domain validity | Where is the evidence valid and operationally useful? | lineage-separated support and shift tests, risk–coverage, fallback mass and severity | transfer outside the evaluated population |
+| representational alignment | Are policy and surrogate representations stably related beyond outputs? | cross-validated mappings, subspace comparisons, cross-seed and symmetry controls | causal use or uniquely named coordinates |
+| causal faithfulness | Do interventions on proposed value-relevant variables change behavior as predicted? | controlled interventions and ablations, counterfactual mediation | human usability or unique utility |
+| human inspectability | Does the view help people predict, detect errors, and rely appropriately? | blinded user comparisons measuring accuracy, time, calibration, and abstention | mechanistic identity or untested-task correctness |
+
+These grades form a vector or partial profile. Averaging them could let strong
+behavioral imitation conceal absent causal evidence, or attractive traces
+conceal unusable coverage. A value-like output with an accepted semantics is a
+possible starting point for tracing semantics inward through a surrogate.
+Transferring that interpretation to an independently trained source policy
+additionally requires an explicit policy–surrogate alignment map and policy-
+side interventions. The current paper reports no completed representational-
+alignment, causal-faithfulness, or human-inspectability experiment.
