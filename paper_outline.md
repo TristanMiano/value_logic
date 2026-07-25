@@ -1,15 +1,17 @@
 # Paper Claim Freeze and Outline
 
 Status: frozen publication contract after Task 25, amended through the
-completed Task 31A reader audit
-Date: 2026-07-18; latest audit amendment 2026-07-24
+completed Checkpoint E publication-readiness gate
+Date: 2026-07-18; latest checkpoint amendment 2026-07-24
 Drafting status: Tasks 26--30 implemented the complete substantive
 [`paper.md`](paper.md) draft: §§1--11 and Appendices A--F. Tasks 31 and 31A
-completed the mathematical/citation and reader/narrative audits. The audited
-draft restores the originating Newton/Standard-Model/open-chain motivation,
-carries all four formal theorem clusters and their constructive boundaries,
-reports the complete frozen empirical trade-off, and keeps the optional
-policy/value bridge within its evidence grades.
+completed the mathematical/citation and reader/narrative audits. Checkpoint E
+finds the draft publication-ready after one bounded Task 31B content repair,
+then Tasks 32--34. The audited draft restores the originating
+Newton/Standard-Model/open-chain motivation, carries all four formal theorem
+clusters and their constructive boundaries, reports the complete frozen
+empirical trade-off, and keeps the optional policy/value bridge within its
+evidence grades.
 Target: one approximately 11,100-word main paper, technical appendices, and a
 separate 1,500--1,800-word public essay
 
@@ -33,6 +35,14 @@ behavioral recovery, accepted-evidence certification, conservative
 non-abstention, harness semantics, and distributional scope kept separate. It
 is available to optional §8 as a bounded integration result. It is not a fifth
 headline contribution or authorization for a new experiment.
+
+Checkpoint E again leaves that contribution and claim set unchanged. It inserts
+Task 31B only to repair one malformed formula; add already-frozen empirical
+reference values with target-versus-unweighted scopes intact; define “value
+logic”; state the constructive neural motivation and its still-open alignment
+questions; and remove causal overreading from the complete-pipeline fallback
+comparison. It authorizes no rerun, regrade, fifth contribution, Appendix G, or
+categorical revision of the finite policy/value existence claim.
 
 ## 1. Publication thesis and claim hierarchy
 
@@ -101,16 +111,16 @@ implementation, not a proof of H1--H4 and not an architecture comparison.
 | boundary superiority | difference `-0.2612`, interval `[-0.2636,-0.2587]` | The registered structured-arm superiority proposition was refuted at its registered `+0.05` margin. The reverse proposition was not preregistered as a confirmatory claim. |
 | in-regime noninferiority | difference `-0.1009`, interval `[-0.1022,-0.0997]` | The registered noninferiority proposition was refuted at its registered `-0.02` margin. The transfer gain therefore was not cost-free. |
 | marginal proposal coverage | loss coverage `0.9098`, latency coverage `0.9044`, both clearing the registered lower-bound rule | Marginal target-in-proposal coverage is supported for the two frozen exchangeable groups. Conditional, profile, selected, routed, deployed, system, and world-fact coverage remain outside that result. |
-| operational coverage | unweighted trace support/refutation misses `0.4611/0.3248`; target-weighted fallback mass `0.9962` | The accepted conservative interface was calibrated and highly withholding, with poor usable coverage. Low false assertions and marginal coverage cannot stand in for operational usefulness. |
+| operational coverage | target true-`Granted/non-Granted` prevalence `.35/.65`; target-weighted fallback `.9962/.9139` and issued-`Granted` mass `.0038/.0861`; unweighted design-distribution true-`Granted` accuracy `.0124/.1811` | Both complete tested pipelines fell back heavily, and the structured pipeline's fallback was nearly total. Issued-`Granted` mass is not recall; target-weighted conditional trace accuracy is unavailable. Low false assertions and marginal coverage cannot stand in for operational usefulness. |
 
 Internal audit crosswalk, removed from public prose: aggregate `F35=I1`,
 changed-tolerance `F35a=S1`, boundary `F35b=X1`, in-regime `F35c=X1`, and
 marginal proposal coverage `F36=S1`. These labels are scoped repository
 dispositions, not global truth values for a research program.
 
-The paper and essay preserve this exact mnemonic:
+Task 31B will make the paper and essay preserve this revised noncausal mnemonic:
 
-> Retaining a reusable numerical statistic helped when the decision threshold changed. But wrapping that statistic in a conservative uncertainty-and-decoding pipeline often turned informative predictions into abstentions. Representational information, calibrated caution, and operational usefulness are separate achievements.
+> Retaining a reusable numerical statistic helped when the decision threshold changed. Both complete pipelines often declined to decide, and fallback in the tested structured pipeline was nearly total. Representational information, calibrated caution, and operational usefulness are separate achievements.
 
 This is a narrative mnemonic for the observed asymmetry, not an identified
 causal decomposition. Conservative dead-band geometry is consistent with the
@@ -255,7 +265,7 @@ to a logic of licensed use.
 
 A tolerance gets an operational meaning from what the agent would otherwise do. If a fallback has expected loss `.35` and a candidate must improve on it by `.05`, the fallback-derived threshold is `epsilon_B=.30`. A separate adequacy rule may require loss at most `.20`, while a constraint requires latency at most `50 ms`. In the running synthetic succession, an older local plan and a broader successor initially satisfy all three requirements on an overlap. Both can be licensed even if a router selects one. An uncovered region invokes the fallback. When the older plan's certificate expires, reliance is withheld because evidence has lapsed. When accepted evidence later places its loss above the boundary, reliance is refused. Tightening adequacy from `.20` to `.16` makes the older interval straddle the boundary while the successor is supported exactly at equality, without retraining. A later specialist fills the earlier gap and becomes preferable on a certified finite overlap while the older plans remain recorded.
 
-This structure motivates a hybrid neural interface: a learned module proposes reusable quantities such as loss statistics and uncertainty regions, while an exact external layer checks evidence, well-formedness, inclusive boundaries, required atoms, masking, and fallback. ReLU is one useful reference because finite ReLU networks compute piecewise-linear statistics and expose positive margin surplus. The semantics still come from the named quantity and accepted evidence; supported equality, an unresolved interval, and missing evidence can all have zero ReLU surplus, so exact state and provenance must remain beside it. One frozen synthetic implementation received the following asymmetric verdict: no-retraining tolerance generalization was supported; boundary superiority and in-regime noninferiority were refuted at their registered margins; marginal proposal coverage was supported; and usable coverage was poor, with `0.9962` target-weighted fallback mass. **Retaining a reusable numerical statistic helped when the decision threshold changed. But wrapping that statistic in a conservative uncertainty-and-decoding pipeline often turned informative predictions into abstentions. Representational information, calibrated caution, and operational usefulness are separate achievements.** Conservative dead-band geometry is a plausible observed mechanism, but the experiment did not identify a causal decomposition or establish that ReLU is uniquely suitable.
+This structure motivates a hybrid neural interface: a learned module proposes reusable quantities such as loss statistics and uncertainty regions, while an exact external layer checks evidence, well-formedness, inclusive boundaries, required atoms, masking, and fallback. ReLU is one useful reference because finite ReLU networks compute piecewise-linear statistics and expose positive margin surplus. The semantics still come from the named quantity and accepted evidence; supported equality, an unresolved interval, and missing evidence can all have zero ReLU surplus, so exact state and provenance must remain beside it. One frozen synthetic implementation received the following asymmetric verdict: no-retraining tolerance generalization was supported; boundary superiority and in-regime noninferiority were refuted at their registered margins; marginal proposal coverage was supported; and both complete pipelines had poor usable coverage, with target-weighted fallback `.9962/.9139` against reference non-`Granted` prevalence `.65`. **Retaining a reusable numerical statistic helped when the decision threshold changed. Both complete pipelines often declined to decide, and fallback in the tested structured pipeline was nearly total. Representational information, calibrated caution, and operational usefulness are separate achievements.** Conservative dead-band geometry is a plausible observed mechanism, but the experiment did not identify a causal decomposition or establish that ReLU is uniquely suitable.
 
 An optional policy/value bridge asks whether an environment-relative value surrogate can give a useful semantic view of a black-box policy. The finite existence construction shows that a lossless value-like code is possible. Standard return semantics, identification, and learnability require additional assumptions. The project does not investigate whether true utility exists or claim to recover it. Behavioral, value, outcome/task-quotient, domain, representational, causal, and human evidence remain distinct grades.
 
@@ -535,9 +545,14 @@ realization.
   propositions; state that this does not adjudicate every structured objective
   or establish a reverse confirmatory CE theorem.
 - Keep marginal coverage, false assertions, unweighted trace
-  support/refutation misses, and target-weighted `0.9962` fallback mass
-  physically adjacent.
-- Use the exact mnemonic.
+  support/refutation misses, target `Granted/non-Granted` prevalence
+  `.35/.65`, target-weighted fallback `.9962/.9139`, issued-`Granted` mass
+  `.0038/.0861`, and target-weighted four-outcome fidelity physically
+  adjacent. If the unweighted true-`Granted` accuracies `.0124/.1811` are
+  included, label them explicitly as design-distribution companions. Do not
+  treat issued-`Granted` mass as recall or use the unweighted conditional rows
+  to decompose target-weighted fidelity.
+- Use the Task 31B revised noncausal mnemonic.
 - Explain conservative dead-band geometry as a plausible mechanism, then state
   the unmeasured causal decomposition.
 - Disclose that raw boundary fidelity was not compared at matched coverage and
@@ -800,8 +815,8 @@ difference.
 
 Task 31A did not add Appendix G to the current paper. The reader path already
 has its needed notation, sources, and selected limitations; the full matrix and
-trace contract remain auditable repository supplements. Checkpoint E may add a
-compact publication supplement if packaging benefits from it.
+trace contract remain auditable repository supplements. Checkpoint E confirms
+that no Appendix G is required for publication.
 
 ## 8. Hard cut and demotion list
 
@@ -859,8 +874,9 @@ compact publication supplement if packaging benefits from it.
 
 Target: **1,500--1,800 words**, low notation, one displayed fallback equation,
 and at most one four-outcome table. Follow the required order: physics
-succession → fallback/`epsilon` → open licenses/overlap → classifier/dual-use
-margin → limits.
+succession → pragmatic value → fallback/`epsilon` → open licenses/overlap →
+what the neural interface promised and what survived → classifier/dual-use
+margin → empirical trade-off → limits.
 
 ### 1. A theory can lose reach while keeping a job — 180 words
 
@@ -898,6 +914,11 @@ margin → limits.
 
 - Give the architecture-neutral contract first.
 - Introduce ReLU only as the explicit reference realization.
+- Explain the affirmative motivation compactly: named threshold margins fit
+  rectification; finite CPWL composition has an exact reference witness; and a
+  retained numerical statistic might answer a changed threshold without
+  retraining. Say that activation/scientific-atlas alignment and a semantic
+  depth-to-nested-license correspondence remain untested.
 - Distinguish arbitrary positive activation, predicted positive slack,
   accepted certificate-relative surplus, and a full profile license.
 - Explain dual use: a named normalized surplus can feed later computation while
@@ -914,13 +935,16 @@ margin → limits.
 
 ### 7. What the experiment found — 300 words
 
-- Use the exact mnemonic verbatim.
+- Use the Task 31B revised noncausal mnemonic verbatim.
 - State the aggregate mixed result and every component grade.
 - Give the transfer difference, marginal coverage scope, unweighted trace miss
-  rates, and target-weighted `0.9962` fallback mass.
+  rates, target prevalence `.35/.65`, and target-weighted `.9962/.9139`
+  fallback. If space permits `.0124/.1811`, identify them as unweighted
+  design-distribution accuracies conditional on true Granted; target-weighted
+  conditional grant accuracy is unavailable.
 - Explain conservative dead-band geometry as a plausible mechanism. Say the
-  causal decomposition was not identified and the boundary comparison was not
-  matched at equal coverage.
+  causal decomposition was not identified, both complete pipelines fell back
+  heavily, and the boundary comparison was not matched at equal coverage.
 
 ### 8. What remains open — 220 words
 
@@ -952,8 +976,10 @@ margin → limits.
 4. Keep the architecture-neutral semantic interface, ReLU reference
    construction, and empirical comparison in separate sentences and sections.
 5. Keep the exact empirical mnemonic, component grades, miss/fallback numbers,
-   and dead-band qualification together wherever the founding neural
-   motivation is summarized.
+   population labels, and dead-band qualification together wherever the
+   founding neural motivation is summarized. Issued-`Granted` mass is not
+   recall, and unweighted conditional traces do not decompose a target-weighted
+   metric.
 6. Keep finite representation existence, standard-return semantics,
    identification, and practical learning as separate policy/value questions.
    No passage says the existence claim was rejected.
@@ -969,8 +995,9 @@ margin → limits.
 
 This freezes the paper around four formal contribution clusters, one honestly
 mixed empirical result, one optional and explicitly bounded policy/value
-bridge, and a single succession example. Checkpoint D preserves that structure,
-and Task 22B has discharged its proof gate with a scoped operational bridge
-proposition. Task 29 retains that proposition compactly in §8, with its full
-proof and countermodels in Appendix F; a later reader audit may still cut it
-for narrative pressure without changing the four headline clusters.
+bridge, and a single succession example. Checkpoint D preserved that structure,
+Task 22B discharged its proof gate with a scoped operational bridge proposition,
+and Checkpoint E preserves the same claim set while inserting one narrow
+publication repair. Task 29 retains the bridge proposition compactly in §8,
+with its full proof and countermodels in Appendix F. Task 31B is next; it does
+not reopen the four headline clusters.

@@ -67,7 +67,18 @@ The historical interfaces in `formalism/01_signature.md` through `formalism/05a_
 
 ## Project status
 
-All scheduled work through Task 30, including Task 22B and the other completed suffixed tasks, and Checkpoints A, A1, B, C, C1, and D is complete. The finite-stage licensing interface, consequence and update rules, dominance and retention distinctions, overlapping scientific-model cover, bridge taxonomy, and a repaired integrated finite witness have been developed. The compact `WF + K_3` semantics and the complete finite witness are executable and tested with `python -m verification`. Continuation semantics separates current grants, eventual stability, certified stability, semantic finality, and optional truth. The compact core fixes `(s,e,q,P)` and has profile, diagnostic, soundness, update, and composition metatheory. Its quantitative extension characterizes subdomain restriction, decomposes hard-router risk, bounds bridge/blend task risk, propagates finite plan-DAG errors, and audits exact bridge cycles.
+All scheduled work through Task 31A, including Task 22B and the other completed
+suffixed tasks, and Checkpoints A, A1, B, C, C1, D, and E is complete. The
+finite-stage licensing interface, consequence and update rules, dominance and
+retention distinctions, overlapping scientific-model cover, bridge taxonomy,
+and a repaired integrated finite witness have been developed. The compact
+`WF + K_3` semantics and the complete finite witness are executable and tested
+with `python -m verification`. Continuation semantics separates current grants,
+eventual stability, certified stability, semantic finality, and optional truth.
+The compact core fixes `(s,e,q,P)` and has profile, diagnostic, soundness,
+update, and composition metatheory. Its quantitative extension characterizes
+subdomain restriction, decomposes hard-router risk, bounds bridge/blend task
+risk, propagates finite plan-DAG errors, and audits exact bridge cycles.
 
 Task 14B closed Checkpoint B's focused repair gate. It proved every frozen atom evaluator local to a finite typed read footprint, including negative collection-index reads, and made the canonical event/write graph change-complete. [`Task 14C`](formalism/08c_proof_carrying_plans.md) then proved that finite typed plan DAGs can jointly compute payloads, propagate quantitative grades, and construct checked composite certificates whose erasure is the ordinary computation. It also established grounded finite-DAG provenance and unique finite-rank assessment of a frozen value-logic implementation, while showing that self-endorsement alone is not target-world evidence.
 
@@ -142,6 +153,19 @@ decomposition. Repeated interface, implementation, proof-mechanics, and
 limitations prose was compressed while every theorem, citation, and empirical
 value remained. The audited main text is approximately 11,405 words against
 the approximate 11,100-word contract; proofs and reproducibility details
-remain in Appendices A--F. **Checkpoint E is next.**
+remain in Appendices A--F.
+
+[`Checkpoint E`](notes/checkpoints/E_publication_readiness.md) independently
+adjudicates the new
+[`External Audit VI`](llm_convos/claude_audit_2026-07-24.md) and finds the
+project publication-ready after one narrow repair. The checkpoint preserves
+every theorem and empirical grade while correcting the audit's own numerical
+overreach: target-weighted issued-`Granted` mass is not grant recall, and
+unweighted conditional trace accuracy cannot decompose target-weighted
+fidelity. It adds Task 31B to repair one malformed math span, publish the
+missing reference values with exact scopes, define “value logic,” answer the
+neural-fit motivation constructively, and remove causal overreading from the
+fallback comparison. Tasks 32--34 remain the publication sequence. **Task 31B
+is next.**
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.

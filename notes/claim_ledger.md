@@ -111,6 +111,7 @@ The impact analysis must preserve what the scoped witness actually establishes. 
 - `AUDIT-F5`: `llm_convos/claude_audit_2026-07-11.md`
 - `AUDIT-F5-IV`: `llm_convos/claude_audit_2026-07-17.md`, adjudicated with quantitative corrections at Checkpoint C1
 - `AUDIT-F5-V`: `llm_convos/claude_audit_2026-07-21.md`, adjudicated with margin/certification corrections at Checkpoint D
+- `AUDIT-F5-VI`: `llm_convos/claude_audit_2026-07-24.md`, adjudicated with weighting, recall, causality, and link-destination corrections at Checkpoint E
 - `PVI`: [`TristanMiano/policy_value_isomorph`](https://github.com/TristanMiano/policy_value_isomorph), inspected for Task 22 at exact remote `main` commit `097ea8897fb203b9b3a6ceafcb29e11bdc6cdd6c` on 2026-07-18 and rechecked as unchanged remote head at Checkpoint D on 2026-07-21; code/test contracts were read without running or modifying the companion project
 
 Line references identify the current local files and may move if those source files are edited.
@@ -369,3 +370,16 @@ The following can be checked early without large experiments:
   locality/change-completeness; and architecture-neutral representation with a
   finite ReLU witness. The X1-impact crosswalk and detailed scope checks are
   recorded in [`mathematical_citation_audit.md`](mathematical_citation_audit.md).
+- Task 31A confirms that the same supported claim set forms a coherent
+  first-reader narrative. Checkpoint E then adjudicates `AUDIT-F5-VI` without
+  changing any evidence grade. Task 31B will add already-frozen descriptive
+  references: target true-`Granted/non-Granted` prevalence `.35/.65`,
+  target-weighted issued-`Granted` mass `.0038/.0861`, unweighted
+  design-distribution true-`Granted` accuracy `.0124/.1811`, and the exact-WF
+  otherwise-`Withheld` target baseline `.35`. Issued-`Granted` mass is not
+  recall, the unweighted conditional rows cannot decompose target-weighted
+  fidelity, and target-weighted conditional traces remain unavailable under
+  deviation `21-D3`. The checkpoint also requires noncausal complete-pipeline
+  fallback language, a compact neural-motivation disposition, and an explicit
+  definition of “value logic”; it does not reopen `F35/F36`, `C01/C12`, or any
+  policy/value true-utility boundary.

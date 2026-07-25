@@ -37,7 +37,7 @@ Checkpoints are roadmap-review tasks, not ceremonial status updates. At each che
 
 Checkpoint edits apply prospectively. They may add follow-up work for a completed result, but they do not silently mark completed work undone or rewrite its history. Prefer stable checkpoint labels and suffixed new tasks over renumbering tasks that are already referenced elsewhere.
 
-**Next task: Checkpoint E — Reassess publication readiness after the full audit.**
+**Next task: Task 31B — Apply the narrow post-audit publication repair.**
 
 ## Project question
 
@@ -764,24 +764,129 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   workspace and in a clean archive with the staged Task 31A patch; the patch
   applies with whitespace errors rejected.
 
-- [ ] **Checkpoint E — Reassess publication readiness after the full audit.**
+- [x] **Checkpoint E — Reassess publication readiness after the full audit.**
 
   Create `notes/checkpoints/E_publication_readiness.md` and apply the checkpoint protocol after both the mathematical/citation and reader/narrative audits. Decide whether any failure requires returning to proof, experiment, interpretation, or drafting work; revise Task 32 onward and add narrowly scoped repair tasks if needed. Proceed to Gist/Substack formatting only if the surviving claim set is mutually consistent, supported, and consumable by a human reader.
 
+  Completed 2026-07-24. The full disposition is in
+  [`notes/checkpoints/E_publication_readiness.md`](notes/checkpoints/E_publication_readiness.md).
+  The four formal clusters, frozen empirical grades, optional policy/value
+  existence result, scoped behavioral theorem, and first-reader argument all
+  survive. No finding requires returning to proof, experiment execution, claim
+  adjudication, broad interpretation, or a companion run. Publication is ready
+  after one narrow Task 31B repair, followed by Tasks 32--34 in their existing
+  order.
+
+  Independently adjudicated
+  [`External Audit VI`](llm_convos/claude_audit_2026-07-24.md). Confirmed its
+  malformed math span, missing empirical references, neural-motivation gap,
+  title-definition gap, abstention-attribution risk, and multiline-math
+  formatting risk. Corrected two numerical overreadings: `.0038/.0861` are
+  target-weighted issued-`Granted` masses rather than grant recall, and the
+  unweighted `.0124/.1811` true-`Granted` accuracies cannot decompose
+  target-weighted `.4976/.5866` fidelity because the compact traces omit target
+  weights. The exact-WF otherwise-`Withheld` baseline is `.35`. Also rejected a
+  blind DOI substitution while its resolver lands on a broken case-sensitive
+  path; Task 32 will select a live primary publisher destination. Public CI is
+  green at pushed parent `b2869c3` in
+  [run 30124605921](https://github.com/TristanMiano/value_logic/actions/runs/30124605921).
+  All 177 checks, the WSL native/Python preflight, local links, and the staged
+  patch pass in both the workspace and a clean archive; edited files are
+  LF-only. Checkpoint E itself changes no theorem, evidence grade, or frozen
+  result.
+
+- [ ] **Task 31B — Apply the narrow post-audit publication repair.**
+
+  Repair the unpaired `$.06+$.06$` expression in `paper.md` and repeat the
+  systematic delimiter scan. Add the frozen empirical reference values in
+  Section 7.3 and Appendix E with their populations kept distinct: target
+  `Granted/non-Granted` prevalence `.35/.65`; target-weighted pipeline
+  issued-`Granted` masses `.0038/.0861`; unweighted design-distribution
+  conditional accuracy on true-`Granted` requests `.0124/.1811`; and the exact
+  target-weighted `.35` status baseline for `Undefined` when ill-formed and
+  otherwise `Withheld`. State that issued-`Granted` mass is not grant recall,
+  the unweighted conditional rows cannot reconstruct target-weighted fidelity,
+  and target-weighted conditional traces remain unavailable under `21-D3`.
+  These are descriptive companions, not new endpoints or grades.
+
+  Add a compact affirmative explanation near the neural representation section
+  of why this logic seemed promising for ReLU systems and what survived: named
+  threshold margins fit rectification; finite proof-erased CPWL composition has
+  an exact reference realization; changed-threshold reuse was supported in the
+  frozen setting; and activation/scientific-atlas alignment plus semantic
+  depth-to-nested-license correspondence remain untested. Define “value logic”
+  in Section 3 as the logic of task-relative reliance value without identifying
+  truth with utility or taking a position on true-utility existence. Revise the
+  introduction and empirical mnemonic so both complete pipelines' heavy
+  fallback is visible and the structured pipeline's near-total fallback is
+  described without assigning a causal share to its conservative wrapper.
+  Prefer compact replacements to a large historical table; do not add a fifth
+  contribution, rerun the experiment, regrade a claim, add Appendix G, or begin
+  publication formatting. Propagate a short erratum/handoff through the
+  technical and reader audits, outline, and status documents; validate in the
+  workspace and a clean archive.
+
 - [ ] **Task 32 — Make `paper.md` Gist-compatible and publication-ready.**
 
-  Verify GitHub Markdown and math delimiters, links, references, figures, Unicode, heading structure, and copy/paste behavior. Remove repository-only scaffolding from the public artifact and confirm that appendix/repository links do not interrupt the main narrative. Re-run the clean-checkout verification/hash path so publication does not reproduce the C20 transport failure.
+  Verify GitHub Markdown and math delimiters, links, references, figures,
+  Unicode, heading structure, and copy/paste behavior. Reflow the five known
+  inline-math spans that currently cross physical line breaks, repeat the
+  whole-document delimiter-parity scan, and inspect the result with a
+  GitHub-compatible renderer. This task establishes Gist compatibility; it
+  does not create or publish a public Gist without explicit authorization.
+  Recheck the He et al. DOI and publisher destinations and use a live primary
+  source rather than mechanically preferring a broken resolver. Remove
+  repository-only scaffolding from the public artifact and confirm that
+  appendix/repository links do not interrupt the main narrative. Re-run the
+  clean-checkout verification/hash path so publication does not reproduce the
+  C20 transport failure.
 
 - [ ] **Task 33 — Produce the Substack adaptation.**
 
-  Create `substack_post.txt` from the audited paper. Use plain prose, Unicode where helpful, at most one displayed formal judgment, no Markdown formatting, and the running concrete example. Follow the narrative order physics succession → fallback/status quo and the origin of `epsilon` → open licenses, overlap, and revision → classifier/dual-use ReLU intuition → the explicit correction from positive activation to predicted margin to certificate-relative surplus to full license → hybrid boundaries and results. Adapt Task 16's canonical adequacy/improvement/constraint example in plain language so zero, open, refuted, missing, surplus, full license, and post-license ranking remain concrete without reproducing the full vector table. Carry the Checkpoint C1 transfer-versus-coverage and calibration-versus-usefulness result, plus every surviving claim-ledger `X1` impact, into this adaptation. Preserve the blog-facing line **“Remembering the number helped when the rule changed; insisting on a safely bounded number often left the system unwilling to decide.”** If policy/value material is retained, explicitly say that the finite existence isomorphism survives and that failures of standard-return or rollout reconstruction concern semantics, identification, and practicality rather than existence. Present the author's model-of-a-black-box motivation as motivation, and use Task 22A only for the scoped claim that a properly baselined held-out log-loss gain proves partial outcome/task-quotient information, not interpretability or complete transparency. Retain the ReLU-reference-not-uniqueness caveat and all other necessary qualifications without introducing claims absent from the paper.
+  Create `substack_post.txt` from the audited paper. Use plain prose, Unicode
+  where helpful, at most one displayed formal judgment, no Markdown formatting,
+  and the running concrete example. Preserve the narrative order physics
+  succession → pragmatic value → fallback/status quo and the origin of
+  `epsilon` → open licenses, overlap, and revision → what ReLU margins,
+  composition, and reusable statistics seemed to promise → what the formal and
+  empirical work actually established → the explicit correction from positive
+  activation to predicted margin to certificate-relative surplus to full
+  license → hybrid boundaries and results. Adapt Task 16's canonical
+  adequacy/improvement/constraint example in plain language so zero, open,
+  refuted, missing, surplus, full license, and post-license ranking remain
+  concrete without reproducing the full vector table. Carry the Checkpoint C1
+  transfer-versus-coverage and calibration-versus-usefulness result, plus every
+  surviving claim-ledger `X1` impact, into this adaptation. Preserve the
+  blog-facing contrast that remembering the number helped when the rule
+  changed while both complete pipelines often declined to decide and fallback
+  in the tested structured pipeline was nearly total. Keep `.65`,
+  `.9962/.9139`, and any use of `.0124/.1811` with their exact weighting labels,
+  and do not present the complete-pipeline difference as an identified wrapper
+  effect. If policy/value material is retained, explicitly say that the finite
+  existence isomorphism survives and that failures of standard-return or
+  rollout reconstruction concern semantics, identification, and practicality
+  rather than existence. Present the author's model-of-a-black-box motivation
+  as motivation, and use Task 22A only for the scoped claim that a properly
+  baselined held-out log-loss gain proves partial outcome/task-quotient
+  information, not interpretability or complete transparency. Retain the
+  ReLU-reference-not-uniqueness caveat and all other necessary qualifications
+  without introducing claims absent from the paper.
 
 - [ ] **Task 34 — Cross-check and finalize both artifacts.**
 
-  Compare `paper.md` and `substack_post.txt` claim by claim using an explicit crosswalk, including `F35`, `F35a--c`, `F36`, and every C1 no-claim boundary; proofread both, lint Markdown and plain-text constraints, verify references/figures/copy-paste behavior, ensure the repository resume instructions are current, and record the final completion note here.
+  Compare `paper.md` and `substack_post.txt` claim by claim using an explicit
+  crosswalk, including `F35`, `F35a--c`, `F36`, every C1 no-claim boundary, and
+  the Checkpoint E descriptive reference values. Confirm that issued-`Granted`
+  mass is not called recall and that target-weighted conditional grant accuracy
+  remains unavailable. Cross-check the “value logic” definition, the compact
+  neural-fit answer, noncausal fallback wording, and the finite policy/value
+  existence boundary. Proofread both, lint Markdown and plain-text constraints,
+  verify references/figures/copy-paste behavior, ensure the repository resume
+  instructions are current, and record the final completion note here.
 
 ## Decision log
 
+- **2026-07-24 — Publication needs one narrow repair, not a return to research.** Checkpoint E inserts Task 31B before formatting. It will fix one malformed math span; add the frozen `.35/.65`, `.0038/.0861`, `.0124/.1811`, and `.35` reference values with their target-versus-unweighted scopes; define “value logic”; state the affirmative ReLU motivation and its open alignment questions; and remove causal overreading from the fallback comparison. Issued-`Granted` mass is not recall, unweighted conditional traces do not decompose target-weighted fidelity, and no theorem, experiment, grade, Appendix G, or policy/value existence claim is reopened.
 - **2026-07-21 — One operational policy/value theorem precedes drafting.** Checkpoint D inserts Task 22B between Tasks 25 and 26. Task 22B now proves distribution-scoped behavioral reconstruction from action-score error and action gaps and separates score-code, return-semantic `Q`, scalar-`V` harness, and stochastic variants. It does not reopen the finite encoder-image existence proposition or initiate a companion experiment.
 - **2026-07-21 — Raw decoding and conservative authorization use distinct margin guarantees.** Coordinatewise error at most `rho` gives raw argmax stability above a true `2 rho` gap. It also supplies the valid generic certified pairwise-gap radius `r_gap:=2 rho`; guaranteeing that the corresponding estimated-gap decoder both recovers and does not abstain can require true gap above `2 r_gap=4 rho`. A separately accepted direct gap-error certificate may supply a tighter valid radius. The behavioral atom remains one profile requirement rather than a complete license.
 - **2026-07-21 — Value-output semantics is a future inward anchor.** The author proposes using a licensed value-like output as the first semantic foothold for later investigation of earlier layers. This is motivation. Work inside an independently trained surrogate describes that surrogate; a claim about the original policy also requires an explicit hidden-state alignment/readout link and policy-side interventions. Output semantics supplies neither automatically.
