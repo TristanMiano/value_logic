@@ -186,6 +186,9 @@ agrees with the source on 868 inline and 105 display expressions. A post-push
 browser check exposed that its later MathJax sanitizer rejects
 `\operatorname`; the follow-up repair replaces all 20 uses with
 `\mathop{\text{...}}`, preserving operator spacing and mathematical content.
+Two later screenshots exposed the only `\hline` and the only scalable-brace
+probability event as further browser incompatibilities; the paper now uses an
+unruled array and equivalent square event brackets.
 The parsed render has the intended 73 headings, 14 tables, two figures, and one
 text code block, with no raw math delimiter or relative path. Figures and
 Appendix E reproduction links are pinned to an immutable pushed package. The

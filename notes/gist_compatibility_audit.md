@@ -47,9 +47,21 @@ All 20 occurrences are now written in the issue-recorded
 `\mathop{\text{...}}` workaround form, which preserves operator spacing. This
 is a typography-only substitution: the formulas, theorem statements, and
 proof steps are unchanged. A source check now requires zero `\operatorname`
-occurrences. Because the repair is not yet pushed, its final live-browser
-confirmation remains a post-push observation rather than a completed local
-claim.
+occurrences. That repair was subsequently pushed; the next live-browser review
+reported no further `\operatorname` example and instead exposed the two
+different incompatibilities below.
+
+Two later live-browser screenshots exposed two further isolated compatibility
+failures in otherwise ordinary TeX. The running-example array's horizontal
+rule was reported as a misplaced `\hline`; the public table does not require
+rules, so it now uses an unruled three-column array. Appendix F's Hoeffding
+event used `\left\{...\right\}`, which the browser reported as an unrecognized
+left delimiter; it now uses the equally standard probability-event brackets
+`\left[...\right]`, already rendered elsewhere in the paper. A whole-paper
+scan found no second occurrence of either rejected fragment. The existing
+paper-math regression now excludes all three known browser failures without
+increasing the test count. This second repair is not yet pushed, so live
+confirmation of these two formulas remains a post-push observation.
 
 ## Source and first-stage GitHub-render checks
 
@@ -118,7 +130,8 @@ Workspace validation passed after the browser-macro regression was added:
 - `git diff --check`: pass; and
 - edited text files are LF-only; and
 - the corrected paper contains zero `\operatorname` and 20
-  `\mathop{\text{...}}` operator spellings.
+  `\mathop{\text{...}}` operator spellings, zero `\hline`, and zero
+  `\left\{`.
 
 The original checks were repeated against a clean archive with the exact Task
 32 patch before that task commit. The browser-macro erratum, including its new

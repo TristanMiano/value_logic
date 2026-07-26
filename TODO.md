@@ -919,7 +919,11 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   `\mathop{\text{...}}` form and added an explicit zero-`\operatorname`
   regression to the verification suite, which now passes 178/178. This changes
   typography only. Live browser confirmation of the correction remains a
-  post-push observation.
+  post-push observation. A second live-browser follow-up removed the sole
+  `\hline` after GitHub reported it as misplaced and changed the sole
+  `\left\{...\right\}` probability event to equivalent square brackets after
+  GitHub rejected the left delimiter. The same regression now excludes all
+  three known fragments.
 
 - [ ] **Task 33 — Produce the Substack adaptation.**
 

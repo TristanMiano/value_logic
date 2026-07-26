@@ -221,8 +221,8 @@ The request separately requires absolute adequacy $J(e)\leq.20$ and latency
 $T(e)\leq50\text{ ms}$. At the initial stage, on an overlap,
 
 $$
-\begin{array}{c|cc}
-&U_J&U_T\\ \hline
+\begin{array}{ccc}
+&U_J&U_T\\
 M_{old}&[.14,.18]&[43,47]\\
 M_{succ}&[.11,.16]&[45,49]
 \end{array}
@@ -2896,11 +2896,11 @@ $$
 Hoeffding's inequality gives, for $0<\alpha<1$,
 
 $$
-\Pr\!\left\{
+\Pr\!\left[
 D_\mu(\pi,\widehat\pi)
 \leq\widehat D_n+
 \sqrt{\frac{\log(1/\alpha)}{2n}}
-\right\}\geq1-\alpha.
+\right]\geq1-\alpha.
 $$
 
 This directly bounds disagreement under $\mu$; it does not identify the
