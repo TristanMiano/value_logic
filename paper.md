@@ -285,7 +285,7 @@ statistics such as interval endpoints, risks, and margins. Exact external
 machinery retains evidence identity, well-formedness, inclusive boundary rules,
 profile aggregation, active masks, and fallback. For an accepted loss interval
 $[l,u]$ at threshold $\epsilon$, the signed support margin is
-$m_{support}=\epsilon-u$. Positive $\operatorname{ReLU}(m_{support})$ can expose
+$m_{support}=\epsilon-u$. Positive $\mathop{\text{ReLU}}(m_{support})$ can expose
 strict certificate-relative surplus for that named requirement. A zero
 activation cannot finish the diagnosis: supported equality, an interval
 crossing the boundary, and missing evidence can all yield zero. The exact state
@@ -617,7 +617,7 @@ $$
 
 For a statistical adequacy atom with target risk $\theta$, threshold
 $\epsilon$, and regions $C_i=[L_i,U_i]$, suppose coverage holds eventually,
-$\operatorname{diam}(C_i)\to0$, and
+$\mathop{\text{diam}}(C_i)\to0$, and
 $\gamma=|\theta-\epsilon|>0$. Then the atom eventually stabilizes as supported
 when $\theta<\epsilon$ and refuted when $\theta>\epsilon$.
 
@@ -1310,7 +1310,7 @@ E_{\rm can}(\pi)(x,a)=\mathbf 1\{a=\pi(x)\}.
 $$
 
 A tie-specified argmax decoder $D_\tau$ satisfies
-$D_\tau E_{\rm can}=\operatorname{id}$, and the reverse composite is the
+$D_\tau E_{\rm can}=\mathop{\text{id}}$, and the reverse composite is the
 identity on the encoder image. This is an exact finite encoder-image
 isomorphism and existence result. By itself, this construction makes no claim
 about return semantics, uniqueness, naturality, interpretability, or practical
@@ -1822,16 +1822,16 @@ rebutted.
 
 For statistical stabilization, choose $N_{cov}$ after which
 $\theta\in C_i$ and $N_{diam}$ after which
-$\operatorname{diam}(C_i)<\gamma$. Set
+$\mathop{\text{diam}}(C_i)<\gamma$. Set
 $N=\max(N_{cov},N_{diam})$. If $\theta<\epsilon$, then for $i\geq N$,
 
 $$
-U_i\leq\theta+\operatorname{diam}(C_i)
+U_i\leq\theta+\mathop{\text{diam}}(C_i)
 <\theta+\gamma=\epsilon,
 $$
 
 so every later atom is supported. If $\theta>\epsilon$, then
-$L_i\geq\theta-\operatorname{diam}(C_i)>\theta-\gamma=\epsilon$, so every
+$L_i\geq\theta-\mathop{\text{diam}}(C_i)>\theta-\gamma=\epsilon$, so every
 later atom is refuted. For finitely many required atoms, take the maximum of
 their stabilization indices and the eventual $WF$ index. At
 $\theta=\epsilon$, intervals may straddle forever, approach from the supported
@@ -1962,7 +1962,7 @@ transformer can validly certify the false parent bound.
 The path-sensitivity constructor is one instance of Theorem 6. At node $v$ use
 
 $$
-g_v:\quad b_v=\delta_v+\sum_{u\in\operatorname{pred}(v)}L_{u,v}b_u,
+g_v:\quad b_v=\delta_v+\sum_{u\in\mathop{\text{pred}}(v)}L_{u,v}b_u,
 $$
 
 and let its certificate record the local tube, metric, interface, predecessor
@@ -2051,7 +2051,7 @@ bound on the reachable perturbation tube, and coordinatewise Lipschitzness give
 
 $$
 e_v\leq\delta_v+
-\sum_{u\in\operatorname{pred}(v)}L_{u,v}e_u.
+\sum_{u\in\mathop{\text{pred}}(v)}L_{u,v}e_u.
 $$
 
 Repeatedly substitute this recurrence in topological order. Each intrinsic
@@ -2128,12 +2128,12 @@ d(z)=N(\omega)\quad\text{for any }\omega\text{ with }c(\omega)=z.
 $$
 
 Any two representatives have equal $N$-values, so $d$ is well defined on
-$\operatorname{im}(c)$ and $d\circ c=N$. The same definition shows that every
-exact code maps uniquely to $\operatorname{im}(N)$, making the latter the
+$\mathop{\text{im}}(c)$ and $d\circ c=N$. The same definition shows that every
+exact code maps uniquely to $\mathop{\text{im}}(N)$, making the latter the
 coarsest code up to one-to-one relabeling. Replacing $N_{\mathcal F}$ by
 $N_{\mathcal A}$ proves the audit form. $\square$
 
-If $\operatorname{im}(N)$ has $m$ members, an injective fixed-length binary
+If $\mathop{\text{im}}(N)$ has $m$ members, an injective fixed-length binary
 code needs at least $\lceil\log_2m\rceil$ bits. This argument counts
 distinguishable finite symbols. It does not constrain real-valued neural width,
 parameter count, precision, robustness, sample complexity, or learnability.
@@ -2325,8 +2325,8 @@ one-to-one relabeling for the subfamily containing all coordinate projections.
 Every declared consumer is a function of $R$ by construction. If another code
 $c$ serves every coordinate projection, equal $c$-codes imply equality of
 every $r_i$ and $z_i$, hence equality of $R$. The representative construction
-from Theorem 10 supplies a decoder from $\operatorname{im}(c)$ to
-$\operatorname{im}(R)$. If each margin is CPWL, its positive numerical
+from Theorem 10 supplies a decoder from $\mathop{\text{im}}(c)$ to
+$\mathop{\text{im}}(R)$. If each margin is CPWL, its positive numerical
 coordinate is exactly ReLU-realizable. $\square$
 
 The result is deliberately consumer-relative. Let two plans have equal
@@ -2348,7 +2348,7 @@ Finally, under the positive unit change $m_i'=\lambda_i m_i$, logical status
 is unchanged while unnormalized surplus becomes $z_i'=\lambda_i z_i$. Setting
 $\sigma_i'=\lambda_i\sigma_i$ makes normalized surplus invariant. A linear
 consumer may instead transform covariantly by
-$A'=A\operatorname{diag}(\lambda_i^{-1})$. Independent unregistered rescalings
+$A'=A\mathop{\text{diag}}(\lambda_i^{-1})$. Independent unregistered rescalings
 can change cross-channel argmax. Multiplying a variable payload by a margin is
 generally bilinear, changes units and boundary behavior, and is a new plan
 requiring its own approximation, grade, and evidence.
@@ -2696,15 +2696,15 @@ $D_\tau:\mathcal W\to\Pi$ choose its tie-broken score maximizer.
 For every $\pi$, its chosen action is the unique coordinate with score one, so
 
 $$
-D_\tau\circ E_{\rm can}=\operatorname{id}_\Pi.
+D_\tau\circ E_{\rm can}=\mathop{\text{id}}_\Pi.
 $$
 
-On $\operatorname{im}(E_{\rm can})$, decoding followed by encoding returns the
+On $\mathop{\text{im}}(E_{\rm can})$, decoding followed by encoding returns the
 same one-hot table:
 
 $$
 E_{\rm can}\circ D_\tau
-=\operatorname{id}_{\operatorname{im}(E_{\rm can})}.
+=\mathop{\text{id}}_{\mathop{\text{im}}(E_{\rm can})}.
 $$
 
 The two maps are therefore a bijection after restricting the score space to the
@@ -2725,12 +2725,12 @@ $$
 The policy composite is the identity exactly on the self-greedy subset
 
 $$
-\operatorname{Fix}_Q=
+\mathop{\text{Fix}}_Q=
 \{\pi:\pi(x)=G_{M,\tau}(Q^\pi)(x)
 \text{ on every claimed state}\}.
 $$
 
-On $F_M^Q(\operatorname{Fix}_Q)$ the reverse composite is also the identity.
+On $F_M^Q(\mathop{\text{Fix}}_Q)$ the reverse composite is also the identity.
 There is no identity on all policies or all numerical $Q$-tables. In the
 standard finite discounted maximizing setting, global self-greediness is an
 optimality condition. A suboptimal policy can therefore map through $Q^\pi$
