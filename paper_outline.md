@@ -1,14 +1,14 @@
 # Paper Claim Freeze and Outline
 
 Status: frozen publication contract after Task 25, amended through the
-completed Task 32 Gist-compatibility pass
+completed Task 32 Gist-compatibility pass and browser-macro erratum
 Date: 2026-07-18; latest publication amendment 2026-07-25
 Drafting status: Tasks 26--30 implemented the complete substantive
 [`paper.md`](paper.md) draft: §§1--11 and Appendices A--F. Tasks 31 and 31A
 completed the mathematical/citation and reader/narrative audits. Checkpoint E
 found the draft publication-ready after one bounded content repair; Task 31B
-completed it, and Task 32 completed the Markdown/render gate, leaving Tasks
-33--34. The audited draft restores the
+completed it, and Task 32 completed the Markdown/render gate and its follow-up
+browser-macro correction, leaving Tasks 33--34. The audited draft restores the
 originating Newton/Standard-Model/open-chain motivation, carries all four formal
 theorem clusters and their constructive boundaries, reports the complete frozen
 empirical trade-off, and keeps the optional policy/value bridge within its
@@ -1009,4 +1009,6 @@ and Checkpoint E preserved the same claim set while inserting one narrow
 publication repair. Task 31B has completed that repair without reopening the
 four headline clusters. Task 29 retains the bridge proposition compactly in
 §8, with its full proof and countermodels in Appendix F. Task 32 has established
-Gist compatibility without creating a Gist. Task 33 is next.
+Gist compatibility without creating a Gist; its post-push browser erratum
+replaces all unsupported `\operatorname` uses without changing any formula's
+meaning. Task 33 is next.

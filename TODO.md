@@ -886,9 +886,9 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   equality line parsed as a heading, adjacent formula underscores/asterisks
   parsed as emphasis, and list-nested display math parsed as code. The final
   source has 868 closed inline expressions and 105 display expressions with
-  exact GitHub-render agreement, zero cross-line inline span, zero raw dollar
-  residue, 73 intended headings, 14 tables, two images, one text code block,
-  and no relative link or image target.
+  exact GitHub `/markdown` API element agreement, zero cross-line inline span,
+  zero raw dollar residue, 73 intended headings, 14 tables, two images, one
+  text code block, and no relative link or image target.
 
   The two figures and Appendix E repository references now use immutable public
   URLs pinned to pushed commit `446f46645defa681ef840850fdec8b5ed47d3f4e`,
@@ -901,7 +901,7 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   NFC, heading levels are coherent, the public source contains no internal task
   scaffolding, and all edited text files are LF-only.
 
-  All 177 checks, the WSL native/Python preflight, local links, GitHub render
+  All 177 checks, the WSL native/Python preflight, local links, GitHub API
   assertions, and the exact Task 32 patch pass in the workspace and a clean
   archive. No public Gist was created, no final confirmation was rerun, and no
   theorem, empirical result, grade, or policy/value boundary changed. Public CI
@@ -911,6 +911,15 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   [`paper outline`](paper_outline.md),
   [`project specification`](notes/project_spec.md), and
   [`README`](README.md). Task 33 is next.
+
+  Browser-stage erratum, 2026-07-25: after the Task 32 commit was pushed, live
+  GitHub screenshots showed that the browser-side MathJax sanitizer rejects
+  `\operatorname`, a stage not executed by the `/markdown` API assertions.
+  Replaced all 20 occurrences with the spacing-preserving
+  `\mathop{\text{...}}` form and added an explicit zero-`\operatorname`
+  regression to the verification suite, which now passes 178/178. This changes
+  typography only. Live browser confirmation of the correction remains a
+  post-push observation.
 
 - [ ] **Task 33 — Produce the Substack adaptation.**
 

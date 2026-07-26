@@ -2,9 +2,9 @@
 
 Date: 2026-07-25
 
-Status: complete; `paper.md` is compatible with GitHub's Markdown renderer and
-ready for the final cross-artifact publication checks. No Gist was created or
-published.
+Status: complete after a browser-stage macro erratum; the corrected `paper.md`
+is ready for post-push live-browser confirmation and the final cross-artifact
+publication checks. No Gist was created or published.
 
 ## Durable result
 
@@ -33,7 +33,25 @@ The repairs use an aligned equality, prose or TeX spellings that do not collide
 with emphasis, and a single-line inline probability bound in the list. They do
 not alter the mathematical statements.
 
-## Source and GitHub-render checks
+### Browser-stage macro erratum
+
+After the Task 32 commit was pushed, live GitHub screenshots exposed a stage
+that the `/markdown` API check does not exercise. The API had correctly wrapped
+the formulas in `<math-renderer>` elements, but GitHub's browser-side MathJax
+sanitizer then rejected `\operatorname`. GitHub's own `github/markup` issue
+tracker records the same error and gives `\mathop{\text{...}}` as a
+spacing-preserving workaround. The paper used `\operatorname` 20 times across
+`ReLU`, `diam`, `id`, `pred`, `im`, `diag`, and `Fix`.
+
+All 20 occurrences are now written in the issue-recorded
+`\mathop{\text{...}}` workaround form, which preserves operator spacing. This
+is a typography-only substitution: the formulas, theorem statements, and
+proof steps are unchanged. A source check now requires zero `\operatorname`
+occurrences. Because the repair is not yet pushed, its final live-browser
+confirmation remains a post-push observation rather than a completed local
+claim.
+
+## Source and first-stage GitHub-render checks
 
 The final source scan reports:
 
@@ -48,14 +66,14 @@ The final source scan reports:
 - NFC Unicode, no replacement character, NUL, tab, or carriage return; and
 - 13 public theorem/proposition statements, unchanged.
 
-The exact GitHub `/markdown` API, in `gfm` mode and repository context, rendered
+The exact GitHub `/markdown` API, in `gfm` mode and repository context, produced
 868 inline and 105 display `<math-renderer>` elements: exact agreement with the
 source counts. The result contains 73 headings, 14 tables, two images, and one
 code block; it contains no dollar sign outside a math element, no formula
 fragment captured as emphasis, no unintended heading, and no relative
-`href`/`src`. This supplies a renderer-level copy/paste check as well as
-delimiter parity: equations remain complete raw LaTeX text inside their
-rendered elements rather than disappearing into Markdown structure.
+`href`/`src`. This supplies first-stage Markdown parsing, copy/paste, and
+delimiter parity. It does not by itself execute the browser-side MathJax macro
+allowlist, which is why the original `\operatorname` defect escaped it.
 
 Both figures were visually inspected. Their pinned raw URLs return `200
 image/png`, and their local files remain readable RGBA PNGs at 1440×864 and
@@ -91,17 +109,21 @@ automated-access protection, not silently counted as a successful HTTP fetch.
 
 ## Validation and scope
 
-Workspace validation passed:
+Workspace validation passed after the browser-macro regression was added:
 
-- `python -m verification`: 177/177;
+- `python -m verification`: 178/178;
 - `python -m experiments.run_repaired_experiment --preflight`: pass, including
   source hashes and release/debug native equivalence, without final payload;
 - `python -m verification.check_links .`: all local links valid;
 - `git diff --check`: pass; and
-- edited text files are LF-only.
+- edited text files are LF-only; and
+- the corrected paper contains zero `\operatorname` and 20
+  `\mathop{\text{...}}` operator spellings.
 
-The same checks are repeated against a clean archive with the exact Task 32
-patch before the task commit. Public CI remains a post-push observation. Task
-32 does not authorize creating a public Gist, drafting the Substack
-adaptation, changing a scientific claim, or rerunning final confirmation.
-Task 33 is next.
+The original checks were repeated against a clean archive with the exact Task
+32 patch before that task commit. The browser-macro erratum, including its new
+regression, was likewise applied to a fresh archive and passed 178/178,
+preflight, and local-link validation. Public CI and live browser rendering
+remain post-push observations. Task 32 does not authorize creating a public
+Gist, drafting the Substack adaptation, changing a scientific claim, or
+rerunning final confirmation. Task 33 is next.
