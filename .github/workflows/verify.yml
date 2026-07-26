@@ -5,7 +5,7 @@ on:
   pull_request:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   verify:
@@ -14,7 +14,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: agent/task-33-completion-record-v2
-          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
@@ -23,7 +22,6 @@ jobs:
           python -m pip install numpy==2.2.5 matplotlib==3.10.8
           python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
       - name: Repair stale Task 33 specification pointers
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'agent/task-33-completion-record-v2' && github.actor != 'github-actions[bot]'
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -68,11 +66,7 @@ evidence or formal obstacle caused the revision.
           text = text.replace(old_conclusion, new_conclusion, 1)
           path.write_text(text, encoding="utf-8", newline="\n")
           PY
-          git fetch origin main
-          git show origin/main:.github/workflows/verify.yml > .github/workflows/verify.yml
-          rm .task33-spec-ci-kick
       - name: Run full repaired-tree validation
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'agent/task-33-completion-record-v2' && github.actor != 'github-actions[bot]'
         run: |
           python -m verification
           python -m experiments.run_repaired_experiment --preflight
@@ -85,14 +79,9 @@ evidence or formal obstacle caused the revision.
               if b"\r" in data:
                   raise SystemExit(f"{name} is not LF-only")
           PY
-      - name: Commit repaired completion record
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'agent/task-33-completion-record-v2' && github.actor != 'github-actions[bot]'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add notes/project_spec.md .github/workflows/verify.yml .task33-spec-ci-kick
-          git commit -m "Task 33: repair final specification pointers"
-          git push origin HEAD:agent/task-33-completion-record-v2
-      - name: Run semantic and link checks
-        if: github.event_name != 'pull_request' || github.event.pull_request.head.ref != 'agent/task-33-completion-record-v2' || github.actor == 'github-actions[bot]'
-        run: python -m verification
+      - name: Upload repaired project specification
+        uses: actions/upload-artifact@v4
+        with:
+          name: task33-project-spec-repair
+          path: notes/project_spec.md
+          if-no-files-found: error
