@@ -1,13 +1,14 @@
 # Paper Claim Freeze and Outline
 
 Status: frozen publication contract after Task 25, amended through the
-completed Task 31B publication repair
+completed Task 32 Gist-compatibility pass
 Date: 2026-07-18; latest publication amendment 2026-07-25
 Drafting status: Tasks 26--30 implemented the complete substantive
 [`paper.md`](paper.md) draft: §§1--11 and Appendices A--F. Tasks 31 and 31A
 completed the mathematical/citation and reader/narrative audits. Checkpoint E
 found the draft publication-ready after one bounded content repair; Task 31B
-has completed it, leaving Tasks 32--34. The audited draft restores the
+completed it, and Task 32 completed the Markdown/render gate, leaving Tasks
+33--34. The audited draft restores the
 originating Newton/Standard-Model/open-chain motivation, carries all four formal
 theorem clusters and their constructive boundaries, reports the complete frozen
 empirical trade-off, and keeps the optional policy/value bridge within its
@@ -15,12 +16,17 @@ evidence grades.
 Target: one approximately 11,100-word main paper, technical appendices, and a
 separate 1,500--1,800-word public essay
 
-The Task 31B count is 11,748 main-text words under the repository token rule,
-about 5.8% above the approximate target. Task 31A had removed 1,673 words of
-repeated interface, implementation, and qualification prose; Task 31B then
-added 343 words to answer the title/neural-motivation questions and make the
-empirical reference populations explicit. The disposition and Substack
-handoff are in [`notes/reader_audit.md`](notes/reader_audit.md).
+The Task 32 source count is 11,763 main-text words under the repository token
+rule, about 6.0% above the approximate target. The 15-token increase from Task
+31B's 11,748 is entirely due to replacing two relative figure paths with
+immutable absolute URLs; reader-facing prose did not grow. Task 31A had removed
+1,673 words of repeated interface, implementation, and qualification prose;
+Task 31B then added 343 words to answer the title/neural-motivation questions
+and make the empirical reference populations explicit. The reader disposition
+and Substack handoff are in
+[`notes/reader_audit.md`](notes/reader_audit.md); the publication-format record
+is in
+[`notes/gist_compatibility_audit.md`](notes/gist_compatibility_audit.md).
 
 This document selects the claims and argumentative order for the public
 artifacts. It is not a draft assembled from every repository result. A statement
@@ -1002,4 +1008,5 @@ Task 22B discharged its proof gate with a scoped operational bridge proposition,
 and Checkpoint E preserved the same claim set while inserting one narrow
 publication repair. Task 31B has completed that repair without reopening the
 four headline clusters. Task 29 retains the bridge proposition compactly in
-§8, with its full proof and countermodels in Appendix F. Task 32 is next.
+§8, with its full proof and countermodels in Appendix F. Task 32 has established
+Gist compatibility without creating a Gist. Task 33 is next.

@@ -37,7 +37,7 @@ Checkpoints are roadmap-review tasks, not ceremonial status updates. At each che
 
 Checkpoint edits apply prospectively. They may add follow-up work for a completed result, but they do not silently mark completed work undone or rewrite its history. Prefer stable checkpoint labels and suffixed new tasks over renumbering tasks that are already referenced elsewhere.
 
-**Next task: Task 32 — Make `paper.md` Gist-compatible and publication-ready.**
+**Next task: Task 33 — Produce the Substack adaptation.**
 
 ## Project question
 
@@ -864,7 +864,7 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   Task 31B's public result remains pending an authorized push. No experiment
   was rerun or regraded. Task 32 is next.
 
-- [ ] **Task 32 — Make `paper.md` Gist-compatible and publication-ready.**
+- [x] **Task 32 — Make `paper.md` Gist-compatible and publication-ready.**
 
   Verify GitHub Markdown and math delimiters, links, references, figures,
   Unicode, heading structure, and copy/paste behavior. Reflow the five known
@@ -878,6 +878,39 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   appendix/repository links do not interrupt the main narrative. Re-run the
   clean-checkout verification/hash path so publication does not reproduce the
   C20 transport failure.
+
+  Completed 2026-07-25. The durable formatting and live-link record is
+  [`notes/gist_compatibility_audit.md`](notes/gist_compatibility_audit.md).
+  Reflowed all five known cross-line inline expressions and repaired the
+  additional GitHub-render collisions discovered during inspection: a bare
+  equality line parsed as a heading, adjacent formula underscores/asterisks
+  parsed as emphasis, and list-nested display math parsed as code. The final
+  source has 868 closed inline expressions and 105 display expressions with
+  exact GitHub-render agreement, zero cross-line inline span, zero raw dollar
+  residue, 73 intended headings, 14 tables, two images, one text code block,
+  and no relative link or image target.
+
+  The two figures and Appendix E repository references now use immutable public
+  URLs pinned to pushed commit `446f46645defa681ef840850fdec8b5ed47d3f4e`,
+  so copying the paper into a Gist does not strand local paths. The live
+  case-correct Global Science Press page replaces the He et al. DOI resolver's
+  broken lowercase `404` destination while the canonical DOI metadata remains;
+  the Sutton--Barto link now uses the live MIT Press page instead of an
+  author-hosted TLS failure. The final 46-URL sweep found no `404`; automated
+  publisher guards are recorded separately from successful fetches. Unicode is
+  NFC, heading levels are coherent, the public source contains no internal task
+  scaffolding, and all edited text files are LF-only.
+
+  All 177 checks, the WSL native/Python preflight, local links, GitHub render
+  assertions, and the exact Task 32 patch pass in the workspace and a clean
+  archive. No public Gist was created, no final confirmation was rerun, and no
+  theorem, empirical result, grade, or policy/value boundary changed. Public CI
+  remains a post-push observation. Publication edits are in
+  [`paper.md`](paper.md) and [`references.bib`](references.bib); the durable
+  record and handoff were propagated through the
+  [`paper outline`](paper_outline.md),
+  [`project specification`](notes/project_spec.md), and
+  [`README`](README.md). Task 33 is next.
 
 - [ ] **Task 33 — Produce the Substack adaptation.**
 
@@ -924,6 +957,7 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
 
 ## Decision log
 
+- **2026-07-25 — Gist compatibility is established without publication.** The public paper's source and GitHub render agree on 868 inline and 105 display expressions; all links and figures are absolute, with reproducibility material confined to Appendix E and pinned to a pushed immutable package. The He et al. DOI remains canonical metadata, while its case-correct live primary publisher page is the public destination because the resolver currently lands on a lowercase `404`. Compatibility testing did not create a Gist or alter any scientific claim.
 - **2026-07-25 — Empirical fallback references remain population-typed and noncausal.** Target prevalence is `.35` Granted and `.65` non-Granted; `.0038/.0861` are target-weighted issued-`Granted` masses rather than recall; and `.0124/.1811` are unweighted design-distribution accuracies conditional on reference Granted. The compact traces cannot supply target-weighted conditional accuracy or a target-weighted per-outcome decomposition. Both complete pipelines fell back heavily, and their difference does not identify the causal share of the structured objective, interval calibration, or decoder.
 - **2026-07-25 — The affirmative neural-fit answer has formal and empirical layers.** Signed margins fit rectification; finite proof-erased CPWL plan computation has an exact ReLU reference witness; and changed-threshold transfer is supported in the frozen setting. Activation/scientific-atlas alignment and semantic identification of hidden depth with nested licenses remain untested. This is the motivation/disposition thread for the paper and Substack, not a fifth contribution or an architecture-optimality claim.
 - **2026-07-24 — Publication needs one narrow repair, not a return to research.** Checkpoint E inserts Task 31B before formatting. It will fix one malformed math span; add the frozen `.35/.65`, `.0038/.0861`, `.0124/.1811`, and `.35` reference values with their target-versus-unweighted scopes; define “value logic”; state the affirmative ReLU motivation and its open alignment questions; and remove causal overreading from the fallback comparison. Issued-`Granted` mass is not recall, unweighted conditional traces do not decompose target-weighted fidelity, and no theorem, experiment, grade, Appendix G, or policy/value existence claim is reopened.

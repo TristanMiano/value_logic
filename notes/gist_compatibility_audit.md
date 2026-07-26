@@ -1,0 +1,107 @@
+# Task 32 Gist-Compatibility and Publication Audit
+
+Date: 2026-07-25
+
+Status: complete; `paper.md` is compatible with GitHub's Markdown renderer and
+ready for the final cross-artifact publication checks. No Gist was created or
+published.
+
+## Durable result
+
+Task 32 changed presentation and destinations, not the paper's theorem set,
+claim grades, frozen numbers, or interpretive boundaries. The public source now
+has no repository-relative dependency: its two figures use immutable raw links
+to pushed commit
+`446f46645defa681ef840850fdec8b5ed47d3f4e`, and Appendix E's reproduction
+links use immutable GitHub permalinks to the same package. Repository commands,
+hashes, and transport history remain in the reproducibility appendix; no task
+IDs, audit banners, claim-ledger labels, or development scaffolding enter the
+main narrative.
+
+The five known inline expressions that crossed physical lines were reflowed.
+A GitHub-render inspection then found and repaired three additional classes of
+formatting defect:
+
+1. a display containing a physical line consisting only of `=` was parsed as a
+   setext heading rather than mathematics;
+2. adjacent inline expressions containing unprotected `_` or `*` tokens could
+   be joined as Markdown emphasis; and
+3. a display nested in a numbered list degraded to a code block in the complete
+   document.
+
+The repairs use an aligned equality, prose or TeX spellings that do not collide
+with emphasis, and a single-line inline probability bound in the list. They do
+not alter the mathematical statements.
+
+## Source and GitHub-render checks
+
+The final source scan reports:
+
+- 1,736 single-dollar delimiters, forming 868 closed inline expressions;
+- 210 display-dollar delimiter lines, forming 105 display expressions;
+- zero inline expression crossing a physical line;
+- zero unpaired or raw delimiter;
+- 73 headings: one level-1, 18 level-2, and 54 level-3 headings, with no level
+  jump or duplicate title;
+- 48 Markdown link/image occurrences, including two images, all absolute;
+- one fenced `text` command block and no raw HTML dependency;
+- NFC Unicode, no replacement character, NUL, tab, or carriage return; and
+- 13 public theorem/proposition statements, unchanged.
+
+The exact GitHub `/markdown` API, in `gfm` mode and repository context, rendered
+868 inline and 105 display `<math-renderer>` elements: exact agreement with the
+source counts. The result contains 73 headings, 14 tables, two images, and one
+code block; it contains no dollar sign outside a math element, no formula
+fragment captured as emphasis, no unintended heading, and no relative
+`href`/`src`. This supplies a renderer-level copy/paste check as well as
+delimiter parity: equations remain complete raw LaTeX text inside their
+rendered elements rather than disappearing into Markdown structure.
+
+Both figures were visually inspected. Their pinned raw URLs return `200
+image/png`, and their local files remain readable RGBA PNGs at 1440×864 and
+1080×810. The appendix-only repository links likewise return `200`; they no
+longer depend on the Gist's own file namespace.
+
+The established main-text token rule now counts 11,763 words. The 15-token
+increase from Task 31B's 11,748 is entirely the source-level effect of replacing
+two relative figure paths with long immutable URLs; reader-facing prose did not
+grow.
+
+## Live citation and link disposition
+
+The canonical DOI metadata for He, Li, Xu, and Zheng, “ReLU Deep Neural
+Networks and Linear Finite Elements,” remains
+`10.4208/jcm.1901-m2018-0160`. On 2026-07-25 the DOI resolver redirected to
+`https://www.global-sci.com/jcm/article/view/12421`, whose lowercase journal
+path returned `404`. The case-correct primary Global Science Press page,
+`https://www.global-sci.com/JCM/article/view/12421`, returned `200` and exposed
+the title, four authors, *Journal of Computational Mathematics*, volume 38,
+issue 3, pages 502–527, year 2020, and the same DOI. `paper.md` and
+`references.bib` therefore use the live primary page while retaining the
+canonical DOI metadata.
+
+The link sweep also found that the former author-hosted Sutton and Barto book
+page presented a self-signed TLS certificate. The paper and bibliography now
+use the live MIT Press second-edition page. Across the final paper's 46 unique
+external destinations, scripted GET requests returned 30 status `200`, one
+status `202`, and 15 access-control `403` responses at recognizable publisher
+or DOI destinations; none returned `404`. The Caltech page among the bot-guarded
+set was independently opened successfully. The 403 group is recorded as
+automated-access protection, not silently counted as a successful HTTP fetch.
+
+## Validation and scope
+
+Workspace validation passed:
+
+- `python -m verification`: 177/177;
+- `python -m experiments.run_repaired_experiment --preflight`: pass, including
+  source hashes and release/debug native equivalence, without final payload;
+- `python -m verification.check_links .`: all local links valid;
+- `git diff --check`: pass; and
+- edited text files are LF-only.
+
+The same checks are repeated against a clean archive with the exact Task 32
+patch before the task commit. Public CI remains a post-push observation. Task
+32 does not authorize creating a public Gist, drafting the Substack
+adaptation, changing a scientific claim, or rerunning final confirmation.
+Task 33 is next.

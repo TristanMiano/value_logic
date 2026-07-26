@@ -606,8 +606,9 @@ Positive stability results come from conditions that remove the live
 alternative.
 
 **Theorem 3 (two constructive stability regimes).** Let a deterministic atom
-have a finite dependency projection and evaluator $v_a=f_a(\mathsf{dep}_a,
-\mathsf{Rules}_a)$. If a checkable freeze certificate preserves those values,
+have a finite dependency projection and evaluator
+$v_a=f_a(\mathsf{dep}_a,\mathsf{Rules}_a)$. If a checkable freeze certificate
+preserves those values,
 denotations, and rule versions under every admitted event, then
 
 $$
@@ -686,11 +687,14 @@ read projection preserves its instantiated address, diagnostic payload,
 provenance, and $K_3$ value:
 
 $$
+\begin{aligned}
 \mathsf{Env}(s;e,q,P)|_{\mathsf{Read}_s(\mathfrak r,i)}
-=
+&=
 \mathsf{Env}(s';e,q,P)|_{\mathsf{Read}_s(\mathfrak r,i)}
-\quad\Longrightarrow\quad
+\\[-2pt]
+&\quad\Longrightarrow\quad
 \mathsf{Diag}_s(\mathfrak r,i)=\mathsf{Diag}_{s'}(\mathfrak r,i).
+\end{aligned}
 $$
 
 Consequently,
@@ -1184,7 +1188,7 @@ region. Conversely, the observed cross-entropy advantages on boundary and
 in-regime fidelity are strong descriptive results. They were not registered as
 new confirmatory reverse hypotheses.
 
-![Registered fidelity endpoints](experiments/figures/primary_endpoints_v1_1.png)
+![Registered fidelity endpoints](https://raw.githubusercontent.com/TristanMiano/value_logic/446f46645defa681ef840850fdec8b5ed47d3f4e/experiments/figures/primary_endpoints_v1_1.png)
 
 ### 7.3 Calibration, errors, and fallback must be read together
 
@@ -1237,7 +1241,7 @@ designed: inactive selection was zero for both arms. That safety invariant says
 that an excluded plan was not reactivated; it does not show that a useful plan
 was licensed or that fallback risk was acceptable.
 
-![Registered marginal proposal coverage](experiments/figures/coverage_v1_1.png)
+![Registered marginal proposal coverage](https://raw.githubusercontent.com/TristanMiano/value_logic/446f46645defa681ef840850fdec8b5ed47d3f4e/experiments/figures/coverage_v1_1.png)
 
 The result is summarized by the distinction that motivated this test:
 
@@ -1455,7 +1459,7 @@ by itself.
 Finite feed-forward ReLU networks compute continuous piecewise-affine maps, and
 finite CPWL functions admit exact ReLU realizations under the cited conventions
 ([Arora et al. 2018](https://openreview.net/forum?id=B1J_rgWRW); [He et al.
-2020](https://computmath.cjoe.ac.cn/jcm/EN/10.4208/jcm.1901-m2018-0160)).
+2020](https://www.global-sci.com/JCM/article/view/12421)).
 Those facts are inputs to the reference construction. The paper adds the typed
 factorization among learned statistics, exact states, masks, registry, and
 fallback, plus seam conditions. Exact representation gives neither an
@@ -1466,8 +1470,8 @@ tests one implementation without establishing architectural optimality.
 
 Standard policy evaluation fixes an environment, return, state, horizon or
 discount, and perspective; greedy use follows policy improvement ([Sutton and
-Barto 2018](https://www.incompleteideas.net/book/the-book-2nd.html)). Revealed
-preference can rationalize finite choices under explicit consistency
+Barto 2018](https://mitpress.mit.edu/9780262039246/reinforcement-learning/)).
+Revealed preference can rationalize finite choices under explicit consistency
 conditions ([Afriat 1967](https://doi.org/10.2307/2525382)). Inverse
 reinforcement learning and identifiability analyses show why behavior leaves
 reward-equivalence ambiguity ([Ng and Russell
@@ -1750,15 +1754,17 @@ non-dominating or ineligible; its canonical projection therefore supports
 `RelUndom`. Identity is sound, and support projections compose along
 transitivity.
 
-Suppose $P\succeq_{prof}^{\beta}Q$ and $P$ is Granted. Each required
-$b\in\mathsf{Req}_\beta(Q)$ has a required
-$a\in\mathsf{Req}_\beta(P)$ with $a\Rightarrow_A b$. Grant of $P$ supports
-$a$; atom soundness supports $b$. Hence every required $Q$ atom is supported,
-its meet is $+$, and the well-formed $Q$ request is Granted.
+Suppose $P\succeq_{prof}^{\beta}Q$ and $P$ is Granted. Each required atom $b$
+in the instantiated profile of $Q$ has a required atom $a$ in the instantiated
+profile of $P$ with $a\Rightarrow_A b$. Grant of $P$ supports $a$; atom
+soundness supports $b$. Hence every required $Q$ atom is supported, its meet is
+$+$, and the well-formed $Q$ request is Granted.
 
-For completeness, fix finite address set $\mathcal A$ and the instantiation
-fiber $[\beta]_{P,Q}$. Suppose $P\not\succeq_{prof}^{\beta}Q$. Some required
-$b$ of $Q$ has no required $P$ antecedent. Define
+For completeness, fix finite address set $\mathcal A$ and work in the
+instantiation fiber $[\beta]_{P,Q}$.
+
+Suppose $P\not\succeq_{prof}^{\beta}Q$. Some required $b$ of $Q$ has no
+required $P$ antecedent. Define
 
 $$
 D=\{c\in\mathcal A:\exists a\in\mathsf{Req}_\beta(P),\ a\Rightarrow_A c\}.
@@ -1975,7 +1981,7 @@ required atom.
 
 For the ranked system, every rank-zero evaluator reads only fixed exogenous
 inputs, so totality and determinism give a unique output, diagnostic, and
-assessment. Assume uniqueness below rank $k$. Each rank-$k$ evaluator reads
+assessment. Assume uniqueness below rank $k$. Each evaluator of rank $k$ reads
 only those unique lower-rank values and fixed inputs, so its total deterministic
 function has one output. Finite induction reaches the maximum rank. Run the
 grounding induction simultaneously: rank-zero support has typed exogenous
@@ -2145,8 +2151,7 @@ $$
 $$
 
 The true boundary value therefore lies in
-$[b(\widehat s)-\rho_{\mathrm{err}},
-b(\widehat s)+\rho_{\mathrm{err}}]$.
+$[b(\widehat s)-\rho_{\mathrm{err}},b(\widehat s)+\rho_{\mathrm{err}}]$.
 
 **Proof of Theorem 11.** If the upper endpoint is at most zero, then
 $b(s)\leq0$; if the lower endpoint is positive, then $b(s)>0$. This proves
@@ -2211,9 +2216,9 @@ $\lceil\log_2(d+1)\rceil$ hidden layers under this convention.
 of the finitely many statistic, payload, and grade coordinates. Put the
 subnetworks in parallel, carry signed identities through any padding layers,
 and concatenate their affine outputs. The result is finite and exact on all of
-$\mathbb R^d$. If the target is initially defined only on $D\subseteq
-\mathbb R^d$, apply the construction to the separately supplied global finite
-CPWL extension and restrict it back to $D$. $\square$
+$\mathbb R^d$. If the target is initially defined only on
+$D\subseteq\mathbb R^d$, apply the construction to the separately supplied
+global finite CPWL extension and restrict it back to $D$. $\square$
 
 This is a finite existence theorem. A general rough construction size can grow
 exponentially in both the number of affine pieces and the number of their
@@ -2328,8 +2333,9 @@ The result is deliberately consumer-relative. Let two plans have equal
 adequacy margin and different predictions or costs. Their scalar margin codes
 are equal while a payload or cost consumer separates them, so no deterministic
 function of that scalar realizes the consumer. The default plan interface
-therefore routes $(\mathit{payload},\mathit{grade},
-\mathit{diagnostic},\mathit{evidence})$ separately.
+therefore routes
+$(\mathit{payload},\mathit{grade},\mathit{diagnostic},\mathit{evidence})$
+separately.
 
 The boundary gives a second separator. Supported equality has $m_i=0$, as can
 an open crossing interval; after masking, missing and invalid evidence can
@@ -2417,10 +2423,10 @@ k=1.6448536269514722.
 $$
 
 For a smaller-is-better threshold $\epsilon$, exact support occurs when the
-evidence mode permits support and $\epsilon-u^*\geq0$. Exact refutation occurs
-when its mode permits refutation and $l^*-\epsilon>0$. All other meaningful
-cases are Open. The standalone probe panel contains 40 loss and 40 latency
-atoms per world. It oversamples difficult cases:
+evidence mode permits support and $\epsilon-u^\ast\geq0$. Exact refutation
+occurs when its mode permits refutation and $l^\ast-\epsilon>0$. All other
+meaningful cases are Open. The standalone probe panel contains 40 loss and 40
+latency atoms per world. It oversamples difficult cases:
 
 | atom stratum | threshold construction | target mass | design mass |
 |---|---|---:|---:|
@@ -2637,21 +2643,23 @@ The compact successful-stage SHA-256 digests are:
 | `analysis_v1_1.json` | `dbb1768625a268bdfefa72f85fbb1b076130fede8f07746d3f31c3f8df791728` |
 
 The raw result, model archive, progress blocks, and 400 trace shards are large
-reproducible run products and remain local and ignored. The repository commits
-the protocol, manifests, pilot, implementation record, compact checkpoints,
-analysis, figures, and hashes.
+reproducible run products and remain local and ignored. The
+[pinned public reproduction package](https://github.com/TristanMiano/value_logic/tree/446f46645defa681ef840850fdec8b5ed47d3f4e)
+contains the protocol, manifests, pilot, implementation record, compact
+checkpoints, analysis, figures, and hashes.
 
 The historical writers ran on Windows and wrote seven frozen JSON artifacts
 with CRLF bytes. Git later transported those files with LF bytes, so a clean
 Linux checkout did not match the raw-byte digests consumed during the run.
 Restoring the exact registered CRLF bytes recovered every hash without changing
-parsed content or any scientific result. [`.gitattributes`](.gitattributes)
-now preserves experiment JSON bytes. New versions can use the explicit LF
-writer in [`experiments/artifact_io.py`](experiments/artifact_io.py); historical
-source-hashed writers remain unchanged.
+parsed content or any scientific result. The
+[repository transport contract](https://github.com/TristanMiano/value_logic/blob/446f46645defa681ef840850fdec8b5ed47d3f4e/.gitattributes)
+now preserves experiment JSON bytes. New versions can use the
+[explicit LF writer](https://github.com/TristanMiano/value_logic/blob/446f46645defa681ef840850fdec8b5ed47d3f4e/experiments/artifact_io.py);
+historical source-hashed writers remain unchanged.
 
-From the repository root in WSL/Ubuntu, install the pinned packages and verify
-the committed evidence with
+From the root of that pinned package in WSL/Ubuntu, install its declared
+packages and verify the committed evidence with
 
 ```text
 python -m pip install -r experiments/requirements.txt
@@ -2663,9 +2671,11 @@ The preflight verifies the frozen hashes, native/Python decoder equivalence,
 final-data guard, and deterministic system witness. The final-confirmation
 command is historical and must not be rerun: the confirmation role was
 materialized once, and the compact analysis is the public numerical record.
-The authoritative human-readable and machine-readable sources are
-[`experiments/02_results.md`](experiments/02_results.md) and
-[`experiments/analysis_v1_1.json`](experiments/analysis_v1_1.json).
+The authoritative
+[human-readable results](https://github.com/TristanMiano/value_logic/blob/446f46645defa681ef840850fdec8b5ed47d3f4e/experiments/02_results.md)
+and
+[machine-readable analysis](https://github.com/TristanMiano/value_logic/blob/446f46645defa681ef840850fdec8b5ed47d3f4e/experiments/analysis_v1_1.json)
+are linked independently of this document's publication location.
 
 ## Appendix F. Policy/Value, Information, and Transparency Details
 
@@ -2929,13 +2939,9 @@ The reconstruction statement has three distinct deployment scopes.
    deployment distribution.
 3. A trajectory guarantee needs time-indexed matched-history premises. If,
    under a coupling, accepted bounds give
-   $\Pr(A_t\ne\widehat A_t\mid\text{histories agree before }t)
-   \leq\epsilon_t$, then first-divergence union accounting gives
-
-   $$
-   \Pr\{\text{any split by horizon }H\}
-   \leq\min\left(1,\sum_{t=0}^{H-1}\epsilon_t\right).
-   $$
+   $\Pr(A_t\ne\widehat A_t\mid\text{histories agree before }t)\leq\epsilon_t$,
+   then first-divergence union accounting gives
+   $\Pr\{\text{any split by horizon }H\}\leq\min(1,\sum_{t=0}^{H-1}\epsilon_t)$.
 
    A static disagreement rate does not supply these conditional visitation
    bounds.

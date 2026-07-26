@@ -67,7 +67,7 @@ The historical interfaces in `formalism/01_signature.md` through `formalism/05a_
 
 ## Project status
 
-All scheduled work through Task 31B, including Task 22B and the other completed
+All scheduled work through Task 32, including Task 22B and the other completed
 suffixed tasks, and Checkpoints A, A1, B, C, C1, D, and E is complete. The
 finite-stage licensing interface, consequence and update rules, dominance and
 retention distinctions, overlapping scientific-model cover, bridge taxonomy,
@@ -177,7 +177,18 @@ The empirical section places target prevalence `.35/.65`, fallback
 Granted accuracy `.0124/.1811`, and the `.35` descriptive status baseline at
 their distinct scopes. Issued grants are not called recall, and the two
 complete pipelines are compared without attributing their difference to one
-component. The theorem and evidence-grade sets are unchanged. **Task 32 is
-next.**
+component. The theorem and evidence-grade sets are unchanged.
+
+[`Task 32`](notes/gist_compatibility_audit.md) completes the
+Gist-compatibility gate without publishing a Gist. Every inline expression now
+opens and closes on one physical line, and GitHub's renderer agrees exactly
+with the source on 868 inline and 105 display expressions. The render has the
+intended 73 headings, 14 tables, two figures, and one text code block, with no
+raw math delimiter or relative path. Figures and Appendix E reproduction links
+are pinned to an immutable pushed package. The He et al. citation uses the live
+case-correct Global Science Press page while retaining its DOI metadata, and
+the Sutton--Barto citation uses the live MIT Press page. All 177 checks, the
+WSL preflight, local links, and clean-archive/hash validation pass. No theorem,
+result, grade, or policy/value boundary changed. **Task 33 is next.**
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.
