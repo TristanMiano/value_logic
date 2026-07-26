@@ -5,16 +5,13 @@ on:
   pull_request:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: agent/task-33-completion-record
-          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
@@ -24,28 +21,3 @@ jobs:
           python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
       - name: Run semantic and link checks
         run: python -m verification
-      - name: Finalize Task 33 completion record
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'agent/task-33-completion-record' && github.actor != 'github-actions[bot]'
-        env:
-          FINALIZE_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: |
-          python .github/task33_finalize.py
-          git fetch origin main
-          git show origin/main:.github/workflows/verify.yml > .github/workflows/verify.yml
-          rm .github/task33_finalize.py
-          python -m verification
-          python -m experiments.run_repaired_experiment --preflight
-          python -m verification.check_links .
-          git diff --check
-          python - <<'PY'
-          from pathlib import Path
-          for name in ["TODO.md", "README.md", "notes/project_spec.md", "substack_post.txt"]:
-              data = Path(name).read_bytes()
-              if b"\r" in data:
-                  raise SystemExit(f"{name} is not LF-only")
-          PY
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add TODO.md README.md notes/project_spec.md .github/workflows/verify.yml .github/task33_finalize.py
-          git commit -m "Task 33: finalize completion record"
-          git push origin HEAD:agent/task-33-completion-record

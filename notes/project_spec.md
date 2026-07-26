@@ -1,6 +1,6 @@
 # Project Specification: A Finite-Stage License Logic for Fallible Models
 
-Status: living specification, version 3.9 after Task 32 publication formatting
+Status: living specification, version 4.0 after Task 33 Substack adaptation
 Created: 2026-07-10  
 Checkpoint A amendment: 2026-07-11
 Task 11A interface resolution: 2026-07-11
@@ -47,6 +47,7 @@ Task 31A reader/narrative audit: 2026-07-24
 Checkpoint E publication-readiness gate: 2026-07-24
 Task 31B narrow publication repair: 2026-07-25
 Task 32 Gist-compatibility and publication formatting: 2026-07-25
+Task 33 Substack adaptation: 2026-07-25
 
 ## Executive specification
 
@@ -671,6 +672,25 @@ The following decisions are now project defaults unless a later theorem, experim
 151. Checkpoint E finds the paper publication-ready after one narrow Task 31B rather than a return to proof, experiment, or claim adjudication. External Audit VI's malformed math span, missing empirical references, neural-motivation gap, title-definition gap, abstention-attribution risk, and multiline-math risk are accepted at corrected scopes. Target outcome prevalence is `.35` Granted and `.65` non-Granted; complements of pipeline fallback, `.0038/.0861`, are issued-`Granted` masses rather than recall. Frozen `.0124/.1811` accuracies conditional on true Granted are unweighted design-distribution companions and cannot decompose target-weighted `.4976/.5866` fidelity because deviation `21-D3` omitted trace weights. The exact-WF otherwise-`Withheld` target baseline is `.35`. Task 31B will add these descriptive references, define “value logic” as task-relative reliance value without reducing truth to utility, state the constructive neural hope and its remaining alignment questions, and keep fallback comparisons noncausal. Task 32 will repair multiline math, verify a live primary He et al. destination, and render-check GitHub compatibility without treating public Gist creation as implicit authorization. Tasks 33--34 remain ordered after it; no Appendix G, experiment rerun, fifth contribution, companion run, or proof-assistant gate is added.
 152. Task 31B completes Checkpoint E's bounded repair without changing a theorem, proof, citation claim, empirical endpoint, evidence grade, or artifact byte. Appendix C.1 now has a balanced `$.06+.06$` formula; 1,730 inline-dollar delimiters form 865 closed spans, with the five balanced multiline spans retained for Task 32. Public prose defines “value logic” as task-relative reliance value while remaining neutral on truth reduction and true-utility existence. The Section 6 lead states the constructive neural motivation: signed margins fit rectification; finite proof-erased CPWL plan computation has an exact ReLU reference realization; changed-threshold transfer is supported in the frozen setting; and activation/scientific-atlas alignment plus semantic depth-to-license correspondence remain untested. The empirical narrative reports target prevalence `.35/.65`, fallback `.9962/.9139`, issued-`Granted` mass `.0038/.0861`, unweighted design-distribution conditional Granted accuracy `.0124/.1811`, target-weighted fidelity `.4976/.5866`, and the exact-WF otherwise-`Withheld` baseline `.35`. Issued grants are not recall, the unweighted rows do not decompose target-weighted fidelity, and target-weighted conditional accuracy remains unavailable. Both complete pipelines are described as heavily fallback-prone without a causal allocation to the structured wrapper. Main text is 11,748 words under the established regex; no Appendix G or broad cut is added.
 153. Task 32 establishes Gist compatibility without publishing a Gist or changing scientific content. The five known cross-line inline spans and the additional GitHub-specific heading, emphasis, and list-math collisions are repaired. Source and GitHub rendering agree exactly on 868 inline and 105 display expressions, with 73 intended headings, 14 tables, two figures, one text code block, no raw dollar residue, and no relative target. Figures and Appendix E reproduction links are immutable URLs pinned to pushed commit `446f46645defa681ef840850fdec8b5ed47d3f4e`; internal task/audit scaffolding is absent from public prose. The case-correct Global Science Press page is the live primary He et al. destination while DOI metadata remains canonical, and the live MIT Press page replaces the broken-TLS Sutton--Barto link. The 46-URL sweep returns no `404`; automated publisher `403` responses remain distinguished from successful fetches. Main-text source count is 11,763 solely because absolute figure URLs add 15 regex tokens. All 177 checks, WSL preflight, local links, renderer assertions, LF checks, and clean-archive patch validation pass. Tasks 33--34 remain; no theorem, evidence grade, frozen result, or policy/value existence boundary changes.
+
+
+154. Task 33 creates `substack_post.txt` as a 4,878-word, non-Markdown public
+adaptation with one standalone formal line. It preserves the required narrative
+order, the canonical adequacy/improvement/latency fixture, all four public
+outcomes, the activation-to-prediction-to-certificate-to-license ladder, and
+the hybrid authorization boundary. Every surviving `X1` impact appears at its
+narrowed scope. The frozen empirical section retains target non-Granted
+prevalence `.65`, target-weighted fallback `.9962/.9139`, and unweighted
+design-distribution conditional-Granted accuracy `.0124/.1811`; issued grants
+are not recall, target-weighted conditional accuracy remains unavailable, and
+complete-pipeline differences receive no causal wrapper allocation. The finite
+policy/value encoder-image isomorphism survives; standard-return and rollout
+limitations concern semantics, identification, and practicality, while the
+proper-score result establishes only partial outcome/task-quotient information
+under its baseline and mediation assumptions. Public run `30187216977` passes
+at artifact commit `64234227135ffbf19fd29facca4254d32a887183`. No theorem,
+claim grade, experiment, architecture-uniqueness claim, or policy/value
+existence boundary changes. Task 34 remains the final cross-artifact audit.
 
 ## 18. Specification gates after Checkpoint E
 

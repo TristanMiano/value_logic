@@ -37,7 +37,7 @@ Checkpoints are roadmap-review tasks, not ceremonial status updates. At each che
 
 Checkpoint edits apply prospectively. They may add follow-up work for a completed result, but they do not silently mark completed work undone or rewrite its history. Prefer stable checkpoint labels and suffixed new tasks over renumbering tasks that are already referenced elsewhere.
 
-**Next task: Task 33 — Produce the Substack adaptation.**
+**Next task: Task 34 — Cross-check and finalize both artifacts.**
 
 ## Project question
 
@@ -912,7 +912,7 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   [`project specification`](notes/project_spec.md), and
   [`README`](README.md). Task 33 is next.
 
-- [ ] **Task 33 — Produce the Substack adaptation.**
+- [x] **Task 33 — Produce the Substack adaptation.**
 
   Create `substack_post.txt` from the audited paper. Use plain prose, Unicode
   where helpful, at most one displayed formal judgment, no Markdown formatting,
@@ -943,6 +943,37 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   ReLU-reference-not-uniqueness caveat and all other necessary qualifications
   without introducing claims absent from the paper.
 
+  Completed 2026-07-25. Created
+  [`substack_post.txt`](substack_post.txt), a 4,878-word plain-text adaptation
+  of the audited paper. It preserves the required succession-to-value-to-
+  fallback-to-license-to-ReLU-to-results narrative, carries the canonical
+  adequacy/improvement/latency example through strict surplus, supported
+  equality, open, refuted, and missing-evidence cases, and keeps full licensing
+  separate from post-license ranking. The article includes every surviving
+  claim-ledger `X1` impact at its narrowed scope, including the finite
+  policy/value existence result and the conditional proper-score information
+  result, without adding a theorem, empirical claim, or evidence grade.
+
+  The public empirical account retains target non-Granted prevalence `.65`,
+  target-weighted fallback `.9962/.9139`, and unweighted design-distribution
+  conditional-Granted accuracy `.0124/.1811` with their exact labels. It says
+  issued-`Granted` mass is not recall, target-weighted conditional accuracy is
+  unavailable, and the complete-pipeline difference is not an identified
+  wrapper effect. ReLU remains one finite reference witness rather than a
+  unique or presumptively optimal architecture.
+
+  Artifact lint found UTF-8 NFC, LF-only text, no Markdown syntax, and exactly
+  one standalone formal line. Public GitHub Actions run
+  [`30187216977`](https://github.com/TristanMiano/value_logic/actions/runs/30187216977)
+  passed the repository semantic and link checks at artifact commit
+  `64234227135ffbf19fd29facca4254d32a887183`. The completion-record preparation
+  run [is recorded here](https://github.com/TristanMiano/value_logic/actions/runs/30187537160) and executes the 177-check suite, repaired
+  experiment preflight, local-link checker, plain-text assertions, and
+  `git diff --check` before committing. The handoff is propagated through the
+  [`README`](README.md) and
+  [`project specification`](notes/project_spec.md). No experiment was rerun or
+  regraded; Task 34 owns the final claim-by-claim crosswalk and proofreading.
+
 - [ ] **Task 34 — Cross-check and finalize both artifacts.**
 
   Compare `paper.md` and `substack_post.txt` claim by claim using an explicit
@@ -957,6 +988,7 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
 
 ## Decision log
 
+- **2026-07-25 — The Substack adaptation preserves scope while changing register.** `substack_post.txt` is a plain-text public essay rather than a second formal paper: it keeps the running succession example, fallback-derived tolerance, four-way assessment, activation-to-license correction, complete frozen result asymmetry, and every surviving `X1` impact. The article retains the finite policy/value encoder-image existence result while assigning standard-return and rollout failures to semantics, identification, and practicality; properly baselined log-loss gain supports only partial outcome/task-quotient information. No theorem, claim grade, experiment, architecture-uniqueness claim, or target-weighting interpretation changes.
 - **2026-07-25 — Gist compatibility is established without publication.** The public paper's source and GitHub render agree on 868 inline and 105 display expressions; all links and figures are absolute, with reproducibility material confined to Appendix E and pinned to a pushed immutable package. The He et al. DOI remains canonical metadata, while its case-correct live primary publisher page is the public destination because the resolver currently lands on a lowercase `404`. Compatibility testing did not create a Gist or alter any scientific claim.
 - **2026-07-25 — Empirical fallback references remain population-typed and noncausal.** Target prevalence is `.35` Granted and `.65` non-Granted; `.0038/.0861` are target-weighted issued-`Granted` masses rather than recall; and `.0124/.1811` are unweighted design-distribution accuracies conditional on reference Granted. The compact traces cannot supply target-weighted conditional accuracy or a target-weighted per-outcome decomposition. Both complete pipelines fell back heavily, and their difference does not identify the causal share of the structured objective, interval calibration, or decoder.
 - **2026-07-25 — The affirmative neural-fit answer has formal and empirical layers.** Signed margins fit rectification; finite proof-erased CPWL plan computation has an exact ReLU reference witness; and changed-threshold transfer is supported in the frozen setting. Activation/scientific-atlas alignment and semantic identification of hidden depth with nested licenses remain untested. This is the motivation/disposition thread for the paper and Substack, not a fifth contribution or an architecture-optimality claim.
