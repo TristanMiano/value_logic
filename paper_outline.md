@@ -1,24 +1,26 @@
 # Paper Claim Freeze and Outline
 
 Status: frozen publication contract after Task 25, amended through the
-completed Checkpoint E publication-readiness gate
-Date: 2026-07-18; latest checkpoint amendment 2026-07-24
+completed Task 31B publication repair
+Date: 2026-07-18; latest publication amendment 2026-07-25
 Drafting status: Tasks 26--30 implemented the complete substantive
 [`paper.md`](paper.md) draft: §§1--11 and Appendices A--F. Tasks 31 and 31A
 completed the mathematical/citation and reader/narrative audits. Checkpoint E
-finds the draft publication-ready after one bounded Task 31B content repair,
-then Tasks 32--34. The audited draft restores the originating
-Newton/Standard-Model/open-chain motivation, carries all four formal theorem
-clusters and their constructive boundaries, reports the complete frozen
+found the draft publication-ready after one bounded content repair; Task 31B
+has completed it, leaving Tasks 32--34. The audited draft restores the
+originating Newton/Standard-Model/open-chain motivation, carries all four formal
+theorem clusters and their constructive boundaries, reports the complete frozen
 empirical trade-off, and keeps the optional policy/value bridge within its
 evidence grades.
 Target: one approximately 11,100-word main paper, technical appendices, and a
 separate 1,500--1,800-word public essay
 
-The Task 31A count is 11,405 main-text words under the repository token rule,
-about 2.7% above the approximate target after removing 1,673 words of repeated
-interface, implementation, and qualification prose. The disposition and
-Substack handoff are in [`notes/reader_audit.md`](notes/reader_audit.md).
+The Task 31B count is 11,748 main-text words under the repository token rule,
+about 5.8% above the approximate target. Task 31A had removed 1,673 words of
+repeated interface, implementation, and qualification prose; Task 31B then
+added 343 words to answer the title/neural-motivation questions and make the
+empirical reference populations explicit. The disposition and Substack
+handoff are in [`notes/reader_audit.md`](notes/reader_audit.md).
 
 This document selects the claims and argumentative order for the public
 artifacts. It is not a draft assembled from every repository result. A statement
@@ -36,12 +38,12 @@ non-abstention, harness semantics, and distributional scope kept separate. It
 is available to optional §8 as a bounded integration result. It is not a fifth
 headline contribution or authorization for a new experiment.
 
-Checkpoint E again leaves that contribution and claim set unchanged. It inserts
-Task 31B only to repair one malformed formula; add already-frozen empirical
-reference values with target-versus-unweighted scopes intact; define “value
-logic”; state the constructive neural motivation and its still-open alignment
-questions; and remove causal overreading from the complete-pipeline fallback
-comparison. It authorizes no rerun, regrade, fifth contribution, Appendix G, or
+Checkpoint E left that contribution and claim set unchanged. Task 31B has now
+repaired one malformed formula; added already-frozen empirical reference values
+with target-versus-unweighted scopes intact; defined “value logic”; stated the
+constructive neural motivation and its still-open alignment questions; and
+removed causal overreading from the complete-pipeline fallback comparison. It
+performed no rerun, regrade, fifth contribution, Appendix G addition, or
 categorical revision of the finite policy/value existence claim.
 
 ## 1. Publication thesis and claim hierarchy
@@ -118,7 +120,7 @@ changed-tolerance `F35a=S1`, boundary `F35b=X1`, in-regime `F35c=X1`, and
 marginal proposal coverage `F36=S1`. These labels are scoped repository
 dispositions, not global truth values for a research program.
 
-Task 31B will make the paper and essay preserve this revised noncausal mnemonic:
+The paper and future essay preserve this revised noncausal mnemonic:
 
 > Retaining a reusable numerical statistic helped when the decision threshold changed. Both complete pipelines often declined to decide, and fallback in the tested structured pipeline was nearly total. Representational information, calibrated caution, and operational usefulness are separate achievements.
 
@@ -552,7 +554,7 @@ realization.
   included, label them explicitly as design-distribution companions. Do not
   treat issued-`Granted` mass as recall or use the unweighted conditional rows
   to decompose target-weighted fidelity.
-- Use the Task 31B revised noncausal mnemonic.
+- Use the revised noncausal mnemonic.
 - Explain conservative dead-band geometry as a plausible mechanism, then state
   the unmeasured causal decomposition.
 - Disclose that raw boundary fidelity was not compared at matched coverage and
@@ -935,7 +937,7 @@ margin → empirical trade-off → limits.
 
 ### 7. What the experiment found — 300 words
 
-- Use the Task 31B revised noncausal mnemonic verbatim.
+- Use the revised noncausal mnemonic verbatim.
 - State the aggregate mixed result and every component grade.
 - Give the transfer difference, marginal coverage scope, unweighted trace miss
   rates, target prevalence `.35/.65`, and target-weighted `.9962/.9139`
@@ -997,7 +999,7 @@ This freezes the paper around four formal contribution clusters, one honestly
 mixed empirical result, one optional and explicitly bounded policy/value
 bridge, and a single succession example. Checkpoint D preserved that structure,
 Task 22B discharged its proof gate with a scoped operational bridge proposition,
-and Checkpoint E preserves the same claim set while inserting one narrow
-publication repair. Task 29 retains the bridge proposition compactly in §8,
-with its full proof and countermodels in Appendix F. Task 31B is next; it does
-not reopen the four headline clusters.
+and Checkpoint E preserved the same claim set while inserting one narrow
+publication repair. Task 31B has completed that repair without reopening the
+four headline clusters. Task 29 retains the bridge proposition compactly in
+§8, with its full proof and countermodels in Appendix F. Task 32 is next.

@@ -372,14 +372,14 @@ The following can be checked early without large experiments:
   recorded in [`mathematical_citation_audit.md`](mathematical_citation_audit.md).
 - Task 31A confirms that the same supported claim set forms a coherent
   first-reader narrative. Checkpoint E then adjudicates `AUDIT-F5-VI` without
-  changing any evidence grade. Task 31B will add already-frozen descriptive
+  changing any evidence grade. Task 31B now adds already-frozen descriptive
   references: target true-`Granted/non-Granted` prevalence `.35/.65`,
   target-weighted issued-`Granted` mass `.0038/.0861`, unweighted
   design-distribution true-`Granted` accuracy `.0124/.1811`, and the exact-WF
   otherwise-`Withheld` target baseline `.35`. Issued-`Granted` mass is not
   recall, the unweighted conditional rows cannot decompose target-weighted
   fidelity, and target-weighted conditional traces remain unavailable under
-  deviation `21-D3`. The checkpoint also requires noncausal complete-pipeline
-  fallback language, a compact neural-motivation disposition, and an explicit
-  definition of “value logic”; it does not reopen `F35/F36`, `C01/C12`, or any
-  policy/value true-utility boundary.
+  deviation `21-D3`. The paper now uses noncausal complete-pipeline fallback
+  language, gives a compact neural-motivation disposition, and explicitly
+  defines “value logic.” No `F35/F36`, `C01/C12`, or policy/value true-utility
+  boundary is reopened.

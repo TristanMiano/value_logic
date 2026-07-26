@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: complete substantive audit; no theorem or empirical disposition changed
+Status: complete substantive audit; Task 31B publication erratum appended
 
 Public CI inspected: [Verify finite witness, run
 30119108304](https://github.com/TristanMiano/value_logic/actions/runs/30119108304)
@@ -383,3 +383,29 @@ and cyclic fixed-point semantics. None is needed to support the present paper.
   `ca15a8390dc5fcffee5767a7a7aa9e8e4e954bc2` completed successfully on
   2026-07-24 in
   [run 30121757293](https://github.com/TristanMiano/value_logic/actions/runs/30121757293).
+
+## 8. Task 31B post-audit erratum
+
+Task 31B repairs the fourth malformed formula missed by the original audit:
+Appendix C.1 now reads `$.06+.06$`. A whole-document scan outside fenced code,
+inline code, and display math finds 1,730 inline-dollar delimiters forming 865
+closed spans and no unpaired opener. Five balanced spans still cross a physical
+line break; Task 32 retains them as a rendering-format repair rather than a
+mathematical defect.
+
+The same pass independently checked the publication reference values against
+the frozen protocol and analysis. Target reference mass is `.35` Granted and
+`.65` non-Granted. Complements of target-weighted fallback are issued-`Granted`
+masses `.003784/.086052`; they may contain false grants and are not recall.
+Accuracy conditional on a reference Granted request is `.012415/.181090` in
+the unweighted design-distribution traces. The exact-well-formedness baseline
+that otherwise always says Withheld has target-weighted fidelity `.35`.
+Deviation `21-D3` omitted target/design weights from compact traces, so the
+unweighted conditional rows cannot decompose target-weighted
+`.497607/.586604` fidelity and target-weighted conditional Granted accuracy
+remains unavailable.
+
+This erratum changes no theorem, proof, citation claim, empirical endpoint,
+evidence grade, or artifact byte. The public theorem/proposition inventory
+remains thirteen and the external-link set remains unchanged for Task 32's
+separate destination/render audit.

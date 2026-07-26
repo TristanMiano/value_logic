@@ -1,6 +1,6 @@
 # Reader and Narrative Audit
 
-Status: complete
+Status: complete; Task 31B post-Checkpoint-E amendment appended
 Date: 2026-07-24
 Scope: `paper.md` after the mathematical and citation audit
 
@@ -244,3 +244,48 @@ begin that checkpoint or the later Gist/Substack formatting tasks.
 - Public CI for the pushed Task 31 parent is green in
   [run 30121757293](https://github.com/TristanMiano/value_logic/actions/runs/30121757293).
   Task 31A remains a local commit for the user to push.
+
+## Task 31B post-Checkpoint-E amendment
+
+Checkpoint E accepted one narrow reader repair, now applied without changing
+the theorem or empirical claim set.
+
+- Section 3.1 explicitly defines **value logic** as the logic of task-relative
+  reliance value under a declared domain, task, loss, cost, evidence state, and
+  alternative. It also states that the name neither defines truth by usefulness
+  nor presupposes true utility.
+- Section 6 now answers why the neural connection was worth investigating:
+  named margins fit rectification, finite proof-erased CPWL plan computation
+  has an exact ReLU reference realization, and retained statistics support
+  changed-threshold use. Activation/scientific-atlas alignment and semantic
+  identification of depth or learned layers with nested licenses remain
+  untested.
+- The introduction and Section 7 use a noncausal complete-pipeline mnemonic.
+  Both arms' fallback values `.9962/.9139` appear with target reference
+  prevalence `.35/.65`; the structured pipeline is described as nearly always
+  declining to decide without assigning the difference to one component.
+- Section 7 and Appendix E distinguish target-weighted issued-`Granted` mass
+  `.0038/.0861` from the unweighted design-distribution accuracy conditional on
+  a reference Granted request `.0124/.1811`. They state why neither supplies
+  the unavailable target-weighted conditional recall. The exact-WF
+  otherwise-Withheld target fidelity baseline `.35` is labeled descriptive.
+
+The public mnemonic is now:
+
+> Retaining a reusable numerical statistic helped when the decision threshold
+> changed. Both complete pipelines often declined to decide, and fallback in
+> the tested structured pipeline was nearly total. Representational
+> information, calibrated caution, and operational usefulness are separate
+> achievements.
+
+The main-text count is now 11,748 words under the same repository regex, an
+increase of 343 words and about 5.8% above the approximate 11,100-word planning
+target. The added words answer the two missing motivating questions and make
+the empirical denominator and weighting scopes explicit; Section 7 remains
+below its planned allowance. No Appendix G or broader cut is required.
+
+The Substack handoff retains the established philosophical order and adds a
+short “what the neural interface promised / what survived” thread. It must
+carry `.65`, `.9962/.9139`, and any `.0124/.1811` use with their population
+labels. Task 32 is the next gate and owns multiline-math reflow, live-link
+selection, and GitHub-compatible rendering.

@@ -129,11 +129,14 @@ at its $-.02$ margin (difference $-.1009$). The reverse comparisons were not
 preregistered confirmatory claims. Marginal
 target-in-proposal coverage was supported for the two registered groups
 ($.9098$ and $.9044$), while support/refutation miss rates were $.4611/.3248$
-and target-weighted fallback mass was $.9962$. Thus:
+under the unweighted design distribution. The declared target distribution
+contained $.35$ Granted and $.65$ non-Granted mass; target-weighted fallback
+was $.9962$ for the structured pipeline and $.9139$ for direct cross-entropy.
+Thus:
 
 > **Retaining a reusable numerical statistic helped when the decision threshold
-> changed. But wrapping that statistic in a conservative uncertainty-and-decoding
-> pipeline often turned informative predictions into abstentions.
+> changed. Both complete pipelines often declined to decide, and fallback in
+> the tested structured pipeline was nearly total.
 > Representational information, calibrated caution, and operational usefulness
 > are separate achievements.**
 
@@ -299,7 +302,12 @@ changing its meaning.
 ### 3.1 Requests and their three operational carriers
 
 The shorthand $\Pi(M,D,\epsilon)$ has now done its motivational work. Its
-formal elaboration uses three principal carriers:
+formal elaboration uses three principal carriers. We call this a **value
+logic** because its judgments formalize the task-relative reliance value from
+Section 1: whether a plan remains worth relying on for a declared domain,
+task, loss, cost, evidence state, and alternative. The name specifies an
+operational comparison. It does not define truth by usefulness or assume that
+agents possess true utility functions.
 
 $$
 E\quad\text{evaluated use plans},\qquad
@@ -872,6 +880,19 @@ representations without selecting an architecture.
 
 ## 6. Architecture-Neutral Representation and a ReLU Reference
 
+Why was this calculus worth testing with a neural implementation? Three
+constructive correspondences supplied the original reason. Declared thresholds
+produce signed margins, and ReLU computes their positive parts. Finite
+affine/minimum/maximum composition makes the proof-erased numerical part of a
+finite plan CPWL, giving an exact ReLU reference witness. Retaining the
+underlying statistic also permits a new threshold to be applied without
+retraining; the frozen study later supported that expectation in its registered
+setting. Two broader hopes remain empirical. The study did not test whether
+activation regions align with scientific-model domains, and exact plan-map
+realizability does not identify network depth or learned layers with nested
+licenses. The results below therefore establish a bounded construction and its
+limits, together with one transfer finding.
+
 ### 6.1 What an implementation must preserve
 
 What information must survive when a learned component helps implement the
@@ -1181,33 +1202,48 @@ target by the proposed interval. This result supplies neither conditional
 coverage nor a guarantee for a whole profile, selected route, deployed loss,
 system, or target-world truth.
 
+Reference outcomes under the declared target distribution have masses $.35$
+Granted and $.65$ non-Granted. If the reference outcome itself controlled the
+decision, fallback prevalence would therefore be $.65$. A deliberately simple
+status baseline that says Undefined on an ill-formed request and Withheld on
+every other request has target-weighted four-outcome fidelity
+$.05+.30=.35$. This is a descriptive scale reference, not a learned arm or a
+registered endpoint.
+
 The adjacent error and use statistics change the practical reading. The
 following trace summaries are unweighted design-distribution companions,
-whereas fallback mass is target-weighted:
+whereas the last three rows are target-weighted:
 
 | behavior | structured | direct cross-entropy |
 |---|---:|---:|
-| false support | $.0087$ | $.0988$ |
-| false refutation | $.0146$ | $.1624$ |
-| missed support | $.4611$ | $.0640$ |
-| missed refutation | $.3248$ | $.0627$ |
+| unweighted false support | $.0087$ | $.0988$ |
+| unweighted false refutation | $.0146$ | $.1624$ |
+| unweighted missed support | $.4611$ | $.0640$ |
+| unweighted missed refutation | $.3248$ | $.0627$ |
+| unweighted accuracy conditional on reference Granted | $.0124$ | $.1811$ |
 | target-weighted fallback mass | $.9962$ | $.9139$ |
+| target-weighted issued-Granted mass | $.0038$ | $.0861$ |
 | target-weighted four-outcome fidelity | $.4976$ | $.5866$ |
 
-The structured pipeline made few wrong positive assertions while withholding
-many correct ones. Its marginal coverage and caution coexisted with almost
-universal fallback. The exact active mask also worked as designed: inactive
-selection was zero for both arms. That safety invariant says that an excluded
-plan was not reactivated; it does not show that a useful plan was licensed or
-that fallback risk was acceptable.
+Both complete pipelines fell back heavily, and the structured pipeline's
+fallback was nearly universal. Issued-Granted mass is the complement of
+fallback and can include false grants; it is therefore neither grant recall nor
+the recovered share of the reference $.35$ Granted mass. The conditional
+Granted accuracies are separate unweighted design-distribution summaries.
+Because the compact traces omitted target/design weights, those values cannot
+be used to decompose target-weighted fidelity, and target-weighted conditional
+Granted accuracy is unavailable. The exact active mask also worked as
+designed: inactive selection was zero for both arms. That safety invariant says
+that an excluded plan was not reactivated; it does not show that a useful plan
+was licensed or that fallback risk was acceptable.
 
 ![Registered marginal proposal coverage](experiments/figures/coverage_v1_1.png)
 
 The result is summarized by the distinction that motivated this test:
 
 > **Retaining a reusable numerical statistic helped when the decision threshold
-> changed. But wrapping that statistic in a conservative uncertainty-and-decoding
-> pipeline often turned informative predictions into abstentions.
+> changed. Both complete pipelines often declined to decide, and fallback in
+> the tested structured pipeline was nearly total.
 > Representational information, calibrated caution, and operational usefulness
 > are separate achievements.**
 
@@ -1909,7 +1945,7 @@ Undefined; hence the root request is Granted. This argument consumes the
 composite diagnostic. It never infers a root grant by meeting component grants.
 $\square$
 
-The $.06+$.06$ separator is a complete countermodel to unconditional
+The $.06+.06$ separator is a complete countermodel to unconditional
 composition. Give two sequential scalar components independently checked local
 error regions bounded by $.06$ and local tolerances $.10$. Let their errors
 have the same sign and let the parent grade rule be addition. Each local
@@ -2403,7 +2439,8 @@ Withheld, 12 Refused, and 4 Undefined. Their target masses are
 $.35,.30,.30,.05$ and design masses are $.30,.30,.30,.10$. At least one fifth
 of well-formed requests contain a support-equality focal atom. Undefined comes
 from malformed units, binding, or profile data before meaningful atom
-aggregation.
+aggregation. Under reference outcome decoding, the target fallback prevalence
+is therefore $.65$.
 
 The succession fixture begins with older and successor plans, permits
 simultaneous licenses on their overlap, and sends the initial gap to fallback.
@@ -2530,6 +2567,16 @@ $.3248/.0627$. The latency pattern was similar. Target-weighted four-outcome
 fidelity was $.497607/.586604$; fallback mass was $.996216/.913948$.
 Inactive selection was exactly zero for both arms across all 40,000
 world/seed evaluations.
+
+The target-weighted complements of fallback, $.003784/.086052$, are the masses
+on which the two pipelines issued Granted. They may contain false grants and
+are not conditional grant accuracy. In the separate unweighted
+design-distribution traces, accuracy conditional on a reference Granted request
+was $.012415/.181090$. The exact-well-formedness baseline that says Undefined
+when ill-formed and otherwise Withheld has target-weighted fidelity $.35$.
+Because the compact traces omitted target/design weights, the conditional
+values cannot decompose target-weighted fidelity; target-weighted conditional
+Granted accuracy remains unavailable.
 
 Accepted loss regions had average width $.04006$, compared with an average
 oracle width of about $.03290$. This descriptive difference and the exact

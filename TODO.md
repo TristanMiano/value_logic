@@ -1,6 +1,6 @@
 # Value Logic Project: Context and TODO
 
-Last updated: 2026-07-24
+Last updated: 2026-07-25
 
 ## Resume here
 
@@ -37,7 +37,7 @@ Checkpoints are roadmap-review tasks, not ceremonial status updates. At each che
 
 Checkpoint edits apply prospectively. They may add follow-up work for a completed result, but they do not silently mark completed work undone or rewrite its history. Prefer stable checkpoint labels and suffixed new tasks over renumbering tasks that are already referenced elsewhere.
 
-**Next task: Task 31B — Apply the narrow post-audit publication repair.**
+**Next task: Task 32 — Make `paper.md` Gist-compatible and publication-ready.**
 
 ## Project question
 
@@ -795,7 +795,7 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   LF-only. Checkpoint E itself changes no theorem, evidence grade, or frozen
   result.
 
-- [ ] **Task 31B — Apply the narrow post-audit publication repair.**
+- [x] **Task 31B — Apply the narrow post-audit publication repair.**
 
   Repair the unpaired `$.06+$.06$` expression in `paper.md` and repeat the
   systematic delimiter scan. Add the frozen empirical reference values in
@@ -825,6 +825,44 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   publication formatting. Propagate a short erratum/handoff through the
   technical and reader audits, outline, and status documents; validate in the
   workspace and a clean archive.
+
+  Completed 2026-07-25. Repaired the malformed Appendix C.1 expression in
+  [`paper.md`](paper.md), then verified 1,730 inline-dollar delimiters as 865
+  closed spans with no unpaired opener; the five balanced cross-line spans
+  remain assigned to Task 32. Section 3.1 now defines “value logic” as
+  task-relative reliance value while preserving truth/value and true-utility
+  neutrality. The Section 6 lead states the constructive neural motivation:
+  signed margins fit rectification, finite proof-erased CPWL plan computation
+  has an exact ReLU reference realization, and the frozen changed-threshold
+  result supports reusable-statistic transfer; activation/scientific-atlas
+  alignment and semantic depth-to-license correspondence remain untested.
+
+  The introduction, Section 7, and Appendix E now report target reference
+  prevalence `.35/.65`, pipeline fallback `.9962/.9139`, target-weighted
+  issued-`Granted` mass `.0038/.0861`, unweighted design-distribution accuracy
+  conditional on reference Granted `.0124/.1811`, target-weighted
+  four-outcome fidelity `.4976/.5866`, and the exact-WF otherwise-`Withheld`
+  descriptive baseline `.35`. They explicitly state that issued grants are not
+  recall, the unweighted conditional rows cannot decompose target-weighted
+  fidelity, and target-weighted conditional Granted accuracy is unavailable.
+  Both complete pipelines are described as fallback-heavy without assigning
+  their difference to one component. The revised main text is 11,748 words;
+  the thirteen theorem/proposition statements, all evidence grades, frozen
+  artifacts, and citation set are unchanged.
+
+  Appended the repair record to the
+  [`mathematical`](notes/mathematical_citation_audit.md) and
+  [`reader`](notes/reader_audit.md) audits, fulfilled the
+  [`Checkpoint E`](notes/checkpoints/E_publication_readiness.md) handoff, and
+  updated the [`paper outline`](paper_outline.md),
+  [`claim ledger`](notes/claim_ledger.md),
+  [`project specification`](notes/project_spec.md), and
+  [`README`](README.md). All 177 checks, the WSL native/Python preflight, local
+  links, and the exact staged patch pass in the workspace and a clean archive;
+  edited files are LF-only. Public CI for pushed parent `246951a` is green in
+  [run 30147051168](https://github.com/TristanMiano/value_logic/actions/runs/30147051168);
+  Task 31B's public result remains pending an authorized push. No experiment
+  was rerun or regraded. Task 32 is next.
 
 - [ ] **Task 32 — Make `paper.md` Gist-compatible and publication-ready.**
 
@@ -886,6 +924,8 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
 
 ## Decision log
 
+- **2026-07-25 — Empirical fallback references remain population-typed and noncausal.** Target prevalence is `.35` Granted and `.65` non-Granted; `.0038/.0861` are target-weighted issued-`Granted` masses rather than recall; and `.0124/.1811` are unweighted design-distribution accuracies conditional on reference Granted. The compact traces cannot supply target-weighted conditional accuracy or a target-weighted per-outcome decomposition. Both complete pipelines fell back heavily, and their difference does not identify the causal share of the structured objective, interval calibration, or decoder.
+- **2026-07-25 — The affirmative neural-fit answer has formal and empirical layers.** Signed margins fit rectification; finite proof-erased CPWL plan computation has an exact ReLU reference witness; and changed-threshold transfer is supported in the frozen setting. Activation/scientific-atlas alignment and semantic identification of hidden depth with nested licenses remain untested. This is the motivation/disposition thread for the paper and Substack, not a fifth contribution or an architecture-optimality claim.
 - **2026-07-24 — Publication needs one narrow repair, not a return to research.** Checkpoint E inserts Task 31B before formatting. It will fix one malformed math span; add the frozen `.35/.65`, `.0038/.0861`, `.0124/.1811`, and `.35` reference values with their target-versus-unweighted scopes; define “value logic”; state the affirmative ReLU motivation and its open alignment questions; and remove causal overreading from the fallback comparison. Issued-`Granted` mass is not recall, unweighted conditional traces do not decompose target-weighted fidelity, and no theorem, experiment, grade, Appendix G, or policy/value existence claim is reopened.
 - **2026-07-21 — One operational policy/value theorem precedes drafting.** Checkpoint D inserts Task 22B between Tasks 25 and 26. Task 22B now proves distribution-scoped behavioral reconstruction from action-score error and action gaps and separates score-code, return-semantic `Q`, scalar-`V` harness, and stochastic variants. It does not reopen the finite encoder-image existence proposition or initiate a companion experiment.
 - **2026-07-21 — Raw decoding and conservative authorization use distinct margin guarantees.** Coordinatewise error at most `rho` gives raw argmax stability above a true `2 rho` gap. It also supplies the valid generic certified pairwise-gap radius `r_gap:=2 rho`; guaranteeing that the corresponding estimated-gap decoder both recovers and does not abstain can require true gap above `2 r_gap=4 rho`. A separately accepted direct gap-error certificate may supply a tighter valid radius. The behavioral atom remains one profile requirement rather than a complete license.

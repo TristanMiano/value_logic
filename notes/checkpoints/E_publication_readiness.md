@@ -1,13 +1,23 @@
 # Checkpoint E: Publication Readiness
 
 Date: 2026-07-24
-Status: completed; publication-ready after one narrow repair task
+Status: completed; Task 31B repair fulfilled 2026-07-25
 Audited parent: `b2869c36b605e3f6fbc27f2bdbd00fc2538bb16b`
-Next task: Task 31B
+Next task: Task 32
 
 Scope: the complete substantive paper, the mathematical/citation and
 reader/narrative audits, External Audit VI, every artifact produced since
 Checkpoint D, and every unfinished item through Task 34
+
+Post-checkpoint amendment: Task 31B repaired the malformed Appendix C.1 math
+span; added the population-typed empirical references; defined “value logic”;
+stated the constructive neural motivation and its untested alignment
+extensions; and replaced the causal-reading-prone fallback mnemonic. The
+prospective language below is retained as the checkpoint's decision record.
+See [`paper.md`](../../paper.md), the Task 31B errata in the
+[`mathematical`](../mathematical_citation_audit.md) and
+[`reader`](../reader_audit.md) audits, and the completion record in
+[`TODO.md`](../../TODO.md). Task 32 is next.
 
 ## Durable decision summary
 

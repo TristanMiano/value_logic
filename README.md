@@ -67,7 +67,7 @@ The historical interfaces in `formalism/01_signature.md` through `formalism/05a_
 
 ## Project status
 
-All scheduled work through Task 31A, including Task 22B and the other completed
+All scheduled work through Task 31B, including Task 22B and the other completed
 suffixed tasks, and Checkpoints A, A1, B, C, C1, D, and E is complete. The
 finite-stage licensing interface, consequence and update rules, dominance and
 retention distinctions, overlapping scientific-model cover, bridge taxonomy,
@@ -165,7 +165,19 @@ unweighted conditional trace accuracy cannot decompose target-weighted
 fidelity. It adds Task 31B to repair one malformed math span, publish the
 missing reference values with exact scopes, define “value logic,” answer the
 neural-fit motivation constructively, and remove causal overreading from the
-fallback comparison. Tasks 32--34 remain the publication sequence. **Task 31B
-is next.**
+fallback comparison. Tasks 32--34 remain the publication sequence.
+
+[`Task 31B`](paper.md) completes that repair. The malformed Appendix C.1
+formula is balanced; “value logic” is explicitly tied to task-relative reliance
+value; and the neural section now says why signed margins, finite CPWL
+composition, and changed-threshold reuse made the interface worth testing while
+keeping activation-atlas alignment and semantic depth correspondence open.
+The empirical section places target prevalence `.35/.65`, fallback
+`.9962/.9139`, issued-`Granted` mass `.0038/.0861`, unweighted conditional
+Granted accuracy `.0124/.1811`, and the `.35` descriptive status baseline at
+their distinct scopes. Issued grants are not called recall, and the two
+complete pipelines are compared without attributing their difference to one
+component. The theorem and evidence-grade sets are unchanged. **Task 32 is
+next.**
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.
