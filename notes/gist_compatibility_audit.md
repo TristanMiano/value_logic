@@ -6,6 +6,28 @@ Status: complete after a browser-stage macro erratum; the corrected `paper.md`
 is ready for post-push live-browser confirmation and the final cross-artifact
 publication checks. No Gist was created or published.
 
+## Post-Task33 explanatory-revision addendum
+
+The numerical counts in the original Task 32 record below describe the
+publication-format snapshot at commit `c42b2fb`. A reader-approved explanatory
+revision on 2026-07-27 subsequently expanded `paper.md`: notation is now
+defined at first use, design choices are motivated, every theorem is tied back
+to the opening problem, an English request is translated into typed atoms, and
+the empirical findings are mapped to the exact layers they affect. No theorem,
+frozen endpoint, evidence grade, or policy/value existence boundary changed.
+
+The post-revision source has 1,894 single-dollar delimiters, forming 947
+single-line inline expressions, and 212 display-dollar delimiter lines,
+forming 106 displays. GitHub's `/markdown` API agrees exactly on 947 inline and
+106 display math elements, 73 headings, 16 tables, two images, and one code
+block, with no raw dollar residue or relative target. The source still contains
+zero `\operatorname`, `\hline`, `\left\{`, and `\!` fragments. Its current
+operator inventory is 19 `\mathop{\text{...}}` spellings plus nine explicit
+`\mathsf{ReLU}` spellings. Main text now counts 14,720 words under the same
+repository regex used for Task 32. These values supersede the old counts only
+for the current artifact; the dated Task 32 measurements remain the historical
+formatting record.
+
 ## Durable result
 
 Task 32 changed presentation and destinations, not the paper's theorem set,
@@ -137,6 +159,7 @@ The original checks were repeated against a clean archive with the exact Task
 32 patch before that task commit. The browser-macro erratum, including its new
 regression, was likewise applied to a fresh archive and passed 178/178,
 preflight, and local-link validation. Public CI and live browser rendering
-remain post-push observations. Task 32 does not authorize creating a public
-Gist, drafting the Substack adaptation, changing a scientific claim, or
-rerunning final confirmation. Task 33 is next.
+remain post-push observations. Task 32 did not itself authorize creating a
+public Gist, drafting the Substack adaptation, changing a scientific claim, or
+rerunning final confirmation. Task 33 subsequently completed the adaptation;
+Task 34 is the current final cross-check.

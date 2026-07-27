@@ -17,8 +17,8 @@ checks preserve states and fallback; finite ReLU networks supply one reference
 realization. In a frozen synthetic experiment, tolerance transfer and marginal
 proposal coverage were supported, registered boundary superiority and
 in-regime noninferiority were refuted at their margins, and usable coverage was
-poor. Formal claims remain neutral about final truth, architectural
-optimality, and true-utility recovery.
+poor. Thus the work constructs and analyzes a revisable reliance calculus while
+separating representational success from operational usefulness.
 
 ## 1. Introduction: Reliance Before Finality
 
@@ -76,11 +76,12 @@ succession. A model may work on one domain and fail the demands of another.
 The symbol $\epsilon$ acquires meaning only after a task loss, a domain-level
 risk aggregation, and a reliance rule have been declared. It may come from an
 external safety or precision requirement. It may instead be induced by the
-agent's fallback: if the outside option has loss $J(B,D)$ and switching must
-improve on it by $\Delta$, then the contextual ceiling is
-$\epsilon_B(D)=J(B,D)-\Delta$. Beating that ceiling and satisfying an absolute
-adequacy constraint are separate requirements; a poor fallback can be easy to
-beat while the candidate remains unsuitable for use.
+agent's fallback. Here $J(C,D)$ denotes the declared task loss plus any
+included use costs for plan $C$ on domain $D$. If the outside option has loss
+$J(B,D)$ and switching must improve on it by $\Delta$, then the contextual
+ceiling is $\epsilon_B(D)=J(B,D)-\Delta$. Beating that ceiling and satisfying
+an absolute adequacy constraint are separate requirements; a poor fallback can
+be easy to beat while the candidate remains unsuitable for use.
 
 The “model” being assessed may be an equation, fitted predictor, or finite
 plan composing models, translations, estimators, and a router. Its internal
@@ -88,6 +89,17 @@ structure remains visible for error and provenance, while the complete plan
 can be assessed as one candidate. Payload, quantitative grade, and evidence
 remain separate, as do the task loss, an estimator of that loss, and the
 optimizer's training objective.
+
+Not every formal choice below has the same status. The declared revision
+problem requires the interface to retain recoverable distinctions among the
+candidate, current records, reliance criterion, and requirements. Their
+four-field request representation is a chosen factorization that lets those
+ingredients vary independently; it is not a theorem about the fewest possible
+tuple fields. Checking well-formedness before authorization and masking every
+unlicensed candidate are conservative decision rules. The ReLU and
+center--radius constructions are reference implementation choices. We state
+these rationales where each choice first appears so that formal consequences
+are not confused with design defaults.
 
 The paper makes four formal contributions:
 
@@ -119,40 +131,34 @@ The paper makes four formal contributions:
    the result.
 
 ReLU compatibility was engineered at this typed boundary, delimited
-mathematically, and tested in one frozen synthetic implementation. That test
-gave an asymmetric result. Without retraining, the structured statistic arm
-generalized strongly to changed tolerances (macro accuracy $.9436$ versus
-$.7570$; paired difference $+.1866$, 95% interval $[.1860,.1873]$). Its
-registered boundary-superiority proposition was refuted at its $+.05$ margin
-(difference $-.2612$), and its in-regime-noninferiority proposition was refuted
-at its $-.02$ margin (difference $-.1009$). The reverse comparisons were not
-preregistered confirmatory claims. Marginal
-target-in-proposal coverage was supported for the two registered groups
-($.9098$ and $.9044$), while support/refutation miss rates were $.4611/.3248$
-under the unweighted design distribution. The declared target distribution
-contained $.35$ Granted and $.65$ non-Granted mass; target-weighted fallback
-was $.9962$ for the structured pipeline and $.9139$ for direct cross-entropy.
-Thus:
+mathematically, and tested in one frozen synthetic implementation. The
+structured statistic pipeline transferred much better than the direct
+classifier when the tolerance changed, but it performed much worse at the
+boundary and in regime and sent almost all target-weighted mass to fallback.
+Marginal proposal coverage still passed. These are comparisons between two
+complete pipelines, so the study did not isolate the objective, fit,
+calibration, interval construction, decoder, or retained statistic as the
+cause. Section 7 reports the exact numbers and preregistered dispositions.
 
-> **Retaining a reusable numerical statistic helped when the decision threshold
-> changed. Both complete pipelines often declined to decide, and fallback in
-> the tested structured pipeline was nearly total.
-> Representational information, calibrated caution, and operational usefulness
-> are separate achievements.**
+**How the motivating intuitions fare.** The opening ideas receive different
+kinds of support, which should not be collapsed into one verdict:
 
-Conservative dead-band geometry is consistent with these observations. The
-experiment did not identify how much of the effect came from the objective,
-fit, calibration, interval construction, decoder, or their interaction. It
-also was not an architecture comparison. ReLU is one analytically explicit
-reference witness; the architecture-neutral interface admits other
-realizations that preserve the same typed obligations.
+| motivating intuition | result in this paper | status and extent |
+|---|---|---|
+| A superseded model may remain useful on a restricted domain | Newtonian motivation and the finite synthetic succession | philosophical motivation plus constructive illustration; no historical physics experiment |
+| Present reliance can be represented separately from final truth | finite license, refinement, stability, and revision results | represented by construction; refinement, stability, and revision properties established relative to the declared finite semantics |
+| Reasons and limits can survive plan composition and updates | typed locality, checked composition, routing, and path bounds | formally established under finite, typed, acyclic assumptions |
+| A retained numerical statistic may help answer a changed tolerance without retraining | structured-pipeline transfer advantage $+.1866$ | the comparative result supports the retention hypothesis for the frozen synthetic population without isolating its cause |
+| The tested structured pipeline is a useful general authorization default | boundary difference $-.2612$, in-regime difference $-.1009$, fallback $.9962$ | strongly challenged for this estimator--calibrator--decoder bundle |
+| A neural system can implement the numerical proposal interface | consumer factorization, conservative decoding, and finite ReLU witness | finite result for global finite continuous piecewise-affine (CPWL) numerical maps; evidence checking, assessment, masking, and fallback remain external |
+| A finite policy can be represented by action scores and approximately reconstructed | encoder-image existence and conditional action-gap bounds | exact behavioral code plus distribution-scoped bound; environment-relative value semantics requires an additional return and harness contract |
 
-For the optional black-box-policy motivation, a value-like,
-environment-relative surrogate may provide a high-level semantic view. Finite
-encoder-image existence and conditional behavioral reconstruction make a
-bounded bridge; they do not address whether true utility exists or is
-recovered. Section 8 separates representation, return semantics, practical
-reconstruction, mechanism, and human interpretation.
+For the optional black-box-policy motivation, finite behavioral encoder-image
+existence supplies a preliminary representational bridge. An environment and
+return contract are additionally required for an environment-relative
+value-like semantic view. Section 8 fixes this scope and separates
+representation, return semantics, practical reconstruction, mechanism, and
+human interpretation.
 
 Section 2 carries one succession decision through the paper. Sections 3–6
 develop the calculus, revision results, composition rules, and representation;
@@ -168,12 +174,21 @@ considered. A local loss $\ell_L(M,z)$ measures mismatch under a declared task
 criterion $L$. A domain functional $\rho_D$ then gives
 
 $$
-R_{D,L}(M)=\rho_D\!\left(z\mapsto\ell_L(M,z)\right).
+R_{D,L}(M)=\rho_D\left(z\mapsto\ell_L(M,z)\right).
 $$
 
-Depending on the request, $\rho_D$ might be an expectation, a worst-case
-operator, a tail functional, or an empirical estimate with its own uncertainty.
-Only after these choices does the shorthand
+The arrow expression $z\mapsto\ell_L(M,z)$ reads “send each case $z$ to the
+loss incurred by $M$ on that case.” The symbol $\rho_D$ then takes that entire
+case-wise loss function as input and returns one domain-level risk value. It is
+called a **functional** because its input is a function rather than a single
+number. Keeping this operation explicit is necessary because “adequate on
+$D$” can mean low average loss, low worst-case loss, acceptable tail risk, or
+an evidence-qualified empirical estimate; those are different reliance
+questions. Depending on the request, $\rho_D$ may therefore be an expectation,
+a supremum, or a tail-risk operator. When aggregation is probabilistic, the
+request declares the relevant population or weighting law on the case set
+$D$. A finite estimator and its uncertainty certificate are separate objects
+used to bound the target functional. Only after this choice does the shorthand
 
 $$
 \Pi(M,D,\epsilon) \quad\text{suggest}\quad R_{D,L}(M)\leq\epsilon
@@ -285,12 +300,14 @@ statistics such as interval endpoints, risks, and margins. Exact external
 machinery retains evidence identity, well-formedness, inclusive boundary rules,
 profile aggregation, active masks, and fallback. For an accepted loss interval
 $[l,u]$ at threshold $\epsilon$, the signed support margin is
-$m_{support}=\epsilon-u$. Positive $\mathop{\text{ReLU}}(m_{support})$ can expose
-strict certificate-relative surplus for that named requirement. A zero
-activation cannot finish the diagnosis: supported equality, an interval
-crossing the boundary, and missing evidence can all yield zero. The exact state
-and provenance resolve that collision. This is the typed seam at which the
-paper's formal semantics meets its reference neural realization.
+$m_{\mathrm{support}}=\epsilon-u$. Define
+$\mathsf{ReLU}(v)=\max(0,v)$. Positive
+$\mathsf{ReLU}(m_{\mathrm{support}})$ can expose strict certificate-relative surplus for
+that named requirement. A zero activation cannot finish the diagnosis:
+supported equality, an interval crossing the boundary, and missing evidence
+can all yield zero. The exact state and provenance resolve that collision. This
+is the typed seam at which the paper's formal semantics meets its reference
+neural realization.
 
 ## 3. A Compact Finite-Stage License Calculus
 
@@ -299,15 +316,14 @@ judgment? The answer is a small operational request plus typed evidence and
 diagnostics; detailed implementation records elaborate that request without
 changing its meaning.
 
-### 3.1 Requests and their three operational carriers
+### 3.1 Three operational carriers and a profile
 
 The shorthand $\Pi(M,D,\epsilon)$ has now done its motivational work. Its
 formal elaboration uses three principal carriers. We call this a **value
 logic** because its judgments formalize the task-relative reliance value from
 Section 1: whether a plan remains worth relying on for a declared domain,
 task, loss, cost, evidence state, and alternative. The name specifies an
-operational comparison. It does not define truth by usefulness or assume that
-agents possess true utility functions.
+operational comparison under the scope declaration in Section 1.
 
 $$
 E\quad\text{evaluated use plans},\qquad
@@ -335,6 +351,37 @@ where $P$ is finite syntax selecting the requirements that matter. The
 compressed expression $\Pi(M,D,\epsilon)$ is thus replaced by a request whose
 loss, tolerance, fallback, evidence mode, and provenance are explicit.
 
+The four entries are a semantic decomposition, rather than a minimal encoding
+claim. Product types could mechanically bundle them into fewer fields. We keep
+them separate because four different revisions should remain distinguishable:
+changing $e$ compares another plan under the same question; changing $q$
+changes the domain, loss, threshold, fallback, or certificate contract;
+changing $s$ updates evidence and the represented library without rewriting
+the question; and changing $P$ asks for a stronger or weaker collection of
+requirements over the same base. Folding $P$ into $q$, for example, is
+possible, but it would hide profile refinement inside context identity.
+Folding $s$ into the plan would conflate what is being evaluated with what is
+currently known about it. The chosen factorization exposes exactly the four
+independent changes used by the paper's arguments; no claim is made that every
+equivalent formalization needs four surface fields.
+
+In ordinary language, the running request asks: “May we rely on the old plan
+on this domain, given the records currently accepted, when it must have loss
+at most $.20$, improve on fallback by $.05$, finish within $50$ ms, and carry
+a valid trace?” Its formal instance is
+
+$$
+\mathfrak r_{old}=(s_0,M_{old},q_{.20},P_{\mathrm{rely}}).
+$$
+
+Here $s_0$ contains the current interval and provenance records,
+$M_{old}$ is the candidate plan, $q_{.20}$ supplies the domain, loss,
+aggregation, thresholds, fallback, units, and evidence modes, and
+$P_{\mathrm{rely}}$ selects the four English requirements. Expiring a
+certificate changes $s_0$; tightening $.20$ to $.16$ changes $q$; evaluating
+$M_{succ}$ changes $e$; and adding a finite non-domination requirement changes
+$P$. This is why those changes are represented separately.
+
 A composed plan may separate what it computes, a typed quantitative grade, and
 the evidence supporting that grade. Component success does not certify the
 root; Section 5 supplies that rule. The target criterion $L_q$, an estimator
@@ -356,23 +403,46 @@ $P_{\mathrm{pref-cert}}$ further requires every relevant pair in that set to
 be resolved as non-dominating or ineligible. Neither ranges over unexamined
 future plans.
 
+These atom families are the paper's default auditable interface, rather than
+an exhaustive or minimal logical basis. Adequacy prevents “better than a poor
+fallback” from sufficing; fallback improvement records the contextual reason
+to switch; constraints retain differently typed obligations such as latency;
+traceability keeps the warrant inspectable; and comparison atoms are optional
+because permission to rely and selection among permitted plans are separate
+questions. A different application may add atom kinds while preserving the
+same typed-address and diagnostic contract.
+
 Instantiating a template at the request base $(s,e,q)$ produces an address
 
 $$
 a=\mathsf{kind}(\text{parameters};\text{scope, criterion, mode}).
 $$
 
+This display is a constructor schema, not multiplication or one literal atom.
+The semicolon visually separates numerical or symbolic parameters from fields
+that type their scope, criterion, and evidence mode.
+
 The address retains enough type information to prevent a certificate for one
 domain, loss, frame, candidate set, or checker mode from satisfying another.
 Each slot is **required** or **report-only**. A safety subset identifies
 unresolved or contrary diagnostics that action consumers must see. Report
 atoms enrich explanation; only required atoms determine authorization.
+These roles are also an explicit authorization policy: required slots decide,
+report-only slots explain without deciding, and the safety projection prevents
+specified obstacles or counterevidence from disappearing from an
+action-facing view.
 
 The predicate $WF(\mathfrak r)$ checks that the request denotes, the plan is
 represented and executable, output and frame match, profile addresses are
 typed, comparison scopes are exact, and action-authorizing profiles name a
 fallback. Wrong latency units in the example make the request
 **Undefined**. Missing latency evidence instead leaves a well-formed atom open.
+
+This ordering is deliberate. Undefined is reserved for a tuple that does not
+yet pose a meaningful typed reliance question; Open is reserved for a
+meaningful question whose evidence is missing, conflicting, expired, or
+boundary-crossing. Checking $WF$ first prevents malformed units or absent
+fallbacks from masquerading as empirical uncertainty.
 
 For every well-formed request, each required or report address has a total
 finite-stage valuation
@@ -382,9 +452,9 @@ $$
 $$
 
 read as refuted, open, and supported. These are evidential states. The
-calculus makes no three-valued claim about truth itself. For a current
-nonempty certificate region $U_{\mathrm{cert}}$ and acceptable region $A$, the
-common clause is
+three values were chosen to preserve counterevidence, unresolved evidence, and
+support as different operational cases. For a current nonempty certificate
+region $U_{\mathrm{cert}}$ and acceptable region $A$, the common clause is
 
 $$
 U_{\mathrm{cert}}\subseteq A\Rightarrow +,\qquad
@@ -392,17 +462,25 @@ U_{\mathrm{cert}}\cap A=\varnothing\Rightarrow -,\qquad
 \text{missing or boundary-crossing evidence}\Rightarrow ?.
 $$
 
+Inclusive support follows from requirements written with $\leq$. Refutation
+requires certified separation onto the contrary side; overlap stays Open
+because it establishes neither direction. The first convention follows the
+chosen inequality, while the treatment of unresolved overlap is a
+conservative evidence policy.
+
 Fallback improvement uses its own comparison. With smaller-is-better loss,
 candidate and fallback regions $U_{\mathrm{cert}}(e),U_{\mathrm{cert}}(F_q)$,
 and required advantage $\Delta$, support requires
 $\sup U_{\mathrm{cert}}(e)+\Delta\leq\inf U_{\mathrm{cert}}(F_q)$; separated
 evidence on the contrary side refutes the atom, and overlap leaves it open.
 
-In the succession example, $q_{.20}$ requires loss at most $.20$, improvement
-by $.05$ over $B$ at $.35$, latency at most $50$ ms, and a trace. The initial
-regions support all four requirements for $M_{old}$ and $M_{succ}$. The
-absolute $.20$ ceiling, fallback-derived $.30$ ceiling, and any finite-set
-preference comparison remain separate.
+In the succession example, the four required sentences are: “loss is at most
+$.20$”; “loss improves by at least $.05$ on fallback $B$ at $.35$”; “latency
+is at most $50$ ms”; and “the result has an accepted trace.” The profile
+$P_{\mathrm{rely}}$ is their typed conjunction. The initial regions support
+all four for $M_{old}$ and $M_{succ}$. The absolute $.20$ ceiling,
+fallback-derived $.30$ ceiling, and any finite-set preference comparison
+remain separate.
 
 Every valuation has an indexed diagnostic—support with witnesses, open with
 obstacles, or refutation with counterwitnesses—and provenance. Let
@@ -410,8 +488,14 @@ $\mathsf{Diag}(\mathfrak r)$ be the complete diagnostic map. For the nonempty
 required address set, define
 
 $$
-\mu(\mathfrak r)=\bigwedge_{a\in\mathsf{Req}(P)}\nu_s(e,q,a).
+\mathsf{ReqVal}(\mathfrak r)
+=\bigwedge_{a\in\mathsf{Req}(P)}\nu_s(e,q,a).
 $$
+
+Here $\bigwedge$ is the minimum under $-<?<+$. For mandatory obligations this
+conservative conjunction implements the intended rule: one refutation blocks,
+otherwise one unresolved atom withholds, and support of every required atom
+grants. Other aggregation policies would define a different profile calculus.
 
 Assessment first checks well-formedness and then lifts this meet:
 
@@ -419,15 +503,23 @@ $$
 \mathsf{Assess}(\mathfrak r)=
 \begin{cases}
 \mathsf{Undefined},&\neg WF(\mathfrak r),\\
-\mathsf{Refused},&WF(\mathfrak r)\ \text{and}\ \mu(\mathfrak r)=-,\\
-\mathsf{Withheld},&WF(\mathfrak r)\ \text{and}\ \mu(\mathfrak r)=?,\\
-\mathsf{Granted},&WF(\mathfrak r)\ \text{and}\ \mu(\mathfrak r)=+.
+\mathsf{Refused},&WF(\mathfrak r)\ \text{and}\ \mathsf{ReqVal}(\mathfrak r)=-,\\
+\mathsf{Withheld},&WF(\mathfrak r)\ \text{and}\ \mathsf{ReqVal}(\mathfrak r)=?,\\
+\mathsf{Granted},&WF(\mathfrak r)\ \text{and}\ \mathsf{ReqVal}(\mathfrak r)=+.
 \end{cases}
 $$
 
 Thus one refuted requirement defeats the request; with no refutation, one open
 requirement withholds it; a grant requires support for every required atom.
 The complete diagnostics preserve why these outcomes occurred.
+
+The four public outcomes were chosen because they preserve four different next
+actions: repair a malformed request, gather or renew evidence, revise a
+counterindicated plan, or admit a supported plan to selection. Four is not
+universally minimal. A Boolean use/fallback caller can collapse distinctions;
+an auditor needs finer diagnostics. It is the coarsest public interface used
+here that retains those four controller responses, a consumer-relative point
+formalized by Theorem 10.
 
 Typed refinement, written $a\Rightarrow_A b$, records when support for one atom
 suffices for another at the same scope, loss, frame, and certificate mode.
@@ -455,8 +547,10 @@ or unrepresented interactions create no edge.
 ### 3.3 Licensed consequence, selection, and revision
 
 Let $\Gamma\vdash_{(e,q)}\varphi$ be the internal evaluation relation supplied
-by $e$ for $q$. A Granted request with the required type and scope produces the
-labelled output
+by $e$ for $q$. Here $\Gamma$ is the finite collection of typed premises and
+inputs available to that evaluation, $\varphi$ is its produced claim, and
+$\vdash$ records internal derivability or computation. A Granted request with
+the required type and scope produces the labelled output
 
 $$
 \Gamma\Rightarrow_{[s,e,q,P]}[e,q]\varphi.
@@ -466,6 +560,9 @@ The label remains attached. Export to another domain, detachment as target
 truth, or composition with another plan needs a validated bridge. A
 certificate mode states the admissible world/state class and conclusion; a
 statistical bridge carries only its named coverage or error guarantee.
+Thus $\vdash$ describes what the plan computes internally, while the labelled
+$\Rightarrow$ records the exact finite request under which that output is
+licensed for use.
 
 Licensing precedes selection. For a case $x$, define the active set
 
@@ -498,12 +595,17 @@ $$
 A_\chi(n)=\mathsf{Assess}(\mathsf{state}(n),e,q,P).
 $$
 
+$N$ is the set of finite stages, $\to$ the admitted one-step update relation,
+$n_0$ the initial stage, $\mathsf{state}(n)$ the operational record at $n$,
+and $\mathsf{world}(n)$ its semantic index. We write $m\geq n$ when $m$ is
+reachable from $n$ by zero or more admitted updates.
+
 Replacing $e$, $q$, or $P$ asks a different question. A **current grant** says
 only $A_\chi(n)=\mathsf{Granted}$. Along a path $(n_i)$, **eventual stability**
 and **permanent current stability** are
 
 $$
-\exists N,z\ \forall i\geq N:\ A_\chi(n_i)=z,
+\exists i_0,z\ \forall i\geq i_0:\ A_\chi(n_i)=z,
 \qquad
 \forall m\geq n:\ A_\chi(m)=A_\chi(n).
 $$
@@ -530,6 +632,11 @@ also grants $Q$. Recall that
 $P\succeq_{prof}^{\beta}Q$ requires each atom of $Q$ to have a refining witness
 among the required atoms of $P$.
 
+The **fixed instantiation fiber** holds constant the base values and evaluator
+rules needed for $P$ and $Q$ to resolve to the same relevant typed addresses.
+It is the comparison class in which “stronger profile” changes requirements
+rather than silently changing the domain, evidence mode, or atom meaning.
+
 **Theorem 1 (profile soundness and relative completeness).** Every sound typed
 profile refinement preserves grants:
 
@@ -549,6 +656,12 @@ P\models_{prof}^{[\beta]}Q
 \quad\Longleftrightarrow\quad
 P\succeq_{prof}^{\beta}Q.
 $$
+
+**Why this matters.** Typed refinement permits a stronger license to answer a
+weaker request when its warrant addresses the same domain, task, frame, and
+evidence mode. On the stated finite independently realizable fragment, these
+are exactly the valid profile transports. This reuses local evidence without
+laundering it into a broader claim.
 
 The soundness proof projects each support witness along the typed atom rule and
 then takes the finite meet. For relative completeness, if refinement fails at
@@ -595,6 +708,11 @@ n\sim_{fin}n',\quad A_\chi(n)=A_\chi(n')=z,\quad
 \neg\mathsf{CertifiedStable}_\chi(n).
 $$
 
+**Why this matters.** When the same finite record is compatible with a changing
+continuation, no stage-local scheme sound for both continuations can certify
+permanent stability. The result protects the motivating distinction between
+permission to rely now and a conclusion about every admitted continuation.
+
 A local verifier receives the same finite input at both roots. Acceptance at
 one therefore implies acceptance at the other, where the live descendant
 contradicts soundness. In the succession example, the current $M_{old}$ grant
@@ -620,6 +738,10 @@ $\epsilon$, and regions $C_i=[L_i,U_i]$, suppose coverage holds eventually,
 $\mathop{\text{diam}}(C_i)\to0$, and
 $\gamma=|\theta-\epsilon|>0$. Then the atom eventually stabilizes as supported
 when $\theta<\epsilon$ and refuted when $\theta>\epsilon$.
+
+**Why this matters.** Fallibility need not imply perpetual suspension.
+Stability can be constructed from frozen dependencies or convergent evidence
+with positive margin; what stabilizes is the named reliance question.
 
 The deterministic clause is induction over declared events. The statistical
 clause chooses one index after both eventual coverage and diameter below
@@ -663,6 +785,10 @@ $$
 \neg\mathsf{StableNow}_{\mathsf{Comp}_e}(n).
 $$
 
+**Why this matters.** This is the formal shape of supersession in the
+calculus: a later competitor may defeat present preference without erasing an
+older plan's local adequacy evidence, other licenses, or archival history.
+
 The conclusion is polarity-specific. If an already accepted dominator remains
 valid in every continuation, the refutation of $e$ can remain stable while the
 library grows. In the example, adding $M_{new}$ defeats a required finite
@@ -680,6 +806,11 @@ $\mathsf{Read}_s(\mathfrak r,i)$ for profile slot $i$ and a finite write set
 $\mathsf{Write}(u)$ for each event. Collection-index keys are read even when
 their collections are empty. They make absence—no certificate, pair record,
 or search trace—visible to a later insertion.
+
+The notation
+$\mathsf{Env}(s;e,q,P)|_{\mathsf{Read}_s(\mathfrak r,i)}$ means the complete
+typed evaluation environment restricted to exactly those keys read by slot
+$i$; it is ordinary map restriction, rather than a new semantic operator.
 
 **Theorem 5 (complete-diagnostic locality and graph change-completeness).** For
 fixed $(e,q,P)$ and evaluator versions, agreement on a slot's complete typed
@@ -711,6 +842,10 @@ change-complete: every actual change has a path from an event. Hence graph-path
 absence is sufficient for robust invariance. The converse requires
 path-realizability for the exact observable and update class; a conservative
 graph may contain an inert path.
+
+**Why this matters.** The result makes preservation of reasons and limits
+checkable during revision. An update leaves a diagnostic intact when it cannot
+reach anything that diagnostic read; affected warrants are recomputed.
 
 The proof is a finite case analysis over adequacy/constraint regions, fallback
 improvement, trace, the two comparison modes, and $WF$. Deterministic
@@ -772,6 +907,10 @@ $$
 \mathsf{Assess}(s,e_G,q,P)=\mathsf{Granted}.
 $$
 
+**Why this matters.** Reliance attaches to the executable plan actually used,
+rather than being inferred from individually acceptable parts. Composition
+therefore cannot manufacture an unsupported license.
+
 Topological induction builds the bundle and proves erasure; ordinary
 $WF+K_3$ assessment then lifts its checked root claim. The established
 machinery is structural induction and consumer-checked proof carrying. Its
@@ -788,7 +927,9 @@ root propagation rule.
 
 Grounding adds a second condition: every source of a finite support derivation
 is a typed accepted base, derived rules preserve provenance, and evaluators
-read only exogenous inputs and completed lower-rank outputs.
+read only exogenous inputs and completed lower-rank outputs. The map
+$\mathsf{rk}$ assigns each evaluator an integer rank, increasing along every
+evidence-dependency edge.
 
 **Theorem 7 (grounded and stratified assessment).** A finite acyclic support
 derivation with typed bases grounds every supported required atom. A finite
@@ -799,10 +940,15 @@ grounding, the global assignment is grounded as well.
 $$
 u\to v\ \text{as an evidence dependency}
 \quad\Longrightarrow\quad
-\rho(u)<\rho(v)
+\mathsf{rk}(u)<\mathsf{rk}(v)
 \quad\Longrightarrow\quad
-\text{unique assessment by induction on }\rho.
+\text{unique assessment by induction on }\mathsf{rk}.
 $$
+
+**Why this matters.** Under this finite acyclic grounding discipline, a
+license's reason chain must bottom out in independently accepted evidence. The
+value-logic implementation cannot authorize itself merely by citing its own
+same-run judgment.
 
 This permits an independently evaluated value-logic implementation to appear
 as a plan above its completed run records; its same-run grant cannot be its
@@ -820,7 +966,12 @@ A scientific licensed cover may overlap, but an executed router still induces
 a measurable partition. Let $\mathcal G_j$ be the event on which expert $j$ is
 selected and authorized, $\mathcal M$ the event on which an expert is selected
 outside the declared authorized/reference set, and $\mathcal B$ the explicit
-fallback event. These events partition the deployment population.
+fallback event. These events partition the deployment population, and $\mu$
+denotes its declared probability measure. For an event $\mathcal A$ of positive
+mass, write
+$R_{\mathcal A}(\ell)=\mathbb E_\mu[\ell\mid\mathcal A]$; when
+$\mu(\mathcal A)=0$, its weighted contribution
+$\mu(\mathcal A)R_{\mathcal A}(\ell)$ is defined as zero.
 
 **Theorem 8 (routed-risk decomposition).** For nonnegative integrable routed
 loss,
@@ -839,6 +990,11 @@ R(h)\leq
 \sum_j\mu(\mathcal G_j)\epsilon_j
 +L_M\mu(\mathcal M)+L_F\mu(\mathcal B).
 $$
+
+**Why this matters.** For an action-authorizing router with possible gaps,
+local usefulness must account for the named fallback: its frequency and
+severity contribute to deployment even when every selected expert is locally
+licensed.
 
 The proof splits the loss integral over the finite partition. It also shows
 why a router is a new evaluated plan: its risk depends on selected-subset loss,
@@ -869,6 +1025,10 @@ $$
 e_o\leq\sum_{u\in V}W_{u,o}\delta_u.
 $$
 
+**Why this matters.** The path bound translates component uncertainty into
+the plan-level quantity tested against a reliance threshold, making composed
+reliance quantitatively checkable.
+
 If the outer task loss is $K$-Lipschitz on the reached range, the corresponding
 two-sided risk difference is at most
 $K\sum_uW_{u,o}\delta_u$. Repeated substitution in a topological order proves
@@ -888,29 +1048,32 @@ Why was this calculus worth testing with a neural implementation? Three
 constructive correspondences supplied the original reason. Declared thresholds
 produce signed margins, and ReLU computes their positive parts. Finite
 affine/minimum/maximum composition makes the proof-erased numerical part of a
-finite plan CPWL, giving an exact ReLU reference witness. Retaining the
-underlying statistic also permits a new threshold to be applied without
-retraining; the frozen study later supported that expectation in its registered
-setting. Two broader hopes remain empirical. The study did not test whether
-activation regions align with scientific-model domains, and exact plan-map
-realizability does not identify network depth or learned layers with nested
-licenses. The results below therefore establish a bounded construction and its
-limits, together with one transfer finding.
+finite plan continuous piecewise-affine (CPWL), giving an exact ReLU reference
+witness. Retaining the underlying statistic also permits it to be re-queried
+under a new threshold without retraining. The frozen structured pipeline later
+showed a transfer advantage consistent with that expectation, although the
+complete-pipeline comparison did not isolate its cause. Two broader hopes
+remain empirical. The study did not test whether activation regions align with
+scientific-model domains, and exact plan-map realizability does not identify
+network depth or learned layers with nested licenses. The results below
+therefore establish a bounded construction and its limits, together with one
+transfer finding.
 
 ### 6.1 What an implementation must preserve
 
 What information must survive when a learned component helps implement the
 logic? The answer is fixed by its consumers before an architecture is chosen.
-For an atom address $a$, let
+Fix a well-formed request $\mathfrak r=(s,e,q,P)$ and a profile slot $i$ whose
+instantiated address is $a_i$. Let
 
 $$
-x(s,e,q,a)=\left(a,\,
-\mathsf{Env}(s;e,q)|_{\mathsf{Read}_s((s,e,q),a)}\right).
+x(\mathfrak r,i)=\left(a_i,\,
+\mathsf{Env}(s;e,q,P)|_{\mathsf{Read}_s(\mathfrak r,i)}\right).
 $$
 
 This is the exact address and its dependency-scoped record. A learned module
-may propose a statistic $\widehat t_a$, uncertainty envelope
-$\widehat\eta_a$, payload, or grade. Address and units, well-formedness,
+may propose a statistic $\widehat t_{a_i}$, uncertainty envelope
+$\widehat\eta_{a_i}$, payload, or grade. Address and units, well-formedness,
 evidence/checker identity and polarity, provenance, masks, and fallback remain
 exact side information; embeddings cannot replace fields used by decoding or
 audit.
@@ -929,10 +1092,20 @@ $$
 \ker(c)\subseteq\ker(N).
 $$
 
+For these arbitrary maps, $\ker(c)$ means the equivalence relation
+$\omega\sim_c\omega'$ exactly when $c(\omega)=c(\omega')$; it is not a
+linear-algebra null space. Kernel inclusion therefore says that equal codes
+never collapse two inputs that the declared consumer must distinguish.
+
 Equivalently, there is a deterministic decoder $d$ with $d\circ c=N$. The
 image of $N$ is the coarsest exact code up to relabeling. The statement applies
 both to the public-query observation $N_{\mathcal F}$ and to any declared finer
 audit observation.
+
+**Why this matters.** A learned representation must preserve at least the
+distinctions required by its declared reliance consumers; a finer code is also
+allowed. The image of $N$ supplies the coarsest exact code. This is the
+architecture-neutral bridge without a uniquely mandated internal encoding.
 
 Define $d(c(\omega))=N(\omega)$; kernel inclusion makes this independent of
 the representative, and factorization gives the converse. This quotient fact
@@ -975,6 +1148,10 @@ whenever $b(s)\leq-2\rho_{\mathrm{err}}$, refutation whenever
 $b(s)>2\rho_{\mathrm{err}}$, and, in a two-sided mode, can remain open only
 inside the resulting doubled ideal-margin band.
 
+**Why this matters.** This is the constructive step from an approximate
+learned statistic to warranted support or refutation: uncertainty is paid for
+with an explicit Open band instead of being hidden in a categorical guess.
+
 The factor two separates two claims. The raw boundary value is approximated
 within $\rho_{\mathrm{err}}$. A decoder that refuses to issue an unsupported
 decision everywhere the envelope holds is uniformly complete only beyond
@@ -982,10 +1159,10 @@ $2\rho_{\mathrm{err}}$. Equality stays on the supported side. Thus uncertainty
 near a boundary is represented as an open judgment, rather than silently
 converted into a class guess.
 
-ReLU now supplies one explicit realization. Write
-$\rho(u)=\max(0,u)$. A global finite continuous piecewise-affine (CPWL) scalar
-map on $\mathbb R^d$ is exactly realizable by a finite feed-forward ReLU network
-with affine output; finite vector maps follow by parallel composition.
+ReLU now supplies one explicit realization. Using the definition from Section
+2.2, a global finite continuous piecewise-affine (CPWL) scalar map on
+$\mathbb R^d$ is exactly realizable by a finite feed-forward ReLU network with
+affine output; finite vector maps follow by parallel composition.
 
 **Theorem 12 (finite ReLU reference witness).** If every requested statistic,
 payload coordinate, and quantitative-grade coordinate is global finite CPWL,
@@ -994,6 +1171,11 @@ the convention used here it needs at most
 $\lceil\log_2(d+1)\rceil$ hidden layers coordinatewise, although known general
 size bounds can be enormous. A statistic specified only on a restricted domain
 needs an explicit global CPWL extension before this theorem applies.
+
+**Why this matters.** The theorem establishes that the numerical core can be
+implemented by a finite ReLU network under declared hypotheses. Its substantive
+role is compatibility between the typed interface and a familiar learned
+architecture.
 
 The external layer still performs exact evidence checking, inclusive
 comparisons, $K_3$ atom construction, profile meet, masking, selection, and
@@ -1005,15 +1187,39 @@ for ReLU.
 
 ### 6.3 From a positive number to a licensed feature
 
-Return to the running plan $M$. Its required profile is
+Return to the running plan $M$. For this numerical example, spell out the
+requirements before abbreviating them:
+
+1. the accepted loss region must establish loss at most $.20$;
+2. it must also establish improvement over fallback, meaning loss at most
+   $.35-.05=.30$; and
+3. the accepted latency region must establish latency at most $50$ ms.
+
+Call these addressed atoms $A$ for absolute adequacy, $I$ for fallback
+improvement, and $C$ for the latency constraint. Let $H$ require the current
+version and evidence chain to be traceable. Clause by clause, the English
+request instantiates the typed constructors as
 
 $$
-P=A\wedge I\wedge C,
+\begin{aligned}
+A&=\mathsf{Adeq}(M,D,J\leq .20),\\
+I&=\mathsf{Improve}(M,B,D,J,\Delta=.05),\\
+C&=\mathsf{Constraint}_{\mathit{latency}}(M,D,T\leq50\,\mathrm{ms}),\\
+H&=\mathsf{Trace}(M,\text{current version and evidence}).
+\end{aligned}
 $$
 
-where $A$ requires $J(M)\leq.20$, $I$ requires improvement over fallback
-$J(M)\leq.35-.05=.30$, and $C$ requires latency $T(M)\leq50$ ms. Suppose
-accepted intervals are
+Here the constructor name states the kind of requirement, while its arguments
+retain the candidate, domain, criterion, threshold, fallback where relevant,
+and trace obligation. The full reliance profile is
+
+$$
+P_{\mathrm{rely}}=A\wedge I\wedge C\wedge H.
+$$
+
+The equations below focus on the numerical subprofile
+$P_{\mathrm{num}}=A\wedge I\wedge C$; $H$, request well-formedness, evidence
+identity, and provenance remain exact. Suppose accepted intervals are
 
 $$
 U_J=[.14,.18],\qquad U_T=[43,47]\ {\rm ms},
@@ -1024,8 +1230,12 @@ define
 
 $$
 s^+ = t-\sup U,\qquad s^-=\inf U-t,\qquad
-z=\rho(s^+/\sigma).
+z=\mathsf{ReLU}(s^+/\sigma).
 $$
+
+The scales are pedagogical unit normalizations: one normalized loss unit is
+$.01$ and one normalized latency unit is $1$ ms. They make unlike channels
+commensurable for this example and have no privileged empirical status.
 
 The normalized support margins for $(A,I,C)$ are $(2,12,3)$, so the accepted
 certificate-relative surplus vector is $z=(2,12,3)$. The same numerical path
@@ -1037,16 +1247,21 @@ must be read at five distinct stages:
 3. after a named envelope and evidence mode are accepted, it can say strict
    certificate-relative surplus for that one addressed atom; and
 4. a full license additionally requires $WF$ and exact support for every atom
-   in $A\wedge I\wedge C$; and
+   in $P_{\mathrm{rely}}=A\wedge I\wedge C\wedge H$; and
 5. a later ranking score has meaning only for a declared selector applied to
    the already licensed active set.
 
-With exact support bits $b_A,b_I,b_C$, a ReLU can compute the fixed-request
-conjunction
+With exact support bits $b_A,b_I,b_C,b_H$, and with the current trace
+supported so that $b_H=1$, a ReLU can compute the fixed-request conjunction
 
 $$
-g=\rho(WF+b_A+b_I+b_C-3).
+g=\mathsf{ReLU}(WF+b_A+b_I+b_C+b_H-4).
 $$
+
+In this display $WF\in\{0,1\}$ is the Boolean result of the exact
+well-formedness check. The formula is one implementation of conjunction for
+this already fixed request; it is not a replacement for the request and
+diagnostic record.
 
 Here $g=1$. It is a derived grant bit for the already specified request, rather
 than the complete license object with its plan, domain, profile, evidence, and
@@ -1054,8 +1269,16 @@ provenance. Only after $g=1$ may a declared later ranking plan reuse the
 surpluses, for example
 
 $$
-r=\rho(.5z_A+.1z_I+.2z_C-1)=1.8.
+r=\mathsf{ReLU}(.5z_A+.1z_I+.2z_C-1)=1.8.
 $$
+
+These coefficients form an illustrative declared selector. Relative to
+fallback-improvement surplus, they weight adequacy five times as strongly and
+latency twice as strongly, then require a total weighted buffer above the bias
+$1$. The logic neither derives nor authorizes those trade-offs; a deployed
+selector must justify and validate its own weights. The example establishes
+only that already licensed surplus can be reused without becoming the source
+of authorization.
 
 This is the scoped dual-use construction: named, normalized surplus is both a
 grade and input to a declared consumer, while exact state and evidence remain
@@ -1072,18 +1295,14 @@ signed refutation margin, validity, and diagnostic distinguish them. Zero does
 not quarantine a larger network either:
 
 $$
-3\rho(-10)+2+5=7.
+3\mathsf{ReLU}(-10)+2+5=7.
 $$
 
 A bias or bypass can remain active. Authorization therefore comes from the
-exact active mask. The selector ranks only
-
-$$
-\mathcal A_P=\{e:\mathsf{Assess}(s,e,q,P)=\mathsf{Granted}\},
-$$
-
-and returns the declared fallback when $\mathcal A_P$ is empty. A high neural
-score cannot reactivate an excluded plan.
+exact active mask. At case $x$, the selector ranks only the already defined
+$\mathsf{Act}(s,q,P,x)$, whose members are in-domain, executable, represented,
+and Granted, and returns the declared fallback when that set is empty. A high
+neural score cannot reactivate an excluded plan.
 
 ### 6.4 Learning, calibration, and the limits of interpretation
 
@@ -1103,6 +1322,17 @@ $$
 =(u-l)+\frac{2}{\alpha}(l-t)_+
        +\frac{2}{\alpha}(t-u)_+.
 $$
+
+$x_+=\max(0,x)$. Center--radius output was chosen to retain numerical
+information that can in principle be re-queried under a changed threshold,
+together with an explicit uncertainty region. The interval score is a proper
+objective that penalizes both width and misses, and the disjoint calibration
+role prevents the same cases from both fitting and certifying the proposal.
+Freezing the center during radius fitting, using an additive expansion, and
+selecting this particular calibration rule are tested implementation choices
+rather than consequences of Theorems 10--12. In the frozen experiment both
+arms received the threshold and were re-queried; it did not test literal reuse
+of one threshold-invariant accepted region.
 
 On a disjoint calibration role, residuals
 $\max\{\widehat l-t,t-\widehat u,0\}$ determine a versioned additive expansion.
@@ -1148,6 +1378,25 @@ heteroscedastic noise make the oracle regions unavailable to the learners.
 Requests oversample equality and crossing cases, include missing and invalid
 evidence, and aggregate exact atom states into all four public outcomes:
 Granted, Withheld, Refused, and Undefined.
+The experimental request profile contains the three numerical atoms
+$A,I,C$. Trace and artifact integrity are checked as external protocol metadata
+rather than learned or aggregated as a fourth experimental atom; the four-atom
+running reliance profile in Section 6.3 is a pedagogical license instance.
+
+The generator's oracle conditional mean, scale, and interval-endpoint maps are
+finite CPWL by design, placing those numerical reference maps within Theorem
+12's class. The stochastic draws, learned fit, calibration procedure, and
+exact decoder are not thereby exact instances of that representation theorem.
+Overlap, a gap, threshold equality and crossing, heteroscedasticity, fallback,
+and later succession still stress the decoder. The numerical coefficients are
+frozen fixture choices rather than estimates or theoretically privileged
+constants. The $+.05$ superiority margins declare a practically material
+advantage, and the $-.02$ guard limits tolerated ordinary degradation. The
+final $5{,}000$ worlds follow the preregistered power maximum after rounding
+the binding $4{,}925$-world requirement; eight paired fit seeds measure
+optimization variation. The shared parameter grid is a compute and fairness
+choice, rather than a mathematical consequence of the representation
+theorems. Appendix E records the exact derivations and freeze.
 
 The structured arm predicts a center and radius for $J$ and $T$. Its center is
 fitted first; a central interval score then fits the radius; and a disjoint
@@ -1245,13 +1494,42 @@ was licensed or that fallback risk was acceptable.
 
 The result is summarized by the distinction that motivated this test:
 
-> **Retaining a reusable numerical statistic helped when the decision threshold
-> changed. Both complete pipelines often declined to decide, and fallback in
-> the tested structured pipeline was nearly total.
+> **The pipeline that retained a reusable numerical statistic transferred
+> better when the decision threshold changed, without identifying the retained
+> statistic as the causal component. Both pipelines often declined to decide,
+> and fallback in the structured pipeline was nearly total.
 > Representational information, calibrated caution, and operational usefulness
 > are separate achievements.**
 
-### 7.4 What the negative results teach
+### 7.4 What the negative results change—and what survives
+
+The opposing effects bear on different layers of the project. Their magnitude,
+target, surviving result, and constructive response are:
+
+| finding | magnitude and severity | what it bears on | what survives | prospective design response |
+|---|---|---|---|---|
+| changed-tolerance transfer | $+.1866$, strong positive | the reusable-statistic motivation | the structured-pipeline result supports, without causally isolating, information retention | hybrid statistic/status outputs or other reusable statistics |
+| boundary fidelity | $-.2612$ where $+.05$ superiority was required, severe | the center--radius objective, calibration, and decoder as a boundary-fidelity default | conservative-decoder soundness and the architecture-neutral interface | boundary-weighted training, sharper valid regions, or prospectively matched-coverage decoding |
+| in-regime fidelity | $-.1009$ against a $-.02$ noninferiority floor, material | broad competitiveness of the frozen structured pipeline | transfer and the exact-mask invariant | multitask statistic-plus-state heads or another objective/envelope parameterization |
+| target-weighted fallback | $.9962$, operationally severe | practical usefulness of this configuration | the separation of information, calibration, and authorization | fallback-aware objectives, answer-rate targets, and preregistered risk--coverage selection |
+| self-confidence ablation | poor on all three fidelity endpoints | treating unaccepted confidence as evidence | the need for an independently validated evidence boundary | externally checked uncertainty with explicit lineage |
+
+The empirical hit is therefore large but localized. It strongly challenges the
+frozen estimator--calibrator--decoder bundle as a default decision system and
+prevents an operational-success claim for that bundle on the declared frozen
+population. The opening possibility of restricted reliance, the finite
+calculus, and the representation existence theorems were not empirical
+endpoints in this comparison. The comparative transfer result supports the
+narrower information-retention intuition without identifying which component
+produced the advantage.
+
+Because the challenged object is a contingent implementation bundle, the
+natural next choices are also concrete: a joint statistic-and-state objective,
+one-sided or boundary-aware regions, an explicit cost for misses and fallback,
+separately tuned decoder conservatism, and full risk--coverage comparison at
+common answer rates. These alternatives are prospective. A factorial study
+would be needed to distinguish objective, center/radius parameterization,
+calibration, threshold construction, decoder, and generator effects.
 
 The required descriptive ablations reinforce the separation. Center-only and
 an unaccepted-radius shadow reached transfer fidelities $.9277$ and $.9278$,
@@ -1259,9 +1537,10 @@ below the accepted structured result of $.9436$, but neither repaired its
 boundary deficit. Treating learned self-confidence as though it were accepted
 external evidence performed especially poorly: in-regime, boundary, and
 transfer fidelity were $.3444$, $.5570$, and $.2874$. The unaccepted production
-path withheld by construction. Cross-entropy probability diagnostics therefore
-cannot substitute for region coverage, while an unaccepted learned radius
-cannot substitute for a certificate.
+path withheld by construction. In this protocol, treating cross-entropy
+confidence as if it were accepted evidence did not substitute for region
+coverage; structurally, either an unaccepted probability or an unaccepted
+learned radius lacks a certificate's scope and provenance.
 
 The observed geometry gives a theory-consistent explanation of the main
 trade-off. Accepted structured intervals were wider on average than the oracle
@@ -1295,12 +1574,14 @@ powered evidence of system adequacy.
 ## 8. Optional Policy/Value and Recursive-Judgment Bridge
 
 Can a black-box policy acquire a value-like semantic representation at a
-declared behavioral fidelity? This optional motivation is independent of the
-four formal contributions. The project does not investigate whether arbitrary
-policies have true utility functions or whether a surrogate recovers one. For
-the author, value was the first tractable semantic foothold for imagining how
-meaning might be traced backward through a model; that is research history,
-without a claim that value is universally prior to other semantics.
+declared behavioral fidelity? Independent of the four formal contributions,
+this optional bridge follows a research heuristic:
+value-like outputs offered the project's first tractable semantic foothold for
+tracing meaning backward through a black-box policy. The section asks which
+behavioral and informational guarantees can be constructed from such a
+surrogate. Its scope is fixed here: the target is an environment-relative
+semantic representation, while the existence or recovery of a uniquely true
+utility function is outside the question posed.
 
 For a finite state set $X$ with finite nonempty legal-action sets, every
 deterministic policy $\pi$ has the canonical score representation
@@ -1309,36 +1590,43 @@ $$
 E_{\rm can}(\pi)(x,a)=\mathbf 1\{a=\pi(x)\}.
 $$
 
-A tie-specified argmax decoder $D_\tau$ satisfies
-$D_\tau E_{\rm can}=\mathop{\text{id}}$, and the reverse composite is the
-identity on the encoder image. This is an exact finite encoder-image
-isomorphism and existence result. By itself, this construction makes no claim
-about return semantics, uniqueness, naturality, interpretability, or practical
-learnability.
+This one-hot table is the lossless behavioral-code baseline; by itself it has
+no environment-relative return semantics. A tie-specified argmax decoder
+$D_\tau$ satisfies
+$D_\tau\circ E_{\rm can}=\mathop{\text{id}}$, and the reverse composite is the
+identity on the encoder image. This is an exact finite encoder-image isomorphism
+and existence result. Its established content is lossless finite
+representation relative to the chosen code and decoder; the following
+paragraphs separately analyze return semantics and practical reconstruction.
 
-**Proposition 13 (conditional behavioral reconstruction).** Let intended
-scores $W$ decode to $\pi$, approximate scores $\widehat W$ decode to
-$\widehat\pi$, and let $\mu$ be a named state distribution. Define coordinate
-error
+**Proposition 13 (conditional behavioral reconstruction).** Let an intended
+score table $\psi$ decode to $\pi$ and an approximate table
+$\widehat\psi$ decode to $\widehat\pi$, and let $\mu$ be a named state
+distribution. Define coordinate error
 
 $$
-e(x)=\max_a|\widehat W(x,a)-W(x,a)|
+e(x)=\max_a|\widehat\psi(x,a)-\psi(x,a)|
 $$
 
 and the policy action gap
 
 $$
-\gamma(x)=W(x,\pi(x))-\max_{a\ne\pi(x)}W(x,a),
+\gamma(x)=\psi(x,\pi(x))-\max_{a\ne\pi(x)}\psi(x,a),
 $$
 
 with $\gamma=+\infty$ for a forced singleton action. Then, for every
-$\rho\geq0$,
+chosen coordinate-error radius $\rho\geq0$,
 
 $$
 \Pr_\mu\{\widehat\pi\ne\pi\}
 \leq
 \Pr_\mu\{e>\rho\}+\Pr_\mu\{\gamma\leq2\rho\}.
 $$
+
+**Why this matters.** Approximate action-score representations can recover
+policy behavior when score error is small relative to action gaps on a named
+population. When a separate environment and return contract gives those scores
+an accepted value semantics, the same bound applies to that value-like case.
 
 Accepted bounds $\eta_e,\eta_\gamma$ therefore certify disagreement at most
 $\min(1,\eta_e+\eta_\gamma)$ within their joint scope. Before those event
@@ -1357,17 +1645,23 @@ information outside the value.
 
 A second, standard information-theoretic result gives a narrower reason to
 study semantic reports. Let $R$ be a pre-outcome report, $Y$ a held-out
-outcome, and $N$ declared nuisance context. If a predictor using $(R,N)$ beats
-the true $N$-conditioned Bayes predictor in population log loss by
-$\delta>0$ nats, then
+outcome, $N$ declared nuisance context, and
+$\widehat p(Y\mid R,N)$ the issued predictor. If $\widehat p$ beats the true
+$N$-conditioned Bayes predictor in population log loss by $\delta>0$ nats,
+then
 
 $$
 I(R;Y\mid N)
 =\delta+
-\mathbb E\,\mathsf{KL}\!\left(
-P(Y\mid R,N)\,\|\,q(Y\mid R,N)\right)
+\mathbb E\,\mathsf{KL}\left(
+P(Y\mid R,N)\,\|\,\widehat p(Y\mid R,N)\right)
 \geq\delta.
 $$
+
+**Why this matters.** Proper held-out predictive improvement supplies a second
+test of semantic content: under the stated lineage, baseline, and mediation
+conditions, the report contains outcome-identifiable task information rather
+than merely echoing a label.
 
 Under mediation, data processing transfers the bound to the
 outcome-identifiable task quotient $\bar Z$. Direct leakage gives the boundary:
@@ -1492,9 +1786,9 @@ inequality ([Hoeffding 1963](https://doi.org/10.1080/01621459.1963.10500830)).
 
 The optional bridge uses a fixed finite action code for exact encoder-image
 existence and accepted score-error/action-gap evidence for distribution-scoped
-behavioral reconstruction. Return semantics, off-support behavior,
-identification, mechanism, human interpretation, and true utility remain
-separate questions.
+behavioral reconstruction. Its present positive scope is finite existence,
+conditional behavioral stability, and accepted-distribution error control;
+the seven evidence axes in Section 8 keep neighboring questions separate.
 
 ## 10. Discussion, Limitations, and Future Work
 
@@ -1513,15 +1807,16 @@ writes outside a complete typed footprint leave the diagnostic unchanged,
 while certificate expiry and counterevidence produce different transitions.
 The deterministic succession witness exercises these distinctions.
 
-The experiment weakens one proposed implementation default while sharpening
-the architecture-neutral thesis. A continuous statistic retained information
-useful when tolerances changed. The chosen center--radius objective,
-calibration, and exact decoder did not convert that information into strong
-current-threshold fidelity or useful answer coverage. Direct state
-classification showed the opposite profile on those endpoints. The
-constructive consequence is to treat reusable information and authorization
-behavior as separate design objectives, and to retain the exact state, mask,
-fallback, and evidence boundary even when the estimator changes.
+The empirical hit is large but localized: boundary fidelity was lower by
+$.2612$, in-regime fidelity by $.1009$, and structured fallback mass was
+$.9962$. Those findings challenge the frozen estimator--calibrator--decoder
+bundle, while the structured pipeline's $+.1866$ changed-tolerance advantage
+supports the narrower information-retention intuition without isolating its
+cause. Direct state classification showed the opposite profile on
+current-threshold endpoints. The constructive consequence is to treat reusable
+information and authorization behavior as separate design objectives, and to
+retain the exact state, mask, fallback, and evidence boundary even when the
+estimator changes.
 
 This also explains why the four public outcomes matter. Undefined identifies a
 malformed request before atom aggregation. Refused records accepted
@@ -1543,7 +1838,7 @@ Six evidential layers should be reported separately:
 | certificate validity | a checked schema, candidate, units, split, scope, polarity, checker, version, and provenance; no guarantee for future records |
 | routed risk | no conclusion, because selected/deployed loss and misroute severity are unavailable |
 | activation alignment | unmeasured; the formal seam condition supplies no empirical architecture comparison |
-| policy/value evidence | finite existence, conditional action-gap bounds, and scoped information; no reconstruction run, off-support test, intervention, or human study |
+| policy/score and value bridge | finite behavioral-code existence, conditional action-gap bounds, and scoped information; value semantics additionally requires an environment/return contract, and no reconstruction run, off-support test, intervention, or human study was performed |
 
 Each positive statement is therefore attached to a population, version, and
 consumer. A current accepted record supports a target-world statement only
@@ -1588,6 +1883,13 @@ A factorial conservatism study could separately vary objective, radius fit,
 calibration expansion, and decoder rule. That would test the dead-band account
 rather than promote it retrospectively to an identified mechanism.
 
+That factorial design should include hybrid statistic-plus-state heads,
+boundary-weighted or fallback-aware objectives, alternative interval
+parameterizations, sharper valid calibration procedures, and cost-sensitive
+decoders chosen under a preregistered risk--coverage criterion. These are
+candidate replacements for choices challenged by the frozen result; none
+inherits evidential support merely from being plausible.
+
 A separately powered hard-seam comparison could evaluate a continuous shared
 network against an externally licensed hard router under matched capacity,
 compute, coverage, and route costs. Scientific case studies would require
@@ -1624,19 +1926,29 @@ fallback external. Finite ReLU networks provide one explicit representation
 witness for suitable continuous piecewise-linear statistics.
 
 The frozen experiment supplies the paper's most useful warning and opportunity.
-Retaining the statistic substantially improved changed-tolerance transfer, yet
-the tested conservative pipeline lost boundary and in-regime fidelity and
-almost always fell back. Marginal calibration still passed. Information
-retention, calibrated caution, and operational usefulness must therefore be
-measured as distinct achievements.
+The structured statistic pipeline substantially outperformed the direct
+classifier on changed-tolerance transfer, yet lost boundary and in-regime
+fidelity and almost always fell back. Marginal calibration still passed. This
+comparative result supports, but does not causally isolate, the
+information-retention interpretation. Information retention, calibrated
+caution, and operational usefulness must therefore be measured as distinct
+achievements.
 
-The project constructs a logic of present, revisable reliance under bounded
-evidence. Questions about final scientific truth, neural mechanism, human
-interpretability, and the existence or recovery of true utility remain outside
-its established results. The framework makes those neighboring questions
-easier to state precisely because every positive license already names the
-domain, purpose, fallback, evidence, version, and limits of the reliance it
-authorizes.
+The motivating intuitions therefore end in different places. Restricted
+coexistence, revisable reliance, typed preservation of reasons, and checked
+finite composition receive constructive formal realizations. Numerical reuse
+can be implemented by the construction when the relevant map satisfies the
+finite-CPWL hypotheses, while the structured statistic pipeline separately
+receives strong synthetic changed-threshold evidence. The same pipeline
+receives a severe operational warning, and the broader policy/value
+interpretability program receives finite behavioral existence and conditional
+reconstruction bounds while its empirical study remains prospective.
+
+The resulting logic addresses present reliance under bounded evidence. Every
+positive license names the domain, purpose, fallback, evidence, version, and
+limits of what it authorizes, making neighboring questions about truth,
+mechanism, and interpretation more precise rather than silently answering
+them.
 
 ## Appendix A. Core Syntax and Elaboration Reference
 
@@ -1713,7 +2025,8 @@ complete selected records, including their witnesses, obstacles, and
 provenance. For nonempty required set,
 
 $$
-\mu(\mathfrak r)=\bigwedge_{a\in\mathsf{Req}_\beta(P)}\nu_s(e,q,a),
+\mathsf{ReqVal}(\mathfrak r)
+=\bigwedge_{a\in\mathsf{Req}_\beta(P)}\nu_s(e,q,a),
 $$
 
 and $\mathsf{Assess}$ maps failed $WF$ to Undefined and the meaningful values
@@ -2201,7 +2514,7 @@ followed by coordinatewise ReLU and the final output is affine. The elementary
 identities
 
 $$
-\max(u,v)=\rho(u-v)+v,\qquad
+\max(u,v)=\mathsf{ReLU}(u-v)+v,\qquad
 \min(u,v)=-\max(-u,-v)
 $$
 
@@ -2313,7 +2626,7 @@ address, an accepted signed support margin $m_i$, a positive registered scale
 $\sigma_i$, an exact mode-relative state $r_i$, and downstream consumers. Let
 
 $$
-z_i=\rho(m_i/\sigma_i),\qquad
+z_i=\mathsf{ReLU}(m_i/\sigma_i),\qquad
 R=(r_1,\ldots,r_n,z_1,\ldots,z_n).
 $$
 
@@ -2341,7 +2654,7 @@ The boundary gives a second separator. Supported equality has $m_i=0$, as can
 an open crossing interval; after masking, missing and invalid evidence can
 also have $z_i=0$. A state bit recovers logical status, while validity and
 diagnostic fields recover the audit distinction. The calculation
-$3\rho(-10)+2+5=7$ supplies a network-level separator: zeroing one channel
+$3\mathsf{ReLU}(-10)+2+5=7$ supplies a network-level separator: zeroing one channel
 does not silence biases or bypasses. Exact masking performs quarantine.
 
 Finally, under the positive unit change $m_i'=\lambda_i m_i$, logical status
@@ -2440,8 +2753,10 @@ latency atoms per world. It oversamples difficult cases:
 Every target-distribution metric uses the fixed ratio of target mass to design
 mass. The core request profile requires adequacy relative to an absolute loss
 threshold, improvement over fallback by a declared amount, and a latency
-constraint. Each world contributes 40 requests: 12 constructed Granted, 12
-Withheld, 12 Refused, and 4 Undefined. Their target masses are
+constraint. Experimental trace and artifact integrity are enforced through
+external lineage and protocol checks, rather than a fourth learned or
+aggregated request atom. Each world contributes 40 requests: 12 constructed
+Granted, 12 Withheld, 12 Refused, and 4 Undefined. Their target masses are
 $.35,.30,.30,.05$ and design masses are $.30,.30,.30,.10$. At least one fifth
 of well-formed requests contain a support-equality focal atom. Undefined comes
 from malformed units, binding, or profile data before meaningful atom
@@ -2682,21 +2997,23 @@ are linked independently of this document's publication location.
 ### F.1 Exact encoder-image existence and semantic variants
 
 Let $X$ be finite and let each $x\in X$ have a finite nonempty legal-action
-set $\mathcal A_x$. For the deterministic policy class $\Pi$, define
+set $\mathcal A_x$. For the deterministic policy class
+$\mathcal P_{\mathrm{det}}$, define
 
 $$
-E_{\rm can}:\Pi\to\mathcal W,\qquad
+E_{\rm can}:\mathcal P_{\mathrm{det}}\to\mathcal W,\qquad
 E_{\rm can}(\pi)(x,a)=\mathbf 1\{a=\pi(x)\},
 $$
 
 where $\mathcal W$ is the space of all real action-score tables on this legal
 action contract. Fix a total tie priority $\tau_x$ and let
-$D_\tau:\mathcal W\to\Pi$ choose its tie-broken score maximizer.
+$D_\tau:\mathcal W\to\mathcal P_{\mathrm{det}}$ choose its tie-broken score
+maximizer.
 
 For every $\pi$, its chosen action is the unique coordinate with score one, so
 
 $$
-D_\tau\circ E_{\rm can}=\mathop{\text{id}}_\Pi.
+D_\tau\circ E_{\rm can}=\mathop{\text{id}}_{\mathcal P_{\mathrm{det}}}.
 $$
 
 On $\mathop{\text{im}}(E_{\rm can})$, decoding followed by encoding returns the
@@ -2791,20 +3108,20 @@ state how deployment samples are coupled.
 
 ### F.2 Raw reconstruction, accepted evidence, and conservative action
 
-Fix intended scores $W$, approximate scores $\widehat W$, decoder $D_\tau$,
-policy $\pi=D_\tau(W)$, approximation
-$\widehat\pi=D_\tau(\widehat W)$, and a named distribution $\mu$. Define
+Fix an intended score table $\psi$, an approximate table $\widehat\psi$,
+decoder $D_\tau$, policy $\pi=D_\tau(\psi)$, approximation
+$\widehat\pi=D_\tau(\widehat\psi)$, and a named distribution $\mu$. Define
 
 $$
 e(x)=\max_{a\in\mathcal A_x}
-|\widehat W(x,a)-W(x,a)|
+|\widehat\psi(x,a)-\psi(x,a)|
 $$
 
 and, when there is more than one legal action,
 
 $$
-\gamma(x)=W(x,\pi(x))-
-\max_{a\ne\pi(x)}W(x,a).
+\gamma(x)=\psi(x,\pi(x))-
+\max_{a\ne\pi(x)}\psi(x,a).
 $$
 
 Set $\gamma(x)=+\infty$ for a singleton legal-action set.
@@ -2816,8 +3133,8 @@ For every $a\ne\pi(x)$,
 
 $$
 \begin{aligned}
-\widehat W(x,\pi(x))-\widehat W(x,a)
-&\geq W(x,\pi(x))-\rho-[W(x,a)+\rho]\\
+\widehat\psi(x,\pi(x))-\widehat\psi(x,a)
+&\geq \psi(x,\pi(x))-\rho-[\psi(x,a)+\rho]\\
 &\geq\gamma(x)-2\rho>0.
 \end{aligned}
 $$
@@ -2841,16 +3158,16 @@ The coefficient two is tight for a coordinatewise statement. With two actions
 $a,b$, source action $a$, and $\rho>0$, take
 
 $$
-W(a)=2\rho,\quad W(b)=0,\quad
-\widehat W(a)=\widehat W(b)=\rho.
+\psi(a)=2\rho,\quad \psi(b)=0,\quad
+\widehat\psi(a)=\widehat\psi(b)=\rho.
 $$
 
 Then $e=\rho$ and $\gamma=2\rho$; a tie priority favoring $b$ changes the
 decoded action. For a strict flip, choose $0<\zeta<2\rho$ and set
 
 $$
-W(a)=2\rho-\zeta,\quad W(b)=0,\quad
-\widehat W(a)=\rho-\zeta,\quad\widehat W(b)=\rho.
+\psi(a)=2\rho-\zeta,\quad \psi(b)=0,\quad
+\widehat\psi(a)=\rho-\zeta,\quad\widehat\psi(b)=\rho.
 $$
 
 For any proposed coefficient $c<2$, selecting
@@ -2896,7 +3213,7 @@ $$
 Hoeffding's inequality gives, for $0<\alpha<1$,
 
 $$
-\Pr\!\left[
+\Pr\left[
 D_\mu(\pi,\widehat\pi)
 \leq\widehat D_n+
 \sqrt{\frac{\log(1/\alpha)}{2n}}
@@ -2913,8 +3230,8 @@ instead withhold. Let $\widehat a$ be the approximate winner and
 
 $$
 \widehat\gamma=
-\widehat W(x,\widehat a)
--\max_{b\ne\widehat a}\widehat W(x,b).
+\widehat\psi(x,\widehat a)
+-\max_{b\ne\widehat a}\widehat\psi(x,b).
 $$
 
 Coordinate error at most $\rho$ gives pairwise-gap error at most $2\rho$ by
@@ -2949,7 +3266,7 @@ The reconstruction statement has three distinct deployment scopes.
 The following finite constructions expose the required assumptions.
 
 **Off-support disagreement.** Let
-$X=\{x_{\rm train},x_{\rm deploy}\}$, set $\widehat W=W$ at the training state,
+$X=\{x_{\rm train},x_{\rm deploy}\}$, set $\widehat\psi=\psi$ at the training state,
 and reverse the two scores at the deployment state. Training disagreement is
 zero under a point mass on the first state and deployment disagreement is one
 under a point mass on the second.

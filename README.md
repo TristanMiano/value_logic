@@ -61,13 +61,18 @@ Work proceeds one numbered task or checkpoint per prompt. To resume the project 
 4. update its completion record, affected specifications, and claim dispositions; and
 5. run local verification, and once the commit is pushed confirm public CI is green or record why it is not; then stop before beginning the following item.
 
-Claims are classified before being accepted or rejected. A claim is first treated as supported, falsifiable and awaiting a test, or likely unfalsifiable. It is marked falsified only after a counterexample, proof, or sufficiently relevant empirical result is supplied; a replaced definition is instead recorded as a superseded design default. Every falsified inherited claim also records its impact on the overall project.
+Claims are scoped and graded before being used. Formal counterexamples identify
+the assumptions needed for a constructive replacement, while registered
+empirical propositions receive dispositions only at their declared margins and
+populations. A replaced definition is recorded as a superseded design default,
+and every negative result records which project layer it affects, what survives,
+and which alternative choices remain available.
 
 The historical interfaces in `formalism/01_signature.md` through `formalism/05a_integration.md` are detailed elaborations and provenance records. Their bare `Lic`, four-chain atom statuses, or unindexed current-use notation must be read through the canonical request, profile, and `WF + K_3` calculus in [`formalism/07_core_calculus.md`](formalism/07_core_calculus.md).
 
 ## Project status
 
-All scheduled work through Task 32, including Task 22B and the other completed
+All scheduled work through Task 33, including Task 22B and the other completed
 suffixed tasks, and Checkpoints A, A1, B, C, C1, D, and E is complete. The
 finite-stage licensing interface, consequence and update rules, dominance and
 retention distinctions, overlapping scientific-model cover, bridge taxonomy,
@@ -180,24 +185,31 @@ complete pipelines are compared without attributing their difference to one
 component. The theorem and evidence-grade sets are unchanged.
 
 [`Task 32`](notes/gist_compatibility_audit.md) completes the
-Gist-compatibility gate without publishing a Gist. Every inline expression now
-opens and closes on one physical line, and GitHub's first-stage Markdown API
-agrees with the source on 868 inline and 105 display expressions. A post-push
-browser check exposed that its later MathJax sanitizer rejects
-`\operatorname`; the follow-up repair replaces all 20 uses with
-`\mathop{\text{...}}`, preserving operator spacing and mathematical content.
-Two later screenshots exposed the only `\hline` and the only scalable-brace
-probability event as further browser incompatibilities; the paper now uses an
-unruled array and equivalent square event brackets.
-The parsed render has the intended 73 headings, 14 tables, two figures, and one
-text code block, with no raw math delimiter or relative path. Figures and
-Appendix E reproduction links are pinned to an immutable pushed package. The
-He et al. citation uses the live case-correct Global Science Press page while
+Gist-compatibility gate without publishing a Gist. At the Task 32 snapshot,
+GitHub's Markdown API agreed with the source on 868 inline and 105 display
+expressions. Post-push browser checks then exposed unsupported
+`\operatorname`, `\hline`, and scalable-brace fragments; the documented
+repairs preserve the mathematics and the verification suite guards against
+their return.
+
+The reader-approved Task 33 revision subsequently expanded the paper's
+explanations. The current source and GitHub API agree on 947 inline and 106
+display expressions, 73 headings, 16 tables, two figures, and one text code
+block, with no raw math delimiter or relative path. It contains zero
+`\operatorname`, `\hline`, `\left\{`, and `\!` fragments. Figures and Appendix
+E reproduction links remain pinned to an immutable pushed package. The He et
+al. citation uses the live case-correct Global Science Press page while
 retaining its DOI metadata, and the Sutton--Barto citation uses the live MIT
-Press page. All 177 checks, the WSL preflight, local links, and
-clean-archive/hash validation pass; the follow-up macro regression brings the
-current suite to 178/178. Live confirmation of the macro repair is a
-post-push observation. No theorem, result, grade, or policy/value boundary
-changed. **Task 33 is next.**
+Press page. All 178 checks, the WSL preflight, and local links pass. Live
+browser confirmation of the current unpushed revision remains a post-push
+observation.
+
+[`Task 33`](substack_post.txt) now provides the long-form, plain-text Substack
+adaptation and the accompanying reader-clarity revision to `paper.md`. It
+defines notation and design choices at first use, translates an English
+request into the formal profile, explains why the theorems matter, distinguishes
+which motivations receive formal, empirical, or prospective support, and
+states the magnitude, target, survivors, and alternatives for every major
+negative finding. **Task 34 is next.**
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.

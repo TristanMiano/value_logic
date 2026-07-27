@@ -1,20 +1,23 @@
 # Paper Claim Freeze and Outline
 
 Status: frozen publication contract after Task 25, amended through the
-completed Task 32 Gist-compatibility pass and browser-macro erratum
-Date: 2026-07-18; latest publication amendment 2026-07-25
+completed Task 33 adaptation and reader-clarity revision
+Date: 2026-07-18; latest publication amendment 2026-07-27
 Drafting status: Tasks 26--30 implemented the complete substantive
 [`paper.md`](paper.md) draft: §§1--11 and Appendices A--F. Tasks 31 and 31A
 completed the mathematical/citation and reader/narrative audits. Checkpoint E
 found the draft publication-ready after one bounded content repair; Task 31B
 completed it, and Task 32 completed the Markdown/render gate and its follow-up
-browser-macro correction, leaving Tasks 33--34. The audited draft restores the
+browser-macro correction. Task 33 completed the long-form Substack adaptation
+and an approved explanatory revision, leaving Task 34. The audited draft restores the
 originating Newton/Standard-Model/open-chain motivation, carries all four formal
 theorem clusters and their constructive boundaries, reports the complete frozen
 empirical trade-off, and keeps the optional policy/value bridge within its
 evidence grades.
-Target: one approximately 11,100-word main paper, technical appendices, and a
-separate 1,500--1,800-word public essay
+Original length target: one approximately 11,100-word main paper, technical
+appendices, and a separate 1,500--1,800-word public essay. The approved
+explanatory revision now supplies a 14,720-word main text and a 5,931-word
+long-form adaptation; a shorter companion remains an optional editorial cut.
 
 The Task 32 source count is 11,763 main-text words under the repository token
 rule, about 6.0% above the approximate target. The 15-token increase from Task
@@ -27,6 +30,14 @@ and Substack handoff are in
 [`notes/reader_audit.md`](notes/reader_audit.md); the publication-format record
 is in
 [`notes/gist_compatibility_audit.md`](notes/gist_compatibility_audit.md).
+
+The 2026-07-27 reader revision raises pedantry where readers need it: notation
+and typed objects are defined at first use, contingent choices are motivated,
+English requirements are translated into the formal profile, theorem
+significance is explicit, and formal, empirical, and prospective validation are
+kept separate. The resulting growth is explanatory rather than a change to the
+theorem set, frozen endpoints, evidence grades, or policy/value existence
+boundary.
 
 This document selects the claims and argumentative order for the public
 artifacts. It is not a draft assembled from every repository result. A statement
@@ -880,11 +891,15 @@ that no Appendix G is required for publication.
 
 ## 9. Substack skeleton
 
-Target: **1,500--1,800 words**, low notation, one displayed fallback equation,
-and at most one four-outcome table. Follow the required order: physics
-succession → pragmatic value → fallback/`epsilon` → open licenses/overlap →
-what the neural interface promised and what survived → classifier/dual-use
-margin → empirical trade-off → limits.
+Original target: **1,500--1,800 words**, low notation, one displayed fallback
+equation, and at most one four-outcome table. The completed primary adaptation
+is a 5,931-word long-form essay because the approved reader revision adds
+first-use definitions, motivation/result mapping, a worked English-to-formal
+example, and layer-specific interpretation of negative results. A shorter
+companion remains optional. The narrative order remains: physics succession →
+pragmatic value → fallback/`epsilon` → open licenses/overlap → what the neural
+interface promised and what survived → classifier/dual-use margin → empirical
+trade-off → limits.
 
 ### 1. A theory can lose reach while keeping a job — 180 words
 
@@ -1011,4 +1026,4 @@ four headline clusters. Task 29 retains the bridge proposition compactly in
 §8, with its full proof and countermodels in Appendix F. Task 32 has established
 Gist compatibility without creating a Gist; its post-push browser erratum
 replaces all unsupported `\operatorname` uses without changing any formula's
-meaning. Task 33 is next.
+meaning. Task 33 is complete; Task 34 is the final cross-check.

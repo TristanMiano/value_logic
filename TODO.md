@@ -1,6 +1,6 @@
 # Value Logic Project: Context and TODO
 
-Last updated: 2026-07-25
+Last updated: 2026-07-27
 
 ## Resume here
 
@@ -37,7 +37,7 @@ Checkpoints are roadmap-review tasks, not ceremonial status updates. At each che
 
 Checkpoint edits apply prospectively. They may add follow-up work for a completed result, but they do not silently mark completed work undone or rewrite its history. Prefer stable checkpoint labels and suffixed new tasks over renumbering tasks that are already referenced elsewhere.
 
-**Next task: Task 33 — Produce the Substack adaptation.**
+**Next task: Task 34 — Cross-check and finalize both artifacts.**
 
 ## Project question
 
@@ -910,7 +910,8 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   record and handoff were propagated through the
   [`paper outline`](paper_outline.md),
   [`project specification`](notes/project_spec.md), and
-  [`README`](README.md). Task 33 is next.
+  [`README`](README.md). Task 33 was next at this dated snapshot and is now
+  complete.
 
   Browser-stage erratum, 2026-07-25: after the Task 32 commit was pushed, live
   GitHub screenshots showed that the browser-side MathJax sanitizer rejects
@@ -925,7 +926,7 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   GitHub rejected the left delimiter. The same regression now excludes all
   three known fragments.
 
-- [ ] **Task 33 — Produce the Substack adaptation.**
+- [x] **Task 33 — Produce the Substack adaptation.**
 
   Create `substack_post.txt` from the audited paper. Use plain prose, Unicode
   where helpful, at most one displayed formal judgment, no Markdown formatting,
@@ -956,6 +957,33 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   ReLU-reference-not-uniqueness caveat and all other necessary qualifications
   without introducing claims absent from the paper.
 
+  Completed 2026-07-27 after the merged first pass and an approved
+  reader-clarity revision. [`substack_post.txt`](substack_post.txt) is a
+  long-form plain-text adaptation with one standalone equation and no Markdown
+  formatting. It preserves the required physics-to-reliance narrative, the
+  four public outcomes, the concrete adequacy/improvement/latency example, the
+  five-stage activation-to-license ladder, every registered result and
+  weighting label, the noncausal complete-pipeline comparison, and the finite
+  policy/score existence boundary.
+
+  The same revision raises the explanatory standard in
+  [`paper.md`](paper.md): the domain functional and first-use notation are
+  defined, the four-field request and other design choices are motivated
+  without minimality claims, an English request is translated into typed
+  atoms, each theorem receives a motivation-facing significance statement, and
+  motivation/result plus negative-result impact maps state the exact evidential
+  layer and magnitude. Generic action-score existence remains distinct from
+  environment-relative value semantics, and changed-tolerance performance
+  remains a whole-pipeline comparison rather than an identified retention
+  ablation.
+
+  The original 1,500--1,800-word planning target is superseded for the primary
+  long-form adaptation by the requested pedagogical detail; the current post is
+  5,931 whitespace-delimited words. A shorter companion cut remains optional
+  rather than silently deleting the newly requested explanations. No theorem,
+  frozen result, evidence grade, experiment artifact, or policy/value existence
+  claim changed. Task 34 is next.
+
 - [ ] **Task 34 — Cross-check and finalize both artifacts.**
 
   Compare `paper.md` and `substack_post.txt` claim by claim using an explicit
@@ -970,6 +998,7 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
 
 ## Decision log
 
+- **2026-07-27 — Reader clarity expands the public artifacts without expanding the claim set.** The paper and long-form Substack adaptation now define notation and contingent design choices at first use, derive the running profile from English requirements, explain why each theorem matters, map every motivating intuition to its formal, empirical, or prospective support, and identify the magnitude, affected layer, survivors, and alternative designs for negative findings. The finite behavioral encoder-image isomorphism remains an existence claim; return/value semantics still require an environment and return contract. The structured pipeline's changed-tolerance advantage supports the information-retention interpretation without identifying a causal component. The old short-post planning target is superseded for this long-form version; an optional shorter companion would be a separate editorial pass.
 - **2026-07-25 — Gist compatibility is established without publication.** The public paper's source and GitHub render agree on 868 inline and 105 display expressions; all links and figures are absolute, with reproducibility material confined to Appendix E and pinned to a pushed immutable package. The He et al. DOI remains canonical metadata, while its case-correct live primary publisher page is the public destination because the resolver currently lands on a lowercase `404`. Compatibility testing did not create a Gist or alter any scientific claim.
 - **2026-07-25 — Empirical fallback references remain population-typed and noncausal.** Target prevalence is `.35` Granted and `.65` non-Granted; `.0038/.0861` are target-weighted issued-`Granted` masses rather than recall; and `.0124/.1811` are unweighted design-distribution accuracies conditional on reference Granted. The compact traces cannot supply target-weighted conditional accuracy or a target-weighted per-outcome decomposition. Both complete pipelines fell back heavily, and their difference does not identify the causal share of the structured objective, interval calibration, or decoder.
 - **2026-07-25 — The affirmative neural-fit answer has formal and empirical layers.** Signed margins fit rectification; finite proof-erased CPWL plan computation has an exact ReLU reference witness; and changed-threshold transfer is supported in the frozen setting. Activation/scientific-atlas alignment and semantic identification of hidden depth with nested licenses remain untested. This is the motivation/disposition thread for the paper and Substack, not a fifth contribution or an architecture-optimality claim.
