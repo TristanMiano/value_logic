@@ -979,7 +979,7 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
 
   The original 1,500--1,800-word planning target is superseded for the primary
   long-form adaptation by the requested pedagogical detail; the current post is
-  5,931 whitespace-delimited words. A shorter companion cut remains optional
+  5,908 whitespace-delimited words. A shorter companion cut remains optional
   rather than silently deleting the newly requested explanations. No theorem,
   frozen result, evidence grade, experiment artifact, or policy/value existence
   claim changed. Task 34 is next.
