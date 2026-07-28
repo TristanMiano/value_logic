@@ -151,7 +151,10 @@ This compositional recursion is distinct from the recursive-judgment claim audit
 ## Required final artifacts
 
 1. `paper.md`: a rigorous, LaTeX-heavy, GitHub-Gist-compatible Markdown paper.
-2. `substack_post.txt`: a Substack-compatible version with no Markdown syntax, minimal equations/LaTeX, and the same argument in readable prose.
+2. `substack_post.txt`: a Substack-compatible version with minimal
+   equations/LaTeX, the requested italicized AI-assistance credit and public
+   links as its only Markdown formatting, and the same argument in readable
+   prose.
 
 Research notes, code, data, figures, and verification scripts may be added as supporting artifacts, but these two are the required deliverables.
 
@@ -959,12 +962,15 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
 
   Completed 2026-07-27 after the merged first pass and an approved
   reader-clarity revision. [`substack_post.txt`](substack_post.txt) is a
-  long-form plain-text adaptation with one standalone equation and no Markdown
-  formatting. It preserves the required physics-to-reliance narrative, the
-  four public outcomes, the concrete adequacy/improvement/latency example, the
-  five-stage activation-to-license ladder, every registered result and
-  weighting label, the noncausal complete-pipeline comparison, and the finite
-  policy/score existence boundary.
+  long-form adaptation with one standalone equation. A follow-up authorial
+  voice pass adds only the requested italicized GPT-5.6 Sol credit and two
+  public Markdown links, while recasting the prose in the exploratory,
+  first-person cadence of the author's earlier writing. It preserves the
+  required physics-to-reliance narrative, the four public outcomes, the
+  concrete adequacy/improvement/latency example, the five-stage
+  activation-to-license ladder, every registered result and weighting label,
+  the noncausal complete-pipeline comparison, and the finite policy/score
+  existence boundary.
 
   The same revision raises the explanatory standard in
   [`paper.md`](paper.md): the domain functional and first-use notation are
@@ -979,7 +985,7 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
 
   The original 1,500--1,800-word planning target is superseded for the primary
   long-form adaptation by the requested pedagogical detail; the current post is
-  5,908 whitespace-delimited words. A shorter companion cut remains optional
+  6,538 whitespace-delimited words. A shorter companion cut remains optional
   rather than silently deleting the newly requested explanations. No theorem,
   frozen result, evidence grade, experiment artifact, or policy/value existence
   claim changed. Task 34 is next.

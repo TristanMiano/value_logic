@@ -49,7 +49,7 @@ The detailed typed records in the early formalism are now treated as an elaborat
 The planned final public artifacts are:
 
 1. `paper.md`, a LaTeX-heavy, GitHub-Gist-compatible paper; and
-2. `substack_post.txt`, a low-LaTeX, non-Markdown adaptation for Substack.
+2. `substack_post.txt`, a low-LaTeX, lightly formatted adaptation for Substack.
 
 ## Working method
 
@@ -204,12 +204,14 @@ Press page. All 178 checks, the WSL preflight, and local links pass. Live
 browser confirmation of the current unpushed revision remains a post-push
 observation.
 
-[`Task 33`](substack_post.txt) now provides the long-form, plain-text Substack
-adaptation and the accompanying reader-clarity revision to `paper.md`. It
-defines notation and design choices at first use, translates an English
-request into the formal profile, explains why the theorems matter, distinguishes
-which motivations receive formal, empirical, or prospective support, and
-states the magnitude, target, survivors, and alternatives for every major
-negative finding. **Task 34 is next.**
+[`Task 33`](substack_post.txt) now provides the long-form Substack adaptation
+and the accompanying reader-clarity revision to `paper.md`. A follow-up voice
+pass uses the cadence of the author's earlier public writing, adds the requested
+GPT-5.6 Sol credit, and links the public Gist and repository. The post defines
+notation and design choices at first use, translates an English request into
+the formal profile, explains why the theorems matter, distinguishes which
+motivations receive formal, empirical, or prospective support, and states the
+magnitude, target, survivors, and alternatives for every major negative
+finding. **Task 34 is next.**
 
 See [`TODO.md`](TODO.md) for the authoritative and most current status.

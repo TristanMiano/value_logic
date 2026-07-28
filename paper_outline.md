@@ -16,7 +16,7 @@ empirical trade-off, and keeps the optional policy/value bridge within its
 evidence grades.
 Original length target: one approximately 11,100-word main paper, technical
 appendices, and a separate 1,500--1,800-word public essay. The approved
-explanatory revision now supplies a 14,720-word main text and a 5,908-word
+explanatory revision now supplies a 14,720-word main text and a 6,538-word
 long-form adaptation; a shorter companion remains an optional editorial cut.
 
 The Task 32 source count is 11,763 main-text words under the repository token
@@ -893,13 +893,13 @@ that no Appendix G is required for publication.
 
 Original target: **1,500--1,800 words**, low notation, one displayed fallback
 equation, and at most one four-outcome table. The completed primary adaptation
-is a 5,908-word long-form essay because the approved reader revision adds
+is a 6,538-word long-form essay because the approved reader revision adds
 first-use definitions, motivation/result mapping, a worked English-to-formal
-example, and layer-specific interpretation of negative results. A shorter
-companion remains optional. The narrative order remains: physics succession →
-pragmatic value → fallback/`epsilon` → open licenses/overlap → what the neural
-interface promised and what survived → classifier/dual-use margin → empirical
-trade-off → limits.
+example, layer-specific interpretation of negative results, and a later
+authorial-voice pass. A shorter companion remains optional. The narrative
+order remains: physics succession → pragmatic value → fallback/`epsilon` →
+open licenses/overlap → what the neural interface promised and what survived →
+classifier/dual-use margin → empirical trade-off → limits.
 
 ### 1. A theory can lose reach while keeping a job — 180 words
 
