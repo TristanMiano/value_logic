@@ -35,7 +35,8 @@ The detailed typed records in the early formalism are now treated as an elaborat
 
 ## Repository map
 
-- [`TODO.md`](TODO.md) is the resumable project-control document and identifies the next task.
+- [`TODO_v2.md`](TODO_v2.md) is the current resumable project-control document for the follow-up paper and identifies the next task.
+- [`TODO.md`](TODO.md) is the completed control history for the original paper.
 - [`CODE_GUIDE.md`](CODE_GUIDE.md) explains every Python/C++ component, common commands, experiment artifacts, and safety boundaries in plain language.
 - [`formalism/`](formalism/) contains the developing mathematical semantics, update rules, dominance results, atlas machinery, and integrated witness model.
 - [`notes/`](notes/) contains the project specification, claim ledger, literature map, checkpoint records, and focused research notes.
@@ -55,7 +56,7 @@ The planned final public artifacts are:
 
 Work proceeds one numbered task or checkpoint per prompt. To resume the project in a fresh context:
 
-1. read [`TODO.md`](TODO.md);
+1. read [`TODO_v2.md`](TODO_v2.md), then the original [`TODO.md`](TODO.md) and the inherited paper sections it names;
 2. follow its **Next task** pointer unless a different task is explicitly requested;
 3. complete exactly that task or checkpoint;
 4. update its completion record, affected specifications, and claim dispositions; and
@@ -72,7 +73,7 @@ The historical interfaces in `formalism/01_signature.md` through `formalism/05a_
 
 ## Project status
 
-All scheduled work through Task 33, including Task 22B and the other completed
+All scheduled work through Task 34, including Task 22B and the other completed
 suffixed tasks, and Checkpoints A, A1, B, C, C1, D, and E is complete. The
 finite-stage licensing interface, consequence and update rules, dominance and
 retention distinctions, overlapping scientific-model cover, bridge taxonomy,
@@ -204,7 +205,7 @@ Press page. All 178 checks, the WSL preflight, and local links pass. Live
 browser confirmation of the current unpushed revision remains a post-push
 observation.
 
-[`Task 33`](substack_post.txt) now provides the long-form Substack adaptation
+[`Task 33`](substack_post.txt) provides the long-form Substack adaptation
 and the accompanying reader-clarity revision to `paper.md`. A follow-up voice
 pass uses the cadence of the author's earlier public writing, adds the requested
 GPT-5.6 Sol credit, and links the public Gist and repository. The post defines
@@ -212,6 +213,7 @@ notation and design choices at first use, translates an English request into
 the formal profile, explains why the theorems matter, distinguishes which
 motivations receive formal, empirical, or prospective support, and states the
 magnitude, target, survivors, and alternatives for every major negative
-finding. **Task 34 is next.**
+finding. [`Task 34`](notes/final_artifact_crosswalk.md) completes the
+claim-by-claim cross-check and closes the original roadmap.
 
-See [`TODO.md`](TODO.md) for the authoritative and most current status.
+See [`TODO_v2.md`](TODO_v2.md) for the authoritative and most current status.

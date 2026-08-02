@@ -37,7 +37,7 @@ Checkpoints are roadmap-review tasks, not ceremonial status updates. At each che
 
 Checkpoint edits apply prospectively. They may add follow-up work for a completed result, but they do not silently mark completed work undone or rewrite its history. Prefer stable checkpoint labels and suffixed new tasks over renumbering tasks that are already referenced elsewhere.
 
-**Next task: Task 34 — Cross-check and finalize both artifacts.**
+**Next task: Original roadmap complete. Continue with Task 0 in [`TODO_v2.md`](TODO_v2.md).**
 
 ## Project question
 
@@ -990,7 +990,7 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   frozen result, evidence grade, experiment artifact, or policy/value existence
   claim changed. Task 34 is next.
 
-- [ ] **Task 34 — Cross-check and finalize both artifacts.**
+- [x] **Task 34 — Cross-check and finalize both artifacts.**
 
   Compare `paper.md` and `substack_post.txt` claim by claim using an explicit
   crosswalk, including `F35`, `F35a--c`, `F36`, every C1 no-claim boundary, and
@@ -1001,6 +1001,20 @@ Whenever a scoped formulation receives `X1` or another negative evidential dispo
   existence boundary. Proofread both, lint Markdown and plain-text constraints,
   verify references/figures/copy-paste behavior, ensure the repository resume
   instructions are current, and record the final completion note here.
+
+  Completed 2026-08-01. Created the explicit
+  [`final public-artifact crosswalk`](notes/final_artifact_crosswalk.md) and
+  checked the technical paper against the Substack adaptation across the
+  calculus, theorem boundaries, `F35/F35a--c/F36`, all C1 no-claim limits,
+  population-typed descriptive values, neural-fit answer, and finite
+  policy/value existence result. Added the missing plain-language definition
+  of “value logic” and made the omitted hard-MoE, architecture/seam, powered
+  system, matched-coverage replacement, and confirmation-rerun boundaries
+  explicit in [`substack_post.txt`](substack_post.txt). Updated
+  [`README.md`](README.md) so [`TODO_v2.md`](TODO_v2.md) is authoritative for
+  future work. Repository verification, link checks, artifact-format checks,
+  and TODO-placeholder checks pass; no theorem, frozen result, evidence grade,
+  or causal attribution changed. The original roadmap is complete.
 
 ## Decision log
 
