@@ -51,7 +51,7 @@ A checkpoint is itself one 30-minute work item. At each checkpoint:
 7. update the `Next task` pointer; and
 8. stop before beginning the selected next task.
 
-**Next task: Task 0 — Map the inheritance boundary from the first paper.**
+**Next task: Task 1 — Freeze the follow-up question, contribution boundary, and paper shape.**
 
 ## Estimated schedule
 
@@ -200,11 +200,21 @@ The project is complete when:
 
 ### Phase I — Scope, inheritance, and literature
 
-- [ ] **Task 0 — Map the inheritance boundary from the first paper.**
+- [x] **Task 0 — Map the inheritance boundary from the first paper.**
 
   Create `v2/README.md`. Read the abstract, Sections 2–4, Sections 6–8, and the conclusion of `paper.md`, plus the current original `TODO.md`. Record a compact table of: objects imported unchanged; objects reinterpreted through contracts; results used as premises; and results explicitly outside the follow-up. Identify the exact first-paper formulas for adequacy, fallback improvement, interval assessment, profile meet, and consumer-relative factorization. Do not summarize the entire paper.
 
   **Done when:** the note gives one authoritative inheritance table, links every inherited definition to its source section, records unresolved interface questions, and states the validation command placeholder.
+
+  Completed 2026-08-01. Created [`v2/README.md`](v2/README.md) with the
+  authoritative import/reinterpretation/premise/exclusion table and the exact
+  inherited adequacy, fallback, interval-assessment, profile-meet, and
+  consumer-factorization formulas. The note fixes the current validation
+  command, records six unresolved contract/side-packet/valuation/oracle
+  interfaces for Task 1 onward, and keeps ReLU, the original experiment,
+  policy/value reconstruction, and recursive judgment outside the follow-up's
+  theorem spine. Updated this [`TODO_v2.md`](TODO_v2.md) pointer to Task 1;
+  repository validation passes.
 
 - [ ] **Task 1 — Freeze the follow-up question, contribution boundary, and paper shape.**
 
