@@ -1,484 +1,530 @@
-# Value Logic Follow-Up Paper: Contract Semantics and Inverse Task Recovery — TODO
+# Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: 2026-08-01
-
-Intended repository filename: `TODO_v2.md`
+Last updated: September 19, 2026.
+Status: roadmap authorized; foundational research not yet started.
 
 ## Resume here
 
-This file is the project control document for the follow-up paper. On a fresh chat:
+This is the active project-control document. Read it together with
+[v2/RESEARCH_PROTOCOL.md](v2/RESEARCH_PROTOCOL.md), [v2/README.md](v2/README.md),
+the latest applicable gate record, and the selected task's prior sessions.
+Read relevant phase-one material as needed; do not spend every session rereading
+the entire original paper or its completed task history.
 
-1. read `paper.md`, the original `TODO.md`, this file, and the latest completed checkpoint note;
-2. complete **exactly the first unchecked work item** unless the user explicitly selects another;
-3. treat one numbered task or one checkpoint as the entire scope of one prompt; and
-4. stop after validating and recording that item.
+**Next task: F01 — requirements and separating examples.**
 
-Each work item is designed for approximately **30 minutes of GPT-5.6 Sol work at Extra High effort**. The initial roadmap contains **36 numbered tasks and 4 checkpoints: 40 work items, approximately 20 hours total**.
+**Active repair queue: empty.**
 
-When finishing a work item:
+**Gate state: A not attempted; B not attempted; C not attempted; D not attempted.**
 
-1. mark it `[x]`;
-2. add the completion date and a 2–5 sentence result note beneath it;
-3. link every file created or materially changed;
-4. update `v2/claim_ledger.md` when a claim was added, sharpened, supported, refuted, or deferred;
-5. run the validation command currently recorded in `v2/README.md`;
-6. make one local commit containing only that work item when working in a Git checkout, using the task/checkpoint ID in the commit message; and
-7. do not begin the next item.
+Select the pointer, not mechanically the first unchecked task. A failed or
+invalidated gate can put an earlier repair ahead of later numbered tasks.
+One selected task, repair, or gate attempt is the scope of a prompt unless the
+user explicitly requests a batch. A task may span multiple sessions. Stop
+with a durable partial record when necessary; do not mark a time floor or
+proof obligation satisfied without its evidence.
 
-Do not automatically push.
-
-### Thirty-minute scope discipline
-
-The timebox is a design constraint, not merely an estimate.
-
-- A prose task should normally create or revise **one principal artifact**, add roughly 600–1,200 polished words, and handle at most one main theorem plus one short corollary or counterexample.
-- A literature task should verify roughly 4–6 load-bearing primary sources, not attempt an exhaustive survey.
-- A proof task should prefer a sharply scoped finite theorem over a broad conjectural framework.
-- A code task should implement one cohesive module or experiment stage plus focused tests.
-- If a task exposes a larger problem, record the exact issue in the claim ledger or checkpoint note rather than silently expanding the task.
-- If the allotted scope cannot be completed, preserve the strongest checked partial result, state the blocker precisely, and stop.
-
-### Checkpoint protocol
-
-A checkpoint is itself one 30-minute work item. At each checkpoint:
-
-1. read all artifacts produced since the preceding checkpoint, plus `v2/project_spec.md`, `v2/claim_ledger.md`, and `v2/notation.md`;
-2. test whether the remaining roadmap still fits the paper question and the remaining time budget;
-3. inspect every unfinished item after the checkpoint for necessity, order, dependencies, and realistic half-hour scope;
-4. split, merge, reorder, narrow, add, or remove future items when justified;
-5. preserve completed history and prefer suffixed task IDs over renumbering already referenced tasks;
-6. create the named checkpoint note recording evidence considered, accepted changes, rejected changes, risks, and the revised pending roadmap;
-7. update the `Next task` pointer; and
-8. stop before beginning the selected next task.
-
-**Next task: Task 1 — Freeze the follow-up question, contribution boundary, and paper shape.**
-
-## Estimated schedule
-
-| phase | work items | estimated time |
-|---|---:|---:|
-| Scope, inheritance, and literature | Tasks 0–5 + Checkpoint A | 3.5 hours |
-| Contract semantics and qualitative abstraction | Tasks 6–14 + Checkpoint B | 5 hours |
-| Inverse task recovery | Tasks 15–23 + Checkpoint C | 5 hours |
-| Reference implementation and synthetic experiment | Tasks 24–29 + Checkpoint D | 3.5 hours |
-| Paper assembly and final audit | Tasks 30–35 | 3 hours |
-| **Total** | **40 work items** | **20 hours** |
+Historical reference: [TODO_v2_contracts_archive.md](TODO_v2_contracts_archive.md)
+is the superseded contract-and-inverse roadmap, not an alternate execution
+queue. [TODO.md](TODO.md) remains the completed phase-one history.
 
 ## Project question
 
-The first paper formalized present permission to rely on a fallible model as a finite-stage, evidence-relative license. Its atom states were Supported, Open, and Refuted, and its public outcomes separated malformed requests, counterindication, unresolved evidence, and grants.
+> What semantic objects and inference rules let an agent reason from pragmatic
+> value, without requiring possession of final metaphysical truth?
 
-The follow-up asks:
+The aim is a small calculus that derives justified conclusions about uses and
+compositions from premises, not merely an algorithm that attaches a number to
+a proposition and thresholds it. Candidate semantics must earn their place
+through separating examples, proofs, explicit comparisons, and executable
+checks. Scientific model succession supplies motivating examples, not an
+obligation to undertake a second full model-comparison research program here.
 
-> Can these scoped reliance judgments be understood as qualitative abstractions of values assigned to world-indexed contracts, and what task or value structure can be recovered from a sufficiently rich family of such judgments?
+### Fixed commitments and revisable choices
 
-The main intended construction begins with a use contract
+The philosophical commitments are lack of direct access to final metaphysical
+truth, pragmatic reliance on revisable models with tolerable error or reward
+and resource costs, and investigation of value as the primary semantic object.
+These motivate the research; they do not uniquely derive a mathematical system
+or prove that absolute truth does not exist.
 
-\[
-X_{e,q}(w)
-=
-J(F_q,D_q;w)-J(e,D_q;w)-\Delta_q,
-\]
+Everything more specific is provisional: scalar versus structured value,
+bounded versus unbounded ranges, orders and operations, evidence states,
+contexts, contracts, probability, inference syntax, revision rules, and neural
+architecture. Ordinary mathematical proofs are permitted in an explicitly
+stated metatheory; their use is not a claim of metaphysical access.
 
-whose payoff is positive when using plan \(e\) improves on the named fallback by the required margin in world \(w\). An epistemic state supplies lower and upper valuations
+The phase-one calculus is a completed realization, not an immutable core. Its
+results may be reused with their hypotheses, adapted, compared, or not imported.
+Do not rewrite their historical claims to make the new design appear inevitable.
 
-\[
-\underline V_s(X),\qquad \overline V_s(X).
-\]
+## Required research distinctions
 
-The qualitative state is then obtained by the sign position of the valuation interval:
+Keep separate (1) a value object, (2) its evaluation or summary, and (3) a
+justified inference involving it. The separation itself should be tested, not
+inflated into gratuitous data structures. Test what information composition
+needs and which distinctions an actual consumer uses.
 
-\[
-\underline V_s(X)\ge 0
-\Rightarrow \mathsf{Supported},
-\qquad
-\overline V_s(X)<0
-\Rightarrow \mathsf{Refuted},
-\]
+Do not assume that a scalar summary determines a composite operation. One
+required starting test is the equally weighted two-scenario comparison
+`X=(3,-1), Y=(-1,3)` versus `X=(3,-1), Y=X`: the individual means coincide
+across the two cases, while the means of their pointwise minima differ. F01
+must work out the calculation and its exact implication; it is a diagnostic
+example, not a decision to make pointwise minimum a logical connective.
 
-with the remaining meaningful cases Open.
+Explore unbounded values explicitly. A bounded implementation example is
+allowed, but a monotone squashing map is not automatically an algebra- or
+inference-preserving equivalence. Similarly, operational choice, joint use,
+sequential use, and rejection need not coincide with Boolean and/or/not.
 
-The inverse problem treats contract-and-price queries as observations of a latent task or valuation. The target is not a uniquely true utility function. It is the **observational quotient**: exactly the task distinctions that the declared query family can identify.
+## Research execution and timing
 
-## Provisional paper thesis
+The [research protocol](v2/RESEARCH_PROTOCOL.md) is binding for this queue.
+Its essential rules are:
 
-The intended thesis has two connected parts:
+- Separate **D: derivations and worked theory**, **L: external literature**, and
+  **E: empirical/computational tests**. Keep durable evidence for each. The
+  provisional cycle allocation is 60/15/25; D is normally the largest share.
+  Code is permitted inside a derivation task when it is likely to be useful,
+  but its execution time is E, not a substitute for a protected D minimum.
+- Before each attempt forecast central/high effort by D/L/E/O and expected tool
+  waiting. Record real UTC and monotonic clocks, check at least every 15 active
+  minutes and at transitions, and report actuals and forecast error. Do not
+  count idle or unknown time, or fabricate retrospective durations.
+- Protect selected 60- or 90-minute research blocks. They may span sessions.
+  Both the minimum and substantive evidence are required for completion. Early
+  success leads to assumption testing or an alternative derivation, not
+  artificial waiting. Budget exhaustion leads to replanning, not a false pass.
+- Allocate both reliable gains and difficult/uncertain gains. Start at 60% R /
+  40% X of research time, an axis independent of D/L/E; audit actual allocation
+  at gates and preserve concrete work in both lanes.
 
-1. **Forward semantics.** The finite-stage license calculus is a sound qualitative sign abstraction of lower and upper valuations of scoped model-use contracts. Boolean logic embeds as the indicator-contract special case, while general real-valued contracts support richer operations that should not automatically be called logical conjunction or disjunction.
-2. **Inverse semantics.** A family of priced contract judgments identifies a latent task only up to observational equivalence. Threshold sweeps recover lower and upper values of queried contracts; finite-dimensional linear fragments are identifiable under explicit spanning and normalization conditions; outside those conditions, non-identifiability is structural rather than a failure of optimization.
+Use [v2/templates/work_item.md](v2/templates/work_item.md) for forecasts, clock
+segments, research notes, result evidence, and gate decisions. O denotes
+administration/formatting overhead and does not satisfy research minimums.
 
-A small synthetic experiment should test whether an active contract-query strategy recovers a finite latent-task version space more efficiently than random querying.
+### Initial effort allocations
 
-## Main theorem and result targets
+Minutes below are provisional engaged-work allocations, **not measured time or
+promised wall-clock completion**. `Review at` means stop to reforecast or
+reshape the attempt, not a deadline that makes an unproved claim complete.
+`D60` means at least 60 measured engaged derivation minutes across that task;
+analogously for L/E. `None` means no floor beyond adequate evidence, not no
+forecast or clock recording.
 
-The roadmap should aim for the following scoped results, revising them at checkpoints when necessary:
+| ID | Initial minutes | Review at | Protected minimum |
+|---|---:|---:|---|
+| F01 | 90 | 180 | D60 |
+| F02 | 120 | 240 | D60 |
+| F03 | 120 | 240 | L60 |
+| F04 | 120 | 240 | D60 |
+| Gate A | 60 | 120 | None |
+| F05 | 120 | 240 | D60 |
+| F06 | 150 | 300 | D90 |
+| F07 | 180 | 360 | D90 |
+| F08 | 180 | 360 | D90 |
+| F09 | 120 | 240 | D60 |
+| F10 | 90 | 180 | L45 |
+| Gate B | 60 | 120 | None |
+| F11 | 120 | 240 | E60 |
+| F12 | 90 | 180 | E45 |
+| F13 | 120 | 240 | D60 |
+| F14 | 60 | 120 | None |
+| F15 | 120 | 240 | E60 |
+| F16 | 120 | 240 | D60 |
+| Gate C | 60 | 120 | None |
+| F17 | 120 | 240 | None |
+| Gate D | 60 | 120 | None |
+| **Initial traversal** | **2,280 (38 hours)** | **Reforecast per item** | **Not a phase-wide timebox** |
 
-1. **Contract-abstraction theorem:** sign abstraction of a valid lower/upper valuation interval is sound for favorable and unfavorable contract value and reproduces the relevant finite-stage license atoms.
-2. **Indicator embedding theorem:** Boolean events embed into bounded contracts through indicator functions, with `not`, `and`, and `or` recovered by \(1-x\), `min`, and `max`; precise expectation recovers ordinary probability.
-3. **Observational quotient theorem:** every exact representation of a declared judgment family factors through its response quotient, and the quotient is the coarsest exact task code up to relabeling.
-4. **Threshold-recovery theorem:** under translation-invariant valuation, judgments of \(X-p\) locate \(\underline V(X)\) and \(\overline V(X)\); a finite binary-search procedure recovers them to declared resolution.
-5. **Finite linear identifiability theorem:** a normalized finite-dimensional linear valuation is recoverable from values of a spanning contract family, while incomplete span or omitted normalization yields explicit equivalence classes.
-6. **Synthetic active-query result:** on one frozen finite version-space generator and metric, a balanced-split query strategy is compared prospectively with random querying.
+Initially reserve a further 570 engaged minutes (9.5 hours, 25%) for repair and
+reconsideration. The resulting 47.5-hour planning envelope is a starting
+allocation, not a phase limit, guaranteed duration, or demand to consume time.
+The source of a failed gate determines how that reserve is used. Forecasts
+must be revised using measured progress; there is no fixed lifetime limit on
+phases or recurrence cycles.
 
-The first five are mathematical targets. The sixth is an empirical result whose disposition must follow the frozen experiment rather than be assumed.
+## Evidence gates and recurrence
 
-## Required final artifacts
+The overall route is:
 
-1. `paper_v2.md` — the complete follow-up paper in rigorous Markdown with LaTeX.
-2. `v2/claim_ledger.md` — claim roles, scopes, dependencies, evidence states, and project impacts.
-3. `v2/notation.md` — the authoritative glossary and symbol table.
-4. `v2/verification/` — executable finite semantics, inverse-query routines, and tests.
-5. `v2/experiments/results.md` — frozen experiment design, results, and limitations.
+```text
+F01-F04 -> A -> F05-F10 -> B -> F11-F16 -> C -> F17 -> D
+              ^ failure anywhere can return to an earlier dependency
+```
 
-Supporting notes may live under `v2/formalism/`, `v2/inverse/`, `v2/literature/`, and `v2/checkpoints/`.
+A gate is a hypothesis about readiness, not a ceremonial checkpoint. PASS
+requires the specific evidence listed below, with no unresolved blocking issue
+in a result it authorizes. Its note records exact artifact versions, evidence,
+clock totals, research-mode and R/X allocation, and the selected next task.
+Passing a gate is relative to the declared fragment and evidence, never a
+certificate of metaphysical truth.
 
-## Inherited objects and intended changes
+On failure, record the criterion, smallest witness or gap, earliest affected
+dependency, and stale downstream claims. Create a repair item such as
+`R-B-1-01` with a fresh forecast and acceptance evidence; place it in the active
+queue and move the pointer to it. A completed review can record BLOCKED while
+the gate checkbox remains unchecked. Retain completed historical tasks and old
+passes; add revisions and invalidations instead of erasing history.
 
-The follow-up should inherit rather than rebuild:
+| Failure found | Default return target |
+|---|---|
+| Examples are underspecified or do not distinguish candidates | F01/F04 |
+| Representation loses information needed by an operation | F02/F05 |
+| Inference rule is false or its scope is unclear | F05/F06, then affected proofs |
+| Soundness/completeness proof has a gap | F07/F08; F05/F06 if structural |
+| External result was misapplied or contribution misunderstood | F03/F10 and dependent claims |
+| Executable semantics differ from declared semantics | F11/F12; reopen B if the specification changes |
+| Demonstrator is vacuous or evidence does not support usefulness | F13/F14, or F01/F06 if no meaningful inference exists |
+| Reporting drifts from checked claims | F17 or the affected earlier gate |
+| Timing or independent-review evidence is missing | Resume the relevant obligation; do not invent it |
 
-- versioned evaluated plans, contexts, finite epistemic states, profiles, and provenance;
-- the separation of `Undefined` from meaningful evidential states;
-- `K_3 = {Refuted, Open, Supported}`;
-- explicit fallback, absolute adequacy, and profile aggregation;
-- the distinction among evidence, target-world claims, current authorization, selection, and final truth;
-- the architecture-neutral factorization and exact active-mask discipline.
-
-The follow-up may reinterpret or extend:
-
-- adequacy and fallback margins as contract payoffs;
-- interval certificates as lower/upper contract valuations;
-- license queries as observations from which a task quotient can be reconstructed;
-- Boolean propositions as a restricted indicator-valued fragment of a larger contract algebra.
-
-## Non-goals
-
-This paper does not need to:
-
-- identify truth with utility or probability;
-- recover a uniquely true reward, preference, or ontology;
-- claim that every coherent judgment system is representable by one probability distribution;
-- solve cyclic self-authorization or unrestricted recursive judgment;
-- develop a full sheaf, topos, or differential-geometric semantics for model domains;
-- establish mechanistic interpretability of a neural policy;
-- perform a realistic physics case study;
-- prove that ReLU networks learn the proposed semantics;
-- replace the first paper’s evidence and provenance discipline with numerical contract values; or
-- treat `min` and `max` of arbitrary real contracts as ordinary logical conjunction and disjunction without qualification.
-
-Those are possible later projects. The present follow-up should remain a compact contract-semantics and inverse-identification paper.
-
-## Main risks
-
-1. **Expectation collapse:** assuming one precise probability measure when the Open state is motivated by imprecise or incomplete valuation.
-2. **Probability–utility confounding:** interpreting a value functional as belief alone when the contract payoff already contains task loss or utility.
-3. **Logical overreach:** treating operations on arbitrary payoffs as if they inherited every law and interpretation of Boolean connectives.
-4. **Query unrealism:** proving identification only by allowing contracts or prices that an actual judge could not evaluate.
-5. **Boundary ambiguity:** mishandling inclusive support, strict refutation, and an Open valuation interval.
-6. **Inherited-semantics drift:** changing the first paper’s fallback, profile, or evidence meanings while claiming an embedding.
-7. **Identification overclaim:** inferring a unique latent task where only an observational equivalence class is determined.
-8. **Experiment leakage:** selecting the active-query metric, task population, or stopping rule after inspecting results.
-9. **Proof/implementation mismatch:** proving results for one oracle or normalization while implementing another.
-10. **Scope expansion:** allowing recursive evidence, real physics, or mechanistic interpretability to consume the 20-hour paper budget.
-
-## Definition of done
-
-The project is complete when:
-
-- the contract carrier, use-contract construction, valuation assumptions, and sign convention are explicit;
-- the qualitative abstraction reproduces the relevant first-paper atom semantics under a stated embedding;
-- indicator contracts recover the Boolean fragment with correct boundaries;
-- arbitrary contract operations are carefully distinguished from Boolean logic;
-- observational equivalence and the recoverable task quotient are defined;
-- at least one positive identifiability theorem and at least two explicit non-identifiability countermodels are included;
-- threshold recovery is given as both a theorem and executable algorithm;
-- the active-query experiment is frozen before execution and reported without outcome-selected replacement;
-- every main claim has a ledger entry and every citation is checked against a primary source;
-- the executable semantics agree with the paper’s formulas on deterministic fixtures; and
-- `paper_v2.md` passes the final notation, proof, citation, link, and claim-boundary audit.
+After two unsuccessful cycles on the same blocker, compare at least two
+strategies and choose a discriminating next test. Change a rule, carrier, or
+fragment when warranted. A restricted positive result can survive a failed
+ambitious conjecture; failure alone does not authorize claiming the original
+result. Continue, narrow, or suspend that candidate explicitly. Do not proceed
+to publication with an unsound core simply because the planned queue ended.
 
 ## Numbered task queue
 
-### Phase I — Scope, inheritance, and literature
-
-- [x] **Task 0 — Map the inheritance boundary from the first paper.**
-
-  Create `v2/README.md`. Read the abstract, Sections 2–4, Sections 6–8, and the conclusion of `paper.md`, plus the current original `TODO.md`. Record a compact table of: objects imported unchanged; objects reinterpreted through contracts; results used as premises; and results explicitly outside the follow-up. Identify the exact first-paper formulas for adequacy, fallback improvement, interval assessment, profile meet, and consumer-relative factorization. Do not summarize the entire paper.
-
-  **Done when:** the note gives one authoritative inheritance table, links every inherited definition to its source section, records unresolved interface questions, and states the validation command placeholder.
-
-  Completed 2026-08-01. Created [`v2/README.md`](v2/README.md) with the
-  authoritative import/reinterpretation/premise/exclusion table and the exact
-  inherited adequacy, fallback, interval-assessment, profile-meet, and
-  consumer-factorization formulas. The note fixes the current validation
-  command, records six unresolved contract/side-packet/valuation/oracle
-  interfaces for Task 1 onward, and keeps ReLU, the original experiment,
-  policy/value reconstruction, and recursive judgment outside the follow-up's
-  theorem spine. Updated this [`TODO_v2.md`](TODO_v2.md) pointer to Task 1;
-  repository validation passes.
-
-- [ ] **Task 1 — Freeze the follow-up question, contribution boundary, and paper shape.**
-
-  Create `v2/project_spec.md`. Turn the provisional thesis into a one-page specification containing the central question, 4–6 intended contributions, mathematical assumptions, final artifact list, non-goals, and a proposed 7–9 section paper outline. Decide whether the paper’s primary semantic object is a bounded real contract, a typed contract bundle, or a contract plus exact side packet. Preserve hard constraints and provenance outside any scalar that cannot carry them.
-
-  **Done when:** every intended theorem target has a stated role in the paper and every attractive but out-of-scope direction is explicitly deferred.
-
-- [ ] **Task 2 — Initialize the follow-up claim ledger.**
-
-  Create `v2/claim_ledger.md` with approximately 15–20 scoped claims covering contract semantics, lower/upper valuation, Boolean embedding, abstraction, task quotients, threshold recovery, linear identifiability, non-identifiability, active querying, and the experiment. For each claim record: ID; exact statement; role; assumptions; proof/test route; support and falsification conditions; current evidence state; dependencies; and project impact if narrowed or refuted.
-
-  **Done when:** every main theorem/result target has a ledger row and no row is labeled supported merely because it is planned.
-
-- [ ] **Task 3 — Audit the contract-valuation literature needed by the core.**
-
-  Create `v2/literature/contracts.md` and update or create `v2/references.bib`. Verify roughly 4–6 primary sources spanning bets/contracts, coherent previsions or lower previsions, sets of probabilities, desirability, and coherent risk/value functionals. Extract only the definitions or representation results actually needed. Distinguish a generic interval-valued functional from one represented by a credal set.
-
-  **Done when:** each imported concept has a precise hypothesis-preserving use or is labeled analogy only; no secondary-source theorem is carried forward unverified.
-
-- [ ] **Task 4 — Audit inverse-value and elicitation literature needed by the recovery problem.**
-
-  Create `v2/literature/inverse.md` and update `v2/references.bib`. Verify roughly 4–6 primary sources on revealed preference, preference/value elicitation, active comparison queries, inverse decision problems, or reward/utility identifiability. Focus on observational equivalence, normalization, query richness, and active experiment design rather than surveying entire fields.
-
-  **Done when:** the note states what is standard, what the follow-up adapts, and which stronger recovery claims are blocked by known equivalences.
-
-- [ ] **Task 5 — Freeze notation and the theorem-dependency map.**
-
-  Create `v2/notation.md`. Define the authoritative meanings of \(\Omega\), \(w\), \(e\), \(q\), \(F_q\), \(J\), \(X\), \(\underline V\), \(\overline V\), \(K_3\), the abstraction map, query price \(p\), oracle response, latent parameter \(\theta\), feature map \(\phi\), query family, and observational equivalence. Add a dependency graph from definitions to theorem targets and final paper sections.
-
-  **Done when:** every symbol planned for Tasks 6–23 has one meaning, units/sign conventions are fixed, and later files are instructed to link rather than redefine notation.
-
-- [ ] **Checkpoint A — Freeze the paper scope before formal development.**
-
-  Create `v2/checkpoints/A_scope_freeze.md` and apply the checkpoint protocol. Decide, using Tasks 0–5, whether the main semantics will be stated through a credal set of linear expectations, a more general lower/upper valuation interface, or both with one as the representation example. Confirm that the five mathematical targets can fit the remaining 16.5 hours. Narrow or remove any target that would require a full monograph on imprecise probability, preference theory, or recursive logic.
-
-  **Done when:** the semantic assumptions, theorem spine, paper outline, and next task are frozen prospectively.
-
-### Phase II — Contract semantics and qualitative abstraction
-
-- [ ] **Task 6 — Define worlds, typed use contracts, and the payoff convention.**
-
-  Create `v2/formalism/01_contracts.md`. Define a finite or otherwise explicitly bounded world space, bounded real contracts, typed units, plan loss, fallback loss, switching margin, and
-
-  \[
-  X_{e,q}(w)=J(F_q,D_q;w)-J(e,D_q;w)-\Delta_q.
-  \]
-
-  Explain why positive payoff favors use of \(e\), how absolute adequacy remains a separate contract or requirement, and how malformed units remain `Undefined` rather than zero-valued. Include one numerical succession example.
-
-  **Done when:** the contract is well typed, its sign convention is tested on at least three cases, and scalarization limits are recorded.
-
-- [ ] **Task 7 — Define precise and imprecise valuation interfaces.**
-
-  Create `v2/formalism/02_valuations.md`. Define precise expectation \(V_P(X)\), lower and upper valuation from a nonempty set of admissible linear previsions, and the minimal properties used later: monotonicity, translation by constants, and lower/upper order. State separately what follows only under positive homogeneity, convexity, or full coherence. Permit an accepted external interval interface without asserting that every such interface has a credal-set representation.
-
-  **Done when:** every later proof can cite an explicit assumption list and probability, utility, loss, and evidential uncertainty are not collapsed.
-
-- [ ] **Task 8 — Define the qualitative sign abstraction and public outcome interface.**
-
-  Create `v2/formalism/03_abstraction.md`. For a meaningful contract with accepted interval \([\underline V(X),\overline V(X)]\), define Supported, Open, and Refuted using inclusive favorable equality and strict unfavorable separation. Define the malformed-request branch separately. Show how component states enter a required profile meet and recover Granted, Withheld, Refused, and Undefined.
-
-  **Done when:** the complete boundary table covers positive, negative, crossing, equality, missing, invalid, and conflicted evidence without representing all of them by the same diagnostic.
-
-- [ ] **Task 9 — Prove the contract-abstraction theorem.**
-
-  Create `v2/formalism/04_abstraction_theorem.md`. Prove one compact theorem: under valid lower/upper bounds, Supported implies nonnegative value for every admissible valuation; Refuted implies strictly negative value for every admissible valuation; Open is exactly the unresolved sign region for the declared interval interface. Add one monotonicity corollary for interval refinement and one counterexample showing why a point estimate alone is insufficient.
-
-  **Done when:** the theorem’s quantifiers and boundary conventions match Task 8 and its ledger row has an evidence disposition.
-
-- [ ] **Task 10 — Embed the first paper’s adequacy and fallback atoms.**
-
-  Create `v2/formalism/05_license_embedding.md`. Map first-paper adequacy \(J(e)\le\epsilon\) to the contract \(\epsilon-J(e)\), and fallback improvement to \(J(F)-J(e)-\Delta\). Show clause by clause that the interval-containment rules induce the same `K_3` state under the inherited evidence mode. State and prove a finite-profile assessment-preservation proposition, or record the smallest counterexample and repair.
-
-  **Done when:** the follow-up has an exact documented relationship to the original calculus rather than a metaphorical similarity.
-
-- [ ] **Task 11 — Define the algebra of bounded contracts.**
-
-  Create `v2/formalism/06_contract_algebra.md`. Define addition, scalar multiplication, constants, order, `min`, `max`, positive/negative parts, and price translation on bounded contracts. Record unit constraints and distinguish algebraic closure from epistemic authorization. Explain which valuation properties preserve which operations or inequalities.
-
-  **Done when:** every operation used later is typed and at least two tempting but invalid valuation identities are counterexampled.
-
-- [ ] **Task 12 — Embed Boolean events as indicator contracts.**
-
-  Create `v2/formalism/07_boolean_embedding.md`. For events \(A\subseteq\Omega\), use \(\mathbf 1_A\) and prove the finite Boolean embedding:
-
-  \[
-  \neg A\mapsto 1-\mathbf 1_A,\quad
-  A\wedge B\mapsto\min(\mathbf 1_A,\mathbf 1_B),\quad
-  A\vee B\mapsto\max(\mathbf 1_A,\mathbf 1_B).
-  \]
-
-  Show that precise expectation gives ordinary probability and that lower/upper expectation gives lower/upper event probability under the declared credal representation.
-
-  **Done when:** the result is stated as an embedding of the indicator fragment, not as an identification of arbitrary contract value with probability.
-
-- [ ] **Task 13 — Delimit conjunction and disjunction for general contracts.**
-
-  Create `v2/formalism/08_general_contract_connectives.md`. Analyze `min(X,Y)` and `max(X,Y)` as worst/best payoff combinations. State sufficient conditions under which support for both component contracts supports `min(X,Y)`, and give counterexamples to invalid converse or distributive inferences under lower valuation. Explain why these operations extend the indicator fragment but do not automatically inherit ordinary propositional interpretation.
-
-  **Done when:** the paper can answer “can we do and/or/not directly on contract values?” with exact positive constructions and exact limits.
-
-- [ ] **Task 14 — Reconstruct multi-requirement profiles from contract atoms.**
-
-  Create `v2/formalism/09_profiles.md`. Represent absolute adequacy, fallback improvement, latency/resource constraints, and optional comparison obligations as a finite typed family of contracts or exact predicates. Define component abstraction followed by conservative profile meet. Explain when vector/Pareto structure must remain explicit rather than scalarized.
-
-  **Done when:** a worked profile reproduces the first paper’s running example and the root authorization cannot be manufactured from an unrelated aggregate payoff.
-
-- [ ] **Checkpoint B — Audit and freeze the forward contract semantics.**
-
-  Create `v2/checkpoints/B_contract_core.md` and apply the checkpoint protocol. Check every formula in Tasks 6–14 against the inherited calculus, the literature assumptions, and at least one numerical fixture. Decide which results are paper-carrying and which belong in an appendix. Specifically audit the treatment of equality, translation invariance, arbitrary interval interfaces, Boolean embedding, and general-contract `min`/`max`.
-
-  **Done when:** the forward semantics are internally consistent, the inverse query language can be defined without changing them, and any failed theorem target has a scoped replacement.
-
-### Phase III — Inverse task recovery
-
-- [ ] **Task 15 — Define the priced-contract judgment oracle.**
-
-  Create `v2/inverse/01_oracle.md`. Define a query as a typed contract \(X\) and price \(p\), evaluated through the translated contract \(X-p\). Specify the three meaningful oracle responses and the malformed branch. State which contracts and prices are admissible, whether the oracle exposes diagnostics or only public state, and how repeated equivalent queries are normalized.
-
-  **Done when:** the oracle is deterministic relative to a latent valuation state and its response boundaries follow directly from Tasks 7–9.
-
-- [ ] **Task 16 — Define observational equivalence and the recoverable task quotient.**
-
-  Create `v2/inverse/02_observational_quotient.md`. Let latent task/valuation models be equivalent when they produce the same responses for every query in a declared family. Define finite-family and universal-family quotients, explain why the quotient—not a uniquely true utility—is the inverse target, and give two distinct latent models that are observationally equivalent under a weak query family.
-
-  **Done when:** identifiability claims can be stated as singleton quotient classes rather than informal “recovery.”
-
-- [ ] **Task 17 — Prove the observational quotient factorization theorem.**
-
-  Create `v2/inverse/03_quotient_theorem.md`. Adapt the first paper’s consumer-relative factorization result to the inverse setting. Prove that an exact task code for the declared response family must separate every pair separated by the response map, and that the response image is the coarsest exact code up to relabeling. State clearly that this is a structural quotient theorem, not recovery of hidden mechanism.
-
-  **Done when:** the theorem is proved in a page or less and one example distinguishes public-response and audit-response quotients.
-
-- [ ] **Task 18 — Prove interval recovery by threshold sweep.**
-
-  Create `v2/inverse/04_threshold_recovery.md`. Under translation invariance, prove that responses to \(X-p\) locate the lower and upper values of \(X\): support below the lower boundary, refutation above the upper boundary, and Open between them with the chosen equality convention. Give the exact set-theoretic formulas for recovering both boundaries from an ideal continuum of price queries.
-
-  **Done when:** the formulas handle degenerate precise value, nonzero imprecision interval, and boundary equality correctly.
-
-- [ ] **Task 19 — Give a finite-resolution recovery algorithm.**
-
-  Create `v2/inverse/05_finite_recovery.md`. Specify a bounded price interval and a binary-search or grid algorithm that recovers each valuation boundary to resolution \(\delta\). Prove a query bound such as \(O(\log((b-a)/\delta))\) under the stated oracle and show how three-way responses alter the search. Include deterministic pseudocode suitable for direct implementation.
-
-  **Done when:** the algorithm has a termination condition, an error guarantee, and one manually checked trace.
-
-- [ ] **Task 20 — Define the finite-dimensional linear task fragment.**
-
-  Create `v2/inverse/06_linear_fragment.md`. Define contract features \(\phi(X)\in\mathbb R^d\), a normalized parameter set \(\Theta\), and precise valuation \(V_\theta(X)=\theta^\top\phi(X)\). Explain what \(\theta\) represents and does not represent, why normalization or an anchored constant is necessary, and how price queries become half-space observations and version-space constraints.
-
-  **Done when:** the fragment is expressive enough for the experiment but narrow enough for an elementary identifiability theorem.
-
-- [ ] **Task 21 — Prove a finite linear identifiability theorem.**
-
-  Create `v2/inverse/07_linear_identifiability.md`. Prove a theorem of the following scale: if values of a spanning feature family are recoverable through priced queries and the normalization is fixed, then \(\theta\) is uniquely determined; conversely, a nontrivial null direction in the queried feature span yields observationally equivalent parameters. Use a matrix-rank formulation and one concrete \(d=2\) example.
-
-  **Done when:** both directions are proved, assumptions match Task 20, and no stronger preference-identification claim is implied.
-
-- [ ] **Task 22 — Build the non-identifiability countermodel suite.**
-
-  Create `v2/inverse/08_nonidentifiability.md`. Give at least three finite countermodels: insufficient contract span; omitted scale or affine normalization; and probability–utility/task-payoff confounding. Optionally add a fourth showing that public `K_3` responses identify less than exact price boundaries. For each, state exactly which stronger claim fails and which quotient-level claim survives.
-
-  **Done when:** every countermodel is small enough to verify by hand and its project impact is propagated to the claim ledger.
-
-- [ ] **Task 23 — Design the active query rule and frozen comparison metric.**
-
-  Create `v2/inverse/09_active_queries.md`. For a finite candidate version space, define a query rule that maximizes a prospective balanced split, entropy reduction, or worst-case elimination across Supported/Open/Refuted responses. Give deterministic tie-breaking, pseudocode, stopping rules, and a random-query baseline. Predefine the experiment’s primary metric and any secondary metrics; do not run the final comparison yet.
-
-  **Done when:** the active policy can be implemented without additional design choices and the primary endpoint is frozen before data generation.
-
-- [ ] **Checkpoint C — Audit inverse claims and freeze the experiment.**
-
-  Create `v2/checkpoints/C_inverse_and_experiment_freeze.md` and apply the checkpoint protocol. Verify the quotient, threshold-recovery, finite algorithm, linear-identifiability, and countermodel results against the exact oracle. Freeze the candidate-task generator, admissible query pool, seeds, stopping rule, primary endpoint, baseline, and result table schema. Remove any empirical hypothesis that cannot be tested in the remaining 3.5 experiment hours.
-
-  **Done when:** the experiment can be executed mechanically from the checkpoint note and no outcome-dependent redesign remains available.
-
-### Phase IV — Reference implementation and synthetic experiment
-
-- [ ] **Task 24 — Scaffold the `v2` verification package and validation command.**
-
-  Create `v2/verification/` with a small package entry point, deterministic test runner, and README section recording the single validation command. Add typed dataclasses or equivalent minimal structures for finite worlds, contracts, valuation states, queries, and responses. Do not implement active querying yet.
-
-  **Done when:** `python -m v2.verification` runs a smoke test from the repository root and the package layout matches the notation.
-
-- [ ] **Task 25 — Implement contract algebra and valuation semantics.**
-
-  Implement bounded finite-world contracts, algebraic operations, precise expectation, credal-set lower/upper expectation, and price translation. Add focused tests for order, constants, indicator contracts, and at least two invalid-operation guards involving units or malformed dimensions.
-
-  **Done when:** the implementation reproduces the formulas in Tasks 6, 7, 11, and 12 on deterministic fixtures.
-
-- [ ] **Task 26 — Implement qualitative abstraction and first-paper embedding fixtures.**
-
-  Implement `K_3`, malformed/public outcomes, sign abstraction, component profile meet, and diagnostic payloads. Add tests for favorable equality, strict refutation, crossing intervals, missing/invalid evidence, and the adequacy/fallback examples from Task 10.
-
-  **Done when:** every boundary row in Task 8 has one executable regression and the embedding fixture produces the same assessment on both representations.
-
-- [ ] **Task 27 — Implement finite latent tasks, the oracle, and version-space filtering.**
-
-  Implement the linear fragment from Task 20, a finite candidate set, priced-contract oracle responses, and exact filtering of candidates by observed responses. Add tests for observational equivalence, singleton identification, and a non-identifiable null-space example.
-
-  **Done when:** a fixed hand-built sequence of queries shrinks the version space exactly as predicted in Tasks 16–22.
-
-- [ ] **Task 28 — Implement active querying and the random baseline.**
-
-  Implement the frozen query-selection rule, deterministic tie-breaking, random baseline, stopping condition, and metrics from Task 23/Checkpoint C. Add tests showing that the selected query has the declared split score and that no hidden access to the true task enters query choice.
-
-  **Done when:** both policies can run on the same frozen candidate/query pool and emit a complete trace.
-
-- [ ] **Task 29 — Execute and report the frozen synthetic experiment.**
-
-  Run the exact experiment frozen at Checkpoint C. Save machine-readable configuration and results, plus `v2/experiments/results.md` containing the primary comparison, uncertainty or seed variation, failure cases, and a trace example. Generate at most one figure if it materially clarifies query efficiency. Do not replace the endpoint or rerun with outcome-selected settings unless a documented implementation bug invalidates the run.
-
-  **Done when:** raw and summarized outputs are linked, reproducible, and the claim ledger records supported, refuted, or inconclusive dispositions.
-
-- [ ] **Checkpoint D — Audit the empirical result and freeze publication claims.**
-
-  Create `v2/checkpoints/D_experiment_audit.md` and apply the checkpoint protocol. Inspect code, tests, frozen configuration, raw outputs, and summaries. Determine exactly what the experiment supports about active querying, what it does not establish about human judgment or natural tasks, and whether any implementation bug requires a prospectively documented rerun. Freeze the result language for the paper.
-
-  **Done when:** Tasks 30–35 can assemble the paper without inventing new analyses or changing the experiment claim.
-
-### Phase V — Paper assembly and final audit
-
-- [ ] **Task 30 — Create the paper skeleton, abstract, and introduction.**
-
-  Create `paper_v2.md` with the final section structure. Write a complete abstract and introduction explaining the transition from scoped reliance licenses to contract values and inverse task recovery. State contributions with their exact mathematical or empirical status, explain the relationship to the first paper, and include a compact running example.
-
-  **Done when:** the opening makes the central idea legible without requiring the reader to know the repository and does not promise results absent from completed artifacts.
-
-- [ ] **Task 31 — Assemble the forward contract-semantics sections.**
-
-  Integrate Tasks 6–14 into the paper’s formal core. Include the use-contract definition, valuation interface, qualitative abstraction, embedding of the old license atoms, Boolean indicator fragment, and limits for arbitrary contract operations. Move long proof details to an appendix rather than rewriting them.
-
-  **Done when:** every forward theorem statement links to a completed proof artifact, notation matches `v2/notation.md`, and the first-paper relationship is explicit.
-
-- [ ] **Task 32 — Assemble the inverse recovery sections.**
-
-  Integrate Tasks 15–23 into the paper. Present the oracle, observational quotient, threshold recovery, finite algorithm, linear fragment, identifiability theorem, non-identifiability countermodels, and active-query design in dependency order.
-
-  **Done when:** “task recovery” is consistently stated at quotient or theorem-supported scope and every stronger unavailable interpretation is excluded nearby.
-
-- [ ] **Task 33 — Write the experiment, discussion, and limitations sections.**
-
-  Integrate Checkpoint C, Task 29, and Checkpoint D. Report the frozen generator, query policies, endpoint, results, and trace. Discuss query realism, public-state information loss, probability–utility confounding, finite-dimensional assumptions, and the distinction between synthetic identification and human or scientific task recovery.
-
-  **Done when:** every numerical statement is traceable to a result artifact and negative or null findings are reported with the same precision as positive ones.
-
-- [ ] **Task 34 — Complete related work, conclusion, and proof appendices.**
-
-  Write the related-work section from the two verified literature notes, emphasizing structural overlap and claim boundaries. Add a conclusion, concise future-work section, and appendices containing proof details or countermodel tables omitted from the main line. Future work may mention real physical model hierarchies, recursive evidence bridges, local-to-global semantics, and policy interpretability without presenting them as completed results.
-
-  **Done when:** all citations resolve, novelty language is conservative, and the main text remains readable.
-
-- [ ] **Task 35 — Cross-check, validate, and freeze the follow-up paper.**
-
-  Read `paper_v2.md` end to end against `v2/project_spec.md`, `v2/notation.md`, `v2/claim_ledger.md`, all checkpoint notes, and executable results. Audit definitions, quantifiers, boundary conventions, proof references, citations, numerical claims, links, and inherited first-paper terminology. Run the full validation command, repair only genuine inconsistencies, mark this task complete, and set `Next task` to publication or external review.
-
-  **Done when:** the repository validation is green, every main claim has a final ledger state, all required artifacts exist, and no TODO placeholder remains in `paper_v2.md`.
+### Preserved history
+
+- [x] **Historical Task 0 — map the first-paper inheritance boundary.**
+  Completed August 1, 2026 under the archived follow-up plan. The original note
+  is preserved in [v2/inheritance_contracts_archive.md](v2/inheritance_contracts_archive.md).
+  Its content remains historical evidence; its inheritance choices are not
+  requirements of the new phase.
+
+- [x] **R0 — authorize and install the calculus-first roadmap.**
+  September 19, 2026. Replaced the prospective queue, added evidence-driven
+  recurrence and measured-effort rules, and archived the prior control files
+  without changing the completed research. See
+  [decision record](v2/decisions/2026-09-19_calculus_first.md).
+  This is roadmap administration, not completion of F01 or satisfaction of a
+  foundational research minimum.
+
+### Cycle I — requirements, candidates, and separating evidence
+
+- [ ] **F01 — requirements and separating examples.**
+
+  Principal artifact: `v2/foundations/01_requirements_and_separating_examples.md`.
+  Derive at least six small examples spanning cheap versus accurate model use,
+  task changes, joint/sequential composition, dependence hidden by scalar
+  summaries, conflicting or incomplete evaluation, and alternative toy axiom
+  systems. Include at least one unbounded-value example. Distinguish desired
+  expressive/inferential capability from a preferred representation. State
+  what cannot be concluded in each example and calculate the starting
+  two-scenario witness explicitly.
+
+  Bootstrap concise `v2/project_spec.md`, `v2/claim_ledger.md`, `v2/notation.md`,
+  and `v2/time_ledger.csv`; keep research claims unproved unless demonstrated.
+  These supporting records do not replace the principal derivation artifact.
+
+  **Done when:** examples have explicit inputs, operational questions, expected
+  distinctions and assumptions; fixed commitments and optional choices are
+  separated; timing and claim tracking work; D60 is recorded.
+
+- [ ] **F02 — derive competing semantic candidates.**
+
+  Principal artifact: `v2/foundations/02_candidate_semantics.md`.
+  Compare at least three substantially different candidates, including a
+  scalar/summary baseline and richer context-indexed or ordered alternatives.
+  Give each concrete carriers, operations, units/context treatment, and at
+  least two worked examples. Analyze what each preserves and discards and how
+  bounded/unbounded variants differ. Do not choose a winner on familiarity or
+  encode the whole original object without explaining useful structure.
+
+  **Done when:** a common example table separates at least two candidates;
+  simplifying assumptions and unproved claims are explicit; D60 is recorded.
+  Protect exploratory time for a candidate that is not the easiest extension
+  of the phase-one design.
+
+- [ ] **F03 — external foundations audit.**
+
+  Principal artifact: `v2/literature/01_foundations.md`, with
+  `v2/references.bib` as a supporting bibliography.
+  Verify roughly 5-8 load-bearing primary sources relevant to the actual
+  candidates: quantitative/equational or ordered calculi, decision/value
+  semantics, and uncertainty or compositional reasoning as needed. Derive the
+  mappings to this project's definitions; do not perform an indiscriminate
+  survey. Check which proposed laws/results are known and their hypotheses.
+
+  **Done when:** every imported result has an exact usable statement and
+  locator, candidates have a literature comparison, and L60 is recorded.
+  Unverified sources remain leads; novelty is not inferred from a small search.
+
+- [ ] **F04 — hostile examples and candidate discrimination.**
+
+  Principal artifact: `v2/derivations/01_candidate_countermodels.md`.
+  Try to break the candidates using dependence, composition, rescaling,
+  unit/context changes, evidence updates, and information compression. Prove
+  the hand-checkable cases. Use finite code probes when high-value, preserving
+  the distinction between D and E. Add durable regression fixtures and a
+  comparison matrix that records failures as well as positive capabilities.
+
+  **Done when:** at least two tempting but invalid inferences have explicit
+  witnesses or scoped explanations; viable candidates have discriminating
+  evidence, not just scores; D60 is recorded.
+
+- [ ] **Gate A — foundation-selection readiness.**
+
+  Record `v2/checkpoints/A_1.md` (increase the attempt suffix on retries).
+  Require explicit operational questions, at least six worked separating
+  examples, two genuinely distinct viable candidate formulations or a proved
+  reason to eliminate one, and checked literature relevant to the shortlist.
+  Audit clocks and the allocation to both research lanes. Identify which
+  assumptions would most threaten the preferred candidate.
+
+  **PASS:** a justified shortlist and one bounded next development question;
+  no need to pretend the final calculus is fixed. Select F05.
+  **BLOCKED:** return to F01-F04 through a named repair, not to more polished
+  prose or an unsupported carrier choice.
+
+### Cycle II — operational semantics, rules, and metatheory
+
+- [ ] **F05 — choose a provisional core and give operational semantics.**
+
+  Principal artifact: `v2/foundations/03_provisional_core.md`.
+  Choose a candidate from Gate A, retain an explicit alternative, and define
+  syntax, types/contexts, semantic objects, evaluations, and the consequence
+  relation. Explain what an inference licenses the consumer to conclude and
+  what constitutes a countermodel. Give a nonempty model/interpretation and
+  show the assumptions are jointly satisfiable in the chosen fragment.
+
+  **Done when:** notation and project spec match; at least three examples have
+  complete interpretations; the choice and rejection conditions are explicit;
+  D60 is recorded. Existing phase-one objects are imported only by argument.
+
+- [ ] **F06 — develop the first nontrivial inference rules.**
+
+  Principal artifact: `v2/derivations/02_inference_rules.md`.
+  Derive a small rule set from the declared semantics. Investigate context
+  change, dominance/substitution, composition, resource or error accounting,
+  and justified weakening as applicable. Do not add a rule merely to resemble
+  classical syntax. Show at least three multistep worked derivations, including
+  a composition whose conclusion was not supplied as a premise or directly
+  looked up as a final score.
+
+  **Done when:** rules have exact premises, conclusions, and side conditions;
+  operational meaning is visible; invalid generalizations have witnesses;
+  D90 is recorded.
+
+- [ ] **F07 — prove soundness for an explicit fragment.**
+
+  Principal artifact: `v2/derivations/03_soundness.md`.
+  State the fragment and semantic preservation property precisely. Prove each
+  rule sound and then the derivation-level theorem, including assumptions
+  about contexts, composition, and numeric domains. Work through at least one
+  nontrivial example independently of the syntactic proof. Do not define
+  semantic validity as derivability and call the resulting identity soundness.
+
+  **Done when:** there is a complete checkable proof, its assumptions have a
+  model, known counterexamples are excluded for stated reasons, and D90 is
+  recorded. A partial proof remains partial and triggers the repair procedure.
+
+- [ ] **F08 — pursue a harder characterization result.**
+
+  Principal artifact: `v2/derivations/04_characterization.md`.
+  Protect exploratory time for a completeness, representation, or information-
+  preservation result for the chosen fragment. Start with an exact conjecture
+  and an explicit failure test. A genuine obstruction may motivate a restricted
+  completeness/representation theorem or a characterization of missing
+  structure. A tautological quotient or lossless serialization by itself does
+  not establish a useful calculus.
+
+  **Done when:** a nontrivial theorem is proved, or an obstruction plus a
+  constructive restricted result is established and the specification is
+  narrowed accordingly; D90 is recorded. Budget expiry alone does not complete
+  this task. Preserve rigorous partial gains while scheduling the next attempt.
+
+- [ ] **F09 — Boolean, phase-one, and scaling comparisons.**
+
+  Principal artifact: `v2/derivations/05_fragments_and_comparisons.md`.
+  Establish precisely which Boolean fragment, if any, is recovered; distinguish
+  interpretation from a superficial numerical resemblance. Relate the old
+  license calculus to the candidate by embedding, abstraction, or explicit
+  obstruction. Analyze affine/monotone transformations and bounded/unbounded
+  domains for the operations actually adopted. Do not insist on a full
+  phase-one embedding when it would distort the candidate.
+
+  **Done when:** at least one exact fragment relationship and one failed
+  overgeneralization are proved; remaining incompatibilities are explicit;
+  D60 is recorded.
+
+- [ ] **F10 — external theorem and contribution audit.**
+
+  Principal artifact: `v2/literature/02_core_audit.md`.
+  Recheck the now-specific theorem claims against primary sources, including
+  their assumption strength. Identify what is imported, adapted, independently
+  derived, or plausibly new. Look for a simpler known formulation and record
+  whether it replaces the candidate. Focus on roughly 4-6 load-bearing checks,
+  rather than treating source count as success.
+
+  **Done when:** the claims and contribution boundary reflect the checked
+  literature; any misapplication has a repair; L45 is recorded.
+
+- [ ] **Gate B — mathematical core readiness.**
+
+  Record `v2/checkpoints/B_1.md`, with versioned retries.
+  Require nonempty operational semantics; three meaningful multistep
+  derivations including composition; a soundness proof; the nontrivial result
+  or constructive restricted alternative from F08; exact fragment comparisons;
+  and an honest literature-based contribution statement. Attempt a fresh
+  reconstruction of the load-bearing proof steps. Label self-review honestly
+  when another reviewer/agent is unavailable.
+
+  **PASS:** every downstream premise has checked support and no blocking gap;
+  select F11. **BLOCKED:** repair F02/F05-F10 as indicated by evidence, and
+  invalidate dependent claims. A stack of passing numerical examples cannot
+  substitute for the soundness obligation.
+
+### Cycle III — executable reasoning and adversarial evaluation
+
+- [ ] **F11 — implement a minimal reasoner and semantic reference.**
+
+  Principal artifact: `v2/verification/` with a documented entry point.
+  Implement the declared fragment, inference steps, proof traces, and a small
+  semantic evaluator/reference check. Keep the rule engine and reference
+  evaluation sufficiently distinct to catch discrepancies. Avoid unnecessary
+  neural architectures, infrastructure, or global optimization systems.
+
+  **Done when:** `python -m v2.verification` exists and runs deterministic
+  fixtures; both implementations match the notation; E60 is recorded. Update
+  the validation section of `v2/README.md`.
+
+- [ ] **F12 — differential tests and counterexample regression.**
+
+  Principal artifact: `v2/verification/` test suite and test-design note.
+  Translate the earlier positive and negative witnesses into tests. Generate
+  bounded cases for semantic-versus-syntactic comparison; declare exhaustivity
+  bounds and random seeds. Check invalid compositions, units/context changes,
+  boundaries, and the exact transformation laws proved in F09. Do not share a
+  bug-prone output decoder between an implementation and its supposed oracle.
+
+  **Done when:** known bad rules fail the suite, good fixtures pass, uncovered
+  assumptions are logged, and E45 is recorded. General theorems remain proof-
+  supported rather than inferred from test counts.
+
+- [ ] **F13 — work two motivating case studies end to end.**
+
+  Principal artifact: `v2/derivations/06_case_studies.md`.
+  Use one small scientific approximation/cost example and one toy axiomatic-
+  system example. For each, state the operational task, assumptions, value
+  objects, premises, intermediate inferences, comparison baseline, and result.
+  Compute a composite conclusion not handed to the reasoner as an input score.
+  A more detailed numerical reference is still a declared model, not final
+  truth. In the axiomatic example, distinguish theoremhood inside a system
+  from the pragmatic decision to use that system.
+
+  **Done when:** the examples explain why the calculus's structure is needed,
+  show its limits, and are executable where appropriate; D60 is recorded.
+
+- [ ] **F14 — freeze the empirical challenge and baselines.**
+
+  Principal artifact: `v2/experiments/protocol.md` plus frozen configuration.
+  Separate development fixtures from a prospective evaluation population.
+  Freeze task generator, constraints, baseline(s), held-out seeds/cases,
+  inference-correctness checks, useful-derivation criterion, resource measures,
+  and interpretation of failures before final execution. Prefer a transparent
+  scalar-summary baseline and a direct semantic reference over an elaborate
+  weak competitor. Exact numeric performance thresholds must be justified
+  prospectively, not selected after results.
+
+  **Done when:** F15 can execute without inventing its success criteria; any
+  already-seen cases are labeled development rather than held out.
+
+- [ ] **F15 — run and interpret the frozen challenge.**
+
+  Principal artifact: `v2/experiments/results.md`, with code/configuration and
+  machine-readable outputs. Run F14 unchanged and report correct derivations,
+  failures, retained information, and measured resources. Report negative and
+  null comparisons, not only attractive examples. Distinguish an invalid rule,
+  an implementation bug, and lack of performance advantage.
+
+  **Done when:** results are reproducible and claim dispositions are recorded;
+  E60 is recorded. A failed challenge can complete this reporting task but may
+  block Gate C and require a new, explicitly versioned repair/evaluation cycle.
+  Do not repeatedly tune against an allegedly untouched test set.
+
+- [ ] **F16 — fresh adversarial reconstruction.**
+
+  Principal artifact: `v2/derivations/07_adversarial_review.md`.
+  Reconstruct the load-bearing definitions and proof steps, preferably with a
+  separate reviewer/agent, otherwise a labeled fresh self-review. Search for
+  circular definitions, vacuity, hidden truth/utility assumptions, lost joint
+  information, bad composition, and disagreement between proof and code.
+  Protect the review block even when preliminary checks look favorable.
+
+  **Done when:** objections have exact dispositions or named repairs;
+  independent-review claims accurately describe the process; a fresh D60 is
+  recorded, not borrowed from the original proof task.
+
+- [ ] **Gate C — evidence of a sufficiently solid and useful calculus.**
+
+  Record `v2/checkpoints/C_1.md`, with versioned retries.
+  Require a non-stale Gate B; no unresolved flaw in the sound core; successful
+  differential/regression checks; worked scientific and axiomatic examples;
+  transparent frozen results; and resolved dispositions from F16. Require
+  evidence of genuine compositional inference, not only score thresholding.
+  Apply F14's prospective useful-derivation criterion. A speed advantage is
+  required only if the specification actually promised one; a null benchmark
+  must narrow that claim rather than be concealed.
+
+  **PASS:** sufficient scoped evidence to assemble the report; select F17.
+  **BLOCKED:** classify the failure and return to the relevant derivation,
+  implementation, or evaluation task. If the core changes, reopen Gate B;
+  if the final challenge changes, version and freeze a new protocol before
+  execution. A polished report cannot repair an unmet research criterion.
+
+### Cycle IV — consolidation, not automatic publication
+
+- [ ] **F17 — assemble the research report.**
+
+  Principal artifact: `paper_v2.md`.
+  Present the question, candidate-selection evidence, chosen semantics, rules,
+  worked derivations, theorem statements/proofs, relation to Boolean and
+  phase-one reasoning, literature, implementation, empirical findings, and
+  remaining questions. Link detailed derivation notes rather than replacing
+  them with polished summaries. Explain which claims are mathematical,
+  empirical, design choices, or philosophical motivation.
+
+  **Done when:** all claims trace to current evidence, no stronger result is
+  introduced during writing, and unresolved directions become later research
+  rather than falsely completed contributions.
+
+- [ ] **Gate D — final audit and phase disposition.**
+
+  Record `v2/checkpoints/D_1.md`, with versioned retries.
+  Check the report against non-stale Gates A-C, the claim ledger, exact
+  implementation/configuration versions, citations, clock/minimum records,
+  and actual validation outputs. Audit whether the difficult lane received
+  real time and whether easier gains were retained. Confirm that all
+  required artifacts exist and active blocking repairs are closed.
+
+  **PASS:** mark this scoped phase complete and set the pointer to external
+  review/publication or the next author-selected phase. **BLOCKED:** create
+  a targeted repair and do not call the phase complete. No fixed number of
+  later phases is implied by this disposition.
+
+## Definition of done
+
+This phase succeeds when it has a justified, explicit value-based semantic
+core; operationally meaningful inference rules; nonvacuous worked derivations;
+a checkable soundness theorem and a further nontrivial characterization or
+constructive restricted result; honest fragment/literature comparisons; a
+small executable reasoner; and evidence meeting the frozen usefulness question.
+All protected task minima must be actually recorded, not inferred from output
+length. Gates A-D must be current and passed, with no hidden blocking repair.
+
+A useful partial theory, a refuted candidate, or a suspension can be a valuable
+research outcome without satisfying this definition. Record that status
+accurately and retain the evidence for the next cycle or phase.
 
 ## Deferred follow-up branches
 
-These are intentionally outside the initial 20-hour roadmap. A checkpoint may promote one only by removing equivalent work elsewhere.
-
-1. A real numerical-physics hierarchy with cheap approximations, validated error estimators, expensive reference solvers, routing, and fallback cost.
-2. A local-to-global or sheaf-like semantics for domain restriction, overlap, transport, and gluing of licensed models.
-3. First-class evidence bridges whose own licenses may expire or be revised.
-4. Monotone fixed-point semantics for carefully controlled cyclic or recursive judgment.
-5. Policy/value interpretability experiments measuring behavioral, representational, causal, and human-use evidence separately.
-6. Sequential task recovery when the queried agent changes the future state distribution.
+Contract semantics and inverse task recovery, resource-sensitive model
+substitution, inquiry/self-revision, neural learning, mechanistic policy
+interpretability, and broad physical-theory hierarchies remain available
+future directions. Promote one only through an explicit roadmap decision,
+not by allowing it to consume the present phase unnoticed.
