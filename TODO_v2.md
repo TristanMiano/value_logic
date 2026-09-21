@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 19, 2026.
-Status: roadmap authorized; foundational research not yet started.
+Last updated: September 20, 2026.
+Status: F01 partial; worked examples and fixture tests recorded; D60 not yet met.
 
 ## Resume here
 
@@ -11,7 +11,7 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F01 — requirements and separating examples.**
+**Next task: F01 — continue requirements and separating examples; complete the remaining protected derivation work.**
 
 **Active repair queue: empty.**
 
@@ -224,6 +224,18 @@ to publication with an unsound core simply because the planned queue ended.
   **Done when:** examples have explicit inputs, operational questions, expected
   distinctions and assumptions; fixed commitments and optional choices are
   separated; timing and claim tracking work; D60 is recorded.
+
+  **Partial session — September 20, 2026.** Created the
+  [principal derivation note](v2/foundations/01_requirements_and_separating_examples.md)
+  with eight worked examples, query-specific positive controls, and additional
+  dependence countermodels. Bootstrapped the project specification, claim and
+  notation records, and [time ledger](v2/time_ledger.csv); 26 exact-arithmetic
+  fixture tests passed locally. Recorded 15.97 engaged D minutes, leaving 44.03
+  minutes of the D60 floor. This is not task completion, independent review, a
+  selected calculus, or a passed gate. See the
+  [session record](v2/work_logs/F01_2026-09-20_S1.md) for exact clocks,
+  evidence, validation limits, and the next review obligations. F01 remains
+  selected and unchecked; F02 has not begun.
 
 - [ ] **F02 — derive competing semantic candidates.**
 

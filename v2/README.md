@@ -6,9 +6,12 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 
 ## Current status
 
-The calculus-first phase is authorized; substantive research has not yet begun.
-The next task is **F01 — requirements and separating examples**. Follow the
-roadmap's current pointer if a later repair queue changes that selection.
+**F01 is partial.** Eight worked examples and 26 passing exact-arithmetic
+fixture tests are recorded, with 15.97 measured engaged derivation minutes.
+The 60-minute floor is not yet met; no calculus has been selected and no gate
+has passed. Continue **F01 — requirements and separating examples**, using the
+[session record](work_logs/F01_2026-09-20_S1.md) and the roadmap's current pointer.
+F02 has not begun.
 
 The intended result is a small, explicit calculus with operationally meaningful
 value objects, justified inference rules, worked derivations, and an executable
@@ -38,17 +41,19 @@ the original paper, experiment outcomes, and completed task history.
 
 ## Planned artifacts
 
-F01 establishes `project_spec.md`, `claim_ledger.md`, `notation.md`, and
-`foundations/01_requirements_and_separating_examples.md`. These paths are
-prospective outputs, not files assumed already present.
+The partial F01 session establishes [project_spec.md](project_spec.md),
+[claim_ledger.md](claim_ledger.md), [notation.md](notation.md), and the
+[principal derivation note](foundations/01_requirements_and_separating_examples.md).
+[Exact fixtures](checks/f01_examples.py) and [results](checks/F01_results.json)
+check the example calculations, not a proposed phase-two reasoner.
 
 Further work will populate `foundations/`, `derivations/`, `literature/`,
 `verification/`, `experiments/`, and `checkpoints/`. Every research task keeps
 derivation notes, source checks, and executable evidence distinguishable.
 Timing records use `work_logs/<task>_<session>.md`, based on
 [templates/work_item.md](templates/work_item.md); aggregate actuals go in
-`time_ledger.csv`, created by F01. The final report is `../paper_v2.md` only
-after the readiness gate passes.
+[time_ledger.csv](time_ledger.csv), initialized by the partial F01 session.
+The final report is `../paper_v2.md` only after the readiness gate passes.
 
 ## Validation command
 
@@ -59,7 +64,20 @@ python -m verification
 ```
 
 This checks inherited semantics and repository integrity; it does **not**
-validate the proposed phase-two calculus. From F11 onward also run:
+validate the proposed phase-two calculus. The F01 fixtures can also be run alone:
+
+```text
+python -m v2.checks.f01_examples --json v2/checks/F01_results.json
+python -m unittest discover -s verification -p 'test_v2_f01_examples.py'
+```
+
+Both targeted commands passed 26 tests in session S1. The full command was
+not run in that session because a full checkout could not be obtained in the
+execution container; GitHub reads were available separately. No new CI result
+is claimed. The bridge file `verification/test_v2_f01_examples.py` makes the
+fixtures discoverable by the existing suite in a full checkout.
+
+From F11 onward also run:
 
 ```text
 python -m v2.verification
