@@ -1,6 +1,6 @@
 # Phase Two Claim Ledger
 
-Version: F02 completion, September 22, 2026.
+Version: F02 completion plus F03 partial audit, September 22, 2026.
 Task status: **F01 complete (76 checks); F02 complete (124 dedicated checks and 61.118295 credited derivation minutes)**.
 No calculus has been selected and no readiness gate has passed.
 This is not a statement that the demonstrated arithmetic is unproved.
@@ -165,3 +165,30 @@ literature before Gate A. F04 must test the chosen candidates adversarially.
 No downstream task has been started by the package, and there is no gate pass
 to invalidate. A later flaw reopens the relevant claim and its uses, not the
 historical record of what was attempted or tested.
+
+## F03 partial literature audit
+
+Status: **partial**; no new core, novelty disposition, independent review, or
+readiness gate. [Source cards](literature/01_foundations.md),
+[versioned locators](literature/F03_sources.json),
+[bibliography](references.bib), and [mapping proofs](literature/01a_import_boundaries.md)
+separate imported definitions from finite specializations. Source checks cover
+only the specified passages, not every proof in every work. The
+[31-test suite](checks/f03_imports.py) checks witnesses, not the source theorems.
+
+| ID | Exact scope | Evidence and limitation | Downstream impact |
+|---|---|---|---|
+| F03-C01 | S01's abstraction results require complete ordered domains and stated map inequalities; M01 gives a powerset/interval instance and distinct query polarities. | Source locators checked; direct inclusion proofs and square/membership witnesses. | Overapproximate possible outcomes versus underapproximate feasible budgets according to the query, not a universal direction. |
+| F03-C02 | S02's common-error max-metric rule excludes ordinary addition; M02's capped-sum lifting admits it on an unbounded real carrier. | Source definitions plus elementary metric/lifting proof; finite grid checks. No full completeness import. | A signature mismatch is not a no-go result for quantitative algebra or unbounded values. |
+| F03-C03 | A finite affine transformer r+Ph preserves every common shift iff P has all row sums one. | M03 proof, finite duality and composition checks; S03 permits loss of mass. | Preserve F02's stochastic premise; a cemetery-state rewrite changes the continuation interface unless specified. |
+| F03-C04 | S04 supplies the finite piecewise-affine representation step used in F02-C25; S05's general minimax can have infinitely many outer choices and separates positive from additive homogeneity. | Exact source hypotheses checked; M04 slope and majorant derivations. | No expression-size, restricted-library, policy-witness or finite-algorithm claim is inferred. |
+| F03-C05 | G's finite union/Minkowski algebra does not automatically satisfy S06's arbitrary-join, unit/top, or multiplication-idempotence conditions. | M05 signed-unit and finite two-dimensional no-supremum proofs; explicit full-upper-set comparison; finite fixtures. | F02-C11's finitary result survives. The cited c-semiring/local-consistency results require separate hypotheses. |
+| F03-C06 | Weighted optima of a finite menu characterize its convex upper image, not necessarily its unrandomized hard-budget feasibility. | S07 scalarization/separation passages and M06 direct specialization; equal-score/budget witness. | Preserve F02-C12/C17/C18's convexification and lottery interpretation. |
+| F03-C07 | A shared latent choice cannot generally be replaced by independently pasted stagewise choices while preserving an exact robust value. | S08 rectangularity conditions; M07 value-one versus value-zero witness and relaxation argument. | Keep uncertainty and information schedules explicit; a conservative lower bound is not an equality claim. |
+| F03-C08 | S10 permits arbitrary algebra operations but its quantitative substitution must preserve variable relations; zero fuzzy distance is not automatically equality. | Definitions 3.1–3.6/4.1 and theorem statements checked; M08 countermodels. | Do not delete soundness side conditions to admit amplification; full theory translation remains open. |
+| F03-C09 | S11's relational variety/exactness results impose specific lifting/quotient conditions and are not an implemented complete deduction system. | Sections 3–6 inspected; source explicitly places the concrete deduction-system direction in further work. | Ordered or directed candidates have relevant antecedents, not automatic general metatheory. |
+| F03-T01 | F03 satisfies all completion conditions including L60. | **Not established.** Partial session clock record gives credited L and remaining floor. | Continue F03; F04 and Gate A remain unattempted. |
+
+A source-condition mismatch is recorded as a restriction on a prospective import,
+not as a retroactive refutation of an already correctly scoped F02 theorem.
+New contradictions in a used claim would require the roadmap's repair procedure.

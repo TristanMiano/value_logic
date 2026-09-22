@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: September 22, 2026.
-Status: F01 and F02 complete at their task scopes; no permanent calculus selected or readiness gate passed.
+Status: F01 and F02 complete; F03 has a recorded partial audit; no permanent calculus selected or readiness gate passed.
 
 ## Resume here
 
@@ -307,6 +307,18 @@ to publication with an unsound core simply because the planned queue ended.
   **Done when:** every imported result has an exact usable statement and
   locator, candidates have a literature comparison, and L60 is recorded.
   Unverified sources remain leads; novelty is not inferred from a small search.
+
+  **Partial session — September 22, 2026.** Created the
+  [foundations audit](v2/literature/01_foundations.md), a versioned
+  [source manifest](v2/literature/F03_sources.json), the
+  [bibliography](v2/references.bib), and
+  [worked import-boundary mappings](v2/literature/01a_import_boundaries.md).
+  Eight core primary sources and three targeted supplementary checks identify
+  precise antecedents and hypothesis mismatches; 31 finite checks pass locally.
+  Credited L time is 6.030494 minutes, leaving 53.969506 minutes of L60.
+  F03 remains unchecked and selected. See the
+  [session record](v2/work_logs/F03_2026-09-22_S1.md) for scope, actual clocks,
+  source-access limits, and remaining proof-system review. No F04 or gate started.
 
 - [ ] **F04 — hostile examples and candidate discrimination.**
 

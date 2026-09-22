@@ -1,0 +1,480 @@
+{
+  "task": "F03",
+  "attempt": "F03-A1",
+  "base_commit": "65e91d9b46bf61566160de9dbdcb4a1a98b33f02",
+  "access_date": "2026-09-22",
+  "core_count": 8,
+  "supplementary_count": 3,
+  "sources": [
+    {
+      "id": "S01",
+      "key": "CousotCousot1977",
+      "role": "core",
+      "title": "Abstract Interpretation: A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints",
+      "authors": [
+        "Patrick Cousot",
+        "Radhia Cousot"
+      ],
+      "publication_year": 1977,
+      "inspected_version": "Author-hosted scan of POPL 1977 article",
+      "primary_urls": [
+        "https://www.di.ens.fr/~cousot/COUSOTpapers/POPL77.shtml",
+        "https://www.di.ens.fr/~cousot/COUSOTpapers/publications.www/CousotCousot-POPL-77-ACM-p238--252-1977.pdf"
+      ],
+      "locators": [
+        "Section 6, printed p.242",
+        "Appendix H1-H3 and L2, p.251",
+        "Appendix T1-T2, p.252"
+      ],
+      "inspection": "Read screenshots of PDF indices 0, 5, 14, 15; no OCR; parsed text of this scan was unavailable.",
+      "hypotheses": [
+        "complete lattices",
+        "monotone concrete and abstract maps",
+        "order-preserving abstraction/concretization",
+        "alpha gamma = identity; identity <= gamma alpha",
+        "local simulation inequality"
+      ],
+      "mapping": "M01",
+      "claim_links": [
+        "F01-C24",
+        "F02-C09"
+      ],
+      "disposition": "Comparison and a worked interval instance; no general fixed-point theorem imported for raw F02 carriers.",
+      "metadata_notes": "Landing-page opening metadata says Sixth; PDF cover and author BibTeX say Fourth. Used Fourth.",
+      "accessed_on": "2026-09-22",
+      "scope_status": "checked only at listed locators",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S02",
+      "key": "MardarePanangadenPlotkin2016",
+      "role": "core",
+      "title": "Quantitative Algebraic Reasoning",
+      "authors": [
+        "Radu Mardare",
+        "Prakash Panangaden",
+        "Gordon Plotkin"
+      ],
+      "publication_year": 2016,
+      "inspected_version": "Institutional accepted manuscript for LICS 2016",
+      "primary_urls": [
+        "https://strathprints.strath.ac.uk/70265/",
+        "https://strathprints.strath.ac.uk/70265/1/Mardare_etal_LICS2016_Quantitative_algebraic_reasoning.pdf"
+      ],
+      "locators": [
+        "Definitions 2.1, 2.2, 3.1 on PDF index 1",
+        "Definition 4.1 and Section 5 theorem statements on PDF index 2"
+      ],
+      "inspection": "Parsed source text; screenshot of PDF index 1 verified rules and carrier assumptions. Index 2 screenshot requests failed; no visual verification of its proof typography is claimed.",
+      "hypotheses": [
+        "finite finitary signature in inspected setup",
+        "extended symmetric metric",
+        "nonexpansive basic operations for maximum component distance",
+        "basic variable-premise theory setup",
+        "infinitary Arch rule present"
+      ],
+      "mapping": "M02",
+      "claim_links": [
+        "F02-C04",
+        "F02-C09",
+        "F02-C28"
+      ],
+      "disposition": "Definition-level comparison; complete proof-system import not asserted.",
+      "accessed_on": "2026-09-22",
+      "scope_status": "checked only at listed locators",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S03",
+      "key": "Kozen1981",
+      "role": "core",
+      "title": "Semantics of Probabilistic Programs",
+      "authors": [
+        "Dexter Kozen"
+      ],
+      "publication_year": 1981,
+      "inspected_version": "Author-hosted JCSS journal PDF",
+      "primary_urls": [
+        "https://www.cs.cornell.edu/kozen/Papers/ProbSem.pdf"
+      ],
+      "locators": [
+        "Section 3.3, pp.337-341",
+        "Clauses 3.3.1-3.3.5, pp.339-340",
+        "Theorems 3.3.8-3.3.9, p.341"
+      ],
+      "inspection": "Parsed original PDF text plus successful cover screenshot. Some later-page screenshot requests failed; no claims about unseen figures.",
+      "hypotheses": [
+        "measurable program operations",
+        "positive linear contraction on measure space",
+        "possible mass loss from nontermination"
+      ],
+      "mapping": "M03",
+      "claim_links": [
+        "F02-C04",
+        "F02-C06"
+      ],
+      "disposition": "Finite matrix duality derived explicitly. Rewards, choice and totality are separately specified.",
+      "accessed_on": "2026-09-22",
+      "scope_status": "checked only at listed locators",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S04",
+      "key": "Ovchinnikov2002",
+      "role": "core",
+      "title": "Max-Min Representation of Piecewise Linear Functions",
+      "authors": [
+        "Sergei Ovchinnikov"
+      ],
+      "publication_year": 2002,
+      "inspected_version": "arXiv math/0009026v1, submitted 2000-09-03",
+      "primary_urls": [
+        "https://arxiv.org/abs/math/0009026",
+        "https://arxiv.org/html/math/0009026"
+      ],
+      "metadata_urls": [
+        "https://eudml.org/doc/225460"
+      ],
+      "locators": [
+        "Definitions 2.1-2.2",
+        "Lemma 4.1",
+        "Theorem 4.1 and its proof"
+      ],
+      "inspection": "Full-text HTML for the pinned preprint theorem; archived journal record for 2002 metadata.",
+      "hypotheses": [
+        "finitely many affine pieces",
+        "continuous piecewise-affine function under source definition",
+        "stated convex domain"
+      ],
+      "mapping": "M04",
+      "claim_links": [
+        "F02-C25"
+      ],
+      "disposition": "Exact finite max-min representation antecedent; stochastic-slope restrictions are separately derived.",
+      "metadata_notes": "HTML rendering date is not publication date; theorem numbering is preprint-specific.",
+      "accessed_on": "2026-09-22",
+      "scope_status": "checked only at listed locators",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S05",
+      "key": "AkianGaubertHochart2018",
+      "role": "core",
+      "title": "Minimax Representation of Nonexpansive Functions and Application to Zero-Sum Recursive Games",
+      "authors": [
+        "Marianne Akian",
+        "Stephane Gaubert",
+        "Antoine Hochart"
+      ],
+      "publication_year": 2018,
+      "inspected_version": "arXiv 1605.04518v2, 2017-05-24",
+      "primary_urls": [
+        "https://arxiv.org/abs/1605.04518",
+        "https://arxiv.org/html/1605.04518v2",
+        "https://www.heldermann.de/JCA/JCA25/JCA251/jca25014.htm"
+      ],
+      "locators": [
+        "Section 2 order/nonexpansiveness/homogeneity definitions",
+        "Theorem 3.4",
+        "Corollary 3.8",
+        "Theorem 3.10 and Corollary 3.11"
+      ],
+      "inspection": "Full-text HTML, including finite-dimensional specialization and separate positive-homogeneity hypotheses; publisher page for journal metadata.",
+      "hypotheses": [
+        "monotone and additively homogeneous for Corollary 3.8",
+        "order-unit/topological hypotheses in general setting",
+        "outer representing family may be infinite",
+        "positive homogeneity is additional in Section 3.2"
+      ],
+      "mapping": "M04",
+      "claim_links": [
+        "F02-C04",
+        "F02-C25",
+        "F02-C26"
+      ],
+      "disposition": "General structural antecedent, not a finite-syntax or efficient-realization theorem.",
+      "accessed_on": "2026-09-22",
+      "scope_status": "checked only at listed locators",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S06",
+      "key": "BistarelliMontanariRossi1997",
+      "role": "core",
+      "title": "Semiring-Based Constraint Satisfaction and Optimization",
+      "authors": [
+        "Stefano Bistarelli",
+        "Ugo Montanari",
+        "Francesca Rossi"
+      ],
+      "publication_year": 1997,
+      "inspected_version": "Author-uploaded full journal text; original JACM 44(2), 201-236",
+      "primary_urls": [
+        "https://bista.sites.dmi.unipg.it/papers/index-old.html",
+        "https://www.researchgate.net/publication/2297172_Semiring-based_constraint_satisfaction_and_optimization"
+      ],
+      "locators": [
+        "Definitions 2.1-2.2, pp.203-204",
+        "Theorem 2.9",
+        "Theorem 4.16, p.218",
+        "Section 6 examples distinguishing idempotent and nonidempotent multiplication"
+      ],
+      "inspection": "Read author-uploaded article body, not ResearchGate recommendations or search summaries. Direct compressed author PDF and ResearchGate PDF were not retrievable.",
+      "hypotheses": [
+        "arbitrary additive joins, including infinite families",
+        "multiplicative identity is additive top",
+        "multiplication commutative and distributes over joins",
+        "idempotent multiplication additionally required by Theorem 4.16"
+      ],
+      "mapping": "M05",
+      "claim_links": [
+        "F02-C11",
+        "F02-C13",
+        "F02-C22"
+      ],
+      "disposition": "Finitary algebra comparison; full c-semiring and algorithmic hypotheses do not hold automatically.",
+      "metadata_notes": "Used original author/journal year 1997, not aggregator display date.",
+      "accessed_on": "2026-09-22",
+      "scope_status": "checked only at listed locators",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S07",
+      "key": "BoydVandenberghe2004",
+      "role": "core",
+      "title": "Convex Optimization",
+      "authors": [
+        "Stephen Boyd",
+        "Lieven Vandenberghe"
+      ],
+      "publication_year": 2004,
+      "inspected_version": "Coauthor-hosted Cambridge book PDF",
+      "primary_urls": [
+        "https://www.seas.ucla.edu/~vandenbe/cvxbook.html",
+        "https://www.seas.ucla.edu/~vandenbe/cvxbook/bv_cvxbook.pdf",
+        "https://web.stanford.edu/~boyd/cvxbook/cvxbook_errata.html"
+      ],
+      "locators": [
+        "Section 2.3.1",
+        "Section 2.5.1, Example 2.20, p.49",
+        "Section 4.7.4, pp.178-180",
+        "Figure 4.9 and equation 4.62"
+      ],
+      "inspection": "Read parsed text and screenshots at PDF indices 62, 191, 192, 193. Stanford PDF endpoints failed; coauthor UCLA copy succeeded.",
+      "hypotheses": [
+        "proper ordering cone; project specialization uses nonnegative orthant",
+        "positive dual weights for arbitrary minimizers to be Pareto optimal",
+        "convexity for converse",
+        "closedness for exact halfspace recovery"
+      ],
+      "mapping": "M06",
+      "claim_links": [
+        "F02-C12",
+        "F02-C17",
+        "F02-C18",
+        "F02-C30"
+      ],
+      "disposition": "Standard vector-optimization antecedent; no permission to randomize or attainment imported.",
+      "accessed_on": "2026-09-22",
+      "scope_status": "checked only at listed locators",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S08",
+      "key": "Iyengar2005",
+      "role": "core",
+      "title": "Robust Dynamic Programming",
+      "authors": [
+        "Garud Iyengar"
+      ],
+      "publication_year": 2005,
+      "inspected_version": "CORC TR-2002-07, revised 2004-05-04, author-uploaded full text",
+      "primary_urls": [
+        "https://pubsonline.informs.org/doi/abs/10.1287/moor.1040.0129",
+        "https://www.columbia.edu/~gi10/pubs/",
+        "https://www.researchgate.net/publication/220442530_Robust_Dynamic_Programming"
+      ],
+      "locators": [
+        "Report Section 2",
+        "Assumption 1 (Rectangularity)",
+        "Equations 9-11",
+        "Theorem 1 (Bellman equation) and proof"
+      ],
+      "inspection": "Read author-uploaded report body; publisher/author records confirm 2005 journal publication. Direct PDF download failed. Do not transfer report numbering to journal without checking.",
+      "hypotheses": [
+        "finite horizon for imported specialization",
+        "admissible conditional model family satisfies rectangularity",
+        "project specialization finite states, actions, and uncertainty sets",
+        "payoff and information semantics explicitly fixed"
+      ],
+      "mapping": "M07",
+      "claim_links": [
+        "F02-C07",
+        "F02-C09",
+        "F02-C23"
+      ],
+      "disposition": "Finite robust recursion only under pasting/rectangularity. Shared-parameter relaxation may remain a bound without being exact.",
+      "accessed_on": "2026-09-22",
+      "scope_status": "checked only at listed locators",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S09",
+      "key": "MioSarkisVignudelli2022preprint",
+      "role": "supplementary",
+      "title": "Beyond Nonexpansive Operations in Quantitative Algebraic Reasoning",
+      "authors": [
+        "Matteo Mio",
+        "Ralph Sarkis",
+        "Valeria Vignudelli"
+      ],
+      "publication_year": 2022,
+      "inspected_version": "arXiv 2201.09087v1, 2022-01-22",
+      "primary_urls": [
+        "https://arxiv.org/abs/2201.09087",
+        "https://arxiv.org/html/2201.09087v1",
+        "https://lics.siglog.org/archive/2022/MioSarkisVignudelli-BeyondNonexpansiveO.html"
+      ],
+      "locators": [
+        "Section 2.3, Definition 2.12",
+        "Definitions 3.1-3.2",
+        "Definition 3.11",
+        "Theorem 3.14 and proof"
+      ],
+      "inspection": "Full-text HTML checked for distance codomain, allowed axiom selections, lifting/isometric-embedding requirements and soundness rule.",
+      "hypotheses": [
+        "distances in [0,1] in inspected version",
+        "fixed chosen generalized-distance axioms",
+        "operation-specific functorial liftings preserving isometric embeddings",
+        "finite-distance-diagram provisos in L-NE rule"
+      ],
+      "mapping": "M02",
+      "claim_links": [
+        "F02-C04",
+        "F02-C28"
+      ],
+      "disposition": "Known extension; capped-sum example checked separately. No blanket directed/unbounded-distance completeness claim.",
+      "accessed_on": "2026-09-22",
+      "scope_status": "checked only at listed locators",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S10",
+      "role": "targeted supplement",
+      "title": "Universal Quantitative Algebra for Fuzzy Relations and Generalised Metric Spaces",
+      "authors": [
+        "Matteo Mio",
+        "Ralph Sarkis",
+        "Valeria Vignudelli"
+      ],
+      "publication_year": 2024,
+      "inspected_version": "LMCS 20(4:19), 19:1–19:56, published 2024-12-03; journal PDF",
+      "locators": [
+        "Definitions 3.1–3.6",
+        "Definition 4.1 substitution and infimum schemes",
+        "Theorems 4.4 and 5.13",
+        "Section 9.1"
+      ],
+      "inspection": "Journal parsed text plus title-page screenshot; attempted rule-page screenshot failed; theorem/definition text inspected, not every proof",
+      "hypotheses": [
+        "Fuzzy relation values in [0,1]",
+        "Nonexpansive variable interpretations",
+        "Substitution requires provable preservation of variable distances",
+        "Full infinitary deductive system for cited completeness"
+      ],
+      "disposition": "Generalized interface verified; full candidate completeness import remains unestablished",
+      "whole_work_verified": false,
+      "key": "MioSarkisVignudelli2024Universal",
+      "primary_urls": [
+        "https://lmcs.episciences.org/14876/pdf",
+        "https://lmcs.episciences.org/14876"
+      ],
+      "mapping": "M02, M08",
+      "claim_links": [
+        "F02-C04",
+        "F02-C28"
+      ],
+      "accessed_on": "2026-09-22",
+      "scope_status": "checked only at listed locators"
+    },
+    {
+      "id": "S11",
+      "role": "targeted supplement",
+      "title": "Algebraic Reasoning over Relational Structures",
+      "authors": [
+        "Jan Jurka",
+        "Stefan Milius",
+        "Henning Urbat"
+      ],
+      "publication_year": 2024,
+      "inspected_version": "arXiv:2401.08445v2, 2024-06-09",
+      "locators": [
+        "Section 3: relational structures, infinitary Horn clauses, lifted-signature assumption",
+        "Section 4.2: c-varieties and c-reflexive quotients",
+        "Section 5: Exactness theorem and its extra preservation hypothesis",
+        "Section 6: complete deduction system listed as further work"
+      ],
+      "inspection": "Primary HTML definitions, theorem statements and selected proof explanations; broken automatic theorem numbers avoided",
+      "hypotheses": [
+        "Declared infinitary Horn theory",
+        "Operation liftings preserve embeddings",
+        "c-reflexive rather than arbitrary quotients for the variety theorem",
+        "Extra relation-reflecting-surjection preservation for exactness"
+      ],
+      "disposition": "Structural comparison, not an imported concrete deduction system or finite-carrier closure theorem",
+      "whole_work_verified": false,
+      "key": "JurkaMiliusUrbat2024Relational",
+      "primary_urls": [
+        "https://arxiv.org/html/2401.08445v2",
+        "https://arxiv.org/abs/2401.08445v2"
+      ],
+      "mapping": "",
+      "claim_links": [
+        "F02-C11",
+        "F02-C28"
+      ],
+      "accessed_on": "2026-09-22",
+      "scope_status": "checked only at listed locators"
+    }
+  ],
+  "follow_up_leads": [
+    {
+      "title": "Universal Quantitative Algebra for Fuzzy Relations and Generalised Metric Spaces",
+      "authors": [
+        "Matteo Mio",
+        "Ralph Sarkis",
+        "Valeria Vignudelli"
+      ],
+      "url": "https://lmcs.episciences.org/14876",
+      "arxiv": "https://arxiv.org/abs/2304.14361",
+      "publication_year": 2024,
+      "status": "selected full-text sections now checked; see S10/S11; deeper proof import remains open",
+      "next_question": "Compare its sound-and-complete system with S02/S09 before choosing a proof-system import.",
+      "subsequent_disposition": "Promoted to targeted full-text section check S10 or S11 in this session; deeper import proof remains open.",
+      "discovery_status": "publisher abstract and metadata only; full theorem hypotheses not yet audited"
+    },
+    {
+      "title": "Algebraic Reasoning over Relational Structures",
+      "authors": [
+        "Jan Jurka",
+        "Stefan Milius",
+        "Henning Urbat"
+      ],
+      "url": "https://arxiv.org/abs/2401.08445",
+      "publication_year": 2024,
+      "status": "selected full-text sections now checked; see S10/S11; deeper proof import remains open",
+      "next_question": "Check whether the ordered/directed candidate fragment fits its clustered-equation hypotheses.",
+      "subsequent_disposition": "Promoted to targeted full-text section check S10 or S11 in this session; deeper import proof remains open.",
+      "discovery_status": "primary abstract only; not an imported theorem"
+    }
+  ],
+  "excluded_evidence": [
+    "search snippets are not theorem verification",
+    "ResearchGate recommendations are not the article being read",
+    "HTML rendering dates are not publication dates",
+    "download failure is not a negative scientific result",
+    "secondary generated summaries were not used for mathematical claims"
+  ],
+  "copyright_note": "No external paper, scan, figure, or font is redistributed in this research package.",
+  "audit_scope": "8 core sources, 3 targeted supplementary checks; not an exhaustive survey or whole-work verification"
+}

@@ -84,11 +84,14 @@ positive repairs and countermodels rather than choosing a winner. Dedicated
 F02 discovery passes 124 checks. The [completion record](work_logs/F02_2026-09-22_S2.md)
 and time ledger credit 61.118295 derivation minutes across S1 and S2.
 
-**Next task: F03 — external foundations audit**, not started. The two focused
-source checks in S2 are not F03's planned comparison of 5–8 load-bearing sources
-or its L60 block. All gates remain unattempted; the repair queue is empty.
+**Next task: continue F03 — external foundations audit.** Its first recorded
+session now supplies [eight core source checks and three targeted supplements](literature/01_foundations.md),
+[worked mappings](literature/01a_import_boundaries.md), and a bibliography.
+The L60 obligation is not yet satisfied. The earlier F02 source checks retain
+their historical scope and are not retroactively counted as F03 time.
+All gates remain unattempted; the repair queue is empty.
 
-This task does not implement the later reasoner, perform the F03 literature
+The completed F02 task did not implement the later reasoner, complete the F03 literature
 audit, claim novelty, select a permanent value carrier, or run a frozen empirical
 challenge. Contract inversion, a full scientific-model substitution theory,
 inquiry policies, and neural interpretability remain deferred branches.
@@ -123,3 +126,15 @@ its declared independent-choice semantics. Bounded coordinate encodings can be
 useful when operations and retained offsets match the query; naive absolute
 squashing and rounding is not equivalent. These results are candidate-level
 comparisons and inputs to F03/F04, not a replacement for their selection gate.
+
+## F03 partial-audit implications
+
+Existing quantitative, program-semantic, ordered and optimization theories supply
+substantial antecedents. Reuse remains conditional: total versus substochastic
+kernels, finite versus infinite max–min representations, complete versus finitary
+semirings, possible-outcome versus feasible-budget polarity, and exact substitution
+premises cannot be conflated. The 2024 generalized quantitative-algebra source
+shows that amplifying operations are not ruled out merely by the 2016 framework's
+max-metric rule, but it does not waive relation-preserving substitution or other
+proof-system hypotheses. These findings constrain future imports without changing
+the four candidates or selecting a permanent core.

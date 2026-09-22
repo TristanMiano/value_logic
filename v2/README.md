@@ -19,7 +19,12 @@ checks give **124 passing dedicated F02 tests**. Credited derivation time is
 **61.118295 minutes** across S1 and S2, satisfying D60. The
 [completion record](work_logs/F02_2026-09-22_S2.md) preserves actual clocks,
 source-check limits, research evidence and the cumulative package disposition.
-**Next: F03 — external foundations audit**, not started.
+**F03 is in progress.** Its [first audit](literature/01_foundations.md) covers
+8 core sources plus 3 targeted supplements and records
+[exact import boundaries](literature/01a_import_boundaries.md), not a selected
+calculus. The 31 [finite checks](checks/f03_imports.py) pass locally.
+The [session record](work_logs/F03_2026-09-22_S1.md) credits 6.030494 L minutes;
+L60 remains unmet. **Next: continue F03 — external foundations audit.**
 No calculus has been selected, and no readiness gate has passed.
 
 The intended result is a small, explicit calculus with operationally meaningful
@@ -155,3 +160,18 @@ Passing Gates A through D requires the evidence in the active roadmap and the
 research protocol. A counterexample or changed definition can invalidate a
 previous pass. Schedule targeted repair work, preserve the historical record,
 and rerun the affected gate before relying on its downstream conclusions.
+
+## F03 partial-audit validation
+
+```text
+python -m v2.checks.f03_imports --json v2/checks/F03_import_results.json
+python -m unittest discover -s verification -p 'test_v2_f03_imports.py'
+```
+
+Both commands passed 31 checks in the partial-audit workspace. These check
+specific finite witnesses and source-record integrity, not source authenticity,
+unrestricted theorems, a final reasoner, or F03's time floor. The new bridge file
+includes them in the existing full command when a complete checkout is used.
+Full local repository verification was unavailable in this session; publication
+status and CI must be checked for the actual resulting GitHub commit, not inferred
+from this note. The original `python -m verification` requirement is unchanged.
