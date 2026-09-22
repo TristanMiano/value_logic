@@ -57,3 +57,50 @@ not a new global signature.
 | I | `e_i` are binary violation indicators, `r_i=E[e_i]` exact probabilities, and `epsilon_i` upper caps. `w_i,t` are mixture weights for single/triple violations. Existence of a fitting joint law is not a universal guarantee over laws or empirical calibration. |
 | J | Uniform error, mean absolute error, and error of the mean are different quantities. `K(w)` is a local sensitivity and `delta(w)` an error profile; their joint mean product differs from the product of their means. |
 | K | `N` is the revealed-prefix length, `L_M` a loss with a hidden tail spike, and `Ck` a supported envelope. Individual integrability does not imply a common expectation bound across models. |
+
+
+## F02 candidate-local notation
+
+See [the candidate comparison](foundations/02_candidate_semantics.md). These
+symbols do not replace the example-local F01 conventions or freeze a signature.
+
+| Scope | Meaning and important distinction |
+|---|---|
+| S | `s_q(e)` is a finite real payoff at a fixed task `q` and unit `u`; an interval bounds an evaluated scalar, not a per-scenario distribution. |
+| P | `x in R_u^Omega` is a shared-index profile; `V_p(x)` is its specified weighted mean. Model index `theta` is shared across components when stated. |
+| T | `T: R_u^B -> R_u^A` maps a downstream continuation to input-state values; primitive `T_(r,P)(h)=r+Ph` uses a row-stochastic matrix P, distinct from the candidate label P. |
+| T sequencing | `(T;U)(h)=T(U(h))` describes T running first. Min/max require an explicitly declared controller/adversary and observation stage. The extensional map does not automatically retain the generator syntax or policy witnesses. |
+| T test family | `osc(h)=max(h)-min(h)`; `H_M` contains all continuations of span at most M, with unbounded common shifts. `TV(p,q)=sum(abs(p-q))/2`. |
+| G | For a finite menu A of d-component smaller-is-better costs, `Gamma_A={b: exists a in A, a<=b}`. Capability order is set inclusion, not a weighted total ranking. |
+| G composition | Menu union is controlled choice; pairwise cost addition requires freely compatible uses. Typed triples `(x,c,y)` compose by matching endpoints and adding costs. |
+| G robust extension | `cbar_j(a)=max_theta c_j(a,theta)` answers the specified universal component-cap query with one action chosen before theta is observed; it need not preserve later sum objectives. |
+
+The candidate label S is not a signal variable or an evidence set, and the
+candidate label G is not a particular program step. Context determines these
+notations. Common unit conversions, allowed task families, and information
+schedules must be stated wherever the corresponding operation is used.
+
+
+## F02 S2 supplement: scoped symbols, not a permanent signature
+
+The [candidate reconstruction](foundations/02a_candidate_reconstruction.md)
+uses the following local conventions in addition to the F02 S1 glossary.
+
+| Scope | Symbols and meaning |
+|---|---|
+| A, J | Nonempty finite cost menu `A`, upper budget set `Gamma_A=A+R_+^d`, convex upper hull `C_A=conv(A)+R_+^d`, and weighted optimum `f_A(w)=min_a w.a`. Nonnegative weights are declared task conversions. Per-use budgets differ from expected-budget mixtures. |
+| B | Blind choice is before the input is known; observed choice can depend on the supplied input. Equality of optimized maps is not equality of legal menus under a different information schedule. |
+| C | `osc(h)=max h-min h`, relative-stake bound `M`, stochastic rows `p_a`, immediate rewards `r_a`, and exact output-span allowance `B_U(M)`. These are candidate T assumptions, not universal value axioms. |
+| D | Positive scenario weights `p_i`, profile masks `q^(i)`, and bounds `L,U` defining admitted probes. Exact profile recovery is query-relative, not a real-coordinate counting lower bound. |
+| E, F | Separate-feasibility intersection permits different witnesses. Shared-model index `theta`, suffix lower envelope `k`, prefix value `c_theta`, and nonnegative gap `g_theta` govern the early-reduction equality criterion. |
+| G | Cost-labelled endpoint relation `R`, backward budget transformer `W_R`, and fixed-weight min-plus endpoint cost kernel `K^w`. Empty continuation sets have no feasible witness. Nonlinear budget probes require a richer output interface. |
+| I | Finite continuous piecewise-affine maps, stochastic affine pieces, max-min normal form; exact equality is extensional. Smooth comparison `F_*(h)=log((exp(h_1)+exp(h_2))/2)` and its tangent/intercept constructions are analytic fixtures. The 65-plane approximation has exact rational coefficients. |
+| J | Positive component scales `s_j` and directed slack `d_s(A,B)=max_a min_b max_j((b_j-a_j)/s_j)_+`. Convexified slack `d_s^cvx` answers the relaxed expected-budget question, not the hard deterministic question. |
+| K | Anchored relative-stake polytope and joint affine-region refinement; Boolean or original box vertices alone need not determine nonlinear T comparisons. |
+| L | `phi(x)=x/(1+abs(x))`, common offset `c=h_n`, relative coordinates `d=h-c1`, code radius `eta`, decoded radius `delta`. Centering precedes rounding; preserving offsets is necessary for absolute outputs. |
+| N | Shared signal model: hidden state `W`, cheap signal `S_C`, menu error/work pairs `(1/2,0),(1/4,1),(0,3)`, work price `lambda`, and independently declared error/work caps. |
+
+All guarantees are relative to the displayed finite or explicitly extended
+models. A resource frontier does not infer physical prediction error without
+an error-propagation premise. No new universal conjunction, context schema,
+probability semantics or boundedness requirement is introduced by this table.

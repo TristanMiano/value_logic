@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: F01 completion, September 21, 2026.
-Status: **F01 complete; no calculus selected and no readiness gate passed**.
+Version: F02 completion, September 22, 2026.
+Status: **F01 and F02 complete; no permanent calculus selected and no readiness gate passed**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 
@@ -74,11 +74,52 @@ The [continuation record](work_logs/F01_2026-09-21_S2.md),
 sessions. The full protected D60 obligation is met, without treating elapsed
 time as evidence of mathematical soundness.
 
-**Next task: F02**, not started. It must compare at least three actual candidates
-on the common examples and their admitted information/precision contracts.
-All Gate A-D states remain not attempted; there is no active repair queue.
+**F02 is complete.** The [candidate comparison](foundations/02_candidate_semantics.md)
+retains four concrete proposals: fixed-task scalars (S), aligned profiles (P),
+continuation-value transformers (T), and non-probabilistic guarantee fronts (G).
+Each has multiple worked examples, a common comparison table, and explicit
+information, units, scale and composition assumptions. The
+[reconstruction supplement](foundations/02a_candidate_reconstruction.md) supplies
+positive repairs and countermodels rather than choosing a winner. Dedicated
+F02 discovery passes 124 checks. The [completion record](work_logs/F02_2026-09-22_S2.md)
+and time ledger credit 61.118295 derivation minutes across S1 and S2.
+
+**Next task: F03 — external foundations audit**, not started. The two focused
+source checks in S2 are not F03's planned comparison of 5–8 load-bearing sources
+or its L60 block. All gates remain unattempted; the repair queue is empty.
 
 This task does not implement the later reasoner, perform the F03 literature
 audit, claim novelty, select a permanent value carrier, or run a frozen empirical
 challenge. Contract inversion, a full scientific-model substitution theory,
 inquiry policies, and neural interpretability remain deferred branches.
+
+## F02 comparison implications, not new fixed commitments
+
+A fixed-task scalar can remain sufficient for additive reasoning. Joint nonlinear
+queries can require alignment; sequencing can require downstream-task responses;
+hard multidimensional budgets can require attainable sets rather than all
+weighted optimum values. The candidate note supplies exact scoped examples,
+including an optimized response map that forgets a menu's mean-constraint
+capability. None requires preserving every raw model detail.
+
+Before selecting a core, compare extensional meanings with any extra witness or
+syntax retained, identify permissible observations and shared uncertainty, and
+check closure of admitted downstream tasks under composition. No universal
+probability, bounded-value, scalarization, or policy-recovery axiom is adopted.
+
+### Implications of the F02 reconstruction
+
+Four closure questions remain distinct: algebraic closure, preservation of legal
+implementation witnesses, closure of downstream task families, and robustness of
+finite-precision encodings. A mathematical map can satisfy the first without
+preserving the others. Fixed weighted scalar costs admit useful exact compressed
+kernels; full hard-budget menus retain distinctions their weighted optima lose.
+Observation timing and common latent choices remain part of the interpretation.
+
+The finite T expression class has a scoped extensional characterization under
+freely supplied finite stochastic affine primitives, not a claim about every
+fixed physical library. G has unit-aware approximate substitution laws under
+its declared independent-choice semantics. Bounded coordinate encodings can be
+useful when operations and retained offsets match the query; naive absolute
+squashing and rounding is not equivalent. These results are candidate-level
+comparisons and inputs to F03/F04, not a replacement for their selection gate.

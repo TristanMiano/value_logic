@@ -1,14 +1,15 @@
 # Phase Two Claim Ledger
 
-Version: F01 completion, September 21, 2026.
-Task status: **F01 complete: 60.243613 credited derivation minutes and 76 passing example checks**.
+Version: F02 completion, September 22, 2026.
+Task status: **F01 complete (76 checks); F02 complete (124 dedicated checks and 61.118295 credited derivation minutes)**.
 No calculus has been selected and no readiness gate has passed.
 This is not a statement that the demonstrated arithmetic is unproved.
 
 ## Evidence conventions
 
-All numbered claims below are scoped to the assumptions in the
-[principal derivation note](foundations/01_requirements_and_separating_examples.md).
+The F01 claims below are scoped to the assumptions in the
+[principal F01 derivation note](foundations/01_requirements_and_separating_examples.md).
+F02 claims identify their own candidate and reconstruction notes in their sections.
 Their proofs are direct calculations or explicitly given countermodels. They
 received same-agent self-review, not independent review. The
 [26-test fixture suite](checks/f01_examples.py) supplies arithmetic and finite
@@ -88,3 +89,79 @@ needed by each reused claim. A counterexample to an example calculation repairs
 F01 and its downstream uses; a candidate's deliberate restriction is recorded
 as a capability limit rather than concealed. No mathematical gate has yet been
 attempted or invalidated.
+
+
+## F02 partial candidate comparison — September 21, 2026
+
+The following claims refer to [the candidate note](foundations/02_candidate_semantics.md)
+and [53 exact development checks](checks/f02_candidates.py). Proof status means
+conditional mathematical demonstration in that note, not the later calculus
+soundness theorem. Review is same-agent and non-blinded; no novelty or independent
+review is claimed. [The session](work_logs/F02_2026-09-21_S1.md) records 17.095003
+credited D minutes: **at the end of S1, F02 was partial and D60 was not met**.
+S2 completion is recorded below; the original timing and proof history is retained.
+The philosophical commitments and all completed F01 claims remain unchanged.
+
+| ID | Scoped statement and derivation location | Evidence / project impact |
+|---|---|---|
+| F02-C01 | At fixed units and a linear task evaluation, additive return values and fixed mixtures follow the scalar formulas; approximate scalar comparisons chain additively (§2). | Displayed finite-sum proof and exact fixtures. Positive scalar baseline; not arbitrary sequential-program value. |
+| F02-C02 | Evaluated pointwise minimum equals the minimum of the evaluations iff one profile is pointwise no worse on positive-weight scenarios; the gap is `(E abs(x-y)-abs(E(x-y)))/2` (§3.2). | Nonnegative-part proof, 625 profile-pair checks and zero-weight case. Alignment matters for this nonlinear operation. |
+| F02-C03 | A finite convex hull of linear task weights can be checked at its supplied generators; this compression need not preserve pointwise bottleneck evaluation (§3.3). | Convex-combination proof plus E03 counterexample. The admitted operations matter, not only the current query. |
+| F02-C04 | Finite T expressions denote monotone common-shift-preserving maps, hence uniform-norm nonexpansive maps; primitive affine probability rows sum to one (§4.1-4.3). | Induction and sandwich proofs; exact finite tests. Excludes subprobability and arbitrary terminal-value amplification without new assumptions. |
+| F02-C05 | Lower envelopes of affine expectations cannot represent controlled `max(h_L,h_R)` (§4.2). | Midpoint concavity counterexample. The proposed T permits min and max; pure lower semantics needs another control layer. |
+| F02-C06 | Typed T sequencing yields `9/2` in the displayed two-stage case and optional signal value `max(1,4p-1-kappa)` under its joint-law/observation contract (§4.4-4.5). | Direct propagation and independent finite-policy checks. Immediate scalar equality does not preserve all future tasks. |
+| F02-C07 | Stagewise lowering of shared-theta rewards theta and 1-theta gives zero instead of their exact total one; lower composition is exact for the displayed independent product-choice identity (§4.6). | Explicit common-model and product-choice calculations. Coupling and quantifier order cannot be reconstructed after erasure. |
+| F02-C08 | For affine one-input maps with probability vectors p,q, uniform finite-error comparison on all real continuations forces p=q; on span<=M it is exactly `r-s+epsilon>=M TV(p,q)` (§4.7). | Analytic separating continuation and attaining box-vertex proof; all specified finite vertices checked. Relative task span can be bounded without bounding absolute value. |
+| F02-C09 | Approximate T substitution composes with summed errors when the suffix maps its task family into the prefix's admitted family; omitting that condition admits the 0-versus-10 counterexample (§4.8). | Monotonicity/shift derivation and closure counterexample. Sufficient span propagation is proved separately. |
+| F02-C10 | Singleton shift maps give S's additive fragment; the profile map `T_x(c)=x+c` does not preserve profile addition as ordinary function addition (§4.9). | Algebra and duplicated-continuation fixture. Representation is not automatically preservation of all operations. |
+| F02-C11 | Finite G budget sets admit Pareto pruning, menu union, free-pair addition, and separate-feasibility intersection with the stated finite-set identities (§5.1-5.2). | Elementwise/set proofs and 125 front triples. Witness existence and compatible controlled choices are explicit premises. |
+| F02-C12 | Menus A={(0,2),(2,0)} and B=A union {(3/2,3/2)} have identical nonnegative weighted optimum costs but different feasibility for budget (3/2,3/2) (§5.4). | All-weight analytic bound and 101 weight checks. Hard deterministic budgets may retain nonconvex options discarded by weighted optima. |
+| F02-C13 | Marginal frontier addition can promise an incompatible cost-zero plan; immediate-cost pruning can lose a valid cost-one route. Matching-endpoint cost relations restore the demonstrated sequence (§5.5-5.6). | Explicit controlled-choice and endpoint countermodels, compatible-path proof and fixtures. Extra hidden policy compatibility still must be retained. |
+| F02-C14 | Pure-output and added-lottery menus can induce the same optimized scalar continuation map for every h but different simultaneous mean-cost feasibility when free randomization is not otherwise admitted (§9.1). | Convex-average identity and exact mean-budget witness. Extensional map and syntax/menu are different information contracts. |
+| F02-C15 | Robust coordinate maxima per action exactly characterize one-before-model action satisfying every component cap, but can lose later sum objectives; observing the model before choice gives a different intersection of menu capabilities (§9.2). | Quantifier equivalence and before/after fixtures. Nonprobabilistic compression is exact for its specified queries only. |
+| F02-C16 | Strictly increasing exact recoding preserves scalar/profile/component orders with transported operations; a fixed bounded interval with ordinary addition is not the same unbounded carrier (§2.6, §3.6, §5.7). | Displayed inverse/operation formulas and recoding fixtures, reusing F01. No precision, tail, or runtime advantage follows automatically. |
+| F02-D01 | S, P, T, and G are candidate foundations with different primitive meanings and admitted operations. | Proposed, not selected. Finite examples, retained information, costs, and limits are compared; full F01 coverage by one small candidate is unestablished. |
+| F02-T01 | F02 has met every task-completion obligation. | **Established at the F02 comparison scope after S2:** four concrete candidates, multiple worked examples each, common comparison, explicit assumptions, 124 passing dedicated checks, and 61.118295 credited D minutes. Next F03 is unstarted; no core or gate is selected. S1 alone did not meet the minimum. |
+
+
+## F02 continuation claims — September 22, 2026
+
+Locations refer to [the S2 supplement](foundations/02a_candidate_reconstruction.md).
+[71 new checks](checks/f02_continuation.py) and their
+[report](checks/F02_continuation_results.json) complement the original 53 tests.
+Statements are proved conditionally in the supplement unless explicitly scoped
+otherwise. Review is same-agent and non-blinded. The max-min representation
+input is attributed in the [source record](work_logs/F02_2026-09-22_S2_sources.md);
+none of these claims is labeled novel, independently checked or a later gate.
+
+| ID | Exact scoped statement and location | Evidence and project impact |
+|---|---|---|
+| F02-C17 | For nonempty finite cost menus, agreement of every nonnegative weighted optimum is equivalent to equality of convex upper hulls (§A.1). | Convex-combination and separating-point proof. Identifies exactly which hard-budget information is lost, not an impossibility for all scalar encodings. |
+| F02-C18 | Free lotteries with expected deterministic costs replace the menu by its convex hull; per-use hard caps do not acquire the same relaxation. Mixing before a hidden-model worst case differs from mixing after it (§A.2–A.3). | Explicit feasible menus and 405 finite robust-mixture cases. Observation and aggregation assumptions cannot be omitted. |
+| F02-C19 | Blind-before-input and observed-input branch maxima satisfy the stated inequality; equality requires a common maximizing branch on positive input mass. Two menus can give identical optimized maps for every continuation but different blind values (§B). | Nonnegative-gap proof and identity/swap versus constant-output witness; 405 observation cases. An extensional map can erase later-needed policy information. |
+| F02-C20 | The exact affine output-span bound is `max_ab(r_a-r_b+M TV(p_a,p_b))`; suffix substitution can cancel differing prefix rows when `(p-q)Q=0` (§C). | Attaining continuation and row-product proofs; 675 span cases and exact cancellation fixtures. Gives less conservative task-family interfaces without bounding absolute stakes. |
+| F02-C21 | All aligned coordinate-mask bottleneck tests recover a bounded profile when supplied scenario weights are positive; additive evaluations admit a mean-only closed fragment (§D). | Explicit coordinate inversion, 270 masks and positive additive control. Retained query family, not raw storage dimension, determines this distinction. |
+| F02-C22 | Separate-feasibility intersection does not distribute through free-pair addition; bounded infinite menus can lack attained optima or finite Pareto fronts (§E). | Finite witness and `(1/n,0)` family. Different existential witnesses, closure and attainment must be stated. |
+| F02-C23 | In the declared finite shared-model two-stage problem, stagewise lowering is exact iff some prefix-lower minimizer has zero suffix gap on its reachable support (§F). | Nonnegative-gap proof and 1296 finite cases. Forgetting uncontrollable dependence is conservative here; forgetting legal controlled-choice compatibility can instead be optimistic. |
+| F02-C24 | Backward propagation of budget sets composes exactly along cost-labelled relations; fixed nonnegative scalarization preserves its weighted-cost recurrence. Fixed-weight endpoint min-plus kernels preserve all admitted later scalar continuations (§G). | Witness/path constructions and finite tests. Hard-budget probes need extra output structure; fixed-task scalar compression can be useful and exact. |
+| F02-C25 | With freely supplied stochastic affine primitives and finite min/max/composition, scalar finite T expressions denote exactly global finite continuous piecewise-affine, monotone, common-shift-preserving maps (§I.1). | Forward induction, slope constraints and attributed max-min representation with worked reconstruction. This is extensional, not a theorem about a fixed physical primitive library or efficient representation size. |
+| F02-C26 | The supplied four-piece map is neither convex nor concave but lies in T; `h -> 2h` fails the common-shift law and is not uniformly approximable on all real inputs by unit-shift maps (§I.2–I.3). | Explicit formulas and growing-shift argument; 1083 grid checks for the normal form. Unit-mass semantics is a substantive restriction, not a universal value principle. |
+| F02-C27 | The smooth two-input log-mean-exp map is not exactly finite piecewise-affine, but the supplied eleven real-coefficient planes approximate globally within 1/32. Sixty-five exact rational planes give a certified global under-approximation error at most `1/32+2/1701<1/16` (§I.4–I.5). | Curvature/tail and relative-entropy bounds with explicit rational log intervals; finite fixtures do not establish the infinite-domain statement. No universal approximation or minimal-size theorem is claimed. |
+| F02-C28 | Directed slack `d_s` exactly characterizes budget-set inclusion after a nonnegative scale shift; it obeys triangle, menu-union maximum, independent-sum additive and separate-intersection maximum bounds (§J.1–J.2). | Elementwise witness proofs; 343 triangle and 256 operation cases. Requires positive unit scales and the stated compatibility semantics. |
+| F02-C29 | Equal scalar optimum functions need not bound hard-budget slack; upward grid rounding of finite cost fronts gives a conservative finite-precision repair under an explicit bounded range (§J.3–J.4). | Scalable menu counterexample and rounding proof. Does not impose a universal bound on value or preserve hidden implementation labels automatically. |
+| F02-C30 | For convex upper hulls, the least directed slack equals `max_(w>=0,w.s=1)(f_B(w)-f_A(w))_+` (§J.5). | Separation proof and 256 two-dimensional comparisons against a direct mixture optimizer. This is the relaxed budget problem, not the nonconvex deterministic one. |
+| F02-C31 | Boolean terminal tests and the original box vertices need not determine nonlinear T equality or order; a joint affine-region refinement gives a finite exact test on an explicitly supplied bounded-relative-stakes polytope (§K). | Exact legal T counterexamples and crossing enumeration. The finite repair assumes explicit pieces; no generic black-box efficiency or arbitrary-real algorithm is claimed. |
+| F02-C32 | Quantizing absolute bounded codes can destroy bounded-relative-stake decisions. No continuous extension to the whole closed code square uniformly approximates the encoded arithmetic mean with error below one (§L.1–L.2). | Shared-code ambiguity and cancelling-large-value paths; fifteen path checks. The latter obstruction is for the closed-square continuous presentation, not every bounded encoding. |
+| F02-C33 | Centering before encoding and retaining the common offset yields finite inverse-error and `2 delta` greedy-regret bounds on the declared span-bounded family; unit-shift normalization is necessary for offset cancellation (§L.3–L.4). | Lipschitz and simultaneous-error proofs, 153 centered-choice fixtures and row-mass counterexamples. Absolute queries still need the offset. |
+| F02-C34 | The encoded output of a bounded-relative-coordinate presentation extends continuously in the encoded common offset, with the stated `(1+B)^2` offset Lipschitz factor (§L.5). | Explicit shift-fraction identity and endpoint limits. Encoded accuracy is not automatically absolute-real accuracy. |
+| F02-C35 | The shared signal/cost example has the same supplied errors, prices, caps and observation schedule for S/P/T/G, producing the displayed feasible menus and values (§N). | Exact common fixtures. Additive resource propagation alone is not physical prediction-error propagation; the S1 common-table wording was narrowed accordingly. |
+
+### Completion and next dependency
+
+The current F02 comparison obligation is satisfied; 3667.097704541 cumulative
+D seconds are recorded, not inferred from word count. F03 must audit the actual
+candidate definitions and load-bearing mathematical results against primary
+literature before Gate A. F04 must test the chosen candidates adversarially.
+No downstream task has been started by the package, and there is no gate pass
+to invalidate. A later flaw reopens the relevant claim and its uses, not the
+historical record of what was attempted or tested.

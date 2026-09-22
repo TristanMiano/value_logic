@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 21, 2026.
-Status: F01 complete; example-level evidence and D60 recorded; no calculus selected or gate passed.
+Last updated: September 22, 2026.
+Status: F01 and F02 complete at their task scopes; no permanent calculus selected or readiness gate passed.
 
 ## Resume here
 
@@ -11,7 +11,7 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F02 — derive competing semantic candidates.**
+**Next task: F03 — external foundations audit.**
 
 **Active repair queue: empty.**
 
@@ -249,7 +249,7 @@ to publication with an unsound core simply because the planned queue ended.
   proof/test evidence, and validation boundaries. F02 is selected but not begun;
   all gates remain unattempted. No core, independent review, or novelty is claimed.
 
-- [ ] **F02 — derive competing semantic candidates.**
+- [x] **F02 — derive competing semantic candidates.**
 
   Principal artifact: `v2/foundations/02_candidate_semantics.md`.
   Compare at least three substantially different candidates, including a
@@ -263,6 +263,36 @@ to publication with an unsound core simply because the planned queue ended.
   simplifying assumptions and unproved claims are explicit; D60 is recorded.
   Protect exploratory time for a candidate that is not the easiest extension
   of the phase-one design.
+
+  **Partial session — September 21, 2026.** Compared four concrete candidates
+  in the [candidate note](v2/foundations/02_candidate_semantics.md): evaluated
+  scalars, aligned profiles, continuation-value transformers, and achievable
+  guarantee fronts. Each has explicit operations, multiple worked examples,
+  scope/units, and bounded/unbounded analysis; the common table distinguishes
+  their admitted information and composition questions. Added 53 passing exact
+  checks and recorded candidate-level proofs, counterexamples, and open issues.
+  Credited D time is 17.095003 minutes; 42.904997 minutes of D60 remain.
+  See the [session record](v2/work_logs/F02_2026-09-21_S1.md) and
+  [claim entries](v2/claim_ledger.md). At the end of S1, F02 remained unchecked;
+  no core or gate was selected and F03 had not begun. S1 was delivered as a local
+  patch because its then-available connected tools exposed no repository writes.
+
+  **Completed — September 22, 2026.** Added the
+  [candidate reconstruction](v2/foundations/02a_candidate_reconstruction.md):
+  exact scalar/convex-budget boundaries, observation-sensitive choices,
+  continuation and budget composition, finite-transformer characterization,
+  quantitative guarantee-set substitution, nonlinear-test countermodels, and
+  bounded-coordinate precision repairs. The original common example table is
+  retained and a shared signal/cost example interprets all four candidates.
+  Added 71 checks, bringing dedicated F02 discovery to 124 passing tests.
+  Updated notation, claims, and the project specification. Session S2 credits
+  44.023292 D minutes; cumulative F02 D is 61.118295 minutes, meeting D60.
+  The [completion record](v2/work_logs/F02_2026-09-22_S2.md) contains measured
+  actuals, source-use limits, same-agent review, and validation boundaries.
+  F03 is selected but not begun. All gates remain unattempted; no final core,
+  unrestricted calculus soundness result, independent review, or novelty is claimed.
+  The downloadable completion package is cumulative from the F01 main snapshot
+  and also contains a delta for an exactly applied, committed S1 package.
 
 - [ ] **F03 — external foundations audit.**
 

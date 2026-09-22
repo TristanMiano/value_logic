@@ -12,7 +12,14 @@ checks. The two F01 suites pass **76 tests**, and **60.243613 credited derivatio
 minutes** are recorded across S1 and S2. See the
 [completion record](work_logs/F01_2026-09-21_S2.md).
 
-**Next: F02 — derive competing semantic candidates.** It has not begun.
+**F02 is complete.** The [candidate note](foundations/02_candidate_semantics.md)
+and [reconstruction supplement](foundations/02a_candidate_reconstruction.md)
+compare four concrete formulations. The original 53 checks plus 71 continuation
+checks give **124 passing dedicated F02 tests**. Credited derivation time is
+**61.118295 minutes** across S1 and S2, satisfying D60. The
+[completion record](work_logs/F02_2026-09-22_S2.md) preserves actual clocks,
+source-check limits, research evidence and the cumulative package disposition.
+**Next: F03 — external foundations audit**, not started.
 No calculus has been selected, and no readiness gate has passed.
 
 The intended result is a small, explicit calculus with operationally meaningful
@@ -83,12 +90,27 @@ local discovery command passes 76. These results check the finite examples,
 not unrestricted theorems. Two `verification/test_v2_f01*.py` bridge files include
 both suites in the full repository command.
 
-The full command was not run in the research container: a full checkout could
-not be obtained because git network name resolution failed. Connected GitHub
-reads and writes are available separately. Full GitHub Actions verification is
-checked for the exact publication commit before advancing `main`; it is distinct
-from the local targeted checks. Consult the commit's workflow result rather than
-infer a full pass from this note or from source inspection.
+For the completed F01 work, the full command was not run in its research
+container because git network name resolution failed. The write-enabled
+connection then available published those changes, and their exact GitHub
+Actions result was checked before advancing `main`. That historical result is
+distinct from both the local targeted checks and validation of new F02 changes.
+Consult each commit's workflow result rather than infer a full pass from source
+inspection or an earlier commit's checks.
+
+The F02 candidate fixtures can be run separately:
+
+```text
+python -m v2.checks.f02_candidates --json v2/checks/F02_results.json
+python -m unittest discover -s verification -p 'test_v2_f02_candidates.py'
+```
+
+Both commands passed 53 checks in the F02 first session. They are not a general
+reasoner or a fresh full-repository pass. In that historical S1 session, exposed
+GitHub actions lacked repository writes, and local git cloning failed on DNS.
+S2 retested branch creation successfully; the current completion remains a
+downloadable package, without a claimed F02 content commit or remote CI pass.
+The earlier F01 results are not relabeled as validation of the new changes.
 
 From F11 onward also run:
 
@@ -100,6 +122,32 @@ F11 must implement that entry point before recording it as available. If the
 environment cannot run a command, record `not run` and the actual reason;
 do not infer a pass from source inspection. Check the GitHub Actions result
 for the exact pushed commit separately from local validation.
+
+## F02 completion checks and package
+
+Run the following from the repository root using Python 3.10 or newer:
+
+```text
+python -m v2.checks.f02_candidates --json v2/checks/F02_results.json
+python -m v2.checks.f02_continuation --json v2/checks/F02_continuation_results.json
+python -m unittest discover -s verification -p "test_v2_f02*.py"
+```
+
+The first two suites contain 53 and 71 tests; combined discovery passes 124.
+Both result files reproduce exactly. These are constructed development cases,
+not F11's reasoner, a held-out experiment or an unrestricted theorem proof.
+The full `python -m verification` was not run in the research environment because
+no full checkout could be obtained. No F02 content commit or full CI pass is
+claimed by this package. The branch-creation access test succeeded; `main` was
+left at the F01 completion snapshot. See the session record and the package's
+`START_HERE.md` for the distinction and Windows/WSL installation steps.
+
+The downloadable completion package contains all S1 and S2 changes relative to
+`ba551afe7f4c026c075a49b09b341eec446caf1a`; applying the old partial package first
+is unnecessary. A separately checked delta supports the exact, clean, committed
+S1 state. The helper checks hashes and a clean Git state, stages the selected
+patch and restores only changed paths from the index. It never commits or pushes.
+The historical S1 delivery limits remain recorded in its unchanged work log.
 
 ## Completion and recurrence
 
