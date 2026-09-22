@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 20, 2026.
-Status: F01 partial; worked examples and fixture tests recorded; D60 not yet met.
+Last updated: September 21, 2026.
+Status: F01 complete; example-level evidence and D60 recorded; no calculus selected or gate passed.
 
 ## Resume here
 
@@ -11,7 +11,7 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F01 — continue requirements and separating examples; complete the remaining protected derivation work.**
+**Next task: F02 — derive competing semantic candidates.**
 
 **Active repair queue: empty.**
 
@@ -206,7 +206,7 @@ to publication with an unsound core simply because the planned queue ended.
 
 ### Cycle I — requirements, candidates, and separating evidence
 
-- [ ] **F01 — requirements and separating examples.**
+- [x] **F01 — requirements and separating examples.**
 
   Principal artifact: `v2/foundations/01_requirements_and_separating_examples.md`.
   Derive at least six small examples spanning cheap versus accurate model use,
@@ -234,8 +234,20 @@ to publication with an unsound core simply because the planned queue ended.
   minutes of the D60 floor. This is not task completion, independent review, a
   selected calculus, or a passed gate. See the
   [session record](v2/work_logs/F01_2026-09-20_S1.md) for exact clocks,
-  evidence, validation limits, and the next review obligations. F01 remains
-  selected and unchecked; F02 has not begun.
+  evidence, validation limits, and its then-pending review obligations. At the
+  end of that session F01 remained unchecked; F02 had not begun.
+
+  **Completed — September 21, 2026.** Reconstructed the eight examples and
+  added [worked information-contract and assumption audits](v2/foundations/01a_reconstruction_and_information_contracts.md),
+  including sharp covariance-based bounds, tolerated common-model fitting,
+  finite-precision and tail conditions, and useful decisions without exact
+  value recovery. Added 50 reconstruction checks; the combined F01 discovery
+  command passes 76 tests. Updated the claim ledger, notation, and specification.
+  Session S2 credits 44.274346 derivation minutes; cumulative F01 D time is
+  60.243613 minutes, satisfying D60 without counting unmeasured gaps or tool waits.
+  The [completion record](v2/work_logs/F01_2026-09-21_S2.md) links the raw clocks,
+  proof/test evidence, and validation boundaries. F02 is selected but not begun;
+  all gates remain unattempted. No core, independent review, or novelty is claimed.
 
 - [ ] **F02 — derive competing semantic candidates.**
 

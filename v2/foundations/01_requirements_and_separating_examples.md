@@ -1,10 +1,13 @@
 # F01 — Requirements and Separating Examples
 
-Research date: September 20, 2026 (America/Los_Angeles).
-Source revision: `064320e9770cc796843da2de9335dce37cae2019`.
+Original research: September 20, 2026; continuation: September 21, 2026
+(America/Los_Angeles).
+Original source: `064320e9770cc796843da2de9335dce37cae2019`.
+Continuation source: `450048c1b243a33fa8d5a07b59ecf2ff5bb5d76c`.
 Status: worked requirements and examples; **not a selected calculus**.
 Task completion and measured effort are recorded in the
-[session record](../work_logs/F01_2026-09-20_S1.md).
+[first session](../work_logs/F01_2026-09-20_S1.md) and
+[continuation record](../work_logs/F01_2026-09-21_S2.md).
 
 ## Durable findings
 
@@ -781,3 +784,70 @@ summary. Tests in [the fixture module](../checks/f01_examples.py) check arithmet
 and finite enumerations; they do not prove the unrestricted claims of a future
 calculus. Exact executable results and the scope of self-review are recorded in
 [the session log](../work_logs/F01_2026-09-20_S1.md).
+
+
+## 13. Continuation: requirements sharpened by reconstruction
+
+The [reconstruction and information-contract note](01a_reconstruction_and_information_contracts.md)
+retains the proof details, alternative arguments, and failure witnesses. It is
+a same-agent review and extension, not an independent review or a chosen core.
+The most consequential refinements to R01-R09 are these.
+
+**Useful inference need not recover an exact value.** For two payoffs with
+uniform marginals on $\{-1,0,1\}$, covariance zero does not determine the mean
+of their minimum. It does, however, narrow its sharp interval from $[-2/3,0]$
+to $[-1/2,-1/3]$. That makes a guarantee at threshold $-3/5$ possible even
+though exact recovery still fails. An alternative pointwise proof obtains the
+same bounds from support and second moments without full marginal laws; explicit
+countermodels show why the support premise cannot then be silently dropped.
+R03 and R09 should therefore test whether information is sufficient *at the
+requested tolerance*, not only whether it reconstructs a unique exact answer.
+
+**Some task changes preserve a useful guarantee while destroying exact choice.**
+With unknown scores $(n,0)$ for integers $n\geq1$, the first action is known
+optimal without knowing $n$. After a cost $\kappa\geq0$ is charged to it,
+choosing it still has worst-case regret $\max(\kappa-1,0)$. At cost two there
+is no uniformly exact best action, yet the original choice guarantees regret
+at most one. Conversely, arbitrary future changes cannot be answered from the
+old winning-action label alone. R02 and R09 must distinguish the admitted change
+family and the acceptable loss from a demand to retain everything forever.
+
+**Composition needs the right aggregation, not just correct units.** Two stages
+may have identical mean upstream error and identical mean local sensitivity
+while their composite mean errors differ. A squared downstream map gives the
+sharp interval $[1,n]$ under the explicitly bounded profiles in the supplement.
+The valid averaged bound uses $\mathbb E[K\delta]$, not generally
+$(\mathbb EK)(\mathbb E\delta)$. Similarly, a uniform bottleneck bound uses
+maximum component error, whereas mean-absolute component errors may accumulate
+as their sum. R04 must retain the meaning and scope of each bound.
+
+**Inconsistent exact models can admit useful approximate common models.** Three
+binary pair constraints $A=B$, $B=C$, and $A\ne C$ cannot all hold exactly
+under the requested joint identification. Upper error caps are jointly feasible
+exactly when their sum is at least one, giving equal-cap threshold $1/3$.
+Exact error vectors obey additional conditions; weighting the errors and
+minimizing their maximum can prefer different repairs. These are existence
+claims about fitting the supplied specifications, not empirical authorization
+of an external-world model. R05 must preserve those distinctions.
+
+**Bounds also carry endpoint and tail information.** Every member of
+$\{-1/n:n\geq1\}$ is negative even though the supremum is zero; adding zero
+changes that strict-sign conclusion but not the closed interval hull. At the
+other end, a finite checked prefix of an integrable but unbounded loss does
+not supply a common bound on its expectation. A supported tail envelope can
+restore one without bounding the value carrier. R05 and R07 cannot conflate
+finite extrema, closed enclosures, actual attainment, and uniform error control.
+
+**Information access is part of a guarantee.** The observation-time distinctions
+in E08 survive the reconstruction. Additionally, individual high-probability
+score-accuracy statements need not be a simultaneous certificate for a selected
+action: an explicit report distribution has 99% coverage for each suboptimal
+action but makes greedy selection wrong every time. A union bound and a bounded
+failure loss supply scoped replacement guarantees. R08 should distinguish
+available information, quantifier order, and the declared aggregation of error.
+
+These refinements add no permanent axiom, representation, or universal
+probability semantics. F02 still has to compare actual candidate formulations,
+and subsequent tasks still owe a calculus, metatheory, and executable reasoner.
+The fixture suites are development evidence for these examples, not substitutes
+for those later obligations.

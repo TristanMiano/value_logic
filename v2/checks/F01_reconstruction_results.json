@@ -1,0 +1,149 @@
+{
+  "conditioning_matched_marginals": [
+    "1",
+    "-1"
+  ],
+  "cost_update": {
+    "choose_first_worst_regret": "max(kappa-1,0)",
+    "kappa_2": "1",
+    "scores": "(n-kappa,0), integer n>=1"
+  },
+  "exact_error_frontier": {
+    "caps_110": "feasible",
+    "criterion": "all four pattern weights nonnegative",
+    "exact_110": "infeasible",
+    "single_pattern_weights": "r_i - (sum(r)-1)/2",
+    "triple_pattern_weight": "(sum(r)-1)/2"
+  },
+  "exhaustive_bounds": {
+    "affine_two_component_order_comparisons": 5625,
+    "binary_tables_support_pairs": 105,
+    "bottleneck_tuple_pairs": 15625,
+    "conditional_ratio_cases": 180,
+    "exact_error_grid_vectors": 125,
+    "independently_enumerated_pattern_mixtures": 165,
+    "information_laws_payoff_tables": 2835,
+    "joint_laws_denominator_6": 1716,
+    "joint_nonempty_subsets": 511,
+    "parity_dimensions": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "pointwise_moment_grid_pairs": 289,
+    "tail_spike_examples": 48,
+    "ternary_uniform_tables_denominator_12": 120,
+    "three_action_truth_estimate_pairs": 729,
+    "three_error_cap_grid_triples": 125,
+    "union_bound_reporting_cases": 1215,
+    "variable_sensitivity_profiles": 16
+  },
+  "finite_range_guard": {
+    "cap": "1",
+    "decoded_error": "1/2",
+    "invalid_unclipped_bound": "2/5",
+    "reported_code": "3/5",
+    "true_code": "1/2"
+  },
+  "general_claim_evidence": "Displayed proofs in the reconstruction note; finite test counts do not prove unrestricted statements.",
+  "geometric_tail": {
+    "C": "1",
+    "N": 8,
+    "expectation_interval": [
+      "251/128",
+      "2"
+    ],
+    "prefix": "251/128",
+    "unrestricted_spike_expected_increment": "M",
+    "upper_tail": "5/128"
+  },
+  "marginal_coverage_counterexample": {
+    "best_action_coverage": "1",
+    "each_other_action_coverage": "99/100",
+    "greedy_regret_probability_one": "1",
+    "m": 100
+  },
+  "minimax_midpoint_known_marginals": {
+    "answer": "0",
+    "uniform_absolute_error": "1"
+  },
+  "pairwise_model_threshold": {
+    "applies_to": "upper caps, not all exact error vectors",
+    "criterion": "epsilon_1 + epsilon_2 + epsilon_3 >= 1",
+    "equal_error_cap": "1/3",
+    "witness": {
+      "000": "1/6",
+      "001": "1/6",
+      "011": "1/6",
+      "100": "1/6",
+      "110": "1/6",
+      "111": "1/6"
+    }
+  },
+  "parity_minimum_means": {
+    "2": [
+      "1/2",
+      "0"
+    ],
+    "3": [
+      "0",
+      "1/4"
+    ],
+    "4": [
+      "1/8",
+      "0"
+    ],
+    "5": [
+      "0",
+      "1/16"
+    ],
+    "6": [
+      "1/32",
+      "0"
+    ],
+    "7": [
+      "0",
+      "1/64"
+    ]
+  },
+  "scope": "Constructed F01 reconstruction fixtures; not a general reasoner, independent review, or held-out performance study.",
+  "shared_uncertainty_K100": {
+    "exact_improvement": "2",
+    "interval": [
+      "-98",
+      "102"
+    ]
+  },
+  "sharp_ternary_minimum": {
+    "also_covariance_zero": [
+      "-1/2",
+      "-1/3"
+    ],
+    "independence_only_if_assumed": "-4/9",
+    "marginals_only": [
+      "-2/3",
+      "0"
+    ],
+    "same_bounds_from": "support [-1,1], zero means, second moments 2/3, cross moment zero"
+  },
+  "support_countermodels": {
+    "amplitude_4_minimum": "-1/6",
+    "amplitude_6_over_5_minimum": "-5/9",
+    "cross_moment": "0",
+    "second_moments": "2/3"
+  },
+  "symmetric_ambiguous_choice": {
+    "deterministic_worst_regret": "1",
+    "randomized_expected_worst_regret": "1/2"
+  },
+  "tests_run": 50,
+  "variable_sensitivity": {
+    "correct_product_aggregation": "E[K*delta], not E[K]*E[delta]",
+    "mean_local_sensitivity": "2",
+    "mean_upstream_error": "1",
+    "sharp_composite_error_interval": "[1,n]"
+  }
+}

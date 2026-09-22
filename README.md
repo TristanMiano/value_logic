@@ -38,4 +38,4 @@ Commit completed or explicitly partial work with its task ID after validation. D
 
 The original phase-one roadmap remains complete. Its calculus and results are retained under their original assumptions. Historical follow-up Task 0 also remains complete, but its mandatory-inheritance policy applies only to the archived follow-up design.
 
-No calculus-first research task is marked complete by this documentation revision. **Next: F01 — requirements and separating examples.** Publication is downstream of repeatable evidence gates, not the default consequence of reaching the end of a numbered list.
+**F01 is complete**: eight worked examples, a reconstruction and assumption audit, 76 passing example checks, and 60.24 credited derivation minutes across two sessions. The [completion record](v2/work_logs/F01_2026-09-21_S2.md) and [research notes](v2/foundations/01a_reconstruction_and_information_contracts.md) preserve the evidence. **Next: F02 — derive competing semantic candidates.** F02 has not begun; no core is selected and no readiness gate has passed. Publication of a final paper remains downstream of those gates.

@@ -6,12 +6,14 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 
 ## Current status
 
-**F01 is partial.** Eight worked examples and 26 passing exact-arithmetic
-fixture tests are recorded, with 15.97 measured engaged derivation minutes.
-The 60-minute floor is not yet met; no calculus has been selected and no gate
-has passed. Continue **F01 — requirements and separating examples**, using the
-[session record](work_logs/F01_2026-09-20_S1.md) and the roadmap's current pointer.
-F02 has not begun.
+**F01 is complete.** The eight worked examples have been reconstructed and
+extended with explicit positive repairs, assumption tests, and 50 additional
+checks. The two F01 suites pass **76 tests**, and **60.243613 credited derivation
+minutes** are recorded across S1 and S2. See the
+[completion record](work_logs/F01_2026-09-21_S2.md).
+
+**Next: F02 — derive competing semantic candidates.** It has not begun.
+No calculus has been selected, and no readiness gate has passed.
 
 The intended result is a small, explicit calculus with operationally meaningful
 value objects, justified inference rules, worked derivations, and an executable
@@ -41,18 +43,22 @@ the original paper, experiment outcomes, and completed task history.
 
 ## Planned artifacts
 
-The partial F01 session establishes [project_spec.md](project_spec.md),
+F01 establishes [project_spec.md](project_spec.md),
 [claim_ledger.md](claim_ledger.md), [notation.md](notation.md), and the
 [principal derivation note](foundations/01_requirements_and_separating_examples.md).
 [Exact fixtures](checks/f01_examples.py) and [results](checks/F01_results.json)
-check the example calculations, not a proposed phase-two reasoner.
+check the original example calculations. The
+[reconstruction note](foundations/01a_reconstruction_and_information_contracts.md),
+[additional fixtures](checks/f01_reconstruction.py), and
+[additional results](checks/F01_reconstruction_results.json) audit their limits
+and positive extensions. Neither suite is the future phase-two reasoner.
 
 Further work will populate `foundations/`, `derivations/`, `literature/`,
 `verification/`, `experiments/`, and `checkpoints/`. Every research task keeps
 derivation notes, source checks, and executable evidence distinguishable.
 Timing records use `work_logs/<task>_<session>.md`, based on
 [templates/work_item.md](templates/work_item.md); aggregate actuals go in
-[time_ledger.csv](time_ledger.csv), initialized by the partial F01 session.
+[time_ledger.csv](time_ledger.csv), initialized by S1 and extended by S2.
 The final report is `../paper_v2.md` only after the readiness gate passes.
 
 ## Validation command
@@ -68,14 +74,21 @@ validate the proposed phase-two calculus. The F01 fixtures can also be run alone
 
 ```text
 python -m v2.checks.f01_examples --json v2/checks/F01_results.json
-python -m unittest discover -s verification -p 'test_v2_f01_examples.py'
+python -m v2.checks.f01_reconstruction --json v2/checks/F01_reconstruction_results.json
+python -m unittest discover -s verification -p 'test_v2_f01*.py'
 ```
 
-Both targeted commands passed 26 tests in session S1. The full command was
-not run in that session because a full checkout could not be obtained in the
-execution container; GitHub reads were available separately. No new CI result
-is claimed. The bridge file `verification/test_v2_f01_examples.py` makes the
-fixtures discoverable by the existing suite in a full checkout.
+The original suite has 26 tests; the reconstruction suite has 50. The combined
+local discovery command passes 76. These results check the finite examples,
+not unrestricted theorems. Two `verification/test_v2_f01*.py` bridge files include
+both suites in the full repository command.
+
+The full command was not run in the research container: a full checkout could
+not be obtained because git network name resolution failed. Connected GitHub
+reads and writes are available separately. Full GitHub Actions verification is
+checked for the exact publication commit before advancing `main`; it is distinct
+from the local targeted checks. Consult the commit's workflow result rather than
+infer a full pass from this note or from source inspection.
 
 From F11 onward also run:
 
