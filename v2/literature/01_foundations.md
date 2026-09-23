@@ -334,3 +334,26 @@ There are still eight core sources; the targeted supplement count is now four.
 Task status and exact measured literature time are in the
 [S2 record](../work_logs/F03_2026-09-22_S2.md). No whole-paper independent
 verification, adopted calculus, or readiness gate is claimed.
+
+
+## 6. S3 continuation: the author's range bridge
+
+The [Lawvere/value bridge audit](01c_lawvere_value_bridge.md) distinguishes
+reinterpretation, finite signed encoding, a restricted negative-cone translation,
+and signed values with nonnegative loss grades. S13 is a targeted Abelian-logic
+comparison motivated by the author's request for a two-sided range; S01-S12
+remain unchanged as source identities. The manifest records the actual inspected
+2002 version and source-specific locators, not a claim that the whole paper is
+verified. S12's finite-polynomial theorem is the explicit import target, with
+finitising premises covering both hypotheses and conclusion. A retrieved
+normalization-paragraph inconsistency remains documented. This continuation
+adds evidence without completing L60 or choosing the phase's calculus.
+
+
+## September 23 continuation: belief and KL lead
+
+[The S4R1 audit](01d_belief_kl_objectives.md) records five targeted primary
+supplements, precise finite belief/cost/transformer adapters, and their limits.
+The broad blog embeddings are not imported from an incomplete math rendering.
+Logarithmic identities and RLL's arithmetic theorem have distinct premises.
+F03 remains partial; see [actuals](../work_logs/F03_2026-09-23_S4R1_actuals.json).

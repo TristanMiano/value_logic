@@ -1,6 +1,6 @@
 # Phase Two Claim Ledger
 
-Version: F02 completion plus F03 partial audit, September 22, 2026.
+Version: F02 completion plus F03 S3 partial audit, September 23, 2026.
 Task status: **F01 complete (76 checks); F02 complete (124 dedicated checks and 61.118295 credited derivation minutes)**.
 No calculus has been selected and no readiness gate has passed.
 This is not a statement that the demonstrated arithmetic is unproved.
@@ -217,3 +217,54 @@ F03-T01 remains **not established**: the continuation is partial and L60 is not
 met. See the [session record](work_logs/F03_2026-09-22_S2.md) and appended
 [clock ledger](time_ledger.csv). No F01/F02 claim is marked refuted by these
 hypothesis checks, no repair gate is opened, and F04 has not begun.
+
+
+### F03 S3: Lawvere/value bridge
+
+The [bridge note](literature/01c_lawvere_value_bridge.md) and
+[32-check fixture suite](checks/f03_value_bridge.py) supply the following
+conditional arguments. The S12/S13 source interfaces are imported only at the
+listed scope; source theorems are not independently certified. This is same-agent
+review, not the later independent-review task or a new candidate-selection gate.
+
+| ID | Exact scope | Evidence and limits | Import consequence |
+|---|---|---|---|
+| F03-C17 | Nonnegative allowance plus cost has residual (required-available)+; a single threshold deficit loses all surplus above that threshold (section2). | Two-case arithmetic proof and exact fixtures; source polarity checked. | Source truth labels can receive a pragmatic interpretation without conflating larger cost with larger benefit or claiming lossless value representation. |
+| F03-C18 | Finite weak signed-polynomial consequence is equivalent to its nonnegative pair-compiled consequence with finitising guards on all premise and target letters (section3.1). | Countermodel transfer in both directions and term induction. Source Theorem11 then applies at its stated polynomial scope with full rules; no complete prover implemented. | Strengthens C13 with an explicit import interface, not a new unrestricted completeness theorem; inconsistent premises remain vacuous. |
+| F03-C19 | A zero/addition-preserving map from the signed reals into ordinary nonnegative reals is trivial; a homomorphism from the full extended nonnegative monoid into a group cannot be faithful (sections3.3,4.2). | Nonnegativity and group-cancellation proofs; elementary fixtures. | Signed scalar codes need changed operations, multiple channels, or a different algebra. Actual infinity endpoints are a separate issue from unbounded finite values. |
+| F03-C20 | The finite constant-zero additive cost fragment translates to the negative cone of the real Abelian algebra, with translated term value equal to minus its source value (section4.1). | Structural induction and bounded term/assignment fixtures. S13 supplies the original signed signature; multiplication, division, nonzero constants and infinity excluded. | A precise limited bridge, not a full RLL or constrained-consequence embedding into an enlarged Abelian logic. |
+| F03-C21 | With signed cost-oriented sequent values, unguarded internal left weakening fails, additive residuation is untruncated, and negative multiplication reverses numerical order (section4). | Explicit counterexamples and algebraic implications. | Direct range extension cannot keep all nonnegative rules. External hypothesis/disjunction weakening is not internal resource weakening. |
+| F03-C22 | On a common nonempty task family with finite signed values, sup of positive replacement losses is a directed extended distance; triangle composition holds and zero means directional dominance (section5). | Pointwise proof, sharp signed fixture, 15,625 profile triples. Unbounded-family statements use analytic identities, not sampled-integer coverage. | Values can be unbounded in both directions while comparison grades remain nonnegative; no automatic witness or infinite-supremum proof rule follows. |
+| F03-C23 | The polynomial graph yz=x uniquely specifies a finite signed quotient only with y nonzero, although pair encodings need not be unique (section3.4). | Graph identity and guarded zero-denominator/negative-denominator fixtures. | RLL endpoint division is not ordinary signed partial division; nonzero and witness obligations remain explicit. |
+| F03-C24 | Under S12's stated sequent semantics 1 |- 0 is valid and 0 |- 1 unsatisfiable; retrieved Phase5 Stage2 descriptions reverse these labels (section7). | Direct numerical checks; both parsed PDF and publisher HTML inspected. Page screenshot failed, so no author-confirmed erratum or theorem refutation is asserted. | Do not implement the retrieved normalizer literally. C18 uses polynomial Theorem11 directly and bypasses this normalization step. |
+
+F03-T01 remains **not established**. All prior source IDs and historical sessions
+are retained. See [S3 actuals](work_logs/F03_2026-09-23_S3_actuals.json) for
+cumulative credit and the remaining L60 obligation. No gate pass is claimed,
+F04 has not begun, and no F01/F02 result is retroactively refuted by this audit.
+
+### F03 S4R1: belief-function and KL source adapters
+
+The [belief/KL note](literature/01d_belief_kl_objectives.md) treats the author's
+lead as an import question, not a new fixed premise. S14–S18 are targeted
+sources. Broad source claims with incomplete formula extraction are not
+certified; finite adapter proofs are explicit and same-agent reviewed. The
+[33-check suite](checks/f03_belief_kl.py) uses binary64 logarithms with stated
+tolerances, not exact symbolic or independent proof verification.
+
+| ID | Scoped claim and location | Evidence / limits | Consequence for the project |
+|---|---|---|---|
+| F03-C25 | On a finite simplex, q↦D(q\|\|p) is a Bayesian belief subcase; closed-set indicators can have multiple zeros, conditional penalties depend on visited rows, and marginal penalties do not enforce independence (§2). | Finite definitions, chain-rule/entropy identities, explicit coupling and nonconvexity witnesses. | Separate belief object, its evaluation and minimum; distinguish belief strength from candidate fit. No universal KL primitive is adopted. |
+| F03-C26 | Positive weighted KL beliefs pool geometrically with the retained log-normalizer; hard-event and finite-likelihood updating give the stated posterior plus evidence offset (§§2.1,3). | Log expansions and source-specific support/normalizer assumptions; fixed examples. | Combining separately minimized scores or deleting constants across models loses information relevant to later queries. |
+| F03-C27 | Fixed-target cross-entropy differs from target-to-model KL by fixed entropy; this equivalence does not persist when that target is optimized. S17's specific PPO-ptx objective contains separately weighted reward, policy-reference KL and pretraining terms (§4). | Source equation checked; finite entropy and sequential chain-rule calculations. | A concrete multi-term value analogy, not a theorem about every training method or a probability distribution's truth. |
+| F03-C28 | A proper nonnegative lsc B on a finite simplex defines a finite monotone, shift-preserving, sup-norm nonexpansive concave transformer on finite signed costs. Its KL case has the stated exponential optimizer; robust sign gives a different transformer (§5). | Compactness/liminf and order arguments, exact variational identity, toleranced finite checks. | Useful bridge to T without globally bounded values; optimization of an external-world hypothesis is not an available action. |
+| F03-C29 | KL fails the triangle rule on the displayed binary triple; a shared finite stochastic channel nevertheless contracts it (§6.1). | Explicit logarithmic witness and joint/conditional decomposition; 6,561 common-channel comparisons. | Do not confuse KL with the distinct replacement-loss grade C22. General relation frameworks need their own import conditions. |
+| F03-C30 | Nonnegative lsc belief functions are not generally closed under pointwise truncated subtraction; finite continuous functions support the specified restricted connective fragment (§6.2). | Analytic sequence counterexample and continuity closure. | A shared numerical range does not establish an RLL model or complete deduction system. |
+| F03-C31 | A finite reference tilt and compensating cost shift preserve all candidate comparisons up to a known additive offset; unlabeled sums also lose source-retraction information (§7). | Direct log identity and label-collision example. | Belief and value components are not uniquely recovered from an aggregate objective without additional structure. |
+| F03-C32 | A nonnegative cost can be encoded by an auxiliary Bernoulli success likelihood when its input law is fixed; replacing fixedness with a finite KL penalty changes expected cost into a soft cost (§4.1). | S15 Proposition15/AppendixC.1.3 plus finite direct computation. | Representability does not independently justify the artificial belief or preserve the old control contract. |
+| F03-C33 | Integrable unbounded rewards can have divergent exponential moments; the specified geometric-reference/uniform-prefix family achieves beta log N (§5.1). | Analytic series/finite-support identities with finite prefix checks. | Finite soft values need an appropriate moment/support condition, not a universal ban on unbounded values. |
+
+F03-T01 remains **not established**. The [resumed record](work_logs/F03_2026-09-23_S4R1.md)
+credits 30.831357 cumulative literature minutes including saved S3;29.168643
+minutes remain. The unclosed interrupted attempt is excluded. No F04 work,
+readiness gate, whole-paper independent verification, or novelty claim is added.

@@ -4,7 +4,7 @@
   "base_commit": "65e91d9b46bf61566160de9dbdcb4a1a98b33f02",
   "access_date": "2026-09-22",
   "core_count": 8,
-  "supplementary_count": 4,
+  "supplementary_count": 10,
   "sources": [
     {
       "id": "S01",
@@ -580,13 +580,255 @@
       "claim_links": [
         "F03-C12",
         "F03-C13",
-        "F03-C14"
+        "F03-C14",
+        "F03-C17",
+        "F03-C18",
+        "F03-C24"
       ],
       "disposition": "Relevant unbounded arithmetic antecedent; finite semantic adapters and countermodels are worked separately. No source theorem silently transferred to a signed/typed/operational calculus or implemented proof engine.",
       "accessed_on": "2026-09-23",
       "scope_status": "checked only at listed locators",
       "whole_work_verified": false,
-      "metadata_notes": "Official landing title includes (Invited Paper); PDF short title is Rational Lawvere Logic. One targeted new source, not a replacement for the eight-core-source audit."
+      "metadata_notes": "Official landing title includes (Invited Paper); PDF short title is Rational Lawvere Logic. One targeted new source, not a replacement for the eight-core-source audit.",
+      "reinspections": [
+        {
+          "session": "2026-09-23-S3",
+          "date": "2026-09-23",
+          "locators": [
+            "Sections 2-4, Table 1; source 0/finite/infinity polarity",
+            "Section 6, Definition 10 and Theorem 11; printed pp.3:12,3:15-3:17",
+            "Section 6 Phase 5 Stage 2, printed p.3:15; publisher HTML and parsed PDF"
+          ],
+          "checked": "Polynomial guard covers premises and target; signed-polynomial adapter lands directly in Theorem 11. Lemma 14 already splits signed polynomial coefficients. Numeric normalization representatives checked against sequent semantics.",
+          "source_text_issue": "Retrieved PDF and publisher HTML call 0 |- 1 valid and 1 |- 0 unsatisfiable in Phase 5 Stage 2. These are reversed under the displayed semantics. Page image unavailable; no author-confirmed erratum claimed. Theorem 11 adapter bypasses this normalization.",
+          "visuals": "Table 1 successfully viewed. Requested page images for definitions and printed3:15 failed. No OCR.",
+          "whole_work_verified": false,
+          "project_note": "01c_lawvere_value_bridge.md, sections1-3 and7"
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "key": "MetcalfeOlivettiGabbay2002",
+      "role": "supplementary",
+      "title": "Sequent and Hypersequent Calculi for Abelian and Lukasiewicz Logics",
+      "authors": [
+        "George Metcalfe",
+        "Nicola Olivetti",
+        "Dov Gabbay"
+      ],
+      "publication_year": 2002,
+      "inspected_version": "arXiv:cs/0211021v1, submitted 18 November 2002; theorem numbering and pages refer to this preprint",
+      "primary_urls": [
+        "https://arxiv.org/abs/cs/0211021v1",
+        "https://arxiv.org/pdf/cs/0211021"
+      ],
+      "locators": [
+        "Definition4, printed p.4 (PDF index3)",
+        "Section2.3, Definitions10-11, Theorem12, printed pp.5-6 (PDF indices4-5)",
+        "Definitions21 and23, Theorem24, printed pp.7-8 (PDF indices6-7)",
+        "Section4.1, Definitions29-30, Theorem32, Propositions34-38 and Theorem39, printed pp.9-12"
+      ],
+      "inspection": "Read characteristic signed real algebra, zero-designated inequality convention, restricted negative translations, and the hypersequent completeness proof route. PDF page screenshots failed; precise arithmetic conclusions use unambiguous parsed definitions and separate calculations.",
+      "hypotheses": [
+        "Original constant-zero lattice-ordered abelian-group signature; implication is additive difference",
+        "Validity means value at least zero, not exact zero and not a probabilistic truth degree",
+        "No automatic import of arbitrary named constants, binary real multiplication, division, infinity, or operational policies",
+        "Hypersequent external structural rules must not be confused with internal antecedent rules"
+      ],
+      "mapping": "01c_lawvere_value_bridge.md, section4; explicitly restricted finite additive negative-cone translation",
+      "claim_links": [
+        "F03-C20",
+        "F03-C21"
+      ],
+      "disposition": "Targeted antecedent for the author-requested two-sided range. Not a selected core, fifth candidate, or verified proof-engine implementation.",
+      "accessed_on": "2026-09-23",
+      "scope_status": "checked only at listed definitions and selected proof steps",
+      "whole_work_verified": false,
+      "metadata_notes": "Cite inspected 2002 preprint rather than transfer its theorem numbers to later publication. Parsed split-rule line repeats a consequent label whereas the soundness proof distinguishes them; that line is not implemented as a rule."
+    },
+    {
+      "id": "S14",
+      "key": "davidad2026Imprecise",
+      "title": "Imprecise beliefs: a tiny introduction",
+      "authors": [
+        "davidad"
+      ],
+      "publication_year": 2026,
+      "inspected_version": "Post dated July 29, 2026, 22:17 UTC; retrieved September 23, 2026; displayed formulas partly absent in extracted text",
+      "primary_urls": [
+        "https://www.greaterwrong.com/posts/e7Pd4Q9TF7jFdmPgz/imprecise-beliefs-a-tiny-introduction",
+        "https://www.lesswrong.com/posts/e7Pd4Q9TF7jFdmPgz/imprecise-beliefs-a-tiny-introduction"
+      ],
+      "locators": [
+        "Beliefs according to davidad: Definitions1-2 and sum slogan",
+        "Bayesian beliefs and updating: prose around Definitions3-10 and Theorems11-12",
+        "PDG section and Oliver Richardson comment discussion"
+      ],
+      "inspection": "Checked accessible prose about lsc functionals, reversed numeric order, additive combination and normalization. Formula extraction was incomplete on both mirrors; exact general formula claims and embedding theorem proofs are not certified.",
+      "hypotheses": [
+        "Finite-simplex constructions in the adapter are independently derived, not quoted from missing formulas",
+        "A Bayesian fixed-reference KL functional is one subcase, not all imprecise belief objects",
+        "Observational nonnegative penalties are distinct from signed structural PDG scores"
+      ],
+      "mapping": "01d_belief_kl_objectives.md sections2-3,6-7",
+      "claim_links": [
+        "F03-C25",
+        "F03-C26",
+        "F03-C30"
+      ],
+      "disposition": "Author-supplied conceptual lead with explicit inspection limits; not a mandatory value primitive.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-23",
+      "scope_status": "checked only at listed definitions and selected source arguments",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S15",
+      "key": "Richardson2022LossPDG",
+      "title": "Loss as the Inconsistency of a Probabilistic Dependency Graph: Choose Your Model, Not Your Loss Function",
+      "authors": [
+        "Oliver E. Richardson"
+      ],
+      "publication_year": 2022,
+      "inspected_version": "AISTATS2022, PMLR151, pp.2706-2735; publisher PDF",
+      "primary_urls": [
+        "https://proceedings.mlr.press/v151/richardson22b.html",
+        "https://proceedings.mlr.press/v151/richardson22b/richardson22b.pdf"
+      ],
+      "locators": [
+        "Section2 equation1 and observational incompatibility versus its infimum",
+        "Section3 Propositions2-5; section4 Proposition8",
+        "Section5 Proposition9 and Lemma10",
+        "AppendixC parsed proofs at PDF indices13-14 and20-21; conditioning proof on index16",
+        "Section9 Proposition15 and AppendixC.1.3, parsed PDF indices8 and28"
+      ],
+      "inspection": "Read explicit weighted conditional KL, fixed-data entropy offsets, hard-observation and geometric-pool identities. PDF indices1-4 and16 were visually inspected; screenshots for13,20,21 failed and only parsed proofs were used there. Inspected arbitrary nonnegative-cost Bernoulli encoding and finite-confidence tilt; screenshots8/28 failed, so their diagrams are not used.",
+      "hypotheses": [
+        "Observation weights nonnegative; positive weights and common support with nonzero normalizer for pooling",
+        "Fixed empirical distribution for dropping entropy in optimization",
+        "No blanket sign guarantee for all structural-score parameters"
+      ],
+      "mapping": "01d_belief_kl_objectives.md sections2-4",
+      "claim_links": [
+        "F03-C25",
+        "F03-C26",
+        "F03-C27"
+      ],
+      "disposition": "Primary antecedent for specific loss/epistemic-inconsistency bridges; source theorems not enlarged to all task values.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-23",
+      "scope_status": "checked only at listed definitions and selected source arguments",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S16",
+      "key": "RichardsonEtAl2026LIR",
+      "title": "Local Inconsistency Resolution: The Interplay between Attention and Control in Probabilistic Models",
+      "authors": [
+        "Oliver E. Richardson",
+        "Mandana Samiei",
+        "Mehran Shakerinava",
+        "Joseph D. Viviano",
+        "Abdessamad El Kabid",
+        "Ali Parviz",
+        "Yoshua Bengio"
+      ],
+      "publication_year": 2026,
+      "inspected_version": "arXiv:2604.17140v1, April 18, 2026",
+      "primary_urls": [
+        "https://arxiv.org/abs/2604.17140v1",
+        "https://arxiv.org/html/2604.17140v1"
+      ],
+      "locators": [
+        "Section2 equations1-3, Definition1",
+        "Section3 equation4 and Proposition1",
+        "Section4.1 attention/control examples"
+      ],
+      "inspection": "Checked the observational joint-KL rewriting, structural entropy term, parametric/attention/control distinctions and stated convexity conditions. No experiment or algorithm-convergence verification.",
+      "hypotheses": [
+        "Conditional penalty compares q_TS with q_S times a supplied conditional",
+        "Unconditional/log-concave controlled parameters and beta>=gamma alpha are specific convexity conditions, not automatic for every PDG",
+        "Candidate external-world laws and controllable policy parameters play different roles"
+      ],
+      "mapping": "01d_belief_kl_objectives.md sections2,4-5",
+      "claim_links": [
+        "F03-C25",
+        "F03-C28"
+      ],
+      "disposition": "Targeted primary check for the user-supplied bridge, not a new selected inference engine.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-23",
+      "scope_status": "checked only at listed definitions and selected source arguments",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S17",
+      "key": "OuyangEtAl2022InstructGPT",
+      "title": "Training language models to follow instructions with human feedback",
+      "authors": [
+        "Long Ouyang",
+        "others"
+      ],
+      "publication_year": 2022,
+      "inspected_version": "arXiv:2203.02155v1, March 4, 2022",
+      "primary_urls": [
+        "https://arxiv.org/abs/2203.02155v1",
+        "https://arxiv.org/html/2203.02155v1"
+      ],
+      "locators": [
+        "Section3.5 equation2 and PPO/PPO-ptx explanation"
+      ],
+      "inspection": "Read the explicit reward, policy-reference log-ratio penalty and pretraining log-likelihood terms; checked which law supplies each expectation.",
+      "hypotheses": [
+        "KL arises from expectation of the log ratio under the first/policy argument",
+        "Pretraining term uses a separately fixed data law",
+        "This is one historical training objective, not a survey of all current methods or an account of human values"
+      ],
+      "mapping": "01d_belief_kl_objectives.md section4",
+      "claim_links": [
+        "F03-C27"
+      ],
+      "disposition": "Concrete multi-term loss example; no training result or contemporary universal claim imported.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-23",
+      "scope_status": "checked only at listed definitions and selected source arguments",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S18",
+      "key": "RafailovEtAl2023DPO",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "authors": [
+        "Rafael Rafailov",
+        "others"
+      ],
+      "publication_year": 2023,
+      "inspected_version": "arXiv:2305.18290v3, July 29, 2024; v1 May 29, 2023",
+      "primary_urls": [
+        "https://arxiv.org/abs/2305.18290v3",
+        "https://arxiv.org/html/2305.18290v3"
+      ],
+      "locators": [
+        "Sections3-4 equations3-5",
+        "AppendixA.1 equations11-15"
+      ],
+      "inspection": "Read optimizer derivation, support/partition conditions and discarded value constants. Preserve the exact factor and log partition in the independent identity; the printed max/min chain is not used as a scalar-value equality.",
+      "hypotheses": [
+        "Positive beta, compatible reference support and finite partition function",
+        "General nonparametric policy optimum need not lie in a restricted implementation family",
+        "Finite signed adapter does not transfer to divergent exponential moments"
+      ],
+      "mapping": "01d_belief_kl_objectives.md sections5,7",
+      "claim_links": [
+        "F03-C28",
+        "F03-C31"
+      ],
+      "disposition": "Known variational optimizer antecedent; no implemented DPO learner or source-wide proof verification.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-23",
+      "scope_status": "checked only at listed definitions and selected source arguments",
+      "whole_work_verified": false
     }
   ],
   "follow_up_leads": [
@@ -628,7 +870,7 @@
     "secondary generated summaries were not used for mathematical claims"
   ],
   "copyright_note": "No external paper, scan, figure, or font is redistributed in this research package.",
-  "audit_scope": "8 core sources, 4 targeted supplementary checks after S2; not an exhaustive survey or whole-work verification",
-  "latest_session": "2026-09-22-S2",
+  "audit_scope": "Eight original core sources plus ten targeted supplements. All exact locators are version-specific; interrupted sessions contribute no inferred research credit.",
+  "latest_session": "F03_2026-09-23_S4R1",
   "latest_access_date": "2026-09-23"
 }

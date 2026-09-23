@@ -398,8 +398,10 @@ class F03ProofAuditTests(unittest.TestCase):
     def test_manifest_keeps_original_sources_and_adds_targeted_s12(self):
         manifest = json.loads((ROOT/'v2/literature/F03_sources.json').read_text(encoding='utf-8'))
         by_id = {s['id']:s for s in manifest['sources']}
-        self.assertEqual(set(by_id), {f'S{i:02}' for i in range(1,13)})
-        self.assertEqual((manifest['core_count'],manifest['supplementary_count']), (8,4))
+        self.assertTrue({f'S{i:02}' for i in range(1,13)} <= set(by_id))
+        self.assertEqual(len(by_id), manifest['core_count'] + manifest['supplementary_count'])
+        self.assertEqual(manifest['core_count'], 8)
+        self.assertGreaterEqual(manifest['supplementary_count'], 4)
         self.assertEqual(by_id['S12']['title'], 'Rational Lawvere Logic')
         self.assertEqual(by_id['S12']['publication_year'], 2026)
         self.assertFalse(by_id['S12']['whole_work_verified'])

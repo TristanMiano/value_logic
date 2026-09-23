@@ -1,6 +1,6 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 22, 2026.
+Last updated: September 23, 2026.
 Status: F01 and F02 complete; F03 has a recorded partial audit; no permanent calculus selected or readiness gate passed.
 
 ## Resume here
@@ -329,6 +329,27 @@ to publication with an unsound core simply because the planned queue ended.
   Three mixed intervals were conservatively excluded from L credit. See the
   [S2 record](v2/work_logs/F03_2026-09-22_S2.md) for the amendments and exact clocks.
   F03 remains unchecked and selected; F04 and all readiness gates remain unstarted.
+
+  **Continuation — September 23, 2026, S3.** Resumed from the last published
+  S2 checkpoint after interrupted attempts. The author's proposed Lawvere/value
+  bridge is examined in [a scoped translation audit](v2/literature/01c_lawvere_value_bridge.md):
+  nonnegative costs, finite signed pairs, a restricted bridge to Abelian logic,
+  and signed values with nonnegative directional replacement loss. Added one
+  targeted signed-algebra source (S13), preserving all prior source identities.
+  The new 32 tests and combined 102 F03 checks pass locally. Credited L is
+  4.298997 minutes; cumulative L is 27.529878, leaving 32.470122 of L60.
+  The [S3 record](v2/work_logs/F03_2026-09-23_S3.md) preserves source-text issues,
+  exact timing, initial test failure and repair, and the local-only delivery.
+  F03 remains unchecked and selected; no F04, core choice, or gate is advanced.
+
+  **Resumed September 23,2026 (S4R1).** Incorporated the saved S3 bridge and
+  added a [belief/KL source audit](v2/literature/01d_belief_kl_objectives.md)
+  with finite probability, normalization, loss-combination and continuation
+  mappings. Five targeted sources join the earlier audit;33 new numeric checks
+  bring F03 discovery to135 passing checks. Cumulative credited L is
+  30.831357 minutes; 29.168643 remain. The recovered unclosed attempt adds no
+  credit. [The work record](v2/work_logs/F03_2026-09-23_S4R1.md) preserves proof/source
+  limits and actual clocks. F03 stays unchecked and selected; no F04 or gate.
 
 - [ ] **F04 — hostile examples and candidate discrimination.**
 

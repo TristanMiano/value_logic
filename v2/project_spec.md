@@ -1,6 +1,6 @@
 # Phase Two Project Specification
 
-Version: F02 completion, September 22, 2026.
+Version: F02 completion plus F03 S3 partial audit, September 23, 2026.
 Status: **F01 and F02 complete; no permanent calculus selected and no readiness gate passed**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -152,3 +152,41 @@ also retain their exact source conditions. The new numerical fixtures do not
 establish a full proof checker or a new soundness/completeness theorem.
 
 F03 remains partial. F04 and Gate A are not advanced by these source checks.
+
+
+### F03 S3: the proposed Lawvere-to-value bridge
+
+The [bridge audit](literature/01c_lawvere_value_bridge.md) separates three
+questions: pragmatic interpretation of existing numerical semantics, encoding
+signed values in that semantics, and changing the algebra itself. Finite signed
+polynomial comparisons compile to guarded nonnegative polynomial sequents;
+Abelian logic supplies an existing signed additive/lattice antecedent. These
+are possible resources for later design, not an adopted calculus.
+
+A further option keeps two-sided value profiles while grading replacement loss
+nonnegatively. Its task-relative directed loss obeys a triangle bound, even
+when absolute values are unbounded. It does not recover missing dependence,
+certify unobserved performance, or supply a common implementation witness.
+The finite polynomial import uses S12 Theorem 11 directly; a retrieved-text
+normalization inconsistency is recorded rather than silently implemented.
+F03's protected literature obligation remains incomplete. F04 and Gate A remain
+unattempted, and the original project motivation and phase-one results survive.
+
+
+### F03 S4R1: belief penalties and broader task value
+
+The [belief/KL audit](literature/01d_belief_kl_objectives.md) checks the new
+author-supplied lead against primary sources. A Bayesian KL functional is one
+nonnegative belief object, not every imprecise belief. Proper lsc penalties on
+a finite simplex generate monotone, shift-preserving continuation-cost maps;
+finite signed costs need no universal bound. Combining beliefs retains shared
+arguments, normalization offsets and source labels when the query needs them.
+KL itself does not obey the prior replacement-distance triangle, and general
+lsc beliefs are not closed under every pointwise RLL connective. No existing
+RLL theorem is silently extended to logarithms or available-policy witnesses.
+
+The source manifest now has8 core sources and 10 targeted supplements.
+This session's33 checks bring F03 to135 passing local tests. The
+[session record](work_logs/F03_2026-09-23_S4R1.md) credits 3.301479 additional L minutes;
+cumulative L is 30.831357, leaving 29.168643 of L60. The interrupted unclosed
+attempt receives no credit. **Continue F03; no core or gate has been selected.**

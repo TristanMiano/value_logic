@@ -1,0 +1,44 @@
+test_KL_nonnegativity_and_unique_zero_on_grid (__main__.F03BeliefKLTests.test_KL_nonnegativity_and_unique_zero_on_grid) ... ok
+test_KL_support_conventions (__main__.F03BeliefKLTests.test_KL_support_conventions) ... ok
+test_KL_triangle_rule_is_false (__main__.F03BeliefKLTests.test_KL_triangle_rule_is_false) ... ok
+test_aggregation_loses_revision_labels (__main__.F03BeliefKLTests.test_aggregation_loses_revision_labels) ... ok
+test_belief_cost_reallocation_preserves_comparisons (__main__.F03BeliefKLTests.test_belief_cost_reallocation_preserves_comparisons) ... ok
+test_chain_rule_uses_first_argument_prefix_law (__main__.F03BeliefKLTests.test_chain_rule_uses_first_argument_prefix_law) ... ok
+test_combination_not_sum_of_individual_minima (__main__.F03BeliefKLTests.test_combination_not_sum_of_individual_minima) ... ok
+test_conditioning_identity_and_offset (__main__.F03BeliefKLTests.test_conditioning_identity_and_offset) ... ok
+test_cross_entropy_fixed_first_argument (__main__.F03BeliefKLTests.test_cross_entropy_fixed_first_argument) ... ok
+test_cross_entropy_variable_first_argument_not_KL (__main__.F03BeliefKLTests.test_cross_entropy_variable_first_argument_not_KL) ... ok
+test_different_channels_do_not_give_contraction (__main__.F03BeliefKLTests.test_different_channels_do_not_give_contraction) ... ok
+test_impossible_event_has_no_posterior (__main__.F03BeliefKLTests.test_impossible_event_has_no_posterior) ... ok
+test_imprecise_indicator_has_multiple_zeros (__main__.F03BeliefKLTests.test_imprecise_indicator_has_multiple_zeros) ... ok
+test_joint_and_conditional_KL_agree (__main__.F03BeliefKLTests.test_joint_and_conditional_KL_agree) ... ok
+test_likelihood_update_value_identity (__main__.F03BeliefKLTests.test_likelihood_update_value_identity) ... ok
+test_lsc_residual_counterexample_sequence (__main__.F03BeliefKLTests.test_lsc_residual_counterexample_sequence) ... ok
+test_normalized_bayesian_beliefs_not_pointwise_ordered (__main__.F03BeliefKLTests.test_normalized_bayesian_beliefs_not_pointwise_ordered) ... ok
+test_probability_validation (__main__.F03BeliefKLTests.test_probability_validation) ... ok
+test_proper_finite_penalty_transformer_need_not_normalize_zero (__main__.F03BeliefKLTests.test_proper_finite_penalty_transformer_need_not_normalize_zero) ... ok
+test_same_posterior_different_evidence_cost (__main__.F03BeliefKLTests.test_same_posterior_different_evidence_cost) ... ok
+test_sampled_log_ratio_can_be_negative (__main__.F03BeliefKLTests.test_sampled_log_ratio_can_be_negative) ... ok
+test_shared_channel_contracts_KL (__main__.F03BeliefKLTests.test_shared_channel_contracts_KL) ... ok
+test_soft_value_and_optimizer (__main__.F03BeliefKLTests.test_soft_value_and_optimizer) ... ok
+test_soft_value_identity_all_q (__main__.F03BeliefKLTests.test_soft_value_identity_all_q) ... ok
+test_soft_value_restricted_support_and_invalid_inputs (__main__.F03BeliefKLTests.test_soft_value_restricted_support_and_invalid_inputs) ... ok
+test_soft_value_shift_and_nonexpansiveness (__main__.F03BeliefKLTests.test_soft_value_shift_and_nonexpansiveness) ... ok
+test_source_ids_versions_and_cardinality (__main__.F03BeliefKLTests.test_source_ids_versions_and_cardinality) ... FAIL
+test_unbounded_exponential_moment_prefix_identity (__main__.F03BeliefKLTests.test_unbounded_exponential_moment_prefix_identity) ... ok
+test_unvisited_conditional_row_not_certified (__main__.F03BeliefKLTests.test_unvisited_conditional_row_not_certified) ... ok
+test_weighted_geometric_pool (__main__.F03BeliefKLTests.test_weighted_geometric_pool) ... ok
+
+======================================================================
+FAIL: test_source_ids_versions_and_cardinality (__main__.F03BeliefKLTests.test_source_ids_versions_and_cardinality)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/f03_resume/work/v2/checks/f03_belief_kl.py", line 353, in test_source_ids_versions_and_cardinality
+    self.assertEqual(data['core_count']+data['supplementary_count'], len(ids))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 16 != 18
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.118s
+
+FAILED (failures=1)

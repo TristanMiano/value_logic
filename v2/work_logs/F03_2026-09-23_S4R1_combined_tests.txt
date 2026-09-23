@@ -1,0 +1,41 @@
+..........................F............................F.........................F............................................F.....
+======================================================================
+FAIL: test_source_ids_versions_and_cardinality (v2.checks.f03_belief_kl.F03BeliefKLTests.test_source_ids_versions_and_cardinality)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/f03_resume/work/v2/checks/f03_belief_kl.py", line 353, in test_source_ids_versions_and_cardinality
+    self.assertEqual(data['core_count']+data['supplementary_count'], len(ids))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 16 != 18
+
+======================================================================
+FAIL: test_source_manifest_and_bibliography_integrity (v2.checks.f03_imports.F03ImportTests.test_source_manifest_and_bibliography_integrity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/f03_resume/work/v2/checks/f03_imports.py", line 254, in test_source_manifest_and_bibliography_integrity
+    self.assertEqual(len(sources), manifest["core_count"] + manifest["supplementary_count"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 18 != 16
+
+======================================================================
+FAIL: test_manifest_keeps_original_sources_and_adds_targeted_s12 (v2.checks.f03_proof_audit.F03ProofAuditTests.test_manifest_keeps_original_sources_and_adds_targeted_s12)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/f03_resume/work/v2/checks/f03_proof_audit.py", line 402, in test_manifest_keeps_original_sources_and_adds_targeted_s12
+    self.assertEqual(len(by_id), manifest['core_count'] + manifest['supplementary_count'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 18 != 16
+
+======================================================================
+FAIL: test_source_manifest_preserves_previous_sources (v2.checks.f03_value_bridge.F03ValueBridgeTests.test_source_manifest_preserves_previous_sources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/f03_resume/work/v2/checks/f03_value_bridge.py", line 379, in test_source_manifest_preserves_previous_sources
+    self.assertEqual(len(data['sources']), data['core_count']+data['supplementary_count'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 18 != 16
+
+----------------------------------------------------------------------
+Ran 132 tests in 1.499s
+
+FAILED (failures=4)

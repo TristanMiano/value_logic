@@ -1,0 +1,39 @@
+[
+  {
+    "label": "bridge",
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "v2.checks.f03_value_bridge",
+      "--json",
+      "v2/checks/F03_value_bridge_results.json"
+    ],
+    "start_utc": "2026-09-23T13:16:40.070673+00:00",
+    "end_utc": "2026-09-23T13:16:41.826766+00:00",
+    "start_monotonic_ns": 1452182195450,
+    "end_monotonic_ns": 1453937580634,
+    "seconds": 1.755385184,
+    "returncode": 0,
+    "output": "v2/work_logs/F03_2026-09-23_S3_bridge_tests.txt"
+  },
+  {
+    "label": "combined",
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "verification",
+      "-p",
+      "test_v2_f03*.py"
+    ],
+    "start_utc": "2026-09-23T13:16:41.826910+00:00",
+    "end_utc": "2026-09-23T13:16:43.690713+00:00",
+    "start_monotonic_ns": 1453938435207,
+    "end_monotonic_ns": 1455802032726,
+    "seconds": 1.863597519,
+    "returncode": 1,
+    "output": "v2/work_logs/F03_2026-09-23_S3_combined_tests.txt"
+  }
+]

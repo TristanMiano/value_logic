@@ -1,0 +1,15 @@
+...................................................F..................................................
+======================================================================
+FAIL: test_manifest_keeps_original_sources_and_adds_targeted_s12 (v2.checks.f03_proof_audit.F03ProofAuditTests.test_manifest_keeps_original_sources_and_adds_targeted_s12)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/f03_s3/work/v2/checks/f03_proof_audit.py", line 401, in test_manifest_keeps_original_sources_and_adds_targeted_s12
+    self.assertEqual(set(by_id), {f'S{i:02}' for i in range(1,13)})
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Items in the first set but not the second:
+'S13'
+
+----------------------------------------------------------------------
+Ran 102 tests in 0.878s
+
+FAILED (failures=1)
