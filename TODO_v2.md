@@ -320,6 +320,16 @@ to publication with an unsound core simply because the planned queue ended.
   [session record](v2/work_logs/F03_2026-09-22_S1.md) for scope, actual clocks,
   source-access limits, and remaining proof-system review. No F04 or gate started.
 
+  **Continuation — September 22, 2026, S2.** Rechecked proof-system and solver
+  assumptions; added the targeted 2026 Rational Lawvere Logic source and
+  [worked source-adapter checks](v2/literature/01b_proof_system_audit.md).
+  The new suite passes 39 tests; both F03 suites pass 70 together. Source IDs
+  S01-S11 and the S1 history remain intact. This session credits 17.200387 L
+  minutes; cumulative F03 L is 23.230881, leaving 36.769119 of L60.
+  Three mixed intervals were conservatively excluded from L credit. See the
+  [S2 record](v2/work_logs/F03_2026-09-22_S2.md) for the amendments and exact clocks.
+  F03 remains unchecked and selected; F04 and all readiness gates remain unstarted.
+
 - [ ] **F04 — hostile examples and candidate discrimination.**
 
   Principal artifact: `v2/derivations/01_candidate_countermodels.md`.

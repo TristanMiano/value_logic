@@ -321,3 +321,16 @@ The session record must determine whether F03's L60 floor has been reached.
 Until then the F03 checkbox remains unchecked and the next pointer remains F03,
 even when the present notes are useful for later work. Mathematical proofs,
 source-access limits and executable checks have different evidence roles.
+
+
+## 7. Continuation: proof-system and solver checks
+
+[S2's focused audit](01b_proof_system_audit.md) rechecks the source hypotheses,
+adds S12 (*Rational Lawvere Logic*, CSL 2026), and works explicit adapters for
+substitution, signed arithmetic, finite budget queries, factor elimination and
+robust action coupling. The source manifest preserves S1 entries and adds dated
+reinspection records rather than silently replacing what was originally checked.
+There are still eight core sources; the targeted supplement count is now four.
+Task status and exact measured literature time are in the
+[S2 record](../work_logs/F03_2026-09-22_S2.md). No whole-paper independent
+verification, adopted calculus, or readiness gate is claimed.

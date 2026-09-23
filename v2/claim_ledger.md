@@ -192,3 +192,28 @@ only the specified passages, not every proof in every work. The
 A source-condition mismatch is recorded as a restriction on a prospective import,
 not as a retroactive refutation of an already correctly scoped F02 theorem.
 New contradictions in a used claim would require the roadmap's repair procedure.
+
+
+### F03 S2: source-adapter and guarded-inference checks
+
+The [continued audit](literature/01b_proof_system_audit.md) and
+[39-check suite](checks/f03_proof_audit.py) add the following scoped results.
+Proofs are the displayed elementary adapter arguments; source theorems remain
+imports only under their own hypotheses. Numerical tests are not independent
+certification of those full theorems. Source S12 is a targeted supplementary
+addition, with publication and inspection metadata in the versioned manifest.
+
+| ID | Exact scope | Evidence and limits | Import consequence |
+|---|---|---|---|
+| F03-C10 | A finite ordered variable-relation context encodes all its supplied quantitative premises; contextual substitution must preserve each ordered pair. Mean-zero classes need not be a congruence for minimum. | Section 2 and finite context/collision checks; S02's apparent reflection wording is an unresolved transcription/proof-step question, not a declared theorem refutation. | Preserve S10's guarded substitution and ordinary equality; no full typed translation established. |
+| F03-C11 | The capped directed shortfall on real values admits the displayed triangle, sum and bottleneck bounds; scaled error lambda*epsilon requires epsilon<1, with separate saturated-endpoint treatment. | Section 2.3 proof; 6,561 tuple checks and explicit half-scale counterexample. | A bounded relation does not bound the value carrier or retain a finite error bound at the cap. |
+| F03-C12 | S12's stated arithmetic uses 0*infinity=0 and the specified residual endpoints; sequent antecedent multiplicity matters, and infinite cancellation is invalid. Its completeness theorem is for the full finite-theory proof system. | Primary definitions/theorem hypotheses checked; section 3 arithmetic and 125-case adjunction fixtures. Full proof system and completeness proof not independently certified or implemented. | A relevant unbounded arithmetic antecedent, not an automatic Value Logic core. |
+| F03-C13 | Finite nonnegative pairs encode finite signed polynomial values and comparisons, with exact sum, negation, product and min/max adapters. | Section 4 induction/identities and exact fraction checks; infinite pair coordinates are excluded. | Finite signed comparisons can be represented without choosing undefined infinite subtraction or claiming efficient proof search. |
+| F03-C14 | The minimum over a finite nonempty menu of its maximum normalized violation is zero exactly when some option is feasible. Infinite infima and per-model witness choices do not preserve that common existential guarantee. | Section 5; 729 finite menu/budget cases plus attainment and quantifier countermodels. | Complete arithmetic reasoning does not recover lost alignment, observation access or a common implementation witness. |
+| F03-C15 | A once-only finite variable elimination preserves the displayed joint optimum; copying a factor into a retained factorization changes total cost from three to five. | Section 6 exact table and factor checks. Not a counterexample to S06's idempotence-qualified propagation results. | Algebra match, solution preservation and termination remain separate solver-import obligations. |
+| F03-C16 | Under the stated shared two-model reward table, optimal mixing has worst value 1/2; actionwise rectangular relaxation gives zero. Conditioning on survival can reverse a finite reward comparison. | Sections 7-8, finite mixing and row-mass identities; no infinite-horizon or general measurable-policy theorem imported. | Keep S08's actionwise uncertainty condition and S03/S05's mass/shift interfaces explicit. |
+
+F03-T01 remains **not established**: the continuation is partial and L60 is not
+met. See the [session record](work_logs/F03_2026-09-22_S2.md) and appended
+[clock ledger](time_ledger.csv). No F01/F02 claim is marked refuted by these
+hypothesis checks, no repair gate is opened, and F04 has not begun.

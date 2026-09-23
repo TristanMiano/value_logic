@@ -138,3 +138,17 @@ shows that amplifying operations are not ruled out merely by the 2016 framework'
 max-metric rule, but it does not waive relation-preserving substitution or other
 proof-system hypotheses. These findings constrain future imports without changing
 the four candidates or selecting a permanent core.
+
+
+### F03 S2: a numerical proof language is not the whole operational semantics
+
+The [continued audit](literature/01b_proof_system_audit.md) adds Rational Lawvere
+Logic (CSL 2026) as a fixed-arithmetic antecedent. Finite signed-polynomial and
+budget-query adapters clarify what can be represented, without selecting that
+logic as the project core. Finiteness, zero/infinity conventions, typed units,
+nonempty compatible evidence, and a common available strategy witness remain
+explicit obligations. Relational substitution and semiring algorithm imports
+also retain their exact source conditions. The new numerical fixtures do not
+establish a full proof checker or a new soundness/completeness theorem.
+
+F03 remains partial. F04 and Gate A are not advanced by these source checks.

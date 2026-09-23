@@ -1,0 +1,50 @@
+[
+  {
+    "name": "proof_audit",
+    "command": [
+      "python",
+      "-m",
+      "v2.checks.f03_proof_audit",
+      "--json",
+      "v2/checks/F03_proof_audit_results.json"
+    ],
+    "start_utc": "2026-09-23T01:26:07.991821+00:00",
+    "start_mono_ns": 2496735584725,
+    "end_mono_ns": 2498305325715,
+    "elapsed_seconds": 1.56974099,
+    "returncode": 0
+  },
+  {
+    "name": "original",
+    "command": [
+      "python",
+      "-m",
+      "v2.checks.f03_imports",
+      "--json",
+      "/mnt/data/f03_s2/original_reproduction.json"
+    ],
+    "start_utc": "2026-09-23T01:26:09.561966+00:00",
+    "start_mono_ns": 2498305740695,
+    "end_mono_ns": 2499903441659,
+    "elapsed_seconds": 1.597700964,
+    "returncode": 0
+  },
+  {
+    "name": "combined",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "verification",
+      "-p",
+      "test_v2_f03*.py"
+    ],
+    "start_utc": "2026-09-23T01:26:11.159859+00:00",
+    "start_mono_ns": 2499903635143,
+    "end_mono_ns": 2501756165902,
+    "elapsed_seconds": 1.852530759,
+    "returncode": 0
+  }
+]

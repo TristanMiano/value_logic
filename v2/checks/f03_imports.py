@@ -251,8 +251,9 @@ class F03ImportTests(unittest.TestCase):
     def test_source_manifest_and_bibliography_integrity(self):
         manifest = json.loads((ROOT / "v2/literature/F03_sources.json").read_text(encoding="utf-8"))
         sources = manifest["sources"]
-        self.assertEqual(len(sources), 11)
-        self.assertEqual(len({s["id"] for s in sources}), 11)
+        self.assertEqual(len(sources), manifest["core_count"] + manifest["supplementary_count"])
+        self.assertEqual(len({s["id"] for s in sources}), len(sources))
+        self.assertTrue({f"S{i:02}" for i in range(1, 12)} <= {s["id"] for s in sources})
         self.assertEqual(sum(s["role"] == "core" for s in sources), 8)
         bib = (ROOT / "v2/references.bib").read_text(encoding="utf-8")
         keys = re.findall(r"@\w+\{([^,]+),", bib)

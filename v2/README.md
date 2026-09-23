@@ -20,11 +20,14 @@ checks give **124 passing dedicated F02 tests**. Credited derivation time is
 [completion record](work_logs/F02_2026-09-22_S2.md) preserves actual clocks,
 source-check limits, research evidence and the cumulative package disposition.
 **F03 is in progress.** Its [first audit](literature/01_foundations.md) covers
-8 core sources plus 3 targeted supplements and records
-[exact import boundaries](literature/01a_import_boundaries.md), not a selected
-calculus. The 31 [finite checks](checks/f03_imports.py) pass locally.
-The [session record](work_logs/F03_2026-09-22_S1.md) credits 6.030494 L minutes;
-L60 remains unmet. **Next: continue F03 — external foundations audit.**
+8 core sources plus 4 targeted supplements after S2. The
+[proof-system audit](literature/01b_proof_system_audit.md) extends the
+[original import boundaries](literature/01a_import_boundaries.md) with explicit
+source adapters, not a selected calculus. The 31 original checks plus 39 new
+checks pass locally (70 combined). The unchanged
+[S1 record](work_logs/F03_2026-09-22_S1.md) and
+[S2 record](work_logs/F03_2026-09-22_S2.md) credit 23.230881 cumulative L minutes;
+36.769119 minutes of L60 remain. **Next: continue F03 — external foundations audit.**
 No calculus has been selected, and no readiness gate has passed.
 
 The intended result is a small, explicit calculus with operationally meaningful
@@ -175,3 +178,17 @@ includes them in the existing full command when a complete checkout is used.
 Full local repository verification was unavailable in this session; publication
 status and CI must be checked for the actual resulting GitHub commit, not inferred
 from this note. The original `python -m verification` requirement is unchanged.
+
+### F03 continuation checks
+
+```text
+python -m v2.checks.f03_proof_audit --json v2/checks/F03_proof_audit_results.json
+python -m unittest discover -s verification -p 'test_v2_f03*.py'
+```
+
+The S2 commands pass 39 new and 70 combined tests respectively. They check
+explicit arithmetic conventions and finite source adapters, not the complete
+Rational Lawvere proof system. S2 expands the source manifest by one targeted
+source and updates its integrity test to retain all original source IDs.
+The full repository command and exact-commit GitHub Actions requirement remain
+unchanged; full local verification was unavailable without a complete checkout.
