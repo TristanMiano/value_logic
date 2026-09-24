@@ -1,6 +1,6 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 23, 2026.
+Last updated: September 24, 2026.
 Status: F01 and F02 complete; F03 has a recorded partial audit; no permanent calculus selected or readiness gate passed.
 
 ## Resume here
@@ -350,6 +350,18 @@ to publication with an unsound core simply because the planned queue ended.
   30.831357 minutes; 29.168643 remain. The recovered unclosed attempt adds no
   credit. [The work record](v2/work_logs/F03_2026-09-23_S4R1.md) preserves proof/source
   limits and actual clocks. F03 stays unchecked and selected; no F04 or gate.
+
+  **Continuation — September 24, 2026, S5.** Verified the author's local push
+  at `f9d5ef6`. The [context/source audit](v2/literature/01e_belief_value_import_contracts.md)
+  distinguishes value-summary equality from stability under belief updates,
+  gives an exact counterexample and repair for S16's parameter-convexity claim,
+  and supplies rational logarithm/KL certificates at the RLL import boundary.
+  Forty new tests and 175 combined F03 checks pass locally. No source is added;
+  the S16 disposition is corrected with its earlier record retained.
+  Credited L is 2.090113 minutes; cumulative L is 32.921469, leaving 27.078531.
+  Three mixed blocks receive no L credit. See [S5](v2/work_logs/F03_2026-09-24_S5.md).
+  F03 remains partial and selected. This is a local package, not a pushed commit
+  or a passed readiness gate; no F04 work is started.
 
 - [ ] **F04 — hostile examples and candidate discrimination.**
 

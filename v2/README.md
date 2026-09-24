@@ -19,13 +19,14 @@ checks give **124 passing dedicated F02 tests**. Credited derivation time is
 **61.118295 minutes** across S1 and S2, satisfying D60. The
 [completion record](work_logs/F02_2026-09-22_S2.md) preserves actual clocks,
 source-check limits, research evidence and the cumulative package disposition.
-**F03 is in progress.** The [source audit](literature/01_foundations.md) has
-8 core sources and 10 targeted supplements. The saved
-[Lawvere/value bridge](literature/01c_lawvere_value_bridge.md) is joined by
-[belief/KL adapters](literature/01d_belief_kl_objectives.md). Combined F03
-fixtures pass **135 tests**. [S4R1](work_logs/F03_2026-09-23_S4R1.md) records cumulative
-L of **30.831357 minutes**, leaving **29.168643** of L60. The interrupted
-unclosed attempt receives no credit. **Next: continue F03.**
+**F03 is in progress.** The [source audit](literature/01_foundations.md) retains
+8 core sources and 10 targeted supplements. The latest
+[context/import audit](literature/01e_belief_value_import_contracts.md) adds
+40 checks, for **175 passing F03 tests**. It records a scoped source-convexity
+correction and exact rational KL certificates without selecting a calculus.
+[S5](work_logs/F03_2026-09-24_S5.md) records cumulative literature time
+**32.921469 minutes**, leaving **27.078531** of L60.
+The earlier interrupted and mixed blocks remain uncredited. **Next: continue F03.**
 No calculus has been selected, and no readiness gate has passed.
 
 The intended result is a small, explicit calculus with operationally meaningful
@@ -221,3 +222,23 @@ python -m v2.checks.f03_belief_kl --json v2/checks/F03_belief_kl_results.json
 These 33 checks use toleranced floating-point logarithms, not exact symbolic
 proof. Historical suite counts above refer to their recorded checkpoints; the
 current combined F03 discovery total is 135.
+
+
+## Latest F03 checkpoint: context audit (September 24, 2026)
+
+F03 remains **partial**. [The new source/mapping note](literature/01e_belief_value_import_contracts.md)
+adds update-context distinctions, a scoped S16 convexity counterexample and
+repair, and exact rational logarithm/KL certificates. Its new **40 tests** pass;
+combined F03 discovery passes **175**. Use:
+
+```text
+python -m v2.checks.f03_context_audit --json v2/checks/F03_context_audit_results.json
+python -m unittest discover -s verification -p 'test_v2_f03*.py'
+```
+
+The certificate report uses exact fractions; selected numerical reference
+tests use explicitly stated binary64 tolerances. This is not a completed
+calculus or whole-paper independent verification. The
+[S5 work record](work_logs/F03_2026-09-24_S5.md) records actual time, source
+inspection limits, and package-only delivery. The authoritative pointer is
+still F03; F04 and all gates remain unattempted.

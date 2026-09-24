@@ -1,6 +1,6 @@
 # Phase Two Claim Ledger
 
-Version: F02 completion plus F03 S3 partial audit, September 23, 2026.
+Version: F02 completion plus F03 S5 partial audit, September 24, 2026.
 Task status: **F01 complete (76 checks); F02 complete (124 dedicated checks and 61.118295 credited derivation minutes)**.
 No calculus has been selected and no readiness gate has passed.
 This is not a statement that the demonstrated arithmetic is unproved.
@@ -268,3 +268,30 @@ F03-T01 remains **not established**. The [resumed record](work_logs/F03_2026-09-
 credits 30.831357 cumulative literature minutes including saved S3;29.168643
 minutes remain. The unclosed interrupted attempt is excluded. No F04 work,
 readiness gate, whole-paper independent verification, or novelty claim is added.
+
+
+## F03 continuation S5 — source corrections and update-aware bridges
+
+Source snapshot: `f9d5ef6485e947eafd13b3983b477d31f7595cb6`; September 24, 2026.
+F03 remains partial. [Proof and source-audit note](literature/01e_belief_value_import_contracts.md);
+[fixtures](checks/f03_context_audit.py); [exact report](checks/F03_context_audit_results.json).
+All review is same-agent. No novelty or external author confirmation is claimed.
+
+| ID | Exact scoped statement | Evidence / import boundary | Dependencies and effect |
+|---|---|---|---|
+| F03-C34 | For proper nonnegative lsc B on a finite simplex, T_B(f)=inf_q(B(q)+q·f)=-B*(-f). All these queries reconstruct B**; proper closed convex B is recovered. | Direct dual identities and affine-minorant argument, with S07 closed-convex biconjugacy; exact quadratic positive-control fixtures. | F03-C28; current value equivalence need not retain a nonconvex belief. No general efficient inversion is established. |
+| F03-C35 | Independence-indicator and zero penalties on two binary variables give the same T for every finite cost vector. Adding uniform-marginal constraints separates their mismatch values as 1/2 and 0. | Proof via deterministic vertices and full parameterization of fair joint laws; 81 cost vectors over 35 rational laws are finite regressions, not the all-vector proof. | Both updated feasible sets are nonempty. Refutes update congruence for this summary interface, not value-first reasoning in general. |
+| F03-C36 | Equality of context-indexed Phi_B(H,f) on a context family containing0 and closed under addition is preserved by every admitted further context. | Explicit associative identity; finite constraint-intersection checks. | Positive restriction/repair of C35; singleton contexts recover B pointwise but no compact representation claim follows. |
+| F03-C37 | S16 Proposition1's stated parameter-convexity conditions are satisfied by two unconditional binary KL arcs (one logit-parameterized, one uniform; gamma0, beta1), but their minimized sum violates Jensen. | Two closed-form optimizer derivations; exact integer inequality 2825761>2050625; rational gap lower bound>1/10; PDF3/17/18 statement/proof inspection. | O-S16-01: reject this broad import as written in arXiv v1. Prior observation definitions and F03-C25/C28 survive; no downstream gate relied on it. Not an author-confirmed erratum. |
+| F03-C38 | Joint convexity suffices for proper partial-minimum convexity; affine unconditional probability coordinates satisfy it for the finite gamma0 two-KL objective. | S07 section3.2.5 plus explicit relative-entropy Hessian-square proof and finite reference checks. | Constructive replacement for C37; not a theorem for arbitrary structural PDGs or logit coordinates. |
+| F03-C39 | For rational r>0, equations8-9 enclose log r with exact rational endpoints at every finite index n>=0, converging as n grows. | Finite geometric identity/integral remainder proof; exact reciprocal/nesting checks and separately labeled binary64 references. | External analytic certificate; does not introduce a logarithm connective into RLL. |
+| F03-C40 | Fixed rational finite distributions give a certified KL interval by nonnegative weighted addition of C39, with support mismatch treated as+infinity. Finite budget comparisons have the stated guarded RLL arithmetic translation. | Exact Fraction bounds and status checks; nonnegativity proved separately; S12 finite-polynomial guard boundary. | Not an implemented RLL prover, universal optimization certificate, or completeness theorem for logarithms. Equality may remain unresolved. |
+
+**Correction disposition.** S16's original source inspection remains historical;
+its current manifest entry rejects the parameter-convexity import, preserving
+the previous wording in a dated reinspection record. O-S16-01 has a scoped
+internal disposition and constructive replacement, not an external resolution.
+There is no invalidated gate and no change to F01/F02's completed claims.
+The S02 stronger parsed substitution paragraph still has an explicit inspection
+limit. F03-T01 remains unestablished until the time floor and final source
+handoff are complete. The next pointer remains F03.

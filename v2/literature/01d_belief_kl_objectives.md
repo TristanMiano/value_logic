@@ -450,3 +450,14 @@ literature inspection, independent adapter derivation and computation separate.
 No F04 work, readiness-gate pass, complete theorem prover or novelty claim is
 introduced. Task completion still depends on F03's recorded L60 and evidence
 requirements, not this note's length or the number of passing fixtures.
+
+
+## S5 source-audit correction (September 24, 2026)
+
+[The next audit](01e_belief_value_import_contracts.md), section 4, gives a finite
+counterexample to S16 Proposition 1's parameter-convexity statement as written
+in arXiv v1, and a constructive joint-convexity repair. The observational KL
+definitions used here survive. This correction does not retract the earlier
+penalty-to-continuation result: its concavity is in the continuation cost f,
+not convexity in a learned model parameter. The old inspection record remains
+historical; the source manifest now marks the rejected import explicitly.

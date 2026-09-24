@@ -357,3 +357,15 @@ supplements, precise finite belief/cost/transformer adapters, and their limits.
 The broad blog embeddings are not imported from an incomplete math rendering.
 Logarithmic identities and RLL's arithmetic theorem have distinct premises.
 F03 remains partial; see [actuals](../work_logs/F03_2026-09-23_S4R1_actuals.json).
+
+
+## S5 consolidation — context preservation and convexity (September 24, 2026)
+
+[The new import-contract note](01e_belief_value_import_contracts.md) compares
+belief/value duality with S07's conjugacy and partial-minimization hypotheses,
+adds exact rational logarithm/KL enclosures for the S12 arithmetic boundary,
+and records a scoped counterexample to S16 Proposition 1. No new bibliography
+entry is added. A targeted retry of the earlier S02 rule-page inspection
+succeeded on PDF page1 but again failed on page2; the stronger parsed reflection
+sentence remains unused. F03 is still partial; no whole-paper independent
+verification, fixed core, or readiness-gate pass is claimed.

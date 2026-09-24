@@ -1,6 +1,6 @@
 # Phase Two Project Specification
 
-Version: F02 completion plus F03 S3 partial audit, September 23, 2026.
+Version: F02 completion plus F03 S5 partial audit, September 24, 2026.
 Status: **F01 and F02 complete; no permanent calculus selected and no readiness gate passed**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -190,3 +190,18 @@ This session's33 checks bring F03 to135 passing local tests. The
 [session record](work_logs/F03_2026-09-23_S4R1.md) credits 3.301479 additional L minutes;
 cumulative L is 30.831357, leaving 29.168643 of L60. The interrupted unclosed
 attempt receives no credit. **Continue F03; no core or gate has been selected.**
+
+
+## S5 import-contract refinement (September 24, 2026)
+
+The [context audit](literature/01e_belief_value_import_contracts.md) distinguishes
+a belief penalty from the family of values obtained by optimizing against
+linear costs. That family can forget nonconvex dependence assumptions needed
+by later belief additions; a declared context family supplies a restricted
+repair. Exact rational log/KL enclosures provide analytic side certificates
+for numerical comparisons without adding an unproved logarithmic logic.
+
+One S16 parameter-convexity statement is rejected as written, with an exact
+finite witness and a joint-convexity replacement. The prior nonnegative KL and
+signed-cost adapters remain valid at their scopes. No core or gate is selected;
+F03 remains partial. The restored root README and prior research are preserved.

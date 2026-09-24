@@ -1,0 +1,110 @@
+{
+  "task": "F03",
+  "session": "2026-09-24-S5",
+  "kind": "constructed development fixtures; not a whole-paper proof or a selected calculus",
+  "arithmetic": "Fraction certificates; binary64 used only by separately named reference tests",
+  "context_collision": {
+    "outcomes": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "cost": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "prior_value_equality": "for every finite cost vector: both min(cost); proved in note",
+    "after_fair_marginals_independent": "1/2",
+    "after_fair_marginals_unrestricted": "0",
+    "grid_simplex_denominator": 4,
+    "grid_laws": 35,
+    "grid_cost_vectors": 81
+  },
+  "S16_objection": {
+    "id": "O-S16-01",
+    "source_version": "arXiv:2604.17140v1",
+    "claim": "Proposition 1 parameter convexity is refuted as stated by this finite model",
+    "gamma": 0,
+    "beta": [
+      1,
+      1
+    ],
+    "parameter_points": [
+      "0",
+      "2*log(9)",
+      "4*log(9)"
+    ],
+    "probabilities": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "81/82",
+        "1/82"
+      ],
+      [
+        "6561/6562",
+        "1/6562"
+      ]
+    ],
+    "optimizers": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "9/10",
+        "1/10"
+      ],
+      [
+        "81/82",
+        "1/82"
+      ]
+    ],
+    "minimum_log_arguments": [
+      "1",
+      "41/25",
+      "3281/1681"
+    ],
+    "integer_sign_certificate": {
+      "left": 2825761,
+      "right": 2050625,
+      "strict_positive_difference": 775136
+    },
+    "jensen_gap_enclosure": {
+      "lower": "2339040666632353635349356494287351076760192509296/14590142798252131855272718846632476352650852303865",
+      "upper": "956338281904698182968100016292413445077610384/5965298012235020941265672546032115427299803575"
+    },
+    "gap_exceeds": "1/10",
+    "repair": "joint convexity, for example affine probability coordinates in this finite gamma=0 setting",
+    "external_review": "not author-confirmed; same-agent derivation and computational checks"
+  },
+  "fixed_kl_certificate": {
+    "q": [
+      "1/4",
+      "3/4"
+    ],
+    "p": [
+      "1/2",
+      "1/2"
+    ],
+    "last_series_index": 6,
+    "bounds": {
+      "lower": "12232335594736008487/93510780644531250000",
+      "upper": "20387226399066595961/155851301074218750000"
+    },
+    "budget": "1/5",
+    "status": "guaranteed"
+  },
+  "finite_enumerations": {
+    "log_ratio_grid": "a/b for integers a,b in 1..8, n=0..5",
+    "log_nested_grid": "a/b for integers a,b in 1..8, consecutive n=0..5",
+    "binary_kl_grid": "q=k/8, p=j/8 for k,j=0..8",
+    "pool_reference": "a in {1,3,9,81}, q=k/10 for k=0..10",
+    "convex_recovery_grid": "q0=k/8 for k=0..8"
+  }
+}
