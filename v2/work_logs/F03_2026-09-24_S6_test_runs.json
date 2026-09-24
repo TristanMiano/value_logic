@@ -1,0 +1,41 @@
+[
+  {
+    "label": "new_tests",
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "v2.checks.f03_handoff",
+      "--json",
+      "v2/checks/F03_handoff_results.json"
+    ],
+    "cwd": "repository root (source-verified overlay)",
+    "start_utc": "2026-09-24T20:45:29.688753+00:00",
+    "end_utc": "2026-09-24T20:45:30.464686+00:00",
+    "start_monotonic_ns": 1643666710351,
+    "end_monotonic_ns": 1644442620267,
+    "elapsed_seconds": 0.775909916,
+    "exit_code": 0,
+    "output": "F03_2026-09-24_S6_new_tests.txt"
+  },
+  {
+    "label": "combined_tests",
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "verification",
+      "-p",
+      "test_v2_f03*.py"
+    ],
+    "cwd": "repository root (source-verified overlay)",
+    "start_utc": "2026-09-24T20:45:30.464955+00:00",
+    "end_utc": "2026-09-24T20:45:32.183500+00:00",
+    "start_monotonic_ns": 1644442898596,
+    "end_monotonic_ns": 1646161433973,
+    "elapsed_seconds": 1.718535377,
+    "exit_code": 0,
+    "output": "F03_2026-09-24_S6_combined_tests.txt"
+  }
+]

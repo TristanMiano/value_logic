@@ -363,6 +363,17 @@ to publication with an unsound core simply because the planned queue ended.
   F03 remains partial and selected. This is a local package, not a pushed commit
   or a passed readiness gate; no F04 work is started.
 
+  **Continuation — September 24, 2026, S6.** Verified the author's S5 push at
+  `9ba491f`. The [consolidated handoff](v2/literature/01f_consolidated_source_handoff.md)
+  and [import register](v2/literature/F03_import_contracts.json) state the usable
+  interfaces and guards for the existing 18 sources, without adding references.
+  Two finite adapters address directed profile gains and pointwise arithmetic
+  versus uniform witnesses/belief types. Fourteen new tests and 189 combined
+  F03 checks pass locally. Credited L is 5.615791 minutes; cumulative L is
+  38.537260, leaving 21.462740. Mixed, interrupted and retrieval intervals are
+  not credited. See [S6](v2/work_logs/F03_2026-09-24_S6.md). This is a local package;
+  F03 remains partial and selected, with no F04 or gate started.
+
 - [ ] **F04 — hostile examples and candidate discrimination.**
 
   Principal artifact: `v2/derivations/01_candidate_countermodels.md`.

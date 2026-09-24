@@ -1,6 +1,6 @@
 # Phase Two Project Specification
 
-Version: F02 completion plus F03 S5 partial audit, September 24, 2026.
+Version: F02 completion plus F03 S6 partial audit, September 24, 2026.
 Status: **F01 and F02 complete; no permanent calculus selected and no readiness gate passed**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -205,3 +205,20 @@ One S16 parameter-convexity statement is rejected as written, with an exact
 finite witness and a joint-convexity replacement. The prior nonnegative KL and
 signed-cost adapters remain valid at their scopes. No core or gate is selected;
 F03 remains partial. The restored root README and prior research are preserved.
+
+
+## F03 S6: consolidated source-use handoff
+
+The [source-use note](literature/01f_consolidated_source_handoff.md) and
+[register](literature/F03_import_contracts.json) state eligible finite interfaces,
+required hypotheses and stronger inferences not obtained from each source.
+The register is not an automatic proof checker. The four candidates remain
+alternatives; source compatibility has not selected a winner.
+
+The directed profile adapter now states the exact monotonicity/subhomogeneous
+gain condition, including substochastic finite maps. The pointwise arithmetic
+adapter distinguishes a valid numerical expression from an lsc belief and an
+attained optimizer. These refine C41/C42 without weakening past claims.
+F03 remains partial under its measured source-review requirement; F04 has not
+started. Root motivation, phase-one results and existing source history remain
+unchanged.

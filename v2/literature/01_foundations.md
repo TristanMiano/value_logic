@@ -369,3 +369,15 @@ entry is added. A targeted retry of the earlier S02 rule-page inspection
 succeeded on PDF page1 but again failed on page2; the stronger parsed reflection
 sentence remains unused. F03 is still partial; no whole-paper independent
 verification, fixed core, or readiness-gate pass is claimed.
+
+
+## S6 consolidated handoff (September 24, 2026)
+
+[The source-use handoff](01f_consolidated_source_handoff.md) and
+[structured import register](F03_import_contracts.json) consolidate the existing
+18 references without adding a source. They distinguish conditional theorem
+interfaces from comparisons, unreadable leads and rejected stronger claims.
+Two finite adapters clarify directed gains for signed profiles and the boundary
+between pointwise arithmetic, uniform witnesses and lsc belief types. The
+[session record](../work_logs/F03_2026-09-24_S6.md) keeps this checkpoint partial;
+189 combined F03 checks are not a substitute for L60 or a later soundness gate.

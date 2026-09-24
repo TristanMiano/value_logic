@@ -295,3 +295,25 @@ There is no invalidated gate and no change to F01/F02's completed claims.
 The S02 stronger parsed substitution paragraph still has an explicit inspection
 limit. F03-T01 remains unestablished until the time floor and final source
 handoff are complete. The next pointer remains F03.
+
+
+## F03 continuation S6 — consolidated source-use interfaces
+
+Source snapshot: `9ba491f34158f3ba2e3f4883a8d7d197c166d43b`; September 24, 2026.
+[Consolidated source note](literature/01f_consolidated_source_handoff.md),
+[import register](literature/F03_import_contracts.json),
+[finite fixtures](checks/f03_handoff.py), and
+[report](checks/F03_handoff_results.json). The register validates metadata only;
+it does not establish source proofs or pick a core. Earlier source dispositions
+and source IDs are preserved; no source is added.
+
+| ID | Exact scoped statement | Evidence and import boundary | Dependencies / impact |
+|---|---|---|---|
+| F03-C41 | For n,m>=1, finite L>=0 and F:R^n->R^m, d_m(Fx,Fy)<=L d_n(x,y), with d_n=max(0,max_i(x_i-y_i)), iff F is monotone and F(x+c1)<=F(x)+Lc1 for all c>=0. Gains compose; nonnegative matrices have the row-sum bound. | Direct two-direction proof in section6; S05 section2 antecedent and explicit finite S03 adaptation; exact rational regressions. | No global magnitude cap, exact shift identity or probability semantics required. Ordinary addition needs gain2, not gain1. This does not make KL a Lawvere distance. |
+| F03-C42 | Pointwise use of the exact S12 algebra preserves scalar single-sequent sound consequence, but not a uniform branch from pointwise disjunction. Proper nonnegative lsc atoms can form h(0)=1,h(q)=q (q>0), whose infimum0 is unattained. | Structural interpretation argument, quantifier witness and analytic sequence proof in section7; finite exact checks are regressions, not the limiting proof. | Extends the limits in C28/C30: wider arithmetic-expression type, belief type and optimizer-attainment conditions are distinct. No new complete function-valued calculus is claimed. |
+
+The [S6 record](work_logs/F03_2026-09-24_S6.md) credits 5.615791 literature minutes,
+for cumulative 38.537260; 21.462740 remain against L60. The handoff table identifies
+conditional usable interfaces and stronger statements not imported, including
+retained O-S16-01. F03-T01 remains unestablished while the protected review is
+incomplete; F03 stays selected, F04 unstarted and all gates unattempted.

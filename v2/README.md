@@ -221,10 +221,10 @@ python -m v2.checks.f03_belief_kl --json v2/checks/F03_belief_kl_results.json
 
 These 33 checks use toleranced floating-point logarithms, not exact symbolic
 proof. Historical suite counts above refer to their recorded checkpoints; the
-current combined F03 discovery total is 135.
+S4R1 combined F03 discovery total was 135.
 
 
-## Latest F03 checkpoint: context audit (September 24, 2026)
+## F03 S5 checkpoint: context audit (September 24, 2026)
 
 F03 remains **partial**. [The new source/mapping note](literature/01e_belief_value_import_contracts.md)
 adds update-context distinctions, a scoped S16 convexity counterexample and
@@ -242,3 +242,26 @@ calculus or whole-paper independent verification. The
 [S5 work record](work_logs/F03_2026-09-24_S5.md) records actual time, source
 inspection limits, and package-only delivery. The authoritative pointer is
 still F03; F04 and all gates remain unattempted.
+
+
+## Latest F03 checkpoint: consolidated source handoff (September 24, 2026)
+
+F03 remains **partial**. The [handoff note](literature/01f_consolidated_source_handoff.md)
+and [source-use register](literature/F03_import_contracts.json) consolidate all
+18 source identities and spell out import guards. They are not a theorem prover
+or a permanent core. Two finite adapters separate directed substitution gains,
+pointwise arithmetic, uniform witnesses, and belief/attainment types.
+
+```text
+python -m v2.checks.f03_handoff --json v2/checks/F03_handoff_results.json
+python -m unittest discover -s verification -p 'test_v2_f03*.py'
+```
+
+The new suite passes **14 tests**, and combined F03 discovery passes **189**.
+All new numerical fixtures use exact fractions. Source-register tests check
+bookkeeping, not the truth of external theorems. See the
+[S6 record](work_logs/F03_2026-09-24_S6.md) for clocks and source-access limits.
+Cumulative literature time is 38.537260 minutes; 21.462740 remain against L60.
+This is an incremental local package based on the author's `9ba491f` commit,
+not a push or new CI run. The full repository command was not run locally.
+F03 remains selected; F04 and all gates are unattempted.

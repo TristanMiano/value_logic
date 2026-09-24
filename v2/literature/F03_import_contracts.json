@@ -1,0 +1,600 @@
+{
+  "schema_version": 1,
+  "task": "F03",
+  "session": "2026-09-24-S6",
+  "status": "partial",
+  "source_base": "9ba491f34158f3ba2e3f4883a8d7d197c166d43b",
+  "is_proof_checker": false,
+  "selects_calculus": false,
+  "passes_gate": false,
+  "scope": "Hand-audited source-use register; metadata validation is not theorem verification.",
+  "source_count": 18,
+  "core_count": 8,
+  "supplementary_count": 10,
+  "contracts": [
+    {
+      "source_id": "S01",
+      "title": "Abstract Interpretation: A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints",
+      "status": "comparison-only",
+      "candidate_ids": [
+        "P",
+        "T",
+        "G"
+      ],
+      "usable_interface": "Abstract/concrete approximation and fixed-point comparison.",
+      "required_hypotheses": [
+        "Complete ordered domains",
+        "Monotone maps",
+        "Declared abstraction/concretization and local simulation inequality",
+        "Correct inequality polarity"
+      ],
+      "not_licensed": [
+        "No fixed-point theorem for incomplete raw-real or finite-menu carriers",
+        "No termination or finite-computation theorem from an adjunction alone"
+      ],
+      "locators": [
+        "Section 6, printed 242",
+        "Appendix H1-H3 and T1-T2, printed 251-252"
+      ],
+      "inspection_this_checkpoint": "Reinspected source scan; PDF indices 5,14,15 viewed successfully.",
+      "primary_urls": [
+        "https://www.di.ens.fr/~cousot/COUSOTpapers/POPL77.shtml",
+        "https://www.di.ens.fr/~cousot/COUSOTpapers/publications.www/CousotCousot-POPL-77-ACM-p238--252-1977.pdf"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S02",
+      "title": "Quantitative Algebraic Reasoning",
+      "status": "conditional-interface",
+      "candidate_ids": [
+        "S",
+        "P",
+        "T"
+      ],
+      "usable_interface": "Quantitative metric equations with the source nonexpansiveness and rule interface.",
+      "required_hypotheses": [
+        "Specified extended symmetric metric",
+        "Max-product nonexpansive operations",
+        "Basic-theory hypotheses where required",
+        "Source substitution and infinitary Archimedean rules"
+      ],
+      "not_licensed": [
+        "Not a theorem for unscaled addition with max-input gain one",
+        "Stronger parsed substitution-reflection sentence remains unused",
+        "Not a finitary decision procedure"
+      ],
+      "locators": [
+        "Definitions 2.1-2.2,3.1",
+        "Section 5, Theorems 5.1-5.2"
+      ],
+      "inspection_this_checkpoint": "Parsed manuscript rechecked; PDF index 2 screenshot failed; stronger wording remains unresolved rather than an asserted erratum.",
+      "primary_urls": [
+        "https://strathprints.strath.ac.uk/70265/",
+        "https://strathprints.strath.ac.uk/70265/1/Mardare_etal_LICS2016_Quantitative_algebraic_reasoning.pdf"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S03",
+      "title": "Semantics of Probabilistic Programs",
+      "status": "finite-adapter",
+      "candidate_ids": [
+        "T"
+      ],
+      "usable_interface": "Positive linear distribution semantics and its explicitly derived finite backward matrix specialization.",
+      "required_hypotheses": [
+        "Nonnegative transition entries",
+        "Mass bound appropriate to the evaluation",
+        "Specified rewards and termination outcome",
+        "Finite continuation values for the current adapter"
+      ],
+      "not_licensed": [
+        "Contraction does not mean probability mass is preserved",
+        "No arbitrary unbounded-function dual theorem is imported"
+      ],
+      "locators": [
+        "Section 3.3, clauses 3.3.1-3.3.5",
+        "Theorems 3.3.8-3.3.9"
+      ],
+      "inspection_this_checkpoint": "Parsed author PDF rechecked; screenshot requests at indices 11 and 13 failed.",
+      "primary_urls": [
+        "https://www.cs.cornell.edu/kozen/Papers/ProbSem.pdf"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S04",
+      "title": "Max-Min Representation of Piecewise Linear Functions",
+      "status": "conditional-interface",
+      "candidate_ids": [
+        "T"
+      ],
+      "usable_interface": "Finite max-min representation of a continuous finite-piece affine function.",
+      "required_hypotheses": [
+        "Stated closed convex domain",
+        "Finitely many affine components",
+        "Source piecewise-linear interpretation"
+      ],
+      "not_licensed": [
+        "No finite-size bound for arbitrary monotone maps",
+        "No efficient learning or available policy witness from the representation alone"
+      ],
+      "locators": [
+        "Definitions 2.1-2.2",
+        "Lemma 4.1 and Theorem 4.1",
+        "Section 5 limitations"
+      ],
+      "inspection_this_checkpoint": "HTML preprint definitions and proof rechecked; rendering date is not the publication date.",
+      "primary_urls": [
+        "https://arxiv.org/abs/math/0009026",
+        "https://arxiv.org/html/math/0009026"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S05",
+      "title": "Minimax Representation of Nonexpansive Functions and Application to Zero-Sum Recursive Games",
+      "status": "conditional-interface",
+      "candidate_ids": [
+        "P",
+        "T"
+      ],
+      "usable_interface": "Order/shift/nonexpansiveness relations and scoped minimax representation.",
+      "required_hypotheses": [
+        "Declared order unit and top or top-positive-part convention",
+        "Monotonicity plus exact homogeneity or subhomogeneity, as applicable",
+        "Positive homogeneity for the no-instantaneous-payment result"
+      ],
+      "not_licensed": [
+        "General outer minimax index need not be finite",
+        "A representation using the unknown function is not an implementation algorithm",
+        "Exact homogeneity is not required for the weaker directed-gain adapter"
+      ],
+      "locators": [
+        "Section 2, M/AH/ASH and top-positive-part equivalence",
+        "Theorem 3.4 and Corollary 3.8",
+        "Corollary 3.11"
+      ],
+      "inspection_this_checkpoint": "Versioned HTML rechecked; finite gain/dimension adapter proved in the current note.",
+      "primary_urls": [
+        "https://arxiv.org/abs/1605.04518",
+        "https://arxiv.org/html/1605.04518v2",
+        "https://www.heldermann.de/JCA/JCA25/JCA251/jca25014.htm"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S06",
+      "title": "Semiring-Based Constraint Satisfaction and Optimization",
+      "status": "comparison-only",
+      "candidate_ids": [
+        "G"
+      ],
+      "usable_interface": "Semiring combination/projection and solver hypotheses as separate interfaces.",
+      "required_hypotheses": [
+        "Arbitrary joins for the cited c-semiring",
+        "Multiplicative unit is additive top",
+        "Multiplicative idempotence for the cited repeated local-consistency result",
+        "Separate termination/parsing hypotheses"
+      ],
+      "not_licensed": [
+        "Finite signed-cost upper sets do not satisfy the full c-semiring axioms",
+        "Minkowski addition is not idempotent",
+        "An algebra resemblance does not import a solver"
+      ],
+      "locators": [
+        "Definitions 2.1-2.2",
+        "Theorem 2.9",
+        "Theorem 4.16"
+      ],
+      "inspection_this_checkpoint": "Author-uploaded parsed journal text rechecked; damaged typography remains a limitation. Earlier section-5 review is retained, not re-certified as a fresh complete proof.",
+      "primary_urls": [
+        "https://bista.sites.dmi.unipg.it/papers/index-old.html",
+        "https://www.researchgate.net/publication/2297172_Semiring-based_constraint_satisfaction_and_optimization"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S07",
+      "title": "Convex Optimization",
+      "status": "conditional-interface",
+      "candidate_ids": [
+        "S",
+        "P",
+        "T",
+        "G"
+      ],
+      "usable_interface": "Scalarization, partial minimization, and conjugacy under their distinct hypotheses.",
+      "required_hypotheses": [
+        "Convex feasible image where a converse uses it",
+        "Nonnegative versus positive weights distinguished",
+        "Joint convexity and properness for partial minimization",
+        "Attainment for exact epigraph-projection equality",
+        "Closed proper convex function for exact biconjugacy"
+      ],
+      "not_licensed": [
+        "Separate convexity does not imply joint convexity",
+        "An infimum is not automatically attained",
+        "Current conjugate equality need not survive arbitrary belief updates"
+      ],
+      "locators": [
+        "Section 3.2.5, printed 87-88",
+        "Section 3.3.2 and Exercise 3.39(d)",
+        "Section 4.7.4"
+      ],
+      "inspection_this_checkpoint": "Parsed source checked; PDF indices 100 and 101 newly viewed successfully. Prior scalarization/figure review retained.",
+      "primary_urls": [
+        "https://www.seas.ucla.edu/~vandenbe/cvxbook.html",
+        "https://www.seas.ucla.edu/~vandenbe/cvxbook/bv_cvxbook.pdf",
+        "https://web.stanford.edu/~boyd/cvxbook/cvxbook_errata.html"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S08",
+      "title": "Robust Dynamic Programming",
+      "status": "finite-adapter",
+      "candidate_ids": [
+        "T"
+      ],
+      "usable_interface": "Finite robust Bellman recursion under specified temporal and actionwise uncertainty.",
+      "required_hypotheses": [
+        "Allowed history-conditioned kernels can be pasted",
+        "Actionwise uncertainty separation where equation (15) uses it",
+        "Finite specialization avoids unproved measurable-selection extensions",
+        "Decision maker receives only declared observations"
+      ],
+      "not_licensed": [
+        "A shared hidden parameter is not automatically rectangular",
+        "Randomization cannot be discarded under action-coupled uncertainty by this theorem"
+      ],
+      "locators": [
+        "Section 2, Assumption 1",
+        "Theorem 1, equations (9)-(15)"
+      ],
+      "inspection_this_checkpoint": "Author-uploaded report statement and proof equations rechecked; report version remains distinct from journal pagination.",
+      "primary_urls": [
+        "https://pubsonline.informs.org/doi/abs/10.1287/moor.1040.0129",
+        "https://www.columbia.edu/~gi10/pubs/",
+        "https://www.researchgate.net/publication/220442530_Robust_Dynamic_Programming"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S09",
+      "title": "Beyond Nonexpansive Operations in Quantitative Algebraic Reasoning",
+      "status": "comparison-only",
+      "candidate_ids": [
+        "S",
+        "P",
+        "T"
+      ],
+      "usable_interface": "Operation-specific liftings in a generalized quantitative-equation framework.",
+      "required_hypotheses": [
+        "Chosen bounded relation axioms",
+        "Source-compatible operation lifting",
+        "Required preservation of isometric embeddings"
+      ],
+      "not_licensed": [
+        "No universal real-error calculus or automatic logarithm rule",
+        "Not a new source reinspection in S6"
+      ],
+      "locators": [
+        "Section 2.3",
+        "Definitions 3.1-3.2 and 3.11",
+        "Theorem 3.14"
+      ],
+      "inspection_this_checkpoint": "Earlier inspected record retained; not freshly reinspected in S6.",
+      "primary_urls": [
+        "https://arxiv.org/abs/2201.09087",
+        "https://arxiv.org/html/2201.09087v1",
+        "https://lics.siglog.org/archive/2022/MioSarkisVignudelli-BeyondNonexpansiveO.html"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S10",
+      "title": "Universal Quantitative Algebra for Fuzzy Relations and Generalised Metric Spaces",
+      "status": "conditional-interface",
+      "candidate_ids": [
+        "S",
+        "P",
+        "T",
+        "G"
+      ],
+      "usable_interface": "Relation-indexed equations with explicit context-preserving substitution.",
+      "required_hypotheses": [
+        "Specified [0,1]-valued relation and its selected axioms",
+        "All variable-context relations preserved under substitution",
+        "Ordinary equality quotient",
+        "Actual infinitary order-completeness scheme for the cited completeness theorem"
+      ],
+      "not_licensed": [
+        "Not decidable finite proof search",
+        "Zero relation need not identify equal elements",
+        "Not interchangeable with fixed-algebra numerical sequents"
+      ],
+      "locators": [
+        "Definition 4.1(e)",
+        "Definitions 5.2-5.4 and Lemma 5.3",
+        "Theorem 5.13",
+        "Section 9.1"
+      ],
+      "inspection_this_checkpoint": "Parsed journal PDF rechecked; page-image requests 17,18,25 failed.",
+      "primary_urls": [
+        "https://lmcs.episciences.org/14876/pdf",
+        "https://lmcs.episciences.org/14876"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S11",
+      "title": "Algebraic Reasoning over Relational Structures",
+      "status": "comparison-only",
+      "candidate_ids": [
+        "P",
+        "T",
+        "G"
+      ],
+      "usable_interface": "Relational-algebra quotient and variety comparisons.",
+      "required_hypotheses": [
+        "c-reflexivity as stated",
+        "Compatible relational refinement and congruence",
+        "Extra lifting-preservation hypothesis for Exactness"
+      ],
+      "not_licensed": [
+        "No ready deduction engine from a variety theorem",
+        "Not a new source reinspection in S6"
+      ],
+      "locators": [
+        "Sections 4.2-5",
+        "Section 6 further work"
+      ],
+      "inspection_this_checkpoint": "Earlier inspected record retained; not freshly reinspected in S6.",
+      "primary_urls": [
+        "https://arxiv.org/html/2401.08445v2",
+        "https://arxiv.org/abs/2401.08445v2"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S12",
+      "title": "Rational Lawvere Logic",
+      "status": "conditional-interface",
+      "candidate_ids": [
+        "S",
+        "P",
+        "T",
+        "G"
+      ],
+      "usable_interface": "Finite guarded polynomial consequences in Rational Lawvere Logic, including the proved signed-pair adapter.",
+      "required_hypotheses": [
+        "Finite polynomial hypothesis set",
+        "Every coordinate in hypotheses and conclusion guarded finite",
+        "Nonnegative pair coordinates with finite real decoding",
+        "Exact source arithmetic at infinity",
+        "Full source disjunctive deduction interface"
+      ],
+      "not_licensed": [
+        "No logarithm operation is added by allowing real constants",
+        "No implemented complete prover is claimed",
+        "No pointwise disjunction becomes a uniform policy",
+        "No completeness for a different signed or function-valued calculus is imported"
+      ],
+      "locators": [
+        "Definitions 5-6 and 10",
+        "Table 1",
+        "Theorems 7,9,11",
+        "Section 6: Proposition 12, Theorem 13, Lemma 14"
+      ],
+      "inspection_this_checkpoint": "Publisher HTML/PDF rechecked; Table 1 (PDF3) viewed. Requests for PDF6,7,12-15 failed. Stronger ambiguous normalization prose is unused.",
+      "primary_urls": [
+        "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CSL.2026.3",
+        "https://drops.dagstuhl.de/storage/00lipics/lipics-vol363-csl2026/LIPIcs.CSL.2026.3/LIPIcs.CSL.2026.3.pdf",
+        "https://drops.dagstuhl.de/storage/00lipics/lipics-vol363-csl2026/html/LIPIcs.CSL.2026.3/LIPIcs.CSL.2026.3.html"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S13",
+      "title": "Sequent and Hypersequent Calculi for Abelian and Lukasiewicz Logics",
+      "status": "conditional-interface",
+      "candidate_ids": [
+        "S",
+        "P"
+      ],
+      "usable_interface": "Direct two-sided unbounded real algebra for the source Abelian logic.",
+      "required_hypotheses": [
+        "Source additive/group/lattice signature",
+        "Characteristic-algebra statement at its declared language",
+        "Source sequent or hypersequent rules"
+      ],
+      "not_licensed": [
+        "No automatic multiplication, division, infinity or arbitrary new constants",
+        "Not the same proof system as RLL"
+      ],
+      "locators": [
+        "Definitions 10-11 and Theorem 12",
+        "Section 4.1"
+      ],
+      "inspection_this_checkpoint": "Parsed primary manuscript checked at the stated definitions/theorem and rule interface.",
+      "primary_urls": [
+        "https://arxiv.org/abs/cs/0211021v1",
+        "https://arxiv.org/pdf/cs/0211021"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S14",
+      "title": "Imprecise beliefs: a tiny introduction",
+      "status": "lead-only",
+      "candidate_ids": [
+        "P",
+        "T"
+      ],
+      "usable_interface": "User-supplied intuition relating imprecise beliefs to penalty functionals.",
+      "required_hypotheses": [
+        "Missing displayed formulas are not treated as verified",
+        "Explicit finite KL definitions checked in other primary sources instead"
+      ],
+      "not_licensed": [
+        "No general categorical theorem certified from extracted prose",
+        "No assertion that every PDG penalty is nonnegative or convex"
+      ],
+      "locators": [
+        "Belief-functional discussion",
+        "Richardson comments and PDG discussion"
+      ],
+      "inspection_this_checkpoint": "Accessible prose/comments rechecked; mathematical rendering remains incomplete.",
+      "primary_urls": [
+        "https://www.greaterwrong.com/posts/e7Pd4Q9TF7jFdmPgz/imprecise-beliefs-a-tiny-introduction",
+        "https://www.lesswrong.com/posts/e7Pd4Q9TF7jFdmPgz/imprecise-beliefs-a-tiny-introduction"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S15",
+      "title": "Loss as the Inconsistency of a Probabilistic Dependency Graph: Choose Your Model, Not Your Loss Function",
+      "status": "finite-adapter",
+      "candidate_ids": [
+        "P",
+        "T"
+      ],
+      "usable_interface": "Observational KL penalties and scoped loss-function identities.",
+      "required_hypotheses": [
+        "Finite normalized laws and correct KL argument order",
+        "Absolute-continuity/support conditions",
+        "Penalty functional distinguished from its optimized infimum",
+        "Fixed target for discarding target-entropy constants"
+      ],
+      "not_licensed": [
+        "Not every PDG scoring regime is a proper nonnegative belief",
+        "No equality of belief and every objective term"
+      ],
+      "locators": [
+        "Section 2 and equation (1)",
+        "Section 3, Propositions 2-5"
+      ],
+      "inspection_this_checkpoint": "Primary PDF text checked at observational penalty and finite loss identities; no new whole-paper audit.",
+      "primary_urls": [
+        "https://proceedings.mlr.press/v151/richardson22b.html",
+        "https://proceedings.mlr.press/v151/richardson22b/richardson22b.pdf"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S16",
+      "title": "Local Inconsistency Resolution: The Interplay between Attention and Control in Probabilistic Models",
+      "status": "rejected-claim-retained-definitions",
+      "candidate_ids": [
+        "P",
+        "T"
+      ],
+      "usable_interface": "Retain KL/PDG definitions; reject Proposition 1 broad parameter-convexity import as recorded in O-S16-01.",
+      "required_hypotheses": [
+        "Explicit reference to O-S16-01",
+        "Use the separately proved joint-convex finite affine-coordinate replacement if needed"
+      ],
+      "not_licensed": [
+        "Do not infer joint convexity from separate convexity",
+        "No author-confirmed erratum or rejection of every result is claimed"
+      ],
+      "locators": [
+        "Section 2 definitions",
+        "Proposition 1 and Appendix D"
+      ],
+      "inspection_this_checkpoint": "Versioned HTML rechecked against the prior visually verified statement; S5 counterexample retained unchanged.",
+      "primary_urls": [
+        "https://arxiv.org/abs/2604.17140v1",
+        "https://arxiv.org/html/2604.17140v1",
+        "https://arxiv.org/pdf/2604.17140v1"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S17",
+      "title": "Training language models to follow instructions with human feedback",
+      "status": "historical-example",
+      "candidate_ids": [
+        "S",
+        "T"
+      ],
+      "usable_interface": "One documented objective combining reward, KL and a pretraining term.",
+      "required_hypotheses": [
+        "Historical algorithm and equation kept at source scope",
+        "Weights, signs and data roles retained"
+      ],
+      "not_licensed": [
+        "Not a theorem identifying all losses with belief",
+        "Not a description of all current training systems"
+      ],
+      "locators": [
+        "Section 3.5, equation (2)"
+      ],
+      "inspection_this_checkpoint": "Earlier inspected historical source retained; no fresh S6 reinspection.",
+      "primary_urls": [
+        "https://arxiv.org/abs/2203.02155v1",
+        "https://arxiv.org/html/2203.02155v1"
+      ],
+      "whole_work_verified": false
+    },
+    {
+      "source_id": "S18",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "status": "finite-adapter",
+      "candidate_ids": [
+        "S",
+        "T"
+      ],
+      "usable_interface": "Finite nonparametric KL-regularized optimum and exponential reweighting identity.",
+      "required_hypotheses": [
+        "Positive temperature",
+        "Normalized reference",
+        "Finite rewards on reference support",
+        "Specified support and KL direction",
+        "Optimization over the stated distribution class"
+      ],
+      "not_licensed": [
+        "Not a guarantee for a restricted trained policy family",
+        "No empirical calibration or uniform policy witness follows"
+      ],
+      "locators": [
+        "Appendix A.1, equations (11)-(15)"
+      ],
+      "inspection_this_checkpoint": "Versioned primary HTML Appendix A.1 rechecked; arXiv v3 date remains July 29, 2024.",
+      "primary_urls": [
+        "https://arxiv.org/abs/2305.18290v3",
+        "https://arxiv.org/html/2305.18290v3"
+      ],
+      "whole_work_verified": false
+    }
+  ],
+  "new_scoped_adapters": [
+    {
+      "claim_id": "F03-C41",
+      "sources": [
+        "S05",
+        "S03"
+      ],
+      "proof": "01f_consolidated_source_handoff.md section 6",
+      "claim": "Directed sup-shortfall gain iff monotonicity and one-sided common-shift bound; finite signed dimensions; finite gain; composition and nonnegative-matrix specialization."
+    },
+    {
+      "claim_id": "F03-C42",
+      "sources": [
+        "S12",
+        "S14",
+        "S15"
+      ],
+      "proof": "01f_consolidated_source_handoff.md section 7",
+      "claim": "Pointwise scalar soundness does not preserve uniform disjunctive witnesses or lower-semicontinuous belief type/attainment."
+    }
+  ],
+  "future_obligations": [
+    "Compare candidate syntax before importing theorem",
+    "Implement or invoke and validate a proof backend before claiming generated derivations",
+    "Preserve available information and witnesses",
+    "F03 L60 still required; F04 and Gate A not performed"
+  ]
+}
