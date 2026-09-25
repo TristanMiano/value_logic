@@ -246,3 +246,25 @@ constructions preserve useful restricted cases. These concern source use, not a
 new candidate selection or an F04 gate review. There are 222 passing dedicated
 F03 checks. [S8](work_logs/F03_2026-09-24_S8.md) records 46.253886 cumulative
 L minutes; 13.746114 of L60 remain. Continue F03.
+
+
+## S9: proposed calculus attributes and theorem portfolio
+
+The author's request for a positive literature comparison is addressed in the
+[agenda](literature/01i_calculus_desiderata_and_theorem_agenda.md). The proposed
+priorities are operationally explicit, useful composition; sufficient information
+for the admitted tolerance and contexts; faithful fragment translations;
+auditable effective reasoning; and attainable witnesses for action claims.
+Local precision repair and revision are additional practical goals.
+
+The most attractive ambitious targets are an independently constructed,
+resource-scoped characterization of observable value loss, or a constructive
+minimal adequate abstraction. A belief/value representation preserving admitted
+updates is a further target. Existing variational-preference and local-repair
+results are antecedents, not completed project contributions. The proposed
+[structured agenda](literature/F03_calculus_agenda.json) adds no fixed axioms.
+F04 and GateA retain responsibility for selecting the actual development question.
+
+There are21 registered sources (8core,13supplements), 236 passing F03 tests, and
+51.058238 cumulative L minutes; 8.941762 remain. F03 stays partial and selected.
+No core, gate, full repository verification or new CI outcome is asserted.

@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "task_id": "F03",
+  "session": "2026-09-24-S9",
+  "base_commit": "b722b22607ce3d051a84aaa08f00f073e9a99cc2",
+  "status": "proposed-not-selected",
+  "selects_calculus": false,
+  "passes_gate": false,
+  "attributes": [
+    {
+      "id": "A01",
+      "name": "Operationally explicit meaning",
+      "priority": "essential",
+      "source_ids": [
+        "S03",
+        "S08",
+        "S12"
+      ],
+      "status": "proposed-design-question"
+    },
+    {
+      "id": "A02",
+      "name": "Sound, nontrivial composition",
+      "priority": "essential",
+      "source_ids": [
+        "S02",
+        "S10",
+        "S19"
+      ],
+      "status": "proposed-design-question"
+    },
+    {
+      "id": "A03",
+      "name": "Tolerance-relative sufficient information",
+      "priority": "essential-in-fragment",
+      "source_ids": [
+        "S01",
+        "S07",
+        "S19",
+        "S20"
+      ],
+      "status": "proposed-design-question"
+    },
+    {
+      "id": "A04",
+      "name": "Faithful and conservative interfaces",
+      "priority": "strongly-desirable",
+      "source_ids": [
+        "S10",
+        "S12",
+        "S13"
+      ],
+      "status": "proposed-design-question"
+    },
+    {
+      "id": "A05",
+      "name": "Auditable and effective reasoning",
+      "priority": "strongly-desirable",
+      "source_ids": [
+        "S12",
+        "S13"
+      ],
+      "status": "proposed-design-question"
+    },
+    {
+      "id": "A06",
+      "name": "Attainable operational witnesses",
+      "priority": "required-for-action-claims",
+      "source_ids": [
+        "S03",
+        "S08",
+        "S12"
+      ],
+      "status": "proposed-design-question"
+    },
+    {
+      "id": "A07",
+      "name": "Adaptive precision",
+      "priority": "strong-practical-desideratum",
+      "source_ids": [
+        "S21"
+      ],
+      "status": "proposed-design-question"
+    },
+    {
+      "id": "A08",
+      "name": "Local revision and explicit dependency",
+      "priority": "engineering-goal",
+      "source_ids": [],
+      "status": "proposed-design-question"
+    }
+  ],
+  "targets": [
+    {
+      "id": "T0",
+      "title": "Sound operational composition",
+      "rank": 0,
+      "role": "necessary-foundation",
+      "source_ids": [
+        "S02",
+        "S10",
+        "S12"
+      ],
+      "status": "unproved-for-eventual-calculus"
+    },
+    {
+      "id": "T1",
+      "title": "Resource-scoped contextual value-loss characterization",
+      "rank": 1,
+      "role": "preferred-ambitious-target",
+      "source_ids": [
+        "S19"
+      ],
+      "status": "unproved-for-eventual-calculus",
+      "non_goal": "Not equality obtained by defining both sides as the same contextual supremum."
+    },
+    {
+      "id": "T2",
+      "title": "Minimal adequate information with constructive repair",
+      "rank": 2,
+      "role": "strong-alternative",
+      "source_ids": [
+        "S01",
+        "S21"
+      ],
+      "status": "unproved-for-eventual-calculus",
+      "non_goal": "No unconditional least approximate quotient or runtime-minimal refinement is claimed."
+    },
+    {
+      "id": "T3",
+      "title": "Belief/value representation preserving admitted updates",
+      "rank": 3,
+      "role": "bridge-target",
+      "source_ids": [
+        "S07",
+        "S14",
+        "S15",
+        "S20"
+      ],
+      "status": "unproved-for-eventual-calculus",
+      "non_goal": "Not a rediscovery of static variational representation or uniqueness for arbitrary nonconvex beliefs."
+    },
+    {
+      "id": "T4",
+      "title": "Robust finite certification with usable witnesses",
+      "rank": 4,
+      "role": "implementation-facing-target",
+      "source_ids": [
+        "S12",
+        "S13"
+      ],
+      "status": "unproved-for-eventual-calculus",
+      "non_goal": "Proof checking does not imply cheap complete search or a witness available before hidden information."
+    }
+  ],
+  "recommendation": "T0 plus one of T1 or T2, supported by a modest translation/certificate result; not all targets at once.",
+  "fixed_axioms_added": [],
+  "notes": "Primary literature motivates targets; elementary anchors do not discharge them. F04 and Gate A remain unattempted."
+}

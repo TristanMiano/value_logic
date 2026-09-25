@@ -196,7 +196,8 @@ class F03HandoffTests(unittest.TestCase):
         ids = [r['source_id'] for r in reg['contracts']]
         self.assertEqual(len(ids), len(set(ids)))
         self.assertEqual(set(ids), {r['id'] for r in src['sources']})
-        self.assertEqual(len(ids), 18)
+        # Original register sources must survive later declared supplements.
+        self.assertTrue({f'S{i:02}' for i in range(1,19)} <= set(ids))
         self.assertEqual(sum(r['role'] == 'core' for r in src['sources']), 8)
         for row in reg['contracts']:
             for field in ('status', 'usable_interface', 'required_hypotheses', 'not_licensed', 'locators'):

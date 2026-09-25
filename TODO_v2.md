@@ -394,6 +394,20 @@ to publication with an unsound core simply because the planned queue ended.
   [S8](v2/work_logs/F03_2026-09-24_S8.md). This is an incremental local package;
   F03 stays partial and selected, with F04 and all gates unattempted.
 
+  **Continuation — September 24, 2026, S9.** Verified the author's S8 push at
+  `b722b22607ce3d051a84aaa08f00f073e9a99cc2`. In response to the request for
+  desirable calculus attributes, the [theorem agenda](v2/literature/01i_calculus_desiderata_and_theorem_agenda.md)
+  distinguishes operational composition, contextual characterization, adequate
+  information, faithful fragment interfaces and effective certificates. It
+  ranks theorem targets without choosing a core or treating them as proved.
+  Three targeted primary sources address contextual distance, variational
+  preferences and local abstraction repair; the source register now has 21
+  entries (8 core, 13 supplements). Fourteen new checks and 236 combined F03
+  tests pass. Credited L is 4.804352 minutes; cumulative L is 51.058238, leaving
+  8.941762 of L60. See [S9](v2/work_logs/F03_2026-09-24_S9.md). F03 remains partial and
+  selected; F04 and all gates remain unattempted. Delivery is an incremental
+  local package, not a pushed commit or an amendment selecting the calculus.
+
 - [ ] **F04 — hostile examples and candidate discrimination.**
 
   Principal artifact: `v2/derivations/01_candidate_countermodels.md`.

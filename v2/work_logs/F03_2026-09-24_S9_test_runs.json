@@ -1,0 +1,35 @@
+[
+  {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "v2.checks.f03_theorem_agenda",
+      "--json",
+      "v2/checks/F03_theorem_agenda_results.json"
+    ],
+    "start_utc": "2026-09-25T02:42:26.782020+00:00",
+    "end_utc": "2026-09-25T02:42:27.756094+00:00",
+    "elapsed_seconds": 0.97381684,
+    "returncode": 0,
+    "output": "F03_2026-09-24_S9_new_tests.txt"
+  },
+  {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-X",
+      "faulthandler",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "verification",
+      "-p",
+      "test_v2_f03*.py"
+    ],
+    "start_utc": "2026-09-25T02:42:27.756131+00:00",
+    "end_utc": "2026-09-25T02:42:29.944651+00:00",
+    "elapsed_seconds": 2.18814404,
+    "returncode": 0,
+    "output": "F03_2026-09-24_S9_combined_tests.txt"
+  }
+]

@@ -1,6 +1,6 @@
 # Phase Two Claim Ledger
 
-Version: F02 completion plus F03 S5 partial audit, September 24, 2026.
+Version: F02 completion plus F03 S9 partial audit, September 24, 2026.
 Task status: **F01 complete (76 checks); F02 complete (124 dedicated checks and 61.118295 credited derivation minutes)**.
 No calculus has been selected and no readiness gate has passed.
 This is not a statement that the demonstrated arithmetic is unproved.
@@ -352,3 +352,26 @@ whole-paper independent validation or permanent calculus is asserted.
 F03 remains partial with 46.253886 cumulative L minutes and 13.746114 remaining.
 The source list stays at eighteen; the new boundaries do not invalidate an
 existing gate or a previously used theorem. F04 and all gates remain unattempted.
+
+
+## S9: desirable attributes and proposed theorem agenda
+
+[The agenda note](literature/01i_calculus_desiderata_and_theorem_agenda.md) compares
+existing literature and recommends result shapes without selecting a core.
+S19-S21 are scoped additional antecedents; the first eighteen source identities
+and prior work records are preserved. No novelty or independent review is claimed.
+
+| ID | Scoped statement | Evidence and boundary |
+|---|---|---|
+| F03-C50 | For finite n>=1 and x,y in R^n, max(0,max_i(x_i-y_i)) equals the supremum of positive F(x)-F(y) over coordinatewise monotone, additively shift-homogeneous F:R^n->R. | Section4.1: upper bound from order/shift; coordinate projection attains the lower bound. Elementary extension of C41, not full abstraction for arbitrary programs or a new theorem of a chosen calculus. Finite-grid tests are regression evidence. |
+| F03-C51 | For contexts C_k(z)=kz, integer0<=k<=b, the greatest positive loss is b[x-y]_+. If all integer k are allowed and x>y, it is unbounded. | Section4.2: direct computation and growth argument. Budget restricts amplification, not signed-value range. No theorem about every program-context metric. |
+| F03-C52 | Fixed positive-tolerance proximity need not be transitive; its transitive closure may merge arbitrarily distant points. | Section4.3: 0,3/4,3/2 at tolerance1 and repeated-chain argument. Does not preclude exact congruences, covers, or graded composition. |
+| F03-C53 | Nonnegative P bounded by every dyadic2^-n is zero, but a finite prefix permits a positive value; any positive requested tolerance is certified by some finite dyadic premise. | Section4.4, source S12 noncompactness antecedent, explicit finite certificate selection. Not general approximate completeness for arbitrary languages, hard tests or evidence. |
+| F03-D02 | Eight desiderata and targets T0-T4 are recommended for later design; prioritize sound composition plus resource-scoped contextual characterization or constructive adequate information. | Literature-informed proposal in sections1-3 and `F03_calculus_agenda.json`. Every main target remains unproved for the eventual calculus; no new fixed axiom, core or gate. |
+
+S19 studies contextual/behavioural distance; S20 characterizes a class of
+variational preferences; S21 supplies local exact-abstraction repair antecedents.
+Their assumptions are not silently inherited by Value Logic. The abstract-only
+Giacobazzi2000 lead is not treated as an imported numbered theorem. Fourteen
+new checks bring F03 discovery to236 passing tests. F03-T01 remains unestablished
+until the task's substantive and protected-review conditions are both met.

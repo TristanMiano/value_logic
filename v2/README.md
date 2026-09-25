@@ -19,14 +19,16 @@ checks give **124 passing dedicated F02 tests**. Credited derivation time is
 **61.118295 minutes** across S1 and S2, satisfying D60. The
 [completion record](work_logs/F02_2026-09-22_S2.md) preserves actual clocks,
 source-check limits, research evidence and the cumulative package disposition.
-**F03 is in progress.** The source list remains 8 core sources and 10 targeted
-supplements. The [context/witness audit](literature/01h_context_and_witness_audit.md)
-adds precise limits and positive conditions for variable elimination and finite
-optimality witnesses. The earlier
-[checked source derivations](literature/01g_checked_source_derivations.md) remain
-intact. There are **222 passing dedicated F03 tests**, including 15 new checks.
-[S8](work_logs/F03_2026-09-24_S8.md) records **46.253886 cumulative L minutes**,
-leaving **13.746114** of L60. These fixtures are not a complete source prover.
+**F03 is in progress.** The [calculus desiderata and theorem agenda](literature/01i_calculus_desiderata_and_theorem_agenda.md)
+adds a literature-informed positive direction to the existing source audit:
+sound useful composition, resource-scoped contextual characterization,
+minimal adequate information and faithful/effective proof interfaces.
+The recommendations are targets, not a selected calculus. Three targeted
+primary sources bring the register to **8 core and 13 supplementary sources**.
+There are **236 passing dedicated F03 tests**, including 14 new finite and
+metadata checks. [S9](work_logs/F03_2026-09-24_S9.md) records **51.058238 cumulative L minutes**,
+leaving **8.941762** of L60. Prior source/witness audits and their historical
+results remain unchanged.
 **Next: continue F03.**
 No calculus has been selected, and no readiness gate has passed.
 
@@ -293,3 +295,24 @@ The new suite has 15 tests; combined F03 discovery has 222. The general argument
 are in the source-adapter note. The incremental package is not pushed from this
 environment; full local repository verification was not run. The restored root
 README and phase-one files are unchanged.
+
+
+## S9: literature-informed attributes and theorem targets
+
+The [agenda note](literature/01i_calculus_desiderata_and_theorem_agenda.md) and
+[structured agenda](literature/F03_calculus_agenda.json) separate eight proposed
+design questions from five unproved target results. The recommendation is a
+sound compositional core plus one substantive operational characterization or
+constructive adequate-abstraction result, not every target in one phase.
+No philosophical commitment, core selection or readiness gate is added.
+
+Run the small exact-arithmetic illustrations independently with:
+
+```text
+python -m v2.checks.f03_theorem_agenda --json v2/checks/F03_theorem_agenda_results.json
+```
+
+The fourteen checks validate only elementary examples and record consistency.
+The combined F03 discovery command now passes 236 tests; this is not full
+repository verification or proof of any proposed main theorem. The package
+records local application and targeted test validation separately from CI.

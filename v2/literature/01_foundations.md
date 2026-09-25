@@ -402,3 +402,21 @@ Finite countermodels and positive constructions are separated from source
 theorems. The updated register records these as scoped adapter boundaries, not
 new mandatory primitives. [S8](../work_logs/F03_2026-09-24_S8.md) records the
 still-partial task status and actual source-review credit.
+
+
+## S9: desirable attributes and interesting theorem targets
+
+[The literature-informed agenda](01i_calculus_desiderata_and_theorem_agenda.md)
+compares the kinds of results supplied by the existing logic/semantics sources
+and three targeted new references: contextual distance (S19), axiomatic
+variational preferences (S20), and local abstraction repair (S21). It separates
+necessary soundness/composition from ambitious contextual, information-sufficiency,
+and update-preserving representation theorems. All are proposals for later
+selection, not results claimed for a chosen calculus.
+
+The source list is now21 entries with the original8 core sources intact.
+The [agenda register](F03_calculus_agenda.json) records proposed status, while
+[the import register](F03_import_contracts.json) retains actual source-use limits.
+The Giacobazzi2000 author abstract remains a lead with no numbered theorem
+import. Timing, tests and partial status are in
+[the S9 record](../work_logs/F03_2026-09-24_S9.md).

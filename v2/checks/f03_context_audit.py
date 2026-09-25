@@ -401,7 +401,8 @@ class F03ContextAuditTests(unittest.TestCase):
     def test_source_metadata_records_scoped_objection(self):
         path=Path(__file__).resolve().parents[1]/'literature'/'F03_sources.json'
         sources=json.loads(path.read_text(encoding='utf-8'))['sources']
-        self.assertEqual({s['id'] for s in sources},{f'S{i:02}' for i in range(1,19)})
+        # S9 adds declared supplements; this historical check still requires S01-S18.
+        self.assertTrue({f'S{i:02}' for i in range(1,19)} <= {s['id'] for s in sources})
         s16=next(s for s in sources if s['id']=='S16')
         self.assertIn('O-S16-01',json.dumps(s16))
         self.assertFalse(s16['whole_work_verified'])
