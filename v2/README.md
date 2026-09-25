@@ -19,14 +19,15 @@ checks give **124 passing dedicated F02 tests**. Credited derivation time is
 **61.118295 minutes** across S1 and S2, satisfying D60. The
 [completion record](work_logs/F02_2026-09-22_S2.md) preserves actual clocks,
 source-check limits, research evidence and the cumulative package disposition.
-**F03 is in progress.** The [source audit](literature/01_foundations.md) retains
-8 core sources and 10 targeted supplements. The latest
-[context/import audit](literature/01e_belief_value_import_contracts.md) adds
-40 checks, for **175 passing F03 tests**. It records a scoped source-convexity
-correction and exact rational KL certificates without selecting a calculus.
-[S5](work_logs/F03_2026-09-24_S5.md) records cumulative literature time
-**32.921469 minutes**, leaving **27.078531** of L60.
-The earlier interrupted and mixed blocks remain uncredited. **Next: continue F03.**
+**F03 is in progress.** The source list remains 8 core sources and 10 targeted
+supplements. The [checked source derivations](literature/01g_checked_source_derivations.md)
+include explicit RLL loss-chaining and finite signed-coordinate certificates,
+and the corresponding guarded-substitution and Abelian-rule boundaries.
+There are **207 passing dedicated F03 tests**, including 18 new certificate
+checks. [S7](work_logs/F03_2026-09-24_S7.md) records cumulative literature time
+**41.675988 minutes**, leaving **18.324012** of L60. The two source certificates
+are audit fixtures, not a selected calculus or complete prover.
+**Next: continue F03.**
 No calculus has been selected, and no readiness gate has passed.
 
 The intended result is a small, explicit calculus with operationally meaningful
@@ -265,3 +266,17 @@ Cumulative literature time is 38.537260 minutes; 21.462740 remain against L60.
 This is an incremental local package based on the author's `9ba491f` commit,
 not a push or new CI run. The full repository command was not run locally.
 F03 remains selected; F04 and all gates are unattempted.
+
+## S7 source-certificate checks
+
+Run the additional audit fixture with:
+
+```text
+python -m v2.checks.f03_checked_derivations --json v2/checks/F03_checked_derivations_results.json
+python -m unittest discover -s verification -p 'test_v2_f03*.py'
+```
+
+The new suite has 18 tests and combined F03 discovery has 207. The saved JSON
+includes two full conditional proof certificates, with 18 and 32 source-rule
+nodes. It checks neither the whole RLL system nor operational evidence for the
+assumptions. Full repository verification and new CI were not run in S7.

@@ -1,0 +1,2981 @@
+{
+  "scope": "Audit-only finite source-rule certificates; no completeness or independent formal verification",
+  "source": "S12, CSL 2026, Table 2; perm-position macros use finite permutations",
+  "certificates": {
+    "direct_loss": {
+      "steps": 18,
+      "hypotheses": 2,
+      "uses_finiteness_guard": false,
+      "proof": {
+        "schema_version": 1,
+        "hypotheses": [
+          {
+            "left": [
+              [
+                "var",
+                "r"
+              ]
+            ],
+            "right": [
+              "imp",
+              [
+                "var",
+                "y"
+              ],
+              [
+                "var",
+                "x"
+              ]
+            ]
+          },
+          {
+            "left": [
+              [
+                "var",
+                "s"
+              ]
+            ],
+            "right": [
+              "imp",
+              [
+                "var",
+                "z"
+              ],
+              [
+                "var",
+                "y"
+              ]
+            ]
+          }
+        ],
+        "steps": [
+          {
+            "rule": "identity",
+            "parents": [],
+            "sequent": {
+              "left": [
+                [
+                  "imp",
+                  [
+                    "var",
+                    "y"
+                  ],
+                  [
+                    "var",
+                    "x"
+                  ]
+                ]
+              ],
+              "right": [
+                "imp",
+                [
+                  "var",
+                  "y"
+                ],
+                [
+                  "var",
+                  "x"
+                ]
+              ]
+            }
+          },
+          {
+            "rule": "quant_reverse",
+            "parents": [
+              0
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "imp",
+                    [
+                      "var",
+                      "y"
+                    ],
+                    [
+                      "var",
+                      "x"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "y"
+                  ]
+                ]
+              ],
+              "right": [
+                "var",
+                "x"
+              ]
+            }
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              1
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "imp",
+                  [
+                    "var",
+                    "y"
+                  ],
+                  [
+                    "var",
+                    "x"
+                  ]
+                ],
+                [
+                  "var",
+                  "y"
+                ]
+              ],
+              "right": [
+                "var",
+                "x"
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "identity",
+            "parents": [],
+            "sequent": {
+              "left": [
+                [
+                  "imp",
+                  [
+                    "var",
+                    "z"
+                  ],
+                  [
+                    "var",
+                    "y"
+                  ]
+                ]
+              ],
+              "right": [
+                "imp",
+                [
+                  "var",
+                  "z"
+                ],
+                [
+                  "var",
+                  "y"
+                ]
+              ]
+            }
+          },
+          {
+            "rule": "quant_reverse",
+            "parents": [
+              3
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "imp",
+                    [
+                      "var",
+                      "z"
+                    ],
+                    [
+                      "var",
+                      "y"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "z"
+                  ]
+                ]
+              ],
+              "right": [
+                "var",
+                "y"
+              ]
+            }
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              4
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "imp",
+                  [
+                    "var",
+                    "z"
+                  ],
+                  [
+                    "var",
+                    "y"
+                  ]
+                ],
+                [
+                  "var",
+                  "z"
+                ]
+              ],
+              "right": [
+                "var",
+                "y"
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "cut",
+            "parents": [
+              5,
+              2
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "imp",
+                  [
+                    "var",
+                    "z"
+                  ],
+                  [
+                    "var",
+                    "y"
+                  ]
+                ],
+                [
+                  "var",
+                  "z"
+                ],
+                [
+                  "imp",
+                  [
+                    "var",
+                    "y"
+                  ],
+                  [
+                    "var",
+                    "x"
+                  ]
+                ]
+              ],
+              "right": [
+                "var",
+                "x"
+              ]
+            },
+            "index": 1
+          },
+          {
+            "rule": "permutation",
+            "parents": [
+              6
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "imp",
+                  [
+                    "var",
+                    "y"
+                  ],
+                  [
+                    "var",
+                    "x"
+                  ]
+                ],
+                [
+                  "imp",
+                  [
+                    "var",
+                    "z"
+                  ],
+                  [
+                    "var",
+                    "y"
+                  ]
+                ],
+                [
+                  "var",
+                  "z"
+                ]
+              ],
+              "right": [
+                "var",
+                "x"
+              ]
+            }
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              7
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "imp",
+                    [
+                      "var",
+                      "y"
+                    ],
+                    [
+                      "var",
+                      "x"
+                    ]
+                  ],
+                  [
+                    "imp",
+                    [
+                      "var",
+                      "z"
+                    ],
+                    [
+                      "var",
+                      "y"
+                    ]
+                  ]
+                ],
+                [
+                  "var",
+                  "z"
+                ]
+              ],
+              "right": [
+                "var",
+                "x"
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              8
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "imp",
+                      [
+                        "var",
+                        "y"
+                      ],
+                      [
+                        "var",
+                        "x"
+                      ]
+                    ],
+                    [
+                      "imp",
+                      [
+                        "var",
+                        "z"
+                      ],
+                      [
+                        "var",
+                        "y"
+                      ]
+                    ]
+                  ],
+                  [
+                    "var",
+                    "z"
+                  ]
+                ]
+              ],
+              "right": [
+                "var",
+                "x"
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "quant_forward",
+            "parents": [
+              9
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "imp",
+                    [
+                      "var",
+                      "y"
+                    ],
+                    [
+                      "var",
+                      "x"
+                    ]
+                  ],
+                  [
+                    "imp",
+                    [
+                      "var",
+                      "z"
+                    ],
+                    [
+                      "var",
+                      "y"
+                    ]
+                  ]
+                ]
+              ],
+              "right": [
+                "imp",
+                [
+                  "var",
+                  "z"
+                ],
+                [
+                  "var",
+                  "x"
+                ]
+              ]
+            }
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              10
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "imp",
+                  [
+                    "var",
+                    "y"
+                  ],
+                  [
+                    "var",
+                    "x"
+                  ]
+                ],
+                [
+                  "imp",
+                  [
+                    "var",
+                    "z"
+                  ],
+                  [
+                    "var",
+                    "y"
+                  ]
+                ]
+              ],
+              "right": [
+                "imp",
+                [
+                  "var",
+                  "z"
+                ],
+                [
+                  "var",
+                  "x"
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "hypothesis",
+            "parents": [],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "r"
+                ]
+              ],
+              "right": [
+                "imp",
+                [
+                  "var",
+                  "y"
+                ],
+                [
+                  "var",
+                  "x"
+                ]
+              ]
+            },
+            "hypothesis": 0
+          },
+          {
+            "rule": "cut",
+            "parents": [
+              12,
+              11
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "r"
+                ],
+                [
+                  "imp",
+                  [
+                    "var",
+                    "z"
+                  ],
+                  [
+                    "var",
+                    "y"
+                  ]
+                ]
+              ],
+              "right": [
+                "imp",
+                [
+                  "var",
+                  "z"
+                ],
+                [
+                  "var",
+                  "x"
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "hypothesis",
+            "parents": [],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "s"
+                ]
+              ],
+              "right": [
+                "imp",
+                [
+                  "var",
+                  "z"
+                ],
+                [
+                  "var",
+                  "y"
+                ]
+              ]
+            },
+            "hypothesis": 1
+          },
+          {
+            "rule": "cut",
+            "parents": [
+              14,
+              13
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "s"
+                ],
+                [
+                  "var",
+                  "r"
+                ]
+              ],
+              "right": [
+                "imp",
+                [
+                  "var",
+                  "z"
+                ],
+                [
+                  "var",
+                  "x"
+                ]
+              ]
+            },
+            "index": 1
+          },
+          {
+            "rule": "permutation",
+            "parents": [
+              15
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "r"
+                ],
+                [
+                  "var",
+                  "s"
+                ]
+              ],
+              "right": [
+                "imp",
+                [
+                  "var",
+                  "z"
+                ],
+                [
+                  "var",
+                  "x"
+                ]
+              ]
+            }
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              16
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "var",
+                    "r"
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ],
+              "right": [
+                "imp",
+                [
+                  "var",
+                  "z"
+                ],
+                [
+                  "var",
+                  "x"
+                ]
+              ]
+            },
+            "index": 0
+          }
+        ],
+        "goal": {
+          "left": [
+            [
+              "add",
+              [
+                "var",
+                "r"
+              ],
+              [
+                "var",
+                "s"
+              ]
+            ]
+          ],
+          "right": [
+            "imp",
+            [
+              "var",
+              "z"
+            ],
+            [
+              "var",
+              "x"
+            ]
+          ]
+        }
+      }
+    },
+    "finite_signed_chain": {
+      "steps": 32,
+      "hypotheses": 3,
+      "uses_finiteness_guard": true,
+      "proof": {
+        "schema_version": 1,
+        "hypotheses": [
+          {
+            "left": [
+              [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "xm"
+                  ]
+                ],
+                [
+                  "var",
+                  "r"
+                ]
+              ]
+            ],
+            "right": [
+              "add",
+              [
+                "var",
+                "xp"
+              ],
+              [
+                "var",
+                "ym"
+              ]
+            ]
+          },
+          {
+            "left": [
+              [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "zp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "var",
+                  "s"
+                ]
+              ]
+            ],
+            "right": [
+              "add",
+              [
+                "var",
+                "yp"
+              ],
+              [
+                "var",
+                "zm"
+              ]
+            ]
+          },
+          {
+            "left": [],
+            "right": [
+              "imp",
+              [
+                "imp",
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "inf"
+                ]
+              ],
+              [
+                "inf"
+              ]
+            ]
+          }
+        ],
+        "steps": [
+          {
+            "rule": "identity",
+            "parents": [],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "xp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "zm"
+                    ]
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              0
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "hypothesis",
+            "parents": [],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "var",
+                  "xp"
+                ],
+                [
+                  "var",
+                  "ym"
+                ]
+              ]
+            },
+            "hypothesis": 0
+          },
+          {
+            "rule": "cut",
+            "parents": [
+              2,
+              1
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "hypothesis",
+            "parents": [],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "var",
+                  "yp"
+                ],
+                [
+                  "var",
+                  "zm"
+                ]
+              ]
+            },
+            "hypothesis": 1
+          },
+          {
+            "rule": "cut",
+            "parents": [
+              4,
+              3
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ]
+              ]
+            },
+            "index": 1
+          },
+          {
+            "rule": "permutation",
+            "parents": [
+              5
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              6
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "add",
+                      [
+                        "var",
+                        "yp"
+                      ],
+                      [
+                        "var",
+                        "xm"
+                      ]
+                    ],
+                    [
+                      "var",
+                      "r"
+                    ]
+                  ],
+                  [
+                    "add",
+                    [
+                      "add",
+                      [
+                        "var",
+                        "zp"
+                      ],
+                      [
+                        "var",
+                        "ym"
+                      ]
+                    ],
+                    [
+                      "var",
+                      "s"
+                    ]
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "identity",
+            "parents": [],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "add",
+                      [
+                        "var",
+                        "yp"
+                      ],
+                      [
+                        "var",
+                        "xm"
+                      ]
+                    ],
+                    [
+                      "var",
+                      "r"
+                    ]
+                  ],
+                  [
+                    "add",
+                    [
+                      "add",
+                      [
+                        "var",
+                        "zp"
+                      ],
+                      [
+                        "var",
+                        "ym"
+                      ]
+                    ],
+                    [
+                      "var",
+                      "s"
+                    ]
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              8
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              9
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "xm"
+                  ]
+                ],
+                [
+                  "var",
+                  "r"
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              10
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "yp"
+                ],
+                [
+                  "var",
+                  "xm"
+                ],
+                [
+                  "var",
+                  "r"
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              11
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "yp"
+                ],
+                [
+                  "var",
+                  "xm"
+                ],
+                [
+                  "var",
+                  "r"
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "zp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "var",
+                  "s"
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            },
+            "index": 3
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              12
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "yp"
+                ],
+                [
+                  "var",
+                  "xm"
+                ],
+                [
+                  "var",
+                  "r"
+                ],
+                [
+                  "var",
+                  "zp"
+                ],
+                [
+                  "var",
+                  "ym"
+                ],
+                [
+                  "var",
+                  "s"
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            },
+            "index": 3
+          },
+          {
+            "rule": "permutation",
+            "parents": [
+              13
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "zp"
+                ],
+                [
+                  "var",
+                  "xm"
+                ],
+                [
+                  "var",
+                  "r"
+                ],
+                [
+                  "var",
+                  "s"
+                ],
+                [
+                  "var",
+                  "yp"
+                ],
+                [
+                  "var",
+                  "ym"
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              14
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "var",
+                    "zp"
+                  ],
+                  [
+                    "var",
+                    "xm"
+                  ]
+                ],
+                [
+                  "var",
+                  "r"
+                ],
+                [
+                  "var",
+                  "s"
+                ],
+                [
+                  "var",
+                  "yp"
+                ],
+                [
+                  "var",
+                  "ym"
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              15
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "var",
+                  "s"
+                ],
+                [
+                  "var",
+                  "yp"
+                ],
+                [
+                  "var",
+                  "ym"
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              16
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "add",
+                      [
+                        "var",
+                        "zp"
+                      ],
+                      [
+                        "var",
+                        "xm"
+                      ]
+                    ],
+                    [
+                      "var",
+                      "r"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ],
+                [
+                  "var",
+                  "yp"
+                ],
+                [
+                  "var",
+                  "ym"
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              17
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "add",
+                      [
+                        "var",
+                        "zp"
+                      ],
+                      [
+                        "var",
+                        "xm"
+                      ]
+                    ],
+                    [
+                      "var",
+                      "r"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            },
+            "index": 1
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              18
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "add",
+                      [
+                        "add",
+                        [
+                          "var",
+                          "zp"
+                        ],
+                        [
+                          "var",
+                          "xm"
+                        ]
+                      ],
+                      [
+                        "var",
+                        "r"
+                      ]
+                    ],
+                    [
+                      "var",
+                      "s"
+                    ]
+                  ],
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "xm"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "r"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "zp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "cut",
+            "parents": [
+              19,
+              7
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "add",
+                      [
+                        "add",
+                        [
+                          "var",
+                          "zp"
+                        ],
+                        [
+                          "var",
+                          "xm"
+                        ]
+                      ],
+                      [
+                        "var",
+                        "r"
+                      ]
+                    ],
+                    [
+                      "var",
+                      "s"
+                    ]
+                  ],
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "identity",
+            "parents": [],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "xp"
+                    ],
+                    [
+                      "var",
+                      "zm"
+                    ]
+                  ],
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              21
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              22
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "xp"
+                ],
+                [
+                  "var",
+                  "zm"
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "prem_unfold",
+            "parents": [
+              23
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "xp"
+                ],
+                [
+                  "var",
+                  "zm"
+                ],
+                [
+                  "var",
+                  "yp"
+                ],
+                [
+                  "var",
+                  "ym"
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ]
+            },
+            "index": 2
+          },
+          {
+            "rule": "permutation",
+            "parents": [
+              24
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "var",
+                  "xp"
+                ],
+                [
+                  "var",
+                  "ym"
+                ],
+                [
+                  "var",
+                  "yp"
+                ],
+                [
+                  "var",
+                  "zm"
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              25
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "var",
+                  "yp"
+                ],
+                [
+                  "var",
+                  "zm"
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              26
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ]
+            },
+            "index": 1
+          },
+          {
+            "rule": "prem_fold",
+            "parents": [
+              27
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "xp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "zm"
+                    ]
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "cut",
+            "parents": [
+              20,
+              28
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "add",
+                      [
+                        "add",
+                        [
+                          "var",
+                          "zp"
+                        ],
+                        [
+                          "var",
+                          "xm"
+                        ]
+                      ],
+                      [
+                        "var",
+                        "r"
+                      ]
+                    ],
+                    [
+                      "var",
+                      "s"
+                    ]
+                  ],
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "xp"
+                  ],
+                  [
+                    "var",
+                    "zm"
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "var",
+                    "yp"
+                  ],
+                  [
+                    "var",
+                    "ym"
+                  ]
+                ]
+              ]
+            },
+            "index": 0
+          },
+          {
+            "rule": "hypothesis",
+            "parents": [],
+            "sequent": {
+              "left": [],
+              "right": [
+                "imp",
+                [
+                  "imp",
+                  [
+                    "add",
+                    [
+                      "var",
+                      "yp"
+                    ],
+                    [
+                      "var",
+                      "ym"
+                    ]
+                  ],
+                  [
+                    "inf"
+                  ]
+                ],
+                [
+                  "inf"
+                ]
+              ]
+            },
+            "hypothesis": 2
+          },
+          {
+            "rule": "cancel",
+            "parents": [
+              29,
+              30
+            ],
+            "sequent": {
+              "left": [
+                [
+                  "add",
+                  [
+                    "add",
+                    [
+                      "add",
+                      [
+                        "var",
+                        "zp"
+                      ],
+                      [
+                        "var",
+                        "xm"
+                      ]
+                    ],
+                    [
+                      "var",
+                      "r"
+                    ]
+                  ],
+                  [
+                    "var",
+                    "s"
+                  ]
+                ]
+              ],
+              "right": [
+                "add",
+                [
+                  "var",
+                  "xp"
+                ],
+                [
+                  "var",
+                  "zm"
+                ]
+              ]
+            }
+          }
+        ],
+        "goal": {
+          "left": [
+            [
+              "add",
+              [
+                "add",
+                [
+                  "add",
+                  [
+                    "var",
+                    "zp"
+                  ],
+                  [
+                    "var",
+                    "xm"
+                  ]
+                ],
+                [
+                  "var",
+                  "r"
+                ]
+              ],
+              [
+                "var",
+                "s"
+              ]
+            ]
+          ],
+          "right": [
+            "add",
+            [
+              "var",
+              "xp"
+            ],
+            [
+              "var",
+              "zm"
+            ]
+          ]
+        }
+      }
+    }
+  }
+}

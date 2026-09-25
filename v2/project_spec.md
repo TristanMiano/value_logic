@@ -222,3 +222,16 @@ attained optimizer. These refine C41/C42 without weakening past claims.
 F03 remains partial under its measured source-review requirement; F04 has not
 started. Root motivation, phase-one results and existing source history remain
 unchanged.
+
+## S7 checked source-rule interface
+
+The [source-rule audit](literature/01g_checked_source_derivations.md) separates
+unconditional arithmetic residual chaining from guarded cancellation for finite
+signed pairs. Its two finite certificates are derived in a subset of S12's rules;
+the checker does not implement full RLL, source completeness, KL analysis or
+policy synthesis. S10 substitution keeps all variable-relation premises, while
+S13 signed sequents use a different polarity and structural rules. No candidate
+is selected by these comparisons. The eighteen-source list remains unchanged.
+
+[The S7 record](work_logs/F03_2026-09-24_S7.md) reports 207 passing F03 checks and
+41.675988 cumulative L minutes; 18.324012 of L60 remain. Continue F03.

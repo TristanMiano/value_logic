@@ -374,6 +374,16 @@ to publication with an unsound core simply because the planned queue ended.
   not credited. See [S6](v2/work_logs/F03_2026-09-24_S6.md). This is a local package;
   F03 remains partial and selected, with no F04 or gate started.
 
+  **Continuation — September 24, 2026, S7.** Verified the author's S6 push at
+  `e1454a8`. The [source-rule audit](v2/literature/01g_checked_source_derivations.md)
+  provides explicit residual and finite signed-coordinate derivations, checked
+  by a deliberately small source-rule validator. It lists the exact finiteness,
+  multiplicity and substitution obligations rather than borrowing completeness
+  for a different language. Eighteen new checks and 207 combined F03 tests pass.
+  Credited L is 3.138728 minutes; cumulative L is 41.675988, leaving 18.324012.
+  See [S7](v2/work_logs/F03_2026-09-24_S7.md). This is a local incremental package;
+  F03 remains partial and selected, with no F04, core choice or gate advanced.
+
 - [ ] **F04 — hostile examples and candidate discrimination.**
 
   Principal artifact: `v2/derivations/01_candidate_countermodels.md`.

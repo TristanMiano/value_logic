@@ -381,3 +381,13 @@ Two finite adapters clarify directed gains for signed profiles and the boundary
 between pointwise arithmetic, uniform witnesses and lsc belief types. The
 [session record](../work_logs/F03_2026-09-24_S6.md) keeps this checkpoint partial;
 189 combined F03 checks are not a substitute for L60 or a later soundness gate.
+
+## S7: concrete source-rule derivations
+
+The [source-rule note](01g_checked_source_derivations.md) supplies two small
+conditional RLL derivations and their complete syntax certificates, alongside
+S10's explicit substitution premises and S13's signed cancellation boundary.
+No source is added and no permanent calculus is selected. Its validator handles
+only the listed source-rule subset; it does not establish source completeness,
+operational witnesses, or calibration of the assumptions. The latest timing and
+partial status are recorded in [S7](../work_logs/F03_2026-09-24_S7.md).

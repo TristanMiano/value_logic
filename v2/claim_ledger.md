@@ -317,3 +317,20 @@ for cumulative 38.537260; 21.462740 remain against L60. The handoff table identi
 conditional usable interfaces and stronger statements not imported, including
 retained O-S16-01. F03-T01 remains unestablished while the protected review is
 incomplete; F03 stays selected, F04 unstarted and all gates unattempted.
+
+## S7 source-rule reconstruction (September 24, 2026)
+
+All entries below refer to [the source-rule note](literature/01g_checked_source_derivations.md).
+Evidence is source comparison, explicit derivation and same-agent review, not
+independent proof-assistant certification. The source-rule validator is an audit
+fixture; it asserts no completeness or operational correctness theorem.
+
+| ID | Scoped statement | Evidence and boundary |
+|---|---|---|
+| F03-C43 | From RLL premises `r |- y=>x` and `s |- z=>y`, the displayed finite source derivation yields `r+s |- z=>x`. | Section 1; complete 18-node certificate checked by `f03_checked_derivations.py`; source S12 Table 2. Arbitrary named distances do not acquire this law solely from their nonnegative range. |
+| F03-C44 | Finite signed-pair replacement bounds compose by the displayed RLL sum and cancellation derivation, with explicit `|- Fin(y+ + y-)`. | Section 2; complete 32-node certificate; removing the guard is invalid, witnessed by infinite common summands. No global bound on finite coordinates is imposed. |
+| F03-C45 | Retaining RLL internal weakening while admitting arbitrary negative formula values is unsound. Abelian signed sequencing has opposite component polarity and different structural rules. | Section 5; `0,-1 |- 0` counterexample; S13 Definitions 29–30 and admissible cut after Theorem 39. Source validity completeness is not silently promoted to arbitrary local-premise completeness. |
+| F03-C46 | In the displayed S10 two-variable context, substitution needs four relation premises, three automatic at bound one and one genuine quarter-bound obligation. | Section 4, source Definition 4.1 and Theorem 4.4; doubling countermodel. Arbitrary source operations do not license unguarded substitution. |
+
+The source list is unchanged and the completed earlier claims remain scoped as
+before. F03 stays partial; F03-T01 is not marked established by these certificates.
