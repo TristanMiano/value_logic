@@ -15,6 +15,9 @@ Review-at threshold and session constraints:
 Reliable gain and exploratory gain:
 Planned R/X allocation and cycle-level balance:
 Likeliest failure; discriminating counterexample or test:
+DIR01 objective served; relevant opportunity ID or reason not applicable:
+Loss/proxy/utility distinction and declared uncertainty or reflection scope:
+Neural relevance: representability / decoding / intervention / none:
 
 ## Clock segments
 
@@ -45,6 +48,8 @@ Record `not run` and why when execution was unavailable.
 ## Result and actuals
 
 Evidence achieved; unresolved obligations; claim-ledger changes:
+Opportunity ranking changed by what evidence; next smallest decisive test:
+Any autonomous redirection, preserved alternative, and prospective scope record:
 Actual D/L/E/O; R/X; tool-wait/idle/unknown; observed total wall elapsed:
 Cumulative task totals and whether the minimum is met:
 Original forecast versus actual; revised remaining forecast if partial:

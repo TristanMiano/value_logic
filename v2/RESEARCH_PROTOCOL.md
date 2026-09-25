@@ -220,3 +220,44 @@ Do not automatically push unless the user authorized it.
 Do not begin the next item merely because the present prompt has capacity.
 At an explicit batch request, repeat the same checks at every task boundary.
 The final report may claim only what passed the current, non-stale gates.
+
+## 8. Continuous research steering and bounded agent discretion
+
+Apply [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md) throughout
+future tasks. It makes loss-grounded value, modest self-assessment and neural
+interpretation active design criteria, without choosing their final machinery.
+At the start of substantive work, identify the relevant objective and the best
+current opportunity in [opportunities.md](opportunities.md). A short 'no relevant
+change' is sufficient on a narrow repair; do not manufacture a new proposal.
+
+At a checkpoint, update the register only when evidence changes the ranking.
+For an opportunity record: the precise question; closest checked antecedent;
+what remains unestablished; a discriminating derivation/test; expected benefit;
+central/high effort and stop/review condition; and the smallest useful result.
+Separate 'promising gap to investigate' from 'verified open problem'. Search
+under alternative terminology before promoting a novelty claim. Existing
+comprehensive F03 records may be cited instead of searched again without cause.
+
+The agent may choose local questions, competing formulations, bounded probes
+and named repairs within the selected task. Material changes of task order or
+scope require a written decision, a prospective forecast, dependency updates,
+and a visible next pointer before work, not routine user reconfirmation.
+Use gates to choose provisional cores. Do not silently drop the author's aims,
+waive protected minima, promote an opportunity into a proved claim, or consume
+an unrelated later task without an explicit scope change. Report important
+redirects with their evidence and preserve the abandoned alternative.
+
+The loss-to-value link, uncertainty/reflective scope, and observational-versus-
+causal neural claim must be reviewed whenever relevant. At each gate report
+which aim has concrete evidence, which has a bounded upcoming test, and which
+has an explicit scoped obstruction. The scope exclusions of an earlier phase
+are not permanent prohibitions for this phase. An empirical null result can
+be informative without fulfilling a positive interpretability claim.
+
+Steering remains lightweight. Reuse existing ledgers; prefer one decisive
+comparison to another catalogue of possibilities. Keep the existing D/L/E,
+reliable/exploratory and recurrence rules rather than adding independent quotas.
+When publication is attempted, use bounded, spaced retries for intermittent
+GitHub capability failures; retain the local package, and report a push only
+after the commit and branch head are independently read back. Never turn
+transport overhead into credited research or let it consume the research session.

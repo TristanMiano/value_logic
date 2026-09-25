@@ -44,6 +44,18 @@ A further original goal is to make this reasoning representable and learnable. P
 
 The earlier writing also explores relationships among values, beliefs, task judgments, and black-box behavior. One longer-term hope is that a value-based view could help explain an agent's policy, rather than merely reproduce its outputs. The [original essays and exploratory notes](posts/) and [conversation records](llm_convos/) preserve those origins. These are research motivations and possible later branches, not claims that behavioral reconstruction already establishes interpretability or recovers a uniquely true utility.
 
+## Current emphasis: loss-grounded, reflective, and interpretable
+
+The active direction connects pragmatic value to losses and rewards used in
+machine learning, treated as revisable proxies rather than final utility.
+Rational Lawvere-style arithmetic is a starting comparison, with cost/value
+meaning beyond degrees of truth. Modest self-assessment and uncertainty about
+evaluators are active capability targets. Neural interpretation seeks structure
+learned by ordinary networks, not only architectures built to implement a logic.
+[DIR01](v2/decisions/DIR01_loss_grounded_reflective_direction.md) specifies this
+direction, its scope and its open choices; the [opportunity register](v2/opportunities.md)
+guides bounded agent initiative. F03 remains complete; F04 is next, not yet run.
+
 ## What phase one established
 
 The completed paper, [*Value Logic: Scoped Reliance on Fallible Models Under Open-Ended Succession*](paper.md), developed one finite-stage, evidence-relative calculus of licensed reliance. A request identifies a use plan, context, epistemic state, and requirement profile. Malformed requests are separated from meaningful requirements assessed as supported, open, or refuted; their combination yields `Granted`, `Withheld`, or `Refused`, with `Undefined` reserved for failed well-formedness.

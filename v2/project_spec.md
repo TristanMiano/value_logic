@@ -21,6 +21,28 @@ Phase one remains a completed realization. Its paper, experimental outcomes,
 code, and historical completion records are preserved. Reusing a result requires
 its hypotheses; phase-two compatibility is a research question, not a mandate.
 
+## Active direction after the F03 audit
+
+[DIR01](decisions/DIR01_loss_grounded_reflective_direction.md) is the current
+steering decision. Losses and rewards are operational proxies for broader value,
+not automatically adequate utility measures. Compare RLL-like arithmetic with
+explicit cost/value meanings and admit signed alternatives. Require a scoped
+self-assessment capability that can remain uncertain and be revised. Keep
+stronger self-reference eligible subject to explicit semantics, rather than
+inheriting phase one's blanket exclusion of cycles.
+
+A small probe of a normally trained ReLU MLP will test a proposed internal
+value/loss computation without forcing that structure during training. Its
+status must distinguish representation, decoding, and causal evidence. These
+requirements narrow the question for F04 and the later selected core; they do
+not assert that any such structure has already been discovered.
+
+The agent has bounded discretion to pursue the best-supported opportunities
+under the protocol. Earlier mentions of neural interpretation and self-revision
+as deferred branches are historical: their bounded forms are now active;
+large-scale implementation and a general reflection theory remain later work.
+F03's evidence and time totals are unchanged. No F04 result or gate is added.
+
 ## Initial operational requirements
 
 The [F01 derivation note](foundations/01_requirements_and_separating_examples.md)
@@ -62,7 +84,10 @@ The final paper is `paper_v2.md`, created only when the queue's evidence gates
 permit it. The claim ledger distinguishes mathematical demonstrations, tests,
 philosophical commitments, design choices, and deferred targets.
 
-## Current artifacts and boundaries
+## Historical artifact development (current status is at the top)
+
+The paragraphs below retain the sequence of earlier checkpoints; their former
+'next task' statements are not the active pointer.
 
 [Notation](notation.md), [claims](claim_ledger.md), the F01 derivation note,
 [finite fixtures](checks/f01_examples.py), [fixture results](checks/F01_results.json),

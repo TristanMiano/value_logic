@@ -1,5 +1,10 @@
 # Phase Two Workspace: Value-Based Calculus First
 
+**Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
+connects loss-based value semantics, modest reflection and discovery of learned
+neural structure. [Opportunities](opportunities.md) are ranked research leads,
+not new results. F01-F03 remain complete; the next task remains F04.
+
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_calculus_first.md).

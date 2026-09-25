@@ -58,6 +58,16 @@ The phase-one calculus is a completed realization, not an immutable core. Its
 results may be reused with their hypotheses, adapted, compared, or not imported.
 Do not rewrite their historical claims to make the new design appear inevitable.
 
+## Active direction after F03
+
+[DIR01](v2/decisions/DIR01_loss_grounded_reflective_direction.md) adopts a
+loss-grounded, utility-oriented research direction. Treat RLL-like mechanisms
+as a serious starting comparison; require more than numerical truth degrees.
+Modest reflection and an exploratory connection to normally trained networks
+are active aims, not indefinitely deferred branches. The
+[opportunity register](v2/opportunities.md) supports bounded agent initiative.
+This is a planning amendment: F03 stays complete and F04 stays unstarted.
+
 ## Required research distinctions
 
 Keep separate (1) a value object, (2) its evaluation or summary, and (3) a
@@ -431,6 +441,16 @@ to publication with an unsound core simply because the planned queue ended.
   the distinction between D and E. Add durable regression fixtures and a
   comparison matrix that records failures as well as positive capabilities.
 
+  **DIR01 scope:** include (i) improvement of a proxy loss without improvement
+  of the intended criterion, (ii) a versioned self-evaluator with uncertainty,
+  including a feedback-dependent hostile case, and (iii) a hypothesis about
+  value/loss computation in an ordinary ReLU MLP. For (iii), specify a causal
+  discrimination test and a function-preserving reparameterization control;
+  do not train the final challenge here. Compare at least one RLL-like route
+  with an alternative and identify the smallest viable reflective fragment.
+  Select one high-value opportunity; do not require every candidate to support
+  all ambitious extensions immediately.
+
   **Done when:** at least two tempting but invalid inferences have explicit
   witnesses or scoped explanations; viable candidates have discriminating
   evidence, not just scores; D60 is recorded.
@@ -443,6 +463,12 @@ to publication with an unsound core simply because the planned queue ended.
   reason to eliminate one, and checked literature relevant to the shortlist.
   Audit clocks and the allocation to both research lanes. Identify which
   assumptions would most threaten the preferred candidate.
+
+  **DIR01 check:** state how the shortlist connects loss proxies to value,
+  supports a scoped self-assessment question, and permits a test of naturally
+  learned neural structure. Compare the leading opportunity with its closest
+  antecedent. Do not pass by permanently deferring these aims without a named
+  scoped alternative and an explicit direction decision.
 
   **PASS:** a justified shortlist and one bounded next development question;
   no need to pretend the final calculus is fixed. Select F05.
@@ -459,6 +485,10 @@ to publication with an unsound core simply because the planned queue ended.
   relation. Explain what an inference licenses the consumer to conclude and
   what constitutes a countermodel. Give a nonempty model/interpretation and
   show the assumptions are jointly satisfiable in the chosen fragment.
+
+  Include the selected loss/proxy semantics and a typed, bounded self-assessment
+  interpretation. State where confidence, provenance and metalogical premises
+  live; do not conflate a self-prediction with proof of its correctness.
 
   **Done when:** notation and project spec match; at least three examples have
   complete interpretations; the choice and rejection conditions are explicit;
@@ -501,6 +531,11 @@ to publication with an unsound core simply because the planned queue ended.
   structure. A tautological quotient or lossless serialization by itself does
   not establish a useful calculus.
 
+  Use the opportunity register to prioritize a scoped proxy-to-task regret
+  relationship, contextual substitutability/representation result, or warranted
+  self-assessment result. A known surrogate bound or the ReLU/residual identity
+  alone is a baseline, not the new characterization contribution.
+
   **Done when:** a nontrivial theorem is proved, or an obstruction plus a
   constructive restricted result is established and the specification is
   narrowed accordingly; D90 is recorded. Budget expiry alone does not complete
@@ -538,7 +573,9 @@ to publication with an unsound core simply because the planned queue ended.
   Require nonempty operational semantics; three meaningful multistep
   derivations including composition; a soundness proof; the nontrivial result
   or constructive restricted alternative from F08; exact fragment comparisons;
-  and an honest literature-based contribution statement. Attempt a fresh
+  and an honest literature-based contribution statement. Include a nonempty
+  bounded self-assessment example with explicit uncertainty and update rules;
+  preserve scope distinctions from full proof reflection. Attempt a fresh
   reconstruction of the load-bearing proof steps. Label self-review honestly
   when another reviewer/agent is unavailable.
 
@@ -577,13 +614,17 @@ to publication with an unsound core simply because the planned queue ended.
 - [ ] **F13 — work two motivating case studies end to end.**
 
   Principal artifact: `v2/derivations/06_case_studies.md`.
-  Use one small scientific approximation/cost example and one toy axiomatic-
-  system example. For each, state the operational task, assumptions, value
+  Use one small scientific approximation/loss/resource example and one bounded
+  self-assessment example, which may use a toy axiomatic or proof-checking
+  system. The latter must concern the evaluator's own versioned behavior and
+  influence later reasoning while admitting unresolved outcomes. For each,
+  state the operational task, assumptions, value
   objects, premises, intermediate inferences, comparison baseline, and result.
   Compute a composite conclusion not handed to the reasoner as an input score.
   A more detailed numerical reference is still a declared model, not final
-  truth. In the axiomatic example, distinguish theoremhood inside a system
-  from the pragmatic decision to use that system.
+  truth. In the reflective/axiomatic example, distinguish theoremhood inside
+  a system from the pragmatic decision to rely on it. A staged fragment is
+  acceptable; document what a genuinely cyclic extension would still require.
 
   **Done when:** the examples explain why the calculus's structure is needed,
   show its limits, and are executable where appropriate; D60 is recorded.
@@ -601,6 +642,14 @@ to publication with an unsound core simply because the planned queue ended.
 
   **Done when:** F15 can execute without inventing its success criteria; any
   already-seen cases are labeled development rather than held out.
+
+  **DIR01 neural probe:** freeze a small ordinary-training ReLU MLP comparison,
+  a hypothesized internal loss/value computation, relevant interventions and
+  reparameterization controls. No loss term or architecture may secretly force
+  the proposed logical structure in the unconstrained baseline. A deliberately
+  compiled or constrained network is a separately labeled positive control.
+  Select one feasible probe, not a second large research program; prospectively
+  revise effort allocations if needed and preserve the existing time floors.
 
 - [ ] **F15 — run and interpret the frozen challenge.**
 
@@ -632,8 +681,11 @@ to publication with an unsound core simply because the planned queue ended.
 
   Record `v2/checkpoints/C_1.md`, with versioned retries.
   Require a non-stale Gate B; no unresolved flaw in the sound core; successful
-  differential/regression checks; worked scientific and axiomatic examples;
-  transparent frozen results; and resolved dispositions from F16. Require
+  differential/regression checks; worked scientific and self-assessment examples;
+  transparent frozen results, including the bounded neural-interpretation
+  probe; and resolved dispositions from F16. A negative probe may complete the
+  investigation but must not be reported as successful causal interpretation.
+  Require
   evidence of genuine compositional inference, not only score thresholding.
   Apply F14's prospective useful-derivation criterion. A speed advantage is
   required only if the specification actually promised one; a null benchmark
@@ -691,8 +743,9 @@ accurately and retain the evidence for the next cycle or phase.
 
 ## Deferred follow-up branches
 
-Contract semantics and inverse task recovery, resource-sensitive model
-substitution, inquiry/self-revision, neural learning, mechanistic policy
-interpretability, and broad physical-theory hierarchies remain available
-future directions. Promote one only through an explicit roadmap decision,
-not by allowing it to consume the present phase unnoticed.
+Contract semantics and inverse task recovery, large-scale model substitution,
+general reflective agents, large-network interpretability, and broad physical-
+theory hierarchies remain possible later phases. DIR01 explicitly promotes a
+bounded self-assessment capability and a small ordinary-network probe into the
+current phase. Wider versions still require an explicit roadmap decision rather
+than unnoticed scope expansion. There is no fixed lifetime limit on phases.
