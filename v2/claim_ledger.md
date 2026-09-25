@@ -334,3 +334,21 @@ fixture; it asserts no completeness or operational correctness theorem.
 
 The source list is unchanged and the completed earlier claims remain scoped as
 before. F03 stays partial; F03-T01 is not marked established by these certificates.
+
+
+## S8 context and witness audit
+
+[Source-adapter note](literature/01h_context_and_witness_audit.md),
+[finite fixtures](checks/f03_context_witness.py) and
+[report](checks/F03_context_witness_results.json). Same-agent reconstruction; no
+whole-paper independent validation or permanent calculus is asserted.
+
+| ID | Scoped statement | Evidence and boundary |
+|---|---|---|
+| F03-C47 | In the displayed three-variable metric context and two-point target, exactly two constant full interpretations exist; deleting the middle variable permits four endpoint interpretations, including unequal endpoints. Validity restricts safely in the opposite direction; extension-surjectivity is a sufficient reverse condition. | Section 2, exact enumeration and direct argument; S10 Remark 3.7 antecedent. Arbitrary zero diagonal is not vacuous in FRel. No necessity claim for each single equation or efficient extension algorithm. |
+| F03-C48 | S12 Section 5's finite-potential optimality premises have no model for two point masses separated by infinite distance. Every finite off-diagonal distance has the stated explicit two-point certificate. | Section 3.1–3.2, finite-dual versus infinite-primal argument and exact fixtures. Does not refute the conditional optimality implication or arithmetic completeness. Disposition B-S12-KR-01 requires existence evidence. |
+| F03-C49 | For a finite extended pseudometric, a finite-cost coupling exists iff both distributions give each finite-distance component equal mass. The displayed within-component product construction is feasible, not generally optimal. | Section 3.3, necessity/sufficiency proof, rational construction and nonoptimality control. Dual attainment is not supplied by this construction. |
+
+F03 remains partial with 46.253886 cumulative L minutes and 13.746114 remaining.
+The source list stays at eighteen; the new boundaries do not invalidate an
+existing gate or a previously used theorem. F04 and all gates remain unattempted.

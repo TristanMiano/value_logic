@@ -391,3 +391,14 @@ No source is added and no permanent calculus is selected. Its validator handles
 only the listed source-rule subset; it does not establish source completeness,
 operational witnesses, or calibration of the assumptions. The latest timing and
 partial status are recorded in [S7](../work_logs/F03_2026-09-24_S7.md).
+
+
+## S8: full contexts and existing witnesses
+
+[The context/witness audit](01h_context_and_witness_audit.md) sharpens two uses
+of existing sources, without adding references. Related-variable elimination
+needs an extension argument; optimality equations need a satisfiability witness.
+Finite countermodels and positive constructions are separated from source
+theorems. The updated register records these as scoped adapter boundaries, not
+new mandatory primitives. [S8](../work_logs/F03_2026-09-24_S8.md) records the
+still-partial task status and actual source-review credit.

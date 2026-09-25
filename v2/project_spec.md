@@ -1,6 +1,6 @@
 # Phase Two Project Specification
 
-Version: F02 completion plus F03 S6 partial audit, September 24, 2026.
+Version: F02 completion plus F03 S8 partial audit, September 24, 2026.
 Status: **F01 and F02 complete; no permanent calculus selected and no readiness gate passed**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -235,3 +235,14 @@ is selected by these comparisons. The eighteen-source list remains unchanged.
 
 [The S7 record](work_logs/F03_2026-09-24_S7.md) reports 207 passing F03 checks and
 41.675988 cumulative L minutes; 18.324012 of L60 remain. Continue F03.
+
+
+## S8: source context and witness boundaries
+
+The [context/witness audit](literature/01h_context_and_witness_audit.md) adds a
+finite context-elimination obstruction and an explicit extended-distance
+optimality-certificate existence boundary. Positive extension and finite-coupling
+constructions preserve useful restricted cases. These concern source use, not a
+new candidate selection or an F04 gate review. There are 222 passing dedicated
+F03 checks. [S8](work_logs/F03_2026-09-24_S8.md) records 46.253886 cumulative
+L minutes; 13.746114 of L60 remain. Continue F03.

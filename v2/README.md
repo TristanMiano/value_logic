@@ -20,13 +20,13 @@ checks give **124 passing dedicated F02 tests**. Credited derivation time is
 [completion record](work_logs/F02_2026-09-22_S2.md) preserves actual clocks,
 source-check limits, research evidence and the cumulative package disposition.
 **F03 is in progress.** The source list remains 8 core sources and 10 targeted
-supplements. The [checked source derivations](literature/01g_checked_source_derivations.md)
-include explicit RLL loss-chaining and finite signed-coordinate certificates,
-and the corresponding guarded-substitution and Abelian-rule boundaries.
-There are **207 passing dedicated F03 tests**, including 18 new certificate
-checks. [S7](work_logs/F03_2026-09-24_S7.md) records cumulative literature time
-**41.675988 minutes**, leaving **18.324012** of L60. The two source certificates
-are audit fixtures, not a selected calculus or complete prover.
+supplements. The [context/witness audit](literature/01h_context_and_witness_audit.md)
+adds precise limits and positive conditions for variable elimination and finite
+optimality witnesses. The earlier
+[checked source derivations](literature/01g_checked_source_derivations.md) remain
+intact. There are **222 passing dedicated F03 tests**, including 15 new checks.
+[S8](work_logs/F03_2026-09-24_S8.md) records **46.253886 cumulative L minutes**,
+leaving **13.746114** of L60. These fixtures are not a complete source prover.
 **Next: continue F03.**
 No calculus has been selected, and no readiness gate has passed.
 
@@ -280,3 +280,16 @@ The new suite has 18 tests and combined F03 discovery has 207. The saved JSON
 includes two full conditional proof certificates, with 18 and 32 source-rule
 nodes. It checks neither the whole RLL system nor operational evidence for the
 assumptions. Full repository verification and new CI were not run in S7.
+
+
+### S8 source-boundary fixtures
+
+```text
+python -m v2.checks.f03_context_witness --json v2/checks/F03_context_witness_results.json
+python -m unittest discover -s verification -p 'test_v2_f03*.py'
+```
+
+The new suite has 15 tests; combined F03 discovery has 222. The general arguments
+are in the source-adapter note. The incremental package is not pushed from this
+environment; full local repository verification was not run. The restored root
+README and phase-one files are unchanged.

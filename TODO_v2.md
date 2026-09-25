@@ -384,6 +384,16 @@ to publication with an unsound core simply because the planned queue ended.
   See [S7](v2/work_logs/F03_2026-09-24_S7.md). This is a local incremental package;
   F03 remains partial and selected, with no F04, core choice or gate advanced.
 
+  **Continuation — September 24, 2026, S8.** Verified the author's S7 push at
+  `bbd5431`. The [context/witness audit](v2/literature/01h_context_and_witness_audit.md)
+  records an extension condition for related-variable elimination and a finite-
+  potential optimality-certificate existence boundary. Positive finite cases
+  are retained; no additional bibliography entries or core selection. Fifteen
+  new tests and 222 combined F03 checks pass. Credited L is 4.577898 minutes,
+  cumulative 46.253886, leaving 13.746114. See
+  [S8](v2/work_logs/F03_2026-09-24_S8.md). This is an incremental local package;
+  F03 stays partial and selected, with F04 and all gates unattempted.
+
 - [ ] **F04 — hostile examples and candidate discrimination.**
 
   Principal artifact: `v2/derivations/01_candidate_countermodels.md`.
