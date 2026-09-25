@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: September 24, 2026.
-Status: F01 and F02 complete; F03 has a recorded partial audit; no permanent calculus selected or readiness gate passed.
+Status: F01, F02 and F03 complete at their task scopes; no permanent calculus selected or readiness gate passed.
 
 ## Resume here
 
@@ -11,7 +11,7 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F03 — external foundations audit.**
+**Next task: F04 — hostile examples and candidate discrimination.**
 
 **Active repair queue: empty.**
 
@@ -294,7 +294,7 @@ to publication with an unsound core simply because the planned queue ended.
   The downloadable completion package is cumulative from the F01 main snapshot
   and also contains a delta for an exactly applied, committed S1 package.
 
-- [ ] **F03 — external foundations audit.**
+- [x] **F03 — external foundations audit.**
 
   Principal artifact: `v2/literature/01_foundations.md`, with
   `v2/references.bib` as a supporting bibliography.
@@ -407,6 +407,20 @@ to publication with an unsound core simply because the planned queue ended.
   8.941762 of L60. See [S9](v2/work_logs/F03_2026-09-24_S9.md). F03 remains partial and
   selected; F04 and all gates remain unattempted. Delivery is an incremental
   local package, not a pushed commit or an amendment selecting the calculus.
+
+  **Completed — September 24, 2026, S10 (UTC September 25).** The
+  [phase-one comparison](v2/literature/01j_phase_one_literature_and_novelty.md)
+  maps value-as-primitive, licensing, open-ended succession, composition,
+  revision and learning to primary literature. It distinguishes standard
+  ingredients, concrete integration results, and unproved novelty opportunities.
+  Seven targeted comparisons extend the eight-core-source audit to 28 total
+  sources; their exact statements and import limits are recorded. Twenty new
+  checks bring F03 discovery to 256 passing tests. The source-review minimum is
+  met: **60.216954 cumulative L minutes**, including **9.158716** in S10.
+  [The completion record](v2/work_logs/F03_2026-09-24_S10.md) retains both runtime logs,
+  the excluded interrupted interval, forecasts, evidence and validation limits.
+  F03 is complete; **F04 is selected but not started**. No core or gate is chosen.
+  The source use register is not a proof engine or a proof of global novelty.
 
 - [ ] **F04 — hostile examples and candidate discrimination.**
 

@@ -19,17 +19,16 @@ checks give **124 passing dedicated F02 tests**. Credited derivation time is
 **61.118295 minutes** across S1 and S2, satisfying D60. The
 [completion record](work_logs/F02_2026-09-22_S2.md) preserves actual clocks,
 source-check limits, research evidence and the cumulative package disposition.
-**F03 is in progress.** The [calculus desiderata and theorem agenda](literature/01i_calculus_desiderata_and_theorem_agenda.md)
-adds a literature-informed positive direction to the existing source audit:
-sound useful composition, resource-scoped contextual characterization,
-minimal adequate information and faithful/effective proof interfaces.
-The recommendations are targets, not a selected calculus. Three targeted
-primary sources bring the register to **8 core and 13 supplementary sources**.
-There are **236 passing dedicated F03 tests**, including 14 new finite and
-metadata checks. [S9](work_logs/F03_2026-09-24_S9.md) records **51.058238 cumulative L minutes**,
-leaving **8.941762** of L60. Prior source/witness audits and their historical
-results remain unchanged.
-**Next: continue F03.**
+**F03 is complete at its literature-audit scope.** The
+[closing phase-one comparison](literature/01j_phase_one_literature_and_novelty.md)
+connects the broad original objectives and concrete phase-one theorems to the
+source literature. The register now contains eight core sources and twenty
+scoped supplements, with explicit hypotheses and unused stronger claims.
+The existing [theorem agenda](literature/01i_calculus_desiderata_and_theorem_agenda.md)
+remains proposed, not selected. Twenty new exact finite/metadata checks bring
+F03 discovery to **256 passing tests**. The [completion record](work_logs/F03_2026-09-24_S10.md)
+records **60.216954 cumulative L minutes**, satisfying L60.
+**Next: F04 — hostile examples and candidate discrimination (not started).**
 No calculus has been selected, and no readiness gate has passed.
 
 The intended result is a small, explicit calculus with operationally meaningful

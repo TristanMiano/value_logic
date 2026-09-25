@@ -4,7 +4,7 @@
   "base_commit": "65e91d9b46bf61566160de9dbdcb4a1a98b33f02",
   "access_date": "2026-09-22",
   "core_count": 8,
-  "supplementary_count": 13,
+  "supplementary_count": 20,
   "sources": [
     {
       "id": "S01",
@@ -1384,6 +1384,258 @@
       "scope_status": "selected definitions, theorem statements and stated argument interfaces only",
       "whole_work_verified": false,
       "inspection_session": "2026-09-24-S9"
+    },
+    {
+      "id": "S22",
+      "key": "MakinsonVanDerTorre2000",
+      "title": "Input/Output Logics",
+      "authors": [
+        "David Makinson",
+        "Leendert van der Torre"
+      ],
+      "publication_year": 2000,
+      "inspected_version": "Author-hosted journal manuscript (filename says September 1999); published JPL 2000",
+      "primary_urls": [
+        "https://icr.uni.lu/leonvandertorre/papers/jpl00.pdf",
+        "https://doi.org/10.1023/A:1004748624537"
+      ],
+      "locators": [
+        "Section 3.2, Observation 1, PDF index 4 / printed page 5",
+        "Section 5.1, reusable output"
+      ],
+      "inspection": "Read controlled output and SI/AND/WO characterisation; rendered rule page at PDF index 4. No complete translation of phase-one Assess into I/O is claimed.",
+      "hypotheses": [
+        "Fixed classical consequence operation and selected input/output family",
+        "Reuse of outputs requires its declared variant and rule conditions"
+      ],
+      "disposition": "Nonfactive-output comparison; logical strengthening is not statistical conditioning or quantitative plan composition.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-25",
+      "inspection_session": "2026-09-24-S10",
+      "mapping": "01j_phase_one_literature_and_novelty.md sections 2-6",
+      "claim_links": [
+        "F03-D03"
+      ],
+      "scope_status": "selected primary interfaces only",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S23",
+      "key": "LarocheEtAl2019SPIBB",
+      "title": "Safe Policy Improvement with Baseline Bootstrapping",
+      "authors": [
+        "Romain Laroche",
+        "Paul Trichelair",
+        "Rémi Tachet des Combes"
+      ],
+      "publication_year": 2019,
+      "inspected_version": "PMLR 97:3652-3661, official ICML 2019 paper",
+      "primary_urls": [
+        "https://proceedings.mlr.press/v97/laroche19a.html",
+        "https://proceedings.mlr.press/v97/laroche19a/laroche19a.pdf"
+      ],
+      "locators": [
+        "Section 2.3, Theorem 2, PDF index 2",
+        "Section 2.5, relaxed variant"
+      ],
+      "inspection": "Checked sign and role of the baseline-improvement bound, policy/data assumptions and relaxed-variant limitation; theorem rendered at PDF index 2.",
+      "hypotheses": [
+        "Finite discounted MDP and bounded return, stated empirical error event",
+        "Baseline-constrained policy class and data/uncertainty assumptions of Theorem 2",
+        "Positive phase-one margin requires the guaranteed advantage to exceed that margin"
+      ],
+      "disposition": "A possible producer of baseline-comparison evidence, not a generic risk certificate or a theorem of phase-one licensing.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-25",
+      "inspection_session": "2026-09-24-S10",
+      "mapping": "01j_phase_one_literature_and_novelty.md sections 2-6",
+      "claim_links": [
+        "F03-D03"
+      ],
+      "scope_status": "selected primary interfaces only",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S24",
+      "key": "AcarBlellochHarper2002",
+      "title": "Adaptive Functional Programming",
+      "authors": [
+        "Umut A. Acar",
+        "Guy E. Blelloch",
+        "Robert Harper"
+      ],
+      "publication_year": 2002,
+      "inspected_version": "Author-hosted POPL 2002 paper; DOI 10.1145/503272.503296",
+      "primary_urls": [
+        "https://www.cs.cmu.edu/~rwh/papers/afp/popl02.pdf"
+      ],
+      "locators": [
+        "Sections 4 and 6, Theorems 1 and 5",
+        "Theorem 5: PDF index 11"
+      ],
+      "inspection": "Checked change-propagation correctness and runtime theorem interfaces; rendered Theorem 5 page. Full correctness proof is referred to a companion report not independently audited here.",
+      "hypotheses": [
+        "The specified adaptive language, store and trace validity conditions",
+        "Result comparison includes the stated correspondence between locations"
+      ],
+      "disposition": "Strong antecedent for dependency-tracked recomputation. Does not automatically prove the phase-one evaluator footprint or a minimal repair algorithm.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-25",
+      "inspection_session": "2026-09-24-S10",
+      "mapping": "01j_phase_one_literature_and_novelty.md sections 2-6",
+      "claim_links": [
+        "F03-D03"
+      ],
+      "scope_status": "selected primary interfaces only",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S25",
+      "key": "GaboardiEtAl2021GHL",
+      "title": "Graded Hoare Logic and its Categorical Semantics",
+      "authors": [
+        "Marco Gaboardi",
+        "Shin-ya Katsumata",
+        "Dominic Orchard",
+        "Tetsuya Sato"
+      ],
+      "publication_year": 2021,
+      "inspected_version": "arXiv:2007.11235v2, 26 January 2021",
+      "primary_urls": [
+        "https://arxiv.org/html/2007.11235v2",
+        "https://arxiv.org/abs/2007.11235v2"
+      ],
+      "locators": [
+        "Section 3.4, Table 1: graded rules",
+        "Definitions 1 and 9",
+        "Theorem 5.1: soundness/erasure"
+      ],
+      "inspection": "Read grading, assertions, sequential rules and erasure theorem in primary HTML. Compared the interface, not every categorical proof; no unobserved figure is relied on.",
+      "hypotheses": [
+        "Declared pomonoid grades and assertions",
+        "A model satisfying the source GHL structure conditions",
+        "Context dependence may occur through assertions; it is not excluded by this framework"
+      ],
+      "disposition": "Direct structural antecedent for phase-one graded plans and erasure; empirical validity and revision require a faithful instance, not automatic import.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-25",
+      "inspection_session": "2026-09-24-S10",
+      "mapping": "01j_phase_one_literature_and_novelty.md sections 2-6",
+      "claim_links": [
+        "F03-D03"
+      ],
+      "scope_status": "selected primary interfaces only",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S26",
+      "key": "BloomfieldRushby2021Assurance",
+      "title": "Assurance 2.0: A Manifesto",
+      "authors": [
+        "Robin E. Bloomfield",
+        "John Rushby"
+      ],
+      "publication_year": 2021,
+      "inspected_version": "arXiv:2004.10474v3, 14 January 2021",
+      "primary_urls": [
+        "https://arxiv.org/html/2004.10474v3",
+        "https://arxiv.org/abs/2004.10474v3"
+      ],
+      "locators": [
+        "Sections I-II: reasoning, evidence and doubts",
+        "Section III: soundness/confidence"
+      ],
+      "inspection": "Read distinction between plausible evidence, deductive steps, acknowledged gaps and residual doubts. Used textual definitions; no figure-dependent inference.",
+      "hypotheses": [
+        "Declared assurance claims, argument steps, evidence and accepted residual assumptions",
+        "Indefeasibility is a methodological confidence criterion, not an all-future-model theorem"
+      ],
+      "disposition": "Close precedent for fallible warranted reliance and documented objections; narrows broad originality claims without identifying the complete calculi.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-25",
+      "inspection_session": "2026-09-24-S10",
+      "mapping": "01j_phase_one_literature_and_novelty.md sections 2-6",
+      "claim_links": [
+        "F03-D03"
+      ],
+      "scope_status": "selected primary interfaces only",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S27",
+      "key": "BloomfieldNetkachovaRushby2024Defeaters",
+      "title": "Defeaters and Eliminative Argumentation in Assurance 2.0",
+      "authors": [
+        "Robin Bloomfield",
+        "Kate Netkachova",
+        "John Rushby"
+      ],
+      "publication_year": 2024,
+      "inspected_version": "arXiv:2405.15800v1, 16 May 2024; SRI-CSL-2024-01",
+      "primary_urls": [
+        "https://arxiv.org/html/2405.15800v1",
+        "https://arxiv.org/abs/2405.15800v1"
+      ],
+      "locators": [
+        "Sections 1-2.4: exploratory/exact defeaters and assessments",
+        "Section 4: conjunctive and disjunctive decomposition"
+      ],
+      "inspection": "Checked ordinary implication-block propagation separately from exact-defeater rules. Section 2.2 implementation note is specific to the inspected version; no current-tool capability claim.",
+      "hypotheses": [
+        "Identify the kind of argument block and defeater before choosing propagation",
+        "A false antecedent of an ordinary implication is not a refutation of its consequent"
+      ],
+      "disposition": "Close ternary evidence antecedent; its ordinary-block operation differs from phase-one required-conjunction meet. No global relabeling equivalence claimed.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-25",
+      "inspection_session": "2026-09-24-S10",
+      "mapping": "01j_phase_one_literature_and_novelty.md sections 2-6",
+      "claim_links": [
+        "F03-D03"
+      ],
+      "scope_status": "selected primary interfaces only",
+      "whole_work_verified": false
+    },
+    {
+      "id": "S28",
+      "key": "MurugesanEtAl2024AssuranceASP",
+      "title": "Automating Semantic Analysis of System Assurance Cases using Goal-directed ASP",
+      "authors": [
+        "Anitha Murugesan",
+        "Isaac Wong",
+        "Joaquín Arias",
+        "Robert Stroud",
+        "Srivatsan Varadarajan",
+        "Elmer Salazar",
+        "Gopal Gupta",
+        "Robin Bloomfield",
+        "John Rushby"
+      ],
+      "publication_year": 2024,
+      "inspected_version": "arXiv:2408.11699v3, 5 September 2024; later v5 exists and is not silently substituted",
+      "primary_urls": [
+        "https://arxiv.org/html/2408.11699v3",
+        "https://arxiv.org/abs/2408.11699v3"
+      ],
+      "locators": [
+        "Sections 3.1 and 5.1-5.4",
+        "Section 5.4: adequacy, completeness and property-object-environment checks"
+      ],
+      "inspection": "Read the semantic-analysis interface and scope of completeness for declared object/environment/property inventories. No diagram or empirical-case performance claim is used.",
+      "hypotheses": [
+        "Specified assurance vocabulary, declared domain inventory and ASP translation",
+        "Soundness of the chosen source rules and interpretation; not arbitrary future model completeness"
+      ],
+      "disposition": "Strengthens the comparison to scoped assurance; does not establish global open-library finality or arithmetic proof completeness.",
+      "role": "supplementary",
+      "accessed_on": "2026-09-25",
+      "inspection_session": "2026-09-24-S10",
+      "mapping": "01j_phase_one_literature_and_novelty.md sections 2-6",
+      "claim_links": [
+        "F03-D03"
+      ],
+      "scope_status": "selected primary interfaces only",
+      "whole_work_verified": false
     }
   ],
   "follow_up_leads": [
@@ -1438,8 +1690,14 @@
     "secondary generated summaries were not used for mathematical claims"
   ],
   "copyright_note": "No external paper, scan, figure, or font is redistributed in this research package.",
-  "audit_scope": "Eight core sources and ten targeted supplements; selected definitions and theorem interfaces only. S5 adds no source, records a scoped S16 convexity correction, and checks context preservation and exact arithmetic import contracts.",
-  "latest_session": "2026-09-24-S9",
-  "latest_access_date": "2026-09-24",
-  "latest_repository_commit": "b722b22607ce3d051a84aaa08f00f073e9a99cc2"
+  "audit_scope": "F03 completed at source-audit scope: eight core sources and twenty targeted supplements. Selected statements, exact hypotheses and mappings, not twenty-eight independent full-paper proof verifications.",
+  "latest_session": "2026-09-24-S10",
+  "latest_access_date": "2026-09-25",
+  "latest_repository_commit": "48b11819230bb856ce03fed28a5161ff5e276e5b",
+  "completion_scope": {
+    "status": "complete-at-task-scope",
+    "record": "../work_logs/F03_2026-09-24_S10.md",
+    "selects_calculus": false,
+    "passes_gate": false
+  }
 }

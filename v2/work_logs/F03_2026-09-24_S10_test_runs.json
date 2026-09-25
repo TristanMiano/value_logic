@@ -1,0 +1,37 @@
+[
+  {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "v2.checks.f03_phase_one_bridge",
+      "--json",
+      "v2/checks/F03_phase_one_bridge_results.json"
+    ],
+    "working_directory": "/mnt/data/f03_s10/work",
+    "start_utc": "2026-09-25T04:05:39.253080+00:00",
+    "end_utc": "2026-09-25T04:05:41.033018+00:00",
+    "elapsed_seconds": 1.77989438,
+    "returncode": 0,
+    "output": "v2/work_logs/F03_2026-09-24_S10_new_tests.txt"
+  },
+  {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-X",
+      "faulthandler",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "verification",
+      "-p",
+      "test_v2_f03*.py"
+    ],
+    "working_directory": "/mnt/data/f03_s10/work",
+    "start_utc": "2026-09-25T04:05:41.033378+00:00",
+    "end_utc": "2026-09-25T04:05:44.255353+00:00",
+    "elapsed_seconds": 3.221996987,
+    "returncode": 0,
+    "output": "v2/work_logs/F03_2026-09-24_S10_combined_tests.txt"
+  }
+]

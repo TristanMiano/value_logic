@@ -143,10 +143,12 @@ class F03TheoremAgendaTests(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]/'literature'
         d = json.loads((root/'F03_sources.json').read_text(encoding='utf-8'))
         ids = [s['id'] for s in d['sources']]
-        self.assertEqual(set(ids), {f'S{i:02}' for i in range(1, 22)})
+        # S9 identities remain required; later declared comparisons may be added.
+        self.assertTrue({f'S{i:02}' for i in range(1, 22)}.issubset(ids))
         self.assertEqual(len(ids), len(set(ids)))
         self.assertEqual(d['core_count'], 8)
-        self.assertEqual(d['supplementary_count'], 13)
+        self.assertGreaterEqual(d['supplementary_count'], 13)
+        self.assertEqual(len(d['sources']), d['core_count'] + d['supplementary_count'])
         by_id = {s['id']: s for s in d['sources']}
         self.assertIn('Crubille', by_id['S19']['authors'][0])
         self.assertIn('Maccheroni', by_id['S20']['authors'][0])

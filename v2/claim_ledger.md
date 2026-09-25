@@ -187,7 +187,7 @@ only the specified passages, not every proof in every work. The
 | F03-C07 | A shared latent choice cannot generally be replaced by independently pasted stagewise choices while preserving an exact robust value. | S08 rectangularity conditions; M07 value-one versus value-zero witness and relaxation argument. | Keep uncertainty and information schedules explicit; a conservative lower bound is not an equality claim. |
 | F03-C08 | S10 permits arbitrary algebra operations but its quantitative substitution must preserve variable relations; zero fuzzy distance is not automatically equality. | Definitions 3.1–3.6/4.1 and theorem statements checked; M08 countermodels. | Do not delete soundness side conditions to admit amplification; full theory translation remains open. |
 | F03-C09 | S11's relational variety/exactness results impose specific lifting/quotient conditions and are not an implemented complete deduction system. | Sections 3–6 inspected; source explicitly places the concrete deduction-system direction in further work. | Ordered or directed candidates have relevant antecedents, not automatic general metatheory. |
-| F03-T01 | F03 satisfies all completion conditions including L60. | **Not established.** Partial session clock record gives credited L and remaining floor. | Continue F03; F04 and Gate A remain unattempted. |
+| F03-T01 | F03 satisfies all completion conditions including L60. | **Established at task-audit scope in S10:** 60.216954 measured L minutes; exact source-use register, candidate and phase-one comparisons; scoped unused claims remain excluded. | F04 selected but not begun; no gate or calculus choice. Historical partial entries below retain their original dates/status. |
 
 A source-condition mismatch is recorded as a restriction on a prospective import,
 not as a retroactive refutation of an already correctly scoped F02 theorem.
@@ -375,3 +375,25 @@ Their assumptions are not silently inherited by Value Logic. The abstract-only
 Giacobazzi2000 lead is not treated as an imported numbered theorem. Fourteen
 new checks bring F03 discovery to236 passing tests. F03-T01 remains unestablished
 until the task's substantive and protected-review conditions are both met.
+
+
+## S10: phase-one objectives, source comparison and task completion
+
+[Closing audit](literature/01j_phase_one_literature_and_novelty.md),
+[finite adapters](checks/f03_phase_one_bridge.py),
+[report](checks/F03_phase_one_bridge_results.json). This is same-agent source
+comparison and elementary derivation, not independent proof review.
+
+| ID | Scoped statement | Evidence and boundary |
+|---|---|---|
+| F03-C54 | For a nonempty current valid possible-value region, subset/disjoint/mixed abstraction recovers the phase-one region atom. Nonempty narrowing is monotone in the information order, not necessarily the conjunction chain. | Section 6.1 direct proof and exact finite checks; missing/conflicting evidence and WF are outside this restricted adapter. |
+| F03-C55 | For nonempty Boolean joint patterns, separate ternary conjunction differs from direct joint abstraction exactly when all-ones is impossible but every coordinate is possible somewhere. The discrepancy is open versus refuted; Cartesian products have no discrepancy. | Section 6.2 proof, exhaustive n=1,2,3 tests, two-coordinate loss example. Not a refutation of phase-one independent-atom completeness or a change to its profile semantics. |
+| F03-C56 | An ordinary assurance implication block and a required-condition conjunction differ on a refuted premise; the former need not refute its consequent, while the latter must fail. | S27 selected rule and Section 6.3 finite comparison. Not all Assurance 2.0 nodes have the ordinary-block rule. |
+| F03-C57 | A valid joint loss-difference guarantee need not be derivable by the conservative separate marginal-endpoint test. | Section 6.4 exact two-pair example; no new SPIBB statistical guarantee or available policy inferred. |
+| F03-D03 | Phase one's broad objectives have substantial antecedents; its concrete typed synthesis is useful, while a global priority claim remains unproved. P1–P4 identify scoped theorem opportunities connecting later value reasoning to phase-one reliance. | Sections 1–5 and sources S22–S28. Research assessment and unproved targets, not a mathematical novelty theorem, core choice, or F04 result. |
+
+F03-T01 is now established by the S10 completion record. All earlier partial
+records remain historical; their once-open timing condition is not the current
+status. Twenty new tests bring combined F03 discovery to 256. No F04 or gate
+has been attempted. Phase-one definitions, proved statements, code and negative
+experimental results are not modified by this completion.

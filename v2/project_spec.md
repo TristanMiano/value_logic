@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: F02 completion plus F03 S8 partial audit, September 24, 2026.
-Status: **F01 and F02 complete; no permanent calculus selected and no readiness gate passed**.
+Version: F03 external foundations audit completed, September 24, 2026 (UTC September 25).
+Status: **F01, F02 and F03 complete at task scope; no permanent calculus selected and no readiness gate passed**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 
@@ -268,3 +268,21 @@ F04 and GateA retain responsibility for selecting the actual development questio
 There are21 registered sources (8core,13supplements), 236 passing F03 tests, and
 51.058238 cumulative L minutes; 8.941762 remain. F03 stays partial and selected.
 No core, gate, full repository verification or new CI outcome is asserted.
+
+
+## F03 completion and continuity with phase one
+
+The [closing comparison](literature/01j_phase_one_literature_and_novelty.md)
+separates the original broad value-first program from its quantitative
+licensing realization. It maps licensing to controlled I/O and assurance,
+composition to graded program logics, and revision to dependency-based
+computation. The exact synthesis is potentially useful; no priority claim is
+proved. The region and joint-refutation adapters are elementary scoped results,
+not replacements for the frozen phase-one profile semantics. The strongest
+proposed next results concern useful value composition and non-definitional
+characterizations of contextual loss or adequate-information repair.
+
+F03 source-audit evidence and L60 are met. F04 is selected, not executed;
+Gate A and all later gates remain unattempted. The earlier audit notes retain
+their historical status. The root README receives only status/link updates;
+phase-one mathematical and experimental artifacts are unchanged.

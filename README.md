@@ -6,7 +6,7 @@ Value Logic is a research project about reasoning with useful but fallible model
 
 The project's proposed starting point is **value**: how a model, theory, representation, or course of action serves an intended purpose, at a tolerable error and resource cost. The ambition is not just to attach usefulness scores to otherwise conventional judgments. It is to investigate a calculus in which semantic objects and inference rules make pragmatic value central, with familiar truth-based reasoning potentially recovered within a suitable fragment.
 
-**Phase one is complete. Phase two is building the value-based calculus first. F01 and F02 are complete; the next task is F03, the external foundations audit.** The motivation below is the continuing research program. The particular constructions developed so far are realizations of it, not permanent foundations.
+**Phase one is complete. Phase two is building the value-based calculus first. F01, F02 and F03 are complete at their task scopes; the next task is F04, hostile examples and candidate discrimination.** The motivation below is the continuing research program. The particular constructions developed so far are realizations of it, not permanent foundations.
 
 ## Motivation: useful does not mean final
 
@@ -73,7 +73,9 @@ The current phase asks:
 
 The [candidate comparison](v2/foundations/02_candidate_semantics.md) and [continuation audit](v2/foundations/02a_candidate_reconstruction.md) give operations, worked examples, restrictions, and connections among these alternatives. Their 124 dedicated checks are development evidence for the stated examples, not a soundness proof for an adopted calculus. The [F02 completion record](v2/work_logs/F02_2026-09-22_S2.md) preserves the research and timing evidence.
 
-**Next: F03 — external foundations audit.** No permanent calculus has been chosen and no readiness gate has passed. Later work must still develop operational semantics, nontrivial inference rules, soundness and characterization results, and an executable reasoner with evidence of useful composition. The authoritative status and continuation pointer are in [TODO_v2.md](TODO_v2.md).
+**F03 — external foundations audit — is complete.** The [source-use register](v2/literature/F03_import_contracts.json), [theorem agenda](v2/literature/01i_calculus_desiderata_and_theorem_agenda.md), and [phase-one comparison](v2/literature/01j_phase_one_literature_and_novelty.md) distinguish established ingredients, scoped imports and future contribution opportunities. The [completion record](v2/work_logs/F03_2026-09-24_S10.md) retains evidence and measured review time.
+
+**Next: F04 — hostile examples and candidate discrimination.** No permanent calculus has been chosen and no readiness gate has passed. Later work must still develop operational semantics, nontrivial inference rules, soundness and characterization results, and an executable reasoner with evidence of useful composition. The authoritative status and continuation pointer are in [TODO_v2.md](TODO_v2.md).
 
 The former contract-semantics and inverse-task-recovery plan is preserved in [TODO_v2_contracts_archive.md](TODO_v2_contracts_archive.md). It remains a possible future direction, alongside model substitution, inquiry and self-revision, learning, and policy interpretability. There is no fixed limit on later phases.
 

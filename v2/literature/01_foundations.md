@@ -2,7 +2,7 @@
 
 Research date: September 22, 2026. Source revision:
 `65e91d9b46bf61566160de9dbdcb4a1a98b33f02`.
-Status: **first audit pass; F03 remains in progress until the task record closes**.
+Status: **F03 completed at literature-audit scope in S10; historical source cards retained**.
 No Gate A decision or permanent calculus selection is made here.
 
 The objects compared are the four candidates in
@@ -420,3 +420,17 @@ The [agenda register](F03_calculus_agenda.json) records proposed status, while
 The Giacobazzi2000 author abstract remains a lead with no numbered theorem
 import. Timing, tests and partial status are in
 [the S9 record](../work_logs/F03_2026-09-24_S9.md).
+
+
+## F03 completion: direct comparison with phase one
+
+[The closing comparison](01j_phase_one_literature_and_novelty.md) covers the
+broader value-as-primitive program, licensing, succession, composition,
+revision, learning and framework choice. S22–S28 are targeted primary
+comparisons, not seven whole-paper proof verifications. Standard ingredients,
+project-specific integration and unproved opportunities are distinguished.
+The separate-status/joint-refutation example gives a precise bridge without
+retroactively changing phase one. The task's source-review minimum is now
+satisfied; see [S10](../work_logs/F03_2026-09-24_S10.md). F04 and all gates remain
+unattempted. Existing unresolved source readings and rejected stronger imports
+remain explicit in the register; no universal novelty claim is made.
