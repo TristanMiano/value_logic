@@ -176,3 +176,28 @@ informativeness against the same-information lower-functional route, or
 reconstruct the remaining weakest hypotheses. OPP-02 gains a transported
 certificate control for hidden-coordinate scaling/permutation, but no training.
 The four rankings remain unchanged; no permanent core is selected.
+
+
+## S4 evidence update — portfolios and a neural certificate fingerprint
+
+Rankings stay unchanged. OPP-01 now has a sharper cost baseline: sparse exact
+certificates can have large precision costs, while a compact min-plus program
+can represent an exponentially large flat proof list. Unknown source modes may
+require separate same-policy proofs; prematurely convexifying premise bounds
+loses useful conclusions. These are scoped uses of established linear/convex
+patterns, not verified novel fields or a reason to abandon the viable alternatives.
+
+For OPP-02, the [S4 characterization](derivations/01c_certificate_portfolios.md)
+gives a predeclared structural fingerprint: nonnegative affine coefficients,
+A-transpose times coefficients equal to the query, and a nonnegative intercept.
+A learned function could be examined for this pattern without constraining its
+architecture. A/source meaning must be fixed before inspecting a convenient
+gradient, and independent zero-ReLU masks can fail even for an exact function.
+No training, intervention result or alignment success is claimed.
+
+OPP-03 retains one common reflective controller in the case-proof witness.
+OPP-04 gains a finite exact update library for fixed source directions, with a
+clear distinction between proof reuse, proof-family memory and changed semantics.
+Next: use these controls in a focused remaining F04 reconstruction, not another
+catalogue of equivalent counterexamples. The prospective experiment remains
+unexecuted; no new task is selected by this register update.

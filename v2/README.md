@@ -33,14 +33,15 @@ The existing [theorem agenda](literature/01i_calculus_desiderata_and_theorem_age
 remains proposed, not selected. Twenty new exact finite/metadata checks bring
 F03 discovery to **256 passing tests**. The [completion record](work_logs/F03_2026-09-24_S10.md)
 records **60.216954 cumulative L minutes**, satisfying L60.
-**F04 is partial through S3.** The
-[compressed paired-revision note](derivations/01b_compressed_revision_certificates.md)
-adds an exact small check interface, update/weight counterexamples, finite linear
-certificates and a quantitative rule for retaining conclusions after premise
-changes. The [S3 record](work_logs/F04_2026-09-26_S3.md) reports **10.166645 measured D minutes**
-this pass, **17.758820 cumulative**, leaving **42.241180** of D60.
-The combined F04 suite passes **94 tests**; F03/F02 retain **256/124**. The
-neural probe is still unexecuted. **Next remains F04**, not a gate or F05.
+**F04 is partial through S4.** The
+[certificate-portfolio note](derivations/01c_certificate_portfolios.md) compares
+sparse arithmetic proofs, numerical sensitivity, case-aware evidence and compact
+compositional proof families. It characterizes a restricted class of ReLU value
+functions as finite portfolios of valid certificates; no trained mechanism is
+claimed. The [S4 record](work_logs/F04_2026-09-26_S4.md) reports **15.692405 D minutes** this
+session, **33.451225 cumulative**, with **26.548775** remaining against D60.
+The combined F04 suite passes **128 tests**; F03/F02 retain **256/124**.
+The neural probe remains unexecuted. **Next remains F04**, not Gate A or F05.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f04*.py'

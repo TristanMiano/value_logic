@@ -370,3 +370,22 @@ support a useful policy comparison. Neural claims remain conditional structural
 controls, not discovered trained mechanisms. Scope/units/version metadata are
 not discarded by numerical compression. F04 remains partial (17.758820 D minutes);
 Gate A and F05 are unstarted, and F03's completed scope remains unchanged.
+
+
+## F04 S4 — certificate size, precision and reusable value functions
+
+The [S4 derivation](derivations/01c_certificate_portfolios.md) treats the same
+finite source information in the arithmetic and functional routes. Individual
+proof sparsity does not imply numerical robustness, a small fixed proof library,
+or a data-selected coverage guarantee. Case proofs establish a single deployed
+policy across all admitted modes; they do not let the policy observe that mode.
+A fixed finite CPWL map with concavity, positive homogeneity, monotonicity and
+query-compatible translations is exactly a finite envelope of linear certificates.
+This is a scoped structural result, not an adopted calculus or an identified
+mechanism in a trained network. Runtime affine-piece checks are weaker and must
+handle zero-activation conventions carefully. The numerical smoothing examples
+are not exact arithmetic proof certificates.
+
+F04 remains partial at **33.451225 measured D minutes**. The session meets its
+requested D15 aim; **26.548775** of task D60 remain. Existing phase-one and
+completed F03 conclusions are unchanged. Gate A and F05 remain unstarted.

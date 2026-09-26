@@ -495,6 +495,19 @@ to publication with an unsound core simply because the planned queue ended.
   This meets the requested ten-minute session aim without reclassifying code,
   retrieval or packaging as derivation. F04 remains selected; no Gate A or F05.
 
+
+  **Partial S4 continuation — September 26, 2026.** The
+  [certificate-portfolio derivation](v2/derivations/01c_certificate_portfolios.md)
+  distinguishes sparse proofs, coefficient precision, reusable proof families and
+  uncertain evidence modes. It gives finite-library and factored-circuit bounds,
+  a same-policy case-versus-uniform-proof separation, and a structural
+  characterization of certificate-valued ReLU functions. A zero-mask counterexample
+  is retained with a coherent one-sided reconstruction. No neural training.
+  **34 new / 128 F04 checks**, **256 F03** and **124 F02** regressions pass.
+  [S4](v2/work_logs/F04_2026-09-26_S4.md) records **15.692405 measured D minutes**, meeting
+  the requested 15-minute session floor. Cumulative F04 D is **33.451225 minutes**,
+  leaving **26.548775** against D60. F04 remains selected; no Gate A or F05.
+
 - [ ] **Gate A — foundation-selection readiness.**
 
   Record `v2/checkpoints/A_1.md` (increase the attempt suffix on retries).

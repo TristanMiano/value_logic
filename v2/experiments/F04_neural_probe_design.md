@@ -141,3 +141,26 @@ Here the competing *high-level* decomposition changes the counterfactual query.
 Input-dependent training reweighting may also change a finite-capacity fit even
 though its unconstrained pointwise optimum is unchanged. No new experiment has
 been executed and no baseline architecture is restricted by this amendment.
+
+
+## S4 optional diagnostic — certificate fingerprints, not imposed structure
+
+The [portfolio characterization](../derivations/01c_certificate_portfolios.md)
+supplies an additional positive/negative control when a candidate interpretation
+really maps inputs to scoped evidence bounds. Fix that mapping, its A matrix,
+query and units before looking at the model's gradients. At an observed input,
+a ReLU affine piece with lambda>=0, A^T lambda=v and intercept>=0 gives a checkable
+query bound. A failure to find such a certificate is not proof that the network
+is wrong or lacks all useful value computations.
+
+The generic global result additionally needs concavity, positive homogeneity
+and translation covariance. Do not infer them from a few samples. At zero
+activations compare ordinary independent derivative conventions with a coherent
+one-sided affine piece: cancelling ReLU units can preserve the scalar output
+while invalidating a naive gradient fingerprint. Keep the existing causal
+interventions and transported rescaling/permutation controls.
+
+This is an optional *diagnostic control*, not a replacement task, logical-label
+supervision, architecture constraint or regularizer for the ordinary baseline.
+The constructed min-plus/shortest-path networks in S4 demonstrate representation
+only. No trained network or held-out intervention test was run in S4.

@@ -467,3 +467,28 @@ checks, not independent verification, a neural result, or a novelty claim.
 
 F04-T01 remains unestablished pending D60 and task-level discrimination review.
 Current cumulative F04 D is 17.758820 minutes. No gate or later task is advanced.
+
+
+## F04 S4 — proof portfolios, precision and candidate discrimination
+
+[Derivation](derivations/01c_certificate_portfolios.md), [fixtures](checks/f04_certificate_portfolios.py),
+[report](checks/F04_certificate_portfolio_results.json),
+[session](work_logs/F04_2026-09-26_S4.md). Same-agent proofs and boundary reconstruction;
+34 new finite checks. Exact rational fixtures and labelled numerical smoothing
+illustrations are distinct. No independent validation or novelty claim.
+
+| ID | Scoped result | Evidence and limits |
+|---|---|---|
+| F04-C23 | A finite valid linear query on a nonempty source polyhedron has a tight certificate with at most rank(A) independent active rows. A finite basis library updates all feasible RHS values exactly. | Section 2; dependence-reduction proof and rational size bound. Finite library may be large; external premise proofs and optimal search are not free. |
+| F04-C24 | Perturbation sensitivity is weighted by multiplier times row uncertainty and is invariant under consistent positive row rescaling; sparsity alone does not bound it. | Section 3; sharp near-opposite-row witness and alternative proof. Fixed directions and justified current error envelopes required. |
+| F04-C25 | A sparse data-selected arithmetic proof need not inherit a marginal confidence level; simultaneous source coverage suffices for adaptive arithmetic conclusions. | Section 4; exact Bernoulli location-family counterexample. No empirical calibration algorithm or unrestricted sampling theorem is imported. |
+| F04-C26 | A flat fixed certificate library can need 2^d entries while a factored min-plus expression and emitted d-row proof use linear size. | Section 5; unique zero-optimum bit-string witnesses and explicit ReLU representation. Not a lower bound on arbitrary proof languages or neural architectures. |
+| F04-C27 | Case-dependent same-query certificates, one common coefficient vector, and rowwise maxima have distinct exact source geometries and can give strictly different guarantees. | Sections 6 and 13; augmented Farkas proof and feasible attaining witnesses in the existing reflective controller. Source-mode cover does not permit hidden-mode-dependent actions. |
+| F04-C28 | Minimum coverage by a flat finite proof portfolio contains set cover as an exact special case. | Section 7; explicit reduction and greedy gap. Optional portfolio minimization is not required for a sound inference; no universal proof-size lower bound. |
+| F04-C29 | Feasible graph difference constraints imply exactly the shortest-path bound for a reachable paired query; an unreachable query is unbounded. | Section 8; path summation, feasible-potential attainment and unreachable shift proofs. Standard subfragment, not a new general shortest-path theorem. |
+| F04-C30 | Finite tangent templates have a directional precision cost that a compact quadratic source can avoid; global relative error differs from global additive error. | Section 9; disk, tangent geometry, polynomial identity and rational certificate. Restriction is to the specified templates/finite-ReLU class, not all value representations. |
+| F04-C31 | Finite CPWL concave homogeneous monotone query-translation-compatible maps are exactly finite minima of nonnegative linear certificate forms; a checked affine fingerprint yields a weaker pointwise guarantee. | Sections 10 and 14; constructive representation, supergradient extension and zero-mask counterexample. No trained-network discovery or full verification of arbitrary networks. |
+| F04-C32 | Normalized entropy-smoothed choice over valid same-query proofs is conservative; raw log-sum-exp can fabricate improvement by duplicating proofs. | Section 11 and supplements; analytic KL identity and labelled Decimal illustrations. Prior weights do not certify source truth; log/exp are not added to the RLL checker. |
+
+F04-T01 remains unestablished; cumulative D is **33.451225 minutes**.
+No permanent calculus, gate, neural training or subsequent task has been started.
