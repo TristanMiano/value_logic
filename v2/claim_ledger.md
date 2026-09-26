@@ -510,3 +510,26 @@ novelty, a trained neural result, a general calculus, or a passed gate.
 | F04-C37 | Valid proof lifts can be unidentifiable on correlated observations. The zero-coordinate cone test characterizes uniqueness, and perturbations identify the convex explanation family exactly when their restrictions separate its affine directions. | Section 6; finite linear family and exact observed coefficients; numerical conditioning and intervention availability separately required. |
 | F04-C38 | A finite homogeneous portfolio has directional derivative equal to the minimum of active certificate slopes. Strict feasible source slack permits full active-hull recovery from all weakening directions; independent boundary derivatives need not be one proof. | Section 7 and post-test hostile checks; finite portfolio, exact responses and strict slack; explicit failures without strictness or with affine offsets. |
 | F04-C39 | A retained coefficient under changed source/chart/query data remains valid after a support-function residual correction. For the stated affine free-plus-box enclosure, the correction is finite iff uncontrolled directions are annihilated. | Section 8; exact outer-envelope calculation. Infinite correction rejects this reuse method, not all stronger source analyses. |
+
+
+## F04 S6 — completion reconstruction
+
+Evidence: [derivations](derivations/01e_equal_information_completion.md),
+[finite checks](checks/f04_completion.py), [report](checks/F04_completion_results.json),
+[session](work_logs/F04_2026-09-26_S6.md). These are scoped proofs and same-agent
+reconstructions, not independent review, general-calculus soundness or novelty.
+
+| Claim | Exact scope | Evidence and limit |
+|---|---|---|
+| F04-C40 | Finite affine bounds over a finite nonempty family of nonempty polyhedra are exactly witnessed by modewise nonnegative multiplier certificates. | Section 2 gives a fresh closed-cone converse. Established linear implication pattern; no unrestricted RLL prover or operational oracle choice. |
+| F04-C41 | With attained finite maxima, independently reduced component bounds equal the joint bound iff their maximizing sets have a common point. | Section 3 and finite exhaustive controls; without attainment use simultaneous approximation, not an exact witness. |
+| F04-C42 | Equality of every current affine source value need not survive the same later hard constraint, even with nonempty revised models. | Section 4's three-point/hull example; limits current affine summaries, not every update-aware representation. |
+| F04-C43 | Source-preserving stochastic composition and jointly variable queries can generate a quadratic not exactly representable by finite ReLUs. A k-interval conservative affine quadratic envelope has sharp worst excess 1/(4k^2), yet can answer selected margins exactly. | Sections 5 and 7; interval count is not a neural-width lower bound. Full RLL multiplication is not ruled out. |
+| F04-C44 | The explicit two-fallible-branch controller admits checked common reports and intended paired-cost bound -1/32; revised source bounds change it exactly to -1/32+delta/4+epsilon. | Sections 6 and 11, with feasibility and attaining witnesses. Source/proxy validity and same-policy context remain assumptions. |
+| F04-C45 | The least exact self-report can jump from 0 to 1 under an arbitrarily small source change. A fixed positive slack xi gives a globally 1/xi-Lipschitz least-report map in infinity norm, with stated source and rounding envelopes. | Section 13; bound sharp for 0<xi<1. Slack changes the reporting contract and does not imply non-worsening cost or unrestricted reflection. |
+
+**F04-T01 is now established at task scope:** hostile examples, positive
+alternatives, equal-information candidate discrimination, DIR01 proxy/reflection/
+neural-design obligations, regression evidence and D60 are recorded. This
+resolves the previous partial-session entries without rewriting them. It is not
+Gate A, a selected core, a novelty claim or a trained-network discovery.

@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: F03 external foundations audit completed, September 24, 2026 (UTC September 25).
-Status: **F01, F02 and F03 complete at task scope; no permanent calculus selected and no readiness gate passed**.
+Version: F04 candidate-discrimination task completed, September 26, 2026 (UTC).
+Status: **F01–F04 complete at task scope; no permanent calculus selected and no readiness gate passed**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 
@@ -404,3 +404,28 @@ updates, not different access to the same source. The fixed-query assumption is
 not dropped for input-dependent/bilinear policy objectives. No network is trained.
 F04 remains partial at **48.782837 D minutes** with **11.217163** remaining;
 Gate A and F05 are untouched. F01–F03 and the phase-one results retain their scope.
+
+
+## F04 completion: two supported routes, no selected core
+
+The [final reconstruction](derivations/01e_equal_information_completion.md) is
+an equal-information comparison. Source-indexed arithmetic certificates and
+lower-value/continuation formulations agree on the nonempty finite-polyhedral
+linear fragment. Their natural closure, evidence-update interfaces and proof
+costs differ; exact scalarization before composition can lose a useful guarantee.
+A finite ReLU envelope can preserve an operational margin without reproducing
+an entire nonlinear return function. Fixed-query representation results do not
+automatically extend to varying queries and evidence together.
+
+The common reflective example has two fallible branches, a fixed deployable
+report-policy, uncertain proxy alignment, and explicit deterioration budgets.
+The exact least-report map has a fragile degenerate corner. A denominator guard
+or a declared positive self-prediction allowance supplies a restricted stability
+alternative; an allowance is not automatically the exact report contract.
+Empirical source adequacy and trained neural causal meaning remain unestablished.
+
+F04 is complete; **Gate A is the next item and has not been attempted**. The
+preferred *review proposal* is a small checked loss-comparison language with
+source-preserving continuation semantics as an explicit alternative/reference.
+Gate A, not this note, adjudicates foundation-selection readiness. No F05 syntax,
+permanent calculus, full reflection principle or architecture has been adopted.

@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: September 26, 2026 (UTC).
-Status: F01–F03 complete at their task scopes; F04 continuation partial; no permanent calculus selected or readiness gate passed.
+Status: F01–F04 complete at their task scopes; no permanent calculus selected or readiness gate passed.
 
 ## Resume here
 
@@ -11,7 +11,7 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F04 — hostile examples and candidate discrimination.**
+**Next task: Gate A — foundation-selection readiness.**
 
 **Active repair queue: empty.**
 
@@ -433,7 +433,7 @@ to publication with an unsound core simply because the planned queue ended.
   F03 is complete; **F04 is selected but not started**. No core or gate is chosen.
   The source use register is not a proof engine or a proof of global novelty.
 
-- [ ] **F04 — hostile examples and candidate discrimination.**
+- [x] **F04 — hostile examples and candidate discrimination.**
 
   Principal artifact: `v2/derivations/01_candidate_countermodels.md`.
   Try to break the candidates using dependence, composition, rescaling,
@@ -519,6 +519,23 @@ to publication with an unsound core simply because the planned queue ended.
   [S5](v2/work_logs/F04_2026-09-26_S5.md) records **15.331612 measured D minutes**, meeting
   this pass's D15 floor. Cumulative F04 D is **48.782837 minutes**, leaving
   **11.217163** against D60. F04 remains selected; no Gate A or F05.
+
+  **Completed — September 26, 2026.** The
+  [equal-information reconstruction](v2/derivations/01e_equal_information_completion.md)
+  consolidates the arithmetic/certificate and source-preserving transformer
+  alternatives. It proves their finite-linear numerical agreement, identifies
+  when separate component reductions are tight, and exhibits a nonlinear
+  closure/precision difference. A complete reflective replacement certificate
+  includes proxy alignment and exact evidence-revision margins. A final hostile
+  reconstruction identifies the exact-report degenerate jump and a scoped
+  positive-slack stability alternative. No neural training or core selection.
+  **38 new / 202 F04 tests**, **256 F03**, and **124 F02** regressions pass.
+  [S6](v2/work_logs/F04_2026-09-26_S6.md) records **11.238242 measured D minutes**;
+  cumulative F04 D is **60.021079 minutes**, meeting D60 and the user's
+  exact remaining-session floor. The
+  [completion checklist](v2/derivations/F04_completion_checklist.json) maps
+  every F04 obligation to evidence. Select **Gate A**, which remains unattempted;
+  F05 is not started. This is task completion, not a passed readiness gate.
 
 - [ ] **Gate A — foundation-selection readiness.**
 

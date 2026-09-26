@@ -1,0 +1,73 @@
+{
+  "task": "F04",
+  "status": "completed at candidate-discrimination scope",
+  "base_commit": "50f2400267818a48ff0e4eca5d619f7bf9c2d136",
+  "review_method": "same-agent task-scope reconstruction; not Gate A or independent review",
+  "criteria": [
+    {
+      "criterion": "at least two invalid inferences",
+      "result": "met",
+      "evidence": [
+        "01_candidate_countermodels.md sections 2-5",
+        "01e_equal_information_completion.md sections 3-4,9,13"
+      ]
+    },
+    {
+      "criterion": "viable routes with same-information discrimination",
+      "result": "met",
+      "evidence": [
+        "01e_equal_information_completion.md sections 1-8"
+      ]
+    },
+    {
+      "criterion": "proxy mismatch and positive scoped bridge",
+      "result": "met",
+      "evidence": [
+        "01_candidate_countermodels.md section 2",
+        "01e_equal_information_completion.md sections 6,11"
+      ]
+    },
+    {
+      "criterion": "versioned uncertain and feedback-dependent self-evaluator",
+      "result": "met",
+      "evidence": [
+        "01a_nonlinear_and_reflective_reconstruction.md section 4",
+        "01e_equal_information_completion.md sections 6,11,13"
+      ]
+    },
+    {
+      "criterion": "ordinary-ReLU hypothesis and causal/gauge controls, no final training",
+      "result": "met at design scope",
+      "evidence": [
+        "../experiments/F04_neural_probe_design.md",
+        "01e_equal_information_completion.md section 7"
+      ]
+    },
+    {
+      "criterion": "protected D60 plus requested remaining session floor",
+      "result": "met",
+      "session_D_seconds": 674.2945072769999,
+      "cumulative_D_seconds": 3601.2647134639997,
+      "evidence": [
+        "../work_logs/F04_2026-09-26_S6_clock.jsonl",
+        "../work_logs/F04_2026-09-26_S6_actuals.json"
+      ]
+    }
+  ],
+  "tests": {
+    "F04": 202,
+    "new": 38,
+    "F03": 256,
+    "F02": 124
+  },
+  "next": "Gate A",
+  "gate_states": {
+    "A": "not attempted",
+    "B": "not attempted",
+    "C": "not attempted",
+    "D": "not attempted"
+  },
+  "permanent_core_selected": false,
+  "neural_training_performed": false,
+  "full_repository_suite_run": false
+}

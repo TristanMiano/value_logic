@@ -3,7 +3,7 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01-F03 remain complete; the next task remains F04.
+not new results. F01-F04 are complete at task scope; Gate A is next and unattempted.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -33,15 +33,18 @@ The existing [theorem agenda](literature/01i_calculus_desiderata_and_theorem_age
 remains proposed, not selected. Twenty new exact finite/metadata checks bring
 F03 discovery to **256 passing tests**. The [completion record](work_logs/F03_2026-09-24_S10.md)
 records **60.216954 cumulative L minutes**, satisfying L60.
-**F04 is partial through S5.** The
-[source-transport note](derivations/01d_source_transport_and_identifiability.md)
-connects source aggregation, correlated input charts, region-scoped certificates
-and limits on neural proof identification. It includes constructive corrections
-and a same-controller improvement-loss example. The [S5 record](work_logs/F04_2026-09-26_S5.md)
-reports **15.331612 D minutes** this pass, **48.782837 cumulative**, and
-**11.217163** remaining against D60. The combined F04 suite passes **164 tests**;
-F03/F02 retain **256/124**. The neural probe remains unexecuted.
-**Next remains F04**, not Gate A or F05.
+**F04 is complete at candidate-discrimination scope.** The
+[equal-information reconstruction](derivations/01e_equal_information_completion.md)
+compares checked arithmetic and source-preserving continuation routes, derives
+finite linear agreement and nonlinear closure/precision differences, and gives
+an end-to-end reflective replacement/revision certificate. A degenerate exact
+self-report is tested, with explicit slack and source/rounding alternatives.
+The [completion record](work_logs/F04_2026-09-26_S6.md) credits **11.238242 new D minutes**;
+cumulative F04 D is **60.021079 minutes**. All **202 F04 tests** pass,
+including **38 new cases**; F03/F02 remain **256/124**. The
+[checklist](derivations/F04_completion_checklist.json) is a task-scope self-audit,
+not a readiness-gate decision. **Next: Gate A**, not yet attempted; F05 is unstarted.
+
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f04*.py'

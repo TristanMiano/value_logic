@@ -1,5 +1,12 @@
 # F04 — Hostile examples and candidate discrimination
 
+> **Completion notice, September 26, 2026.** F04 is now complete at task scope.
+> The first-pass text and its then-partial status below are retained as history.
+> [Final reconstruction](01e_equal_information_completion.md),
+> [acceptance checklist](F04_completion_checklist.json), and
+> [completion record](../work_logs/F04_2026-09-26_S6.md) adjudicate the original
+> obligations. Gate A remains unattempted; no core is selected here.
+
 First pass, 2026-09-25 (America/Los_Angeles; observed UTC 2026-09-26).
 Base: `6a9cc9993261187aa14af5bc6149921697966ff0`.
 Status: **partial**; task completion also requires the protected D60 block.

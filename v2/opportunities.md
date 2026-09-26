@@ -216,3 +216,18 @@ gains an explicit context-change residual check and alternative-proof transport.
 Next useful comparison: fixed versus parameterized queries on the same
 source-changing workload, with identical information and explicit proof cost.
 No ranking change, new task, novelty claim or neural training is implied.
+
+
+## F04 completion update — September 26, 2026
+
+Ranking unchanged. OPP-01 has a complete equal-information reconstruction:
+finite arithmetic proof bounds agree with lower-value semantics, while source
+retention, operation order and nonlinear precision determine useful conclusions.
+The next review should not confuse this established duality with novelty.
+OPP-02 now distinguishes coefficient proposals from final nonlinear value maps;
+no task label, imposed architecture or mathematical certificate establishes
+causal use in an ordinarily trained network. OPP-03 retains the two-fallible-
+branch example and adds a concrete exact-report discontinuity with a declared
+slack-stability alternative. OPP-04 has an exact budget for selective source
+revision in the same example. These refine the existing four opportunities,
+not create a new catalogue. **Gate A is next and unattempted.**
