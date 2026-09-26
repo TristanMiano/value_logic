@@ -397,3 +397,28 @@ records remain historical; their once-open timing condition is not the current
 status. Twenty new tests bring combined F03 discovery to 256. No F04 or gate
 has been attempted. Phase-one definitions, proved statements, code and negative
 experimental results are not modified by this completion.
+
+
+## F04 S1: candidate countermodels and positive restricted bridges
+
+[Derivations](derivations/01_candidate_countermodels.md),
+[exact fixtures](checks/f04_countermodels.py),
+[report](checks/F04_countermodel_results.json). These are same-agent derivations
+and a fresh same-agent boundary pass, not external independent verification.
+
+| ID | Exact scoped statement | Evidence and boundary |
+|---|---|---|
+| F04-C01 | At eta=3/5, Brier improves from p=1 to p=49/100 while 0-1 error worsens; nevertheless squared excess 0-1 risk is at most four times excess Brier risk. | §2 direct calculation and wrong-sign/Cauchy–Schwarz proof; numerical grid checks are not a general calibration proof. Does not contradict a source excess-risk theorem. |
+| F04-C02 | For J=ell+Bz+A eps, z unrestricted finite real and eps in the full unit box, a linear consumer w has finite upper and lower bounds exactly when B^T w=0; endpoints are w^T ell plus/minus norm_1(A^T w). | §3.1 expansion, unbounded ray and attained vertices. Elementary affine/support-function result, not a claimed novel theorem. Product and finite-coefficient assumptions matter. |
+| F04-C03 | Common-source alignment can certify a positive replacement margin lost by separate marginal intervals; altered multiplicity or splitting an unrestricted common source can destroy boundedness. Affine propagation before reduction preserves cancellation. | §3 examples and triangle inequality. Nonnegative-loss subcase restricts the common offset to z>=0; the general necessity theorem is not transferred to that restricted domain. |
+| F04-C04 | For SELF-MIX-v1 and theta in nonempty [a,b] subset [0,1], least uniform own-failure upper report is r=b/(1+b); actual deployed failure interval is [a/(1+b),b/(1+b)]. | §4 explicit executable policy and inequality solve. Same deployed r for all theta; safe-branch and interval validity are assumptions. An exact solution per hidden theta is not one available policy. |
+| F04-C05 | Narrowing uncertainty and lowering a report can increase actual failure when the report changes behavior; version changes can invalidate a former bound. | §4 worked theta=2/5 update, distinct total-cost objectives and always-stress countermodel. Not a failure of bounds for a fixed policy. |
+| F04-C06 | A unique exact self-prediction fixed point need not attract naive iteration; the specified damped map converges, and upper-start iterates remain valid bounds while lower-start iterates need not. A hard controller has no exact fixed point but admits a bound. | §4 algebraic contraction/monotonicity and two-case obstruction. Only the named maps; no unrestricted reflection or source-oracle theorem. |
+| F04-C07 | Positive hidden-neuron rescaling/permutation preserves single-hidden-layer ReLU affine output and transported donor-intervention effects; raw activation magnitude is not an invariant task unit. | §5 algebraic cancellation and exact rational tests. Restricted architecture; contribution invariance is not a discovered utility interpretation. |
+| F04-C08 | A duplicated hidden coordinate with zero output weight can perfectly decode a quantity without causally affecting output. | §5 constructed network; not a finding in a trained network. |
+| F04-D01 | An ordinary weighted-outcome-training and held-out action-cost interchange design is proposed, with reparameterization and unused-neuron controls. | [Design](experiments/F04_neural_probe_design.md). Not run, not frozen, not empirical support; F14/F15 boundaries retained. |
+
+F04-T01 remains unestablished: the first pass has substantive discrimination,
+but D60 and further reconstruction remain open. F01–F03 are unchanged, no
+candidate is selected and no readiness gate is attempted. The narrow mathematical
+patterns have acknowledged antecedents; no global novelty conclusion is drawn.

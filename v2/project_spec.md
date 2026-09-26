@@ -311,3 +311,28 @@ F03 source-audit evidence and L60 are met. F04 is selected, not executed;
 Gate A and all later gates remain unattempted. The earlier audit notes retain
 their historical status. The root README receives only status/link updates;
 phase-one mathematical and experimental artifacts are unchanged.
+
+
+## F04 S1: loss-grounded discrimination and bounded self-feedback
+
+The [new countermodels](derivations/01_candidate_countermodels.md) instantiate
+DIR01 rather than freezing new primitives. Shared uncertainty can make a
+comparison much more definite than individual losses. The precise finite affine
+criterion is an established-pattern baseline, not by itself a novel calculus.
+A calibrated proxy still needs a pairwise task-alignment warrant. Self-feedback
+can be given a nonempty, computable bound semantics for a versioned controller,
+while retaining uncertainty and distinguishing a changed policy from a newly
+measured fixed one. Neural semantics must survive transported coordinate changes
+and predict intervention effects; [the ordinary-training design](experiments/F04_neural_probe_design.md)
+is prospective only.
+
+The scalar/profile/transformer/front comparison is information-scoped: no
+candidate is eliminated merely for not containing evidence that was never
+provided, and a scalar concluded comparison is not conflated with separate
+per-model scalar inputs. RLL-like comparisons and desirable-difference/lower-value
+reasoning remain viable starting routes. Broader self-reference, nonlinear
+source propagation and selection of a core remain research obligations.
+
+[S1](work_logs/F04_2026-09-25_S1.md): 29 constructed tests pass, alongside unchanged
+F02/F03 totals 124/256. F04 remains partial at D4.065999; 55.934001 D minutes
+remain. The restored root README and phase-one results are untouched.

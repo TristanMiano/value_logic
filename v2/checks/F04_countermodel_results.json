@@ -1,0 +1,58 @@
+{
+  "W1": {
+    "eta": "3/5",
+    "new_brier": "2521/10000",
+    "new_classification_error": "3/5",
+    "old_brier": "2/5",
+    "old_classification_error": "2/5"
+  },
+  "W2": {
+    "double_new_minus_old": [
+      "-infinity",
+      "+infinity"
+    ],
+    "hypothesis": "one shared unrestricted source plus one bounded source",
+    "new_minus_old": [
+      "-5/2",
+      "-3/2"
+    ]
+  },
+  "arithmetic": "fractions.Fraction; all reported rationals are exact",
+  "finite_enumeration_bounds": {
+    "affine_bounded_extrema": "243 coefficient/centre/query configurations, 4 box vertices each",
+    "brier_eta_p_pairs": "21x21 rational grid",
+    "neural_inputs": "25 integer grid pairs; 625 donor/base intervention pairs",
+    "policy_execution": "7x5 equiprobable pairs of independent discrete uniform draws",
+    "self_bounds": "all 66 ordered pairs on 1/10 grid; 11 within-interval theta values each"
+  },
+  "neural": {
+    "architecture": "one-hidden-layer ReLU with affine output",
+    "controls": [
+      "positive rescaling",
+      "permutation",
+      "unused duplicate",
+      "whole-layer baseline"
+    ],
+    "trained": false
+  },
+  "scope": "F04 constructed exact fixtures; no trained-network or general-calculus claim",
+  "self_update": {
+    "fixed_theta_2_over_5_new_actual": "2/7",
+    "fixed_theta_2_over_5_old_actual": "1/5",
+    "new_assessment_at_1_over_3": "supported",
+    "new_deployed_interval": [
+      "1/7",
+      "2/7"
+    ],
+    "new_report": "2/7",
+    "old_assessment_at_1_over_3": "open",
+    "old_report": "1/2",
+    "pointwise_equilibria_interval_not_deployed": [
+      "1/6",
+      "2/7"
+    ],
+    "safe_iteration_start": "1; all subsequent damped iterates remain upper bounds",
+    "unsafe_first_lower_iterate": "1/5; actual worst failure 8/25"
+  },
+  "unrestricted_proofs": "See v2/derivations/01_candidate_countermodels.md; finite grids do not establish them."
+}

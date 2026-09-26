@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 24, 2026.
-Status: F01, F02 and F03 complete at their task scopes; no permanent calculus selected or readiness gate passed.
+Last updated: September 25, 2026 (America/Los_Angeles).
+Status: F01–F03 complete at their task scopes; F04 first pass partial; no permanent calculus selected or readiness gate passed.
 
 ## Resume here
 
@@ -66,7 +66,8 @@ as a serious starting comparison; require more than numerical truth degrees.
 Modest reflection and an exploratory connection to normally trained networks
 are active aims, not indefinitely deferred branches. The
 [opportunity register](v2/opportunities.md) supports bounded agent initiative.
-This is a planning amendment: F03 stays complete and F04 stays unstarted.
+At the DIR01 amendment checkpoint F03 stayed complete and F04 was unstarted;
+its current work status is recorded below.
 
 ## Required research distinctions
 
@@ -454,6 +455,20 @@ to publication with an unsound core simply because the planned queue ended.
   **Done when:** at least two tempting but invalid inferences have explicit
   witnesses or scoped explanations; viable candidates have discriminating
   evidence, not just scores; D60 is recorded.
+
+  **Partial first pass — September 25, 2026.** The
+  [candidate countermodels](v2/derivations/01_candidate_countermodels.md) give a
+  calibrated-proxy ranking reversal; an exact criterion for bounded comparisons
+  despite unrestricted shared nuisance values; a versioned uncertain self-bound
+  whose report changes its own policy; and rescaling/intervention controls for
+  neural interpretations. The [neural design](v2/experiments/F04_neural_probe_design.md)
+  is unexecuted, not a frozen F14/F15 challenge. The S/P/T/G comparison retains
+  two viable routes without selecting one. All **29 new F04 checks**, **256 F03
+  checks** and **124 F02 checks** pass in the source overlay.
+  [S1](v2/work_logs/F04_2026-09-25_S1.md) records **4.065999 measured D minutes**;
+  **55.934001 minutes of D60 remain**. F04 remains unchecked and selected.
+  Next: reconstruct the cases, challenge nonlinear/source-elimination boundaries
+  and check comparable information across candidates. No Gate A or F05 work.
 
 - [ ] **Gate A — foundation-selection readiness.**
 

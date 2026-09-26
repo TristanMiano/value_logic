@@ -33,7 +33,17 @@ The existing [theorem agenda](literature/01i_calculus_desiderata_and_theorem_age
 remains proposed, not selected. Twenty new exact finite/metadata checks bring
 F03 discovery to **256 passing tests**. The [completion record](work_logs/F03_2026-09-24_S10.md)
 records **60.216954 cumulative L minutes**, satisfying L60.
-**Next: F04 — hostile examples and candidate discrimination (not started).**
+**F04 is partial.** Its [first-pass note](derivations/01_candidate_countermodels.md)
+and [neural intervention design](experiments/F04_neural_probe_design.md) distinguish
+proxy improvement, joint uncertainty, deployable self-feedback and causal neural
+interpretation. The exact constructed suite passes **29 tests**; the F02/F03
+regressions retain **124/256** passing tests. [S1](work_logs/F04_2026-09-25_S1.md)
+records **4.065999 D minutes**, leaving **55.934001** of D60. The neural probe
+has not been trained. **Next remains F04**, not a gate or F05.
+
+```text
+python -X faulthandler -m unittest discover -s verification -p 'test_v2_f04*.py'
+```
 No calculus has been selected, and no readiness gate has passed.
 
 The intended result is a small, explicit calculus with operationally meaningful

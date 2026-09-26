@@ -1,7 +1,7 @@
 # Research opportunity register
 
 Owner: the active research agent, subject to DIR01 and the research protocol.
-Updated: September 24, 2026 (America/Los_Angeles).
+Updated: September 25, 2026 (America/Los_Angeles).
 These are **ranked leads**, not proven gaps or claims of first discovery.
 The relevant primary-source descriptions and inspection limits are in
 [literature/directional_leads.md](literature/directional_leads.md).
@@ -47,7 +47,12 @@ characterization adds a nontrivial relation to the known baseline.
 **Allocation.** First probe central 30 / high 60 engaged minutes inside F04;
 reliable baseline with exploratory composition. Review after the first decisive
 example or 30 minutes. Stop expanding the fragment if its operational meaning
-is unclear. Status: eligible for F04, not started.
+is unclear. Status: F04 S1 first-pass evidence exists. The proxy reversal and
+shared-source comparison are in [the countermodel note](derivations/01_candidate_countermodels.md).
+Priority stays 1, now focused on difference-sufficient source/evaluator certificates.
+Affine arithmetic is a closer baseline for shared errors; a new contribution must
+add a useful composition/revision or information characterization, not just this
+linear-algebra result.
 
 ## OPP-02 — Is the loss/value structure actually learned? (priority 2)
 
@@ -73,7 +78,9 @@ negative results rather than choosing a new test after seeing the answer.
 
 **Allocation.** F04 design probe central 20 / high 40 minutes; no training in this
 direction amendment. Compute and data costs must be forecast separately before
-execution. Status: active design criterion, experiment not started.
+execution. Status: [F04 design](experiments/F04_neural_probe_design.md) and analytical
+reparameterization/unused-neuron controls exist; training and alignment search
+are unstarted. Priority stays 2 pending causal evidence, not decoder accuracy.
 
 ## OPP-03 — Modest reflective evaluation (priority 3; required capability track)
 
@@ -99,7 +106,11 @@ the corresponding scoped claim, not the stronger cyclic claim.
 
 **Allocation.** First source-and-example probe central 30 / high 60 minutes in
 F04; exploratory lane. Review after the feedback example. Preserve a bounded
-reflective route even if the ambitious one fails. Status: active, not started.
+reflective route even if the ambitious one fails. Status: F04 S1 supplies a genuinely feedback-dependent versioned example,
+with unknown/interval outcomes and a deployable self-bound. Its small algebraic
+solution is not unrestricted reflection. Next reconstruction must retain the
+common deployed policy, finite-iteration bounds and evidence-version conditions.
+Priority stays 3 as a required capability track.
 
 ## OPP-04 — Value summaries that survive revision (priority 4)
 
