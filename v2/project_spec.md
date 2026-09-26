@@ -389,3 +389,18 @@ are not exact arithmetic proof certificates.
 F04 remains partial at **33.451225 measured D minutes**. The session meets its
 requested D15 aim; **26.548775** of task D60 remain. Existing phase-one and
 completed F03 conclusions are unchanged. Gate A and F05 remain unstarted.
+
+
+## F04 S5 — source semantics versus numerical encoding
+
+[The source-transport note](derivations/01d_source_transport_and_identifiability.md)
+keeps the source matrix, input chart, target query and region assumptions explicit.
+Invertible numbers do not justify subtracting upper-bound premises. A valid
+network bound may have negative local derivatives while admitting a nonnegative
+source/domain proof; a valid proof need not identify the actual computation.
+The certificate and source-set routes agree on the fully specified finite-linear
+fragment. Their practical differences depend on retained information and allowed
+updates, not different access to the same source. The fixed-query assumption is
+not dropped for input-dependent/bilinear policy objectives. No network is trained.
+F04 remains partial at **48.782837 D minutes** with **11.217163** remaining;
+Gate A and F05 are untouched. F01–F03 and the phase-one results retain their scope.

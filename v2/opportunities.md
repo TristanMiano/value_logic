@@ -201,3 +201,18 @@ clear distinction between proof reuse, proof-family memory and changed semantics
 Next: use these controls in a focused remaining F04 reconstruction, not another
 catalogue of equivalent counterexamples. The prospective experiment remains
 unexecuted; no new task is selected by this register update.
+
+
+### S5 evidence update — source-aware fingerprints
+
+The [new derivation](derivations/01d_source_transport_and_identifiability.md)
+keeps OPP-01 first and strengthens OPP-02's discriminator: evaluate certificates
+on a predeclared source chart and region, not by the sign of an ambient gradient
+alone. A nonempty lift family is evidence of possible numerical justification,
+not a uniquely identified causal mechanism. Measure permitted intervention rank
+and precision, and retain coherent-cell and affine-offset negative controls.
+OPP-03 remains connected through the same report-dependent controller; OPP-04
+gains an explicit context-change residual check and alternative-proof transport.
+Next useful comparison: fixed versus parameterized queries on the same
+source-changing workload, with identical information and explicit proof cost.
+No ranking change, new task, novelty claim or neural training is implied.

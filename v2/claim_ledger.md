@@ -492,3 +492,21 @@ illustrations are distinct. No independent validation or novelty claim.
 
 F04-T01 remains unestablished; cumulative D is **33.451225 minutes**.
 No permanent calculus, gate, neural training or subsequent task has been started.
+
+
+## F04 S5 — source transport and identifiable proof explanations
+
+Evidence: [derivation](derivations/01d_source_transport_and_identifiability.md),
+[36 finite checks](checks/f04_source_transport.py), and [session](work_logs/F04_2026-09-26_S5.md).
+Status: proved-in-fragment / same-agent reconstructed; not independent review,
+novelty, a trained neural result, a general calculus, or a passed gate.
+
+| Claim | Exact statement | Assumptions and evidence |
+|---|---|---|
+| F04-C33 | Nonnegative aggregation transports certificates by lambda=R^T mu. For a fixed feasible source and finite original bound, exact preservation holds iff an optimal original certificate has such a nonnegative factorization. | Sections 2 and 12; direct proof, query-specific separation, source-duality reconstruction. |
+| F04-C34 | Invertible data recoding is not universal preservation of independent upper-bound premises. A linear orthant automorphism is a scaled permutation; carrying the transformed slack cone restores equivalence. Finite piece gradients give a separate numerical-factorization test. | Sections 3, 10, 12; explicit triangular witness and elementary matrix/kernel arguments; not a lower bound for all compression. |
+| F04-C35 | For a nonempty joint affine source/domain set, a fixed-query affine bound is valid iff nonnegative source/domain multipliers satisfy (8), including the intercept budget. | Section 4 and independent finite-cone reconstruction in section 10; arbitrary finite real unknowns, fixed query, exact hypotheses. |
+| F04-C36 | A finite ReLU bound on a supplied finite polyhedral cell cover is valid iff every nonempty source/cell pair has the scoped linear certificate. | Section 5; classical linear-implication specialization, not an efficient global search algorithm, trained mechanism or empirical guarantee. |
+| F04-C37 | Valid proof lifts can be unidentifiable on correlated observations. The zero-coordinate cone test characterizes uniqueness, and perturbations identify the convex explanation family exactly when their restrictions separate its affine directions. | Section 6; finite linear family and exact observed coefficients; numerical conditioning and intervention availability separately required. |
+| F04-C38 | A finite homogeneous portfolio has directional derivative equal to the minimum of active certificate slopes. Strict feasible source slack permits full active-hull recovery from all weakening directions; independent boundary derivatives need not be one proof. | Section 7 and post-test hostile checks; finite portfolio, exact responses and strict slack; explicit failures without strictness or with affine offsets. |
+| F04-C39 | A retained coefficient under changed source/chart/query data remains valid after a support-function residual correction. For the stated affine free-plus-box enclosure, the correction is finite iff uncontrolled directions are annihilated. | Section 8; exact outer-envelope calculation. Infinite correction rejects this reuse method, not all stronger source analyses. |

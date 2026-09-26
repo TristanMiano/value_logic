@@ -33,15 +33,15 @@ The existing [theorem agenda](literature/01i_calculus_desiderata_and_theorem_age
 remains proposed, not selected. Twenty new exact finite/metadata checks bring
 F03 discovery to **256 passing tests**. The [completion record](work_logs/F03_2026-09-24_S10.md)
 records **60.216954 cumulative L minutes**, satisfying L60.
-**F04 is partial through S4.** The
-[certificate-portfolio note](derivations/01c_certificate_portfolios.md) compares
-sparse arithmetic proofs, numerical sensitivity, case-aware evidence and compact
-compositional proof families. It characterizes a restricted class of ReLU value
-functions as finite portfolios of valid certificates; no trained mechanism is
-claimed. The [S4 record](work_logs/F04_2026-09-26_S4.md) reports **15.692405 D minutes** this
-session, **33.451225 cumulative**, with **26.548775** remaining against D60.
-The combined F04 suite passes **128 tests**; F03/F02 retain **256/124**.
-The neural probe remains unexecuted. **Next remains F04**, not Gate A or F05.
+**F04 is partial through S5.** The
+[source-transport note](derivations/01d_source_transport_and_identifiability.md)
+connects source aggregation, correlated input charts, region-scoped certificates
+and limits on neural proof identification. It includes constructive corrections
+and a same-controller improvement-loss example. The [S5 record](work_logs/F04_2026-09-26_S5.md)
+reports **15.331612 D minutes** this pass, **48.782837 cumulative**, and
+**11.217163** remaining against D60. The combined F04 suite passes **164 tests**;
+F03/F02 retain **256/124**. The neural probe remains unexecuted.
+**Next remains F04**, not Gate A or F05.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f04*.py'
@@ -56,7 +56,7 @@ Do not silently equate value with probability, truth, or one uniquely correct
 utility function. The formal metatheory may use ordinary mathematics while
 making its assumptions explicit.
 
-## Current F04 continuation — September 26, 2026
+## Historical F04 S2 continuation — September 26, 2026
 
 [The nonlinear and reflective audit](derivations/01a_nonlinear_and_reflective_reconstruction.md)
 adds finite-ReLU bounded comparisons, joint self-report optimization and a
@@ -67,7 +67,7 @@ cost-scale control; no training or causal alignment has run.
 F04 now has **67 passing tests**, including **38 new checks**. Existing F03/F02
 suites remain **256/124**. [S2](work_logs/F04_2026-09-26_S2.md) records cumulative
 **7.592175 D minutes**, leaving **52.407825** of D60. **Next remains F04**;
-no core or readiness gate is selected. Earlier counts above describe S1.
+no core or readiness gate is selected. These counts describe S2, not the current total.
 
 ```text
 python -m v2.checks.f04_nonlinear_reflection --json v2/checks/F04_nonlinear_reflection_results.json

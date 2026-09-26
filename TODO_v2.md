@@ -508,6 +508,18 @@ to publication with an unsound core simply because the planned queue ended.
   the requested 15-minute session floor. Cumulative F04 D is **33.451225 minutes**,
   leaving **26.548775** against D60. F04 remains selected; no Gate A or F05.
 
+  **Partial S5 continuation — September 26, 2026.** The
+  [source-transport derivation](v2/derivations/01d_source_transport_and_identifiability.md)
+  separates numerical recoding, evidence-order preservation, and identifiable
+  proof explanations. It proves an exact source/domain lift criterion for a
+  fixed-query affine neural region, source-aggregation transport boundaries,
+  and residual correction under context changes. The same reflective controller
+  supplies a sharp -1/2 versus +1/7 comparison; no trained network is claimed.
+  **36 new / 164 F04 tests**, **256 F03**, and **124 F02** regressions pass.
+  [S5](v2/work_logs/F04_2026-09-26_S5.md) records **15.331612 measured D minutes**, meeting
+  this pass's D15 floor. Cumulative F04 D is **48.782837 minutes**, leaving
+  **11.217163** against D60. F04 remains selected; no Gate A or F05.
+
 - [ ] **Gate A — foundation-selection readiness.**
 
   Record `v2/checkpoints/A_1.md` (increase the attempt suffix on retries).

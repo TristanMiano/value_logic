@@ -164,3 +164,28 @@ This is an optional *diagnostic control*, not a replacement task, logical-label
 supervision, architecture constraint or regularizer for the ordinary baseline.
 The constructed min-plus/shortest-path networks in S4 demonstrate representation
 only. No trained network or held-out intervention test was run in S4.
+
+
+## S5 source-chart and intervention controls (design only)
+
+Use [the source/domain lift criterion](../derivations/01d_source_transport_and_identifiability.md)
+when a proposed neural bound is tested. Predeclare A, v, the evidence chart
+eta0+Bz, and the input/domain restrictions before fitting an explanation.
+A negative ambient derivative is not itself a refutation; a checked lift is
+not identification of the network's actual reasoning. Keep target/source/domain
+provenance distinct. Do not quietly extend a fixed-query proof to v(z)^T g.
+
+Compare on-manifold predictions with declared source-valid interventions.
+Duplicate/correlated rows can leave a whole family of exact explanations.
+Test whether the available interventions separate that family and whether
+their conditioning permits useful discrimination at the available precision.
+At a kink, do not combine derivatives from different directions into one
+coefficient: select a coherent region or retain the active proof family.
+Include the no-strict-slack and affine-offset controls from S5 before claiming
+that weakening-only interventions recover all active explanations.
+
+Pure input-coordinate changes must transport the chart and interventions;
+source-order changes must also preserve their cone, or explicitly weaken the
+premises. A regionwise certificate is a correctness observation, not evidence
+that every intermediate neuron implements a premise or that the high-level
+interpretation is causally realized. No training or held-out result is added.
