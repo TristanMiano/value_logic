@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 25, 2026 (America/Los_Angeles).
-Status: F01–F03 complete at their task scopes; F04 first pass partial; no permanent calculus selected or readiness gate passed.
+Last updated: September 26, 2026 (UTC).
+Status: F01–F03 complete at their task scopes; F04 continuation partial; no permanent calculus selected or readiness gate passed.
 
 ## Resume here
 
@@ -469,6 +469,18 @@ to publication with an unsound core simply because the planned queue ended.
   **55.934001 minutes of D60 remain**. F04 remains unchecked and selected.
   Next: reconstruct the cases, challenge nonlinear/source-elimination boundaries
   and check comparable information across candidates. No Gate A or F05 work.
+
+  **Partial continuation — September 26, 2026.** The
+  [nonlinear/reflective reconstruction](v2/derivations/01a_nonlinear_and_reflective_reconstruction.md)
+  gives an exact finite-ReLU uncontrolled-direction criterion, a sharp uniformly
+  improving nonlinear comparison, correlated two-branch self-report feasibility,
+  and a finite optimizer with a paired deterioration budget. Counterexamples
+  distinguish tighter robust scores from true-model expected-cost improvement,
+  and observational cost recoding from interchange predictions. No neural training.
+  **38 new / 67 combined F04 checks**, **256 F03** and **124 F02** regressions pass.
+  [S2](v2/work_logs/F04_2026-09-26_S2.md) credits 3.526176 D minutes; cumulative
+  **7.592175 D minutes**, with **52.407825** of D60 remaining. F04 stays selected;
+  the shortlist, Gate A and F05 have not been advanced.
 
 - [ ] **Gate A — foundation-selection readiness.**
 

@@ -422,3 +422,26 @@ F04-T01 remains unestablished: the first pass has substantive discrimination,
 but D60 and further reconstruction remain open. F01–F03 are unchanged, no
 candidate is selected and no readiness gate is attempted. The narrow mathematical
 patterns have acknowledged antecedents; no global novelty conclusion is drawn.
+
+
+## F04 S2: nonlinear source bounds and paired reflective revision
+
+[Derivations](derivations/01a_nonlinear_and_reflective_reconstruction.md),
+[exact fixtures](checks/f04_nonlinear_reflection.py),
+[report](checks/F04_nonlinear_reflection_results.json),
+[sources](derivations/F04_S2_sources.md). Same-agent analytical derivation and
+boundary review, not independent proof-assistant verification or novelty.
+
+| ID | Scoped statement | Evidence and restrictions |
+|---|---|---|
+| F04-C09 | A finite ReLU network differs globally from its zero-bias counterpart by at most the declared propagated bias envelope; its zero-bias map satisfies the declared absolute-matrix input bound. | Section 2.1 induction. Finite coefficients, ordinary feedforward ReLU and affine output. Bounds can be loose; they do not certify a proxy's empirical meaning. |
+| F04-C10 | On x=ell+Bz+A eps with all finite z unrestricted and eps in a finite box, the network output is upper bounded iff its zero-bias map is nonpositive on range B; lower bounded iff nonnegative there. The shallow scalar case has exact tail-slope/extremum characterization. | Sections 2.2–2.4, uniform O(1) remainder and ray proof. Vanishing limiting slope alone fails for sqrt(abs(z)). Not a general nonlinear theorem, efficient global solver or neural-learning claim. |
+| F04-C11 | In SELF_TWO_BRANCH_v1 with uncertainty the convex hull of supplied probability vertices, valid common self-upper reports are exactly [max b/(1-a+b),1], ignoring the zero-denominator vertex (1,0) as tautological. | Section 4.2 direct inequalities; joint versus rectangular control. Report 1 always feasible is not useful adequacy or empirical model validity. |
+| F04-C12 | The finite maximum of branch expected-cost lines has an attained optimum over valid reports at an interval endpoint or pairwise line intersection. | Section 4.3 compact interval and affine-region argument. One common executable report; no parameter-dependent clairvoyance or unrestricted policy optimization. |
+| F04-C13 | Nested valid parameter uncertainty improves the optimized robust score, but may worsen expected cost at a retained fixed true parameter after the chosen policy changes. | Section 4.4: exact three-vertex example, actual expected deterioration 1/100. Does not assert worse realized cost on every trial. |
+| F04-C14 | Positive input-dependent common scaling leaves the unrestricted pointwise weighted-cross-entropy optimum unchanged; a J0-only donor/base interchange prediction is unchanged iff the two scale values coincide. | Section 5 cross-multiplication, 3/5 versus 3/4 example. High-level identifiability control only; not invariance of finite-capacity training or proof of a causal neural alignment. |
+| F04-C15 | With the same model/version/cost and a currently valid old report, a nonnegative per-model deterioration budget defines a nonempty interval of valid reports and admits a finite robust-cost minimizer no worse than keeping the old report. Finite successive per-model bounds telescope. | Section 4.6 explicit interval and vertex certificates. Shared true parameter/criterion and valid uncertainty at every step required. The guarantee is about expected costs; empirical simultaneous validity and coarser evidence remain separate. |
+
+All seven are proved only in their stated fragments. The 38 new checks give
+67 F04 regressions, not independent proofs or a completed phase. F04 remains
+partial until its substantive reconstruction and D60 obligations are both met.

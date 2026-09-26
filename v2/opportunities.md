@@ -1,7 +1,7 @@
 # Research opportunity register
 
 Owner: the active research agent, subject to DIR01 and the research protocol.
-Updated: September 25, 2026 (America/Los_Angeles).
+Updated: September 26, 2026 (UTC).
 These are **ranked leads**, not proven gaps or claims of first discovery.
 The relevant primary-source descriptions and inspection limits are in
 [literature/directional_leads.md](literature/directional_leads.md).
@@ -54,6 +54,14 @@ Affine arithmetic is a closer baseline for shared errors; a new contribution mus
 add a useful composition/revision or information characterization, not just this
 linear-algebra result.
 
+**S2 refinement.** [The nonlinear continuation](derivations/01a_nonlinear_and_reflective_reconstruction.md)
+separates bounded nonlinear dependence from exact cancellation and from a useful
+tight margin. Finite-ReLU geometry is established background; compare the cost
+of producing sharp certificates from a joint source description rather than
+claiming novelty for the zero-bias envelope. Next decisive test: a multivariate
+case where compact certified information beats independent marginal summaries
+at equal evidence access. Priority remains 1.
+
 ## OPP-02 — Is the loss/value structure actually learned? (priority 2)
 
 **Question.** Can an ordinary small ReLU MLP's internal computation be
@@ -81,6 +89,12 @@ direction amendment. Compute and data costs must be forecast separately before
 execution. Status: [F04 design](experiments/F04_neural_probe_design.md) and analytical
 reparameterization/unused-neuron controls exist; training and alignment search
 are unstarted. Priority stays 2 pending causal evidence, not decoder accuracy.
+
+**S2 design refinement.** A positive input-dependent common scaling of action
+costs preserves pointwise optimal outputs but can change isolated-cost
+interchange predictions. Add the prospective competing high-level description
+before any held-out test; do not force an absolute cost representation through
+training labels. Existing hidden-neuron gauge controls remain separate.
 
 ## OPP-03 — Modest reflective evaluation (priority 3; required capability track)
 
@@ -111,6 +125,15 @@ with unknown/interval outcomes and a deployable self-bound. Its small algebraic
 solution is not unrestricted reflection. Next reconstruction must retain the
 common deployed policy, finite-iteration bounds and evidence-version conditions.
 Priority stays 3 as a required capability track.
+
+**S2 refinement and baseline.** Performative Prediction (Perdomo et al., ICML
+2020; see [source N2](derivations/F04_S2_sources.md)) is a closer local antecedent
+for report-induced outcomes. The two-fallible-branch model now admits an exact
+common-report optimizer. A better robust score can worsen true-model expected
+cost; the paired-budget repair constrains that change and stays nonempty by
+retaining the old valid policy. Next: determine whether coarser certificates
+preserve this useful guarantee, with no claim of new general safe improvement.
+Priority stays 3; reflection remains an active required capability track.
 
 ## OPP-04 — Value summaries that survive revision (priority 4)
 

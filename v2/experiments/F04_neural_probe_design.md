@@ -116,3 +116,28 @@ by itself; compare with the original causal-abstraction baseline before a claim.
 F04 supplies this design and analytical controls only. F14 must freeze the
 experiment and F15 run it. No task boundary is bypassed because the design is
 small enough to execute earlier.
+
+
+## S2 prospective competing explanation: high-level cost scale
+
+[The continuation](../derivations/01a_nonlinear_and_reflective_reconstruction.md),
+Section 5, adds a control *before* any training, alignment or held-out testing.
+For a positive input-dependent g, the descriptions (J0,J1) and (g J0,g J1)
+have the same unrestricted pointwise optimal probability. Their J0-only donor
+interchanges generally differ: g(d)J0(d)/(g(d)J0(d)+g(b)J1(b)) need not equal the
+original prediction. A fixed global scale is an invariant positive control.
+
+At experiment freeze, declare a small bounded-complexity family of positive g
+functions, its fitting budget and the base/donor distribution. Fit competing
+alignments only on development data and match capacity/search effort. Do not
+choose g or intervention pairs after seeing held-out results. Report if both
+hypotheses fail or cannot be discriminated; observational prediction alone
+cannot establish an absolute internal cost scale. This is not a claim that
+both descriptions are low-level realizable in the given network.
+
+Do not conflate this with S1's neuron rescaling/permutation: transporting a
+low-level intervention under that gauge preserves the same high-level question.
+Here the competing *high-level* decomposition changes the counterfactual query.
+Input-dependent training reweighting may also change a finite-capacity fit even
+though its unconstrained pointwise optimum is unchanged. No new experiment has
+been executed and no baseline architecture is restricted by this amendment.

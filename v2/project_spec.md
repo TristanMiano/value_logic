@@ -336,3 +336,21 @@ source propagation and selection of a core remain research obligations.
 [S1](work_logs/F04_2026-09-25_S1.md): 29 constructed tests pass, alongside unchanged
 F02/F03 totals 124/256. F04 remains partial at D4.065999; 55.934001 D minutes
 remain. The restored root README and phase-one results are untouched.
+
+
+## F04 S2 scoped reconstruction — September 26, 2026
+
+F01–F03 and DIR01 retain their completed scope; F04 remains partial.
+The [S2 note](derivations/01a_nonlinear_and_reflective_reconstruction.md) establishes
+F04-C09–C15, not an adopted calculus. It separates exact invariance, finite
+boundedness and decision-useful precision for shared nonlinear costs. Both
+viable routes get identical joint information. Reflection now permits two
+fallible branches, joint uncertainty and one executable report; a finite
+paired-deterioration constraint makes policy revision nonempty and quantitatively
+controlled. Expected, robust, report and realized quantities remain distinct.
+
+The prospective neural discriminator must compare observationally identical
+input-dependent cost scalings before attributing absolute internal costs.
+No network was trained. Cumulative F04 D is 7.592175 minutes; D60 is unmet.
+No general complexity, proxy-calibration, source-validity, novelty, F05 or gate
+result follows from these finite constructions. Next remains F04.

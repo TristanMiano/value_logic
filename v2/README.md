@@ -54,6 +54,24 @@ Do not silently equate value with probability, truth, or one uniquely correct
 utility function. The formal metatheory may use ordinary mathematics while
 making its assumptions explicit.
 
+## Current F04 continuation — September 26, 2026
+
+[The nonlinear and reflective audit](derivations/01a_nonlinear_and_reflective_reconstruction.md)
+adds finite-ReLU bounded comparisons, joint self-report optimization and a
+constructive paired-budget revision rule. The
+[neural design](experiments/F04_neural_probe_design.md) adds a high-level
+cost-scale control; no training or causal alignment has run.
+
+F04 now has **67 passing tests**, including **38 new checks**. Existing F03/F02
+suites remain **256/124**. [S2](work_logs/F04_2026-09-26_S2.md) records cumulative
+**7.592175 D minutes**, leaving **52.407825** of D60. **Next remains F04**;
+no core or readiness gate is selected. Earlier counts above describe S1.
+
+```text
+python -m v2.checks.f04_nonlinear_reflection --json v2/checks/F04_nonlinear_reflection_results.json
+python -X faulthandler -m unittest discover -s verification -p 'test_v2_f04*.py'
+```
+
 ## Historical inheritance
 
 The completed August 1, 2026 Task 0 note is preserved byte-for-byte in

@@ -486,3 +486,13 @@ proxy certificates with explicit source and evaluator versions*. Affine arithmet
 robust optimization, paired comparison and surrogate-risk theory are strong
 baselines. A novel result would have to add a meaningful composition/revision or
 representation characterization rather than rename their elementary bounds.
+
+
+## S2 continuation pointer — September 26, 2026
+
+[Nonlinear and reflective reconstruction](01a_nonlinear_and_reflective_reconstruction.md)
+extends the shared-source comparison beyond affine consumers, adds joint
+uncertainty over two fallible reflective branches, constructs guarded policy
+revision and adds an observational/interventional cost-scale discriminator.
+The original S1 examples and their restrictions above remain unchanged. F04
+is still partial; the S2 source record and timing evidence are separate.
