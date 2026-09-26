@@ -354,3 +354,19 @@ input-dependent cost scalings before attributing absolute internal costs.
 No network was trained. Cumulative F04 D is 7.592175 minutes; D60 is unmet.
 No general complexity, proxy-calibration, source-validity, novelty, F05 or gate
 result follows from these finite constructions. Next remains F04.
+
+
+## F04 S3 checkpoint: compressed paired-revision evidence
+
+[Derivation](derivations/01b_compressed_revision_certificates.md) and
+[session](work_logs/F04_2026-09-26_S3.md). A fixed two-branch self-report family admits an
+exact three-scalar report/deterioration check summary. It does not preserve
+absolute optimization or every subsequent evidence/weight update. Retain sound
+old certificates under genuine source restriction; selectively reopen a missing
+directional bound when it blocks a useful comparison. Finite nonnegative linear
+certificates give a checked arithmetic bridge, not a selected general calculus.
+A target/proxy discrepancy can remain unbounded in level while its differences
+support a useful policy comparison. Neural claims remain conditional structural
+controls, not discovered trained mechanisms. Scope/units/version metadata are
+not discarded by numerical compression. F04 remains partial (17.758820 D minutes);
+Gate A and F05 are unstarted, and F03's completed scope remains unchanged.

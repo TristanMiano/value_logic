@@ -482,6 +482,19 @@ to publication with an unsound core simply because the planned queue ended.
   **7.592175 D minutes**, with **52.407825** of D60 remaining. F04 stays selected;
   the shortlist, Gate A and F05 have not been advanced.
 
+  **Partial S3 continuation — September 26, 2026.** The
+  [compressed revision derivation](v2/derivations/01b_compressed_revision_certificates.md) proves an exact three-scalar
+  check interface for the fixed two-branch model, its failure under certain
+  future evidence/weight changes, and selective directional-certificate repair.
+  Finite linear proofs connect common-source comparisons, uncertain self-reports,
+  proxy-error bounds and reparameterization-aware neural intervention controls.
+  No neural training or general proof search. **27 new / 94 combined F04 tests**,
+  **256 F03** and **124 F02** regressions pass in the reconstructed overlay.
+  [S3](v2/work_logs/F04_2026-09-26_S3.md) records **10.166645 D minutes** this session,
+  **17.758820 cumulative D minutes**, and **42.241180 remaining** against D60.
+  This meets the requested ten-minute session aim without reclassifying code,
+  retrieval or packaging as derivation. F04 remains selected; no Gate A or F05.
+
 - [ ] **Gate A — foundation-selection readiness.**
 
   Record `v2/checkpoints/A_1.md` (increase the attempt suffix on retries).

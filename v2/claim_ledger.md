@@ -445,3 +445,25 @@ boundary review, not independent proof-assistant verification or novelty.
 All seven are proved only in their stated fragments. The 38 new checks give
 67 F04 regressions, not independent proofs or a completed phase. F04 remains
 partial until its substantive reconstruction and D60 obligations are both met.
+
+
+## F04 S3 — compressed revision and finite certificates
+
+[Derivation](derivations/01b_compressed_revision_certificates.md),
+[fixtures](checks/f04_compressed_revision.py),
+[report](checks/F04_compressed_revision_results.json),
+[session](work_logs/F04_2026-09-26_S3.md). Same-agent proofs/self-review; 27 new development
+checks, not independent verification, a neural result, or a novelty claim.
+
+| ID | Scoped result | Evidence and limits |
+|---|---|---|
+| F04-C16 | For a fixed finite two-branch source family and cost context, the report floor and positive/negative slope rates answer every validity and nonnegative paired-deterioration query. Absolute robust optimization is not determined. | Sections 1–2 and 12; exact formula, degenerate R=1 qualification, same-summary/different-optimizer witness. Metadata and common-source identity remain premises. |
+| F04-C17 | Conservative rates plus a retained valid-baseline witness define a nonempty sufficient revision interval; exact inputs give the exact interval. | Section 3; zero rates and a coarse floor excluding a genuinely valid baseline are handled. No empirical witness verification claimed. |
+| F04-C18 | Genuine nonempty source restriction preserves sound old rates, but arbitrary affine evidence cannot be updated exactly from the summary; slope-only restrictions allow exact signed-rate updates, not necessarily an exact report-floor update. | Section 4, exact convex clipping examples. The final resource-weight example shows the further information lost by clipping signed surplus. |
+| F04-C19 | For nonempty finite linear premise polyhedra, a valid finite linear upper query is equivalent to a nonnegative multiplier certificate with matching direction and sufficient bound. | Section 5 includes a closed-cone separation proof of the classical Farkas fact. Only supplied rational certificates are implemented; no general solver or new RLL completeness result. |
+| F04-C20 | A finite continuous piecewise-affine suffix admits a directional support bound along a certified tube; transformed gradients and directions preserve certificates under positive scaling/permutation. | Section 6, finite segment proof and missed-activation-region witness. Non-CPWL task losses require their own bridge, and no causal neural discovery is asserted. |
+| F04-C21 | Uniform paired proxy and proxy-error bounds add to a target-cost bound without an absolute bound on proxy error; directional errors give displacement-sensitive rates. | Section 7, nonnegative losses with unbounded common offsets and improvement at least 3/40. Error structure is a separate empirical/model premise, not a universal calibration theorem. |
+| F04-C22 | A fixed linear certificate survives changed numerical bounds when their weighted effect fits its tolerance margin; changing directions needs a residual support bound, and changing time-indexed cost semantics needs an additional drift term. | Section 10; alternative-proof, direction-error and telescoping examples. Fixed-certificate test is not a necessary condition for the semantic claim. |
+
+F04-T01 remains unestablished pending D60 and task-level discrimination review.
+Current cumulative F04 D is 17.758820 minutes. No gate or later task is advanced.

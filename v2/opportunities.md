@@ -156,3 +156,23 @@ small-family obstruction. Reuse earlier proofs where exact assumptions match.
 **Allocation.** First probe central 20 / high 40 minutes if this becomes the best
 F04/F08 direction. Do not run it in parallel merely to exhaust the list.
 Status: candidate alternative; no new search or theorem claim.
+
+
+## S3 evidence update — same rankings, sharper tests
+
+OPP-01 and OPP-04 now share a concrete next comparison: finite directional
+premises admit small linear certificates; adding one justified coupling premise
+can repair a conclusion without restoring the entire source model. Existing
+certificate margins can tolerate weighted changes in the bounds they read.
+These are standard linear/convex techniques applied to the project's scoped
+interface, not verified new open problems. See
+[the S3 derivation](derivations/01b_compressed_revision_certificates.md).
+
+OPP-03 gains an exact three-number check interface for the specified two-branch
+controller, with explicit counterexamples to general exact evidence updating
+and absolute optimization from that interface alone. Do not spend the next
+session producing more equivalent toy variants: compare certificate size and
+informativeness against the same-information lower-functional route, or
+reconstruct the remaining weakest hypotheses. OPP-02 gains a transported
+certificate control for hidden-coordinate scaling/permutation, but no training.
+The four rankings remain unchanged; no permanent core is selected.
