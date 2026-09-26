@@ -533,3 +533,16 @@ alternatives, equal-information candidate discrimination, DIR01 proxy/reflection
 neural-design obligations, regression evidence and D60 are recorded. This
 resolves the previous partial-session entries without rewriting them. It is not
 Gate A, a selected core, a novelty claim or a trained-network discovery.
+
+
+## Gate A — readiness disposition (September 26, 2026)
+
+**GA-A1-R01: PASS at foundation-selection readiness.** This is an administrative
+review result, not a new mathematical theorem. [A_1](checkpoints/A_1.md) records
+criteria, source hashes, analytic reconstruction, 17 separate finite checks and
+the historical clock audit. It uses scoped F04 results without upgrading them
+to full-calculus soundness, novelty or a learned-network claim. The arithmetic
+and continuation routes agree on the finite affine fragment but differ in native
+nonlinear closure and approximation obligations. No blocker was found at this
+readiness scope; the gate lists falsifiers that would reopen it. Next is F05,
+unstarted; B–D unattempted; repair queue empty. Historical claims remain intact.

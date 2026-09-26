@@ -231,3 +231,16 @@ branch example and adds a concrete exact-report discontinuity with a declared
 slack-stability alternative. OPP-04 has an exact budget for selective source
 revision in the same example. These refine the existing four opportunities,
 not create a new catalogue. **Gate A is next and unattempted.**
+
+
+## Gate A disposition — September 26, 2026
+
+[A_1](checkpoints/A_1.md) keeps OPP-01 as the first development opportunity:
+source-aware paired-loss inference with a small checked language. The finite
+linear theorem itself is established prior art, not the proposed novelty.
+OPP-03's uncertain report-dependent evaluator remains a required interpretation;
+OPP-02 remains a falsifiable ordinary-network experiment, not evidence of learning.
+OPP-04 informs the one declared source-update question. No ranking change or
+extra task is introduced. F05 is to specify semantics for these existing tests,
+not expand the catalogue or begin later training. Continuation-value semantics
+remains a substantive alternative if exact closure or proof costs favor it.

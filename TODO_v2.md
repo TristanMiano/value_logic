@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: September 26, 2026 (UTC).
-Status: F01–F04 complete at their task scopes; no permanent calculus selected or readiness gate passed.
+Status: F01–F04 complete at their task scopes; Gate A passed at readiness scope; F05 unstarted; no permanent calculus selected.
 
 ## Resume here
 
@@ -11,11 +11,11 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: Gate A — foundation-selection readiness.**
+**Next task: F05 — choose a provisional core and give operational semantics.**
 
 **Active repair queue: empty.**
 
-**Gate state: A not attempted; B not attempted; C not attempted; D not attempted.**
+**Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B not attempted; C not attempted; D not attempted.**
 
 Select the pointer, not mechanically the first unchecked task. A failed or
 invalidated gate can put an earlier repair ahead of later numbered tasks.
@@ -537,7 +537,7 @@ to publication with an unsound core simply because the planned queue ended.
   every F04 obligation to evidence. Select **Gate A**, which remains unattempted;
   F05 is not started. This is task completion, not a passed readiness gate.
 
-- [ ] **Gate A — foundation-selection readiness.**
+- [x] **Gate A — foundation-selection readiness.**
 
   Record `v2/checkpoints/A_1.md` (increase the attempt suffix on retries).
   Require explicit operational questions, at least six worked separating
@@ -556,6 +556,19 @@ to publication with an unsound core simply because the planned queue ended.
   no need to pretend the final calculus is fixed. Select F05.
   **BLOCKED:** return to F01-F04 through a named repair, not to more polished
   prose or an unsupported carrier choice.
+
+  **PASS — September 26, 2026.** [A_1](v2/checkpoints/A_1.md) reviews the
+  shortlist with fresh same-assistant reconstruction and 17 separate finite
+  checks. All recorded F01–F04 floors hold; historical R/X is 62.99/37.01.
+  A checked source-aware loss language is the preferred development route,
+  with source-preserving continuation semantics retained as a distinct alternative.
+  The bounded F05 question is semantics for a paired loss comparison through
+  composition and one source update, including a fixed report-dependent policy,
+  explicit proxy alignment and approximation budgets. No supplied-final-score
+  oracle, permanent core, general soundness, novelty or learned-neural claim.
+  **Select F05, unstarted.** B–D remain unattempted; active repair queue empty.
+  Prospectively use D/L/E 60/10/30 and R/X 60/40 for cycle II until Gate B;
+  retain all task minimums and avoid unnecessary work to fill allocations.
 
 ### Cycle II — operational semantics, rules, and metatheory
 

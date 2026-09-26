@@ -6,7 +6,7 @@ Value Logic is a research project about reasoning with useful but fallible model
 
 The project's proposed starting point is **value**: how a model, theory, representation, or course of action serves an intended purpose, at a tolerable error and resource cost. The ambition is not just to attach usefulness scores to otherwise conventional judgments. It is to investigate a calculus in which semantic objects and inference rules make pragmatic value central, with familiar truth-based reasoning potentially recovered within a suitable fragment.
 
-**Phase one is complete. Phase two is building the value-based calculus first. F01–F04 are complete at their task scopes; the next item is Gate A, foundation-selection readiness.** The motivation below is the continuing research program. The particular constructions developed so far are realizations of it, not permanent foundations.
+**Phase one is complete. Phase two is building the value-based calculus first. F01–F04 are complete at their task scopes; Gate A passed its readiness review. The next task is F05, provisional core and operational semantics.** The motivation below is the continuing research program. The particular constructions developed so far are realizations of it, not permanent foundations.
 
 ## Motivation: useful does not mean final
 
@@ -54,7 +54,7 @@ evaluators are active capability targets. Neural interpretation seeks structure
 learned by ordinary networks, not only architectures built to implement a logic.
 [DIR01](v2/decisions/DIR01_loss_grounded_reflective_direction.md) specifies this
 direction, its scope and its open choices; the [opportunity register](v2/opportunities.md)
-guides bounded agent initiative. F03 and F04 are complete at their task scopes; Gate A is next and unattempted.
+guides bounded agent initiative. F03 and F04 are complete at their task scopes; [Gate A](v2/checkpoints/A_1.md) passed, and F05 is next and unstarted.
 
 ## What phase one established
 
@@ -89,7 +89,7 @@ The [candidate comparison](v2/foundations/02_candidate_semantics.md) and [contin
 
 **F04 is complete at its candidate-discrimination scope.** The [completion reconstruction](v2/derivations/01e_equal_information_completion.md) compares source-grounded arithmetic certificates with continuation-value formulations, including proxy alignment, shared-source composition, bounded reflection and prospective neural tests. The [completion record](v2/work_logs/F04_2026-09-26_S6.md) preserves the evidence and measured effort.
 
-**Next: Gate A — foundation-selection readiness.** No permanent calculus has been chosen and no readiness gate has passed. Later work must still develop operational semantics, nontrivial inference rules, soundness and characterization results, and an executable reasoner with evidence of useful composition. The authoritative status and continuation pointer are in [TODO_v2.md](TODO_v2.md).
+**Next: F05 — provisional core and operational semantics.** [Gate A](v2/checkpoints/A_1.md) passed at foundation-selection readiness; no permanent calculus has been chosen, and later gates remain unattempted. Later work must still develop operational semantics, nontrivial inference rules, soundness and characterization results, and an executable reasoner with evidence of useful composition. The authoritative status and continuation pointer are in [TODO_v2.md](TODO_v2.md).
 
 The former contract-semantics and inverse-task-recovery plan is preserved in [TODO_v2_contracts_archive.md](TODO_v2_contracts_archive.md). It remains a possible future direction, alongside model substitution, inquiry and self-revision, learning, and policy interpretability. There is no fixed limit on later phases.
 

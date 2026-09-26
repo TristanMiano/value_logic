@@ -3,7 +3,7 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01-F04 are complete at task scope; Gate A is next and unattempted.
+not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is next and unstarted.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -43,13 +43,21 @@ The [completion record](work_logs/F04_2026-09-26_S6.md) credits **11.238242 new 
 cumulative F04 D is **60.021079 minutes**. All **202 F04 tests** pass,
 including **38 new cases**; F03/F02 remain **256/124**. The
 [checklist](derivations/F04_completion_checklist.json) is a task-scope self-audit,
-not a readiness-gate decision. **Next: Gate A**, not yet attempted; F05 is unstarted.
+not a readiness-gate decision. **Next: F05**, unstarted, following the [Gate A PASS](checkpoints/A_1.md).
 
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f04*.py'
 ```
-No calculus has been selected, and no readiness gate has passed.
+Gate A passed at foundation-selection readiness. No permanent calculus has been selected; gates B–D are unattempted.
+
+The [gate reconstruction](checkpoints/A_1_reconstruction.md) and [timing audit](checkpoints/A_1_timing_review.json) preserve the basis for that decision. Its 17 independent-implementation fixtures can be run with:
+
+```text
+python -X faulthandler -m unittest discover -s verification -p "test_v2_gate_a.py"
+```
+
+The reviewer is the same assistant; this is not independent external review.
 
 The intended result is a small, explicit calculus with operationally meaningful
 value objects, justified inference rules, worked derivations, and an executable

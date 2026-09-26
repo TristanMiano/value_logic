@@ -1,0 +1,88 @@
+{
+  "input": "v2/time_ledger.csv",
+  "rows": 361,
+  "positive_research_rows": 202,
+  "mode_seconds": {
+    "F01": {
+      "D": 3614.616774829,
+      "E": 577.679427462
+    },
+    "F02": {
+      "D": 3667.097704541,
+      "E": 978.8142899540001
+    },
+    "F03": {
+      "L": 3613.017217242,
+      "D": 1494.382393976,
+      "E": 876.069813497
+    },
+    "F04": {
+      "L": 8.233509348,
+      "D": 3601.2647134640015,
+      "E": 669.1275961030001
+    }
+  },
+  "lane_seconds": {
+    "F01": {
+      "R": 2313.9788428449997,
+      "X": 1878.317359446
+    },
+    "F02": {
+      "R": 3258.31177588,
+      "X": 1387.6002186150001
+    },
+    "F03": {
+      "R": 3699.90453973,
+      "X": 2283.564884985
+    },
+    "F04": {
+      "R": 2759.9559222670005,
+      "X": 1518.669896648
+    }
+  },
+  "floor_checks": {
+    "F01": {
+      "mode": "D",
+      "recorded_minutes": 60.24361291381667,
+      "required_minutes": 60,
+      "met": true
+    },
+    "F02": {
+      "mode": "D",
+      "recorded_minutes": 61.118295075683335,
+      "required_minutes": 60,
+      "met": true
+    },
+    "F03": {
+      "mode": "L",
+      "recorded_minutes": 60.2169536207,
+      "required_minutes": 60,
+      "met": true
+    },
+    "F04": {
+      "mode": "D",
+      "recorded_minutes": 60.02107855773336,
+      "required_minutes": 60,
+      "met": true
+    }
+  },
+  "cycle_mode_percent": {
+    "D": 64.8019107414789,
+    "E": 16.238962572986466,
+    "L": 18.95912668553464
+  },
+  "cycle_lane_percent": {
+    "R": 62.99455460619606,
+    "X": 37.00544539380395
+  },
+  "monotonic_elapsed_matches": 202,
+  "raw_mismatches": [],
+  "unmatched_rows": [],
+  "accounting_issues": [],
+  "limits": "Recorded work-block audit, not independent observation of past cognitive work. Missing raw files are not fabricated. Original exclusions/credits are preserved.",
+  "base_commit": "34beaaf2638f2fb6d113cd1695e0df8dbf4fe26a",
+  "input_bytes": 78295,
+  "input_sha256": "baa3852d0e063ad6fa580d8be73236a5ec8575fbb8945956336faf204bf7a458",
+  "input_git_blob": "ad869cd04f68cf484c88d8887f4a378801cfc916",
+  "method": "Sum positive D/L/E engaged rows; compare elapsed duration with matching UTC-labelled monotonic endpoints within the same session clock file; check positive credits do not exceed elapsed and positive research intervals do not overlap. Preserve prior amendments and exclusions. This does not independently validate prior mental activity."
+}

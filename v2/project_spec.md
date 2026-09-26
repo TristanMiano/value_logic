@@ -1,8 +1,9 @@
 # Phase Two Project Specification
 
-Version: F04 candidate-discrimination task completed, September 26, 2026 (UTC).
-Status: **F01–F04 complete at task scope; no permanent calculus selected and no readiness gate passed**.
+Version: Gate A foundation-selection readiness passed, September 26, 2026 (UTC).
+Status: **F01–F04 complete; Gate A passed at readiness scope; F05 unstarted; no permanent calculus selected**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
+The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 
 ## Question and commitments
@@ -429,3 +430,15 @@ preferred *review proposal* is a small checked loss-comparison language with
 source-preserving continuation semantics as an explicit alternative/reference.
 Gate A, not this note, adjudicates foundation-selection readiness. No F05 syntax,
 permanent calculus, full reflection principle or architecture has been adopted.
+
+
+## Gate A disposition — current
+
+Gate A passes only at foundation-selection readiness. F05 should investigate a
+small checked loss-comparison language while retaining source-preserving
+continuation semantics as an explicit alternative. Give nonempty, source-aware
+semantics to a paired guarantee through composition and one specified update;
+include the report-dependent policy and distinguish source uncertainty, proxy
+alignment and approximation. The three required semantic interpretations and
+rejection criteria are in [A_1](checkpoints/A_1.md). No F05 syntax, completed
+soundness theorem, neural training or permanent carrier is introduced here.
