@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: September 27, 2026 (UTC; September 26 in America/Los_Angeles).
-Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 unstarted; the semantic core remains provisional.
+Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 first rule pass partial; the semantic core remains provisional.
 
 ## Resume here
 
@@ -632,6 +632,17 @@ to publication with an unsound core simply because the planned queue ended.
   **Done when:** rules have exact premises, conclusions, and side conditions;
   operational meaning is visible; invalid generalizations have witnesses;
   D90 is recorded.
+
+  **Partial S1 — September 27, 2026 (UTC).** The
+  [first rule register](v2/derivations/02_inference_rules.md) and
+  [reconstruction](v2/derivations/02a_rule_reconstruction.md) give signed-loss
+  rules with explicit source/case/unit conditions, multistep component and
+  absolute-loss composition, report-dependent proxy revision, and nonlinear
+  enclosure proofs. A finite checker validates supplied traces and restricted
+  evidence replay; 58 F06 tests and the 90/202/256/124/17 F05/F04/F03/F02/Gate A
+  regressions pass. [S1](v2/work_logs/F06_2026-09-27_S1.md) records **30.039437 measured
+  D minutes**, meeting this turn's D30. F06 remains unchecked and selected,
+  with **59.960563 D minutes** remaining against D90. No F07 or later gate.
 
 - [ ] **F07 — prove soundness for an explicit fragment.**
 

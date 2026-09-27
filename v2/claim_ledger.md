@@ -602,3 +602,71 @@ nonempty three interpretations, rejection conditions and synchronized supporting
 records are present. S2 D30 is 30.063473 minutes; cumulative D60 is 60.320288.
 The 90 F05 tests are supplied-interpretation regressions, not general validity.
 Select F06, unstarted. Gate A remains passed only at readiness; B–D unattempted.
+
+
+## F06 — first signed-loss rule-development pass (partial)
+
+All entries below depend on the finite, typed F05 interpretation, nonempty
+stated source cases and exact version/observation/criterion identity. Evidence:
+[rule register](derivations/02_inference_rules.md),
+[reconstruction](derivations/02a_rule_reconstruction.md), and
+[finite proof audit](checks/f06_inference_rules.py). Status is same-assistant
+proved-in-fragment/reconstructed, not independently verified. No F07 general
+soundness, complete proof search or mathematical-priority claim follows.
+
+### F06-C01 — signed primitive comparisons and consumer composition
+
+Nonnegative scaling, reversed negation, addition, transitivity and stated
+lattice/residual rules preserve their pointwise signed bound under their exact
+premises. A fixed consumer K(x)=2x+res(0,x) propagates b to 2b+max(b,0).
+Strict gain through a clipped loss needs a margin or a positive lower gain;
+naive signed Lipschitz propagation fails at saturation. See sections 1–2,29.
+
+### F06-C02 — multistep partial-contract and loss deductions
+
+Two contracts N1-O1-theta<=-3/4 and N2-O2+theta<=1/4 give a composite -1/2
+bound without supplying complete component costs. Native absolute-error plus
+cost gives -1/4 in its domain. Four component chord cases yield -3/16 for the
+quadratic comparison. A fixed hidden-case mixture gives -1; case-first scalar
+reduction loses that improvement. See sections 4,6,22,30 and emitted traces.
+
+### F06-C03 — guarded proof-budget replay
+
+For fixed affine row directions, case schema, meanings and unconditional rule
+shape, budgets recompute by rational constants, positive scaling, sum, min/max
+and fixed nonnegative slack. The finite checker exercises this restricted replay.
+A fixed-target weakening must be rechecked, and branch-dependent normalization,
+matrix changes or missing premises are not covered. See sections 8,18–20,24,27–28.
+
+### F06-C04 — typed reflective report and paired intended-cost revision
+
+Under the specified SELF-MIX source and positive valuation bridges, explicit
+proofs give report bounds 0 and -3/8, proxy change -1/16 and intended change
+-1/32. A weakened discrepancy row changes the last bound to -1/64. A lapsed
+old-report bound +1/32 can still yield the new report bound -11/32; direct
+reconstruction improves it to -23/64. See sections 5,21,31–32. Probabilities
+and mean costs are not pathwise guarantees or facts established by self-emission.
+
+### F06-C05 — bounded numerical self-model of a proof calculator
+
+For the versioned calculator B(u)=min(-3/4+u,-1/4-u), the same arithmetic rules
+prove B(u)<=-1/2 for every finite real u, sharply. This predicts the number it
+emits, not the empirical validity of its inputs. Withdrawing an applicable row
+breaks the latter implication while preserving the numeric calculation. See
+section 33; this is not unrestricted proof reflection or a learned neural result.
+
+### F06-C06 — confidence and operational boundaries
+
+Arithmetic reuse, distinct evidence events, hidden-case quantification and
+available policy choice are not interchangeable. Finite counterexamples show
+selection error from marginal-only coverage, criterion changes reversing a
+comparison, reasoning costs consuming an improvement, and a better selected
+upper bound accompanying a worse actual policy. See sections 7,10,12,15–17,25.
+
+### F06-C07 — exact proof normalization keeps lexical meanings
+
+Linear collection over fully instantiated nonlinear atoms is sound for its
+accepted identities; capture-free let expansion is required. Identical printed
+local names under different bindings cannot be merged. The finite normalizer
+unfolds the residual definition but is not a general CPWA identity solver.
+The typed shadowing counterexample and tests are in section 34.1 and the audit.

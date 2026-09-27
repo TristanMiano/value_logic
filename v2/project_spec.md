@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: F05 semantic specification completed, September 27, 2026 (UTC).
-Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 unstarted; the semantic core remains provisional**.
+Version: F06 first rule-development checkpoint, September 27, 2026 (UTC).
+Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 partial; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -503,3 +503,22 @@ The continuation alternative, all source/observation falsifiers and Gate A's
 readiness scope remain unchanged. **Next: F06, unstarted**; F07 soundness and
 later characterization/empirical tasks are not accomplished by this specification.
 Older status paragraphs above are historical checkpoint records.
+
+
+## F06 S1: first operational inference interface
+
+The [rule register](derivations/02_inference_rules.md) introduces syntactic
+comparisons `C;h |- new <=[b] old`, distinct from F05 semantic validity. The
+same context, source meanings, live case and units must be retained. Negative
+bounds express improvement; physical cost and resource aggregation still need
+their stated plan interpretation. New relative comparisons can follow from
+partial component contracts without complete component evaluation.
+
+Implemented audit rules cover supplied finite traces, lattice/residual composition,
+explicit conversions and same-schema RHS replay. Full source transports and
+withdrawal repair remain mathematical obligations, not completed implementation.
+A proof-budget CPWA function can be reified as a versioned numerical self-model;
+its predicted output is distinct from the validity of its premises. The fixed
+report-dependent controller remains uncertain and requires paired proxy evidence.
+The continuation alternative, DIR01 objectives and Gate A conditions are unchanged.
+No F07 soundness/complete-search/learning result is asserted by this checkpoint.

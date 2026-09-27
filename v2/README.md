@@ -3,13 +3,26 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is complete at semantic-specification scope; F06 is next and unstarted.
+not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is complete at semantic-specification scope; F06 has a partial first rule pass.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_calculus_first.md).
 
 ## Current status
+
+**F06 is partial.** The [rule register](derivations/02_inference_rules.md) and
+[worked reconstruction](derivations/02a_rule_reconstruction.md) develop signed,
+source-aware loss inferences rather than accepting final comparison scores.
+The finite proof audit passes **58 tests**; [S1](work_logs/F06_2026-09-27_S1.md) records
+**30.039437 D minutes**, leaving **59.960563** against F06's D90 floor.
+Its restricted checker and replay mechanism do not constitute the full F11
+reasoner or the F07 general soundness result.
+
+```text
+python -X faulthandler -m unittest discover -s verification -p 'test_v2_f06*.py'
+python -m v2.checks.f06_inference_rules --json v2/checks/F06_inference_results.json
+```
 
 **F05 is complete at semantic-specification scope.** The [provisional core](foundations/03_provisional_core.md)
 uses typed finite signed-loss expressions over shared source cases. The [S2 audit](foundations/03b_observation_and_revision_audit.md)
@@ -19,7 +32,7 @@ The [completion record](work_logs/F05_2026-09-27_S2.md) records 30.063473 D minu
 this session and **60.320288 cumulative F05 D minutes**. The continuation alternative
 remains live; the semantics is provisional, not a completed deductive calculus.
 
-**Next: F06, unstarted.** Gate A remains passed at its existing scope. No neural
+**Next: continue F06.** Gate A remains passed at its existing scope. No neural
 training or later readiness gate has occurred. F05's supplied-model discovery
 suite passes **90 tests** (48 from S1; 42 added in S2):
 

@@ -149,3 +149,18 @@ for scope; these are optional views of the existing semantic objects.
 
 Log loss, Brier design optimization and infima are used in the external semantic
 adapter proofs. They are not quietly added to the finite native term grammar.
+
+
+## F06 first-pass notation
+
+`C;h |- t <=[b] s:u` is a supplied-rule derivation of the signed comparison
+`t-s<=b` in live case h; `|=` remains the independently specified F05 meaning.
+Omitting h denotes exhaustive hidden-case coverage for a fixed policy.
+`beta_pi(eta)` is one proof's calculated budget as a function of finite row
+bounds, with fixed row directions/scope/case schema. It is not the modeled cost,
+a confidence probability, a universal optimum or an unexplained truth degree.
+`k>=0` in a weakening node is a fixed added slack, not an unchecked fixed target.
+Source-dependent rewrites, changed criteria, missing rows and policy changes
+need separate obligations. Nonlinear terms are compared by the stated rules;
+normalization alone handles only its explicit identities. See
+[the rule register](derivations/02_inference_rules.md).

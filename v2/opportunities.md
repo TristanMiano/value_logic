@@ -281,3 +281,20 @@ source-update counterexample and a constructive restricted fibre-summary case.
 OPP-02 remains prospective: do not infer causal neural structure from these
 mathematical constructions. See [S2](foundations/03b_observation_and_revision_audit.md).
 F05 is complete, **F06 is next and unstarted**; no broader scope change is made.
+
+
+## F06 S1 evidence update — ranking retained
+
+OPP-01 now has explicit finite rule traces deriving a shared-source half-unit
+improvement from partial contracts and propagating loss comparisons through
+native consumers. OPP-03 includes report transfer after an old report loses
+validity, plus a specified proof-bound calculator modeled numerically by the
+same language. OPP-04 has restricted RHS-only replay and guard/withdrawal
+countermodels. OPP-02 remains untested: a mathematically derived proof-budget
+function is a hypothesis for neural interpretation, not a discovered circuit.
+
+The next bounded gain is to reconstruct source restriction/withdrawal and the
+minimal primitive-versus-derived rule boundary against F05, not add another
+large catalogue of toy cases. Reuse the existing signed and hidden-case witnesses
+as falsifiers. No ranking change or novel-priority claim is warranted merely
+by the number of passing fixture tests.
