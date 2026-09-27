@@ -104,3 +104,29 @@ All guarantees are relative to the displayed finite or explicitly extended
 models. A resource frontier does not infer physical prediction error without
 an error-propagation premise. No new universal conjunction, context schema,
 probability semantics or boundedness requirement is introduced by this table.
+
+
+## F05 provisional notation (S1; not a permanent signature)
+
+| Notation | Current meaning and restriction |
+|---|---|
+| Sigma | Finite versioned source signature, units and named positive rational conversions. |
+| x_u; y_u | Source coordinate and lexical local, respectively; different namespaces. |
+| t_u | Finite rational CPWA loss term in unit u. Pointwise values are finite; global ranges may be unbounded. |
+| res(a,b) | max(b-a,0), a derived nonnegative deterioration operation. |
+| C; D_C(o) | Evidence context and its finite union of nonempty rational source polyhedra at visible observation o. |
+| h; x | Hidden interpretation case and its source assignment; neither is policy-visible by default. |
+| C |= t <=_b s : u | For every admitted case and assignment, new t minus old s is <= the signed budget b. |
+| B_C(t,s) | Supremum of the signed difference, in R union {+infinity}; a metalevel target, not an oracle term. |
+| S_C(t,s) | max(B_C(t,s),0); equivalent budget test only for b>=0. |
+| pi:O->program/lottery | Finite visible-information policy; proof case splitting cannot reveal h. |
+| phi:D_new->D_old | Source-meaning/domain map needed for evidence transport; typing alone is insufficient. |
+| H_r; L_r; J_r | Controller failure probability, proxy expected cost, and intended modeled cost, respectively. |
+| e; beta | Paired intended/proxy discrepancy and its upper bound for the named old/new policies. |
+| q; U4 | Abstract expected-event source and four-cell CPWA upper enclosure for theta^2; not an exact multiplication operator. |
+
+See [the core](foundations/03_provisional_core.md) and
+[reconstruction](foundations/03a_semantic_reconstruction.md) for assumptions.
+There is no introduced general proof-theoretic relation |- yet; selecting rules
+and proving them sound remain F06 and F07 obligations. A pointwise audit result
+must not be labelled universal validity or empirical confidence.

@@ -3,13 +3,28 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is next and unstarted.
+not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is active and partial.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_calculus_first.md).
 
 ## Current status
+
+**F05 is partial.** The [provisional source-aware core](foundations/03_provisional_core.md)
+defines typed signed-loss terms, source contexts, model-relative comparisons and
+three complete interpretations. [Reconstruction notes](foundations/03a_semantic_reconstruction.md)
+separate numerical meaning, evidence, executable policies and uncertainty.
+[S1](work_logs/F05_2026-09-26_S1.md) records **30.256814 D minutes**, with **29.743186** remaining
+against D60. The source-preserving continuation route remains an alternative;
+no F06 rule system or neural training has begun. The exact supplied-model audit
+passes **48 tests** (not a general validity decider):
+
+```text
+python -X faulthandler -m unittest discover -s verification -p 'test_v2_f05*.py'
+python -m v2.checks.f05_semantics --json v2/checks/F05_semantics_results.json
+```
+
 
 **F01 is complete.** The eight worked examples have been reconstructed and
 extended with explicit positive repairs, assumption tests, and 50 additional
@@ -43,7 +58,7 @@ The [completion record](work_logs/F04_2026-09-26_S6.md) credits **11.238242 new 
 cumulative F04 D is **60.021079 minutes**. All **202 F04 tests** pass,
 including **38 new cases**; F03/F02 remain **256/124**. The
 [checklist](derivations/F04_completion_checklist.json) is a task-scope self-audit,
-not a readiness-gate decision. **Next: F05**, unstarted, following the [Gate A PASS](checkpoints/A_1.md).
+not a readiness-gate decision. **Next: F05 continuation**, following the [Gate A PASS](checkpoints/A_1.md).
 
 
 ```text

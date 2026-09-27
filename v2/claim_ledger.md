@@ -546,3 +546,30 @@ and continuation routes agree on the finite affine fragment but differ in native
 nonlinear closure and approximation obligations. No blocker was found at this
 readiness scope; the gate lists falsifiers that would reopen it. Next is F05,
 unstarted; B–D unattempted; repair queue empty. Historical claims remain intact.
+
+
+## F05 S1 — provisional meanings and model interpretations
+
+Evidence: [core](foundations/03_provisional_core.md),
+[reconstruction](foundations/03a_semantic_reconstruction.md),
+[fixture](checks/f05_semantics.py) and [session](work_logs/F05_2026-09-26_S1.md).
+This is same-assistant derivation/self-review, not independent checking or a
+novelty claim. The selected definition is provisional and F05 remains partial.
+
+| ID | Statement/status | Hypotheses and boundary |
+|---|---|---|
+| F05-DEF01 | Provisional source-aware signed-loss semantics selected for development. | Definitions and rejection conditions in core sections 1–9, 15–16. No completed deduction system; continuation alternative retained. |
+| F05-C01 | Finite well-typed source terms have unique terminating pointed evaluation and rational CPWA denotation. Proved in the specified fragment. | Finite real source assignments, acyclic syntax, lexical locals, fixed positive conversions; hypothetical evaluation is not source observation. |
+| F05-C02 | Closed same-unit substitution preserves denotation; semantic consequence transfers only with an appropriate source-domain map. | Structural reconstruction and explicit wrong-domain counterexample. No unqualified context-preservation rule. |
+| F05-C03 | The complete shared-source two-stage interpretation has exact cost change -1/2 with unbounded nonnegative baselines. | Same theta across both stages; cloned-source countermodel permits +1/2. Absolute adequacy does not follow. |
+| F05-C04 | The versioned SELF-MIX interpretation supports reports 1/2 and 3/4 and intended-cost change <=-1/32; weakening the paired discrepancy bound gives exactly -1/64. | Fixed conditional kernel and program versions, p-s=1/2, s in [0,1/4], appropriate discrepancy upper bound. Expected, not pathwise; actual failure remains uncertain. |
+| F05-C05 | Four affine chord cases enclose the specified theta^2 continuation with component excess <=1/256 and preserve the exact -3/16 comparison. | Conditional independence of draws given shared theta in [1/4,3/4]; source adapter proved locally. One chord already suffices for this particular comparison. |
+| F05-C06 | Every strict invalid rational-threshold comparison over rational polyhedral sources and continuous native terms has a rational countermodel. | Active-face rational approximation plus continuity. No finite test completeness or nonlinear equality-source extension. |
+| F05-C07 | Finite nonnegative difference-pair translation preserves native signed denotation and signed-budget comparisons. | Both coordinates finite, shared source pairs, fixed operation meanings. A semantic translation, not a proof-system/RLL completeness import. |
+| F05-C08 | The normalized uncertain-gap source has the piecewise least uniform self-report in reconstruction Z. | 0<=dL<=d<=dU<=1, 0<=s<=S<=1, p=s+d<=1; fixed report-family kernel. This is a scoped reconstruction, not unrestricted reflection. |
+| F05-C09 | Monotone upper sensitivity alone need not preserve strict improvement; a positive lower-gain premise supplies a signed-budget bound on the reached domain. | Saturation/ReLU counterexamples and two-sign proof in reconstruction AB. A discrimination obligation for future rules, not F06 completion. |
+
+The 48 point/metadata/interface tests include invalid source, type, observation,
+version, sign and kernel cases. Passing them does not prove every semantic
+judgment. No general calculus soundness, optimal algorithm, learned mechanism,
+empirical coverage or unrestricted self-endorsement is asserted.

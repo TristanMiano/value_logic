@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: September 26, 2026 (UTC).
-Status: F01–F04 complete at their task scopes; Gate A passed at readiness scope; F05 unstarted; no permanent calculus selected.
+Status: F01–F04 complete at their task scopes; Gate A passed at readiness scope; F05 first pass partial; no permanent calculus selected.
 
 ## Resume here
 
@@ -588,6 +588,22 @@ to publication with an unsound core simply because the planned queue ended.
   **Done when:** notation and project spec match; at least three examples have
   complete interpretations; the choice and rejection conditions are explicit;
   D60 is recorded. Existing phase-one objects are imported only by argument.
+
+  **Partial S1 — September 26, 2026.** The [provisional core](v2/foundations/03_provisional_core.md)
+  chooses typed, source-aware signed loss comparisons for initial development,
+  retaining source-preserving continuation semantics as the explicit alternative.
+  Syntax, units, finite real denotation, rational hypothetical evaluation,
+  nonempty polyhedral contexts, semantic consequence, permitted-policy information,
+  source revision and countermodels are specified. Three complete interpretations
+  cover shared-source composition, uncertain report-dependent behavior and a
+  nonlinear continuation with a proved local enclosure. The
+  [reconstruction](v2/foundations/03a_semantic_reconstruction.md) audits sign,
+  scope, binding, probability, proxy and deployment boundaries. **48 new F05 tests**
+  and **202 F04 / 256 F03 / 124 F02 / 17 Gate A** regressions pass.
+  [S1](v2/work_logs/F05_2026-09-26_S1.md) credits **30.256814 measured D minutes**, meeting the
+  requested D30 session floor. **29.743186 minutes remain** against F05 D60.
+  F05 stays unchecked and selected. No F06 proof system, F07 soundness claim,
+  later gate, full solver, training run or permanent choice is introduced.
 
 - [ ] **F06 — develop the first nontrivial inference rules.**
 

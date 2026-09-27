@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: Gate A foundation-selection readiness passed, September 26, 2026 (UTC).
-Status: **F01–F04 complete; Gate A passed at readiness scope; F05 unstarted; no permanent calculus selected**.
+Version: F05 provisional semantics first pass, September 26, 2026 (UTC).
+Status: **F01–F04 complete; Gate A passed at readiness scope; F05 partial; no permanent calculus selected**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -442,3 +442,29 @@ include the report-dependent policy and distinguish source uncertainty, proxy
 alignment and approximation. The three required semantic interpretations and
 rejection criteria are in [A_1](checkpoints/A_1.md). No F05 syntax, completed
 soundness theorem, neural training or permanent carrier is introduced here.
+
+
+## F05 provisional semantic choice — S1
+
+The [source-aware loss core](foundations/03_provisional_core.md) is selected for
+initial development, not frozen permanently. It uses finite rational CPWA syntax
+with finite signed-real meanings at each model and potentially unbounded ranges
+across models. Its basic query is new loss minus old loss <= a signed budget,
+relative to nonempty, scoped, versioned joint source conditions. Nonnegative
+residual shortfall is derived and does not replace strict improvement margins.
+
+Keep unit conversions, shared-source identity, lexical binding, visible-policy
+information, source-set validity and paired proxy discrepancy explicit. The
+three principal interpretations are shared-source additive composition, the
+versioned SELF-MIX controller with uncertainty and an evidence weakening, and a
+source-parametric quadratic continuation with a component-local affine enclosure.
+A direct absolute-error-plus-resource instance additionally connects the native
+syntax to a conventional learning loss. These are modeled costs, not final utility.
+
+Countermodels must be feasible in the declared source. Malformed contexts,
+empty sources, stale versions and unavailable policy information are not truth
+values or evidence of target-world failure. The executable audit only evaluates
+rational hypothetical models in its documented subset; it does not decide global
+validity or replace F06–F08. The richer continuation alternative and rejection
+conditions remain explicit. Existing phase-one and F01–F04 results retain their
+original scope. Gate A remains valid at readiness; F05 continuation is next.

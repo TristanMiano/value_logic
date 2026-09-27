@@ -244,3 +244,21 @@ OPP-04 informs the one declared source-update question. No ranking change or
 extra task is introduced. F05 is to specify semantics for these existing tests,
 not expand the catalogue or begin later training. Continuation-value semantics
 remains a substantive alternative if exact closure or proof costs favor it.
+
+
+## F05 S1 — semantic narrowing without a rank change
+
+OPP-01 now has an explicit provisional cost interpretation rather than only
+numerical certificate examples. The next useful question is how much of the
+source/meaning structure is essential for the three complete uses, not another
+catalogue of countermodels. The signed-budget versus clipped-shortfall distinction
+and lower-gain counterexample should constrain the later proof rules.
+OPP-03 has an uncertain versioned report whose own behavior is evaluated; kernel,
+proxy alignment and data-dependent selection assumptions remain external premises.
+OPP-02 remains prospective: a native expression's ReLU representation is not a
+learned mechanism. OPP-04 is tied to the explicit discrepancy-bound weakening,
+which changes one comparison while leaving self-report warrant intact.
+
+No ranking change, new subproject or novelty claim is warranted by this semantic
+pass. Continue F05's fresh reconstruction, source/observation interface audit and
+minimality review with the remaining protected D time. F06 is not selected.
