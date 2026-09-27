@@ -323,3 +323,21 @@ supports and context-sensitive reasoning, not a newly invented idea here. The
 new source note also records the Laskey–Lehner 1989 probability/ATMS abstract as
 a further comparison lead; no theorem is imported from its unread full text.
 No ranking change or priority claim is warranted by fixture counts alone.
+
+
+## F06 completion update — September 27, 2026
+
+OPP-01 remains the lead. [S3](derivations/02c_derived_cases_and_completion.md)
+connects residual assumptions to executable case and coverage arguments, while
+preserving useful negative information in signed alternatives. Its ingredients
+are quantitative/lattice and finite linear reasoning, not established novelty.
+OPP-04 now has a precise discriminator: semantic source equivalence can coexist
+with a weaker replayed trace; retaining and recompiling higher-level proof
+structure can recover precision. OPP-03 retains the fixed bound-calculator and
+report-dependent policy examples, not unrestricted self-certification. OPP-02
+remains unexecuted; no trained network is inferred from a constructed identity.
+
+Next, F07 must reconstruct the explicit local rules, source/typing conditions,
+normalization and admitted macro boundary before a general soundness claim.
+Do not replace that proof task with more toy cases or a new architecture. The
+standing task minimum and next-session forecast remain prospective obligations.

@@ -691,3 +691,24 @@ constructions and finite checks, not independent verification or F07 completion.
 | F06-C15 | A softened proof's lower budget bound enables the stated exact Boolean-availability ReLU gate; expected residual bounds support the finite reflective -1/64 example. Sections 16,20,23–24. | Confidence cannot replace the Boolean flag; all expectations require the declared law and integrability. No trained circuit or new calibration theorem. |
 
 F06 remains selected and unchecked; no later gate or task has advanced.
+
+
+## F06 S3 — derived cases and rule-development completion
+
+Evidence: [derivations and fresh reconstruction](derivations/02c_derived_cases_and_completion.md),
+[emitter and tests](checks/f06_derived_cases.py), [saved traces](checks/F06_derived_case_results.json)
+and [S3 record](work_logs/F06_2026-09-27_S3.md). The statements below are
+proved-in-fragment by the displayed constructions, with emitted traces checked
+by the unchanged S1 code; this is same-assistant review, not F07 or an external audit.
+
+| ID | Result and scope | Boundary |
+|---|---|---|
+| F06-C16 | Finite proof-budget guard envelopes and supplied affine sign splits elaborate into existing local instructions. Sections 2–3,17,22. | One nonempty parent case, opposite affine guards, fixed literal query, source/units/observation retained. Not automatic cut discovery or unrestricted conditional proof internalization. |
+| F06-C17 | A strict rational empty-branch ray derives the surviving guard; near-exclusion retains a quantified violation allowance. Sections 4,18,25.9. | Exact coefficients and current premises required. No vacuous live context; tiny unchecked imbalance can be fatal on unbounded sources. |
+| F06-C18 | Direct offset-hinge and positive-weight coverage bounds have checked expansions and exact aggregate-information sharpness proofs. Sections 14–16,21,25.1,25.7. | General source-relative optimality is not claimed. Zero weights/gains need separate handling; cases need not grant the policy knowledge of a hidden mode. |
+| F06-C19 | Original signed contracts can be more precise than their softened allowance summaries; the three-contract family has exact gap ReLU(2 epsilon/3-1/4). Sections 16.4,21.1,25.2. | The relaxed countermodel is not a feasible point of the original signed source. Both proof routes remain available. |
+| F06-C20 | Fixed expanded-trace replay can lose precision even when the feasible source set is unchanged; fresh recompilation can recover it. Sections 19,25.3. | Safe replay and optimal current inference are different operations. No general search procedure is supplied. |
+| F06-C21 | Finite-gain discharge excludes sqrt/indicator counterexamples; a tolerated sqrt enclosure and criterion-preserving empirical bridges are explicitly scoped. Sections 23–25. | Sqrt and empirical calibration are not implemented native rules. Finite tests do not prove general source validity, learned structure or F07 soundness. |
+
+F06 is completed at rule-development scope with D90 satisfied. **F07 is selected
+but unstarted.** Gate A retains its earlier readiness-only PASS; B–D are not attempted.

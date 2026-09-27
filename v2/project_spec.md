@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: F06 source-transport and residual-discharge checkpoint, September 27, 2026 (UTC).
-Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 partial; the semantic core remains provisional**.
+Version: F06 rule-development task completed, September 27, 2026 (UTC).
+Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 unstarted; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -548,3 +548,26 @@ Six old instruction tags have explicit expansions into a ten-tag basis.
 No automatic sign splitter, general optimizer, learned neural interpretation
 or F07 result is claimed. F06 is partial, with 60.046135 recorded D minutes
 and 29.953865 remaining. Gate A keeps its existing readiness scope.
+
+
+## F06 completion: the derived-case interface
+
+The [S3 reconstruction](derivations/02c_derived_cases_and_completion.md) extends
+supplied finite proofs, not the meaning of F05's source/value objects. A numerical
+sign partition is eliminated into the existing local instructions. A strict
+infeasibility ray derives the surviving guard in a nonempty parent; it does not
+create a live empty context. Incomplete coverage can retain a quantitative loss.
+Policies remain fixed under their declared observation contract, and source
+meaning, unit and evidence revisions are not interchanged.
+
+The positive-weight coverage macro and the direct two-hinge construction have
+explicit proofs, scope restrictions and sharpness witnesses for their stated
+information class. Original signed source arguments can remain strictly more
+precise than softened allowances. Fixed-trace replay is safe under its old
+conditions but need not match fresh recompilation's bound. Both alternatives
+are retained rather than deleting stronger historical information.
+
+The S1 checker and F05 semantics are unchanged. F06 now meets its rule, example,
+countermodel and D90 obligations; F07 remains the required general soundness
+review. The continuation alternative, empirical proxy assumptions and learned-
+neural interpretation remain provisional or untested as previously recorded.

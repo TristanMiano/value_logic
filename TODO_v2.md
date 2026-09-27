@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: September 27, 2026 (UTC; September 26 in America/Los_Angeles).
-Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 source-transport continuation partial; the semantic core remains provisional.
+Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 unstarted; the semantic core remains provisional.
 
 ## Resume here
 
@@ -11,7 +11,7 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F06 — develop the first nontrivial inference rules.**
+**Next task: F07 — prove soundness for an explicit fragment.**
 
 **Active repair queue: empty.**
 
@@ -619,7 +619,7 @@ to publication with an unsound core simply because the planned queue ended.
   **Select F06, unstarted.** Gate A remains valid at its readiness scope;
   B–D remain unattempted and the active repair queue is empty.
 
-- [ ] **F06 — develop the first nontrivial inference rules.**
+- [x] **F06 — develop the first nontrivial inference rules.**
 
   Principal artifact: `v2/derivations/02_inference_rules.md`.
   Derive a small rule set from the declared semantics. Investigate context
@@ -657,6 +657,21 @@ to publication with an unsound core simply because the planned queue ended.
   [S2](v2/work_logs/F06_2026-09-27_S2.md) records **30.006698 measured D minutes**, meeting
   this session's D30. Cumulative F06 D is **60.046135 minutes**; **29.953865**
   remain against D90. F06 stays unchecked and selected. No F07 or later gate.
+
+  **Completed — September 27, 2026.** The
+  [S3 derivation](v2/derivations/02c_derived_cases_and_completion.md) compiles supplied
+  affine sign cases into ordinary S1 instructions, handles strict empty-branch
+  rays without vacuous live contexts, and derives quantitative coverage and
+  near-exclusion bounds. Signed arguments, stale-proof replay and source-meaning
+  changes remain distinct. The unchanged checker validates every emitted trace.
+  **49 new / 171 F06 tests** pass, with the earlier **689** targeted regressions.
+  [S3](v2/work_logs/F06_2026-09-27_S3.md) records **30.155232 measured D minutes**,
+  meeting this session's D30 floor. Cumulative F06 D is **90.201367 minutes**,
+  satisfying D90. Source/units/observation conditions, three-plus multistep
+  examples and countermodels are explicit. The case, loss and transport macros
+  do not constitute automatic search, a complete reasoner or F07's general
+  soundness audit. **Select F07, unstarted.** Gate A retains its readiness PASS;
+  B–D remain unattempted and no permanent calculus or novelty claim is introduced.
 
 - [ ] **F07 — prove soundness for an explicit fragment.**
 

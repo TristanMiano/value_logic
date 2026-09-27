@@ -1,6 +1,6 @@
 # F06 — source-aware inference for signed loss comparisons
 
-Status: **source-transport and residual-discharge continuation; F06 partial**. September 27, 2026 (UTC).
+Status: **F06 complete at rule-development scope; F07 unstarted**. September 27, 2026 (UTC).
 Interpretation is fixed independently in [the F05 core](../foundations/03_provisional_core.md).
 This note does not replace that semantics, finish F07's general soundness audit,
 or claim a complete reasoner. The source-preserving continuation alternative
@@ -365,3 +365,43 @@ It supplies a prospective sign-splitting ingredient without adding a trusted
 case oracle. Automatic splitting, empty-branch proof search, and general
 policy synthesis remain unimplemented. F07's final soundness audit remains a
 separate task; no source-calibration or learned-neural claim follows here.
+
+
+## 10. Derived numerical cases and quantitative coverage (S3)
+
+[The full reconstruction](02c_derived_cases_and_completion.md) gives the precise
+side conditions and expansions. These are derived macros, not additional trusted
+instruction tags. The original S1 checker validates all outputs.
+
+**Affine sign elimination.** In one nonempty parent C, supply proofs of the
+literal same pair t,s under C,u<=0 and C,-u<=0, with rational branch witnesses.
+Discharge the temporary rows, certify finite guard gains and eliminate opposite
+hinges. The parent bound is max(b_minus,b_plus); hidden cases do not become
+observable to the policy. A strict rational infeasibility ray can instead prove
+the surviving guard directly. A zero or positive ray margin is not an empty
+branch certificate, although an independently checked near-exclusion bound can
+still give a graded conclusion.
+
+**Quantitative cover.** Suppose the common query Delta has bounds
+Delta<=A_i+k_i ReLU(g_i), with k_i,w_i>0 and a checked sum_i w_i g_i<=eta.
+Let H=sum_i w_i/k_i. A derived parent bound is
+
+    Delta <= max(max_i A_i, (eta+sum_i w_i A_i/k_i)/H).
+
+The macro expands through hinge shifting, min projections, positive-part/min
+commutation and the supplied source proof. Its sharpness is relative to otherwise
+unrestricted g_i subject only to that aggregate constraint, not every richer
+source. Zero-gain arguments supply separate constant comparisons. Numerical
+case coverage need not be perfect to retain a useful negative bound.
+
+**Preserved limits.** A common arithmetic query does not by itself verify a
+program's observation legality. Numeric minima are not hidden action selectors.
+Relative/expected/pointwise criteria and source validity retain their original
+interpretations. Safe replay of a saved expanded trace may be weaker than fresh
+high-level recompilation. Exact rational ray balance cannot be replaced by an
+unjustified numerical tolerance on unbounded sources.
+
+The [prototype](../checks/f06_derived_cases.py) has 49 tests, including emitted
+traces, mutated hypotheses, direct-versus-derived comparisons and lossless term-
+DAG transport. It is not an automatic branch search, feasibility solver or full
+F11 reasoner. General derivation-level soundness is the next F07 obligation.

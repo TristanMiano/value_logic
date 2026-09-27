@@ -184,3 +184,17 @@ normalization alone handles only its explicit identities. See
 
 Availability, actual premise validity, numerical violation and probability of
 coverage are distinct. No native positive/negative-infinity arithmetic is added.
+
+
+## F06 S3 derived-case notation (September 27, 2026)
+
+`rho(u)=max(u,0)` denotes a numerical violation, not a confidence probability.
+For a fixed local proof, `b_P` is its current literal budget and `k_P>=0` a
+certified gain for one discharged same-unit guard. A hypothetical affine split
+uses `C,u<=0` and `C,-u<=0`; both keep the same signature/observation/query.
+An `EmptyBranch` is a supplied strict rational linear ray, not a live source case.
+For weighted coverage, `A_i` is a signed branch baseline, `k_i>0` a guard gain,
+`w_i>0` a supplied weight, and `H=sum_i w_i/k_i`. These numerical weights are
+not automatically probabilities. See [S3](derivations/02c_derived_cases_and_completion.md).
+`F06-term-dag-v1` is a lossless report transport format with backward term
+references, not a new inference language or trusted rule system.

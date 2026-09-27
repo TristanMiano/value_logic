@@ -3,7 +3,7 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is complete at semantic-specification scope; F06 has partial rule and source-transport passes.
+not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is complete at semantic-specification scope; F06 is complete at rule-development scope; F07 is next and unstarted.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -11,24 +11,25 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 
 ## Current status
 
-**F06 is partial.** The [rule register](derivations/02_inference_rules.md) and
-[worked reconstruction](derivations/02a_rule_reconstruction.md) develop signed,
-source-aware loss inferences rather than accepting final comparison scores.
-The combined F06 proof audits pass **122 tests** (58 original, 64 added in S2).
-[S1](work_logs/F06_2026-09-27_S1.md) and [S2](work_logs/F06_2026-09-27_S2.md) record
-**60.046135 cumulative D minutes**, leaving **29.953865** against D90.
-The new [source/withdrawal note](derivations/02b_source_transport_and_withdrawal.md)
-and emitters cover proof-local transport, alternative supports, a smaller
-checking basis and residual discharge of numerical assumptions.
-Its restricted checker and replay mechanism do not constitute the full F11
-reasoner or the F07 general soundness result.
+**F06 is complete at rule-development scope.** The [rule register](derivations/02_inference_rules.md)
+and [S3 reconstruction](derivations/02c_derived_cases_and_completion.md) include
+signed loss composition, proof-local transport, residual assumption losses,
+derived affine cases and quantitative coverage. Every new macro emits an ordinary
+proof checked by the unchanged S1 checker. The **171 F06 tests** comprise 58 S1,
+64 S2 and 49 S3 checks; finite point tests are separate from mathematical arguments.
+[S3](work_logs/F06_2026-09-27_S3.md) records **30.155232 D minutes** and
+**90.201367 cumulative F06 D minutes**, satisfying D90.
+F07's general soundness review and the F11 reasoner have not begun.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f06*.py'
-python -m v2.checks.f06_inference_rules --json v2/checks/F06_inference_results.json
-python -m v2.checks.f06_source_transport --json v2/checks/F06_source_transport_results.json
-python -m v2.checks.f06_residual_discharge --json v2/checks/F06_residual_discharge_results.json
+python -m v2.checks.f06_derived_cases --json /path/outside/checkout/F06_cases.json
 ```
+
+The [new report](checks/F06_derived_case_results.json) contains complete proof
+traces with deduplicated, backward-referenced terms (`F06-term-dag-v1`).
+`unpack_proof(context, payload)` reconstructs them and reruns the original checker.
+The old S1/S2 reports and commands remain in their historical work records.
 
 **F05 is complete at semantic-specification scope.** The [provisional core](foundations/03_provisional_core.md)
 uses typed finite signed-loss expressions over shared source cases. The [S2 audit](foundations/03b_observation_and_revision_audit.md)
@@ -38,7 +39,7 @@ The [completion record](work_logs/F05_2026-09-27_S2.md) records 30.063473 D minu
 this session and **60.320288 cumulative F05 D minutes**. The continuation alternative
 remains live; the semantics is provisional, not a completed deductive calculus.
 
-**Next: continue F06.** Gate A remains passed at its existing scope. No neural
+**Next: F07 — soundness for the explicit fragment.** Gate A remains passed at its existing scope. No neural
 training or later readiness gate has occurred. F05's supplied-model discovery
 suite passes **90 tests** (48 from S1; 42 added in S2):
 
@@ -84,7 +85,7 @@ The [completion record](work_logs/F04_2026-09-26_S6.md) credits **11.238242 new 
 cumulative F04 D is **60.021079 minutes**. All **202 F04 tests** pass,
 including **38 new cases**; F03/F02 remain **256/124**. The
 [checklist](derivations/F04_completion_checklist.json) is a task-scope self-audit,
-not a readiness-gate decision. **Current next: F06, unstarted**, following the [Gate A PASS](checkpoints/A_1.md).
+not a readiness-gate decision. **Current next: F07, unstarted**, following the [Gate A PASS](checkpoints/A_1.md).
 
 
 ```text
