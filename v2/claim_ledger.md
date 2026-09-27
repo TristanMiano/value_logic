@@ -573,3 +573,32 @@ The 48 point/metadata/interface tests include invalid source, type, observation,
 version, sign and kernel cases. Passing them does not prove every semantic
 judgment. No general calculus soundness, optimal algorithm, learned mechanism,
 empirical coverage or unrestricted self-endorsement is asserted.
+
+
+## F05 S2 — completed semantic reconstruction
+
+Evidence: [core](foundations/03_provisional_core.md), [reconstruction](foundations/03b_observation_and_revision_audit.md),
+[finite audit](checks/f05_observation_revision.py), [report](checks/F05_observation_revision_results.json),
+and [session](work_logs/F05_2026-09-27_S2.md). Same-assistant reconstruction;
+no independent verifier, new-priority claim, general proof system or neural
+experiment is asserted. Earlier S1 statements retain their historical scope.
+
+| ID | Result and status | Assumptions and boundary |
+|---|---|---|
+| F05-C10 | Relative-cost images preserve all normalized fixed-lottery comparisons and native CPWA functions of the retained differences. Proved in fragment. | Fixed action library/reference, same units/exposure and shared interpretation. Sections 2, 9–10. Finite rational CPWA images of finite rational polyhedra remain finite polyhedral unions. No absolute adequacy or arbitrary-update sufficiency. |
+| F05-C11 | Convex compression preserves current affine comparisons but can fail for nonlinear queries and successive evidence cuts. | Sections 3, 5, 26, 28. Explicit nonempty examples; a single successful update is not closure under all updates. |
+| F05-C12 | Exact observation coarsening at a fixed bound requires a common policy in all corresponding feasible-policy sets. | Sections 4, 17, 19; finite actions, fixed visible information and a valid reference interpretation. Same cost image alone does not preserve available actions. |
+| F05-C13 | For a point projection and arbitrary source subsets, an update can be recovered exactly from the image for all sources iff it is saturated on projection fibres. | Section 5 singleton proof. Section 30 supplies a narrower lower-fibre summary for upper-threshold updates; it does not permit arbitrary filter replacement. |
+| F05-C14 | Zero weighted positive report shortfall is equivalent to validity of every positive-weight emitted self-report at the same source interpretation. | Sections 6, 21. Fixed rational wrapper weights and declared joint execution law. Mean report comparison is strictly weaker; positive allowance bounds magnitude and threshold exceedance, not all error probabilities. |
+| F05-C15 | All normalized lottery contrasts have sharp error span(e), and a fixed contrast has error <=TV*span(e). | Sections 13–15, 33. Same-action same-unit joint error vector; common baseline can be unbounded. Changing mass, joint matches or policy observations breaks the inference. |
+| F05-C16 | The three principal examples retain explicit nonempty models and the -1/2, -1/32 (updated -1/64), and -3/16 bounds. | Sections 18, 20–21, 33 independently reconstruct component evaluations. The new adaptive-charge example is separately declared and bounds cost, not pathwise outcomes. |
+| F05-C17 | In the stated report-induced model, Brier optimization prefers report 5/8 with failure 11/16 and positive shortfall 1/16 to valid report 2/3; its loss is lower by 1/288. | Section 24; p=1,s=1/2, behavior changes with report. Does not contradict propriety for a fixed outcome law. Fixed-report instances remain native affine evaluations. |
+| F05-C18 | A component-level rational remainder cap 3/4 for binary log loss relative to zero-margin ReLU loss yields a -1/8 cost-change bound for the stated shift/charge domain. | Section 27; m<=-1, new margin m+1, charge 1/8, fixed evaluation label. Analytic external enclosure; no native log connective, ultimate-utility guarantee or neural discovery. |
+| F05-C19 | Value algebra, operational policy identity and revisable warrant are distinct equivalences; common-offset erasure needs equal exposure. | Sections 8–9, 16, 25, 29, 31. Pointwise lattice/algebra facts are known patterns, not a new representation theorem about arbitrary agent utility. |
+
+**F05-T01: completed at semantic-specification scope.** The provisional choice,
+explicit alternative, syntax/types, denotation, consequence/countermodel meaning,
+nonempty three interpretations, rejection conditions and synchronized supporting
+records are present. S2 D30 is 30.063473 minutes; cumulative D60 is 60.320288.
+The 90 F05 tests are supplied-interpretation regressions, not general validity.
+Select F06, unstarted. Gate A remains passed only at readiness; B–D unattempted.

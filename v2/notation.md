@@ -130,3 +130,22 @@ See [the core](foundations/03_provisional_core.md) and
 There is no introduced general proof-theoretic relation |- yet; selecting rules
 and proving them sound remain F06 and F07 obligations. A pointwise audit result
 must not be labelled universal validity or empirical confidence.
+
+
+## F05 completion additions: observations and relative evaluation
+
+Use the [core](foundations/03_provisional_core.md) and [S2 audit](foundations/03b_observation_and_revision_audit.md)
+for scope; these are optional views of the existing semantic objects.
+
+| Symbol | Meaning and condition |
+|---|---|
+| `J_a(o,h,x)` | Declared cost of the same versioned action `a` in a visible observation `o`, hidden case `h` and source assignment `x`; all available actions need interpretations. |
+| `pi(o)` | A fixed normalized rational action lottery chosen from visible `o`, not hidden `h` or unobserved `x`. |
+| `d_a=J_a-J_a0` | Relative-cost image for a fixed action library/reference and same-unit comparisons. Preserves normalized-lottery contrasts, not absolute cost. |
+| `span(e)=max_a e_a-min_a e_a` | Sharp all-lottery contrast-error seminorm; a common offset is ignored. Units must agree. |
+| `TV(pi,pi')=sum_a abs(pi_a-pi'_a)/2` | Policy mass moved. A fixed contrast error is at most `TV*span(e)`. |
+| `Q=sum_i q_i res(r_i,H_i)` | Positive expected report shortfall. `Q=0` means every positive-weight emitted report is valid in that interpretation. Not `res(sum q_i r_i,sum q_i H_i)`. |
+| `a(d)=inf {y:(d,y) in S}` | Optional lower-fibre summary for specifically upper-threshold evidence; finite infima attained under the stated rational-polyhedral conditions. Not a summary for arbitrary future filters. |
+
+Log loss, Brier design optimization and infima are used in the external semantic
+adapter proofs. They are not quietly added to the finite native term grammar.

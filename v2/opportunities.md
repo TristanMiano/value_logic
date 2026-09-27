@@ -1,7 +1,7 @@
 # Research opportunity register
 
 Owner: the active research agent, subject to DIR01 and the research protocol.
-Updated: September 26, 2026 (UTC).
+Updated: September 27, 2026 (UTC).
 These are **ranked leads**, not proven gaps or claims of first discovery.
 The relevant primary-source descriptions and inspection limits are in
 [literature/directional_leads.md](literature/directional_leads.md).
@@ -262,3 +262,22 @@ which changes one comparison while leaving self-report warrant intact.
 No ranking change, new subproject or novelty claim is warranted by this semantic
 pass. Continue F05's fresh reconstruction, source/observation interface audit and
 minimality review with the remaining protected D time. F06 is not selected.
+
+
+## F05 completion checkpoint — no ranking change
+
+OPP-01 remains first. A precise native signed-loss semantics now supports
+same-source comparisons, visible policy tables, and update-aware relative
+summaries. The direct ML check is stronger than a resemblance of activations:
+a zero-margin ReLU loss with a proved component enclosure supports a log-loss
+comparison including a resource charge. This is an analytic adapter, not a new
+loss-calibration theorem or a discovered trained mechanism.
+
+OPP-03 gains two discriminators: expected-report validity can hide a bad emitted
+report, and optimizing a proper loss under report-induced outcomes can favor an
+invalid self-report. A later rule set should preserve the exact report contract,
+not equate improved score with reliable reflection. OPP-04 retains the two-cut
+source-update counterexample and a constructive restricted fibre-summary case.
+OPP-02 remains prospective: do not infer causal neural structure from these
+mathematical constructions. See [S2](foundations/03b_observation_and_revision_audit.md).
+F05 is complete, **F06 is next and unstarted**; no broader scope change is made.

@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: F05 provisional semantics first pass, September 26, 2026 (UTC).
-Status: **F01–F04 complete; Gate A passed at readiness scope; F05 partial; no permanent calculus selected**.
+Version: F05 semantic specification completed, September 27, 2026 (UTC).
+Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 unstarted; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -468,3 +468,38 @@ rational hypothetical models in its documented subset; it does not decide global
 validity or replace F06–F08. The richer continuation alternative and rejection
 conditions remain explicit. Existing phase-one and F01–F04 results retain their
 original scope. Gate A remains valid at readiness; F05 continuation is next.
+
+
+## F05 completed semantic contract — S2
+
+The current specification is [03_provisional_core.md](foundations/03_provisional_core.md),
+with the [S2 reconstruction](foundations/03b_observation_and_revision_audit.md).
+The following clarify its interpretation without replacing the selected language:
+
+- A finite visible-policy table supplies one normalized rational lottery per
+  available observation. The complete action-cost interpretation keeps hidden
+  cases separate. An average over observations is a different question from a
+  guarantee conditional on each observation; no hidden-case action oracle is added.
+- Current equal-exposure loss comparisons may use relative costs. This is an
+  optional exact query abstraction, not deletion of the evidence needed for
+  future updates, absolute adequacy or changed use multiplicity. Convex compression
+  is limited to its stated linear/static queries. A point map absorbs arbitrary
+  evidence updates exactly only with the proved fibre-saturation condition.
+- A randomized emitted self-report is evaluated on each positive-probability
+  branch. A zero weighted positive shortfall enforces this; clipping after averaging
+  can conceal an invalid emitted report. The interpreter retains the stated joint
+  execution law, including random-seed dependencies.
+- The reflective, shared-composition and nonlinear/enclosure examples remain
+  nonempty with their explicit source/proxy assumptions. The native absolute-error
+  loss and the component-level analytic log-loss enclosure illustrate distinct
+  ML connections. No loss is declared ultimate utility and no logarithm primitive
+  or training result is asserted.
+
+The core, units and notation are synchronized. Finite value objects remain CPWA;
+source interpretation and empirical warrant are not replaced by their scalar
+summary. F05 D totals 60.320288 minutes. Ninety F05 checks pass, but universal
+consequence still receives its mathematical meaning independently of testing.
+The continuation alternative, all source/observation falsifiers and Gate A's
+readiness scope remain unchanged. **Next: F06, unstarted**; F07 soundness and
+later characterization/empirical tasks are not accomplished by this specification.
+Older status paragraphs above are historical checkpoint records.

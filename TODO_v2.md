@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 26, 2026 (UTC).
-Status: F01–F04 complete at their task scopes; Gate A passed at readiness scope; F05 first pass partial; no permanent calculus selected.
+Last updated: September 27, 2026 (UTC; September 26 in America/Los_Angeles).
+Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 unstarted; the semantic core remains provisional.
 
 ## Resume here
 
@@ -11,7 +11,7 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F05 — choose a provisional core and give operational semantics.**
+**Next task: F06 — develop the first nontrivial inference rules.**
 
 **Active repair queue: empty.**
 
@@ -572,7 +572,7 @@ to publication with an unsound core simply because the planned queue ended.
 
 ### Cycle II — operational semantics, rules, and metatheory
 
-- [ ] **F05 — choose a provisional core and give operational semantics.**
+- [x] **F05 — choose a provisional core and give operational semantics.**
 
   Principal artifact: `v2/foundations/03_provisional_core.md`.
   Choose a candidate from Gate A, retain an explicit alternative, and define
@@ -604,6 +604,20 @@ to publication with an unsound core simply because the planned queue ended.
   requested D30 session floor. **29.743186 minutes remain** against F05 D60.
   F05 stays unchecked and selected. No F06 proof system, F07 soundness claim,
   later gate, full solver, training run or permanent choice is introduced.
+
+  **Completed — September 27, 2026 UTC.** The [S2 semantic reconstruction](v2/foundations/03b_observation_and_revision_audit.md)
+  simplifies current comparisons through relative-cost images while preserving
+  observation, action and evidence-update obligations. It reconstructs the three
+  principal interpretations and specifies finite visible policies, conditional
+  emitted reports, query-specific precision and ML-loss adapters. The [core](v2/foundations/03_provisional_core.md),
+  notation and specification agree. **42 new / 90 combined F05 tests**, **202 F04**,
+  **256 F03**, **124 F02**, and **17 Gate A** regressions pass. [S2](v2/work_logs/F05_2026-09-27_S2.md)
+  records **30.063473 measured D minutes**, meeting this turn's D30 floor;
+  cumulative F05 D is **60.320288 minutes**, satisfying D60. The continuation
+  alternative remains explicit. No permanent calculus, complete proof system,
+  general soundness, empirical source validity or neural mechanism is asserted.
+  **Select F06, unstarted.** Gate A remains valid at its readiness scope;
+  B–D remain unattempted and the active repair queue is empty.
 
 - [ ] **F06 — develop the first nontrivial inference rules.**
 

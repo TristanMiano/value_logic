@@ -1,9 +1,12 @@
 # F05 — a provisional source-aware calculus of loss comparisons
 
-Status: **provisional first pass; F05 partial**. This is the selected development
-candidate, not a completed proof calculus. Source baseline:
-`a95f4a06efe2b181f9001017e3c4908131fddf50`. Gate A remains passed only at its
-readiness scope. The alternative is source-preserving continuation semantics.
+Status: **F05 complete at semantic-specification scope; the core remains provisional**.
+Completed September 27, 2026 (UTC; September 26 in America/Los_Angeles).
+This is the selected development candidate, not a completed proof calculus.
+S2 reviewed source: `f96be7af8a6fcb766ec90aae24202c2884129a53`; the initial S1
+baseline was `a95f4a06efe2b181f9001017e3c4908131fddf50`. Gate A remains passed
+only at readiness scope. The alternative is source-preserving continuation
+semantics. Next is F06, unstarted. No later gate has passed.
 
 ## 1. The choice and its purpose
 
@@ -61,6 +64,13 @@ different population/evaluator identities are different coordinates. They may
 be compared when both are declared, but equality/correlation then requires a
 premise; it is not supplied by their names. A reference to an undeclared key
 is ill-typed, not an unknown number that can be filled with zero.
+
+The positive linear maps include both coordinate conversions and **valuation
+bridges**, such as one loss unit per failure probability. They are not all
+meaning-preserving changes of units. Claiming inverse coordinate conversions
+requires reciprocal factors and coherently transported source rows and budgets.
+A new cost weight changes the criterion; matching numeric factors or unit labels
+does not prove otherwise.
 
 Keep **evidence revision** distinct from **quantity identity**. A tighter
 interval for the same fixed-population risk can update the evidence while
@@ -250,6 +260,28 @@ plan. Likewise a proof can split on all possible hidden modes and use a
 different certificate in each branch while certifying the same fixed policy.
 Case-dependent proof witnesses do not license case-dependent deployment.
 
+### 6.1 Explicit visible-policy interpretation
+
+For every live visible observation o and hidden case h, the registry supplies a
+complete same-unit cost table `J_(o,h,a)(x)` for the available program versions a.
+A policy supplies one rational probability vector `p_o` independent of h and x.
+Its expected cost is the native term `sum_a p_o(a) J_(o,h,a)(x)`. A table of
+bounds b(o) is a finite family of the primary comparison, one at each o; a
+single observation-independent bound takes their maximum, not an undeclared
+average. Program availability must hold throughout each admitted source case.
+
+A case-specific cost table can be elaborated to common derived cost coordinates
+by retaining its finite CPWA expression graphs as source constraints. This is
+an exact definitional extension, not a primitive providing the final score.
+The [S2 reconstruction](03b_observation_and_revision_audit.md), section 19,
+proves the correspondence and its finite-region/witness requirements.
+
+More observations permit more policies only when their actual acquisition and
+use costs are included, and the old policy can still ignore the information.
+A later emitted report is not an earlier observation available to select its
+own generating program. The finite visible interface is the current bounded
+fragment, not a permanent claim that all neural inputs must be finite-valued.
+
 ## 7. What composition means
 
 ### 7.1 Pointwise expression composition
@@ -314,6 +346,26 @@ Hiding need not commute with later evidence combination. If Gamma says
 their joint context projects to x=0. A summary sufficient for current queries
 cannot automatically absorb every later observation. Either keep the needed
 relation or state the allowed-update contract of the summary.
+
+### 7.4 Query-specific simplification is optional, not universal erasure
+
+For a fixed finite action library, retain the joint vector of costs relative to
+one reference action. It exactly preserves all comparisons of normalized fixed
+lotteries and native expressions of those relative coordinates. It need not
+retain absolute costs. A later composition that changes the number of baseline-
+bearing uses can need an absolute anchor again.
+
+The relative image is a finite union of rational polyhedra in this fragment.
+Convexifying it preserves linear fixed-lottery bounds, not every nonlinear
+comparison or later update. An update on omitted information needs its own
+commuting/transport argument. Even a successful first update does not prove
+exactness for successive updates. Sections 2–5, 9–10, 26 and 30 of the
+[S2 reconstruction](03b_observation_and_revision_audit.md) give exact criteria,
+nonempty counterexamples, and restricted constructive alternatives.
+
+These simplifications are permissible representations under declared contracts.
+The default semantics still retains the joint source cases; it does not replace
+them by independent marginal intervals or an unrestricted convex closure.
 
 ## 8. Evidence revision and source transport
 
@@ -402,6 +454,27 @@ remain uncertain whether its empirical bridge or checker implementation meets
 that metatheory's hypotheses. We do not add `I predict success -> success` or
 unrestricted proof reflection. The worked self-report case below is genuine
 behavioral feedback, but does not claim those stronger principles.
+
+### 9.1 Which self-report is being warranted?
+
+If a wrapper chooses a fixed-report program i with rational probability q_i,
+emits r_i and runs it, conditional report validity requires `H_i<=r_i` for each
+positive-weight i throughout the source. It is expressed natively by
+
+    sum_i q_i res(r_i,H_i) <= 0.
+
+Averaging H_i and r_i first can hide invalid emitted reports through cancellation.
+A positive residual budget instead states an average *magnitude* of report
+shortfall; it is not a probability of a correct report without further conditions.
+The [S2 audit](03b_observation_and_revision_audit.md), section 6, provides a
+counterexample and the precise meaning of a positive allowance.
+
+A probability interpretation additionally requires normalized nonnegative weights
+and valid probability ranges on the entire source, not merely at its feasibility
+witness. An ordinary prediction loss can prefer an invalid self-report when that
+report changes the outcome distribution; section 24 gives two native fixed-report
+instances of this distinction. Neither a low loss nor self-emission replaces the
+report's scoped warrant.
 
 ## 10. Complete interpretation I — shared-source composition
 
@@ -751,8 +824,8 @@ The provisional choice should be revised if:
   distinctive, testable value-based use.
 
 These are falsifiers and design obligations, not reasons to abandon the research.
-The continuation alternative remains live. F05 is still partial until the
-remaining protected derivation time and fresh semantic reconstruction are done.
+The continuation alternative remains live. F05 completion records a reconstructed
+semantic specification and its examples, not success of the subsequent proof program.
 No downstream soundness, completeness, empirical interpretability or novelty
 claim follows from selecting this first version.
 
@@ -767,7 +840,7 @@ improvement on a reached domain. F06 must decide how such premises are expressed
 F05 does not silently install unrestricted substitution through every connective.
 
 
-## 17. First-pass evidence and continuation
+## 17. Evidence, reconstruction and completion
 
 The companion [semantic reconstruction](03a_semantic_reconstruction.md) retains
 worked proofs, alternative derivations, discovered example corrections and
@@ -779,7 +852,24 @@ expression pair over finite source cases, sufficient for the three principal
 examples. The more general case-indexed interpretation table is specified but
 not implemented as a plan-registry executor in this audit.
 
-F05 remains partial. The next pass should reconstruct the semantics from its
-minimal assumptions, test source/observation transport and reject redundant
-machinery before treating this specification as complete. No F06–F08 task or
-later readiness gate has been performed here.
+The fresh [S2 reconstruction](03b_observation_and_revision_audit.md) supplies
+explicit finite observation/policy tables, query-relative baseline erasure,
+its update and unequal-exposure limits, conditional emitted-report meaning,
+three independently recomputed interpretations, and direct Brier/log-loss
+connections. The new [finite table audit](../checks/f05_observation_revision.py)
+checks supplied rational action interpretations and policy rows. It is not a
+complete program-registry executor, a universal validity decider, or F06 rules.
+The combined F05 discovery suite passes 90 tests (48 S1 and 42 S2).
+
+[The completion record](../work_logs/F05_2026-09-27_S2.md) maps each F05 criterion
+to evidence. S2 records 30.063473 measured D minutes; cumulative F05 D is
+60.320288 minutes. Syntax, units, source/observation meaning, semantic consequence,
+nonempty interpretations and rejection conditions are specified. The selected
+objects remain finite signed-real CPWA functions over the declared joint sources;
+a value's arithmetic, an available action, and empirical warrant are distinct.
+
+**Next: F06 — nontrivial inference rules, unstarted.** Develop a small rule set
+whose proof premises retain joint source identity, observation availability,
+proxy alignment and approximation direction. Do not treat a supplied final score,
+the finite test suite, or a successful self-report as the missing derivation.
+No F06–F08 task or later readiness gate has been performed by this completion.
