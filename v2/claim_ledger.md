@@ -670,3 +670,24 @@ accepted identities; capture-free let expansion is required. Identical printed
 local names under different bindings cannot be merged. The finite normalizer
 unfolds the residual definition but is not a general CPWA identity solver.
 The typed shadowing counterexample and tests are in section 34.1 and the audit.
+
+
+## F06 S2 — source transport and residual discharge (partial)
+
+Evidence: [S2 reconstruction](derivations/02b_source_transport_and_withdrawal.md),
+[transport emitter](checks/f06_source_transport.py), [discharge emitter](checks/f06_residual_discharge.py),
+and [session](work_logs/F06_2026-09-27_S2.md). These are same-assistant derived
+constructions and finite checks, not independent verification or F07 completion.
+
+| ID | Result and checked scope | Boundary |
+|---|---|---|
+| F06-C08 | Closed typed substitution, localization, and grafting used source leaves emit a new-context proof with recalculated bounds. Sections 1–5. | Full old-context inclusion is sufficient but unnecessary for one proof. Every new case and the same arithmetic query must be retained; operational meanings need their own bridge. |
+| F06-C09 | Withdrawal salvage is optimal in the explicitly retained monotone-constructor/alternative/constant grammar. Sections 6–7. | Not semantic completeness or general proof search. The code accepts supplied replacements, not arbitrary discovered ones. |
+| F06-C10 | Finite snapshot support/bound labels have dominance by support inclusion and numerical order, with a unique irredundant pair family for all alive subsets. Sections 7,18. | Flat frontiers can be exponential; snapshot pruning need not preserve later numerical updates. Restricted alive families change necessity. |
+| F06-C11 | Six S1 tags elaborate into the stated ten-tag basis with exact current queries/budgets. Section 8. | Not minimality of ten, independent kernel verification or future-alternative preservation after branch selection. |
+| F06-C12 | Removed numerical row a<=eta admits the residual relaxation a<=eta+res(eta,a); local proof allowances reconstruct compositionally. Sections 13–16,20–21. | Emitter supports every S1 local constructor after case specialization, not general global policy/case synthesis. A scalar or expected conclusion needs an additional quantitative premise. |
+| F06-C13 | The weighted disjoint-hinge identity has a source-free emitted proof; it supports the stated prospective affine split derivation. Sections 15,17,19. | The general splitter and empty-branch search are unimplemented; policies must remain common across hidden cases. |
+| F06-C14 | Fixed finite policy transport is equivalent to constancy of the desired action on new observation fibers; approximate finite repairs admit explicit common-action/probability witnesses. Sections 22,25.4. | Arithmetic substitution is not an observation channel. The finite table checker is not a full program/observation verifier. |
+| F06-C15 | A softened proof's lower budget bound enables the stated exact Boolean-availability ReLU gate; expected residual bounds support the finite reflective -1/64 example. Sections 16,20,23–24. | Confidence cannot replace the Boolean flag; all expectations require the declared law and integrability. No trained circuit or new calibration theorem. |
+
+F06 remains selected and unchecked; no later gate or task has advanced.

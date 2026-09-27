@@ -1,6 +1,6 @@
 # Phase Two Project Specification
 
-Version: F06 first rule-development checkpoint, September 27, 2026 (UTC).
+Version: F06 source-transport and residual-discharge checkpoint, September 27, 2026 (UTC).
 Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 partial; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
@@ -522,3 +522,29 @@ its predicted output is distinct from the validity of its premises. The fixed
 report-dependent controller remains uncertain and requires paired proxy evidence.
 The continuation alternative, DIR01 objectives and Gate A conditions are unchanged.
 No F07 soundness/complete-search/learning result is asserted by this checkpoint.
+
+
+## F06 S2 — revisable arguments and numerical assumption loss
+
+The [S2 reconstruction](derivations/02b_source_transport_and_withdrawal.md)
+extends supplied-proof checking rather than changing F05's semantic meaning.
+A useful consequence can survive even when the new source is not contained in
+the entire old source: only the leaves used by its argument need current
+replacements. Reconstructed proofs keep new contexts, actual source identities
+and every live case. Numeric observation labels do not themselves certify a
+transported policy's observation channel.
+
+Removing a numerical premise a<=eta can instead produce an explicit allowance
+res(eta,a). A single-case compiler carries such allowances through every local
+S1 constructor using ordinary checked proof steps. This supplies a magnitude-
+sensitive loss interface: an extra bound on the residual, or an independently
+specified expectation model, can warrant a useful conclusion. It does not turn
+an unknown premise into a fact, replace correlated signed evidence with an
+optimal abstraction, or automatically preserve structural probability domains.
+
+Same-query alternatives are retained for future withdrawal; a numeric snapshot
+frontier does not promise exact response to every later evidence revision.
+Six old instruction tags have explicit expansions into a ten-tag basis.
+No automatic sign splitter, general optimizer, learned neural interpretation
+or F07 result is claimed. F06 is partial, with 60.046135 recorded D minutes
+and 29.953865 remaining. Gate A keeps its existing readiness scope.

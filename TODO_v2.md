@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: September 27, 2026 (UTC; September 26 in America/Los_Angeles).
-Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 first rule pass partial; the semantic core remains provisional.
+Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 source-transport continuation partial; the semantic core remains provisional.
 
 ## Resume here
 
@@ -643,6 +643,20 @@ to publication with an unsound core simply because the planned queue ended.
   regressions pass. [S1](v2/work_logs/F06_2026-09-27_S1.md) records **30.039437 measured
   D minutes**, meeting this turn's D30. F06 remains unchecked and selected,
   with **59.960563 D minutes** remaining against D90. No F07 or later gate.
+
+  **Partial S2 continuation — September 27, 2026.** The
+  [source/withdrawal reconstruction](v2/derivations/02b_source_transport_and_withdrawal.md)
+  develops proof-local substitution, explicit alternative-proof salvage,
+  snapshot support frontiers, ten-tag elaboration and quantitative row-assumption
+  discharge. New emitters return ordinary proofs checked by the unchanged S1
+  kernel. The reflective case improves the current bound to -1/16 despite
+  failure of whole-old-context inclusion; soft proxy evidence remains an explicit
+  residual loss, not an assumed scalar warrant. A finite observation interface
+  separates numerical substitution from deployable policy transport.
+  **64 new / 122 F06 tests** and **90/202/256/124/17** earlier regressions pass.
+  [S2](v2/work_logs/F06_2026-09-27_S2.md) records **30.006698 measured D minutes**, meeting
+  this session's D30. Cumulative F06 D is **60.046135 minutes**; **29.953865**
+  remain against D90. F06 stays unchecked and selected. No F07 or later gate.
 
 - [ ] **F07 — prove soundness for an explicit fragment.**
 

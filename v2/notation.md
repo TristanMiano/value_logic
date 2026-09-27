@@ -164,3 +164,23 @@ Source-dependent rewrites, changed criteria, missing rows and policy changes
 need separate obligations. Nonlinear terms are compared by the stated rules;
 normalization alone handles only its explicit identities. See
 [the rule register](derivations/02_inference_rules.md).
+
+
+## F06 S2 notation — source transport and assumption discharge
+
+* `sigma`: a closed, typed substitution from old source keys to new terms; its
+  numeric pullback is distinct from a checked observation/policy translator.
+* `P|h`: a localized finite proof for one live case; its budget may be stronger
+  than an old all-cases maximum.
+* `(S,b)`: at one fixed evidence snapshot, a sufficient row-support set and its
+  scalar proof bound. Row identities are relative to the context fingerprint.
+* `v_i=res(eta_i,a_i)`: nonnegative magnitude of a numerical row's violation.
+* `e_P(x)`: the symbolic allowance emitted by a local discharged proof, using
+  the ordinary judgment `t <=[0] s+e_P`. This is not a scalar budget oracle.
+* `P_P=e_P-b_local`: a nonnegative deterioration allowance when rows are only
+  softened from the localized original bounds.
+* `tau`: a separately warranted observation translator; numeric substitution
+  alone does not establish `O(sigma(y))=tau(O'(y))`.
+
+Availability, actual premise validity, numerical violation and probability of
+coverage are distinct. No native positive/negative-infinity arithmetic is added.

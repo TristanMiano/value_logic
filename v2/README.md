@@ -3,7 +3,7 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is complete at semantic-specification scope; F06 has a partial first rule pass.
+not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is complete at semantic-specification scope; F06 has partial rule and source-transport passes.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -14,14 +14,20 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 **F06 is partial.** The [rule register](derivations/02_inference_rules.md) and
 [worked reconstruction](derivations/02a_rule_reconstruction.md) develop signed,
 source-aware loss inferences rather than accepting final comparison scores.
-The finite proof audit passes **58 tests**; [S1](work_logs/F06_2026-09-27_S1.md) records
-**30.039437 D minutes**, leaving **59.960563** against F06's D90 floor.
+The combined F06 proof audits pass **122 tests** (58 original, 64 added in S2).
+[S1](work_logs/F06_2026-09-27_S1.md) and [S2](work_logs/F06_2026-09-27_S2.md) record
+**60.046135 cumulative D minutes**, leaving **29.953865** against D90.
+The new [source/withdrawal note](derivations/02b_source_transport_and_withdrawal.md)
+and emitters cover proof-local transport, alternative supports, a smaller
+checking basis and residual discharge of numerical assumptions.
 Its restricted checker and replay mechanism do not constitute the full F11
 reasoner or the F07 general soundness result.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f06*.py'
 python -m v2.checks.f06_inference_rules --json v2/checks/F06_inference_results.json
+python -m v2.checks.f06_source_transport --json v2/checks/F06_source_transport_results.json
+python -m v2.checks.f06_residual_discharge --json v2/checks/F06_residual_discharge_results.json
 ```
 
 **F05 is complete at semantic-specification scope.** The [provisional core](foundations/03_provisional_core.md)

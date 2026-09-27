@@ -1,6 +1,6 @@
 # F06 — source-aware inference for signed loss comparisons
 
-Status: **first rule-development pass; F06 partial**. September 27, 2026 (UTC).
+Status: **source-transport and residual-discharge continuation; F06 partial**. September 27, 2026 (UTC).
 Interpretation is fixed independently in [the F05 core](../foundations/03_provisional_core.md).
 This note does not replace that semantics, finish F07's general soundness audit,
 or claim a complete reasoner. The source-preserving continuation alternative
@@ -315,3 +315,53 @@ proof-premise withdrawal monitoring, statistical calibration, or neural training
 Enclosure and proxy rules are exercised through primitive multistep derivations.
 The more general mathematical interfaces in the reconstruction are not all code
 features. F06 remains partial; F07's general audit has not been performed.
+
+
+## 9. S2 derived proof-transport and residual-discharge interfaces
+
+The [S2 reconstruction](02b_source_transport_and_withdrawal.md) and its two
+[transport](../checks/f06_source_transport.py) and
+[discharge](../checks/f06_residual_discharge.py) fixtures extend the first pass
+without changing its checking kernel. The first-pass implementation exclusions
+in section 8 are historical; this section states the new bounded coverage.
+
+**R11a — proof-local transport.** Whole-context inclusion in R11 is sufficient
+but stronger than needed for reusing a particular proof. After case localization
+and a typed closed source substitution, replace every used row introduction by
+a currently checked proof of its substituted expression. Rebuild its constructors
+and recalculate their budgets. Cover every new live case with the same query.
+A weaker replacement may yield a weaker conclusion; do not copy the old number.
+Equal fingerprints are not required: the result has the actual NEW fingerprint.
+Numerical substitution does not itself certify an observation-legal policy map.
+
+**R13 — quantitative discharge of numerical row assumptions.** The universal
+lattice consequence a<=eta+res(eta,a) replaces a removed row a<=eta. Reconstruct
+a local trace with symbolic allowances, represented as ordinary zero-budget
+comparisons t<=[0]s+e. Addition, nonnegative scaling, typed conversion and
+min/max construct the allowance; the S2 emitter checks every resulting proof
+using only S1 instructions. On retaining the original rows the allowance equals
+the old localized budget; off that source it records the row-violation cost.
+An additional bound or probability/integrability premise is necessary for a
+scalar or expected decision. Structural probability/domain meanings are not
+automatically extended by removing their numerical constraints.
+
+**R14 — availability-sensitive reconstruction.** A lost premise can be replaced
+by a surviving same-query proof or a valid unconditional constant simplification.
+Otherwise the retained argument is unavailable, not numerically false. For a
+fixed snapshot, store support/bound alternatives and discard (S,b) in favor of
+(T,c) only when T is a subset of S and c<=b. The explicit frontier can be
+exponentially larger than its compact proof DAG. Pruning by current numbers is
+not guaranteed to preserve later numerical revisions.
+
+**Derived instruction basis.** The sixteen S1 tags admit expansion into
+constant, row, rewrite, add, scale, convert, lattice, max_common, min_common
+and all_cases. This is a convenient ten-tag basis, not a minimality theorem.
+Selecting a proof-minimum branch is snapshot-specific; retain the original
+family for future evidence withdrawal or numerical reselection.
+
+The source-free weighted identity
+min(alpha res(0,u), beta res(0,-u))=0 for alpha,beta>=0 has an emitted derivation.
+It supplies a prospective sign-splitting ingredient without adding a trusted
+case oracle. Automatic splitting, empty-branch proof search, and general
+policy synthesis remain unimplemented. F07's final soundness audit remains a
+separate task; no source-calibration or learned-neural claim follows here.

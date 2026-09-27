@@ -298,3 +298,28 @@ minimal primitive-versus-derived rule boundary against F05, not add another
 large catalogue of toy cases. Reuse the existing signed and hidden-case witnesses
 as falsifiers. No ranking change or novel-priority claim is warranted merely
 by the number of passing fixture tests.
+
+
+## F06 S2 — a concrete residual-loss bridge; ranking retained
+
+OPP-01 and OPP-04 now meet in a proof-producing construction: a removed row
+can be retained as a residual-violation loss, and the existing argument turns
+that loss into a task-specific deterioration allowance. The emitted traces
+use the unchanged checking kernel. Signed joint repair can still be stronger;
+this is not a claim that independent nonnegative errors retain all information.
+OPP-03 supplies the fixed reflective comparison and uncertain proxy bridge.
+OPP-02 gains a precise constructed ReLU interpretation and availability-domain
+controls, not evidence of a discovered or trained mechanism.
+
+The immediate bounded next question is whether affine sign splitting can be
+elaborated through the now-checked discharge and disjoint-hinge machinery while
+handling empty branches and one fixed observation-legal policy. Derive and test
+that interface before adding a trusted split instruction. Do not begin F07 or
+F11. A prospective D32/L2/E8/O10 central and D45/L5/E15/O18 high block is a
+planning suggestion, not measured credit or a new task minimum.
+
+Assumption-based truth maintenance is a substantive antecedent for alternative
+supports and context-sensitive reasoning, not a newly invented idea here. The
+new source note also records the Laskey–Lehner 1989 probability/ATMS abstract as
+a further comparison lead; no theorem is imported from its unread full text.
+No ranking change or priority claim is warranted by fixture counts alone.
