@@ -712,3 +712,28 @@ by the unchanged S1 code; this is same-assistant review, not F07 or an external 
 
 F06 is completed at rule-development scope with D90 satisfied. **F07 is selected
 but unstarted.** Gate A retains its earlier readiness-only PASS; B–D are not attempted.
+
+## F07 S1 — first soundness reconstruction
+
+Status of the task: **partial**. The entries below have written conditional
+mathematical proofs and same-assistant reconstruction; no external reviewer,
+proof assistant, full Python verification or empirical calibration is claimed.
+Principal sources: [native proof](derivations/03_soundness.md),
+[scope and use](derivations/03a_soundness_scope_and_use.md),
+[graded reconstruction](derivations/03b_graded_soundness_reconstruction.md), and
+[alternative algebraic audit](derivations/03c_function_space_reconstruction.md).
+
+| ID | Scoped statement / evidence | Boundary |
+|---|---|---|
+| F07-C01 | S1–S6: exact lexical normalization and every native rule preserve finite-real signed comparisons; finite acyclic traces inherit soundness. | Immutable admitted data, exact rational operations, current nonempty source domain. Written algorithm correspondence, not formal verification of the language runtime. |
+| F07-C02 | S10: a matching request receiver transfers the checked root's bound to its requested inclusive budget. | Domain, literal pair, unit and sufficient bound must match; this does not validate empirical meaning. |
+| F07-C03 | G1–G4: local proof budgets are monotone CPWA expressions; numeric premise violations give a nonnegative overrun allowance, zero on original used premises. | Fixed syntax/meanings; proof-relative, not optimal or a confidence value. Structural defects are not automatically numeric penalties. |
+| F07-C04 | G5–G8: closed typed substitution and checked row replacements preserve the reconstructed numerical comparison; proof-derived sensitivity supports conditional expectation/tail corollaries. | Observation/program transport and the probability law/moments remain separate assumptions. No blanket independence or source-inclusion requirement is invented. |
+| F07-C05 | U1 and its correction: accepted false comparisons occur only outside the selected REQUEST DOMAIN validity event. | A local proof needs local-domain validity; joint/marginal and conditional-on-issuance probabilities differ. Finite counterexamples retained. |
+| F07-C06 | Independent shared-source, reflective and logistic-loss arguments agree with native checked traces; the latter proves at least 1/8 improvement under its component enclosures. | Examples/model premises, not evidence that every proxy represents utility or a learned network implements the reasoning. |
+| F07-C07 | The ordered-function-space argument reconstructs the native proof; replacing all premises with expectations while retaining max rules is unsound. | The constructive expectation corollaries require the explicitly stated pointwise/integrability conditions. |
+
+The new finite suite has **51 passing tests**, not a proof of these universal
+statements by sampling. Initial fixture-generator failure and a draft U1 scope
+correction are recorded rather than erased. Historical F06 completion remains
+rule-development completion. F07 is selected; F08 and Gate B remain unstarted.

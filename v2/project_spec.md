@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: F06 rule-development task completed, September 27, 2026 (UTC).
-Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 unstarted; the semantic core remains provisional**.
+Version: F07 first soundness reconstruction, September 27, 2026 (UTC).
+Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 partial; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -571,3 +571,19 @@ The S1 checker and F05 semantics are unchanged. F06 now meets its rule, example,
 countermodel and D90 obligations; F07 remains the required general soundness
 review. The continuation alternative, empirical proxy assumptions and learned-
 neural interpretation remain provisional or untested as previously recorded.
+
+## F07 reconstruction boundary
+
+[The native soundness theorem](derivations/03_soundness.md) covers the sixteen
+accepted F06 instruction tags on finite typed expressions and nonempty current
+source cases, with finite real values at each assignment (unbounded domains are
+allowed). The proof does not define validity as checker acceptance. It includes
+lexically captured normalization, signed budgets and exhaustive case aggregation.
+
+The [graded theorem](derivations/03b_graded_soundness_reconstruction.md) permits
+numerical assumption violations to enter a proved cost allowance. Empirical
+source validity, intended-loss meaning and observation-legal deployment remain
+explicit premises. A new request receiver binds a valid returned root to its
+requested pair, domain, unit and sufficient strength. No new inference tag or
+permanent semantic choice is introduced. F07 remains partial; source-producer
+and operational-contract reconstruction continue before D90/task completion.

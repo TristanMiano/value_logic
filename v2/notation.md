@@ -198,3 +198,21 @@ For weighted coverage, `A_i` is a signed branch baseline, `k_i>0` a guard gain,
 not automatically probabilities. See [S3](derivations/02c_derived_cases_and_completion.md).
 `F06-term-dag-v1` is a lossless report transport format with backward term
 references, not a new inference language or trusted rule system.
+
+## F07 soundness notation (first pass)
+
+- `K`: all sixteen native F06 tags, not just its reduced macro basis.
+- `D_h`, `D_*`: one source case and the union; a local assertion needs its own
+  domain, not merely membership in the union.
+- `E_x(t)`: independently defined finite-real denotation; a mathematical
+  assignment is not privileged read access for an agent.
+- `B_P(zeta)`: frozen local proof's monotone bound expression in its row bounds.
+- `v_i(x)=max(a_i(x)-eta_i,0)`: violation loss of a withdrawn numerical row.
+- `R_P(x)=B_P(eta+v(x))-B_P(eta)`: nonnegative proof-relative overrun allowance,
+  with zeros inserted for retained rows. It need not be minimal.
+- `L_P`: conservative row-error sensitivity vector derived from the proof.
+- `Request`: a current context/case, literal term pair, unit and inclusive budget.
+  Receiver acceptance requires a checked matching root of sufficient strength.
+
+See [the proofs](derivations/03_soundness.md). These symbols do not add confidence,
+program truth or an arbitrary expectation operator to the native language.

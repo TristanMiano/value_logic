@@ -341,3 +341,15 @@ Next, F07 must reconstruct the explicit local rules, source/typing conditions,
 normalization and admitted macro boundary before a general soundness claim.
 Do not replace that proof task with more toy cases or a new architecture. The
 standing task minimum and next-session forecast remain prospective obligations.
+
+### F07 S1 evidence update — ranking unchanged
+
+OPP-01/04 now have a general native soundness reconstruction and a proof-relative
+premise-violation allowance theorem, not merely individual demonstrations.
+The [graded note](derivations/03b_graded_soundness_reconstruction.md) makes a
+specific overrun loss and its propagation explicit. The next bounded work is
+producer/request/observation contract reconstruction; it is not a new novelty
+claim or an instruction to expand the calculus prematurely. OPP-03 remains a
+conditional report-dependent interpretation. OPP-02 is still untested in an
+ordinarily trained network; arithmetic soundness does not establish causal
+participation. No direction or task order is changed.

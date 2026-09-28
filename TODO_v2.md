@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 27, 2026 (UTC; September 26 in America/Los_Angeles).
-Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 unstarted; the semantic core remains provisional.
+Last updated: September 27, 2026 (UTC and America/Los_Angeles).
+Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 first soundness pass partial; the semantic core remains provisional.
 
 ## Resume here
 
@@ -685,6 +685,21 @@ to publication with an unsound core simply because the planned queue ended.
   **Done when:** there is a complete checkable proof, its assumptions have a
   model, known counterexamples are excluded for stated reasons, and D90 is
   recorded. A partial proof remains partial and triggers the repair procedure.
+
+  **Partial S1 soundness reconstruction — September 27, 2026.**
+  [The native proof](v2/derivations/03_soundness.md) audits all sixteen checker
+  tags, lexical normalization and finite-DAG soundness against F05's independent
+  finite-real semantics. [Graded reconstruction](v2/derivations/03b_graded_soundness_reconstruction.md)
+  relates numerical premise violations to a proof-derived loss allowance, with
+  explicit source and expectation boundaries. A request-bound receiver and an
+  independent point evaluator provide **51 new passing tests**; **860 earlier
+  targeted regressions** also pass. A draft local-versus-global coverage error
+  was corrected with a retained counterexample; the original checker is unchanged.
+  [S1](v2/work_logs/F07_2026-09-27_S1.md) records **30.154877 measured D minutes**, meeting
+  this session's D30. F07 remains unchecked with **59.845123** minutes of D90
+  remaining. These are conditional mathematical proofs and same-assistant
+  reconstruction, not formal verification of Python or empirical source validity.
+  **Continue F07; no F08 or Gate B.**
 
 - [ ] **F08 — pursue a harder characterization result.**
 

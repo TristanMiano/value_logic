@@ -3,7 +3,7 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is complete at semantic-specification scope; F06 is complete at rule-development scope; F07 is next and unstarted.
+not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is complete at semantic-specification scope; F06 is complete at rule-development scope; F07 is selected and partial.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -19,7 +19,7 @@ proof checked by the unchanged S1 checker. The **171 F06 tests** comprise 58 S1,
 64 S2 and 49 S3 checks; finite point tests are separate from mathematical arguments.
 [S3](work_logs/F06_2026-09-27_S3.md) records **30.155232 D minutes** and
 **90.201367 cumulative F06 D minutes**, satisfying D90.
-F07's general soundness review and the F11 reasoner have not begun.
+F07's soundness reconstruction is partial; the F11 reasoner has not begun.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f06*.py'
@@ -85,7 +85,7 @@ The [completion record](work_logs/F04_2026-09-26_S6.md) credits **11.238242 new 
 cumulative F04 D is **60.021079 minutes**. All **202 F04 tests** pass,
 including **38 new cases**; F03/F02 remain **256/124**. The
 [checklist](derivations/F04_completion_checklist.json) is a task-scope self-audit,
-not a readiness-gate decision. **Current next: F07, unstarted**, following the [Gate A PASS](checkpoints/A_1.md).
+not a readiness-gate decision. **Current next: F07, partial**, following the [Gate A PASS](checkpoints/A_1.md).
 
 
 ```text
@@ -403,3 +403,27 @@ The fourteen checks validate only elementary examples and record consistency.
 The combined F03 discovery command now passes 236 tests; this is not full
 repository verification or proof of any proposed main theorem. The package
 records local application and targeted test validation separately from CI.
+
+## F07 first-pass soundness audit
+
+F07 is **partial**, not a completed D90 task or a Gate B pass. The
+[native proof](derivations/03_soundness.md) reconstructs every recognized rule
+and exact lexical normalization against finite-real source semantics. The
+[scope/use note](derivations/03a_soundness_scope_and_use.md),
+[graded proof](derivations/03b_graded_soundness_reconstruction.md), and
+[function-space reconstruction](derivations/03c_function_space_reconstruction.md)
+separate algebraic validity, source assumptions, expectation, and deployment.
+The original F06 checker and completed research are unchanged.
+
+The new finite audit has **51 tests** and an independently written point
+interpreter plus a request-bound receiver. Neither is a complete semantic
+validity decider or the later F11 reasoner. Run:
+
+```text
+python -X faulthandler -m unittest discover -s verification -p 'test_v2_f07*.py'
+python -m v2.checks.f07_soundness --json /path/outside/repo/F07_soundness_results.json
+```
+
+The second command reproduces the finite report; it does not itself run all
+unit tests. Source/process limits and the actual clock evidence are in
+[the S1 record](work_logs/F07_2026-09-27_S1.md).
