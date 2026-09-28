@@ -216,3 +216,17 @@ references, not a new inference language or trusted rule system.
 
 See [the proofs](derivations/03_soundness.md). These symbols do not add confidence,
 program truth or an arbitrary expectation operator to the native language.
+
+## F07 S2 producer-audit notation (not new core carriers)
+
+`B_P(eta)`: current numeric budget program of a fixed local proof.
+`E_P`: the same program with withdrawn row bounds replaced by their explicit
+violation-corrected bounds. `R_P=E_P-b_P`: its nonnegative proof-relative penalty.
+`F_h(A)`: best bound in the declared localized salvage grammar in case h with
+alive row set A; not a semantic validity oracle. `max_h F_h(A)` joins the same
+query over all live cases when every local result exists.
+`(S_i,b_i)`: finite support/bound label at one numerical snapshot.
+`B_(r)`: r-th smallest bound among a registered family for the same claim.
+A bound on faulty SOURCE identities does not automatically bound faulty proofs.
+All of these are audit/metatheory notation. An unavailable result is not an
+infinite native term, and an error probability is not a loss-valued premise.

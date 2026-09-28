@@ -11,6 +11,24 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 
 ## Current status
 
+**F07's second soundness checkpoint is partial.** The
+[producer-contract audit](derivations/03d_producer_contract_audit.md) checks
+returned traces and auxiliary claims against independently fixed inputs.
+It includes case-local proof salvage, explicit softening metadata, fault-count
+bounds and the distinction between arithmetic and deployment interpretation.
+The **108 F07 tests** comprise 51 S1 and 57 S2 tests. [S2](work_logs/F07_2026-09-28_S2.md)
+records 30.015519 D minutes, for **60.170396 cumulative F07 D**.
+The remaining D90 obligation is 29.829604 minutes. F08 is unstarted.
+
+```text
+python -X faulthandler -m unittest discover -s verification -p 'test_v2_f07*.py'
+python -m v2.checks.f07_producer_contracts --json /path/outside/repo/F07_producers.json
+```
+
+The report retains selected emitted proofs; the receiver is an audit fixture,
+not a general proof searcher or an external-source verifier. Existing native
+checker and producer implementations are unchanged.
+
 **F06 is complete at rule-development scope.** The [rule register](derivations/02_inference_rules.md)
 and [S3 reconstruction](derivations/02c_derived_cases_and_completion.md) include
 signed loss composition, proof-local transport, residual assumption losses,

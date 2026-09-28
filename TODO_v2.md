@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 27, 2026 (UTC and America/Los_Angeles).
-Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 first soundness pass partial; the semantic core remains provisional.
+Last updated: September 28, 2026 UTC (September 27 in America/Los_Angeles).
+Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 producer-contract continuation partial; the semantic core remains provisional.
 
 ## Resume here
 
@@ -700,6 +700,19 @@ to publication with an unsound core simply because the planned queue ended.
   remaining. These are conditional mathematical proofs and same-assistant
   reconstruction, not formal verification of Python or empirical source validity.
   **Continue F07; no F08 or Gate B.**
+
+  **Partial S2 producer-contract audit — September 28, 2026 UTC.**
+  [The reconstruction](v2/derivations/03d_producer_contract_audit.md) audits localization, source grafting,
+  residual discharge, primitive expansion and case producers against their
+  independently requested postconditions. It separates static proof supports
+  from case-local salvage, source faults from duplicated proof faults, and
+  current paired improvement from historical performance change. The original
+  checker and producers remain unchanged. **57 new / 108 combined F07 tests**
+  pass; finite tests supplement the written arguments, not replace them.
+  [S2](v2/work_logs/F07_2026-09-28_S2.md) records **30.015519 measured D minutes**,
+  meeting the requested D30. Cumulative F07 D is **60.170396 minutes**;
+  **29.829604 minutes** remain against D90. F07 stays unchecked and selected.
+  No F08, Gate B, full Python verification or empirical source guarantee.
 
 - [ ] **F08 — pursue a harder characterization result.**
 

@@ -1,6 +1,6 @@
 # Phase Two Project Specification
 
-Version: F07 first soundness reconstruction, September 27, 2026 (UTC).
+Version: F07 producer-contract audit, September 28, 2026 (UTC).
 Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 partial; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
@@ -587,3 +587,28 @@ explicit premises. A new request receiver binds a valid returned root to its
 requested pair, domain, unit and sufficient strength. No new inference tag or
 permanent semantic choice is introduced. F07 remains partial; source-producer
 and operational-contract reconstruction continue before D90/task completion.
+
+## F07 S2: producer postconditions and operational scope
+
+[The audit](derivations/03d_producer_contract_audit.md) now distinguishes a
+valid root from an output that satisfies the producer's advertised allowance,
+withdrawal, revision and requested-comparison contract. The exact softening
+receiver independently reconstructs these fields; a different stronger valid
+bound is acceptable as a separately declared contract, not as falsely labelled
+metadata. Source substitution preserves used numerical premises without
+requiring all unused historical rows. Global replacements are localized before
+propagating their current budgets.
+
+Casewise salvage retains one literal comparison and policy while selecting
+proofs within each case. Its grammar can recover a global result unavailable
+from selecting only whole, previously aggregated proof alternatives. The
+static frontier's narrower historical claim is preserved. Numerical validity,
+probability-domain validity, observation legality and proxy alignment remain
+separate requirements. Fault-tolerant envelopes require declared evidence
+about faulty sources/arguments; proof duplication supplies no independence.
+
+This does not change the provisional semantics or introduce trusted rules.
+The existing S1 native soundness theorem is a premise of the producer audit.
+F07 remains partial, Gate A remains passed at readiness scope, and F08/Gate B
+have not begun. The final F07 block should reconstruct the combined theorem
+and its input/use boundaries, not silently widen the numerical fragment.

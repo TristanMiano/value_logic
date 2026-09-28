@@ -737,3 +737,24 @@ The new finite suite has **51 passing tests**, not a proof of these universal
 statements by sampling. Initial fixture-generator failure and a draft U1 scope
 correction are recorded rather than erased. Historical F06 completion remains
 rule-development completion. F07 is selected; F08 and Gate B remain unstarted.
+
+## F07 S2 — producer contracts and uncertain operational use
+
+Task remains **partial**. Evidence is the [written reconstruction](derivations/03d_producer_contract_audit.md),
+[finite receiver/checks](checks/f07_producer_contracts.py), [report](checks/F07_producer_contract_results.json)
+and [S2 record](work_logs/F07_2026-09-28_S2.md). These are conditional mathematical
+proofs and same-assistant reconstruction, not independent formal verification.
+
+| ID | Scoped statement and evidence | Boundary |
+|---|---|---|
+| F07-C08 | P1–P6/P11/P20: localization, grafting, primitive expansion and softening preserve their explicitly reconstructed current postconditions; auxiliary allowance fields require their own checks. | Native soundness remains a premise. Partial correctness on valid admitted inputs, not arbitrary Python execution or guaranteed search success. |
+| F07-C09 | P9–P10: case-local salvage can reconstruct a global fixed comparison when no complete stored global alternative survives. Finite grammar oracle agrees on all 16 withdrawals of the separating instance. | Original snapshot frontier theorem retains its narrower grammar. Proof choice does not give an action hidden information. |
+| F07-C10 | P7–P8 and section 17: exact exclusion and positive-weight coverage preserve current bounds; weakened exclusion premises admit weighted residual corrections. | Exact source coefficients, finite positive divisors, fixed query and nonempty parent; equality can retain a nonstrict branch without excluding its opposite closed branch. |
+| F07-C11 | P12: local numerical defects propagate through a fixed monotone budget DAG with an exact nonnegative overrun and a conservative linear envelope. | Defect-size bounds are supplied premises. Not source calibration, confidence multiplication or a new native rule. |
+| F07-C12 | P14/P18: a declared finite bound on inapplicable same-claim arguments supports the corresponding order-statistic envelope; source-indexed faults require support-aware treatment. | Registered common-event scope; no independence or unconditional expected-utility claim. Duplicated arguments are not additional independent evidence. |
+| F07-C13 | P13/P15: current paired improvement, report validity and historical performance have different premises; the worked controller retains a -1/32 paired bound but changes historically by +15/32. | Probability laws, policy versions, observations and source drift must be supplied. Arithmetic validity is not empirical applicability. |
+| F07-C14 | P16/P19: integrable paired differences with fixed marginals have coupling-independent means; compiled/replayed budgets agree when retained proof-minimum choices remain current minimizers. | Integrability and RHS-only update assumptions are essential. No unrestricted coupling, optimizer or future-support invariance claim. |
+
+The new suite passes **57 tests**, bringing F07 to **108**. Initial harness
+unpacking error and its repair are retained; no original checker, producer,
+mathematical assertion or old test was weakened. F08 and Gate B remain unstarted.

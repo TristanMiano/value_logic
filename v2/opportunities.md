@@ -353,3 +353,18 @@ claim or an instruction to expand the calculus prematurely. OPP-03 remains a
 conditional report-dependent interpretation. OPP-02 is still untested in an
 ordinarily trained network; arithmetic soundness does not establish causal
 participation. No direction or task order is changed.
+
+## F07 S2 checkpoint — no ranking change
+
+OPP-01/OPP-04 now have a producer-level contract audit: a receiver checks what
+an assumption-loss computation claims to have returned, while case-local
+proof alternatives can survive more withdrawals than a static global family.
+OPP-03 retains separate checks for self-report validity, paired improvement
+at the current source, and historical performance after an actual source
+change. The latter needs a drift premise. Fault-aware evidence handling is a
+useful baseline comparison, not a newly established novelty claim.
+
+Keep the final F07 reconstruction focused on the combined theorem's exact
+fragment. The uncertainty envelopes require premises about which evidence can
+fail; deriving or learning those premises remains a distinct future question.
+No neural experiment, stronger core selection or change of task is introduced.
