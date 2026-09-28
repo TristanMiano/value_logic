@@ -1,0 +1,27 @@
+.E.............E...................................................................................................................................................................
+======================================================================
+ERROR: test_complete_producer_serialization_and_receiver (v2.checks.f07_acceptance_audit.F07AcceptanceTests.test_complete_producer_serialization_and_receiver)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/value_logic_work/v2/checks/f07_acceptance_audit.py", line 258, in test_complete_producer_serialization_and_receiver
+    c,a,g,r=N.paired_policy_fixture(); out=N.receive_near_exclusion(c,a,g,r,strict=True)
+                                           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/value_logic_work/v2/checks/f07_near_exclusion_receiver.py", line 90, in receive_near_exclusion
+    raise H.AuditError('An inclusive equality bound does not certify a strict request.')
+v2.checks.f07_soundness.AuditError: An inclusive equality bound does not certify a strict request.
+
+======================================================================
+ERROR: test_paired_policy_has_no_baseline_moment (v2.checks.f07_acceptance_audit.F07AcceptanceTests.test_paired_policy_has_no_baseline_moment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/value_logic_work/v2/checks/f07_acceptance_audit.py", line 227, in test_paired_policy_has_no_baseline_moment
+    H.receive(c,N.receive_near_exclusion(c,a,g,r,strict=True),r)
+                ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/value_logic_work/v2/checks/f07_near_exclusion_receiver.py", line 90, in receive_near_exclusion
+    raise H.AuditError('An inclusive equality bound does not certify a strict request.')
+v2.checks.f07_soundness.AuditError: An inclusive equality bound does not certify a strict request.
+
+----------------------------------------------------------------------
+Ran 179 tests in 16.808s
+
+FAILED (errors=2)

@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: F07 producer-contract audit, September 28, 2026 (UTC).
-Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 partial; the semantic core remains provisional**.
+Version: F07 soundness acceptance, September 28, 2026 (UTC).
+Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 complete at finite-fragment soundness scope; F08 unstarted; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -612,3 +612,29 @@ The existing S1 native soundness theorem is a premise of the producer audit.
 F07 remains partial, Gate A remains passed at readiness scope, and F08/Gate B
 have not begun. The final F07 block should reconstruct the combined theorem
 and its input/use boundaries, not silently widen the numerical fragment.
+
+## F07 acceptance amendment — September 28, 2026, S4
+
+The current [acceptance theorem](derivations/03f_soundness_acceptance.md) fixes
+finite immutable exact inputs, independent finite-real semantics, lexical
+normalization, sixteen native rules, current request binding and method-specific
+producer metadata contracts. A K-valid trace alone does not authenticate an
+arbitrary field beside it. The S3 near-exclusion receiver closes that numerical
+receiving obligation; the original low-level producer is not treated as a
+provenance authenticator. No earlier native soundness or Gate A premise is
+invalidated. The active repair queue is empty.
+
+The new paired-difference envelope supplies sufficient first-absolute-moment
+and fixed-program source-perturbation bounds. It is not a minimal dependence
+summary or a validator of empirical moments. Current paired comparison and
+historical drift remain separate. The report-update witness shows why changing
+a report that controls behavior requires a new query, even after an old bound
+was valid. The original independent proof, current full-module tests, model and
+D90 are accepted at F07 scope. **Next: F08, unstarted.**
+
+Dependency map: F05 semantics -> native normalization/rules -> F07 derivation
+soundness -> current request receiving. Source/case/softening producers add
+specific proved postconditions, not new axioms. Deployment adds independently
+supplied program, observation, proxy and probability premises. Gate B still
+needs F08/F09/F10 and its own review; no F11 or neural experiment is authorized
+by this completion. Research author: ChatGPT (GPT-6 Astra Pro).

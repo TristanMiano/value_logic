@@ -1,5 +1,13 @@
 # Phase Two Claim Ledger
 
+Current status (September 28, 2026, S4): **F01–F07 complete at their task scopes;
+F08 selected and unstarted.** F07 acceptance is the explicit finite-fragment
+soundness theorem, not a permanent core or later gate. Gate A retains its
+foundation-readiness PASS; B/C/D are unattempted. The dated ledger entries and
+earlier opening below retain historical statuses.
+
+## Preserved early ledger opening
+
 Version: F02 completion plus F03 S9 partial audit, September 24, 2026.
 Task status: **F01 complete (76 checks); F02 complete (124 dedicated checks and 61.118295 credited derivation minutes)**.
 No calculus has been selected and no readiness gate has passed.
@@ -758,3 +766,26 @@ proofs and same-assistant reconstruction, not independent formal verification.
 The new suite passes **57 tests**, bringing F07 to **108**. Initial harness
 unpacking error and its repair are retained; no original checker, producer,
 mathematical assertion or old test was weakened. F08 and Gate B remain unstarted.
+
+## F07 S3/S4 — final finite-fragment acceptance
+
+Task **complete at stated soundness scope**; current evidence is
+[03f](derivations/03f_soundness_acceptance.md) and [S4](work_logs/F07_2026-09-28_S4.md).
+Prior partial task dispositions above remain historical. These are written
+conditional proofs and same-assistant source reconstruction, not external
+independent review, proof-assistant verification or novelty claims.
+
+| ID | Scoped statement and evidence | Boundary |
+|---|---|---|
+| F07-C15 | The request-bound near-exclusion receiver checks the current allowance fields, guard and actual root, including explicit literal rewrites and strict/inclusive thresholds. S3 sections 2/4/5; S4 acceptance section 3. | Numerical field consistency, not historical producer identity. A stronger valid output budget is permitted; arbitrary valid metadata is not. |
+| F07-C16 | The consolidated native-plus-producer acceptance theorem follows from independent finite-real semantics, exact normalization, all sixteen rules, finite-DAG induction, requested domain/pair/budget and specific producer contracts. 03f sections 1–3/6. | Supported immutable exact data and successful returns; not search completeness, optimality, whole-runtime verification or empirical applicability. |
+| F07-C17 | The normalized paired-difference recursion supplies a sufficient global coordinate Lipschitz vector and, with valid first-absolute-moment premises, a finite absolute-mean bound. It also bounds source perturbations of a fixed program pair. 03f section 4; acceptance audit. | Not minimal; moments, units and same-program interpretation are external. Canceled common baselines need not have moments; historical change needs an additional drift term. |
+| F07-C18 | A valid risk bound for a fixed report need not remain valid when issued as a different report controlling behavior. The feasible (p,s)=(1,1/4) witness gives risk 43/64 after changing report 3/4 to 7/16 and raises modeled cost by 5/32. A separately checked fixed report 4/7 meets the uniform bound. | Fixed declared branch-law model, not an empirical agent or a new fixed-point inference rule. Calibration and intended value remain distinct criteria. |
+
+F07-C01–C14 retain their stated scopes. F06-C18's aggregate-information
+sharpness is not source-relative optimality. Full-module targeted checks pass
+1,046 tests including 186 F07; test counts are not the universal proof. Original
+source/checker/producer implementations and old records are preserved. D30/D90
+are satisfied in the S4 clocks and appended master ledger. F08 is selected,
+unstarted; Gate A unchanged, B/C/D unattempted. Research author: ChatGPT
+(GPT-6 Astra Pro).

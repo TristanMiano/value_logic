@@ -368,3 +368,14 @@ Keep the final F07 reconstruction focused on the combined theorem's exact
 fragment. The uncertainty envelopes require premises about which evidence can
 fail; deriving or learning those premises remains a distinct future question.
 No neural experiment, stronger core selection or change of task is introduced.
+
+## F07 completion checkpoint — September 28, 2026
+
+OPP-01 remains the leading calculus question, with OPP-04 evidence-sensitive
+reuse and OPP-03 bounded reflection served by the current soundness/receiving
+proofs. No opportunity ranking is changed merely by test counts. The report-
+update countermodel sharpens the current-query requirement; it does not resolve
+the broader reflective aim. The neural probe is still unstarted. F07 is complete
+at its declared scope; F08 is selected, with its exact conjecture to be chosen
+prospectively under its own forecast. No new novelty claim is made.
+Research author: ChatGPT (GPT-6 Astra Pro).

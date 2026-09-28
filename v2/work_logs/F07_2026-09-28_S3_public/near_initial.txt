@@ -1,0 +1,37 @@
+.....................EEE...............
+======================================================================
+ERROR: test_paired_policy_not_supplied_as_a_final_score (v2.checks.f07_near_exclusion_receiver.F07NearExclusionTests.test_paired_policy_not_supplied_as_a_final_score)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/value_logic_public/v2/checks/f07_near_exclusion_receiver.py", line 325, in test_paired_policy_not_supplied_as_a_final_score
+    c,a,g,r=paired_policy_fixture(); out=receive_near_exclusion(c,a,g,r)
+                                         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/mnt/data/value_logic_public/v2/checks/f07_near_exclusion_receiver.py", line 70, in receive_near_exclusion
+    raise H.AuditError('The guard proof has the wrong difference or local scope.')
+v2.checks.f07_soundness.AuditError: The guard proof has the wrong difference or local scope.
+
+======================================================================
+ERROR: test_paired_policy_strict_boundary_and_countermodel (v2.checks.f07_near_exclusion_receiver.F07NearExclusionTests.test_paired_policy_strict_boundary_and_countermodel)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/value_logic_public/v2/checks/f07_near_exclusion_receiver.py", line 333, in test_paired_policy_strict_boundary_and_countermodel
+    out=receive_near_exclusion(c,a,g,r); root=K.check(c,out)
+  File "/mnt/data/value_logic_public/v2/checks/f07_near_exclusion_receiver.py", line 70, in receive_near_exclusion
+    raise H.AuditError('The guard proof has the wrong difference or local scope.')
+v2.checks.f07_soundness.AuditError: The guard proof has the wrong difference or local scope.
+
+======================================================================
+ERROR: test_proxy_discrepancy_changes_actual_guarantee (v2.checks.f07_near_exclusion_receiver.F07NearExclusionTests.test_proxy_discrepancy_changes_actual_guarantee)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/value_logic_public/v2/checks/f07_near_exclusion_receiver.py", line 350, in test_proxy_discrepancy_changes_actual_guarantee
+    self.assertEqual(K.check(c,receive_near_exclusion(c,a,g,r)).budget,F(3,64))
+                               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/mnt/data/value_logic_public/v2/checks/f07_near_exclusion_receiver.py", line 70, in receive_near_exclusion
+    raise H.AuditError('The guard proof has the wrong difference or local scope.')
+v2.checks.f07_soundness.AuditError: The guard proof has the wrong difference or local scope.
+
+----------------------------------------------------------------------
+Ran 39 tests in 2.719s
+
+FAILED (errors=3)

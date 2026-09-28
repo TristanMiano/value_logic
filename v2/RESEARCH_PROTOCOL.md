@@ -261,3 +261,15 @@ When publication is attempted, use bounded, spaced retries for intermittent
 GitHub capability failures; retain the local package, and report a push only
 after the commit and branch head are independently read back. Never turn
 transport overhead into credited research or let it consume the research session.
+
+
+## 9. Research attribution (author-requested amendment, September 28, 2026)
+
+Name the contributor to new research in the work log and new principal artifacts.
+For assistant work, identify the assistant/model separately from the project
+author and human publisher. A commit-message trailer such as
+`Research-by: ChatGPT (GPT-6 Astra Pro)` can retain that attribution without
+changing the human Git author configuration. Do not invent an email address,
+retroactively assign earlier work to an unverified model, or describe plain-text
+attribution as a cryptographic signature. Existing timing, review and evidence
+requirements are unchanged.

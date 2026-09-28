@@ -230,3 +230,14 @@ query over all live cases when every local result exists.
 A bound on faulty SOURCE identities does not automatically bound faulty proofs.
 All of these are audit/metatheory notation. An unavailable result is not an
 infinite native term, and an error probability is not a loss-valued premise.
+
+## F07 S4 paired-difference envelope
+
+For fixed same-unit terms t,s, `Delta=eval(t)-eval(s)`. `L_j>=0` denotes the
+sufficient coordinate Lipschitz vector computed from the exact normalized paired
+difference, so `|Delta(x)-Delta(y)|<=sum_j L_j|x_j-y_j|`. A supplied `m_j`
+means a valid first absolute moment bound in source j's declared numerical unit;
+`d_j` is a supplied coordinate error bound. Neither is verified empirically by
+the arithmetic helper. See [03f section 4](derivations/03f_soundness_acceptance.md).
+This is a sufficient envelope, not a new primitive or an optimality claim.
+Research author: ChatGPT (GPT-6 Astra Pro).

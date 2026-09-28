@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: September 28, 2026 UTC (September 27 in America/Los_Angeles).
-Status: F01–F05 complete at their task scopes; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 producer-contract continuation partial; the semantic core remains provisional.
+Status: F01–F06 complete at their task scopes; Gate A passed at readiness scope; F07 complete at finite-fragment soundness scope; F08 selected and unstarted; the semantic core remains provisional.
 
 ## Resume here
 
@@ -11,7 +11,7 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F07 — prove soundness for an explicit fragment.**
+**Next task: F08 — pursue a harder characterization result (unstarted).**
 
 **Active repair queue: empty.**
 
@@ -673,7 +673,7 @@ to publication with an unsound core simply because the planned queue ended.
   soundness audit. **Select F07, unstarted.** Gate A retains its readiness PASS;
   B–D remain unattempted and no permanent calculus or novelty claim is introduced.
 
-- [ ] **F07 — prove soundness for an explicit fragment.**
+- [x] **F07 — prove soundness for an explicit fragment.**
 
   Principal artifact: `v2/derivations/03_soundness.md`.
   State the fragment and semantic preservation property precisely. Prove each
@@ -713,6 +713,22 @@ to publication with an unsound core simply because the planned queue ended.
   meeting the requested D30. Cumulative F07 D is **60.170396 minutes**;
   **29.829604 minutes** remain against D90. F07 stays unchecked and selected.
   No F08, Gate B, full Python verification or empirical source guarantee.
+
+  **Completed — September 28, 2026 UTC, S4.** The
+  [consolidated acceptance proof](v2/derivations/03f_soundness_acceptance.md)
+  connects exact normalization, all sixteen native rules, finite derivations,
+  current requests and the separately checked producer contracts. The S3
+  near-exclusion receiver is now tested against complete public-version-verified
+  dependencies. S4 adds paired-difference moment/drift envelopes and a concrete
+  report-update countermodel with checked fixed-report alternatives.
+  **186 F07 / 1,046 total targeted tests** pass; original checker/producers are
+  unchanged. [S4](v2/work_logs/F07_2026-09-28_S4.md) records **30.168486 fresh D minutes**
+  and **107.314653 cumulative F07 D minutes**, satisfying this session's D30 and
+  the task's D90. The S3 ledger fragment is imported transparently; original
+  ledger bytes and historical records are preserved. This is same-assistant
+  mathematical reconstruction, not independent external review or a full
+  repository/CI pass. Gate A is unchanged; B–D are unattempted.
+  **Select F08, unstarted.** Research author: ChatGPT (GPT-6 Astra Pro).
 
 - [ ] **F08 — pursue a harder characterization result.**
 

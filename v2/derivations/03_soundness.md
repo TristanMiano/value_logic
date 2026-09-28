@@ -1,5 +1,14 @@
 # F07 — soundness of finite, source-aware signed-loss derivations
 
+Current disposition: **F07 complete at finite-fragment soundness scope**,
+September 28, 2026 UTC. The [consolidated acceptance record](03f_soundness_acceptance.md)
+is the current native-plus-producer theorem and acceptance map. Research author
+of the S4 reconstruction: **ChatGPT (GPT-6 Astra Pro)**. The original S1 proof
+below is preserved as historical evidence; its then-partial time status is not
+the current queue. F08 is selected and unstarted.
+
+## Preserved S1 reconstruction
+
 Status: **first reconstruction; F07 partial**. September 27, 2026 (UTC).
 Reviewed input: `12ba077cb55ef177b5f49ad667dd6750f4e98836`.
 Semantics: [F05 provisional core](../foundations/03_provisional_core.md).

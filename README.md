@@ -6,7 +6,7 @@ Value Logic is a research project about reasoning with useful but fallible model
 
 The project's proposed starting point is **value**: how a model, theory, representation, or course of action serves an intended purpose, at a tolerable error and resource cost. The ambition is not just to attach usefulness scores to otherwise conventional judgments. It is to investigate a calculus in which semantic objects and inference rules make pragmatic value central, with familiar truth-based reasoning potentially recovered within a suitable fragment.
 
-**Phase one is complete. Phase two is building the value-based calculus first. F01–F06 are complete at their task scopes; Gate A passed its readiness review. The next task is F07, soundness for the explicit fragment. The semantic core remains provisional.** The motivation below is the continuing research program. The particular constructions developed so far are realizations of it, not permanent foundations.
+**Phase one is complete. Phase two is building the value-based calculus first. F01–F07 are complete at their task scopes; F07 establishes soundness of the explicit finite fragment. Gate A passed its foundation-readiness review. The next task is F08, a harder characterization result, and is unstarted. The semantic core remains provisional.** The motivation below is the continuing research program. The particular constructions developed so far are realizations of it, not permanent foundations.
 
 ## Motivation: useful does not mean final
 

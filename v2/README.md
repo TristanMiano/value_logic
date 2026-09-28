@@ -3,7 +3,7 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is complete at semantic-specification scope; F06 is complete at rule-development scope; F07 is selected and partial.
+not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is complete at semantic-specification scope; F06 is complete at rule-development scope; F07 is complete at finite-fragment soundness scope; F08 is selected and unstarted.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -11,23 +11,28 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 
 ## Current status
 
-**F07's second soundness checkpoint is partial.** The
-[producer-contract audit](derivations/03d_producer_contract_audit.md) checks
-returned traces and auxiliary claims against independently fixed inputs.
-It includes case-local proof salvage, explicit softening metadata, fault-count
-bounds and the distinction between arithmetic and deployment interpretation.
-The **108 F07 tests** comprise 51 S1 and 57 S2 tests. [S2](work_logs/F07_2026-09-28_S2.md)
-records 30.015519 D minutes, for **60.170396 cumulative F07 D**.
-The remaining D90 obligation is 29.829604 minutes. F08 is unstarted.
+**F07 is complete at finite-fragment soundness scope.** The
+[acceptance record](derivations/03f_soundness_acceptance.md) joins the native
+proof, source/producer reconstruction, request-bound metadata checks, and the
+separate assumption-to-deployment bridge. The complete F07 suite now has **186
+passing tests**: 108 published, 47 S3 receiver tests and 31 S4 acceptance tests.
+The targeted F02–F07/Gate A total is **1,046**. S4 records **30.168486 fresh D minutes**
+and **107.314653 cumulative F07 D**, meeting D30/D90. See
+[S4](work_logs/F07_2026-09-28_S4.md) for clocks, initial fixture errors and limits.
+
+**Next: F08, unstarted.** Gate A retains foundation-readiness PASS; B/C/D are
+unattempted. This is same-assistant reconstruction, not a permanent core,
+independent external review, full repository/CI pass, F11 reasoner or neural probe.
+Original checker and producer implementations are unchanged.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f07*.py'
-python -m v2.checks.f07_producer_contracts --json /path/outside/repo/F07_producers.json
+python -m v2.checks.f07_acceptance_audit --json /path/outside/repo/F07_acceptance.json
 ```
 
-The report retains selected emitted proofs; the receiver is an audit fixture,
-not a general proof searcher or an external-source verifier. Existing native
-checker and producer implementations are unchanged.
+S1/S2/S3 partial records retain their then-current status; current controls
+supersede those historical dispositions. The source is a verified overlay, not
+a complete clone. The full repository command below remains a separate check.
 
 **F06 is complete at rule-development scope.** The [rule register](derivations/02_inference_rules.md)
 and [S3 reconstruction](derivations/02c_derived_cases_and_completion.md) include
@@ -57,7 +62,7 @@ The [completion record](work_logs/F05_2026-09-27_S2.md) records 30.063473 D minu
 this session and **60.320288 cumulative F05 D minutes**. The continuation alternative
 remains live; the semantics is provisional, not a completed deductive calculus.
 
-**Next: F07 — soundness for the explicit fragment.** Gate A remains passed at its existing scope. No neural
+**Current next: F08 — harder characterization (unstarted).** Gate A remains passed at its existing scope. No neural
 training or later readiness gate has occurred. F05's supplied-model discovery
 suite passes **90 tests** (48 from S1; 42 added in S2):
 
