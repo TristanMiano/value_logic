@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: F07 soundness acceptance, September 28, 2026 (UTC).
-Status: **F01–F05 complete at task scope; Gate A passed at readiness scope; F06 complete at rule-development scope; F07 complete at finite-fragment soundness scope; F08 unstarted; the semantic core remains provisional**.
+Version: F08 characterization acceptance, September 30, 2026 (UTC).
+Status: **F01–F08 complete at their task scopes; Gate A passed at readiness scope; F09 next and unstarted; B/C/D unattempted; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -638,3 +638,40 @@ specific proved postconditions, not new axioms. Deployment adds independently
 supplied program, observation, proxy and probability premises. Gate B still
 needs F08/F09/F10 and its own review; no F11 or neural experiment is authorized
 by this completion. Research author: ChatGPT (GPT-6 Astra Pro).
+
+## F08 acceptance amendment — September 30, 2026
+
+The unchanged calculus is complete for the **target-unit reduct**, not
+unconditionally for every full source model. For target u, retain exactly the
+rows whose units reach u through named positive conversions. [U1](derivations/04_characterization.md)
+proves that these reduct consequences are precisely the finite native
+consequences. Finite optima are rational and attained; strict validity has a
+strict native budget in this finite closed fragment. A reduct countermodel
+need not refute the original full source.
+
+Full-source completeness requires the additional criteria U7/U8, or equality
+of the full and reduct projected source unions for the particular context
+(U10). The one-way conversion obstruction narrows the completeness claim; it
+does not invalidate F07 soundness or alter the current kernel. A hypothetical
+order-reflection rule alone also has a joint-information obstruction and has
+not been adopted.
+
+Optional results characterize retained optimal RHS replay, complete row
+withdrawal support, finite characteristic probes, faithful typed source maps,
+quantitative deduction and matrix-controlled transfer. Fixed report laws have
+an exact least-warrant boundary; neither least reporting nor worst-case loss
+optimization implies uniform paired improvement. Full interpretations,
+observations, empirical source validity and deployment remain external premises.
+
+Dependency map: F05 finite typed semantics -> F06 native algebra/derived
+single-case rules + F07 soundness/receiving -> F08 directed retyping and rational
+linear reconstruction -> U1/U4–U10. The finite max-min construction independently
+supplies U1 and U11; dual faces give U13; polyhedral probes/images give U12/U16;
+source-free penalties and distance duals give U17/U18. U14 applies these results
+to the separately supplied mixture law. [04g](derivations/04g_characterization_acceptance.md)
+records the noncircular construction and the local-extension correction.
+
+F08 is complete with **90.589724 engaged D minutes**; F09 is next and unstarted.
+Gate A is unchanged; F09/F10 and a separate Gate B review are required before
+F11. No integrated optimizer, external formal review or global novelty claim
+is included. Research contributor: **Codex (GPT-6)**.

@@ -3,7 +3,7 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01-F04 are complete at task scope; [Gate A](checkpoints/A_1.md) passed at readiness scope. F05 is complete at semantic-specification scope; F06 is complete at rule-development scope; F07 is complete at finite-fragment soundness scope; F08 is selected and unstarted.
+not new results. F01–F08 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness in the finite fragment, with D90 satisfied. F09 is next and unstarted; B/C/D remain unattempted.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -20,19 +20,43 @@ The targeted F02–F07/Gate A total is **1,046**. S4 records **30.168486 fresh D
 and **107.314653 cumulative F07 D**, meeting D30/D90. See
 [S4](work_logs/F07_2026-09-28_S4.md) for clocks, initial fixture errors and limits.
 
-**Next: F08, unstarted.** Gate A retains foundation-readiness PASS; B/C/D are
-unattempted. This is same-assistant reconstruction, not a permanent core,
-independent external review, full repository/CI pass, F11 reasoner or neural probe.
-Original checker and producer implementations are unchanged.
+**F08 is complete at characterization scope; F09 is next, unstarted.** The
+[principal theorem](derivations/04_characterization.md) and
+[acceptance reconstruction](derivations/04g_characterization_acceptance.md)
+characterize native consequence by the target-unit reduct. Unrestricted
+full-source completeness is false; its exact additional conditions are stated.
+Optional results cover optimal retained RHS replay, withdrawal, characteristic
+probes, faithful substitution, quantitative transfer and bounded report laws.
+[The geometry refinement](derivations/04h_geometry_and_transfer.md) separates
+source sensitivity from loss sensitivity. Research contributor: **Codex (GPT-6)**.
+[S1](work_logs/F08_2026-09-30_S1.md) records **90.589724 engaged D minutes**.
+The unchanged native kernel checks the [seven saved certificates](checks/F08_characterization_results.json).
+All **64 F08 tests** passed across successful runs (61 combined before the last
+three additions; 22 final report/transfer tests). A **1,361-test full snapshot**
+passed; final broad reruns encountered native/interpreter failures, so no clean
+final 1,364-test or CI pass is claimed. Gate A retains readiness PASS; B/C/D
+and F11 remain unattempted. Original checker and producers are unchanged.
+
+```text
+python -X faulthandler -m unittest discover -s verification -p 'test_v2_f08*.py'
+python -m v2.checks.f08_characterization_report --json /path/outside/repo/F08_characterization.json
+python -m verification
+```
+
+The report command reconstructs and receives its supplied native certificates;
+it does not run the full tests or implement a general optimizer. Bounded retries
+and the existing alternate-runtime checks are documented in S1.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f07*.py'
 python -m v2.checks.f07_acceptance_audit --json /path/outside/repo/F07_acceptance.json
 ```
 
-S1/S2/S3 partial records retain their then-current status; current controls
-supersede those historical dispositions. The source is a verified overlay, not
-a complete clone. The full repository command below remains a separate check.
+F07's S1/S2/S3 partial records retain their then-current status; current controls
+supersede those historical dispositions. F07's web-based acceptance used a
+verified source overlay. The present local checkout's pre-F08 full-suite
+baseline passed 1,300 tests after one native Python failure and a successful
+retry; that baseline does not validate the new F08 work.
 
 **F06 is complete at rule-development scope.** The [rule register](derivations/02_inference_rules.md)
 and [S3 reconstruction](derivations/02c_derived_cases_and_completion.md) include
@@ -42,7 +66,7 @@ proof checked by the unchanged S1 checker. The **171 F06 tests** comprise 58 S1,
 64 S2 and 49 S3 checks; finite point tests are separate from mathematical arguments.
 [S3](work_logs/F06_2026-09-27_S3.md) records **30.155232 D minutes** and
 **90.201367 cumulative F06 D minutes**, satisfying D90.
-F07's soundness reconstruction is partial; the F11 reasoner has not begun.
+F07's soundness reconstruction is complete at its stated scope; the F11 reasoner has not begun.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f06*.py'
@@ -62,7 +86,7 @@ The [completion record](work_logs/F05_2026-09-27_S2.md) records 30.063473 D minu
 this session and **60.320288 cumulative F05 D minutes**. The continuation alternative
 remains live; the semantics is provisional, not a completed deductive calculus.
 
-**Current next: F08 — harder characterization (unstarted).** Gate A remains passed at its existing scope. No neural
+**Next task: F09 — comparisons (unstarted).** Gate A remains passed at its existing scope. No neural
 training or later readiness gate has occurred. F05's supplied-model discovery
 suite passes **90 tests** (48 from S1; 42 added in S2):
 
@@ -108,7 +132,7 @@ The [completion record](work_logs/F04_2026-09-26_S6.md) credits **11.238242 new 
 cumulative F04 D is **60.021079 minutes**. All **202 F04 tests** pass,
 including **38 new cases**; F03/F02 remain **256/124**. The
 [checklist](derivations/F04_completion_checklist.json) is a task-scope self-audit,
-not a readiness-gate decision. **Current next: F07, partial**, following the [Gate A PASS](checkpoints/A_1.md).
+not a readiness-gate decision. **Next task: F09, unstarted**, following F08 completion and the [Gate A PASS](checkpoints/A_1.md).
 
 
 ```text
@@ -427,9 +451,10 @@ The combined F03 discovery command now passes 236 tests; this is not full
 repository verification or proof of any proposed main theorem. The package
 records local application and targeted test validation separately from CI.
 
-## F07 first-pass soundness audit
+## Historical F07 first-pass soundness audit
 
-F07 is **partial**, not a completed D90 task or a Gate B pass. The
+At this S1 checkpoint F07 was **partial**; its later acceptance above supersedes
+that disposition. This historical first pass was not a completed D90 task or a Gate B pass. The
 [native proof](derivations/03_soundness.md) reconstructs every recognized rule
 and exact lexical normalization against finite-real source semantics. The
 [scope/use note](derivations/03a_soundness_scope_and_use.md),

@@ -1,0 +1,35 @@
+test_approximate_transfer_is_sound_but_can_be_slack (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_approximate_transfer_is_sound_but_can_be_slack) ... ok
+test_deduction_has_no_source_rows_and_gain_one (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_deduction_has_no_source_rows_and_gain_one) ... ok
+test_extension_rejects_changed_rows_meanings_and_case (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_extension_rejects_changed_rows_meanings_and_case) ... ok
+test_extension_revalidates_stale_and_corrupt_input (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_extension_revalidates_stale_and_corrupt_input) ... ok
+test_injective_diagonal_adds_a_correlation (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_injective_diagonal_adds_a_correlation) ... ok
+test_local_extensions_aggregate_only_after_every_case_is_proved (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_local_extensions_aggregate_only_after_every_case_is_proved) ... ERROR
+test_onto_affine_substitution_retains_the_offset (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_onto_affine_substitution_retains_the_offset) ... ok
+test_row_free_deduction_substitutes_nonlinear_sources (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_row_free_deduction_substitutes_nonlinear_sources) ... ok
+test_single_case_global_proof_extends_only_as_local (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_single_case_global_proof_extends_only_as_local) ... ok
+test_smaller_gain_has_exact_rational_countermodel (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_smaller_gain_has_exact_rational_countermodel) ... ok
+test_every_smaller_test_report_has_an_exact_source_countermodel (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_every_smaller_test_report_has_an_exact_source_countermodel) ... ok
+test_higher_report_has_strict_native_margin_without_corner (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_higher_report_has_strict_native_margin_without_corner) ... ok
+test_joint_segment_has_exact_native_boundary_for_eight_reports (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_joint_segment_has_exact_native_boundary_for_eight_reports) ... ok
+test_least_warranted_and_cost_optimal_need_not_coincide (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_least_warranted_and_cost_optimal_need_not_coincide) ... ok
+test_marginal_probability_box_loses_joint_warrant (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_marginal_probability_box_loses_joint_warrant) ... ok
+test_probability_validation_and_empty_catalogue (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_probability_validation_and_empty_catalogue) ... ok
+test_rectangle_least_report_is_four_sevenths_and_native (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_rectangle_least_report_is_four_sevenths_and_native) ... ok
+test_robust_improvement_is_not_uniform_paired_improvement (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_robust_improvement_is_not_uniform_paired_improvement) ... ok
+test_zero_denominator_corner_never_yields_strict_report (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_zero_denominator_corner_never_yields_strict_report) ... ok
+
+======================================================================
+ERROR: test_local_extensions_aggregate_only_after_every_case_is_proved (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_local_extensions_aggregate_only_after_every_case_is_proved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 104, in test_local_extensions_aggregate_only_after_every_case_is_proved
+    self.assertEqual(H.receive(ctx, proof, H.request(ctx, None, K.src('x'), K.num(0), 0)).budget, 0)
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f07_soundness.py", line 134, in receive
+    raise AuditError('Valid trace does not prove the requested pair and scope.')
+v2.checks.f07_soundness.AuditError: Valid trace does not prove the requested pair and scope.
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.105s
+
+FAILED (errors=1)

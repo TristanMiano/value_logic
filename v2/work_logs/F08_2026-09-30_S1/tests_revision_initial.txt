@@ -1,0 +1,130 @@
+EEEEEEE.EE....
+======================================================================
+ERROR: test_bad_dual_weights_balance_and_normalization_are_rejected (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_bad_dual_weights_balance_and_normalization_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 250, in test_bad_dual_weights_balance_and_normalization_are_rejected
+    ctx = family_context((0, 10, 20)); leaves = family_data(ctx)[0][0]
+                                                ~~~~~~~~~~~^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 128, in family_data
+    priced = ctx.signature.source_unit('x') == 'P'
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Signature' object has no attribute 'source_unit'
+
+======================================================================
+ERROR: test_changed_row_direction_and_stale_context_fail (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_changed_row_direction_and_stale_context_fail)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 275, in test_changed_row_direction_and_stale_context_fail
+    ctx = family_context((0, 10, 20)); proof = family_proof(ctx)
+                                               ~~~~~~~~~~~~^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 144, in family_proof
+    clauses, points, new, old = family_data(ctx)
+                                ~~~~~~~~~~~^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 128, in family_data
+    priced = ctx.signature.source_unit('x') == 'P'
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Signature' object has no attribute 'source_unit'
+
+======================================================================
+ERROR: test_current_transport_can_discard_future_optimal_alternative (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_current_transport_can_discard_future_optimal_alternative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 228, in test_current_transport_can_discard_future_optimal_alternative
+    base = family_context((0, 10, 20)); proof = family_proof(base)
+                                                ~~~~~~~~~~~~^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 144, in family_proof
+    clauses, points, new, old = family_data(ctx)
+                                ~~~~~~~~~~~^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 128, in family_data
+    priced = ctx.signature.source_unit('x') == 'P'
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Signature' object has no attribute 'source_unit'
+
+======================================================================
+ERROR: test_direct_conversion_preserves_entire_portfolio (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_direct_conversion_preserves_entire_portfolio)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 219, in test_direct_conversion_preserves_entire_portfolio
+    base = family_context((0, 10, 20), priced=True); proof = family_proof(base)
+                                                             ~~~~~~~~~~~~^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 144, in family_proof
+    clauses, points, new, old = family_data(ctx)
+                                ~~~~~~~~~~~^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 128, in family_data
+    priced = ctx.signature.source_unit('x') == 'P'
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Signature' object has no attribute 'source_unit'
+
+======================================================================
+ERROR: test_duplicate_dual_point_is_sound_not_new_independent_evidence (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_duplicate_dual_point_is_sound_not_new_independent_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 265, in test_duplicate_dual_point_is_sound_not_new_independent_evidence
+    ctx = family_context((0, 10, 20)); clauses, points, _, _ = family_data(ctx)
+                                                               ~~~~~~~~~~~^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 128, in family_data
+    priced = ctx.signature.source_unit('x') == 'P'
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Signature' object has no attribute 'source_unit'
+
+======================================================================
+ERROR: test_empty_supplied_portfolio_is_not_an_unboundedness_certificate (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_empty_supplied_portfolio_is_not_an_unboundedness_certificate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 270, in test_empty_supplied_portfolio_is_not_an_unboundedness_certificate
+    ctx = family_context((0, 10, 20)); clauses, points, _, _ = family_data(ctx)
+                                                               ~~~~~~~~~~~^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 128, in family_data
+    priced = ctx.signature.source_unit('x') == 'P'
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Signature' object has no attribute 'source_unit'
+
+======================================================================
+ERROR: test_global_hidden_cases_keep_one_literal_pair (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_global_hidden_cases_keep_one_literal_pair)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 242, in test_global_hidden_cases_keep_one_literal_pair
+    proof = family_proof(ctx)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 144, in family_proof
+    clauses, points, new, old = family_data(ctx)
+                                ~~~~~~~~~~~^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 128, in family_data
+    priced = ctx.signature.source_unit('x') == 'P'
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Signature' object has no attribute 'source_unit'
+
+======================================================================
+ERROR: test_mutated_budget_is_rejected (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_mutated_budget_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 286, in test_mutated_budget_is_rejected
+    ctx = family_context((0, 10, 20)); proof = family_proof(ctx); root = proof.root
+                                               ~~~~~~~~~~~~^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 144, in family_proof
+    clauses, points, new, old = family_data(ctx)
+                                ~~~~~~~~~~~^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 128, in family_data
+    priced = ctx.signature.source_unit('x') == 'P'
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Signature' object has no attribute 'source_unit'
+
+======================================================================
+ERROR: test_uniform_optimal_replay_125_rhs_revisions_and_attaining_models (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_uniform_optimal_replay_125_rhs_revisions_and_attaining_models)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 205, in test_uniform_optimal_replay_125_rhs_revisions_and_attaining_models
+    base = family_context((0, 10, 20)); proof = family_proof(base)
+                                                ~~~~~~~~~~~~^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 144, in family_proof
+    clauses, points, new, old = family_data(ctx)
+                                ~~~~~~~~~~~^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 128, in family_data
+    priced = ctx.signature.source_unit('x') == 'P'
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Signature' object has no attribute 'source_unit'
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.061s
+
+FAILED (errors=9)

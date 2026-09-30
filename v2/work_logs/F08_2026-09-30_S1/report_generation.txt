@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_characterization_report.py", line 101, in <module>
+    main()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_characterization_report.py", line 94, in main
+    result = report()
+             ^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_characterization_report.py", line 60, in report
+    records['uniform_portfolio'] = entry(ctx, proof, H.request(ctx, 'h', new, old, 0),
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_characterization_report.py", line 25, in entry
+    root = H.receive(ctx, proof, expected)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f07_soundness.py", line 134, in receive
+    raise AuditError('Valid trace does not prove the requested pair and scope.')
+v2.checks.f07_soundness.AuditError: Valid trace does not prove the requested pair and scope.

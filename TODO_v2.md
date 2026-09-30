@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 28, 2026 UTC (September 27 in America/Los_Angeles).
-Status: F01–F06 complete at their task scopes; Gate A passed at readiness scope; F07 complete at finite-fragment soundness scope; F08 selected and unstarted; the semantic core remains provisional.
+Last updated: September 30, 2026 UTC (September 29 in America/Los_Angeles).
+Status: F01–F08 complete at their task scopes; Gate A passed at readiness scope; F09 next and unstarted; B/C/D unattempted; the semantic core remains provisional.
 
 ## Resume here
 
@@ -11,7 +11,7 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F08 — pursue a harder characterization result (unstarted).**
+**Next task: F09 — Boolean, phase-one, and scaling comparisons (unstarted).**
 
 **Active repair queue: empty.**
 
@@ -730,7 +730,7 @@ to publication with an unsound core simply because the planned queue ended.
   repository/CI pass. Gate A is unchanged; B–D are unattempted.
   **Select F08, unstarted.** Research author: ChatGPT (GPT-6 Astra Pro).
 
-- [ ] **F08 — pursue a harder characterization result.**
+- [x] **F08 — pursue a harder characterization result.**
 
   Principal artifact: `v2/derivations/04_characterization.md`.
   Protect exploratory time for a completeness, representation, or information-
@@ -749,6 +749,23 @@ to publication with an unsound core simply because the planned queue ended.
   constructive restricted result is established and the specification is
   narrowed accordingly; D90 is recorded. Budget expiry alone does not complete
   this task. Preserve rigorous partial gains while scheduling the next attempt.
+
+  **Completed — September 30, 2026 UTC, S1.** The [characterization](v2/derivations/04_characterization.md)
+  proves native completeness for the target-unit reduct, after refuting
+  unrestricted full-source completeness. It gives exact graph/source criteria,
+  rational attainment and finite CPWA information probes. Optional results
+  establish retained optimal RHS replay, withdrawal support, faithful source
+  substitution, quantitative penalties and bounded report/geometry results.
+  [The acceptance reconstruction](v2/derivations/04g_characterization_acceptance.md)
+  checks two constructive routes and their native scope obligations.
+  [S1](v2/work_logs/F08_2026-09-30_S1.md) records **90.589724 engaged D minutes**
+  after explicit exclusions; D90 is satisfied. **64 F08 tests** passed across
+  successful runs, and seven saved native certificates round-trip through the
+  unchanged checker. A **1,361-test full snapshot** passed; final broad reruns
+  failed natively, so no clean final 1,364-test/CI pass is claimed. These are
+  same-assistant proofs and finite audits, not external formal verification or
+  a novelty/empirical claim. **Select F09, unstarted.** Research contributor:
+  **Codex (GPT-6)**. Gate A is unchanged; B/C/D are unattempted.
 
 - [ ] **F09 — Boolean, phase-one, and scaling comparisons.**
 

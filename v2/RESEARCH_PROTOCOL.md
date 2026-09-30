@@ -137,6 +137,13 @@ is not silently waived. If execution must stop early, save a partial record,
 leave the task unchecked, and keep its continuation selected. Do not promise
 unattended continuation.
 
+Author clarification, September 30, 2026: if the stated objectives are met
+before the protected minimum, use the remaining block for a more ambitious
+optional attempt. At the minimum, report the required result separately from
+any unfinished optional work and identify a reasonable next stopping point;
+offer continued work rather than silently expanding the selected task forever.
+The minimum remains engaged research time, with the existing mode separation.
+
 Completion requires BOTH evidence and the recorded minimum. Time spent is
 never itself evidence that a calculus is sound. At a task's review-at budget,
 stop for explicit replanning: narrow the immediate attempt, create a repair

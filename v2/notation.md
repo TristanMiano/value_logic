@@ -241,3 +241,20 @@ means a valid first absolute moment bound in source j's declared numerical unit;
 the arithmetic helper. See [03f section 4](derivations/03f_soundness_acceptance.md).
 This is a sufficient envelope, not a new primitive or an optimality claim.
 Research author: ChatGPT (GPT-6 Astra Pro).
+
+## F08 characterization notation (metatheory, not new primitives)
+
+`A(u)`: units with a directed conversion path to u. `C|u`: source reduct retaining
+only rows in those units. `K_C(t,s;b)`: existence of a finite native proof for
+that current literal comparison with root budget at most b, with sufficient
+resources. `P_u(C)` and `Q_u(C)`: projected reduct and full-source unions.
+`V_C,u`: nonnegative CPWA characteristic violation, with zero set P_u(C).
+`E_hi`: complete rational dual-vertex catalogue for one max-min clause/case;
+its max/min budget program yields the optimal RHS replay bound.
+`F_sigma` / `Z_sigma(D)`: typed substitution's coordinate map / reduct image.
+`K_*`: least nonnegative universal penalty gain for a particular request.
+`H` / `H_L`: source-matrix error-bound coefficients in the declared coordinate
+gauge, with unweighted / weighted coordinate sensitivities. These are neither
+confidence probabilities nor native infinite budget literals. `r_*` is the
+least warranted report for the explicitly fixed mixture law in 04d.
+Research contributor: **Codex (GPT-6)**.

@@ -1,7 +1,7 @@
 # Phase Two Claim Ledger
 
-Current status (September 28, 2026, S4): **F01–F07 complete at their task scopes;
-F08 selected and unstarted.** F07 acceptance is the explicit finite-fragment
+Current status (September 30, 2026): **F01–F08 complete at their task scopes;
+F09 next and unstarted.** F07 acceptance is the explicit finite-fragment
 soundness theorem, not a permanent core or later gate. Gate A retains its
 foundation-readiness PASS; B/C/D are unattempted. The dated ledger entries and
 earlier opening below retain historical statuses.
@@ -789,3 +789,30 @@ source/checker/producer implementations and old records are preserved. D30/D90
 are satisfied in the S4 clocks and appended master ledger. F08 is selected,
 unstarted; Gate A unchanged, B/C/D unattempted. Research author: ChatGPT
 (GPT-6 Astra Pro).
+
+## F08 — characterization acceptance, September 30, 2026
+
+Status: proved within the stated finite fragment by written constructions and
+fresh same-assistant reconstruction. [04g](derivations/04g_characterization_acceptance.md)
+and [S1](work_logs/F08_2026-09-30_S1.md) consolidate evidence and limitations.
+No external formal verification, general proof search or novelty claim is made.
+
+| ID | Scoped result and proof | Material boundary |
+|---|---|---|
+| F08-C01 | U1–U3: native consequence equals semantic consequence of the target-unit reduct; explicit certified retyping and two constructive converse routes. [04](derivations/04_characterization.md), [04a](derivations/04a_characterization_reconstruction.md), [04b](derivations/04b_uniform_revision_characterization.md). | Finite rational CPWA syntax, positive conversions, feasible finite closed polyhedral cases, adequate resources; unrestricted full-source completeness is false. |
+| F08-C02 | U4–U6: a finite native optimum is rational and has a proof and rational attaining reduct model; strict requests have uniform strict budgets; failed validity has a rational reduct obstruction. | A reduct obstruction need not belong to the full source. A bounded search refusal is not a countermodel. |
+| F08-C03 | U7–U10: exact fixed-signature and graph-uniform full-completeness criteria, global native-theory equality by projected reduct unions, and per-context completeness by equality with the full projection. | All admitted unit-u queries; local theories use individual cases. Affine probes alone can miss nonconvex information. |
+| F08-C04 | U11: one finite trace retaining a complete dual-vertex portfolio is optimal after every admitted RHS-only revision. [04b](derivations/04b_uniform_revision_characterization.md). | Fixed matrices, query, conversions and case schema. Ordinary transport can discard future alternatives; default producer caps need not suffice. |
+| F08-C05 | U12: explicit finite CPWA characteristic probes certify source-domain inclusion and distinguish unequal global native theories. [04c](derivations/04c_information_and_withdrawal.md). | Zero-set information does not preserve provenance, empirical applicability or canonical violation magnitudes. |
+| F08-C06 | U13: a complete dual catalogue retains exact optima under row withdrawal by restricting to zero-coordinate faces; relaxation reaches finite withdrawal optima after a finite threshold. | An arbitrary missing proof is not an empty-face certificate. New joint rows can require new arguments even after optimal marginal replacement. |
+| F08-C07 | U14: the fixed mixture law has a rational least warranted report computed from its accessible joint probability vertices; strictness and cost criteria have explicit separating examples. [04d](derivations/04d_warranted_report_characterization.md). | Supplied fixed law and probability source; the (0,1) corner prevents strict reporting. No empirical calibration or unrestricted self-soundness. |
+| F08-C08 | U15: uniform native reflection along a path holds exactly with a return path or no feeding source; a four-unit/two-row function-space invariant defeats the hypothetical REF-only repair. [04e](derivations/04e_conversion_and_boundary_audit.md). | REF is not implemented. The auxiliary invariant is not a countermodel of the intended full shared-source semantics. |
+| F08-C09 | U16: typed substitution preserves/reflects all old consequences exactly through inclusion of its explicit finite CPWA image; affine surjectivity preserves the complete dual catalogue. [04f](derivations/04f_source_substitution_and_penalties.md). | Fixed interpretation/units, exact domain image; injectivity alone is insufficient. Current case-map transport is narrower than the theorem. |
+| F08-C10 | U17: native bounds are equivalent to finite row-free characteristic-violation penalties; the least nonnegative gain is rational and attained, and current violation proofs yield quantitative transfer. | Gain is query-dependent. A least universal gain need not be optimal for one new context; current requests and meanings must match. |
+| F08-C11 | U18: a finite distance-dual catalogue gives a matrix-uniform source error bound and sensitivity-factored transfer; the one-case coefficient is sharp over freely varying feasible RHS. [04h](derivations/04h_geometry_and_transfer.md). | Chosen coordinate gauge, fixed matrices and feasible cases. Weighted zero directions yield a seminorm, not a full characteristic probe. Classical polyhedral error-bound construction, no novelty claim. |
+| F08-C12 | Four finite audit modules exercise 64 tests across successful runs; seven supplied native certificates are saved and round-trip checked. | Not proof by testing. A 1,361-test full snapshot passed before the final three additions; final broad reruns failed natively. No clean final 1,364-test or CI pass claimed. |
+
+Original F05/F06/F07 implementation files are unchanged. D90 is satisfied by
+**90.589724 engaged minutes** after explicit exclusions in the appended timing
+record. F09 is selected, unstarted; Gate A unchanged, B/C/D unattempted.
+Research contributor: **Codex (GPT-6)**.

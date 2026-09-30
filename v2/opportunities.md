@@ -379,3 +379,26 @@ the broader reflective aim. The neural probe is still unstarted. F07 is complete
 at its declared scope; F08 is selected, with its exact conjecture to be chosen
 prospectively under its own forecast. No new novelty claim is made.
 Research author: ChatGPT (GPT-6 Astra Pro).
+
+## F08 completion checkpoint — September 30, 2026
+
+OPP-01 remains the lead; no ordering change is justified by test counts alone.
+F08's unit-directed completeness theorem and full-source obstruction give the
+calculus a precise boundary. OPP-04 now has a constructive optimal-retention
+result for fixed RHS families and withdrawals, plus exact source-substitution
+criteria and quantitative transfer. OPP-03 has an exact fixed-law report
+boundary and explicit distinctions between least warrant, robust loss and
+paired improvement. The geometry refinement connects source violations to
+loss sensitivity without treating small numerical error as inherently small
+value loss. These are conditional mathematical gains, not empirical premises.
+
+A bounded future F08 refinement could ask which complete dual alternatives
+can be discarded while preserving every allowed future revision and withdrawal.
+The present complete catalogue is a sufficient baseline; minimal retention
+and practical search cost are unestablished. A discriminating next step would
+be an exact parameter-domain dominance criterion with a rational witness when
+an alternative is necessary. Estimate D 45 central / 90 high, review at 45;
+smallest useful result: one correct pruning criterion and one unsafe-pruning
+counterexample. This is an optional lead, not a started task or novelty claim.
+Integrated search remains for F11 after F09/F10 and Gate B. Neural work is
+unstarted. Research contributor: **Codex (GPT-6)**.

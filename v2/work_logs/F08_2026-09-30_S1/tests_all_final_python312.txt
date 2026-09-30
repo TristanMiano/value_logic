@@ -1,0 +1,1036 @@
+EEEEEEEEEEEEEEEEEEEEEEEEEEE.EEEEEEEEEEEEEEEEEEEEEEEEEEEE...E.E
+======================================================================
+ERROR: test_all_eight_withdrawal_masks_from_the_complete_fixture (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_all_eight_withdrawal_masks_from_the_complete_fixture)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 211, in test_all_eight_withdrawal_masks_from_the_complete_fixture
+    T.restrict_rows(ctx, proof, alive)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 230, in restrict_rows
+    result = transport(ctx, new, proof, replacements, {h.name: h.name for h in ctx.cases})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 168, in transport
+    local = localize(old, proof, old_case)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 103, in localize
+    root = visit(proof.root)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 97, in visit
+    out = builder.rewrite(visit(parent), old.new, old.old)
+                          ^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 99, in visit
+    out = _append_checked_shape(builder, old, tuple(visit(p) for p in old.parents), case)
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 99, in <genexpr>
+    out = _append_checked_shape(builder, old, tuple(visit(p) for p in old.parents), case)
+                                                    ^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 99, in visit
+    out = _append_checked_shape(builder, old, tuple(visit(p) for p in old.parents), case)
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 99, in <genexpr>
+    out = _append_checked_shape(builder, old, tuple(visit(p) for p in old.parents), case)
+                                                    ^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 99, in visit
+    out = _append_checked_shape(builder, old, tuple(visit(p) for p in old.parents), case)
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 99, in <genexpr>
+    out = _append_checked_shape(builder, old, tuple(visit(p) for p in old.parents), case)
+                                                    ^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 99, in visit
+    out = _append_checked_shape(builder, old, tuple(visit(p) for p in old.parents), case)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 75, in _append_checked_shape
+    if not R.same_difference(step.new, step.old, t, s, builder.ctx.signature):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 72, in same_difference
+    return len(set(units)) == 1 and _form(sub(t, s), sig) == _form(sub(a, b), sig)
+                                    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 34, in _form
+    infer(t, sig)  # Check every child, including those multiplied by zero.
+    ^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 158, in infer
+    if infer(t.args[1], sig, env) != unit:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 127, in infer
+    sig.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+                                                    ^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'units'
+
+======================================================================
+ERROR: test_bad_dual_weights_balance_and_normalization_are_rejected (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_bad_dual_weights_balance_and_normalization_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 298, in test_bad_dual_weights_balance_and_normalization_are_rejected
+    ctx = family_context((0, 10, 20)); leaves = family_data(ctx)[0][0]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 123, in family_context
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_changed_row_direction_and_stale_context_fail (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_changed_row_direction_and_stale_context_fail)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 323, in test_changed_row_direction_and_stale_context_fail
+    ctx = family_context((0, 10, 20)); proof = family_proof(ctx)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 123, in family_context
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_current_transport_can_discard_future_optimal_alternative (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_current_transport_can_discard_future_optimal_alternative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 276, in test_current_transport_can_discard_future_optimal_alternative
+    base = family_context((0, 10, 20)); proof = family_proof(base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 123, in family_context
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_direct_conversion_preserves_entire_portfolio (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_direct_conversion_preserves_entire_portfolio)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 267, in test_direct_conversion_preserves_entire_portfolio
+    base = family_context((0, 10, 20), priced=True); proof = family_proof(base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 123, in family_context
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_duplicate_dual_point_is_sound_not_new_independent_evidence (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_duplicate_dual_point_is_sound_not_new_independent_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 313, in test_duplicate_dual_point_is_sound_not_new_independent_evidence
+    ctx = family_context((0, 10, 20)); clauses, points, _, _ = family_data(ctx)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 123, in family_context
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_empty_supplied_portfolio_is_not_an_unboundedness_certificate (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_empty_supplied_portfolio_is_not_an_unboundedness_certificate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 318, in test_empty_supplied_portfolio_is_not_an_unboundedness_certificate
+    ctx = family_context((0, 10, 20)); clauses, points, _, _ = family_data(ctx)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 123, in family_context
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_finite_relaxation_threshold_matches_actual_withdrawal (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_finite_relaxation_threshold_matches_actual_withdrawal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 228, in test_finite_relaxation_threshold_matches_actual_withdrawal
+    ctx = family_context((-2, 4, 6)); proof = family_proof(ctx)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 123, in family_context
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_global_hidden_cases_keep_one_literal_pair (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_global_hidden_cases_keep_one_literal_pair)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 288, in test_global_hidden_cases_keep_one_literal_pair
+    first = family_context((0, 10, 20)); other = family_context((-2, 4, 8))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 123, in family_context
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_inaccessible_positive_multiplier_is_rejected (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_inaccessible_positive_multiplier_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 308, in test_inaccessible_positive_multiplier_is_rejected
+    ctx = U.one_way_fixture()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_mutated_budget_is_rejected (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_mutated_budget_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 334, in test_mutated_budget_is_rejected
+    ctx = family_context((0, 10, 20)); proof = family_proof(ctx); root = proof.root
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 123, in family_context
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_new_joint_row_is_not_recovered_by_optimal_old_marginals (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_new_joint_row_is_not_recovered_by_optimal_old_marginals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 237, in test_new_joint_row_is_not_recovered_by_optimal_old_marginals
+    old = K.context(('x', 'y'), (K.Row(x, K.num(1)), K.Row(y, K.num(1))), {'x': 0, 'y': 0})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_uniform_optimal_replay_125_rhs_revisions_and_attaining_models (v2.checks.f08_revision_portfolio.F08RevisionPortfolioTests.test_uniform_optimal_replay_125_rhs_revisions_and_attaining_models)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 253, in test_uniform_optimal_replay_125_rhs_revisions_and_attaining_models
+    base = family_context((0, 10, 20)); proof = family_proof(base)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 123, in family_context
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_converted_separator_keeps_correlated_coordinates (v2.checks.f08_revision_portfolio.F08SourceInformationTests.test_converted_separator_keeps_correlated_coordinates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 369, in test_converted_separator_keeps_correlated_coordinates
+    ctx = U.one_way_fixture(3); term, proof = union_separator(ctx, 'U')
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_empty_row_case_makes_union_whole_space (v2.checks.f08_revision_portfolio.F08SourceInformationTests.test_empty_row_case_makes_union_whole_space)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 363, in test_empty_row_case_makes_union_whole_space
+    term, proof = union_separator(ctx, 'U')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 161, in union_separator
+    paths = U.paths_to(ctx.signature, target); zero = K.num(0, target)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 23, in paths_to
+    signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_foreign_rows_do_not_appear_in_native_characteristic_term (v2.checks.f08_revision_portfolio.F08SourceInformationTests.test_foreign_rows_do_not_appear_in_native_characteristic_term)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 351, in test_foreign_rows_do_not_appear_in_native_characteristic_term
+    term, proof = union_separator(ctx, 'U')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 161, in union_separator
+    paths = U.paths_to(ctx.signature, target); zero = K.num(0, target)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 23, in paths_to
+    signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_gap_has_native_zero_separator_and_same_pair_across_cases (v2.checks.f08_revision_portfolio.F08SourceInformationTests.test_gap_has_native_zero_separator_and_same_pair_across_cases)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 342, in test_gap_has_native_zero_separator_and_same_pair_across_cases
+    ctx = gap_context(); term, proof = union_separator(ctx, 'U')
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_revision_portfolio.py", line 161, in union_separator
+    paths = U.paths_to(ctx.signature, target); zero = K.num(0, target)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 23, in paths_to
+    signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_approximate_transfer_is_sound_but_can_be_slack (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_approximate_transfer_is_sound_but_can_be_slack)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 191, in test_approximate_transfer_is_sound_but_can_be_slack
+    ctx = cap_context(F(1, 2)); b = K.Builder(ctx, 'h')
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 41, in cap_context
+    return replace(K.context(sources, rows, witness, scope='F08-transfer-v1'), revision=revision)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_deduction_has_no_source_rows_and_gain_one (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_deduction_has_no_source_rows_and_gain_one)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 176, in test_deduction_has_no_source_rows_and_gain_one
+    ctx = cap_context(); proof = hinge_deduction(ctx)
+          ^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 41, in cap_context
+    return replace(K.context(sources, rows, witness, scope='F08-transfer-v1'), revision=revision)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_extension_rejects_changed_rows_meanings_and_case (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_extension_rejects_changed_rows_meanings_and_case)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 149, in test_extension_rejects_changed_rows_meanings_and_case
+    old = cap_context(0); b = K.Builder(old, 'h'); proof = b.proof(b.row(0))
+          ^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 41, in cap_context
+    return replace(K.context(sources, rows, witness, scope='F08-transfer-v1'), revision=revision)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_extension_revalidates_stale_and_corrupt_input (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_extension_revalidates_stale_and_corrupt_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 157, in test_extension_revalidates_stale_and_corrupt_input
+    old = cap_context(0); b = K.Builder(old, 'h'); proof = b.proof(b.row(0))
+          ^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 41, in cap_context
+    return replace(K.context(sources, rows, witness, scope='F08-transfer-v1'), revision=revision)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_geometry_gain_and_attainment_across_nine_exact_cases (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_geometry_gain_and_attainment_across_nine_exact_cases)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 86, in test_geometry_gain_and_attainment_across_nine_exact_cases
+    ctx, proof, gain, point = geometry_fixture(e, relaxation)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 74, in geometry_fixture
+    ctx = K.context(('x', 'y'), rows, {'x': 0, 'y': 0}, scope='F08-geometry-v1')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_injective_diagonal_adds_a_correlation (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_injective_diagonal_adds_a_correlation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 226, in test_injective_diagonal_adds_a_correlation
+    old = cap_context(sources=(('x', 'U'), ('y', 'U')))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 41, in cap_context
+    return replace(K.context(sources, rows, witness, scope='F08-transfer-v1'), revision=revision)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_local_extensions_aggregate_only_after_every_case_is_proved (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_local_extensions_aggregate_only_after_every_case_is_proved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 165, in test_local_extensions_aggregate_only_after_every_case_is_proved
+    old = cap_context(0); second = replace(old.cases[0], name='second')
+          ^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 41, in cap_context
+    return replace(K.context(sources, rows, witness, scope='F08-transfer-v1'), revision=revision)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_onto_affine_substitution_retains_the_offset (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_onto_affine_substitution_retains_the_offset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 215, in test_onto_affine_substitution_retains_the_offset
+    old = cap_context(3); b = K.Builder(old, 'h'); proof = b.proof(b.row(0))
+          ^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 41, in cap_context
+    return replace(K.context(sources, rows, witness, scope='F08-transfer-v1'), revision=revision)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_row_free_deduction_substitutes_nonlinear_sources (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_row_free_deduction_substitutes_nonlinear_sources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 205, in test_row_free_deduction_substitutes_nonlinear_sources
+    old = cap_context(); new = cap_context(sources=(('z', 'U'), ('w', 'U')))
+          ^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 41, in cap_context
+    return replace(K.context(sources, rows, witness, scope='F08-transfer-v1'), revision=revision)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_single_case_global_proof_extends_only_as_local (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_single_case_global_proof_extends_only_as_local)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 136, in test_single_case_global_proof_extends_only_as_local
+    old = cap_context(0); b = K.Builder(old, 'h')
+          ^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 41, in cap_context
+    return replace(K.context(sources, rows, witness, scope='F08-transfer-v1'), revision=revision)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_weighted_report_gain_one_and_strict_transfer_boundary (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_weighted_report_gain_one_and_strict_transfer_boundary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 108, in test_weighted_report_gain_one_and_strict_transfer_boundary
+    original = W.rectangle_context(); violation, _ = P.union_separator(original, 'P')
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_warranted_report.py", line 43, in rectangle_context
+    return K.context((('p', 'P'), ('s', 'P')), rows, {'p': 1, 's': F(1, 4)},
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_zero_matrix_parameter_changes_the_query_to_unbounded (v2.checks.f08_transfer_audit.F08TransferAuditTests.test_zero_matrix_parameter_changes_the_query_to_unbounded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_transfer_audit.py", line 96, in test_zero_matrix_parameter_changes_the_query_to_unbounded
+    ctx = K.context(('x', 'y'), (K.Row(x, K.num(0)), K.Row(K.scale(-1, x), K.num(0))),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: setUpClass (v2.checks.f08_unit_characterization.F08FiniteCaseConstructionTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 439, in setUpClass
+    cls.ctx, cls.proof, cls.methods = three_region_example()
+                                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 232, in three_region_example
+    ctx = K.context(('x', 'z'), (K.Row(K.scale(-1, x), K.num(1)), K.Row(x, K.num(2))),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_affine_certificate_rejects_bad_multipliers_and_budget (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_affine_certificate_rejects_bad_multipliers_and_budget)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 357, in test_affine_certificate_rejects_bad_multipliers_and_budget
+    ctx = one_way_fixture(3); reduced = unit_reduct(ctx, 'P')
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_affine_certificate_rejects_unconverted_nonzero_row (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_affine_certificate_rejects_unconverted_nonzero_row)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 364, in test_affine_certificate_rejects_unconverted_nonzero_row
+    ctx = one_way_fixture()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_all_three_unit_graphs_against_independent_transitive_closure (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_all_three_unit_graphs_against_independent_transitive_closure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 328, in test_all_three_unit_graphs_against_independent_transitive_closure
+    self.assertEqual(set(paths_to(sig, target)), ancestors)
+                         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 23, in paths_to
+    signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_constant_comparison_with_no_rows (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_constant_comparison_with_no_rows)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 374, in test_constant_comparison_with_no_rows
+    ctx = unit_reduct(one_way_fixture(), 'P')
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_converted_context_is_same_reduct_not_same_full_source (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_converted_context_is_same_reduct_not_same_full_source)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 333, in test_converted_context_is_same_reduct_not_same_full_source
+    ctx = one_way_fixture(3)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_disconnected_unit_does_not_require_conversion (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_disconnected_unit_does_not_require_conversion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 296, in test_disconnected_unit_does_not_require_conversion
+    self.assertTrue(source_closed(sig, 'U'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 51, in source_closed
+    ancestors = paths_to(signature, target)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 23, in paths_to
+    signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_empty_path_and_nested_nonlinear_children (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_empty_path_and_nested_nonlinear_children)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 415, in test_empty_path_and_nested_nonlinear_children
+    ctx = one_way_fixture()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_empty_source_signature_weakens_graph_only_requirement (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_empty_source_signature_weakens_graph_only_requirement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 300, in test_empty_source_signature_weakens_graph_only_requirement
+    sig = replace(one_way_fixture().signature, sources=())
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_exact_converted_proof_grafts_to_current_request (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_exact_converted_proof_grafts_to_current_request)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 341, in test_exact_converted_proof_grafts_to_current_request
+    ctx = one_way_fixture(3); converted, _ = converted_context(ctx, 'U')
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_foreign_dead_let_does_not_invalidate_dependency_lemma (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_foreign_dead_let_does_not_invalidate_dependency_lemma)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 379, in test_foreign_dead_let_does_not_invalidate_dependency_lemma
+    ctx = one_way_fixture(); sig = ctx.signature
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_inaccessible_row_can_hide_arbitrarily_large_gap (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_inaccessible_row_can_hide_arbitrarily_large_gap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 280, in test_inaccessible_row_can_hide_arbitrarily_large_gap
+    ctx = one_way_fixture(upper); reduced = unit_reduct(ctx, 'P')
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_invalid_path_and_unknown_unit_fail (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_invalid_path_and_unknown_unit_fail)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 423, in test_invalid_path_and_unknown_unit_fail
+    ctx = one_way_fixture()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_lattice_conversion_requires_more_than_collected_identity (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_lattice_conversion_requires_more_than_collected_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 392, in test_lattice_conversion_requires_more_than_collected_identity
+    ctx = one_way_fixture(); a, c = K.src('x'), K.num(0, 'P')
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_multiedge_path_with_fractional_gain (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_multiedge_path_with_fractional_gain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 405, in test_multiedge_path_with_fractional_gain
+    ctx = one_way_fixture()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_one_way_reduct_countermodel_is_not_original_countermodel (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_one_way_reduct_countermodel_is_not_original_countermodel)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 266, in test_one_way_reduct_countermodel_is_not_original_countermodel
+    ctx = one_way_fixture(); reduced = unit_reduct(ctx, 'P')
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_return_path_repairs_inference_even_with_nonreciprocal_factors (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_return_path_repairs_inference_even_with_nonreciprocal_factors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 287, in test_return_path_repairs_inference_even_with_nonreciprocal_factors
+    ctx = one_way_fixture(reverse=True); b = K.Builder(ctx, 'h')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_source_after_fork_can_be_closed (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_source_after_fork_can_be_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 312, in test_source_after_fork_can_be_closed
+    self.assertTrue(source_closed(sig, 'U'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 51, in source_closed
+    ancestors = paths_to(signature, target)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 23, in paths_to
+    signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_source_closed_direction (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_source_closed_direction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 274, in test_source_closed_direction
+    sig = one_way_fixture().signature
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_source_upstream_of_fork_is_relevant (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_source_upstream_of_fork_is_relevant)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 306, in test_source_upstream_of_fork_is_relevant
+    self.assertFalse(source_closed(sig, 'U'))
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 51, in source_closed
+    ancestors = paths_to(signature, target)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 23, in paths_to
+    signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_unused_foreign_instruction_is_not_root_evidence (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_unused_foreign_instruction_is_not_root_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 386, in test_unused_foreign_instruction_is_not_root_evidence
+    ctx = one_way_fixture(); b = K.Builder(ctx, 'h')
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_zero_conversion_is_outside_fragment (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_zero_conversion_is_outside_fragment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 430, in test_zero_conversion_is_outside_fragment
+    ctx = one_way_fixture()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_zero_weight_does_not_import_foreign_evidence (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_zero_weight_does_not_import_foreign_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 369, in test_zero_weight_does_not_import_foreign_evidence
+    ctx = one_way_fixture()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 204, in one_way_fixture
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_every_smaller_test_report_has_an_exact_source_countermodel (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_every_smaller_test_report_has_an_exact_source_countermodel)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_warranted_report.py", line 64, in test_every_smaller_test_report_has_an_exact_source_countermodel
+    ctx = rectangle_context(); point = {'p': F(1), 's': F(1, 4)}
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_warranted_report.py", line 43, in rectangle_context
+    return K.context((('p', 'P'), ('s', 'P')), rows, {'p': 1, 's': F(1, 4)},
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_higher_report_has_strict_native_margin_without_corner (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_higher_report_has_strict_native_margin_without_corner)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_warranted_report.py", line 71, in test_higher_report_has_strict_native_margin_without_corner
+    ctx = rectangle_context(); r = F(3, 4)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_warranted_report.py", line 43, in rectangle_context
+    return K.context((('p', 'P'), ('s', 'P')), rows, {'p': 1, 's': F(1, 4)},
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_joint_segment_has_exact_native_boundary_for_eight_reports (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_joint_segment_has_exact_native_boundary_for_eight_reports)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_warranted_report.py", line 79, in test_joint_segment_has_exact_native_boundary_for_eight_reports
+    ctx = segment_context(); self.assertEqual(least_report(((F(1), F(0)), (F(0), F(1)))), F(1, 2))
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_warranted_report.py", line 51, in segment_context
+    return K.context((('p', 'P'), ('s', 'P')), rows, {'p': 1, 's': 0},
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_rectangle_least_report_is_four_sevenths_and_native (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_rectangle_least_report_is_four_sevenths_and_native)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_warranted_report.py", line 59, in test_rectangle_least_report_is_four_sevenths_and_native
+    ctx = rectangle_context(); new, old = risk(r), K.num(r, 'P')
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_warranted_report.py", line 43, in rectangle_context
+    return K.context((('p', 'P'), ('s', 'P')), rows, {'p': 1, 's': F(1, 4)},
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+======================================================================
+ERROR: test_zero_denominator_corner_never_yields_strict_report (v2.checks.f08_warranted_report.F08WarrantedReportTests.test_zero_denominator_corner_never_yields_strict_report)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_warranted_report.py", line 93, in test_zero_denominator_corner_never_yields_strict_report
+    ctx = segment_context(); point = {'p': F(0), 's': F(1)}
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_warranted_report.py", line 51, in segment_context
+    return K.context((('p', 'P'), ('s', 'P')), rows, {'p': 1, 's': 0},
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 297, in context
+    c.validate(); return c
+    ^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 245, in validate
+    self.signature.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'cell' object is not callable
+
+----------------------------------------------------------------------
+Ran 61 tests in 0.170s
+
+FAILED (errors=57)

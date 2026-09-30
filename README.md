@@ -6,7 +6,7 @@ Value Logic is a research project about reasoning with useful but fallible model
 
 The project's proposed starting point is **value**: how a model, theory, representation, or course of action serves an intended purpose, at a tolerable error and resource cost. The ambition is not just to attach usefulness scores to otherwise conventional judgments. It is to investigate a calculus in which semantic objects and inference rules make pragmatic value central, with familiar truth-based reasoning potentially recovered within a suitable fragment.
 
-**Phase one is complete. Phase two is building the value-based calculus first. F01–F07 are complete at their task scopes; F07 establishes soundness of the explicit finite fragment. Gate A passed its foundation-readiness review. The next task is F08, a harder characterization result, and is unstarted. The semantic core remains provisional.** The motivation below is the continuing research program. The particular constructions developed so far are realizations of it, not permanent foundations.
+**Phase one is complete. Phase two is building the value-based calculus first. F01–F08 are complete at their task scopes. F07 establishes finite-fragment soundness; F08 characterizes native consequence through directed unit access, with D90 satisfied. F09 is next and unstarted. Gate A passed its foundation-readiness review; B–D remain unattempted. The semantic core remains provisional.** The motivation below is the continuing research program. The particular constructions developed so far are realizations of it, not permanent foundations.
 
 ## Motivation: useful does not mean final
 
@@ -54,7 +54,7 @@ evaluators are active capability targets. Neural interpretation seeks structure
 learned by ordinary networks, not only architectures built to implement a logic.
 [DIR01](v2/decisions/DIR01_loss_grounded_reflective_direction.md) specifies this
 direction, its scope and its open choices; the [opportunity register](v2/opportunities.md)
-guides bounded agent initiative. F03–F06 are complete at their task scopes; [Gate A](v2/checkpoints/A_1.md) passed, and F07 is next and unstarted.
+guides bounded agent initiative. F03–F08 are complete at their task scopes; [Gate A](v2/checkpoints/A_1.md) passed, and F09 is next.
 
 ## What phase one established
 
@@ -89,7 +89,7 @@ The [candidate comparison](v2/foundations/02_candidate_semantics.md) and [contin
 
 **F04 is complete at its candidate-discrimination scope.** The [completion reconstruction](v2/derivations/01e_equal_information_completion.md) compares source-grounded arithmetic certificates with continuation-value formulations, including proxy alignment, shared-source composition, bounded reflection and prospective neural tests. The [completion record](v2/work_logs/F04_2026-09-26_S6.md) preserves the evidence and measured effort.
 
-**Next: F07 — soundness for an explicit fragment.** [F05](v2/foundations/03_provisional_core.md) specifies the provisional source-aware loss semantics; its [completion reconstruction](v2/foundations/03b_observation_and_revision_audit.md) retains the continuation alternative and operational limits. [Gate A](v2/checkpoints/A_1.md) passed at foundation-selection readiness; no permanent calculus has been chosen, and later gates remain unattempted. [F06](v2/derivations/02_inference_rules.md) now supplies the initial rules and checked finite derivations. Later work must still establish general soundness and characterization results, and an executable reasoner with evidence of useful composition. The authoritative status and continuation pointer are in [TODO_v2.md](TODO_v2.md).
+**Next task: F09 — Boolean, phase-one, and scaling comparisons (unstarted).** [F05](v2/foundations/03_provisional_core.md) specifies the provisional source-aware loss semantics, [F06](v2/derivations/02_inference_rules.md) supplies the rules, and [F07](v2/derivations/03f_soundness_acceptance.md) establishes finite-fragment soundness. [F08](v2/derivations/04_characterization.md) proves completeness for the target-unit reduct and gives explicit conditions for full-source completeness. Its optional results cover optimal retained replay, withdrawal, source substitution and conditional report bounds. [The work record](v2/work_logs/F08_2026-09-30_S1.md) records **90.589724 engaged D minutes**, attribution to **Codex (GPT-6)**, and validation limits: 64 F08 tests passed across successful runs; a 1,361-test full snapshot passed, while final broad reruns hit native interpreter failures. Gate A retains its readiness PASS; later gates and F11 are unattempted. [TODO_v2.md](TODO_v2.md) is authoritative.
 
 The former contract-semantics and inverse-task-recovery plan is preserved in [TODO_v2_contracts_archive.md](TODO_v2_contracts_archive.md). It remains a possible future direction, alongside model substitution, inquiry and self-revision, learning, and policy interpretability. There is no fixed limit on later phases.
 
