@@ -1,0 +1,19 @@
+................................E.............
+======================================================================
+ERROR: test_typed_case_pruning_changes_native_information (v2.checks.f09_optional.F09OptionalTests.test_typed_case_pruning_changes_native_information)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f09_optional.py", line 269, in test_typed_case_pruning_changes_native_information
+    old,new,proof,expected = typed_refinement_fixture()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f09_optional.py", line 110, in typed_refinement_fixture
+    H.receive(new,proof,expected)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f07_soundness.py", line 134, in receive
+    raise AuditError('Valid trace does not prove the requested pair and scope.')
+v2.checks.f07_soundness.AuditError: Valid trace does not prove the requested pair and scope.
+
+----------------------------------------------------------------------
+Ran 46 tests in 2.435s
+
+FAILED (errors=1)

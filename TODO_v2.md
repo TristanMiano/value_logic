@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 30, 2026 UTC (September 29 in America/Los_Angeles).
-Status: F01–F08 complete at their task scopes; Gate A passed at readiness scope; F09 next and unstarted; B/C/D unattempted; the semantic core remains provisional.
+Last updated: September 30, 2026 UTC (September 30 in America/Los_Angeles).
+Status: F01–F09 complete at their task scopes; Gate A passed at readiness scope; F10 next, unstarted; B/C/D unattempted; the semantic core remains provisional.
 
 ## Resume here
 
@@ -11,7 +11,7 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F09 — Boolean, phase-one, and scaling comparisons (unstarted).**
+**Next task: F10 — external theorem and contribution audit (unstarted).**
 
 **Active repair queue: empty.**
 
@@ -767,7 +767,7 @@ to publication with an unsound core simply because the planned queue ended.
   a novelty/empirical claim. **Select F09, unstarted.** Research contributor:
   **Codex (GPT-6)**. Gate A is unchanged; B/C/D are unattempted.
 
-- [ ] **F09 — Boolean, phase-one, and scaling comparisons.**
+- [x] **F09 — Boolean, phase-one, and scaling comparisons.**
 
   Principal artifact: `v2/derivations/05_fragments_and_comparisons.md`.
   Establish precisely which Boolean fragment, if any, is recovered; distinguish
@@ -780,6 +780,21 @@ to publication with an unsound core simply because the planned queue ended.
   **Done when:** at least one exact fragment relationship and one failed
   overgeneralization are proved; remaining incompatibilities are explicit;
   D60 is recorded.
+
+  **Completion — September 30, 2026:** [05](v2/derivations/05_fragments_and_comparisons.md)
+  establishes exact Boolean entailment, phase-one status/interval/polyhedral
+  adapters, and typed affine consequence laws, with explicit continuity,
+  joint-information, scaling and bounded-code obstructions. Optional work gives
+  component Boolean algebras, robust rounding, exact finite grids, nonlinear
+  budget moduli, profile-conflict information and a constructive affine proof
+  transport on paper. The general compiler remains unimplemented; its checked
+  common-scale special case is retained. [S1](v2/work_logs/F09_2026-09-30_S1.md)
+  records **60.091745 engaged D minutes**, **46 passing F09 tests**, and
+  **8 native certificates** checked and round-tripped through the unchanged
+  receiver. Broader tests remain unverified after bounded native Python failures.
+  No novelty, external formal verification, full phase-one embedding or later
+  gate is claimed. Research contributor: **Codex (GPT-6)**.
+  **Select F10, unstarted.** Gate A is unchanged; B/C/D remain unattempted.
 
 - [ ] **F10 — external theorem and contribution audit.**
 

@@ -10,6 +10,17 @@ The repository is a research prototype, not an installed application. There is n
 
 The mathematical explanations remain in [`formalism/`](formalism/), [`ml/`](ml/), and [`experiments/`](experiments/). The code is an executable companion: it catches mistakes and supplies finite witnesses, but it is not a proof assistant and does not make a theorem true merely by passing a test.
 
+Phase-two theory and checks are in [`v2/`](v2/README.md). F01–F09 are complete
+at their task scopes; F10 is next, unstarted. F09 adds
+[`f09_fragments.py`](v2/checks/f09_fragments.py) (Boolean native certificates and
+phase-one adapters), [`f09_scaling.py`](v2/checks/f09_scaling.py) (affine term/source
+presentations and a checked common-scale proof compiler),
+[`f09_optional.py`](v2/checks/f09_optional.py) (finite geometric/comparison
+witnesses), and [`f09_comparison_report.py`](v2/checks/f09_comparison_report.py)
+(eight checked, serialized native certificates). Three `test_v2_f09_*.py`
+wrappers expose 46 focused tests. The general affine certificate compiler in
+the F09 paper construction is not implemented by these modules.
+
 ## The project in one picture
 
 ```text

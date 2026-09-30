@@ -1,7 +1,7 @@
 # Phase Two Claim Ledger
 
-Current status (September 30, 2026): **F01–F08 complete at their task scopes;
-F09 next and unstarted.** F07 acceptance is the explicit finite-fragment
+Current status (September 30, 2026): **F01–F09 complete at their task scopes;
+F10 next, unstarted.** F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
 soundness theorem, not a permanent core or later gate. Gate A retains its
 foundation-readiness PASS; B/C/D are unattempted. The dated ledger entries and
 earlier opening below retain historical statuses.
@@ -815,4 +815,29 @@ No external formal verification, general proof search or novelty claim is made.
 Original F05/F06/F07 implementation files are unchanged. D90 is satisfied by
 **90.589724 engaged minutes** after explicit exclusions in the appended timing
 record. F09 is selected, unstarted; Gate A unchanged, B/C/D unattempted.
+
+## F09 — fragment and presentation acceptance, September 30, 2026
+
+The [principal map](derivations/05_fragments_and_comparisons.md),
+[self-review](derivations/05g_comparison_reconstruction.md), and
+[S1](work_logs/F09_2026-09-30_S1.md) state the evidence and boundaries.
+
+| ID | Accepted claim and evidence | Restriction |
+|---|---|---|
+| F09-C01 | B1–B2: exact Boolean loss interpretation and classical sequent equivalence, with a native finite-case certificate producer. [05a](derivations/05a_boolean_and_phase_one.md). | Boolean source cases; continuous interval values and arbitrary additive terms are not this fragment. The producer's six-atom cap is an implementation bound. |
+| F09-C02 | B3–B5: exact status-meet, interval/rectangle and finite-polyhedral region adapters; joint-versus-atomwise agreement criterion. | Conditional on phase-one well-formedness and evidence contracts; no full provenance, arbitrary risk-space or diagnostic embedding. |
+| F09-C03 | S1–S2: positive typed affine presentations preserve native consequence; decreasing affine maps reverse the compared pair. [05b](derivations/05b_scaling_and_bounded_domains.md). | Operations, rows and conversions must move together. Blind instruction relabeling fails beyond the checked common-scale special case. |
+| F09-C04 | S3: exact all-rational-budget comparison forces affinity without an initial regularity assumption; one nonzero threshold suffices for global finite CPWA maps. | All baselines are quantified. Explicit periodic and bounded-source examples separate weaker contracts. |
+| F09-C05 | S4–S6: signed secant transfer, bounded scalar/vector CPWA and decoder obstructions, and loss of uniform strict gaps under bounded monotone recoding. | Exact global preservation on unbounded domains; useful restricted, approximate or non-CPWA encodings are not excluded. |
+| F09-C06 | B6–B8: native Boolean observations are precisely component events; robust bit rounding and lattice/complement stability, with residual amplification counterexamples. [05c](derivations/05c_boolean_observables_and_robustness.md). | Relevant projected reduct and finite closed polyhedral geometry. Faithful free n-atom interpretation needs at least 2^n components. |
+| F09-C07 | B9–B10: exact finite-grid optimum for lattice/complement expressions; correlated-source and residual counterfamilies. [05d](derivations/05d_exact_finite_grids.md). | Full independent cube and stated constants; no universal residual grid or generic optimizer. |
+| F09-C08 | S7: least sound signed increment modulus, finite-CPWA formula, and decoded nonlinear presentation under a sufficient reachability condition. [05e](derivations/05e_nonlinear_budget_maps.md). | Budget transfer alone does not transport operations. Arbitrary typed feasible-case pruning can change native theory. |
+| F09-C09 | B11–B13: discontinuous assessment obstruction; exact marginal endpoint and fixed-profile conflict summaries; arity, Boolean-component and worst-case information bounds. [05f](derivations/05f_phase_one_information_boundary.md). | Specified consumers and fixed source contracts. Antichain enumeration size alone is not a minimal-representation lower bound. |
+| F09-C10 | S8: explicit finite reconstruction of a supplied proof under positive unit-specific affine presentations. [05h](derivations/05h_affine_certificate_transport.md). | Paper construction and same-assistant rule audit; general compiler, complexity and RHS-replay commutation are not implemented/proved here. |
+| F09-C11 | 46 focused tests passed; eight supplied native certificates were checked, received and round-tripped. | No proof by testing, no tests of the unimplemented S8 compiler. Broad runs failed natively after bounded retries; no full-suite/CI pass is claimed. |
+
+**60.091745 engaged D minutes** meet D60. No external literature audit or novelty
+claim was added; that remains F10. F10 is next, unstarted. Gate A and the
+provisional core are unchanged; B/C/D and F11 remain unattempted.
+Research contributor: **Codex (GPT-6)**.
 Research contributor: **Codex (GPT-6)**.

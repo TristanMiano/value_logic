@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: F08 characterization acceptance, September 30, 2026 (UTC).
-Status: **F01–F08 complete at their task scopes; Gate A passed at readiness scope; F09 next and unstarted; B/C/D unattempted; the semantic core remains provisional**.
+Version: F09 comparison acceptance, September 30, 2026 (UTC).
+Status: **F01–F09 complete at their task scopes; Gate A passed at readiness scope; F10 next, unstarted; B/C/D unattempted; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -671,7 +671,40 @@ source-free penalties and distance duals give U17/U18. U14 applies these results
 to the separately supplied mixture law. [04g](derivations/04g_characterization_acceptance.md)
 records the noncircular construction and the local-extension correction.
 
-F08 is complete with **90.589724 engaged D minutes**; F09 is next and unstarted.
+F08 is complete with **90.589724 engaged D minutes**. At this F08 checkpoint,
+F09 was the next selected task; the later amendment below supersedes that pointer.
 Gate A is unchanged; F09/F10 and a separate Gate B review are required before
 F11. No integrated optimizer, external formal review or global novelty claim
 is included. Research contributor: **Codex (GPT-6)**.
+
+## F09 comparison acceptance — September 30, 2026
+
+The [comparison map](derivations/05_fragments_and_comparisons.md) makes three
+distinct contracts explicit. Boolean losses on {0,1} interpret finite classical
+entailment by a native zero-budget comparison on Boolean source cases. Phase-one
+status meets and specified numerical/region consumers have exact adapters,
+while well-formedness, evidence provenance and joint source information remain
+separate. Positive typed affine changes preserve native consequence when terms,
+rows, conversions and allowances are transported consistently.
+
+Continuity, missing joint information, nonlinear budget distortion and bounded
+finite-CPWA encoding supply explicit obstructions to stronger identifications.
+Optional results identify the accessible component Boolean algebra, robust bit
+rounding, exact lattice/complement grids, sharp signed nonlinear budget maps,
+and minimal profile conflicts. A paper construction transports supplied native
+proofs under general positive affine presentations; the implemented producer
+still has its narrower common-positive-scale contract. Nonlinear source
+refinement is justified under a stated target reachability condition, not for
+an arbitrary directed-unit graph. No full phase-one embedding is asserted.
+
+Dependency map: F05 syntax/source contracts + F06/F07 native rules/soundness +
+F08 target-reduct completeness -> B1–B13 and S1–S7. S8 reconstructs a supplied
+proof using collected forms and F08's forward-path lattice lemma, without new
+semantic proof search. These are same-assistant proofs and finite audits; F10
+must assess their external antecedents and contribution boundary.
+
+F09 is complete with **60.091745 engaged D minutes**, **46 passing F09 tests**
+and **8 checked, round-tripped native certificates**. Broader tests remain
+unverified after bounded native Python failures. F10 is next, unstarted; Gate A
+retains its readiness PASS and B/C/D are unattempted. No original kernel was
+changed. Research contributor: **Codex (GPT-6)**.

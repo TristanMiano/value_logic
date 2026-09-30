@@ -258,3 +258,20 @@ gauge, with unweighted / weighted coordinate sensitivities. These are neither
 confidence probabilities nor native infinite budget literals. `r_*` is the
 least warranted report for the explicitly fixed mixture law in 04d.
 Research contributor: **Codex (GPT-6)**.
+
+## F09 comparison notation (translations and metatheory)
+
+`L(A)`: Boolean loss of formula A (true=0, false=1); `P=max L(premises)`.
+`d(t)=min(|t|,|t-1|)`: distance to the Boolean carrier, not probability.
+`h_u(x)=a_u*x+c_u`, a_u>0: declared rational affine presentation in unit u.
+`H_u(t)`: transported native term macro; budget b becomes a_u*b.
+`C_u(F)`: S8's canonical root-unit reification of an old collected form F;
+`E_vw`: normalized forward-path retyping, not an inverse conversion rule.
+`Omega_h(b)=sup_x(h(x+b)-h(x))`: least sound signed increment bound; a numerical
+transfer law, not an unchanged native arithmetic rule.
+`A_i={x:f_i(x)<=0}`: accepted source region for requirement i.
+`S`: universally accepted indices; `F`: antichain of minimal jointly impossible
+required sets in B13. These are explicit observation summaries, not replacements
+for the phase-one evidence/diagnostic payload. Symbols are local to the cited
+[comparison notes](derivations/05_fragments_and_comparisons.md).
+Research contributor: **Codex (GPT-6)**.

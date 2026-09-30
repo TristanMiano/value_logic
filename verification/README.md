@@ -2,6 +2,15 @@
 
 This directory began as a compact, standard-library Python reference for the finite witness in [`formalism/05a_integration.md`](../formalism/05a_integration.md). It now also tests the Task 20 neural implementation, which requires the frozen NumPy/PyTorch runtime recorded in [`experiments/implementation_v1.json`](../experiments/implementation_v1.json). It remains verification infrastructure rather than a proof-assistant formalization.
 
+Phase two is complete through F09 at task scope; F10 is next, unstarted. The
+three `test_v2_f09_*.py` wrappers run **46 focused comparison tests**, which
+passed locally. Eight native certificates also passed the unchanged receiver
+and serialization round trip. Full-suite and combined F08/F09 attempts ended
+in native Python failures after bounded retries, so they are not reported as
+passes. See the [F09 record](../v2/work_logs/F09_2026-09-30_S1.md) and
+[phase-two README](../v2/README.md) for exact commands and scope. These tests do
+not implement or verify the optional general affine certificate compiler.
+
 The implementation separates request well-formedness (`WF`) from meaningful three-valued atom assessment (`K_3 = {refuted, open, supported}`). Finite meet plus `WF` derives the four public outcomes. Indexed diagnostics are a disjoint sum retaining exactly the applicable witness, obstacle, or counterwitness plus safety flags and provenance; there is intentionally no closed reason-code enumeration. Missing evidence is an open diagnostic, while an omitted diagnostic record makes a purported well-formed fixture invalid.
 
 From the repository root, run:

@@ -402,3 +402,34 @@ smallest useful result: one correct pruning criterion and one unsafe-pruning
 counterexample. This is an optional lead, not a started task or novelty claim.
 Integrated search remains for F11 after F09/F10 and Gate B. Neural work is
 unstarted. Research contributor: **Codex (GPT-6)**.
+
+## F09 completion checkpoint — September 30, 2026
+
+OPP-01 remains the lead. F09 distinguishes exact logical/evidence interfaces
+from numerical resemblance, and strengthens the comparison through component
+geometry and joint-profile information. OPP-02 gains explicit affine controls
+and nonlinear/bounded failure modes for future representation studies; this is
+not evidence about a trained network. OPP-04 gains a paper reconstruction for
+affine certificate transport while retaining context, cases and proof-minimum
+parents. Its commutation with RHS replay is not established. No ranking change
+or new novelty claim follows merely from these additional results.
+
+The clearest optional F09 continuation is to implement and check the
+[S8 construction](derivations/05h_affine_certificate_transport.md). Closest
+checked antecedents are F08's forward-path lattice equality producer and F09's
+common-scale trace compiler. The general unit-specific affine algorithm is
+currently paper-only. Discriminating tests should include one-way edges,
+heterogeneous scales, nonzero origins, nested residuals, negative allowances,
+lexical lets and exact all-case query pairs. Benefit: a reusable producer that
+preserves existing certificates under declared affine coordinates without
+integrated proof search. Prospective central/high effort: **E 35/60, D 10/20,
+O 5/10 minutes**; review after E35 or the first unresolved proof-shape failure.
+Smallest useful stopping point: a checked affine lattice/endpoint bridge
+producer plus the two blind-relabeling counterexamples repaired through the
+unchanged receiver. Full S8 acceptance would cover all native rules. This is
+an offered optional continuation, not a started task or a substitute for F10.
+
+The 60-minute derivation floor proved useful: required comparisons were ready
+earlier, and the remaining block produced stronger paper results and assumption
+checks. F10 is next, unstarted. Gate B, integrated F11 search and neural work
+remain unattempted. Research contributor: **Codex (GPT-6)**.
