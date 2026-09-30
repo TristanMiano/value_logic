@@ -230,6 +230,18 @@ The final report may claim only what passed the current, non-stale gates.
 
 ## 8. Continuous research steering and bounded agent discretion
 
+Author clarification, September 30, 2026 (F10): assess novelty mainly at the
+project/problem level, with flexibility about individual components. Reuse
+established tools, techniques and methods. Use close literature comparisons to
+forecast a useful result in specified D/L/E/O work areas, with central/high
+engaged hours, an early informative checkpoint, assumptions and uncertainty
+about distinctiveness. A negative result or a useful established-method
+application can justify its effort. Do not infer novelty from search absence
+or equate research hours with account-usage percentages. Use this evidence to
+calibrate future floors, full-budget allocation and v2 recurrence versus v3;
+the current minima and task order remain in force. F10's initial planning
+assessment is [recorded here](literature/02a_research_calibration.md).
+
 Apply [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md) throughout
 future tasks. It makes loss-grounded value, modest self-assessment and neural
 interpretation active design criteria, without choosing their final machinery.

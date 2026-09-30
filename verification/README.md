@@ -2,7 +2,14 @@
 
 This directory began as a compact, standard-library Python reference for the finite witness in [`formalism/05a_integration.md`](../formalism/05a_integration.md). It now also tests the Task 20 neural implementation, which requires the frozen NumPy/PyTorch runtime recorded in [`experiments/implementation_v1.json`](../experiments/implementation_v1.json). It remains verification infrastructure rather than a proof-assistant formalization.
 
-Phase two is complete through F09 at task scope; F10 is next, unstarted. The
+Phase two is complete through F10 at task scope; Gate B is next, unattempted.
+F10 changes research documentation and timing records, not the semantic code.
+Its three `python -m verification` attempts all exited with native error
+`0xC0000005`; attempt 2 also printed an `ERROR` for a phase-one native-kernel
+test that printed `ok` in attempts 1 and 3. The crash prevented its traceback
+summary, so the cause is unresolved and no full-suite pass is claimed. See the
+[F10 record](../v2/work_logs/F10_2026-09-30_S1.md) for logs and validation.
+The
 three `test_v2_f09_*.py` wrappers run **46 focused comparison tests**, which
 passed locally. Eight native certificates also passed the unchanged receiver
 and serialization round trip. Full-suite and combined F08/F09 attempts ended

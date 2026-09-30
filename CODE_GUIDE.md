@@ -10,8 +10,11 @@ The repository is a research prototype, not an installed application. There is n
 
 The mathematical explanations remain in [`formalism/`](formalism/), [`ml/`](ml/), and [`experiments/`](experiments/). The code is an executable companion: it catches mistakes and supplies finite witnesses, but it is not a proof assistant and does not make a theorem true merely by passing a test.
 
-Phase-two theory and checks are in [`v2/`](v2/README.md). F01–F09 are complete
-at their task scopes; F10 is next, unstarted. F09 adds
+Phase-two theory and checks are in [`v2/`](v2/README.md). F01–F10 are complete
+at their task scopes; Gate B is next, unattempted. F10 adds an
+[external audit](v2/literature/02_core_audit.md) and
+[effort calibration](v2/literature/02a_research_calibration.md), with no semantic
+code changes or full-suite pass claimed after bounded native failures. F09 adds
 [`f09_fragments.py`](v2/checks/f09_fragments.py) (Boolean native certificates and
 phase-one adapters), [`f09_scaling.py`](v2/checks/f09_scaling.py) (affine term/source
 presentations and a checked common-scale proof compiler),

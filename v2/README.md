@@ -3,13 +3,25 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01–F09 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 is next, unstarted; B/C/D remain unattempted.
+not new results. F01–F10 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B is next and B/C/D remain unattempted.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_calculus_first.md).
 
 ## Current status
+
+**F10 is complete at external-audit and calibration scope.** The
+[core audit](literature/02_core_audit.md) checks five load-bearing comparisons
+and narrows the contribution boundary to native adaptations and a prospective
+application result. The [effort calibration](literature/02a_research_calibration.md)
+forecasts a useful bounded revision study at 12 central / 24 high engaged hours,
+with an included 3 / 6-hour checkpoint; these are planning judgments, not a
+promise of novelty or a forecast for all remaining v2 work. A neural pilot is
+separately budgeted. [S1](work_logs/F10_2026-09-30_S1.md) records **45.001320 L
+minutes**, optional planning checks, and three native full-suite crashes.
+No F10 full-suite pass is claimed. Gate B is next, unattempted.
+Research contributor: **Codex (GPT-6)**.
 
 **F09 is complete at comparison scope.** The
 [result map](derivations/05_fragments_and_comparisons.md) distinguishes exact
@@ -23,7 +35,7 @@ were checked through the unchanged receiver and serialization round trip.
 Broader runs failed natively after bounded retries; no F09 full-suite/CI pass
 is claimed. [S1](work_logs/F09_2026-09-30_S1.md) records **60.091745 engaged D
 minutes** and the minimum assessment. Research contributor: **Codex (GPT-6)**.
-F10 is next, unstarted; Gate A and the provisional core are unchanged.
+Gate B is next, unattempted; Gate A and the provisional core are unchanged.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f09*.py'
@@ -105,7 +117,7 @@ The [completion record](work_logs/F05_2026-09-27_S2.md) records 30.063473 D minu
 this session and **60.320288 cumulative F05 D minutes**. The continuation alternative
 remains live; the semantics is provisional, not a completed deductive calculus.
 
-**Next task: F10 — external theorem and contribution audit (unstarted).** Gate A remains passed at its existing scope. No neural
+**Next task: Gate B — mathematical core readiness (unattempted).** Gate A remains passed at its existing scope. No neural
 training or later readiness gate has occurred. F05's supplied-model discovery
 suite passes **90 tests** (48 from S1; 42 added in S2):
 
@@ -151,7 +163,7 @@ The [completion record](work_logs/F04_2026-09-26_S6.md) credits **11.238242 new 
 cumulative F04 D is **60.021079 minutes**. All **202 F04 tests** pass,
 including **38 new cases**; F03/F02 remain **256/124**. The
 [checklist](derivations/F04_completion_checklist.json) is a task-scope self-audit,
-not a readiness-gate decision. **Next task: F10, unstarted**, following F09 completion and the [Gate A PASS](checkpoints/A_1.md).
+not a readiness-gate decision. **Next task: Gate B, unattempted**, following F10 completion and the [Gate A PASS](checkpoints/A_1.md).
 
 
 ```text

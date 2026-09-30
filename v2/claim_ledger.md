@@ -1,10 +1,33 @@
 # Phase Two Claim Ledger
 
-Current status (September 30, 2026): **F01–F09 complete at their task scopes;
-F10 next, unstarted.** F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
+Current status (September 30, 2026): **F01–F10 complete at their task scopes;
+F10 complete with L45 satisfied; Gate B next, unattempted.** F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
 soundness theorem, not a permanent core or later gate. Gate A retains its
 foundation-readiness PASS; B/C/D are unattempted. The dated ledger entries and
 earlier opening below retain historical statuses.
+
+## F10 external-audit disposition — September 30, 2026
+
+The [core audit](literature/02_core_audit.md) checks five load-bearing clusters
+against primary statements and assumptions. Scalar/lattice normalization,
+linear certificates, error bounds, parametric optimization and support reuse
+are established ingredients. U1, U11/U13, U18 and F09's interface results remain
+scoped native adaptations or local reconstructions; this audit establishes no
+priority claim. No external-theorem misapplication requiring a semantic repair
+was found. A strict-refutation boundary in possible proof-minimization reuse
+is recorded before any import. Existing claim assumptions remain in force.
+
+The [calibration](literature/02a_research_calibration.md) is prospective advice,
+not an empirical result or a new core theorem. P1–P4 are local planning checks:
+necessity within finite explicit affine catalogues; transported projections;
+last-layer log-cost patch compatibility; and coverage versus complementary
+proof fragments. They received same-agent review, with their limits stated.
+The proposed application has uncertain distinctiveness and unknown performance
+advantage. No neural training or later gate occurred.
+
+[S1](work_logs/F10_2026-09-30_S1.md) records **45.001320 L minutes**, attribution
+to **Codex (GPT-6)**, and failed full-suite validation after three native crashes.
+F10 is complete at task scope; **Gate B is next, unattempted**. F11 is unstarted.
 
 ## Preserved early ledger opening
 

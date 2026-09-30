@@ -1,0 +1,178 @@
+{
+  "task": "F10",
+  "contributor": "Codex (GPT-6)",
+  "base_commit": "ed009e597aae72eeb7ec2c24ef9035735389c247",
+  "semantic_code_changed": false,
+  "full_verification": [
+    {
+      "attempt": 1,
+      "command": "python -m verification",
+      "exit_code": -1073741819,
+      "windows_exception": "0xC0000005",
+      "outcome": "native crash; no suite result",
+      "log": "v2\\work_logs\\F10_2026-09-30_S1\\verification_attempt1.txt",
+      "sha256": "564D856FF974866A72C75B3BFCA58DBF185DEAB1D5B93284C9224E64A4FE3AB3",
+      "isolated_error_line": false
+    },
+    {
+      "attempt": 2,
+      "command": "python -m verification",
+      "exit_code": -1073741819,
+      "windows_exception": "0xC0000005",
+      "outcome": "native crash; no suite result",
+      "log": "v2\\work_logs\\F10_2026-09-30_S1\\verification_attempt2.txt",
+      "sha256": "040EA0E9D2C90F1537272FB9A87164C9D1FCA876F619496E512DAC58A07BC217",
+      "isolated_error_line": true
+    },
+    {
+      "attempt": 3,
+      "command": "python -m verification",
+      "exit_code": -1073741819,
+      "windows_exception": "0xC0000005",
+      "outcome": "native crash; no suite result",
+      "log": "v2\\work_logs\\F10_2026-09-30_S1\\verification_attempt3.txt",
+      "sha256": "564D856FF974866A72C75B3BFCA58DBF185DEAB1D5B93284C9224E64A4FE3AB3",
+      "isolated_error_line": false
+    }
+  ],
+  "intermittent_test": "NativeKernelTests.test_repaired_world_result_matches_frozen_evaluator: ERROR in attempt 2; ok in attempts 1 and 3; crash prevented traceback summary; cause unresolved",
+  "suite_pass_claimed": false,
+  "full_suite_retries_exhausted": true,
+  "final_packaging_timing": "unmeasured; no research credit",
+  "local_link_check": {
+    "command": "python -m verification.check_links",
+    "exit_code": 0,
+    "log": "v2\\work_logs\\F10_2026-09-30_S1\\markdown_links.txt",
+    "initial_attempt": {
+      "exit_code": 1,
+      "log": "v2\\work_logs\\F10_2026-09-30_S1\\markdown_links_attempt1.txt",
+      "disposition": "two new anchors repaired"
+    }
+  },
+  "diff_check": {
+    "command": "git diff --check",
+    "exit_code": 0,
+    "log": "v2\\work_logs\\F10_2026-09-30_S1\\diff_check.txt"
+  },
+  "timing_checks": {
+    "rows": 19,
+    "segment_occupancy_reconciled": true,
+    "protected_L45_met": true,
+    "historical_prefix_preserved": true
+  },
+  "artifact_sha256": [
+    {
+      "path": "README.md",
+      "sha256": "B9BB020CCAEBAAB8C9D5FEAA561FD338C839C0D50B9E1DD9E2E1E13A4C82AAD9"
+    },
+    {
+      "path": "TODO_v2.md",
+      "sha256": "586C664B032FF231437B24D4A909367C9B82540B5CEAF5DEC93FF902567B6ECD"
+    },
+    {
+      "path": "CODE_GUIDE.md",
+      "sha256": "9ADD75CD8C15FAA546FF21A9347224D98B996CF148DEDFC69266373CFEB4E4AD"
+    },
+    {
+      "path": "verification/README.md",
+      "sha256": "BFD02CAC9764BCF92DFDA32EDEBA0E745C8AB6AE7AAE0DB53ABB8F7DBA7BEC95"
+    },
+    {
+      "path": "v2/README.md",
+      "sha256": "39751A01724CAF1F4D9A34C781E3C1813AAB79080C0F3CF9C302366F1D9A7878"
+    },
+    {
+      "path": "v2/project_spec.md",
+      "sha256": "AD49E2770EE48862A585CE1C0ADFD694356D0EA769EA005FAD3126EEE8EFD524"
+    },
+    {
+      "path": "v2/claim_ledger.md",
+      "sha256": "BE5163FF90304A3A9E5A3CBC3A891EA3724B9598FA0A88D1319740E20B72567F"
+    },
+    {
+      "path": "v2/RESEARCH_PROTOCOL.md",
+      "sha256": "26D8A582BCAFC7FD01659D2DF99AB27FA2579768F77D96F4F72C3E64D768551F"
+    },
+    {
+      "path": "v2/opportunities.md",
+      "sha256": "5FD35229DDD66492DACCA40E9F836D73D23DC2E3A388FEE10663E0B89D8468E0"
+    },
+    {
+      "path": "v2/time_ledger.csv",
+      "sha256": "3C2726FF685EF15C82817A0F9FAC32FC99FC59FDD143F056304F9B71BCF741A5"
+    },
+    {
+      "path": "v2/literature/02_core_audit.md",
+      "sha256": "C75081E9365F482BD1804164EB3BFD618A972D9D6E4DA4EF01DE1D5ED8B3498E"
+    },
+    {
+      "path": "v2/literature/02a_research_calibration.md",
+      "sha256": "C6891FE11D0D58F9CBFD0049940106C0EEA4D43F02A36B599012B9D3FCDD2D0D"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1.md",
+      "sha256": "DA1B356FBBFAD4B2D103853FFB06D29E9B2B52A0F6516E90210A7A4DFAE85272"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/account.ps1",
+      "sha256": "A05C246EF38B7C452C95F73C24338A33AF23C04F1EC01E18FDE255500505774B"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/actuals.json",
+      "sha256": "9E8A0F13F89E2650E4DA3DE7935EAE5DB5B8435616E1AF0F37566AFE40364948"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/clock.ps1",
+      "sha256": "A319BF30F0557282DB5964AF567BC8B07B7242D26536DA51575FEC1B1A6280E1"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/clocks.jsonl",
+      "sha256": "EAB9779FA56ADEEDD65EC449E7EA0494FCF05A4EE82321AB4B6B4D25D4218AF0"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/diff_check.txt",
+      "sha256": "63FAD4112DCCC2CF3BF7F0208C99030F6FE68D849D8146F8C14F427E4AE39237"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/ledger_append.json",
+      "sha256": "57CD7C86F1BC10A71ECB0779A4184C97CC2CACAD3CC45DDB009E371350841103"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/markdown_links_attempt1.txt",
+      "sha256": "334F0EBF618178CC7D6C223A905AD048D8C29C12AFF078CD44C9B24AF8A502EB"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/markdown_links.txt",
+      "sha256": "70857C91136504D3F47826F69CF1E57CAC79BAE7C74610712FE302A9D7FB9BAC"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/segments.csv",
+      "sha256": "F7034772C03109504DF944A0ADF1400281DCE33D7EB582988DC8A7BC905D26E1"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/verification_attempt1.txt",
+      "sha256": "564D856FF974866A72C75B3BFCA58DBF185DEAB1D5B93284C9224E64A4FE3AB3"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/verification_attempt2.txt",
+      "sha256": "040EA0E9D2C90F1537272FB9A87164C9D1FCA876F619496E512DAC58A07BC217"
+    },
+    {
+      "path": "v2/work_logs/F10_2026-09-30_S1/verification_attempt3.txt",
+      "sha256": "564D856FF974866A72C75B3BFCA58DBF185DEAB1D5B93284C9224E64A4FE3AB3"
+    },
+    {
+      "path": "v2\\work_logs\\F10_2026-09-30_S1\\staged_raw_whitespace.txt",
+      "sha256": "FE62046322CBDC64A1C4B17D6D31EFAD3E380101FA0AA8981C83614935BAB562"
+    }
+  ],
+  "final_staged_diff_check": {
+    "command": "git diff --cached --check -- . :(exclude)v2/work_logs/F10_2026-09-30_S1/verification_attempt*.txt",
+    "exit_code": 0,
+    "exclusion": "Raw test output is preserved, including trailing whitespace at the interrupted line.",
+    "raw_unfiltered_exit_code": 2,
+    "raw_log": "v2\\work_logs\\F10_2026-09-30_S1\\staged_raw_whitespace.txt",
+    "initial_script_eof_blank_line": "removed"
+  },
+  "hash_scope": "Working-tree bytes at validation; manifest itself excluded to avoid self-reference. Git may normalize line endings."
+}

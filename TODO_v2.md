@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: September 30, 2026 UTC (September 30 in America/Los_Angeles).
-Status: F01–F09 complete at their task scopes; Gate A passed at readiness scope; F10 next, unstarted; B/C/D unattempted; the semantic core remains provisional.
+Status: F01–F10 complete at their task scopes; Gate A passed at readiness scope; F10 complete with L45 satisfied; Gate B next; B/C/D unattempted; the semantic core remains provisional.
 
 ## Resume here
 
@@ -11,7 +11,7 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F10 — external theorem and contribution audit (unstarted).**
+**Next task: Gate B — mathematical core readiness (unattempted).**
 
 **Active repair queue: empty.**
 
@@ -796,7 +796,7 @@ to publication with an unsound core simply because the planned queue ended.
   gate is claimed. Research contributor: **Codex (GPT-6)**.
   **Select F10, unstarted.** Gate A is unchanged; B/C/D remain unattempted.
 
-- [ ] **F10 — external theorem and contribution audit.**
+- [x] **F10 — external theorem and contribution audit.**
 
   Principal artifact: `v2/literature/02_core_audit.md`.
   Recheck the now-specific theorem claims against primary sources, including
@@ -807,6 +807,21 @@ to publication with an unsound core simply because the planned queue ended.
 
   **Done when:** the claims and contribution boundary reflect the checked
   literature; any misapplication has a repair; L45 is recorded.
+
+  **Completion — September 30, 2026.** The [audit](v2/literature/02_core_audit.md)
+  checks five load-bearing claim clusters against primary sources, distinguishes
+  established ingredients from native adaptations, and retains a direct semantic
+  solver plus ordinary support/replacement search as serious alternatives.
+  No external-theorem misapplication requiring a core repair was found; an
+  import strictness caution is recorded. This is a targeted same-agent audit,
+  not Gate B or an independent reconstruction of every proof.
+  The [calibration](v2/literature/02a_research_calibration.md) gives staged
+  central/high effort estimates, project-level novelty uncertainty, floor and
+  weekly-budget guidance, and four optional planning arguments. The
+  [work record](v2/work_logs/F10_2026-09-30_S1.md) credits **45.001320 L minutes**.
+  Three full verification attempts failed natively; no suite pass is claimed.
+  READMEs and current controls agree. Research contributor: **Codex (GPT-6)**.
+  **Select Gate B, unattempted.** F11 and neural training remain unstarted.
 
 - [ ] **Gate B — mathematical core readiness.**
 

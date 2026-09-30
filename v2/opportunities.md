@@ -1,7 +1,7 @@
 # Research opportunity register
 
 Owner: the active research agent, subject to DIR01 and the research protocol.
-Updated: September 27, 2026 (UTC).
+Updated: September 30, 2026 (UTC), through F10.
 These are **ranked leads**, not proven gaps or claims of first discovery.
 The relevant primary-source descriptions and inspection limits are in
 [literature/directional_leads.md](literature/directional_leads.md).
@@ -433,3 +433,40 @@ The 60-minute derivation floor proved useful: required comparisons were ready
 earlier, and the remaining block produced stronger paper results and assumption
 checks. F10 is next, unstarted. Gate B, integrated F11 search and neural work
 remain unattempted. Research contributor: **Codex (GPT-6)**.
+
+## F10 completion checkpoint — September 30, 2026
+
+The ranking remains, but the [external audit](literature/02_core_audit.md)
+narrows the expected contribution. OPP-01's most useful next investment joins
+OPP-04 in a bounded loss-model revision study: compare selective checked
+retention against full retention, a current-best proof, fresh solving, and
+cached-proof/replacement search. Parametric LP, ATMS, provenance, incremental
+maintenance, revision-sufficient memory proposals and whole-certificate
+coverage are close antecedents. Generic reuse or pruning alone is not the
+candidate contribution; the application result and total-cost comparison matter.
+
+[Package A](literature/02a_research_calibration.md#3-prospective-research-packages)
+forecasts **12 central / 24 high engaged hours**, including a **3 / 6-hour
+checkpoint**, for one supplied model and finite revision/query workload.
+Useful outcome: a reproducible preservation/cost result or a scoped obstruction.
+Automatic production is missing from F08's supplied-candidate replay and is an
+early implementation risk. A more defended result is **24 / 48 hours total**.
+Distinctiveness is uncertain; these figures do not price all remaining v2 work.
+The earlier D45/90 pruning lead is now subordinate to choosing a workload:
+all-RHS exactness can require every vertex in an explicit affine catalogue,
+whereas finite whole-proof coverage admits an established greedy baseline.
+
+OPP-02 remains a required, separate empirical uncertainty. Reuse established
+causal-alignment methods and held-out tests; successful patching still needs
+matched controls. The [neural package](literature/02a_research_calibration.md#3-prospective-research-packages)
+forecasts **6 / 12 hours** for an informative pilot, with a **2 / 4-hour
+checkpoint**; stronger interpretation is **20 / 40 hours total**. The new
+log-cost and transported-projection diagnostics inform F14, not a training run.
+OPP-03 remains conditional on supplied self-model/revision premises; choosing
+which commitments should change is a distinct normative question.
+
+L45 was reasonable for the targeted audit plus these optional comparisons.
+Future work should record an early core-ready checkpoint and pair usage
+readings with measured milestones before estimating a weekly allowance.
+No new permanent quota, core, phase or gate is selected. Gate B is next,
+unattempted. Research contributor: **Codex (GPT-6)**.
