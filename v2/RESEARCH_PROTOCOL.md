@@ -150,6 +150,25 @@ stop for explicit replanning: narrow the immediate attempt, create a repair
 item, or forecast an additional block. Do not silently expand an unbounded
 proof search or mark it successful because its budget expired.
 
+**PLAN01 author amendment, September 30 local / October 1 UTC, 2026.** Remaining
+research and recurrence use prospectively selected **60- or 90-minute engaged
+research chunks**, with explicit D/L/E allocations and O/wait forecasts separate.
+Preserve each task's mode-specific minimum: a mixed chunk does not discharge
+E60 or D60. N01 has its own new D+L60 mixed floor, planned D30/L30 with actual
+evidence in both modes. Planning checkpoints and administrative edits have no
+new research floor. Chunks may span sessions; incomplete time/evidence carries
+forward transparently. Record core-ready time and what useful optional work
+the rest of the protected chunk buys. End the chunk with a next-action decision;
+starting subsequent chunks still follows the authorized task/batch scope.
+
+The package clock begins at N01 and counts actual D/L/E/O once, including
+recurrence, against cumulative 4/8/16/32-hour ambition checkpoints. Exclude
+waiting, idle and unknown time. Review at the first chunk boundary reaching a
+milestone, record overshoot, and never reset the clock to hide a failed attempt.
+Growing scope and stronger evidence should share each increment roughly evenly;
+central/high effort forecasts for a fixed scope remain a separate quantity.
+Use the current [roadmap](../TODO_v2.md) for exact criteria and later increments.
+
 ## 5. Balance reliable and exploratory gains
 
 This is an axis separate from D/L/E. **R (reliable)** includes checking a finite
@@ -195,11 +214,44 @@ specification are revised. An empirical null result is not automatically a
 logical inconsistency: distinguish correctness, expressive usefulness, and
 benchmark performance when assigning its consequences.
 
+### Project-level novelty is an advancement requirement
+
+Under [PLAN01](decisions/2026-09-30_novelty_and_recurrence.md), every post-B chunk
+and ambition checkpoint assesses whether the result is sufficiently distinctive
+to support a scoped project-level novelty claim. Record technical readiness
+separately from contribution **SUPPORTED / NOT YET SUPPORTED / DISPLACED**.
+The current roadmap supplies the evidence standard: exact meaningful claim,
+closest checked work and credible ordinary-method combination, supported
+difference, and adversarial limitations. Established components are welcome;
+component-wise novelty and certainty about all prior literature are not required.
+A useful implementation, elapsed effort, or null experiment alone is not a
+supported contribution.
+
+If NOT YET SUPPORTED or DISPLACED, assign a named 60/90-minute recurrence or
+additional-work chunk with the exact missing evidence, earliest affected task,
+forecast and acceptance condition. It may be implemented by a planned F11–F16
+chunk; link the obligations and count time once. Reuse the open obligation's ID
+for the same unresolved gap and distinguish its successive chunk attempts.
+Early research can continue
+under that assignment without pretending the novelty bar has passed. Gate C
+cannot select F17 until technical readiness AND contribution support hold;
+Gate D must retain that support before declaring phase completion. Otherwise
+record BLOCKED and select the required work. A supported novel limitation can
+satisfy the bar; it still needs a meaningful difference from the closest work.
+
+A/B's historical readiness passes remain valid unless their actual premises
+change. Contribution uncertainty alone opens further research, not a fictitious
+mathematical invalidation. After two unsuccessful chunks on the same novelty
+gap compare at least two routes and select a discriminating next chunk. Do not
+waive the bar, restart the cumulative clock, or call a suspended candidate a
+completed phase. This amendment selects N01 but starts no research task.
+
 ### Mandatory recurrence procedure
 
 1. State the failed criterion and smallest known witness or exact gap.
 2. Classify the source: requirements, representation, rule, proof, external
-   premise, implementation, test design, or timing/evidence record.
+   premise, implementation, test design, contribution/distinctiveness, or
+   timing/evidence record.
 3. Find the earliest affected dependency. Mark downstream claims/gates stale
    without deleting completed historical work.
 4. Add a stable repair ID such as `R-B-1-01` to the active queue with a target,

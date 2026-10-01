@@ -3,13 +3,24 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01–F10 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; F11 is selected, unstarted; C/D remain unattempted.
+not new results. F01–F10 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 is selected, unstarted; F11 remains unstarted; C/D remain unattempted.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_calculus_first.md).
 
 ## Current status
+
+**[PLAN01 is adopted](decisions/2026-09-30_novelty_and_recurrence.md). N01 is
+selected, unstarted**, to choose and challenge the concrete contribution target
+before substantial F11 implementation. Gates C/D require both technical
+readiness and a result sufficiently distinctive to support a scoped novelty
+claim. Every unsupported/displaced contribution assessment assigns a named
+60/90-minute recurrence or further-work chunk. A/B's existing passes remain
+mathematical readiness decisions; project-level novelty is not yet established.
+Use cumulative 4/8/16/32-hour checkpoints to assess supported breadth, evidence
+and further effort; retain existing task-specific floors. This planning update
+starts no research chunk. [Administrative record](work_logs/PLAN01_2026-09-30_S1.md).
 
 **[Gate B passed](checkpoints/B_1.md) at mathematical-readiness scope.** The
 [fresh same-agent reconstruction](checkpoints/B_1_reconstruction.md) checks
@@ -18,7 +29,7 @@ comparisons. **19 new hostile tests passed**, with 13 cap values, 221 direct
 rational points and three received composite examples. Three full-suite and
 three aggregate F05–F09/Gate-B attempts crashed natively; no current broad-suite
 pass is claimed. All six prior protected floors were audited. The kernel is
-unchanged. **F11 is selected and unstarted; C/D remain unattempted.**
+unchanged. **N01 is selected and unstarted; F11 remains unstarted; C/D remain unattempted.**
 Research contributor: **Codex (GPT-6)**. Gate B has no protected minimum; its
 [work record](work_logs/B_1_2026-09-30_S1.md) preserves actual timing. Cycle III
 prospectively uses D/L/E 35/10/55 and R/X 60/40, with the existing floors and
@@ -41,7 +52,7 @@ as effort estimates, distinct from these progressively broader scope targets.
 Neither is a promise of novelty or a forecast for all remaining v2 work.
 [S1](work_logs/F10_2026-09-30_S1.md) records **45.001320 L
 minutes**, optional planning checks, and three native full-suite crashes.
-No F10 full-suite pass is claimed. Gate B passed at mathematical-readiness scope; F11 is selected, unstarted.
+No F10 full-suite pass is claimed. Gate B passed at mathematical-readiness scope; N01 is selected, unstarted; F11 remains unstarted.
 Research contributor: **Codex (GPT-6)**.
 
 **F09 is complete at comparison scope.** The
@@ -56,7 +67,7 @@ were checked through the unchanged receiver and serialization round trip.
 Broader runs failed natively after bounded retries; no F09 full-suite/CI pass
 is claimed. [S1](work_logs/F09_2026-09-30_S1.md) records **60.091745 engaged D
 minutes** and the minimum assessment. Research contributor: **Codex (GPT-6)**.
-Gate B passed at mathematical-readiness scope; F11 is selected, unstarted; Gate A and the provisional core are unchanged.
+Gate B passed at mathematical-readiness scope; N01 is selected, unstarted; F11 remains unstarted; Gate A and the provisional core are unchanged.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f09*.py'
@@ -138,7 +149,7 @@ The [completion record](work_logs/F05_2026-09-27_S2.md) records 30.063473 D minu
 this session and **60.320288 cumulative F05 D minutes**. The continuation alternative
 remains live; the semantics is provisional, not a completed deductive calculus.
 
-**Next task: F11 — minimal reasoner and semantic reference (unstarted).** Gate A remains passed at its existing scope. No neural
+**Next task: N01 — contribution target and closest-method comparison (unstarted).** Gate A remains passed at its existing scope. No neural
 training or later readiness gate has occurred. F05's supplied-model discovery
 suite passes **90 tests** (48 from S1; 42 added in S2):
 
@@ -184,7 +195,7 @@ The [completion record](work_logs/F04_2026-09-26_S6.md) credits **11.238242 new 
 cumulative F04 D is **60.021079 minutes**. All **202 F04 tests** pass,
 including **38 new cases**; F03/F02 remain **256/124**. The
 [checklist](derivations/F04_completion_checklist.json) is a task-scope self-audit,
-not a readiness-gate decision. **Next task: F11, unstarted**, following the [Gate B PASS](checkpoints/B_1.md).
+not a readiness-gate decision. **Next task: N01, unstarted**, under [PLAN01](decisions/2026-09-30_novelty_and_recurrence.md) after the Gate B PASS.
 
 
 ```text

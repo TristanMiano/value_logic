@@ -1,10 +1,20 @@
 # Phase Two Project Specification
 
-Version: Gate B readiness PASS, September 30, 2026 local / October 1 UTC.
-Status: **F01–F10 complete at their task scopes; Gate A passed at readiness scope; F10 complete with L45 satisfied; Gate B passed at mathematical-readiness scope; F11 selected, unstarted; C/D unattempted; the semantic core remains provisional**.
+Version: PLAN01 novelty and recurrence amendment, September 30, 2026 local / October 1 UTC.
+Status: **F01–F10 complete at their task scopes; Gate A passed at readiness scope; F10 complete with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 selected, unstarted; F11 unstarted; C/D unattempted; novelty not yet established; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [B_1](checkpoints/B_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
+
+The authorized [PLAN01 amendment](decisions/2026-09-30_novelty_and_recurrence.md)
+selects N01 before F11 and requires supported project-level distinctiveness at
+Gates C/D. Novelty is currently unestablished. Insufficient evidence assigns a
+named 60/90-minute recurrence/additional-work chunk; it does not permit final
+assembly or phase completion. The author allows established components and
+supported novel negative results. Keep technical correctness and contribution
+assessment separate, while growing breadth and evidence together at cumulative
+4/8/16/32-hour checkpoints. Existing mathematical claims and A/B scopes are
+unchanged; reopen an earlier gate only when its premises are affected.
 
 The [F10 audit](literature/02_core_audit.md) classifies the finite mathematical
 ingredients as established methods with scoped native adaptations. The

@@ -274,6 +274,16 @@ guarantee for U11 follows.
 
 ### Current planning rule: grow breadth and evidence together
 
+**Subsequent authorized PLAN01 amendment:** the
+[current roadmap](../../TODO_v2.md) now applies this ladder through protected
+60/90-minute research chunks, starting with N01's contribution-target comparison.
+The illustrative targets and original forecasts below remain estimates. At each
+checkpoint, unsupported or displaced novelty requires a named next recurrence/
+evidence chunk; Gates C/D cannot advance without a supported scoped project-level
+contribution. A/B retain their original readiness scopes. This amendment is a
+planning decision, not new literature evidence or a conclusion that novelty has
+been established. See [PLAN01](../decisions/2026-09-30_novelty_and_recurrence.md).
+
 **Author amendment, September 30, 2026, after F10 completion.** Increasing
 effort should buy both more substantive results to defend and stronger support
 for the growing result set, in roughly equal measure. The default is a

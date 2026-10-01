@@ -10,6 +10,9 @@ Question and exact scope:
 Dependencies and active blockers:
 Principal artifact and acceptance evidence:
 Required minimum: <mode, engaged minutes; or none>.
+Post-B chunk: <ID; protected 60/90 research minutes, or not applicable for a checkpoint/admin item>.
+Package ID and cumulative actual minutes before this chunk; next 4/8/16/32-hour checkpoint:
+Named contribution/recurrence obligation served; linked task (count shared work once):
 Original forecast: <D/L/E/O central and high estimates; tool wait separately>.
 Review-at threshold and session constraints:
 Reliable gain and exploratory gain:
@@ -18,6 +21,8 @@ Likeliest failure; discriminating counterexample or test:
 DIR01 objective served; relevant opportunity ID or reason not applicable:
 Loss/proxy/utility distinction and declared uncertainty or reflection scope:
 Neural relevance: representability / decoding / intervention / none:
+Proposed contribution, closest checked work/ordinary baseline, and decisive falsifier:
+Added substantive scope and supporting evidence purchased by this chunk:
 
 ## Clock segments
 
@@ -48,6 +53,10 @@ Record `not run` and why when execution was unavailable.
 ## Result and actuals
 
 Evidence achieved; unresolved obligations; claim-ledger changes:
+Core-ready reading; useful optional work performed within the protected remainder:
+Technical readiness separately from contribution SUPPORTED / NOT YET SUPPORTED / DISPLACED:
+Exact supported difference and source limits; if unsupported, named next 60/90-minute work item:
+Added breadth/evidence, cumulative actual package effort, checkpoint overshoot and next forecast:
 Opportunity ranking changed by what evidence; next smallest decisive test:
 Any autonomous redirection, preserved alternative, and prospective scope record:
 Actual D/L/E/O; R/X; tool-wait/idle/unknown; observed total wall elapsed:
@@ -64,3 +73,5 @@ Fresh reconstruction reviewer/method and limitations:
 Old passes invalidated; earliest dependency to revisit:
 Repair IDs, evidence obligations, forecasts, and selected next task:
 Cycle D/L/E and R/X balance; prospective allocation corrections:
+Gate C/D: both technical readiness and supported scoped novelty required; otherwise BLOCKED:
+Contribution gap, exact missing comparison/evidence, assigned recurrence chunk and next pointer:

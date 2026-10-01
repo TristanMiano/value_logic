@@ -1,7 +1,7 @@
 # Phase Two Claim Ledger
 
 Current status (September 30, 2026): **F01–F10 complete at their task scopes;
-F10 complete with L45 satisfied; Gate B passed; F11 selected, unstarted.** F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
+Gate B passed at mathematical-readiness scope; PLAN01 adopted; N01 selected, unstarted; novelty not yet established.** F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
 soundness theorem, not a permanent core or later gate. Gate A retains its
 foundation-readiness PASS; C/D are unattempted. The dated ledger entries and
 earlier opening below retain historical statuses.
@@ -891,3 +891,23 @@ positive cycle-II research rows and confirms all six protected floors.
 **F11 selected, unstarted; C/D unattempted; repair queue empty.** A change to a
 load-bearing core premise, proof gap or reproducible semantic discrepancy
 invalidates this readiness decision and requires named recurrence.
+
+## PLAN01 — contribution requirement, September 30 local / October 1 UTC, 2026
+
+[Authorized amendment](decisions/2026-09-30_novelty_and_recurrence.md).
+**Planning disposition only:** N01 selected/unstarted; F11–F17 unstarted;
+C/D unattempted; project-level novelty **NOT YET SUPPORTED**. This supersedes
+B_1's next pointer while retaining its finite-core readiness PASS and Gate A's
+original scope. No theorem, implementation or novelty claim is added.
+
+At every post-B chunk/checkpoint, distinguish technical readiness from a
+supported difference relative to the closest checked work and credible ordinary
+methods. An unsupported or displaced contribution requires a named 60/90-minute
+further-work or recurrence item. Gate C cannot select final report assembly,
+and Gate D cannot declare completion, until the project-level novelty criterion
+and all other requirements are met. New comparisons may leave established
+components intact; if core assumptions change, reopen affected gates normally.
+
+The cumulative 4/8/16/32-hour package starts with N01, counts recurrence once,
+and grows substantive scope and support together. Prior research credit and
+dated historical dispositions remain unchanged. Contributor: **Codex (GPT-6)**.

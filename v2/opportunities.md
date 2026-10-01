@@ -1,7 +1,7 @@
 # Research opportunity register
 
 Owner: the active research agent, subject to DIR01 and the research protocol.
-Updated: September 30, 2026 (UTC), through F10.
+Updated: September 30 local / October 1 UTC, 2026, through PLAN01.
 These are **ranked leads**, not proven gaps or claims of first discovery.
 The relevant primary-source descriptions and inspection limits are in
 [literature/directional_leads.md](literature/directional_leads.md).
@@ -500,3 +500,19 @@ checks and model evaluation. Preserve existing task floors and the approximate
 future package, with fixed-scope central/high forecasts kept distinct from
 cumulative scope milestones. Gate B itself has no protected floor and starts
 no later package. Research contributor: **Codex (GPT-6)**.
+
+## PLAN01 — contribution selection before implementation
+
+The author-approved [amendment](decisions/2026-09-30_novelty_and_recurrence.md)
+selects **N01, unstarted**, superseding B_1's F11 pointer. The starting lead
+remains OPP-01/OPP-04's joint-loss-evidence revision question, with OPP-03's
+bounded self-assessment family and the required OPP-02 pilot retained. N01
+must compare the closest ordinary-method combination and may replace the lead
+if another bounded question is better justified; no lead is a proven open problem.
+
+An assessment of NOT YET SUPPORTED or DISPLACED distinctiveness must assign a
+named 60/90-minute recurrence or further-work chunk. Gates C/D require supported
+project-level novelty as well as technical evidence; component novelty quotas
+are not imposed. Grow breadth and support together at cumulative 4/8/16/32-hour
+checkpoints, retaining earlier clocks and task floors. This is a change to the
+selection and advancement rules, not new evidence promoting any opportunity.

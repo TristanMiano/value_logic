@@ -20,7 +20,7 @@ not the F11 integrated reasoner. The [decision](v2/checkpoints/B_1.md) records
 passing focused tests and failed broader runs after bounded native-crash retries.
 
 Phase-two theory and checks are in [`v2/`](v2/README.md). F01–F10 are complete
-at their task scopes; Gate B passed at mathematical-readiness scope; F11 is selected, unstarted. F10 adds an
+at their task scopes; Gate B passed at mathematical-readiness scope; N01 is selected, unstarted; F11 remains unstarted. F10 adds an
 [external audit](v2/literature/02_core_audit.md) and
 [effort calibration](v2/literature/02a_research_calibration.md), with no semantic
 code changes or full-suite pass claimed after bounded native failures. F09 adds

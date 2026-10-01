@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: October 1, 2026 UTC (September 30 in America/Los_Angeles).
-Status: F01–F10 complete at their task scopes; Gate A passed at readiness scope; F10 complete with L45 satisfied; Gate B passed at mathematical-readiness scope; F11 selected, unstarted; C/D unattempted; the semantic core remains provisional.
+Status: F01–F10 complete at their task scopes; Gates A/B retain their scoped passes; PLAN01 roadmap amendment adopted; N01 selected, unstarted; F11–F17 unstarted; C/D unattempted; project-level novelty not yet established.
 
 ## Resume here
 
@@ -11,11 +11,19 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F11 — implement a minimal reasoner and semantic reference (unstarted).**
+**Next task: N01 — select and challenge a concrete contribution target (unstarted).**
+This is the first chunk of the post-B research package, before substantial F11
+implementation. The authorized [PLAN01 amendment](v2/decisions/2026-09-30_novelty_and_recurrence.md)
+supersedes B_1's next pointer, without invalidating its mathematical pass.
 
 **Active repair queue: empty.**
 
 **Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C not attempted; D not attempted.**
+
+**Contribution state: NOT YET SUPPORTED.** A/B are readiness decisions, not
+novelty endorsements. N01 and the checkpoints below must assign a bounded next
+chunk whenever the evidence does not yet support a sufficiently distinctive
+project-level contribution. No research chunk is started by this plan amendment.
 
 Select the pointer, not mechanically the first unchecked task. A failed or
 invalidated gate can put an earlier repair ahead of later numbered tasks.
@@ -95,7 +103,9 @@ Its essential rules are:
 
 - Separate **D: derivations and worked theory**, **L: external literature**, and
   **E: empirical/computational tests**. Keep durable evidence for each. The
-  provisional cycle allocation is 60/15/25; D is normally the largest share.
+  original cycle allocation was 60/15/25; D is normally the largest share.
+  Cycle III prospectively uses D/L/E **35/10/55**, justified by implementation
+  and evaluation, with R/X **60/40**; review after F13 and at Gate C.
   Code is permitted inside a derivation task when it is likely to be useful,
   but its execution time is E, not a substitute for a protected D minimum.
 - Before each attempt forecast central/high effort by D/L/E/O and expected tool
@@ -114,7 +124,7 @@ Use [v2/templates/work_item.md](v2/templates/work_item.md) for forecasts, clock
 segments, research notes, result evidence, and gate decisions. O denotes
 administration/formatting overhead and does not satisfy research minimums.
 
-### Initial effort allocations
+### Initial effort allocations and the post-B amendment
 
 Minutes below are provisional engaged-work allocations, **not measured time or
 promised wall-clock completion**. `Review at` means stop to reforecast or
@@ -137,6 +147,7 @@ forecast or clock recording.
 | F09 | 120 | 240 | D60 |
 | F10 | 90 | 180 | L45 |
 | Gate B | 60 | 120 | None |
+| N01 (added by PLAN01) | 90 | 180 | D+L60; prospective D30/L30 |
 | F11 | 120 | 240 | E60 |
 | F12 | 90 | 180 | E45 |
 | F13 | 120 | 240 | D60 |
@@ -146,7 +157,7 @@ forecast or clock recording.
 | Gate C | 60 | 120 | None |
 | F17 | 120 | 240 | None |
 | Gate D | 60 | 120 | None |
-| **Initial traversal** | **2,280 (38 hours)** | **Reforecast per item** | **Not a phase-wide timebox** |
+| **Original traversal, excluding N01** | **2,280 (38 hours)** | **Historical planning prior** | **Not a phase-wide timebox** |
 
 Initially reserve a further 570 engaged minutes (9.5 hours, 25%) for repair and
 reconsideration. The resulting 47.5-hour planning envelope is a starting
@@ -155,12 +166,64 @@ The source of a failed gate determines how that reserve is used. Forecasts
 must be revised using measured progress; there is no fixed lifetime limit on
 phases or recurrence cycles.
 
+N01 adds a 90-minute initial planning allowance, making the arithmetic amended
+traversal prior 2,370 minutes (39.5 hours), **not a forecast of remaining work**.
+The completed tasks are not charged again. Reforecast the post-B package from
+N01 onward; recurrence is open-ended in total and bounded per selected chunk.
+
+### Research chunks inside cumulative ambition checkpoints
+
+Execute the remaining research and recurrence in **60- or 90-minute engaged
+research chunks**, each with a concrete question, evidence target, prospective
+D/L/E split, R/X allocation and central/high forecast including O separately.
+Default to 60 minutes; use 90 for a coupled proof, implementation or adversarial
+attempt needing the longer protected block. Chunks may span sessions. A clock
+or usage limit does not turn an unfinished chunk into a completed one.
+
+Existing task-specific floors remain binding: a mixed chunk cannot substitute
+for E60 or D60. F12 retains E45 within a planned 60-minute or longer research
+chunk. N01 alone has a new mixed D+L60 floor, planned D30/L30; both modes must
+produce evidence and neither E nor O satisfies it. Record actual mode totals.
+At each chunk start choose its protected 60/90-minute research allowance;
+existing task minima and any fresh review obligation also have to be met.
+
+If the required result appears early, use the remainder for a declared optional
+extension or hostile test. Record the core-ready time and the extra result.
+At the chunk boundary, close its evidence, assess distinctiveness, and select
+the next chunk; do not silently keep enlarging the same attempt. Planning
+checkpoints and administrative edits have no added research floor. This rule
+does not authorize automatically executing subsequent tasks or chunks.
+
+Track cumulative **4 / 8 / 16 / 32 engaged hours** from N01's start, counting
+D/L/E/O once, including checkpoint/review work and recurrence within the package;
+exclude tool waiting, idle and unknown time. Review at the first chunk boundary
+that reaches a milestone and report the actual total and any overshoot. Do not
+round credited time or reset the cumulative clock after a failed checkpoint.
+The increments are 4, 4, 8 and 16 hours; these are growing scope targets, separate
+from central/high forecasts for a fixed result. Each increment should expand
+substantive breadth and supporting evidence roughly evenly. Temporary repair
+imbalances require an explicit reason and a plan to restore the balance.
+
+| Checkpoint | Intended added scope | Evidence and decision required |
+|---|---|---|
+| N01 close | One specific value/loss contribution question and strongest feasible established-method comparison | Exact proposed difference, closest antecedents, falsifier and first 60/90-minute implementation or recurrence chunk; a promising question is not a novelty pass. |
+| 4 h | One scientific loss family, bounded RHS revisions and smallest producer/reference path | End-to-end feasibility, hostile example and preliminary contribution assessment; if novelty is not yet supported, assign the next comparison or repair chunk. |
+| 8 h | Withdrawal, alternative supports and a small declared query family | Stronger baselines, initial total-cost/decision comparisons, updated literature delta; assign recurrence if the difference disappears or remains untested. |
+| 16 h | Add the evaluator's bounded self-assessment family | Cross-case preservation/limitation argument and independent reference checks; decide which concrete missing evidence the next chunk buys. |
+| 32 h | Add the required ordinary-training neural pilot once its F14 prerequisites hold, or another justified family while explicitly rescheduling that required pilot | Frozen evaluation, matched controls and adversarial review; no completion merely because the budget was spent. |
+
+These are provisional scope targets, not promised outcomes or authority to skip
+task dependencies. At later milestones choose a justified extension and its
+evidence; do not mechanically double an unproductive programme. The F10 fixed-
+scope estimates (12 central / 24 high hours for one revision study) remain
+uncertainty estimates, not guarantees that a particular rung will be achieved.
+
 ## Evidence gates and recurrence
 
 The overall route is:
 
 ```text
-F01-F04 -> A -> F05-F10 -> B -> F11-F16 -> C -> F17 -> D
+F01-F04 -> A -> F05-F10 -> B -> N01 -> F11-F16 -> C -> F17 -> D
               ^ failure anywhere can return to an earlier dependency
 ```
 
@@ -170,6 +233,63 @@ in a result it authorizes. Its note records exact artifact versions, evidence,
 clock totals, research-mode and R/X allocation, and the selected next task.
 Passing a gate is relative to the declared fragment and evidence, never a
 certificate of metaphysical truth.
+
+### Required distinctiveness assessment and recurrence
+
+At N01 close, every chunk close, the cumulative checkpoints, F13/F15/F16 close,
+and Gates C/D, explicitly ask: **does the supported result prove distinctive
+enough to support a scoped project-level novelty claim?** Reuse of established
+components is encouraged; no individual-component novelty quota is imposed.
+Assess the project result's relevance to value judgments, not just new notation,
+a different implementation, or success against an intentionally weak baseline.
+
+The evidence needed for **SUPPORTED** is:
+
+1. An exact contribution statement with assumptions and operational significance.
+2. Direct comparison with the closest checked prior work and a credible ordinary
+   combination of established methods, identifying what remains different.
+3. A supported result establishing that difference: a nontrivial theorem,
+   informative limitation/negative result, or a meaningful application finding
+   with appropriate controls. A null run or an additional example is not
+   automatically a novel result.
+4. An adversarial account of alternative explanations, search/source limitations
+   and the narrowest defensible claim. No proof of absence from all literature
+   is demanded; uncertainty must be explicit and cannot itself count as support.
+
+Record technical readiness separately from contribution status:
+
+| Contribution disposition | Mandatory action |
+|---|---|
+| **SUPPORTED** at a stated scope | Record exact evidence and closest-work difference. Continue only to work allowed by the remaining task/gate dependencies; this does not waive other criteria. |
+| **NOT YET SUPPORTED** (including promising, unresolved or inadequate comparison) | Create or update a named recurrence/additional-work item with the missing evidence and the next protected 60/90-minute chunk; select it as the next action. No novelty pass. |
+| **DISPLACED** by prior work or a sufficient ordinary baseline | Preserve the useful established result, then assign a bounded new-question/alternative-scope comparison. No novelty pass and no cosmetic relabeling as a new version. |
+
+Use checkpoint records such as `v2/checkpoints/N_4h_1.md` with versioned retries;
+chunk-close assessments may live in the work log. Novelty follow-ups use stable
+IDs such as `R-N-4h-01` or `R-C-1-01`, naming the affected task, exact gap,
+acceptance evidence, mode/lane forecast and next chunk. A planned F11–F16 chunk
+can discharge such an obligation; link the IDs and count its effort once.
+Reuse an open obligation's ID when the gap is unchanged; record successive
+chunk attempts rather than creating duplicate blockers at every checkpoint.
+Early unsupported novelty permits this assigned research to continue, **not**
+an advancement pass. A technical task can finish while its contribution gap
+remains open and explicitly assigned.
+
+Gate C requires both technical readiness and **SUPPORTED** contribution status
+before selecting F17; Gate D rechecks that the supported novelty claim survives
+the final report and closest-work audit. Otherwise the gate is **BLOCKED** and
+must assign recurrence or further work. Completion of implementation, exhaustion
+of the ladder, or a useful but already-established result cannot silently lower
+this bar. A novel negative result may satisfy it if the stated comparison and
+support requirements actually hold.
+
+Only affected claims/gates become stale. An unresolved novelty claim alone
+does not invalidate A/B's mathematical-readiness passes. If its investigation
+changes the core, reopen the relevant earlier gate. After two unsuccessful
+chunks on the same contribution gap, compare at least two alternative routes
+and choose a discriminating next chunk, rather than repeatedly polishing the
+same result. Suspending a candidate is not completing the phase; assign the
+next justified research direction without declaring the novelty requirement met.
 
 On failure, record the criterion, smallest witness or gap, earliest affected
 dependency, and stale downstream claims. Create a repair item such as
@@ -185,6 +305,7 @@ passes; add revisions and invalidations instead of erasing history.
 | Inference rule is false or its scope is unclear | F05/F06, then affected proofs |
 | Soundness/completeness proof has a gap | F07/F08; F05/F06 if structural |
 | External result was misapplied or contribution misunderstood | F03/F10 and dependent claims |
+| Distinctiveness is unestablished or an ordinary baseline already suffices | N01/F04/F10 for the question; F11–F16 for missing evidence; reopen A/B only if their premises change |
 | Executable semantics differ from declared semantics | F11/F12; reopen B if the specification changes |
 | Demonstrator is vacuous or evidence does not support usefulness | F13/F14, or F01/F06 if no meaningful inference exists |
 | Reporting drifts from checked claims | F17 or the affected earlier gate |
@@ -859,17 +980,52 @@ to publication with an unsound core simply because the planned queue ended.
 
 ### Cycle III — executable reasoning and adversarial evaluation
 
+- [ ] **N01 — select and challenge a concrete contribution target.**
+
+  Principal artifact: `v2/contribution_plan.md`. This is the first post-B
+  research chunk, not a repetition of the complete F01–F10 traversal. Start
+  with: what joint loss evidence must be retained to preserve useful decisions
+  under weakening/withdrawal, and when does retention justify its total cost?
+  Refine or replace that candidate if the closest comparison makes another
+  bounded value-logic question more worthwhile.
+
+  Specify one scientific loss family, a finite query/revision contract, the
+  operational decision, closest checked antecedents, strongest feasible ordinary
+  baseline, proposed additional result, and a decisive falsifier. Choose between
+  preserving threshold decisions and recovering sharp bounds; do not switch
+  objectives after seeing results. A concrete preservation/approximation result
+  with useful application evidence is a candidate; generic caching is not the
+  contribution statement. Reuse F10's audit while checking the now-specific claim.
+
+  **Done when:** the target, comparison and falsifier are reviewable, the initial
+  4-hour package has a chunk-level forecast and breadth/evidence plan, and
+  **D+L60** is recorded (prospective D30/L30, with evidence in both modes).
+  Record contribution status honestly. If novelty is NOT YET SUPPORTED, assign
+  a named next 60/90-minute work item, normally the relevant F11 feasibility
+  chunk; if the target is displaced, assign another N01/F04/F10 comparison.
+  This planning task's completion is not a novelty pass. No later task starts
+  automatically from this amendment or from an unapproved batch assumption.
+
 - [ ] **F11 — implement a minimal reasoner and semantic reference.**
 
   Principal artifact: `v2/verification/` with a documented entry point.
+  Dependency: N01 has selected a concrete target and assigned the next chunk.
   Implement the declared fragment, inference steps, proof traces, and a small
   semantic evaluator/reference check. Keep the rule engine and reference
   evaluation sufficiently distinct to catch discrepancies. Avoid unnecessary
   neural architectures, infrastructure, or global optimization systems.
 
+  Implement the smallest automated certificate producer needed for N01's bounded
+  query/revision family, with explicit size limits and unavailable outcomes.
+  Distinguish reduct from full-source countermodels, current validity from
+  future optimality, and unsupported search from semantic refutation. Compare
+  against a separately implemented semantic reference at matched evidence access.
+
   **Done when:** `python -m v2.verification` exists and runs deterministic
-  fixtures; both implementations match the notation; E60 is recorded. Update
-  the validation section of `v2/README.md`.
+  fixtures including the selected producer/reference path; both implementations
+  match the notation; E60 is recorded. Update the validation section of
+  `v2/README.md`, N01's claim/evidence map and the next missing-evidence chunk.
+  Do not expand a generic reasoner without a contribution-relevant test.
 
 - [ ] **F12 — differential tests and counterexample regression.**
 
@@ -883,6 +1039,11 @@ to publication with an unsound core simply because the planned queue ended.
   **Done when:** known bad rules fail the suite, good fixtures pass, uncovered
   assumptions are logged, and E45 is recorded. General theorems remain proof-
   supported rather than inferred from test counts.
+
+  Include parameterized strengthening, relaxation, withdrawal, stale versions,
+  degenerate sources and lost alternative supports relevant to N01. Keep the
+  smallest regressions and reference disagreements. Close each 60/90-minute
+  chunk with its actual evidence and required next contribution/repair action.
 
 - [ ] **F13 — work two motivating case studies end to end.**
 
@@ -899,8 +1060,18 @@ to publication with an unsound core simply because the planned queue ended.
   a system from the pragmatic decision to rely on it. A staged fragment is
   acceptable; document what a genuinely cyclic extension would still require.
 
+  Make each case a declared family with multiple query/revision instances and
+  at least one unfavorable case. Explain how the same contribution question
+  spans them, what preserving the joint evidence changes, and when an ordinary
+  alternative suffices. Add a preservation/approximation argument or a precise
+  limitation where supported. Repeating the earlier hand-built witnesses alone
+  does not discharge this expanded case-study obligation.
+
   **Done when:** the examples explain why the calculus's structure is needed,
   show its limits, and are executable where appropriate; D60 is recorded.
+  Assess distinctiveness against N01's comparison and reforecast the package.
+  If still unsupported, select a named next evidence or recurrence chunk;
+  a completed case-study artifact is not a novelty pass.
 
 - [ ] **F14 — freeze the empirical challenge and baselines.**
 
@@ -913,8 +1084,26 @@ to publication with an unsound core simply because the planned queue ended.
   weak competitor. Exact numeric performance thresholds must be justified
   prospectively, not selected after results.
 
+  For the retention question, include fresh solving, cached-proof plus
+  replacement search, full retention and selective retention. Treat a marginal
+  scalar summary as an additional information-loss diagnostic. Match access to
+  source evidence and fallback solving; count source-context storage as well as
+  proof storage, initial production, checking, updates and decision quality.
+  A full-information reference is a separately labeled comparison if access
+  differs. At equal information, do not promise a sharper bound than an exact
+  reference. Include cases where retention loses and its break-even update count.
+  If N01 chooses a different question, replace these with equally credible
+  claim-matched baselines before freezing, with an explicit rationale.
+
+  Freeze the proposed distinctive claim, its closest-work comparison, what
+  outcomes would support or displace it, and plausible alternative explanations.
+  Separate developmental choice from final evaluation. Count native crashes
+  and retries honestly; they are neither accepted derivations nor speedups.
+
   **Done when:** F15 can execute without inventing its success criteria; any
-  already-seen cases are labeled development rather than held out.
+  already-seen cases are labeled development rather than held out. The protocol
+  can distinguish an application contribution from correct implementation or
+  an already-known separation. Assign unresolved contribution work explicitly.
 
   **DIR01 neural probe:** freeze a small ordinary-training ReLU MLP comparison,
   a hypothesized internal loss/value computation, relevant interventions and
@@ -936,6 +1125,11 @@ to publication with an unsound core simply because the planned queue ended.
   E60 is recorded. A failed challenge can complete this reporting task but may
   block Gate C and require a new, explicitly versioned repair/evaluation cycle.
   Do not repeatedly tune against an allegedly untouched test set.
+  Report contribution status separately from task completion, with total-cost
+  and decision results linked to the frozen claim. If novelty remains unsupported,
+  assign the next 60/90-minute recurrence/evidence chunk; do not advance merely
+  because a null result has been documented. A negative finding counts toward
+  novelty only if its significance and difference from prior work are supported.
 
 - [ ] **F16 — fresh adversarial reconstruction.**
 
@@ -945,12 +1139,17 @@ to publication with an unsound core simply because the planned queue ended.
   circular definitions, vacuity, hidden truth/utility assumptions, lost joint
   information, bad composition, and disagreement between proof and code.
   Protect the review block even when preliminary checks look favorable.
+  Also challenge the claimed contribution: reconstruct the ordinary combined
+  baseline, check whether the difference was already known, and try to explain
+  apparent gains by unequal information, omitted construction cost or favorable
+  case selection. Charge new literature checks to L in addition to fresh D60.
 
   **Done when:** objections have exact dispositions or named repairs;
   independent-review claims accurately describe the process; a fresh D60 is
-  recorded, not borrowed from the original proof task.
+  recorded, not borrowed from the original proof task. A technically sound but
+  insufficiently distinctive result leaves a named contribution obligation open.
 
-- [ ] **Gate C — evidence of a sufficiently solid and useful calculus.**
+- [ ] **Gate C — evidence of a solid, useful and distinctive calculus.**
 
   Record `v2/checkpoints/C_1.md`, with versioned retries.
   Require a non-stale Gate B; no unresolved flaw in the sound core; successful
@@ -964,11 +1163,22 @@ to publication with an unsound core simply because the planned queue ended.
   required only if the specification actually promised one; a null benchmark
   must narrow that claim rather than be concealed.
 
-  **PASS:** sufficient scoped evidence to assemble the report; select F17.
+  Record two findings: **technical readiness** and **project-level contribution
+  status**. Require at least one supported result sufficiently distinctive to
+  support a scoped novelty claim under the assessment above, with closest-work
+  comparison and F16 objections resolved. Established components and an
+  informative novel negative result are allowed; novelty of every component or
+  a positive neural result is not required. Promising but unestablished novelty
+  is a missing criterion, not a qualified PASS.
+
+  **PASS:** technical criteria met AND contribution SUPPORTED; select F17.
   **BLOCKED:** classify the failure and return to the relevant derivation,
   implementation, or evaluation task. If the core changes, reopen Gate B;
   if the final challenge changes, version and freeze a new protocol before
-  execution. A polished report cannot repair an unmet research criterion.
+  execution. For a novelty gap assign a named 60/90-minute further-work or
+  recurrence chunk, with exact evidence to obtain and a revised forecast. Do not
+  select F17 as the completion route while that gap remains. A polished report
+  cannot repair an unmet research criterion.
 
 ### Cycle IV — consolidation, not automatic publication
 
@@ -981,6 +1191,10 @@ to publication with an unsound core simply because the planned queue ended.
   remaining questions. Link detailed derivation notes rather than replacing
   them with polished summaries. Explain which claims are mathematical,
   empirical, design choices, or philosophical motivation.
+  Lead the contribution discussion with the supported difference from the
+  closest established approach; distinguish ingredients, adaptations, findings
+  and open claims. Draft notes may exist earlier, but F17's final assembly
+  requires the strengthened Gate C.
 
   **Done when:** all claims trace to current evidence, no stronger result is
   introduced during writing, and unresolved directions become later research
@@ -994,11 +1208,18 @@ to publication with an unsound core simply because the planned queue ended.
   and actual validation outputs. Audit whether the difficult lane received
   real time and whether easier gains were retained. Confirm that all
   required artifacts exist and active blocking repairs are closed.
+  Recheck that Gate C's distinctive contribution is still supported at the exact
+  scope claimed in the report. New contrary literature, weakened comparisons or
+  unresolved priority/scope objections require recurrence; A/B's passes and a
+  completed implementation cannot substitute for this assessment.
 
-  **PASS:** mark this scoped phase complete and set the pointer to external
-  review/publication or the next author-selected phase. **BLOCKED:** create
-  a targeted repair and do not call the phase complete. No fixed number of
-  later phases is implied by this disposition.
+  **PASS:** all audit criteria met and the scoped contribution remains SUPPORTED;
+  mark this phase complete and set the pointer to external review/publication
+  or the next author-selected phase. **BLOCKED:** create
+  a targeted repair, evidence or contribution-recurrence item in 60/90-minute
+  chunks and do not call the phase complete. Insufficient novelty cannot be
+  waived by changing the phase label. No fixed number of later phases is
+  implied by this disposition.
 
 ## Definition of done
 
@@ -1006,7 +1227,10 @@ This phase succeeds when it has a justified, explicit value-based semantic
 core; operationally meaningful inference rules; nonvacuous worked derivations;
 a checkable soundness theorem and a further nontrivial characterization or
 constructive restricted result; honest fragment/literature comparisons; a
-small executable reasoner; and evidence meeting the frozen usefulness question.
+small executable reasoner; evidence meeting the frozen usefulness question;
+and at least one supported project-level result sufficiently distinctive to
+support a scoped novelty claim against the closest checked work. If that bar
+is not yet met, assign recurrence or further effort rather than phase completion.
 All protected task minima must be actually recorded, not inferred from output
 length. Gates A-D must be current and passed, with no hidden blocking repair.
 
