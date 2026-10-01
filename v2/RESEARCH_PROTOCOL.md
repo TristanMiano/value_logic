@@ -242,6 +242,19 @@ calibrate future floors, full-budget allocation and v2 recurrence versus v3;
 the current minima and task order remain in force. F10's initial planning
 assessment is [recorded here](literature/02a_research_calibration.md).
 
+Further author clarification, September 30, 2026: scale research through
+cumulative budgets such as 4, 8, 16 and 32 engaged hours. Each larger stage
+should add substantive breadth (more questions or results worth defending)
+and stronger evidence in roughly equal measure. Plan each increment around
+both gains; do not default to an unchanged scope with progressively more
+defense. New claims must have appropriate support from the outset. Report
+scope gained, evidence gained, limits and a revised forecast at each stage.
+Distinguish this ambition ladder from central/high execution estimates for a
+fixed scope. Preserve D/L/E/O accounting and existing gates/minima, count shared
+work once, and make overruns or temporary repair-driven imbalances explicit.
+The [F10 ladder](literature/02a_research_calibration.md#3-prospective-research-packages)
+is an initial planning example, not authorization to execute later tasks.
+
 Apply [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md) throughout
 future tasks. It makes loss-grounded value, modest self-assessment and neural
 interpretation active design criteria, without choosing their final machinery.

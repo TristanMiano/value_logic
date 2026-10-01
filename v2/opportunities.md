@@ -445,8 +445,8 @@ maintenance, revision-sufficient memory proposals and whole-certificate
 coverage are close antecedents. Generic reuse or pruning alone is not the
 candidate contribution; the application result and total-cost comparison matter.
 
-[Package A](literature/02a_research_calibration.md#3-prospective-research-packages)
-forecasts **12 central / 24 high engaged hours**, including a **3 / 6-hour
+[Package A's original forecast](literature/02a_research_calibration.md#3-prospective-research-packages)
+was **12 central / 24 high engaged hours**, including a **3 / 6-hour
 checkpoint**, for one supplied model and finite revision/query workload.
 Useful outcome: a reproducible preservation/cost result or a scoped obstruction.
 Automatic production is missing from F08's supplied-candidate replay and is an
@@ -460,7 +460,7 @@ OPP-02 remains a required, separate empirical uncertainty. Reuse established
 causal-alignment methods and held-out tests; successful patching still needs
 matched controls. The [neural package](literature/02a_research_calibration.md#3-prospective-research-packages)
 forecasts **6 / 12 hours** for an informative pilot, with a **2 / 4-hour
-checkpoint**; stronger interpretation is **20 / 40 hours total**. The new
+checkpoint**; the original stronger-interpretation estimate is **20 / 40 hours total**. The new
 log-cost and transported-projection diagnostics inform F14, not a training run.
 OPP-03 remains conditional on supplied self-model/revision premises; choosing
 which commitments should change is a distinct normative question.
@@ -470,3 +470,16 @@ Future work should record an early core-ready checkpoint and pair usage
 readings with measured milestones before estimating a weekly allowance.
 No new permanent quota, core, phase or gate is selected. Gate B is next,
 unattempted. Research contributor: **Codex (GPT-6)**.
+
+### Author's subsequent breadth-and-evidence amendment
+
+The preferred expansion policy is now the
+[cumulative 4/8/16/32-hour ladder](literature/02a_research_calibration.md#3-prospective-research-packages).
+Each additional block should buy substantive scope and stronger support in
+roughly equal measure. The illustrative path adds revision handling, bounded
+self-assessment and a scoped neural question while deepening evidence across
+the growing result set. The original A/B forecasts above remain effort-risk
+anchors; their higher-effort tiers are not instructions to keep the same scope
+and spend every additional hour defending it. Reforecast the next increment
+at each checkpoint. Rankings, required gates and current completion claims
+are unchanged; this amendment starts no research package.

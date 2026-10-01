@@ -13,6 +13,9 @@ revision/loss study as the preferred next research package, with staged
 forecasts and uncertain novelty. This changes contribution and planning
 language, not the semantic contract or gate requirements. Gate B must still
 perform its fresh reconstruction and readiness decision.
+The author's subsequent 4/8/16/32-hour planning ladder grows substantive breadth
+and supporting evidence together, rather than treating higher effort only as
+stronger defense of a fixed result. Its scope targets remain prospective.
 
 ## Question and commitments
 

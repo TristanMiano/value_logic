@@ -15,10 +15,12 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 [core audit](literature/02_core_audit.md) checks five load-bearing comparisons
 and narrows the contribution boundary to native adaptations and a prospective
 application result. The [effort calibration](literature/02a_research_calibration.md)
-forecasts a useful bounded revision study at 12 central / 24 high engaged hours,
-with an included 3 / 6-hour checkpoint; these are planning judgments, not a
-promise of novelty or a forecast for all remaining v2 work. A neural pilot is
-separately budgeted. [S1](work_logs/F10_2026-09-30_S1.md) records **45.001320 L
+now uses the author's cumulative **4 / 8 / 16 / 32-hour ambition ladder**:
+each stage should grow both substantive breadth and supporting evidence in
+roughly equal measure. The original narrower package forecasts are retained
+as effort estimates, distinct from these progressively broader scope targets.
+Neither is a promise of novelty or a forecast for all remaining v2 work.
+[S1](work_logs/F10_2026-09-30_S1.md) records **45.001320 L
 minutes**, optional planning checks, and three native full-suite crashes.
 No F10 full-suite pass is claimed. Gate B is next, unattempted.
 Research contributor: **Codex (GPT-6)**.

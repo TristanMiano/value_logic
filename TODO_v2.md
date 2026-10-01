@@ -818,6 +818,10 @@ to publication with an unsound core simply because the planned queue ended.
   The [calibration](v2/literature/02a_research_calibration.md) gives staged
   central/high effort estimates, project-level novelty uncertainty, floor and
   weekly-budget guidance, and four optional planning arguments. The
+  author's later planning amendment adds a cumulative **4/8/16/32-hour ladder**
+  that grows breadth and supporting evidence together; original fixed-package
+  forecasts remain historical calibration rather than the default expansion
+  policy. The
   [work record](v2/work_logs/F10_2026-09-30_S1.md) credits **45.001320 L minutes**.
   Three full verification attempts failed natively; no suite pass is claimed.
   READMEs and current controls agree. Research contributor: **Codex (GPT-6)**.

@@ -272,13 +272,66 @@ guarantee for U11 follows.
 
 ## 3. Prospective research packages
 
-The estimates below are **engaged hours for one research agent familiar with
-this repository**, starting from the completed F10 artifacts and conditional
-on the required gates. They include their listed D/L/E/O work, exclude
-unattended computation and interruptions, and are judgmental central/plausible-
-high forecasts, not confidence intervals. They do not price human independent
-review, publication, a production solver, or a complete new phase. No package
-is started by this note.
+### Current planning rule: grow breadth and evidence together
+
+**Author amendment, September 30, 2026, after F10 completion.** Increasing
+effort should buy both more substantive results to defend and stronger support
+for the growing result set, in roughly equal measure. The default is a
+**4 / 8 / 16 / 32-hour cumulative ladder**, extensible at later checkpoints.
+These are different scope targets, not central/high estimates for the same
+deliverable. In particular, 32 hours should not merely repeat the 16-hour
+programme with more checking.
+
+Plan roughly half of each additional research block for new scope and half
+for establishing or strengthening evidence across the expanded scope. Count
+work once even when it serves both purposes; mandatory integration and records
+also consume the budget. This is a planning balance, not an assertion that
+claims have equal costs. Every new result needs enough support to be reported
+honestly when introduced. A collection of unsupported conjectures is not the
+intended breadth gain.
+
+The following is an **illustrative project path**, conditional on Gate B and
+later task dependencies. Hours are total engaged effort from the start of the
+selected package, for one agent familiar with the repository, including
+D/L/E/O and excluding unattended computation. Gate work and required reviews
+must be explicitly charged when assembling an execution budget; this table
+does not price or complete every remaining v2 obligation.
+
+| Cumulative budget | Added substantive scope | Added evidence and challenge | Useful stopping result |
+|---|---|---|---|
+| **4 h** | One bounded scientific loss comparison and one RHS revision family; attempt the smallest producer/reference path | Check the contract, compare with direct solving, and reconstruct a hostile case | A narrow end-to-end feasibility result, or a precise obstruction and revised implementation estimate |
+| **8 h** | Extend that question to withdrawal, stale versions and alternative supports on a small declared workload | Challenge the new revision cases; add current-proof and replacement-search comparisons with explicit cost accounting | An expanded revision result showing which conclusions survive, fail or remain unavailable, with initial comparison evidence |
+| **16 h** | Add a bounded self-assessment case concerning the evaluator's own versioned behavior; connect it to the scientific case | Test compositional conclusions against a separate reference; strengthen baselines and reconstruction across both cases | A coherent two-case result and an account of where the shared method works or breaks; later frozen evaluation remains distinct |
+| **32 h** | Add one further substantive question, preferably the required ordinary-training neural pilot once its F14 prerequisites are met | Freeze and evaluate that pilot with matched controls; deepen the earlier cases through prospective evaluation, replication or an adversarial reconstruction | A broader body of supported results spanning revision, bounded self-assessment and a scoped learned-representation question, including informative nulls |
+
+The increments are **4, 4, 8 and 16 hours**, not four independent allocations.
+These are provisional ambition targets: the original implementation forecast
+below already shows that the 16-hour outcome could overrun. At each checkpoint
+record separately (1) new questions/results covered, (2) evidence gained,
+(3) unresolved limitations, and (4) the next increment's revised central/high
+execution forecast. If the producer or a premise fails, retain a supported
+obstruction, repair or redirect the next scope addition. Do not label an
+unfinished rung achieved or spend the next block entirely polishing the same
+result without reporting the deviation from the breadth/evidence balance.
+
+At **64 hours and beyond**, choose the next meaningful extension from the
+evidence: for example, another application family, a richer revision contract,
+or a second learned task. Pair it with stronger checks of the enlarged claims.
+Do not precommit to endless doubling, a new carrier, or a new version merely
+to fill a budget. A v3 extension still needs its own feasibility case. More
+supported breadth can be valuable even when its components reuse known tools;
+novelty remains a project-level, uncertain assessment.
+
+### Original F10 package estimates retained for calibration
+
+The following A/B central/high estimates are the **original narrower package
+forecasts**, preserved rather than retroactively fitted to the ladder. They
+remain evidence about likely effort and risks, not the preferred policy of
+spending all additional effort on a fixed result. In particular, the old
+"more thoroughly defended" tier is superseded as the default expansion path
+by the balanced ladder above. These judgmental estimates are not confidence
+intervals and exclude human independent review, publication, a production
+solver and a complete new phase. No package is started by this amendment.
 
 ### A. Checked evidence for revisable loss judgments — preferred next investment
 
@@ -472,13 +525,13 @@ balance and roughly 25% recurrence reserve. No new permanent quota is proposed.
 
 For illustration, **20 available engaged hours** is a planning assumption,
 not an estimate of a week's account allowance. Set aside about 5 for recurrence
-and commit at most 15 initially. That can support A's 12-hour central package
-and a small gate/integration margin, conditional on its early checkpoint. It
-cannot safely promise both A and the 6-hour neural pilot plus all remaining
-gates. If the measured allowance instead supports only 6–8 hours, buy the
-first decisive checkpoint and its review before committing to the larger
-package. If there is more allowance, first strengthen the comparison and
-replication; start another direction only when it has a distinct useful target.
+and commit at most 15 initially. Plan the 4-hour and then cumulative 8-hour
+milestones, keeping room for prerequisites, integration and the next scope
+increment. Fifteen initially committed hours cannot promise the 16-hour rung
+plus gates. If the measured allowance supports only 6–8 hours, aim for a sound
+first checkpoint and a bounded scope extension with its evidence. With more
+allowance, advance both the result set and its support along the ladder;
+replication alone is not the default use of every larger budget.
 
 Use the high estimate as a replanning boundary, not a promise to keep spending
 until success. A full budget is best used when the next block can change a
