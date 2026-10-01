@@ -2,7 +2,16 @@
 
 This directory began as a compact, standard-library Python reference for the finite witness in [`formalism/05a_integration.md`](../formalism/05a_integration.md). It now also tests the Task 20 neural implementation, which requires the frozen NumPy/PyTorch runtime recorded in [`experiments/implementation_v1.json`](../experiments/implementation_v1.json). It remains verification infrastructure rather than a proof-assistant formalization.
 
-Phase two is complete through F10 at task scope; Gate B is next, unattempted.
+Phase two is complete through F10 at task scope; Gate B passed at mathematical-readiness scope; F11 is selected, unstarted.
+
+Gate B's new wrapper runs **19 hostile tests**, all passing locally. Run
+`python -X faulthandler -m unittest verification.test_v2_gate_b -v`.
+The [finite report](../v2/checkpoints/B_1_results.json) has 13 cap values,
+221 direct rational points and three received composite examples. During
+Gate B, three full-suite and three aggregate F05–F09/Gate-B runs failed
+natively; no current broad-suite pass is claimed. The [decision](../v2/checkpoints/B_1.md)
+and [work record](../v2/work_logs/B_1_2026-09-30_S1.md) preserve scope and logs.
+
 F10 changes research documentation and timing records, not the semantic code.
 Its three `python -m verification` attempts all exited with native error
 `0xC0000005`; attempt 2 also printed an `ERROR` for a phase-one native-kernel

@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: September 30, 2026 UTC (September 30 in America/Los_Angeles).
-Status: F01–F10 complete at their task scopes; Gate A passed at readiness scope; F10 complete with L45 satisfied; Gate B next; B/C/D unattempted; the semantic core remains provisional.
+Last updated: October 1, 2026 UTC (September 30 in America/Los_Angeles).
+Status: F01–F10 complete at their task scopes; Gate A passed at readiness scope; F10 complete with L45 satisfied; Gate B passed at mathematical-readiness scope; F11 selected, unstarted; C/D unattempted; the semantic core remains provisional.
 
 ## Resume here
 
@@ -11,11 +11,11 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: Gate B — mathematical core readiness (unattempted).**
+**Next task: F11 — implement a minimal reasoner and semantic reference (unstarted).**
 
 **Active repair queue: empty.**
 
-**Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B not attempted; C not attempted; D not attempted.**
+**Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C not attempted; D not attempted.**
 
 Select the pointer, not mechanically the first unchecked task. A failed or
 invalidated gate can put an earlier repair ahead of later numbered tasks.
@@ -827,7 +827,7 @@ to publication with an unsound core simply because the planned queue ended.
   READMEs and current controls agree. Research contributor: **Codex (GPT-6)**.
   **Select Gate B, unattempted.** F11 and neural training remain unstarted.
 
-- [ ] **Gate B — mathematical core readiness.**
+- [x] **Gate B — mathematical core readiness.**
 
   Record `v2/checkpoints/B_1.md`, with versioned retries.
   Require nonempty operational semantics; three meaningful multistep
@@ -843,6 +843,19 @@ to publication with an unsound core simply because the planned queue ended.
   select F11. **BLOCKED:** repair F02/F05-F10 as indicated by evidence, and
   invalidate dependent claims. A stack of passing numerical examples cannot
   substitute for the soundness obligation.
+
+  **B_1 PASS — September 30 local / October 1 UTC, 2026.** The
+  [decision](v2/checkpoints/B_1.md) and fresh same-agent reconstruction establish
+  finite-core readiness without changing the kernel. All required premises have
+  scoped support; no blocking mathematical gap was found. The 19 new hostile
+  tests passed; three full-suite and three aggregate targeted attempts crashed
+  natively, so no current broad-suite pass is claimed. All six F05–F10 floors
+  hold; 273 positive research rows match raw clocks. Cycle-II D/L/E was
+  80.11/8.71/11.17, R/X 60.95/39.05. Prospectively allocate cycle III D/L/E
+  35/10/55 and R/X 60/40, reviewed after F13 and at Gate C; preserve existing
+  floors and recurrence reserve. Gate B has no protected minimum. See the
+  [work record](v2/work_logs/B_1_2026-09-30_S1.md) for timing and limitations.
+  Research contributor: **Codex (GPT-6)**. **Select F11, unstarted.**
 
 ### Cycle III — executable reasoning and adversarial evaluation
 

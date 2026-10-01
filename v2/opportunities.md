@@ -483,3 +483,20 @@ anchors; their higher-effort tiers are not instructions to keep the same scope
 and spend every additional hour defending it. Reforecast the next increment
 at each checkpoint. Rankings, required gates and current completion claims
 are unchanged; this amendment starts no research package.
+
+## Gate B readiness checkpoint — September 30 local / October 1 UTC, 2026
+
+[B_1 passed](checkpoints/B_1.md) after fresh same-agent reconstruction. This
+supersedes the preceding F10 next pointer: **F11 is selected and unstarted**.
+OPP-01/OPP-04 remain the preferred integrated revision/loss lead; OPP-03 keeps
+its explicit self-model contracts and OPP-02 remains an empirical uncertainty.
+No contribution candidate is promoted to established novelty or performance.
+
+The recorded cycle-II allocation was D/L/E 80.11/8.71/11.17 and R/X 60.95/39.05.
+Prospectively use **D35/L10/E55 and R60/X40 for cycle III**, reviewed after F13
+and at Gate C. The E-heavy deviation is justified by implementation, differential
+checks and model evaluation. Preserve existing task floors and the approximate
+25% recurrence reserve. Apply the author's breadth/evidence ladder to each
+future package, with fixed-scope central/high forecasts kept distinct from
+cumulative scope milestones. Gate B itself has no protected floor and starts
+no later package. Research contributor: **Codex (GPT-6)**.

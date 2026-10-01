@@ -10,8 +10,17 @@ The repository is a research prototype, not an installed application. There is n
 
 The mathematical explanations remain in [`formalism/`](formalism/), [`ml/`](ml/), and [`experiments/`](experiments/). The code is an executable companion: it catches mistakes and supplies finite witnesses, but it is not a proof assistant and does not make a theorem true merely by passing a test.
 
+Gate B adds [`gate_b_review.py`](v2/checks/gate_b_review.py), a 19-test hostile
+fixture and finite report using the unchanged kernel and independently fixed
+query pairs. [`test_v2_gate_b.py`](verification/test_v2_gate_b.py) exposes those
+tests to discovery. [`audit_b1_timing.py`](v2/checkpoints/audit_b1_timing.py)
+rechecks the baseline F05–F10 ledger against raw monotonic endpoints; it audits
+records rather than observing past cognitive work. These are readiness checks,
+not the F11 integrated reasoner. The [decision](v2/checkpoints/B_1.md) records
+passing focused tests and failed broader runs after bounded native-crash retries.
+
 Phase-two theory and checks are in [`v2/`](v2/README.md). F01–F10 are complete
-at their task scopes; Gate B is next, unattempted. F10 adds an
+at their task scopes; Gate B passed at mathematical-readiness scope; F11 is selected, unstarted. F10 adds an
 [external audit](v2/literature/02_core_audit.md) and
 [effort calibration](v2/literature/02a_research_calibration.md), with no semantic
 code changes or full-suite pass claimed after bounded native failures. F09 adds

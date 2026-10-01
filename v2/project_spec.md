@@ -1,9 +1,9 @@
 # Phase Two Project Specification
 
-Version: F10 external audit and effort calibration, September 30, 2026 (UTC).
-Status: **F01–F10 complete at their task scopes; Gate A passed at readiness scope; F10 complete with L45 satisfied; Gate B next; B/C/D unattempted; the semantic core remains provisional**.
+Version: Gate B readiness PASS, September 30, 2026 local / October 1 UTC.
+Status: **F01–F10 complete at their task scopes; Gate A passed at readiness scope; F10 complete with L45 satisfied; Gate B passed at mathematical-readiness scope; F11 selected, unstarted; C/D unattempted; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
-The dated sections below retain historical dispositions; the current gate decision is [A_1](checkpoints/A_1.md).
+The dated sections below retain historical dispositions; the current gate decision is [B_1](checkpoints/B_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 
 The [F10 audit](literature/02_core_audit.md) classifies the finite mathematical
@@ -11,8 +11,8 @@ ingredients as established methods with scoped native adaptations. The
 [effort calibration](literature/02a_research_calibration.md) identifies a bounded
 revision/loss study as the preferred next research package, with staged
 forecasts and uncertain novelty. This changes contribution and planning
-language, not the semantic contract or gate requirements. Gate B must still
-perform its fresh reconstruction and readiness decision.
+language, not the semantic contract or gate requirements. Gate B has completed its fresh same-agent
+reconstruction and passed at finite-core readiness scope. F11 remains unstarted.
 The author's subsequent 4/8/16/32-hour planning ladder grows substantive breadth
 and supporting evidence together, rather than treating higher effort only as
 stronger defense of a fixed result. Its scope targets remain prospective.

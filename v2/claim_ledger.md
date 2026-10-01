@@ -1,9 +1,9 @@
 # Phase Two Claim Ledger
 
 Current status (September 30, 2026): **F01–F10 complete at their task scopes;
-F10 complete with L45 satisfied; Gate B next, unattempted.** F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
+F10 complete with L45 satisfied; Gate B passed; F11 selected, unstarted.** F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
 soundness theorem, not a permanent core or later gate. Gate A retains its
-foundation-readiness PASS; B/C/D are unattempted. The dated ledger entries and
+foundation-readiness PASS; C/D are unattempted. The dated ledger entries and
 earlier opening below retain historical statuses.
 
 ## F10 external-audit disposition — September 30, 2026
@@ -27,9 +27,12 @@ advantage. No neural training or later gate occurred.
 
 [S1](work_logs/F10_2026-09-30_S1.md) records **45.001320 L minutes**, attribution
 to **Codex (GPT-6)**, and failed full-suite validation after three native crashes.
-F10 is complete at task scope; **Gate B is next, unattempted**. F11 is unstarted.
+At F10 completion, Gate B was selected and unattempted. The later B_1 review below supersedes that pointer; F11 is unstarted.
 
 ## Preserved early ledger opening
+
+The following early opening is historical; the Gate B entry at the end records
+the current readiness decision.
 
 Version: F02 completion plus F03 S9 partial audit, September 24, 2026.
 Task status: **F01 complete (76 checks); F02 complete (124 dedicated checks and 61.118295 credited derivation minutes)**.
@@ -864,3 +867,27 @@ claim was added; that remains F10. F10 is next, unstarted. Gate A and the
 provisional core are unchanged; B/C/D and F11 remain unattempted.
 Research contributor: **Codex (GPT-6)**.
 Research contributor: **Codex (GPT-6)**.
+
+## Gate B disposition — September 30 local / October 1 UTC, 2026
+
+**B_1 PASS at finite-core mathematical readiness.** [Decision](checkpoints/B_1.md),
+[fresh reconstruction](checkpoints/B_1_reconstruction.md),
+[input hashes](checkpoints/B_1_inputs.json). Reviewer: **Codex (GPT-6)**;
+same-agent and non-blinded, not independent review or proof-assistant checking.
+
+The accepted downstream dependency path is F05 operational denotation → F06/F07
+native soundness plus independently fixed receiving request → F08 U1 exact
+reduct characterization → F09 scoped comparisons, positioned by F10's audit.
+Producer transport/discharge metadata needs its additional contract. U11/U13's
+complete portfolio remains a constructive existence result; a partial candidate
+list, selected current-best proof or unsuccessful search is not an optimizer
+or countermodel. Optional general affine compilation remains unimplemented.
+No core statement, external priority claim or empirical premise is strengthened.
+
+New finite evidence: 19 passing hostile checks, 13 caps/221 direct points and
+three composite certificates. Broader current runs failed natively after
+bounded retries; no broad-suite/CI pass. The timing audit matches all 273
+positive cycle-II research rows and confirms all six protected floors.
+**F11 selected, unstarted; C/D unattempted; repair queue empty.** A change to a
+load-bearing core premise, proof gap or reproducible semantic discrepancy
+invalidates this readiness decision and requires named recurrence.
