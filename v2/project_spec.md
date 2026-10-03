@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: N01 target-selection acceptance, October 2, 2026 local / October 3 UTC.
-Status: **F01–F10 and N01 complete at their task scopes; A/B retain scoped readiness passes; F11 selected, unstarted; C/D unattempted; novelty NOT YET SUPPORTED; R-N01-01 open; the semantic core remains provisional**.
+Version: N01/C3 target-refinement acceptance, October 2, 2026 local / October 3 UTC.
+Status: **F01–F10, N01 and recurrence C3 complete at their task scopes; A/B retain scoped readiness passes; F11 selected, unstarted; C/D unattempted; novelty NOT YET SUPPORTED; R-N01-01 open; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [B_1](checkpoints/B_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -10,9 +10,14 @@ The [N01 contribution plan](contribution_plan.md) now fixes the first loss
 fixture, full threshold-vector objective, finite development workload and
 explicit uniform-revision challenge. Its analytic ordinary baseline and
 optional policy-only result constrain later claims. The protected D+L60 is
-satisfied. **R-N01-01/C1 within F11, E60**, is the next integration chunk;
-the open contribution obligation also requires comparison and target recurrence.
-The planning probe is not a native reasoner or a practical novelty result.
+satisfied. The author then moved C3 target recurrence before implementation;
+its fresh **D+L120** is also satisfied. Scientific and bounded self-assessment
+routes have been challenged, with optional actual-program revision examples.
+**R-N01-01/C1 within F11, E60**, remains the next unstarted integration chunk
+on the 16-state/three-query control, followed by C2/F12. The open contribution
+obligation still requires a distinctive result. Planning probes are not a
+native reasoner or practical novelty evidence. See the
+[C3 closing assessment](contribution_plan.md#8-c3-close-targets-after-the-two-hour-recurrence).
 
 The authorized [PLAN01 amendment](decisions/2026-09-30_novelty_and_recurrence.md)
 selects N01 before F11 and requires supported project-level distinctiveness at
@@ -761,3 +766,29 @@ is promoted. A/B retain readiness; C/D still require supported distinctiveness.
 The [work record](work_logs/N01_2026-10-02_S1.md) contains the protected floor,
 forecast revision, checks and limitations. N01 is complete; F11 is selected but
 unstarted. Contributor: **Codex (GPT-6)**.
+
+## N01/C3 recurrence acceptance — October 2 local / October 3 UTC, 2026
+
+The author-authorized recurrence moved target refinement before F11 and
+completed a fresh **120.540527 engaged D+L minutes**. Both required routes
+were examined: justified scientific decisions and bounded self-assessment.
+The [main notebook](derivations/07_n01_recurrence.md) supplies discriminating
+examples alongside ordinary analytic, conic, grid and graph repairs. The
+[optional notebook](derivations/08_n01_evidence_consumers.md) extends the
+scope to evidence coverage, actual execution, tail risk and finite program
+edits. Twenty-five [primary comparisons](literature/04_n01_recurrence_comparison.md)
+limit novelty claims and improve the next experiment's baseline.
+
+C3's acceptance is target refinement, not a new semantic specification or
+contribution gate. A two-bit program's complete old loss law can omit what
+is needed to judge an edit, but a small ordinary joint-source summary repairs
+that failure. This is a candidate for later matched measurement, not proof of
+a new general method. R-N01-01 remains OPEN and novelty NOT YET SUPPORTED.
+
+Select **C1/F11 E60**, unstarted, on the unchanged 16-state/three-query
+scientific control, then C2/F12. F13 retains its own D60; optional derivations
+do not discharge it. A/B retain their scopes and C/D remain unattempted.
+Three recurrence probes passed; the root suite passed 1,429 tests on its
+third attempt after two native crashes. The
+[work record](work_logs/N01R_2026-10-02_S1.md) preserves timing, corrections,
+logs, floor assessment and accounting. Contributor: **Codex (GPT-6)**.

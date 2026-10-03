@@ -3,7 +3,7 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01–F10 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; F11 is selected, unstarted; C/D remain unattempted.
+not new results. F01–F10 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is selected, unstarted; C/D remain unattempted.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -11,7 +11,7 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 
 ## Current status
 
-**N01 is complete at target-selection scope; F11 is selected, unstarted.**
+**N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is selected, unstarted.**
 The [contribution plan](contribution_plan.md) fixes the loss/consumer contract,
 strong ordinary baselines, falsifiers and the first package forecast. Protected
 D+L60 is satisfied; [timing and validation](work_logs/N01_2026-10-02_S1.md)
@@ -23,15 +23,36 @@ uniform exact threshold-vector preservation in the stated representation
 class. An optional action-only contract needs nine; reversing two priorities
 needs twelve again. The [primary-source comparison](literature/03_n01_target_comparison.md)
 and independent exact planning checks constrain the claim. **Novelty remains
-NOT YET SUPPORTED; R-N01-01 is open.** F11 carries its first E60 feasibility
-chunk, followed by explicit comparison/target recurrence as needed. No F11
+NOT YET SUPPORTED; R-N01-01 is open.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 target recurrence before F11; C3 is now complete with its fresh D+L120 floor satisfied. F11 is selected, unstarted. No F11
 native producer, runtime advantage or empirical scientific validation is
 claimed by the planning probe.
-The focused probe and three documentation tests passed. All three bounded
-full-suite attempts crashed natively; no N01 full-suite or CI pass is claimed.
+In the original N01 session, the focused probe and three documentation tests
+passed, while all three full-suite attempts crashed natively. The later C3
+recurrence obtained a full-suite pass, recorded separately below.
 
 ```text
 python -X faulthandler -m v2.checks.n01_planning
+```
+
+**C3 recurrence complete at target-refinement scope.** Its
+[main derivations](derivations/07_n01_recurrence.md),
+[optional consumer/program extensions](derivations/08_n01_evidence_consumers.md)
+and [twenty-five targeted comparisons](literature/04_n01_recurrence_comparison.md)
+challenge both scientific and bounded self-assessment routes. Strong ordinary
+methods defeat several apparent advantages. An actual two-bit program gives
+a concrete old-loss-law versus program-revision distinction, with an exact
+ordinary joint-information repair. The [closing plan](contribution_plan.md#8-c3-close-targets-after-the-two-hour-recurrence)
+keeps C1/F11's 16-state/three-query negative control, then C2/F12; F13 retains
+its separate D60 obligation. **120.540527 engaged D+L minutes** are recorded.
+Three new exact probes passed on their first attempts. The full suite passed
+**1,429 tests on attempt three**, after two native crashes; this is a local
+run, not a CI claim. [Timing, crash logs, review and floor assessment](work_logs/N01R_2026-10-02_S1.md).
+Contributor: **Codex (GPT-6)**. Project novelty remains **NOT YET SUPPORTED**.
+
+```text
+python -X faulthandler -m v2.checks.n01_recurrence
+python -X faulthandler -m v2.checks.n01_recurrence_extensions
+python -X faulthandler -m v2.checks.n01_risk_revision
 ```
 
 **[PLAN01 is adopted](decisions/2026-09-30_novelty_and_recurrence.md).** Its
@@ -52,7 +73,7 @@ comparisons. **19 new hostile tests passed**, with 13 cap values, 221 direct
 rational points and three received composite examples. Three full-suite and
 three aggregate F05–F09/Gate-B attempts crashed natively; no current broad-suite
 pass is claimed. All six prior protected floors were audited. The kernel is
-unchanged. **N01 is complete at target-selection scope; F11 is selected, unstarted; C/D remain unattempted.**
+unchanged. **N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is selected, unstarted; C/D remain unattempted.**
 Research contributor: **Codex (GPT-6)**. Gate B has no protected minimum; its
 [work record](work_logs/B_1_2026-09-30_S1.md) preserves actual timing. Cycle III
 prospectively uses D/L/E 35/10/55 and R/X 60/40, with the existing floors and
@@ -75,7 +96,7 @@ as effort estimates, distinct from these progressively broader scope targets.
 Neither is a promise of novelty or a forecast for all remaining v2 work.
 [S1](work_logs/F10_2026-09-30_S1.md) records **45.001320 L
 minutes**, optional planning checks, and three native full-suite crashes.
-No F10 full-suite pass is claimed. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; F11 is selected, unstarted.
+No F10 full-suite pass is claimed. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is selected, unstarted.
 Research contributor: **Codex (GPT-6)**.
 
 **F09 is complete at comparison scope.** The
@@ -90,7 +111,7 @@ were checked through the unchanged receiver and serialization round trip.
 Broader runs failed natively after bounded retries; no F09 full-suite/CI pass
 is claimed. [S1](work_logs/F09_2026-09-30_S1.md) records **60.091745 engaged D
 minutes** and the minimum assessment. Research contributor: **Codex (GPT-6)**.
-Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; F11 is selected, unstarted; Gate A and the provisional core are unchanged.
+Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is selected, unstarted; Gate A and the provisional core are unchanged.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f09*.py'
@@ -172,7 +193,7 @@ The [completion record](work_logs/F05_2026-09-27_S2.md) records 30.063473 D minu
 this session and **60.320288 cumulative F05 D minutes**. The continuation alternative
 remains live; the semantics is provisional, not a completed deductive calculus.
 
-**Next task: F11 — minimal reasoner and semantic reference (unstarted), carrying R-N01-01/C1.** Gate A remains passed at its existing scope. No neural
+**Next task: F11, carrying R-N01-01/C1 (E60); unstarted. C3 is complete.** Gate A remains passed at its existing scope. No neural
 training or later readiness gate has occurred. F05's supplied-model discovery
 suite passes **90 tests** (48 from S1; 42 added in S2):
 
@@ -218,7 +239,7 @@ The [completion record](work_logs/F04_2026-09-26_S6.md) credits **11.238242 new 
 cumulative F04 D is **60.021079 minutes**. All **202 F04 tests** pass,
 including **38 new cases**; F03/F02 remain **256/124**. The
 [checklist](derivations/F04_completion_checklist.json) is a task-scope self-audit,
-not a readiness-gate decision. **Next task: F11, unstarted**, carrying
+not a readiness-gate decision. **Historical N01 pointer; the current C3 outcome and schedule are above:** F11, carrying
 R-N01-01/C1 after N01's completed target selection; the [plan](contribution_plan.md)
 retains the [PLAN01](decisions/2026-09-30_novelty_and_recurrence.md) novelty requirements.
 

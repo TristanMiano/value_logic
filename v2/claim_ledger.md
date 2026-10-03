@@ -1,7 +1,7 @@
 # Phase Two Claim Ledger
 
-Current status (September 30, 2026): **F01–F10 complete at their task scopes;
-Gate B passed at mathematical-readiness scope; PLAN01 adopted; N01 selected, unstarted; novelty not yet established.** F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
+Current status (October 2 local / October 3 UTC, 2026): **F01–F10, N01 and recurrence C3 complete at their task scopes;
+Gate B passed at mathematical-readiness scope; PLAN01 adopted; F11 selected, unstarted; novelty NOT YET SUPPORTED; R-N01-01 open.** C3 records 120.540527 engaged D+L minutes. F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
 soundness theorem, not a permanent core or later gate. Gate A retains its
 foundation-readiness PASS; C/D are unattempted. The dated ledger entries and
 earlier opening below retain historical statuses.
@@ -938,3 +938,35 @@ R-N01-01 remains an open contribution obligation, not a mathematical repair or
 a novelty pass. Tests and time do not discharge that obligation.
 Three documentation tests passed; all three bounded full-suite attempts
 crashed natively. No N01 broad-suite or CI pass is claimed.
+
+## N01/C3 recurrence acceptance — October 2 local / October 3 UTC, 2026
+
+**C3 complete at target-refinement scope; project novelty NOT YET SUPPORTED;
+R-N01-01 OPEN.** Contributor/reviewer: **Codex (GPT-6)**, same-assistant review.
+Sources: [main notebook](derivations/07_n01_recurrence.md),
+[optional notebook](derivations/08_n01_evidence_consumers.md),
+[targeted audit](literature/04_n01_recurrence_comparison.md) and
+[work record](work_logs/N01R_2026-10-02_S1.md).
+
+| ID | Claim / evidence | Scope and limitation |
+|---|---|---|
+| N01R-C01 | A1–A4: prospective-cost consumer, known-output quadratic difference projection and exact quartic Boole control. | Relative-kernel necessity on the stated direction space; sunk costs separate; no practical scientific advantage. |
+| N01R-C02 | B2–B6: exact single-loop fixed point, cycling/damping distinction, fractional-LP reduction and two-gain endpoint counterexample. | Positive bounded denominators, stated clipping regimes; stability and external calibration are separate. |
+| N01R-C03 | B7–B10: joint fractional profile has a nonpolyhedral boundary, scoped finite affine-piece lower bound, and rational tangent/chord certificates. | Restricts finite polyhedral/affine summaries, not arbitrary symbolic programs; closed formulas and conic controls remain available. |
+| N01R-C04 | B11–B17: common-bias cancellation, observation non-identifiability, exact query-specific conic control and calibrated relaxation gap 1/30 versus 1/12. | Calibration and nonnegative-loss range are explicit; augmented-hull failure does not imply every query fails. |
+| N01R-C05 | B18–B22: finite randomized task realization, sharp amplitude analysis, split-before-convexification repair, finite interpolation envelope and simultaneous difference-graph witness. | Known finite structure collapses the continuum representation obstruction for this fixed program; graph methods are established. |
+| N01R-C06 | B23–B29: finite frozen-policy LP, zero-effort and quality-policy controls, disconnected safe sets, calibrated execution correction, native-admission map and exposed-face positive control. | Fixed context/interpolation positions required for affine table admission; uncertain nonlinear products excluded. No new native atom or F13 completion. |
+| N01R-C07 | C1–C4/C15: simultaneous coverage supports adaptive query use; iid margin audit and finite-horizon martingale composition. | External statistical assumptions remain necessary; radius gamma/2, rather than gamma, is sufficient for the stated true-margin certification. |
+| N01R-C08 | C5–C7/C21/C24/C25: fixed-level finite-atom risk reduction, paired-risk coupling distinction, finite reference-knot all-risk comparison and exact CDF-cell oracle. | Risk/stop-loss methods are classical. A numerical all-risk discontinuity is not an obstruction to the fixed-tolerance decision predicate. |
+| N01R-C09 | C8–C14: equilibrium can understate actual cycle loss; convergent convex/VI controls, graph potentials, static-uncertainty and switch-accounting distinctions. | Algorithm, information and horizon are fixed explicitly; no imported generic-method novelty. |
+| N01R-C10 | C16–C20/C23: twenty actual two-bit policies, robust mean optimum 11/40, tail-risk switch at alpha=1/6, risk-summary and policy-pruning counterexamples. | Deterministic/private-lottery and prior quantifiers differ; fixed finite task, not an empirical application. |
+| N01R-C11 | C22/C26: an identical old complete loss law can permit opposite judgments of a program edit; suitable three policy means recover the full input law, with partition/kernel criteria and a joint-information counterexample. | Lower bounds are relative to the declared summary interface; ordinary joint counts or execution logs repair the loss. Not a general impossibility for retained evidence. |
+| N01R-C12 | Three exact probes passed, including 1,568 reference-knot/all-risk comparisons, 56 policy-summary reconstructions and 168 lottery witnesses. | Finite probability coverage; C25 separately justifies all-risk coverage for each fixed pair. Probes are not F11 or continuous theorem proofs. |
+| N01R-C13 | Twenty-five targeted primary-source comparisons strengthen baseline requirements and calibrate later effort. | Inspection limits recorded; no exhaustive priority audit or supported project novelty. |
+
+Fresh D+L120 is satisfied: D102.750230/L17.790297. The root suite passed
+**1,429 tests on attempt three**, after two native crashes, retained in the
+work record. This supersedes no historical test outcome and is not a CI claim.
+A/B retain their scoped passes. Select **C1/F11 E60**, then C2/F12; both are
+unstarted. C/D still require supported distinctiveness. Time and local passes
+do not discharge R-N01-01.

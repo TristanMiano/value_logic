@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: October 3, 2026 UTC (October 2 in America/Los_Angeles).
-Status: F01–F10 and N01 complete at their task scopes; Gates A/B retain their scoped passes; F11 selected, unstarted; F12–F17 unstarted; C/D unattempted; project-level novelty NOT YET SUPPORTED; R-N01-01 open.
+Status: F01–F10, N01 and recurrence C3 complete at their task scopes; Gates A/B retain their scoped passes; C3 D+L120 satisfied; F11 selected, unstarted; F12–F17 unstarted; C/D unattempted; project-level novelty NOT YET SUPPORTED; R-N01-01 open.
 
 ## Resume here
 
@@ -11,25 +11,25 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F11 — minimal reasoner and semantic reference (unstarted).**
-It carries **R-N01-01/C1, protected E60**, with the exact acceptance boundary
-and central/high forecast in [N01's contribution plan](v2/contribution_plan.md).
-N01 completed target selection and its protected D+L60. The original seed is
-an interface fixture and negative control; its optional policy result is a
-lead, not a novelty pass. F11 has not started.
+**Next task: F11, carrying R-N01-01/C1, protected E60; unstarted.**
+The author moved C3 target refinement before F11 and set a fresh two-hour
+research floor. C3 is now complete at refinement scope, with **120.540527
+engaged D+L minutes**. Scientific and bounded self-assessment routes were
+challenged against strong ordinary methods; optional actual-program examples
+identify further revision questions. The 16-state/three-query scientific
+fixture remains F11's small negative control, followed by C2/F12 cost and
+differential evidence. [Schedule amendment](v2/decisions/2026-10-02_n01_recurrence.md),
+[completed work record](v2/work_logs/N01R_2026-10-02_S1.md),
+[outcome and next experiment](v2/contribution_plan.md#8-c3-close-targets-after-the-two-hour-recurrence).
+R-N01-01 remains OPEN and project novelty NOT YET SUPPORTED. A/B retain
+their mathematical passes; C/D still require supported distinctiveness.
 
-**Active repair queue: empty.**
-**Open contribution obligation: R-N01-01.** Establish a distinctive application
-or limitation result at matched information and total cost. F11/C1 supplies
-the first missing integration evidence; C2/C3 add comparison and target
-recurrence. This does not invalidate A/B or waive the C/D novelty requirement.
-
+**Active mathematical repair queue: empty.**
 **Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C not attempted; D not attempted.**
-
-**Contribution state: NOT YET SUPPORTED.** A/B are readiness decisions, not
-novelty endorsements. N01 has assigned a bounded next chunk; later checkpoints
-must do the same whenever the evidence does not yet support a sufficiently distinctive
-project-level contribution. Selecting F11 does not start it automatically.
+POST-B-1 actual is **224.086789 engaged minutes**. With C1's central 70-minute
+forecast, the first four-hour checkpoint is reviewed at its close, projected
+294.086789 minutes (54.086789 overshoot); use actuals when that chunk closes.
+Do not split a protected chunk merely to land on the checkpoint.
 
 Select the pointer, not mechanically the first unchecked task. A failed or
 invalidated gate can put an earlier repair ahead of later numbered tasks.
@@ -176,6 +176,12 @@ N01 adds a 90-minute initial planning allowance, making the arithmetic amended
 traversal prior 2,370 minutes (39.5 hours), **not a forecast of remaining work**.
 The completed tasks are not charged again. Reforecast the post-B package from
 N01 onward; recurrence is open-ended in total and bounded per selected chunk.
+
+Author-set C3 exception: the recurrence before F11 had a fresh **D+L120**
+floor, central D90/L30/E15/O15=150 and high D120/L45/E30/O25=220, with review
+at 165 research minutes. It closed at **145.677017 total engaged minutes**,
+including 120.540527 D+L. This is additional recurrence, not a change to the
+historical original-traversal arithmetic or later task floors.
 
 ### Research chunks inside cumulative ambition checkpoints
 
@@ -1024,9 +1030,27 @@ to publication with an unsound core simply because the planned queue ended.
   Independent exact planning checks passed. D+L60 is satisfied; see
   [the clock/validation record](v2/work_logs/N01_2026-10-02_S1.md).
   **NOT YET SUPPORTED** at project novelty scope; the seed's hoped-for uniform
-  vector compression is displaced. R-N01-01/C1 in F11 is selected, E60;
-  C2/C3 specify further comparison/target work. Neither a native producer nor
+  vector compression is displaced. The original close selected C1/F11, E60;
+  the author subsequently moved C3 before C1/C2, as recorded below. Neither a native producer nor
   practical speed/novelty is claimed. Contributor: **Codex (GPT-6)**.
+
+- [x] **N01 recurrence R-N01-01/C3 — challenge and refine the target before F11.**
+
+  Author-set fresh D+L120; completed **120.540527 engaged research minutes**
+  in those modes. [Derivations A1–A4/B1–B29](v2/derivations/07_n01_recurrence.md)
+  compare justified scientific consumers, bounded feedback and ordinary
+  algebraic/conic/grid controls. [Optional C1–C26](v2/derivations/08_n01_evidence_consumers.md)
+  add statistical/execution contracts and a two-bit program whose old complete
+  loss law fails to decide a new edit; ordinary joint information repairs it.
+  [Twenty-five targeted source comparisons](v2/literature/04_n01_recurrence_comparison.md)
+  limit generic novelty claims. Three exact probes passed. Scope, corrections,
+  verification limitations and floor assessment are in the
+  [work record](v2/work_logs/N01R_2026-10-02_S1.md).
+  **Project novelty NOT YET SUPPORTED; R-N01-01 stays open.** Select C1/F11
+  E60 on the unchanged small scientific control, then C2/F12; optional richer
+  families are candidates for F13, whose fresh D60 is not discharged here.
+  No native producer, speed advantage, empirical application or new gate pass.
+  Contributor: **Codex (GPT-6)**.
 
 - [ ] **F11 — implement a minimal reasoner and semantic reference.**
 

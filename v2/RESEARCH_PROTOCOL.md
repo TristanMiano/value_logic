@@ -150,6 +150,15 @@ stop for explicit replanning: narrow the immediate attempt, create a repair
 item, or forecast an additional block. Do not silently expand an unbounded
 proof search or mark it successful because its budget expired.
 
+**Scoped author exception, October 2 local / October 3 UTC, 2026.**
+[R-N01-01/C3](decisions/2026-10-02_n01_recurrence.md) moves before C1/F11 and
+C2/F12 and has a fresh **D+L120** floor, with evidence in both modes. Prior
+N01 research, engineering, administration, tool waiting and unknown intervals
+cannot satisfy it. This exception applies only to C3; the normal 60/90-minute
+increments and each later task's mode-specific floor remain in force. Its
+[completed record](work_logs/N01R_2026-10-02_S1.md) reports the outcome and
+floor assessment without treating time spent as novelty evidence.
+
 **PLAN01 author amendment, September 30 local / October 1 UTC, 2026.** Remaining
 research and recurrence use prospectively selected **60- or 90-minute engaged
 research chunks**, with explicit D/L/E allocations and O/wait forecasts separate.

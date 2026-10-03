@@ -1,7 +1,7 @@
 # Research opportunity register
 
 Owner: the active research agent, subject to DIR01 and the research protocol.
-Updated: October 2 local / October 3 UTC, 2026, through N01.
+Updated: October 2 local / October 3 UTC, 2026, through N01 recurrence C3.
 These are **ranked leads**, not proven gaps or claims of first discovery.
 The relevant primary-source descriptions and inspection limits are in
 [literature/directional_leads.md](literature/directional_leads.md).
@@ -537,3 +537,31 @@ spend recurring chunks trying to recover full-vector affine savings already
 disproved in the seed. Preserve OPP-03's meaning and OPP-02's ordinary-training
 pilot; neither was attempted here. The 4/8/16/32-hour ladder still grows breadth
 and supporting evidence together. Contributor: **Codex (GPT-6)**.
+
+## N01/C3 — revision across programs and consumers
+
+The [two-hour recurrence](work_logs/N01R_2026-10-02_S1.md) is complete at
+refinement scope. It leaves the four standing opportunities and their ranking
+intact, while sharpening OPP-01/04 and OPP-03. Scientific action restrictions
+must survive quadrature and known-output projection controls. Calibrated
+feedback distinguishes fixed points from actual execution and nonlinear
+summary information, but ordinary fractional/conic optimization, splitting,
+finite interpolation and stronger policy selection repair the examples.
+
+The optional two-bit program gives a more concrete lead: an old complete loss
+law can remain unchanged while a program edit changes from improving to
+worsening. The [C22/C26 derivations](derivations/08_n01_evidence_consumers.md)
+identify the missing joint-source information and its ordinary repair.
+Twenty-five [primary comparisons](literature/04_n01_recurrence_comparison.md)
+make decision-state compression, exact policy vectors, metareasoning, risk
+comparison and program-cost certificates mandatory comparison families where
+applicable. Their reuse is encouraged; their existence limits generic claims.
+
+**R-N01-01 stays OPEN; novelty NOT YET SUPPORTED.** Select C1/F11 E60 on the
+16-state/three-query scientific negative control, then C2/F12 cost and revision
+evidence. Use those costs to choose a richer F13 family; its D60 is still due.
+The next decisive evidence is an implemented matched comparison, not another
+unbounded theory-only N01 recurrence. If both richer routes are displaced,
+prospectively scope C4 to reconsider the question. OPP-02's neural pilot remains
+unstarted. Broaden questions and supporting evidence together; no new lead is
+promoted as an established open problem. Contributor: **Codex (GPT-6)**.

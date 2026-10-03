@@ -3,7 +3,7 @@
 Contributor: **Codex (GPT-6)**. October 2, 2026, America/Los_Angeles.
 **N01 complete at target-selection and challenge scope; D+L60 satisfied.**
 Project contribution: **NOT YET SUPPORTED**. A/B retain their scoped passes.
-**Next: F11, unstarted**, carrying obligation R-N01-01/C1. No later task was run.
+**C3 complete at target-refinement scope; fresh D+L120 satisfied. Next: R-N01-01/C1 in F11, E60, unstarted.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 ahead of C1/C2. The [closing assessment](#8-c3-close-targets-after-the-two-hour-recurrence) governs the current plan.
 
 ## 1. Selected question and the distinction we will test
 
@@ -170,7 +170,7 @@ Status: **OPEN; NOT YET SUPPORTED**. A/B need no recurrence on current evidence.
 Use the same ID for this gap; count each chunk once. After two unsuccessful
 chunks, explicitly compare at least two research routes before choosing more work.
 
-**Selected next: R-N01-01/C1 within F11, protected E60.** Central D0/L0/E60/O10
+**Selected after C3: R-N01-01/C1 within F11, protected E60; unstarted.** Central D0/L0/E60/O10
 =70 engaged minutes; high D10/L5/E90/O20=125; expected waiting 2/10 minutes.
 R/X forecast 70/30. Acceptance: documented `python -m v2.verification`, the
 16-state/three-query first slice, automatic bounded certificate generation,
@@ -182,7 +182,7 @@ verification or 900-state native sweep is promised in the first hour.
 
 A partial F11 keeps its continuation selected. Once F11 is complete, C2 in
 F12 adds hostile revision/differential coverage and cost instrumentation.
-Before treating the seed as evidence for a substantive application contribution,
+**Original C3 forecast, superseded by the amendment below.** Before treating the seed as evidence for a substantive application contribution,
 assign **R-N01-01/C3**, a target-refinement recurrence with protected D+L60,
 central D45/L15/E5/O10=75 and high D60/L30/E10/O20=120, waiting 3/10 minutes.
 Compare (A) a justified policy/receipt contract on a richer scientific family
@@ -190,6 +190,21 @@ and (B) a bounded self-assessment/update protocol whose information needs resist
 the simple reductions. Accept a concrete family, an ordinary reduction, one
 discriminating argument/test and a next scoped task, even if one route is rejected.
 This recurrence does not discharge F13's D60 and does not start automatically.
+
+### Author-authorized recurrence before implementation
+
+**C3 was selected ahead of C1/F11 and C2/F12 and is now complete.** Its prospective fresh
+D+L120, planned D90/L30, with E15/O15 separate; central 150, high 220 engaged
+minutes. Waiting 5/15 separate. The [decision](decisions/2026-10-02_n01_recurrence.md)
+and [work record](work_logs/N01R_2026-10-02_S1.md) state the acceptance criteria.
+A credible unresolved contribution opportunity can justify F11; only supported
+distinctiveness can pass Gates C/D. Existing mathematical passes are unchanged.
+
+Historical amendment forecast: POST-B-1 began C3 at 78.409772 actual minutes. Central C3 close was 228.409772;
+conditional F11 close was 298.409772 (first four-hour checkpoint, overshoot
+58.409772). High C3 close was 298.409772 and would trigger review then.
+The work record replaces these with actuals. The original forecasts below
+remain historical estimates, not the current order.
 
 ## 7. Initial package forecast and calibrated ambition
 
@@ -233,3 +248,102 @@ not merely stronger defense of this toy. Keep 60/90-minute increments, use
 actual completion/recurrence evidence to reforecast, and do not infer a weekly
 usage percentage from unpaired wall-clock observations. N01 starts neither
 F11 nor an unattended continuation.
+
+## 8. C3 close: targets after the two-hour recurrence
+
+**C3 complete; R-N01-01 OPEN; project novelty NOT YET SUPPORTED.**
+The [work record](work_logs/N01R_2026-10-02_S1.md) reports **120.540527 engaged
+D+L minutes**, comprising D102.750230/L17.790297. These are fresh measured
+minutes after exclusions, not prior N01 credit. Contributor and reviewer:
+**Codex (GPT-6)**; this is same-assistant reconstruction, not independent review.
+
+The [main notebook](derivations/07_n01_recurrence.md) compares both required
+routes. The [optional notebook](derivations/08_n01_evidence_consumers.md)
+broadens the questions to evidence, execution, risk and actual program edits.
+The [25-entry primary-source audit](literature/04_n01_recurrence_comparison.md)
+finds strong existing methods in all these areas. Its inspection boundaries
+are explicit; it is not an exhaustive novelty or priority review.
+
+| Route / candidate | Concrete result and strongest challenge | Disposition |
+|---|---|---|
+| Scientific consumer, A1–A4 | Least prospective cost among robustly adequate actions is justified; sunk evaluation cost is separate. Known-output quadratic comparisons reduce to difference directions. Five equal-spaced samples integrate the seed quartic exactly by Boole's rule. | Keep the fixed-action seed as an interface negative control; no defended practical scientific advantage yet. |
+| Self-assessment feedback, B1–B29 | Fixed-point existence, update convergence, calibration and actual loss are separate obligations. One loop has a classical fractional-LP reduction; joint profiles have exact conic/analytic controls. A saturated example has true regret 1/30 versus a coarse convex relaxation's 1/12. | A useful discriminator, but one adaptive split or a closed formula repairs the gap. An admissible stronger policy further reduces regret. No native-method advantage. |
+| Finite-table task structure, B18–B25 | A six-level randomized task realizes the discrepancy witness. Its structural interpolation and ordinary difference-constraint graph yield an exact finite control. | The continuum partition lower bound does not establish a growing cost for this fixed program. Retain that failed extrapolation explicitly. |
+| Actual program and changing consumer, C16–C26 | Twenty policies for a two-bit parity task give an exact mean/tail-risk switch. An old complete loss law can remain identical while an edit's mean difference changes from -1/40 to 3/40. | Stronger application lead for F13, but ordinary joint counts or three suitable policy means reconstruct the relevant input law. No demonstrated novelty or cost advantage. |
+
+The candidate contribution is now more precise: characterize and measure
+**which loss/evidence summaries remain sufficient when both the program and
+its consumer change**, and when retaining checked, revision-aware consequences
+is useful at matched total cost. C22's edit discriminator is about information
+lost by a particular summary, not a limitation of ordinary decision theory.
+C26 states the finite partition/relative-kernel repair. The baseline receives
+the same full source and execution information: the old program's execution
+logs can already contain the missing input coordinate, so withholding them
+from the ordinary route would manufacture an advantage.
+
+Additional controls prevent overclaiming breadth. Fixed-level finite-atom
+CVaR admits ordinary finite optimization. All-risk *comparison* reduces to
+classical stop-loss constraints, with only the reference distribution's knots
+needed (C21/R24); discontinuity of a numerical risk supremum does not invalidate
+that finite decision procedure (C24). Fixed-point guarantees do not certify
+an oscillating implementation (C8); graph potentials, convex optimization and
+statistical coverage are existing positive controls, not new generic methods.
+The derivations specify when the provisional rational affine/CPWA fragment
+admits an example; nonlinear uncertain products are not silently native atoms.
+
+### Selected next experiment and stopping rule
+
+Proceed to **R-N01-01/C1 in F11, E60**, with the unchanged **16-state,
+three-query scientific fixture** and the forecasts in section 6. It is the
+smallest control that can determine whether automatic certificate generation,
+request binding and a separately implemented reference actually agree. That
+missing evidence cannot be supplied by another purely theoretical N01 chunk.
+Keep both the analytic ordinary producer and the native route eligible for
+the same templates, source information, factorization and receipt guarantee.
+An additional generic optimizer or new self-assessment implementation is
+outside this first chunk. Partial completion selects an explicit continuation.
+
+Once F11 completes, **C2/F12** adds hostile revisions and total-cost evidence
+(central 70, high 120 engaged minutes as above). F13 can then choose the
+actual-program edit/consumer family or the calibrated-feedback family against
+those implementation costs; its fresh D60 remains due. Before expanding,
+state what new question and what stronger evidence the next chunk will buy.
+If both richer routes again reduce to established methods without a useful
+application finding, assign a bounded **R-N01-01/C4** reconsideration with a
+prospective 60/90-minute allocation; do not presume such a chunk is authorized
+or continue searching indefinitely. Reopen A/B only if a reviewed premise
+changes. C/D cannot pass while supported distinctiveness is missing.
+
+Failure of a native speed advantage need not end the project: a useful scoped
+limitation or application result could qualify if it is sufficiently distinct
+from the closest work and well supported. Merely reproducing C22's small
+counterexample, or accumulating successful fixtures, would not meet that bar.
+
+### Budget calibration and additional ambition
+
+The **two-hour floor was useful and proportionate for this deliberately broad
+recurrence**: it supported two challenged routes, actual-program and risk
+extensions, stronger literature controls, and reconstruction that corrected
+several overbroad assumptions. It would be high for routine single-question
+target selection. Keep 60/90-minute chunks as the default; this is a scoped
+exception, not an estimated universal optimum. The first core-ready moment
+was not separately clocked, so the record cannot quantify exactly how much
+of the floor was necessary for the minimum acceptance conditions.
+
+More time should buy implemented matched comparisons and a defensible larger
+application, alongside their proofs and adverse cases. The 4/8/16/32-hour
+ladder in section 7 remains a progression in both breadth and support, not
+successively longer defense of one toy. C3 already supplied paper candidates
+for the richer tiers, but has not fulfilled their implementation, independent
+checks, empirical or neural objectives. Checkpoint timing uses actual package
+time in the work record; keep prior minutes and any overshoot. No measured
+token/weekly-usage conversion is available, so no usage-percentage forecast
+is inferred from these hours.
+
+**Actual package checkpoint:** C3 used **145.677017 engaged minutes** including
+E10.968772/O14.167718, against central 150/high 220. Added to prior N01's
+78.409772, POST-B-1 stands at **224.086789 minutes**, below four hours.
+C1/F11's central/high close is now projected at **294.086789/349.086789**;
+review the four-hour milestone at that chunk boundary, with actual overshoot
+(central projection 54.086789). An unfinished chunk retains its continuation;
+neither the milestone nor the floor authorizes an automatic next task.
