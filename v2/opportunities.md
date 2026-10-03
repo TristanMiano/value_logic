@@ -1,7 +1,7 @@
 # Research opportunity register
 
 Owner: the active research agent, subject to DIR01 and the research protocol.
-Updated: September 30 local / October 1 UTC, 2026, through PLAN01.
+Updated: October 2 local / October 3 UTC, 2026, through N01.
 These are **ranked leads**, not proven gaps or claims of first discovery.
 The relevant primary-source descriptions and inspection limits are in
 [literature/directional_leads.md](literature/directional_leads.md).
@@ -516,3 +516,24 @@ project-level novelty as well as technical evidence; component novelty quotas
 are not imposed. Grow breadth and support together at cumulative 4/8/16/32-hour
 checkpoints, retaining earlier clocks and task floors. This is a change to the
 selection and advancement rules, not new evidence promoting any opportunity.
+
+## N01 — consumer-relative evidence, with stronger ordinary controls
+
+The [contribution plan](contribution_plan.md) completes target selection.
+OPP-01/OPP-04 remain the leading integrated question, but generic caching,
+query preservation, robust preference and checked arithmetic are established.
+The quartic fixture has a twelve-expression ordinary closed form; all twelve
+are needed for uniform exact threshold answers in the stated affine model.
+An optional priority policy needs nine, and a changed order needs twelve.
+This is a useful, narrowly scoped distinction, not a supported novelty claim.
+Gaussian quadrature, factorized provenance, complete-source access and a
+two-endpoint post-observation reduction are required baseline controls where
+their hypotheses apply. More states or more flat proof roots alone add little.
+
+**R-N01-01 is open.** F11/C1 is the selected E60 producer/reference feasibility
+chunk. C2 supplies differential/cost evidence; C3 compares a justified richer
+scientific consumer with a bounded self-assessment/update protocol. Do not
+spend recurring chunks trying to recover full-vector affine savings already
+disproved in the seed. Preserve OPP-03's meaning and OPP-02's ordinary-training
+pilot; neither was attempted here. The 4/8/16/32-hour ladder still grows breadth
+and supporting evidence together. Contributor: **Codex (GPT-6)**.

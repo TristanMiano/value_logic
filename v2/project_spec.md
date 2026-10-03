@@ -1,10 +1,18 @@
 # Phase Two Project Specification
 
-Version: PLAN01 novelty and recurrence amendment, September 30, 2026 local / October 1 UTC.
-Status: **F01–F10 complete at their task scopes; Gate A passed at readiness scope; F10 complete with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 selected, unstarted; F11 unstarted; C/D unattempted; novelty not yet established; the semantic core remains provisional**.
+Version: N01 target-selection acceptance, October 2, 2026 local / October 3 UTC.
+Status: **F01–F10 and N01 complete at their task scopes; A/B retain scoped readiness passes; F11 selected, unstarted; C/D unattempted; novelty NOT YET SUPPORTED; R-N01-01 open; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [B_1](checkpoints/B_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
+
+The [N01 contribution plan](contribution_plan.md) now fixes the first loss
+fixture, full threshold-vector objective, finite development workload and
+explicit uniform-revision challenge. Its analytic ordinary baseline and
+optional policy-only result constrain later claims. The protected D+L60 is
+satisfied. **R-N01-01/C1 within F11, E60**, is the next integration chunk;
+the open contribution obligation also requires comparison and target recurrence.
+The planning probe is not a native reasoner or a practical novelty result.
 
 The authorized [PLAN01 amendment](decisions/2026-09-30_novelty_and_recurrence.md)
 selects N01 before F11 and requires supported project-level distinctiveness at
@@ -729,3 +737,27 @@ and **8 checked, round-tripped native certificates**. Broader tests remain
 unverified after bounded native Python failures. F10 is next, unstarted; Gate A
 retains its readiness PASS and B/C/D are unattempted. No original kernel was
 changed. Research contributor: **Codex (GPT-6)**.
+
+## N01 target-selection acceptance — October 2 local / October 3 UTC, 2026
+
+[D1–D24](derivations/06_n01_decision_retention.md) and the
+[targeted source comparison](literature/03_n01_target_comparison.md) narrow the
+post-B question to consumer-relative retention/receipt under supplied loss
+evidence revisions. The four-action polynomial quadrature fixture is a native
+integration test and negative control, with explicitly limited scientific
+claims. All twelve affine replay expressions are needed for uniform exact
+threshold-vector preservation in the stated model; a weaker fixed-priority
+action contract needs nine, while a different priority order needs twelve.
+Neither count is a measured minimum native DAG size or runtime result.
+
+Independent rational probes compare the formulas with unmerged-source geometry,
+check 900 fixtures, seeded/boundary states and explicit threshold witnesses.
+The native kernel is unchanged. Dependency: F05 loss meaning + F06–F09 arithmetic
+and receipt contracts + F10/N01 comparisons -> F11 bounded producer/reference
+integration -> F12 differential evidence. R-N01-01 remains open across these
+chunks and a target-refinement recurrence before an application contribution
+is promoted. A/B retain readiness; C/D still require supported distinctiveness.
+
+The [work record](work_logs/N01_2026-10-02_S1.md) contains the protected floor,
+forecast revision, checks and limitations. N01 is complete; F11 is selected but
+unstarted. Contributor: **Codex (GPT-6)**.

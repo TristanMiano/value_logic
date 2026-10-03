@@ -911,3 +911,30 @@ components intact; if core assumptions change, reopen affected gates normally.
 The cumulative 4/8/16/32-hour package starts with N01, counts recurrence once,
 and grows substantive scope and support together. Prior research credit and
 dated historical dispositions remain unchanged. Contributor: **Codex (GPT-6)**.
+
+## N01 acceptance — October 2 local / October 3 UTC, 2026
+
+**N01 complete at target-selection/challenge scope. Project-level novelty:
+NOT YET SUPPORTED.** [Plan](contribution_plan.md),
+[derivations](derivations/06_n01_decision_retention.md),
+[primary comparisons](literature/03_n01_target_comparison.md),
+[clock and validation record](work_logs/N01_2026-10-02_S1.md).
+Contributor: **Codex (GPT-6)**; same-agent derivations and self-review.
+
+| ID | Supported result | Scope and limitation |
+|---|---|---|
+| N01-C01 | D1–D8: exact polynomial loss encoding, four realized actions, dual replay and coverage construction. | Classical ingredients; finite query/source schema; supplied evidence, not empirical adequacy. |
+| N01-C02 | D9–D14: finite-table and ReLU controls, uniform coverage test, symmetry reduction and twelve affine sharp-bound expressions. | Ordinary baselines; the general coverage LP catalogue is not implemented. No neural training. |
+| N01-C03 | D15: twelve expressions necessary for uniform exact threshold-vector preservation, even with new uniformly sound affine candidates. | Minimum of fixed affine majorants per query on the declared parameter box; not an arbitrary-program/DAG bound. Eight suffice on the grid within the displayed catalogue. |
+| N01-C04 | D16–D21: scaling/price obstructions, bounded-domain positive control, factorized-proof and update-protocol distinctions; Gaussian action falsifier. | Hypotheses and representation classes explicit; elementary reconstructions, not new general theorems or benchmark results. |
+| N01-C05 | D22/D24: nine expressions exactly preserve the fixed T_1,T_2,R,F policy; the order T_1,R,T_2,F requires twelve. | Optional weaker observation; fixed uniformly sound affine bounds. No measured byte/runtime saving; primary vector objective unchanged. |
+| N01-C06 | D23: known scalar estimates with common uncertain scalar truth share two endpoint optimization objectives. | Per-current-source absolute/squared loss; not prospective unknown outputs or two witnesses valid under every revision. |
+| N01-C07 | Exact planning probe passed: 900 grid states, 257 seeded rational states, 9 boundary states, 12 interior witnesses, 2 additional priority witnesses, 4 off-grid failures and four policy prices per main state. | Independent geometric reference; finite checks support but do not prove continuum statements. No F11 native certificates or speed experiment. |
+| N01-C08 | Fifteen primary comparison entries constrain novelty and future budgets; R-N01-01/C1–C3 assigned. | Targeted inspection, not exhaustive priority review. Seed uniform vector compression displaced; broader project contribution remains unsupported. |
+
+The protected D+L60 is satisfied. A/B remain valid at their mathematical scopes;
+C/D are unattempted. **F11 selected, unstarted, carrying R-N01-01/C1 (E60).**
+R-N01-01 remains an open contribution obligation, not a mathematical repair or
+a novelty pass. Tests and time do not discharge that obligation.
+Three documentation tests passed; all three bounded full-suite attempts
+crashed natively. No N01 broad-suite or CI pass is claimed.

@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: October 1, 2026 UTC (September 30 in America/Los_Angeles).
-Status: F01–F10 complete at their task scopes; Gates A/B retain their scoped passes; PLAN01 roadmap amendment adopted; N01 selected, unstarted; F11–F17 unstarted; C/D unattempted; project-level novelty not yet established.
+Last updated: October 3, 2026 UTC (October 2 in America/Los_Angeles).
+Status: F01–F10 and N01 complete at their task scopes; Gates A/B retain their scoped passes; F11 selected, unstarted; F12–F17 unstarted; C/D unattempted; project-level novelty NOT YET SUPPORTED; R-N01-01 open.
 
 ## Resume here
 
@@ -11,19 +11,25 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: N01 — select and challenge a concrete contribution target (unstarted).**
-This is the first chunk of the post-B research package, before substantial F11
-implementation. The authorized [PLAN01 amendment](v2/decisions/2026-09-30_novelty_and_recurrence.md)
-supersedes B_1's next pointer, without invalidating its mathematical pass.
+**Next task: F11 — minimal reasoner and semantic reference (unstarted).**
+It carries **R-N01-01/C1, protected E60**, with the exact acceptance boundary
+and central/high forecast in [N01's contribution plan](v2/contribution_plan.md).
+N01 completed target selection and its protected D+L60. The original seed is
+an interface fixture and negative control; its optional policy result is a
+lead, not a novelty pass. F11 has not started.
 
 **Active repair queue: empty.**
+**Open contribution obligation: R-N01-01.** Establish a distinctive application
+or limitation result at matched information and total cost. F11/C1 supplies
+the first missing integration evidence; C2/C3 add comparison and target
+recurrence. This does not invalidate A/B or waive the C/D novelty requirement.
 
 **Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C not attempted; D not attempted.**
 
 **Contribution state: NOT YET SUPPORTED.** A/B are readiness decisions, not
-novelty endorsements. N01 and the checkpoints below must assign a bounded next
-chunk whenever the evidence does not yet support a sufficiently distinctive
-project-level contribution. No research chunk is started by this plan amendment.
+novelty endorsements. N01 has assigned a bounded next chunk; later checkpoints
+must do the same whenever the evidence does not yet support a sufficiently distinctive
+project-level contribution. Selecting F11 does not start it automatically.
 
 Select the pointer, not mechanically the first unchecked task. A failed or
 invalidated gate can put an earlier repair ahead of later numbered tasks.
@@ -980,7 +986,7 @@ to publication with an unsound core simply because the planned queue ended.
 
 ### Cycle III — executable reasoning and adversarial evaluation
 
-- [ ] **N01 — select and challenge a concrete contribution target.**
+- [x] **N01 — select and challenge a concrete contribution target.**
 
   Principal artifact: `v2/contribution_plan.md`. This is the first post-B
   research chunk, not a repetition of the complete F01–F10 traversal. Start
@@ -1005,6 +1011,22 @@ to publication with an unsound core simply because the planned queue ended.
   chunk; if the target is displaced, assign another N01/F04/F10 comparison.
   This planning task's completion is not a novelty pass. No later task starts
   automatically from this amendment or from an unapproved batch assumption.
+
+  **Completed October 2 local / October 3 UTC, 2026.** The
+  [contribution plan](v2/contribution_plan.md),
+  [D1–D24 derivations](v2/derivations/06_n01_decision_retention.md) and
+  [fifteen primary comparison entries](v2/literature/03_n01_target_comparison.md)
+  specify a four-action loss fixture, 900 finite configurations and a separately
+  explicit bounded rational continuum challenge. Exact full-vector preservation
+  stays primary. A twelve-expression ordinary envelope defeats a solver-only
+  baseline; all twelve are needed uniformly in the stated affine model.
+  Optional policy-only preservation needs nine, with order-sensitive limits.
+  Independent exact planning checks passed. D+L60 is satisfied; see
+  [the clock/validation record](v2/work_logs/N01_2026-10-02_S1.md).
+  **NOT YET SUPPORTED** at project novelty scope; the seed's hoped-for uniform
+  vector compression is displaced. R-N01-01/C1 in F11 is selected, E60;
+  C2/C3 specify further comparison/target work. Neither a native producer nor
+  practical speed/novelty is claimed. Contributor: **Codex (GPT-6)**.
 
 - [ ] **F11 — implement a minimal reasoner and semantic reference.**
 
