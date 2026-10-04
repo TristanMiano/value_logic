@@ -1,4 +1,4 @@
-# F11–F12 bounded producer, semantic reference and validation
+# F11–F13 bounded producer, case studies and validation
 
 **F11 and F12 complete at their task scopes; both E60 floors satisfied.** Contributor: **Codex (GPT-6)**,
 October 3, 2026 local / October 4 UTC. This package implements the
@@ -6,7 +6,12 @@ October 3, 2026 local / October 4 UTC. This package implements the
 and F07 request receiver. Project novelty is **NOT YET SUPPORTED**.
 [F11 work and clocks](../work_logs/F11_2026-10-03_S1.md),
 [F12 results](F12_results.md), [F12 work and clocks](../work_logs/F12_2026-10-03_S1.md).
-Next: **F13 / R-N01-01/F13-A**, fresh D60, unstarted.
+**F13/F13-A is complete at case-study scope**, with fresh D60 within research90
+satisfied. Its [case arguments](../derivations/06_case_studies.md) and
+[results](F13_results.md) have 40 tests with passing scoped coverage; combined
+runs crashed after bounded retries, and no final aggregate pass is claimed.
+[Work, exclusions and floor assessment](../work_logs/F13_2026-10-04_S1.md).
+Next: **R-N01-01/C4 reconsideration before F14**, selected and unstarted.
 
 ## F12 completed development study
 
@@ -174,4 +179,5 @@ this package. The host failures do not identify a hardware or cooling cause.
 This review and implementation were performed by the same assistant; the
 separate reference is an implementation distinction, not independent authorship.
 Novelty, practical advantage, empirical premise validity, general completeness,
-and phase-two completion remain separate, unmet claims. Next: **F13 / F13-A, D60**.
+and phase-two completion remain separate, unmet claims. F13 is now complete;
+next is **R-N01-01/C4 reconsideration before F14**, selected and unstarted.

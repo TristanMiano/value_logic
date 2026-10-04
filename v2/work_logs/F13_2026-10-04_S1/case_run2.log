@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\trist\projects\value_logic\v2\verification\case_study.py", line 141, in <module>
+    main()
+  File "C:\Users\trist\projects\value_logic\v2\verification\case_study.py", line 134, in main
+    data = report()
+           ^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\verification\case_study.py", line 20, in report
+    ctx, proof = S.prove(source, price)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\verification\case_science.py", line 106, in prove
+    A.receive(ctx, proof, A.request(ctx, None, new, old, bound))
+  File "C:\Users\trist\projects\value_logic\v2\checks\f07_soundness.py", line 132, in receive
+    root = K.check(ctx, proof)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 196, in check
+    ctx.validate(); context_id=fingerprint(ctx)
+                               ^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 282, in fingerprint
+    ctx.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 259, in validate
+    if evaluate(row.lhs, self.signature, point) > evaluate(row.rhs, self.signature, point):
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 171, in evaluate
+    infer(t, sig)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 127, in infer
+    sig.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'tuple_iterator' object is not callable

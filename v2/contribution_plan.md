@@ -3,7 +3,7 @@
 Contributor: **Codex (GPT-6)**. October 2, 2026, America/Los_Angeles.
 **N01 complete at target-selection and challenge scope; D+L60 satisfied.**
 Project contribution: **NOT YET SUPPORTED**. A/B retain their scoped passes.
-**C3, F11/C1 and F12/C2 complete at their task scopes; their protected floors are satisfied. Next: R-N01-01/F13-A in F13, fresh D60 within a 90-minute research chunk, unstarted.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 ahead of C1/C2. The [F12 close](#10-f12-close-and-application-selection) governs the current plan. Earlier numbered sections retain their dated selections and forecasts.
+**C3, F11/C1, F12/C2 and F13/F13-A complete at their task scopes; their protected floors are satisfied. Next: R-N01-01/C4 reconsideration before F14, protected research60, unstarted.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 ahead of C1/C2. The [F13 close](#11-f13-close-and-selected-c4-reconsideration) governs the current plan. Earlier numbered sections retain their dated selections and forecasts.
 
 ## 1. Selected question and the distinction we will test
 
@@ -461,3 +461,68 @@ raise this class to 90 by default or manufacture extra fixtures to fill time.
 The next increase in effort should buy the richer F13 scope and its arguments,
 not more repetitions of this small solved comparison. Hours still have no
 measured conversion to weekly usage percentages or a guaranteed novelty yield.
+
+## 11. F13 close and selected C4 reconsideration
+
+**F13/F13-A complete at case-study scope.** Fresh **D60** is satisfied at
+**60.496927 engaged minutes**, within **90.192407 D/L/E minutes**. The
+[two cases](derivations/06_case_studies.md) and [results](verification/F13_results.md)
+include actual native reasoning, scientific acquisition, hostile revisions,
+and stronger ordinary controls. [Work and exclusions](work_logs/F13_2026-10-04_S1.md).
+
+The evidence changes the contribution forecast. Ordinary source inspection
+bypasses the artificial proof-search difficulty; a cheap fallback collapses
+its risk decision to a mean comparison. Exact information dimension is not
+automatically the dimension needed for a useful decision. The equal-cost
+rank has a direct maximal-chain antecedent; weighted and revision-sensitive
+extensions need further significance and priority assessment. These are
+useful application findings, not proof that the project has no possible novelty.
+Reusing established tools remains appropriate. What is missing is a defended
+project-level contribution that is distinctive enough to support a scoped
+novelty claim, whether conceptual, mathematical or applied.
+
+**R-N01-01 remains OPEN; novelty NOT YET SUPPORTED. Select R-N01-01/C4 before
+F14, unstarted.** A/B retain their scoped passes; C/D remain unattempted.
+There is no blocking mathematical repair to the adopted core.
+
+C4 will compare at most two concrete routes. A route must specify a useful
+consumer, evidence/acquisition contract, consequential margin, strongest
+ordinary combination, and a falsifier. Candidates may include a scientific
+acquisition/revision problem, reasoning whose outcomes are not cheaply exposed
+in its premises, or a meaningful limitation theorem. A pure theorem need not
+promise speed; an application need not invent its underlying tools. Each still
+needs a clear relation to the closest work and evidence of why its additional
+result matters. Do not spend C4 merely enlarging the Boolean table or repeating
+the general retention criterion.
+
+Protected chunk: **60 research minutes**, central **D30/L25/E5/O10=70**;
+high **D40/L35/E15/O15=105** (90 research minutes), waits 5/15 separate,
+R/X 30/70. Review at 60 research minutes. Deliver a comparison of candidate
+contributions and choose one bounded next experiment with 4/8/16-hour scope
+forecasts that grow breadth and supporting evidence together. If no candidate
+is distinctive enough yet, explicitly assign further work, revise the ambition,
+or recommend a scoped stop; do not pass the novelty gate by relabeling technical
+completion. A promising but unproved candidate may select a discriminating
+experiment, with the unresolved novelty obligation carried forward.
+
+F14 stays unstarted pending that decision. C4 is selected, not executed here.
+The cumulative package clock is preserved; actuals and the next eight-hour
+projection are in the F13 work record. No usage-per-week conversion has been
+measured. More time should buy a better application question and its defense,
+not just more tests of the already displaced advantage.
+
+### Cycle III allocation review after F13
+
+N01 (including C3), F11, F12 and F13 total **408.537204 research minutes**:
+D206.826809/L41.964082/E159.746313, or **50.626/10.272/39.102%**, against
+35/10/55 forecast. R/X totals are 217.181248/191.355955 minutes, about
+53.2/46.8%, against 60/40 forecast. The added two-hour target recurrence and
+F13's expanded arguments explain the larger derivation share; implementation
+did not establish the proposed advantage. These actuals do not retroactively
+change forecasts or floors. [Machine-readable review](work_logs/F13_2026-10-04_S1/cycle_review.json).
+
+For C4, shift effort toward targeted literature and contribution selection:
+the central D30/L25/E5 plan gives research shares 50/41.7/8.3 and R/X30/70.
+Reforecast the next experimental chunk from its selected question rather than
+forcing the old cycle percentage. Preserve existing task-specific floors and
+review again at C4 close, the cumulative eight-hour boundary, and Gate C.

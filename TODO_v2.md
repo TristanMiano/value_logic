@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: October 4, 2026 UTC (October 3 in America/Los_Angeles).
-Status: F01–F12, N01 and recurrence C3 complete at their task scopes; Gates A/B retain their scoped passes; C3 D+L120 and F11/F12 E60 satisfied; F13 selected, unstarted; F14–F17 unstarted; C/D unattempted; project-level novelty NOT YET SUPPORTED; R-N01-01 open.
+Last updated: October 4, 2026 UTC and America/Los_Angeles.
+Status: F01–F13, N01 and recurrence C3 complete at their task scopes; Gates A/B retain their scoped passes; F13 D60/research90 satisfied; C4 selected, unstarted before F14; F14–F17 unstarted; C/D unattempted; project-level novelty NOT YET SUPPORTED; R-N01-01 open.
 
 ## Resume here
 
@@ -11,7 +11,17 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F13, carrying R-N01-01/F13-A; fresh D60 within a 90-minute research chunk; unstarted.**
+**Next task: R-N01-01/C4 reconsideration, before F14; protected research60;
+central/high D/L/E/O totals 70/105 minutes; unstarted.**
+F13's [scientific and staged reasoning cases](v2/derivations/06_case_studies.md)
+are complete, with **60.496927 D / 90.192407 total research minutes**.
+The stronger ordinary controls still match or improve the useful results;
+the equal-cost information rank has a direct antecedent. Novelty is not yet
+supported. The [C4 selection](v2/contribution_plan.md#11-f13-close-and-selected-c4-reconsideration)
+requires a consequential application or limitation and a discriminating
+comparison, not more fixtures of the displaced advantage.
+
+The following paragraph preserves the path to that selection.
 The author moved C3 target refinement before F11 and set a fresh two-hour
 research floor. C3 is now complete at refinement scope, with **120.540527
 engaged D+L minutes**. Scientific and bounded self-assessment routes were
@@ -20,7 +30,7 @@ identify further revision questions. The 16-state/three-query scientific
 fixture has passed F11's bounded integration control and C2/F12's cost and
 differential checks. F12 selects the richer scientific/program and staged
 self-assessment cases, with strong ordinary methods and an explicit novelty
-obligation. [Current selection and stop condition](v2/contribution_plan.md#10-f12-close-and-application-selection),
+obligation. [Historical F12 selection and stop condition](v2/contribution_plan.md#10-f12-close-and-application-selection),
 [schedule amendment](v2/decisions/2026-10-02_n01_recurrence.md),
 [completed work record](v2/work_logs/N01R_2026-10-02_S1.md),
 [outcome and next experiment](v2/contribution_plan.md#8-c3-close-targets-after-the-two-hour-recurrence).
@@ -37,15 +47,19 @@ next milestone is eight hours at a chunk boundary. F12 closed with **60.919966
 engaged E minutes**, exceeding both its selected E60 and original E45 floors.
 Its [results](v2/verification/F12_results.md) favor ordinary coefficient caching
 over the studied proof reconstruction at matched guarantees; they do not
-support project novelty. F13-A forecasts **D60/L10/E20/O10=100**, high
-**D90/L20/E30/O20=160**, with waits 5/15 separate and R/X 50/50. Review at 90
-research minutes. If the richer cases yield no useful distinguishing result,
-select R-N01-01/C4 reconsideration before F14 rather than waiving the bar.
-POST-B-1's cumulative actuals, eight-hour remainder and F13 projections are in
+support project novelty. F13-A forecast **D60/L10/E20/O10=100**, high
+**D90/L20/E30/O20=160**, with waits 5/15 separate and R/X 50/50. It closes
+with both floors satisfied and selects R-N01-01/C4 reconsideration before F14.
+POST-B-1's historical actuals, eight-hour remainder and F13 projections are in
 the [F12 accounting record](v2/work_logs/F12_2026-10-03_S1.md). Prior package
 time was 296.058757 engaged minutes; no recurrence time is reset.
-Current package total: **367.344527 engaged minutes**; **112.655473** remain
-to eight hours. F13 central/high projected closes: **467.344527/527.344527**.
+Package before F13: **367.344527 engaged minutes**. Its original central/high
+projected closes were **467.344527/527.344527**. Current totals, exclusions and
+C4 cumulative projections are in the [F13 work record](v2/work_logs/F13_2026-10-04_S1.md).
+Current package: **461.480742 engaged minutes**, leaving **18.519258** to
+eight hours. C4's central/high cumulative closes are **531.480742/566.480742**;
+review eight hours at the first completed chunk boundary reaching it, retaining
+overshoot. F13 does not yet trigger that checkpoint.
 
 Select the pointer, not mechanically the first unchecked task. A failed or
 invalidated gate can put an earlier repair ahead of later numbered tasks.
@@ -127,7 +141,9 @@ Its essential rules are:
   **E: empirical/computational tests**. Keep durable evidence for each. The
   original cycle allocation was 60/15/25; D is normally the largest share.
   Cycle III prospectively uses D/L/E **35/10/55**, justified by implementation
-  and evaluation, with R/X **60/40**; review after F13 and at Gate C.
+  and evaluation, with R/X **60/40**. The [F13 review](v2/contribution_plan.md#cycle-iii-allocation-review-after-f13)
+  records actual D/L/E 50.626/10.272/39.102% and sets C4's central D30/L25/E5,
+  R/X30/70. Review again at C4 close, eight hours and Gate C.
   Code is permitted inside a derivation task when it is likely to be useful,
   but its execution time is E, not a substitute for a protected D minimum.
 - Before each attempt forecast central/high effort by D/L/E/O and expected tool
@@ -1142,9 +1158,9 @@ to publication with an unsound core simply because the planned queue ended.
   [Results](v2/verification/F12_results.md), [work record](v2/work_logs/F12_2026-10-03_S1.md).
   Contributor: **Codex (GPT-6)**. **R-N01-01 OPEN; novelty NOT YET SUPPORTED.**
 
-- [ ] **F13 — work two motivating case studies end to end.**
+- [x] **F13 — work two motivating case studies end to end.**
 
-  **Selected R-N01-01/F13-A, unstarted.** Fresh D60 within a 90-minute
+  **R-N01-01/F13-A complete at case-study scope.** Selected fresh D60 within a 90-minute
   D60/L10/E20 research chunk; central O10-inclusive 100/high 160 minutes.
   Use the [F12 application selection](v2/contribution_plan.md#10-f12-close-and-application-selection):
   required scientific family plus an actual evaluator's staged, versioned
@@ -1180,7 +1196,34 @@ to publication with an unsound core simply because the planned queue ended.
   If still unsupported, select a named next evidence or recurrence chunk;
   a completed case-study artifact is not a novelty pass.
 
+  **Completed October 4, 2026 by Codex (GPT-6).** Native scientific comparison,
+  actual staged proof-search execution, acquisition/retention/risk extensions,
+  adverse revisions and stronger ordinary controls are recorded in the
+  [derivations](v2/derivations/06_case_studies.md) and [results](v2/verification/F13_results.md).
+  **D60 = 60.496927; research90 = 90.192407 engaged minutes.** Forty focused
+  tests have passing coverage across separate scoped runs; combined and broad
+  native runs failed after bounded attempts. No full-suite pass is claimed.
+  [Timing and failures](v2/work_logs/F13_2026-10-04_S1.md).
+  **Novelty NOT YET SUPPORTED; R-N01-01 OPEN.** Select C4 below before F14.
+
+- [ ] **R-N01-01/C4 — reconsider contribution scope after F13.**
+
+  **Selected, unstarted.** Protected **60 research minutes**, central
+  D30/L25/E5/O10=70, high D40/L35/E15/O15=105 (90 research minutes); waits 5/15,
+  R/X 30/70. Compare at most two concrete routes with a useful consumer,
+  evidence/acquisition contract, meaningful margin or limitation, closest work,
+  strongest ordinary combination and a falsifier. Reuse of established methods
+  is expected; the project-level additional result must still be distinctive
+  enough to support a scoped novelty claim. Select one bounded experiment with
+  increasing breadth and evidence at cumulative 4/8/16-hour stages, or explicitly
+  assign further work/revised ambition if that bar remains unsupported.
+  [Full contract](v2/contribution_plan.md#11-f13-close-and-selected-c4-reconsideration).
+  Keep cumulative time and review eight hours at the first completed chunk
+  boundary reaching it. C4 does not automatically reopen A/B or authorize F14.
+
 - [ ] **F14 — freeze the empirical challenge and baselines.**
+
+  **Unstarted; awaits the selected C4 disposition.**
 
   Principal artifact: `v2/experiments/protocol.md` plus frozen configuration.
   Separate development fixtures from a prospective evaluation population.

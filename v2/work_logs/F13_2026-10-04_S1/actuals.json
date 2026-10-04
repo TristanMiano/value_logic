@@ -1,0 +1,58 @@
+{
+  "task": "F13",
+  "engaged_minutes": {
+    "D": 60.496927,
+    "L": 7.52377,
+    "E": 22.17171,
+    "O": 3.943808
+  },
+  "research_lane_minutes": {
+    "R": 42.384328,
+    "X": 47.808079
+  },
+  "tool_wait_minutes": 0.822295,
+  "unmeasured_within_segments_minutes": 16.18872,
+  "unsegmented_gap_minutes": 0.008957,
+  "total_unmeasured_minutes": 16.197677,
+  "closed_segment_wall_minutes": 111.14723,
+  "observed_clock_span_minutes": 111.156187,
+  "protected_minimum": "D60 within D+L+E90",
+  "short_D_overhead_reserve_seconds": 60,
+  "short_L_overhead_reserve_seconds": 30,
+  "short_E_overhead_reserve_seconds": 120,
+  "short_O_overhead_reserve_seconds": 30,
+  "open_segment_mode": null,
+  "initial_orientation": "unmeasured; no retrospective credit",
+  "literature": "focused primary-source comparisons; access and locators in literature/05_f13_case_comparison.md",
+  "final_delivery": "post-final-accounting documentation and commit handling unmeasured",
+  "exclusions": [
+    {
+      "start": 2191326468237,
+      "end": 2193623095755,
+      "reason": "Conservative context compaction/recovery exclusion through resumed clock check"
+    },
+    {
+      "start": 2223715487194,
+      "end": 2228732091740,
+      "reason": "Conservatively exclude entire O interval since last observed clock through second context recovery; research floors unaffected"
+    }
+  ],
+  "closed_rows": 19,
+  "mode_correction": {
+    "start": "2026-10-04T15:53:40.4143783Z",
+    "end": "2026-10-04T15:55:16.1365787Z",
+    "from": "D/R",
+    "to": "E/X",
+    "reason": "Code drafted before a batched mode-change call executed; raw readings preserved"
+  },
+  "total_engaged_minutes": 94.136215,
+  "total_research_minutes": 90.192407,
+  "protected_floor_met": true,
+  "package_before_minutes": 367.344527,
+  "package_after_minutes": 461.480742,
+  "four_hour_overshoot_minutes": 221.480742,
+  "remaining_to_eight_hours_minutes": 18.519258,
+  "forecast_error_vs_central_100_minutes": -5.863785,
+  "c4_central_package_close_minutes": 531.480742,
+  "c4_high_package_close_minutes": 566.480742
+}

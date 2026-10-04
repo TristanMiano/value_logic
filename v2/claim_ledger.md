@@ -1020,3 +1020,27 @@ methods. If they do not support a meaningful distinctive result, assign C4
 reconsideration or another named missing-evidence chunk before F14. C/D cannot
 pass on correctness, elapsed time or these ordinary caching gains alone. A/B
 retain their scopes; no mathematical repair or later research starts here.
+
+## F13/F13-A case-study acceptance — October 4, 2026
+
+**F13 complete at case-study scope; D60 satisfied (60.496927 minutes), within
+90.192407 research minutes; novelty NOT YET SUPPORTED; R-N01-01 OPEN.**
+Contributor/reviewer: **Codex (GPT-6)**, same-assistant reconstruction.
+[Derivations](derivations/06_case_studies.md), [results](verification/F13_results.md),
+[closest work](literature/05_f13_case_comparison.md),
+[timing and failures](work_logs/F13_2026-10-04_S1.md).
+
+| ID | Claim / evidence | Scope and limitation |
+|---|---|---|
+| F13-C01 | Scientific null residual, exact repair, shared-discrepancy native comparison and bound -4873/770000. | Explicit polynomial/noise/source model; ordinary support functions match. Relative success need not establish absolute accuracy. |
+| F13-C02 | Actual bounded native versions change later selected reasoning; reset and stateful adverse cases executed. | Finite declared populations, emitted-node proxy; source-aware ordinary proof production is stronger. No deployment calibration or cyclic stability. |
+| F13-C03 | Fixed positive-price full-order mean rank is 2^k-k; explicit weighted summary and zero-cost exceptions derived. | Linear retention on the full simplex, public prices and no free source reacquisition. Equal-cost rank specializes a known maximal-chain theorem; no priority claim for the extension. |
+| F13-C04 | Complete old mean profiles can lose exact tail/price answers; the displayed fiber gives sharp uncertainty intervals. | Broader source than the one-parameter proper-uniform parity model. No claim about best-policy labels or arbitrary encodings. |
+| F13-C05 | A cheap deterministic fallback yields a mean-only CVaR test; robust frontier 20q+30rho+4alpha<=1/4 under stated assumptions. | Fixed reset costs and support gap. This strengthens the ordinary control and removes an apparent information requirement for the actual useful comparison. |
+| F13-C06 | Frozen scientific acquisition needs one tailored retained scalar, two with the old output, three for arbitrary later locations; sharp noisy posterior and physical-error bounds derived. | Linear retention, specified measurement timing, unbounded nuisance model, fixed node observations. Irrational optimal nodes are not native rational atoms. |
+| F13-C07 | Downward cost rounding by total s gives an s-regret policy reduction for mean/CVaR and common-source robust objectives. | Fixed outcomes and reset semantics; no hidden free inspection/audit, no demonstrated saving at the current uniform five-node prices. |
+| F13-C08 | 22 earlier case tests, two added native tests, and 16 final ordinary tests passed in separate scoped runs. | Combined 35-test intermediate suite and broad report failed after bounded attempts. No final aggregate, root-suite, CI or hardware-cause claim. |
+
+Select **R-N01-01/C4**, protected research60, central/high O-inclusive 70/105,
+before F14. A useful distinctive result remains required; missing novelty
+assigns recurrence or further evidence. F13 does not pass C/D or start C4.
