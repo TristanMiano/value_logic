@@ -3,7 +3,7 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01–F10 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is selected, unstarted; C/D remain unattempted.
+not new results. F01–F11 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); C2/F12 is selected, unstarted; C/D remain unattempted.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -11,7 +11,19 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 
 ## Current status
 
-**N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is selected, unstarted.**
+**F11/C1 is complete at bounded integration scope**, with **60.162455 engaged
+E minutes**. The [package contract and commands](verification/README.md) document
+the native producer, independent reference and equally informed ordinary
+baseline. All 48 core queries match (25 certified, 23 refuted). Optional saved
+receipts, revision reuse, coefficient catalogues and a 31-query program control
+add integration breadth. All 57 current focused tests have passing coverage;
+three repository-wide attempts crashed natively, so no F11 full-suite pass is
+claimed. [Work, failures and floor assessment](work_logs/F11_2026-10-03_S1.md).
+The [first four-hour checkpoint](checkpoints/POST_B_4H_1.md) selects
+**R-N01-01/C2 in F12, fresh E60, unstarted**. Project novelty remains unsupported;
+F13's separate D60 and case-study obligations remain due. Contributor: **Codex (GPT-6)**.
+
+**N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); C2/F12 is selected, unstarted.**
 The [contribution plan](contribution_plan.md) fixes the loss/consumer contract,
 strong ordinary baselines, falsifiers and the first package forecast. Protected
 D+L60 is satisfied; [timing and validation](work_logs/N01_2026-10-02_S1.md)
@@ -23,9 +35,10 @@ uniform exact threshold-vector preservation in the stated representation
 class. An optional action-only contract needs nine; reversing two priorities
 needs twelve again. The [primary-source comparison](literature/03_n01_target_comparison.md)
 and independent exact planning checks constrain the claim. **Novelty remains
-NOT YET SUPPORTED; R-N01-01 is open.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 target recurrence before F11; C3 is now complete with its fresh D+L120 floor satisfied. F11 is selected, unstarted. No F11
+NOT YET SUPPORTED; R-N01-01 is open.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 target recurrence before F11; C3 is now complete with its fresh D+L120 floor satisfied. F11 is complete at bounded integration scope (E60 satisfied); C2/F12 is selected, unstarted. No F11
 native producer, runtime advantage or empirical scientific validation is
-claimed by the planning probe.
+claimed by that historical planning probe; the later F11 implementation is
+reported separately above.
 In the original N01 session, the focused probe and three documentation tests
 passed, while all three full-suite attempts crashed natively. The later C3
 recurrence obtained a full-suite pass, recorded separately below.
@@ -73,7 +86,7 @@ comparisons. **19 new hostile tests passed**, with 13 cap values, 221 direct
 rational points and three received composite examples. Three full-suite and
 three aggregate F05–F09/Gate-B attempts crashed natively; no current broad-suite
 pass is claimed. All six prior protected floors were audited. The kernel is
-unchanged. **N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is selected, unstarted; C/D remain unattempted.**
+unchanged. **N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); C2/F12 is selected, unstarted; C/D remain unattempted.**
 Research contributor: **Codex (GPT-6)**. Gate B has no protected minimum; its
 [work record](work_logs/B_1_2026-09-30_S1.md) preserves actual timing. Cycle III
 prospectively uses D/L/E 35/10/55 and R/X 60/40, with the existing floors and
@@ -96,7 +109,7 @@ as effort estimates, distinct from these progressively broader scope targets.
 Neither is a promise of novelty or a forecast for all remaining v2 work.
 [S1](work_logs/F10_2026-09-30_S1.md) records **45.001320 L
 minutes**, optional planning checks, and three native full-suite crashes.
-No F10 full-suite pass is claimed. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is selected, unstarted.
+No F10 full-suite pass is claimed. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); C2/F12 is selected, unstarted.
 Research contributor: **Codex (GPT-6)**.
 
 **F09 is complete at comparison scope.** The
@@ -111,7 +124,7 @@ were checked through the unchanged receiver and serialization round trip.
 Broader runs failed natively after bounded retries; no F09 full-suite/CI pass
 is claimed. [S1](work_logs/F09_2026-09-30_S1.md) records **60.091745 engaged D
 minutes** and the minimum assessment. Research contributor: **Codex (GPT-6)**.
-Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is selected, unstarted; Gate A and the provisional core are unchanged.
+Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); C2/F12 is selected, unstarted; Gate A and the provisional core are unchanged.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f09*.py'
@@ -141,8 +154,9 @@ The unchanged native kernel checks the [seven saved certificates](checks/F08_cha
 All **64 F08 tests** passed across successful runs (61 combined before the last
 three additions; 22 final report/transfer tests). A **1,361-test full snapshot**
 passed; final broad reruns encountered native/interpreter failures, so no clean
-final 1,364-test or CI pass is claimed. Gate A retains readiness PASS; Gate B has now passed; C/D
-and F11 remain unattempted. Original checker and producers are unchanged.
+final 1,364-test or CI pass is claimed. Gate A retains readiness PASS; Gate B has
+now passed; C/D remain unattempted. F11's later bounded integration is complete.
+The original kernel remains unchanged.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f08*.py'
@@ -173,7 +187,7 @@ proof checked by the unchanged S1 checker. The **171 F06 tests** comprise 58 S1,
 64 S2 and 49 S3 checks; finite point tests are separate from mathematical arguments.
 [S3](work_logs/F06_2026-09-27_S3.md) records **30.155232 D minutes** and
 **90.201367 cumulative F06 D minutes**, satisfying D90.
-F07's soundness reconstruction is complete at its stated scope; the F11 reasoner has not begun.
+F07's soundness reconstruction is complete at its stated scope. The later F11 bounded producer is now implemented; its separate completion record is above.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f06*.py'
@@ -193,7 +207,7 @@ The [completion record](work_logs/F05_2026-09-27_S2.md) records 30.063473 D minu
 this session and **60.320288 cumulative F05 D minutes**. The continuation alternative
 remains live; the semantics is provisional, not a completed deductive calculus.
 
-**Next task: F11, carrying R-N01-01/C1 (E60); unstarted. C3 is complete.** Gate A remains passed at its existing scope. No neural
+**Next task: F12, carrying R-N01-01/C2 (fresh E60); unstarted. C3 and F11 are complete.** Gate A remains passed at its existing scope. No neural
 training or later readiness gate has occurred. F05's supplied-model discovery
 suite passes **90 tests** (48 from S1; 42 added in S2):
 
@@ -323,14 +337,13 @@ The final report is `../paper_v2.md` only after the readiness gate passes.
 
 ## Validation command
 
-Until F11 adds the new reasoner, run from the repository root:
+Run the inherited and integrated repository tests from the repository root:
 
 ```text
 python -m verification
 ```
 
-This checks inherited semantics and repository integrity; it does **not**
-validate the proposed phase-two calculus. The F01 fixtures can also be run alone:
+This includes inherited semantics, phase-two test bridges and repository integrity; finite test passes do not prove unrestricted phase-two theorems. The F01 fixtures can also be run alone:
 
 ```text
 python -m v2.checks.f01_examples --json v2/checks/F01_results.json
@@ -365,13 +378,13 @@ S2 retested branch creation successfully; the current completion remains a
 downloadable package, without a claimed F02 content commit or remote CI pass.
 The earlier F01 results are not relabeled as validation of the new changes.
 
-From F11 onward also run:
+The implemented F11 entry point is available. Also run:
 
 ```text
 python -m v2.verification
 ```
 
-F11 must implement that entry point before recording it as available. If the
+F11 passed its declared 48-query control; see [its contract and optional interfaces](verification/README.md). If the
 environment cannot run a command, record `not run` and the actual reason;
 do not infer a pass from source inspection. Check the GitHub Actions result
 for the exact pushed commit separately from local validation.

@@ -1,7 +1,7 @@
 # Research opportunity register
 
 Owner: the active research agent, subject to DIR01 and the research protocol.
-Updated: October 2 local / October 3 UTC, 2026, through N01 recurrence C3.
+Updated: October 3 local / October 4 UTC, 2026, through F11/C1 and the first four-hour checkpoint.
 These are **ranked leads**, not proven gaps or claims of first discovery.
 The relevant primary-source descriptions and inspection limits are in
 [literature/directional_leads.md](literature/directional_leads.md).
@@ -565,3 +565,23 @@ unbounded theory-only N01 recurrence. If both richer routes are displaced,
 prospectively scope C4 to reconsider the question. OPP-02's neural pilot remains
 unstarted. Broaden questions and supporting evidence together; no new lead is
 promoted as an established open problem. Contributor: **Codex (GPT-6)**.
+
+## F11/C1 and four-hour checkpoint — October 3 local / October 4 UTC, 2026
+
+The [implemented comparison](verification/README.md) supplies missing
+producer/reference feasibility evidence for OPP-01/04. Opportunity rankings
+remain unchanged. Selected-proof reconstruction can miss a true closed
+threshold; one timing observation was slower than fresh search. Ordinary
+coefficient preprocessing competes with equally checked receipts. The program
+adapter broadens OPP-03 preparation, but ordinary formulas solve its fixed
+family exactly. This improves the next discriminator, not an open-problem claim.
+
+**R-N01-01 OPEN; novelty NOT YET SUPPORTED.** Select **C2/F12, fresh E60**,
+central D0/L0/E60/O10=70, high D10/L0/E90/O20=120, unstarted. Smallest useful
+gain: a declared revision-family comparison showing where reconstruction
+loses and what total checked-answer costs each route incurs. Include
+source/build/storage/checking/fallback and cache conditions. At close, select
+a richer F13 application or prospectively assign C4 if no credible useful
+distinction survives. F13 D60, reflection and the neural pilot remain due.
+[Checkpoint and stopping conditions](checkpoints/POST_B_4H_1.md).
+Contributor: **Codex (GPT-6)**.

@@ -3,7 +3,7 @@
 Contributor: **Codex (GPT-6)**. October 2, 2026, America/Los_Angeles.
 **N01 complete at target-selection and challenge scope; D+L60 satisfied.**
 Project contribution: **NOT YET SUPPORTED**. A/B retain their scoped passes.
-**C3 complete at target-refinement scope; fresh D+L120 satisfied. Next: R-N01-01/C1 in F11, E60, unstarted.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 ahead of C1/C2. The [closing assessment](#8-c3-close-targets-after-the-two-hour-recurrence) governs the current plan.
+**C3 and F11/C1 complete at their task scopes; fresh D+L120 and E60 satisfied. Next: R-N01-01/C2 in F12, fresh E60, unstarted.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 ahead of C1/C2. The [F11 checkpoint](#9-f11-close-and-first-four-hour-checkpoint) governs the current plan. Earlier numbered sections retain their dated selections and forecasts.
 
 ## 1. Selected question and the distinction we will test
 
@@ -170,7 +170,7 @@ Status: **OPEN; NOT YET SUPPORTED**. A/B need no recurrence on current evidence.
 Use the same ID for this gap; count each chunk once. After two unsuccessful
 chunks, explicitly compare at least two research routes before choosing more work.
 
-**Selected after C3: R-N01-01/C1 within F11, protected E60; unstarted.** Central D0/L0/E60/O10
+**Selected after C3, now completed: R-N01-01/C1 within F11, protected E60.** Original central D0/L0/E60/O10
 =70 engaged minutes; high D10/L5/E90/O20=125; expected waiting 2/10 minutes.
 R/X forecast 70/30. Acceptance: documented `python -m v2.verification`, the
 16-state/three-query first slice, automatic bounded certificate generation,
@@ -347,3 +347,30 @@ C1/F11's central/high close is now projected at **294.086789/349.086789**;
 review the four-hour milestone at that chunk boundary, with actual overshoot
 (central projection 54.086789). An unfinished chunk retains its continuation;
 neither the milestone nor the floor authorizes an automatic next task.
+
+## 9. F11 close and first four-hour checkpoint
+
+F11/C1 is complete: the [bounded producer/reference](verification/README.md)
+passes all 48 core comparisons with matched ordinary bounds, records fresh
+**E60 = 60.162455 engaged minutes**, and adds optional receipts, reconstruction,
+coefficient preprocessing and actual-program controls. The
+[checkpoint](checkpoints/POST_B_4H_1.md) selects **C2/F12, fresh E60**, central
+70/high 120 engaged minutes, unstarted. See the
+[work record](work_logs/F11_2026-10-03_S1.md) for cumulative actuals and overshoot.
+
+The claim/evidence map has advanced from planning to executable feasibility,
+but **R-N01-01 remains OPEN; novelty NOT YET SUPPORTED**. A selected old proof
+misses a true threshold and was slower in one shared-process observation.
+Ordinary templates can be precomputed and freshly checked. The program/risk
+adapter also has exact ordinary controls. F12 must charge setup, current source,
+proof storage, checking, reconstruction, fallback and decision quality under
+matched access and guarantees, with declared cache conditions and finite
+revision coverage. Do not infer superiority from the F11 timing snapshots.
+
+At F12 close, select the richer F13 family using this evidence, or assign
+R-N01-01/C4 if no credible useful distinction survives. F13's D60 and reflective
+case remain due; its small prototype here is preparation. C/D still require
+supported distinctiveness and assign recurrence/further effort when absent.
+The E60 floor was high for the original small slice, productive for the
+broader integration block. Further time should buy both richer application
+questions and stronger cost/revision evidence. No later task begins here.

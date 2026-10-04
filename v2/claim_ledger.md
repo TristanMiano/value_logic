@@ -1,7 +1,7 @@
 # Phase Two Claim Ledger
 
-Current status (October 2 local / October 3 UTC, 2026): **F01–F10, N01 and recurrence C3 complete at their task scopes;
-Gate B passed at mathematical-readiness scope; PLAN01 adopted; F11 selected, unstarted; novelty NOT YET SUPPORTED; R-N01-01 open.** C3 records 120.540527 engaged D+L minutes. F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
+Current status (October 3 local / October 4 UTC, 2026): **F01–F11, N01 and recurrence C3 complete at their task scopes;
+Gate B passed at mathematical-readiness scope; PLAN01 adopted; F12 selected, unstarted; novelty NOT YET SUPPORTED; R-N01-01 open.** F11 records 60.162455 engaged E minutes. C3 records 120.540527 engaged D+L minutes. F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
 soundness theorem, not a permanent core or later gate. Gate A retains its
 foundation-readiness PASS; C/D are unattempted. The dated ledger entries and
 earlier opening below retain historical statuses.
@@ -27,7 +27,8 @@ advantage. No neural training or later gate occurred.
 
 [S1](work_logs/F10_2026-09-30_S1.md) records **45.001320 L minutes**, attribution
 to **Codex (GPT-6)**, and failed full-suite validation after three native crashes.
-At F10 completion, Gate B was selected and unattempted. The later B_1 review below supersedes that pointer; F11 is unstarted.
+At F10 completion, Gate B was selected and unattempted. The later B_1 review
+superseded that pointer; subsequent N01/C3/F11 dispositions appear below.
 
 ## Preserved early ledger opening
 
@@ -970,3 +971,27 @@ work record. This supersedes no historical test outcome and is not a CI claim.
 A/B retain their scoped passes. Select **C1/F11 E60**, then C2/F12; both are
 unstarted. C/D still require supported distinctiveness. Time and local passes
 do not discharge R-N01-01.
+
+## F11/C1 integration acceptance — October 3 local / October 4 UTC, 2026
+
+**F11 complete; E60 satisfied; novelty NOT YET SUPPORTED; R-N01-01 OPEN.**
+Contributor/reviewer: **Codex (GPT-6)**, same-assistant review. Sources:
+[package contract](verification/README.md), [work record](work_logs/F11_2026-10-03_S1.md),
+[four-hour checkpoint](checkpoints/POST_B_4H_1.md).
+
+| ID | Claim / evidence | Scope and limitation |
+|---|---|---|
+| F11-C01 | Native emission, independent geometric/direct-execution reference and ordinary analytic baseline agree on 48 queries: 25 certified, 23 full-source-refuted. | Fixed 16-state scientific fragment; exact supplied premises; unchanged F06/F07 kernel/receiver. |
+| F11-C02 | Separate current-request receipts, bounded transport, stale/forged metadata rejection and pre-decoding expansion limits implemented. | Research interface; trace acceptance does not establish empirical truth, authorship or optimality. |
+| F11-C03 | Specified row-replacement reuse yields 1/1360 where fresh/reference give zero; withdrawal yields 505/256 versus 471/256. | Strategy-specific loss of sharpness; broad 147-pair development sweep unverified after three failed attempts. |
+| F11-C04 | Ordinary fixed-direction coefficient catalogues support new bounds/revisions with fresh native emission/checking. | Baseline equally eligible; setup/storage remain due. Partial catalogues can provide sound bounds without claiming complete search. |
+| F11-C05 | Optional program adapter passes 30 family queries plus one unit-boundary control, with exact ordinary bounds. | Fixed program/risk family; old loss-law insufficiency has ordinary joint-information repair. F13/D60 remain unstarted. |
+| F11-C06 | Unit control has native/reduct bound -1/40 and full-source maximum -3/40 at budget -1/20. | Native unavailable; reduct attainer violates the full source and is not a full-source refutation. |
+| F11-C07 | Eighteen snapshot cost observations, one reuse boundary, three catalogue builds and nine uses recorded. | Single host/shared process, caches not reset; no amortized advantage, held-out performance or novelty conclusion. |
+| F11-C08 | Final 56-test aggregate passed, then final five-test catalogue run passed including one addition: 57 current tests have passing coverage. | Three full-suite native crashes; no F11 full-suite/CI pass. Earlier C3 full pass is historical. |
+
+Fresh E **60.162455 minutes** is recorded; D/L zero. The four-hour checkpoint
+selects **C2/F12, fresh E60**, central 70/high 120 engaged minutes, unstarted.
+A/B retain readiness passes; C/D remain unattempted and require supported
+distinctiveness. Missing novelty assigns further evidence/recurrence, never a
+waived gate. No practical advantage or phase completion is claimed.

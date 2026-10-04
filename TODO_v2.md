@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: October 3, 2026 UTC (October 2 in America/Los_Angeles).
-Status: F01–F10, N01 and recurrence C3 complete at their task scopes; Gates A/B retain their scoped passes; C3 D+L120 satisfied; F11 selected, unstarted; F12–F17 unstarted; C/D unattempted; project-level novelty NOT YET SUPPORTED; R-N01-01 open.
+Last updated: October 4, 2026 UTC (October 3 in America/Los_Angeles).
+Status: F01–F11, N01 and recurrence C3 complete at their task scopes; Gates A/B retain their scoped passes; C3 D+L120 and F11 E60 satisfied; F12 selected, unstarted; F13–F17 unstarted; C/D unattempted; project-level novelty NOT YET SUPPORTED; R-N01-01 open.
 
 ## Resume here
 
@@ -11,13 +11,13 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F11, carrying R-N01-01/C1, protected E60; unstarted.**
+**Next task: F12, carrying R-N01-01/C2, fresh protected E60; unstarted.**
 The author moved C3 target refinement before F11 and set a fresh two-hour
 research floor. C3 is now complete at refinement scope, with **120.540527
 engaged D+L minutes**. Scientific and bounded self-assessment routes were
 challenged against strong ordinary methods; optional actual-program examples
 identify further revision questions. The 16-state/three-query scientific
-fixture remains F11's small negative control, followed by C2/F12 cost and
+fixture has passed F11's bounded integration control, followed by C2/F12 cost and
 differential evidence. [Schedule amendment](v2/decisions/2026-10-02_n01_recurrence.md),
 [completed work record](v2/work_logs/N01R_2026-10-02_S1.md),
 [outcome and next experiment](v2/contribution_plan.md#8-c3-close-targets-after-the-two-hour-recurrence).
@@ -26,10 +26,16 @@ their mathematical passes; C/D still require supported distinctiveness.
 
 **Active mathematical repair queue: empty.**
 **Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C not attempted; D not attempted.**
-POST-B-1 actual is **224.086789 engaged minutes**. With C1's central 70-minute
-forecast, the first four-hour checkpoint is reviewed at its close, projected
-294.086789 minutes (54.086789 overshoot); use actuals when that chunk closes.
-Do not split a protected chunk merely to land on the checkpoint.
+The [first four-hour checkpoint](v2/checkpoints/POST_B_4H_1.md) closes with F11.
+It confirms technical feasibility, not distinctiveness. F11 records **60.162455
+engaged E minutes**; final task/package actuals and overshoot are in its
+[work record](v2/work_logs/F11_2026-10-03_S1.md). Keep cumulative actuals; the
+next milestone is eight hours at a chunk boundary. C2/F12 forecasts central
+D0/L0/E60/O10=70 and high D10/L0/E90/O20=120. Its fresh E60 exceeds the original
+E45 task floor. Measure matched-guarantee total costs before expanding F13.
+POST-B-1 now totals **296.058757 engaged minutes**, with **56.058757 minutes**
+of four-hour overshoot; 183.941243 minutes remain to eight hours. C2 central/high
+projected cumulative closes are 366.058757/416.058757 minutes.
 
 Select the pointer, not mechanically the first unchecked task. A failed or
 invalidated gate can put an earlier repair ahead of later numbered tasks.
@@ -958,7 +964,8 @@ to publication with an unsound core simply because the planned queue ended.
   [work record](v2/work_logs/F10_2026-09-30_S1.md) credits **45.001320 L minutes**.
   Three full verification attempts failed natively; no suite pass is claimed.
   READMEs and current controls agree. Research contributor: **Codex (GPT-6)**.
-  **Select Gate B, unattempted.** F11 and neural training remain unstarted.
+  **Historical F10 close:** selected Gate B, then unattempted; F11 and neural
+  training were unstarted. Later dispositions supersede that pointer.
 
 - [x] **Gate B — mathematical core readiness.**
 
@@ -988,7 +995,8 @@ to publication with an unsound core simply because the planned queue ended.
   35/10/55 and R/X 60/40, reviewed after F13 and at Gate C; preserve existing
   floors and recurrence reserve. Gate B has no protected minimum. See the
   [work record](v2/work_logs/B_1_2026-09-30_S1.md) for timing and limitations.
-  Research contributor: **Codex (GPT-6)**. **Select F11, unstarted.**
+  Research contributor: **Codex (GPT-6)**. **Historical B_1 close:** selected
+  F11, then unstarted; the later N01/C3/F11 records govern the current queue.
 
 ### Cycle III — executable reasoning and adversarial evaluation
 
@@ -1046,13 +1054,13 @@ to publication with an unsound core simply because the planned queue ended.
   limit generic novelty claims. Three exact probes passed. Scope, corrections,
   verification limitations and floor assessment are in the
   [work record](v2/work_logs/N01R_2026-10-02_S1.md).
-  **Project novelty NOT YET SUPPORTED; R-N01-01 stays open.** Select C1/F11
+  **Project novelty NOT YET SUPPORTED; R-N01-01 stays open.** At C3 close, selected C1/F11
   E60 on the unchanged small scientific control, then C2/F12; optional richer
   families are candidates for F13, whose fresh D60 is not discharged here.
   No native producer, speed advantage, empirical application or new gate pass.
   Contributor: **Codex (GPT-6)**.
 
-- [ ] **F11 — implement a minimal reasoner and semantic reference.**
+- [x] **F11 — implement a minimal reasoner and semantic reference.**
 
   Principal artifact: `v2/verification/` with a documented entry point.
   Dependency: N01 has selected a concrete target and assigned the next chunk.
@@ -1073,7 +1081,27 @@ to publication with an unsound core simply because the planned queue ended.
   `v2/README.md`, N01's claim/evidence map and the next missing-evidence chunk.
   Do not expand a generic reasoner without a contribution-relevant test.
 
+  **Completed:** [documented package](v2/verification/README.md), 48 exact
+  producer/reference/ordinary comparisons (25 certified, 23 full-source-refuted),
+  and a valid-but-unavailable search control. Optional saved receipts, selected
+  proof reuse, ordinary coefficient catalogues and an actual-program/risk
+  adapter passed their scoped checks. All 57 current focused tests have passing
+  coverage; all three full-suite attempts crashed natively. No full-suite or
+  novelty pass is claimed. Fresh **E60 satisfied: 60.162455 minutes**.
+  [Work record](v2/work_logs/F11_2026-10-03_S1.md),
+  [four-hour checkpoint](v2/checkpoints/POST_B_4H_1.md). Contributor: **Codex (GPT-6)**.
+  **Next: R-N01-01/C2 in F12, fresh E60. R-N01-01 remains OPEN.**
+
 - [ ] **F12 — differential tests and counterexample regression.**
+
+  **Selected C2 chunk: fresh E60**, central 70/high 120 engaged minutes.
+  Compare fresh production, coefficient preprocessing, proof reconstruction
+  and explicit fallback with equal source access and receipt guarantees.
+  Charge build, source/proof storage, checking, update and refusal costs;
+  distinguish shared-process cache effects from cold startup. Preserve the
+  F11 reuse threshold miss and full-source/reduct distinction. Review the
+  actual-program and feedback routes at close; unsupported distinctiveness
+  must select further evidence or R-N01-01/C4, never waive the novelty bar.
 
   Principal artifact: `v2/verification/` test suite and test-design note.
   Translate the earlier positive and negative witnesses into tests. Generate

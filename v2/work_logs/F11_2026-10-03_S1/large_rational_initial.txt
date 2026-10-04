@@ -1,0 +1,15 @@
+Input accepted, bit lengths: 251 249
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+  File "C:\Users\trist\projects\value_logic\v2\verification\producer.py", line 150, in produce
+    A.receive(ctx, proof, native.request(ctx, Query(query.action, bound)))
+                          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\verification\native.py", line 41, in request
+    query.validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trist\projects\value_logic\v2\verification\model.py", line 55, in validate
+    exact(self.budget)
+    ~~~~~^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\verification\model.py", line 16, in exact
+    raise InputError('Input rationals are limited to 256 bits per component.')
+v2.verification.model.InputError: Input rationals are limited to 256 bits per component.

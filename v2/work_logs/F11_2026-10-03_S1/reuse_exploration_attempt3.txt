@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import runpy; runpy.run_path('v2/work_logs/F11_2026-10-03_S1/reuse_explore.py')
+                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 294, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "v2/work_logs/F11_2026-10-03_S1/reuse_explore.py", line 21, in <module>
+    reused = reuse(new, query, receipt)
+  File "C:\Users\trist\projects\value_logic\v2\verification\reuse.py", line 73, in reuse
+    for case, index in sorted(T.used_rows(old, proof)):
+                              ~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 58, in used_rows
+    R.check(ctx, proof)
+    ~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 209, in check
+    if b!=expected or not same_difference(step.new,step.old,t,s,ctx.signature):
+                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 71, in same_difference
+    units = [infer(z, sig) for z in (t, s, a, b)]
+             ~~~~~^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 158, in infer
+    if infer(t.args[1], sig, env) != unit:
+       ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 158, in infer
+    if infer(t.args[1], sig, env) != unit:
+       ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 127, in infer
+    sig.validate()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 52, in validate
+    if any(u not in self.units for _, u in self.sources):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'tuple_iterator' object is not callable

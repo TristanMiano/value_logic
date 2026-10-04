@@ -1,7 +1,7 @@
 # Phase Two Project Specification
 
-Version: N01/C3 target-refinement acceptance, October 2, 2026 local / October 3 UTC.
-Status: **F01–F10, N01 and recurrence C3 complete at their task scopes; A/B retain scoped readiness passes; F11 selected, unstarted; C/D unattempted; novelty NOT YET SUPPORTED; R-N01-01 open; the semantic core remains provisional**.
+Version: F11/C1 integration acceptance, October 3, 2026 local / October 4 UTC.
+Status: **F01–F11, N01 and recurrence C3 complete at their task scopes; A/B retain scoped readiness passes; F12 selected, unstarted; C/D unattempted; novelty NOT YET SUPPORTED; R-N01-01 open; the semantic core remains provisional**.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the current gate decision is [B_1](checkpoints/B_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -13,8 +13,9 @@ optional policy-only result constrain later claims. The protected D+L60 is
 satisfied. The author then moved C3 target recurrence before implementation;
 its fresh **D+L120** is also satisfied. Scientific and bounded self-assessment
 routes have been challenged, with optional actual-program revision examples.
-**R-N01-01/C1 within F11, E60**, remains the next unstarted integration chunk
-on the 16-state/three-query control, followed by C2/F12. The open contribution
+**R-N01-01/C1 within F11 is complete**, with 60.162455 engaged E minutes and
+the 16-state/three-query control passed. **C2/F12, fresh E60**, is selected
+and unstarted. The open contribution
 obligation still requires a distinctive result. Planning probes are not a
 native reasoner or practical novelty evidence. See the
 [C3 closing assessment](contribution_plan.md#8-c3-close-targets-after-the-two-hour-recurrence).
@@ -35,7 +36,8 @@ ingredients as established methods with scoped native adaptations. The
 revision/loss study as the preferred next research package, with staged
 forecasts and uncertain novelty. This changes contribution and planning
 language, not the semantic contract or gate requirements. Gate B has completed its fresh same-agent
-reconstruction and passed at finite-core readiness scope. F11 remains unstarted.
+reconstruction and passed at finite-core readiness scope. F11 is now complete
+at bounded integration scope; see the dated acceptance below.
 The author's subsequent 4/8/16/32-hour planning ladder grows substantive breadth
 and supporting evidence together, rather than treating higher effort only as
 stronger defense of a fixed result. Its scope targets remain prospective.
@@ -792,3 +794,31 @@ Three recurrence probes passed; the root suite passed 1,429 tests on its
 third attempt after two native crashes. The
 [work record](work_logs/N01R_2026-10-02_S1.md) preserves timing, corrections,
 logs, floor assessment and accounting. Contributor: **Codex (GPT-6)**.
+
+## F11/C1 integration acceptance — October 3 local / October 4 UTC, 2026
+
+The [bounded reasoner package](verification/README.md) now implements the
+fixed scientific contract. Its automated native compiler, independently
+implemented semantic reference and ordinary analytic control agree exactly
+on all 48 core queries. Receipt checking binds a separately supplied current
+source/query; bounded search failure remains distinct from full-source
+refutation. Existing native rules and reviewed semantics are unchanged.
+
+Optional integration adds saved receipts, selected-proof reconstruction,
+coefficient catalogues and a finite actual-program/risk adapter. The latter
+exercises directed conversion and a full-source/reduct gap. These extensions
+do not complete F13 or supply new general theorems. Ordinary methods receive
+equal information and may reuse the same compiler/checker; no speed or
+distinctiveness advantage is established.
+
+Dependency: F05–F10/N01/C3 -> **F11 accepted at bounded integration scope** ->
+**C2/F12 selected, fresh E60, unstarted** -> F13 family selection using
+cost/revision evidence. F13 D60 remains due. A/B retain their scopes; C/D
+require supported distinctiveness and assign further work if absent.
+R-N01-01 remains OPEN, novelty NOT YET SUPPORTED.
+
+The [work record](work_logs/F11_2026-10-03_S1.md) records 60.162455 engaged E
+minutes, 57 current focused tests with passing coverage, native failures
+preventing a full-suite pass, and floor calibration. The
+[four-hour checkpoint](checkpoints/POST_B_4H_1.md) keeps cumulative actuals and
+sets central/high C2 forecasts of 70/120 minutes. Contributor: **Codex (GPT-6)**.

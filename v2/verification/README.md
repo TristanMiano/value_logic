@@ -1,0 +1,135 @@
+# F11 bounded producer and semantic reference
+
+**Complete at F11 scope; E60 satisfied.** Contributor: **Codex (GPT-6)**,
+October 3, 2026 local / October 4 UTC. This package implements the
+[N01 contract](../contribution_plan.md) using the unchanged F06 native kernel
+and F07 request receiver. Project novelty is **NOT YET SUPPORTED**.
+[Work, clocks and validation](../work_logs/F11_2026-10-03_S1.md).
+
+## Run from the repository root
+
+```text
+python -m v2.verification
+python -m v2.verification --request v2/verification/examples/exact_request.json --receipt-out receipt.json
+python -m v2.verification --request v2/verification/examples/exact_request.json --check-receipt receipt.json
+python -m v2.verification.program_control
+python -m v2.verification.cost_probe
+python -m unittest verification.test_v2_f11 verification.test_v2_f11_receipts verification.test_v2_f11_reuse verification.test_v2_f11_program verification.test_v2_f11_catalogue -v
+```
+
+The first command checks 16 zero/absent evidence states and three queries per
+state: **25 certified, 23 refuted**, with exact native/reference/ordinary bound
+agreement. A separate zero-search control is valid but unavailable. `--json`
+saves a report. [An example receipt](examples/exact_receipt.json) is included;
+checking it against [withdrawn evidence](examples/withdrawn_request.json)
+rejects it rather than rebinding its old source. Receipt acceptance requires
+the current request in a separate file.
+
+## Contract and independent routes
+
+The scientific task compares trapezoid approximations T1, T2 and Richardson R
+with F=T4 on the fixed quartic family. Loss is absolute integral error plus
+evaluation count/32. Source coordinates are beta and gamma, with permanent
+absolute bounds of one. Four optional bundles supply beta+gamma <= plus,
+-beta-gamma <= minus, |beta| <= beta-cap, and |gamma| <= gamma-cap. `null`/`None`
+means absent; zero is a present exact bound. Joint bounds range over [0,2],
+individual caps over [0,1]. All these sources admit the origin.
+
+Queries ask whether loss(action)-loss(F) <= budget throughout the source.
+Inputs are exact integers/Fractions, at most 256 bits per numerator and
+denominator; floats and booleans are rejected. JSON rationals use strings.
+A nonempty revision is part of the source identity. These supplied bounds
+are mathematical premises; the package does not certify their empirical origin.
+
+| Route | Implementation and guarantee |
+|---|---|
+| Native producer | `producer.py` enumerates three-column nonnegative dual templates for the two signs of the absolute loss, emits existing native rules, and receives the independently constructed current request. It imports neither reference answers nor the ordinary formula. |
+| Semantic reference | `reference.py` shares only the input model. It intersects independently declared source and zero-error boundaries, executes the polynomial/quadrature algorithms directly, and evaluates candidate points with exact arithmetic. It does not evaluate native ASTs or decode native output. |
+| Ordinary control | `ordinary.py` evaluates N01's twelve-expression envelope with the same complete evidence. A numeric answer alone does not include a checked receipt; an ordinary method may use the same emitter/checker to obtain that guarantee. |
+
+The producer returns `certified` only after receipt of the requested pair,
+scope, unit and budget. An insufficient but sound upper bound may accompany
+`unavailable`. The experiment reports `refuted` only with a separately checked,
+admissible full-source point violating the requested comparison. Search or
+size exhaustion is never itself refutation. The core's source and target-unit
+reduct coincide; the optional program control explicitly tests their difference.
+
+The reference enumerates vertices of the piecewise-affine comparison's
+bounded planar subdivision, including degenerate source cases. Passing the
+declared fixtures is finite evidence, not a new unrestricted completeness proof.
+No global optimizer or arbitrary program-analysis interface is implemented.
+
+## Bounds and saved receipts
+
+Generation admits at most **440 candidate bases** and **128 proof steps**.
+The two signs each inspect at most C(12,3) bases. `--max-bases` and
+`--max-steps` can lower these limits for a single request. Limits are explicit
+refusals, never truncated successful proofs. Derived rational bounds can
+exceed an individual input's 256-bit limit without being rounded.
+
+`receipts.py` wraps the existing F06 term-DAG codec. Its limits are 262,144
+UTF-8 bytes, 512 term nodes, 128 instructions, depth 48, 20,000 expanded term
+occurrences including instruction data, and 2,048 bits per derived rational.
+Backward references, integer/rational syntax and expansion are checked before
+native decoding; the native checker and current-request receiver still decide
+acceptance. Metadata cannot substitute for the current source or request.
+Malformed/stale external receipts exit with code 2. Internal producer proof
+failures remain implementation errors. In-process callers should pass ordinary
+bounded data; this is a research interface, not a service isolation boundary.
+
+## Optional work completed within the protected block
+
+`reuse.py` reconstructs one saved proof from one/two-row conic replacements
+using the existing source transport. It charges at most 550 replacement
+candidates. Its 128-step limit is checked on transport output, not enforced as
+a streaming memory limit inside the inherited transport. Reuse is sound but
+can lose sharpness: at beta-cap=0, gamma-cap=8/85, one old T1 receipt yields
+**1/1360**, while fresh generation and the reference yield **0**. Complete
+withdrawal gives **505/256** versus the fresh **471/256**. No optimal retention
+claim follows from this particular strategy.
+
+`catalogue.py` instead caches ordinary fixed-direction dual coefficients.
+Changed bounds/revisions still require new current-context emission/checking;
+changed row presence or action refuses the catalogue. Construction and
+selection have separate budgets. `complete` means this template list was
+exhausted. An incomplete catalogue may still produce a sound received bound;
+it does not thereby establish optimality. The ordinary baseline is equally
+entitled to this preprocessing. There is no catalogue wire codec.
+
+`program.py` implements an optional two-bit parity program adapter: actual
+read costs, a mean-edit query, and fixed-level CVaR comparisons. Its independent
+reference executes policies and integrates tail mass including partial atoms.
+Thirty family queries plus one unit-boundary control passed. At the boundary,
+the native/reduct maximum is -1/40, the full-source maximum is -3/40, and budget
+-1/20 is true on the full source but unavailable natively. The reduct attainer
+is explicitly not a full-source countermodel. The ordinary closed form matches
+both domains. An identical old loss law can accompany edit differences -1/40
+and 3/40; ordinary joint information repairs that summary loss. **F13 remains
+unstarted**, including its separate D60 and self-assessment obligations.
+
+The [cost probe](../work_logs/F11_2026-10-03_S1/cost_report.json) contains 18
+snapshots and one reuse boundary. Receipts occupy 6,700–8,365 compact JSON
+bytes including source. One reuse observation was slower and weaker than fresh
+generation. The [catalogue probe](../work_logs/F11_2026-10-03_S1/catalogue_probe.json)
+records three builds and nine uses; serialized coefficient catalogues occupy
+684–803 bytes, excluding current source and receipts. These are single-host,
+shared-process development observations, with caches not reset. They establish
+neither amortized superiority nor statistically reliable timing differences.
+F12 must measure setup, source/proof storage, checking, updates, fallback and
+decision quality at matched guarantees. No held-out evaluation has occurred.
+
+## Validation and limits
+
+The final aggregate passed **56 tests**, then the added incomplete-catalogue
+case passed in a **five-test catalogue run**: all **57 current F11 tests** have
+passing coverage. Core and program reports passed; the latter needed a bounded
+retry. Three full-repository runs crashed natively, so there is no F11 full-suite
+or CI pass. A separate 147-pair development reuse sweep also failed to complete
+in three attempts; its broad coverage is unverified. Logs are retained in the
+work record. The earlier C3 full-suite pass is historical, not validation of
+this package. The host failures do not identify a hardware or cooling cause.
+
+This review and implementation were performed by the same assistant; the
+separate reference is an implementation distinction, not independent authorship.
+Novelty, practical advantage, empirical premise validity, general completeness,
+and phase-two completion remain separate, unmet claims. Next: **C2/F12, E60**.
