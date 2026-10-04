@@ -585,3 +585,27 @@ a richer F13 application or prospectively assign C4 if no credible useful
 distinction survives. F13 D60, reflection and the neural pilot remain due.
 [Checkpoint and stopping conditions](checkpoints/POST_B_4H_1.md).
 Contributor: **Codex (GPT-6)**.
+
+## F12 opportunity update — October 3 local / October 4 UTC, 2026
+
+**OPP-01/04:** the [F12 comparisons](verification/F12_results.md) lower the
+priority of repeated proof reconstruction as a candidate advantage. Ordinary
+coefficient catalogues preserve exact bounds and repay setup over the measured
+72-query sequences; cheaper selected coefficients can preserve decisions with
+weaker bounds. This is a strong existing-method baseline, not project novelty.
+Checking/receipt work consumes much of the pipeline, so basis-search reductions
+alone do not imply comparable task-value gains. Generic cache optimization is
+lower priority than a meaningful application question.
+
+**OPP-03:** prefer the actual-program/edit/consumer route joined to staged,
+versioned self-assessment for **R-N01-01/F13-A**. Keep the scientific case and
+the evaluator's influence on later reasoning explicit. The rival cyclic
+feedback route retains C3's nonlinear-admission/calibration/stability burden
+and strong ordinary reductions; coding its solved loop alone has low expected
+contribution value. The [selected question, forecasts and stop condition](contribution_plan.md#10-f12-close-and-application-selection)
+require broader useful scope plus stronger evidence, with central/high 100/160
+engaged minutes and a fresh D60. Renew the closest-work comparison for the actual
+claim; neither the old loss-law counterexample nor an ordinary caching gain
+is enough. If no useful distinction emerges, select C4 reconsideration or
+named further evidence before F14. **Novelty NOT YET SUPPORTED; R-N01-01 OPEN.**
+F13 is selected but unstarted. The neural pilot remains a later distinct task.

@@ -3,7 +3,7 @@
 Contributor: **Codex (GPT-6)**. October 2, 2026, America/Los_Angeles.
 **N01 complete at target-selection and challenge scope; D+L60 satisfied.**
 Project contribution: **NOT YET SUPPORTED**. A/B retain their scoped passes.
-**C3 and F11/C1 complete at their task scopes; fresh D+L120 and E60 satisfied. Next: R-N01-01/C2 in F12, fresh E60, unstarted.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 ahead of C1/C2. The [F11 checkpoint](#9-f11-close-and-first-four-hour-checkpoint) governs the current plan. Earlier numbered sections retain their dated selections and forecasts.
+**C3, F11/C1 and F12/C2 complete at their task scopes; their protected floors are satisfied. Next: R-N01-01/F13-A in F13, fresh D60 within a 90-minute research chunk, unstarted.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 ahead of C1/C2. The [F12 close](#10-f12-close-and-application-selection) governs the current plan. Earlier numbered sections retain their dated selections and forecasts.
 
 ## 1. Selected question and the distinction we will test
 
@@ -374,3 +374,90 @@ supported distinctiveness and assign recurrence/further effort when absent.
 The E60 floor was high for the original small slice, productive for the
 broader integration block. Further time should buy both richer application
 questions and stronger cost/revision evidence. No later task begins here.
+
+## 10. F12 close and application selection
+
+**F12/C2 complete; E60 satisfied at 60.919966 engaged minutes.** The
+[results](verification/F12_results.md) establish native/reference agreement
+on 3,510 scientific queries and 420 program/risk queries, with 72 revision
+checks and 108 completed process-isolated comparison units. These are finite
+development families. The 1,170 scientific source records contain 454 distinct
+planar regions, not 1,170 independent semantic situations. The strict-margin
+reuse witness at gamma=3/32 proves -3/8192 freshly but reconstructs +3/8192.
+
+The strong ordinary baseline improved: full coefficient catalogues retain exact
+bounds and save about 8–11% operation time in all nine 72-query paired runs,
+at additional storage cost. Short-horizon effects are less consistent. Holding
+the original proof fixed reduces trace growth but reconstruction still costs
+about five times as much and misses true requests. Selected coefficients can
+match decisions with weaker bounds. This is evidence against making this
+particular proof-reconstruction strategy the expected distinctive advantage;
+it does not exclude other retention policies or useful application results.
+
+**Contribution assessment: NOT YET SUPPORTED; R-N01-01 remains OPEN.** Native
+correctness and modest savings from ordinary preprocessing do not satisfy the
+project-level novelty bar. A/B remain readiness passes; C/D are unattempted.
+
+### Two routes and the selected discriminator
+
+| Route | What F12 adds | What would justify the next effort |
+|---|---|---|
+| Program edits and changing consumers, joined to a staged self-assessing evaluator | Native implementation now supports an exact program/risk family and distinguishes full-source truth from target-unit availability. Ordinary joint information and coefficient methods remain strong. | Extend beyond the old two-bit witness to a declared edit/consumer family and an evaluator whose versioned assessment changes later reasoning. Identify a useful preservation, approximation or limitation result spanning this and the required scientific case. |
+| Calibrated cyclic feedback | F12 does not remove C3's nonlinear-admission, execution-versus-fixed-point and calibration obligations. Strong analytic/conic/graph controls still apply. | A concrete unresolved feedback question with an operational interpretation and a new discriminating comparison; merely coding the already solved loop would add engineering without a supported contribution. |
+
+Select the **first route inside F13**, named **R-N01-01/F13-A**, rather than
+another unconstrained target-selection recurrence. The missing evidence is now
+application-level: whether one explicit information/guarantee contract handles
+both scientific revision and an evaluator's own staged behavioral revision,
+with a useful scoped result beyond the existing isolated counterexamples.
+The evaluator may leave outcomes unresolved; its own assertion is not evidence
+of calibration. Keep theoremhood separate from the decision to rely. A truly
+cyclic extension retains separate stability, calibration and native-admission
+obligations and is not presumed complete by a staged example.
+
+The scientific case and self-assessment case remain mandatory, each as a family
+with multiple consumers/revisions, an adverse instance, explicit intermediate
+inferences, and a composite conclusion not supplied as an input score. Reuse
+the established C3 preservation criteria where appropriate; restating them or
+C22's old-loss-law failure is not a new result. Full-information ordinary
+solving, ordinary joint summaries and coefficient caching get the same evidence,
+retention permissions, current receipt guarantee and charged fallback costs.
+State separately the costs of reasoning, audit, sampling and task execution.
+
+**Prospective chunk:** fresh D60 within **D60/L10/E20 = 90 research minutes**,
+plus O10, central **100 engaged minutes**; high D90/L20/E30/O20 = **160**.
+Expected waits 5/15 minutes, separate. R/X 50/50; review at 90 research minutes.
+L renews the closest-work check for the actual proposed application claim,
+not a generic literature tour. Initial D60 protects the two case arguments;
+implementation inherited from F11/F12 cannot discharge it.
+
+**Acceptance:** technically complete cases plus an explicit assessment of
+whether a meaningful result is distinctive enough to support a scoped novelty
+claim, against the strongest checked ordinary combination. Require a new
+application finding, preservation/approximation result or precise limitation
+with its assumptions and adverse cases. Technical completion alone may leave
+novelty unsupported. If the richer families again only reproduce established
+methods without a useful distinguishing finding, assign the reserved
+**R-N01-01/C4 reconsideration before F14** with a new 60/90-minute forecast.
+Do not automatically proceed to a held-out study of a displaced claim. A
+different concrete missing-evidence chunk can be selected when it has a better
+discriminator, but it must be named and retain the novelty obligation.
+
+F13-A is selected, **not started**. Earliest affected contribution dependency
+remains N01; mathematical repair queue is empty. The cumulative package clock
+does not reset. Actual totals and central/high cumulative F13 projections are
+in the [F12 work record](work_logs/F12_2026-10-03_S1.md); review eight hours at
+the first completed chunk boundary reaching it.
+
+### Floor calibration
+
+E60 was **high for the required F12 checklist**, which was core-ready after
+about 18.5 elapsed minutes, before final audit and after some waiting. It was
+productive as a protected research block: the remainder bought stronger
+ordinary controls, a longer horizon, program/risk breadth, a smaller strict-margin
+counterexample, and stronger evidence auditing. Keep 60-minute engineering
+chunks when comparably substantive optional questions are declared; do not
+raise this class to 90 by default or manufacture extra fixtures to fill time.
+The next increase in effort should buy the richer F13 scope and its arguments,
+not more repetitions of this small solved comparison. Hours still have no
+measured conversion to weekly usage percentages or a guaranteed novelty yield.

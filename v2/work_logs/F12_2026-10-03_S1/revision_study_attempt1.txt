@@ -1,0 +1,51 @@
+{"event": "begin_revision", "index": 0, "action": "T1"}
+{"event": "begin_revision", "index": 0, "action": "T2"}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\trist\projects\value_logic\v2\verification\revision_study.py", line 87, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\trist\projects\value_logic\v2\verification\revision_study.py", line 81, in main
+    data = report(args.start, args.stop, lambda x: print(json.dumps(x), flush=True))
+  File "C:\Users\trist\projects\value_logic\v2\verification\revision_study.py", line 67, in report
+    rows.append(check_revision(cases[i], action))
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\verification\revision_study.py", line 36, in check_revision
+    rebuilt = reuse(change.new, query, payload)
+  File "C:\Users\trist\projects\value_logic\v2\verification\reuse.py", line 79, in reuse
+    old_evidence, old_action, proof = receipts.decode_receipt(payload)
+                                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\verification\receipts.py", line 223, in decode_receipt
+    origin, action, proof, root = _decode_payload(payload)
+                                  ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\verification\receipts.py", line 213, in _decode_payload
+    proof = C.unpack_proof(ctx, payload['proof'], CODEC_LIMITS)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_derived_cases.py", line 634, in unpack_proof
+    proof=R.Proof(tuple(steps),payload['root']);bounded(proof,limits);R.check(ctx,proof)
+                                                                      ~~~~~~~^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 209, in check
+    if b!=expected or not same_difference(step.new,step.old,t,s,ctx.signature):
+                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 72, in same_difference
+    return len(set(units)) == 1 and _form(sub(t, s), sig) == _form(sub(a, b), sig)
+                                                             ~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 67, in _form
+    return go(t, {})
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 62, in go
+    b = go(n.args[1], env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 59, in go
+    a = go(n.args[0], env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 62, in go
+    b = go(n.args[1], env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 59, in go
+    a = go(n.args[0], env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 62, in go
+    b = go(n.args[1], env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 60, in go
+    if n.op == 'scale': return mul(rat(n.value), a)
+                               ~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 45, in mul
+    return make({key: k*v for key, v in a[0]}, k*a[1])
+                 ^^^^^^^^
+TypeError: unhashable type: 'cell'

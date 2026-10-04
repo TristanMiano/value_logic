@@ -1,0 +1,36 @@
+test_catalogue_schema_rebuilds_are_not_free (verification.test_v2_f12_revisions.F12CostContractTests.test_catalogue_schema_rebuilds_are_not_free) ... ok
+test_fresh_sequence_has_common_receiver_costs_and_no_unearned_retention (verification.test_v2_f12_revisions.F12CostContractTests.test_fresh_sequence_has_common_receiver_costs_and_no_unearned_retention) ... ok
+test_reconstruction_fallback_is_charged_and_repaired (verification.test_v2_f12_revisions.F12CostContractTests.test_reconstruction_fallback_is_charged_and_repaired) ... ok
+test_a_retained_alternative_survives_when_selected_support_is_lost (verification.test_v2_f12_revisions.F12RevisionTests.test_a_retained_alternative_survives_when_selected_support_is_lost) ... ok
+test_changed_consumer_does_not_get_a_free_old_certificate (verification.test_v2_f12_revisions.F12RevisionTests.test_changed_consumer_does_not_get_a_free_old_certificate) ... ok
+test_context_observation_change_requires_a_separate_bridge (verification.test_v2_f12_revisions.F12RevisionTests.test_context_observation_change_requires_a_separate_bridge) ... ok
+test_minimizer_order_is_finite_unique_and_denominator_first (verification.test_v2_f12_revisions.F12RevisionTests.test_minimizer_order_is_finite_unique_and_denominator_first) ... ok
+test_one_of_each_declared_revision_kind (verification.test_v2_f12_revisions.F12RevisionTests.test_one_of_each_declared_revision_kind) ... ok
+test_parametric_reuse_threshold_miss_and_explicit_fallback (verification.test_v2_f12_revisions.F12RevisionTests.test_parametric_reuse_threshold_miss_and_explicit_fallback) ... ok
+test_smaller_strict_margin_miss_survives_current_receipt_check (verification.test_v2_f12_revisions.F12RevisionTests.test_smaller_strict_margin_miss_survives_current_receipt_check) ... ERROR
+test_bounded_retry_preserves_failure_cost (verification.test_v2_f12_reports.F12ReportTests.test_bounded_retry_preserves_failure_cost) ... ok
+test_incomplete_manifest_never_becomes_complete_from_report_count (verification.test_v2_f12_reports.F12ReportTests.test_incomplete_manifest_never_becomes_complete_from_report_count) ... ok
+test_manifest_rejects_duplicates_extra_units_and_invalid_attempt_histories (verification.test_v2_f12_reports.F12ReportTests.test_manifest_rejects_duplicates_extra_units_and_invalid_attempt_histories) ... ok
+test_prefix_is_finite_horizon_and_requires_matching_requests (verification.test_v2_f12_reports.F12ReportTests.test_prefix_is_finite_horizon_and_requires_matching_requests) ... ok
+test_prefix_quality_distinguishes_valid_looser_bound_from_exact_bound (verification.test_v2_f12_reports.F12ReportTests.test_prefix_quality_distinguishes_valid_looser_bound_from_exact_bound) ... ok
+test_report_rejects_bad_measurements_missing_storage_and_reordered_requests (verification.test_v2_f12_reports.F12ReportTests.test_report_rejects_bad_measurements_missing_storage_and_reordered_requests) ... ok
+test_report_rejects_false_quality_and_aggregate_claims (verification.test_v2_f12_reports.F12ReportTests.test_report_rejects_false_quality_and_aggregate_claims) ... ok
+
+======================================================================
+ERROR: test_smaller_strict_margin_miss_survives_current_receipt_check (verification.test_v2_f12_revisions.F12RevisionTests.test_smaller_strict_margin_miss_survives_current_receipt_check)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\verification\test_v2_f12_revisions.py", line 33, in test_smaller_strict_margin_miss_survives_current_receipt_check
+    receipts.receive_receipt(current, query, wire)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\verification\receipts.py", line 238, in receive_receipt
+    return A.receive(ctx, proof, native.request(ctx, query))
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f07_soundness.py", line 136, in receive
+    raise AuditError('Root does not meet the requested unit or strength.')
+v2.checks.f07_soundness.AuditError: Root does not meet the requested unit or strength.
+
+----------------------------------------------------------------------
+Ran 17 tests in 4.468s
+
+FAILED (errors=1)

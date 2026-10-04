@@ -1,10 +1,51 @@
-# F11 bounded producer and semantic reference
+# F11–F12 bounded producer, semantic reference and validation
 
-**Complete at F11 scope; E60 satisfied.** Contributor: **Codex (GPT-6)**,
+**F11 and F12 complete at their task scopes; both E60 floors satisfied.** Contributor: **Codex (GPT-6)**,
 October 3, 2026 local / October 4 UTC. This package implements the
 [N01 contract](../contribution_plan.md) using the unchanged F06 native kernel
 and F07 request receiver. Project novelty is **NOT YET SUPPORTED**.
-[Work, clocks and validation](../work_logs/F11_2026-10-03_S1.md).
+[F11 work and clocks](../work_logs/F11_2026-10-03_S1.md),
+[F12 results](F12_results.md), [F12 work and clocks](../work_logs/F12_2026-10-03_S1.md).
+Next: **F13 / R-N01-01/F13-A**, fresh D60, unstarted.
+
+## F12 completed development study
+
+F12 adds 3,510 native/reference/ordinary scientific comparisons, 72 revision
+queries and 420 program/risk comparisons. The 1,170 scientific source records
+contain 1,153 distinct bound tuples and 454 distinct planar source regions.
+Three cost studies completed 108 process-isolated units at 18- and 72-query
+horizons, charging setup, generation/reconstruction, fallback, current receipts,
+checking and retained serialized storage. Full coefficient catalogues preserve
+exact bounds and save about 8–11% operation time in the nine long-horizon pairs;
+short-run effects vary. Fixed-origin reconstruction still costs about five times
+fresh generation and can miss true requests. This is ordinary preprocessing
+evidence, not a distinctive project contribution or a general performance claim.
+
+The smaller gamma=3/32 witness has fresh bound **-3/8192** but reconstructed
+bound **+3/8192**. Its bounded denominator search, malformed report controls,
+four deliberate fault detections and independent saved-witness audit are retained.
+The root suite passed **1,523 tests on attempt two**; later audit-only changes
+passed eleven focused tests and a saved-corpus audit. The runner parser passed
+12 synthetic controls and 122 real report headers. Native failures and fixed
+test-contract errors are documented separately. The protected F12 E minimum
+records **60.919966 engaged minutes**. No F13 case-study or novelty pass follows.
+
+Commands below use fresh output directories and must not overwrite the retained
+study. The PowerShell runners preserve all failed attempts and stop after at
+most three per declared unit. Reports remain development evidence.
+
+```text
+python -X faulthandler -m unittest discover -s verification -p 'test_v2_f12*.py' -v
+./v2/verification/run_differential.ps1 -OutputDirectory ../f12-reproduction/differential
+python -m v2.verification.audit_differential ../f12-reproduction/differential --json ../f12-reproduction/differential_audit.json
+./v2/verification/run_cost.ps1 -OutputDirectory ../f12-reproduction/cost -Experiment original
+./v2/verification/run_cost.ps1 -OutputDirectory ../f12-reproduction/optional -Experiment optional
+./v2/verification/run_cost.ps1 -OutputDirectory ../f12-reproduction/long -Experiment optional -Cycles 4
+python -m v2.verification.summarize_cost ../f12-reproduction/long --json ../f12-reproduction/long_summary.json
+python -m v2.verification.program_differential --json ../f12-reproduction/program.json
+python -m v2.verification.minimize_reuse --json ../f12-reproduction/minimum.json
+python -m v2.verification.mutation_probe
+```
 
 ## Run from the repository root
 
@@ -115,8 +156,9 @@ records three builds and nine uses; serialized coefficient catalogues occupy
 684–803 bytes, excluding current source and receipts. These are single-host,
 shared-process development observations, with caches not reset. They establish
 neither amortized superiority nor statistically reliable timing differences.
-F12 must measure setup, source/proof storage, checking, updates, fallback and
-decision quality at matched guarantees. No held-out evaluation has occurred.
+F12's completed studies above measure setup, source/proof storage, checking,
+updates, fallback and decision quality at matched guarantees. No held-out
+evaluation has occurred.
 
 ## Validation and limits
 
@@ -132,4 +174,4 @@ this package. The host failures do not identify a hardware or cooling cause.
 This review and implementation were performed by the same assistant; the
 separate reference is an implementation distinction, not independent authorship.
 Novelty, practical advantage, empirical premise validity, general completeness,
-and phase-two completion remain separate, unmet claims. Next: **C2/F12, E60**.
+and phase-two completion remain separate, unmet claims. Next: **F13 / F13-A, D60**.

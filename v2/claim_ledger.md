@@ -995,3 +995,28 @@ selects **C2/F12, fresh E60**, central 70/high 120 engaged minutes, unstarted.
 A/B retain readiness passes; C/D remain unattempted and require supported
 distinctiveness. Missing novelty assigns further evidence/recurrence, never a
 waived gate. No practical advantage or phase completion is claimed.
+
+## F12/C2 differential and cost acceptance — October 3 local / October 4 UTC, 2026
+
+**F12 complete; E60 satisfied (60.919966 minutes); novelty NOT YET SUPPORTED;
+R-N01-01 OPEN.** Contributor/reviewer: **Codex (GPT-6)**, same-assistant review.
+[Design](verification/F12_test_design.md), [results](verification/F12_results.md),
+[timing and raw evidence](work_logs/F12_2026-10-03_S1.md).
+
+| ID | Claim / evidence | Scope and limitation |
+|---|---|---|
+| F12-C01 | All 3,510 scientific native/reference/ordinary bounds agree; exact thresholds received, tighter requests rejected, receipts round-tripped. | 1,170 source records; 1,153 bound tuples; 454 bounded planar regions. Finite development coverage, not a continuum theorem. |
+| F12-C02 | 72 revision queries reject stale receipts; reconstruction has 21 strict gaps and three missed true requests. | Particular replacement strategy; original uncompleted F11 147-pair sweep stays unverified. |
+| F12-C03 | A 311-candidate denominator-ordered search finds gamma=3/32: fresh -3/8192, reused +3/8192. | First witness in a fixed one-dimensional family; 29 native reconstructions after exact screening. Strict-margin loss of sharpness, not unsoundness or global minimality. |
+| F12-C04 | 420 program/risk queries: 226 certified, 109 full-source-refuted, 85 unavailable; native/reduct and ordinary/full-source boundaries respected. | Fixed 60-source/seven-consumer adapter; no empirical premise validation or F13 completion. |
+| F12-C05 | 108 cost units completed at 18/72-query horizons. Ordinary catalogue long-run ratios 0.893–0.924 with equal exact bounds; fixed-origin reconstruction about 5–5.41 times fresh and misses requests. | Single-host descriptive comparison, three repetitions; shorter-run effects vary. Setup/checking/fallback/storage and failed-process costs explicit; not general superiority or novelty. |
+| F12-C06 | Selected coefficient cache matches long-run decisions but has 56/72 exact bounds on changing bounds, versus 72/72 fresh/catalogue. | Distinguishes sufficient valid receipts from equal sharpness; stronger ordinary baseline retained. |
+| F12-C07 | Saved evidence passed coverage/digest/exact-witness audits; four deliberate faults detected; malformed/type controls passed. Repository suite passed 1,523 tests on attempt two. | Later audit-only changes passed focused tests; native crashes and three deterministic test-contract corrections retained. No CI or hardware-cause claim. |
+
+Select **R-N01-01/F13-A in F13**, fresh D60 in D60/L10/E20 research minutes,
+central/high O-inclusive 100/160. The required scientific and staged self-assessment
+families must test a useful new application finding against strong ordinary
+methods. If they do not support a meaningful distinctive result, assign C4
+reconsideration or another named missing-evidence chunk before F14. C/D cannot
+pass on correctness, elapsed time or these ordinary caching gains alone. A/B
+retain their scopes; no mathematical repair or later research starts here.

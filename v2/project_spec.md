@@ -822,3 +822,29 @@ minutes, 57 current focused tests with passing coverage, native failures
 preventing a full-suite pass, and floor calibration. The
 [four-hour checkpoint](checkpoints/POST_B_4H_1.md) keeps cumulative actuals and
 sets central/high C2 forecasts of 70/120 minutes. Contributor: **Codex (GPT-6)**.
+
+## F12/C2 validation acceptance — October 3 local / October 4 UTC, 2026
+
+F12 completes finite differential/revision and matched-guarantee cost evidence
+with **60.919966 engaged E minutes**. The [results](verification/F12_results.md)
+record 3,510 scientific queries, 72 revision queries, 420 program/risk queries,
+stronger ordinary controls and 108 completed comparison units. Semantic domains,
+native rules and the empirical-premise obligations are unchanged. The local
+suite passed 1,523 tests on attempt two; later report-audit changes passed focused
+checks. Failures remain in the [work record](work_logs/F12_2026-10-03_S1.md).
+
+Dependency: F05–F11/N01/C3 -> **F12/C2 accepted** -> **R-N01-01/F13-A selected,
+unstarted** -> F14 conditional on a credible contribution target. F13 keeps its
+fresh D60 and both required motivating families, including an evaluator's own
+versioned behavior influencing later reasoning. Its selected 90-minute research
+chunk forecasts D60/L10/E20/O10=100, high 160 engaged minutes. Cost and sampling
+assumptions, genuine unresolved outcomes, strong ordinary controls and limits
+of a staged versus cyclic interpretation remain explicit.
+
+Ordinary coefficient caching's observed savings do not support project novelty.
+**R-N01-01 OPEN; novelty NOT YET SUPPORTED; A/B scoped PASS; C/D unattempted.**
+F13 must assess a result distinctive enough for a scoped novelty claim; if the
+new families only repackage established methods without a useful finding,
+select C4 reconsideration or named further evidence before F14. Research and
+recurrence continue in protected chunks without resetting package actuals.
+Contributor: **Codex (GPT-6)**.

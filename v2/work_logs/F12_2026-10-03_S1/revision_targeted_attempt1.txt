@@ -1,0 +1,24 @@
+test_catalogue_schema_rebuilds_are_not_free (verification.test_v2_f12_revisions.F12CostContractTests.test_catalogue_schema_rebuilds_are_not_free) ... ok
+test_fresh_sequence_has_common_receiver_costs_and_no_unearned_retention (verification.test_v2_f12_revisions.F12CostContractTests.test_fresh_sequence_has_common_receiver_costs_and_no_unearned_retention) ... ok
+test_reconstruction_fallback_is_charged_and_repaired (verification.test_v2_f12_revisions.F12CostContractTests.test_reconstruction_fallback_is_charged_and_repaired) ... ok
+test_a_retained_alternative_survives_when_selected_support_is_lost (verification.test_v2_f12_revisions.F12RevisionTests.test_a_retained_alternative_survives_when_selected_support_is_lost) ... ERROR
+test_changed_consumer_does_not_get_a_free_old_certificate (verification.test_v2_f12_revisions.F12RevisionTests.test_changed_consumer_does_not_get_a_free_old_certificate) ... ok
+test_context_observation_change_requires_a_separate_bridge (verification.test_v2_f12_revisions.F12RevisionTests.test_context_observation_change_requires_a_separate_bridge) ... ok
+test_one_of_each_declared_revision_kind (verification.test_v2_f12_revisions.F12RevisionTests.test_one_of_each_declared_revision_kind) ... ok
+test_parametric_reuse_threshold_miss_and_explicit_fallback (verification.test_v2_f12_revisions.F12RevisionTests.test_parametric_reuse_threshold_miss_and_explicit_fallback) ... ok
+
+======================================================================
+ERROR: test_a_retained_alternative_survives_when_selected_support_is_lost (verification.test_v2_f12_revisions.F12RevisionTests.test_a_retained_alternative_survives_when_selected_support_is_lost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\verification\test_v2_f12_revisions.py", line 49, in test_a_retained_alternative_survives_when_selected_support_is_lost
+    self.assertEqual(A.receive(current, proof, A.request(current, 'h', x, z, 0)).budget, 0)
+                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f07_soundness.py", line 134, in receive
+    raise AuditError('Valid trace does not prove the requested pair and scope.')
+v2.checks.f07_soundness.AuditError: Valid trace does not prove the requested pair and scope.
+
+----------------------------------------------------------------------
+Ran 8 tests in 3.991s
+
+FAILED (errors=1)
