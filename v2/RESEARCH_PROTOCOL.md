@@ -236,6 +236,18 @@ component-wise novelty and certainty about all prior literature are not required
 A useful implementation, elapsed effort, or null experiment alone is not a
 supported contribution.
 
+Under the author's [October 4 clarification](decisions/2026-10-04_novelty_scope.md),
+eligible novelty also includes modest conceptual synthesis, a useful original
+combination of established methods, methodology, application and small technical
+extensions. It may reside at the whole-project or any component level. Each
+assessment records **object, type, exact delta, magnitude, evidence and comparison
+scope**. Distinguish support relative to inspected antecedents from worldwide
+priority, and distinguish either from speed, empirical calibration or learned
+mechanism claims. No component must invent its own tools. A synthesis label
+without a meaningful supported difference does not satisfy the gate.
+C4's bounded supported assessment is evidence for later gates, not their pass;
+F16 must challenge its precise content and reopen the obligation if displaced.
+
 If NOT YET SUPPORTED or DISPLACED, assign a named 60/90-minute recurrence or
 additional-work chunk with the exact missing evidence, earliest affected task,
 forecast and acceptance condition. It may be implemented by a planned F11–F16

@@ -2,7 +2,13 @@
 
 This directory began as a compact, standard-library Python reference for the finite witness in [`formalism/05a_integration.md`](../formalism/05a_integration.md). It now also tests the Task 20 neural implementation, which requires the frozen NumPy/PyTorch runtime recorded in [`experiments/implementation_v1.json`](../experiments/implementation_v1.json). It remains verification infrastructure rather than a proof-assistant formalization.
 
-Phase two is complete through F13 at task scope; N01 and recurrence C3 are complete at their selected scopes. F13 is complete at case-study scope (D60/research90 satisfied); C4 is selected before F14, unstarted. Gates A/B retain their scoped passes; C/D are unattempted and novelty remains NOT YET SUPPORTED. See [the current TODO](../TODO_v2.md). The validation records below are historical, not a current broad-suite claim.
+Phase two is complete through F13 and C4 at their task scopes; N01 and C3 are
+also complete. C4 met research60 and supports a modest synthesis/application
+contribution relative to checked work; worldwide priority is unestablished.
+F14 is selected/unstarted with research90. Gates A/B retain their scoped passes;
+C/D are unattempted. See [the current TODO](../TODO_v2.md) and
+[C4 scope and tests](../v2/verification/README.md#c4-ordinary-mathematical-controls).
+The validation records below are historical, not a current broad-suite claim.
 
 Gate B's new wrapper runs **19 hostile tests**, all passing locally. Run
 `python -X faulthandler -m unittest verification.test_v2_gate_b -v`.

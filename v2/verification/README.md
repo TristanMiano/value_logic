@@ -1,9 +1,10 @@
-# F11–F13 bounded producer, case studies and validation
+# F11–F13 bounded producer, case studies and C4 controls
 
 **F11 and F12 complete at their task scopes; both E60 floors satisfied.** Contributor: **Codex (GPT-6)**,
 October 3, 2026 local / October 4 UTC. This package implements the
 [N01 contract](../contribution_plan.md) using the unchanged F06 native kernel
-and F07 request receiver. Project novelty is **NOT YET SUPPORTED**.
+and F07 request receiver. Novelty was **NOT YET SUPPORTED** at those closes;
+C4's current scoped contribution assessment is linked below.
 [F11 work and clocks](../work_logs/F11_2026-10-03_S1.md),
 [F12 results](F12_results.md), [F12 work and clocks](../work_logs/F12_2026-10-03_S1.md).
 **F13/F13-A is complete at case-study scope**, with fresh D60 within research90
@@ -11,7 +12,33 @@ satisfied. Its [case arguments](../derivations/06_case_studies.md) and
 [results](F13_results.md) have 40 tests with passing scoped coverage; combined
 runs crashed after bounded retries, and no final aggregate pass is claimed.
 [Work, exclusions and floor assessment](../work_logs/F13_2026-10-04_S1.md).
-Next: **R-N01-01/C4 reconsideration before F14**, selected and unstarted.
+**C4 is complete at contribution-review scope**, research60 satisfied.
+Its [assessment](../contribution_review.md) supports a modest methodological
+synthesis and small technical applications relative to checked antecedents;
+worldwide priority is unestablished. Next: **F14, selected/unstarted, research90**.
+
+## C4 ordinary mathematical controls
+
+`c4_price_revision.py` supplies exact rational price-family ranks, actual-mean
+repair, equal-price residual intervals and the stopped-prefix error reduction.
+`verification.test_v2_c4` checks these against direct world executions,
+independent nullspaces, endpoint laws and adverse consumer contracts.
+The [derivation](../derivations/09_c4_price_revision.md) carries the universal
+arguments. These controls are ordinary mathematics, not new native K rules,
+an empirical coverage study or held-out F15 results.
+
+```text
+python -X faulthandler -m unittest verification.test_v2_c4 -v
+```
+
+**24 focused tests passed.** One aggregate run produced an unexpected Python
+`TypeError` in unchanged elimination code; the next run passed. A subsequent
+mixed-price extension passed its affected test. The exploratory SciPy script
+could not import SciPy; the exact standard-library replacement completed.
+All logs are retained in [the C4 work record](../work_logs/C4_2026-10-04_S1.md).
+No full-repository, CI, hardware-cause or independent-review claim follows.
+The final combined C4/link/Markdown run passed **27 tests** on the first
+attempt, including all 24 C4 tests after the mixed-price extension.
 
 ## F12 completed development study
 
@@ -150,8 +177,9 @@ the native/reduct maximum is -1/40, the full-source maximum is -3/40, and budget
 -1/20 is true on the full source but unavailable natively. The reduct attainer
 is explicitly not a full-source countermodel. The ordinary closed form matches
 both domains. An identical old loss law can accompany edit differences -1/40
-and 3/40; ordinary joint information repairs that summary loss. **F13 remains
-unstarted**, including its separate D60 and self-assessment obligations.
+and 3/40; ordinary joint information repairs that summary loss. **F13 was
+unstarted at F11 close**; its separate D60 and self-assessment obligations
+are now complete as recorded above.
 
 The [cost probe](../work_logs/F11_2026-10-03_S1/cost_report.json) contains 18
 snapshots and one reuse boundary. Receipts occupy 6,700–8,365 compact JSON
@@ -178,6 +206,7 @@ this package. The host failures do not identify a hardware or cooling cause.
 
 This review and implementation were performed by the same assistant; the
 separate reference is an implementation distinction, not independent authorship.
-Novelty, practical advantage, empirical premise validity, general completeness,
-and phase-two completion remain separate, unmet claims. F13 is now complete;
-next is **R-N01-01/C4 reconsideration before F14**, selected and unstarted.
+Contribution scope, practical advantage, empirical premise validity, general
+completeness and phase-two completion remain separate claims. C4 supports only
+the modest contribution described above. F13 and C4 are complete;
+next is **F14**, selected and unstarted. C/D remain unattempted.

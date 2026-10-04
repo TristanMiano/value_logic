@@ -609,3 +609,31 @@ claim; neither the old loss-law counterexample nor an ordinary caching gain
 is enough. If no useful distinction emerges, select C4 reconsideration or
 named further evidence before F14. **Novelty NOT YET SUPPORTED; R-N01-01 OPEN.**
 F13 is selected but unstarted. The neural pilot remains a later distinct task.
+
+## C4 ranking update — October 4, 2026
+
+Contributor: **Codex (GPT-6)**. The [broader contribution assessment](contribution_review.md)
+supports modest synthesis and small technical applications relative to checked
+work. R-N01-01 closes at that scope, with F16 reopening if its delta is displaced.
+Worldwide priority and stronger practical claims remain unestablished.
+
+**OPP-01/04:** prioritize consumer-appropriate revision/retention: exact
+numeric answers, useful tolerances and refusal, and consequential decisions
+are different requirements. C4 now supplies price-family ranks, minimal repair,
+sharp/general equal-price recovery and a conditional sampling bridge. The
+strong ordinary method gets the same source, certificates, recovery tools and
+acquisition opportunities. Proof-reconstruction speed remains a negative
+control. More ambitious work should study jointly noisy old/new information,
+unequal prices or stateful outcomes, with measured acquisition and decision cost.
+
+**OPP-03:** preserve staged, versioned evaluator influence from F13. The new
+consumer calculations clarify which observations later reasoning needs; they
+do not establish unrestricted cyclic self-justification or empirical validity.
+
+**OPP-02:** select F14's existing ordinary-training neural probe alongside one
+small revision challenge, then F15 execution. F14 is **unstarted**, research90,
+central/high 105/155 engaged minutes, R/X55/45. Do not multiply experimental
+families merely because C4 added optional theorems. The
+[4/8/16/32 additional-hour ladder](contribution_review.md#7-effort-ladder-breadth-and-defense-grow-together)
+grows substantive scope and defense together. Keep the separate cumulative
+POST-B-1 clock and its [eight-hour checkpoint](checkpoints/POST_B_8H_1.md).

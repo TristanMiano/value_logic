@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: October 4, 2026 UTC and America/Los_Angeles.
-Status: F01–F13, N01 and recurrence C3 complete at their task scopes; Gates A/B retain their scoped passes; F13 D60/research90 satisfied; C4 selected, unstarted before F14; F14–F17 unstarted; C/D unattempted; project-level novelty NOT YET SUPPORTED; R-N01-01 open.
+Status: F01–F13, N01, C3 and C4 complete at their task scopes; C4 research60 satisfied; modest synthesis/application contribution SUPPORTED at bounded comparison scope; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F14 selected/unstarted (research90); F15–F17 unstarted; A/B retain scoped passes; C/D unattempted.
 
 ## Resume here
 
@@ -11,55 +11,40 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: R-N01-01/C4 reconsideration, before F14; protected research60;
-central/high D/L/E/O totals 70/105 minutes; unstarted.**
-F13's [scientific and staged reasoning cases](v2/derivations/06_case_studies.md)
-are complete, with **60.496927 D / 90.192407 total research minutes**.
-The stronger ordinary controls still match or improve the useful results;
-the equal-cost information rank has a direct antecedent. Novelty is not yet
-supported. The [C4 selection](v2/contribution_plan.md#11-f13-close-and-selected-c4-reconsideration)
-requires a consequential application or limitation and a discriminating
-comparison, not more fixtures of the displaced advantage.
+**Next task: F14, selected and unstarted; protected research90; central/high
+D/L/E/O totals 105/155 engaged minutes.** C4 is complete with **60.336817
+research minutes**, excluding waits and recovery. Its
+[contribution review](v2/contribution_review.md) applies the author's
+[broader novelty criterion](v2/decisions/2026-10-04_novelty_scope.md): a modest
+methodological synthesis/formal adaptation with small technical application
+extensions is **SUPPORTED relative to the named checked comparisons**.
+Worldwide priority, speed superiority, deployment calibration and learned
+internal structure remain unestablished. R-N01-01 closes at this narrowed
+contribution-selection scope; F16 can reopen it with a precise objection.
 
-The following paragraph preserves the path to that selection.
-The author moved C3 target refinement before F11 and set a fresh two-hour
-research floor. C3 is now complete at refinement scope, with **120.540527
-engaged D+L minutes**. Scientific and bounded self-assessment routes were
-challenged against strong ordinary methods; optional actual-program examples
-identify further revision questions. The 16-state/three-query scientific
-fixture has passed F11's bounded integration control and C2/F12's cost and
-differential checks. F12 selects the richer scientific/program and staged
-self-assessment cases, with strong ordinary methods and an explicit novelty
-obligation. [Historical F12 selection and stop condition](v2/contribution_plan.md#10-f12-close-and-application-selection),
-[schedule amendment](v2/decisions/2026-10-02_n01_recurrence.md),
-[completed work record](v2/work_logs/N01R_2026-10-02_S1.md),
-[outcome and next experiment](v2/contribution_plan.md#8-c3-close-targets-after-the-two-hour-recurrence).
-R-N01-01 remains OPEN and project novelty NOT YET SUPPORTED. A/B retain
-their mathematical passes; C/D still require supported distinctiveness.
+C4 adds price-family retention and minimal repair results, sharp/general
+approximation consequences, a coherence boundary and a conditional empirical
+repair application. Its 24 focused tests passed after one unexpected Python
+exception and a bounded rerun. [Derivations](v2/derivations/09_c4_price_revision.md),
+[primary comparisons](v2/literature/06_c4_contribution_comparison.md),
+[work and timing](v2/work_logs/C4_2026-10-04_S1.md).
 
 **Active mathematical repair queue: empty.**
 **Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C not attempted; D not attempted.**
-The [first four-hour checkpoint](v2/checkpoints/POST_B_4H_1.md) closes with F11.
-It confirms technical feasibility, not distinctiveness. F11 records **60.162455
-engaged E minutes**; final task/package actuals and overshoot are in its
-[work record](v2/work_logs/F11_2026-10-03_S1.md). Keep cumulative actuals; the
-next milestone is eight hours at a chunk boundary. F12 closed with **60.919966
-engaged E minutes**, exceeding both its selected E60 and original E45 floors.
-Its [results](v2/verification/F12_results.md) favor ordinary coefficient caching
-over the studied proof reconstruction at matched guarantees; they do not
-support project novelty. F13-A forecast **D60/L10/E20/O10=100**, high
-**D90/L20/E30/O20=160**, with waits 5/15 separate and R/X 50/50. It closes
-with both floors satisfied and selects R-N01-01/C4 reconsideration before F14.
-POST-B-1's historical actuals, eight-hour remainder and F13 projections are in
-the [F12 accounting record](v2/work_logs/F12_2026-10-03_S1.md). Prior package
-time was 296.058757 engaged minutes; no recurrence time is reset.
-Package before F13: **367.344527 engaged minutes**. Its original central/high
-projected closes were **467.344527/527.344527**. Current totals, exclusions and
-C4 cumulative projections are in the [F13 work record](v2/work_logs/F13_2026-10-04_S1.md).
-Current package: **461.480742 engaged minutes**, leaving **18.519258** to
-eight hours. C4's central/high cumulative closes are **531.480742/566.480742**;
-review eight hours at the first completed chunk boundary reaching it, retaining
-overshoot. F13 does not yet trigger that checkpoint.
+C4 does not discharge F14's prospective freeze, F15's execution or F16's
+fresh review. If the contribution is later displaced, assign a named 60/90-minute
+recurrence or further-work chunk; no technical pass or elapsed time waives it.
+
+POST-B-1 entered C4 at **461.480742 engaged minutes**. The
+[eight-hour checkpoint](v2/checkpoints/POST_B_8H_1.md) records the current total,
+chunk-boundary overshoot and remaining time to sixteen hours. No recurrence
+time is reset. C4's original central/high projected closes were
+531.480742/566.480742; final actuals and new F14 projections are in its work log.
+The earlier [four-hour review](v2/checkpoints/POST_B_4H_1.md),
+[C3 recurrence](v2/work_logs/N01R_2026-10-02_S1.md),
+[F11](v2/work_logs/F11_2026-10-03_S1.md),
+[F12](v2/work_logs/F12_2026-10-03_S1.md) and
+[F13](v2/work_logs/F13_2026-10-04_S1.md) retain their original findings and floors.
 
 Select the pointer, not mechanically the first unchecked task. A failed or
 invalidated gate can put an earlier repair ahead of later numbered tasks.
@@ -189,7 +174,7 @@ forecast or clock recording.
 | F11 | 120 | 240 | E60 |
 | F12 | 90 | 180 | E45 |
 | F13 | 120 | 240 | D60 |
-| F14 | 60 | 120 | None |
+| F14 | 105 | 155 | Research90; C4 prospective amendment, original 60/120 with no floor |
 | F15 | 120 | 240 | E60 |
 | F16 | 120 | 240 | D60 |
 | Gate C | 60 | 120 | None |
@@ -286,15 +271,23 @@ enough to support a scoped project-level novelty claim?** Reuse of established
 components is encouraged; no individual-component novelty quota is imposed.
 Assess the project result's relevance to value judgments, not just new notation,
 a different implementation, or success against an intentionally weak baseline.
+Apply the [October 4 author clarification](v2/decisions/2026-10-04_novelty_scope.md):
+modest synthesis, a useful original combination/application of established
+methods, methodology and small technical extensions may qualify at any project
+or component level. Record object, type, exact delta, magnitude, evidence and
+comparison scope. Reproduction by a strong ordinary combination can defeat an
+exclusive-capability or speed claim without defeating a synthesis/application
+claim. The latter still needs concrete added understanding or consequences.
 
 The evidence needed for **SUPPORTED** is:
 
 1. An exact contribution statement with assumptions and operational significance.
 2. Direct comparison with the closest checked prior work and a credible ordinary
    combination of established methods, identifying what remains different.
-3. A supported result establishing that difference: a nontrivial theorem,
-   informative limitation/negative result, or a meaningful application finding
-   with appropriate controls. A null run or an additional example is not
+3. A supported result establishing that difference: a specific methodological
+   synthesis with worked consequences, a technical extension, an informative
+   limitation/negative result, or a meaningful application finding with
+   appropriate controls. A null run or an additional example is not
    automatically a novel result.
 4. An adversarial account of alternative explanations, search/source limitations
    and the narrowest defensible claim. No proof of absence from all literature
@@ -306,7 +299,7 @@ Record technical readiness separately from contribution status:
 |---|---|
 | **SUPPORTED** at a stated scope | Record exact evidence and closest-work difference. Continue only to work allowed by the remaining task/gate dependencies; this does not waive other criteria. |
 | **NOT YET SUPPORTED** (including promising, unresolved or inadequate comparison) | Create or update a named recurrence/additional-work item with the missing evidence and the next protected 60/90-minute chunk; select it as the next action. No novelty pass. |
-| **DISPLACED** by prior work or a sufficient ordinary baseline | Preserve the useful established result, then assign a bounded new-question/alternative-scope comparison. No novelty pass and no cosmetic relabeling as a new version. |
+| **DISPLACED** when prior work already supplies the claimed delta, or an ordinary baseline defeats the specific promised advantage | Preserve the useful established result, then assign a bounded new-question/alternative-scope comparison. Reproduction alone does not defeat an eligible synthesis claim; a label without added content does not repair one. |
 
 Use checkpoint records such as `v2/checkpoints/N_4h_1.md` with versioned retries;
 chunk-close assessments may live in the work log. Novelty follow-ups use stable
@@ -1080,7 +1073,7 @@ to publication with an unsound core simply because the planned queue ended.
   limit generic novelty claims. Three exact probes passed. Scope, corrections,
   verification limitations and floor assessment are in the
   [work record](v2/work_logs/N01R_2026-10-02_S1.md).
-  **Project novelty NOT YET SUPPORTED; R-N01-01 stays open.** At C3 close, selected C1/F11
+  **At C3 close: project novelty NOT YET SUPPORTED; R-N01-01 stayed open.** Selected C1/F11
   E60 on the unchanged small scientific control, then C2/F12; optional richer
   families are candidates for F13, whose fresh D60 is not discharged here.
   No native producer, speed advantage, empirical application or new gate pass.
@@ -1117,7 +1110,7 @@ to publication with an unsound core simply because the planned queue ended.
   [Work record](v2/work_logs/F11_2026-10-03_S1.md),
   [four-hour checkpoint](v2/checkpoints/POST_B_4H_1.md). Contributor: **Codex (GPT-6)**.
   **At F11 close, next was R-N01-01/C2 in F12; F12 is now complete below.
-  R-N01-01 remains OPEN.**
+  R-N01-01 remained OPEN at F11 close.**
 
 - [x] **F12 — differential tests and counterexample regression.**
 
@@ -1156,7 +1149,7 @@ to publication with an unsound core simply because the planned queue ended.
   suite passed **1,523 tests on attempt two**; later audit-only changes passed
   focused validation. Failures are retained. **E60: 60.919966 engaged minutes.**
   [Results](v2/verification/F12_results.md), [work record](v2/work_logs/F12_2026-10-03_S1.md).
-  Contributor: **Codex (GPT-6)**. **R-N01-01 OPEN; novelty NOT YET SUPPORTED.**
+  Contributor: **Codex (GPT-6)**. **At F12 close: R-N01-01 OPEN; novelty NOT YET SUPPORTED.**
 
 - [x] **F13 — work two motivating case studies end to end.**
 
@@ -1204,11 +1197,19 @@ to publication with an unsound core simply because the planned queue ended.
   tests have passing coverage across separate scoped runs; combined and broad
   native runs failed after bounded attempts. No full-suite pass is claimed.
   [Timing and failures](v2/work_logs/F13_2026-10-04_S1.md).
-  **Novelty NOT YET SUPPORTED; R-N01-01 OPEN.** Select C4 below before F14.
+  **At F13 close: novelty NOT YET SUPPORTED; R-N01-01 OPEN.** Selected C4 below before F14.
 
-- [ ] **R-N01-01/C4 — reconsider contribution scope after F13.**
+- [x] **R-N01-01/C4 — reconsider contribution scope after F13.**
 
-  **Selected, unstarted.** Protected **60 research minutes**, central
+  **Completed October 4, 2026 by Codex (GPT-6).** Protected research60 met:
+  **60.336817 minutes**. [Assessment](v2/contribution_review.md),
+  [derivations](v2/derivations/09_c4_price_revision.md),
+  [work record](v2/work_logs/C4_2026-10-04_S1.md).
+  C4-S supports modest synthesis/formal adaptation and small technical
+  application extensions relative to checked work; worldwide priority is
+  unestablished. R-N01-01 closes at that scope, subject to F16 reopening.
+  Twenty-four focused tests passed after one unexpected exception and retry.
+  The following preserves its original contract: **60 research minutes**, central
   D30/L25/E5/O10=70, high D40/L35/E15/O15=105 (90 research minutes); waits 5/15,
   R/X 30/70. Compare at most two concrete routes with a useful consumer,
   evidence/acquisition contract, meaningful margin or limitation, closest work,
@@ -1223,7 +1224,16 @@ to publication with an unsound core simply because the planned queue ended.
 
 - [ ] **F14 — freeze the empirical challenge and baselines.**
 
-  **Unstarted; awaits the selected C4 disposition.**
+  **Selected, unstarted after C4.** Protected **90 research minutes**;
+  central D30/L20/E40/O15=105, high D45/L30/E60/O20=155; waits 5/15 separate;
+  R/X55/45. This prospectively replaces the original 60/120 estimate and adds
+  the research90 floor. Review at that floor; name a 60-minute continuation
+  if specific freeze obligations remain. [C4 selection](v2/contribution_review.md#6-selected-next-work-f14-not-another-unrestricted-n01-loop).
+  Freeze one small revision/retention challenge and the already-required
+  ordinary-training neural probe. Distinguish exact answers, meaningful
+  approximation/refusal and useful decisions; keep strong ordinary controls.
+  C4's cases and optional sampling theorem are development evidence, not a
+  held-out population or an obligation to test every new extension in F14.
 
   Principal artifact: `v2/experiments/protocol.md` plus frozen configuration.
   Separate development fixtures from a prospective evaluation population.
@@ -1320,6 +1330,11 @@ to publication with an unsound core simply because the planned queue ended.
   informative novel negative result are allowed; novelty of every component or
   a positive neural result is not required. Promising but unestablished novelty
   is a missing criterion, not a qualified PASS.
+  Apply the [October 4 broader criterion](v2/decisions/2026-10-04_novelty_scope.md)
+  at any project/component level: record object, type, exact delta, magnitude,
+  evidence and comparison scope. C4-S is a bounded supported assessment to
+  challenge, not a Gate C pass or proof of worldwide firstness. If its meaningful
+  delta is displaced, reopen R-N01-01 and assign the specific next chunk.
 
   **PASS:** technical criteria met AND contribution SUPPORTED; select F17.
   **BLOCKED:** classify the failure and return to the relevant derivation,

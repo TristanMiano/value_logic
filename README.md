@@ -1,15 +1,19 @@
 # Value Logic
 
-**Latest completion: [F13 scientific and staged evaluator cases](v2/derivations/06_case_studies.md),
-with 60.496927 derivation minutes within 90.192407 research minutes.** Both
-protected floors are satisfied. The cases develop acquisition, retention,
-revision and risk bounds, including actual native reasoning and stronger
-ordinary controls. [Forty tests have passing scoped coverage](v2/verification/F13_results.md);
-combined runs crashed after bounded retries, so no final aggregate pass is
-claimed. Novelty remains **NOT YET SUPPORTED**, R-N01-01 open.
-Next: **R-N01-01/C4 reconsideration before F14**, selected, unstarted.
-Contributor: **Codex (GPT-6)**.
-[Timing, scope and floor assessment](v2/work_logs/F13_2026-10-04_S1.md).
+**Latest completion: [C4 contribution review](v2/contribution_review.md), with
+60.336817 research minutes; protected research60 satisfied.** Under the
+author's broader criterion, the supported claim is a **modest methodological
+synthesis with small technical application extensions**, relative to the
+named comparisons. Worldwide priority, speed superiority, deployment
+calibration and learned internal structure remain unestablished.
+The [new derivations](v2/derivations/09_c4_price_revision.md) cover exact
+price-revision retention, minimal repair, sharp approximation and a conditional
+sampling extension using established methods. Twenty-four focused tests passed
+after one unexpected Python exception and a bounded rerun.
+R-N01-01 closes at this narrowed scope; F16 may reopen it. A/B retain their
+scoped passes; C/D remain unattempted. Next: **F14, selected but unstarted,
+protected research90**. Contributor: **Codex (GPT-6)**.
+[Work and limitations](v2/work_logs/C4_2026-10-04_S1.md).
 
 Value Logic is a research project about reasoning with useful but fallible models under open-ended theory succession. It begins with a practical and philosophical question:
 
@@ -17,12 +21,12 @@ Value Logic is a research project about reasoning with useful but fallible model
 
 The project's proposed starting point is **value**: how a model, theory, representation, or course of action serves an intended purpose, at a tolerable error and resource cost. The ambition is not just to attach usefulness scores to otherwise conventional judgments. It is to investigate a calculus in which semantic objects and inference rules make pragmatic value central, with familiar truth-based reasoning potentially recovered within a suitable fragment.
 
-**Phase one is complete. Phase two is building the value-based calculus first. F01–F13 are complete at their task scopes. F07 establishes finite-fragment soundness; F08 characterizes native consequence through directed unit access; F09 establishes exact Boolean and phase-one interfaces and numerical-presentation boundaries, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is selected before F14, unstarted. Gate A passed its foundation-readiness review; C/D remain unattempted. The semantic core remains provisional.** The motivation below is the continuing research program. The particular constructions developed so far are realizations of it, not permanent foundations.
+**Phase one is complete. Phase two is building the value-based calculus first. F01–F13 are complete at their task scopes. F07 establishes finite-fragment soundness; F08 characterizes native consequence through directed unit access; F09 establishes exact Boolean and phase-one interfaces and numerical-presentation boundaries, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is selected, unstarted. Gate A passed its foundation-readiness review; C/D remain unattempted. The semantic core remains provisional.** The motivation below is the continuing research program. The particular constructions developed so far are realizations of it, not permanent foundations.
 
 The [Gate B decision](v2/checkpoints/B_1.md) records the fresh mathematical
 reconstruction and its limits. Nineteen new adversarial tests passed; broader
 runs crashed natively after bounded retries. The existing kernel is unchanged.
-N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is selected before F14, unstarted; phase two remains in progress.
+N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is selected, unstarted; phase two remains in progress.
 
 **N01's [contribution plan](v2/contribution_plan.md) is complete**, with the
 protected D+L60 satisfied and work attributed to **Codex (GPT-6)**. The first
@@ -30,8 +34,9 @@ loss family has a cheap exact ordinary baseline: twelve affine bounds are
 needed to preserve all comparisons uniformly; an optional weaker contract
 preserves its chosen action with nine, depending on the priority order.
 Independent rational checks passed. These are scoped planning results, not a
-supported novelty or performance claim. **R-N01-01 remains open**. Its
-[D+L120 target recurrence](v2/decisions/2026-10-02_n01_recurrence.md) is now complete; C1/F11 (E60) is complete; C2/F12 (E60) is complete; F13 (D60/research90) is complete; C4 is selected before F14, unstarted. See the original
+supported novelty or performance claim at N01 close. **R-N01-01 stayed open
+through F13; C4 closes the narrowed obligation above.** Its
+[D+L120 target recurrence](v2/decisions/2026-10-02_n01_recurrence.md) is now complete; C1/F11 (E60) is complete; C2/F12 (E60) is complete; F13 (D60/research90) is complete; C4 is complete at contribution-review scope (research60 satisfied); F14 is selected, unstarted. See the original
 [derivations](v2/derivations/06_n01_decision_retention.md),
 [source comparison](v2/literature/03_n01_target_comparison.md) and
 [work record](v2/work_logs/N01_2026-10-02_S1.md).
@@ -52,7 +57,9 @@ supported project-level novelty a requirement for Gates C/D. An unestablished
 contribution assigns recurrence or further work. Research proceeds in protected
 60/90-minute chunks within cumulative 4/8/16/32-hour checkpoints, expanding
 substantive scope and supporting evidence together. Existing A/B passes retain
-their mathematical scopes; novelty is not yet established.
+their mathematical scopes. [C4](v2/contribution_review.md) now supports a
+modest scoped synthesis/application claim under the
+[broader criterion](v2/decisions/2026-10-04_novelty_scope.md).
 
 ## Motivation: useful does not mean final
 
@@ -100,7 +107,7 @@ evaluators are active capability targets. Neural interpretation seeks structure
 learned by ordinary networks, not only architectures built to implement a logic.
 [DIR01](v2/decisions/DIR01_loss_grounded_reflective_direction.md) specifies this
 direction, its scope and its open choices; the [opportunity register](v2/opportunities.md)
-guides bounded agent initiative. F03–F10 are complete at their task scopes; [Gate A](v2/checkpoints/A_1.md) passed, and F10 completes the external audit and effort calibration, with L45 satisfied. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is selected before F14, unstarted.
+guides bounded agent initiative. F03–F10 are complete at their task scopes; [Gate A](v2/checkpoints/A_1.md) passed, and F10 completes the external audit and effort calibration, with L45 satisfied. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is selected, unstarted.
 
 ## What phase one established
 
@@ -135,9 +142,9 @@ The [candidate comparison](v2/foundations/02_candidate_semantics.md) and [contin
 
 **F04 is complete at its candidate-discrimination scope.** The [completion reconstruction](v2/derivations/01e_equal_information_completion.md) compares source-grounded arithmetic certificates with continuation-value formulations, including proxy alignment, shared-source composition, bounded reflection and prospective neural tests. The [completion record](v2/work_logs/F04_2026-09-26_S6.md) preserves the evidence and measured effort.
 
-**F01–F13 are complete; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is selected before F14, unstarted.** [F05](v2/foundations/03_provisional_core.md) specifies the provisional source-aware loss semantics, [F06](v2/derivations/02_inference_rules.md) supplies the rules, and [F07](v2/derivations/03f_soundness_acceptance.md) establishes finite-fragment soundness. [F08](v2/derivations/04_characterization.md) proves completeness for the target-unit reduct. [F09](v2/derivations/05_fragments_and_comparisons.md) gives an exact Boolean entailment translation, scoped phase-one evidence adapters, affine presentation laws, and explicit failures of broader identifications. Optional results characterize Boolean observations, exact finite grids, nonlinear budget bounds and joint-profile information; a general affine certificate reconstruction is proved on paper, with its implementation deferred. The [F09 work record](v2/work_logs/F09_2026-09-30_S1.md) records **60.091745 engaged D minutes**, attribution to **Codex (GPT-6)**, **46 passing F09 tests** and **8 checked, round-tripped native certificates**. Broader runs hit native Python failures after bounded retries; no full-suite or CI pass is claimed for F09. Gate A retains its readiness PASS; Gate B has now passed; C/D remain unattempted; F11 is complete at its bounded integration scope. [TODO_v2.md](TODO_v2.md) is authoritative.
+**F01–F13 are complete; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is selected, unstarted.** [F05](v2/foundations/03_provisional_core.md) specifies the provisional source-aware loss semantics, [F06](v2/derivations/02_inference_rules.md) supplies the rules, and [F07](v2/derivations/03f_soundness_acceptance.md) establishes finite-fragment soundness. [F08](v2/derivations/04_characterization.md) proves completeness for the target-unit reduct. [F09](v2/derivations/05_fragments_and_comparisons.md) gives an exact Boolean entailment translation, scoped phase-one evidence adapters, affine presentation laws, and explicit failures of broader identifications. Optional results characterize Boolean observations, exact finite grids, nonlinear budget bounds and joint-profile information; a general affine certificate reconstruction is proved on paper, with its implementation deferred. The [F09 work record](v2/work_logs/F09_2026-09-30_S1.md) records **60.091745 engaged D minutes**, attribution to **Codex (GPT-6)**, **46 passing F09 tests** and **8 checked, round-tripped native certificates**. Broader runs hit native Python failures after bounded retries; no full-suite or CI pass is claimed for F09. Gate A retains its readiness PASS; Gate B has now passed; C/D remain unattempted; F11 is complete at its bounded integration scope. [TODO_v2.md](TODO_v2.md) is authoritative.
 
-**F10's [external audit](v2/literature/02_core_audit.md) and [effort calibration](v2/literature/02a_research_calibration.md) are complete.** Five primary-source comparisons distinguish established mathematics from native adaptations. The author's subsequent planning amendment calls for cumulative **4 / 8 / 16 / 32-hour stages**, each adding substantive breadth and stronger evidence in roughly equal measure. The calibration gives an illustrative path from a loss comparison through revision, bounded self-assessment and a neural question, while retaining the original package forecasts as effort estimates. These are prospective scope targets, with uncertain novelty, not a promise to complete all remaining v2 work. The [record](v2/work_logs/F10_2026-09-30_S1.md) credits **45.001320 literature minutes** and attributes the work to **Codex (GPT-6)**. Three full-suite attempts crashed natively; F10 claims no suite pass. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is selected before F14, unstarted.
+**F10's [external audit](v2/literature/02_core_audit.md) and [effort calibration](v2/literature/02a_research_calibration.md) are complete.** Five primary-source comparisons distinguish established mathematics from native adaptations. The author's subsequent planning amendment calls for cumulative **4 / 8 / 16 / 32-hour stages**, each adding substantive breadth and stronger evidence in roughly equal measure. The calibration gives an illustrative path from a loss comparison through revision, bounded self-assessment and a neural question, while retaining the original package forecasts as effort estimates. These are prospective scope targets, with uncertain novelty, not a promise to complete all remaining v2 work. The [record](v2/work_logs/F10_2026-09-30_S1.md) credits **45.001320 literature minutes** and attributes the work to **Codex (GPT-6)**. Three full-suite attempts crashed natively; F10 claims no suite pass. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is selected, unstarted.
 
 The former contract-semantics and inverse-task-recovery plan is preserved in [TODO_v2_contracts_archive.md](TODO_v2_contracts_archive.md). It remains a possible future direction, alongside model substitution, inquiry and self-revision, learning, and policy interpretability. There is no fixed limit on later phases.
 

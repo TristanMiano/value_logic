@@ -2,8 +2,13 @@
 
 Contributor: **Codex (GPT-6)**. October 2, 2026, America/Los_Angeles.
 **N01 complete at target-selection and challenge scope; D+L60 satisfied.**
-Project contribution: **NOT YET SUPPORTED**. A/B retain their scoped passes.
-**C3, F11/C1, F12/C2 and F13/F13-A complete at their task scopes; their protected floors are satisfied. Next: R-N01-01/C4 reconsideration before F14, protected research60, unstarted.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 ahead of C1/C2. The [F13 close](#11-f13-close-and-selected-c4-reconsideration) governs the current plan. Earlier numbered sections retain their dated selections and forecasts.
+Current contribution: **C4-S SUPPORTED at bounded comparison scope**: modest
+methodological synthesis/formal adaptation with small technical application
+extensions; worldwide priority unestablished. A/B retain their scoped passes;
+C/D unattempted. **C3, F11–F13 and C4 are complete at their task scopes and
+protected floors. Next: F14, selected/unstarted, protected research90.**
+The [C4 close](#12-c4-close-broader-contribution-assessment) governs the current
+plan. Earlier numbered sections retain their dated selections and forecasts.
 
 ## 1. Selected question and the distinction we will test
 
@@ -526,3 +531,58 @@ the central D30/L25/E5 plan gives research shares 50/41.7/8.3 and R/X30/70.
 Reforecast the next experimental chunk from its selected question rather than
 forcing the old cycle percentage. Preserve existing task-specific floors and
 review again at C4 close, the cumulative eight-hour boundary, and Gate C.
+
+## 12. C4 close: broader contribution assessment
+
+October 4, 2026. Contributor: **Codex (GPT-6)**. **Research60 met:
+60.336817 engaged minutes**; [work and accounting](work_logs/C4_2026-10-04_S1.md).
+The [author clarification](decisions/2026-10-04_novelty_scope.md) admits modest
+new combinations/applications of established methods, at any project or
+component level, while requiring precise type and magnitude.
+
+The [contribution review](contribution_review.md) compares two routes and
+constructs the strongest ordinary combination. Its disposition is **C4-S
+SUPPORTED relative to the named checked comparisons**: a modest synthesis of
+revisable loss reasoning, evidence access, current reception and future-consumer
+contracts, with small technical application extensions. The
+[new derivation](derivations/09_c4_price_revision.md) gives two-price/family
+ranks, minimal repair, known-marginal restrictions, sharp and general equal-price
+approximation, coherence limits and a conditional stopped-trace sampling
+application. Established chain, optimal-recovery, capacity-identification and
+concentration methods are explicitly reused. Exact old summaries remain a
+strong prior-information assumption; general efficiency, calibration and
+learned internal structure have not been demonstrated.
+
+**R-N01-01 closes at this narrowed contribution-selection scope.** Worldwide
+priority remains unestablished; one close capacity-identification section was
+unavailable. F16 must challenge the actual delta and can reopen the same
+obligation if a close antecedent, proof defect or merely verbal integration
+displaces it. C4 neither passes C/D nor weakens their recurrence requirement.
+No new mathematical repair to the adopted core is identified.
+
+Select **F14, unstarted**, protected **research90**, central
+**D30/L20/E40/O15=105**, high **D45/L30/E60/O20=155**, waits 5/15 separate,
+R/X55/45. This prospectively revises the original 60/120 estimate with no floor.
+Freeze one small revision/retention challenge and one ordinary-training neural
+probe, retaining meaningful tolerance/refusal/decision distinctions and strong
+matched ordinary controls. Do not require proof reconstruction to win on speed.
+Review at research90; a named 60-minute continuation can finish specific
+remaining freeze obligations. No held-out generation, training or freeze is
+performed in C4.
+
+The [eight-hour checkpoint](checkpoints/POST_B_8H_1.md) preserves POST-B-1's
+actual total and overshoot. The [additional effort ladder](contribution_review.md#7-effort-ladder-breadth-and-defense-grow-together)
+uses approximately 4/8/16/32 further hours, with high estimates 6/12/24/48,
+to grow applications and their defense together. These are prospective useful
+outputs, not guaranteed positive findings or a reset of cumulative time.
+Continue v2's evaluation/review path; a v3 reset is not needed for the modest
+contribution now supported. No hours-to-weekly-usage conversion is measured.
+
+Cycle III through C4 totals **468.874021 research minutes**:
+D232.685551/L57.792246/E178.396224. Research R/X is
+230.448617/238.425403 minutes (minor last-digit rounding).
+C4 itself used more computation and less literature than its central forecast
+because optional exact-radius, coherence and sampling controls resolved concrete
+uncertainties. It did not invent a new solver. Keep F14's prospective split
+and review design-versus-execution costs again at its close; do not retroactively
+change old forecasts or floors.

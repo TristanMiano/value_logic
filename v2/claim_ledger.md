@@ -1044,3 +1044,28 @@ Contributor/reviewer: **Codex (GPT-6)**, same-assistant reconstruction.
 Select **R-N01-01/C4**, protected research60, central/high O-inclusive 70/105,
 before F14. A useful distinctive result remains required; missing novelty
 assigns recurrence or further evidence. F13 does not pass C/D or start C4.
+
+## C4 contribution and revision acceptance — October 4, 2026
+
+Contributor: **Codex (GPT-6)**. [Assessment](contribution_review.md),
+[derivation](derivations/09_c4_price_revision.md),
+[primary comparisons](literature/06_c4_contribution_comparison.md),
+[same-assistant audit](work_logs/C4_2026-10-04_S1/derivation_review.md),
+[timing and tests](work_logs/C4_2026-10-04_S1.md).
+
+| ID | Claim / evidence | Scope and limitation |
+|---|---|---|
+| C4-C01 | C4-S supports modest methodological synthesis/formal adaptation with small technical application extensions, under the author's broader criterion. | Relative to the named inspected antecedents; no worldwide priority, new foundations, speed, calibration or learned-mechanism claim. One close identifiability section was unavailable. |
+| C4-C02 | T1 classifies all numeric, within-price and cross-price linear ranks for positive price families; a nonproportional pair exposes every proper moment. | Full Boolean-law simplex, fixed reset outcomes and exact population means; terminal penalty determines access to the full-failure moment. Proportional families have separate formulas. |
+| C4-C03 | T2 constructs minimal actual-mean repair; T3 gives the lower-marginal restrictions. | Old summary already exponential; positive penalty needs k-1 additional means, reduced by known moments. Full-support fiber assumptions and zero-penalty exceptions explicit. Adaptive exact query selection does not remove the worst-case lower bound. |
+| C4-C04 | A1 gives sharp error `abs(epsilon)(2M+1)/(6(M+2))` for three unit-priced procedures; explicit attaining laws. | Unconstrained numeric outputs, M>0, exact old means, same population. Not a policy-regret lower bound; meaningful tolerance/threshold and refusal contracts separated. |
+| C4-C05 | A2 gives general equal-price global radii, a minimal contrast summary and sharp conditional intervals. | Uses established finite moment/optimal-recovery geometry; O(k^4) arithmetic computes the global radius, not an arbitrary exponential-input decode in polynomial size. |
+| C4-C06 | Separate midpoint answers may imply negative mass; a coherent law nevertheless attains the same shared radius in that witness. | Different coordinate tolerances and one common tolerance must not be conflated. No coherence penalty found in 54 exact fibers; no universal coherent-center theorem claimed. |
+| C4-C07 | A3 reduces stopped-prefix empirical repair to one empirical CDF, giving a standard DKW guarantee for later revised means. | Exact old population constraints, fixed n, iid requests, equal old prices, fixed penalty/outcomes. Deterministic reduction checked; no performed calibration study, new concentration theorem or optimal sample rate. Native admission additionally requires rational source data, feasibility witness and reachable premises. |
+| C4-C08 | Choquet representation reproduces direct reset execution and identifies established capacity methods as strong ordinary controls. | Nonnormalized coverage function; arbitrary normalized monotone capacities need not be feasible Boolean laws. Generic identification/aggregation is not the new claim. |
+| C4-C09 | 24 focused tests passed after one unexpected TypeError and bounded retry; later mixed-price test passed. Research60 met at 60.336817 minutes. | One missing exploratory SciPy dependency replaced with standard-library exact search. Logs preserved; no full-suite, CI, independent-review or hardware-cause claim. |
+
+R-N01-01 closes at the narrowed C4 contribution-selection scope. F16 may reopen
+it; C/D remain unattempted. Select **F14, unstarted, research90**, with
+central/high total engaged forecasts 105/155 minutes. Any later displacement
+of the meaningful delta assigns a named further-work/recurrence chunk.
