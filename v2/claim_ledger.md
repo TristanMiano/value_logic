@@ -1,12 +1,14 @@
 # Phase Two Claim Ledger
 
-Current status (October 4 local / October 5 UTC, 2026): **F01–F14, N01, C3 and C4
+Current status (October 4 local / October 5 UTC, 2026): **F01–F15, N01, C3 and C4
 complete at their task scopes; F14 research90 satisfied at 90.564634 minutes;
-F15 selected/unstarted, E60. C4-S supports a modest synthesis/formal adaptation
+F15 complete at frozen-challenge reporting scope, E60 satisfied at 60.090886 minutes;
+F16 selected/unstarted, fresh D60. C4-S supports a modest synthesis/formal adaptation
 with small technical application extensions relative to named inspected work;
 worldwide priority is unestablished. R-N01-01 is closed only at that narrowed
-scope and may reopen at F16.** The F14 entry below records prospective-freeze
-readiness and negative development findings separately from novelty. F07 acceptance is the explicit finite-fragment
+scope and may reopen at F16.** The F15 entry below records final application,
+neural and artifact dispositions separately from task accounting and novelty.
+The F14 entry remains prospective-freeze history. F07 acceptance is the explicit finite-fragment
 soundness theorem, not a permanent core or later gate. Gate A retains its
 foundation-readiness PASS; C/D are unattempted. The dated ledger entries and
 earlier opening below retain historical statuses.
@@ -1093,7 +1095,43 @@ preparation or final generation. Research90 is satisfied at **90.564634 minutes*
 | F14-C06 | 78 focused tests pass; an independently constructed development LP check agrees on 2,800 objectives / 100 fibers, with 5,600 solves. A fresh Git checkout with autocrlf enabled preserves all 34 frozen byte sequences. | Floating LP agreement is a development cross-check, not the exact admission rule. Transport was tested on Linux, not the Windows runtime. Broader suite: 1,638 successful cases plus two missing-PyTorch import errors; no full-suite or independent F16 pass. |
 
 F14 is complete at freeze scope with its protected floor met. No concrete freeze
-obligation remains for a named continuation. **F15 is selected and unstarted;
-F16/F17 and Gates C/D are unattempted.** A/B retain their scoped readiness passes.
+obligation remains for a named continuation. **At F14 close, F15 was selected and unstarted;
+F16/F17 and Gates C/D were unattempted.** A/B retain their scoped readiness passes.
 C4's narrowed contribution disposition persists; any later displaced or unsupported
 delta requires a named recurrence/further-work obligation, not an automatic gate pass.
+
+## F15 frozen challenge dispositions — October 5 UTC / October 4 local, 2026
+
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Scientific execution and saved-output
+analysis are complete; **E60 is satisfied at 60.090886 measured minutes**,
+with **64.915803 total engaged minutes** in the [work record](work_logs/F15_2026-10-04_S1.md).
+The [complete report](experiments/results.md) contains the exact denominators,
+all methods and controls, resource accounting, limitations and reproducible
+machine outputs. Collaborating execution, rational-arithmetic and neural
+audits are attributed F15 checks; they are not external peer review or F16.
+
+| ID | Claim / disposition and evidence | Scope and limitation |
+|---|---|---|
+| F15-C01 | **Execution complete with a documented storage exception.** F14-v1's 34-file freeze verifies at manifest `b860021d3cb26705196b75d6b13277135d0c9220c266b21e05d7d11e719b2f9c`. All five models and discovery-selected alignments were durably saved, hashed and independently reloaded before any final population. Preparation and evaluation each completed on attempt 1; no scientific retry. | Original commit `5388a3f9b0f18ad4f4e33d7e0cd04ea38f03e43e`, CPython 3.12.14, NumPy 2.3.5 and the prescribed single-thread environment. Markers and hashes document this run; they cannot prove absence of unrecorded work elsewhere. |
+| F15-C02 | **Artifact recovery exact, original damage retained.** One original redundant aggregate is zero bytes; all 160 case units are hash-valid. Their 15,833,616-byte canonical assembly exactly matches the original aggregate sidecar and is preserved separately under F15-ART-01. | Cause remains undetermined. Original aggregate and sidecar were not overwritten; there was no new population, replacement seed, model or stage rerun. Do not claim every original artifact is intact: 180/181 original JSON hashes pass. |
+| F15-C03 | **Recorded numerical admissions supported.** Across 1,920 method rows and 11,520 scalar queries: 8,624 exact, 616 approximate and 2,280 refused. Independent exact saved-output analysis reports 203,311 checks and no mismatch. | Six methods, two access panels, 16 initial-population seeds and ten revisions per seed. Variants share an initial law and are not independent replications. Supplied exact source laws and frozen queries do not establish empirical source calibration. |
+| F15-C04 | **Bounded useful-application criterion met.** Useful native derivations occur in 68 distinct revision episodes across all 16 seeds, including price and program revisions; 15 episodes contain useful selective no-reacquisition decisions whose selected cost is approximate. | This is the prospectively fixed application criterion, not a solver-speed, worldwide-priority or general decision-quality theorem. Useful decisions can coexist with refusal of other numerical queries; complete-service comparisons impose their additional quality flags. |
+| F15-C05 | **Ordinary equal-information agreement established on all 960 comparison pairs.** Fresh, cached and joint methods agree where their retained information matches; tailored and exact-interval methods agree on numerical/decision results, native targets and acquisition behavior. | Ordinary interval analysis is a strong successful baseline. Equality displaces exclusive numerical capability. It is consistent with the existing modest synthesis/application claim but does not independently establish that claim's distinctiveness. |
+| F15-C06 | **Truth, retained validity, reception and decision certification remain distinct.** There are 1,226 received comparisons and 694 insufficient results; received comparisons comprise 1,218 selected-order receipts and eight diagnostic receipts. Two certified-order rows lack the zero-budget fallback receipt. In 248 rows the full-law comparison is true but unsupported by the retained fiber. | A received fallback comparison is not an all-alternative epsilon-regret proof. The independent audit checks exact targets and saved dispositions; proof objects absent from saved output are not claimed to have undergone a second independent kernel replay. |
+| F15-C07 | **Refusal is consequential.** All 276 recorded regrets above .05 occur in refused decisions; maximum regret is 7/5. Adaptive reacquisition gives zero recorded decision regret for every method, while charging 412 repairs and the common initial source exposure. | Refusal does not certify a cost-free or optimal fallback. The quality-first acquisition policy can pay without changing the action; it is not an optimal policy for each scalar price. No CPU-to-loss conversion is invented. |
+| F15-C08 | **No general speed superiority established.** Under the admitted all-numeric/decision/selected-receipt comparison, cached proofs are slower than fresh solving in every eligible one-update case. Tailored storage is smaller than exact intervals, but complete-case timing differences are mixed. | Local single measurements, explicit access/quality contracts and complete nested accounting. Horizon results are the frozen algebraic projections `I+hU`, not observed update trajectories or optimized-cache lower bounds. |
+| F15-C09 | **Ordinary neural task readiness supported in all five models.** The 193-parameter networks used 3,840,000 binary-outcome labels, no expected-cost labels, and fixed 25,600 candidate evaluations. All five ordinary-task and all 50 conditional-base MAE criteria pass. | Conditional on this architecture, training budget and five frozen trained networks; no population-wide training-success rate or hidden modular architecture is claimed. |
+| F15-C10 | **Complete identity-cost intervention support not established: 0/5, with 4/5 required.** Of 50 identity MAE cells, two support the tolerance, 48 are inconclusive and none violates it. One near-decision cell and one required .01 random-control advantage are violated under the original simultaneous confidence family. | Failure of an upper bound to establish MAE support is not its falsification. The random-advantage violation rejects the .01 margin while its interval still includes zero; it does not establish a strictly negative advantage. These are selected-subset conclusions, not absence of every expected-cost representation. |
+| F15-C11 | **Strong matched controls limit extraction specificity.** Identity supports its required advantage in 0/10 random, 1/10 permuted-concept, 10/10 incorrect-donor and 10/10 untrained comparisons. All four high-level hypotheses have 0/5 complete support; the original 560 confidence rows are preserved. | No new hypothesis, subset, model or interval was selected after exposure. Incorrect-donor/untrained success does not waive equally budgeted random-search comparisons. Rival-specific decision margins were not matched by the identity-conditioned generator. |
+| F15-C12 | **Bounded invariance and diagnostic results reported.** All 20 transported gauges pass, maximum discrepancy 2.6645352591003757e-15. Identity role overlaps are 0,1,1,1,2; composition-order discrepancies can be nonzero. No-swap, whole-layer, decoder, adjusted-effect and unused-duplicate outcomes are explicit in the report. | Decodability is not causal use. Per-role intervention correspondence would not imply independent joint composition, ordinary causal necessity, exhaustive gauge invariance or a unique absolute utility scale. The repeated unused-duplicate fixture is calibration, not five learned replications. |
+| F15-C13 | **C4-S retains its bounded supported disposition.** Type: modest methodological synthesis/formal adaptation with small technical application extensions; delta: the already specified price-family retention, repair and approximation consequences integrated with source/consumer/reception contracts. F15 adds a controlled finite application. | Comparison is to named inspected antecedents; worldwide priority and the unavailable close technical section remain unresolved. The neural negative result is not independently established as a novel finding. No new general foundations, speed advantage or learned unique utility representation is supported. |
+| F15-C14 | **Verification and task completion are separate from gates.** The unchanged Linux focused suite has 78 passes. Prior Windows CRLF differences, three native access violations and the separate deterministic path-portability test defect remain recorded without a hardware diagnosis or frozen edit. | No new full-repository or Windows pass. A/B retain their scoped passes; F16, F17 and Gates C/D remain unattempted. E60 and administrative closure are recorded separately from scientific outcomes. |
+| F15-C15 | **Optional joint-information diagnostic.** Eleven episodes permit a certified decision although independent rectangles of the saved scalar intervals cannot certify any action at the same .05 tolerance; eight are useful-native episodes. All 13,440 rectangular action regrets are independently reproduced by box-corner enumeration. | Post-exposure descriptive calculation from saved rows only, not a new registered comparator or confidence family. Tailored and ordinary exact-interval methods give identical results. This illustrates established joint-information reasoning and does not independently establish novelty. |
+
+F16 is the recommended next task, with a fresh D60 and its own mode/lane
+forecast at start. Its precise targets are the source/consumer/reception
+arguments, the strongest ordinary combined baseline, and the exact bounded
+C4-S delta. If that meaningful difference is displaced, reopen R-N01-01 with
+an explicit 60/90-minute evidence target. A proposed 90-minute jointly
+uncertain-source acquisition chunk would expand the exact-source application
+and its defense together; it remains unstarted. F15 does not pass C/D.

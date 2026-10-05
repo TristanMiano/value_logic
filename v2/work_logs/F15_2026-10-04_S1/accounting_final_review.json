@@ -1,0 +1,242 @@
+{
+  "E_floor_excess_nanoseconds": 5453176091,
+  "E_floor_excess_seconds": "5.453176091",
+  "accounted_nanoseconds": {
+    "D": 0,
+    "E": 3605453176091,
+    "L": 0,
+    "O": 289495001776,
+    "recovery": 1344065278823,
+    "wait": 13119968039
+  },
+  "accounting_transfers": [
+    {
+      "from": "E",
+      "ns": 1001546273,
+      "reason": "wait",
+      "start_monotonic_ns": 23847031334311,
+      "to": "wait"
+    },
+    {
+      "from": "E",
+      "ns": 303520361188,
+      "reason": "recovery",
+      "start_monotonic_ns": 23314488348034,
+      "to": "recovery"
+    },
+    {
+      "from": "E",
+      "ns": 386439228062,
+      "reason": "recovery",
+      "start_monotonic_ns": 23847031334311,
+      "to": "recovery"
+    },
+    {
+      "from": "E",
+      "ns": 425083064484,
+      "reason": "recovery",
+      "start_monotonic_ns": 26351400554989,
+      "to": "recovery"
+    },
+    {
+      "from": "E",
+      "ns": 116019604297,
+      "reason": "reclassification",
+      "start_monotonic_ns": 24784878233925,
+      "to": "O"
+    },
+    {
+      "from": "wait",
+      "ns": 229022625089,
+      "reason": "explicit_recovery_segment",
+      "start_monotonic_ns": 23618008709222,
+      "to": "recovery"
+    }
+  ],
+  "append": {
+    "bytes": 14275,
+    "rows": 43,
+    "sha256": "2af989da6296e077ef3afe6826ddc2aadbd08f487715eec0e0d93842daa8dd3d"
+  },
+  "audited_utc": "2026-10-05T05:14:09.445650+00:00",
+  "checks": {
+    "E60_integer_floor": 1,
+    "bound_exclusion": 4,
+    "bound_reclassification": 1,
+    "checkpoint_remainder": 1,
+    "closed_state": 1,
+    "contiguous_nonoverlap": 42,
+    "cumulative_close": 1,
+    "cumulative_entry": 1,
+    "cutoff": 1,
+    "duration": 43,
+    "elapsed_serialization": 43,
+    "endpoint_replay": 43,
+    "exact_wall_conservation": 1,
+    "exclusion_resolution": 4,
+    "explicit_stop": 1,
+    "finalizer_output_binding": 1,
+    "forecast_preserved": 1,
+    "historical_prefix": 1,
+    "historical_rows": 1,
+    "independent_lanes": 1,
+    "independent_totals": 1,
+    "inherited_overshoot": 1,
+    "intent_append": 1,
+    "lane_conservation": 1,
+    "minute_serialization": 8,
+    "monotonic_events": 1,
+    "no_finalizer_retry": 1,
+    "no_parallel_credit": 1,
+    "no_reset": 1,
+    "nonnegative_remaining": 1,
+    "output_sidecar": 3,
+    "post_cutoff_administration": 1,
+    "raw_input_preserved": 9,
+    "raw_reclassification": 1,
+    "raw_research_lane": 27,
+    "raw_transition": 43,
+    "recovery_binding": 3,
+    "row_conservation": 43,
+    "row_count": 1,
+    "row_credit": 43,
+    "row_elapsed": 43,
+    "row_endpoints": 43,
+    "row_mode_lane": 43,
+    "row_nonnegative": 43,
+    "row_recovery": 43,
+    "row_task": 1,
+    "row_wait": 43,
+    "runtime": 43,
+    "single_launcher_success": 1,
+    "source_preserved": 1,
+    "state_replay": 43,
+    "transition_count": 1,
+    "unique_segments": 43
+  },
+  "checks_total": 775,
+  "contributor": "delegated ChatGPT (GPT-6 Astra Pro), execution audit",
+  "current_ledger": {
+    "bytes": 217776,
+    "rows": 949,
+    "sha256": "44c93cc930fdea2d588f663688e71615a84b32f98517eadd4bab3943efa154bd"
+  },
+  "cutoff_utc": "2026-10-05T05:09:37.119388+00:00",
+  "engaged_minutes_decimal": "64.91580296445",
+  "historical_ledger": {
+    "bytes": 203501,
+    "rows": 906,
+    "sha256": "7f777f89e0aff82d58752d0b1774c30e015fe9f3dbbf4faa1caae9b35c49988f"
+  },
+  "input_manifest": {
+    "v2/time_ledger.csv": {
+      "bytes": 217776,
+      "sha256": "44c93cc930fdea2d588f663688e71615a84b32f98517eadd4bab3943efa154bd"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/actuals.json": {
+      "bytes": 41201,
+      "sha256": "4633b7fdaee65831ed5f58ba36767453e125fd122ff8de89d4d0f3a359eb29ec"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/actuals.json.sha256": {
+      "bytes": 65,
+      "sha256": "673bf4c5cee3c2304ea999c88a2c77174aff943e0f080bcf78a20deed3bd1593"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/adjustments.jsonl": {
+      "bytes": 236,
+      "sha256": "952674b0efd1338471f159ad65939d4e994188c32b4ab4d4f319c53a50753b28"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/clock.py": {
+      "bytes": 4486,
+      "sha256": "43a35a02b86cfc10d9357e19d82a02e374a180618f475dc72dbcf2f11092b5cf"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/clock_state.json": {
+      "bytes": 5,
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/clocks.jsonl": {
+      "bytes": 12573,
+      "sha256": "7aeb60fc5ecc4d10247b1329e44fbaf2cc5a9a5dee684309a14445c11e254c3d"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/commands/finalize_accounting_attempt1.end.json": {
+      "bytes": 977,
+      "sha256": "41b2204251c50427d7ef6740f81b5c0c8cb7482b94b67dd31a899b423947a917"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/finalization_intent.json": {
+      "bytes": 61046,
+      "sha256": "63dcf359aab6fe12fc309b5eabcb5e153143353fd21bd11e0ff76bbc1a112bc1"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/finalization_intent.json.sha256": {
+      "bytes": 65,
+      "sha256": "4f019294bc4e203764398cc4546ead6cfb1abc1782b1a2555a07b65269043bb3"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/forecast.json": {
+      "bytes": 1583,
+      "sha256": "415041ebd29375da25919f3a281a7414b2b61ace613b818d3101d92da06b5b0f"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/ledger_baseline.json": {
+      "bytes": 141,
+      "sha256": "a90dc56a755fbb201ae32696864cb77ac37b63ed182b11a786060a8eaa96053f"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/ledger_integrity.json": {
+      "bytes": 2917,
+      "sha256": "d672c96a9972c4e6de378af3e22421012957271845865e0d329965ecbfb295f7"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/ledger_integrity.json.sha256": {
+      "bytes": 65,
+      "sha256": "0c7824be6733e1915cae4a4a3a9a3b2e226ac9f5241aa05f2943d2844bbdac2d"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/mode_reclassifications.jsonl": {
+      "bytes": 506,
+      "sha256": "077cc9772719af61b7a91b88f771bac5827745b81952fa32e3b0c0a305376435"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/recovery_exclusions.jsonl": {
+      "bytes": 1735,
+      "sha256": "88d2666ac2c0bfc789c4803debe9cd2367f97c94e60d91e1f5c0abca185a879f"
+    },
+    "v2/work_logs/F15_2026-10-04_S1/segments.jsonl": {
+      "bytes": 15841,
+      "sha256": "d5491f8f3f1525775ffe383d3243519d37194b0127f0c425e902ba02e728ccff"
+    }
+  },
+  "lane_nanoseconds": {
+    "R": 1518078799527,
+    "X": 2087374376564
+  },
+  "limitation": "Observed timestamps and operator classifications are audited as preserved records; no independent historical activity trace, unrecorded interruption duration, or scientific/contribution gate pass is inferred.",
+  "method": "Sum original raw-mode durations from integer endpoints, transfer explicit exclusions/reclassifications between mode totals, and independently sum and inspect all appended CSV rows.",
+  "minutes_decimal": {
+    "D": "0",
+    "E": "60.09088626818333333333333333",
+    "L": "0",
+    "O": "4.824916696266666666666666667",
+    "recovery": "22.40108798038333333333333333",
+    "wait": "0.2186661339833333333333333333"
+  },
+  "normalizations": [
+    {
+      "delta_seconds": "-4E-14",
+      "kind": "recovery",
+      "normalized_ns": 386439228062,
+      "raw_seconds": "386.43922806200004",
+      "start_monotonic_ns": 23847031334311
+    }
+  ],
+  "passed": true,
+  "post_b_1_close_minutes": "701.64299296445",
+  "post_b_1_entry_minutes": "636.727190",
+  "principal_minutes_added": 0,
+  "raw_mode_nanoseconds": {
+    "D": 0,
+    "E": 4837516980395,
+    "L": 0,
+    "O": 173475397479,
+    "recovery": 0,
+    "wait": 241141046855
+  },
+  "remaining_to_sixteen_hours_minutes": "258.35700703555",
+  "research_minutes_decimal": "60.09088626818333333333333333",
+  "review_script_sha256": "07e539064bee517714e62417cf5fc4ac3fe9d90873a2320f76ea02b31917a6ba",
+  "schema": "F15-independent-final-accounting-review-v1",
+  "scope": "Saved raw-record arithmetic and ledger integrity; no clock command, serializer execution, experiment, or historical mutation.",
+  "wall_nanoseconds": 5252133424729
+}

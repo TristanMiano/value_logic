@@ -1,0 +1,440 @@
+{
+  "checks": {
+    "acquisition_table": 12,
+    "all_source_charge_table": 36,
+    "horizon_table": 20,
+    "outcome_table": 60,
+    "storage_table": 24,
+    "time_table": 36,
+    "useful_episode_table": 5
+  },
+  "contributor": "delegated ChatGPT (GPT-6 Astra Pro), F15 retention report review",
+  "errors": [],
+  "horizon_reconstruction": [
+    {
+      "access": "no_reacquisition",
+      "eligible": 98,
+      "eventual_crossings_all": 7,
+      "method": "cached_proof",
+      "wins": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "access": "no_reacquisition",
+      "eligible": 98,
+      "eventual_crossings_all": 81,
+      "method": "full_joint",
+      "wins": [
+        44,
+        44,
+        44,
+        44
+      ]
+    },
+    {
+      "access": "no_reacquisition",
+      "eligible": 28,
+      "eventual_crossings_all": 34,
+      "method": "tailored",
+      "wins": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "access": "no_reacquisition",
+      "eligible": 28,
+      "eventual_crossings_all": 42,
+      "method": "exact_intervals",
+      "wins": [
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "access": "no_reacquisition",
+      "eligible": 0,
+      "eventual_crossings_all": 111,
+      "method": "marginal_diagnostic",
+      "wins": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "eligible": 126,
+      "eventual_crossings_all": 1,
+      "method": "cached_proof",
+      "wins": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "eligible": 126,
+      "eventual_crossings_all": 73,
+      "method": "full_joint",
+      "wins": [
+        53,
+        53,
+        53,
+        52
+      ]
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "eligible": 95,
+      "eventual_crossings_all": 21,
+      "method": "tailored",
+      "wins": [
+        15,
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "eligible": 95,
+      "eventual_crossings_all": 17,
+      "method": "exact_intervals",
+      "wins": [
+        13,
+        13,
+        13,
+        13
+      ]
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "eligible": 126,
+      "eventual_crossings_all": 19,
+      "method": "marginal_diagnostic",
+      "wins": [
+        20,
+        19,
+        19,
+        19
+      ]
+    }
+  ],
+  "new_generation": false,
+  "original_outputs_modified": false,
+  "paired_acquisition_reconstruction": [
+    {
+      "acquiring": 32,
+      "already_certified": 0,
+      "method": "fresh",
+      "net_wins": {
+        "0": 27,
+        "1/2": 0,
+        "1/20": 16
+      },
+      "zero_benefit": 5
+    },
+    {
+      "acquiring": 32,
+      "already_certified": 0,
+      "method": "cached_proof",
+      "net_wins": {
+        "0": 27,
+        "1/2": 0,
+        "1/20": 16
+      },
+      "zero_benefit": 5
+    },
+    {
+      "acquiring": 32,
+      "already_certified": 0,
+      "method": "full_joint",
+      "net_wins": {
+        "0": 27,
+        "1/2": 0,
+        "1/20": 16
+      },
+      "zero_benefit": 5
+    },
+    {
+      "acquiring": 78,
+      "already_certified": 32,
+      "method": "tailored",
+      "net_wins": {
+        "0": 40,
+        "1/2": 0,
+        "1/20": 21
+      },
+      "zero_benefit": 38
+    },
+    {
+      "acquiring": 78,
+      "already_certified": 32,
+      "method": "exact_intervals",
+      "net_wins": {
+        "0": 40,
+        "1/2": 0,
+        "1/20": 21
+      },
+      "zero_benefit": 38
+    },
+    {
+      "acquiring": 160,
+      "already_certified": 16,
+      "method": "marginal_diagnostic",
+      "net_wins": {
+        "0": 125,
+        "1/2": 0,
+        "1/20": 75
+      },
+      "zero_benefit": 35
+    }
+  ],
+  "paired_time_reconstruction": [
+    {
+      "access": "no_reacquisition",
+      "baseline": "fresh",
+      "eligible": 98,
+      "mean_arithmetic_difference_ms": 0.02066557142857143,
+      "mean_complete_case_difference_ms": 81.11325385714285,
+      "method": "cached_proof",
+      "strict_wins": 0
+    },
+    {
+      "access": "no_reacquisition",
+      "baseline": "exact_intervals",
+      "eligible": 59,
+      "mean_arithmetic_difference_ms": -0.4022301525423729,
+      "mean_complete_case_difference_ms": 1.5642148474576272,
+      "method": "tailored",
+      "strict_wins": 28
+    },
+    {
+      "access": "no_reacquisition",
+      "baseline": "fresh",
+      "eligible": 98,
+      "mean_arithmetic_difference_ms": 0.07473158163265306,
+      "mean_complete_case_difference_ms": -0.4399402244897959,
+      "method": "full_joint",
+      "strict_wins": 44
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "baseline": "fresh",
+      "eligible": 126,
+      "mean_arithmetic_difference_ms": 0.031437015873015874,
+      "mean_complete_case_difference_ms": 77.07973422222223,
+      "method": "cached_proof",
+      "strict_wins": 0
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "baseline": "exact_intervals",
+      "eligible": 126,
+      "mean_arithmetic_difference_ms": 0.06936010317460317,
+      "mean_complete_case_difference_ms": 0.6954300476190476,
+      "method": "tailored",
+      "strict_wins": 67
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "baseline": "fresh",
+      "eligible": 126,
+      "mean_arithmetic_difference_ms": 0.08885605555555555,
+      "mean_complete_case_difference_ms": 0.7763999603174603,
+      "method": "full_joint",
+      "strict_wins": 53
+    }
+  ],
+  "passed": true,
+  "report_sha256": "ef97ee03d02d946896f9fa46f7373cf46bba0b5a57693ce3685f8b826a752ada",
+  "section_3_4_sha256": "8d22a781f7557be111ee08263bd9aa85ebb35187065e10054de96ed82884df0a",
+  "source_case_sha256": {
+    "retention_15101_known_marginals.json": "b258f343a7f3b269c0c6d38c46ca5853e6b18ac58187ab380a557c1e6a1b420a",
+    "retention_15101_large_negative_price.json": "821de4b6055a0b0f97fca1a60c694ed6e21919721138db0f377f0845efcea224",
+    "retention_15101_large_price.json": "8df1565f20cf2103b1129d5e9e637a5a8ddf1064a3847b8d43b557aac245dc0d",
+    "retention_15101_program_edit.json": "049a803d9f41e908f0d62781ade75b6290ffb72716fc06235c552f31696ebd5b",
+    "retention_15101_proportional.json": "461a0122c86743ac6800024ef901d51983a806e32d6f71dfca05a2d719453655",
+    "retention_15101_small_negative_price.json": "f0833c4f7b5e6dcecf6c27db5ab148bc8a610af14a868705154e846c049b5b0c",
+    "retention_15101_small_price.json": "aef466d988439224922439ae9ac8fa12653f37059379ed911d7b6c071bbb4ec7",
+    "retention_15101_source_drift.json": "ac254b8b0db3c62e4b1532de21521537f9aa9f10f4ed2d74c88618b5d59966e6",
+    "retention_15101_unchanged.json": "7bf405b28f2480fff2ae1bb9e6a726cf2b6088e93a87db1460a0f10d6beb86d0",
+    "retention_15101_withdrawal.json": "117b665a701c3495dc46ceb44157f69e5ebe10b3d9e50597d8bed0d630a47d41",
+    "retention_15102_known_marginals.json": "038639a6e6f755c72600aa8852d33ef107ff16f19dc9c396b491edbfb6a598a7",
+    "retention_15102_large_negative_price.json": "974d6ecd1c0b76d4e72c9717a7c98b1243215a2749de424ec5b131858cf720f8",
+    "retention_15102_large_price.json": "96c74fd44768c6a6b3c0369c37e2e19931006b98126b14f03b5f40567414dd25",
+    "retention_15102_program_edit.json": "3a8a2523d3309b9dc5fef5ad15b30efd0c87c5c328e913243c0d51071170cd22",
+    "retention_15102_proportional.json": "5859bfe833667809a4e9244f7540f250350aa8e8e8bdad2fb424cc507c21bc6d",
+    "retention_15102_small_negative_price.json": "943551c75afad47145cf34d8bf05583e47ae9a188c7563fcd997aeedb44816c0",
+    "retention_15102_small_price.json": "c71a8b437842993b07dfd685fc7a240d50634ef7d5de74885f9cfc2b06630f52",
+    "retention_15102_source_drift.json": "ba53a13003359ca944cfa7e4af2e20671bc261291bb65867c7282c397df763f4",
+    "retention_15102_unchanged.json": "1c77f1a0cc5a8afcc331fc5ff644a4ee68c4aff43c62e24d77584f5c07b61752",
+    "retention_15102_withdrawal.json": "84f5ae40d14dc57a06094be808e60342176df48160b2957b0d99c4a8943dad84",
+    "retention_15103_known_marginals.json": "0aa3fc8aabdb36cbb2d6cd56db72cf7269dcf23fdd8c277f6508049eaf6ebbae",
+    "retention_15103_large_negative_price.json": "714d557993f0d767fbcd1d0534bb1efeebdc88f3dae15e6a2a47751dbcd4de05",
+    "retention_15103_large_price.json": "76432bd96b72fb346e68973786d4a7c8cdad0ee43781f5fd11f30fa27418a5bf",
+    "retention_15103_program_edit.json": "ddd61a7feaadb3423c418ecfb8e518c11eb3bbd0afb7816635d73df45fcaaf97",
+    "retention_15103_proportional.json": "81002ea588070727377b43d70dbce836981c712980712654284755ae080ad8f3",
+    "retention_15103_small_negative_price.json": "7b6de982ecbfd029b6b4c57d87d2baa6bdda803fc8d25456c2853a06d96904ff",
+    "retention_15103_small_price.json": "047297181dacf41054587aa927f47bb6de6bec22da1ca5b3d8aeafeb61886652",
+    "retention_15103_source_drift.json": "126618879584cd1a7162ffca9ec82af64e024d7670727e8f30f627467fa5995a",
+    "retention_15103_unchanged.json": "48a56fab3f913da39d35d355562735160e700edb0c317f648a7f073ee6bcb2fb",
+    "retention_15103_withdrawal.json": "b0c44352cfe5ed2278f2811ed785f04d24fe11fa5ca81d9480190c3ef1500656",
+    "retention_15104_known_marginals.json": "d5cee32ded8dc1b90e88e12764e29ae6e63f6315f127124c46c95606383c00be",
+    "retention_15104_large_negative_price.json": "e5a307e729b92358f7ea7a7bd865bcf306911854ec16b22b19d7e47cf3b78c0b",
+    "retention_15104_large_price.json": "02503d5daa8533e5fb7041d6c15449193c4e23f9a6e7f250fcebe76593a88288",
+    "retention_15104_program_edit.json": "6b58394eb9383f90a06c7761b84a561fdc282677eb3bf3bc167c526c675fc52a",
+    "retention_15104_proportional.json": "b030f9afde37d35be2c8472abd6112ab596c00978393d79559fb73441d7d6106",
+    "retention_15104_small_negative_price.json": "49a2bd54707380aacdcdd22539aaef1713238f92ff5284e3d325efb0c2d724f7",
+    "retention_15104_small_price.json": "15cd96ada8ff999bf00de8cfe286e3c5d432047c78bd098d758c2a22eb9c5c92",
+    "retention_15104_source_drift.json": "00c1156120fc8967efb7e90b4444fbbbdca2f43f2555bfec7ece2e6190ca3a36",
+    "retention_15104_unchanged.json": "fd36080f55d025124199e75bd96e9c69020546b9d763f94450d78d1d6f537174",
+    "retention_15104_withdrawal.json": "e88468cfb7f461ac3e0cdfde5921175cec58683d3d8b1dd87d9d4c9906bf8b71",
+    "retention_15105_known_marginals.json": "b38c9c956f6466db50f32063c2543ed67e80afffdd53216a59f76579cbc552de",
+    "retention_15105_large_negative_price.json": "d63e3c4052871be827d574c9b783dfcb380456f56c82771d17003bb5edff5608",
+    "retention_15105_large_price.json": "2806c5ea500a1c65a34e86473734af25824189dd836c3bd5e53b83beb47ad0ae",
+    "retention_15105_program_edit.json": "efa8d28c1c31ff7d1df54b41fc01e5c2537ea04971d705989c455733c360b37b",
+    "retention_15105_proportional.json": "056932d68993e9b9cd566292b00a5fa8d9b2f7d9062b71014d75b8f18cb10997",
+    "retention_15105_small_negative_price.json": "d0ed5082c2c237cb1bde8dbef5cfab44851fd03ab1a621bfe65425df14590b8e",
+    "retention_15105_small_price.json": "b6ac73fe02afd538eac25dbc84bf834102f9df901e521c074f2e4c51942974ce",
+    "retention_15105_source_drift.json": "467cb34f3eaa06f232a12454cbf7589658b06b8375acbaf21aacc8bcc41231b4",
+    "retention_15105_unchanged.json": "51518da1861c29136052855219bf3bc26d7384680700cf2c2250a8d24f8d2877",
+    "retention_15105_withdrawal.json": "77ec053be534a07ec5cd78ce539d0360dbfad677bc7ddeebad3837a1cc45ffdb",
+    "retention_15106_known_marginals.json": "066bd038ebba098083109bb8c5db7b16be8e2ae04a3d4937409d45c022bbcc0f",
+    "retention_15106_large_negative_price.json": "272d061042ff07b81f42276c9f6ef69b8f2d88826401b46694a3c858c43d9809",
+    "retention_15106_large_price.json": "de697a282c1a46fddea7bbe8d72a3691f3e62c222639df71131af05e7a951d57",
+    "retention_15106_program_edit.json": "4ae4d937faad0e5ea33cae751a5083de18fdaf1f87d2a1d1d87a40e7ce1e98f3",
+    "retention_15106_proportional.json": "50361d3cef18badee2d0aaea3e45f9df0673f300282af99d15cc9c1bd79340a4",
+    "retention_15106_small_negative_price.json": "9005ec3829ff4226eac5166ed7423e2a964400fa47837e3560d22bb095e1ee5a",
+    "retention_15106_small_price.json": "3536c750479e4945c76af385c7124f6cb9d791696542d05759ef328abcdb4a5c",
+    "retention_15106_source_drift.json": "698a0cdcf5b7c91cb3493e31c1ba23b98f282ff558255df31bc268a5c05a3131",
+    "retention_15106_unchanged.json": "fe4ea589ce27808ed37ec829480e7ad6859c0d829a67e597ff6b572ec655947b",
+    "retention_15106_withdrawal.json": "0d464fcf303b67f9de33244e0c866d0b91b054c63eae2760be15a602de86d0f0",
+    "retention_15107_known_marginals.json": "18788220a662f9f819ff6e293c963f7161caad5bd753d57f70435ec41df60061",
+    "retention_15107_large_negative_price.json": "7a1139e11cea501445a4d3d6dd0bd737d878a18806f7ef0b128941366b60935d",
+    "retention_15107_large_price.json": "a37355166a112232acf5bd6c5b60656dd6b49e615e46d88e28960e258795f2d0",
+    "retention_15107_program_edit.json": "019e86e0c95b2efb195107fbcb239e7ad342e50219d545e698f0ccf3671b091f",
+    "retention_15107_proportional.json": "39baedd44678186598175a0b2b9b85a2c0fe0f6b60adf765be64e6eef035d9eb",
+    "retention_15107_small_negative_price.json": "f331ac5dc41dc068a8d0e4dfcfb96ea089b35ae622cbca9ddb38c59bf133496b",
+    "retention_15107_small_price.json": "b2a0cbb02c992363761647bde96059ec3d2f8e45444e5520cb7c308739674dc8",
+    "retention_15107_source_drift.json": "ddd61fd633a2f2c52308609cf34e8428cfb8d0ac33409e53361450be95127f2c",
+    "retention_15107_unchanged.json": "23ee99be6c45d080b2d8d128f94a6020db16e6d5fc76421f5003ac75066bd060",
+    "retention_15107_withdrawal.json": "76a766c9724a333725ab313f27cf8e82b4be2ceab5f94eeab39c2362f2314afb",
+    "retention_15108_known_marginals.json": "8382e01e29c775d01102a82a925edbfe5bcfda405d09abda22161cfde4a66c68",
+    "retention_15108_large_negative_price.json": "8408eca54270719d5a6d65a356c604a7fefdaad508ba0077fab57755a6ba40bb",
+    "retention_15108_large_price.json": "383e834e52c0eaf58db22809381784d346b86fdd5c6f00f9ae122cb61667f9ca",
+    "retention_15108_program_edit.json": "ef97bc3912e379e134bb4478ab1a745aa480188497726abf0958f2c414c8cedc",
+    "retention_15108_proportional.json": "d6def335c26c16160b2886b3354616494a7416fcfdda279eacee64ec1ffb352f",
+    "retention_15108_small_negative_price.json": "18b9257e883aafe126c9327a89591e19be212e5f6cf2f965b9b1387e86223048",
+    "retention_15108_small_price.json": "8baee50dda55f664556149d776957f481db18d22556d3ff5448afdde4687ca2e",
+    "retention_15108_source_drift.json": "8bb15d6465247e80e5c867d848619c47df9f11daeba4d27ac02a8a04eff1a30b",
+    "retention_15108_unchanged.json": "556dce4dd05c84990a9775b21d5d53908ac545d04c147b7bb7efdd111d2a583d",
+    "retention_15108_withdrawal.json": "c7db7caf629cef974c1ab17dccd95f180179ddc4796b24120adf82ccd0e91aae",
+    "retention_15109_known_marginals.json": "c9a8354d6476afc2dd65d11fd34f90614198f1bd1283651294b086f715ad9588",
+    "retention_15109_large_negative_price.json": "41f21340c5151827c8238b2a27242da86333f374c8ab1a70b685edffee50b36e",
+    "retention_15109_large_price.json": "ddb88db3450813bf3fdc70bf36f539718252d215cce93c6cc1b382bf56a78454",
+    "retention_15109_program_edit.json": "48df2d9b8b6b32d29b7ee94dc17d92ffaee194afe0501941a8f5292e1a3c5eb4",
+    "retention_15109_proportional.json": "abf324b6d7f13fb2f8c1b7e103e58b2601cbb3b44b82bfa575e33626f935f644",
+    "retention_15109_small_negative_price.json": "b83a88cac12ac269a68a672dc061a11f149f0c65eb821732773e215a4f033f12",
+    "retention_15109_small_price.json": "04f4f9864ecabe8efba2ed0685b48fa7540a9d0718d1d6fd8beac60cb08def48",
+    "retention_15109_source_drift.json": "4ea9f51e96632c545009b49bb131db9d50132702ae99ca04c321a726a6d28a86",
+    "retention_15109_unchanged.json": "679e90906f2ad7bee5e6bd140d38f32a6b23e66db9ab42af13724dd32435c82c",
+    "retention_15109_withdrawal.json": "7831ccf9127e01210bcfc723e1dafb0f5ab50a5f80c9a6f542fb116669e87fe5",
+    "retention_15110_known_marginals.json": "603d67b23217a093e136aabb7f18fdf80b8e6fa9096fa9a0694ec5d9de2cb67b",
+    "retention_15110_large_negative_price.json": "efa995d165e15668d2b74a77feeb645009b4fa31afb19b075e877ba95eda379c",
+    "retention_15110_large_price.json": "64e2ea956837ec31a87ae4d025d2ac0019cfcfeb53a2bfabe11e79f94d20d37b",
+    "retention_15110_program_edit.json": "2583eafdda6e497b288b5e648b364871ec1b03eb76fa96be415af6d09cb8aa8f",
+    "retention_15110_proportional.json": "aeb54a935b8eac322f11a28ed741507bee3a0103cb9bd9a6e06996176745cf4a",
+    "retention_15110_small_negative_price.json": "37554caf03ea93c6cf88bde2f3275fbc9a11d682cf34a415e64b013fd82f1997",
+    "retention_15110_small_price.json": "d1c8d8939bebd728766167251250ba7c06a4f55e88088bb0f512ad9e0eba8bf1",
+    "retention_15110_source_drift.json": "06287f187f78caf41d3f1285496383d0356c6ffcf854a937758c70bc61a365ac",
+    "retention_15110_unchanged.json": "3586d8eeb3693746d41fddbcca1c6964a92abaa5b30fcd85bd6ddce3e83219e4",
+    "retention_15110_withdrawal.json": "92c694ac2d3528f3820f8269ebbd8d3f136a1fb857cf42017c4f9a06a90e7584",
+    "retention_15111_known_marginals.json": "ade8b9e8180e761cae480c502932dc9265ffa48a1430557002902a7c4279b57f",
+    "retention_15111_large_negative_price.json": "ac4940ba7ec53a45d9bc05934540faf463802c16a5d575038cd14f944f08536b",
+    "retention_15111_large_price.json": "bec36e217cc69d2b26bdb4887e7d852110a06b7eb20f943fe60e218f339afdb3",
+    "retention_15111_program_edit.json": "5bdd958a71f109638b0c24406b35ec02221213b22c8d93b8301602ad7ecbbe66",
+    "retention_15111_proportional.json": "a4d8f153cbe28b0af134fafebb1c0b6579c16ddf0c92fc0ec6746da4c5be81b4",
+    "retention_15111_small_negative_price.json": "39e26db169116d985bf1c086e31de7a98b301719f8da91aebffd259d17d93520",
+    "retention_15111_small_price.json": "d76a7e8f97d3bb7880578432b877874a3f2b764d37c6c5b33dd34605091dbec1",
+    "retention_15111_source_drift.json": "1e8407061b018cb41626d6d4a8d2f54830d2d9630dd8fff3b4b10f4c5144bb11",
+    "retention_15111_unchanged.json": "f3ac6e9ecd95bc5302ffb3fcf23fb05ab1d9b1bafe42e7eab652fe811501ab22",
+    "retention_15111_withdrawal.json": "9da4791ba337738cccde35d5df953ca35854a588ccbb9f5590d72ca560ed5b2d",
+    "retention_15112_known_marginals.json": "311831d4250c0bca9a1c3e51aac141e4e9a16b48c68d770036d325c01203b8c1",
+    "retention_15112_large_negative_price.json": "3663c8ab118ceab9b4194699b19cf2efb3f6eb3c68ec2571a36285ab00d71052",
+    "retention_15112_large_price.json": "92f7a4cbbddc78d848c4fdaab7d3fd68af197c022e112408d422878e0d4c465b",
+    "retention_15112_program_edit.json": "918160416ac03fe8cac9d6c8bf8d4437159ffa7d2ca7e651938219adece3fc42",
+    "retention_15112_proportional.json": "8e61f2e7f34400d4f0ad77d332694c6c788c9525776c1c545510bfd631c3623b",
+    "retention_15112_small_negative_price.json": "d3ee985dd86e8a3c79af2c988fc419e9c6bce62033c0a228851bc51b21b84532",
+    "retention_15112_small_price.json": "e9bf395ef224c93f4ee507091b9139faefa7cb848ed8f93d90a19c2dab3fe348",
+    "retention_15112_source_drift.json": "b1f835b42675bf2b2543b9b06c53156371713d699456e80a09cc0ea3c0091127",
+    "retention_15112_unchanged.json": "4a130743c6ea4e637ad2dd8387c32b9dd2cc4facb2a9dac4c40a2a47b998a9b4",
+    "retention_15112_withdrawal.json": "2757470aa89060cb024e40f7667b1baaaff67ff09c915c92e86215df736f16bb",
+    "retention_15113_known_marginals.json": "cc2958d7d1693a35311f4242d5dec43ddbec3656ee390353323d93f6652c58e5",
+    "retention_15113_large_negative_price.json": "943b025b486216108ac9c9017b1b9aa379bda35254610db2479f5b8275148631",
+    "retention_15113_large_price.json": "81e2ea02a7807b3281acac068f8d47dcab3ec56f7eb18217fb4ca673c998865e",
+    "retention_15113_program_edit.json": "82a661a918a0dd421e70cb33fa6b89f1fa05d088a6d70da04832d78c6c7e331f",
+    "retention_15113_proportional.json": "26a48c942ee3affd7ea0fb18d0ea328294eb6133a8490fb503d455f56b8bcbec",
+    "retention_15113_small_negative_price.json": "a7f95f591df137e231b6606ef549e724a4d5df44bd1d8fc5661bf652708454f6",
+    "retention_15113_small_price.json": "556161f88daa68d6b97e1cdb66c3a59ef441e90166cb26a1e187a07898c7109e",
+    "retention_15113_source_drift.json": "9b5c8b45f32d0420ca41c5093ff5d6e37042e8c1615507085600ab0caf0303ec",
+    "retention_15113_unchanged.json": "decccc1b9bd516565dffadd93b73d8de46b2d8f3271043c6aaed2d8d9300f8b2",
+    "retention_15113_withdrawal.json": "db51590f1cf597c0212d4de3e1699bfc1a53173bb6304660f0c73fe0d9854625",
+    "retention_15114_known_marginals.json": "9117b559c3a3578fd7b34a19cd0782f5cf9a632bf58c1b2828011caf7c4145f2",
+    "retention_15114_large_negative_price.json": "3bb37f3676cdd10863a5293f81589774ec56ea4cc65ec4e29e6bbfe1a7aee91b",
+    "retention_15114_large_price.json": "ad22aa4d8fbe30fe744b312ac4d7db7114df57f77bbb08e310217c014b7ebb85",
+    "retention_15114_program_edit.json": "7e64042aae98ca775791970202f51dc1aa924d056032c7dc93c4e77236923427",
+    "retention_15114_proportional.json": "a0b7efd554bb2dc31c5df496277eb5c6b10b52943ecb3db3c0df42cdc11e7bd2",
+    "retention_15114_small_negative_price.json": "695ace908444162255819350b95eec9cb33b04bf6aa8e10f35353b28e4ab2c24",
+    "retention_15114_small_price.json": "cfdb7ff4c57e9e83e2e16d42473732b468ef78540cddafd5e5bd4efeeb6d40a5",
+    "retention_15114_source_drift.json": "e231a9e24e8dd665d530af9853161dd295920f2236a1549ee423f809bf1608fd",
+    "retention_15114_unchanged.json": "50b59cba2424ba81dc3e334ff3247f1d8e716af0a93a9ac850362883ec85e9df",
+    "retention_15114_withdrawal.json": "cc6cfd2f07dc814623d32c2bc1f61491f639145270b6d1cf6754916768eb32ca",
+    "retention_15115_known_marginals.json": "71ecad3eb3cb438a8bee00984d0ba68b52a46544541aa6f13d08e909738794d9",
+    "retention_15115_large_negative_price.json": "6acefe28ea2ac0db69961811017edb7ec133b0ead07214dfb44b3cda4bf53c44",
+    "retention_15115_large_price.json": "d15bc7d31139dc09132d40195b30f6b9bcf054684249f9f6381ee4243bb47674",
+    "retention_15115_program_edit.json": "c5828907750fbe9b90d48442f0a106daa54ca5825b76756a4290164cec261991",
+    "retention_15115_proportional.json": "32d527f1c41a17b78327ac268bc1b65fd76a04d0b6f937c21eac8b2c4234fd7f",
+    "retention_15115_small_negative_price.json": "2e6444d9520af61d9072e2727339c761b170bbc01616475ca8ee22847fcb3517",
+    "retention_15115_small_price.json": "953b72ddd6a6dee6c5b028d9728836d5db1e4cdadefc1fb93078214b15e98fd0",
+    "retention_15115_source_drift.json": "0e29faff9d86cc0dbd401c537412d897f7792b922e860f2b78ea11843f542ce1",
+    "retention_15115_unchanged.json": "f235856d7beab89437ae7b7241c7150a5582d905fe895a0ebec6af4666af286a",
+    "retention_15115_withdrawal.json": "ee6a456b099a2add8b8ff158537ec7d10399af6cb3c297bfdcff02acd0200978",
+    "retention_15116_known_marginals.json": "b816450aa3fa9043050893c7d933c9d161c8ad05ad8fdbeeda8fb496b874059d",
+    "retention_15116_large_negative_price.json": "d8220fe43087e1df27c6ec67cf4bc84048b5f3c38db0f22cd58b40bcd0fee91f",
+    "retention_15116_large_price.json": "cd2a5497f824e3b0f08ec2cbee7bdbd52e5ad03fedd0bbed5f61657d7f759076",
+    "retention_15116_program_edit.json": "a17ab2a4ee7ed214528763cdac4b1e227857215031c13abeae1af86f759124f3",
+    "retention_15116_proportional.json": "ef33364a340700ff5b5675bbc9c4fecc2a12756d6d5efbaf9a125bd05327000a",
+    "retention_15116_small_negative_price.json": "df4d4559c1618e567d385312c7d975ea9281dfc4bd8fc7430c71b224e0ce4e36",
+    "retention_15116_small_price.json": "f99dd297ee90b73c416f4f63b489ebb60a0d242360f67bc888367a6ce805885b",
+    "retention_15116_source_drift.json": "e2f965cf9a25815d0104218023d25fecfaca9217370ac18d406ffb4e55f8d036",
+    "retention_15116_unchanged.json": "7a5ef26fb10548edd1fca0b4a3a228bc6b019b750efa74ce0c5b66f4632f0b43",
+    "retention_15116_withdrawal.json": "aa9bb13aab8ec4eaed053b9c952780ab8f6769cfff1f1242c8d2a9b32d055406"
+  },
+  "supporting_counts": {
+    "all_above_tolerance_are_refused": true,
+    "approximate_selected_with_certified_order": 58,
+    "certified_order_without_receipt": 2,
+    "diagnostic_receipts": 8,
+    "initial_common_production_seconds": 0.018450917,
+    "median_tailored_saving_vs_fresh": 12.0,
+    "median_tailored_saving_vs_intervals": 18.0,
+    "method_stage_seconds": 175.109005391,
+    "receipts": 1226,
+    "regret_above_1_20": 276,
+    "selected_order_receipts": 1218,
+    "true_full_law_comparison_not_retained_fiber_valid": 248
+  }
+}

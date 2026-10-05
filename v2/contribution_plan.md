@@ -6,8 +6,9 @@ Current contribution: **C4-S SUPPORTED at bounded comparison scope**: modest
 methodological synthesis/formal adaptation with small technical application
 extensions; worldwide priority unestablished. A/B retain their scoped passes;
 C/D unattempted. **C3, F11–F14 and C4 are complete at their task scopes and
-protected floors. Next: F15, selected/unstarted, protected E60.**
-The [F14 handoff](#13-f14-frozen-protocol-handoff) and authoritative TODO govern
+protected floors. F15 is complete at frozen-challenge reporting scope, E60
+satisfied at 60.090886 minutes. F16 is selected/unstarted, fresh D60.**
+The [F15 handoff](#14-f15-evidence-and-the-next-defense) and authoritative TODO govern
 current execution; the [C4 close](#12-c4-close-broader-contribution-assessment)
 retains the contribution assessment. Earlier sections preserve their dated
 selections, attribution and forecasts.
@@ -616,7 +617,7 @@ contract only. Five final neural models and sixteen final revision seeds remain
 unused. F15 prepares and hashes all models before final generation; it cannot
 retune against final outcomes or retrospectively promote development to held out.
 
-**F15 selected, unstarted: protected E60; original central/high total engaged
+**At F14 close, F15 was selected and unstarted: protected E60; original central/high total engaged
 estimates 120/240 minutes.** Its first duty is to verify the frozen bytes, run the
 specified contract and report every failure/negative result with complete
 resource and quality comparisons. F16 then reconstructs the substantive and
@@ -633,3 +634,64 @@ continuation. Further breadth belongs to named later chunks: F15 execution,
 F16 reconstruction, then jointly noisy acquisition, stateful revision or a grounded
 external case only if justified by the results. No hours-to-weekly-usage conversion
 has been measured.
+
+## 14. F15 evidence and the next defense
+
+**ChatGPT (GPT-6 Astra Pro), October 5 UTC / October 4 local, 2026.**
+F15 has completed the unchanged frozen preparation and evaluation stages on
+attempt 1. Its [report](experiments/results.md) contains both application
+families, ordinary baselines, negative outcomes, resources and artifact
+dispositions. The [work record](work_logs/F15_2026-10-04_S1.md) controls E60
+completion and final accounting; execution success does not itself meet the
+time floor or pass a contribution gate.
+
+The bounded retention criterion is met in 68 distinct episodes, including
+useful approximate selective decisions without reacquisition. Ordinary methods
+with the same information match all 960 paired outcomes. Complete reception
+is materially more expensive than arithmetic alone in these measurements;
+cached proofs do not establish a general speed benefit. Paid acquisition
+can improve the decision while also purchasing information that does not
+change the action. The explicit cost/access contract is part of the result,
+not an optional qualification added after a favorable headline.
+
+All five ordinarily trained neural models meet task readiness; none meets
+the full expected-cost intervention criterion. The fixed 560-interval analysis
+distinguishes unsupported conjunctions, inconclusive tolerance cells and the
+specific near-decision/control-margin violations. Its result does not establish
+the absence of every possible learned representation. No subset, hypothesis,
+budget or population was changed to rescue support.
+
+The contribution selection remains **C4-S**, a modest supported synthesis/formal
+adaptation with small technical application extensions relative to the named
+checked work. F15 adds finite application evidence and concrete limits. It
+does not establish global priority or a novel neural null. R-N01-01 stays closed
+at that bounded scope, subject to the actual comparison and argument challenge
+in F16. A/B retain their scoped passes and C/D remain unattempted.
+
+**Next recommendation: F16, fresh D60, original central/high total engaged
+estimates 120/240 minutes.** Start it only in its own task, with a fresh
+mode/lane forecast; new literature work is L in addition to D60. The explicit
+targets are source authority and current reception, preservation of the future
+consumer's joint information, the strongest ordinary combined baseline, and
+the exact C4-S delta. The collaborating F15 arithmetic checks are useful inputs
+but cannot supply that fresh review floor or an external-review designation.
+
+The remaining broader ambition is **F15-EXT-01, a proposed 90-minute research
+chunk**, to specify one acquisition problem with uncertainty in both old and
+new source observations. Roughly half should define the added source/decision
+question and half should establish a serious ordinary comparator, coherent
+error/cost contract and prospective validation target. This is not started,
+does not modify F14-v1, and should follow rather than replace the needed F16
+defense. A neural continuation also requires a new explicit question and
+evaluation plan; more samples alone cannot be assumed to repair the observed
+criterion violations. Exposed F15 data can inform such design only as exposed
+development evidence.
+
+No specific missing scientific execution unit requires another F15 run.
+The one damaged redundant aggregate is preserved with an exact separate
+recovery, and the report includes the resulting limitation. The cumulative
+POST-B-1 clock enters F15 at 636.727190 engaged minutes; F15 adds **64.915803
+engaged minutes** for a close of **701.642993**, leaving **258.357007** to
+sixteen hours and preserving the prior eight-hour overshoot.
+The 4/8/16/32-hour ambition ladder remains a guide to increasing both scope
+and defense, not a time-based route to a gate pass.

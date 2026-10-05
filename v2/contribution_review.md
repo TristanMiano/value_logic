@@ -6,10 +6,13 @@ Recorded research: 60.336817 minutes. [Work and validation](work_logs/C4_2026-10
 [Author's broader criterion](decisions/2026-10-04_novelty_scope.md).
 
 **Current handoff, October 5 UTC / October 4 local, 2026:** F14 is complete at
-prospective-freeze scope, research90 satisfied; **F15 is selected and unstarted**.
+prospective-freeze scope, research90 satisfied; **F15 is complete at frozen-challenge
+reporting scope, with E60 satisfied at 60.090886 minutes; F16 is selected/unstarted**.
 The C4 assessment and its original selection/effort ladder below remain historical
 C4 work by Codex (GPT-6). The [F14 handoff](#8-f14-handoff-without-revising-c4s-claim)
-records the later contribution by ChatGPT (GPT-6 Astra Pro).
+records the later contribution by ChatGPT (GPT-6 Astra Pro). The
+[F15 handoff](#9-f15-application-evidence-and-neural-limits) records the unchanged
+bounded contribution disposition after final evaluation.
 
 ## 1. Assess a claim, not an undifferentiated novelty score
 
@@ -349,8 +352,86 @@ technical-application assessment. F14 adds an executable methodology and instrum
 validation; it does not independently establish a new general contribution,
 priority, speed, deployment calibration or learned structure. The unavailable
 close identifiability paper section remains a comparison limitation for F16.
-**Next: F15, selected/unstarted, E60; F16/F17 unstarted; C/D unattempted.**
+**At F14 close: F15 selected/unstarted, E60; F16/F17 unstarted; C/D unattempted.**
 No specific freeze obligation remains for a continuation. The effort ladder in
 section 7 and the cumulative sixteen-hour checkpoint remain in force; additional
 breadth and stronger defense must grow together rather than treating a completed
 protocol as a gate or novelty pass.
+
+## 9. F15 application evidence and neural limits
+
+**ChatGPT (GPT-6 Astra Pro), October 5 UTC / October 4 local, 2026.**
+The unchanged [F14-v1 protocol](experiments/protocol.md) has now been run under
+the prescribed Linux runtime. Preparation and evaluation each completed on
+attempt 1. All five models and selected alignments were saved, hashed and
+validated before final retention or neural generation. The [results](experiments/results.md)
+and [work record](work_logs/F15_2026-10-04_S1.md) distinguish scientific
+completion from the protected E60 and final administrative closure. F15 records
+**60.090886 E minutes** and **64.915803 total engaged minutes**; POST-B-1
+continues to **701.642993**, with **258.357007** remaining to sixteen hours.
+
+The revision application meets its frozen useful-derivation criterion in
+**68 distinct episodes across 16 initial-population seeds**. Fifteen episodes
+contain useful selective decisions whose selected cost is approximate,
+without reacquisition. These are additional finite application observations
+under the specified source and consumer contract. The exact ordinary methods
+remain strong: all **960 equal-information comparison pairs agree**, and
+ordinary exact interval/fiber analysis reproduces the selective decisions.
+The frozen benchmark does not establish a general speed advantage.
+
+The paid-acquisition panel further exposes the limit of a quality-first rule.
+It achieves zero recorded decision regret, but can acquire information without
+changing the executed action. Initial source exposure, common marginals,
+method-specific returned fields, source execution, archive storage and all
+current proof costs remain charged. A lower storage payload or a faster refusal
+does not establish a cheaper successful service at the full quality contract.
+
+One optional saved-data calculation clarifies the consumer relationship:
+in eleven episodes the common source constraints certify an action when a
+rectangle containing the separate action-cost intervals cannot certify any
+action at the same .05 regret tolerance. Eight of those episodes meet the
+useful-native criterion. The exact ordinary baseline preserves the same
+joint constraints and gives the same result. This is a worked consequence
+of established joint-information reasoning, not an independently new theorem
+or an added confirmatory experiment.
+
+The ordinary neural task is learned by **all five frozen models**, but
+**0/5 meet the complete expected-cost intervention criterion**, with at least
+4/5 required. Two of fifty identity MAE cells establish the tolerance and
+48 are inconclusive; none falsifies that MAE tolerance. Separate near-decision
+and random-control material-advantage requirements each have one violated
+cell. All controls, alternative scales, gauge checks and diagnostic behaviors
+are reported. Neither decoding nor a favorable partial intervention would
+establish causal necessity, independent composition or unique utility units.
+The negative pilot is a bounded application limit; its significance and
+distinctiveness as a new empirical finding have not been separately established.
+
+**C4-S remains SUPPORTED only at its existing bounded scope.** Its object is
+the combined method for revisable loss reasoning; type and magnitude are
+modest methodological synthesis/formal adaptation with small technical
+application extensions. The exact delta remains the price-family retention,
+repair and approximation consequences integrated with source, consumer and
+current-reception contracts. Evidence now includes this useful finite
+application and its strong ordinary and negative controls. The comparison
+scope remains the named inspected antecedents, with worldwide priority and
+the unavailable close technical section unresolved. Correct implementation,
+newly produced data and an elapsed time floor do not independently establish
+novelty.
+
+The documented **F15-ART-01** storage exception does not get concealed in this
+assessment: one redundant aggregate was empty after evaluation. All 160
+original case units were intact; a separate canonical recovery exactly
+matches the original sidecar. Original damage is retained, its cause remains
+unknown, and no scientific stage was rerun. This permits saved-unit analysis
+with an explicit provenance qualification rather than a claim that all
+original aggregate storage was intact.
+
+**Recommend F16 next; it remains unstarted, as do F17 and Gates C/D.** Its
+fresh D60 should reconstruct the load-bearing arguments and strongest ordinary
+combination, then challenge the exact C4-S difference. If that difference is
+displaced, reopen R-N01-01 with a concrete 60/90-minute source comparison or
+constructive target. A neural null alone is not such a displacement. After
+that defense, a separately scoped 90-minute jointly uncertain-source
+acquisition proposal could broaden the application and its ordinary comparison
+together. The effort ladder in section 7 remains prospective and POST-B-1
+continues without a reset.

@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: October 5, 2026 UTC (October 4, America/Los_Angeles).
-Status: F01–F14, N01, C3 and C4 complete at their task scopes; F14 research90 satisfied; modest synthesis/application contribution SUPPORTED at bounded C4 comparison scope; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F15 selected/unstarted (E60); F16–F17 unstarted; A/B retain scoped passes; C/D unattempted.
+Status: F01–F15, N01, C3 and C4 complete at their task scopes; F15 E60 satisfied at 60.090886 measured minutes; modest synthesis/application contribution SUPPORTED at bounded C4 comparison scope; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F16 selected/unstarted (fresh D60); F17 unstarted; A/B retain scoped passes; C/D unattempted.
 
 ## Resume here
 
@@ -11,15 +11,29 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F15, selected and unstarted; protected E60; central/high
-engaged estimates 120/240 minutes.** F14 is complete at prospective-freeze
-scope with **90.564634 engaged D+L+E minutes**, excluding waits and recovery.
+**Next task: F16, selected and unstarted; fresh D60; original central/high
+engaged estimates 120/240 minutes, with a fresh mode/lane forecast at start.**
+F15 is complete at frozen-challenge reporting scope, with **60.090886 E minutes**
+and **64.915803 total engaged minutes**. Its original 120/240-minute forecasts
+remain recorded as estimates, not stopping limits. The
+[F15 results](v2/experiments/results.md) record **68 distinct useful retention
+episodes**, **0/5 models meeting the complete neural intervention support
+criterion**, and strong ordinary controls. Both frozen stages completed on
+attempt 1. The original damaged aggregate is preserved with an
+[exact separate recovery](v2/work_logs/F15_2026-10-04_S1/retention_results_recovered.json)
+and [explicit disposition](v2/work_logs/F15_2026-10-04_S1/F15_ART_01.md).
+[F15 work and timing](v2/work_logs/F15_2026-10-04_S1.md) record the satisfied
+floor, conservative exclusions and append-only ledger verification. F16 remains unattempted.
+
+F14 is complete at prospective-freeze scope with **90.564634 engaged D+L+E
+minutes**, excluding waits and recovery.
 Its [protocol](v2/experiments/protocol.md),
 [configuration](v2/experiments/config.v1.json),
 [manifest](v2/experiments/freeze.v1.json) and
 [work record](v2/work_logs/F14_2026-10-04_S1.md) fix F15 execution and interpretation.
 Seventy-eight focused tests passed; full-count neural development did not meet
-the specified intervention criterion. No F15 training or evaluation occurred.
+the specified intervention criterion. At F14 close, no F15 training or
+evaluation had occurred; those development results remain development data.
 C4 is complete with **60.336817 research minutes**. Its
 [contribution review](v2/contribution_review.md) applies the author's
 [broader novelty criterion](v2/decisions/2026-10-04_novelty_scope.md): a modest
@@ -38,16 +52,21 @@ exception and a bounded rerun. [Derivations](v2/derivations/09_c4_price_revision
 
 **Active mathematical repair queue: empty.**
 **Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C not attempted; D not attempted.**
-F14 discharges the prospective freeze only; F15 execution and F16's
-fresh review remain due. If the contribution is later displaced, assign a named 60/90-minute
+F14 discharged the prospective freeze; F15 execution, interpretation and E60
+are complete. F16's fresh review remains unattempted.
+If the contribution is later displaced, assign a named 60/90-minute
 recurrence or further-work chunk; no technical pass or elapsed time waives it.
 
 POST-B-1 closed C4 at **534.976816 engaged minutes**, retaining **54.976816**
 minutes of eight-hour overshoot in the historical
 [eight-hour checkpoint](v2/checkpoints/POST_B_8H_1.md). F14 adds
 **101.750374** measured D/L/E/O minutes, giving **636.727190**
-cumulative minutes; **323.272810** remain to the sixteen-hour
-checkpoint. No recurrence time is reset. [F14 accounting](v2/work_logs/F14_2026-10-04_S1.md)
+cumulative minutes **at F15 entry**; **323.272810** remained to the sixteen-hour
+checkpoint at that starting point. F15 adds **64.915803** measured engaged
+minutes, producing a verified cumulative close of **701.642993** and
+**258.357007** remaining to sixteen hours. [Exact F15 actuals](v2/work_logs/F15_2026-10-04_S1/actuals.json)
+preserve full-precision arithmetic; historical ledger bytes are unchanged.
+No recurrence time is reset. [F14 accounting](v2/work_logs/F14_2026-10-04_S1.md)
 preserves waits, recovery and the uncredited final administrative tail separately.
 The earlier [four-hour review](v2/checkpoints/POST_B_4H_1.md),
 [C3 recurrence](v2/work_logs/N01R_2026-10-02_S1.md),
@@ -1294,13 +1313,29 @@ to publication with an unsound core simply because the planned queue ended.
   Select one feasible probe, not a second large research program; prospectively
   revise effort allocations if needed and preserve the existing time floors.
 
-- [ ] **F15 — run and interpret the frozen challenge.**
+- [x] **F15 — run and interpret the frozen challenge.**
 
-  **Selected and unstarted after F14.** Protected **E60**; original central/high
-  engaged estimates **120/240 minutes** remain planning estimates. Start with
-  the frozen [protocol](v2/experiments/protocol.md) and manifest verification;
-  prepare and hash all five models before any final sample generation. F14's
-  development examples and full-count development probe remain development.
+  **Complete at frozen-challenge reporting scope; E60 satisfied at 60.090886
+  measured minutes; 64.915803 total engaged minutes.**
+  Preparation and evaluation completed on attempt 1 under the unchanged
+  F14-v1 freeze; all five prepared models were saved, hashed and validated
+  before any final population. [Results](v2/experiments/results.md) record
+  **68 distinct useful retention episodes**, **0/5 models meeting the complete
+  neural intervention support criterion**, and strong ordinary controls.
+  The original damaged aggregate and [exact separate recovery](v2/work_logs/F15_2026-10-04_S1/retention_results_recovered.json) have an
+  [explicit disposition](v2/work_logs/F15_2026-10-04_S1/F15_ART_01.md).
+  The [work log](v2/work_logs/F15_2026-10-04_S1.md) records the protected floor,
+  **22.401088 recovery/unobserved minutes** and **0.218666 tool-wait minutes**
+  excluded, plus the uncredited final administrative tail. The E60 floor was
+  appropriate for the full audited report; optional saved-data analysis
+  clarified joint decision information and independently checked all 13,440
+  rectangle-based action regrets. Original central/high engaged estimates
+  **120/240 minutes** remain planning estimates. F16 is selected, unattempted.
+
+  **Preserved starting contract:** begin with the frozen
+  [protocol](v2/experiments/protocol.md) and manifest verification; prepare and
+  hash all five models before any final sample generation. F14's development
+  examples and full-count development probe remain development.
 
   Principal artifact: `v2/experiments/results.md`, with code/configuration and
   machine-readable outputs. Run F14 unchanged and report correct derivations,
@@ -1319,6 +1354,10 @@ to publication with an unsound core simply because the planned queue ended.
   novelty only if its significance and difference from prior work are supported.
 
 - [ ] **F16 — fresh adversarial reconstruction.**
+
+  **Selected and unstarted after F15.** Protect a fresh **D60**, with original
+  central/high engaged estimates **120/240 minutes** and a fresh mode/lane
+  forecast at start. F15's collaborating checks do not supply this review floor.
 
   Principal artifact: `v2/derivations/07_adversarial_review.md`.
   Reconstruct the load-bearing definitions and proof steps, preferably with a
