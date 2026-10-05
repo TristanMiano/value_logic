@@ -1,0 +1,99 @@
+{
+  "schema": "f15-nd01-independent-binary-generic-audit-v1",
+  "utc": "2026-10-05T16:53:46.211985+00:00",
+  "passed": true,
+  "cases": [
+    {
+      "case": "dense_small",
+      "passed": true,
+      "expected_minimum": 0.349609375,
+      "expected_subset": [
+        3,
+        7,
+        9
+      ],
+      "native_output": {
+        "schema": "f15-nd01-binary-global-native-v1",
+        "width": 10,
+        "mass": 3,
+        "enumerated_subsets": 120,
+        "recursion_nodes": 165,
+        "wall_seconds": 1.227e-06,
+        "minimum_computed_quadratic": 0.349609375,
+        "subset": [
+          3,
+          7,
+          9
+        ]
+      },
+      "stdout_sha256": "6cffc456d6410404465af7443eb9c58b85e08a2dec99dff099bb224f0ce2f369",
+      "independent_reference": "Python combinations with direct quadratic"
+    },
+    {
+      "case": "exact_tie",
+      "passed": true,
+      "expected_minimum": 0.0,
+      "expected_subset": [
+        0,
+        1,
+        2
+      ],
+      "native_output": {
+        "schema": "f15-nd01-binary-global-native-v1",
+        "width": 10,
+        "mass": 3,
+        "enumerated_subsets": 120,
+        "recursion_nodes": 165,
+        "wall_seconds": 9.32e-07,
+        "minimum_computed_quadratic": 0,
+        "subset": [
+          0,
+          1,
+          2
+        ]
+      },
+      "stdout_sha256": "ba8e3dabbdbdb2f6698a00b1c70aa675f7694997452e0086cf058a5b5e472ca2",
+      "independent_reference": "Python combinations with direct quadratic"
+    },
+    {
+      "case": "full_count_diagonal",
+      "passed": true,
+      "expected_minimum": 36.0,
+      "expected_subset": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "native_output": {
+        "schema": "f15-nd01-binary-global-native-v1",
+        "width": 32,
+        "mass": 8,
+        "enumerated_subsets": 10518300,
+        "recursion_nodes": 13884156,
+        "wall_seconds": 0.07003959,
+        "minimum_computed_quadratic": 36,
+        "subset": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "stdout_sha256": "e4a5bf7dea6a523b2e458eefe7cfb7cb420e9076ca8f798b75285b0a96820bc1",
+      "independent_reference": "Analytic eight smallest diagonal terms; all10518300leavesrequired"
+    }
+  ],
+  "source_sha256": "2ddc0703a8deb47a3c1b7a43623c882eb3f75952c2625ed39362575ce3062ab1",
+  "binary_sha256": "ab6044c6fcbc80c18bc3d1040c62dc63f916d47bbe606e4aa3a6afcc68dd8d0e",
+  "scope": "Three generic manufactured quadratics only; no F15 network, discovery inputs, validation inputs or model results loaded. Dense off-diagonal and exact-tie cases checked independently by Python exhaustive direct quadratic, full32choose8 count by known diagonal optimum.",
+  "experiment_populations_generated": 0
+}

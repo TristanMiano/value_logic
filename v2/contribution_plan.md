@@ -8,8 +8,10 @@ extensions; worldwide priority unestablished. A/B retain their scoped passes;
 C/D unattempted. **C3, F11–F14 and C4 are complete at their task scopes and
 protected floors. F15 is complete at frozen-challenge reporting scope, E60
 satisfied at 60.090886 minutes. F16 is selected/unstarted, fresh D60.**
-The [F15 handoff](#14-f15-evidence-and-the-next-defense) and authoritative TODO govern
-current execution; the [C4 close](#12-c4-close-broader-contribution-assessment)
+**F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
+The [ND01 handoff](#15-nd01-diagnostic-and-the-next-evidence-choice),
+[F15 handoff](#14-f15-evidence-and-the-next-defense) and authoritative TODO govern
+current execution; optional F15-ND02 Research90 is unstarted. The [C4 close](#12-c4-close-broader-contribution-assessment)
 retains the contribution assessment. Earlier sections preserve their dated
 selections, attribution and forecasts.
 
@@ -695,3 +697,41 @@ engaged minutes** for a close of **701.642993**, leaving **258.357007** to
 sixteen hours and preserving the prior eight-hour overshoot.
 The 4/8/16/32-hour ambition ladder remains a guide to increasing both scope
 and defense, not a time-based route to a gate pass.
+
+## 15. ND01 diagnostic and the next evidence choice
+
+**ChatGPT (GPT-6 Astra Pro), October 5, 2026 UTC / America/Los_Angeles.**
+**F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
+The separately frozen [diagnostic](experiments/F15_ND01_results.md) used the
+five saved ordinary networks without retraining, plus a labeled constructed
+calibration. Its [work record](work_logs/F15_ND01_2026-10-05_S1.md) controls the
+new protected floor and cumulative accounting. F15's original 0/5 complete
+support and retention results are preserved.
+
+The useful clarification is that **ordinary prediction training does not
+require clean eight-neuron expected-cost blocks**. The learned computation
+can use shared or mixed features. Limited search and the endpoint's
+control-superiority requirement explain concrete parts of the failure;
+improved development interventions still do not supply a complete joint
+two-cost abstraction. Technical superposition and unique utility recovery
+are not established by this diagnostic.
+
+**F16 remains the recommended next project task: fresh D60, unstarted**, with
+its original 120/240-minute estimates and a new mode/lane forecast at start.
+The priority is a stronger defense of the source/consumer/reception arguments,
+ordinary combined baseline, exact C4-S difference, and present neural scope.
+C4-S remains the bounded supported synthesis/formal-adaptation/application
+contribution; worldwide priority is unestablished. If that difference is
+displaced, reopen R-N01-01 with a named 60/90-minute evidence target. C/D remain
+unattempted; these collaborators do not supply the fresh F16 review floor.
+
+**Optional F15-ND02, Research90, unstarted:** test a joint two-cost abstraction
+on these fixed networks with common declared subspace geometry, explicit
+handling of inactive coordinates, known-structure calibration, matched
+controls, repeated assignments and two donors. Freeze the ranks, budgets,
+selection rules and separate absolute-adequacy/control-superiority endpoints
+before new validation; save all five alignments first. The
+[concrete allocation](experiments/F15_ND01_results.md#8-contribution-protected-effort-and-recommended-next-work)
+is prospective. It is a named evidence option, not an extension of the current
+study or a replacement for F16's defense. The existing F15-EXT-01 acquisition
+proposal also remains unstarted.

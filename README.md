@@ -1,6 +1,19 @@
 # Value Logic
 
-**Latest completion: F15, frozen-challenge reporting scope; E60 satisfied at 60.090886 measured minutes. Next: F16, selected and unstarted, fresh D60.**
+**F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
+October 5, 2026 UTC / America/Los_Angeles. The [neural diagnostic](v2/experiments/F15_ND01_results.md)
+clarifies F15's original 0/5 complete endpoint: known-structure calibration met
+the accuracy criteria while the endpoint's control-superiority requirement still
+failed; wider search and fractional interventions improved development accuracy.
+**Ordinary prediction training gives a network no task-specific reason to put
+each expected cost in one clean eight-neuron block.** Mixed or distributed
+features can make extraction difficult; technical superposition and a joint or
+unique utility representation are not established here. The original F15
+results and bounded C4-S contribution are unchanged. [ND01 work and accounting](v2/work_logs/F15_ND01_2026-10-05_S1.md).
+Next: **F16, fresh D60, unstarted**; optional **F15-ND02, Research90**, remains
+unstarted. Gates C/D remain unattempted.
+
+**Preserved F15 completion: frozen-challenge reporting scope; E60 satisfied at 60.090886 measured minutes.**
 The [F15 results](v2/experiments/results.md) report **68 distinct useful
 revision/retention episodes** and **0/5 models meeting the complete neural
 intervention support criterion**. All five ordinary-trained models met the

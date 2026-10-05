@@ -5,9 +5,11 @@ Status: **C4 complete at contribution-review scope; research60 satisfied**.
 Recorded research: 60.336817 minutes. [Work and validation](work_logs/C4_2026-10-04_S1.md).
 [Author's broader criterion](decisions/2026-10-04_novelty_scope.md).
 
-**Current handoff, October 5 UTC / October 4 local, 2026:** F14 is complete at
-prospective-freeze scope, research90 satisfied; **F15 is complete at frozen-challenge
-reporting scope, with E60 satisfied at 60.090886 minutes; F16 is selected/unstarted**.
+**Current handoff, October 5, 2026 UTC / America/Los_Angeles:** F14 and F15 retain
+their completed scopes and protected floors. **F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
+The [ND01 handoff](#10-nd01-neural-diagnostic-with-contribution-scope-preserved)
+records the separately frozen development evidence. **F16 is selected/unstarted,
+fresh D60; optional F15-ND02 Research90 is unstarted.**
 The C4 assessment and its original selection/effort ladder below remain historical
 C4 work by Codex (GPT-6). The [F14 handoff](#8-f14-handoff-without-revising-c4s-claim)
 records the later contribution by ChatGPT (GPT-6 Astra Pro). The
@@ -435,3 +437,38 @@ that defense, a separately scoped 90-minute jointly uncertain-source
 acquisition proposal could broaden the application and its ordinary comparison
 together. The effort ladder in section 7 remains prospective and POST-B-1
 continues without a reset.
+
+## 10. ND01 neural diagnostic with contribution scope preserved
+
+**ChatGPT (GPT-6 Astra Pro), October 5, 2026 UTC / America/Los_Angeles.**
+**F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
+The [diagnostic report](experiments/F15_ND01_results.md) and
+[work record](work_logs/F15_ND01_2026-10-05_S1.md) separate this development
+recurrence from the original F15 result and its completed E60 accounting.
+
+The diagnostic supports concrete limits on interpreting the original neural
+0/5. **Ordinary prediction training does not force a clean eight-neuron cost
+block.** Shared, mixed or distributed features can impede the chosen extraction
+procedure. Wider search found better coordinate interventions, and fractional
+interventions added a smaller consistent improvement. The constructed
+calibration met the identity-accuracy requirements while failing the complete
+endpoint's control-superiority conjunction. Improved partial correspondence
+does not establish a joint two-cost representation, ordinary causal necessity,
+technical superposition, or unique utility units.
+
+**C4-S remains SUPPORTED at exactly its bounded comparison scope.** The
+modest synthesis/formal-adaptation/application contribution concerns the
+specified retention, repair and approximation consequences integrated with
+source/consumer/reception contracts. ND01 adds a useful local diagnostic of
+the neural probe; it does not establish a new general interpretability result
+or worldwide priority. The original retention results and the unavailable
+close-source limitation remain unchanged.
+
+**Recommend F16 next, fresh D60, unstarted.** Its independent reconstruction
+should challenge the exact C4-S difference and the narrower neural reading.
+Optional **F15-ND02, Research90**, would test a joint two-cost abstraction with
+declared geometry, matched controls, repeated assignments and two donors; it
+is unstarted. If F16 displaces the meaningful C4-S difference, reopen R-N01-01
+with a concrete 60/90-minute evidence target. A/B retain their scoped passes;
+C/D remain unattempted. Broader neural scope should follow stronger defense,
+and POST-B-1 continues without a reset.

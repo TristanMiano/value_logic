@@ -1,6 +1,6 @@
 # Phase Two Claim Ledger
 
-Current status (October 4 local / October 5 UTC, 2026): **F01–F15, N01, C3 and C4
+Current status (October 5, 2026 UTC / America/Los_Angeles): **F01–F15, N01, C3 and C4
 complete at their task scopes; F14 research90 satisfied at 90.564634 minutes;
 F15 complete at frozen-challenge reporting scope, E60 satisfied at 60.090886 minutes;
 F16 selected/unstarted, fresh D60. C4-S supports a modest synthesis/formal adaptation
@@ -8,6 +8,9 @@ with small technical application extensions relative to named inspected work;
 worldwide priority is unestablished. R-N01-01 is closed only at that narrowed
 scope and may reopen at F16.** The F15 entry below records final application,
 neural and artifact dispositions separately from task accounting and novelty.
+**F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
+The dated ND01 entry below records development evidence without changing F15;
+optional F15-ND02 Research90 is unstarted, and F16 remains the fresh D60 priority.
 The F14 entry remains prospective-freeze history. F07 acceptance is the explicit finite-fragment
 soundness theorem, not a permanent core or later gate. Gate A retains its
 foundation-readiness PASS; C/D are unattempted. The dated ledger entries and
@@ -1135,3 +1138,24 @@ C4-S delta. If that meaningful difference is displaced, reopen R-N01-01 with
 an explicit 60/90-minute evidence target. A proposed 90-minute jointly
 uncertain-source acquisition chunk would expand the exact-source application
 and its defense together; it remains unstarted. F15 does not pass C/D.
+
+## F15-ND01 neural diagnostic dispositions — October 5, 2026 UTC / America/Los_Angeles
+
+Contributor: **ChatGPT (GPT-6 Astra Pro)**, with attributed collaborators in
+the [diagnostic report](experiments/F15_ND01_results.md) and
+[work record](work_logs/F15_ND01_2026-10-05_S1.md).
+**F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
+These entries append development findings; every earlier F15 disposition and
+its historical evidence remains unchanged.
+
+| ID | Claim / disposition and evidence | Scope and limitation |
+|---|---|---|
+| F15-ND01-C01 | **Registered diagnostic executed.** All 15 calibration/search/mask preparations were durably saved and validated before validation; both stages completed on attempt 1. The five ordinary networks were reused without retraining. | Separately frozen development work; no F15 retry or retrospective promotion to confirmatory evidence. Original retention outcomes and frozen experimental files are preserved. Research90 is separately satisfied at 90.797984 measured minutes; audited accounting is in the work record. |
+| F15-ND01-C02 | **The extraction assumption is material.** Ordinary prediction training gives no task-specific requirement that each expected cost occupy a clean eight-neuron block; the output function permits other internal decompositions. | Shared, mixed or distributed features are plausible explanations. This diagnostic does not establish technical superposition or absence of every accessible value representation. |
+| F15-ND01-C03 | **Complete calibration failure does not imply failed absolute correspondence.** All five constructed layouts meet identity adequacy, with all 50 MAE and 20 decision intervals supported, while complete endpoint support remains 0/5. Every layout has an observed control whose fixed-radius advantage ceiling is below the required margin even at hypothetical zero aligned error. | Five layouts of one constructed function, not ordinary training replications. The ceiling conditions on these observed controls and the frozen confidence radius; it is not a new support assessment or a universal impossibility result. |
+| F15-ND01-C04 | **Limited search and selection matter.** The larger nested budget improves mean MAE in every original-MSE proposal family. Robust selection changes 41 of 100 paired settings: discovery worst-normalized objective improves in all 41, while that same validation objective improves in ten and worsens in 31. | All 20 variants and ordinary controls are retained. The paired settings reuse five networks and shared arrays, so they are not 100 independent replications. Reversal is consistent with selection on a noisy criterion; no unique overfitting mechanism or new winner claim is established. |
+| F15-ND01-C05 | **Improved partial interventions found on unchanged networks.** Mean development MAE is 0.025032 for fractional masks, 0.028251 for exhaustive binary logit-MSE selection, 0.029993 for rounding, and 0.039626 for the original subsets on common arrays. | Development single-role comparisons. Point adequacy is distinct from full F15 support; exhaustive optimality concerns the finite discovery logit objective, and the fractional numerical gaps have stated limits. No joint two-cost abstraction, causal necessity or unique utility is established. |
+| F15-ND01-C06 | **C4-S retains its bounded supported disposition.** ND01 adds a local diagnostic of the neural probe while the existing synthesis/formal-adaptation/application claim retains its exact source/consumer/reception and price-revision scope. | Relative to the named inspected antecedents; worldwide priority remains unestablished. Neither a negative endpoint nor improved partial neural accuracy independently establishes a new general contribution. |
+| F15-ND01-C07 | **Further evidence assigned without a gate pass.** Recommend F16, fresh D60, next and unstarted. Optional F15-ND02 Research90 would test a joint two-cost abstraction with declared geometry, known-structure calibration, matched controls, repeated assignments and two donors. | ND02 is unstarted. F16's fresh review floor is not supplied by ND01 collaboration. Reopen R-N01-01 with a concrete 60/90-minute target if the C4-S difference is displaced. A/B retain scoped passes; C/D remain unattempted. |
+| F15-ND01-C08 | **Whole-box existing-effect compatibility characterized.** Exact activation-difference ranks are 30,30,29,29,29. Four fractional-mask pairs admit mutually orthogonal projector coefficients with the same individual effects; one does not. Thirteen explicit pairs across all four methods have independently checked projector identities. | Post-outcome algebra using saved weights and masks, in the stored Euclidean metric. Inactive-coordinate rescaling can change feasibility without changing ordinary outputs. This does not establish joint semantic adequacy, unique native features, approximate impossibility or a new F15 support count. |
+| F15-ND01-C09 | **Individual tolerance does not transfer automatically to joint assignments.** Under compatible projectors, joint logit error is the sum of the two individual errors minus ordinary base error on the same triple. An exact algebraic example has perfect ordinary output and uniformly acceptable single edits but excessive combined error. | Elementary formal specialization and illustrative counterexample, not a sixth saved network or new evaluation arm. Norm bounds require the actual joint distribution's marginals. The proposed joint experiment remains unstarted. |

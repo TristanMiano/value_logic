@@ -11,7 +11,23 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 
 ## Current status
 
-**Latest completion: F15, frozen-challenge reporting scope; E60 satisfied at 60.090886 measured minutes. Next: F16, selected and unstarted, fresh D60.**
+**F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
+October 5, 2026 UTC / America/Los_Angeles. The [diagnostic report](experiments/F15_ND01_results.md)
+separates limited extraction search, the eight-coordinate intervention family,
+and the complete endpoint's demand for superiority over capable controls.
+**Ordinary prediction training does not force each expected cost into a clean
+eight-neuron block.** Shared, mixed or distributed features are plausible;
+technical superposition was not established. The unchanged networks admit
+better development interventions, while the original F15 0/5 outcome and
+the unresolved joint-representation claim remain explicit.
+[ND01 work and accounting](work_logs/F15_ND01_2026-10-05_S1.md).
+**F16, fresh D60, is recommended next and unstarted.** Optional F15-ND02,
+Research90, is also unstarted. C4-S retains its bounded supported scope;
+worldwide priority is unestablished and C/D remain unattempted.
+
+### Preserved F15 completion
+
+**F15 is complete at frozen-challenge reporting scope; E60 satisfied at 60.090886 measured minutes.**
 The [F15 results](experiments/results.md) record **68 distinct useful
 revision/retention episodes** and **0/5 models meeting the complete neural
 intervention support criterion**. All five ordinary-trained models met the
@@ -21,7 +37,10 @@ aggregate is preserved, with an [exact separate recovery](work_logs/F15_2026-10-
 [F15-ART-01 disposition](work_logs/F15_2026-10-04_S1/F15_ART_01.md).
 The [F15 work log](work_logs/F15_2026-10-04_S1.md) records **60.090886 E minutes**
 and **64.915803 total engaged minutes**, with waits and recovery excluded.
-POST-B-1 is **701.642993 minutes**, leaving **258.357007** to sixteen hours.
+At F15 close, POST-B-1 was **701.642993 minutes**, leaving **258.357007** to sixteen hours.
+These are ND01's entry totals; its current increment is recorded separately in
+the ND01 work log: **99.487395 recorded engaged / 90.797984 research minutes**.
+Current POST-B-1: **801.130388**, leaving **158.869612** to sixteen hours.
 F16 is selected and unattempted, with fresh D60. C4-S retains its bounded assessment;
 Gates A/B retain scoped passes and C/D remain unattempted.
 

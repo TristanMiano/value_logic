@@ -1,0 +1,56 @@
+{
+  "audit_tool_failures": [
+    {
+      "disposition": "Narrowed AST inspection to six literal constants and dictionaries; second read-only inspection succeeded. No serializer execution, model generation, source edits or clock/ledger mutation.",
+      "operation": "One-off AST constant inventory (not the serializer)",
+      "reason": "Initial ast.literal_eval inventory included ENGAGED=(*RESEARCH, O), whose ast.Starred node is not a literal. ValueError occurred before constant inventory completed."
+    }
+  ],
+  "blocking_defects": [],
+  "check_count": 28,
+  "checks": [
+    "Closed principal clock required both by null clock_state and explicit stop in replayed events.",
+    "Exact runtime linux-F15-ND01-S1; monotonically ordered integer event clocks; segment records replayed from events.",
+    "Every segment boundary is contiguous in monotonic time and UTC; duration serialization checked against integer endpoints.",
+    "Historical ledger exact length217776 and SHA44c93cc930fdea2d588f663688e71615a84b32f98517eadd4bab3943efa154bd required.",
+    "Historical CSV has949 data rows, expected header/column counts, terminal newline, and no previousF15-ND01 rows.",
+    "Baseline source9f42a047126618b0364cf334002f846e5839d726 and POST entryDecimal701.64299296445 are fixed.",
+    "Original forecast SHA0d1bcb345f33efcc3f1d58a11ace41971d4b60eb8ec2a645184055f2b0e37172 matches observed forecast bytes.",
+    "CentralD10L10E70O10=100 and highD15L15E90O15=135 preserved, with research90/120 and wait3/10.",
+    "Protected Research90 derives from D+L+E integer nanoseconds; required floor5400000000000ns.",
+    "O, explicit waits and recovery exclusions do not satisfy the research floor; parallel agents addzero.",
+    "Optional absent adjustments/mode-reclassification files are represented as absent, not created or required.",
+    "Recovery records bind existing closed segments by exact start key; classification and timestamp fields are not required.",
+    "Partial recovery duration is permitted; optional UTC/monotonic endpoints must be inside containing segment and ordered.",
+    "Exclusion seconds normalize only to observed nanosecond precision with logged nonzero deltas; negative/nonfinite invalid.",
+    "Combined wait and recovery exclusions cannot exceed a segment; one row per segment preserves exact conservation.",
+    "Reclassifications bind original mode/lane and require reason; excluded time cannot be promoted to engaged.",
+    "R/X lanes apply only to research and sum exactly to D+L+E; O and wait/recovery lanes empty.",
+    "CSV has nine decimal places in second fields and is checked against exact mode, wait and recovery totals.",
+    "POST cumulative close uses 50-digit Decimal entry plus engaged_ns/60000000000; remaining and overshoot derived from960.",
+    "Prior8-hour overshoot54.976816 retained; recurrence clock not reset; F16 and GatesC/D not started.",
+    "Finalizer never calls/imports clock.py, experiment code, model code, population generation or native jobs.",
+    "Existing finalization outputs or sidecars cause refusal; existing ledger append causes baseline mismatch/refusal.",
+    "Ledger opened with O_APPEND and exclusive flock for actual write; dry-run is read-only/shared lock.",
+    "Raw input bytes and full prior ledger rechecked before append; finalizer cannot overwrite their originals.",
+    "Exclusive durable intent includes exact CSV append and actuals before ledger append; fsync and readback required.",
+    "Append exact old prefix+planned bytes verified; final actuals/integrity/sidecars exclusively written and hashed.",
+    "Root final schema is compatible with independent audit_accounting.py; audit strengthened for exact Decimal totals/lane shares/forecast columns.",
+    "Post-cutoff administration, commit/push and response are explicitly unquantified/uncredited."
+  ],
+  "clock_or_ledger_modified": false,
+  "contributor": "delegated ChatGPT (GPT-6 Astra Pro), protocol/accounting audit",
+  "current_clock_open": true,
+  "current_observed_exclusion_record_count": 3,
+  "executed_or_imported_serializer": false,
+  "forecast_sha256": "0d1bcb345f33efcc3f1d58a11ace41971d4b60eb8ec2a645184055f2b0e37172",
+  "notes": [
+    "The serializer validates optional partial-window bounds but does not require exclusion duration equal UTC elapsed; correct because integer monotonic duration is authoritative and UTC readings have microsecond resolution.",
+    "General arithmetic validation cannot establish substantive engagement. The independent final audit also checks the15-minute observed-check rule."
+  ],
+  "parallel_agent_minutes_added": 0,
+  "reviewed_utc": "2026-10-05T18:14:49.150795+00:00",
+  "schema": "F15-ND01-independent-accounting-serializer-static-review-v1",
+  "serializer_sha256": "8e687b5bd7f2f77aa3dd0bc96d1567f94f1a793235855e694913b28c6f815290",
+  "status": "STATIC_REVIEW_PASS; runtime finalization and final accounting audit pending"
+}

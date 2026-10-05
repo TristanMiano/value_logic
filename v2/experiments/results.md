@@ -14,10 +14,20 @@ criterion. All five ordinary-trained networks meet task readiness, but
 One damaged aggregate has an exact, separately preserved recovery; the
 original damaged file remains visible. Task accounting and final preservation
 are recorded in the [F15 work log](../work_logs/F15_2026-10-04_S1.md).
-The report's preservation revision is the Git commit returned by
-`git log -1 --format=%H -- v2/experiments/results.md`; the final task handoff
-supplies that exact hash and the observed push status. Command records bind
-scientific execution to the F14 source revision above.
+The original F15 preservation revision is
+`9f42a047126618b0364cf334002f846e5839d726`, subsequently observed on GitHub main.
+Command records bind scientific execution to the F14 source revision above.
+The dated follow-up below does not change that original result or provenance.
+
+**October 5 follow-up: [F15-ND01 neural diagnostic](F15_ND01_results.md).**
+Ordinary training gives a network no task-specific reason to organize each
+expected cost into one clean eight-neuron block; shared or distributed features
+can limit a particular extraction procedure. ND01's separately frozen development
+study improves interventions on the same networks and finds that known-structure
+calibration can meet accuracy criteria while still failing the complete
+control-superiority conjunction. Original F15 support remains **0/5**. Technical
+superposition, unique utility and joint semantic adequacy are unestablished.
+[Diagnostic work, Research90 and preservation](../work_logs/F15_ND01_2026-10-05_S1.md).
 
 The result supports the bounded application of an existing method. It does
 not establish an exclusive capability, speed superiority, a unique neural

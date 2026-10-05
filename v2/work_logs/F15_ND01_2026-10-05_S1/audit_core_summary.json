@@ -1,0 +1,41 @@
+{
+  "schema": "f15-nd01-independent-core-summary-audit-v1",
+  "passed": true,
+  "checks": 5359,
+  "core_summary_sha256": "5f51177477784de4af33796cf519108f044412c11da1ab787c8601ab0fbb9043",
+  "counts": {
+    "calibration_interval_rows": 560,
+    "calibration_oracle_rows": 50,
+    "calibration_searched_rows": 1000,
+    "constructed_function_equivalent_layouts": 5,
+    "fixed_ordinary_models": 5,
+    "mask_methods": 4,
+    "mask_rows": 200,
+    "search_rows": 1000,
+    "search_variants": 20
+  },
+  "tables": [
+    {
+      "file": "calibration_rows.csv",
+      "rows": 1050,
+      "sha256": "4be3d969f53ddd140305d3fb1600587285f6c6296dc1be1106056cafdd5aea03"
+    },
+    {
+      "file": "mask_rows.csv",
+      "rows": 200,
+      "sha256": "47a016456b763044af9268805cb0e610e95de196211299429304fdf1df9823ed"
+    },
+    {
+      "file": "search_rows.csv",
+      "rows": 1000,
+      "sha256": "3ef58c884b722642c02bc40b67971405ae51981d23f352134da1d755f599e1fd"
+    }
+  ],
+  "calibration_interval_status_counts": {
+    "supported": 383,
+    "inconclusive": 136,
+    "violated": 41
+  },
+  "scope": "Independent check of all exported table counts/hashes, 20 search and four mask aggregate means and distinct role/model counts, and all560 calibration interval values/thresholds/statuses against original saved evaluations. No populations, model fits or selections generated.",
+  "reviewer": "ChatGPT (GPT-6 Astra Pro), independent ND01 protocol audit"
+}

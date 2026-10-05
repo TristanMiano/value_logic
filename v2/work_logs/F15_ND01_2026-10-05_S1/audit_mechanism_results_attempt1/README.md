@@ -1,0 +1,3 @@
+# Preserved first mechanism-output audit attempt
+
+The 5,250-check audit failed two audit-only status-schema assertions: it expected `complete`, while the frozen runner correctly records `preparation_complete` and `evaluation_complete`. Both manifests contained all fifteen units. All numerical/source/hash checks passed. The current audit corrects that assertion and rechecks saved outputs without generating populations, fitting, or optimizing. These are original byte-preserved attempt files. Do not execute the archived source from this moved directory; it records the source at its original execution location.

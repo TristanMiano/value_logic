@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: October 5, 2026 UTC (October 4, America/Los_Angeles).
-Status: F01–F15, N01, C3 and C4 complete at their task scopes; F15 E60 satisfied at 60.090886 measured minutes; modest synthesis/application contribution SUPPORTED at bounded C4 comparison scope; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F16 selected/unstarted (fresh D60); F17 unstarted; A/B retain scoped passes; C/D unattempted.
+Last updated: October 5, 2026 UTC / America/Los_Angeles.
+Status: F01–F15, N01, C3 and C4 complete at their task scopes; F15 E60 satisfied at 60.090886 measured minutes; F15-ND01 complete at diagnostic/reporting scope with Research90 satisfied at 90.797984 measured minutes; modest synthesis/application contribution SUPPORTED at bounded C4 comparison scope; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F16 selected/unstarted (fresh D60); optional F15-ND02 Research90 unstarted; F17 unstarted; A/B retain scoped passes; C/D unattempted.
 
 ## Resume here
 
@@ -10,6 +10,18 @@ This is the active project-control document. Read it together with
 the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
+
+**F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
+The user-authorized [neural diagnostic](v2/experiments/F15_ND01_results.md) is
+development work on the five unchanged F15 networks, with a separately frozen
+calibration/search/mask comparison. **Ordinary prediction training does not
+require a clean eight-neuron block for each cost**; extraction can fail when
+features are shared, mixed or distributed. Calibration and improved partial
+interventions clarify the original 0/5 outcome without establishing technical
+superposition, a joint utility representation, or a new complete neural pass.
+[Work, accounting and preservation](v2/work_logs/F15_ND01_2026-10-05_S1.md).
+Original F15 outcomes remain unchanged. Optional **F15-ND02, Research90** is
+unstarted; the next project priority is the fresh F16 defense.
 
 **Next task: F16, selected and unstarted; fresh D60; original central/high
 engaged estimates 120/240 minutes, with a fresh mode/lane forecast at start.**
@@ -53,7 +65,7 @@ exception and a bounded rerun. [Derivations](v2/derivations/09_c4_price_revision
 **Active mathematical repair queue: empty.**
 **Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C not attempted; D not attempted.**
 F14 discharged the prospective freeze; F15 execution, interpretation and E60
-are complete. F16's fresh review remains unattempted.
+are complete. ND01 is complete at diagnostic/reporting scope, with Research90 satisfied. F16's fresh review remains unattempted.
 If the contribution is later displaced, assign a named 60/90-minute
 recurrence or further-work chunk; no technical pass or elapsed time waives it.
 
@@ -66,6 +78,12 @@ checkpoint at that starting point. F15 adds **64.915803** measured engaged
 minutes, producing a verified cumulative close of **701.642993** and
 **258.357007** remaining to sixteen hours. [Exact F15 actuals](v2/work_logs/F15_2026-10-04_S1/actuals.json)
 preserve full-precision arithmetic; historical ledger bytes are unchanged.
+Those F15 closing totals are ND01's entry balance. ND01 adds **99.487395**
+recorded engaged minutes, including **90.797984 research minutes**.
+POST-B-1 now stands at **801.130388**, with **158.869612**
+remaining to sixteen hours. [Exact ND01 actuals](v2/work_logs/F15_ND01_2026-10-05_S1/actuals.json)
+preserve full precision; all 949 prior ledger rows are unchanged. No elapsed or concurrent
+agent time is silently credited here.
 No recurrence time is reset. [F14 accounting](v2/work_logs/F14_2026-10-04_S1.md)
 preserves waits, recovery and the uncredited final administrative tail separately.
 The earlier [four-hour review](v2/checkpoints/POST_B_4H_1.md),
@@ -1353,9 +1371,29 @@ to publication with an unsound core simply because the planned queue ended.
   because a null result has been documented. A negative finding counts toward
   novelty only if its significance and difference from prior work are supported.
 
+- [x] **F15-ND01 — neural diagnostic recurrence, Research90.**
+
+  **F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
+  Authorized October 5, 2026. The [report](v2/experiments/F15_ND01_results.md)
+  covers all 15 prepared/evaluated units, all 20 coordinate-search variants,
+  fractional and exhaustive binary masks, ordinary baselines, the complete
+  constructed calibration and saved-output mechanism diagnostics. Both
+  registered stages completed on attempt 1; the original F15 models and freeze
+  are unchanged. These are development results, with no new complete-support,
+  causal-necessity or unique-utility pass.
+
+  The diagnostic makes the ordinary-training/clean-block mismatch explicit:
+  successful predictions do not require separately extractable eight-neuron
+  cost blocks. Capable controls can also prevent complete endpoint support
+  despite accurate correspondence. [Work and accounting](v2/work_logs/F15_ND01_2026-10-05_S1.md)
+  govern the protected Research90 floor; scientific completion alone does not
+  satisfy it. **F16, fresh D60, remains next and unstarted.** Optional
+  **F15-ND02, Research90**, would test a joint two-cost abstraction under frozen
+  subspace geometry, repeated assignments and two donors; it is unstarted.
+
 - [ ] **F16 — fresh adversarial reconstruction.**
 
-  **Selected and unstarted after F15.** Protect a fresh **D60**, with original
+  **Selected and unstarted after F15 and its ND01 diagnostic.** Protect a fresh **D60**, with original
   central/high engaged estimates **120/240 minutes** and a fresh mode/lane
   forecast at start. F15's collaborating checks do not supply this review floor.
 
