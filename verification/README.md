@@ -2,13 +2,27 @@
 
 This directory began as a compact, standard-library Python reference for the finite witness in [`formalism/05a_integration.md`](../formalism/05a_integration.md). It now also tests the Task 20 neural implementation, which requires the frozen NumPy/PyTorch runtime recorded in [`experiments/implementation_v1.json`](../experiments/implementation_v1.json). It remains verification infrastructure rather than a proof-assistant formalization.
 
-Phase two is complete through F13 and C4 at their task scopes; N01 and C3 are
+Phase two is complete through F14 and C4 at their task scopes; N01 and C3 are
 also complete. C4 met research60 and supports a modest synthesis/application
 contribution relative to checked work; worldwide priority is unestablished.
-F14 is selected/unstarted with research90. Gates A/B retain their scoped passes;
-C/D are unattempted. See [the current TODO](../TODO_v2.md) and
+F14 met research90 at 90.564634 minutes. F15 is selected/unstarted with E60.
+Gates A/B retain their scoped passes; C/D are unattempted. See [the current TODO](../TODO_v2.md) and
 [C4 scope and tests](../v2/verification/README.md#c4-ordinary-mathematical-controls).
-The validation records below are historical, not a current broad-suite claim.
+F14's [protocol](../v2/experiments/protocol.md) uses CPython 3.12 and its separate
+[NumPy 2.3.5 requirement](../v2/experiments/requirements-f14.txt); it does not
+replace the phase-one neural runtime. Its 78 focused tests passed:
+
+```text
+python -m unittest discover -s verification -p 'test_v2_f14*.py' -v
+python -m v2.experiments.freeze verify
+```
+
+Set `OMP_NUM_THREADS`, `OPENBLAS_NUM_THREADS` and `MKL_NUM_THREADS` to `1` before
+F14/F15 work, as specified in the protocol. The broader F14 repository attempt
+had 1,638 successful cases and two legacy neural module-import errors because
+PyTorch was unavailable. This is not a full-repository pass; those module bodies
+did not execute. [F14 work and preserved logs](../v2/work_logs/F14_2026-10-04_S1.md).
+The validation records below retain their historical scopes.
 
 Gate B's new wrapper runs **19 hostile tests**, all passing locally. Run
 `python -X faulthandler -m unittest verification.test_v2_gate_b -v`.

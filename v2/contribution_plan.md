@@ -5,10 +5,12 @@ Contributor: **Codex (GPT-6)**. October 2, 2026, America/Los_Angeles.
 Current contribution: **C4-S SUPPORTED at bounded comparison scope**: modest
 methodological synthesis/formal adaptation with small technical application
 extensions; worldwide priority unestablished. A/B retain their scoped passes;
-C/D unattempted. **C3, F11–F13 and C4 are complete at their task scopes and
-protected floors. Next: F14, selected/unstarted, protected research90.**
-The [C4 close](#12-c4-close-broader-contribution-assessment) governs the current
-plan. Earlier numbered sections retain their dated selections and forecasts.
+C/D unattempted. **C3, F11–F14 and C4 are complete at their task scopes and
+protected floors. Next: F15, selected/unstarted, protected E60.**
+The [F14 handoff](#13-f14-frozen-protocol-handoff) and authoritative TODO govern
+current execution; the [C4 close](#12-c4-close-broader-contribution-assessment)
+retains the contribution assessment. Earlier sections preserve their dated
+selections, attribution and forecasts.
 
 ## 1. Selected question and the distinction we will test
 
@@ -586,3 +588,48 @@ because optional exact-radius, coherence and sampling controls resolved concrete
 uncertainties. It did not invent a new solver. Keep F14's prospective split
 and review design-versus-execution costs again at its close; do not retroactively
 change old forecasts or floors.
+
+## 13. F14 frozen protocol handoff
+
+**ChatGPT (GPT-6 Astra Pro), October 5 UTC / October 4 local, 2026.**
+F14 is complete at prospective-freeze scope, with **90.564634 engaged research
+minutes**. [Protocol](experiments/protocol.md), [configuration](experiments/config.v1.json),
+[manifest](experiments/freeze.v1.json), [work and limitations](work_logs/F14_2026-10-04_S1.md).
+Section 12 records the original selection; the present section advances the
+pointer without rewriting C4's work or contribution scope.
+
+The retention part freezes six methods under two access regimes, exact recovery,
+meaningful approximation/refusal, useful decisions, receipt status and full
+source/production/checking/update/acquisition accounting. Fresh solving, full
+joint retention, tailored summaries and exact intervals are strong controls.
+The ordinary-training neural part freezes matched search/capacity, donor and
+label controls, transported low-level gauges and four high-level scales.
+Neither proof-reconstruction superiority nor a positive neural result is required
+to complete the reporting task. The complete quality contract prevents equal
+refusals or mismatched information from being presented as useful savings.
+
+Development supplies 78 passing focused tests, integrated revision checks,
+full-count neural feasibility, compiled calibration and a separate LP check.
+The ordinary development model does not support the specified internal-cost
+intervention claim. These observations validate the execution/interpretation
+contract only. Five final neural models and sixteen final revision seeds remain
+unused. F15 prepares and hashes all models before final generation; it cannot
+retune against final outcomes or retrospectively promote development to held out.
+
+**F15 selected, unstarted: protected E60; original central/high total engaged
+estimates 120/240 minutes.** Its first duty is to verify the frozen bytes, run the
+specified contract and report every failure/negative result with complete
+resource and quality comparisons. F16 then reconstructs the substantive and
+contribution claims afresh. Gates C/D remain unattempted; meaningful novelty
+must be assessed explicitly at Gate C, including any exact recurrence obligation
+if C4-S is displaced. The sixteen-hour cumulative checkpoint remains at 960
+POST-B-1 engaged minutes; [F14 actuals](work_logs/F14_2026-10-04_S1/actuals.json)
+advance that clock from 534.976816 without resetting its eight-hour overshoot.
+
+The research90 floor was appropriate for closing two controlled, small contracts
+and using the remaining effort for feasibility, independent ordinary comparisons
+and interpretation challenges. No specific freeze obligation requires a 60-minute
+continuation. Further breadth belongs to named later chunks: F15 execution,
+F16 reconstruction, then jointly noisy acquisition, stateful revision or a grounded
+external case only if justified by the results. No hours-to-weekly-usage conversion
+has been measured.

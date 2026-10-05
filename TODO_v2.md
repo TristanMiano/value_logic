@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: October 4, 2026 UTC and America/Los_Angeles.
-Status: F01–F13, N01, C3 and C4 complete at their task scopes; C4 research60 satisfied; modest synthesis/application contribution SUPPORTED at bounded comparison scope; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F14 selected/unstarted (research90); F15–F17 unstarted; A/B retain scoped passes; C/D unattempted.
+Last updated: October 5, 2026 UTC (October 4, America/Los_Angeles).
+Status: F01–F14, N01, C3 and C4 complete at their task scopes; F14 research90 satisfied; modest synthesis/application contribution SUPPORTED at bounded C4 comparison scope; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F15 selected/unstarted (E60); F16–F17 unstarted; A/B retain scoped passes; C/D unattempted.
 
 ## Resume here
 
@@ -11,9 +11,16 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Next task: F14, selected and unstarted; protected research90; central/high
-D/L/E/O totals 105/155 engaged minutes.** C4 is complete with **60.336817
-research minutes**, excluding waits and recovery. Its
+**Next task: F15, selected and unstarted; protected E60; central/high
+engaged estimates 120/240 minutes.** F14 is complete at prospective-freeze
+scope with **90.564634 engaged D+L+E minutes**, excluding waits and recovery.
+Its [protocol](v2/experiments/protocol.md),
+[configuration](v2/experiments/config.v1.json),
+[manifest](v2/experiments/freeze.v1.json) and
+[work record](v2/work_logs/F14_2026-10-04_S1.md) fix F15 execution and interpretation.
+Seventy-eight focused tests passed; full-count neural development did not meet
+the specified intervention criterion. No F15 training or evaluation occurred.
+C4 is complete with **60.336817 research minutes**. Its
 [contribution review](v2/contribution_review.md) applies the author's
 [broader novelty criterion](v2/decisions/2026-10-04_novelty_scope.md): a modest
 methodological synthesis/formal adaptation with small technical application
@@ -31,15 +38,17 @@ exception and a bounded rerun. [Derivations](v2/derivations/09_c4_price_revision
 
 **Active mathematical repair queue: empty.**
 **Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C not attempted; D not attempted.**
-C4 does not discharge F14's prospective freeze, F15's execution or F16's
-fresh review. If the contribution is later displaced, assign a named 60/90-minute
+F14 discharges the prospective freeze only; F15 execution and F16's
+fresh review remain due. If the contribution is later displaced, assign a named 60/90-minute
 recurrence or further-work chunk; no technical pass or elapsed time waives it.
 
-POST-B-1 entered C4 at **461.480742 engaged minutes**. The
-[eight-hour checkpoint](v2/checkpoints/POST_B_8H_1.md) records the current total,
-chunk-boundary overshoot and remaining time to sixteen hours. No recurrence
-time is reset. C4's original central/high projected closes were
-531.480742/566.480742; final actuals and new F14 projections are in its work log.
+POST-B-1 closed C4 at **534.976816 engaged minutes**, retaining **54.976816**
+minutes of eight-hour overshoot in the historical
+[eight-hour checkpoint](v2/checkpoints/POST_B_8H_1.md). F14 adds
+**101.750374** measured D/L/E/O minutes, giving **636.727190**
+cumulative minutes; **323.272810** remain to the sixteen-hour
+checkpoint. No recurrence time is reset. [F14 accounting](v2/work_logs/F14_2026-10-04_S1.md)
+preserves waits, recovery and the uncredited final administrative tail separately.
 The earlier [four-hour review](v2/checkpoints/POST_B_4H_1.md),
 [C3 recurrence](v2/work_logs/N01R_2026-10-02_S1.md),
 [F11](v2/work_logs/F11_2026-10-03_S1.md),
@@ -1222,9 +1231,21 @@ to publication with an unsound core simply because the planned queue ended.
   Keep cumulative time and review eight hours at the first completed chunk
   boundary reaching it. C4 does not automatically reopen A/B or authorize F14.
 
-- [ ] **F14 — freeze the empirical challenge and baselines.**
+- [x] **F14 — freeze the empirical challenge and baselines.**
 
-  **Selected, unstarted after C4.** Protected **90 research minutes**;
+  **Completed October 5 UTC / October 4 local, 2026 by ChatGPT (GPT-6 Astra Pro),
+  with attributed delegated work.** Protected research90 met at **90.564634
+  engaged D+L+E minutes**. [Protocol](v2/experiments/protocol.md),
+  [configuration](v2/experiments/config.v1.json),
+  [34-file manifest](v2/experiments/freeze.v1.json),
+  [work and validation](v2/work_logs/F14_2026-10-04_S1.md).
+  Seventy-eight focused tests passed; integrated retention development and
+  full-count neural development executed. The specified neural intervention
+  claim was not supported in development; no final F15 population was exposed.
+  The broader repository run had 1,638 successful cases and two missing-PyTorch
+  module-import errors; no full-repository or F16 independent-review pass.
+  No specific freeze obligation remains, so no 60-minute continuation is assigned.
+  The following retains the original contract and forecasts: **90 research minutes**;
   central D30/L20/E40/O15=105, high D45/L30/E60/O20=155; waits 5/15 separate;
   R/X55/45. This prospectively replaces the original 60/120 estimate and adds
   the research90 floor. Review at that floor; name a 60-minute continuation
@@ -1274,6 +1295,12 @@ to publication with an unsound core simply because the planned queue ended.
   revise effort allocations if needed and preserve the existing time floors.
 
 - [ ] **F15 — run and interpret the frozen challenge.**
+
+  **Selected and unstarted after F14.** Protected **E60**; original central/high
+  engaged estimates **120/240 minutes** remain planning estimates. Start with
+  the frozen [protocol](v2/experiments/protocol.md) and manifest verification;
+  prepare and hash all five models before any final sample generation. F14's
+  development examples and full-count development probe remain development.
 
   Principal artifact: `v2/experiments/results.md`, with code/configuration and
   machine-readable outputs. Run F14 unchanged and report correct derivations,

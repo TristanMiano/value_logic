@@ -58,3 +58,13 @@ for this decision plus optional extensions. Jointly noisy acquisition,
 unequal-price recovery, stateful revision and a realistic external case can
 justify more effort, with uncertain positive findings. No measured conversion
 from engaged hours to weekly account usage is available.
+
+## Later pointer: F14 close, October 5 UTC / October 4 local, 2026
+
+ChatGPT (GPT-6 Astra Pro): F14 is now complete at prospective-freeze scope,
+research90 satisfied; **F15 is selected and unstarted**. The C4 totals, overshoot,
+forecasts and selection above are the historical eight-hour checkpoint record.
+[F14 work](../work_logs/F14_2026-10-04_S1.md) and
+[actuals](../work_logs/F14_2026-10-04_S1/actuals.json) add its measured D/L/E/O to
+534.976816; waits and recovery remain separate. No sixteen-hour checkpoint or
+Gate C/D was attempted here, and the recurrence clock is not reset.

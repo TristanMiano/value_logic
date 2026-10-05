@@ -1,4 +1,4 @@
-# F11–F13 bounded producer, case studies and C4 controls
+# F11–F14 producer, case studies, revision controls and protocol validation
 
 **F11 and F12 complete at their task scopes; both E60 floors satisfied.** Contributor: **Codex (GPT-6)**,
 October 3, 2026 local / October 4 UTC. This package implements the
@@ -15,7 +15,14 @@ runs crashed after bounded retries, and no final aggregate pass is claimed.
 **C4 is complete at contribution-review scope**, research60 satisfied.
 Its [assessment](../contribution_review.md) supports a modest methodological
 synthesis and small technical applications relative to checked antecedents;
-worldwide priority is unestablished. Next: **F14, selected/unstarted, research90**.
+worldwide priority is unestablished. **F14 is now complete at prospective-freeze
+scope, research90 satisfied; F15 is selected/unstarted, E60.** Its implementation
+is in [experiments](../experiments/protocol.md), with 78 passing focused tests,
+[configuration](../experiments/config.v1.json) and a byte-verified
+[manifest](../experiments/freeze.v1.json). Full-count neural development did not
+meet its specified intervention criterion. This is readiness evidence only;
+no F15 execution or Gate C/D attempt occurred.
+[F14 timing, broader-suite limits and evidence](../work_logs/F14_2026-10-04_S1.md).
 
 ## C4 ordinary mathematical controls
 
@@ -209,4 +216,4 @@ separate reference is an implementation distinction, not independent authorship.
 Contribution scope, practical advantage, empirical premise validity, general
 completeness and phase-two completion remain separate claims. C4 supports only
 the modest contribution described above. F13 and C4 are complete;
-next is **F14**, selected and unstarted. C/D remain unattempted.
+F14 is complete at prospective-freeze scope; next is **F15**, selected and unstarted. C/D remain unattempted.

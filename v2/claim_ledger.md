@@ -1,7 +1,12 @@
 # Phase Two Claim Ledger
 
-Current status (October 3 local / October 4 UTC, 2026): **F01–F11, N01 and recurrence C3 complete at their task scopes;
-Gate B passed at mathematical-readiness scope; PLAN01 adopted; F12 selected, unstarted; novelty NOT YET SUPPORTED; R-N01-01 open.** F11 records 60.162455 engaged E minutes. C3 records 120.540527 engaged D+L minutes. F09 records 60.091745 engaged D minutes. F07 acceptance is the explicit finite-fragment
+Current status (October 4 local / October 5 UTC, 2026): **F01–F14, N01, C3 and C4
+complete at their task scopes; F14 research90 satisfied at 90.564634 minutes;
+F15 selected/unstarted, E60. C4-S supports a modest synthesis/formal adaptation
+with small technical application extensions relative to named inspected work;
+worldwide priority is unestablished. R-N01-01 is closed only at that narrowed
+scope and may reopen at F16.** The F14 entry below records prospective-freeze
+readiness and negative development findings separately from novelty. F07 acceptance is the explicit finite-fragment
 soundness theorem, not a permanent core or later gate. Gate A retains its
 foundation-readiness PASS; C/D are unattempted. The dated ledger entries and
 earlier opening below retain historical statuses.
@@ -32,8 +37,8 @@ superseded that pointer; subsequent N01/C3/F11 dispositions appear below.
 
 ## Preserved early ledger opening
 
-The following early opening is historical; the Gate B entry at the end records
-the current readiness decision.
+The following early opening is historical; the current opening and the latest
+dated entries record task readiness and contribution dispositions.
 
 Version: F02 completion plus F03 S9 partial audit, September 24, 2026.
 Task status: **F01 complete (76 checks); F02 complete (124 dedicated checks and 61.118295 credited derivation minutes)**.
@@ -1066,6 +1071,29 @@ Contributor: **Codex (GPT-6)**. [Assessment](contribution_review.md),
 | C4-C09 | 24 focused tests passed after one unexpected TypeError and bounded retry; later mixed-price test passed. Research60 met at 60.336817 minutes. | One missing exploratory SciPy dependency replaced with standard-library exact search. Logs preserved; no full-suite, CI, independent-review or hardware-cause claim. |
 
 R-N01-01 closes at the narrowed C4 contribution-selection scope. F16 may reopen
-it; C/D remain unattempted. Select **F14, unstarted, research90**, with
-central/high total engaged forecasts 105/155 minutes. Any later displacement
+it; C/D remain unattempted. At C4 close, **F14 was selected, unstarted, research90**,
+with central/high total engaged forecasts 105/155 minutes. Any later displacement
 of the meaningful delta assigns a named further-work/recurrence chunk.
+
+## F14 prospective-freeze acceptance — October 5 UTC / October 4 local, 2026
+
+Contributor: **ChatGPT (GPT-6 Astra Pro)** with delegated retention, neural and
+static-audit contributions identified in the [work record](work_logs/F14_2026-10-04_S1.md).
+The [protocol](experiments/protocol.md), [configuration](experiments/config.v1.json)
+and [manifest](experiments/freeze.v1.json) fix the contract before any F15
+preparation or final generation. Research90 is satisfied at **90.564634 minutes**.
+
+| ID | Claim / evidence | Scope and limitation |
+|---|---|---|
+| F14-C01 | One revision/retention challenge and one ordinary-trained ReLU intervention probe have executable prospective generators, budgets, tolerances, falsifiers, accounting and analysis. Frozen closure contains 34 files. | Readiness for F15, not final experimental support. Final seeds are specified but unused; prior and development examples cannot become held out. |
+| F14-C02 | Integrated development covers 20 revision episodes, 240 method rows and 1,440 numeric queries: 1,072 exact, 88 approximate, 280 refused. Nine seed/variant cases satisfy the useful-application development criterion, including four selective no-reacquisition rows whose selected cost is approximate. | Fixed reset outcomes, declared consumers, linear retention and explicit source access/acquisition. Complete quality vectors and admitted-service flags prevent shared refusals from counting as useful savings. No solver-speed or generic policy-regret claim. |
+| F14-C03 | Full-count ordinary neural development executes 3,000 training steps, matched 128-candidate searches, 8,192 pairs per role/stratum, 112 interval rows and transported gauges. Task adequacy passes; the specified internal-cost intervention criterion is not supported. | One development model only. No F15 pilot conclusion, no causal necessity or unique expected-cost representation. Thresholds were not weakened to convert the negative result. |
+| F14-C04 | Compiled positive controls and actual bounded search validate instrument sensitivity; cancellation and nonmonomial mixing examples delimit interpretation. | The compiled model is labeled and separate from ordinary training. Passing axis interventions or positive-rescaling/permutation checks is not exhaustive functional equivalence, necessity, or search completeness. |
+| F14-C05 | Strong full-information and equal-information ordinary methods, exact uncertainty intervals and primary causal-abstraction/cost-scale comparisons are built into the contract. | C4-S remains the bounded supported synthesis/application claim. Established tools are credited. No new worldwide-priority or learned-mechanism claim arises from protocol construction or search absence. F16 remains due. |
+| F14-C06 | 78 focused tests pass; an independently constructed development LP check agrees on 2,800 objectives / 100 fibers, with 5,600 solves. A fresh Git checkout with autocrlf enabled preserves all 34 frozen byte sequences. | Floating LP agreement is a development cross-check, not the exact admission rule. Transport was tested on Linux, not the Windows runtime. Broader suite: 1,638 successful cases plus two missing-PyTorch import errors; no full-suite or independent F16 pass. |
+
+F14 is complete at freeze scope with its protected floor met. No concrete freeze
+obligation remains for a named continuation. **F15 is selected and unstarted;
+F16/F17 and Gates C/D are unattempted.** A/B retain their scoped readiness passes.
+C4's narrowed contribution disposition persists; any later displaced or unsupported
+delta requires a named recurrence/further-work obligation, not an automatic gate pass.

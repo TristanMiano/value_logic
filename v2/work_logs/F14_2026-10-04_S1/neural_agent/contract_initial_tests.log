@@ -1,0 +1,39 @@
+test_equal_stratum_pooling_targets_the_equal_mixture (test_v2_f14_neural_contract.F14NeuralContractTests.test_equal_stratum_pooling_targets_the_equal_mixture) ... ok
+test_finite_claim_family_has_exact_planned_count (test_v2_f14_neural_contract.F14NeuralContractTests.test_finite_claim_family_has_exact_planned_count) ... ok
+test_hoeffding_width_and_union_bound_are_applied (test_v2_f14_neural_contract.F14NeuralContractTests.test_hoeffding_width_and_union_bound_are_applied) ... ok
+test_missing_rival_gauge_cannot_be_a_numerical_pass (test_v2_f14_neural_contract.F14NeuralContractTests.test_missing_rival_gauge_cannot_be_a_numerical_pass) ... FAIL
+test_scale_comparison_partial_denominator_rejected (test_v2_f14_neural_contract.F14NeuralContractTests.test_scale_comparison_partial_denominator_rejected) ... FAIL
+test_scale_separating_generator_produces_fixed_full_denominators (test_v2_f14_neural_contract.F14NeuralContractTests.test_scale_separating_generator_produces_fixed_full_denominators) ... ok
+test_scale_total_denominator_mismatch_rejected (test_v2_f14_neural_contract.F14NeuralContractTests.test_scale_total_denominator_mismatch_rejected) ... FAIL
+test_task_regret_normalization_is_the_exact_domain_bound (test_v2_f14_neural_contract.F14NeuralContractTests.test_task_regret_normalization_is_the_exact_domain_bound) ... ok
+
+======================================================================
+FAIL: test_missing_rival_gauge_cannot_be_a_numerical_pass (test_v2_f14_neural_contract.F14NeuralContractTests.test_missing_rival_gauge_cannot_be_a_numerical_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/92a0b04b4567/value_logic/verification/test_v2_f14_neural_contract.py", line 91, in test_missing_rival_gauge_cannot_be_a_numerical_pass
+    self.assertFalse(assessment["models"][0]["numerical_controls_valid"])
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_scale_comparison_partial_denominator_rejected (test_v2_f14_neural_contract.F14NeuralContractTests.test_scale_comparison_partial_denominator_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/92a0b04b4567/value_logic/verification/test_v2_f14_neural_contract.py", line 81, in test_scale_comparison_partial_denominator_rejected
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_scale_total_denominator_mismatch_rejected (test_v2_f14_neural_contract.F14NeuralContractTests.test_scale_total_denominator_mismatch_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/92a0b04b4567/value_logic/verification/test_v2_f14_neural_contract.py", line 74, in test_scale_total_denominator_mismatch_rejected
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.195s
+
+FAILED (failures=3)

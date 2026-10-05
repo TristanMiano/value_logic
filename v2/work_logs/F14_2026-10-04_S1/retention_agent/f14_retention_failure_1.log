@@ -1,0 +1,8 @@
+Preserved from observed tool output; deterministic development reporter defect. The exploratory smoke configured only methods=[tailored], omitting fresh, and the original reporter assumed fresh was present. No native crash or recovery inference.
+
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+  File "/workspace/scratch/92a0b04b4567/value_logic/v2/experiments/retention.py", line 477, in run_case
+    fresh = next(x for x in methods if x['method'] == 'fresh' and x['access'] == access)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration

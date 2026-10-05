@@ -1,0 +1,198 @@
+{
+  "analysis": {
+    "adjusted_effect_mae_max": 0.1,
+    "base_decision_regret_max": 0.05,
+    "base_probability_mae_max": 0.05,
+    "composition_primary": false,
+    "conditional_base_probability_mae_max": 0.05,
+    "familywise_alpha": 0.05,
+    "far_decision_disagreement_max": 0.1,
+    "interval": "two_sided_hoeffding_union_bound",
+    "intervention_mae_max": 0.05,
+    "matched_control_advantage_min": 0.01,
+    "maximum_interval_rows": 560,
+    "minimum_supported_model_replicates": 4,
+    "near_decision_disagreement_max": 0.35,
+    "retention_useful_min_distinct_cases": 4,
+    "retention_useful_min_distinct_seeds": 2,
+    "retention_useful_requires_approximate_selected_cost": true,
+    "retention_useful_requires_price_and_program_edit": true,
+    "retention_useful_requires_uncertain_selective_case": true,
+    "same_subset_scale_advantage_min": 0.01,
+    "scale_separating_frequency_min": 0.9,
+    "worldwide_novelty_assessed": false
+  },
+  "neural": {
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_epsilon": 1e-08,
+    "batch_size": 256,
+    "candidate_count": 128,
+    "controls": [
+      "aligned",
+      "random",
+      "permuted_concept",
+      "shuffled_donor",
+      "untrained"
+    ],
+    "decoder_ridge": 1e-06,
+    "development_evaluation_seed": 1400491,
+    "development_seed": 1400401,
+    "dtype": "float64",
+    "evaluation_pairs_per_stratum": 8192,
+    "evaluation_seeds": [
+      1500491,
+      1500492,
+      1500493,
+      1500494,
+      1500495
+    ],
+    "fit_samples": 1024,
+    "g_family": [
+      "identity",
+      "inv_eta",
+      "inv_one_minus_eta",
+      "inv_total_cost"
+    ],
+    "g_min_separating_pairs": 256,
+    "g_separation_min": 0.05,
+    "gauge_scale_max": 8.0,
+    "gauge_scale_min": 0.125,
+    "gauge_tolerance": 1e-10,
+    "global_scale_control": 2.0,
+    "learning_rate": 0.003,
+    "model_seeds": [
+      1500401,
+      1500402,
+      1500403,
+      1500404,
+      1500405
+    ],
+    "numpy_version": "2.3.5",
+    "pair_attempt_multiplier": 4000,
+    "pair_batch_size": 4096,
+    "proposal_uniform_mixture": 0.25,
+    "ranking_tie_tolerance": 1e-12,
+    "rng": "PCG64",
+    "selection_pairs_per_stratum": 128,
+    "smoke": {
+      "candidate_count": 8,
+      "evaluation_pairs_per_stratum": 32,
+      "fit_samples": 256,
+      "g_min_separating_pairs": 8,
+      "selection_pairs_per_stratum": 16,
+      "task_evaluation_samples": 256,
+      "training_steps": 128
+    },
+    "strata": [
+      "mixed_near",
+      "mixed_far",
+      "preserve_other",
+      "equal_target",
+      "scale_separating"
+    ],
+    "subset_size": 8,
+    "task_evaluation_samples": 8192,
+    "training_steps": 3000,
+    "width": 32
+  },
+  "protocol_id": "F14-v1",
+  "retention": {
+    "access_regimes": [
+      "no_reacquisition",
+      "adaptive_reacquisition"
+    ],
+    "acquisition_costs": [
+      "0",
+      "1/20",
+      "1/2"
+    ],
+    "acquisition_policy": "query_if_any_numeric_refusal_or_decision_refusal",
+    "acquisition_price_unit": "one_exact_scalar_measurement",
+    "decision_regret_tolerance": "1/20",
+    "development_seeds": [
+      14101,
+      14102
+    ],
+    "evaluation_seeds": [
+      15101,
+      15102,
+      15103,
+      15104,
+      15105,
+      15106,
+      15107,
+      15108,
+      15109,
+      15110,
+      15111,
+      15112,
+      15113,
+      15114,
+      15115,
+      15116
+    ],
+    "fallback_cost": "5/2",
+    "generator_version": "F14-retention-v1",
+    "horizons": [
+      1,
+      4,
+      16,
+      64
+    ],
+    "k": 3,
+    "large_negative_price_change": "-1/2",
+    "large_price_change": "1",
+    "law_integer_weight_max": 17,
+    "law_integer_weight_min": 1,
+    "max_proof_steps": 128,
+    "max_vertex_bases": 70,
+    "maximum_native_retries": 1,
+    "methods": [
+      "fresh",
+      "cached_proof",
+      "full_joint",
+      "tailored",
+      "exact_intervals",
+      "marginal_diagnostic"
+    ],
+    "numeric_tolerance": "1/20",
+    "old_penalty": "4",
+    "old_prices": [
+      "1",
+      "1",
+      "1"
+    ],
+    "proportional_scale": "2",
+    "retained_payload_schema": "F14-retained-v2",
+    "small_negative_price_change": "-1/40",
+    "small_price_change": "1/40",
+    "stable_one_price_repair": "two_new_order_means_for_old_mean_profiles",
+    "variants": [
+      "unchanged",
+      "small_price",
+      "small_negative_price",
+      "large_price",
+      "large_negative_price",
+      "proportional",
+      "program_edit",
+      "known_marginals",
+      "withdrawal",
+      "source_drift"
+    ]
+  },
+  "run_policy": {
+    "all_discovery_artifacts_durable_before_evaluation": true,
+    "final_evaluation_executed_in_F14": false,
+    "final_evaluation_task": "F15",
+    "maximum_stage_attempts": 2,
+    "numeric_library_threads": 1,
+    "preserve_failed_and_partial_outputs": true,
+    "reference_numpy": "2.3.5",
+    "reference_python": "CPython 3.12.x",
+    "retune_on_evaluation": false,
+    "unexplained_failure_retries": 1
+  },
+  "schema_version": 1,
+  "source_base_revision": "6ce41d7caaba8b66cf813fc5949a92f95d42766c"
+}

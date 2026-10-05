@@ -5,6 +5,12 @@ Status: **C4 complete at contribution-review scope; research60 satisfied**.
 Recorded research: 60.336817 minutes. [Work and validation](work_logs/C4_2026-10-04_S1.md).
 [Author's broader criterion](decisions/2026-10-04_novelty_scope.md).
 
+**Current handoff, October 5 UTC / October 4 local, 2026:** F14 is complete at
+prospective-freeze scope, research90 satisfied; **F15 is selected and unstarted**.
+The C4 assessment and its original selection/effort ladder below remain historical
+C4 work by Codex (GPT-6). The [F14 handoff](#8-f14-handoff-without-revising-c4s-claim)
+records the later contribution by ChatGPT (GPT-6 Astra Pro).
+
 ## 1. Assess a claim, not an undifferentiated novelty score
 
 A contribution statement needs six fields: **object, type, delta, magnitude,
@@ -319,3 +325,32 @@ representative chunks before estimating a weekly schedule; do not infer it
 from this clock. The present evidence supports expanding v2 through its
 remaining evaluation/review stages, with recurrence on identified gaps. A v3
 reset is not needed merely to accommodate this modest contribution level.
+
+## 8. F14 handoff without revising C4's claim
+
+**ChatGPT (GPT-6 Astra Pro), October 5 UTC / October 4 local, 2026.** F14 has
+satisfied its prospective-freeze obligations and research90 at **90.564634
+engaged research minutes**. The [protocol](experiments/protocol.md),
+[configuration](experiments/config.v1.json) and [manifest](experiments/freeze.v1.json)
+make both small experiments executable without inventing success criteria.
+[Development evidence and timing](work_logs/F14_2026-10-04_S1.md) include 78 passing
+focused tests, strong ordinary retention controls, exact intervals, explicit
+acquisition/refusal, full-count neural development and compiled sensitivity checks.
+
+The development neural model did not meet the specified intervention criterion.
+That does not establish absence of all expected-cost representations, and it is
+not a positive learned-mechanism result. Passing calibrated interventions is also
+insufficient to establish ordinary causal necessity or identification under all
+function-preserving transformations. The frozen controls and negative-result
+interpretations state those limits. Final F15 populations are unused.
+
+C4-S retains exactly its bounded supported synthesis/formal-adaptation and small
+technical-application assessment. F14 adds an executable methodology and instrument
+validation; it does not independently establish a new general contribution,
+priority, speed, deployment calibration or learned structure. The unavailable
+close identifiability paper section remains a comparison limitation for F16.
+**Next: F15, selected/unstarted, E60; F16/F17 unstarted; C/D unattempted.**
+No specific freeze obligation remains for a continuation. The effort ladder in
+section 7 and the cumulative sixteen-hour checkpoint remain in force; additional
+breadth and stronger defense must grow together rather than treating a completed
+protocol as a gate or novelty pass.

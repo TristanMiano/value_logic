@@ -1,0 +1,1959 @@
+{
+  "actual_interval_rows": 112,
+  "development_only": true,
+  "familywise_alpha": 0.05,
+  "generalization_to_other_training_seeds_claim": false,
+  "interval_family_cap": 560,
+  "models": [
+    {
+      "base_normalized_regret_interval": {
+        "id": "model0/base_normalized_regret",
+        "lower": 0.0,
+        "mean": 0.0022683074577885412,
+        "n": 256,
+        "radius": 0.13987170626877105,
+        "sample_range": [
+          0.0,
+          1.0
+        ],
+        "upper": 0.1421400137265596
+      },
+      "base_probability_interval": {
+        "id": "model0/base_mae",
+        "lower": 0.0,
+        "mean": 0.034162338696391736,
+        "n": 256,
+        "radius": 0.13987170626877105,
+        "sample_range": [
+          0.0,
+          1.0
+        ],
+        "upper": 0.17403404496516278
+      },
+      "composition": {
+        "order_probability_max_difference": 0.18011160241788782,
+        "overlap_size": 3,
+        "primary_claim": false,
+        "role0_then_role1": {
+          "decision_agreement": 0.75,
+          "mae": 0.11625132624718029,
+          "max_absolute_error": 0.26827850755250393,
+          "mse": 0.01999587156209774,
+          "n": 32,
+          "rmse": 0.1414067592518043
+        },
+        "role1_then_role0": {
+          "decision_agreement": 0.78125,
+          "mae": 0.10842591381389234,
+          "max_absolute_error": 0.31073213852692294,
+          "mse": 0.02090179673881663,
+          "n": 32,
+          "rmse": 0.1445745369655965
+        }
+      },
+      "disposition": "task_underlearned_at_frozen_criterion",
+      "evaluation_seed": 1400491,
+      "hypotheses": {
+        "identity": {
+          "adequate": false,
+          "roles": [
+            {
+              "absolute": {
+                "equal_target": {
+                  "id": "model0/identity/0/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.07822757561862154,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.47384450361374525
+                },
+                "mixed_far": {
+                  "id": "model0/identity/0/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.13559279030518895,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.5312097183003126
+                },
+                "mixed_near": {
+                  "id": "model0/identity/0/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.059149736975770285,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.454766664970894
+                },
+                "preserve_other": {
+                  "id": "model0/identity/0/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.09419805140054922,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4898149793956729
+                },
+                "scale_separating": {
+                  "id": "model0/identity/0/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.09175158471209324,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4873685127072169
+                }
+              },
+              "absolute_and_decision_criteria": false,
+              "conditional_base": {
+                "equal_target": {
+                  "id": "model0/conditional_base/0/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.026833869869623488,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4224507978647472
+                },
+                "mixed_far": {
+                  "id": "model0/conditional_base/0/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.03210788612114809,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4277248141162718
+                },
+                "mixed_near": {
+                  "id": "model0/conditional_base/0/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.022363589994370624,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4179805179894943
+                },
+                "preserve_other": {
+                  "id": "model0/conditional_base/0/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.028350974380767453,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.42396790237589116
+                },
+                "scale_separating": {
+                  "id": "model0/conditional_base/0/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.03798273617240046,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43359966416752416
+                }
+              },
+              "control_advantages": {
+                "permuted_concept": {
+                  "id": "model0/identity/0/permuted_concept/advantage",
+                  "lower": -0.3629575872740886,
+                  "mean": -0.009107049655394129,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.3447434879633004
+                },
+                "random": {
+                  "id": "model0/identity/0/random/advantage",
+                  "lower": -0.34425431775080123,
+                  "mean": 0.009596219867893269,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.3634467574865878
+                },
+                "shuffled_donor": {
+                  "id": "model0/identity/0/shuffled_donor/advantage",
+                  "lower": -0.33024696679797305,
+                  "mean": 0.023603570820721478,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.37745410843941596
+                },
+                "untrained": {
+                  "id": "model0/identity/0/untrained/advantage",
+                  "lower": -0.2333987396752325,
+                  "mean": 0.12045179794346202,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.4743023355621565
+                }
+              },
+              "decisions": {
+                "mixed_far": {
+                  "id": "model0/identity/0/mixed_far/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.15625,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.5518669279951237
+                },
+                "mixed_near": {
+                  "id": "model0/identity/0/mixed_near/disagreement",
+                  "lower": 0.07313307200487629,
+                  "mean": 0.46875,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.8643669279951237
+                }
+              },
+              "derived_adjusted_effect_mae_upper": {
+                "equal_target": 0.8962953014784925,
+                "mixed_far": 0.9589345324165843,
+                "mixed_near": 0.8727471829603883,
+                "preserve_other": 0.9137828817715641,
+                "scale_separating": 0.9209681768747411
+              },
+              "mae_tolerance_falsified_in_a_stratum": false,
+              "matched_control_specificity": false
+            },
+            {
+              "absolute": {
+                "equal_target": {
+                  "id": "model0/identity/1/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.0778168306596688,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.47343375865479254
+                },
+                "mixed_far": {
+                  "id": "model0/identity/1/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.11146176697974336,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.5070786949748671
+                },
+                "mixed_near": {
+                  "id": "model0/identity/1/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.06139424765917963,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4570111756543033
+                },
+                "preserve_other": {
+                  "id": "model0/identity/1/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.05372448763905996,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.44934141563418367
+                },
+                "scale_separating": {
+                  "id": "model0/identity/1/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.07435038428211355,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.46996731227723726
+                }
+              },
+              "absolute_and_decision_criteria": false,
+              "conditional_base": {
+                "equal_target": {
+                  "id": "model0/conditional_base/1/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.037481579433568196,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43309850742869194
+                },
+                "mixed_far": {
+                  "id": "model0/conditional_base/1/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.042131645983697466,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43774857397882116
+                },
+                "mixed_near": {
+                  "id": "model0/conditional_base/1/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.030899741130811467,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.42651666912593517
+                },
+                "preserve_other": {
+                  "id": "model0/conditional_base/1/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.02315973912813063,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.41877666712325434
+                },
+                "scale_separating": {
+                  "id": "model0/conditional_base/1/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.03428385234602757,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4299007803411513
+                }
+              },
+              "control_advantages": {
+                "permuted_concept": {
+                  "id": "model0/identity/1/permuted_concept/advantage",
+                  "lower": -0.3155077517673218,
+                  "mean": 0.03834278585137266,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.3921933234700672
+                },
+                "random": {
+                  "id": "model0/identity/1/random/advantage",
+                  "lower": -0.3427501259413382,
+                  "mean": 0.01110041167735633,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.3649509492960508
+                },
+                "shuffled_donor": {
+                  "id": "model0/identity/1/shuffled_donor/advantage",
+                  "lower": -0.2971783896428495,
+                  "mean": 0.05667214797584504,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.4105226855945395
+                },
+                "untrained": {
+                  "id": "model0/identity/1/untrained/advantage",
+                  "lower": -0.23016352004786658,
+                  "mean": 0.12368701757082792,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.47753755518952246
+                }
+              },
+              "decisions": {
+                "mixed_far": {
+                  "id": "model0/identity/1/mixed_far/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.0625,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4581169279951237
+                },
+                "mixed_near": {
+                  "id": "model0/identity/1/mixed_near/disagreement",
+                  "lower": 0.1668830720048763,
+                  "mean": 0.5625,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.9581169279951237
+                }
+              },
+              "derived_adjusted_effect_mae_upper": {
+                "equal_target": 0.9065322660834845,
+                "mixed_far": 0.9448272689536883,
+                "mixed_near": 0.8835278447802385,
+                "preserve_other": 0.868118082757438,
+                "scale_separating": 0.8998680926183886
+              },
+              "mae_tolerance_falsified_in_a_stratum": false,
+              "matched_control_specificity": false
+            }
+          ],
+          "selective": false
+        },
+        "inv_eta": {
+          "adequate": false,
+          "roles": [
+            {
+              "absolute": {
+                "equal_target": {
+                  "id": "model0/inv_eta/0/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.06485331980142403,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.46047024779654777
+                },
+                "mixed_far": {
+                  "id": "model0/inv_eta/0/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.12318253640626856,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.5187994644013922
+                },
+                "mixed_near": {
+                  "id": "model0/inv_eta/0/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.06002818643053162,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.45564511442565536
+                },
+                "preserve_other": {
+                  "id": "model0/inv_eta/0/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.09567137802191603,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.49128830601703977
+                },
+                "scale_separating": {
+                  "id": "model0/inv_eta/0/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.09171039817690771,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.48732732617203145
+                }
+              },
+              "absolute_and_decision_criteria": false,
+              "conditional_base": {
+                "equal_target": {
+                  "id": "model0/conditional_base/0/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.026833869869623488,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4224507978647472
+                },
+                "mixed_far": {
+                  "id": "model0/conditional_base/0/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.03210788612114809,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4277248141162718
+                },
+                "mixed_near": {
+                  "id": "model0/conditional_base/0/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.022363589994370624,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4179805179894943
+                },
+                "preserve_other": {
+                  "id": "model0/conditional_base/0/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.028350974380767453,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.42396790237589116
+                },
+                "scale_separating": {
+                  "id": "model0/conditional_base/0/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.03798273617240046,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43359966416752416
+                }
+              },
+              "control_advantages": {
+                "permuted_concept": {
+                  "id": "model0/inv_eta/0/permuted_concept/advantage",
+                  "lower": -0.38043438136751073,
+                  "mean": -0.0265838437488162,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.3272666938698783
+                },
+                "random": {
+                  "id": "model0/inv_eta/0/random/advantage",
+                  "lower": -0.35936206032656237,
+                  "mean": -0.0055115227078678716,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.34833901491082664
+                },
+                "shuffled_donor": {
+                  "id": "model0/inv_eta/0/shuffled_donor/advantage",
+                  "lower": -0.33185594600084045,
+                  "mean": 0.02199459161785407,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.37584512923654856
+                },
+                "untrained": {
+                  "id": "model0/inv_eta/0/untrained/advantage",
+                  "lower": -0.2217148528999432,
+                  "mean": 0.1321356847187513,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.4859862223374458
+                }
+              },
+              "decisions": {
+                "mixed_far": {
+                  "id": "model0/inv_eta/0/mixed_far/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.28125,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.6768669279951237
+                },
+                "mixed_near": {
+                  "id": "model0/inv_eta/0/mixed_near/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.25,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.6456169279951237
+                }
+              },
+              "derived_adjusted_effect_mae_upper": {
+                "equal_target": 0.882921045661295,
+                "mixed_far": 0.946524278517664,
+                "mixed_near": 0.8736256324151497,
+                "preserve_other": 0.915256208392931,
+                "scale_separating": 0.9209269903395556
+              },
+              "mae_tolerance_falsified_in_a_stratum": false,
+              "matched_control_specificity": false
+            },
+            {
+              "absolute": {
+                "equal_target": {
+                  "id": "model0/inv_eta/1/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.08729065065398711,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4829075786491108
+                },
+                "mixed_far": {
+                  "id": "model0/inv_eta/1/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.11654404583128505,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.5121609738264088
+                },
+                "mixed_near": {
+                  "id": "model0/inv_eta/1/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.0677683840047934,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4633853119999171
+                },
+                "preserve_other": {
+                  "id": "model0/inv_eta/1/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.051735670079705094,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4473525980748288
+                },
+                "scale_separating": {
+                  "id": "model0/inv_eta/1/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.07554859923515292,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4711655272302766
+                }
+              },
+              "absolute_and_decision_criteria": false,
+              "conditional_base": {
+                "equal_target": {
+                  "id": "model0/conditional_base/1/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.037481579433568196,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43309850742869194
+                },
+                "mixed_far": {
+                  "id": "model0/conditional_base/1/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.042131645983697466,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43774857397882116
+                },
+                "mixed_near": {
+                  "id": "model0/conditional_base/1/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.030899741130811467,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.42651666912593517
+                },
+                "preserve_other": {
+                  "id": "model0/conditional_base/1/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.02315973912813063,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.41877666712325434
+                },
+                "scale_separating": {
+                  "id": "model0/conditional_base/1/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.03428385234602757,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4299007803411513
+                }
+              },
+              "control_advantages": {
+                "permuted_concept": {
+                  "id": "model0/inv_eta/1/permuted_concept/advantage",
+                  "lower": -0.2849910004733351,
+                  "mean": 0.06885953714535942,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.4227100747640539
+                },
+                "random": {
+                  "id": "model0/inv_eta/1/random/advantage",
+                  "lower": -0.322220236896363,
+                  "mean": 0.03163030072233152,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.38548083834102603
+                },
+                "shuffled_donor": {
+                  "id": "model0/inv_eta/1/shuffled_donor/advantage",
+                  "lower": -0.26406485195433316,
+                  "mean": 0.08978568566436135,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.44363622328305585
+                },
+                "untrained": {
+                  "id": "model0/inv_eta/1/untrained/advantage",
+                  "lower": -0.21955474826157043,
+                  "mean": 0.13429578935712408,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.4881463269758186
+                }
+              },
+              "decisions": {
+                "mixed_far": {
+                  "id": "model0/inv_eta/1/mixed_far/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.3125,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.7081169279951237
+                },
+                "mixed_near": {
+                  "id": "model0/inv_eta/1/mixed_near/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.25,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.6456169279951237
+                }
+              },
+              "derived_adjusted_effect_mae_upper": {
+                "equal_target": 0.9160060860778028,
+                "mixed_far": 0.94990954780523,
+                "mixed_near": 0.8899019811258523,
+                "preserve_other": 0.8661292651980832,
+                "scale_separating": 0.9010663075714279
+              },
+              "mae_tolerance_falsified_in_a_stratum": false,
+              "matched_control_specificity": false
+            }
+          ],
+          "selective": false
+        },
+        "inv_one_minus_eta": {
+          "adequate": false,
+          "roles": [
+            {
+              "absolute": {
+                "equal_target": {
+                  "id": "model0/inv_one_minus_eta/0/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.05184494878184333,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.447461876776967
+                },
+                "mixed_far": {
+                  "id": "model0/inv_one_minus_eta/0/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.08213317240138288,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.47775010039650656
+                },
+                "mixed_near": {
+                  "id": "model0/inv_one_minus_eta/0/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.09054874919445721,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4861656771895809
+                },
+                "preserve_other": {
+                  "id": "model0/inv_one_minus_eta/0/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.0759164943276957,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4715334223228194
+                },
+                "scale_separating": {
+                  "id": "model0/inv_one_minus_eta/0/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.06877158245357023,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.46438851044869395
+                }
+              },
+              "absolute_and_decision_criteria": false,
+              "conditional_base": {
+                "equal_target": {
+                  "id": "model0/conditional_base/0/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.026833869869623488,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4224507978647472
+                },
+                "mixed_far": {
+                  "id": "model0/conditional_base/0/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.03210788612114809,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4277248141162718
+                },
+                "mixed_near": {
+                  "id": "model0/conditional_base/0/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.022363589994370624,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4179805179894943
+                },
+                "preserve_other": {
+                  "id": "model0/conditional_base/0/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.028350974380767453,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.42396790237589116
+                },
+                "scale_separating": {
+                  "id": "model0/conditional_base/0/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.03798273617240046,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43359966416752416
+                }
+              },
+              "control_advantages": {
+                "permuted_concept": {
+                  "id": "model0/inv_one_minus_eta/0/permuted_concept/advantage",
+                  "lower": -0.3624016298767476,
+                  "mean": -0.00855109225805312,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.3452994453606414
+                },
+                "random": {
+                  "id": "model0/inv_one_minus_eta/0/random/advantage",
+                  "lower": -0.346818382381237,
+                  "mean": 0.007032155237457498,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.360882692856152
+                },
+                "shuffled_donor": {
+                  "id": "model0/inv_one_minus_eta/0/shuffled_donor/advantage",
+                  "lower": -0.2899946247032765,
+                  "mean": 0.06385591291541799,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.4177064505341125
+                },
+                "untrained": {
+                  "id": "model0/inv_one_minus_eta/0/untrained/advantage",
+                  "lower": -0.22280976126912247,
+                  "mean": 0.13104077634957204,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.48489131396826657
+                }
+              },
+              "decisions": {
+                "mixed_far": {
+                  "id": "model0/inv_one_minus_eta/0/mixed_far/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.03125,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4268669279951237
+                },
+                "mixed_near": {
+                  "id": "model0/inv_one_minus_eta/0/mixed_near/disagreement",
+                  "lower": 0.010633072004876287,
+                  "mean": 0.40625,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.8018669279951237
+                }
+              },
+              "derived_adjusted_effect_mae_upper": {
+                "equal_target": 0.8699126746417143,
+                "mixed_far": 0.9054749145127783,
+                "mixed_near": 0.9041461951790752,
+                "preserve_other": 0.8955013246987106,
+                "scale_separating": 0.8979881746162182
+              },
+              "mae_tolerance_falsified_in_a_stratum": false,
+              "matched_control_specificity": false
+            },
+            {
+              "absolute": {
+                "equal_target": {
+                  "id": "model0/inv_one_minus_eta/1/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.04223035075796445,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43784727875308815
+                },
+                "mixed_far": {
+                  "id": "model0/inv_one_minus_eta/1/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.09420408512219462,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.48982101311731835
+                },
+                "mixed_near": {
+                  "id": "model0/inv_one_minus_eta/1/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.0929688708261116,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4885857988212353
+                },
+                "preserve_other": {
+                  "id": "model0/inv_one_minus_eta/1/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.0956050080386464,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4912219360337701
+                },
+                "scale_separating": {
+                  "id": "model0/inv_one_minus_eta/1/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.10962601128433816,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.5052429392794618
+                }
+              },
+              "absolute_and_decision_criteria": false,
+              "conditional_base": {
+                "equal_target": {
+                  "id": "model0/conditional_base/1/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.037481579433568196,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43309850742869194
+                },
+                "mixed_far": {
+                  "id": "model0/conditional_base/1/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.042131645983697466,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43774857397882116
+                },
+                "mixed_near": {
+                  "id": "model0/conditional_base/1/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.030899741130811467,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.42651666912593517
+                },
+                "preserve_other": {
+                  "id": "model0/conditional_base/1/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.02315973912813063,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.41877666712325434
+                },
+                "scale_separating": {
+                  "id": "model0/conditional_base/1/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.03428385234602757,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4299007803411513
+                }
+              },
+              "control_advantages": {
+                "permuted_concept": {
+                  "id": "model0/inv_one_minus_eta/1/permuted_concept/advantage",
+                  "lower": -0.37989134586125817,
+                  "mean": -0.02604080824256367,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.32780972937613084
+                },
+                "random": {
+                  "id": "model0/inv_one_minus_eta/1/random/advantage",
+                  "lower": -0.3601538893920639,
+                  "mean": -0.0063033517733693855,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.3475471858453251
+                },
+                "shuffled_donor": {
+                  "id": "model0/inv_one_minus_eta/1/shuffled_donor/advantage",
+                  "lower": -0.3329108261798839,
+                  "mean": 0.02093971143881065,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.37479024905750513
+                },
+                "untrained": {
+                  "id": "model0/inv_one_minus_eta/1/untrained/advantage",
+                  "lower": -0.2561803721788022,
+                  "mean": 0.09767016543989229,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.4515207030585868
+                }
+              },
+              "decisions": {
+                "mixed_far": {
+                  "id": "model0/inv_one_minus_eta/1/mixed_far/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.1875,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.5831169279951237
+                },
+                "mixed_near": {
+                  "id": "model0/inv_one_minus_eta/1/mixed_near/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.21875,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.6143669279951237
+                }
+              },
+              "derived_adjusted_effect_mae_upper": {
+                "equal_target": 0.8709457861817801,
+                "mixed_far": 0.9275695870961396,
+                "mixed_near": 0.9151024679471704,
+                "preserve_other": 0.9099986031570244,
+                "scale_separating": 0.9351437196206132
+              },
+              "mae_tolerance_falsified_in_a_stratum": false,
+              "matched_control_specificity": false
+            }
+          ],
+          "selective": false
+        },
+        "inv_total_cost": {
+          "adequate": false,
+          "roles": [
+            {
+              "absolute": {
+                "equal_target": {
+                  "id": "model0/inv_total_cost/0/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.05048277486365724,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.446099702858781
+                },
+                "mixed_far": {
+                  "id": "model0/inv_total_cost/0/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.06317896112748142,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.45879588912260516
+                },
+                "mixed_near": {
+                  "id": "model0/inv_total_cost/0/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.055674861591436,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4512917895865597
+                },
+                "preserve_other": {
+                  "id": "model0/inv_total_cost/0/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.06225028449990215,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4578672124950259
+                },
+                "scale_separating": {
+                  "id": "model0/inv_total_cost/0/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.05881046311336036,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.45442739110848407
+                }
+              },
+              "absolute_and_decision_criteria": false,
+              "conditional_base": {
+                "equal_target": {
+                  "id": "model0/conditional_base/0/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.026833869869623488,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4224507978647472
+                },
+                "mixed_far": {
+                  "id": "model0/conditional_base/0/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.03210788612114809,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4277248141162718
+                },
+                "mixed_near": {
+                  "id": "model0/conditional_base/0/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.022363589994370624,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4179805179894943
+                },
+                "preserve_other": {
+                  "id": "model0/conditional_base/0/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.028350974380767453,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.42396790237589116
+                },
+                "scale_separating": {
+                  "id": "model0/conditional_base/0/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.03798273617240046,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43359966416752416
+                }
+              },
+              "control_advantages": {
+                "permuted_concept": {
+                  "id": "model0/inv_total_cost/0/permuted_concept/advantage",
+                  "lower": -0.3586823674063116,
+                  "mean": -0.00483182978761707,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.3490187078310774
+                },
+                "random": {
+                  "id": "model0/inv_total_cost/0/random/advantage",
+                  "lower": -0.3474648163943623,
+                  "mean": 0.006385721224332214,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.36023625884302674
+                },
+                "shuffled_donor": {
+                  "id": "model0/inv_total_cost/0/shuffled_donor/advantage",
+                  "lower": -0.32216199751205155,
+                  "mean": 0.031688540106642946,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.38553907772533746
+                },
+                "untrained": {
+                  "id": "model0/inv_total_cost/0/untrained/advantage",
+                  "lower": -0.19006286007656628,
+                  "mean": 0.16378767754212822,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.5176382151608228
+                }
+              },
+              "decisions": {
+                "mixed_far": {
+                  "id": "model0/inv_total_cost/0/mixed_far/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.1875,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.5831169279951237
+                },
+                "mixed_near": {
+                  "id": "model0/inv_total_cost/0/mixed_near/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.25,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.6456169279951237
+                }
+              },
+              "derived_adjusted_effect_mae_upper": {
+                "equal_target": 0.8685505007235281,
+                "mixed_far": 0.8865207032388769,
+                "mixed_near": 0.869272307576054,
+                "preserve_other": 0.881835114870917,
+                "scale_separating": 0.8880270552760082
+              },
+              "mae_tolerance_falsified_in_a_stratum": false,
+              "matched_control_specificity": false
+            },
+            {
+              "absolute": {
+                "equal_target": {
+                  "id": "model0/inv_total_cost/1/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.042515185369616876,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43813211336474056
+                },
+                "mixed_far": {
+                  "id": "model0/inv_total_cost/1/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.06122119444146307,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4568381224365868
+                },
+                "mixed_near": {
+                  "id": "model0/inv_total_cost/1/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.04499875943532992,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.44061568743045365
+                },
+                "preserve_other": {
+                  "id": "model0/inv_total_cost/1/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.05290513702126265,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.44852206501638636
+                },
+                "scale_separating": {
+                  "id": "model0/inv_total_cost/1/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.04568940566824749,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4413063336633712
+                }
+              },
+              "absolute_and_decision_criteria": false,
+              "conditional_base": {
+                "equal_target": {
+                  "id": "model0/conditional_base/1/equal_target/mae",
+                  "lower": 0.0,
+                  "mean": 0.037481579433568196,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43309850742869194
+                },
+                "mixed_far": {
+                  "id": "model0/conditional_base/1/mixed_far/mae",
+                  "lower": 0.0,
+                  "mean": 0.042131645983697466,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.43774857397882116
+                },
+                "mixed_near": {
+                  "id": "model0/conditional_base/1/mixed_near/mae",
+                  "lower": 0.0,
+                  "mean": 0.030899741130811467,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.42651666912593517
+                },
+                "preserve_other": {
+                  "id": "model0/conditional_base/1/preserve_other/mae",
+                  "lower": 0.0,
+                  "mean": 0.02315973912813063,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.41877666712325434
+                },
+                "scale_separating": {
+                  "id": "model0/conditional_base/1/scale_separating/mae",
+                  "lower": 0.0,
+                  "mean": 0.03428385234602757,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4299007803411513
+                }
+              },
+              "control_advantages": {
+                "permuted_concept": {
+                  "id": "model0/inv_total_cost/1/permuted_concept/advantage",
+                  "lower": -0.3414477265961963,
+                  "mean": 0.012402811022498184,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.3662533486411927
+                },
+                "random": {
+                  "id": "model0/inv_total_cost/1/random/advantage",
+                  "lower": -0.3558781079842964,
+                  "mean": -0.0020275703656019066,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.3518229672530926
+                },
+                "shuffled_donor": {
+                  "id": "model0/inv_total_cost/1/shuffled_donor/advantage",
+                  "lower": -0.31042382262377793,
+                  "mean": 0.04342671499491658,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.3972772526136111
+                },
+                "untrained": {
+                  "id": "model0/inv_total_cost/1/untrained/advantage",
+                  "lower": -0.21367641359389974,
+                  "mean": 0.14017412402479476,
+                  "n": 160,
+                  "radius": 0.3538505376186945,
+                  "sample_range": [
+                    -1.0,
+                    1.0
+                  ],
+                  "upper": 0.49402466164348924
+                }
+              },
+              "decisions": {
+                "mixed_far": {
+                  "id": "model0/inv_total_cost/1/mixed_far/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.25,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.6456169279951237
+                },
+                "mixed_near": {
+                  "id": "model0/inv_total_cost/1/mixed_near/disagreement",
+                  "lower": 0.0,
+                  "mean": 0.09375,
+                  "n": 32,
+                  "radius": 0.3956169279951237,
+                  "sample_range": [
+                    0.0,
+                    1.0
+                  ],
+                  "upper": 0.4893669279951237
+                }
+              },
+              "derived_adjusted_effect_mae_upper": {
+                "equal_target": 0.8712306207934325,
+                "mixed_far": 0.8945866964154079,
+                "mixed_near": 0.8671323565563889,
+                "preserve_other": 0.8672987321396407,
+                "scale_separating": 0.8712071140045226
+              },
+              "mae_tolerance_falsified_in_a_stratum": false,
+              "matched_control_specificity": false
+            }
+          ],
+          "selective": false
+        }
+      },
+      "joint_constructive_abstraction_claim": false,
+      "numerical_controls_valid": true,
+      "same_subset_scale_tests": {
+        "inv_eta": [
+          {
+            "advantage": {
+              "id": "model0/inv_eta/0/same_identity_subset_advantage",
+              "lower": -0.7681009335815459,
+              "mean": 0.023132922408701524,
+              "n": 32,
+              "radius": 0.7912338559902474,
+              "sample_range": [
+                -1.0,
+                1.0
+              ],
+              "upper": 0.814366778398949
+            },
+            "distinguished": false,
+            "frequency": {
+              "id": "model0/inv_eta/0/separating_frequency",
+              "lower": 0.6043830720048763,
+              "mean": 1.0,
+              "n": 32,
+              "radius": 0.3956169279951237,
+              "sample_range": [
+                0.0,
+                1.0
+              ],
+              "upper": 1.0
+            }
+          },
+          {
+            "advantage": {
+              "id": "model0/inv_eta/1/same_identity_subset_advantage",
+              "lower": -0.7704414545498022,
+              "mean": 0.020792401440445307,
+              "n": 32,
+              "radius": 0.7912338559902474,
+              "sample_range": [
+                -1.0,
+                1.0
+              ],
+              "upper": 0.8120262574306927
+            },
+            "distinguished": false,
+            "frequency": {
+              "id": "model0/inv_eta/1/separating_frequency",
+              "lower": 0.6043830720048763,
+              "mean": 1.0,
+              "n": 32,
+              "radius": 0.3956169279951237,
+              "sample_range": [
+                0.0,
+                1.0
+              ],
+              "upper": 1.0
+            }
+          }
+        ],
+        "inv_one_minus_eta": [
+          {
+            "advantage": {
+              "id": "model0/inv_one_minus_eta/0/same_identity_subset_advantage",
+              "lower": -0.7497081784062722,
+              "mean": 0.04152567758397524,
+              "n": 32,
+              "radius": 0.7912338559902474,
+              "sample_range": [
+                -1.0,
+                1.0
+              ],
+              "upper": 0.8327595335742226
+            },
+            "distinguished": false,
+            "frequency": {
+              "id": "model0/inv_one_minus_eta/0/separating_frequency",
+              "lower": 0.6043830720048763,
+              "mean": 1.0,
+              "n": 32,
+              "radius": 0.3956169279951237,
+              "sample_range": [
+                0.0,
+                1.0
+              ],
+              "upper": 1.0
+            }
+          },
+          {
+            "advantage": {
+              "id": "model0/inv_one_minus_eta/1/same_identity_subset_advantage",
+              "lower": -0.7396783969105838,
+              "mean": 0.05155545907966369,
+              "n": 32,
+              "radius": 0.7912338559902474,
+              "sample_range": [
+                -1.0,
+                1.0
+              ],
+              "upper": 0.8427893150699111
+            },
+            "distinguished": false,
+            "frequency": {
+              "id": "model0/inv_one_minus_eta/1/separating_frequency",
+              "lower": 0.6043830720048763,
+              "mean": 1.0,
+              "n": 32,
+              "radius": 0.3956169279951237,
+              "sample_range": [
+                0.0,
+                1.0
+              ],
+              "upper": 1.0
+            }
+          }
+        ],
+        "inv_total_cost": [
+          {
+            "advantage": {
+              "id": "model0/inv_total_cost/0/same_identity_subset_advantage",
+              "lower": -0.8372344507575439,
+              "mean": -0.046000594767296496,
+              "n": 32,
+              "radius": 0.7912338559902474,
+              "sample_range": [
+                -1.0,
+                1.0
+              ],
+              "upper": 0.745233261222951
+            },
+            "distinguished": false,
+            "frequency": {
+              "id": "model0/inv_total_cost/0/separating_frequency",
+              "lower": 0.6043830720048763,
+              "mean": 1.0,
+              "n": 32,
+              "radius": 0.3956169279951237,
+              "sample_range": [
+                0.0,
+                1.0
+              ],
+              "upper": 1.0
+            }
+          },
+          {
+            "advantage": {
+              "id": "model0/inv_total_cost/1/same_identity_subset_advantage",
+              "lower": -0.7843727462783284,
+              "mean": 0.006861109711919038,
+              "n": 32,
+              "radius": 0.7912338559902474,
+              "sample_range": [
+                -1.0,
+                1.0
+              ],
+              "upper": 0.7980949657021664
+            },
+            "distinguished": false,
+            "frequency": {
+              "id": "model0/inv_total_cost/1/separating_frequency",
+              "lower": 0.6043830720048763,
+              "mean": 1.0,
+              "n": 32,
+              "radius": 0.3956169279951237,
+              "sample_range": [
+                0.0,
+                1.0
+              ],
+              "upper": 1.0
+            }
+          }
+        ]
+      },
+      "task_ready": false,
+      "unique_absolute_cost_representation_claim": false
+    }
+  ],
+  "pilot_support_criterion_met": false,
+  "schema": "f14-neural-assessment-v1",
+  "scope": "conditional on these frozen models and the stipulated independent pair generators",
+  "supported_prespecified_replicates": 0,
+  "worldwide_novelty_assessed": false
+}

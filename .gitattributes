@@ -1,3 +1,24 @@
 # Experiment JSON files include frozen raw-byte artifacts whose registered
 # hashes predate repository transport. Preserve every committed byte exactly.
 experiments/*.json -text whitespace=cr-at-eol
+
+# F14's prospective manifest binds raw source/configuration bytes. These
+# scoped entries preserve them when core.autocrlf is enabled on Windows.
+.gitattributes -text
+v2/experiments/* -text
+v2/literature/07_f14_protocol_sources.md -text
+verification/test_v2_f14*.py -text
+verification/__init__.py -text
+verification/kernel.py -text
+v2/checks/f05_semantics.py -text
+v2/checks/f06_derived_cases.py -text
+v2/checks/f06_inference_rules.py -text
+v2/checks/f06_residual_discharge.py -text
+v2/checks/f06_source_transport.py -text
+v2/checks/f07_soundness.py -text
+v2/verification/__init__.py -text
+v2/verification/c4_price_revision.py -text
+v2/verification/case_cascade.py -text
+v2/verification/case_reference.py -text
+v2/verification/case_retention.py -text
+v2/verification/model.py -text

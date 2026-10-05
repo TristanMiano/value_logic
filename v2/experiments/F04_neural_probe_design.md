@@ -1,8 +1,15 @@
 # F04 prospective neural discriminator
 
-Status: **design only**. No training, alignment search, held-out result, or F15
-challenge has been run. This is an OPP-02 output required by F04, not a frozen
-F14 benchmark. Any later change must be recorded before collecting its test data.
+**Historical F04 design, preserved below.** At F04 completion this was design
+only: no training, alignment search, held-out result or F15 challenge had run.
+The later **F14 freeze is now complete**, with its definitive
+[protocol](protocol.md), [configuration](config.v1.json),
+[manifest](freeze.v1.json) and [development record](../work_logs/F14_2026-10-04_S1.md).
+F14 performed ordinary-training development and instrument validation; **F15
+remains selected and unstarted**. Statements below about work still required in
+F14 describe the F04 design date, not the current pointer. F14's recorded choices
+supersede this unfrozen design for execution. This note's original F04 content
+and attribution are retained; current handoff by ChatGPT (GPT-6 Astra Pro).
 
 ## Question and falsifiable hypothesis
 
