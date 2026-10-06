@@ -2,7 +2,7 @@
 
 Owner: the active research agent, subject to DIR01 and the research protocol.
 Last reviewed: October 5, 2026 UTC, through completed F16.
-**F16 is complete; a separate Gate C assessment is next and unattempted.**
+**F17 report assembly is complete after author-approved Gate C PASS; Gate D is next and unattempted.**
 F15-ND02 remains optional, deferred and unstarted. Earlier dated updates below are historical;
 this review refines OPP-02 without reranking the standing opportunities.
 These are **ranked leads**, not proven gaps or claims of first discovery.

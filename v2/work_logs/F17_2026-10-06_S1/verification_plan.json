@@ -1,0 +1,45 @@
+{
+  "task": "F17",
+  "recorded_utc": "2026-10-06T17:32:48.309019+00:00",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "question": "Do both frozen identities and saved report outputs remain exactly reproducible after report assembly?",
+  "commands": {
+    "f14_freeze": [
+      "-m",
+      "v2.experiments.freeze",
+      "verify"
+    ],
+    "f15_saved": [
+      "-m",
+      "v2.experiments.summarize_f15",
+      "--check"
+    ],
+    "nd01_saved": [
+      "-m",
+      "v2.experiments.neural_diagnostic_v1.runner",
+      "verify"
+    ],
+    "nd01_summary": [
+      "v2/experiments/F15_ND01_analysis/summarize.py",
+      "--check"
+    ],
+    "f17_tables": [
+      "v2/reporting/build_f17_tables.py",
+      "--check"
+    ]
+  },
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "scope": "Read-only existing artifact validation. No training, alignment, population generation, statistical refit or changed experimental stage.",
+  "execution": "Independent checks may run concurrently in separate processes; child resource costs reported separately, never added to principal engaged time.",
+  "attempt_contract": "One named exclusive verification attempt per label. Preserve failures; a reader defect requires a recorded correction and a distinct audit attempt. This does not authorize F15/ND01 scientific retries.",
+  "runner_sha256": "5c2ce8c4ca75ccdc8182cccf75c64caa52b278441216577cd756f05cac915577",
+  "expected": "F14-v1 34-file identity; F15 saved 6-file check; ND01 freeze and existing units; ND01 4-file summary; F17 derived tables byte comparison. Exact counts come from actual stdout."
+}

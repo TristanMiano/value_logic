@@ -3,7 +3,7 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01–F15 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied; Gate C assessed, PASS recommended, author decision pending; D unattempted.
+not new results. F01–F17 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied; Gate C PASS approved by the author; F17 complete at report-assembly scope; D unattempted.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
@@ -11,21 +11,25 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 
 ## Current status
 
-**Gate C assessment complete: PASS recommended; author decision pending.**
-October 6, 2026 UTC. [C_1](checkpoints/C_1.md) finds technical readiness met
-and the bounded application/formal-adaptation contribution supported, with
-the strongest ordinary-baseline objection addressed explicitly. The current
-Linux regression passed **288 tests on attempt 1**. The saved F15 recount
-confirms **68 useful episodes**, including **15 distinct uncertain,
-approximate selective cases**. The neural result remains **0/5 complete
-support**. Both freezes and all 973 saved scientific files are unchanged.
+**F17 complete at report-assembly scope; Gate D is next and unattempted.**
+October 6, 2026 UTC. The author [approved Gate C PASS](decisions/2026-10-06_gate_c_pass.md)
+and selected F17. [paper_v2.md](../paper_v2.md) assembles the accepted question,
+mathematics, worked uses, implementations, frozen outcomes, ordinary controls,
+comparisons and open directions. Its [42-group claim map](reporting/F17_v1/claim_map.json),
+[tables](reporting/F17_v1/tables.json) and [bibliography](reporting/F17_v1/references.bib)
+make the report reproducible and traceable. Fixed-snapshot mathematical,
+empirical and literature reviews found local reporting clarifications, now
+resolved. Five read-only saved-artifact commands passed on attempt 1; the
+prior 288-test Gate C regression remains historical evidence.
 
-**The active pointer is the author's decision to continue or recurse.**
-The recommendation favors F17, but the Gate C checkbox stays unchecked and
-F17, Gate D and optional F15-ND02 remain unstarted. The
-[work record](work_logs/C_2026-10-06_S1.md) preserves attempts, clocks, cycle
-allocation and delivery. Contributor: **ChatGPT (GPT-6 Astra Pro)**, with
-attributed internal reviews.
+C4-S retains bounded support as modest synthesis/formal adaptation with
+specialized mathematical application. The original **68/160 useful retention
+episodes** and **0/5 complete neural support** remain unchanged. Neither a
+unique learned utility representation nor broad practical superiority or
+worldwide priority is established. Optional **F15-ND02 Research90** is deferred
+and unstarted. [F17 work, reviews and exact accounting](work_logs/F17_2026-10-06_S1.md).
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. A/B retain scoped passes, C is
+approved, and Gate D remains a separate required audit.
 
 ### Preserved F16 completion
 
@@ -48,7 +52,7 @@ methods can use the same construction. Worldwide priority, broad practical
 superiority and a learned causal utility representation remain unestablished.
 The [F16 work record](work_logs/F16_2026-10-05_S1.md) controls D60/Research90 and
 final accounting. **At F16 close, a separate Gate C assessment was recommended;
-the completed C_1 assessment is now above.** F17 is unstarted. Optional **F15-ND02,
+the approved C_1 assessment and F17 report are now above.** Optional **F15-ND02,
 Research90**, remains deferred and unstarted, available after F16 or later if
 selected in [OPP-02](opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2).
 F16 contribution: **ChatGPT (GPT-6 Astra Pro)**, with attributed delegated review.
@@ -86,7 +90,7 @@ These were ND01's entry totals; its completed increment is recorded separately
 in the ND01 work log: **99.487395 recorded engaged / 90.797984 research minutes**.
 **At ND01 close**, POST-B-1 was **801.130388**, leaving **158.869612** to sixteen
 hours. F16 starts from that cumulative total without a reset; its work record
-controls the new increment. Gates A/B retain scoped passes and Gate C assessed, PASS recommended, author decision pending; D unattempted.
+controls the new increment. Gates A/B retain scoped passes and Gate C PASS approved by the author; F17 complete at report-assembly scope; D unattempted.
 
 ### Preserved F14 completion
 
@@ -125,7 +129,7 @@ R-N01-01 closed at this narrowed scope, subject to the subsequent F16 challenge.
 F16 retains the bounded claim; its current assessment is above.
 **At C4 close, F14 was selected with protected research90, central/high
 105/155 engaged minutes.** [Eight-hour review](checkpoints/POST_B_8H_1.md).
-Contributor: **Codex (GPT-6)**. A/B retain their scoped passes; Gate C assessed, PASS recommended, author decision pending; D unattempted.
+Contributor: **Codex (GPT-6)**. A/B retain their scoped passes; Gate C PASS approved by the author; F17 complete at report-assembly scope; D unattempted.
 
 The following completion records preserve the earlier findings and selections.
 
@@ -140,7 +144,7 @@ no final aggregate pass after bounded native failures.
 [Timing, review and floor assessment](work_logs/F13_2026-10-04_S1.md).
 F13 selected **R-N01-01/C4 reconsideration before F14**, now completed above,
 with [protected research60 and an original central 70-minute forecast](contribution_plan.md#11-f13-close-and-selected-c4-reconsideration).
-Contributor: **Codex (GPT-6)**. Gate C assessed, PASS recommended, author decision pending; D unattempted.
+Contributor: **Codex (GPT-6)**. Gate C PASS approved by the author; F17 complete at report-assembly scope; D unattempted.
 
 **F12/C2 is complete at differential/cost scope**, with **60.919966 engaged E
 minutes**. The [results](verification/F12_results.md) cover 3,510 scientific
@@ -231,7 +235,7 @@ comparisons. **19 new hostile tests passed**, with 13 cap values, 221 direct
 rational points and three received composite examples. Three full-suite and
 three aggregate F05–F09/Gate-B attempts crashed natively; no current broad-suite
 pass is claimed. All six prior protected floors were audited. The kernel is
-unchanged. **N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied; Gate C assessed, PASS recommended, author decision pending; D unattempted.**
+unchanged. **N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied; Gate C PASS approved by the author; F17 complete at report-assembly scope; D unattempted.**
 Research contributor: **Codex (GPT-6)**. Gate B has no protected minimum; its
 [work record](work_logs/B_1_2026-09-30_S1.md) preserves actual timing. Cycle III
 prospectively uses D/L/E 35/10/55 and R/X 60/40, with the existing floors and
@@ -300,7 +304,7 @@ All **64 F08 tests** passed across successful runs (61 combined before the last
 three additions; 22 final report/transfer tests). A **1,361-test full snapshot**
 passed; final broad reruns encountered native/interpreter failures, so no clean
 final 1,364-test or CI pass is claimed. Gate A retains readiness PASS; Gate B has
-now passed; Gate C assessed, PASS recommended, author decision pending; D unattempted. F11's later bounded integration is complete.
+now passed; Gate C PASS approved by the author; F17 complete at report-assembly scope; D unattempted. F11's later bounded integration is complete.
 The original kernel remains unchanged.
 
 ```text
@@ -352,9 +356,8 @@ The [completion record](work_logs/F05_2026-09-27_S2.md) records 30.063473 D minu
 this session and **60.320288 cumulative F05 D minutes**. The continuation alternative
 remains live; the semantics is provisional, not a completed deductive calculus.
 
-**Current handoff: Gate C assessed; PASS recommended, author decision pending.**
-The author retains the final continue/recurse decision. Gate D and F17 remain
-unstarted. F16, F15 and ND01 retain their completed scopes
+**Current handoff: F17 assembled after author-approved Gate C PASS.**
+Gate D is next and unattempted. F16, F15 and ND01 retain their completed scopes
 and protected floors. Gate A remains passed at its existing scope. F14 performed
 neural development training only; the later F15 evaluation is reported above.
 F05's supplied-model discovery
@@ -410,7 +413,7 @@ retains the [PLAN01](decisions/2026-09-30_novelty_and_recurrence.md) novelty req
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f04*.py'
 ```
-Gate A passed at foundation-selection readiness. Gate B has now passed mathematical readiness; the core remains provisional and Gate C assessed, PASS recommended, author decision pending; D unattempted.
+Gate A passed at foundation-selection readiness. Gate B has now passed mathematical readiness; the core remains provisional and Gate C PASS approved by the author; F17 complete at report-assembly scope; D unattempted.
 
 The [gate reconstruction](checkpoints/A_1_reconstruction.md) and [timing audit](checkpoints/A_1_timing_review.json) preserve the basis for that decision. Its 17 independent-implementation fixtures can be run with:
 

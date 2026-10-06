@@ -1,0 +1,45 @@
+{
+  "schema": "F17-final-preservation-check-v1",
+  "recorded_utc": "2026-10-06T17:50:13.601289+00:00",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "principal_credit": 0,
+  "scope": "Final administrative source/manifest/state and staged-whitespace check; no science executed.",
+  "completion_manifest_bindings_verified": 16,
+  "clock_stopped": true,
+  "gate_c_author_approved": true,
+  "F17_complete": true,
+  "gate_d_unattempted": true,
+  "strict_whitespace_check": {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "returncode": 2,
+    "stdout": "v2/decisions/2026-10-06_gate_c_pass.md:17: new blank line at EOF.\nv2/work_logs/F17_2026-10-06_S1/brief.md:38: new blank line at EOF.\nv2/work_logs/F17_2026-10-06_S1/drafts/core_v1.md:865: new blank line at EOF.\n",
+    "stderr": "",
+    "disposition": "Three additional blank EOF lines only, in the approval record, editorial brief and preserved reviewed core snapshot. Retain bytes and hashes; no semantic or current-report defect. This is not an unconditional strict-whitespace pass."
+  },
+  "scoped_whitespace_check": {
+    "command": [
+      "git",
+      "-c",
+      "core.whitespace=-blank-at-eof",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "scope": "All other whitespace checks, with only blank-at-EOF disabled for this invocation; no Git configuration mutation."
+  },
+  "report_sha256": "18c45d7df537c6e8a076793c9e38412e5c8d887995ba041d2ee9cbf51971bc8d",
+  "transfer_preflight_correction": {
+    "failure": "A sed pattern used the wrong quote style and left the previous transfer-directory name unchanged. The exclusive-directory guard stopped the packing rerun with FileExistsError before writing.",
+    "disposition": "The old prepared snapshot is preserved. Correct the literal path in the administrative packer and create the final staged transfer snapshot. This is not a scientific attempt or a changed experiment output directory.",
+    "scientific_mutation": false,
+    "principal_time_credit": 0
+  }
+}

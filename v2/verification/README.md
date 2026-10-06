@@ -1,16 +1,16 @@
 # Phase-two verification: producer, experiments and adversarial review
 
-**Gate C assessment complete, October 6: PASS recommended; author decision pending.**
-The [technical review](../work_logs/C_2026-10-06_S1/reviews/technical/technical_review.md)
-records a current **288-test Linux pass on attempt 1** across Gate B, F07,
-F11, F12 and both F13 modules. All 266 tracked Python sources are unchanged.
-The [saved-result recount](../work_logs/C_2026-10-06_S1/saved_results_attempt1/summary.json)
-confirms F15's prospective usefulness criterion, and the integrity review
-preserves both freezes and all 973 scientific files. This is a current scoped
-regression and read-only audit, not a rerun of F15/ND01 or a whole-suite pass.
-[C_1](../checkpoints/C_1.md) separates technical readiness and supported
-contribution from the author's final decision. F17/D/ND02 remain unstarted.
-Contributor: **ChatGPT (GPT-6 Astra Pro)**, with attributed internal reviews.
+**F17 reporting verification complete, October 6; Gate D unattempted.**
+The author [approved Gate C PASS](../decisions/2026-10-06_gate_c_pass.md).
+The [report](../../paper_v2.md) and [claim map](../reporting/F17_v1/claim_map.json)
+retain the accepted mathematical and empirical scopes. [Five read-only checks](../work_logs/F17_2026-10-06_S1/verification_summary.json)
+passed on attempt 1: F14 freeze, F15 derived outputs, ND01 saved artifacts,
+ND01 summaries and F17 tables. The earlier
+[Gate C technical review](../work_logs/C_2026-10-06_S1/reviews/technical/technical_review.md)
+records 288 focused Linux tests on attempt 1. It remains historical regression
+provenance, distinct from F17 saved-data verification and from a whole-suite
+or Windows pass. No experiment was rerun. [F17 reviews and accounting](../work_logs/F17_2026-10-06_S1.md).
+Optional F15-ND02 remains deferred and unstarted. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 
 **F11 and F12 complete at their task scopes; both E60 floors satisfied.** Contributor: **Codex (GPT-6)**,
 October 3, 2026 local / October 4 UTC. This package implements the
@@ -42,8 +42,8 @@ The [F16 work record](../work_logs/F16_2026-10-05_S1.md) controls its protected
 D60/Research90 and final accounting. C4-S remains a bounded modest
 synthesis/application; no worldwide-priority or general performance claim is
 established. F16 selected a separate Gate C assessment; C_1 is now complete
-above, with the author decision pending. F17/D and optional deferred F15-ND02
-remain unstarted.
+above, with author approval followed by F17 assembly. D and optional deferred
+F15-ND02 remain unstarted.
 
 F15 completed frozen-challenge reporting with E60 satisfied, and
 [its results](../experiments/results.md) preserve 68 distinct useful retention
@@ -266,5 +266,5 @@ separate reference is an implementation distinction, not independent authorship.
 Contribution scope, practical advantage, empirical premise validity, general
 completeness and phase-two completion remain separate claims. C4 supports only
 the modest contribution described above. F13–F15, C4 and ND01 retain their
-completed scopes; F16's current handoff is above. After F16 closure the next
-pointer is the author decision on C_1; PASS is recommended and Gate D remains unattempted.
+completed scopes; their historical handoffs are above. After author-approved
+C_1 PASS and F17 report assembly, Gate D is next and unattempted.

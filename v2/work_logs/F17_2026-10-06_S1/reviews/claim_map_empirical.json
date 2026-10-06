@@ -1,0 +1,616 @@
+{
+  "claim_count": 14,
+  "claims": [
+    {
+      "claim_id": "F17-E01",
+      "disposition": "SUPPORTED_AT_RECORDED_FOCUSED_SCOPE",
+      "evidence": [
+        {
+          "locator": "reported_tests=288; attempt=1; exit_code=0; wall_seconds=56.759545926",
+          "path": "v2/work_logs/C_2026-10-06_S1/reviews/technical/regression_attempt1/result.json",
+          "sha256": "2c5c6cd29f9acf59e61850f804212101331aae0fadb4ba6dd3fbb282b3b9e3f2"
+        },
+        {
+          "locator": "command, modules, environment_overrides, entry_commit and excluded",
+          "path": "v2/work_logs/C_2026-10-06_S1/reviews/technical/regression_plan.json",
+          "sha256": "2afd91cefc86ec4a1db00baae4f64783d693bdd55fd20e71b87c44f9d726fed6"
+        },
+        {
+          "locator": "§2.1 Source and environment; §2.2 focused tests; §6 verification limits",
+          "path": "v2/experiments/results.md",
+          "sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74"
+        }
+      ],
+      "kind": "execution record",
+      "precise_claim": "The most recent pre-report Gate C Linux regression passed 288 distinct selected tests on attempt 1; the prior unchanged F14-focused Linux suite passed 78.",
+      "prior_claim_ids": [
+        "C1-T",
+        "F15-C14"
+      ],
+      "scope": "Historical observed focused-suite results, not F17 testing or a current whole-repository/Windows pass. The 288 command excludes experimental preparation/evaluation and PyTorch-dependent legacy modules.",
+      "section": [
+        "9.1",
+        "13.2"
+      ]
+    },
+    {
+      "claim_id": "F17-E02",
+      "disposition": "SUPPORTED_BY_ORIGINAL_MARKERS",
+      "evidence": [
+        {
+          "locator": "whole manifest; SHA256 b860021d3cb26705196b75d6b13277135d0c9220c266b21e05d7d11e719b2f9c",
+          "path": "v2/experiments/freeze.v1.json",
+          "sha256": "b860021d3cb26705196b75d6b13277135d0c9220c266b21e05d7d11e719b2f9c"
+        },
+        {
+          "locator": "neural.numpy_version, run_policy, retention and neural seeds/budgets",
+          "path": "v2/experiments/config.v1.json",
+          "sha256": "ea76f361eb1f2f055e6fa09096ba87fc5558bfe679982466e6de9543541d1918"
+        },
+        {
+          "locator": "models[0:5], completed_utc, attempt and evaluation_started",
+          "path": "v2/work_logs/F15_v1_run1/preparation_complete.json",
+          "sha256": "89a97b417c5862cf6b5aaf31bc9e9b9933e90a526dc6b9af57e0c548426a3041"
+        },
+        {
+          "locator": "all_five_validated, models, validated_utc and absent evaluation marker",
+          "path": "v2/work_logs/F15_2026-10-04_S1/pre_evaluation_validation.json",
+          "sha256": "26aa187265abe2352e19722bd365c97abb279f88cb248c08694205fd6455c2e1"
+        },
+        {
+          "locator": "started_utc and preparation_manifest_sha256",
+          "path": "v2/work_logs/F15_v1_run1/evaluation_start.json",
+          "sha256": "582a472ce09471b3415ef72cb927116d784dc4b7dea9f1cf04af1291838a1f44"
+        },
+        {
+          "locator": "started_utc, completed_utc, attempt and complete stage outputs",
+          "path": "v2/work_logs/F15_v1_run1/evaluation_complete.json",
+          "sha256": "807d52c37162a1d87c884ea31246ffc33bef5b5e66ac81813c177fd9e125d9d2"
+        },
+        {
+          "locator": "observed interpreter, NumPy and numerical library/thread information",
+          "path": "v2/work_logs/F15_2026-10-04_S1/environment.json",
+          "sha256": "dbce3fecdb7a0c441053a74eba5a28165e4e754c5a703bc316bdac3b13a81c5e"
+        },
+        {
+          "locator": "preparation_chronology_utc; all_five_prepared_hashed_validated_before_exposure",
+          "path": "v2/work_logs/C_2026-10-06_S1/saved_results_attempt1/summary.json",
+          "sha256": "6e3717198e4412dbd941d4e933409d4627ebd7dd415305bde6b7de708440c7f0"
+        }
+      ],
+      "kind": "prospective protocol and execution provenance",
+      "precise_claim": "F14-v1 freezes 34 files. F15 durably prepared, hashed and independently reloaded all five networks and selected alignments before generating any final retention or neural population. Both F15 stages completed on attempt 1.",
+      "prior_claim_ids": [
+        "F14-C01",
+        "F15-C01",
+        "C1-I"
+      ],
+      "scope": "CPython 3.12.14, NumPy 2.3.5, Linux and prescribed single-thread settings; original F14 development excluded. Recorded preparation/validation/exposure/completion order does not imply absence of unrecorded work elsewhere.",
+      "section": [
+        "9.2",
+        "13.1"
+      ]
+    },
+    {
+      "claim_id": "F17-E03",
+      "disposition": "SUPPORTED_ON_STIPULATED_GENERATOR",
+      "evidence": [
+        {
+          "locator": "§§2–3 population and information contracts",
+          "path": "v2/experiments/protocol.md",
+          "sha256": "21b188b6caeea5fde10323128fcdad8670507d8f5b6793e2fc80380689699d58"
+        },
+        {
+          "locator": "case_count, method_rows, numeric_dispositions, decision_dispositions and native_dispositions",
+          "path": "v2/work_logs/F15_v1_run1/evaluation_attempt_1/retention_assessment.json",
+          "sha256": "ab29d9216bc1da271131cc3ac75d5d811749d68e9b7d6002a5b2789441e1d34b"
+        },
+        {
+          "locator": "retention.denominators_and_totals and retention.method_rows; source_manifest binds all 160 original case units and sidecars",
+          "path": "v2/reporting/F17_v1/tables.json",
+          "sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10"
+        },
+        {
+          "locator": "build(): fixed seed/variant unit reads, complete arm check and disposition/resource aggregation",
+          "path": "v2/reporting/build_f17_tables.py",
+          "sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5"
+        },
+        {
+          "locator": "§§3.1–3.2 complete original arm table",
+          "path": "v2/experiments/results.md",
+          "sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74"
+        }
+      ],
+      "kind": "frozen empirical descriptive result",
+      "precise_claim": "Sixteen initial population laws with ten dependent revisions each produce 160 episodes, 1,920 method/access rows and 11,520 scalar queries. Twelve arm tables yield 8,624 exact, 616 approximate and 2,280 refused scalar answers; 1,220 certified orders, 368 certified fallbacks and 332 refusals; 1,226 native receipts.",
+      "prior_claim_ids": [
+        "F15-C03",
+        "F15-C06",
+        "F15-C07"
+      ],
+      "scope": "Six methods × two access regimes. Revisions share initial laws and methods share episodes; neither episodes nor rows constitute that many independent population replications. Exact stipulated source laws do not establish deployment calibration.",
+      "section": [
+        "9.2",
+        "9.3"
+      ]
+    },
+    {
+      "claim_id": "F17-E04",
+      "disposition": "SUPPORTED",
+      "evidence": [
+        {
+          "locator": "§6 Retention correctness and useful application criteria",
+          "path": "v2/experiments/protocol.md",
+          "sha256": "21b188b6caeea5fde10323128fcdad8670507d8f5b6793e2fc80380689699d58"
+        },
+        {
+          "locator": "bounded_application_criterion_met, useful_distinct_cases, useful_distinct_seeds, uncertain_approximate_selective_useful_cases",
+          "path": "v2/work_logs/F15_v1_run1/evaluation_attempt_1/retention_assessment.json",
+          "sha256": "ab29d9216bc1da271131cc3ac75d5d811749d68e9b7d6002a5b2789441e1d34b"
+        },
+        {
+          "locator": "useful_episode_keys, selective_approximate_episode_keys, useful_episodes_by_variant and distinct counts",
+          "path": "v2/work_logs/C_2026-10-06_S1/saved_results_attempt1/summary.json",
+          "sha256": "6e3717198e4412dbd941d4e933409d4627ebd7dd415305bde6b7de708440c7f0"
+        },
+        {
+          "locator": "retention.denominators_and_totals",
+          "path": "v2/reporting/F17_v1/tables.json",
+          "sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10"
+        },
+        {
+          "locator": "useful_native(): exact full native conjunction; build(): episode deduplication and Gate C identity comparison",
+          "path": "v2/reporting/build_f17_tables.py",
+          "sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5"
+        }
+      ],
+      "kind": "prospectively defined empirical application criterion",
+      "precise_claim": "The prospective useful-derivation criterion is met in 68 distinct episodes across all 16 seeds: direct-variant counts 14,14,9,16,15. Thirty qualifying selective/approximate no-reacquisition method rows correspond to 15 distinct episodes over eight seeds; 718 useful method rows repeat the 68 episodes.",
+      "prior_claim_ids": [
+        "F15-C04",
+        "C1-U"
+      ],
+      "scope": "Requires an executed nonfallback order, received current native bound <= -1/20, at least two distinct nonzero source premises, and same-law regret <=1/20 after direct price/program revision. At least four episodes/two seeds/both revision types and one uncertain approximate selected cost were required. Not a speed or novelty criterion.",
+      "section": [
+        "9.3"
+      ]
+    },
+    {
+      "claim_id": "F17-E05",
+      "disposition": "SUPPORTED; EXCLUSIVE_NUMERICAL_CAPABILITY_NOT_SUPPORTED",
+      "evidence": [
+        {
+          "locator": "equal_information_control_comparisons: 960 records with ordinary_quality_and_acquisition_equal, native_semantic_target_equal and native_receipt_status_equal",
+          "path": "v2/work_logs/F15_v1_run1/evaluation_attempt_1/retention_assessment.json",
+          "sha256": "ab29d9216bc1da271131cc3ac75d5d811749d68e9b7d6002a5b2789441e1d34b"
+        },
+        {
+          "locator": "saved_equal_information_comparisons_all_agree and control_scope",
+          "path": "v2/work_logs/C_2026-10-06_S1/saved_results_attempt1/summary.json",
+          "sha256": "6e3717198e4412dbd941d4e933409d4627ebd7dd415305bde6b7de708440c7f0"
+        },
+        {
+          "locator": "retention.denominators_and_totals.saved_equal_information_comparisons_all_agree; paired equal method rows",
+          "path": "v2/reporting/F17_v1/tables.json",
+          "sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10"
+        },
+        {
+          "locator": "§3.3 Useful application, without a claim of exclusive power",
+          "path": "v2/experiments/results.md",
+          "sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74"
+        }
+      ],
+      "kind": "matched ordinary control result",
+      "precise_claim": "All 960 saved nonredundant equal-information comparisons agree; ordinary exact interval optimization reproduces tailored numerical/decision/native/acquisition service.",
+      "prior_claim_ids": [
+        "F15-C05"
+      ],
+      "scope": "Comparisons pair cached/fresh, full_joint/fresh and tailored/exact_intervals within each access regime. Marginal diagnostic has weaker information and is not the strongest ordinary comparator. Agreement excludes an exclusive numerical capability claim, while not independently deciding synthesis novelty.",
+      "section": [
+        "9.3",
+        "9.4"
+      ]
+    },
+    {
+      "claim_id": "F17-E06",
+      "disposition": "MEASUREMENTS_SUPPORTED; GENERAL_SUPERIORITY_NOT_ESTABLISHED",
+      "evidence": [
+        {
+          "locator": "resources, acquisition_scalar_histogram and complete 12-arm summaries",
+          "path": "v2/experiments/F15_v1_analysis/retention_by_method.json",
+          "sha256": "6cf6ea83d0c252fe7df3e21fce5090eff608d6ed0e9f8193f1fa6415d5d03391"
+        },
+        {
+          "locator": "quality-matched complete-case resource comparisons",
+          "path": "v2/work_logs/F15_2026-10-04_S1/retention_case_analysis.json",
+          "sha256": "d4509143a050c398d0c578e598e81adfcf73e1c5cb0a694d6eea5ee240112f3b"
+        },
+        {
+          "locator": "retention.method_rows[*].resources and historical_process_cost_records",
+          "path": "v2/reporting/F17_v1/tables.json",
+          "sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10"
+        },
+        {
+          "locator": "observed_wall_seconds=7.628115728999546; child CPU and child_max_rss_kib=44020",
+          "path": "v2/work_logs/F15_2026-10-04_S1/commands/prepare_attempt1.end.json",
+          "sha256": "e7a7a1bd0d7ac9c1172b7d66517bc134317854c424ac17e57142a7c1cba02a66"
+        },
+        {
+          "locator": "observed_wall_seconds=184.2747255180002; child CPU sum=184.249148; child_max_rss_kib=248364",
+          "path": "v2/work_logs/F15_2026-10-04_S1/commands/evaluate_attempt1.end.json",
+          "sha256": "191409b5cdfbc69aa398f45f8ed1b27ebe52778fdd2529a70c98329da9e97ebe"
+        },
+        {
+          "locator": "§4 resource vector, equal-quality comparisons, fees and horizon limitations",
+          "path": "v2/experiments/results.md",
+          "sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74"
+        }
+      ],
+      "kind": "resource measurements and negative performance disposition",
+      "precise_claim": "Retained bytes, update time and acquisition costs do not establish general speed or memory superiority. Fresh no-reacquisition arithmetic/native-inclusive means are 1.005003/72.134739 ms; tailored 5.984763/81.452699 ms. Cached is slower in all 98 matched no-reacquisition admitted-service cases, mean +81.113254 ms. Tailored/ordinary-interval payload medians 125/143 bytes; tailored/fresh stored-upper medians 21,503/20,527 bytes. Adaptive repairs total 412=60 two-mean+352 eight-field. Original F15 external preparation/evaluation costs are 7.628116/184.274726 wall seconds.",
+      "prior_claim_ids": [
+        "F15-C07",
+        "F15-C08"
+      ],
+      "scope": "Measured local process/serialized resources; native subtimers nest, arithmetic and receipt-required service differ. Adaptive acquisition is quality-first. Serialized bytes are not process RSS. Horizons are algebraic I+hU projections, not observed repeated-update trajectories.",
+      "section": [
+        "9.4",
+        "13.2"
+      ]
+    },
+    {
+      "claim_id": "F17-E07",
+      "disposition": "SUPPORTED_AT_REGISTERED_READINESS_SCOPE",
+      "evidence": [
+        {
+          "locator": "neural width, batch_size, training_steps, model_seeds and discovery/evaluation counts",
+          "path": "v2/experiments/config.v1.json",
+          "sha256": "ea76f361eb1f2f055e6fa09096ba87fc5558bfe679982466e6de9543541d1918"
+        },
+        {
+          "locator": "models[*].task_ready and conditional_base intervals",
+          "path": "v2/work_logs/F15_v1_run1/evaluation_attempt_1/neural_assessment.json",
+          "sha256": "29c937bb58322923227cfce80b5be5e13483bcb874a901b3c184252a98bfa64e"
+        },
+        {
+          "locator": "neural.binary_training_labels, expected_cost_training_labels, task_ready_models and candidate_evaluations",
+          "path": "v2/experiments/F15_v1_analysis/summary.json",
+          "sha256": "3b33872a6a9c9c6a13518de1229e0570ee6d2164fd5d0edbd605e12374895d25"
+        },
+        {
+          "locator": "original_neural.task_ready_models and conditional_base_counts",
+          "path": "v2/reporting/F17_v1/tables.json",
+          "sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10"
+        },
+        {
+          "locator": "§§5.1–5.2 task definition, training/discovery distinction and readiness",
+          "path": "v2/experiments/results.md",
+          "sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74"
+        }
+      ],
+      "kind": "frozen task competence result and training provenance",
+      "precise_claim": "All five 193-parameter, 32-ReLU ordinary networks met task readiness and all 50 conditional-base accuracy cells passed. Training used 768,000 binary labels per model over 3,000 steps, 3,840,000 total, and no expected-cost training labels; cost-derived counterfactual targets were used in subsequent alignment discovery.",
+      "prior_claim_ids": [
+        "F15-C09"
+      ],
+      "scope": "Four-input weighted binary-cross-entropy task, fixed architecture/budget/five models and recorded mean-error criteria. Task success is not perfect prediction or a population-wide training-success rate. Label absence applies to original training, not discovery.",
+      "section": [
+        "10.1",
+        "10.2"
+      ]
+    },
+    {
+      "claim_id": "F17-E08",
+      "disposition": "COMPLETE_SUPPORT_NOT_ESTABLISHED; ORIGINAL_DISPOSITIONS_PRESERVED",
+      "evidence": [
+        {
+          "locator": "supported_prespecified_replicates, pilot_support_criterion_met, actual_interval_rows and models[*] hypotheses",
+          "path": "v2/work_logs/F15_v1_run1/evaluation_attempt_1/neural_assessment.json",
+          "sha256": "29c937bb58322923227cfce80b5be5e13483bcb874a901b3c184252a98bfa64e"
+        },
+        {
+          "locator": "all560 original rows with full-precision intervals and dispositions",
+          "path": "v2/experiments/F15_v1_analysis/neural_interval_rows.json",
+          "sha256": "17268e8841855d55f1f8c3f0609a82070e61a18c2f6e51d45338cbd9bdaf8df0"
+        },
+        {
+          "locator": "original_neural.hypothesis_rows, identity_control_rows, overall_interval_counts and complete_identity_supported_models",
+          "path": "v2/reporting/F17_v1/tables.json",
+          "sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10"
+        },
+        {
+          "locator": "§§5.3–5.4 support/inconclusiveness/violations, all matched controls and rival scales",
+          "path": "v2/experiments/results.md",
+          "sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74"
+        }
+      ],
+      "kind": "frozen simultaneous empirical endpoint",
+      "precise_claim": "Original complete identity support is 0/5 with at least4/5 required. Identity MAE CI dispositions are 2 supported/48 inconclusive/0 violated; near decisions3/6/1 and far10/10 supported. Required .01 control advantages are random0/10, permuted1/10, incorrect-donor10/10 and untrained10/10 supported. Each of three rival scales has0/5 complete support. The original simultaneous family is560 intervals at alpha .05.",
+      "prior_claim_ids": [
+        "F15-C10",
+        "F15-C11",
+        "C1-N"
+      ],
+      "scope": "Same frozen selected subsets, four prespecified scales and controls, unchanged discovery/evaluation. Non-support is not universal representation falsification; a violated .01 advantage does not imply a statistically negative advantage. Bounds/scale/control conjunction is stronger than point accuracy.",
+      "section": [
+        "10.1",
+        "10.2"
+      ]
+    },
+    {
+      "claim_id": "F17-E09",
+      "disposition": "SUPPORTED_AS_AVAILABLE_DECOMPOSITION; PARTICULAR_MECHANISM_UNESTABLISHED",
+      "evidence": [
+        {
+          "locator": "ordinary task optimum and coordinate-extraction limits",
+          "path": "v2/experiments/neural_diagnostic_v1/representation_notes.md",
+          "sha256": "2ea1412757f2c0361532f5f676f7582799d181e7b61accc8ef63a7f3c635498d"
+        },
+        {
+          "locator": "scalar affine-head intervention identity and residual decomposition",
+          "path": "v2/experiments/F15_ND01_analysis/mechanism_derivation.md",
+          "sha256": "1d2f7ec91dbea65f6e5b6325890e448e24229581d304104200a62cc74cd558b2"
+        },
+        {
+          "locator": "Introduction and §5.1 Ordinary optimization permits another computational decomposition",
+          "path": "v2/experiments/F15_ND01_results.md",
+          "sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a"
+        },
+        {
+          "locator": "diagnostic_neural.interpretation",
+          "path": "v2/reporting/F17_v1/tables.json",
+          "sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10"
+        }
+      ],
+      "kind": "analytical explanation and bounded interpretation",
+      "precise_claim": "Ordinary task training does not specifically force one clean eight-neuron block per expected cost. The optimum logit decomposes as log cFN-log cFP+log eta-log(1-eta), allowing another computational organization.",
+      "prior_claim_ids": [
+        "F15-ND01-C02",
+        "F16-N01",
+        "C1-N"
+      ],
+      "scope": "Analytical alternative decomposition and interpretation of the extraction contract, not identification of the actual learned decomposition. Distributed/mixed representations and another basis are plausible; technical superposition, unique utility and absence of all cost representations are not established.",
+      "section": [
+        "10.3"
+      ]
+    },
+    {
+      "claim_id": "F17-E10",
+      "disposition": "SUPPORTED_DEVELOPMENT_DIAGNOSIS",
+      "evidence": [
+        {
+          "locator": "all15 completed units, attempt and completion timestamp",
+          "path": "v2/work_logs/F15_ND01_v1_run1/preparation_complete.json",
+          "sha256": "5d79d2684c18e1b1a8ecd9e962efb952ff517ea4945ccd2a7d34051d9a82962a"
+        },
+        {
+          "locator": "all15 completed units, attempt and exposure binding",
+          "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_complete.json",
+          "sha256": "2ad2bd351392800fe2268c2faffa40d17a4b7b012fa8cf92af0cb14ae2f4fc92"
+        },
+        {
+          "locator": "supported_prespecified_replicates=0; all identity adequacy flags and original confidence intervals",
+          "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/calibration_assessment.json",
+          "sha256": "d9b9561aa3f54b7bb5fb677bb70d97c1ab648e327aa47c076f1ca177a52bd103"
+        },
+        {
+          "locator": "calibration.same_constructed_function_across_layouts, hypothesis_outcome_counts, status_counts_by_hypothesis_and_category and control_status_counts",
+          "path": "v2/experiments/F15_ND01_analysis/core_summary.json",
+          "sha256": "5f51177477784de4af33796cf519108f044412c11da1ab787c8601ab0fbb9043"
+        },
+        {
+          "locator": "diagnostic_neural.calibration",
+          "path": "v2/reporting/F17_v1/tables.json",
+          "sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10"
+        },
+        {
+          "locator": "§§1–2 protocol/exposure and complete-endpoint calibration",
+          "path": "v2/experiments/F15_ND01_results.md",
+          "sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a"
+        }
+      ],
+      "kind": "prospective diagnostic execution and calibration result",
+      "precise_claim": "ND01 reused the five ordinary networks without retraining, prepared all15 diagnostic units before validation, and completed both stages on attempt1. Five permutations/rescalings of one constructed function all met searched identity adequacy (50/50 MAE and20/20 decision CI cells), but0/5 complete support because the control-superiority conjunction failed.",
+      "prior_claim_ids": [
+        "F15-ND01-C01",
+        "F15-ND01-C03"
+      ],
+      "scope": "Separately frozen development diagnostic; calibration layouts are not independent ordinary-trained models and this does not replace original F15. The endpoint tests optimized-control superiority in addition to absolute correspondence.",
+      "section": [
+        "10.4",
+        "13.1"
+      ]
+    },
+    {
+      "claim_id": "F17-E11",
+      "disposition": "SUPPORTED_POINT_COMPARISON; CONFIRMATORY_AND_JOINT_SUPPORT_NOT_ESTABLISHED",
+      "evidence": [
+        {
+          "locator": "rows: all four methods × two roles × five strata; formal_support_assessed=false",
+          "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/soft_mask_0_evaluation.json",
+          "sha256": "a6ef52c229ebe9a7cc3b375ddcd534cd6359b3b8267198957dd4e47df50e74c3"
+        },
+        {
+          "locator": "rows: all four methods × two roles × five strata; formal_support_assessed=false",
+          "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/soft_mask_1_evaluation.json",
+          "sha256": "8feec3f68ba6447e177226042e304dc4af7c2dfd1bc4b64d9780346fd92b0167"
+        },
+        {
+          "locator": "rows: all four methods × two roles × five strata; formal_support_assessed=false",
+          "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/soft_mask_2_evaluation.json",
+          "sha256": "675cc724ffcf97bf83fab2dfc8f6daa918ea43e3c9fcead4fd10f54b1d0711cb"
+        },
+        {
+          "locator": "rows: all four methods × two roles × five strata; formal_support_assessed=false",
+          "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/soft_mask_3_evaluation.json",
+          "sha256": "aa33c33ade37956ae20e85a16efacec88447d93aa15a64a3851d6cae63024052"
+        },
+        {
+          "locator": "rows: all four methods × two roles × five strata; formal_support_assessed=false",
+          "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/soft_mask_4_evaluation.json",
+          "sha256": "2b9121c1009bcd971d269e8ba51f37ef486099d145daae9fbc556c6288520118"
+        },
+        {
+          "locator": "diagnostic_neural.intervention_family_rows, point_adequacy and weighting",
+          "path": "v2/reporting/F17_v1/tables.json",
+          "sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10"
+        },
+        {
+          "locator": "build(): stdlib aggregation of all five original mask-evaluation units and comparison to ND01 core summary",
+          "path": "v2/reporting/build_f17_tables.py",
+          "sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5"
+        },
+        {
+          "locator": "§3 Better interventions were present in the unchanged ordinary networks",
+          "path": "v2/experiments/F15_ND01_results.md",
+          "sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a"
+        }
+      ],
+      "kind": "matched development intervention-family comparison",
+      "precise_claim": "On common diagnostic validation arrays, mean probability MAE is .039626 original subsets, .028251 exhaustive binary, .029993 rounded fractional and .025032 fractional. Paired-role point-adequate model counts are0/5,4/5,4/5,5/5 respectively.",
+      "prior_claim_ids": [
+        "F15-ND01-C05"
+      ],
+      "scope": "Equal strata/roles/models; point criteria .05 MAE, .35 near and .10 far. Exhaustive/fractional discovery share a finite logit-MSE objective. Development accuracy improves without retraining, but no confidence/control complete pass or joint/unique representation follows.",
+      "section": [
+        "10.4"
+      ]
+    },
+    {
+      "claim_id": "F17-E12",
+      "disposition": "SUPPORTED_DESCRIPTIVE_NEGATIVE",
+      "evidence": [
+        {
+          "locator": "selection_comparison.family_budget_summaries[*].mean_validation_mae_change_robust_minus_frozen_mse and overall_descriptive_summary",
+          "path": "v2/experiments/F15_ND01_analysis/selection_diagnostics.json",
+          "sha256": "1789775da6b3167e0b14be6ae288f8dc519287d882adb32050181666d146b958"
+        },
+        {
+          "locator": "search.variants: all20 candidate-family/budget/selector summaries",
+          "path": "v2/experiments/F15_ND01_analysis/core_summary.json",
+          "sha256": "5f51177477784de4af33796cf519108f044412c11da1ab787c8601ab0fbb9043"
+        },
+        {
+          "locator": "§4 Search coverage, selector choice and a useful negative outcome",
+          "path": "v2/experiments/F15_ND01_results.md",
+          "sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a"
+        }
+      ],
+      "kind": "negative development diagnostic result",
+      "precise_claim": "The proposed worst-stratum selector increased aggregate validation probability MAE in all ten proposal-family/budget groups relative to the original MSE selector. Overall mean robust-minus-original MAE change is +.0017830418776058619.",
+      "prior_claim_ids": [
+        "F15-ND01-C04"
+      ],
+      "scope": "Five proposal families × two nested budgets reuse five fixed networks and shared validation arrays. This is descriptive selection behavior, not ten independent training experiments or proof of a unique overfitting mechanism.",
+      "section": [
+        "10.4"
+      ]
+    },
+    {
+      "claim_id": "F17-E13",
+      "disposition": "SUPPORTED_AT_SECONDARY_PANEL_SCOPE",
+      "evidence": [
+        {
+          "locator": "secondary_composition: method, panel, order_probability_rms, order_probability_max_abs, frozen_joint_stratum_claimed=false",
+          "path": "v2/experiments/F15_ND01_analysis/mechanism_results.json",
+          "sha256": "5f351b68d31d22b28e590827816005774e6bc4a61cb423425c6caf1c00080c1f"
+        },
+        {
+          "locator": "exact diagonal-mask composition-order identity and its scope",
+          "path": "v2/experiments/F15_ND01_analysis/intervention_algebra.md",
+          "sha256": "9cf96d7790a83172c91fdfab122c4e9ad20d9cee78364e72db91f01fc50f2f75"
+        },
+        {
+          "locator": "§5.3 The improved fractional edits are not a demonstrated joint abstraction",
+          "path": "v2/experiments/F15_ND01_results.md",
+          "sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a"
+        }
+      ],
+      "kind": "secondary development interpretation diagnostic",
+      "precise_claim": "Actual fractional edits show nonzero composition-order dependence in all five models on the secondary panel. Mean probability-order RMS is .01912585401774089, versus .01632916988271114 for original subsets and .0060241083571522394 for exhaustive binary masks; nonzero model counts5/5,4/5,1/5 respectively.",
+      "prior_claim_ids": [
+        "F15-ND01-C05",
+        "F15-ND01-C08",
+        "C1-N"
+      ],
+      "prior_claim_relation": "Listed IDs record the individual-versus-joint interpretation boundary. The exact secondary-order numbers are preserved in the ND01 report/machine result rather than a separate numerical claim-ledger row.",
+      "scope": "Same secondary panel assembled from existing role0 mixed-near bases/donors and role1 mixed-near donors. Probability output-order discrepancy, not logit RMS or a frozen joint high-level error endpoint. No new confirmatory support claim and no favorable order selection.",
+      "section": [
+        "10.4"
+      ]
+    },
+    {
+      "claim_id": "F17-E14",
+      "disposition": "SUPPORTED_WITH_EXPLICIT_ORIGINAL_AGGREGATE_EXCEPTION",
+      "evidence": [
+        {
+          "locator": "original damage, exact separate recovery and exposed-data disposition",
+          "path": "v2/work_logs/F15_2026-10-04_S1/F15_ART_01.md",
+          "sha256": "22a9b09973fa3642d64aec73141e21eca90eb12b1a885f39e545a6d32363959e"
+        },
+        {
+          "locator": "original digest, recovered bytes and separate output path",
+          "path": "v2/work_logs/F15_2026-10-04_S1/retention_aggregate_recovery.json",
+          "sha256": "519b9ee4f6c3199c66c0e2c6b39651d50e20dd9abb07e8566fbf020b6ace66bb"
+        },
+        {
+          "locator": "§2.4 failures/recovery; §6 saved-artifact verification commands and writer cautions",
+          "path": "v2/experiments/results.md",
+          "sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74"
+        },
+        {
+          "locator": "§7 failures and Reproduction without another scientific run",
+          "path": "v2/experiments/F15_ND01_results.md",
+          "sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a"
+        },
+        {
+          "locator": "main(): --check compares existing bytes; no population/training/alignment generation",
+          "path": "v2/experiments/summarize_f15.py",
+          "sha256": "6adf98fc614c6be8f3628cee040b55604c080590b8ff3e52ac5415fdfc6736b9"
+        },
+        {
+          "locator": "verify() and main(): read-only freeze/preparation/evaluation binding branch",
+          "path": "v2/experiments/neural_diagnostic_v1/runner.py",
+          "sha256": "e096088b22390a9a40b5b4fd5e4e1eeff1d7179677526894c9c7980b716b9022"
+        },
+        {
+          "locator": "main(): --check only compares; missing output created with xb; imports are stdlib only",
+          "path": "v2/reporting/build_f17_tables.py",
+          "sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5"
+        },
+        {
+          "locator": "source_manifest, scope and preservation_note",
+          "path": "v2/reporting/F17_v1/tables.json",
+          "sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10"
+        },
+        {
+          "locator": "all reporting invocations, first failed source/traceback, corrected exclusive creation and read-only check",
+          "path": "v2/work_logs/F17_2026-10-06_S1/reviews/table_export_record.json",
+          "sha256": "9fa63d686d25dac664ff99be94b27dc242a3251b5e6829349bdd9b5c52f857c9"
+        }
+      ],
+      "kind": "artifact integrity, provenance and report reproduction",
+      "precise_claim": "The original F15 retention aggregate remains zero bytes; all160 original units are intact and a separately preserved15,833,616-byte canonical recovery matches the original aggregate digest. F15 original sidecars are180/181 with this exception; ND01 sidecars103/103. Saved-data verification and the F17 deterministic table exporter preserve outcomes without generating populations or fitting models.",
+      "prior_claim_ids": [
+        "F15-C02",
+        "F15-C14",
+        "C1-I"
+      ],
+      "scope": "Storage/reporting disposition and reproducible read-only checks, not a claim every original artifact is intact or that all audit writers are safe to rerun. Known Windows CRLF/native-crash/path-portability limitations remain. F17 exporter had one preserved reporting defect before corrected creation and byte-exact check; no scientific-stage retry.",
+      "section": [
+        "13.2",
+        "13.3"
+      ]
+    }
+  ],
+  "contributor": "ChatGPT (GPT-6 Astra Pro), same-model internal delegated reviewer",
+  "created_utc": "2026-10-06T17:32:55.037358+00:00",
+  "new_evaluation_or_training": false,
+  "new_scientific_execution": false,
+  "paper_edited": false,
+  "principal_concurrent_minutes_credited": 0,
+  "schema": "F17-empirical-claim-map-contribution-v1",
+  "scope": "Report sections9-10 and13; original empirical/execution evidence and bounded diagnostic interpretation. Final report identity is bound by the principal after integration.",
+  "section_numbers_follow_report_v1_structure": true,
+  "source_paths_are_repository_relative": true
+}

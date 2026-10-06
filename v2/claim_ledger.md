@@ -1,24 +1,19 @@
 # Phase Two Claim Ledger
 
-Current status (October 6, 2026 UTC): **F01–F16,
-N01, C3 and C4 complete at their task scopes. F16's fresh D60 is satisfied at
-67.483485 minutes and Research90 at 90.249178 minutes.** C4-S remains
-SUPPORTED as a bounded modest synthesis/formal adaptation with specialized
-application results, after the explicit ordinary-baseline challenge and
-F16-R01 correction. Worldwide priority remains unestablished. R-N01-01 is
-closed at that narrowed scope; a later displacement triggers the named
-F16-COMP60 comparison chunk.
+Current status (October 6, 2026 UTC): **F01–F17, N01, C3 and C4 complete at
+recorded task scopes; all protected historical floors retained.** The author
+[approved Gate C PASS](decisions/2026-10-06_gate_c_pass.md). F17 assembles the
+[research report](../paper_v2.md) with a [42-group evidence map](reporting/F17_v1/claim_map.json).
+C4-S remains SUPPORTED as a bounded modest synthesis/formal adaptation with
+specialized application results. Worldwide priority, general performance
+superiority and a joint learned utility representation remain unestablished.
 
-F15 and F15-ND01 outcomes and saved reports remain unchanged. Ordinary training
-does not force a clean eight-neuron cost block; partial intervention success
-and the complete 0/5 outcome establish neither a unique representation nor
-its universal absence. **F15-ND02 Research90 is optional, deferred and unstarted.**
-A/B retain their scoped passes. **Gate C assessment complete: PASS recommended;
-technical readiness MET; scoped contribution SUPPORTED; author decision PENDING.**
-The active pointer is the author's final continue/recurse decision on
-[C_1](checkpoints/C_1.md). The checkbox remains unchecked; F17, Gate D and ND02
-remain unstarted. The dated entries below preserve historical statuses; the
-Gate C entry supersedes their old next-task pointers.
+F15 and ND01 outcomes are unchanged: ordinary training does not require a
+clean eight-neuron block, and improved individual interventions do not replace
+the original 0/5 complete endpoint. F15-ND02 Research90 remains optional,
+deferred and unstarted. **A/B/C retain scoped passes; Gate D is next and
+unattempted.** The latest F17 entry supersedes the dated historical next-task
+pointers below without rewriting those records.
 
 ## F10 external-audit disposition — September 30, 2026
 
@@ -1235,3 +1230,26 @@ instead triggers **R-N01-01/F16-COMP60**, D30/L30, central70/high105 engaged
 minutes. **F15-ND02 remains optional and deferred.** None starts in this gate.
 
 [Work, exact accounting and attempt records](work_logs/C_2026-10-06_S1.md).
+
+## F17 — source-bound report assembly, October 6, 2026
+
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. The author approved Gate C PASS
+and selected F17. [paper_v2.md](../paper_v2.md), SHA256
+`18c45d7df537c6e8a076793c9e38412e5c8d887995ba041d2ee9cbf51971bc8d`,
+assembles the accepted results with five main theorem statements and twenty-four
+selected references. A [42-group claim map](reporting/F17_v1/claim_map.json)
+distinguishes proof, design, motivation, empirical observation and scoped
+contribution assessment. [Tables](reporting/F17_v1/tables.json) reproduce all
+reported arms and denominators from saved data.
+
+| ID | Scope and disposition | Evidence |
+|---|---|---|
+| F17-RPT01 | COMPLETE at report-assembly scope. No stronger theorem, empirical endpoint, novelty magnitude or worldwide-priority claim introduced during writing. | Fixed snapshots, three internal reviews and bounded finding regressions in the [work record](work_logs/F17_2026-10-06_S1.md); claim-map proof-coverage labels retain full derivation links. |
+| F17-INT01 | Both freezes, all 973 saved scientific files and all 278 Python files tracked at entry remain unchanged. Five read-only checks pass on attempt 1. | [Independent integrity record](work_logs/F17_2026-10-06_S1/reviews/accounting/integrity_result.json); [verification summary](work_logs/F17_2026-10-06_S1/verification_summary.json). No new scientific stage. |
+| F17-SCOPE01 | C4-S SUPPORTED at the inherited modest synthesis/application scope; general superiority, complete neural support, joint unique utility representation and worldwide priority remain unestablished. | Report §§10–12 and [sixteen-hour review](checkpoints/POST_B_16H_1.md). No gate is passed by report assembly. |
+
+The reporting defects found during review are resolved locally. The original
+68/160 retention usefulness, 0/5 complete neural endpoint and ND01 development
+interpretation remain unchanged. ND02, EXT01 and conditional COMP60 remain
+deferred/unstarted. **Gate D is next and unattempted.** Protected historical
+floors and ledger entries are preserved; F17 has no added floor.

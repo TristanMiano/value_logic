@@ -1,0 +1,44 @@
+{
+  "schema": "F17-report-v2-literature-regression-v1",
+  "reviewer": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-06T17:35:20.725072+00:00",
+  "principal_concurrent_credit_minutes": 0,
+  "scope": "Bounded LIT-01 regression only; no new whole-report review.",
+  "finding_id": "LIT-01",
+  "disposition": "RESOLVED in this exact snapshot",
+  "prior_snapshot": {
+    "path": "v2/work_logs/F17_2026-10-06_S1/drafts/report_v1.md",
+    "sha256": "af2a98350273c59eb2b682e62be9df13c11f8f1f9d67df7b0c94d73e24673784"
+  },
+  "reviewed_snapshot": {
+    "path": "v2/work_logs/F17_2026-10-06_S1/drafts/report_v2.md",
+    "sha256": "18c45d7df537c6e8a076793c9e38412e5c8d887995ba041d2ee9cbf51971bc8d",
+    "bytes": 90361
+  },
+  "checks": {
+    "old_overbroad_sentence_absent": true,
+    "new_probe_learning_memorization_sentence_present": true,
+    "separate_causal_intervention_evidence_requirement_present": true,
+    "hewitt_liang_reference_retained": true,
+    "section_10_3_other_content_unchanged_ignoring_trailing_blank_lines": true,
+    "no_claim_of_full_review_of_other_v2_changes": true
+  },
+  "section_hashes": {
+    "v1": "2000992edf0a40d844afeb7c41eb7e701644f4d9087e595678b971fd48e6a82a",
+    "v2": "967a0c8a1542c3f31dd25470294626b50131315406021056aeaba6c7738ff3bf"
+  },
+  "localized_diff": "--- report_v1 §10.3\n+++ report_v2 §10.3\n@@ -30,9 +30,10 @@\n interventions and distributed alignment\n ([Geiger et al., 2021](#ref-causal);\n [Geiger et al., 2024](#ref-das)).\n-Probe controls help distinguish accessible information from\n-what the original computation uses\n-([Hewitt–Liang](#ref-probes)). The interpretation of successful\n+Probe controls put decoding accuracy in context by testing what\n+the probe itself can learn or memorize\n+([Hewitt–Liang](#ref-probes)). Causal use requires the separately\n+specified intervention evidence. The interpretation of successful\n patching is itself a subject of technical disagreement\n ([Makelov et al.](#ref-illusion);\n [Wu et al.](#ref-reply)).\n",
+  "evidence": [
+    {
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/report_v1_literature.json",
+      "sha256": "d919bb093fe82ba65b106924245cae494994ee306985d5665bc7d87e601c7735",
+      "locator": "Finding LIT-01"
+    },
+    {
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/source_access.json",
+      "sha256": "22772c44630b068a9f7ed62cb293c97bdbcf497418228be2d4ee550c728c8aed",
+      "locator": "Entry HewittLiang2019"
+    }
+  ],
+  "meaning": "Controls assess probe selectivity/learning capacity; causal use remains a separate intervention question. No experimental or contribution criterion changed."
+}

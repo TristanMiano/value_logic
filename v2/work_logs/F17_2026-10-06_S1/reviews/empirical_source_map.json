@@ -1,0 +1,529 @@
+{
+  "author": "ChatGPT (GPT-6 Astra Pro), same-model internal delegated review",
+  "created_utc": "2026-10-06T17:07:28.745856+00:00",
+  "draft_review": "pending principal draft",
+  "entry_commit_from_assignment": "2e44ed1b711508d7ad451e1ca6272ff989deef81",
+  "freeze_verification_executed_by_this_reviewer": false,
+  "gate_c_recount_extract": {
+    "all_five_prepared_hashed_validated_before_exposure": true,
+    "cases": 160,
+    "decision_dispositions": {
+      "certified_fallback": 368,
+      "certified_order": 1220,
+      "refusal_to_fallback": 332
+    },
+    "method_rows": 1920,
+    "native_dispositions": {
+      "insufficient_current_request": 694,
+      "received": 1226
+    },
+    "neural_complete_support": 0,
+    "neural_models": 5,
+    "neural_task_ready": 5,
+    "numeric_dispositions": {
+      "approximate": 616,
+      "exact": 8624,
+      "refused": 2280
+    },
+    "preparation_chronology_utc": [
+      "2026-10-05T03:46:15.790579+00:00",
+      "2026-10-05T03:47:06.149535+00:00",
+      "2026-10-05T03:47:20.675387+00:00",
+      "2026-10-05T03:50:24.452339+00:00"
+    ],
+    "saved_equal_information_comparisons_all_agree": 960,
+    "scalar_rows": 11520,
+    "selective_approximate_distinct_episodes": 15,
+    "selective_approximate_distinct_seeds": 8,
+    "selective_approximate_rows": 30,
+    "useful_distinct_episodes": 68,
+    "useful_distinct_seeds": 16,
+    "useful_episodes_by_variant": {
+      "large_negative_price": 16,
+      "large_price": 9,
+      "program_edit": 15,
+      "small_negative_price": 14,
+      "small_price": 14
+    },
+    "useful_method_rows": 718
+  },
+  "input_manifest": [
+    {
+      "bytes": 46458,
+      "path": "v2/experiments/protocol.md",
+      "sha256": "21b188b6caeea5fde10323128fcdad8670507d8f5b6793e2fc80380689699d58"
+    },
+    {
+      "bytes": 5027,
+      "path": "v2/experiments/config.v1.json",
+      "sha256": "ea76f361eb1f2f055e6fa09096ba87fc5558bfe679982466e6de9543541d1918"
+    },
+    {
+      "bytes": 5474,
+      "path": "v2/experiments/freeze.v1.json",
+      "sha256": "b860021d3cb26705196b75d6b13277135d0c9220c266b21e05d7d11e719b2f9c"
+    },
+    {
+      "bytes": 71198,
+      "path": "v2/experiments/results.md",
+      "sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74"
+    },
+    {
+      "bytes": 109272,
+      "path": "v2/experiments/F15_v1_analysis/summary.json",
+      "sha256": "3b33872a6a9c9c6a13518de1229e0570ee6d2164fd5d0edbd605e12374895d25"
+    },
+    {
+      "bytes": 120941,
+      "path": "v2/experiments/F15_v1_analysis/retention_by_method.json",
+      "sha256": "6cf6ea83d0c252fe7df3e21fce5090eff608d6ed0e9f8193f1fa6415d5d03391"
+    },
+    {
+      "bytes": 377417,
+      "path": "v2/experiments/F15_v1_analysis/neural_models.json",
+      "sha256": "931756e905ca7338290b46e95394baf4ad6c3af842ee1c6c2a319c6ffe44ca0b"
+    },
+    {
+      "bytes": 249303,
+      "path": "v2/experiments/F15_v1_analysis/neural_interval_rows.json",
+      "sha256": "17268e8841855d55f1f8c3f0609a82070e61a18c2f6e51d45338cbd9bdaf8df0"
+    },
+    {
+      "bytes": 5962,
+      "path": "v2/work_logs/C_2026-10-06_S1/saved_results_attempt1/summary.json",
+      "sha256": "6e3717198e4412dbd941d4e933409d4627ebd7dd415305bde6b7de708440c7f0"
+    },
+    {
+      "bytes": 47579,
+      "path": "v2/experiments/F15_ND01_results.md",
+      "sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a"
+    },
+    {
+      "bytes": 1497241,
+      "path": "v2/experiments/F15_ND01_analysis/core_summary.json",
+      "sha256": "5f51177477784de4af33796cf519108f044412c11da1ab787c8601ab0fbb9043"
+    },
+    {
+      "bytes": 764017,
+      "path": "v2/experiments/F15_ND01_analysis/mechanism_results.json",
+      "sha256": "5f351b68d31d22b28e590827816005774e6bc4a61cb423425c6caf1c00080c1f"
+    },
+    {
+      "bytes": 4878,
+      "path": "v2/experiments/F15_ND01_analysis/selection_diagnostics.md",
+      "sha256": "ed1c23a4b04abc9d5c1a97389c5cac5c276914fbef03de2db1ff40ac163f96e7"
+    },
+    {
+      "bytes": 8945,
+      "path": "v2/experiments/F15_ND01_analysis/intervention_algebra.md",
+      "sha256": "9cf96d7790a83172c91fdfab122c4e9ad20d9cee78364e72db91f01fc50f2f75"
+    },
+    {
+      "bytes": 10448,
+      "path": "v2/experiments/F15_ND01_analysis/joint_feasibility.md",
+      "sha256": "f9a2c5a3d420c8891b598e332c6b130736f6e3fa7dd967de83dd57cd8199ee81"
+    },
+    {
+      "bytes": 5751,
+      "path": "v2/experiments/F15_ND01_analysis/joint_semantic_error.md",
+      "sha256": "c3b797c2943145173c8549ad48636ab3c609790b8768761d57ee92329903ca4b"
+    },
+    {
+      "bytes": 16023,
+      "path": "v2/experiments/neural_diagnostic_v1/protocol.md",
+      "sha256": "742f2cbe0117864184189b5588cafdd820bf5b76b7a04c24045d0d62e68277ca"
+    },
+    {
+      "bytes": 8513,
+      "path": "v2/experiments/neural_diagnostic_v1/config.json",
+      "sha256": "d65ffe53ca95362599cc785495676a0e84bf003278d760e92a2a7bf8cba1667a"
+    },
+    {
+      "bytes": 10049,
+      "path": "v2/experiments/neural_diagnostic_v1/freeze.json",
+      "sha256": "9c15af55b83d7edf134542a9c70bcc0f087c6f4f6491f993361a27493b5cf24c"
+    },
+    {
+      "bytes": 25592,
+      "path": "v2/experiments/neural_diagnostic_v1/runner.py",
+      "sha256": "e096088b22390a9a40b5b4fd5e4e1eeff1d7179677526894c9c7980b716b9022"
+    },
+    {
+      "bytes": 38203,
+      "path": "v2/experiments/F15_ND01_analysis/summarize.py",
+      "sha256": "ffbff1795ad3b69be886ff63d55628f0d04d5c2ed4162dbf5ac8ba483a2e10c4"
+    },
+    {
+      "bytes": 21739,
+      "path": "v2/experiments/summarize_f15.py",
+      "sha256": "6adf98fc614c6be8f3628cee040b55604c080590b8ff3e52ac5415fdfc6736b9"
+    },
+    {
+      "bytes": 78869,
+      "path": "v2/derivations/06_case_studies.md",
+      "sha256": "700a8d468a289a081964a798e27893b49971f5bf7f7fb079f11f7f35b5b8e66d"
+    },
+    {
+      "bytes": 4574,
+      "path": "v2/verification/F13_results.md",
+      "sha256": "9293161c17d25d8247fd1ab25726ee32941feea58251f37162768c9dfa283e5a"
+    },
+    {
+      "bytes": 731,
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/technical/regression_attempt1/result.json",
+      "sha256": "2c5c6cd29f9acf59e61850f804212101331aae0fadb4ba6dd3fbb282b3b9e3f2"
+    }
+  ],
+  "inspection_issues": [
+    "One guessed reporter path did not exist; actual v2/experiments/summarize_f15.py then read.",
+    "Broad output clipping followed by targeted section/aggregate reads."
+  ],
+  "nd01_complete_calibration_layouts": 0,
+  "nd01_counts": {
+    "calibration_interval_rows": 560,
+    "calibration_oracle_rows": 50,
+    "calibration_searched_rows": 1000,
+    "constructed_function_equivalent_layouts": 5,
+    "fixed_ordinary_models": 5,
+    "mask_methods": 4,
+    "mask_rows": 200,
+    "search_rows": 1000,
+    "search_variants": 20
+  },
+  "nd01_mask_aggregate_extract": [
+    {
+      "cell_count": 50,
+      "formal_support_assessed": false,
+      "mean_far_disagreement": 8.544921875e-05,
+      "mean_mae": 0.02825090346039398,
+      "mean_near_disagreement": 0.2919921875,
+      "method": "binary_global",
+      "model_count": 5,
+      "models_with_both_roles_meeting_point_thresholds": 4,
+      "point_thresholds_are_not_complete_F15_endpoint": true,
+      "role_count": 10,
+      "roles_meeting_all_error_and_decision_point_thresholds": 9
+    },
+    {
+      "cell_count": 50,
+      "formal_support_assessed": false,
+      "mean_far_disagreement": 0.0,
+      "mean_mae": 0.025032014519356723,
+      "mean_near_disagreement": 0.25728759765625,
+      "method": "fractional_mask",
+      "model_count": 5,
+      "models_with_both_roles_meeting_point_thresholds": 5,
+      "point_thresholds_are_not_complete_F15_endpoint": true,
+      "role_count": 10,
+      "roles_meeting_all_error_and_decision_point_thresholds": 10
+    },
+    {
+      "cell_count": 50,
+      "formal_support_assessed": false,
+      "mean_far_disagreement": 0.00106201171875,
+      "mean_mae": 0.03962573318785384,
+      "mean_near_disagreement": 0.354931640625,
+      "method": "frozen_original",
+      "model_count": 5,
+      "models_with_both_roles_meeting_point_thresholds": 0,
+      "point_thresholds_are_not_complete_F15_endpoint": true,
+      "role_count": 10,
+      "roles_meeting_all_error_and_decision_point_thresholds": 3
+    },
+    {
+      "cell_count": 50,
+      "formal_support_assessed": false,
+      "mean_far_disagreement": 0.00013427734375,
+      "mean_mae": 0.02999314158297847,
+      "mean_near_disagreement": 0.30850830078125,
+      "method": "rounded_top8",
+      "model_count": 5,
+      "models_with_both_roles_meeting_point_thresholds": 4,
+      "point_thresholds_are_not_complete_F15_endpoint": true,
+      "role_count": 10,
+      "roles_meeting_all_error_and_decision_point_thresholds": 9
+    }
+  ],
+  "original_F15_support_replaced": false,
+  "original_f15_neural_summary": {
+    "alignment_role_pair_evaluations": 8192000,
+    "all_interval_dispositions": {
+      "inconclusive": 282,
+      "supported": 257,
+      "violated": 21
+    },
+    "binary_training_labels": 3840000,
+    "candidate_evaluations": 25600,
+    "expected_cost_training_labels": 0,
+    "incorrect_donor_pairs": 409600,
+    "intended_intervention_pairs": 409600,
+    "numerically_valid_models": 5,
+    "original_task_examples": 40960,
+    "pilot_support": false,
+    "supported_models": 0,
+    "task_ready_models": 5
+  },
+  "principal_concurrent_time_credit_minutes": 0,
+  "retention_table_source_rows": [
+    {
+      "access": "no_reacquisition",
+      "decisions": {
+        "certified_fallback": 30,
+        "certified_order": 98,
+        "refusal_to_fallback": 32
+      },
+      "method": "fresh",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 62,
+        "received": 98
+      },
+      "numeric": {
+        "approximate": 0,
+        "exact": 768,
+        "refused": 192
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 68
+    },
+    {
+      "access": "no_reacquisition",
+      "decisions": {
+        "certified_fallback": 30,
+        "certified_order": 98,
+        "refusal_to_fallback": 32
+      },
+      "method": "cached_proof",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 62,
+        "received": 98
+      },
+      "numeric": {
+        "approximate": 0,
+        "exact": 768,
+        "refused": 192
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 68
+    },
+    {
+      "access": "no_reacquisition",
+      "decisions": {
+        "certified_fallback": 30,
+        "certified_order": 98,
+        "refusal_to_fallback": 32
+      },
+      "method": "full_joint",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 62,
+        "received": 98
+      },
+      "numeric": {
+        "approximate": 0,
+        "exact": 768,
+        "refused": 192
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 68
+    },
+    {
+      "access": "no_reacquisition",
+      "decisions": {
+        "certified_fallback": 29,
+        "certified_order": 85,
+        "refusal_to_fallback": 46
+      },
+      "method": "tailored",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 72,
+        "received": 88
+      },
+      "numeric": {
+        "approximate": 172,
+        "exact": 416,
+        "refused": 372
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 53
+    },
+    {
+      "access": "no_reacquisition",
+      "decisions": {
+        "certified_fallback": 29,
+        "certified_order": 85,
+        "refusal_to_fallback": 46
+      },
+      "method": "exact_intervals",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 72,
+        "received": 88
+      },
+      "numeric": {
+        "approximate": 172,
+        "exact": 416,
+        "refused": 372
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 53
+    },
+    {
+      "access": "no_reacquisition",
+      "decisions": {
+        "certified_fallback": 16,
+        "certified_order": 0,
+        "refusal_to_fallback": 144
+      },
+      "method": "marginal_diagnostic",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 160
+      },
+      "numeric": {
+        "approximate": 0,
+        "exact": 0,
+        "refused": 960
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 0
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "decisions": {
+        "certified_fallback": 34,
+        "certified_order": 126,
+        "refusal_to_fallback": 0
+      },
+      "method": "fresh",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 34,
+        "received": 126
+      },
+      "numeric": {
+        "approximate": 0,
+        "exact": 960,
+        "refused": 0
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 68
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "decisions": {
+        "certified_fallback": 34,
+        "certified_order": 126,
+        "refusal_to_fallback": 0
+      },
+      "method": "cached_proof",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 34,
+        "received": 126
+      },
+      "numeric": {
+        "approximate": 0,
+        "exact": 960,
+        "refused": 0
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 68
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "decisions": {
+        "certified_fallback": 34,
+        "certified_order": 126,
+        "refusal_to_fallback": 0
+      },
+      "method": "full_joint",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 34,
+        "received": 126
+      },
+      "numeric": {
+        "approximate": 0,
+        "exact": 960,
+        "refused": 0
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 68
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "decisions": {
+        "certified_fallback": 34,
+        "certified_order": 126,
+        "refusal_to_fallback": 0
+      },
+      "method": "tailored",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 34,
+        "received": 126
+      },
+      "numeric": {
+        "approximate": 136,
+        "exact": 824,
+        "refused": 0
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 68
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "decisions": {
+        "certified_fallback": 34,
+        "certified_order": 126,
+        "refusal_to_fallback": 0
+      },
+      "method": "exact_intervals",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 34,
+        "received": 126
+      },
+      "numeric": {
+        "approximate": 136,
+        "exact": 824,
+        "refused": 0
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 68
+    },
+    {
+      "access": "adaptive_reacquisition",
+      "decisions": {
+        "certified_fallback": 34,
+        "certified_order": 126,
+        "refusal_to_fallback": 0
+      },
+      "method": "marginal_diagnostic",
+      "method_rows": 160,
+      "native": {
+        "insufficient_current_request": 34,
+        "received": 126
+      },
+      "numeric": {
+        "approximate": 0,
+        "exact": 960,
+        "refused": 0
+      },
+      "numeric_queries": 960,
+      "useful_native_rows": 68
+    }
+  ],
+  "schema": "F17-empirical-source-map-v1",
+  "scientific_outputs_modified": false,
+  "scope": "Source mapping and extraction of existing reported aggregates; no scientific regeneration, test rerun, alignment, training, or new assessment.",
+  "source_map": {
+    "bytes": 29671,
+    "path": "v2/work_logs/F17_2026-10-06_S1/reviews/empirical_source_map.md",
+    "sha256": "7b231886d3b8629e23adc1fe4b47e752b7a57cdf615d5e90adef3a98376e48f1"
+  },
+  "tests_executed": false
+}

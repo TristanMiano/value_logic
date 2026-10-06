@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "v2/work_logs/F17_2026-10-06_S1/reviews/accounting/check_postappend.py"
+  ],
+  "concurrent_principal_credit_minutes": 0,
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "cwd": "/workspace/scratch/8dbd45f3c7ee/value_logic",
+  "end_monotonic_ns": 4879502676472,
+  "end_utc": "2026-10-06T17:46:49.978288+00:00",
+  "environment_override": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "returncode": 1,
+  "schema": "F17-postappend-audit-command-v1",
+  "scientific_stages_or_tests_executed": false,
+  "script_sha256": "98c97cf956cb5ef43da95a9ca02f070957215eab41b9a0f8a9982d45434788c9",
+  "start_monotonic_ns": 4879425037243,
+  "start_utc": "2026-10-06T17:46:49.900628+00:00",
+  "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/8dbd45f3c7ee/value_logic/v2/work_logs/F17_2026-10-06_S1/reviews/accounting/check_postappend.py\", line 365, in <module>\n    main()\n  File \"/workspace/scratch/8dbd45f3c7ee/value_logic/v2/work_logs/F17_2026-10-06_S1/reviews/accounting/check_postappend.py\", line 258, in main\n    check_decimal(actuals[\"post_b_1\"][\"remaining_minutes_decimal\"], 960 - close_exact, \"POST-B remaining retains the full overshoot\")\n  File \"/workspace/scratch/8dbd45f3c7ee/value_logic/v2/work_logs/F17_2026-10-06_S1/reviews/accounting/check_postappend.py\", line 68, in check_decimal\n    require(Decimal(observed) == Decimal(decimal80(expected)), description)\n  File \"/workspace/scratch/8dbd45f3c7ee/value_logic/v2/work_logs/F17_2026-10-06_S1/reviews/accounting/check_postappend.py\", line 31, in require\n    raise ValueError(description)\nValueError: POST-B remaining retains the full overshoot\n",
+  "stdout": "",
+  "wall_ns": 77639229
+}

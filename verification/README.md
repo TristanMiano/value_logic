@@ -12,9 +12,11 @@ F16-R01 corrects C4-A1's three-procedure midpoint-coherence warning;
 common-minimax decoder on the full exact equal-price summary fiber for
 separately applied single-price edits.
 C4-S remains a modest supported synthesis/application relative to checked work;
-worldwide priority is unestablished. A/B retain their scoped passes; C/D are
-unattempted. After F16 closure the next task is a separate Gate C assessment;
-F17 and optional deferred F15-ND02 remain unstarted. See
+worldwide priority is unestablished. A/B retain scoped passes; the author has
+approved Gate C PASS and [F17 report assembly](../paper_v2.md) is complete.
+Gate D is next and unattempted; optional F15-ND02 remains deferred/unstarted.
+The [F17 work](../v2/work_logs/F17_2026-10-06_S1.md) records five passing read-only
+saved-artifact checks and source-bound internal report reviews. See
 [the current TODO](../TODO_v2.md) and [phase-two verification](../v2/verification/README.md).
 
 The following F14 validation is historical development evidence.

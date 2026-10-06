@@ -1,0 +1,98 @@
+{
+  "task": "F17",
+  "recorded_utc": "2026-10-06T17:33:34.255576+00:00",
+  "status": "all_five_read_only_commands_passed_on_first_attempt",
+  "results": [
+    {
+      "label": "f14_freeze",
+      "attempt": 1,
+      "status": "pass",
+      "result_path": "v2/work_logs/F17_2026-10-06_S1/verification/f14_freeze_attempt1/result.json",
+      "result_sha256": "9384d97a060e8ba62c0d630de80bac1bb439f32598575d1e4c5a71e1799757ed",
+      "wall_ns": 664657916,
+      "child_user_cpu_seconds": 0.582006,
+      "child_system_cpu_seconds": 0.076938,
+      "child_max_rss_kib": 39032,
+      "summary": {
+        "verified": true,
+        "protocol_id": "F14-v1",
+        "manifest_sha256": "b860021d3cb26705196b75d6b13277135d0c9220c266b21e05d7d11e719b2f9c",
+        "config_sha256": "ea76f361eb1f2f055e6fa09096ba87fc5558bfe679982466e6de9543541d1918",
+        "files": 34
+      }
+    },
+    {
+      "label": "f15_saved",
+      "attempt": 1,
+      "status": "pass",
+      "result_path": "v2/work_logs/F17_2026-10-06_S1/verification/f15_saved_attempt1/result.json",
+      "result_sha256": "fc91994f5236d618b41c6da92b8f31ab92e0bb2007b1a3bd314547e686731507",
+      "wall_ns": 6010388298,
+      "child_user_cpu_seconds": 5.616292,
+      "child_system_cpu_seconds": 0.38918400000000003,
+      "child_max_rss_kib": 180240,
+      "summary": {
+        "status": "checked",
+        "files": 10,
+        "retention_application": true,
+        "neural_pilot_support": false,
+        "new_generation": false
+      }
+    },
+    {
+      "label": "f17_tables",
+      "attempt": 1,
+      "status": "pass",
+      "result_path": "v2/work_logs/F17_2026-10-06_S1/verification/f17_tables_attempt1/result.json",
+      "result_sha256": "c979dfaf584c70992f36c7165b97d04f4e7fb657ba664e590ec60f5af93a6657",
+      "wall_ns": 562390368,
+      "child_user_cpu_seconds": 0.470224,
+      "child_system_cpu_seconds": 0.076744,
+      "child_max_rss_kib": 69536,
+      "summary": {
+        "bytes": 155351,
+        "path": "v2/reporting/F17_v1/tables.json",
+        "scientific_execution": false,
+        "sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+        "status": "checked"
+      }
+    },
+    {
+      "label": "nd01_saved",
+      "attempt": 1,
+      "status": "pass",
+      "result_path": "v2/work_logs/F17_2026-10-06_S1/verification/nd01_saved_attempt1/result.json",
+      "result_sha256": "49aec7ae39fb18fd2411c581d53c070ed5a2d7712977e13b2a4cb8a86953c935",
+      "wall_ns": 3798738550,
+      "child_user_cpu_seconds": 3.4826420000000002,
+      "child_system_cpu_seconds": 0.29311899999999996,
+      "child_max_rss_kib": 229080,
+      "summary": {
+        "development_only": true,
+        "evaluation_units_verified": 15,
+        "output_exists": true,
+        "prepared_units_verified": 15,
+        "verified": true
+      }
+    },
+    {
+      "label": "nd01_summary",
+      "attempt": 1,
+      "status": "pass",
+      "result_path": "v2/work_logs/F17_2026-10-06_S1/verification/nd01_summary_attempt1/result.json",
+      "result_sha256": "315fcf4d090506b63c49d5fdc42c94061e2bc03cb5f9456c12d40f5f2ca2d148",
+      "wall_ns": 4039971902,
+      "child_user_cpu_seconds": 3.73198,
+      "child_system_cpu_seconds": 0.303158,
+      "child_max_rss_kib": 236628,
+      "summary": {
+        "status": "byte_exact_saved_output_summary_verified",
+        "outputs": 4
+      }
+    }
+  ],
+  "new_scientific_exposure": false,
+  "resource_aggregation": "Independent commands overlapped. Their wall times are not a principal-time total. Individual child CPU and peak RSS are process metrics, not estimated research effort.",
+  "plan_annotation": "The prospective plan narrative mistakenly anticipated 6 F15 derived files. The unchanged command checked all 10 actual files; no count filter or skipped file exists. This administrative expectation error is retained in the original plan and corrected here.",
+  "prior_tests": "The earlier Gate C 288-test pass remains historical provenance. F17 reruns no scientific regression because preexisting science and test code are unchanged."
+}

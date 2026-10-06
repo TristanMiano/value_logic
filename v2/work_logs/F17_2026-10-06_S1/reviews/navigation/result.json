@@ -1,0 +1,4596 @@
+{
+  "schema": "F17-source-navigation-check-v1",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-06T17:42:12.700206+00:00",
+  "principal_concurrent_credit_minutes": 0,
+  "status": "PASS_SCOPED",
+  "scope": "Fixed-report source navigation, observed Markdown syntax, bibliography keys, claim-group structure and every path/SHA256 binding directly contained in claim_map.json.",
+  "limits": [
+    "No GitHub/Markdown/PDF rendered display inspection.",
+    "No network access or external URL liveness check.",
+    "No new scientific tests, experiment or semantic/proof review.",
+    "No general GFM or TeX parser guarantee; linked heading targets use determinable plain-text slugs.",
+    "Placeholder check is an explicit marker scan, not a proof that every possible editorial issue is absent.",
+    "Claim-map locator checks verify section/equation/theorem existence, not the truth of their claims; historical source locators are not newly substantively reread."
+  ],
+  "inputs": [
+    {
+      "path": "paper_v2.md",
+      "bytes": 90361,
+      "sha256": "18c45d7df537c6e8a076793c9e38412e5c8d887995ba041d2ee9cbf51971bc8d"
+    },
+    {
+      "path": "v2/reporting/F17_v1/claim_map.json",
+      "bytes": 92113,
+      "sha256": "53b1fe17adf46aaf4c6443efffe7bcad1f6d9f4451c0e3eed30556584ae28218"
+    },
+    {
+      "path": "v2/reporting/F17_v1/references.bib",
+      "bytes": 11423,
+      "sha256": "4c2fd6cac269d0c27fa8e30ca71fed94bc808481dfc2b36194b2db8628c700e4"
+    }
+  ],
+  "script": {
+    "path": "v2/work_logs/F17_2026-10-06_S1/reviews/navigation/check_report_navigation.py",
+    "sha256": "1a70e696732bd64a61a0e94101cc673925cf04b6d803594e9bd905bc85aa450d"
+  },
+  "headings": [
+    {
+      "line": 1,
+      "level": 1,
+      "title": "Value Logic: Loss Comparisons and Information Retention Under Revision",
+      "slug": "value-logic-loss-comparisons-and-information-retention-under-revision"
+    },
+    {
+      "line": 8,
+      "level": 2,
+      "title": "Abstract",
+      "slug": "abstract"
+    },
+    {
+      "line": 38,
+      "level": 2,
+      "title": "1. Introduction",
+      "slug": "1-introduction"
+    },
+    {
+      "line": 40,
+      "level": 3,
+      "title": "1.1 The question",
+      "slug": "11-the-question"
+    },
+    {
+      "line": 75,
+      "level": 3,
+      "title": "1.2 Main results and their significance",
+      "slug": "12-main-results-and-their-significance"
+    },
+    {
+      "line": 127,
+      "level": 3,
+      "title": "1.3 Reading the report",
+      "slug": "13-reading-the-report"
+    },
+    {
+      "line": 139,
+      "level": 2,
+      "title": "2. Choosing what a value expression means",
+      "slug": "2-choosing-what-a-value-expression-means"
+    },
+    {
+      "line": 185,
+      "level": 2,
+      "title": "3. A semantics for conditional loss comparisons",
+      "slug": "3-a-semantics-for-conditional-loss-comparisons"
+    },
+    {
+      "line": 187,
+      "level": 3,
+      "title": "3.1 Sources, terms and contexts",
+      "slug": "31-sources-terms-and-contexts"
+    },
+    {
+      "line": 234,
+      "level": 3,
+      "title": "3.2 Signed budgets",
+      "slug": "32-signed-budgets"
+    },
+    {
+      "line": 278,
+      "level": 3,
+      "title": "3.3 Permitted actions and observations",
+      "slug": "33-permitted-actions-and-observations"
+    },
+    {
+      "line": 305,
+      "level": 2,
+      "title": "4. Composing and revising proofs",
+      "slug": "4-composing-and-revising-proofs"
+    },
+    {
+      "line": 307,
+      "level": 3,
+      "title": "4.1 Native rules",
+      "slug": "41-native-rules"
+    },
+    {
+      "line": 372,
+      "level": 3,
+      "title": "4.2 Reuse after source revision",
+      "slug": "42-reuse-after-source-revision"
+    },
+    {
+      "line": 412,
+      "level": 2,
+      "title": "5. What the calculus proves",
+      "slug": "5-what-the-calculus-proves"
+    },
+    {
+      "line": 414,
+      "level": 3,
+      "title": "5.1 Current-request soundness",
+      "slug": "51-current-request-soundness"
+    },
+    {
+      "line": 462,
+      "level": 3,
+      "title": "5.2 Constructive completeness for accessible evidence",
+      "slug": "52-constructive-completeness-for-accessible-evidence"
+    },
+    {
+      "line": 540,
+      "level": 2,
+      "title": "6. Boolean reasoning, earlier licenses and numerical scales",
+      "slug": "6-boolean-reasoning-earlier-licenses-and-numerical-scales"
+    },
+    {
+      "line": 542,
+      "level": 3,
+      "title": "6.1 A genuine Boolean fragment",
+      "slug": "61-a-genuine-boolean-fragment"
+    },
+    {
+      "line": 582,
+      "level": 3,
+      "title": "6.2 Relation to the first-stage reliance calculus",
+      "slug": "62-relation-to-the-first-stage-reliance-calculus"
+    },
+    {
+      "line": 606,
+      "level": 3,
+      "title": "6.3 Meaning-preserving numerical presentation",
+      "slug": "63-meaning-preserving-numerical-presentation"
+    },
+    {
+      "line": 628,
+      "level": 2,
+      "title": "7. What must survive a cost revision?",
+      "slug": "7-what-must-survive-a-cost-revision"
+    },
+    {
+      "line": 636,
+      "level": 3,
+      "title": "7.1 Reset procedures and exact summaries",
+      "slug": "71-reset-procedures-and-exact-summaries"
+    },
+    {
+      "line": 670,
+      "level": 3,
+      "title": "7.2 Two price profiles and minimal repair",
+      "slug": "72-two-price-profiles-and-minimal-repair"
+    },
+    {
+      "line": 806,
+      "level": 3,
+      "title": "7.3 Exact fragility and decision stability",
+      "slug": "73-exact-fragility-and-decision-stability"
+    },
+    {
+      "line": 839,
+      "level": 3,
+      "title": "7.4 A compatible estimate at the sharp common error",
+      "slug": "74-a-compatible-estimate-at-the-sharp-common-error"
+    },
+    {
+      "line": 1014,
+      "level": 2,
+      "title": "8. Worked uses of the inference rules",
+      "slug": "8-worked-uses-of-the-inference-rules"
+    },
+    {
+      "line": 1016,
+      "level": 3,
+      "title": "8.1 Replacing a scientific calculation",
+      "slug": "81-replacing-a-scientific-calculation"
+    },
+    {
+      "line": 1074,
+      "level": 3,
+      "title": "8.2 A reasoner comparing its own bounded procedures",
+      "slug": "82-a-reasoner-comparing-its-own-bounded-procedures"
+    },
+    {
+      "line": 1128,
+      "level": 2,
+      "title": "9. Implementation and the frozen retention challenge",
+      "slug": "9-implementation-and-the-frozen-retention-challenge"
+    },
+    {
+      "line": 1130,
+      "level": 3,
+      "title": "9.1 What is implemented",
+      "slug": "91-what-is-implemented"
+    },
+    {
+      "line": 1157,
+      "level": 3,
+      "title": "9.2 Prospective protocol and population",
+      "slug": "92-prospective-protocol-and-population"
+    },
+    {
+      "line": 1196,
+      "level": 3,
+      "title": "9.3 Retention outcomes and ordinary controls",
+      "slug": "93-retention-outcomes-and-ordinary-controls"
+    },
+    {
+      "line": 1251,
+      "level": 3,
+      "title": "9.4 Resource costs and the scope of usefulness",
+      "slug": "94-resource-costs-and-the-scope-of-usefulness"
+    },
+    {
+      "line": 1289,
+      "level": 2,
+      "title": "10. The ordinary-trained neural intervention probe",
+      "slug": "10-the-ordinary-trained-neural-intervention-probe"
+    },
+    {
+      "line": 1291,
+      "level": 3,
+      "title": "10.1 The task and what the probe asks",
+      "slug": "101-the-task-and-what-the-probe-asks"
+    },
+    {
+      "line": 1344,
+      "level": 3,
+      "title": "10.2 The frozen result",
+      "slug": "102-the-frozen-result"
+    },
+    {
+      "line": 1385,
+      "level": 3,
+      "title": "10.3 Why a negative extraction result is plausible",
+      "slug": "103-why-a-negative-extraction-result-is-plausible"
+    },
+    {
+      "line": 1427,
+      "level": 3,
+      "title": "10.4 What the later diagnostic adds",
+      "slug": "104-what-the-later-diagnostic-adds"
+    },
+    {
+      "line": 1498,
+      "level": 2,
+      "title": "11. Contribution and relation to established work",
+      "slug": "11-contribution-and-relation-to-established-work"
+    },
+    {
+      "line": 1500,
+      "level": 3,
+      "title": "11.1 The closest combined approach",
+      "slug": "111-the-closest-combined-approach"
+    },
+    {
+      "line": 1531,
+      "level": 3,
+      "title": "11.2 Ingredients, adaptations and boundaries",
+      "slug": "112-ingredients-adaptations-and-boundaries"
+    },
+    {
+      "line": 1560,
+      "level": 3,
+      "title": "11.3 Magnitude and comparison scope",
+      "slug": "113-magnitude-and-comparison-scope"
+    },
+    {
+      "line": 1590,
+      "level": 2,
+      "title": "12. Claim dispositions and later questions",
+      "slug": "12-claim-dispositions-and-later-questions"
+    },
+    {
+      "line": 1645,
+      "level": 2,
+      "title": "13. Reproducibility and evidence provenance",
+      "slug": "13-reproducibility-and-evidence-provenance"
+    },
+    {
+      "line": 1647,
+      "level": 3,
+      "title": "13.1 Versions, environment and exposure",
+      "slug": "131-versions-environment-and-exposure"
+    },
+    {
+      "line": 1686,
+      "level": 3,
+      "title": "13.2 Costs and recorded limitations",
+      "slug": "132-costs-and-recorded-limitations"
+    },
+    {
+      "line": 1721,
+      "level": 3,
+      "title": "13.3 Verifying saved results",
+      "slug": "133-verifying-saved-results"
+    },
+    {
+      "line": 1754,
+      "level": 2,
+      "title": "14. Attribution and writing method",
+      "slug": "14-attribution-and-writing-method"
+    },
+    {
+      "line": 1778,
+      "level": 2,
+      "title": "References",
+      "slug": "references"
+    }
+  ],
+  "duplicate_anchors": [],
+  "links": [
+    {
+      "line": 70,
+      "label": "Albert et al.",
+      "target": "#ref-acc",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 70,
+      "label": "Fouilhé et al.",
+      "target": "#ref-polyhedra",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 104,
+      "label": "Ettehad–Foucart",
+      "target": "#ref-recovery",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 180,
+      "label": "candidate semantics",
+      "target": "v2/foundations/02_candidate_semantics.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 181,
+      "label": "candidate reconstruction",
+      "target": "v2/foundations/02a_candidate_reconstruction.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 182,
+      "label": "separating examples",
+      "target": "v2/foundations/01_requirements_and_separating_examples.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 183,
+      "label": "selected core",
+      "target": "v2/foundations/03_provisional_core.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 303,
+      "label": "provisional core, §§2–6",
+      "target": "v2/foundations/03_provisional_core.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 408,
+      "label": "inference rules",
+      "target": "v2/derivations/02_inference_rules.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 409,
+      "label": "source transport and withdrawal",
+      "target": "v2/derivations/02b_source_transport_and_withdrawal.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 410,
+      "label": "producer/receiver reconstruction",
+      "target": "v2/derivations/03f_soundness_acceptance.md#3-producer-contracts-and-the-interface-repair",
+      "kind": "local_file",
+      "exists": true,
+      "fragment_resolves": true,
+      "matched_headings": [
+        {
+          "line": 97,
+          "level": 2,
+          "title": "3. Producer contracts and the interface repair",
+          "slug": "3-producer-contracts-and-the-interface-repair"
+        }
+      ],
+      "target_sha256": "155508cdf28e93c0ba4452c3d768c02f5cf06f25573a327de9ddea1db8fdf7b0"
+    },
+    {
+      "line": 459,
+      "label": "soundness derivation",
+      "target": "v2/derivations/03_soundness.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 460,
+      "label": "acceptance reconstruction",
+      "target": "v2/derivations/03f_soundness_acceptance.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 519,
+      "label": "the characterization, §§9–14",
+      "target": "v2/derivations/04_characterization.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 520,
+      "label": "its reconstruction, §§2–3",
+      "target": "v2/derivations/04g_characterization_acceptance.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 538,
+      "label": "characterization results U7–U10",
+      "target": "v2/derivations/04_characterization.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 624,
+      "label": "Boolean and phase-one adapters",
+      "target": "v2/derivations/05a_boolean_and_phase_one.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 625,
+      "label": "presentation laws",
+      "target": "v2/derivations/05b_scaling_and_bounded_domains.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 626,
+      "label": "general affine certificate construction",
+      "target": "v2/derivations/05h_affine_certificate_transport.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 748,
+      "label": "Gasanova–Nicklasson",
+      "target": "#ref-chain",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 804,
+      "label": "full retention derivation, §§4–8",
+      "target": "v2/derivations/09_c4_price_revision.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 951,
+      "label": "the complete envelope derivation, §§3–7",
+      "target": "v2/derivations/10_f16_coherent_recovery.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1001,
+      "label": "explicit convex-source triangle",
+      "target": "v2/derivations/10_f16_coherent_recovery.md#10-additional-convex-source-restrictions-can-create-a-coherence-penalty",
+      "kind": "local_file",
+      "exists": true,
+      "fragment_resolves": true,
+      "matched_headings": [
+        {
+          "line": 377,
+          "level": 2,
+          "title": "10. Additional convex source restrictions can create a coherence penalty",
+          "slug": "10-additional-convex-source-restrictions-can-create-a-coherence-penalty"
+        }
+      ],
+      "target_sha256": "991cccb61c5a56a9afb235192b3774406d5f347866b5d8f7421021035019ed04"
+    },
+    {
+      "line": 1010,
+      "label": "price-revision analysis",
+      "target": "v2/derivations/09_c4_price_revision.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1012,
+      "label": "coherent recovery",
+      "target": "v2/derivations/10_f16_coherent_recovery.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1019,
+      "label": "scientific case study",
+      "target": "v2/derivations/06_case_studies.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1072,
+      "label": "case-study §§2.1–2.9",
+      "target": "v2/derivations/06_case_studies.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1125,
+      "label": "The complete executable construction",
+      "target": "v2/derivations/06_case_studies.md#4-actual-bounded-native-procedures-and-later-reasoning",
+      "kind": "local_file",
+      "exists": true,
+      "fragment_resolves": true,
+      "matched_headings": [
+        {
+          "line": 624,
+          "level": 2,
+          "title": "4. Actual bounded native procedures and later reasoning",
+          "slug": "4-actual-bounded-native-procedures-and-later-reasoning"
+        }
+      ],
+      "target_sha256": "700a8d468a289a081964a798e27893b49971f5bf7f7fb079f11f7f35b5b8e66d"
+    },
+    {
+      "line": 1154,
+      "label": "technical regression result",
+      "target": "v2/work_logs/C_2026-10-06_S1/reviews/technical/regression_attempt1/result.json",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1155,
+      "label": "command and source plan",
+      "target": "v2/work_logs/C_2026-10-06_S1/reviews/technical/regression_plan.json",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1283,
+      "label": "frozen protocol",
+      "target": "v2/experiments/protocol.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1284,
+      "label": "configuration",
+      "target": "v2/experiments/config.v1.json",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1285,
+      "label": "full F15 report",
+      "target": "v2/experiments/results.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1286,
+      "label": "method-level machine summary",
+      "target": "v2/experiments/F15_v1_analysis/retention_by_method.json",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1287,
+      "label": "saved-row recount",
+      "target": "v2/work_logs/C_2026-10-06_S1/saved_results_attempt1/summary.json",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1337,
+      "label": "Hoeffding",
+      "target": "#ref-hoeffding",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1409,
+      "label": "Elhage et al.",
+      "target": "#ref-superposition",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1415,
+      "label": "Geiger et al., 2021",
+      "target": "#ref-causal",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1416,
+      "label": "Geiger et al., 2024",
+      "target": "#ref-das",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1419,
+      "label": "Hewitt–Liang",
+      "target": "#ref-probes",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1422,
+      "label": "Makelov et al.",
+      "target": "#ref-illusion",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1423,
+      "label": "Wu et al.",
+      "target": "#ref-reply",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1492,
+      "label": "F15 neural assessment",
+      "target": "v2/work_logs/F15_v1_run1/evaluation_attempt_1/neural_assessment.json",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1493,
+      "label": "complete report",
+      "target": "v2/experiments/results.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1495,
+      "label": "ND01 report",
+      "target": "v2/experiments/F15_ND01_results.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1496,
+      "label": "diagnostic analysis",
+      "target": "v2/experiments/F15_ND01_analysis/core_summary.json",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1506,
+      "label": "Albert–Arenas–Puebla",
+      "target": "#ref-acc",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1508,
+      "label": "Fouilhé–Monniaux–Périn",
+      "target": "#ref-polyhedra",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1535,
+      "label": "Ruspini",
+      "target": "#ref-ruspini",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1535,
+      "label": "Miranda–Zaffalon",
+      "target": "#ref-desirability",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1536,
+      "label": "Cousot–Cousot",
+      "target": "#ref-ai",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1536,
+      "label": "Kozen",
+      "target": "#ref-kozen",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1536,
+      "label": "Bistarelli et al.",
+      "target": "#ref-semiring",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1537,
+      "label": "Mardare et al.",
+      "target": "#ref-qar",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1537,
+      "label": "Bacci et al.",
+      "target": "#ref-rll",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1538,
+      "label": "Ranzato–Tapparo",
+      "target": "#ref-preservation",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1539,
+      "label": "Happach et al.",
+      "target": "#ref-ordering",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1539,
+      "label": "Boutilier et al.",
+      "target": "#ref-decision",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1540,
+      "label": "Gasanova–Nicklasson",
+      "target": "#ref-chain",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1541,
+      "label": "Ettehad–Foucart",
+      "target": "#ref-recovery",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1541,
+      "label": "Paruchuri–Chatterjee",
+      "target": "#ref-center",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1542,
+      "label": "Oliveira et al., 2017",
+      "target": "#ref-choquet17",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1543,
+      "label": "Geiger et al.",
+      "target": "#ref-causal",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1543,
+      "label": "DAS",
+      "target": "#ref-das",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1543,
+      "label": "Hewitt–Liang",
+      "target": "#ref-probes",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1573,
+      "label": "de Oliveira–Duarte–Romano",
+      "target": "#ref-choquet22",
+      "kind": "same_document_anchor",
+      "exists": true,
+      "fragment_resolves": true
+    },
+    {
+      "line": 1585,
+      "label": "comparison record",
+      "target": "v2/literature/06_c4_contribution_comparison.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1586,
+      "label": "adversarial reconstruction",
+      "target": "v2/derivations/07_adversarial_review.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1587,
+      "label": "current source map",
+      "target": "v2/work_logs/F17_2026-10-06_S1/reviews/literature_source_map.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1696,
+      "label": "command records",
+      "target": "v2/work_logs/F15_2026-10-04_S1/commands",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1697,
+      "label": "environment",
+      "target": "v2/work_logs/F15_2026-10-04_S1/environment.json",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1708,
+      "label": "storage-exception disposition",
+      "target": "v2/experiments/results.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1744,
+      "label": "report table export",
+      "target": "v2/reporting/F17_v1/tables.json",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1747,
+      "label": "claim map",
+      "target": "v2/reporting/F17_v1/claim_map.json",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1749,
+      "label": "F17 work record",
+      "target": "v2/work_logs/F17_2026-10-06_S1.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1751,
+      "label": "claim ledger",
+      "target": "v2/claim_ledger.md",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1768,
+      "label": "Mathematics Paper Skills",
+      "target": "https://github.com/amelieloher/math-paper-skills/",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1770,
+      "label": "CC BY 4.0",
+      "target": "https://creativecommons.org/licenses/by/4.0/",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1780,
+      "label": "BibTeX file",
+      "target": "v2/reporting/F17_v1/references.bib",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1782,
+      "label": "source-access record",
+      "target": "v2/work_logs/F17_2026-10-06_S1/reviews/source_access.json",
+      "kind": "local_file",
+      "exists": true
+    },
+    {
+      "line": 1790,
+      "label": "Archival manuscript",
+      "target": "https://arxiv.org/abs/1303.5744",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1798,
+      "label": "Author record",
+      "target": "https://www.di.ens.fr/~cousot/COUSOTpapers/POPL77.shtml",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1805,
+      "label": "Author manuscript",
+      "target": "https://www.cs.cornell.edu/kozen/Papers/ProbSem.pdf",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1814,
+      "label": "DOI",
+      "target": "https://doi.org/10.1145/256303.256306",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1821,
+      "label": "Accepted manuscript record",
+      "target": "https://strathprints.strath.ac.uk/70265/",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1830,
+      "label": "Official publication",
+      "target": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CSL.2026.3",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1837,
+      "label": "Inspected manuscript",
+      "target": "https://arxiv.org/pdf/2209.00686",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1845,
+      "label": "Official chapter",
+      "target": "https://link.springer.com/chapter/10.1007/978-3-642-38856-9_19",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1853,
+      "label": "Author manuscript",
+      "target": "https://cliplab.org/papers/inc-acc-lpar06.pdf",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1862,
+      "label": "Inspected manuscript",
+      "target": "https://arxiv.org/pdf/cs/0401016v3",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1870,
+      "label": "Author manuscript",
+      "target": "https://cs.uwaterloo.ca/~ppoupart/publications/elicConstraints/sdarticle.pdf",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1878,
+      "label": "Official article, Theorem 3.4",
+      "target": "https://link.springer.com/article/10.1007/s10801-023-01294-8",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1886,
+      "label": "Author manuscript",
+      "target": "https://arxiv.org/html/2004.05954v2",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1895,
+      "label": "Author manuscript, §2.1 and Theorem 1",
+      "target": "https://foucart.github.io/publi/OR_Uncertainty_v2.pdf",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1904,
+      "label": "Inspected version",
+      "target": "https://arxiv.org/html/2307.01304v1",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1913,
+      "label": "Proceedings paper",
+      "target": "https://www.sbrt.org.br/sbrt2017/anais/1570362091.pdf",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1923,
+      "label": "Publisher record",
+      "target": "https://www.sciencedirect.com/science/article/abs/pii/S0957417421012331",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1932,
+      "label": "Official proceedings",
+      "target": "https://proceedings.neurips.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1941,
+      "label": "Official proceedings",
+      "target": "https://proceedings.mlr.press/v236/geiger24a.html",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1948,
+      "label": "Official proceedings",
+      "target": "https://aclanthology.org/D19-1275/",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1955,
+      "label": "Author manuscript",
+      "target": "https://transformer-circuits.pub/2022/toy_model/toy_model.pdf",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1963,
+      "label": "Final conference paper",
+      "target": "https://proceedings.iclr.cc/paper_files/paper/2024/file/70b8505ac79e3e131756f793cd80eb8d-Paper-Conference.pdf",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1972,
+      "label": "Inspected version",
+      "target": "https://arxiv.org/html/2401.12631v1",
+      "kind": "external_syntax_only"
+    },
+    {
+      "line": 1979,
+      "label": "Paper, Theorem 2",
+      "target": "https://www.cs.rpi.edu/academics/courses/spring06/random/hoefding.pdf",
+      "kind": "external_syntax_only"
+    }
+  ],
+  "link_counts": {
+    "same_document_anchor": 31,
+    "local_file": 47,
+    "external_syntax_only": 26
+  },
+  "reference_anchors": [
+    "ref-ruspini",
+    "ref-ai",
+    "ref-kozen",
+    "ref-semiring",
+    "ref-qar",
+    "ref-rll",
+    "ref-desirability",
+    "ref-polyhedra",
+    "ref-acc",
+    "ref-preservation",
+    "ref-decision",
+    "ref-chain",
+    "ref-ordering",
+    "ref-recovery",
+    "ref-center",
+    "ref-choquet17",
+    "ref-choquet22",
+    "ref-causal",
+    "ref-das",
+    "ref-probes",
+    "ref-superposition",
+    "ref-illusion",
+    "ref-reply",
+    "ref-hoeffding"
+  ],
+  "citation_uses": {
+    "ref-acc": 2,
+    "ref-polyhedra": 2,
+    "ref-recovery": 2,
+    "ref-chain": 2,
+    "ref-hoeffding": 1,
+    "ref-superposition": 1,
+    "ref-causal": 2,
+    "ref-das": 2,
+    "ref-probes": 2,
+    "ref-illusion": 1,
+    "ref-reply": 1,
+    "ref-ruspini": 1,
+    "ref-desirability": 1,
+    "ref-ai": 1,
+    "ref-kozen": 1,
+    "ref-semiring": 1,
+    "ref-qar": 1,
+    "ref-rll": 1,
+    "ref-preservation": 1,
+    "ref-ordering": 1,
+    "ref-decision": 1,
+    "ref-center": 1,
+    "ref-choquet17": 1,
+    "ref-choquet22": 1
+  },
+  "citation_use_count": 31,
+  "bibliography_keys": [
+    "Ruspini1991",
+    "CousotCousot1977",
+    "Kozen1981",
+    "BistarelliMontanariRossi1997",
+    "MardarePanangadenPlotkin2016",
+    "BacciEtAl2026",
+    "MirandaZaffalon2022v2",
+    "FouilheMonniauxPerin2013",
+    "AlbertArenasPuebla2006",
+    "RanzatoTapparo2006v3",
+    "BoutilierEtAl2006",
+    "GasanovaNicklasson2024",
+    "HappachHellersteinLidbetter2022",
+    "EttehadFoucart2021",
+    "ParuchuriChatterjee2023v1",
+    "OliveiraRomanoDuarte2017",
+    "deOliveiraDuarteRomano2022",
+    "GeigerEtAl2021",
+    "GeigerEtAl2024DAS",
+    "HewittLiang2019",
+    "ElhageEtAl2022",
+    "MakelovEtAl2024",
+    "WuEtAl2024v1",
+    "Hoeffding1963"
+  ],
+  "reference_to_key": {
+    "ref-ruspini": "Ruspini1991",
+    "ref-ai": "CousotCousot1977",
+    "ref-kozen": "Kozen1981",
+    "ref-semiring": "BistarelliMontanariRossi1997",
+    "ref-qar": "MardarePanangadenPlotkin2016",
+    "ref-rll": "BacciEtAl2026",
+    "ref-desirability": "MirandaZaffalon2022v2",
+    "ref-polyhedra": "FouilheMonniauxPerin2013",
+    "ref-acc": "AlbertArenasPuebla2006",
+    "ref-preservation": "RanzatoTapparo2006v3",
+    "ref-decision": "BoutilierEtAl2006",
+    "ref-chain": "GasanovaNicklasson2024",
+    "ref-ordering": "HappachHellersteinLidbetter2022",
+    "ref-recovery": "EttehadFoucart2021",
+    "ref-center": "ParuchuriChatterjee2023v1",
+    "ref-choquet17": "OliveiraRomanoDuarte2017",
+    "ref-choquet22": "deOliveiraDuarteRomano2022",
+    "ref-causal": "GeigerEtAl2021",
+    "ref-das": "GeigerEtAl2024DAS",
+    "ref-probes": "HewittLiang2019",
+    "ref-superposition": "ElhageEtAl2022",
+    "ref-illusion": "MakelovEtAl2024",
+    "ref-reply": "WuEtAl2024v1",
+    "ref-hoeffding": "Hoeffding1963"
+  },
+  "code_blocks": [
+    {
+      "start_line": 1727,
+      "end_line": 1737,
+      "info": "bash"
+    }
+  ],
+  "inline_code_spans": [
+    {
+      "start_line": 1650,
+      "end_line": 1650
+    },
+    {
+      "start_line": 1655,
+      "end_line": 1655
+    },
+    {
+      "start_line": 1656,
+      "end_line": 1656
+    },
+    {
+      "start_line": 1657,
+      "end_line": 1657
+    },
+    {
+      "start_line": 1658,
+      "end_line": 1658
+    },
+    {
+      "start_line": 1669,
+      "end_line": 1669
+    },
+    {
+      "start_line": 1670,
+      "end_line": 1670
+    },
+    {
+      "start_line": 1671,
+      "end_line": 1671
+    },
+    {
+      "start_line": 1704,
+      "end_line": 1704
+    },
+    {
+      "start_line": 1769,
+      "end_line": 1769
+    }
+  ],
+  "math_span_counts": {
+    "$": 311,
+    "$$": 37
+  },
+  "math_spans": [
+    {
+      "delimiter": "$",
+      "start_line": 20,
+      "end_line": 20,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 77,
+      "end_line": 77,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 77,
+      "end_line": 77,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 78,
+      "end_line": 78,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 89,
+      "end_line": 89,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 90,
+      "end_line": 90,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 93,
+      "end_line": 93,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 143,
+      "end_line": 143,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 143,
+      "end_line": 143,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 143,
+      "end_line": 143,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 144,
+      "end_line": 144,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 145,
+      "end_line": 145,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 145,
+      "end_line": 145,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 145,
+      "end_line": 145,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 201,
+      "end_line": 203,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 211,
+      "end_line": 211,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 214,
+      "end_line": 217,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 236,
+      "end_line": 236,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 236,
+      "end_line": 236,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 236,
+      "end_line": 236,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 237,
+      "end_line": 237,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 239,
+      "end_line": 244,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 254,
+      "end_line": 259,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 262,
+      "end_line": 262,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 268,
+      "end_line": 272,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 274,
+      "end_line": 274,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 274,
+      "end_line": 274,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 285,
+      "end_line": 289,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 292,
+      "end_line": 292,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 292,
+      "end_line": 292,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 309,
+      "end_line": 309,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 318,
+      "end_line": 318,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 318,
+      "end_line": 318,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 318,
+      "end_line": 318,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 319,
+      "end_line": 319,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 319,
+      "end_line": 319,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 321,
+      "end_line": 321,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 321,
+      "end_line": 321,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 323,
+      "end_line": 323,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 323,
+      "end_line": 323,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 325,
+      "end_line": 325,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 325,
+      "end_line": 325,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 331,
+      "end_line": 331,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 331,
+      "end_line": 331,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 332,
+      "end_line": 332,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 335,
+      "end_line": 335,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 336,
+      "end_line": 336,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 339,
+      "end_line": 344,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 347,
+      "end_line": 347,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 352,
+      "end_line": 356,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 360,
+      "end_line": 365,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 368,
+      "end_line": 368,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 381,
+      "end_line": 381,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 381,
+      "end_line": 381,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 382,
+      "end_line": 382,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 382,
+      "end_line": 382,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 384,
+      "end_line": 386,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 389,
+      "end_line": 389,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 391,
+      "end_line": 394,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 446,
+      "end_line": 446,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 447,
+      "end_line": 447,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 447,
+      "end_line": 447,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 449,
+      "end_line": 449,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 468,
+      "end_line": 468,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 468,
+      "end_line": 468,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 470,
+      "end_line": 470,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 470,
+      "end_line": 470,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 474,
+      "end_line": 474,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 475,
+      "end_line": 475,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 475,
+      "end_line": 475,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 476,
+      "end_line": 476,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 482,
+      "end_line": 487,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 491,
+      "end_line": 491,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 500,
+      "end_line": 500,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 511,
+      "end_line": 511,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 511,
+      "end_line": 511,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 523,
+      "end_line": 523,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 525,
+      "end_line": 525,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 526,
+      "end_line": 526,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 526,
+      "end_line": 526,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 527,
+      "end_line": 527,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 527,
+      "end_line": 527,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 528,
+      "end_line": 528,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 528,
+      "end_line": 528,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 528,
+      "end_line": 528,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 529,
+      "end_line": 529,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 529,
+      "end_line": 529,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 534,
+      "end_line": 534,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 535,
+      "end_line": 535,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 535,
+      "end_line": 535,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 545,
+      "end_line": 545,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 545,
+      "end_line": 545,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 551,
+      "end_line": 551,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 551,
+      "end_line": 551,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 552,
+      "end_line": 552,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 552,
+      "end_line": 552,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 553,
+      "end_line": 553,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 553,
+      "end_line": 553,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 554,
+      "end_line": 554,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 554,
+      "end_line": 554,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 555,
+      "end_line": 555,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 555,
+      "end_line": 555,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 557,
+      "end_line": 557,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 558,
+      "end_line": 558,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 559,
+      "end_line": 559,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 562,
+      "end_line": 569,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 571,
+      "end_line": 571,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 571,
+      "end_line": 571,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 572,
+      "end_line": 572,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 578,
+      "end_line": 578,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 579,
+      "end_line": 579,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 579,
+      "end_line": 579,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 587,
+      "end_line": 587,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 588,
+      "end_line": 588,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 593,
+      "end_line": 593,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 593,
+      "end_line": 593,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 594,
+      "end_line": 594,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 595,
+      "end_line": 595,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 638,
+      "end_line": 638,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 638,
+      "end_line": 638,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 639,
+      "end_line": 639,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 640,
+      "end_line": 640,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 640,
+      "end_line": 640,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 642,
+      "end_line": 642,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 642,
+      "end_line": 642,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 644,
+      "end_line": 646,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 650,
+      "end_line": 656,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 672,
+      "end_line": 672,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 676,
+      "end_line": 676,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 677,
+      "end_line": 677,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 677,
+      "end_line": 677,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 678,
+      "end_line": 678,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 679,
+      "end_line": 679,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 683,
+      "end_line": 683,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 683,
+      "end_line": 683,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 683,
+      "end_line": 683,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 683,
+      "end_line": 683,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 684,
+      "end_line": 684,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 685,
+      "end_line": 685,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 685,
+      "end_line": 685,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 685,
+      "end_line": 685,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 687,
+      "end_line": 687,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 687,
+      "end_line": 687,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 688,
+      "end_line": 688,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 688,
+      "end_line": 688,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 691,
+      "end_line": 694,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 699,
+      "end_line": 703,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 705,
+      "end_line": 705,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 706,
+      "end_line": 706,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 707,
+      "end_line": 707,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 716,
+      "end_line": 719,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 721,
+      "end_line": 721,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 722,
+      "end_line": 722,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 726,
+      "end_line": 726,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 726,
+      "end_line": 726,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 728,
+      "end_line": 728,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 729,
+      "end_line": 729,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 730,
+      "end_line": 730,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 731,
+      "end_line": 731,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 733,
+      "end_line": 733,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 733,
+      "end_line": 733,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 734,
+      "end_line": 734,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 736,
+      "end_line": 736,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 737,
+      "end_line": 737,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 738,
+      "end_line": 738,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 739,
+      "end_line": 739,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 740,
+      "end_line": 740,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 742,
+      "end_line": 742,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 746,
+      "end_line": 746,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 747,
+      "end_line": 747,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 747,
+      "end_line": 747,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 753,
+      "end_line": 753,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 753,
+      "end_line": 753,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 754,
+      "end_line": 754,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 755,
+      "end_line": 755,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 755,
+      "end_line": 755,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 756,
+      "end_line": 756,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 758,
+      "end_line": 758,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 760,
+      "end_line": 760,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 760,
+      "end_line": 760,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 761,
+      "end_line": 761,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 762,
+      "end_line": 762,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 763,
+      "end_line": 763,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 764,
+      "end_line": 764,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 764,
+      "end_line": 764,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 766,
+      "end_line": 770,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 773,
+      "end_line": 773,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 773,
+      "end_line": 773,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 776,
+      "end_line": 781,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 784,
+      "end_line": 784,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 788,
+      "end_line": 788,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 790,
+      "end_line": 790,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 790,
+      "end_line": 790,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 792,
+      "end_line": 792,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 793,
+      "end_line": 793,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 798,
+      "end_line": 798,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 800,
+      "end_line": 800,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 800,
+      "end_line": 800,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 801,
+      "end_line": 801,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 813,
+      "end_line": 816,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 819,
+      "end_line": 819,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 825,
+      "end_line": 825,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 826,
+      "end_line": 826,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 832,
+      "end_line": 832,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 834,
+      "end_line": 834,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 848,
+      "end_line": 848,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 848,
+      "end_line": 848,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 852,
+      "end_line": 852,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 853,
+      "end_line": 853,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 853,
+      "end_line": 853,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 855,
+      "end_line": 855,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 858,
+      "end_line": 860,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 862,
+      "end_line": 862,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 864,
+      "end_line": 864,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 866,
+      "end_line": 869,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 871,
+      "end_line": 871,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 871,
+      "end_line": 871,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 874,
+      "end_line": 880,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 883,
+      "end_line": 883,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 884,
+      "end_line": 884,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 885,
+      "end_line": 885,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 886,
+      "end_line": 886,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 888,
+      "end_line": 888,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 891,
+      "end_line": 894,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 896,
+      "end_line": 896,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 896,
+      "end_line": 896,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 897,
+      "end_line": 897,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 897,
+      "end_line": 897,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 898,
+      "end_line": 898,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 900,
+      "end_line": 903,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 909,
+      "end_line": 912,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 915,
+      "end_line": 915,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 915,
+      "end_line": 915,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 916,
+      "end_line": 916,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 918,
+      "end_line": 918,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 918,
+      "end_line": 918,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 920,
+      "end_line": 920,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 921,
+      "end_line": 921,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 922,
+      "end_line": 922,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 923,
+      "end_line": 923,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 923,
+      "end_line": 923,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 924,
+      "end_line": 924,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 924,
+      "end_line": 924,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 926,
+      "end_line": 926,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 926,
+      "end_line": 926,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 927,
+      "end_line": 927,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 928,
+      "end_line": 928,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 931,
+      "end_line": 935,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 937,
+      "end_line": 937,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 939,
+      "end_line": 939,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 939,
+      "end_line": 939,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 940,
+      "end_line": 940,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 942,
+      "end_line": 942,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 942,
+      "end_line": 942,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 943,
+      "end_line": 943,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 945,
+      "end_line": 945,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 946,
+      "end_line": 946,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 948,
+      "end_line": 948,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 952,
+      "end_line": 952,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 955,
+      "end_line": 955,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 955,
+      "end_line": 955,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 959,
+      "end_line": 959,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 964,
+      "end_line": 971,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 973,
+      "end_line": 973,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 976,
+      "end_line": 976,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 977,
+      "end_line": 977,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 978,
+      "end_line": 978,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 978,
+      "end_line": 978,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 979,
+      "end_line": 979,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 980,
+      "end_line": 980,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 986,
+      "end_line": 986,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 986,
+      "end_line": 986,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 989,
+      "end_line": 991,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 994,
+      "end_line": 994,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 998,
+      "end_line": 998,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1002,
+      "end_line": 1002,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1003,
+      "end_line": 1003,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1020,
+      "end_line": 1020,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1020,
+      "end_line": 1020,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1022,
+      "end_line": 1022,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1023,
+      "end_line": 1023,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 1025,
+      "end_line": 1029,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1032,
+      "end_line": 1032,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1032,
+      "end_line": 1032,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1033,
+      "end_line": 1033,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1033,
+      "end_line": 1033,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1034,
+      "end_line": 1034,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1035,
+      "end_line": 1035,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1035,
+      "end_line": 1035,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1037,
+      "end_line": 1037,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1037,
+      "end_line": 1037,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1041,
+      "end_line": 1041,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 1044,
+      "end_line": 1054,
+      "environments": [
+        "aligned"
+      ]
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1062,
+      "end_line": 1062,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1065,
+      "end_line": 1065,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1077,
+      "end_line": 1077,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1077,
+      "end_line": 1077,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1078,
+      "end_line": 1078,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1079,
+      "end_line": 1079,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1079,
+      "end_line": 1079,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1080,
+      "end_line": 1080,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 1093,
+      "end_line": 1095,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1098,
+      "end_line": 1098,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1098,
+      "end_line": 1098,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1098,
+      "end_line": 1098,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 1101,
+      "end_line": 1104,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1106,
+      "end_line": 1106,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1112,
+      "end_line": 1112,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1112,
+      "end_line": 1112,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1112,
+      "end_line": 1112,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1112,
+      "end_line": 1112,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1113,
+      "end_line": 1113,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1113,
+      "end_line": 1113,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1113,
+      "end_line": 1113,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1113,
+      "end_line": 1113,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1115,
+      "end_line": 1115,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1178,
+      "end_line": 1178,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1179,
+      "end_line": 1179,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1179,
+      "end_line": 1179,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1180,
+      "end_line": 1180,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1228,
+      "end_line": 1228,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1229,
+      "end_line": 1229,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1255,
+      "end_line": 1255,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1256,
+      "end_line": 1256,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1257,
+      "end_line": 1257,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1257,
+      "end_line": 1257,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1260,
+      "end_line": 1260,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1294,
+      "end_line": 1294,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1295,
+      "end_line": 1295,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1295,
+      "end_line": 1295,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 1298,
+      "end_line": 1300,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 1304,
+      "end_line": 1309,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1323,
+      "end_line": 1323,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1324,
+      "end_line": 1324,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1324,
+      "end_line": 1324,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1336,
+      "end_line": 1336,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1357,
+      "end_line": 1357,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1358,
+      "end_line": 1358,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1362,
+      "end_line": 1362,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1363,
+      "end_line": 1363,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1364,
+      "end_line": 1364,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1364,
+      "end_line": 1364,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1372,
+      "end_line": 1372,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1372,
+      "end_line": 1372,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1372,
+      "end_line": 1372,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1373,
+      "end_line": 1373,
+      "environments": []
+    },
+    {
+      "delimiter": "$",
+      "start_line": 1373,
+      "end_line": 1373,
+      "environments": []
+    },
+    {
+      "delimiter": "$$",
+      "start_line": 1397,
+      "end_line": 1402,
+      "environments": []
+    }
+  ],
+  "equation_tags": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25"
+  ],
+  "theorem_numbers": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "placeholder_matches": [],
+  "claim_group_count": 42,
+  "unique_claim_ids": 42,
+  "fragment_groups": [
+    {
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/claim_map_math.json",
+      "group_count": 19,
+      "ids_match_in_order": true
+    },
+    {
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/claim_map_empirical.json",
+      "group_count": 14,
+      "ids_match_in_order": true
+    },
+    {
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/claim_map_literature.json",
+      "group_count": 9,
+      "ids_match_in_order": true
+    }
+  ],
+  "evidence_binding_occurrences": 145,
+  "unique_hashed_paths": 83,
+  "evidence_bindings": [
+    {
+      "json_location": "$.attribution_and_bibliography_evidence[0]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/source_reads/writing_guidance.json",
+      "expected_sha256": "3afae2e5f7e5ede6812df6089bc9760114473292f006fb00378d3d1aff865275",
+      "actual_sha256": "3afae2e5f7e5ede6812df6089bc9760114473292f006fb00378d3d1aff865275",
+      "actual_bytes": 3694,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.attribution_and_bibliography_evidence[1]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/bibliography_record.json",
+      "expected_sha256": "bfdaf93393ce1a5ecc7d90312875e11bd0ac68036c70f41de5824c84cf73a1a0",
+      "actual_sha256": "bfdaf93393ce1a5ecc7d90312875e11bd0ac68036c70f41de5824c84cf73a1a0",
+      "actual_bytes": 41758,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.bibliography",
+      "path": "v2/reporting/F17_v1/references.bib",
+      "expected_sha256": "4c2fd6cac269d0c27fa8e30ca71fed94bc808481dfc2b36194b2db8628c700e4",
+      "actual_sha256": "4c2fd6cac269d0c27fa8e30ca71fed94bc808481dfc2b36194b2db8628c700e4",
+      "actual_bytes": 11423,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.builder",
+      "path": "v2/reporting/build_f17_claim_map.py",
+      "expected_sha256": "43eefe0cc1b3fa685a2edcf70c9c28b530d91c015f51832b495dd18d3e147ec8",
+      "actual_sha256": "43eefe0cc1b3fa685a2edcf70c9c28b530d91c015f51832b495dd18d3e147ec8",
+      "actual_bytes": 4228,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.claims[0].evidence[0]",
+      "path": "v2/foundations/01_requirements_and_separating_examples.md",
+      "expected_sha256": "dd61bba7d9372d9073262c05a8a623dcaa2ad2d5988da23cdd447540e42f93da",
+      "actual_sha256": "dd61bba7d9372d9073262c05a8a623dcaa2ad2d5988da23cdd447540e42f93da",
+      "actual_bytes": 39865,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[0].evidence[1]",
+      "path": "v2/decisions/DIR01_loss_grounded_reflective_direction.md",
+      "expected_sha256": "1eaf251be886a09ffeb4a70f21e13ce7840321aed83d188b6cb9739016e25538",
+      "actual_sha256": "1eaf251be886a09ffeb4a70f21e13ce7840321aed83d188b6cb9739016e25538",
+      "actual_bytes": 9122,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[1].evidence[0]",
+      "path": "v2/foundations/02_candidate_semantics.md",
+      "expected_sha256": "4e75a7efd34a4aa29a57cfd7b142d41f939c4ebddca12f6403489525ffd6a980",
+      "actual_sha256": "4e75a7efd34a4aa29a57cfd7b142d41f939c4ebddca12f6403489525ffd6a980",
+      "actual_bytes": 68609,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[2].evidence[0]",
+      "path": "v2/foundations/03_provisional_core.md",
+      "expected_sha256": "a349a18362f7cf09b9db3e8588b650c3b6b6eb5482470a7c175f049fbdad527b",
+      "actual_sha256": "a349a18362f7cf09b9db3e8588b650c3b6b6eb5482470a7c175f049fbdad527b",
+      "actual_bytes": 46904,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[3].evidence[0]",
+      "path": "v2/foundations/03_provisional_core.md",
+      "expected_sha256": "a349a18362f7cf09b9db3e8588b650c3b6b6eb5482470a7c175f049fbdad527b",
+      "actual_sha256": "a349a18362f7cf09b9db3e8588b650c3b6b6eb5482470a7c175f049fbdad527b",
+      "actual_bytes": 46904,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[3].evidence[1]",
+      "path": "v2/foundations/03b_observation_and_revision_audit.md",
+      "expected_sha256": "fb6527cf81ef8693d787fe1e0ab07100d0873b457f96a6f06a271bf0f9243bb6",
+      "actual_sha256": "fb6527cf81ef8693d787fe1e0ab07100d0873b457f96a6f06a271bf0f9243bb6",
+      "actual_bytes": 83126,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[4].evidence[0]",
+      "path": "v2/derivations/02b_source_transport_and_withdrawal.md",
+      "expected_sha256": "b9880d066e2d6f6cdc1f1012d6e45fe05b83b3f776e923b56b87ecc50d8b3791",
+      "actual_sha256": "b9880d066e2d6f6cdc1f1012d6e45fe05b83b3f776e923b56b87ecc50d8b3791",
+      "actual_bytes": 77295,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[4].evidence[1]",
+      "path": "v2/derivations/03f_soundness_acceptance.md",
+      "expected_sha256": "155508cdf28e93c0ba4452c3d768c02f5cf06f25573a327de9ddea1db8fdf7b0",
+      "actual_sha256": "155508cdf28e93c0ba4452c3d768c02f5cf06f25573a327de9ddea1db8fdf7b0",
+      "actual_bytes": 16479,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[5].evidence[0]",
+      "path": "v2/derivations/03_soundness.md",
+      "expected_sha256": "4a94a04f0053f8791c739e48526b45173887a13fde097e29278bfb54a000f12f",
+      "actual_sha256": "4a94a04f0053f8791c739e48526b45173887a13fde097e29278bfb54a000f12f",
+      "actual_bytes": 24921,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[5].evidence[1]",
+      "path": "v2/derivations/03f_soundness_acceptance.md",
+      "expected_sha256": "155508cdf28e93c0ba4452c3d768c02f5cf06f25573a327de9ddea1db8fdf7b0",
+      "actual_sha256": "155508cdf28e93c0ba4452c3d768c02f5cf06f25573a327de9ddea1db8fdf7b0",
+      "actual_bytes": 16479,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[6].evidence[0]",
+      "path": "v2/derivations/04_characterization.md",
+      "expected_sha256": "f37b5b03d647c54115d80f071ff46237f5bf31ad9104303bfa7f74cbfc9d1aad",
+      "actual_sha256": "f37b5b03d647c54115d80f071ff46237f5bf31ad9104303bfa7f74cbfc9d1aad",
+      "actual_bytes": 27373,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[6].evidence[1]",
+      "path": "v2/derivations/04g_characterization_acceptance.md",
+      "expected_sha256": "a92030715bb4d0be0ffd51aae62f76fe94f486dcd21b4ce9fa5e823d77c6f8a6",
+      "actual_sha256": "a92030715bb4d0be0ffd51aae62f76fe94f486dcd21b4ce9fa5e823d77c6f8a6",
+      "actual_bytes": 15828,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[7].evidence[0]",
+      "path": "v2/derivations/04_characterization.md",
+      "expected_sha256": "f37b5b03d647c54115d80f071ff46237f5bf31ad9104303bfa7f74cbfc9d1aad",
+      "actual_sha256": "f37b5b03d647c54115d80f071ff46237f5bf31ad9104303bfa7f74cbfc9d1aad",
+      "actual_bytes": 27373,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[8].evidence[0]",
+      "path": "v2/derivations/05a_boolean_and_phase_one.md",
+      "expected_sha256": "486ee97a9bff7ae3b9dfb2f455b451f885467d6f1e607de9c729e600fbbcc39d",
+      "actual_sha256": "486ee97a9bff7ae3b9dfb2f455b451f885467d6f1e607de9c729e600fbbcc39d",
+      "actual_bytes": 15349,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[9].evidence[0]",
+      "path": "v2/derivations/05a_boolean_and_phase_one.md",
+      "expected_sha256": "486ee97a9bff7ae3b9dfb2f455b451f885467d6f1e607de9c729e600fbbcc39d",
+      "actual_sha256": "486ee97a9bff7ae3b9dfb2f455b451f885467d6f1e607de9c729e600fbbcc39d",
+      "actual_bytes": 15349,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[10].evidence[0]",
+      "path": "v2/derivations/05b_scaling_and_bounded_domains.md",
+      "expected_sha256": "e4c07d5de6d5cf0713cbfb1230cf968505587dc1fe1f4c042fef7e288ede1e08",
+      "actual_sha256": "e4c07d5de6d5cf0713cbfb1230cf968505587dc1fe1f4c042fef7e288ede1e08",
+      "actual_bytes": 21383,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[10].evidence[1]",
+      "path": "v2/derivations/05h_affine_certificate_transport.md",
+      "expected_sha256": "2cf7a5447e55b81ce5609f68c867e22c7d2e9e7c7d8d20ccf19f286e36371027",
+      "actual_sha256": "2cf7a5447e55b81ce5609f68c867e22c7d2e9e7c7d8d20ccf19f286e36371027",
+      "actual_bytes": 16878,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[11].evidence[0]",
+      "path": "v2/derivations/09_c4_price_revision.md",
+      "expected_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_bytes": 42319,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[11].evidence[1]",
+      "path": "v2/derivations/06_case_studies.md",
+      "expected_sha256": "700a8d468a289a081964a798e27893b49971f5bf7f7fb079f11f7f35b5b8e66d",
+      "actual_sha256": "700a8d468a289a081964a798e27893b49971f5bf7f7fb079f11f7f35b5b8e66d",
+      "actual_bytes": 78869,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[12].evidence[0]",
+      "path": "v2/derivations/09_c4_price_revision.md",
+      "expected_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_bytes": 42319,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[12].evidence[1]",
+      "path": "v2/literature/06_c4_contribution_comparison.md",
+      "expected_sha256": "f8fd091dbf08ceafe79c86d00dd0ecf351c10a0bd77bfe852b2ebaa25631e4d4",
+      "actual_sha256": "f8fd091dbf08ceafe79c86d00dd0ecf351c10a0bd77bfe852b2ebaa25631e4d4",
+      "actual_bytes": 16423,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[13].evidence[0]",
+      "path": "v2/derivations/09_c4_price_revision.md",
+      "expected_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_bytes": 42319,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[14].evidence[0]",
+      "path": "v2/derivations/09_c4_price_revision.md",
+      "expected_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_bytes": 42319,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[15].evidence[0]",
+      "path": "v2/derivations/09_c4_price_revision.md",
+      "expected_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_bytes": 42319,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[15].evidence[1]",
+      "path": "v2/derivations/10_f16_coherent_recovery.md",
+      "expected_sha256": "991cccb61c5a56a9afb235192b3774406d5f347866b5d8f7421021035019ed04",
+      "actual_sha256": "991cccb61c5a56a9afb235192b3774406d5f347866b5d8f7421021035019ed04",
+      "actual_bytes": 21105,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[16].evidence[0]",
+      "path": "v2/derivations/09_c4_price_revision.md",
+      "expected_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_bytes": 42319,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[16].evidence[1]",
+      "path": "v2/derivations/10_f16_coherent_recovery.md",
+      "expected_sha256": "991cccb61c5a56a9afb235192b3774406d5f347866b5d8f7421021035019ed04",
+      "actual_sha256": "991cccb61c5a56a9afb235192b3774406d5f347866b5d8f7421021035019ed04",
+      "actual_bytes": 21105,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[17].evidence[0]",
+      "path": "v2/derivations/06_case_studies.md",
+      "expected_sha256": "700a8d468a289a081964a798e27893b49971f5bf7f7fb079f11f7f35b5b8e66d",
+      "actual_sha256": "700a8d468a289a081964a798e27893b49971f5bf7f7fb079f11f7f35b5b8e66d",
+      "actual_bytes": 78869,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[18].evidence[0]",
+      "path": "v2/derivations/06_case_studies.md",
+      "expected_sha256": "700a8d468a289a081964a798e27893b49971f5bf7f7fb079f11f7f35b5b8e66d",
+      "actual_sha256": "700a8d468a289a081964a798e27893b49971f5bf7f7fb079f11f7f35b5b8e66d",
+      "actual_bytes": 78869,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[18].evidence[1]",
+      "path": "v2/verification/F13_results.md",
+      "expected_sha256": "9293161c17d25d8247fd1ab25726ee32941feea58251f37162768c9dfa283e5a",
+      "actual_sha256": "9293161c17d25d8247fd1ab25726ee32941feea58251f37162768c9dfa283e5a",
+      "actual_bytes": 4574,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[19].evidence[0]",
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/technical/regression_attempt1/result.json",
+      "expected_sha256": "2c5c6cd29f9acf59e61850f804212101331aae0fadb4ba6dd3fbb282b3b9e3f2",
+      "actual_sha256": "2c5c6cd29f9acf59e61850f804212101331aae0fadb4ba6dd3fbb282b3b9e3f2",
+      "actual_bytes": 731,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[19].evidence[1]",
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/technical/regression_plan.json",
+      "expected_sha256": "2afd91cefc86ec4a1db00baae4f64783d693bdd55fd20e71b87c44f9d726fed6",
+      "actual_sha256": "2afd91cefc86ec4a1db00baae4f64783d693bdd55fd20e71b87c44f9d726fed6",
+      "actual_bytes": 4005,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[19].evidence[2]",
+      "path": "v2/experiments/results.md",
+      "expected_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_bytes": 71198,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[20].evidence[0]",
+      "path": "v2/experiments/freeze.v1.json",
+      "expected_sha256": "b860021d3cb26705196b75d6b13277135d0c9220c266b21e05d7d11e719b2f9c",
+      "actual_sha256": "b860021d3cb26705196b75d6b13277135d0c9220c266b21e05d7d11e719b2f9c",
+      "actual_bytes": 5474,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[20].evidence[1]",
+      "path": "v2/experiments/config.v1.json",
+      "expected_sha256": "ea76f361eb1f2f055e6fa09096ba87fc5558bfe679982466e6de9543541d1918",
+      "actual_sha256": "ea76f361eb1f2f055e6fa09096ba87fc5558bfe679982466e6de9543541d1918",
+      "actual_bytes": 5027,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[20].evidence[2]",
+      "path": "v2/work_logs/F15_v1_run1/preparation_complete.json",
+      "expected_sha256": "89a97b417c5862cf6b5aaf31bc9e9b9933e90a526dc6b9af57e0c548426a3041",
+      "actual_sha256": "89a97b417c5862cf6b5aaf31bc9e9b9933e90a526dc6b9af57e0c548426a3041",
+      "actual_bytes": 2993,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[20].evidence[3]",
+      "path": "v2/work_logs/F15_2026-10-04_S1/pre_evaluation_validation.json",
+      "expected_sha256": "26aa187265abe2352e19722bd365c97abb279f88cb248c08694205fd6455c2e1",
+      "actual_sha256": "26aa187265abe2352e19722bd365c97abb279f88cb248c08694205fd6455c2e1",
+      "actual_bytes": 50225,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[20].evidence[4]",
+      "path": "v2/work_logs/F15_v1_run1/evaluation_start.json",
+      "expected_sha256": "582a472ce09471b3415ef72cb927116d784dc4b7dea9f1cf04af1291838a1f44",
+      "actual_sha256": "582a472ce09471b3415ef72cb927116d784dc4b7dea9f1cf04af1291838a1f44",
+      "actual_bytes": 1060,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[20].evidence[5]",
+      "path": "v2/work_logs/F15_v1_run1/evaluation_complete.json",
+      "expected_sha256": "807d52c37162a1d87c884ea31246ffc33bef5b5e66ac81813c177fd9e125d9d2",
+      "actual_sha256": "807d52c37162a1d87c884ea31246ffc33bef5b5e66ac81813c177fd9e125d9d2",
+      "actual_bytes": 11923,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[20].evidence[6]",
+      "path": "v2/work_logs/F15_2026-10-04_S1/environment.json",
+      "expected_sha256": "dbce3fecdb7a0c441053a74eba5a28165e4e754c5a703bc316bdac3b13a81c5e",
+      "actual_sha256": "dbce3fecdb7a0c441053a74eba5a28165e4e754c5a703bc316bdac3b13a81c5e",
+      "actual_bytes": 3211,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[20].evidence[7]",
+      "path": "v2/work_logs/C_2026-10-06_S1/saved_results_attempt1/summary.json",
+      "expected_sha256": "6e3717198e4412dbd941d4e933409d4627ebd7dd415305bde6b7de708440c7f0",
+      "actual_sha256": "6e3717198e4412dbd941d4e933409d4627ebd7dd415305bde6b7de708440c7f0",
+      "actual_bytes": 5962,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[21].evidence[0]",
+      "path": "v2/experiments/protocol.md",
+      "expected_sha256": "21b188b6caeea5fde10323128fcdad8670507d8f5b6793e2fc80380689699d58",
+      "actual_sha256": "21b188b6caeea5fde10323128fcdad8670507d8f5b6793e2fc80380689699d58",
+      "actual_bytes": 46458,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[21].evidence[1]",
+      "path": "v2/work_logs/F15_v1_run1/evaluation_attempt_1/retention_assessment.json",
+      "expected_sha256": "ab29d9216bc1da271131cc3ac75d5d811749d68e9b7d6002a5b2789441e1d34b",
+      "actual_sha256": "ab29d9216bc1da271131cc3ac75d5d811749d68e9b7d6002a5b2789441e1d34b",
+      "actual_bytes": 13246579,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[21].evidence[2]",
+      "path": "v2/reporting/F17_v1/tables.json",
+      "expected_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_bytes": 155351,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[21].evidence[3]",
+      "path": "v2/reporting/build_f17_tables.py",
+      "expected_sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5",
+      "actual_sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5",
+      "actual_bytes": 20888,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[21].evidence[4]",
+      "path": "v2/experiments/results.md",
+      "expected_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_bytes": 71198,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[22].evidence[0]",
+      "path": "v2/experiments/protocol.md",
+      "expected_sha256": "21b188b6caeea5fde10323128fcdad8670507d8f5b6793e2fc80380689699d58",
+      "actual_sha256": "21b188b6caeea5fde10323128fcdad8670507d8f5b6793e2fc80380689699d58",
+      "actual_bytes": 46458,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[22].evidence[1]",
+      "path": "v2/work_logs/F15_v1_run1/evaluation_attempt_1/retention_assessment.json",
+      "expected_sha256": "ab29d9216bc1da271131cc3ac75d5d811749d68e9b7d6002a5b2789441e1d34b",
+      "actual_sha256": "ab29d9216bc1da271131cc3ac75d5d811749d68e9b7d6002a5b2789441e1d34b",
+      "actual_bytes": 13246579,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[22].evidence[2]",
+      "path": "v2/work_logs/C_2026-10-06_S1/saved_results_attempt1/summary.json",
+      "expected_sha256": "6e3717198e4412dbd941d4e933409d4627ebd7dd415305bde6b7de708440c7f0",
+      "actual_sha256": "6e3717198e4412dbd941d4e933409d4627ebd7dd415305bde6b7de708440c7f0",
+      "actual_bytes": 5962,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[22].evidence[3]",
+      "path": "v2/reporting/F17_v1/tables.json",
+      "expected_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_bytes": 155351,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[22].evidence[4]",
+      "path": "v2/reporting/build_f17_tables.py",
+      "expected_sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5",
+      "actual_sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5",
+      "actual_bytes": 20888,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[23].evidence[0]",
+      "path": "v2/work_logs/F15_v1_run1/evaluation_attempt_1/retention_assessment.json",
+      "expected_sha256": "ab29d9216bc1da271131cc3ac75d5d811749d68e9b7d6002a5b2789441e1d34b",
+      "actual_sha256": "ab29d9216bc1da271131cc3ac75d5d811749d68e9b7d6002a5b2789441e1d34b",
+      "actual_bytes": 13246579,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[23].evidence[1]",
+      "path": "v2/work_logs/C_2026-10-06_S1/saved_results_attempt1/summary.json",
+      "expected_sha256": "6e3717198e4412dbd941d4e933409d4627ebd7dd415305bde6b7de708440c7f0",
+      "actual_sha256": "6e3717198e4412dbd941d4e933409d4627ebd7dd415305bde6b7de708440c7f0",
+      "actual_bytes": 5962,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[23].evidence[2]",
+      "path": "v2/reporting/F17_v1/tables.json",
+      "expected_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_bytes": 155351,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[23].evidence[3]",
+      "path": "v2/experiments/results.md",
+      "expected_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_bytes": 71198,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[24].evidence[0]",
+      "path": "v2/experiments/F15_v1_analysis/retention_by_method.json",
+      "expected_sha256": "6cf6ea83d0c252fe7df3e21fce5090eff608d6ed0e9f8193f1fa6415d5d03391",
+      "actual_sha256": "6cf6ea83d0c252fe7df3e21fce5090eff608d6ed0e9f8193f1fa6415d5d03391",
+      "actual_bytes": 120941,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[24].evidence[1]",
+      "path": "v2/work_logs/F15_2026-10-04_S1/retention_case_analysis.json",
+      "expected_sha256": "d4509143a050c398d0c578e598e81adfcf73e1c5cb0a694d6eea5ee240112f3b",
+      "actual_sha256": "d4509143a050c398d0c578e598e81adfcf73e1c5cb0a694d6eea5ee240112f3b",
+      "actual_bytes": 221932,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[24].evidence[2]",
+      "path": "v2/reporting/F17_v1/tables.json",
+      "expected_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_bytes": 155351,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[24].evidence[3]",
+      "path": "v2/work_logs/F15_2026-10-04_S1/commands/prepare_attempt1.end.json",
+      "expected_sha256": "e7a7a1bd0d7ac9c1172b7d66517bc134317854c424ac17e57142a7c1cba02a66",
+      "actual_sha256": "e7a7a1bd0d7ac9c1172b7d66517bc134317854c424ac17e57142a7c1cba02a66",
+      "actual_bytes": 1008,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[24].evidence[4]",
+      "path": "v2/work_logs/F15_2026-10-04_S1/commands/evaluate_attempt1.end.json",
+      "expected_sha256": "191409b5cdfbc69aa398f45f8ed1b27ebe52778fdd2529a70c98329da9e97ebe",
+      "actual_sha256": "191409b5cdfbc69aa398f45f8ed1b27ebe52778fdd2529a70c98329da9e97ebe",
+      "actual_bytes": 1016,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[24].evidence[5]",
+      "path": "v2/experiments/results.md",
+      "expected_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_bytes": 71198,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[25].evidence[0]",
+      "path": "v2/experiments/config.v1.json",
+      "expected_sha256": "ea76f361eb1f2f055e6fa09096ba87fc5558bfe679982466e6de9543541d1918",
+      "actual_sha256": "ea76f361eb1f2f055e6fa09096ba87fc5558bfe679982466e6de9543541d1918",
+      "actual_bytes": 5027,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[25].evidence[1]",
+      "path": "v2/work_logs/F15_v1_run1/evaluation_attempt_1/neural_assessment.json",
+      "expected_sha256": "29c937bb58322923227cfce80b5be5e13483bcb874a901b3c184252a98bfa64e",
+      "actual_sha256": "29c937bb58322923227cfce80b5be5e13483bcb874a901b3c184252a98bfa64e",
+      "actual_bytes": 350326,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[25].evidence[2]",
+      "path": "v2/experiments/F15_v1_analysis/summary.json",
+      "expected_sha256": "3b33872a6a9c9c6a13518de1229e0570ee6d2164fd5d0edbd605e12374895d25",
+      "actual_sha256": "3b33872a6a9c9c6a13518de1229e0570ee6d2164fd5d0edbd605e12374895d25",
+      "actual_bytes": 109272,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[25].evidence[3]",
+      "path": "v2/reporting/F17_v1/tables.json",
+      "expected_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_bytes": 155351,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[25].evidence[4]",
+      "path": "v2/experiments/results.md",
+      "expected_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_bytes": 71198,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[26].evidence[0]",
+      "path": "v2/work_logs/F15_v1_run1/evaluation_attempt_1/neural_assessment.json",
+      "expected_sha256": "29c937bb58322923227cfce80b5be5e13483bcb874a901b3c184252a98bfa64e",
+      "actual_sha256": "29c937bb58322923227cfce80b5be5e13483bcb874a901b3c184252a98bfa64e",
+      "actual_bytes": 350326,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[26].evidence[1]",
+      "path": "v2/experiments/F15_v1_analysis/neural_interval_rows.json",
+      "expected_sha256": "17268e8841855d55f1f8c3f0609a82070e61a18c2f6e51d45338cbd9bdaf8df0",
+      "actual_sha256": "17268e8841855d55f1f8c3f0609a82070e61a18c2f6e51d45338cbd9bdaf8df0",
+      "actual_bytes": 249303,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[26].evidence[2]",
+      "path": "v2/reporting/F17_v1/tables.json",
+      "expected_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_bytes": 155351,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[26].evidence[3]",
+      "path": "v2/experiments/results.md",
+      "expected_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_bytes": 71198,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[27].evidence[0]",
+      "path": "v2/experiments/neural_diagnostic_v1/representation_notes.md",
+      "expected_sha256": "2ea1412757f2c0361532f5f676f7582799d181e7b61accc8ef63a7f3c635498d",
+      "actual_sha256": "2ea1412757f2c0361532f5f676f7582799d181e7b61accc8ef63a7f3c635498d",
+      "actual_bytes": 9264,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[27].evidence[1]",
+      "path": "v2/experiments/F15_ND01_analysis/mechanism_derivation.md",
+      "expected_sha256": "1d2f7ec91dbea65f6e5b6325890e448e24229581d304104200a62cc74cd558b2",
+      "actual_sha256": "1d2f7ec91dbea65f6e5b6325890e448e24229581d304104200a62cc74cd558b2",
+      "actual_bytes": 13264,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[27].evidence[2]",
+      "path": "v2/experiments/F15_ND01_results.md",
+      "expected_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_bytes": 47579,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[27].evidence[3]",
+      "path": "v2/reporting/F17_v1/tables.json",
+      "expected_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_bytes": 155351,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[28].evidence[0]",
+      "path": "v2/work_logs/F15_ND01_v1_run1/preparation_complete.json",
+      "expected_sha256": "5d79d2684c18e1b1a8ecd9e962efb952ff517ea4945ccd2a7d34051d9a82962a",
+      "actual_sha256": "5d79d2684c18e1b1a8ecd9e962efb952ff517ea4945ccd2a7d34051d9a82962a",
+      "actual_bytes": 13204,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[28].evidence[1]",
+      "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_complete.json",
+      "expected_sha256": "2ad2bd351392800fe2268c2faffa40d17a4b7b012fa8cf92af0cb14ae2f4fc92",
+      "actual_sha256": "2ad2bd351392800fe2268c2faffa40d17a4b7b012fa8cf92af0cb14ae2f4fc92",
+      "actual_bytes": 13938,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[28].evidence[2]",
+      "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/calibration_assessment.json",
+      "expected_sha256": "d9b9561aa3f54b7bb5fb677bb70d97c1ab648e327aa47c076f1ca177a52bd103",
+      "actual_sha256": "d9b9561aa3f54b7bb5fb677bb70d97c1ab648e327aa47c076f1ca177a52bd103",
+      "actual_bytes": 349293,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[28].evidence[3]",
+      "path": "v2/experiments/F15_ND01_analysis/core_summary.json",
+      "expected_sha256": "5f51177477784de4af33796cf519108f044412c11da1ab787c8601ab0fbb9043",
+      "actual_sha256": "5f51177477784de4af33796cf519108f044412c11da1ab787c8601ab0fbb9043",
+      "actual_bytes": 1497241,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[28].evidence[4]",
+      "path": "v2/reporting/F17_v1/tables.json",
+      "expected_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_bytes": 155351,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[28].evidence[5]",
+      "path": "v2/experiments/F15_ND01_results.md",
+      "expected_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_bytes": 47579,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[29].evidence[0]",
+      "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/soft_mask_0_evaluation.json",
+      "expected_sha256": "a6ef52c229ebe9a7cc3b375ddcd534cd6359b3b8267198957dd4e47df50e74c3",
+      "actual_sha256": "a6ef52c229ebe9a7cc3b375ddcd534cd6359b3b8267198957dd4e47df50e74c3",
+      "actual_bytes": 84557,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[29].evidence[1]",
+      "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/soft_mask_1_evaluation.json",
+      "expected_sha256": "8feec3f68ba6447e177226042e304dc4af7c2dfd1bc4b64d9780346fd92b0167",
+      "actual_sha256": "8feec3f68ba6447e177226042e304dc4af7c2dfd1bc4b64d9780346fd92b0167",
+      "actual_bytes": 84558,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[29].evidence[2]",
+      "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/soft_mask_2_evaluation.json",
+      "expected_sha256": "675cc724ffcf97bf83fab2dfc8f6daa918ea43e3c9fcead4fd10f54b1d0711cb",
+      "actual_sha256": "675cc724ffcf97bf83fab2dfc8f6daa918ea43e3c9fcead4fd10f54b1d0711cb",
+      "actual_bytes": 84598,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[29].evidence[3]",
+      "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/soft_mask_3_evaluation.json",
+      "expected_sha256": "aa33c33ade37956ae20e85a16efacec88447d93aa15a64a3851d6cae63024052",
+      "actual_sha256": "aa33c33ade37956ae20e85a16efacec88447d93aa15a64a3851d6cae63024052",
+      "actual_bytes": 84512,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[29].evidence[4]",
+      "path": "v2/work_logs/F15_ND01_v1_run1/evaluation_attempt_1/soft_mask_4_evaluation.json",
+      "expected_sha256": "2b9121c1009bcd971d269e8ba51f37ef486099d145daae9fbc556c6288520118",
+      "actual_sha256": "2b9121c1009bcd971d269e8ba51f37ef486099d145daae9fbc556c6288520118",
+      "actual_bytes": 84614,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[29].evidence[5]",
+      "path": "v2/reporting/F17_v1/tables.json",
+      "expected_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_bytes": 155351,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[29].evidence[6]",
+      "path": "v2/reporting/build_f17_tables.py",
+      "expected_sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5",
+      "actual_sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5",
+      "actual_bytes": 20888,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[29].evidence[7]",
+      "path": "v2/experiments/F15_ND01_results.md",
+      "expected_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_bytes": 47579,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[30].evidence[0]",
+      "path": "v2/experiments/F15_ND01_analysis/selection_diagnostics.json",
+      "expected_sha256": "1789775da6b3167e0b14be6ae288f8dc519287d882adb32050181666d146b958",
+      "actual_sha256": "1789775da6b3167e0b14be6ae288f8dc519287d882adb32050181666d146b958",
+      "actual_bytes": 784436,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[30].evidence[1]",
+      "path": "v2/experiments/F15_ND01_analysis/core_summary.json",
+      "expected_sha256": "5f51177477784de4af33796cf519108f044412c11da1ab787c8601ab0fbb9043",
+      "actual_sha256": "5f51177477784de4af33796cf519108f044412c11da1ab787c8601ab0fbb9043",
+      "actual_bytes": 1497241,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[30].evidence[2]",
+      "path": "v2/experiments/F15_ND01_results.md",
+      "expected_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_bytes": 47579,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[31].evidence[0]",
+      "path": "v2/experiments/F15_ND01_analysis/mechanism_results.json",
+      "expected_sha256": "5f351b68d31d22b28e590827816005774e6bc4a61cb423425c6caf1c00080c1f",
+      "actual_sha256": "5f351b68d31d22b28e590827816005774e6bc4a61cb423425c6caf1c00080c1f",
+      "actual_bytes": 764017,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[31].evidence[1]",
+      "path": "v2/experiments/F15_ND01_analysis/intervention_algebra.md",
+      "expected_sha256": "9cf96d7790a83172c91fdfab122c4e9ad20d9cee78364e72db91f01fc50f2f75",
+      "actual_sha256": "9cf96d7790a83172c91fdfab122c4e9ad20d9cee78364e72db91f01fc50f2f75",
+      "actual_bytes": 8945,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[31].evidence[2]",
+      "path": "v2/experiments/F15_ND01_results.md",
+      "expected_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_bytes": 47579,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[32].evidence[0]",
+      "path": "v2/work_logs/F15_2026-10-04_S1/F15_ART_01.md",
+      "expected_sha256": "22a9b09973fa3642d64aec73141e21eca90eb12b1a885f39e545a6d32363959e",
+      "actual_sha256": "22a9b09973fa3642d64aec73141e21eca90eb12b1a885f39e545a6d32363959e",
+      "actual_bytes": 3173,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[32].evidence[1]",
+      "path": "v2/work_logs/F15_2026-10-04_S1/retention_aggregate_recovery.json",
+      "expected_sha256": "519b9ee4f6c3199c66c0e2c6b39651d50e20dd9abb07e8566fbf020b6ace66bb",
+      "actual_sha256": "519b9ee4f6c3199c66c0e2c6b39651d50e20dd9abb07e8566fbf020b6ace66bb",
+      "actual_bytes": 51565,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[32].evidence[2]",
+      "path": "v2/experiments/results.md",
+      "expected_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_sha256": "333ef2b80b9108d288529d9bc0c7925c8c76471eb1a1ae4fc055d5d475341d74",
+      "actual_bytes": 71198,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[32].evidence[3]",
+      "path": "v2/experiments/F15_ND01_results.md",
+      "expected_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_sha256": "e1aff33a3b59c9dc0c53e530e3b1c6305969a1c073814069e2ab824e6880ac6a",
+      "actual_bytes": 47579,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[32].evidence[4]",
+      "path": "v2/experiments/summarize_f15.py",
+      "expected_sha256": "6adf98fc614c6be8f3628cee040b55604c080590b8ff3e52ac5415fdfc6736b9",
+      "actual_sha256": "6adf98fc614c6be8f3628cee040b55604c080590b8ff3e52ac5415fdfc6736b9",
+      "actual_bytes": 21739,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[32].evidence[5]",
+      "path": "v2/experiments/neural_diagnostic_v1/runner.py",
+      "expected_sha256": "e096088b22390a9a40b5b4fd5e4e1eeff1d7179677526894c9c7980b716b9022",
+      "actual_sha256": "e096088b22390a9a40b5b4fd5e4e1eeff1d7179677526894c9c7980b716b9022",
+      "actual_bytes": 25592,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[32].evidence[6]",
+      "path": "v2/reporting/build_f17_tables.py",
+      "expected_sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5",
+      "actual_sha256": "c9ad5f2b58d6b48072791ded632dc31cb2e98c714a120f2916d1d47b3ee5a9e5",
+      "actual_bytes": 20888,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[32].evidence[7]",
+      "path": "v2/reporting/F17_v1/tables.json",
+      "expected_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_bytes": 155351,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[32].evidence[8]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/table_export_record.json",
+      "expected_sha256": "9fa63d686d25dac664ff99be94b27dc242a3251b5e6829349bdd9b5c52f857c9",
+      "actual_sha256": "9fa63d686d25dac664ff99be94b27dc242a3251b5e6829349bdd9b5c52f857c9",
+      "actual_bytes": 24966,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[33].evidence[0]",
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/contribution/contribution_review.md",
+      "expected_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_bytes": 11803,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[33].evidence[1]",
+      "path": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution_review.md",
+      "expected_sha256": "aa8ab4d8aaed910428fbdef4bdb4f0efed1f915a7fe823d76685dbd4179689cf",
+      "actual_sha256": "aa8ab4d8aaed910428fbdef4bdb4f0efed1f915a7fe823d76685dbd4179689cf",
+      "actual_bytes": 18354,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[34].evidence[0]",
+      "path": "v2/derivations/09_c4_price_revision.md",
+      "expected_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_sha256": "7abf492e8bf704239491836d1a67088a6ec686f077beadd4db669b6aabe6af93",
+      "actual_bytes": 42319,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[34].evidence[1]",
+      "path": "v2/derivations/10_f16_coherent_recovery.md",
+      "expected_sha256": "991cccb61c5a56a9afb235192b3774406d5f347866b5d8f7421021035019ed04",
+      "actual_sha256": "991cccb61c5a56a9afb235192b3774406d5f347866b5d8f7421021035019ed04",
+      "actual_bytes": 21105,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[34].evidence[2]",
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/contribution/contribution_review.md",
+      "expected_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_bytes": 11803,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[35].evidence[0]",
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/contribution/contribution_review.md",
+      "expected_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_bytes": 11803,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[35].evidence[1]",
+      "path": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution_review.md",
+      "expected_sha256": "aa8ab4d8aaed910428fbdef4bdb4f0efed1f915a7fe823d76685dbd4179689cf",
+      "actual_sha256": "aa8ab4d8aaed910428fbdef4bdb4f0efed1f915a7fe823d76685dbd4179689cf",
+      "actual_bytes": 18354,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[35].evidence[2]",
+      "path": "v2/derivations/10_f16_coherent_recovery.md",
+      "expected_sha256": "991cccb61c5a56a9afb235192b3774406d5f347866b5d8f7421021035019ed04",
+      "actual_sha256": "991cccb61c5a56a9afb235192b3774406d5f347866b5d8f7421021035019ed04",
+      "actual_bytes": 21105,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[36].evidence[0]",
+      "path": "v2/literature/06_c4_contribution_comparison.md",
+      "expected_sha256": "f8fd091dbf08ceafe79c86d00dd0ecf351c10a0bd77bfe852b2ebaa25631e4d4",
+      "actual_sha256": "f8fd091dbf08ceafe79c86d00dd0ecf351c10a0bd77bfe852b2ebaa25631e4d4",
+      "actual_bytes": 16423,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[36].evidence[1]",
+      "path": "v2/work_logs/F16_2026-10-05_S1/primary_reading.md",
+      "expected_sha256": "6b41c90757eb6ae3baccc5640d9c42d47a322810cae2328aca059cbf93fb18a4",
+      "actual_sha256": "6b41c90757eb6ae3baccc5640d9c42d47a322810cae2328aca059cbf93fb18a4",
+      "actual_bytes": 11471,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[36].evidence[2]",
+      "path": "v2/work_logs/C_2026-10-06_S1/primary_comparison.md",
+      "expected_sha256": "0bb626784819d5266484cc3b5ce6725e4c0ee61e1ffd1191e45443e857e3e821",
+      "actual_sha256": "0bb626784819d5266484cc3b5ce6725e4c0ee61e1ffd1191e45443e857e3e821",
+      "actual_bytes": 2895,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[36].evidence[3]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/source_access.json",
+      "expected_sha256": "22772c44630b068a9f7ed62cb293c97bdbcf497418228be2d4ee550c728c8aed",
+      "actual_sha256": "22772c44630b068a9f7ed62cb293c97bdbcf497418228be2d4ee550c728c8aed",
+      "actual_bytes": 31225,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[37].evidence[0]",
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/contribution/source_record.md",
+      "expected_sha256": "23f88921c742f924b6dcdab4caa73883953fc9f5150c9f3cdf645ecb4652801f",
+      "actual_sha256": "23f88921c742f924b6dcdab4caa73883953fc9f5150c9f3cdf645ecb4652801f",
+      "actual_bytes": 6946,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[37].evidence[1]",
+      "path": "v2/work_logs/F16_2026-10-05_S1/primary_reading.md",
+      "expected_sha256": "6b41c90757eb6ae3baccc5640d9c42d47a322810cae2328aca059cbf93fb18a4",
+      "actual_sha256": "6b41c90757eb6ae3baccc5640d9c42d47a322810cae2328aca059cbf93fb18a4",
+      "actual_bytes": 11471,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[37].evidence[2]",
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/contribution/contribution_review.md",
+      "expected_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_bytes": 11803,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[38].evidence[0]",
+      "path": "v2/experiments/F15_ND01_analysis/primary_literature.md",
+      "expected_sha256": "bdee388de44fa035cd8218263a651962ff4c98646ad348e33cbe8dace699c21b",
+      "actual_sha256": "bdee388de44fa035cd8218263a651962ff4c98646ad348e33cbe8dace699c21b",
+      "actual_bytes": 6500,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[38].evidence[1]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/source_access.json",
+      "expected_sha256": "22772c44630b068a9f7ed62cb293c97bdbcf497418228be2d4ee550c728c8aed",
+      "actual_sha256": "22772c44630b068a9f7ed62cb293c97bdbcf497418228be2d4ee550c728c8aed",
+      "actual_bytes": 31225,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[38].evidence[2]",
+      "path": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution_review.md",
+      "expected_sha256": "aa8ab4d8aaed910428fbdef4bdb4f0efed1f915a7fe823d76685dbd4179689cf",
+      "actual_sha256": "aa8ab4d8aaed910428fbdef4bdb4f0efed1f915a7fe823d76685dbd4179689cf",
+      "actual_bytes": 18354,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[39].evidence[0]",
+      "path": "v2/literature/07_f14_protocol_sources.md",
+      "expected_sha256": "56ac2ff00ffa031b7d8aafe57da06aa6af0344e42109df30dbc79dfd9361b627",
+      "actual_sha256": "56ac2ff00ffa031b7d8aafe57da06aa6af0344e42109df30dbc79dfd9361b627",
+      "actual_bytes": 15670,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[39].evidence[1]",
+      "path": "v2/experiments/F15_ND01_analysis/primary_literature.md",
+      "expected_sha256": "bdee388de44fa035cd8218263a651962ff4c98646ad348e33cbe8dace699c21b",
+      "actual_sha256": "bdee388de44fa035cd8218263a651962ff4c98646ad348e33cbe8dace699c21b",
+      "actual_bytes": 6500,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[39].evidence[2]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/source_access.json",
+      "expected_sha256": "22772c44630b068a9f7ed62cb293c97bdbcf497418228be2d4ee550c728c8aed",
+      "actual_sha256": "22772c44630b068a9f7ed62cb293c97bdbcf497418228be2d4ee550c728c8aed",
+      "actual_bytes": 31225,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[40].evidence[0]",
+      "path": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution_review.md",
+      "expected_sha256": "aa8ab4d8aaed910428fbdef4bdb4f0efed1f915a7fe823d76685dbd4179689cf",
+      "actual_sha256": "aa8ab4d8aaed910428fbdef4bdb4f0efed1f915a7fe823d76685dbd4179689cf",
+      "actual_bytes": 18354,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[40].evidence[1]",
+      "path": "v2/experiments/F15_ND01_analysis/primary_literature.md",
+      "expected_sha256": "bdee388de44fa035cd8218263a651962ff4c98646ad348e33cbe8dace699c21b",
+      "actual_sha256": "bdee388de44fa035cd8218263a651962ff4c98646ad348e33cbe8dace699c21b",
+      "actual_bytes": 6500,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[40].evidence[2]",
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/contribution/contribution_review.md",
+      "expected_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_bytes": 11803,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[41].evidence[0]",
+      "path": "v2/work_logs/C_2026-10-06_S1.md",
+      "expected_sha256": "9856049a74f1949297591e7953741ef7274e854ae8a432091663b341eadfef7d",
+      "actual_sha256": "9856049a74f1949297591e7953741ef7274e854ae8a432091663b341eadfef7d",
+      "actual_bytes": 13444,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[41].evidence[1]",
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/contribution/contribution_review.md",
+      "expected_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_sha256": "86a673b6a29a40bfa045a4b2bd18403965eeead28cdda9d6a394f6caf96b9a62",
+      "actual_bytes": 11803,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.claims[41].evidence[2]",
+      "path": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution_review.md",
+      "expected_sha256": "aa8ab4d8aaed910428fbdef4bdb4f0efed1f915a7fe823d76685dbd4179689cf",
+      "actual_sha256": "aa8ab4d8aaed910428fbdef4bdb4f0efed1f915a7fe823d76685dbd4179689cf",
+      "actual_bytes": 18354,
+      "hash_matches": true
+    },
+    {
+      "json_location": "$.fragments[0]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/claim_map_math.json",
+      "expected_sha256": "48a7d8e5dc65f7a0531833a669d34163594bdee30b51cfaf00d6d9a5066b72ad",
+      "actual_sha256": "48a7d8e5dc65f7a0531833a669d34163594bdee30b51cfaf00d6d9a5066b72ad",
+      "actual_bytes": 34685,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.fragments[1]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/claim_map_empirical.json",
+      "expected_sha256": "36e0930f5b0141355649098611495a6ea363557d8a4c9fcf9d90036c748a5c9a",
+      "actual_sha256": "36e0930f5b0141355649098611495a6ea363557d8a4c9fcf9d90036c748a5c9a",
+      "actual_bytes": 34603,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.fragments[2]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/claim_map_literature.json",
+      "expected_sha256": "154c08c948d6bd4caeaef27bd601baba1d07e5c59f5ede115be59136447cbeaf",
+      "actual_sha256": "154c08c948d6bd4caeaef27bd601baba1d07e5c59f5ede115be59136447cbeaf",
+      "actual_bytes": 21343,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.report",
+      "path": "paper_v2.md",
+      "expected_sha256": "18c45d7df537c6e8a076793c9e38412e5c8d887995ba041d2ee9cbf51971bc8d",
+      "actual_sha256": "18c45d7df537c6e8a076793c9e38412e5c8d887995ba041d2ee9cbf51971bc8d",
+      "actual_bytes": 90361,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.reviews[0]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/report_v1_math.json",
+      "expected_sha256": "c75e1a0a0e059b5aeddfd668a27383e753775aecbabba24bf9725886c7e859a9",
+      "actual_sha256": "c75e1a0a0e059b5aeddfd668a27383e753775aecbabba24bf9725886c7e859a9",
+      "actual_bytes": 5184,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.reviews[1]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/report_v1_empirical.json",
+      "expected_sha256": "458f57fdaafd4913eaa93785ad9aeb691cfe95ac87251e829b273a3cc91697f2",
+      "actual_sha256": "458f57fdaafd4913eaa93785ad9aeb691cfe95ac87251e829b273a3cc91697f2",
+      "actual_bytes": 5236,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.reviews[2]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/report_v1_literature.json",
+      "expected_sha256": "d919bb093fe82ba65b106924245cae494994ee306985d5665bc7d87e601c7735",
+      "actual_sha256": "d919bb093fe82ba65b106924245cae494994ee306985d5665bc7d87e601c7735",
+      "actual_bytes": 17738,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.reviews[3]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/report_v2_math_regression.json",
+      "expected_sha256": "981bd03cc8e321a3a8e875ea8198d55a12eb74a1962eeaba9edae45d8d436322",
+      "actual_sha256": "981bd03cc8e321a3a8e875ea8198d55a12eb74a1962eeaba9edae45d8d436322",
+      "actual_bytes": 5710,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.reviews[4]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/report_v2_empirical_regression.json",
+      "expected_sha256": "31f62fa87c1ea44ec124f3ba8cf01e9c359bebeac39de7660e34407c3c6e6368",
+      "actual_sha256": "31f62fa87c1ea44ec124f3ba8cf01e9c359bebeac39de7660e34407c3c6e6368",
+      "actual_bytes": 3030,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.reviews[5]",
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/report_v2_literature_regression.json",
+      "expected_sha256": "662d2014588b7e37d5995d6d3dae0cfd0412cd1aa0956c535a3f631a978c4542",
+      "actual_sha256": "662d2014588b7e37d5995d6d3dae0cfd0412cd1aa0956c535a3f631a978c4542",
+      "actual_bytes": 2635,
+      "hash_matches": true,
+      "bytes_match": true
+    },
+    {
+      "json_location": "$.tables",
+      "path": "v2/reporting/F17_v1/tables.json",
+      "expected_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_sha256": "7732254ffea86284d0acc019c20ef4abc1ff6a6de0dc98237088189f8e7cff10",
+      "actual_bytes": 155351,
+      "hash_matches": true,
+      "bytes_match": true
+    }
+  ],
+  "issues": [],
+  "scientific_execution": false,
+  "gate_D_performed": false
+}

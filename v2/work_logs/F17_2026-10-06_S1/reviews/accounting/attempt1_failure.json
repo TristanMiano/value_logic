@@ -1,0 +1,14 @@
+{
+  "cause": "F14 manifest files is a dictionary, whereas ND01 manifest files is a list. Normalize the two saved schemas before checking registered dependencies.",
+  "command": "PYTHONDONTWRITEBYTECODE=1 python v2/work_logs/F17_2026-10-06_S1/reviews/accounting/check_integrity.py",
+  "exception": "TypeError: unsupported operand type(s) for +: dict and list",
+  "failed_expression": "manifest[files] + manifest.get(source_prepared, [])",
+  "ledger_mutation": false,
+  "recorded_utc": "2026-10-06T17:38:13.965596+00:00",
+  "returncode_and_elapsed": "Not captured by the original output-only wrapper; no elapsed time is inferred.",
+  "scientific_mutation": false,
+  "scope": "Administrative read-only integrity reviewer, not scientific execution",
+  "source_preserved_as": "check_integrity_attempt1.py",
+  "source_sha256": "c894816c47d8f376a9012ec168a73e790bde74d923474fc77c9951d4185fa791",
+  "status": "FAILED_BEFORE_RESULT_WRITE"
+}

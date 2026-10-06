@@ -1,15 +1,17 @@
 # Phase Two Project Specification
 
-Version: F16 mathematical-review handoff, October 5, 2026 UTC.
-Status: **F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
+Version: F17 report handoff, October 6, 2026 UTC.
+Status: **F17 complete at report-assembly scope; Gate D next and unattempted.**
 F01–F15, N01, C3, C4 and F15-ND01 retain their completed task scopes and recorded
-protected floors. A/B retain their scoped readiness passes; C/D remain
-unattempted. C4-S is supported at bounded modest synthesis/formal-adaptation/
+protected floors. A/B retain scoped passes; the author approved C_1 PASS;
+D remains unattempted. C4-S is supported at bounded modest synthesis/formal-adaptation/
 application scope relative to checked comparisons; worldwide priority remains
 unestablished. The semantic core remains provisional.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
 The dated sections below retain historical dispositions; the latest gate
-decision remains [B_1](checkpoints/B_1.md).
+decision is [C_1](checkpoints/C_1.md), enacted by the [author approval](decisions/2026-10-06_gate_c_pass.md).
+The [research report](../paper_v2.md) and [F17 work](work_logs/F17_2026-10-06_S1.md)
+record assembly, source traceability and reporting limits.
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 
 The [F16 adversarial review](derivations/07_adversarial_review.md) reconstructs
@@ -26,8 +28,8 @@ support the modest contribution; the general architecture and recovery methods
 are established, and ordinary methods can use the same construction.
 
 [F16 work and accounting](work_logs/F16_2026-10-05_S1.md) control D60/Research90
-and final closure. After completion, the next task is a **separate Gate C
-assessment**; F17 is unstarted. **F15-ND02 remains optional, deferred and
+and final closure. The author subsequently approved Gate C and F17 is
+assembled. **Gate D is next and unattempted. F15-ND02 remains optional, deferred and
 unstarted**, available after F16 or later if selected in
 [OPP-02](opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2).
 The original 0/5 neural result and ND01's improved partial correspondences

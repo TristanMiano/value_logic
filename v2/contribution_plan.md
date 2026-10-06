@@ -5,16 +5,17 @@ Contributor: **Codex (GPT-6)**. October 2, 2026, America/Los_Angeles.
 Current contribution: **C4-S SUPPORTED at bounded comparison scope**: modest
 methodological synthesis/formal adaptation with small technical application
 extensions; worldwide priority unestablished. A/B retain their scoped passes;
-Gate C assessed with PASS recommended and author decision pending; D unattempted.
+Gate C PASS approved by the author; F17 assembled; D unattempted.
 **C3, F11–F14 and C4 are complete at their task scopes and
 protected floors. F15 is complete at frozen-challenge reporting scope, E60
 satisfied at 60.090886 minutes.**
 **F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
 **F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
 The [Gate C assessment](checkpoints/C_1.md) and authoritative TODO govern the
-current pointer: **author decision whether to continue or recurse**. The
-evaluator recommends PASS and then F17, without selecting it before that
-decision. Optional F15-ND02 Research90 remains deferred and unstarted.
+current pointer: **Gate D, unattempted**, after author-approved C_1 PASS and
+F17 report assembly. The [report](../paper_v2.md) preserves the six-field
+contribution and all adverse findings. Optional F15-ND02 Research90 remains
+deferred and unstarted.
 The [ND01 handoff](#15-nd01-diagnostic-and-the-next-evidence-choice),
 [F15 handoff](#14-f15-evidence-and-the-next-defense) and
 [C4 close](#12-c4-close-broader-contribution-assessment) preserve their dated
@@ -837,3 +838,30 @@ forecast its substantive needs; no cosmetic allocation repair is warranted.
 [Exact accounting and closure](work_logs/C_2026-10-06_S1.md).
 
 Signed: **ChatGPT (GPT-6 Astra Pro)**, principal Gate C evaluator.
+
+## 18. F17 report and sixteen-hour evidence choice
+
+October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**. The author
+[approved Gate C PASS](decisions/2026-10-06_gate_c_pass.md), then F17 assembled
+[the report](../paper_v2.md) with a [42-group evidence map](reporting/F17_v1/claim_map.json)
+and reproducible tables. The bounded modest synthesis/formal-adaptation and
+specialized application contribution survives the report reviews unchanged.
+No neural null, extra example or polished exposition is used as an automatic
+novelty claim. Ordinary reproducibility and measured costs retain their
+distinct capability/performance meanings. Worldwide priority remains unknown.
+
+The [sixteen-hour checkpoint](checkpoints/POST_B_16H_1.md) records the observed
+965.049326974800…-minute content-ready boundary and preserves its overshoot;
+[F17 actuals](work_logs/F17_2026-10-06_S1/actuals.json) give later task closure.
+The bounded self-assessment family and ordinary-trained neural pilot are
+already complete at their recorded scopes. **Gate D is the recommended next
+separate audit and is unattempted.** F17 has no protected minimum; its original
+120/240 forecast and exact D/L/E/O actuals remain recorded.
+
+Optional F15-ND02 Research90 would test joint two-cost geometry and composition
+under a new freeze. F15-EXT-01 Research90 would broaden acquisition/uncertain
+source evidence with full ordinary costs. Conditional R-N01-01/F16-COMP60
+(D30/L30) remains the precise route if a closer antecedent displaces the
+supported difference. These branches remain deferred/unstarted. The next
+effort should strengthen both application scope and defense when chosen;
+reaching sixteen hours does not authorize a 32-hour programme automatically.

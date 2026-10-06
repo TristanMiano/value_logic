@@ -1,0 +1,125 @@
+{
+  "administrative_reader_failures_preserved": [
+    "reviews/accounting/attempt1_failure.json",
+    "reviews/accounting/check_integrity_attempt1.py",
+    "reviews/accounting/attempt2_command.json"
+  ],
+  "baseline": {
+    "bytes": 586,
+    "path": "v2/work_logs/F17_2026-10-06_S1/baseline.json",
+    "sha256": "e802a9c1e2e6d8a872253329bfc71ec7f9c01234c3106af857006b487bc56a2a"
+  },
+  "clock_snapshot": {
+    "closed_categories_ns": {
+      "D": 558253824183,
+      "E": 260551700996,
+      "L": 48120582312,
+      "O": 534180506838,
+      "excluded_unobserved": 346381322894,
+      "recovery": 25850110568
+    },
+    "closed_elapsed_ns": 1773338047791,
+    "closed_engaged_minutes_exact": "1401106614329/60000000000",
+    "closed_engaged_ns": 1401106614329,
+    "closed_excluded_ns": 372231433462,
+    "closed_lane_ns": {
+      "R": 699152744436,
+      "X": 167773363055
+    },
+    "closed_research_ns": 866926107491,
+    "closed_segments": 11,
+    "closed_through_utc": "2026-10-06T17:31:52.451959+00:00",
+    "events": 21,
+    "exclusions": 1,
+    "open_segment_credit_in_this_review": 0,
+    "open_state": {
+      "lane": "",
+      "mode": "O",
+      "note": "Build report traceability and saved-output verification records; reconcile project state.",
+      "runtime": "linux-F17-S1",
+      "start_monotonic_ns": 3981976363952,
+      "start_utc": "2026-10-06T17:31:52.451959+00:00"
+    },
+    "scope": "Closed segments only; final clock stop and ledger append require a later audit."
+  },
+  "clock_source": {
+    "bytes": 3259,
+    "path": "v2/work_logs/F17_2026-10-06_S1/clock.py",
+    "sha256": "07d903537353270dacbb4a95cec0841656ac38881787b22775024443f7f9f191"
+  },
+  "contributor": "ChatGPT (GPT-6 Astra Pro), same-model delegated administrative reviewer",
+  "created_utc": "2026-10-06T17:39:41.977524+00:00",
+  "forecast": {
+    "bytes": 1645,
+    "path": "v2/work_logs/F17_2026-10-06_S1/forecast.json",
+    "sha256": "2a1c1f4bf0335ae38fd95630c65696fdca95c57dd743460d44cb864ce4c61c56"
+  },
+  "integrity_counts": {
+    "entry_python": 278,
+    "entry_python_paths_equal_git_tree": true,
+    "python_all_match": true,
+    "scientific": 973,
+    "scientific_all_match": true
+  },
+  "integrity_result": {
+    "bytes": 489554,
+    "path": "v2/work_logs/F17_2026-10-06_S1/reviews/accounting/integrity_result.json",
+    "sha256": "afe9427e59fb68bc8a065f44b48c71bca2c8a232dc78e4b7946ff06a8cf4ffb8"
+  },
+  "ledger_appended_by_reviewer": false,
+  "limitations": [
+    "Static serializer review, not execution or post-append approval.",
+    "Clock remains open in O at the snapshot; partial totals omit that open interval.",
+    "Normal Python execution with assertions enabled and the recorded single-principal workflow are assumed."
+  ],
+  "next_step": "Review actual stopped clock, output files and ledger append after principal closure.",
+  "open_findings": [],
+  "post_b_1_entry_minutes": "932.46514142531666666666666666666666666666666666667",
+  "principal_concurrent_minutes_credited": 0,
+  "prior_ledger": {
+    "bytes": 269074,
+    "entry_unchanged": true,
+    "rows": 1105,
+    "sha256": "94c1b965f9ec1b9245ea65419c9d521e7c2712dc2eb4387125119426a508992d"
+  },
+  "protected_minimum": null,
+  "resolved_findings": [
+    {
+      "effect": "Only descriptive residual precision; integer ledger totals unaffected.",
+      "id": "F17-ACC-S01",
+      "issue": "Forecast-error Decimal subtraction initially occurred outside the 80-digit local context.",
+      "repair": "Principal changed to integer-nanosecond subtraction before minutes().",
+      "resolved": true
+    }
+  ],
+  "review_document": {
+    "bytes": 7605,
+    "path": "v2/work_logs/F17_2026-10-06_S1/reviews/accounting_serializer_review.md",
+    "sha256": "120f3d11808d7275246e03b7c54a372a349fa94da6915eeb44db0735d7580ea1"
+  },
+  "schema": "F17-accounting-serializer-static-review-v1",
+  "scientific_stages_or_tests_executed": false,
+  "serializer": {
+    "bytes": 10407,
+    "path": "v2/work_logs/F17_2026-10-06_S1/close_accounting.py",
+    "sha256": "355577bdcc20cb2d3c727b0ace1246ce1a6ace4baa05c74da682e19ca7cc7766"
+  },
+  "serializer_edited_by_reviewer": false,
+  "serializer_executed_by_reviewer": false,
+  "static_obligations": {
+    "DLE_vs_O_vs_wait_recovery": "PASS",
+    "F17_has_no_floor": "PASS",
+    "concurrent_credit_zero": "PASS",
+    "exact_append_and_readback": "PASS",
+    "exclusions_nonoverlap_containment": "PASS",
+    "forecast_error_integer_ns": "PASS",
+    "integer_ns_segment_partition": "PASS",
+    "observed_transition_correspondence": "PASS",
+    "post_b_carry_no_reset": "PASS",
+    "prior_ledger_prefix_binding": "PASS",
+    "research_equals_R_plus_X": "PASS",
+    "stopped_clock_precondition": "PASS",
+    "uncredited_administrative_tail": "EXPLICIT"
+  },
+  "status": "PASS_STATIC_REVIEW_FOR_CURRENT_SESSION"
+}

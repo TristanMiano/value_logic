@@ -1,0 +1,133 @@
+{
+  "audit_attempts": [
+    {
+      "disposition": "Preserved audit-oracle precision mismatch; no experimental or accounting input changed.",
+      "record": {
+        "bytes": 1774,
+        "path": "v2/work_logs/F17_2026-10-06_S1/reviews/accounting/postappend_command.json",
+        "sha256": "c88eb0da7a881f808dfe4af633bdd2663bd04b79665987d07928847bedb6f812"
+      },
+      "returncode": 1,
+      "source": {
+        "bytes": 23700,
+        "path": "v2/work_logs/F17_2026-10-06_S1/reviews/accounting/check_postappend_attempt1.py",
+        "sha256": "98c97cf956cb5ef43da95a9ca02f070957215eab41b9a0f8a9982d45434788c9"
+      },
+      "wall_ns": 77639229
+    },
+    {
+      "disposition": "PASS; 396 administrative checks.",
+      "record": {
+        "bytes": 1595,
+        "path": "v2/work_logs/F17_2026-10-06_S1/reviews/accounting/postappend_attempt2_command.json",
+        "sha256": "cd27aa374c948c9da359f89864bd0ba2604af6d2b110ca401b5c35c604ac8c57"
+      },
+      "returncode": 0,
+      "source": {
+        "bytes": 25074,
+        "path": "v2/work_logs/F17_2026-10-06_S1/reviews/accounting/check_postappend.py",
+        "sha256": "40d9768d347cd1c545d2ece58be1ed028b9a383d33631bb0a66b9b6940889a6b"
+      },
+      "wall_ns": 69496057
+    }
+  ],
+  "checkpoint_reconciliation": {
+    "F17_engaged_ns": 1955051132969,
+    "boundary_to_close_O_minutes_decimal": "2.6734349675333333333333333333333333333333333333333333333333333333333333333333333",
+    "boundary_to_close_engaged_ns": 160406098052,
+    "cumulative_minutes_decimal": "965.04932697480000000000000000000000000000000000000333333333333333333333333333333",
+    "declared_content_boundary_utc": "2026-10-06T17:41:06.396478+00:00",
+    "derived_overshoot_display_error_minutes_decimal": "-3.3333333333333333333333333333333333333333333333333333333333333333333333333333333E-78",
+    "first_observed_event_at_or_above_960": {
+      "args": [
+        "Final work-log draft and contribution disposition prepared; no new scientific claims or stages."
+      ],
+      "command": "check",
+      "monotonic_ns": 4297542599880,
+      "runtime": "linux-F17-S1",
+      "utc": "2026-10-06T17:37:08.018195+00:00"
+    },
+    "first_observed_event_cumulative_minutes_decimal": "961.07635559626666666666666666666666666666666666667",
+    "interpretation": "17:41:06 is the explicitly declared complete report-content boundary, not the first observed clock check above 960. An earlier 17:37:08 check was already above 960. TODO requires the first chunk boundary; raw clock records alone do not establish which administrative check is a completed content chunk. This distinction is recorded without changing either cutoff or the exact carry."
+  },
+  "clock": {
+    "close_utc": "2026-10-06T17:43:46.802576+00:00",
+    "effective_intervals": 12,
+    "elapsed_ns": 2487688664483,
+    "engaged_minutes_decimal": "35.257620517016666666666666666666666666666666666666666666666666666666666666666667",
+    "engaged_ns": 2115457231021,
+    "events": 23,
+    "excluded_intervals": 1,
+    "excluded_minutes_decimal": "6.2038572243666666666666666666666666666666666666666666666666666666666666666666667",
+    "excluded_ns": 372231433462,
+    "lane_ns": {
+      "R": 699152744436,
+      "X": 167773363055
+    },
+    "max_credited_observation_gap_ns": 259691860611,
+    "mode_and_exclusion_ns": {
+      "D": 558253824183,
+      "E": 260551700996,
+      "L": 48120582312,
+      "O": 1248531123530,
+      "paused_recovery": 25850110568,
+      "recovery_unobserved": 346381322894,
+      "tool_wait": 0
+    },
+    "raw_segments": 12,
+    "research_cutoff_monotonic_ns": 3981976363952,
+    "research_minutes_decimal": "14.448768458183333333333333333333333333333333333333333333333333333333333333333333",
+    "research_ns": 866926107491,
+    "start_utc": "2026-10-06T17:02:19.113911+00:00"
+  },
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "evidence": [
+    {
+      "bytes": 28898,
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/accounting/postappend_result.json",
+      "sha256": "ec87aa12976c95235d12f4be8a6fbf537ab2646a7f30646f93d97b5e3ba66816"
+    },
+    {
+      "bytes": 7099,
+      "path": "v2/work_logs/F17_2026-10-06_S1/reviews/accounting/postappend_review.md",
+      "sha256": "82dd573691b90757a58634d463932aec6f0881f4eadd3b90a156173d55b559cf"
+    }
+  ],
+  "final_administrative_tail": "All audit/review work after the 17:43:46.802576 principal stop receives zero credit.",
+  "findings": [],
+  "input_hashes_verified": 8,
+  "ledger": {
+    "final_bytes": 273391,
+    "ledger_append_bytes": 4317,
+    "ledger_append_sha256": "b11afc6a5c06937bbf0055a09d1edc705d3ac46806a167811c52d166265a717b",
+    "ledger_final_rows": 1117,
+    "ledger_final_sha256": "ac1bdbb521f4ffe09843850dfadcab509a0f6c20f35db20202a79e5efb8ec36c",
+    "ledger_prior_bytes": 269074,
+    "ledger_prior_rows": 1105,
+    "ledger_prior_sha256": "94c1b965f9ec1b9245ea65419c9d521e7c2712dc2eb4387125119426a508992d",
+    "ledger_rows_added": 12,
+    "prior_bytes_equal_git_entry": true
+  },
+  "ledger_edited_by_reviewer": false,
+  "principal_credit_minutes": 0,
+  "qualifications": [
+    {
+      "detail": "The 17:41:06 complete report-content boundary is later than the first observed clock check above 960 at 17:37:08. Exact arithmetic is correct. Chunk-completion semantics cannot be inferred solely from timestamps.",
+      "disposition": "RETAIN_BOTH_OBSERVATIONS",
+      "id": "F17-ACC-Q01",
+      "kind": "checkpoint_label_scope"
+    },
+    {
+      "detail": "Remaining/overshoot displays use arithmetic on an already rounded 80-digit cumulative parent; exact ns and rational carry remain correct. Audit separately bounds the approximately 3.33e-78 minute propagated display difference.",
+      "disposition": "NO_SERIALIZER_OR_LEDGER_CHANGE_NEEDED",
+      "id": "F17-ACC-Q02",
+      "kind": "derived_decimal_display"
+    }
+  ],
+  "recorded_utc": "2026-10-06T17:48:40.322904+00:00",
+  "review_kind": "Same-model internal independent reconstruction",
+  "schema": "F17-postappend-accounting-review-v1",
+  "scientific_stages_or_tests_executed": false,
+  "serializer_executed_by_reviewer": false,
+  "status": "PASS_NUMERIC_AND_BYTE_INTEGRITY"
+}
