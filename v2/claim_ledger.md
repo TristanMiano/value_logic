@@ -8,8 +8,8 @@ floors. The [final report](../paper_v2.md) and [42-group evidence map](reporting
 remain unchanged. C4-S is SUPPORTED as bounded modest synthesis/formal adaptation
 with specialized retention, repair and compatible-recovery results. Original
 neural 0/5, ordinary comparators and the stated scientific boundaries remain
-unchanged. Await the author's phase-three direction; optional F15-ND02 and
-other deferred branches remain unstarted. The dated entries below preserve
+unchanged. The author has supplied a [separate phase-three direction](../v3/decisions/2026-10-06_phase_three_scope.md);
+[P3-01](../TODO_v3.md) is selected/unstarted. Optional F15-ND02 and other deferred branches remain unstarted. The dated entries below preserve
 their original temporal dispositions, including D's pre-acceptance assessment.
 
 ## F10 external-audit disposition — September 30, 2026
@@ -1296,3 +1296,13 @@ supersedes the pending-author disposition in the historical D assessment above.
 The final report, polished root README and historical D bindings remain
 unchanged. [Closure accounting](work_logs/PHASE2_CLOSE_2026-10-06_S1.md) appends
 only fresh administrative time and exclusions; POST-B-1 is not reset.
+
+## Phase-three handoff — October 6, 2026
+
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. The author supplied the next
+research direction after phase-two closure. [TODO_v3.md](../TODO_v3.md) now
+controls the separate logical-uncertainty/counterfactual programme; P3-01 is
+selected and unstarted. Its sixteen-hour D+L+E floor starts at zero research
+time, and the phase-two ledger/final POST-B-1 balance remain unchanged.
+The earlier P2-NEXT01 row records the historical interval before that direction.
+No new phase-two result or reactivation of its optional experiments is implied.

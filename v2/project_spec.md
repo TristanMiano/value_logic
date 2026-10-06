@@ -9,7 +9,9 @@ C4-S is supported at bounded modest synthesis/formal-adaptation/application
 scope relative to checked comparisons. The semantic core retains its provisional
 status; the report preserves its precise scope and open scientific questions.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
-**Next: await the author's phase-three direction; no phase-three task selected.**
+**Next: [phase three, P3-01](../TODO_v3.md), selected and unstarted.**
+The [author's new direction](../v3/decisions/2026-10-06_phase_three_scope.md) has
+its own research clock; phase-two requirements and conclusions are unchanged.
 The dated sections below retain historical dispositions. The
 [D_1 assessment](checkpoints/D_1.md) remains the pre-acceptance snapshot;
 the later author decision supplies PASS. The [research report](../paper_v2.md)

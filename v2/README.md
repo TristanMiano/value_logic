@@ -14,8 +14,8 @@ Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_c
 **Phase two COMPLETE; Gates A–D PASS.** October 6, 2026 UTC.
 The author [accepted Gate D](decisions/2026-10-06_gate_d_pass.md), and the
 criterion-by-criterion closure check confirms that no mandatory phase-two task
-or blocking repair remains. **Next: await the author's phase-three direction.**
-No phase-three task has been selected.
+or blocking repair remains. **Next: [phase three, P3-01](../TODO_v3.md).**
+The author has supplied its direction; the new research is selected but unstarted.
 
 The [final report](../paper_v2.md) and [current 42-group evidence map](reporting/D_1/claim_map.json)
 retain the accepted research and bounded C4-S contribution. The
@@ -373,7 +373,8 @@ this session and **60.320288 cumulative F05 D minutes**. The continuation altern
 remains live; the semantics is provisional, not a completed deductive calculus.
 
 **Current handoff: phase two complete after author-approved Gate D PASS.**
-Await the author's phase-three direction. F16, F15 and ND01 retain their completed scopes
+The separate [phase-three roadmap](../TODO_v3.md) now selects P3-01.
+F16, F15 and ND01 retain their completed scopes
 and protected floors. Gate A remains passed at its existing scope. F14 performed
 neural development training only; the later F15 evaluation is reported above.
 F05's supplied-model discovery

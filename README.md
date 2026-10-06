@@ -74,7 +74,7 @@ Learning and interpretability remain longer-term goals. A value-based descriptio
 | Definitions and derivations | [Mathematical development](v2/derivations/) |
 | Reproducibility | [Saved-result verification](paper_v2.md#133-verifying-saved-results) · [Experiment protocol](v2/experiments/protocol.md) |
 | Evidence and comparisons | [Claim ledger](v2/claim_ledger.md) · [Literature studies](v2/literature/) |
-| Research directions | [Opportunity register](v2/opportunities.md) |
-| Contributor workflow | [Workspace guide](v2/README.md) · [Research protocol](v2/RESEARCH_PROTOCOL.md) · [Task plan](TODO_v2.md) |
+| Research directions | [Logical uncertainty and counterfactuals](v3/README.md) · [Opportunity register](v2/opportunities.md) |
+| Contributor workflow | [Phase-three workspace](v3/README.md) · [Research procedure](v3/RESEARCH_PROTOCOL.md) · [Task plan](TODO_v3.md) · [Phase-two records](v2/README.md) |
 
 The reports present the research; the workspace records preserve its derivations, experiments, decisions and attributed contributions.

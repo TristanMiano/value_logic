@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: October 6, 2026 UTC.
-Status: **Phase two COMPLETE.** F01–F17 and required recurrences are complete at their recorded scopes; all protected minima are satisfied; Gates A–D PASS, with the author's Gate D acceptance recorded October 6. The bounded C4-S contribution remains SUPPORTED. No mandatory phase-two work remains. Awaiting the author's phase-three direction; no phase-three task is selected.
+Status: **Phase two COMPLETE.** F01–F17 and required recurrences are complete at their recorded scopes; all protected minima are satisfied; Gates A–D PASS, with the author's Gate D acceptance recorded October 6. The bounded C4-S contribution remains SUPPORTED. No mandatory phase-two work remains. Phase three now has a separate [roadmap](TODO_v3.md); P3-01 is selected and unstarted.
 
 ## Resume here
 
@@ -11,7 +11,9 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Active pointer: phase two complete; await the author's phase-three direction.**
+**Active pointer: phase two complete; continue in [TODO_v3.md](TODO_v3.md), P3-01.**
+The author supplied the [phase-three direction](v3/decisions/2026-10-06_phase_three_scope.md);
+its separate sixteen-hour research floor and ledger do not alter phase-two completion.
 The author [accepted Gate D PASS](v2/decisions/2026-10-06_gate_d_pass.md).
 The completion record maps every done criterion to the accepted evidence;
 there is no remaining mandatory task or active blocking repair. The
@@ -38,7 +40,7 @@ interventions clarify the original 0/5 outcome without establishing technical
 superposition, a joint utility representation, or a new complete neural pass.
 [Work, accounting and preservation](v2/work_logs/F15_ND01_2026-10-05_S1.md).
 Original F15 outcomes remain unchanged. Optional **F15-ND02, Research90** is
-unstarted; phase two is complete and further work awaits the author's direction.
+unstarted; phase two is complete and the separate phase-three plan does not activate ND02.
 
 **F16 complete at fresh adversarial-review scope; D60 and Research90 satisfied.**
 [The review](v2/derivations/07_adversarial_review.md) records 31 exact objections
@@ -1563,7 +1565,8 @@ to publication with an unsound core simply because the planned queue ended.
   [decision and done-criteria check](v2/decisions/2026-10-06_gate_d_pass.md)
   enact the approval. [D_1](v2/checkpoints/D_1.md) preserves the pre-acceptance
   recommendation, final report bindings, local repairs and accounting.
-  No mandatory recurrence remains. Await the author's phase-three direction.
+  No mandatory recurrence remains. The later [phase-three roadmap](TODO_v3.md)
+  records the author's next direction separately.
 
   Record `v2/checkpoints/D_1.md`, with versioned retries.
   Check the report against non-stale Gates A-C, the claim ledger, exact

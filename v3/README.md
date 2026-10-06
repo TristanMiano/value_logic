@@ -1,0 +1,88 @@
+# Phase Three: Reasoning About Unresolved Mathematics
+
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. October 6, 2026 UTC.
+
+**Roadmap established; P3-01 selected and unstarted.** The author has set a
+minimum of **16 measured hours of research**, with longer work possible.
+[TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
+[RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
+
+## Research direction
+
+Can a reasoner improve decisions while it remains uncertain about mathematical
+answers, the value of its models and the benefits of thinking longer? Phase
+three investigates logical uncertainty, logical counterfactuals, simultaneous
+use of fallible models, improving usefulness estimates and probability
+information carried by values.
+
+The [phase-two report](../paper_v2.md) supplies explicit loss meanings, shared
+uncertain sources, conditional proofs, evidence revision and information
+retention under changed costs. Those are useful starting materials. Its
+bounded self-assessment example predicts a procedure's success at proving
+already-true requests; that is narrower than learning arbitrary unresolved
+mathematical truth. Its semantics rejects an empty source as inconsistent
+evidence and does not yet supply general counterpossible answers.
+
+The initial research position is:
+
+| Question | Starting hypothesis to investigate |
+|---|---|
+| Logical uncertainty | Versioned loss estimates and evidence may support a bounded learner, provided computation and unresolved claims have explicit semantics. |
+| Logical counterfactuals | Declared changes and transported dependencies may support useful restricted hypotheticals; general impossible antecedents need their own analysis. |
+| Several useful models | The strongest hope is better management of approximation, cost and revision. Compare with ordinary conditional modeling and decision theory. |
+| Improving usefulness estimates | A sequence of forecasts should guide both decisions and the purchase of further reasoning; distinguish predictive accuracy from practical value. |
+| Probability information in values | Known event-contingent losses can encode probabilities; arbitrary aggregate utility need not identify them. |
+
+These are agenda statements, not completed phase-three findings. The
+[claim ledger](claim_ledger.md) records their current status and evidence targets.
+
+## A simple probability bridge
+
+Suppose relying on a mathematical claim costs 10 units when it is false and
+zero when it is true. With a declared subjective probability
+$p_t=\Pr_t(\varphi)$, its estimated loss is
+
+$$
+\widehat L_t=10(1-p_t),\qquad p_t=1-\widehat L_t/10.
+$$
+
+An estimated loss of 3 then encodes probability 0.7. This elementary conditional
+identity is an illustration of an expected-loss model, not a learning algorithm.
+Unknown stakes, additional costs or a different risk criterion can prevent
+that recovery. Multiple known loss queries can retain more information than
+one aggregate score. P3-02 will characterize the precise finite conditions.
+
+A [proper scoring rule](literature/00_orientation.md#s02--proper-scoring-rules)
+offers a related bridge: a loss for a reported probability can reward accurate
+beliefs. The epistemic forecast, the stakes of an action and the cost of
+computing an answer remain separate objects.
+
+## What would make this phase worthwhile?
+
+The central ambition is to connect uncertain mathematical prediction, paid
+reasoning and justified model changes in a precise, useful system. A restricted
+theorem, a constructive interface, an informative limitation or a modest
+synthesis/application can qualify when its difference from the closest checked
+work is supported. The [source orientation](literature/00_orientation.md)
+identifies strong existing alternatives for that comparison.
+
+The programme has an initial 16-hour research traversal and a 4-hour central
+recurrence reserve. Its **20-hour central / 40-hour high research forecasts**
+remain estimates. Setup and routine administration are separate O time and
+do not reduce the sixteen-hour research requirement. Exact future effort is
+recorded in [time_ledger.csv](time_ledger.csv).
+
+Phase two remains complete. Its records, clocks, paper and scientific freezes
+are preserved; its neural follow-ups remain optional. The current work only
+establishes this agenda. No phase-three experiment or gate has begun.
+
+## Workspace
+
+| Material | Location |
+|---|---|
+| Author direction | [Scope decision](decisions/2026-10-06_phase_three_scope.md) |
+| Tasks and completion criteria | [TODO_v3.md](../TODO_v3.md) |
+| Research execution | [Procedure](RESEARCH_PROTOCOL.md) · [Work-item template](templates/work_item.md) |
+| Initial literature | [Primary-source orientation](literature/00_orientation.md) |
+| Claims and open obligations | [Claim ledger](claim_ledger.md) |
+| Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |

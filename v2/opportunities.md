@@ -4,7 +4,8 @@ Owner: the active research agent, subject to DIR01 and the research protocol.
 Last substantive review: October 5, 2026 UTC, through completed F16.
 Administrative status update: October 6, 2026 UTC.
 **Phase two COMPLETE after [author-approved Gate D PASS](decisions/2026-10-06_gate_d_pass.md).**
-Await the author's phase-three direction; no new opportunity is selected.
+The [separate phase-three roadmap](../TODO_v3.md) now covers the author's
+logical-uncertainty and counterfactual questions; P3-01 is selected/unstarted.
 F15-ND02 remains optional, deferred and unstarted. Earlier dated updates below
 are historical; the F16 review refined OPP-02 without reranking the standing opportunities.
 These are **ranked leads**, not proven gaps or claims of first discovery.
