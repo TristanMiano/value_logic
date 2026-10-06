@@ -1,5 +1,17 @@
 # Phase-two verification: producer, experiments and adversarial review
 
+**Gate C assessment complete, October 6: PASS recommended; author decision pending.**
+The [technical review](../work_logs/C_2026-10-06_S1/reviews/technical/technical_review.md)
+records a current **288-test Linux pass on attempt 1** across Gate B, F07,
+F11, F12 and both F13 modules. All 266 tracked Python sources are unchanged.
+The [saved-result recount](../work_logs/C_2026-10-06_S1/saved_results_attempt1/summary.json)
+confirms F15's prospective usefulness criterion, and the integrity review
+preserves both freezes and all 973 scientific files. This is a current scoped
+regression and read-only audit, not a rerun of F15/ND01 or a whole-suite pass.
+[C_1](../checkpoints/C_1.md) separates technical readiness and supported
+contribution from the author's final decision. F17/D/ND02 remain unstarted.
+Contributor: **ChatGPT (GPT-6 Astra Pro)**, with attributed internal reviews.
+
 **F11 and F12 complete at their task scopes; both E60 floors satisfied.** Contributor: **Codex (GPT-6)**,
 October 3, 2026 local / October 4 UTC. This package implements the
 [N01 contract](../contribution_plan.md) using the unchanged F06 native kernel
@@ -29,8 +41,9 @@ source and consumer limits stated in the [derivation](../derivations/10_f16_cohe
 The [F16 work record](../work_logs/F16_2026-10-05_S1.md) controls its protected
 D60/Research90 and final accounting. C4-S remains a bounded modest
 synthesis/application; no worldwide-priority or general performance claim is
-established. After F16 closure the next task is a separate Gate C assessment.
-C/D remain unattempted; F17 and optional deferred F15-ND02 remain unstarted.
+established. F16 selected a separate Gate C assessment; C_1 is now complete
+above, with the author decision pending. F17/D and optional deferred F15-ND02
+remain unstarted.
 
 F15 completed frozen-challenge reporting with E60 satisfied, and
 [its results](../experiments/results.md) preserve 68 distinct useful retention
@@ -254,4 +267,4 @@ Contribution scope, practical advantage, empirical premise validity, general
 completeness and phase-two completion remain separate claims. C4 supports only
 the modest contribution described above. F13–F15, C4 and ND01 retain their
 completed scopes; F16's current handoff is above. After F16 closure the next
-task is a separate Gate C assessment. C/D remain unattempted.
+pointer is the author decision on C_1; PASS is recommended and Gate D remains unattempted.

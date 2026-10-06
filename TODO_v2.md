@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: October 6, 2026 UTC / October 5 America/Los_Angeles.
-Status: F01–F16, N01, C3 and C4 complete at their task scopes; F15 E60 satisfied at 60.090886 measured minutes; F15-ND01 complete at diagnostic/reporting scope with Research90 satisfied at 90.797984 measured minutes; modest synthesis/application contribution SUPPORTED at bounded C4 comparison scope, defended and narrowed by F16; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F16 complete (D67.483485, Research90.249178); optional F15-ND02 Research90 deferred/unstarted; F17 unstarted; A/B retain scoped passes; C/D unattempted.
+Last updated: October 6, 2026 UTC.
+Status: F01–F16, N01, C3 and C4 complete at their task scopes; F15 E60 satisfied at 60.090886 measured minutes; F15-ND01 complete at diagnostic/reporting scope with Research90 satisfied at 90.797984 measured minutes; modest synthesis/application contribution SUPPORTED at bounded C4 comparison scope, defended and narrowed by F16; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F16 complete (D67.483485, Research90.249178); optional F15-ND02 Research90 deferred/unstarted; F17 unstarted; A/B retain scoped passes; Gate C assessed, PASS recommended, author decision pending; D unattempted.
 
 ## Resume here
 
@@ -10,6 +10,16 @@ This is the active project-control document. Read it together with
 the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
+
+**Active pointer: author decision on [Gate C / C_1](v2/checkpoints/C_1.md).**
+The Gate C assessment is complete. **Evaluator recommendation: PASS;
+technical readiness MET; bounded contribution SUPPORTED; author decision
+PENDING.** The author expressly retains the final choice to continue or recurse.
+The Gate C checkbox remains unchecked. F17, Gate D and optional F15-ND02 are
+unstarted; no recurrence was automatically selected. The recommendation and
+strongest reservation, conditional Research60/90 alternatives, current
+288-test first-attempt regression and preserved frozen-result recount are in
+C_1. [Work and exact accounting](v2/work_logs/C_2026-10-06_S1.md).
 
 **F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
 The user-authorized [neural diagnostic](v2/experiments/F15_ND01_results.md) is
@@ -21,7 +31,7 @@ interventions clarify the original 0/5 outcome without establishing technical
 superposition, a joint utility representation, or a new complete neural pass.
 [Work, accounting and preservation](v2/work_logs/F15_ND01_2026-10-05_S1.md).
 Original F15 outcomes remain unchanged. Optional **F15-ND02, Research90** is
-unstarted; the next project task is a separate Gate C assessment.
+unstarted; the active pointer is the author's decision on the completed C_1 assessment.
 
 **F16 complete at fresh adversarial-review scope; D60 and Research90 satisfied.**
 [The review](v2/derivations/07_adversarial_review.md) records 31 exact objections
@@ -33,8 +43,8 @@ Closedness, uncertain old observations and extra source restrictions have
 checked boundaries. The strong ordinary baseline remains capable of the same
 service. C4-S is supported as a bounded modest synthesis/application; worldwide
 priority and general performance superiority remain unestablished.
-**Next: a separate Gate C assessment, unattempted.** F17 is unstarted and is
-selected only if Gate C passes. Optional **F15-ND02 Research90** is deferred
+**At F16 close, a separate Gate C assessment was recommended; C_1 is now complete.**
+F17 is unstarted and requires the author's Gate C decision. Optional **F15-ND02 Research90** is deferred
 in [OPP-02](v2/opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2),
 available after F16 or later if selected, with no new neural execution here.
 Original central/high estimates **120/240 engaged minutes** remain preserved.
@@ -78,9 +88,9 @@ exception and a bounded rerun. [Derivations](v2/derivations/09_c4_price_revision
 [work and timing](v2/work_logs/C4_2026-10-04_S1.md).
 
 **Active mathematical repair queue: empty.**
-**Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C not attempted; D not attempted.**
+**Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C assessed, PASS recommended, author decision pending ([C_1](v2/checkpoints/C_1.md)); D not attempted.**
 F14 discharged the prospective freeze; F15 execution, interpretation and E60
-are complete. ND01 is complete at diagnostic/reporting scope, with Research90 satisfied. F16's fresh review is complete; Gate C remains unattempted.
+are complete. ND01 is complete at diagnostic/reporting scope, with Research90 satisfied. F16's fresh review and Gate C's assessment are complete; the author retains the gate decision.
 If the contribution is later displaced, assign a named 60/90-minute
 recurrence or further-work chunk; no technical pass or elapsed time waives it.
 
@@ -103,6 +113,11 @@ F16 adds **112.898066** engaged minutes, bringing POST-B-1 to
 **914.028454**, with **45.971546** remaining to sixteen hours.
 [Exact F16 actuals](v2/work_logs/F16_2026-10-05_S1/actuals.json) preserve the
 1,006-row historical ledger prefix; no clock is reset.
+Gate C adds **18.436687** measured engaged minutes, giving
+**932.465141** cumulative POST-B-1 minutes and **27.534859**
+remaining to sixteen hours. [Exact Gate C actuals](v2/work_logs/C_2026-10-06_S1/actuals.json)
+preserve all 1,096 entry rows and the inherited carry. The sixteen-hour
+checkpoint is not reached. The active pointer remains the author decision.
 No recurrence time is reset. [F14 accounting](v2/work_logs/F14_2026-10-04_S1.md)
 preserves waits, recovery and the uncredited final administrative tail separately.
 The earlier [four-hour review](v2/checkpoints/POST_B_4H_1.md),
@@ -1427,7 +1442,8 @@ to publication with an unsound core simply because the planned queue ended.
   central/high **120/240 engaged-minute estimates** are preserved. Additional
   evidence and conditional **R-N01-01/F16-COMP60 (D30/L30)** are named in the
   report; no recurrence is triggered solely by ordinary reproducibility.
-  **Next: a separate Gate C assessment.** Optional F15-ND02 remains deferred.
+  **At F16 close: a separate Gate C assessment was next; C_1 is now assessed,
+  PASS recommended, author decision pending.** Optional F15-ND02 remains deferred.
 
   **Preserved starting contract:** protect a fresh D60 and forecast modes/lanes;
   F15's collaborating checks do not supply this review floor.
@@ -1449,6 +1465,13 @@ to publication with an unsound core simply because the planned queue ended.
   insufficiently distinctive result leaves a named contribution obligation open.
 
 - [ ] **Gate C — evidence of a solid, useful and distinctive calculus.**
+
+  **C_1 assessed October 6: PASS recommended; technical readiness MET and
+  scoped contribution SUPPORTED. Author decision PENDING.** The author asked
+  to retain the final continue/recurse decision, so this evaluator
+  recommendation leaves the checkbox unchecked and does not select F17.
+  [Assessment and argument](v2/checkpoints/C_1.md),
+  [work and accounting](v2/work_logs/C_2026-10-06_S1.md).
 
   Record `v2/checkpoints/C_1.md`, with versioned retries.
   Require a non-stale Gate B; no unresolved flaw in the sound core; successful

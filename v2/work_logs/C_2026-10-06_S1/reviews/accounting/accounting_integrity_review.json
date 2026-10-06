@@ -1,0 +1,140 @@
+{
+  "contributor": "ChatGPT (GPT-6 Astra Pro), separate Gate C accounting/integrity reviewer",
+  "observed_utc": "2026-10-06T08:38:48.257246+00:00",
+  "source_commit": "de7b456d08f383e72dfcabd278c183db324fdf16",
+  "scope": "Historical task/cycle accounting, preserved scientific-byte checks and Gate C clock source inspection; final Gate C accounting pending",
+  "status": "PASS at reviewed historical accounting/integrity scope",
+  "gate_C_author_decision": "PENDING; this audit makes no final gate decision and starts no F17",
+  "all_historical_floors_satisfied": true,
+  "matched_post_B_rows": 358,
+  "ledger": {
+    "bytes": 265648,
+    "rows": 1096,
+    "sha256": "2ddbbff7ccbc4c76bd15f3c26a58273be562ba21f6967b9d1d87feab7958c8fa",
+    "current_matches_source_exactly": true
+  },
+  "two_cycle_lane_checks": {
+    "I_plus_II": {
+      "research_seconds_exact": "50087.397015633",
+      "lane_seconds_exact": {
+        "R": "30920.185448081",
+        "X": "19167.211567552"
+      },
+      "lane_percent": {
+        "R": "61.732466229838942427551741469617269701707062612042176801201001722385867647982221",
+        "X": "38.267533770161057572448258530382730298292937387957823198798998277614132352017779"
+      },
+      "both_lanes_at_least_25_percent": true
+    },
+    "II_plus_required_III": {
+      "research_seconds_exact": "58117.865109357",
+      "lane_seconds_exact": {
+        "R": "32849.420827295",
+        "X": "25268.444282062"
+      },
+      "lane_percent": {
+        "R": "56.522070735881572912841840129026675171395746958042510679106074520545395269711253",
+        "X": "43.477929264118427087158159870973324828604253041957489320893925479454604730288747"
+      },
+      "both_lanes_at_least_25_percent": true
+    },
+    "II_plus_broader_III": {
+      "research_seconds_exact": "79021.695685227",
+      "lane_seconds_exact": {
+        "R": "42905.766010412",
+        "X": "36115.929674815"
+      },
+      "lane_percent": {
+        "R": "54.296184912712744276322905725675515797434405028535707130953885635810036818759657",
+        "X": "45.703815087287255723677094274324484202565594971464292869046114364189963181240343"
+      },
+      "both_lanes_at_least_25_percent": true
+    }
+  },
+  "post_b_1": {
+    "authorized_entry_minutes_decimal": "914.02845440021666666666666666666666666666666666667",
+    "historical_csv_engaged_seconds_exact": "54841.707190018",
+    "inherited_declared_minus_csv_seconds_decimal": "0.00007399500000000000000000000000000000000000020",
+    "preserved_inherited_discrepancy_seconds": "0.000073995",
+    "remaining_to_960_minutes_decimal": "45.97154559978333333333333333333333333333333333333",
+    "no_reset": true
+  },
+  "frozen_member_counts": [
+    34,
+    47
+  ],
+  "scientific_inventory_matches": 973,
+  "all_inventory_match": true,
+  "sidecar_counts": [
+    {
+      "run": "v2/work_logs/F15_v1_run1",
+      "matched": 180,
+      "count": 181
+    },
+    {
+      "run": "v2/work_logs/F15_ND01_v1_run1",
+      "matched": 103,
+      "count": 103
+    }
+  ],
+  "known_exceptions": [
+    "F15 original aggregate zero bytes; exact separate recovery matches original sidecar",
+    "Two ND01 intermediate report-audit hashes remain historical snapshots"
+  ],
+  "concurrent_principal_minutes_added": 0,
+  "scientific_stage_executions": 0,
+  "audit_reader_attempts": 2,
+  "inspection_failures": [
+    "Initial endpoint reader omitted explicit nested/segment recovery boundary schemas; corrected with old observations preserved",
+    "Guessed integrity_audit.md absent; existing integrity_result.json read",
+    "Guessed F14 recovery_exclusions.jsonl absent; embedded recovery events read"
+  ],
+  "final_Gate_C_stopped_clock_and_ledger_check": "pending",
+  "inputs": [
+    {
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/accounting/accounting_integrity_review.md",
+      "bytes": 12364,
+      "sha256": "5b4699d150429db8555174ad96d76f69c53421784cf36299fc26c07257f66537"
+    },
+    {
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/accounting/historical_timing.json",
+      "bytes": 175011,
+      "sha256": "0a017862445cc644302246ca500b19f3c0cec18f87312890940ad6f811e11179"
+    },
+    {
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/accounting/scientific_hash_checks.json",
+      "bytes": 477607,
+      "sha256": "99bdd49121114b317fec05eb0506bdda31e3a91b28a6ad06622552f8b0afbd4b"
+    },
+    {
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/accounting/audit_historical_accounting_integrity.py",
+      "bytes": 18328,
+      "sha256": "b0d5b116c729f593a90808a6a92a0e18996461d7818c60db8f4d3a71c76650a6"
+    },
+    {
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/accounting/audit_historical_accounting_integrity_attempt1.py",
+      "bytes": 16130,
+      "sha256": "d33057f07cb43d9f9b01b4c09053913b02d50eb4d2e0648029eb217a1c17e2b5"
+    },
+    {
+      "path": "v2/work_logs/C_2026-10-06_S1/reviews/accounting/attempt1_diagnostics.json",
+      "bytes": 4758,
+      "sha256": "ac0ddef2ecaad750fc7f6433c675c6fab8831098c73568ba7fc038c074b0fe4b"
+    },
+    {
+      "path": "v2/work_logs/C_2026-10-06_S1/baseline.json",
+      "bytes": 458,
+      "sha256": "91c60d951db4b21d23098722ca77ca7d5819349b2e209f09404eb39a119c502c"
+    },
+    {
+      "path": "v2/work_logs/C_2026-10-06_S1/forecast.json",
+      "bytes": 1208,
+      "sha256": "c8b5ae448c5ba0635f7dc21c70528176264f09d8fecc8cd99d5e76b9dbbc161f"
+    },
+    {
+      "path": "v2/work_logs/C_2026-10-06_S1/clock.py",
+      "bytes": 3264,
+      "sha256": "0198ce357434d70347f9af22b0a4769aff3c09144a0fbaa49983758bdead0f42"
+    }
+  ]
+}

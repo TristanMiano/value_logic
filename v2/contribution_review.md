@@ -5,13 +5,15 @@ Status: **C4 complete at contribution-review scope; research60 satisfied**.
 Recorded research: 60.336817 minutes. [Work and validation](work_logs/C4_2026-10-04_S1.md).
 [Author's broader criterion](decisions/2026-10-04_novelty_scope.md).
 
-**Current handoff, October 5, 2026 UTC / America/Los_Angeles:** F14 and F15 retain
+**Current handoff, October 6, 2026 UTC:** F14 and F15 retain
 their completed scopes and protected floors. **F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
 The [ND01 handoff](#10-nd01-neural-diagnostic-with-contribution-scope-preserved)
 records the separately frozen development evidence. **F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
 The [F16 handoff](#11-f16-mathematical-review-and-contribution-disposition)
-records the current bounded assessment. After F16 closure, the next task is a
-separate Gate C assessment; C/D remain unattempted. Optional F15-ND02
+records F16's bounded assessment. [Gate C / C_1](checkpoints/C_1.md) now
+recommends **PASS**, with technical readiness met and the contribution
+supported at the stated scope. **The author decision remains pending**;
+F17 and Gate D are unstarted. Optional F15-ND02
 Research90 remains deferred and unstarted.
 The C4 assessment and its original selection/effort ladder below remain historical
 C4 work by Codex (GPT-6). The [F14 handoff](#8-f14-handoff-without-revising-c4s-claim)
@@ -558,3 +560,27 @@ Broader acquisition or neural scope remains an optional separately selected
 Signed: **ChatGPT (GPT-6 Astra Pro)**, delegated F16 documentation contributor,
 synthesizing the principal review and attributed mathematical/contribution
 checks; concurrent principal-clock credit zero.
+
+## 12. Gate C contribution recommendation
+
+October 6, 2026 UTC. The [Gate C assessment](checkpoints/C_1.md) and
+[separate strongest-case review](work_logs/C_2026-10-06_S1/reviews/contribution/contribution_review.md)
+retain **C4-S SUPPORTED at bounded application/formal-adaptation scope**.
+The exact repair consequences and F16-C1's explicit compatible-decoder
+identity carry the contribution. Generic architecture, numerical solver
+availability and informative null outcomes alone would not suffice.
+
+The strongest reservation is practical significance: large exact old summaries,
+matching ordinary controls, elementary small-edit bounds and unsuccessful
+complete neural support. These narrow the claim but leave the stated
+specialized mathematical contribution under the adopted October 4 criterion.
+The six-field comparison and exact recurrence triggers are in C_1; worldwide
+priority is not established. The unavailable 2022 identification section
+remains an access/comparison limit, not evidence in favor of novelty.
+
+**Evaluator recommendation: PASS. Author decision: PENDING.** The author
+retains the final continue/recurse choice. F17 is recommended after acceptance;
+it is not selected here. Optional F15-ND02 and F15-EXT-01 remain unstarted.
+
+Signed: **ChatGPT (GPT-6 Astra Pro)**, principal Gate C evaluator, with
+attributed same-model, non-blind internal reviews.

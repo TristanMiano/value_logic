@@ -5,14 +5,16 @@ Contributor: **Codex (GPT-6)**. October 2, 2026, America/Los_Angeles.
 Current contribution: **C4-S SUPPORTED at bounded comparison scope**: modest
 methodological synthesis/formal adaptation with small technical application
 extensions; worldwide priority unestablished. A/B retain their scoped passes;
-C/D unattempted. **C3, F11–F14 and C4 are complete at their task scopes and
+Gate C assessed with PASS recommended and author decision pending; D unattempted.
+**C3, F11–F14 and C4 are complete at their task scopes and
 protected floors. F15 is complete at frozen-challenge reporting scope, E60
 satisfied at 60.090886 minutes.**
 **F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
 **F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
-The [F16 handoff](#16-f16-mathematical-review-and-allocation) and authoritative
-TODO govern current execution. The next task after F16 closure is a separate
-Gate C assessment; optional F15-ND02 Research90 remains deferred and unstarted.
+The [Gate C assessment](checkpoints/C_1.md) and authoritative TODO govern the
+current pointer: **author decision whether to continue or recurse**. The
+evaluator recommends PASS and then F17, without selecting it before that
+decision. Optional F15-ND02 Research90 remains deferred and unstarted.
 The [ND01 handoff](#15-nd01-diagnostic-and-the-next-evidence-choice),
 [F15 handoff](#14-f15-evidence-and-the-next-defense) and
 [C4 close](#12-c4-close-broader-contribution-assessment) preserve their dated
@@ -807,3 +809,31 @@ selection and prospective controls before new evaluation.
 Signed: **ChatGPT (GPT-6 Astra Pro)**, delegated F16 documentation contributor,
 synthesizing the principal derivation and attributed contribution reviews;
 concurrent principal-clock credit zero.
+
+## 17. Gate C recommendation and author decision
+
+October 6, 2026 UTC. [C_1](checkpoints/C_1.md) completes the assessment and
+recommends **PASS**, finding technical readiness met and the scoped
+application/formal-adaptation contribution supported. The author expressly
+retains the final choice to continue or recurse. **The active pointer is that
+decision; the Gate C checkbox stays unchecked and F17/D remain unstarted.**
+
+The recommendation favors F17's consolidation of the proved and observed
+results. It does not add empirical superiority or a successful neural
+interpretation. If the author prefers more research first, the most direct
+practical extension remains **F15-EXT-01 Research90**: specify a decision with
+uncertain old/new observations, then a serious ordinary comparator, coherent
+error/cost contract and prospective validation target. Preserve the proposed
+half-and-half design allocation; no completed or positive experiment is
+promised within that design chunk. A distinctiveness displacement triggers
+the existing **F16-COMP60** exact comparison, D30/L30, central70/high105.
+**F15-ND02 Research90 stays optional, deferred and unstarted** in OPP-02.
+
+Cycle III required F11-F16 research used D/L/E 36.764/7.436/55.800% versus
+35/10/55 planned, with R/X 51.460/48.540%. Including N01/C3/C4/ND01 gives
+46.333/11.057/42.610% and R/X 50.000896/49.999104%. Both relevant two-cycle
+interpretations satisfy the 25% lane rule. Future selected work should
+forecast its substantive needs; no cosmetic allocation repair is warranted.
+[Exact accounting and closure](work_logs/C_2026-10-06_S1.md).
+
+Signed: **ChatGPT (GPT-6 Astra Pro)**, principal Gate C evaluator.

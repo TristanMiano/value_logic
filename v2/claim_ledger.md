@@ -1,6 +1,6 @@
 # Phase Two Claim Ledger
 
-Current status (October 6, 2026 UTC / October 5 America/Los_Angeles): **F01–F16,
+Current status (October 6, 2026 UTC): **F01–F16,
 N01, C3 and C4 complete at their task scopes. F16's fresh D60 is satisfied at
 67.483485 minutes and Research90 at 90.249178 minutes.** C4-S remains
 SUPPORTED as a bounded modest synthesis/formal adaptation with specialized
@@ -13,9 +13,12 @@ F15 and F15-ND01 outcomes and saved reports remain unchanged. Ordinary training
 does not force a clean eight-neuron cost block; partial intervention success
 and the complete 0/5 outcome establish neither a unique representation nor
 its universal absence. **F15-ND02 Research90 is optional, deferred and unstarted.**
-A/B retain their scoped passes. **The next task is a separate Gate C
-assessment; C/D and F17 remain unattempted.** The dated entries below retain
-their historical statuses; the F16 entry supersedes their old next-task pointers.
+A/B retain their scoped passes. **Gate C assessment complete: PASS recommended;
+technical readiness MET; scoped contribution SUPPORTED; author decision PENDING.**
+The active pointer is the author's final continue/recurse decision on
+[C_1](checkpoints/C_1.md). The checkbox remains unchecked; F17, Gate D and ND02
+remain unstarted. The dated entries below preserve historical statuses; the
+Gate C entry supersedes their old next-task pointers.
 
 ## F10 external-audit disposition — September 30, 2026
 
@@ -1206,3 +1209,29 @@ engaged minutes, targeting an exact theorem-level translation against the
 closest identification/optimal-recovery work and a concrete surviving useful
 consumer. A separately selected Research90 uncertain-source acquisition study
 would be the stronger practical extension. Neither optional chunk begins here.
+
+## Gate C assessment — October 6, 2026
+
+Contributor: **ChatGPT (GPT-6 Astra Pro)**, principal evaluator with separately
+assigned internal reviews. [C_1](checkpoints/C_1.md) is the controlling
+assessment. **Recommendation PASS; technical readiness MET; contribution
+SUPPORTED; author decision PENDING.** These are review dispositions, not new
+experimental or theorem claims.
+
+| ID | Claim/disposition | Evidence and limit |
+|---|---|---|
+| C1-T | Current technical criteria are met at the finite-core and bounded-application scope. | B remains non-stale; 288 selected Linux tests pass on attempt 1; F16 objections are resolved in scope. No whole-repository or unrestricted-completeness claim. |
+| C1-U | F14's prospective useful-derivation criterion is met by the saved F15 result. | Read-only recount: 68 distinct useful episodes over 16 seeds; 15 distinct qualifying selective approximate episodes over 8 seeds. All 160 units match the separately recovered aggregate. Paired rows are not independent episodes. |
+| C1-S | C4-S remains SUPPORTED as a modest specialized application/formal adaptation after the Gate C challenge. | Exact retention/repair consequences and F16-C1's explicit compatible common-radius decoder supply the delta against the checked generic formulations. Ordinary reproducibility and unknown worldwide priority remain explicit. |
+| C1-N | The neural investigation is complete at its recorded scope; complete causal support is not established. | Original 0/5 endpoint and 5/5 task readiness are unchanged. ND01 clarifies extraction and control difficulties; no joint/unique representation or technical superposition claim. |
+| C1-I | Saved scientific integrity and historical accounting pass their review. | Both registered freezes and 973 scientific files match; known original aggregate exception remains explicit. Historical ledger prefix is preserved, with exact new accounting in the work record. |
+| C1-A | The evaluator recommends PASS; the author retains the decision. | Gate checkbox remains unchecked. F17 is recommended conditionally, not selected; Gate D and optional ND02 are unstarted. |
+
+No mandatory recurrence was identified. If the author wants stronger practical
+significance first, the existing **F15-EXT-01 Research90** specifies one
+uncertain-source acquisition problem and a serious ordinary/error-cost
+comparison; it is a design chunk. A concrete distinctiveness displacement
+instead triggers **R-N01-01/F16-COMP60**, D30/L30, central70/high105 engaged
+minutes. **F15-ND02 remains optional and deferred.** None starts in this gate.
+
+[Work, exact accounting and attempt records](work_logs/C_2026-10-06_S1.md).

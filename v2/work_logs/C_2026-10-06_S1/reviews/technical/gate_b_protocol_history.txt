@@ -1,0 +1,107 @@
+6ce41d7caaba8b66cf813fc5949a92f95d42766c C4: assess scoped contribution and derive revision limits
+51b509980ab33a92a9146e75e46a70bc3d9a0b9a N01: complete two-hour target recurrence before F11
+1686a8d13b70d1d439629bfcec9c9c65cea4bf86 PLAN01: require supported novelty and bounded recurrence
+d50905e89be0741feb9a1993fefb5db3424f957d F10: scale research breadth and evidence together
+16784e3a82196ed7a850a2d78186f12a736650ac F10: audit finite core and calibrate research effort
+56b1af995493cc6981e3402edcb34b035be0c525 F08: characterize unit-directed consequence and optimal replay
+9e600f48e512dd3125d5748e2666b87785de538c F07 complete: finite-fragment soundness and request-bound producer audit
+6a9cc9993261187aa14af5bc6149921697966ff0 research direction update
+064320e9770cc796843da2de9335dce37cae2019 R0: adopt calculus-first phase with evidence gates and measured research budgets
+
+diff --git a/v2/RESEARCH_PROTOCOL.md b/v2/RESEARCH_PROTOCOL.md
+index dffa294..188820f 100644
+--- a/v2/RESEARCH_PROTOCOL.md
++++ b/v2/RESEARCH_PROTOCOL.md
+@@ -150,6 +150,34 @@ stop for explicit replanning: narrow the immediate attempt, create a repair
+ item, or forecast an additional block. Do not silently expand an unbounded
+ proof search or mark it successful because its budget expired.
+ 
++**Scoped author exception, October 2 local / October 3 UTC, 2026.**
++[R-N01-01/C3](decisions/2026-10-02_n01_recurrence.md) moves before C1/F11 and
++C2/F12 and has a fresh **D+L120** floor, with evidence in both modes. Prior
++N01 research, engineering, administration, tool waiting and unknown intervals
++cannot satisfy it. This exception applies only to C3; the normal 60/90-minute
++increments and each later task's mode-specific floor remain in force. Its
++[completed record](work_logs/N01R_2026-10-02_S1.md) reports the outcome and
++floor assessment without treating time spent as novelty evidence.
++
++**PLAN01 author amendment, September 30 local / October 1 UTC, 2026.** Remaining
++research and recurrence use prospectively selected **60- or 90-minute engaged
++research chunks**, with explicit D/L/E allocations and O/wait forecasts separate.
++Preserve each task's mode-specific minimum: a mixed chunk does not discharge
++E60 or D60. N01 has its own new D+L60 mixed floor, planned D30/L30 with actual
++evidence in both modes. Planning checkpoints and administrative edits have no
++new research floor. Chunks may span sessions; incomplete time/evidence carries
++forward transparently. Record core-ready time and what useful optional work
++the rest of the protected chunk buys. End the chunk with a next-action decision;
++starting subsequent chunks still follows the authorized task/batch scope.
++
++The package clock begins at N01 and counts actual D/L/E/O once, including
++recurrence, against cumulative 4/8/16/32-hour ambition checkpoints. Exclude
++waiting, idle and unknown time. Review at the first chunk boundary reaching a
++milestone, record overshoot, and never reset the clock to hide a failed attempt.
++Growing scope and stronger evidence should share each increment roughly evenly;
++central/high effort forecasts for a fixed scope remain a separate quantity.
++Use the current [roadmap](../TODO_v2.md) for exact criteria and later increments.
++
+ ## 5. Balance reliable and exploratory gains
+ 
+ This is an axis separate from D/L/E. **R (reliable)** includes checking a finite
+@@ -195,11 +223,56 @@ specification are revised. An empirical null result is not automatically a
+ logical inconsistency: distinguish correctness, expressive usefulness, and
+ benchmark performance when assigning its consequences.
+ 
++### Project-level novelty is an advancement requirement
++
++Under [PLAN01](decisions/2026-09-30_novelty_and_recurrence.md), every post-B chunk
++and ambition checkpoint assesses whether the result is sufficiently distinctive
++to support a scoped project-level novelty claim. Record technical readiness
++separately from contribution **SUPPORTED / NOT YET SUPPORTED / DISPLACED**.
++The current roadmap supplies the evidence standard: exact meaningful claim,
++closest checked work and credible ordinary-method combination, supported
++difference, and adversarial limitations. Established components are welcome;
++component-wise novelty and certainty about all prior literature are not required.
++A useful implementation, elapsed effort, or null experiment alone is not a
++supported contribution.
++
++Under the author's [October 4 clarification](decisions/2026-10-04_novelty_scope.md),
++eligible novelty also includes modest conceptual synthesis, a useful original
++combination of established methods, methodology, application and small technical
++extensions. It may reside at the whole-project or any component level. Each
++assessment records **object, type, exact delta, magnitude, evidence and comparison
++scope**. Distinguish support relative to inspected antecedents from worldwide
++priority, and distinguish either from speed, empirical calibration or learned
++mechanism claims. No component must invent its own tools. A synthesis label
++without a meaningful supported difference does not satisfy the gate.
++C4's bounded supported assessment is evidence for later gates, not their pass;
++F16 must challenge its precise content and reopen the obligation if displaced.
++
++If NOT YET SUPPORTED or DISPLACED, assign a named 60/90-minute recurrence or
++additional-work chunk with the exact missing evidence, earliest affected task,
++forecast and acceptance condition. It may be implemented by a planned F11–F16
++chunk; link the obligations and count time once. Reuse the open obligation's ID
++for the same unresolved gap and distinguish its successive chunk attempts.
++Early research can continue
++under that assignment without pretending the novelty bar has passed. Gate C
++cannot select F17 until technical readiness AND contribution support hold;
++Gate D must retain that support before declaring phase completion. Otherwise
++record BLOCKED and select the required work. A supported novel limitation can
++satisfy the bar; it still needs a meaningful difference from the closest work.
++
++A/B's historical readiness passes remain valid unless their actual premises
++change. Contribution uncertainty alone opens further research, not a fictitious
++mathematical invalidation. After two unsuccessful chunks on the same novelty
++gap compare at least two routes and select a discriminating next chunk. Do not
++waive the bar, restart the cumulative clock, or call a suspended candidate a
++completed phase. This amendment selects N01 but starts no research task.
++
+ ### Mandatory recurrence procedure
+ 
+ 1. State the failed criterion and smallest known witness or exact gap.
+ 2. Classify the source: requirements, representation, rule, proof, external
+-   premise, implementation, test design, or timing/evidence record.
++   premise, implementation, test design, contribution/distinctiveness, or
++   timing/evidence record.
+ 3. Find the earliest affected dependency. Mark downstream claims/gates stale
+    without deleting completed historical work.
+ 4. Add a stable repair ID such as `R-B-1-01` to the active queue with a target,
