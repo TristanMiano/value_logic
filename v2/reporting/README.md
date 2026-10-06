@@ -37,3 +37,17 @@ evidence transfer unchanged. No old review or manifest is silently rewritten.
 
 These checks read saved material. They never train a model, generate a
 population, refit an alignment or rerun the frozen experimental stages.
+
+## Gate D assessment and later author acceptance
+
+The author subsequently [accepted Gate D PASS and phase-two completion](../decisions/2026-10-06_gate_d_pass.md).
+The report, D claim map, assessment, builder, reviews and completion manifest
+remain unchanged assessment snapshots from commit
+`1d0d6f0c1e0403eb1752f51c5ea703d896184014`. Their pending-author disposition
+describes that earlier cutoff; the later decision supplies the accepted PASS.
+
+The report-map check above remains valid for the current report. Reproduce the
+complete historical D manifest in a checkout of that pinned commit: it also
+binds mutable project-control documents and the time ledger as they stood at
+assessment, before the author accepted the gate. Later administrative closure
+updates those records without rewriting or retroactively reissuing the audit.

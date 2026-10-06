@@ -1,10 +1,12 @@
 # Research opportunity register
 
 Owner: the active research agent, subject to DIR01 and the research protocol.
-Last reviewed: October 5, 2026 UTC, through completed F16.
-**F17 report assembly is complete after author-approved Gate C PASS; Gate D is next and unattempted.**
-F15-ND02 remains optional, deferred and unstarted. Earlier dated updates below are historical;
-this review refines OPP-02 without reranking the standing opportunities.
+Last substantive review: October 5, 2026 UTC, through completed F16.
+Administrative status update: October 6, 2026 UTC.
+**Phase two COMPLETE after [author-approved Gate D PASS](decisions/2026-10-06_gate_d_pass.md).**
+Await the author's phase-three direction; no new opportunity is selected.
+F15-ND02 remains optional, deferred and unstarted. Earlier dated updates below
+are historical; the F16 review refined OPP-02 without reranking the standing opportunities.
 These are **ranked leads**, not proven gaps or claims of first discovery.
 The relevant primary-source descriptions and inspection limits are in
 [literature/directional_leads.md](literature/directional_leads.md).

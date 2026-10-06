@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
 Last updated: October 6, 2026 UTC.
-Status: F01–F17, N01, C3 and C4 complete at their task scopes; F15 E60 satisfied at 60.090886 measured minutes; F15-ND01 complete at diagnostic/reporting scope with Research90 satisfied at 90.797984 measured minutes; modest synthesis/application contribution SUPPORTED at bounded C4 comparison scope, defended and narrowed by F16; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F16 complete (D67.483485, Research90.249178); optional F15-ND02 Research90 deferred/unstarted; F17 complete at report-assembly scope; A/B retain scoped passes; Gate C PASS approved by the author October 6; D assessment complete with evaluator PASS recommendation, author decision pending.
+Status: **Phase two COMPLETE.** F01–F17 and required recurrences are complete at their recorded scopes; all protected minima are satisfied; Gates A–D PASS, with the author's Gate D acceptance recorded October 6. The bounded C4-S contribution remains SUPPORTED. No mandatory phase-two work remains. Awaiting the author's phase-three direction; no phase-three task is selected.
 
 ## Resume here
 
@@ -11,17 +11,17 @@ the latest applicable gate record, and the selected task's prior sessions.
 Read relevant phase-one material as needed; do not spend every session rereading
 the entire original paper or its completed task history.
 
-**Active pointer: Gate D assessment complete — evaluator recommends PASS; author decision pending.**
-[The D_1 assessment](v2/checkpoints/D_1.md) finds the final report and bounded
-C4-S contribution supported. The requested mathematical rendering repairs,
-explicit attempt-price theorem hypothesis, evidenced model byline and polished
-root README are complete. A [new 42-group map](v2/reporting/D_1/claim_map.json)
-binds the revised report while preserving F17's historical report and reviews.
-[Gate D work and accounting](v2/work_logs/D_2026-10-06_S1.md) records all checks,
-corrections and measured time. A/B/C retain scoped passes. The Gate D checkbox
-remains unchecked until the author's final decision; phase completion is not
-yet enacted. Recommended after acceptance: external review of the report.
-Optional F15-ND02 and other later research chunks remain unstarted.
+**Active pointer: phase two complete; await the author's phase-three direction.**
+The author [accepted Gate D PASS](v2/decisions/2026-10-06_gate_d_pass.md).
+The completion record maps every done criterion to the accepted evidence;
+there is no remaining mandatory task or active blocking repair. The
+[D_1 assessment](v2/checkpoints/D_1.md) remains the fixed, pre-acceptance audit
+snapshot; its pending-author label is superseded by the later decision.
+The [current 42-group map](v2/reporting/D_1/claim_map.json) continues to bind the
+unchanged final report. [Closure work and accounting](v2/work_logs/PHASE2_CLOSE_2026-10-06_S1.md)
+record this administrative disposition. Optional F15-ND02, F15-EXT-01 and
+conditional COMP60 remain deferred/unstarted; external review is also a future
+option. None is selected by phase-two completion.
 
 **Presentation convention:** keep the root README focused on the entire project,
 its motivation, reports, applications and navigation. Record running status,
@@ -38,7 +38,7 @@ interventions clarify the original 0/5 outcome without establishing technical
 superposition, a joint utility representation, or a new complete neural pass.
 [Work, accounting and preservation](v2/work_logs/F15_ND01_2026-10-05_S1.md).
 Original F15 outcomes remain unchanged. Optional **F15-ND02, Research90** is
-unstarted; the active pointer is now the separate Gate D audit.
+unstarted; phase two is complete and further work awaits the author's direction.
 
 **F16 complete at fresh adversarial-review scope; D60 and Research90 satisfied.**
 [The review](v2/derivations/07_adversarial_review.md) records 31 exact objections
@@ -95,9 +95,9 @@ exception and a bounded rerun. [Derivations](v2/derivations/09_c4_price_revision
 [work and timing](v2/work_logs/C4_2026-10-04_S1.md).
 
 **Active mathematical repair queue: empty.**
-**Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C PASS, author-approved ([C_1](v2/checkpoints/C_1.md)); D evaluator recommends PASS; author decision pending ([D_1](v2/checkpoints/D_1.md)).**
+**Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C PASS, author-approved ([C_1](v2/checkpoints/C_1.md)); D PASS, author-approved ([decision](v2/decisions/2026-10-06_gate_d_pass.md), [assessment snapshot](v2/checkpoints/D_1.md)).**
 F14 discharged the prospective freeze; F15 execution, interpretation and E60
-are complete. ND01 is complete at diagnostic/reporting scope, with Research90 satisfied. F16's review, author-approved Gate C and F17 assembly and the Gate D assessment are complete; the author’s Gate D decision remains separate.
+are complete. ND01 is complete at diagnostic/reporting scope, with Research90 satisfied. F16's review, author-approved Gates C/D and F17 assembly are complete; phase two meets its definition of done.
 If the contribution is later displaced, assign a named 60/90-minute
 recurrence or further-work chunk; no technical pass or elapsed time waives it.
 
@@ -132,8 +132,11 @@ was **965.049327**, with **5.049327** minutes of overshoot, recorded in the
 [sixteen-hour checkpoint](v2/checkpoints/POST_B_16H_1.md).
 [Exact F17 actuals](v2/work_logs/F17_2026-10-06_S1/actuals.json) preserve the
 inherited carry and all 1,105 prior rows; no concurrent or recovery interval
-is added. Gate D is next and unattempted; no 32-hour programme is automatically
-selected. No recurrence time is reset. [F14 accounting](v2/work_logs/F14_2026-10-04_S1.md)
+is added. At F17 close, Gate D was next and unattempted. Gate D subsequently
+added **16.205642** engaged minutes, closing at **983.928404** cumulative minutes.
+The later [administrative closure actuals](v2/work_logs/PHASE2_CLOSE_2026-10-06_S1/actuals.json)
+carry that balance forward without resetting POST-B-1. No 32-hour programme or
+new recurrence is selected. [F14 accounting](v2/work_logs/F14_2026-10-04_S1.md)
 preserves waits, recovery and the uncredited final administrative tail separately.
 The earlier [four-hour review](v2/checkpoints/POST_B_4H_1.md),
 [C3 recurrence](v2/work_logs/N01R_2026-10-02_S1.md),
@@ -1534,7 +1537,8 @@ to publication with an unsound core simply because the planned queue ended.
   report findings are resolved. No new scientific claim or gate pass is
   introduced by writing. Five saved-output checks passed on attempt 1.
   No protected minimum applies; original central/high 120/240 estimates remain.
-  Gate D is the next separate task, unattempted. ND02/EXT01/COMP60 remain
+  At F17 close, Gate D was the next separate task, unattempted; the later
+  author-approved D PASS below completes the phase. ND02/EXT01/COMP60 remain
   optional or conditional, deferred and unstarted.
 
   Principal artifact: `paper_v2.md`.
@@ -1553,12 +1557,13 @@ to publication with an unsound core simply because the planned queue ended.
   introduced during writing, and unresolved directions become later research
   rather than falsely completed contributions.
 
-- [ ] **Gate D — final audit and phase disposition.**
+- [x] **Gate D — final audit and phase disposition.**
 
-  **Assessment complete October 6: evaluator recommends PASS; author decision
-  pending.** [D_1](v2/checkpoints/D_1.md) preserves the reasoned recommendation,
-  final report bindings, all local repairs and accounting. The checkbox remains
-  unchecked until the author accepts the phase disposition.
+  **PASS, accepted by the author October 6; phase two COMPLETE.** The
+  [decision and done-criteria check](v2/decisions/2026-10-06_gate_d_pass.md)
+  enact the approval. [D_1](v2/checkpoints/D_1.md) preserves the pre-acceptance
+  recommendation, final report bindings, local repairs and accounting.
+  No mandatory recurrence remains. Await the author's phase-three direction.
 
   Record `v2/checkpoints/D_1.md`, with versioned retries.
   Check the report against non-stale Gates A-C, the claim ledger, exact
@@ -1580,6 +1585,9 @@ to publication with an unsound core simply because the planned queue ended.
   implied by this disposition.
 
 ## Definition of done
+
+**Satisfied October 6, 2026:** see the [criterion-by-criterion completion record](v2/decisions/2026-10-06_gate_d_pass.md).
+The definition below is unchanged.
 
 This phase succeeds when it has a justified, explicit value-based semantic
 core; operationally meaningful inference rules; nonvacuous worked derivations;

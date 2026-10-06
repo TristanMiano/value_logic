@@ -1,16 +1,16 @@
 # Phase Two Claim Ledger
 
-Current status (October 6, 2026 UTC): **F01–F17, N01, C3 and C4 complete at
-their task scopes; Gate D assessment complete, evaluator recommends PASS,
-author decision pending.** A/B/C retain their scoped passes. The
-[revised report](../paper_v2.md) has a [current 42-group evidence map](reporting/D_1/claim_map.json);
-F17's historical report and evidence remain preserved. C4-S is SUPPORTED as
-bounded modest synthesis/formal adaptation with specialized retention, repair
-and compatible-recovery results. Ordinary reproducibility, original neural
-0/5, diagnostic development status and unestablished worldwide priority remain
-explicit. [D_1](checkpoints/D_1.md) supports the recommendation without enacting
-phase completion. Optional F15-ND02 and other deferred branches remain unstarted.
-The dated historical entries below retain their original temporal dispositions.
+Current status (October 6, 2026 UTC): **Phase two COMPLETE; Gates A–D PASS.**
+The author [accepted Gate D](decisions/2026-10-06_gate_d_pass.md), and all done
+criteria are satisfied. No mandatory task or blocking repair remains.
+F01–F17 and required recurrences retain their completed scopes and measured
+floors. The [final report](../paper_v2.md) and [42-group evidence map](reporting/D_1/claim_map.json)
+remain unchanged. C4-S is SUPPORTED as bounded modest synthesis/formal adaptation
+with specialized retention, repair and compatible-recovery results. Original
+neural 0/5, ordinary comparators and the stated scientific boundaries remain
+unchanged. Await the author's phase-three direction; optional F15-ND02 and
+other deferred branches remain unstarted. The dated entries below preserve
+their original temporal dispositions, including D's pre-acceptance assessment.
 
 ## F10 external-audit disposition — September 30, 2026
 
@@ -1281,3 +1281,18 @@ joint two-cost neural abstraction. If a close antecedent or proof defect
 displaces the contribution, reopen **R-N01-01/F16-COMP60**, protected D30/L30,
 with an explicit theorem-to-theorem comparison and surviving-delta decision.
 All these additional chunks remain unstarted.
+
+## Author-approved Gate D and phase-two closure — October 6, 2026
+
+Recorded by **ChatGPT (GPT-6 Astra Pro)**. The author's explicit acceptance
+supersedes the pending-author disposition in the historical D assessment above.
+
+| ID | Disposition | Evidence and scope |
+|---|---|---|
+| D-DEC02 | Gate D PASS, accepted by the author. | [Decision](decisions/2026-10-06_gate_d_pass.md), accepting the unchanged D_1 assessment published at `1d0d6f0c1e0403eb1752f51c5ea703d896184014`. |
+| P2-CLOSE01 | Phase two COMPLETE; no mandatory task or active blocking repair remains. | The decision maps the unchanged definition of done to accepted evidence. All protected minima hold; Gates A–D pass at their recorded scopes. |
+| P2-NEXT01 | Await the author's phase-three approach; no new task selected. | ND02/EXT01 remain optional, COMP60 conditional, all unstarted. This administrative disposition adds no scientific or novelty claim. |
+
+The final report, polished root README and historical D bindings remain
+unchanged. [Closure accounting](work_logs/PHASE2_CLOSE_2026-10-06_S1.md) appends
+only fresh administrative time and exclusions; POST-B-1 is not reset.
