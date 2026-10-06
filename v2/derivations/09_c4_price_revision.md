@@ -2,7 +2,7 @@
 
 Contributor: **Codex (GPT-6)**. October 4, 2026.
 Status: **accepted at C4's local scope**; worldwide priority unestablished,
-F16 fresh review pending. Ordinary mathematics and statistical applications,
+F16 fresh reconstruction complete, with the dated F16-R01 clarification below. Ordinary mathematics and statistical applications,
 not a new native rule or a completed deployment experiment.
 This extends the [F13 fixed-price calculation](06_case_studies.md#51-fixed-positive-attempt-costs-and-full-orders).
 It is a candidate small technical extension, not a new general theory of
@@ -399,10 +399,56 @@ This is a genuine numeric consequence of retaining only the old means, but
 even this worst-error witness does not force an incorrect optimal-order
 label: for epsilon>0, putting the edited procedure last is optimal for both
 laws. A1 must not be recast as a policy-regret lower bound. The midpoint
-decoder may require solving new linear programs and may be incoherent across
-orders; returning exact intervals is a simpler sound retention contract.
+decoder may require solving new linear programs. For this exact k=3,
+single-attempt-price-edit consumer, its midpoint predictions are jointly
+realizable by one compatible law, as established in the dated clarification
+below. Returning exact intervals is also a sound retention contract.
 The particular formulas are a small worked extension of ordinary partial
 identification and linear-summary methods, not a new minimax principle.
+
+### F16-R01 clarification: the A1 midpoint decoder can be coherent
+
+**October 5, 2026; signed ChatGPT (GPT-6 Astra Pro).** The original sentence
+immediately above said the midpoint decoder "may be incoherent across
+orders." F16 found that warning overbroad for the exact A1 setting. The
+radius, hypotheses, extremal witnesses and frozen experimental analysis are
+unchanged. The following proof strengthens the allowed output contract.
+The [F16 adversarial review](07_adversarial_review.md) records the correction,
+its separate checks and the disposition of already exposed experimental data.
+
+Fix a law p0 in any nonempty exact old-summary fiber. Equality of old means
+`1 + m_i + m_ij + M*m_123` implies that every singleton moment difference
+equals one scalar u, every pair moment difference equals one scalar v, and
+the terminal moment difference is `-(u+v)/M`. Conversely these conditions
+preserve every old mean. Boolean inversion therefore gives an injective
+affine parametrization `p=p0+L(u,v)` of the entire fiber. Its admissible
+coordinate set K is a nonempty compact convex subset of the plane. All
+world-mass nonnegativity constraints remain in K; p0 need not be exchangeable.
+
+Every nonempty compact convex planar set contains the midpoint of its
+coordinatewise bounding box. For positive widths, normalize both coordinate
+intervals to [-1,1]. If the origin were outside, strict separation and axis
+reflections would give `a*x+b*y>=gamma>0` with a,b>=0. An attained x=-1
+point implies b>a; an attained y=-1 point implies a>b, a contradiction.
+Degenerate coordinate intervals reduce to a segment or a point.
+
+Apply this lemma to K. Its bounding-box midpoint supplies a compatible law
+p_star realizing every singleton and pair moment midpoint simultaneously.
+After one attempt-price edit, each revised order mean is a known old mean
+plus epsilon times a constant, a singleton moment or a pair moment. Hence
+the same p_star realizes all six revised-order interval midpoints, for either
+sign of epsilon. The A1 lower bound still applies to law-valued decoders, so
+the stated sharp radius is also attained under this stronger coherence
+requirement. Computing the decoder can still require linear optimization.
+
+This does not require the terminal moment to be at its own interval
+midpoint. For M=4 and old mean two in every order, the proper-moment midpoint
+law has singleton moment 5/12, pair moment 23/102 and terminal moment 73/816;
+the terminal interval midpoint is instead 1/12. Its exchangeable level masses
+are `(275,135,333,73)/816`. Thus changed terminal penalties, arbitrary
+combinations of query directions, nonconvex additional restrictions and k>=4
+need separate analysis. The existing higher-dimensional incoherence example
+is unaffected. This proof makes no new empirical or worldwide-priority claim.
 
 ## 11. Arbitrary k at equal prices: a small residual moment problem
 
@@ -726,4 +772,10 @@ The literature comparison names the established chain, identification,
 optimal-recovery and concentration tools. The results add narrowly specified
 consumer-revision consequences; they do not establish a new universal
 calculus, a new concentration inequality or practical superiority.
-F16's fresh reconstruction and stronger priority review remain due.
+F16's [fresh reconstruction](07_adversarial_review.md) is complete at its scoped
+review, including the dated F16-R01 correction. The later
+[coherent-recovery theorem](10_f16_coherent_recovery.md) supplies singleton
+dominance and a compatible common-radius decoder on the full exact equal-price
+fiber, resolving that former optional question. The original C4 finite evidence
+and the k4 incompatible-individual-midpoint example remain valid. F16's bounded
+primary comparison does not establish worldwide priority.

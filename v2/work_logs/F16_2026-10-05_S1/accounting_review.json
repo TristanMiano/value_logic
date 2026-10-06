@@ -1,0 +1,94 @@
+{
+  "reviewer": "ChatGPT (GPT-6 Astra Pro), separate F16 accounting agent",
+  "status": "research_verified_final_ledger_pending",
+  "parallel_minutes_added_to_principal": 0,
+  "research_cutoff_utc": "2026-10-05T23:53:18.425936+00:00",
+  "research_cutoff_monotonic_ns": 31004665696319,
+  "closed_segments_at_first_review": 84,
+  "clock_events_through_research_close": 105,
+  "exact_event_to_segment_reconstruction": true,
+  "positive_nonoverlapping_contiguous_segments": true,
+  "all_saved_elapsed_seconds_match_integer_nanoseconds": true,
+  "runtime": "linux-F16-S1",
+  "maximum_adjacent_observation_gap_ns": 307186281373,
+  "maximum_utc_vs_monotonic_segment_discrepancy_seconds": "0.000209812",
+  "totals_through_research_close_ns": {
+    "D": 4049009098156,
+    "L": 810626919554,
+    "E": 555314650319,
+    "O": 472697335145,
+    "research": 5414950668029,
+    "raw_paused": 128195321389,
+    "paused_recovery_inspection": 88353624813,
+    "other_paused_wait": 39841696576,
+    "whole_segment_recovery_exclusions": 786607095348
+  },
+  "research_lane_ns": {
+    "R": 2527377335270,
+    "X": 2887573332759
+  },
+  "research_lane_percent": {
+    "R": "46.67406021244410942689665161444828089857327576561060832970035330309655",
+    "X": "53.32593978755589057310334838555171910142672423438939167029964669690345"
+  },
+  "research_minutes": {
+    "D": "67.48348496926666666666666666666666666666666666666666666666666666666667",
+    "L": "13.51044865923333333333333333333333333333333333333333333333333333333333",
+    "E": "9.255244171983333333333333333333333333333333333333333333333333333333333",
+    "research": "90.24917780048333333333333333333333333333333333333333333333333333333333"
+  },
+  "floors": {
+    "D60_pass": true,
+    "D60_margin_ns": 449009098156,
+    "research90_pass": true,
+    "research90_margin_ns": 14950668029
+  },
+  "transparent_mode_transfers_ns": {
+    "E_X_to_O": 178633335412,
+    "D_R_to_O": 127455359580,
+    "total_removed_from_research": 306088694992
+  },
+  "paused_recovery_segments_one_based": [
+    {"index": 12, "start_ns": 25194462035672, "end_ns": 25222928559515, "ns": 28466523843},
+    {"index": 46, "start_ns": 27266802816921, "end_ns": 27292575513382, "ns": 25772696461},
+    {"index": 74, "start_ns": 29780228623458, "end_ns": 29814343027967, "ns": 34114404509}
+  ],
+  "ledger_prefix": {
+    "bytes": 237548,
+    "data_rows": 1006,
+    "sha256": "708b045b4e2432a28dc5cff1e897ab9cb1946ff0a3283d33064548aee5c532e1",
+    "matches_source_commit": "6ef27f20e3ac0920953a27dd84d6c91a021ba58f",
+    "preserved": true,
+    "F16_rows_appended_at_first_review": 0
+  },
+  "post_b_1": {
+    "authorized_inherited_entry_minutes_decimal": "801.13038837636666666666666666666666666666666666667",
+    "matches_prior_ND01_actuals": true,
+    "direct_historical_csv_sum_minutes_decimal": "801.1303871431166666666666666666666666666666666666666666666666666666667",
+    "inherited_entry_minus_historical_csv_seconds_decimal": "0.000073995",
+    "historical_reconciliation_difference_predates_F16": true,
+    "baseline_reset_or_rewrite": false,
+    "next_checkpoint_minutes": 960
+  },
+  "initial_snapshot_sha256": {
+    "clocks.jsonl": "5ef18e4815b66d30acb4f841073d41f3e95240e88452e73c322079674ddb50df",
+    "segments.jsonl": "a9734cb5d0eed9cb30337dc06c3e0d1116ea01bf8ed75a825f89c16ee0e4e0bd",
+    "recovery_exclusions.jsonl": "daeecb524e6a48282efefd7561f7798721a06a386d1759cd34fb92d7b05c57e6",
+    "mode_transfers.jsonl": "ee42a428aa7803820fd7931b42370e065aae4ca25b49af93a8774fab790b2d01",
+    "ledger_baseline.json": "a0c3bef004a39d826684118e4363a1fdc7a3bf5ac2a9f5486186c1af03992cc2",
+    "forecast.json": "9237dc0f324fb1d94fc71884761210fb4407a60d194b23cce413ce0855474f4d"
+  },
+  "optional_files_absent_at_first_review": ["adjustments.jsonl", "mode_reclassifications.jsonl"],
+  "reviewer_inspection_failures": [
+    {
+      "action": "rg of historical actuals and a guessed ND01 ledger_audit.json path",
+      "failure": "The guessed ledger_audit.json did not exist; other requested matches returned normally.",
+      "disposition": "Read the existing actuals.json records; no task source or output changed."
+    }
+  ],
+  "limitations": [
+    "Independent reconstruction of recorded accounting does not independently observe every instant of engagement.",
+    "This review is not a mathematical or contribution gate decision.",
+    "The final O interval and appended ledger remain pending at this first review."
+  ]
+}

@@ -7,13 +7,16 @@ methodological synthesis/formal adaptation with small technical application
 extensions; worldwide priority unestablished. A/B retain their scoped passes;
 C/D unattempted. **C3, F11–F14 and C4 are complete at their task scopes and
 protected floors. F15 is complete at frozen-challenge reporting scope, E60
-satisfied at 60.090886 minutes. F16 is selected/unstarted, fresh D60.**
+satisfied at 60.090886 minutes.**
+**F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
 **F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
+The [F16 handoff](#16-f16-mathematical-review-and-allocation) and authoritative
+TODO govern current execution. The next task after F16 closure is a separate
+Gate C assessment; optional F15-ND02 Research90 remains deferred and unstarted.
 The [ND01 handoff](#15-nd01-diagnostic-and-the-next-evidence-choice),
-[F15 handoff](#14-f15-evidence-and-the-next-defense) and authoritative TODO govern
-current execution; optional F15-ND02 Research90 is unstarted. The [C4 close](#12-c4-close-broader-contribution-assessment)
-retains the contribution assessment. Earlier sections preserve their dated
-selections, attribution and forecasts.
+[F15 handoff](#14-f15-evidence-and-the-next-defense) and
+[C4 close](#12-c4-close-broader-contribution-assessment) preserve their dated
+selections, attribution, forecasts and contribution assessments.
 
 ## 1. Selected question and the distinction we will test
 
@@ -670,8 +673,8 @@ does not establish global priority or a novel neural null. R-N01-01 stays closed
 at that bounded scope, subject to the actual comparison and argument challenge
 in F16. A/B retain their scoped passes and C/D remain unattempted.
 
-**Next recommendation: F16, fresh D60, original central/high total engaged
-estimates 120/240 minutes.** Start it only in its own task, with a fresh
+**At F15 close, the next recommendation was F16, fresh D60, original central/high total engaged
+estimates 120/240 minutes.** That prospective recommendation was to start it only in its own task, with a fresh
 mode/lane forecast; new literature work is L in addition to D60. The explicit
 targets are source authority and current reception, preservation of the future
 consumer's joint information, the strongest ordinary combined baseline, and
@@ -716,8 +719,8 @@ improved development interventions still do not supply a complete joint
 two-cost abstraction. Technical superposition and unique utility recovery
 are not established by this diagnostic.
 
-**F16 remains the recommended next project task: fresh D60, unstarted**, with
-its original 120/240-minute estimates and a new mode/lane forecast at start.
+**At ND01 close, F16 was the recommended next project task: fresh D60, unstarted**,
+with its original 120/240-minute estimates and a new mode/lane forecast at start.
 The priority is a stronger defense of the source/consumer/reception arguments,
 ordinary combined baseline, exact C4-S difference, and present neural scope.
 C4-S remains the bounded supported synthesis/formal-adaptation/application
@@ -735,3 +738,72 @@ before new validation; save all five alignments first. The
 is prospective. It is a named evidence option, not an extension of the current
 study or a replacement for F16's defense. The existing F15-EXT-01 acquisition
 proposal also remains unstarted.
+
+
+## 16. F16 mathematical review and allocation
+
+**F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
+October 5, 2026 UTC. The [principal review](derivations/07_adversarial_review.md)
+and [work record](work_logs/F16_2026-10-05_S1.md) control its protected
+D60/Research90, final totals and closure. Earlier close totals remain historical;
+POST-B-1 continues from ND01 without a reset. No concurrent delegated work is
+credited to the principal clock.
+
+The reconstructed soundness/completeness and revision arguments survive the
+examined objections. **F16-R01** corrects the claim that C4-A1's exact
+three-procedure midpoint predictions might be incoherent across orders:
+under that result's equal-price and `M>0` assumptions, a compatible law always
+realizes them. Its sharp radius is unchanged. The separate
+[F16-C1 extension](derivations/10_f16_coherent_recovery.md) constructs a
+compatible law at the unrestricted **common** minimax radius for every full
+exact equal-old-price summary fiber, all `k>=2`, `M>=0`, for separately applied
+single-price edits. Singleton uncertainty
+determines that radius. Extra source restrictions can create a coherence cost;
+the decoded law remains an estimate with a query-specific guarantee.
+
+**C4-S remains SUPPORTED at bounded modest synthesis/application scope.**
+Its technical content is the explicit reset-cost retention, repair and
+approximation consequences. Incremental certificate checking and generic
+optimal recovery already supply much of the architecture, and the strongest
+ordinary comparator can implement the complete service and the new decoder.
+The new construction modestly strengthens the local application without
+establishing worldwide priority, a generally faster reasoner, deployment
+calibration or a learned causal utility representation. The six-field
+assessment is in [the contribution review](contribution_review.md#11-f16-mathematical-review-and-contribution-disposition).
+
+**After F16 closes, select a separate Gate C assessment.** That task must
+assess the actual gate conditions and any remaining evidence obligations; F16
+does not declare C/D passed or attempted, start F17, or assemble the paper.
+No contribution recurrence is triggered merely by ordinary reproducibility
+or the neural null. If a closer source or a proof defect displaces the actual
+technical difference, reopen **R-N01-01/F16-COMP60**: protected **D+L60**, central
+D30/L30/E0/O10=70 engaged minutes, high D45/L45/E0/O15=105. Its target is an
+explicit theorem-by-theorem reduction against the closest result, retention
+or rejection of each specialized consequence, and a six-field supported
+surviving claim or a concrete new source/consumer question. The
+[separate review](work_logs/F16_2026-10-05_S1/reviews/contribution_review.md#7-recurrence-and-closure-conditions)
+preserves its scope and acceptance conditions. Include F16-C1 if the challenge
+concerns that newly added consequence.
+
+**F15-ND02 is optional, deferred and unstarted.**
+[OPP-02](opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2)
+and the TODO place this Research90 diagnostic after F16 or later if desired.
+It would fix one common geometry on the same five networks, freeze and save
+all five alignments before new validation, and test joint semantic behavior
+with two donors and repeated assignments. Ordinary prediction training does
+not require clean eight-neuron expected-cost blocks; algebraic commutation by
+construction would not itself demonstrate a learned joint representation.
+This is an available later evidence question, not a requirement to obtain a
+positive neural result before Gate C.
+
+For broader practical scope, the unstarted F15-EXT-01 Research90 acquisition
+proposal remains available separately. A jointly uncertain old/new source and
+a decision-specific acquisition policy could add a consequential application
+while strengthening comparison with generic recovery and cheap stability
+controls. Neither optional route runs in F16. The 4/8/16/32-hour effort ladder
+continues to require new scope and stronger defense together, with explicit
+selection and prospective controls before new evaluation.
+
+Signed: **ChatGPT (GPT-6 Astra Pro)**, delegated F16 documentation contributor,
+synthesizing the principal derivation and attributed contribution reviews;
+concurrent principal-clock credit zero.

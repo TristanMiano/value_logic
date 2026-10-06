@@ -8,8 +8,11 @@ Recorded research: 60.336817 minutes. [Work and validation](work_logs/C4_2026-10
 **Current handoff, October 5, 2026 UTC / America/Los_Angeles:** F14 and F15 retain
 their completed scopes and protected floors. **F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
 The [ND01 handoff](#10-nd01-neural-diagnostic-with-contribution-scope-preserved)
-records the separately frozen development evidence. **F16 is selected/unstarted,
-fresh D60; optional F15-ND02 Research90 is unstarted.**
+records the separately frozen development evidence. **F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
+The [F16 handoff](#11-f16-mathematical-review-and-contribution-disposition)
+records the current bounded assessment. After F16 closure, the next task is a
+separate Gate C assessment; C/D remain unattempted. Optional F15-ND02
+Research90 remains deferred and unstarted.
 The C4 assessment and its original selection/effort ladder below remain historical
 C4 work by Codex (GPT-6). The [F14 handoff](#8-f14-handoff-without-revising-c4s-claim)
 records the later contribution by ChatGPT (GPT-6 Astra Pro). The
@@ -428,7 +431,7 @@ unknown, and no scientific stage was rerun. This permits saved-unit analysis
 with an explicit provenance qualification rather than a claim that all
 original aggregate storage was intact.
 
-**Recommend F16 next; it remains unstarted, as do F17 and Gates C/D.** Its
+**At F15 close, F16 was recommended next; F16/F17 were unstarted and C/D unattempted.** Its
 fresh D60 should reconstruct the load-bearing arguments and strongest ordinary
 combination, then challenge the exact C4-S difference. If that difference is
 displaced, reopen R-N01-01 with a concrete 60/90-minute source comparison or
@@ -464,7 +467,7 @@ the neural probe; it does not establish a new general interpretability result
 or worldwide priority. The original retention results and the unavailable
 close-source limitation remain unchanged.
 
-**Recommend F16 next, fresh D60, unstarted.** Its independent reconstruction
+**At ND01 close, F16 was recommended next, fresh D60, unstarted.** Its independent reconstruction
 should challenge the exact C4-S difference and the narrower neural reading.
 Optional **F15-ND02, Research90**, would test a joint two-cost abstraction with
 declared geometry, matched controls, repeated assignments and two donors; it
@@ -472,3 +475,86 @@ is unstarted. If F16 displaces the meaningful C4-S difference, reopen R-N01-01
 with a concrete 60/90-minute evidence target. A/B retain their scoped passes;
 C/D remain unattempted. Broader neural scope should follow stronger defense,
 and POST-B-1 continues without a reset.
+
+
+## 11. F16 mathematical review and contribution disposition
+
+**F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
+October 5, 2026 UTC. The [principal adversarial review](derivations/07_adversarial_review.md)
+records fresh self-reconstruction and separately assigned checks of the core,
+price-family arguments, implementation and strongest ordinary combination.
+The reviewers are attributed instances of the same model family, with disclosed
+source exposure; this is not external human peer review. The
+[F16 work record](work_logs/F16_2026-10-05_S1.md) controls D60/Research90,
+resource records and final task closure. No later gate is attempted here.
+
+**F16-R01 corrects an overbroad interpretation, rather than the sharp A1 bound.**
+For exact `k=3`, equal old prices and `M>0`, all revised-coordinate interval
+midpoints admit one compatible law. The original warning and dated correction
+are preserved in [C4 §10](derivations/09_c4_price_revision.md#10-sharp-approximation-from-an-old-summary-an-optional-extension).
+That derivation is outside both experimental freezes. The frozen files, F15's
+68 useful retention episodes and 0/5 complete neural outcomes, ND01's records,
+and the documented damaged aggregate with its separate exact recovery remain
+unchanged; see the [integrity audit](work_logs/F16_2026-10-05_S1/reviews/integrity_review.md).
+
+**F16-C1 supplies a further constructive result.** For the **full exact
+equal-old-price summary fiber**, at every `k>=2`, `M>=0`, a mixture of the
+singleton-extremizing endpoint and adjacent-level laws produces one compatible
+law attaining the unrestricted common minimax radius for separately applied
+single-price edits. Singleton width controls
+all proper-prefix widths. This resolves a compatible-answer question that a
+generic center LP poses without automatically settling. It does not require
+every individual coordinate's own midpoint, and the derived extra-source
+counterexample shows why added convex restrictions need a separate analysis.
+The [proof and scope](derivations/10_f16_coherent_recovery.md) include a simpler
+global-radius formula; its arithmetic count is not an end-to-end speed result.
+
+| Contribution field | F16 disposition |
+|---|---|
+| Object | The specified revisable correlated reset-cost application, with explicit source, future numeric/decision consumer and current-request receipt contracts. |
+| Type | Modest synthesis/formal adaptation and application, with small specialized mathematical extensions; generic certificate and optimal-recovery methods are established. |
+| Delta | Explicit price-family retention and actual-mean repair requirements, sharp specialized approximation consequences, and now a compatible decoder at the common minimax radius throughout the full exact equal-price fiber family. |
+| Magnitude | A substantive local extension of modest overall size. The new theorem improves what is understood and constructed within this model; it does not supply new general inference power or a new theory of utility. |
+| Evidence | Fresh proof reconstruction, explicit attaining laws and counterexamples, separately reviewed upper/lower inequalities, bounded exact checks, strong ordinary controls, preserved F15 application outcomes and honest neural negatives. |
+| Comparison scope | The named inspected primary comparisons, including incremental abstraction-carrying code and generic optimal recovery, plus the documented limited Choquet-identifiability reading. The full 2022 identifiability theorem remains unavailable; worldwide priority is unestablished. |
+
+**C4-S remains SUPPORTED at this bounded scope.** The contribution must be
+stated through the concrete application consequences. Incremental
+abstraction-carrying code makes a standalone novelty claim for the broad
+revision/retention/reception architecture untenable relative to the inspected
+comparison. Ordinary exact optimization with the same source and permissible
+measurements can supply the complete service, preserve joint decision
+information, use the new decoder and emit the same received native proofs.
+This limits exclusivity and performance claims; it does not displace the
+eligible specialized application. A correct result and a satisfied time floor
+remain different from a supported contribution or a gate decision.
+
+The neural interpretation also remains narrow. **Ordinary prediction training
+gives no particular reason to organize each expected cost in one clean
+eight-neuron block.** Mixed, distributed or relative-cost computations are
+plausible alternatives; technical superposition is not established by these
+results. ND01's improved individual interventions do not establish a complete
+joint abstraction or a unique utility representation. Neither positive neural
+support nor superiority to ordinary arithmetic is required for C4-S, and the
+null is not automatically a novel empirical finding.
+
+**After F16 closure, the next task is a separate Gate C assessment.** C/D
+remain unattempted, F17 is unstarted, and optional **F15-ND02, Research90** is
+deferred and unstarted in [OPP-02](opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2)
+and the TODO. It could be selected after F16 or later to test a fixed joint
+geometry with two donors, matched controls, all five alignments saved before
+validation, and semantic outcomes distinct from algebra imposed by construction.
+
+No mandatory contribution recurrence is triggered by this review. A precise
+closer antecedent or a defect displacing the surviving technical consequence
+would reopen **R-N01-01/F16-COMP60**, protected D+L60 with D30/L30 centrally,
+70/105 total engaged-minute central/high forecasts including administration.
+Its concrete target is a line-by-line reduction, a supported six-field residue
+or an explicit unsupported/displaced result and named source/consumer question;
+see [allocation and acceptance](contribution_plan.md#16-f16-mathematical-review-and-allocation).
+Broader acquisition or neural scope remains an optional separately selected
+90-minute evidence chunk, balancing new capability with stronger comparison.
+
+Signed: **ChatGPT (GPT-6 Astra Pro)**, delegated F16 documentation contributor,
+synthesizing the principal review and attributed mathematical/contribution
+checks; concurrent principal-clock credit zero.

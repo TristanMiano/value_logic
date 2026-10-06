@@ -1,4 +1,4 @@
-# F11–F14 producer, case studies, revision controls and protocol validation
+# Phase-two verification: producer, experiments and adversarial review
 
 **F11 and F12 complete at their task scopes; both E60 floors satisfied.** Contributor: **Codex (GPT-6)**,
 October 3, 2026 local / October 4 UTC. This package implements the
@@ -15,14 +15,51 @@ runs crashed after bounded retries, and no final aggregate pass is claimed.
 **C4 is complete at contribution-review scope**, research60 satisfied.
 Its [assessment](../contribution_review.md) supports a modest methodological
 synthesis and small technical applications relative to checked antecedents;
-worldwide priority is unestablished. **F14 is now complete at prospective-freeze
-scope, research90 satisfied; F15 is selected/unstarted, E60.** Its implementation
-is in [experiments](../experiments/protocol.md), with 78 passing focused tests,
+worldwide priority is unestablished.
+
+**F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
+The [adversarial review](../derivations/07_adversarial_review.md) records the
+fresh proof reconstruction, targeted implementation challenges and exact
+arithmetic checks. **F16-R01** corrects C4-A1's three-procedure midpoint
+interpretation without changing its sharp radius. **F16-C1** supplies an
+explicit compatible law at the unrestricted common minimax radius for every
+full exact equal-old-price summary fiber (`k>=2`, `M>=0`) for separately applied
+single-price edits, with the additional
+source and consumer limits stated in the [derivation](../derivations/10_f16_coherent_recovery.md).
+The [F16 work record](../work_logs/F16_2026-10-05_S1.md) controls its protected
+D60/Research90 and final accounting. C4-S remains a bounded modest
+synthesis/application; no worldwide-priority or general performance claim is
+established. After F16 closure the next task is a separate Gate C assessment.
+C/D remain unattempted; F17 and optional deferred F15-ND02 remain unstarted.
+
+F15 completed frozen-challenge reporting with E60 satisfied, and
+[its results](../experiments/results.md) preserve 68 distinct useful retention
+episodes and 0/5 complete neural intervention outcomes. The separately frozen
+[ND01 diagnostic](../experiments/F15_ND01_results.md) completed Research90 and
+found improved partial interventions without retraining or establishing a joint
+utility representation. Ordinary prediction training does not require clean
+eight-neuron expected-cost blocks. [OPP-02](../opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2)
+records the optional, unstarted ND02 continuation after F16 or later if selected.
+F16 verified both saved freezes and preserved the previous attempts, including
+the documented damaged F15 aggregate and its exact separate recovery;
+[the integrity audit](../work_logs/F16_2026-10-05_S1/reviews/integrity_review.md)
+is a read-only check, not another experimental run.
+
+**Historical F14 validation.** F14 is complete at prospective-freeze scope,
+research90 satisfied. Its implementation is in
+[experiments](../experiments/protocol.md), with 78 passing focused tests,
 [configuration](../experiments/config.v1.json) and a byte-verified
 [manifest](../experiments/freeze.v1.json). Full-count neural development did not
-meet its specified intervention criterion. This is readiness evidence only;
-no F15 execution or Gate C/D attempt occurred.
+meet its specified intervention criterion. At F14 close, this was readiness
+evidence only: no F15 execution or Gate C/D attempt had occurred.
 [F14 timing, broader-suite limits and evidence](../work_logs/F14_2026-10-04_S1.md).
+The broader F14 run had two legacy missing-PyTorch import errors and therefore
+was not a full-repository pass. The separately recorded Windows limitations
+were six CRLF-altered older dependencies, three native access violations in
+focused-suite attempts, and a deterministic backslash/forward-slash comparison
+in `test_dependency_closure_includes_parent_initializers_and_relative_imports`.
+These are distinct limitations, not a hardware diagnosis. Frozen hashes and
+that test remain unchanged; the clean Linux runtime was used for F15.
 
 ## C4 ordinary mathematical controls
 
@@ -197,8 +234,8 @@ records three builds and nine uses; serialized coefficient catalogues occupy
 shared-process development observations, with caches not reset. They establish
 neither amortized superiority nor statistically reliable timing differences.
 F12's completed studies above measure setup, source/proof storage, checking,
-updates, fallback and decision quality at matched guarantees. No held-out
-evaluation has occurred.
+updates, fallback and decision quality at matched guarantees. At F12 close,
+no held-out evaluation had occurred; the later frozen F15 result is linked above.
 
 ## Validation and limits
 
@@ -211,9 +248,10 @@ in three attempts; its broad coverage is unverified. Logs are retained in the
 work record. The earlier C3 full-suite pass is historical, not validation of
 this package. The host failures do not identify a hardware or cooling cause.
 
-This review and implementation were performed by the same assistant; the
+The F11 review and implementation were performed by the same assistant; the
 separate reference is an implementation distinction, not independent authorship.
 Contribution scope, practical advantage, empirical premise validity, general
 completeness and phase-two completion remain separate claims. C4 supports only
-the modest contribution described above. F13 and C4 are complete;
-F14 is complete at prospective-freeze scope; next is **F15**, selected and unstarted. C/D remain unattempted.
+the modest contribution described above. F13–F15, C4 and ND01 retain their
+completed scopes; F16's current handoff is above. After F16 closure the next
+task is a separate Gate C assessment. C/D remain unattempted.

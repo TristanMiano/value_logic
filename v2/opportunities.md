@@ -1,7 +1,10 @@
 # Research opportunity register
 
 Owner: the active research agent, subject to DIR01 and the research protocol.
-Updated: October 3 local / October 4 UTC, 2026, through F11/C1 and the first four-hour checkpoint.
+Last reviewed: October 5, 2026 UTC, through completed F16.
+**F16 is complete; a separate Gate C assessment is next and unattempted.**
+F15-ND02 remains optional, deferred and unstarted. Earlier dated updates below are historical;
+this review refines OPP-02 without reranking the standing opportunities.
 These are **ranked leads**, not proven gaps or claims of first discovery.
 The relevant primary-source descriptions and inspection limits are in
 [literature/directional_leads.md](literature/directional_leads.md).
@@ -84,17 +87,42 @@ appropriate; hold out intervention cases. A deliberately compiled network can
 check the method but is not evidence of emergent structure. Record partial or
 negative results rather than choosing a new test after seeing the answer.
 
-**Allocation.** F04 design probe central 20 / high 40 minutes; no training in this
-direction amendment. Compute and data costs must be forecast separately before
-execution. Status: [F04 design](experiments/F04_neural_probe_design.md) and analytical
-reparameterization/unused-neuron controls exist; training and alignment search
-are unstarted. Priority stays 2 pending causal evidence, not decoder accuracy.
+**Original F04 allocation/status (historical).** Design probe central 20 / high
+40 minutes; that direction amendment did not include training. Compute and data
+costs required separate forecasts before execution. At that stage,
+[F04 design](experiments/F04_neural_probe_design.md) and analytical
+reparameterization/unused-neuron controls existed; training and alignment search
+were unstarted. Priority stayed 2 pending causal evidence, not decoder accuracy.
 
 **S2 design refinement.** A positive input-dependent common scaling of action
 costs preserves pointwise optimal outputs but can change isolated-cost
 interchange predictions. Add the prospective competing high-level description
 before any held-out test; do not force an absolute cost representation through
 training labels. Existing hidden-neuron gauge controls remain separate.
+
+**Current status — October 5, 2026 UTC.** F15 and F15-ND01 are complete;
+F15's original **0/5 complete identity intervention support is unchanged**.
+ND01 found better individual interventions without retraining and showed that
+known cost layouts can miss the complete endpoint's control-advantage
+requirement. It did not establish a joint cost representation. Ordinary training
+does not require clean eight-neuron cost blocks: the task can depend only on
+relative costs. Technical superposition remains unestablished. See the
+[ND01 evidence and interpretation](experiments/F15_ND01_results.md).
+
+**Optional deferred continuation.** **F15-ND02, Research90, is unstarted** and
+available after F16 or later if selected. On the same five unchanged networks,
+jointly select a representation of both cost variables in one common, fixed
+subspace geometry. Test held-out single-role and two-donor joint semantic
+outcomes with known-structure calibration and matched controls; distinguish absolute adequacy
+from control superiority. Repeatability and commutation may be guaranteed
+algebraically by the chosen operators, so the scientific target is semantic
+behavior, not the imposed algebra. Before any new validation, freeze geometry
+and normalization, inactive-coordinate treatment, ranks, budgets, selection and
+acceptance rules; fix and save all five fitted alignments. The
+[ND01 follow-up plan](experiments/F15_ND01_results.md#8-contribution-protected-effort-and-recommended-next-work)
+supplies the detailed allocation and scope. Neither this optional continuation
+nor a positive neural result is a prerequisite for Gate C; ND02 is not the
+automatic next task. Contributor for this refinement: **ChatGPT (GPT-6 Astra Pro)**.
 
 ## OPP-03 — Modest reflective evaluation (priority 3; required capability track)
 

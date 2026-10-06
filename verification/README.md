@@ -2,12 +2,22 @@
 
 This directory began as a compact, standard-library Python reference for the finite witness in [`formalism/05a_integration.md`](../formalism/05a_integration.md). It now also tests the Task 20 neural implementation, which requires the frozen NumPy/PyTorch runtime recorded in [`experiments/implementation_v1.json`](../experiments/implementation_v1.json). It remains verification infrastructure rather than a proof-assistant formalization.
 
-Phase two is complete through F14 and C4 at their task scopes; N01 and C3 are
-also complete. C4 met research60 and supports a modest synthesis/application
-contribution relative to checked work; worldwide priority is unestablished.
-F14 met research90 at 90.564634 minutes. F15 is selected/unstarted with E60.
-Gates A/B retain their scoped passes; C/D are unattempted. See [the current TODO](../TODO_v2.md) and
-[C4 scope and tests](../v2/verification/README.md#c4-ordinary-mathematical-controls).
+**F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
+F01–F15, N01, C3 and C4 retain their completed task scopes; F15 and ND01 retain
+their recorded protected floors. The [F16 adversarial review](../v2/derivations/07_adversarial_review.md)
+and [work record](../v2/work_logs/F16_2026-10-05_S1.md) distinguish the new
+mathematical/implementation checks from the preserved frozen experiments.
+F16-R01 corrects C4-A1's three-procedure midpoint-coherence warning;
+[F16-C1](../v2/derivations/10_f16_coherent_recovery.md) supplies a compatible
+common-minimax decoder on the full exact equal-price summary fiber for
+separately applied single-price edits.
+C4-S remains a modest supported synthesis/application relative to checked work;
+worldwide priority is unestablished. A/B retain their scoped passes; C/D are
+unattempted. After F16 closure the next task is a separate Gate C assessment;
+F17 and optional deferred F15-ND02 remain unstarted. See
+[the current TODO](../TODO_v2.md) and [phase-two verification](../v2/verification/README.md).
+
+The following F14 validation is historical development evidence.
 F14's [protocol](../v2/experiments/protocol.md) uses CPython 3.12 and its separate
 [NumPy 2.3.5 requirement](../v2/experiments/requirements-f14.txt); it does not
 replace the phase-one neural runtime. Its 78 focused tests passed:
@@ -22,6 +32,19 @@ F14/F15 work, as specified in the protocol. The broader F14 repository attempt
 had 1,638 successful cases and two legacy neural module-import errors because
 PyTorch was unavailable. This is not a full-repository pass; those module bodies
 did not execute. [F14 work and preserved logs](../v2/work_logs/F14_2026-10-04_S1.md).
+The recorded Windows follow-up had six older dependency files with CRLF
+byte differences, three focused-suite native access violations, and the separate
+deterministic path-portability defect in
+`test_dependency_closure_includes_parent_initializers_and_relative_imports`
+(backslash paths compared with forward-slash strings). The crashes do not
+identify a hardware cause. Use an unchanged clean Linux checkout for the frozen
+runtime; no registered hash or frozen test was changed to accommodate Windows.
+F15's completed Linux execution is in [results](../v2/experiments/results.md),
+and the separately frozen [ND01 diagnostic](../v2/experiments/F15_ND01_results.md)
+used the saved networks without retraining. F16's read-only integrity review
+verified both freezes and preserved the original damaged F15 aggregate with its
+already documented separate exact recovery. See the
+[integrity record](../v2/work_logs/F16_2026-10-05_S1/reviews/integrity_review.md).
 The validation records below retain their historical scopes.
 
 Gate B's new wrapper runs **19 hostile tests**, all passing locally. Run

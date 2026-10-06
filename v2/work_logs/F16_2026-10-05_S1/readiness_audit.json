@@ -1,0 +1,934 @@
+{
+  "F15_ND02_started": false,
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "current_changed_or_new_files": [
+    "README.md",
+    "TODO_v2.md",
+    "v2/README.md",
+    "v2/claim_ledger.md",
+    "v2/contribution_plan.md",
+    "v2/contribution_review.md",
+    "v2/derivations/07_adversarial_review.md",
+    "v2/derivations/09_c4_price_revision.md",
+    "v2/derivations/10_f16_coherent_recovery.md",
+    "v2/opportunities.md",
+    "v2/project_spec.md",
+    "v2/time_ledger.csv",
+    "v2/verification/README.md",
+    "v2/work_logs/F16_2026-10-05_S1.md",
+    "v2/work_logs/F16_2026-10-05_S1/accounting_postappend_review.json",
+    "v2/work_logs/F16_2026-10-05_S1/accounting_postappend_review.md",
+    "v2/work_logs/F16_2026-10-05_S1/accounting_review.json",
+    "v2/work_logs/F16_2026-10-05_S1/accounting_review.md",
+    "v2/work_logs/F16_2026-10-05_S1/actuals.json",
+    "v2/work_logs/F16_2026-10-05_S1/clock.py",
+    "v2/work_logs/F16_2026-10-05_S1/clock_state.json",
+    "v2/work_logs/F16_2026-10-05_S1/clocks.jsonl",
+    "v2/work_logs/F16_2026-10-05_S1/close_accounting.py",
+    "v2/work_logs/F16_2026-10-05_S1/evidence_summary_attempt1.json",
+    "v2/work_logs/F16_2026-10-05_S1/forecast.json",
+    "v2/work_logs/F16_2026-10-05_S1/handoff_checks/attempt1/result.json",
+    "v2/work_logs/F16_2026-10-05_S1/handoff_checks/attempt1/validator.py",
+    "v2/work_logs/F16_2026-10-05_S1/handoff_checks/attempt2/validator.py",
+    "v2/work_logs/F16_2026-10-05_S1/inspection_failures.jsonl",
+    "v2/work_logs/F16_2026-10-05_S1/ledger_append.csv",
+    "v2/work_logs/F16_2026-10-05_S1/ledger_baseline.json",
+    "v2/work_logs/F16_2026-10-05_S1/ledger_integrity.json",
+    "v2/work_logs/F16_2026-10-05_S1/math_checks/attempt1/manifest.json",
+    "v2/work_logs/F16_2026-10-05_S1/math_checks/attempt1/records.jsonl",
+    "v2/work_logs/F16_2026-10-05_S1/math_checks/attempt1/source.py",
+    "v2/work_logs/F16_2026-10-05_S1/math_checks/attempt1/summary.json",
+    "v2/work_logs/F16_2026-10-05_S1/math_checks/attempt1_stderr.txt",
+    "v2/work_logs/F16_2026-10-05_S1/math_checks/attempt1_stdout.txt",
+    "v2/work_logs/F16_2026-10-05_S1/math_checks/check_math.py",
+    "v2/work_logs/F16_2026-10-05_S1/math_checks/design.json",
+    "v2/work_logs/F16_2026-10-05_S1/math_checks/execution_record.json",
+    "v2/work_logs/F16_2026-10-05_S1/math_checks/interpretation.md",
+    "v2/work_logs/F16_2026-10-05_S1/mode_transfers.jsonl",
+    "v2/work_logs/F16_2026-10-05_S1/primary_reading.md",
+    "v2/work_logs/F16_2026-10-05_S1/recovery_exclusions.jsonl",
+    "v2/work_logs/F16_2026-10-05_S1/recovery_notes.md",
+    "v2/work_logs/F16_2026-10-05_S1/render_actuals.py",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/coherent_lower_audit.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/coherent_upper_audit.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/contribution/choquet/source_review.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/contribution/choquet_normalization_addendum.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/contribution/coherent_extension_assessment.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/contribution/ordinary_baseline.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/contribution/source_record.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/contribution_review.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/core/additional_source_coherence_gap.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/core/adversarial_probes.py",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/core/adversarial_results.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/core/k3_midpoint_coherence.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/core/principal_notes_check.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/core/source_uncertainty_boundary_audit.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/core/withdrawal_addendum.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/core_initial.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/core_review.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation/attempt1.jsonl",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation/attempt1.stderr.log",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation/attempt1.stdout.log",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation/attempt1_source_manifest.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation/attempt1_summary.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation/commands_and_bounds.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation/probes.py",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation/supplement.py",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation/supplement1.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation/supplement1.stderr.log",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation/supplement1.stdout.log",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/audit_attempt1.end.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/audit_attempt1.start.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/audit_attempt1.stderr.log",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/audit_attempt1.stdout.log",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/audit_readonly.py",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/f14_verify_attempt1.end.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/f14_verify_attempt1.start.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/f14_verify_attempt1.stderr.log",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/f14_verify_attempt1.stdout.log",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/inspection_failures.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/integrity_result.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/inventory_after.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/inventory_before.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/nd01_verify_attempt1.end.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/nd01_verify_attempt1.start.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/nd01_verify_attempt1.stderr.log",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/nd01_verify_attempt1.stdout.log",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/review_artifact_manifest.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/source_hashes.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity/status_inventory.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/integrity_review.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price/coherent_center_search/attempt1/manifest.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price/coherent_center_search/attempt1/records.jsonl",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price/coherent_center_search/attempt1/source.py",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price/coherent_center_search/attempt1/summary.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price/coherent_center_search/search.py",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price/coherent_lemma/proposed_proof_at_stop.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price/reconstruct_checks.py",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price/reconstruct_checks_output.json",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price_assumption_clarification.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price_coherent_center_review.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price_initial.md",
+    "v2/work_logs/F16_2026-10-05_S1/reviews/price_review.md",
+    "v2/work_logs/F16_2026-10-05_S1/root_reconstruction.md",
+    "v2/work_logs/F16_2026-10-05_S1/segments.jsonl",
+    "v2/work_logs/F16_2026-10-05_S1/source_uncertainty_boundary.md",
+    "v2/work_logs/F16_2026-10-05_S1/summarize_evidence.py",
+    "v2/work_logs/F16_2026-10-05_S1/validate_handoff.py",
+    "verification/README.md"
+  ],
+  "freezes": [
+    {
+      "path": "v2/experiments/freeze.v1.json",
+      "registered_files_verified": 34,
+      "sha256": "b860021d3cb26705196b75d6b13277135d0c9220c266b21e05d7d11e719b2f9c"
+    },
+    {
+      "path": "v2/experiments/neural_diagnostic_v1/freeze.json",
+      "registered_files_verified": 47,
+      "sha256": "9c15af55b83d7edf134542a9c70bcc0f087c6f4f6491f993361a27493b5cf24c"
+    }
+  ],
+  "gates_C_D_attempted": false,
+  "ledger_final_sha256": "2ddbbff7ccbc4c76bd15f3c26a58273be562ba21f6967b9d1d87feab7958c8fa",
+  "new_relative_links_checked": [
+    {
+      "exists": true,
+      "file": "README.md",
+      "target": "v2/derivations/07_adversarial_review.md"
+    },
+    {
+      "exists": true,
+      "file": "README.md",
+      "target": "v2/derivations/10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "README.md",
+      "target": "v2/opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2"
+    },
+    {
+      "exists": true,
+      "file": "README.md",
+      "target": "v2/work_logs/F16_2026-10-05_S1.md"
+    },
+    {
+      "exists": true,
+      "file": "TODO_v2.md",
+      "target": "v2/derivations/07_adversarial_review.md"
+    },
+    {
+      "exists": true,
+      "file": "TODO_v2.md",
+      "target": "v2/derivations/10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "TODO_v2.md",
+      "target": "v2/opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2"
+    },
+    {
+      "exists": true,
+      "file": "TODO_v2.md",
+      "target": "v2/work_logs/F16_2026-10-05_S1.md"
+    },
+    {
+      "exists": true,
+      "file": "TODO_v2.md",
+      "target": "v2/work_logs/F16_2026-10-05_S1/actuals.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/README.md",
+      "target": "derivations/07_adversarial_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/README.md",
+      "target": "derivations/10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/README.md",
+      "target": "opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2"
+    },
+    {
+      "exists": true,
+      "file": "v2/README.md",
+      "target": "work_logs/F16_2026-10-05_S1.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/claim_ledger.md",
+      "target": "derivations/07_adversarial_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/claim_ledger.md",
+      "target": "derivations/10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/claim_ledger.md",
+      "target": "work_logs/F16_2026-10-05_S1.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_plan.md",
+      "target": "contribution_review.md#11-f16-mathematical-review-and-contribution-disposition"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_plan.md",
+      "target": "derivations/07_adversarial_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_plan.md",
+      "target": "derivations/10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_plan.md",
+      "target": "opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_plan.md",
+      "target": "work_logs/F16_2026-10-05_S1.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_plan.md",
+      "target": "work_logs/F16_2026-10-05_S1/reviews/contribution_review.md#7-recurrence-and-closure-conditions"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_review.md",
+      "target": "contribution_plan.md#16-f16-mathematical-review-and-allocation"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_review.md",
+      "target": "derivations/07_adversarial_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_review.md",
+      "target": "derivations/09_c4_price_revision.md#10-sharp-approximation-from-an-old-summary-an-optional-extension"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_review.md",
+      "target": "derivations/10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_review.md",
+      "target": "opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_review.md",
+      "target": "work_logs/F16_2026-10-05_S1.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/contribution_review.md",
+      "target": "work_logs/F16_2026-10-05_S1/reviews/integrity_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../decisions/2026-10-04_novelty_scope.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/evidence_summary_attempt1.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/math_checks/interpretation.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/primary_reading.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/coherent_lower_audit.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/coherent_upper_audit.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/contribution/coherent_extension_assessment.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/contribution/ordinary_baseline.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/contribution/source_record.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/contribution_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/core/source_uncertainty_boundary_audit.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/core_initial.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/core_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/implementation/commands_and_bounds.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/implementation_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/integrity_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/price_initial.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/price_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/root_reconstruction.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/source_uncertainty_boundary.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "../work_logs/F16_2026-10-05_S1/summarize_evidence.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "09_c4_price_revision.md#10-sharp-approximation-from-an-old-summary-an-optional-extension"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/07_adversarial_review.md",
+      "target": "10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/09_c4_price_revision.md",
+      "target": "07_adversarial_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/09_c4_price_revision.md",
+      "target": "10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/10_f16_coherent_recovery.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/core/source_uncertainty_boundary_audit.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/derivations/10_f16_coherent_recovery.md",
+      "target": "../work_logs/F16_2026-10-05_S1/source_uncertainty_boundary.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/opportunities.md",
+      "target": "experiments/F15_ND01_results.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/opportunities.md",
+      "target": "experiments/F15_ND01_results.md#8-contribution-protected-effort-and-recommended-next-work"
+    },
+    {
+      "exists": true,
+      "file": "v2/project_spec.md",
+      "target": "derivations/07_adversarial_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/project_spec.md",
+      "target": "derivations/10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/project_spec.md",
+      "target": "opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2"
+    },
+    {
+      "exists": true,
+      "file": "v2/project_spec.md",
+      "target": "work_logs/F16_2026-10-05_S1.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/verification/README.md",
+      "target": "../derivations/07_adversarial_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/verification/README.md",
+      "target": "../derivations/10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/verification/README.md",
+      "target": "../experiments/F15_ND01_results.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/verification/README.md",
+      "target": "../experiments/results.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/verification/README.md",
+      "target": "../opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2"
+    },
+    {
+      "exists": true,
+      "file": "v2/verification/README.md",
+      "target": "../work_logs/F16_2026-10-05_S1.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/verification/README.md",
+      "target": "../work_logs/F16_2026-10-05_S1/reviews/integrity_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "../derivations/07_adversarial_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "../derivations/10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "../opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/accounting_postappend_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/accounting_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/actuals.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/evidence_summary_attempt1.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/forecast.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/inspection_failures.jsonl"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/ledger_integrity.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/primary_reading.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/recovery_notes.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/reviews/integrity_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/source_uncertainty_boundary.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/summarize_evidence.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1.md",
+      "target": "F16_2026-10-05_S1/validate_handoff.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/accounting_postappend_review.md",
+      "target": "accounting_postappend_review.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/accounting_postappend_review.md",
+      "target": "accounting_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/accounting_postappend_review.md",
+      "target": "actuals.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/accounting_postappend_review.md",
+      "target": "ledger_append.csv"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/accounting_postappend_review.md",
+      "target": "ledger_integrity.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/accounting_review.md",
+      "target": "../../../TODO_v2.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/accounting_review.md",
+      "target": "../../RESEARCH_PROTOCOL.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/accounting_review.md",
+      "target": "forecast.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/accounting_review.md",
+      "target": "ledger_baseline.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/primary_reading.md",
+      "target": "reviews/contribution/source_record.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/primary_reading.md",
+      "target": "reviews/contribution_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution/coherent_extension_assessment.md",
+      "target": "../../../../derivations/10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution/coherent_extension_assessment.md",
+      "target": "../coherent_lower_audit.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution/coherent_extension_assessment.md",
+      "target": "../coherent_upper_audit.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution/source_record.md",
+      "target": "choquet/source_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution_review.md",
+      "target": "contribution/choquet/source_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution_review.md",
+      "target": "contribution/choquet_normalization_addendum.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution_review.md",
+      "target": "contribution/ordinary_baseline.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/contribution_review.md",
+      "target": "contribution/source_record.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/core_review.md",
+      "target": "core/adversarial_probes.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/core_review.md",
+      "target": "core/adversarial_results.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/core_review.md",
+      "target": "core_initial.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../checks/f05_semantics.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../checks/f06_inference_rules.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../checks/f06_source_transport.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../checks/f07_soundness.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../derivations/03_soundness.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../derivations/03a_soundness_scope_and_use.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../verification/F12_results.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../verification/README.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../verification/catalogue.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../verification/experiment.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../verification/producer.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../verification/program.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../verification/program_control.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../verification/program_reference.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../verification/receipts.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../verification/reference.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "../../../verification/selected_cache.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "implementation/attempt1.jsonl"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "implementation/attempt1.stderr.log"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "implementation/attempt1.stdout.log"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "implementation/attempt1_source_manifest.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "implementation/attempt1_summary.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "implementation/commands_and_bounds.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "implementation/probes.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "implementation/supplement.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "implementation/supplement1.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "implementation/supplement1.stderr.log"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/implementation_review.md",
+      "target": "implementation/supplement1.stdout.log"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/price_assumption_clarification.md",
+      "target": "price_coherent_center_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/price_assumption_clarification.md",
+      "target": "price_initial.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/price_assumption_clarification.md",
+      "target": "price_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/price_coherent_center_review.md",
+      "target": "price/coherent_lemma/proposed_proof_at_stop.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/price_review.md",
+      "target": "price/reconstruct_checks.py"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/price_review.md",
+      "target": "price/reconstruct_checks_output.json"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/price_review.md",
+      "target": "price_assumption_clarification.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/price_review.md",
+      "target": "price_coherent_center_review.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/reviews/price_review.md",
+      "target": "price_initial.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/root_reconstruction.md",
+      "target": "reviews/core/source_uncertainty_boundary_audit.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/root_reconstruction.md",
+      "target": "source_uncertainty_boundary.md"
+    },
+    {
+      "exists": true,
+      "file": "v2/work_logs/F16_2026-10-05_S1/source_uncertainty_boundary.md",
+      "target": "reviews/core/source_uncertainty_boundary_audit.md"
+    },
+    {
+      "exists": true,
+      "file": "verification/README.md",
+      "target": "../v2/derivations/07_adversarial_review.md"
+    },
+    {
+      "exists": true,
+      "file": "verification/README.md",
+      "target": "../v2/derivations/10_f16_coherent_recovery.md"
+    },
+    {
+      "exists": true,
+      "file": "verification/README.md",
+      "target": "../v2/experiments/F15_ND01_results.md"
+    },
+    {
+      "exists": true,
+      "file": "verification/README.md",
+      "target": "../v2/experiments/results.md"
+    },
+    {
+      "exists": true,
+      "file": "verification/README.md",
+      "target": "../v2/verification/README.md"
+    },
+    {
+      "exists": true,
+      "file": "verification/README.md",
+      "target": "../v2/work_logs/F16_2026-10-05_S1.md"
+    },
+    {
+      "exists": true,
+      "file": "verification/README.md",
+      "target": "../v2/work_logs/F16_2026-10-05_S1/reviews/integrity_review.md"
+    }
+  ],
+  "objection_dispositions": 31,
+  "saved_evidence_inputs_verified": 13,
+  "saved_scientific_files_unchanged": 973,
+  "scope": "Final byte/link/accounting-reference checks; no experiment or suite rerun.",
+  "source_base": "6ef27f20e3ac0920953a27dd84d6c91a021ba58f",
+  "status": "pass",
+  "whitespace_check": {
+    "all_other_changed_files_pass": true,
+    "default_exit_code": 2,
+    "default_output": "v2/work_logs/F16_2026-10-05_S1/math_checks/attempt1_stdout.txt:33: new blank line at EOF.\nv2/work_logs/F16_2026-10-05_S1/reviews/coherent_upper_audit.md:3: trailing whitespace.\n+**Reviewer:** ChatGPT (GPT-6 Astra Pro), agent `/root/f16_coherent_upper_audit`.  \nv2/work_logs/F16_2026-10-05_S1/reviews/coherent_upper_audit.md:4: trailing whitespace.\n+**Date:** October 5, 2026.  \nv2/work_logs/F16_2026-10-05_S1/reviews/coherent_upper_audit.md:5: trailing whitespace.\n+**Assigned scope:** \u00a7\u00a71\u20135 and \u00a78 of `v2/derivations/10_f16_coherent_recovery.md`.  \nv2/work_logs/F16_2026-10-05_S1/reviews/coherent_upper_audit.md:173: trailing whitespace.\n+**Signed:** ChatGPT (GPT-6 Astra Pro), `/root/f16_coherent_upper_audit`, October 5, 2026.  \nv2/work_logs/F16_2026-10-05_S1/reviews/coherent_upper_audit.md:174: trailing whitespace.\n+**Signed nested proof-only check:** ChatGPT (GPT-6 Astra Pro), `/root/f16_coherent_upper_audit/global_radius_check`, \u00a7\u00a71\u20132 and \u00a78.  \nv2/work_logs/F16_2026-10-05_S1/reviews/coherent_upper_audit.md:176: new blank line at EOF.\nv2/work_logs/F16_2026-10-05_S1/reviews/core/source_uncertainty_boundary_audit.md:3: trailing whitespace.\n+**Contributor:** ChatGPT (GPT-6 Astra Pro), delegated separate mathematical check.  \n",
+    "disposition": "Keep intentional Markdown hard breaks in two signed audit snapshots and raw stdout final blank lines byte-identical. These three hash-locked evidence files alone are excepted from the whitespace-only check; all byte, link and accounting checks still apply.",
+    "preserved_snapshot_sha256": {
+      "v2/work_logs/F16_2026-10-05_S1/math_checks/attempt1_stdout.txt": "671b8af080acd1970f29ece7fb1932525f4b9b64e52b159408c877019bd38034",
+      "v2/work_logs/F16_2026-10-05_S1/reviews/coherent_upper_audit.md": "3145feac4e415f7e09f9b6277d3f7bfe8011761b4c9dc0dc2aca69137615e347",
+      "v2/work_logs/F16_2026-10-05_S1/reviews/core/source_uncertainty_boundary_audit.md": "202595ba2202f7295b7f7218d45eb68178eed00851361b16206dd1b6c7a21118"
+    }
+  }
+}

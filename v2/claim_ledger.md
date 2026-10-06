@@ -1,20 +1,21 @@
 # Phase Two Claim Ledger
 
-Current status (October 5, 2026 UTC / America/Los_Angeles): **F01–F15, N01, C3 and C4
-complete at their task scopes; F14 research90 satisfied at 90.564634 minutes;
-F15 complete at frozen-challenge reporting scope, E60 satisfied at 60.090886 minutes;
-F16 selected/unstarted, fresh D60. C4-S supports a modest synthesis/formal adaptation
-with small technical application extensions relative to named inspected work;
-worldwide priority is unestablished. R-N01-01 is closed only at that narrowed
-scope and may reopen at F16.** The F15 entry below records final application,
-neural and artifact dispositions separately from task accounting and novelty.
-**F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
-The dated ND01 entry below records development evidence without changing F15;
-optional F15-ND02 Research90 is unstarted, and F16 remains the fresh D60 priority.
-The F14 entry remains prospective-freeze history. F07 acceptance is the explicit finite-fragment
-soundness theorem, not a permanent core or later gate. Gate A retains its
-foundation-readiness PASS; C/D are unattempted. The dated ledger entries and
-earlier opening below retain historical statuses.
+Current status (October 6, 2026 UTC / October 5 America/Los_Angeles): **F01–F16,
+N01, C3 and C4 complete at their task scopes. F16's fresh D60 is satisfied at
+67.483485 minutes and Research90 at 90.249178 minutes.** C4-S remains
+SUPPORTED as a bounded modest synthesis/formal adaptation with specialized
+application results, after the explicit ordinary-baseline challenge and
+F16-R01 correction. Worldwide priority remains unestablished. R-N01-01 is
+closed at that narrowed scope; a later displacement triggers the named
+F16-COMP60 comparison chunk.
+
+F15 and F15-ND01 outcomes and saved reports remain unchanged. Ordinary training
+does not force a clean eight-neuron cost block; partial intervention success
+and the complete 0/5 outcome establish neither a unique representation nor
+its universal absence. **F15-ND02 Research90 is optional, deferred and unstarted.**
+A/B retain their scoped passes. **The next task is a separate Gate C
+assessment; C/D and F17 remain unattempted.** The dated entries below retain
+their historical statuses; the F16 entry supersedes their old next-task pointers.
 
 ## F10 external-audit disposition — September 30, 2026
 
@@ -1159,3 +1160,49 @@ its historical evidence remains unchanged.
 | F15-ND01-C07 | **Further evidence assigned without a gate pass.** Recommend F16, fresh D60, next and unstarted. Optional F15-ND02 Research90 would test a joint two-cost abstraction with declared geometry, known-structure calibration, matched controls, repeated assignments and two donors. | ND02 is unstarted. F16's fresh review floor is not supplied by ND01 collaboration. Reopen R-N01-01 with a concrete 60/90-minute target if the C4-S difference is displaced. A/B retain scoped passes; C/D remain unattempted. |
 | F15-ND01-C08 | **Whole-box existing-effect compatibility characterized.** Exact activation-difference ranks are 30,30,29,29,29. Four fractional-mask pairs admit mutually orthogonal projector coefficients with the same individual effects; one does not. Thirteen explicit pairs across all four methods have independently checked projector identities. | Post-outcome algebra using saved weights and masks, in the stored Euclidean metric. Inactive-coordinate rescaling can change feasibility without changing ordinary outputs. This does not establish joint semantic adequacy, unique native features, approximate impossibility or a new F15 support count. |
 | F15-ND01-C09 | **Individual tolerance does not transfer automatically to joint assignments.** Under compatible projectors, joint logit error is the sum of the two individual errors minus ordinary base error on the same triple. An exact algebraic example has perfect ordinary output and uniformly acceptable single edits but excessive combined error. | Elementary formal specialization and illustrative counterexample, not a sixth saved network or new evaluation arm. Norm bounds require the actual joint distribution's marginals. The proposed joint experiment remains unstarted. |
+
+## F16 adversarial review dispositions — October 5, 2026 UTC
+
+Contributor: **ChatGPT (GPT-6 Astra Pro)**, with separately attributed same-model
+reviewers. **F16 complete at fresh review scope; D60 satisfied at 67.483485
+minutes and Research90 at 90.249178 minutes.**
+[Principal review](derivations/07_adversarial_review.md),
+[coherent decoder](derivations/10_f16_coherent_recovery.md),
+[work and exact accounting](work_logs/F16_2026-10-05_S1.md).
+This supersedes earlier next-F16 pointers without altering their saved evidence.
+
+| ID | Exact disposition and evidence | Scope and limitation |
+|---|---|---|
+| F16-S01 | Native soundness, directed-unit completeness, current reception, revision and bounded applicability survive the 31 explicitly disposed objections. | Fresh principal reconstruction plus separate same-model checks with disclosed exposure; no external-human review, proof-assistant verification or later gate. Completeness remains reduct-relative and does not imply finite-budget search success. |
+| F16-R01 | The old k3 A1 midpoint-incoherence warning was overbroad: proper coordinate midpoints admit one compatible law. Original warning preserved in the dated correction; A1 radius unchanged. | Exact equal-price old profile, M>0, singleton/pair queries from a single price edit. Terminal midpoint and arbitrary vector-query midpoint claims do not follow. The same argument extends to nonempty closed convex restrictions of that exact fiber. |
+| F16-C1 | A compatible law attains the unrestricted common minimax revised-mean radius for every full exact equal-old-price fiber, k>=2, M>=0. Singleton width dominates; an endpoint/adjacent-level mixture constructs the law, with the displayed O(k) global-radius formula. | Separately applied admissible single-price edits, fixed terminal penalty and outcome law. No extra source restrictions or noisy old observations. O(k) counts only scalar-radius arithmetic, not summary access, law materialization, proof construction or total runtime. Ordinary methods may use the same formula. |
+| F16-C2 | Exact source/consumer boundaries are checked: k4 convex triangle has radii 1/400 and 1/300; a k3 known-support uncertain-old-mean example has radii 11/2000 and 11/1550; a two-point k3 source attains the generic factor-two compatible-center ceiling. | Proof calculations and separate hand audits; no new experimental rows. The noisy example retains a substantive known support face. Shrinking a source can increase the compatible radius because it also restricts outputs; no increase in unrestricted uncertainty is inferred. A compatible law remains an estimate, not established source truth. |
+| F16-E01 | Saved-output reader verifies 1,439 mathematical records, 62 substantive implementation records and 41 expected rejections. Core/price checks and the 735-fiber exploratory candidate record are retained. | Finite bounds, reused certificate validations and exact source hashes are explicit. No independent-population count, universal theorem from tests, broad-suite pass or speed comparison. The known fresh -3/8192 versus retained +3/8192 miss remains safe incompleteness. |
+| F16-E02 | F14 and ND01 read-only verifiers pass on attempt 1; 973 saved scientific files remain byte-identical to entry. Derivation09 is outside both freezes. | No F15/ND01 prepare/evaluate invocation. Known zero-byte F15 aggregate, separate exact recovery, historical report snapshots and Windows limits are preserved. F16-R01 changes no registered experiment or disposition of exposed data. |
+| F16-N01 | F15's 0/5 complete neural result and ND01 partial improvements remain unchanged. F15-ND02 Research90 is optional, deferred and unstarted in OPP-02. | Ordinary prediction training need not produce a clean eight-neuron cost block. Shared or distributed features are plausible, technical superposition is unproved, and neither partial correspondence nor failed extraction establishes a unique utility representation or its universal absence. |
+| F16-SYN01 | C4-S remains SUPPORTED as a bounded modest synthesis/formal adaptation and specialized application, after a stronger ordinary and primary-source comparison. | The six fields below delimit support. General-method exclusivity, speed superiority, empirical source calibration, positive neural interpretation and worldwide priority remain unestablished. |
+
+| Contribution field | F16 accepted formulation |
+|---|---|
+| Object | Revisable correlated finite reset-cost reasoning with explicit source, consumer and current receiving contracts. |
+| Type | Modest methodological synthesis/formal adaptation with mathematical application extensions. |
+| Exact delta | Evaluated price-family ranks and actual-mean repairs, sharp errors/witnesses, corrected k3 coherence, explicit full-fiber compatible decoder and source-boundary consequences used in the worked revision application. |
+| Magnitude | Modest overall, with a substantive local coherent-decoder extension. No new general minimax or certificate theory. |
+| Evidence | Reconstructed proofs, separate scoped audits, all bounded computational records, preserved F15 outcomes and strong ordinary controls, targeted primary comparisons. |
+| Comparison scope | Named inspected C4/F16 antecedents; the unavailable substantive 2022 Choquet section remains a limit. No worldwide priority claim. |
+
+An ordinary exact LP method can retain the same information, answer the same
+queries, calculate same-law regret and emit proofs for the same receiver.
+Its generic small-edit numeric/regret bounds already meet F15's small-arm
+tolerances. This narrows the contribution to the specific useful application
+and its explicit consequences; merely naming established components or a null
+outcome would not preserve support if those consequences were displaced.
+
+**Next: a separate Gate C assessment, unattempted.** F17 is unstarted and can
+be selected only after an actual Gate C pass. A/B retain their scoped passes;
+C/D are not passed here. If meaningful distinctiveness is later displaced,
+reopen **R-N01-01/F16-COMP60**, protected D30/L30=Research60, central70/high105
+engaged minutes, targeting an exact theorem-level translation against the
+closest identification/optimal-recovery work and a concrete surviving useful
+consumer. A separately selected Research90 uncertain-source acquisition study
+would be the stronger practical extension. Neither optional chunk begins here.

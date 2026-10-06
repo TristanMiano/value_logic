@@ -1,10 +1,49 @@
 # Phase Two Project Specification
 
-Version: F11/C1 integration acceptance, October 3, 2026 local / October 4 UTC.
-Status: **F01–F11, N01 and recurrence C3 complete at their task scopes; A/B retain scoped readiness passes; F12 selected, unstarted; C/D unattempted; novelty NOT YET SUPPORTED; R-N01-01 open; the semantic core remains provisional**.
+Version: F16 mathematical-review handoff, October 5, 2026 UTC.
+Status: **F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
+F01–F15, N01, C3, C4 and F15-ND01 retain their completed task scopes and recorded
+protected floors. A/B retain their scoped readiness passes; C/D remain
+unattempted. C4-S is supported at bounded modest synthesis/formal-adaptation/
+application scope relative to checked comparisons; worldwide priority remains
+unestablished. The semantic core remains provisional.
 Authoritative queue: [TODO_v2.md](../TODO_v2.md).
-The dated sections below retain historical dispositions; the current gate decision is [B_1](checkpoints/B_1.md).
+The dated sections below retain historical dispositions; the latest gate
+decision remains [B_1](checkpoints/B_1.md).
 Execution: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
+
+The [F16 adversarial review](derivations/07_adversarial_review.md) reconstructs
+the core and revision arguments and an ordinary combined method under the
+same source, consumer and receipt contract. **F16-R01** corrects an overbroad
+C4-A1 interpretation: at `k=3`, equal old prices and `M>0`, the midpoint
+predictions admit one compatible law. **F16-C1** gives an explicit compatible
+law attaining the unrestricted common minimax radius for the full exact
+equal-old-price summary fiber at every `k>=2`, `M>=0`, for separately applied
+single-price edits. The
+[new derivation](derivations/10_f16_coherent_recovery.md) includes an extra-source
+counterexample delimiting that result. These application-specific consequences
+support the modest contribution; the general architecture and recovery methods
+are established, and ordinary methods can use the same construction.
+
+[F16 work and accounting](work_logs/F16_2026-10-05_S1.md) control D60/Research90
+and final closure. After completion, the next task is a **separate Gate C
+assessment**; F17 is unstarted. **F15-ND02 remains optional, deferred and
+unstarted**, available after F16 or later if selected in
+[OPP-02](opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2).
+The original 0/5 neural result and ND01's improved partial correspondences
+remain distinct from complete support. Ordinary prediction training gives no
+particular reason for clean eight-neuron cost blocks; technical superposition
+and a unique utility representation remain unestablished.
+
+F16 handoff contributor: **ChatGPT (GPT-6 Astra Pro)**, delegated documentation
+synthesis from the principal review and attributed supporting reviews; no
+concurrent principal-clock credit.
+
+## Historical F11/C1 handoff — October 3 local / October 4 UTC, 2026
+
+The following historical handoff preserves the F11-close planning state. At that
+close F12 was selected/unstarted, novelty was not yet supported and R-N01-01
+was open; the current disposition is above.
 
 The [N01 contribution plan](contribution_plan.md) now fixes the first loss
 fixture, full threshold-vector objective, finite development workload and
@@ -68,11 +107,11 @@ self-assessment capability that can remain uncertain and be revised. Keep
 stronger self-reference eligible subject to explicit semantics, rather than
 inheriting phase one's blanket exclusion of cycles.
 
-A small probe of a normally trained ReLU MLP will test a proposed internal
-value/loss computation without forcing that structure during training. Its
-status must distinguish representation, decoding, and causal evidence. These
-requirements narrow the question for F04 and the later selected core; they do
-not assert that any such structure has already been discovered.
+The F03 direction called for a small probe of a normally trained ReLU MLP to
+test a proposed internal value/loss computation without forcing that structure
+during training. F15 and ND01 have since executed the bounded probes reported
+above. Their status distinguishes representation, decoding and causal
+evidence; they do not establish the proposed complete internal structure.
 
 The agent has bounded discretion to pursue the best-supported opportunities
 under the protocol. Earlier mentions of neural interpretation and self-revision
@@ -107,7 +146,7 @@ fixed-cost changes can preserve bounded-regret choices; and local incompatibilit
 can have a precisely characterized approximate repair. Support, joint dependence,
 error aggregation, endpoint attainment, and tail premises remain explicit.
 
-## Result targets, not completed claims
+## Original result targets (historical plan)
 
 After F01, F02-F04 compare concrete candidates and check their literature and
 countermodels. Gate A chooses a justified development question. F05-F10 then

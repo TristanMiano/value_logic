@@ -3,13 +3,39 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01–F15 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 selected, unstarted; C/D remain unattempted.
+not new results. F01–F15 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied; C/D remain unattempted.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_calculus_first.md).
 
 ## Current status
+
+**F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
+October 5, 2026 UTC. The [adversarial review](derivations/07_adversarial_review.md)
+reconstructs the load-bearing core and application arguments, challenges an
+ordinary combined method with the same source and receiver, and records the
+attempts and limitations. **F16-R01** corrects C4-A1's overbroad midpoint warning:
+for exactly three procedures at equal old prices and `M>0`, one compatible law
+realizes all revised-coordinate midpoints. Its sharp radius is unchanged.
+**F16-C1** proves that for every `k>=2`, `M>=0` full exact equal-old-price summary
+fiber, an explicit compatible law attains the unrestricted **common** minimax
+radius for separately applied single-price edits. Individual coordinate midpoints can still be incompatible, and extra
+source constraints can impose a coherence cost. See the
+[constructive decoder and boundaries](derivations/10_f16_coherent_recovery.md).
+
+C4-S remains **SUPPORTED at bounded modest synthesis/application scope**,
+with the exact technical consequences carrying the contribution. Ordinary
+methods can use the same construction. Worldwide priority, broad practical
+superiority and a learned causal utility representation remain unestablished.
+The [F16 work record](work_logs/F16_2026-10-05_S1.md) controls D60/Research90 and
+final accounting. **After F16 closure, the next task is a separate Gate C
+assessment.** C/D remain unattempted; F17 is unstarted. Optional **F15-ND02,
+Research90**, remains deferred and unstarted, available after F16 or later if
+selected in [OPP-02](opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2).
+F16 contribution: **ChatGPT (GPT-6 Astra Pro)**, with attributed delegated review.
+
+### Preserved ND01 completion
 
 **F15-ND01 complete at diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
 October 5, 2026 UTC / America/Los_Angeles. The [diagnostic report](experiments/F15_ND01_results.md)
@@ -21,9 +47,9 @@ technical superposition was not established. The unchanged networks admit
 better development interventions, while the original F15 0/5 outcome and
 the unresolved joint-representation claim remain explicit.
 [ND01 work and accounting](work_logs/F15_ND01_2026-10-05_S1.md).
-**F16, fresh D60, is recommended next and unstarted.** Optional F15-ND02,
-Research90, is also unstarted. C4-S retains its bounded supported scope;
-worldwide priority is unestablished and C/D remain unattempted.
+At ND01 close, F16 was recommended next with a fresh D60. The current F16
+handoff and the optional deferred ND02 placement are above; the original
+neural outcomes are unchanged.
 
 ### Preserved F15 completion
 
@@ -38,11 +64,11 @@ aggregate is preserved, with an [exact separate recovery](work_logs/F15_2026-10-
 The [F15 work log](work_logs/F15_2026-10-04_S1.md) records **60.090886 E minutes**
 and **64.915803 total engaged minutes**, with waits and recovery excluded.
 At F15 close, POST-B-1 was **701.642993 minutes**, leaving **258.357007** to sixteen hours.
-These are ND01's entry totals; its current increment is recorded separately in
-the ND01 work log: **99.487395 recorded engaged / 90.797984 research minutes**.
-Current POST-B-1: **801.130388**, leaving **158.869612** to sixteen hours.
-F16 is selected and unattempted, with fresh D60. C4-S retains its bounded assessment;
-Gates A/B retain scoped passes and C/D remain unattempted.
+These were ND01's entry totals; its completed increment is recorded separately
+in the ND01 work log: **99.487395 recorded engaged / 90.797984 research minutes**.
+**At ND01 close**, POST-B-1 was **801.130388**, leaving **158.869612** to sixteen
+hours. F16 starts from that cumulative total without a reset; its work record
+controls the new increment. Gates A/B retain scoped passes and C/D remain unattempted.
 
 ### Preserved F14 completion
 
@@ -77,7 +103,8 @@ retention/repair, sharp and general equal-price approximation, coherence
 limits and a conditional sampling application of established DKW concentration.
 Twenty-four focused tests passed after one unexpected Python exception and
 a bounded rerun. [Timing, source limits and floor assessment](work_logs/C4_2026-10-04_S1.md).
-R-N01-01 closes at this narrowed scope, subject to reopening by F16.
+R-N01-01 closed at this narrowed scope, subject to the subsequent F16 challenge.
+F16 retains the bounded claim; its current assessment is above.
 **At C4 close, F14 was selected with protected research90, central/high
 105/155 engaged minutes.** [Eight-hour review](checkpoints/POST_B_8H_1.md).
 Contributor: **Codex (GPT-6)**. A/B retain their scoped passes; C/D unattempted.
@@ -122,7 +149,7 @@ The historical [first four-hour checkpoint](checkpoints/POST_B_4H_1.md) selected
 **R-N01-01/C2 in F12**, now complete. Project novelty was unsupported at that close;
 F13's separate D60 and case-study obligations are now satisfied. Contributor: **Codex (GPT-6)**.
 
-**N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 selected, unstarted.**
+**N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
 The [contribution plan](contribution_plan.md) fixes the loss/consumer contract,
 strong ordinary baselines, falsifiers and the first package forecast. Protected
 D+L60 is satisfied; [timing and validation](work_logs/N01_2026-10-02_S1.md)
@@ -134,7 +161,7 @@ uniform exact threshold-vector preservation in the stated representation
 class. An optional action-only contract needs nine; reversing two priorities
 needs twelve again. The [primary-source comparison](literature/03_n01_target_comparison.md)
 and independent exact planning checks constrain the claim. **At N01 close,
-novelty was NOT YET SUPPORTED and R-N01-01 was open.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 target recurrence before F11; C3 is now complete with its fresh D+L120 floor satisfied. F11–F13 and C4 are now complete at their task scopes; F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 selected, unstarted. No F11
+novelty was NOT YET SUPPORTED and R-N01-01 was open.** The [author amendment](decisions/2026-10-02_n01_recurrence.md) moved C3 target recurrence before F11; C3 is now complete with its fresh D+L120 floor satisfied. F11–F13 and C4 are now complete at their task scopes; F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied. No F11
 native producer, runtime advantage or empirical scientific validation is
 claimed by that historical planning probe; the later F11 implementation is
 reported separately above.
@@ -186,7 +213,7 @@ comparisons. **19 new hostile tests passed**, with 13 cap values, 221 direct
 rational points and three received composite examples. Three full-suite and
 three aggregate F05–F09/Gate-B attempts crashed natively; no current broad-suite
 pass is claimed. All six prior protected floors were audited. The kernel is
-unchanged. **N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 selected, unstarted; C/D remain unattempted.**
+unchanged. **N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied; C/D remain unattempted.**
 Research contributor: **Codex (GPT-6)**. Gate B has no protected minimum; its
 [work record](work_logs/B_1_2026-09-30_S1.md) preserves actual timing. Cycle III
 prospectively uses D/L/E 35/10/55 and R/X 60/40, with the existing floors and
@@ -209,7 +236,7 @@ as effort estimates, distinct from these progressively broader scope targets.
 Neither is a promise of novelty or a forecast for all remaining v2 work.
 [S1](work_logs/F10_2026-09-30_S1.md) records **45.001320 L
 minutes**, optional planning checks, and three native full-suite crashes.
-No F10 full-suite pass is claimed. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 selected, unstarted.
+No F10 full-suite pass is claimed. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied.
 Research contributor: **Codex (GPT-6)**.
 
 **F09 is complete at comparison scope.** The
@@ -224,7 +251,7 @@ were checked through the unchanged receiver and serialization round trip.
 Broader runs failed natively after bounded retries; no F09 full-suite/CI pass
 is claimed. [S1](work_logs/F09_2026-09-30_S1.md) records **60.091745 engaged D
 minutes** and the minimum assessment. Research contributor: **Codex (GPT-6)**.
-Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 selected, unstarted; Gate A and the provisional core are unchanged.
+Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied; Gate A and the provisional core are unchanged.
 
 ```text
 python -X faulthandler -m unittest discover -s verification -p 'test_v2_f09*.py'
@@ -307,8 +334,12 @@ The [completion record](work_logs/F05_2026-09-27_S2.md) records 30.063473 D minu
 this session and **60.320288 cumulative F05 D minutes**. The continuation alternative
 remains live; the semantics is provisional, not a completed deductive calculus.
 
-**Next task: F16, selected and unstarted, fresh D60. F15 is complete at frozen-challenge reporting scope (E60 satisfied); C3, F11–F15 and C4 are complete at their task scopes.** Gate A remains passed at its existing scope. F14 performed neural
-development training only; the later F15 evaluation is reported above, while F16 and Gates C/D remain unattempted. F05's supplied-model discovery
+**Current handoff: F16 complete at adversarial-review scope; D60 and Research90 satisfied.**
+The next task after F16 closure is a separate Gate C assessment; C/D remain
+unattempted and F17 is unstarted. F15 and ND01 retain their completed scopes
+and protected floors. Gate A remains passed at its existing scope. F14 performed
+neural development training only; the later F15 evaluation is reported above.
+F05's supplied-model discovery
 suite passes **90 tests** (48 from S1; 42 added in S2):
 
 ```text

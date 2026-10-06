@@ -1,7 +1,7 @@
 # Value Logic Phase Two: Build the Value-Based Calculus First
 
-Last updated: October 5, 2026 UTC / America/Los_Angeles.
-Status: F01–F15, N01, C3 and C4 complete at their task scopes; F15 E60 satisfied at 60.090886 measured minutes; F15-ND01 complete at diagnostic/reporting scope with Research90 satisfied at 90.797984 measured minutes; modest synthesis/application contribution SUPPORTED at bounded C4 comparison scope; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F16 selected/unstarted (fresh D60); optional F15-ND02 Research90 unstarted; F17 unstarted; A/B retain scoped passes; C/D unattempted.
+Last updated: October 6, 2026 UTC / October 5 America/Los_Angeles.
+Status: F01–F16, N01, C3 and C4 complete at their task scopes; F15 E60 satisfied at 60.090886 measured minutes; F15-ND01 complete at diagnostic/reporting scope with Research90 satisfied at 90.797984 measured minutes; modest synthesis/application contribution SUPPORTED at bounded C4 comparison scope, defended and narrowed by F16; worldwide priority unestablished; R-N01-01 closed at narrowed scope; F16 complete (D67.483485, Research90.249178); optional F15-ND02 Research90 deferred/unstarted; F17 unstarted; A/B retain scoped passes; C/D unattempted.
 
 ## Resume here
 
@@ -21,10 +21,24 @@ interventions clarify the original 0/5 outcome without establishing technical
 superposition, a joint utility representation, or a new complete neural pass.
 [Work, accounting and preservation](v2/work_logs/F15_ND01_2026-10-05_S1.md).
 Original F15 outcomes remain unchanged. Optional **F15-ND02, Research90** is
-unstarted; the next project priority is the fresh F16 defense.
+unstarted; the next project task is a separate Gate C assessment.
 
-**Next task: F16, selected and unstarted; fresh D60; original central/high
-engaged estimates 120/240 minutes, with a fresh mode/lane forecast at start.**
+**F16 complete at fresh adversarial-review scope; D60 and Research90 satisfied.**
+[The review](v2/derivations/07_adversarial_review.md) records 31 exact objections
+and dispositions, **67.483485 D minutes** and **90.249178 research minutes**.
+F16-R01 corrects the k3 midpoint-coherence interpretation; the sharp A1 radius
+is unchanged. [F16-C1](v2/derivations/10_f16_coherent_recovery.md) gives an
+explicit compatible common-radius decoder for full exact equal-price fibers.
+Closedness, uncertain old observations and extra source restrictions have
+checked boundaries. The strong ordinary baseline remains capable of the same
+service. C4-S is supported as a bounded modest synthesis/application; worldwide
+priority and general performance superiority remain unestablished.
+**Next: a separate Gate C assessment, unattempted.** F17 is unstarted and is
+selected only if Gate C passes. Optional **F15-ND02 Research90** is deferred
+in [OPP-02](v2/opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2),
+available after F16 or later if selected, with no new neural execution here.
+Original central/high estimates **120/240 engaged minutes** remain preserved.
+[Work, precise accounting and preservation](v2/work_logs/F16_2026-10-05_S1.md).
 F15 is complete at frozen-challenge reporting scope, with **60.090886 E minutes**
 and **64.915803 total engaged minutes**. Its original 120/240-minute forecasts
 remain recorded as estimates, not stopping limits. The
@@ -35,7 +49,8 @@ attempt 1. The original damaged aggregate is preserved with an
 [exact separate recovery](v2/work_logs/F15_2026-10-04_S1/retention_results_recovered.json)
 and [explicit disposition](v2/work_logs/F15_2026-10-04_S1/F15_ART_01.md).
 [F15 work and timing](v2/work_logs/F15_2026-10-04_S1.md) record the satisfied
-floor, conservative exclusions and append-only ledger verification. F16 remains unattempted.
+floor, conservative exclusions and append-only ledger verification. F16's new
+review is recorded separately and earns no time from that completed work.
 
 F14 is complete at prospective-freeze scope with **90.564634 engaged D+L+E
 minutes**, excluding waits and recovery.
@@ -65,7 +80,7 @@ exception and a bounded rerun. [Derivations](v2/derivations/09_c4_price_revision
 **Active mathematical repair queue: empty.**
 **Gate state: A PASS ([A_1](v2/checkpoints/A_1.md)); B PASS ([B_1](v2/checkpoints/B_1.md)); C not attempted; D not attempted.**
 F14 discharged the prospective freeze; F15 execution, interpretation and E60
-are complete. ND01 is complete at diagnostic/reporting scope, with Research90 satisfied. F16's fresh review remains unattempted.
+are complete. ND01 is complete at diagnostic/reporting scope, with Research90 satisfied. F16's fresh review is complete; Gate C remains unattempted.
 If the contribution is later displaced, assign a named 60/90-minute
 recurrence or further-work chunk; no technical pass or elapsed time waives it.
 
@@ -80,10 +95,14 @@ minutes, producing a verified cumulative close of **701.642993** and
 preserve full-precision arithmetic; historical ledger bytes are unchanged.
 Those F15 closing totals are ND01's entry balance. ND01 adds **99.487395**
 recorded engaged minutes, including **90.797984 research minutes**.
-POST-B-1 now stands at **801.130388**, with **158.869612**
+At ND01 close, POST-B-1 stood at **801.130388**, with **158.869612**
 remaining to sixteen hours. [Exact ND01 actuals](v2/work_logs/F15_ND01_2026-10-05_S1/actuals.json)
 preserve full precision; all 949 prior ledger rows are unchanged. No elapsed or concurrent
 agent time is silently credited here.
+F16 adds **112.898066** engaged minutes, bringing POST-B-1 to
+**914.028454**, with **45.971546** remaining to sixteen hours.
+[Exact F16 actuals](v2/work_logs/F16_2026-10-05_S1/actuals.json) preserve the
+1,006-row historical ledger prefix; no clock is reset.
 No recurrence time is reset. [F14 accounting](v2/work_logs/F14_2026-10-04_S1.md)
 preserves waits, recovery and the uncredited final administrative tail separately.
 The earlier [four-hour review](v2/checkpoints/POST_B_4H_1.md),
@@ -1348,7 +1367,8 @@ to publication with an unsound core simply because the planned queue ended.
   appropriate for the full audited report; optional saved-data analysis
   clarified joint decision information and independently checked all 13,440
   rectangle-based action regrets. Original central/high engaged estimates
-  **120/240 minutes** remain planning estimates. F16 is selected, unattempted.
+  **120/240 minutes** remain planning estimates. At F15 close F16 was
+  selected; its completed review is recorded below.
 
   **Preserved starting contract:** begin with the frozen
   [protocol](v2/experiments/protocol.md) and manifest verification; prepare and
@@ -1387,15 +1407,30 @@ to publication with an unsound core simply because the planned queue ended.
   cost blocks. Capable controls can also prevent complete endpoint support
   despite accurate correspondence. [Work and accounting](v2/work_logs/F15_ND01_2026-10-05_S1.md)
   govern the protected Research90 floor; scientific completion alone does not
-  satisfy it. **F16, fresh D60, remains next and unstarted.** Optional
+  satisfy it. At ND01 close F16 was recommended next; its completed review
+  is recorded below. Optional
   **F15-ND02, Research90**, would test a joint two-cost abstraction under frozen
   subspace geometry, repeated assignments and two donors; it is unstarted.
 
-- [ ] **F16 — fresh adversarial reconstruction.**
+- [x] **F16 — fresh adversarial reconstruction.**
 
-  **Selected and unstarted after F15 and its ND01 diagnostic.** Protect a fresh **D60**, with original
-  central/high engaged estimates **120/240 minutes** and a fresh mode/lane
-  forecast at start. F15's collaborating checks do not supply this review floor.
+  **Complete at review scope. Fresh D60 is satisfied at 67.483485 minutes;
+  protected Research90 at 90.249178 minutes.**
+  [Principal review](v2/derivations/07_adversarial_review.md) and
+  [work/accounting](v2/work_logs/F16_2026-10-05_S1.md) give 31 dispositions,
+  separate same-model audits, bounded implementation/mathematical evidence,
+  the F16-R01 correction and F16-C1 extension, preserved experimental bytes,
+  and the six-field contribution assessment. C4-S retains bounded support;
+  no worldwide-priority, generic-speed or neural-representation pass is claimed.
+  D60/Research90 were appropriate: protected effort resolved a real
+  interpretation defect and useful coherence/source boundaries. Original
+  central/high **120/240 engaged-minute estimates** are preserved. Additional
+  evidence and conditional **R-N01-01/F16-COMP60 (D30/L30)** are named in the
+  report; no recurrence is triggered solely by ordinary reproducibility.
+  **Next: a separate Gate C assessment.** Optional F15-ND02 remains deferred.
+
+  **Preserved starting contract:** protect a fresh D60 and forecast modes/lanes;
+  F15's collaborating checks do not supply this review floor.
 
   Principal artifact: `v2/derivations/07_adversarial_review.md`.
   Reconstruct the load-bearing definitions and proof steps, preferably with a
