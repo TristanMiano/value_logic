@@ -3,13 +3,32 @@
 **Active research direction:** [DIR01](decisions/DIR01_loss_grounded_reflective_direction.md)
 connects loss-based value semantics, modest reflection and discovery of learned
 neural structure. [Opportunities](opportunities.md) are ranked research leads,
-not new results. F01–F17 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied; Gate C PASS approved by the author; F17 complete at report-assembly scope; D unattempted.
+not new results. F01–F17 are complete at their task scopes; [Gate A](checkpoints/A_1.md) passed at readiness scope. F08 establishes unit-directed completeness; F09 supplies exact fragment and presentation comparisons, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied; Gate C PASS approved by the author; F17 complete at report-assembly scope; D assessment complete with evaluator PASS recommendation and author decision pending.
 
 Current control document: [../TODO_v2.md](../TODO_v2.md).
 Execution protocol: [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md).
 Decision record: [decisions/2026-09-19_calculus_first.md](decisions/2026-09-19_calculus_first.md).
 
 ## Current status
+
+**Gate D assessment complete: evaluator recommends PASS; author decision pending.**
+October 6, 2026 UTC. [D_1](checkpoints/D_1.md) checks the final report against
+accepted mathematics, empirical outcomes, ordinary comparisons, source versions,
+attribution and historical accounting. The revised [paper](../paper_v2.md) has
+nine macro repairs, an explicit nonproportional attempt-price hypothesis and an
+evidenced model byline. The root README now presents the whole project under
+the [author's continuing presentation convention](decisions/2026-10-06_report_presentation.md).
+
+The [current 42-group map](reporting/D_1/claim_map.json) binds this report;
+F17's original report, map and reviews remain historical. Both freezes, all
+973 saved scientific files and the 288 Python files tracked at entry remain
+unchanged. The bounded C4-S contribution remains supported; original neural
+0/5 and ordinary comparators are retained. [D work and accounting](work_logs/D_2026-10-06_S1.md).
+A/B/C retain scoped passes. Phase completion awaits the author's D decision;
+external review is recommended after acceptance. F15-ND02 remains optional,
+deferred and unstarted. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
+
+### Preserved F17 completion
 
 **F17 complete at report-assembly scope; Gate D is next and unattempted.**
 October 6, 2026 UTC. The author [approved Gate C PASS](decisions/2026-10-06_gate_c_pass.md)

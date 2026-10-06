@@ -1,19 +1,16 @@
 # Phase Two Claim Ledger
 
 Current status (October 6, 2026 UTC): **F01–F17, N01, C3 and C4 complete at
-recorded task scopes; all protected historical floors retained.** The author
-[approved Gate C PASS](decisions/2026-10-06_gate_c_pass.md). F17 assembles the
-[research report](../paper_v2.md) with a [42-group evidence map](reporting/F17_v1/claim_map.json).
-C4-S remains SUPPORTED as a bounded modest synthesis/formal adaptation with
-specialized application results. Worldwide priority, general performance
-superiority and a joint learned utility representation remain unestablished.
-
-F15 and ND01 outcomes are unchanged: ordinary training does not require a
-clean eight-neuron block, and improved individual interventions do not replace
-the original 0/5 complete endpoint. F15-ND02 Research90 remains optional,
-deferred and unstarted. **A/B/C retain scoped passes; Gate D is next and
-unattempted.** The latest F17 entry supersedes the dated historical next-task
-pointers below without rewriting those records.
+their task scopes; Gate D assessment complete, evaluator recommends PASS,
+author decision pending.** A/B/C retain their scoped passes. The
+[revised report](../paper_v2.md) has a [current 42-group evidence map](reporting/D_1/claim_map.json);
+F17's historical report and evidence remain preserved. C4-S is SUPPORTED as
+bounded modest synthesis/formal adaptation with specialized retention, repair
+and compatible-recovery results. Ordinary reproducibility, original neural
+0/5, diagnostic development status and unestablished worldwide priority remain
+explicit. [D_1](checkpoints/D_1.md) supports the recommendation without enacting
+phase completion. Optional F15-ND02 and other deferred branches remain unstarted.
+The dated historical entries below retain their original temporal dispositions.
 
 ## F10 external-audit disposition — September 30, 2026
 
@@ -1253,3 +1250,34 @@ The reporting defects found during review are resolved locally. The original
 interpretation remain unchanged. ND02, EXT01 and conditional COMP60 remain
 deferred/unstarted. **Gate D is next and unattempted.** Protected historical
 floors and ledger entries are preserved; F17 has no added floor.
+
+## Gate D — final report audit, October 6, 2026
+
+Principal contributor: **ChatGPT (GPT-6 Astra Pro)**. The author authorized
+Gate D and the requested presentation/attribution corrections. The
+[assessment](checkpoints/D_1.md) recommends **PASS** at the stated scope;
+the author's decision remains pending. No further experiment was selected.
+
+| ID | Disposition | Evidence and boundary |
+|---|---|---|
+| D-RPT01 | COMPLETE at final-audit scope. The revised report preserves the five theorem contracts, worked inferences, empirical outcomes and bounded contribution. | [Current map](reporting/D_1/claim_map.json) and final hashed internal reviews; 42 groups with 145 historical bindings checked against their proper version. |
+| D-CON-01 | RESOLVED report precision issue. Theorem 3 and the introduction explicitly require nonproportional attempt-price vectors c,d. | The unchanged accepted C4 theorem already requires this hypothesis. Differing terminal penalties alone are insufficient; the recorded k3 counterexample has numerical rank six. |
+| D-EDIT01 | RESOLVED rendering and presentation issues. Nine rejected operator names are replaced; local rendering covers all 350 math spans and the final spacing correction. Root README presents the entire project without status scaffolding. | [Editorial review](work_logs/D_2026-10-06_S1/reviews/editorial/review_final.md). No live GitHub-browser rendering certification is claimed. |
+| D-ATTR01 | Byline and roles follow evidenced contributor labels. | Tristan Miano; ChatGPT (GPT-6 Astra Pro); Codex (GPT-6); GPT-5.6 Sol. Historical Claude audit labels and their metadata discrepancy remain explicit in acknowledgments. |
+| D-INT01 | Scientific versions and historical acceptance remain intact. | All 973 scientific files, both freezes and all 288 entry Python files unchanged; 22 prior floor obligations hold. Saved F17 checks and Gate C's 288-test record are preserved, not described as fresh reruns. |
+| D-SCOPE01 | C4-S SUPPORTED as a modest synthesis/formal adaptation and specialized mathematical application. | Weighted retention, actual-new-mean repair and compatible sharp recovery supply the local delta relative to named inspected methods. No general superiority, complete neural support, unique utility representation or worldwide priority is claimed. |
+| D-DEC01 | Evaluator recommends PASS; final author decision is PENDING. | The Gate D checkbox stays unchecked and phase completion is not enacted. External review is recommended after acceptance. |
+
+D has no protected floor; its [work record](work_logs/D_2026-10-06_S1.md)
+contains fresh actuals, exclusions and append-only reconciliation with the
+continuing POST-B-1 clock. All parallel reviewer credit is zero. A corrected
+new audit tolerance and a corrected prose chronology are preserved as
+administrative failures/corrections; scientific attempts and data are unchanged.
+
+No recurrence is required by this assessment. Optional **F15-EXT-01 Research90**
+would strengthen practical evidence under uncertain observations and full
+cost accounting. **F15-ND02 Research90** remains deferred at OPP-02 for a
+joint two-cost neural abstraction. If a close antecedent or proof defect
+displaces the contribution, reopen **R-N01-01/F16-COMP60**, protected D30/L30,
+with an explicit theorem-to-theorem comparison and surviving-delta decision.
+All these additional chunks remain unstarted.

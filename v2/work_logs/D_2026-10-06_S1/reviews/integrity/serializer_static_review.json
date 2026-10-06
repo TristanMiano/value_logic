@@ -1,0 +1,126 @@
+{
+  "schema": "gate-d-serializer-static-review-v1",
+  "observed_utc": "2026-10-06T19:18:51.072869+00:00",
+  "reviewer": "ChatGPT (GPT-6 Astra Pro), separate same-model internal reviewer",
+  "status": "PASS_FOR_OBSERVED_D_SESSION",
+  "findings": [
+    {
+      "id": "stopped_clock_required",
+      "status": "PASS",
+      "reason": "Refuses non-null clock state; verifies the complete start/stop transition stream before serialization."
+    },
+    {
+      "id": "historical_prefix",
+      "status": "PASS",
+      "reason": "Checks the baseline byte count, SHA256, row count and absence of D/D_1 rows. The observed baseline is 273391 bytes, 1117 rows, SHA256 ac1bdbb521f4ffe09843850dfadcab509a0f6c20f35db20202a79e5efb8ec36c."
+    },
+    {
+      "id": "exclusions",
+      "status": "PASS",
+      "reason": "Exclusion endpoints must be observed, nonoverlapping and contained in one raw segment. Subinterval cuts partition raw time; recovered/wait time is not engaged or credited to a research lane."
+    },
+    {
+      "id": "no_double_count",
+      "status": "PASS",
+      "reason": "Every raw segment matches adjacent transitions. Effective elapsed equals engaged plus excluded; research equals R+X; concurrent agent credit is zero."
+    },
+    {
+      "id": "observation_gaps",
+      "status": "PASS",
+      "reason": "Every engaged subinterval is checked against saved observations with maximum 900 seconds between adjacent observations."
+    },
+    {
+      "id": "zero_E",
+      "status": "PASS",
+      "reason": "Mode totals include E=0. Forecast rows are assigned only for modes with positive actual work; there is no requirement to manufacture E activity."
+    },
+    {
+      "id": "carry",
+      "status": "PASS",
+      "reason": "Uses 80-digit Decimal addition of integer-nanosecond engaged time to the recorded entry; forecast entry, baseline entry and F17 close were independently observed equal."
+    },
+    {
+      "id": "checkpoint",
+      "status": "PASS",
+      "reason": "Previous 960-minute checkpoint stays completed in F17. Next milestone is 1920, with automatic_next_phase_authorized false and no cumulative reset."
+    },
+    {
+      "id": "authority",
+      "status": "PASS",
+      "reason": "Gate D evaluator recommendation is PASS while author decision remains PENDING. The output describes final-audit completion, not author-approved phase completion."
+    },
+    {
+      "id": "durability_and_retry",
+      "status": "PASS",
+      "reason": "Refuses existing output files; writes append/actuals before ledger append, fsyncs the appended ledger, then verifies exact old-plus-append bytes. Any partial failure requires inspection because the guard refuses a blind rerun."
+    },
+    {
+      "id": "report_version",
+      "status": "PASS",
+      "reason": "Builder pins both current c8f490ce report and saved snapshot, preserves the old F17 map and resolves its canonical pointer at the historical snapshot."
+    },
+    {
+      "id": "claim_transfer",
+      "status": "PASS",
+      "reason": "Builder retains 42 claims, narrows only F17-MATH-13 to nonproportional strictly positive attempt-price vectors with nonnegative terminal penalties, and records D-CON-01 as a source-backed clarification."
+    },
+    {
+      "id": "review_binding",
+      "status": "PASS",
+      "reason": "Final contribution spacing review and editorial review explicitly bind the c8f490ce report. Current map will also bind their complete bytes and unchanged table/bibliography sources."
+    },
+    {
+      "id": "no_execution",
+      "status": "PASS",
+      "reason": "Review did not import or execute either serializer or builder; root retains responsibility for the concrete write operations and postappend audit follows separately."
+    }
+  ],
+  "source_bindings": [
+    {
+      "path": "v2/work_logs/D_2026-10-06_S1/close_accounting.py",
+      "bytes": 10670,
+      "sha256": "b39a983490caab72bf6e2f2c9a9f2e5e0c5c93210da169f81d1604c6be56b57b"
+    },
+    {
+      "path": "v2/reporting/build_gate_d_report.py",
+      "bytes": 6793,
+      "sha256": "109a55c4eae95a6dc01cb8fc0d3161a7e036e5381af326cb895c908bf2b608d4"
+    },
+    {
+      "path": "v2/work_logs/D_2026-10-06_S1/baseline.json",
+      "bytes": 577,
+      "sha256": "e145f1452e5d55f2e3ed4cb2609d6a87730b0e74002a63636af59eb57fbc1215"
+    },
+    {
+      "path": "v2/work_logs/D_2026-10-06_S1/forecast.json",
+      "bytes": 1770,
+      "sha256": "d78a2c7c921b0221a20145f6266d2403bc4fb602379799b0e706ab894c83fe37"
+    },
+    {
+      "path": "v2/work_logs/D_2026-10-06_S1/drafts/report_final.md",
+      "bytes": 91719,
+      "sha256": "c8f490ce94584fc93d27b759f1f524d5eeeb0d3885729d24db413cb4f5205c5d"
+    },
+    {
+      "path": "v2/work_logs/D_2026-10-06_S1/reviews/contribution/review_final_spacing.json",
+      "bytes": 1743,
+      "sha256": "3ba761ef75bdbef13bc780c2f0d0c942af12bba98fbc5c2e6a9c1d2ddae9d51f"
+    },
+    {
+      "path": "v2/work_logs/D_2026-10-06_S1/reviews/editorial/review_final.json",
+      "bytes": 9304,
+      "sha256": "599ce0ec2040a745a0f12ed1eea0a13195fa677053d00c77581f7a5b79c49d38"
+    },
+    {
+      "path": "v2/work_logs/F17_2026-10-06_S1/actuals.json",
+      "bytes": 8478,
+      "sha256": "6818bdf3b2f4c7f873677b553a164530adbc371561b7e442eb794f3781b3db61"
+    }
+  ],
+  "serializer_executed": false,
+  "report_builder_executed": false,
+  "clock_stopped_by_reviewer": false,
+  "ledger_written": false,
+  "principal_concurrent_credit_minutes": 0,
+  "pending": "Independently verify the actual stopped clocks, ledger append and final current report map after root executes them."
+}

@@ -1,0 +1,167 @@
+--- paper_entry.md
++++ paper_v2.md
+@@ -1,9 +1,9 @@
+ # Value Logic: Loss Comparisons and Information Retention Under Revision
+ 
+-Tristan Miano
+-
+-Research report, October 2026. Assembly and current internal review:
+-**ChatGPT (GPT-6 Astra Pro)**. Detailed attribution appears in the final section.
++Tristan Miano · ChatGPT (GPT-6 Astra Pro) · Codex (GPT-6) · GPT-5.6 Sol
++
++Research report, October 2026. Contributor roles and earlier audit credits
++appear in [§14](#14-attribution-and-writing-method).
+ 
+ ## Abstract
+ 
+@@ -87,8 +87,8 @@
+ The main mathematical application asks what an old summary of
+ expected procedure costs preserves after prices change. With arbitrary
+ correlation among $k$ reset procedures, one complete old numerical
+-profile has linear rank $2^k-k$. Two nonproportional positive price
+-profiles recover the full law when at least one terminal penalty is
++profile has linear rank $2^k-k$. Two profiles with nonproportional positive attempt-price
++vectors recover the full law when at least one terminal penalty is
+ positive. A single admissible nonzero price edit can consequently
+ require exactly $k-1$ additional independent linear responses, and
+ Theorem 4 constructs them as actual new expected costs. This is an
+@@ -199,7 +199,7 @@
+ The residual is
+ 
+ $$
+-\operatorname{res}(a,b)=\max(b-a,0).
++\mathrm{res}(a,b)=\max(b-a,0).
+ $$
+ 
+ A term has a finite real value at every assignment. Its range over possible
+@@ -266,7 +266,7 @@
+ Clipping to nonnegative deterioration loses useful information:
+ 
+ $$
+-\sup_{D_{\mathcal C}}\operatorname{res}(s,t)
++\sup_{D_{\mathcal C}}\mathrm{res}(s,t)
+  =\max\bigl(B_{\mathcal C}(t,s),0\bigr).
+ \tag{3}
+ $$
+@@ -358,9 +358,9 @@
+ one obtains
+ 
+ $$
+-\operatorname{res}(a_{\rm new},b_{\rm new})
++\mathrm{res}(a_{\rm new},b_{\rm new})
+  \le_{\max(p+q,0)}
+-\operatorname{res}(a_{\rm old},b_{\rm old}).
++\mathrm{res}(a_{\rm old},b_{\rm old}).
+ \tag{6}
+ $$
+ 
+@@ -524,7 +524,7 @@
+ 
+ **Why full-source completeness can fail.** Take units $U,V$, one
+ factor-one conversion $U\to V$, and a source $x:U$. The single case
+-has the $V$-row $\operatorname{convert}(x)\le-1_V$, with witness
++has the $V$-row $\mathrm{convert}(x)\le-1_V$, with witness
+ $x=-1$. The $U$-request $x\le_{-1}0_U$ is valid in the full real
+ semantics. Its $U$-reduct has no rows; $x=0$ refutes the request
+ there. Equation (8) proves native nonderivability. This is a structural
+@@ -552,7 +552,7 @@
+ | $\neg A$ | $1-L(A)$ |
+ | $A\land B$ | $\max(L(A),L(B))$ |
+ | $A\lor B$ | $\min(L(A),L(B))$ |
+-| $A\Rightarrow B$ | $\operatorname{res}(L(A),L(B))$ |
++| $A\Rightarrow B$ | $\mathrm{res}(L(A),L(B))$ |
+ 
+ For a finite premise family $\Gamma$ over finitely many atoms,
+ let $P_\Gamma=\max_{A\in\Gamma}L(A)$, taking zero for no premises,
+@@ -675,8 +675,8 @@
+ **Theorem 3 (retention under price revision).** For one strictly positive
+ price profile and any $M\ge0$, all order means have exact linear rank
+ $2^k-k$; all within-profile order differences have rank $n-k$.
+-For two nonproportional strictly positive profiles $(c,M),(d,N)$,
+-with $M,N\ge0$, the ranks are:
++For two profiles $(c,M),(d,N)$ whose strictly positive attempt-price
++vectors $c$ and $d$ are nonproportional, with $M,N\ge0$, the ranks are:
+ 
+ | Requested values | Rank |
+ |---|---:|
+@@ -735,7 +735,7 @@
+ 
+ Finally, let $Q$ be the requested linear map on the simplex direction
+ space, and $T$ a proposed retained map with
+-$\operatorname{rank}T<\operatorname{rank}Q$. There is a direction
++$\mathrm{rank}\,T<\mathrm{rank}\,Q$. There is a direction
+ $v\in\ker T\setminus\ker Q$. Small opposite perturbations of an
+ interior law along $v$ have identical retained data and different
+ requested values. No decoder from that retained map can answer both.
+@@ -1395,7 +1395,7 @@
+ For example, (24) also gives
+ 
+ $$
+-\operatorname{logit}(p^*)
++\mathrm{logit}(p^*)
+  =\log c_{\rm FN}-\log c_{\rm FP}
+   +\log\eta-\log(1-\eta).
+ \tag{25}
+@@ -1734,6 +1734,7 @@
+ python -m v2.experiments.neural_diagnostic_v1.runner verify
+ python v2/experiments/F15_ND01_analysis/summarize.py --check
+ python v2/reporting/build_f17_tables.py --check
++python v2/reporting/build_gate_d_report.py --check
+ ```
+ 
+ The historical preparation/evaluation commands are retained in
+@@ -1744,24 +1745,44 @@
+ The [report table export](v2/reporting/F17_v1/tables.json) binds
+ its source files by SHA256 and distinguishes original
+ confidence outcomes from diagnostic point criteria.
+-The [claim map](v2/reporting/F17_v1/claim_map.json) identifies
++The [current claim map](v2/reporting/D_1/claim_map.json) identifies
+ the precise source and support type for each report claim.
+ The [F17 work record](v2/work_logs/F17_2026-10-06_S1.md) supplies
+-the actual assembly checks, review findings and timing;
++the original assembly checks, review findings and timing.
++The [final-audit work record](v2/work_logs/D_2026-10-06_S1.md)
++records the subsequent rendering, attribution and statement-precision
++corrections and binds the revised report. F17's original report
++and evidence map remain preserved as historical versions;
+ the [claim ledger](v2/claim_ledger.md) remains the project-wide
+ record.
+ 
+ ## 14. Attribution and writing method
+ 
+ Tristan Miano initiated and directs the Value Logic research
+-program. The source notes preserve the contributors and
+-assistant identities responsible for each research stage.
+-This report was assembled by **ChatGPT (GPT-6 Astra Pro)**,
+-with separately assigned mathematical, empirical and
+-literature reviewers of the same model. Their review is
+-internal and non-blind, not external peer review or
+-proof-assistant verification. Concurrent reviewer work is not
+-double-counted in the principal engaged-time ledger.
++program. **ChatGPT (GPT-6 Astra Pro)** contributed the consolidated
++soundness work, experimental design and execution, neural diagnostics,
++adversarial reconstruction and this report's assembly. **Codex (GPT-6)**
++contributed the unit-directed characterization, fragment comparisons,
++retention and revision mathematics, implementations, case studies and
++contribution assessment. **GPT-5.6 Sol** contributed substantial
++phase-one formalism, experiments, audits and writing on which this
++report's inherited interfaces build. These names reproduce the
++contributor labels in the saved project record; the
++[attribution evidence](v2/work_logs/D_2026-10-06_S1/reviews/editorial/editorial_evidence.json)
++identifies their signed source notes and the inheritance chain.
++
++Earlier phase-one audits are signed **Claude Fable 5** (July 11–21,
++2026) and **Claude Opus 5** (the July 24 audit's own label). Their
++findings were adjudicated in the phase-one checkpoints. The
++attribution record preserves a discrepancy between the July 24
++source label and its directory metadata. Founding ChatGPT and Claude
++conversations remain separately credited as idea sources.
++
++The separately assigned mathematical, empirical and literature
++reviewers of this report use GPT-6 Astra Pro. Their review is internal
++and non-blind, not external peer review or proof-assistant
++verification. Concurrent reviewer work is not double-counted in the
++principal engaged-time ledger.
+ 
+ At the author's suggestion, the exposition draws on Scott
+ Armstrong and Amélie Loher's

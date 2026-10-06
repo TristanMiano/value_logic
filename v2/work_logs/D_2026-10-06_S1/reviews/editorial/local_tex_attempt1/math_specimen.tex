@@ -1,0 +1,896 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\begin{document}
+\section*{Gate D: corrected operator expressions}
+Local TeX specimen from the assigned report snapshot. This is not a GitHub rendering check.
+Source line 201, segment 15.
+\[
+\mathrm{res}(a,b)=\max(b-a,0).
+\]
+Source line 268, segment 25.
+\[
+\sup_{D_{\mathcal C}}\mathrm{res}(s,t)
+ =\max\bigl(B_{\mathcal C}(t,s),0\bigr).
+\tag{3}
+\]
+Source line 360, segment 51.
+\[
+\mathrm{res}(a_{\rm new},b_{\rm new})
+ \le_{\max(p+q,0)}
+\mathrm{res}(a_{\rm old},b_{\rm old}).
+\tag{6}
+\]
+Source line 527, segment 82.
+\[
+\mathrm{convert}(x)\le-1_V
+\]
+Source line 555, segment 102.
+\[
+\mathrm{res}(L(A),L(B))
+\]
+Source line 738, segment 167.
+\[
+\mathrm{rank}\,T<\mathrm{rank}\,Q
+\]
+Source line 1397, segment 350.
+\[
+\mathrm{logit}(p^*)
+ =\log c_{\rm FN}-\log c_{\rm FP}
+  +\log\eta-\log(1-\eta).
+\tag{25}
+\]
+\clearpage
+\section*{All extracted mathematical segments}
+\textbf{Segment 1} (source line 20)\par
+\( k-1 \)\par
+\textbf{Segment 2} (source line 77)\par
+\( t \)\par
+\textbf{Segment 3} (source line 77)\par
+\( s \)\par
+\textbf{Segment 4} (source line 78)\par
+\( t-s\le b \)\par
+\textbf{Segment 5} (source line 89)\par
+\( k \)\par
+\textbf{Segment 6} (source line 90)\par
+\( 2^k-k \)\par
+\textbf{Segment 7} (source line 93)\par
+\( k-1 \)\par
+\textbf{Segment 8} (source line 143)\par
+\( X \)\par
+\textbf{Segment 9} (source line 143)\par
+\( Y=X \)\par
+\textbf{Segment 10} (source line 143)\par
+\( Y=1-X \)\par
+\textbf{Segment 11} (source line 144)\par
+\( 1/2 \)\par
+\textbf{Segment 12} (source line 145)\par
+\( 1 \)\par
+\textbf{Segment 13} (source line 145)\par
+\( 1/2 \)\par
+\textbf{Segment 14} (source line 145)\par
+\( 0 \)\par
+\textbf{Segment 15} (source line 201)\par
+\[
+\mathrm{res}(a,b)=\max(b-a,0).
+\]
+\textbf{Segment 16} (source line 211)\par
+\( \mathcal C \)\par
+\textbf{Segment 17} (source line 214)\par
+\[
+D_{\mathcal C}
+ =\bigcup_{h\in H}\{(h,x):A_hx\le \eta_h\}.
+\]
+\textbf{Segment 18} (source line 236)\par
+\( t \)\par
+\textbf{Segment 19} (source line 236)\par
+\( s \)\par
+\textbf{Segment 20} (source line 236)\par
+\( u \)\par
+\textbf{Segment 21} (source line 237)\par
+\( b \)\par
+\textbf{Segment 22} (source line 239)\par
+\[
+\mathcal C\models t\le_b s:u
+\quad\Longleftrightarrow\quad
+\forall(h,x)\in D_{\mathcal C},\quad t_h(x)-s_h(x)\le b.
+\tag{1}
+\]
+\textbf{Segment 23} (source line 254)\par
+\[
+B_{\mathcal C}(t,s)
+ =\sup_{(h,x)\in D_{\mathcal C}}\bigl(t_h(x)-s_h(x)\bigr)
+ \in\mathbb R\cup\{+\infty\}.
+\tag{2}
+\]
+\textbf{Segment 24} (source line 262)\par
+\( b \)\par
+\textbf{Segment 25} (source line 268)\par
+\[
+\sup_{D_{\mathcal C}}\mathrm{res}(s,t)
+ =\max\bigl(B_{\mathcal C}(t,s),0\bigr).
+\tag{3}
+\]
+\textbf{Segment 26} (source line 274)\par
+\( b\ge0 \)\par
+\textbf{Segment 27} (source line 274)\par
+\( b<0 \)\par
+\textbf{Segment 28} (source line 285)\par
+\[
+\exists\ \text{permitted policy }\pi\;
+\forall\ (h,x)\text{ compatible with the observation}.
+\tag{4}
+\]
+\textbf{Segment 29} (source line 292)\par
+\( (0,2) \)\par
+\textbf{Segment 30} (source line 292)\par
+\( (2,0) \)\par
+\textbf{Segment 31} (source line 309)\par
+\( \mathcal C;h\vdash t\le_b s \)\par
+\textbf{Segment 32} (source line 318)\par
+\( t\le_b s \)\par
+\textbf{Segment 33} (source line 318)\par
+\( s\le_c r \)\par
+\textbf{Segment 34} (source line 318)\par
+\( t\le_{b+c}r \)\par
+\textbf{Segment 35} (source line 319)\par
+\( t_i\le_{b_i}s_i \)\par
+\textbf{Segment 36} (source line 319)\par
+\( t_1+t_2\le_{b_1+b_2}s_1+s_2 \)\par
+\textbf{Segment 37} (source line 321)\par
+\( t\le_b s \)\par
+\textbf{Segment 38} (source line 321)\par
+\( -s\le_b -t \)\par
+\textbf{Segment 39} (source line 323)\par
+\( b,c \)\par
+\textbf{Segment 40} (source line 323)\par
+\( \min(b,c) \)\par
+\textbf{Segment 41} (source line 325)\par
+\( b,c \)\par
+\textbf{Segment 42} (source line 325)\par
+\( \max(b,c) \)\par
+\textbf{Segment 43} (source line 331)\par
+\( z \)\par
+\textbf{Segment 44} (source line 331)\par
+\( z \)\par
+\textbf{Segment 45} (source line 332)\par
+\( z \)\par
+\textbf{Segment 46} (source line 335)\par
+\( d=\max(b,c) \)\par
+\textbf{Segment 47} (source line 336)\par
+\( d \)\par
+\textbf{Segment 48} (source line 339)\par
+\[
+F(t_1,t_2)
+ \le F(s_1+d,s_2+d)
+ =F(s_1,s_2)+d,\qquad F\in\{\min,\max\}.
+\tag{5}
+\]
+\textbf{Segment 49} (source line 347)\par
+\( \max(b,0) \)\par
+\textbf{Segment 50} (source line 352)\par
+\[
+a_{\rm old}\le_p a_{\rm new},
+\qquad
+b_{\rm new}\le_q b_{\rm old},
+\]
+\textbf{Segment 51} (source line 360)\par
+\[
+\mathrm{res}(a_{\rm new},b_{\rm new})
+ \le_{\max(p+q,0)}
+\mathrm{res}(a_{\rm old},b_{\rm old}).
+\tag{6}
+\]
+\textbf{Segment 52} (source line 368)\par
+\( (b_{\rm new}-b_{\rm old})+(a_{\rm old}-a_{\rm new}) \)\par
+\textbf{Segment 53} (source line 381)\par
+\( P \)\par
+\textbf{Segment 54} (source line 381)\par
+\( b_P \)\par
+\textbf{Segment 55} (source line 382)\par
+\( a_i(x)\le\eta_i \)\par
+\textbf{Segment 56} (source line 382)\par
+\( \eta_i \)\par
+\textbf{Segment 57} (source line 384)\par
+\[
+\eta_i+\max(a_i(x)-\eta_i,0).
+\]
+\textbf{Segment 58} (source line 389)\par
+\( E_P(x) \)\par
+\textbf{Segment 59} (source line 391)\par
+\[
+t(x)-s(x)\le E_P(x)=b_P+R_P(x),\qquad R_P(x)\ge0.
+\tag{7}
+\]
+\textbf{Segment 60} (source line 446)\par
+\( b_{\rm out}\le B \)\par
+\textbf{Segment 61} (source line 447)\par
+\( B \)\par
+\textbf{Segment 62} (source line 447)\par
+\( b_{\rm out}<B \)\par
+\textbf{Segment 63} (source line 449)\par
+\( \square \)\par
+\textbf{Segment 64} (source line 468)\par
+\( A(u) \)\par
+\textbf{Segment 65} (source line 468)\par
+\( u \)\par
+\textbf{Segment 66} (source line 470)\par
+\( \mathcal C|u \)\par
+\textbf{Segment 67} (source line 470)\par
+\( A(u) \)\par
+\textbf{Segment 68} (source line 474)\par
+\( K_{\mathcal C}(t,s;b) \)\par
+\textbf{Segment 69} (source line 475)\par
+\( t,s \)\par
+\textbf{Segment 70} (source line 475)\par
+\( u \)\par
+\textbf{Segment 71} (source line 476)\par
+\( b \)\par
+\textbf{Segment 72} (source line 482)\par
+\[
+K_{\mathcal C}(t,s;b)
+\quad\Longleftrightarrow\quad
+\mathcal C|u\models t-s\le b.
+\tag{8}
+\]
+\textbf{Segment 73} (source line 491)\par
+\( +\infty \)\par
+\textbf{Segment 74} (source line 500)\par
+\( u \)\par
+\textbf{Segment 75} (source line 511)\par
+\( \max(g,0) \)\par
+\textbf{Segment 76} (source line 511)\par
+\( \max(-g,0) \)\par
+\textbf{Segment 77} (source line 523)\par
+\( \square \)\par
+\textbf{Segment 78} (source line 525)\par
+\( U,V \)\par
+\textbf{Segment 79} (source line 526)\par
+\( U\to V \)\par
+\textbf{Segment 80} (source line 526)\par
+\( x:U \)\par
+\textbf{Segment 81} (source line 527)\par
+\( V \)\par
+\textbf{Segment 82} (source line 527)\par
+\( \mathrm{convert}(x)\le-1_V \)\par
+\textbf{Segment 83} (source line 528)\par
+\( x=-1 \)\par
+\textbf{Segment 84} (source line 528)\par
+\( U \)\par
+\textbf{Segment 85} (source line 528)\par
+\( x\le_{-1}0_U \)\par
+\textbf{Segment 86} (source line 529)\par
+\( U \)\par
+\textbf{Segment 87} (source line 529)\par
+\( x=0 \)\par
+\textbf{Segment 88} (source line 534)\par
+\( u \)\par
+\textbf{Segment 89} (source line 535)\par
+\( u \)\par
+\textbf{Segment 90} (source line 535)\par
+\( u \)\par
+\textbf{Segment 91} (source line 545)\par
+\( p_i \)\par
+\textbf{Segment 92} (source line 545)\par
+\( L(p_i)=x_i \)\par
+\textbf{Segment 93} (source line 551)\par
+\( \top,\bot \)\par
+\textbf{Segment 94} (source line 551)\par
+\( 0,1 \)\par
+\textbf{Segment 95} (source line 552)\par
+\( \neg A \)\par
+\textbf{Segment 96} (source line 552)\par
+\( 1-L(A) \)\par
+\textbf{Segment 97} (source line 553)\par
+\( A\land B \)\par
+\textbf{Segment 98} (source line 553)\par
+\( \max(L(A),L(B)) \)\par
+\textbf{Segment 99} (source line 554)\par
+\( A\lor B \)\par
+\textbf{Segment 100} (source line 554)\par
+\( \min(L(A),L(B)) \)\par
+\textbf{Segment 101} (source line 555)\par
+\( A\Rightarrow B \)\par
+\textbf{Segment 102} (source line 555)\par
+\( \mathrm{res}(L(A),L(B)) \)\par
+\textbf{Segment 103} (source line 557)\par
+\( \Gamma \)\par
+\textbf{Segment 104} (source line 558)\par
+\( P_\Gamma=\max_{A\in\Gamma}L(A) \)\par
+\textbf{Segment 105} (source line 559)\par
+\( \mathcal C_B \)\par
+\textbf{Segment 106} (source line 562)\par
+\[
+\Gamma\models_{\rm CL}B
+\quad\Longleftrightarrow\quad
+\mathcal C_B\models L(B)\le P_\Gamma
+\quad\Longleftrightarrow\quad
+K_{\mathcal C_B}(L(B),P_\Gamma;0).
+\tag{9}
+\]
+\textbf{Segment 107} (source line 571)\par
+\( P_\Gamma=0 \)\par
+\textbf{Segment 108} (source line 571)\par
+\( B \)\par
+\textbf{Segment 109} (source line 572)\par
+\( P_\Gamma=1 \)\par
+\textbf{Segment 110} (source line 578)\par
+\( [0,1] \)\par
+\textbf{Segment 111} (source line 579)\par
+\( \min(x,1-x)=1/2 \)\par
+\textbf{Segment 112} (source line 579)\par
+\( x=1/2 \)\par
+\textbf{Segment 113} (source line 587)\par
+\( 1,1/2,0 \)\par
+\textbf{Segment 114} (source line 588)\par
+\( 1/2 \)\par
+\textbf{Segment 115} (source line 593)\par
+\( [l,u] \)\par
+\textbf{Segment 116} (source line 593)\par
+\( \tau \)\par
+\textbf{Segment 117} (source line 594)\par
+\( u\le\tau \)\par
+\textbf{Segment 118} (source line 595)\par
+\( l>\tau \)\par
+\textbf{Segment 119} (source line 638)\par
+\( k\ge2 \)\par
+\textbf{Segment 120} (source line 638)\par
+\( w\subseteq[k] \)\par
+\textbf{Segment 121} (source line 639)\par
+\( p \)\par
+\textbf{Segment 122} (source line 640)\par
+\( 2^k \)\par
+\textbf{Segment 123} (source line 640)\par
+\( \pi \)\par
+\textbf{Segment 124} (source line 642)\par
+\( c_i \)\par
+\textbf{Segment 125} (source line 642)\par
+\( M\ge0 \)\par
+\textbf{Segment 126} (source line 644)\par
+\[
+m_S=\Pr(S\subseteq w),\qquad m_\varnothing=1.
+\]
+\textbf{Segment 127} (source line 650)\par
+\[
+C_\pi(c,M)
+ =\sum_{j=1}^k c_{\pi_j}
+     m_{\{\pi_1,\ldots,\pi_{j-1}\}}
+   +M m_{[k]}.
+\tag{10}
+\]
+\textbf{Segment 128} (source line 672)\par
+\( n=2^k-1 \)\par
+\textbf{Segment 129} (source line 676)\par
+\( M\ge0 \)\par
+\textbf{Segment 130} (source line 677)\par
+\( 2^k-k \)\par
+\textbf{Segment 131} (source line 677)\par
+\( n-k \)\par
+\textbf{Segment 132} (source line 678)\par
+\( (c,M),(d,N) \)\par
+\textbf{Segment 133} (source line 679)\par
+\( c \)\par
+\textbf{Segment 134} (source line 679)\par
+\( d \)\par
+\textbf{Segment 135} (source line 679)\par
+\( M,N\ge0 \)\par
+\textbf{Segment 136} (source line 683)\par
+\( n \)\par
+\textbf{Segment 137} (source line 683)\par
+\( M>0 \)\par
+\textbf{Segment 138} (source line 683)\par
+\( N>0 \)\par
+\textbf{Segment 139} (source line 683)\par
+\( n-1 \)\par
+\textbf{Segment 140} (source line 684)\par
+\( n-1 \)\par
+\textbf{Segment 141} (source line 685)\par
+\( n \)\par
+\textbf{Segment 142} (source line 685)\par
+\( M\ne N \)\par
+\textbf{Segment 143} (source line 685)\par
+\( n-1 \)\par
+\textbf{Segment 144} (source line 687)\par
+\( v \)\par
+\textbf{Segment 145} (source line 687)\par
+\( v_\varnothing=0 \)\par
+\textbf{Segment 146} (source line 688)\par
+\( a,b \)\par
+\textbf{Segment 147} (source line 688)\par
+\( S \)\par
+\textbf{Segment 148} (source line 691)\par
+\[
+(c_a-c_b)v_S+c_bv_{S\cup\{a\}}-c_av_{S\cup\{b\}}.
+\tag{11}
+\]
+\textbf{Segment 149} (source line 699)\par
+\[
+v_A=\sum_{r=1}^{|A|}t_r e_r(c_A),
+\qquad \varnothing\ne A\subsetneq[k],
+\tag{12}
+\]
+\textbf{Segment 150} (source line 705)\par
+\( e_r \)\par
+\textbf{Segment 151} (source line 706)\par
+\( t_1,\ldots,t_{k-1} \)\par
+\textbf{Segment 152} (source line 707)\par
+\( v_i/c_i \)\par
+\textbf{Segment 153} (source line 716)\par
+\[
+\sum_{r=1}^{k-1}t_r e_{r+1}(c_{[k]})+Mv_{[k]}.
+\tag{13}
+\]
+\textbf{Segment 154} (source line 721)\par
+\( e_2(c)>0 \)\par
+\textbf{Segment 155} (source line 722)\par
+\( k \)\par
+\textbf{Segment 156} (source line 726)\par
+\( c \)\par
+\textbf{Segment 157} (source line 726)\par
+\( d \)\par
+\textbf{Segment 158} (source line 728)\par
+\( r \)\par
+\textbf{Segment 159} (source line 729)\par
+\( \prod_{i\in A}(d_i/c_i) \)\par
+\textbf{Segment 160} (source line 730)\par
+\( r \)\par
+\textbf{Segment 161} (source line 731)\par
+\( d_i/c_i \)\par
+\textbf{Segment 162} (source line 733)\par
+\( Mv_{[k]} \)\par
+\textbf{Segment 163} (source line 733)\par
+\( Nv_{[k]} \)\par
+\textbf{Segment 164} (source line 734)\par
+\( (M-N)v_{[k]} \)\par
+\textbf{Segment 165} (source line 736)\par
+\( Q \)\par
+\textbf{Segment 166} (source line 737)\par
+\( T \)\par
+\textbf{Segment 167} (source line 738)\par
+\( \mathrm{rank}\,T<\mathrm{rank}\,Q \)\par
+\textbf{Segment 168} (source line 739)\par
+\( v\in\ker T\setminus\ker Q \)\par
+\textbf{Segment 169} (source line 740)\par
+\( v \)\par
+\textbf{Segment 170} (source line 742)\par
+\( \square \)\par
+\textbf{Segment 171} (source line 746)\par
+\( |L|-|P| \)\par
+\textbf{Segment 172} (source line 747)\par
+\( L=\mathcal J(P) \)\par
+\textbf{Segment 173} (source line 747)\par
+\( P \)\par
+\textbf{Segment 174} (source line 753)\par
+\( c_i>0 \)\par
+\textbf{Segment 175} (source line 753)\par
+\( M>0 \)\par
+\textbf{Segment 176} (source line 754)\par
+\( c_j+\varepsilon>0 \)\par
+\textbf{Segment 177} (source line 755)\par
+\( \varepsilon\ne0 \)\par
+\textbf{Segment 178} (source line 755)\par
+\( M \)\par
+\textbf{Segment 179} (source line 756)\par
+\( k-1 \)\par
+\textbf{Segment 180} (source line 758)\par
+\( k-1 \)\par
+\textbf{Segment 181} (source line 760)\par
+\( j \)\par
+\textbf{Segment 182} (source line 760)\par
+\( P_r \)\par
+\textbf{Segment 183} (source line 761)\par
+\( r \)\par
+\textbf{Segment 184} (source line 762)\par
+\( P_1\subset\cdots\subset P_{k-1}=[k]\setminus\{j\} \)\par
+\textbf{Segment 185} (source line 763)\par
+\( |P_r|=r \)\par
+\textbf{Segment 186} (source line 764)\par
+\( P_r \)\par
+\textbf{Segment 187} (source line 764)\par
+\( j \)\par
+\textbf{Segment 188} (source line 766)\par
+\[
+C_{\pi_r}(c+\varepsilon e_j,M)-C_{\pi_r}(c,M)
+ =\varepsilon m_{P_r}.
+\tag{14}
+\]
+\textbf{Segment 189} (source line 773)\par
+\( k-1 \)\par
+\textbf{Segment 190} (source line 773)\par
+\( t_r \)\par
+\textbf{Segment 191} (source line 776)\par
+\[
+m_{P_s}=\sum_{r=1}^s t_r e_r(c_{P_s}),
+\qquad
+r_A=m_A-\sum_{r=1}^{|A|}t_r e_r(c_A)
+\quad(\varnothing\ne A\subsetneq[k]).
+\]
+\textbf{Segment 192} (source line 784)\par
+\( r_{P_s}=0 \)\par
+\textbf{Segment 193} (source line 788)\par
+\( \prod_{i\in P_s}c_i>0 \)\par
+\textbf{Segment 194} (source line 790)\par
+\( m_{[k]} \)\par
+\textbf{Segment 195} (source line 790)\par
+\( M \)\par
+\textbf{Segment 196} (source line 792)\par
+\( k-1 \)\par
+\textbf{Segment 197} (source line 793)\par
+\( k-1 \)\par
+\textbf{Segment 198} (source line 798)\par
+\( \square \)\par
+\textbf{Segment 199} (source line 800)\par
+\( M=0 \)\par
+\textbf{Segment 200} (source line 800)\par
+\( m_{[k]} \)\par
+\textbf{Segment 201} (source line 801)\par
+\( k-2 \)\par
+\textbf{Segment 202} (source line 813)\par
+\[
+[\min(0,\varepsilon),\max(0,\varepsilon)].
+\tag{15}
+\]
+\textbf{Segment 203} (source line 819)\par
+\( |\varepsilon| \)\par
+\textbf{Segment 204} (source line 825)\par
+\( \varepsilon/2 \)\par
+\textbf{Segment 205} (source line 826)\par
+\( |\varepsilon|/2 \)\par
+\textbf{Segment 206} (source line 832)\par
+\( \varepsilon \)\par
+\textbf{Segment 207} (source line 834)\par
+\( \varepsilon \)\par
+\textbf{Segment 208} (source line 848)\par
+\( k\ge2 \)\par
+\textbf{Segment 209} (source line 848)\par
+\( M\ge0 \)\par
+\textbf{Segment 210} (source line 852)\par
+\( h<k \)\par
+\textbf{Segment 211} (source line 853)\par
+\( g_h=(k+1)/(k+1-h) \)\par
+\textbf{Segment 212} (source line 853)\par
+\( g_k=k+M \)\par
+\textbf{Segment 213} (source line 855)\par
+\( h \)\par
+\textbf{Segment 214} (source line 858)\par
+\[
+B=\sum_w g_{|w|}p_w.
+\]
+\textbf{Segment 215} (source line 862)\par
+\( 2^k-k \)\par
+\textbf{Segment 216} (source line 864)\par
+\( \rho_w \)\par
+\textbf{Segment 217} (source line 866)\par
+\[
+R=1-\sum_w\rho_w,\qquad
+B_{\rm rem}=B-\sum_w g_{|w|}\rho_w.
+\]
+\textbf{Segment 218} (source line 871)\par
+\( R=0 \)\par
+\textbf{Segment 219} (source line 871)\par
+\( R>0 \)\par
+\textbf{Segment 220} (source line 874)\par
+\[
+p_w=\rho_w+\frac{R q_{|w|}}{\binom{k}{|w|}},
+\qquad
+q_h\ge0,\quad \sum_hq_h=1,\quad
+\sum_h g_hq_h=\mu=\frac{B_{\rm rem}}R.
+\tag{16}
+\]
+\textbf{Segment 221} (source line 883)\par
+\( k+1 \)\par
+\textbf{Segment 222} (source line 884)\par
+\( 1\le r\le k-1 \)\par
+\textbf{Segment 223} (source line 885)\par
+\( f_r(h)=\binom hr/\binom kr \)\par
+\textbf{Segment 224} (source line 886)\par
+\( R\mathbb E_qf_r \)\par
+\textbf{Segment 225} (source line 888)\par
+\( R>0 \)\par
+\textbf{Segment 226} (source line 891)\par
+\[
+\alpha=\frac{\mu-1}{k+M-1},\qquad
+q^-=(1-\alpha)e_0+\alpha e_k.
+\]
+\textbf{Segment 227} (source line 896)\par
+\( q^+ \)\par
+\textbf{Segment 228} (source line 896)\par
+\( g \)\par
+\textbf{Segment 229} (source line 897)\par
+\( \mu \)\par
+\textbf{Segment 230} (source line 897)\par
+\( \mu \)\par
+\textbf{Segment 231} (source line 898)\par
+\( \beta=\mathbb E_{q^+}f_1 \)\par
+\textbf{Segment 232} (source line 900)\par
+\[
+q^*=\tfrac12(q^-+q^+)
+\tag{17}
+\]
+\textbf{Segment 233} (source line 909)\par
+\[
+r(\mathcal C)=\frac R2(\beta-\alpha).
+\tag{18}
+\]
+\textbf{Segment 234} (source line 915)\par
+\( \varepsilon \)\par
+\textbf{Segment 235} (source line 915)\par
+\( 1+\varepsilon>0 \)\par
+\textbf{Segment 236} (source line 916)\par
+\( |\varepsilon|r(\mathcal C) \)\par
+\textbf{Segment 237} (source line 918)\par
+\( E \)\par
+\textbf{Segment 238} (source line 918)\par
+\( Er(\mathcal C) \)\par
+\textbf{Segment 239} (source line 920)\par
+\( q^- \)\par
+\textbf{Segment 240} (source line 921)\par
+\( \alpha \)\par
+\textbf{Segment 241} (source line 922)\par
+\( (g_h,h/k) \)\par
+\textbf{Segment 242} (source line 923)\par
+\( q^+ \)\par
+\textbf{Segment 243} (source line 923)\par
+\( \beta \)\par
+\textbf{Segment 244} (source line 924)\par
+\( (\beta-\alpha)/2 \)\par
+\textbf{Segment 245} (source line 924)\par
+\( R \)\par
+\textbf{Segment 246} (source line 926)\par
+\( r \)\par
+\textbf{Segment 247} (source line 926)\par
+\( L_r,U_r \)\par
+\textbf{Segment 248} (source line 927)\par
+\( \mathbb E_qf_r \)\par
+\textbf{Segment 249} (source line 928)\par
+\( B_r=\mathbb E_{q^+}f_r \)\par
+\textbf{Segment 250} (source line 931)\par
+\[
+2U_r\le\beta+B_r,\qquad
+2L_r\ge2\alpha+B_r-\beta.
+\tag{19}
+\]
+\textbf{Segment 251} (source line 937)\par
+\( (\alpha+B_r)/2 \)\par
+\textbf{Segment 252} (source line 939)\par
+\( (\beta-\alpha)/2 \)\par
+\textbf{Segment 253} (source line 939)\par
+\( r \)\par
+\textbf{Segment 254} (source line 940)\par
+\( R \)\par
+\textbf{Segment 255} (source line 942)\par
+\( j \)\par
+\textbf{Segment 256} (source line 942)\par
+\( [k]\setminus\{j\} \)\par
+\textbf{Segment 257} (source line 943)\par
+\( k-1 \)\par
+\textbf{Segment 258} (source line 945)\par
+\( k\ge2 \)\par
+\textbf{Segment 259} (source line 946)\par
+\( j \)\par
+\textbf{Segment 260} (source line 948)\par
+\( R=0 \)\par
+\textbf{Segment 261} (source line 952)\par
+\( g_j \)\par
+\textbf{Segment 262} (source line 955)\par
+\( M=0 \)\par
+\textbf{Segment 263} (source line 955)\par
+\( M>0 \)\par
+\textbf{Segment 264} (source line 959)\par
+\( \square \)\par
+\textbf{Segment 265} (source line 964)\par
+\[
+\frac{|\varepsilon|}{2}
+\max_{1\le j\le k-1}
+\left[
+\frac jk-\frac{j}{(k-j+1)(k+M-1)}
+\right].
+\tag{20}
+\]
+\textbf{Segment 266} (source line 973)\par
+\( O(k) \)\par
+\textbf{Segment 267} (source line 976)\par
+\( k=3,M=4 \)\par
+\textbf{Segment 268} (source line 977)\par
+\( |\varepsilon|/4 \)\par
+\textbf{Segment 269} (source line 978)\par
+\( |\varepsilon|=1/40 \)\par
+\textbf{Segment 270} (source line 978)\par
+\( 1/160 \)\par
+\textbf{Segment 271} (source line 979)\par
+\( 1/80 \)\par
+\textbf{Segment 272} (source line 980)\par
+\( 1/20 \)\par
+\textbf{Segment 273} (source line 986)\par
+\( k=4,M=1/10 \)\par
+\textbf{Segment 274} (source line 986)\par
+\( B=9/8 \)\par
+\textbf{Segment 275} (source line 989)\par
+\[
+m_1=41/496,\qquad m_2=1/48,\qquad m_3=5/248,
+\]
+\textbf{Segment 276} (source line 994)\par
+\( -3/496 \)\par
+\textbf{Segment 277} (source line 998)\par
+\( M>0 \)\par
+\textbf{Segment 278} (source line 1002)\par
+\( 1/400 \)\par
+\textbf{Segment 279} (source line 1003)\par
+\( 1/300 \)\par
+\textbf{Segment 280} (source line 1020)\par
+\( S \)\par
+\textbf{Segment 281} (source line 1020)\par
+\( Q \)\par
+\textbf{Segment 282} (source line 1022)\par
+\( 1/12 \)\par
+\textbf{Segment 283} (source line 1023)\par
+\( J \)\par
+\textbf{Segment 284} (source line 1025)\par
+\[
+E_Q=J+\sum_j Q_j(r_j+e_j),\qquad
+E_S=J+d+\sum_j S_j(r_j+e_j).
+\tag{21}
+\]
+\textbf{Segment 285} (source line 1032)\par
+\( |d|=|u/4-v|\le1/64 \)\par
+\textbf{Segment 286} (source line 1032)\par
+\( |r_j|\le1/100 \)\par
+\textbf{Segment 287} (source line 1033)\par
+\( |e_j|\le1/200 \)\par
+\textbf{Segment 288} (source line 1033)\par
+\( c=1/32 \)\par
+\textbf{Segment 289} (source line 1034)\par
+\( u,v \)\par
+\textbf{Segment 290} (source line 1035)\par
+\( d=u/4-v \)\par
+\textbf{Segment 291} (source line 1035)\par
+\( S_j,Q_j \)\par
+\textbf{Segment 292} (source line 1037)\par
+\( \sum_j|S_j-Q_j|=28633/46200 \)\par
+\textbf{Segment 293} (source line 1037)\par
+\( J \)\par
+\textbf{Segment 294} (source line 1041)\par
+\( J \)\par
+\textbf{Segment 295} (source line 1044)\par
+\[
+\begin{aligned}
+L_S-L_Q
+&\le |E_S-E_Q|-c\\
+&\le \frac1{64}
+  +\frac3{200}\frac{28633}{46200}
+  -\frac1{32}\\
+&=-\frac{4873}{770000}<0.
+\end{aligned}
+\tag{22}
+\]
+\textbf{Segment 296} (source line 1062)\par
+\( J \)\par
+\textbf{Segment 297} (source line 1065)\par
+\( Q \)\par
+\textbf{Segment 298} (source line 1077)\par
+\( x\le y_i\le b_i \)\par
+\textbf{Segment 299} (source line 1077)\par
+\( b_i\in\{0,1\} \)\par
+\textbf{Segment 300} (source line 1078)\par
+\( x\le z_0\le z_1\le z_2\le0 \)\par
+\textbf{Segment 301} (source line 1079)\par
+\( x\le0 \)\par
+\textbf{Segment 302} (source line 1079)\par
+\( i \)\par
+\textbf{Segment 303} (source line 1080)\par
+\( b_i=0 \)\par
+\textbf{Segment 304} (source line 1093)\par
+\[
+C=5+5m_1+5m_{12}+20m_{123}.
+\]
+\textbf{Segment 305} (source line 1098)\par
+\( m_1=1/2 \)\par
+\textbf{Segment 306} (source line 1098)\par
+\( m_{12}=1/4 \)\par
+\textbf{Segment 307} (source line 1098)\par
+\( 0\le m_{123}\le q \)\par
+\textbf{Segment 308} (source line 1101)\par
+\[
+C-9\le-\frac14+20q.
+\tag{23}
+\]
+\textbf{Segment 309} (source line 1106)\par
+\( q\le1/80 \)\par
+\textbf{Segment 310} (source line 1112)\par
+\( 35/4 \)\par
+\textbf{Segment 311} (source line 1112)\par
+\( 0 \)\par
+\textbf{Segment 312} (source line 1112)\par
+\( 35/4 \)\par
+\textbf{Segment 313} (source line 1112)\par
+\( 5 \)\par
+\textbf{Segment 314} (source line 1113)\par
+\( 55/4 \)\par
+\textbf{Segment 315} (source line 1113)\par
+\( 1/4 \)\par
+\textbf{Segment 316} (source line 1113)\par
+\( 9 \)\par
+\textbf{Segment 317} (source line 1113)\par
+\( 6 \)\par
+\textbf{Segment 318} (source line 1115)\par
+\( b_i \)\par
+\textbf{Segment 319} (source line 1178)\par
+\( 1/40 \)\par
+\textbf{Segment 320} (source line 1179)\par
+\( +1 \)\par
+\textbf{Segment 321} (source line 1179)\par
+\( -1/2 \)\par
+\textbf{Segment 322} (source line 1180)\par
+\( 1/20 \)\par
+\textbf{Segment 323} (source line 1228)\par
+\( -1/20 \)\par
+\textbf{Segment 324} (source line 1229)\par
+\( 1/20 \)\par
+\textbf{Segment 325} (source line 1255)\par
+\( 1.005003 \)\par
+\textbf{Segment 326} (source line 1256)\par
+\( 72.134739 \)\par
+\textbf{Segment 327} (source line 1257)\par
+\( 5.984763 \)\par
+\textbf{Segment 328} (source line 1257)\par
+\( 81.452699 \)\par
+\textbf{Segment 329} (source line 1260)\par
+\( 81.113254 \)\par
+\textbf{Segment 330} (source line 1294)\par
+\( (x_1,x_2,c_{\rm FN},c_{\rm FP}) \)\par
+\textbf{Segment 331} (source line 1295)\par
+\( x_i\in[-1,1] \)\par
+\textbf{Segment 332} (source line 1295)\par
+\( [1/2,2] \)\par
+\textbf{Segment 333} (source line 1298)\par
+\[
+\eta=\frac12+\frac{x_1+x_2}{8}.
+\]
+\textbf{Segment 334} (source line 1304)\par
+\[
+p^*=\frac{J_0}{J_0+J_1},\qquad
+J_0=c_{\rm FN}\eta,\quad
+J_1=c_{\rm FP}(1-\eta).
+\tag{24}
+\]
+\textbf{Segment 335} (source line 1323)\par
+\( 1/\eta \)\par
+\textbf{Segment 336} (source line 1324)\par
+\( 1/(1-\eta) \)\par
+\textbf{Segment 337} (source line 1324)\par
+\( 1/(J_0+J_1) \)\par
+\textbf{Segment 338} (source line 1336)\par
+\( 0.05 \)\par
+\textbf{Segment 339} (source line 1357)\par
+\( 0.01 \)\par
+\textbf{Segment 340} (source line 1358)\par
+\( 0.01 \)\par
+\textbf{Segment 341} (source line 1362)\par
+\( [0,1] \)\par
+\textbf{Segment 342} (source line 1363)\par
+\( 0.0247260580 \)\par
+\textbf{Segment 343} (source line 1364)\par
+\( 0.0252739420 \)\par
+\textbf{Segment 344} (source line 1364)\par
+\( 0.05 \)\par
+\textbf{Segment 345} (source line 1372)\par
+\( 0/46/4 \)\par
+\textbf{Segment 346} (source line 1372)\par
+\( \eta \)\par
+\textbf{Segment 347} (source line 1372)\par
+\( 0/39/11 \)\par
+\textbf{Segment 348} (source line 1373)\par
+\( (1-\eta) \)\par
+\textbf{Segment 349} (source line 1373)\par
+\( 9/41/0 \)\par
+\textbf{Segment 350} (source line 1397)\par
+\[
+\mathrm{logit}(p^*)
+ =\log c_{\rm FN}-\log c_{\rm FP}
+  +\log\eta-\log(1-\eta).
+\tag{25}
+\]
+\end{document}

@@ -1,0 +1,12 @@
+{
+  "schema": "gate-d-integrity-attempt-disposition-v1",
+  "failed_attempt": "entry_audit_attempt1.json",
+  "preserved_script": "audit_entry_attempt1.py",
+  "checks_passed": 2304,
+  "checks_failed": ["inherited_carry_offset_preserved"],
+  "finding": "The new audit used a 1e-70-second tolerance around a prior offset displayed to nanoseconds, despite inheriting a 50-significant-digit cumulative decimal. Its independently reconstructed offset is 0.00007399500000000000000000000000000000000000020000000000000000000000000000020 seconds. The excess beyond 0.000073995 is about 2e-46 seconds and comes from the recorded decimal rendering.",
+  "correction": "Compare that residual with the sum of half-last-place bounds in seconds for the inherited C close and F17 close (about 3e-46 seconds). Preserve the exact copied cumulative string and all exact nanosecond checks separately. Rerun the administrative audit to a new exclusive result path.",
+  "scientific_change": false,
+  "ledger_change": false,
+  "principal_concurrent_credit_minutes": 0
+}

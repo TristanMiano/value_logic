@@ -1,0 +1,25 @@
+{
+  "schema": "Gate-D-publication-packaging-correction-v1",
+  "recorded_utc": "2026-10-06T19:30:19.712432+00:00",
+  "stage": "local staged-tree packaging, attempt 1",
+  "outcome": "Guard stopped before any GitHub write.",
+  "cause": "Repository ignore rules omit .log files. Two intentionally preserved TeX renderer logs existed and were hash-bound by the audit but were not added by the ordinary git add.",
+  "missing_paths": [
+    "v2/work_logs/D_2026-10-06_S1/reviews/editorial/local_tex_attempt1/math_specimen.log",
+    "v2/work_logs/D_2026-10-06_S1/reviews/editorial/local_tex_spacing_check/spacing_specimen.log"
+  ],
+  "disposition": "Explicitly stage these two verified text logs with git add -f; add this correction record to the completion manifest; repackage the unchanged audited files.",
+  "scientific_artifact_changed": false,
+  "paper_or_claim_changed": false,
+  "clock_or_ledger_changed": false,
+  "GitHub_mutations_before_detection": 0,
+  "post_cutoff_credit": 0,
+  "attempt_2": {
+    "outcome": "Stopped before packet creation or any GitHub write.",
+    "cause": "The packaging guard incorrectly assumed every path uses mode 100644; the historical TODO_v2.md retains mode 100755.",
+    "disposition": "Preserve the tracked 100755 mode. A full staged-file scan confirms all 100 files have supported modes, exact working-tree bytes and UTF-8 text.",
+    "content_or_permission_changes": false,
+    "scientific_execution": false
+  },
+  "correction_record_updated_utc": "2026-10-06T19:32:05.262560+00:00"
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "gate-d-contribution-review-v1",
+  "recorded_utc": "2026-10-06T19:10:28.654391+00:00",
+  "reviewer": "ChatGPT (GPT-6 Astra Pro)",
+  "principal_concurrent_credit_minutes": 0,
+  "report_sha256": "18c45d7df537c6e8a076793c9e38412e5c8d887995ba041d2ee9cbf51971bc8d",
+  "recommendation": "PASS_ON_MATH_AND_CONTRIBUTION_AFTER_LOCAL_CLARIFICATION",
+  "contribution": "SUPPORTED_SCOPED",
+  "author_decision": "PENDING",
+  "new_scientific_stage": false,
+  "new_scientific_gap": false,
+  "contribution_displaced": false,
+  "findings": [
+    {
+      "id": "D-CON-01",
+      "type": "local_report_scope_precision",
+      "status": "accepted_by_principal_pending_revised_snapshot",
+      "location": "Theorem3 and current D claim map",
+      "required": "State that attempt-price vectors c and d, rather than only pairs (c,M),(d,N), are nonproportional.",
+      "source": "v2/derivations/09_c4_price_revision.md §3 C4-T1",
+      "counterexample": {
+        "k": 3,
+        "c": [
+          1,
+          1,
+          1
+        ],
+        "d": [
+          1,
+          1,
+          1
+        ],
+        "M": 1,
+        "N": 2,
+        "numerical_rank": 6,
+        "broader_misreading_rank": 7,
+        "invisible_moment_direction": {
+          "singletons": 1,
+          "pairs": -1,
+          "full_set": 0
+        }
+      },
+      "scientific_source_repair_required": false,
+      "recurrence_required": false
+    }
+  ],
+  "evidence": [
+    {
+      "path": "v2/work_logs/D_2026-10-06_S1/reviews/contribution/paper_entry.md",
+      "sha256": "18c45d7df537c6e8a076793c9e38412e5c8d887995ba041d2ee9cbf51971bc8d"
+    },
+    {
+      "path": "v2/work_logs/D_2026-10-06_S1/reviews/contribution/source_map.json",
+      "sha256": "7cea989beba658372d7df967d3eb11c8c801f8f0c15ca8f2d46dbcbb44888500"
+    },
+    {
+      "path": "v2/work_logs/D_2026-10-06_S1/reviews/contribution/primary_comparison.json",
+      "sha256": "738af27e87a9144e359c193febfdb13d924ad5dec6d5d289820a32d0e2faf8ce"
+    },
+    {
+      "path": "v2/work_logs/D_2026-10-06_S1/reviews/contribution/review_initial.md",
+      "sha256": "63915bf0450807f6e4e879d91db132727951c91ccf48fa8c7d6a579b1f86f186"
+    }
+  ],
+  "pending": [
+    "Revised report exact-hash targeted regression of macro/presentation changes and D-CON-01.",
+    "Other Gate D requirements assessed separately by principal and technical/accounting reviewers."
+  ]
+}

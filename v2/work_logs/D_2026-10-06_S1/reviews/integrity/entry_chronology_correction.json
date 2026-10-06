@@ -1,0 +1,22 @@
+{
+  "schema": "gate-d-entry-review-chronology-correction-v1",
+  "corrected_by": "ChatGPT (GPT-6 Astra Pro), same-model internal integrity reviewer",
+  "trigger": "The principal asked the reviewer to verify the initial prose's claim that the canonical report was unchanged when attempt 2 ran, because editing occurred concurrently.",
+  "error": "The initial prose carried forward attempt 1's unchanged-paper observation and attributed it to attempt 2.",
+  "preserved_original_review": "entry_review_v1.md",
+  "historical_binding_record": "entry_review_record.json",
+  "historical_binding_resolution": "The original entry_review.md bytes bound in entry_review_record.json are preserved as entry_review_v1.md. The current entry_review.md contains this explicit correction and has a separate v2 binding record.",
+  "captured_attempt2_canonical_report": {
+    "path": "paper_v2.md",
+    "bytes": 90376,
+    "sha256": "14e2a457ada3e3f7554d44f3ba8af9e24ec4c6a70af56d4cfbb7615e13c52865",
+    "changed_from_F17": true,
+    "read_occurs_within_started_utc": "2026-10-06T19:10:12.935522+00:00",
+    "read_occurs_within_ended_utc": "2026-10-06T19:10:14.699415+00:00"
+  },
+  "evidence": "entry_audit_attempt2.json: report_version and input_bindings.paper_v2.md; audit_entry.py has the exact recorded script hash and separately reads the canonical file after verifying historical bindings against the preserved F17 snapshot.",
+  "disposition": "The original 145 bindings were intentionally verified against the preserved F17 report. Their successful checks do not bind the final edited D paper. A separate D binding remains necessary. The machine result was correct and is not altered.",
+  "scientific_source_change": false,
+  "ledger_change": false,
+  "principal_concurrent_credit_minutes": 0
+}

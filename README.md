@@ -1,266 +1,80 @@
 # Value Logic
 
-**F17 research report assembled; Gate D is next and unattempted.**
-October 6, 2026 UTC. [Read the research report](paper_v2.md): candidate evidence,
-chosen semantics and rules, five main theorem statements, worked scientific and
-self-assessment derivations, all frozen results, ordinary baselines and the
-bounded contribution comparison. The [42-group claim map](v2/reporting/F17_v1/claim_map.json)
-and [reproducible tables](v2/reporting/F17_v1/tables.json) bind the report to
-its evidence. The author [approved Gate C PASS](v2/decisions/2026-10-06_gate_c_pass.md).
+**Reasoning with useful, fallible models—and preserving what matters when they change.**
 
-The contribution remains a modest synthesis/formal adaptation with specialized
-retention, repair and compatible-recovery results. Ordinary methods reproduce
-the equal-information service; practical superiority and worldwide priority
-remain unestablished. F15 retains **68/160 useful retention episodes** and
-**0/5 complete neural support** despite five task-ready networks. Ordinary
-training gives no particular reason for clean eight-neuron expected-cost
-blocks; ND01's better individual interventions do not establish one joint
-utility representation. **F15-ND02 remains optional, deferred and unstarted.**
+Value Logic investigates how a model, theory, representation or course of action serves an intended purpose, at a tolerable error and resource cost. Its central question is what reasoning should preserve when neither our models nor our criteria for using them can be assumed final.
 
-[Work, reviews, validation and accounting](v2/work_logs/F17_2026-10-06_S1.md).
-F17 contributor: **ChatGPT (GPT-6 Astra Pro)**, with attributed internal reviews
-and writing guidance from Armstrong and Loher's Mathematics Paper Skills.
-Gate D is a separate audit; report assembly does not complete the phase.
+The project develops mathematical semantics, inference rules, executable checkers and controlled applications. Two research reports present complementary approaches:
 
-**Preserved F16 completion: adversarial-review scope; D60 and Research90 satisfied.**
-October 5, 2026 UTC. The [adversarial review](v2/derivations/07_adversarial_review.md)
-reconstructs the native soundness/completeness and revision arguments and
-challenges the strongest ordinary combined baseline. **F16-R01** corrects an
-overbroad interpretation: in C4-A1's exact three-procedure equal-price family
-with `M>0`,
-the revised-coordinate midpoint predictions always admit one compatible law.
-The sharp error bound is unchanged. **F16-C1** adds an explicit compatible-law
-decoder attaining the unrestricted common minimax radius for every full exact
-equal-old-price summary fiber, for all `k>=2` and `M>=0`, for separately applied
-single-price edits.
-The [new derivation](v2/derivations/10_f16_coherent_recovery.md) states the limits:
-extra source restrictions can create a coherence cost, and the compatible law
-is an estimate carrying a query-specific error guarantee.
-
-**C4-S remains supported as a modest synthesis/formal adaptation with small
-application-specific technical extensions, relative to the checked comparisons.**
-Ordinary methods can reproduce the same service and use the same decoder;
-worldwide priority and general performance superiority remain unestablished.
-The [F16 work record](v2/work_logs/F16_2026-10-05_S1.md) controls its fresh
-D60/Research90 accounting and final task closure. At F16 close, a separate
-Gate C assessment was recommended; that assessment is now complete above.
-**F15-ND02 remains optional, deferred and unstarted**, available
-after F16 or later if selected; see [OPP-02](v2/opportunities.md#opp-02--is-the-lossvalue-structure-actually-learned-priority-2).
-F16 contribution: **ChatGPT (GPT-6 Astra Pro)**, with attributed delegated review.
-
-**Preserved F15-ND01 completion: diagnostic/reporting scope; Research90 satisfied at 90.797984 measured minutes.**
-October 5, 2026 UTC / America/Los_Angeles. The [neural diagnostic](v2/experiments/F15_ND01_results.md)
-clarifies F15's original 0/5 complete endpoint: known-structure calibration met
-the accuracy criteria while the endpoint's control-superiority requirement still
-failed; wider search and fractional interventions improved development accuracy.
-**Ordinary prediction training gives a network no task-specific reason to put
-each expected cost in one clean eight-neuron block.** Mixed or distributed
-features can make extraction difficult; technical superposition and a joint or
-unique utility representation are not established here. The original F15
-results and bounded C4-S contribution are unchanged. [ND01 work and accounting](v2/work_logs/F15_ND01_2026-10-05_S1.md).
-At ND01 close, F16 was selected with a fresh D60. The current F16 handoff and
-optional deferred ND02 placement are recorded above.
-
-**Preserved F15 completion: frozen-challenge reporting scope; E60 satisfied at 60.090886 measured minutes.**
-The [F15 results](v2/experiments/results.md) report **68 distinct useful
-revision/retention episodes** and **0/5 models meeting the complete neural
-intervention support criterion**. All five ordinary-trained models met the
-frozen task-readiness criteria; strong ordinary controls reproduce the equal-information retention
-results. Preparation and evaluation completed on attempt 1. The damaged
-aggregate is preserved. Its [exact separate recovery](v2/work_logs/F15_2026-10-04_S1/retention_results_recovered.json)
-has an explicit [F15-ART-01 disposition](v2/work_logs/F15_2026-10-04_S1/F15_ART_01.md).
-[F15 work and timing](v2/work_logs/F15_2026-10-04_S1.md) record **64.915803 total
-engaged minutes**, including **60.090886 E minutes**, with waits and recovery
-excluded. At F15 close, F16 was unattempted; Gates A/B retained their
-scoped passes and C/D were unattempted. Their current status is above.
-
-**Preserved F14 completion: [prospective protocol freeze](v2/experiments/protocol.md),
-with 90.564634 engaged research minutes; protected research90 satisfied.**
-The [configuration](v2/experiments/config.v1.json) and
-[34-file byte manifest](v2/experiments/freeze.v1.json) fix one revision/retention
-challenge and one ordinary-training ReLU intervention probe. This fixed F15's
-success criteria before evaluation. Development validation passed
-78 focused tests and exercised both parts, including the full neural development
-sample count. That development model did **not** meet the specified internal-cost
-intervention criterion; this is not a positive learned-mechanism result.
-The broader repository attempt had 1,638 successful cases and two legacy module
-import errors because PyTorch is absent; no full-repository pass is claimed.
-[Work, timing, failures and limits](v2/work_logs/F14_2026-10-04_S1.md).
-Contributor: **ChatGPT (GPT-6 Astra Pro)**, with attributed delegated work.
-**At F14 close: F15 was selected and unstarted, with protected E60.** No F15
-population had been trained or evaluated at that close. Gates A/B retained their
-scoped passes; C/D were unattempted.
-
-**Prior completion: [C4 contribution review](v2/contribution_review.md)**,
-by **Codex (GPT-6)**, with 60.336817 research minutes and research60 satisfied.
-Its supported claim remains a modest methodological synthesis/formal adaptation
-with small technical application extensions relative to the named inspected
-antecedents. [Price-revision derivations](v2/derivations/09_c4_price_revision.md)
-cover retention, repair, approximation and a conditional sampling application.
-Worldwide priority, general foundations, speed superiority, deployment calibration
-and learned internal structure remain unestablished. R-N01-01 is closed only at
-this narrowed contribution-selection scope. F16 retains that bounded claim; a
-closer antecedent or a defect in its actual distinguishing results can reopen it.
-[C4 work record](v2/work_logs/C4_2026-10-04_S1.md).
-
-Value Logic is a research project about reasoning with useful but fallible models under open-ended theory succession. It begins with a practical and philosophical question:
-
-> If we cannot know that our models give us final metaphysical truth, what should reasoning preserve, and what justifies using one model rather than another?
-
-The project's proposed starting point is **value**: how a model, theory, representation, or course of action serves an intended purpose, at a tolerable error and resource cost. The ambition is not just to attach usefulness scores to otherwise conventional judgments. It is to investigate a calculus in which semantic objects and inference rules make pragmatic value central, with familiar truth-based reasoning potentially recovered within a suitable fragment.
-
-**Phase one is complete. Phase two is building the value-based calculus first. F01–F17 are complete at their task scopes. F07 establishes finite-fragment soundness; F08 characterizes native consequence through directed unit access; F09 establishes exact Boolean and phase-one interfaces and numerical-presentation boundaries, with D60 satisfied. F10 completes the external audit and effort calibration, with L45 satisfied. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied. Gate A passed its foundation-readiness review; Gate C PASS approved by the author; F17 complete at report-assembly scope; D unattempted. The semantic core remains provisional.** The motivation below is the continuing research program. The particular constructions developed so far are realizations of it, not permanent foundations.
-
-The [Gate B decision](v2/checkpoints/B_1.md) records the fresh mathematical
-reconstruction and its limits. Nineteen new adversarial tests passed; broader
-runs crashed natively after bounded retries. The existing kernel is unchanged.
-N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied; phase two remains in progress.
-
-**N01's [contribution plan](v2/contribution_plan.md) is complete**, with the
-protected D+L60 satisfied and work attributed to **Codex (GPT-6)**. The first
-loss family has a cheap exact ordinary baseline: twelve affine bounds are
-needed to preserve all comparisons uniformly; an optional weaker contract
-preserves its chosen action with nine, depending on the priority order.
-Independent rational checks passed. These are scoped planning results, not a
-supported novelty or performance claim at N01 close. **R-N01-01 stayed open
-through F13; C4 closes the narrowed obligation above.** Its
-[D+L120 target recurrence](v2/decisions/2026-10-02_n01_recurrence.md) is now complete; C1/F11 (E60) is complete; C2/F12 (E60) is complete; F13 (D60/research90) is complete; C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied. See the original
-[derivations](v2/derivations/06_n01_decision_retention.md),
-[source comparison](v2/literature/03_n01_target_comparison.md) and
-[work record](v2/work_logs/N01_2026-10-02_S1.md).
-
-The [recurrence outcome](v2/contribution_plan.md#8-c3-close-targets-after-the-two-hour-recurrence)
-compares scientific and bounded self-assessment routes, with **120.540527
-engaged D+L minutes** and twenty-five targeted primary-source comparisons.
-An optional actual-program example shows that even a complete old loss law
-can omit information needed to judge a program edit; a small ordinary source
-summary repairs it. This is a concrete experimental target, not supported
-project novelty. Three recurrence probes passed; the full suite passed
-**1,429 tests on the third attempt**, after two native crashes. Both crashes
-and the floor assessment are preserved in the
-[recurrence work record](v2/work_logs/N01R_2026-10-02_S1.md).
-
-The [PLAN01 amendment](v2/decisions/2026-09-30_novelty_and_recurrence.md) makes
-supported project-level novelty a requirement for Gates C/D. An unestablished
-contribution assigns recurrence or further work. Research proceeds in protected
-60/90-minute chunks within cumulative 4/8/16/32-hour checkpoints, expanding
-substantive scope and supporting evidence together. Existing A/B passes retain
-their mathematical scopes. [C4](v2/contribution_review.md) now supports a
-modest scoped synthesis/application claim under the
-[broader criterion](v2/decisions/2026-10-04_novelty_scope.md).
+- **[Loss Comparisons and Information Retention Under Revision](paper_v2.md)** develops a value-based calculus and studies how much information must survive changes in the costs of correlated procedures.
+- **[Scoped Reliance on Fallible Models Under Open-Ended Succession](paper.md)** develops an evidence-relative framework for deciding when a model is licensed for a particular use.
 
 ## Motivation: useful does not mean final
 
-Newtonian physics is the guiding example. Relativity and quantum theory expose limits to an unrestricted Newtonian description, but that does not make a Newtonian calculation worthless. On an appropriate domain it may provide the accuracy a task needs, with less computational work, fewer measurements, or a more transparent explanation than a more elaborate model. A successor can restrict a predecessor's scope without eliminating its practical value.
+Newtonian physics is a guiding example. Relativity and quantum theory expose limits to an unrestricted Newtonian description, but a Newtonian calculation can still deliver the accuracy a task needs, with less computation, fewer measurements or a more transparent explanation. A successor can restrict a predecessor's scope while leaving much of its practical value intact. The [first report](paper.md) develops this example and its sources.
 
-We also expect our present physical theories to be extended or superseded. The project takes seriously the possibility that this process has no knowable endpoint: an agent may never be entitled to announce that it finally possesses the ultimate theory. That is a motivation for the research, not a theorem that every theory must have a successor. The [phase-one paper](paper.md) develops the physics example and its sources in detail.
+The project takes seriously the possibility that scientific revision has no knowable endpoint. An agent may never be entitled to announce that it possesses the ultimate theory. This motivates the research; it is not a theorem that every theory must have a successor. The practical questions remain available: where does a model work, what error is tolerable, what does its use cost, what alternatives exist, and what evidence would change our reliance on it?
 
-Mathematics raises a related question at another level. A proof operates within stated axioms and inference rules; choosing an axiomatic framework is a different question from deriving a theorem within it. Choices such as accepting the axiom of choice need not be treated as a universally compulsory foundation for every purpose. Value Logic does not assume access to a uniquely privileged axiomatic system. It asks how expressive power, useful deductions, tractability, and the intended task can bear on the use of a framework, while keeping its actual mathematical assumptions explicit.
+Mathematics raises a related question. Deriving a theorem within stated axioms differs from choosing a framework for a purpose. Choices such as accepting the axiom of choice need not be universally compulsory for every investigation. Expressive power, useful deductions and tractability can inform that choice while its mathematical assumptions remain explicit.
 
-The common problem is **how to reason and act before finality**. Lack of access to absolute truth is not a reason to stop modeling. Nor does usefulness settle whether a model is metaphysically true or false. We can instead ask where it works, what error we can tolerate, what it costs, what alternatives exist, and what evidence would make us revise our reliance on it.
+Usefulness does not settle metaphysical truth. It gives us something concrete to reason about while knowledge remains revisable.
 
-## Why value is the proposed primitive
+## Why begin with value?
 
-The foundational proposal is to begin with value-related distinctions rather than require an unqualified true/false verdict as the operational primitive. A model may be better for one task and worse for another. It may be good enough without being the best available model, or cease to be the preferred choice while remaining worth retaining for a different domain or budget.
+The foundational proposal makes task-relative value central to the semantic objects and inference rules themselves. A model can be adequate without being the best available option. It can cease to be preferred for one task while remaining worth retaining for another domain or budget.
 
-Here “value” is broader than a probability, a truth degree, money, or one universally correct utility function. A scalar reward or loss is one possibility. A context-dependent function, an ordered structure, or an attainable set of guarantees may preserve distinctions that a single evaluated score loses. Conversely, more structure is not automatically better: the representation should retain what the intended reasoning needs, rather than copy every detail of the original object.
+Here, value is broader than probability, truth degree, money or a universally correct utility function. A scalar reward or loss is one possible representation. A function of uncertain quantities, an ordered structure or a set of attainable guarantees may preserve distinctions that one evaluated score loses. The appropriate amount of structure depends on the intended reasoning.
 
-Unbounded values remain an explicit part of the investigation. The project does not assume that all useful semantic quantities must lie in a fixed interval such as `[0,1]`. Bounded encodings are also allowed, but their operations and precision must preserve the intended conclusions; applying a squashing function is not by itself an equivalence of calculi.
+Unbounded values are part of the investigation. There is no general requirement that useful quantities lie in a fixed interval such as `[0,1]`. Bounded encodings are possible when their operations and precision preserve the intended conclusions; a squashing function alone does not establish that equivalence.
 
-Three linked questions therefore guide the foundations work:
+Three questions guide the work:
 
-1. **What carries meaning?** What value objects represent the task-relevant content of an expression or model use?
-2. **What follows from what?** Which conclusions about value, adequacy, or possible use are justified by which premises?
-3. **How does meaning compose?** What information must survive joint use, sequential use, changes of task, and revision?
+1. **Meaning:** what represents the task-relevant content of an expression or model use?
+2. **Inference:** which conclusions about value or adequacy follow from which premises?
+3. **Composition:** what information must survive joint use, sequential use, changes of task and revision?
 
-Ordinary mathematical proofs remain available in an explicitly stated metatheory. Treating value as the proposed operational primitive does not require abandoning rigorous derivation, and the philosophical motivation does not uniquely force one algebra.
+Ordinary mathematical proofs remain available in an explicitly stated metatheory. The philosophical motivation leaves room for several possible calculi.
 
-## The original practical questions remain
+## Loss comparisons and revision
 
-The scientific-model motivation leads to more than ranking whole theories. An older model and a successor can have overlapping useful domains. A task may require a composition of models, a translation between their outputs, a router choosing where to use each, or a fallback when no available option meets the requirements. The reasoning needs to account for error propagation, resource use, and the evidence supporting each step.
+The [second report](paper_v2.md) compares scalar values, aligned profiles, continuation-based descriptions and achievable guarantees. Its working calculus uses finite signed piecewise-affine loss expressions over a shared uncertain source. A proof combines bounds on these expressions, and a receiver checks that the conclusion answers the current request under the current evidence.
 
-The project consequently distinguishes empirical adequacy, permission to rely, comparative preference, current selection, and archival retention. It asks how these can change when evidence is revised or a better model becomes available, and how a local change should affect downstream conclusions without needlessly discarding unaffected work. A named fallback has its own consequences; doing nothing is not automatically a cost-free or adequate alternative.
+This distinction matters when a price, model or observation changes. An old answer may remain useful, require a limited repair or lose its justification. The calculus separates the information retained about the source, the consumer's actual question and the evidence needed to accept the answer.
 
-A further original goal is to make this reasoning representable and learnable. Phase one used a basic ReLU multilayer perceptron as a reference architecture and tested structured numerical proposals against direct classification. That engineering direction remains part of the broader project, but ReLU, cross-entropy, and any particular network architecture are not axioms of Value Logic.
+The main mathematical application studies procedures that share correlated failure outcomes and whose attempt prices can change. It characterizes exact retention requirements, constructs minimal repairs using new expected costs, and gives a compatible probability-law reconstruction with a sharp common error guarantee for a specified family of old summaries. These results distinguish preserving accurate numbers, selecting a good action and retaining a reusable model.
 
-The earlier writing also explores relationships among values, beliefs, task judgments, and black-box behavior. One longer-term hope is that a value-based view could help explain an agent's policy, rather than merely reproduce its outputs. The [original essays and exploratory notes](posts/) and [conversation records](llm_convos/) preserve those origins. These are research motivations and possible later branches, not claims that behavioral reconstruction already establishes interpretability or recovers a uniquely true utility.
+The work is a modest synthesis, formal adaptation and specialized application of established ideas in quantitative reasoning, optimization and information recovery. Ordinary methods remain strong comparators and can reproduce the same numerical services. The [report's contribution comparison](paper_v2.md#11-contribution-and-relation-to-established-work) identifies the precise technical additions and their scope.
 
-## Current emphasis: loss-grounded, reflective, and interpretable
+## Applications and experiments
 
-The active direction connects pragmatic value to losses and rewards used in
-machine learning, treated as revisable proxies rather than final utility.
-Rational Lawvere-style arithmetic is a starting comparison, with cost/value
-meaning beyond degrees of truth. Modest self-assessment and uncertainty about
-evaluators are active capability targets. Neural interpretation seeks structure
-learned by ordinary networks, not only architectures built to implement a logic.
-[DIR01](v2/decisions/DIR01_loss_grounded_reflective_direction.md) specifies this
-direction, its scope and its open choices; the [opportunity register](v2/opportunities.md)
-guides bounded agent initiative. F03–F10 are complete at their task scopes; [Gate A](v2/checkpoints/A_1.md) passed, and F10 completes the external audit and effort calibration, with L45 satisfied. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied.
+| Application | What it investigates |
+|---|---|
+| [Scientific model replacement](v2/derivations/06_case_studies.md) | Combining error, shared-source and resource premises to justify a cheaper procedure for a bounded task. |
+| [Staged self-assessment](v2/derivations/06_case_studies.md#4-actual-bounded-native-procedures-and-later-reasoning) | Using checked outcomes of actual short proof procedures to choose and evaluate a later reasoning policy. |
+| [Information retention under revision](v2/experiments/results.md) | Deciding when retained information supports a revised request, when new observations repair it and when refusal is appropriate. |
+| [Ordinary-trained neural representations](v2/experiments/F15_ND01_results.md) | Testing whether task-relevant cost computations can be extracted and intervened on inside networks trained for ordinary prediction. |
 
-## What phase one established
+The frozen retention challenge met its usefulness criterion in 68 of 160 episodes, with ordinary controls reproducing the equal-information results. In the neural probe, all five networks learned the prediction task and none met the complete intervention-support criterion. A follow-up diagnostic improved individual interventions and clarified the limits of the original extraction method.
 
-The completed paper, [*Value Logic: Scoped Reliance on Fallible Models Under Open-Ended Succession*](paper.md), developed one finite-stage, evidence-relative calculus of licensed reliance. A request identifies a use plan, context, epistemic state, and requirement profile. Malformed requests are separated from meaningful requirements assessed as supported, open, or refuted; their combination yields `Granted`, `Withheld`, or `Refused`, with `Undefined` reserved for failed well-formedness.
+**Ordinary prediction training gives a network no particular reason to organize each expected cost into one clean eight-neuron block.** Shared or distributed features can make that extraction difficult. The diagnostic motivates further work on joint representations; it does not establish technical superposition or a unique internal utility function. The [report](paper_v2.md#10-the-ordinary-trained-neural-intervention-probe) presents both the negative result and the informative improvements.
 
-Its results address profile refinement, open-ended succession, revision locality, model composition, domain transport, and what an implementation must preserve. It separates learned numerical proposals from the exact evidence, provenance, and selection checks required by that realization. The [formalism](formalism/), [verification suite](verification/), and [code guide](CODE_GUIDE.md) retain the details.
+## The broader research program
 
-The [synthetic experiment](experiments/02_results.md) had mixed results: the structured pipeline transferred better when tolerances changed, but lost other registered comparisons and sent almost all target-weighted cases to fallback. Representational success was therefore not treated as evidence of general operational usefulness. The completed research and its negative results remain intact.
+A scientific task may combine models, translate between their outputs, route requests among them or invoke a fallback. Each step has its own error, cost and evidential requirements. Value Logic distinguishes empirical adequacy, permission to rely, comparative preference, current selection and archival retention, so that revision can change one without conflating the others. A fallback has consequences of its own.
 
-Phase one is a completed realization, **not an immutable definition of the project**. Its results may be reused with their assumptions, adapted, or compared against a different foundation. The [original task history](TODO.md), [detailed phase-one README](README_phase1_archive.md), and [public-facing adaptation](substack_post.txt) remain available.
+The [first report](paper.md) makes licensed reliance relative to a use, context, epistemic state and requirement profile. It studies refinement, succession, local revision, composition and implementation preservation. Its [synthetic experiment](experiments/02_results.md) finds mixed advantages for structured numerical proposals and retains the ordinary comparisons that limit broader claims.
 
-## Phase two: build the value-based calculus first
+Learning and interpretability remain longer-term goals. A value-based description might help explain an agent's policy as well as predict its outputs. Neither a particular neural architecture nor the recovery of a uniquely true utility is assumed by the mathematical framework. The [original essays](posts/) and [exploratory conversations](llm_convos/) preserve the philosophical and practical origins of these questions.
 
-The current phase asks:
+## Explore the repository
 
-> What semantic objects and inference rules let an agent draw conclusions justified by preservation of pragmatic value, rather than merely attach scores to conventional judgments?
+| Material | Location |
+|---|---|
+| Research reports | [Loss comparisons and retention](paper_v2.md) · [Scoped reliance](paper.md) |
+| Definitions and derivations | [Mathematical development](v2/derivations/) |
+| Reproducibility | [Saved-result verification](paper_v2.md#133-verifying-saved-results) · [Experiment protocol](v2/experiments/protocol.md) |
+| Evidence and comparisons | [Claim ledger](v2/claim_ledger.md) · [Literature studies](v2/literature/) |
+| Research directions | [Opportunity register](v2/opportunities.md) |
+| Contributor workflow | [Workspace guide](v2/README.md) · [Research protocol](v2/RESEARCH_PROTOCOL.md) · [Task plan](TODO_v2.md) |
 
-**F01 — requirements and separating examples — is complete.** Eight worked examples and a reconstruction audit examine cost versus accuracy, task changes, hidden dependence, joint and sequential composition, incomplete or conflicting evaluation, toy axiomatic systems, unbounded values, and information-dependent decisions. A central lesson is that a summary can be insufficient for an exact answer yet sufficient for the guarantee or tolerance actually requested. See the [examples](v2/foundations/01_requirements_and_separating_examples.md) and [reconstruction](v2/foundations/01a_reconstruction_and_information_contracts.md).
-
-**F02 — competing semantic candidates — is complete at its comparison scope.** It develops four concrete alternatives rather than selecting a permanent core:
-
-| Candidate | What carries the meaning | Main question it helps expose |
-|---|---|---|
-| Evaluated scalars | A numerical evaluation for a fixed task | When is a compressed score sufficient? |
-| Aligned value profiles | Values across shared scenarios | Which joint distinctions must composition preserve? |
-| Continuation-value transformers | How a step maps downstream goals to present value | How should value propagate through sequential use? |
-| Achievable guarantee sets | Combinations of requirements an available use can satisfy | What is achievable without forcing all constraints into one tradeoff score? |
-
-The [candidate comparison](v2/foundations/02_candidate_semantics.md) and [continuation audit](v2/foundations/02a_candidate_reconstruction.md) give operations, worked examples, restrictions, and connections among these alternatives. Their 124 dedicated checks are development evidence for the stated examples, not a soundness proof for an adopted calculus. The [F02 completion record](v2/work_logs/F02_2026-09-22_S2.md) preserves the research and timing evidence.
-
-**F03 — external foundations audit — is complete.** The [source-use register](v2/literature/F03_import_contracts.json), [theorem agenda](v2/literature/01i_calculus_desiderata_and_theorem_agenda.md), and [phase-one comparison](v2/literature/01j_phase_one_literature_and_novelty.md) distinguish established ingredients, scoped imports and future contribution opportunities. The [completion record](v2/work_logs/F03_2026-09-24_S10.md) retains evidence and measured review time.
-
-**F04 is complete at its candidate-discrimination scope.** The [completion reconstruction](v2/derivations/01e_equal_information_completion.md) compares source-grounded arithmetic certificates with continuation-value formulations, including proxy alignment, shared-source composition, bounded reflection and prospective neural tests. The [completion record](v2/work_logs/F04_2026-09-26_S6.md) preserves the evidence and measured effort.
-
-**F01–F17 are complete; Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied.** [F05](v2/foundations/03_provisional_core.md) specifies the provisional source-aware loss semantics, [F06](v2/derivations/02_inference_rules.md) supplies the rules, and [F07](v2/derivations/03f_soundness_acceptance.md) establishes finite-fragment soundness. [F08](v2/derivations/04_characterization.md) proves completeness for the target-unit reduct. [F09](v2/derivations/05_fragments_and_comparisons.md) gives an exact Boolean entailment translation, scoped phase-one evidence adapters, affine presentation laws, and explicit failures of broader identifications. Optional results characterize Boolean observations, exact finite grids, nonlinear budget bounds and joint-profile information; a general affine certificate reconstruction is proved on paper, with its implementation deferred. The [F09 work record](v2/work_logs/F09_2026-09-30_S1.md) records **60.091745 engaged D minutes**, attribution to **Codex (GPT-6)**, **46 passing F09 tests** and **8 checked, round-tripped native certificates**. Broader runs hit native Python failures after bounded retries; no full-suite or CI pass is claimed for F09. Gate A retains its readiness PASS; Gate B has now passed; Gate C PASS approved by the author; F17 complete at report-assembly scope; D unattempted; F11 is complete at its bounded integration scope. [TODO_v2.md](TODO_v2.md) is authoritative.
-
-**F10's [external audit](v2/literature/02_core_audit.md) and [effort calibration](v2/literature/02a_research_calibration.md) are complete.** Five primary-source comparisons distinguish established mathematics from native adaptations. The author's subsequent planning amendment calls for cumulative **4 / 8 / 16 / 32-hour stages**, each adding substantive breadth and stronger evidence in roughly equal measure. The calibration gives an illustrative path from a loss comparison through revision, bounded self-assessment and a neural question, while retaining the original package forecasts as effort estimates. These are prospective scope targets, with uncertain novelty, not a promise to complete all remaining v2 work. The [record](v2/work_logs/F10_2026-09-30_S1.md) credits **45.001320 literature minutes** and attributes the work to **Codex (GPT-6)**. Three full-suite attempts crashed natively; F10 claims no suite pass. Gate B passed at mathematical-readiness scope; N01 is complete at target-selection scope; N01 recurrence C3 is complete at refinement scope (D+L120 satisfied); F11 is complete at bounded integration scope (E60 satisfied); F12 is complete at differential/cost scope (E60 satisfied); F13 is complete at case-study scope (D60/research90 satisfied); C4 is complete at contribution-review scope (research60 satisfied); F14 is complete at prospective-freeze scope (research90 satisfied); F15 complete at frozen-challenge reporting scope (E60 satisfied); F16 complete at adversarial-review scope; D60 and Research90 satisfied.
-
-The former contract-semantics and inverse-task-recovery plan is preserved in [TODO_v2_contracts_archive.md](TODO_v2_contracts_archive.md). It remains a possible future direction, alongside model substitution, inquiry and self-revision, learning, and policy interpretability. There is no fixed limit on later phases.
-
-## Working method and validation
-
-Follow [TODO_v2.md](TODO_v2.md) and the [research protocol](v2/RESEARCH_PROTOCOL.md), not an archived queue. One selected task or gate attempt is the scope of a session unless a batch is explicitly requested. Derivations and worked equations, external literature checks, and executable tests remain distinct evidence streams. Forecast effort before work, record actual clocks, respect protected research minimums, and allocate time to both reliable gains and difficult, uncertain ideas.
-
-Readiness gates can send the project back to an earlier definition, proof, or experiment. A failed candidate is recorded rather than hidden, completed history is preserved, and passing tests or spending time does not substitute for a missing argument. Commit validated work with its task ID; publish repository changes when authorized. The present F02 publication and README restoration were explicitly requested by the author.
-
-The existing full repository command is:
-
-```text
-python -m verification
-```
-
-For the F02 fixtures alone, using the Python standard library:
-
-```text
-python -m unittest discover -s verification -p 'test_v2_f02*.py'
-```
-
-The dedicated result is 124 tests. Full-suite dependencies and the distinction between fixture checks and the future reasoner are described in [v2/README.md](v2/README.md), [CODE_GUIDE.md](CODE_GUIDE.md), and the [CI workflow](.github/workflows/verify.yml). The exact commit's GitHub Actions result is the publication validation record.
-
-## Repository guide
-
-- [TODO_v2.md](TODO_v2.md), [v2/project_spec.md](v2/project_spec.md), [v2/claim_ledger.md](v2/claim_ledger.md), and [v2/notation.md](v2/notation.md): current plan, scope, evidence, and terminology.
-- [v2/foundations/](v2/foundations/), [v2/checks/](v2/checks/), and [v2/work_logs/](v2/work_logs/): phase-two theory, executable examples, and session records.
-- [paper.md](paper.md), [formalism/](formalism/), [ml/](ml/), [experiments/](experiments/), and [notes/](notes/): completed phase-one results and supporting material.
-- [posts/](posts/), [llm_convos/](llm_convos/), and [substack_post.txt](substack_post.txt): intellectual origins, exploratory discussions, and public exposition.
-
-The project continues from the original motivation: **reasoning should remain useful, compositional, and revisable even when final truth is unavailable.** Each phase is an attempt to make that idea mathematically and operationally concrete.
+The reports present the research; the workspace records preserve its derivations, experiments, decisions and attributed contributions.
