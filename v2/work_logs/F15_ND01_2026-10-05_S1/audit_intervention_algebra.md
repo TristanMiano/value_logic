@@ -18,10 +18,10 @@ change to the frozen experiment or any result.
 
 Writing `T(h)-d=(I-M)(h-d)` immediately gives
 
-\[
+```math
 T^k(h)=d+(I-M)^k(h-d)
       =h+[I-(I-M)^k](d-h).
-\]
+```
 
 At `k=2`, subtracting one application gives exactly
 `M(I-M)(d-h)`. For diagonal `m_j in [0,1]`, the effective replacement
@@ -37,10 +37,10 @@ term needs to be added.
 
 The more general overwrite law has the same obstruction:
 
-\[
+```math
 T_{M,d_2}T_{M,d_1}(h)-T_{M,d_2}(h)
 =M(I-M)(d_1-h).
-\]
+```
 
 Thus a binary mask or projector supplies the full-state overwrite law for
 arbitrary donors. For fractional masks, cancellation in one scalar output
@@ -65,10 +65,10 @@ For a declared difference span `D`, write `v=v_D+v_N` and
 `q_r=c_r+n_r`, where `c_r=projection_D(a_r)` and `n_r in D^perp`.
 Orthogonality of the two component spaces gives
 
-\[
+```math
 q_r^T v-\|q_r\|^2
 =c_r^T v_D+n_r^T v_N-\|c_r\|^2-\|n_r\|^2.
-\]
+```
 
 Setting this to zero yields precisely the document's first equation.
 Likewise `q0.T q1=c0.T c1+n0.T n1` gives the stated negative sign in

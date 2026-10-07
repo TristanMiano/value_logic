@@ -181,9 +181,9 @@ are not claimed to form one coherent probability law.
 
 For each order and the fallback, compute the **same-law** robust regret
 
-\[
+```math
 \rho(a)=\max_{b}\max_{p\in P}\{C_a(p)-C_b(p)\}.
-\]
+```
 
 Choose the minimum regret, then the smallest upper absolute cost, then the
 fixed order index. Admit the choice only if **`rho<=epsilon=1/20`**. A selected
@@ -298,10 +298,10 @@ faster refusal is not a successful computation of the same answer.
 Independent raw inputs are `x1,x2~Uniform[-1,1]` and
 `cFN,cFP~Uniform[.5,2]`. Let
 
-\[
+```math
 \eta(x)=\tfrac12+(x_1+x_2)/8,\quad Y\mid x\sim\mathrm{Bernoulli}(\eta),
 \qquad J_0=c_{FN}\eta,\quad J_1=c_{FP}(1-\eta).
-\]
+```
 
 Train a dense four-input, 32-ReLU, one-affine-logit sigmoid network by ordinary
 weighted binary cross-entropy with weight `cFN Y+cFP(1-Y)`. **Only sampled
@@ -467,9 +467,9 @@ seeds or deployment calibration is made.
 For a bounded sample mean with range width `w`, use the two-sided Hoeffding
 interval with radius
 
-\[
+```math
 r=w\sqrt{\log(2K/\alpha)/(2n)},\qquad K=560,\quad\alpha=.05,
-\]
+```
 
 clipped to the declared range. The union bound covers all rows in the following
 fixed family. No data-dependent reduction of `K` is allowed. Search candidates
@@ -519,10 +519,10 @@ receive unlisted confirmatory claims.
 
 Conditional base and actual-intervention bounds also imply
 
-\[
+```math
 \mathbb E\left| (p_I-p_B)-(p_H-p_*)\right|
 \le \mathbb E|p_I-p_H|+\mathbb E|p_B-p_*|\le .10.
-\]
+```
 
 This is a derived **mean absolute adjusted-effect** bound, not an RMSE or
 per-example guarantee, and requires no extra confidence-family row. It applies

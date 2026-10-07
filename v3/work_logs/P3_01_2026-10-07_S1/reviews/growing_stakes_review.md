@@ -8,10 +8,10 @@ experiment, executable test, later-task execution or clock credit.
 For positive integers `n`, the forecast is a valid probability and
 `(p_n-0)^2=1/n^2`. For every `N>=1`,
 
-$$
+```math
 \sum_{n=1}^{N}\frac1{n^2}
 \le 1+\int_1^\infty x^{-2}\,dx=2.
-$$
+```
 
 The two estimated action costs are exactly `1` and `1/2`, so the estimated
 minimizer always selects the fallback without a tie. Actual costs are `0`

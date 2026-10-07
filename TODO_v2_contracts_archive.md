@@ -74,27 +74,27 @@ The follow-up asks:
 
 The main intended construction begins with a use contract
 
-\[
+```math
 X_{e,q}(w)
 =
 J(F_q,D_q;w)-J(e,D_q;w)-\Delta_q,
-\]
+```
 
-whose payoff is positive when using plan \(e\) improves on the named fallback by the required margin in world \(w\). An epistemic state supplies lower and upper valuations
+whose payoff is positive when using plan $`e`$ improves on the named fallback by the required margin in world $`w`$. An epistemic state supplies lower and upper valuations
 
-\[
+```math
 \underline V_s(X),\qquad \overline V_s(X).
-\]
+```
 
 The qualitative state is then obtained by the sign position of the valuation interval:
 
-\[
+```math
 \underline V_s(X)\ge 0
 \Rightarrow \mathsf{Supported},
 \qquad
 \overline V_s(X)<0
 \Rightarrow \mathsf{Refuted},
-\]
+```
 
 with the remaining meaningful cases Open.
 
@@ -114,9 +114,9 @@ A small synthetic experiment should test whether an active contract-query strate
 The roadmap should aim for the following scoped results, revising them at checkpoints when necessary:
 
 1. **Contract-abstraction theorem:** sign abstraction of a valid lower/upper valuation interval is sound for favorable and unfavorable contract value and reproduces the relevant finite-stage license atoms.
-2. **Indicator embedding theorem:** Boolean events embed into bounded contracts through indicator functions, with `not`, `and`, and `or` recovered by \(1-x\), `min`, and `max`; precise expectation recovers ordinary probability.
+2. **Indicator embedding theorem:** Boolean events embed into bounded contracts through indicator functions, with `not`, `and`, and `or` recovered by $`1-x`$, `min`, and `max`; precise expectation recovers ordinary probability.
 3. **Observational quotient theorem:** every exact representation of a declared judgment family factors through its response quotient, and the quotient is the coarsest exact task code up to relabeling.
-4. **Threshold-recovery theorem:** under translation-invariant valuation, judgments of \(X-p\) locate \(\underline V(X)\) and \(\overline V(X)\); a finite binary-search procedure recovers them to declared resolution.
+4. **Threshold-recovery theorem:** under translation-invariant valuation, judgments of $`X-p`$ locate $`\underline V(X)`$ and $`\overline V(X)`$; a finite binary-search procedure recovers them to declared resolution.
 5. **Finite linear identifiability theorem:** a normalized finite-dimensional linear valuation is recoverable from values of a spanning contract family, while incomplete span or omitted normalization yields explicit equivalence classes.
 6. **Synthetic active-query result:** on one frozen finite version-space generator and metric, a balanced-split query strategy is compared prospectively with random querying.
 
@@ -242,7 +242,7 @@ The project is complete when:
 
 - [ ] **Task 5 — Freeze notation and the theorem-dependency map.**
 
-  Create `v2/notation.md`. Define the authoritative meanings of \(\Omega\), \(w\), \(e\), \(q\), \(F_q\), \(J\), \(X\), \(\underline V\), \(\overline V\), \(K_3\), the abstraction map, query price \(p\), oracle response, latent parameter \(\theta\), feature map \(\phi\), query family, and observational equivalence. Add a dependency graph from definitions to theorem targets and final paper sections.
+  Create `v2/notation.md`. Define the authoritative meanings of $`\Omega`$, $`w`$, $`e`$, $`q`$, $`F_q`$, $`J`$, $`X`$, $`\underline V`$, $`\overline V`$, $`K_3`$, the abstraction map, query price $`p`$, oracle response, latent parameter $`\theta`$, feature map $`\phi`$, query family, and observational equivalence. Add a dependency graph from definitions to theorem targets and final paper sections.
 
   **Done when:** every symbol planned for Tasks 6–23 has one meaning, units/sign conventions are fixed, and later files are instructed to link rather than redefine notation.
 
@@ -258,23 +258,26 @@ The project is complete when:
 
   Create `v2/formalism/01_contracts.md`. Define a finite or otherwise explicitly bounded world space, bounded real contracts, typed units, plan loss, fallback loss, switching margin, and
 
-  \[
-  X_{e,q}(w)=J(F_q,D_q;w)-J(e,D_q;w)-\Delta_q.
-  \]
+  
 
-  Explain why positive payoff favors use of \(e\), how absolute adequacy remains a separate contract or requirement, and how malformed units remain `Undefined` rather than zero-valued. Include one numerical succession example.
+```math
+  X_{e,q}(w)=J(F_q,D_q;w)-J(e,D_q;w)-\Delta_q.
+  
+```
+
+  Explain why positive payoff favors use of $`e`$, how absolute adequacy remains a separate contract or requirement, and how malformed units remain `Undefined` rather than zero-valued. Include one numerical succession example.
 
   **Done when:** the contract is well typed, its sign convention is tested on at least three cases, and scalarization limits are recorded.
 
 - [ ] **Task 7 — Define precise and imprecise valuation interfaces.**
 
-  Create `v2/formalism/02_valuations.md`. Define precise expectation \(V_P(X)\), lower and upper valuation from a nonempty set of admissible linear previsions, and the minimal properties used later: monotonicity, translation by constants, and lower/upper order. State separately what follows only under positive homogeneity, convexity, or full coherence. Permit an accepted external interval interface without asserting that every such interface has a credal-set representation.
+  Create `v2/formalism/02_valuations.md`. Define precise expectation $`V_P(X)`$, lower and upper valuation from a nonempty set of admissible linear previsions, and the minimal properties used later: monotonicity, translation by constants, and lower/upper order. State separately what follows only under positive homogeneity, convexity, or full coherence. Permit an accepted external interval interface without asserting that every such interface has a credal-set representation.
 
   **Done when:** every later proof can cite an explicit assumption list and probability, utility, loss, and evidential uncertainty are not collapsed.
 
 - [ ] **Task 8 — Define the qualitative sign abstraction and public outcome interface.**
 
-  Create `v2/formalism/03_abstraction.md`. For a meaningful contract with accepted interval \([\underline V(X),\overline V(X)]\), define Supported, Open, and Refuted using inclusive favorable equality and strict unfavorable separation. Define the malformed-request branch separately. Show how component states enter a required profile meet and recover Granted, Withheld, Refused, and Undefined.
+  Create `v2/formalism/03_abstraction.md`. For a meaningful contract with accepted interval $`[\underline V(X),\overline V(X)]`$, define Supported, Open, and Refuted using inclusive favorable equality and strict unfavorable separation. Define the malformed-request branch separately. Show how component states enter a required profile meet and recover Granted, Withheld, Refused, and Undefined.
 
   **Done when:** the complete boundary table covers positive, negative, crossing, equality, missing, invalid, and conflicted evidence without representing all of them by the same diagnostic.
 
@@ -286,7 +289,7 @@ The project is complete when:
 
 - [ ] **Task 10 — Embed the first paper’s adequacy and fallback atoms.**
 
-  Create `v2/formalism/05_license_embedding.md`. Map first-paper adequacy \(J(e)\le\epsilon\) to the contract \(\epsilon-J(e)\), and fallback improvement to \(J(F)-J(e)-\Delta\). Show clause by clause that the interval-containment rules induce the same `K_3` state under the inherited evidence mode. State and prove a finite-profile assessment-preservation proposition, or record the smallest counterexample and repair.
+  Create `v2/formalism/05_license_embedding.md`. Map first-paper adequacy $`J(e)\le\epsilon`$ to the contract $`\epsilon-J(e)`$, and fallback improvement to $`J(F)-J(e)-\Delta`$. Show clause by clause that the interval-containment rules induce the same `K_3` state under the inherited evidence mode. State and prove a finite-profile assessment-preservation proposition, or record the smallest counterexample and repair.
 
   **Done when:** the follow-up has an exact documented relationship to the original calculus rather than a metaphorical similarity.
 
@@ -298,13 +301,16 @@ The project is complete when:
 
 - [ ] **Task 12 — Embed Boolean events as indicator contracts.**
 
-  Create `v2/formalism/07_boolean_embedding.md`. For events \(A\subseteq\Omega\), use \(\mathbf 1_A\) and prove the finite Boolean embedding:
+  Create `v2/formalism/07_boolean_embedding.md`. For events $`A\subseteq\Omega`$, use $`\mathbf 1_A`$ and prove the finite Boolean embedding:
 
-  \[
+  
+
+```math
   \neg A\mapsto 1-\mathbf 1_A,\quad
   A\wedge B\mapsto\min(\mathbf 1_A,\mathbf 1_B),\quad
   A\vee B\mapsto\max(\mathbf 1_A,\mathbf 1_B).
-  \]
+  
+```
 
   Show that precise expectation gives ordinary probability and that lower/upper expectation gives lower/upper event probability under the declared credal representation.
 
@@ -332,7 +338,7 @@ The project is complete when:
 
 - [ ] **Task 15 — Define the priced-contract judgment oracle.**
 
-  Create `v2/inverse/01_oracle.md`. Define a query as a typed contract \(X\) and price \(p\), evaluated through the translated contract \(X-p\). Specify the three meaningful oracle responses and the malformed branch. State which contracts and prices are admissible, whether the oracle exposes diagnostics or only public state, and how repeated equivalent queries are normalized.
+  Create `v2/inverse/01_oracle.md`. Define a query as a typed contract $`X`$ and price $`p`$, evaluated through the translated contract $`X-p`$. Specify the three meaningful oracle responses and the malformed branch. State which contracts and prices are admissible, whether the oracle exposes diagnostics or only public state, and how repeated equivalent queries are normalized.
 
   **Done when:** the oracle is deterministic relative to a latent valuation state and its response boundaries follow directly from Tasks 7–9.
 
@@ -350,25 +356,25 @@ The project is complete when:
 
 - [ ] **Task 18 — Prove interval recovery by threshold sweep.**
 
-  Create `v2/inverse/04_threshold_recovery.md`. Under translation invariance, prove that responses to \(X-p\) locate the lower and upper values of \(X\): support below the lower boundary, refutation above the upper boundary, and Open between them with the chosen equality convention. Give the exact set-theoretic formulas for recovering both boundaries from an ideal continuum of price queries.
+  Create `v2/inverse/04_threshold_recovery.md`. Under translation invariance, prove that responses to $`X-p`$ locate the lower and upper values of $`X`$: support below the lower boundary, refutation above the upper boundary, and Open between them with the chosen equality convention. Give the exact set-theoretic formulas for recovering both boundaries from an ideal continuum of price queries.
 
   **Done when:** the formulas handle degenerate precise value, nonzero imprecision interval, and boundary equality correctly.
 
 - [ ] **Task 19 — Give a finite-resolution recovery algorithm.**
 
-  Create `v2/inverse/05_finite_recovery.md`. Specify a bounded price interval and a binary-search or grid algorithm that recovers each valuation boundary to resolution \(\delta\). Prove a query bound such as \(O(\log((b-a)/\delta))\) under the stated oracle and show how three-way responses alter the search. Include deterministic pseudocode suitable for direct implementation.
+  Create `v2/inverse/05_finite_recovery.md`. Specify a bounded price interval and a binary-search or grid algorithm that recovers each valuation boundary to resolution $`\delta`$. Prove a query bound such as $`O(\log((b-a)/\delta))`$ under the stated oracle and show how three-way responses alter the search. Include deterministic pseudocode suitable for direct implementation.
 
   **Done when:** the algorithm has a termination condition, an error guarantee, and one manually checked trace.
 
 - [ ] **Task 20 — Define the finite-dimensional linear task fragment.**
 
-  Create `v2/inverse/06_linear_fragment.md`. Define contract features \(\phi(X)\in\mathbb R^d\), a normalized parameter set \(\Theta\), and precise valuation \(V_\theta(X)=\theta^\top\phi(X)\). Explain what \(\theta\) represents and does not represent, why normalization or an anchored constant is necessary, and how price queries become half-space observations and version-space constraints.
+  Create `v2/inverse/06_linear_fragment.md`. Define contract features $`\phi(X)\in\mathbb R^d`$, a normalized parameter set $`\Theta`$, and precise valuation $`V_\theta(X)=\theta^\top\phi(X)`$. Explain what $`\theta`$ represents and does not represent, why normalization or an anchored constant is necessary, and how price queries become half-space observations and version-space constraints.
 
   **Done when:** the fragment is expressive enough for the experiment but narrow enough for an elementary identifiability theorem.
 
 - [ ] **Task 21 — Prove a finite linear identifiability theorem.**
 
-  Create `v2/inverse/07_linear_identifiability.md`. Prove a theorem of the following scale: if values of a spanning feature family are recoverable through priced queries and the normalization is fixed, then \(\theta\) is uniquely determined; conversely, a nontrivial null direction in the queried feature span yields observationally equivalent parameters. Use a matrix-rank formulation and one concrete \(d=2\) example.
+  Create `v2/inverse/07_linear_identifiability.md`. Prove a theorem of the following scale: if values of a spanning feature family are recoverable through priced queries and the normalization is fixed, then $`\theta`$ is uniquely determined; conversely, a nontrivial null direction in the queried feature span yields observationally equivalent parameters. Use a matrix-rank formulation and one concrete $`d=2`$ example.
 
   **Done when:** both directions are proved, assumptions match Task 20, and no stronger preference-identification claim is implied.
 

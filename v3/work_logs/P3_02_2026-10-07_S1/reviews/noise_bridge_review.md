@@ -38,18 +38,18 @@ Let `P⊆R^n` be nonempty compact, let `L∈R^{m×n}` and scalar target row `c`
 be known, and let `ε∈R^m` have finite nonnegative entries. The observation
 model permits exactly
 
-\[
+```math
 z=Lp+e,\qquad p\in P,\qquad |e_i|\le\epsilon_i.
-\]
+```
 
 This is a deterministic joint error-set assumption. It makes no assertion
 of stochastic independence, unbiasedness, frequencies or confidence.
 For every possible observation define
 
-\[
+```math
 F_z=\{p\in P:|Lp-z|\le\epsilon\},
 \quad a(z)=\min_{F_z}cp,\quad b(z)=\max_{F_z}cp.
-\]
+```
 
 Only observations with nonempty `F_z` belong to the task. Compactness makes
 the extrema attained. An unrestricted deterministic scalar decoder may
@@ -57,13 +57,13 @@ output any real number as a function of z, without a computation, continuity,
 precision or memory restriction. Its global worst-case error is minimized by
 the per-fiber midpoint `(a(z)+b(z))/2`, giving
 
-\[
+```math
 R_{\rm free}
 =\frac12\sup_z\bigl(b(z)-a(z)\bigr)
 =\frac12\max\left\{|c(p-q)|:
  p,q\in P,\ |L(p-q)|\le2\epsilon\right\}.
 \tag{B1}
-\]
+```
 
 **Local lower and upper bounds.** The two endpoint target values are both
 compatible with z. For any output t, the triangle inequality gives
@@ -97,31 +97,31 @@ identity, with no LP or finite-arithmetic claim.
 
 Let C have finitely many target rows `c_i`, and fix a nonempty fiber. Write
 
-\[
+```math
 a_i=\min_{p\in F_z}c_i p,\qquad
 b_i=\max_{p\in F_z}c_i p.
-\]
+```
 
 For an unrestricted output vector v,
 
-\[
+```math
 \sup_{p\in F_z}\|Cp-v\|_\infty
 =\max_i\max\{b_i-v_i,v_i-a_i\}.
-\]
+```
 
 Each direction follows by bounding every coordinate and then choosing its
 attaining endpoint. No independence between target coordinates is used.
 Consequently
 
-\[
+```math
 r_{\rm free}(z)=\tfrac12\max_i(b_i-a_i).
 \tag{B2}
-\]
+```
 
 A compatible decoder chooses one `q∈F_z` and outputs `Cq`. Its exact
 conditional optimization is
 
-\[
+```math
 \begin{aligned}
 \text{minimize }&r\\
 \text{over }&q\in F_z,\quad r\ge0,\\
@@ -129,7 +129,7 @@ conditional optimization is
 \quad\text{for every }i.
 \end{aligned}
 \tag{B3}
-\]
+```
 
 For rational polyhedral P and box errors this is a rational LP, after
 computing the coordinate endpoint values. For arbitrary compact convex P
@@ -138,18 +138,18 @@ constraint; that membership need not have a finite linear description.
 
 Define the midpoint-tolerance box
 
-\[
+```math
 B_r=\prod_i[b_i-r,\ a_i+r].
-\]
+```
 
 Then the exact equality criterion is
 
-\[
+```math
 r_{\rm compatible}(z)=r_{\rm free}(z)
 \quad\Longleftrightarrow\quad
 C(F_z)\cap B_{r_{\rm free}(z)}\ne\varnothing.
 \tag{B4}
-\]
+```
 
 Indeed (B3) at the free lower bound asks precisely for a compatible target
 vector in that box. Coordinates with maximum interval width are fixed to
@@ -172,19 +172,19 @@ midpoint vector `(1/2,1/2,1/2)` has radius `1/2`.
 For a compatible law q, (B3) includes `1−q_i≤r` for all three coordinates.
 Adding these inequalities and using `Σ_iq_i=1` yields
 
-\[
+```math
 2\le3r,\qquad r\ge\tfrac23.
-\]
+```
 
 This is an explicit rational multiplier certificate. The uniform law
 `q=(1/3,1/3,1/3)` attains the lower bound: each coordinate's largest error
 is `2/3`. Hence
 
-\[
+```math
 r_{\rm free}=\tfrac12,\qquad
 r_{\rm compatible}=\tfrac23.
 \tag{B5}
-\]
+```
 
 At the free radius, (B4)'s box is the single vector `(1/2,1/2,1/2)`, whose
 sum is `3/2`; it cannot meet the simplex. The example does not say that a
@@ -237,25 +237,25 @@ of the unknown law in the sense that every pair `(p,e)∈P×E` is admissible.
 This is a product **admissibility** condition, not stochastic independence.
 Define
 
-\[
+```math
 F_z=\{p\in P:z-Lp\in E\}.
-\]
+```
 
 Two laws share one observation exactly when
 
-\[
+```math
 L(p-q)\in E-E.
 \tag{B6}
-\]
+```
 
 To prove necessity, write the common observation as `Lp+e_p=Lq+e_q`.
 Then `L(p−q)=e_q−e_p`. Conversely, any such error pair creates a common
 observation. Thus the exact scalar free radius is
 
-\[
+```math
 \frac12\max\{|c(p-q)|:p,q\in P,\ L(p-q)\in E-E\}.
 \tag{B7}
-\]
+```
 
 No convexity of E is required for this free scalar identity. Convex P and
 convex E give convex fibers, hence a compatible scalar midpoint law.
@@ -272,17 +272,17 @@ an unrelated fixed E.
 
 Take `P=Δ₂`, `L=I₂`, scalar target `p₁`, and
 
-\[
+```math
 E=\{(b,b):|b|\le1/4\}.
-\]
+```
 
 Every law difference is `(d,−d)`, while `E−E` lies on the diagonal
 `(a,a)`. Their intersection is zero, so (B7) gives exact recovery. Directly,
 
-\[
+```math
 b=\frac{z_1+z_2-1}{2},\qquad
 p_1=\frac{1+z_1-z_2}{2},\qquad p_2=1-p_1.
-\]
+```
 
 The known normalization calibrates the shared offset. At `z=(1/2,1/2)`
 the only compatible law is `(1/2,1/2)`.
@@ -308,16 +308,16 @@ values are `x_i=s p_i`, `p∈Δ₂`, `s>0`, and the observed vector is
 `z=(2,1)` with bounds `|x₁−2|≤1/2`, `|x₂−1|≤1/4`. The calibrated value
 source is the box
 
-\[
+```math
 3/2\le x_1\le5/2,\qquad3/4\le x_2\le5/4.
-\]
+```
 
 It proves `s=x₁+x₂≥9/4>0`. The target `p₁=x₁/(x₁+x₂)` has exact interval
 
-\[
+```math
 \frac6{11}\le p_1\le\frac{10}{13}.
 \tag{B8}
-\]
+```
 
 For the lower endpoint, the affine certificate is
 `6x₂−5x₁≤6(5/4)−5(3/2)=0`. The upper certificate is

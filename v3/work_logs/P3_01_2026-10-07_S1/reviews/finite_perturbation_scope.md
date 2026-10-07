@@ -85,9 +85,9 @@ a new theorem claim. Let `P` and `Q` be computable rational markets assessed
 against the same deductive process `D`. Suppose they differ only within a
 fixed finite set
 
-$$
+```math
 K\subseteq\mathbb N_{>0}\times S.
-$$
+```
 
 Let `T` be an efficient trader against `P`, with coefficients `a_(n,phi)`.
 Transform its coefficient expressions as follows: replace a price feature
@@ -105,9 +105,9 @@ an efficient trader still gives an efficiently generated coefficient sequence.
 For every original coefficient `a`, structural induction on its expression
 gives
 
-$$
+```math
 F_K(a)(Q)=a(P).
-$$
+```
 
 Define the new trader to buy the same sentence quantities using these
 transformed coefficients, but at the actual current prices of `Q`. Its share
@@ -115,18 +115,18 @@ positions equal those of the original trader on every day. Its cash payments
 can differ only at coordinates in `K`. Hence the difference in cumulative
 wealth at time `n`, for any assessment world `W`, is
 
-$$
+```math
 W(H^Q_n)-W(H^P_n)
 =\sum_{\substack{(i,\phi)\in K\\i\le n}}
 a_{i,\phi}(P)\bigl(P_i(\phi)-Q_i(\phi)\bigr).
-$$
+```
 
 Its absolute value is at most the finite constant
 
-$$
+```math
 C=\sum_{(i,\phi)\in K}
 \left|a_{i,\phi}(P)\bigl(P_i(\phi)-Q_i(\phi)\bigr)\right|.
-$$
+```
 
 This bound is uniform in world and time. A common lower bound and an
 unbounded set of upper wealth assessments survive a uniformly bounded

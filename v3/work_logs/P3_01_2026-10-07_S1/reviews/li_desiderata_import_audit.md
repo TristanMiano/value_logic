@@ -39,16 +39,16 @@ import restrictions, not new results asserted on the paper's authority.
 
 The weaker convention in §2 is
 
-$$
+```math
 \Gamma\vdash\exists x\,\forall y\,(X(y)\Rightarrow y=x).
-$$
+```
 
 The actual admission formula is stronger:
 
-$$
+```math
 \Gamma\vdash\exists x\,[X(x)\land\forall y\,(X(y)\Rightarrow y=x)],
 \qquad\Gamma\vdash\forall x\,(X(x)\Rightarrow 0\le x\le1).
-$$
+```
 
 For the
 empty predicate `X(y) := (y != y)` in ordinary nonempty equality semantics,
@@ -72,10 +72,10 @@ addresses this issue; it is not a project novelty claim.
 
 Definition 4.8.2:
 
-$$
+```math
 E_k^V(X)=\frac1k\sum_{i=0}^{k-1}
 V(\text{“}X>i/k\text{”}),\qquad E_n=E_n^{P_n}.
-$$
+```
 
 This average is bounded in `[0,1]`. That fact alone supplies neither exact
 normalization nor linearity under the actual finite quotes. Consider a
@@ -117,10 +117,10 @@ The import distinctions are:
 | 4.3.6 | `w in P-generable([0,1]); sum w_n=infinity` | `0 in LimPts(B_N)` |
 | 4.3.8 | `w` as above; `f` a strictly increasing deferral; `supp(w) subset image(f)`; `r_(f(n))` computable in `O(f(n+1))` | `B_N -> 0` |
 
-$$
+```math
 B_N=\frac{\sum_{n\le N}w_n\bigl(P_n(\phi_n)-r_n\bigr)}
 {\sum_{n\le N}w_n}.
-$$
+```
 
 Definition 4.3.7: `f(n)>n; runtime(f(n)) <= poly(f(n))`.
 Notice the different quantifiers: a limit point does not force convergence;

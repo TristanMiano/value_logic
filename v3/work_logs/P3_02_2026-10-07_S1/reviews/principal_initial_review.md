@@ -62,16 +62,16 @@ qualification; that emphasis may invite an incorrect linear exception.
 The existing catalogue gives a precise explanation. For
 `P={e1,e2,e3}`, `L=(0,1,2)` and observation `y=1`,
 
-\[
-\operatorname{conv}\bigl(P\cap\{p:Lp=1\}\bigr)=\{e_2\},
-\]
+```math
+\mathrm{conv}\bigl(P\cap\{p:Lp=1\}\bigr)=\{e_2\},
+```
 
 whereas
 
-\[
-\operatorname{conv}(P)\cap\{p:Lp=1\}
+```math
+\mathrm{conv}(P)\cap\{p:Lp=1\}
 \supseteq\{e_2,(e_1+e_3)/2\}.
-\]
+```
 
 Thus convexifying the source and then conditioning on the observation can
 introduce ambiguity absent from the original family. Preserving unconstrained

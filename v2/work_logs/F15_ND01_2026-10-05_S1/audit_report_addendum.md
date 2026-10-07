@@ -40,9 +40,9 @@ overlap is nonnegative, the negative target is attainable exactly when its
 magnitude does not exceed the available cancellation. All twenty saved cases
 use the rational central branch, where
 
-\[
+```math
 \kappa=(\delta_0+\delta_1+t^2)/2.
-\]
+```
 
 The audit independently recomputes each `delta_r` as `c_r.v_D-c_r.c_r`, the
 observable overlap, inactive head quarter-energy, central-branch condition,

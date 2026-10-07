@@ -14,11 +14,11 @@ For a nonempty finite menu of finite real loss rows `c_a`, merge duplicate
 rows and let `E` contain those actions uniquely optimal at some strictly
 positive probability law. Put `A=[1^T;L]`. The proposed equivalence is sound:
 
-\[
+```math
 \exists s\quad s(Lp)\in\arg\min_a c_ap\quad\forall p\in\Delta_n
 \quad\Longleftrightarrow\quad
-c_a-c_b\in\operatorname{row}(A)\quad\forall a,b\in E.
-\]
+c_a-c_b\in\mathrm{row}(A)\quad\forall a,b\in E.
+```
 
 The geometry note's proof handles the critical issue correctly. Discarded
 actions can tie on special fibers, so merely showing two different minimizing
@@ -95,16 +95,16 @@ lower bound is substituted for the present geometry argument.
 This paragraph is our specialization of the 2016 source's definitions.
 For a fixed summary matrix `L`, consider the ordinary squared surrogate
 
-\[
+```math
 \psi_i(u)=\|u-L[:,i]\|_2^2.
-\]
+```
 
 Its population risk is uniquely minimized at `u=Lp`. Consequently, the
 probability set making a fixed report `u` optimal is precisely
 
-\[
+```math
 \{p\in\Delta_n:Lp=u\}.
-\]
+```
 
 The source's necessary containment of such a set in one Bayes action region
 therefore becomes the existing common-optimum fiber condition. The proposed
@@ -115,19 +115,19 @@ kind of probabilistic or utility representation.
 
 The converse quantitative bridge is also elementary. If for essential actions
 
-\[
+```math
 c_a=c_{a_0}+\alpha_a\mathbf1^T+\beta_a L,
 \qquad q_a(u)=\alpha_a+\beta_a u,
-\]
+```
 
 decode `u` by minimizing `q_a(u)`. Write `y=Lp`, let `a` be the decoded
 action, and choose `b` minimizing `q_b(y)`. Since `q_a(u)<=q_b(u)`,
 
-\[
+```math
 0\le c_ap-\min_b c_bp
 \le(\beta_a-\beta_b)(y-u)
 \le M\|u-y\|,
-\]
+```
 
 where `M=max_(a,b in E)||beta_a-beta_b||_*` for the dual norm. In Euclidean
 norm, the squared surrogate excess risk is `||u-y||_2^2`, giving a
@@ -139,17 +139,17 @@ guarantee, acquisition policy or new convergence theorem.
 
 Take ordered outcomes and actions `1,...,n`, with `n>=2`, and semantic loss
 
-\[
+```math
 c_a(i)=|a-i|.
-\]
+```
 
 Every action is essential: put sufficiently high probability on outcome `a`
 while keeping all coordinates positive. Adjacent rows satisfy
 
-\[
+```math
 c_{a+1}-c_a=2\mathbf1_{\{i\le a\}}-\mathbf1,
 \qquad a=1,\ldots,n-1.
-\]
+```
 
 Together with the normalization row these differences span `R^n`, since
 successive prefix indicators recover singleton indicators. The theorem
@@ -166,9 +166,9 @@ so it is outside the fixed `Lp` class.
 
 For three states the target rows are
 
-\[
+```math
 C=\begin{pmatrix}0&1&2\\1&0&1\\2&1&0\end{pmatrix}.
-\]
+```
 
 All three actions are essential and two differences are independent modulo
 constants. Thus no single fixed affine expectation determines a Bayes action
@@ -185,9 +185,9 @@ computed. That storage fact pays none of the cost of finding or learning it.
 The same ordinal example shows why “fixed” must remain explicit. Suppose
 the information interface allows exact queries
 
-\[
+```math
 F(j)=P(Y\le j),
-\]
+```
 
 each a known linear indicator expectation. Binary search for the first
 `j` with `F(j)>=1/2` returns a lower median using at most

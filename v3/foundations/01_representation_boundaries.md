@@ -51,9 +51,9 @@ a supplied finite list of parameter cases has different scope.
 
 One valid **outer** relation on this rectangle is
 
-$$
+```math
 0\le z,\qquad c-p\le z,\qquad z\le c,\qquad z\le1-p.
-$$
+```
 
 For the true product, the lower nontrivial slack is
 `c(1-p)-(c-p)=p(1-c)>=0`; the upper slacks are `cp>=0` and
@@ -78,9 +78,9 @@ not silently grant closure under every consequence of a visible string.
 Consider a finite random query index `Q` and a fixed Boolean-valued deterministic answer
 function `f`, with `Y=f(Q)`. Under the fully specified joint law,
 
-$$
+```math
 \Pr(Y=1\mid Q=q)=f(q)
-$$
+```
 
 whenever `q` has positive probability. Equivalently, `Y` is measurable with
 respect to the full mathematical information in `Q`. This identity says

@@ -61,9 +61,9 @@ reconstruction prompted by the source and inherited-interface audits.
 An action costs zero when `phi` is true and `K>0` when it is false. If its
 declared subjective expected loss is `v`, then
 
-$$
+```math
 v=K(1-p),\qquad p=1-v/K.
-$$
+```
 
 | Retained expected loss | Known penalty | Recovered probability of phi |
 |---:|---:|---:|
@@ -280,12 +280,12 @@ Suppose every available action has a true declared cost `L(a)` and an estimate
 with `|Lhat(a)-L(a)|<=epsilon`. Let `ahat` minimize estimated cost and `astar`
 minimize true cost, both over the same finite available action set. Then
 
-$$
+```math
 L(\widehat a)
 \le \widehat L(\widehat a)+\epsilon
 \le \widehat L(a^*)+\epsilon
 \le L(a^*)+2\epsilon.
-$$
+```
 
 Uniform control in common cost units supplies this bridge. It is ordinary
 decision algebra, not a new learning guarantee. The premise says nothing
@@ -358,9 +358,9 @@ counterpossible question.
 
 The inherited report-controlled program has
 
-$$
+```math
 H_r=(1-r)p+rs.
-$$
+```
 
 For `p=1,s=1/2`, this becomes `H_r=1-r/2`. Its report-induced expected Brier
 loss is `r^2+(1-2r)H_r`. The minimum occurs at `r=5/8`, where the actual
@@ -399,11 +399,11 @@ are `1/3,4/3,4/3`. At P's six vertices they are
 `1/3,2/3,2/3,4/3,4/3,5/3`. Linear evaluation on a convex hull has its extrema
 among these vertices, so
 
-$$
+```math
 \sup_{q\in Q}E_q[g]=4/3
 <3/2<
 \sup_{p\in P}E_p[g]=5/3.
-$$
+```
 
 Under the declared worst-expected-cost decision rule, a sure fallback costing
 `3/2` is worse than `g` under Q and better under P. All event intervals agree,

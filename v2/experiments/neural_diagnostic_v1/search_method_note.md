@@ -9,11 +9,11 @@ Ordinary task training constrains the output function, but it supplies no
 particular reason for a cost-specific internal computation to occupy one
 eight-neuron coordinate subset. The ordinary optimum admits the logit
 
-\[
+```math
 \log J_0-\log J_1
 =\log c_{\mathrm{FN}}-\log c_{\mathrm{FP}}
  +\log\eta-\log(1-\eta).
-\]
+```
 
 A network can approximate this through shared, mixed, or distributed features.
 Consequently, a failure of coordinate-subset replacement can reflect a mismatch

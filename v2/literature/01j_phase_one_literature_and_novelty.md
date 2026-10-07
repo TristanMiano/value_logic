@@ -376,13 +376,13 @@ Fix one meaningful requirement, a **nonempty** certified possible-value region
 `U`, and its acceptable set `A`. Assume the evidence is current, scope-correct,
 conflict-free, and accepted by the relevant mode. Define
 
-\[
+```math
 \alpha_A(U)=\begin{cases}
 +&U\subseteq A,\\
 -&U\cap A=\varnothing,\\
 ?&\text{otherwise.}
 \end{cases}
-\]
+```
 
 This is precisely the region-test part of the phase-one evaluator. It is not
 an encoding of all diagnostics, trace modes, missing evidence, or well-formedness.
@@ -395,9 +395,9 @@ There are **two different orders**. Required statuses meet along
 `? <=info -`, with the resolved outcomes incomparable. If
 `empty != U' subseteq U`, then
 
-\[
+```math
 \alpha_A(U)\leq_{\rm info}\alpha_A(U').
-\]
+```
 
 **Proof.** Containment in `A` and disjointness from `A` are each preserved by
 nonempty restriction. A mixed region can remain mixed or resolve either way.
@@ -418,7 +418,7 @@ not an assumption that the phase-one evidence store already contains it.
 Let `a_i` be `+` if every pattern has coordinate `i` equal to one, `-` if every
 pattern has coordinate `i` equal to zero, and `?` otherwise. Compare
 
-\[
+```math
 K(B)=\min_i a_i
 \quad\text{and}\quad
 J(B)=\begin{cases}
@@ -426,18 +426,18 @@ J(B)=\begin{cases}
 -& (1,\ldots,1)\notin B,\\
 ?&\text{otherwise.}
 \end{cases}
-\]
+```
 
 `K` is the phase-one required-status meet of the individual region summaries.
 `J` is the three-way abstraction of the **joint conjunction claim**.
 
 **Proposition.** `K(B) != J(B)` holds exactly when
 
-\[
+```math
 (1,\ldots,1)\notin B
 \quad\text{and}\quad
 \forall i\ \exists b\in B:\ b_i=1.
-\]
+```
 
 In this case `K(B)=?` and `J(B)=-`; there is no opposite discrepancy.
 
@@ -455,9 +455,9 @@ meet agrees with the joint abstraction on that explicit product fragment.**
 
 The smallest separating example is
 
-\[
+```math
 B=\{(1,0),(0,1)\}.
-\]
+```
 
 Each condition is individually unresolved, while their simultaneous satisfaction
 is impossible. In loss coordinates use two jointly possible vectors `(0,2)`
@@ -497,9 +497,9 @@ fragment of the comparison.
 
 Suppose the jointly certified candidate/fallback losses are
 
-\[
+```math
 U=\{(0,1),(1,2)\},\qquad \Delta=1.
-\]
+```
 
 Every joint possibility satisfies `loss_candidate + Delta <= loss_fallback`.
 But marginal projection gives candidate interval `[0,1]` and fallback interval

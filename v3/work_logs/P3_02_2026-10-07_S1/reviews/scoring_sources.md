@@ -104,9 +104,9 @@ additional theorem from it.
 Let `Omega={1,...,n}`, `p` be the law, `q` a report, and
 `ell(q,i)` a known semantic loss. Put
 
-\[
+```math
 R_p(q)=\sum_i p_i\ell(q,i).
-\]
+```
 
 | Object retained | What it supplies |
 |---|---|
@@ -126,16 +126,16 @@ has changed. P3-01 already supplies a separating example for this boundary.
 
 Use the multiclass loss convention
 
-\[
+```math
 \ell_B(q,i)=\|q-e_i\|_2^2,
 \qquad R_p(q)=1+\|q\|_2^2-2q^\top p.
-\]
+```
 
 Expansion and completing the square give
 
-\[
+```math
 R_p(q)=1-\|p\|_2^2+\|q-p\|_2^2.
-\]
+```
 
 Thus the optimal report is `p`, while the scalar optimal risk
 `1-||p||^2` usually loses probability information. For instance,
@@ -144,9 +144,9 @@ The labels matter, so these are different laws.
 
 At a fixed uniform report `u=(1/n,...,1/n)`,
 
-\[
+```math
 \ell_B(u,i)=R_p(u)=1-1/n
-\]
+```
 
 for every outcome and every law. This score observation has no information
 about even the realized category. More generally, one fixed report gives
@@ -158,18 +158,18 @@ scalar encodings.
 
 There are simple positive cases:
 
-\[
+```math
 R_p(e_i)=2(1-p_i),\qquad
 p_i=1-\tfrac12R_p(e_i).
-\]
+```
 
 The `n-1` vertex reports for `i<n`, together with normalization, recover the
 whole law. These rows are just known event-contingent losses. For arbitrary
 fixed reports `q,r`,
 
-\[
+```math
 R_p(q)-R_p(r)=\|q\|^2-\|r\|^2-2(q-r)^\top p.
-\]
+```
 
 Independent report differences spanning the simplex's tangent space therefore
 also recover it. Each underlying evaluation or direct difference query needs
@@ -184,10 +184,10 @@ nonidentification claim must therefore be scoped rather than universal.
 
 For reports with `q_i>0`, use
 
-\[
+```math
 \ell_{\log}(q,i)=-\log q_i,\qquad
 R_p(q)=-\sum_i p_i\log q_i.
-\]
+```
 
 For a true law in the report class, the excess risk is
 `D_KL(p||q)` and the exact optimum is `q=p`. The scalar optimum is entropy;
@@ -196,17 +196,17 @@ report, both the realized and expected losses are the constant `log n`.
 
 For each `j<n`, choose the positive rational report
 
-\[
+```math
 q^{(j)}_i=\frac{2^{\mathbf1\{i=j\}}}{n+1}.
-\]
+```
 
 Its known loss vector and expected loss are
 
-\[
+```math
 \ell_{\log}(q^{(j)},i)=\log(n+1)-\mathbf1\{i=j\}\log2,
 \quad
 R_p(q^{(j)})=\log(n+1)-p_j\log2.
-\]
+```
 
 Hence `n-1` exact values identify `p`, including boundary laws, without ever
 issuing a zero-probability report. These probes again reduce to indicator
@@ -226,21 +226,21 @@ open simplex `Delta_n^o`. Assume every loss vector for `q in Q` is finite
 and, for each interior law `p`, the unique global minimizer over `Q` of its
 expected loss is `q=p`. Fix `q0 in Q`. Then
 
-\[
-\operatorname{span}\bigl(\{\mathbf1\}\cup
+```math
+\mathrm{span}\bigl(\{\mathbf1\}\cup
 \{\ell(q,\cdot)-\ell(q_0,\cdot):q\in Q\}\bigr)
 =\mathbb R^n.
-\]
+```
 
 **Proof.** Otherwise take nonzero `z` orthogonal to this span. Since
 `1^T z=0`, choose sufficiently small `t>0` so `p+=u+tz` and `p-=u-tz`
 are distinct interior laws. For every report `q`,
 
-\[
+```math
 R_{p_+}(q)-R_{p_-}(q)
 =2t z^\top\ell(q,\cdot)
 =2t z^\top\ell(q_0,\cdot).
-\]
+```
 
 The surfaces differ by a constant and have exactly the same minimizers.
 Strict propriety requires the two different laws as their unique minimizers,
@@ -278,16 +278,16 @@ Its full characterization and market-equivalence theorems were not imported.
 Let `C[:,i]` be a known vector of losses useful for the actual task. Its mean
 `mu=Cp` can be learned/reported directly using
 
-\[
+```math
 \ell_C(r,i)=\|r-C[:,i]\|_2^2.
-\]
+```
 
 Writing `X=C[:,Y]`, expansion gives
 
-\[
+```math
 \mathbb E\|r-X\|^2=\|r-\mu\|^2+
 \mathbb E\|X-\mu\|^2.
-\]
+```
 
 Thus the unique optimal report is `mu`; recovering the whole law is
 unnecessary. Finite outcomes make all required second moments finite. This
@@ -309,17 +309,17 @@ or require a declared finite report set, extension or justified enclosure.
 For Brier risk, suppose an estimated surface satisfies the independently
 certified uniform error bound
 
-\[
+```math
 |\widehat R(q)-R_p(q)|\le\eta
-\]
+```
 
 on a report domain containing `p`. If
 `Rhat(qhat) <= inf_q Rhat(q)+delta`, two applications of the error bound give
 
-\[
+```math
 \|\widehat q-p\|_2^2
 =R_p(\widehat q)-R_p(p)\le2\eta+\delta.
-\]
+```
 
 This is a conditional deterministic bound. Propriety does not produce the
 error certificate, observational feedback, sample count or optimization
@@ -343,16 +343,16 @@ in §§3–5.
 For known payoff columns `L[:,i]` and proposed fair prices `v`, allow every
 finite signed position vector `a` and define the trader's net payoff
 
-\[
+```math
 g_a(i)=a^\top(L[:,i]-v).
-\]
+```
 
 There is no `a` with `g_a(i)>0` **for every** state exactly when
 
-\[
-v\in\operatorname{conv}\{L[:,1],\ldots,L[:,n]\}
+```math
+v\in\mathrm{conv}\{L[:,1],\ldots,L[:,n]\}
 \iff (\exists p\in\Delta_n)\ Lp=v.
-\]
+```
 
 If `Lp=v`, every such payoff has expectation zero and cannot be strictly
 positive everywhere. If `v` lies outside the finite closed convex hull,
@@ -373,9 +373,9 @@ a coherent law is not uniqueness, and neither asserts empirical correctness.
 For a common positive scale `a` and outcome-dependent baseline `b_i`
 independent of the report, put
 
-\[
+```math
 \ell'(q,i)=a\ell(q,i)+b_i.
-\]
+```
 
 Then `R'_p(q)=aR_p(q)+p^T b`: report preferences and strict propriety are
 preserved. Risk differences remove the common baseline and scale by `a`.
@@ -389,9 +389,9 @@ A nonlinear increasing transform applied **to each realized loss** need not
 preserve propriety. For binary loss `(r-Y)^2`, squaring the loss gives
 `(r-Y)^4`. Its expected-loss minimizer obeys
 
-\[
+```math
 \frac{r}{1-r}=\left(\frac{p}{1-p}\right)^{1/3}.
-\]
+```
 
 At `p=1/9`, it is `r=1/3`, not the law. In contrast, an increasing transform
 applied after the expectation preserves its report ordering but is generally

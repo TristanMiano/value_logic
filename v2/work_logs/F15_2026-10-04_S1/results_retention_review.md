@@ -94,9 +94,9 @@ fallback and refusal-to-fallback as different outcomes.
 
 The fee table recomputes as the mean of
 
-\[
+```math
 C_{\mathrm{executed}} + q(8+k_{\mathrm{current\ common}}+m_{\mathrm{repair}})
-\]
+```
 
 at each frozen scalar fee. Thus it includes the eight common initial fields,
 the three current fields in the known-marginal variant, and method-specific

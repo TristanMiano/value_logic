@@ -3,23 +3,23 @@
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
 
-**Status: P3-01 and P3-02 complete at their declared task scopes.**
-P3-01 supplies the questions and comparison contract. P3-02 supplies the
-[finite probability-information analysis](v3/derivations/02_probability_information.md)
-and **90.079634416433 measured research minutes**, with its
-[completed session](v3/work_logs/P3_02_2026-10-07_S1.md) and
-[exact actuals](v3/work_logs/P3_02_2026-10-07_S1/actuals.json).
-Phase-three qualifying research is **189.453448421467 minutes**;
-**770.546551578533 minutes** remain to its 960-minute floor.
-**P3-A: PASS at problem and restricted-representation readiness scope.**
-The [gate record](v3/checkpoints/A_1.md) selects a provisional finite rational
-constraint-and-loss interface and preserves its alternatives and later duties.
-**Current: P3-03 — bounded logical uncertainty, in progress.**
-Its [session](v3/work_logs/P3_03_2026-10-07_S1.md) records the fresh Research90 forecast and clock.
+**Status: P3-01, P3-02 and P3-03 complete at their declared task scopes.**
+P3-01 supplies the questions and comparison contract; P3-02 supplies the
+[finite probability-information analysis](v3/derivations/02_probability_information.md).
+P3-03 supplies a [finite bounded uncertainty construction](v3/derivations/03_logical_uncertainty.md)
+and [refinement/retention extensions](v3/derivations/03_refinement_extensions.md),
+with **90.048612847917 measured research minutes** and
+[exact actuals](v3/work_logs/P3_03_2026-10-07_S1/actuals.json).
+Phase-three qualifying research is **279.502061269383 minutes**;
+**680.497938730617 minutes** remain to the 960-minute floor.
+**P3-A remains PASS** at problem and restricted-representation readiness scope.
+The [first 240-minute checkpoint](v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md)
+is assessed at this task boundary with its actual overshoot.
+**Next: P3-04 — logical counterfactual semantics, unstarted.**
 Phase two remains complete; P3-B–D remain unattempted. P3-N01 remains
-**NOT YET SUPPORTED**. The [gate session](v3/work_logs/P3_A_2026-10-07_S1.md)
-and [exact actuals](v3/work_logs/P3_A_2026-10-07_S1/actuals.json) record its
-separate assessment and time; this gate has no added research floor.
+**NOT YET SUPPORTED**. All executable evidence remains development; no final
+challenge is frozen or exposed. The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)
+also records the authorized Markdown repair and preserves prior history.
 
 Read this plan with the [phase-three procedure](v3/RESEARCH_PROTOCOL.md),
 [workspace guide](v3/README.md), [claim ledger](v3/claim_ledger.md), and the
@@ -160,7 +160,7 @@ performance superiority are separate claims and are not completion requirements.
 
 ## 5. Cycle II — derive uncertainty and counterfactual interfaces
 
-- [ ] **P3-03 — bounded logical uncertainty. Research90.**
+- [x] **P3-03 — bounded logical uncertainty. Research90.**
 
   Give an information state which can leave deterministic mathematical claims
   unresolved. Use a declared increasing computation or deduction process; do
@@ -327,9 +327,9 @@ phase. Prospective replanning can replace an unstarted task with a better
 floor, accepted obligations and the abandoned alternative's record.
 
 **Active repair queue: empty. P3-N01 is an open contribution-development
-obligation, not a detected defect. P3-01 and P3-02 are complete at their
-declared scopes. P3-A has passed at restricted-representation readiness scope.
-Next: P3-03, unstarted; P3-B–D remain unattempted.**
+obligation, not a detected defect. P3-01–03 are complete at their declared
+scopes. P3-A has passed at restricted-representation readiness scope.
+Next: P3-04, unstarted; P3-B–D remain unattempted.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original
 register. Neither is required or activated by this plan. General neural

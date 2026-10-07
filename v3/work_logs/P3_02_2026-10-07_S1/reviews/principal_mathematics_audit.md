@@ -41,18 +41,18 @@ requires replacing a proof or reversing the intended result.
 
 | Proposition | Disposition on reviewed version | Adversarial finding |
 |---|---|---|
-| PI-1: arbitrary-target fiber principle | **Accepted** | The statement quantifies over actual admitted pairs in \(P\), and explicitly separates decoder existence from computation. The two-point obstruction defeats an arbitrary decoder and an almost-surely exact randomized decoder. |
+| PI-1: arbitrary-target fiber principle | **Accepted** | The statement quantifies over actual admitted pairs in $`P`$, and explicitly separates decoder existence from computation. The two-point obstruction defeats an arbitrary decoder and an almost-surely exact randomized decoder. |
 | PI-2: full-simplex target and law recovery | **Accepted** | Normalization is correctly included. Every hidden zero-sum direction can be realized by opposite perturbations of an interior law, so necessity is not restricted to affine decoders. The affine-independence and coordinate-count consequences follow. |
 | PI-3: convex restricted sources | **Accepted** | The actual affine direction space and a relative-interior point suffice. Compactness, full-dimensionality in the ambient space and polyhedral boundaries are not needed. The nonconvex catalogue correctly defeats the unqualified rank condition. |
-| PI-4: local support-sensitive identification | **Accepted** | The union of feasible supports is required and is used. Averaging its witnesses produces a relative-interior law of the fiber's nonnegative support. The supplied \(y=1\) example correctly rejects the support of one arbitrary feasible point. |
+| PI-4: local support-sensitive identification | **Accepted** | The union of feasible supports is required and is used. Averaging its witnesses produces a relative-interior law of the fiber's nonnegative support. The supplied $`y=1`$ example correctly rejects the support of one arbitrary feasible point. |
 | PI-5: LP bounds and certificates | **Accepted** | The inequality orientation, unrestricted equality multipliers and nonnegative inequality multipliers are correct. Feasible bounded finite LPs do not need Slater's condition. “Rational data” must include the target, observation and all bounds, as usual. |
 | PI-6: exact worst-compatible regret | **Accepted** | The interchange of maxima is valid for a finite action menu and a nonempty compact source. Including the chosen action gives nonnegative regret. Zero regret is exactly the common-optimum condition. |
-| PI-7: full span of strict-score differences | **Accepted** | Both annihilator cases preserve the entire risk ranking under a distinct nearby interior law. The positive coefficient in the nonzero-sum case is essential and is stated. Finite losses, all interior laws as reports, exact unique global minimizers and \(n\geq2\) are correctly exposed. |
-| PI-8: shared affine score calibration and sharp count | **Accepted** | Invertible score differences recover \(x=sp\), then scale, law and offset. The hidden-vector argument for too few fixed raw probes changes the normalized law, not merely its scale. The exclusion of adaptive menus and optimized reports is material and present. |
+| PI-7: full span of strict-score differences | **Accepted** | Both annihilator cases preserve the entire risk ranking under a distinct nearby interior law. The positive coefficient in the nonzero-sum case is essential and is stated. Finite losses, all interior laws as reports, exact unique global minimizers and $`n\geq2`$ are correctly exposed. |
+| PI-8: shared affine score calibration and sharp count | **Accepted** | Invertible score differences recover $`x=sp`$, then scale, law and offset. The hidden-vector argument for too few fixed raw probes changes the normalized law, not merely its scale. The exclusion of adaptive menus and optimized reports is material and present. |
 | PI-9: essential-action difference criterion | **Accepted** | Essential rows preserve the envelope. Interior-facet connectivity, the strict midpoint kink and a common baseline give necessity and sufficiency. The kink rules out rescue by an original inactive action, without imposing a chosen tie action. |
 | PI-10: unknown-scale/offset linear targets | **Accepted** | The nonconstant-target exclusion, every-positive-scale quantifier, interior normalization perturbation and complete additive-nuisance quotient are correct. The raw-query table uses fixed suitable probes under the earlier strict-score assumptions. |
 | PI-11: minimum additional target measurements | **Accepted** | The relevant space is the old hidden space inside the actual source direction space. Its target-image dimension gives the lower bound, and target rows spanning the restricted row space attain it. Freely selectable linear measurements are expressly stipulated. |
-| PI-12: independent payoff-box projection | **Needs one explicit input precondition; proof accepted with it** | Require \(\underline L_{ji}\leq\overline L_{ji}\) for every entry. This is conventional for a proper box and is explicit in the separate reconstruction, but is not explicit in the principal statement. Otherwise an empty payoff box can pass the projected bands at zero-probability entries. |
+| PI-12: independent payoff-box projection | **Needs one explicit input precondition; proof accepted with it** | Require $`\underline L_{ji}\leq\overline L_{ji}`$ for every entry. This is conventional for a proper box and is explicit in the separate reconstruction, but is not explicit in the principal statement. Otherwise an empty payoff box can pass the projected bands at zero-probability entries. |
 
 ### PI-1 through PI-4: specific false necessities rejected
 
@@ -76,11 +76,11 @@ counterexample to that interchange.
 ### PI-5 and PI-6: optimization scope
 
 The upper certificate
-\[
+```math
 A^\top\lambda+G^\top\mu\geq c^\top,\quad\mu\geq0
-\]
-implies \(cp\leq\lambda^\top b+\mu^\top g\) because \(p\geq0\).
-Applying the same construction to \(-c\) is a valid lower certificate.
+```
+implies $`cp\leq\lambda^\top b+\mu^\top g`$ because $`p\geq0`$.
+Applying the same construction to $`-c`$ is a valid lower certificate.
 The three-state interval, its attaining laws and the two fallback comparisons
 are correct.
 
@@ -92,25 +92,25 @@ attainable range. No hidden convexification is used in the regret identity.
 ### PI-7 and PI-8: scoring and calibration
 
 The strict-score span proof works even when the normalized annihilator
-\(z/(\mathbf1^\top z)\) has negative coordinates: a sufficiently small
+$`z/(\mathbf1^\top z)`$ has negative coordinates: a sufficiently small
 mixture with a strictly positive law remains an interior law. The proof
 does not claim that the signed vector is itself a probability law.
 
 The raw Brier and binary scalar Brier conventions are correctly separated.
 The uniform Brier risk, optimum risk, vertex risks, logarithmic risk
 differences and shared-offset Brier calibration all have the stated values.
-The rational example \((7,10,9,8)\) decodes to
-\(p=(1/6,1/3,1/2)\), \(s=3\), \(b=5\).
+The rational example $`(7,10,9,8)`$ decodes to
+$`p=(1/6,1/3,1/2)`$, $`s=3`$, $`b=5`$.
 
-The argument that \(n-1\) suitable raw score rows suffice with fully known
+The argument that $`n-1`$ suitable raw score rows suffice with fully known
 units is valid: extend the nonzero constant row to a basis using rows from
-the full score family. Counting a baseline plus \(n-1\) preselected
-differences as \(n\) reports is correctly not called a universal raw-query
+the full score family. Counting a baseline plus $`n-1`$ preselected
+differences as $`n`$ reports is correctly not called a universal raw-query
 lower bound.
 
-For the task-property score \(\|r-C[:,i]\|^2\), the unique minimizer
-claim assumes the report domain contains \(Cp\), as is natural for an
-unrestricted vector report. Explicitly writing \(r\in\mathbb R^k\)
+For the task-property score $`\|r-C[:,i]\|^2`$, the unique minimizer
+claim assumes the report domain contains $`Cp`$, as is natural for an
+unrestricted vector report. Explicitly writing $`r\in\mathbb R^k`$
 would remove even that minor implicit domain convention.
 
 ### PI-9: geometry and quantitative bridge
@@ -128,7 +128,7 @@ as affine functions there. On the facet itself all those differences
 vanish, which alone would be an uninformative statement. The linked
 reconstruction supplies the intended argument.
 
-The regret bound in equation (24) is valid for any decoded report \(u\):
+The regret bound in equation (24) is valid for any decoded report $`u`$:
 compare the selected essential action to an essential true optimum,
 subtract their nonpositive predicted difference, and use the dual norm.
 The common hidden expected baseline cancels. The result neither needs
@@ -136,16 +136,16 @@ that baseline's value nor establishes that a learning procedure achieves
 a small feature-surrogate excess risk.
 
 The ordinal absolute-loss example is correctly scoped. Its adjacent
-differences span all \(n-1\) prefix coordinates modulo constants, while
+differences span all $`n-1`$ prefix coordinates modulo constants, while
 an optimized median is a nonlinear report. Exact adaptive prefix search
-for the first cumulative probability at least \(1/2\) can use at most
-\(\lceil\log_2 n\rceil\) queries. This does not contradict a fixed-linear
+for the first cumulative probability at least $`1/2`$ can use at most
+$`\lceil\log_2 n\rceil`$ queries. This does not contradict a fixed-linear
 measurement lower bound.
 
 ### PI-10 and PI-11: nuisance and repair quantifiers
 
-The scale obstruction is global over \((p,s)\). Selecting an interior law
-with \(ch-(\mathbf1^\top h)cp\ne0\) is legitimate for every nonconstant
+The scale obstruction is global over $`(p,s)`$. Selecting an interior law
+with $`ch-(\mathbf1^\top h)cp\ne0`$ is legitimate for every nonconstant
 target. The perturbation remains a normalized law at a positive scale.
 When the constant row is retained, hidden kernel vectors are automatically
 zero-sum and the ordinary target obstruction applies.
@@ -163,7 +163,7 @@ It does not generalize the nonconstant-target obstruction to all nonlinear
 probability properties or to every individual fiber.
 
 The additional-measurement dimension identity follows from rank-nullity
-on \(V\), and the restricted-menu example correctly requires two available
+on $`V`$, and the restricted-menu example correctly requires two available
 queries even though one freely chosen query would suffice. A small nonzero
 price coefficient can change exact identifiability while its target-width
 effect tends to zero; the distinction is mathematically valid.
@@ -176,40 +176,40 @@ Section 8 states that a finite record is compatible with some law exactly
 when it lies in the convex hull of the loss columns. This is true for
 some law on the **full simplex**, or when additional source restrictions
 are deliberately ignored. It is not the criterion for nonemptiness of
-the earlier \(F_P(y)\) under an arbitrary admitted family \(P\).
+the earlier $`F_P(y)`$ under an arbitrary admitted family $`P`$.
 
 Counterexample:
-\[
+```math
 P=\{e_1\},\qquad L=(0,1),\qquad y=1.
-\]
-The value \(1\) lies in the convex hull of the loss columns, but no law
-in \(P\) gives it. The sure-gain separation argument likewise describes
+```
+The value $`1`$ lies in the convex hull of the loss columns, but no law
+in $`P`$ gives it. The sure-gain separation argument likewise describes
 unrestricted finite-state probability compatibility, not every additional
 constraint on admissible laws.
 
-Recommended local change: begin the criterion with “When \(P=\Delta_n\)”
-or “Ignoring any additional restrictions on \(P\).” This preserves the
+Recommended local change: begin the criterion with “When $`P=\Delta_n`$”
+or “Ignoring any additional restrictions on $`P`$.” This preserves the
 intended coherent-expectation comparison.
 
 ### A2 — require valid payoff intervals in PI-12
 
 Explicitly state
-\[
+```math
 \underline L_{ji}\leq\overline L_{ji}\qquad\text{for every }j,i.
-\]
+```
 Otherwise the formal implication fails at zero-probability coordinates.
 For example, take one row with
-\[
+```math
 \underline L=(0,1),\quad \overline L=(0,0),\quad p=e_1,\quad y=0.
-\]
+```
 The projected inequalities hold, but no admissible payoff row exists
-because its second entry would have to lie between \(1\) and \(0\).
+because its second entry would have to lie between $`1`$ and $`0`$.
 
 Under the ordinary valid-box assumption, PI-12's row-segment construction
 is correct, including zero weights and zero-width weighted intervals.
 Its affine lift is a lift **of the existential projection, with the
 unknown payoff table eliminated**. It is not the exact joint bilinear
-graph with \(L\) still retained. Adding that short phrase would also
+graph with $`L`$ still retained. Adding that short phrase would also
 make the existing scope warning maximally explicit.
 
 The independent error-box extension requires nonnegative error radii
@@ -224,31 +224,31 @@ The principal text correctly includes these counterexamples and caveats.
 This extension is **proved in this audit only**. It is not needed to make
 the currently narrower full-simplex principal statement correct.
 
-Let \(P\subseteq\Delta_n\) be any nonempty convex set and let
-\(V=\operatorname{span}(P-P)\). Merge action losses that define the same
-affine function on \(\operatorname{aff}(P)\). Define \(E_P\) by unique
-optimality at some point of \(\operatorname{ri}(P)\). Then a globally
-valid some-optimal selector from \(Lp\) exists on \(P\) iff
-\[
+Let $`P\subseteq\Delta_n`$ be any nonempty convex set and let
+$`V=\mathrm{span}(P-P)`$. Merge action losses that define the same
+affine function on $`\mathrm{aff}(P)`$. Define $`E_P`$ by unique
+optimality at some point of $`\mathrm{ri}(P)`$. Then a globally
+valid some-optimal selector from $`Lp`$ exists on $`P`$ iff
+```math
 (c_a-c_b)h=0
 \quad\text{for every }a,b\in E_P
 \text{ and every }h\in V\cap\ker L.
-\]
+```
 
 The justification is the same finite affine argument:
 
 1. The relative interior is nonempty, convex and open in the actual affine
    hull. Avoiding finitely many proper tie hyperplanes gives essential
    unique cells. Approaching any source point by such points shows that
-   essential rows preserve the envelope on all of \(P\).
+   essential rows preserve the envelope on all of $`P`$.
 2. A generic polygonal path inside that relative interior connects strict
    cells through flat interior interfaces. Curvature or nonpolyhedral
-   structure of the outer boundary of \(P\) does not affect these local
+   structure of the outer boundary of $`P`$ does not affect these local
    interfaces. The hidden-direction midpoint obstruction applies using
-   \(h\in V\cap\ker L\).
+   $`h\in V\cap\ker L`$.
 3. Conversely, annihilation of this kernel factors each essential difference
    on the affine hull as
-   \((c_a-c_{a_0})p=\alpha_a+\beta_a Lp\). Minimize these recovered
+   $`(c_a-c_{a_0})p=\alpha_a+\beta_a Lp`$. Minimize these recovered
    differences.
 
 No closedness or compactness premise is needed for this exact finite-menu
@@ -259,25 +259,25 @@ essential cells must still be supplied or charged.
 ### Why separate convex components cannot be checked independently
 
 Let
-\[
-P_1=\operatorname{conv}\{e_1,e_2\},\qquad
-P_2=\operatorname{conv}\{e_3,e_4\},\qquad P=P_1\cup P_2,
-\]
+```math
+P_1=\mathrm{conv}\{e_1,e_2\},\qquad
+P_2=\mathrm{conv}\{e_3,e_4\},\qquad P=P_1\cup P_2,
+```
 with
-\[
+```math
 L=(0,1,0,1),\qquad
 c_A=(0,0,1,1),\quad c_B=(1,1,0,0).
-\]
-Each component has a constant unique optimum: \(A\) on \(P_1\), \(B\)
-on \(P_2\). Its componentwise essential-difference test is vacuous.
-Nevertheless, for every \(y\in[0,1]\),
-\[
+```
+Each component has a constant unique optimum: $`A`$ on $`P_1`$, $`B`$
+on $`P_2`$. Its componentwise essential-difference test is vacuous.
+Nevertheless, for every $`y\in[0,1]`$,
+```math
 p_y=(1-y,y,0,0),\qquad q_y=(0,0,1-y,y)
-\]
-have the same observation \(y\) and opposite unique optimal actions.
+```
+have the same observation $`y`$ and opposite unique optimal actions.
 The union therefore has no summary-only optimal selector at any observation.
 
-Known case identity would make the observation \((\text{case},y)\)
+Known case identity would make the observation $`(\text{case},y)`$
 and permit componentwise selection. Without that identity, the literal
 fiber-intersection condition must also compare laws from different source
 components. This does not expose an error in PI-9 as currently scoped.
@@ -289,17 +289,17 @@ Their recorded direct script hashes match the current script bytes.
 
 | Check | Actual supported scope | What it does not establish |
 |---|---|---|
-| \(02\_probability\_checks.py\) | Exact rational partial-identification fixtures, joint-dependence and random-stake intervals, one three-outcome Brier scale/offset calibration, realized-score semantic counterexamples, and a noisy scale-ratio fixture. Every claimed LP extremum carries a feasible witness and arithmetic multiplier certificate. | It is not a generic LP solver or a test of all loss matrices, all proper scores, all nuisance dimensions or all payoff boxes. |
-| \(02\_decision\_geometry\_check.py\) | 351 two-action and 2,925 three-action menus on \(\Delta_3\), with entries in \(\{-1,0,1\}\), fixed summary \(p_1\), exact tie crossings and intervening intervals, plus five focused rational exceptions. | It does not establish PI-9 for arbitrary state count, summaries, real coefficients or convex source geometry. The proof supplies that scope. |
-| \(02\_native\_probability\_check.py\) | Five declared rational groups, thirteen accepted native target receipts, three expected rejections, and an explicit target-unit reduct countermodel. | It does not add general division, arbitrary bilinear semantics, a probability learner or broad production validation. |
-| \(02\_noise\_modulus\_check.py\) | Fourteen rational conditioning regimes and selected coherence/source checks, using exact certificates. Its source incompatibility and negative-multiplier cases support the earlier distinctions. | The later noise and coherent-center theorems are outside this sections-1–11 audit. |
+| $`02\_probability\_checks.py`$ | Exact rational partial-identification fixtures, joint-dependence and random-stake intervals, one three-outcome Brier scale/offset calibration, realized-score semantic counterexamples, and a noisy scale-ratio fixture. Every claimed LP extremum carries a feasible witness and arithmetic multiplier certificate. | It is not a generic LP solver or a test of all loss matrices, all proper scores, all nuisance dimensions or all payoff boxes. |
+| $`02\_decision\_geometry\_check.py`$ | 351 two-action and 2,925 three-action menus on $`\Delta_3`$, with entries in $`\{-1,0,1\}`$, fixed summary $`p_1`$, exact tie crossings and intervening intervals, plus five focused rational exceptions. | It does not establish PI-9 for arbitrary state count, summaries, real coefficients or convex source geometry. The proof supplies that scope. |
+| $`02\_native\_probability\_check.py`$ | Five declared rational groups, thirteen accepted native target receipts, three expected rejections, and an explicit target-unit reduct countermodel. | It does not add general division, arbitrary bilinear semantics, a probability learner or broad production validation. |
+| $`02\_noise\_modulus\_check.py`$ | Fourteen rational conditioning regimes and selected coherence/source checks, using exact certificates. Its source incompatibility and negative-multiplier cases support the earlier distinctions. | The later noise and coherent-center theorems are outside this sections-1–11 audit. |
 
 The decision-geometry oracle is stronger than sampling a few laws. For
 each tested menu, its candidate checks cover every exact endpoint-order
 breakpoint and one point in each intervening interval. A positive conclusion
 requires all those checks; a negative conclusion can stop at the first
 actual pair with no common optimum. It therefore decides the continuous
-\(p_1\)-fiber service for each menu. However, the menu family and summary
+$`p_1`$-fiber service for each menu. However, the menu family and summary
 remain deliberately finite and fixed.
 
 The agent and principal decision-result files are byte-identical, as
@@ -310,7 +310,7 @@ or independent-model verification. Both are labeled development.
 The rational vertex enumerator explicitly assumes independent equality
 rows in its supplied compact fixtures. It would, for example, fail to
 enumerate a source supplied with redundant equality rows
-\(p_1+p_2=1\), \(2p_1+2p_2=2\) without preprocessing. This does not
+$`p_1+p_2=1`$, $`2p_1+2p_2=2`$ without preprocessing. This does not
 invalidate its passed extremum certificates, which independently prove
 the bound for their actual constraints. It does mean that its fixture
 coverage must not be used as evidence of a general LP implementation.
@@ -365,7 +365,7 @@ A later read found both requested wording changes in place:
 - **A1 closed:** the convex-hull criterion now explicitly uses the full
   simplex with no additional law restrictions.
 - **A2 closed:** PI-12 now explicitly requires
-  \(\underline L\leq\overline L\) entrywise.
+  $`\underline L\leq\overline L`$ entrywise.
 
 The exact bytes inspected for this limited resolution check had:
 

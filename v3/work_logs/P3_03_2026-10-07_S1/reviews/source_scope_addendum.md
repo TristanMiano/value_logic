@@ -37,8 +37,8 @@ declared caps and are eventually scheduled**, in addition to sufficient
 frontier storage. Otherwise a typed resource limit can be the sound result
 even after enough abstract refinement opportunities have elapsed.
 
-It should also distinguish **exact extrema for nonempty $F(H)$** from a
-**finite-conflict result when $F(H)$ is empty**. Section 6 already does so;
+It should also distinguish **exact extrema for nonempty $`F(H)`$** from a
+**finite-conflict result when $`F(H)`$ is empty**. Section 6 already does so;
 the same qualification belongs in the conclusion of §9. This is a local
 consistency clarification, not a challenge to a cited theorem.
 

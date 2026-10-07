@@ -2,7 +2,7 @@
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 7, 2026 UTC.
 
-**P3-01 and P3-02 are complete; P3-A has passed at restricted-representation readiness scope.** The author has set a
+**P3-01–03 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
 minimum of **16 measured hours of research**, with longer work possible.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -42,11 +42,11 @@ These are agenda statements, not completed phase-three findings. The
 
 Suppose relying on a mathematical claim costs 10 units when it is false and
 zero when it is true. With a declared subjective probability
-$p_t=\Pr_t(\varphi)$, its estimated loss is
+$`p_t=\Pr_t(\varphi)`$, its estimated loss is
 
-$$
+```math
 \widehat L_t=10(1-p_t),\qquad p_t=1-\widehat L_t/10.
-$$
+```
 
 An estimated loss of 3 then encodes probability 0.7. This elementary conditional
 identity is an illustration of an expected-loss model, not a learning algorithm.
@@ -90,8 +90,14 @@ The [P3-A readiness assessment](checkpoints/A_1.md) selects a provisional
 versioned interface for finite rational constraints and loss queries, with
 known calibrated payoffs and interval/set uncertainty as the starting choice.
 Its probability adapter is explicit; alternative representations remain open.
-P3-03 is next and unstarted. No phase-three learner or final experiment has
-been established, and the contribution obligation remains **NOT YET SUPPORTED**.
+P3-03 now supplies a [finite bounded information process](derivations/03_logical_uncertainty.md):
+retained execution/checking, an interruptible outer cover, conditional loss
+bounds and named-action certificates. Its [companion proofs](derivations/03_refinement_extensions.md)
+separate finite-prefix completion, task certainty, source recovery and revision
+support. The general proof-stream adapter is mathematical; the actual prototype
+handles its declared finite Boolean/bounded-VM fragment. No anticipatory learner,
+paid-computation policy or final experiment has been established. P3-04 is next
+and unstarted; the contribution obligation remains **NOT YET SUPPORTED**.
 
 ## Workspace
 
@@ -107,6 +113,8 @@ been established, and the contribution obligation remains **NOT YET SUPPORTED**.
 | Reconstructed primary definitions | [Source contracts](literature/01_source_contracts.md) |
 | Probability information | [Finite derivation](derivations/02_probability_information.md) · [Primary comparisons](literature/02_probability_sources.md) · [Certificate companion](checks/02_finite_information_audit.py) |
 | Representation readiness | [P3-A decision](checkpoints/A_1.md) · [Current contract overlay](checkpoints/A_1.v1.json) |
+| Bounded logical uncertainty | [Construction and duties](derivations/03_logical_uncertainty.md) · [Extensions](derivations/03_refinement_extensions.md) · [Sources](literature/03_bounded_sources.md) · [Kernel](checks/03_bounded_logic.py) |
+| Mathematical Markdown | [Rendering conventions and guard](STYLE.md) |
 | Claims and open obligations | [Claim ledger](claim_ledger.md) |
 | Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |
-| Research records | [P3-01](work_logs/P3_01_2026-10-07_S1.md) · [P3-02](work_logs/P3_02_2026-10-07_S1.md) · [P3-A](work_logs/P3_A_2026-10-07_S1.md) |
+| Research records | [P3-01](work_logs/P3_01_2026-10-07_S1.md) · [P3-02](work_logs/P3_02_2026-10-07_S1.md) · [P3-A](work_logs/P3_A_2026-10-07_S1.md) · [P3-03](work_logs/P3_03_2026-10-07_S1.md) |

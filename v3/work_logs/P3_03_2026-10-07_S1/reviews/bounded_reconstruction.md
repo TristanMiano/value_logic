@@ -37,31 +37,31 @@ separate from measured host time. The conclusions below address that proposal.
 ## 2. Precise finite construction
 
 Fix an active finite list of distinct, versioned Boolean claims of length
-$n$. Their actual interpreted answer vector, when the stated semantic bridge
-applies, is $x^*\in\{0,1\}^n$. The algorithm does not receive this vector.
+$`n`$. Their actual interpreted answer vector, when the stated semantic bridge
+applies, is $`x^*\in\{0,1\}^n`$. The algorithm does not receive this vector.
 It receives only permitted program text, observations, computations and
 version-matched checked receipts.
 
-Let $C$ be the finite collection of accepted Boolean constraints. Define the
+Let $`C`$ be the finite collection of accepted Boolean constraints. Define the
 mathematical assessment set
 
-$$
+```math
 S(C)=\{x\in\{0,1\}^n:\ c(x)=1\text{ for every }c\in C\}.
-$$
+```
 
 This definition does not compute its members and does not require that they
 extend to complete models of arithmetic. A hard-evidence bridge states that
-every accepted constraint holds of $x^*$. It is a conditional soundness
+every accepted constraint holds of $`x^*`$. It is a conditional soundness
 premise, not a global consistency oracle supplied to the program.
 
-A cube is a length-$n$ word in `0`, `1`, and `*`; its concretization contains
+A cube is a length-$`n`$ word in `0`, `1`, and `*`; its concretization contains
 every Boolean vector agreeing with its specified positions. A finite frontier
-$P$ denotes the union of its cube concretizations, written $G(P)$. Initially
-$P$ contains the all-star cube. The essential invariant is
+$`P`$ denotes the union of its cube concretizations, written $`G(P)`$. Initially
+$`P`$ contains the all-star cube. The essential invariant is
 
-$$
+```math
 S(C)\subseteq G(P).
-$$
+```
 
 The frontier can be a disjoint partition of the retained region, though
 disjointness is needed for efficient accounting rather than sound interval
@@ -72,7 +72,7 @@ bounds alone. The following transitions preserve the invariant.
 2. **Prune:** delete a cube only when a sound partial evaluator proves that
    every completion violates an accepted constraint. Strong-Kleene value
    false is a sufficient condition for ordinary Boolean syntax.
-3. **Add evidence:** add an accepted constraint to $C$. Its compatible set
+3. **Add evidence:** add an accepted constraint to $`C`$. Its compatible set
    becomes a subset of the old one. Leaving the frontier temporarily unchanged
    is a sound outer approximation, although it does not yet enforce every
    accepted constraint on every covered assignment.
@@ -88,9 +88,9 @@ instruction to assign the claim either truth value or a particular probability.
 ### Soundness theorem
 
 Assume the initial cover, transition checks, and hard-evidence bridge above.
-Then after every committed transition, $x^*\in S(C)\subseteq G(P)$. If a
-computed interval encloses the loss at every point of $G(P)$, it therefore
-encloses the actual loss at $x^*$. The proof is induction over committed
+Then after every committed transition, $`x^*\in S(C)\subseteq G(P)`$. If a
+computed interval encloses the loss at every point of $`G(P)`$, it therefore
+encloses the actual loss at $`x^*`$. The proof is induction over committed
 transitions followed by one application of set containment.
 
 The theorem needs no complete arithmetic models, no full-theory entailment
@@ -111,7 +111,7 @@ committed, or roll back incomplete changes. Its declared resource model must
 cover the chosen mechanism. Budget failure returns the prior sound state or an
 explicit pending state whose residual work remains covered.
 
-**Interruption witness.** For one unknown bit $x$ and loss $x$, suppose an
+**Interruption witness.** For one unknown bit $`x`$ and loss $`x`$, suppose an
 enumerator has visited only assignment zero. Returning the visited minimum and
 maximum gives `[0,0]`, which fails if the actual answer is one. Keeping the
 unvisited branch, or retaining the parent cube, gives the warranted interval
@@ -128,12 +128,12 @@ deleting unexplored alternatives is not.
 Map a cube to coordinate intervals: zero becomes `[0,0]`, one becomes `[1,1]`,
 and a star becomes `[0,1]`. For a known rational affine term
 
-$$
+```math
 f(x)=a_0+\sum_{i=1}^{n}a_i x_i,
-$$
+```
 
-the lower endpoint selects the lower coordinate endpoint for $a_i\geq0$ and
-the upper endpoint for $a_i<0$; the upper endpoint makes the opposite choices.
+the lower endpoint selects the lower coordinate endpoint for $`a_i\geq0`$ and
+the upper endpoint for $`a_i<0`$; the upper endpoint makes the opposite choices.
 These are exact extrema over the Boolean cube and over its real box.
 
 Interval extensions for addition, known rational scaling, minimum and maximum
@@ -161,8 +161,8 @@ On a singleton cube, every coordinate interval is exact. Induction over the
 term syntax then shows that affine/min/max evaluation returns the exact
 rational loss. Consequently, if a fixed finite frontier is eventually split
 into singletons and every singleton is checked against every accepted
-constraint, the retained source is exactly $S(C)$ and the loss extrema are
-exact on that assessment set. There are at most $2^n-1$ binary splits in a full
+constraint, the retained source is exactly $`S(C)`$ and the loss extrema are
+exact on that assessment set. There are at most $`2^n-1`$ binary splits in a full
 tree, but checking constraints and evaluating terms have their own nonzero
 costs. This is a finite termination bound, not a claim of efficiency.
 
@@ -172,7 +172,7 @@ Replacing Boolean stars by real intervals embeds the frontier in a finite
 union of rational boxes, inside the inherited native source language. Its
 relationship to the Boolean source is containment. For a general admitted
 piecewise-affine loss it is not exact equivalence of extrema. The term
-$\min(x,1-x)$ equals zero at both Boolean assignments but reaches $1/2$ on
+$`\min(x,1-x)`$ equals zero at both Boolean assignments but reaches $`1/2`$ on
 the real interval `[0,1]`. A native certificate over the real boxes can still
 transfer to the actual Boolean answer through containment. A relaxation-only
 counterexample need not refute the Boolean target.
@@ -182,14 +182,14 @@ coordinate. It does not assert that the coordinate is itself a probability.
 
 ## 5. Nonemptiness and coherence require distinct evidence
 
-A nonempty frontier need not certify $S(C)$ nonempty. It can retain cubes
+A nonempty frontier need not certify $`S(C)`$ nonempty. It can retain cubes
 whose incompatibility has not yet been discovered. For example, constraints
-`x` and `not x` make $S(C)$ empty, but the initial all-star cube can remain
+`x` and `not x` make $`S(C)`$ empty, but the initial all-star cube can remain
 while processing is incomplete. The proper status is an outer cover with
 pending constraint processing, not “a consistent logical model found.”
 
 Conversely, an empty frontier obtained from a complete initial cover by valid
-splits and justified prunes proves $S(C)$ empty. The transition record, or a
+splits and justified prunes proves $`S(C)`$ empty. The transition record, or a
 separate checked finite unsatisfiability certificate, supplies the proof.
 An empty frontier supplied without this history is not by itself a conflict
 certificate. Under the stated bridge to a single actual vector, a certified
@@ -318,10 +318,10 @@ make a finite interface extendible to arbitrary requested syntax. A midpoint
 operation proves useful refinement on a growing cohort.
 
 Consider a fair search process where each fixed query will eventually receive
-its checked answer, but the requested query at round $t$ is a newly introduced
+its checked answer, but the requested query at round $`t`$ is a newly introduced
 one beyond the completed search frontier. Every initial report can remain
 unresolved. If a point-default policy returns `1/2` and all these selected
-queries happen to be true, its squared loss is $1/4$ on every initial report.
+queries happen to be true, its squared loss is $`1/4`$ on every initial report.
 Pointwise eventual resolution of old queries remains possible. The two
 statements have different quantifiers.
 

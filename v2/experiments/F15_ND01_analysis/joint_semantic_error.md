@@ -20,24 +20,24 @@ with donor `dr` means `h <- h+Pr(h(dr)-h)`. Idempotence makes repeated
 replacement by the same donor stable. Mutual orthogonality makes the two
 donor assignments commute. Starting at base `b`, their joint result is
 
-\[
+```math
 h_{01}=h(b)+P_0(h(d_0)-h(b))+P_1(h(d_1)-h(b)).
-\]
+```
 
 Define `phi_r(x)=v^T Pr h(x)`, `r_r=phi_r-ell_r`, and
 `e(b)=z(b)-z*(b)`. Then
 
-\[
+```math
 \epsilon_{01}=z_{01}-[\ell_0(d_0)+\ell_1(d_1)]
 =e(b)+[r_0(d_0)-r_0(b)]+[r_1(d_1)-r_1(b)].
-\]
+```
 
 If `epsilon0` and `epsilon1` denote the individual intervention errors for
 these **same** base and donor choices, the equivalent identity is
 
-\[
+```math
 \boxed{\epsilon_{01}=\epsilon_0+\epsilon_1-e(b).}
-\]
+```
 
 This shows exactly what the whole-box output-equivalence witnesses establish
 and leave open. Their individual effects agree with existing masks on
@@ -52,10 +52,10 @@ sum agrees closely enough with both intended cost assignments.
 For any one probability distribution on triples `(b,d0,d1)` and any `p>=1`,
 the triangle inequality gives
 
-\[
+```math
 \|\epsilon_{01}\|_p
 \leq\|\epsilon_0\|_p+\|\epsilon_1\|_p+\|e(b)\|_p.
-\]
+```
 
 All terms must use the triple distribution's actual marginals. Separate
 role-conditioned samples are not automatically those marginals. This matters
@@ -80,10 +80,10 @@ conditional, finite diagnostic has not established those stronger premises.
 
 Consider the deliberately simple algebraic example
 
-\[
+```math
 t\in[0,4/25],\quad h(t)=(t,t,2t),\quad
 v=(1,1,-1),\quad\beta=0.
-\]
+```
 
 Let both high-level log contributions be zero. Every ordinary logit is
 exactly zero, so ordinary probability is the exact target `1/2`. Choose

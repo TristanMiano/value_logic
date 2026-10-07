@@ -53,9 +53,9 @@ or superiority claim follows from writing those results in value terminology.
 Let the finite state space be `Omega={1,...,n}`, with `n>=1`. A supplied
 admissible family `P` is a nonempty subset of the probability simplex
 
-$$
+```math
 \Delta_n=\{p\in\mathbb R^n:p_i\ge0,\ \mathbf1^Tp=1\}.
-$$
+```
 
 Here the subscript counts states; the simplex has dimension `n-1`. In this
 fragment `p` may be an explicitly subjective law over unresolved assessment
@@ -73,9 +73,9 @@ physical randomness of a fixed mathematical answer.
 
 For a known matrix `L in R^(m x n)`, define
 
-$$
+```math
 F(y)=\{p\in P:Lp=y\}.
-$$
+```
 
 This is the **observation fiber**. An empty fiber means the exact observations
 and premises are incompatible, not that every decision has a valid bound.
@@ -89,11 +89,11 @@ identities but need a separate computational encoding.
 For any specified target map `T:P -> Z`, an exact decoder from `Lp` exists
 if and only if
 
-$$
+```math
 Lp=Lq\quad\Longrightarrow\quad T(p)=T(q)
 \qquad(p,q\in P).
 \tag{1}
-$$
+```
 
 **Proof.** A decoder has only one output on the common input. Conversely, if
 (1) holds, define its output on an attainable observation to be the common
@@ -111,10 +111,10 @@ a range over the fiber is another service and need not produce a point.
 For an event with subjective probability `p`, known losses `c_1` on the event
 and `c_0` off it give
 
-$$
+```math
 v=c_0+(c_1-c_0)p.
 \tag{2}
-$$
+```
 
 If `c_1 != c_0`, then `p=(v-c_0)/(c_1-c_0)`. An exact feasible expectation
 lies between the two losses. If they are equal, the value is constant and
@@ -134,10 +134,10 @@ outcome inference disappears.
 **Unknown stakes do not always prevent recovery.** If an exhaustive partition
 has values `v_i=s p_i` with the **same unknown positive** `s`, then
 
-$$
+```math
 s=\sum_i v_i,\qquad p_i=\frac{v_i}{\sum_jv_j}.
 \tag{3}
-$$
+```
 
 Normalization calibrates the scale. With an unknown common offset, a known
 zero-payoff anchor with report `v_0=b` gives `v_i=b+s p_i`, and the same formula
@@ -160,11 +160,11 @@ certification thus have distinct implementation needs.
 
 Put
 
-$$
+```math
 A=\begin{bmatrix}\mathbf1^T\\L\end{bmatrix},\qquad
 b(y)=\begin{bmatrix}1\\y\end{bmatrix}.
 \tag{4}
-$$
+```
 
 The normalization row is known information. Omitting it gives an incorrect
 rank requirement.
@@ -220,10 +220,10 @@ not demand more information than it uses.
 For arbitrary `P`, use the literal fiber principle (1). If `P` is convex and
 `V=span(P-P)` is its actual affine direction space, the target criterion is
 
-$$
+```math
 \ker(L|_V)\subseteq\ker(C|_V).
 \tag{5}
-$$
+```
 
 **Proof.** Every admissible difference lies in `V`, proving sufficiency.
 A nonempty finite-dimensional convex set has a relative-interior point. A
@@ -254,10 +254,10 @@ More precisely, for a nonempty full-simplex fiber let
 `J={i:some p in F(y) has p_i>0}`. Restrict matrices to columns in `J`.
 The target `Cp` is constant on this fiber exactly when
 
-$$
+```math
 \ker A_J\subseteq\ker C_J.
 \tag{6}
-$$
+```
 
 **Proof.** Every fiber law is zero outside `J`. Averaging finitely many
 feasible laws that collectively witness each member of `J` gives a feasible
@@ -272,9 +272,9 @@ at `y=1`, selecting `e_2` alone would falsely certify uniqueness.
 Let a finite action family have rows `c_a`, with expected cost `c_a p`.
 For one nonempty fiber write
 
-$$
-\operatorname{Opt}(p)=\arg\min_a c_a p.
-$$
+```math
+\mathrm{Opt}(p)=\arg\min_a c_a p.
+```
 
 The following are different requests:
 
@@ -317,13 +317,13 @@ common Bayes-optimal action; that does not recover the missing Bayes decision.
 Exact recovery is one endpoint of a useful range of services. Let a nonempty
 compatible source be the rational polytope
 
-$$
+```math
 F(y)=\{p\geq0:Ap=b(y),\ Gp\leq g\},
 \qquad
 \ell_y(c)=\min_{p\in F(y)}cp,\quad
 u_y(c)=\max_{p\in F(y)}cp.
 \tag{7}
-$$
+```
 
 Normalization is included in `A`, so the source is bounded. Both extrema are
 attained. Convexity makes the target range the entire interval
@@ -336,12 +336,12 @@ is a failed premise, not a warrant to make an arbitrary decision.
 
 For any free vector `lambda` and nonnegative vector `mu`,
 
-$$
+```math
 A^T\lambda+G^T\mu\geq c^T
 \quad\Longrightarrow\quad
 cp\leq\lambda^Tb(y)+\mu^Tg\quad(p\in F(y)).
 \tag{8}
-$$
+```
 
 This is direct arithmetic: multiply the componentwise inequality by `p>=0`,
 use the equalities, and multiply the upper inequalities only by nonnegative
@@ -356,10 +356,10 @@ duality theorem. [P02-S5](../literature/02_probability_sources.md)
 
 **Sharp three-state example.** Retain `y=p_2+2p_3=1/2`. Every compatible law is
 
-$$
+```math
 p=(1/2+t,\ 1/2-2t,\ t),\qquad 0\leq t\leq1/4.
 \tag{9}
-$$
+```
 
 Thus the expected singleton loss `p_3` is exactly bounded by `[0,1/4]`.
 The lower certificate is `p_3>=0`; the upper is
@@ -374,11 +374,11 @@ second.
 
 For a finite action family, the worst compatible regret of action `a` is
 
-$$
+```math
 W_y(a)=\max_{p\in F(y)}\left(c_a p-\min_b c_b p\right)
       =\max_b u_y(c_a-c_b).
 \tag{10}
-$$
+```
 
 The second equality uses only a maximum over a finite family; it holds for
 nonconvex compact sources too. Since `b=a` is included, `W_y(a)>=0`.
@@ -395,13 +395,13 @@ Let a private action draw use probabilities `lambda_a` after seeing the
 retained observation. Nature's compatible law is chosen without observing
 that draw, and the target is expected regret over the draw. Then
 
-$$
+```math
 \sup_{p\in F}\sum_a\lambda_a
 \left(c_ap-\min_b c_bp\right)=0
 \quad\Longleftrightarrow\quad
-\operatorname{supp}\lambda\subseteq\bigcap_{p\in F}\operatorname{Opt}(p).
+\mathrm{supp}\lambda\subseteq\bigcap_{p\in F}\mathrm{Opt}(p).
 \tag{10a}
-$$
+```
 
 Every summand is nonnegative, so a positive-weight action must itself have
 zero regret at every compatible law. Thus randomization cannot rescue the
@@ -419,11 +419,11 @@ proves the finite statement; no randomized acquisition policy is supplied.
 
 If the retained values are estimates, a declared deterministic error set gives
 
-$$
+```math
 F(\widehat y,\varepsilon)
  =\{p\in P:-\varepsilon\leq Lp-\widehat y\leq\varepsilon\}.
 \tag{11}
-$$
+```
 
 The resulting interval and decision guarantees are conditional on the source
 and error premises. If a statistical method establishes their joint coverage
@@ -441,20 +441,20 @@ reported numbers are the same.
 
 On the ordered joint states `00,01,10,11`, compare
 
-$$
+```math
 p_{\rm same}=(1/2,0,0,1/2),\qquad
 p_{\rm opposite}=(0,1/2,1/2,0).
-$$
+```
 
 Both have `E[X]=E[Y]=1/2` and `E[X+Y]=1`. But
 `E[max(X,Y)]` is respectively `1/2` and `1`. A constant fallback `3/4`
 therefore requires opposite choices. Given only the two marginals, the fiber is
 
-$$
+```math
 p=(t,1/2-t,1/2-t,t),\quad 0\leq t\leq1/2,
 \qquad E[\max(X,Y)]=1-t\in[1/2,1].
 \tag{12}
-$$
+```
 
 The maximum is nonlinear in the state variables `X,Y`, but it is a **known
 linear expectation** of the joint-state loss row `(0,1,1,1)`. Retaining that
@@ -470,21 +470,21 @@ Suppose `K` is a state-observed stake taking values `1` and `3` with probability
 `1/2` each. The payoff is the known joint-state quantity `K 1_A`, and its
 expectation is `1`. Write `x=P(K=1,A)` and `z=P(K=3,A)`. Then
 
-$$
+```math
 x+3z=1,\quad 0\leq x,z\leq1/2
 \quad\Longrightarrow\quad
 1/6\leq z\leq1/3,
 \quad P(A)=x+z=1-2z\in[1/3,2/3].
 \tag{13}
-$$
+```
 
 Both endpoints extend to feasible joint laws with the declared stake marginal.
 Although `E[K]=2`, dividing the retained expected loss by `2` gives `1/2`,
 which need not be `P(A)`. The missing term is explicit:
 
-$$
-E[K1_A]=E[K]P(A)+\operatorname{Cov}(K,1_A).
-$$
+```math
+E[K1_A]=E[K]P(A)+\mathrm{Cov}(K,1_A).
+```
 
 Independence is sufficient to remove it but has not been assumed. On an
 enumerated joint state space the payoff coefficients `1` and `3` are known,
@@ -548,12 +548,12 @@ incentive argument needs a different causal/game contract.
 
 For the multiclass Brier loss,
 
-$$
+```math
 \ell(q,i)=\|q-e_i\|_2^2,\qquad
 R_p(q)=1+\|q\|_2^2-2q^Tp
       =1-\|p\|_2^2+\|q-p\|_2^2.
 \tag{14}
-$$
+```
 
 This directly proves strict propriety. A **certified excess risk** at most
 `delta` gives `||q-p||_2<=sqrt(delta)`; a small realized score alone supplies
@@ -573,11 +573,11 @@ For logarithmic loss use positive report coordinates. A uniform report has
 constant risk `log n`. Let `q^0` be uniform and let `q^j` assign `2/(n+1)`
 to state `j` and `1/(n+1)` to every other state. Then
 
-$$
+```math
 R_p(q^j)-R_p(q^0)
 =\log((n+1)/n)-p_j\log2.
 \tag{15}
-$$
+```
 
 These exact risk differences recover the respective probabilities. Boundary
 log reports with infinite losses cannot be treated as finite matrix rows.
@@ -593,11 +593,11 @@ Assume `n>=2`, a report domain containing every strictly positive probability
 vector, finite known score vectors `ell(q)` for its reports, and unique global
 minimum `q=p` for every strictly positive law `p`. For any fixed report `q^0`,
 
-$$
-\operatorname{span}\{\ell(q)-\ell(q^0):q\text{ admissible}\}
+```math
+\mathrm{span}\{\ell(q)-\ell(q^0):q\text{ admissible}\}
 =\mathbb R^n.
 \tag{16}
-$$
+```
 
 **Proof.** Suppose a nonzero vector `z` annihilates all the differences.
 If `1^T z=0`, take an interior law `p` and sufficiently small nonzero `t`
@@ -628,20 +628,20 @@ elementary finite reconstruction of strict propriety and linear algebra.
 
 Now suppose the observed numbers obey the stronger declared relationship
 
-$$
+```math
 v(q)=b+s R_p(q),\qquad s>0,
 \tag{17}
-$$
+```
 
 with the **same** unknown `b,s` for every report. Select `n` independent
 difference rows in (16), stack them as an invertible `D`, and set
 `d_j=v(q^j)-v(q^0)`. Then
 
-$$
+```math
 x=D^{-1}d=s p,\quad s=\mathbf1^T x,
 \quad p=x/s,\quad b=v(q^0)-\ell(q^0)x.
 \tag{18}
-$$
+```
 
 Thus `n+1` raw expected-score values can recover the law and both nuisance
 parameters. This is a constructive exception to arbitrary unknown-stakes
@@ -663,12 +663,12 @@ nonlinear encodings or adaptive query policies.
 **Rational Brier construction.** Use the uniform report and all `n` vertices.
 Write `v_0=v(u)`, `v_i=v(e_i)` and `d_i=v_i-v_0`. Then
 
-$$
+```math
 s=\frac{\sum_i d_i}{n-1},\qquad
 p_i=\frac{1+1/n-d_i/s}{2},\qquad
 b=v_0-s(1-1/n).
 \tag{19}
-$$
+```
 
 For `n=3`, the values `(v_0,v_1,v_2,v_3)=(7,10,9,8)` give
 `s=3`, `b=5`, and `p=(1/6,1/3,1/2)`. All payoff rows and observations
@@ -688,11 +688,11 @@ population law. This hostile case is included in the exact development check.
 For a chosen target matrix `C` with `k` rows, report `r in R^k` and use outcome loss
 `||r-C[:,i]||_2^2`. Its expectation is
 
-$$
+```math
 \|r-Cp\|_2^2
  +\sum_i p_i\|C[:,i]\|_2^2-\|Cp\|_2^2.
 \tag{20}
-$$
+```
 
 The unique optimum report is `r=Cp`. This directly elicits the specified
 expected-loss vector even if it identifies no full law. Known scoring weights
@@ -724,17 +724,17 @@ Discarded rows can add ties but cannot be the only optimum anywhere.
 Let `A=[1^T;L]` as before. A selector returning some optimal action from `Lp`
 exists for **every** law in the full simplex if and only if
 
-$$
-c_a-c_b\in\operatorname{row}A\qquad(a,b\in E).
+```math
+c_a-c_b\in\mathrm{row}A\qquad(a,b\in E).
 \tag{21}
-$$
+```
 
 Equivalently, choose one essential reference action `a_0` and factor
 
-$$
+```math
 c_a=c_{a_0}+\alpha_a\mathbf1^T+\beta_a L\quad(a\in E).
 \tag{22}
-$$
+```
 
 The constructive selector minimizes `alpha_a+beta_a y`; the common expected
 baseline `c_{a_0}p` may remain unknown. If `D_E` contains the differences
@@ -759,11 +759,11 @@ Suppose adjacent actions `a,b` have a hidden direction `h in ker A` with
 with `p^+=p^0+t h` and `p^-=p^0-t h` both feasible and in the two local
 cells. They have the same observation, while
 
-$$
+```math
 \frac{f(p^+)+f(p^-)}2
  =f(p^0)-\frac t2(c_a-c_b)h<f(p^0).
 \tag{23}
-$$
+```
 
 If **any** original action were optimal at both endpoints, its affine cost
 at their midpoint would equal the left side, below the minimum at `p^0`.
@@ -782,11 +782,11 @@ Merge loss rows that are identical as affine functions on `aff(P)`, define
 `E_P` by unique optimality somewhere in `ri(P)`, and put
 `V=span(P-P)`. Then some optimal action is recoverable everywhere on `P` iff
 
-$$
+```math
 (c_a-c_b)h=0\qquad
 (a,b\in E_P,\ h\in V\cap\ker L).
 \tag{21a}
-$$
+```
 
 The essential-envelope argument holds by approaching any source point from
 its relative interior. A generic polygonal path stays in that open convex
@@ -804,10 +804,10 @@ For a **union** of convex cases, checking each case separately is insufficient
 unless case identity is retained or their overlapping observations are also
 checked. Let
 
-$$
-P_1=\operatorname{conv}\{e_1,e_2\},\quad
-P_2=\operatorname{conv}\{e_3,e_4\},\quad P=P_1\cup P_2,
-$$
+```math
+P_1=\mathrm{conv}\{e_1,e_2\},\quad
+P_2=\mathrm{conv}\{e_3,e_4\},\quad P=P_1\cup P_2,
+```
 
 and take `L=(0,1,0,1)`, `c_A=(0,0,1,1)`, `c_B=(1,1,0,0)`.
 Action `A` is uniquely optimal throughout `P_1`; `B` is uniquely optimal
@@ -855,12 +855,12 @@ expectation codes and decode actions without full-law recovery.
 The finite factorization supplies an elementary error bridge. If the decoder
 minimizes `alpha_a+beta_a u` over essential actions, then under any fixed law
 
-$$
-\operatorname{regret}_p(\operatorname{decode}(u))
+```math
+\mathrm{regret}_p(\mathrm{decode}(u))
 \leq
 \max_{a,b\in E}\|\beta_a-\beta_b\|_*\,\|u-Lp\|.
 \tag{24}
-$$
+```
 
 Indeed compare the chosen action with an essential true optimum; their
 predicted difference is nonpositive and their error difference is bounded
@@ -913,11 +913,11 @@ Let `n>=2`, let `L` be known, and observe `v=sLp`, with the same unknown
 `s>0` for every coordinate. For a **nonconstant** scalar target `cp`, global
 recovery over the full simplex and every positive scale holds exactly when
 
-$$
-\mathbf1^T\in\operatorname{row}L
-\quad\hbox{and}\quad c\in\operatorname{row}L.
+```math
+\mathbf1^T\in\mathrm{row}L
+\quad\hbox{and}\quad c\in\mathrm{row}L.
 \tag{25}
-$$
+```
 
 If `alpha L=1^T` and `beta L=c`, then `s=alpha v` and
 `cp=(beta v)/(alpha v)`. To prove necessity of the constant row, choose
@@ -925,10 +925,10 @@ If `alpha L=1^T` and `beta L=c`, then `s=alpha v` and
 nonconstant, some interior `p` satisfies `ch-Hcp!=0`. For sufficiently small
 nonzero `t`,
 
-$$
+```math
 p_t=\frac{p+th}{1+tH},\qquad s_t=s(1+tH)>0
 \tag{26}
-$$
+```
 
 are admissible and have `s_t Lp_t=sLp`, but
 `cp_t-cp=t(ch-Hcp)/(1+tH)!=0`. If the constant row is present and the
@@ -967,10 +967,10 @@ states this extension and the required unconstrained-nuisance hypotheses.
 Suppose `L>=0` and every column sum `a_i=sum_j L_{ji}` is strictly positive.
 Then the normalized report
 
-$$
+```math
 w(p)=\frac{Lp}{a^Tp}
 \tag{27}
-$$
+```
 
 has exactly the law-collision relation of the unknown-positive-scale model.
 Equal normalized reports mean positively proportional original reports, and
@@ -983,10 +983,10 @@ reexamined; silently dropping that state can change the source.
 Unknown common scale can nevertheless preserve useful decisions when it
 preserves no nonconstant linear probability target globally. For
 
-$$
+```math
 L=\begin{bmatrix}0&1&2\\1&0&1\end{bmatrix},
 \tag{28}
-$$
+```
 
 the constant row is absent from `row L`. Still `argmin(v_1,v_2)` is the
 correct action under every positive common scale, and the choice changes with
@@ -1004,11 +1004,11 @@ and old hidden space `U=V intersect ker L`. To recover a new expected-loss
 family `Cp`, the minimum number of freely chosen additional exact linear
 measurements is
 
-$$
+```math
 r=\dim C(U)
- =\operatorname{rank}([L;C]|_V)-\operatorname{rank}(L|_V).
+ =\mathrm{rank}([L;C]|_V)-\mathrm{rank}(L|_V).
 \tag{29}
-$$
+```
 
 **Proof.** An additional matrix `M` succeeds exactly when
 `ker(M|_U) subset ker(C|_U)`. The rank of `M|_U` must therefore be at least
@@ -1047,11 +1047,11 @@ Suppose the admissible payoff matrices are the complete componentwise box
 `lower_L <= L <= upper_L`, with finite known bounds satisfying
 `lower_L <= upper_L` entrywise. Then
 
-$$
+```math
 \{p\in\Delta_n:\exists L\in[\underline L,\overline L],\ Lp=y\}
 =\{p\in\Delta_n:\underline Lp\leq y\leq\overline Lp\}.
 \tag{30}
-$$
+```
 
 **Proof.** Nonnegative probabilities give the displayed inequalities for
 every admissible `L`. Conversely, for each row let
@@ -1114,10 +1114,10 @@ bilinear-programming or probability-estimation claim.
 
 On three states consider
 
-$$
+```math
 L_\delta=\begin{bmatrix}0&1&1\\0&1&1+\delta\end{bmatrix}.
 \tag{31}
-$$
+```
 
 For known `delta!=0`, normalization and these two rows recover the full law;
 in particular `p_3=(y_2-y_1)/delta`. If the two measured means each have
@@ -1145,11 +1145,11 @@ For a scalar target the best unrestricted worst-case estimate on that fiber
 is the midpoint of its attainable extrema, with radius
 `(max_(p in F_z) cp-min_(p in F_z) cp)/2`. Globally,
 
-$$
+```math
 R_{\rm free}
 =\frac12\max\{|c(p-q)|:p,q\in P,\ L(p-q)\in E-E\}.
 \tag{32}
-$$
+```
 
 **Proof.** Two laws can produce the same observation exactly when
 `Lp+e_p=Lq+e_q` for some `e_p,e_q in E`, equivalently
@@ -1172,12 +1172,12 @@ itself supply a finite computational budget.
 For (31), `delta>0`, and equal coordinate errors `epsilon>=0`, the exact
 global scalar radius for `p_3` is
 
-$$
+```math
 R_\delta(\epsilon)
 =\frac12\min\left\{1,\frac{4\epsilon}{\delta},
                          \frac{1+2\epsilon}{1+\delta}\right\}.
 \tag{33}
-$$
+```
 
 To verify it, write a nonnegative target difference as
 `h=p-q=(-t,t-r,r)`, `r>=0`. A zero-sum vector is a difference of normalized
@@ -1194,7 +1194,7 @@ For `delta=2`, `epsilon=2/5`, it gives `2/5`, while the exact radius is
 `3/10`. The pointwise intervals have an equally explicit form: for a feasible
 `z` and `delta>0`,
 
-$$
+```math
 \begin{aligned}
 \ell_z(p_3)&=\max\left\{0,\frac{z_2-1-\epsilon}{\delta},
                             \frac{z_2-z_1-2\epsilon}{\delta}\right\},\\
@@ -1203,7 +1203,7 @@ u_z(p_3)&=\min\left\{1,z_1+\epsilon,
                        \frac{z_2-z_1+2\epsilon}{\delta}\right\}.
 \end{aligned}
 \tag{34}
-$$
+```
 
 These follow by intersecting the possible intervals for `p_2+p_3` after
 fixing `p_3`. They use only min/max and rational affine operations when
@@ -1232,10 +1232,10 @@ an unrestricted vector has sharp radius
 `r_free=max_j(b_j-a_j)/2`. If the answer must instead come from one law
 `q in F_z`, the sharp compatible radius is
 
-$$
+```math
 r_{\rm coh}=\min_{q\in F_z}\max_j\{C_jq-a_j,\ b_j-C_jq\}.
 \tag{35}
-$$
+```
 
 When the fiber `F_z` is a nonempty compact polytope, this is an LP after
 introducing the radius variable and computing the extrema. When `F_z` is
@@ -1246,11 +1246,11 @@ the whole union, then minimize the center objective on each case and take
 the best attained value; the union itself need not be one LP. Equality with
 the free radius holds exactly when
 
-$$
+```math
 C(F_z)\ \cap\ \prod_j[b_j-r_{\rm free},\ a_j+r_{\rm free}]
 \ne\varnothing.
 \tag{36}
-$$
+```
 
 Take `F_z=Delta_3`, no informative observation, and `C=I`. The unrestricted
 center `(1/2,1/2,1/2)` has radius `1/2` but is not a law. A compatible law
@@ -1275,10 +1275,10 @@ For unknown common-scale values `x_i=s p_i`, suppose the observations are
 `x_1 in [3/2,5/2]`, `x_2 in [3/4,5/4]`; it proves `s=x_1+x_2>=9/4`.
 The exact probability interval is
 
-$$
+```math
 \frac6{11}\leq\frac{x_1}{x_1+x_2}\leq\frac{10}{13}.
 \tag{37}
-$$
+```
 
 The lower affine certificate is `6x_2-5x_1<=0`, the upper is
 `3x_1-10x_2<=0`, and the appropriate box corners attain both bounds.
@@ -1331,19 +1331,19 @@ undeclared inverse.
 
 After legitimate unit transport, retain both orientations of
 
-$$
+```math
 p_1+p_2+p_3=1,\qquad
 p_1+2p_2=5/4,\qquad p_2+3p_3=5/4,
 \tag{38}
-$$
+```
 
 together with nonnegativity. The augmented matrix has determinant `4`, and
 its unique law is `(1/4,1/2,1/4)`. For example, putting
 `s=p_1+p_2+p_3`, `ell_1=p_1+2p_2`, `ell_2=p_2+3p_3`,
 
-$$
+```math
 p_1=(3/2)s-(1/2)\ell_1-(1/2)\ell_2.
-$$
+```
 
 The source rows `s<=1`, `-ell_1<=-5/4`, `-ell_2<=-5/4`, with
 nonnegative multipliers `3/2,1/2,1/2`, certify `p_1<=1/4`.
@@ -1404,18 +1404,18 @@ conditional probability gives a constructive and useful exception.
 Let `P` be nonempty convex, let `a,b` be known rows with `bp>0` throughout
 `P`, and assume the target
 
-$$
+```math
 T(p)=\frac{ap}{bp}
 \tag{39}
-$$
+```
 
 is nonconstant on `P`. With known-unit observations `Lp`, this target is
 recoverable globally iff **both** numerator and denominator are recoverable:
 
-$$
-ah=bh=0\qquad(h\in V\cap\ker L),\qquad V=\operatorname{span}(P-P).
+```math
+ah=bh=0\qquad(h\in V\cap\ker L),\qquad V=\mathrm{span}(P-P).
 \tag{40}
-$$
+```
 
 **Proof.** For an interior point relative to `aff(P)`, every sufficiently
 small perturbation in a hidden direction `h` remains in the same fiber.
@@ -1431,10 +1431,10 @@ observation and is expressly excluded from its necessity claim.
 
 With a common unknown positive scale, `v=sLp`, use instead
 
-$$
-ah=bh=0\qquad(h\in W\cap\ker L),\qquad W=\operatorname{span}(P).
+```math
+ah=bh=0\qquad(h\in W\cap\ker L),\qquad W=\mathrm{span}(P).
 \tag{41}
-$$
+```
 
 Indeed the positive cone `C_+(P)={sp:s>0,p in P}` is convex and has affine
 direction space `W`; the ratio is unchanged by positive scaling. Apply the
@@ -1471,10 +1471,10 @@ In the same three states, retain only the nonnegative loss
 `d=p_1-p_2=1/5`. Write
 `p=(u+d,u,1-2u-d)`, where `0<=u<=2/5`. Then
 
-$$
+```math
 \Pr(A\mid B)=\frac{u+d}{2u+d}\in[3/5,1].
 \tag{42}
-$$
+```
 
 Both endpoints are attained, so the probability is only partially identified,
 but its comparison with `1/2` is settled. For example, the laws
@@ -1498,14 +1498,14 @@ For a rational nonempty compact polytope
 `bp>=beta>0`. The substitution `t=1/(bp)`, `x=tp` turns optimization of
 `ap/(bp)` into the ordinary linear program
 
-$$
+```math
 \begin{aligned}
 \text{minimize or maximize }& ax,\\
 \text{subject to }& Bx=dt,\quad Gx\le gt,\quad bx=1,\\
 &x\ge0,\quad 0\le t\le 1/\beta.
 \end{aligned}
 \tag{43}
-$$
+```
 
 Normalization gives `1^T x=t`; together with `bx=1`, it forces `t>0`.
 Thus `p=x/t` is the inverse construction. This is the positive-denominator
@@ -1525,11 +1525,11 @@ If `u=Pr(A and B)`, `v=Pr(B)>=beta`, estimates satisfy
 `|u_hat-u|<=eta_u`, `|v_hat-v|<=eta_v<beta`, and the estimated denominator
 is used, then
 
-$$
+```math
 \left|\frac{u_{\rm hat}}{v_{\rm hat}}-\frac uv\right|
 \le\frac{\eta_u+\eta_v}{\beta-\eta_v}.
 \tag{44}
-$$
+```
 
 This follows by cross-multiplication and `0<=u/v<=1`. Clipping the result
 to `[0,1]` cannot increase scalar error. Joint feasible-source optimization
@@ -1564,12 +1564,12 @@ Let `K` be a nonempty compact convex subset of a finite-dimensional real
 space, let `N` be a known linear observation map, and let `c` be a known
 scalar linear target. Then
 
-$$
+```math
 \inf_g\sup_{x\in K}|cx-g(Nx)|
 =\min_{\alpha,\beta}\sup_{x\in K}|cx-\alpha-\beta Nx|
 =\frac12\max_{\substack{x,x'\in K\\Nx=Nx'}}|c(x-x')|.
 \tag{45}
-$$
+```
 
 The decoder output is unrestricted; source compatibility, a particular
 pointwise error budget and computation costs are separate requirements.
@@ -1650,14 +1650,14 @@ For `P=Delta_3`, retain `z=p_2+2p_3` and target `p_3`. Its fiber interval is
 The affine rule `g(z)=z/2-1/4` attains it, but returns `-1/4` on the
 singleton fiber `z=0`. The pointwise midpoint is instead
 
-$$
+```math
 m(z)=
 \begin{cases}
 z/4,&0\le z\le1,\\
 3z/4-1/2,&1\le z\le2.
 \end{cases}
 \tag{46}
-$$
+```
 
 It is compatible and has the same global radius. Any affine rule also
 required to be compatible at **every** observation must pass through the
@@ -1686,10 +1686,10 @@ and decoder outputs `d_1,...,d_N`, let
 `R=sup_p |p-d_(code(p))|`. The `N` intervals `[d_j-R,d_j+R]` cover
 `[0,1]`; their total length is at most `2NR`. Consequently
 
-$$
+```math
 R\ge\frac1{2N}.
 \tag{47}
-$$
+```
 
 Equal-width bins with midpoint decoding attain this bound. No continuity or
 measurability assumption on the encoder is needed. At most `B` fixed-length
@@ -1732,12 +1732,12 @@ of draws must not be interchanged.
 
 For fixed report rows and a common outcome batch `Y_1,...,Y_M`,
 
-$$
+```math
 \frac1M\sum_{t=1}^M L[:,Y_t]=L\widehat p,
 \qquad
 \widehat p_i=\frac{\#\{t:Y_t=i\}}M.
 \tag{48}
-$$
+```
 
 Thus an exact inverse returns the empirical law. This algebra needs no iid
 assumption; connecting the empirical law to a population law requires a
@@ -1762,11 +1762,11 @@ One scalar **optimal** risk can identify a binary law for a suitable known
 score. For `Y in {0,1}`, the loss
 `ell(q,Y)=(q-Y)^2+2Y`, `q in [0,1]`, remains strictly proper and has
 
-$$
+```math
 R_p(q)=(q-p)^2+3p-p^2,\qquad
 H(p)=\min_q R_p(q)=3p-p^2.
 \tag{49}
-$$
+```
 
 The Bayes risk `H` is strictly increasing on `[0,1]`, with inverse
 `p=(3-sqrt(9-4H))/2`. A guarantee of the exact optimum value is part of
@@ -1833,10 +1833,10 @@ function. Query binary rows `(0,0)`, `(1,1)` and `(1,0)`. The law
 `p=(1/4,3/4)` with the identity transformation gives `(0,1,1/4)`. The law
 `q=(3/4,1/4)` gives that same record under
 
-$$
+```math
 h(t)=\begin{cases}t/3,&t\le3/4,\\3t-2,&t\ge3/4.\end{cases}
 \tag{50}
-$$
+```
 
 Both branches agree at `3/4`, have positive slopes, and fix zero and one.
 The event probabilities nevertheless differ. Additional finite anchors can
@@ -1881,12 +1881,12 @@ utility-representation theorem.
 For a score `ell(q,i)` and strictly positive finite outcome stakes `s_i`
 shared across reports, define
 
-$$
+```math
 S=\sum_i p_i s_i>0,\qquad r_i=\frac{p_i s_i}{S}.
 \qquad
 \sum_i p_i s_i\ell(q,i)=S R_r(q).
 \tag{51}
-$$
+```
 
 If the base score is strictly proper at the admitted report `r`, the unique
 minimizer is `r`, which can differ from `p`. An interior-only score need not
@@ -1895,10 +1895,10 @@ Common positive stakes preserve `r=p`; for a fixed law this equality holds
 exactly when the stakes are constant on its support. Known relative stakes
 permit the inverse
 
-$$
+```math
 p_i=\frac{r_i/s_i}{\sum_k r_k/s_k}.
 \tag{52}
-$$
+```
 
 Independently unknown positive stakes instead confound the weights. Even the
 full event-value vector `v_i=s_i p_i` identifies only support in general:
@@ -1949,23 +1949,23 @@ row exists, choose a reference `L_0` and let `M` contain the differences
 `L_j-L_0` for `j>0`. With no old row, set `M` empty. Define the base `B`,
 required rows `R`, and missing dimension by
 
-$$
+```math
 \begin{array}{c|c|c}
 &B&R\\\hline
 \text{known scale}&[\mathbf1^T;M]&C\\
 \text{unknown positive scale}&M&[\mathbf1^T;C]
 \end{array}
 \qquad
-r=\operatorname{rank}[B;R]-\operatorname{rank}B.
+r=\mathrm{rank}[B;R]-\mathrm{rank}B.
 \tag{53}
-$$
+```
 
 The exact minimum number of additional raw queries is
 
-$$
+```math
 \boxed{r+\mathbf1\{\text{offset unknown and no old row exists}\}.}
 \tag{54}
-$$
+```
 
 **Lower bound.** With an old offset reference, a new raw row `a` contributes
 the effective row `a-L_0`; with known offset it contributes `a`. Each adds
@@ -2015,11 +2015,11 @@ old row `e_2`, target `p_1`, and unknown positive scale and offset, add
 `e_2+1` and `e_2+e_1`. Their differences identify `s` and `s p_1`.
 Nevertheless
 
-$$
+```math
 (p,s,b)=((1/2,1/4,1/4),2,0),\qquad
 (q,s,b')=((1/2,1/8,3/8),2,1/4)
 \tag{55}
-$$
+```
 
 both yield the complete raw record `(1/2,5/2,3/2)`. The target and scale
 are known while the offset and remaining law remain confounded. Calling
@@ -2051,10 +2051,10 @@ A fixed semantic payoff box can have a different answer. On `Delta_4`, take
 one old row `a=(0,0,1,1)`, target `c=(0,1,0,1)`, and allow additional raw
 payoff rows only in `U=[0,1]^4`. Then
 
-$$
-(a+\operatorname{span}\{\mathbf1,c\})\cap U=\{a\}.
+```math
+(a+\mathrm{span}\{\mathbf1,c\})\cap U=\{a\}.
 \tag{56}
-$$
+```
 
 Indeed a candidate has coordinates
 `(beta,alpha+beta,1+beta,1+alpha+beta)`. The first and third box constraints
@@ -2075,13 +2075,13 @@ There is an exact test for this extra query. Suppose an old offset reference
 available. Write `B` for the base row space in (53), `W=B+row(R)`, and
 `S=(U-L_0) intersect W`. The boxed minimum is
 
-$$
+```math
 \begin{cases}
-r,&B+\operatorname{span}S=W,\\
-r+1,&B+\operatorname{span}S\ne W.
+r,&B+\mathrm{span}S=W,\\
+r+1,&B+\mathrm{span}S\ne W.
 \end{cases}
 \tag{57}
-$$
+```
 
 For necessity of the first line, `r` successful new differences leave no
 dimension outside `W`: their span with `B` must equal `W`. Each must lie
@@ -2119,12 +2119,12 @@ along which changing the law and offset leaves the record fixed.
 
 With unknown positive scale and offset, the exact criterion instead is
 
-$$
-F_0\in\operatorname{row}D_F
+```math
+F_0\in\mathrm{row}D_F
 \quad\Longleftrightarrow\quad
-0\in\operatorname{aff}\{F_i\}.
+0\in\mathrm{aff}\{F_i\}.
 \tag{58}
-$$
+```
 
 An affine combination of the payoff rows equal to zero gives the same
 combination of their readings equal to `b`. Conversely let `x=s p`, whose
@@ -2267,15 +2267,15 @@ queries under a common positive scale and/or unrestricted offset as declared.
 Let `M=L` when the offset is known and use the old raw-row differences when
 it is unknown. Then this service is possible exactly when
 
-$$
+```math
 \begin{array}{c|c}
-\text{known scale}&\operatorname{row}D_E\subseteq
-                         \operatorname{row}[\mathbf1^T;M]\\
-\text{unknown positive scale}&\operatorname{row}D_E\subseteq
-                         \operatorname{row}M.
+\text{known scale}&\mathrm{row}D_E\subseteq
+                         \mathrm{row}[\mathbf1^T;M]\\
+\text{unknown positive scale}&\mathrm{row}D_E\subseteq
+                         \mathrm{row}M.
 \end{array}
 \tag{59}
-$$
+```
 
 Unlike recovery of a nonconstant linear target, the second condition does
 **not** separately require the constant row. If an essential difference is
@@ -2301,11 +2301,11 @@ match. This completes both directions, with arbitrary decoders allowed.
 If there is only one essential action, it is optimal everywhere and no
 measurement is needed. Otherwise put
 
-$$
-d_E=\operatorname{rank}[\mathbf1^T;D_E]-1,\qquad
-r_E=\operatorname{rank}D_E.
+```math
+d_E=\mathrm{rank}[\mathbf1^T;D_E]-1,\qquad
+r_E=\mathrm{rank}D_E.
 \tag{60}
-$$
+```
 
 For rational action rows, the exact from-scratch minima for freely chosen
 fixed rational raw rows are
@@ -2399,10 +2399,10 @@ Approximate decision service changes the conclusion. Choose a positive
 rational `a` with `|a-sqrt(2)|<=eta` and query `q=(1,a,-1)`. If its sign
 selects the wrong original action, that action's regret is at most
 
-$$
+```math
 |d p|\le |(d-q)p|\le\eta p_2\le\eta.
 \tag{61}
-$$
+```
 
 A common positive observation scale preserves this sign. Thus one rational
 signed query achieves every specified positive regret tolerance, even though

@@ -37,16 +37,16 @@ not a new undecidability theorem or a lower bound against every restricted metho
 
 ### P03-S1 — eventual deduction and anticipatory induction
 
-$D_n$ is a computable nested finite sequence. Its assessment worlds obey
-Boolean composition; $\Gamma$-completeness means
-$PC(D_\infty)=PC(\Gamma)$. Section 4 assumes consistent, computably enumerable
-$\Gamma$ and a market satisfying the induction criterion. Efficient emission
-means polynomial time on unary input $n$; it does not bound the inductor's
+$`D_n`$ is a computable nested finite sequence. Its assessment worlds obey
+Boolean composition; $`\Gamma`$-completeness means
+$`PC(D_\infty)=PC(\Gamma)`$. Section 4 assumes consistent, computably enumerable
+$`\Gamma`$ and a market satisfying the induction criterion. Efficient emission
+means polynomial time on unary input $`n`$; it does not bound the inductor's
 own runtime by the same polynomial.
 
 Fixed-sentence convergence and coherent limiting probabilities are
 Theorems 4.1.1–2. Theorem 4.2.1 is stronger than waiting for each proof: for
-every efficiently emitted sequence of theorems, $P_n(\phi_n)\to1$, with the
+every efficiently emitted sequence of theorems, $`P_n(\phi_n)\to1`$, with the
 dual statement for disprovable sentences. Section 5.5 leaves practical runtime
 tradeoffs open; Proposition 5.5.1 rules out a computable general theoremwise
 convergence modulus under its representability assumptions.
@@ -118,35 +118,35 @@ The following argument is ours, using finite set inclusion. It explains why a
 constraint-and-loss implementation belongs in the ordinary comparison scope.
 It is not a new abstract-interpretation or probability theorem.
 
-Fix a finite set of active Boolean coordinates $Q$ and actually admitted hard
-constraints $H$. Let
+Fix a finite set of active Boolean coordinates $`Q`$ and actually admitted hard
+constraints $`H`$. Let
 
-$$
+```math
 V_H=\{x\in\{0,1\}^{Q}:x\models H\}.
-$$
+```
 
 This is a mathematical target set; defining it does not provide its enumeration
 for free. A computation may instead maintain a finite frontier of partial
-assignments $F$, whose represented completion sets have union $U_F$. Start
-with the all-unassigned cell, so $V_H\subseteq U_F$.
+assignments $`F`$, whose represented completion sets have union $`U_F`$. Start
+with the all-unassigned cell, so $`V_H\subseteq U_F`$.
 
 Splitting a cell into its two children preserves its completion set. Removing
-a cell only after a sound check that it violates $H$ preserves
-$V_H\subseteq U_F$. If a new constraint is admitted before the frontier has
+a cell only after a sound check that it violates $`H`$ preserves
+$`V_H\subseteq U_F`$. If a new constraint is admitted before the frontier has
 been filtered against it, the old cover still contains the smaller target
 set. It is a valid outer cover, although it may contain assignments violating
 the newly admitted constraint. That distinction must be visible in the output.
 
-For a requested loss $g$ and nonempty $V_H$, suppose every cell has a computed
-enclosure $[l_f,u_f]$ valid on its represented completions. Then
+For a requested loss $`g`$ and nonempty $`V_H`$, suppose every cell has a computed
+enclosure $`[l_f,u_f]`$ valid on its represented completions. Then
 
-$$
+```math
 \min_{f\in F}l_f\ \le\ \min_{x\in V_H}g(x)
 \ \le\ \max_{x\in V_H}g(x)\ \le\ \max_{f\in F}u_f.
-$$
+```
 
-If the intended valuation $x^*$ satisfies the hard premises, this also bounds
-$g(x^*)$. A learned point estimate is a separate record and cannot justify
+If the intended valuation $`x^*`$ satisfies the hard premises, this also bounds
+$`g(x^*)`$. A learned point estimate is a separate record and cannot justify
 discarding a completion without a sound bridge.
 
 This proof gives ordinary constraint propagation, a finite abstract domain and
@@ -159,7 +159,7 @@ question, rather than a distinction created by renaming the output a value.
 
 | Operation or property | Concrete obligation |
 |---|---|
-| Frontier construction | Charge parsing, allocation, splitting, constraint checking and storage. A symbolic initial cell is not a free list of $2^{|Q|}$ assignments. |
+| Frontier construction | Charge parsing, allocation, splitting, constraint checking and storage. A symbolic initial cell is not a free list of $`2^{|Q|}`$ assignments. |
 | Semantic coverage | Show why admitted hard constraints hold under the intended theory/interpretation or execution semantics. An arithmetic certificate proves its declared problem. |
 | Loss enclosure | Compute a valid enclosure for the actual expression and rational inputs. Signed coefficients require directed interval endpoints; repeated variables can make naive interval bounds loose. |
 | Finite coherent source | Distinguish a certified cover from exact satisfaction of every represented constraint. A probability supported on an unfinished outer cover may violate a newly received constraint. |
@@ -175,7 +175,7 @@ There are three distinct quantifiers.
 **Fixed finite snapshot.** A fair exhaustive refinement of a fixed finite
 fragment terminates if each scheduled primitive terminates, storage remains
 available, and enough cumulative resources are supplied. With exact leaf
-evaluation it can recover $V_H$ and exact extrema. The exponential worst case
+evaluation it can recover $`V_H`$ and exact extrema. The exponential worst case
 has not disappeared. A fixed hard ceiling can stop before this happens.
 
 **Fixed eventually settled query.** If a sound positive or negative certificate
@@ -187,10 +187,10 @@ not decide a true, false or independent arithmetic claim.
 
 **Growing query stream.** The preceding statements do not yield a bound at
 the time each new query is asked. For a simple separating receipt policy,
-activate $q_n$ on round $n$, provide its positive certificate only on round
-$2n+1$, and otherwise keep its two Boolean possibilities. Every fixed query
-eventually resolves, but the current query always has interval $[0,1]$.
-A midpoint forecast therefore stays $1/2$ on these positive queries. This is
+activate $`q_n`$ on round $`n`$, provide its positive certificate only on round
+$`2n+1`$, and otherwise keep its two Boolean possibilities. Every fixed query
+eventually resolves, but the current query always has interval $`[0,1]`$.
+A midpoint forecast therefore stays $`1/2`$ on these positive queries. This is
 an obstruction to the stated receipt-only policy, not a lower bound on every
 bounded reasoner: another same-access procedure might infer a useful common
 pattern from the query descriptions or earlier evidence. P3-03 must not award
@@ -204,20 +204,20 @@ that the four sources share one performance criterion.
 
 ## 4. Withdrawal changes the inclusion direction
 
-Within a stable scope, adding hard premises shrinks $V_H$. Old upper covers
+Within a stable scope, adding hard premises shrinks $`V_H`$. Old upper covers
 remain covers, and a previously justified lower/upper interval remains valid
 for the narrower target while it is nonempty. Neither fact makes a new
 narrower bound free.
 
-Withdrawing a premise can expand $V_H$. Consider one coordinate $q$, an old
-premise $q=1$ and loss $g(q)=q$. The completed old cover is $\{1\}$ and its
-bound is $[1,1]$. Remove the premise: the new target is $\{0,1\}$, so carrying
+Withdrawing a premise can expand $`V_H`$. Consider one coordinate $`q`$, an old
+premise $`q=1`$ and loss $`g(q)=q`$. The completed old cover is $`\{1\}`$ and its
+bound is $`[1,1]`$. Remove the premise: the new target is $`\{0,1\}`$, so carrying
 the old cover forward loses a valid case. Invalidation of a dependency label
 alone cannot recreate the lost case. The system must restore saved branches,
 recompute a covering source, or return a broader previously certified fallback.
 
 A smaller retained summary can still suffice. For a new task with constant
-loss $h(q)=7$, $[7,7]$ is valid without recovering either assignment. Thus
+loss $`h(q)=7`$, $`[7,7]`$ is valid without recovering either assignment. Thus
 reopening is specific to the changed source, dependency and consumer. This is
 the operational counterpart of P3-02's distinction between full source
 recovery and recovery of a requested loss family.
@@ -231,11 +231,11 @@ or increasing the represented query family can require more retained data.
 ## 5. Point probabilities and fair contribution scope
 
 A feasible assignment set does not choose weights. Even a default uniform
-rule depends on its chosen presentation: two cases with $q=0,1$ give mean
-$1/2$, while splitting the $q=1$ case into two unweighted aliases gives mean
-$2/3$. Their image under the query $q$ is still $\{0,1\}$. Preserving a
+rule depends on its chosen presentation: two cases with $`q=0,1`$ give mean
+$`1/2`$, while splitting the $`q=1`$ case into two unweighted aliases gives mean
+$`2/3`$. Their image under the query $`q`$ is still $`\{0,1\}`$. Preserving a
 probabilistic interpretation under this refinement requires transporting mass,
-not resetting it uniformly. The interval $[0,1]$ is unchanged.
+not resetting it uniformly. The interval $`[0,1]`$ is unchanged.
 
 This finite calculation motivates an explicit probability/credal adapter;
 it does not forbid using a justified prior, empirical model or learned
@@ -276,3 +276,32 @@ ordinary comparison contracts. The remaining archive was not reread. No
 published theorem is imported outside the stated passages and hypotheses;
 no full proof-assistant verification, final challenge exposure or new
 scientific execution is claimed by this literature task.
+
+## 7. Final additions: exact limits of the imported comparisons
+
+The principal revisited the author PDF's Logical Induction Theorem 4.2.1 and
+its C.3 proof specifically against the new U03-8a task-proof equivalence.
+Our result eventually finds a proof of one fixed finite Boolean task
+predicate if such a proof exists. The LI comparison concerns the day-indexed
+prices of an efficiently emitted sequence and rests on its own induction
+criterion and standing theory hypotheses. Relabelling the fixed task
+predicate as a loss does not transfer that stronger sequence guarantee.
+The prototype's explicit VM work bound instead comes from its stated finite
+horizons, retained replay, frontier and evidence caps.
+
+The principal also visually inspected Cousot and Cousot's printed pp.242–243,
+including the local consistency conditions and the opening discussion of
+ordered abstract interpretations. The new capped-cover example in companion
+§5 establishes directly that one particular two-cube class lacks a least
+enclosure for a three-point source. It does not contradict the source's
+lattice results: that arbitrary cap is not shown to meet their hypotheses.
+Our safety argument needs only the concretization containment preserved by
+its actual transitions. No universal best abstraction, transfer transformer
+or cost-optimal cover construction is borrowed from the cited framework.
+
+These checks resolve the comparison scope of the new corollaries; they do
+not repeat the earlier full source orientation or add a new scientific run.
+The [task-proof review](../work_logs/P3_03_2026-10-07_S1/reviews/proof_stream_task_certification_addendum.md)
+and [finite minimum review](../work_logs/P3_03_2026-10-07_S1/reviews/loss_minimum_recovery_review.md)
+record the independent mathematical checks and their nonempty-source,
+encoding, exactness and loss-family qualifications.

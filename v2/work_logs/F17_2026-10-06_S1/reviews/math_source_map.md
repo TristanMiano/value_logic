@@ -56,11 +56,11 @@ revision is distinct from changing the program, population or criterion meaning.
 
 Use the same orientation throughout:
 
-\[
+```math
  C\models t\le_b s:u
  \quad\Longleftrightarrow\quad
  \forall(h,x)\in D_C,\;t_h(x)-s_h(x)\le b.
-\]
+```
 
 Here **t is the new loss and s the old loss**. Negative b guarantees modeled
 improvement; zero gives non-deterioration. The metalevel supremum may be infinite
@@ -114,9 +114,9 @@ including u. Form C|u by retaining just rows whose common unit lies in A(u),
 with the signature, live cases and witnesses otherwise retained. For each
 finite common-pair admitted query and rational b:
 
-\[
+```math
  K_C(t,s;b)\quad\Longleftrightarrow\quad C|u\models t-s\le b.
-\]
+```
 
 The left side means existence of a finite native proof with exactly the requested
 global pair and root budget at most b. It ignores implementation resource caps.
@@ -171,11 +171,11 @@ Structural induction proves truth preservation. For a finite premise family,
 P_Gamma=max of its losses (zero for no premises), and the all-valuations Boolean
 context C_B gives
 
-\[
+```math
  \Gamma\models_{\mathrm{CL}}B
  \iff C_B\models L(B)\le P_\Gamma
  \iff K_{C_B}(L(B),P_\Gamma;0).
-\]
+```
 
 Encoding premises in the query preserves classical inconsistent-premise
 entailment without admitting an empty source context. The Boolean fragment is
@@ -198,10 +198,10 @@ adapters,” not “phase one is fully recovered.”
 For k>=2 reset procedures, one fixed arbitrary Boolean outcome law, strictly
 positive attempt prices and terminal penalty M>=0, every permutation pi has
 
-\[
+```math
  C_\pi(c,M)=\sum_{j=1}^k c_{\pi_j}m_{\{\pi_1,\ldots,\pi_{j-1}\}}
               +Mm_{[k]},\qquad m_S=P(S\text{ all fail}),\quad m_\emptyset=1.
-\]
+```
 
 Let n=2^k−1. These are **exact linear-information ranks**, with constants free
 and arbitrary decoding of a retained linear summary. Prices are fixed parameters
@@ -253,10 +253,10 @@ contrast summary or equivalent information. It determines nonnegative residues
 rho_w, residual mass R and residual old mean B_rem. If R=0 the law is known.
 Otherwise every compatible law is uniquely represented by
 
-\[
+```math
  p_w=\rho_w+\frac{R q_{|w|}}{\binom{k}{|w|}},\qquad
  q_h\ge0,\quad\sum_hq_h=1,\quad\sum_hg_hq_h=\mu=B_{\rm rem}/R,
-\]
+```
 
 where `g_h=(k+1)/(k+1−h)` for h<k and g_k=k+M. Put
 `f_r(h)=binomial(h,r)/binomial(k,r)` for 1<=r<=k−1.
@@ -266,9 +266,9 @@ the adjacent-g-level mixture of mean mu. Set q*=(q^-+q^+)/2 and
 beta=E_(q^+) f_1. The compatible law obtained from q* attains the unrestricted
 common minimax error over every proper-prefix moment. The conditional radius is
 
-\[
+```math
  r(C)=\frac{R}{2}(\beta-\alpha).
-\]
+```
 
 For one admissible price edit epsilon, revised-mean error is |epsilon|r(C).
 The same decoded law works for each **separately applied** one-price edit; a
@@ -280,10 +280,10 @@ The singleton lower extremum is alpha and the upper is beta, giving the lower
 bound r(C). For each r, write L_r,U_r for extrema of E_q f_r and B_r=E_(q^+)f_r.
 The linked proof establishes the simultaneous envelope inequalities
 
-\[
+```math
  2U_r\le\beta+B_r,\qquad
  2L_r\ge2\alpha+B_r-\beta.
-\]
+```
 
 The candidate r-coordinate is (alpha+B_r)/2, so both errors are at most
 (beta−alpha)/2. The residue offsets add fixed constants and R scales the
@@ -296,11 +296,11 @@ envelope proof as an explicit link instead of calling it “immediate.”
 
 The sharp global radius, over all such old-summary fibers, is
 
-\[
+```math
  \frac{|\epsilon|}{2}
  \max_{1\le j\le k-1}
  \left(\frac{j}{k}-\frac{j}{(k-j+1)(k+M-1)}\right).
-\]
+```
 
 This finite maximum uses O(k) scalar arithmetic. It does not include reading
 the exponential-size old summary, producing a full probability vector,

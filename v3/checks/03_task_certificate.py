@@ -21,7 +21,7 @@ _spec = importlib.util.spec_from_file_location("p303_task_core", CORE_PATH)
 CORE = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(CORE)
 
-WRAPPER_VERSION = "named-action-regret-v1"
+WRAPPER_VERSION = "named-action-regret-v2"
 RESERVED_LOSS = "__task_regret__"
 
 
@@ -83,6 +83,7 @@ class TaskCertificate:
         self._selection = (self.selected, self.tolerance, self.unit)
         self._catalogue_raw = self._admit(self.catalogue, "catalogue")
         self.catalogue_sha256 = self._hash(self._catalogue_raw)
+        self._task_binding_raw = self._admit(self._task_record(), "task_binding")
 
         # Each residual is already nonnegative. Excluding a avoids a redundant
         # expression; the empty competitor family is explicitly the zero term.
@@ -131,6 +132,11 @@ class TaskCertificate:
         self.work["comparison_byte_envelope"] += max(len(actual), len(expected))
         return actual == expected
 
+    def _task_record(self):
+        """Full comparison task; output copies are distinct from live catalogue data."""
+        return dict(wrapper_version=WRAPPER_VERSION, catalogue=self.catalogue,
+                    selected=self.selected, tolerance=self.tolerance, common_unit=self.unit)
+
     def _guard(self):
         self.work["binding_checks"] += 1
         if (self.selected, self.tolerance, self.unit) != self._selection:
@@ -170,8 +176,9 @@ class TaskCertificate:
                 abs(self._tolerance_value.numerator).bit_length(), self._tolerance_value.denominator.bit_length(), 1)
             certified = upper <= self._tolerance_value
             status = "CERTIFIED_CONDITIONAL" if certified else "NOT_CERTIFIED_BY_THIS_BOUND"
-        result = dict(schema="value_logic.P3-03.task_certificate.v1", stage="DEVELOPMENT",
+        result = dict(schema="value_logic.P3-03.task_certificate.v2", stage="DEVELOPMENT",
                       wrapper_version=WRAPPER_VERSION, request_sha256=self.request_sha256,
+                      task_binding=self._task_record(),
                       selected=self.selected, action_names=sorted(self.catalogue),
                       catalogue_sha256=self.catalogue_sha256, common_unit=self.unit,
                       tolerance=self.tolerance, compiled_loss_name=RESERVED_LOSS,
@@ -191,6 +198,8 @@ class TaskCertificate:
         withdrawal/addition changes the binding. Objective changes require a
         fresh wrapper. Invalid private-state mutations return false here and
         are rejected by certificate() before any new certificate is produced.
+        Full task/source/loss records are compared exactly; fingerprints are
+        audit references. No numeric-bound or execution-lineage proof is made.
         """
         try:
             self._guard()
@@ -198,15 +207,20 @@ class TaskCertificate:
             return False
         if not isinstance(certificate, dict):
             return False
-        expected = dict(wrapper_version=WRAPPER_VERSION, request_sha256=self.request_sha256,
-                        selected=self.selected, catalogue_sha256=self.catalogue_sha256,
+        expected = dict(wrapper_version=WRAPPER_VERSION, selected=self.selected,
                         common_unit=self.unit, tolerance=self.tolerance,
-                        compiled_loss_name=RESERVED_LOSS, compiled_loss_sha256=self.compiled_loss_sha256)
+                        compiled_loss_name=RESERVED_LOSS)
         if any(certificate.get(key) != value for key, value in expected.items()):
+            return False
+        try:
+            old_task = self._admit(certificate.get("task_binding"), "guard_report_task")
+        except (CORE.InputError, CORE.ResourceLimit, TypeError, ValueError):
+            return False
+        if not self._same(old_task, self._task_binding_raw):
             return False
         report = certificate.get("core_report")
         return (isinstance(report, dict) and report.get("loss") == RESERVED_LOSS and
-                report.get("loss_sha256") == self.compiled_loss_sha256 and self.core.report_is_current(report))
+                self.core.report_is_current(report))
 
     def accounting(self):
         """Current work records before serializing this administrative copy."""

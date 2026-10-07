@@ -10,16 +10,16 @@ An orthogonal-subspace intervention has functional `(Pv)^T(h_d-h_b)` with
 `P=P^T=P^2`. Equality as linear functionals on arbitrary hidden differences
 requires `a=Pv`, and hence
 
-\[
+```math
 a^Tv=v^TPv=v^TP^TPv=\lVert a\rVert^2.
-\]
+```
 
 For the fractional-mask coefficient itself,
 
-\[
+```math
 a^Tv-\lVert a\rVert^2
 =\sum_j v_j^2m_j(1-m_j)\geq0.
-\]
+```
 
 The inequality is strict when at least one genuinely fractional coordinate
 has nonzero output weight. Thus a fractional mask ordinarily defines a

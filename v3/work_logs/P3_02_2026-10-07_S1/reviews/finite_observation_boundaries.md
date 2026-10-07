@@ -16,27 +16,27 @@ not require importing another statistical theorem.
 
 Let the encoder be any deterministic function
 
-\[
+```math
 h:[0,1]\longrightarrow\{1,\ldots,N\},\qquad N\ge1,
-\]
+```
 
 and let the decoder return a real number `d_j` for code j. It sees only the
 code and fixed shared metadata; any additional p-dependent information is
 part of a different interface. The encoder need not be linear, continuous
 or measurable. Put
 
-\[
+```math
 R(h,d)=\sup_{p\in[0,1]}|p-d_{h(p)}|.
-\]
+```
 
 Every p belongs to the closed interval
 `[d_{h(p)}−R,d_{h(p)}+R]`. Hence the N decoder-centered intervals cover
 `[0,1]`. Their union has length at most `2NR`, so
 
-\[
+```math
 R(h,d)\ge\frac1{2N}.
 \tag{F1}
-\]
+```
 
 This finite interval-cover argument requires no regularity of the code
 fibers. Infinite R makes the lower bound trivial.
@@ -74,11 +74,11 @@ sample is a different access model and need not support that encoder.
 Let `X₁,…,X_n` be iid Bernoulli(p) with a fixed finite n and `0<p<1`.
 For a particular binary transcript x containing k ones,
 
-\[
+```math
 \Pr_p(X=x)=p^k(1-p)^{n-k}>0
 \quad\text{for every }p\in(0,1).
 \tag{F2}
-\]
+```
 
 Therefore the set of interior p values compatible with x in the strict
 **positive-likelihood, zero-error** sense remains all of `(0,1)`.
@@ -125,20 +125,20 @@ later project's observation/update procedure.
 Let exact values be `y=Lp`, observed values `z=Lp+e`, with known error set
 E. For known invertible T and known offset b, transport
 
-\[
+```math
 z'=Tz+b,\qquad y'=TLp+b,\qquad E'=TE.
-\]
+```
 
 Then, for every observation,
 
-\[
+```math
 \begin{aligned}
 \{p:z'-TLp-b\in E'\}
 &=\{p:T(z-Lp)\in TE\}\\
 &=\{p:z-Lp\in E\}.
 \end{aligned}
 \tag{F3}
-\]
+```
 
 On normalized laws the transformed payoff matrix may equivalently be written
 `L'=TL+b1ᵀ`. The offset is added to both the exact means and the observed
@@ -157,31 +157,31 @@ information contained in the original noisy record.
 
 For the current conditioning example, take `δ>0` and
 
-\[
+```math
 L_\delta=\begin{bmatrix}0&1&1\\0&1&1+\delta\end{bmatrix},
 \qquad
 T_\delta=\begin{bmatrix}1&0\\-1/\delta&1/\delta\end{bmatrix}.
-\]
+```
 
 The transformed exact rows are indeed simple:
 
-\[
+```math
 T_\delta L_\delta p=(p_2+p_3,p_3).
-\]
+```
 
 But with original box errors `|e₁|,|e₂|≤ε`, the transformed error is
 
-\[
+```math
 e'_1=e_1,\qquad e'_2=(e_2-e_1)/\delta,
-\]
+```
 
 and its **exact** set is the parallelogram
 
-\[
+```math
 E'=\{e':|e'_1|\le\epsilon,
              \ |e'_1+\delta e'_2|\le\epsilon\}.
 \tag{F4}
-\]
+```
 
 In particular `|e'₂|≤2ε/δ`, with a correlation to `e'₁`. The `1/δ`
 sensitivity was moved into the observation uncertainty; it was not removed.
@@ -193,10 +193,10 @@ sharp radius already derived in `noise_conditioning_case.md`.
 Choose `δ=1/10`, `ε=1/100`, and law `p=(1/2,1/4,1/4)`. Its exact record
 is `(1/2,21/40)`. Admissible original errors `(1/100,−1/100)` produce
 
-\[
+```math
 z=(51/100,103/200),\qquad
 T_\delta z=(51/100,1/20).
-\]
+```
 
 The transformed p₃ error is `1/20−1/4=−1/5=−2ε/δ`. Assigning the old
 `±1/100` budget to this apparently well-conditioned coordinate would exclude
@@ -222,9 +222,9 @@ Fix reports/probes `q₁,…,q_m` and their known finite loss matrix
 `L_{ji}=ℓ(q_j,i)`. For one realized outcome Y, scoring **all probes on that
 same outcome** gives the column vector
 
-\[
+```math
 s(Y)=L e_Y.
-\]
+```
 
 If the known-loss decoder identifies every normalized law from its expected
 loss vector, it necessarily maps this particular input to `e_Y`. That is
@@ -234,12 +234,12 @@ the population law that generated Y.
 For one common batch `Y₁,…,Y_M`, the empirical average for each fixed probe
 satisfies the deterministic identity
 
-\[
+```math
 \bar s_j=\frac1M\sum_{t=1}^M\ell(q_j,Y_t),\qquad
 \bar s=L\widehat p,\qquad
 \widehat p_i=\frac{\#\{t:Y_t=i\}}{M}.
 \tag{F5}
-\]
+```
 
 An exact inverse therefore returns the **empirical law** `p̂`. No iid
 assumption is needed for identity (F5); connecting that empirical law to a

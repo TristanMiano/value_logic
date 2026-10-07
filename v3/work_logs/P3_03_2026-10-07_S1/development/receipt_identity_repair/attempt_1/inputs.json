@@ -1,0 +1,190 @@
+{
+  "changed_loss": {
+    "expr": [
+      "rat",
+      "7"
+    ],
+    "unit": "cost",
+    "version": "2"
+  },
+  "config": {
+    "cell_cap": 4,
+    "constraints": [],
+    "losses": {
+      "x0": {
+        "expr": [
+          "var",
+          0
+        ],
+        "unit": "cost",
+        "version": "1"
+      }
+    },
+    "queries": [
+      {
+        "horizon": 1,
+        "id": "fast-true",
+        "kind": "bounded_run",
+        "program": [
+          [
+            "HALT",
+            1
+          ]
+        ],
+        "registers": [
+          0
+        ],
+        "target": 1,
+        "version": "short-v1"
+      },
+      {
+        "horizon": 8,
+        "id": "slow-false",
+        "kind": "bounded_run",
+        "program": [
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "HALT",
+            0
+          ]
+        ],
+        "registers": [
+          0
+        ],
+        "target": 1,
+        "version": "delayed-v2"
+      }
+    ],
+    "scope": "p303-receipt-identity-development-v1"
+  },
+  "equal_query_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+  "expected_answers": {
+    "fast-true": 1,
+    "slow-false": 0
+  },
+  "expected_execution_lengths": {
+    "fast-true": 1,
+    "slow-false": 8
+  },
+  "field_surrogate": "Only digest calls on the two exact immutable query records return the same 64-character field; all other digest calls remain genuine.",
+  "interpretation": "DEVELOPMENT field-substitution diagnostic, not a discovered SHA-256 collision, cryptographic authentication claim or broad rerun.",
+  "maximum_allowance_one_calls": 128,
+  "maximum_label_example": "vm:11:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "post_receipt_source_allowance": 16,
+  "schema": "value_logic.P3-03.receipt_identity.inputs.v1",
+  "stage": "DEVELOPMENT",
+  "task": {
+    "actions": {
+      "A": {
+        "expr": [
+          "rat",
+          "0"
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "B": {
+        "expr": [
+          "rat",
+          "1"
+        ],
+        "unit": "cost",
+        "version": "1"
+      }
+    },
+    "cell_cap": 4,
+    "constraints": [],
+    "queries": [
+      {
+        "horizon": 1,
+        "id": "fast-true",
+        "kind": "bounded_run",
+        "program": [
+          [
+            "HALT",
+            1
+          ]
+        ],
+        "registers": [
+          0
+        ],
+        "target": 1,
+        "version": "short-v1"
+      },
+      {
+        "horizon": 8,
+        "id": "slow-false",
+        "kind": "bounded_run",
+        "program": [
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "INC",
+            0
+          ],
+          [
+            "HALT",
+            0
+          ]
+        ],
+        "registers": [
+          0
+        ],
+        "target": 1,
+        "version": "delayed-v2"
+      }
+    ],
+    "scope": "p303-receipt-wrapper-development-v1",
+    "selected": "A",
+    "tolerance": "0"
+  }
+}

@@ -16,15 +16,15 @@ Put `w=v_N/2`, `t=||w||`, and
 `rho_r=sqrt(delta_r+t^2)`. Completing the square gives
 `||n_r-w||=rho_r`. For fixed `n0`, minimizing over the second sphere gives
 
-\[
+```math
 \min_{n_1} n_0^T n_1=n_0^T w-\rho_1\|n_0\|.
-\]
+```
 
 Writing `x=||n0||` and using `||n0-w||^2=rho0^2` yields
 
-\[
+```math
 f(x)=\tfrac12(x^2+t^2-\rho_0^2)-\rho_1 x.
-\]
+```
 
 When the nullspace dimension is at least two, every
 `x in [|rho0-t|,rho0+t]` is attainable. This follows from the law of cosines
@@ -41,9 +41,9 @@ dot product is therefore attainable.
 
 The general exact criterion is
 
-\[
+```math
 f_{\min}\le -C\le f_{\max},
-\]
+```
 
 provided both squared radii are nonnegative. Under `C>=0`, the upper
 inequality is automatic and this reduces to `C<=-fmin`. At equality,
@@ -78,9 +78,9 @@ After all variable coefficients vanish, a constant combination remains
 exactly when the always-active weight columns annihilate its coefficient
 vector; biases contribute only a constant. Consequently
 
-\[
-\dim D=\#\text{variable}+\operatorname{rank}(W_{\rm active}).
-\]
+```math
+\dim D=\#\text{variable}+\mathrm{rank}(W_{\rm active}).
+```
 
 Its complement contains inactive coordinates and the dependencies among
 always-active columns. It consists **exactly** of inactive coordinates only

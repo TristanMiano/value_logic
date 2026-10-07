@@ -83,9 +83,9 @@ does not settle the original fixed-interpretation counterpossible.
 
 The inherited program has
 
-\[
+```math
 H_r=(1-r)p+rs.
-\]
+```
 
 Here `r` is both a report and a behavioral parameter. In the existing example
 `p=1,s=1/2`, minimizing the report-induced Brier objective gives `r=5/8`, whose

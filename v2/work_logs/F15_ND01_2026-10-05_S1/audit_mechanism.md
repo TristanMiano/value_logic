@@ -65,17 +65,17 @@ Let `D` be the span of the activation differences on a specified pair support.
 Two effective coefficient vectors `a` and `q` produce identical logit changes
 on that support exactly when
 
-\[
+```math
 q-a\in D^\perp.
-\]
+```
 
 An observationally equivalent orthogonal-projector intervention exists
 precisely when the affine set `a+D^perp` intersects
 
-\[
+```math
 \{q:q^T v=\|q\|^2\}
 =\{q:\|q-v/2\|^2=\|v\|^2/4\}.
-\]
+```
 
 There is a useful stronger corollary. Every fractional effective vector lies
 inside or on this sphere. If `D` is a proper subspace, select a nonzero
@@ -108,13 +108,13 @@ validate the proposed subspace experiment.
 
 For donor composition, expanding the two orders gives
 
-\[
+```math
 T_1T_0(h)=(I-M_1)(I-M_0)h+(I-M_1)M_0d_0+M_1d_1,
-\]
+```
 
-\[
+```math
 T_0T_1(h)=(I-M_0)(I-M_1)h+(I-M_0)M_1d_1+M_0d_0.
-\]
+```
 
 Diagonal matrices commute, so the linear terms cancel. The remaining terms
 are `-M0 M1 d0 + M0 M1 d1`. The reported positive coefficient of `d1-d0`

@@ -10,18 +10,18 @@ remaining ambition and a possible later diagnostic. No priority claim is made.
 
 The proposed high-level intervention sets one cost to a donor's value:
 
-\[
+```math
 H_{0,j}(J_0,J_1)=(j,J_1),\qquad
 H_{1,k}(J_0,J_1)=(J_0,k).
-\]
+```
 
 These assignments have two familiar properties. Repeating the same assignment
 does nothing further; assigning two different variables commutes. In symbols,
 
-\[
+```math
 H_{r,j}H_{r,j}=H_{r,j},\qquad
 H_{0,j}H_{1,k}=H_{1,k}H_{0,j}.
-\]
+```
 
 More generally the most recent assignment to one variable overwrites the
 previous assignment to it. A causal interpretation of the whole intervention
@@ -36,9 +36,9 @@ for the algebra; the allowed intervention domain is a separate question.
 
 For the diagnostic's hidden-state operation, write
 
-\[
+```math
 T_{M,d}(h)=(I-M)h+Md,
-\]
+```
 
 where `d` is the donor's hidden activation. An eight-coordinate swap has a
 diagonal binary `M`; the fractional intervention has diagonal entries in
@@ -48,15 +48,15 @@ diagonal binary `M`; the fractional intervention has diagonal entries in
 
 Applying the same operation twice gives
 
-\[
+```math
 T_{M,d}^2(h)=h+(2M-M^2)(d-h).
-\]
+```
 
 The difference from one application is
 
-\[
+```math
 \boxed{T_{M,d}^2(h)-T_{M,d}(h)=M(I-M)(d-h).}
-\]
+```
 
 Thus binary masks and orthogonal projectors have exact hidden-state
 idempotence, since `M^2=M`. A strictly fractional coordinate usually keeps
@@ -68,9 +68,9 @@ automatically the operation of setting a stable abstract variable.
 
 The corresponding logit drift is
 
-\[
+```math
 v^TM(I-M)(d-h).
-\]
+```
 
 This can vanish on a particular activation-difference domain despite a
 nonzero hidden-state difference. Such output cancellation is a weaker
@@ -85,11 +85,11 @@ fit a new mask, select another intervention, or generate new examples.
 
 For diagonal `M0,M1`, direct expansion gives
 
-\[
+```math
 \boxed{T_{M_1,d_1}T_{M_0,d_0}(h)
        -T_{M_0,d_0}T_{M_1,d_1}(h)
        =M_0M_1(d_1-d_0).}
-\]
+```
 
 The matrices commute, but the affine operations have different donor terms.
 Disjoint masks make the difference zero. Overlapping masks can overwrite a
@@ -119,9 +119,9 @@ counterfactual outputs.
 
 For the native scalar head, set `q_r=P_r v`. Each effective coefficient obeys
 
-\[
+```math
 q_r^T v=\|q_r\|^2,
-\]
+```
 
 and the pair additionally obeys `q_0^T q_1=0`. Conversely, nonzero orthogonal
 `q0,q1` satisfying the two individual equalities produce compatible rank-one
@@ -146,11 +146,11 @@ fractional target effect is `a_r`, its observable component is
 `c_r=projection_D(a_r)`. An equivalent coefficient has `q_r=c_r+n_r`, with
 `n_r` in the complement. Compatibility requires
 
-\[
+```math
 \|n_r\|^2-n_r^T v_N
   =c_r^T v_D-\|c_r\|^2,\qquad
 n_0^T n_1=-c_0^T c_1.
-\]
+```
 
 These are requirements on a pair of unobserved components, not two unrelated
 one-dimensional fits. The set `D` must refer to a declared intervention domain.

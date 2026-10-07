@@ -29,9 +29,9 @@ extended environment. This is lexical binding, not a simultaneous equation.
 For a same-unit pair `(N,O)` and rational budget `b`, the universal comparison
 means
 
-\[
+```math
   N(z)-O(z)\le b\quad\text{for every }z\in\bigcup_h P_h.
-\]
+```
 
 The mathematical use of `for every` and real order is part of the declared
 metatheory. It does not give the agent access to an actual deployment state's
@@ -97,15 +97,15 @@ valid improvement information.
 
 The residual rule has a different bound. Let
 
-\[
+```math
   u=N_1-O_0,\quad v=O_1-N_0.
-\]
+```
 
 The two premises imply `u-v <= b_0+b_1`. For every real u,v,
 
-\[
+```math
   u_+-v_+\le (u-v)_+\le (b_0+b_1)_+.
-\]
+```
 
 This is precisely the checked `res_congruence` budget. The positive part is
 necessary. For example, `N_0=-1,O_0=0,N_1=-2,O_1=-1` gives two budgets -1,
@@ -182,9 +182,9 @@ as a finite max of finite minima of affine functions. For one minimum branch
 `g(z)=min_j l_j(z)`, its upper bound over a nonempty rational polyhedron can
 be written as the LP
 
-\[
+```math
   \sup t:\quad Az\le d,\quad t\le l_j(z)\ (\text{all }j).
-\]
+```
 
 A finite upper bound yields nonnegative dual coefficients for source rows and
 nonnegative weights on the l_j whose sum is one. The weighted affine
@@ -226,9 +226,9 @@ guard `a-c<=0`, projection and a common minimum bound give
 `a<=min(a,c)`. Applying the common max with zero and projecting from
 `min(a_+,c_+)` proves
 
-\[
+```math
   \min(a_+,c_+)\le (\min(a,c))_+.
-\]
+```
 
 The opposite guard `c-a<=0` gives the same literal pair by the symmetric
 argument. Both branches are nonempty, including their common boundary.
@@ -246,9 +246,9 @@ positive-min inequality follows from monotonicity and projections.
 
 Translate this identity by z, with a=x-z and c=y-z, to obtain
 
-\[
+```math
  \min(\max(x,z),\max(y,z))=\max(\min(x,y),z).
-\]
+```
 
 The translation equalities themselves have native projection/common-bound
 proofs. Together with signed scaling, addition, and the dual identities,
@@ -297,10 +297,10 @@ description is that every unit in U's weakly connected component reaches U.
 For one fixed query clause `min_j(a_j·z+c_j)` and fixed source row matrix A,
 the lifted primal from §4 has the dual feasible set
 
-\[
+```math
  D=\{(\lambda,\alpha)\ge0:
  A^\top\lambda=\sum_j\alpha_j a_j,\quad\sum_j\alpha_j=1\}.
-\]
+```
 
 Its objective is `lambda·theta + sum_j alpha_j c_j`. Only theta, the source
 right-hand sides, varies in the U11 family. The dual set is fixed. Because
@@ -346,9 +346,9 @@ This consequence is reconstructed here to examine assumption weakening; it
 is not promoted as a new contribution. Keep the query, row directions and
 case schema fixed, but withdraw rows in S. The new dual is the face
 
-\[
+```math
  D'=D\cap\{\lambda_s=0\ \text{for every }s\in S\}.
-\]
+```
 
 Every vertex of this face is a vertex of D. Consequently an **actually
 complete** vertex portfolio contains all certificates needed after this
@@ -394,9 +394,9 @@ query, its finite budget and the acceptance decision may depend on all of D.
 If reception establishes the chosen inequality at **every** point of the
 same C(D), it is true at theta on E. Thus
 
-\[
+```math
  \{\text{accepted and selected inequality false}\}\subseteq E^c.
-\]
+```
 
 This gives a probability at most delta without independence between the
 selector and its data. It requires one jointly valid source set in a common
@@ -409,10 +409,10 @@ nonempty rational polyhedron. Coverage is exactly 1-delta. Accept the request
 `1/2-theta<=0` only when B=1; it is valid on the current source {1} and false
 at the actual theta=0. Then
 
-\[
+```math
  P(\text{accepted and false})=\delta,\qquad
  P(\text{false}\mid\text{accepted})=1.
-\]
+```
 
 The sharp generic conditional bound is
 `min(1, delta/P(accepted))`, when the denominator is positive. A small
@@ -444,17 +444,17 @@ with modeled budget -1 while expected actual change is positive. Keep the
 same two singleton sources and theta=0. At B=0 choose the constant query
 `Delta_g(z)=-1`. At B=1 choose the affine query
 
-\[
+```math
  \Delta_b(z)=K-(K+1)z,\qquad K>0.
-\]
+```
 
 Each selected query equals -1 on its current source. Its actual value is -1
 with probability 1-delta and K with probability delta. Both values are
 finite, so the selected difference is integrable, but
 
-\[
+```math
  E\Delta=-(1-\delta)+\delta K.
-\]
+```
 
 For delta=1/20 and K=20 this is **+1/20**, despite the accepted modeled
 budget -1 in every case. Increasing K makes the expectation arbitrarily
@@ -465,10 +465,10 @@ There are useful repairs that do not impose a universal value cap. For an
 always-issued selection with constant budget b and `Delta<=b` throughout
 the coverage event E, it is enough to establish
 
-\[
+```math
  E[(\Delta-b)_+1_{E^c}]\le r,
  \quad\text{giving}\quad E\Delta\le b+r
-\]
+```
 
 whenever the stated expectations are well defined. A global upper bound
 `Delta<=B`, B>=b, yields `r<=(B-b)delta`. Alternatively, a bound
@@ -497,10 +497,10 @@ For the stated branch law
 `J(r)=(1-r)p+rs+r/4+z`, comparing the **fixed rational policies** r=1/2 and
 r=3/4 gives
 
-\[
+```math
  \Delta=\tfrac14(s-p)+\tfrac1{16}+e
        =\tfrac14(s-p+\tfrac12)-\tfrac1{16}+e.
-\]
+```
 
 With e<=1/32 and `s-p+1/2<=1/16`, the bound is -1/64. The independent
 attainer `p=7/16,s=0,e=1/32` gives old cost `11/32+z`, revised cost
@@ -542,17 +542,17 @@ derivation before its full comparison. No new F15 population is generated.
 For one fixed law, write m_S for the probability that every procedure in S
 fails. A complete order pi, stopping at its first success, has mean
 
-\[
+```math
  C_\pi(c,M)=\sum_{j=1}^k c_{\pi_j}m_{S_{j-1}}+Mm_{[k]},
  \qquad S_j=\{\pi_1,\ldots,\pi_j\},\quad m_\varnothing=1.
-\]
+```
 
 Consider a direction v with v_empty=0. Swapping a,b immediately after S
 changes its directional cost by
 
-\[
+```math
  (c_a-c_b)v_S+c_bv_{S+a}-c_av_{S+b}.
-\]
+```
 
 At the empty prefix, vanishing swaps force `v_i=t_1*c_i`. Inductively
 subtract the elementary-symmetric terms determined at smaller subset sizes.
@@ -562,19 +562,19 @@ prices in each r-subset. One-element exchanges connect all such subsets,
 so their normalized residual is one scalar t_r. Conversely the elementary
 symmetric recurrence verifies every swap. Thus
 
-\[
+```math
  v_A=\sum_{r=1}^{|A|}t_r e_r(c_A)\quad
  (\varnothing\ne A\subsetneq[k])
-\]
+```
 
 describes the entire proper-subset kernel, and v_[k] is free. There are k
 kernel dimensions for within-profile differences. Each size-(r+1) price
 monomial is counted once in the ordered mean sum, at its last element, so
 every order has the common directional value
 
-\[
+```math
  \sum_{r=1}^{k-1} t_r e_{r+1}(c_{[k]})+M v_{[k]}.
-\]
+```
 
 This functional is nonzero. Therefore one numeric profile removes one
 kernel dimension. On the normalized-law tangent of dimension n=2^k-1,
@@ -590,9 +590,9 @@ For a nonproportional second profile d, choose a,b with
 `c_a*d_b-c_b*d_a != 0`. If t_1,...,t_(r-1) vanish, a second-profile swap
 after any (r-1)-subset avoiding a,b gives
 
-\[
+```math
  t_r\Bigl(\prod_{i\in S}c_i\Bigr)(d_b c_a-d_a c_b)=0.
-\]
+```
 
 Hence t_r=0 at every proper size. Only v_[k] survives. A nonzero terminal
 penalty sees it in numeric means; unequal penalties see it in cross-profile
@@ -652,11 +652,11 @@ at the old mean plus `(l+u)/2`, with error at most `|epsilon|/2`.
 If a_0 minimizes the old means over the same action family, including
 fallback, then for any law p and its new optimizer a_1(p),
 
-\[
+```math
  C^1_{a_0}(p)\le C^0_{a_0}+u
  \le C^0_{a_1(p)}+u
  \le C^1_{a_1(p)}(p)+u-l.
-\]
+```
 
 Thus the old optimizer has same-law regret at most |epsilon| throughout
 the old-summary fiber. An eta-optimal old action gives eta+|epsilon|.
@@ -711,9 +711,9 @@ the edited procedure second has means separated by |epsilon|A, so any one
 prediction errs by at least half that separation on one law. Midpoints of
 the exact intervals attain the matching upper bound:
 
-\[
+```math
  R=\frac{|\epsilon|(2M+1)}{6(M+2)}.
-\]
+```
 
 At M=4, |epsilon|=1/40, this is 1/160. It is a global worst-fiber statement;
 it does not assert that the actual frozen F15 fiber attains the witness.
@@ -769,12 +769,12 @@ Set rho(S)=1-m_S, the probability of at least one success in S. For order pi
 put `x_(pi_j)=M+sum_(l=j+1..k)c_(pi_l)`. In descending score order, consecutive
 differences are c_(pi_(j+1)), and the final difference is M. Therefore
 
-\[
- \operatorname{Ch}_\rho(x)
+```math
+ \mathrm{Ch}_\rho(x)
    =\sum_{j=1}^{k-1}c_{\pi_{j+1}}\rho(S_j)+M\rho([k]),
  \qquad
- C_\pi=\sum_i c_i+M-\operatorname{Ch}_\rho(x).
-\]
+ C_\pi=\sum_i c_i+M-\mathrm{Ch}_\rho(x).
+```
 
 The principal derived this from the inspected ordered-difference definition,
 then found the same identity already explicit in C4 §13. It is a
@@ -900,19 +900,19 @@ positive M scales the required correction by M.
 Fix one nonempty polyhedron `P={y:A*y<=theta}` and a numerical coordinate
 gauge. Its L1 distance from x is the optimum of
 
-\[
+```math
  \min_{y,z}\sum_i z_i:quad Ay\le\theta,
  \quad y-z\le x,\quad-y-z\le-x.
-\]
+```
 
 The last two constraints already imply z_i>=|y_i-x_i|. Lagrange coefficient
 balance gives nonnegative multipliers lambda,mu,nu with
 `A^T lambda+mu-nu=0` and `mu+nu=1`. Eliminating mu,nu gives
 
-\[
+```math
  d(x,P)=\max_{\lambda\ge0,\ \|A^\top\lambda\|_\infty\le1}
               \lambda^\top(Ax-\theta).
-\]
+```
 
 The dual can be unbounded as a set. Its recession directions r satisfy
 `r>=0,A^T r=0`; feasibility of P gives `r^T theta>=0`, so such directions
@@ -968,9 +968,9 @@ Now suppose the actual fault allowance concerns **source identities**.
 Let proof i depend on support S_i. For an allowed faulty-source set F, the
 strongest surviving stored bound is
 
-\[
+```math
  B(F)=\min_{i:S_i\cap F=\varnothing}b_i.
-\]
+```
 
 When every allowed F has a survivor, the common family bound is max_F B(F).
 If one F has no survivor, the stored family is unavailable there; neither

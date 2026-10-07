@@ -20,9 +20,9 @@ used to assess the portfolio at time `n`; the intended LI comparison uses
 A trade is a finite position `a` in a unit security paying `W(phi)`, bought
 at price `p_t(phi)`. Its assessed gain, including its cash term, is
 
-\[
+```math
 a\bigl(W(\phi)-p_t(\phi)\bigr).
-\]
+```
 
 Only finitely many trades occur before any finite assessment. Positions can
 depend adaptively on available history. Fees, if introduced, are charged into
@@ -40,17 +40,17 @@ modified objective.
 
 Define the failure-cost payoff and quote by
 
-\[
+```math
 c_\phi(W)=1-W(\phi),\qquad v_t(\phi)=1-p_t(\phi).
-\]
+```
 
 For `b=-a`,
 
-\[
+```math
 b\bigl(c_\phi(W)-v_t(\phi)\bigr)
 =(-a)\bigl(p_t(\phi)-W(\phi)\bigr)
 =a\bigl(W(\phi)-p_t(\phi)\bigr).
-\]
+```
 
 Sum the identity over all trades. The two portfolios have identical wealth in
 every assessment world at every time. Bounded downside, unbounded upside and
@@ -92,11 +92,11 @@ Now change the portfolio assessment by charging `s|a|` for each unit position
 traded, with `s>=1/2`. Set every quote to `p_t(phi)=1/2` at every time. For
 each Boolean payoff and every signed real position,
 
-\[
+```math
 a\bigl(W(\phi)-1/2\bigr)-s|a|
 \le |a|\,|W(\phi)-1/2|-s|a|
 =(1/2-s)|a|\le0.
-\]
+```
 
 Every trade has nonpositive assessed gain in every world. Consequently any
 adaptive finite portfolio has assessed net wealth at most its finite initial
@@ -127,9 +127,9 @@ requires finite support at every time, the exact constant-half witness is outsid
 its domain. One simple stronger-fee variant addresses that restriction: take
 `s>=1`; then for any `[0,1]` quote,
 
-\[
+```math
 a(W(\phi)-p_t(\phi))-s|a|\le(1-s)|a|\le0.
-\]
+```
 
 For a computable enumeration of sentences, assign quote `1/2` to the first
 `t` and zero to the rest at time `t`. Each pricing then has finite support and

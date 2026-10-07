@@ -19,18 +19,18 @@ the earlier review stage. This is not a fresh blinded external review.
 
 For one case and one fixed minimum clause, write
 
-\[
+```math
 D=\{(\lambda,\alpha)\ge0:
 A^\top\lambda=\textstyle\sum_j\alpha_j a_j,
 \quad\sum_j\alpha_j=1\}.
-\]
+```
 
 After deleting rows S, insert zeros in those multiplier coordinates to embed
 the revised dual in the old coordinate space. Its image is exactly
 
-\[
+```math
 D'=D\cap\{\lambda_s=0:s\in S\}.
-\]
+```
 
 The functional `sum_{s in S} lambda_s` is nonnegative on D. Its zero set is
 therefore an exposed face when nonempty; the empty case can be handled

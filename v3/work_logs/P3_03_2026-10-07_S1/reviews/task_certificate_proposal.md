@@ -14,38 +14,38 @@ best action at every assignment compatible with the current admitted source.
 It does not select which computation to buy, update a learned forecast, or
 define a counterfactual.
 
-Let $S$ be the nonempty received finite assessment source, and let $\ell_b(x)$
-be the supplied loss of action $b$ at one shared assignment $x\in S$. For the
-named action $a$, define
+Let $`S`$ be the nonempty received finite assessment source, and let $`\ell_b(x)`$
+be the supplied loss of action $`b`$ at one shared assignment $`x\in S`$. For the
+named action $`a`$, define
 
-$$
+```math
 R_a(x)=\max\bigl(0,\ \max_b(\ell_a(x)-\ell_b(x))\bigr).
-$$
+```
 
 This is exactly its pointwise regret:
 
-$$
+```math
 R_a(x)=\ell_a(x)-\min_b\ell_b(x).
-$$
+```
 
 The equality follows by subtracting each competitor's loss from the same
-$\ell_a(x)$; including $b=a$ supplies zero. A finite maximum, addition and
+$`\ell_a(x)`$; including $`b=a`$ supplies zero. A finite maximum, addition and
 known negative scaling express the term in the existing loss language when
 the resulting finite expression meets the prototype's size and arithmetic
 limits. It requires no probability coordinates.
 
-**Certificate theorem.** A sound current-source upper bound $u_a$ on $R_a$
-with $u_a\leq\varepsilon$ warrants
+**Certificate theorem.** A sound current-source upper bound $`u_a`$ on $`R_a`$
+with $`u_a\leq\varepsilon`$ warrants
 
-$$
+```math
 \ell_a(x)\leq\min_b\ell_b(x)+\varepsilon
 \quad\text{for every }x\in S.
-$$
+```
 
 At the actual truth vector this transfers through the existing containment
 and semantic bridge. Exact finite evaluation yields the converse for this
 uniform certificate service: such a certificate is semantically available
-exactly when $\max_{x\in S}R_a(x)\leq\varepsilon$. A loose interval that
+exactly when $`\max_{x\in S}R_a(x)\leq\varepsilon`$. A loose interval that
 fails the threshold is not by itself a counterexample.
 
 Under fixed source assumptions, objective and units, the kernel's split/prune
@@ -56,22 +56,22 @@ rules; no new revision principle is needed.
 
 ## 2. Constructive case using the implemented loss language
 
-Take one unresolved Boolean claim $x$ and two supplied actions:
+Take one unresolved Boolean claim $`x`$ and two supplied actions:
 
-$$
+```math
 \ell_A(x)=10x,\qquad \ell_B(x)=10x+1.
-$$
+```
 
 The marginal intervals remain `[0,10]` and `[1,11]`, even after fully processing
 the Boolean source `{0,1}`. Neither actual loss is identified, and the truth of
-$x$ is unresolved. Those marginal intervals overlap, so comparing only the
+$`x`$ is unresolved. Those marginal intervals overlap, so comparing only the
 upper endpoint of A with the lower endpoint of B does not certify A.
 
 The shared-assignment regret query for A is
 
-$$
+```math
 R_A(x)=\max(0,10x-(10x+1))=0.
-$$
+```
 
 The current compositional interval evaluator, applied directly to the
 uncancelled syntax on the all-star cube, may give `[0,9]`. After splitting
@@ -87,8 +87,8 @@ enumeration is an efficient way to discover an obvious common-cost identity.
 Its purpose is to expose exactly which shared information the certificate
 uses and to give the current kernel a concrete terminal task.
 
-The pattern extends to $\ell_b(x)=g(x)+d_b(x)$: every comparison cancels the
-same common cost $g(x)$. The relevant information can therefore be smaller
+The pattern extends to $`\ell_b(x)=g(x)+d_b(x)`$: every comparison cancels the
+same common cost $`g(x)`$. The relevant information can therefore be smaller
 than that needed to recover the individual cost levels. Separate marginal
 intervals can discard this relationship.
 
@@ -96,9 +96,9 @@ intervals can discard this relationship.
 
 Keep the same unresolved source `{0,1}`, but set
 
-$$
+```math
 \ell_A(x)=x,\qquad \ell_B(x)=1-x.
-$$
+```
 
 At zero, A is uniquely best; at one, B is uniquely best. Each fixed pure action
 has worst-case regret one on the received assessment source. Consequently no
@@ -107,7 +107,7 @@ without a stronger source or a different permitted service.
 
 This is an obstruction to that **source-scoped certificate**, not an
 information-theoretic lower bound against every bounded program inspecting
-the original query. Another permitted computation might resolve $x$ cheaply;
+the original query. Another permitted computation might resolve $`x`$ cheaply;
 ordinary competitors may use it. Nor is the obstruction about a separately
 supplied subjective law, whose expected-loss optimum answers another question.
 

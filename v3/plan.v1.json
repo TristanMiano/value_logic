@@ -2,7 +2,7 @@
   "schema_version": 1,
   "phase": 3,
   "status": "research_in_progress",
-  "next_task": "P3-03",
+  "next_task": "P3-04",
   "phase_research_floor_minutes": 960,
   "qualifying_modes": [
     "D",
@@ -57,7 +57,7 @@
     {
       "id": "P3-03",
       "title": "bounded logical uncertainty",
-      "status": "in_progress",
+      "status": "complete",
       "research_floor_minutes": 90,
       "mode_forecast_minutes": {
         "D": 75,
@@ -68,7 +68,12 @@
       "high_research_minutes": 180,
       "attempt_id": "P3-03-1",
       "session_forecast": "v3/work_logs/P3_03_2026-10-07_S1/forecast.json",
-      "principal_artifact": "v3/derivations/03_logical_uncertainty.md"
+      "principal_artifact": "v3/derivations/03_logical_uncertainty.md",
+      "completion_scope": "finite_bounded_logical_uncertainty",
+      "actuals": "v3/work_logs/P3_03_2026-10-07_S1/actuals.json",
+      "research_ns": 5402916770875,
+      "companion_artifact": "v3/derivations/03_refinement_extensions.md",
+      "readiness_audit": "v3/work_logs/P3_03_2026-10-07_S1/readiness_audit.md"
     },
     {
       "id": "P3-04",
@@ -240,14 +245,14 @@
   "experimental_freeze_created": false,
   "final_evaluation_exposed": false,
   "neural_recurrence_selected": false,
-  "active_session": "v3/work_logs/P3_03_2026-10-07_S1.md",
-  "last_completed_session": "v3/work_logs/P3_A_2026-10-07_S1.md",
+  "active_session": null,
+  "last_completed_session": "v3/work_logs/P3_03_2026-10-07_S1.md",
   "observed_progress": {
-    "research_ns": 11367206905288,
-    "measured_engaged_ns": 13782026264090,
-    "remaining_floor_ns": 46232793094712,
-    "source": "v3/work_logs/P3_A_2026-10-07_S1/actuals.json",
-    "next_checkpoint_minutes": 240
+    "research_ns": 16770123676163,
+    "measured_engaged_ns": 20679685797109,
+    "remaining_floor_ns": 40829876323837,
+    "source": "v3/work_logs/P3_03_2026-10-07_S1/actuals.json",
+    "next_checkpoint_minutes": 480
   },
   "provisional_representation": {
     "id": "P3-A-REP01",
@@ -255,5 +260,14 @@
     "revisable": true,
     "name": "Versioned finite rational constraints and loss queries",
     "universal_carrier_selected": false
-  }
+  },
+  "completed_research_checkpoints": [
+    {
+      "minutes": 240,
+      "assessed_at": "P3-03 close",
+      "record": "v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md",
+      "research_ns": 16770123676163,
+      "overshoot_ns": 2370123676163
+    }
+  ]
 }

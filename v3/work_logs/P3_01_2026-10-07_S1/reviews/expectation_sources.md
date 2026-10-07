@@ -22,9 +22,9 @@ Finite worlds; real gambles measurable on algebra `F`.
 
 For increasing gamble values `x_1,...,x_m`,
 
-\[
+```math
 E_\nu(X)=x_1+\sum_{j=2}^{m}(x_j-x_{j-1})\nu(X>x_{j-1}).
-\]
+```
 
 Indicators recover event values: `p(U)=E_p(1_U)`. Full functionals identify
 closed convex hulls; generating sets may differ. Example 2.11: identical event
@@ -61,9 +61,9 @@ The principal agent proposed this three-state fixture, inspired by HP's known
 distinction but using different values. I checked it independently by exact
 rational arithmetic. Let `Q` be the convex hull of
 
-\[
+```math
 \{(2/3,1/3,0),(0,2/3,1/3),(1/3,0,2/3)\},
-\]
+```
 
 and `P` the convex hull of all six permutations of `(2/3,1/3,0)`.
 Singleton probability intervals are `[0,2/3]` and doubleton intervals are
@@ -75,9 +75,9 @@ For task cost `g=(0,1,2)`, the three `Q` vertices give
 `{1/3,2/3,2/3,4/3,4/3,5/3}`. Linear extrema are unchanged by convexification.
 Thus
 
-\[
+```math
 \sup_{q\in Q}E_q(g)=4/3<3/2<5/3=\sup_{p\in P}E_p(g).
-\]
+```
 
 Minimizing upper expected cost against the constant fallback `3/2` selects
 `g` under `Q` and the fallback under `P`; both strict margins are `1/6`.

@@ -1,12 +1,12 @@
 # Phase-three claims and obligations
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 7, 2026 UTC.
-**P3-01 complete at contract scope; P3-02 complete at finite probability-information scope.
-Both Research90 minima and closing records are complete. P3-A has passed at
-problem and restricted-representation readiness scope; P3-B–D remain unattempted.
-Next: P3-03, unstarted. P3-N01 remains NOT YET SUPPORTED.**
-P3-02 has [exact time and preservation records](work_logs/P3_02_2026-10-07_S1/actuals.json)
-and a [task readiness audit](work_logs/P3_02_2026-10-07_S1/readiness_audit.md).
+**P3-01–03 are complete at their declared task scopes, with their Research90
+minima and closing records. P3-A remains PASS at problem and restricted representation
+readiness; P3-B–D remain unattempted. Next: P3-04, unstarted.
+P3-N01 remains NOT YET SUPPORTED.**
+P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
+[task readiness audit](work_logs/P3_03_2026-10-07_S1/readiness_audit.md).
 
 Use this ledger for exact statements, assumptions, versions, evidence type,
 status and project impact. Planning examples and inherited evidence are not
@@ -98,19 +98,43 @@ support. The observed protected minimum is reconciled separately in the
 | P3-RA01 | Provisionally use versioned finite rational constraints and loss queries; prefer known calibrated payoffs with interval/set uncertainty, adding a probability adapter only with its explicit semantics. | Revisable interface with direct-loss, full probability/credal, proof-status, source-preserving and richer-representation alternatives. The narrower existing companion and native cases are distinguished from the future producer/update implementation. |
 | P3-H01/H02/H03/H04 and P3-N01 | Later learner, counterfactual, plurality, refinement and contribution obligations retain their status. | P3-03 remains unstarted. Gate readiness does not establish a source learner, imported LI guarantee, paid-resource advantage or supported contribution. No blocking repair was found or selected. |
 
+## P3-03 dispositions — October 7, 2026
+
+The [principal construction](derivations/03_logical_uncertainty.md) and
+[companion proofs](derivations/03_refinement_extensions.md) supply these
+restricted results. Earlier entries above retain their historical scope.
+All executable evidence is DEVELOPMENT; internal reviews are same-model and
+nonblind, with no duplicate concurrent time credit.
+
+| Record | Current finding | Evidence, exact scope and limit |
+|---|---|---|
+| P3-H01 | A concrete finite process updates certified bounds while deterministic questions remain unresolved. | **RESTRICTED CONSTRUCTION SUPPLIED.** The prototype processes declared Boolean assessments and bounded VM queries; it has no learned point-forecast channel or general mathematical truth oracle. |
+| P3-D20 | Atomic splitting/pruning, received-literal overlays and a sound inclusion-monotone rational interval evaluator preserve conditional bounds at interruption boundaries. | U03-1/2; current `finite-cover-v2` and saved development. Actual truth needs the source/interpretation bridge. Empty source and arithmetic limits have typed outcomes. |
+| P3-D21 | Retained fair production and checking resolve true and false bounded queries; sufficient finite capacity also completes the received source. | U03-3/4 and an explicit all-mode end-to-end transaction bound. Horizons, capacity, no intervening revisions and separately charged reporting are explicit; no CPU or money bound is inferred. |
+| P3-D22 | A monotone stream on a fixed Boolean fragment stabilizes its source; a complete fair proof presentation captures its provable Boolean relations and task predicates. | U03-7/8/8a, elementary finite proofs. No universal final-change signal, certifiability decider, truth completeness, practical rate or LI anticipation is supplied. The proof-stream adapter is not implemented by the VM. |
+| P3-D23 | A named action can have a conditional uniform regret certificate while individual costs and truth coordinates remain unresolved. | U03-5 and shared-cost, repricing and pure/randomized-action separators. The supplied catalogue, current source, complete loss records, units and tolerance are bound. Terminal regret is distinct from expert regret and paid-policy improvement. |
+| P3-D24 | Task-component projection needs an exterior-feasibility bridge for exact global extrema; exact present-source retention can still lose withdrawal information. | U03-9/10, constructive factorization and two histories with the same current source but different post-withdrawal ranges. No need to retain every historical byte, no counterfactual semantics. |
+| P3-D25 | Final representability, reachable refinement and a universally least bounded enclosure are different requirements. | U03-11 parity and variable-order cases, plus a hand-proved two-cube nonexistence example. The FIFO parity count includes capacity revisits. No lower bound against symbolic methods or plurality-performance advantage follows. |
+| P3-D26 | Exact minima of a known Hamming-loss family recover the finite Boolean source, while the same expectations can retain only marginals. | U03-12 and explicit gap/error and affine-interior obstructions. A known finite rational domain admits a PWA distance-family adapter; its richer expectation matrix must be reanalyzed. No free extrema oracle or necessity of full-source recovery is claimed. |
+| P3-E03 | A finite kernel, task wrapper, exact-record binding repair and receipt-identity repair have scoped development support. | Core: 12 suites/10,840 assertions; first wrapper: 9/64; exact binding: 7/35; receipt identity: 5/177. Frontier records preserve two harness failures and six completed parity cases before an eight-case selective continuation; 1,772 assertions across the scientific portions. Historical code hashes and complete traces remain intact. |
+| P3-B05 | Applicability, numerical validity and cryptographic identity are separate services. | Full source/loss/task records determine current applicability; editable JSON is not authenticated or numerically rechecked by `report_is_current`. Immutable query indices prevent internal receipt-key aliasing independently of audit-hash equality. A deliberate field surrogate is not a discovered SHA collision. |
+| P3-L03 | Five targeted primary sources anchor the ordinary deductive, abstraction, dependency, algorithmic-knowledge and computability comparisons. | [Source contracts](literature/03_bounded_sources.md), principal passage reads and internal reviews. No source theorem is imported beyond its hypotheses, no full-paper replication or priority survey. |
+| P3-C03 | A finite operational adaptation and collection of task/refinement/retention distinctions are concrete. | Candidate formal adaptation/synthesis at the stated fragment. The same-code ordinary combination reproduces its outputs and costs. Broader contribution significance remains a named application/comparison obligation. |
+| P3-H02/H03/H04 and P3-N01 | Counterfactuals, model-plurality benefit, learned forecasts, paid computation and phase contribution retain their open obligations. | The main note maps all 21 duties. P3-04 is next and unstarted; P3-B–D remain unattempted, with no frozen or exposed final challenge. |
+
 ## Current contribution record — P3-N01
 
 **Status: NOT YET SUPPORTED.**
 
 | Field | Current disposition |
 |---|---|
-| Object | A proposed restricted interface linking uncertain logical forecasts, paid computations and justified comparisons under changed evidence, objectives or program versions. Its exact representation and update rule are not yet selected. |
+| Object | A concrete finite constraint-and-loss service with retained bounded execution/checking, sound outer-cover refinement, named-action certificates and conservative revision; general learned forecasts, paid computation selection and counterfactual transport remain future components. |
 | Type | Candidate modest formal adaptation, useful synthesis/implementation or specialized application. An original theorem or exclusive capability is not presumed. |
-| Exact delta | Unestablished. The target is an identified bounded service or cross-component guarantee beyond relabeling expected costs or listing familiar components. Phase-two transport and retention are inherited antecedents, not new phase-three results. |
-| Magnitude | Unestablished; prospective finite or otherwise restricted scope. No worldwide priority, broad superiority or unrestricted uncertainty/counterpossible result is claimed. |
-| Evidence presently available | P3-01's operational contract plus P3-02's finite identification, decision, calibration and repair proofs, native-interface cases, saved certificate implementation and strong ordinary comparisons. A narrower finite information-audit adaptation is now concrete, but the phase-wide logical-forecast/paid-revision delta remains unestablished. |
+| Exact delta | P3-02/03 provide explicit finite information characterizations and an implemented bounded service, with constructive task-specific refinement, current-record binding and revision obstructions. These are adaptations of ordinary ingredients. Their significance in a named application or synthesis comparison is not yet established; phase-two transport/retention remain inherited. |
+| Magnitude | Restricted finite scope: the current Boolean VM uses at most 12 atoms, 4,096 committed cells, bounded rational terms and stated horizons. General proof-stream and finite rational-domain adapters are mathematical extensions. No worldwide priority, broad superiority or unrestricted learner/counterpossible result is claimed. |
+| Evidence presently available | P3-01's contract; P3-02's finite information proofs and certificate implementation; P3-03's finite construction, scoped convergence/task/retention proofs, repaired implementation and preserved development evidence. Strong ordinary reconstructions and failure cases are explicit. No final challenge has been frozen or exposed. |
 | Comparison scope | S01 already sketches a resource-limited controller consulting a logical inductor; S03/S20 supply computation-selection/profile interfaces; S17 supplies incremental checking; S21 supplies numerical-uncertainty and acquisition interfaces; S22 supplies coherent logical probabilities. S02/S13 and S08/S15 supply scoring/expectation and model-plurality comparisons; S09 connects imprecise expectations with local sequential models. O-COMB may combine the same capabilities. |
-| Next evidence chunk | P3-A passed technical readiness with an explicit provisional finite representation and alternatives. P3-03 is next and unstarted: it must supply the actual bounded logical information/update procedure, its source construction and resource contract. Contribution support is not inferred from the gate. |
+| Next evidence chunk | P3-04: define and defend logical counterfactual semantics, including a genuine counterpossible under retained interpretation. P3-06/07 and P3-10/11 later address learned forecasts, paid reasoning and the contribution comparison. No next task or gate has been started by closing P3-03. |
 | Recurrence if needed | Retain R-P3-N01, Research90, for the contribution gate if meaningful support is still missing: target one named bounded service, reconstruct its closest ordinary implementation, and establish a substantive delta or disposition of displacement. Selection remains prospective at the appropriate gate. |
 
 The generic controller/forecast/cost architecture is therefore insufficient as

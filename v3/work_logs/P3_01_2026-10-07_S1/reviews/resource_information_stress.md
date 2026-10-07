@@ -48,9 +48,9 @@ read cannot be exchanged at unit cost without an explicit model.
 
 For labels `y_0,...,y_15`, the integer
 
-\[
+```math
 M=\sum_{i=0}^{15}2^i y_i
-\]
+```
 
 stores all sixteen labels. Reading bit `i` recovers `y_i`. This is one integer
 coordinate but up to sixteen bits of information. There are `2^16` possible

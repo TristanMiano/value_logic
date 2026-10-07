@@ -1,0 +1,22 @@
+--- preserved-core-v1
++++ repaired-core-v2
+@@ -20,7 +20,7 @@
+               input_bits=64, rational_bits=4096, input_bytes=1_000_000,
+               input_nodes=100000, input_depth=64)
+ VM_VERSION = "nat-register-v1"
+-KERNEL_VERSION = "finite-cover-v1"
++KERNEL_VERSION = "finite-cover-v2"
+ REPORT_VERSION = "finite-cover-report-v2"
+ 
+ 
+@@ -475,7 +475,9 @@
+                     job["disposition"] = "evidence_capacity_blocked"
+                     self.last_event["detail"]["disposition"] = "evidence_capacity"
+                     return
+-                rid = "vm:" + digest(q)
++                # Immutable admitted position disambiguates even equal hashes.
++                # The digest is an audit suffix, not the evidence's sole key.
++                rid = f"vm:{i}:{digest(q)}"
+                 bit = expected["answer"]
+                 self.constraints[rid] = dict(id=rid, expr=["var", i] if bit else ["not", ["var", i]],
+                                             kind="checked_vm", depends_on=[])

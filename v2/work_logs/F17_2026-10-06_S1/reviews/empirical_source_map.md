@@ -173,10 +173,10 @@ prices in `[1/2,2]`. The outcome probability is
 `eta=1/2+(x1+x2)/8`. A 32-ReLU MLP is trained by ordinary weighted binary
 cross-entropy. Its optimal prediction is
 
-\[
+```math
 p^*=\frac{J_0}{J_0+J_1},\qquad
 J_0=c_{FN}\eta,\quad J_1=c_{FP}(1-\eta).
-\]
+```
 
 Each network has 193 parameters and receives 768,000 binary outcome labels
 over 3,000 steps. Across five trained networks this is 3,840,000 binary
@@ -234,10 +234,10 @@ mean that the result is not solely an interval-width problem.
 
 The elementary task identity makes this explanation concrete:
 
-\[
-\operatorname{logit}(p^*)=
+```math
+\mathrm{logit}(p^*)=
 \log c_{FN}-\log c_{FP}+\log\eta-\log(1-\eta).
-\]
+```
 
 A price-plus-probability-odds computation need not use two separately
 swappable blocks for `log J0` and `-log J1`. This is an available alternative
@@ -342,11 +342,11 @@ Subtracting errors cancels `J`; signed source scaling/addition and the
 maximum-common rule establish a bound on `|E_S|-|E_Q|`. With sample price
 `c=1/32` and `sum|S_j-Q_j|=28633/46200`,
 
-\[
+```math
 L_S-L_Q\leq
 \frac1{64}+\frac3{200}\frac{28633}{46200}-\frac1{32}
 =-\frac{4873}{770000}<0.
-\]
+```
 
 This licenses the cheaper three-sample deployment relative to Q under the
 admitted source. It does not establish absolute accuracy while J is
@@ -370,10 +370,10 @@ Actual calibration executions give prefix moments. Short traces emit five
 proof nodes, the complete fallback nine, and unresolved penalty is 20 in
 the declared audit-work proxy. For a full three-version cascade,
 
-\[
+```math
 C=5+5m_1+5m_{12}+20m_{123},\qquad
 m_1=\tfrac12,\ m_{12}=\tfrac14,\ 0\leq m_{123}\leq q,
-\]
+```
 
 so `C-9<=-1/4+20q`. No composite C score is supplied as a premise. The
 bound licenses replacement for `q<=1/80`. This changes the selected

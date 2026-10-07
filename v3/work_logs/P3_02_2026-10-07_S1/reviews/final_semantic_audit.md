@@ -46,30 +46,30 @@ novelty or resource-advantage inference was found in the covered text.
 ### 2.1 The positive-margin LP is exact
 
 The source is a nonempty compact polytope
-\[
+```math
 F=\{p\geq0:Bp=d,\ Gp\leq g\},
-\]
+```
 with normalization among the equality rows and a justified bound
-\(bp\geq\beta>0\). The construction
-\[
+$`bp\geq\beta>0`$. The construction
+```math
 t=(bp)^{-1},\qquad x=tp
-\]
-maps every law in \(F\) to a feasible point of (43):
-\[
+```
+maps every law in $`F`$ to a feasible point of (43):
+```math
 Bx=dt,\quad Gx\leq gt,\quad bx=1,\quad
 x\geq0,\quad 0\leq t\leq1/\beta.
-\]
-Its target value is \(ax=ap/(bp)\).
+```
+Its target value is $`ax=ap/(bp)`$.
 
-Conversely, normalization in \(Bx=dt\) gives
-\(\mathbf1^\top x=t\). If \(t=0\), nonnegativity forces \(x=0\),
-contradicting \(bx=1\). Hence every transformed feasible point has
-\(t>0\), and \(p=x/t\) satisfies the original normalization, equalities,
+Conversely, normalization in $`Bx=dt`$ gives
+$`\mathbf1^\top x=t`$. If $`t=0`$, nonnegativity forces $`x=0`$,
+contradicting $`bx=1`$. Hence every transformed feasible point has
+$`t>0`$, and $`p=x/t`$ satisfies the original normalization, equalities,
 inequalities and denominator condition. It also inverts the objective.
 Thus both minimization and maximization are preserved; there are no spurious
-zero-\(t\) feasible points in this normalized problem.
+zero-$`t`$ feasible points in this normalized problem.
 
-The transformed source is closed and bounded: \(0\leq x_i\leq t\leq1/\beta\).
+The transformed source is closed and bounded: $`0\leq x_i\leq t\leq1/\beta`$.
 Its extrema therefore exist. The stated bound is a sufficient known margin,
 not an imported assertion that all fractional programs require this precise
 compact formulation. If one wants rational LP witnesses or native rational
@@ -88,23 +88,23 @@ its OCR is imperfect. [Author-archive scan](https://iiif.library.cmu.edu/file/Co
 
 ### 2.2 The error bound uses the correct denominator premise
 
-With \(u=\Pr(A\cap B)\), \(v=\Pr(B)\geq\beta\), and the stated coordinate
-errors, \(\widehat v\geq\beta-\eta_v>0\). Writing the difference as
-\[
+With $`u=\Pr(A\cap B)`$, $`v=\Pr(B)\geq\beta`$, and the stated coordinate
+errors, $`\widehat v\geq\beta-\eta_v>0`$. Writing the difference as
+```math
 \frac{\widehat u}{\widehat v}-\frac uv
 =
 \frac{(\widehat u-u)-(u/v)(\widehat v-v)}{\widehat v}
-\]
+```
 gives
-\[
+```math
 \left|\frac{\widehat u}{\widehat v}-\frac uv\right|
 \leq
 \frac{\eta_u+(u/v)\eta_v}{\beta-\eta_v}
 \leq
 \frac{\eta_u+\eta_v}{\beta-\eta_v}.
-\]
+```
 This proves (44). It requires neither that the estimated pair itself be a
-coherent event-probability pair nor that its ratio already lie in \([0,1]\).
+coherent event-probability pair nor that its ratio already lie in $`[0,1]`$.
 Clipping to that interval cannot increase distance from the true target
 in the interval.
 
@@ -117,21 +117,21 @@ bound without contradicting it.
 
 ### 2.3 Conditional Brier elicits the specified property
 
-The corrected report domain \(q\in[0,1]\) includes the conditional law.
-For a fixed outcome distribution with \(v=\Pr(B)>0\) and
-\(r=\Pr(A\mid B)\),
-\[
+The corrected report domain $`q\in[0,1]`$ includes the conditional law.
+For a fixed outcome distribution with $`v=\Pr(B)>0`$ and
+$`r=\Pr(A\mid B)`$,
+```math
 \mathbb E[\mathbf1_B(q-\mathbf1_A)^2]
 =v\bigl[(q-r)^2+r(1-r)\bigr].
-\]
-Thus its unique minimizer is \(q=r\), and its excess expected loss is
-\(v(q-r)^2\). If a separate procedure certifies excess at most \(\xi\)
-and \(v\geq\beta>0\), then
-\[
+```
+Thus its unique minimizer is $`q=r`$, and its excess expected loss is
+$`v(q-r)^2`$. If a separate procedure certifies excess at most $`\xi`$
+and $`v\geq\beta>0`$, then
+```math
 |q-r|\leq\sqrt{\xi/\beta}.
-\]
+```
 Without a positive event-mass control, small unconditional excess need not
-give small conditional error. At \(v=0\), every report has zero loss and
+give small conditional error. At $`v=0`$, every report has zero loss and
 the conditional target is outside this service.
 
 The principal correctly calls this property elicitation, distinguishes it
@@ -149,7 +149,7 @@ are additional requirements.
 
 The finite proof has the appropriate dual constraints. Free radius and
 intercept variables require the two nonnegative dual weight families to
-have totals \(1/2\); the observation coefficients require equal observation
+have totals $`1/2`$; the observation coefficients require equal observation
 barycenters. Convexity makes those barycenters admissible source points.
 Their objective is half a same-observation target separation. This matches
 the unrestricted scalar information bound. For general compact convex
@@ -168,15 +168,15 @@ The text preserves each of these distinctions.
 
 Osipenko's introduction states the centrally symmetric scalar recovery
 theorem as Theorem 1, printed p.461, attributed there to Smolyak. For the
-principal's \(K\), take
-\[
-W=\operatorname{conv}\{\pm(x,1):x\in K\},\qquad
+principal's $`K`$, take
+```math
+W=\mathrm{conv}\{\pm(x,1):x\in K\},\qquad
 I(u,t)=(Nu,t),\qquad \widetilde c(u,t)=cu.
-\]
+```
 This is a compact convex centrally symmetric source. At zero information,
-\(t=0\) forces \(u=(x-x')/2\) with \(Nx=Nx'\). The stated theorem's
+$`t=0`$ forces $`u=(x-x')/2`$ with $`Nx=Nx'`$. The stated theorem's
 radius is therefore the required pair half-width; its linear rule restricts
-on \(t=1\) to an affine rule on \(Nx\). This confirms the principal's
+on $`t=1`$ to an affine rule on $`Nx`$. This confirms the principal's
 direct ancestry route. Only the statement in Osipenko was inspected;
 Smolyak's original 1965 paper was not retrieved.
 
@@ -197,12 +197,12 @@ closer scalar ancestry, with no new general estimation claim.
 
 The three displayed affine decoders have the stated worst errors.
 For the non-inversion decoder,
-\[
+```math
 \frac{z_2-1/2}{1+\delta}-p_3
 =\frac{p_2-1/2+e_2}{1+\delta}.
-\]
+```
 The source endpoints attain its bound. Selecting the best of the three
-known regimes before observing \(z\) attains the earlier sharp global
+known regimes before observing $`z`$ attains the earlier sharp global
 radius. Thus the sharper radius improves on the simpler inversion bound,
 but supplies no improvement over the best stated ordinary affine baseline.
 Selecting a decoder by its proved risk bound is correctly distinguished
@@ -251,7 +251,7 @@ The added section 16 makes several helpful distinctions explicit:
 - The law of a realized loss, its one realized draw, and its mean are three
   different inputs. Distinct statewise loss values can make the first
   identifying even when the mean is not.
-- A common finite batch produces \(L\widehat p\). When the stipulated
+- A common finite batch produces $`L\widehat p`$. When the stipulated
   exact law inverse is available, it returns the empirical law. Common
   varying trial weights can instead yield a weighted empirical law;
   different probe batches need not yield any one exact coherent law.

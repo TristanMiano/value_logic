@@ -49,15 +49,15 @@ whose sentences are treated as hard evidence. Let `A_t` contain **every prime
 sentence** occurring in `D_t` and in the finitely many formulas currently being
 queried. Parse only the Boolean structure around these primes. Define
 
-$$
+```math
 V_t=\{v\in\{0,1\}^{A_t}:v\models D_t\}.
-$$
+```
 
 Then the exact projection identity is
 
-$$
+```math
 V_t=\{W|_{A_t}:W\in\mathrm{PC}(D_t)\}.
-$$
+```
 
 The forward inclusion follows by restriction. For the reverse inclusion,
 extend a satisfying `v` arbitrarily to every remaining prime sentence, and
@@ -85,9 +85,9 @@ distinction explicit.
 
 Take
 
-$$
+```math
 D=\{u\lor z,\;u\lor\neg z\}.
-$$
+```
 
 Every satisfying assignment has `u=1`: `u=0` would require both `z=1` and
 `z=0`. Hence the exact projection onto `{u}` is `{1}`. If both mixed clauses
@@ -112,10 +112,10 @@ formula domain. It is stronger than merely keeping individual prices in
 Use propositional atoms `A_1,A_2,...`, with an effective encoding in which
 `n -> A_n` is polynomial-time in unary `n`. Define
 
-$$
+```math
 \Gamma=\{A_k:k\ge1\},\qquad
 D_n=\{A_k:2^k\le n\}.
-$$
+```
 
 This is a computable nested finite disclosure process for a consistent theory,
 and its union is exactly `Gamma`. At day `n`, give every disclosed atom value
@@ -129,9 +129,9 @@ Every day is exactly coherent with `D_n`. Every fixed formula eventually has
 all of its atoms disclosed, and thereafter has its correct Boolean value in
 the all-true-atom model of `Gamma`. Nevertheless,
 
-$$
+```math
 P_n(A_n)=1/2\qquad(n\ge1),
-$$
+```
 
 because `2^n>n`. This already fails the theorem-sequence conclusion of
 Theorem 4.2.1. Here is also a direct exploitation proof, so the separation
@@ -144,10 +144,10 @@ previous atom has entered `D`; at most the latest purchased atom remains
 undisclosed. At any day from `t_k` through `t_(k+1)-1`, cumulative assessed
 wealth is
 
-$$
+```math
 W(H_n)=\frac{k-1}{2}+W(A_{t_k})-\frac12
 \in\left\{\frac{k-2}{2},\frac{k}{2}\right\}.
-$$
+```
 
 The possible wealth values are bounded below by `-1/2`. The all-true world
 is always plausible and gives `k/2`, which is unbounded as purchase count

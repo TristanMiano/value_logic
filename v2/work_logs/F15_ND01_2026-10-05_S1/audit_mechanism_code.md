@@ -48,16 +48,16 @@ distinguishes the analytic null direction from its numerical execution check.
 Let `a=m*v`, `delta=sum m*(1-m)*v^2`, and let `u` be a unit null direction.
 For `q=a+t*u`, the sphere equation becomes
 
-\[
+```math
 t^2+b t-\delta=0,\qquad b=(2a-v)^T u.
-\]
+```
 
 The implemented small-magnitude root is
 
-\[
-t=\operatorname{sgn}_{+}(b)
+```math
+t=\mathrm{sgn}_{+}(b)
   \frac{2\delta}{\sqrt{b^2+4\delta}+|b|},
-\]
+```
 
 where the sign is positive at zero. This is correct: it is the positive root
 when `b>=0` and the negative root when `b<0`. It avoids subtracting nearly
@@ -93,11 +93,11 @@ the target. A mismatch stops the analysis.
 Rescoring every saved candidate on that same logit quadratic resolves the
 earlier objective ambiguity. The arithmetic decomposition is
 
-\[
+```math
 f(\text{selected})-f(\text{global})
 =[f(\text{selected})-\min_{\text{pool}}f]
  +[\min_{\text{pool}}f-f(\text{global})].
-\]
+```
 
 These are, respectively, selection-objective and candidate-coverage gaps
 for the finite discovery logit objective. The new analysis-only pool winner

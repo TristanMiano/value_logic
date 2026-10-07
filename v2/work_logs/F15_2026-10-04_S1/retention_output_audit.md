@@ -39,11 +39,11 @@ outcome and receives no useful-decision credit.
 
 For each world, the audit computes the cost of an ordered program directly as
 
-\[
+```math
 C_{(i_1,\ldots,i_k)}(w)
 =\sum_{t=1}^{k} c_{i_t}\prod_{j<t}w_{i_j}
 + L\prod_{j=1}^{k}w_{i_j}.
-\]
+```
 
 This is a closed prefix-product formula rather than a call to the frozen path
 interpreter. It handles the two-attempt program edit as well as every declared

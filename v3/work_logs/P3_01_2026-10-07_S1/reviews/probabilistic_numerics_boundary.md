@@ -35,24 +35,24 @@ Consider a finite, jointly Gaussian model for an unknown scalar `Z` and an
 observation vector `Y`. Fix their means `m_z,m_y`. For each positive `s`, let
 the covariance be
 
-$$
+```math
 s^2\begin{pmatrix}k&q^\mathsf{T}\\q&K\end{pmatrix},
-$$
+```
 
 where `K` is positive definite and the whole block is positive semidefinite.
 Condition on the same exact observation `Y=y`. The Gaussian conditional has
 
-$$
+```math
 m_{Z|y}=m_z+(s^2q^\mathsf{T})(s^2K)^{-1}(y-m_y)
 =m_z+q^\mathsf{T}K^{-1}(y-m_y),
-$$
+```
 
 and
 
-$$
+```math
 v_{Z|y}=s^2k-(s^2q^\mathsf{T})(s^2K)^{-1}(s^2q)
 =s^2\bigl(k-q^\mathsf{T}K^{-1}q\bigr).
-$$
+```
 
 Thus changing this common covariance scale leaves the posterior mean unchanged
 while scaling its variance. The assumptions are essential: input locations,
@@ -126,15 +126,15 @@ The inspected PDF's equation (2.3) uses
 integral of this kernel as `c(1+b/3)`, for the unnormalized integral defined
 in (2.1). Direct integration instead gives
 
-$$
+```math
 \int_{-3}^{3}\!\int_{-3}^{3}|x-x'|\,dx\,dx'=72,
-$$
+```
 
 so the covariance integral under those displayed conventions is
 
-$$
+```math
 36c(1+b)-24cb=36c(1+b/3).
-$$
+```
 
 The smaller expression would be the variance of the average integral `F/6`.
 This is a local normalization discrepancy in the inspected version, not an

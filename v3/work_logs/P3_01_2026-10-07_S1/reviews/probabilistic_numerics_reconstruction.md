@@ -71,11 +71,11 @@ constant are as transcribed in the principal note.
 
 Directly, symmetry gives
 
-$$
+```math
 \int_{-3}^{3}\int_{-3}^{3}|x-x'|\,dx'\,dx
 =2\int_{-3}^{3}\int_{-3}^{x}(x-x')\,dx'\,dx
 =\int_{-3}^{3}(x+3)^2\,dx=72.
-$$
+```
 
 The square's area is 36, so integrating the stated kernel gives
 `36c(1+b)-(b/3)c*72 = 36c(1+b/3)`. Dividing the target by six divides its

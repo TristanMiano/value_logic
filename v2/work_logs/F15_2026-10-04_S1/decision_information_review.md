@@ -9,11 +9,11 @@ confirmatory interval, F16 work, or novelty claim.
 
 For the Cartesian box of recorded action-cost intervals,
 
-\[
+```math
 \sup_{c\in\prod_i[l_i,u_i]}\left(c_a-\min_b c_b\right)
 =\max_b\sup_c(c_a-c_b)
 =\max\left(0,\max_{b\ne a}(u_a-l_b)\right).
-\]
+```
 
 The self comparison is identically zero, even for a wide interval. Treating
 it as `upper[a] - lower[a]` would be incorrect. The seventh action is the

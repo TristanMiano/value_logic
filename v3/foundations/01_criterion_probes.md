@@ -13,19 +13,19 @@ are comparison diagnostics, not claims of mathematical novelty.
 Fix Boolean sentence-payoffs `y_phi(W)` and quotes `p_t(phi)` in `[0,1]`.
 For this diagnostic define failure-cost payoffs and corresponding quotes by
 
-$$
+```math
 c_\varphi(W)=1-y_\varphi(W),\qquad
 v_t(\varphi)=1-p_t(\varphi).
-$$
+```
 
 A signed position `a` in the original payoff has marked-to-world gain
 `a(y_phi-p_t(phi))`. A position `b=-a` in the cost payoff has gain
 
-$$
+```math
 b(c_\varphi-v_t(\varphi))
 =(-a)((1-y_\varphi)-(1-p_t(\varphi)))
 =a(y_\varphi-p_t(\varphi)).
-$$
+```
 
 The equality holds term by term, hence for every finite portfolio, every date
 and every world in the same assessment set. It preserves lower and upper
@@ -70,10 +70,10 @@ Consider a different, explicitly defined market diagnostic. Each elementary
 claim pays either zero or one, every quote is `1/2`, and a trade of signed size
 `a` incurs a fee `s|a|`, with fixed `s>=1/2`. Its gain is
 
-$$
+```math
 a(y-1/2)-s|a|\le |a|/2-s|a|\le0
 \qquad (y\in\{0,1\}).
-$$
+```
 
 Summing shows that every portfolio's marked net gain is nonpositive at every
 world and every time. No trader obtains unbounded positive wealth, even if
@@ -151,10 +151,10 @@ quantifier. Four possible services are:
 
 For the first row, nonempty `W_(t+1) subset W_t` gives
 
-$$
+```math
 \inf_{W_t}\ell\le\inf_{W_{t+1}}\ell
 \le\sup_{W_{t+1}}\ell\le\sup_{W_t}\ell.
-$$
+```
 
 This is pathwise narrowing of the exact loss range. It uses the same payoff
 and a justified restriction; it does not apply after changing the objective
@@ -180,9 +180,9 @@ stipulated model, not evidence of a defective update.
 
 Before purchasing the signal, expected squared loss after conditioning is
 
-$$
+```math
 \frac45\,0+\frac15\,\frac14=\frac1{20}<\frac9{100}.
-$$
+```
 
 The improvement is `1/25` in this score's units. It is an ex ante expectation,
 not a statement that every acquisition reduces uncertainty or actual error.
@@ -214,11 +214,11 @@ For nested information `F_t subset F_(t+1)`, let
 `p_t=E[Y|F_t]` and `p_(t+1)=E[Y|F_(t+1)]` under one fixed probability model.
 For bounded `Y`, expanding the square and conditioning gives
 
-$$
+```math
 E[(Y-p_t)^2\mid F_t]
 =E[(Y-p_{t+1})^2\mid F_t]
 +E[(p_{t+1}-p_t)^2\mid F_t].
-$$
+```
 
 The cross term vanishes because
 `E[Y-p_(t+1)|F_(t+1)]=0` and the report difference is measurable there.

@@ -279,9 +279,9 @@ This is the semantic payoff, distinct from the agent's estimate
 `Lhat_t(q,a)` and from the observed realized loss. Where an ordinary probability
 model `p_t` is supplied, one possible estimate is
 
-$$
+```math
 \widehat L_t(q,a)=\sum_{\omega}p_t(\omega)\ell_q(a,\omega).
-$$
+```
 
 This is a comparison bridge, not a mandatory primary carrier. A source set may
 instead determine lower/upper costs; a learned direct forecast can be evaluated
@@ -303,10 +303,10 @@ automatically the market's separate quote for `not phi` at that date.
 
 If `c_true` and `c_false` are known and unequal, a binary expected loss obeys
 
-$$
+```math
 \widehat L=c_{\mathrm{false}}+
 (c_{\mathrm{true}}-c_{\mathrm{false}})p.
-$$
+```
 
 Probability recovery then has a specific algebraic question. Unknown stakes,
 unknown additive charges, an interval rather than an expectation, or a purely
@@ -320,9 +320,9 @@ memory bytes and observations—and a declared budget `B_t`. If a task values
 these resources in loss units, it also provides prices `lambda_t`. Report
 task loss and resource use separately, then the specified total
 
-$$
+```math
 J_t=\ell_{q_t}(a_t,\omega_t)+\lambda_t\mathbin{\cdot}r_t.
-$$
+```
 
 Charge forecasting, feature extraction, proof/evaluation, acquisition,
 representation construction, model selection, storage/access, checking and

@@ -1,0 +1,25 @@
+{
+  "assertions": 1501,
+  "attempt": 2,
+  "cases": [],
+  "concurrent_research_credit_ns": 0,
+  "end": {
+    "monotonic_ns": 7140373981583,
+    "process_ns": 186264186,
+    "utc": "2026-10-07T16:38:24.389562+00:00"
+  },
+  "error": "Traceback (most recent call last):\n  File \"/workspace/scratch/ed8ae2b0d290/value_logic/v3/checks/03_frontier_check.py\", line 232, in main\n    summaries = exercise(core, cases)\n                ^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/ed8ae2b0d290/value_logic/v3/checks/03_frontier_check.py\", line 173, in exercise\n    kernel = core.Kernel(case[\"config\"])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/ed8ae2b0d290/value_logic/v3/checks/03_bounded_logic.py\", line 317, in __init__\n    self.work[\"setup_validation_nodes\"] += validate_expr(loss[\"expr\"], self.k, \"loss\")\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/ed8ae2b0d290/value_logic/v3/checks/03_bounded_logic.py\", line 132, in validate_expr\n    validate_expr(expr[2], atoms, kind, depth + 1, count)\n  File \"/workspace/scratch/ed8ae2b0d290/value_logic/v3/checks/03_bounded_logic.py\", line 131, in validate_expr\n    validate_expr(expr[1], atoms, kind, depth + 1, count)\n  File \"/workspace/scratch/ed8ae2b0d290/value_logic/v3/checks/03_bounded_logic.py\", line 123, in validate_expr\n    rational(expr[1])\n  File \"/workspace/scratch/ed8ae2b0d290/value_logic/v3/checks/03_bounded_logic.py\", line 60, in rational\n    raise InputError(\"rational input must be a bounded integer or integer/positive-integer string\")\np303_frontier_core.InputError: rational input must be a bounded integer or integer/positive-integer string\n",
+  "evaluator_sha256": "920ef2989f5885affa5e53fc8c3dca1a94ae5aafb00ae5675e7fc811e1d31794",
+  "host_elapsed_ns": 95996803,
+  "host_process_ns": 95999864,
+  "inputs_sha256": "179b30c7b7602367f828f7486fb650ccfdd0fe35351abaa7113d7c9751192ba0",
+  "method_sha256": "e8ac9bfda4addd9853a3b7ac174062a1152c8ec25cf6d2d09274d463c7d0419e",
+  "stage": "DEVELOPMENT",
+  "start": {
+    "monotonic_ns": 7140277984780,
+    "process_ns": 90264322,
+    "utc": "2026-10-07T16:38:24.293494+00:00"
+  },
+  "status": "FAIL",
+  "traces_sha256": "b00da42603290bd5ef5222644c54adba965cc5347671bee7257e20f932d3b9b3"
+}

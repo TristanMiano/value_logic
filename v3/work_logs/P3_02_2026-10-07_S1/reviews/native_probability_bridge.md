@@ -41,9 +41,9 @@ Let `p:P` be an event probability coordinate and `y:U` its expected-loss
 coordinate. On the event the known loss is `5_U`, off it `1_U`. Declare only
 the forward valuation bridge
 
-\[
+```math
 w:P\longrightarrow U,\qquad w(x)=4x.
-\]
+```
 
 The expected loss is `y=1_U+w(p)`. The numerical expectation observation is
 `2_U≤y≤3_U`. Use one source case with these explicit affine rows:
@@ -66,17 +66,17 @@ exact population equalities without an additional justification.
 
 R1 introduces U1 and U2. R4 adds them, and R2 cancels the common `y`, giving
 
-\[
+```math
 w(p)\le[2]0_U.
 \tag{N1}
-\]
+```
 
 Similarly U0+U3 gives
 
-\[
+```math
 -w(p)\le[-1]0_U.
 \tag{N2}
-\]
+```
 
 The arithmetic budgets are `−1+3=2` and `1−2=−1`. Negative budgets are
 retained exactly. Numerically these establish `1≤4p≤2` throughout the
@@ -101,9 +101,9 @@ probability in another unit.
 justifies a reverse numerical calibration `r:U→P` with factor `1/4`, R5
 converts (N1), including its budget, to
 
-\[
+```math
 r(w(p))\le[1/2]0_P.
-\]
+```
 
 R2 uses the actual product of declared factors, `(1/4)·4=1`, to rewrite the
 root as `p <=[1/2] 0_P`. Converting (N2) gives
@@ -140,39 +140,39 @@ For clarity, suppose the following numerical rows have legitimately been
 transported into P using declared calibrations, or supplied in P by an
 explicitly justified external observation adapter. Define
 
-\[
+```math
 s=p_1+p_2+p_3,\qquad
 \ell_1=p_1+2p_2,\qquad
 \ell_2=p_2+3p_3.
-\]
+```
 
 Retain the two orientations of `s=1`, `ℓ₁=5/4`, `ℓ₂=5/4`, plus
 nonnegativity. The feasible rational witness is
 `p=(1/4,1/2,1/4)`. Its normalization-augmented matrix is
 
-\[
+```math
 \begin{bmatrix}1&1&1\\1&2&0\\0&1&3\end{bmatrix},
-\]
+```
 
 with determinant four. The row-span reconstruction is
 
-\[
+```math
 p_1=\tfrac32s-\tfrac12\ell_1-\tfrac12\ell_2,
 \quad
 p_2=-\tfrac34s+\tfrac34\ell_1+\tfrac14\ell_2,
 \quad
 p_3=\tfrac14s-\tfrac14\ell_1+\tfrac14\ell_2.
 \tag{N3}
-\]
+```
 
 For an explicit native certificate of `p₁≤1/4`, introduce these source rows
 and multiply them by nonnegative rational weights:
 
-\[
+```math
 \tfrac32(s\le1),\qquad
 \tfrac12(-\ell_1\le-5/4),\qquad
 \tfrac12(-\ell_2\le-5/4).
-\]
+```
 
 R4 adds them and R2 uses (N3); the resulting budget is
 `3/2−5/8−5/8=1/4`. Using the opposite source orientations gives
@@ -198,19 +198,19 @@ transporting an inaccessible U observation into P.
 Full-law recovery is unnecessary for a native probability interval. On the
 three-world simplex, suppose the accessible observation is
 
-\[
+```math
 p_2+2p_3=\tfrac12.
-\]
+```
 
 The source is nonempty, but does not determine `p₃`. For the upper bound,
 add the source rows `p₂+2p₃≤1/2` and `−p₂≤0`, then scale by `1/2`. The
 native root is `p₃ <=[1/4] 0_P`. The source row `−p₃≤0` supplies the lower
 bound. Hence
 
-\[
+```math
 0\le p_3\le\tfrac14.
 \tag{N4}
-\]
+```
 
 The rational endpoint witnesses `(1/2,1/2,0)` and `(3/4,0,1/4)` establish
 that the interval is sharp. They provide separate evidence for sharpness;
@@ -231,9 +231,9 @@ same literal target, followed by the inherited all-cases rule.
 Let `v_i:U` be expected losses for an exhaustive event partition. The
 separately justified semantic contract says
 
-\[
+```math
 v_i=s p_i,\qquad p\in\Delta_n,\qquad s>0
-\]
+```
 
 with the **same** stake `s`, constant across worlds for this valuation.
 Then `S=Σ_i v_i=s` and externally `p_i=v_i/S`. This semantic bridge is
@@ -241,10 +241,10 @@ not an admitted bilinear native source equation in varying `s,p_i`.
 
 For a fixed rational threshold `t`, however,
 
-\[
+```math
 p_i\ge t\quad\Longleftrightarrow\quad tS-v_i\le0
 \tag{N5}
-\]
+```
 
 under that calibration and positivity premise. The right side is a native
 affine loss-unit query. It uses only addition and fixed rational scaling;
@@ -258,9 +258,9 @@ Adding upper `v₂≤2` and lower `−v₁≤−2` gives `v₂−v₁≤0`; scal
 `v₁−(3/4)S≤0`. The native sign certificates, interpreted through (N5),
 give
 
-\[
+```math
 \tfrac12\le p_1\le\tfrac34.
-\]
+```
 
 The endpoints are attained by `(v₁,v₂)=(2,2)` and `(3,1)`, respectively.
 The same native source proves `S≥3`, so the denominator has a strictly
@@ -311,10 +311,10 @@ without assuming independence between stake and event.
 
 Two admissible joint laws illustrate the information boundary:
 
-\[
+```math
 p^A=(0,1/2,1/2,0),\qquad
 p^B=(1/2,1/3,0,1/6).
-\]
+```
 
 Both have expected event loss `3/2` and expected stake `2`, but their event
 probabilities are `1/2` and `5/6`. Dividing loss by mean stake produces `3/4`

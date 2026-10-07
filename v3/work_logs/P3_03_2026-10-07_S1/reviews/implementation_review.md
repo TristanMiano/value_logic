@@ -255,3 +255,13 @@ the independent evaluator scope, and assesses the twelve passing development
 suites without rerunning them. That evidence supplements this static review;
 it does not convert its finite tested scope into a universal implementation
 proof.
+
+## 10. Subsequent exact-record comparison correction
+
+The principal identified a further precision issue: the earlier active-source
+fingerprint comparison was an audit identity check, not a mathematically
+injective encoding of every admitted source. The
+[exact-binding repair](exact_binding_repair.md) records the separately
+authorized full-record comparison, interface versions, preserved mathematical
+function ASTs and narrow development evidence. This closes that scope issue
+without rewriting the earlier review snapshots or their source hashes.

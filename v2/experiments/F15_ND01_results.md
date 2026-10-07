@@ -139,10 +139,10 @@ absent.
 The saved-statistic ceiling makes the issue precise. For a fixed observed
 control,
 
-\[
-\Delta=\operatorname{MAE}_{control}-\operatorname{MAE}_{aligned}
-\leq\operatorname{MAE}_{control}.
-\]
+```math
+\Delta=\mathrm{MAE}_{control}-\mathrm{MAE}_{aligned}
+\leq\mathrm{MAE}_{control}.
+```
 
 The frozen pooled paired-advantage radius is **0.022115658601168407**. To
 achieve a lower bound of .01, even a hypothetical zero-error aligned
@@ -281,11 +281,11 @@ The saved pools can be rescored by the *same* logit objective used for the
 exhaustive comparison, without selecting or evaluating a new winner. For
 each pool,
 
-\[
+```math
 f(\text{selected})-f(\text{global})
 =[f(\text{selected})-f(\text{best in pool})]
  +[f(\text{best in pool})-f(\text{global})].
-\]
+```
 
 The first term is a selection/objective gap; the second is candidate coverage.
 **All 100 distinct pool prefixes miss the exhaustive optimum.** For the
@@ -321,11 +321,11 @@ models and overlapping pools; they are not 100 independent trials.
 For this task, `eta=.5+(x1+x2)/8`, `J0=cFN*eta`, and
 `J1=cFP*(1-eta)`. The ordinary conditional weighted cross-entropy has optimum
 
-\[
+```math
 p^*=\frac{J_0}{J_0+J_1},\qquad
-\operatorname{logit}(p^*)=\log c_{FN}-\log c_{FP}
+\mathrm{logit}(p^*)=\log c_{FN}-\log c_{FP}
                          +\log\eta-\log(1-\eta).
-\]
+```
 
 That final function can be understood in terms of two price contributions
 and one probability-odds contribution. It need not be organized as one
@@ -349,9 +349,9 @@ For a selected native contribution `phi_m=sum(m_j v_j h_j)`, define ordinary
 base logit error `e=z-z*` and role residual `r=phi_m-ell_role`, where
 `ell_0=log J0` and `ell_1=-log J1`. Exactly,
 
-\[
+```math
 z_{intervention}-z_H=e(base)+r(donor)-r(base).
-\]
+```
 
 The corresponding mean squared logit error includes a cross term. On the
 existing validation pairs, equal-weighted averages are:

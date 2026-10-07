@@ -66,6 +66,23 @@ The [first report](paper.md) makes licensed reliance relative to a use, context,
 
 Learning and interpretability remain longer-term goals. A value-based description might help explain an agent's policy as well as predict its outputs. Neither a particular neural architecture nor the recovery of a uniquely true utility is assumed by the mathematical framework. The [original essays](posts/) and [exploratory conversations](llm_convos/) preserve the philosophical and practical origins of these questions.
 
+## Reasoning before mathematical questions are settled
+
+The [bounded uncertainty construction](v3/derivations/03_logical_uncertainty.md)
+keeps finite mathematical assessments unresolved while a reasoner spends work
+on execution, evidence checking and loss bounds. It can sometimes certify a
+useful comparison before determining every underlying truth value. For
+example, a shared unknown cost can cancel between actions even while their
+individual costs remain unknown.
+
+This makes the consumer's question central. Recovering a probability law,
+settling a cost comparison and preserving enough information for a later
+revision can require different records. The [probability-information analysis](v3/derivations/02_probability_information.md)
+and [refinement and retention derivations](v3/derivations/03_refinement_extensions.md)
+give constructive finite cases and explicit limitations. Their ordinary
+constraint, probability and proof-based counterparts remain part of the
+comparison; a general mathematical learner is a further research objective.
+
 ## Explore the repository
 
 | Material | Location |

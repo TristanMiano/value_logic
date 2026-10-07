@@ -36,34 +36,34 @@ worst-case scalar number in this example.
 
 Let
 
-\[
-K=\operatorname{conv}\{x_1,\ldots,x_s\}\subset\mathbb R^d
-\]
+```math
+K=\mathrm{conv}\{x_1,\ldots,x_s\}\subset\mathbb R^d
+```
 
 be a nonempty compact convex polytope. Let `N` be a fixed known linear
 observation map to `R^m`, and let `c` be a fixed known scalar linear target.
 The decoder sees `z=Nx` and may return any real number. Values at impossible
 observations outside `NK` do not affect this service. Define
 
-\[
+```math
 R_*:=\inf_g\sup_{x\in K}|cx-g(Nx)|,
 \qquad
 D:=\max_{\substack{x^+,x^-\in K\\Nx^+=Nx^-}}
        c(x^+-x^-).
 \tag{A1}
-\]
+```
 
 The ordered pair may be swapped, so the maximum in D equals the maximum
 absolute target difference. Its feasible set is nonempty and compact.
 Then
 
-\[
+```math
 \boxed{
 R_*=\frac D2
 =\min_{\alpha\in\mathbb R,\,\beta\in(\mathbb R^m)^*}
   \sup_{x\in K}|cx-\alpha-\beta Nx|.}
 \tag{A2}
-\]
+```
 
 Both the unrestricted and affine optima are attained. A prescribed output
 range, source coherence, extra computational restrictions or a changing
@@ -85,14 +85,14 @@ error is affine in x, and its absolute value at a convex combination is
 at most the corresponding convex combination of endpoint errors. Its
 optimal radius is therefore the finite LP
 
-\[
+```math
 \begin{array}{ll}
 \text{minimize}&r\\
 \text{subject to}&t_i-\alpha-\beta z_i\le r,\\
 &\alpha+\beta z_i-t_i\le r\quad(i=1,\ldots,s).
 \end{array}
 \tag{A3}
-\]
+```
 
 Here r, alpha and beta are free real variables. The paired inequalities
 already force `r>=0`, so an explicit nonnegativity restriction on r is
@@ -106,7 +106,7 @@ Assign nonnegative dual weights `mu_i` and `nu_i` respectively to the first
 and second inequalities. Taking the infimum of the Lagrangian over the
 free primal variables gives
 
-\[
+```math
 \begin{array}{ll}
 \text{maximize}&\displaystyle\sum_i(\mu_i-\nu_i)t_i\\
 \text{subject to}&\displaystyle\sum_i\mu_i=\sum_i\nu_i=\frac12,\\
@@ -114,7 +114,7 @@ free primal variables gives
 &\mu_i,\nu_i\ge0.
 \end{array}
 \tag{A4}
-\]
+```
 
 For clarity, the free r coefficient requires
 `sum(mu)+sum(nu)=1`; the free alpha coefficient requires equal totals.
@@ -122,10 +122,10 @@ The beta coefficients require equality of observation barycenters.
 
 Every feasible dual point defines
 
-\[
+```math
 x^+=2\sum_i\mu_i x_i,\qquad
 x^-=2\sum_i\nu_i x_i.
-\]
+```
 
 Each is in K because its coefficients are nonnegative and sum to one;
 their observations agree. The dual objective is exactly
@@ -147,10 +147,10 @@ substantial costs. It grants no free computation or undeclared unit map.
 
 For known compact convex `P` and `E`, take
 
-\[
+```math
 x=(p,e)\in K=P\times E,\qquad
 N=[L\ I],\qquad c'=(c,0).
-\]
+```
 
 The exact observation of x is the noisy record `z=Lp+e`. Formula (A2)
 therefore applies to the original scalar target. More generally it applies
@@ -172,9 +172,9 @@ Let `R=D/2`, and put `S=NK`. Select observations
 where `k=dim(aff S)`. An affine function on `aff S` is uniquely specified
 by its values `v_j` at these observations. Restrict them to the compact box
 
-\[
+```math
 v_j\in[cx_j-R,cx_j+R],\qquad j=0,\ldots,k.
-\]
+```
 
 For any finite collection F of further source points, the polytope
 `conv(F union {x_0,...,x_k})` is contained in K. Its indistinguishable-pair
@@ -197,11 +197,11 @@ implementation.
 
 Take objects `x=(z,t)` in
 
-\[
-K=\operatorname{conv}\{(0,0),(1,0),(2,1)\},
+```math
+K=\mathrm{conv}\{(0,0),(1,0),(2,1)\},
 \qquad N(z,t)=z,\qquad c(z,t)=t.
 \tag{A5}
-\]
+```
 
 This is also a direct finite-law example: take `p in Delta_3`, observe the
 known expected loss `z=p_2+2p_3`, and request `t=p_3`. The attainable
@@ -209,9 +209,9 @@ observation-target pairs are exactly this triangle.
 
 For `0<=z<=2`, the target interval is
 
-\[
+```math
 [a(z),b(z)]=[\max(0,z-1),\ z/2].
-\]
+```
 
 Its maximum width is `1/2`, attained at z=1, so `R_*=1/4`. The affine
 decoder `g(z)=z/2-1/4` has residuals `1/4,-1/4,1/4` at the three source
@@ -221,13 +221,13 @@ returns `-1/4` and `3/4`.
 
 The pointwise midpoint is the nonaffine piecewise function
 
-\[
+```math
 m(z)=
 \begin{cases}
 z/4,&0\le z\le1,\\
 3z/4-1/2,&1\le z\le2.
 \end{cases}
-\]
+```
 
 It is source-compatible on every fiber and also has global radius `1/4`.
 In contrast, any **affine** decoder constrained to return a compatible
@@ -256,20 +256,20 @@ indistinguishable pairs which made the positive theorem true.
 
 For a fixed finite target matrix C and unrestricted vector output,
 
-\[
+```math
 \inf_g\sup_{x\in K}\|Cx-g(Nx)\|_\infty
 =\max_j R_j,
-\]
+```
 
 where `R_j` is the scalar radius for row j. Every vector decoder is bounded
 below by each scalar optimum. Conversely choose an optimal affine decoder
 for each row; stacking them gives one affine vector decoder with error
 `max_j R_j`. Equivalently this radius is
 
-\[
+```math
 \frac12\max_{\substack{x,x'\in K\\Nx=Nx'}}
                 \|C(x-x')\|_\infty.
-\]
+```
 
 This makes no guarantee that the vector lies in `C(K intersect N^{-1}{z})`.
 The inherited example `K=Delta_3, N=0, C=I` still has unrestricted radius
@@ -283,12 +283,12 @@ has radius `1/2`.
 
 Retain the existing assumptions exactly:
 
-\[
+```math
 p\in\Delta_3,\quad \delta>0,\quad\epsilon\ge0,\qquad
 z=L_\delta p+e,\quad |e_1|,|e_2|\le\epsilon,
 \quad
 L_\delta=\begin{bmatrix}0&1&1\\0&1&1+\delta\end{bmatrix}.
-\]
+```
 
 The entire product of laws and box errors is admissible. The target is
 `p_3`, the loss of the decoder is scalar absolute error, and delta and
@@ -321,37 +321,37 @@ outputs. The resulting fixed decoder for that experiment is affine.
 
 The best of the three bounds is
 
-\[
+```math
 \min(R_0,R_1,R_2)
 =\frac12\min\left\{1,\frac{4\epsilon}{\delta},
                          \frac{1+2\epsilon}{1+\delta}\right\}.
 \tag{A6}
-\]
+```
 
 ### Explicit matching lower bound, including probability positivity
 
 For completeness, put `a=2 epsilon` and
 
-\[
+```math
 D=\min\{1,2a/\delta,(1+a)/(1+\delta)\},\qquad
 t=\min(0,a-\delta D),
-\]
+```
 
 and choose
 
-\[
+```math
 q=(0,1,0),\qquad p=(-t,1-D+t,D).
-\]
+```
 
 If `delta D<=a`, then `t=0` and all probabilities are nonnegative.
 Otherwise `t=a-delta D`; the bound `(1+delta)D<=1+a` ensures the
 second probability is nonnegative, and `delta D<=2a` ensures `t>=-a`.
 In both cases `|t|<=a` and `|t+delta D|<=a`. Their common observation
 
-\[
+```math
 z=\frac{L_\delta p+L_\delta q}{2}
  =\left(1+\frac t2,\ 1+\frac{t+\delta D}{2}\right)
-\]
+```
 
 uses opposite box errors of size at most epsilon for the two laws. Their
 target separation is D, so every decoder incurs worst error at least

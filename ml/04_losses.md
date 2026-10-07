@@ -168,7 +168,7 @@ For `0<alpha_int<1`, the central interval score is
 
 ```math
 \begin{aligned}
-\operatorname{IS}_{\alpha}(l,u;t)
+\mathrm{IS}_{\alpha}(l,u;t)
 &=(u-l)
  +\frac{2}{\alpha}(l-t)_+
  +\frac{2}{\alpha}(t-u)_+ .
@@ -193,7 +193,7 @@ targets are not in `I_s`. The schema-balanced loss is
  \sum_{i\in I_s}w_i
  \left[
   \lambda_c\ell_{\mathrm{ctr}}(i)
-  +\lambda_I\operatorname{IS}_{\alpha_{\mathrm{int}}}
+  +\lambda_I\mathrm{IS}_{\alpha_{\mathrm{int}}}
      (\widetilde l_i^{\mathrm{sg}},\widetilde u_i^{\mathrm{sg}};
       \widetilde t_i)
  \right].
@@ -500,14 +500,14 @@ separately declared external selection cost `C_i(e)`. For every resolved active
 pair `(e,j)` with unequal costs, define
 
 ```math
-y_{iej}=\operatorname{sign}(C_i(j)-C_i(e))
+y_{iej}=\mathrm{sign}(C_i(j)-C_i(e))
 ```
 
 so `y=+1` means `e` is preferred. With router utilities `u_hat`, use
 
 ```math
 \mathcal L_{\mathrm{rank}}
-=\operatorname{mean}_{(i,e,j)\in\mathcal R}
+=\mathrm{mean}_{(i,e,j)\in\mathcal R}
  \log\left(1+\exp\left[-y_{iej}
  (\widehat u_i(e)-\widehat u_i(j))\right]\right).
 ```
@@ -540,7 +540,7 @@ Let `g_i=1` when the system selects a licensed plan rather than its fallback,
 and let `L_i^sel` and `L_i^F` be target losses. Report jointly
 
 ```math
-\operatorname{Coverage}=\frac1n\sum_i g_i,
+\mathrm{Coverage}=\frac1n\sum_i g_i,
 ```
 
 ```math
@@ -592,7 +592,7 @@ A selective training objective such as
 
 ```math
 \widehat R_{\mathrm{sel}}
-+\lambda_\kappa(\kappa-\widehat{\operatorname{Coverage}})_+^2
++\lambda_\kappa(\kappa-\widehat{\mathrm{Coverage}})_+^2
 ```
 
 may tune the learned reject/router threshold on validation data. It does not
@@ -605,7 +605,7 @@ logic's loss.
 For an accepted adequacy atom, the named dual-use channel is
 
 ```math
-z_a=\operatorname{ReLU}\left(\frac{m_a^{\mathrm{support}}}{\sigma_a}\right),
+z_a=\mathrm{ReLU}\left(\frac{m_a^{\mathrm{support}}}{\sigma_a}\right),
 ```
 
 and is exposed downstream only when the exact symbolic atom state is

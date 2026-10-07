@@ -156,10 +156,10 @@ Use exactly the same discovery and validation arrays as the bounded-search
 comparison. The original hidden activations and affine head are fixed. For
 each role fit a mask `m` with `0 <= m_j <= 1` and `sum(m)=8`, acting as
 
-\[
+```math
 h'=h_b+m\odot(h_d-h_b),\qquad
 z'=z_b+\sum_j v_jm_j(h_{dj}-h_{bj}).
-\]
+```
 
 This family includes every binary size-eight mask. It may act fractionally
 on more than eight neurons; equal total mass is not equal coordinate count.
@@ -237,9 +237,9 @@ replication claim is made for the expanded analysis.
 
 Use the exact identity
 
-\[
+```math
 z_{\rm swap}-z_H=e(b)+r_S(d)-r_S(b),
-\]
+```
 
 where `e=z-z*` and `r_S=sum_{j in S}v_jh_j-ell_role`, to distinguish ordinary
 prediction error from failure to isolate a contribution. Existing F15

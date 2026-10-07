@@ -136,3 +136,13 @@ operator or performance advantage. The small cases show the implemented
 binding/refinement behavior; the principal's proof supplies the general
 conditional argument. P3-N01's contribution disposition is unchanged by
 execution count or the familiar cancellation identity alone.
+
+## 7. Subsequent exact-record interface repair
+
+The source hashes and nine-suite result above bind the original wrapper
+interface. The later [exact-binding repair](exact_binding_repair.md) advances
+the wrapper/report interface to v2 and replaces fingerprint-only historical
+identity checks with full canonical task/source/loss records. Its narrow
+seven-suite attempt and AST delta are recorded separately. The original
+task-certificate attempt remains unchanged; the regret compiler and numerical
+threshold computation retain their original ASTs.

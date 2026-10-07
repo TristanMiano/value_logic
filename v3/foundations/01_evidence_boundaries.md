@@ -18,9 +18,9 @@ relations require their own admitted axioms or checked derivations.
 Let `A` contain every prime atom used by the finite record `D` and the
 currently queried formulas. Define
 
-$$
+```math
 V=\{v\in\{0,1\}^{A}:v\models D\}.
-$$
+```
 
 Then `V` is exactly the restriction to `A` of `PC(D)`. Restricting any world
 in `PC(D)` gives a satisfying assignment. Conversely, extend any satisfying
@@ -33,9 +33,9 @@ formula evaluation, storage and projection costs.
 
 The premises matter when a smaller interface is used. Take
 
-$$
+```math
 D=\{u\lor z,\ u\lor\neg z\}.
-$$
+```
 
 Every satisfying assignment has `u=1`. Exact projection onto `u` is therefore
 `{1}`. Dropping both clauses because each mentions the omitted variable `z`
@@ -46,10 +46,10 @@ perform and charge.
 Also distinguish an outer approximation from found cases. If the true target
 family is `V` and a certified set `Vplus` contains `V`, then
 
-$$
+```math
 \inf_{v\in V^+}\ell(v)\le\inf_{v\in V}\ell(v),\qquad
 \sup_{v\in V}\ell(v)\le\sup_{v\in V^+}\ell(v).
-$$
+```
 
 These give conservative bounds when the families are nonempty and the bounds
 are defined in the stated extended-value domain. A sample `F` contained in
@@ -71,9 +71,9 @@ separates the quantifiers; it is deliberately not a strong practical baseline.
 Use atoms `A_1,A_2,...`, a consistent theory containing every `A_k`, and the
 finite record
 
-$$
+```math
 D_n=\{A_k:2^k\le n\}.
-$$
+```
 
 This witness uses a propositional comparison language; it does not implement
 the full arithmetic reference language. It separates the stated abstract
@@ -86,9 +86,9 @@ formula by finite averaging over the undisclosed atoms it contains. This is
 a computable rational pricing, coherent with `D_n`. Every fixed formula
 eventually gets its correct value in the all-true-atom world. Yet
 
-$$
+```math
 P_n(A_n)=1/2
-$$
+```
 
 at every date, because `2^n>n`. Correctness for each fixed query does not give
 correctness on this efficiently generated moving sequence.
@@ -98,10 +98,10 @@ of `A_(t_j)` on day `t_j`. The next purchase occurs only when the previous
 claim is disclosed. With `k` purchases made, all but the last holding have
 payoff one in every currently plausible world. Wealth is
 
-$$
+```math
 \frac{k-1}{2}+W(A_{t_k})-\frac12
 \in\left\{\frac{k-2}{2},\frac{k}{2}\right\}.
-$$
+```
 
 It is uniformly at least `-1/2` and unbounded above as `k` grows. The trader
 has constant continuous coefficients and can decide purchase-day membership
@@ -140,11 +140,11 @@ actual current prices of `Q`. Its cash account can differ only at `K`.
 Writing `a_(i,phi)` for the original quantity, the cumulative wealth difference
 has absolute value bounded by the fixed finite constant
 
-$$
+```math
 C=\sum_{(i,\varphi)\in K}
 \left|a_{i,\varphi}(P)
 \bigl(P_i(\varphi)-Q_i(\varphi)\bigr)\right|.
-$$
+```
 
 Uniform lower boundedness and unbounded upper wealth are preserved by this
 bounded difference. Exploitation transfers in both directions by exchanging

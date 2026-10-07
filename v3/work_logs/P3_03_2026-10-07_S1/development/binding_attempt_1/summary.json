@@ -1,0 +1,161 @@
+{
+  "assertions": 35,
+  "attempt": 1,
+  "concurrent_research_credit_ns": 0,
+  "core_sha256": "e8ac9bfda4addd9853a3b7ac174062a1152c8ec25cf6d2d09274d463c7d0419e",
+  "end": {
+    "monotonic_ns": 5826683314841,
+    "process_ns": 106284213,
+    "utc": "2026-10-07T16:16:30.698902+00:00"
+  },
+  "evaluator_sha256": "b5ecd179546c94173bc237fef12039340071642a6590f8229e2cc8f731e870f3",
+  "host_elapsed_ns": 53323377,
+  "host_process_ns": 51879551,
+  "interpretation": "Exact represented-record identity diagnostics; no authentication, numeric proof verification, SHA collision discovery or broad numerical rerun.",
+  "schema": "value_logic.P3-03.binding.summary.v1",
+  "stage": "DEVELOPMENT",
+  "start": {
+    "monotonic_ns": 5826629991464,
+    "process_ns": 54404662,
+    "utc": "2026-10-07T16:16:30.645578+00:00"
+  },
+  "status": "PASS",
+  "suites": [
+    {
+      "assertions": 6,
+      "detail": {
+        "counter_collision": true,
+        "fingerprint_substitution_rejected": true
+      },
+      "name": "source_records",
+      "status": "PASS"
+    },
+    {
+      "assertions": 3,
+      "detail": {
+        "loss_substitution_rejected": true
+      },
+      "name": "loss_records",
+      "status": "PASS"
+    },
+    {
+      "assertions": 7,
+      "detail": {
+        "objective_rejected": true,
+        "source_loss_task_copies": true,
+        "withdrawal_rejected": true
+      },
+      "name": "historical_copies_and_revision",
+      "status": "PASS"
+    },
+    {
+      "assertions": 4,
+      "detail": {
+        "core_and_task_reuse": true
+      },
+      "name": "refinement_reuse",
+      "status": "PASS"
+    },
+    {
+      "assertions": 5,
+      "detail": {
+        "changed_selection_rejected": true,
+        "full_task_required": true
+      },
+      "name": "task_records",
+      "status": "PASS"
+    },
+    {
+      "assertions": 5,
+      "detail": {
+        "altered_numeric_fields_not_verified": true,
+        "audit_only": true,
+        "legacy_interface_rejected": true
+      },
+      "name": "non_authentication",
+      "status": "PASS"
+    },
+    {
+      "assertions": 5,
+      "detail": {
+        "v3/checks/03_bounded_logic.py": {
+          "added_functions": [
+            "Kernel.source_record"
+          ],
+          "after_sha256": "e8ac9bfda4addd9853a3b7ac174062a1152c8ec25cf6d2d09274d463c7d0419e",
+          "before_sha256": "ae757bee58089b1229cdd2e123e4650be704f04729b2fff081238c988a916247",
+          "changed_functions": [
+            "Kernel.report",
+            "Kernel.report_is_current",
+            "Kernel.snapshot",
+            "Kernel.source_identity"
+          ],
+          "unchanged_fragments": {
+            "Kernel.report.before_result": "0900e0fa5b25ce77d4e8cbab163234bc4a83bbecd1139375434ea1036860be76"
+          },
+          "unchanged_functions": [
+            "Kernel.__init__",
+            "Kernel._effective",
+            "Kernel._event",
+            "Kernel._job_step",
+            "Kernel._new_job",
+            "Kernel._overlay",
+            "Kernel._source_step",
+            "Kernel._validate_constraint",
+            "Kernel.add_assumption",
+            "Kernel.change_loss",
+            "Kernel.cover_identity",
+            "Kernel.k",
+            "Kernel.run",
+            "Kernel.withdraw",
+            "admitted_data",
+            "bounded_arithmetic",
+            "canonical",
+            "digest",
+            "integer",
+            "interval",
+            "label",
+            "rational",
+            "receipt",
+            "tri",
+            "validate_expr",
+            "validate_query",
+            "vm_finished",
+            "vm_initial",
+            "vm_transition"
+          ]
+        },
+        "v3/checks/03_task_certificate.py": {
+          "added_functions": [
+            "TaskCertificate._task_record"
+          ],
+          "after_sha256": "5e7d7d669f4243dac0a0df77e429b86ac2439b7351dab70965702ccdc71b1e15",
+          "before_sha256": "6735a7be6819d44ae9d05de497c613595ef7de212ed41f070354d6e0bc27ec75",
+          "changed_functions": [
+            "TaskCertificate.__init__",
+            "TaskCertificate.certificate",
+            "TaskCertificate.certificate_is_current"
+          ],
+          "unchanged_fragments": {
+            "TaskCertificate.__init__.compiler_to_core": "98d0fb163be07d0d836aa15b5d721c765e8febfab1d2c5af5a3efeb3f5490716",
+            "TaskCertificate.certificate.before_result": "36574cfbae210b98f8b44cdb1535b9e4361e6718154150025f15acd3ddb3ecf2"
+          },
+          "unchanged_functions": [
+            "TaskCertificate._admit",
+            "TaskCertificate._guard",
+            "TaskCertificate._hash",
+            "TaskCertificate._same",
+            "TaskCertificate.accounting",
+            "TaskCertificate.add_assumption",
+            "TaskCertificate.run",
+            "TaskCertificate.withdraw"
+          ]
+        }
+      },
+      "name": "ast_delta",
+      "status": "PASS"
+    }
+  ],
+  "traces_sha256": "de534417f20f1ab10685757f10e37adfdd9c15cfa8effd1973820c705ee380e8",
+  "wrapper_sha256": "5e7d7d669f4243dac0a0df77e429b86ac2439b7351dab70965702ccdc71b1e15"
+}

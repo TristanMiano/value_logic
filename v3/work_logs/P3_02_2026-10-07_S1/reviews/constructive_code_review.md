@@ -92,10 +92,10 @@ empty-row behavior is also appropriate: only the zero target has an
 empty representation.
 
 The repair code uses this routine on a second transpose to obtain
-directions \(h_j\) satisfying
-\[
+directions $`h_j`$ satisfying
+```math
 B h_j=0,\qquad Q_i h_j=\delta_{ij}.
-\]
+```
 The dimensions match: the coefficient vector returned by that call has
 one entry per state, rather than one entry per source row. Redundant old
 rows impose consistent zero right-hand sides and do not invalidate the
@@ -104,17 +104,17 @@ construction.
 ### Positive target and full-law evidence
 
 For known scale, the supplied coefficients prove
-\[
+```math
 c=\alpha\mathbf1^\top+\beta M,
-\]
-where \(M=L\) or the differences from one retained reference row,
+```
+where $`M=L`$ or the differences from one retained reference row,
 depending on whether the offset is unknown.
 
 For unknown positive scale, the certificate proves both
-\[
+```math
 uM=\mathbf1^\top,\qquad wM=c.
-\]
-The corresponding observed linear forms are \(s\) and \(s\,cp\).
+```
+The corresponding observed linear forms are $`s`$ and $`s\,cp`$.
 Their ratio is justified by the shared positive-scale premise.
 Constant targets correctly bypass calibration altogether.
 
@@ -132,9 +132,9 @@ basis direction. The uniform interior law is sufficient in this branch.
 
 For unknown scale, a hidden direction need not sum to zero. The relevant
 change in a normalized target is
-\[
+```math
 ch-(\mathbf1^\top h)cp.
-\]
+```
 If the direction has zero total, any nonzero value works at the uniform
 law. If its total is nonzero, this expression cannot vanish at every law
 in the generator's candidate bank for a nonconstant target: the uniform
@@ -142,12 +142,12 @@ law and its midpoint mixtures with every vertex affinely span the simplex.
 Thus the finite bank resolves an exceptional uniform choice.
 
 For a selected law and direction, the step
-\[
+```math
 \tau=\frac{\min_i p_i}{2\max_i|h_i|}
-\]
+```
 is positive because a nullspace basis vector is nonzero. It gives
-\(x=p+\tau h>0\). Put \(T=\mathbf1^\top x>0\),
-\(q=x/T\), and, when scale is unknown, \(s_q=T\). These are interior
+$`x=p+\tau h>0`$. Put $`T=\mathbf1^\top x>0`$,
+$`q=x/T`$, and, when scale is unknown, $`s_q=T`$. These are interior
 normalized laws with positive admissible scales. The target-separation
 test is exactly the numerator of the normalized target difference.
 
@@ -160,45 +160,45 @@ both records and both target values before returning the witness.
 ### A useful hand-derived hostile fixture
 
 For two states, let
-\[
+```math
 L=\begin{bmatrix}1&0\\0&1\end{bmatrix},\quad
 c=(1,0),
-\]
+```
 with both common scale and offset unknown. The effective hidden direction
-\(h=(1,1)\) produces no normalized change at the uniform law.
+$`h=(1,1)`$ produces no normalized change at the uniform law.
 The next interior candidate does:
-\[
+```math
 p=(3/4,1/4),\quad q=(7/10,3/10),\quad
 s_p=1,\quad s_q=5/4,\quad b_p=0,\quad b_q=-1/8.
-\]
-Both records are \((3/4,1/4)\), but the target is respectively \(3/4\)
-and \(7/10\). This is a useful harness case for the candidate-bank branch;
+```
+Both records are $`(3/4,1/4)`$, but the target is respectively $`3/4`$
+and $`7/10`$. This is a useful harness case for the candidate-bank branch;
 the reviewer did not execute it.
 
 ## 5. Repair construction and minimality evidence
 
-The generator's base is \(M\) for unknown scale and
-\([\mathbf1^\top;M]\) for known scale. If at least one target is nonconstant,
-its required rows are \([\mathbf1^\top;C]\) in the unknown-scale contracts
-and \(C\) otherwise. The constant-only and empty-target branches correctly
+The generator's base is $`M`$ for unknown scale and
+$`[\mathbf1^\top;M]`$ for known scale. If at least one target is nonconstant,
+its required rows are $`[\mathbf1^\top;C]`$ in the unknown-scale contracts
+and $`C`$ otherwise. The constant-only and empty-target branches correctly
 require zero repair even when other law information is absent.
 
-The selected rows \(Q\) are required rows that successively increase rank
+The selected rows $`Q`$ are required rows that successively increase rank
 modulo the old base. Their hidden-direction identity pairing certifies
 independence modulo that base. The pairing supplies a checkable lower
 dimension requirement without requiring the verifier to reproduce rank
 elimination.
 
-With an existing unknown-offset reference \(\ell_0\), the proposed raw
-queries are \(\ell_0+Q_i\), so differencing against its old observed value
+With an existing unknown-offset reference $`\ell_0`$, the proposed raw
+queries are $`\ell_0+Q_i`$, so differencing against its old observed value
 gives the intended effective rows. With no old row and an unknown offset,
 the code first adds the zero-loss reference and then the selected rows.
-That one additional raw query is appropriate because \(k\) raw values with
-an unrestricted common offset supply at most \(k-1\) effective differences.
+That one additional raw query is appropriate because $`k`$ raw values with
+an unrestricted common offset supply at most $`k-1`$ effective differences.
 All added queries explicitly share the original law and nuisance parameters.
 
 For example, an empty old menu and one nonconstant binary target require
-respectively \(1,2,2,3\) additional raw queries in the known,
+respectively $`1,2,2,3`$ additional raw queries in the known,
 unknown-offset, unknown-scale and unknown-affine contracts. Those are
 mathematical implications of the stated free-row model, not run results.
 A preexisting zero-loss row is already a reference and must not be charged

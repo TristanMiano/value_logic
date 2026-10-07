@@ -48,10 +48,10 @@ family has rows `Q ∈ R^{r×n}` and requests `Qp`.
 
 For **every** source set, a decoder from `y` exists exactly when
 
-\[
+```math
 Lp=Lp'\quad\Longrightarrow\quad Qp=Qp'
 \qquad(p,p'\in D).
-\]
+```
 
 This is constancy on observation fibers, with no computational-efficiency
 claim. It is the same indistinguishability principle as
@@ -60,10 +60,10 @@ claim. It is the same indistinguishability principle as
 For a nonempty **convex** source, let `V=span(D−D)` be its actual affine
 direction space. Then the condition is equivalently
 
-\[
+```math
 K:=V\cap\ker L\ \subseteq\ \ker Q.
 \tag{R1}
-\]
+```
 
 Necessity uses a relative-interior law: sufficiently small opposite
 perturbations along any `v∈K` remain admissible and have the same retained
@@ -74,10 +74,10 @@ In this case the decoder can be affine. Fix `p₀∈D`; the relation
 
 On the unrestricted normalized simplex this becomes
 
-\[
-\operatorname{row}Q\subseteq
-\operatorname{row}\begin{bmatrix}\mathbf1^\top\\L\end{bmatrix},
-\]
+```math
+\mathrm{row}Q\subseteq
+\mathrm{row}\begin{bmatrix}\mathbf1^\top\\L\end{bmatrix},
+```
 
 and full-law recovery is the special case `Q=I_n`, or rank `n` of the
 displayed augmented matrix. Normalization is side information; it must not
@@ -94,11 +94,11 @@ necessity is not automatically a theorem for every admitted context.
 
 For a convex source, put
 
-\[
+```math
 d_Q=\dim Q(K)
-=\operatorname{rank}([L;Q]|_V)-\operatorname{rank}(L|_V).
+=\mathrm{rank}([L;Q]|_V)-\mathrm{rank}(L|_V).
 \tag{R2}
-\]
+```
 
 Exactly `d_Q` further unrestricted exact linear measurements suffice and
 are necessary in the worst case to recover the target expectations.
@@ -134,10 +134,10 @@ prices nor minimum execution cost.
 For `k` reset procedures, worlds record which procedures fail. Let
 `m_S=P(S all fail)` and retain all old order means
 
-\[
+```math
 C_\pi(c,M)=\sum_{j=1}^k c_{\pi_j}
 m_{\{\pi_1,\ldots,\pi_{j-1}\}}+M m_{[k]}.
-\]
+```
 
 This is a finite known loss matrix in the joint world law, equivalently a
 linear map of its invertible Boolean moment coordinates. The fixed-law,
@@ -227,9 +227,9 @@ cannot replace `E[c1_E]` by `E[c]P(E)` without the necessary relationship.
 
 For a closed convex source, retain the complete compatible set
 
-\[
+```math
 \mathcal P_y=\{p\in D:Lp=y\},
-\]
+```
 
 or its justified noisy analogue. Each target's exact identification interval
 is obtained by minimizing/maximizing that row on this set. With rational
@@ -277,10 +277,10 @@ An affine recovery identity `q=α1ᵀ+βᵀL` gives
 `q p=α+βᵀy`. If justified measurement errors satisfy
 `|ŷ_i−(Lp)_i|≤η_i`, then
 
-\[
+```math
 |\alpha+\beta^\top\hat y-qp|
 \le\sum_i|\beta_i|\eta_i.
-\]
+```
 
 Algebraic recoverability need not be stable. The reset repair divides by
 `ε`, so two separately perturbed means with errors at most `η` can incur

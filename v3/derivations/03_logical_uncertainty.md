@@ -1,16 +1,20 @@
 # P3-03 — Bounded logical uncertainty
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. October 7, 2026 UTC.
-Status: **IN PROGRESS — finite construction exercised; Research90 and closing assessment pending**.
+Status: **COMPLETE — finite bounded construction and scoped refinement/retention results**.
+Research90: **90.048612847917 measured D+L+E minutes**; exact records in the
+[closing actuals](../work_logs/P3_03_2026-10-07_S1/actuals.json).
 Source: P3-A at `c573b58165826b30ccbb78107ea752169531c45a`.
 [Session and prospective contract](../work_logs/P3_03_2026-10-07_S1.md).
 
-## 1. Target and provisional construction
+## 1. Target and construction
 
 A bounded reasoner can retain a set of possibilities for deterministic
 mathematical answers while computing more evidence. The present construction
 makes that process explicit for a finite active fragment. Its loss reports
-are conditional bounds over represented possibilities. It assigns no default
+are conditional bounds over represented possibilities. Improving those bounds
+is a specific service; whether the improvement pays for its computation is
+a separate decision question for P3-07. It assigns no default
 point probabilities to unresolved claims.
 
 The starting choice is an **anytime outer cover** of partial Boolean assignments,
@@ -31,72 +35,75 @@ or learning guarantee follows from their names or from this choice.
 ## 2. Semantic source, received evidence and displayed state
 
 Fix one episode's finite list of versioned atoms
-$Q=(q_1,\ldots,q_k)$. Their intended answers form a deterministic vector
-$y\in\{0,1\}^k$. The method has the finite input descriptions and whatever
-computations or receipts its access contract admits; it is not given $y$.
+$`Q=(q_1,\ldots,q_k)`$. Their intended answers form a deterministic vector
+$`y\in\{0,1\}^k`$. The method has the finite input descriptions and whatever
+computations or receipts its access contract admits; it is not given $`y`$.
 An atom may be a bounded execution claim, a selected arithmetic sentence or a
 Boolean combination with an explicit translation. The implementation must
 identify its smaller actually executable class.
 
-Let $H$ be the active finite set of **typed, received and version-matched**
+Let $`H`$ be the active finite set of **typed, received and version-matched**
 Boolean constraints on these atoms. The prototype distinguishes caller-supplied
 conditional assumptions from signed answers admitted by its bounded VM checker.
+Here a sign is a positive or negative answer, not a digital signature.
 An assumption's dependency labels support withdrawal; they do not verify its
 truth or prove its consequent. Define, in the metatheory,
 
-$$
+```math
 F(H)=\{x\in\{0,1\}^k:h(x)=1\text{ for every }h\in H\}.
-$$
+```
 
 Writing this set does not grant its enumeration or a membership/consistency
 oracle. The interpreted-answer bridge is explicit: **every active constraint
-used for that bound must be true of $y$**. Caller assumptions therefore make
+used for that bound must be true of $`y`$**. Caller assumptions therefore make
 the result conditional unless that bridge is established separately. Checked
 VM facts use the stated operational semantics and its interpreter-correctness
 bridge. A fallible forecast does not become a hard fact by being numerically
 precise. The prototype does not supply a learned point-forecast channel.
 
-A finite cube $c\in\{0,1,*\}^k$ denotes all its Boolean completions, written
-$[c]$. The current cover $C$ denotes
+A finite cube $`c\in\{0,1,*\}^k`$ denotes all its Boolean completions, written
+$`[c]`$. The current cover $`C`$ denotes
 
-$$
+```math
 A(C)=\bigcup_{c\in C}[c].
-$$
+```
 
-The central invariant is $F(H)\subseteq A(C)$. In particular, when the hard
-premises are sound for the intended interpretation, $y\in A(C)$. The cover
-need not be exactly $F(H)$, and its cases need not extend to full models of
+The central invariant is $`F(H)\subseteq A(C)`$. In particular, when the hard
+premises are sound for the intended interpretation, $`y\in A(C)`$. The cover
+need not be exactly $`F(H)`$, and its cases need not extend to full models of
 arithmetic. It records the received finite information and the work performed.
 
 In particular, a supplied program has a determinate bounded-execution answer
 even before this reasoner computes it. The opposite Boolean assessment can
-remain in $F(H)$ until the corresponding consequence has been checked. Such
+remain in $`F(H)`$ until the corresponding consequence has been checked. Such
 assessments represent bounded unresolved information; they are **not advertised
 as complete logically possible worlds** under the full operational theory.
 Calling their finite mixture coherent below always means relative to the
 received finite constraints, with this restricted scope retained.
 
-Initially $C=\{(*,\ldots,*)\}$, a finite description of every Boolean answer
+Initially $`C=\{(*,\ldots,*)\}`$, a finite description of every Boolean answer
 vector. Splitting and deletion will preserve pairwise disjoint cubes. This
 makes coverage accounting explicit; neither disjointness nor compact storage
 supplies a probability distribution over the cubes or their completions.
 
 Each displayed numerical report names the atom/source epoch, objective and
 unit versions, used evidence, cover version, bound type and resource account.
-Historical reports remain immutable. A valid earlier enclosure can be retained
+The kernel returns detached historical copies and does not revise those earlier
+outputs. Caller-owned JSON can still be edited; this is not an authentication
+claim. A valid earlier enclosure can be retained
 for a stronger same-scope source, although dependent current estimates must be
 updated or marked stale when required by their report contract.
 
 ## 3. Interrupted search: the first decisive check
 
-Suppose one unresolved atom $q$ has loss $f(x)=100x$. A search visits only
-$x=0$ and stops. Reporting the visited minimum and maximum, both zero, would
-miss the still admissible completion $x=1$. It is therefore invalid as a bound
+Suppose one unresolved atom $`q`$ has loss $`f(x)=100x`$. A search visits only
+$`x=0`$ and stops. Reporting the visited minimum and maximum, both zero, would
+miss the still admissible completion $`x=1`$. It is therefore invalid as a bound
 over the whole source. A visited witness supplies an inner approximation and
 cannot by itself certify a universal upper bound.
 
 The proposed cover retains either the unsplit cell `*`, or both children `0`
-and `1`. Its correct initial loss interval is $[0,100]$. Visiting the first
+and `1`. Its correct initial loss interval is $`[0,100]`$. Visiting the first
 child does not discard the second. Only a sound constraint excluding the
 second child, or a separately justified loss enclosure there, can improve the
 upper endpoint. The same issue appears with a searched list of arithmetic
@@ -138,16 +145,16 @@ Preparing two children in a private work area is allowed; deleting the parent
 before their coverage is secured is not. A resource cap may stop progress or
 force a safe coarsening; it cannot justify dropping a live branch.
 
-**U03-1 — outer-cover preservation (adapted, proved here).** For fixed $H$, the initial cover contains $F(H)$.
+**U03-1 — outer-cover preservation (adapted, proved here).** For fixed $`H`$, the initial cover contains $`F(H)`$.
 A split preserves its denotation. A certified prune removes no member of
-$F(H)$. Thus any finite sequence of completed operations preserves coverage.
+$`F(H)`$. Thus any finite sequence of completed operations preserves coverage.
 An interruption returning a committed snapshot does also. If new sound
 constraints are added, their compatible set is a subset of the previous one,
 so the previous cover remains an outer cover pending further refinement.
 
-The literal overlay is safe for the same reason. Let $L(H)$ be the set of
-assignments satisfying every direct literal in $H$. Each report uses
-$A(C)\cap L(H)$, and $F(H)$ is a subset of that intersection. Intersecting the
+The literal overlay is safe for the same reason. Let $`L(H)`$ be the set of
+assignments satisfying every direct literal in $`H`$. Each report uses
+$`A(C)\cap L(H)`$, and $`F(H)`$ is a subset of that intersection. Intersecting the
 same literal set with disjoint cubes preserves disjointness. An empty effective
 cover certifies finite conflict; it need not wait for the physical queue to
 delete all incompatible cells. This is a proof from the maintained invariant,
@@ -159,17 +166,17 @@ Use known rational constants, atom coordinates, addition, known rational
 scaling, and the admitted min/max or residual operations. Their exact meanings
 are finite piecewise-affine on real coordinate extensions; Boolean inputs are
 a finite special case. An interval extension evaluates each cell coordinate
-as $[0,0]$, $[1,1]$ or $[0,1]$ and propagates outward bounds through the term.
+as $`[0,0]`$, $`[1,1]`$ or $`[0,1]`$ and propagates outward bounds through the term.
 Negative rational coefficients swap the endpoints. Jointly uncertain products
 and general division are not silently added.
 
-If $\ell_f(c)\le f(x)\le u_f(c)$ for all $x\in[c]$, then a nonempty cover
+If $`\ell_f(c)\le f(x)\le u_f(c)`$ for all $`x\in[c]`$, then a nonempty cover
 supplies the conditional bound
 
-$$
+```math
 \min_{c\in C}\ell_f(c)\;\le\; f(y)\;\le\;
 \max_{c\in C}u_f(c).
-$$
+```
 
 The source, not the use of interval notation, warrants this statement. An
 empty exact source means conflict under the admitted constraints; it does not
@@ -187,15 +194,15 @@ function is constant.
 
 For completeness, its nontrivial endpoint rules are
 
-$$
+```math
 I_{f+g}=[\ell_f+\ell_g,u_f+u_g],\qquad
 I_{\min(f,g)}=[\min(\ell_f,\ell_g),\min(u_f,u_g)],
-$$
+```
 
-$$
+```math
 I_{\max(f,g)}=[\max(\ell_f,\ell_g),\max(u_f,u_g)],\qquad
 I_{\max(0,f-g)}=[\max(0,\ell_f-u_g),\max(0,u_f-\ell_g)].
-$$
+```
 
 Each rule encloses pointwise evaluation. Raising input lower endpoints and
 lowering upper endpoints has the same effect on output endpoints; for a
@@ -208,14 +215,14 @@ cover is nonempty. A conflict or arithmetic limit has its own status and supplie
 no replacement numeric interval.
 
 The evaluator is compositional rather than an affine simplifier. Thus even
-$x-x$ can initially receive a loose interval. Canonically combining shared
+$`x-x`$ can initially receive a loose interval. Canonically combining shared
 affine coefficients is an available ordinary improvement; its algebra and
 cost must be included if selected. The current proof does not call a loose
 structural enclosure an exact affine extremum.
 
 ## 6. Coherence, feasibility and the optional probability adapter
 
-The nonempty outer cover need not certify $F(H)$ nonempty: it may still contain
+The nonempty outer cover need not certify $`F(H)`$ nonempty: it may still contain
 only assignments whose incompatibility has not been processed. The status is
 **feasibility unresolved** until a full satisfying assignment is checked or a
 valid exhaustive exclusion establishes conflict. A sound empty cover proves
@@ -223,49 +230,61 @@ finite conflict only with the initial coverage and valid transition record.
 No numeric loss interval is issued from a certified empty cover.
 
 Nor may arbitrary probability weights on an unfinished cover be called coherent
-with every accepted constraint. Some covered cases may still violate $H$.
-A coherent adapter must retain $H$ intensionally in its admissible support, or
+with every accepted constraint. Some covered cases may still violate $`H`$.
+A coherent adapter must retain $`H`$ intensionally in its admissible support, or
 use a completely filtered source. Neither description supplies free inference.
-After a nonempty finite source $F$ is established, the ordinary credal adapter
-containing all normalized laws on $F$ has
+After a nonempty finite source $`F`$ is established, the ordinary credal adapter
+containing all normalized laws on $`F`$ has
 
-$$
+```math
 \min_{p\in\Delta(F)}\sum_{x\in F}p_x f(x)=\min_{x\in F}f(x),\qquad
 \max_{p\in\Delta(F)}\sum_{x\in F}p_x f(x)=\max_{x\in F}f(x).
-$$
+```
 
 Every expectation lies between the extreme table entries; point masses attain
 them. This inherited finite identity provides a comparison semantics for the
 same bounds, not a chosen subjective weighting or efficient solver.
 
+A compositional enclosure endpoint is also not automatically an exact
+coherent lower or upper expectation functional. On one unresolved Boolean bit,
+the expression $`x+(-x)`$ initially receives $`[-1,1]`$, while the literal
+constant-zero expression receives $`[0,0]`$. Both enclosures are sound. But
+under every normalized law the expected value, and the all-laws lower and
+upper expectations, of either identically zero function are exactly zero.
+Treating the first lower endpoint as that exact semantic functional would
+therefore be wrong. These reports are expression- and computation-specific
+certified enclosures; they need not be invariant under a mathematical rewrite
+until that rewrite or a tighter evaluation has been paid for and justified.
+The exact-minimum recovery result in U03-12 retains precisely this distinction.
+
 The native real-box embedding is likewise an enclosure. On Boolean inputs,
-$\min(x,1-x)$ is zero, whereas its real-box extension can reach $1/2$ on
-$[0,1]$. The ordinary interval evaluator may be looser still until it splits
+$`\min(x,1-x)`$ is zero, whereas its real-box extension can reach $`1/2`$ on
+$`[0,1]`$. The ordinary interval evaluator may be looser still until it splits
 the cell. These are three different objects: Boolean source, real-box source,
 and a compositional interval calculation over the box.
 
 ### 6.1 Exact polarity and the phase-two interface
 
-The local notation has an explicit translation to phase two. Here $x_i=1$
-means that the answer to $q_i$ is true. Phase two's Boolean formula loss is
-zero for true, so its formula for that atom uses $1-x_i$. Negation maps to
+The local notation has an explicit translation to phase two. Here $`x_i=1`$
+means that the answer to $`q_i`$ is true. Phase two's Boolean formula loss is
+zero for true, so its formula for that atom uses $`1-x_i`$. Negation maps to
 one minus the formula loss; conjunction and disjunction map to max and min,
 respectively. That is the inherited Boolean embedding with the indicator
 coordinate complemented, not a change in what a claim means.
 
-The prototype's `resid(f,g)` means the positive difference $\max(0,f-g)$.
-Phase two uses $\mathrm{res}(a,b)=\max(0,b-a)$. Therefore the native
-translation is **$\mathrm{res}(g,f)$**, with reversed arguments. Addition,
+The prototype's `resid(f,g)` means the positive difference $`\max(0,f-g)`$.
+Phase two uses $`\mathrm{res}(a,b)=\max(0,b-a)`$. Therefore the native
+translation is **$`\mathrm{res}(g,f)`$**, with reversed arguments. Addition,
 known rational scaling and pointwise min/max retain their numerical meanings
 in compatible units. This convention prevents an apparently harmless operator
 name from reversing a claimed bound.
 
 For a cube, fix its declared zero/one coordinates and let each star range over
-the real interval $[0,1]$. These are rational affine case constraints, so the
+the real interval $`[0,1]`$. These are rational affine case constraints, so the
 resulting finite union of boxes is a phase-two source description. It contains
 the Boolean completions. A correctly received native bound over every such
 box therefore bounds the original finite assessments by containment. The
-reverse implication need not hold: the Boolean function $\min(x,1-x)$ already
+reverse implication need not hold: the Boolean function $`\min(x,1-x)`$ already
 separates the sources. Exact singleton cases remove that particular relaxation.
 
 This is a mathematical adapter. The present prototype does not emit native
@@ -287,11 +306,11 @@ The executable investigation selects finite register-machine programs with
 nonnegative integer registers and instructions for increment, zero-test/decrement,
 unconditional jump and Boolean halt. A query asks whether a specified program,
 on its stated input, halts with its requested bit within its specified horizon
-$b$. Executing a halt instruction consumes one VM transition. A horizon of zero
+$`b`$. Executing a halt instruction consumes one VM transition. A horizon of zero
 therefore returns false in this chosen semantics. Invalid programs are rejected
 as invalid inputs, not assigned false mathematical answers.
 
-The reasoner's budget $B$ is different: it bounds the number of scheduled kernel
+The reasoner's budget $`B`$ is different: it bounds the number of scheduled kernel
 transactions in one call. Producer and checking VM states are retained between
 calls. A stopped VM job yields no answer. Completing the query horizon without
 the requested halt refutes this bounded proposition. An unbounded halting
@@ -355,10 +374,10 @@ capacity; soundness can survive a cap even when exactness cannot.
 | Input boundary | At most 1,000,000 encoded bytes, 100,000 traversal nodes, depth 64; caller construction is outside the method |
 | One scheduling call | At most its requested allowance, itself at most 1,000,000 transactions; partial states persist across calls |
 
-For $m$ current cells, $h$ constraints, at most $s$ nodes per constraint/loss,
-and $k$ coordinates, a source inspection visits at most $hs$ Boolean nodes
-and a report visits at most $ms$ loss nodes, plus overlay, coordinate and
-identity work. The naive withdrawal closure may require up to $h$ passes over
+For $`m`$ current cells, $`h`$ constraints, at most $`s`$ nodes per constraint/loss,
+and $`k`$ coordinates, a source inspection visits at most $`hs`$ Boolean nodes
+and a report visits at most $`ms`$ loss nodes, plus overlay, coordinate and
+identity work. The naive withdrawal closure may require up to $`h`$ passes over
 the dependency records. These finite envelopes are deliberately heterogeneous.
 The instrumented counters describe selected work units; they are not a full
 machine-instruction account. Embedded report/snapshot counters end before that
@@ -377,6 +396,55 @@ An added hard constraint shrinks the intended source; the old cover can remain
 sound while its work queue is refreshed. Scope withdrawal instead can enlarge
 the source. This asymmetry determines the repair policy below.
 
+### 7.3 Exact records, audit fingerprints and checked-receipt identities
+
+The current kernel version is `finite-cover-v2`, with VM `nat-register-v1`
+and report format `finite-cover-report-v2`. Its applicability helper compares
+canonical **complete source and loss records**, together with the declared
+scope, versions and epochs. Hashes remain useful audit references; their
+numeric equality is not an axiom of exact source equality. The task wrapper
+similarly binds the complete supplied action catalogue, chosen action,
+tolerance, units, objective expressions and wrapper version. Retaining only
+an objective name or a matching digest field would not establish this service.
+
+There is a distinct internal-identity obligation. The admitted query list is
+fixed and indexed for the episode; accepted receipt identifiers include this
+immutable index, as `vm:{i}:{digest(q)}`. Different positions have different
+keys even if their audit suffixes agree. The `vm:` namespace is reserved from
+caller assumptions. Withdrawing a key removes its own checked fact and
+transitively dependent records, while independent checked facts survive.
+This requires neither a probabilistic hash-collision argument nor changing
+the numerical refinement algorithm.
+
+The distinction arose from a concrete review finding. A previous digest-only
+key could overwrite a different active constraint if those digest fields
+coincided. The earlier constraint might already have justified pruning, so
+replacing it could enlarge the declared source without restoring coverage.
+The [preserved pre/post diagnostic](../work_logs/P3_03_2026-10-07_S1/development/receipt_identity_repair/attempt_1/summary.json)
+reproduces that failure using a deliberate field substitution and verifies
+indexed coexistence and independent withdrawal. It is not a discovered
+SHA-256 collision. The repaired code is the current theorem-to-implementation
+reference; historical attempts keep their original code identities.
+
+`report_is_current` answers whether the represented warrant still applies.
+It does **not** prove that a supplied numerical bound was computed correctly,
+authenticate an editable JSON object, or establish its exact execution lineage.
+Changing only a returned numeric field can leave this applicability check
+true. Numerical soundness follows from genuine kernel execution and U03-1/2;
+a portable untrusted certificate checker would be an additional implementation.
+Source and objective records are copied into reports, so subsequent legitimate
+API updates do not mutate the earlier copies. Refining a cover at unchanged
+source and objective can leave an earlier conservative bound applicable even
+when a tighter report is now available.
+
+Identity serialization/comparison is measured boundary work outside `run`'s
+transaction allowance. This convenience applicability helper is not advertised
+as a constant-cost parser or an adversarial JSON validation service. The actual
+bounded input admission and checked VM receipt path remain separate APIs.
+Direct mutation of internal Python objects is also outside the supported
+update contract; the wrapper rejects a changed live task catalogue before
+issuing its own certificate.
+
 ## 8. Withdrawal, changed objectives and finite growth
 
 The basic constructive revision policy is **reset to the outer top for the new
@@ -386,11 +454,11 @@ objects. Resetting can discard useful refinement work; its safety does not
 make it the optimal repair. A more selective method needs accessible exclusion
 records and dependency information, with their storage and checking costs.
 
-For one bit, a source restricted by $q=1$ can yield $[1,1]$ for loss $q$.
+For one bit, a source restricted by $`q=1`$ can yield $`[1,1]`$ for loss $`q`$.
 After that premise is withdrawn, the compatible source includes zero. Keeping
-the old survivor alone is unsound; a reset yields $[0,1]$. Withdrawal of a
+the old survivor alone is unsound; a reset yields $`[0,1]`$. Withdrawal of a
 premise does not prove its negation. If another retained independent receipt
-still establishes $q=1$, that particular resolution may survive.
+still establishes $`q=1`$, that particular resolution may survive.
 
 Changing only a loss function or its unit does not require forgetting valid
 truth receipts. It does require a newly bound loss report and resource account.
@@ -410,7 +478,7 @@ for a changed query/program/interpretation. Likewise arbitrary theory proof
 enumeration and selective exclusion repair are possible adapter obligations,
 not services supplied by this VM prototype.
 
-A one-cube cap cannot represent exactly the XOR source $\{01,10\}$ by an
+A one-cube cap cannot represent exactly the XOR source $`\{01,10\}`$ by an
 ordinary cube: its smallest covering cube is `**` and also includes `00,11`.
 It may keep the XOR constraint intensionally, return a wider enclosure, or use
 another representation with declared costs. Silently deleting one alternative
@@ -429,16 +497,16 @@ correctly. The argument covers true and false bounded claims alike: finite
 work completes, its signed result is checked, and later reports use it.
 
 There is a concrete bound for the fixed finite VM scheduler. If the query's
-execution stops after $r$ instructions, production and replay each use
-$\max(1,r)$ scheduled transactions; the extra convention handles a zero
-horizon. In `all` scheduling mode, at most $k+1$ eligible transactions occur
+execution stops after $`r`$ instructions, production and replay each use
+$`\max(1,r)`$ scheduled transactions; the extra convention handles a zero
+horizon. In `all` scheduling mode, at most $`k+1`$ eligible transactions occur
 between services to that job. With retained state, no request corruption or
 source withdrawal, and sufficient evidence capacity throughout, acceptance
 occurs within
 
-$$
+```math
 2(k+1)\max(1,r)
-$$
+```
 
 scheduled transactions from initial service scheduling. A requested report is
 additional charged work. This is a coarse operation bound for an explicitly
@@ -457,21 +525,61 @@ evict its only accepted receipt. Retained progress and information are part
 of the theorem, not implicit consequences of a round counter.
 
 **U03-4 — finite-source completion (adapted, proved here).**
-For a fixed finite active fragment and fixed $H$, fair full splitting and
-constraint checking eventually reach all its Boolean leaves when the storage
-cap permits the required frontier and every required checking, arithmetic and
-report operation fits its declared limits and is eventually scheduled. There are at most $2^k-1$ splits and
-$2^{k+1}-1$ processed nodes in the full binary tree. Strong-Kleene evaluation
+For a fixed finite active fragment and fixed $`H`$, a cell cap of at least
+$`2^k`$ is an explicit sufficient capacity for the current refinement strategy.
+Assume every required checking, arithmetic and report operation fits its
+declared limits and is eventually scheduled, with retained progress.
+There are at most $`2^k-1`$ successful splits and $`2^{k+1}-1`$ distinct
+nodes in the full binary tree. At that sufficient cap there are no capacity
+stops, so the finite source work completes. Strong-Kleene evaluation
 is exact on complete assignments, and the rational loss evaluator is exact
 on singleton cells. Hence this process eventually computes the exact extrema
 on the **received finite assessment source** when it is nonempty; an empty
 source instead yields finite conflict. It need not discover constraints
-that were never admitted.
+that were never admitted. Smaller caps may also suffice for particular sources,
+but capacity-stop revisits are additional transactions. Having enough cells
+to represent the final answer alone is insufficient: the
+[parity construction](03_refinement_extensions.md#5-a-frontier-that-can-describe-the-answer-may-still-be-unable-to-reach-it)
+requires one spare cell for this strategy. Distinct-node counts must not be
+reported as total operation bounds in that regime.
+
+For the implemented interleaving there is also a coarse end-to-end bound.
+Keep the initial caller constraints $`H_0`$ fixed, with no withdrawal or other
+external updates. Let $`m\leq k`$ be the number of bounded VM jobs and
+$`b_i`$ their horizons. Assume $`|H_0|+m\leq128`$, cell capacity at least
+$`2^k`$, retained `all` scheduling and enough positive allowance calls.
+Then every job is accepted and the final received source finishes filtering
+within
+
+```math
+2\sum_{i=1}^m\max(1,b_i)
+ +(2^{k+1}-1)+m2^k
+```
+
+used scheduled transactions. Each VM production and replay uses at most its
+stated horizon, with one transaction for a zero horizon. For source work,
+initialization and all child insertions create at most
+$`1+2(2^k-1)=2^{k+1}-1`$ queue entries. Each of the at most $`m`$ receipt
+acceptances resets the agenda with at most $`2^k`$ current cells. A completed
+source visit pops one entry. There are no capacity-stop reinsertions: disjoint
+nonempty cubes containing a nonsingleton cannot already number $`2^k`$,
+so every needed split fits. Replacing a pending agenda can discard entries,
+which only reduces future pops. This proves the displayed workload bound.
+The persistent round-robin cursor and sufficient cumulative positive allowance
+ensure the finite work actually receives service.
+
+A requested report is extra work and must pass its arithmetic limit to return
+exact numerical endpoints. Input admission, dispatch scans, identity work,
+serialization and host costs are separate accounts, so the displayed bound
+is not a CPU or monetary-cost guarantee. An inconsistent conditional source
+finishes with conflict. Opaque atoms can remain unresolved even after the
+finite received source is exactly filtered. No general proof-stream cost
+bound is inferred from these explicitly capped VM horizons.
 
 These are fixed-query/finite-fragment statements. Requesting a fresh unresolved
 query at every round can leave every initial report at its default even though
-each old query is eventually resolved. A default midpoint forecast $1/2$ on a
-sequence of true queries has squared error $1/4$ at every initial report.
+each old query is eventually resolved. A default midpoint forecast $`1/2`$ on a
+sequence of true queries has squared error $`1/4`$ at every initial report.
 This is a counterexample to that inference about the stipulated process,
 not a complexity lower bound against an ordinary solver with a valid shortcut.
 Enumeration, total lookup/defaults, fixed-query eventual resolution and
@@ -504,18 +612,18 @@ semantic soundness bridge, does not satisfy these premises. Particular
 unbounded programs can still have sound negative certificates, and restricted
 decidable families can still have complete procedures.
 
-A weaker service is possible. Let $H(P)$ be the unbounded halting bit and set
-$h_t(P)=1$ if simulation observes a halt within $t$ transitions, and zero
+A weaker service is possible. Let $`H(P)`$ be the unbounded halting bit and set
+$`h_t(P)=1`$ if simulation observes a halt within $`t`$ transitions, and zero
 otherwise. Every finite output is computable with its simulation work charged.
-If $P$ halts after $T$ steps, then $h_t(P)=1$ for every $t\geq T$; if it
-never halts, every estimate is zero. Thus $h_t(P)$ converges to $H(P)$ for
+If $`P`$ halts after $`T`$ steps, then $`h_t(P)=1`$ for every $`t\geq T`$; if it
+never halts, every estimate is zero. Thus $`h_t(P)`$ converges to $`H(P)`$ for
 every fixed program. Its provisional zero is an estimate, **not a finite
 certificate of nonhalting**. An effective universal signal that the zero had
 become permanently correct would restore the forbidden decider.
 
-For a growing family, let $P_n$ execute $n$ increments and then a halt
-instruction. Its true unbounded halting bit is one, but $h_n(P_n)=0$ for
-every $n$. A structural shortcut can recognize this simple family earlier;
+For a growing family, let $`P_n`$ execute $`n`$ increments and then a halt
+instruction. Its true unbounded halting bit is one, but $`h_n(P_n)=0`$ for
+every $`n`$. A structural shortcut can recognize this simple family earlier;
 the example attacks the claimed implication from pointwise convergence for
 the stipulated estimator, not every ordinary reasoning method. This explains
 why the finite VM's sound negative answer about a **stated horizon** must not
@@ -534,17 +642,17 @@ The primary passages were rechecked by the principal as well as the internal
 source reviewer; this is selective inspection, not replication of every proof.
 
 A source refinement can help a value query while leaving the individual truth
-coordinates unresolved. Take received constraint $x\ne y$ on two Boolean
-atoms and loss $f=x+y$. Both atoms remain individually unresolved on the
-compatible source $\{01,10\}$, but the loss is exactly one. Processing the
-finite source can tighten an initial interval $[0,2]$ to $[1,1]$ without finding
+coordinates unresolved. Take received constraint $`x\ne y`$ on two Boolean
+atoms and loss $`f=x+y`$. Both atoms remain individually unresolved on the
+compatible source $`\{01,10\}`$, but the loss is exactly one. Processing the
+finite source can tighten an initial interval $`[0,2]`$ to $`[1,1]`$ without finding
 which actual atom is true. The ordinary constraint method obtains the same
 answer, including any available symbolic shortcut from the XOR relation.
 
-An even smaller computational example is $f(x)=\min(x,1-x)$. On the unchanged
-Boolean source $\{0,1\}$ its exact value is zero. The root-cell compositional
-interval is $[0,1]$; splitting into the two Boolean leaves makes both leaf
-intervals $[0,0]$. No new truth receipt has arrived and the answer to $x$ remains
+An even smaller computational example is $`f(x)=\min(x,1-x)`$. On the unchanged
+Boolean source $`\{0,1\}`$ its exact value is zero. The root-cell compositional
+interval is $`[0,1]`$; splitting into the two Boolean leaves makes both leaf
+intervals $`[0,0]`$. No new truth receipt has arrived and the answer to $`x`$ remains
 unresolved. The intervening work improves a bound on the consumer's loss.
 This distinguishes processing existing information from receiving new evidence.
 It is an elementary finite case exercised in development attempt 1;
@@ -560,15 +668,15 @@ reference; the optional credal adapter is a separate supplied interpretation.
 ### 10.1 A terminal task certificate
 
 **U03-5 — named-action certificate (ordinary reconstruction, adapted here).**
-Fix a finite supplied action catalogue $B$, common declared loss units,
-a selected action $a\in B$ and tolerance $\varepsilon\geq0$. Its regret at
-one shared assessment $x$ is
+Fix a finite supplied action catalogue $`B`$, common declared loss units,
+a selected action $`a\in B`$ and tolerance $`\varepsilon\geq0`$. Its regret at
+one shared assessment $`x`$ is
 
-$$
+```math
 R_a(x)=\ell_a(x)-\min_{b\in B}\ell_b(x)
       =\max\bigl(0,\max_{b\in B\setminus\{a\}}
            (\ell_a(x)-\ell_b(x))\bigr).
-$$
+```
 
 For a one-action catalogue the final expression is defined to be zero.
 Subtraction by a common number reverses the ordering of the compared losses,
@@ -576,13 +684,13 @@ which proves the identity. The finite maximum and positive differences use the
 existing rational loss language when their constructed expression fits its
 size and arithmetic limits.
 
-If a sound current-source upper bound $u_a$ on $R_a$ satisfies
-$u_a\leq\varepsilon$, then
+If a sound current-source upper bound $`u_a`$ on $`R_a`$ satisfies
+$`u_a\leq\varepsilon`$, then
 
-$$
+```math
 \ell_a(x)\leq\min_{b\in B}\ell_b(x)+\varepsilon
 \quad\text{for every }x\in F(H).
-$$
+```
 
 The guarantee concerns every action in the **supplied** catalogue, not every
 possible real-world option. It transfers to the interpreted truth vector only
@@ -590,10 +698,10 @@ through the same premise bridge as the loss bounds. A finite conflict does
 not produce an action certificate. Otherwise an unresolved feasibility status
 retains the guarantee's conditional status. For a nonempty exactly evaluated
 finite source, such a uniform certificate exists precisely when
-$\max_{x\in F(H)}R_a(x)\leq\varepsilon$. A loose upper bound above the
+$`\max_{x\in F(H)}R_a(x)\leq\varepsilon`$. A loose upper bound above the
 threshold does not itself prove the certificate impossible.
 
-At fixed source and objective, the existing interval refinement makes $u_a$
+At fixed source and objective, the existing interval refinement makes $`u_a`$
 nonincreasing. Thus the threshold, once certified, survives further such work.
 The request must bind the chosen action, complete supplied catalogue, original
 losses, shared unit, tolerance and active-source identity. Giving an unrelated
@@ -606,36 +714,36 @@ rate or sequential forecast claim.
 
 ### 10.2 Shared uncertainty can cancel from the consumer's comparison
 
-Let $x$ remain unresolved on $\{0,1\}$ and take
+Let $`x`$ remain unresolved on $`\{0,1\}`$ and take
 
-$$
+```math
 \ell_A(x)=10x,\qquad \ell_B(x)=10x+1.
-$$
+```
 
-Their exact marginal loss ranges remain $[0,10]$ and $[1,11]$. Neither loss
-level is identified, and the ranges overlap. Yet $R_A(x)=0$ everywhere.
+Their exact marginal loss ranges remain $`[0,10]`$ and $`[1,11]`$. Neither loss
+level is identified, and the ranges overlap. Yet $`R_A(x)=0`$ everywhere.
 The current structural evaluator initially gives the uncancelled positive
 difference an upper bound of nine; splitting into the two Boolean cells
 gives zero on both. This certifies A without learning the actual value of
-$x$ or either actual cost. An ordinary symbolic cancellation rule can reach
+$`x`$ or either actual cost. An ordinary symbolic cancellation rule can reach
 the conclusion earlier; that permitted shortcut belongs to O-COMB too.
 
-The relationship really matters. Replacing B's loss by $11-10x$ leaves both
-marginal ranges unchanged, but A's regret becomes nine at $x=1$. Separate
+The relationship really matters. Replacing B's loss by $`11-10x`$ leaves both
+marginal ranges unchanged, but A's regret becomes nine at $`x=1`$. Separate
 ranges do not retain the shared-assignment comparison. This is a range-level
 adaptation of P3-02's dependence warning, now tied to a bounded certificate
 that the consumer can request.
 
-More generally, a shared unknown component $g(x)$ cancels when
-$\ell_b(x)=g(x)+d_b(x)$ for every supplied action. Recovering the absolute
+More generally, a shared unknown component $`g(x)`$ cancels when
+$`\ell_b(x)=g(x)+d_b(x)`$ for every supplied action. Recovering the absolute
 cost levels can require information that the comparison does not require.
-A common change $\ell'_b(x)=\alpha\ell_b(x)+\beta(x)$ with known
-$\alpha>0$ gives $R'_a(x)=\alpha R_a(x)$. A certificate therefore transports
-with tolerance $\alpha\varepsilon$ under that declared relationship. This
+A common change $`\ell'_b(x)=\alpha\ell_b(x)+\beta(x)`$ with known
+$`\alpha>0`$ gives $`R'_a(x)=\alpha R_a(x)`$. A certificate therefore transports
+with tolerance $`\alpha\varepsilon`$ under that declared relationship. This
 is a mathematical transport rule, not an implemented arbitrary rewrite checker.
 
 Action-specific price changes need more information. In the example, doubling
-only A's loss gives $20x$ versus $10x+1$: A is best at zero but has regret
+only A's loss gives $`20x`$ versus $`10x+1`$: A is best at zero but has regret
 nine at one. The earlier zero-regret number alone does not warrant the new
 comparison. Retaining the original source and loss expressions allows a fresh
 calculation, consistent with the phase-two retention interface and P3-02's
@@ -643,24 +751,24 @@ task-specific information distinctions.
 
 ### 10.3 A precise obstruction for this certificate service
 
-On the same unresolved source let $\ell_A(x)=x$ and $\ell_B(x)=1-x$.
+On the same unresolved source let $`\ell_A(x)=x`$ and $`\ell_B(x)=1-x`$.
 A is uniquely best at zero and B at one. Each fixed pure action has worst-case
 regret one. Hence neither can have a sound uniform certificate with tolerance
 below one on this source, however thoroughly the source is enumerated.
 This is a limitation of the stated information and requested service.
-An allowed computation that resolves $x$, a different action catalogue, or a
+An allowed computation that resolves $`x`$, a different action catalogue, or a
 separately supplied subjective-law objective can change the question.
 
 Randomized actions are another distinct service. If A is selected with a
-known probability $r$, independently of the unresolved bit, its loss averaged
-over that internal randomization is $rx+(1-r)(1-x)$. Its worst expected regret
-over the two assessments is $\max(r,1-r)$, minimized at $r=1/2$ with value
-$1/2$. Realized worst-case regret remains one. A known rational mixture can
+known probability $`r`$, independently of the unresolved bit, its loss averaged
+over that internal randomization is $`rx+(1-r)(1-x)`$. Its worst expected regret
+over the two assessments is $`\max(r,1-r)`$, minimized at $`r=1/2`$ with value
+$`1/2`$. Realized worst-case regret remains one. A known rational mixture can
 be admitted as another explicitly interpreted action; this averages the
 action's coin, not a supplied probability law for mathematical truth.
 
 Similarly, the pointwise minimum in the regret benchmark is not automatically
-an executable plan that sees $x$. The selected named action is fixed before
+an executable plan that sees $`x`$. The selected named action is fixed before
 the hidden assessment is known. This preserves phase two's distinction between
 an expression's pointwise minimum and a policy with the required information.
 
@@ -669,33 +777,100 @@ may have a cheap proof available to an ordinary method. Conversely, merely
 improving an enclosure until it equals the correct worst-case regret cannot
 manufacture a uniformly good pure action where none exists.
 
-## 11. Development evidence and remaining work
+## 11. Refinement and retention extensions
 
-The [kernel](../checks/03_bounded_logic.py) and
-[independent finite evaluator](../checks/03_bounded_logic_check.py) have completed
-[development attempt 1](../work_logs/P3_03_2026-10-07_S1/development/attempt_1/summary.json):
-22 source cases, 162 interruption boundaries, 306 partial-cube visits, nine
-bounded VM queries and the named revision, binding and resource-limit checks.
-All twelve suites passed, with 10,840 explicit assertions. These are small
-finite correctness diagnostics, not independent samples, a blind anticipation
-test or a final challenge. The source/evaluator/code versions and complete
-traces are bound in that attempt's prospective manifest.
+The [companion derivation](03_refinement_extensions.md) provides the further
+assumption checks and constructive cases needed to state the finite result
+without suggesting an unrestricted learner.
 
-The [terminal task wrapper](../checks/03_task_certificate.py) subsequently
-passed its [separate development attempt](../work_logs/P3_03_2026-10-07_S1/development/task_certificate_attempt_1/summary.json),
-with nine targeted suites and 64 assertions. The principal's final inspection
-and current dependency audit remain pending. Its compilation, binding and
-threshold work are recorded separately from the core transaction allowance.
+| Result | Precise addition | Boundary |
+|---|---|---|
+| U03-7 | A monotone stream on a fixed finite query fragment eventually stabilizes its assessment source. | No effective universal final-change signal or convergence rate; displayed exact bounds need paid processing and suitable publication. |
+| U03-8/8a | Fair retained checking eventually captures every provable Boolean relation; a finite task predicate holds throughout that source exactly when its Boolean encoding is provable. | A theoretical adapter beyond the VM. Consistency gives nonemptiness; intended truth requires the separate soundness bridge. |
+| U03-9 | Syntactic constraint-component closure factors the source; a known nonempty exterior permits exact local task extrema. | Local bounds alone do not establish global feasibility. The scan, exterior evidence and revision metadata cost work. |
+| U03-10 | The exact current feasible set can discard premise distinctions needed for a later withdrawal. | A two-history obstruction for the specified present-source-only summary; no necessity to retain every historical byte. |
+| U03-11 | Minimal final cube capacity can be insufficient for the current FIFO split strategy; ordering can also dominate work on a task-specific bound. | Explicit parity and variable-order examples, not a lower bound against symbolic methods or a cost-preserving equivalence after changing the schedule. |
+| U03-12 | Exact minima of known Hamming losses recover the finite Boolean assessment source; the same rows as expectations need retain only marginals. | The service, loss family, finite attained source and error gap matter. A rational piecewise-affine distance family gives a further finite-domain adapter. |
 
-The [mathematical](../work_logs/P3_03_2026-10-07_S1/reviews/bounded_reconstruction.md),
-[implementation](../work_logs/P3_03_2026-10-07_S1/reviews/implementation_review.md)
-and [harness](../work_logs/P3_03_2026-10-07_S1/reviews/harness_review.md) reviews
-are same-model internal, nonblind reviews. They add no concurrent research
-minutes. Source/code hashes in earlier review and execution records identify
-their historical snapshots; later text additions do not rewrite those records.
+Together these separate resolving actual mathematical truth, processing a
+received assessment source, certifying a consumer's action, and retaining
+what a later revision will need. Several of those tasks can settle while
+others remain open. Full probability recovery is not imposed on any of them.
 
-Remaining work: check the growing-deduction/fixed-fragment boundary and
-task-specific projection conditions; finish current-request binding review,
-the duty/contribution disposition and the protected Research90 remainder;
-then synchronize exact actuals, claims and status. The rendering repair is
-separate administrative work. P3-04 remains unstarted.
+## 12. Disposition of the 21 inherited duties
+
+These are applications of the exact [P3-01 duty definitions](../foundations/01_desiderata.md),
+not replacements for their hypotheses. “Restricted” below names the service
+proved or implemented here; it is not a claim to satisfy every later learning
+duty under a new vocabulary.
+
+| Duty | P3-03 disposition | Evidence and remaining obligation |
+|---|---|---|
+| U01 — bounded access | Restricted implementation | Finite admitted queries, retained producer/checker states, charged refinement and explicit caps; no arithmetic-model oracle. |
+| U02 — answer and evidence types | Restricted implementation | Unresolved, checked true/false, conditional assumption, conflict and failure remain distinct. General theory proof checking is only the U03-8 adapter. |
+| U03 — finite coherence | Conditional reconstruction | Exactly filtered nonempty finite sources support the ordinary all-laws credal adapter. An unfinished cover is not automatically coherent with every received constraint. |
+| U04 — receipt uptake | Restricted implementation | Accepted literal overlay affects the next eligible report; changed scope invalidates old current warrants. |
+| U05 — fixed-query convergence | Scoped theorems | U03-3/4 and U03-7/8 state finite work, capacity, retention, soundness and publication assumptions. No universal deadline or truth guarantee without its bridge. |
+| U06 — anticipation | Unestablished | The kernel resolves bounded queries by their own computation; its value-only examples process existing information. No recurring-family forecast result is claimed. |
+| U07 — calibration | Unestablished | No point-forecast learner or selected resolved-frequency theorem. Interval containment alone supplies none. |
+| U08 — expert regret | Unestablished | A terminal regret certificate is not an online expert-comparison bound. No mixture/update theorem is imported. |
+| U09 — delayed feedback | Unestablished | Pending producer/checker work is explicit, but no exogenous-delay wrapper or action-dependent discovery guarantee is proved. |
+| V01 — value typing | Enforced scope | Known semantic losses, conditional enclosures, optional expectations and realized task losses have different meanings. No default learned-estimate channel. |
+| V02 — requested information | Constructive finite distinctions | P3-02 is inherited; U03-9/10/12 and the action examples distinguish present source, joint loss, revision and decision information. |
+| V03 — action quality | Restricted positive result | U03-5 supplies a conditional uniform regret certificate for a named supplied action and catalogue. It supplies no learning rate. |
+| V04 — resource and acquisition costs | Partial implementation closure | Capped transactions, bit/size guards and heterogeneous work accounts are explicit. There is no full CPU/RAM theorem, optimal computation-purchase policy or learned value-of-computation estimate. |
+| M01 — model scope and plurality | Scope enforced; benefit open | Assessment constraints and intended truth are separated. No comparative benefit of a learned plural model library is established. |
+| R01 — retention and revision | Restricted implementation and obstruction | Withdrawal closure/reset, independent receipt retention and full current-record binding are implemented. Native proof transport and optimal selective repair remain separate. |
+| C01 — change types | Deferred | Actual evidence withdrawal is identified explicitly; counterfactual-operation semantics belong to P3-04/05. |
+| C02 — counterfactual identification | Deferred | No observational-to-counterfactual identification claim. |
+| C03 — alternatives and ties | Deferred | Finite conflict is not a useful alternative or a counterfactual tie-selection result. |
+| C04 — genuine counterpossibles | Deferred | No exceptional hypothetical consequence semantics are introduced. |
+| I01 — operational recoding | Exact ordinary reference | Identity transport uses the same information, states, operations, scheduler and costs. A different priority rule, solver or adapter requires its own comparison. |
+| F01 — self-modeling | Open | The prototype has no report-dependent self-model or new reflection theorem; inherited bounded examples retain their original scope. |
+
+## 13. Development evidence and scientific disposition
+
+All executable records are **DEVELOPMENT**, with visible design cases and
+same-model internal review. Counts below are assertions within finite
+correctness diagnostics, not independent scientific findings or observations
+from a frozen challenge.
+
+| Saved attempt | Result and content | Version/interpretation |
+|---|---|---|
+| [Core attempt 1](../work_logs/P3_03_2026-10-07_S1/development/attempt_1/summary.json) | PASS: 12 suites, 10,840 assertions; 22 source cases, 162 interruption boundaries, 306 partial-cube visits, nine bounded VM queries. | Historical core identified by its prospective manifest. The complete trace is retained losslessly as gzip with a verified materializer. |
+| [Task-certificate attempt 1](../work_logs/P3_03_2026-10-07_S1/development/task_certificate_attempt_1/summary.json) | PASS: 9 suites, 64 assertions. | Historical first wrapper; compilation, binding and threshold work remain separate from the core allowance. |
+| [Exact-record binding attempt 1](../work_logs/P3_03_2026-10-07_S1/development/binding_attempt_1/summary.json) | PASS: 7 suites, 35 assertions. | Complete record comparisons replace digest-only applicability; unchanged numerical ASTs are recorded. Numeric-field edits demonstrate the helper's limited service. |
+| [Frontier reconciliation](../work_logs/P3_03_2026-10-07_S1/development/frontier_reconciliation.json) | Six saved parity cases from attempt 2 plus eight ordering/withdrawal cases from attempt 3; 1,772 assertions across those two runs. | Attempt 1 failed on a missing required opaque-query statement; attempt 2 failed after its parity cases on numeric instead of string rational syntax. Both failures and evaluators are preserved. Attempt 3 reran only the uncompleted part. |
+| [Receipt-identity repair attempt 1](../work_logs/P3_03_2026-10-07_S1/development/receipt_identity_repair/attempt_1/summary.json) | PASS: 5 suites, 177 assertions. | Preserved old code reproduces the surrogate alias; repaired `finite-cover-v2` retains distinct indexed evidence. Complete pre/post code and the exact AST delta are saved. |
+
+The current [kernel](../checks/03_bounded_logic.py) and
+[terminal task wrapper](../checks/03_task_certificate.py) are linked to the
+historical evidence through the recorded interface repairs and unchanged
+numerical/refinement code, rather than relabelling old runs as executions of
+a later source file. Narrow repair diagnostics cover the changed behavior.
+The source, implementation, harness, binding and receipt reviews are in the
+[session record](../work_logs/P3_03_2026-10-07_S1.md). Their parallel effort
+adds no principal research credit. Historical execution/manifests retain the
+hashes of the bytes they actually used.
+
+The concrete research output is a finite operational adaptation: retained
+bounded proof-production work, an interruptible sound outer cover, typed loss
+reports, current task certificates and conservative revision, accompanied by
+explicit convergence and information obstructions. The proof-stream and
+component adapters broaden the mathematical statement while remaining
+separate from what was executed. The ordinary proof/constraint/interval and
+dependency combination is allowed to perform the same operations and exploit
+valid symbolic shortcuts. The identity comparator therefore reproduces this
+prototype exactly; no performance advantage follows.
+
+The candidate contribution is the assembled bounded refinement/revision
+service and its task-information distinctions. Its ordinary ingredients and
+identity reconstruction are explicit. A scoped synthesis, formal adaptation
+or useful application can qualify under the author's criterion; it need not
+win every performance comparison or establish worldwide priority. The present
+record does not yet establish that contribution's significance in a named
+application/comparison scope. **P3-N01 remains NOT YET SUPPORTED.** P3-H01 has a restricted deterministic bound-refinement instance;
+learned anticipation, calibration, expert regret, paid computation selection,
+model-plurality benefit and reflection remain open. The work supplies neither
+a general logical induction theory nor a superiority claim. No final
+challenge is frozen or exposed, and P3-04 remains unstarted.

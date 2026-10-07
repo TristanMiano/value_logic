@@ -69,10 +69,10 @@ cost-block incentive remains salient.
 
 The reviewer derives
 
-\[
+```math
 T(h)=(I-M)h+Md,
 \qquad T(T(h))-T(h)=M(I-M)(d-h).
-\]
+```
 
 With stored native contribution matrix `A` and Gram matrix `G=A^T A/n`,
 set `b=m*(1-m)`. The squared additional logit change is `b^T G b`.

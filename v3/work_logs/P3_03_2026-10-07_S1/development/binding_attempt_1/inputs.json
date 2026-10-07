@@ -1,0 +1,238 @@
+{
+  "audit_fields": [
+    "input_sha256",
+    "active_source_sha256",
+    "loss_sha256",
+    "cover_sha256"
+  ],
+  "core": {
+    "cell_cap": 2,
+    "constraints": [],
+    "losses": {
+      "f": {
+        "expr": [
+          "min",
+          [
+            "var",
+            0
+          ],
+          [
+            "add",
+            [
+              "rat",
+              "1"
+            ],
+            [
+              "scale",
+              "-1",
+              [
+                "var",
+                0
+              ]
+            ]
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      }
+    },
+    "queries": [
+      {
+        "id": "opaque-bit",
+        "kind": "opaque",
+        "statement": "Unresolved Boolean claim.",
+        "version": "1"
+      }
+    ],
+    "scope": "p303-binding-development-v1"
+  },
+  "interpretation": "Synthetic identity diagnostics, not cryptographic collision discovery, numeric proof verification or JSON authentication.",
+  "loss_variants": [
+    {
+      "expr": [
+        "rat",
+        "0"
+      ],
+      "unit": "cost",
+      "version": "2"
+    },
+    {
+      "expr": [
+        "rat",
+        "1"
+      ],
+      "unit": "cost",
+      "version": "2"
+    }
+  ],
+  "other_selection": {
+    "actions": {
+      "A": {
+        "expr": [
+          "scale",
+          "10",
+          [
+            "var",
+            0
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "B": {
+        "expr": [
+          "add",
+          [
+            "scale",
+            "10",
+            [
+              "var",
+              0
+            ]
+          ],
+          [
+            "rat",
+            "1"
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      }
+    },
+    "cell_cap": 2,
+    "constraints": [],
+    "queries": [
+      {
+        "id": "opaque-bit",
+        "kind": "opaque",
+        "statement": "Unresolved Boolean claim.",
+        "version": "1"
+      }
+    ],
+    "scope": "p303-binding-development-v1",
+    "selected": "B",
+    "tolerance": "0"
+  },
+  "other_task": {
+    "actions": {
+      "A": {
+        "expr": [
+          "scale",
+          "10",
+          [
+            "var",
+            0
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "B": {
+        "expr": [
+          "add",
+          [
+            "scale",
+            "10",
+            [
+              "var",
+              0
+            ]
+          ],
+          [
+            "rat",
+            "2"
+          ]
+        ],
+        "unit": "cost",
+        "version": "2"
+      }
+    },
+    "cell_cap": 2,
+    "constraints": [],
+    "queries": [
+      {
+        "id": "opaque-bit",
+        "kind": "opaque",
+        "statement": "Unresolved Boolean claim.",
+        "version": "1"
+      }
+    ],
+    "scope": "p303-binding-development-v1",
+    "selected": "A",
+    "tolerance": "0"
+  },
+  "schema": "value_logic.P3-03.binding.inputs.v1",
+  "source_premises": [
+    {
+      "depends_on": [],
+      "expr": [
+        "var",
+        0
+      ],
+      "id": "h",
+      "kind": "conditional_assumption"
+    },
+    {
+      "depends_on": [],
+      "expr": [
+        "not",
+        [
+          "var",
+          0
+        ]
+      ],
+      "id": "h",
+      "kind": "conditional_assumption"
+    }
+  ],
+  "stage": "DEVELOPMENT",
+  "substitutions": "Force audit fields equal while full records differ; splice a current core report into another task's output; alter only numeric bounds.",
+  "task": {
+    "actions": {
+      "A": {
+        "expr": [
+          "scale",
+          "10",
+          [
+            "var",
+            0
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "B": {
+        "expr": [
+          "add",
+          [
+            "scale",
+            "10",
+            [
+              "var",
+              0
+            ]
+          ],
+          [
+            "rat",
+            "1"
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      }
+    },
+    "cell_cap": 2,
+    "constraints": [],
+    "queries": [
+      {
+        "id": "opaque-bit",
+        "kind": "opaque",
+        "statement": "Unresolved Boolean claim.",
+        "version": "1"
+      }
+    ],
+    "scope": "p303-binding-development-v1",
+    "selected": "A",
+    "tolerance": "0"
+  }
+}

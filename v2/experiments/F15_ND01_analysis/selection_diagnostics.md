@@ -31,7 +31,9 @@ The objective is the maximum of five MAE/.05 values, near disagreement/.35, and 
 
 For a saved control and an aligned intervention on the same rows,
 
-\[\Delta=\operatorname{MAE}_{control}-\operatorname{MAE}_{aligned}\leq\operatorname{MAE}_{control}.\]
+```math
+\Delta=\mathrm{MAE}_{control}-\mathrm{MAE}_{aligned}\leq\mathrm{MAE}_{control}.
+```
 
 The frozen matched-control radius is 0.022115658601168407. Thus an observed control must have MAE at least 0.03211565860116841 for even a hypothetical zero-error aligned intervention to attain a lower bound of 0.01 under that same radius. This keeps the original sample-range and multiplicity rule; it does not tighten the interval by assuming a new error distribution.
 

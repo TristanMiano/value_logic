@@ -42,10 +42,10 @@ in a constant relation. The active coefficients must satisfy
 Inactive coefficients are unrestricted. Consequently, for the span `D` of
 all vectors `h(d)-h(b)` in the box,
 
-\[
+```math
 \dim D=\#\{\text{variable units}\}
-        +\operatorname{rank}(W_{active}).
-\]
+        +\mathrm{rank}(W_{active}).
+```
 
 The previous mechanism analysis only used this expression as an upper bound.
 Pairwise distinctness of the interior kink hyperplanes supplies the matching
@@ -69,26 +69,26 @@ is `q_r=c_r+n_r`, where `n_r` lies in `N`.
 
 There exists an orthogonal projector with `P_r v=q_r` exactly when
 
-\[
+```math
 q_r^T v=\|q_r\|^2.
-\]
+```
 
 The nonzero case uses `P_r=q_r q_r^T/||q_r||^2`; the zero case can use a zero
 projector. Define
 
-\[
+```math
 \delta_r=c_r^T v_D-\|c_r\|^2,\quad
 t=\tfrac12\|v_N\|,\quad
 \rho_r=\sqrt{\delta_r+t^2}.
-\]
+```
 
 For the coordinate-subspace `D` just certified and a fractional mask,
 `delta_r=sum_{j in D} m_rj(1-m_rj)v_j^2>=0`. Each admissible null component
 lies on the sphere
 
-\[
+```math
 n_r=\tfrac12v_N+\rho_r u_r,\qquad\|u_r\|=1.
-\]
+```
 
 The degenerate zero-radius case is interpreted as a point.
 
@@ -100,16 +100,16 @@ Assume `dim N>=2`, as must be checked for the models.
 
 Let `w=v_N/2`. A point on the first sphere can have every norm
 
-\[
+```math
 x\in[|\rho_0-t|,\rho_0+t].
-\]
+```
 
 For fixed `n0`, the smallest dot product with the second sphere is
 
-\[
+```math
 n_0^T w-\rho_1\|n_0\|
 =\tfrac12(x^2+t^2-\rho_0^2)-\rho_1 x.
-\]
+```
 
 This convex quadratic is minimized at
 `x*=clip(rho1,abs(rho0-t),rho0+t)`. The maximum dot product over both spheres
@@ -119,10 +119,10 @@ at least two is connected, and the dot product is continuous. Its attained
 values fill the entire interval between the extrema. Thus the pair exists
 **if and only if**
 
-\[
+```math
 \boxed{C\leq\kappa,
 \qquad \kappa=-\tfrac12((x^*)^2+t^2-\rho_0^2)+\rho_1 x^*.}
-\]
+```
 
 Here the upper endpoint is nonnegative, so the only constraint on the
 nonpositive target `-C` is the minimum. A point sphere is handled directly;
@@ -131,19 +131,19 @@ the same formula remains valid.
 Since `delta0,delta1>=0`, each `rho_r>=t`. An equivalent form convenient for
 exact classification is
 
-\[
+```math
 \kappa=\begin{cases}
 (\delta_0+\delta_1+t^2)/2,& |\rho_0-\rho_1|\leq t,\\
 (\rho_{small}+t)(\rho_{large}-t),& |\rho_0-\rho_1|>t.
 \end{cases}
-\]
+```
 
 The first branch is decided using rational arithmetic:
 
-\[
+```math
 (\delta_0+\delta_1+t^2)^2
 \leq4(\delta_0+t^2)(\delta_1+t^2).
-\]
+```
 
 In the second branch, square-root enclosures can be obtained with integer
 square roots. For rational `r>=0` and integer `Q=10^60`, set

@@ -38,30 +38,30 @@ It does not posit another training objective.
 Let `eta = P(Y=1|x)`, `J0=cFN*eta`, and `J1=cFP*(1-eta)`.
 For an output probability `p`, conditional expected weighted cross-entropy is
 
-\[
+```math
 L(p)=-J_0\log p-J_1\log(1-p).
-\]
+```
 
 Since
 
-\[
+```math
 L'(p)=-J_0/p+J_1/(1-p),\qquad
 L''(p)=J_0/p^2+J_1/(1-p)^2>0,
-\]
+```
 
 the unique optimum is
 
-\[
+```math
 p^*=\frac{J_0}{J_0+J_1},\qquad
-z^*=\operatorname{logit}(p^*)=\log J_0-\log J_1.
-\]
+z^*=\mathrm{logit}(p^*)=\log J_0-\log J_1.
+```
 
 Equivalently,
 
-\[
+```math
 z^*=\log c_{\rm FN}-\log c_{\rm FP}
       +\log\eta-\log(1-\eta).
-\]
+```
 
 Thus price-related contributions and a shared probability-related contribution
 could suffice. The ordinary objective constrains their total, not their
@@ -74,16 +74,16 @@ Neither qualification supplies a requirement for this particular cost partition.
 
 For the fixed affine head, write
 
-\[
+```math
 z(x)=\beta+v^T h(x),\qquad
 \phi_S(x)=\sum_{i\in S}v_i h_i(x).
-\]
+```
 
 Swapping coordinates `S` from donor `d` into base `b` gives exactly
 
-\[
+```math
 z_{S\leftarrow d}(b)=z(b)+\phi_S(d)-\phi_S(b).
-\]
+```
 
 Define the signed contributions
 `ell_0(x)=log J0(x)` and `ell_1(x)=-log J1(x)`, baseline logit error
@@ -91,10 +91,10 @@ Define the signed contributions
 The ideal role intervention has logit
 `z_H=z*(b)+ell_r(d)-ell_r(b)`. Therefore
 
-\[
+```math
 \boxed{z_{S\leftarrow d}(b)-z_H
        =e(b)+r_S(d)-r_S(b).}
-\]
+```
 
 This separates imperfect ordinary prediction from imperfect isolation of the
 target contribution. A good scalar decoder of `Jr` does not establish that the
@@ -139,9 +139,9 @@ has been run.
 
 For comparison, an orthogonal-subspace interchange acts as
 
-\[
+```math
 h'=h_b+P(h_d-h_b),\qquad P=P^T=P^2,
-\]
+```
 
 so its output effect is `(Pv)^T(h_d-h_b)`. If `a=Pv`, necessarily
 `a^T v=||a||^2`. An arbitrary fitted readout vector need not satisfy this

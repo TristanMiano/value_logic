@@ -67,11 +67,11 @@ achieved risk.” Match the principal's more precise wording:
 This qualification is substantive. The principal correctly includes the
 binary fixed-report Brier positive case. Even an optimal scalar risk can
 identify a binary law for a suitable score: the finite loss
-\[
+```math
 \ell(q,Y)=(q-Y)^2+2Y,\qquad Y\in\{0,1\},
-\]
-remains strictly proper, but its optimal risk is \(3p-p^2\), which is
-strictly increasing on \([0,1]\). This direct calculation shows why a
+```
+remains strictly proper, but its optimal risk is $`3p-p^2`$, which is
+strictly increasing on $`[0,1]`$. This direct calculation shows why a
 universal scalar-risk impossibility would be false. It does not weaken
 the principal's nonidentification examples for its specified Brier and
 log scores.
@@ -109,7 +109,7 @@ when their quantifiers are explicit.
 
 The four counts are correct. Add a short table introduction or caption:
 
-> For \(n\geq2\), exact fixed raw probes from a sufficiently rich finite-score
+> For $`n\geq2`$, exact fixed raw probes from a sufficiently rich finite-score
 > family, and a known scale assumed nonzero when applicable:
 
 The preceding sections already contain most of these assumptions. This
@@ -152,7 +152,7 @@ reduction appropriate to its own service.
 
 The current proposition supplies:
 
-- A finite number \(n\geq2\) of outcomes.
+- A finite number $`n\geq2`$ of outcomes.
 - Finite real loss vectors for every admitted report.
 - A common report domain containing every interior law as its own report.
 - A fixed law while reports are compared.
@@ -163,12 +163,12 @@ Both annihilator cases are correct. A zero-sum annihilator gives a constant
 shift in risk under a tangent perturbation. An annihilator with nonzero sum
 gives a positive affine transformation of the risk surface under a small
 move toward its normalized vector. An interior starting law different from
-that normalized vector exists when \(n\geq2\). No differentiability or
+that normalized vector exists when $`n\geq2`$. No differentiability or
 uniform score bound is used.
 
 The full difference span is stronger than the normalization-augmented span.
-The stated consequence for \(n-1\) appropriately selected raw rows is
-correct. A baseline plus \(n-1\) additional raw rows computes a particular
+The stated consequence for $`n-1`$ appropriately selected raw rows is
+correct. A baseline plus $`n-1`$ additional raw rows computes a particular
 difference basis but is not the minimum over raw-row selections.
 Finite positive log reports satisfy the premises even though other,
 boundary reports of the original log score can contain infinite penalties.
@@ -180,36 +180,36 @@ located numbered span theorem.
 
 ### 3.2 PI-8 and the four counts
 
-The transformation \(v(q)=b+sR_p(q)\) leads to \(x=sp\); the independent
-score differences recover \(x\), its sum recovers \(s\), normalization
-recovers \(p\), and the baseline recovers \(b\). The \(n+1\) raw-query
+The transformation $`v(q)=b+sR_p(q)`$ leads to $`x=sp`$; the independent
+score differences recover $`x`$, its sum recovers $`s`$, normalization
+recovers $`p`$, and the baseline recovers $`b`$. The $`n+1`$ raw-query
 construction and kernel lower bound are sound for the declared fixed menu
-and unrestricted \(s>0,b\in\mathbb R\).
+and unrestricted $`s>0,b\in\mathbb R`$.
 
 The four cases can be checked by their remaining hidden spaces:
 
 | Nuisance knowledge | Information that must determine the law | Sharp raw count |
 |---|---|---:|
-| Both known | Raw rows modulo the known normalization | \(n-1\) |
-| Only scale known | Report differences modulo normalization | \(n\) |
-| Only offset known | Raw rows must recover a positive vector up to its normalized law | \(n\) |
-| Neither known | Report differences must recover a positive vector up to its normalized law | \(n+1\) |
+| Both known | Raw rows modulo the known normalization | $`n-1`$ |
+| Only scale known | Report differences modulo normalization | $`n`$ |
+| Only offset known | Raw rows must recover a positive vector up to its normalized law | $`n`$ |
+| Neither known | Report differences must recover a positive vector up to its normalized law | $`n+1`$ |
 
 In the last two cases, a nonzero hidden direction can perturb some positive
-\(x\) without staying proportional to it, changing its normalized law.
+$`x`$ without staying proportional to it, changing its normalized law.
 This justifies the stronger rank requirement rather than relying on a
 count of formal parameters. With unknown unrestricted offset, adjusting
 that offset preserves the baseline observation, so it supplies no extra
 law distinction after differencing.
 
-The rational Brier formulas (19) check: the \(n\) differences sum to
-\(s(n-1)\), and the three-outcome numeric example decodes to the stated
-\(s=3,b=5,p=(1/6,1/3,1/2)\).
+The rational Brier formulas (19) check: the $`n`$ differences sum to
+$`s(n-1)`$, and the three-outcome numeric example decodes to the stated
+$`s=3,b=5,p=(1/6,1/3,1/2)`$.
 
 The principal expressly scopes the lower bound to fixed probes and
 excludes a general claim about optimized reports or adaptive policies.
 That scope should be retained. If a later document counts a “direct
-difference query,” it must mean observing \(v(q)-v(q_0)\), rather than
+difference query,” it must mean observing $`v(q)-v(q_0)`$, rather than
 applying an unknown offset afresh to a newly constructed difference gamble.
 
 ### 3.3 Report, objective value and realization remain distinct
@@ -223,24 +223,24 @@ stated separately from mathematical recoverability.
 
 A possible additional short hostile example, already recorded in the
 scoring-span review, is that evaluating all selected reports on the same
-realized outcome \(Y\) causes the calibration algebra to decode \(e_Y\).
+realized outcome $`Y`$ causes the calibration algebra to decode $`e_Y`$.
 An invertible score matrix and a normalized answer do not certify that
 the original observations were subjective expectations. The principal's
 current distinctions are correct without this additional example.
 
 ### 3.4 State-dependent additions preserve the stated service only
 
-Adding one finite outcome vector \(h\) to every action changes each
-expected cost by the same \(hp\) at a fixed law. It preserves pointwise
-action comparisons and regret. Across a law family, \(hp\) varies with
+Adding one finite outcome vector $`h`$ to every action changes each
+expected cost by the same $`hp`$ at a fixed law. It preserves pointwise
+action comparisons and regret. Across a law family, $`hp`$ varies with
 the law, so absolute minimax decisions need not be preserved. The two-state
-example in section 10 correctly changes the minimax choice from \(B\) to
-\(A\), while keeping all pointwise differences and minimax regret unchanged.
+example in section 10 correctly changes the minimax choice from $`B`$ to
+$`A`$, while keeping all pointwise differences and minimax regret unchanged.
 
 This also resolves a minor source-domain difference: Ramaswamy–Agarwal and
 Ramaswamy–Agarwal–Tewari use nonnegative finite loss tables. A finite real
 action-loss table can be made nonnegative by adding
-\(h_i=-\min_a c_{ai}\) at each outcome. That transports their pointwise
+$`h_i=-\min_a c_{ai}`$ at each outcome. That transports their pointwise
 Bayes-action/excess-risk comparison, with the absolute-minimax qualification
 just described. It does not justify discarding baselines for every service.
 

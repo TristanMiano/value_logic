@@ -1,0 +1,2569 @@
+{
+  "ast-delta": {
+    "v3/checks/03_bounded_logic.py": {
+      "added_functions": [
+        "Kernel.source_record"
+      ],
+      "after_sha256": "e8ac9bfda4addd9853a3b7ac174062a1152c8ec25cf6d2d09274d463c7d0419e",
+      "before_sha256": "ae757bee58089b1229cdd2e123e4650be704f04729b2fff081238c988a916247",
+      "changed_functions": [
+        "Kernel.report",
+        "Kernel.report_is_current",
+        "Kernel.snapshot",
+        "Kernel.source_identity"
+      ],
+      "unchanged_fragments": {
+        "Kernel.report.before_result": "0900e0fa5b25ce77d4e8cbab163234bc4a83bbecd1139375434ea1036860be76"
+      },
+      "unchanged_functions": [
+        "Kernel.__init__",
+        "Kernel._effective",
+        "Kernel._event",
+        "Kernel._job_step",
+        "Kernel._new_job",
+        "Kernel._overlay",
+        "Kernel._source_step",
+        "Kernel._validate_constraint",
+        "Kernel.add_assumption",
+        "Kernel.change_loss",
+        "Kernel.cover_identity",
+        "Kernel.k",
+        "Kernel.run",
+        "Kernel.withdraw",
+        "admitted_data",
+        "bounded_arithmetic",
+        "canonical",
+        "digest",
+        "integer",
+        "interval",
+        "label",
+        "rational",
+        "receipt",
+        "tri",
+        "validate_expr",
+        "validate_query",
+        "vm_finished",
+        "vm_initial",
+        "vm_transition"
+      ]
+    },
+    "v3/checks/03_task_certificate.py": {
+      "added_functions": [
+        "TaskCertificate._task_record"
+      ],
+      "after_sha256": "5e7d7d669f4243dac0a0df77e429b86ac2439b7351dab70965702ccdc71b1e15",
+      "before_sha256": "6735a7be6819d44ae9d05de497c613595ef7de212ed41f070354d6e0bc27ec75",
+      "changed_functions": [
+        "TaskCertificate.__init__",
+        "TaskCertificate.certificate",
+        "TaskCertificate.certificate_is_current"
+      ],
+      "unchanged_fragments": {
+        "TaskCertificate.__init__.compiler_to_core": "98d0fb163be07d0d836aa15b5d721c765e8febfab1d2c5af5a3efeb3f5490716",
+        "TaskCertificate.certificate.before_result": "36574cfbae210b98f8b44cdb1535b9e4361e6718154150025f15acd3ddb3ecf2"
+      },
+      "unchanged_functions": [
+        "TaskCertificate._admit",
+        "TaskCertificate._guard",
+        "TaskCertificate._hash",
+        "TaskCertificate._same",
+        "TaskCertificate.accounting",
+        "TaskCertificate.add_assumption",
+        "TaskCertificate.run",
+        "TaskCertificate.withdraw"
+      ]
+    }
+  },
+  "historical-copies": {
+    "loss_copy_preserved": true,
+    "old": {
+      "active_evidence": [
+        "h"
+      ],
+      "active_source_sha256": "3a768139e5885347b277980b01379ae081e35689060f15b774fba6256a313654",
+      "assumptions": [
+        "h"
+      ],
+      "bounds": [
+        "0",
+        "0"
+      ],
+      "coordinates": {
+        "opaque-bit": {
+          "status": "UNRESOLVED"
+        }
+      },
+      "cover_revision": 0,
+      "cover_sha256": "fe42f3c446646487bc67e4fd80d35ce735b2388f861738fa70d15bc5f43d68a7",
+      "event": 2,
+      "feasibility": "UNRESOLVED",
+      "input_sha256": "d50d9ba5549c8318f95e00dc7c031eb989d4d4e0996bc570bb98db0fd393bde5",
+      "kernel_version": "finite-cover-v1",
+      "loss": "f",
+      "loss_record": {
+        "expr": [
+          "min",
+          [
+            "var",
+            0
+          ],
+          [
+            "add",
+            [
+              "rat",
+              "1"
+            ],
+            [
+              "scale",
+              "-1",
+              [
+                "var",
+                0
+              ]
+            ]
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "loss_sha256": "bec9841f2dc304ea6d6b25ace79d2fa999f016663403f6d65fd45141bcb77e67",
+      "objective_epoch": 0,
+      "processes": {
+        "opaque-bit": {
+          "disposition": "no_executable_producer",
+          "phase": "unsupported"
+        }
+      },
+      "report_version": "finite-cover-report-v2",
+      "resource_account": {
+        "agenda_entries_written": 1,
+        "control_operand_bits": 12,
+        "coordinate_reads": 3,
+        "coordinate_writes": 1,
+        "identity_bytes_hashed": 242,
+        "kernel_transactions": 2,
+        "literal_records_scanned": 1,
+        "loss_nodes": 6,
+        "max_rational_operand_bits": 1,
+        "peak_cells": 1,
+        "rational_comparisons": 2,
+        "rational_literal_reads": 1,
+        "rational_operand_bits_sum": 4,
+        "rational_operations": 4,
+        "setup_coordinate_writes": 1,
+        "setup_input_bytes": 286,
+        "setup_input_nodes": 30,
+        "setup_validation_nodes": 6,
+        "transaction_add_conditional_assumption": 1,
+        "transaction_report": 1,
+        "update_input_bytes": 75,
+        "update_input_nodes": 7,
+        "update_validation_nodes": 1
+      },
+      "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+      "scope": "p303-binding-development-v1",
+      "source_epoch": 1,
+      "source_exactly_filtered": false,
+      "source_record": {
+        "constraints": {
+          "h": {
+            "depends_on": [],
+            "expr": [
+              "var",
+              0
+            ],
+            "id": "h",
+            "kind": "conditional_assumption"
+          }
+        },
+        "queries": [
+          {
+            "id": "opaque-bit",
+            "kind": "opaque",
+            "statement": "Unresolved Boolean claim.",
+            "version": "1"
+          }
+        ],
+        "vm_version": "nat-register-v1"
+      },
+      "status": "CONDITIONAL_OUTER_BOUND",
+      "unit": "cost",
+      "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+      "vm_version": "nat-register-v1",
+      "witness": null
+    },
+    "source_copy_preserved": true,
+    "task_certificate": {
+      "action_names": [
+        "A",
+        "B"
+      ],
+      "boundary_snapshot": "Before this outer certificate's serialization; outside the core transaction allowance.",
+      "boundary_work": {
+        "binding_checks": 2,
+        "byte_comparisons": 6,
+        "bytes_hashed": 854,
+        "catalogue_bytes_encoded": 153,
+        "catalogue_nodes_traversed": 24,
+        "comparison_byte_envelope": 1204,
+        "compilation_action_records": 2,
+        "compilation_expression_nodes_copied": 6,
+        "compilation_positive_differences": 1,
+        "compilation_requests": 1,
+        "compilation_source_nodes_validated": 6,
+        "compiled_catalogue_bytes_encoded": 358,
+        "compiled_catalogue_nodes_traversed": 46,
+        "compiled_nodes_validated": 7,
+        "guard_catalogue_bytes_encoded": 306,
+        "guard_catalogue_nodes_traversed": 48,
+        "guard_losses_bytes_encoded": 716,
+        "guard_losses_nodes_traversed": 92,
+        "guard_queries_bytes_encoded": 182,
+        "guard_queries_nodes_traversed": 12,
+        "hash_calls": 4,
+        "query_binding_bytes_encoded": 91,
+        "query_binding_nodes_traversed": 6,
+        "request_bytes_encoded": 366,
+        "request_nodes_traversed": 36,
+        "task_binding_bytes_encoded": 262,
+        "task_binding_nodes_traversed": 29,
+        "threshold_comparisons": 1,
+        "threshold_operand_bits": 1
+      },
+      "catalogue_sha256": "94d91e6f21e14bc5ded95441913f689e4cc42def07fdfb4a8a3c8c7737bd470f",
+      "certified": true,
+      "common_unit": "cost",
+      "compiled_loss_name": "__task_regret__",
+      "compiled_loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+      "core_report": {
+        "active_evidence": [],
+        "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+        "assumptions": [],
+        "bounds": [
+          "0",
+          "0"
+        ],
+        "coordinates": {
+          "opaque-bit": {
+            "status": "UNRESOLVED"
+          }
+        },
+        "cover_revision": 1,
+        "cover_sha256": "0a668da0567239bd0243a1d4ca9ee213c46cf1dcbb0e14f81c92e740cfae0e08",
+        "event": 2,
+        "feasibility": "WITNESS",
+        "input_sha256": "7d4b78d2b9d9b630059a225625d63c1d281d295045c60773a7518714489441e0",
+        "kernel_version": "finite-cover-v1",
+        "loss": "__task_regret__",
+        "loss_record": {
+          "expr": [
+            "resid",
+            [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "1"
+              ]
+            ]
+          ],
+          "unit": "cost",
+          "version": "regret:dd9ac46d436b532280fd52afde3e5961a6601b955a29368505ad04302669d6b9"
+        },
+        "loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+        "objective_epoch": 0,
+        "processes": {
+          "opaque-bit": {
+            "disposition": "no_executable_producer",
+            "phase": "unsupported"
+          }
+        },
+        "report_version": "finite-cover-report-v2",
+        "resource_account": {
+          "control_operand_bits": 14,
+          "coordinate_reads": 4,
+          "coordinate_writes": 2,
+          "dispatch_checks": 1,
+          "identity_bytes_hashed": 168,
+          "kernel_transactions": 2,
+          "loss_nodes": 14,
+          "max_rational_operand_bits": 4,
+          "peak_cells": 2,
+          "rational_comparisons": 6,
+          "rational_literal_reads": 2,
+          "rational_operand_bits_sum": 52,
+          "rational_operations": 16,
+          "setup_coordinate_writes": 1,
+          "setup_input_bytes": 539,
+          "setup_input_nodes": 56,
+          "setup_validation_nodes": 13,
+          "transaction_report": 1,
+          "transaction_split": 1
+        },
+        "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+        "scope": "p303-binding-development-v1",
+        "source_epoch": 0,
+        "source_exactly_filtered": false,
+        "source_record": {
+          "constraints": {},
+          "queries": [
+            {
+              "id": "opaque-bit",
+              "kind": "opaque",
+              "statement": "Unresolved Boolean claim.",
+              "version": "1"
+            }
+          ],
+          "vm_version": "nat-register-v1"
+        },
+        "status": "CONDITIONAL_OUTER_BOUND",
+        "unit": "cost",
+        "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+        "vm_version": "nat-register-v1",
+        "witness": [
+          0
+        ]
+      },
+      "guarantee": "Pointwise tolerance against every supplied action, conditional on the active finite source.",
+      "no_certificate_meaning": "An excessive outer endpoint alone is not a counterexample or impossibility proof.",
+      "request_sha256": "88cef2461e86fcd2bbb58e780c961d19dd2793ee4d8548b9d53f405b6156f64b",
+      "schema": "value_logic.P3-03.task_certificate.v2",
+      "selected": "A",
+      "stage": "DEVELOPMENT",
+      "status": "CERTIFIED_CONDITIONAL",
+      "task_binding": {
+        "catalogue": {
+          "A": {
+            "expr": [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          },
+          "B": {
+            "expr": [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "1"
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          }
+        },
+        "common_unit": "cost",
+        "selected": "A",
+        "tolerance": "0",
+        "wrapper_version": "named-action-regret-v2"
+      },
+      "tolerance": "0",
+      "wrapper_version": "named-action-regret-v2"
+    },
+    "task_copy_preserved": true
+  },
+  "loss-divergence": {
+    "genuine_sha_collision": false,
+    "left": {
+      "active_evidence": [],
+      "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+      "assumptions": [],
+      "bounds": [
+        "0",
+        "0"
+      ],
+      "coordinates": {
+        "opaque-bit": {
+          "status": "UNRESOLVED"
+        }
+      },
+      "cover_revision": 0,
+      "cover_sha256": "fe42f3c446646487bc67e4fd80d35ce735b2388f861738fa70d15bc5f43d68a7",
+      "event": 2,
+      "feasibility": "WITNESS",
+      "input_sha256": "d50d9ba5549c8318f95e00dc7c031eb989d4d4e0996bc570bb98db0fd393bde5",
+      "kernel_version": "finite-cover-v1",
+      "loss": "f",
+      "loss_record": {
+        "expr": [
+          "rat",
+          "0"
+        ],
+        "unit": "cost",
+        "version": "2"
+      },
+      "loss_sha256": "1c9d8c11303f3952a1ebda2110883745a337c47e796e0c0ee74e20cf272c44a5",
+      "objective_epoch": 1,
+      "processes": {
+        "opaque-bit": {
+          "disposition": "no_executable_producer",
+          "phase": "unsupported"
+        }
+      },
+      "report_version": "finite-cover-report-v2",
+      "resource_account": {
+        "control_operand_bits": 12,
+        "identity_bytes_hashed": 163,
+        "kernel_transactions": 2,
+        "loss_nodes": 1,
+        "peak_cells": 1,
+        "rational_comparisons": 0,
+        "rational_literal_reads": 1,
+        "setup_coordinate_writes": 1,
+        "setup_input_bytes": 286,
+        "setup_input_nodes": 30,
+        "setup_validation_nodes": 6,
+        "transaction_change_objective": 1,
+        "transaction_report": 1,
+        "update_input_bytes": 48,
+        "update_input_nodes": 6,
+        "update_validation_nodes": 1
+      },
+      "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+      "scope": "p303-binding-development-v1",
+      "source_epoch": 0,
+      "source_exactly_filtered": false,
+      "source_record": {
+        "constraints": {},
+        "queries": [
+          {
+            "id": "opaque-bit",
+            "kind": "opaque",
+            "statement": "Unresolved Boolean claim.",
+            "version": "1"
+          }
+        ],
+        "vm_version": "nat-register-v1"
+      },
+      "status": "CONDITIONAL_OUTER_BOUND",
+      "unit": "cost",
+      "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+      "vm_version": "nat-register-v1",
+      "witness": [
+        0
+      ]
+    },
+    "right": {
+      "active_evidence": [],
+      "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+      "assumptions": [],
+      "bounds": [
+        "1",
+        "1"
+      ],
+      "coordinates": {
+        "opaque-bit": {
+          "status": "UNRESOLVED"
+        }
+      },
+      "cover_revision": 0,
+      "cover_sha256": "fe42f3c446646487bc67e4fd80d35ce735b2388f861738fa70d15bc5f43d68a7",
+      "event": 2,
+      "feasibility": "WITNESS",
+      "input_sha256": "d50d9ba5549c8318f95e00dc7c031eb989d4d4e0996bc570bb98db0fd393bde5",
+      "kernel_version": "finite-cover-v1",
+      "loss": "f",
+      "loss_record": {
+        "expr": [
+          "rat",
+          "1"
+        ],
+        "unit": "cost",
+        "version": "2"
+      },
+      "loss_sha256": "db0789e7aee839ec3ce824cbcfccdce29c4c767d027d1009672ec14623af932f",
+      "objective_epoch": 1,
+      "processes": {
+        "opaque-bit": {
+          "disposition": "no_executable_producer",
+          "phase": "unsupported"
+        }
+      },
+      "report_version": "finite-cover-report-v2",
+      "resource_account": {
+        "control_operand_bits": 12,
+        "identity_bytes_hashed": 163,
+        "kernel_transactions": 2,
+        "loss_nodes": 1,
+        "peak_cells": 1,
+        "rational_comparisons": 0,
+        "rational_literal_reads": 1,
+        "setup_coordinate_writes": 1,
+        "setup_input_bytes": 286,
+        "setup_input_nodes": 30,
+        "setup_validation_nodes": 6,
+        "transaction_change_objective": 1,
+        "transaction_report": 1,
+        "update_input_bytes": 48,
+        "update_input_nodes": 6,
+        "update_validation_nodes": 1
+      },
+      "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+      "scope": "p303-binding-development-v1",
+      "source_epoch": 0,
+      "source_exactly_filtered": false,
+      "source_record": {
+        "constraints": {},
+        "queries": [
+          {
+            "id": "opaque-bit",
+            "kind": "opaque",
+            "statement": "Unresolved Boolean claim.",
+            "version": "1"
+          }
+        ],
+        "vm_version": "nat-register-v1"
+      },
+      "status": "CONDITIONAL_OUTER_BOUND",
+      "unit": "cost",
+      "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+      "vm_version": "nat-register-v1",
+      "witness": [
+        0
+      ]
+    },
+    "substituted": {
+      "active_evidence": [],
+      "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+      "assumptions": [],
+      "bounds": [
+        "1",
+        "1"
+      ],
+      "coordinates": {
+        "opaque-bit": {
+          "status": "UNRESOLVED"
+        }
+      },
+      "cover_revision": 0,
+      "cover_sha256": "fe42f3c446646487bc67e4fd80d35ce735b2388f861738fa70d15bc5f43d68a7",
+      "event": 2,
+      "feasibility": "WITNESS",
+      "input_sha256": "d50d9ba5549c8318f95e00dc7c031eb989d4d4e0996bc570bb98db0fd393bde5",
+      "kernel_version": "finite-cover-v1",
+      "loss": "f",
+      "loss_record": {
+        "expr": [
+          "rat",
+          "1"
+        ],
+        "unit": "cost",
+        "version": "2"
+      },
+      "loss_sha256": "1c9d8c11303f3952a1ebda2110883745a337c47e796e0c0ee74e20cf272c44a5",
+      "objective_epoch": 1,
+      "processes": {
+        "opaque-bit": {
+          "disposition": "no_executable_producer",
+          "phase": "unsupported"
+        }
+      },
+      "report_version": "finite-cover-report-v2",
+      "resource_account": {
+        "control_operand_bits": 12,
+        "identity_bytes_hashed": 163,
+        "kernel_transactions": 2,
+        "loss_nodes": 1,
+        "peak_cells": 1,
+        "rational_comparisons": 0,
+        "rational_literal_reads": 1,
+        "setup_coordinate_writes": 1,
+        "setup_input_bytes": 286,
+        "setup_input_nodes": 30,
+        "setup_validation_nodes": 6,
+        "transaction_change_objective": 1,
+        "transaction_report": 1,
+        "update_input_bytes": 48,
+        "update_input_nodes": 6,
+        "update_validation_nodes": 1
+      },
+      "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+      "scope": "p303-binding-development-v1",
+      "source_epoch": 0,
+      "source_exactly_filtered": false,
+      "source_record": {
+        "constraints": {},
+        "queries": [
+          {
+            "id": "opaque-bit",
+            "kind": "opaque",
+            "statement": "Unresolved Boolean claim.",
+            "version": "1"
+          }
+        ],
+        "vm_version": "nat-register-v1"
+      },
+      "status": "CONDITIONAL_OUTER_BOUND",
+      "unit": "cost",
+      "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+      "vm_version": "nat-register-v1",
+      "witness": [
+        0
+      ]
+    }
+  },
+  "non-authentication": {
+    "altered": {
+      "active_evidence": [],
+      "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+      "assumptions": [],
+      "bounds": [
+        "100",
+        "100"
+      ],
+      "coordinates": {
+        "opaque-bit": {
+          "status": "UNRESOLVED"
+        }
+      },
+      "cover_revision": 1,
+      "cover_sha256": "0a668da0567239bd0243a1d4ca9ee213c46cf1dcbb0e14f81c92e740cfae0e08",
+      "event": 2,
+      "feasibility": "WITNESS",
+      "input_sha256": "d50d9ba5549c8318f95e00dc7c031eb989d4d4e0996bc570bb98db0fd393bde5",
+      "kernel_version": "finite-cover-v1",
+      "loss": "f",
+      "loss_record": {
+        "expr": [
+          "min",
+          [
+            "var",
+            0
+          ],
+          [
+            "add",
+            [
+              "rat",
+              "1"
+            ],
+            [
+              "scale",
+              "-1",
+              [
+                "var",
+                0
+              ]
+            ]
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "loss_sha256": "bec9841f2dc304ea6d6b25ace79d2fa999f016663403f6d65fd45141bcb77e67",
+      "objective_epoch": 0,
+      "processes": {
+        "opaque-bit": {
+          "disposition": "no_executable_producer",
+          "phase": "unsupported"
+        }
+      },
+      "report_version": "finite-cover-report-v2",
+      "resource_account": {
+        "control_operand_bits": 14,
+        "coordinate_reads": 4,
+        "coordinate_writes": 2,
+        "dispatch_checks": 1,
+        "identity_bytes_hashed": 168,
+        "kernel_transactions": 2,
+        "loss_nodes": 12,
+        "max_rational_operand_bits": 1,
+        "peak_cells": 2,
+        "rational_comparisons": 6,
+        "rational_literal_reads": 2,
+        "rational_operand_bits_sum": 8,
+        "rational_operations": 8,
+        "setup_coordinate_writes": 1,
+        "setup_input_bytes": 286,
+        "setup_input_nodes": 30,
+        "setup_validation_nodes": 6,
+        "transaction_report": 1,
+        "transaction_split": 1
+      },
+      "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+      "scope": "p303-binding-development-v1",
+      "source_epoch": 0,
+      "source_exactly_filtered": false,
+      "source_record": {
+        "constraints": {},
+        "queries": [
+          {
+            "id": "opaque-bit",
+            "kind": "opaque",
+            "statement": "Unresolved Boolean claim.",
+            "version": "1"
+          }
+        ],
+        "vm_version": "nat-register-v1"
+      },
+      "status": "CONDITIONAL_OUTER_BOUND",
+      "unit": "cost",
+      "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+      "vm_version": "nat-register-v1",
+      "witness": [
+        0
+      ]
+    },
+    "altered_identity_current": true,
+    "genuine": {
+      "active_evidence": [],
+      "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+      "assumptions": [],
+      "bounds": [
+        "0",
+        "0"
+      ],
+      "coordinates": {
+        "opaque-bit": {
+          "status": "UNRESOLVED"
+        }
+      },
+      "cover_revision": 1,
+      "cover_sha256": "0a668da0567239bd0243a1d4ca9ee213c46cf1dcbb0e14f81c92e740cfae0e08",
+      "event": 2,
+      "feasibility": "WITNESS",
+      "input_sha256": "d50d9ba5549c8318f95e00dc7c031eb989d4d4e0996bc570bb98db0fd393bde5",
+      "kernel_version": "finite-cover-v1",
+      "loss": "f",
+      "loss_record": {
+        "expr": [
+          "min",
+          [
+            "var",
+            0
+          ],
+          [
+            "add",
+            [
+              "rat",
+              "1"
+            ],
+            [
+              "scale",
+              "-1",
+              [
+                "var",
+                0
+              ]
+            ]
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "loss_sha256": "bec9841f2dc304ea6d6b25ace79d2fa999f016663403f6d65fd45141bcb77e67",
+      "objective_epoch": 0,
+      "processes": {
+        "opaque-bit": {
+          "disposition": "no_executable_producer",
+          "phase": "unsupported"
+        }
+      },
+      "report_version": "finite-cover-report-v2",
+      "resource_account": {
+        "control_operand_bits": 14,
+        "coordinate_reads": 4,
+        "coordinate_writes": 2,
+        "dispatch_checks": 1,
+        "identity_bytes_hashed": 168,
+        "kernel_transactions": 2,
+        "loss_nodes": 12,
+        "max_rational_operand_bits": 1,
+        "peak_cells": 2,
+        "rational_comparisons": 6,
+        "rational_literal_reads": 2,
+        "rational_operand_bits_sum": 8,
+        "rational_operations": 8,
+        "setup_coordinate_writes": 1,
+        "setup_input_bytes": 286,
+        "setup_input_nodes": 30,
+        "setup_validation_nodes": 6,
+        "transaction_report": 1,
+        "transaction_split": 1
+      },
+      "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+      "scope": "p303-binding-development-v1",
+      "source_epoch": 0,
+      "source_exactly_filtered": false,
+      "source_record": {
+        "constraints": {},
+        "queries": [
+          {
+            "id": "opaque-bit",
+            "kind": "opaque",
+            "statement": "Unresolved Boolean claim.",
+            "version": "1"
+          }
+        ],
+        "vm_version": "nat-register-v1"
+      },
+      "status": "CONDITIONAL_OUTER_BOUND",
+      "unit": "cost",
+      "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+      "vm_version": "nat-register-v1",
+      "witness": [
+        0
+      ]
+    },
+    "meaning": "Only current represented-premise/target identity was checked, not the correctness of altered numbers.",
+    "task_altered": {
+      "action_names": [
+        "A",
+        "B"
+      ],
+      "boundary_snapshot": "Before this outer certificate's serialization; outside the core transaction allowance.",
+      "boundary_work": {
+        "binding_checks": 2,
+        "byte_comparisons": 6,
+        "bytes_hashed": 854,
+        "catalogue_bytes_encoded": 153,
+        "catalogue_nodes_traversed": 24,
+        "comparison_byte_envelope": 1204,
+        "compilation_action_records": 2,
+        "compilation_expression_nodes_copied": 6,
+        "compilation_positive_differences": 1,
+        "compilation_requests": 1,
+        "compilation_source_nodes_validated": 6,
+        "compiled_catalogue_bytes_encoded": 358,
+        "compiled_catalogue_nodes_traversed": 46,
+        "compiled_nodes_validated": 7,
+        "guard_catalogue_bytes_encoded": 306,
+        "guard_catalogue_nodes_traversed": 48,
+        "guard_losses_bytes_encoded": 716,
+        "guard_losses_nodes_traversed": 92,
+        "guard_queries_bytes_encoded": 182,
+        "guard_queries_nodes_traversed": 12,
+        "hash_calls": 4,
+        "query_binding_bytes_encoded": 91,
+        "query_binding_nodes_traversed": 6,
+        "request_bytes_encoded": 366,
+        "request_nodes_traversed": 36,
+        "task_binding_bytes_encoded": 262,
+        "task_binding_nodes_traversed": 29,
+        "threshold_comparisons": 1,
+        "threshold_operand_bits": 1
+      },
+      "catalogue_sha256": "94d91e6f21e14bc5ded95441913f689e4cc42def07fdfb4a8a3c8c7737bd470f",
+      "certified": true,
+      "common_unit": "cost",
+      "compiled_loss_name": "__task_regret__",
+      "compiled_loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+      "core_report": {
+        "active_evidence": [],
+        "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+        "assumptions": [],
+        "bounds": [
+          "100",
+          "100"
+        ],
+        "coordinates": {
+          "opaque-bit": {
+            "status": "UNRESOLVED"
+          }
+        },
+        "cover_revision": 1,
+        "cover_sha256": "0a668da0567239bd0243a1d4ca9ee213c46cf1dcbb0e14f81c92e740cfae0e08",
+        "event": 2,
+        "feasibility": "WITNESS",
+        "input_sha256": "7d4b78d2b9d9b630059a225625d63c1d281d295045c60773a7518714489441e0",
+        "kernel_version": "finite-cover-v1",
+        "loss": "__task_regret__",
+        "loss_record": {
+          "expr": [
+            "resid",
+            [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "1"
+              ]
+            ]
+          ],
+          "unit": "cost",
+          "version": "regret:dd9ac46d436b532280fd52afde3e5961a6601b955a29368505ad04302669d6b9"
+        },
+        "loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+        "objective_epoch": 0,
+        "processes": {
+          "opaque-bit": {
+            "disposition": "no_executable_producer",
+            "phase": "unsupported"
+          }
+        },
+        "report_version": "finite-cover-report-v2",
+        "resource_account": {
+          "control_operand_bits": 14,
+          "coordinate_reads": 4,
+          "coordinate_writes": 2,
+          "dispatch_checks": 1,
+          "identity_bytes_hashed": 168,
+          "kernel_transactions": 2,
+          "loss_nodes": 14,
+          "max_rational_operand_bits": 4,
+          "peak_cells": 2,
+          "rational_comparisons": 6,
+          "rational_literal_reads": 2,
+          "rational_operand_bits_sum": 52,
+          "rational_operations": 16,
+          "setup_coordinate_writes": 1,
+          "setup_input_bytes": 539,
+          "setup_input_nodes": 56,
+          "setup_validation_nodes": 13,
+          "transaction_report": 1,
+          "transaction_split": 1
+        },
+        "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+        "scope": "p303-binding-development-v1",
+        "source_epoch": 0,
+        "source_exactly_filtered": false,
+        "source_record": {
+          "constraints": {},
+          "queries": [
+            {
+              "id": "opaque-bit",
+              "kind": "opaque",
+              "statement": "Unresolved Boolean claim.",
+              "version": "1"
+            }
+          ],
+          "vm_version": "nat-register-v1"
+        },
+        "status": "CONDITIONAL_OUTER_BOUND",
+        "unit": "cost",
+        "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+        "vm_version": "nat-register-v1",
+        "witness": [
+          0
+        ]
+      },
+      "guarantee": "Pointwise tolerance against every supplied action, conditional on the active finite source.",
+      "no_certificate_meaning": "An excessive outer endpoint alone is not a counterexample or impossibility proof.",
+      "request_sha256": "88cef2461e86fcd2bbb58e780c961d19dd2793ee4d8548b9d53f405b6156f64b",
+      "schema": "value_logic.P3-03.task_certificate.v2",
+      "selected": "A",
+      "stage": "DEVELOPMENT",
+      "status": "CERTIFIED_CONDITIONAL",
+      "task_binding": {
+        "catalogue": {
+          "A": {
+            "expr": [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          },
+          "B": {
+            "expr": [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "1"
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          }
+        },
+        "common_unit": "cost",
+        "selected": "A",
+        "tolerance": "0",
+        "wrapper_version": "named-action-regret-v2"
+      },
+      "tolerance": "0",
+      "wrapper_version": "named-action-regret-v2"
+    },
+    "task_altered_identity_current": true,
+    "task_original": {
+      "action_names": [
+        "A",
+        "B"
+      ],
+      "boundary_snapshot": "Before this outer certificate's serialization; outside the core transaction allowance.",
+      "boundary_work": {
+        "binding_checks": 2,
+        "byte_comparisons": 6,
+        "bytes_hashed": 854,
+        "catalogue_bytes_encoded": 153,
+        "catalogue_nodes_traversed": 24,
+        "comparison_byte_envelope": 1204,
+        "compilation_action_records": 2,
+        "compilation_expression_nodes_copied": 6,
+        "compilation_positive_differences": 1,
+        "compilation_requests": 1,
+        "compilation_source_nodes_validated": 6,
+        "compiled_catalogue_bytes_encoded": 358,
+        "compiled_catalogue_nodes_traversed": 46,
+        "compiled_nodes_validated": 7,
+        "guard_catalogue_bytes_encoded": 306,
+        "guard_catalogue_nodes_traversed": 48,
+        "guard_losses_bytes_encoded": 716,
+        "guard_losses_nodes_traversed": 92,
+        "guard_queries_bytes_encoded": 182,
+        "guard_queries_nodes_traversed": 12,
+        "hash_calls": 4,
+        "query_binding_bytes_encoded": 91,
+        "query_binding_nodes_traversed": 6,
+        "request_bytes_encoded": 366,
+        "request_nodes_traversed": 36,
+        "task_binding_bytes_encoded": 262,
+        "task_binding_nodes_traversed": 29,
+        "threshold_comparisons": 1,
+        "threshold_operand_bits": 1
+      },
+      "catalogue_sha256": "94d91e6f21e14bc5ded95441913f689e4cc42def07fdfb4a8a3c8c7737bd470f",
+      "certified": true,
+      "common_unit": "cost",
+      "compiled_loss_name": "__task_regret__",
+      "compiled_loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+      "core_report": {
+        "active_evidence": [],
+        "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+        "assumptions": [],
+        "bounds": [
+          "0",
+          "0"
+        ],
+        "coordinates": {
+          "opaque-bit": {
+            "status": "UNRESOLVED"
+          }
+        },
+        "cover_revision": 1,
+        "cover_sha256": "0a668da0567239bd0243a1d4ca9ee213c46cf1dcbb0e14f81c92e740cfae0e08",
+        "event": 2,
+        "feasibility": "WITNESS",
+        "input_sha256": "7d4b78d2b9d9b630059a225625d63c1d281d295045c60773a7518714489441e0",
+        "kernel_version": "finite-cover-v1",
+        "loss": "__task_regret__",
+        "loss_record": {
+          "expr": [
+            "resid",
+            [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "1"
+              ]
+            ]
+          ],
+          "unit": "cost",
+          "version": "regret:dd9ac46d436b532280fd52afde3e5961a6601b955a29368505ad04302669d6b9"
+        },
+        "loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+        "objective_epoch": 0,
+        "processes": {
+          "opaque-bit": {
+            "disposition": "no_executable_producer",
+            "phase": "unsupported"
+          }
+        },
+        "report_version": "finite-cover-report-v2",
+        "resource_account": {
+          "control_operand_bits": 14,
+          "coordinate_reads": 4,
+          "coordinate_writes": 2,
+          "dispatch_checks": 1,
+          "identity_bytes_hashed": 168,
+          "kernel_transactions": 2,
+          "loss_nodes": 14,
+          "max_rational_operand_bits": 4,
+          "peak_cells": 2,
+          "rational_comparisons": 6,
+          "rational_literal_reads": 2,
+          "rational_operand_bits_sum": 52,
+          "rational_operations": 16,
+          "setup_coordinate_writes": 1,
+          "setup_input_bytes": 539,
+          "setup_input_nodes": 56,
+          "setup_validation_nodes": 13,
+          "transaction_report": 1,
+          "transaction_split": 1
+        },
+        "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+        "scope": "p303-binding-development-v1",
+        "source_epoch": 0,
+        "source_exactly_filtered": false,
+        "source_record": {
+          "constraints": {},
+          "queries": [
+            {
+              "id": "opaque-bit",
+              "kind": "opaque",
+              "statement": "Unresolved Boolean claim.",
+              "version": "1"
+            }
+          ],
+          "vm_version": "nat-register-v1"
+        },
+        "status": "CONDITIONAL_OUTER_BOUND",
+        "unit": "cost",
+        "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+        "vm_version": "nat-register-v1",
+        "witness": [
+          0
+        ]
+      },
+      "guarantee": "Pointwise tolerance against every supplied action, conditional on the active finite source.",
+      "no_certificate_meaning": "An excessive outer endpoint alone is not a counterexample or impossibility proof.",
+      "request_sha256": "88cef2461e86fcd2bbb58e780c961d19dd2793ee4d8548b9d53f405b6156f64b",
+      "schema": "value_logic.P3-03.task_certificate.v2",
+      "selected": "A",
+      "stage": "DEVELOPMENT",
+      "status": "CERTIFIED_CONDITIONAL",
+      "task_binding": {
+        "catalogue": {
+          "A": {
+            "expr": [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          },
+          "B": {
+            "expr": [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "1"
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          }
+        },
+        "common_unit": "cost",
+        "selected": "A",
+        "tolerance": "0",
+        "wrapper_version": "named-action-regret-v2"
+      },
+      "tolerance": "0",
+      "wrapper_version": "named-action-regret-v2"
+    }
+  },
+  "refinement-reuse": {
+    "new": {
+      "active_evidence": [],
+      "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+      "assumptions": [],
+      "bounds": [
+        "0",
+        "0"
+      ],
+      "coordinates": {
+        "opaque-bit": {
+          "status": "UNRESOLVED"
+        }
+      },
+      "cover_revision": 1,
+      "cover_sha256": "0a668da0567239bd0243a1d4ca9ee213c46cf1dcbb0e14f81c92e740cfae0e08",
+      "event": 3,
+      "feasibility": "WITNESS",
+      "input_sha256": "d50d9ba5549c8318f95e00dc7c031eb989d4d4e0996bc570bb98db0fd393bde5",
+      "kernel_version": "finite-cover-v1",
+      "loss": "f",
+      "loss_record": {
+        "expr": [
+          "min",
+          [
+            "var",
+            0
+          ],
+          [
+            "add",
+            [
+              "rat",
+              "1"
+            ],
+            [
+              "scale",
+              "-1",
+              [
+                "var",
+                0
+              ]
+            ]
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "loss_sha256": "bec9841f2dc304ea6d6b25ace79d2fa999f016663403f6d65fd45141bcb77e67",
+      "objective_epoch": 0,
+      "processes": {
+        "opaque-bit": {
+          "disposition": "no_executable_producer",
+          "phase": "unsupported"
+        }
+      },
+      "report_version": "finite-cover-report-v2",
+      "resource_account": {
+        "control_operand_bits": 21,
+        "coordinate_reads": 6,
+        "coordinate_writes": 2,
+        "dispatch_checks": 1,
+        "identity_bytes_hashed": 331,
+        "kernel_transactions": 3,
+        "loss_nodes": 18,
+        "max_rational_operand_bits": 1,
+        "peak_cells": 2,
+        "rational_comparisons": 8,
+        "rational_literal_reads": 3,
+        "rational_operand_bits_sum": 12,
+        "rational_operations": 12,
+        "report_bytes_created": 1753,
+        "setup_coordinate_writes": 1,
+        "setup_input_bytes": 286,
+        "setup_input_nodes": 30,
+        "setup_validation_nodes": 6,
+        "transaction_report": 2,
+        "transaction_split": 1
+      },
+      "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+      "scope": "p303-binding-development-v1",
+      "source_epoch": 0,
+      "source_exactly_filtered": false,
+      "source_record": {
+        "constraints": {},
+        "queries": [
+          {
+            "id": "opaque-bit",
+            "kind": "opaque",
+            "statement": "Unresolved Boolean claim.",
+            "version": "1"
+          }
+        ],
+        "vm_version": "nat-register-v1"
+      },
+      "status": "CONDITIONAL_OUTER_BOUND",
+      "unit": "cost",
+      "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+      "vm_version": "nat-register-v1",
+      "witness": [
+        0
+      ]
+    },
+    "old": {
+      "active_evidence": [],
+      "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+      "assumptions": [],
+      "bounds": [
+        "0",
+        "1"
+      ],
+      "coordinates": {
+        "opaque-bit": {
+          "status": "UNRESOLVED"
+        }
+      },
+      "cover_revision": 0,
+      "cover_sha256": "fe42f3c446646487bc67e4fd80d35ce735b2388f861738fa70d15bc5f43d68a7",
+      "event": 1,
+      "feasibility": "WITNESS",
+      "input_sha256": "d50d9ba5549c8318f95e00dc7c031eb989d4d4e0996bc570bb98db0fd393bde5",
+      "kernel_version": "finite-cover-v1",
+      "loss": "f",
+      "loss_record": {
+        "expr": [
+          "min",
+          [
+            "var",
+            0
+          ],
+          [
+            "add",
+            [
+              "rat",
+              "1"
+            ],
+            [
+              "scale",
+              "-1",
+              [
+                "var",
+                0
+              ]
+            ]
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "loss_sha256": "bec9841f2dc304ea6d6b25ace79d2fa999f016663403f6d65fd45141bcb77e67",
+      "objective_epoch": 0,
+      "processes": {
+        "opaque-bit": {
+          "disposition": "no_executable_producer",
+          "phase": "unsupported"
+        }
+      },
+      "report_version": "finite-cover-report-v2",
+      "resource_account": {
+        "control_operand_bits": 6,
+        "coordinate_reads": 2,
+        "identity_bytes_hashed": 163,
+        "kernel_transactions": 1,
+        "loss_nodes": 6,
+        "max_rational_operand_bits": 1,
+        "peak_cells": 1,
+        "rational_comparisons": 2,
+        "rational_literal_reads": 1,
+        "rational_operand_bits_sum": 4,
+        "rational_operations": 4,
+        "setup_coordinate_writes": 1,
+        "setup_input_bytes": 286,
+        "setup_input_nodes": 30,
+        "setup_validation_nodes": 6,
+        "transaction_report": 1
+      },
+      "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+      "scope": "p303-binding-development-v1",
+      "source_epoch": 0,
+      "source_exactly_filtered": false,
+      "source_record": {
+        "constraints": {},
+        "queries": [
+          {
+            "id": "opaque-bit",
+            "kind": "opaque",
+            "statement": "Unresolved Boolean claim.",
+            "version": "1"
+          }
+        ],
+        "vm_version": "nat-register-v1"
+      },
+      "status": "CONDITIONAL_OUTER_BOUND",
+      "unit": "cost",
+      "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+      "vm_version": "nat-register-v1",
+      "witness": [
+        0
+      ]
+    },
+    "task_certificate": {
+      "action_names": [
+        "A",
+        "B"
+      ],
+      "boundary_snapshot": "Before this outer certificate's serialization; outside the core transaction allowance.",
+      "boundary_work": {
+        "binding_checks": 2,
+        "byte_comparisons": 6,
+        "bytes_hashed": 854,
+        "catalogue_bytes_encoded": 153,
+        "catalogue_nodes_traversed": 24,
+        "comparison_byte_envelope": 1204,
+        "compilation_action_records": 2,
+        "compilation_expression_nodes_copied": 6,
+        "compilation_positive_differences": 1,
+        "compilation_requests": 1,
+        "compilation_source_nodes_validated": 6,
+        "compiled_catalogue_bytes_encoded": 358,
+        "compiled_catalogue_nodes_traversed": 46,
+        "compiled_nodes_validated": 7,
+        "guard_catalogue_bytes_encoded": 306,
+        "guard_catalogue_nodes_traversed": 48,
+        "guard_losses_bytes_encoded": 716,
+        "guard_losses_nodes_traversed": 92,
+        "guard_queries_bytes_encoded": 182,
+        "guard_queries_nodes_traversed": 12,
+        "hash_calls": 4,
+        "query_binding_bytes_encoded": 91,
+        "query_binding_nodes_traversed": 6,
+        "request_bytes_encoded": 366,
+        "request_nodes_traversed": 36,
+        "task_binding_bytes_encoded": 262,
+        "task_binding_nodes_traversed": 29,
+        "threshold_comparisons": 1,
+        "threshold_operand_bits": 1
+      },
+      "catalogue_sha256": "94d91e6f21e14bc5ded95441913f689e4cc42def07fdfb4a8a3c8c7737bd470f",
+      "certified": true,
+      "common_unit": "cost",
+      "compiled_loss_name": "__task_regret__",
+      "compiled_loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+      "core_report": {
+        "active_evidence": [],
+        "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+        "assumptions": [],
+        "bounds": [
+          "0",
+          "0"
+        ],
+        "coordinates": {
+          "opaque-bit": {
+            "status": "UNRESOLVED"
+          }
+        },
+        "cover_revision": 1,
+        "cover_sha256": "0a668da0567239bd0243a1d4ca9ee213c46cf1dcbb0e14f81c92e740cfae0e08",
+        "event": 2,
+        "feasibility": "WITNESS",
+        "input_sha256": "7d4b78d2b9d9b630059a225625d63c1d281d295045c60773a7518714489441e0",
+        "kernel_version": "finite-cover-v1",
+        "loss": "__task_regret__",
+        "loss_record": {
+          "expr": [
+            "resid",
+            [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "1"
+              ]
+            ]
+          ],
+          "unit": "cost",
+          "version": "regret:dd9ac46d436b532280fd52afde3e5961a6601b955a29368505ad04302669d6b9"
+        },
+        "loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+        "objective_epoch": 0,
+        "processes": {
+          "opaque-bit": {
+            "disposition": "no_executable_producer",
+            "phase": "unsupported"
+          }
+        },
+        "report_version": "finite-cover-report-v2",
+        "resource_account": {
+          "control_operand_bits": 14,
+          "coordinate_reads": 4,
+          "coordinate_writes": 2,
+          "dispatch_checks": 1,
+          "identity_bytes_hashed": 168,
+          "kernel_transactions": 2,
+          "loss_nodes": 14,
+          "max_rational_operand_bits": 4,
+          "peak_cells": 2,
+          "rational_comparisons": 6,
+          "rational_literal_reads": 2,
+          "rational_operand_bits_sum": 52,
+          "rational_operations": 16,
+          "setup_coordinate_writes": 1,
+          "setup_input_bytes": 539,
+          "setup_input_nodes": 56,
+          "setup_validation_nodes": 13,
+          "transaction_report": 1,
+          "transaction_split": 1
+        },
+        "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+        "scope": "p303-binding-development-v1",
+        "source_epoch": 0,
+        "source_exactly_filtered": false,
+        "source_record": {
+          "constraints": {},
+          "queries": [
+            {
+              "id": "opaque-bit",
+              "kind": "opaque",
+              "statement": "Unresolved Boolean claim.",
+              "version": "1"
+            }
+          ],
+          "vm_version": "nat-register-v1"
+        },
+        "status": "CONDITIONAL_OUTER_BOUND",
+        "unit": "cost",
+        "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+        "vm_version": "nat-register-v1",
+        "witness": [
+          0
+        ]
+      },
+      "guarantee": "Pointwise tolerance against every supplied action, conditional on the active finite source.",
+      "no_certificate_meaning": "An excessive outer endpoint alone is not a counterexample or impossibility proof.",
+      "request_sha256": "88cef2461e86fcd2bbb58e780c961d19dd2793ee4d8548b9d53f405b6156f64b",
+      "schema": "value_logic.P3-03.task_certificate.v2",
+      "selected": "A",
+      "stage": "DEVELOPMENT",
+      "status": "CERTIFIED_CONDITIONAL",
+      "task_binding": {
+        "catalogue": {
+          "A": {
+            "expr": [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          },
+          "B": {
+            "expr": [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "1"
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          }
+        },
+        "common_unit": "cost",
+        "selected": "A",
+        "tolerance": "0",
+        "wrapper_version": "named-action-regret-v2"
+      },
+      "tolerance": "0",
+      "wrapper_version": "named-action-regret-v2"
+    }
+  },
+  "source-divergence": {
+    "genuine_sha_collision": false,
+    "left": {
+      "active_evidence": [
+        "h"
+      ],
+      "active_source_sha256": "3a768139e5885347b277980b01379ae081e35689060f15b774fba6256a313654",
+      "assumptions": [
+        "h"
+      ],
+      "bounds": [
+        "0",
+        "0"
+      ],
+      "coordinates": {
+        "opaque-bit": {
+          "status": "UNRESOLVED"
+        }
+      },
+      "cover_revision": 0,
+      "cover_sha256": "fe42f3c446646487bc67e4fd80d35ce735b2388f861738fa70d15bc5f43d68a7",
+      "event": 2,
+      "feasibility": "UNRESOLVED",
+      "input_sha256": "d50d9ba5549c8318f95e00dc7c031eb989d4d4e0996bc570bb98db0fd393bde5",
+      "kernel_version": "finite-cover-v1",
+      "loss": "f",
+      "loss_record": {
+        "expr": [
+          "min",
+          [
+            "var",
+            0
+          ],
+          [
+            "add",
+            [
+              "rat",
+              "1"
+            ],
+            [
+              "scale",
+              "-1",
+              [
+                "var",
+                0
+              ]
+            ]
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "loss_sha256": "bec9841f2dc304ea6d6b25ace79d2fa999f016663403f6d65fd45141bcb77e67",
+      "objective_epoch": 0,
+      "processes": {
+        "opaque-bit": {
+          "disposition": "no_executable_producer",
+          "phase": "unsupported"
+        }
+      },
+      "report_version": "finite-cover-report-v2",
+      "resource_account": {
+        "agenda_entries_written": 1,
+        "control_operand_bits": 12,
+        "coordinate_reads": 3,
+        "coordinate_writes": 1,
+        "identity_bytes_hashed": 242,
+        "kernel_transactions": 2,
+        "literal_records_scanned": 1,
+        "loss_nodes": 6,
+        "max_rational_operand_bits": 1,
+        "peak_cells": 1,
+        "rational_comparisons": 2,
+        "rational_literal_reads": 1,
+        "rational_operand_bits_sum": 4,
+        "rational_operations": 4,
+        "setup_coordinate_writes": 1,
+        "setup_input_bytes": 286,
+        "setup_input_nodes": 30,
+        "setup_validation_nodes": 6,
+        "transaction_add_conditional_assumption": 1,
+        "transaction_report": 1,
+        "update_input_bytes": 75,
+        "update_input_nodes": 7,
+        "update_validation_nodes": 1
+      },
+      "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+      "scope": "p303-binding-development-v1",
+      "source_epoch": 1,
+      "source_exactly_filtered": false,
+      "source_record": {
+        "constraints": {
+          "h": {
+            "depends_on": [],
+            "expr": [
+              "var",
+              0
+            ],
+            "id": "h",
+            "kind": "conditional_assumption"
+          }
+        },
+        "queries": [
+          {
+            "id": "opaque-bit",
+            "kind": "opaque",
+            "statement": "Unresolved Boolean claim.",
+            "version": "1"
+          }
+        ],
+        "vm_version": "nat-register-v1"
+      },
+      "status": "CONDITIONAL_OUTER_BOUND",
+      "unit": "cost",
+      "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+      "vm_version": "nat-register-v1",
+      "witness": null
+    },
+    "right": {
+      "active_evidence": [
+        "h"
+      ],
+      "active_source_sha256": "3746a36fa443a9198878ab934dd73986a662505515e14ec454b6de4fa1b6be6a",
+      "assumptions": [
+        "h"
+      ],
+      "bounds": [
+        "0",
+        "0"
+      ],
+      "coordinates": {
+        "opaque-bit": {
+          "status": "UNRESOLVED"
+        }
+      },
+      "cover_revision": 0,
+      "cover_sha256": "fe42f3c446646487bc67e4fd80d35ce735b2388f861738fa70d15bc5f43d68a7",
+      "event": 2,
+      "feasibility": "UNRESOLVED",
+      "input_sha256": "d50d9ba5549c8318f95e00dc7c031eb989d4d4e0996bc570bb98db0fd393bde5",
+      "kernel_version": "finite-cover-v1",
+      "loss": "f",
+      "loss_record": {
+        "expr": [
+          "min",
+          [
+            "var",
+            0
+          ],
+          [
+            "add",
+            [
+              "rat",
+              "1"
+            ],
+            [
+              "scale",
+              "-1",
+              [
+                "var",
+                0
+              ]
+            ]
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "loss_sha256": "bec9841f2dc304ea6d6b25ace79d2fa999f016663403f6d65fd45141bcb77e67",
+      "objective_epoch": 0,
+      "processes": {
+        "opaque-bit": {
+          "disposition": "no_executable_producer",
+          "phase": "unsupported"
+        }
+      },
+      "report_version": "finite-cover-report-v2",
+      "resource_account": {
+        "agenda_entries_written": 1,
+        "control_operand_bits": 12,
+        "coordinate_reads": 3,
+        "coordinate_writes": 1,
+        "identity_bytes_hashed": 250,
+        "kernel_transactions": 2,
+        "literal_records_scanned": 1,
+        "loss_nodes": 6,
+        "max_rational_operand_bits": 1,
+        "peak_cells": 1,
+        "rational_comparisons": 2,
+        "rational_literal_reads": 1,
+        "rational_operand_bits_sum": 4,
+        "rational_operations": 4,
+        "setup_coordinate_writes": 1,
+        "setup_input_bytes": 286,
+        "setup_input_nodes": 30,
+        "setup_validation_nodes": 6,
+        "transaction_add_conditional_assumption": 1,
+        "transaction_report": 1,
+        "update_input_bytes": 83,
+        "update_input_nodes": 9,
+        "update_validation_nodes": 2
+      },
+      "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+      "scope": "p303-binding-development-v1",
+      "source_epoch": 1,
+      "source_exactly_filtered": false,
+      "source_record": {
+        "constraints": {
+          "h": {
+            "depends_on": [],
+            "expr": [
+              "not",
+              [
+                "var",
+                0
+              ]
+            ],
+            "id": "h",
+            "kind": "conditional_assumption"
+          }
+        },
+        "queries": [
+          {
+            "id": "opaque-bit",
+            "kind": "opaque",
+            "statement": "Unresolved Boolean claim.",
+            "version": "1"
+          }
+        ],
+        "vm_version": "nat-register-v1"
+      },
+      "status": "CONDITIONAL_OUTER_BOUND",
+      "unit": "cost",
+      "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+      "vm_version": "nat-register-v1",
+      "witness": null
+    },
+    "substituted": {
+      "active_evidence": [
+        "h"
+      ],
+      "active_source_sha256": "3a768139e5885347b277980b01379ae081e35689060f15b774fba6256a313654",
+      "assumptions": [
+        "h"
+      ],
+      "bounds": [
+        "0",
+        "0"
+      ],
+      "coordinates": {
+        "opaque-bit": {
+          "status": "UNRESOLVED"
+        }
+      },
+      "cover_revision": 0,
+      "cover_sha256": "fe42f3c446646487bc67e4fd80d35ce735b2388f861738fa70d15bc5f43d68a7",
+      "event": 2,
+      "feasibility": "UNRESOLVED",
+      "input_sha256": "d50d9ba5549c8318f95e00dc7c031eb989d4d4e0996bc570bb98db0fd393bde5",
+      "kernel_version": "finite-cover-v1",
+      "loss": "f",
+      "loss_record": {
+        "expr": [
+          "min",
+          [
+            "var",
+            0
+          ],
+          [
+            "add",
+            [
+              "rat",
+              "1"
+            ],
+            [
+              "scale",
+              "-1",
+              [
+                "var",
+                0
+              ]
+            ]
+          ]
+        ],
+        "unit": "cost",
+        "version": "1"
+      },
+      "loss_sha256": "bec9841f2dc304ea6d6b25ace79d2fa999f016663403f6d65fd45141bcb77e67",
+      "objective_epoch": 0,
+      "processes": {
+        "opaque-bit": {
+          "disposition": "no_executable_producer",
+          "phase": "unsupported"
+        }
+      },
+      "report_version": "finite-cover-report-v2",
+      "resource_account": {
+        "agenda_entries_written": 1,
+        "control_operand_bits": 12,
+        "coordinate_reads": 3,
+        "coordinate_writes": 1,
+        "identity_bytes_hashed": 250,
+        "kernel_transactions": 2,
+        "literal_records_scanned": 1,
+        "loss_nodes": 6,
+        "max_rational_operand_bits": 1,
+        "peak_cells": 1,
+        "rational_comparisons": 2,
+        "rational_literal_reads": 1,
+        "rational_operand_bits_sum": 4,
+        "rational_operations": 4,
+        "setup_coordinate_writes": 1,
+        "setup_input_bytes": 286,
+        "setup_input_nodes": 30,
+        "setup_validation_nodes": 6,
+        "transaction_add_conditional_assumption": 1,
+        "transaction_report": 1,
+        "update_input_bytes": 83,
+        "update_input_nodes": 9,
+        "update_validation_nodes": 2
+      },
+      "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+      "scope": "p303-binding-development-v1",
+      "source_epoch": 1,
+      "source_exactly_filtered": false,
+      "source_record": {
+        "constraints": {
+          "h": {
+            "depends_on": [],
+            "expr": [
+              "not",
+              [
+                "var",
+                0
+              ]
+            ],
+            "id": "h",
+            "kind": "conditional_assumption"
+          }
+        },
+        "queries": [
+          {
+            "id": "opaque-bit",
+            "kind": "opaque",
+            "statement": "Unresolved Boolean claim.",
+            "version": "1"
+          }
+        ],
+        "vm_version": "nat-register-v1"
+      },
+      "status": "CONDITIONAL_OUTER_BOUND",
+      "unit": "cost",
+      "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+      "vm_version": "nat-register-v1",
+      "witness": null
+    },
+    "substituted_current": false
+  },
+  "task-records": {
+    "current": {
+      "action_names": [
+        "A",
+        "B"
+      ],
+      "boundary_snapshot": "Before this outer certificate's serialization; outside the core transaction allowance.",
+      "boundary_work": {
+        "binding_checks": 2,
+        "byte_comparisons": 6,
+        "bytes_hashed": 854,
+        "catalogue_bytes_encoded": 153,
+        "catalogue_nodes_traversed": 24,
+        "comparison_byte_envelope": 1204,
+        "compilation_action_records": 2,
+        "compilation_expression_nodes_copied": 6,
+        "compilation_positive_differences": 1,
+        "compilation_requests": 1,
+        "compilation_source_nodes_validated": 6,
+        "compiled_catalogue_bytes_encoded": 358,
+        "compiled_catalogue_nodes_traversed": 46,
+        "compiled_nodes_validated": 7,
+        "guard_catalogue_bytes_encoded": 306,
+        "guard_catalogue_nodes_traversed": 48,
+        "guard_losses_bytes_encoded": 716,
+        "guard_losses_nodes_traversed": 92,
+        "guard_queries_bytes_encoded": 182,
+        "guard_queries_nodes_traversed": 12,
+        "hash_calls": 4,
+        "query_binding_bytes_encoded": 91,
+        "query_binding_nodes_traversed": 6,
+        "request_bytes_encoded": 366,
+        "request_nodes_traversed": 36,
+        "task_binding_bytes_encoded": 262,
+        "task_binding_nodes_traversed": 29,
+        "threshold_comparisons": 1,
+        "threshold_operand_bits": 1
+      },
+      "catalogue_sha256": "94d91e6f21e14bc5ded95441913f689e4cc42def07fdfb4a8a3c8c7737bd470f",
+      "certified": true,
+      "common_unit": "cost",
+      "compiled_loss_name": "__task_regret__",
+      "compiled_loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+      "core_report": {
+        "active_evidence": [],
+        "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+        "assumptions": [],
+        "bounds": [
+          "0",
+          "0"
+        ],
+        "coordinates": {
+          "opaque-bit": {
+            "status": "UNRESOLVED"
+          }
+        },
+        "cover_revision": 1,
+        "cover_sha256": "0a668da0567239bd0243a1d4ca9ee213c46cf1dcbb0e14f81c92e740cfae0e08",
+        "event": 2,
+        "feasibility": "WITNESS",
+        "input_sha256": "7d4b78d2b9d9b630059a225625d63c1d281d295045c60773a7518714489441e0",
+        "kernel_version": "finite-cover-v1",
+        "loss": "__task_regret__",
+        "loss_record": {
+          "expr": [
+            "resid",
+            [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "1"
+              ]
+            ]
+          ],
+          "unit": "cost",
+          "version": "regret:dd9ac46d436b532280fd52afde3e5961a6601b955a29368505ad04302669d6b9"
+        },
+        "loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+        "objective_epoch": 0,
+        "processes": {
+          "opaque-bit": {
+            "disposition": "no_executable_producer",
+            "phase": "unsupported"
+          }
+        },
+        "report_version": "finite-cover-report-v2",
+        "resource_account": {
+          "control_operand_bits": 14,
+          "coordinate_reads": 4,
+          "coordinate_writes": 2,
+          "dispatch_checks": 1,
+          "identity_bytes_hashed": 168,
+          "kernel_transactions": 2,
+          "loss_nodes": 14,
+          "max_rational_operand_bits": 4,
+          "peak_cells": 2,
+          "rational_comparisons": 6,
+          "rational_literal_reads": 2,
+          "rational_operand_bits_sum": 52,
+          "rational_operations": 16,
+          "setup_coordinate_writes": 1,
+          "setup_input_bytes": 539,
+          "setup_input_nodes": 56,
+          "setup_validation_nodes": 13,
+          "transaction_report": 1,
+          "transaction_split": 1
+        },
+        "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+        "scope": "p303-binding-development-v1",
+        "source_epoch": 0,
+        "source_exactly_filtered": false,
+        "source_record": {
+          "constraints": {},
+          "queries": [
+            {
+              "id": "opaque-bit",
+              "kind": "opaque",
+              "statement": "Unresolved Boolean claim.",
+              "version": "1"
+            }
+          ],
+          "vm_version": "nat-register-v1"
+        },
+        "status": "CONDITIONAL_OUTER_BOUND",
+        "unit": "cost",
+        "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+        "vm_version": "nat-register-v1",
+        "witness": [
+          0
+        ]
+      },
+      "guarantee": "Pointwise tolerance against every supplied action, conditional on the active finite source.",
+      "no_certificate_meaning": "An excessive outer endpoint alone is not a counterexample or impossibility proof.",
+      "request_sha256": "88cef2461e86fcd2bbb58e780c961d19dd2793ee4d8548b9d53f405b6156f64b",
+      "schema": "value_logic.P3-03.task_certificate.v2",
+      "selected": "A",
+      "stage": "DEVELOPMENT",
+      "status": "CERTIFIED_CONDITIONAL",
+      "task_binding": {
+        "catalogue": {
+          "A": {
+            "expr": [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          },
+          "B": {
+            "expr": [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "1"
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          }
+        },
+        "common_unit": "cost",
+        "selected": "A",
+        "tolerance": "0",
+        "wrapper_version": "named-action-regret-v2"
+      },
+      "tolerance": "0",
+      "wrapper_version": "named-action-regret-v2"
+    },
+    "genuine_sha_collision": false,
+    "other": {
+      "action_names": [
+        "A",
+        "B"
+      ],
+      "boundary_snapshot": "Before this outer certificate's serialization; outside the core transaction allowance.",
+      "boundary_work": {
+        "binding_checks": 2,
+        "byte_comparisons": 6,
+        "bytes_hashed": 854,
+        "catalogue_bytes_encoded": 153,
+        "catalogue_nodes_traversed": 24,
+        "comparison_byte_envelope": 1204,
+        "compilation_action_records": 2,
+        "compilation_expression_nodes_copied": 6,
+        "compilation_positive_differences": 1,
+        "compilation_requests": 1,
+        "compilation_source_nodes_validated": 6,
+        "compiled_catalogue_bytes_encoded": 358,
+        "compiled_catalogue_nodes_traversed": 46,
+        "compiled_nodes_validated": 7,
+        "guard_catalogue_bytes_encoded": 306,
+        "guard_catalogue_nodes_traversed": 48,
+        "guard_losses_bytes_encoded": 716,
+        "guard_losses_nodes_traversed": 92,
+        "guard_queries_bytes_encoded": 182,
+        "guard_queries_nodes_traversed": 12,
+        "hash_calls": 4,
+        "query_binding_bytes_encoded": 91,
+        "query_binding_nodes_traversed": 6,
+        "request_bytes_encoded": 366,
+        "request_nodes_traversed": 36,
+        "task_binding_bytes_encoded": 262,
+        "task_binding_nodes_traversed": 29,
+        "threshold_comparisons": 1,
+        "threshold_operand_bits": 1
+      },
+      "catalogue_sha256": "e91c597ac57734d358c4057c88dee6a678a7575582d11c63236bb0475d78d10a",
+      "certified": true,
+      "common_unit": "cost",
+      "compiled_loss_name": "__task_regret__",
+      "compiled_loss_sha256": "52076e62d783acf1c0bd32616bfa633b78071dc7633c450cc0aa25bc00c35834",
+      "core_report": {
+        "active_evidence": [],
+        "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+        "assumptions": [],
+        "bounds": [
+          "0",
+          "0"
+        ],
+        "coordinates": {
+          "opaque-bit": {
+            "status": "UNRESOLVED"
+          }
+        },
+        "cover_revision": 1,
+        "cover_sha256": "0a668da0567239bd0243a1d4ca9ee213c46cf1dcbb0e14f81c92e740cfae0e08",
+        "event": 2,
+        "feasibility": "WITNESS",
+        "input_sha256": "64676b3b22946204e660bc5eb11c0fcb90809ea849b42968e9032f5fd2a3f0ab",
+        "kernel_version": "finite-cover-v1",
+        "loss": "__task_regret__",
+        "loss_record": {
+          "expr": [
+            "resid",
+            [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "2"
+              ]
+            ]
+          ],
+          "unit": "cost",
+          "version": "regret:67b39011bf5b40a68bacc5f7cdf0c5a3fb7c4e2e19e6bce6e87c6d6440c8c5f6"
+        },
+        "loss_sha256": "52076e62d783acf1c0bd32616bfa633b78071dc7633c450cc0aa25bc00c35834",
+        "objective_epoch": 0,
+        "processes": {
+          "opaque-bit": {
+            "disposition": "no_executable_producer",
+            "phase": "unsupported"
+          }
+        },
+        "report_version": "finite-cover-report-v2",
+        "resource_account": {
+          "control_operand_bits": 14,
+          "coordinate_reads": 4,
+          "coordinate_writes": 2,
+          "dispatch_checks": 1,
+          "identity_bytes_hashed": 168,
+          "kernel_transactions": 2,
+          "loss_nodes": 14,
+          "max_rational_operand_bits": 4,
+          "peak_cells": 2,
+          "rational_comparisons": 6,
+          "rational_literal_reads": 2,
+          "rational_operand_bits_sum": 56,
+          "rational_operations": 16,
+          "setup_coordinate_writes": 1,
+          "setup_input_bytes": 539,
+          "setup_input_nodes": 56,
+          "setup_validation_nodes": 13,
+          "transaction_report": 1,
+          "transaction_split": 1
+        },
+        "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+        "scope": "p303-binding-development-v1",
+        "source_epoch": 0,
+        "source_exactly_filtered": false,
+        "source_record": {
+          "constraints": {},
+          "queries": [
+            {
+              "id": "opaque-bit",
+              "kind": "opaque",
+              "statement": "Unresolved Boolean claim.",
+              "version": "1"
+            }
+          ],
+          "vm_version": "nat-register-v1"
+        },
+        "status": "CONDITIONAL_OUTER_BOUND",
+        "unit": "cost",
+        "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+        "vm_version": "nat-register-v1",
+        "witness": [
+          0
+        ]
+      },
+      "guarantee": "Pointwise tolerance against every supplied action, conditional on the active finite source.",
+      "no_certificate_meaning": "An excessive outer endpoint alone is not a counterexample or impossibility proof.",
+      "request_sha256": "77ae90b8fa05678c150ec9ffae5a43fb84611c0a1b2fe7af460f73419a83b0b3",
+      "schema": "value_logic.P3-03.task_certificate.v2",
+      "selected": "A",
+      "stage": "DEVELOPMENT",
+      "status": "CERTIFIED_CONDITIONAL",
+      "task_binding": {
+        "catalogue": {
+          "A": {
+            "expr": [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          },
+          "B": {
+            "expr": [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "2"
+              ]
+            ],
+            "unit": "cost",
+            "version": "2"
+          }
+        },
+        "common_unit": "cost",
+        "selected": "A",
+        "tolerance": "0",
+        "wrapper_version": "named-action-regret-v2"
+      },
+      "tolerance": "0",
+      "wrapper_version": "named-action-regret-v2"
+    },
+    "substituted": {
+      "action_names": [
+        "A",
+        "B"
+      ],
+      "boundary_snapshot": "Before this outer certificate's serialization; outside the core transaction allowance.",
+      "boundary_work": {
+        "binding_checks": 2,
+        "byte_comparisons": 6,
+        "bytes_hashed": 854,
+        "catalogue_bytes_encoded": 153,
+        "catalogue_nodes_traversed": 24,
+        "comparison_byte_envelope": 1204,
+        "compilation_action_records": 2,
+        "compilation_expression_nodes_copied": 6,
+        "compilation_positive_differences": 1,
+        "compilation_requests": 1,
+        "compilation_source_nodes_validated": 6,
+        "compiled_catalogue_bytes_encoded": 358,
+        "compiled_catalogue_nodes_traversed": 46,
+        "compiled_nodes_validated": 7,
+        "guard_catalogue_bytes_encoded": 306,
+        "guard_catalogue_nodes_traversed": 48,
+        "guard_losses_bytes_encoded": 716,
+        "guard_losses_nodes_traversed": 92,
+        "guard_queries_bytes_encoded": 182,
+        "guard_queries_nodes_traversed": 12,
+        "hash_calls": 4,
+        "query_binding_bytes_encoded": 91,
+        "query_binding_nodes_traversed": 6,
+        "request_bytes_encoded": 366,
+        "request_nodes_traversed": 36,
+        "task_binding_bytes_encoded": 262,
+        "task_binding_nodes_traversed": 29,
+        "threshold_comparisons": 1,
+        "threshold_operand_bits": 1
+      },
+      "catalogue_sha256": "94d91e6f21e14bc5ded95441913f689e4cc42def07fdfb4a8a3c8c7737bd470f",
+      "certified": true,
+      "common_unit": "cost",
+      "compiled_loss_name": "__task_regret__",
+      "compiled_loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+      "core_report": {
+        "active_evidence": [],
+        "active_source_sha256": "b5eb747c96e4d43a376d615514f97c8d2c853b9965a383da9f231beb7cc5447f",
+        "assumptions": [],
+        "bounds": [
+          "0",
+          "0"
+        ],
+        "coordinates": {
+          "opaque-bit": {
+            "status": "UNRESOLVED"
+          }
+        },
+        "cover_revision": 1,
+        "cover_sha256": "0a668da0567239bd0243a1d4ca9ee213c46cf1dcbb0e14f81c92e740cfae0e08",
+        "event": 2,
+        "feasibility": "WITNESS",
+        "input_sha256": "7d4b78d2b9d9b630059a225625d63c1d281d295045c60773a7518714489441e0",
+        "kernel_version": "finite-cover-v1",
+        "loss": "__task_regret__",
+        "loss_record": {
+          "expr": [
+            "resid",
+            [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "1"
+              ]
+            ]
+          ],
+          "unit": "cost",
+          "version": "regret:dd9ac46d436b532280fd52afde3e5961a6601b955a29368505ad04302669d6b9"
+        },
+        "loss_sha256": "f483945d6220df91a2fb164d0391f788eeedf48fee02185a0d999154e0d62b6f",
+        "objective_epoch": 0,
+        "processes": {
+          "opaque-bit": {
+            "disposition": "no_executable_producer",
+            "phase": "unsupported"
+          }
+        },
+        "report_version": "finite-cover-report-v2",
+        "resource_account": {
+          "control_operand_bits": 14,
+          "coordinate_reads": 4,
+          "coordinate_writes": 2,
+          "dispatch_checks": 1,
+          "identity_bytes_hashed": 168,
+          "kernel_transactions": 2,
+          "loss_nodes": 14,
+          "max_rational_operand_bits": 4,
+          "peak_cells": 2,
+          "rational_comparisons": 6,
+          "rational_literal_reads": 2,
+          "rational_operand_bits_sum": 52,
+          "rational_operations": 16,
+          "setup_coordinate_writes": 1,
+          "setup_input_bytes": 539,
+          "setup_input_nodes": 56,
+          "setup_validation_nodes": 13,
+          "transaction_report": 1,
+          "transaction_split": 1
+        },
+        "resource_snapshot": "after mathematical report work; before this report's JSON serialization",
+        "scope": "p303-binding-development-v1",
+        "source_epoch": 0,
+        "source_exactly_filtered": false,
+        "source_record": {
+          "constraints": {},
+          "queries": [
+            {
+              "id": "opaque-bit",
+              "kind": "opaque",
+              "statement": "Unresolved Boolean claim.",
+              "version": "1"
+            }
+          ],
+          "vm_version": "nat-register-v1"
+        },
+        "status": "CONDITIONAL_OUTER_BOUND",
+        "unit": "cost",
+        "unresolved_default": "no point probability; full Boolean possibility unless constrained",
+        "vm_version": "nat-register-v1",
+        "witness": [
+          0
+        ]
+      },
+      "guarantee": "Pointwise tolerance against every supplied action, conditional on the active finite source.",
+      "no_certificate_meaning": "An excessive outer endpoint alone is not a counterexample or impossibility proof.",
+      "request_sha256": "88cef2461e86fcd2bbb58e780c961d19dd2793ee4d8548b9d53f405b6156f64b",
+      "schema": "value_logic.P3-03.task_certificate.v2",
+      "selected": "A",
+      "stage": "DEVELOPMENT",
+      "status": "CERTIFIED_CONDITIONAL",
+      "task_binding": {
+        "catalogue": {
+          "A": {
+            "expr": [
+              "scale",
+              "10",
+              [
+                "var",
+                0
+              ]
+            ],
+            "unit": "cost",
+            "version": "1"
+          },
+          "B": {
+            "expr": [
+              "add",
+              [
+                "scale",
+                "10",
+                [
+                  "var",
+                  0
+                ]
+              ],
+              [
+                "rat",
+                "2"
+              ]
+            ],
+            "unit": "cost",
+            "version": "2"
+          }
+        },
+        "common_unit": "cost",
+        "selected": "A",
+        "tolerance": "0",
+        "wrapper_version": "named-action-regret-v2"
+      },
+      "tolerance": "0",
+      "wrapper_version": "named-action-regret-v2"
+    }
+  }
+}

@@ -80,15 +80,15 @@ use every legitimately visible feature and cheap shortcut.
 be `kappa(0)=1` and `kappa(1)=9`. The loss of always guessing zero is
 `kappa(X)Y`. Using `p=1/2` gives predicted average loss
 
-$$
+```math
 \frac12\left(1\cdot\frac12+9\cdot\frac12\right)=\frac52,
-$$
+```
 
 whereas its actual average loss is
 
-$$
+```math
 \frac12(1\cdot0+9\cdot1)=\frac92.
-$$
+```
 
 The unweighted calibration statement did not include this feature-dependent
 loss. The source explicitly fixes losses without direct dependence on `X`
@@ -114,9 +114,9 @@ into our finite logical problem merely by selecting this comparator.
 
 Suppose a checker correctly certifies
 
-$$
+```math
 \widehat L(A)\le\widehat L(B).
-$$
+```
 
 That is a statement about the typed estimate expressions. If their values are
 one and two but the actual target costs are ten and zero, the algebraic proof
@@ -128,10 +128,10 @@ With jointly applicable, justified common-unit bounds
 `|L(A)-Lhat(A)|<=epsilon_A` and
 `|L(B)-Lhat(B)|<=epsilon_B`, a real bridge is
 
-$$
+```math
 L(A)-L(B)
 \le \widehat L(A)-\widehat L(B)+\epsilon_A+\epsilon_B.
-$$
+```
 
 It follows by adding the two error inequalities. A nonpositive right-hand
 side warrants the comparison at that scope. If the error premise is a
@@ -154,18 +154,18 @@ Independently for each candidate, let its noisy estimate be one with
 probability `19/20` and zero with probability `1/20`. The fallback estimate is
 exact. Each fixed candidate separately satisfies
 
-$$
+```math
 \Pr\bigl(|\widehat L_i-L_i|\le1/10\bigr)=19/20.
-$$
+```
 
 Choose the action with the smallest estimate, using either announced tie rule
 when both candidates report zero. The chooser uses the fallback exactly when
 neither candidate underestimates. Consequently its selected-action error
 exceeds `1/10` with probability
 
-$$
+```math
 1-(19/20)^2=39/400,
-$$
+```
 
 which exceeds the individual failure probability `1/20`. The four exhaustive
 events have masses `361/400`, `19/400`, `19/400` and `1/400`: no bad estimate,
@@ -232,13 +232,13 @@ For every admissible parameter, the root expectation of the cost `Y` is
 sum is constrained to one. Independent branchwise upper expectations discard
 this coupling:
 
-$$
+```math
 \max_{0\leq\theta\leq1}
   \left[\frac12(1-\theta)+\frac12\theta\right]=\frac12,
 \qquad
 \frac12\max_{0\leq\theta\leq1}(1-\theta)
  +\frac12\max_{0\leq\theta\leq1}\theta=1.
-$$
+```
 
 With a constant fallback cost of `3/4`, minimizing worst-case expected loss
 at the root chooses the `Y` action under the shared family and the fallback

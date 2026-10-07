@@ -1,0 +1,93 @@
+{
+  "artifact_sha256": {
+    "code_delta.json": "ad38185694671d0e451040e4bdcb5601417f8cfbc238648cfdc58f6065a1cba3",
+    "core_after.py": "841df6c5223844d2131642adcbb136855e054aa8833036506bb32c91aaf8afe6",
+    "core_delta.diff": "2c40f2e1268cb3d85b9e9841c80367e0df99f5528315008b22f8fce9afd6f53b",
+    "evaluator.py": "8d4d8808b2479614ea24b58f0827df6b1e9ca5428aca6cef92612de351ba380c",
+    "inputs.json": "fbb81576a8a04e2eaf809abcdf851147c6fd3cf507a0055e20809ea1d5a13731",
+    "manifest.json": "90463ddd62a6bdc687afa7b9450ba8206cec986ddca2a247ff192eb024827c29",
+    "traces.json": "c65731685f088794ae540cdd8321802893f03bb0a099fb82b12d2ffcde2a7df7"
+  },
+  "assertions": 177,
+  "attempt": 1,
+  "concurrent_research_credit_ns": 0,
+  "end": {
+    "monotonic_ns": 7751586579949,
+    "process_ns": 177958236,
+    "utc": "2026-10-07T16:48:35.602161+00:00"
+  },
+  "files_unchanged_during_attempt": true,
+  "host_elapsed_ns": 123125547,
+  "host_process_ns": 121549546,
+  "interpretation": "DEVELOPMENT field-substitution diagnostic, not a discovered SHA-256 collision, cryptographic authentication claim or broad rerun.",
+  "schema": "value_logic.P3-03.receipt_identity.summary.v1",
+  "stage": "DEVELOPMENT",
+  "start": {
+    "monotonic_ns": 7751463454402,
+    "process_ns": 56408690,
+    "utc": "2026-10-07T16:48:35.479042+00:00"
+  },
+  "status": "PASS",
+  "suites": [
+    {
+      "assertions": 34,
+      "detail": {
+        "expected_obstruction_reproduced": true,
+        "interpretation": "Counterexample to preserved-v1 all-current-source coverage under a deliberately equal digest field.",
+        "missing_assignment": [
+          0,
+          0
+        ]
+      },
+      "name": "preserved_baseline_obstruction",
+      "status": "PASS"
+    },
+    {
+      "assertions": 70,
+      "detail": {
+        "all_current_source_assignments_covered": true,
+        "distinct_indexed_ids": [
+          "vm:0:0000000000000000000000000000000000000000000000000000000000000000",
+          "vm:1:0000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "independent_withdrawal": true
+      },
+      "name": "repaired_coexistence_and_withdrawal",
+      "status": "PASS"
+    },
+    {
+      "assertions": 63,
+      "detail": {
+        "exact_binding_preserved": true,
+        "maximum_id_length": 70,
+        "ordinary_ids": [
+          "vm:0:f493cfcfe5568fb2326735e966bf23547aa74e4c425b868ad7c6292e6627b1bf",
+          "vm:1:37ee78dd62e71c8c4297a795bf671a4c79adaa75ae015d734221a6633b6d770c"
+        ]
+      },
+      "name": "ordinary_identifiers_and_exact_reports",
+      "status": "PASS"
+    },
+    {
+      "assertions": 6,
+      "detail": {
+        "kernel_version": "finite-cover-v2",
+        "wrapper_source_unchanged": true,
+        "wrapper_version": "named-action-regret-v2"
+      },
+      "name": "unchanged_wrapper_compatibility",
+      "status": "PASS"
+    },
+    {
+      "assertions": 4,
+      "detail": {
+        "changed_functions": [
+          "Kernel._job_step"
+        ],
+        "exact_authorized_ast_delta": true
+      },
+      "name": "exact_authorized_code_delta",
+      "status": "PASS"
+    }
+  ]
+}
