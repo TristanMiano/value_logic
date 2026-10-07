@@ -14,7 +14,8 @@ Phase-three qualifying research is **189.453448421467 minutes**;
 **P3-A: PASS at problem and restricted-representation readiness scope.**
 The [gate record](v3/checkpoints/A_1.md) selects a provisional finite rational
 constraint-and-loss interface and preserves its alternatives and later duties.
-**Next: P3-03 — bounded logical uncertainty, unstarted.**
+**Current: P3-03 — bounded logical uncertainty, in progress.**
+Its [session](v3/work_logs/P3_03_2026-10-07_S1.md) records the fresh Research90 forecast and clock.
 Phase two remains complete; P3-B–D remain unattempted. P3-N01 remains
 **NOT YET SUPPORTED**. The [gate session](v3/work_logs/P3_A_2026-10-07_S1.md)
 and [exact actuals](v3/work_logs/P3_A_2026-10-07_S1/actuals.json) record its
