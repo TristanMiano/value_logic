@@ -1,0 +1,97 @@
+{
+  "schema": "value_logic.P3-03.closing_ci_diagnostic.v1",
+  "recorded_utc": "2026-10-07 18:03:55 UTC",
+  "contributor": "ChatGPT (GPT-6 Astra Pro), with same-model internal review",
+  "status": "PRE_EXISTING_VERIFICATION_FAILURE_RECORDED",
+  "published_commit": "c78742a678514a7f334b305c5115dd5f808d61e7",
+  "published_tree": "a7f3de02ac7f4faa43d8d2e9de0a712fcf7dcfb0",
+  "comparison_commit": "9712336ec5b29826c2b1eb787a1a499ee3549058",
+  "comparison_tree": "cf5ccf730a526a1fd35b30fa86722ba082445f68",
+  "remote_workflows": [
+    {
+      "name": "Verify finite witness",
+      "commit": "c78742a678514a7f334b305c5115dd5f808d61e7",
+      "run_id": 37662149312,
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/TristanMiano/value_logic/actions/runs/37662149312"
+    },
+    {
+      "name": "Check mathematical Markdown",
+      "commit": "c78742a678514a7f334b305c5115dd5f808d61e7",
+      "run_id": 37662149264,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/TristanMiano/value_logic/actions/runs/37662149264"
+    },
+    {
+      "name": "Verify finite witness",
+      "commit": "9712336ec5b29826c2b1eb787a1a499ee3549058",
+      "run_id": 37649540614,
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/TristanMiano/value_logic/actions/runs/37649540614"
+    },
+    {
+      "name": "Verify finite witness",
+      "commit": "c573b58165826b30ccbb78107ea752169531c45a",
+      "run_id": 37582342212,
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/TristanMiano/value_logic/actions/runs/37582342212"
+    }
+  ],
+  "local_focused_review": {
+    "performed_by": "Same-model internal reviewer in isolated tree snapshots; raw comparison reports inspected by root.",
+    "tests_run": 3,
+    "results": [
+      {
+        "test": "PaperMarkdownCompatibilityTests.test_github_rejected_math_fragments_are_absent",
+        "result": "PASS"
+      },
+      {
+        "test": "LinkCheckerTests.test_missing_file_and_anchor_are_reported",
+        "result": "PASS"
+      },
+      {
+        "test": "LinkCheckerTests.test_repository_links_are_valid",
+        "result": "FAIL",
+        "reported_diagnostics": 553
+      }
+    ],
+    "comparison_key": [
+      "source",
+      "target",
+      "detail"
+    ],
+    "baseline_diagnostic_occurrences": 553,
+    "published_diagnostic_occurrences": 553,
+    "introduced_occurrences": 0,
+    "removed_occurrences": 0,
+    "checker_unchanged": true,
+    "checker_sha256": "4e7918d720e9369848534cf28cdfdda1a93d749cbfad358a4b567eafe9f18980",
+    "raw_attempt_1_trace_in_published_tree": false,
+    "canonical_gzip_trace_in_published_tree": true,
+    "diagnostics_for_absent_raw_trace": 0
+  },
+  "evidence_files": [
+    "closing_ci/delta.json",
+    "closing_ci/published_links.json",
+    "closing_ci/pre_repair_partial_links.json"
+  ],
+  "limits": [
+    "Remote job logs required sign-in in the browser and were unavailable through the connector endpoints used.",
+    "The focused comparison establishes unchanged link-diagnostic occurrences from the prior partial publication. It is not a complete rerun or parity proof of every semantic CI test.",
+    "The existing workflow already failed before P3-03, as shown by the separately retrieved c573b58165826b30ccbb78107ea752169531c45a run. Existing archival/link-check issues remain recorded rather than relabelled as a successful complete verifier."
+  ],
+  "research_time_credit_ns": 0,
+  "post_cutoff_administration_credited_ns": 0,
+  "full_semantic_suite_reruns": 0,
+  "additional_focused_root_check": {
+    "command": "python -m unittest verification.test_experiment_protocol -v",
+    "tests": 18,
+    "result": "PASS",
+    "purpose": "Check whether the rendering repair invalidated frozen protocol hashes while diagnosing the observed CI failure.",
+    "research_time_credit_ns": 0
+  }
+}

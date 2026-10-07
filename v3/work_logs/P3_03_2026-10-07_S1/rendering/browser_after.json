@@ -1,0 +1,87 @@
+{
+  "schema": "value_logic.math_markdown.live_render.v1",
+  "status": "VERIFIED_SELECTED_LIVE_PAGES",
+  "recorded_utc": "2026-10-07 17:54:50 UTC",
+  "repository": "TristanMiano/value_logic",
+  "branch": "main",
+  "verified_commit": "c78742a678514a7f334b305c5115dd5f808d61e7",
+  "browser_tab": "3",
+  "method": "Read-only live GitHub DOM after asynchronous math rendering completed; native MathML counts and explicit error searches. Companion page also visually inspected in a screenshot.",
+  "scope": "Three principal/companion derivation pages; not a claim to have opened every repaired historical page.",
+  "post_cutoff_administration_credited_ns": 0,
+  "pages": [
+    {
+      "path": "v3/derivations/02_probability_information.md",
+      "url": "https://github.com/TristanMiano/value_logic/blob/main/v3/derivations/02_probability_information.md",
+      "math_renderers": 70,
+      "mathml_elements": 70,
+      "display": 70,
+      "inline": 0,
+      "merror_elements": 0,
+      "macro_errors": [],
+      "other_errors": [],
+      "checks": [
+        "Opt(p)=arg min_a c_a p rendered successfully",
+        "Normalization matrix A has separate rows for 1^T and L; b(y) has separate rows for 1 and y",
+        "Simplex set braces render as brace operators"
+      ],
+      "normalization_matrix_row_counts": [
+        2,
+        2
+      ],
+      "note": "Plain code literals used in some original inline prose are intentional; no failed inline-math renderer observed."
+    },
+    {
+      "path": "v3/derivations/03_logical_uncertainty.md",
+      "url": "https://github.com/TristanMiano/value_logic/blob/main/v3/derivations/03_logical_uncertainty.md",
+      "math_renderers": 151,
+      "mathml_elements": 151,
+      "display": 11,
+      "inline": 140,
+      "merror_elements": 0,
+      "unrendered": [],
+      "errors": [],
+      "checks": [
+        "Protected inline TeX rendered as native MathML",
+        "F(H) finite source and A(C) outer-cover display formulas rendered"
+      ]
+    },
+    {
+      "path": "v3/derivations/03_refinement_extensions.md",
+      "url": "https://github.com/TristanMiano/value_logic/blob/main/v3/derivations/03_refinement_extensions.md",
+      "math_renderers": 186,
+      "mathml_elements": 186,
+      "display": 10,
+      "inline": 176,
+      "merror_elements": 0,
+      "unrendered": [],
+      "errors": [],
+      "checks": [
+        "Protected inline TeX and all display formulas rendered as native MathML",
+        "Visible page screenshot showed readable inline and displayed finite-source formulas"
+      ],
+      "screenshot_saved": false
+    }
+  ],
+  "total_math_renderers": 407,
+  "total_mathml_elements": 407,
+  "total_reported_math_errors": 0,
+  "static_guard": {
+    "receipt": "closing_math_check.json",
+    "markdown_files": 493,
+    "math_spans": 8422,
+    "issues": 0
+  },
+  "github_workflow": {
+    "name": "Check mathematical Markdown",
+    "head_sha": "c78742a678514a7f334b305c5115dd5f808d61e7",
+    "run_id": 37662149264,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/TristanMiano/value_logic/actions/runs/37662149264"
+  },
+  "limits": [
+    "The source guard detects the documented macro and delimiter hazards; it is not a complete TeX renderer or semantic proof checker.",
+    "GitHub rendering can change in the future; this receipt describes the observed pages at the stated publication."
+  ]
+}
