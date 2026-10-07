@@ -2,7 +2,7 @@
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 7, 2026 UTC.
 
-**P3-01 and P3-02 are complete at their declared scopes; P3-A is next and unattempted.** The author has set a
+**P3-01 and P3-02 are complete; P3-A has passed at restricted-representation readiness scope.** The author has set a
 minimum of **16 measured hours of research**, with longer work possible.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -86,9 +86,12 @@ P3-02 adds finite identification, calibration, decision and repair results,
 [source comparisons](literature/02_probability_sources.md), and a
 [rational certificate companion](checks/02_finite_information_audit.py).
 This supplies a concrete restricted information interface for later research.
-No phase-three learner, final experiment or gate is established by these tasks;
-the contribution obligation remains **NOT YET SUPPORTED**. The separate next
-item is P3-A, which must assess representation readiness and alternatives.
+The [P3-A readiness assessment](checkpoints/A_1.md) selects a provisional
+versioned interface for finite rational constraints and loss queries, with
+known calibrated payoffs and interval/set uncertainty as the starting choice.
+Its probability adapter is explicit; alternative representations remain open.
+P3-03 is next and unstarted. No phase-three learner or final experiment has
+been established, and the contribution obligation remains **NOT YET SUPPORTED**.
 
 ## Workspace
 
@@ -103,6 +106,7 @@ item is P3-A, which must assess representation readiness and alternatives.
 | Observation and refinement | [Records and revisions](foundations/01_observation_contract.md) · [Criterion probes](foundations/01_criterion_probes.md) |
 | Reconstructed primary definitions | [Source contracts](literature/01_source_contracts.md) |
 | Probability information | [Finite derivation](derivations/02_probability_information.md) · [Primary comparisons](literature/02_probability_sources.md) · [Certificate companion](checks/02_finite_information_audit.py) |
+| Representation readiness | [P3-A decision](checkpoints/A_1.md) · [Current contract overlay](checkpoints/A_1.v1.json) |
 | Claims and open obligations | [Claim ledger](claim_ledger.md) |
 | Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |
-| Research records | [P3-01](work_logs/P3_01_2026-10-07_S1.md) · [P3-02](work_logs/P3_02_2026-10-07_S1.md) |
+| Research records | [P3-01](work_logs/P3_01_2026-10-07_S1.md) · [P3-02](work_logs/P3_02_2026-10-07_S1.md) · [P3-A](work_logs/P3_A_2026-10-07_S1.md) |

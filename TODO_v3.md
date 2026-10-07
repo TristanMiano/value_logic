@@ -9,11 +9,16 @@ P3-01 supplies the questions and comparison contract. P3-02 supplies the
 and **90.079634416433 measured research minutes**, with its
 [completed session](v3/work_logs/P3_02_2026-10-07_S1.md) and
 [exact actuals](v3/work_logs/P3_02_2026-10-07_S1/actuals.json).
-Phase-three qualifying research is **180.352570824167 minutes**;
-**779.647429175833 minutes** remain to its 960-minute floor.
-**Next: P3-A — problem and representation readiness, unattempted.**
-Phase two remains complete at its accepted scope. No phase-three gate has been
-attempted, and P3-03 is unstarted. P3-N01 remains **NOT YET SUPPORTED**.
+Phase-three qualifying research is **189.453448421467 minutes**;
+**770.546551578533 minutes** remain to its 960-minute floor.
+**P3-A: PASS at problem and restricted-representation readiness scope.**
+The [gate record](v3/checkpoints/A_1.md) selects a provisional finite rational
+constraint-and-loss interface and preserves its alternatives and later duties.
+**Next: P3-03 — bounded logical uncertainty, unstarted.**
+Phase two remains complete; P3-B–D remain unattempted. P3-N01 remains
+**NOT YET SUPPORTED**. The [gate session](v3/work_logs/P3_A_2026-10-07_S1.md)
+and [exact actuals](v3/work_logs/P3_A_2026-10-07_S1/actuals.json) record its
+separate assessment and time; this gate has no added research floor.
 
 Read this plan with the [phase-three procedure](v3/RESEARCH_PROTOCOL.md),
 [workspace guide](v3/README.md), [claim ledger](v3/claim_ledger.md), and the
@@ -144,7 +149,7 @@ performance superiority are separate claims and are not completion requirements.
   a precise obstruction. Examine price/unit changes and relation to phase-two
   retention. Artifact: `v3/derivations/02_probability_information.md`.
 
-- [ ] **P3-A — problem and representation readiness.**
+- [x] **P3-A — problem and representation readiness.**
 
   Record `v3/checkpoints/A_1.md`. Require current definitions, source contracts,
   comparison matrix, falsifiable targets and at least one usable restricted
@@ -322,7 +327,8 @@ floor, accepted obligations and the abandoned alternative's record.
 
 **Active repair queue: empty. P3-N01 is an open contribution-development
 obligation, not a detected defect. P3-01 and P3-02 are complete at their
-declared scopes. Next: P3-A, unattempted; P3-03 remains unstarted.**
+declared scopes. P3-A has passed at restricted-representation readiness scope.
+Next: P3-03, unstarted; P3-B–D remain unattempted.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original
 register. Neither is required or activated by this plan. General neural

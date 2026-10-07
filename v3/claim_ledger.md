@@ -2,8 +2,9 @@
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 7, 2026 UTC.
 **P3-01 complete at contract scope; P3-02 complete at finite probability-information scope.
-Both Research90 minima and closing records are complete. Gates P3-A–D remain
-unattempted; P3-A is the next item. P3-N01 remains NOT YET SUPPORTED.**
+Both Research90 minima and closing records are complete. P3-A has passed at
+problem and restricted-representation readiness scope; P3-B–D remain unattempted.
+Next: P3-03, unstarted. P3-N01 remains NOT YET SUPPORTED.**
 P3-02 has [exact time and preservation records](work_logs/P3_02_2026-10-07_S1/actuals.json)
 and a [task readiness audit](work_logs/P3_02_2026-10-07_S1/readiness_audit.md).
 
@@ -89,6 +90,14 @@ support. The observed protected minimum is reconciled separately in the
 | P3-C02 | A concrete finite information-audit adaptation is available for assessment: explicit service premises, proof-interface mapping and a reusable smaller exact certificate companion. | Candidate modest formal adaptation/synthesis. The companion implements full-simplex rational linear targets under four exact shared calibration contracts. Ordinary methods may use the same program and proofs; no numerical or resource advantage is established. |
 | P3-H01/H02/H03/H04 | The prior logical-learning, counterfactual, plurality and paid-refinement targets remain prospective. | Their earlier statuses are unchanged. P3-02 is an information analysis, not P3-03, an update rule, or a later comparison experiment. |
 
+## P3-A readiness disposition — October 7, 2026
+
+| Record | Finding | Scope and evidence |
+|---|---|---|
+| P3-GA01 | **PASS:** current definitions, sources, comparisons, falsifiable targets and a usable restricted representation are ready for the next task. | [A_1](checkpoints/A_1.md), its bound contract overlay, three same-model internal reviews and exact gate actuals. No new scientific probe or final challenge. |
+| P3-RA01 | Provisionally use versioned finite rational constraints and loss queries; prefer known calibrated payoffs with interval/set uncertainty, adding a probability adapter only with its explicit semantics. | Revisable interface with direct-loss, full probability/credal, proof-status, source-preserving and richer-representation alternatives. The narrower existing companion and native cases are distinguished from the future producer/update implementation. |
+| P3-H01/H02/H03/H04 and P3-N01 | Later learner, counterfactual, plurality, refinement and contribution obligations retain their status. | P3-03 remains unstarted. Gate readiness does not establish a source learner, imported LI guarantee, paid-resource advantage or supported contribution. No blocking repair was found or selected. |
+
 ## Current contribution record — P3-N01
 
 **Status: NOT YET SUPPORTED.**
@@ -101,7 +110,7 @@ support. The observed protected minimum is reconciled separately in the
 | Magnitude | Unestablished; prospective finite or otherwise restricted scope. No worldwide priority, broad superiority or unrestricted uncertainty/counterpossible result is claimed. |
 | Evidence presently available | P3-01's operational contract plus P3-02's finite identification, decision, calibration and repair proofs, native-interface cases, saved certificate implementation and strong ordinary comparisons. A narrower finite information-audit adaptation is now concrete, but the phase-wide logical-forecast/paid-revision delta remains unestablished. |
 | Comparison scope | S01 already sketches a resource-limited controller consulting a logical inductor; S03/S20 supply computation-selection/profile interfaces; S17 supplies incremental checking; S21 supplies numerical-uncertainty and acquisition interfaces; S22 supplies coherent logical probabilities. S02/S13 and S08/S15 supply scoring/expectation and model-plurality comparisons; S09 connects imprecise expectations with local sequential models. O-COMB may combine the same capabilities. |
-| Next evidence chunk | After P3-02 closure, the separate P3-A problem/representation readiness gate must assess the usable restricted representation, alternatives and falsifiable targets. It remains unattempted. Subsequent logical-uncertainty development needs its own selected task and timing; no gate pass or P3-03 work is supplied here. |
+| Next evidence chunk | P3-A passed technical readiness with an explicit provisional finite representation and alternatives. P3-03 is next and unstarted: it must supply the actual bounded logical information/update procedure, its source construction and resource contract. Contribution support is not inferred from the gate. |
 | Recurrence if needed | Retain R-P3-N01, Research90, for the contribution gate if meaningful support is still missing: target one named bounded service, reconstruct its closest ordinary implementation, and establish a substantive delta or disposition of displacement. Selection remains prospective at the appropriate gate. |
 
 The generic controller/forecast/cost architecture is therefore insufficient as
