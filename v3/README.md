@@ -1,8 +1,8 @@
 # Phase Three: Reasoning About Unresolved Mathematics
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. October 6, 2026 UTC.
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 7, 2026 UTC.
 
-**Roadmap established; P3-01 selected and unstarted.** The author has set a
+**P3-01 is complete at question-contract scope; P3-02 is next and unstarted.** The author has set a
 minimum of **16 measured hours of research**, with longer work possible.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -18,10 +18,12 @@ information carried by values.
 The [phase-two report](../paper_v2.md) supplies explicit loss meanings, shared
 uncertain sources, conditional proofs, evidence revision and information
 retention under changed costs. Those are useful starting materials. Its
-bounded self-assessment example predicts a procedure's success at proving
-already-true requests; that is narrower than learning arbitrary unresolved
-mathematical truth. Its semantics rejects an empty source as inconsistent
-evidence and does not yet supply general counterpossible answers.
+bounded proof-search example predicts a procedure's success at proving
+already-true requests. The wider inherited system also treats explicit
+report-dependent behavior; neither establishes arbitrary mathematical-belief
+learning. Its semantics rejects an empty deployment source, while its Boolean
+fragment retains classical entailment. General counterpossible answers remain
+a new obligation.
 
 The initial research position is:
 
@@ -73,8 +75,11 @@ do not reduce the sixteen-hour research requirement. Exact future effort is
 recorded in [time_ledger.csv](time_ledger.csv).
 
 Phase two remains complete. Its records, clocks, paper and scientific freezes
-are preserved; its neural follow-ups remain optional. The current work only
-establishes this agenda. No phase-three experiment or gate has begun.
+are preserved; its neural follow-ups remain optional. P3-01 supplies a
+[question contract](foundations/01_problem_contract.md), exact comparison
+duties, primary-source reconstructions and finite development diagnostics.
+No phase-three learner, final experiment or gate is established by that work;
+the contribution obligation remains **NOT YET SUPPORTED**.
 
 ## Workspace
 
@@ -84,5 +89,10 @@ establishes this agenda. No phase-three experiment or gate has begun.
 | Tasks and completion criteria | [TODO_v3.md](../TODO_v3.md) |
 | Research execution | [Procedure](RESEARCH_PROTOCOL.md) · [Work-item template](templates/work_item.md) |
 | Initial literature | [Primary-source orientation](literature/00_orientation.md) |
+| Current question contract | [Problem and comparisons](foundations/01_problem_contract.md) · [Exact duties](foundations/01_desiderata.md) · [Machine-readable index](foundations/01_contract.v1.json) |
+| Worked boundaries | [Separating examples](foundations/01_separating_examples.md) · [Information](foundations/01_evidence_boundaries.md) · [Composition](foundations/01_composition_boundaries.md) · [Representation](foundations/01_representation_boundaries.md) |
+| Observation and refinement | [Records and revisions](foundations/01_observation_contract.md) · [Criterion probes](foundations/01_criterion_probes.md) |
+| Reconstructed primary definitions | [Source contracts](literature/01_source_contracts.md) |
 | Claims and open obligations | [Claim ledger](claim_ledger.md) |
 | Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |
+| Completed research record | [P3-01](work_logs/P3_01_2026-10-07_S1.md) |

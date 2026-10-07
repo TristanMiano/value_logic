@@ -3,7 +3,10 @@
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
 
-**Status: roadmap established; research unstarted. Next: P3-01.**
+**Status: P3-01 complete at questions-and-comparison-contract scope.**
+The [completed session](v3/work_logs/P3_01_2026-10-07_S1.md) records
+**90.272936407733 measured research minutes**; phase three has **869.727063592267 minutes**
+remaining to its 960-minute research floor. **Next: P3-02, unstarted.**
 Phase two remains complete at its accepted scope. No phase-three gate has been
 attempted. The initial contribution assessment is **NOT YET SUPPORTED**.
 
@@ -113,7 +116,7 @@ performance superiority are separate claims and are not completion requirements.
 
 ## 4. Cycle I — define the objects and comparisons
 
-- [ ] **P3-01 — questions and comparison contract. Research90.**
+- [x] **P3-01 — questions and comparison contract. Research90.**
 
   Read the relevant phase-two interfaces and reconstruct the selected primary
   definitions. Specify the formal language, theory, observation/proof stream,
@@ -313,7 +316,7 @@ phase. Prospective replanning can replace an unstarted task with a better
 floor, accepted obligations and the abandoned alternative's record.
 
 **Active repair queue: empty. P3-N01 is an open contribution-development
-obligation, not a detected defect. P3-01 is selected but unstarted.**
+obligation, not a detected defect. P3-01 is complete; P3-02 is next and unstarted.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original
 register. Neither is required or activated by this plan. General neural

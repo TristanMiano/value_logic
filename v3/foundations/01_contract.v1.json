@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "task": "P3-01",
+  "attempt": "P3-01-1",
+  "title": "Logical uncertainty, usefulness and counterfactual comparison contract",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "date_utc": "2026-10-07",
+  "disposition": "prospective_requirements_with_development_separators",
+  "scientific_freeze": false,
+  "learner_implemented": false,
+  "carrier_selected": false,
+  "contribution_claim": {
+    "id": "P3-N01",
+    "status": "NOT YET SUPPORTED"
+  },
+  "canonical_documents": {
+    "problem": "v3/foundations/01_problem_contract.md",
+    "duties": "v3/foundations/01_desiderata.md",
+    "examples": "v3/foundations/01_separating_examples.md",
+    "information_boundaries": "v3/foundations/01_evidence_boundaries.md",
+    "composition_boundaries": "v3/foundations/01_composition_boundaries.md",
+    "representation_boundaries": "v3/foundations/01_representation_boundaries.md",
+    "observations": "v3/foundations/01_observation_contract.md",
+    "criterion_probe": "v3/foundations/01_criterion_probes.md",
+    "sources": "v3/literature/01_source_contracts.md"
+  },
+  "reference": {
+    "language": "effectively encoded first-order arithmetic with equality",
+    "vocabulary": [
+      "0",
+      "S",
+      "+",
+      "*",
+      "equality",
+      "first-order connectives and quantifiers"
+    ],
+    "theory": "Peano arithmetic with a specified proof calculus and effective proof encoding",
+    "interpretation": "ordinary natural numbers, conditional on the declared soundness bridge",
+    "finite_query_example": "program p on input x terminates with output v within b specified VM steps",
+    "distinct_budgets": [
+      "b: horizon inside the proposition",
+      "B_t: resources available to the reasoner"
+    ],
+    "smaller_fragment_permitted": true,
+    "free_consistency_or_truth_oracle": false
+  },
+  "uncertainty_types": [
+    "truth in a fixed interpretation",
+    "proof production by a specified procedure within budget",
+    "model adequacy for an application",
+    "axiom or interpretation choice",
+    "task-relative usefulness estimate"
+  ],
+  "separate_decision_constraint": "action and computation availability",
+  "probability_targets": [
+    "epistemic forecast of a fixed mathematical answer",
+    "random task selection or randomized computation",
+    "frequency on a declared cohort"
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "target": "bounded information and update procedure for true, false and unresolved claims",
+      "comparators": [
+        "O-PROOF",
+        "O-FINITE",
+        "O-ONLINE",
+        "S01",
+        "S11",
+        "S12",
+        "S21",
+        "S22"
+      ],
+      "evidence_for_improvement": "restricted refinement or decision theorem, or matched finite gain before optional resolution",
+      "evidence_for_equivalence": "explicit translation preserving information, operations, decisions and charged resources",
+      "evidence_against_claim": "counterexample under the claimed information, update and soundness assumptions",
+      "duties": [
+        "U01",
+        "U02",
+        "U03",
+        "U04",
+        "U05",
+        "U06",
+        "R01",
+        "F01",
+        "U09"
+      ],
+      "development_examples": [
+        "EX01",
+        "EX08",
+        "EX11"
+      ],
+      "later_owner": "P3-03"
+    },
+    {
+      "id": "Q2",
+      "target": "typed intervention, replacement, repair and genuine-counterpossible requests",
+      "comparators": [
+        "O-CHANGE",
+        "O-REUSE",
+        "S04",
+        "S05",
+        "S06",
+        "S07"
+      ],
+      "evidence_for_improvement": "nonvacuous construction or transport result with an explicit useful service",
+      "evidence_for_equivalence": "ordinary solver reproduces the same defined service under the same structural and resource inputs",
+      "evidence_against_claim": "observational twins, tied alternatives or missing semantics defeat a claimed unique consequence",
+      "duties": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "I01",
+        "R01"
+      ],
+      "development_examples": [
+        "EX05",
+        "EX06",
+        "EX09",
+        "EX10",
+        "GC01"
+      ],
+      "later_owner": "P3-04/P3-05"
+    },
+    {
+      "id": "Q3",
+      "target": "useful scoped models under matched initial access, losses and compute limits",
+      "comparators": [
+        "O-COMB",
+        "S08",
+        "S15",
+        "S17",
+        "S20",
+        "S21"
+      ],
+      "evidence_for_improvement": "logical-query or decision gain surviving matched access, model library and full resource accounting",
+      "evidence_for_equivalence": "ordinary construction reproduces the service, possibly using the same algorithm",
+      "evidence_against_claim": "advantage disappears after a missing scope, input, primitive or acquisition cost is equalized",
+      "duties": [
+        "M01",
+        "V04",
+        "I01",
+        "R01"
+      ],
+      "development_examples": [
+        "EX04",
+        "EX07",
+        "CB01",
+        "CB04"
+      ],
+      "later_owner": "P3-03/P3-07/P3-08"
+    },
+    {
+      "id": "Q4",
+      "target": "specified LI-inspired refinement duties in value/cost space and priced reasoning decisions",
+      "comparators": [
+        "O-ONLINE",
+        "O-META",
+        "S01",
+        "S02",
+        "S03",
+        "S09",
+        "S10",
+        "S14",
+        "S18",
+        "S19",
+        "S20",
+        "S21"
+      ],
+      "evidence_for_improvement": "a precise duty has a proof or valid finite result with a decision or resource consequence",
+      "evidence_for_equivalence": "payoff or expectation translation preserves the criterion and computation contract",
+      "evidence_against_claim": "adverse sequence, feedback mismatch, endogenous outcomes or lost uncertainty invalidates the claimed guarantee",
+      "duties": [
+        "U03",
+        "U04",
+        "U05",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "V01",
+        "V03",
+        "V04",
+        "R01",
+        "F01",
+        "I01"
+      ],
+      "development_examples": [
+        "EX07",
+        "EX08",
+        "EX11",
+        "CB02",
+        "CB03",
+        "CB05"
+      ],
+      "later_owner": "P3-06/P3-07"
+    },
+    {
+      "id": "Q5",
+      "target": "probability or decision information recoverable from specified retained loss queries",
+      "comparators": [
+        "O-PROB",
+        "S02",
+        "S13"
+      ],
+      "evidence_for_improvement": "scoped characterization or useful retention/transport result beyond a known expectation identity",
+      "evidence_for_equivalence": "explicit decoder or operational translation on the stated admissible family",
+      "evidence_against_claim": "same retained summary with different requested answers proves non-identification for that summary",
+      "duties": [
+        "V01",
+        "V02",
+        "I01",
+        "R01"
+      ],
+      "development_examples": [
+        "EX02",
+        "EX03",
+        "EX09",
+        "EX12"
+      ],
+      "later_owner": "P3-02"
+    }
+  ],
+  "observation_requirements": {
+    "scope_ids": [
+      "theory",
+      "interpretation",
+      "program",
+      "checker",
+      "source",
+      "objective",
+      "resource_model",
+      "method"
+    ],
+    "request": [
+      "id",
+      "cohort and selection",
+      "scope versions",
+      "issue event",
+      "readable inputs and metadata",
+      "available actions",
+      "loss interpretation",
+      "hard budgets and prices",
+      "decision criterion and commitment timing",
+      "information available at choice and permission for conditional reoptimization"
+    ],
+    "computation": [
+      "request id",
+      "procedure version",
+      "input dependencies",
+      "issue and receipt events",
+      "outcome status",
+      "resource use",
+      "result accessibility"
+    ],
+    "report": [
+      "request id",
+      "creation event",
+      "conditioning history",
+      "numerical form",
+      "evidence meaning",
+      "units",
+      "assumptions",
+      "initial or post-acquisition endpoint"
+    ],
+    "decision": [
+      "request id",
+      "report id",
+      "selected action",
+      "resource account",
+      "comparator definition",
+      "criterion and root commitment or conditional choice"
+    ],
+    "resolution": [
+      "query and interpretation",
+      "label or unresolved reason",
+      "evidence bridge",
+      "generation event",
+      "actor-specific accessibility and provenance",
+      "designer/tuner access and indirect incorporation into parameters or advice"
+    ],
+    "revision": [
+      "old and new scopes",
+      "changed dependencies",
+      "stale records",
+      "checked transport or revalidation",
+      "costs"
+    ],
+    "forecasts_immutable_for_scoring": true,
+    "missing_labels_are_not_zero": true,
+    "policy_comparison": "equal initial access and prices; each policy pays for its own acquisitions",
+    "replay_comparison": "common history with common acquisition-cost convention",
+    "anticipatory_endpoint_caveat": "pre-acquisition accuracy alone does not identify learning instead of direct solving"
+  },
+  "counterfactual_contract": {
+    "operations": [
+      "evidence conditioning",
+      "token intervention",
+      "shared-function replacement",
+      "actor-only replacement",
+      "theory/model repair",
+      "genuine counterpossible"
+    ],
+    "request_fields": [
+      "base scope and history",
+      "original antecedent",
+      "operation",
+      "retained interpretation and constraints",
+      "admissible changes",
+      "propagation",
+      "search budget",
+      "ranking and tie policy",
+      "loss query",
+      "dependencies",
+      "consumer decision criterion and commitment timing"
+    ],
+    "response_axes": [
+      "feasibility and search",
+      "selection meaning",
+      "selection coverage",
+      "numeric form",
+      "numeric meaning",
+      "evidence",
+      "resources"
+    ],
+    "cross_field_obligations": [
+      "certified infeasibility gives no nonempty selected cost family",
+      "one optimum witness does not identify all minimizing consequences",
+      "a policy-selected point is not a uniquely identified structural consequence",
+      "an outer interval need not be sharp or prove multiple consequences",
+      "a nonvacuous action warrant requires a nonempty applicable family",
+      "a changed interpretation does not silently answer the original counterpossible"
+    ],
+    "decision_service": "When recommending an action/policy: criterion, information at choice, commitment enforcement or conditional reoptimization; inapplicable for a pure value query."
+  },
+  "resource_closure": [
+    "machine primitives and input-access granularity",
+    "arithmetic precision and variable-size costs",
+    "readable metadata, advice, parameters and caches",
+    "acquisition, exposure, reset and reuse rules",
+    "bytes and decoder cost for storage claims",
+    "forecast, proof, checking, search and policy-selection overhead",
+    "setup cost, amortization horizon and hard feasibility",
+    "full query cohort and delayed/selected feedback"
+  ],
+  "development_evidence": {
+    "record": "v3/work_logs/P3_01_2026-10-07_S1/finite_checks_1.json",
+    "status": "PASS",
+    "groups": 11,
+    "assertions": 3449,
+    "script_sha256": "23ddbfc0a324fa27947e152d889b617be6ab3a2884106547d57812b51f411aba",
+    "scope": "exact finite fixture arithmetic; general arguments remain written proofs with stated assumptions",
+    "not_validated": [
+      "general bounded reasoner",
+      "PA checker",
+      "VM implementation",
+      "general learner",
+      "causal identification",
+      "unrestricted counterpossible semantics",
+      "all LI duties"
+    ]
+  },
+  "gate_status": {
+    "P3-A": "unattempted",
+    "P3-B": "unattempted",
+    "P3-C": "unattempted",
+    "P3-D": "unattempted"
+  },
+  "later_experiment": {
+    "owner": "P3-09/P3-10",
+    "freeze_created": false,
+    "preparation_started": false,
+    "final_evaluation_exposed": false
+  },
+  "next_scheduled_task": "P3-02"
+}

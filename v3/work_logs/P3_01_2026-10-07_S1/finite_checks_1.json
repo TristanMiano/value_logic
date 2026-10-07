@@ -1,0 +1,829 @@
+{
+  "assertions": 3449,
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "v3/development/p301_contract_checks.py",
+    "--out",
+    "v3/work_logs/P3_01_2026-10-07_S1/finite_checks_1.json"
+  ],
+  "data_class": "development",
+  "elapsed_ns": 37932447,
+  "end_monotonic_ns": 28135455650127,
+  "end_utc": "2026-10-07T01:02:46.148505+00:00",
+  "failure": null,
+  "frozen_evaluation": false,
+  "groups": [
+    {
+      "assertions": 10,
+      "name": "finite_fragment",
+      "result": {
+        "after_chi": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "after_phi": [
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "conflict_status": "INCONSISTENT_FRAGMENT",
+        "examples": [
+          "EX01"
+        ],
+        "initial": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "partial_enumeration_status": "BOUND_NOT_CERTIFIED"
+      },
+      "status": "PASS"
+    },
+    {
+      "assertions": 4,
+      "name": "binary_bridge",
+      "result": {
+        "cost": "3/1",
+        "examples": [
+          "EX02"
+        ],
+        "success_probabilities": {
+          "10": "7/10",
+          "100": "97/100"
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "assertions": 7,
+      "name": "joint_decision",
+      "result": {
+        "examples": [
+          "EX03"
+        ],
+        "fallback": "3/4",
+        "laws": {
+          "opposite": {
+            "marginals": [
+              "1/2",
+              "1/2"
+            ],
+            "mean_max": "1/1",
+            "selected": "fallback"
+          },
+          "same": {
+            "marginals": [
+              "1/2",
+              "1/2"
+            ],
+            "mean_max": "1/2",
+            "selected": "joint_action"
+          }
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "assertions": 6,
+      "name": "fallible_models",
+      "result": {
+        "examples": [
+          "EX04"
+        ],
+        "inherited_fixture": true,
+        "rows": [
+          {
+            "a": "1/10",
+            "accurate": "1/125",
+            "cheap": "1/500",
+            "error": "1/1000"
+          },
+          {
+            "a": "1/2",
+            "accurate": "1/125",
+            "cheap": "63/500",
+            "error": "1/8"
+          }
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "assertions": 5,
+      "name": "operation_cases",
+      "result": {
+        "conditioning_status": "CERTIFIED_EMPTY",
+        "examples": [
+          "EX05",
+          "EX06A"
+        ],
+        "interventions": [
+          {
+            "common_A1": 3,
+            "direct_A1": 1,
+            "u": 0
+          },
+          {
+            "common_A1": 1,
+            "direct_A1": 1,
+            "u": 1
+          }
+        ],
+        "observations": [
+          {
+            "common": [
+              0,
+              0,
+              2
+            ],
+            "direct": [
+              0,
+              0,
+              2
+            ],
+            "u": 0
+          },
+          {
+            "common": [
+              1,
+              1,
+              1
+            ],
+            "direct": [
+              1,
+              1,
+              1
+            ],
+            "u": 1
+          }
+        ],
+        "operations": {
+          "actor_only": 3,
+          "actual": 2,
+          "shared_replacement": 1,
+          "token": 3
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "assertions": 10,
+      "name": "repairs",
+      "result": {
+        "assignments_per_subset": 4,
+        "examples": [
+          "EX06B",
+          "EX09"
+        ],
+        "presentations": {
+          "base": {
+            "feasible": [
+              {
+                "deleted_indices": [
+                  0,
+                  1
+                ],
+                "edit_cost": 2,
+                "losses": [
+                  1
+                ],
+                "states": [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              },
+              {
+                "deleted_indices": [
+                  0,
+                  2
+                ],
+                "edit_cost": 2,
+                "losses": [
+                  3
+                ],
+                "states": [
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              },
+              {
+                "deleted_indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "edit_cost": 3,
+                "losses": [
+                  1,
+                  3
+                ],
+                "states": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              }
+            ],
+            "minimum": 2,
+            "optimal": [
+              {
+                "deleted_indices": [
+                  0,
+                  1
+                ],
+                "edit_cost": 2,
+                "losses": [
+                  1
+                ],
+                "states": [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              },
+              {
+                "deleted_indices": [
+                  0,
+                  2
+                ],
+                "edit_cost": 2,
+                "losses": [
+                  3
+                ],
+                "states": [
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              }
+            ],
+            "optimal_loss_set": [
+              1,
+              3
+            ]
+          },
+          "duplicate_b0": {
+            "feasible": [
+              {
+                "deleted_indices": [
+                  0,
+                  2
+                ],
+                "edit_cost": 2,
+                "losses": [
+                  3
+                ],
+                "states": [
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              },
+              {
+                "deleted_indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "edit_cost": 3,
+                "losses": [
+                  3
+                ],
+                "states": [
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              },
+              {
+                "deleted_indices": [
+                  0,
+                  1,
+                  3
+                ],
+                "edit_cost": 3,
+                "losses": [
+                  1
+                ],
+                "states": [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              },
+              {
+                "deleted_indices": [
+                  0,
+                  2,
+                  3
+                ],
+                "edit_cost": 3,
+                "losses": [
+                  3
+                ],
+                "states": [
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              },
+              {
+                "deleted_indices": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "edit_cost": 4,
+                "losses": [
+                  1,
+                  3
+                ],
+                "states": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              }
+            ],
+            "minimum": 2,
+            "optimal": [
+              {
+                "deleted_indices": [
+                  0,
+                  2
+                ],
+                "edit_cost": 2,
+                "losses": [
+                  3
+                ],
+                "states": [
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              }
+            ],
+            "optimal_loss_set": [
+              3
+            ]
+          },
+          "duplicate_same": {
+            "feasible": [
+              {
+                "deleted_indices": [
+                  0,
+                  1
+                ],
+                "edit_cost": 2,
+                "losses": [
+                  1
+                ],
+                "states": [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              },
+              {
+                "deleted_indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "edit_cost": 3,
+                "losses": [
+                  1
+                ],
+                "states": [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              },
+              {
+                "deleted_indices": [
+                  0,
+                  1,
+                  3
+                ],
+                "edit_cost": 3,
+                "losses": [
+                  1
+                ],
+                "states": [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              },
+              {
+                "deleted_indices": [
+                  0,
+                  2,
+                  3
+                ],
+                "edit_cost": 3,
+                "losses": [
+                  3
+                ],
+                "states": [
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              },
+              {
+                "deleted_indices": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "edit_cost": 4,
+                "losses": [
+                  1,
+                  3
+                ],
+                "states": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              }
+            ],
+            "minimum": 2,
+            "optimal": [
+              {
+                "deleted_indices": [
+                  0,
+                  1
+                ],
+                "edit_cost": 2,
+                "losses": [
+                  1
+                ],
+                "states": [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              }
+            ],
+            "optimal_loss_set": [
+              1
+            ]
+          }
+        },
+        "subsets": 40
+      },
+      "status": "PASS"
+    },
+    {
+      "assertions": 4,
+      "name": "paid_reasoning",
+      "result": {
+        "best_catalogue_loss": "2/1",
+        "examples": [
+          "EX07"
+        ],
+        "myopic_loss": "5/1",
+        "simple": {
+          "1": {
+            "guess": "1/2",
+            "resolve": "2/1"
+          },
+          "10": {
+            "guess": "5/1",
+            "resolve": "2/1"
+          }
+        },
+        "xor_strategies": [
+          {
+            "error_mass": "1/2",
+            "observed_coordinates": [],
+            "total_cost": "5/1"
+          },
+          {
+            "error_mass": "1/2",
+            "observed_coordinates": [
+              0
+            ],
+            "total_cost": "6/1"
+          },
+          {
+            "error_mass": "1/2",
+            "observed_coordinates": [
+              1
+            ],
+            "total_cost": "6/1"
+          },
+          {
+            "error_mass": "0/1",
+            "observed_coordinates": [
+              0,
+              1
+            ],
+            "total_cost": "2/1"
+          }
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "assertions": 3380,
+      "name": "predictions_and_decisions",
+      "result": {
+        "crossing_scores": [
+          "2601/10000",
+          "2401/10000"
+        ],
+        "epsilon": "1/4",
+        "examples": [
+          "EX08"
+        ],
+        "maximum_regret": "1/2",
+        "same_action_scores": [
+          "4/25",
+          "1/100"
+        ],
+        "sole_expert_bias": "-1/2",
+        "sole_expert_regret": "0/1",
+        "uniform_bound_cases": 3375
+      },
+      "status": "PASS"
+    },
+    {
+      "assertions": 3,
+      "name": "withdrawal_and_prices",
+      "result": {
+        "bounds": [
+          "-1/4",
+          "1/2"
+        ],
+        "examples": [
+          "EX09"
+        ],
+        "price_costs": [
+          "3/1",
+          "6/1"
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "assertions": 6,
+      "name": "report_feedback",
+      "result": {
+        "examples": [
+          "EX11"
+        ],
+        "failure_rate": "11/16",
+        "inherited_fixture": true,
+        "invalid_report": "5/8",
+        "invalid_score": "7/32",
+        "self_consistent_report": "2/3",
+        "self_consistent_score": "2/9"
+      },
+      "status": "PASS"
+    },
+    {
+      "assertions": 14,
+      "name": "event_intervals_and_costs",
+      "result": {
+        "P_costs": [
+          "5/3",
+          "4/3",
+          "4/3",
+          "2/3",
+          "2/3",
+          "1/3"
+        ],
+        "P_vertices": [
+          [
+            "0/1",
+            "1/3",
+            "2/3"
+          ],
+          [
+            "0/1",
+            "2/3",
+            "1/3"
+          ],
+          [
+            "1/3",
+            "0/1",
+            "2/3"
+          ],
+          [
+            "1/3",
+            "2/3",
+            "0/1"
+          ],
+          [
+            "2/3",
+            "0/1",
+            "1/3"
+          ],
+          [
+            "2/3",
+            "1/3",
+            "0/1"
+          ]
+        ],
+        "Q_costs": [
+          "1/3",
+          "4/3",
+          "4/3"
+        ],
+        "Q_vertices": [
+          [
+            "2/3",
+            "1/3",
+            "0/1"
+          ],
+          [
+            "0/1",
+            "2/3",
+            "1/3"
+          ],
+          [
+            "1/3",
+            "0/1",
+            "2/3"
+          ]
+        ],
+        "decision_P": "fallback",
+        "decision_Q": "g",
+        "events": [
+          {
+            "indicator": [
+              0,
+              0,
+              0
+            ],
+            "interval": [
+              "0/1",
+              "0/1"
+            ]
+          },
+          {
+            "indicator": [
+              0,
+              0,
+              1
+            ],
+            "interval": [
+              "0/1",
+              "2/3"
+            ]
+          },
+          {
+            "indicator": [
+              0,
+              1,
+              0
+            ],
+            "interval": [
+              "0/1",
+              "2/3"
+            ]
+          },
+          {
+            "indicator": [
+              0,
+              1,
+              1
+            ],
+            "interval": [
+              "1/3",
+              "1/1"
+            ]
+          },
+          {
+            "indicator": [
+              1,
+              0,
+              0
+            ],
+            "interval": [
+              "0/1",
+              "2/3"
+            ]
+          },
+          {
+            "indicator": [
+              1,
+              0,
+              1
+            ],
+            "interval": [
+              "1/3",
+              "1/1"
+            ]
+          },
+          {
+            "indicator": [
+              1,
+              1,
+              0
+            ],
+            "interval": [
+              "1/3",
+              "1/1"
+            ]
+          },
+          {
+            "indicator": [
+              1,
+              1,
+              1
+            ],
+            "interval": [
+              "1/1",
+              "1/1"
+            ]
+          }
+        ],
+        "examples": [
+          "EX12"
+        ],
+        "fallback": "3/2",
+        "g": [
+          0,
+          1,
+          2
+        ]
+      },
+      "status": "PASS"
+    }
+  ],
+  "implementation": "CPython",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "process_cpu_ns": 36083111,
+  "python": "3.12.14",
+  "schema_version": 1,
+  "script_sha256": "23ddbfc0a324fa27947e152d889b617be6ab3a2884106547d57812b51f411aba",
+  "start_monotonic_ns": 28135417717680,
+  "start_utc": "2026-10-07T01:02:46.116519+00:00",
+  "status": "PASS",
+  "task": "P3-01"
+}

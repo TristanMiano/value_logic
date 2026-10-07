@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "task": "P3-01",
+  "attempt": "P3-01-1",
+  "reviewer": "ChatGPT (GPT-6 Astra Pro), delegated administrative reviewer",
+  "disposition": "Artifact existence/provenance checks pass; two question-duty association omissions require root disposition; closure remains pending.",
+  "principal_research_credit_minutes": 0,
+  "principal_administrative_credit_minutes": 0,
+  "own_elapsed_tokens_and_cost": "Unmetered/unknown; concurrency is not added to the principal clock.",
+  "commands": [
+    {
+      "command": "git status --short && git diff --name-only && git diff --cached --name-only",
+      "exit_code": 0,
+      "purpose": "Initial tracked/index/untracked scope inventory"
+    },
+    {
+      "command": "rg --files v3 | sort",
+      "exit_code": 0,
+      "purpose": "Phase-three artifact inventory"
+    },
+    {
+      "command": "cat v3/work_logs/P3_01_2026-10-07_S1/finite_checks_1.json && rg -n 'finite_checks|3449|23ddb|script_sha256' v3/foundations/01_contract.v1.json v3/work_logs/P3_01_2026-10-07_S1* v3/README.md TODO_v3.md",
+      "exit_code": 0,
+      "purpose": "Read existing result and provenance references only; no finite-check execution"
+    },
+    {
+      "command": "rg -n '^#{1,5} |^\\| [A-Z][0-9]|^\\| O-' v3/literature/01_source_contracts.md v3/foundations/01_separating_examples.md v3/foundations/01_composition_boundaries.md v3/foundations/01_desiderata.md v3/work_logs/P3_01_2026-10-07_S1/reviews/genuine_counterpossible_target.md",
+      "exit_code": 0,
+      "purpose": "Inspect definition layout for reference validation",
+      "output_limit": "Output was truncated; subsequent full-file scanner did not depend on this truncated excerpt."
+    },
+    {
+      "command": "python - <<'PY'\nimport json, re, hashlib, subprocess, platform\nfrom pathlib import Path\nfrom urllib.parse import unquote, urlsplit\nfrom datetime import datetime, timezone\nroot = Path.cwd()\nreport = {\"observed_utc\":datetime.now(timezone.utc).isoformat(), \"python\":platform.python_version(), \"mode\":\"read_only_administrative_no_experiment_rerun\"}\nsnapshots = {}\ndef read(p):\n    p = Path(p)\n    data = p.read_bytes()\n    snapshots[str(p)] = hashlib.sha256(data).hexdigest()\n    return data.decode(\"utf-8\")\ndef run(*args):\n    p=subprocess.run(args, text=True, capture_output=True)\n    return {\"command\":list(args),\"returncode\":p.returncode,\"stdout\":p.stdout,\"stderr\":p.stderr}\njson_files=sorted(Path(\"v3\").rglob(\"*.json\"))\njson_errors=[]\nfor p in json_files:\n    try: json.loads(read(p))\n    except Exception as e: json_errors.append({\"file\":str(p),\"error\":str(e)})\nreport[\"json_syntax\"]={\"files\":len(json_files),\"errors\":json_errors}\nmd_files=sorted(Path(\"v3\").rglob(\"*.md\"))+[Path(\"TODO_v3.md\")]\ndef unfence(text):\n    out=[]; fence=None\n    for line in text.splitlines():\n        m=re.match(r\"^\\s*(`{3,}|~{3,})\",line)\n        if m:\n            ch=m.group(1)[0]\n            if fence is None: fence=ch\n            elif fence==ch: fence=None\n            out.append(\"\")\n        else: out.append(line if fence is None else \"\")\n    return \"\\n\".join(out)\ndef anchors(text):\n    found=set(); counts={}; uncertain=[]\n    for line in unfence(text).splitlines():\n        m=re.match(r\"^ {0,3}#{1,6}\\s+(.+?)\\s*#*\\s*$\",line)\n        if not m: continue\n        title=m.group(1)\n        if not title.isascii() or re.search(r\"[<>\\\\$]\",title):\n            uncertain.append(title); continue\n        title=re.sub(r\"\\[([^]]+)\\]\\([^)]*\\)\",r\"\\1\",title)\n        slug=re.sub(r\"[^a-z0-9_\\-\\s]\",\"\",title.lower())\n        slug=re.sub(r\"\\s\",\"-\",slug)\n        n=counts.get(slug,0); counts[slug]=n+1\n        found.add(slug if n==0 else f\"{slug}-{n}\")\n    found.update(re.findall(r'<a\\s+(?:name|id)=[\"\\x27]([^\"\\x27]+)',text))\n    return found,uncertain\nlink_records=[]; missing=[]; anchor_ok=[]; anchor_limits=[]\ninline=re.compile(r\"!?\\[[^\\]\\n]*\\]\\(\\s*(<[^>]*>|[^\\s)]+)(?:\\s+[\\\"\\x27][^\\n]*[\\\"\\x27])?\\s*\\)\")\nreference=re.compile(r\"^ {0,3}\\[[^]\\n]+\\]:\\s*(<[^>]*>|\\S+)\",re.M)\nfor p in md_files:\n    body=unfence(read(p))\n    for m in list(inline.finditer(body))+list(reference.finditer(body)):\n        target=m.group(1).strip(\"<>\")\n        u=urlsplit(target)\n        if u.scheme or u.netloc: continue\n        local=unquote(u.path)\n        dest=(root/local.lstrip(\"/\")) if local.startswith(\"/\") else (root/p.parent/local)\n        dest=dest.resolve()\n        rec={\"from\":str(p),\"target\":target,\"resolved\":str(dest.relative_to(root)) if dest.is_relative_to(root) else str(dest)}\n        link_records.append(rec)\n        if not dest.exists():\n            missing.append(rec); continue\n        if u.fragment:\n            if dest.suffix.lower()!=\".md\":\n                anchor_limits.append(dict(rec,reason=\"non-Markdown target\")); continue\n            known,uncertain=anchors(read(dest))\n            if unquote(u.fragment) in known: anchor_ok.append(rec)\n            else: anchor_limits.append(dict(rec,reason=\"not confirmed by conservative ASCII ATX/explicit-anchor check\",non_ascii_or_special_headings=len(uncertain)))\nreport[\"markdown\"]={\"files\":len(md_files),\"local_links\":len(link_records),\"missing_targets\":missing,\"confirmed_anchors\":len(anchor_ok),\"anchor_limits\":anchor_limits,\"parser_limits\":\"Inline/reference-definition links outside fenced code; conservative ASCII ATX and explicit HTML anchors; not a full renderer or external URL audit.\"}\nindex=json.loads(read(\"v3/foundations/01_contract.v1.json\"))\nduties_text=read(\"v3/foundations/01_desiderata.md\")\nduty_rows=re.findall(r\"^\\| ([A-Z]\\d{2}) / ([^|]+)\\|\",duties_text,re.M)\nduty_map={}\nfor duty,qs in duty_rows:\n    qs=re.sub(r\"Q([1-5])[–-]Q([1-5])\",lambda m:\",\".join(\"Q\"+str(i) for i in range(int(m[1]),int(m[2])+1)),qs)\n    duty_map[duty]=set(re.findall(r\"Q[1-5]\",qs))\nsources=set(re.findall(r\"^\\| (S\\d+) \\|\",read(\"v3/literature/01_source_contracts.md\"),re.M))\nexamples=set(re.findall(r\"^## (EX\\d+)\\b\",read(\"v3/foundations/01_separating_examples.md\"),re.M))\nexamples.update(re.findall(r\"^## (CB\\d+)\\b\",read(\"v3/foundations/01_composition_boundaries.md\"),re.M))\ngc_text=read(\"v3/work_logs/P3_01_2026-10-07_S1/reviews/genuine_counterpossible_target.md\")\nif re.search(r\"^## 2\\. Finite request GC01$\",gc_text,re.M): examples.add(\"GC01\")\nmain=read(\"v3/foundations/01_problem_contract.md\")\nordinary=set(re.findall(r\"\\bO-[A-Z]+\\b\",main))\nrefs=[]; association_differences=[]\nfor q in index[\"questions\"]:\n    qid=q[\"id\"]\n    for name in q[\"duties\"]:\n        if name not in duty_map: refs.append({\"question\":qid,\"kind\":\"missing duty\",\"id\":name})\n        elif qid not in duty_map[name]: association_differences.append({\"question\":qid,\"duty\":name,\"difference\":\"index includes; duty row does not associate\"})\n    for name in q[\"development_examples\"]:\n        if name not in examples: refs.append({\"question\":qid,\"kind\":\"missing example definition\",\"id\":name})\n    for name in q[\"comparators\"]:\n        if name not in sources|ordinary: refs.append({\"question\":qid,\"kind\":\"missing comparator definition\",\"id\":name})\n    for name,qs in duty_map.items():\n        if qid in qs and name not in q[\"duties\"]: association_differences.append({\"question\":qid,\"duty\":name,\"difference\":\"duty row associates; index omits\"})\ndoc_missing=[{\"key\":k,\"path\":v} for k,v in index[\"canonical_documents\"].items() if not Path(v).is_file()]\nreport[\"semantic_index\"]={\"question_ids\":[q[\"id\"] for q in index[\"questions\"]],\"question_ids_exact\":sorted(q[\"id\"] for q in index[\"questions\"])==[\"Q1\",\"Q2\",\"Q3\",\"Q4\",\"Q5\"],\"duty_definitions\":len(duty_map),\"source_definitions\":len(sources),\"example_definitions\":sorted(examples),\"missing_references\":refs,\"missing_canonical_documents\":doc_missing,\"question_duty_association_differences\":association_differences}\ne=index[\"development_evidence\"]; saved=json.loads(read(e[\"record\"])); start=json.loads(read(e[\"record\"]+\".started.json\"))\nscript_path=Path(saved[\"command\"][1]); script_hash=hashlib.sha256(script_path.read_bytes()).hexdigest(); snapshots[str(script_path)]=script_hash\nprovenance={\"status\":saved[\"status\"],\"failure\":saved[\"failure\"],\"groups\":len(saved[\"groups\"]),\"all_groups_pass\":all(g[\"status\"]==\"PASS\" for g in saved[\"groups\"]),\"assertions\":saved[\"assertions\"],\"summed_group_assertions\":sum(g[\"assertions\"] for g in saved[\"groups\"]),\"script_path\":str(script_path),\"current_script_sha256\":script_hash,\"saved_script_sha256\":saved[\"script_sha256\"],\"index_script_sha256\":e[\"script_sha256\"],\"start_marker_script_sha256\":start[\"script_sha256\"],\"saved_result_sha256\":hashlib.sha256(Path(e[\"record\"]).read_bytes()).hexdigest(),\"development_only\":saved[\"data_class\"]==\"development\" and saved[\"frozen_evaluation\"] is False}\nprovenance[\"consistent_11_3449\"]=len(saved[\"groups\"])==e[\"groups\"]==11 and saved[\"assertions\"]==e[\"assertions\"]==sum(g[\"assertions\"] for g in saved[\"groups\"])==3449\nprovenance[\"all_script_hashes_match\"]=len({script_hash,saved[\"script_sha256\"],e[\"script_sha256\"],start[\"script_sha256\"]})==1\nreport[\"saved_development_result\"]=provenance\ngit=[run(\"git\",\"diff\",\"--name-only\"),run(\"git\",\"diff\",\"--cached\",\"--name-only\"),run(\"git\",\"ls-files\",\"--others\",\"--exclude-standard\"),run(\"git\",\"diff\",\"--check\")]\nchanged=set()\nfor r in git[:3]: changed.update(r[\"stdout\"].splitlines())\nunexpected=sorted(p for p in changed if p!=\"TODO_v3.md\" and not p.startswith(\"v3/\"))\nreport[\"git\"]={\"commands\":git,\"unexpected_paths_outside_phase_three\":unexpected,\"root_README_or_phase_two_changes\":[p for p in changed if p==\"README.md\" or p==\"TODO_v2.md\" or p==\"paper_v2.md\" or p.startswith(\"v2/\")],\"phase_three_only\":not unexpected}\nchanged_during=[]\nfor p,digest in snapshots.items():\n    if hashlib.sha256(Path(p).read_bytes()).hexdigest()!=digest: changed_during.append(p)\nreport[\"snapshot_changed_during_validation\"]=changed_during\nreport[\"snapshot_hashes\"]={p:d for p,d in snapshots.items() if not p.startswith(\"/\")}\nreport[\"limits\"]=[\"No experiment or legacy tests rerun.\",\"No clock closure, ledger arithmetic or gate assessment performed.\",\"Question/duty association differences require human disposition; existence checks alone do not validate scientific claims.\",\"Later edits and closing artifacts require root final diff/link check.\",\"Active bookkeeping JSON files were parsed only at the read snapshot; no accounting conclusion follows.\"]\nprint(json.dumps(report,indent=2))\n\nPY",
+      "exit_code": 0,
+      "purpose": "Read-only JSON, links, IDs, saved-result provenance and Git scope validation; standard library only"
+    },
+    {
+      "command": "rg -n '^#{1,6} .*([Ss]coring|E01|[Cc]ontinuation|[Ii]nterpretation III)' v3/literature/00_orientation.md v2/foundations/03_provisional_core.md v2/foundations/01_requirements_and_separating_examples.md",
+      "exit_code": 0,
+      "stdout": "v2/foundations/01_requirements_and_separating_examples.md:84:## 2. E01 — A more accurate model need not be the better use\nv2/foundations/01_requirements_and_separating_examples.md:789:## 13. Continuation: requirements sharpened by reconstruction\nv3/literature/00_orientation.md:31:## S02 — Proper scoring rules\nv2/foundations/03_provisional_core.md:621:## 12. Complete interpretation III — nonlinear continuation with a local enclosure\n",
+      "purpose": "Manual verification of three Unicode em-dash heading anchors"
+    }
+  ],
+  "result": {
+    "observed_utc": "2026-10-07T02:51:22.034800+00:00",
+    "python": "3.12.14",
+    "mode": "read_only_administrative_no_experiment_rerun",
+    "json_syntax": {
+      "files": 18,
+      "errors": []
+    },
+    "markdown": {
+      "files": 48,
+      "local_links": 141,
+      "missing_targets": [],
+      "confirmed_anchors": 13,
+      "anchor_limits": [
+        {
+          "from": "v3/README.md",
+          "target": "literature/00_orientation.md#s02--proper-scoring-rules",
+          "resolved": "v3/literature/00_orientation.md",
+          "reason": "not confirmed by conservative ASCII ATX/explicit-anchor check",
+          "non_ascii_or_special_headings": 9
+        },
+        {
+          "from": "v3/foundations/01_representation_boundaries.md",
+          "target": "../../v2/foundations/03_provisional_core.md#12-complete-interpretation-iii--nonlinear-continuation-with-a-local-enclosure",
+          "resolved": "v2/foundations/03_provisional_core.md",
+          "reason": "not confirmed by conservative ASCII ATX/explicit-anchor check",
+          "non_ascii_or_special_headings": 4
+        },
+        {
+          "from": "v3/foundations/01_separating_examples.md",
+          "target": "../../v2/foundations/01_requirements_and_separating_examples.md#2-e01--a-more-accurate-model-need-not-be-the-better-use",
+          "resolved": "v2/foundations/01_requirements_and_separating_examples.md",
+          "reason": "not confirmed by conservative ASCII ATX/explicit-anchor check",
+          "non_ascii_or_special_headings": 9
+        }
+      ],
+      "parser_limits": "Inline/reference-definition links outside fenced code; conservative ASCII ATX and explicit HTML anchors; not a full renderer or external URL audit."
+    },
+    "semantic_index": {
+      "question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5"
+      ],
+      "question_ids_exact": true,
+      "duty_definitions": 21,
+      "source_definitions": 22,
+      "example_definitions": [
+        "CB01",
+        "CB02",
+        "CB03",
+        "CB04",
+        "CB05",
+        "EX01",
+        "EX02",
+        "EX03",
+        "EX04",
+        "EX05",
+        "EX06",
+        "EX07",
+        "EX08",
+        "EX09",
+        "EX10",
+        "EX11",
+        "EX12",
+        "GC01"
+      ],
+      "missing_references": [],
+      "missing_canonical_documents": [],
+      "question_duty_association_differences": [
+        {
+          "question": "Q1",
+          "duty": "U09",
+          "difference": "duty row associates; index omits"
+        },
+        {
+          "question": "Q4",
+          "duty": "I01",
+          "difference": "duty row associates; index omits"
+        }
+      ]
+    },
+    "saved_development_result": {
+      "status": "PASS",
+      "failure": null,
+      "groups": 11,
+      "all_groups_pass": true,
+      "assertions": 3449,
+      "summed_group_assertions": 3449,
+      "script_path": "v3/development/p301_contract_checks.py",
+      "current_script_sha256": "23ddbfc0a324fa27947e152d889b617be6ab3a2884106547d57812b51f411aba",
+      "saved_script_sha256": "23ddbfc0a324fa27947e152d889b617be6ab3a2884106547d57812b51f411aba",
+      "index_script_sha256": "23ddbfc0a324fa27947e152d889b617be6ab3a2884106547d57812b51f411aba",
+      "start_marker_script_sha256": "23ddbfc0a324fa27947e152d889b617be6ab3a2884106547d57812b51f411aba",
+      "saved_result_sha256": "af747dde4216a6fe1d453a4846a482625687d7f55adb95b87ecbe97ef9f92f15",
+      "development_only": true,
+      "consistent_11_3449": true,
+      "all_script_hashes_match": true
+    },
+    "git": {
+      "commands": [
+        {
+          "command": [
+            "git",
+            "diff",
+            "--name-only"
+          ],
+          "returncode": 0,
+          "stdout": "TODO_v3.md\nv3/README.md\nv3/claim_ledger.md\nv3/plan.v1.json\n",
+          "stderr": ""
+        },
+        {
+          "command": [
+            "git",
+            "diff",
+            "--cached",
+            "--name-only"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "command": [
+            "git",
+            "ls-files",
+            "--others",
+            "--exclude-standard"
+          ],
+          "returncode": 0,
+          "stdout": "v3/development/p301_contract_checks.py\nv3/foundations/01_composition_boundaries.md\nv3/foundations/01_contract.v1.json\nv3/foundations/01_criterion_probes.md\nv3/foundations/01_desiderata.md\nv3/foundations/01_evidence_boundaries.md\nv3/foundations/01_observation_contract.md\nv3/foundations/01_problem_contract.md\nv3/foundations/01_representation_boundaries.md\nv3/foundations/01_separating_examples.md\nv3/literature/01_source_contracts.md\nv3/work_logs/P3_01_2026-10-07_S1.md\nv3/work_logs/P3_01_2026-10-07_S1/accounting.py\nv3/work_logs/P3_01_2026-10-07_S1/baseline.json\nv3/work_logs/P3_01_2026-10-07_S1/clock.py\nv3/work_logs/P3_01_2026-10-07_S1/clock_dispositions.jsonl\nv3/work_logs/P3_01_2026-10-07_S1/clock_state.json\nv3/work_logs/P3_01_2026-10-07_S1/clocks.jsonl\nv3/work_logs/P3_01_2026-10-07_S1/environment.json\nv3/work_logs/P3_01_2026-10-07_S1/finite_checks_1.json\nv3/work_logs/P3_01_2026-10-07_S1/finite_checks_1.json.started.json\nv3/work_logs/P3_01_2026-10-07_S1/forecast.json\nv3/work_logs/P3_01_2026-10-07_S1/reviews/accounting_tool_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/accounting_validation_attempt1.json\nv3/work_logs/P3_01_2026-10-07_S1/reviews/acquisition_and_profile_boundary.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/carrier_closure_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/composition_and_contribution_boundary.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/composition_diagnostics_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/cost_criterion_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/counterfactual_contract_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/counterfactual_sources.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/counterfactual_status_stress.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/counterpossible_closure_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/desiderata_final_scope_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/expectation_sources.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/finite_perturbation_scope.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/genuine_counterpossible_target.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/imprecise_tree_delta_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/imprecise_tree_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/imprecise_tree_source.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/induction_sources.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/inherited_contract.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/interim_accounting_and_scope.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/li_desiderata_import_audit.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/li_information_boundary.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/observation_contract_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/p301_contract_readiness.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/probabilistic_numerics_boundary.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/probabilistic_numerics_reconstruction.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/probabilities_on_sentences_boundary.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/problem_contract_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/refinement_information_review.md\nv3/work_logs/P3_01_2026-10-07_S1/reviews/resource_information_stress.md\nv3/work_logs/P3_01_2026-10-07_S1/segments.jsonl\n",
+          "stderr": ""
+        },
+        {
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "unexpected_paths_outside_phase_three": [],
+      "root_README_or_phase_two_changes": [],
+      "phase_three_only": true
+    },
+    "snapshot_changed_during_validation": [],
+    "snapshot_hashes": {
+      "v3/foundations/01_contract.v1.json": "7e9268c053e5ddf48cebff8fbca1400d45806131e6d523da68a0ac90b194b1ae",
+      "v3/plan.v1.json": "e1337511be7308cfef19aeb91815f078640c355e216c9fcaff4edf9ab6c3f529",
+      "v3/work_logs/P3_01_2026-10-07_S1/baseline.json": "6af8b4f959673927831a961f28f73e42d6deafca8ce8b3c5d5284339de5b3c29",
+      "v3/work_logs/P3_01_2026-10-07_S1/clock_state.json": "2234b3c2b5a4e1dc682bedf3bb15941b03f79d854ee19803a39fe30fc2a78fa1",
+      "v3/work_logs/P3_01_2026-10-07_S1/environment.json": "be887ffe4b5ab41ffe8faf269d3e5e539c496cde2f2ff88e128a737c004d1049",
+      "v3/work_logs/P3_01_2026-10-07_S1/finite_checks_1.json": "af747dde4216a6fe1d453a4846a482625687d7f55adb95b87ecbe97ef9f92f15",
+      "v3/work_logs/P3_01_2026-10-07_S1/finite_checks_1.json.started.json": "d28181bfd21e8c980cb315df2849f95ca87acd64fa9634753bdc26515656dca1",
+      "v3/work_logs/P3_01_2026-10-07_S1/forecast.json": "ab5de7983fcefb268e47cb2bd71183e2393f0084c932d3e983e36e6dfda1bee6",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/accounting_validation_attempt1.json": "4f6d1cf7c4dbd01258c4609f8945a08c390c8ddac69d767816d813971505d54b",
+      "v3/work_logs/P3_SETUP_2026-10-06_S1/actuals.json": "679d72e675e034e0f4a67d923b4aeeb4994a7b87b395a092fbce8f71639b6eae",
+      "v3/work_logs/P3_SETUP_2026-10-06_S1/administrative_attempts.json": "bbdee872becf4f459be29b03af742832690c845e354dbcf6dbf5a817ad8f4a1a",
+      "v3/work_logs/P3_SETUP_2026-10-06_S1/baseline.json": "b91709cc2c1c2dfa69d23795fcca143fc5519b46f9710ab1e64d4988ffeef35b",
+      "v3/work_logs/P3_SETUP_2026-10-06_S1/end.json": "95439bfd5d40bf576ff17728e376d8d6ccd72f7efca9731b577496dc2d5e3f60",
+      "v3/work_logs/P3_SETUP_2026-10-06_S1/forecast.json": "9c7670f8bd7d35afb57f895fccfeabd1a1e4eb9c65d5b6ac5d990aea5a16bd82",
+      "v3/work_logs/P3_SETUP_2026-10-06_S1/reviews.json": "ee15ebf92633ddfbd8afe0dc31319bfb0eba64bcb0937df3da07c1da22cfc0fc",
+      "v3/work_logs/P3_SETUP_2026-10-06_S1/start.json": "fe0ec09d07152fb33ecb15968977508ec89f44d71c3b1496f33391a5952cfea5",
+      "v3/work_logs/P3_SETUP_2026-10-06_S1/verification_final.json": "75c856ab088c5b706aab87f0ef15b1de46e1ba60e5ffd972c771657316177780",
+      "v3/work_logs/P3_SETUP_2026-10-06_S1/verification_initial.json": "1cee719dbc149b2e2f042130ce0810ff57da756bc49b1c9549de601b71a3435c",
+      "v3/README.md": "4b9e73d4e04dfe3c4b9fb4d01fc78f7c6b0e3e14bc592ab43193352c31251740",
+      "v3/RESEARCH_PROTOCOL.md": "ef57593ce23cbe06b1683fc3609526f700b6ab5c395befacbbcd01bd48f3aa52",
+      "v3/claim_ledger.md": "1bb0c1be8a914b9053d6b7293079d17fe7ed0dcb963f268e4e8a5685eabdc3e7",
+      "v3/decisions/2026-10-06_phase_three_scope.md": "ec22c5d044ea7940233da6db112d3c62452bae95ec1305c86538a0404c996925",
+      "v3/foundations/01_composition_boundaries.md": "d60fc69e48d4914140c16822bd2f25beabf5693d90382effbfe1a9d85046292e",
+      "v3/foundations/01_criterion_probes.md": "88fa090bb6257bbcbfa1874df1f1eb176b80585db827f568fe6f92d321eaf8ed",
+      "v3/foundations/01_desiderata.md": "0c1b250e1e22640c1a965015e009ed18a2661415af83f5086b893f0182376774",
+      "v3/foundations/01_evidence_boundaries.md": "7a0f14193cd61bc166bfdb85e3965923e260e15d6fad6b28b056c522710f99cf",
+      "v3/foundations/01_observation_contract.md": "7199b8c591bbe2543914fa5ad822aaaff3167b5651c3c6e936b38adcdd1d906b",
+      "v3/foundations/01_problem_contract.md": "619a9776882a5f5d982208de46245eafeb6bda8039311c310e0af1b017784301",
+      "v3/foundations/01_representation_boundaries.md": "2b8cc22c9f4f33cfd254936ffa91f63a7102736ee1df1cc073ba6b552f02a6d8",
+      "v3/foundations/01_separating_examples.md": "095cab9f934bfbac55ca378e58dfd5302181c6d9bfea6b812afca50eeea70ca9",
+      "v3/literature/00_orientation.md": "f959f6c38bd99adc15230f5ebd7229cb8c657605b00890b7e0f48b396c137e4e",
+      "v3/literature/01_source_contracts.md": "14e27e4e85ae1d0a708522fd4a52c1fbe99bbc3a14d6965ca599b096fc7a6879",
+      "v3/templates/work_item.md": "e85c47fbc326108f2d4f0c20e043fce4e0b0d1c3806518941090046c9deb368e",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/accounting_tool_review.md": "cfcca11f33e4cde48c55509ae544f6f508410161b6ba931649c2a6b698fc0a89",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/acquisition_and_profile_boundary.md": "3f9bff98c2757096d3398526ed73f82d7b18179c661b199eaa3d9fae5a0a1d2c",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/carrier_closure_review.md": "d3bddf841593ee3774452b107c7bfc54bc3e61cfd2c0f7c277e1e9b52343aada",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/composition_and_contribution_boundary.md": "0892e697a1f728246e2e0392d632fb181ac4361c5452d5f8b76987d9a9b659e9",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/composition_diagnostics_review.md": "294c23a4574e5a051c377d9791af6a4dab91910ea0cd869abb0ff3afc2e3c3d8",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/cost_criterion_review.md": "0d771c7cfbd6a01e9913be3c7076cab5f21d9be9e9941f321d9a1a9b5abf3114",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/counterfactual_contract_review.md": "de35fd5b963f7e3ce3f1fc3d5e8a225a2e84c6a4c86ab73e6c1389d92794923e",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/counterfactual_sources.md": "90a9111e0ac6b5ca9ea27af59cf7035ed91e2ebc711a258cded175e987098009",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/counterfactual_status_stress.md": "564c0c375637baebaf897113dac7b73f63fe4fc5a137947458a8ad98d564b749",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/counterpossible_closure_review.md": "490608cf1bdc5a1de0aa29a1fe156a227d14a00ee9eab93dcf3fb61d6b48d45c",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/desiderata_final_scope_review.md": "35ea4430e8a77b1f40f4937db9f3e07961c6d8c9f09ecde97bb61c4d858033ed",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/expectation_sources.md": "88cc76c40716a23c90e65b3a790556c62e7fae6403380a0a9d9ff40996b64e71",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/finite_perturbation_scope.md": "37b1506ef956eab7e36f34a2029a1966b36202178758b77b0ccb3d29f7338bbd",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/genuine_counterpossible_target.md": "6e16c8a314355ccdd88b9bfa0e306b5a088763a3f0478c70445093041dd87ef8",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/imprecise_tree_delta_review.md": "774ad03d49d5f3bb5b67866f5e63e63c25a907705bdf0f2eb82a5f4f68fb639c",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/imprecise_tree_review.md": "2ae7344dcd93a97b8a86c737d88a0b44f1df7fb7f68a90efafb9a5d6f58556d5",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/imprecise_tree_source.md": "7583f501386cc935fa7a80d9e95c49f84ac2beca78bd7c025aad1e31e59bc344",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/induction_sources.md": "1ed74c5765cf06b53e6e0ed82fb8abd74556a2c696a4cd27cabdf4270f375169",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/inherited_contract.md": "dc97f33a60f2db2374114ad04be889cc96448fcaea35c70854340e9ea7ff20ad",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/interim_accounting_and_scope.md": "806fbe70e23ea8221315d2cd5834e08f829f4b9a1485ac73ae282a80bb1ecbc9",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/li_desiderata_import_audit.md": "98bf83abe7b35b76e3aa3b3c4b750dc95152ca1ffb9954afbe977ed9f4e4f325",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/li_information_boundary.md": "cb050974f095a1427f457583b3e7352e4d42176b9d34f0a2de15f188d736ed41",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/observation_contract_review.md": "1aa4e526612fe838543af248d5c329e688e0d2c63b507de5d94e7b93259bc59b",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/p301_contract_readiness.md": "ed8a0a8bf66dfcef68dcd53a076bb89e29d46bdf9bc2cd8d60abfd87067d7daa",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/probabilistic_numerics_boundary.md": "15659913cfe4fe22e8b69058662c433dde5001ee42ad9cf0d1f6ded99b658586",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/probabilistic_numerics_reconstruction.md": "6e8f22847097fbb11ad9f7ee2b28ff3ec6de01bc2d63e0fef15653b2431164ef",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/probabilities_on_sentences_boundary.md": "e0f339ac08326a892f84bcf15e3fe01d19d22b968dffaa22b6a80ab441b1a357",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/problem_contract_review.md": "6c0a5922c7e2b27ea1562db7d735184f124c6416fefe2cc0fcc57f0b8c1130c7",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/refinement_information_review.md": "4764e7e54a8b866704de56d1cec1368a561b0d7602547e4dc2366a93ad9cefb0",
+      "v3/work_logs/P3_01_2026-10-07_S1/reviews/resource_information_stress.md": "9364c39e3b7e4a304868a5c95d27f4f5d6611af392f56cd868b16601856344a5",
+      "v3/work_logs/P3_01_2026-10-07_S1.md": "e5d4b118b53e13181af399e8a27e3e598197362ad124f547875238d8881f13b7",
+      "v3/work_logs/P3_SETUP_2026-10-06_S1.md": "a474afafed54d6fa0a20d686f9bda56d299d2e684a892f619e746ea6fb879c41",
+      "TODO_v3.md": "517b3245fea714b5e1f693008936aa2ad7b42d44ee826d96992bb6a804f45efc",
+      "v3/development/p301_contract_checks.py": "23ddbfc0a324fa27947e152d889b617be6ab3a2884106547d57812b51f411aba"
+    },
+    "limits": [
+      "No experiment or legacy tests rerun.",
+      "No clock closure, ledger arithmetic or gate assessment performed.",
+      "Question/duty association differences require human disposition; existence checks alone do not validate scientific claims.",
+      "Later edits and closing artifacts require root final diff/link check.",
+      "Active bookkeeping JSON files were parsed only at the read snapshot; no accounting conclusion follows."
+    ]
+  },
+  "manual_anchor_disposition": {
+    "inspected": 3,
+    "matches": [
+      {
+        "target": "v3/literature/00_orientation.md#s02--proper-scoring-rules",
+        "heading": "S02 — Proper scoring rules"
+      },
+      {
+        "target": "v2/foundations/03_provisional_core.md#12-complete-interpretation-iii--nonlinear-continuation-with-a-local-enclosure",
+        "heading": "12. Complete interpretation III — nonlinear continuation with a local enclosure"
+      },
+      {
+        "target": "v2/foundations/01_requirements_and_separating_examples.md#2-e01--a-more-accurate-model-need-not-be-the-better-use",
+        "heading": "2. E01 — A more accurate model need not be the better use"
+      }
+    ],
+    "result": "All three match the standard GitHub heading transformation: remove punctuation including em dash, lowercase, replace each separating space with a hyphen.",
+    "limit": "No rendered-site/browser anchor execution was performed. The automated count of 13 plus these three inspected cases covers all 16 observed local fragment links."
+  },
+  "failures": {
+    "command_execution_failures": [],
+    "json_parse_failures": [],
+    "missing_file_targets": [],
+    "saved_result_or_hash_failures": [],
+    "semantic_association_findings": [
+      {
+        "question": "Q1",
+        "duty": "U09",
+        "difference": "duty row associates; index omits"
+      },
+      {
+        "question": "Q4",
+        "duty": "I01",
+        "difference": "duty row associates; index omits"
+      }
+    ]
+  },
+  "finalization_limits": [
+    "No finite experiment or legacy tests rerun, and no test assertion count added.",
+    "No ledger finalization, timing arithmetic, protected-floor certification, gate decision, canonical edit, commit or push performed.",
+    "This is the 2026-10-07T02:51:22Z snapshot, not a final frozen artifact manifest.",
+    "Root must disposition or correct the two index/matrix association omissions and check the final diff after later edits.",
+    "JSONL timing streams were outside JSON syntax scope; parsing 18 JSON documents does not validate accounting semantics.",
+    "The only file created for this check is reviews/artifact_integrity_preclose.json."
+  ]
+}
