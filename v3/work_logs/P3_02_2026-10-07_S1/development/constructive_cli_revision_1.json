@@ -1,0 +1,13 @@
+{
+  "stage": "development_revision",
+  "status": "preserved_failure",
+  "utc": "2026-10-07T05:27:21.795019+00:00",
+  "monotonic_ns": 44011102161270,
+  "failed_result": "v3/work_logs/P3_02_2026-10-07_S1/development/constructive_cli_1.json",
+  "source_path": "v3/checks/02_finite_information_cli_check.py",
+  "source_sha256": "5a92e6d95be89abed8ae887c02c605ec7b886ef42685fc69218cd1ca84a90151",
+  "archived_source": "v3/work_logs/P3_02_2026-10-07_S1/development/versions/02_finite_information_cli_check_v1.py",
+  "failure": "The standalone generator succeeded and external input binding passed, but the interface harness called relative_to(absolute ROOT) on a relative input path before running the independent verifier. This is a path-reporting harness failure, not a scientific counterexample.",
+  "correction": "Resolve the harness output path before deriving saved paths; use the output stem for a new attempt directory. Preserve all original input, certificate, result and first code bytes.",
+  "remaining_check": "Complete the originally planned independent verifier, two target decodes and expected existing-output refusal in a fresh versioned execution; do not rerun the exhaustive corpus."
+}

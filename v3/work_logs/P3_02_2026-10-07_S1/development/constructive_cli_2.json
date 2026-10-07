@@ -1,0 +1,119 @@
+{
+  "stage": "development",
+  "status": "passed",
+  "script_path": "v3/checks/02_finite_information_cli_check.py",
+  "script_sha256": "424a93e2b50f8560e02db23ef8a83954a83cd5e77baa841fe8ba5e6c270caf27",
+  "dependencies": {
+    "v3/checks/02_finite_information_cli_check.py": "424a93e2b50f8560e02db23ef8a83954a83cd5e77baa841fe8ba5e6c270caf27",
+    "v3/checks/02_finite_information_audit.py": "546a4b12df2348d284582de7e48e19378bd8a5fbc3ea191b9190605aaa9879b0",
+    "v3/checks/02_finite_information_verify.py": "9b1e2822a867f934fbbaa4b6b7fb1230ad69cbf9458565da1b3bf418e7d3f1f1"
+  },
+  "python": "3.12.14",
+  "start_utc": "2026-10-07T05:27:49.622021+00:00",
+  "start_monotonic_ns": 44038928770702,
+  "steps": [
+    {
+      "label": "generate",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ed8ae2b0d290/value_logic/v3/checks/02_finite_information_audit.py",
+        "--input",
+        "/workspace/scratch/ed8ae2b0d290/value_logic/v3/work_logs/P3_02_2026-10-07_S1/development/constructive_cli_2_files/input.json",
+        "--output",
+        "/workspace/scratch/ed8ae2b0d290/value_logic/v3/work_logs/P3_02_2026-10-07_S1/development/constructive_cli_2_files/certificate.json"
+      ],
+      "start_utc": "2026-10-07T05:27:49.622048+00:00",
+      "start_monotonic_ns": 44038929174660,
+      "expected_success": true,
+      "returncode": 0,
+      "stdout": "{\"output\": \"/workspace/scratch/ed8ae2b0d290/value_logic/v3/work_logs/P3_02_2026-10-07_S1/development/constructive_cli_2_files/certificate.json\", \"all_targets_recoverable\": false, \"minimum_extra_raw_queries\": 2}\n",
+      "stderr": "",
+      "end_utc": "2026-10-07T05:27:49.668286+00:00",
+      "end_monotonic_ns": 44038975410071,
+      "elapsed_ns": 46235411
+    },
+    {
+      "label": "independent_arithmetic_verifier",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ed8ae2b0d290/value_logic/v3/checks/02_finite_information_verify.py",
+        "/workspace/scratch/ed8ae2b0d290/value_logic/v3/work_logs/P3_02_2026-10-07_S1/development/constructive_cli_2_files/certificate.json"
+      ],
+      "start_utc": "2026-10-07T05:27:49.668782+00:00",
+      "start_monotonic_ns": 44038975908461,
+      "expected_success": true,
+      "returncode": 0,
+      "stdout": "{\"artifact\": \"/workspace/scratch/ed8ae2b0d290/value_logic/v3/work_logs/P3_02_2026-10-07_S1/development/constructive_cli_2_files/certificate.json\", \"checked\": {\"negative_target_certificates\": 2, \"positive_target_certificates\": 1, \"repair_dual_pairings\": 4}, \"status\": \"verified\"}\n",
+      "stderr": "",
+      "end_utc": "2026-10-07T05:27:49.705258+00:00",
+      "end_monotonic_ns": 44039012381676,
+      "elapsed_ns": 36473215
+    },
+    {
+      "label": "expected_existing_output_refusal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ed8ae2b0d290/value_logic/v3/checks/02_finite_information_audit.py",
+        "--input",
+        "/workspace/scratch/ed8ae2b0d290/value_logic/v3/work_logs/P3_02_2026-10-07_S1/development/constructive_cli_2_files/input.json",
+        "--output",
+        "/workspace/scratch/ed8ae2b0d290/value_logic/v3/work_logs/P3_02_2026-10-07_S1/development/constructive_cli_2_files/certificate.json"
+      ],
+      "start_utc": "2026-10-07T05:27:49.705579+00:00",
+      "start_monotonic_ns": 44039012705534,
+      "expected_success": false,
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Refusing to overwrite an existing result.\n",
+      "end_utc": "2026-10-07T05:27:49.756345+00:00",
+      "end_monotonic_ns": 44039063469640,
+      "elapsed_ns": 50764106
+    }
+  ],
+  "scope": "one prospectively declared CLI example; no final challenge",
+  "external_input_binding": "passed: bytes hash and parsed declared problem agree",
+  "input_path": "v3/work_logs/P3_02_2026-10-07_S1/development/constructive_cli_2_files/input.json",
+  "input_sha256": "ffdc714a103b991ff741c4d7e4e2979e1d6c6d37338f7db1ecfb17fe4a7cb2e7",
+  "target_examples": [
+    {
+      "p": [
+        "1/2",
+        "1/4",
+        "1/4"
+      ],
+      "scale": "2",
+      "offset": "0",
+      "raw_values": [
+        "1/2",
+        "5/2",
+        "3/2"
+      ],
+      "decoded_scale": "2",
+      "decoded_target": "1/2"
+    },
+    {
+      "p": [
+        "1/2",
+        "1/8",
+        "3/8"
+      ],
+      "scale": "2",
+      "offset": "1/4",
+      "raw_values": [
+        "1/2",
+        "5/2",
+        "3/2"
+      ],
+      "decoded_scale": "2",
+      "decoded_target": "1/2"
+    }
+  ],
+  "artifact_path": "v3/work_logs/P3_02_2026-10-07_S1/development/constructive_cli_2_files/certificate.json",
+  "artifact_sha256": "159ce94a45b1a39a8fc7c13ef7385c60e78daf10702435888b59adc24420ca05",
+  "existing_output_preserved": true,
+  "end_utc": "2026-10-07T05:27:49.756717+00:00",
+  "end_monotonic_ns": 44039063839477,
+  "elapsed_ns": 135068775,
+  "child_user_cpu_seconds": 0.094442,
+  "child_system_cpu_seconds": 0.037776
+}

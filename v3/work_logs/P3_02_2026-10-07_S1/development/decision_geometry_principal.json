@@ -1,0 +1,841 @@
+{
+  "contributor": "ChatGPT (GPT-6 Astra Pro), internal same-model independent reconstruction",
+  "exhaustive": {
+    "distinct_available_rows": 27,
+    "menus": [
+      {
+        "actions": 2,
+        "menus": 351,
+        "oracle_observation_points_examined": 879,
+        "sufficient_menus": 204
+      },
+      {
+        "actions": 3,
+        "menus": 2925,
+        "oracle_observation_points_examined": 7627,
+        "sufficient_menus": 1224
+      }
+    ],
+    "predicate_disagreements": 0,
+    "row_entries": [
+      -1,
+      0,
+      1
+    ],
+    "total_menus": 3276
+  },
+  "focused_examples": {
+    "duplicate_rows": {
+      "essential_representatives": [
+        "A",
+        "B"
+      ],
+      "loss_rows": [
+        [
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "tie_fiber": {
+        "common_optimal_actions": [
+          "A",
+          "A_copy",
+          "B"
+        ],
+        "endpoint_profiles": [
+          {
+            "law": [
+              "1/2",
+              "1/2",
+              "0"
+            ],
+            "losses": {
+              "A": "1/2",
+              "A_copy": "1/2",
+              "B": "1/2"
+            },
+            "optimal_actions": [
+              "A",
+              "A_copy",
+              "B"
+            ],
+            "preference_groups_best_first": [
+              [
+                "A",
+                "A_copy",
+                "B"
+              ]
+            ],
+            "y": "1/2"
+          },
+          {
+            "law": [
+              "1/2",
+              "0",
+              "1/2"
+            ],
+            "losses": {
+              "A": "1/2",
+              "A_copy": "1/2",
+              "B": "1/2"
+            },
+            "optimal_actions": [
+              "A",
+              "A_copy",
+              "B"
+            ],
+            "preference_groups_best_first": [
+              [
+                "A",
+                "A_copy",
+                "B"
+              ]
+            ],
+            "y": "1/2"
+          }
+        ],
+        "singleton_fiber": false,
+        "y": "1/2"
+      }
+    },
+    "one_sided_sign_exception": {
+      "boundary_fiber": {
+        "common_optimal_actions": [
+          "A",
+          "B"
+        ],
+        "endpoint_profiles": [
+          {
+            "law": [
+              "1",
+              "0",
+              "0"
+            ],
+            "losses": {
+              "A": "0",
+              "B": "0"
+            },
+            "optimal_actions": [
+              "A",
+              "B"
+            ],
+            "preference_groups_best_first": [
+              [
+                "A",
+                "B"
+              ]
+            ],
+            "y": "1"
+          },
+          {
+            "law": [
+              "1",
+              "0",
+              "0"
+            ],
+            "losses": {
+              "A": "0",
+              "B": "0"
+            },
+            "optimal_actions": [
+              "A",
+              "B"
+            ],
+            "preference_groups_best_first": [
+              [
+                "A",
+                "B"
+              ]
+            ],
+            "y": "1"
+          }
+        ],
+        "singleton_fiber": true,
+        "y": "1"
+      },
+      "interior_fiber": {
+        "common_optimal_actions": [
+          "B"
+        ],
+        "endpoint_profiles": [
+          {
+            "law": [
+              "1/2",
+              "1/2",
+              "0"
+            ],
+            "losses": {
+              "A": "1/2",
+              "B": "0"
+            },
+            "optimal_actions": [
+              "B"
+            ],
+            "preference_groups_best_first": [
+              [
+                "B"
+              ],
+              [
+                "A"
+              ]
+            ],
+            "y": "1/2"
+          },
+          {
+            "law": [
+              "1/2",
+              "0",
+              "1/2"
+            ],
+            "losses": {
+              "A": "1",
+              "B": "0"
+            },
+            "optimal_actions": [
+              "B"
+            ],
+            "preference_groups_best_first": [
+              [
+                "B"
+              ],
+              [
+                "A"
+              ]
+            ],
+            "y": "1/2"
+          }
+        ],
+        "singleton_fiber": false,
+        "y": "1/2"
+      },
+      "interpretation": "The gap is positive for y<1 and zero at y=1; its magnitude is not generally identified.",
+      "loss_rows": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "some_optimum_vs_complete_tie_set": {
+      "fiber": {
+        "common_optimal_actions": [
+          "A"
+        ],
+        "endpoint_profiles": [
+          {
+            "law": [
+              "1/2",
+              "1/2",
+              "0"
+            ],
+            "losses": {
+              "A": "0",
+              "B": "1/2"
+            },
+            "optimal_actions": [
+              "A"
+            ],
+            "preference_groups_best_first": [
+              [
+                "A"
+              ],
+              [
+                "B"
+              ]
+            ],
+            "y": "1/2"
+          },
+          {
+            "law": [
+              "1/2",
+              "0",
+              "1/2"
+            ],
+            "losses": {
+              "A": "0",
+              "B": "0"
+            },
+            "optimal_actions": [
+              "A",
+              "B"
+            ],
+            "preference_groups_best_first": [
+              [
+                "A",
+                "B"
+              ]
+            ],
+            "y": "1/2"
+          }
+        ],
+        "singleton_fiber": false,
+        "y": "1/2"
+      },
+      "fixed_tie_policy": "A policy prioritizing B at ties selects different actions at these identical summaries.",
+      "loss_rows": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ]
+    },
+    "strict_interior_failure_and_boundary_singleton": {
+      "boundary_fiber": {
+        "common_optimal_actions": [
+          "A",
+          "B"
+        ],
+        "endpoint_profiles": [
+          {
+            "law": [
+              "1",
+              "0",
+              "0"
+            ],
+            "losses": {
+              "A": "0",
+              "B": "0"
+            },
+            "optimal_actions": [
+              "A",
+              "B"
+            ],
+            "preference_groups_best_first": [
+              [
+                "A",
+                "B"
+              ]
+            ],
+            "y": "1"
+          },
+          {
+            "law": [
+              "1",
+              "0",
+              "0"
+            ],
+            "losses": {
+              "A": "0",
+              "B": "0"
+            },
+            "optimal_actions": [
+              "A",
+              "B"
+            ],
+            "preference_groups_best_first": [
+              [
+                "A",
+                "B"
+              ]
+            ],
+            "y": "1"
+          }
+        ],
+        "singleton_fiber": true,
+        "y": "1"
+      },
+      "global_service": false,
+      "interior_laws": [
+        {
+          "law": [
+            "1/3",
+            "1/2",
+            "1/6"
+          ],
+          "losses": {
+            "A": "1/2",
+            "B": "1/6"
+          },
+          "optimal_actions": [
+            "B"
+          ],
+          "preference_groups_best_first": [
+            [
+              "B"
+            ],
+            [
+              "A"
+            ]
+          ],
+          "y": "1/3"
+        },
+        {
+          "law": [
+            "1/3",
+            "1/6",
+            "1/2"
+          ],
+          "losses": {
+            "A": "1/6",
+            "B": "1/2"
+          },
+          "optimal_actions": [
+            "A"
+          ],
+          "preference_groups_best_first": [
+            [
+              "A"
+            ],
+            [
+              "B"
+            ]
+          ],
+          "y": "1/3"
+        }
+      ],
+      "loss_rows": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ]
+    },
+    "strictly_dominated_action": {
+      "all_essential_hidden_coefficients_equal": true,
+      "all_menu_hidden_coefficients_equal": false,
+      "essential_representatives": [
+        "A",
+        "B"
+      ],
+      "loss_rows": {
+        "A": [
+          "0",
+          "1",
+          "1"
+        ],
+        "B": [
+          "1",
+          "0",
+          "0"
+        ],
+        "D": [
+          "1/4",
+          "5/4",
+          "9/4"
+        ]
+      },
+      "nonconstant_selector": "Choose B for y<1/2, A for y>1/2, either at y=1/2.",
+      "same_summary_different_full_preferences": [
+        {
+          "law": [
+            "2/3",
+            "1/3",
+            "0"
+          ],
+          "losses": {
+            "A": "1/3",
+            "B": "2/3",
+            "D": "7/12"
+          },
+          "optimal_actions": [
+            "A"
+          ],
+          "preference_groups_best_first": [
+            [
+              "A"
+            ],
+            [
+              "D"
+            ],
+            [
+              "B"
+            ]
+          ],
+          "y": "2/3"
+        },
+        {
+          "law": [
+            "2/3",
+            "0",
+            "1/3"
+          ],
+          "losses": {
+            "A": "1/3",
+            "B": "2/3",
+            "D": "11/12"
+          },
+          "optimal_actions": [
+            "A"
+          ],
+          "preference_groups_best_first": [
+            [
+              "A"
+            ],
+            [
+              "B"
+            ],
+            [
+              "D"
+            ]
+          ],
+          "y": "2/3"
+        }
+      ],
+      "strict_componentwise_dominance": "D has greater loss than A in every state.",
+      "tie_and_boundary_profiles": {
+        "0": {
+          "common_optimal_actions": [
+            "B"
+          ],
+          "endpoint_profiles": [
+            {
+              "law": [
+                "0",
+                "1",
+                "0"
+              ],
+              "losses": {
+                "A": "1",
+                "B": "0",
+                "D": "5/4"
+              },
+              "optimal_actions": [
+                "B"
+              ],
+              "preference_groups_best_first": [
+                [
+                  "B"
+                ],
+                [
+                  "A"
+                ],
+                [
+                  "D"
+                ]
+              ],
+              "y": "0"
+            },
+            {
+              "law": [
+                "0",
+                "0",
+                "1"
+              ],
+              "losses": {
+                "A": "1",
+                "B": "0",
+                "D": "9/4"
+              },
+              "optimal_actions": [
+                "B"
+              ],
+              "preference_groups_best_first": [
+                [
+                  "B"
+                ],
+                [
+                  "A"
+                ],
+                [
+                  "D"
+                ]
+              ],
+              "y": "0"
+            }
+          ],
+          "singleton_fiber": false,
+          "y": "0"
+        },
+        "1": {
+          "common_optimal_actions": [
+            "A"
+          ],
+          "endpoint_profiles": [
+            {
+              "law": [
+                "1",
+                "0",
+                "0"
+              ],
+              "losses": {
+                "A": "0",
+                "B": "1",
+                "D": "1/4"
+              },
+              "optimal_actions": [
+                "A"
+              ],
+              "preference_groups_best_first": [
+                [
+                  "A"
+                ],
+                [
+                  "D"
+                ],
+                [
+                  "B"
+                ]
+              ],
+              "y": "1"
+            },
+            {
+              "law": [
+                "1",
+                "0",
+                "0"
+              ],
+              "losses": {
+                "A": "0",
+                "B": "1",
+                "D": "1/4"
+              },
+              "optimal_actions": [
+                "A"
+              ],
+              "preference_groups_best_first": [
+                [
+                  "A"
+                ],
+                [
+                  "D"
+                ],
+                [
+                  "B"
+                ]
+              ],
+              "y": "1"
+            }
+          ],
+          "singleton_fiber": true,
+          "y": "1"
+        },
+        "1/2": {
+          "common_optimal_actions": [
+            "A",
+            "B"
+          ],
+          "endpoint_profiles": [
+            {
+              "law": [
+                "1/2",
+                "1/2",
+                "0"
+              ],
+              "losses": {
+                "A": "1/2",
+                "B": "1/2",
+                "D": "3/4"
+              },
+              "optimal_actions": [
+                "A",
+                "B"
+              ],
+              "preference_groups_best_first": [
+                [
+                  "A",
+                  "B"
+                ],
+                [
+                  "D"
+                ]
+              ],
+              "y": "1/2"
+            },
+            {
+              "law": [
+                "1/2",
+                "0",
+                "1/2"
+              ],
+              "losses": {
+                "A": "1/2",
+                "B": "1/2",
+                "D": "5/4"
+              },
+              "optimal_actions": [
+                "A",
+                "B"
+              ],
+              "preference_groups_best_first": [
+                [
+                  "A",
+                  "B"
+                ],
+                [
+                  "D"
+                ]
+              ],
+              "y": "1/2"
+            }
+          ],
+          "singleton_fiber": false,
+          "y": "1/2"
+        },
+        "1/4": {
+          "common_optimal_actions": [
+            "B"
+          ],
+          "endpoint_profiles": [
+            {
+              "law": [
+                "1/4",
+                "3/4",
+                "0"
+              ],
+              "losses": {
+                "A": "3/4",
+                "B": "1/4",
+                "D": "1"
+              },
+              "optimal_actions": [
+                "B"
+              ],
+              "preference_groups_best_first": [
+                [
+                  "B"
+                ],
+                [
+                  "A"
+                ],
+                [
+                  "D"
+                ]
+              ],
+              "y": "1/4"
+            },
+            {
+              "law": [
+                "1/4",
+                "0",
+                "3/4"
+              ],
+              "losses": {
+                "A": "3/4",
+                "B": "1/4",
+                "D": "7/4"
+              },
+              "optimal_actions": [
+                "B"
+              ],
+              "preference_groups_best_first": [
+                [
+                  "B"
+                ],
+                [
+                  "A"
+                ],
+                [
+                  "D"
+                ]
+              ],
+              "y": "1/4"
+            }
+          ],
+          "singleton_fiber": false,
+          "y": "1/4"
+        },
+        "3/4": {
+          "common_optimal_actions": [
+            "A"
+          ],
+          "endpoint_profiles": [
+            {
+              "law": [
+                "3/4",
+                "1/4",
+                "0"
+              ],
+              "losses": {
+                "A": "1/4",
+                "B": "3/4",
+                "D": "1/2"
+              },
+              "optimal_actions": [
+                "A"
+              ],
+              "preference_groups_best_first": [
+                [
+                  "A"
+                ],
+                [
+                  "D"
+                ],
+                [
+                  "B"
+                ]
+              ],
+              "y": "3/4"
+            },
+            {
+              "law": [
+                "3/4",
+                "0",
+                "1/4"
+              ],
+              "losses": {
+                "A": "1/4",
+                "B": "3/4",
+                "D": "3/4"
+              },
+              "optimal_actions": [
+                "A"
+              ],
+              "preference_groups_best_first": [
+                [
+                  "A"
+                ],
+                [
+                  "B",
+                  "D"
+                ]
+              ],
+              "y": "3/4"
+            }
+          ],
+          "singleton_fiber": false,
+          "y": "3/4"
+        }
+      }
+    }
+  },
+  "independent_oracle_description": {
+    "direct_oracle": "For every exact rational pairwise crossing value on either endpoint curve (y,1-y,0) and (y,0,1-y), and each intervening interval midpoint, compute endpoint argmin sets directly and test their intersection. A common endpoint action is optimal throughout the whole fiber by linearity. Include y=0 and y=1 and all ties; a negative case may stop at its first witnessed failure.",
+    "geometric_predicate": "Merge duplicate rows. Find each closed optimal cell by rational half-plane intersection; positive area identifies an essential row. Test equality of the essential rows' coefficients along hidden direction (0,1,-1).",
+    "independence_scope": "The endpoint oracle does not call the cell or rank calculation. Both calculations were written by the same model; this is internal reconstruction, not independent-model validation."
+  },
+  "passed": true,
+  "schema": "value_logic.p3_02.decision_geometry_development.v1",
+  "scope": {
+    "domain": "Full real normalized simplex Delta_3",
+    "excluded": [
+      "Arbitrary nonlinear reports or convex elicitation dimension",
+      "Restricted or nonconvex law domains",
+      "Learning, paid acquisition, resource-optimality or final challenge evidence"
+    ],
+    "losses": "Known finite rational action-loss rows",
+    "observation": "The fixed exact linear expectation y=p_1",
+    "service": "Return SOME Bayes-optimal action, preserving no prescribed tie policy"
+  },
+  "script_sha256": "1d61ee1b6e4b49ebce00fc9d07183f0fce5ca87249a8add51a787f09d2f8391c",
+  "status": "DEVELOPMENT",
+  "time_credit": "No additional or duplicate principal-session credit."
+}

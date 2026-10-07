@@ -3,12 +3,17 @@
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
 
-**Status: P3-01 complete at questions-and-comparison-contract scope.**
-The [completed session](v3/work_logs/P3_01_2026-10-07_S1.md) records
-**90.272936407733 measured research minutes**; phase three has **869.727063592267 minutes**
-remaining to its 960-minute research floor. **Next: P3-02, unstarted.**
+**Status: P3-01 and P3-02 complete at their declared task scopes.**
+P3-01 supplies the questions and comparison contract. P3-02 supplies the
+[finite probability-information analysis](v3/derivations/02_probability_information.md)
+and **90.079634416433 measured research minutes**, with its
+[completed session](v3/work_logs/P3_02_2026-10-07_S1.md) and
+[exact actuals](v3/work_logs/P3_02_2026-10-07_S1/actuals.json).
+Phase-three qualifying research is **180.352570824167 minutes**;
+**779.647429175833 minutes** remain to its 960-minute floor.
+**Next: P3-A — problem and representation readiness, unattempted.**
 Phase two remains complete at its accepted scope. No phase-three gate has been
-attempted. The initial contribution assessment is **NOT YET SUPPORTED**.
+attempted, and P3-03 is unstarted. P3-N01 remains **NOT YET SUPPORTED**.
 
 Read this plan with the [phase-three procedure](v3/RESEARCH_PROTOCOL.md),
 [workspace guide](v3/README.md), [claim ledger](v3/claim_ledger.md), and the
@@ -128,7 +133,7 @@ performance superiority are separate claims and are not completion requirements.
   solely because it uses real numbers. **Done:** all five questions have an
   operational target and a strong comparator; no universal capability is assumed.
 
-- [ ] **P3-02 — probability information in values. Research90.**
+- [x] **P3-02 — probability information in values. Research90.**
 
   Reconstruct probability recovery from known event-contingent losses; extend
   to finite loss matrices and normalized probability vectors. Contrast full-law
@@ -316,7 +321,8 @@ phase. Prospective replanning can replace an unstarted task with a better
 floor, accepted obligations and the abandoned alternative's record.
 
 **Active repair queue: empty. P3-N01 is an open contribution-development
-obligation, not a detected defect. P3-01 is complete; P3-02 is next and unstarted.**
+obligation, not a detected defect. P3-01 and P3-02 are complete at their
+declared scopes. Next: P3-A, unattempted; P3-03 remains unstarted.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original
 register. Neither is required or activated by this plan. General neural

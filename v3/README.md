@@ -2,7 +2,7 @@
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 7, 2026 UTC.
 
-**P3-01 is complete at question-contract scope; P3-02 is next and unstarted.** The author has set a
+**P3-01 and P3-02 are complete at their declared scopes; P3-A is next and unattempted.** The author has set a
 minimum of **16 measured hours of research**, with longer work possible.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -52,9 +52,13 @@ An estimated loss of 3 then encodes probability 0.7. This elementary conditional
 identity is an illustration of an expected-loss model, not a learning algorithm.
 Unknown stakes, additional costs or a different risk criterion can prevent
 that recovery. Multiple known loss queries can retain more information than
-one aggregate score. P3-02 will characterize the precise finite conditions.
+one aggregate score. The [finite probability-information analysis](derivations/02_probability_information.md)
+now gives exact conditions for full-law recovery, specified expected losses,
+certified intervals and some optimal action. Those services can require
+different information. Unknown shared scale or offset, restricted query
+choices and dependence needed for joint actions have explicit consequences.
 
-A [proper scoring rule](literature/00_orientation.md#s02--proper-scoring-rules)
+A [proper scoring rule](literature/00_orientation.md)
 offers a related bridge: a loss for a reported probability can reward accurate
 beliefs. The epistemic forecast, the stakes of an action and the cost of
 computing an answer remain separate objects.
@@ -78,8 +82,13 @@ Phase two remains complete. Its records, clocks, paper and scientific freezes
 are preserved; its neural follow-ups remain optional. P3-01 supplies a
 [question contract](foundations/01_problem_contract.md), exact comparison
 duties, primary-source reconstructions and finite development diagnostics.
-No phase-three learner, final experiment or gate is established by that work;
-the contribution obligation remains **NOT YET SUPPORTED**.
+P3-02 adds finite identification, calibration, decision and repair results,
+[source comparisons](literature/02_probability_sources.md), and a
+[rational certificate companion](checks/02_finite_information_audit.py).
+This supplies a concrete restricted information interface for later research.
+No phase-three learner, final experiment or gate is established by these tasks;
+the contribution obligation remains **NOT YET SUPPORTED**. The separate next
+item is P3-A, which must assess representation readiness and alternatives.
 
 ## Workspace
 
@@ -93,6 +102,7 @@ the contribution obligation remains **NOT YET SUPPORTED**.
 | Worked boundaries | [Separating examples](foundations/01_separating_examples.md) · [Information](foundations/01_evidence_boundaries.md) · [Composition](foundations/01_composition_boundaries.md) · [Representation](foundations/01_representation_boundaries.md) |
 | Observation and refinement | [Records and revisions](foundations/01_observation_contract.md) · [Criterion probes](foundations/01_criterion_probes.md) |
 | Reconstructed primary definitions | [Source contracts](literature/01_source_contracts.md) |
+| Probability information | [Finite derivation](derivations/02_probability_information.md) · [Primary comparisons](literature/02_probability_sources.md) · [Certificate companion](checks/02_finite_information_audit.py) |
 | Claims and open obligations | [Claim ledger](claim_ledger.md) |
 | Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |
-| Completed research record | [P3-01](work_logs/P3_01_2026-10-07_S1.md) |
+| Research records | [P3-01](work_logs/P3_01_2026-10-07_S1.md) · [P3-02](work_logs/P3_02_2026-10-07_S1.md) |

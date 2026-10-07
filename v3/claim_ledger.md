@@ -1,8 +1,11 @@
 # Phase-three claims and obligations
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 7, 2026 UTC.
-**P3-01 complete at contract scope; Research90 and final records complete.
-Gates P3-A–D unattempted; P3-02 next and unstarted.**
+**P3-01 complete at contract scope; P3-02 complete at finite probability-information scope.
+Both Research90 minima and closing records are complete. Gates P3-A–D remain
+unattempted; P3-A is the next item. P3-N01 remains NOT YET SUPPORTED.**
+P3-02 has [exact time and preservation records](work_logs/P3_02_2026-10-07_S1/actuals.json)
+and a [task readiness audit](work_logs/P3_02_2026-10-07_S1/readiness_audit.md).
 
 Use this ledger for exact statements, assumptions, versions, evidence type,
 status and project impact. Planning examples and inherited evidence are not
@@ -54,6 +57,38 @@ evidence is in the [problem contract](foundations/01_problem_contract.md),
 | P3-H05 | The requested recovery service and admissible input family are now explicit. | Still a **P3-02 TARGET**. Known-stakes inversion and the missing-correlation examples do not supply the later general characterization or its distinctiveness. |
 | P3-L01 | Selected primary definitions and source hypotheses were reconstructed; inaccessible, partial and corrected-source scopes are recorded. | Internal same-model, nonblind review. No comprehensive priority review, full LI construction proof or independently executed Lean verification. |
 
+## P3-02 mathematical dispositions — October 7, 2026
+
+These statements are conditional finite results. Their proofs and exact scope
+are in [probability information](derivations/02_probability_information.md);
+the [source contracts](literature/02_probability_sources.md) distinguish
+ordinary antecedents, direct reconstructions and project adaptations. This
+section does not attempt P3-A or turn mathematical validity into contribution
+support. The observed protected minimum is reconciled separately in the
+[session record](work_logs/P3_02_2026-10-07_S1.md).
+
+| Record | Current finding | Evidence type, scope and limit |
+|---|---|---|
+| P3-H05 | Full-law recovery, specified linear targets, certified intervals and one optimal action now have separate finite characterizations. | **PROVED IN STATED FINITE FRAGMENTS.** PI-1–18 and explicit positive/negative cases. Distinctiveness and the usefulness of the assembled adaptation retain their named comparison obligation. No arbitrary value representation is chosen. |
+| P3-D07 | Under known finite expected losses `Lp`, a target is identifiable exactly when it is constant on actual observation fibers. On the full simplex, linear targets factor through `[1;L]`; full-law recovery requires rank `n`. | PI-1–4: direct reconstruction of finite expectation/row-space information, with convex-source, nonconvex and local-face distinctions. Decoder existence is not cheap computation. |
+| P3-D08 | Partial identification and decision regret have sharp compatible-source bounds; retaining a needed joint loss can suffice without retaining the full joint law. | PI-5/6 and §7: rational endpoint/dual constructions, inherited missing-correlation and credal examples explicitly attributed. LP claims require polyhedral sources; coverage needs its own premises. |
+| P3-D09 | Finite strictly proper score differences span the full state space under the stated interior-domain/finite-risk hypotheses; appropriate expected-score probes can calibrate shared positive scale and offset. | PI-7/8: elementary finite proofs and a rational Brier construction. A full risk function, optimal report/value, learned estimate and realized score are distinct services. No convergence or induction duty is supplied. |
+| P3-D10 | Some optimal action is recoverable exactly when essential-action differences annihilate the relevant hidden directions; unknown positive scale replaces normalized geometry by a positive-cone condition. | PI-9/18: finite-action/full-simplex results, convex-source extension for known units, and explicit query-count distinctions. Complete ties, all preferences and absolute risks are different targets. |
+| P3-D11 | Unknown common scale and offset admit precise target conditions and minimum freely selected query repairs, with constants and the one-state case treated separately. | PI-10/11/17: direct finite adaptation of retention, calibration and quotient dimensions. Partial-target recovery may leave the offset unidentified; source, access and nuisance sharing are hypotheses. |
+| P3-D12 | Independently boxed uncertain payoff rows have an exact affine existential probability projection; coupling those rows or sharing one table across simultaneous populations changes the projection. | PI-12: constructive row interpolation and hostile shared-stake examples. This does not make the original joint uncertain-product graph affine or native. |
+| P3-D13 | A known compact joint error set yields an exact scalar pair-modulus radius. Compatible vector recovery can cost more; the three-state conditioning example has matching witnesses and bounds. | PI-13: ordinary optimal recovery specialized to the declared source/error relation, with saved rational fixtures. Actual fiber convexity, polyhedrality and scalar/vector scope are kept distinct. |
+| P3-D14 | Nonconstant conditional ratios have precise convex-source numerator/denominator recovery conditions; shared unknown scale can cancel without identifying unconditional mass. | PI-14: direct kernel/cone proof, positive-margin fractional LP and rare-event/threshold examples. Observational conditional information does not identify counterfactual dependence. |
+| P3-D15 | The strongest unrestricted scalar global decoder on a compact convex finite-dimensional source can be affine; the noisy example's sharp radius has such an ordinary implementation. | PI-15: reconstructed ordinary theorem via LP/compactness and the source-stated Smolyak route. No improvement over the same-access best affine baseline is claimed. Compatibility and nonconvex sources have explicit exceptions. |
+| P3-D16 | Arbitrary unknown increasing transformations of finitely many expected risks preserve exactly their weak order; outcome-dependent positive stakes instead tilt the law elicited by a proper score. | PI-16 and §17: direct interpolation, open-cell and reweighting proofs. A transformation after expectation differs from transforming statewise payoffs. Known relative stakes permit debiasing. |
+| P3-D17 | Exact-real coordinates, finite codes, finite observations, empirical means and a whole observation distribution have different identification duties. | §16: direct finite-code bound and sampling/score-coupling examples. No statistical consistency, population coverage or bounded mathematical-learning guarantee is inferred from exact algebra. |
+| P3-D18 | A full semantic payoff box with an old offset reference has a sharp `r` versus `r+1` target-repair criterion; finite purchasable menus can require more queries or make repair impossible. | §18: hand-proved quotient-span characterization, rational attainability and a four-state counterexample. Unrestricted positive shifts preserve the free linear-target count, but fixed upper stakes need separate analysis. The companion does not optimize restricted purchases. |
+| P3-D19 | An irrational decision boundary can require more rational or nonnegative queries for exact choice, while a specified positive regret tolerance admits a smaller rational approximation. | §20: coefficient-alphabet construction and bound `regret<=eta p_2<=eta`, with external exact-decoder and declared-unit premises. Actual payoff repricing multiplies the bound. No universal representation lower bound follows. |
+| P3-B04 | Algebraic probability recovery need not be a native probability-unit derivation; an explicit reciprocal unit path or an external adapter may be required. | §13: 13 accepted native certificates, three expected rejections and a unit-reduct countermodel using unchanged inherited checkers. Rational threshold certificates do not add variable division or arbitrary uncertain products to the language. |
+| P3-E02 | Deterministic development exercises support the implemented finite fragments, with exposed source versions and failures retained. | 3,276 decision menus plus focused cases; probability/noise fixtures; native cases; 10,660 constructive certificate cases with an independent binary oracle; a separately bound CLI example. The first CLI harness path-reporting failure is preserved before its correction. These are not independent scientific findings, blind evaluation or a final challenge. |
+| P3-L02 | Ten selected primary-source contracts and the inherited phase-two record supply strong ordinary expectation, credal, scoring, surrogate, LP/fractional-programming and optimal-recovery comparisons. | Root-inspected source portions and internal same-model reviews; inaccessible or unread scopes are explicit. No comprehensive priority review or imported general learner is claimed. |
+| P3-C02 | A concrete finite information-audit adaptation is available for assessment: explicit service premises, proof-interface mapping and a reusable smaller exact certificate companion. | Candidate modest formal adaptation/synthesis. The companion implements full-simplex rational linear targets under four exact shared calibration contracts. Ordinary methods may use the same program and proofs; no numerical or resource advantage is established. |
+| P3-H01/H02/H03/H04 | The prior logical-learning, counterfactual, plurality and paid-refinement targets remain prospective. | Their earlier statuses are unchanged. P3-02 is an information analysis, not P3-03, an update rule, or a later comparison experiment. |
+
 ## Current contribution record — P3-N01
 
 **Status: NOT YET SUPPORTED.**
@@ -64,9 +99,9 @@ evidence is in the [problem contract](foundations/01_problem_contract.md),
 | Type | Candidate modest formal adaptation, useful synthesis/implementation or specialized application. An original theorem or exclusive capability is not presumed. |
 | Exact delta | Unestablished. The target is an identified bounded service or cross-component guarantee beyond relabeling expected costs or listing familiar components. Phase-two transport and retention are inherited antecedents, not new phase-three results. |
 | Magnitude | Unestablished; prospective finite or otherwise restricted scope. No worldwide priority, broad superiority or unrestricted uncertainty/counterpossible result is claimed. |
-| Evidence presently available | Reconstructed interfaces, conditional elementary arguments, finite separating fixtures and explicit comparison failures. These sharpen the target but do not establish its contribution delta. |
+| Evidence presently available | P3-01's operational contract plus P3-02's finite identification, decision, calibration and repair proofs, native-interface cases, saved certificate implementation and strong ordinary comparisons. A narrower finite information-audit adaptation is now concrete, but the phase-wide logical-forecast/paid-revision delta remains unestablished. |
 | Comparison scope | S01 already sketches a resource-limited controller consulting a logical inductor; S03/S20 supply computation-selection/profile interfaces; S17 supplies incremental checking; S21 supplies numerical-uncertainty and acquisition interfaces; S22 supplies coherent logical probabilities. S02/S13 and S08/S15 supply scoring/expectation and model-plurality comparisons; S09 connects imprecise expectations with local sequential models. O-COMB may combine the same capabilities. |
-| Next evidence chunk | P3-02, Research90: identify exactly what known finite loss queries retain about probability or decisions, confront the existing finite expectation results, and state any useful additional restriction, obstruction or adaptation. P3-01 does not execute it. |
+| Next evidence chunk | After P3-02 closure, the separate P3-A problem/representation readiness gate must assess the usable restricted representation, alternatives and falsifiable targets. It remains unattempted. Subsequent logical-uncertainty development needs its own selected task and timing; no gate pass or P3-03 work is supplied here. |
 | Recurrence if needed | Retain R-P3-N01, Research90, for the contribution gate if meaningful support is still missing: target one named bounded service, reconstruct its closest ordinary implementation, and establish a substantive delta or disposition of displacement. Selection remains prospective at the appropriate gate. |
 
 The generic controller/forecast/cost architecture is therefore insufficient as

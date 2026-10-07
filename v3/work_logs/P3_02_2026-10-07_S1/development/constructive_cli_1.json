@@ -1,0 +1,47 @@
+{
+  "stage": "development",
+  "status": "failed",
+  "script_path": "v3/checks/02_finite_information_cli_check.py",
+  "script_sha256": "5a92e6d95be89abed8ae887c02c605ec7b886ef42685fc69218cd1ca84a90151",
+  "dependencies": {
+    "v3/checks/02_finite_information_cli_check.py": "5a92e6d95be89abed8ae887c02c605ec7b886ef42685fc69218cd1ca84a90151",
+    "v3/checks/02_finite_information_audit.py": "546a4b12df2348d284582de7e48e19378bd8a5fbc3ea191b9190605aaa9879b0",
+    "v3/checks/02_finite_information_verify.py": "9b1e2822a867f934fbbaa4b6b7fb1230ad69cbf9458565da1b3bf418e7d3f1f1"
+  },
+  "python": "3.12.14",
+  "start_utc": "2026-10-07T05:27:05.630700+00:00",
+  "start_monotonic_ns": 43994937582415,
+  "steps": [
+    {
+      "label": "generate",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ed8ae2b0d290/value_logic/v3/checks/02_finite_information_audit.py",
+        "--input",
+        "v3/work_logs/P3_02_2026-10-07_S1/development/cli_example_1/input.json",
+        "--output",
+        "v3/work_logs/P3_02_2026-10-07_S1/development/cli_example_1/certificate.json"
+      ],
+      "start_utc": "2026-10-07T05:27:05.630724+00:00",
+      "start_monotonic_ns": 43994937850648,
+      "expected_success": true,
+      "returncode": 0,
+      "stdout": "{\"output\": \"v3/work_logs/P3_02_2026-10-07_S1/development/cli_example_1/certificate.json\", \"all_targets_recoverable\": false, \"minimum_extra_raw_queries\": 2}\n",
+      "stderr": "",
+      "end_utc": "2026-10-07T05:27:05.681830+00:00",
+      "end_monotonic_ns": 43994988953392,
+      "elapsed_ns": 51102744
+    }
+  ],
+  "scope": "one prospectively declared CLI example; no final challenge",
+  "external_input_binding": "passed: bytes hash and parsed declared problem agree",
+  "failure": {
+    "type": "ValueError",
+    "message": "'v3/work_logs/P3_02_2026-10-07_S1/development/cli_example_1/input.json' is not in the subpath of '/workspace/scratch/ed8ae2b0d290/value_logic'"
+  },
+  "end_utc": "2026-10-07T05:27:05.682325+00:00",
+  "end_monotonic_ns": 43994989447625,
+  "elapsed_ns": 51865210,
+  "child_user_cpu_seconds": 0.035015,
+  "child_system_cpu_seconds": 0.015769
+}
