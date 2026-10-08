@@ -1,10 +1,11 @@
 # Phase-three claims and obligations
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 7, 2026 UTC.
-**P3-01–03 are complete at their declared task scopes, with their Research90
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 8, 2026 UTC.
+**P3-01–04 are complete at their declared task scopes, with their Research90
 minima and closing records. P3-A remains PASS at problem and restricted representation
-readiness; P3-B–D remain unattempted. P3-04 is active: Research90 satisfied,
-original evidence recovery and final closure pending.
+readiness; P3-B–D remain unattempted. P3-04 closes on separately versioned
+S2 replacement evidence; its original missing run history is not recreated.
+Next: P3-05, unstarted.
 P3-N01 remains NOT YET SUPPORTED.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
 [task readiness audit](work_logs/P3_03_2026-10-07_S1/readiness_audit.md).
@@ -170,3 +171,23 @@ Do not promote the surviving drafts to a completed executable-evidence claim,
 repeat their historical time or restart P3-03. P3-N01 remains NOT YET SUPPORTED.
 No P3-05 work or new gate is attempted. The installer posts the original
 81-row append once and records it in a separate application receipt.
+
+## P3-04 S2 — current finite-scope completion
+
+This section supersedes the recovered-delivery status above without rewriting
+its history. [Readiness audit](work_logs/P3_04_2026-10-08_S2/readiness_audit.md),
+[replacement disposition](work_logs/P3_04_2026-10-08_S2/reconstruction_disposition.md)
+and [source contracts](literature/04_source_contracts.md) define current support.
+
+| Record | Current finding and limit |
+|---|---|
+| P3-04-CLOSE01 | **COMPLETE:** typed finite counterfactual operations, explicit exceptional paired-support semantics, ranked repairs, feasibility/ties and interpretation are supplied. Not an unrestricted first-order counterpossible solver or a new gate. |
+| P3-04-SEL01 | C04-1–7 and CE04-1–17 give conditional hand derivations and adaptations: objective-preserving encodings, all-optimum outer coverage, early task certification, uncertainty/restriction limits and gate/source distinctions. Current proof/test coverage is individually mapped in the S2 self-review. |
+| P3-04-EVID01 | New `p304-reconstructed-v1` implementation: 28,064 assertions in eight suites; separate 288-request composition supplement, 39,457 assertions. Complete source-bound development evidence, not the lost six S1 batches, an independent research review or a final benchmark. |
+| P3-04-BOUND01 | The ordinary antecedent/interpretation is retained while hypothetical support and consequence rules are explicit. Frame/rank/payoff choices are additional commitments; observation-only data does not identify them. General arithmetic, native proof transport and learned dependence remain unestablished. |
+| P3-04-PROV01 | The original Research90 and 81 already-posted ledger rows are unchanged. S2 adds **11.794846725917 minutes**, bringing P3-04 to **102.250516541683 minutes**. Only the separately recorded S2 append is posted by this package. |
+| P3-N01 | **NOT YET SUPPORTED.** A scoped synthesis is a candidate; neither time, assertion counts nor naming known components proves significance. Reproduction by an ordinary program alone does not disprove a contribution either. |
+
+P3-05 remains unstarted, P3-A remains PASS, P3-B–D unattempted. No final
+challenge is frozen/exposed. Original S1 code, run archives and forecast remain
+historical gaps; current technical closure rests on the explicit replacement.

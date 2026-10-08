@@ -1,0 +1,236 @@
+{
+  "status": "PASS",
+  "label": "DEVELOPMENT",
+  "assertions": 28064,
+  "suites": [
+    {
+      "suite": "selectors",
+      "assertions": 18727,
+      "elapsed_ns": 732475614,
+      "status": "PASS"
+    },
+    {
+      "suite": "intervals_and_validation",
+      "assertions": 1676,
+      "elapsed_ns": 8459522,
+      "status": "PASS"
+    },
+    {
+      "suite": "supports",
+      "assertions": 2412,
+      "elapsed_ns": 23065641,
+      "status": "PASS"
+    },
+    {
+      "suite": "horn",
+      "assertions": 1915,
+      "elapsed_ns": 14806684,
+      "status": "PASS"
+    },
+    {
+      "suite": "graphs",
+      "assertions": 11,
+      "elapsed_ns": 114924,
+      "status": "PASS"
+    },
+    {
+      "suite": "encodings_and_repairs",
+      "assertions": 1336,
+      "elapsed_ns": 30488983,
+      "status": "PASS"
+    },
+    {
+      "suite": "policy_and_extension_checks",
+      "assertions": 1756,
+      "elapsed_ns": 26273560,
+      "status": "PASS"
+    },
+    {
+      "suite": "consequence_laws",
+      "assertions": 231,
+      "elapsed_ns": 9450783,
+      "status": "PASS"
+    }
+  ],
+  "elapsed_ns": 846301376,
+  "ended_utc": "2026-10-08T08:04:14.678381+00:00",
+  "details": {
+    "selectors": {
+      "requests": 512,
+      "prefixes": 2928,
+      "ties_retained": true,
+      "ordinary_comparator": "separate full enumeration over same cases, no performance claim"
+    },
+    "intervals": {
+      "expressions": 104,
+      "partial_cells_each": 9,
+      "input_rejections": 12
+    },
+    "supports": {
+      "formulas": 60,
+      "states_each": 16,
+      "GC01_selected": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "unframed_continue_image": [
+        "0",
+        "4"
+      ],
+      "unsupported_bottom": "INFEASIBLE"
+    },
+    "horn": {
+      "cases": 1280,
+      "arithmetic_quotations": [
+        "2=3",
+        "4=6",
+        "0=1"
+      ],
+      "add_only": {
+        "status": "NONEMPTY_UNIQUE_MINIMUM",
+        "bits": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "forbidden_conflicts": [],
+        "reference_satisfies_rule_policy": true,
+        "rule_body_checks": 2,
+        "passes": 2,
+        "new_rule_bits": 1
+      },
+      "cancellation_without_permission": {
+        "status": "INFEASIBLE",
+        "bits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden_conflicts": [
+          2
+        ],
+        "reference_satisfies_rule_policy": true,
+        "rule_body_checks": 4,
+        "passes": 2,
+        "new_rule_bits": 2
+      },
+      "cancellation_permitted": {
+        "status": "NONEMPTY_UNIQUE_MINIMUM",
+        "bits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "forbidden_conflicts": [],
+        "reference_satisfies_rule_policy": true,
+        "rule_body_checks": 4,
+        "passes": 2,
+        "new_rule_bits": 2
+      }
+    },
+    "graphs": {
+      "conditioned_family": "empty",
+      "direct_intervention_loss": 1,
+      "common_cause_intervention_loss": 3,
+      "actor": {
+        "original": [
+          0,
+          0,
+          1
+        ],
+        "replacement": [
+          1,
+          0,
+          1
+        ],
+        "history": 0,
+        "routing": [
+          [
+            "A",
+            true
+          ],
+          [
+            "B",
+            false
+          ],
+          [
+            "predict_original",
+            false
+          ]
+        ],
+        "hamming_distance": 1,
+        "outputs": {
+          "A": 1,
+          "B": 0,
+          "predict_original": 0
+        }
+      },
+      "shared": {
+        "original": [
+          0,
+          0,
+          1
+        ],
+        "replacement": [
+          1,
+          0,
+          1
+        ],
+        "history": 0,
+        "routing": [
+          [
+            "A",
+            true
+          ],
+          [
+            "B",
+            true
+          ],
+          [
+            "predict_original",
+            false
+          ]
+        ],
+        "hamming_distance": 1,
+        "outputs": {
+          "A": 1,
+          "B": 1,
+          "predict_original": 0
+        }
+      }
+    },
+    "encoding": {
+      "gate_formulas": 7,
+      "objective_reversal_observed": true,
+      "boolean_profile_families": 255
+    },
+    "extensions": {
+      "independent_rank_boxes": 512,
+      "bounded_gate_points": 162,
+      "unbounded_graph_extreme_weights": true,
+      "sourcewise_loss_image": [
+        0,
+        10
+      ],
+      "joint_loss_image": [
+        0
+      ]
+    },
+    "consequence": {
+      "formula_triples": 343,
+      "gap_countermodel": true
+    }
+  },
+  "error": null
+}

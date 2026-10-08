@@ -2,7 +2,7 @@
   "schema_version": 1,
   "phase": 3,
   "status": "research_in_progress",
-  "next_task": "P3-04",
+  "next_task": "P3-05",
   "phase_research_floor_minutes": 960,
   "qualifying_modes": [
     "D",
@@ -78,7 +78,7 @@
     {
       "id": "P3-04",
       "title": "counterfactual semantics",
-      "status": "in_progress",
+      "status": "complete",
       "research_floor_minutes": 90,
       "mode_forecast_minutes": {
         "D": 75,
@@ -90,12 +90,22 @@
       "attempt_id": "P3-04-1",
       "principal_artifact": "v3/derivations/04_counterfactual_semantics.md",
       "companion_artifact": "v3/derivations/04_selection_extensions.md",
-      "actuals": "v3/work_logs/P3_04_2026-10-08_S1/actuals.json",
-      "research_ns": 5427340188946,
+      "actuals": "v3/work_logs/P3_04_2026-10-08_S2/actuals.json",
+      "research_ns": 6135030992501,
       "research_floor_satisfied": true,
-      "closure_status": "pending_original_implementation_and_evidence_recovery",
+      "closure_status": "complete_with_explicit_historical_evidence_gap",
       "recovery_record": "v3/work_logs/P3_04_2026-10-08_S1.md",
-      "recovery_inventory": "v3/work_logs/P3_04_2026-10-08_S1/recovery_inventory.json"
+      "recovery_inventory": "v3/work_logs/P3_04_2026-10-08_S1/recovery_inventory.json",
+      "completion_scope": "finite_counterfactual_semantics_with_reconstructed_evidence",
+      "original_actuals": "v3/work_logs/P3_04_2026-10-08_S1/actuals.json",
+      "sessions": [
+        "v3/work_logs/P3_04_2026-10-08_S1.md",
+        "v3/work_logs/P3_04_2026-10-08_S2.md"
+      ],
+      "implementation": "v3/checks/04_counterfactual_repair.py",
+      "implementation_version": "p304-reconstructed-v1",
+      "readiness_audit": "v3/work_logs/P3_04_2026-10-08_S2/readiness_audit.md",
+      "evidence_disposition": "v3/work_logs/P3_04_2026-10-08_S2/reconstruction_disposition.md"
     },
     {
       "id": "P3-05",
@@ -255,14 +265,14 @@
   "final_evaluation_exposed": false,
   "neural_recurrence_selected": false,
   "active_session": null,
-  "last_completed_session": "v3/work_logs/P3_03_2026-10-07_S1.md",
+  "last_completed_session": "v3/work_logs/P3_04_2026-10-08_S2.md",
   "observed_progress": {
-    "research_ns": 22197463865109,
-    "measured_engaged_ns": 26406350462763,
-    "remaining_floor_ns": 35402536134891,
-    "source": "v3/work_logs/P3_04_2026-10-08_S1/actuals.json",
+    "research_ns": 22905154668664,
+    "measured_engaged_ns": 27443233054847,
+    "remaining_floor_ns": 34694845331336,
+    "source": "v3/work_logs/P3_04_2026-10-08_S2/actuals.json",
     "next_checkpoint_minutes": 480,
-    "evidence_disposition": "Clock replay verified; original executable evidence not recovered."
+    "evidence_disposition": "S2 reconstructed implementation and fresh development evidence; S1 original runs remain missing."
   },
   "provisional_representation": {
     "id": "P3-A-REP01",
@@ -280,5 +290,5 @@
       "overshoot_ns": 2370123676163
     }
   ],
-  "last_preserved_session": "v3/work_logs/P3_04_2026-10-08_S1.md"
+  "last_preserved_session": "v3/work_logs/P3_04_2026-10-08_S2.md"
 }

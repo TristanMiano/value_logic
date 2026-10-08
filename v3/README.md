@@ -1,8 +1,8 @@
 # Phase Three: Reasoning About Unresolved Mathematics
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 7, 2026 UTC.
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 8, 2026 UTC.
 
-**P3-01–03 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
+**P3-01–04 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
 minimum of **16 measured hours of research**, with longer work possible.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -96,10 +96,14 @@ bounds and named-action certificates. Its [companion proofs](derivations/03_refi
 separate finite-prefix completion, task certainty, source recovery and revision
 support. The general proof-stream adapter is mathematical; the actual prototype
 handles its declared finite Boolean/bounded-VM fragment. No anticipatory learner,
-paid-computation policy or final experiment has been established. P3-04 has [recovered manuscripts and replay-checked timing](work_logs/P3_04_2026-10-08_S1.md),
-but remains in progress until its original implementation and development
-evidence are recovered and closing checks completed. The contribution
-obligation remains **NOT YET SUPPORTED**.
+paid-computation policy or final experiment has been established. P3-04 now supplies [finite counterfactual semantics](derivations/04_counterfactual_semantics.md),
+[selection extensions](derivations/04_selection_extensions.md), and
+[separately reconstructed executable evidence](work_logs/P3_04_2026-10-08_S2.md).
+It covers typed structural changes, explicitly exceptional paired-support
+counterpossibles, ranked selection, all-optimum coverage and task bounds.
+The original lost execution archives are not represented as recovered.
+P3-05 is next and unstarted; the contribution obligation remains
+**NOT YET SUPPORTED**.
 
 ## Workspace
 
@@ -116,6 +120,7 @@ obligation remains **NOT YET SUPPORTED**.
 | Probability information | [Finite derivation](derivations/02_probability_information.md) · [Primary comparisons](literature/02_probability_sources.md) · [Certificate companion](checks/02_finite_information_audit.py) |
 | Representation readiness | [P3-A decision](checkpoints/A_1.md) · [Current contract overlay](checkpoints/A_1.v1.json) |
 | Bounded logical uncertainty | [Construction and duties](derivations/03_logical_uncertainty.md) · [Extensions](derivations/03_refinement_extensions.md) · [Sources](literature/03_bounded_sources.md) · [Kernel](checks/03_bounded_logic.py) |
+| Counterfactual semantics | [Construction](derivations/04_counterfactual_semantics.md) · [Extensions](derivations/04_selection_extensions.md) · [Sources](literature/04_source_contracts.md) · [Replacement code](checks/04_README.md) |
 | Mathematical Markdown | [Rendering conventions and guard](STYLE.md) |
 | Claims and open obligations | [Claim ledger](claim_ledger.md) |
 | Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |

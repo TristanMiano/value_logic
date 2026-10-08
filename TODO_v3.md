@@ -3,22 +3,24 @@
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
 
-**Status: P3-01, P3-02 and P3-03 complete at their declared task scopes.**
+**Status: P3-01–04 complete at their declared task scopes.**
 P3-01 supplies the questions and comparison contract; P3-02 supplies the
 [finite probability-information analysis](v3/derivations/02_probability_information.md).
 P3-03 supplies a [finite bounded uncertainty construction](v3/derivations/03_logical_uncertainty.md)
 and [refinement/retention extensions](v3/derivations/03_refinement_extensions.md),
 with **90.048612847917 measured research minutes** and
 [exact actuals](v3/work_logs/P3_03_2026-10-07_S1/actuals.json).
-Including the recovered, replay-checked P3-04 clock posting, phase-three
-qualifying research is **369.957731085150 minutes**;
-**590.042268914850 minutes** remain to the 960-minute floor.
-See the [P3-04 recovery record](v3/work_logs/P3_04_2026-10-08_S1.md);
-research-floor satisfaction is separate from missing-evidence closure.
+P3-04 is complete at finite counterfactual-semantics scope, with new,
+[separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
+Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
+of measured research repair. The task total is **102.250516541683 minutes**.
+Phase-three qualifying research is **381.752577811067 minutes**;
+**578.247422188933 minutes** remain to the 960-minute floor.
+The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
 The [first 240-minute checkpoint](v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md)
 is assessed at this task boundary with its actual overshoot.
-**Active: P3-04 — Research90 satisfied; original evidence recovery and final closure pending.**
+**Next: P3-05 — counterfactual dependence and proof reuse, unstarted.**
 Phase two remains complete; P3-B–D remain unattempted. P3-N01 remains
 **NOT YET SUPPORTED**. All executable evidence remains development; no final
 challenge is frozen or exposed. The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)
@@ -178,7 +180,7 @@ performance superiority are separate claims and are not completion requirements.
   Artifact:
   `v3/derivations/03_logical_uncertainty.md`.
 
-- [ ] **P3-04 — logical counterfactual semantics. Research90.**
+- [x] **P3-04 — logical counterfactual semantics. Research90.**
 
   Distinguish conditioning on evidence, changing one occurrence, replacing a
   program/shared function, repairing a model or axiom set, and evaluating an
