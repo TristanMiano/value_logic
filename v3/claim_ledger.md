@@ -1,11 +1,12 @@
 # Phase-three claims and obligations
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 8, 2026 UTC.
-**P3-01–04 are complete at their declared task scopes, with their Research90
+**P3-01–05 are complete at their declared task scopes, with their Research90
 minima and closing records. P3-A remains PASS at problem and restricted representation
 readiness; P3-B–D remain unattempted. P3-04 closes on separately versioned
 S2 replacement evidence; its original missing run history is not recreated.
-Active: P3-05, separately reconstructed and in progress; Research90 remains open.
+P3-05 is complete at finite transport and checked-reuse scope, with verified
+Research90 and S3 evidence. Next: P3-06, unstarted.
 P3-N01 remains NOT YET SUPPORTED.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
 [task readiness audit](work_logs/P3_03_2026-10-07_S1/readiness_audit.md).
@@ -214,3 +215,30 @@ work; no earlier result or time is retroactively certified.
 New verified research is **16.600815157283 minutes**; **73.399184842717 minutes**
 remain to P3-05's Research90 floor. No prior unverified duration was credited.
 P3-N01 remains NOT YET SUPPORTED; P3-06 and later gates are not started.
+
+
+## P3-05 completion — October 8, 2026, S3
+
+**COMPLETE at finite counterfactual transport and checked reuse scope.** Earlier
+S2 checkpoint entries remain historical. The [closing session](work_logs/P3_05_2026-10-08_S3.md)
+and [readiness audit](work_logs/P3_05_2026-10-08_S3/readiness_audit.md) record the exact
+scope, verified Research90 and self-review. Prior unverified work remains uncredited.
+
+| Claim | Current finding | Scope and evidence |
+|---|---|---|
+| P3-05/CT05-6–8 | Complementary conditional proofs can cover all current selected alternatives while preserving one fixed receiving action comparison. | Finite coverage and mapped-premise receiver; source/loss/selection checks are separate. No hidden-state action selection or native v2 proof compiler. |
+| P3-05/CT05-9–11 | Exact future outputs require edit-stable equivalence; some acceptable action may need fewer overlapping, history-dependent codes than a canonical partition. | Ordinary finite-machine/closed-cover adaptation, with explicit given graph and no free retained transcript. |
+| P3-05/CT05-12–14 | Validated finite program compilation binds occurrence/shared-function/copy/predictor routing to the actual comparison. | Known pure Boolean programs; operation-preserving maps required. No dependency discovery or arbitrary program equivalence. |
+| P3-05/CT05-15–16 | All permitted rank weights preserve old-domain coverage exactly when the compact-domain selection gap is positive. | Finite linear profiles with checked primal/dual witnesses; endpoint-only checks can miss an unsafe interior weight. |
+| P3-05/CT05-17 | Ordered, fully reverified chain admission preserves conditional validity; scalar correction maxima can lose cancellation. | Explicit competing-ancestor example and repeated-edit diagnostics, not an optimal cache policy. |
+| P3-05/CT05-18 | Recompilation of P3-04 paired-support semantics connects fixed-interpretation counterpossibles to the receiving loss proof. | Quoted antecedent, exceptions and frame are inputs. They are not inferred from favorable numeric outcomes. |
+| P3-05/CT05-19 | Restricted future-task proof retention reduces to finite set cover; completed-task gain need not be submodular. | Fixed maps/cost model; arbitrarily poor immediate-gain example does not lower-bound an unrestricted fresh solver. |
+| P3-05/E-S3 | Current finite receivers have version-bound passing diagnostics; failed search, integration and harness attempts remain saved. | [21 records](work_logs/P3_05_2026-10-08_S3/development/README.md). Self-review, not blind or final evaluation. |
+| P3-05/RESOURCE | Reuse saves against fresh portfolio-certificate search in the parity families but is slower than warm ordinary ADD reasoning in all six saved families. | One local run per unit, with bootstrap and checking expenses. No broad performance advantage. |
+| P3-H02 | Explicit finite counterfactual changes now have checked selected-family loss transport under declared dependencies and corrections. | **PROVED/IMPLEMENTED IN STATED FRAGMENTS.** General learned dependence and philosophical adequacy are separate. |
+
+S3 adds **73.408088262383 minutes**, bringing P3-05 to **90.008903419667**.
+Only the 46 new S3 ledger rows are appended. **P3-N01 remains NOT YET SUPPORTED**;
+P3-06 is unstarted, P3-A stays PASS, and P3-B–D are unattempted. No final evaluation
+is frozen or exposed. The concrete contribution candidate is the finite integration
+and its scoped information/coverage boundaries, not improved logical anticipation.

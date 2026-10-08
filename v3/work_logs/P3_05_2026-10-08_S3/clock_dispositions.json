@@ -1,0 +1,45 @@
+{
+  "schema": "p305.clock_dispositions.v1",
+  "dispositions": [
+    {
+      "id": "S3-CD01",
+      "start_monotonic_ns": 1237114711667,
+      "end_monotonic_ns": 1430459430965,
+      "runtime": "a9f1b0f0-f940-4e3e-a856-640747c24ab9",
+      "effective_mode": "recovery",
+      "reason": "Context compaction and re-entry gap; conservatively exclude the entire unsampled interval. No credit inferred from output or summary."
+    },
+    {
+      "id": "S3-CD02",
+      "start_monotonic_ns": 1430459430965,
+      "end_monotonic_ns": 1522034227239,
+      "runtime": "a9f1b0f0-f940-4e3e-a856-640747c24ab9",
+      "effective_mode": "wait",
+      "reason": "Conservatively exclude the full observed bracket containing the blocking 20-second regression timeout and its initial inspection; no finer matched execution boundary is available."
+    },
+    {
+      "id": "S3-CD03",
+      "start_monotonic_ns": 2507349123239,
+      "end_monotonic_ns": 2958571253792,
+      "runtime": "a9f1b0f0-f940-4e3e-a856-640747c24ab9",
+      "effective_mode": "recovery",
+      "reason": "Conservatively exclude the entire unsampled interval spanning context compaction, restoration and initial inspection; no duration inferred from the summary or planning."
+    },
+    {
+      "id": "S3-CD04",
+      "start_monotonic_ns": 3973133365745,
+      "end_monotonic_ns": 4226427869369,
+      "runtime": "a9f1b0f0-f940-4e3e-a856-640747c24ab9",
+      "effective_mode": "recovery",
+      "reason": "Exclude the full unsampled interval spanning rank-region implementation, context compaction and re-entry; no finer observed boundary exists and no time is inferred from the new code."
+    },
+    {
+      "id": "S3-CD05",
+      "start_monotonic_ns": 5434514199884,
+      "end_monotonic_ns": 5627162530158,
+      "runtime": "a9f1b0f0-f940-4e3e-a856-640747c24ab9",
+      "effective_mode": "recovery",
+      "reason": "Conservatively exclude the entire unsampled context compaction and re-entry interval; no research duration inferred from summary or output."
+    }
+  ]
+}

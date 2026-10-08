@@ -1,0 +1,374 @@
+{
+  "schema": "p305.s3.evidence_correspondence.v1",
+  "status": "PASS",
+  "scope": "Source snapshots, recorded outputs and explicit amendment boundaries; not re-execution, native proof checking or independent review.",
+  "review": "ChatGPT (GPT-6 Astra Pro), self-review",
+  "runs": [
+    {
+      "run": "chain_1",
+      "manifest_sha256": "a43738df66ce43b1c53f6276a127913fc4139fddccbe303cfe187969de0e7a49",
+      "source_count": 4,
+      "current_source_matches": {
+        "05_chain_reuse_check.py": true,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 182,
+      "summary_sha256": "55451031b6b8ae9456b5f182bdb920362cb3280feaa720ae146804f7e0937a73",
+      "results_sha256": "0ef25c9798f34ebf00447e3cf5a91ce88b1bb920cd44cf6bc3e9cdf03ce79779",
+      "elapsed_ns": 150298759
+    },
+    {
+      "run": "clauses_1",
+      "manifest_sha256": "3fe7312d5ea9b004fd14223561f522a287c2aa8c2378b7eb7040e668840e0682",
+      "source_count": 5,
+      "current_source_matches": {
+        "05_clause_transport_check.py": true,
+        "05_portfolio_check.py": false,
+        "05_portfolio_transport.py": false,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 2383,
+      "summary_sha256": "0e62826ae180da1425aabc8451b8fd5116d6c51de3c75f601119054363a59943",
+      "results_sha256": "d5aef179e002660e2047712d3221541817ca9ebbe79b9103744d9adf7d0a0849",
+      "elapsed_ns": 79715543
+    },
+    {
+      "run": "clauses_v3_1",
+      "manifest_sha256": "629e00a544e7fea536518b88b1daa7882e0a3de396e82914727c23eec5f36fba",
+      "source_count": 5,
+      "current_source_matches": {
+        "05_clause_transport_check.py": true,
+        "05_portfolio_check.py": true,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 2383,
+      "summary_sha256": "717bbb39b263cbcfcbe1d58cf028274628f7cce17f61cfcd2194cd40ae0557ad",
+      "results_sha256": "1ff5c66ecc0ed28efd540e783e0eb303e21b14474faa5fca2abf211cb1309425",
+      "elapsed_ns": 117299528
+    },
+    {
+      "run": "counterpossible_1",
+      "manifest_sha256": "b95777b6be11ed12643c319a7ec7112fb993e2a8c99199506b1d4f11fc80228a",
+      "source_count": 5,
+      "current_source_matches": {
+        "05_counterpossible_bridge.py": false,
+        "05_counterpossible_bridge_check.py": true,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 253,
+      "summary_sha256": "dfaf991698fdf97ca97632f2b569cd1be7f34f37735824c33ccc90b26ccb0931",
+      "results_sha256": "04ac46d82df26c5a49269605615eae250d7f5cec3306cd65bf4c19a0abda08d8",
+      "elapsed_ns": 53192364
+    },
+    {
+      "run": "counterpossible_v2_1",
+      "manifest_sha256": "eae0724c28d596bd911334948482364800c827816219fa221e5d7714a5ceb010",
+      "source_count": 5,
+      "current_source_matches": {
+        "05_counterpossible_bridge.py": true,
+        "05_counterpossible_bridge_check.py": true,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 253,
+      "summary_sha256": "cfb9f515a30e2c23defa9de38a28794c32e963401e6a4d4fd174bf67356fce64",
+      "results_sha256": "eb4ccf585e6c32e94aa427a8d7262288270e4a7bdff793581a301f0702c4e8c4",
+      "elapsed_ns": 56902857
+    },
+    {
+      "run": "dependency_1",
+      "status": "DIAGNOSTIC_OR_PRE_EXECUTION_FAILURE",
+      "files": [
+        "04_counterfactual_repair.py",
+        "05_counterfactual_transport.py",
+        "05_dependency_frontend.py",
+        "05_dependency_frontend_check.py",
+        "05_portfolio_transport.py",
+        "external_failure.json"
+      ]
+    },
+    {
+      "run": "dependency_2",
+      "manifest_sha256": "8f44663946e028d51b1c5cea16418bc3d4019968e23834da456062a6875dcec1",
+      "source_count": 5,
+      "current_source_matches": {
+        "05_dependency_frontend.py": false,
+        "05_dependency_frontend_check.py": true,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 5751,
+      "summary_sha256": "f134854485d7fe1144deb51970e436de29c59f987c5e9222e4d6a5252097d126",
+      "results_sha256": "545c9a65b0cc2dcb7054c5bd2d244c8ae33999db290e09b1b58549b784e2be67",
+      "elapsed_ns": 912868038
+    },
+    {
+      "run": "dependency_v2_1",
+      "manifest_sha256": "9b61ac5ba47f2156a8ca285c263b060968aa31e69555b7f9f43b83184bc09d9c",
+      "source_count": 5,
+      "current_source_matches": {
+        "05_dependency_frontend.py": true,
+        "05_dependency_frontend_check.py": true,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 5751,
+      "summary_sha256": "d9730b10f2d892fdcd7e15ceb0ce4d4fd4efa9f07b940dbcd85f1fe8ad0cbc8a",
+      "results_sha256": "392238d8bcbe20e73f476ba6e51710f92eb60a30f81f61341f3f62913ced76fe",
+      "elapsed_ns": 696771429
+    },
+    {
+      "run": "edit_information_1",
+      "manifest_sha256": "f543b828c671f8907bc4c8d0620032dbd6ddd089840612d276ce702ce6c6c89b",
+      "source_count": 6,
+      "current_source_matches": {
+        "05_edit_information.py": true,
+        "05_edit_information_check.py": true,
+        "05_portfolio_check.py": true,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 17151,
+      "summary_sha256": "a1e54a68e87293ff9ff17251cde11bd4825dd52928522b08fd08fd2404ef27ae",
+      "results_sha256": "3b7e0a11d98b4a90b7f2e8e475e51c93cac2aecca8bcc026ecf13f88d7c2a293",
+      "elapsed_ns": 690360906
+    },
+    {
+      "run": "portfolio_1",
+      "manifest_sha256": "e8df8ce2f78f08051c56aeaf7b13909f5f5a99f06b0f494eca4856546a616b51",
+      "source_count": 4,
+      "current_source_matches": {
+        "05_portfolio_check.py": false,
+        "05_portfolio_transport.py": false,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 2629,
+      "summary_sha256": "4f3873832697c3973c5c36468208fcf38916ff1cdf5ca700aab8df8f4edf578e",
+      "results_sha256": "da0082b38b9acdd267d25b20c2f777be8849af6ec4237ccd2bad75170049fc63",
+      "elapsed_ns": 6691684156
+    },
+    {
+      "run": "portfolio_v2_1",
+      "manifest_sha256": "fdf4e18ff78b41cf5dab20729abd7bdbdc830c4fda64f57818c4b20defb58ec0",
+      "source_count": 4,
+      "current_source_matches": {
+        "05_portfolio_check.py": false,
+        "05_portfolio_transport.py": false,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "EXTERNAL_TIMEOUT_NO_FULL_RUN_RESULT",
+      "disposition_sha256": "f9b00594297c8bf93944a85a897e88adc7f0ab0d2e279c343b9a17e43a201071"
+    },
+    {
+      "run": "portfolio_v3_1",
+      "manifest_sha256": "fa8d3ac052ebdb8fb87a8f917a575af4cc27817dcdd5eacbcba2564a27c49248",
+      "source_count": 4,
+      "current_source_matches": {
+        "05_portfolio_check.py": true,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 2629,
+      "summary_sha256": "7af1f914131330f4cbb9d12db0e393a1eece0da7d95e6331851ae38e31daafa7",
+      "results_sha256": "1835e56e59c8bbccaaea7263daa35b459712157a8a61fbfb04fce707181b1eee",
+      "elapsed_ns": 11471471284
+    },
+    {
+      "run": "producer_diagnostic_1",
+      "status": "DIAGNOSTIC_OR_PRE_EXECUTION_FAILURE",
+      "files": [
+        "diagnostic.json",
+        "profile.txt"
+      ]
+    },
+    {
+      "run": "rank_regions_1",
+      "manifest_sha256": "e1e16d76051071747395b9c2c5b961b13491ca1c7b1cd26dcaf5683a2b46e910",
+      "source_count": 4,
+      "current_source_matches": {
+        "05_rank_weight_regions.py": false,
+        "05_rank_weight_regions_check.py": false,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 525,
+      "summary_sha256": "4e3cbcf4dc30bb0e1bf56be33fd4b5e26b42786683dfbdfe357151f486840f26",
+      "results_sha256": "f9836cf70bf0ca5d97826a106d40b49d851377f05704c167054ee80ac432123e",
+      "elapsed_ns": 1043052415
+    },
+    {
+      "run": "rank_regions_v2_1",
+      "manifest_sha256": "f6b19860edc042303a79e4ef9100f6bb42897090426a72d040b5108e775b7be1",
+      "source_count": 4,
+      "current_source_matches": {
+        "05_rank_weight_regions.py": true,
+        "05_rank_weight_regions_check.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 528,
+      "summary_sha256": "b2809599993931b1d1d5d9e49c611c900a9b656679870f09f42097ba1578788e",
+      "results_sha256": "6fbbf4f7466a9874568b0fc8a19d59bf897c85fcb96ba368b120197707087a1f",
+      "elapsed_ns": 939148267
+    },
+    {
+      "run": "rank_zero_1",
+      "manifest_sha256": "0a994e354de3f5f7ece759b2d53da6ec0fb3c36527e96ae34e4ac2575644977c",
+      "source_count": 3,
+      "current_source_matches": {
+        "05_rank_weight_regions.py": false,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "ADAPTER_EDGE_REJECTION_REPRODUCED",
+      "results_sha256": "20de341aca96c29776fa1a3fc5f76c5e37dea468ebf444e73b78b76a05ee0b52"
+    },
+    {
+      "run": "resource_1",
+      "manifest_sha256": "a306b30fdc9814fd2274ae0cc4094a8e9044bf52910508046d1e97123dd77c4b",
+      "source_count": 6,
+      "current_source_matches": {
+        "05_ordinary_add.py": true,
+        "05_resource_comparison_check.py": true,
+        "05_dependency_frontend.py": false,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 14628,
+      "summary_sha256": "555c2ad7696282a756a3bd917e69aca927c78c08eb60021ef480e2a39032fe2c",
+      "results_sha256": "425749a1c7e47de9e35885818ad98609f4a4447b06b8ddbd87eb8f2eb329cd56",
+      "elapsed_ns": 1995854935
+    },
+    {
+      "run": "retention_1",
+      "manifest_sha256": "440ded4b6efc24bf207eb5ca5371a772047b18b69bf707bd66d5b48cc4a61506",
+      "source_count": 4,
+      "current_source_matches": {
+        "05_portfolio_retention_check.py": true,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 21,
+      "summary_sha256": "0ba7acd21a93b811bfb28c98b1c3f2b02b6ededd97dcf8b93989b864f6bcff2e",
+      "results_sha256": "cc1411d87ae8de0ca082e7e27d5a2fd6faf0e36a4a6c7abd4828a16cd2ba5ebc",
+      "elapsed_ns": 14859681
+    },
+    {
+      "run": "shared_frontend_1",
+      "manifest_sha256": "66f8522b93509f3b7b3772ab92942d0448caa5fc341fef2cfd79c32de95301a9",
+      "source_count": 5,
+      "current_source_matches": {
+        "05_dependency_frontend.py": false,
+        "05_counterpossible_bridge.py": false,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "INTEGRATION_TYPE_MISMATCH_REPRODUCED",
+      "results_sha256": "6ace1ff94c902c82774d9468c96b2dbe50a9e412ba549e6c3da1a7022756547c"
+    },
+    {
+      "run": "shared_frontend_2",
+      "manifest_sha256": "c1c2d9aec59e0b87b0c85f2b22e9cb11130fa625c38c17e829b4e4d72c0357fb",
+      "source_count": 6,
+      "current_source_matches": {
+        "05_shared_frontend_check.py": false,
+        "05_dependency_frontend.py": true,
+        "05_counterpossible_bridge.py": true,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "FAIL",
+      "assertions": 5,
+      "summary_sha256": "3f4a5608d0c2d831da79a616eee08cf5022ce5d5750dc4fcb8c57a1dfa471b4a",
+      "results_sha256": "e054954f69683048875a7ed71687bff7048cbf6fc5df92deeafdc260f4df97dc",
+      "elapsed_ns": 33424108
+    },
+    {
+      "run": "shared_frontend_3",
+      "manifest_sha256": "f91e30096f123c46cecb5a333d83e3090f7fff00bcb1df6ea2d8d1021c9c550a",
+      "source_count": 6,
+      "current_source_matches": {
+        "05_shared_frontend_check.py": true,
+        "05_dependency_frontend.py": true,
+        "05_counterpossible_bridge.py": true,
+        "05_portfolio_transport.py": true,
+        "05_counterfactual_transport.py": true,
+        "04_counterfactual_repair.py": true
+      },
+      "status": "PASS",
+      "assertions": 7,
+      "summary_sha256": "01b03f66da37a56c61bb361e065aedec6ee3ba86d832ccf6798cae14e9cc1221",
+      "results_sha256": "e5ceeb53d0a4112a603a92fae89933fbada6a0299c1e84b46747f6c736257629",
+      "elapsed_ns": 64093056
+    }
+  ],
+  "amendments": [
+    {
+      "old_run": "dependency_2",
+      "file": "05_dependency_frontend.py",
+      "old_sha256": "4caa5e29778845a134a7004a7b33ca312f411933baf3a3f78c49fc39b99efedf",
+      "new_sha256": "eb6b2b8f7b031bb2e856c8fd15c307dd2df15fa8dceff86a79596b66797d312e",
+      "changed_top_level_definitions": []
+    },
+    {
+      "old_run": "counterpossible_1",
+      "file": "05_counterpossible_bridge.py",
+      "old_sha256": "4aafefc82c55d9ea4dc1bf9518a0d292d1284fe2d3110644be4475871c42a50a",
+      "new_sha256": "a9b73b483a13e18ab166680f760665c1a6d365d9d32c342fdd7bc1dd27c98e72",
+      "changed_top_level_definitions": []
+    },
+    {
+      "old_run": "rank_regions_1",
+      "file": "05_rank_weight_regions.py",
+      "old_sha256": "0eeeffcd00085960e5307205f0a1064ec5690713b626f8bf116f07ad33c81bef",
+      "new_sha256": "5c0b204c2dd216e89ea8d3c25fd960628cf4f5d66fe4d783d4aa70ee70a02f3c",
+      "changed_top_level_definitions": [
+        "from_band"
+      ]
+    },
+    {
+      "old_run": "clauses_1",
+      "file": "05_portfolio_transport.py",
+      "old_sha256": "bbee5426433b3fa8867c5168aa66bbe738e0bc76eeb7838aa4e108346a3c3667",
+      "new_sha256": "9bf64849eae1072c9da6a2e754858af6f2f15c2c4f7e7ac55ffb556f2064b821",
+      "changed_top_level_definitions": [
+        "ContextRows",
+        "best_witness",
+        "equality_witness",
+        "producer_basis"
+      ]
+    }
+  ]
+}

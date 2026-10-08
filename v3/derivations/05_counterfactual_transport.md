@@ -1,7 +1,10 @@
 # P3-05 — Counterfactual dependence and proof reuse
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**, October 8, 2026 UTC.
-Status: **IN PROGRESS — new reconstruction, not recovered earlier evidence**.
+Status: **COMPLETE — finite counterfactual transport and checked reuse.**
+Research90: **90.008903419667 verified minutes across S2/S3**.
+[Closing session](../work_logs/P3_05_2026-10-08_S3.md) ·
+[Scope/readiness audit](../work_logs/P3_05_2026-10-08_S3/readiness_audit.md).
 [Session](../work_logs/P3_05_2026-10-08_S2.md) ·
 [Recovery disposition](../work_logs/P3_05_2026-10-08_S2/recovery_disposition.md) ·
 [Source contracts](../literature/05_transport_sources.md).
@@ -476,3 +479,43 @@ unit-conversion graph is not supported by this receiver. General program
 refactoring, changing hypothetical consequence rules, and full native
 transport need their respective proof contracts. Later learning tasks are not
 silently added to P3-05's completion criteria.
+
+
+## 10. Completed S3 extensions and present scope
+
+S3 continues the verified S2 reconstruction; it does not recover the empty older
+snapshot or change its missing-clock disposition. CT05-1–5 above retain their
+original hypotheses. The following finite extensions complete P3-05's selected
+research scope; all executions remain DEVELOPMENT and review is self-review.
+
+| Result | What is added | Where |
+|---|---|---|
+| CT05-6–8 | Complementary proof domains cover a fixed receiving difference; current Boolean premises and rank relations are checked through nonnegative-combination witnesses and a complete cover. | [Portfolio receiver and proof](05_portfolio_transport.md) |
+| CT05-9–11 | Exact future values require an edit-stable congruence; some acceptable action may use overlapping history-dependent codes. Supplied edit graphs and their construction costs remain explicit. | [Edit information](05_edit_information.md) |
+| CT05-12–14 | Finite program compilation binds function/copy/predictor dependencies to the requested comparison and exposes where refactoring needs an operation map. | [Dependency compilation](05_dependency_compilation.md) |
+| CT05-15–16 | Coupled continuous rank-weight regions have an exact strict coverage-gap criterion and small checked primal/dual witnesses; parameter vertices alone can miss an unsafe interior point. | [Rank-weight regions](05_rank_weight_regions.md) |
+| CT05-17 | A reverified chain preserves the whole recorded domain; retaining only scalar allowances can lose cancellation across successive edits. | [Repeated reuse](05_chain_reuse.md) |
+| CT05-18 | Recompiling the original quoted counterpossible, paired-support exceptions and frame binds the new numerical result to P3-04's declared hypothetical semantics. | [Counterpossible bridge](05_counterpossible_bridge.md) |
+| CT05-19 | Retaining proofs for supplied future requests reduces to a finite coverage problem; greedy immediate task gain can miss complementary supports. | [Portfolio retention](05_portfolio_retention.md) |
+
+The [resource comparison](05_resource_comparison.md) includes fresh certificate
+construction, cold and warm ordinary algebraic decision diagrams, and the same
+incumbent-sublevel service. The warm ordinary method is faster in all six
+saved families. Reuse savings over the fresh-certificate ablation therefore
+support no broad efficiency advantage. They remain useful measurements of the
+implemented proof-delivery routes, with setup, checking and storage separate.
+
+Current evidence and amendment identities are indexed in the
+[S3 development record](../work_logs/P3_05_2026-10-08_S3/development/README.md).
+The original S2 implementation, runs, claims, clocks and ten ledger rows remain
+unchanged. Three real implementation/search difficulties and the failed harnesses
+are retained rather than erased by current passing runs. The stronger native
+phase-two proof compiler, learned dependence, anticipatory value learning and
+optimal computation purchase have not been supplied by this finite receiver.
+
+**P3-N01 remains NOT YET SUPPORTED.** The concrete candidate is a modest
+integration of selected-family coverage, conditional proof transport and
+edit-aware information retention; comparison with established abstractions,
+certificate checking, finite-machine covers and ordinary solvers remains explicit.
+P3-05 completion is not a contribution or phase gate. **P3-06 is next and
+unstarted; P3-B–D remain unattempted.**

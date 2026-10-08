@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+"""Verify preserved execution identities; this does not re-execute scientific tests."""
+from __future__ import annotations
+import ast, hashlib, json
+from pathlib import Path
+
+HERE=Path(__file__).resolve().parent
+SESSION=HERE.parent
+ROOT=SESSION.parents[1]
+
+def sha(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def definitions(path: Path) -> dict[str,str]:
+    return {n.name:ast.dump(n,include_attributes=False) for n in ast.parse(path.read_text()).body
+            if isinstance(n,(ast.FunctionDef,ast.ClassDef,ast.AsyncFunctionDef))}
+
+def audit() -> dict:
+    records=[]
+    for d in sorted((SESSION/'development').iterdir()):
+        if not d.is_dir(): continue
+        manifest=d/'manifest.json'
+        if not manifest.exists():
+            records.append({'run':d.name,'status':'DIAGNOSTIC_OR_PRE_EXECUTION_FAILURE','files':sorted(p.name for p in d.iterdir() if p.is_file())})
+            continue
+        m=json.loads(manifest.read_text());sources=m['sources_sha256']
+        for name,expected in sources.items():
+            assert (d/name).is_file() and sha(d/name)==expected,(d.name,'source',name)
+        current={name:sha(ROOT/'checks'/name)==expected for name,expected in sources.items() if (ROOT/'checks'/name).is_file()}
+        summary=d/'summary.json';result=d/'results.json'
+        item={'run':d.name,'manifest_sha256':sha(manifest),'source_count':len(sources),'current_source_matches':current}
+        if summary.exists():
+            s=json.loads(summary.read_text());assert s['sources_sha256']==sources,(d.name,'summary source identity')
+            assert s['results_sha256']==sha(result),(d.name,'result bytes')
+            r=json.loads(result.read_text())
+            if 'assertions' in r:assert r['assertions']==s['assertions'],(d.name,'assertions')
+            assert (s['status']=='PASS')==(s['error'] is None),(d.name,'success status')
+            item.update(status=s['status'],assertions=s['assertions'],summary_sha256=sha(summary),results_sha256=sha(result),elapsed_ns=s['elapsed_ns'])
+        elif result.exists():
+            r=json.loads(result.read_text());assert r['sources_sha256']==sources,(d.name,'diagnostic source identity')
+            item.update(status=r['status'],results_sha256=sha(result))
+        else:
+            assert d.name=='portfolio_v2_1' and (d/'external_interruption.json').exists(),(d.name,'missing execution disposition')
+            item.update(status='EXTERNAL_TIMEOUT_NO_FULL_RUN_RESULT',disposition_sha256=sha(d/'external_interruption.json'))
+        records.append(item)
+    comparisons=[]
+    for run,name in [('dependency_2','05_dependency_frontend.py'),('counterpossible_1','05_counterpossible_bridge.py'),('rank_regions_1','05_rank_weight_regions.py'),('clauses_1','05_portfolio_transport.py')]:
+        old=SESSION/'development'/run/name; new=ROOT/'checks'/name
+        a,b=definitions(old),definitions(new)
+        changed=sorted(k for k in a.keys()|b.keys() if a.get(k)!=b.get(k))
+        comparisons.append({'old_run':run,'file':name,'old_sha256':sha(old),'new_sha256':sha(new),'changed_top_level_definitions':changed})
+    assert comparisons[0]['changed_top_level_definitions']==[]
+    assert comparisons[1]['changed_top_level_definitions']==[]
+    assert comparisons[2]['changed_top_level_definitions']==['from_band']
+    # Source inspection: only the producer is changed; receiving logic is intact.
+    assert set(comparisons[3]['changed_top_level_definitions']) <= {'ContextRows','producer_basis','equality_witness','best_witness'}
+    return {'schema':'p305.s3.evidence_correspondence.v1','status':'PASS','scope':'Source snapshots, recorded outputs and explicit amendment boundaries; not re-execution, native proof checking or independent review.','review':'ChatGPT (GPT-6 Astra Pro), self-review','runs':records,'amendments':comparisons}
+
+if __name__=='__main__':
+    result=audit();print(json.dumps(result,indent=2))

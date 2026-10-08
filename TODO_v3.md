@@ -3,7 +3,7 @@
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
 
-**Status: P3-01–04 complete at their declared task scopes.**
+**Status: P3-01–05 complete at their declared task scopes.**
 P3-01 supplies the questions and comparison contract; P3-02 supplies the
 [finite probability-information analysis](v3/derivations/02_probability_information.md).
 P3-03 supplies a [finite bounded uncertainty construction](v3/derivations/03_logical_uncertainty.md)
@@ -14,18 +14,17 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Including the new P3-05 reconstruction checkpoint, phase-three qualifying research
-is **398.353392968350 minutes**;
-**561.646607031650 minutes** remain to the 960-minute floor.
+Phase-three qualifying research is **471.761481230733 minutes**;
+**488.238518769267 minutes** remain to the 960-minute floor.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
 The [first 240-minute checkpoint](v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md)
 is assessed at this task boundary with its actual overshoot.
-**Active: P3-05 — counterfactual dependence and proof reuse, IN PROGRESS.**
-The [new reconstruction](v3/work_logs/P3_05_2026-10-08_S2.md) preserves
-**16.600815157283 verified research minutes**, with
-**73.399184842717 minutes** remaining to Research90.
-The prior empty snapshot supplies no verifiable research time; no old credit is invented.
+**P3-05 is COMPLETE at finite counterfactual transport and checked reuse scope.**
+[Closing S3 record](v3/work_logs/P3_05_2026-10-08_S3.md): 73.408088262383 new research
+minutes; 90.008903419667 verified minutes across S2/S3. Prior missing work
+remains unverified, with no duplicate credit. **Next: P3-06 — sequential cost
+forecasts, unstarted.**
 Phase two remains complete; P3-B–D remain unattempted. P3-N01 remains
 **NOT YET SUPPORTED**. All executable evidence remains development; no final
 challenge is frozen or exposed. The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)
@@ -198,7 +197,7 @@ performance superiority are separate claims and are not completion requirements.
   changing the topic to a consistent model is not a complete answer to it.
   Artifact: `v3/derivations/04_counterfactual_semantics.md`.
 
-- [ ] **P3-05 — dependence, invariance and proof reuse. Research90.**
+- [x] **P3-05 — dependence, invariance and proof reuse. Research90.**
 
   Compare a one-occurrence intervention with a changed shared computation,
   copied program and predictor of the original program. Test tied repairs,

@@ -1,0 +1,539 @@
+{
+  "assertions": 525,
+  "cases": [
+    {
+      "suite": "coupled_weight_exact_example",
+      "a": "3/5",
+      "report": {
+        "status": "ROBUST_COVERAGE_CERTIFIED",
+        "margin": "1/10",
+        "coverage": true,
+        "outside_count": 1,
+        "meaning": "Coverage by the supplied certified domain, not a general proof/refutation of actual action quality."
+      },
+      "proof": {
+        "problem_record": "{\"covered\":[0,1],\"extra_rows\":[[[{\"rational\":\"1\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],{\"rational\":\"1\"}],[[{\"rational\":\"-1\"},{\"rational\":\"-1\"},{\"rational\":\"0\"}],{\"rational\":\"-1\"}]],\"features\":[[{\"rational\":\"1\"},{\"rational\":\"0\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"0\"},{\"rational\":\"1\"}]],\"lower\":[{\"rational\":\"1/4\"},{\"rational\":\"1/4\"},{\"rational\":\"3/5\"}],\"scope\":\"three-component-example-3/5\",\"states\":[\"case0\",\"case1\",\"case2\"],\"upper\":[{\"rational\":\"3/4\"},{\"rational\":\"3/4\"},{\"rational\":\"3/5\"}],\"version\":\"p305-rank-region-v1\",\"weight_witness\":[{\"rational\":\"1/2\"},{\"rational\":\"1/2\"},{\"rational\":\"3/5\"}]}",
+        "margins": [
+          {
+            "outside": 2,
+            "point": [
+              "1/2",
+              "1/2",
+              "3/5",
+              "1/10"
+            ],
+            "multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1/2",
+              "0",
+              "1/2",
+              "1/2",
+              "0",
+              "0"
+            ],
+            "margin": "1/10"
+          }
+        ]
+      },
+      "work": {
+        "basis_trials": 465,
+        "max_rational_component_bits": 5,
+        "elimination_pivots": 1563,
+        "elimination_row_updates": 1113,
+        "rational_multiply_adds": 6688,
+        "primal_constraint_checks": 24,
+        "margin_certificates_verified": 2,
+        "record_characters_compared": 1332
+      },
+      "meaning": "Analytical optimum a-1/2; endpoint-only check and a common incumbent are insufficient."
+    },
+    {
+      "suite": "coupled_weight_exact_example",
+      "a": "2/5",
+      "report": {
+        "status": "COVERAGE_REFUTED",
+        "margin": "-1/10",
+        "coverage": false,
+        "outside_count": 1,
+        "meaning": "Coverage by the supplied certified domain, not a general proof/refutation of actual action quality.",
+        "counterexample": {
+          "weights": [
+            "1/2",
+            "1/2",
+            "2/5"
+          ],
+          "winners": [
+            2
+          ],
+          "ranks": [
+            "1/2",
+            "1/2",
+            "2/5"
+          ]
+        }
+      },
+      "proof": {
+        "problem_record": "{\"covered\":[0,1],\"extra_rows\":[[[{\"rational\":\"1\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],{\"rational\":\"1\"}],[[{\"rational\":\"-1\"},{\"rational\":\"-1\"},{\"rational\":\"0\"}],{\"rational\":\"-1\"}]],\"features\":[[{\"rational\":\"1\"},{\"rational\":\"0\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"0\"},{\"rational\":\"1\"}]],\"lower\":[{\"rational\":\"1/4\"},{\"rational\":\"1/4\"},{\"rational\":\"2/5\"}],\"scope\":\"three-component-example-2/5\",\"states\":[\"case0\",\"case1\",\"case2\"],\"upper\":[{\"rational\":\"3/4\"},{\"rational\":\"3/4\"},{\"rational\":\"2/5\"}],\"version\":\"p305-rank-region-v1\",\"weight_witness\":[{\"rational\":\"1/2\"},{\"rational\":\"1/2\"},{\"rational\":\"2/5\"}]}",
+        "margins": [
+          {
+            "outside": 2,
+            "point": [
+              "1/2",
+              "1/2",
+              "2/5",
+              "-1/10"
+            ],
+            "multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1/2",
+              "0",
+              "1/2",
+              "1/2",
+              "0",
+              "0"
+            ],
+            "margin": "-1/10"
+          }
+        ]
+      },
+      "work": {
+        "basis_trials": 465,
+        "max_rational_component_bits": 5,
+        "elimination_pivots": 1491,
+        "elimination_row_updates": 1059,
+        "rational_multiply_adds": 6501,
+        "primal_constraint_checks": 24,
+        "margin_certificates_verified": 2,
+        "record_characters_compared": 1332
+      },
+      "meaning": "Analytical optimum a-1/2; endpoint-only check and a common incumbent are insufficient."
+    },
+    {
+      "suite": "coupled_weight_exact_example",
+      "a": "1/2",
+      "report": {
+        "status": "COVERAGE_REFUTED",
+        "margin": "0",
+        "coverage": false,
+        "outside_count": 1,
+        "meaning": "Coverage by the supplied certified domain, not a general proof/refutation of actual action quality.",
+        "counterexample": {
+          "weights": [
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "winners": [
+            0,
+            1,
+            2
+          ],
+          "ranks": [
+            "1/2",
+            "1/2",
+            "1/2"
+          ]
+        }
+      },
+      "proof": {
+        "problem_record": "{\"covered\":[0,1],\"extra_rows\":[[[{\"rational\":\"1\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],{\"rational\":\"1\"}],[[{\"rational\":\"-1\"},{\"rational\":\"-1\"},{\"rational\":\"0\"}],{\"rational\":\"-1\"}]],\"features\":[[{\"rational\":\"1\"},{\"rational\":\"0\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"0\"},{\"rational\":\"1\"}]],\"lower\":[{\"rational\":\"1/4\"},{\"rational\":\"1/4\"},{\"rational\":\"1/2\"}],\"scope\":\"three-component-example-1/2\",\"states\":[\"case0\",\"case1\",\"case2\"],\"upper\":[{\"rational\":\"3/4\"},{\"rational\":\"3/4\"},{\"rational\":\"1/2\"}],\"version\":\"p305-rank-region-v1\",\"weight_witness\":[{\"rational\":\"1/2\"},{\"rational\":\"1/2\"},{\"rational\":\"1/2\"}]}",
+        "margins": [
+          {
+            "outside": 2,
+            "point": [
+              "1/2",
+              "1/2",
+              "1/2",
+              "0"
+            ],
+            "multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1/2",
+              "0",
+              "1/2",
+              "1/2",
+              "0",
+              "0"
+            ],
+            "margin": "0"
+          }
+        ]
+      },
+      "work": {
+        "basis_trials": 465,
+        "max_rational_component_bits": 3,
+        "elimination_pivots": 1563,
+        "elimination_row_updates": 1113,
+        "rational_multiply_adds": 7245,
+        "primal_constraint_checks": 24,
+        "margin_certificates_verified": 2,
+        "record_characters_compared": 1332
+      },
+      "meaning": "Analytical optimum a-1/2; endpoint-only check and a common incumbent are insufficient."
+    },
+    {
+      "suite": "all_four_profile_scalar_coefficients",
+      "cases": 81,
+      "coefficient_set": [
+        -2,
+        0,
+        3
+      ],
+      "reference": "Independent endpoints/pairwise-line intersection minimization, not the basis search."
+    },
+    {
+      "suite": "independent_primal_dual_binding_and_search_status",
+      "errors": [
+        {
+          "type": "ValueError",
+          "reason": "Every outside case must appear exactly once, in canonical order."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Every outside case must appear exactly once, in canonical order."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Coverage request record mismatch."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Coverage request record mismatch."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Primal and dual bounds do not match."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Dual multipliers must be nonnegative."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Dual stationarity does not prove the objective."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Infeasible primal witness."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Outside-case identity."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Weight witness is infeasible."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Covered case index set."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Feature count."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Rationals must be integers, strings or Fraction; no float/bool."
+        },
+        {
+          "type": "ValueError",
+          "reason": "No certified domain to transport."
+        }
+      ],
+      "all_outside_report": {
+        "status": "ROBUST_COVERAGE_CERTIFIED",
+        "margin": "1/10",
+        "coverage": true,
+        "outside_count": 2,
+        "meaning": "Coverage by the supplied certified domain, not a general proof/refutation of actual action quality."
+      },
+      "all_outside_proof": {
+        "problem_record": "{\"covered\":[0,1],\"extra_rows\":[[[{\"rational\":\"1\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],{\"rational\":\"1\"}],[[{\"rational\":\"-1\"},{\"rational\":\"-1\"},{\"rational\":\"0\"}],{\"rational\":\"-1\"}]],\"features\":[[{\"rational\":\"1\"},{\"rational\":\"0\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"0\"},{\"rational\":\"1\"}],[{\"rational\":\"0\"},{\"rational\":\"0\"},{\"rational\":\"2\"}]],\"lower\":[{\"rational\":\"1/4\"},{\"rational\":\"1/4\"},{\"rational\":\"3/5\"}],\"scope\":\"three-component-example-3/5\",\"states\":[\"case0\",\"case1\",\"case2\",\"case3\"],\"upper\":[{\"rational\":\"3/4\"},{\"rational\":\"3/4\"},{\"rational\":\"3/5\"}],\"version\":\"p305-rank-region-v1\",\"weight_witness\":[{\"rational\":\"1/2\"},{\"rational\":\"1/2\"},{\"rational\":\"3/5\"}]}",
+        "margins": [
+          {
+            "outside": 2,
+            "point": [
+              "1/2",
+              "1/2",
+              "3/5",
+              "1/10"
+            ],
+            "multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1/2",
+              "0",
+              "1/2",
+              "1/2",
+              "0",
+              "0"
+            ],
+            "margin": "1/10"
+          },
+          {
+            "outside": 3,
+            "point": [
+              "1/2",
+              "1/2",
+              "3/5",
+              "7/10"
+            ],
+            "multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2",
+              "1/2",
+              "0",
+              "1/2",
+              "1/2",
+              "0",
+              "0"
+            ],
+            "margin": "7/10"
+          }
+        ]
+      }
+    },
+    {
+      "suite": "actual_verified_band_and_changed_rank_weights",
+      "records": [
+        {
+          "alpha": "3/5",
+          "report": {
+            "status": "ROBUST_COVERAGE_CERTIFIED",
+            "margin": "1/10",
+            "coverage": true,
+            "outside_count": 1,
+            "meaning": "Coverage by the supplied certified domain, not a general proof/refutation of actual action quality.",
+            "old_loss_bound": "-1",
+            "loss_bound_transported": true,
+            "loss_scope": "Unchanged independently specified old loss difference, for every new rank minimizer at every admitted weight."
+          },
+          "problem_record": "{\"covered\":[0,1],\"extra_rows\":[[[{\"rational\":\"1\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],{\"rational\":\"1\"}],[[{\"rational\":\"-1\"},{\"rational\":\"-1\"},{\"rational\":\"0\"}],{\"rational\":\"-1\"}]],\"features\":[[{\"rational\":\"1\"},{\"rational\":\"0\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"0\"},{\"rational\":\"1\"}]],\"lower\":[{\"rational\":\"1/4\"},{\"rational\":\"1/4\"},{\"rational\":\"3/5\"}],\"scope\":\"{\\\"meaning\\\":\\\"Only rank weights change; source, clauses and loss remain fixed.\\\",\\\"old_band_cutoff\\\":{\\\"rational\\\":\\\"1/2\\\"},\\\"old_loss_bound\\\":{\\\"rational\\\":\\\"-1\\\"},\\\"old_record\\\":\\\"{\\\\\\\"loss\\\\\\\":\\\\\\\"D\\\\\\\",\\\\\\\"receiver\\\\\\\":\\\\\\\"p305-reconstructed-v2\\\\\\\",\\\\\\\"request\\\\\\\":{\\\\\\\"hard\\\\\\\":[[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"losses\\\\\\\":[[\\\\\\\"D\\\\\\\",[\\\\\\\"add\\\\\\\",[\\\\\\\"scale\\\\\\\",\\\\\\\"4\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"lit\\\\\\\",\\\\\\\"-1\\\\\\\"]]]],\\\\\\\"metadata\\\\\\\":{},\\\\\\\"nbits\\\\\\\":2,\\\\\\\"scope\\\\\\\":\\\\\\\"rank-region-band\\\\\\\",\\\\\\\"soft\\\\\\\":[{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case0\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/4\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"bit\\\\\\\",1]]],\\\\\\\"id\\\\\\\":\\\\\\\"case1\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/2\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case2\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1\\\\\\\"}],\\\\\\\"version\\\\\\\":\\\\\\\"p304-reconstructed-v1\\\\\\\"},\\\\\\\"unit\\\\\\\":\\\\\\\"U\\\\\\\"}\\\"}\",\"states\":[\"00\",\"01\",\"10\"],\"upper\":[{\"rational\":\"3/4\"},{\"rational\":\"3/4\"},{\"rational\":\"3/5\"}],\"version\":\"p305-rank-region-v1\",\"weight_witness\":[{\"rational\":\"1/2\"},{\"rational\":\"1/2\"},{\"rational\":\"3/5\"}]}",
+          "proof": {
+            "problem_record": "{\"covered\":[0,1],\"extra_rows\":[[[{\"rational\":\"1\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],{\"rational\":\"1\"}],[[{\"rational\":\"-1\"},{\"rational\":\"-1\"},{\"rational\":\"0\"}],{\"rational\":\"-1\"}]],\"features\":[[{\"rational\":\"1\"},{\"rational\":\"0\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"0\"},{\"rational\":\"1\"}]],\"lower\":[{\"rational\":\"1/4\"},{\"rational\":\"1/4\"},{\"rational\":\"3/5\"}],\"scope\":\"{\\\"meaning\\\":\\\"Only rank weights change; source, clauses and loss remain fixed.\\\",\\\"old_band_cutoff\\\":{\\\"rational\\\":\\\"1/2\\\"},\\\"old_loss_bound\\\":{\\\"rational\\\":\\\"-1\\\"},\\\"old_record\\\":\\\"{\\\\\\\"loss\\\\\\\":\\\\\\\"D\\\\\\\",\\\\\\\"receiver\\\\\\\":\\\\\\\"p305-reconstructed-v2\\\\\\\",\\\\\\\"request\\\\\\\":{\\\\\\\"hard\\\\\\\":[[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"losses\\\\\\\":[[\\\\\\\"D\\\\\\\",[\\\\\\\"add\\\\\\\",[\\\\\\\"scale\\\\\\\",\\\\\\\"4\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"lit\\\\\\\",\\\\\\\"-1\\\\\\\"]]]],\\\\\\\"metadata\\\\\\\":{},\\\\\\\"nbits\\\\\\\":2,\\\\\\\"scope\\\\\\\":\\\\\\\"rank-region-band\\\\\\\",\\\\\\\"soft\\\\\\\":[{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case0\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/4\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"bit\\\\\\\",1]]],\\\\\\\"id\\\\\\\":\\\\\\\"case1\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/2\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case2\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1\\\\\\\"}],\\\\\\\"version\\\\\\\":\\\\\\\"p304-reconstructed-v1\\\\\\\"},\\\\\\\"unit\\\\\\\":\\\\\\\"U\\\\\\\"}\\\"}\",\"states\":[\"00\",\"01\",\"10\"],\"upper\":[{\"rational\":\"3/4\"},{\"rational\":\"3/4\"},{\"rational\":\"3/5\"}],\"version\":\"p305-rank-region-v1\",\"weight_witness\":[{\"rational\":\"1/2\"},{\"rational\":\"1/2\"},{\"rational\":\"3/5\"}]}",
+            "margins": [
+              {
+                "outside": 2,
+                "point": [
+                  "1/2",
+                  "1/2",
+                  "3/5",
+                  "1/10"
+                ],
+                "multipliers": [
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "1",
+                  "1/2",
+                  "0",
+                  "1/2",
+                  "1/2",
+                  "0",
+                  "0"
+                ],
+                "margin": "1/10"
+              }
+            ]
+          }
+        },
+        {
+          "alpha": "2/5",
+          "report": {
+            "status": "COVERAGE_REFUTED",
+            "margin": "-1/10",
+            "coverage": false,
+            "outside_count": 1,
+            "meaning": "Coverage by the supplied certified domain, not a general proof/refutation of actual action quality.",
+            "counterexample": {
+              "weights": [
+                "1/2",
+                "1/2",
+                "2/5"
+              ],
+              "winners": [
+                2
+              ],
+              "ranks": [
+                "1/2",
+                "1/2",
+                "2/5"
+              ]
+            },
+            "old_loss_bound": "-1",
+            "loss_bound_transported": false,
+            "loss_scope": "Unchanged independently specified old loss difference, for every new rank minimizer at every admitted weight."
+          },
+          "problem_record": "{\"covered\":[0,1],\"extra_rows\":[[[{\"rational\":\"1\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],{\"rational\":\"1\"}],[[{\"rational\":\"-1\"},{\"rational\":\"-1\"},{\"rational\":\"0\"}],{\"rational\":\"-1\"}]],\"features\":[[{\"rational\":\"1\"},{\"rational\":\"0\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"0\"},{\"rational\":\"1\"}]],\"lower\":[{\"rational\":\"1/4\"},{\"rational\":\"1/4\"},{\"rational\":\"2/5\"}],\"scope\":\"{\\\"meaning\\\":\\\"Only rank weights change; source, clauses and loss remain fixed.\\\",\\\"old_band_cutoff\\\":{\\\"rational\\\":\\\"1/2\\\"},\\\"old_loss_bound\\\":{\\\"rational\\\":\\\"-1\\\"},\\\"old_record\\\":\\\"{\\\\\\\"loss\\\\\\\":\\\\\\\"D\\\\\\\",\\\\\\\"receiver\\\\\\\":\\\\\\\"p305-reconstructed-v2\\\\\\\",\\\\\\\"request\\\\\\\":{\\\\\\\"hard\\\\\\\":[[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"losses\\\\\\\":[[\\\\\\\"D\\\\\\\",[\\\\\\\"add\\\\\\\",[\\\\\\\"scale\\\\\\\",\\\\\\\"4\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"lit\\\\\\\",\\\\\\\"-1\\\\\\\"]]]],\\\\\\\"metadata\\\\\\\":{},\\\\\\\"nbits\\\\\\\":2,\\\\\\\"scope\\\\\\\":\\\\\\\"rank-region-band\\\\\\\",\\\\\\\"soft\\\\\\\":[{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case0\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/4\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"bit\\\\\\\",1]]],\\\\\\\"id\\\\\\\":\\\\\\\"case1\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/2\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case2\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1\\\\\\\"}],\\\\\\\"version\\\\\\\":\\\\\\\"p304-reconstructed-v1\\\\\\\"},\\\\\\\"unit\\\\\\\":\\\\\\\"U\\\\\\\"}\\\"}\",\"states\":[\"00\",\"01\",\"10\"],\"upper\":[{\"rational\":\"3/4\"},{\"rational\":\"3/4\"},{\"rational\":\"2/5\"}],\"version\":\"p305-rank-region-v1\",\"weight_witness\":[{\"rational\":\"1/2\"},{\"rational\":\"1/2\"},{\"rational\":\"2/5\"}]}",
+          "proof": {
+            "problem_record": "{\"covered\":[0,1],\"extra_rows\":[[[{\"rational\":\"1\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],{\"rational\":\"1\"}],[[{\"rational\":\"-1\"},{\"rational\":\"-1\"},{\"rational\":\"0\"}],{\"rational\":\"-1\"}]],\"features\":[[{\"rational\":\"1\"},{\"rational\":\"0\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"0\"},{\"rational\":\"1\"}]],\"lower\":[{\"rational\":\"1/4\"},{\"rational\":\"1/4\"},{\"rational\":\"2/5\"}],\"scope\":\"{\\\"meaning\\\":\\\"Only rank weights change; source, clauses and loss remain fixed.\\\",\\\"old_band_cutoff\\\":{\\\"rational\\\":\\\"1/2\\\"},\\\"old_loss_bound\\\":{\\\"rational\\\":\\\"-1\\\"},\\\"old_record\\\":\\\"{\\\\\\\"loss\\\\\\\":\\\\\\\"D\\\\\\\",\\\\\\\"receiver\\\\\\\":\\\\\\\"p305-reconstructed-v2\\\\\\\",\\\\\\\"request\\\\\\\":{\\\\\\\"hard\\\\\\\":[[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"losses\\\\\\\":[[\\\\\\\"D\\\\\\\",[\\\\\\\"add\\\\\\\",[\\\\\\\"scale\\\\\\\",\\\\\\\"4\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"lit\\\\\\\",\\\\\\\"-1\\\\\\\"]]]],\\\\\\\"metadata\\\\\\\":{},\\\\\\\"nbits\\\\\\\":2,\\\\\\\"scope\\\\\\\":\\\\\\\"rank-region-band\\\\\\\",\\\\\\\"soft\\\\\\\":[{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case0\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/4\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"bit\\\\\\\",1]]],\\\\\\\"id\\\\\\\":\\\\\\\"case1\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/2\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case2\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1\\\\\\\"}],\\\\\\\"version\\\\\\\":\\\\\\\"p304-reconstructed-v1\\\\\\\"},\\\\\\\"unit\\\\\\\":\\\\\\\"U\\\\\\\"}\\\"}\",\"states\":[\"00\",\"01\",\"10\"],\"upper\":[{\"rational\":\"3/4\"},{\"rational\":\"3/4\"},{\"rational\":\"2/5\"}],\"version\":\"p305-rank-region-v1\",\"weight_witness\":[{\"rational\":\"1/2\"},{\"rational\":\"1/2\"},{\"rational\":\"2/5\"}]}",
+            "margins": [
+              {
+                "outside": 2,
+                "point": [
+                  "1/2",
+                  "1/2",
+                  "2/5",
+                  "-1/10"
+                ],
+                "multipliers": [
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "1",
+                  "1/2",
+                  "0",
+                  "1/2",
+                  "1/2",
+                  "0",
+                  "0"
+                ],
+                "margin": "-1/10"
+              }
+            ]
+          }
+        },
+        {
+          "alpha": "1/2",
+          "report": {
+            "status": "COVERAGE_REFUTED",
+            "margin": "0",
+            "coverage": false,
+            "outside_count": 1,
+            "meaning": "Coverage by the supplied certified domain, not a general proof/refutation of actual action quality.",
+            "counterexample": {
+              "weights": [
+                "1/2",
+                "1/2",
+                "1/2"
+              ],
+              "winners": [
+                0,
+                1,
+                2
+              ],
+              "ranks": [
+                "1/2",
+                "1/2",
+                "1/2"
+              ]
+            },
+            "old_loss_bound": "-1",
+            "loss_bound_transported": false,
+            "loss_scope": "Unchanged independently specified old loss difference, for every new rank minimizer at every admitted weight."
+          },
+          "problem_record": "{\"covered\":[0,1],\"extra_rows\":[[[{\"rational\":\"1\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],{\"rational\":\"1\"}],[[{\"rational\":\"-1\"},{\"rational\":\"-1\"},{\"rational\":\"0\"}],{\"rational\":\"-1\"}]],\"features\":[[{\"rational\":\"1\"},{\"rational\":\"0\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"0\"},{\"rational\":\"1\"}]],\"lower\":[{\"rational\":\"1/4\"},{\"rational\":\"1/4\"},{\"rational\":\"1/2\"}],\"scope\":\"{\\\"meaning\\\":\\\"Only rank weights change; source, clauses and loss remain fixed.\\\",\\\"old_band_cutoff\\\":{\\\"rational\\\":\\\"1/2\\\"},\\\"old_loss_bound\\\":{\\\"rational\\\":\\\"-1\\\"},\\\"old_record\\\":\\\"{\\\\\\\"loss\\\\\\\":\\\\\\\"D\\\\\\\",\\\\\\\"receiver\\\\\\\":\\\\\\\"p305-reconstructed-v2\\\\\\\",\\\\\\\"request\\\\\\\":{\\\\\\\"hard\\\\\\\":[[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"losses\\\\\\\":[[\\\\\\\"D\\\\\\\",[\\\\\\\"add\\\\\\\",[\\\\\\\"scale\\\\\\\",\\\\\\\"4\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"lit\\\\\\\",\\\\\\\"-1\\\\\\\"]]]],\\\\\\\"metadata\\\\\\\":{},\\\\\\\"nbits\\\\\\\":2,\\\\\\\"scope\\\\\\\":\\\\\\\"rank-region-band\\\\\\\",\\\\\\\"soft\\\\\\\":[{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case0\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/4\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"bit\\\\\\\",1]]],\\\\\\\"id\\\\\\\":\\\\\\\"case1\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/2\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case2\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1\\\\\\\"}],\\\\\\\"version\\\\\\\":\\\\\\\"p304-reconstructed-v1\\\\\\\"},\\\\\\\"unit\\\\\\\":\\\\\\\"U\\\\\\\"}\\\"}\",\"states\":[\"00\",\"01\",\"10\"],\"upper\":[{\"rational\":\"3/4\"},{\"rational\":\"3/4\"},{\"rational\":\"1/2\"}],\"version\":\"p305-rank-region-v1\",\"weight_witness\":[{\"rational\":\"1/2\"},{\"rational\":\"1/2\"},{\"rational\":\"1/2\"}]}",
+          "proof": {
+            "problem_record": "{\"covered\":[0,1],\"extra_rows\":[[[{\"rational\":\"1\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],{\"rational\":\"1\"}],[[{\"rational\":\"-1\"},{\"rational\":\"-1\"},{\"rational\":\"0\"}],{\"rational\":\"-1\"}]],\"features\":[[{\"rational\":\"1\"},{\"rational\":\"0\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"1\"},{\"rational\":\"0\"}],[{\"rational\":\"0\"},{\"rational\":\"0\"},{\"rational\":\"1\"}]],\"lower\":[{\"rational\":\"1/4\"},{\"rational\":\"1/4\"},{\"rational\":\"1/2\"}],\"scope\":\"{\\\"meaning\\\":\\\"Only rank weights change; source, clauses and loss remain fixed.\\\",\\\"old_band_cutoff\\\":{\\\"rational\\\":\\\"1/2\\\"},\\\"old_loss_bound\\\":{\\\"rational\\\":\\\"-1\\\"},\\\"old_record\\\":\\\"{\\\\\\\"loss\\\\\\\":\\\\\\\"D\\\\\\\",\\\\\\\"receiver\\\\\\\":\\\\\\\"p305-reconstructed-v2\\\\\\\",\\\\\\\"request\\\\\\\":{\\\\\\\"hard\\\\\\\":[[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"losses\\\\\\\":[[\\\\\\\"D\\\\\\\",[\\\\\\\"add\\\\\\\",[\\\\\\\"scale\\\\\\\",\\\\\\\"4\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"lit\\\\\\\",\\\\\\\"-1\\\\\\\"]]]],\\\\\\\"metadata\\\\\\\":{},\\\\\\\"nbits\\\\\\\":2,\\\\\\\"scope\\\\\\\":\\\\\\\"rank-region-band\\\\\\\",\\\\\\\"soft\\\\\\\":[{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case0\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/4\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",0]],[\\\\\\\"bit\\\\\\\",1]]],\\\\\\\"id\\\\\\\":\\\\\\\"case1\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1/2\\\\\\\"},{\\\\\\\"formula\\\\\\\":[\\\\\\\"not\\\\\\\",[\\\\\\\"and\\\\\\\",[\\\\\\\"bit\\\\\\\",0],[\\\\\\\"not\\\\\\\",[\\\\\\\"bit\\\\\\\",1]]]],\\\\\\\"id\\\\\\\":\\\\\\\"case2\\\\\\\",\\\\\\\"tier\\\\\\\":0,\\\\\\\"weight\\\\\\\":\\\\\\\"1\\\\\\\"}],\\\\\\\"version\\\\\\\":\\\\\\\"p304-reconstructed-v1\\\\\\\"},\\\\\\\"unit\\\\\\\":\\\\\\\"U\\\\\\\"}\\\"}\",\"states\":[\"00\",\"01\",\"10\"],\"upper\":[{\"rational\":\"3/4\"},{\"rational\":\"3/4\"},{\"rational\":\"1/2\"}],\"version\":\"p305-rank-region-v1\",\"weight_witness\":[{\"rational\":\"1/2\"},{\"rational\":\"1/2\"},{\"rational\":\"1/2\"}]}",
+            "margins": [
+              {
+                "outside": 2,
+                "point": [
+                  "1/2",
+                  "1/2",
+                  "1/2",
+                  "0"
+                ],
+                "multipliers": [
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "1",
+                  "1/2",
+                  "0",
+                  "1/2",
+                  "1/2",
+                  "0",
+                  "0"
+                ],
+                "margin": "0"
+              }
+            ]
+          }
+        }
+      ],
+      "work": {
+        "producer_cells": 5,
+        "expression_nodes": 597,
+        "collection_nodes": 36,
+        "verified_proof_nodes": 30,
+        "source_assignments_enumerated": 24,
+        "record_characters_compared": 10428,
+        "max_rational_component_bits": 4,
+        "primal_constraint_checks": 36,
+        "rational_multiply_adds": 360,
+        "margin_certificates_verified": 3
+      },
+      "errors": [
+        {
+          "type": "Rejected",
+          "reason": "Old frame does not match independently supplied request."
+        },
+        {
+          "type": "Rejected",
+          "reason": "Unjustified certificate leaf."
+        },
+        {
+          "type": "ValueError",
+          "reason": "Soft-clause adapter requires a strictly positive lower weight box."
+        }
+      ],
+      "old_band": {
+        "frame_record": "{\"loss\":\"D\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[[\"not\",[\"and\",[\"bit\",0],[\"bit\",1]]]],\"losses\":[[\"D\",[\"add\",[\"scale\",\"4\",[\"bit\",0]],[\"lit\",\"-1\"]]]],\"metadata\":{},\"nbits\":2,\"scope\":\"rank-region-band\",\"soft\":[{\"formula\":[\"not\",[\"and\",[\"not\",[\"bit\",0]],[\"not\",[\"bit\",1]]]],\"id\":\"case0\",\"tier\":0,\"weight\":\"1/4\"},{\"formula\":[\"not\",[\"and\",[\"not\",[\"bit\",0]],[\"bit\",1]]],\"id\":\"case1\",\"tier\":0,\"weight\":\"1/2\"},{\"formula\":[\"not\",[\"and\",[\"bit\",0],[\"not\",[\"bit\",1]]]],\"id\":\"case2\",\"tier\":0,\"weight\":\"1\"}],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+        "cutoff": "1/2",
+        "bound": "-1",
+        "tree": [
+          "split",
+          0,
+          [
+            "leaf",
+            "loss"
+          ],
+          [
+            "split",
+            1,
+            [
+              "leaf",
+              "rank"
+            ],
+            [
+              "leaf",
+              "hard"
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "error": null
+}

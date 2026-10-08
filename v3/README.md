@@ -2,7 +2,7 @@
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 8, 2026 UTC.
 
-**P3-01–04 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
+**P3-01–05 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
 minimum of **16 measured hours of research**, with longer work possible.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -102,11 +102,14 @@ paid-computation policy or final experiment has been established. P3-04 now supp
 It covers typed structural changes, explicitly exceptional paired-support
 counterpossibles, ranked selection, all-optimum coverage and task bounds.
 The original lost execution archives are not represented as recovered.
-P3-05 is **in progress** with a [new transport reconstruction](derivations/05_counterfactual_transport.md)
-and [saved source, evidence and clocks](work_logs/P3_05_2026-10-08_S2.md).
-The prior snapshot was empty; its earlier duration remains unverified. New measured
-research is 16.600815157283 minutes, leaving 73.399184842717
-minutes to Research90. P3-06 is unstarted; the contribution obligation remains
+P3-05 is **complete** at [finite transport and checked-reuse scope](derivations/05_counterfactual_transport.md),
+with [joined conditional proofs](derivations/05_portfolio_transport.md),
+[edit-stable information](derivations/05_edit_information.md), finite dependency
+and counterpossible front ends, rank-weight robustness and retained proof chains.
+The [ordinary-method comparison](derivations/05_resource_comparison.md) retains
+both savings over fresh proof search and faster warm decision-diagram reasoning.
+[Exact S2/S3 records](work_logs/P3_05_2026-10-08_S3.md) give 90.008903419667 research
+minutes. P3-06 is next and unstarted; the contribution obligation remains
 **NOT YET SUPPORTED**.
 
 ## Workspace

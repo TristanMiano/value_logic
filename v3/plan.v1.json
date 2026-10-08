@@ -2,7 +2,7 @@
   "schema_version": 1,
   "phase": 3,
   "status": "research_in_progress",
-  "next_task": "P3-05",
+  "next_task": "P3-06",
   "phase_research_floor_minutes": 960,
   "qualifying_modes": [
     "D",
@@ -110,7 +110,7 @@
     {
       "id": "P3-05",
       "title": "counterfactual dependence and proof reuse",
-      "status": "in_progress",
+      "status": "complete",
       "research_floor_minutes": 90,
       "mode_forecast_minutes": {
         "D": 60,
@@ -121,20 +121,34 @@
       "high_research_minutes": 180,
       "attempt_id": "P3-05-R1",
       "principal_artifact": "v3/derivations/05_counterfactual_transport.md",
-      "actuals": "v3/work_logs/P3_05_2026-10-08_S2/actuals.json",
+      "actuals": "v3/work_logs/P3_05_2026-10-08_S3/actuals.json",
       "sessions": [
-        "v3/work_logs/P3_05_2026-10-08_S2.md"
+        "v3/work_logs/P3_05_2026-10-08_S2.md",
+        "v3/work_logs/P3_05_2026-10-08_S3.md"
       ],
-      "research_ns": 996048909437,
-      "research_floor_satisfied": false,
-      "remaining_research_floor_ns": 4403951090563,
-      "session_forecast": "v3/work_logs/P3_05_2026-10-08_S2/forecast.json",
-      "implementation": "v3/checks/05_counterfactual_transport.py",
-      "implementation_version": "p305-reconstructed-v2",
-      "evidence_disposition": "v3/work_logs/P3_05_2026-10-08_S2/recovery_disposition.md",
-      "partial_readiness_audit": "v3/work_logs/P3_05_2026-10-08_S2/readiness_audit.md",
+      "research_ns": 5400534205180,
+      "research_floor_satisfied": true,
+      "remaining_research_floor_ns": 0,
+      "session_forecast": "v3/work_logs/P3_05_2026-10-08_S3/forecast.json",
+      "implementation": "v3/checks/05_portfolio_transport.py",
+      "implementation_version": "p305-portfolio-v3",
+      "evidence_disposition": "v3/work_logs/P3_05_2026-10-08_S3/development/README.md",
       "prior_attempt_timing": "UNVERIFIED_MISSING_CLOCKS",
-      "closure_status": "partial_reconstruction_research_floor_remaining"
+      "closure_status": "complete_with_preserved_prior_missing_attempt",
+      "readiness_audit": "v3/work_logs/P3_05_2026-10-08_S3/readiness_audit.md",
+      "previous_recovery_disposition": "v3/work_logs/P3_05_2026-10-08_S2/recovery_disposition.md",
+      "completion_scope": "finite_counterfactual_transport_and_checked_reuse",
+      "companion_artifacts": [
+        "v3/derivations/05_portfolio_transport.md",
+        "v3/derivations/05_edit_information.md",
+        "v3/derivations/05_dependency_compilation.md",
+        "v3/derivations/05_rank_weight_regions.md",
+        "v3/derivations/05_chain_reuse.md",
+        "v3/derivations/05_counterpossible_bridge.md",
+        "v3/derivations/05_portfolio_retention.md",
+        "v3/derivations/05_resource_comparison.md"
+      ],
+      "previous_partial_readiness_audit": "v3/work_logs/P3_05_2026-10-08_S2/readiness_audit.md"
     },
     {
       "id": "P3-06",
@@ -281,14 +295,14 @@
   "final_evaluation_exposed": false,
   "neural_recurrence_selected": false,
   "active_session": null,
-  "last_completed_session": "v3/work_logs/P3_04_2026-10-08_S2.md",
+  "last_completed_session": "v3/work_logs/P3_05_2026-10-08_S3.md",
   "observed_progress": {
-    "research_ns": 23901203578101,
-    "measured_engaged_ns": 28652260513082,
-    "remaining_floor_ns": 33698796421899,
-    "source": "v3/work_logs/P3_05_2026-10-08_S2/actuals.json",
+    "research_ns": 28305688873844,
+    "measured_engaged_ns": 33258088654962,
+    "remaining_floor_ns": 29294311126156,
+    "source": "v3/work_logs/P3_05_2026-10-08_S3/actuals.json",
     "next_checkpoint_minutes": 480,
-    "evidence_disposition": "P3-05 new reconstruction; previous empty snapshot supplies no verifiable research time."
+    "evidence_disposition": "P3-05 completed from verified S2/S3 records; lost earlier attempt remains unverified."
   },
   "provisional_representation": {
     "id": "P3-A-REP01",
@@ -306,5 +320,5 @@
       "overshoot_ns": 2370123676163
     }
   ],
-  "last_preserved_session": "v3/work_logs/P3_05_2026-10-08_S2.md"
+  "last_preserved_session": "v3/work_logs/P3_05_2026-10-08_S3.md"
 }

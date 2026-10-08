@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""Append real UTC/monotonic observations; no inferred or retroactive duration."""
+import argparse, datetime, json, os, time
+from pathlib import Path
+P = Path(__file__).resolve().parent
+
+def main():
+    ap=argparse.ArgumentParser(); ap.add_argument('mode', choices=['D','L','E','O','wait','recovery','stop']); ap.add_argument('lane', choices=['R','X','-']); ap.add_argument('note'); a=ap.parse_args()
+    rows=[json.loads(x) for x in (P/'clocks.jsonl').read_text().splitlines()]
+    last=rows[-1]
+    if last['mode']=='stop': raise SystemExit('Clock is closed; open a separate session.')
+    if (a.mode in ['D','L','E']) != (a.lane!='-'): raise SystemExit('Research alone must have an R/X lane.')
+    now=time.monotonic_ns(); utc=datetime.datetime.now(datetime.timezone.utc).isoformat()
+    if now<last['monotonic_ns']: raise SystemExit('Runtime/monotonic reset: exclude gap and reopen explicitly.')
+    row={'event':'stop' if a.mode=='stop' else 'boundary','utc':utc,'monotonic_ns':now,'runtime':last['runtime'],'mode':a.mode,'lane':'' if a.lane=='-' else a.lane,'note':a.note}
+    with (P/'clocks.jsonl').open('a') as f: f.write(json.dumps(row)+'\n'); f.flush(); os.fsync(f.fileno())
+    totals={}
+    dispositions=json.loads((P/'clock_dispositions.json').read_text()).get('dispositions',[]) if (P/'clock_dispositions.json').exists() else []
+    for x,y in zip(rows,rows[1:]+[row]):
+        cuts={x['monotonic_ns'],y['monotonic_ns']}
+        for d in dispositions:
+            if d['runtime']==x['runtime']:
+                for k in ['start_monotonic_ns','end_monotonic_ns']:
+                    if x['monotonic_ns']<d[k]<y['monotonic_ns']:cuts.add(d[k])
+        cs=sorted(cuts)
+        for lo,hi in zip(cs,cs[1:]):
+            ds=[d for d in dispositions if d['runtime']==x['runtime'] and d['start_monotonic_ns']<=lo and hi<=d['end_monotonic_ns']]
+            if len(ds)>1:raise SystemExit('Overlapping clock dispositions.')
+            mode=ds[0]['effective_mode'] if ds else x['mode']
+            totals[mode]=totals.get(mode,0)+hi-lo
+    print(json.dumps({'utc':utc,'closed_mode':last['mode'],'closed_segment_ns':now-last['monotonic_ns'],'current_mode':a.mode,'minutes':{k:v/60e9 for k,v in totals.items()},'research_ns':sum(v for k,v in totals.items() if k in ('D','L','E'))},indent=2))
+if __name__=='__main__':main()

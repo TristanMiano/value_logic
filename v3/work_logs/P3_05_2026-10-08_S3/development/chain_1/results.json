@@ -1,0 +1,303 @@
+{
+  "assertions": 182,
+  "cases": [
+    {
+      "suite": "scalar_chain_slack_and_cancelling_corrections",
+      "first": {
+        "status": "CURRENT_BOUND_CERTIFIED",
+        "version": "p305-portfolio-v3",
+        "current_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[],\"losses\":[[\"delta\",[\"bit\",0]]],\"metadata\":{},\"nbits\":1,\"scope\":\"first\",\"soft\":[],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+        "bound": "1",
+        "non_deterioration": false,
+        "feasibility": "NONEMPTY",
+        "incumbent_rank": "0",
+        "coverage": "ENTIRE_CURRENT_INCUMBENT_SUBLEVEL_INCLUDING_ALL_MINIMIZERS",
+        "selected_identities_claimed": false,
+        "counts": {
+          "reuse_leaves": 1,
+          "direct_leaves": 0,
+          "hard_exclusions": 0,
+          "rank_exclusions": 0,
+          "splits": 0
+        },
+        "meaning": "uniform bound for the independently fixed receiving loss difference",
+        "trusted_cache": true
+      },
+      "tight_latest_route_failure": {
+        "type": "Uncertified",
+        "reason": "Incumbent sublevel is not covered by the allowed proof vocabulary: (0,)"
+      },
+      "root_route": {
+        "status": "CURRENT_BOUND_CERTIFIED",
+        "version": "p305-portfolio-v3",
+        "current_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[],\"losses\":[[\"delta\",[\"lit\",\"0\"]]],\"metadata\":{},\"nbits\":1,\"scope\":\"second\",\"soft\":[],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+        "bound": "0",
+        "non_deterioration": true,
+        "feasibility": "NONEMPTY",
+        "incumbent_rank": "0",
+        "coverage": "ENTIRE_CURRENT_INCUMBENT_SUBLEVEL_INCLUDING_ALL_MINIMIZERS",
+        "selected_identities_claimed": false,
+        "counts": {
+          "reuse_leaves": 1,
+          "direct_leaves": 0,
+          "hard_exclusions": 0,
+          "rank_exclusions": 0,
+          "splits": 0
+        },
+        "meaning": "uniform bound for the independently fixed receiving loss difference",
+        "trusted_cache": true
+      },
+      "fresh_route": {
+        "status": "CURRENT_BOUND_CERTIFIED",
+        "version": "p305-portfolio-v3",
+        "current_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[],\"losses\":[[\"delta\",[\"lit\",\"0\"]]],\"metadata\":{},\"nbits\":1,\"scope\":\"second\",\"soft\":[],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+        "bound": "0",
+        "non_deterioration": true,
+        "feasibility": "NONEMPTY",
+        "incumbent_rank": "0",
+        "coverage": "ENTIRE_CURRENT_INCUMBENT_SUBLEVEL_INCLUDING_ALL_MINIMIZERS",
+        "selected_identities_claimed": false,
+        "counts": {
+          "reuse_leaves": 0,
+          "direct_leaves": 1,
+          "hard_exclusions": 0,
+          "rank_exclusions": 0,
+          "splits": 0
+        },
+        "meaning": "uniform bound for the independently fixed receiving loss difference",
+        "trusted_cache": true
+      },
+      "first_proof": {
+        "version": "p305-portfolio-v3",
+        "current_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[],\"losses\":[[\"delta\",[\"bit\",0]]],\"metadata\":{},\"nbits\":1,\"scope\":\"first\",\"soft\":[],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+        "choices": [
+          {
+            "handle": "root",
+            "old_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[[\"not\",[\"bit\",0]]],\"losses\":[[\"delta\",[\"lit\",\"0\"]]],\"metadata\":{},\"nbits\":1,\"scope\":\"root\",\"soft\":[],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+            "replacements": [
+              [
+                "lit",
+                "0"
+              ]
+            ],
+            "alpha": "1"
+          }
+        ],
+        "witness": [
+          0
+        ],
+        "bound": "1",
+        "tree": [
+          "reuse",
+          0,
+          [
+            []
+          ],
+          [],
+          []
+        ]
+      },
+      "loose_second": {
+        "version": "p305-portfolio-v3",
+        "current_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[],\"losses\":[[\"delta\",[\"lit\",\"0\"]]],\"metadata\":{},\"nbits\":1,\"scope\":\"second\",\"soft\":[],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+        "choices": [
+          {
+            "handle": "first",
+            "old_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[],\"losses\":[[\"delta\",[\"bit\",0]]],\"metadata\":{},\"nbits\":1,\"scope\":\"first\",\"soft\":[],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+            "replacements": [
+              [
+                "bit",
+                0
+              ]
+            ],
+            "alpha": "1"
+          }
+        ],
+        "witness": [
+          0
+        ],
+        "bound": "1",
+        "tree": [
+          "reuse",
+          0,
+          [],
+          [],
+          []
+        ]
+      },
+      "tight_second_root": {
+        "version": "p305-portfolio-v3",
+        "current_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[],\"losses\":[[\"delta\",[\"lit\",\"0\"]]],\"metadata\":{},\"nbits\":1,\"scope\":\"second\",\"soft\":[],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+        "choices": [
+          {
+            "handle": "root",
+            "old_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[[\"not\",[\"bit\",0]]],\"losses\":[[\"delta\",[\"lit\",\"0\"]]],\"metadata\":{},\"nbits\":1,\"scope\":\"root\",\"soft\":[],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+            "replacements": [
+              [
+                "lit",
+                "0"
+              ]
+            ],
+            "alpha": "1"
+          }
+        ],
+        "witness": [
+          0
+        ],
+        "bound": "0",
+        "tree": [
+          "reuse",
+          0,
+          [
+            []
+          ],
+          [],
+          []
+        ]
+      },
+      "meaning": "Latest scalar bound loses tightness; retaining the root or fresh reasoning recovers it. No universal reuse advantage."
+    },
+    {
+      "suite": "repeated_program_loss_and_scope_edits",
+      "nbits": 1,
+      "steps": 12,
+      "final_report": {
+        "status": "CURRENT_BOUND_CERTIFIED",
+        "version": "p305-portfolio-v3",
+        "current_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[[\"bit\",0]],\"losses\":[[\"delta\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"lit\",\"-1\"]],[\"lit\",\"-2/3\"]]],[\"lit\",\"-1/3\"]]],[\"lit\",\"0\"]]],[\"lit\",\"1/3\"]]],[\"lit\",\"2/3\"]]],[\"lit\",\"-2/3\"]]],[\"lit\",\"-1/3\"]]],[\"lit\",\"0\"]]],[\"lit\",\"1/3\"]]],[\"lit\",\"2/3\"]]],[\"lit\",\"-2/3\"]]],[\"lit\",\"-1/3\"]]]],\"metadata\":{},\"nbits\":1,\"scope\":\"chain-1-11\",\"soft\":[{\"formula\":[\"bit\",0],\"id\":\"rank\",\"tier\":0,\"weight\":\"12\"}],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+        "bound": "-2",
+        "non_deterioration": true,
+        "feasibility": "NONEMPTY",
+        "incumbent_rank": "0",
+        "coverage": "ENTIRE_CURRENT_INCUMBENT_SUBLEVEL_INCLUDING_ALL_MINIMIZERS",
+        "selected_identities_claimed": false,
+        "counts": {
+          "reuse_leaves": 1,
+          "direct_leaves": 0,
+          "hard_exclusions": 0,
+          "rank_exclusions": 0,
+          "splits": 0
+        },
+        "meaning": "uniform bound for the independently fixed receiving loss difference",
+        "trusted_cache": true
+      },
+      "rejections": [
+        {
+          "type": "Rejected",
+          "reason": "Fresh nonempty cache handle and available capacity required."
+        },
+        {
+          "type": "Rejected",
+          "reason": "Unadmitted portfolio handle or malformed choice."
+        },
+        {
+          "type": "Rejected",
+          "reason": "The proof does not bind the independently supplied current request."
+        }
+      ],
+      "replayed": true
+    },
+    {
+      "suite": "repeated_program_loss_and_scope_edits",
+      "nbits": 2,
+      "steps": 12,
+      "final_report": {
+        "status": "CURRENT_BOUND_CERTIFIED",
+        "version": "p305-portfolio-v3",
+        "current_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[[\"bit\",1]],\"losses\":[[\"delta\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"lit\",\"-1\"]],[\"lit\",\"-2/3\"]]],[\"lit\",\"-1/3\"]]],[\"lit\",\"0\"]]],[\"lit\",\"1/3\"]]],[\"lit\",\"2/3\"]]],[\"lit\",\"-2/3\"]]],[\"lit\",\"-1/3\"]]],[\"lit\",\"0\"]]],[\"lit\",\"1/3\"]]],[\"lit\",\"2/3\"]]],[\"lit\",\"-2/3\"]]],[\"lit\",\"-1/3\"]]]],\"metadata\":{},\"nbits\":2,\"scope\":\"chain-2-11\",\"soft\":[{\"formula\":[\"bit\",0],\"id\":\"rank\",\"tier\":0,\"weight\":\"12\"}],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+        "bound": "-2",
+        "non_deterioration": true,
+        "feasibility": "NONEMPTY",
+        "incumbent_rank": "12",
+        "coverage": "ENTIRE_CURRENT_INCUMBENT_SUBLEVEL_INCLUDING_ALL_MINIMIZERS",
+        "selected_identities_claimed": false,
+        "counts": {
+          "reuse_leaves": 1,
+          "direct_leaves": 0,
+          "hard_exclusions": 0,
+          "rank_exclusions": 0,
+          "splits": 0
+        },
+        "meaning": "uniform bound for the independently fixed receiving loss difference",
+        "trusted_cache": true
+      },
+      "rejections": [
+        {
+          "type": "Rejected",
+          "reason": "Fresh nonempty cache handle and available capacity required."
+        },
+        {
+          "type": "Rejected",
+          "reason": "Unadmitted portfolio handle or malformed choice."
+        },
+        {
+          "type": "Rejected",
+          "reason": "The proof does not bind the independently supplied current request."
+        }
+      ],
+      "replayed": true
+    },
+    {
+      "suite": "repeated_program_loss_and_scope_edits",
+      "nbits": 3,
+      "steps": 12,
+      "final_report": {
+        "status": "CURRENT_BOUND_CERTIFIED",
+        "version": "p305-portfolio-v3",
+        "current_record": "{\"loss\":\"delta\",\"receiver\":\"p305-reconstructed-v2\",\"request\":{\"hard\":[[\"bit\",2]],\"losses\":[[\"delta\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"add\",[\"scale\",\"1\",[\"add\",[\"scale\",\"1/2\",[\"add\",[\"scale\",\"2\",[\"lit\",\"-1\"]],[\"lit\",\"-2/3\"]]],[\"lit\",\"-1/3\"]]],[\"lit\",\"0\"]]],[\"lit\",\"1/3\"]]],[\"lit\",\"2/3\"]]],[\"lit\",\"-2/3\"]]],[\"lit\",\"-1/3\"]]],[\"lit\",\"0\"]]],[\"lit\",\"1/3\"]]],[\"lit\",\"2/3\"]]],[\"lit\",\"-2/3\"]]],[\"lit\",\"-1/3\"]]]],\"metadata\":{},\"nbits\":3,\"scope\":\"chain-3-11\",\"soft\":[{\"formula\":[\"bit\",0],\"id\":\"rank\",\"tier\":0,\"weight\":\"12\"}],\"version\":\"p304-reconstructed-v1\"},\"unit\":\"U\"}",
+        "bound": "-2",
+        "non_deterioration": true,
+        "feasibility": "NONEMPTY",
+        "incumbent_rank": "12",
+        "coverage": "ENTIRE_CURRENT_INCUMBENT_SUBLEVEL_INCLUDING_ALL_MINIMIZERS",
+        "selected_identities_claimed": false,
+        "counts": {
+          "reuse_leaves": 1,
+          "direct_leaves": 0,
+          "hard_exclusions": 0,
+          "rank_exclusions": 0,
+          "splits": 0
+        },
+        "meaning": "uniform bound for the independently fixed receiving loss difference",
+        "trusted_cache": true
+      },
+      "rejections": [
+        {
+          "type": "Rejected",
+          "reason": "Fresh nonempty cache handle and available capacity required."
+        },
+        {
+          "type": "Rejected",
+          "reason": "Unadmitted portfolio handle or malformed choice."
+        },
+        {
+          "type": "Rejected",
+          "reason": "The proof does not bind the independently supplied current request."
+        }
+      ],
+      "replayed": true
+    },
+    {
+      "suite": "failed_circular_and_metadata_admissions",
+      "rejections": [
+        {
+          "type": "Rejected",
+          "reason": "Unadmitted portfolio handle or malformed choice."
+        },
+        {
+          "type": "Rejected",
+          "reason": "Receiving loss correction is insufficient."
+        },
+        {
+          "type": "Rejected",
+          "reason": "Advertised report differs from the independently verified report."
+        },
+        {
+          "type": "Rejected",
+          "reason": "Old certificate record does not match the selected input."
+        }
+      ]
+    }
+  ],
+  "error": null
+}
