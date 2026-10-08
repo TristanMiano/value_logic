@@ -3,7 +3,8 @@
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 7, 2026 UTC.
 **P3-01–03 are complete at their declared task scopes, with their Research90
 minima and closing records. P3-A remains PASS at problem and restricted representation
-readiness; P3-B–D remain unattempted. Next: P3-04, unstarted.
+readiness; P3-B–D remain unattempted. P3-04 is active: Research90 satisfied,
+original evidence recovery and final closure pending.
 P3-N01 remains NOT YET SUPPORTED.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
 [task readiness audit](work_logs/P3_03_2026-10-07_S1/readiness_audit.md).
@@ -155,3 +156,17 @@ equivalence or general logical-counterfactual solution was made at setup, and
 none has been established by the P3-01 contract work.
 The [setup log](work_logs/P3_SETUP_2026-10-06_S1.md) records the planning work
 and its zero contribution to the phase research floor.
+
+## P3-04 recovered-delivery disposition
+
+The [recovery record](work_logs/P3_04_2026-10-08_S1.md) preserves two manuscripts,
+the original self-review and the closed clocks. Research90 is satisfied at
+90.455669815767 measured minutes. The original implementation, source contract,
+forecast and six development evidence batches were not recovered for this
+package; their earlier reported results are not newly verified here.
+
+P3-04 remains **IN PROGRESS: original evidence recovery and final closure**.
+Do not promote the surviving drafts to a completed executable-evidence claim,
+repeat their historical time or restart P3-03. P3-N01 remains NOT YET SUPPORTED.
+No P3-05 work or new gate is attempted. The installer posts the original
+81-row append once and records it in a separate application receipt.

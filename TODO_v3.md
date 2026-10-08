@@ -10,12 +10,15 @@ P3-03 supplies a [finite bounded uncertainty construction](v3/derivations/03_log
 and [refinement/retention extensions](v3/derivations/03_refinement_extensions.md),
 with **90.048612847917 measured research minutes** and
 [exact actuals](v3/work_logs/P3_03_2026-10-07_S1/actuals.json).
-Phase-three qualifying research is **279.502061269383 minutes**;
-**680.497938730617 minutes** remain to the 960-minute floor.
+Including the recovered, replay-checked P3-04 clock posting, phase-three
+qualifying research is **369.957731085150 minutes**;
+**590.042268914850 minutes** remain to the 960-minute floor.
+See the [P3-04 recovery record](v3/work_logs/P3_04_2026-10-08_S1.md);
+research-floor satisfaction is separate from missing-evidence closure.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
 The [first 240-minute checkpoint](v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md)
 is assessed at this task boundary with its actual overshoot.
-**Next: P3-04 — logical counterfactual semantics, unstarted.**
+**Active: P3-04 — Research90 satisfied; original evidence recovery and final closure pending.**
 Phase two remains complete; P3-B–D remain unattempted. P3-N01 remains
 **NOT YET SUPPORTED**. All executable evidence remains development; no final
 challenge is frozen or exposed. The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)

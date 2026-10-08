@@ -96,8 +96,10 @@ bounds and named-action certificates. Its [companion proofs](derivations/03_refi
 separate finite-prefix completion, task certainty, source recovery and revision
 support. The general proof-stream adapter is mathematical; the actual prototype
 handles its declared finite Boolean/bounded-VM fragment. No anticipatory learner,
-paid-computation policy or final experiment has been established. P3-04 is next
-and unstarted; the contribution obligation remains **NOT YET SUPPORTED**.
+paid-computation policy or final experiment has been established. P3-04 has [recovered manuscripts and replay-checked timing](work_logs/P3_04_2026-10-08_S1.md),
+but remains in progress until its original implementation and development
+evidence are recovered and closing checks completed. The contribution
+obligation remains **NOT YET SUPPORTED**.
 
 ## Workspace
 
