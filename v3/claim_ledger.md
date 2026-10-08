@@ -5,7 +5,7 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 8, 2026 UTC.
 minima and closing records. P3-A remains PASS at problem and restricted representation
 readiness; P3-B–D remain unattempted. P3-04 closes on separately versioned
 S2 replacement evidence; its original missing run history is not recreated.
-Next: P3-05, unstarted.
+Active: P3-05, separately reconstructed and in progress; Research90 remains open.
 P3-N01 remains NOT YET SUPPORTED.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
 [task readiness audit](work_logs/P3_03_2026-10-07_S1/readiness_audit.md).
@@ -191,3 +191,26 @@ and [source contracts](literature/04_source_contracts.md) define current support
 P3-05 remains unstarted, P3-A remains PASS, P3-B–D unattempted. No final
 challenge is frozen/exposed. Original S1 code, run archives and forecast remain
 historical gaps; current technical closure rests on the explicit replacement.
+
+
+## P3-05 reconstruction checkpoint — October 8, 2026
+
+P3-05 is **IN PROGRESS**, not a completed task or contribution gate. The
+[session](work_logs/P3_05_2026-10-08_S2.md) records that the prior snapshot had
+zero research files and no clock. The following is new, separately versioned
+work; no earlier result or time is retroactively certified.
+
+| Record | Present finding | Evidence and limit |
+|---|---|---|
+| P3-05/CT05-1 | A current selected-family bound requires both mapped proof validity and complete selected-family coverage. | Conditional hand proof; pointwise choice of proof is not hidden-state action selection. |
+| P3-05/CT05-2 | A feasible incumbent and a one-sided rank-drift bound can keep every new minimizer in an old certified sublevel even after all old winners disappear. | Finite scalar-rank proof; exact ties retained. Rank-only information bounds no arbitrary task loss. |
+| P3-05/CT05-3 | Refactoring needs an operation-commuting map for intervention reuse; equal baseline outputs alone are insufficient. | Explicit token/shared/copy/predictor counterexamples and finite map checks. |
+| P3-05/CT05-4 | Retained rank envelopes provide a selection-aware domain for later bounds; a best scalar alone can lose relevant alternatives. | Finite information example; numerical dominance is not resource dominance. |
+| P3-05/CT05-5 | A finite rational band-tree receiver checks old/current requests, witness feasibility, source mapping, rank drift and loss drift. | Reconstructed-v2, self-review and saved finite development. Sufficient not complete; no native proof compiler or empirical dependency authentication. |
+| P3-05/E-R1 | Five newly saved bundles bind v1 and v2 implementation changes and diagnostics. | V2 main 1,451, supplement 48 and substitution 159 assertions. V1 regression history is preserved, not counted as independent discoveries. |
+| P3-05/R01 | Some withdrawn assumptions admit explicit substitution with a necessary loss penalty. | Old q=0 bound -1 becomes at most 3 when q is reopened; omission of the penalty is invalid. |
+| P3-05/open | Joined portfolios, more complete mapped-premise discharge and stronger resource comparisons remain worthwhile task work. | The parity fixture admits an ordinary symbolic shortcut; no broad speedup, LI anticipation or calibration claim. |
+
+New verified research is **16.600815157283 minutes**; **73.399184842717 minutes**
+remain to P3-05's Research90 floor. No prior unverified duration was credited.
+P3-N01 remains NOT YET SUPPORTED; P3-06 and later gates are not started.

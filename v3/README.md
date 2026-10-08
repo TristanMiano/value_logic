@@ -102,7 +102,11 @@ paid-computation policy or final experiment has been established. P3-04 now supp
 It covers typed structural changes, explicitly exceptional paired-support
 counterpossibles, ranked selection, all-optimum coverage and task bounds.
 The original lost execution archives are not represented as recovered.
-P3-05 is next and unstarted; the contribution obligation remains
+P3-05 is **in progress** with a [new transport reconstruction](derivations/05_counterfactual_transport.md)
+and [saved source, evidence and clocks](work_logs/P3_05_2026-10-08_S2.md).
+The prior snapshot was empty; its earlier duration remains unverified. New measured
+research is 16.600815157283 minutes, leaving 73.399184842717
+minutes to Research90. P3-06 is unstarted; the contribution obligation remains
 **NOT YET SUPPORTED**.
 
 ## Workspace

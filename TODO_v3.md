@@ -14,13 +14,18 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **381.752577811067 minutes**;
-**578.247422188933 minutes** remain to the 960-minute floor.
+Including the new P3-05 reconstruction checkpoint, phase-three qualifying research
+is **398.353392968350 minutes**;
+**561.646607031650 minutes** remain to the 960-minute floor.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
 The [first 240-minute checkpoint](v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md)
 is assessed at this task boundary with its actual overshoot.
-**Next: P3-05 — counterfactual dependence and proof reuse, unstarted.**
+**Active: P3-05 — counterfactual dependence and proof reuse, IN PROGRESS.**
+The [new reconstruction](v3/work_logs/P3_05_2026-10-08_S2.md) preserves
+**16.600815157283 verified research minutes**, with
+**73.399184842717 minutes** remaining to Research90.
+The prior empty snapshot supplies no verifiable research time; no old credit is invented.
 Phase two remains complete; P3-B–D remain unattempted. P3-N01 remains
 **NOT YET SUPPORTED**. All executable evidence remains development; no final
 challenge is frozen or exposed. The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)
