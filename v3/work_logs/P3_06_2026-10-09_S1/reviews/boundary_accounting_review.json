@@ -1,0 +1,296 @@
+{
+  "schema": "value_logic.p306.boundary_accounting_review.v1",
+  "reviewer": "ChatGPT (GPT-6 Astra Pro), /root/p306_boundary_audit",
+  "task": "P3-06",
+  "attempt": "P3-06-R1",
+  "session": "2026-10-09-S1",
+  "base_commit": "646f9ece1a2d57eb2029fd27f8df9d9ceb54f2f7",
+  "verdict": "PASS",
+  "unresolved_operational_findings": [],
+  "basis": "Focused nonblind review of finalized stopped records. The historical observation timestamps are read from preserved source files; this review did not observe or recreate those intervals.",
+  "scope": [
+    "exact accounting reconciliation",
+    "historical ledger byte preservation and append identity",
+    "current project boundary status",
+    "six-file scientific snapshot byte integrity"
+  ],
+  "excluded_work": [
+    "new research",
+    "scientific re-audit",
+    "test execution",
+    "clock operation",
+    "gate attempt",
+    "publication or final ZIP verification"
+  ],
+  "principal_research_credit_added_ns": 0,
+  "principal_engaged_credit_added_ns": 0,
+  "review_effort_disposition": "unmeasured after the recorded principal stop; no duration inferred",
+  "clock": {
+    "stopped": true,
+    "state": null,
+    "runtime": "linux-P3-06-S1:a3f9331d-c233-42cd-a67e-4f96954fd551",
+    "recorded_start_utc": "2026-10-09T02:20:27.607542+00:00",
+    "recorded_end_utc": "2026-10-09T04:10:27.875576+00:00",
+    "first_monotonic_ns": 4109196635083,
+    "last_monotonic_ns": 10709464671017,
+    "clock_records": 42,
+    "raw_segments": 27,
+    "effective_segments": 28,
+    "elapsed_span_ns": 6600268035934,
+    "maximum_credited_observation_gap_ns": 510626744164
+  },
+  "accounting": {
+    "research_ns": 5412656302543,
+    "research_minutes": "90.210938375717",
+    "total_engaged_ns": 5763653364154,
+    "total_engaged_minutes": "96.060889402567",
+    "category_ns": {
+      "D": 2992110864778,
+      "E": 1916243316404,
+      "L": 504302121361,
+      "unmeasured": 792957820936,
+      "recovery": 43656850844,
+      "O": 350997061611
+    },
+    "lane_research_ns": {
+      "R": 3148745355359,
+      "X": 2263910947184
+    },
+    "lane_research_minutes": {
+      "R": "52.479089255983",
+      "X": "37.731849119733"
+    },
+    "prior_phase_research_ns": 28305688873844,
+    "prior_phase_measured_engaged_ns": 33258088654962,
+    "phase_research_ns": 33718345176387,
+    "phase_research_minutes": "561.972419606450",
+    "phase_measured_engaged_ns": 39021742019116,
+    "task_floor_margin_ns": 12656302543,
+    "task_remaining_floor_ns": 0,
+    "phase_remaining_floor_ns": 23881654823613,
+    "phase_remaining_floor_minutes": "398.027580393550",
+    "checkpoint_480_overshoot_ns": 4918345176387,
+    "checkpoint_480_overshoot_minutes": "81.972419606450",
+    "historical_recredit_ns": 0,
+    "parallel_reviewer_credit_ns": 0
+  },
+  "exclusions": {
+    "corrections": [
+      {
+        "id": "P3-06-R1-context-recovery-1",
+        "raw_original_mode": "E",
+        "effective_mode": "unmeasured",
+        "start_monotonic_ns": 5840853678887,
+        "end_monotonic_ns": 6098796914225,
+        "excluded_ns": 257943235338
+      },
+      {
+        "id": "P3-06-R1-context-recovery-2",
+        "raw_original_mode": "D",
+        "effective_mode": "unmeasured",
+        "start_monotonic_ns": 8282827524581,
+        "end_monotonic_ns": 8561431849017,
+        "excluded_ns": 278604324436
+      },
+      {
+        "id": "P3-06-R1-context-recovery-3",
+        "raw_original_mode": "D",
+        "effective_mode": "unmeasured",
+        "start_monotonic_ns": 10004641181098,
+        "end_monotonic_ns": 10226894152266,
+        "excluded_ns": 222252971168
+      }
+    ],
+    "corrections_total_ns": 758800530942,
+    "raw_unmeasured_ns": 34157289994,
+    "effective_unmeasured_ns": 792957820936,
+    "recovery_ns": 43656850844,
+    "total_zero_credit_exclusion_ns": 836614671780,
+    "post_stop_tail": "Unmeasured, with zero additional research or engaged credit; no duration inferred."
+  },
+  "ledger": {
+    "base_sha256": "8bfb7af2a22551ee18e35b144661dd2e1bf27713027336c4bda6d6ab17a8df4c",
+    "base_bytes": 120635,
+    "append_sha256": "a4d6de284de3e8c4c70e52828f5782c53a60e4733398dbd9310ffcdd3ce51b6c",
+    "append_bytes": 12358,
+    "append_rows": 28,
+    "result_sha256": "6bcac52c02ed1a154646422352e2bdd3b66d734a808e118cac5b697c85503bf4",
+    "base_rows": 291,
+    "result_rows": 319,
+    "result_bytes": 132993,
+    "append_has_header": false,
+    "exact_base_plus_append": true,
+    "new_duplicate_intervals": 0,
+    "new_overlaps_with_each_other_or_base": 0,
+    "phase_two_sha256": "5c71a4727f1cb7e03565f1c495b0c63b351863583120f0ec5684aca48bd122c6"
+  },
+  "checks": {
+    "raw_positive_exact_durations": true,
+    "raw_continuous_no_overlap": true,
+    "raw_no_duplicate_intervals": true,
+    "effective_positive_exact_durations": true,
+    "effective_continuous_no_overlap": true,
+    "effective_no_duplicate_intervals": true,
+    "clocks_unique_strict_order": true,
+    "all_interval_endpoints_observed": true,
+    "raw_intervals_match_clock_transitions": true,
+    "closed_stop_and_null_state": true,
+    "dispositions_unique_observed_nonoverlapping": true,
+    "effective_is_exact_disposition_reconstruction": true,
+    "actuals_embeds_exact_effective_segments": true,
+    "category_and_lane_sums": true,
+    "lane_scope": true,
+    "exclusion_reconciliation": true,
+    "exact_historical_byte_prefix_and_one_append": true,
+    "ledger_declared_hashes_and_lengths": true,
+    "ledger_intervals_match_effective": true,
+    "ledger_credit_allocation": true,
+    "new_ledger_no_duplicate_ids": true,
+    "new_ledger_no_overlap_prior_or_new": true,
+    "prior_and_phase_exact_credit_sums": true,
+    "task_floor_phase_remaining_and_480_overshoot": true,
+    "no_historical_or_parallel_credit": true,
+    "plan_states_and_unchanged_prior_tasks_gates": true,
+    "plan_exact_progress_and_checkpoint": true,
+    "only_five_expected_tracked_changes": true,
+    "root_readme_and_phase_two_ledger_unchanged": true,
+    "six_snapshot_hashes_and_only_three_main_prose_changes": true
+  },
+  "status": {
+    "complete_tasks": [
+      "P3-01",
+      "P3-02",
+      "P3-03",
+      "P3-04",
+      "P3-05",
+      "P3-06"
+    ],
+    "next_task": "P3-07",
+    "next_task_status": "unstarted",
+    "P3-A": "passed at restricted-representation readiness scope",
+    "P3-B": "unattempted",
+    "P3-C": "unattempted",
+    "P3-D": "unattempted",
+    "P3-N01": "NOT YET SUPPORTED",
+    "experimental_freeze_created": false,
+    "final_evaluation_exposed": false,
+    "active_session": null,
+    "phase_status": "research_in_progress",
+    "assessed_checkpoint_minutes": 480,
+    "next_checkpoint_minutes": 960,
+    "current_status_sources_agree": true,
+    "status_sources": [
+      "TODO_v3.md",
+      "v3/plan.v1.json",
+      "v3/README.md",
+      "v3/claim_ledger.md",
+      "v3/derivations/06_cost_forecast_refinement.md",
+      "v3/work_logs/P3_06_2026-10-09_S1/readiness_audit.md",
+      "v3/work_logs/P3_06_2026-10-09_S1.md",
+      "v3/work_logs/P3_06_2026-10-09_S1/checkpoint_480.md"
+    ],
+    "historical_sections": "Earlier dated status sections remain historical; current headers and the new closing sections provide the present state."
+  },
+  "tracked_boundary": {
+    "changed_paths": [
+      "TODO_v3.md",
+      "v3/README.md",
+      "v3/claim_ledger.md",
+      "v3/plan.v1.json",
+      "v3/time_ledger.csv"
+    ],
+    "exactly_expected": true,
+    "root_readme_unchanged": true,
+    "v2_tracked_files_unchanged": true,
+    "p3_01_through_p3_05_tracked_artifacts_unchanged": true,
+    "prior_plan_chunks_and_gates_unchanged": true
+  },
+  "scientific_snapshot": {
+    "manifest": "v3/work_logs/P3_06_2026-10-09_S1/reviews/final_scientific_snapshot/manifest.json",
+    "six_hashes_match_snapshot_and_existing_scientific_review": true,
+    "files": [
+      {
+        "path": "v3/derivations/06_cost_forecast_refinement.md",
+        "declared_and_verified_snapshot_sha256": "b79eecdea706c59aa5d003075c5ca1d620e5d14264d010529f9b4c7410c2eb4b",
+        "current_sha256": "4e4d249bd082a480813dd300bc8f9104638402ae1e8f022830ce3d9f562e5452",
+        "current_equals_snapshot": false
+      },
+      {
+        "path": "v3/derivations/06_price_replay.md",
+        "declared_and_verified_snapshot_sha256": "563cca0d66a8f9f2e34728d1eabcf3e9fe6f39eac1431c18529285fa325130d5",
+        "current_sha256": "563cca0d66a8f9f2e34728d1eabcf3e9fe6f39eac1431c18529285fa325130d5",
+        "current_equals_snapshot": true
+      },
+      {
+        "path": "v3/derivations/06_calibration_scope.md",
+        "declared_and_verified_snapshot_sha256": "299d9dd1b2209a5f3f06e6ee4ddf714745377aa03e4557b0762bd81994716861",
+        "current_sha256": "299d9dd1b2209a5f3f06e6ee4ddf714745377aa03e4557b0762bd81994716861",
+        "current_equals_snapshot": true
+      },
+      {
+        "path": "v3/derivations/06_bria_boundary.md",
+        "declared_and_verified_snapshot_sha256": "ff7c4be05de6296f096e6d87cfec7533fd8dc5e6f28ded00918fd2119b163597",
+        "current_sha256": "ff7c4be05de6296f096e6d87cfec7533fd8dc5e6f28ded00918fd2119b163597",
+        "current_equals_snapshot": true
+      },
+      {
+        "path": "v3/derivations/06_capital_comparison.md",
+        "declared_and_verified_snapshot_sha256": "8791ca2e3d587b10562ccef3fe7dffd9c5e08ce8640bc0a6972ffeabbedf0a18",
+        "current_sha256": "8791ca2e3d587b10562ccef3fe7dffd9c5e08ce8640bc0a6972ffeabbedf0a18",
+        "current_equals_snapshot": true
+      },
+      {
+        "path": "v3/literature/06_forecasting_sources.md",
+        "declared_and_verified_snapshot_sha256": "25cda0be11236ec9e249f2e9d64b129949f7861cdaf966a907ecf2955facfb43",
+        "current_sha256": "25cda0be11236ec9e249f2e9d64b129949f7861cdaf966a907ecf2955facfb43",
+        "current_equals_snapshot": true
+      }
+    ],
+    "current_main_exact_replacements": [
+      {
+        "old": "Status: **IN PROGRESS — reconstructed and extended development candidate**.",
+        "new": "Status: **COMPLETE at the declared finite cost-forecast task scope**."
+      },
+      {
+        "old": "recovery and eventual closure. The preserved October 8 addendum and its exact",
+        "new": "recovery and measured closure. The preserved October 8 addendum and its exact"
+      },
+      {
+        "old": "It also proves CF-17: coordinated weight/cost-unit changes preserve forecast",
+        "new": "The repricing companion also proves CF-17: coordinated weight/cost-unit changes preserve forecast"
+      }
+    ],
+    "all_other_five_current_files_identical": true,
+    "scientific_conclusions_reassessed": false,
+    "historical_source_limitation": "The already reported unavailable historical whole-draft hash is not repaired or reclassified by this byte-integrity review."
+  },
+  "input_sha256": {
+    "v3/work_logs/P3_06_2026-10-09_S1/actuals.json": "7c2ed54c376431fac6dc6bfc55bc87961d3e0c7d7e27f281b3ed114e6916f09e",
+    "v3/work_logs/P3_06_2026-10-09_S1/effective_segments.jsonl": "9235e93c9181d984c85ab8a659b9d94f97a9e0a9c4843598204dac916b4aaf97",
+    "v3/work_logs/P3_06_2026-10-09_S1/segments.jsonl": "4df86a6342eb442f05a8bbb06388a1c6503d03a1e1f8ba991bac5269b40fe43f",
+    "v3/work_logs/P3_06_2026-10-09_S1/clocks.jsonl": "b30144077bcb2b1751b8c2b29cfe50b522c66101e3ec8b7e53b85b3aae171664",
+    "v3/work_logs/P3_06_2026-10-09_S1/clock_dispositions.jsonl": "c0b21cefd805806d98968507eb08ec2c43ccbcb40c9716bf8c21d133d4f76146",
+    "v3/work_logs/P3_06_2026-10-09_S1/clock_state.json": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+    "v3/work_logs/P3_06_2026-10-09_S1/ledger_append.csv": "a4d6de284de3e8c4c70e52828f5782c53a60e4733398dbd9310ffcdd3ce51b6c",
+    "v3/work_logs/P3_06_2026-10-09_S1/accounting_base.json": "e9f4a3970206b99d1a43c765f5aac92cd13b78ec0cb7521bc8148c45e135fabd",
+    "v3/work_logs/P3_06_2026-10-09_S1/checkpoint_480.md": "0aa003d6d50d0822cc01bfd8e6404e25772897125e3e91cf7c58a01b340c7456",
+    "v3/work_logs/P3_06_2026-10-09_S1/readiness_audit.md": "94a5f2fa4d1bc89d3955c28aae5454cb72d2da435a4bedd3d79df44808821000",
+    "v3/work_logs/P3_06_2026-10-09_S1/reviews/final_scientific_snapshot/manifest.json": "0a61056d82d80cd3a23ecccd99f327a4934ecc505a191a7347d9155edd61cf7b",
+    "v3/work_logs/P3_06_2026-10-09_S1/reviews/final_scientific_integration_review.md": "4f1b58911e7dc9083c0e453f2d07138f489a0ec060dacbcf08b1f7684e0aaadd",
+    "v3/time_ledger.csv": "6bcac52c02ed1a154646422352e2bdd3b66d734a808e118cac5b697c85503bf4",
+    "TODO_v3.md": "30f9e527c3b6f37773faab997d54f180408eefead8da5d33f51130f04efe9307",
+    "v3/README.md": "5af0cd5356d763a2f2b0bf300965e41bb5663e73c95705d9481371a4d0ee3e85",
+    "v3/claim_ledger.md": "e6fbccbe558dd24614a32c87ea1db7d26a6e0db8c5c5810d17e670cb3e35efff",
+    "v3/plan.v1.json": "1064893a47e7e21bacbbaa9c107920a8affa03aed5fc7a9b969b460e6bc91cf3",
+    "v3/work_logs/P3_06_2026-10-09_S1.md": "94bd02d53046282cf35b0683f7f17e1e689ea020d8ff51e62db64ad87b911aad",
+    "README.md": "e19ada77c57911d2cc5d6fee8c5189ff1836aaa1cf0c8108d58559cb42cdb948",
+    "v2/time_ledger.csv": "5c71a4727f1cb7e03565f1c495b0c63b351863583120f0ec5684aca48bd122c6"
+  },
+  "base_git_blob_sha256": {
+    "v3/time_ledger.csv": "8bfb7af2a22551ee18e35b144661dd2e1bf27713027336c4bda6d6ab17a8df4c",
+    "v3/plan.v1.json": "4eff0b011677dbf81767b8039431cf0f7be2d54aba30ee61deeef6d934f1c4b2",
+    "README.md": "e19ada77c57911d2cc5d6fee8c5189ff1836aaa1cf0c8108d58559cb42cdb948",
+    "v2/time_ledger.csv": "5c71a4727f1cb7e03565f1c495b0c63b351863583120f0ec5684aca48bd122c6"
+  },
+  "output_scope": "Only reviews/boundary_accounting_review.md and reviews/boundary_accounting_review.json were created by this reviewer."
+}

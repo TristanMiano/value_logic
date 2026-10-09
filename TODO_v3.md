@@ -3,7 +3,7 @@
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
 
-**Status: P3-01–05 complete at their declared task scopes.**
+**Status: P3-01–06 complete at their declared task scopes.**
 P3-01 supplies the questions and comparison contract; P3-02 supplies the
 [finite probability-information analysis](v3/derivations/02_probability_information.md).
 P3-03 supplies a [finite bounded uncertainty construction](v3/derivations/03_logical_uncertainty.md)
@@ -14,17 +14,23 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **471.761481230733 minutes**;
-**488.238518769267 minutes** remain to the 960-minute floor.
+Phase-three qualifying research is **561.972419606450 minutes**;
+**398.027580393550 minutes** remain to the 960-minute floor.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
 The [first 240-minute checkpoint](v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md)
-is assessed at this task boundary with its actual overshoot.
+was assessed at the P3-03 boundary with its actual overshoot.
 **P3-05 is COMPLETE at finite counterfactual transport and checked reuse scope.**
 [Closing S3 record](v3/work_logs/P3_05_2026-10-08_S3.md): 73.408088262383 new research
 minutes; 90.008903419667 verified minutes across S2/S3. Prior missing work
-remains unverified, with no duplicate credit. **Next: P3-06 — sequential cost
-forecasts, unstarted.**
+remains unverified, with no duplicate credit.
+**P3-06 is COMPLETE at finite scalar cost-forecast, action, delay and repricing
+scope**, with **90.210938375717 new measured research minutes** and no historical
+P3-06 credit. The [closing record](v3/work_logs/P3_06_2026-10-09_S1.md) preserves
+the addendum and its evidence, repaired versions, strong ordinary comparisons
+and the exact Research90 audit. The [480-minute checkpoint](v3/work_logs/P3_06_2026-10-09_S1/checkpoint_480.md)
+is assessed at this boundary with its actual overshoot.
+**Next: P3-07 — which computations are worth paying for, unstarted.**
 Phase two remains complete; P3-B–D remain unattempted. P3-N01 remains
 **NOT YET SUPPORTED**. All executable evidence remains development; no final
 challenge is frozen or exposed. The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)
@@ -208,7 +214,7 @@ performance superiority are separate claims and are not completion requirements.
   hypothetical outcome and call that an inferred dependency. Artifact:
   `v3/derivations/05_counterfactual_transport.md`.
 
-- [ ] **P3-06 — sequential refinement of cost forecasts. Research90.**
+- [x] **P3-06 — sequential refinement of cost forecasts. Research90.**
 
   Define an implementable candidate update scheme for a declared family of
   mathematical claims and loss queries. Distinguish estimates from checked
@@ -336,9 +342,9 @@ phase. Prospective replanning can replace an unstarted task with a better
 floor, accepted obligations and the abandoned alternative's record.
 
 **Active repair queue: empty. P3-N01 is an open contribution-development
-obligation, not a detected defect. P3-01–03 are complete at their declared
+obligation, not a detected defect. P3-01–06 are complete at their declared
 scopes. P3-A has passed at restricted-representation readiness scope.
-Next: P3-04, unstarted; P3-B–D remain unattempted.**
+Next: P3-07, unstarted; P3-B–D remain unattempted.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original
 register. Neither is required or activated by this plan. General neural

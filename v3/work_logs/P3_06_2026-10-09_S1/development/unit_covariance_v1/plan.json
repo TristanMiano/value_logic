@@ -1,0 +1,13 @@
+{
+  "schema": "value_logic.p306.unit_covariance.v1",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "stage": "development_not_frozen",
+  "question": "Do coordinated weight/cost-unit changes preserve exact forecast selection while transporting the right numerical settings and bounds?",
+  "cases": ["balanced_nonshortcut_null", "delayed_pending_tail"],
+  "prefix_issue_ticks": 16,
+  "profiles": [{"name":"weight_unit","u":"3/2","v":"1","offset":false},{"name":"cost_unit_and_offset","u":"1","v":"7/3","offset":true},{"name":"combined","u":"4","v":"1/4","offset":true}],
+  "offset": "common outcome rows (1000+t, -2000+2*t) when enabled",
+  "polynomial_transport": "w'=u*w; c'=v*c+g; eta'=v*eta; gamma'=gamma/v; delta'=u*u*delta",
+  "capital_transport": "wmax'=u*wmax; Dmax'=v*Dmax; same horizon and dimensionless capital numerical request",
+  "excluded_claims": ["fixed-settings arbitrary repricing invariance", "equal arithmetic resource use", "fixed-bit square-root enclosure equality", "new population or final benchmark"]
+}

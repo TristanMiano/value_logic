@@ -1,0 +1,76 @@
+{
+  "schema": "value_logic.p306.receipt_pattern_validation.v1",
+  "scope": "Receipt-path regex property only; not a full JSON-Schema implementation test.",
+  "result": "PASS",
+  "schema_file": "v3/work_logs/P3_06_2026-10-09_S1/publication/manifest.schema.json",
+  "schema_sha256_before": "ee71a7336d5ae478868b5e42ad82580ff6d7b505b3e6c670e162ad989bf1ccf4",
+  "schema_sha256_after": "ee71a7336d5ae478868b5e42ad82580ff6d7b505b3e6c670e162ad989bf1ccf4",
+  "decoded_pattern": "^v3/work_logs/P3_06_2026-10-09_S1/publication/[^\\\\]+\\.json$",
+  "schema_modified": false,
+  "functional_bug_found": false,
+  "engines": [
+    "Python re",
+    "ECMAScript RegExp in functions.exec V8"
+  ],
+  "cases": [
+    {
+      "name": "canonical",
+      "path": "v3/work_logs/P3_06_2026-10-09_S1/publication/applied_package.json",
+      "expected": true,
+      "python_re_actual": true,
+      "ecmascript_actual": true
+    },
+    {
+      "name": "nested",
+      "path": "v3/work_logs/P3_06_2026-10-09_S1/publication/receipts/applied_package.json",
+      "expected": true,
+      "python_re_actual": true,
+      "ecmascript_actual": true
+    },
+    {
+      "name": "missing_literal_dot",
+      "path": "v3/work_logs/P3_06_2026-10-09_S1/publication/applied_packagexjson",
+      "expected": false,
+      "python_re_actual": false,
+      "ecmascript_actual": false
+    },
+    {
+      "name": "wrong_extension",
+      "path": "v3/work_logs/P3_06_2026-10-09_S1/publication/applied_package.jsonx",
+      "expected": false,
+      "python_re_actual": false,
+      "ecmascript_actual": false
+    },
+    {
+      "name": "uppercase_extension",
+      "path": "v3/work_logs/P3_06_2026-10-09_S1/publication/applied_package.JSON",
+      "expected": false,
+      "python_re_actual": false,
+      "ecmascript_actual": false
+    },
+    {
+      "name": "backslash",
+      "path": "v3/work_logs/P3_06_2026-10-09_S1/publication/receipts\\applied_package.json",
+      "expected": false,
+      "python_re_actual": false,
+      "ecmascript_actual": false
+    },
+    {
+      "name": "wrong_directory",
+      "path": "v3/work_logs/P3_06_2026-10-09_S1/publication2/applied_package.json",
+      "expected": false,
+      "python_re_actual": false,
+      "ecmascript_actual": false
+    },
+    {
+      "name": "absolute",
+      "path": "/v3/work_logs/P3_06_2026-10-09_S1/publication/applied_package.json",
+      "expected": false,
+      "python_re_actual": false,
+      "ecmascript_actual": false
+    }
+  ],
+  "helper_sha256_unchanged": "56a14c3e94fee64a034c34d330b7c135c60fe5e0db635227dc8b3f73a365fd5a",
+  "powershell_sha256_unchanged": "37bec280b6eabb424179dd6b026cf9b70f891e2f65588fff773a30c01c31dadc",
+  "principal_research_credit_seconds": 0
+}

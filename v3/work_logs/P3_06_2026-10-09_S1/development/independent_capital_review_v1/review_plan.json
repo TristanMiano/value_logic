@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-10-09T03:16:19.053945+00:00",
+  "reviewer": "ChatGPT (GPT-6 Astra Pro), independent implementation reviewer",
+  "principal_research90_seconds": 0,
+  "status": "PREREGISTERED_DEVELOPMENT_AUDIT",
+  "source_files": [
+    {
+      "source": "v3/checks/06_capital_forecasting.py",
+      "snapshot": "v3/work_logs/P3_06_2026-10-09_S1/development/independent_capital_review_v1/source_snapshot/06_capital_forecasting.py",
+      "sha256": "376ad1c9b755845d3bce7e0d78ccfc281dad2091cfeb602dbe295b7a73583583"
+    },
+    {
+      "source": "v3/checks/06_defensive_forecasting.py",
+      "snapshot": "v3/work_logs/P3_06_2026-10-09_S1/development/independent_capital_review_v1/source_snapshot/06_defensive_forecasting.py",
+      "sha256": "b66af7ec64b7e690aaa15c0901b2ccb220f93f97962052607481ddd7ae240e07"
+    }
+  ],
+  "scope": [
+    "Independent rational exp/log enclosure references and boundary inputs",
+    "Exact capital/log/score identity reconstruction and counterfactual binary transitions",
+    "Input/cache/immutable-state/mutation-on-failure probes",
+    "Requested allowance versus retained actual allowance under cap exhaustion and large prospective horizons"
+  ],
+  "exclusions": [
+    "No finite test proves the real exponential enclosure; the written series/rounding proof is also reviewed",
+    "No floating-point certificate",
+    "No hard transient bit/CPU bound",
+    "No production, history, gate, phase or principal-clock edits"
+  ]
+}

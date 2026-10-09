@@ -2,7 +2,7 @@
   "schema_version": 1,
   "phase": 3,
   "status": "research_in_progress",
-  "next_task": "P3-06",
+  "next_task": "P3-07",
   "phase_research_floor_minutes": 960,
   "qualifying_modes": [
     "D",
@@ -153,7 +153,7 @@
     {
       "id": "P3-06",
       "title": "sequential cost forecasts",
-      "status": "unstarted",
+      "status": "complete",
       "research_floor_minutes": 90,
       "mode_forecast_minutes": {
         "D": 60,
@@ -161,7 +161,31 @@
         "E": 15
       },
       "central_research_minutes": 90,
-      "high_research_minutes": 180
+      "high_research_minutes": 180,
+      "attempt_id": "P3-06-R1",
+      "session_forecast": "v3/work_logs/P3_06_2026-10-09_S1/forecast.json",
+      "principal_artifact": "v3/derivations/06_cost_forecast_refinement.md",
+      "recovery_record": "v3/work_logs/P3_06_2026-10-09_S1/recovery/recovery_inventory.json",
+      "actuals": "v3/work_logs/P3_06_2026-10-09_S1/actuals.json",
+      "research_ns": 5412656302543,
+      "research_floor_satisfied": true,
+      "remaining_research_floor_ns": 0,
+      "closure_status": "complete_with_preserved_historical_evidence_limits",
+      "completion_scope": "finite_scalar_cost_forecasting_action_delay_and_repricing_contracts",
+      "readiness_audit": "v3/work_logs/P3_06_2026-10-09_S1/readiness_audit.md",
+      "sessions": [
+        "v3/work_logs/P3_06_2026-10-09_S1.md"
+      ],
+      "companion_artifacts": [
+        "v3/derivations/06_forecast_transport.md",
+        "v3/derivations/06_price_replay.md",
+        "v3/derivations/06_capital_comparison.md",
+        "v3/derivations/06_calibration_scope.md",
+        "v3/derivations/06_bria_boundary.md"
+      ],
+      "implementation": "v3/checks/06_mathematical_forecast_development.py",
+      "implementation_version": "p306-modular-development-v3",
+      "contribution_assessment": "v3/work_logs/P3_06_2026-10-09_S1/contribution_assessment.md"
     },
     {
       "id": "P3-07",
@@ -295,14 +319,14 @@
   "final_evaluation_exposed": false,
   "neural_recurrence_selected": false,
   "active_session": null,
-  "last_completed_session": "v3/work_logs/P3_05_2026-10-08_S3.md",
+  "last_completed_session": "v3/work_logs/P3_06_2026-10-09_S1.md",
   "observed_progress": {
-    "research_ns": 28305688873844,
-    "measured_engaged_ns": 33258088654962,
-    "remaining_floor_ns": 29294311126156,
-    "source": "v3/work_logs/P3_05_2026-10-08_S3/actuals.json",
-    "next_checkpoint_minutes": 480,
-    "evidence_disposition": "P3-05 completed from verified S2/S3 records; lost earlier attempt remains unverified."
+    "research_ns": 33718345176387,
+    "measured_engaged_ns": 39021742019116,
+    "remaining_floor_ns": 23881654823613,
+    "source": "v3/work_logs/P3_06_2026-10-09_S1/actuals.json",
+    "next_checkpoint_minutes": 960,
+    "evidence_disposition": "P3-06 finite scope complete; seven checkpoint members preserved; no historical P3-06 clock credit; P3-N01 not yet supported; P3-07 unstarted."
   },
   "provisional_representation": {
     "id": "P3-A-REP01",
@@ -318,7 +342,14 @@
       "record": "v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md",
       "research_ns": 16770123676163,
       "overshoot_ns": 2370123676163
+    },
+    {
+      "minutes": 480,
+      "assessed_at": "P3-06 close",
+      "record": "v3/work_logs/P3_06_2026-10-09_S1/checkpoint_480.md",
+      "research_ns": 33718345176387,
+      "overshoot_ns": 4918345176387
     }
   ],
-  "last_preserved_session": "v3/work_logs/P3_05_2026-10-08_S3.md"
+  "last_preserved_session": "v3/work_logs/P3_06_2026-10-09_S1.md"
 }

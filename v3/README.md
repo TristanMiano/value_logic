@@ -1,8 +1,8 @@
 # Phase Three: Reasoning About Unresolved Mathematics
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 8, 2026 UTC.
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 9, 2026 UTC.
 
-**P3-01–05 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
+**P3-01–06 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
 minimum of **16 measured hours of research**, with longer work possible.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -109,8 +109,12 @@ and counterpossible front ends, rank-weight robustness and retained proof chains
 The [ordinary-method comparison](derivations/05_resource_comparison.md) retains
 both savings over fresh proof search and faster warm decision-diagram reasoning.
 [Exact S2/S3 records](work_logs/P3_05_2026-10-08_S3.md) give 90.008903419667 research
-minutes. P3-06 is next and unstarted; the contribution obligation remains
-**NOT YET SUPPORTED**.
+minutes. P3-06 is now **complete** at its declared
+[finite cost-forecast scope](derivations/06_cost_forecast_refinement.md).
+The [closing record](work_logs/P3_06_2026-10-09_S1.md) gives **90.210938375717**
+new research minutes. Phase research is **561.972419606450 minutes**, with
+**398.027580393550** remaining to the 960-minute floor. P3-07 is next and
+unstarted; the contribution obligation remains **NOT YET SUPPORTED**.
 
 ## Workspace
 
@@ -128,7 +132,46 @@ minutes. P3-06 is next and unstarted; the contribution obligation remains
 | Representation readiness | [P3-A decision](checkpoints/A_1.md) · [Current contract overlay](checkpoints/A_1.v1.json) |
 | Bounded logical uncertainty | [Construction and duties](derivations/03_logical_uncertainty.md) · [Extensions](derivations/03_refinement_extensions.md) · [Sources](literature/03_bounded_sources.md) · [Kernel](checks/03_bounded_logic.py) |
 | Counterfactual semantics | [Construction](derivations/04_counterfactual_semantics.md) · [Extensions](derivations/04_selection_extensions.md) · [Sources](literature/04_source_contracts.md) · [Replacement code](checks/04_README.md) |
+| Sequential cost forecasts | [Construction and duties](derivations/06_cost_forecast_refinement.md) · [Repricing](derivations/06_price_replay.md) · [Capital comparison](derivations/06_capital_comparison.md) · [Calibration](derivations/06_calibration_scope.md) · [BRIA boundary](derivations/06_bria_boundary.md) |
 | Mathematical Markdown | [Rendering conventions and guard](STYLE.md) |
 | Claims and open obligations | [Claim ledger](claim_ledger.md) |
 | Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |
 | Research records | [P3-01](work_logs/P3_01_2026-10-07_S1.md) · [P3-02](work_logs/P3_02_2026-10-07_S1.md) · [P3-A](work_logs/P3_A_2026-10-07_S1.md) · [P3-03](work_logs/P3_03_2026-10-07_S1.md) |
+
+
+## P3-06 completion — October 9, 2026
+
+The [readiness assessment](work_logs/P3_06_2026-10-09_S1/readiness_audit.md)
+closes the finite task. One issued scalar has exact recorded numerical
+allowances and finite expert, continuous-bin and smooth-action guarantees.
+The declared arithmetic adapter separates forecasts, checked residues,
+admission times and immutable history. Pending labels remain unscored.
+
+The [repricing analysis](derivations/06_price_replay.md) distinguishes rescoring
+old decisions, making new decisions from old estimates and rerunning the
+learning policy. It includes represented-profile and coordinated-unit
+transfers; arbitrary new objectives do not inherit every old certificate.
+The [resource and calibration comparison](derivations/06_calibration_scope.md)
+retains the restricted input premises and stronger ordinary alternatives.
+
+The numerical comparison is unfavorable to a predictive-superiority claim:
+ordinary Brier aggregation beats both polynomial variants on all four full
+development cases, and exact arithmetic has zero Brier loss. The separate
+capital method improves the polynomial scores on four shorter prefixes, with
+mixed results against ordinary aggregation. Some certificates sharpen simple
+bounds, but this is a different question from better predictions.
+The [BRIA witness](derivations/06_bria_boundary.md) separates summable forecast
+errors and bounded actual-path capital from exact coverage; it has optimal
+realized decisions and establishes no practical decision failure.
+
+The [final evidence audit](work_logs/P3_06_2026-10-09_S1/reviews/final_evidence_audit.md)
+preserves historical failures and one unavailable whole-draft source hash;
+its theorem-section snapshot and associated evidence survive. Exact reviewed
+whole-document snapshots are now retained before status edits. No historical
+P3-06 minutes were recovered or inferred. The [480-minute checkpoint](work_logs/P3_06_2026-10-09_S1/checkpoint_480.md)
+is a progress review, not a later gate or a phase-completion decision.
+
+P3-N01 remains **NOT YET SUPPORTED**, as explained in the
+[contribution assessment](work_logs/P3_06_2026-10-09_S1/contribution_assessment.md).
+P3-A remains PASS; P3-B–D remain unattempted. All evidence is development.
+P3-07 has not been started.

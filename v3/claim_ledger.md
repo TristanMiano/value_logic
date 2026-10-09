@@ -1,12 +1,13 @@
 # Phase-three claims and obligations
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 8, 2026 UTC.
-**P3-01–05 are complete at their declared task scopes, with their Research90
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 9, 2026 UTC.
+**P3-01–06 are complete at their declared task scopes, with their Research90
 minima and closing records. P3-A remains PASS at problem and restricted representation
 readiness; P3-B–D remain unattempted. P3-04 closes on separately versioned
 S2 replacement evidence; its original missing run history is not recreated.
 P3-05 is complete at finite transport and checked-reuse scope, with verified
-Research90 and S3 evidence. Next: P3-06, unstarted.
+Research90 and S3 evidence. P3-06 closes at finite forecast/action/delay/repricing
+scope with its observed Research90 and preserved evidence. Next: P3-07, unstarted.
 P3-N01 remains NOT YET SUPPORTED.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
 [task readiness audit](work_logs/P3_03_2026-10-07_S1/readiness_audit.md).
@@ -242,3 +243,37 @@ Only the 46 new S3 ledger rows are appended. **P3-N01 remains NOT YET SUPPORTED*
 P3-06 is unstarted, P3-A stays PASS, and P3-B–D are unattempted. No final evaluation
 is frozen or exposed. The concrete contribution candidate is the finite integration
 and its scoped information/coverage boundaries, not improved logical anticipation.
+
+
+## P3-06 completion — October 9, 2026, S1
+
+**COMPLETE at finite sequential cost-forecast scope.** The
+[main derivation](derivations/06_cost_forecast_refinement.md), its companions,
+[readiness audit](work_logs/P3_06_2026-10-09_S1/readiness_audit.md) and
+[closing record](work_logs/P3_06_2026-10-09_S1.md) delimit support. The CF labels
+index statements and comparisons; they are not seventeen novelty claims.
+
+| Record | Current finding | Evidence and boundary |
+|---|---|---|
+| P3-06/CF-1–3 | One issued scalar satisfies a checked vector-potential inequality, finite supplied-expert weighted Brier regret and finite continuous-tent residual bounds, including actual root allowance. | Hand proof, surviving addendum, independent reconstruction and exact rational modules. Strong ordinary K29-star antecedent; rare bins and normalized rates need their own mass/dispersion conditions. |
+| P3-06/CF-4–6 | An accurate-expert bridge, a hard-action obstruction and a smooth fixed-action bound separate predictive accuracy from action quality. | Conditional proof and saved cases; mixture loss is not a sampled-action guarantee or unrestricted outcome-oracle performance. |
+| P3-06/CF-7 | A prospectively represented finite profile family permits coefficient-norm transfer when resulting regret weights are nonnegative; arbitrary summaries or new schedules do not. | Independent algebra and 63,127-check development probe. Signed calibration algebra remains valid; normalized scores need total weights and bin masses. |
+| P3-06/CF-8–9 | Calibration of randomized reports need not transfer to their mean; quantitative output displacement transports Brier and continuous-test bounds with stated penalties. | Exact witnesses and proof. No arbitrary-test, joint-coherence or BRIA-coverage transfer. |
+| P3-06/CF-10–11 | Native cost normalization and a dyadic bit theorem expose sufficient stake/precision/input conditions and concentration/denominator failures. | Exact proofs and targeted diagnostics. The growing-denominator frequency expert does not meet the fixed-denominator bit premise; no complete CPU/heap bound or paid policy. |
+| P3-06/CF-12 | A separate ordinary exponential-capital construction gives stronger finite-expert regret plus calibration/action controls, with rational exponential/log enclosures and recorded cap behavior. | Independently checked v1.1 implementation; 32-query public prefixes, not the full 128-query population or a certificate for the polynomial algorithm. |
+| P3-06/CF-13–15 | Fixed-table tent readout and theorem-only growing grids have exact scope; established Fermi–Sobolev K29-star supplies stronger fixed-Lipschitz residual order. | Hand reconstruction and targeted arithmetic. Fixed-table slope conditions, unimplemented growing grid/tree data structure and finite-recall alternatives remain explicit. |
+| P3-06/CF-16 | Summable scalar errors, constant regret, optimal decisions and bounded normalized-prior actual-path capitals do not imply exact BRIA coverage. | Infinite hand proof and 20,588-check finite fixture. The source already identifies the always-kept-promise requirement. Not a production trajectory, outcome-uniform allowance claim or practical decision-loss witness. |
+| P3-06/CF-17 | Coordinated weight and cost-unit transformations preserve issued forecasts when feature scales, tolerance and capital envelopes are transported. | Exact homogeneity proof and 3,522-check existing-prefix probe. Arbitrary repricing and arithmetic bit costs are not invariant; fixed-grid square-root enclosures need not scale exactly. |
+| P3-06/IMPLEMENTATION | The bounded modular-query adapter commits before answer production/checking and updates only on scheduled admission, with canonical residue caching and immutable versioned reports. | Current adapter v3, scalar v2.1 and capital v1.1; original failures and exact source versions retained. Local receipt integrity does not authenticate an arbitrary proof producer. |
+| P3-06/COMPARISON | Ordinary Brier AA beats both polynomial variants on all four full development cases; exact arithmetic has zero Brier loss. Capital improves both polynomial variants on the four shorter prefixes, with mixed AA comparisons. | Saved common-population scores and resource records. Some finite certificates improve elementary envelopes, but no prediction or runtime superiority is established. P3-05's negative six-family speed finding is unchanged. |
+| P3-06/EVIDENCE | Final scientific review has no unresolved current defect; the final integrity scan passes 6,705 checks with a declared historical whole-draft limitation. | Six exact reviewed manuscripts preserved, source-bound runs, seven original checkpoint members intact; old failures and missing earlier learner/96-query history remain explicit. Counts are not independent discoveries. |
+| P3-H01/H04 | Restricted scalar anticipation through supplied experts, continuous-test calibration, finite expert regret and delayed settled-feedback duties are now supported. | **PROVED/IMPLEMENTED AT DECLARED SCOPES.** Finite caching alone can yield eventual exactness under eventual admission. General mathematical learning, full LI/BRIA, acquired-expert discovery and paid computation remain unestablished. |
+| P3-N01 | **NOT YET SUPPORTED.** Candidate modest adaptation/synthesis remains an evidence obligation. | [Assessment](work_logs/P3_06_2026-10-09_S1/contribution_assessment.md) identifies exact additions, strong antecedents and missing magnitude evidence. Neither equality with a shared algorithm nor negative performance alone decides every synthesis claim. |
+
+Research90 is satisfied by **90.210938375717 new observed research minutes**;
+zero historical or parallel-review time is credited. The exact
+[actuals](work_logs/P3_06_2026-10-09_S1/actuals.json) control rounding and ledger
+append identities. Phase research is **561.972419606450 minutes**, leaving
+**398.027580393550 minutes** to the 960-minute floor. The 480-minute progress
+review retains its overshoot. P3-A remains PASS; P3-B–D remain unattempted.
+P3-07 remains unstarted. No final challenge is frozen or exposed.

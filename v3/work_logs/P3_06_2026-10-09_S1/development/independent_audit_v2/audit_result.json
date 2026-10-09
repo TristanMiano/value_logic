@@ -1,0 +1,4467 @@
+{
+  "status": "PASS",
+  "checks": 7026,
+  "checks_by_group": {
+    "legacy_prediction_identity": 160,
+    "saved_result_identity": 160,
+    "legacy_accumulator_identity": 160,
+    "rejected_call_transactional": 110,
+    "eager_constructor_validation": 22,
+    "caller_configuration_detached": 1,
+    "action_table_detached": 1,
+    "action_table_validation": 7,
+    "no_live_copy_handle": 1,
+    "pending_mapping_detached": 1,
+    "copy_snapshot_historical": 1,
+    "owned_coverage": 1,
+    "independent_sqrt_enclosure": 28,
+    "sqrt_enclosure_minimality": 28,
+    "sufficient_bisection_minimality": 10,
+    "decision_features_reconstructed": 160,
+    "certified_root_contract": 160,
+    "decision_both_outcomes_potential": 320,
+    "score_lipschitz_probe": 2912,
+    "smooth_decision_slack": 160,
+    "direct_action_loss_accounting": 160,
+    "decision_regret_certificate": 320,
+    "common_offset_prediction_invariance": 6,
+    "common_offset_absolute_cost": 1,
+    "delayed_enclosure_reconstructed": 144,
+    "delayed_residual_reconstructed": 144,
+    "settled_coverage_reconstructed": 144,
+    "precision_tightens_enclosure": 144,
+    "no_unadmitted_history": 1560
+  },
+  "rejections": [
+    {
+      "name": "Forecaster-issue-0-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Query identity must be new and nonempty."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-0-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Pool query identity must be new and nonempty."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-0-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Pool query identity must be new and nonempty."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-1-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Query identity must be new and nonempty."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-1-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Pool query identity must be new and nonempty."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-1-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Pool query identity must be new and nonempty."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-2-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Query identity must be new and nonempty."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-2-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Pool query identity must be new and nonempty."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-2-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Pool query identity must be new and nonempty."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-3-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Provide exactly the declared expert mapping."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-3-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Provide exactly the declared expert mapping."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-3-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Provide exactly the declared expert mapping."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-4-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Provide exactly the declared expert mapping."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-4-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Provide exactly the declared expert mapping."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-4-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Provide exactly the declared expert mapping."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-5-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Provide exactly the declared expert mapping."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-5-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Provide exactly the declared expert mapping."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-5-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Provide exactly the declared expert mapping."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-6-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Expert probabilities must lie in [0,1]."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-6-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Expert probabilities must lie in [0,1]."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-6-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Expert probabilities must lie in [0,1]."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-7-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Expert probabilities must lie in [0,1]."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-7-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Expert probabilities must lie in [0,1]."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-7-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Expert probabilities must lie in [0,1]."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-8-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-8-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-8-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-9-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-9-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-9-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-10-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-10-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-10-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-11-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-11-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-11-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-12-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-12-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-12-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-13-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Invalid finite rational."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-13-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Invalid finite rational."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-13-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Invalid finite rational."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-14-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-14-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-14-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-15-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-15-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-15-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-16-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-16-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-16-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction; no floats/bools."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-17-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Root cap must be None or a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-17-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Root cap must be None or a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-17-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Root cap must be None or a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-18-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Root cap must be None or a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-18-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Root cap must be None or a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-18-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Root cap must be None or a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-19-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Root cap must be None or a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-19-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "Root cap must be None or a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-19-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "Root cap must be None or a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-issue-20-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "The declared decision feature mode requires matching action inputs."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-20-busy=False",
+      "error": {
+        "type": "ValueError",
+        "message": "The declared decision feature mode requires matching action inputs."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-issue-20-busy=True",
+      "error": {
+        "type": "ValueError",
+        "message": "The declared decision feature mode requires matching action inputs."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-label-None",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-label--1",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-label-2",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-label-False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-label-True",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-label-1.0",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-label-Fraction(1, 1)",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-label-'1'",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-scope-'wrong-version'",
+      "error": {
+        "type": "ValueError",
+        "message": "Feedback query and scope must match the outstanding forecast."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-scope-''",
+      "error": {
+        "type": "ValueError",
+        "message": "Feedback query and scope must match the outstanding forecast."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-scope-7",
+      "error": {
+        "type": "ValueError",
+        "message": "Feedback query and scope must match the outstanding forecast."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-scope-None",
+      "error": {
+        "type": "ValueError",
+        "message": "Feedback query and scope must match the outstanding forecast."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-unknown",
+      "error": {
+        "type": "ValueError",
+        "message": "Feedback query and scope must match the outstanding forecast."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-duplicate",
+      "error": {
+        "type": "ValueError",
+        "message": "Feedback query and scope must match the outstanding forecast."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "Forecaster-reuse",
+      "error": {
+        "type": "ValueError",
+        "message": "Query identity must be new and nonempty."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-label-None",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-label--1",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-label-2",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-label-False",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-label-True",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-label-1.0",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-label-Fraction(1, 1)",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-label-'1'",
+      "error": {
+        "type": "ValueError",
+        "message": "Use an admitted integer binary answer, never an unresolved label."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-scope-'wrong-version'",
+      "error": {
+        "type": "ValueError",
+        "message": "Feedback query and scope must match the outstanding forecast."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-scope-''",
+      "error": {
+        "type": "ValueError",
+        "message": "Feedback query and scope must match the outstanding forecast."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-scope-7",
+      "error": {
+        "type": "ValueError",
+        "message": "Feedback query and scope must match the outstanding forecast."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-scope-None",
+      "error": {
+        "type": "ValueError",
+        "message": "Feedback query and scope must match the outstanding forecast."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-unknown",
+      "error": {
+        "type": "ValueError",
+        "message": "Unknown or already settled pool query."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-duplicate",
+      "error": {
+        "type": "ValueError",
+        "message": "Unknown or already settled pool query."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "DelayedPool-reuse",
+      "error": {
+        "type": "ValueError",
+        "message": "Pool query identity must be new and nonempty."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "immutable-Prediction",
+      "error": {
+        "type": "FrozenInstanceError",
+        "message": "cannot assign to field 'probability'"
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "immutable-Accumulator",
+      "error": {
+        "type": "FrozenInstanceError",
+        "message": "cannot assign to field 'settled'"
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "immutable-Observation",
+      "error": {
+        "type": "FrozenInstanceError",
+        "message": "cannot assign to field 'outcome'"
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "immutable-Settings",
+      "error": {
+        "type": "FrozenInstanceError",
+        "message": "cannot assign to field 'scope'"
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "missing-action-input",
+      "error": {
+        "type": "ValueError",
+        "message": "The declared decision feature mode requires matching action inputs."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "bad-action-type",
+      "error": {
+        "type": "ValueError",
+        "message": "Use a validated immutable ActionTable."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "undeclared-actions",
+      "error": {
+        "type": "ValueError",
+        "message": "The declared decision feature mode requires matching action inputs."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "missing-action-input",
+      "error": {
+        "type": "ValueError",
+        "message": "The declared decision feature mode requires matching action inputs."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "bad-action-type",
+      "error": {
+        "type": "ValueError",
+        "message": "Use a validated immutable ActionTable."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "undeclared-actions",
+      "error": {
+        "type": "ValueError",
+        "message": "The declared decision feature mode requires matching action inputs."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "frozen-copy-snapshot",
+      "error": {
+        "type": "FrozenInstanceError",
+        "message": "cannot assign to field 'pending'"
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "empty-invalid-precision",
+      "error": {
+        "type": "ValueError",
+        "message": "Square-root enclosure precision must be a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "nonempty-invalid-precision",
+      "error": {
+        "type": "ValueError",
+        "message": "Square-root enclosure precision must be a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "empty-invalid-precision",
+      "error": {
+        "type": "ValueError",
+        "message": "Square-root enclosure precision must be a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "nonempty-invalid-precision",
+      "error": {
+        "type": "ValueError",
+        "message": "Square-root enclosure precision must be a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "empty-invalid-precision",
+      "error": {
+        "type": "ValueError",
+        "message": "Square-root enclosure precision must be a nonnegative integer."
+      },
+      "state_unchanged": true
+    },
+    {
+      "name": "nonempty-invalid-precision",
+      "error": {
+        "type": "ValueError",
+        "message": "Square-root enclosure precision must be a nonnegative integer."
+      },
+      "state_unchanged": true
+    }
+  ],
+  "legacy_regression": [
+    {
+      "outcomes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "own_loss": "3103283/4194304"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "own_loss": "12429875/4194304"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "own_loss": "522559/262144"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "own_loss": "802111/262144"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "own_loss": "5530747/4194304"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "own_loss": "13628539/4194304"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "own_loss": "2600587/1048576"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "own_loss": "2877067/1048576"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "own_loss": "3571747/1048576"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "own_loss": "3282979/1048576"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "own_loss": "12681995/4194304"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "own_loss": "9990923/4194304"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "own_loss": "13568307/4194304"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "own_loss": "10705203/4194304"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "own_loss": "696259/262144"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "own_loss": "472003/262144"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "own_loss": "472003/262144"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "own_loss": "696259/262144"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "own_loss": "10705203/4194304"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "own_loss": "13568307/4194304"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "own_loss": "9990923/4194304"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "own_loss": "12681995/4194304"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "own_loss": "3282979/1048576"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "own_loss": "3571747/1048576"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "own_loss": "2877067/1048576"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "own_loss": "2600587/1048576"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "own_loss": "13628539/4194304"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "own_loss": "5530747/4194304"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "own_loss": "802111/262144"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "own_loss": "522559/262144"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "own_loss": "12429875/4194304"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "own_loss": "3103283/4194304"
+    }
+  ],
+  "decision_runs": [
+    {
+      "outcomes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mixed_loss": "800000000000000000027/4",
+      "action_losses": [
+        "800000000000000000025/4",
+        "200000000000000000010"
+      ],
+      "bound_squared": "114463201190678243507/10376293541461622784"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mixed_loss": "800000000000000000035/4",
+      "action_losses": [
+        "800000000000000000033/4",
+        "200000000000000000008"
+      ],
+      "bound_squared": "114463201190678243507/10376293541461622784"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mixed_loss": "200000000000000000007",
+      "action_losses": [
+        "400000000000000000013/2",
+        "800000000000000000041/4"
+      ],
+      "bound_squared": "534428026220152067/40532396646334464"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mixed_loss": "200000000000000000009",
+      "action_losses": [
+        "400000000000000000017/2",
+        "800000000000000000033/4"
+      ],
+      "bound_squared": "534428026220152067/40532396646334464"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mixed_loss": "204800000000000000011629/1024",
+      "action_losses": [
+        "800000000000000000037/4",
+        "200000000000000000013"
+      ],
+      "bound_squared": "2466793694412225281/216172782113783808"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mixed_loss": "204800000000000000010387/1024",
+      "action_losses": [
+        "800000000000000000045/4",
+        "200000000000000000011"
+      ],
+      "bound_squared": "2466793694412225281/216172782113783808"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mixed_loss": "204800000000000000011155/1024",
+      "action_losses": [
+        "400000000000000000019/2",
+        "800000000000000000053/4"
+      ],
+      "bound_squared": "6641975700363655427/648518346341351424"
+    },
+    {
+      "outcomes": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mixed_loss": "204800000000000000011373/1024",
+      "action_losses": [
+        "400000000000000000023/2",
+        "800000000000000000045/4"
+      ],
+      "bound_squared": "6641975700363655427/648518346341351424"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mixed_loss": "204800000000000000008949/1024",
+      "action_losses": [
+        "800000000000000000029/4",
+        "200000000000000000009"
+      ],
+      "bound_squared": "967116616376816187/72057594037927936"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mixed_loss": "204800000000000000006923/1024",
+      "action_losses": [
+        "800000000000000000037/4",
+        "200000000000000000007"
+      ],
+      "bound_squared": "967116616376816187/72057594037927936"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "mixed_loss": "204800000000000000007237/1024",
+      "action_losses": [
+        "400000000000000000015/2",
+        "800000000000000000037/4"
+      ],
+      "bound_squared": "8486379688278200147/648518346341351424"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mixed_loss": "204800000000000000009147/1024",
+      "action_losses": [
+        "400000000000000000019/2",
+        "800000000000000000029/4"
+      ],
+      "bound_squared": "8486379688278200147/648518346341351424"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mixed_loss": "800000000000000000047/4",
+      "action_losses": [
+        "800000000000000000041/4",
+        "200000000000000000012"
+      ],
+      "bound_squared": "2111595343647383611/162129586585337856"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mixed_loss": "800000000000000000039/4",
+      "action_losses": [
+        "800000000000000000049/4",
+        "200000000000000000010"
+      ],
+      "bound_squared": "2111595343647383611/162129586585337856"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mixed_loss": "200000000000000000012",
+      "action_losses": [
+        "400000000000000000021/2",
+        "800000000000000000049/4"
+      ],
+      "bound_squared": "1809073591229079611/162129586585337856"
+    },
+    {
+      "outcomes": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mixed_loss": "200000000000000000010",
+      "action_losses": [
+        "400000000000000000025/2",
+        "800000000000000000041/4"
+      ],
+      "bound_squared": "1809073591229079611/162129586585337856"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mixed_loss": "800000000000000000027/4",
+      "action_losses": [
+        "800000000000000000025/4",
+        "200000000000000000010"
+      ],
+      "bound_squared": "1809073591229079611/162129586585337856"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mixed_loss": "800000000000000000035/4",
+      "action_losses": [
+        "800000000000000000033/4",
+        "200000000000000000008"
+      ],
+      "bound_squared": "1809073591229079611/162129586585337856"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "mixed_loss": "200000000000000000007",
+      "action_losses": [
+        "400000000000000000013/2",
+        "800000000000000000041/4"
+      ],
+      "bound_squared": "2111595343647383611/162129586585337856"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "mixed_loss": "200000000000000000009",
+      "action_losses": [
+        "400000000000000000017/2",
+        "800000000000000000033/4"
+      ],
+      "bound_squared": "2111595343647383611/162129586585337856"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mixed_loss": "204800000000000000011963/1024",
+      "action_losses": [
+        "800000000000000000037/4",
+        "200000000000000000013"
+      ],
+      "bound_squared": "8486379688278200147/648518346341351424"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "mixed_loss": "204800000000000000010053/1024",
+      "action_losses": [
+        "800000000000000000045/4",
+        "200000000000000000011"
+      ],
+      "bound_squared": "8486379688278200147/648518346341351424"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "mixed_loss": "204800000000000000010251/1024",
+      "action_losses": [
+        "400000000000000000019/2",
+        "800000000000000000053/4"
+      ],
+      "bound_squared": "967116616376816187/72057594037927936"
+    },
+    {
+      "outcomes": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "mixed_loss": "204800000000000000012277/1024",
+      "action_losses": [
+        "400000000000000000023/2",
+        "800000000000000000045/4"
+      ],
+      "bound_squared": "967116616376816187/72057594037927936"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "mixed_loss": "204800000000000000008045/1024",
+      "action_losses": [
+        "800000000000000000029/4",
+        "200000000000000000009"
+      ],
+      "bound_squared": "6641975700363655427/648518346341351424"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "mixed_loss": "204800000000000000007827/1024",
+      "action_losses": [
+        "800000000000000000037/4",
+        "200000000000000000007"
+      ],
+      "bound_squared": "6641975700363655427/648518346341351424"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "mixed_loss": "204800000000000000007571/1024",
+      "action_losses": [
+        "400000000000000000015/2",
+        "800000000000000000037/4"
+      ],
+      "bound_squared": "2466793694412225281/216172782113783808"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "mixed_loss": "204800000000000000008813/1024",
+      "action_losses": [
+        "400000000000000000019/2",
+        "800000000000000000029/4"
+      ],
+      "bound_squared": "2466793694412225281/216172782113783808"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "mixed_loss": "800000000000000000047/4",
+      "action_losses": [
+        "800000000000000000041/4",
+        "200000000000000000012"
+      ],
+      "bound_squared": "534428026220152067/40532396646334464"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "mixed_loss": "800000000000000000039/4",
+      "action_losses": [
+        "800000000000000000049/4",
+        "200000000000000000010"
+      ],
+      "bound_squared": "534428026220152067/40532396646334464"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "mixed_loss": "200000000000000000012",
+      "action_losses": [
+        "400000000000000000021/2",
+        "800000000000000000049/4"
+      ],
+      "bound_squared": "114463201190678243507/10376293541461622784"
+    },
+    {
+      "outcomes": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mixed_loss": "200000000000000000010",
+      "action_losses": [
+        "400000000000000000025/2",
+        "800000000000000000041/4"
+      ],
+      "bound_squared": "114463201190678243507/10376293541461622784"
+    }
+  ],
+  "delayed_reports": [
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 1,
+      "positive_bound_copies": 0,
+      "settled": 0,
+      "pending": 1,
+      "settled_weight": "0",
+      "copy_bounds": [
+        "0"
+      ],
+      "residual": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "bound_squared": "0",
+      "bound_squared_cauchy": "0",
+      "sum_sqrt_upper": "0",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "0",
+      "expert_losses": [
+        "0",
+        "0",
+        "0"
+      ],
+      "expert_regrets": [
+        "0",
+        "0",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "mixed_action_loss": "0",
+      "action_losses": [
+        "0",
+        "0"
+      ],
+      "action_regrets": [
+        "0",
+        "0"
+      ],
+      "smoothing_slack": "0"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 2,
+      "positive_bound_copies": 0,
+      "settled": 0,
+      "pending": 2,
+      "settled_weight": "0",
+      "copy_bounds": [
+        "0",
+        "0"
+      ],
+      "residual": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "bound_squared": "0",
+      "bound_squared_cauchy": "0",
+      "sum_sqrt_upper": "0",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "0",
+      "expert_losses": [
+        "0",
+        "0",
+        "0"
+      ],
+      "expert_regrets": [
+        "0",
+        "0",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "mixed_action_loss": "0",
+      "action_losses": [
+        "0",
+        "0"
+      ],
+      "action_regrets": [
+        "0",
+        "0"
+      ],
+      "smoothing_slack": "0"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 3,
+      "positive_bound_copies": 0,
+      "settled": 0,
+      "pending": 3,
+      "settled_weight": "0",
+      "copy_bounds": [
+        "0",
+        "0",
+        "0"
+      ],
+      "residual": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "bound_squared": "0",
+      "bound_squared_cauchy": "0",
+      "sum_sqrt_upper": "0",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "0",
+      "expert_losses": [
+        "0",
+        "0",
+        "0"
+      ],
+      "expert_regrets": [
+        "0",
+        "0",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "mixed_action_loss": "0",
+      "action_losses": [
+        "0",
+        "0"
+      ],
+      "action_regrets": [
+        "0",
+        "0"
+      ],
+      "smoothing_slack": "0"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 0,
+      "settled": 0,
+      "pending": 4,
+      "settled_weight": "0",
+      "copy_bounds": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "residual": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "bound_squared": "0",
+      "bound_squared_cauchy": "0",
+      "sum_sqrt_upper": "0",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "0",
+      "expert_losses": [
+        "0",
+        "0",
+        "0"
+      ],
+      "expert_regrets": [
+        "0",
+        "0",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "mixed_action_loss": "0",
+      "action_losses": [
+        "0",
+        "0"
+      ],
+      "action_regrets": [
+        "0",
+        "0"
+      ],
+      "smoothing_slack": "0"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 0,
+      "settled": 1,
+      "pending": 3,
+      "settled_weight": "0",
+      "copy_bounds": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "residual": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "bound_squared": "0",
+      "bound_squared_cauchy": "0",
+      "sum_sqrt_upper": "0",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "0",
+      "expert_losses": [
+        "0",
+        "0",
+        "0"
+      ],
+      "expert_regrets": [
+        "0",
+        "0",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "mixed_action_loss": "0",
+      "action_losses": [
+        "0",
+        "0"
+      ],
+      "action_regrets": [
+        "0",
+        "0"
+      ],
+      "smoothing_slack": "0"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 0,
+      "settled": 1,
+      "pending": 4,
+      "settled_weight": "0",
+      "copy_bounds": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "residual": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "bound_squared": "0",
+      "bound_squared_cauchy": "0",
+      "sum_sqrt_upper": "0",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "0",
+      "expert_losses": [
+        "0",
+        "0",
+        "0"
+      ],
+      "expert_regrets": [
+        "0",
+        "0",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "mixed_action_loss": "0",
+      "action_losses": [
+        "0",
+        "0"
+      ],
+      "action_regrets": [
+        "0",
+        "0"
+      ],
+      "smoothing_slack": "0"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 1,
+      "settled": 2,
+      "pending": 3,
+      "settled_weight": "1",
+      "copy_bounds": [
+        "0",
+        "161/144",
+        "0",
+        "0"
+      ],
+      "residual": [
+        "-3/8",
+        "3/8",
+        "0",
+        "0",
+        "1/6",
+        "1/6",
+        "0",
+        "-5/8",
+        "5/8"
+      ],
+      "bound_squared": "161/144",
+      "bound_squared_cauchy": "161/144",
+      "sum_sqrt_upper": "69297/65536",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "1/4",
+      "expert_losses": [
+        "1",
+        "0",
+        "1/4"
+      ],
+      "expert_regrets": [
+        "-3/4",
+        "1/4",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "1/4",
+        "1/4",
+        "0"
+      ],
+      "mixed_action_loss": "1/2",
+      "action_losses": [
+        "1",
+        "0"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "1/2"
+      ],
+      "smoothing_slack": "1/32"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 2,
+      "settled": 3,
+      "pending": 2,
+      "settled_weight": "6/5",
+      "copy_bounds": [
+        "0",
+        "161/144",
+        "0",
+        "97/7200"
+      ],
+      "residual": [
+        "-9/20",
+        "9/20",
+        "0",
+        "0",
+        "1/5",
+        "1/5",
+        "0",
+        "-5/8",
+        "5/8"
+      ],
+      "bound_squared": "92409769/67108864",
+      "bound_squared_cauchy": "8147/3600",
+      "sum_sqrt_upper": "9613/8192",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3/10",
+      "expert_losses": [
+        "6/5",
+        "0",
+        "3/10"
+      ],
+      "expert_regrets": [
+        "-9/10",
+        "3/10",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "3/10",
+        "3/10",
+        "0"
+      ],
+      "mixed_action_loss": "9/10",
+      "action_losses": [
+        "7/5",
+        "1"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "11/320"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 2,
+      "settled": 3,
+      "pending": 3,
+      "settled_weight": "6/5",
+      "copy_bounds": [
+        "0",
+        "161/144",
+        "0",
+        "97/7200"
+      ],
+      "residual": [
+        "-9/20",
+        "9/20",
+        "0",
+        "0",
+        "1/5",
+        "1/5",
+        "0",
+        "-5/8",
+        "5/8"
+      ],
+      "bound_squared": "92409769/67108864",
+      "bound_squared_cauchy": "8147/3600",
+      "sum_sqrt_upper": "9613/8192",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3/10",
+      "expert_losses": [
+        "6/5",
+        "0",
+        "3/10"
+      ],
+      "expert_regrets": [
+        "-9/10",
+        "3/10",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "3/10",
+        "3/10",
+        "0"
+      ],
+      "mixed_action_loss": "9/10",
+      "action_losses": [
+        "7/5",
+        "1"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "11/320"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 4,
+      "pending": 2,
+      "settled_weight": "21/5",
+      "copy_bounds": [
+        "0",
+        "161/144",
+        "97/32",
+        "97/7200"
+      ],
+      "residual": [
+        "27/40",
+        "-27/40",
+        "0",
+        "0",
+        "-3/10",
+        "-3/10",
+        "0",
+        "-5/8",
+        "5/8"
+      ],
+      "bound_squared": "9120823009/1073741824",
+      "bound_squared_cauchy": "7493/600",
+      "sum_sqrt_upper": "95503/32768",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "21/20",
+      "expert_losses": [
+        "6/5",
+        "3",
+        "21/20"
+      ],
+      "expert_regrets": [
+        "-3/20",
+        "-39/20",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "-9/20",
+        "-9/20",
+        "0"
+      ],
+      "mixed_action_loss": "69/10",
+      "action_losses": [
+        "37/5",
+        "7"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "41/320"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 4,
+      "pending": 3,
+      "settled_weight": "21/5",
+      "copy_bounds": [
+        "0",
+        "161/144",
+        "97/32",
+        "97/7200"
+      ],
+      "residual": [
+        "27/40",
+        "-27/40",
+        "0",
+        "0",
+        "-3/10",
+        "-3/10",
+        "0",
+        "-5/8",
+        "5/8"
+      ],
+      "bound_squared": "9120823009/1073741824",
+      "bound_squared_cauchy": "7493/600",
+      "sum_sqrt_upper": "95503/32768",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "21/20",
+      "expert_losses": [
+        "6/5",
+        "3",
+        "21/20"
+      ],
+      "expert_regrets": [
+        "-3/20",
+        "-39/20",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "-9/20",
+        "-9/20",
+        "0"
+      ],
+      "mixed_action_loss": "69/10",
+      "action_losses": [
+        "37/5",
+        "7"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "41/320"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 4,
+      "pending": 4,
+      "settled_weight": "21/5",
+      "copy_bounds": [
+        "0",
+        "161/144",
+        "97/32",
+        "97/7200"
+      ],
+      "residual": [
+        "27/40",
+        "-27/40",
+        "0",
+        "0",
+        "-3/10",
+        "-3/10",
+        "0",
+        "-5/8",
+        "5/8"
+      ],
+      "bound_squared": "9120823009/1073741824",
+      "bound_squared_cauchy": "7493/600",
+      "sum_sqrt_upper": "95503/32768",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "21/20",
+      "expert_losses": [
+        "6/5",
+        "3",
+        "21/20"
+      ],
+      "expert_regrets": [
+        "-3/20",
+        "-39/20",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "-9/20",
+        "-9/20",
+        "0"
+      ],
+      "mixed_action_loss": "69/10",
+      "action_losses": [
+        "37/5",
+        "7"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "41/320"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 5,
+      "pending": 3,
+      "settled_weight": "21/5",
+      "copy_bounds": [
+        "0",
+        "161/144",
+        "97/32",
+        "97/7200"
+      ],
+      "residual": [
+        "27/40",
+        "-27/40",
+        "0",
+        "0",
+        "-3/10",
+        "-3/10",
+        "0",
+        "-5/8",
+        "5/8"
+      ],
+      "bound_squared": "9120823009/1073741824",
+      "bound_squared_cauchy": "7493/600",
+      "sum_sqrt_upper": "95503/32768",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "21/20",
+      "expert_losses": [
+        "6/5",
+        "3",
+        "21/20"
+      ],
+      "expert_regrets": [
+        "-3/20",
+        "-39/20",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "-9/20",
+        "-9/20",
+        "0"
+      ],
+      "mixed_action_loss": "69/10",
+      "action_losses": [
+        "37/5",
+        "7"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "41/320"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 5,
+      "pending": 4,
+      "settled_weight": "21/5",
+      "copy_bounds": [
+        "0",
+        "161/144",
+        "97/32",
+        "97/7200"
+      ],
+      "residual": [
+        "27/40",
+        "-27/40",
+        "0",
+        "0",
+        "-3/10",
+        "-3/10",
+        "0",
+        "-5/8",
+        "5/8"
+      ],
+      "bound_squared": "9120823009/1073741824",
+      "bound_squared_cauchy": "7493/600",
+      "sum_sqrt_upper": "95503/32768",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "21/20",
+      "expert_losses": [
+        "6/5",
+        "3",
+        "21/20"
+      ],
+      "expert_regrets": [
+        "-3/20",
+        "-39/20",
+        "0"
+      ],
+      "bin_residuals": [
+        "0",
+        "-9/20",
+        "-9/20",
+        "0"
+      ],
+      "mixed_action_loss": "69/10",
+      "action_losses": [
+        "37/5",
+        "7"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "41/320"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 6,
+      "pending": 3,
+      "settled_weight": "26/5",
+      "copy_bounds": [
+        "0",
+        "18046290569635956451/450359962737049600",
+        "97/32",
+        "97/7200"
+      ],
+      "residual": [
+        "204243807/671088640",
+        "-252599457/671088640",
+        "4146963/134217728",
+        "0",
+        "-100318369/503316480",
+        "-51962719/503316480",
+        "0",
+        "-5/8",
+        "101615/16384"
+      ],
+      "bound_squared": "71974694961/1073741824",
+      "bound_squared_cauchy": "174757604005625609723/1351079888211148800",
+      "sum_sqrt_upper": "268281/32768",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "419116661/335544320",
+      "expert_losses": [
+        "11/5",
+        "3",
+        "121/100"
+      ],
+      "expert_regrets": [
+        "-319080843/335544320",
+        "-587516299/335544320",
+        "65540169/1677721600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-100318369/335544320",
+        "-51962719/335544320",
+        "0"
+      ],
+      "mixed_action_loss": "49/10",
+      "action_losses": [
+        "27/5",
+        "2"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "29/10"
+      ],
+      "smoothing_slack": "23/160"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 7,
+      "pending": 2,
+      "settled_weight": "27/5",
+      "copy_bounds": [
+        "0",
+        "18046290569635956451/450359962737049600",
+        "97/32",
+        "509617/19660800"
+      ],
+      "residual": [
+        "173572959/671088640",
+        "-245521569/671088640",
+        "1787667/134217728",
+        "0",
+        "-100318369/503316480",
+        "-44884831/503316480",
+        "7/640",
+        "-5/8",
+        "101615/16384"
+      ],
+      "bound_squared": "291067803049/4294967296",
+      "bound_squared_cauchy": "11653870646724736853/90071992547409920",
+      "sum_sqrt_upper": "539507/65536",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "421475957/335544320",
+      "expert_losses": [
+        "12/5",
+        "3",
+        "63/50"
+      ],
+      "expert_regrets": [
+        "-383830411/335544320",
+        "-585157003/335544320",
+        "-6549431/1677721600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-100318369/335544320",
+        "-44884831/335544320",
+        "21/1280"
+      ],
+      "mixed_action_loss": "11/2",
+      "action_losses": [
+        "6",
+        "13/5"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "29/10"
+      ],
+      "smoothing_slack": "93/640"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 7,
+      "pending": 3,
+      "settled_weight": "27/5",
+      "copy_bounds": [
+        "0",
+        "18046290569635956451/450359962737049600",
+        "97/32",
+        "509617/19660800"
+      ],
+      "residual": [
+        "173572959/671088640",
+        "-245521569/671088640",
+        "1787667/134217728",
+        "0",
+        "-100318369/503316480",
+        "-44884831/503316480",
+        "7/640",
+        "-5/8",
+        "101615/16384"
+      ],
+      "bound_squared": "291067803049/4294967296",
+      "bound_squared_cauchy": "11653870646724736853/90071992547409920",
+      "sum_sqrt_upper": "539507/65536",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "421475957/335544320",
+      "expert_losses": [
+        "12/5",
+        "3",
+        "63/50"
+      ],
+      "expert_regrets": [
+        "-383830411/335544320",
+        "-585157003/335544320",
+        "-6549431/1677721600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-100318369/335544320",
+        "-44884831/335544320",
+        "21/1280"
+      ],
+      "mixed_action_loss": "11/2",
+      "action_losses": [
+        "6",
+        "13/5"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "29/10"
+      ],
+      "smoothing_slack": "93/640"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 8,
+      "pending": 2,
+      "settled_weight": "42/5",
+      "copy_bounds": [
+        "0",
+        "18046290569635956451/450359962737049600",
+        "91536224275680768467/4611686018427387904",
+        "509617/19660800"
+      ],
+      "residual": [
+        "11003952189/10737418240",
+        "-15639086019/10737418240",
+        "-319792935/2147483648",
+        "0",
+        "-6669992899/8053063680",
+        "-2299100221/8053063680",
+        "7/640",
+        "-5/8",
+        "203645/65536"
+      ],
+      "bound_squared": "514635499161/4294967296",
+      "bound_squared_cauchy": "4146746651046373867613/23058430092136939520",
+      "sum_sqrt_upper": "717381/65536",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "9485876927/5368709120",
+      "expert_losses": [
+        "12/5",
+        "6",
+        "201/100"
+      ],
+      "expert_regrets": [
+        "-3399024961/5368709120",
+        "-22726377793/5368709120",
+        "-6526142021/26843545600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-6669992899/5368709120",
+        "-2299100221/5368709120",
+        "21/1280"
+      ],
+      "mixed_action_loss": "11/2",
+      "action_losses": [
+        "6",
+        "28/5"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "123/640"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 8,
+      "pending": 3,
+      "settled_weight": "42/5",
+      "copy_bounds": [
+        "0",
+        "18046290569635956451/450359962737049600",
+        "91536224275680768467/4611686018427387904",
+        "509617/19660800"
+      ],
+      "residual": [
+        "11003952189/10737418240",
+        "-15639086019/10737418240",
+        "-319792935/2147483648",
+        "0",
+        "-6669992899/8053063680",
+        "-2299100221/8053063680",
+        "7/640",
+        "-5/8",
+        "203645/65536"
+      ],
+      "bound_squared": "514635499161/4294967296",
+      "bound_squared_cauchy": "4146746651046373867613/23058430092136939520",
+      "sum_sqrt_upper": "717381/65536",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "9485876927/5368709120",
+      "expert_losses": [
+        "12/5",
+        "6",
+        "201/100"
+      ],
+      "expert_regrets": [
+        "-3399024961/5368709120",
+        "-22726377793/5368709120",
+        "-6526142021/26843545600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-6669992899/5368709120",
+        "-2299100221/5368709120",
+        "21/1280"
+      ],
+      "mixed_action_loss": "11/2",
+      "action_losses": [
+        "6",
+        "28/5"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "123/640"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 8,
+      "pending": 4,
+      "settled_weight": "42/5",
+      "copy_bounds": [
+        "0",
+        "18046290569635956451/450359962737049600",
+        "91536224275680768467/4611686018427387904",
+        "509617/19660800"
+      ],
+      "residual": [
+        "11003952189/10737418240",
+        "-15639086019/10737418240",
+        "-319792935/2147483648",
+        "0",
+        "-6669992899/8053063680",
+        "-2299100221/8053063680",
+        "7/640",
+        "-5/8",
+        "203645/65536"
+      ],
+      "bound_squared": "514635499161/4294967296",
+      "bound_squared_cauchy": "4146746651046373867613/23058430092136939520",
+      "sum_sqrt_upper": "717381/65536",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "9485876927/5368709120",
+      "expert_losses": [
+        "12/5",
+        "6",
+        "201/100"
+      ],
+      "expert_regrets": [
+        "-3399024961/5368709120",
+        "-22726377793/5368709120",
+        "-6526142021/26843545600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-6669992899/5368709120",
+        "-2299100221/5368709120",
+        "21/1280"
+      ],
+      "mixed_action_loss": "11/2",
+      "action_losses": [
+        "6",
+        "28/5"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "123/640"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 9,
+      "pending": 3,
+      "settled_weight": "42/5",
+      "copy_bounds": [
+        "0",
+        "18046290569635956451/450359962737049600",
+        "91536224275680768467/4611686018427387904",
+        "509617/19660800"
+      ],
+      "residual": [
+        "11003952189/10737418240",
+        "-15639086019/10737418240",
+        "-319792935/2147483648",
+        "0",
+        "-6669992899/8053063680",
+        "-2299100221/8053063680",
+        "7/640",
+        "-5/8",
+        "203645/65536"
+      ],
+      "bound_squared": "514635499161/4294967296",
+      "bound_squared_cauchy": "4146746651046373867613/23058430092136939520",
+      "sum_sqrt_upper": "717381/65536",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "9485876927/5368709120",
+      "expert_losses": [
+        "12/5",
+        "6",
+        "201/100"
+      ],
+      "expert_regrets": [
+        "-3399024961/5368709120",
+        "-22726377793/5368709120",
+        "-6526142021/26843545600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-6669992899/5368709120",
+        "-2299100221/5368709120",
+        "21/1280"
+      ],
+      "mixed_action_loss": "11/2",
+      "action_losses": [
+        "6",
+        "28/5"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "123/640"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 9,
+      "pending": 4,
+      "settled_weight": "42/5",
+      "copy_bounds": [
+        "0",
+        "18046290569635956451/450359962737049600",
+        "91536224275680768467/4611686018427387904",
+        "509617/19660800"
+      ],
+      "residual": [
+        "11003952189/10737418240",
+        "-15639086019/10737418240",
+        "-319792935/2147483648",
+        "0",
+        "-6669992899/8053063680",
+        "-2299100221/8053063680",
+        "7/640",
+        "-5/8",
+        "203645/65536"
+      ],
+      "bound_squared": "514635499161/4294967296",
+      "bound_squared_cauchy": "4146746651046373867613/23058430092136939520",
+      "sum_sqrt_upper": "717381/65536",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "9485876927/5368709120",
+      "expert_losses": [
+        "12/5",
+        "6",
+        "201/100"
+      ],
+      "expert_regrets": [
+        "-3399024961/5368709120",
+        "-22726377793/5368709120",
+        "-6526142021/26843545600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-6669992899/5368709120",
+        "-2299100221/5368709120",
+        "21/1280"
+      ],
+      "mixed_action_loss": "11/2",
+      "action_losses": [
+        "6",
+        "28/5"
+      ],
+      "action_regrets": [
+        "-1/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "123/640"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 10,
+      "pending": 3,
+      "settled_weight": "47/5",
+      "copy_bounds": [
+        "0",
+        "167045343979448075459/4053239664633446400",
+        "91536224275680768467/4611686018427387904",
+        "509617/19660800"
+      ],
+      "residual": [
+        "8781875709/10737418240",
+        "-15199090179/10737418240",
+        "-1405267253/6442450944",
+        "0",
+        "-6669992899/8053063680",
+        "-1859104381/8053063680",
+        "8366281/125829120",
+        "-8505/8192",
+        "203645/65536"
+      ],
+      "bound_squared": "523092009001/4294967296",
+      "bound_squared_cauchy": "12677230870398614333719/69175290276410818560",
+      "sum_sqrt_upper": "723251/65536",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "9632542207/5368709120",
+      "expert_losses": [
+        "17/5",
+        "6",
+        "17881/8100"
+      ],
+      "expert_regrets": [
+        "-8621068801/5368709120",
+        "-22579712513/5368709120",
+        "-898714794901/2174327193600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-6669992899/5368709120",
+        "-1859104381/5368709120",
+        "8366281/83886080"
+      ],
+      "mixed_action_loss": "200000000000000000011/2",
+      "action_losses": [
+        "100000000000000000007",
+        "500000000000000000028/5"
+      ],
+      "action_regrets": [
+        "-3/2",
+        "-1/10"
+      ],
+      "smoothing_slack": "1/5"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 11,
+      "pending": 2,
+      "settled_weight": "48/5",
+      "copy_bounds": [
+        "0",
+        "167045343979448075459/4053239664633446400",
+        "91536224275680768467/4611686018427387904",
+        "651939/6553600"
+      ],
+      "residual": [
+        "8026900989/10737418240",
+        "-14746105347/10737418240",
+        "-7479321097/32212254720",
+        "0",
+        "-6619661251/8053063680",
+        "-301356569/1610612736",
+        "8366281/125829120",
+        "-10041/8192",
+        "203645/65536"
+      ],
+      "bound_squared": "134457889225/1073741824",
+      "bound_squared_cauchy": "12692495962073074985239/69175290276410818560",
+      "sum_sqrt_upper": "366685/32768",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "9783537151/5368709120",
+      "expert_losses": [
+        "18/5",
+        "6",
+        "9143/4050"
+      ],
+      "expert_regrets": [
+        "-9543815681/5368709120",
+        "-22428717569/5368709120",
+        "-946278202261/2174327193600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-6619661251/5368709120",
+        "-301356569/1073741824",
+        "8366281/83886080"
+      ],
+      "mixed_action_loss": "200000000000000000011/2",
+      "action_losses": [
+        "500000000000000000036/5",
+        "500000000000000000028/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-1/10"
+      ],
+      "smoothing_slack": "129/640"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 11,
+      "pending": 3,
+      "settled_weight": "48/5",
+      "copy_bounds": [
+        "0",
+        "167045343979448075459/4053239664633446400",
+        "91536224275680768467/4611686018427387904",
+        "651939/6553600"
+      ],
+      "residual": [
+        "8026900989/10737418240",
+        "-14746105347/10737418240",
+        "-7479321097/32212254720",
+        "0",
+        "-6619661251/8053063680",
+        "-301356569/1610612736",
+        "8366281/125829120",
+        "-10041/8192",
+        "203645/65536"
+      ],
+      "bound_squared": "134457889225/1073741824",
+      "bound_squared_cauchy": "12692495962073074985239/69175290276410818560",
+      "sum_sqrt_upper": "366685/32768",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "9783537151/5368709120",
+      "expert_losses": [
+        "18/5",
+        "6",
+        "9143/4050"
+      ],
+      "expert_regrets": [
+        "-9543815681/5368709120",
+        "-22428717569/5368709120",
+        "-946278202261/2174327193600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-6619661251/5368709120",
+        "-301356569/1073741824",
+        "8366281/83886080"
+      ],
+      "mixed_action_loss": "200000000000000000011/2",
+      "action_losses": [
+        "500000000000000000036/5",
+        "500000000000000000028/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-1/10"
+      ],
+      "smoothing_slack": "129/640"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 12,
+      "pending": 2,
+      "settled_weight": "63/5",
+      "copy_bounds": [
+        "0",
+        "167045343979448075459/4053239664633446400",
+        "109785419446311321979705907/302231454903657293676544",
+        "651939/6553600"
+      ],
+      "residual": [
+        "4135650252189/2748779069440",
+        "-6767504337507/2748779069440",
+        "-3282312855337/8246337208320",
+        "0",
+        "-2996046326371/2061584302080",
+        "-155082336953/412316860416",
+        "8366281/125829120",
+        "-10041/8192",
+        "-12869155/1048576"
+      ],
+      "bound_squared": "178601747769/268435456",
+      "bound_squared_cauchy": "5502207980718534863417989879/4533471823554859405148160",
+      "sum_sqrt_upper": "422613/16384",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3198173376991/1374389534720",
+      "expert_losses": [
+        "18/5",
+        "9",
+        "24361/8100"
+      ],
+      "expert_regrets": [
+        "-1749628948001/1374389534720",
+        "-9171332435489/1374389534720",
+        "-378814955084341/556627761561600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2996046326371/1374389534720",
+        "-155082336953/274877906944",
+        "8366281/83886080"
+      ],
+      "mixed_action_loss": "199999999999999999993/2",
+      "action_losses": [
+        "499999999999999999991/5",
+        "500000000000000000088/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-211/10"
+      ],
+      "smoothing_slack": "9/40"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 12,
+      "pending": 3,
+      "settled_weight": "63/5",
+      "copy_bounds": [
+        "0",
+        "167045343979448075459/4053239664633446400",
+        "109785419446311321979705907/302231454903657293676544",
+        "651939/6553600"
+      ],
+      "residual": [
+        "4135650252189/2748779069440",
+        "-6767504337507/2748779069440",
+        "-3282312855337/8246337208320",
+        "0",
+        "-2996046326371/2061584302080",
+        "-155082336953/412316860416",
+        "8366281/125829120",
+        "-10041/8192",
+        "-12869155/1048576"
+      ],
+      "bound_squared": "178601747769/268435456",
+      "bound_squared_cauchy": "5502207980718534863417989879/4533471823554859405148160",
+      "sum_sqrt_upper": "422613/16384",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3198173376991/1374389534720",
+      "expert_losses": [
+        "18/5",
+        "9",
+        "24361/8100"
+      ],
+      "expert_regrets": [
+        "-1749628948001/1374389534720",
+        "-9171332435489/1374389534720",
+        "-378814955084341/556627761561600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2996046326371/1374389534720",
+        "-155082336953/274877906944",
+        "8366281/83886080"
+      ],
+      "mixed_action_loss": "199999999999999999993/2",
+      "action_losses": [
+        "499999999999999999991/5",
+        "500000000000000000088/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-211/10"
+      ],
+      "smoothing_slack": "9/40"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 12,
+      "pending": 4,
+      "settled_weight": "63/5",
+      "copy_bounds": [
+        "0",
+        "167045343979448075459/4053239664633446400",
+        "109785419446311321979705907/302231454903657293676544",
+        "651939/6553600"
+      ],
+      "residual": [
+        "4135650252189/2748779069440",
+        "-6767504337507/2748779069440",
+        "-3282312855337/8246337208320",
+        "0",
+        "-2996046326371/2061584302080",
+        "-155082336953/412316860416",
+        "8366281/125829120",
+        "-10041/8192",
+        "-12869155/1048576"
+      ],
+      "bound_squared": "178601747769/268435456",
+      "bound_squared_cauchy": "5502207980718534863417989879/4533471823554859405148160",
+      "sum_sqrt_upper": "422613/16384",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3198173376991/1374389534720",
+      "expert_losses": [
+        "18/5",
+        "9",
+        "24361/8100"
+      ],
+      "expert_regrets": [
+        "-1749628948001/1374389534720",
+        "-9171332435489/1374389534720",
+        "-378814955084341/556627761561600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2996046326371/1374389534720",
+        "-155082336953/274877906944",
+        "8366281/83886080"
+      ],
+      "mixed_action_loss": "199999999999999999993/2",
+      "action_losses": [
+        "499999999999999999991/5",
+        "500000000000000000088/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-211/10"
+      ],
+      "smoothing_slack": "9/40"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 13,
+      "pending": 3,
+      "settled_weight": "63/5",
+      "copy_bounds": [
+        "0",
+        "167045343979448075459/4053239664633446400",
+        "109785419446311321979705907/302231454903657293676544",
+        "651939/6553600"
+      ],
+      "residual": [
+        "4135650252189/2748779069440",
+        "-6767504337507/2748779069440",
+        "-3282312855337/8246337208320",
+        "0",
+        "-2996046326371/2061584302080",
+        "-155082336953/412316860416",
+        "8366281/125829120",
+        "-10041/8192",
+        "-12869155/1048576"
+      ],
+      "bound_squared": "178601747769/268435456",
+      "bound_squared_cauchy": "5502207980718534863417989879/4533471823554859405148160",
+      "sum_sqrt_upper": "422613/16384",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3198173376991/1374389534720",
+      "expert_losses": [
+        "18/5",
+        "9",
+        "24361/8100"
+      ],
+      "expert_regrets": [
+        "-1749628948001/1374389534720",
+        "-9171332435489/1374389534720",
+        "-378814955084341/556627761561600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2996046326371/1374389534720",
+        "-155082336953/274877906944",
+        "8366281/83886080"
+      ],
+      "mixed_action_loss": "199999999999999999993/2",
+      "action_losses": [
+        "499999999999999999991/5",
+        "500000000000000000088/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-211/10"
+      ],
+      "smoothing_slack": "9/40"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 13,
+      "pending": 4,
+      "settled_weight": "63/5",
+      "copy_bounds": [
+        "0",
+        "167045343979448075459/4053239664633446400",
+        "109785419446311321979705907/302231454903657293676544",
+        "651939/6553600"
+      ],
+      "residual": [
+        "4135650252189/2748779069440",
+        "-6767504337507/2748779069440",
+        "-3282312855337/8246337208320",
+        "0",
+        "-2996046326371/2061584302080",
+        "-155082336953/412316860416",
+        "8366281/125829120",
+        "-10041/8192",
+        "-12869155/1048576"
+      ],
+      "bound_squared": "178601747769/268435456",
+      "bound_squared_cauchy": "5502207980718534863417989879/4533471823554859405148160",
+      "sum_sqrt_upper": "422613/16384",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3198173376991/1374389534720",
+      "expert_losses": [
+        "18/5",
+        "9",
+        "24361/8100"
+      ],
+      "expert_regrets": [
+        "-1749628948001/1374389534720",
+        "-9171332435489/1374389534720",
+        "-378814955084341/556627761561600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2996046326371/1374389534720",
+        "-155082336953/274877906944",
+        "8366281/83886080"
+      ],
+      "mixed_action_loss": "199999999999999999993/2",
+      "action_losses": [
+        "499999999999999999991/5",
+        "500000000000000000088/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-211/10"
+      ],
+      "smoothing_slack": "9/40"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 14,
+      "pending": 3,
+      "settled_weight": "68/5",
+      "copy_bounds": [
+        "0",
+        "28255484568565720895971/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "651939/6553600"
+      ],
+      "residual": [
+        "4086915306909/2748779069440",
+        "-6766914267747/2748779069440",
+        "-43534904669461/107202383708160",
+        "0",
+        "-2996046326371/2061584302080",
+        "-154964323001/412316860416",
+        "1555631/20971520",
+        "-10041/8192",
+        "-12869155/1048576"
+      ],
+      "bound_squared": "2858253465769/4294967296",
+      "bound_squared_cauchy": "929956435660203676461838044431/766156738180771239470039040",
+      "sum_sqrt_upper": "1690637/65536",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3198370066911/1374389534720",
+      "expert_losses": [
+        "23/5",
+        "9",
+        "4408609/1368900"
+      ],
+      "expert_regrets": [
+        "-3123821792801/1374389534720",
+        "-9171135745569/1374389534720",
+        "-84044864383896829/94070091703910400"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2996046326371/1374389534720",
+        "-154964323001/274877906944",
+        "4666893/41943040"
+      ],
+      "mixed_action_loss": "199999999999999999997/2",
+      "action_losses": [
+        "500000000000000000001/5",
+        "500000000000000000113/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-241/10"
+      ],
+      "smoothing_slack": "149/640"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 15,
+      "pending": 2,
+      "settled_weight": "69/5",
+      "copy_bounds": [
+        "0",
+        "28255484568565720895971/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "424316930672348131/253327479039590400"
+      ],
+      "residual": [
+        "3880824165789/2748779069440",
+        "-1313627526471/549755813888",
+        "-43677537531157/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703686399389/2061584302080",
+        "1555631/20971520",
+        "-10041/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "3007096569/4194304",
+      "bound_squared_cauchy": "933577666204042448500334988559/766156738180771239470039040",
+      "sum_sqrt_upper": "54837/2048",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "652925789075/274877906944",
+      "expert_losses": [
+        "24/5",
+        "9",
+        "2238527/684450"
+      ],
+      "expert_regrets": [
+        "-3332440821281/1374389534720",
+        "-1820975373421/274877906944",
+        "-84213280032623869/94070091703910400"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703686399389/1374389534720",
+        "4666893/41943040"
+      ],
+      "mixed_action_loss": "999999999999999999981/10",
+      "action_losses": [
+        "499999999999999999999/5",
+        "500000000000000000108/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-47/2"
+      ],
+      "smoothing_slack": "299/1280"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 15,
+      "pending": 3,
+      "settled_weight": "69/5",
+      "copy_bounds": [
+        "0",
+        "28255484568565720895971/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "424316930672348131/253327479039590400"
+      ],
+      "residual": [
+        "3880824165789/2748779069440",
+        "-1313627526471/549755813888",
+        "-43677537531157/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703686399389/2061584302080",
+        "1555631/20971520",
+        "-10041/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "3007096569/4194304",
+      "bound_squared_cauchy": "933577666204042448500334988559/766156738180771239470039040",
+      "sum_sqrt_upper": "54837/2048",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "652925789075/274877906944",
+      "expert_losses": [
+        "24/5",
+        "9",
+        "2238527/684450"
+      ],
+      "expert_regrets": [
+        "-3332440821281/1374389534720",
+        "-1820975373421/274877906944",
+        "-84213280032623869/94070091703910400"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703686399389/1374389534720",
+        "4666893/41943040"
+      ],
+      "mixed_action_loss": "999999999999999999981/10",
+      "action_losses": [
+        "499999999999999999999/5",
+        "500000000000000000108/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-47/2"
+      ],
+      "smoothing_slack": "299/1280"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 16,
+      "pending": 2,
+      "settled_weight": "84/5",
+      "copy_bounds": [
+        "0",
+        "28255484568565720895971/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "424316930672348131/253327479039590400"
+      ],
+      "residual": [
+        "3880824165789/2748779069440",
+        "-1313627526471/549755813888",
+        "-43677537531157/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703686399389/2061584302080",
+        "1555631/20971520",
+        "-10041/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "3007096569/4194304",
+      "bound_squared_cauchy": "933577666204042448500334988559/766156738180771239470039040",
+      "sum_sqrt_upper": "54837/2048",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "652925789075/274877906944",
+      "expert_losses": [
+        "24/5",
+        "12",
+        "5503729/1368900"
+      ],
+      "expert_regrets": [
+        "-3332440821281/1374389534720",
+        "-2645609094253/274877906944",
+        "-154765848810556669/94070091703910400"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703686399389/1374389534720",
+        "4666893/41943040"
+      ],
+      "mixed_action_loss": "3999999999999999999981/10",
+      "action_losses": [
+        "1999999999999999999999/5",
+        "2000000000000000000123/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-53/2"
+      ],
+      "smoothing_slack": "329/1280"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 16,
+      "pending": 3,
+      "settled_weight": "84/5",
+      "copy_bounds": [
+        "0",
+        "28255484568565720895971/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "424316930672348131/253327479039590400"
+      ],
+      "residual": [
+        "3880824165789/2748779069440",
+        "-1313627526471/549755813888",
+        "-43677537531157/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703686399389/2061584302080",
+        "1555631/20971520",
+        "-10041/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "3007096569/4194304",
+      "bound_squared_cauchy": "933577666204042448500334988559/766156738180771239470039040",
+      "sum_sqrt_upper": "54837/2048",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "652925789075/274877906944",
+      "expert_losses": [
+        "24/5",
+        "12",
+        "5503729/1368900"
+      ],
+      "expert_regrets": [
+        "-3332440821281/1374389534720",
+        "-2645609094253/274877906944",
+        "-154765848810556669/94070091703910400"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703686399389/1374389534720",
+        "4666893/41943040"
+      ],
+      "mixed_action_loss": "3999999999999999999981/10",
+      "action_losses": [
+        "1999999999999999999999/5",
+        "2000000000000000000123/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-53/2"
+      ],
+      "smoothing_slack": "329/1280"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 16,
+      "pending": 4,
+      "settled_weight": "84/5",
+      "copy_bounds": [
+        "0",
+        "28255484568565720895971/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "424316930672348131/253327479039590400"
+      ],
+      "residual": [
+        "3880824165789/2748779069440",
+        "-1313627526471/549755813888",
+        "-43677537531157/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703686399389/2061584302080",
+        "1555631/20971520",
+        "-10041/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "3007096569/4194304",
+      "bound_squared_cauchy": "933577666204042448500334988559/766156738180771239470039040",
+      "sum_sqrt_upper": "54837/2048",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "652925789075/274877906944",
+      "expert_losses": [
+        "24/5",
+        "12",
+        "5503729/1368900"
+      ],
+      "expert_regrets": [
+        "-3332440821281/1374389534720",
+        "-2645609094253/274877906944",
+        "-154765848810556669/94070091703910400"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703686399389/1374389534720",
+        "4666893/41943040"
+      ],
+      "mixed_action_loss": "3999999999999999999981/10",
+      "action_losses": [
+        "1999999999999999999999/5",
+        "2000000000000000000123/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-53/2"
+      ],
+      "smoothing_slack": "329/1280"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 17,
+      "pending": 3,
+      "settled_weight": "84/5",
+      "copy_bounds": [
+        "0",
+        "28255484568565720895971/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "424316930672348131/253327479039590400"
+      ],
+      "residual": [
+        "3880824165789/2748779069440",
+        "-1313627526471/549755813888",
+        "-43677537531157/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703686399389/2061584302080",
+        "1555631/20971520",
+        "-10041/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "3007096569/4194304",
+      "bound_squared_cauchy": "933577666204042448500334988559/766156738180771239470039040",
+      "sum_sqrt_upper": "54837/2048",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "652925789075/274877906944",
+      "expert_losses": [
+        "24/5",
+        "12",
+        "5503729/1368900"
+      ],
+      "expert_regrets": [
+        "-3332440821281/1374389534720",
+        "-2645609094253/274877906944",
+        "-154765848810556669/94070091703910400"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703686399389/1374389534720",
+        "4666893/41943040"
+      ],
+      "mixed_action_loss": "3999999999999999999981/10",
+      "action_losses": [
+        "1999999999999999999999/5",
+        "2000000000000000000123/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-53/2"
+      ],
+      "smoothing_slack": "329/1280"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 17,
+      "pending": 4,
+      "settled_weight": "84/5",
+      "copy_bounds": [
+        "0",
+        "28255484568565720895971/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "424316930672348131/253327479039590400"
+      ],
+      "residual": [
+        "3880824165789/2748779069440",
+        "-1313627526471/549755813888",
+        "-43677537531157/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703686399389/2061584302080",
+        "1555631/20971520",
+        "-10041/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "3007096569/4194304",
+      "bound_squared_cauchy": "933577666204042448500334988559/766156738180771239470039040",
+      "sum_sqrt_upper": "54837/2048",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "652925789075/274877906944",
+      "expert_losses": [
+        "24/5",
+        "12",
+        "5503729/1368900"
+      ],
+      "expert_regrets": [
+        "-3332440821281/1374389534720",
+        "-2645609094253/274877906944",
+        "-154765848810556669/94070091703910400"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703686399389/1374389534720",
+        "4666893/41943040"
+      ],
+      "mixed_action_loss": "3999999999999999999981/10",
+      "action_losses": [
+        "1999999999999999999999/5",
+        "2000000000000000000123/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-53/2"
+      ],
+      "smoothing_slack": "329/1280"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 18,
+      "pending": 3,
+      "settled_weight": "89/5",
+      "copy_bounds": [
+        "0",
+        "28273059653152982562371/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "424316930672348131/253327479039590400"
+      ],
+      "residual": [
+        "3846882743709/2748779069440",
+        "-1313570706759/549755813888",
+        "-44294596654357/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703402300829/2061584302080",
+        "5006383/62914560",
+        "-10041/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "3079726657225/4294967296",
+      "bound_squared_cauchy": "311212212800703400155159179013/255385579393590413156679680",
+      "sum_sqrt_upper": "1754915/65536",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "652944728979/274877906944",
+      "expert_losses": [
+        "29/5",
+        "12",
+        "1678187281/395612100"
+      ],
+      "expert_regrets": [
+        "-4706735656481/1374389534720",
+        "-2645590154349/274877906944",
+        "-50745942961502333341/27186256502430105600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703402300829/1374389534720",
+        "5006383/41943040"
+      ],
+      "mixed_action_loss": "4000000000000000000011/10",
+      "action_losses": [
+        "2000000000000000000014/5",
+        "2000000000000000000138/5"
+      ],
+      "action_regrets": [
+        "-17/10",
+        "-53/2"
+      ],
+      "smoothing_slack": "167/640"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 19,
+      "pending": 2,
+      "settled_weight": "18",
+      "copy_bounds": [
+        "0",
+        "28273059653152982562371/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "426008026977200483/253327479039590400"
+      ],
+      "residual": [
+        "3832642033053/2748779069440",
+        "-6567598729827/2748779069440",
+        "-44567321834773/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703147496861/2061584302080",
+        "5146063/62914560",
+        "-10113/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "192519990441/268435456",
+      "bound_squared_cauchy": "4668259909595657871911970619723/3830783690903856197350195200",
+      "sum_sqrt_upper": "438771/16384",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3264808579551/1374389534720",
+      "expert_losses": [
+        "6",
+        "12",
+        "848983943/197806050"
+      ],
+      "expert_regrets": [
+        "-4981528628769/1374389534720",
+        "-13227865837089/1374389534720",
+        "-52103575727742691741/27186256502430105600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703147496861/1374389534720",
+        "5146063/41943040"
+      ],
+      "mixed_action_loss": "4200000000000000000011/10",
+      "action_losses": [
+        "420000000000000000003",
+        "2100000000000000000138/5"
+      ],
+      "action_regrets": [
+        "-19/10",
+        "-53/2"
+      ],
+      "smoothing_slack": "67/256"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 19,
+      "pending": 3,
+      "settled_weight": "18",
+      "copy_bounds": [
+        "0",
+        "28273059653152982562371/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "426008026977200483/253327479039590400"
+      ],
+      "residual": [
+        "3832642033053/2748779069440",
+        "-6567598729827/2748779069440",
+        "-44567321834773/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703147496861/2061584302080",
+        "5146063/62914560",
+        "-10113/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "192519990441/268435456",
+      "bound_squared_cauchy": "4668259909595657871911970619723/3830783690903856197350195200",
+      "sum_sqrt_upper": "438771/16384",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3264808579551/1374389534720",
+      "expert_losses": [
+        "6",
+        "12",
+        "848983943/197806050"
+      ],
+      "expert_regrets": [
+        "-4981528628769/1374389534720",
+        "-13227865837089/1374389534720",
+        "-52103575727742691741/27186256502430105600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703147496861/1374389534720",
+        "5146063/41943040"
+      ],
+      "mixed_action_loss": "4200000000000000000011/10",
+      "action_losses": [
+        "420000000000000000003",
+        "2100000000000000000138/5"
+      ],
+      "action_regrets": [
+        "-19/10",
+        "-53/2"
+      ],
+      "smoothing_slack": "67/256"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 20,
+      "pending": 2,
+      "settled_weight": "21",
+      "copy_bounds": [
+        "0",
+        "28273059653152982562371/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "426008026977200483/253327479039590400"
+      ],
+      "residual": [
+        "3832642033053/2748779069440",
+        "-6567598729827/2748779069440",
+        "-44567321834773/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703147496861/2061584302080",
+        "5146063/62914560",
+        "-10113/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "192519990441/268435456",
+      "bound_squared_cauchy": "4668259909595657871911970619723/3830783690903856197350195200",
+      "sum_sqrt_upper": "438771/16384",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3264808579551/1374389534720",
+      "expert_losses": [
+        "6",
+        "15",
+        "1994676961/395612100"
+      ],
+      "expert_regrets": [
+        "-4981528628769/1374389534720",
+        "-17351034441249/1374389534720",
+        "-72493268104565270941/27186256502430105600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703147496861/1374389534720",
+        "5146063/41943040"
+      ],
+      "mixed_action_loss": "4200000000000000000041/10",
+      "action_losses": [
+        "420000000000000000006",
+        "2100000000000000000198/5"
+      ],
+      "action_regrets": [
+        "-19/10",
+        "-71/2"
+      ],
+      "smoothing_slack": "35/128"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 20,
+      "pending": 3,
+      "settled_weight": "21",
+      "copy_bounds": [
+        "0",
+        "28273059653152982562371/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "426008026977200483/253327479039590400"
+      ],
+      "residual": [
+        "3832642033053/2748779069440",
+        "-6567598729827/2748779069440",
+        "-44567321834773/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703147496861/2061584302080",
+        "5146063/62914560",
+        "-10113/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "192519990441/268435456",
+      "bound_squared_cauchy": "4668259909595657871911970619723/3830783690903856197350195200",
+      "sum_sqrt_upper": "438771/16384",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3264808579551/1374389534720",
+      "expert_losses": [
+        "6",
+        "15",
+        "1994676961/395612100"
+      ],
+      "expert_regrets": [
+        "-4981528628769/1374389534720",
+        "-17351034441249/1374389534720",
+        "-72493268104565270941/27186256502430105600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703147496861/1374389534720",
+        "5146063/41943040"
+      ],
+      "mixed_action_loss": "4200000000000000000041/10",
+      "action_losses": [
+        "420000000000000000006",
+        "2100000000000000000198/5"
+      ],
+      "action_regrets": [
+        "-19/10",
+        "-71/2"
+      ],
+      "smoothing_slack": "35/128"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 20,
+      "pending": 4,
+      "settled_weight": "21",
+      "copy_bounds": [
+        "0",
+        "28273059653152982562371/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "426008026977200483/253327479039590400"
+      ],
+      "residual": [
+        "3832642033053/2748779069440",
+        "-6567598729827/2748779069440",
+        "-44567321834773/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703147496861/2061584302080",
+        "5146063/62914560",
+        "-10113/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "192519990441/268435456",
+      "bound_squared_cauchy": "4668259909595657871911970619723/3830783690903856197350195200",
+      "sum_sqrt_upper": "438771/16384",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3264808579551/1374389534720",
+      "expert_losses": [
+        "6",
+        "15",
+        "1994676961/395612100"
+      ],
+      "expert_regrets": [
+        "-4981528628769/1374389534720",
+        "-17351034441249/1374389534720",
+        "-72493268104565270941/27186256502430105600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703147496861/1374389534720",
+        "5146063/41943040"
+      ],
+      "mixed_action_loss": "4200000000000000000041/10",
+      "action_losses": [
+        "420000000000000000006",
+        "2100000000000000000198/5"
+      ],
+      "action_regrets": [
+        "-19/10",
+        "-71/2"
+      ],
+      "smoothing_slack": "35/128"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 21,
+      "pending": 3,
+      "settled_weight": "21",
+      "copy_bounds": [
+        "0",
+        "28273059653152982562371/684997503323052441600",
+        "109785419446311321979705907/302231454903657293676544",
+        "426008026977200483/253327479039590400"
+      ],
+      "residual": [
+        "3832642033053/2748779069440",
+        "-6567598729827/2748779069440",
+        "-44567321834773/107202383708160",
+        "0",
+        "-2932225616483/2061584302080",
+        "-703147496861/2061584302080",
+        "5146063/62914560",
+        "-10113/8192",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "192519990441/268435456",
+      "bound_squared_cauchy": "4668259909595657871911970619723/3830783690903856197350195200",
+      "sum_sqrt_upper": "438771/16384",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3264808579551/1374389534720",
+      "expert_losses": [
+        "6",
+        "15",
+        "1994676961/395612100"
+      ],
+      "expert_regrets": [
+        "-4981528628769/1374389534720",
+        "-17351034441249/1374389534720",
+        "-72493268104565270941/27186256502430105600"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-703147496861/1374389534720",
+        "5146063/41943040"
+      ],
+      "mixed_action_loss": "4200000000000000000041/10",
+      "action_losses": [
+        "420000000000000000006",
+        "2100000000000000000198/5"
+      ],
+      "action_regrets": [
+        "-19/10",
+        "-71/2"
+      ],
+      "smoothing_slack": "35/128"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 22,
+      "pending": 2,
+      "settled_weight": "22",
+      "copy_bounds": [
+        "0",
+        "349421717793495682120451/8391219415707392409600",
+        "109785419446311321979705907/302231454903657293676544",
+        "426008026977200483/253327479039590400"
+      ],
+      "residual": [
+        "3666310743453/2748779069440",
+        "-6560285833827/2748779069440",
+        "-332548576363411/750416685957120",
+        "0",
+        "-2932225616483/2061584302080",
+        "-695834600861/2061584302080",
+        "53514329/503316480",
+        "-21951/16384",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "771718325625/1073741824",
+      "bound_squared_cauchy": "228951211897927516734531682926427/187708400854288953670159564800",
+      "sum_sqrt_upper": "878475/32768",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3267246211551/1374389534720",
+      "expert_losses": [
+        "7",
+        "15",
+        "102134861089/19384992900"
+      ],
+      "expert_regrets": [
+        "-6353480531489/1374389534720",
+        "-17348596809249/1374389534720",
+        "-3851876979866725476109/1332126568619075174400"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-695834600861/1374389534720",
+        "53514329/335544320"
+      ],
+      "mixed_action_loss": "4200000000000000000041/10",
+      "action_losses": [
+        "420000000000000000007",
+        "2100000000000000000198/5"
+      ],
+      "action_regrets": [
+        "-29/10",
+        "-71/2"
+      ],
+      "smoothing_slack": "71/256"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 23,
+      "pending": 1,
+      "settled_weight": "25",
+      "copy_bounds": [
+        "0",
+        "349421717793495682120451/8391219415707392409600",
+        "109785419446311321979705907/302231454903657293676544",
+        "426008026977200483/253327479039590400"
+      ],
+      "residual": [
+        "3666310743453/2748779069440",
+        "-6560285833827/2748779069440",
+        "-332548576363411/750416685957120",
+        "0",
+        "-2932225616483/2061584302080",
+        "-695834600861/2061584302080",
+        "53514329/503316480",
+        "-21951/16384",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "771718325625/1073741824",
+      "bound_squared_cauchy": "228951211897927516734531682926427/187708400854288953670159564800",
+      "sum_sqrt_upper": "878475/32768",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3267246211551/1374389534720",
+      "expert_losses": [
+        "7",
+        "18",
+        "29168401441/4846248225"
+      ],
+      "expert_regrets": [
+        "-6353480531489/1374389534720",
+        "-21471765413409/1374389534720",
+        "-4850971906331031856909/1332126568619075174400"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-695834600861/1374389534720",
+        "53514329/335544320"
+      ],
+      "mixed_action_loss": "4200000000000000000101/10",
+      "action_losses": [
+        "420000000000000000013",
+        "2100000000000000000228/5"
+      ],
+      "action_regrets": [
+        "-29/10",
+        "-71/2"
+      ],
+      "smoothing_slack": "37/128"
+    },
+    {
+      "version": "p306-scalar-v2.1",
+      "scope": "delay-scope",
+      "copies": 4,
+      "positive_bound_copies": 3,
+      "settled": 24,
+      "pending": 0,
+      "settled_weight": "126/5",
+      "copy_bounds": [
+        "0",
+        "349421717793495682120451/8391219415707392409600",
+        "109785419446311321979705907/302231454903657293676544",
+        "426008026977200483/253327479039590400"
+      ],
+      "residual": [
+        "3666310743453/2748779069440",
+        "-6560285833827/2748779069440",
+        "-332548576363411/750416685957120",
+        "0",
+        "-2932225616483/2061584302080",
+        "-695834600861/2061584302080",
+        "53514329/503316480",
+        "-21951/16384",
+        "-11582115/1048576"
+      ],
+      "bound_squared": "771718325625/1073741824",
+      "bound_squared_cauchy": "228951211897927516734531682926427/187708400854288953670159564800",
+      "sum_sqrt_upper": "878475/32768",
+      "sqrt_enclosure_bits": 16,
+      "own_loss": "3267246211551/1374389534720",
+      "expert_losses": [
+        "36/5",
+        "18",
+        "117642855409/19384992900"
+      ],
+      "expert_regrets": [
+        "-6628358438433/1374389534720",
+        "-21471765413409/1374389534720",
+        "-4917578234761985615629/1332126568619075174400"
+      ],
+      "bin_residuals": [
+        "0",
+        "-2932225616483/1374389534720",
+        "-695834600861/1374389534720",
+        "53514329/335544320"
+      ],
+      "mixed_action_loss": "840000000000000000021/2",
+      "action_losses": [
+        "2100000000000000000067/5",
+        "2100000000000000000233/5"
+      ],
+      "action_regrets": [
+        "-29/10",
+        "-361/10"
+      ],
+      "smoothing_slack": "371/1280"
+    }
+  ],
+  "scope": "Independent finite development checks; no final evaluation or principal time credit.",
+  "schema": "value_logic.p306.independent_integrated_audit_result.v1",
+  "start_utc": "2026-10-09T02:43:06.519958+00:00",
+  "end_utc": "2026-10-09T02:43:07.223982+00:00",
+  "execution_ns": 704050575,
+  "python": "3.12.14",
+  "module_version": "p306-scalar-v2.1",
+  "source_sha256": "b66af7ec64b7e690aaa15c0901b2ccb220f93f97962052607481ddd7ae240e07",
+  "production_matches_snapshot": true,
+  "legacy_source_sha256": "cbe6565492f3083c55bc966e1b31ae55f95aa026d87af378b1e2673f7e944be2",
+  "legacy_result_sha256": "5d3f7a2f4834bb45ff5a5516c7f5a9d5005cec7878c7048f74373204d8a5c1d3",
+  "audit_source_sha256": "79030c57945a230ba426ddd25f9a044254ef520b4953dfbf7ef3cdb7668ecd1d",
+  "contributor": "ChatGPT (GPT-6 Astra Pro), independent implementation reviewer",
+  "research_time_credit_ns": 0
+}

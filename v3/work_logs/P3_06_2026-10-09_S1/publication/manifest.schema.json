@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Value Logic P3-06 guarded delivery manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "package_id", "repository", "branch", "base_commit", "commit_subject", "receipt_path", "members", "files", "ledger"],
+  "properties": {
+    "schema": {"const": "value_logic.p306.delivery.v1"},
+    "package_id": {"type": "string", "pattern": "^value-logic-p306-[a-z0-9-]{1,100}$"},
+    "repository": {"const": "https://github.com/TristanMiano/value_logic.git"},
+    "branch": {"const": "main"},
+    "base_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "commit_subject": {"type": "string", "minLength": 1, "maxLength": 200},
+    "receipt_path": {"type": "string", "pattern": "^v3/work_logs/P3_06_2026-10-09_S1/publication/[^\\\\]+\\.json$"},
+    "members": {"type": "object", "required": ["apply_package.py", "Apply-And-Push.ps1"], "additionalProperties": {"$ref": "#/$defs/sha256"}},
+    "files": {"type": "array", "items": {"$ref": "#/$defs/file"}},
+    "ledger": {"$ref": "#/$defs/ledger"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "optional_sha256": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+    "mode": {"enum": [null, "100644", "100755"]},
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "before_sha256", "before_mode", "after_sha256", "after_mode", "payload"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "before_sha256": {"$ref": "#/$defs/optional_sha256"},
+        "before_mode": {"$ref": "#/$defs/mode"},
+        "after_sha256": {"$ref": "#/$defs/optional_sha256"},
+        "after_mode": {"$ref": "#/$defs/mode"},
+        "payload": {"anyOf": [{"type": "string", "pattern": "^payload/"}, {"type": "null"}]}
+      }
+    },
+    "ledger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "base_sha256", "base_bytes", "append_payload", "append_sha256", "append_rows"],
+      "properties": {
+        "path": {"const": "v3/time_ledger.csv"},
+        "base_sha256": {"$ref": "#/$defs/sha256"},
+        "base_bytes": {"type": "integer", "minimum": 1},
+        "append_payload": {"type": "string", "pattern": "^payload/"},
+        "append_sha256": {"$ref": "#/$defs/sha256"},
+        "append_rows": {"type": "integer", "minimum": 0}
+      }
+    }
+  }
+}

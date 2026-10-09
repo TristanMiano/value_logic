@@ -1,0 +1,840 @@
+{
+  "status": "API_FINDINGS",
+  "checks": 2413,
+  "failed_checks": [
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_empty_query",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Query identity must be new and nonempty."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_empty_query",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Query identity must be new and nonempty."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_integer_query",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Query identity must be new and nonempty."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_integer_query",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Query identity must be new and nonempty."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_negative_weight",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_negative_weight",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_boolean_weight",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction, never floats/bools."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_boolean_weight",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction, never floats/bools."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_float_weight",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction, never floats/bools."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_float_weight",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction, never floats/bools."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_undefined_fraction",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ZeroDivisionError",
+        "message": "Fraction(1, 0)"
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_undefined_fraction",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ZeroDivisionError",
+        "message": "Fraction(1, 0)"
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_zero_tolerance",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_zero_tolerance",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_negative_tolerance",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_negative_tolerance",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Nonnegative weight and positive tolerance required."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_boolean_tolerance",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction, never floats/bools."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_boolean_tolerance",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction, never floats/bools."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_negative_budget",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Root-search budget must be a nonnegative integer."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_negative_budget",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Root-search budget must be a nonnegative integer."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_boolean_budget",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Root-search budget must be a nonnegative integer."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_boolean_budget",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Root-search budget must be a nonnegative integer."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_float_budget",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Root-search budget must be a nonnegative integer."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_float_budget",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Root-search budget must be a nonnegative integer."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_missing_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "The forecast must give exactly the declared experts."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_missing_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "The forecast must give exactly the declared experts."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_extra_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "The forecast must give exactly the declared experts."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_extra_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "The forecast must give exactly the declared experts."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_negative_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Expert probabilities must lie in [0,1]."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_negative_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Expert probabilities must lie in [0,1]."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_large_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Expert probabilities must lie in [0,1]."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_large_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Expert probabilities must lie in [0,1]."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_boolean_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction, never floats/bools."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_boolean_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction, never floats/bools."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_fresh_float_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction, never floats/bools."
+      }
+    },
+    {
+      "group": "input_atomicity",
+      "name": "pool_busy_float_expert",
+      "passed": false,
+      "rejected": true,
+      "state_unchanged": false,
+      "error": {
+        "type": "ValueError",
+        "message": "Use integers, rational strings or Fraction, never floats/bools."
+      }
+    },
+    {
+      "group": "constructor_validation",
+      "name": "DelayedPool_empty_experts",
+      "passed": false,
+      "error": null
+    },
+    {
+      "group": "constructor_validation",
+      "name": "DelayedPool_zero_bins",
+      "passed": false,
+      "error": null
+    },
+    {
+      "group": "constructor_validation",
+      "name": "DelayedPool_zero_alpha",
+      "passed": false,
+      "error": null
+    },
+    {
+      "group": "constructor_validation",
+      "name": "DelayedPool_empty_scope",
+      "passed": false,
+      "error": null
+    },
+    {
+      "group": "constructor_validation",
+      "name": "Forecaster_nonstring_scope",
+      "passed": false,
+      "error": null
+    },
+    {
+      "group": "constructor_validation",
+      "name": "DelayedPool_nonstring_scope",
+      "passed": false,
+      "error": null
+    },
+    {
+      "group": "input_aliasing",
+      "name": "caller_names_detached",
+      "passed": false,
+      "stored_names": [
+        "zero",
+        "one",
+        "external_edit"
+      ]
+    },
+    {
+      "group": "input_aliasing",
+      "name": "caller_edit_does_not_break_settlement",
+      "passed": false,
+      "error": {
+        "type": "IndexError",
+        "message": "list index out of range"
+      },
+      "state_changed_on_failure": true,
+      "pending_cleared": true,
+      "settled": 1
+    }
+  ],
+  "passed_by_group": {
+    "constructor_validation": 4,
+    "delay": 7,
+    "growth": 12,
+    "input_aliasing": 0,
+    "input_atomicity": 37,
+    "potential": 2304,
+    "report_identity": 5
+  },
+  "total_by_group": {
+    "constructor_validation": 10,
+    "delay": 7,
+    "growth": 12,
+    "input_aliasing": 2,
+    "input_atomicity": 73,
+    "potential": 2304,
+    "report_identity": 5
+  },
+  "mathematical_failures": [],
+  "details": {
+    "independent_potential": {
+      "rounds": 384,
+      "two_outcome_checks": 768,
+      "allowance_positive": 128,
+      "budget_exhausted": 112,
+      "boundary_with_large_score": 96
+    },
+    "rational_growth": [
+      {
+        "profile": "dyadic",
+        "rounds": 16,
+        "elapsed_execution_ns": 12763706,
+        "score_evaluations": 228,
+        "bisections": 180,
+        "tolerance_not_met_count": 15,
+        "latest_probability": "4495/8192",
+        "latest_probability_denominator_bits": 14,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 58,
+          "max_denominator_bits": 55,
+          "sum_numerator_denominator_bits": 795
+        },
+        "retained_history": {
+          "fraction_occurrences": 240,
+          "max_numerator_bits": 44,
+          "max_denominator_bits": 54,
+          "sum_numerator_denominator_bits": 4965
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 42,
+          "max_denominator_bits": 52,
+          "sum_numerator_denominator_bits": 322
+        }
+      },
+      {
+        "profile": "dyadic",
+        "rounds": 32,
+        "elapsed_execution_ns": 26525054,
+        "score_evaluations": 468,
+        "bisections": 372,
+        "tolerance_not_met_count": 30,
+        "latest_probability": "4731/8192",
+        "latest_probability_denominator_bits": 14,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 59,
+          "max_denominator_bits": 55,
+          "sum_numerator_denominator_bits": 796
+        },
+        "retained_history": {
+          "fraction_occurrences": 480,
+          "max_numerator_bits": 45,
+          "max_denominator_bits": 54,
+          "sum_numerator_denominator_bits": 10227
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 41,
+          "max_denominator_bits": 52,
+          "sum_numerator_denominator_bits": 320
+        }
+      },
+      {
+        "profile": "dyadic",
+        "rounds": 64,
+        "elapsed_execution_ns": 52776306,
+        "score_evaluations": 948,
+        "bisections": 756,
+        "tolerance_not_met_count": 62,
+        "latest_probability": "4433/8192",
+        "latest_probability_denominator_bits": 14,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 60,
+          "max_denominator_bits": 55,
+          "sum_numerator_denominator_bits": 809
+        },
+        "retained_history": {
+          "fraction_occurrences": 960,
+          "max_numerator_bits": 45,
+          "max_denominator_bits": 54,
+          "sum_numerator_denominator_bits": 20787
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 44,
+          "max_denominator_bits": 52,
+          "sum_numerator_denominator_bits": 329
+        }
+      },
+      {
+        "profile": "dyadic",
+        "rounds": 128,
+        "elapsed_execution_ns": 105656087,
+        "score_evaluations": 1908,
+        "bisections": 1524,
+        "tolerance_not_met_count": 126,
+        "latest_probability": "4301/8192",
+        "latest_probability_denominator_bits": 14,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 61,
+          "max_denominator_bits": 55,
+          "sum_numerator_denominator_bits": 819
+        },
+        "retained_history": {
+          "fraction_occurrences": 1920,
+          "max_numerator_bits": 46,
+          "max_denominator_bits": 54,
+          "sum_numerator_denominator_bits": 41955
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 41,
+          "max_denominator_bits": 52,
+          "sum_numerator_denominator_bits": 314
+        }
+      },
+      {
+        "profile": "fixed_nondyadic",
+        "rounds": 16,
+        "elapsed_execution_ns": 12129150,
+        "score_evaluations": 193,
+        "bisections": 145,
+        "tolerance_not_met_count": 0,
+        "latest_probability": "883/2048",
+        "latest_probability_denominator_bits": 12,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 77,
+          "max_denominator_bits": 81,
+          "sum_numerator_denominator_bits": 974
+        },
+        "retained_history": {
+          "fraction_occurrences": 240,
+          "max_numerator_bits": 58,
+          "max_denominator_bits": 78,
+          "sum_numerator_denominator_bits": 5909
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 56,
+          "max_denominator_bits": 72,
+          "sum_numerator_denominator_bits": 416
+        }
+      },
+      {
+        "profile": "fixed_nondyadic",
+        "rounds": 32,
+        "elapsed_execution_ns": 24663900,
+        "score_evaluations": 411,
+        "bisections": 315,
+        "tolerance_not_met_count": 1,
+        "latest_probability": "547/1024",
+        "latest_probability_denominator_bits": 11,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 77,
+          "max_denominator_bits": 80,
+          "sum_numerator_denominator_bits": 912
+        },
+        "retained_history": {
+          "fraction_occurrences": 480,
+          "max_numerator_bits": 62,
+          "max_denominator_bits": 79,
+          "sum_numerator_denominator_bits": 12635
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 46,
+          "max_denominator_bits": 66,
+          "sum_numerator_denominator_bits": 361
+        }
+      },
+      {
+        "profile": "fixed_nondyadic",
+        "rounds": 64,
+        "elapsed_execution_ns": 50389789,
+        "score_evaluations": 858,
+        "bisections": 668,
+        "tolerance_not_met_count": 8,
+        "latest_probability": "2307/4096",
+        "latest_probability_denominator_bits": 13,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 79,
+          "max_denominator_bits": 81,
+          "sum_numerator_denominator_bits": 987
+        },
+        "retained_history": {
+          "fraction_occurrences": 960,
+          "max_numerator_bits": 63,
+          "max_denominator_bits": 80,
+          "sum_numerator_denominator_bits": 26164
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 50,
+          "max_denominator_bits": 69,
+          "sum_numerator_denominator_bits": 407
+        }
+      },
+      {
+        "profile": "fixed_nondyadic",
+        "rounds": 128,
+        "elapsed_execution_ns": 106896888,
+        "score_evaluations": 1770,
+        "bisections": 1388,
+        "tolerance_not_met_count": 28,
+        "latest_probability": "2129/4096",
+        "latest_probability_denominator_bits": 13,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 80,
+          "max_denominator_bits": 80,
+          "sum_numerator_denominator_bits": 979
+        },
+        "retained_history": {
+          "fraction_occurrences": 1920,
+          "max_numerator_bits": 66,
+          "max_denominator_bits": 80,
+          "sum_numerator_denominator_bits": 53337
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 50,
+          "max_denominator_bits": 69,
+          "sum_numerator_denominator_bits": 400
+        }
+      },
+      {
+        "profile": "fresh_prime_denominators",
+        "rounds": 16,
+        "elapsed_execution_ns": 15069130,
+        "score_evaluations": 227,
+        "bisections": 179,
+        "tolerance_not_met_count": 14,
+        "latest_probability": "4021/8192",
+        "latest_probability_denominator_bits": 14,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 1073,
+          "max_denominator_bits": 1071,
+          "sum_numerator_denominator_bits": 11587
+        },
+        "retained_history": {
+          "fraction_occurrences": 240,
+          "max_numerator_bits": 571,
+          "max_denominator_bits": 586,
+          "sum_numerator_denominator_bits": 25240
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 571,
+          "max_denominator_bits": 586,
+          "sum_numerator_denominator_bits": 2621
+        }
+      },
+      {
+        "profile": "fresh_prime_denominators",
+        "rounds": 32,
+        "elapsed_execution_ns": 35230063,
+        "score_evaluations": 466,
+        "bisections": 370,
+        "tolerance_not_met_count": 29,
+        "latest_probability": "4071/8192",
+        "latest_probability_denominator_bits": 14,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 2274,
+          "max_denominator_bits": 2271,
+          "sum_numerator_denominator_bits": 24496
+        },
+        "retained_history": {
+          "fraction_occurrences": 480,
+          "max_numerator_bits": 1188,
+          "max_denominator_bits": 1199,
+          "sum_numerator_denominator_bits": 87996
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 1188,
+          "max_denominator_bits": 1199,
+          "sum_numerator_denominator_bits": 5113
+        }
+      },
+      {
+        "profile": "fresh_prime_denominators",
+        "rounds": 64,
+        "elapsed_execution_ns": 93451334,
+        "score_evaluations": 946,
+        "bisections": 754,
+        "tolerance_not_met_count": 61,
+        "latest_probability": "4095/8192",
+        "latest_probability_denominator_bits": 14,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 4930,
+          "max_denominator_bits": 4926,
+          "sum_numerator_denominator_bits": 53053
+        },
+        "retained_history": {
+          "fraction_occurrences": 960,
+          "max_numerator_bits": 2496,
+          "max_denominator_bits": 2506,
+          "sum_numerator_denominator_bits": 337336
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 2496,
+          "max_denominator_bits": 2506,
+          "sum_numerator_denominator_bits": 10378
+        }
+      },
+      {
+        "profile": "fresh_prime_denominators",
+        "rounds": 128,
+        "elapsed_execution_ns": 326759388,
+        "score_evaluations": 1902,
+        "bisections": 1518,
+        "tolerance_not_met_count": 123,
+        "latest_probability": "4099/8192",
+        "latest_probability_denominator_bits": 14,
+        "certificate_state": {
+          "fraction_occurrences": 17,
+          "max_numerator_bits": 10789,
+          "max_denominator_bits": 10784,
+          "sum_numerator_denominator_bits": 116031
+        },
+        "retained_history": {
+          "fraction_occurrences": 1920,
+          "max_numerator_bits": 5442,
+          "max_denominator_bits": 5453,
+          "sum_numerator_denominator_bits": 1380421
+        },
+        "latest_report": {
+          "fraction_occurrences": 15,
+          "max_numerator_bits": 5442,
+          "max_denominator_bits": 5453,
+          "sum_numerator_denominator_bits": 22165
+        }
+      }
+    ],
+    "growth_measurement_scope": "Sizes are for exposed exact certificate state and retained reports, not every transient multiplication value or Python heap bytes. Timings cover this deterministic development run on the reported interpreter; no uniform bit-cost claim follows."
+  },
+  "schema": "value_logic.p306.independent_implementation_audit_result.v1",
+  "start_utc": "2026-10-09T02:26:41.855061+00:00",
+  "end_utc": "2026-10-09T02:26:42.598821+00:00",
+  "execution_ns": 743781256,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "source_path": "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/P3_06_2026-10-09_S1/development/preserved_rerun_v1/defensive_forecasting.py",
+  "source_sha256": "cbe6565492f3083c55bc966e1b31ae55f95aa026d87af378b1e2673f7e944be2",
+  "source_unchanged": true,
+  "audit_source_sha256": "88a867d67a4260e698cbcd1feedb8bfb95deec9cb810cf2753f79b3e242445c0",
+  "contributor": "ChatGPT (GPT-6 Astra Pro), independent implementation reviewer",
+  "research_time_credit_ns": 0,
+  "scope": "Finite development audit; neither final evaluation nor historical clock recovery."
+}
