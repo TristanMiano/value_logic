@@ -116,11 +116,13 @@ The [closing record](work_logs/P3_06_2026-10-09_S1.md) gives **90.210938375717**
 new research minutes. P3-07 is **complete** at its declared
 [bounded paid-reasoning scope](derivations/07_paid_reasoning.md), with
 **90.187687312067** observed research minutes. Phase research is
-**664.368606879483 minutes**, with **295.631393120517** remaining to the
+**754.515032780000 minutes**, with **205.484967220000** remaining to the
 960-minute floor. **P3-B has passed** at restricted mathematical/local implementation
-readiness. P3-08 remains unstarted. Optional paid-selective-feedback recurrence
-is recommended before it and remains unselected; see the [gate assessment](checkpoints/B_1.md).
-The contribution obligation remains **NOT YET SUPPORTED**.
+readiness. The author-selected **paid selective-feedback recurrence is complete**;
+see its [additive checkpoint](checkpoints/B_1_R_P3_B_A.md).
+P3-N01 is **SUPPORTED at modest formal-adaptation and implementation-synthesis
+scope**. Q3 comparative advantage remains open. P3-08 is the recommended next
+item and remains unstarted.
 
 ## Workspace
 
@@ -140,7 +142,8 @@ The contribution obligation remains **NOT YET SUPPORTED**.
 | Counterfactual semantics | [Construction](derivations/04_counterfactual_semantics.md) · [Extensions](derivations/04_selection_extensions.md) · [Sources](literature/04_source_contracts.md) · [Replacement code](checks/04_README.md) |
 | Sequential cost forecasts | [Construction and duties](derivations/06_cost_forecast_refinement.md) · [Repricing](derivations/06_price_replay.md) · [Capital comparison](derivations/06_capital_comparison.md) · [Calibration](derivations/06_calibration_scope.md) · [BRIA boundary](derivations/06_bria_boundary.md) |
 | Paid reasoning | [Rule and costs](derivations/07_paid_reasoning.md) · [Four-action extension](derivations/07_multi_action_forecasting.md) · [Analytical ordinary control](derivations/07_ordinary_analytic_profile.md) · [Acquisition planner](derivations/07_acquisition_planning.md) · [Closing record](work_logs/P3_07_2026-10-09_S1.md) |
-| Mathematics and implementation readiness | [P3-B decision](checkpoints/B_1.md) · [Current 21-duty overlay](checkpoints/B_1.v1.json) · [Optional recurrence advice](work_logs/P3_B_2026-10-09_S1/reviews/recurrence_agent/advice.md) |
+| Mathematics and implementation readiness | [P3-B decision](checkpoints/B_1.md) · [Recurrence supplement](checkpoints/B_1_R_P3_B_A.md) · [Current 21-duty overlay](checkpoints/B_1_R_P3_B_A.v1.json) |
+| Paid selective feedback | [Finite construction](derivations/07_selective_feedback.md) · [Observable performance](derivations/07_observable_performance.md) · [Primary-source comparison](literature/07_selective_feedback_sources.md) · [Closed recurrence](work_logs/R_P3_B_A_2026-10-09_S1.md) |
 | Mathematical Markdown | [Rendering conventions and guard](STYLE.md) |
 | Claims and open obligations | [Claim ledger](claim_ledger.md) |
 | Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |
@@ -214,6 +217,9 @@ remain development and no final challenge is frozen or exposed.
 
 ## P3-B completion and recurrence advice — October 9, 2026
 
+The following is the historical gate-boundary assessment. The subsequently
+selected and completed option A is recorded below.
+
 The [technical gate](checkpoints/B_1.md) is **PASS**. Independent targeted
 reviews reconstruct the received-source soundness bridge, sourcewise repair
 selection, all-current-optimum transport, forecast/feedback distinction and
@@ -242,3 +248,32 @@ minutes**, with no added gate floor, no historical inference and no parallel
 reviewer credit. P3-01–07 and the surviving defensive-forecasting evidence
 remain unchanged. P3-A/B are PASS; P3-08 is unstarted; P3-C/D are
 unattempted. No final challenge is frozen or exposed.
+
+
+## R-P3-B-A completion — October 9, 2026
+
+**The author-selected option A is complete**, with **90.146425900517** observed
+research minutes. The [checkpoint supplement](checkpoints/B_1_R_P3_B_A.md)
+accepts an exact-quota paid-feedback service, finite weight-state and action
+allowances, an adaptive actual-propensity extension, and observable performance
+certificates using purchased labels. All 23 development learner episodes and
+eight ordinary controls remain available with their original source bindings.
+
+The strongest ordinary exact table is cheaper and error-free on the admitted
+family. Fixed-state weights reduce the uniform learner's example bill by about
+64.6%, but do not reverse that comparison. Two-sided public diagnostics flag
+adverse Brier performance in ten uniform rows and no action advantage in any
+of the 23 rows. These are fixed-seed development formulas under a separately
+proved per-episode fair-bit confidence contract, not a coverage experiment.
+
+The [contribution assessment](work_logs/R_P3_B_A_2026-10-09_S1/contribution_assessment.md)
+now supports P3-N01 as a modest formal adaptation and implementation synthesis,
+with the source-specific economic obstruction and ordinary antecedents explicit.
+The prior gate judgment remains historical. U04 combined hard-state integration
+and Q3 affirmative comparative benefit remain open. **P3-08 is next and
+unstarted**. Option B remains available before final freeze if independent
+certificate delivery is central; option C remains a later semantic opportunity.
+Neither is selected. Phase research is **754.515032780000 minutes**, leaving
+**205.484967220000** to the 960-minute floor. Exact clocks, excluded recovery,
+append-only accounting and evidence preservation are in the
+[session close](work_logs/R_P3_B_A_2026-10-09_S1.md).

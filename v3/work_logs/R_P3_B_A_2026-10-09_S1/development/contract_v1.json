@@ -1,0 +1,44 @@
+{
+  "schema": "value_logic.selective_feedback.development_contract.v1",
+  "recorded_before_new_experiments": true,
+  "task": "R-P3-B-A",
+  "stage": "DEVELOPMENT",
+  "base_commit": "6ce7391b6a41c6c19397b00ce7b6a2d9b228b9a4",
+  "service": {
+    "family": "Existing 248 Euler modular-equality queries from P3-07",
+    "primes": [17, 31, 47, 61, 97],
+    "query": "Public p and a with 1<=a<p; decide a^((p-1)/2) mod p == 1.",
+    "tape": "Fixed before learner randomness; public generation uses no private labels. Repetitions are mathematical-key repetitions.",
+    "endpoint": "All-issued binary terminal decision loss; immutable prospective probability and Brier score are recorded separately.",
+    "loss": "0-1 terminal loss, optionally multiplied by one predeclared task price; no answer-dependent price changes.",
+    "purchase": "Cold checked completion through the existing P3-07 adapter. Exact answer may correct the selected terminal decision before acting.",
+    "cache": "No cache correction in the first learner; independently charged ordinary exact-cache and analytic-table controls remain available."
+  },
+  "learner": {
+    "blocks": "Equal powers of two B dividing T; one uniform purchase per block, selected by exactly log2(B) independent fair bits.",
+    "weight_quarantine": "Weights and expert functions are fixed throughout each block; no receipt changes later predictions in that same block.",
+    "experts": "Finite fixed stateless binary functions of the public mathematical input; exact names and code are source-bound before a run.",
+    "update": "Integer product weights: K=max(2,B-1); initially all weights 1; after the block multiply each weight by K-loss_i on the purchased row.",
+    "action": "Compute dyadic floor q=floor(2^h * weighted_action_1_mass / total_mass)/2^h and draw exactly h bits; use purchased answer only after issuing q and the prospective action.",
+    "sampling_separation": "The broker holds purchase positions separately; issue does not receive the purchase flag or label.",
+    "comparator": "Best fixed expert on the entire exogenous tape, with all-issued expert losses independent of learner randomness.",
+    "evaluation": "Only purchased receipts feed updates. A separate evaluator computes unpurchased labels after the learner transcript closes.",
+    "finite_bounds": "Prospectively admitted horizon, N, B, h, weight-bit bound and operation/storage/output caps; failure spending cannot disappear."
+  },
+  "resource_contract": {
+    "provider": "Actual existing-adapter category debits; reserve its verified cold-completion cap for every selected query.",
+    "controller": "Charge input validation, public expert evaluation, bounded random bits, integer arithmetic by an explicit operand-word tariff, retained state and output. Record this abstract tariff separately from physical runtime.",
+    "comparison": "Identical prices for common primitive categories; do not double-count a provider fee and the operations included in it.",
+    "controls": ["ordinary blocked product weights equivalence", "fixed binary experts", "direct fast binary modular action", "checked always-BUY", "ordinary semantic cache", "quadratic-residue membership table with paid construction and lookup"],
+    "negative_rule": "Do not slow exact computation, hide public structure, inflate fees, or omit controller/storage work to manufacture a favorable comparison."
+  },
+  "primary_targets": [
+    "Reconstruct the ordinary product-weights inequality and current-action block bridge independently.",
+    "Derive all-issued terminal loss plus actual query/controller/setup cost, with a dyadic rounding allowance.",
+    "Separate fixed-tape hindsight from min-of-expectations claims on history-dependent tapes.",
+    "Retain concrete counterexamples for immediate within-block learning and adaptive requests.",
+    "Check the finite implementation and price a legitimate service against its strongest public controls.",
+    "Determine a real break-even region or a scoped economic obstruction; preserve unfavorable results."
+  ],
+  "not_claimed": ["novelty of bought-current-action advice", "advantage over ordinary online learning", "arbitrary adaptive-request regret", "physical CPU or heap bound from abstract tariff", "final evaluation freeze", "activation of P3-08"]
+}

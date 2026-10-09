@@ -1,0 +1,496 @@
+{
+  "schema": "value_logic.selective_feedback.registry_transfer.v1",
+  "status": "PASS",
+  "stage": "DEVELOPMENT",
+  "recorded_utc": "2026-10-09T21:53:23.142789+00:00",
+  "kind": "Fresh registry-only procurement and exact source-diff transfer; no scientific rerun.",
+  "textual_diff_verification": "Exact equality after only the version-marker replacement and the initial-charge BudgetExceeded annotation guard.",
+  "successful_path_transfer": "The original charge executes once with identical inputs. Its new except clause is unentered in the 20 successful funded executions. No action, selector, feedback, arithmetic, resource-charge or capacity code changes. Version metadata changes separately.",
+  "current_registry": {
+    "version": "r-p3ba-euler-services-v1.2",
+    "files": [
+      {
+        "path": "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback.py",
+        "bytes": 25953,
+        "sha256": "f872ec2eb07df4722720763730932c33055e380f0ab76ddc3c848d79a5e70f48"
+      },
+      {
+        "path": "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_service.py",
+        "bytes": 26857,
+        "sha256": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32"
+      },
+      {
+        "path": "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_computation_adapter.py",
+        "bytes": 22795,
+        "sha256": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615"
+      }
+    ],
+    "resources": {
+      "total": 18996,
+      "by_category": {
+        "admission": 41,
+        "solve": 0,
+        "check": 0,
+        "acquisition": 0,
+        "storage": 46,
+        "cache": 0,
+        "forecast": 0,
+        "assessment": 0,
+        "profile": 18909,
+        "dependency_compile": 0,
+        "repair_search": 0
+      },
+      "operations": [
+        {
+          "category": "admission",
+          "operation": "source_registry_duplicate_lookup",
+          "units": 3
+        },
+        {
+          "category": "admission",
+          "operation": "source_registry_file_count_check",
+          "units": 1
+        },
+        {
+          "category": "admission",
+          "operation": "source_registry_file_size_check",
+          "units": 3
+        },
+        {
+          "category": "admission",
+          "operation": "source_registry_path_length_check",
+          "units": 3
+        },
+        {
+          "category": "admission",
+          "operation": "source_registry_path_word_read",
+          "units": 31
+        },
+        {
+          "category": "profile",
+          "operation": "source_registry_file_stat",
+          "units": 3
+        },
+        {
+          "category": "profile",
+          "operation": "source_registry_sha256_word",
+          "units": 9453
+        },
+        {
+          "category": "profile",
+          "operation": "source_registry_source_word_read",
+          "units": 9453
+        },
+        {
+          "category": "storage",
+          "operation": "source_registry_hash_word_write",
+          "units": 12
+        },
+        {
+          "category": "storage",
+          "operation": "source_registry_path_word_write",
+          "units": 31
+        },
+        {
+          "category": "storage",
+          "operation": "source_registry_size_word_write",
+          "units": 3
+        }
+      ]
+    }
+  },
+  "old_registry_units": 18970,
+  "registry_only_delta_units": 26,
+  "transfers": [
+    {
+      "arm": "main_T992_B2_stateexact_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 466620,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 466646,
+      "unchanged_observed_ongoing_units": 447650,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "359823/500",
+          "conditional_action_mean_cold_total": "1460954133/2048000"
+        },
+        "100": {
+          "realized_action_cold_total": "12883323/500",
+          "conditional_action_mean_cold_total": "12870500877/512000"
+        }
+      }
+    },
+    {
+      "arm": "main_T992_B2_state16_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 464269,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 464295,
+      "unchanged_observed_ongoing_units": 445299,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "143459/200",
+          "conditional_action_mean_cold_total": "582578139/819200"
+        },
+        "100": {
+          "realized_action_cold_total": "5152859/200",
+          "conditional_action_mean_cold_total": "5150779491/204800"
+        }
+      }
+    },
+    {
+      "arm": "main_T992_B4_stateexact_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 375777,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 375803,
+      "unchanged_observed_ongoing_units": 356807,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "732803/1000",
+          "conditional_action_mean_cold_total": "757899397/1024000"
+        },
+        "100": {
+          "realized_action_cold_total": "36075803/1000",
+          "conditional_action_mean_cold_total": "9423133693/256000"
+        }
+      }
+    },
+    {
+      "arm": "main_T992_B4_state16_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 339087,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 339113,
+      "unchanged_observed_ongoing_units": 320117,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "697113/1000",
+          "conditional_action_mean_cold_total": "5762873571/8192000"
+        },
+        "100": {
+          "realized_action_cold_total": "36139113/1000",
+          "conditional_action_mean_cold_total": "75316000299/2048000"
+        }
+      }
+    },
+    {
+      "arm": "main_T992_B8_stateexact_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 321667,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 321693,
+      "unchanged_observed_ongoing_units": 302697,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "763693/1000",
+          "conditional_action_mean_cold_total": "3092811153/4096000"
+        },
+        "100": {
+          "realized_action_cold_total": "44521693/1000",
+          "conditional_action_mean_cold_total": "44708329257/1024000"
+        }
+      }
+    },
+    {
+      "arm": "main_T992_B8_state16_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 274589,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 274615,
+      "unchanged_observed_ongoing_units": 255619,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "143323/200",
+          "conditional_action_mean_cold_total": "579995583/819200"
+        },
+        "100": {
+          "realized_action_cold_total": "8894923/200",
+          "conditional_action_mean_cold_total": "8932015527/204800"
+        }
+      }
+    },
+    {
+      "arm": "main_T992_B16_stateexact_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 271265,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 271291,
+      "unchanged_observed_ongoing_units": 252295,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "717291/1000",
+          "conditional_action_mean_cold_total": "47066499/64000"
+        },
+        "100": {
+          "realized_action_cold_total": "44871291/1000",
+          "conditional_action_mean_cold_total": "746937531/16000"
+        }
+      }
+    },
+    {
+      "arm": "main_T992_B16_state16_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 243781,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 243807,
+      "unchanged_observed_ongoing_units": 224811,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "689807/1000",
+          "conditional_action_mean_cold_total": "2899688097/4096000"
+        },
+        "100": {
+          "realized_action_cold_total": "44843807/1000",
+          "conditional_action_mean_cold_total": "47776023993/1024000"
+        }
+      }
+    },
+    {
+      "arm": "main_T3968_B2_stateexact_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 3207923,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 3207949,
+      "unchanged_observed_ongoing_units": 3188953,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "4164949/1000",
+          "conditional_action_mean_cold_total": "34067768333/8192000"
+        },
+        "100": {
+          "realized_action_cold_total": "98907949/1000",
+          "conditional_action_mean_cold_total": "201276132677/2048000"
+        }
+      }
+    },
+    {
+      "arm": "main_T3968_B2_state16_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 1792525,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 1792551,
+      "unchanged_observed_ongoing_units": 1773555,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "2746551/1000",
+          "conditional_action_mean_cold_total": "22497091167/8192000"
+        },
+        "100": {
+          "realized_action_cold_total": "97192551/1000",
+          "conditional_action_mean_cold_total": "198983978823/2048000"
+        }
+      }
+    },
+    {
+      "arm": "main_T3968_B4_stateexact_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 3158529,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 3158555,
+      "unchanged_observed_ongoing_units": 3139559,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "921111/200",
+          "conditional_action_mean_cold_total": "3792329331/819200"
+        },
+        "100": {
+          "realized_action_cold_total": "29571711/200",
+          "conditional_action_mean_cold_total": "30767898939/204800"
+        }
+      }
+    },
+    {
+      "arm": "main_T3968_B4_state16_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 1291318,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 1291344,
+      "unchanged_observed_ongoing_units": 1272348,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "345918/125",
+          "conditional_action_mean_cold_total": "1420189253/512000"
+        },
+        "100": {
+          "realized_action_cold_total": "18611418/125",
+          "conditional_action_mean_cold_total": "19140820157/128000"
+        }
+      }
+    },
+    {
+      "arm": "main_T3968_B8_stateexact_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 2935898,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 2935924,
+      "unchanged_observed_ongoing_units": 2916928,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "1159731/250",
+          "conditional_action_mean_cold_total": "37787177533/8192000"
+        },
+        "100": {
+          "realized_action_cold_total": "43308981/250",
+          "conditional_action_mean_cold_total": "349414975477/2048000"
+        }
+      }
+    },
+    {
+      "arm": "main_T3968_B8_state16_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 1039110,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 1039136,
+      "unchanged_observed_ongoing_units": 1020140,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "342642/125",
+          "conditional_action_mean_cold_total": "11124891181/4096000"
+        },
+        "100": {
+          "realized_action_cold_total": "21404892/125",
+          "conditional_action_mean_cold_total": "172778828389/1024000"
+        }
+      }
+    },
+    {
+      "arm": "main_T3968_B16_stateexact_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 1983337,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 1983363,
+      "unchanged_observed_ongoing_units": 1964367,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "3813363/1000",
+          "conditional_action_mean_cold_total": "15684179723/4096000"
+        },
+        "100": {
+          "realized_action_cold_total": "184983363/1000",
+          "conditional_action_mean_cold_total": "191039085587/1024000"
+        }
+      }
+    },
+    {
+      "arm": "main_T3968_B16_state16_seed307201",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 914093,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 914119,
+      "unchanged_observed_ongoing_units": 895123,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "2744119/1000",
+          "conditional_action_mean_cold_total": "22609419473/8192000"
+        },
+        "100": {
+          "realized_action_cold_total": "183914119/1000",
+          "conditional_action_mean_cold_total": "379896031337/2048000"
+        }
+      }
+    },
+    {
+      "arm": "variation_T992_B8_stateexact_seed307203",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 322385,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 322411,
+      "unchanged_observed_ongoing_units": 303415,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "764411/1000",
+          "conditional_action_mean_cold_total": "3079703581/4096000"
+        },
+        "100": {
+          "realized_action_cold_total": "44522411/1000",
+          "conditional_action_mean_cold_total": "44307851989/1024000"
+        }
+      }
+    },
+    {
+      "arm": "variation_T992_B8_state16_seed307203",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 275106,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 275132,
+      "unchanged_observed_ongoing_units": 256136,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "179283/250",
+          "conditional_action_mean_cold_total": "5772163719/8192000"
+        },
+        "100": {
+          "realized_action_cold_total": "11118783/250",
+          "conditional_action_mean_cold_total": "88520529711/2048000"
+        }
+      }
+    },
+    {
+      "arm": "variation_T992_B8_stateexact_seed307207",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 322482,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 322508,
+      "unchanged_observed_ongoing_units": 303512,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "189127/250",
+          "conditional_action_mean_cold_total": "3078549393/4096000"
+        },
+        "100": {
+          "realized_action_cold_total": "10930627/250",
+          "conditional_action_mean_cold_total": "44269163817/1024000"
+        }
+      }
+    },
+    {
+      "arm": "variation_T992_B8_state16_seed307207",
+      "observed_version": "r-p3-b-a-blocked-prod-v1.1",
+      "transferred_version": "r-p3-b-a-blocked-prod-v1.2",
+      "observed_cold_units": 275026,
+      "registry_only_delta_units": 26,
+      "derived_current_cold_units": 275052,
+      "unchanged_observed_ongoing_units": 256056,
+      "derived_current_price_totals": {
+        "1": {
+          "realized_action_cold_total": "177513/250",
+          "conditional_action_mean_cold_total": "5768377609/8192000"
+        },
+        "100": {
+          "realized_action_cold_total": "10943763/250",
+          "conditional_action_mean_cold_total": "88442097121/2048000"
+        }
+      }
+    }
+  ],
+  "controls": "Control code and service+adapter closure unchanged; retain observed control costs.",
+  "physical_runtime": "Retain v1.1 observed runtime only; no v1.2 runtime inferred.",
+  "source_hashes": {
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/run_001/sources/07_selective_feedback.py": "d103cfdf9356c7e977df53c27bd57c26adc8df59a954c7c4dac2a0d537ad3af4",
+    "v3/checks/07_selective_feedback.py": "f872ec2eb07df4722720763730932c33055e380f0ab76ddc3c848d79a5e70f48",
+    "v3/checks/07_selective_feedback_service.py": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32",
+    "v3/checks/07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/service_agent/reprice_current_registry.py": "4db6d396bb4e32c5d3a0f0490205697afdf8918131d6a11a0b5f0f838ffbce53"
+  },
+  "principal_clock_credit_ns": 0
+}

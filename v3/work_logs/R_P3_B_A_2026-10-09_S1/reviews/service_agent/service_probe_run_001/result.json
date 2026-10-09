@@ -1,0 +1,316 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "v3/checks/07_selective_feedback_service.py": "3055ddba39b037c9c291f8807fcb95ac7965038fc4a92add2f7c4bb8def76f5b",
+    "v3/checks/07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/service_agent/service_probe.py": "04ca84bff219924d9fb301a6b60b0fef9bd5075dbfbe8fd9eb4477e5e4ccaf96",
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/contract_v1.json": "2d3cbed65745bd6a45109dbfc901fc52efe704cebb77aeb2829001fdea1eb226"
+  },
+  "checked_queries": 248,
+  "positive_queries": 124,
+  "table_square_reduce_evaluations": 124,
+  "table_bitset_words": 6,
+  "table_setup_resources": {
+    "total": 1611,
+    "by_category": {
+      "admission": 13,
+      "solve": 1017,
+      "check": 145,
+      "acquisition": 0,
+      "storage": 436,
+      "cache": 0,
+      "forecast": 0,
+      "assessment": 0,
+      "profile": 0,
+      "dependency_compile": 0,
+      "repair_search": 0
+    },
+    "operations": [
+      {
+        "category": "admission",
+        "operation": "square_table_family_source_read",
+        "units": 8
+      },
+      {
+        "category": "admission",
+        "operation": "square_table_public_prime_read",
+        "units": 5
+      },
+      {
+        "category": "check",
+        "operation": "prime_lower_bound_test",
+        "units": 5
+      },
+      {
+        "category": "check",
+        "operation": "prime_trial_bound_compare",
+        "units": 31
+      },
+      {
+        "category": "check",
+        "operation": "prime_trial_increment",
+        "units": 26
+      },
+      {
+        "category": "check",
+        "operation": "prime_trial_remainder",
+        "units": 26
+      },
+      {
+        "category": "check",
+        "operation": "prime_trial_square",
+        "units": 31
+      },
+      {
+        "category": "check",
+        "operation": "prime_trial_zero_compare",
+        "units": 26
+      },
+      {
+        "category": "solve",
+        "operation": "square_table_bit_or",
+        "units": 124
+      },
+      {
+        "category": "solve",
+        "operation": "square_table_half_range_subtract_divide",
+        "units": 10
+      },
+      {
+        "category": "solve",
+        "operation": "square_table_loop_bound_compare",
+        "units": 129
+      },
+      {
+        "category": "solve",
+        "operation": "square_table_loop_increment",
+        "units": 124
+      },
+      {
+        "category": "solve",
+        "operation": "square_table_mask_shift",
+        "units": 124
+      },
+      {
+        "category": "solve",
+        "operation": "square_table_modular_reduce",
+        "units": 124
+      },
+      {
+        "category": "solve",
+        "operation": "square_table_modular_square",
+        "units": 124
+      },
+      {
+        "category": "solve",
+        "operation": "square_table_word_count_add_divide",
+        "units": 10
+      },
+      {
+        "category": "solve",
+        "operation": "square_table_word_divide_remainder",
+        "units": 248
+      },
+      {
+        "category": "storage",
+        "operation": "prime_trial_divisor_initial_write",
+        "units": 5
+      },
+      {
+        "category": "storage",
+        "operation": "prime_trial_divisor_write",
+        "units": 26
+      },
+      {
+        "category": "storage",
+        "operation": "square_table_final_reference_copy",
+        "units": 5
+      },
+      {
+        "category": "storage",
+        "operation": "square_table_final_word_copy",
+        "units": 6
+      },
+      {
+        "category": "storage",
+        "operation": "square_table_header_word_write",
+        "units": 6
+      },
+      {
+        "category": "storage",
+        "operation": "square_table_loop_index_write",
+        "units": 124
+      },
+      {
+        "category": "storage",
+        "operation": "square_table_loop_initial_write",
+        "units": 5
+      },
+      {
+        "category": "storage",
+        "operation": "square_table_prime_table_reference_write",
+        "units": 5
+      },
+      {
+        "category": "storage",
+        "operation": "square_table_word_read",
+        "units": 124
+      },
+      {
+        "category": "storage",
+        "operation": "square_table_word_write",
+        "units": 124
+      },
+      {
+        "category": "storage",
+        "operation": "square_table_zero_word_write",
+        "units": 6
+      }
+    ]
+  },
+  "cache_setup_resources": {
+    "total": 503,
+    "by_category": {
+      "admission": 1,
+      "solve": 0,
+      "check": 0,
+      "acquisition": 0,
+      "storage": 502,
+      "cache": 0,
+      "forecast": 0,
+      "assessment": 0,
+      "profile": 0,
+      "dependency_compile": 0,
+      "repair_search": 0
+    },
+    "operations": [
+      {
+        "category": "admission",
+        "operation": "cache_capacity_check",
+        "units": 1
+      },
+      {
+        "category": "storage",
+        "operation": "semantic_cache_empty_slot_write",
+        "units": 248
+      },
+      {
+        "category": "storage",
+        "operation": "semantic_cache_fifo_empty_word_write",
+        "units": 248
+      },
+      {
+        "category": "storage",
+        "operation": "semantic_cache_header_word_write",
+        "units": 6
+      }
+    ]
+  },
+  "registry": {
+    "version": "r-p3ba-euler-services-v1",
+    "files": [
+      {
+        "path": "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_service.py",
+        "bytes": 26500,
+        "sha256": "3055ddba39b037c9c291f8807fcb95ac7965038fc4a92add2f7c4bb8def76f5b"
+      },
+      {
+        "path": "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_computation_adapter.py",
+        "bytes": 22795,
+        "sha256": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615"
+      }
+    ],
+    "resources": {
+      "total": 12387,
+      "by_category": {
+        "admission": 28,
+        "solve": 0,
+        "check": 0,
+        "acquisition": 0,
+        "storage": 31,
+        "cache": 0,
+        "forecast": 0,
+        "assessment": 0,
+        "profile": 12328,
+        "dependency_compile": 0,
+        "repair_search": 0
+      },
+      "operations": [
+        {
+          "category": "admission",
+          "operation": "source_registry_duplicate_lookup",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "source_registry_file_count_check",
+          "units": 1
+        },
+        {
+          "category": "admission",
+          "operation": "source_registry_file_size_check",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "source_registry_path_length_check",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "source_registry_path_word_read",
+          "units": 21
+        },
+        {
+          "category": "profile",
+          "operation": "source_registry_file_stat",
+          "units": 2
+        },
+        {
+          "category": "profile",
+          "operation": "source_registry_sha256_word",
+          "units": 6163
+        },
+        {
+          "category": "profile",
+          "operation": "source_registry_source_word_read",
+          "units": 6163
+        },
+        {
+          "category": "storage",
+          "operation": "source_registry_hash_word_write",
+          "units": 8
+        },
+        {
+          "category": "storage",
+          "operation": "source_registry_path_word_write",
+          "units": 21
+        },
+        {
+          "category": "storage",
+          "operation": "source_registry_size_word_write",
+          "units": 2
+        }
+      ]
+    }
+  },
+  "per_domain_actual_units": {
+    "checked": 70096,
+    "direct": 21446,
+    "table": 9614,
+    "cache_cold": 25166,
+    "cache_warm": 9366
+  },
+  "checked_max_units": 300,
+  "direct_max_units": 91,
+  "expert_total_units": 9614,
+  "scope": "248 distinct deterministic keys checked; cache warm pass changes request IDs. These are service-correctness/resource observations, not learner performance or an IID experiment.",
+  "binding_and_caps": "PASS",
+  "frozen_records": "PASS",
+  "failure_costs": "PASS",
+  "wrong_source_and_family": "PASS",
+  "fifo_eviction": "PASS",
+  "source_registry": "PASS",
+  "principal_clock_credit_ns": 0,
+  "finished_utc": "2026-10-09T21:30:23.426749+00:00"
+}

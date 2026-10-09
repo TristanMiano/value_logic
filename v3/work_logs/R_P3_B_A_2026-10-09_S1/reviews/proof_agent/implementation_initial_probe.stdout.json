@@ -1,0 +1,49 @@
+{
+  "source_sha256": "2f718fdcc407994f0ab1d11e3ecc159e611ce724084170e8d5e7bc9fdd3353e1",
+  "service_sha256": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32",
+  "source_policy": "Initial controller unchanged; listed in-memory test shims only.",
+  "initial_integrated_execution": {
+    "exception": "Rejected",
+    "message": "The purchased checked answer does not bind this issued request.",
+    "meter_attached": true
+  },
+  "successful_receipt_status_mismatch": {
+    "receipt_status": "success",
+    "receipt_checked": true,
+    "exception": "Rejected",
+    "message": "The purchased checked answer does not bind this issued request.",
+    "purchase_invoice_paid": 114,
+    "close_rejection_additional_spending": 65,
+    "pending_record_preserved": true,
+    "no_success_claim": true
+  },
+  "state_chronology_with_status_spelling_fixture": {
+    "fixture": "dataclasses.replace(receipt, status='answered')",
+    "weights_frozen_after_bought_first_round": true,
+    "weights_update_only_after_second_round": true,
+    "feedback_cleared_after_block": true,
+    "rounds_closed": 2,
+    "purchases": 1
+  },
+  "low_level_bit_meter_identity": {
+    "accepted_different_bit_meter": true,
+    "execute_uses_shared_meter": true
+  },
+  "invalid_seed_after_paid_startup": {
+    "fixtures": [
+      "service feature cap set to 4096 in memory",
+      "CostMeter constructor observed without changing charges"
+    ],
+    "exception": "Rejected",
+    "message": "development seed outside [0, 18446744073709551615].",
+    "actual_meter_total": 1001,
+    "exception_has_meter": false
+  },
+  "sampler_transient_width": {
+    "contract_prediction_working_bits": 38,
+    "second_action_offset": 33,
+    "cross_word_transient_bits": 95,
+    "larger_than_named_working_bits": true
+  },
+  "result": "Initial source blocked at service interface; qualified state transitions and spending diagnostics recorded."
+}

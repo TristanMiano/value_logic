@@ -14,8 +14,8 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **664.368606879483 minutes**;
-**295.631393120517 minutes** remain to the 960-minute floor.
+Phase-three qualifying research is **754.515032780000 minutes**;
+**205.484967220000 minutes** remain to the 960-minute floor.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
 The [first 240-minute checkpoint](v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md)
@@ -38,11 +38,14 @@ ordinary analytical/Bellman controls, exact negative cases and scoped review.
 with **12.208499960967 measured research minutes** and no added gate floor.
 [Gate assessment](v3/checkpoints/B_1.md) and [bound contract](v3/checkpoints/B_1.v1.json)
 record the independently reconstructed bridges, remaining integration duty and
-five-question judgment. **Next: P3-08, unstarted.** The recommended optional
-[paid-selective-feedback recurrence](v3/work_logs/P3_B_2026-10-09_S1/recurrence_options.json)
-is unselected; the author may choose it before P3-08. Neither begins here.
-Phase two remains complete; P3-C–D remain unattempted. P3-N01 remains
-**NOT YET SUPPORTED**. All executable evidence remains development; no final
+five-question judgment. The selected **R-P3-B-A (option A) is COMPLETE**, with
+**90.146425900517 measured research minutes**. Its [additive checkpoint](v3/checkpoints/B_1_R_P3_B_A.md)
+and [current 21-duty overlay](v3/checkpoints/B_1_R_P3_B_A.v1.json) accept the finite
+paid-feedback and observable-performance guarantees and the source-specific
+ordinary-table cost obstruction. **Next: P3-08, unstarted.**
+Phase two remains complete; P3-C–D remain unattempted. P3-N01 is now
+**SUPPORTED at modest formal-adaptation and implementation-synthesis scope**;
+Q3 affirmative advantage over the strongest ordinary combination remains open. All executable evidence remains development; no final
 challenge is frozen or exposed. The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)
 also records the authorized Markdown repair and preserves prior history.
 
@@ -260,10 +263,23 @@ performance superiority are separate claims and are not completion requirements.
   steps. Unresolved errors in downstream premises block the gate. No added floor.
   Completed: [B_1](v3/checkpoints/B_1.md), its [21-duty overlay](v3/checkpoints/B_1.v1.json),
   and [exact session](v3/work_logs/P3_B_2026-10-09_S1.md). No blocking repair.
-  A combined reasoner remains P3-08 work. Optional recurrence A is recommended
-  now for paid selective feedback; B concerns equal certificate delivery before
-  freeze, and C concerns counterpossible-policy robustness later in the phase.
-  All three remain unselected, separate from R-P3-N01.
+  A combined reasoner remains P3-08 work. The author selected recurrence A,
+  now completed in the [additive supplement](v3/checkpoints/B_1_R_P3_B_A.md).
+  B remains optional before freeze if equal certificate delivery matters;
+  C remains optional later for counterpossible-policy robustness. Neither is
+  selected, and R-P3-N01 remains distinct and unselected.
+
+- [x] **R-P3-B-A — paid selective feedback. Research90. COMPLETE.**
+
+  Selected option A adds an exact-quota finite-state learning/decision service,
+  propensity-aware allocation, immutable forecast scoring and public-only
+  performance certificates. The strongest ordinary exact table wins the
+  declared terminal-answer cost comparison. [Construction](v3/derivations/07_selective_feedback.md),
+  [observable companion](v3/derivations/07_observable_performance.md),
+  [review and contribution](v3/work_logs/R_P3_B_A_2026-10-09_S1/contribution_assessment.md),
+  and [closed session](v3/work_logs/R_P3_B_A_2026-10-09_S1.md).
+  Observed research: **90.146425900517 minutes**. Earlier work and the
+  defensive-forecasting addendum remain preserved. No new final evaluation.
 
 ## 6. Cycle III — build and run a discriminating challenge
 
@@ -357,11 +373,11 @@ phase. Prospective replanning can replace an unstarted task with a better
 60/90-minute evidence chunk while retaining all five questions, the total
 floor, accepted obligations and the abandoned alternative's record.
 
-**Active repair queue: empty. P3-N01 is an open contribution-development
-obligation, not a detected defect. P3-01–07 are complete at their declared
-scopes. P3-A and P3-B have passed at their restricted readiness scopes.
-Next: P3-08, unstarted; P3-C–D remain unattempted. Optional recurrence A is
-recommended before P3-08 but is unselected and is not a blocking repair.**
+**Active repair queue: empty. P3-01–07 and selected recurrence R-P3-B-A are
+complete at their declared scopes. P3-A and P3-B retain their restricted PASS.
+P3-N01 is SUPPORTED at the recorded modest synthesis scope; its later author
+assessment remains open at P3-C. Next: P3-08, unstarted. P3-C–D remain
+unattempted. Options B/C and R-P3-N01 are unselected.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original
 register. Neither is required or activated by this plan. General neural

@@ -1,0 +1,27 @@
+--- initial_scope_snapshot
++++ scope_corrected_main
+@@ -194,7 +194,9 @@
+ 
+ Buying every answer ($`B=1`$) has zero terminal task loss and the complete
+ purchase bill. With one expert there is no need for a learning update. These
+-trivial endpoints can be executed but are not the substantive learning result.
++endpoints are mathematical checks, not the substantive learning result. The
++current source-bound `execute()` fixes the four-expert library; it does not
++execute a one-expert service.
+ 
+ ## 4. Finite probabilities and bounded storage
+ 
+@@ -792,8 +794,11 @@
+ in the field. Enumerating $`j=1,\ldots,(p-1)/2`$ gives one representative
+ of each square. The implementation verifies the listed primes by paid trial
+ division and uses six 64-bit table words. Construction costs 1,611 units;
+-its finite-domain correctness and complete actual invoices are preserved in
+-the [service design](../work_logs/R_P3_B_A_2026-10-09_S1/reviews/service_agent/design.md).
++its finite-domain correctness argument is in the
++[service design](../work_logs/R_P3_B_A_2026-10-09_S1/reviews/service_agent/design.md),
++and the construction charge and complete actual invoices are preserved in the
++[executed comparison](../work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/run_001/result.json)
++and its [analysis](../work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/analysis.md).
+ 
+ Let A(q) be the family-admission cost shared by the expert evaluator and table
+ lookup. The implemented expert call costs A(q)+9 and table lookup A(q)+10.

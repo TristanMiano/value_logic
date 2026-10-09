@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "stage": "DEVELOPMENT",
+  "name": "main_T992_B2_stateexact_seed307201",
+  "kind": "main",
+  "horizon": 992,
+  "block_size": 2,
+  "state_bits": null,
+  "seed": 307201,
+  "contract": {
+    "version": "r-p3-b-a-blocked-prod-v1.1",
+    "horizon": 992,
+    "block_size": 2,
+    "expert_count": 4,
+    "action_bits": 16,
+    "quota": 496,
+    "state_bits": null,
+    "k": 2,
+    "random_bits": 16368,
+    "individual_weight_bits": 497,
+    "prediction_working_bits": 517,
+    "sampler_working_bits": 95,
+    "maximum_operand_bits": 517
+  },
+  "learner": {
+    "version": "r-p3-b-a-blocked-prod-v1.1",
+    "contract": {
+      "version": "r-p3-b-a-blocked-prod-v1.1",
+      "horizon": 992,
+      "block_size": 2,
+      "expert_count": 4,
+      "action_bits": 16,
+      "quota": 496,
+      "state_bits": null,
+      "k": 2,
+      "random_bits": 16368,
+      "individual_weight_bits": 497,
+      "prediction_working_bits": 517,
+      "sampler_working_bits": 95,
+      "maximum_operand_bits": 517
+    },
+    "rounds_closed": 992,
+    "purchases": 496,
+    "completed": true,
+    "peak_weight_bits": 273,
+    "peak_prediction_working_bits": 289,
+    "random_bits_consumed": 16368,
+    "randomness_provenance": "deterministic-development-mt-seed:307201",
+    "final_weights": [
+      926336713898529563388567880069503262826159877325124512315660672063305037119488,
+      220855883097298041197912187592864814478435487109452369765200775161577472,
+      55213970774324510299478046898216203619608871777363092441300193790394368,
+      7588550360256754183279148073529370729071901715047420004889892225542594864082845696
+    ]
+  },
+  "resource_units": {
+    "cold_total": 466620,
+    "source_registry": 18970,
+    "ongoing_including_learner_initialization": 447650,
+    "purchased_checked_services": 141346,
+    "nonpurchase_excluding_registry": 306304,
+    "funded_cap": 3312618
+  },
+  "evaluation": {
+    "prospective_sampled_01_loss": 482,
+    "terminal_sampled_01_loss": 253,
+    "conditional_expected_prospective_01_loss": "15787963/32768",
+    "conditional_expected_terminal_01_loss": "4042105/16384",
+    "conditional_expectation_scope": "Only action bits averaged for this realized selector/label path; fixed-tape weights do not depend on sampled actions. No selector average or IID confidence statement.",
+    "immutable_issued_brier": "115404534131/268435456",
+    "fixed_expert_all_issued_losses": {
+      "constant_zero": 496,
+      "constant_one": 496,
+      "odd_base": 528,
+      "lower_half_base": 464
+    },
+    "fixed_expert_role": "Four fixed-library hindsight diagnostics; no post-hoc best expert is claimed to be a prospectively deployed policy.",
+    "same_selector_corrected_expert_losses": {
+      "constant_zero": 259,
+      "constant_one": 237,
+      "odd_base": 267,
+      "lower_half_base": 240
+    },
+    "corrected_expert_cost_basis": "Counterfactual substitution of each fixed expert's unbought terminal action, retaining the SAME COMPLETE executed learner invoice, selected receipts, internal updates and exogenous tape. Not a separately optimized or deployed control.",
+    "theorem_bounds": {
+      "kind": "Unconditional expectation bounds over independent fair selectors/action bits on the fixed tape; not per-seed acceptance tests.",
+      "log_N_lower": "4113367458871726488827132607237684211737122750172035768836182971904/2967167417134138861522867601505648593729347339831292629241943359375",
+      "log_N_upper": "164534698354869081238612394094549356114163531607843424783206842809253/118686696685365554460914704060225943749173893593251705169677734375000",
+      "log_enclosure": "32 positive atanh-series terms plus explicit geometric upper tail; Fraction arithmetic.",
+      "alpha": "3/4",
+      "best_fixed_all_issued_loss": 464,
+      "action_state_allowance": "0",
+      "action_rounding_allowance": "31/4096",
+      "brier_state_allowance": "0",
+      "brier_rounding_allowance": "31/1024",
+      "terminal_expectation_upper_raw": "21316064310676734762339813446665869669645739170075321337648036308257378197/60767588702907163883988328478835683199577033519744873046875000000000000",
+      "terminal_expectation_upper_clipped": "21316064310676734762339813446665869669645739170075321337648036308257378197/60767588702907163883988328478835683199577033519744873046875000000000000",
+      "brier_expectation_upper_raw": "10658262110813195276931674745572051522588883609456497594002784404739040661/15191897175726790970997082119708920799894258379936218261718750000000000",
+      "brier_expectation_upper_clipped": "10658262110813195276931674745572051522588883609456497594002784404739040661/15191897175726790970997082119708920799894258379936218261718750000000000"
+    },
+    "price_cases": {
+      "1": {
+        "task_price": 1,
+        "common_primitive_unit_price": "1/1000",
+        "realized_cold_total": "35981/50",
+        "conditional_action_mean_cold_total": "292180177/409600",
+        "corrected_expert_same_complete_invoice_totals": {
+          "constant_zero": "36281/50",
+          "constant_one": "35181/50",
+          "odd_base": "36681/50",
+          "lower_half_base": "35331/50"
+        },
+        "probability_boundary": "This conditional action-mean cost uses this path's actual resource invoice. It is not the unconditional expected-cost bound over selectors."
+      },
+      "100": {
+        "task_price": 100,
+        "common_primitive_unit_price": "1/1000",
+        "realized_cold_total": "1288331/50",
+        "conditional_action_mean_cold_total": "2574097513/102400",
+        "corrected_expert_same_complete_invoice_totals": {
+          "constant_zero": "1318331/50",
+          "constant_one": "1208331/50",
+          "odd_base": "1358331/50",
+          "lower_half_base": "1223331/50"
+        },
+        "probability_boundary": "This conditional action-mean cost uses this path's actual resource invoice. It is not the unconditional expected-cost bound over selectors."
+      }
+    },
+    "ordinary_blocked_Prod": "Algorithmic equivalence; no duplicate renamed run or superiority claim."
+  },
+  "execution_elapsed_runtime_ns": 339908676,
+  "arm_elapsed_runtime_ns": 578829361,
+  "source_plan_hashes": {
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback.py": "d103cfdf9356c7e977df53c27bd57c26adc8df59a954c7c4dac2a0d537ad3af4",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_service.py": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_development.py": "b1eadf5036d3f869fcdc77a602da29cff42db10b3ee6b6a9d444e7d0569dd469",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/run_plan_v1.json": "c9d342f69cd11dce041ac00837519cd545e03e63ee9311759f12b996629c0439"
+  },
+  "finished_utc": "2026-10-09T21:44:29.358643+00:00"
+}

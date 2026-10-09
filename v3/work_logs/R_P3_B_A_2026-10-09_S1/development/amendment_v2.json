@@ -1,0 +1,30 @@
+{
+  "schema": "value_logic.selective_feedback.development_amendment.v1",
+  "utc": "2026-10-09T21:34:07.367304+00:00",
+  "version": "bounded-state-v2",
+  "prior_contract": "contract_v1.json",
+  "stage": "DEVELOPMENT",
+  "reason": "A derived fixed-mass positive-integer update removes avoidable horizon-dependent weight growth at a proved explicit regret cost. Add it as a same-service comparison before learner runs.",
+  "new_parameter": {
+    "state_bits": [
+      null,
+      16
+    ],
+    "action_bits": 16
+  },
+  "proof": "bounded_state_design.md",
+  "status": "candidate pending independent reconstruction and code review",
+  "source_hashes": {
+    "07_selective_feedback.py": "d103cfdf9356c7e977df53c27bd57c26adc8df59a954c7c4dac2a0d537ad3af4",
+    "07_selective_feedback_service.py": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32"
+  },
+  "interface_repairs": [
+    "Successful provider status is success, not answered.",
+    "Declared per-query expert cap is 73.",
+    "Seed/type checks precede execute spending.",
+    "Finite random-bit input and learner share one meter.",
+    "Separate prediction and fixed 95-bit sampler capacities.",
+    "Initial bit-word validation and retention both enter the envelope."
+  ],
+  "exposure_disposition": "No principal learner population has been executed. Independent service correctness probes and initial source review remain DEVELOPMENT with their original versions preserved."
+}

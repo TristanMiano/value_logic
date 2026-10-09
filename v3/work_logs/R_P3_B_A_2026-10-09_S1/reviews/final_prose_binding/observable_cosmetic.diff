@@ -1,0 +1,97 @@
+--- v3/derivations/07_observable_performance.md before
++++ v3/derivations/07_observable_performance.md after
+@@ -1,6 +1,6 @@
+ # Performance certificates from purchased mathematical answers
+ 
+-Contributor: **ChatGPT (GPT-6 Astra Pro)**, October9,2026 UTC.
++Contributor: **ChatGPT (GPT-6 Astra Pro)**, October 9, 2026 UTC.
+ Task **R-P3-B-A**, DEVELOPMENT. Companion to the
+ [paid selective-feedback construction](07_selective_feedback.md).
+ 
+@@ -52,8 +52,8 @@
+ All probability statements below assume fresh independent fair supplied bits.
+ The development evidence uses specified deterministic pseudorandom seeds; it
+ checks the formulas and records, and does not validate frequentist coverage.
+-The statements apply per declared policy and horizon. Reporting23 diagnostic
+-arms does not give simultaneous coverage over those23 arms.
++The statements apply per declared policy and horizon. Reporting 23 diagnostic
++arms does not give simultaneous coverage over those 23 arms.
+ 
+ ## 2. Basic purchased-label estimators
+ 
+@@ -89,8 +89,8 @@
+ 
+ For a zero-mean random variable in an interval of width $`c`$, the standard
+ centered moment bound is $`\mathbb E e^{\lambda X}\le e^{\lambda^2c^2/8}`$.
+-[Hoeffding1963](../literature/07_selective_feedback_sources.md#8-observable-performance-bounded-moment-inequality),
+-§4, equation4.16, supplies this single-variable fact. Its convex endpoint
++[Hoeffding 1963](../literature/07_selective_feedback_sources.md#8-observable-performance-bounded-moment-inequality),
++§4, equation 4.16, supplies this single-variable fact. Its convex endpoint
+ bound reduces the log moment to a two-point distribution; the second
+ log-moment derivative is its tilted Bernoulli variance, at most $`1/4`$.
+ Integration from zero gives the coefficient $`1/8`$.
+@@ -207,7 +207,7 @@
+ ```
+ 
+ The first six positive terms of the exponential series at four sum to more
+-than40, so $`\log40<4`$. Formula(7) therefore safely dominates (6)'s radius.
++than 40, so $`\log40<4`$. Formula (7) therefore safely dominates (6)'s radius.
+ Moreover $`Q_m\le mS^2\le R^2/2`$, hence $`\rho_m\le R`$. This improvement
+ uses one fixed predeclared $`\lambda`$. Selecting a favorable rate after
+ seeing the path would require a valid mixture or multiple-comparison
+@@ -230,7 +230,7 @@
+ \right]\ge19/20. \tag{8}
+ ```
+ 
+-The mean and Brier statements alone share at least39/40 coverage. Unlike the
++The mean and Brier statements alone share at least 39/40 coverage. Unlike the
+ two uncentered bounds, no third error allocation is needed: their deviations
+ are exactly equal. Only the mean/Brier sampling part is simultaneous over
+ block prefixes in (6). The joint terminal statement (8) remains fixed-end;
+@@ -260,13 +260,13 @@
+ Every forecast is dyadic. For uniform selection the basic action estimator
+ has denominator $`2^h`$ and the Brier estimator has denominator $`2^{2h}`$.
+ For ticket selection a common denominator multiplies these by $`B+1`$,
+-because ticket multiplicity is either1 or $`B+1`$. Centering does not require
++because ticket multiplicity is either 1 or $`B+1`$. Centering does not require
+ transcendental arithmetic. The squared-width sum has common denominator
+ $`2^{2h}(B+1)^2`$; the exact radius in (7) uses only integer square root and
+ rational arithmetic.
+ 
+ These are finite accumulators, but the largest admitted $`h=32`$ Brier and
+-width accumulations exceed64 bits. A deployment must account for its wider
++width accumulations exceed 64 bits. A deployment must account for its wider
+ arithmetic, public-record reads, receipt checks, storage and output. The
+ present calculator is **offline analysis**, with an explicit public-only read
+ boundary, not an uncharged change to any measured learner. The controlled
+@@ -277,17 +277,17 @@
+ ## 6. Evidence and interpretation
+ 
+ The [first design](../work_logs/R_P3_B_A_2026-10-09_S1/development/observable_certificate_design.md)
+-was saved before the basic23-arm calculation. The
++was saved before the basic 23-arm calculation. The
+ [centering design](../work_logs/R_P3_B_A_2026-10-09_S1/development/centered_certificate_design.md)
+-was separately saved before its extension. Both use only the20 retained
+-uniform and3 retained adaptive traces; no new policy, service, label or seed
++was separately saved before its extension. Both use only the 20 retained
++uniform and 3 retained adaptive traces; no new policy, service, label or seed
+ run is needed. Certificate construction and comparison to existing private
+ evaluator scores are separate stages. Their complete rows and read manifests
+ are retained in the
+ [observable-certificate evidence](../work_logs/R_P3_B_A_2026-10-09_S1/development/observable_certificate/).
+ 
+ The new service supports Q4: a learner can form a rigorously scoped estimate
+-of its own episode performance from purchased feedback. Equation(3) also
++of its own episode performance from purchased feedback. Equation (3) also
+ makes a concrete Q5 information statement about two performance targets.
+ It neither certifies calibration nor turns the action probability into a
+ coherent mathematical-truth law. A useful performance certificate can reveal
+@@ -440,7 +440,7 @@
+ difference on every row. This checks implementation and evidence correspondence;
+ the probabilistic theorem still depends on the declared fair-bit premises.
+ 
+-The [primary-source comparison](../literature/07_selective_feedback_sources.md#9-inverse-probability-sampling-and-time-uniform-boundaries)
++The [primary-source comparison](../literature/07_selective_feedback_sources.md#9-sampling-inference-and-the-fixed-rate-boundary-are-established-tools)
+ records the ordinary sampling and exponential-moment antecedents. The added
+ work is their finite paid-feedback integration and the binary shared-residual
+ interface, not a claim to a new generic confidence method.

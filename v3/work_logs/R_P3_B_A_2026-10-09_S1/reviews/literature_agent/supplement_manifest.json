@@ -1,0 +1,138 @@
+{
+  "schema": "value_logic.r_p3b_a.literature_supplement.v1",
+  "recorded_utc": "2026-10-09T21:28:31.002793+00:00",
+  "task": "R-P3-B-A",
+  "base_commit": "6ce7391b6a41c6c19397b00ce7b6a2d9b228b9a4",
+  "reviewer": "ChatGPT GPT-6 Astra Pro; same-model nonblind source follow-up",
+  "reviewer_research_credit_ns": 0,
+  "preserved_original_files": [
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/source_contracts.md",
+      "bytes": 8202,
+      "sha256": "7fa21c727c45ae15e44b53f68eb8c046f4af28de28662f070696027e51041ed3"
+    },
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/block_reconstruction.md",
+      "bytes": 6530,
+      "sha256": "a334f7bfff6a926c786b2b516379e9c228f944d720b91b11128463e0676260a7"
+    },
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/manifest.json",
+      "bytes": 8449,
+      "sha256": "163470963948bd950ba2dbe7afdb0ccc1046e5bd803050dc63cabffb4a0dfde7"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/source_scope_supplement.md",
+      "bytes": 7732,
+      "sha256": "2aa6786696cc9412587e71c5d03c336e47fa756a10967420a66f94b20923e8dd"
+    }
+  ],
+  "source_bindings": [
+    {
+      "id": "cesa_bianchi_lugosi_stoltz_2005_comparator",
+      "url": "https://stoltz.perso.math.cnrs.fr/Publications/CBLS-LabelEff.pdf",
+      "version": "author-hosted journal manuscript",
+      "locators": [
+        "section II, printed manuscript p.2 / PDF index 1: random comparator totals",
+        "section III, p.3 / PDF index 2: adaptive-to-past setup, Theorem 1 and proof equation (4)"
+      ],
+      "displayed_comparator": "E[Lhat_n - min_i L_i,n]",
+      "status": "exact source display verified; broader adaptive interpretation not imported; fixed deterministic table consequence retained",
+      "web_refs": [
+        "turn134view0",
+        "turn134view1",
+        "turn139view1"
+      ]
+    },
+    {
+      "id": "stoltz_2005_thesis_comparator",
+      "url": "https://stoltz.perso.math.cnrs.fr/Publications/TheseStoltz.pdf",
+      "date": "2005-05-27",
+      "date_meaning": "thesis defense",
+      "locators": [
+        "chapter 5 Theorem 5.1, printed p.89 / PDF index 88"
+      ],
+      "displayed_comparator": "max_i E[Lhat_n - L_i,n]",
+      "status": "exact source display verified; not identified with journal comparator for random tables",
+      "web_refs": [
+        "turn135view2"
+      ]
+    },
+    {
+      "id": "russo_et_al_2024_published_scope",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/47795c4ae2f7d07ea2fb0d11fa2c3c90-Paper-Conference.pdf",
+      "metadata_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/47795c4ae2f7d07ea2fb0d11fa2c3c90-Abstract-Conference.html",
+      "locators": [
+        "section 1.1 pp.2-3: oblivious fixed-action loss-table game",
+        "section 2.2 pp.6-7: label-efficient upper comparison",
+        "section 3 p.8: two-action hard distribution and Lemma 3.1",
+        "Theorem 3.4 p.10: label-efficient lower bound"
+      ],
+      "status": "feedback and lower-bound scope checked; virtual-action mapping and non-transfer conclusion are independent deductions; numerical constants and all endpoint regimes not imported",
+      "web_refs": [
+        "turn134view2",
+        "turn135view0",
+        "turn135view1",
+        "turn136view0",
+        "turn139view0"
+      ]
+    },
+    {
+      "id": "bacchiocchi_et_al_2026_preprint",
+      "title": "Multi-Armed Bandits With Best-Action Queries",
+      "authors": [
+        "Francesco Bacchiocchi",
+        "Matteo Castiglioni",
+        "Alberto Marchesi",
+        "Francesco Emanuele Stradi"
+      ],
+      "url": "https://arxiv.org/abs/2605.08287",
+      "pdf_url": "https://arxiv.org/pdf/2605.08287",
+      "version": "arXiv:2605.08287v1",
+      "submitted_utc": "2026-05-08T08:14:50Z",
+      "pdf_front_page_date": "2026-05-12",
+      "publication_status": "preprint; no journal or conference venue verified",
+      "locators": [
+        "abstract and submission history",
+        "section 2, printed pp.5-6 / PDF indices 4-5, Protocol 1 and regret definition"
+      ],
+      "status": "targeted recent follow-up; primary model and chronology inspected; no bound imported and no full proof verification",
+      "web_refs": [
+        "turn137view0",
+        "turn137view1",
+        "turn138view0",
+        "turn138view1"
+      ]
+    }
+  ],
+  "targeted_recent_searches": [
+    {
+      "engine": "system1_search_query",
+      "query": "\"best-action queries\" regret 2025 2026",
+      "recency_days": 730
+    },
+    {
+      "engine": "system1_search_query",
+      "query": "\"label efficient\" \"hard budget\" online experts 2025 2026",
+      "recency_days": 730
+    },
+    {
+      "engine": "system2_search_query",
+      "query": "\"Multi-Armed Bandits With Best-Action Queries\" arxiv"
+    },
+    {
+      "engine": "system2_search_query",
+      "query": "\"Multi-Armed Bandits With Best-Action Queries\" Bacchiocchi"
+    }
+  ],
+  "exclusions": [
+    "No original review file overwritten",
+    "No complete third-party PDF redistributed",
+    "No numerical lower-bound theorem imported",
+    "No exhaustive novelty claim",
+    "No P3-08 activity",
+    "No principal clock, scientific-file, plan, ledger or publication edits"
+  ]
+}

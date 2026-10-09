@@ -1,0 +1,24 @@
+--- reviewed_v1.1
++++ current_v1.2
+@@ -29,7 +29,7 @@
+ sys.modules[spec.name] = S
+ spec.loader.exec_module(S)
+ 
+-VERSION = "r-p3-b-a-blocked-prod-v1.1"
++VERSION = "r-p3-b-a-blocked-prod-v1.2"
+ WORD_BITS = 64
+ MAX_HORIZON = 8192
+ MAX_BLOCK = 1024
+@@ -494,7 +494,11 @@
+     cap = (setup_total + contract.controller_cap(S.EXPERT_EVALUATION_CAP)
+            + contract.quota * S.CHECKED_PURCHASE_CAP + development_rng_cap)
+     meter = CostMeter(cap if unit_limit is None else unit_limit)
+-    meter.pay("admission", "whole_service_funding_check", 1)
++    try:
++        meter.pay("admission", "whole_service_funding_check", 1)
++    except BudgetExceeded as error:
++        error.meter = meter.snapshot()
++        raise
+     if meter.limit_total < cap:
+         error = BudgetExceeded("The complete declared controller and query quota are not funded.")
+         error.meter = meter.snapshot()

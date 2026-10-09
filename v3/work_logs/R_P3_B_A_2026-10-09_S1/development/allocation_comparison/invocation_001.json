@@ -1,0 +1,26 @@
+{
+  "stage": "DEVELOPMENT",
+  "started_utc": "2026-10-09T22:05:07.998730+00:00",
+  "command": [
+    "python",
+    "v3/checks/07_selective_feedback_allocation_development.py",
+    "--plan",
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/allocation_run_plan_v1.json",
+    "--prior-result",
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/run_001/result.json",
+    "--prior-registry-transfer",
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/current_registry_reprice_v1.json",
+    "--out",
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/allocation_comparison/run_001"
+  ],
+  "stdout": "run_001.stdout.txt",
+  "stderr": "run_001.stderr.txt",
+  "driver_sha256": "a851e0fc55bc527d0232105e1845aafef203540fe928ad132acf802e90d3e77f",
+  "static_checks": [
+    "python -m py_compile completed with exit 0",
+    "ast.parse passed"
+  ],
+  "scientific_arms_executed_so_far": 0,
+  "principal_clock_credit_ns": 0,
+  "source_review": "Proof agent reported no execute-path blocker for allocation eaf79ecb and core v1.2 before the batch."
+}

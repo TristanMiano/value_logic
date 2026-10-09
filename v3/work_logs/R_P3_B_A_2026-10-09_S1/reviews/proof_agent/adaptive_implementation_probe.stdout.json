@@ -1,0 +1,198 @@
+{
+  "schema": "value_logic.selective_feedback.adaptive_implementation_probe.v1",
+  "allocation_sha256": "eaf79ecb0c4b297ffeec3de4026a025fabc23058ec3c119abe5fdd23434da070",
+  "core_sha256": "f872ec2eb07df4722720763730932c33055e380f0ab76ddc3c848d79a5e70f48",
+  "service_sha256": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32",
+  "principal_time_credit_ns": 0,
+  "success_reference": {
+    "seed": 17,
+    "contract": {
+      "version": "r-p3-b-a-propensity-allocation-v1",
+      "horizon": 16,
+      "block_size": 4,
+      "expert_count": 4,
+      "action_bits": 16,
+      "state_bits": 16,
+      "quota": 4,
+      "H": 7,
+      "K": 7,
+      "tickets_per_block": 8,
+      "minimum_propensity": [
+        1,
+        8
+      ],
+      "random_bits": 268,
+      "individual_weight_bits": 19,
+      "prediction_working_bits": 49,
+      "sampler_working_bits": 95,
+      "maximum_operand_bits": 95,
+      "buffer_word_cap": 544,
+      "lookahead": "Current block's public requests only; no unpurchased answers.",
+      "cost_proxy": {
+        "elementary_identity": 128,
+        "other": 304
+      }
+    },
+    "selections": [
+      {
+        "block": 0,
+        "favorite": 0,
+        "selected": 1,
+        "tickets": 1,
+        "gamma": "1/7"
+      },
+      {
+        "block": 1,
+        "favorite": 1,
+        "selected": 1,
+        "tickets": 5,
+        "gamma": "3/245"
+      },
+      {
+        "block": 2,
+        "favorite": 3,
+        "selected": 1,
+        "tickets": 1,
+        "gamma": "1/7"
+      },
+      {
+        "block": 3,
+        "favorite": 0,
+        "selected": 1,
+        "tickets": 1,
+        "gamma": "1/7"
+      }
+    ],
+    "rounds_reconstructed": 16,
+    "all_reference_comparisons_pass": true,
+    "advice_before_selection_and_issue_chronology_pass": true,
+    "frozen_weights_on_every_issue_pass": true,
+    "final_weights": [
+      60295,
+      71216,
+      60292,
+      70341
+    ],
+    "controller_units": 5523,
+    "controller_cap": 33418,
+    "service_units": 888,
+    "development_generator_units": 1253,
+    "total_units": 7664,
+    "funded_cap": 39023,
+    "peak_buffer_words": 76,
+    "peak_prediction_working_bits": 43
+  },
+  "both_ticket_branches": [
+    {
+      "selector_words": "zeros",
+      "selected": 0,
+      "actual_tickets": 1,
+      "passed_tickets": 1,
+      "actual_gamma": "1/7",
+      "used_gamma": "1/7",
+      "final_weights": [
+        60495,
+        70578,
+        60494,
+        70577
+      ],
+      "correct_weights": [
+        60495,
+        70578,
+        60494,
+        70577
+      ],
+      "exact_reference_match_for_passed_propensity": true,
+      "low_level_wrong_valid_ticket_accepted": false
+    },
+    {
+      "selector_words": "ones",
+      "selected": 2,
+      "actual_tickets": 5,
+      "passed_tickets": 5,
+      "actual_gamma": "3/245",
+      "used_gamma": "3/245",
+      "final_weights": [
+        64933,
+        65737,
+        65737,
+        65737
+      ],
+      "correct_weights": [
+        64933,
+        65737,
+        65737,
+        65737
+      ],
+      "exact_reference_match_for_passed_propensity": true,
+      "low_level_wrong_valid_ticket_accepted": false
+    }
+  ],
+  "low_level_contract_misuse_diagnostic": {
+    "selector_words": "ones",
+    "selected": 2,
+    "actual_tickets": 5,
+    "passed_tickets": 1,
+    "actual_gamma": "3/245",
+    "used_gamma": "1/7",
+    "final_weights": [
+      58255,
+      67963,
+      67963,
+      67963
+    ],
+    "correct_weights": [
+      64933,
+      65737,
+      65737,
+      65737
+    ],
+    "exact_reference_match_for_passed_propensity": true,
+    "low_level_wrong_valid_ticket_accepted": true
+  },
+  "large_denominator": {
+    "scope": "Six valid arithmetic states; not a 1024-round performance run.",
+    "comparisons": 6,
+    "maximum_denominator": 4294964225,
+    "maximum_denominator_bits": 32,
+    "peak_prediction_working_bits": 100,
+    "declared_prediction_working_bits": 104,
+    "exact_fraction_reference_match": true
+  },
+  "failed_invoice": {
+    "real_provider_limit": 20,
+    "status": "budget_exhausted",
+    "failed_invoice_units_retained": 19,
+    "whole_meter_units_retained": 2151,
+    "admitted_labels": 0,
+    "rounds_closed": 1,
+    "remaining_reservation": {
+      "checked_query_quota": 1088
+    },
+    "no_success_returned": true
+  },
+  "core_v12_guard_identity": {
+    "old_sha256": "d103cfdf9356c7e977df53c27bd57c26adc8df59a954c7c4dac2a0d537ad3af4",
+    "new_sha256": "f872ec2eb07df4722720763730932c33055e380f0ab76ddc3c848d79a5e70f48",
+    "success_rounds": 16,
+    "seed": 23,
+    "full_output_equal_after_version_normalization": true,
+    "normalized_output_sha256": "159405288da7c7f4fe7151fdacfe53769d58f9aa639ec067a9f4fd35e8670304",
+    "operational_units": 6140,
+    "source_registry_setup_included": false,
+    "qualification": "Registry bytes differ and must be priced using each actual source; version metadata differs.",
+    "zero_funding_guard": [
+      {
+        "version": "r-p3-b-a-blocked-prod-v1.1",
+        "meter_attached": false,
+        "total": null
+      },
+      {
+        "version": "r-p3-b-a-blocked-prod-v1.2",
+        "meter_attached": true,
+        "total": 0
+      }
+    ]
+  },
+  "result": "PASS for trusted execute; low-level ticket truth is an explicit caller precondition."
+}

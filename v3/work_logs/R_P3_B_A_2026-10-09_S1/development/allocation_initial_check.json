@@ -1,0 +1,660 @@
+{
+  "utc": "2026-10-09T21:57:55.421142+00:00",
+  "source_sha256": "eaf79ecb0c4b297ffeec3de4026a025fabc23058ec3c119abe5fdd23434da070",
+  "status": "PASS",
+  "runtime_ns": 2543846,
+  "learner": {
+    "version": "r-p3-b-a-propensity-allocation-v1",
+    "contract": {
+      "version": "r-p3-b-a-propensity-allocation-v1",
+      "horizon": 8,
+      "block_size": 4,
+      "expert_count": 4,
+      "action_bits": 16,
+      "state_bits": 16,
+      "quota": 2,
+      "H": 7,
+      "K": 7,
+      "tickets_per_block": 8,
+      "minimum_propensity": [
+        1,
+        8
+      ],
+      "random_bits": 134,
+      "individual_weight_bits": 19,
+      "prediction_working_bits": 49,
+      "sampler_working_bits": 95,
+      "maximum_operand_bits": 95,
+      "buffer_word_cap": 544,
+      "lookahead": "Current block's public requests only; no unpurchased answers.",
+      "cost_proxy": {
+        "elementary_identity": 128,
+        "other": 304
+      }
+    },
+    "rounds_closed": 8,
+    "purchases": 2,
+    "completed": true,
+    "peak_weight_bits": 17,
+    "peak_prediction_working_bits": 43,
+    "random_bits_consumed": 134,
+    "randomness_provenance": "deterministic-development-mt-seed:307201",
+    "final_weights": [
+      67964,
+      67964,
+      67963,
+      58253
+    ],
+    "dependency_version": "r-p3-b-a-blocked-prod-v1.2",
+    "peak_buffer_words": 76
+  },
+  "meter": {
+    "limit_total": 21169,
+    "total": 4576,
+    "by_category": {
+      "admission": 760,
+      "solve": 66,
+      "check": 128,
+      "acquisition": 20,
+      "storage": 1648,
+      "cache": 2,
+      "forecast": 80,
+      "assessment": 32,
+      "profile": 0,
+      "dependency_compile": 0,
+      "repair_search": 0,
+      "controller": 823,
+      "randomness": 761,
+      "output": 256,
+      "setup": 0
+    },
+    "operations": [
+      {
+        "category": "acquisition",
+        "operation": "checked_purchase:checked_record_admission",
+        "units": 18
+      },
+      {
+        "category": "acquisition",
+        "operation": "checked_purchase:target_comparison",
+        "units": 2
+      },
+      {
+        "category": "admission",
+        "operation": "allocation_contract_validation",
+        "units": 24
+      },
+      {
+        "category": "admission",
+        "operation": "bit_tape_word_validation",
+        "units": 3
+      },
+      {
+        "category": "admission",
+        "operation": "checked_purchase:euler_exponent_subtract_shift",
+        "units": 4
+      },
+      {
+        "category": "admission",
+        "operation": "checked_purchase:euler_family_scalar_compare",
+        "units": 8
+      },
+      {
+        "category": "admission",
+        "operation": "checked_purchase:euler_identity_word_read",
+        "units": 18
+      },
+      {
+        "category": "admission",
+        "operation": "checked_purchase:euler_prime_membership_compare",
+        "units": 2
+      },
+      {
+        "category": "admission",
+        "operation": "checked_purchase:euler_query_type_check",
+        "units": 2
+      },
+      {
+        "category": "admission",
+        "operation": "checked_purchase:euler_scalar_field_check",
+        "units": 16
+      },
+      {
+        "category": "admission",
+        "operation": "checked_purchase:euler_source_word_compare",
+        "units": 4
+      },
+      {
+        "category": "admission",
+        "operation": "checked_purchase:handle_identity_word_compare",
+        "units": 36
+      },
+      {
+        "category": "admission",
+        "operation": "checked_purchase:handle_scalar_field_check",
+        "units": 32
+      },
+      {
+        "category": "admission",
+        "operation": "checked_purchase:identity_word_read",
+        "units": 54
+      },
+      {
+        "category": "admission",
+        "operation": "checked_purchase:scalar_field_check",
+        "units": 48
+      },
+      {
+        "category": "admission",
+        "operation": "close_round_identity_and_state_checks",
+        "units": 96
+      },
+      {
+        "category": "admission",
+        "operation": "euler_exponent_subtract_shift",
+        "units": 16
+      },
+      {
+        "category": "admission",
+        "operation": "euler_family_scalar_compare",
+        "units": 32
+      },
+      {
+        "category": "admission",
+        "operation": "euler_identity_word_read",
+        "units": 72
+      },
+      {
+        "category": "admission",
+        "operation": "euler_prime_membership_compare",
+        "units": 8
+      },
+      {
+        "category": "admission",
+        "operation": "euler_query_type_check",
+        "units": 8
+      },
+      {
+        "category": "admission",
+        "operation": "euler_scalar_field_check",
+        "units": 64
+      },
+      {
+        "category": "admission",
+        "operation": "euler_source_word_compare",
+        "units": 16
+      },
+      {
+        "category": "admission",
+        "operation": "public_block_and_state_check",
+        "units": 24
+      },
+      {
+        "category": "admission",
+        "operation": "public_issue_and_prediction_checks",
+        "units": 160
+      },
+      {
+        "category": "admission",
+        "operation": "public_issue_type_check",
+        "units": 8
+      },
+      {
+        "category": "admission",
+        "operation": "selected_propensity_ticket_check",
+        "units": 4
+      },
+      {
+        "category": "admission",
+        "operation": "whole_service_funding_check",
+        "units": 1
+      },
+      {
+        "category": "assessment",
+        "operation": "propensity_loss_and_integer_factor",
+        "units": 32
+      },
+      {
+        "category": "cache",
+        "operation": "checked_purchase:lookup",
+        "units": 2
+      },
+      {
+        "category": "check",
+        "operation": "checked_purchase:bit_length",
+        "units": 2
+      },
+      {
+        "category": "check",
+        "operation": "checked_purchase:bit_test",
+        "units": 8
+      },
+      {
+        "category": "check",
+        "operation": "checked_purchase:cursor_decrement",
+        "units": 8
+      },
+      {
+        "category": "check",
+        "operation": "checked_purchase:exponent_shift",
+        "units": 8
+      },
+      {
+        "category": "check",
+        "operation": "checked_purchase:loop_guard",
+        "units": 10
+      },
+      {
+        "category": "check",
+        "operation": "checked_purchase:modular_multiply",
+        "units": 10
+      },
+      {
+        "category": "check",
+        "operation": "checked_purchase:modular_reduce",
+        "units": 14
+      },
+      {
+        "category": "check",
+        "operation": "checked_purchase:producer_checker_comparison",
+        "units": 2
+      },
+      {
+        "category": "check",
+        "operation": "purchased_receipt_binding_checks",
+        "units": 66
+      },
+      {
+        "category": "controller",
+        "operation": "allocation_advice_branch",
+        "units": 32
+      },
+      {
+        "category": "controller",
+        "operation": "allocation_disagreement_multiply_word_tariff",
+        "units": 32
+      },
+      {
+        "category": "controller",
+        "operation": "allocation_mass_subtract_word_tariff",
+        "units": 24
+      },
+      {
+        "category": "controller",
+        "operation": "allocation_score_comparison_word_tariff",
+        "units": 128
+      },
+      {
+        "category": "controller",
+        "operation": "bit_tape_extract_and_advance",
+        "units": 80
+      },
+      {
+        "category": "controller",
+        "operation": "fixed_mass_and_slack_construction",
+        "units": 8
+      },
+      {
+        "category": "controller",
+        "operation": "fixed_order_residual_compare",
+        "units": 8
+      },
+      {
+        "category": "controller",
+        "operation": "integer_add_word_tariff",
+        "units": 231
+      },
+      {
+        "category": "controller",
+        "operation": "integer_divide_word_tariff",
+        "units": 128
+      },
+      {
+        "category": "controller",
+        "operation": "integer_multiply_word_tariff",
+        "units": 32
+      },
+      {
+        "category": "controller",
+        "operation": "integer_shift_word_tariff",
+        "units": 32
+      },
+      {
+        "category": "controller",
+        "operation": "integer_small_multiply_word_tariff",
+        "units": 32
+      },
+      {
+        "category": "controller",
+        "operation": "integer_subtract_word_tariff",
+        "units": 6
+      },
+      {
+        "category": "controller",
+        "operation": "propensity_update_integer_factor_construction",
+        "units": 16
+      },
+      {
+        "category": "controller",
+        "operation": "public_cost_proxy_branches",
+        "units": 24
+      },
+      {
+        "category": "controller",
+        "operation": "ticket_map_and_propensity_construction",
+        "units": 10
+      },
+      {
+        "category": "forecast",
+        "operation": "binary_action_comparison",
+        "units": 8
+      },
+      {
+        "category": "forecast",
+        "operation": "expert_action_branch",
+        "units": 32
+      },
+      {
+        "category": "forecast",
+        "operation": "fixed_binary_constant_read",
+        "units": 16
+      },
+      {
+        "category": "forecast",
+        "operation": "lower_half_double_and_compare",
+        "units": 16
+      },
+      {
+        "category": "forecast",
+        "operation": "odd_base_bit_test",
+        "units": 8
+      },
+      {
+        "category": "output",
+        "operation": "immutable_forecast_and_action_words",
+        "units": 128
+      },
+      {
+        "category": "output",
+        "operation": "public_allocation_record_words",
+        "units": 64
+      },
+      {
+        "category": "output",
+        "operation": "terminal_action_word_emission",
+        "units": 64
+      },
+      {
+        "category": "randomness",
+        "operation": "development_mt_generated_words",
+        "units": 3
+      },
+      {
+        "category": "randomness",
+        "operation": "development_mt_state_initialization",
+        "units": 624
+      },
+      {
+        "category": "randomness",
+        "operation": "supplied_bit_consumption",
+        "units": 134
+      },
+      {
+        "category": "solve",
+        "operation": "checked_purchase:bit_test",
+        "units": 8
+      },
+      {
+        "category": "solve",
+        "operation": "checked_purchase:exponent_shift",
+        "units": 8
+      },
+      {
+        "category": "solve",
+        "operation": "checked_purchase:last_iteration_test",
+        "units": 8
+      },
+      {
+        "category": "solve",
+        "operation": "checked_purchase:loop_guard",
+        "units": 10
+      },
+      {
+        "category": "solve",
+        "operation": "checked_purchase:modular_multiply",
+        "units": 8
+      },
+      {
+        "category": "solve",
+        "operation": "checked_purchase:modular_reduce",
+        "units": 14
+      },
+      {
+        "category": "solve",
+        "operation": "checked_purchase:parity_test",
+        "units": 2
+      },
+      {
+        "category": "solve",
+        "operation": "checked_purchase:shortcut_branch_test",
+        "units": 8
+      },
+      {
+        "category": "storage",
+        "operation": "allocation_index_state_write",
+        "units": 32
+      },
+      {
+        "category": "storage",
+        "operation": "allocation_scalar_state_write",
+        "units": 24
+      },
+      {
+        "category": "storage",
+        "operation": "allocation_score_and_proxy_word_retention",
+        "units": 16
+      },
+      {
+        "category": "storage",
+        "operation": "allocation_weight_word_read",
+        "units": 32
+      },
+      {
+        "category": "storage",
+        "operation": "bit_tape_word_retention",
+        "units": 3
+      },
+      {
+        "category": "storage",
+        "operation": "block_total_mass_word_write",
+        "units": 2
+      },
+      {
+        "category": "storage",
+        "operation": "block_weight_word_read",
+        "units": 8
+      },
+      {
+        "category": "storage",
+        "operation": "checked_purchase:answer_word_write",
+        "units": 16
+      },
+      {
+        "category": "storage",
+        "operation": "checked_purchase:certificate_word_read",
+        "units": 38
+      },
+      {
+        "category": "storage",
+        "operation": "checked_purchase:checker_initial_word_write",
+        "units": 8
+      },
+      {
+        "category": "storage",
+        "operation": "checked_purchase:checker_state_word_write",
+        "units": 16
+      },
+      {
+        "category": "storage",
+        "operation": "checked_purchase:completed_job_release",
+        "units": 2
+      },
+      {
+        "category": "storage",
+        "operation": "checked_purchase:initial_job_word_write",
+        "units": 34
+      },
+      {
+        "category": "storage",
+        "operation": "checked_purchase:phase_word_write",
+        "units": 4
+      },
+      {
+        "category": "storage",
+        "operation": "checked_purchase:producer_state_word_write",
+        "units": 24
+      },
+      {
+        "category": "storage",
+        "operation": "development_mt_state_words",
+        "units": 624
+      },
+      {
+        "category": "storage",
+        "operation": "expert_prediction_word_write",
+        "units": 32
+      },
+      {
+        "category": "storage",
+        "operation": "initial_weight_word_write",
+        "units": 4
+      },
+      {
+        "category": "storage",
+        "operation": "lookahead_advice_word_retention",
+        "units": 32
+      },
+      {
+        "category": "storage",
+        "operation": "lookahead_query_word_retention",
+        "units": 72
+      },
+      {
+        "category": "storage",
+        "operation": "normalization_product_word_read",
+        "units": 8
+      },
+      {
+        "category": "storage",
+        "operation": "normalized_weight_word_write",
+        "units": 8
+      },
+      {
+        "category": "storage",
+        "operation": "pending_issue_release_and_state_write",
+        "units": 64
+      },
+      {
+        "category": "storage",
+        "operation": "pending_issue_word_retention",
+        "units": 232
+      },
+      {
+        "category": "storage",
+        "operation": "prediction_weight_word_read",
+        "units": 32
+      },
+      {
+        "category": "storage",
+        "operation": "public_block_buffer_release",
+        "units": 152
+      },
+      {
+        "category": "storage",
+        "operation": "public_query_word_read",
+        "units": 72
+      },
+      {
+        "category": "storage",
+        "operation": "residual_weight_word_rewrite",
+        "units": 5
+      },
+      {
+        "category": "storage",
+        "operation": "selected_feedback_and_propensity_release",
+        "units": 4
+      },
+      {
+        "category": "storage",
+        "operation": "selected_feedback_word_retention",
+        "units": 40
+      },
+      {
+        "category": "storage",
+        "operation": "unnormalized_product_word_write",
+        "units": 8
+      }
+    ],
+    "reservations": {},
+    "denials": 0
+  },
+  "funded_cap": 21169,
+  "allocations": [
+    {
+      "block": 0,
+      "favorite": 0,
+      "selected": 3,
+      "selected_tickets": 1,
+      "ticket_total": 8,
+      "scores": [
+        12884901888,
+        12884901888,
+        17179869184,
+        12884901888
+      ],
+      "cost_proxies": [
+        128,
+        304,
+        304,
+        304
+      ],
+      "frozen_weights": [
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "buffer_words": 76
+    },
+    {
+      "block": 1,
+      "favorite": 0,
+      "selected": 3,
+      "selected_tickets": 1,
+      "ticket_total": 8,
+      "scores": [
+        17152380135,
+        13853924943,
+        17152380135,
+        17152380135
+      ],
+      "cost_proxies": [
+        304,
+        304,
+        304,
+        304
+      ],
+      "frozen_weights": [
+        73401,
+        62915,
+        62914,
+        62914
+      ],
+      "buffer_words": 76
+    }
+  ],
+  "purchased_labels": [
+    0,
+    1
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": "observable-certificate-structural-probe-v1",
+  "saved_before_execution_utc": "2026-10-09T22:41:49Z",
+  "contributor": "ChatGPT (GPT-6 Astra Pro), independent literature/semantic review agent",
+  "task": "R-P3-B-A",
+  "mode": "DEVELOPMENT mathematical witness; zero principal clock credit",
+  "inputs": {
+    "baseline_design_sha256": "3934044a07a1120105bbadd82c6f0a502c429dcb5df02061885758d780b0bca2",
+    "centered_design_sha256": "2d1b432a851df6076402de1aa3eef10b081243f28f11a77c7992d5ca758ab1ae"
+  },
+  "fixed_exhaustive_family": {
+    "block_size": 2,
+    "blocks": 4,
+    "labels_in_every_block": [0, 1],
+    "selector": "Probability 3/4 for position 0 initially; subsequently for the previous selected position. Probability 1/4 for the other position.",
+    "forecast_variants": [
+      "Both positions receive q=1/4 when the number of earlier selections of position 0 is even, otherwise q=1/2.",
+      "Both positions always receive q=1/2."
+    ],
+    "enumeration": "All 16 selector paths and all 16 binary unbought-action error vectors per selector path, with exact Fraction probabilities.",
+    "checks": [
+      "Conditional mean zero and conditional range widths of baseline action-mean, baseline Brier, and centered increments at every history.",
+      "Pathwise V-U_c=F-A_c at every completed prefix, and public identity F-V=sum_selected d-sum_all q(1-q).",
+      "Exact conditional action mean V and variance sum d(1-d), and unit total path probability.",
+      "At constant q=1/2, Q=0, U_c=(T-m)/2 and A_c=T/4; public caps are exact targets."
+    ]
+  },
+  "additional_fixed_witnesses": [
+    "Range sharpness: B=2, pi=(3/4,1/4), d=(0,1) gives baseline increment values 1 and -3 with mean zero and width S=4.",
+    "No universally smaller centered upper bound: B=2, m=64, pi=(3/4,1/4), q=(0,0), y=(0,1) in every block, and select position 0 in every block. Compare the two clipped conditional-mean upper bounds with S=4, R=4*ceil_sqrt(128). This path has probability (3/4)^64.",
+    "Conditioning limitation: A_1 is fair; future J_2 selects position 0 with probability 3/4 if A_1=1 and 1/4 otherwise. Verify P(A_1=1 | J_2=0)=3/4."
+  ],
+  "exclusions": [
+    "No scientific learner, service, label or seed runs.",
+    "No input from the private evaluator or saved experimental archives.",
+    "No Monte Carlo coverage validation, policy selection, tuning or novel concentration claim.",
+    "Exact structural checks do not prove a general confidence theorem or validate deterministic pseudorandom seeds.",
+    "No P3-08 execution or ledger/status modification."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "value_logic.r_p3b_a.literature_adaptive_witness_target.v1",
+  "recorded_utc": "2026-10-09T21:44:54.613672+00:00",
+  "status": "PROSPECTIVE_TARGET_BEFORE_PROBE",
+  "origin": "Parent supplied the candidate before this probe; this is a targeted derivation challenge, not a prospectively independent discovery.",
+  "task": "R-P3-B-A",
+  "research_credit_ns": 0,
+  "B": 4,
+  "m": 64,
+  "T": 256,
+  "H": 7,
+  "K": 7,
+  "N": 2,
+  "label_block": [
+    0,
+    1,
+    1,
+    1
+  ],
+  "expert_predictions": [
+    "constant 0",
+    "constant 1"
+  ],
+  "query_probabilities": [
+    "5/8",
+    "1/8",
+    "1/8",
+    "1/8"
+  ],
+  "favored_position": 0,
+  "initial_weights": [
+    "1",
+    "1"
+  ],
+  "naive_loss_multiplier": "6/7 for every bought expert loss, ignoring query propensity",
+  "correct_loss_multipliers": {
+    "bought_label_0": "242/245",
+    "bought_label_1": "6/7"
+  },
+  "expected_terminal_block_loss_given_action_zero_probability": "3/8 + (9/4)*a_k",
+  "full_tape_best_expert_loss": "m",
+  "target_bound": "H*K*ln(N) = 49*ln(2)",
+  "hypothesis": "The naive update exceeds 49*ln(2) in expected regret at m=64; the propensity-aware theorem remains valid.",
+  "calculation": "Exact Fraction enumeration over z~Binomial(k,5/8) for each k=0,...,63; O(m^2) states, with no Monte Carlo and no service execution.",
+  "rigorous_comparison": "Use ln(2)<7/10, proved by four terms of exp(7/10)>2, so regret>343/10 suffices to refute the claimed bound.",
+  "allowed_followup": "If the target fails, retain it and report failure; any changed candidate receives a separately dated target.",
+  "exclusions": [
+    "No core implementation edits",
+    "No stable experiment changes",
+    "No fee measurement",
+    "No P3-08 work"
+  ]
+}

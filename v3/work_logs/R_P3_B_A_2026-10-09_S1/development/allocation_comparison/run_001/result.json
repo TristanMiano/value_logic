@@ -1,0 +1,883 @@
+{
+  "status": "PASS",
+  "stage": "DEVELOPMENT",
+  "version": "r-p3ba-allocation-development-v1",
+  "source_plan_hashes": {
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_allocation.py": "eaf79ecb0c4b297ffeec3de4026a025fabc23058ec3c119abe5fdd23434da070",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback.py": "f872ec2eb07df4722720763730932c33055e380f0ab76ddc3c848d79a5e70f48",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_service.py": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_allocation_development.py": "a851e0fc55bc527d0232105e1845aafef203540fe928ad132acf802e90d3e77f",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/allocation_run_plan_v1.json": "a7f0675bae1f4f62cc9847ca4f42301029a696e20cf77400bdb45e000bdbfaed",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/run_001/result.json": "a99010afcd0667f6f8c6cbfa4588853333b80a24151b6e95a4aa3249d7c444b1",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/current_registry_reprice_v1.json": "db290b5d88a6a0c7714458c4400b6586844ebb3baaa5d0759740291491807abc"
+  },
+  "principal_clock_credit_ns": 0,
+  "learner_arms": [
+    {
+      "status": "PASS",
+      "stage": "DEVELOPMENT",
+      "name": "adaptive_T992_B4_state16_seed307201",
+      "horizon": 992,
+      "block_size": 4,
+      "state_bits": 16,
+      "action_bits": 16,
+      "seed": 307201,
+      "contract": {
+        "version": "r-p3-b-a-propensity-allocation-v1",
+        "horizon": 992,
+        "block_size": 4,
+        "expert_count": 4,
+        "action_bits": 16,
+        "state_bits": 16,
+        "quota": 248,
+        "H": 7,
+        "K": 7,
+        "tickets_per_block": 8,
+        "minimum_propensity": [
+          1,
+          8
+        ],
+        "random_bits": 16616,
+        "individual_weight_bits": 19,
+        "prediction_working_bits": 49,
+        "sampler_working_bits": 95,
+        "maximum_operand_bits": 95,
+        "buffer_word_cap": 544,
+        "lookahead": "Current block's public requests only; no unpurchased answers.",
+        "cost_proxy": {
+          "elementary_identity": 128,
+          "other": 304
+        }
+      },
+      "learner": {
+        "version": "r-p3-b-a-propensity-allocation-v1",
+        "contract": {
+          "version": "r-p3-b-a-propensity-allocation-v1",
+          "horizon": 992,
+          "block_size": 4,
+          "expert_count": 4,
+          "action_bits": 16,
+          "state_bits": 16,
+          "quota": 248,
+          "H": 7,
+          "K": 7,
+          "tickets_per_block": 8,
+          "minimum_propensity": [
+            1,
+            8
+          ],
+          "random_bits": 16616,
+          "individual_weight_bits": 19,
+          "prediction_working_bits": 49,
+          "sampler_working_bits": 95,
+          "maximum_operand_bits": 95,
+          "buffer_word_cap": 544,
+          "lookahead": "Current block's public requests only; no unpurchased answers.",
+          "cost_proxy": {
+            "elementary_identity": 128,
+            "other": 304
+          }
+        },
+        "rounds_closed": 992,
+        "purchases": 248,
+        "completed": true,
+        "peak_weight_bits": 18,
+        "peak_prediction_working_bits": 44,
+        "random_bits_consumed": 16616,
+        "randomness_provenance": "deterministic-development-mt-seed:307201",
+        "final_weights": [
+          129150,
+          41604,
+          11690,
+          79700
+        ],
+        "dependency_version": "r-p3-b-a-blocked-prod-v1.2",
+        "peak_buffer_words": 76
+      },
+      "public_protocol_audit": {
+        "status": "PASS",
+        "public_rows_checked": 992,
+        "blocks_checked": 248,
+        "receipt_bindings_checked": 248,
+        "favorite_purchases": 152,
+        "nonfavorite_purchases": 96,
+        "selected_propensity_histogram": {
+          "1/8": 96,
+          "5/8": 152
+        },
+        "state_update": "Exact reconstruction of each propensity factor and positive fixed-mass rounding from the selected paid label; current-block forecasts use unchanged weights.",
+        "randomness_boundary": "Ticket multiplicity and consumed bit count checked; stored selection draws are not replayed or used to claim statistical randomness.",
+        "access_boundary": "Source order plus immutable transcript shows issue before the selected receipt and update at block end; private evaluator has not yet run.",
+        "external_audit_not_deployed_policy": true
+      },
+      "resource_units": {
+        "cold_total": 433123,
+        "source_registry": 22897,
+        "ongoing_including_learner_initialization": 410226,
+        "purchased_checked_services": 67885,
+        "nonpurchase_excluding_registry": 342341,
+        "maximum_actual_purchased_service_units": 300,
+        "funded_cap": 2240141
+      },
+      "evaluation": {
+        "prospective_sampled_01_loss": 499,
+        "terminal_sampled_01_loss": 374,
+        "conditional_expected_prospective_01_loss": "32294193/65536",
+        "conditional_expected_terminal_01_loss": "24110875/65536",
+        "conditional_expectation_scope": "Action bits only, for this realized adaptive selector/paid-label path. Sampled actions do not affect weights or future allocation on this fixed tape. This is not an unconditional selector mean.",
+        "immutable_issued_brier": "1185228056615/4294967296",
+        "fixed_expert_all_issued_losses": {
+          "constant_zero": 496,
+          "constant_one": 496,
+          "odd_base": 528,
+          "lower_half_base": 464
+        },
+        "same_selector_corrected_expert_losses": {
+          "constant_zero": 372,
+          "constant_one": 372,
+          "odd_base": 393,
+          "lower_half_base": 347
+        },
+        "corrected_expert_cost_basis": "Counterfactual substitution only of unbought actions, retaining this same selected receipt path, adaptive controller updates and COMPLETE actual invoice. Not a newly deployed or optimized control.",
+        "theorem_bounds": {
+          "kind": "Unconditional expectation over adaptive selectors and action bits under the fixed public tape; not a per-realized-seed requirement.",
+          "formula": "min(T-m, L_* + H*K*ln(N) + H*m*K/(2^s-1) + (T-m)/2^h), H=K=2B-1",
+          "best_fixed_all_issued_loss": 464,
+          "H": 7,
+          "K": 7,
+          "log_N_lower": "4113367458871726488827132607237684211737122750172035768836182971904/2967167417134138861522867601505648593729347339831292629241943359375",
+          "log_N_upper": "164534698354869081238612394094549356114163531607843424783206842809253/118686696685365554460914704060225943749173893593251705169677734375000",
+          "log_enclosure": "32 positive atanh-series terms plus exact geometric upper-tail enclosure; all arithmetic Fraction.",
+          "state_allowance": "12152/65535",
+          "action_rounding_allowance": "93/8192",
+          "terminal_expectation_upper_raw": "59858413976941827067601187365402409941145013133437176597368221490230532861/112489341872608459434705885371386102633550763130187988281250000000000000",
+          "terminal_expectation_upper_clipped": "59858413976941827067601187365402409941145013133437176597368221490230532861/112489341872608459434705885371386102633550763130187988281250000000000000",
+          "brier_scope": "Issued Brier is reported diagnostically. No adaptive Brier theorem is inferred from the uniform selector bound.",
+          "all_in_resource_certificate": {
+            "kind": "Pathwise admitted cap, hence also an unconditional expectation bound.",
+            "source_registry": 22897,
+            "controller_cap": 1945912,
+            "random_setup_cap": 1508,
+            "purchase_completion_cap_per_call": 1088,
+            "purchase_quota_cap": 269824,
+            "total": 2240141,
+            "choice": "Use the 1088-unit admitted completion cap, not the realized selector's fee sum or the empirically attained maximum."
+          },
+          "all_in_expected_cost_upper": {
+            "1": "311850400768788813994122664127144645280770053202659626853715877740230532861/112489341872608459434705885371386102633550763130187988281250000000000000",
+            "100": "62378333844860296936866402133019832294541263534129401099931698052730532861/1124893418726084594347058853713861026335507631301879882812500000000000"
+          }
+        },
+        "price_cases": {
+          "1": {
+            "task_price": 1,
+            "common_primitive_unit_price": "1/1000",
+            "realized_cold_total": "807123/1000",
+            "conditional_action_mean_cold_total": "6562002991/8192000",
+            "corrected_expert_same_complete_invoice_totals": {
+              "constant_zero": "805123/1000",
+              "constant_one": "805123/1000",
+              "odd_base": "826123/1000",
+              "lower_half_base": "780123/1000"
+            },
+            "probability_boundary": "Actual realized-selector resource invoice. This conditional cost is separate from the unconditional all-in certificate."
+          },
+          "100": {
+            "task_price": 100,
+            "common_primitive_unit_price": "1/1000",
+            "realized_cold_total": "37833123/1000",
+            "conditional_action_mean_cold_total": "76233520279/2048000",
+            "corrected_expert_same_complete_invoice_totals": {
+              "constant_zero": "37633123/1000",
+              "constant_one": "37633123/1000",
+              "odd_base": "39733123/1000",
+              "lower_half_base": "35133123/1000"
+            },
+            "probability_boundary": "Actual realized-selector resource invoice. This conditional cost is separate from the unconditional all-in certificate."
+          }
+        },
+        "algorithmic_baseline": "An ordinary propensity-corrected blocked product-weights method receives the identical public lookahead, feedback, update and tariff; no renamed duplicate run."
+      },
+      "archives": [
+        {
+          "archive": "public_raw.zip",
+          "archive_bytes": 38723,
+          "archive_sha256": "115e3e44a81da8b530174e72bb7b9cff8148285955ac39e38219ab63a402a9d5"
+        },
+        {
+          "archive": "evaluation_raw.zip",
+          "archive_bytes": 28172,
+          "archive_sha256": "f9f217e757782387367868a88f5d98debe78aacdda227cc459b07980788eba3e"
+        }
+      ],
+      "execution_elapsed_runtime_ns": 245939134,
+      "arm_elapsed_runtime_ns": 695569648,
+      "source_plan_hashes": {
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_allocation.py": "eaf79ecb0c4b297ffeec3de4026a025fabc23058ec3c119abe5fdd23434da070",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback.py": "f872ec2eb07df4722720763730932c33055e380f0ab76ddc3c848d79a5e70f48",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_service.py": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_allocation_development.py": "a851e0fc55bc527d0232105e1845aafef203540fe928ad132acf802e90d3e77f",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/allocation_run_plan_v1.json": "a7f0675bae1f4f62cc9847ca4f42301029a696e20cf77400bdb45e000bdbfaed",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/run_001/result.json": "a99010afcd0667f6f8c6cbfa4588853333b80a24151b6e95a4aa3249d7c444b1",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/current_registry_reprice_v1.json": "db290b5d88a6a0c7714458c4400b6586844ebb3baaa5d0759740291491807abc"
+      },
+      "finished_utc": "2026-10-09T22:05:13.755088+00:00",
+      "principal_clock_credit_ns": 0,
+      "prior_same_tape_comparison": {
+        "scope": "Read-only previous DEVELOPMENT observations on the same affine mathematical tape, not new controls. Random-bit schedules differ, so losses are not paired action paths or a causal accuracy comparison.",
+        "uniform_fixed_state": {
+          "arm": "main_T992_B4_state16_seed307201",
+          "observed_core_version": "r-p3-b-a-blocked-prod-v1.1",
+          "observed_cold_units": 339087,
+          "derived_current_v1_2_cold_units": 339113,
+          "registry_only_transfer_delta": 26,
+          "terminal_sampled_01_loss": 358,
+          "conditional_expected_terminal_01_loss": "23878879/65536",
+          "bought_services_units": 71228
+        },
+        "ordinary_exact_controls": [
+          {
+            "name": "direct_exact",
+            "observed_cold_units": 98261,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 98261,
+              "source_registry": 12477,
+              "construction": 0,
+              "ongoing_calls": 85784,
+              "first_domain_cycle_calls": 21446,
+              "later_domain_cycle_calls": 64338
+            }
+          },
+          {
+            "name": "checked_always_buy",
+            "observed_cold_units": 292861,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 292861,
+              "source_registry": 12477,
+              "construction": 0,
+              "ongoing_calls": 280384,
+              "first_domain_cycle_calls": 70096,
+              "later_domain_cycle_calls": 210288
+            }
+          },
+          {
+            "name": "semantic_cache",
+            "observed_cold_units": 66244,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 66244,
+              "source_registry": 12477,
+              "construction": 503,
+              "ongoing_calls": 53264,
+              "first_domain_cycle_calls": 25166,
+              "later_domain_cycle_calls": 28098
+            }
+          },
+          {
+            "name": "quadratic_residue_table",
+            "observed_cold_units": 53536,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 53536,
+              "source_registry": 12477,
+              "construction": 1611,
+              "ongoing_calls": 39448,
+              "first_domain_cycle_calls": 9862,
+              "later_domain_cycle_calls": 29586
+            }
+          }
+        ],
+        "table_obstruction": {
+          "observed_cold_unit_gap": 379587,
+          "observed_ongoing_minus_table_lookup_units": 370778,
+          "source_bound_setup_free_ongoing_gap_lower": 78797,
+          "source_bound_setup_free_gap_after_paying_table_construction": 77186,
+          "argument": "Expert calls cost A(q)+9 while table calls cost A(q)+10; each learner close additionally pays 12. All remaining adaptive allocation/controller work is nonnegative. Thus ongoing learner minus table lookups is at least 11T plus actual purchases, even if all learner setup is free. Table construction is 1611; T>=147 covers it without purchase costs. Legal equal-block horizons then begin at 148.",
+          "economic_scope": "The exact table has zero task loss. Dominance uses nonnegative task price and a shared nonnegative 64-bit-word primitive unit price. No claim for arbitrary category weights, physical runtime, or other query families."
+        }
+      }
+    },
+    {
+      "status": "PASS",
+      "stage": "DEVELOPMENT",
+      "name": "adaptive_T992_B8_state16_seed307201",
+      "horizon": 992,
+      "block_size": 8,
+      "state_bits": 16,
+      "action_bits": 16,
+      "seed": 307201,
+      "contract": {
+        "version": "r-p3-b-a-propensity-allocation-v1",
+        "horizon": 992,
+        "block_size": 8,
+        "expert_count": 4,
+        "action_bits": 16,
+        "state_bits": 16,
+        "quota": 124,
+        "H": 15,
+        "K": 15,
+        "tickets_per_block": 16,
+        "minimum_propensity": [
+          1,
+          16
+        ],
+        "random_bits": 16368,
+        "individual_weight_bits": 19,
+        "prediction_working_bits": 51,
+        "sampler_working_bits": 95,
+        "maximum_operand_bits": 95,
+        "buffer_word_cap": 1088,
+        "lookahead": "Current block's public requests only; no unpurchased answers.",
+        "cost_proxy": {
+          "elementary_identity": 128,
+          "other": 304
+        }
+      },
+      "learner": {
+        "version": "r-p3-b-a-propensity-allocation-v1",
+        "contract": {
+          "version": "r-p3-b-a-propensity-allocation-v1",
+          "horizon": 992,
+          "block_size": 8,
+          "expert_count": 4,
+          "action_bits": 16,
+          "state_bits": 16,
+          "quota": 124,
+          "H": 15,
+          "K": 15,
+          "tickets_per_block": 16,
+          "minimum_propensity": [
+            1,
+            16
+          ],
+          "random_bits": 16368,
+          "individual_weight_bits": 19,
+          "prediction_working_bits": 51,
+          "sampler_working_bits": 95,
+          "maximum_operand_bits": 95,
+          "buffer_word_cap": 1088,
+          "lookahead": "Current block's public requests only; no unpurchased answers.",
+          "cost_proxy": {
+            "elementary_identity": 128,
+            "other": 304
+          }
+        },
+        "rounds_closed": 992,
+        "purchases": 124,
+        "completed": true,
+        "peak_weight_bits": 17,
+        "peak_prediction_working_bits": 46,
+        "random_bits_consumed": 16368,
+        "randomness_provenance": "deterministic-development-mt-seed:307201",
+        "final_weights": [
+          53408,
+          82080,
+          52739,
+          73917
+        ],
+        "dependency_version": "r-p3-b-a-blocked-prod-v1.2",
+        "peak_buffer_words": 152
+      },
+      "public_protocol_audit": {
+        "status": "PASS",
+        "public_rows_checked": 992,
+        "blocks_checked": 124,
+        "receipt_bindings_checked": 124,
+        "favorite_purchases": 67,
+        "nonfavorite_purchases": 57,
+        "selected_propensity_histogram": {
+          "9/16": 67,
+          "1/16": 57
+        },
+        "state_update": "Exact reconstruction of each propensity factor and positive fixed-mass rounding from the selected paid label; current-block forecasts use unchanged weights.",
+        "randomness_boundary": "Ticket multiplicity and consumed bit count checked; stored selection draws are not replayed or used to claim statistical randomness.",
+        "access_boundary": "Source order plus immutable transcript shows issue before the selected receipt and update at block end; private evaluator has not yet run.",
+        "external_audit_not_deployed_policy": true
+      },
+      "resource_units": {
+        "cold_total": 363101,
+        "source_registry": 22897,
+        "ongoing_including_learner_initialization": 340204,
+        "purchased_checked_services": 32067,
+        "nonpurchase_excluding_registry": 308137,
+        "maximum_actual_purchased_service_units": 300,
+        "funded_cap": 1920705
+      },
+      "evaluation": {
+        "prospective_sampled_01_loss": 499,
+        "terminal_sampled_01_loss": 441,
+        "conditional_expected_prospective_01_loss": "16214825/32768",
+        "conditional_expected_terminal_01_loss": "28496517/65536",
+        "conditional_expectation_scope": "Action bits only, for this realized adaptive selector/paid-label path. Sampled actions do not affect weights or future allocation on this fixed tape. This is not an unconditional selector mean.",
+        "immutable_issued_brier": "19077620685/67108864",
+        "fixed_expert_all_issued_losses": {
+          "constant_zero": 496,
+          "constant_one": 496,
+          "odd_base": 528,
+          "lower_half_base": 464
+        },
+        "same_selector_corrected_expert_losses": {
+          "constant_zero": 419,
+          "constant_one": 449,
+          "odd_base": 467,
+          "lower_half_base": 406
+        },
+        "corrected_expert_cost_basis": "Counterfactual substitution only of unbought actions, retaining this same selected receipt path, adaptive controller updates and COMPLETE actual invoice. Not a newly deployed or optimized control.",
+        "theorem_bounds": {
+          "kind": "Unconditional expectation over adaptive selectors and action bits under the fixed public tape; not a per-realized-seed requirement.",
+          "formula": "min(T-m, L_* + H*K*ln(N) + H*m*K/(2^s-1) + (T-m)/2^h), H=K=2B-1",
+          "best_fixed_all_issued_loss": 464,
+          "H": 15,
+          "K": 15,
+          "log_N_lower": "4113367458871726488827132607237684211737122750172035768836182971904/2967167417134138861522867601505648593729347339831292629241943359375",
+          "log_N_upper": "164534698354869081238612394094549356114163531607843424783206842809253/118686696685365554460914704060225943749173893593251705169677734375000",
+          "log_enclosure": "32 positive atanh-series terms plus exact geometric upper-tail enclosure; all arithmetic Fraction.",
+          "state_allowance": "1860/4369",
+          "action_rounding_allowance": "217/16384",
+          "terminal_expectation_upper_raw": "1939927847213501352173337365133610997848765010991211647805723650139500679947/2498763247463542578909600067049723293166607618331909179687500000000000000",
+          "terminal_expectation_upper_clipped": "1939927847213501352173337365133610997848765010991211647805723650139500679947/2498763247463542578909600067049723293166607618331909179687500000000000000",
+          "brier_scope": "Issued Brier is reported diagnostically. No adaptive Brier theorem is inferred from the uniform selector bound.",
+          "all_in_resource_certificate": {
+            "kind": "Pathwise admitted cap, hence also an unconditional expectation bound.",
+            "source_registry": 22897,
+            "controller_cap": 1761392,
+            "random_setup_cap": 1504,
+            "purchase_completion_cap_per_call": 1088,
+            "purchase_quota_cap": 134912,
+            "total": 1920705,
+            "choice": "Use the 1088-unit admitted completion cap, not the realized selector's fee sum or the empirically attained maximum."
+          },
+          "all_in_expected_cost_upper": {
+            "1": "6739314910432964901197900761916349775650334096559401268777403337639500679947/2498763247463542578909600067049723293166607618331909179687500000000000000",
+            "100": "1987921717845695987663582999101438385626780701846893544015440447014500679947/24987632474635425789096000670497232931666076183319091796875000000000000"
+          }
+        },
+        "price_cases": {
+          "1": {
+            "task_price": 1,
+            "common_primitive_unit_price": "1/1000",
+            "realized_cold_total": "804101/1000",
+            "conditional_action_mean_cold_total": "6536588017/8192000",
+            "corrected_expert_same_complete_invoice_totals": {
+              "constant_zero": "782101/1000",
+              "constant_one": "812101/1000",
+              "odd_base": "830101/1000",
+              "lower_half_base": "769101/1000"
+            },
+            "probability_boundary": "Actual realized-selector resource invoice. This conditional cost is separate from the unconditional all-in certificate."
+          },
+          "100": {
+            "task_price": 100,
+            "common_primitive_unit_price": "1/1000",
+            "realized_cold_total": "44463101/1000",
+            "conditional_action_mean_cold_total": "89795246473/2048000",
+            "corrected_expert_same_complete_invoice_totals": {
+              "constant_zero": "42263101/1000",
+              "constant_one": "45263101/1000",
+              "odd_base": "47063101/1000",
+              "lower_half_base": "40963101/1000"
+            },
+            "probability_boundary": "Actual realized-selector resource invoice. This conditional cost is separate from the unconditional all-in certificate."
+          }
+        },
+        "algorithmic_baseline": "An ordinary propensity-corrected blocked product-weights method receives the identical public lookahead, feedback, update and tariff; no renamed duplicate run."
+      },
+      "archives": [
+        {
+          "archive": "public_raw.zip",
+          "archive_bytes": 29572,
+          "archive_sha256": "2d0c982aa17b364dcb444ccdd5c4cdb61312d4554d3b9f3fb96c7ecb74040373"
+        },
+        {
+          "archive": "evaluation_raw.zip",
+          "archive_bytes": 25812,
+          "archive_sha256": "cc5889f85915cbd3305e4c0c7a321db84587a1d3c39ad948e0f9d02e7a3b22ab"
+        }
+      ],
+      "execution_elapsed_runtime_ns": 152573939,
+      "arm_elapsed_runtime_ns": 494409967,
+      "source_plan_hashes": {
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_allocation.py": "eaf79ecb0c4b297ffeec3de4026a025fabc23058ec3c119abe5fdd23434da070",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback.py": "f872ec2eb07df4722720763730932c33055e380f0ab76ddc3c848d79a5e70f48",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_service.py": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_allocation_development.py": "a851e0fc55bc527d0232105e1845aafef203540fe928ad132acf802e90d3e77f",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/allocation_run_plan_v1.json": "a7f0675bae1f4f62cc9847ca4f42301029a696e20cf77400bdb45e000bdbfaed",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/run_001/result.json": "a99010afcd0667f6f8c6cbfa4588853333b80a24151b6e95a4aa3249d7c444b1",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/current_registry_reprice_v1.json": "db290b5d88a6a0c7714458c4400b6586844ebb3baaa5d0759740291491807abc"
+      },
+      "finished_utc": "2026-10-09T22:05:14.255300+00:00",
+      "principal_clock_credit_ns": 0,
+      "prior_same_tape_comparison": {
+        "scope": "Read-only previous DEVELOPMENT observations on the same affine mathematical tape, not new controls. Random-bit schedules differ, so losses are not paired action paths or a causal accuracy comparison.",
+        "uniform_fixed_state": {
+          "arm": "main_T992_B8_state16_seed307201",
+          "observed_core_version": "r-p3-b-a-blocked-prod-v1.1",
+          "observed_cold_units": 274589,
+          "derived_current_v1_2_cold_units": 274615,
+          "registry_only_transfer_delta": 26,
+          "terminal_sampled_01_loss": 442,
+          "conditional_expected_terminal_01_loss": "14201239/32768",
+          "bought_services_units": 34508
+        },
+        "ordinary_exact_controls": [
+          {
+            "name": "direct_exact",
+            "observed_cold_units": 98261,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 98261,
+              "source_registry": 12477,
+              "construction": 0,
+              "ongoing_calls": 85784,
+              "first_domain_cycle_calls": 21446,
+              "later_domain_cycle_calls": 64338
+            }
+          },
+          {
+            "name": "checked_always_buy",
+            "observed_cold_units": 292861,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 292861,
+              "source_registry": 12477,
+              "construction": 0,
+              "ongoing_calls": 280384,
+              "first_domain_cycle_calls": 70096,
+              "later_domain_cycle_calls": 210288
+            }
+          },
+          {
+            "name": "semantic_cache",
+            "observed_cold_units": 66244,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 66244,
+              "source_registry": 12477,
+              "construction": 503,
+              "ongoing_calls": 53264,
+              "first_domain_cycle_calls": 25166,
+              "later_domain_cycle_calls": 28098
+            }
+          },
+          {
+            "name": "quadratic_residue_table",
+            "observed_cold_units": 53536,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 53536,
+              "source_registry": 12477,
+              "construction": 1611,
+              "ongoing_calls": 39448,
+              "first_domain_cycle_calls": 9862,
+              "later_domain_cycle_calls": 29586
+            }
+          }
+        ],
+        "table_obstruction": {
+          "observed_cold_unit_gap": 309565,
+          "observed_ongoing_minus_table_lookup_units": 300756,
+          "source_bound_setup_free_ongoing_gap_lower": 42979,
+          "source_bound_setup_free_gap_after_paying_table_construction": 41368,
+          "argument": "Expert calls cost A(q)+9 while table calls cost A(q)+10; each learner close additionally pays 12. All remaining adaptive allocation/controller work is nonnegative. Thus ongoing learner minus table lookups is at least 11T plus actual purchases, even if all learner setup is free. Table construction is 1611; T>=147 covers it without purchase costs. Legal equal-block horizons then begin at 148.",
+          "economic_scope": "The exact table has zero task loss. Dominance uses nonnegative task price and a shared nonnegative 64-bit-word primitive unit price. No claim for arbitrary category weights, physical runtime, or other query families."
+        }
+      }
+    },
+    {
+      "status": "PASS",
+      "stage": "DEVELOPMENT",
+      "name": "adaptive_T3968_B8_state16_seed307201",
+      "horizon": 3968,
+      "block_size": 8,
+      "state_bits": 16,
+      "action_bits": 16,
+      "seed": 307201,
+      "contract": {
+        "version": "r-p3-b-a-propensity-allocation-v1",
+        "horizon": 3968,
+        "block_size": 8,
+        "expert_count": 4,
+        "action_bits": 16,
+        "state_bits": 16,
+        "quota": 496,
+        "H": 15,
+        "K": 15,
+        "tickets_per_block": 16,
+        "minimum_propensity": [
+          1,
+          16
+        ],
+        "random_bits": 65472,
+        "individual_weight_bits": 19,
+        "prediction_working_bits": 51,
+        "sampler_working_bits": 95,
+        "maximum_operand_bits": 95,
+        "buffer_word_cap": 1088,
+        "lookahead": "Current block's public requests only; no unpurchased answers.",
+        "cost_proxy": {
+          "elementary_identity": 128,
+          "other": 304
+        }
+      },
+      "learner": {
+        "version": "r-p3-b-a-propensity-allocation-v1",
+        "contract": {
+          "version": "r-p3-b-a-propensity-allocation-v1",
+          "horizon": 3968,
+          "block_size": 8,
+          "expert_count": 4,
+          "action_bits": 16,
+          "state_bits": 16,
+          "quota": 496,
+          "H": 15,
+          "K": 15,
+          "tickets_per_block": 16,
+          "minimum_propensity": [
+            1,
+            16
+          ],
+          "random_bits": 65472,
+          "individual_weight_bits": 19,
+          "prediction_working_bits": 51,
+          "sampler_working_bits": 95,
+          "maximum_operand_bits": 95,
+          "buffer_word_cap": 1088,
+          "lookahead": "Current block's public requests only; no unpurchased answers.",
+          "cost_proxy": {
+            "elementary_identity": 128,
+            "other": 304
+          }
+        },
+        "rounds_closed": 3968,
+        "purchases": 496,
+        "completed": true,
+        "peak_weight_bits": 17,
+        "peak_prediction_working_bits": 46,
+        "random_bits_consumed": 65472,
+        "randomness_provenance": "deterministic-development-mt-seed:307201",
+        "final_weights": [
+          44647,
+          108383,
+          31964,
+          77150
+        ],
+        "dependency_version": "r-p3-b-a-blocked-prod-v1.2",
+        "peak_buffer_words": 152
+      },
+      "public_protocol_audit": {
+        "status": "PASS",
+        "public_rows_checked": 3968,
+        "blocks_checked": 496,
+        "receipt_bindings_checked": 496,
+        "favorite_purchases": 263,
+        "nonfavorite_purchases": 233,
+        "selected_propensity_histogram": {
+          "9/16": 263,
+          "1/16": 233
+        },
+        "state_update": "Exact reconstruction of each propensity factor and positive fixed-mass rounding from the selected paid label; current-block forecasts use unchanged weights.",
+        "randomness_boundary": "Ticket multiplicity and consumed bit count checked; stored selection draws are not replayed or used to claim statistical randomness.",
+        "access_boundary": "Source order plus immutable transcript shows issue before the selected receipt and update at block end; private evaluator has not yet run.",
+        "external_audit_not_deployed_policy": true
+      },
+      "resource_units": {
+        "cold_total": 1382703,
+        "source_registry": 22897,
+        "ongoing_including_learner_initialization": 1359806,
+        "purchased_checked_services": 131152,
+        "nonpurchase_excluding_registry": 1228654,
+        "maximum_actual_purchased_service_units": 300,
+        "funded_cap": 7604190
+      },
+      "evaluation": {
+        "prospective_sampled_01_loss": 1997,
+        "terminal_sampled_01_loss": 1754,
+        "conditional_expected_prospective_01_loss": "129002417/65536",
+        "conditional_expected_terminal_01_loss": "113228643/65536",
+        "conditional_expectation_scope": "Action bits only, for this realized adaptive selector/paid-label path. Sampled actions do not affect weights or future allocation on this fixed tape. This is not an unconditional selector mean.",
+        "immutable_issued_brier": "4872418212035/4294967296",
+        "fixed_expert_all_issued_losses": {
+          "constant_zero": 1984,
+          "constant_one": 1984,
+          "odd_base": 2112,
+          "lower_half_base": 1856
+        },
+        "same_selector_corrected_expert_losses": {
+          "constant_zero": 1692,
+          "constant_one": 1780,
+          "odd_base": 1877,
+          "lower_half_base": 1612
+        },
+        "corrected_expert_cost_basis": "Counterfactual substitution only of unbought actions, retaining this same selected receipt path, adaptive controller updates and COMPLETE actual invoice. Not a newly deployed or optimized control.",
+        "theorem_bounds": {
+          "kind": "Unconditional expectation over adaptive selectors and action bits under the fixed public tape; not a per-realized-seed requirement.",
+          "formula": "min(T-m, L_* + H*K*ln(N) + H*m*K/(2^s-1) + (T-m)/2^h), H=K=2B-1",
+          "best_fixed_all_issued_loss": 1856,
+          "H": 15,
+          "K": 15,
+          "log_N_lower": "4113367458871726488827132607237684211737122750172035768836182971904/2967167417134138861522867601505648593729347339831292629241943359375",
+          "log_N_upper": "164534698354869081238612394094549356114163531607843424783206842809253/118686696685365554460914704060225943749173893593251705169677734375000",
+          "log_enclosure": "32 positive atanh-series terms plus exact geometric upper-tail enclosure; all arithmetic Fraction.",
+          "state_allowance": "7440/4369",
+          "action_rounding_allowance": "217/4096",
+          "terminal_expectation_upper_raw": "1355374236008669836159394886991107071025760469127876979225539441625756517643/624690811865885644727400016762430823291651904582977294921875000000000000",
+          "terminal_expectation_upper_clipped": "1355374236008669836159394886991107071025760469127876979225539441625756517643/624690811865885644727400016762430823291651904582977294921875000000000000",
+          "brier_scope": "Issued Brier is reported diagnostically. No adaptive Brier theorem is inferred from the uniform selector bound.",
+          "all_in_resource_certificate": {
+            "kind": "Pathwise admitted cap, hence also an unconditional expectation bound.",
+            "source_registry": 22897,
+            "controller_cap": 7039374,
+            "random_setup_cap": 2271,
+            "purchase_completion_cap_per_call": 1088,
+            "purchase_quota_cap": 539648,
+            "total": 7604190,
+            "choice": "Use the 1088-unit admitted completion cap, not the realized selector's fee sum or the empirically attained maximum."
+          },
+          "all_in_expected_cost_upper": {
+            "1": "6105641860691118796939042820455815913191906965438707095497512097875756517643/624690811865885644727400016762430823291651904582977294921875000000000000",
+            "100": "1402876912255494325767191366325754159447421934090985280388259168188256517643/6246908118658856447274000167624308232916519045829772949218750000000000"
+          }
+        },
+        "price_cases": {
+          "1": {
+            "task_price": 1,
+            "common_primitive_unit_price": "1/1000",
+            "realized_cold_total": "3136703/1000",
+            "conditional_action_mean_cold_total": "25480683351/8192000",
+            "corrected_expert_same_complete_invoice_totals": {
+              "constant_zero": "3074703/1000",
+              "constant_one": "3162703/1000",
+              "odd_base": "3259703/1000",
+              "lower_half_base": "2994703/1000"
+            },
+            "probability_boundary": "Actual realized-selector resource invoice. This conditional cost is separate from the unconditional all-in certificate."
+          },
+          "100": {
+            "task_price": 100,
+            "common_primitive_unit_price": "1/1000",
+            "realized_cold_total": "176782703/1000",
+            "conditional_action_mean_cold_total": "356671285119/2048000",
+            "corrected_expert_same_complete_invoice_totals": {
+              "constant_zero": "170582703/1000",
+              "constant_one": "179382703/1000",
+              "odd_base": "189082703/1000",
+              "lower_half_base": "162582703/1000"
+            },
+            "probability_boundary": "Actual realized-selector resource invoice. This conditional cost is separate from the unconditional all-in certificate."
+          }
+        },
+        "algorithmic_baseline": "An ordinary propensity-corrected blocked product-weights method receives the identical public lookahead, feedback, update and tariff; no renamed duplicate run."
+      },
+      "archives": [
+        {
+          "archive": "public_raw.zip",
+          "archive_bytes": 108500,
+          "archive_sha256": "891fb7f921280fe9ace462197668d21b9eadaf63afc756ea95357125e7fbde1c"
+        },
+        {
+          "archive": "evaluation_raw.zip",
+          "archive_bytes": 98142,
+          "archive_sha256": "966e2fe70117cfe61b3895dddf37b449ddfbc510c4ad43809b1163f606abe9d6"
+        }
+      ],
+      "execution_elapsed_runtime_ns": 639642692,
+      "arm_elapsed_runtime_ns": 2020289574,
+      "source_plan_hashes": {
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_allocation.py": "eaf79ecb0c4b297ffeec3de4026a025fabc23058ec3c119abe5fdd23434da070",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback.py": "f872ec2eb07df4722720763730932c33055e380f0ab76ddc3c848d79a5e70f48",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_service.py": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_allocation_development.py": "a851e0fc55bc527d0232105e1845aafef203540fe928ad132acf802e90d3e77f",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/allocation_run_plan_v1.json": "a7f0675bae1f4f62cc9847ca4f42301029a696e20cf77400bdb45e000bdbfaed",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/run_001/result.json": "a99010afcd0667f6f8c6cbfa4588853333b80a24151b6e95a4aa3249d7c444b1",
+        "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/current_registry_reprice_v1.json": "db290b5d88a6a0c7714458c4400b6586844ebb3baaa5d0759740291491807abc"
+      },
+      "finished_utc": "2026-10-09T22:05:16.290220+00:00",
+      "principal_clock_credit_ns": 0,
+      "prior_same_tape_comparison": {
+        "scope": "Read-only previous DEVELOPMENT observations on the same affine mathematical tape, not new controls. Random-bit schedules differ, so losses are not paired action paths or a causal accuracy comparison.",
+        "uniform_fixed_state": {
+          "arm": "main_T3968_B8_state16_seed307201",
+          "observed_core_version": "r-p3-b-a-blocked-prod-v1.1",
+          "observed_cold_units": 1039110,
+          "derived_current_v1_2_cold_units": 1039136,
+          "registry_only_transfer_delta": 26,
+          "terminal_sampled_01_loss": 1702,
+          "conditional_expected_terminal_01_loss": "54948721/32768",
+          "bought_services_units": 139379
+        },
+        "ordinary_exact_controls": [
+          {
+            "name": "direct_exact",
+            "observed_cold_units": 355613,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 355613,
+              "source_registry": 12477,
+              "construction": 0,
+              "ongoing_calls": 343136,
+              "first_domain_cycle_calls": 21446,
+              "later_domain_cycle_calls": 321690
+            }
+          },
+          {
+            "name": "checked_always_buy",
+            "observed_cold_units": 1134013,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 1134013,
+              "source_registry": 12477,
+              "construction": 0,
+              "ongoing_calls": 1121536,
+              "first_domain_cycle_calls": 70096,
+              "later_domain_cycle_calls": 1051440
+            }
+          },
+          {
+            "name": "semantic_cache",
+            "observed_cold_units": 178636,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 178636,
+              "source_registry": 12477,
+              "construction": 503,
+              "ongoing_calls": 165656,
+              "first_domain_cycle_calls": 25166,
+              "later_domain_cycle_calls": 140490
+            }
+          },
+          {
+            "name": "quadratic_residue_table",
+            "observed_cold_units": 171880,
+            "terminal_01_loss": 0,
+            "resource_units": {
+              "cold_total": 171880,
+              "source_registry": 12477,
+              "construction": 1611,
+              "ongoing_calls": 157792,
+              "first_domain_cycle_calls": 9862,
+              "later_domain_cycle_calls": 147930
+            }
+          }
+        ],
+        "table_obstruction": {
+          "observed_cold_unit_gap": 1210823,
+          "observed_ongoing_minus_table_lookup_units": 1202014,
+          "source_bound_setup_free_ongoing_gap_lower": 174800,
+          "source_bound_setup_free_gap_after_paying_table_construction": 173189,
+          "argument": "Expert calls cost A(q)+9 while table calls cost A(q)+10; each learner close additionally pays 12. All remaining adaptive allocation/controller work is nonnegative. Thus ongoing learner minus table lookups is at least 11T plus actual purchases, even if all learner setup is free. Table construction is 1611; T>=147 covers it without purchase costs. Legal equal-block horizons then begin at 148.",
+          "economic_scope": "The exact table has zero task loss. Dominance uses nonnegative task price and a shared nonnegative 64-bit-word primitive unit price. No claim for arbitrary category weights, physical runtime, or other query families."
+        }
+      }
+    }
+  ],
+  "new_controls": 0,
+  "initial_probe_repeated": false,
+  "finished_utc": "2026-10-09T22:05:16.295746+00:00",
+  "elapsed_runtime_ns": 3240197553
+}

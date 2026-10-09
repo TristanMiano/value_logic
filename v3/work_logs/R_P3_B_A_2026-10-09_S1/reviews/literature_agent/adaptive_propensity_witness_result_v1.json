@@ -1,0 +1,158 @@
+{
+  "schema": "value_logic.r_p3b_a.literature_adaptive_witness_result.v1",
+  "recorded_utc": "2026-10-09T21:46:27.047511+00:00",
+  "task": "R-P3-B-A",
+  "research_credit_ns": 0,
+  "target_sha256": "cfb5d50c0552c816ee790adb032cab3a1a50f15f77bdeac5ab2f9e14f6a108cd",
+  "calculator_sha256": "bbd88f8fb6e478d78cb4c4017a582092c414606c6f5e96ae7c7b71608ba837fb",
+  "method": "Exact Fraction sums over binomial sufficient statistic; no Monte Carlo",
+  "B": 4,
+  "m": 64,
+  "T": 256,
+  "best_expert_full_tape_loss": 64,
+  "claims": {
+    "49_log_2_strict_upper_bound": "343/10",
+    "justification": "exp(7/10) > 1+7/10+49/200+343/6000 = 12013/6000 > 2",
+    "naive_variant_refutes_claimed_bound": true,
+    "aware_variant_satisfies_bound_in_this_witness": true
+  },
+  "results": {
+    "naive_unweighted_update": {
+      "expected_terminal_loss": {
+        "lower_numerator": 128261798460036,
+        "upper_numerator": 128261798460037,
+        "common_denominator": 1000000000000,
+        "numerator_bits": 4685,
+        "denominator_bits": 4678,
+        "exact_fraction_sha256": "ca39c7066189750f722d7614582da3a67194f3c4cbc2302f99f296f88f177ef3",
+        "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+      },
+      "expected_regret_to_best_full_tape_expert": {
+        "lower_numerator": 64261798460036,
+        "upper_numerator": 64261798460037,
+        "common_denominator": 1000000000000,
+        "numerator_bits": 4684,
+        "denominator_bits": 4678,
+        "exact_fraction_sha256": "498275f4331287eed3bc0ccd6fbcb93244c15537718a191986f2d9a2ba224921",
+        "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+      },
+      "exceeds_343_over_10": true,
+      "regret_is_nonpositive": false,
+      "checkpoints": [
+        {
+          "completed_blocks_before_prediction": 0,
+          "mean_action_zero_probability": {
+            "lower_numerator": 500000000000,
+            "upper_numerator": 500000000000,
+            "common_denominator": 1000000000000,
+            "numerator_bits": 1,
+            "denominator_bits": 2,
+            "exact_fraction_sha256": "cb87a773a28a0c151e1ec6f6e10854527ff9b5fa0e85f827210ffd141e23ff7e",
+            "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+          },
+          "expected_terminal_block_loss": {
+            "lower_numerator": 1500000000000,
+            "upper_numerator": 1500000000000,
+            "common_denominator": 1000000000000,
+            "numerator_bits": 2,
+            "denominator_bits": 2,
+            "exact_fraction_sha256": "79b2b3225c12a9fc30d03d940a4d8ca170592702261f890baf940386381d8eaa",
+            "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+          }
+        },
+        {
+          "completed_blocks_before_prediction": 63,
+          "mean_action_zero_probability": {
+            "lower_numerator": 876710573224,
+            "upper_numerator": 876710573225,
+            "common_denominator": 1000000000000,
+            "numerator_bits": 2430,
+            "denominator_bits": 2430,
+            "exact_fraction_sha256": "0ed51e924f65bb7b18b2c1bed840e106805a276807aaec2acc41a5b8ab6c47c3",
+            "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+          },
+          "expected_terminal_block_loss": {
+            "lower_numerator": 2347598789756,
+            "upper_numerator": 2347598789757,
+            "common_denominator": 1000000000000,
+            "numerator_bits": 2433,
+            "denominator_bits": 2432,
+            "exact_fraction_sha256": "4584e1bf80cc0cd9641e118b7334024572b85b13e23fe1415178a1f3e921e023",
+            "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+          }
+        }
+      ]
+    },
+    "propensity_aware_update": {
+      "expected_terminal_loss": {
+        "lower_numerator": 54834466474428,
+        "upper_numerator": 54834466474429,
+        "common_denominator": 1000000000000,
+        "numerator_bits": 334407,
+        "denominator_bits": 334401,
+        "exact_fraction_sha256": "4647a40c93af750c4891de798f5a2df1854776cf471a83d6b89dcb2bb6c860db",
+        "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+      },
+      "expected_regret_to_best_full_tape_expert": {
+        "lower_numerator": -9165533525572,
+        "upper_numerator": -9165533525571,
+        "common_denominator": 1000000000000,
+        "numerator_bits": 334405,
+        "denominator_bits": 334401,
+        "exact_fraction_sha256": "3aa7011808726b7cd1a6c45813ebdb2d97617a65ebe26be814fdb845a49e13db",
+        "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+      },
+      "exceeds_343_over_10": false,
+      "regret_is_nonpositive": true,
+      "checkpoints": [
+        {
+          "completed_blocks_before_prediction": 0,
+          "mean_action_zero_probability": {
+            "lower_numerator": 500000000000,
+            "upper_numerator": 500000000000,
+            "common_denominator": 1000000000000,
+            "numerator_bits": 1,
+            "denominator_bits": 2,
+            "exact_fraction_sha256": "cb87a773a28a0c151e1ec6f6e10854527ff9b5fa0e85f827210ffd141e23ff7e",
+            "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+          },
+          "expected_terminal_block_loss": {
+            "lower_numerator": 1500000000000,
+            "upper_numerator": 1500000000000,
+            "common_denominator": 1000000000000,
+            "numerator_bits": 2,
+            "denominator_bits": 2,
+            "exact_fraction_sha256": "79b2b3225c12a9fc30d03d940a4d8ca170592702261f890baf940386381d8eaa",
+            "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+          }
+        },
+        {
+          "completed_blocks_before_prediction": 63,
+          "mean_action_zero_probability": {
+            "lower_numerator": 48455492725,
+            "upper_numerator": 48455492726,
+            "common_denominator": 1000000000000,
+            "numerator_bits": 16767,
+            "denominator_bits": 16771,
+            "exact_fraction_sha256": "f7283e4ae1c0fa99f182decad3b8e99299e22af87321d2cf2f35c2989e92c57b",
+            "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+          },
+          "expected_terminal_block_loss": {
+            "lower_numerator": 484024858632,
+            "upper_numerator": 484024858633,
+            "common_denominator": 1000000000000,
+            "numerator_bits": 16772,
+            "denominator_bits": 16773,
+            "exact_fraction_sha256": "16182e3482498000e20d0e26da59deaf1a35e0dfa23ba5b629d16c89504e5b7a",
+            "digest_encoding": "sign byte; unsigned numerator-byte length in 8 big-endian bytes; magnitude in minimal nonempty big-endian bytes; denominator in minimal nonempty big-endian bytes"
+          }
+        }
+      ]
+    }
+  },
+  "exclusions": [
+    "No service-cost measurement",
+    "No theorem proof by empirical checking",
+    "No stable-core or planned-experiment mutation"
+  ]
+}

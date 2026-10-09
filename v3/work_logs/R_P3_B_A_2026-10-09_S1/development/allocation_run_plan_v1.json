@@ -1,0 +1,58 @@
+{
+  "saved_utc": "2026-10-09T21:57:37.139537+00:00",
+  "task": "R-P3-B-A",
+  "stage": "DEVELOPMENT",
+  "saved_before_runs": true,
+  "purpose": "Source-bound adaptive exact-quota propensity correction, charged public lookahead, finite state and ordinary-cost comparison.",
+  "tape": "Same public affine ordering (73*t+19) mod 248, ordered p then a; no truth used in construction.",
+  "arms": [
+    {
+      "T": 992,
+      "B": 4,
+      "s": 16,
+      "h": 16,
+      "seed": 307201
+    },
+    {
+      "T": 992,
+      "B": 8,
+      "s": 16,
+      "h": 16,
+      "seed": 307201
+    },
+    {
+      "T": 3968,
+      "B": 8,
+      "s": 16,
+      "h": 16,
+      "seed": 307201
+    }
+  ],
+  "initial_probe": {
+    "T": 8,
+    "B": 4,
+    "p": 17,
+    "a": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "h": 16,
+    "s": 16,
+    "seed": 307201
+  },
+  "checks": [
+    "Exact one checked receipt per block; predicted probability precedes receipt.",
+    "Allocation weights frozen; buffer advice computed before selector; label feedback only at block end.",
+    "Ticket multiplicity equals selected probability; normalization preserves mass.",
+    "Source hashes, actual invoices and development traces retained before evaluator labels.",
+    "Each bound retains finite state/action allowances; realized selector fees not substituted for unconditional expectation."
+  ],
+  "comparisons": "Existing same-tape uniform fixed-state arms and cold direct/table/cache controls; no paired action-path or causal accuracy claim across different bit schedules.",
+  "no_further_tuning": true
+}

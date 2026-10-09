@@ -1,0 +1,31 @@
+{
+  "schema": "value_logic.postrun_diagnostic_plan.v1",
+  "stage": "DEVELOPMENT",
+  "saved_utc": "2026-10-09T22:07:33.384190+00:00",
+  "saved_before_diagnostic_rows": true,
+  "purpose": "Resolve the strong-forecast baseline gap with analytic no-information q=1/2 after completed planned adaptive arms; not a new tuning target.",
+  "source_result": {
+    "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/allocation_comparison/run_001/result.json",
+    "sha256": "061f02a63c2bd84cfe22d519ab2570ca21939119764f69eaec6c7c1582a287f8"
+  },
+  "scope": "Three completed adaptive arms and the three corresponding prior uniform fixed-state arms only. Distinct from the original prospective run grid.",
+  "formulas": {
+    "immutable_issued_brier": "T/4, exactly for every binary label tape",
+    "prospective_conditional_action_error": "T/2",
+    "terminal_conditional_action_error": "(T-m)/2 when the same selected checked receipts correct purchased actions",
+    "price": "task_price*(T-m)/2 + (1/1000)*the_same_complete_recorded_resource_invoice"
+  },
+  "comparison": "Original sampled policy output versus an analytic output substitution. No new learner/controller/service/RNG run; no label access required for these formulae. Preserve original allocation, selected receipts, internal work and complete resource bill. Uniform v1.2 setup-only reprice stays separately derived.",
+  "not_claimed": [
+    "A cheaper deployed null policy",
+    "Paired sampled actions",
+    "An unconditional fee average from a realized selector",
+    "Forecast superiority from adaptive-versus-uniform Brier",
+    "A new scientific arm or tuning decision"
+  ],
+  "task_prices": [
+    1,
+    100
+  ],
+  "principal_clock_credit_ns": 0
+}

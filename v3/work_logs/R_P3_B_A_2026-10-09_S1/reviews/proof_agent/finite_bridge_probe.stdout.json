@@ -1,0 +1,60 @@
+{
+  "schema": "value_logic.selective_feedback.independent_bridge_probe.v1",
+  "scope": "Finite arithmetic identities and separating counterexamples only.",
+  "arithmetic": "Python Fraction; exhaustive selector expectations, no seeds.",
+  "fixed_tape_equal_blocks": {
+    "block_sizes": [
+      2,
+      2
+    ],
+    "weighted_updates": false,
+    "binary_tapes": 16,
+    "selector_paths_per_tape": 4,
+    "paths_checked": 64,
+    "paths_where_equality_fails_before_expectation": 32,
+    "expected_bridge_equal_for_every_tape": true
+  },
+  "fixed_tape_uneven_blocks": {
+    "block_sizes": [
+      2,
+      3
+    ],
+    "weighted_updates": true,
+    "binary_tapes": 32,
+    "selector_paths_per_tape": 6,
+    "paths_checked": 192,
+    "paths_where_equality_fails_before_expectation": 144,
+    "expected_bridge_equal_for_every_tape": true
+  },
+  "singleton_block_boundary": {
+    "block_sizes": [
+      1,
+      2
+    ],
+    "weighted_updates": true,
+    "binary_tapes": 8,
+    "selector_paths_per_tape": 2,
+    "paths_checked": 16,
+    "paths_where_equality_fails_before_expectation": 0,
+    "expected_bridge_equal_for_every_tape": true
+  },
+  "premature_update_counterexample": {
+    "actual_expected_unbought_loss": "7/12",
+    "claimed_sample_bridge": "1/2",
+    "bridge_failed": true
+  },
+  "adaptive_request_counterexample": {
+    "actual_expected_unbought_loss": "1/2",
+    "expected_selected_loss": "0",
+    "expected_all_issued_expert_loss": "1/2",
+    "uniform_query_count": 1,
+    "discounted_expert_loss": "1/4",
+    "bridge_failed": true
+  },
+  "random_hindsight_counterexample": {
+    "minimum_of_fixed_expert_expectations": "1",
+    "expected_random_hindsight_minimum": "0",
+    "cannot_swap": true
+  },
+  "result": "PASS: qualified identities hold; invalid extensions are separated."
+}

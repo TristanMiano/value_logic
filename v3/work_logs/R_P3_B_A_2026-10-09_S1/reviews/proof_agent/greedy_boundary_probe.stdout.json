@@ -1,0 +1,206 @@
+{
+  "schema": "value_logic.selective_feedback.greedy_boundary_probe.v1",
+  "arithmetic": "Exact integers and Fraction; rational upper bounds for logarithms",
+  "public_modular_verification": {
+    "1": {
+      "residue": 1,
+      "answer": 1,
+      "four_expert_actions": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    "3": {
+      "residue": 16,
+      "answer": 0,
+      "four_expert_actions": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    "2": {
+      "residue": 1,
+      "answer": 1,
+      "four_expert_actions": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    "6": {
+      "residue": 16,
+      "answer": 0,
+      "four_expert_actions": [
+        0,
+        1,
+        0,
+        1
+      ]
+    }
+  },
+  "design_two_expert_case": {
+    "experts": 2,
+    "blocks": 8,
+    "block_size": 4,
+    "expert_actions_on_both_queries": [
+      0,
+      1
+    ],
+    "state_bits": null,
+    "action_bits": null,
+    "greedy_tie_rule": "zero",
+    "greedy_predictions": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "issued_probabilities": [
+      "1/2",
+      "3/5",
+      "1/2",
+      "3/5",
+      "1/2",
+      "3/5",
+      "1/2",
+      "3/5"
+    ],
+    "greedy_terminal_loss": 24,
+    "best_fixed_full_tape_loss": 16,
+    "greedy_regret": 8,
+    "randomized_expected_terminal_loss": "66/5",
+    "safe_rational_log_allowance": "63/10",
+    "state_allowance": "0",
+    "action_allowance": "0",
+    "complete_claimed_allowance_upper": "63/10",
+    "strict_counterexample": true
+  },
+  "same_service_four_expert_case": {
+    "experts": 4,
+    "blocks": 16,
+    "block_size": 4,
+    "expert_actions_on_both_queries": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "state_bits": null,
+    "action_bits": null,
+    "greedy_tie_rule": "zero",
+    "greedy_predictions": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "issued_probabilities": [
+      "1/2",
+      "3/5",
+      "1/2",
+      "3/5",
+      "1/2",
+      "3/5",
+      "1/2",
+      "3/5",
+      "1/2",
+      "3/5",
+      "1/2",
+      "3/5",
+      "1/2",
+      "3/5",
+      "1/2",
+      "3/5"
+    ],
+    "greedy_terminal_loss": 48,
+    "best_fixed_full_tape_loss": 32,
+    "greedy_regret": 16,
+    "randomized_expected_terminal_loss": "132/5",
+    "safe_rational_log_allowance": "63/5",
+    "state_allowance": "0",
+    "action_allowance": "0",
+    "complete_claimed_allowance_upper": "63/5",
+    "strict_counterexample": true
+  },
+  "same_service_fixed_state_case": {
+    "experts": 4,
+    "blocks": 16,
+    "block_size": 4,
+    "expert_actions_on_both_queries": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "state_bits": 16,
+    "action_bits": 16,
+    "greedy_tie_rule": "zero",
+    "greedy_predictions": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "issued_probabilities": [
+      "1/2",
+      "39321/65536",
+      "32767/65536",
+      "39321/65536",
+      "32767/65536",
+      "39321/65536",
+      "32767/65536",
+      "4915/8192",
+      "32767/65536",
+      "4915/8192",
+      "32767/65536",
+      "4915/8192",
+      "32767/65536",
+      "4915/8192",
+      "16383/32768",
+      "4915/8192"
+    ],
+    "greedy_terminal_loss": 48,
+    "best_fixed_full_tape_loss": 32,
+    "greedy_regret": 16,
+    "randomized_expected_terminal_loss": "1730145/65536",
+    "safe_rational_log_allowance": "63/5",
+    "state_allowance": "48/21845",
+    "action_allowance": "3/4096",
+    "complete_claimed_allowance_upper": "225534771/17895424",
+    "strict_counterexample": true
+  },
+  "result": "PASS: all three greedy replacements violate the corresponding imported mixture bound."
+}

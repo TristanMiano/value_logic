@@ -11,8 +11,10 @@ Research90 and S3 evidence. P3-06 closes at finite forecast/action/delay/reprici
 scope with its observed Research90 and preserved evidence. P3-07 closes at
 bounded paid-computation, acquired-profile and versioned self-assessment scope,
 with observed Research90. P3-B is now PASS with no additional floor.
-Next: P3-08, unstarted; optional recurrence A is recommended but unselected.
-P3-N01 remains NOT YET SUPPORTED.**
+Selected R-P3-B-A (option A) is complete at finite paid-feedback and
+observable-performance scope. Next: P3-08, unstarted. P3-N01 is SUPPORTED
+at the documented modest formal-adaptation and implementation-synthesis
+scope; Q3 affirmative comparative benefit remains open.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
 [task readiness audit](work_logs/P3_03_2026-10-07_S1/readiness_audit.md).
 
@@ -130,9 +132,10 @@ nonblind, with no duplicate concurrent time credit.
 | P3-C03 | A finite operational adaptation and collection of task/refinement/retention distinctions are concrete. | Candidate formal adaptation/synthesis at the stated fragment. The same-code ordinary combination reproduces its outputs and costs. Broader contribution significance remains a named application/comparison obligation. |
 | P3-H02/H03/H04 and P3-N01 | Counterfactuals, model-plurality benefit, learned forecasts, paid computation and phase contribution retain their open obligations. | The main note maps all 21 duties. P3-04 is next and unstarted; P3-B–D remain unattempted, with no frozen or exposed final challenge. |
 
-## Current contribution record — P3-N01
+## P3-03 contribution record — historical P3-N01 assessment
 
-**Status: NOT YET SUPPORTED.**
+**Historical status at the P3-03 boundary: NOT YET SUPPORTED.**
+The current assessment is in the R-P3-B-A section below.
 
 | Field | Current disposition |
 |---|---|
@@ -344,3 +347,37 @@ research minutes. Phase total: **664.368606879483**; remaining floor:
 the defensive-forecasting addendum, are preserved. No historical or parallel
 time is credited. P3-08 remains unstarted, P3-C/D unattempted, and all
 recurrences unselected. No final challenge is frozen or exposed.
+
+
+## R-P3-B-A — completed paid selective-feedback recurrence
+
+The author selected option A after P3-B. The [additive checkpoint](checkpoints/B_1_R_P3_B_A.md)
+and [21-duty overlay](checkpoints/B_1_R_P3_B_A.v1.json) are the latest scientific
+assessment. Earlier dated decisions, scores, source versions and gate pointers
+remain historical. See the [construction](derivations/07_selective_feedback.md),
+[observable companion](derivations/07_observable_performance.md) and
+[source comparison](literature/07_selective_feedback_sources.md).
+
+| Record | Accepted claim | Evidence and limit |
+|---|---|---|
+| R-P3-B-A/SF-1 | Uniform one-purchase-per-block feedback supports all-issued expected corrected terminal loss against fixed exogenous-tape experts. | Frozen block and actual receipt chronology; comparator is uncorrected. No adaptive-tape, greedy-action or arbitrary policy regret import. |
+| R-P3-B-A/SF-2 | Positive fixed-mass integer weights and dyadic actions have explicit state and action allowances. | Source-bound v1.1/v1.2 implementation reviews; weight state is bounded independently of T, while tapes, outputs and other storage are separately limited. |
+| R-P3-B-A/SF-3 | Exact binary log certificates tighten the unchanged policy's coefficient. | Twenty exact rational enclosure calculations; alternate stronger rates remain unexecuted and need new capacity/price checks. |
+| R-P3-B-A/SF-4 | Unequal adaptive queries need actual remaining-action propensity correction and a positive floor. | Mathematical ticket construction, actual bounded implementation and exact propensity-free failure witness. Disagreement/fee remains a heuristic. |
+| R-P3-B-A/SF-5 | Immutable all-issued Brier loss has a separately justified selective-feedback bound. | Uniform and adaptive allowances differ; bought action corrections never rewrite pre-purchase forecasts. No calibration or truth-law claim. |
+| R-P3-B-A/SF-6 | Current learner costs exceed the ordinary exact table by a source-derived margin on every successful admitted tape. | Common-tariff terminal-answer service; cold constants 4,908/8,809 and ongoing 11T plus purchases. Category prices and equal certificate delivery are separate contracts. |
+| R-P3-B-A/SF-7 | Purchased labels can certify conditional action mean, Brier loss and realized terminal performance under stated sampling premises. | Shared binary residual, fixed-rate centered bound, separately allocated two-sided tails; per episode and fixed end. Offline calculator is not a free live service. |
+| R-P3-B-A/SF-8 | Public-only diagnostics reconstruct all 23 episodes and retain ten adverse Brier flags, no strict action-null decisions and no empty intersections. | 49,600 public rows, 10,664 paid labels; sealed construction before private comparisons; independent principal reconstruction. Fixed seeds do not validate confidence coverage. |
+| R-P3-B-A/SF-9 | A frozen sound hard-answer snapshot is a sufficient predictable interface for new direct certificates. | Reviewed mathematical public-center identity and conditional action count; no executed cache or P3-08 integration. Current-label changes inside a block remain a separate selection problem. |
+| P3-H04 | The selected paid-feedback gap is closed at a finite contract, and current-episode usefulness can be assessed from paid records. | PROVED/IMPLEMENTED at the construction's scopes; no monotonic improvement, optimal acquisition or fresh-family economic advantage. |
+| P3-H03 | Affirmative plurality benefit against the strongest ordinary combination remains open. | Ordinary exact arithmetic, caches, tables and the same learning algorithms remain admissible controls. |
+| P3-N01 | **SUPPORTED** as a modest formal adaptation and implementation synthesis with an informative economic obstruction. | [Assessment](work_logs/R_P3_B_A_2026-10-09_S1/contribution_assessment.md) gives object, delta, magnitude and named ordinary comparisons. P3-C author assessment remains unattempted; R-P3-N01 is distinct and unselected. |
+
+The recurrence has **90.146425900517 measured research minutes**, zero historical
+or parallel recredit, and preserved prior ledger bytes. Phase research is
+**754.515032780000 minutes**, leaving **205.484967220000** to the 960-minute floor.
+[Exact actuals](work_logs/R_P3_B_A_2026-10-09_S1/actuals.json) and
+[session](work_logs/R_P3_B_A_2026-10-09_S1.md) supply the boundary accounting.
+P3-08 remains unstarted, P3-C/D unattempted, options B/C unselected, and no
+final challenge is frozen or exposed. Earlier P3-01–07 scientific files and
+the surviving defensive-forecasting addendum remain unchanged.

@@ -1,0 +1,161 @@
+{
+  "schema": "value_logic.selective_feedback.final_controller_probe.v1",
+  "controller_sha256": "d103cfdf9356c7e977df53c27bd57c26adc8df59a954c7c4dac2a0d537ad3af4",
+  "service_sha256": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32",
+  "scope": "Targeted state, arithmetic, bit chronology and spending checks; no final evaluation population.",
+  "success_cases": [
+    {
+      "contract": {
+        "version": "r-p3-b-a-blocked-prod-v1.1",
+        "horizon": 32,
+        "block_size": 4,
+        "expert_count": 4,
+        "action_bits": 16,
+        "quota": 8,
+        "state_bits": null,
+        "k": 3,
+        "random_bits": 528,
+        "individual_weight_bits": 17,
+        "prediction_working_bits": 37,
+        "sampler_working_bits": 95,
+        "maximum_operand_bits": 95
+      },
+      "seed": 20261009,
+      "private_reference_rounds_checked": 32,
+      "purchase_count": 8,
+      "first_purchase_positions": [
+        1,
+        6,
+        11,
+        12,
+        18,
+        23,
+        24,
+        28
+      ],
+      "total_units": 10264,
+      "funded_cap": 41387,
+      "controller_units": 7087,
+      "controller_cap": 31426,
+      "service_units": 1920,
+      "development_generator_units": 1257,
+      "peak_weight_bits": 11,
+      "peak_prediction_working_bits": 27,
+      "all_reference_comparisons_pass": true
+    },
+    {
+      "contract": {
+        "version": "r-p3-b-a-blocked-prod-v1.1",
+        "horizon": 32,
+        "block_size": 4,
+        "expert_count": 4,
+        "action_bits": 16,
+        "quota": 8,
+        "state_bits": 16,
+        "k": 3,
+        "random_bits": 528,
+        "individual_weight_bits": 19,
+        "prediction_working_bits": 42,
+        "sampler_working_bits": 95,
+        "maximum_operand_bits": 95
+      },
+      "seed": 20261009,
+      "private_reference_rounds_checked": 32,
+      "purchase_count": 8,
+      "first_purchase_positions": [
+        1,
+        6,
+        11,
+        12,
+        18,
+        23,
+        24,
+        28
+      ],
+      "total_units": 11140,
+      "funded_cap": 43947,
+      "controller_units": 7963,
+      "controller_cap": 33986,
+      "service_units": 1920,
+      "development_generator_units": 1257,
+      "peak_weight_bits": 17,
+      "peak_prediction_working_bits": 37,
+      "all_reference_comparisons_pass": true
+    },
+    {
+      "contract": {
+        "version": "r-p3-b-a-blocked-prod-v1.1",
+        "horizon": 256,
+        "block_size": 2,
+        "expert_count": 4,
+        "action_bits": 32,
+        "quota": 128,
+        "state_bits": null,
+        "k": 2,
+        "random_bits": 8320,
+        "individual_weight_bits": 129,
+        "prediction_working_bits": 165,
+        "sampler_working_bits": 95,
+        "maximum_operand_bits": 165
+      },
+      "seed": 23,
+      "private_reference_rounds_checked": 256,
+      "purchase_count": 128,
+      "first_purchase_positions": [
+        0,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        15
+      ],
+      "total_units": 88919,
+      "funded_cap": 540566,
+      "controller_units": 72949,
+      "controller_cap": 399924,
+      "service_units": 14592,
+      "development_generator_units": 1378,
+      "peak_weight_bits": 129,
+      "peak_prediction_working_bits": 161,
+      "all_reference_comparisons_pass": true
+    }
+  ],
+  "failed_invoice": {
+    "fixture": "Real trusted checked service called with limit_total=20",
+    "exception": "Rejected",
+    "status": "budget_exhausted",
+    "actual_failed_service_units": 19,
+    "whole_meter_units_retained": 1763,
+    "rounds_closed_before_failure": 1,
+    "admitted_labels": 0,
+    "remaining_reservation": {
+      "checked_query_quota": 1088
+    },
+    "no_success_result_returned": true
+  },
+  "startup_and_ownership": {
+    "invalid_seed_rejected_before_meter_creation": true,
+    "foreign_bit_meter_rejected_before_learner_spending": true
+  },
+  "normalization_reference": [
+    {
+      "state_bits": 1,
+      "block": 4,
+      "state_loss_pairs": 560,
+      "peak_prediction_bits": 6,
+      "proved_prediction_bits": 38,
+      "exact_fraction_reference_match": true
+    },
+    {
+      "state_bits": 32,
+      "block": 1024,
+      "state_loss_pairs": 80,
+      "peak_prediction_bits": 78,
+      "proved_prediction_bits": 82,
+      "exact_fraction_reference_match": true
+    }
+  ],
+  "result": "PASS: every focused comparison and required failure disposition passed."
+}

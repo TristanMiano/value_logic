@@ -1,0 +1,128 @@
+{
+  "schema": "value_logic.r_p3b_a.adaptive_quota_review.v1",
+  "recorded_utc": "2026-10-09T21:50:30.632228+00:00",
+  "task": "R-P3-B-A",
+  "base_commit": "6ce7391b6a41c6c19397b00ce7b6a2d9b228b9a4",
+  "reviewer": "ChatGPT GPT-6 Astra Pro; same-model nonblind separate proof/source assignment",
+  "reviewer_research_credit_ns": 0,
+  "scope": "Independent check of parent-proposed adaptive exact-quota proof, finite update arithmetic, approximation allowances, feedback/fee contract, and one parent-specified prospective missing-propensity witness",
+  "preserved_prior_review_files": [
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/source_contracts.md",
+      "bytes": 8202,
+      "sha256": "7fa21c727c45ae15e44b53f68eb8c046f4af28de28662f070696027e51041ed3"
+    },
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/block_reconstruction.md",
+      "bytes": 6530,
+      "sha256": "a334f7bfff6a926c786b2b516379e9c228f944d720b91b11128463e0676260a7"
+    },
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/manifest.json",
+      "bytes": 8449,
+      "sha256": "163470963948bd950ba2dbe7afdb0ccc1046e5bd803050dc63cabffb4a0dfde7"
+    },
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/source_scope_supplement.md",
+      "bytes": 7732,
+      "sha256": "2aa6786696cc9412587e71c5d03c336e47fa756a10967420a66f94b20923e8dd"
+    },
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/supplement_manifest.json",
+      "bytes": 5352,
+      "sha256": "d39d300ac6ca9858fe5081d12111dff6c0f667f1a9457ea82714b6c669efe727"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/adaptive_quota_review.md",
+      "bytes": 12711,
+      "sha256": "7c3c381b427989ae10cd4e0ec1bc9292be70cda6e421aebd7da44bb9901f1a32"
+    },
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/adaptive_propensity_witness_target_v1.json",
+      "bytes": 1737,
+      "sha256": "cfb5d50c0552c816ee790adb032cab3a1a50f15f77bdeac5ab2f9e14f6a108cd"
+    },
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/check_adaptive_propensity_witness.py",
+      "bytes": 5879,
+      "sha256": "bbd88f8fb6e478d78cb4c4017a582092c414606c6f5e96ae7c7b71608ba837fb"
+    },
+    {
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/literature_agent/adaptive_propensity_witness_result_v1.json",
+      "bytes": 8224,
+      "sha256": "4bc3e03781791ba23be0c758e4ea58cf970eb003952aa059190cb998d42bf737"
+    }
+  ],
+  "source_bindings": [
+    {
+      "id": "cesa_bianchi_mansour_stoltz_2007_prod",
+      "title": "Improved second-order bounds for prediction with expert advice",
+      "url": "https://cesa-bianchi.di.unimi.it/Pubblicazioni/J28.pdf",
+      "venue": "Machine Learning 66:321-352 (2007)",
+      "doi": "10.1007/s10994-006-5001-7",
+      "locators": [
+        "section 3, printed pp.327-328, Lemmas 1-2"
+      ],
+      "status": "Previously inspected primary potential inequality reused; adaptive block identity and coefficient bound independently reconstructed",
+      "web_refs": [
+        "turn123view0",
+        "turn124view1"
+      ]
+    },
+    {
+      "id": "castro_hellstrom_van_erven_2023_adaptive",
+      "title": "Adaptive Selective Sampling for Online Prediction with Experts",
+      "authors": [
+        "Rui M. Castro",
+        "Fredrik Hellström",
+        "Tim van Erven"
+      ],
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/00b67df24009747e8bbed4c2c6f9c825-Paper-Conference.pdf",
+      "venue": "NeurIPS 2023",
+      "locators": [
+        "section 2 pp.2-3: prediction/query chronology and importance-weighted update",
+        "section 4 Theorem 2 and Lemma 2, pp.5-6",
+        "section 5: conditional-gap label-complexity premise"
+      ],
+      "status": "Primary protocol and displayed results revisited for closest adaptive comparison; no source theorem substituted for local exact-quota correction-aware proof",
+      "web_refs": [
+        "turn140view0"
+      ]
+    }
+  ],
+  "proof_findings": [
+    "Conditional identities and comparator coefficient are valid for fixed exogenous table and frozen p with predictable block probabilities.",
+    "Probability floor yields (1/pi-1)^2 <= H^2 <= H*K; consequently comparator coefficient is at most one.",
+    "Fixed-mass term H*K*m*log(1/(1-2^-s)) and action term (T-m)*2^-h are valid under stated rounding and conditional action-randomness contracts.",
+    "Full block public lookahead and actual computational prices are additional explicit interface requirements.",
+    "Random history-coupled comparators require min_i E L_i unless separately justified; independent exogenous random tapes admit a separate conditioning argument.",
+    "A purchased propensity must enter gamma; uniform core factor is recovered only for uniform probabilities.",
+    "Ticket denominator D=(B+1)*H*K requires new integer and intermediate-capacity accounting."
+  ],
+  "witness_validation": {
+    "target_recorded_before_result": true,
+    "target_parameters": "B=4,m=64,H=K=7,pi=(5/8,1/8,1/8,1/8),labels=(0,1,1,1),constant experts 0 and 1",
+    "method": "Exact Fraction enumeration over Binomial(k,5/8) sufficient statistic",
+    "naive_regret_interval": [
+      "64.261798460036",
+      "64.261798460037"
+    ],
+    "propensity_aware_regret_interval": [
+      "-9.165533525572",
+      "-9.165533525571"
+    ],
+    "rigorous_upper_bound_for_49_log_2": "343/10",
+    "claim": "Naive variant violates the proposed task-loss guarantee; no service-cost or algorithmic-value claim follows from this witness."
+  },
+  "exclusions": [
+    "No stable scientific source or implementation edited",
+    "No planned experiment changed",
+    "No service calls or fee measurements",
+    "No novelty claim",
+    "No complete third-party PDF redistributed",
+    "No P3-08 work",
+    "No ledger, principal clock or publication edit"
+  ]
+}

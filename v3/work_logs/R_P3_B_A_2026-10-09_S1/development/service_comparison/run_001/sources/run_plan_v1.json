@@ -1,0 +1,49 @@
+{
+  "schema": "value_logic.selective_feedback.run_plan.v1",
+  "stage": "DEVELOPMENT",
+  "saved_before_planned_runs": true,
+  "purpose": "Measure the exact and bounded-state selective service against its ordinary public exact controls; inspect cost and numerical state growth without claiming empirical theorem verification or population generalization.",
+  "tape": {
+    "family": "euler-248-public-modular-equality-v1",
+    "population_order": "Primes (17,31,47,61,97), then a=1,...,p-1",
+    "index_at_t": "(73*t+19) mod 248, with t starting at zero",
+    "horizons": [992, 3968],
+    "law": "Fixed deterministic input tape, respectively four and sixteen complete public-domain cycles. The generator computes no answers.",
+    "request_ids": "Fresh finite ASCII IDs identify occurrences without changing mathematical keys."
+  },
+  "main_arms": {
+    "block_sizes": [2, 4, 8, 16],
+    "state_bits": [null, 16],
+    "action_bits": 16,
+    "seed": 307201,
+    "experts": ["constant_zero", "constant_one", "odd_base", "lower_half_base"],
+    "k": "max(2, B-1)"
+  },
+  "variation_arms": {
+    "horizon": 992,
+    "block_size": 8,
+    "state_bits": [null, 16],
+    "additional_seeds": [307203, 307207],
+    "interpretation": "Two additional reproducible traces check sensitivity of this developmental illustration; not IID replications or a confidence interval."
+  },
+  "controls": [
+    "Direct fast binary exact actions, separately charged source closure and calls.",
+    "Checked always-BUY, same provider as the selective learner.",
+    "Ordinary semantic exact cache, initially empty, capacity 248, paid construction and calls.",
+    "Ordinary quadratic-residue table, paid prime verification/construction and calls.",
+    "All four fixed experts, with their all-issued losses recorded as hindsight diagnostics.",
+    "Same-selector corrected fixed experts, explicitly counterfactual charged-service diagnostics, not a retrospectively selected deployed policy.",
+    "Ordinary blocked product weights: algorithmic equivalence, not an independently superior renamed method."
+  ],
+  "endpoints": [
+    "Successful exact purchase quota and actual resource debits, by category and named operation.",
+    "Prospective sampled 0-1 loss, terminal 0-1 loss and immutable emitted Brier score separately.",
+    "All-issued expert losses and the correct fixed-expert theorem bound with state/action rounding allowances.",
+    "Cold and setup-separated resource totals; physical runtime and evaluator procurement separately.",
+    "Peak retained and working integer sizes versus admitted bounds, consumed random bits, exhausted reservations.",
+    "Value at task price 1 or 100 and one common primitive-unit price 1/1000; no claim for every category-specific tariff."
+  ],
+  "exposure": "All generated outputs remain DEVELOPMENT. Hash sources and plan before each declared batch, preserve failures and complete units, do not silently rerun changed sources.",
+  "private_evaluator": "Obtain complete correct labels only after each learner transcript closes. No evaluator object or unpurchased label is supplied to issue/update. Charge and report evaluator computation separately from deployment policy cost.",
+  "stop": "No P3-08, final population or final evaluation freeze is selected by this run plan."
+}

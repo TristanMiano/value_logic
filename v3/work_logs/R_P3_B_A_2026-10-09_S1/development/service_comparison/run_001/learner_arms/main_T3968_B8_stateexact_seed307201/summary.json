@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "stage": "DEVELOPMENT",
+  "name": "main_T3968_B8_stateexact_seed307201",
+  "kind": "main",
+  "horizon": 3968,
+  "block_size": 8,
+  "state_bits": null,
+  "seed": 307201,
+  "contract": {
+    "version": "r-p3-b-a-blocked-prod-v1.1",
+    "horizon": 3968,
+    "block_size": 8,
+    "expert_count": 4,
+    "action_bits": 16,
+    "quota": 496,
+    "state_bits": null,
+    "k": 7,
+    "random_bits": 64976,
+    "individual_weight_bits": 1489,
+    "prediction_working_bits": 1509,
+    "sampler_working_bits": 95,
+    "maximum_operand_bits": 1509
+  },
+  "learner": {
+    "version": "r-p3-b-a-blocked-prod-v1.1",
+    "contract": {
+      "version": "r-p3-b-a-blocked-prod-v1.1",
+      "horizon": 3968,
+      "block_size": 8,
+      "expert_count": 4,
+      "action_bits": 16,
+      "quota": 496,
+      "state_bits": null,
+      "k": 7,
+      "random_bits": 64976,
+      "individual_weight_bits": 1489,
+      "prediction_working_bits": 1509,
+      "sampler_working_bits": 95,
+      "maximum_operand_bits": 1509
+    },
+    "rounds_closed": 3968,
+    "purchases": 496,
+    "completed": true,
+    "peak_weight_bits": 1342,
+    "peak_prediction_working_bits": 1355,
+    "random_bits_consumed": 64976,
+    "randomness_provenance": "deterministic-development-mt-seed:307201",
+    "final_weights": [
+      14734829854826935224681559205418409871444339883827012332933159812588852737178797041771266947406588027084918007529255063372989305569509232404156691824949970948074549662648394766577501570034447404131034084867159934590195715813216484167528669205946350367346737048129960851610488171635671835378690290927477031043047602868113044350760610776920337319843341785399755549179059874438076218348272234535270714703872,
+      918973339139975016820532534502781310586957673406893902972386068801682423814424721847801951959408210897603907452977861577605285008045028087430925049154376346364993253931250649109249327957085183252008296739032083821857026710206916689270705384430344320614839242301306775332788607355845657793906231739663053908520359810593185581701569168438076938348699625943944100507351757126447729218070920934492207054848,
+      91012504921599653622880309043494751048082568178737711926417533428280347788363370304655318327598117999665630675971308950911553027719633292288237329517504663576443341876757781765485241067487111129205868858270056611414051686982031348440862935281516928096778645608253706586344358894277588666826603856115783335941086425792168234680378364739467255066429728063259325909662866332395576908494956684372172865536,
+      50573084491893486969747535858764893073959882500896540949779838142034864426238536882954223744996740960509522661562319672227266304760381177883941865991490565386035327104400725403164025365581271213052262793088591950830127155680671177903433546576782268413751022306167985091428632391173632921014630229665001116942200993597168011132490473874624400756941001138244870368978977065722460503835601783932257820475392
+    ]
+  },
+  "resource_units": {
+    "cold_total": 2935898,
+    "source_registry": 18970,
+    "ongoing_including_learner_initialization": 2916928,
+    "purchased_checked_services": 139379,
+    "nonpurchase_excluding_registry": 2777549,
+    "funded_cap": 29562466
+  },
+  "evaluation": {
+    "prospective_sampled_01_loss": 1945,
+    "terminal_sampled_01_loss": 1703,
+    "conditional_expected_prospective_01_loss": "62908299/32768",
+    "conditional_expected_terminal_01_loss": "109888705/65536",
+    "conditional_expectation_scope": "Only action bits averaged for this realized selector/label path; fixed-tape weights do not depend on sampled actions. No selector average or IID confidence statement.",
+    "immutable_issued_brier": "3050784577865/2147483648",
+    "fixed_expert_all_issued_losses": {
+      "constant_zero": 1984,
+      "constant_one": 1984,
+      "odd_base": 2112,
+      "lower_half_base": 1856
+    },
+    "fixed_expert_role": "Four fixed-library hindsight diagnostics; no post-hoc best expert is claimed to be a prospectively deployed policy.",
+    "same_selector_corrected_expert_losses": {
+      "constant_zero": 1745,
+      "constant_one": 1727,
+      "odd_base": 1840,
+      "lower_half_base": 1625
+    },
+    "corrected_expert_cost_basis": "Counterfactual substitution of each fixed expert's unbought terminal action, retaining the SAME COMPLETE executed learner invoice, selected receipts, internal updates and exogenous tape. Not a separately optimized or deployed control.",
+    "theorem_bounds": {
+      "kind": "Unconditional expectation bounds over independent fair selectors/action bits on the fixed tape; not per-seed acceptance tests.",
+      "log_N_lower": "4113367458871726488827132607237684211737122750172035768836182971904/2967167417134138861522867601505648593729347339831292629241943359375",
+      "log_N_upper": "164534698354869081238612394094549356114163531607843424783206842809253/118686696685365554460914704060225943749173893593251705169677734375000",
+      "log_enclosure": "32 positive atanh-series terms plus explicit geometric upper tail; Fraction arithmetic.",
+      "alpha": "1",
+      "best_fixed_all_issued_loss": 1856,
+      "action_state_allowance": "0",
+      "action_rounding_allowance": "217/4096",
+      "brier_state_allowance": "0",
+      "brier_rounding_allowance": "31/256",
+      "terminal_expectation_upper_raw": "2386034908603474331009416279818586038639414392560975044254363689407009411/1240154871487901303754863846506850677542388439178466796875000000000000",
+      "terminal_expectation_upper_clipped": "2386034908603474331009416279818586038639414392560975044254363689407009411/1240154871487901303754863846506850677542388439178466796875000000000000",
+      "brier_expectation_upper_raw": "1193050305083855436327817857372023974714852056911749940009862737647840643/542567756275956820392752932846747171424794942140579223632812500000000",
+      "brier_expectation_upper_clipped": "1193050305083855436327817857372023974714852056911749940009862737647840643/542567756275956820392752932846747171424794942140579223632812500000000"
+    },
+    "price_cases": {
+      "1": {
+        "task_price": 1,
+        "common_primitive_unit_price": "1/1000",
+        "realized_cold_total": "2319449/500",
+        "conditional_action_mean_cold_total": "37786964541/8192000",
+        "corrected_expert_same_complete_invoice_totals": {
+          "constant_zero": "2340449/500",
+          "constant_one": "2331449/500",
+          "odd_base": "2387949/500",
+          "lower_half_base": "2280449/500"
+        },
+        "probability_boundary": "This conditional action-mean cost uses this path's actual resource invoice. It is not the unconditional expected-cost bound over selectors."
+      },
+      "100": {
+        "task_price": 100,
+        "common_primitive_unit_price": "1/1000",
+        "realized_cold_total": "86617949/500",
+        "conditional_action_mean_cold_total": "349414922229/2048000",
+        "corrected_expert_same_complete_invoice_totals": {
+          "constant_zero": "88717949/500",
+          "constant_one": "87817949/500",
+          "odd_base": "93467949/500",
+          "lower_half_base": "82717949/500"
+        },
+        "probability_boundary": "This conditional action-mean cost uses this path's actual resource invoice. It is not the unconditional expected-cost bound over selectors."
+      }
+    },
+    "ordinary_blocked_Prod": "Algorithmic equivalence; no duplicate renamed run or superiority claim."
+  },
+  "execution_elapsed_runtime_ns": 443343186,
+  "arm_elapsed_runtime_ns": 1276941924,
+  "source_plan_hashes": {
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback.py": "d103cfdf9356c7e977df53c27bd57c26adc8df59a954c7c4dac2a0d537ad3af4",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_service.py": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/checks/07_selective_feedback_development.py": "b1eadf5036d3f869fcdc77a602da29cff42db10b3ee6b6a9d444e7d0569dd469",
+    "/workspace/scratch/26a4ba8a7dcb/value_logic/v3/work_logs/R_P3_B_A_2026-10-09_S1/development/run_plan_v1.json": "c9d342f69cd11dce041ac00837519cd545e03e63ee9311759f12b996629c0439"
+  },
+  "finished_utc": "2026-10-09T21:44:41.463599+00:00"
+}

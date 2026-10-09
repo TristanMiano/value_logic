@@ -1,0 +1,177 @@
+{
+  "schema": "value_logic.analytic_null_diagnostic.v1",
+  "status": "PASS",
+  "stage": "DEVELOPMENT",
+  "recorded_utc": "2026-10-09T22:08:30.322961+00:00",
+  "prospective_postrun_plan_sha256": "d13da1472e38fe1ab4bb91b39157fbf2224c968a2bea3f2831f0577a34be689f",
+  "source_hashes": {
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/allocation_comparison/run_001/result.json": "061f02a63c2bd84cfe22d519ab2570ca21939119764f69eaec6c7c1582a287f8",
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/allocation_comparison/run_001/sources/prior_uniform_result.json": "a99010afcd0667f6f8c6cbfa4588853333b80a24151b6e95a4aa3249d7c444b1",
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/allocation_comparison/postrun_null_diagnostic_plan_v1.json": "d13da1472e38fe1ab4bb91b39157fbf2224c968a2bea3f2831f0577a34be689f",
+    "v3/work_logs/R_P3_B_A_2026-10-09_S1/reviews/service_agent/postrun_null_diagnostic.py": "efc3b68b1b5f0dc7d6dfd727934d71070a77d06ec693d9b60847f5590a1e9818"
+  },
+  "position_in_protocol": "Requested after the three planned adaptive arms completed; the diagnostic note was saved before these complete rows were calculated. This is outside the planned run grid and is not an added seed/procedure run.",
+  "proof": "Every binary label y satisfies (1/2-y)^2=1/4. Each independent fair binary action has error probability 1/2 for either y. Retaining the same m exact purchases gives zero purchased error and (T-m)/2 conditional expected unpurchased errors.",
+  "label_calls": 0,
+  "learner_calls": 0,
+  "service_calls": 0,
+  "random_draws": 0,
+  "fee_scope": "All quoted fees retain an existing path's complete invoice. They are not unconditional expected fee estimates, and no reduced resource bill for a separately deployed null method is inferred.",
+  "conclusion": "All six observed issued Brier values exceed their exact no-information T/4 baseline. Lower adaptive Brier than uniform in these traces is therefore not forecast superiority over this analytic null. The terminal-action comparison is a separate, same-purchase-path conditional diagnostic.",
+  "rows": [
+    {
+      "kind": "adaptive_observed_core_v1_2",
+      "original_arm": "adaptive_T992_B4_state16_seed307201",
+      "horizon": 992,
+      "block_size": 4,
+      "quota": 248,
+      "null_issued_probability": "1/2",
+      "null_immutable_issued_brier": "248",
+      "null_prospective_conditional_action_loss": "496",
+      "null_same_selector_terminal_conditional_action_loss": "372",
+      "observed_issued_brier": "1185228056615/4294967296",
+      "observed_brier_minus_null": "120076167207/4294967296",
+      "observed_selector_conditional_terminal_loss": "24110875/65536",
+      "observed_conditional_terminal_minus_null": "-268517/65536",
+      "same_complete_observed_resource_invoice_units": 433123,
+      "identical_observed_invoice_null_price_totals": {
+        "1": "805123/1000",
+        "100": "37633123/1000"
+      },
+      "counterfactual_boundary": "Analytic output substitution with the original selected receipts, internal state, allocation, purchases and COMPLETE executed resource invoice retained. No newly deployed null controller or cheaper-method claim."
+    },
+    {
+      "kind": "prior_uniform_observed_core_v1_1",
+      "original_arm": "main_T992_B4_state16_seed307201",
+      "horizon": 992,
+      "block_size": 4,
+      "quota": 248,
+      "null_issued_probability": "1/2",
+      "null_immutable_issued_brier": "248",
+      "null_prospective_conditional_action_loss": "496",
+      "null_same_selector_terminal_conditional_action_loss": "372",
+      "observed_issued_brier": "96853154955/268435456",
+      "observed_brier_minus_null": "30281161867/268435456",
+      "observed_selector_conditional_terminal_loss": "23878879/65536",
+      "observed_conditional_terminal_minus_null": "-500513/65536",
+      "same_complete_observed_resource_invoice_units": 339087,
+      "identical_observed_invoice_null_price_totals": {
+        "1": "711087/1000",
+        "100": "37539087/1000"
+      },
+      "counterfactual_boundary": "Analytic output substitution with the original selected receipts, internal state, allocation, purchases and COMPLETE executed resource invoice retained. No newly deployed null controller or cheaper-method claim.",
+      "uniform_v1_2_registry_only_transfer": {
+        "kind": "Derived from the separately verified guard-only source transfer; not a new execution.",
+        "derived_current_cold_units": 339113,
+        "registry_only_delta": 26,
+        "identical_transferred_invoice_null_price_totals": {
+          "1": "711113/1000",
+          "100": "37539113/1000"
+        }
+      }
+    },
+    {
+      "kind": "adaptive_observed_core_v1_2",
+      "original_arm": "adaptive_T992_B8_state16_seed307201",
+      "horizon": 992,
+      "block_size": 8,
+      "quota": 124,
+      "null_issued_probability": "1/2",
+      "null_immutable_issued_brier": "248",
+      "null_prospective_conditional_action_loss": "496",
+      "null_same_selector_terminal_conditional_action_loss": "434",
+      "observed_issued_brier": "19077620685/67108864",
+      "observed_brier_minus_null": "2434622413/67108864",
+      "observed_selector_conditional_terminal_loss": "28496517/65536",
+      "observed_conditional_terminal_minus_null": "53893/65536",
+      "same_complete_observed_resource_invoice_units": 363101,
+      "identical_observed_invoice_null_price_totals": {
+        "1": "797101/1000",
+        "100": "43763101/1000"
+      },
+      "counterfactual_boundary": "Analytic output substitution with the original selected receipts, internal state, allocation, purchases and COMPLETE executed resource invoice retained. No newly deployed null controller or cheaper-method claim."
+    },
+    {
+      "kind": "prior_uniform_observed_core_v1_1",
+      "original_arm": "main_T992_B8_state16_seed307201",
+      "horizon": 992,
+      "block_size": 8,
+      "quota": 124,
+      "null_issued_probability": "1/2",
+      "null_immutable_issued_brier": "248",
+      "null_prospective_conditional_action_loss": "496",
+      "null_same_selector_terminal_conditional_action_loss": "434",
+      "observed_issued_brier": "693562758007/2147483648",
+      "observed_brier_minus_null": "160986813303/2147483648",
+      "observed_selector_conditional_terminal_loss": "14201239/32768",
+      "observed_conditional_terminal_minus_null": "-20073/32768",
+      "same_complete_observed_resource_invoice_units": 274589,
+      "identical_observed_invoice_null_price_totals": {
+        "1": "708589/1000",
+        "100": "43674589/1000"
+      },
+      "counterfactual_boundary": "Analytic output substitution with the original selected receipts, internal state, allocation, purchases and COMPLETE executed resource invoice retained. No newly deployed null controller or cheaper-method claim.",
+      "uniform_v1_2_registry_only_transfer": {
+        "kind": "Derived from the separately verified guard-only source transfer; not a new execution.",
+        "derived_current_cold_units": 274615,
+        "registry_only_delta": 26,
+        "identical_transferred_invoice_null_price_totals": {
+          "1": "141723/200",
+          "100": "8734923/200"
+        }
+      }
+    },
+    {
+      "kind": "adaptive_observed_core_v1_2",
+      "original_arm": "adaptive_T3968_B8_state16_seed307201",
+      "horizon": 3968,
+      "block_size": 8,
+      "quota": 496,
+      "null_issued_probability": "1/2",
+      "null_immutable_issued_brier": "992",
+      "null_prospective_conditional_action_loss": "1984",
+      "null_same_selector_terminal_conditional_action_loss": "1736",
+      "observed_issued_brier": "4872418212035/4294967296",
+      "observed_brier_minus_null": "611810654403/4294967296",
+      "observed_selector_conditional_terminal_loss": "113228643/65536",
+      "observed_conditional_terminal_minus_null": "-541853/65536",
+      "same_complete_observed_resource_invoice_units": 1382703,
+      "identical_observed_invoice_null_price_totals": {
+        "1": "3118703/1000",
+        "100": "174982703/1000"
+      },
+      "counterfactual_boundary": "Analytic output substitution with the original selected receipts, internal state, allocation, purchases and COMPLETE executed resource invoice retained. No newly deployed null controller or cheaper-method claim."
+    },
+    {
+      "kind": "prior_uniform_observed_core_v1_1",
+      "original_arm": "main_T3968_B8_state16_seed307201",
+      "horizon": 3968,
+      "block_size": 8,
+      "quota": 496,
+      "null_issued_probability": "1/2",
+      "null_immutable_issued_brier": "992",
+      "null_prospective_conditional_action_loss": "1984",
+      "null_same_selector_terminal_conditional_action_loss": "1736",
+      "observed_issued_brier": "3047182602037/2147483648",
+      "observed_brier_minus_null": "916878823221/2147483648",
+      "observed_selector_conditional_terminal_loss": "54948721/32768",
+      "observed_conditional_terminal_minus_null": "-1936527/32768",
+      "same_complete_observed_resource_invoice_units": 1039110,
+      "identical_observed_invoice_null_price_totals": {
+        "1": "277511/100",
+        "100": "17463911/100"
+      },
+      "counterfactual_boundary": "Analytic output substitution with the original selected receipts, internal state, allocation, purchases and COMPLETE executed resource invoice retained. No newly deployed null controller or cheaper-method claim.",
+      "uniform_v1_2_registry_only_transfer": {
+        "kind": "Derived from the separately verified guard-only source transfer; not a new execution.",
+        "derived_current_cold_units": 1039136,
+        "registry_only_delta": 26,
+        "identical_transferred_invoice_null_price_totals": {
+          "1": "346892/125",
+          "100": "21829892/125"
+        }
+      }
+    }
+  ],
+  "principal_clock_credit_ns": 0
+}

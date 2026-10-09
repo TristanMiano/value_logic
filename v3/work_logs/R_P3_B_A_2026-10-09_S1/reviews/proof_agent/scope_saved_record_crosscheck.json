@@ -1,0 +1,93 @@
+{
+  "schema": "value_logic.selective_feedback.main_scope_saved_record_crosscheck.v1",
+  "new_policy_executions": 0,
+  "principal_time_credit_ns": 0,
+  "checks": "PASS",
+  "reviewed_derivation_sha256": "c62cc840cf35af4419a64234ab49c5ed651400b1bd7f1023003fa77cb1b5e401",
+  "inputs": [
+    {
+      "name": "uniform",
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/run_001/result.json",
+      "sha256": "a99010afcd0667f6f8c6cbfa4588853333b80a24151b6e95a4aa3249d7c444b1"
+    },
+    {
+      "name": "adaptive",
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/allocation_comparison/run_001/result.json",
+      "sha256": "061f02a63c2bd84cfe22d519ab2570ca21939119764f69eaec6c7c1582a287f8"
+    },
+    {
+      "name": "transfer",
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/current_registry_reprice_v1.json",
+      "sha256": "db290b5d88a6a0c7714458c4400b6586844ebb3baaa5d0759740291491807abc"
+    },
+    {
+      "name": "price",
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/price_and_precision_audit.json",
+      "sha256": "f5efd46fd83cbf0a416a451d1c3aadfecb58dc81b758f35abd6b8c0c2cdf9b97"
+    },
+    {
+      "name": "setup",
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/setup_scope_erratum_2026-10-09.json",
+      "sha256": "ea63f27afd50024f68b039e4947fa5b594a933b060d3870f81cf5e32067b2687"
+    },
+    {
+      "name": "archive_correction",
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/archive_packaging_correction_v2.json",
+      "sha256": "44eff641eb9abe7d759a763a4369504a4398c8a85e5d3fd062d6acb16d243791"
+    },
+    {
+      "name": "archive_guard",
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/principal_archive_guard_failure.json",
+      "sha256": "c2f9d63bcb3ccd9221b8fcf1f558e66344accddf368f5eb5e2224019e1854a6e"
+    },
+    {
+      "name": "archive_readback",
+      "path": "v3/work_logs/R_P3_B_A_2026-10-09_S1/development/service_comparison/service_agent_repaired_archive_readback.json",
+      "sha256": "a5be8600bddc5ef059af89e842e6326decb4fdbee1533c664ba70a29e0bc330f"
+    }
+  ],
+  "cost_tables_and_differences_match": true,
+  "uniform_bounded_representation_savings_percent": 64.60616827956038,
+  "forecast_pairs": [
+    {
+      "T": 992,
+      "B": 4,
+      "adaptive_brier": "1185228056615/4294967296",
+      "uniform_brier": "96853154955/268435456",
+      "both_exceed_T_over_4": true
+    },
+    {
+      "T": 992,
+      "B": 8,
+      "adaptive_brier": "19077620685/67108864",
+      "uniform_brier": "693562758007/2147483648",
+      "both_exceed_T_over_4": true
+    },
+    {
+      "T": 3968,
+      "B": 8,
+      "adaptive_brier": "4872418212035/4294967296",
+      "uniform_brier": "3047182602037/2147483648",
+      "both_exceed_T_over_4": true
+    }
+  ],
+  "core_registry_delta": 26,
+  "table_ongoing_source_margin_per_round": 11,
+  "cold_constants": {
+    "uniform_v1_1": 4882,
+    "uniform_v1_2": 4908,
+    "adaptive": 8809
+  },
+  "setup_sensitivity_thresholds": {
+    "construction_only": 147,
+    "full_cold_table": 1281,
+    "observed_992_minimum_margin": 14334
+  },
+  "table_meter_envelopes_from_source": {
+    "unit_bound_at_8192": 607819,
+    "unit_cap": 10000000,
+    "event_bound_at_8192": 75339,
+    "event_cap": 100000
+  },
+  "archive_disposition": "Saved failure/correction/readback records agree; no archive was reopened or scientific run repeated for this crosscheck."
+}
