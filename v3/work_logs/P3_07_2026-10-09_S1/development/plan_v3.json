@@ -1,0 +1,16 @@
+{
+  "schema": "value_logic.p307.development_plan.v3",
+  "stage": "DEVELOPMENT",
+  "frozen_utc": "2026-10-09T17:24:53.954889+00:00",
+  "previous_plan": "plan_v2.json",
+  "unchanged_design": "Catalogue, checkpoints, delta, price grid, horizons and self-audit dimensions remain those of plan_v2; only the actual source revision and fresh random streams change.",
+  "reason": "V2 can exhaust after price preflight before catalogue admission, then return unvalidated profile.names[0]. V3 uses the public fixed fallback, withholds profile identity until exact scope/range/catalogue verification, and avoids copying oversized negative integers before rejection.",
+  "profile_seed": 307107,
+  "audit_seed": 307109,
+  "source_hashes": {
+    "07_paid_reasoning.py": "be6a575a9cf4de042823e4c8a2c03c31fffe70b4c8e047dd1680655d05f1e0ec",
+    "07_paid_reasoning_development.py": "c8be07643e21c2f3eb7d5dc0df9128ff28bfecd48f8db299061f68d62561d2dd",
+    "07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615"
+  },
+  "preservation": "V1/V2 sources, review probes and all runs are retained; default-budget old numerical data are not relabeled as v3."
+}

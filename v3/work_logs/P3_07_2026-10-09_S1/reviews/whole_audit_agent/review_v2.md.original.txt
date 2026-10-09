@@ -1,0 +1,123 @@
+# P3-07 whole-procedure-v2 repair and §3.3 review
+
+Reviewer: ChatGPT, GPT-6 Astra Pro, 2026-10-09 UTC. Independent reasoning within the **same model**, using a **targeted, nonblind** source and saved-evidence review. A delegated same-model reviewer independently checked §3.3 and agreed with the mathematical disposition below. All reviewer time is unmeasured and receives **zero principal Research90 credit**.
+
+## Disposition
+
+**The two whole-audit-v1 limitations are repaired in v2. All fresh v2 saved numerics reconstruct exactly. Section 3.3 passes the targeted mathematical check. No remaining defect was found within this scope.**
+
+The review is finalized, and the v2 source freeze may end. Prior v1 sources, evidence, probes and reviews remain preserved. This disposition concerns P3-07 development evidence only; it neither starts nor completes a later task, gate or final evaluation.
+
+## Reviewed sources and retained checks
+
+| Source | SHA-256 |
+|---|---|
+| `07_computation_adapter.py` | `06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615` |
+| `07_paid_reasoning.py` | `be6a575a9cf4de042823e4c8a2c03c31fffe70b4c8e047dd1680655d05f1e0ec` |
+| `07_paid_reasoning_development.py` | `c8be07643e21c2f3eb7d5dc0df9128ff28bfecd48f8db299061f68d62561d2dd` |
+| `07_whole_procedure_audit.py`, v2 | `3de000ea0e512b952d9a15e8be37c5e68444196c4ce1d187e6d3068953a7ab39` |
+| `07_paid_reasoning.md`, whole file at this review | `447b49010a471328fba170aa2479debf658216ba078a79994b1b9cecd5fcdf16` |
+
+The exact controller hash is also machine-recorded in `review_probe_results_v2.json` and `review_manifest_v2.json`. The adapter, controller and development driver are byte-identical to the reviewed v1-audit sources. Their old budget suites were not repeated. The new executable check is `review_probes_v2.py`, adapted from the preserved v1 reconstruction; its full results and evidence hashes are in `review_probe_results_v2.json`.
+
+Root files and all four preserved v2 source snapshots matched through probe completion. The v2 global closure digest independently reconstructs as `d8b914c88e3dcf10bef3664f000985e7fa5918a437aa357366d26e93f4cc049d`. The v2 prospective plan precedes the global closure. An exact copy of the reviewed §3.3 text is retained in `section_3_3_reviewed_v2.txt`.
+
+## Fix 1: joint generator scope
+
+The whole-profile law now includes a digest of the two-entry mapping from driver and wrapper filenames to their exact source hashes. Its saved joint generator digest is `abc70b2a81de8e3ee0521d5f898ffe20710574947f0aeacd03d3f3f76d0a4ff4`.
+
+The independent reconstruction matches that digest. Changing only the driver-hash entry changes the resulting whole-profile scope; changing only the wrapper-hash entry also changes it. In both focused cases, the unchanged selector rejects a saved profile when supplied the changed expected scope. Thus the v1 driver-scope omission is repaired without modifying controller v3.
+
+## Fix 2: prepaid outer startup
+
+The wrapper now creates a separate 200,000-unit startup meter and prepays the source registry plus global closure bundle before calling `hashes()` or constructing the scientific closure. Archival source copies and filesystem/JSON transport are expressly declared harness instrumentation.
+
+| Startup operation | Units |
+|---|---:|
+| Source registry read/hash | 21,022 |
+| Global closure construction/hash | 16,384 |
+| Global closure retention | 8,192 |
+| **Total** | **45,598** |
+
+The actual `main()` prefix was instrumented twice, stopping before the first source-hash operation. With funding available, the observed order was charge attempt, successful charge, then the source-hash call; the prepaid operations exactly matched the saved startup meter. With the startup charge denied, hashing was never called. Neither probe reached any solver or episode.
+
+The outer bill is initialized with the startup resource vector. Reconstructing startup, every controller execution, extra audit execution, per-episode audit meter and final certificate meter yields exactly **56,409,605 units**, priced as `11281921/200 = 56,409.605`. Startup remains outside each tested controller episode's performance, as required by the declared boundary.
+
+The larger v2 source file also correctly increases the per-profile source registry charge. The constant builder meter is now 104,046 units, within its unchanged 150,000-unit limit. This change appears in every rebuilt profile's recorded setup cost.
+
+## Fresh v2 evidence reconstruction
+
+All 32,768 sampled indices reproduce the new seed **307151**, with 64 acquisition draws followed by 64 deployment draws in each of 256 episodes. The reconstruction uses the preserved 248 v3 population rows, whose controller/adapter/driver hashes are unchanged. It makes no new claim to an independent solver proof of their saved labels.
+
+All 256 profiles' sums, setup-resource vectors and identities match. Independent exact-rational interval and score calculations match every selection; replay of only the small selector also matches every complete saved selection record. All 256 realized profile intervals contain the corresponding exact saved-population means.
+
+For all 16,384 deployment queries, the feature mapping, deployment resources, baseline resources, exact-comparator resources, audit extras, task costs and paired all-in gains match. Total, category, operation and partition conservation hold for all retained meters. Profile and selection records are again written and flushed before the first deployment draw and solver call, as confirmed by the retained ordering probe.
+
+| Quantity per 64-query episode | Exact value |
+|---|---:|
+| Mean profile acquisition cost | `19638449/128000` |
+| Selection cost | `3893/1000` |
+| Mean charged-exact deployment cost | `4172681/256000` |
+| Mean controller all-in cost | `44446187/256000` |
+| Mean immediate-fallback cost | `78733879/64000` |
+| Mean all-in saving against fallback | `270489329/256000` |
+| Lower all-in saving against fallback | `1211017049/4096000` |
+
+The unchanged hard resource bound is `628752`, and the scalar range remains `[-718594/125,1280]`. The independently reconstructed upward radius is `7095/65536`, with `k=6`; it satisfies both integer certificate inequalities. The mean minus the full analytic range width times that radius equals the saved lower bound exactly.
+
+Observed resource use ranges from 171,930 to 174,733 units. All 256 episodes complete acquisition and select `full_fallback`; no acquisition-failure or alternative-selection branch is covered by this trace. The charged-exact comparator remains much cheaper than the controller because the controller adds profile rebuilding and selection to the same deployment solver. The positive result concerns fallback avoidance, not superiority over exact solving or optimality of acquiring the profile or outer audit.
+
+These are fixed-version, fixed-price, cold-query development episodes under the stated IID model. A deterministic seed is a reproducible realization, not proof that the sampling assumption holds.
+
+## Section 3.3: represented context prices
+
+The first extension is mathematically valid under the fixed-feature and fixed-policy conditions explicitly stated in the section. Write the raw paired coordinate as `d_j(X)` and fix bounded measurable context functions `g_r(X)` before profiling. The retained coordinates are the products
+
+\[
+h_{jr}(X)=g_r(X)d_j(X).
+\]
+
+For every represented schedule `lambda_j(X)=sum_r theta_jr g_r(X)`, linearity gives
+
+\[
+\mathbb E\left[\sum_j\lambda_j(X)d_j(X)\right]
+=\sum_{j,r}\theta_{jr}\,\mathbb E[h_{jr}(X)].
+\]
+
+On simultaneous product-coordinate intervals, choose the lower endpoint for `theta_jr >= 0` and the upper endpoint for `theta_jr < 0`. The signs used are those of **the expansion coefficients**. The argument remains valid when the represented price function itself changes sign across requests. Since the event already covers every product coordinate, the coefficients may be selected from the acquired data without an additional union bound over their continuum. Conditioning on that data fixes the selected rule for future evaluation under the applicable law.
+
+The expanded profile requires valid product ranges and its own simultaneous-event cell count. For `g_r` in `[c_r,e_r]` and `d_j` in `[a_j,b_j]`, safe endpoints are the minimum and maximum of the four products `c_r*a_j`, `c_r*b_j`, `e_r*a_j`, `e_r*b_j`. No independence between context and task features is needed. Constant product coordinates can be treated exactly.
+
+These are qualifications of acquiring the proposed expanded profile, not missing claims of the current implementation. Section 3.3 explicitly says the existing fourteen-coordinate profile is not silently reused. It charges computing/admitting context features and treats new price-reactive policy behavior as a different complete map. The claim is for the represented family of expected comparisons; it does not provide arbitrary query-dependent pricing or an individual-query truth guarantee.
+
+## Section 3.3: total variation transfer
+
+The second extension also passes. With the explicitly stated convention
+
+\[
+\operatorname{TV}(\nu,\mu)=\sup_A|\nu(A)-\mu(A)|,
+\]
+
+a measurable coordinate `f` in `[a,b]` under both laws obeys
+
+\[
+|\mathbb E_\nu f-\mathbb E_\mu f|
+\le\operatorname{TV}(\nu,\mu)(b-a).
+\]
+
+For `a < b`, normalize to `[0,1]` and integrate the differences of level-set probabilities. Each integrand has absolute value at most total variation, and the integration interval has length one. A constant coordinate has zero change directly. A binary indicator attains the coefficient, so no extra factor of two is required. For a symmetric coordinate in `[-R,R]`, its width is already `2R`.
+
+Consequently, on an old simultaneous coverage event and under a separately justified bound `TV(nu,mu) <= rho`, expanding each coordinate interval by `rho*(b_j-a_j)` and clipping it to its analytic range is valid. Applying the signed constant-price lower score yields
+
+\[
+G_\nu(\lambda)\ge L_\mu(\lambda)
+-\rho\sum_j|\lambda_j|(b_j-a_j).
+\]
+
+The population law `mu` must be the law underlying the profile, rather than just its empirical distribution, and the analytic ranges must hold on both laws' supports. If the separately justified TV certificate is itself probabilistic with failure probability `eta`, its event must be combined with the profile event; a union bound gives failure at most `delta+eta`, without requiring independence between those events. The current section is conditional on a supported TV bound and does not claim that such a probabilistic certificate has been obtained.
+
+The section correctly keeps feature-map and implementation changes separate from population drift. It asserts no empirical drift certificate for the development runs. Both the primary reviewer and the delegated same-model mathematical reviewer found no substantive defect in the stated extensions.
+
+## Preservation and review boundary
+
+Only new artifacts and two empty startup-probe directories within `reviews/whole_audit_agent` were created. No principal clock, ledger, plan, derivation, root source, old evidence or publication file was edited. No solver or full development driver was rerun; startup instrumentation stopped before hashing, and deployment-order instrumentation stopped before solving. The complete-policy controller-v3 budget conclusions remain those of the preserved v1 review of the identical source.

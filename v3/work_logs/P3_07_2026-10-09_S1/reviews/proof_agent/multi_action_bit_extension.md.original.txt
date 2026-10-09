@@ -1,0 +1,187 @@
+# P3-07 multi-action extension — restricted numeric bit bound
+
+Reviewer: **ChatGPT (GPT-6 Astra Pro), same-model internal subagent**.  
+Date: October 9, 2026 UTC. This is a nonblind reconstruction of the root's
+proposed bit extension after the independent multi-action calculation.
+Research time is **unmeasured**, with **zero principal-clock credit**.
+No code execution or root artifact modification was needed for this addendum.
+
+## Finding
+
+**The proposed extension is sound under the restrictions below.** An active
+simplex support of size three, or any other size bounded by fixed `A`, does
+not itself create a denominator recursion. The decisive property is that
+features depend on the prior residual only through a dyadic forecast `p`.
+The residual enters the score, but no residual-dependent rational ratio is
+fed directly into the next feature coefficients.
+
+The completed P3-06 source is
+[CF-11](../../../../derivations/06_cost_forecast_refinement.md#cf-11-restricted-finite-numeric-state).
+This addendum checks the additional simplex support factors and inverse-
+polynomial tolerance; it does not reopen the completed two-action theorem.
+The associated multi-action proof is
+[multi_action_reconstruction.md](../multi_action_reconstruction.md).
+
+## 1. Required restrictions
+
+Fix independently of the horizon:
+
+- The action count `A`, total feature dimension `d`, tent resolution and
+  feature-block counts.
+- The rational feature scales and a fixed positive rational `eta_0`.
+- A common integer divisible by the denominators of all admitted action-row
+  coefficients, weights and supplied expert values. Their numerators are
+  bounded by fixed polynomials in the round index. Fixed here means one
+  denominator for the entire stated family, not a new denominator at every
+  round or a horizon-dependent integer of unreported size.
+
+Use
+
+```math
+\eta_t=\eta_0 2^{-h_t},\qquad
+h_t=\lceil\log_2(t+1)\rceil.
+```
+
+Choose reports only at the endpoints or by dyadic bisection. Let the requested
+positive score tolerance be a dyadic/rational quantity with `O(log(t+1))`
+encoding size, bounded below by an inverse polynomial. Store rationals in
+reduced/canonical form or normalize to the stated common denominator. The
+cost of this reduction is part of arithmetic cost. Merely allowing exact
+but unreduced numerator/denominator strings would not imply a small-state
+claim: repeated naive fraction additions can retain avoidable denominator
+products.
+
+Known row values and expert values must actually be available through the
+permitted interface. Their compact encodings do not bound the work required
+to produce them. The theorem concerns the particular fixed set of numeric
+statistics, not arbitrary query text, proofs, a used-ID registry, copies of
+past exports or the whole delayed-pool state.
+
+## 2. Polynomial magnitudes give logarithmic root depth
+
+Let `D_t` be the slope range. The new decision-coordinate magnitude is at
+most `gamma_a w_t D_t`, while a valid Lipschitz bound is
+`gamma_a w_t A D_t^2/(4 eta_t)`. These are polynomial in `t+1` under the
+hypotheses, since `1/eta_t=O(t+1)` up to a fixed multiplier. The inherited
+expert and tent coordinates have polynomial magnitude and Lipschitz bounds
+under the same fixed-dimension assumptions.
+
+Write `M_t` for any polynomial feature-coordinate supremum. Since
+`|y-p|<=1`, the crude bound
+
+```math
+|R_{t-1,j}|\le\sum_{s<t}M_{s,j}
+```
+
+is polynomial. This does not require the desired bit bound or a prior
+small-tolerance conclusion. It avoids a circular appeal to successful root
+search. Substituting the polynomial magnitudes and feature Lipschitz bounds
+into the inherited computable score Lipschitz bound
+
+```math
+L_{S,t}\le\sum_j
+  (|R_{t-1,j}|L_{t,j}+M_{t,j}^2+M_{t,j}L_{t,j})
+```
+
+gives a polynomial quantity. If no endpoint is accepted, continuity provides
+a root. A dyadic bracket whose length is sufficiently smaller than
+`tolerance/L_S` reaches the requested score tolerance, requiring
+`O(log(t+1))` bisections. Endpoint reports have constant-size encodings.
+
+This is a sufficient arithmetic root budget. If the actual hard budget does
+not fund it, the procedure still needs its declared exhaustion/allowance
+behavior; the theorem does not authorize overrunning that budget.
+
+## 3. Active supports introduce only fixed denominator factors
+
+For a dyadic candidate `p=s/2^k` and an active support `S` of size `m<=A`,
+
+```math
+q_i(p)=\frac1m+
+ \frac{\sum_{j\in S}c_j(p)-m c_i(p)}{m\eta_t}
+\qquad(i\in S).
+```
+
+The action costs at `p` have denominator dividing a fixed input denominator
+times `2^k`. Dividing by `eta_t=eta_0 2^{-h_t}` multiplies by a power of two
+and divides by the fixed numerator of `eta_0`. The support divisor `m`
+divides the fixed integer `lcm(1,...,A)`. Consequently a fixed integer `C_q`
+exists, independent of `t,k` and the chosen support, such that every ideal
+mixture coordinate has denominator dividing
+
+```math
+C_q2^k.
+```
+
+The multiplication by `2^{h_t}` does not create a growing odd denominator.
+It also does not increase the required dyadic denominator exponent in this
+formula. The bound holds on support boundaries as well, since zero
+coordinates and tied support descriptions give the same unique projection.
+
+After the fixed number of products with slopes, weights and scales, one
+fixed factor `C_phi` works for all feature coordinates:
+
+```math
+\operatorname{denom}(\Phi_{t,j}(p))\mid C_\Phi 2^k,
+\qquad
+\operatorname{denom}((y-p)\Phi_{t,j}(p))\mid C_\Phi 2^{2k}.
+```
+
+Let `K_T` be the largest candidate/report dyadic exponent through time `T`,
+including the initial midpoint bit. Adding residual increments therefore
+keeps each residual denominator within `C_phi 2^{2K_T}`. The sizes of the
+active supports are not multiplied through time: all increments already
+share the fixed support factor, and addition uses its common multiple.
+
+The score does contain products `R_j Phi_j` and squares `Phi_j^2`, but their
+results only determine a dyadic branch choice. They do not become a new
+arbitrary coefficient in the following feature map. A fixed factor and at
+most `2^{3K_T+O(1)}` cover score denominators; the variance and allowance
+statistics need at most a fixed factor such as
+
+```math
+C_\Phi^2 2^{4K_T+O(1)}.
+```
+
+Other fixed loss statistics involve only a fixed number of comparable
+products. The cumulative smoothing statistic
+`sum_t w_t eta_t (A-1)/(4A)` has its own fixed factor and the nested dyadic
+denominator `2^{h_T}`. This last condition matters: using harmonic
+`eta_t=eta_0/(t+1)` would not retain the same smoothing-sum denominator claim.
+
+## 4. Bit lengths and storage scope
+
+All current numeric magnitudes are polynomial, and their denominators divide
+a fixed factor times a power `2^{O(log(T+1))}`. Reduced numerators and
+denominators therefore each have `O(log(T+1))` bits. The fixed-dimension
+numeric state uses `O(d log(T+1))` bits. Retaining each numeric issue and
+settlement record once through time `T` uses `O(dT log(T+1))` bits.
+
+If the dyadic execution sampler uses `b_t=O(log(t+1))` fair bits, its
+integer floors, cumulative counts and probabilities have the same order of
+numeric size. Its state does not enter the ideal continuous feature map.
+An arbitrarily larger chosen sampling precision is an additional resource
+parameter and is not covered by the stated logarithmic sampler bound.
+
+No uniform physical CPU or full program-memory bound follows. Rational
+sorting, multiplication, comparison and reduction have actual bit costs;
+expert production, mathematical computation, checked evidence, identifier
+tracking and storage accesses can dominate them. A delayed pool of `K`
+live copies multiplies the per-copy state obligation; pending records and
+the retained history remain separately charged.
+
+## 5. Where the proof stops
+
+The fixed-factor argument can fail if action coefficients or experts acquire
+unbounded new odd denominators, if the smoothing numerator varies without a
+fixed divisibility restriction, if non-dyadic residual-dependent exact roots
+are used as forecasts, or if residual-dependent ratios enter future feature
+coefficients. Continually updated empirical frequencies are not automatically
+fixed-denominator inputs. A profile frozen once may be treated as fixed
+input, but its initial size and acquisition cost are still real.
+
+Under the hypotheses actually stated above, there is no hidden denominator
+recursion from support sizes such as three. This is a restricted numeric
+representation result. It does not by itself establish sublinear decision
+regret under increasing stakes, adequate label coverage, positive all-in
+value of the extra forecasting work, or a hard end-to-end resource guarantee.

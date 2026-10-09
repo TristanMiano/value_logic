@@ -2,7 +2,7 @@
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 9, 2026 UTC.
 
-**P3-01–06 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
+**P3-01–07 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
 minimum of **16 measured hours of research**, with longer work possible.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -112,9 +112,12 @@ both savings over fresh proof search and faster warm decision-diagram reasoning.
 minutes. P3-06 is now **complete** at its declared
 [finite cost-forecast scope](derivations/06_cost_forecast_refinement.md).
 The [closing record](work_logs/P3_06_2026-10-09_S1.md) gives **90.210938375717**
-new research minutes. Phase research is **561.972419606450 minutes**, with
-**398.027580393550** remaining to the 960-minute floor. P3-07 is next and
-unstarted; the contribution obligation remains **NOT YET SUPPORTED**.
+new research minutes. P3-07 is **complete** at its declared
+[bounded paid-reasoning scope](derivations/07_paid_reasoning.md), with
+**90.187687312067** observed research minutes. Phase research is
+**652.160106918517 minutes**, with **307.839893081483** remaining to the
+960-minute floor. P3-B is next and unattempted; P3-08 remains unstarted.
+The contribution obligation remains **NOT YET SUPPORTED**.
 
 ## Workspace
 
@@ -133,6 +136,7 @@ unstarted; the contribution obligation remains **NOT YET SUPPORTED**.
 | Bounded logical uncertainty | [Construction and duties](derivations/03_logical_uncertainty.md) · [Extensions](derivations/03_refinement_extensions.md) · [Sources](literature/03_bounded_sources.md) · [Kernel](checks/03_bounded_logic.py) |
 | Counterfactual semantics | [Construction](derivations/04_counterfactual_semantics.md) · [Extensions](derivations/04_selection_extensions.md) · [Sources](literature/04_source_contracts.md) · [Replacement code](checks/04_README.md) |
 | Sequential cost forecasts | [Construction and duties](derivations/06_cost_forecast_refinement.md) · [Repricing](derivations/06_price_replay.md) · [Capital comparison](derivations/06_capital_comparison.md) · [Calibration](derivations/06_calibration_scope.md) · [BRIA boundary](derivations/06_bria_boundary.md) |
+| Paid reasoning | [Rule and costs](derivations/07_paid_reasoning.md) · [Four-action extension](derivations/07_multi_action_forecasting.md) · [Analytical ordinary control](derivations/07_ordinary_analytic_profile.md) · [Acquisition planner](derivations/07_acquisition_planning.md) · [Closing record](work_logs/P3_07_2026-10-09_S1.md) |
 | Mathematical Markdown | [Rendering conventions and guard](STYLE.md) |
 | Claims and open obligations | [Claim ledger](claim_ledger.md) |
 | Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |
@@ -174,4 +178,31 @@ is a progress review, not a later gate or a phase-completion decision.
 P3-N01 remains **NOT YET SUPPORTED**, as explained in the
 [contribution assessment](work_logs/P3_06_2026-10-09_S1/contribution_assessment.md).
 P3-A remains PASS; P3-B–D remain unattempted. All evidence is development.
-P3-07 has not been started.
+At the P3-06 boundary, P3-07 had not been started. Its later completion is
+recorded below.
+
+
+## P3-07 completion — October 9, 2026
+
+The [paid-reasoning construction](derivations/07_paid_reasoning.md) acquires
+version-bound policy costs, prices selection and execution, and makes a bounded
+lower-gain decision against fallback. It separates sunk evidence costs from
+continuation value and assesses both a fixed-profile controller and a complete
+profile-rebuilding procedure. Its [task audit](work_logs/P3_07_2026-10-09_S1/readiness_audit.md)
+maps the exact acceptance criteria and remaining generality limits.
+
+The strongest ordinary controls remain explicit. Analytical class profiles
+cost 64,581 resource units versus 1,692,957 for empirical acquisition in the
+transparent finite task. Exact computation is cheaper than the audited
+controller. A paid finite Bayesian planner repays its construction only in
+some long-horizon cases; its prior does not imply per-law safety. The
+four-action full-feedback implementation and the dependency construction/search
+probe preserve negative total-cost results alongside their valid finite proofs.
+
+The [closed session](work_logs/P3_07_2026-10-09_S1.md) records
+**90.187687312067 research minutes** and all excluded intervals. P3-01–06,
+including the defensive-forecasting addendum and its evidence, are preserved.
+[Contribution status](work_logs/P3_07_2026-10-09_S1/contribution_assessment.md)
+is **NOT YET SUPPORTED** under the author's modest-synthesis criterion.
+P3-A remains PASS; P3-B–D remain unattempted. P3-08 is unstarted, all experiments
+remain development and no final challenge is frozen or exposed.

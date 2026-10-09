@@ -1,0 +1,187 @@
+{
+  "assessment_budget_edges": [
+    {
+      "assessment_limit": 0,
+      "exception": "BudgetExhausted",
+      "message": "total budget: need 64, remaining 0",
+      "returned": false
+    },
+    {
+      "assessment_limit": 1,
+      "exception": "BudgetExhausted",
+      "message": "total budget: need 64, remaining 1",
+      "returned": false
+    },
+    {
+      "assessment_limit": 63,
+      "exception": "BudgetExhausted",
+      "message": "total budget: need 64, remaining 63",
+      "returned": false
+    },
+    {
+      "assessment_limit": 64,
+      "kind": "assessment_budget_exhausted",
+      "policy": "fallback",
+      "returned": true,
+      "total": 64
+    },
+    {
+      "assessment_limit": 65,
+      "kind": "assessment_budget_exhausted",
+      "policy": "fallback",
+      "returned": true,
+      "total": 64
+    },
+    {
+      "assessment_limit": 224,
+      "kind": "assessment_budget_exhausted",
+      "policy": "fallback",
+      "returned": true,
+      "total": 64
+    },
+    {
+      "assessment_limit": 1000,
+      "kind": "assessment_budget_exhausted",
+      "policy": "fallback",
+      "returned": true,
+      "total": 388
+    },
+    {
+      "assessment_limit": 20000,
+      "kind": "assessed",
+      "policy": "full_fallback",
+      "returned": true,
+      "total": 2100
+    }
+  ],
+  "inconsistent_ranges_accepted": {
+    "lower_gain": "20",
+    "policy": "guess1",
+    "positive": true
+  },
+  "integer_radius_checks": [
+    {
+      "charged": 160,
+      "k": 12,
+      "n": 128,
+      "radius": "14189/65536"
+    },
+    {
+      "charged": 160,
+      "k": 12,
+      "n": 256,
+      "radius": "5017/32768"
+    },
+    {
+      "charged": 160,
+      "k": 12,
+      "n": 512,
+      "radius": "7095/65536"
+    },
+    {
+      "charged": 160,
+      "k": 12,
+      "n": 1024,
+      "radius": "5017/65536"
+    }
+  ],
+  "mutable_feature_identity": {
+    "accepted": true,
+    "identity_changed": true,
+    "kind": "gross_value_screen",
+    "same_meter": true
+  },
+  "omitted_driver_hash_scope_alias": true,
+  "oversized_feature_accepted": true,
+  "principal_research90_credit_seconds": 0,
+  "reviewed_controller_sha256": "d31d415c1c93e38235d6c0be008699e8ddc16a4a8906d57f6519dc349e1cb026",
+  "saved_evidence_reconciliation": {
+    "audit_range_violations": [],
+    "audit_rows": 256,
+    "audit_sum_matches": true,
+    "exact_prefix_sums": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "profile_range_violations": [],
+    "profile_rows": 1024
+  },
+  "scope": "Focused development implementation diagnostics and saved-data reconciliation; no full rerun.",
+  "terminal_budget_edges": [
+    {
+      "action": null,
+      "category_limit_violations": {},
+      "events": 0,
+      "initial_report": "1/2",
+      "limit": 0,
+      "status": "no_output_budget",
+      "total": 0
+    },
+    {
+      "action": 1,
+      "category_limit_violations": {
+        "forecast": 1
+      },
+      "events": 0,
+      "initial_report": "1/2",
+      "limit": 1,
+      "status": "budget_exhausted",
+      "total": 1
+    },
+    {
+      "action": 1,
+      "category_limit_violations": {
+        "forecast": 2
+      },
+      "events": 1,
+      "initial_report": "1/2",
+      "limit": 2,
+      "status": "budget_exhausted",
+      "total": 2
+    },
+    {
+      "action": 1,
+      "category_limit_violations": {},
+      "events": 5,
+      "initial_report": "1/2",
+      "limit": 64,
+      "status": "unresolved",
+      "total": 43
+    },
+    {
+      "action": 1,
+      "category_limit_violations": {},
+      "events": 5,
+      "initial_report": "1/2",
+      "limit": 1024,
+      "status": "unresolved",
+      "total": 43
+    }
+  ],
+  "unfinished_job_return": {
+    "action": null,
+    "active_jobs_at_return": 1,
+    "cancelled_release_units": 0,
+    "charged_units": 158,
+    "completed_release_units": 0,
+    "status": "transaction_timeout"
+  },
+  "unfunded_profile_validation": [
+    {
+      "exception": "BudgetExhausted",
+      "message": "total budget: need 421, remaining 0",
+      "returned": false,
+      "row": "valid",
+      "spent": 0
+    },
+    {
+      "exception": "Rejected",
+      "message": "Observed feature violates the frozen range.",
+      "returned": false,
+      "row": "invalid_last_cell",
+      "spent": 0
+    }
+  ]
+}

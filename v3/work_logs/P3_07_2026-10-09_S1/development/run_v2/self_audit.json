@@ -1,0 +1,255 @@
+{
+  "closure": {
+    "source_hashes": {
+      "07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+      "07_paid_reasoning.py": "5c402c2ea4d142df3181b6e0344a76fd1fee2c85d78283a76ee1f9b691522a44",
+      "07_paid_reasoning_development.py": "4cfd2ff6cab0619ee2ff89f20c731e68b4297a8b2e6c152df94b85a2308e4cc7"
+    },
+    "profile_id": "5f3399affe231eaa79dc0f3e4da6eb757c6e7df406392154fc7b924c8f34359c",
+    "scope": {
+      "controller": "p307-paired-profile-controller-v2@sha256:5c402c2ea4d142df3181b6e0344a76fd1fee2c85d78283a76ee1f9b691522a44",
+      "adapter": "p307-modular-computation-adapter-v1.1@sha256:06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+      "catalogue": "c7a2931eeb05e0c666de824bcaf06cb644a039f3999b6cb358f6813b715cc3ae",
+      "features": "fp-fn-fallback-and-eleven-resource-categories-v1",
+      "law": "uniform-248-public-euler-queries-v1@generator-sha256:4cfd2ff6cab0619ee2ff89f20c731e68b4297a8b2e6c152df94b85a2308e4cc7",
+      "initial_state": "cold-per-query;cache_cap=0;no-pending-jobs",
+      "sampler_contract": "iid-with-replacement-model;seeded-development-trace-labelled",
+      "schedule": "whole-fixed-policy;no-unacquired-feedback;constant-price-per-batch"
+    },
+    "prices": [
+      "100",
+      "100",
+      "20",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000"
+    ],
+    "batch_size": 16,
+    "n_audit": 256,
+    "seed": 307081,
+    "reset": "new adapter/cache per query; fixed profile and selector per episode",
+    "selected_policy_before_audit": {
+      "name": "full_fallback",
+      "transactions": 19,
+      "unresolved_action": null
+    },
+    "assessment_limit": 20000,
+    "harness_version": "p307-paid-development-v2",
+    "audit_role": "Fresh development audit after closure fixed; no subsequent tuning may reuse this as independent evidence.",
+    "identity": "76fc1cfcdd8bb27610b904be76a729cd1beff09e2d7b04e472351fb4e2de44e9",
+    "frozen_utc_before_first_audit_row": "2026-10-09T17:16:04.577387+00:00"
+  },
+  "audit_profile": {
+    "scope": {
+      "controller": "p307-paired-profile-controller-v2@76fc1cfcdd8bb27610b904be76a729cd1beff09e2d7b04e472351fb4e2de44e9",
+      "adapter": "p307-modular-computation-adapter-v1.1",
+      "catalogue": "fixed-whole-controller-batch-vs-fallback",
+      "features": "fp-fn-fallback-and-eleven-resource-categories-v1",
+      "law": "uniform-248-public-euler-queries-v1;16-independent-query-batches",
+      "initial_state": "cold-per-query;cache_cap=0;no-pending-jobs",
+      "sampler_contract": "iid-with-replacement-model;seeded-development-trace-labelled",
+      "schedule": "fresh-audit-whole-episode-no-updates"
+    },
+    "names": [
+      "frozen_controller"
+    ],
+    "feature_names": [
+      "false_positive",
+      "false_negative",
+      "fallback",
+      "resource_admission",
+      "resource_solve",
+      "resource_check",
+      "resource_acquisition",
+      "resource_storage",
+      "resource_cache",
+      "resource_forecast",
+      "resource_assessment",
+      "resource_profile",
+      "resource_dependency_compile",
+      "resource_repair_search"
+    ],
+    "ranges": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          16
+        ],
+        [
+          -16384,
+          0
+        ],
+        [
+          -16384,
+          0
+        ],
+        [
+          -16384,
+          0
+        ],
+        [
+          -16384,
+          0
+        ],
+        [
+          -36384,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          -20000,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "sums": [
+      [
+        0,
+        0,
+        3919,
+        -199869,
+        -150509,
+        -166185,
+        -39190,
+        -474291,
+        0,
+        0,
+        -824576,
+        0,
+        0,
+        0
+      ]
+    ],
+    "n": 256,
+    "checkpoints": [
+      256
+    ],
+    "delta": "1/20",
+    "setup_resources": [
+      817530,
+      374746,
+      336087,
+      83690,
+      816669,
+      12288,
+      24576,
+      827797,
+      762808,
+      0,
+      0
+    ]
+  },
+  "radius": {
+    "r": "8689/65536",
+    "k": 9,
+    "nonconstant_cells": 7,
+    "checkpoints": 1,
+    "tail_budget": "1/20"
+  },
+  "lower_gain_per_batch": "9844159/40960",
+  "positive_fresh_audit_certificate": true,
+  "observed_total_costs": {
+    "controller": "203889/100",
+    "fallback": "7856427/100",
+    "charged_exact": "521141/500"
+  },
+  "observed_mean_costs_per_batch": {
+    "controller": "203889/25600",
+    "fallback": "7856427/25600",
+    "charged_exact": "521141/128000"
+  },
+  "procurement_resources": {
+    "admission": 817530,
+    "solve": 374746,
+    "check": 336087,
+    "acquisition": 83690,
+    "storage": 816669,
+    "cache": 12288,
+    "forecast": 24576,
+    "assessment": 827797,
+    "profile": 762808,
+    "dependency_compile": 0,
+    "repair_search": 0
+  },
+  "final_audit_check_meter": {
+    "version": "p307-modular-computation-adapter-v1.1",
+    "limit_total": 20000,
+    "total": 1094,
+    "remaining": 18906,
+    "by_category": {
+      "admission": 0,
+      "solve": 0,
+      "check": 0,
+      "acquisition": 0,
+      "storage": 112,
+      "cache": 0,
+      "forecast": 0,
+      "assessment": 982,
+      "profile": 0,
+      "dependency_compile": 0,
+      "repair_search": 0
+    },
+    "category_limits": {
+      "admission": 20000,
+      "solve": 20000,
+      "check": 20000,
+      "acquisition": 20000,
+      "storage": 20000,
+      "cache": 20000,
+      "forecast": 20000,
+      "assessment": 20000,
+      "profile": 20000,
+      "dependency_compile": 20000,
+      "repair_search": 20000
+    },
+    "operations": {
+      "assessment.nonconstant_range_cell_inspection": 14,
+      "assessment.price_check_multiply_add": 56,
+      "assessment.profile_validate_and_interval_arithmetic": 112,
+      "assessment.radius_integer_bound_bundle": 160,
+      "assessment.scope_word_comparison": 640,
+      "storage.price_and_interval_word_read": 42,
+      "storage.profile_cell_read_and_interval_write": 70
+    },
+    "max_operand_bits": {},
+    "events": 5,
+    "denials": 0,
+    "last_denial": null
+  },
+  "boundary": "Own frozen version, fixed high-price cold episode law only. Audit procurement is additional setup, not included in deployment gain. Seeded development realization; no final evaluation claim."
+}

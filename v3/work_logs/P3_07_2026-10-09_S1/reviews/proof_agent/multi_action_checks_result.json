@@ -1,0 +1,2973 @@
+{
+  "boundaries": {
+    "action_selected_feedback_noise": {
+      "costs_fallback_buy": [
+        0,
+        1
+      ],
+      "ideal_and_sampled_mix": [
+        {
+          "decimal": 0.75,
+          "denominator": "4",
+          "numerator": "3"
+        },
+        {
+          "decimal": 0.25,
+          "denominator": "4",
+          "numerator": "1"
+        }
+      ],
+      "increment_given_settlement": {
+        "decimal": 0.75,
+        "denominator": "4",
+        "numerator": "3"
+      },
+      "mixture_cost": {
+        "decimal": 0.25,
+        "denominator": "4",
+        "numerator": "1"
+      },
+      "only_buy_settles_filtered_increment_mean": {
+        "decimal": 0.1875,
+        "denominator": "16",
+        "numerator": "3"
+      },
+      "unfiltered_increment_mean": {
+        "decimal": 0.0,
+        "denominator": "1",
+        "numerator": "0"
+      }
+    },
+    "bounded_fair_bits": {
+      "obstruction": "1/3 is not dyadic, so no finite worst-case fair-bit sampler can implement it exactly without another primitive.",
+      "three_action_equal_cost_mix": [
+        {
+          "decimal": 0.3333333333333333,
+          "denominator": "3",
+          "numerator": "1"
+        },
+        {
+          "decimal": 0.3333333333333333,
+          "denominator": "3",
+          "numerator": "1"
+        },
+        {
+          "decimal": 0.3333333333333333,
+          "denominator": "3",
+          "numerator": "1"
+        }
+      ]
+    },
+    "cost_upper_bound_is_not_tariff": {
+      "actual_costs": [
+        2,
+        1
+      ],
+      "actual_regret_to_buy": {
+        "decimal": 1.0,
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "eta": {
+        "decimal": 1.0,
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "q": [
+        {
+          "decimal": 1.0,
+          "denominator": "1",
+          "numerator": "1"
+        },
+        {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        }
+      ],
+      "smoothing_only_bound": {
+        "decimal": 0.125,
+        "denominator": "8",
+        "numerator": "1"
+      },
+      "surrogate_costs": [
+        2,
+        10
+      ],
+      "surrogate_regret_to_buy": {
+        "decimal": -8.0,
+        "denominator": "1",
+        "numerator": "-8"
+      }
+    },
+    "no_labels_no_whole_cohort_potential": {
+      "action_mix": [
+        {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        {
+          "decimal": 1.0,
+          "denominator": "1",
+          "numerator": "1"
+        },
+        {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        }
+      ],
+      "best_fixed_guess_one_total": {
+        "decimal": 0.0,
+        "denominator": "1",
+        "numerator": "0"
+      },
+      "eight_fallback_query_total_when_answers_all_one": {
+        "decimal": 0.8,
+        "denominator": "5",
+        "numerator": "4"
+      },
+      "fresh_copy_p": {
+        "decimal": 0.5,
+        "denominator": "2",
+        "numerator": "1"
+      },
+      "invalid_all_issue_smoothing_only_claim": {
+        "decimal": 0.075,
+        "denominator": "40",
+        "numerator": "3"
+      },
+      "settled_observations": 0,
+      "settled_potential_bound": {
+        "decimal": 0.0,
+        "denominator": "1",
+        "numerator": "0"
+      }
+    }
+  },
+  "data_class": "DEVELOPMENT",
+  "endpoint_conditions": [
+    {
+      "allowance": {
+        "decimal": 0.0,
+        "denominator": "1",
+        "numerator": "0"
+      },
+      "probability": {
+        "decimal": 0.0,
+        "denominator": "1",
+        "numerator": "0"
+      },
+      "q": [
+        {
+          "decimal": 1.0,
+          "denominator": "1",
+          "numerator": "1"
+        },
+        {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        }
+      ],
+      "route": "endpoint_zero"
+    },
+    {
+      "allowance": {
+        "decimal": 0.0,
+        "denominator": "1",
+        "numerator": "0"
+      },
+      "probability": {
+        "decimal": 1.0,
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "q": [
+        {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        {
+          "decimal": 1.0,
+          "denominator": "1",
+          "numerator": "1"
+        }
+      ],
+      "route": "endpoint_one"
+    },
+    {
+      "allowance": {
+        "decimal": 0.0,
+        "denominator": "1",
+        "numerator": "0"
+      },
+      "probability": {
+        "decimal": 0.5,
+        "denominator": "2",
+        "numerator": "1"
+      },
+      "q": [
+        {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        },
+        {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        }
+      ],
+      "route": "interior_exact"
+    }
+  ],
+  "frozen_evaluation": false,
+  "geometry": {
+    "exact_geometry_grid_points": 99,
+    "scope": "Grid checks illustrate the independently proved global continuity and bounds.",
+    "tables": [
+      {
+        "actions": 2,
+        "feature_squared_cap": {
+          "decimal": 4.0,
+          "denominator": "1",
+          "numerator": "4"
+        },
+        "mean_slope_lipschitz_cap": {
+          "decimal": 5.333333333333333,
+          "denominator": "3",
+          "numerator": "16"
+        },
+        "observed_supports_on_grid": [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "slope_range": {
+          "decimal": 2.0,
+          "denominator": "1",
+          "numerator": "2"
+        }
+      },
+      {
+        "actions": 4,
+        "feature_squared_cap": {
+          "decimal": 65.25,
+          "denominator": "4",
+          "numerator": "261"
+        },
+        "mean_slope_lipschitz_cap": {
+          "decimal": 24.0,
+          "denominator": "1",
+          "numerator": "24"
+        },
+        "observed_supports_on_grid": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "slope_range": {
+          "decimal": 3.0,
+          "denominator": "1",
+          "numerator": "3"
+        }
+      },
+      {
+        "actions": 5,
+        "feature_squared_cap": {
+          "decimal": 337.5,
+          "denominator": "2",
+          "numerator": "675"
+        },
+        "mean_slope_lipschitz_cap": {
+          "decimal": 83.33333333333333,
+          "denominator": "3",
+          "numerator": "250"
+        },
+        "observed_supports_on_grid": [
+          [
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            1
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "slope_range": {
+          "decimal": 5.0,
+          "denominator": "1",
+          "numerator": "5"
+        }
+      }
+    ]
+  },
+  "largest_remainder_dyadic": {
+    "rational_grid_checks": 9520,
+    "sharp_and_sampler_examples": [
+      {
+        "R": 0,
+        "actions": 1,
+        "attained_TV": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "denominator": 1,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "general_bound": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "ideal_q": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          }
+        ]
+      },
+      {
+        "R": 0,
+        "actions": 1,
+        "attained_TV": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "denominator": 2,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "general_bound": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "ideal_q": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          }
+        ]
+      },
+      {
+        "R": 0,
+        "actions": 1,
+        "attained_TV": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "denominator": 4,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "general_bound": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "ideal_q": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          }
+        ]
+      },
+      {
+        "R": 0,
+        "actions": 1,
+        "attained_TV": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "denominator": 8,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "general_bound": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "ideal_q": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 2,
+        "attained_TV": {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        },
+        "denominator": 1,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 2,
+        "attained_TV": {
+          "decimal": 0.25,
+          "denominator": "4",
+          "numerator": "1"
+        },
+        "denominator": 2,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.25,
+          "denominator": "4",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.25,
+          "denominator": "4",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.75,
+            "denominator": "4",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 2,
+        "attained_TV": {
+          "decimal": 0.125,
+          "denominator": "8",
+          "numerator": "1"
+        },
+        "denominator": 4,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.125,
+          "denominator": "8",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.125,
+          "denominator": "8",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.875,
+            "denominator": "8",
+            "numerator": "7"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 2,
+        "attained_TV": {
+          "decimal": 0.0625,
+          "denominator": "16",
+          "numerator": "1"
+        },
+        "denominator": 8,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.0625,
+          "denominator": "16",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.0625,
+          "denominator": "16",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.9375,
+            "denominator": "16",
+            "numerator": "15"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 3,
+        "attained_TV": {
+          "decimal": 0.6666666666666666,
+          "denominator": "3",
+          "numerator": "2"
+        },
+        "denominator": 1,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.6666666666666666,
+          "denominator": "3",
+          "numerator": "2"
+        },
+        "general_bound": {
+          "decimal": 0.6666666666666666,
+          "denominator": "3",
+          "numerator": "2"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.3333333333333333,
+            "denominator": "3",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.3333333333333333,
+            "denominator": "3",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.3333333333333333,
+            "denominator": "3",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 3,
+        "attained_TV": {
+          "decimal": 0.3333333333333333,
+          "denominator": "3",
+          "numerator": "1"
+        },
+        "denominator": 2,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.3333333333333333,
+          "denominator": "3",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.3333333333333333,
+          "denominator": "3",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.6666666666666666,
+            "denominator": "3",
+            "numerator": "2"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 3,
+        "attained_TV": {
+          "decimal": 0.16666666666666666,
+          "denominator": "6",
+          "numerator": "1"
+        },
+        "denominator": 4,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.16666666666666666,
+          "denominator": "6",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.16666666666666666,
+          "denominator": "6",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.8333333333333334,
+            "denominator": "6",
+            "numerator": "5"
+          },
+          {
+            "decimal": 0.08333333333333333,
+            "denominator": "12",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.08333333333333333,
+            "denominator": "12",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 3,
+        "attained_TV": {
+          "decimal": 0.08333333333333333,
+          "denominator": "12",
+          "numerator": "1"
+        },
+        "denominator": 8,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.08333333333333333,
+          "denominator": "12",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.08333333333333333,
+          "denominator": "12",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.9166666666666666,
+            "denominator": "12",
+            "numerator": "11"
+          },
+          {
+            "decimal": 0.041666666666666664,
+            "denominator": "24",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.041666666666666664,
+            "denominator": "24",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 4,
+        "attained_TV": {
+          "decimal": 0.75,
+          "denominator": "4",
+          "numerator": "3"
+        },
+        "denominator": 1,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.75,
+          "denominator": "4",
+          "numerator": "3"
+        },
+        "general_bound": {
+          "decimal": 1.0,
+          "denominator": "1",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 2,
+        "actions": 4,
+        "attained_TV": {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        },
+        "denominator": 2,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 2,
+        "actions": 4,
+        "attained_TV": {
+          "decimal": 0.25,
+          "denominator": "4",
+          "numerator": "1"
+        },
+        "denominator": 4,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.25,
+          "denominator": "4",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.25,
+          "denominator": "4",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.625,
+            "denominator": "8",
+            "numerator": "5"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.75,
+            "denominator": "4",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 2,
+        "actions": 4,
+        "attained_TV": {
+          "decimal": 0.125,
+          "denominator": "8",
+          "numerator": "1"
+        },
+        "denominator": 8,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.125,
+          "denominator": "8",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.125,
+          "denominator": "8",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.8125,
+            "denominator": "16",
+            "numerator": "13"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.875,
+            "denominator": "8",
+            "numerator": "7"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 5,
+        "attained_TV": {
+          "decimal": 0.8,
+          "denominator": "5",
+          "numerator": "4"
+        },
+        "denominator": 1,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.8,
+          "denominator": "5",
+          "numerator": "4"
+        },
+        "general_bound": {
+          "decimal": 1.2,
+          "denominator": "5",
+          "numerator": "6"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.2,
+            "denominator": "5",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.2,
+            "denominator": "5",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.2,
+            "denominator": "5",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.2,
+            "denominator": "5",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.2,
+            "denominator": "5",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 2,
+        "actions": 5,
+        "attained_TV": {
+          "decimal": 0.6,
+          "denominator": "5",
+          "numerator": "3"
+        },
+        "denominator": 2,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.6,
+          "denominator": "5",
+          "numerator": "3"
+        },
+        "general_bound": {
+          "decimal": 0.6,
+          "denominator": "5",
+          "numerator": "3"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.2,
+            "denominator": "5",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.2,
+            "denominator": "5",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.2,
+            "denominator": "5",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.2,
+            "denominator": "5",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.2,
+            "denominator": "5",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 2,
+        "actions": 5,
+        "attained_TV": {
+          "decimal": 0.3,
+          "denominator": "10",
+          "numerator": "3"
+        },
+        "denominator": 4,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.3,
+          "denominator": "10",
+          "numerator": "3"
+        },
+        "general_bound": {
+          "decimal": 0.3,
+          "denominator": "10",
+          "numerator": "3"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.6,
+            "denominator": "5",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.1,
+            "denominator": "10",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.1,
+            "denominator": "10",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.1,
+            "denominator": "10",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.1,
+            "denominator": "10",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.75,
+            "denominator": "4",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 2,
+        "actions": 5,
+        "attained_TV": {
+          "decimal": 0.15,
+          "denominator": "20",
+          "numerator": "3"
+        },
+        "denominator": 8,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.15,
+          "denominator": "20",
+          "numerator": "3"
+        },
+        "general_bound": {
+          "decimal": 0.15,
+          "denominator": "20",
+          "numerator": "3"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.8,
+            "denominator": "5",
+            "numerator": "4"
+          },
+          {
+            "decimal": 0.05,
+            "denominator": "20",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.05,
+            "denominator": "20",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.05,
+            "denominator": "20",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.05,
+            "denominator": "20",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.875,
+            "denominator": "8",
+            "numerator": "7"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 6,
+        "attained_TV": {
+          "decimal": 0.8333333333333334,
+          "denominator": "6",
+          "numerator": "5"
+        },
+        "denominator": 1,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.8333333333333334,
+          "denominator": "6",
+          "numerator": "5"
+        },
+        "general_bound": {
+          "decimal": 1.5,
+          "denominator": "2",
+          "numerator": "3"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 2,
+        "actions": 6,
+        "attained_TV": {
+          "decimal": 0.6666666666666666,
+          "denominator": "3",
+          "numerator": "2"
+        },
+        "denominator": 2,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.6666666666666666,
+          "denominator": "3",
+          "numerator": "2"
+        },
+        "general_bound": {
+          "decimal": 0.75,
+          "denominator": "4",
+          "numerator": "3"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 3,
+        "actions": 6,
+        "attained_TV": {
+          "decimal": 0.375,
+          "denominator": "8",
+          "numerator": "3"
+        },
+        "denominator": 4,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.375,
+          "denominator": "8",
+          "numerator": "3"
+        },
+        "general_bound": {
+          "decimal": 0.375,
+          "denominator": "8",
+          "numerator": "3"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.375,
+            "denominator": "8",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 3,
+        "actions": 6,
+        "attained_TV": {
+          "decimal": 0.1875,
+          "denominator": "16",
+          "numerator": "3"
+        },
+        "denominator": 8,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.1875,
+          "denominator": "16",
+          "numerator": "3"
+        },
+        "general_bound": {
+          "decimal": 0.1875,
+          "denominator": "16",
+          "numerator": "3"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.6875,
+            "denominator": "16",
+            "numerator": "11"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.75,
+            "denominator": "4",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 7,
+        "attained_TV": {
+          "decimal": 0.8571428571428571,
+          "denominator": "7",
+          "numerator": "6"
+        },
+        "denominator": 1,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.8571428571428571,
+          "denominator": "7",
+          "numerator": "6"
+        },
+        "general_bound": {
+          "decimal": 1.7142857142857142,
+          "denominator": "7",
+          "numerator": "12"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 2,
+        "actions": 7,
+        "attained_TV": {
+          "decimal": 0.7142857142857143,
+          "denominator": "7",
+          "numerator": "5"
+        },
+        "denominator": 2,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.7142857142857143,
+          "denominator": "7",
+          "numerator": "5"
+        },
+        "general_bound": {
+          "decimal": 0.8571428571428571,
+          "denominator": "7",
+          "numerator": "6"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.14285714285714285,
+            "denominator": "7",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 3,
+        "actions": 7,
+        "attained_TV": {
+          "decimal": 0.42857142857142855,
+          "denominator": "7",
+          "numerator": "3"
+        },
+        "denominator": 4,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.42857142857142855,
+          "denominator": "7",
+          "numerator": "3"
+        },
+        "general_bound": {
+          "decimal": 0.42857142857142855,
+          "denominator": "7",
+          "numerator": "3"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.35714285714285715,
+            "denominator": "14",
+            "numerator": "5"
+          },
+          {
+            "decimal": 0.10714285714285714,
+            "denominator": "28",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.10714285714285714,
+            "denominator": "28",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.10714285714285714,
+            "denominator": "28",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.10714285714285714,
+            "denominator": "28",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.10714285714285714,
+            "denominator": "28",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.10714285714285714,
+            "denominator": "28",
+            "numerator": "3"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 3,
+        "actions": 7,
+        "attained_TV": {
+          "decimal": 0.21428571428571427,
+          "denominator": "14",
+          "numerator": "3"
+        },
+        "denominator": 8,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.21428571428571427,
+          "denominator": "14",
+          "numerator": "3"
+        },
+        "general_bound": {
+          "decimal": 0.21428571428571427,
+          "denominator": "14",
+          "numerator": "3"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.6785714285714286,
+            "denominator": "28",
+            "numerator": "19"
+          },
+          {
+            "decimal": 0.05357142857142857,
+            "denominator": "56",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.05357142857142857,
+            "denominator": "56",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.05357142857142857,
+            "denominator": "56",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.05357142857142857,
+            "denominator": "56",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.05357142857142857,
+            "denominator": "56",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.05357142857142857,
+            "denominator": "56",
+            "numerator": "3"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.75,
+            "denominator": "4",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 1,
+        "actions": 8,
+        "attained_TV": {
+          "decimal": 0.875,
+          "denominator": "8",
+          "numerator": "7"
+        },
+        "denominator": 1,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.875,
+          "denominator": "8",
+          "numerator": "7"
+        },
+        "general_bound": {
+          "decimal": 2.0,
+          "denominator": "1",
+          "numerator": "2"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 2,
+        "actions": 8,
+        "attained_TV": {
+          "decimal": 0.75,
+          "denominator": "4",
+          "numerator": "3"
+        },
+        "denominator": 2,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.75,
+          "denominator": "4",
+          "numerator": "3"
+        },
+        "general_bound": {
+          "decimal": 1.0,
+          "denominator": "1",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.5,
+            "denominator": "2",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 4,
+        "actions": 8,
+        "attained_TV": {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        },
+        "denominator": 4,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      },
+      {
+        "R": 4,
+        "actions": 8,
+        "attained_TV": {
+          "decimal": 0.25,
+          "denominator": "4",
+          "numerator": "1"
+        },
+        "denominator": 8,
+        "exact_fixed_dimension_bound": {
+          "decimal": 0.25,
+          "denominator": "4",
+          "numerator": "1"
+        },
+        "general_bound": {
+          "decimal": 0.25,
+          "denominator": "4",
+          "numerator": "1"
+        },
+        "ideal_q": [
+          {
+            "decimal": 0.5625,
+            "denominator": "16",
+            "numerator": "9"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          }
+        ],
+        "rounded_nu": [
+          {
+            "decimal": 0.625,
+            "denominator": "8",
+            "numerator": "5"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          },
+          {
+            "decimal": 0.0,
+            "denominator": "1",
+            "numerator": "0"
+          }
+        ]
+      }
+    ]
+  },
+  "new_feature_potential_application": {
+    "actions": 4,
+    "actual_residual_squared_norm": {
+      "decimal": 7.132851623272483,
+      "denominator": "2251799813685248",
+      "numerator": "16061753956329495"
+    },
+    "fixed_action_totals": [
+      {
+        "decimal": 14.25,
+        "denominator": "4",
+        "numerator": "57"
+      },
+      {
+        "decimal": 9.75,
+        "denominator": "4",
+        "numerator": "39"
+      },
+      {
+        "decimal": 5.625,
+        "denominator": "8",
+        "numerator": "45"
+      },
+      {
+        "decimal": 8.5,
+        "denominator": "2",
+        "numerator": "17"
+      }
+    ],
+    "gamma": [
+      {
+        "decimal": 1.0,
+        "denominator": "1",
+        "numerator": "1"
+      },
+      {
+        "decimal": 0.5,
+        "denominator": "2",
+        "numerator": "1"
+      },
+      {
+        "decimal": 2.0,
+        "denominator": "1",
+        "numerator": "2"
+      },
+      {
+        "decimal": 1.5,
+        "denominator": "2",
+        "numerator": "3"
+      }
+    ],
+    "mixed_total": {
+      "decimal": 6.444997151692708,
+      "denominator": "98304",
+      "numerator": "633569"
+    },
+    "potential_bound": {
+      "decimal": 11.198584181290254,
+      "denominator": "2251799813685248",
+      "numerator": "25216969772967959"
+    },
+    "regrets": [
+      {
+        "decimal": -7.805002848307292,
+        "denominator": "98304",
+        "numerator": "-767263"
+      },
+      {
+        "decimal": -3.3050028483072915,
+        "denominator": "98304",
+        "numerator": "-324895"
+      },
+      {
+        "decimal": 0.8199971516927084,
+        "denominator": "98304",
+        "numerator": "80609"
+      },
+      {
+        "decimal": -2.0550028483072915,
+        "denominator": "98304",
+        "numerator": "-202015"
+      }
+    ],
+    "root_routes": {
+      "endpoint_one": 1,
+      "endpoint_zero": 1,
+      "interior_allowance": 21,
+      "interior_exact": 1
+    },
+    "rounds": 24,
+    "scope": "New action-feature application on rational fixtures; no mathematical solver, random sampler, delayed wrapper or deployment performance claim.",
+    "smoothing_allowance": {
+      "decimal": 0.46875,
+      "denominator": "32",
+      "numerator": "15"
+    }
+  },
+  "smoothing": {
+    "exact_comparator_checks": 4923,
+    "sharp_examples": [
+      {
+        "actions": 1,
+        "attained_gap": {
+          "decimal": 0.0,
+          "denominator": "1",
+          "numerator": "0"
+        },
+        "eta": {
+          "decimal": 2.3333333333333335,
+          "denominator": "3",
+          "numerator": "7"
+        },
+        "q": [
+          {
+            "decimal": 1.0,
+            "denominator": "1",
+            "numerator": "1"
+          }
+        ]
+      },
+      {
+        "actions": 2,
+        "attained_gap": {
+          "decimal": 0.2916666666666667,
+          "denominator": "24",
+          "numerator": "7"
+        },
+        "eta": {
+          "decimal": 2.3333333333333335,
+          "denominator": "3",
+          "numerator": "7"
+        },
+        "q": [
+          {
+            "decimal": 0.75,
+            "denominator": "4",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.25,
+            "denominator": "4",
+            "numerator": "1"
+          }
+        ]
+      },
+      {
+        "actions": 3,
+        "attained_gap": {
+          "decimal": 0.3888888888888889,
+          "denominator": "18",
+          "numerator": "7"
+        },
+        "eta": {
+          "decimal": 2.3333333333333335,
+          "denominator": "3",
+          "numerator": "7"
+        },
+        "q": [
+          {
+            "decimal": 0.6666666666666666,
+            "denominator": "3",
+            "numerator": "2"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.16666666666666666,
+            "denominator": "6",
+            "numerator": "1"
+          }
+        ]
+      },
+      {
+        "actions": 4,
+        "attained_gap": {
+          "decimal": 0.4375,
+          "denominator": "16",
+          "numerator": "7"
+        },
+        "eta": {
+          "decimal": 2.3333333333333335,
+          "denominator": "3",
+          "numerator": "7"
+        },
+        "q": [
+          {
+            "decimal": 0.625,
+            "denominator": "8",
+            "numerator": "5"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.125,
+            "denominator": "8",
+            "numerator": "1"
+          }
+        ]
+      },
+      {
+        "actions": 5,
+        "attained_gap": {
+          "decimal": 0.4666666666666667,
+          "denominator": "15",
+          "numerator": "7"
+        },
+        "eta": {
+          "decimal": 2.3333333333333335,
+          "denominator": "3",
+          "numerator": "7"
+        },
+        "q": [
+          {
+            "decimal": 0.6,
+            "denominator": "5",
+            "numerator": "3"
+          },
+          {
+            "decimal": 0.1,
+            "denominator": "10",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.1,
+            "denominator": "10",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.1,
+            "denominator": "10",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.1,
+            "denominator": "10",
+            "numerator": "1"
+          }
+        ]
+      },
+      {
+        "actions": 6,
+        "attained_gap": {
+          "decimal": 0.4861111111111111,
+          "denominator": "72",
+          "numerator": "35"
+        },
+        "eta": {
+          "decimal": 2.3333333333333335,
+          "denominator": "3",
+          "numerator": "7"
+        },
+        "q": [
+          {
+            "decimal": 0.5833333333333334,
+            "denominator": "12",
+            "numerator": "7"
+          },
+          {
+            "decimal": 0.08333333333333333,
+            "denominator": "12",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.08333333333333333,
+            "denominator": "12",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.08333333333333333,
+            "denominator": "12",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.08333333333333333,
+            "denominator": "12",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.08333333333333333,
+            "denominator": "12",
+            "numerator": "1"
+          }
+        ]
+      },
+      {
+        "actions": 7,
+        "attained_gap": {
+          "decimal": 0.5,
+          "denominator": "2",
+          "numerator": "1"
+        },
+        "eta": {
+          "decimal": 2.3333333333333335,
+          "denominator": "3",
+          "numerator": "7"
+        },
+        "q": [
+          {
+            "decimal": 0.5714285714285714,
+            "denominator": "7",
+            "numerator": "4"
+          },
+          {
+            "decimal": 0.07142857142857142,
+            "denominator": "14",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.07142857142857142,
+            "denominator": "14",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.07142857142857142,
+            "denominator": "14",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.07142857142857142,
+            "denominator": "14",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.07142857142857142,
+            "denominator": "14",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.07142857142857142,
+            "denominator": "14",
+            "numerator": "1"
+          }
+        ]
+      },
+      {
+        "actions": 8,
+        "attained_gap": {
+          "decimal": 0.5104166666666666,
+          "denominator": "96",
+          "numerator": "49"
+        },
+        "eta": {
+          "decimal": 2.3333333333333335,
+          "denominator": "3",
+          "numerator": "7"
+        },
+        "q": [
+          {
+            "decimal": 0.5625,
+            "denominator": "16",
+            "numerator": "9"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          },
+          {
+            "decimal": 0.0625,
+            "denominator": "16",
+            "numerator": "1"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "PASS"
+}

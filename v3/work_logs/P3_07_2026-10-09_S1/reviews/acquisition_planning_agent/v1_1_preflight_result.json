@@ -1,0 +1,774 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "unfunded_valid_admission",
+      "limit": 0,
+      "price_bits": {
+        "numerator": 1,
+        "denominator": 10
+      },
+      "error_type": "BudgetExhausted",
+      "error": "total budget: need 96, remaining 0",
+      "observed": {
+        "stat_paid_totals": [],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 0,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 0,
+        "total": 0,
+        "remaining": 0,
+        "by_category": {
+          "admission": 0,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 0,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "operations": {},
+        "max_operand_bits": {},
+        "events": 0,
+        "denials": 1,
+        "last_denial": {
+          "reason": "total budget",
+          "needed": 96,
+          "remaining": 0
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "unfunded_invalid_values",
+      "limit": 0,
+      "price_bits": {
+        "numerator": 257,
+        "denominator": 1
+      },
+      "error_type": "BudgetExhausted",
+      "error": "total budget: need 96, remaining 0",
+      "observed": {
+        "stat_paid_totals": [],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 0,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 0,
+        "total": 0,
+        "remaining": 0,
+        "by_category": {
+          "admission": 0,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 0,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "operations": {},
+        "max_operand_bits": {},
+        "events": 0,
+        "denials": 1,
+        "last_denial": {
+          "reason": "total budget",
+          "needed": 96,
+          "remaining": 0
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "funded_invalid_cap",
+      "limit": 96,
+      "price_bits": {
+        "numerator": 1,
+        "denominator": 10
+      },
+      "error_type": "ValueError",
+      "error": "Fixed development cap and horizon required.",
+      "observed": {
+        "stat_paid_totals": [],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 0,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 96,
+        "total": 96,
+        "remaining": 0,
+        "by_category": {
+          "admission": 96,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 96,
+          "solve": 96,
+          "check": 96,
+          "acquisition": 96,
+          "storage": 96,
+          "cache": 96,
+          "forecast": 96,
+          "assessment": 96,
+          "profile": 96,
+          "dependency_compile": 96,
+          "repair_search": 96
+        },
+        "operations": {
+          "admission.fixed_planner_model_admission": 96
+        },
+        "max_operand_bits": {},
+        "events": 1,
+        "denials": 0,
+        "last_denial": null
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "funded_wrong_price_type",
+      "limit": 96,
+      "price_bits": null,
+      "error_type": "ValueError",
+      "error": "Exact rational resource price required.",
+      "observed": {
+        "stat_paid_totals": [],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 0,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 96,
+        "total": 96,
+        "remaining": 0,
+        "by_category": {
+          "admission": 96,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 96,
+          "solve": 96,
+          "check": 96,
+          "acquisition": 96,
+          "storage": 96,
+          "cache": 96,
+          "forecast": 96,
+          "assessment": 96,
+          "profile": 96,
+          "dependency_compile": 96,
+          "repair_search": 96
+        },
+        "operations": {
+          "admission.fixed_planner_model_admission": 96
+        },
+        "max_operand_bits": {},
+        "events": 1,
+        "denials": 0,
+        "last_denial": null
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "denied_stat_bundle",
+      "limit": 96,
+      "price_bits": {
+        "numerator": 1,
+        "denominator": 10
+      },
+      "error_type": "BudgetExhausted",
+      "error": "total budget: need 2, remaining 0",
+      "observed": {
+        "stat_paid_totals": [],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 3,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 96,
+        "total": 96,
+        "remaining": 0,
+        "by_category": {
+          "admission": 96,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 96,
+          "solve": 96,
+          "check": 96,
+          "acquisition": 96,
+          "storage": 96,
+          "cache": 96,
+          "forecast": 96,
+          "assessment": 96,
+          "profile": 96,
+          "dependency_compile": 96,
+          "repair_search": 96
+        },
+        "operations": {
+          "admission.fixed_planner_model_admission": 96
+        },
+        "max_operand_bits": {},
+        "events": 1,
+        "denials": 1,
+        "last_denial": {
+          "reason": "total budget",
+          "needed": 2,
+          "remaining": 0
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "denied_source_hash_bundle",
+      "limit": 98,
+      "price_bits": {
+        "numerator": 1,
+        "denominator": 10
+      },
+      "error_type": "BudgetExhausted",
+      "error": "total budget: need 8080, remaining 0",
+      "observed": {
+        "stat_paid_totals": [
+          98,
+          98
+        ],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 3,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 98,
+        "total": 98,
+        "remaining": 0,
+        "by_category": {
+          "admission": 96,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 2,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 98,
+          "solve": 98,
+          "check": 98,
+          "acquisition": 98,
+          "storage": 98,
+          "cache": 98,
+          "forecast": 98,
+          "assessment": 98,
+          "profile": 98,
+          "dependency_compile": 98,
+          "repair_search": 98
+        },
+        "operations": {
+          "admission.fixed_planner_model_admission": 96,
+          "profile.bounded_registry_file_stat": 2
+        },
+        "max_operand_bits": {},
+        "events": 2,
+        "denials": 1,
+        "last_denial": {
+          "reason": "total budget",
+          "needed": 8080,
+          "remaining": 0
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "denied_first_state_bundle",
+      "limit": 8178,
+      "price_bits": {
+        "numerator": 1,
+        "denominator": 10
+      },
+      "error_type": "BudgetExhausted",
+      "error": "total budget: need 192, remaining 0",
+      "observed": {
+        "stat_paid_totals": [
+          98,
+          98
+        ],
+        "byte_read_paid_totals": [
+          8178,
+          8178
+        ],
+        "fraction_equalities": 3,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 8178,
+        "total": 8178,
+        "remaining": 0,
+        "by_category": {
+          "admission": 96,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 8082,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 8178,
+          "solve": 8178,
+          "check": 8178,
+          "acquisition": 8178,
+          "storage": 8178,
+          "cache": 8178,
+          "forecast": 8178,
+          "assessment": 8178,
+          "profile": 8178,
+          "dependency_compile": 8178,
+          "repair_search": 8178
+        },
+        "operations": {
+          "admission.fixed_planner_model_admission": 96,
+          "profile.bounded_registry_file_stat": 2,
+          "profile.planner_source_read_hash_words": 8080
+        },
+        "max_operand_bits": {},
+        "events": 3,
+        "denials": 1,
+        "last_denial": {
+          "reason": "total budget",
+          "needed": 192,
+          "remaining": 0
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "oversized_positive_numerator",
+      "limit": 96,
+      "price_bits": {
+        "numerator": 257,
+        "denominator": 1
+      },
+      "error_type": "ValueError",
+      "error": "Resource price exceeds bounded comparison domain.",
+      "observed": {
+        "stat_paid_totals": [],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 0,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 96,
+        "total": 96,
+        "remaining": 0,
+        "by_category": {
+          "admission": 96,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 96,
+          "solve": 96,
+          "check": 96,
+          "acquisition": 96,
+          "storage": 96,
+          "cache": 96,
+          "forecast": 96,
+          "assessment": 96,
+          "profile": 96,
+          "dependency_compile": 96,
+          "repair_search": 96
+        },
+        "operations": {
+          "admission.fixed_planner_model_admission": 96
+        },
+        "max_operand_bits": {},
+        "events": 1,
+        "denials": 0,
+        "last_denial": null
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "oversized_negative_numerator",
+      "limit": 96,
+      "price_bits": {
+        "numerator": 257,
+        "denominator": 1
+      },
+      "error_type": "ValueError",
+      "error": "Resource price exceeds bounded comparison domain.",
+      "observed": {
+        "stat_paid_totals": [],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 0,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 96,
+        "total": 96,
+        "remaining": 0,
+        "by_category": {
+          "admission": 96,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 96,
+          "solve": 96,
+          "check": 96,
+          "acquisition": 96,
+          "storage": 96,
+          "cache": 96,
+          "forecast": 96,
+          "assessment": 96,
+          "profile": 96,
+          "dependency_compile": 96,
+          "repair_search": 96
+        },
+        "operations": {
+          "admission.fixed_planner_model_admission": 96
+        },
+        "max_operand_bits": {},
+        "events": 1,
+        "denials": 0,
+        "last_denial": null
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "oversized_denominator",
+      "limit": 96,
+      "price_bits": {
+        "numerator": 1,
+        "denominator": 257
+      },
+      "error_type": "ValueError",
+      "error": "Resource price exceeds bounded comparison domain.",
+      "observed": {
+        "stat_paid_totals": [],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 0,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 96,
+        "total": 96,
+        "remaining": 0,
+        "by_category": {
+          "admission": 96,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 96,
+          "solve": 96,
+          "check": 96,
+          "acquisition": 96,
+          "storage": 96,
+          "cache": 96,
+          "forecast": 96,
+          "assessment": 96,
+          "profile": 96,
+          "dependency_compile": 96,
+          "repair_search": 96
+        },
+        "operations": {
+          "admission.fixed_planner_model_admission": 96
+        },
+        "max_operand_bits": {},
+        "events": 1,
+        "denials": 0,
+        "last_denial": null
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "at_cap_positive_numerator",
+      "limit": 96,
+      "price_bits": {
+        "numerator": 256,
+        "denominator": 1
+      },
+      "error_type": "ValueError",
+      "error": "Fixed rational resource price required.",
+      "observed": {
+        "stat_paid_totals": [],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 3,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 96,
+        "total": 96,
+        "remaining": 0,
+        "by_category": {
+          "admission": 96,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 96,
+          "solve": 96,
+          "check": 96,
+          "acquisition": 96,
+          "storage": 96,
+          "cache": 96,
+          "forecast": 96,
+          "assessment": 96,
+          "profile": 96,
+          "dependency_compile": 96,
+          "repair_search": 96
+        },
+        "operations": {
+          "admission.fixed_planner_model_admission": 96
+        },
+        "max_operand_bits": {},
+        "events": 1,
+        "denials": 0,
+        "last_denial": null
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "at_cap_negative_numerator",
+      "limit": 96,
+      "price_bits": {
+        "numerator": 256,
+        "denominator": 1
+      },
+      "error_type": "ValueError",
+      "error": "Fixed rational resource price required.",
+      "observed": {
+        "stat_paid_totals": [],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 3,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 96,
+        "total": 96,
+        "remaining": 0,
+        "by_category": {
+          "admission": 96,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 96,
+          "solve": 96,
+          "check": 96,
+          "acquisition": 96,
+          "storage": 96,
+          "cache": 96,
+          "forecast": 96,
+          "assessment": 96,
+          "profile": 96,
+          "dependency_compile": 96,
+          "repair_search": 96
+        },
+        "operations": {
+          "admission.fixed_planner_model_admission": 96
+        },
+        "max_operand_bits": {},
+        "events": 1,
+        "denials": 0,
+        "last_denial": null
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "at_cap_denominator",
+      "limit": 96,
+      "price_bits": {
+        "numerator": 1,
+        "denominator": 256
+      },
+      "error_type": "ValueError",
+      "error": "Fixed rational resource price required.",
+      "observed": {
+        "stat_paid_totals": [],
+        "byte_read_paid_totals": [],
+        "fraction_equalities": 3,
+        "oversized_fraction_equalities": 0,
+        "bellman_numeric_checks": 0
+      },
+      "meter": {
+        "version": "p307-modular-computation-adapter-v1.1",
+        "limit_total": 96,
+        "total": 96,
+        "remaining": 0,
+        "by_category": {
+          "admission": 96,
+          "solve": 0,
+          "check": 0,
+          "acquisition": 0,
+          "storage": 0,
+          "cache": 0,
+          "forecast": 0,
+          "assessment": 0,
+          "profile": 0,
+          "dependency_compile": 0,
+          "repair_search": 0
+        },
+        "category_limits": {
+          "admission": 96,
+          "solve": 96,
+          "check": 96,
+          "acquisition": 96,
+          "storage": 96,
+          "cache": 96,
+          "forecast": 96,
+          "assessment": 96,
+          "profile": 96,
+          "dependency_compile": 96,
+          "repair_search": 96
+        },
+        "operations": {
+          "admission.fixed_planner_model_admission": 96
+        },
+        "max_operand_bits": {},
+        "events": 1,
+        "denials": 0,
+        "last_denial": null
+      },
+      "status": "PASS"
+    }
+  ],
+  "principal_credit_minutes": 0,
+  "scope": "Changed preflight only. Zero Bellman numeric checks, no model/DP re-audit, observations or deployments.",
+  "source_sha256": "88c73b82ac2809da8f31a8dcb93237e732f93b73665a42f5ec180d6355c782b7"
+}

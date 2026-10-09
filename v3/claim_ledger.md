@@ -1,13 +1,15 @@
 # Phase-three claims and obligations
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 9, 2026 UTC.
-**P3-01–06 are complete at their declared task scopes, with their Research90
+**P3-01–07 are complete at their declared task scopes, with their Research90
 minima and closing records. P3-A remains PASS at problem and restricted representation
 readiness; P3-B–D remain unattempted. P3-04 closes on separately versioned
 S2 replacement evidence; its original missing run history is not recreated.
 P3-05 is complete at finite transport and checked-reuse scope, with verified
 Research90 and S3 evidence. P3-06 closes at finite forecast/action/delay/repricing
-scope with its observed Research90 and preserved evidence. Next: P3-07, unstarted.
+scope with its observed Research90 and preserved evidence. P3-07 closes at
+bounded paid-computation, acquired-profile and versioned self-assessment scope,
+with observed Research90. Next: P3-B, unattempted; P3-08 remains unstarted.
 P3-N01 remains NOT YET SUPPORTED.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
 [task readiness audit](work_logs/P3_03_2026-10-07_S1/readiness_audit.md).
@@ -277,3 +279,45 @@ append identities. Phase research is **561.972419606450 minutes**, leaving
 **398.027580393550 minutes** to the 960-minute floor. The 480-minute progress
 review retains its overshoot. P3-A remains PASS; P3-B–D remain unattempted.
 P3-07 remains unstarted. No final challenge is frozen or exposed.
+
+
+## P3-07 substantive dispositions — October 9, 2026, S1
+
+The [paid-reasoning derivation](derivations/07_paid_reasoning.md) and its
+companions support the following restricted findings. These PR labels index
+statements and comparisons, not independent novelty claims. The
+[duty assessment](work_logs/P3_07_2026-10-09_S1/duty_assessment.md) separates
+these duties from unestablished general claims. The [readiness audit](work_logs/P3_07_2026-10-09_S1/readiness_audit.md)
+and [closed session](work_logs/P3_07_2026-10-09_S1.md) establish task completion
+at this scope; the following contribution judgment remains separate.
+
+| Record | Current finding | Evidence and boundary |
+|---|---|---|
+| P3-07/PR-1 | A simultaneous paired-feature event gives a lower expected gain for every retained complete policy and constant price vector; continuation excludes common sunk costs while root accounting retains them. | Exact signed-linear proof, independent reconstruction and controller v3. Fixed baseline/catalogue/law/initial state; no free planning or performance law. Empty credal families are invalid, and capped infimum evaluation needs a sound lower bound. |
+| P3-07/PR-2 | Paid bounded rollouts and an integer-checkable Hoeffding radius cover four fixed profile checkpoints; lower-bound selection has the stated finite-catalogue regret envelope. | Fixed policy maps, correctly acquired features and IID request-law premises. Paired policy outcomes can be dependent; unbudgeted optional stopping is not covered. |
+| P3-07/PR-3 | One acquired coordinate event supports constant repricing; fixed represented context features and an independently justified total-variation bound provide two explicit theoretical extensions. | Signed coefficient calculation and range-width transfer, independently checked. New policy behavior, new feature meaning, unsupported drift or an arbitrary selected query requires another argument. |
+| P3-07/PR-4 | The two-law completion witness needs 45 fixed observations for symmetric three-quarter sign identification, beyond its 128-request maximum good-law payoff. | Exact binomial likelihood calculation; independent 44/45 boundary. Safe abstention and prior expected-value control are different duties. |
+| P3-07/PR-5 | In the same supplied profile-then-commit model, each observation adds at most H/400 expected terminal value. If its marginal cost is at least that amount, no adaptive stopping policy improves prior expected value. | Exact tent-envelope and supermartingale proof, with bounded/finite-expected stopping qualifications. At H=128 this blocks acquisition; the theorem needs the specified laws, pure information observations and terminal service. |
+| P3-07/PR-6 | A paid finite Bayesian acquisition planner has exact value under its explicit two-point prior; longer horizons can repay its construction cost while conditional bad-law value stays negative. | Planner v1.1, 24 exact development tables and independent likelihood/ordered-history reconstruction. This computes a supplied-model value; it does not acquire or validate that model for free or give per-law safety. |
+| P3-07/PR-7 | Bounded fixed-profile and whole profile-rebuilding audits can certify expected improvement of a named procedure over fallback. | Source-bound fresh development episodes; whole-audit v2 lower gain 1211017049/4096000 per 64-query episode. Outer audit procurement is additional, and charged exact computation is cheaper. No reflection or universal self-trust theorem. |
+| P3-07/PR-8 | Four continuous action roles have a sharp quadratic-smoothing allowance, enlarged-feature fixed-role regret, exact finite-bit rounding correction and restricted numeric-state growth. | P3-06 potential adaptation, hand proofs, independent reconstruction and frozen v2 implementation. Actual sampled execution needs the stated random-draw assumptions; fixed roles are not arbitrary adaptive comparators. |
+| P3-07/PR-9 | The current fully paid feedback protocol loses to the always-BUY service-fee control despite favorable ideal mixture costs. | Three exact 32-query development cases plus a pathwise fee-cancellation argument. A separately implemented buyer's extra overhead must be priced; selective settlement cannot borrow the same centered sampling guarantee. |
+| P3-07/PR-10 | An ordinary analytic class profile recovers exact finite policy costs from fifteen paid representative queries at 64,581 units, below the sampled profile's 1,692,957. | Prime/root-count and source-specific path proofs, 90 representative runs and 1,488 retained population checks. Flat tariff and transparent finite population; no physical runtime or cheapest-algorithm claim. |
+| P3-07/PR-11 | Including actual dependency construction and admissible-repair search reverses a check/retention-only apparent gain. | Frozen actual compiler/search diagnostic v2: total1.79639 versus0.61339 partial bill at fallback fee1. Earlier counterfactual semantics are imported unchanged, not redone. |
+| P3-07/IMPLEMENTATION | Current paid interfaces retain failed costs, reserve output/cleanup, bind source/generator scope and prepay bounded numerical admission/readout. | Focused repaired-boundary checks; all predecessor sources and failed probes retained. Trusted local implementation and declared tariffs, not a malicious-code sandbox or complete CPU/heap proof. |
+| P3-H04 | Learned performance estimates and priced computation now have a bounded implemented instance with explicit acquisition and own-procedure assessment. | **PROVED/IMPLEMENTED AT DECLARED SCOPES.** One observed checkpoint decision changes under expensive storage; no general model discovery or broad efficiency advantage. |
+| P3-H03 | Model plurality has no demonstrated advantage against the strongest ordinary combination in this task. | **OPEN; no advantage assumed.** Ordinary expected-cost selection can use the same complete policies, exact solver, profiles and source structure. |
+| P3-N01 | **NOT YET SUPPORTED.** A modest formal adaptation or useful synthesis remains possible, but its added service value or consequential theorem/limitation magnitude is not demonstrated here. | [Scientific assessment](work_logs/P3_07_2026-10-09_S1/contribution_assessment.md) applies the author's broad criterion. Neither equal ordinary outputs, negative comparisons, artifact volume nor elapsed time alone determines it. |
+
+All scientific evidence remains DEVELOPMENT. The P3-06 defensive-forecasting
+addendum and its prior evidence are preserved. P3-A remains PASS; P3-B–D and
+P3-08 remain unattempted. No final challenge has been frozen or exposed.
+
+
+P3-07 Research90 is satisfied by **90.187687312067 observed research minutes**,
+with zero historical or parallel-agent credit. The exact total is
+5,411,261,238,724 nanoseconds. [Actuals](work_logs/P3_07_2026-10-09_S1/actuals.json)
+and the 35-row append preserve all 132,993 prior ledger bytes. Phase research
+is **652.160106918517 minutes**, leaving **307.839893081483 minutes** to the
+960-minute floor. No new progress checkpoint was crossed. P3-07 is complete;
+P3-B is the next unattempted roadmap item and P3-08 remains unstarted.

@@ -1,0 +1,48 @@
+{
+  "source_hashes": {
+    "07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+    "07_paid_reasoning.py": "be6a575a9cf4de042823e4c8a2c03c31fffe70b4c8e047dd1680655d05f1e0ec",
+    "07_paid_reasoning_development.py": "c8be07643e21c2f3eb7d5dc0df9128ff28bfecd48f8db299061f68d62561d2dd"
+  },
+  "profile_id": "bb6e031bb20b5d1ba77e036a6100124d78bb0025c56f5d74b79572f590f80760",
+  "scope": {
+    "controller": "p307-paired-profile-controller-v3@sha256:be6a575a9cf4de042823e4c8a2c03c31fffe70b4c8e047dd1680655d05f1e0ec",
+    "adapter": "p307-modular-computation-adapter-v1.1@sha256:06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+    "catalogue": "c7a2931eeb05e0c666de824bcaf06cb644a039f3999b6cb358f6813b715cc3ae",
+    "features": "fp-fn-fallback-and-eleven-resource-categories-v1",
+    "law": "uniform-248-public-euler-queries-v1@generator-sha256:c8be07643e21c2f3eb7d5dc0df9128ff28bfecd48f8db299061f68d62561d2dd",
+    "initial_state": "cold-per-query;cache_cap=0;no-pending-jobs",
+    "sampler_contract": "iid-with-replacement-model;seeded-development-trace-labelled",
+    "schedule": "whole-fixed-policy;no-unacquired-feedback;constant-price-per-batch"
+  },
+  "prices": [
+    "100",
+    "100",
+    "20",
+    "1/1000",
+    "1/1000",
+    "1/1000",
+    "1/1000",
+    "1/1000",
+    "1/1000",
+    "1/1000",
+    "1/1000",
+    "1/1000",
+    "1/1000",
+    "1/1000"
+  ],
+  "batch_size": 16,
+  "n_audit": 256,
+  "seed": 307109,
+  "reset": "new adapter/cache per query; fixed profile and selector per episode",
+  "selected_policy_before_audit": {
+    "name": "full_fallback",
+    "transactions": 19,
+    "unresolved_action": null
+  },
+  "assessment_limit": 20000,
+  "harness_version": "p307-paid-development-v3",
+  "audit_role": "Fresh development audit after closure fixed; no subsequent tuning may reuse this as independent evidence.",
+  "identity": "b2195458c004d8c7f30e445a484794095edb33d79398e4d611c5f45ed42dbf5c",
+  "frozen_utc_before_first_audit_row": "2026-10-09T17:24:55.480015+00:00"
+}

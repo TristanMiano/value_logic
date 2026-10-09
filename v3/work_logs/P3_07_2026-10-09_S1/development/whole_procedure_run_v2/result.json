@@ -1,0 +1,163 @@
+{
+  "status": "PASS",
+  "closure": {
+    "version": "p307-whole-profile-rebuilding-audit-v2",
+    "stage": "DEVELOPMENT",
+    "source_hashes": {
+      "07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+      "07_paid_reasoning.py": "be6a575a9cf4de042823e4c8a2c03c31fffe70b4c8e047dd1680655d05f1e0ec",
+      "07_paid_reasoning_development.py": "c8be07643e21c2f3eb7d5dc0df9128ff28bfecd48f8db299061f68d62561d2dd",
+      "07_whole_procedure_audit.py": "3de000ea0e512b952d9a15e8be37c5e68444196c4ce1d187e6d3068953a7ab39"
+    },
+    "profile_scope": {
+      "controller": "p307-paired-profile-controller-v3@sha256:be6a575a9cf4de042823e4c8a2c03c31fffe70b4c8e047dd1680655d05f1e0ec",
+      "adapter": "p307-modular-computation-adapter-v1.1@sha256:06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+      "catalogue": "c7a2931eeb05e0c666de824bcaf06cb644a039f3999b6cb358f6813b715cc3ae",
+      "features": "fp-fn-fallback-and-eleven-resource-categories-v1",
+      "law": "uniform-248-public-euler-queries-v1;joint-generator-sha256:abc70b2a81de8e3ee0521d5f898ffe20710574947f0aeacd03d3f3f76d0a4ff4",
+      "initial_state": "cold-per-query;cache_cap=0;no-pending-jobs",
+      "sampler_contract": "iid-with-replacement-model;seeded-development-trace-labelled",
+      "schedule": "whole-fixed-policy;no-unacquired-feedback;constant-price-per-batch"
+    },
+    "audit_seed": 307151,
+    "audit_n": 256,
+    "profile_n": 64,
+    "horizon": 64,
+    "prices": [
+      "100",
+      "100",
+      "20",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000",
+      "1/1000"
+    ],
+    "whole_resource_cap": 628752,
+    "scalar_range": [
+      "-718594/125",
+      "1280"
+    ],
+    "sampling": "IID complete episodes is a model assumption; seeded development realization.",
+    "reset": "No acquired profile and cold adapter/cache for every query at every episode.",
+    "frozen_utc_before_first_episode": "2026-10-09T17:58:39.165746+00:00",
+    "plan": "v3/work_logs/P3_07_2026-10-09_S1/development/whole_procedure_plan_v2.json",
+    "identity": "d8b914c88e3dcf10bef3664f000985e7fa5918a437aa357366d26e93f4cc049d"
+  },
+  "policies": {
+    "full_fallback": 256
+  },
+  "mean_all_in_gain": "270489329/256000",
+  "lower_all_in_gain": "1211017049/4096000",
+  "positive_whole_procedure_certificate": true,
+  "radius": "7095/65536",
+  "radius_k": 6,
+  "mean_controller_all_in_cost": "44446187/256000",
+  "mean_baseline_cost": "78733879/64000",
+  "mean_charged_exact_cost": "4172681/256000",
+  "outer_audit_procurement_resources": {
+    "admission": 7670315,
+    "solve": 3195915,
+    "check": 1945269,
+    "acquisition": 393600,
+    "storage": 13375900,
+    "cache": 131072,
+    "forecast": 262144,
+    "assessment": 824800,
+    "profile": 28610590,
+    "dependency_compile": 0,
+    "repair_search": 0
+  },
+  "outer_audit_procurement_cost": "11281921/200",
+  "outer_startup_meter": {
+    "version": "p307-modular-computation-adapter-v1.1",
+    "limit_total": 200000,
+    "total": 45598,
+    "remaining": 154402,
+    "by_category": {
+      "admission": 0,
+      "solve": 0,
+      "check": 0,
+      "acquisition": 0,
+      "storage": 8192,
+      "cache": 0,
+      "forecast": 0,
+      "assessment": 0,
+      "profile": 37406,
+      "dependency_compile": 0,
+      "repair_search": 0
+    },
+    "category_limits": {
+      "admission": 200000,
+      "solve": 200000,
+      "check": 200000,
+      "acquisition": 200000,
+      "storage": 200000,
+      "cache": 200000,
+      "forecast": 200000,
+      "assessment": 200000,
+      "profile": 200000,
+      "dependency_compile": 200000,
+      "repair_search": 200000
+    },
+    "operations": {
+      "profile.outer_global_closure_construct_hash": 16384,
+      "profile.outer_source_registry_read_hash_words": 21022,
+      "storage.outer_global_closure_retention": 8192
+    },
+    "max_operand_bits": {},
+    "events": 1,
+    "denials": 0,
+    "last_denial": null
+  },
+  "final_certificate_meter": {
+    "version": "p307-modular-computation-adapter-v1.1",
+    "limit_total": 20000,
+    "total": 8416,
+    "remaining": 11584,
+    "by_category": {
+      "admission": 0,
+      "solve": 0,
+      "check": 0,
+      "acquisition": 0,
+      "storage": 8192,
+      "cache": 0,
+      "forecast": 0,
+      "assessment": 224,
+      "profile": 0,
+      "dependency_compile": 0,
+      "repair_search": 0
+    },
+    "category_limits": {
+      "admission": 20000,
+      "solve": 20000,
+      "check": 20000,
+      "acquisition": 20000,
+      "storage": 20000,
+      "cache": 20000,
+      "forecast": 20000,
+      "assessment": 20000,
+      "profile": 20000,
+      "dependency_compile": 20000,
+      "repair_search": 20000
+    },
+    "operations": {
+      "assessment.radius_integer_bound_bundle": 160,
+      "assessment.whole_mean_and_lower_bound_readout": 64,
+      "storage.whole_audit_certificate_retention": 8192
+    },
+    "max_operand_bits": {},
+    "events": 2,
+    "denials": 0,
+    "last_denial": null
+  },
+  "boundary": "Whole profile-rebuilding episode at fixed high prices only. Outer audit procurement is additional; no claim that acquiring this audit was optimal, no final evaluation claim.",
+  "elapsed_ns": 18475496218,
+  "finished_utc": "2026-10-09T17:58:57.641408+00:00"
+}

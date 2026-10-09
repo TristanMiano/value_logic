@@ -1,0 +1,85 @@
+{
+  "artifacts_sha256": {
+    "07_ordinary_analytic_profile_reviewed.md": "46db6cb249c5e0bb0066685c438132a1bfcf7551d834612cc752a8239e90cfb7",
+    "07_paid_reasoning_reviewed.md": "ba5faf34e10b2030290135296b2d705ee75e7d25884ed07caa655b316b2bb1bd",
+    "acquisition_scope_addendum_v1.md": "6e91d0f3137182aa0a8504d5fdc868f59f484ccb54027e0538922491d47cc402",
+    "input_snapshots.json": "402c5fe1effb6fc0a624b56d3c280cdcb6e06793c7c189266306921db0beb227",
+    "integration_check_results.json": "880462c02068401cf1fb72eaba190e8f54819c55ee5a56f3421946c30d26e02a",
+    "integration_checks.py": "e7c416ea744d8d9770d532ffcf03d32fcc30430c4df6565426c55595c1d07bf1",
+    "integration_review_v1.md": "279a4be49cd34168442515948ea233ec5d7a29dd363ef0e2ad638ca402e39e90"
+  },
+  "evidence_sha256": {
+    "v3/work_logs/P3_07_2026-10-09_S1/development/acquisition_boundary_v1_1/result.json": "435ee3572c88d65b5b8be519dae6e9a659b2a313ad2d64d39485ecc00137069d",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/acquisition_boundary_v1_1/rows.json": "ea3598de1d5478f5c8e4c7c6b3e62612b8d11c569c38b4f2da00d2c1f821adcd",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/adapter_agent/dependency_probe_v2/results.json": "8253c0df8cdcc9a4b16ae5f63c889ae92261511a752783a0a0aa9a08f5ad04a2",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/analytic_profile_run_v2/analytic_profile.json": "4cf663f5018f0bed4f9eb559b6523e5bf63ef9f0873963607a64a8cdf51bee11",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/analytic_profile_run_v2/result.json": "e6b791fce8d855720a8a7333cde7dad666c1d30ce641f73979200ac7e0a3af99",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/multi_action_run_v2/capped_root_eight_bits_result.json": "ac2b2c0a75449eb575a1fb0a8cbf4cef2e3f2982c57e4f496813e1a882fe5f6a",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/multi_action_run_v2/full_root_eight_bits_result.json": "2cbdaea257efe7449cf6141e7880cf89c40ab5ec45bdf22c7f16864b63f9c208",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/multi_action_run_v2/full_root_one_bit_result.json": "325bbce3e3b5fab86076adbfa74b44460f8953ef2b2b69f0c658f4dcb4fc9729",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/run_v3/population_exact.json": "177e93a0aa8f6d3d4d1ffe34f00dc865fc6a0f838c5734a315671e8dc49140a4",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/run_v3/result.json": "d91e433e3fff81e3902a5f681e0988e999d1f157d0954fc2769653dcb8b24065",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/run_v3/selections.json": "5bfd3c0d3b1edd6e8138b42c95297bac0c89804519df36db14d67ff7a2bbdcd3",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/run_v3/self_audit.json": "1deffc36ba366917d65eb42dd5409eff2138b49191801caf5e8478a5d31a535d",
+    "v3/work_logs/P3_07_2026-10-09_S1/development/whole_procedure_run_v2/result.json": "a458114e2f5ee205ef187a0f30b2d3366d351c2e004e859b275f8a1c341a09ce",
+    "v3/work_logs/P3_07_2026-10-09_S1/reviews/proof_agent/policy_proof_checks_result.json": "2e9e189a2de8106d788df638930920460d90a165222d27c56b66101962b27096",
+    "v3/work_logs/P3_07_2026-10-09_S1/reviews/whole_audit_agent/section_3_3_reviewed_v2.txt": "80f1ef6086202048e651f602017b4d460943503c605f3efdd65e98adfd577d7b"
+  },
+  "findings": [
+    {
+      "id": "MI-1",
+      "kind": "cost label and consequential rounding",
+      "location": "07_paid_reasoning.md section 6.6",
+      "summary": "Include the separately recorded 2/3125 setup fee or label the three values as excluding setup; with setup the one-bit case rounds to 642.015."
+    },
+    {
+      "id": "MI-2",
+      "kind": "mathematical validity qualification",
+      "location": "07_paid_reasoning.md section 2",
+      "summary": "Credal family must be nonempty and contain the target joint law on the stated event; empty/inconsistent is invalid/conflict; capped evaluation needs a sound lower bound on the infimum, not a feasible-law value."
+    },
+    {
+      "id": "MI-S1",
+      "kind": "accounting-scope clarification",
+      "location": "acquisition and tariff protocol",
+      "summary": "Profile/audit task features are hypothetical offline evaluations; computation and retention are paid. Actual acquisition task losses in a live setting must enter setup or the whole episode. No numerical defect under the offline interpretation."
+    }
+  ],
+  "input_snapshots": {
+    "07_ordinary_analytic_profile.md": {
+      "sha256": "46db6cb249c5e0bb0066685c438132a1bfcf7551d834612cc752a8239e90cfb7",
+      "snapshot": "07_ordinary_analytic_profile_reviewed.md"
+    },
+    "07_paid_reasoning.md": {
+      "sha256": "ba5faf34e10b2030290135296b2d705ee75e7d25884ed07caa655b316b2bb1bd",
+      "snapshot": "07_paid_reasoning_reviewed.md"
+    }
+  },
+  "limitations": [
+    "No blind replication or external-model audit",
+    "Later manuscript bytes are outside these hashes",
+    "Separate acquisition-planning study excluded",
+    "Research-in-progress status intentional",
+    "No next phase or gate attempted"
+  ],
+  "new_broad_test_runs": 0,
+  "new_solver_runs": 0,
+  "numeric_comparisons": 76,
+  "numeric_comparisons_passed": 76,
+  "principal_clock_measured": false,
+  "principal_research90_credit_seconds": 0,
+  "prior_review_dependencies": [
+    "v3/work_logs/P3_07_2026-10-09_S1/reviews/whole_audit_agent/review_v2.md",
+    "v3/work_logs/P3_07_2026-10-09_S1/reviews/analytic_profile_agent/analytic_review_v2.md",
+    "v3/work_logs/P3_07_2026-10-09_S1/reviews/analytic_profile_agent/class_resource_review_v2.md"
+  ],
+  "review": "P3-07 final manuscript integration review v1",
+  "review_type": "Same-model targeted nonblind development review",
+  "root_manuscript_freeze_released": true,
+  "scope": [
+    "v3/derivations/07_paid_reasoning.md",
+    "v3/derivations/07_ordinary_analytic_profile.md"
+  ],
+  "sources_unchanged_and_snapshots_equal_at_finalization": true,
+  "status": "REVIEW_COMPLETE_WITH_TWO_NARROW_CORRECTIONS_AND_ONE_OFFLINE_ACQUISITION_SCOPE_CLARIFICATION"
+}

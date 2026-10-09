@@ -1,0 +1,131 @@
+{
+  "schema": "value_logic.p307.development_plan.v1",
+  "recorded_utc": "2026-10-09T16:44:22.316054+00:00",
+  "stage": "DEVELOPMENT",
+  "adapter_version": "p307-modular-computation-adapter-v1",
+  "adapter_sha256": "6ba48dd7cbf7388460e25e7c5a174f8e2a34c23992d87738dbee946203200a5e",
+  "population": {
+    "law": "uniform over all (p,a) with p in [17,31,47,61,97], 1<=a<p; Query(a,(p-1)//2,p,1)",
+    "size": 248,
+    "math_answers": "deterministic modular equalities",
+    "known_structure": "The public Euler-style balanced family admits analytic structure and exhaustive enumeration; both are allowed to the ordinary comparator. No hardness or prediction advantage claim.",
+    "state": "cold Adapter(cache_cap=0) on each request; profiles retained separately; warm histories outside this sampling theorem"
+  },
+  "catalogue": [
+    "fallback",
+    "guess0",
+    "guess1",
+    "cap6_fallback",
+    "cap12_fallback",
+    "full_fallback"
+  ],
+  "features": [
+    "false_positive",
+    "false_negative",
+    "fallback",
+    "resource_admission",
+    "resource_solve",
+    "resource_check",
+    "resource_acquisition",
+    "resource_storage",
+    "resource_cache",
+    "resource_forecast",
+    "resource_assessment",
+    "resource_profile",
+    "resource_dependency_compile",
+    "resource_repair_search"
+  ],
+  "profile": {
+    "n": 1024,
+    "seed": 307071,
+    "delta": "1/20",
+    "fixed_checkpoints": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "sampling": "Seeded uniform-with-replacement development trace; statistical theorem assumes IID. Independent exhaustive population audit will check the realized coordinate-coverage event directly.",
+    "radius": "integer-checkable dyadic rational, union across declared fixed checkpoints and nonconstant feature cells"
+  },
+  "prices": [
+    {
+      "name": "low",
+      "fp": "1",
+      "fn": "1",
+      "fallback": "1/5",
+      "all_resource_units": "1/1000"
+    },
+    {
+      "name": "high",
+      "fp": "100",
+      "fn": "100",
+      "fallback": "20",
+      "all_resource_units": "1/1000"
+    },
+    {
+      "name": "false_positive_expensive",
+      "fp": "100",
+      "fn": "1",
+      "fallback": "20",
+      "all_resource_units": "1/1000"
+    },
+    {
+      "name": "false_negative_expensive",
+      "fp": "1",
+      "fn": "100",
+      "fallback": "20",
+      "all_resource_units": "1/1000"
+    },
+    {
+      "name": "zero_task",
+      "fp": "0",
+      "fn": "0",
+      "fallback": "0",
+      "all_resource_units": "1/1000"
+    },
+    {
+      "name": "storage_expensive",
+      "fp": "100",
+      "fn": "100",
+      "fallback": "20",
+      "all_resource_units": "1/1000",
+      "storage_override": "1/10"
+    }
+  ],
+  "horizons": [
+    1,
+    64,
+    10000
+  ],
+  "selection": "Finite complete-policy max lower saving versus fallback; conditional-continuation selection and all-in/setup-coverage flags kept distinct. Cheap gross-value pre-screen may skip assessment, but its own cost is recorded.",
+  "self_audit": {
+    "frozen_profile_and_controller": true,
+    "price": "high",
+    "episode_batch_size": 16,
+    "n_episodes": 256,
+    "seed": 307079,
+    "delta": "1/20",
+    "sample_unit": "whole fixed controller batch, with new state per episode; baseline and charged exact comparator use same query batch"
+  },
+  "comparators": [
+    "immediate fixed policies with same shortcut and cold state",
+    "ordinary controller using identical profile, catalogue and rule",
+    "charged exact complete policy",
+    "paid exhaustive population profiling; no sampling uncertainty",
+    "public analytic family structure permitted"
+  ],
+  "checks": [
+    "independent exact population means and certificate containment",
+    "exact rational versus separate scalar calculations",
+    "no future labels in profile selection interface",
+    "invalid/stale full scope bindings rejected",
+    "fixed-prices versus query-dependent-prices boundary",
+    "same proper-score improvement signal-value witness",
+    "assessment overhead and setup cost on fallback branch",
+    "hard caps and timeout/acquisition statuses",
+    "finite-prefix simultaneous coverage versus optional-stopping witness",
+    "full own-program identity frozen before audit"
+  ],
+  "failure_policy": "Preserve failing run sources, manifests and outputs; version changed code and run a new documented development attempt. No quiet replacement or final evaluation freeze."
+}

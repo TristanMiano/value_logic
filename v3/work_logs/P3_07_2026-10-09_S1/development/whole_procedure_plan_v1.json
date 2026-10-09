@@ -1,0 +1,31 @@
+{
+  "schema": "value_logic.p307.whole_procedure_audit_plan.v1",
+  "stage": "DEVELOPMENT",
+  "frozen_utc": "2026-10-09T17:25:46.923459+00:00",
+  "question": "Fresh assessment of a version that rebuilds its profile inside every episode, including acquisition, selection, and future deployment costs.",
+  "profile_rows_per_episode": 64,
+  "deployment_queries_per_episode": 64,
+  "audit_episodes": 256,
+  "audit_seed": 307139,
+  "prices": "FP100,FN100,fallback20,all resource units1/1000",
+  "delta": "1/20",
+  "catalogue": "Unchanged six complete policies from repaired controller v3",
+  "hard_caps": {
+    "per_policy": 1024,
+    "profile_builder": 150000,
+    "assessment": 20000
+  },
+  "single_episode_controller_resource_upper": 628752,
+  "paired_scalar_loss_range": [
+    "-718594/125",
+    "1280"
+  ],
+  "range_derivation": "At most64 future decisions lose80 more task units than fallback each; controller total resource cap=64*6*1024+150000+20000+64*1024=628752, priced at1/1000. Resource saving never positive against the shared-prefix fallback.",
+  "evidence": "Profile indices, sums, identity and procurement frozen before episode deployment; all future action and baseline labels come from paid checked adapter calls. Exact-population evidence is not passed to selection.",
+  "comparators": [
+    "same batch immediate fallback",
+    "same batch cold charged exact solver"
+  ],
+  "hypothesis": "A positive all-in whole-episode certificate against fallback is plausible; exact solving is expected to remain cheaper. Keep negative outcome if observed.",
+  "boundary": "Audits a fixed profile-rebuilding procedure; the outer audit bill is separately charged acquisition. Seeded development realization, no final evaluation or optimality claim."
+}

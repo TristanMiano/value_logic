@@ -1,0 +1,106 @@
+{
+  "name": "full_root_eight_bits",
+  "root_cap": 32,
+  "fair_bits": 8,
+  "status": "PASS",
+  "rounds": 32,
+  "final": {
+    "version": "p307-multi-action-potential-v2",
+    "settled": 32,
+    "pending": false,
+    "residual": [
+      "14670279025/4294967296",
+      "2981623017/1073741824",
+      "5289603471/1073741824",
+      "-340990477/134217728",
+      "-61078881/67108864",
+      "-18617/16384",
+      "69205987051/268435456000",
+      "-571118579989/268435456000",
+      "260311256811/268435456000",
+      "260311256811/268435456000"
+    ],
+    "variance": "18243839151396919763764951/288230376151711744000000",
+    "allowances": "1531524077762287876193/144115188075855872000000",
+    "B": "18246902199552444339517337/288230376151711744000000",
+    "mixed_cost": "7096737/25600",
+    "fixed_costs": [
+      "1611",
+      "2314",
+      "3318/5",
+      "368"
+    ],
+    "action_regrets": [
+      "-34144863/25600",
+      "-52141663/25600",
+      "-9891423/25600",
+      "-2324063/25600"
+    ],
+    "predicted_gaps": [
+      "-18247771867799/13421772800",
+      "-24481655310999/13421772800",
+      "-6487510665879/13421772800",
+      "-2520034626199/13421772800"
+    ],
+    "smoothing_slack": "459/64",
+    "generic_action_bound": "431014299797/536870912",
+    "retained_gap_bounds": [
+      "-3784336824837/6710886400",
+      "-6901278546437/6710886400",
+      "2095793776123/6710886400",
+      "4079531795963/6710886400"
+    ],
+    "work": {
+      "limit": 2000000,
+      "total": 140290,
+      "counts": {
+        "frozen_controller_initial_state": 64,
+        "issue_validation_and_identity_words": 2176,
+        "lipschitz_bound_arithmetic": 4096,
+        "feature_arithmetic_read_write": 53940,
+        "projection_arithmetic_sort_read_write": 34800,
+        "score_arithmetic_read_write": 25230,
+        "allowance_and_immutable_issue_write": 1856,
+        "dyadic_rounding_arithmetic_sort": 2304,
+        "fair_random_bits": 256,
+        "cumulative_selection": 320,
+        "settlement_update_and_bound_checks": 13184,
+        "root_bracket_update": 2064
+      },
+      "peak_component_bits": 84
+    },
+    "scope": "Mixed action costs on admitted labels; all-in and sampling corrections are separate."
+  },
+  "counts": {
+    "role_3": 4,
+    "root_cap_misses": 0,
+    "role_1": 7,
+    "role_0": 8,
+    "role_2": 13
+  },
+  "dyadic_mixed_cost": "70971/256",
+  "sampled_action_cost": "1367/5",
+  "dyadic_actual_correction": "363/25600",
+  "dyadic_certified_correction": "2029/128",
+  "all_in_cost_excluding_one_time_setup": "32020931/50000",
+  "always_buy_fee_cost": "368",
+  "nonbuy_task_loss": "1347/5",
+  "controller_fee": "150931/50000",
+  "initial_setup_fee": "2/3125",
+  "fully_paid_dominance_margin": "13620931/50000",
+  "raw_checked_service_resources": {
+    "admission": 2669,
+    "solve": 1375,
+    "check": 1314,
+    "acquisition": 320,
+    "storage": 2425,
+    "cache": 32,
+    "forecast": 0,
+    "assessment": 0,
+    "profile": 0,
+    "dependency_compile": 0,
+    "repair_search": 0
+  },
+  "sampling_boundary": "Exact dyadic lookup checked. Seeded draw trace is development; martingale probability theorem assumes independent fair bits and is not inferred from this trace.",
+  "cost_boundary": "Flat fee is a stipulated service tariff covering the real bounded solver/checker. Per-operation controller tariff is separate. Lookup-frequency verification and private report serialization are harness diagnostics."
+}

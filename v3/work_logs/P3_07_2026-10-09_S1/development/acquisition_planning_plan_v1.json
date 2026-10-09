@@ -1,0 +1,46 @@
+{
+  "version": "p307-bounded-acquisition-planning-plan-v1",
+  "utc_before_computation": "2026-10-09T18:14:33.408133+00:00",
+  "stage": "DEVELOPMENT_EXACT_STIPULATED_LAW",
+  "question": "Does the fixed-size symmetric sign-identification obstruction imply that bounded adaptive acquisition cannot have positive prior expected net value? Quantify the difference and charge the finite planning table.",
+  "hypotheses": [
+    "9/20",
+    "11/20"
+  ],
+  "prior_good": "1/2",
+  "profile_attempt_cost": "1/2",
+  "future_gain_per_request": [
+    "-1/20",
+    "1/20"
+  ],
+  "profile_caps": [
+    1,
+    12
+  ],
+  "future_horizons": [
+    128,
+    512,
+    4096,
+    16384
+  ],
+  "unit_prices": [
+    "0",
+    "1/10000",
+    "1/1000"
+  ],
+  "online_table_lookup_units": 8,
+  "online_acquisition_control_units": 8,
+  "state_evaluation_allowance": 128,
+  "state_retention_allowance": 64,
+  "core_word_envelope": "1024+64*state_count",
+  "method": "Exact rational finite-horizon Bellman recursion with stopping ties; fresh independent forward enumeration for verification. No random draws and no empirical service claim.",
+  "source_scope": "Own planner and adapter tariff source hashes; immutable bounded model and exact state table.",
+  "exclusions": "Human model/theorem/program discovery unquantified; external exhaustive diagnostic separate. Supplied two-point prior is a model assumption and is not learned for free.",
+  "nonclaims": [
+    "new metareasoning algorithm",
+    "universal sequential impossibility",
+    "real CPU bound",
+    "final evaluation",
+    "P3-B or P3-08"
+  ]
+}

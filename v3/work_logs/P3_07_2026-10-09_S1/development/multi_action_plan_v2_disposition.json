@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-09T17:23:36.549150+00:00",
+  "disposition": "clerical metadata clarification; no experiment rerun or numerical selection",
+  "file": "multi_action_plan_v2.json",
+  "inherited_fields": [
+    "schema",
+    "recorded_utc",
+    "source_sha256",
+    "prior_scope"
+  ],
+  "explanation": "These fields were copied from plan_v1. The source_sha256 is the preserved v1 source, not the repaired v2 source. The appended revision=v2, frozen_utc, reason, and new query/action seeds are the v2 prospective changes. The exact v2 source hashes were frozen in multi_action_run_v2/manifest.json before that run produced any rows. This clarification preserves the original plan bytes rather than silently rewriting them after observing results.",
+  "actual_v2_sources": {
+    "07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+    "07_multi_action_forecasting.py": "9605a0fa3483358bd6f0f98770b154888cbc37a37c4a746bfbf3e9f3f62453a7",
+    "07_multi_action_development.py": "cb5e191150905d9c1615277ab7b5dac0811e8646d2a76924499226dfa0fd7291"
+  }
+}

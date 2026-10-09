@@ -1,0 +1,36 @@
+### 3.3 A represented context rule or a proved shift bound
+
+There are two explicit ways to extend the constant-price claim. Neither is
+implemented by silently reusing the current fourteen-coordinate profile.
+
+First, fix bounded, available context functions $`g_1,\ldots,g_m`$ before
+sampling and retain the paired features
+$`g_r(X)d_{\pi,b,j}(X)`$. Their simultaneous bounds support every represented
+price schedule $`\lambda_j(X)=\sum_r\theta_{jr}g_r(X)`$ by the same signed
+linear calculation. The coefficients may be selected from the profile data;
+the complete policy maps and the context-feature definitions remain fixed.
+Finite stratum indicators are a simple example. Computing the context
+features and admitting their bounds has a cost. A new policy that reacts
+differently to those prices is a different complete map, requiring catalogue
+coverage or its own assessment.
+
+Second, suppose a separately justified deployment law $`\nu`$ satisfies
+$`\mathrm{TV}(\nu,\mu)\leq\rho`$ relative to the acquired profile law.
+For a coordinate in $`[a_j,b_j]`$, a valid deployed interval is the old
+interval expanded by $`\rho(b_j-a_j)`$, then clipped to the analytic range.
+Indeed, normalize the coordinate to $`[0,1]`$ and use the layer-cake integral
+of its level sets: its expectation changes by at most total variation.
+Thus a constant-price lower gain may be reduced by
+
+```math
+\rho\sum_j |\lambda_j|(b_j-a_j).
+```
+
+The coefficient has no extra factor of two when total variation means the
+supremum probability difference over events. A binary indicator attains the
+bound. A feature map or computation implementation change is a separate
+change; a population-distance bound alone does not cover it. The theorem
+requires an independently supported $`\rho`$, not an estimate declared
+small because a few observed means agree. No such drift certificate is used
+in the present development runs.
+

@@ -1,0 +1,310 @@
+{
+  "schema": "value_logic.p307.boundary_accounting_review.v1",
+  "task": "P3-07",
+  "attempt": "P3-07-1",
+  "session": "2026-10-09-S1",
+  "base_commit": "c7386f115bf60a9eb3a419515c844b81fc6ba073",
+  "verdict": "PASS",
+  "reviewer": "ChatGPT (GPT-6 Astra Pro), operational reviewer /root/p306_boundary_audit",
+  "review_basis": "Independent nonblind reconciliation of finalized stopped clock/accounting files and the base Git tree. Historical observation times are source records, not observations made by this reviewer.",
+  "principal_research_credit_added_ns": 0,
+  "principal_engaged_credit_added_ns": 0,
+  "review_effort_disposition": "Unmeasured after the recorded principal stop; no duration inferred.",
+  "scope": [
+    "raw clock and disposition reconstruction",
+    "cadence and exact ledger accounting",
+    "preservation of all protected base evidence",
+    "current task and gate boundary status"
+  ],
+  "excluded_work": [
+    "new research",
+    "scientific re-audit",
+    "test execution",
+    "clock operation",
+    "gate attempt",
+    "publication or ZIP verification"
+  ],
+  "unresolved_findings": [],
+  "resolved_findings": [
+    {
+      "path": "TODO_v3.md",
+      "finding": "The current active repair queue initially retained P3-01–06 complete and P3-07 next/unstarted.",
+      "resolution": "The principal corrected this paragraph to P3-01–07 complete, next P3-B unattempted, P3-C–D unattempted and P3-08 unstarted. The final corrected bytes are hashed in this receipt.",
+      "reviewer_modified_source": false
+    }
+  ],
+  "clock": {
+    "recorded_start_utc": "2026-10-09T16:29:27.184545+00:00",
+    "recorded_end_utc": "2026-10-09T18:40:44.271835+00:00",
+    "runtime": "linux-P3-07-S1:403b3dfd-d275-4848-b495-27d5ad38dc96",
+    "start_monotonic_ns": 3384846055136,
+    "end_monotonic_ns": 11261933344052,
+    "record_count": 55,
+    "raw_segment_count": 31,
+    "effective_segment_count": 35,
+    "stopped": true,
+    "state": null
+  },
+  "computed_totals": {
+    "category_ns": {
+      "D": 2748148706553,
+      "E": 2187681050491,
+      "L": 475431481680,
+      "unmeasured": 2123222015866,
+      "recovery": 87410975763,
+      "O": 255193058563
+    },
+    "raw_category_ns": {
+      "D": 2782361359659,
+      "E": 4085429373741,
+      "L": 475431481680,
+      "recovery": 87410975763,
+      "O": 446454098073
+    },
+    "lane_research_ns": {
+      "R": 3926235263804,
+      "X": 1485025974920
+    },
+    "research_ns": 5411261238724,
+    "research_minutes": "90.187687312067",
+    "engaged_ns": 5666454297287,
+    "engaged_minutes": "94.440904954783",
+    "recorded_elapsed_ns": 7877087288916,
+    "prior_phase_research_ns": 33718345176387,
+    "prior_phase_engaged_ns": 39021742019116,
+    "phase_research_ns": 39129606415111,
+    "phase_research_minutes": "652.160106918517",
+    "phase_engaged_ns": 44688196316403,
+    "task_research_floor_ns": 5400000000000,
+    "task_floor_margin_ns": 11261238724,
+    "phase_research_floor_ns": 57600000000000,
+    "phase_remaining_floor_ns": 18470393584889,
+    "phase_remaining_floor_minutes": "307.839893081483"
+  },
+  "dispositions": [
+    {
+      "id": "P3-07-S1-compaction-1",
+      "original_mode": "E",
+      "effective_mode": "unmeasured",
+      "start_monotonic_ns": 5458152578886,
+      "end_monotonic_ns": 5877495843471,
+      "elapsed_ns": 419343264585
+    },
+    {
+      "id": "P3-07-S1-unobserved-continuation-gap-2",
+      "original_mode": "E",
+      "effective_mode": "unmeasured",
+      "start_monotonic_ns": 6876100403389,
+      "end_monotonic_ns": 8172054439223,
+      "elapsed_ns": 1295954035834
+    },
+    {
+      "id": "P3-07-S1-compaction-tail-3",
+      "original_mode": "E",
+      "effective_mode": "unmeasured",
+      "start_monotonic_ns": 9079242863272,
+      "end_monotonic_ns": 9261693886103,
+      "elapsed_ns": 182451022831
+    },
+    {
+      "id": "P3-07-S1-administrative-close-tail",
+      "original_mode": "D",
+      "effective_mode": "O",
+      "start_monotonic_ns": 10748985595198,
+      "end_monotonic_ns": 10783198248304,
+      "elapsed_ns": 34212653106
+    },
+    {
+      "id": "P3-07-compaction-O-2026-10-09-close",
+      "original_mode": "O",
+      "effective_mode": "unmeasured",
+      "start_monotonic_ns": 10836825170489,
+      "end_monotonic_ns": 11062298863105,
+      "elapsed_ns": 225473692616
+    }
+  ],
+  "exclusions": {
+    "research_to_unmeasured_ns": 1897748323250,
+    "O_to_unmeasured_ns": 225473692616,
+    "research_to_O_ns": 34212653106,
+    "raw_unmeasured_ns": 0,
+    "effective_unmeasured_ns": 2123222015866,
+    "recovery_ns": 87410975763,
+    "administration_ns": 255193058563,
+    "zero_engaged_credit_ns": 2210632991629,
+    "zero_research_credit_ns": 2465826050192
+  },
+  "cadence": {
+    "source": "v2/RESEARCH_PROTOCOL.md section 4, inherited by v3/RESEARCH_PROTOCOL.md",
+    "limit_ns": 900000000000,
+    "maximum_credited_observation_gap": {
+      "mode": "E",
+      "start_monotonic_ns": 3935273010414,
+      "end_monotonic_ns": 4352106678612,
+      "elapsed_ns": 416833668198
+    },
+    "raw_gaps_above_limit": [
+      {
+        "start_monotonic_ns": 6876100403389,
+        "end_monotonic_ns": 8172054439223,
+        "elapsed_ns": 1295954035834,
+        "credited_ns": 0
+      }
+    ],
+    "violations": []
+  },
+  "ledger": {
+    "base_bytes": 132993,
+    "base_rows": 319,
+    "base_sha256": "6bcac52c02ed1a154646422352e2bdd3b66d734a808e118cac5b697c85503bf4",
+    "append_bytes": 15595,
+    "append_rows": 35,
+    "append_sha256": "80504c303403cea8ed360886be4a51e30b442e491a6de3dfdc9beb51887725eb",
+    "result_bytes": 148588,
+    "result_rows": 354,
+    "result_sha256": "b01210421436289bed04c123b151f89ee97a77a1624c4a2e5f2a2ae936aeda40",
+    "append_has_header": false,
+    "v2_sha256": "5c71a4727f1cb7e03565f1c495b0c63b351863583120f0ec5684aca48bd122c6"
+  },
+  "checks": {
+    "unique_same_runtime_strict_clock_observations": true,
+    "clock_stopped_no_open_state": true,
+    "raw_segments_exactly_reconstructed_from_clock_transitions": true,
+    "raw_positive_exact_durations": true,
+    "raw_continuous_no_overlap": true,
+    "raw_no_duplicate_intervals": true,
+    "effective_positive_exact_durations": true,
+    "effective_continuous_no_overlap": true,
+    "effective_no_duplicate_intervals": true,
+    "all_raw_and_effective_endpoints_are_recorded_observations": true,
+    "five_valid_dispositions_unique_and_nonoverlapping": true,
+    "effective_segments_exactly_reconstructed_from_raw_and_dispositions": true,
+    "actuals_embeds_exact_effective_segments": true,
+    "mode_lane_research_and_engaged_totals_match_actuals": true,
+    "research_and_operational_lane_assignments_valid": true,
+    "unknown_recovery_and_administration_reclassifications_reconcile": true,
+    "active_observation_cadence_within_fifteen_minutes": true,
+    "base_git_ledger_exact_prefix_and_single_headerless_append": true,
+    "declared_ledger_hashes_and_counts_match": true,
+    "every_append_row_matches_effective_interval": true,
+    "ledger_excludes_unknown_and_recovery_from_engaged_and_O_from_research": true,
+    "append_has_no_duplicate_rows_or_prior_identities": true,
+    "append_has_no_overlap_with_itself_or_any_prior_timed_row": true,
+    "prior_phase_totals_independently_match_base_ledger": true,
+    "new_phase_totals_match_full_ledger_and_actuals": true,
+    "research90_margin_and_960_remaining_exact": true,
+    "no_historical_parallel_or_post_stop_credit": true,
+    "rounded_minutes_match_exact_nanoseconds": true,
+    "forecast_precedes_clock_and_ledger_forecast_is_once_per_mode": true,
+    "plan_completion_next_gate_and_contribution_status": true,
+    "prior_plan_chunks_gates_and_checkpoints_unchanged": true,
+    "plan_progress_and_no_new_checkpoint_crossing": true,
+    "current_headers_and_TODO_checkbox_are_complete": true,
+    "current_TODO_queue_pointer_corrected": true,
+    "current_status_sources_keep_next_gate_and_no_freeze_boundary": true,
+    "tracked_diff_exactly_four_controls_and_ledger": true,
+    "v2_ledger_exact_base_bytes_and_expected_hash": true,
+    "root_README_unchanged": true,
+    "all_3858_protected_base_file_bytes_match_git_blobs": true,
+    "new_nonignored_paths_within_P3_07_scope": true
+  },
+  "failed_checks": [],
+  "historical_recredit_ns": 0,
+  "parallel_reviewer_credit_ns": 0,
+  "status": {
+    "phase_status": "research_in_progress",
+    "complete_tasks": [
+      "P3-01",
+      "P3-02",
+      "P3-03",
+      "P3-04",
+      "P3-05",
+      "P3-06",
+      "P3-07"
+    ],
+    "next_roadmap_item": "P3-B",
+    "next_roadmap_item_status": "unattempted",
+    "P3_A": "passed at restricted-representation readiness scope",
+    "P3_B": "unattempted",
+    "P3_C": "unattempted",
+    "P3_D": "unattempted",
+    "P3_08": "unstarted",
+    "P3_N01": "NOT YET SUPPORTED",
+    "experimental_freeze_created": false,
+    "final_evaluation_exposed": false,
+    "active_session": null,
+    "next_cumulative_checkpoint_minutes": 960,
+    "new_checkpoint_crossed": false,
+    "prior_checkpoint_records_unchanged": true,
+    "sources": [
+      "TODO_v3.md",
+      "v3/README.md",
+      "v3/claim_ledger.md",
+      "v3/plan.v1.json",
+      "v3/derivations/07_paid_reasoning.md",
+      "v3/work_logs/P3_07_2026-10-09_S1.md",
+      "v3/work_logs/P3_07_2026-10-09_S1/readiness_audit.md"
+    ],
+    "current_TODO_queue": "**Active repair queue: empty. P3-N01 is an open contribution-development\nobligation, not a detected defect. P3-01–07 are complete at their declared\nscopes. P3-A has passed at restricted-representation readiness scope.\nNext: P3-B, unattempted; P3-C–D remain unattempted and P3-08 is unstarted.**",
+    "historical_status_sections": "Earlier dated completion sections remain historical and do not override the current headers."
+  },
+  "preservation": {
+    "base_tracked_file_count": 3863,
+    "allowed_existing_changes": [
+      "TODO_v3.md",
+      "v3/README.md",
+      "v3/claim_ledger.md",
+      "v3/plan.v1.json",
+      "v3/time_ledger.csv"
+    ],
+    "protected_base_files_verified": 3858,
+    "verification_method": "Enumerated all base tree blobs using git ls-tree; for every protected path computed the Git blob SHA-1 over its actual current bytes and compared it with the base blob identity.",
+    "changed_or_missing_protected_files": [],
+    "protected_v2_file_count": 2800,
+    "protected_P3_06_file_count": 224,
+    "root_README_unchanged": true,
+    "prior_plan_task_entries_and_gates_unchanged": true,
+    "nonignored_untracked_files_at_preservation_inspection": 392,
+    "untracked_paths_outside_P3_07_scope": [],
+    "permitted_new_path_scope": [
+      "v3/checks/07_*",
+      "v3/derivations/07_*",
+      "v3/literature/07_*",
+      "v3/work_logs/P3_07_2026-10-09_S1/**",
+      "v3/work_logs/P3_07_2026-10-09_S1.md"
+    ],
+    "defensive_addendum": {
+      "path": "v3/work_logs/P3_06_2026-10-09_S1/recovery/checkpoint_original/saved_workspaces/p306_defensive_addendum/06_defensive_forecasting_addendum.md",
+      "bytes": 13245,
+      "sha256": "87662fd234e2401da060f00027489ce42bf19be54c28b4595675287c919fa02e",
+      "base_git_blob_sha1": "ac187ee9c4def5084b56c71681c4df4fd4328810",
+      "unchanged": true
+    },
+    "later_records": "Subsequent new P3-07 formatting/publication records are outside this closed accounting review; they do not earn credit."
+  },
+  "input_sha256": {
+    "v3/work_logs/P3_07_2026-10-09_S1/actuals.json": "cc35281a03fd4c9b1c36b6ccf634a5b713fe9b0435614e0b5bd0e4ebbdcfb6a5",
+    "v3/work_logs/P3_07_2026-10-09_S1/effective_segments.jsonl": "f16683778f09c004a6aa558206d73fb928a34789bb09fb132e90bef47c74a3f6",
+    "v3/work_logs/P3_07_2026-10-09_S1/segments.jsonl": "75c647115d43256dc391c17df902099b52e4170b81a2ff9a407b8538b7163a16",
+    "v3/work_logs/P3_07_2026-10-09_S1/clocks.jsonl": "40419ea6c93dbefda3ea2d9d1c6c3dcf0b01ab84eb90cd9ed67a202a87a79eaa",
+    "v3/work_logs/P3_07_2026-10-09_S1/clock_dispositions.jsonl": "6ef983e757d1e15db0892df6ad050a7678c211f86876124c1d6a782c79bf146e",
+    "v3/work_logs/P3_07_2026-10-09_S1/clock_state.json": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+    "v3/work_logs/P3_07_2026-10-09_S1/ledger_append.csv": "80504c303403cea8ed360886be4a51e30b442e491a6de3dfdc9beb51887725eb",
+    "v3/work_logs/P3_07_2026-10-09_S1/accounting_base.json": "3308b97155a46fe5e7da2e30dff9604beb7bd243f87067c674c9ef4b4be96923",
+    "v3/work_logs/P3_07_2026-10-09_S1/forecast.json": "e949a19644ec0213c975c1d99ad0c00416d66cc5bd733c1a63c5d12a8cf2e4bc",
+    "v3/work_logs/P3_07_2026-10-09_S1/close_accounting.py": "69c2cf920aefe52e57951260a35c25c075b3f50c065c94bf86602d5a797a49a7",
+    "v3/work_logs/P3_07_2026-10-09_S1/readiness_audit.md": "5945c51d830f48695007a30995e738e94a5000d7a0aad6933d40b81923a9c89b",
+    "v3/time_ledger.csv": "b01210421436289bed04c123b151f89ee97a77a1624c4a2e5f2a2ae936aeda40",
+    "TODO_v3.md": "c200b9411e898872bf038856a72ec5ca92ad6f564795dd19be60e5e146192dc8",
+    "v3/README.md": "29b2668a1b8cba57bce2d011e3341f62f6cd339443c55a15db7f07c2d7b3c339",
+    "v3/claim_ledger.md": "94bd89849dc257ed2a900422b51b0639762e5138fe4926bc9e391ad3d61edf69",
+    "v3/plan.v1.json": "01f402354f8f4f8c431930a08f687db10b3c501d0fa924b772e5ec092ba2959f",
+    "v3/derivations/07_paid_reasoning.md": "36510fbc71d175c6df069689d65a2d464b43210c086ebe4b270ffe2bfafd9be3",
+    "v3/work_logs/P3_07_2026-10-09_S1.md": "1670a641a9bd87a64f9b7f61232339759e7a9f36ecd2f640c6af378b9cea8045",
+    "README.md": "e19ada77c57911d2cc5d6fee8c5189ff1836aaa1cf0c8108d58559cb42cdb948",
+    "v2/time_ledger.csv": "5c71a4727f1cb7e03565f1c495b0c63b351863583120f0ec5684aca48bd122c6",
+    "v3/RESEARCH_PROTOCOL.md": "ef57593ce23cbe06b1683fc3609526f700b6ab5c395befacbbcd01bd48f3aa52",
+    "v2/RESEARCH_PROTOCOL.md": "f904961f8e52a89a443813b90b324daf2e45f993d7da40945a4ae94e22aed5b5"
+  },
+  "output_scope": "Only the two new P3-07 reviews/boundary_accounting_review.json and .md files were created by this reviewer."
+}

@@ -1,0 +1,204 @@
+{
+  "saved_evidence": [
+    {
+      "name": "capped_root_eight_bits",
+      "rows": 32,
+      "status": "PASS",
+      "all_in_cost": "15969017/25000",
+      "always_buy_fee": "368",
+      "root_cap_misses": 26,
+      "note": "Exact recomputation from stored records; no solver rerun."
+    },
+    {
+      "name": "full_root_eight_bits",
+      "rows": 32,
+      "status": "PASS",
+      "all_in_cost": "32020931/50000",
+      "always_buy_fee": "368",
+      "root_cap_misses": 0,
+      "note": "Exact recomputation from stored records; no solver rerun."
+    },
+    {
+      "name": "full_root_one_bit",
+      "rows": 32,
+      "status": "PASS",
+      "all_in_cost": "32100707/50000",
+      "always_buy_fee": "368",
+      "root_cap_misses": 0,
+      "note": "Exact recomputation from stored records; no solver rerun."
+    }
+  ],
+  "additional_saved_checks": {
+    "status": "PASS",
+    "cases": [
+      {
+        "name": "capped_root_eight_bits",
+        "rows": 32,
+        "status": "PASS",
+        "v1_query_positions_changed": 32,
+        "new_seed_streams_reconstructed": true,
+        "projection_kkt_dyadic_transport_and_row_bounds": "PASS",
+        "separate_fair_bit_and_lookup_charges": "PASS"
+      },
+      {
+        "name": "full_root_eight_bits",
+        "rows": 32,
+        "status": "PASS",
+        "v1_query_positions_changed": 32,
+        "new_seed_streams_reconstructed": true,
+        "projection_kkt_dyadic_transport_and_row_bounds": "PASS",
+        "separate_fair_bit_and_lookup_charges": "PASS"
+      },
+      {
+        "name": "full_root_one_bit",
+        "rows": 32,
+        "status": "PASS",
+        "v1_query_positions_changed": 32,
+        "new_seed_streams_reconstructed": true,
+        "projection_kkt_dyadic_transport_and_row_bounds": "PASS",
+        "separate_fair_bit_and_lookup_charges": "PASS"
+      }
+    ],
+    "plan_disposition": "Inherited v1 metadata remains visible; appended v2 revision/seeds and prospective actual run manifest identify v2. Clarification preserves original plan bytes.",
+    "manifest_source_hashes": {
+      "07_computation_adapter.py": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615",
+      "07_multi_action_forecasting.py": "9605a0fa3483358bd6f0f98770b154888cbc37a37c4a746bfbf3e9f3f62453a7",
+      "07_multi_action_development.py": "cb5e191150905d9c1615277ab7b5dac0811e8646d2a76924499226dfa0fd7291"
+    }
+  },
+  "numeric_cap_transaction": {
+    "status": "PASS",
+    "rejected_round": 16,
+    "error_type": "Rejected",
+    "error": "Bounded rational primitive component cap exceeded.",
+    "semantic_state_unchanged": true,
+    "retained_state_export_succeeds": true,
+    "paid_failed_settlement_units": 312,
+    "before": {
+      "settled": 15,
+      "pending": true,
+      "used_count": 16,
+      "work": {
+        "limit": 2000000,
+        "total": 16488,
+        "counts": {
+          "issue_validation_and_identity_words": 1056,
+          "lipschitz_bound_arithmetic": 1408,
+          "feature_arithmetic_read_write": 4416,
+          "projection_arithmetic_sort_read_write": 1920,
+          "score_arithmetic_read_write": 2304,
+          "allowance_and_immutable_issue_write": 704,
+          "settlement_update_and_bound_checks": 4680
+        },
+        "peak_component_bits": 8192
+      },
+      "variance_bits": 8188,
+      "allowance_bits": 8192,
+      "bound_bits": 8192
+    },
+    "after": {
+      "settled": 15,
+      "pending": true,
+      "used_count": 16,
+      "work": {
+        "limit": 2000000,
+        "total": 16800,
+        "counts": {
+          "issue_validation_and_identity_words": 1056,
+          "lipschitz_bound_arithmetic": 1408,
+          "feature_arithmetic_read_write": 4416,
+          "projection_arithmetic_sort_read_write": 1920,
+          "score_arithmetic_read_write": 2304,
+          "allowance_and_immutable_issue_write": 704,
+          "settlement_update_and_bound_checks": 4992
+        },
+        "peak_component_bits": 8192
+      },
+      "variance_bits": 8188,
+      "allowance_bits": 8192,
+      "bound_bits": 8192
+    },
+    "fixture_scope": "16 synthetic binary unit settlements; no real truth computation."
+  },
+  "lookup_admission": {
+    "status": "PASS",
+    "invalid_bit_checks": [
+      {
+        "bits_repr": "-1",
+        "outcome": "Rejected",
+        "paid_units": 0
+      },
+      {
+        "bits_repr": "33",
+        "outcome": "Rejected",
+        "paid_units": 0
+      },
+      {
+        "bits_repr": "True",
+        "outcome": "Rejected",
+        "paid_units": 0
+      },
+      {
+        "bits_repr": "Fraction(8, 1)",
+        "outcome": "Rejected",
+        "paid_units": 0
+      },
+      {
+        "bits_repr": "'8'",
+        "outcome": "Rejected",
+        "paid_units": 0
+      },
+      {
+        "bits_repr": "100000",
+        "outcome": "Rejected",
+        "paid_units": 0
+      }
+    ],
+    "invalid_action_counts_rejected_before_traversal": [
+      0,
+      1,
+      9
+    ],
+    "valid_boundary_bit_counts_checked": [
+      0,
+      8,
+      32
+    ],
+    "zero_budget_precedes_cell_validation": true,
+    "funded_invalid_cell_charged_units": 6,
+    "boundary": "Lookup consumes an admitted draw; its caller separately prepays fair bits."
+  },
+  "fair_bits_denial": {
+    "status": "PASS",
+    "denied_category": "fair_random_bits",
+    "events": [
+      "pay:fair_random_bits"
+    ],
+    "action_rng_draws": 0,
+    "rng_unchanged": true,
+    "paid_fair_bit_units": 0,
+    "paid_prefix_units": 1176,
+    "error": "No remaining budget for fair_random_bits",
+    "issued_records": 0,
+    "real_truth_computations": 0
+  },
+  "lookup_denial_after_paid_draw": {
+    "status": "PASS",
+    "denied_category": "cumulative_selection",
+    "events": [
+      "pay:fair_random_bits",
+      "getrandbits",
+      "pay:cumulative_selection"
+    ],
+    "action_rng_draws": 1,
+    "rng_unchanged": false,
+    "paid_fair_bit_units": 8,
+    "paid_prefix_units": 1185,
+    "error": "No remaining budget for cumulative_selection",
+    "issued_records": 0,
+    "real_truth_computations": 0
+  },
+  "data_class": "DEVELOPMENT",
+  "principal_credit_minutes": 0,
+  "status": "PASS"
+}

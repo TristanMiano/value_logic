@@ -1,0 +1,267 @@
+# Independent implementation review of the root P3-07 controller v1
+
+Contributor: ChatGPT (GPT-6 Astra Pro), implementation reviewer, 2026-10-09 UTC.
+An additional read-only subagent independently checked profile binding and
+immutability. All review work is development, unmeasured, and assigned zero
+principal Research90 credit. No controller, driver, prior evidence, clocks,
+ledger, plan, gate, or publication files were edited.
+
+## Disposition
+
+**The saved v1 data are internally consistent, but v1 does not yet support its
+full reusable-profile, complete-resource-accounting, and valid-input resource
+boundary claims.** The first full run's `PASS` should remain preserved as the
+driver's development result. The findings below require a new implementation
+version and new evidence before treating the complete paid procedure as
+validated. They do not show that the honest saved observations were fabricated
+or that the displayed small-rational v1 calculations are numerically wrong.
+
+The review used preserved sources, focused boundary examples, and independent
+reconciliation of existing rows. It did not rerun the full experiment or any
+broad prior P3-03/P3-05/P3-06 test suite.
+
+## Exact reviewed versions and evidence
+
+| Source | Reviewed SHA-256 |
+| --- | --- |
+| `07_paid_reasoning.py` | `d31d415c1c93e38235d6c0be008699e8ddc16a4a8906d57f6519dc349e1cb026` |
+| `07_paid_reasoning_development.py` | `2205d2a411cccb0bde7243ea689f4f1607efaf847978d2d70630e2d3aedf31fe` |
+| `07_computation_adapter.py` | `06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615` |
+
+All three exact sources are retained in
+`development/controller_review_agent/source_snapshot_v1`. The review manifest
+records their hashes and literal hashes of every top-level `development/run_v1`
+evidence file. Reproducible local diagnostics and their results are retained as
+`implementation_probes_v1.py`, `implementation_probe_results_v1.json`,
+`post_assessment_arithmetic_probe_v1.py`, and
+`post_assessment_arithmetic_probe_v1.json` in the same review directory.
+
+## What passed independent inspection
+
+The deployed catalogue is fixed, and each `run_policy` starts a new adapter
+with `cache_cap=0`. The policies receive the same initial half report, cache
+lookup, elementary shortcut, query input, and resource model. The full solver
+uses the efficient independently checked adapter. There is no mathematical
+answer in its progress object, and the driver obtains profiling labels from
+the acquired full-policy answer. Exact population means are not passed into
+`select`.
+
+The paired feature convention is baseline minus policy. For the actual
+default-budget catalogue, the analytic error/fallback/resource ranges have
+the correct signs: optional computation has nonpositive resource saving;
+non-guessing policies either acquire a correct answer or fall back; shared
+prefix forecast/cache charges cancel. The conservative component range uses
+the declared 1,024-unit policy cap.
+
+Independent reconciliation of existing evidence found:
+
+- All **1,024** profile rows lie in the analytic paired ranges.
+- Cumulative sums reproduce all four saved profiles exactly, at **128, 256,
+  512, and 1,024** rows.
+- All **256** own-audit paired rows equal the saved baseline-minus-controller
+  feature differences, lie in their declared audit ranges, and reproduce the
+  frozen audit-profile sums exactly.
+- The four actual radius constructions satisfy both integer-checkable
+  inequalities. With 22 nonconstant cells, four fixed checkpoints, and
+  `delta=1/20`, the code obtains `k=12` and upward-rounded dyadic radii.
+
+The radius and prefix-union arithmetic checked here matches the stated fixed
+checkpoint design. This is conditional on independence of complete episode
+vectors under the intended sampling model. The seeded development trace is
+correctly distinguished from a literal probabilistic demonstration of IID
+sampling.
+
+The own-audit closure fixes the existing profile, all three source hashes,
+price vector, selected policy, batch size, seed, episode count, and reset
+contract before the first audit row. Each audit episode performs and charges
+a fresh selection, then pairs its query batch with the baseline and charged
+exact policy. This audits a controller with a **fixed already acquired
+profile** and fresh cold query execution. It does not audit rebuilding that
+profile from scratch inside every episode; the saved boundary text recognizes
+this warm-profile/cold-query distinction.
+
+## 1. Profile identities are not actually restricted to immutable bounded strings
+
+`Profile.__post_init__` checks the feature-name tuple's length and uniqueness,
+but not the exact type or length of its elements. A focused probe supplied a
+mutable hashable object that compares equal to `"false_positive"`. Both
+`Profile` and the modular selector accepted it. Changing that object's string
+representation after freezing changed the returned `profile_id`, while the
+assessment meter stayed identical. A one-million-character feature string was
+also accepted by `Profile`.
+
+This violates the advertised immutable bounded profile identity boundary. It
+also defeats any simple byte/word bound on full-profile serialization.
+
+**Repair:** validate exact capped strings for every feature identity before
+calling `set`, hashing, or comparing the names. Exact capped ASCII is a simple
+consistent choice. Apply the same validation-order discipline to policy names
+and checkpoint values: v1 hashes names and sorts/hashes checkpoints before
+their scalar types and ranges have been checked. The correctly typed tuple
+matrices, integer sums, and copied builder sum rows otherwise remain immutable
+through ordinary API use.
+
+## 2. The modular selector accepts a range matrix inconsistent with its policy catalogue
+
+`select` checks expected scope, policy names, and feature names, but it does
+not compare the profile's ranges with
+`tuple(paired_ranges(p) for p in CATALOGUE)`. A same-scope profile with all-zero
+ranges except the `guess1` fallback range `(1,1)` passes construction and is
+accepted. At the high price vector it returns `guess1`, lower saving **20**,
+and a positive continuation flag.
+
+The constructed matrix is not a valid range certificate for the actual
+`guess1` policy. This is an interface validation gap, not evidence that the
+saved honest profile was manufactured. Correct sampling alone cannot repair a
+receiving interface that permits the declared policy's analytic range to be
+replaced without changing its expected scope.
+
+**Repair:** bind and validate the exact analytic range matrix in the modular
+selector, as well as its catalogue and feature ordering. The more general
+profile-interval routine may still support separately justified range
+contracts for the own-audit profile.
+
+## 3. The reusable scope omits the implemented query generator
+
+Driver `actual_scope` includes the controller and adapter source hashes but
+discards the driver source hash. The driver owns `PRIMES`, `POPULATION`,
+`query()`, and the sampling construction. Changing only its supplied hash
+leaves `actual_scope` unchanged, so a changed generator implementation that
+retains the same `LAW` label can reuse the old profile scope.
+
+**Repair:** bind a bounded driver/generator definition digest in the expected
+scope. The self-audit closure already includes all three hashes; this finding
+concerns the reusable acquired profile. A descriptive law version remains
+useful, but it is not a substitute for the actual generator binding.
+
+## 4. Profile construction, validation, and identity work are incompletely charged
+
+Several concrete paths execute work outside their meter:
+
+- `ProfileBuilder.freeze()` has no meter argument. It copies the sum matrix
+  into immutable tuples and performs full `Profile` validation without a
+  charge. The driver calculates the stored setup vector **before** calling
+  `freeze`, so that construction and retention are absent from setup.
+- `ProfileBuilder.add()` validates every cell before funding its bundle. With
+  `Meter(0)`, a valid row reaches `BudgetExhausted`, while a bad final cell
+  reaches `Rejected`; both report zero spent units. The full row validation
+  therefore occurred without budget. The builder constructor also lacks the
+  final profile's dimension/type/cap admission checks before allocation.
+- `select()` obtains `profile.identity` after `meter.snapshot()`. That property
+  serializes and hashes the complete profile on every return, including the
+  cheap gross-value-screen branch. Its docstring says construction/reading
+  are separately charged, but this path has no such charge.
+
+**Repair:** fund bounded construction, validation, copying, retained identity,
+and subsequent identity reads at their actual stage; compute the setup vector
+after the corresponding payments. Structural rejection should remain bounded
+and precede unbounded hashing/allocation, while full admitted-cell work must
+be funded before execution. If any identity serialization is intentionally
+output-only harness instrumentation, state that exclusion precisely and do
+not use it as free policy-side identity or assessment work.
+
+## 5. Final assessment arithmetic is outside both accounting and the stated component cap
+
+After taking its meter snapshot, `select` computes the resource-price dot
+product, multiplies the selected lower score by the horizon, subtracts online
+and setup costs, and evaluates the final flags. These operations are not
+charged or passed through the same bounded-arithmetic checks as the score
+construction.
+
+A valid-input focused example uses the honest saved profile and high prices,
+with
+
+\[
+\text{setup\_to\_recover}=\frac{1}{2^{2048}-159}.
+\]
+
+The input satisfies the declared 2,048-bit component cap, yet the returned
+`all_in_lower_gain` has a **2,073-bit numerator and 2,069-bit denominator**.
+The assessment still reports 2,100 units. This does not invalidate the small
+numbers in `run_v1`; it invalidates the general advertised valid-input
+arithmetic/accounting boundary.
+
+**Repair:** include complete final readout and flag arithmetic in the paid
+response before its snapshot, using a sound operand/intermediate/result cap
+or conservative exact enclosure. Merely increasing a shared input cap does
+not in general close an addition/multiplication boundary at that same cap.
+
+The gross-value screen's mathematical direction is otherwise sound for the
+declared nonnegative-price catalogue: `H * fallback_price` bounds gross task
+saving, and the radius bundle is a still-unpaid mandatory assessment cost.
+Its lower cost bound can be weak, so it need not reject every unprofitable
+assessment. The screen does not excuse its own work, identity work, or final
+readout from payment.
+
+## 6. Assessment and terminal-output budget edges are inconsistent
+
+The initial 64-unit assessment preflight is outside `select`'s
+`BudgetExhausted` handler. Assessment limits **0, 1, and 63** therefore raise
+without returning the procedure's fallback result. Limits at least 64 reach
+the later exhaustion handler and return `assessment_budget_exhausted` with
+fallback. Either make the zero/insufficient-budget response complete or
+explicitly restrict and validate the admitted assessment-budget domain.
+
+`run_policy` reserves one terminal unit by using `Meter(limit-1)`, then adds
+the emission into the returned snapshot. Total spending is bounded correctly,
+but `category_limits` still reflects `limit-1`: at limit **1** or **2**, the
+reported forecast quantity exceeds its returned forecast category limit.
+At limit zero it returns `no_output_budget` while still including a half
+report in its record. That record must distinguish an unissued diagnostic
+constant from an issued paid forecast.
+
+**Repair:** make terminal and computational partitions explicit and return
+internally consistent total/category limits and issuance status. Fund or
+reserve the final response before optional assessment work, including budget
+failure paths.
+
+## 7. Timed-out jobs are silently discarded without the modeled release cost
+
+A focused observer of `run_policy` with `cap6_fallback` sees one active
+private job at return, status `transaction_timeout`, and zero cancellation or
+completed-job release units. The local adapter subsequently disappears with
+the function scope. This is an unpriced cold-reset/teardown path, whereas the
+adapter explicitly prices cancellation and completed-job release.
+
+**Repair:** provide a paid cleanup path and reserve its needed budget before
+starting optional work. If cleanup uses public `cancel()`, include its bounded
+handle-validation cost as well as the release unit. Alternatively define and
+price a justified local episode-finalization primitive consistently for all
+policies. This affects complete-policy resource observations and therefore
+requires newly acquired profiles after implementation changes.
+
+## 8. Standalone comparator and own-audit procurement have omitted startup work
+
+Sampled profiling pays for source-registry read/hash work and public-population
+construction/storage. `enumerate_population` starts its own resource totals
+without those startup charges. It therefore cannot be presented as a matched
+standalone cold procurement cost without adding them or explicitly assigning
+a common already-paid startup to both procedures.
+
+`self_audit` performs a preflight `select()` to determine the frozen selected
+policy before its procurement counters begin. That selection is never added
+to the audit procurement vector. Closure/profile identity work and audit
+profile freezing also have no explicit procurement charge. Later episode
+selections and policy rollouts are counted, which is the more substantial
+part of the deployment comparison, but the omitted setup still matters to
+the complete-procedure claim.
+
+The checked exact per-query comparator itself receives the same query, cold
+state, shortcuts, and efficient checker. The ordinary controller comparison
+uses exactly the same selector and inputs, so its equality is appropriate.
+The exhaustive reference `pow` call is correctly labeled a separate
+diagnostic primitive rather than a deployable computation tariff.
+
+## Required treatment of the next version
+
+Preserve `run_v1`, these exact source snapshots, and all focused counterexample
+evidence. The root's announced repairs address the identified interface and
+accounting gaps. Bind the changed implementation and generator, acquire new
+profiles with the repaired complete-policy charges, and freeze the next
+own-audit closure before its fresh audit data. The v1 own-audit data must not
+be presented as an independent test of changes selected after this review.
+
+The review does not change a gate or certify the next version in advance. It
+records that v1's mathematical data and radius calculations survived these
+checks while its complete paid execution and reusable evidence boundaries
+still needed repair.

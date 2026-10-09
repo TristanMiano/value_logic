@@ -1,0 +1,489 @@
+# P3-07 — reconstruction of a smooth multi-action paid decision bound
+
+Reviewer: **ChatGPT (GPT-6 Astra Pro), same-model internal subagent**.  
+Date: October 9, 2026 UTC. Research time is **unmeasured** and contributes
+**zero principal-clock credit**. All checks are **DEVELOPMENT**, with no final
+evaluation exposure. No main artifact, implementation, clock, ledger, plan,
+gate or publication was edited.
+
+**Independence scope.** The root supplied the candidate multi-action formula
+and later the proposed dyadic rounding formula. This note independently
+derives their validity, constants and boundaries from the completed
+[P3-06 continuous feature interface](../../../derivations/06_cost_forecast_refinement.md#2-the-continuous-scalar-construction).
+The root's multi-action manuscript/code was not inspected. This is nonblind
+same-model reconstruction of supplied candidate statements, not an external
+priority or novelty assessment. P3-06 itself is inherited, not reopened.
+
+## 1. Exact finite theorem and its hypotheses
+
+Fix `A>=1` action identities and positive scales `gamma_a` that remain fixed
+throughout the episode. Before receiving the current checked binary answer
+`y_t`, announce finite affine action rows
+
+```math
+c_{t,a}(p)=b_{t,a}+d_{t,a}p,
+```
+
+a nonnegative finite weight `w_t`, and a positive smoothing parameter
+`eta_t`. The rows and parameter may change predictably between rounds, but
+the action identities and coordinate meanings stay fixed. Every action
+assigned positive execution probability must be feasible within the current
+hard budget, including required checking and fallback reserves.
+
+Let the **ideal** action mixture be
+
+```math
+q_t(p)=\arg\min_{q\in\Delta_A}
+ \left[q\cdot c_t(p)+\frac{\eta_t}{2}\|q\|_2^2\right],
+\qquad
+\Delta_A=\{q\ge0:\sum_aq_a=1\}.
+```
+
+Write `dbar_t(p)=sum_a q_t,a(p)d_t,a`. Include these decision coordinates in
+the forecasting feature vector **before the run**:
+
+```math
+\Phi_{t,a}(p)=\gamma_a w_t[\bar d_t(p)-d_{t,a}].
+```
+
+Other already justified continuous coordinates may be included by direct
+sum. Assume the forecast and admitted-feedback process satisfies the
+inherited P3-06 potential inequality for this **enlarged** feature vector,
+with total residual vector `R_T` and `||R_T||^2<=B_T`. This must be the
+potential of the new procedure, not a certificate from an old run to which
+the new coordinates were attached retrospectively.
+
+For the issued mixture `q_t=q_t(p_t)`, define
+`cbar_t(y)=sum_b q_t,b c_t,b(y)`. Then, simultaneously for every fixed
+action identity `a`,
+
+```math
+\sum_{t\le T}w_t[\bar c_t(y_t)-c_{t,a}(y_t)]
+ \le\sum_{t\le T}w_t\eta_t\frac{A-1}{4A}
+       +\frac{\sqrt{B_T}}{\gamma_a}.
+```
+
+This is a bound on the ideal fractional mixture loss, including whatever
+task and action-execution costs the announced affine rows actually encode.
+It does not yet include forecast/selection overhead outside those rows, nor
+does it describe every sampled execution of the mixture. Feedback and those
+two extensions are handled separately below.
+
+## 2. Projection, first-order inequality and the sharp constant
+
+The objective is strictly convex because `eta>0`, so its minimizer is unique.
+Completing the square identifies it as the Euclidean projection of
+`-c/eta` onto the simplex. Equivalently, there is a threshold `tau` such that
+
+```math
+q_i=\max\{0,(\tau-c_i)/\eta\},\qquad \sum_iq_i=1.
+```
+
+For active coordinates, `c_i+eta q_i=tau`; for inactive coordinates,
+`c_i>=tau`. These conditions also give the first-order inequality against
+the simplex vertex `e_a`:
+
+```math
+(c+\eta q)\cdot(e_a-q)\ge0,
+\qquad
+q\cdot c-c_a\le\eta(q_a-\|q\|^2).
+```
+
+For `A>1`, put `x=q_a`. The other coordinates sum to `1-x`, so
+
+```math
+q_a-\|q\|^2
+ \le x-x^2-\frac{(1-x)^2}{A-1}
+ =\frac{A-1}{4A}
+   -\frac{A}{A-1}\left(x-\frac{A+1}{2A}\right)^2.
+```
+
+Therefore
+
+```math
+q\cdot c-c_a
+ \le\eta(q_a-\|q\|^2)
+ \le\eta\frac{A-1}{4A}.
+```
+
+For `A=1`, the gain and the stated constant are both zero.
+
+The constant is sharp. Take `c_a=0`, `c_b=eta/2` for all `b!=a`. The
+projection has
+
+```math
+q_a=\frac{A+1}{2A},\qquad q_b=\frac1{2A}\ (b\ne a),
+```
+
+and both inequalities are equalities. These may be constant loss rows with
+all slopes zero. Thus the smoothing gap can persist even when all action
+residuals vanish and the potential contributes zero. For `A=2`, the result
+reduces exactly to the completed P3-06 `eta/8` smoothing constant. This does
+not assert that every term in a later combined regret bound is jointly sharp.
+
+## 3. Continuity, exact rational evaluation and finite root work
+
+The simplex projection is continuous and nonexpansive. For completeness,
+apply its two first-order inequalities at inputs `u,v` to their projections
+`q,r` and add: `||q-r||^2 <= (q-r) dot (u-v)`. Cauchy then gives
+`||q-r||<=||u-v||`. Since `u(p)=-c(p)/eta` is affine, `q(p)` is continuous.
+
+For a support `S` of size `m`,
+
+```math
+\tau(p)=\frac{\eta+\sum_{i\in S}c_i(p)}m,
+\qquad q_i(p)=\frac{\tau(p)-c_i(p)}\eta\ (i\in S),
+```
+
+with zero elsewhere. Consequently `q(p)` is piecewise affine with rational
+coefficients for rational rows and `eta`. Its breakpoints are rational where
+nonconstant affine support inequalities become equalities. At a rational
+`p`, sorting the costs and finding the active threshold gives an exact
+rational answer. Tied costs do not make the minimizer ambiguous. Sorting,
+division, comparisons and bit growth still have costs; a finite arithmetic
+formula alone supplies no input-independent runtime bound.
+
+The mean slope has an especially useful derivative on each support piece:
+
+```math
+\bar d'(p)
+ =-\frac1\eta\sum_{i\in S}(d_i-\bar d_S)^2\le0,
+\qquad \bar d_S=\frac1{|S|}\sum_{i\in S}d_i.
+```
+
+If `D=max_i d_i-min_i d_i`, its magnitude is at most
+`A D^2/(4 eta)`. Continuity across pieces gives the same global Lipschitz
+bound. Each decision coordinate therefore has valid magnitude and
+Lipschitz bounds
+
+```math
+M_a=\gamma_a wD,\qquad
+L_a=\gamma_a w\frac{AD^2}{4\eta}.
+```
+
+The inherited score bound can use these values. In particular, continuous
+features make the P3-06 score continuous. Its endpoint rules remain valid:
+at `p=0`, `S(0)<=0` ensures `2(y-p)S(p)<=0` for either binary answer; at
+`p=1`, `S(1)>=0` does the same. Otherwise `S(0)>0>S(1)` gives a root by
+continuity. The endpoint mixture need not be a pure action. Rational
+sign-preserving bisection need not find an exactly rational root; a capped
+implementation records its actual nonnegative allowance as in P3-06.
+
+Smaller `eta` shrinks the smoothing term but increases these Lipschitz
+constants and potentially the charged root-search work. It does not by
+itself shrink all-in computational cost.
+
+### 3.1 A useful action-block magnitude bound
+
+For fixed positive scales, the action block satisfies the sharper bound
+
+```math
+\sum_a\gamma_a^2w^2(\bar d-d_a)^2
+ \le w^2D^2\left(\sum_a\gamma_a^2-\min_a\gamma_a^2\right).
+```
+
+To see this, hold the slopes fixed. The left side as a function of `dbar`
+is convex on `[min d,max d]`, so its maximum occurs at an endpoint. At that
+endpoint one action's difference is zero; all others have magnitude at most
+`D`. This yields the bound. It is sharp over slopes and mixtures by putting
+all mixture mass on an extreme-slope action with minimum scale and all other
+slopes at the opposite extreme. With common `gamma`, it becomes
+`(A-1)gamma^2 w^2 D^2`, reducing to the P3-06 two-action bound when `A=2`.
+
+The resulting variance contribution has another factor at most `1/4` from
+`p(1-p)`. Other feature blocks and actual numerical allowances still belong
+in `B_T`. A normalized sublinear conclusion needs both
+`sum w_t eta_t=o(sum w_t)` and `sqrt(B_T)=o(sum w_t)`; bounded dimensions
+alone establish neither condition under arbitrary stakes or allowances.
+
+## 4. The residual identity gives fixed-action regret
+
+Because the issued `q_t` is held fixed when comparing the two binary outcomes,
+
+```math
+\bar c_t(y_t)-c_{t,a}(y_t)
+ =\bar c_t(p_t)-c_{t,a}(p_t)
+  +(y_t-p_t)(\bar d_t(p_t)-d_{t,a}).
+```
+
+The residual coordinate is exactly
+
+```math
+R_{T,a}=\gamma_a\sum_{t\le T}
+ w_t(y_t-p_t)(\bar d_t(p_t)-d_{t,a}).
+```
+
+Summing the identity, applying the sharp smoothing inequality round by round,
+and using `R_T,a<=sqrt(B_T)` proves the theorem in §1. This imports the
+P3-06 potential guarantee rather than reproving that completed result.
+Varying `gamma_a` between rounds would break the displayed unweighted
+coordinate identity unless a new weighted comparison were explicitly derived.
+
+All fixed action identities are covered simultaneously. Thus the best fixed
+identity may be designated retrospectively. The result does not compare
+with an action selected using the outcome separately on each round, nor with
+every adaptive compute-then-act policy. With changing tables it is regret
+on the announced sequence of rows and contexts. If a counterfactual always-buy
+policy would produce different future caches, queries or information, that
+full policy comparison needs a separate trajectory/accounting contract.
+
+## 5. What BUY_EXACT actually assumes
+
+A valid specialization has guess-0 and guess-1 rows, a stated fallback row,
+and a BUY_EXACT action that, at a known charged cost `k_t`, is guaranteed to
+produce a checked resolution and then the prescribed correct action. With
+zero task loss for a correct action and an outcome-independent tariff,
+
+```math
+c_{t,\mathrm{BUY}}(p)=k_t,
+```
+
+so its slope is zero. Any checking, acquisition and completion charges needed
+to make this guarantee true belong in `k_t`. With known outcome-dependent
+terminal losses, the two known endpoint totals can instead give an affine
+row. The guarantee is structural; it does not require a free uncertain
+success-probability oracle.
+
+An unknown partial-success computation generally has additional outcomes,
+failure costs and dependence on the current baseline's errors. Those cannot
+be inferred from the scalar truth forecast alone. Known conditional expected
+costs could support a further expected-cost construction, but their
+identification, uncertainty and actual-execution noise would be additional
+premises. The present pathwise binary-row theorem does not supply them.
+
+A known upper bound on solver cost is also different from an actual flat
+tariff. Replacing an action's actual cost by its upper bound can give a sound
+surrogate loss but change the comparator. For example, constant action rows
+`(2,10)` with `eta=1` select the first action purely, while actual costs
+`(2,1)` make its regret to BUY equal to one. The surrogate smoothing bound
+is `1/8` with zero slope residual. It cannot be claimed as an actual-cost
+regret bound against the cheaper real buyer without adding the discrepancy.
+
+All charged work outside action rows remains outside the theorem until it
+is added explicitly: feature construction, forecasting, projection,
+root search, model/profile acquisition, input admission, storage, rounding,
+random bits, final selection and verification. For an all-in comparator `a`,
+add the controller's corresponding overhead minus that comparator's overhead.
+If that difference grows linearly, a sublinear action-row regret statement
+does not imply sublinear all-in regret. The same hard resource constraints
+apply even when a monetary price is zero.
+
+## 6. Deterministic answers and missing feedback
+
+The inherited potential result needs no IID truth law or accurate expert.
+It applies to arbitrary deterministic mathematical answers once the correct
+version-matched labels are actually admitted through the required feedback
+process. It does not let the learner update on an unresolved answer.
+
+If every query receives admitted full feedback before the next forecast,
+the single-copy theorem applies directly. With delayed labels, the inherited
+idle-copy wrapper gives a bound over settled subsequences with the copy sum
+`sum_k sqrt(B_k)` in place of `sqrt(B_T)`. Its actual copy and pending-label
+costs remain relevant. Action-dependent resolution is not automatically a
+full-feedback learning protocol.
+
+For a concrete boundary, use guess rows `(p,1-p)`, fallback `1/10`, BUY
+`1/5`, and `eta=1/20`. Every fresh zero-state action-feature forecaster issues
+`p=1/2` and chooses fallback purely. If only buying supplies feedback, all
+these queries remain unresolved. On eight evaluator-later queries whose
+answers are all one, total task loss is `4/5` and fixed guess-1 loses zero.
+The settled potential has no observations and says nothing about that
+whole-cohort regret. Improperly attaching the all-issued smoothing term to
+zero settled potential would give only `3/40`, contradicting the actual
+`4/5`. This is a feedback-scope witness, not a hardness claim about a query
+generator or a failure of the properly scoped P3-06 theorem.
+
+Resolving all previously unbought queries for training can restore a feedback
+premise, but that computation and checking must be paid. Permanent censoring
+instead leaves an explicitly limited settled-population statement. A bandit
+or importance-weighted update would require a separate theorem; it is not
+obtained by hiding the missing rows.
+
+## 7. Bounded dyadic rounding: exact total-variation constant
+
+An exact rational ideal mixture is not automatically executable with a finite
+worst-case fair-bit budget. For example, three equal costs give probability
+`1/3` to each action. Every output probability of a sampler using at most `b`
+fair bits is an integer multiple of `2^{-b}`, so this mixture cannot be
+sampled exactly by that primitive at any finite worst-case cap. A separately
+declared finite categorical primitive is another possible contract.
+
+To use exactly `b` fair bits, put `D=2^b` and round the **execution mixture**.
+Let
+
+```math
+n_i=\lfloor Dq_i\rfloor,\quad f_i=Dq_i-n_i,\quad
+R=D-\sum_i n_i=\sum_i f_i.
+```
+
+`R` is an integer with `0<=R<=min(A-1,D)`. Increment the `R` largest
+fractional parts, with a fixed tie rule, and divide the resulting counts by
+`D` to obtain `nu`. Then
+
+```math
+\operatorname{TV}(\nu,q)
+ =\frac{R-\sum_{i\in\operatorname{Top}_R}f_i}{D}
+ \le\frac{R(A-R)}{AD}.
+```
+
+The identity sums positive rounding errors. The inequality uses that the
+average of the `R` largest fractions is at least their common overall
+average `R/A`. Equality holds when all fractions equal `R/A`.
+
+The root's proposed universal bound is therefore valid:
+
+```math
+\operatorname{TV}(\nu,q)\le\frac{\lfloor A^2/4\rfloor}{AD}.
+```
+
+There is a sharpness qualification at small `D`. The exact worst case for
+fixed `A,D` is
+
+```math
+\kappa(A,D)=\max_{0\le R\le\min(A-1,D)}\frac{R(A-R)}{AD}
+ =\frac{r_*(A-r_*)}{AD},\qquad
+r_*=\min(D,\lfloor A/2\rfloor).
+```
+
+It equals the proposed constant when `D>=floor(A/2)`; otherwise it equals
+`1-D/A`. Every feasible `R` attains its stated bound: choose nonnegative
+integer floors summing to `D-R` and set all fractional parts to `R/A`.
+For example, `A=4,D=1` has exact worst-case TV `3/4`, while the more general
+formula gives the valid but unattainable bound one.
+
+Sampling a uniform integer in `[0,D-1]` with exactly `b` fair bits and using
+the cumulative integer counts implements `nu` exactly. Count the rounding,
+sorting, bit acquisition and selection work. A zero-bit grid `D=1` simply
+executes its deterministic rounded action.
+
+### 7.1 Keep the continuous ideal mixture in the forecasting features
+
+The rounded map generally jumps at rounding boundaries. It must not silently
+replace `q` inside the continuous-feature argument. A concrete score witness
+uses two rows `c_0(p)=p`, `c_1(p)=1-p`, `eta=1/2`, `D=1` and residual
+`R=(1,1)`, with unit scales and weight. Rounding chooses action 0 for
+`p<=1/2` and action 1 above it. The rounded-feature score is
+
+```math
+S(p)=\begin{cases}4-4p,&p\le1/2,\\-4p,&p>1/2.\end{cases}
+```
+
+Thus `S(0)>0>S(1)` but no root exists: the score jumps from two to minus
+two. The algebraic allowance formula can still record the resulting error,
+but the intermediate-value and arbitrarily small root-tolerance argument
+does not apply. Retaining ideal `q` in the features avoids this problem.
+
+For any actual binary outcome, let `Cbar_t` bound the action cost range
+`max_a c_t,a(y)-min_a c_t,a(y)`. The standard zero-sum difference calculation
+gives
+
+```math
+\nu_t\cdot c_t(y)-q_t\cdot c_t(y)
+ \le\bar C_t\operatorname{TV}(\nu_t,q_t)
+ \le\bar C_t\kappa(A,D_t).
+```
+
+Therefore executing the rounded mixture adds at most
+`sum_t w_t Cbar_t kappa(A,D_t)` to the ideal mixed-loss bound. This deterministic
+allowance is separate from both smoothing and random sampling noise.
+
+## 8. Actual sampled actions and the selected-feedback trap
+
+Suppose the current action sample has conditional distribution `nu_t`, with
+fresh fair bits independent of the current mathematical answer and other
+current outcome-generating mechanisms. Prices, rows, weights, the mixture,
+and the query are fixed before this current sample. Define
+
+```math
+Z_t=w_t[c_{t,A_t}(y_t)-\nu_t\cdot c_t(y_t)].
+```
+
+Then `E[Z_t | the pre-sample history]=0`, using the fixed/nonanticipating
+mathematical outcome. If deterministic announced caps `r_t` satisfy
+`w_t Cbar_t<=r_t` on every allowed history, bounded conditional exponential
+moments give, at a fixed finite horizon, with probability at least `1-delta`,
+
+```math
+\sum_t Z_t\le
+ \sqrt{\frac12\log(1/\delta)\sum_t r_t^2}.
+```
+
+This follows by multiplying the conditional bounds
+`E[exp(s Z_t)|past]<=exp(s^2 r_t^2/8)` and minimizing the resulting
+exponential tail. An arbitrary realized random variance sum cannot simply
+replace the deterministic cap without a justified self-normalized result.
+
+On a horizon for which the potential statement applies, every fixed action
+simultaneously satisfies the realized sampled-cost bound
+
+```math
+\sum_t w_t[c_{t,A_t}(y_t)-c_{t,a}(y_t)]
+ \le\sum_t w_t\eta_t\frac{A-1}{4A}
+   +\frac{\sqrt{B_T}}{\gamma_a}
+   +\sum_t w_t\bar C_t\kappa(A,D_t)
+   +\sqrt{\frac12\log(1/\delta)\sum_t r_t^2}.
+```
+
+Add any all-in overhead difference described in §5. There is no additional
+union bound over action identities: the sampling-noise sum is the same for
+every comparator. The pathwise mixed bound is applied to the actual issued
+trace, while the final term controls its common random-action deviation.
+
+**Critical selected-feedback caveat.** If the analyzed subset consists only
+of observations settled by the sampled action, its sampling noise is not
+generally centered. Take constant costs fallback `0`, BUY `1`, and `eta=2`.
+The ideal and exact dyadic mixture is `(3/4,1/4)`, with mean cost `1/4`.
+Suppose only BUY produces an admitted label. On every settled row the actual
+cost is one, so its sampling difference is `3/4`. Per issued row,
+
+```math
+E[Z_t]=0,\qquad
+E[1\{\text{settled}\}Z_t]=\frac14\frac34=\frac3{16}>0.
+```
+
+The settled-only sum is therefore not the martingale sum above. This remains
+true even though the current random bits are independent of mathematical
+truth. Valid options include a full issued horizon with the required actual
+feedback guarantee, an exogenously/predictably selected scoring cohort under
+proved conditions, or a separate selection correction. The inherited
+settled-subsequence potential by itself does not fix this extra sampling
+selection problem.
+
+## 9. Exact checks and disposition
+
+The [prospective plan](proof_agent/multi_action_plan.json),
+[check script](proof_agent/multi_action_checks.py), and
+[saved results](proof_agent/multi_action_checks_result.json) preserve this
+development attempt. The script imports no root code or P3-06 implementation.
+It verifies the new feature application and finite witnesses using exact
+rational/integer arithmetic.
+
+- **4,923** comparator checks over small cost grids verify the first-order
+  and smoothing inequalities; sharp fixtures cover `A=1,...,8`.
+- **99** rational points across three action tables check the stated feature
+  magnitude, monotonic mean slope and Lipschitz bounds. The written arguments
+  establish the general continuous statements.
+- A **24-round** rational action-feature trace verifies the residual identity,
+  enlarged potential and each fixed-action bound. It exercises both endpoint
+  choices, an exact interior root and nonzero interior allowances.
+- **9,520** rational-simplex/grid checks verify dyadic TV bounds. Separate
+  exact equality cases and enumeration of every bounded sampler integer
+  verify sharpness and the claimed categorical probabilities.
+- Exact boundary calculations preserve non-dyadic sampling, action-selected
+  feedback noise, missing-label whole-cohort overclaim, and cost-upper-bound
+  versus actual-tariff failures.
+
+All checks report **PASS**. They are finite mathematical diagnostics, not an
+implemented deployment comparison, a proof of every arithmetic operation's
+physical cost, or a reexecution of completed P3-06 work.
+
+**Surviving extension:** the supplied multi-action sharp constant and direct
+decision-feature regret theorem are sound; the bounded dyadic sampler is
+sound with the refined small-grid sharpness statement and an additional
+cost allowance; the actual sampled-action bound is sound on its correctly
+specified full/predictable cohort. The guaranteed known-cost solver is a
+legitimate affine action under its explicit execution contract. Uncertain
+computation success, action-selected missing feedback, full policy-history
+comparisons and all-in forecast overhead retain the boundaries above. An
+ordinary defensive-forecasting/controller combination can implement the same
+construction; no exclusive classical advantage or priority claim is made.

@@ -1,0 +1,155 @@
+{
+  "saved_evidence": [
+    {
+      "name": "capped_root_eight_bits",
+      "rows": 32,
+      "status": "PASS",
+      "all_in_cost": "1729334/3125",
+      "always_buy_fee": "368",
+      "root_cap_misses": 31,
+      "note": "Exact recomputation from stored records; no solver rerun."
+    },
+    {
+      "name": "full_root_eight_bits",
+      "rows": 32,
+      "status": "PASS",
+      "all_in_cost": "13869277/25000",
+      "always_buy_fee": "368",
+      "root_cap_misses": 0,
+      "note": "Exact recomputation from stored records; no solver rerun."
+    },
+    {
+      "name": "full_root_one_bit",
+      "rows": 32,
+      "status": "PASS",
+      "all_in_cost": "2777833/5000",
+      "always_buy_fee": "368",
+      "root_cap_misses": 0,
+      "note": "Exact recomputation from stored records; no solver rerun."
+    }
+  ],
+  "operation_caps": {
+    "zero_budget_issue_error": "Exhausted",
+    "zero_budget_state": {
+      "settled": 0,
+      "pending": false,
+      "used_count": 0,
+      "work": {
+        "limit": 0,
+        "total": 0,
+        "counts": {},
+        "peak_component_bits": 0
+      },
+      "variance_bits": 1,
+      "allowance_bits": 1,
+      "bound_bits": 1
+    },
+    "exact_issue_budget": 625,
+    "unfunded_settlement_error": "Exhausted",
+    "unfunded_settlement_unchanged": true,
+    "state": {
+      "settled": 0,
+      "pending": true,
+      "used_count": 1,
+      "work": {
+        "limit": 625,
+        "total": 625,
+        "counts": {
+          "issue_validation_and_identity_words": 65,
+          "lipschitz_bound_arithmetic": 72,
+          "feature_arithmetic_read_write": 216,
+          "projection_arithmetic_sort_read_write": 120,
+          "score_arithmetic_read_write": 114,
+          "allowance_and_immutable_issue_write": 38
+        },
+        "peak_component_bits": 13
+      },
+      "variance_bits": 1,
+      "allowance_bits": 1,
+      "bound_bits": 1
+    },
+    "boundary": "Pending forecast remains; there is no cancellation/fallback controller in this component."
+  },
+  "numeric_cap_commit": {
+    "failure_observed": true,
+    "failure": {
+      "round": 16,
+      "error_type": "Rejected",
+      "error": "Bounded rational primitive component cap exceeded.",
+      "before": {
+        "settled": 15,
+        "pending": true,
+        "used_count": 16,
+        "work": {
+          "limit": 2000000,
+          "total": 16488,
+          "counts": {
+            "issue_validation_and_identity_words": 1056,
+            "lipschitz_bound_arithmetic": 1408,
+            "feature_arithmetic_read_write": 4416,
+            "projection_arithmetic_sort_read_write": 1920,
+            "score_arithmetic_read_write": 2304,
+            "allowance_and_immutable_issue_write": 704,
+            "settlement_update_and_bound_checks": 4680
+          },
+          "peak_component_bits": 8192
+        },
+        "variance_bits": 8188,
+        "allowance_bits": 8192,
+        "bound_bits": 8192
+      },
+      "after": {
+        "settled": 16,
+        "pending": false,
+        "used_count": 16,
+        "work": {
+          "limit": 2000000,
+          "total": 16800,
+          "counts": {
+            "issue_validation_and_identity_words": 1056,
+            "lipschitz_bound_arithmetic": 1408,
+            "feature_arithmetic_read_write": 4416,
+            "projection_arithmetic_sort_read_write": 1920,
+            "score_arithmetic_read_write": 2304,
+            "allowance_and_immutable_issue_write": 704,
+            "settlement_update_and_bound_checks": 4992
+          },
+          "peak_component_bits": 8192
+        },
+        "variance_bits": 8189,
+        "allowance_bits": 8192,
+        "bound_bits": 8193
+      }
+    },
+    "committed_despite_exception": true,
+    "input_weight_bits": 4094,
+    "configured_component_cap": 8192
+  },
+  "sampling_caps": {
+    "choose_slots_accepts_33_bits": true,
+    "accepted_33_bit_work": {
+      "limit": 100,
+      "total": 39,
+      "counts": {
+        "fair_bits_and_cumulative_selection": 39
+      },
+      "peak_component_bits": 0
+    },
+    "draw_before_denied_charge": {
+      "error": "Exhausted",
+      "rng_state_already_changed": true,
+      "charged_units": 0
+    },
+    "scope": "The three-line draw/choose order reproduces the frozen harness order. No large allocation used."
+  },
+  "emission_order": {
+    "issued_file_readable_before_service": true,
+    "rows": 1,
+    "record_has_label": false,
+    "chosen_role": 3,
+    "service_calls_intercepted": 1,
+    "real_truth_computations": 0
+  },
+  "data_class": "DEVELOPMENT",
+  "principal_credit_minutes": 0
+}
