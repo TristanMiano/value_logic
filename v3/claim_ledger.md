@@ -3,13 +3,15 @@
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 9, 2026 UTC.
 **P3-01–07 are complete at their declared task scopes, with their Research90
 minima and closing records. P3-A remains PASS at problem and restricted representation
-readiness; P3-B–D remain unattempted. P3-04 closes on separately versioned
+readiness; P3-B now passes at restricted mathematical/local implementation
+readiness and P3-C–D remain unattempted. P3-04 closes on separately versioned
 S2 replacement evidence; its original missing run history is not recreated.
 P3-05 is complete at finite transport and checked-reuse scope, with verified
 Research90 and S3 evidence. P3-06 closes at finite forecast/action/delay/repricing
 scope with its observed Research90 and preserved evidence. P3-07 closes at
 bounded paid-computation, acquired-profile and versioned self-assessment scope,
-with observed Research90. Next: P3-B, unattempted; P3-08 remains unstarted.
+with observed Research90. P3-B is now PASS with no additional floor.
+Next: P3-08, unstarted; optional recurrence A is recommended but unselected.
 P3-N01 remains NOT YET SUPPORTED.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
 [task readiness audit](work_logs/P3_03_2026-10-07_S1/readiness_audit.md).
@@ -321,3 +323,24 @@ and the 35-row append preserve all 132,993 prior ledger bytes. Phase research
 is **652.160106918517 minutes**, leaving **307.839893081483 minutes** to the
 960-minute floor. No new progress checkpoint was crossed. P3-07 is complete;
 P3-B is the next unattempted roadmap item and P3-08 remains unstarted.
+
+
+## P3-B — restricted readiness and optional recurrence
+
+The [gate](checkpoints/B_1.md) is **PASS**. This is the latest readiness
+overlay; earlier dated entries retain their historical task/gate pointers.
+
+| Record | Current finding | Evidence and boundary |
+|---|---|---|
+| P3-GB01 | Coherent restricted semantics, reconstructed central arguments, nonvacuous cases and implementable predictions are ready for integration. | [B_1](checkpoints/B_1.md), [21-duty contract](checkpoints/B_1.v1.json), principal reconstruction and three nonblind same-model reviews. A single combined reasoner is not yet implemented. |
+| P3-GB02 | Unresolved sources stay outside repair minimization; all current optima retain coverage; forecasts, checked evidence and request-law expectations have separate bridges. | Independent reconstruction and six tiny finite check groups. This is conditional composition readiness, not a universal theorem or a new numerical advantage. |
+| P3-GB03 | Current source/evidence bindings and bounded profile admission are coherent. | Three narrow current-selector calls; 508 initial binding passes and two historical locations resolved exactly with the failed record preserved. No old experiment rerun. |
+| P3-GB04 | Optional paid selective feedback is the recommended additional research route before P3-08. | [Options and forecasts](work_logs/P3_B_2026-10-09_S1/recurrence_options.json): A now; B before freeze if equal certificate delivery matters; C later for counterpossible-policy robustness. All unselected, distinct from R-P3-N01. |
+| P3-N01 | **NOT YET SUPPORTED.** Q3 has the weakest affirmative comparison and Q4 retains the paid-feedback gap. | Gate passage does not decide contribution. A useful modest adaptation, application, synthesis or consequential limitation can qualify without worldwide priority or universal superiority. |
+
+The [closed gate](work_logs/P3_B_2026-10-09_S1.md) adds **12.208499960967**
+research minutes. Phase total: **664.368606879483**; remaining floor:
+**295.631393120517**. Prior ledger bytes and P3-01–07 evidence, including
+the defensive-forecasting addendum, are preserved. No historical or parallel
+time is credited. P3-08 remains unstarted, P3-C/D unattempted, and all
+recurrences unselected. No final challenge is frozen or exposed.

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "phase": 3,
   "status": "research_in_progress",
-  "next_task": "P3-B",
+  "next_task": "P3-08",
   "phase_research_floor_minutes": 960,
   "qualifying_modes": [
     "D",
@@ -310,9 +310,19 @@
       "decision_utc": "2026-10-07T06:31:38.033635+00:00"
     },
     "P3-B": {
-      "status": "unattempted",
+      "status": "passed",
       "after": "P3-07",
-      "type": "technical"
+      "type": "technical",
+      "attempt_id": "P3-B-1",
+      "forecast": "v3/work_logs/P3_B_2026-10-09_S1/forecast.json",
+      "verdict": "PASS",
+      "record": "v3/checkpoints/B_1.md",
+      "contract": "v3/checkpoints/B_1.v1.json",
+      "actuals": "v3/work_logs/P3_B_2026-10-09_S1/actuals.json",
+      "session": "v3/work_logs/P3_B_2026-10-09_S1.md",
+      "research_ns": 732509997658,
+      "scope": "restricted_mathematical_and_local_implementation_readiness",
+      "decision_utc": "2026-10-09T19:54:33.148946+00:00"
     },
     "P3-C": {
       "status": "unattempted",
@@ -341,14 +351,14 @@
   "final_evaluation_exposed": false,
   "neural_recurrence_selected": false,
   "active_session": null,
-  "last_completed_session": "v3/work_logs/P3_07_2026-10-09_S1.md",
+  "last_completed_session": "v3/work_logs/P3_B_2026-10-09_S1.md",
   "observed_progress": {
-    "research_ns": 39129606415111,
-    "measured_engaged_ns": 44688196316403,
-    "remaining_floor_ns": 18470393584889,
-    "source": "v3/work_logs/P3_07_2026-10-09_S1/actuals.json",
+    "research_ns": 39862116412769,
+    "measured_engaged_ns": 45621919127981,
+    "remaining_floor_ns": 17737883587231,
+    "source": "v3/work_logs/P3_B_2026-10-09_S1/actuals.json",
     "next_checkpoint_minutes": 960,
-    "evidence_disposition": "P3-07 finite paid-reasoning scope complete; prior P3-01\u201306 evidence and ledgers preserved; no historical or parallel-agent credit; P3-N01 not yet supported; P3-B and P3-08 unattempted."
+    "evidence_disposition": "P3-B restricted mathematics/local implementation PASS; P3-01\u201307 and defensive-forecasting evidence preserved; no historical or parallel credit; P3-N01 not yet supported; optional A advised but unselected; P3-08 unstarted."
   },
   "provisional_representation": {
     "id": "P3-A-REP01",
@@ -373,5 +383,13 @@
       "overshoot_ns": 4918345176387
     }
   ],
-  "last_preserved_session": "v3/work_logs/P3_07_2026-10-09_S1.md"
+  "last_preserved_session": "v3/work_logs/P3_B_2026-10-09_S1.md",
+  "optional_recurrence_advice": {
+    "record": "v3/work_logs/P3_B_2026-10-09_S1/recurrence_options.json",
+    "recommended": "P3-B-OPTION-A",
+    "selected": null,
+    "gate": "P3-B",
+    "technical_blocker": false,
+    "timing": "before P3-08; if deferred decide before P3-09 feedback freeze"
+  }
 }

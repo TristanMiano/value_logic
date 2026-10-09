@@ -95,8 +95,9 @@ retained execution/checking, an interruptible outer cover, conditional loss
 bounds and named-action certificates. Its [companion proofs](derivations/03_refinement_extensions.md)
 separate finite-prefix completion, task certainty, source recovery and revision
 support. The general proof-stream adapter is mathematical; the actual prototype
-handles its declared finite Boolean/bounded-VM fragment. No anticipatory learner,
-paid-computation policy or final experiment has been established. P3-04 now supplies [finite counterfactual semantics](derivations/04_counterfactual_semantics.md),
+handles its declared finite Boolean/bounded-VM fragment. The P3-03 prototype itself supplies no anticipatory learner or
+paid-computation policy. Later P3-06/07 add scoped forecasting and paid selection;
+no final experiment has been established. P3-04 now supplies [finite counterfactual semantics](derivations/04_counterfactual_semantics.md),
 [selection extensions](derivations/04_selection_extensions.md), and
 [separately reconstructed executable evidence](work_logs/P3_04_2026-10-08_S2.md).
 It covers typed structural changes, explicitly exceptional paired-support
@@ -115,8 +116,10 @@ The [closing record](work_logs/P3_06_2026-10-09_S1.md) gives **90.210938375717**
 new research minutes. P3-07 is **complete** at its declared
 [bounded paid-reasoning scope](derivations/07_paid_reasoning.md), with
 **90.187687312067** observed research minutes. Phase research is
-**652.160106918517 minutes**, with **307.839893081483** remaining to the
-960-minute floor. P3-B is next and unattempted; P3-08 remains unstarted.
+**664.368606879483 minutes**, with **295.631393120517** remaining to the
+960-minute floor. **P3-B has passed** at restricted mathematical/local implementation
+readiness. P3-08 remains unstarted. Optional paid-selective-feedback recurrence
+is recommended before it and remains unselected; see the [gate assessment](checkpoints/B_1.md).
 The contribution obligation remains **NOT YET SUPPORTED**.
 
 ## Workspace
@@ -137,6 +140,7 @@ The contribution obligation remains **NOT YET SUPPORTED**.
 | Counterfactual semantics | [Construction](derivations/04_counterfactual_semantics.md) · [Extensions](derivations/04_selection_extensions.md) · [Sources](literature/04_source_contracts.md) · [Replacement code](checks/04_README.md) |
 | Sequential cost forecasts | [Construction and duties](derivations/06_cost_forecast_refinement.md) · [Repricing](derivations/06_price_replay.md) · [Capital comparison](derivations/06_capital_comparison.md) · [Calibration](derivations/06_calibration_scope.md) · [BRIA boundary](derivations/06_bria_boundary.md) |
 | Paid reasoning | [Rule and costs](derivations/07_paid_reasoning.md) · [Four-action extension](derivations/07_multi_action_forecasting.md) · [Analytical ordinary control](derivations/07_ordinary_analytic_profile.md) · [Acquisition planner](derivations/07_acquisition_planning.md) · [Closing record](work_logs/P3_07_2026-10-09_S1.md) |
+| Mathematics and implementation readiness | [P3-B decision](checkpoints/B_1.md) · [Current 21-duty overlay](checkpoints/B_1.v1.json) · [Optional recurrence advice](work_logs/P3_B_2026-10-09_S1/reviews/recurrence_agent/advice.md) |
 | Mathematical Markdown | [Rendering conventions and guard](STYLE.md) |
 | Claims and open obligations | [Claim ledger](claim_ledger.md) |
 | Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |
@@ -206,3 +210,35 @@ including the defensive-forecasting addendum and its evidence, are preserved.
 is **NOT YET SUPPORTED** under the author's modest-synthesis criterion.
 P3-A remains PASS; P3-B–D remain unattempted. P3-08 is unstarted, all experiments
 remain development and no final challenge is frozen or exposed.
+
+
+## P3-B completion and recurrence advice — October 9, 2026
+
+The [technical gate](checkpoints/B_1.md) is **PASS**. Independent targeted
+reviews reconstruct the received-source soundness bridge, sourcewise repair
+selection, all-current-optimum transport, forecast/feedback distinction and
+complete-policy expectation contract. Current local evidence and bounded
+admission interfaces support integration; the single combined reasoner is
+still P3-08 work. Historical completion sections above retain their original
+gate status; this section and the current plan give the latest state.
+
+The five-question assessment gives Q5 the strongest mature answer and
+identifies useful model-combination evidence (Q3) and economical selected
+feedback (Q4) as the weakest links. P3-N01 remains **NOT YET SUPPORTED**
+under the broad modest-synthesis criterion. No empirical superiority or
+unrestricted Logical Induction is inferred from the gate.
+
+**Recommended optional recurrence: one Research90 chunk now, before
+P3-08, on paid selective feedback.** Target a justified all-issued cost
+inequality and an informative break-even regime or precise obstruction.
+[The dossier](work_logs/P3_B_2026-10-09_S1/reviews/recurrence_agent/advice.md)
+also specifies certificate-delivery recurrence before final freeze and
+counterpossible-policy robustness later in the phase. All options remain
+unselected and unstarted; none activates R-P3-N01. Direct P3-08 progression
+is technically justified under the narrower accepted contract.
+
+The [session](work_logs/P3_B_2026-10-09_S1.md) records **12.208499960967 research
+minutes**, with no added gate floor, no historical inference and no parallel
+reviewer credit. P3-01–07 and the surviving defensive-forecasting evidence
+remain unchanged. P3-A/B are PASS; P3-08 is unstarted; P3-C/D are
+unattempted. No final challenge is frozen or exposed.

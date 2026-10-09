@@ -14,8 +14,8 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **652.160106918517 minutes**;
-**307.839893081483 minutes** remain to the 960-minute floor.
+Phase-three qualifying research is **664.368606879483 minutes**;
+**295.631393120517 minutes** remain to the 960-minute floor.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
 The [first 240-minute checkpoint](v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md)
@@ -34,9 +34,14 @@ is assessed at this boundary with its actual overshoot.
 self-assessment scope**, with **90.187687312067 measured research minutes**.
 The [closing record](v3/work_logs/P3_07_2026-10-09_S1.md) preserves the paid rules,
 ordinary analytical/Bellman controls, exact negative cases and scoped review.
-**Next: P3-B — mathematical and implementation contract, unattempted.**
-This task boundary does not start P3-B or P3-08.
-Phase two remains complete; P3-B–D remain unattempted. P3-N01 remains
+**P3-B is PASS at restricted mathematics and local implementation readiness**,
+with **12.208499960967 measured research minutes** and no added gate floor.
+[Gate assessment](v3/checkpoints/B_1.md) and [bound contract](v3/checkpoints/B_1.v1.json)
+record the independently reconstructed bridges, remaining integration duty and
+five-question judgment. **Next: P3-08, unstarted.** The recommended optional
+[paid-selective-feedback recurrence](v3/work_logs/P3_B_2026-10-09_S1/recurrence_options.json)
+is unselected; the author may choose it before P3-08. Neither begins here.
+Phase two remains complete; P3-C–D remain unattempted. P3-N01 remains
 **NOT YET SUPPORTED**. All executable evidence remains development; no final
 challenge is frozen or exposed. The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)
 also records the authorized Markdown repair and preserves prior history.
@@ -245,7 +250,7 @@ performance superiority are separate claims and are not completion requirements.
   reasoner's own versioned procedure. Artifact:
   `v3/derivations/07_paid_reasoning.md`.
 
-- [ ] **P3-B — mathematical and implementation contract.**
+- [x] **P3-B — mathematical and implementation contract. PASS at restricted scope.**
 
   Record `v3/checkpoints/B_1.md`. Require a coherent restricted semantics,
   checkable central arguments, explicit uncertainty/counterfactual boundaries,
@@ -253,6 +258,12 @@ performance superiority are separate claims and are not completion requirements.
   counterfactual theorem is not mandatory; every claimed substitute must say
   exactly which duties it performs. Independently reconstruct load-bearing
   steps. Unresolved errors in downstream premises block the gate. No added floor.
+  Completed: [B_1](v3/checkpoints/B_1.md), its [21-duty overlay](v3/checkpoints/B_1.v1.json),
+  and [exact session](v3/work_logs/P3_B_2026-10-09_S1.md). No blocking repair.
+  A combined reasoner remains P3-08 work. Optional recurrence A is recommended
+  now for paid selective feedback; B concerns equal certificate delivery before
+  freeze, and C concerns counterpossible-policy robustness later in the phase.
+  All three remain unselected, separate from R-P3-N01.
 
 ## 6. Cycle III — build and run a discriminating challenge
 
@@ -348,8 +359,9 @@ floor, accepted obligations and the abandoned alternative's record.
 
 **Active repair queue: empty. P3-N01 is an open contribution-development
 obligation, not a detected defect. P3-01–07 are complete at their declared
-scopes. P3-A has passed at restricted-representation readiness scope.
-Next: P3-B, unattempted; P3-C–D remain unattempted and P3-08 is unstarted.**
+scopes. P3-A and P3-B have passed at their restricted readiness scopes.
+Next: P3-08, unstarted; P3-C–D remain unattempted. Optional recurrence A is
+recommended before P3-08 but is unselected and is not a blocking repair.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original
 register. Neither is required or activated by this plan. General neural

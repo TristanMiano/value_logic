@@ -1,0 +1,60 @@
+{
+  "checks": [
+    {
+      "check": "only_two_declared_historical_location_failures",
+      "pass": true
+    },
+    {
+      "after_sha256": "61d3ba082ba58e91f51e579eac2b7c9715ab9260fef0923375a21e59df2fd3aa",
+      "before_sha256": "edd73ab13640bbd8f067732902eb93f2f429f5ce43b8ce705b463a6ffc1c3894",
+      "check": "p303_exact_documented_notation_before_and_after",
+      "operation": "In memory only: remove code-protection backticks from the single i-not-equal-j inline expression.",
+      "pass": true,
+      "receipt": "v3/work_logs/P3_03_2026-10-07_S1/rendering/final_math_repair.json",
+      "receipt_sha256": "1f8f3816adb5388e8ad3a545a28d9b766e04b0c9da183607561037f67e8db0f6"
+    },
+    {
+      "accounting_base_sha256": "e9f4a3970206b99d1a43c765f5aac92cd13b78ec0cb7521bc8148c45e135fabd",
+      "base_commit": "646f9ece1a2d57eb2029fd27f8df9d9ceb54f2f7",
+      "check": "p306_historical_ledger_is_exact_preserved_prefix",
+      "current_ledger_bytes": 148588,
+      "interpretation": "The recovery inventory bound the ledger at P3-06 entry; later authorized append bytes do not change that historical prefix.",
+      "pass": true,
+      "prefix_bytes": 120635,
+      "prefix_sha256": "8bfb7af2a22551ee18e35b144661dd2e1bf27713027336c4bda6d6ab17a8df4c"
+    },
+    {
+      "changed_protected": [],
+      "check": "all_prior_protected_scientific_bytes_unchanged",
+      "pass": true
+    }
+  ],
+  "historical_bytes_or_hashes_modified": false,
+  "initial_literal_location_failures_retained": [
+    {
+      "check": "p303_receipt_repair_exact_file",
+      "expected_sha256": "edd73ab13640bbd8f067732902eb93f2f429f5ce43b8ce705b463a6ffc1c3894",
+      "pass": false,
+      "path": "v3/work_logs/P3_03_2026-10-07_S1/development/receipt_identity_repair/plan.md"
+    },
+    {
+      "check": "p306_saved_hash_claim",
+      "expected_sha256": "8bfb7af2a22551ee18e35b144661dd2e1bf27713027336c4bda6d6ab17a8df4c",
+      "field": "v3/time_ledger.csv_sha256",
+      "matching_files": [],
+      "pass": false,
+      "record": "v3/work_logs/P3_06_2026-10-09_S1/recovery/recovery_inventory.json"
+    }
+  ],
+  "initial_passed_checks": 508,
+  "initial_result": "check_results.json",
+  "initial_result_sha256": "5fd2e1c366b50bb67e372d8e0373dc313a6117ab4011a2bc91578567abae35c6",
+  "missing_end_to_end_integration": "The bounded modules and separate declared bridges are ready to inform P3-08; a single integrated cross-task paid reasoner has not been implemented or validated.",
+  "principal_research_credit_ns": 0,
+  "schema": "value_logic.p3b.implementation_historical_binding_disposition.v1",
+  "scientific_runs_repeated": false,
+  "scope": "P3-B local implementation/source-evidence readiness after explicit disposition of historical locations.",
+  "script_sha256": "00ccf013c9dfee00d21998ad7cb338539cd9d2bf83d6581b3b3fa260d4c1c231",
+  "status": "PASS",
+  "utc": "2026-10-09T19:45:52.092054+00:00"
+}

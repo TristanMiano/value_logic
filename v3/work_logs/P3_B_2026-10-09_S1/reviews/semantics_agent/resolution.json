@@ -1,0 +1,52 @@
+{
+  "schema": "value_logic.p3b.semantic_gate_reconciliation_resolution.v1",
+  "recorded_utc": "2026-10-09T19:54:37.642792+00:00",
+  "reviewer": "ChatGPT (GPT-6 Astra Pro), internal same-model nonblind semantic reviewer",
+  "task": "P3-B-1",
+  "evidence_stage": "DEVELOPMENT",
+  "review_scope": "Only the revised B-P02, B-P03 and B-P04 rows; no new proof checks or full-gate re-review.",
+  "earlier_observation": {
+    "path": "v3/work_logs/P3_B_2026-10-09_S1/reviews/semantics_agent/final_gate_reconciliation.md",
+    "sha256": "c290778a506adde9943e6d6a56176c56d80220786e560ca0f40123cd69c8d420",
+    "bytes": 4649,
+    "unchanged": true,
+    "earlier_gate_sha256": "3b2b00a3cb053210aae3b70b98e54905c04242e9c8a80bbb7a1ecdf6ba435e37"
+  },
+  "final_reviewed_gate": {
+    "path": "v3/checkpoints/B_1.md",
+    "sha256": "f4441edea890377efb958a72bb5089c57ecbbe419ff63d8375e1d59a7c510652",
+    "bytes": 26577
+  },
+  "issues": [
+    {
+      "prediction": "B-P02",
+      "line": 228,
+      "exact_reviewed_wording": "| B-P02 | Withdraw the `q=0` frame in the reviewed paired-support witness. | The exact comparison image becomes `{-1,3}` and any upper bound must include three. A previously loose sound bound may stay unchanged; returning only the favorable tied case fails. |",
+      "status": "RESOLVED",
+      "assessment": "Resolved: the controlled change is the named frame-withdrawal witness, whose exact image is {-1,3}; all current upper bounds must cover three, but a previously loose sound bound may remain unchanged."
+    },
+    {
+      "prediction": "B-P03",
+      "line": 229,
+      "exact_reviewed_wording": "| B-P03 | Replace the old optimum while preserving a proved incumbent-band map; then separately violate the cutoff of that route. | The first transport can remain valid. The second route loses its justification and needs another valid proof route or rejection; the comparison itself need not be false. Old winner identity alone cannot decide validity. |",
+      "status": "RESOLVED",
+      "assessment": "Resolved: the failure is explicitly of the supplied cutoff route; another valid proof route is allowed and the comparison itself is not declared false."
+    },
+    {
+      "prediction": "B-P04",
+      "line": 230,
+      "exact_reviewed_wording": "| B-P04 | Keep a numeric profile but change its generator/state/feature scope, including under an insufficient admission budget. | No current profile certificate is reported. Use the paid fixed fallback when its mandatory assessment/output work is funded; otherwise retain the declared no-output/budget-failure result. Complete admission rejects the incompatible scope. |",
+      "status": "RESOLVED",
+      "assessment": "Resolved: fixed fallback requires funded mandatory assessment/output work; otherwise the declared no-output or budget-failure result is retained."
+    }
+  ],
+  "all_three_issues_resolved": true,
+  "verdict": "The three gate wording qualifications are resolved. The scoped semantic PASS remains supported; no original source theorem or prior review required amendment.",
+  "limitations": [
+    "This record binds the exact gate bytes above, not subsequent revisions.",
+    "Accounting, final JSON closure, publication and unrelated gate sections were not re-reviewed.",
+    "No proof, production module or prior scientific test was rerun."
+  ],
+  "principal_clock_credit_ns": 0,
+  "writes": "Only this new resolution.json; the original reconciliation and all earlier review/source artifacts remain unchanged."
+}
