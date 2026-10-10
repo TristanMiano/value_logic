@@ -1,0 +1,126 @@
+[
+  {
+    "input_sha256": "096a078c06ec8dcf5715df89698a6cb2fd4ad5cdcb779ba59a9e0b56bcca777e",
+    "invoice": {
+      "accounting_instrumentation_included": false,
+      "budget": 184120,
+      "by_stage": {
+        "controller": {
+          "python_opcodes": 24
+        },
+        "input_admission": {
+          "input_bytes": 529
+        },
+        "setup": {
+          "source_admission_bytes": 81591
+        },
+        "storage": {
+          "bounded_native_c_calls": 196,
+          "python_opcodes": 1780
+        },
+        "terminal_reporting": {
+          "bounded_native_c_calls": 36,
+          "python_opcodes": 472,
+          "report_bytes": 140
+        }
+      },
+      "failures": [
+        {
+          "kind": "BUDGET_EXHAUSTED",
+          "paid_prefix_units": 84120,
+          "reason": "storage: 1 python_opcodes would exceed reserved budget",
+          "stage": "storage"
+        }
+      ],
+      "max_retained_serialized_bytes": 0,
+      "max_serialized_object_bytes": 140,
+      "physical_cpu_and_heap_cap_claimed": false,
+      "tariff": "STRUCTURAL-VM-v1",
+      "terminal_reserve": 100000,
+      "total_units": 84768
+    },
+    "method": "candidate",
+    "output": {
+      "decision": {
+        "action": null,
+        "status": "UNKNOWN",
+        "useful_action_warrant": false
+      },
+      "received_answer": false,
+      "sources": [],
+      "status": "UNKNOWN_BUDGET"
+    },
+    "source_admission": [
+      {
+        "bytes": 42408,
+        "path": "v3/experiments/p308_structural.py"
+      },
+      {
+        "bytes": 22823,
+        "path": "v3/checks/04_counterfactual_repair.py"
+      },
+      {
+        "bytes": 16360,
+        "path": "v3/checks/05_counterfactual_transport.py"
+      }
+    ]
+  },
+  {
+    "input_sha256": "096a078c06ec8dcf5715df89698a6cb2fd4ad5cdcb779ba59a9e0b56bcca777e",
+    "invoice": {
+      "accounting_instrumentation_included": false,
+      "budget": 144937,
+      "by_stage": {
+        "controller": {
+          "python_opcodes": 22
+        },
+        "input_admission": {
+          "input_bytes": 529
+        },
+        "setup": {
+          "source_admission_bytes": 42408
+        },
+        "storage": {
+          "bounded_native_c_calls": 196,
+          "python_opcodes": 1782
+        },
+        "terminal_reporting": {
+          "bounded_native_c_calls": 36,
+          "python_opcodes": 472,
+          "report_bytes": 140
+        }
+      },
+      "failures": [
+        {
+          "kind": "BUDGET_EXHAUSTED",
+          "paid_prefix_units": 44937,
+          "reason": "storage: 1 python_opcodes would exceed reserved budget",
+          "stage": "storage"
+        }
+      ],
+      "max_retained_serialized_bytes": 0,
+      "max_serialized_object_bytes": 140,
+      "physical_cpu_and_heap_cap_claimed": false,
+      "tariff": "STRUCTURAL-VM-v1",
+      "terminal_reserve": 100000,
+      "total_units": 45585
+    },
+    "method": "ordinary",
+    "output": {
+      "decision": {
+        "action": null,
+        "status": "UNKNOWN",
+        "useful_action_warrant": false
+      },
+      "received_answer": false,
+      "sources": [],
+      "status": "UNKNOWN_BUDGET"
+    },
+    "source_admission": [
+      {
+        "bytes": 42408,
+        "path": "v3/experiments/p308_structural.py"
+      }
+    ]
+  }
+]

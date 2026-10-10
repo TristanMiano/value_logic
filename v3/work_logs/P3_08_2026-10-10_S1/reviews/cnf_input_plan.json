@@ -1,0 +1,27 @@
+{
+  "schema": "value_logic.p308.cnf.development_plan.v1",
+  "stage": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro), delegated ordinary-control implementer",
+  "scope": "At most 12 variables, 64 clauses, four literals per clause; full public canonical CNF input, deterministic SAT truth.",
+  "selection_before_execution": true,
+  "development_generation": {
+    "seed": 3081001,
+    "query_count": 32,
+    "variable_counts": [4, 6, 8, 10, 12],
+    "cohorts": ["short_clauses", "fixed_width_three", "disconnected", "mixed_width"],
+    "truth_based_rejection_or_balance": false,
+    "repeat_every": 8,
+    "public_only": "Only generated formula, dimensions and source/semantics versions are supplied; no generator label, RNG state, reference answer or private outcome is a model input."
+  },
+  "focused_checks": [
+    "Enumerate all subsets of the empty/unit/binary clause catalogue on two variables and cross-check exact enumeration and DPLL against a separately written truth evaluator.",
+    "Retain positive/negative examples, empty formula/empty clause, tautologies, duplicate literals and clauses, contradictory units, disconnected formulas and boundary n=12.",
+    "Check true witness validation, false independent exhaustive checking, malformed receipt rejection and exact query binding.",
+    "Exercise budget denial before output prepayment, during production and during false verification; retain all actual debits and release no answer.",
+    "Check full-key cache hits, source edits, changed clauses under reused request identifier, finite capacity eviction and legitimate new request IDs.",
+    "Check six stateless public experts and cost proxy without invoking truth evaluation.",
+    "Save the complete development cohort before executing solvers; record both algorithms' outputs and actual invoices, including failures."
+  ],
+  "resource_contract": "Common p308_common word tariff, prepaid output/final cleanup before truth computation, every failed service returns its actual partial immutable invoice.",
+  "boundaries": "No final freeze or evaluation; no principal-clock credit; no commits/push; existing sources unchanged."
+}

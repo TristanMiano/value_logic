@@ -1,0 +1,460 @@
+{
+  "stage": "DEVELOPMENT",
+  "started_utc": "2026-10-10T16:55:43.558718+00:00",
+  "finished_utc": "2026-10-10T16:55:43.700448+00:00",
+  "source_manifest": "source_manifest.json",
+  "script": "check_hard_index.py",
+  "review_attribution": "reviewer-authored implementation self-check",
+  "principal_clock_credit_seconds": 0,
+  "passed": 9,
+  "failed": 0,
+  "results": [
+    {
+      "case": "contract_compatibility",
+      "status": "PASS",
+      "detail": {
+        "legacy": {
+          "version": "p308-program-broker-v1.2",
+          "horizon": 8,
+          "block_size": 4,
+          "expert_count": 6,
+          "action_bits": 4,
+          "state_bits": 4,
+          "selector": "tickets",
+          "hard_capacity": 2,
+          "hard_index": "linear",
+          "quota": 2,
+          "random_bits": 38,
+          "maximum_operand_bits": 95
+        },
+        "new_last_positional": {
+          "version": "p308-program-broker-v1.2",
+          "horizon": 8,
+          "block_size": 4,
+          "expert_count": 6,
+          "action_bits": 4,
+          "state_bits": 4,
+          "selector": "tickets",
+          "hard_capacity": 2,
+          "hard_index": "hashed",
+          "quota": 2,
+          "random_bits": 38,
+          "maximum_operand_bits": 95
+        },
+        "invalid_values": [
+          {
+            "input_repr": "None",
+            "rejection": {
+              "type": "Rejected",
+              "message": "Hard-answer index must be linear or hashed."
+            }
+          },
+          {
+            "input_repr": "True",
+            "rejection": {
+              "type": "Rejected",
+              "message": "Hard-answer index must be linear or hashed."
+            }
+          },
+          {
+            "input_repr": "[]",
+            "rejection": {
+              "type": "Rejected",
+              "message": "Hard-answer index must be linear or hashed."
+            }
+          },
+          {
+            "input_repr": "1",
+            "rejection": {
+              "type": "Rejected",
+              "message": "Hard-answer index must be linear or hashed."
+            }
+          },
+          {
+            "input_repr": "'HASHED'",
+            "rejection": {
+              "type": "Rejected",
+              "message": "Hard-answer index must be linear or hashed."
+            }
+          },
+          {
+            "input_repr": "'linear\\n'",
+            "rejection": {
+              "type": "Rejected",
+              "message": "Hard-answer index must be linear or hashed."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case": "legacy_linear",
+      "status": "PASS",
+      "detail": [
+        {
+          "selector": "uniform",
+          "artifact": {
+            "path": "legacy_linear_uniform.json",
+            "sha256": "8d65cc7a74a49ffd3e868bf2c151c4e46323ff2e1972a464fbffcd25e8fddc81"
+          },
+          "old_paid": 7258,
+          "new_paid": 7266,
+          "old_cap": 190488,
+          "new_cap": 190496
+        },
+        {
+          "selector": "tickets",
+          "artifact": {
+            "path": "legacy_linear_tickets.json",
+            "sha256": "bf098974161288b4449cf9a9cb217ffea03d44cf847623ee3592f21803f4f1ec"
+          },
+          "old_paid": 7972,
+          "new_paid": 7980,
+          "old_cap": 190508,
+          "new_cap": 190516
+        }
+      ]
+    },
+    {
+      "case": "paired_index_paths",
+      "status": "PASS",
+      "detail": [
+        {
+          "selector": "uniform",
+          "repeated": false,
+          "artifact": {
+            "path": "paired_uniform_varied.json",
+            "sha256": "55f7726f8ccc097ea12921df95794a6c1f234cc21affb4638c73cd3a4fdc7984"
+          },
+          "retained_keys": 6,
+          "linear_paid": 28362,
+          "hashed_paid": 27596,
+          "provider_invoices_identical": true,
+          "complete_trace_identical": true
+        },
+        {
+          "selector": "uniform",
+          "repeated": true,
+          "artifact": {
+            "path": "paired_uniform_repeated.json",
+            "sha256": "5af7b30a8f3fb38bb4b4468d4e64098633b05ed63955e3ab33b2c8d4f43090cb"
+          },
+          "retained_keys": 1,
+          "linear_paid": 22256,
+          "hashed_paid": 26043,
+          "provider_invoices_identical": true,
+          "complete_trace_identical": true
+        },
+        {
+          "selector": "tickets",
+          "repeated": false,
+          "artifact": {
+            "path": "paired_tickets_varied.json",
+            "sha256": "aa12d09144192784caf71534317e6043e57adb6a0a1dcf9de61a00fd291d0b21"
+          },
+          "retained_keys": 3,
+          "linear_paid": 29245,
+          "hashed_paid": 29832,
+          "provider_invoices_identical": true,
+          "complete_trace_identical": true
+        },
+        {
+          "selector": "tickets",
+          "repeated": true,
+          "artifact": {
+            "path": "paired_tickets_repeated.json",
+            "sha256": "7f38df9c6da58d2e9069ee21a91c186e4f231a13e3ebbc3bfcf0a1f2139848b0"
+          },
+          "retained_keys": 1,
+          "linear_paid": 24416,
+          "hashed_paid": 28215,
+          "provider_invoices_identical": true,
+          "complete_trace_identical": true
+        },
+        {
+          "hard": false,
+          "artifact": {
+            "path": "paired_hard_disabled.json",
+            "sha256": "8a3f39c02ae2a6279977c706975ecf54fc04787270e99eaa19e9d80eb57ffec3"
+          },
+          "linear_paid": 6538,
+          "hashed_paid": 6671,
+          "hashing_units": 0,
+          "hash_initialization_delta": 133
+        }
+      ]
+    },
+    {
+      "case": "real_bucket_collision_and_versions",
+      "status": "PASS",
+      "detail": {
+        "fixture": {
+          "path": "collision_fixture_before_receipts.json",
+          "sha256": "2e4851003544bceb0b6459be142406157deeff0f62db50f4883b2341af4a007b"
+        },
+        "outcomes": {
+          "path": "collision_generation_outcomes.json",
+          "sha256": "42e930a04f8a2c291c0b213a321e8c09ccf1475a1fc6d19306c3bcc8c54e9528"
+        },
+        "bucket": 10,
+        "same_bucket_distinct_answers": [
+          0,
+          1
+        ],
+        "summaries": [
+          {
+            "index": "linear",
+            "state": {
+              "scope": [
+                "bounded-cnf-sat-v1",
+                "cnf-input-v1",
+                "collision-epoch"
+              ],
+              "entries_retained": 4,
+              "index_kind": "linear",
+              "bucket_count": 0,
+              "active_entries": 2,
+              "conflicts": 1,
+              "withdrawals": 2,
+              "generation": 2
+            },
+            "paid": 1240,
+            "node_count": 0
+          },
+          {
+            "index": "hashed",
+            "state": {
+              "scope": [
+                "bounded-cnf-sat-v1",
+                "cnf-input-v1",
+                "collision-epoch"
+              ],
+              "entries_retained": 4,
+              "index_kind": "hashed",
+              "bucket_count": 128,
+              "active_entries": 2,
+              "conflicts": 1,
+              "withdrawals": 2,
+              "generation": 2
+            },
+            "paid": 2374,
+            "node_count": 4
+          }
+        ]
+      }
+    },
+    {
+      "case": "atomic_index_commit",
+      "status": "PASS",
+      "detail": {
+        "full_commit_total": 230,
+        "short_limit": 229,
+        "short_spent": 198,
+        "failure": {
+          "type": "BudgetExceeded",
+          "message": "Tariff bundle denied before the described operation."
+        },
+        "state": {
+          "scope": [
+            "bounded-cnf-sat-v1",
+            "cnf-input-v1",
+            "atomic-epoch"
+          ],
+          "entries_retained": 0,
+          "index_kind": "hashed",
+          "bucket_count": 128,
+          "active_entries": 0,
+          "conflicts": 0,
+          "withdrawals": 0,
+          "generation": 0
+        },
+        "meter": {
+          "limit_total": 229,
+          "total": 198,
+          "by_category": {
+            "admission": 20,
+            "solve": 0,
+            "check": 0,
+            "acquisition": 0,
+            "storage": 152,
+            "cache": 16,
+            "forecast": 0,
+            "assessment": 0,
+            "profile": 0,
+            "dependency_compile": 0,
+            "repair_search": 0,
+            "controller": 10,
+            "randomness": 0,
+            "output": 0,
+            "setup": 0
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "hard_hash_fixed_bucket_configuration",
+              "units": 4
+            },
+            {
+              "category": "admission",
+              "operation": "hard_scope_read",
+              "units": 4
+            },
+            {
+              "category": "admission",
+              "operation": "hard_store_initialization",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "hashcache_bucket_helper_bounded_arguments",
+              "units": 2
+            },
+            {
+              "category": "admission",
+              "operation": "hashcache_key_helper_exact_query_type",
+              "units": 2
+            },
+            {
+              "category": "cache",
+              "operation": "hashcache_canonical_key_word_read",
+              "units": 10
+            },
+            {
+              "category": "cache",
+              "operation": "hashcache_digest_bucket_index",
+              "units": 2
+            },
+            {
+              "category": "cache",
+              "operation": "hashcache_sha256_input_block",
+              "units": 2
+            },
+            {
+              "category": "cache",
+              "operation": "hashcache_temporary_buffer_release",
+              "units": 2
+            },
+            {
+              "category": "controller",
+              "operation": "hashcache_canonical_word_encode",
+              "units": 10
+            },
+            {
+              "category": "storage",
+              "operation": "hard_hash_bucket_count_word",
+              "units": 1
+            },
+            {
+              "category": "storage",
+              "operation": "hard_hash_bucket_head_read",
+              "units": 1
+            },
+            {
+              "category": "storage",
+              "operation": "hard_hash_bucket_head_words",
+              "units": 128
+            },
+            {
+              "category": "storage",
+              "operation": "hard_store_state_words",
+              "units": 8
+            },
+            {
+              "category": "storage",
+              "operation": "hashcache_digest_words",
+              "units": 4
+            },
+            {
+              "category": "storage",
+              "operation": "hashcache_encoding_buffer_words",
+              "units": 10
+            }
+          ],
+          "reservations": {},
+          "denials": 1
+        }
+      }
+    },
+    {
+      "case": "funding_and_failure",
+      "status": "PASS",
+      "detail": [
+        {
+          "selector": "uniform",
+          "artifact": {
+            "path": "funding_uniform.json",
+            "sha256": "e1cdfcea6dd8c4e2352471fd4caa23c40efc8a06e65f451fc6f68b46e00a8473"
+          },
+          "funded_cap": 403128,
+          "actual_paid": 14485,
+          "limited_budget": 21509,
+          "limited_eligible": false,
+          "provider_failure_paid": 4949,
+          "capacity_failure_paid": 5286
+        },
+        {
+          "selector": "tickets",
+          "artifact": {
+            "path": "funding_tickets.json",
+            "sha256": "428bcb64dd25951bc3f7f43b2cf79c00b66b66d04b15198da5825b7879769ffa"
+          },
+          "funded_cap": 403168,
+          "actual_paid": 15500,
+          "limited_budget": 22524,
+          "limited_eligible": false,
+          "provider_failure_paid": 5013,
+          "capacity_failure_paid": 5452
+        }
+      ]
+    },
+    {
+      "case": "unfunded_withdrawal",
+      "status": "PASS",
+      "detail": {
+        "failure": {
+          "type": "BudgetExceeded",
+          "message": "Tariff bundle denied before the described operation."
+        },
+        "blocked_issue": {
+          "type": "Rejected",
+          "message": "Issue only the next owned request in an open block."
+        },
+        "artifact": {
+          "path": "unfunded_hashed_withdrawal.json",
+          "sha256": "851fb5592ca308c627dd78d3133ea3c239201022391905318b60f97ba937106e"
+        },
+        "historical_entries": 1,
+        "failed": true
+      }
+    },
+    {
+      "case": "maximal_key_precision",
+      "status": "PASS",
+      "detail": {
+        "artifact": {
+          "path": "maximum_key_precision.json",
+          "sha256": "2508ee5fd093c9d093d00e838616a6a2aac4ce3baad2bf8c37c2afa9c93c132c"
+        },
+        "key_words": 343,
+        "funded_cap": 851032754,
+        "actual_paid": 37558,
+        "peak_numeric_bits": 68,
+        "hash_block_units": 220
+      }
+    },
+    {
+      "case": "reporter_index_invariance",
+      "status": "PASS",
+      "detail": {
+        "artifact": {
+          "path": "reporter_index_invariance.json",
+          "sha256": "975d56200e2a7974d4dee8def5d2495e8f6d11fd5aa352d3d2e0fbd33baf7dd2"
+        },
+        "identical_statistical_fields": true,
+        "linear_report_paid": 8448,
+        "hashed_report_paid": 8448,
+        "scope": "Index-invariance check only; new snapshot/grid extensions are reviewed separately"
+      }
+    }
+  ]
+}

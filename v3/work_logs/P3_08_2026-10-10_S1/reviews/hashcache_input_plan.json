@@ -1,0 +1,24 @@
+{
+  "stage": "DEVELOPMENT",
+  "principal_clock_credit_ns": 0,
+  "timing": "Prospective extension after the parent's inspection of common_v1 development results; not held out or a final challenge.",
+  "prior_source": {
+    "path": "v3/experiments/p308_ordinary.py",
+    "version": "p308-ordinary-controllers-v1.3",
+    "sha256": "492897ba8eb84921068411c411188bd0057d299668904c31c3bf877d9db9e9af",
+    "preserved": "reviews/source_revisions/p308_ordinary_v1_3.py"
+  },
+  "new_methods": "Direct no_compute with separately supplied fallback 0 or 1; exact_cache and ordinary_combo admit cache_kind linear or hashed, retaining the old linear default.",
+  "hash_contract": "Full canonical content, source version, and semantics version encoded as fixed little-endian 64-bit words, with ASCII label lengths and zero padding. No request ID in semantic hash. Explicit encoding/read/storage charges, followed by the same SHA-256 input-block primitive as common source procurement. Digest equality never replaces full-key equality.",
+  "cache_contract": "Capacity 0..64; fixed bucket_count 128 or 256; ordinary integration defaults to 128. A fixed slot array is the FIFO ring; doubly linked bucket chains permit constant-time removal. Every array/header allocation, bucket step, digest/full-key comparison, insert, unlink, reference release and cursor update is paid. All insert/eviction mutation is prepaid atomically.",
+  "focused_checks": [
+    "Both no_compute fallback values issue the common output record and never invoke providers, expert predictions, numeric updates, or random selectors.",
+    "Default linear behavior remains identical to explicit linear; hashed exact/cache combo paths use the common receipt/output contract.",
+    "Syntactic admission, empty/tautological/repeated literals, maximum bounded shape, source-version changes, changed full content, request-ID rebinding, duplicate insertion and conflicting receipt rejection.",
+    "Real bucket collisions and a test-only paid forced-digest-collision wrapper demonstrate distinct full keys never exchange answers.",
+    "FIFO hit order, duplicate admission, collision-chain unlinking, wraparound and bounded retained words.",
+    "Denied setup, hash, insertion/eviction and output operations retain previous paid costs and do not return an answer or mutate entries without payment."
+  ],
+  "initial_invoice_comparison": "A fixed 32-formula public three-variable catalogue, enumerating all eight polarity triples with 0..3 repeated positive unit clauses, then two online passes (64 requests) in the same order. Compare linear and hashed exact caches under the same paid DPLL provider and output service; separately compare both fallback values. No performance-based filtering or main-cohort private scoring.",
+  "scope": "No modification of S.ExactCache, no main cohort rerun in delegated work, no principal-clock credit, no commit or push. Parent owns common_v2 source closure, scoring and interpretation."
+}

@@ -1,0 +1,5274 @@
+{
+  "default_enumeration": {
+    "blocks": [],
+    "cache_hits": 0,
+    "cache_retained_words": 0,
+    "common_source_setup_included": false,
+    "configuration": {
+      "action_bits": 16,
+      "block_size": 4,
+      "cache_capacity": 0,
+      "fallback_action": 0,
+      "prior_cost_multiplier": [
+        1,
+        1
+      ],
+      "proof_cap": 6896,
+      "proof_solver": "enumeration",
+      "provider_limit": null,
+      "seed": 3081001,
+      "state_bits": null
+    },
+    "cost_estimate_meaning": "Public cold shape proxy or own prior successful full-call mean; fallible, with failures censored rather than treated as cheap completion.",
+    "cost_history": [],
+    "expectation_theorem_eligible": false,
+    "failed_full_calls_censored": 0,
+    "failure_detail": null,
+    "feedback_updates": 0,
+    "forecast_service": "Immutable forecast emitted before the current provider computation; current paid cache may supply an exact point.",
+    "invoices": [
+      {
+        "answer": 1,
+        "checked": true,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "detail": "SAT witness checked",
+        "index": 0,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-sat",
+        "requested_cap": 6896,
+        "resources": {
+          "by_category": {
+            "acquisition": 8,
+            "admission": 62,
+            "assessment": 0,
+            "cache": 0,
+            "check": 37,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 81,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 128,
+            "storage": 123
+          },
+          "operations": [
+            {
+              "category": "acquisition",
+              "operation": "cnf_checked_answer_release",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 17
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 12
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_checker_agreement",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_type_check",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "witness_clause_begin",
+              "units": 6
+            },
+            {
+              "category": "check",
+              "operation": "witness_clause_conjunction",
+              "units": 3
+            },
+            {
+              "category": "check",
+              "operation": "witness_literal_shift_sign_compare",
+              "units": 18
+            },
+            {
+              "category": "check",
+              "operation": "witness_scalar_range",
+              "units": 4
+            },
+            {
+              "category": "output",
+              "operation": "cnf_final_response_prepaid",
+              "units": 81
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_assignment_branch",
+              "units": 6
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_assignment_loop",
+              "units": 12
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_clause_branch",
+              "units": 12
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_clause_read",
+              "units": 24
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_horizon_shift",
+              "units": 2
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_literal_evaluate",
+              "units": 72
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_checked_receipt_words",
+              "units": 31
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_final_cleanup_prepaid",
+              "units": 91
+            },
+            {
+              "category": "storage",
+              "operation": "witness_word_read",
+              "units": 1
+            }
+          ],
+          "total": 439
+        },
+        "solver": "enumeration",
+        "status": "success",
+        "witness": 5
+      },
+      {
+        "answer": 0,
+        "checked": true,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "detail": "UNSAT independently checked by all assignments",
+        "index": 1,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-unsat",
+        "requested_cap": 6480,
+        "resources": {
+          "by_category": {
+            "acquisition": 8,
+            "admission": 51,
+            "assessment": 0,
+            "cache": 0,
+            "check": 166,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 79,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 134,
+            "storage": 145
+          },
+          "operations": [
+            {
+              "category": "acquisition",
+              "operation": "cnf_checked_answer_release",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 10
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_checker_agreement",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_type_check",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "unsat_assignment_existence_test",
+              "units": 8
+            },
+            {
+              "category": "check",
+              "operation": "unsat_assignment_tuple_generate",
+              "units": 40
+            },
+            {
+              "category": "check",
+              "operation": "unsat_clause_begin",
+              "units": 24
+            },
+            {
+              "category": "check",
+              "operation": "unsat_clause_conjunction",
+              "units": 12
+            },
+            {
+              "category": "check",
+              "operation": "unsat_product_initialization",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "unsat_signed_literal_index_compare",
+              "units": 72
+            },
+            {
+              "category": "output",
+              "operation": "cnf_final_response_prepaid",
+              "units": 79
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_assignment_branch",
+              "units": 8
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_assignment_loop",
+              "units": 16
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_clause_branch",
+              "units": 12
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_clause_read",
+              "units": 24
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_horizon_shift",
+              "units": 2
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_literal_evaluate",
+              "units": 72
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_checked_receipt_words",
+              "units": 29
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_final_cleanup_prepaid",
+              "units": 89
+            },
+            {
+              "category": "storage",
+              "operation": "unsat_assignment_tuple_write",
+              "units": 24
+            },
+            {
+              "category": "storage",
+              "operation": "unsat_bit_tuple_capacity",
+              "units": 3
+            }
+          ],
+          "total": 583
+        },
+        "solver": "enumeration",
+        "status": "success",
+        "witness": null
+      }
+    ],
+    "issued_trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 1,
+          "interval": [
+            1,
+            1
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 1,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 0,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 0,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 0
+      }
+    ],
+    "known_terminal_rounds": 2,
+    "local_setup_units": 32,
+    "meter": {
+      "by_category": {
+        "acquisition": 16,
+        "admission": 185,
+        "assessment": 0,
+        "cache": 0,
+        "check": 279,
+        "controller": 24,
+        "dependency_compile": 0,
+        "forecast": 0,
+        "output": 332,
+        "profile": 0,
+        "randomness": 0,
+        "repair_search": 0,
+        "setup": 32,
+        "solve": 262,
+        "storage": 468
+      },
+      "denials": 0,
+      "limit_total": 4611686018427387903,
+      "operations": [
+        {
+          "category": "acquisition",
+          "operation": "ordinary_provider:cnf_checked_answer_release",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_episode_method_and_tape",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_exact_price_inputs",
+          "units": 24
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_canonical_order_comparisons",
+          "units": 25
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_exact_query_type",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_input_identity_words",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_literal_validation",
+          "units": 20
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_scalar_and_version_validation",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_solver_name_check",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_whole_tape_shape_validation",
+          "units": 32
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:cnf_candidate_checker_agreement",
+          "units": 4
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:cnf_candidate_type_check",
+          "units": 8
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_assignment_existence_test",
+          "units": 8
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_assignment_tuple_generate",
+          "units": 40
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_clause_begin",
+          "units": 24
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_clause_conjunction",
+          "units": 12
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_product_initialization",
+          "units": 4
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_signed_literal_index_compare",
+          "units": 72
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_clause_begin",
+          "units": 6
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_clause_conjunction",
+          "units": 3
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_literal_shift_sign_compare",
+          "units": 18
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_scalar_range",
+          "units": 4
+        },
+        {
+          "category": "check",
+          "operation": "owned_receipt_identity_status_version",
+          "units": 76
+        },
+        {
+          "category": "controller",
+          "operation": "ordinary_provider_cap_and_choice",
+          "units": 24
+        },
+        {
+          "category": "output",
+          "operation": "immutable_base_and_live_forecast",
+          "units": 60
+        },
+        {
+          "category": "output",
+          "operation": "ordinary_provider:cnf_final_response_prepaid",
+          "units": 160
+        },
+        {
+          "category": "output",
+          "operation": "reserved_final_status_words",
+          "units": 64
+        },
+        {
+          "category": "output",
+          "operation": "terminal_and_knowledge_record",
+          "units": 48
+        },
+        {
+          "category": "setup",
+          "operation": "ordinary_local_method_configuration",
+          "units": 32
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_assignment_branch",
+          "units": 14
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_assignment_loop",
+          "units": 28
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_clause_branch",
+          "units": 24
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_clause_read",
+          "units": 48
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_horizon_shift",
+          "units": 4
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_literal_evaluate",
+          "units": 144
+        },
+        {
+          "category": "storage",
+          "operation": "base_statistics_retention",
+          "units": 48
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_local_controller_state",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:cnf_checked_receipt_words",
+          "units": 60
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:cnf_final_cleanup_prepaid",
+          "units": 180
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:unsat_assignment_tuple_write",
+          "units": 24
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:unsat_bit_tuple_capacity",
+          "units": 3
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:witness_word_read",
+          "units": 1
+        },
+        {
+          "category": "storage",
+          "operation": "reserved_failure_state_words",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "retained_issue_words",
+          "units": 88
+        }
+      ],
+      "reservations": {},
+      "total": 1598
+    },
+    "method": "proof_only",
+    "pending": null,
+    "price_record": {
+      "false_negative": [
+        1,
+        1
+      ],
+      "false_positive": [
+        1,
+        1
+      ],
+      "unit": [
+        0,
+        1
+      ]
+    },
+    "provider_failures": 0,
+    "purchase_count_meaning": "Physical provider attempts, including failures; exact cache uses are separate.",
+    "purchases": 2,
+    "random_bits_consumed": 0,
+    "randomness": null,
+    "remaining_requests": 0,
+    "rounds_closed": 2,
+    "rounds_issued": 2,
+    "setup_scope": "Local controller initialization included. Installed shared source registry is billed separately and equally by the experiment runner.",
+    "stage": "DEVELOPMENT",
+    "status": "success",
+    "successful_purchases": 2,
+    "successful_quota_contract": false,
+    "theorem_disposition": "Greedy marginal actions and optional/cached acquisition have no inherited randomized-action/one-cold-purchase guarantee.",
+    "trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 1,
+          "interval": [
+            1,
+            1
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 1,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 0,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 0,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 0
+      }
+    ],
+    "version": "p308-ordinary-controllers-v1.3",
+    "weights": null
+  },
+  "dpll_failed_proof_cap": {
+    "blocks": [],
+    "cache_hits": 0,
+    "cache_retained_words": 0,
+    "common_source_setup_included": false,
+    "configuration": {
+      "action_bits": 16,
+      "block_size": 4,
+      "cache_capacity": 0,
+      "fallback_action": 1,
+      "prior_cost_multiplier": [
+        1,
+        1
+      ],
+      "proof_cap": 64,
+      "proof_solver": "dpll",
+      "provider_limit": null,
+      "seed": 3081001,
+      "state_bits": null
+    },
+    "cost_estimate_meaning": "Public cold shape proxy or own prior successful full-call mean; fallible, with failures censored rather than treated as cheap completion.",
+    "cost_history": [],
+    "expectation_theorem_eligible": false,
+    "failed_full_calls_censored": 0,
+    "failure_detail": null,
+    "feedback_updates": 0,
+    "forecast_service": "Immutable forecast emitted before the current provider computation; current paid cache may supply an exact point.",
+    "invoices": [
+      {
+        "answer": null,
+        "checked": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "detail": "Tariff bundle denied before the described operation.",
+        "index": 0,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-sat",
+        "requested_cap": 64,
+        "resources": {
+          "by_category": {
+            "acquisition": 0,
+            "admission": 62,
+            "assessment": 0,
+            "cache": 0,
+            "check": 0,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 0,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 0,
+            "storage": 0
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 17
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 12
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            }
+          ],
+          "total": 62
+        },
+        "solver": "dpll",
+        "status": "budget_exhausted",
+        "witness": null
+      },
+      {
+        "answer": null,
+        "checked": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "detail": "Tariff bundle denied before the described operation.",
+        "index": 1,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-unsat",
+        "requested_cap": 64,
+        "resources": {
+          "by_category": {
+            "acquisition": 0,
+            "admission": 51,
+            "assessment": 0,
+            "cache": 0,
+            "check": 0,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 0,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 0,
+            "storage": 0
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 10
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            }
+          ],
+          "total": 51
+        },
+        "solver": "dpll",
+        "status": "budget_exhausted",
+        "witness": null
+      }
+    ],
+    "issued_trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      }
+    ],
+    "known_terminal_rounds": 0,
+    "local_setup_units": 32,
+    "meter": {
+      "by_category": {
+        "acquisition": 0,
+        "admission": 185,
+        "assessment": 0,
+        "cache": 0,
+        "check": 76,
+        "controller": 24,
+        "dependency_compile": 0,
+        "forecast": 0,
+        "output": 172,
+        "profile": 0,
+        "randomness": 0,
+        "repair_search": 0,
+        "setup": 32,
+        "solve": 0,
+        "storage": 200
+      },
+      "denials": 0,
+      "limit_total": 4611686018427387903,
+      "operations": [
+        {
+          "category": "admission",
+          "operation": "ordinary_episode_method_and_tape",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_exact_price_inputs",
+          "units": 24
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_canonical_order_comparisons",
+          "units": 25
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_exact_query_type",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_input_identity_words",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_literal_validation",
+          "units": 20
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_scalar_and_version_validation",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_solver_name_check",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_whole_tape_shape_validation",
+          "units": 32
+        },
+        {
+          "category": "check",
+          "operation": "owned_receipt_identity_status_version",
+          "units": 76
+        },
+        {
+          "category": "controller",
+          "operation": "ordinary_provider_cap_and_choice",
+          "units": 24
+        },
+        {
+          "category": "output",
+          "operation": "immutable_base_and_live_forecast",
+          "units": 60
+        },
+        {
+          "category": "output",
+          "operation": "reserved_final_status_words",
+          "units": 64
+        },
+        {
+          "category": "output",
+          "operation": "terminal_and_knowledge_record",
+          "units": 48
+        },
+        {
+          "category": "setup",
+          "operation": "ordinary_local_method_configuration",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "base_statistics_retention",
+          "units": 48
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_local_controller_state",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "reserved_failure_state_words",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "retained_issue_words",
+          "units": 88
+        }
+      ],
+      "reservations": {},
+      "total": 689
+    },
+    "method": "proof_only",
+    "pending": null,
+    "price_record": {
+      "false_negative": [
+        1,
+        1
+      ],
+      "false_positive": [
+        1,
+        1
+      ],
+      "unit": [
+        0,
+        1
+      ]
+    },
+    "provider_failures": 2,
+    "purchase_count_meaning": "Physical provider attempts, including failures; exact cache uses are separate.",
+    "purchases": 2,
+    "random_bits_consumed": 0,
+    "randomness": null,
+    "remaining_requests": 0,
+    "rounds_closed": 2,
+    "rounds_issued": 2,
+    "setup_scope": "Local controller initialization included. Installed shared source registry is billed separately and equally by the experiment runner.",
+    "stage": "DEVELOPMENT",
+    "status": "success",
+    "successful_purchases": 0,
+    "successful_quota_contract": false,
+    "theorem_disposition": "Greedy marginal actions and optional/cached acquisition have no inherited randomized-action/one-cold-purchase guarantee.",
+    "trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      }
+    ],
+    "version": "p308-ordinary-controllers-v1.3",
+    "weights": null
+  },
+  "dpll_failed_provider_limit": {
+    "blocks": [],
+    "cache_hits": 0,
+    "cache_retained_words": 0,
+    "common_source_setup_included": false,
+    "configuration": {
+      "action_bits": 16,
+      "block_size": 4,
+      "cache_capacity": 0,
+      "fallback_action": 1,
+      "prior_cost_multiplier": [
+        1,
+        1
+      ],
+      "proof_cap": 21936,
+      "proof_solver": "dpll",
+      "provider_limit": 64,
+      "seed": 3081001,
+      "state_bits": null
+    },
+    "cost_estimate_meaning": "Public cold shape proxy or own prior successful full-call mean; fallible, with failures censored rather than treated as cheap completion.",
+    "cost_history": [],
+    "expectation_theorem_eligible": false,
+    "failed_full_calls_censored": 0,
+    "failure_detail": null,
+    "feedback_updates": 0,
+    "forecast_service": "Immutable forecast emitted before the current provider computation; current paid cache may supply an exact point.",
+    "invoices": [
+      {
+        "answer": null,
+        "checked": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "detail": "Tariff bundle denied before the described operation.",
+        "index": 0,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-sat",
+        "requested_cap": 64,
+        "resources": {
+          "by_category": {
+            "acquisition": 0,
+            "admission": 62,
+            "assessment": 0,
+            "cache": 0,
+            "check": 0,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 0,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 0,
+            "storage": 0
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 17
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 12
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            }
+          ],
+          "total": 62
+        },
+        "solver": "dpll",
+        "status": "budget_exhausted",
+        "witness": null
+      },
+      {
+        "answer": null,
+        "checked": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "detail": "Tariff bundle denied before the described operation.",
+        "index": 1,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-unsat",
+        "requested_cap": 64,
+        "resources": {
+          "by_category": {
+            "acquisition": 0,
+            "admission": 51,
+            "assessment": 0,
+            "cache": 0,
+            "check": 0,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 0,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 0,
+            "storage": 0
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 10
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            }
+          ],
+          "total": 51
+        },
+        "solver": "dpll",
+        "status": "budget_exhausted",
+        "witness": null
+      }
+    ],
+    "issued_trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      }
+    ],
+    "known_terminal_rounds": 0,
+    "local_setup_units": 32,
+    "meter": {
+      "by_category": {
+        "acquisition": 0,
+        "admission": 185,
+        "assessment": 0,
+        "cache": 0,
+        "check": 76,
+        "controller": 24,
+        "dependency_compile": 0,
+        "forecast": 0,
+        "output": 172,
+        "profile": 0,
+        "randomness": 0,
+        "repair_search": 0,
+        "setup": 32,
+        "solve": 0,
+        "storage": 200
+      },
+      "denials": 0,
+      "limit_total": 4611686018427387903,
+      "operations": [
+        {
+          "category": "admission",
+          "operation": "ordinary_episode_method_and_tape",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_exact_price_inputs",
+          "units": 24
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_canonical_order_comparisons",
+          "units": 25
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_exact_query_type",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_input_identity_words",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_literal_validation",
+          "units": 20
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_scalar_and_version_validation",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_solver_name_check",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_whole_tape_shape_validation",
+          "units": 32
+        },
+        {
+          "category": "check",
+          "operation": "owned_receipt_identity_status_version",
+          "units": 76
+        },
+        {
+          "category": "controller",
+          "operation": "ordinary_provider_cap_and_choice",
+          "units": 24
+        },
+        {
+          "category": "output",
+          "operation": "immutable_base_and_live_forecast",
+          "units": 60
+        },
+        {
+          "category": "output",
+          "operation": "reserved_final_status_words",
+          "units": 64
+        },
+        {
+          "category": "output",
+          "operation": "terminal_and_knowledge_record",
+          "units": 48
+        },
+        {
+          "category": "setup",
+          "operation": "ordinary_local_method_configuration",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "base_statistics_retention",
+          "units": 48
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_local_controller_state",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "reserved_failure_state_words",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "retained_issue_words",
+          "units": 88
+        }
+      ],
+      "reservations": {},
+      "total": 689
+    },
+    "method": "proof_only",
+    "pending": null,
+    "price_record": {
+      "false_negative": [
+        1,
+        1
+      ],
+      "false_positive": [
+        1,
+        1
+      ],
+      "unit": [
+        0,
+        1
+      ]
+    },
+    "provider_failures": 2,
+    "purchase_count_meaning": "Physical provider attempts, including failures; exact cache uses are separate.",
+    "purchases": 2,
+    "random_bits_consumed": 0,
+    "randomness": null,
+    "remaining_requests": 0,
+    "rounds_closed": 2,
+    "rounds_issued": 2,
+    "setup_scope": "Local controller initialization included. Installed shared source registry is billed separately and equally by the experiment runner.",
+    "stage": "DEVELOPMENT",
+    "status": "success",
+    "successful_purchases": 0,
+    "successful_quota_contract": false,
+    "theorem_disposition": "Greedy marginal actions and optional/cached acquisition have no inherited randomized-action/one-cold-purchase guarantee.",
+    "trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      }
+    ],
+    "version": "p308-ordinary-controllers-v1.3",
+    "weights": null
+  },
+  "dpll_full_public_cap": {
+    "blocks": [],
+    "cache_hits": 0,
+    "cache_retained_words": 0,
+    "common_source_setup_included": false,
+    "configuration": {
+      "action_bits": 16,
+      "block_size": 4,
+      "cache_capacity": 0,
+      "fallback_action": 0,
+      "prior_cost_multiplier": [
+        1,
+        1
+      ],
+      "proof_cap": 21936,
+      "proof_solver": "dpll",
+      "provider_limit": null,
+      "seed": 3081001,
+      "state_bits": null
+    },
+    "cost_estimate_meaning": "Public cold shape proxy or own prior successful full-call mean; fallible, with failures censored rather than treated as cheap completion.",
+    "cost_history": [],
+    "expectation_theorem_eligible": false,
+    "failed_full_calls_censored": 0,
+    "failure_detail": null,
+    "feedback_updates": 0,
+    "forecast_service": "Immutable forecast emitted before the current provider computation; current paid cache may supply an exact point.",
+    "invoices": [
+      {
+        "answer": 1,
+        "checked": true,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "detail": "SAT witness checked",
+        "index": 0,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-sat",
+        "requested_cap": 21936,
+        "resources": {
+          "by_category": {
+            "acquisition": 8,
+            "admission": 62,
+            "assessment": 0,
+            "cache": 0,
+            "check": 37,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 81,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 162,
+            "storage": 150
+          },
+          "operations": [
+            {
+              "category": "acquisition",
+              "operation": "cnf_checked_answer_release",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 17
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 12
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_checker_agreement",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_type_check",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "witness_clause_begin",
+              "units": 6
+            },
+            {
+              "category": "check",
+              "operation": "witness_clause_conjunction",
+              "units": 3
+            },
+            {
+              "category": "check",
+              "operation": "witness_literal_shift_sign_compare",
+              "units": 18
+            },
+            {
+              "category": "check",
+              "operation": "witness_scalar_range",
+              "units": 4
+            },
+            {
+              "category": "output",
+              "operation": "cnf_final_response_prepaid",
+              "units": 81
+            },
+            {
+              "category": "solve",
+              "operation": "dpll_clause_read",
+              "units": 12
+            },
+            {
+              "category": "solve",
+              "operation": "dpll_clause_status_branch",
+              "units": 18
+            },
+            {
+              "category": "solve",
+              "operation": "dpll_formula_status_branch",
+              "units": 2
+            },
+            {
+              "category": "solve",
+              "operation": "dpll_literal_read_assignment",
+              "units": 48
+            },
+            {
+              "category": "solve",
+              "operation": "dpll_node_enter",
+              "units": 4
+            },
+            {
+              "category": "solve",
+              "operation": "dpll_polarity_collect",
+              "units": 12
+            },
+            {
+              "category": "solve",
+              "operation": "dpll_propagation_pass_begin",
+              "units": 8
+            },
+            {
+              "category": "solve",
+              "operation": "dpll_unit_assignment_check",
+              "units": 24
+            },
+            {
+              "category": "solve",
+              "operation": "dpll_unknown_literal_membership",
+              "units": 3
+            },
+            {
+              "category": "solve",
+              "operation": "simple_contradiction_array_initialization",
+              "units": 4
+            },
+            {
+              "category": "solve",
+              "operation": "simple_contradiction_clause_shape",
+              "units": 9
+            },
+            {
+              "category": "solve",
+              "operation": "simple_contradiction_unit_lookup",
+              "units": 18
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_checked_receipt_words",
+              "units": 31
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_final_cleanup_prepaid",
+              "units": 91
+            },
+            {
+              "category": "storage",
+              "operation": "dpll_frame_words",
+              "units": 4
+            },
+            {
+              "category": "storage",
+              "operation": "dpll_unit_write",
+              "units": 3
+            },
+            {
+              "category": "storage",
+              "operation": "dpll_unknown_literal_write",
+              "units": 3
+            },
+            {
+              "category": "storage",
+              "operation": "dpll_unresolved_clause_write",
+              "units": 6
+            },
+            {
+              "category": "storage",
+              "operation": "simple_contradiction_clause_indices",
+              "units": 8
+            },
+            {
+              "category": "storage",
+              "operation": "simple_contradiction_unit_index_write",
+              "units": 3
+            },
+            {
+              "category": "storage",
+              "operation": "witness_word_read",
+              "units": 1
+            }
+          ],
+          "total": 500
+        },
+        "solver": "dpll",
+        "status": "success",
+        "witness": 5
+      },
+      {
+        "answer": 0,
+        "checked": true,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "detail": "UNSAT cheap contradiction checked",
+        "index": 1,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-unsat",
+        "requested_cap": 18832,
+        "resources": {
+          "by_category": {
+            "acquisition": 8,
+            "admission": 51,
+            "assessment": 0,
+            "cache": 0,
+            "check": 24,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 79,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 22,
+            "storage": 128
+          },
+          "operations": [
+            {
+              "category": "acquisition",
+              "operation": "cnf_checked_answer_release",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 10
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_checker_agreement",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_type_check",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "opposing_unit_indices_and_literals",
+              "units": 12
+            },
+            {
+              "category": "check",
+              "operation": "simple_contradiction_proof_shape",
+              "units": 6
+            },
+            {
+              "category": "output",
+              "operation": "cnf_final_response_prepaid",
+              "units": 79
+            },
+            {
+              "category": "solve",
+              "operation": "simple_contradiction_array_initialization",
+              "units": 4
+            },
+            {
+              "category": "solve",
+              "operation": "simple_contradiction_clause_shape",
+              "units": 6
+            },
+            {
+              "category": "solve",
+              "operation": "simple_contradiction_unit_lookup",
+              "units": 12
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_checked_receipt_words",
+              "units": 29
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_final_cleanup_prepaid",
+              "units": 89
+            },
+            {
+              "category": "storage",
+              "operation": "simple_contradiction_clause_indices",
+              "units": 8
+            },
+            {
+              "category": "storage",
+              "operation": "simple_contradiction_unit_index_write",
+              "units": 2
+            }
+          ],
+          "total": 312
+        },
+        "solver": "dpll",
+        "status": "success",
+        "witness": null
+      }
+    ],
+    "issued_trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 1,
+          "interval": [
+            1,
+            1
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 1,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 0,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 0,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 0
+      }
+    ],
+    "known_terminal_rounds": 2,
+    "local_setup_units": 32,
+    "meter": {
+      "by_category": {
+        "acquisition": 16,
+        "admission": 185,
+        "assessment": 0,
+        "cache": 0,
+        "check": 137,
+        "controller": 24,
+        "dependency_compile": 0,
+        "forecast": 0,
+        "output": 332,
+        "profile": 0,
+        "randomness": 0,
+        "repair_search": 0,
+        "setup": 32,
+        "solve": 184,
+        "storage": 478
+      },
+      "denials": 0,
+      "limit_total": 4611686018427387903,
+      "operations": [
+        {
+          "category": "acquisition",
+          "operation": "ordinary_provider:cnf_checked_answer_release",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_episode_method_and_tape",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_exact_price_inputs",
+          "units": 24
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_canonical_order_comparisons",
+          "units": 25
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_exact_query_type",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_input_identity_words",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_literal_validation",
+          "units": 20
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_scalar_and_version_validation",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_solver_name_check",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_whole_tape_shape_validation",
+          "units": 32
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:cnf_candidate_checker_agreement",
+          "units": 4
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:cnf_candidate_type_check",
+          "units": 8
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:opposing_unit_indices_and_literals",
+          "units": 12
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:simple_contradiction_proof_shape",
+          "units": 6
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_clause_begin",
+          "units": 6
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_clause_conjunction",
+          "units": 3
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_literal_shift_sign_compare",
+          "units": 18
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_scalar_range",
+          "units": 4
+        },
+        {
+          "category": "check",
+          "operation": "owned_receipt_identity_status_version",
+          "units": 76
+        },
+        {
+          "category": "controller",
+          "operation": "ordinary_provider_cap_and_choice",
+          "units": 24
+        },
+        {
+          "category": "output",
+          "operation": "immutable_base_and_live_forecast",
+          "units": 60
+        },
+        {
+          "category": "output",
+          "operation": "ordinary_provider:cnf_final_response_prepaid",
+          "units": 160
+        },
+        {
+          "category": "output",
+          "operation": "reserved_final_status_words",
+          "units": 64
+        },
+        {
+          "category": "output",
+          "operation": "terminal_and_knowledge_record",
+          "units": 48
+        },
+        {
+          "category": "setup",
+          "operation": "ordinary_local_method_configuration",
+          "units": 32
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:dpll_clause_read",
+          "units": 12
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:dpll_clause_status_branch",
+          "units": 18
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:dpll_formula_status_branch",
+          "units": 2
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:dpll_literal_read_assignment",
+          "units": 48
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:dpll_node_enter",
+          "units": 4
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:dpll_polarity_collect",
+          "units": 12
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:dpll_propagation_pass_begin",
+          "units": 8
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:dpll_unit_assignment_check",
+          "units": 24
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:dpll_unknown_literal_membership",
+          "units": 3
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:simple_contradiction_array_initialization",
+          "units": 8
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:simple_contradiction_clause_shape",
+          "units": 15
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:simple_contradiction_unit_lookup",
+          "units": 30
+        },
+        {
+          "category": "storage",
+          "operation": "base_statistics_retention",
+          "units": 48
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_local_controller_state",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:cnf_checked_receipt_words",
+          "units": 60
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:cnf_final_cleanup_prepaid",
+          "units": 180
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:dpll_frame_words",
+          "units": 4
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:dpll_unit_write",
+          "units": 3
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:dpll_unknown_literal_write",
+          "units": 3
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:dpll_unresolved_clause_write",
+          "units": 6
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:simple_contradiction_clause_indices",
+          "units": 16
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:simple_contradiction_unit_index_write",
+          "units": 5
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:witness_word_read",
+          "units": 1
+        },
+        {
+          "category": "storage",
+          "operation": "reserved_failure_state_words",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "retained_issue_words",
+          "units": 88
+        }
+      ],
+      "reservations": {},
+      "total": 1388
+    },
+    "method": "proof_only",
+    "pending": null,
+    "price_record": {
+      "false_negative": [
+        1,
+        1
+      ],
+      "false_positive": [
+        1,
+        1
+      ],
+      "unit": [
+        0,
+        1
+      ]
+    },
+    "provider_failures": 0,
+    "purchase_count_meaning": "Physical provider attempts, including failures; exact cache uses are separate.",
+    "purchases": 2,
+    "random_bits_consumed": 0,
+    "randomness": null,
+    "remaining_requests": 0,
+    "rounds_closed": 2,
+    "rounds_issued": 2,
+    "setup_scope": "Local controller initialization included. Installed shared source registry is billed separately and equally by the experiment runner.",
+    "stage": "DEVELOPMENT",
+    "status": "success",
+    "successful_purchases": 2,
+    "successful_quota_contract": false,
+    "theorem_disposition": "Greedy marginal actions and optional/cached acquisition have no inherited randomized-action/one-cold-purchase guarantee.",
+    "trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 1,
+          "interval": [
+            1,
+            1
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 1,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 0,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 0,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 0
+      }
+    ],
+    "version": "p308-ordinary-controllers-v1.3",
+    "weights": null
+  },
+  "enumeration_failed_proof_cap": {
+    "blocks": [],
+    "cache_hits": 0,
+    "cache_retained_words": 0,
+    "common_source_setup_included": false,
+    "configuration": {
+      "action_bits": 16,
+      "block_size": 4,
+      "cache_capacity": 0,
+      "fallback_action": 1,
+      "prior_cost_multiplier": [
+        1,
+        1
+      ],
+      "proof_cap": 64,
+      "proof_solver": "enumeration",
+      "provider_limit": null,
+      "seed": 3081001,
+      "state_bits": null
+    },
+    "cost_estimate_meaning": "Public cold shape proxy or own prior successful full-call mean; fallible, with failures censored rather than treated as cheap completion.",
+    "cost_history": [],
+    "expectation_theorem_eligible": false,
+    "failed_full_calls_censored": 0,
+    "failure_detail": null,
+    "feedback_updates": 0,
+    "forecast_service": "Immutable forecast emitted before the current provider computation; current paid cache may supply an exact point.",
+    "invoices": [
+      {
+        "answer": null,
+        "checked": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "detail": "Tariff bundle denied before the described operation.",
+        "index": 0,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-sat",
+        "requested_cap": 64,
+        "resources": {
+          "by_category": {
+            "acquisition": 0,
+            "admission": 62,
+            "assessment": 0,
+            "cache": 0,
+            "check": 0,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 0,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 0,
+            "storage": 0
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 17
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 12
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            }
+          ],
+          "total": 62
+        },
+        "solver": "enumeration",
+        "status": "budget_exhausted",
+        "witness": null
+      },
+      {
+        "answer": null,
+        "checked": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "detail": "Tariff bundle denied before the described operation.",
+        "index": 1,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-unsat",
+        "requested_cap": 64,
+        "resources": {
+          "by_category": {
+            "acquisition": 0,
+            "admission": 51,
+            "assessment": 0,
+            "cache": 0,
+            "check": 0,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 0,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 0,
+            "storage": 0
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 10
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            }
+          ],
+          "total": 51
+        },
+        "solver": "enumeration",
+        "status": "budget_exhausted",
+        "witness": null
+      }
+    ],
+    "issued_trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      }
+    ],
+    "known_terminal_rounds": 0,
+    "local_setup_units": 32,
+    "meter": {
+      "by_category": {
+        "acquisition": 0,
+        "admission": 185,
+        "assessment": 0,
+        "cache": 0,
+        "check": 76,
+        "controller": 24,
+        "dependency_compile": 0,
+        "forecast": 0,
+        "output": 172,
+        "profile": 0,
+        "randomness": 0,
+        "repair_search": 0,
+        "setup": 32,
+        "solve": 0,
+        "storage": 200
+      },
+      "denials": 0,
+      "limit_total": 4611686018427387903,
+      "operations": [
+        {
+          "category": "admission",
+          "operation": "ordinary_episode_method_and_tape",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_exact_price_inputs",
+          "units": 24
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_canonical_order_comparisons",
+          "units": 25
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_exact_query_type",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_input_identity_words",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_literal_validation",
+          "units": 20
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_scalar_and_version_validation",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_solver_name_check",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_whole_tape_shape_validation",
+          "units": 32
+        },
+        {
+          "category": "check",
+          "operation": "owned_receipt_identity_status_version",
+          "units": 76
+        },
+        {
+          "category": "controller",
+          "operation": "ordinary_provider_cap_and_choice",
+          "units": 24
+        },
+        {
+          "category": "output",
+          "operation": "immutable_base_and_live_forecast",
+          "units": 60
+        },
+        {
+          "category": "output",
+          "operation": "reserved_final_status_words",
+          "units": 64
+        },
+        {
+          "category": "output",
+          "operation": "terminal_and_knowledge_record",
+          "units": 48
+        },
+        {
+          "category": "setup",
+          "operation": "ordinary_local_method_configuration",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "base_statistics_retention",
+          "units": 48
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_local_controller_state",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "reserved_failure_state_words",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "retained_issue_words",
+          "units": 88
+        }
+      ],
+      "reservations": {},
+      "total": 689
+    },
+    "method": "proof_only",
+    "pending": null,
+    "price_record": {
+      "false_negative": [
+        1,
+        1
+      ],
+      "false_positive": [
+        1,
+        1
+      ],
+      "unit": [
+        0,
+        1
+      ]
+    },
+    "provider_failures": 2,
+    "purchase_count_meaning": "Physical provider attempts, including failures; exact cache uses are separate.",
+    "purchases": 2,
+    "random_bits_consumed": 0,
+    "randomness": null,
+    "remaining_requests": 0,
+    "rounds_closed": 2,
+    "rounds_issued": 2,
+    "setup_scope": "Local controller initialization included. Installed shared source registry is billed separately and equally by the experiment runner.",
+    "stage": "DEVELOPMENT",
+    "status": "success",
+    "successful_purchases": 0,
+    "successful_quota_contract": false,
+    "theorem_disposition": "Greedy marginal actions and optional/cached acquisition have no inherited randomized-action/one-cold-purchase guarantee.",
+    "trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      }
+    ],
+    "version": "p308-ordinary-controllers-v1.3",
+    "weights": null
+  },
+  "enumeration_failed_provider_limit": {
+    "blocks": [],
+    "cache_hits": 0,
+    "cache_retained_words": 0,
+    "common_source_setup_included": false,
+    "configuration": {
+      "action_bits": 16,
+      "block_size": 4,
+      "cache_capacity": 0,
+      "fallback_action": 1,
+      "prior_cost_multiplier": [
+        1,
+        1
+      ],
+      "proof_cap": 6896,
+      "proof_solver": "enumeration",
+      "provider_limit": 64,
+      "seed": 3081001,
+      "state_bits": null
+    },
+    "cost_estimate_meaning": "Public cold shape proxy or own prior successful full-call mean; fallible, with failures censored rather than treated as cheap completion.",
+    "cost_history": [],
+    "expectation_theorem_eligible": false,
+    "failed_full_calls_censored": 0,
+    "failure_detail": null,
+    "feedback_updates": 0,
+    "forecast_service": "Immutable forecast emitted before the current provider computation; current paid cache may supply an exact point.",
+    "invoices": [
+      {
+        "answer": null,
+        "checked": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "detail": "Tariff bundle denied before the described operation.",
+        "index": 0,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-sat",
+        "requested_cap": 64,
+        "resources": {
+          "by_category": {
+            "acquisition": 0,
+            "admission": 62,
+            "assessment": 0,
+            "cache": 0,
+            "check": 0,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 0,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 0,
+            "storage": 0
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 17
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 12
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            }
+          ],
+          "total": 62
+        },
+        "solver": "enumeration",
+        "status": "budget_exhausted",
+        "witness": null
+      },
+      {
+        "answer": null,
+        "checked": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "detail": "Tariff bundle denied before the described operation.",
+        "index": 1,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-unsat",
+        "requested_cap": 64,
+        "resources": {
+          "by_category": {
+            "acquisition": 0,
+            "admission": 51,
+            "assessment": 0,
+            "cache": 0,
+            "check": 0,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 0,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 0,
+            "storage": 0
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 10
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            }
+          ],
+          "total": 51
+        },
+        "solver": "enumeration",
+        "status": "budget_exhausted",
+        "witness": null
+      }
+    ],
+    "issued_trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      }
+    ],
+    "known_terminal_rounds": 0,
+    "local_setup_units": 32,
+    "meter": {
+      "by_category": {
+        "acquisition": 0,
+        "admission": 185,
+        "assessment": 0,
+        "cache": 0,
+        "check": 76,
+        "controller": 24,
+        "dependency_compile": 0,
+        "forecast": 0,
+        "output": 172,
+        "profile": 0,
+        "randomness": 0,
+        "repair_search": 0,
+        "setup": 32,
+        "solve": 0,
+        "storage": 200
+      },
+      "denials": 0,
+      "limit_total": 4611686018427387903,
+      "operations": [
+        {
+          "category": "admission",
+          "operation": "ordinary_episode_method_and_tape",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_exact_price_inputs",
+          "units": 24
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_canonical_order_comparisons",
+          "units": 25
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_exact_query_type",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_input_identity_words",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_literal_validation",
+          "units": 20
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_scalar_and_version_validation",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_solver_name_check",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_whole_tape_shape_validation",
+          "units": 32
+        },
+        {
+          "category": "check",
+          "operation": "owned_receipt_identity_status_version",
+          "units": 76
+        },
+        {
+          "category": "controller",
+          "operation": "ordinary_provider_cap_and_choice",
+          "units": 24
+        },
+        {
+          "category": "output",
+          "operation": "immutable_base_and_live_forecast",
+          "units": 60
+        },
+        {
+          "category": "output",
+          "operation": "reserved_final_status_words",
+          "units": 64
+        },
+        {
+          "category": "output",
+          "operation": "terminal_and_knowledge_record",
+          "units": 48
+        },
+        {
+          "category": "setup",
+          "operation": "ordinary_local_method_configuration",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "base_statistics_retention",
+          "units": 48
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_local_controller_state",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "reserved_failure_state_words",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "retained_issue_words",
+          "units": 88
+        }
+      ],
+      "reservations": {},
+      "total": 689
+    },
+    "method": "proof_only",
+    "pending": null,
+    "price_record": {
+      "false_negative": [
+        1,
+        1
+      ],
+      "false_positive": [
+        1,
+        1
+      ],
+      "unit": [
+        0,
+        1
+      ]
+    },
+    "provider_failures": 2,
+    "purchase_count_meaning": "Physical provider attempts, including failures; exact cache uses are separate.",
+    "purchases": 2,
+    "random_bits_consumed": 0,
+    "randomness": null,
+    "remaining_requests": 0,
+    "rounds_closed": 2,
+    "rounds_issued": 2,
+    "setup_scope": "Local controller initialization included. Installed shared source registry is billed separately and equally by the experiment runner.",
+    "stage": "DEVELOPMENT",
+    "status": "success",
+    "successful_purchases": 0,
+    "successful_quota_contract": false,
+    "theorem_disposition": "Greedy marginal actions and optional/cached acquisition have no inherited randomized-action/one-cold-purchase guarantee.",
+    "trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "budget_exhausted"
+          }
+        ],
+        "base_action": 1,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ],
+          "status": "unresolved"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 1,
+        "provider_status": "budget_exhausted",
+        "purchased": true,
+        "purchased_label": null,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      }
+    ],
+    "version": "p308-ordinary-controllers-v1.3",
+    "weights": null
+  },
+  "enumeration_full_public_cap": {
+    "blocks": [],
+    "cache_hits": 0,
+    "cache_retained_words": 0,
+    "common_source_setup_included": false,
+    "configuration": {
+      "action_bits": 16,
+      "block_size": 4,
+      "cache_capacity": 0,
+      "fallback_action": 0,
+      "prior_cost_multiplier": [
+        1,
+        1
+      ],
+      "proof_cap": 6896,
+      "proof_solver": "enumeration",
+      "provider_limit": null,
+      "seed": 3081001,
+      "state_bits": null
+    },
+    "cost_estimate_meaning": "Public cold shape proxy or own prior successful full-call mean; fallible, with failures censored rather than treated as cheap completion.",
+    "cost_history": [],
+    "expectation_theorem_eligible": false,
+    "failed_full_calls_censored": 0,
+    "failure_detail": null,
+    "feedback_updates": 0,
+    "forecast_service": "Immutable forecast emitted before the current provider computation; current paid cache may supply an exact point.",
+    "invoices": [
+      {
+        "answer": 1,
+        "checked": true,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "detail": "SAT witness checked",
+        "index": 0,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-sat",
+        "requested_cap": 6896,
+        "resources": {
+          "by_category": {
+            "acquisition": 8,
+            "admission": 62,
+            "assessment": 0,
+            "cache": 0,
+            "check": 37,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 81,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 128,
+            "storage": 123
+          },
+          "operations": [
+            {
+              "category": "acquisition",
+              "operation": "cnf_checked_answer_release",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 17
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 12
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_checker_agreement",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_type_check",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "witness_clause_begin",
+              "units": 6
+            },
+            {
+              "category": "check",
+              "operation": "witness_clause_conjunction",
+              "units": 3
+            },
+            {
+              "category": "check",
+              "operation": "witness_literal_shift_sign_compare",
+              "units": 18
+            },
+            {
+              "category": "check",
+              "operation": "witness_scalar_range",
+              "units": 4
+            },
+            {
+              "category": "output",
+              "operation": "cnf_final_response_prepaid",
+              "units": 81
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_assignment_branch",
+              "units": 6
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_assignment_loop",
+              "units": 12
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_clause_branch",
+              "units": 12
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_clause_read",
+              "units": 24
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_horizon_shift",
+              "units": 2
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_literal_evaluate",
+              "units": 72
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_checked_receipt_words",
+              "units": 31
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_final_cleanup_prepaid",
+              "units": 91
+            },
+            {
+              "category": "storage",
+              "operation": "witness_word_read",
+              "units": 1
+            }
+          ],
+          "total": 439
+        },
+        "solver": "enumeration",
+        "status": "success",
+        "witness": 5
+      },
+      {
+        "answer": 0,
+        "checked": true,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "detail": "UNSAT independently checked by all assignments",
+        "index": 1,
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "purpose": "bounded_proof",
+        "query_id": "proof-unsat",
+        "requested_cap": 6480,
+        "resources": {
+          "by_category": {
+            "acquisition": 8,
+            "admission": 51,
+            "assessment": 0,
+            "cache": 0,
+            "check": 166,
+            "controller": 0,
+            "dependency_compile": 0,
+            "forecast": 0,
+            "output": 79,
+            "profile": 0,
+            "randomness": 0,
+            "repair_search": 0,
+            "setup": 0,
+            "solve": 134,
+            "storage": 145
+          },
+          "operations": [
+            {
+              "category": "acquisition",
+              "operation": "cnf_checked_answer_release",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 10
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 15
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_checker_agreement",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_type_check",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "unsat_assignment_existence_test",
+              "units": 8
+            },
+            {
+              "category": "check",
+              "operation": "unsat_assignment_tuple_generate",
+              "units": 40
+            },
+            {
+              "category": "check",
+              "operation": "unsat_clause_begin",
+              "units": 24
+            },
+            {
+              "category": "check",
+              "operation": "unsat_clause_conjunction",
+              "units": 12
+            },
+            {
+              "category": "check",
+              "operation": "unsat_product_initialization",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "unsat_signed_literal_index_compare",
+              "units": 72
+            },
+            {
+              "category": "output",
+              "operation": "cnf_final_response_prepaid",
+              "units": 79
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_assignment_branch",
+              "units": 8
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_assignment_loop",
+              "units": 16
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_clause_branch",
+              "units": 12
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_clause_read",
+              "units": 24
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_horizon_shift",
+              "units": 2
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_literal_evaluate",
+              "units": 72
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_checked_receipt_words",
+              "units": 29
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_final_cleanup_prepaid",
+              "units": 89
+            },
+            {
+              "category": "storage",
+              "operation": "unsat_assignment_tuple_write",
+              "units": 24
+            },
+            {
+              "category": "storage",
+              "operation": "unsat_bit_tuple_capacity",
+              "units": 3
+            }
+          ],
+          "total": 583
+        },
+        "solver": "enumeration",
+        "status": "success",
+        "witness": null
+      }
+    ],
+    "issued_trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 1,
+          "interval": [
+            1,
+            1
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 1,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 0,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 0,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 0
+      }
+    ],
+    "known_terminal_rounds": 2,
+    "local_setup_units": 32,
+    "meter": {
+      "by_category": {
+        "acquisition": 16,
+        "admission": 185,
+        "assessment": 0,
+        "cache": 0,
+        "check": 279,
+        "controller": 24,
+        "dependency_compile": 0,
+        "forecast": 0,
+        "output": 332,
+        "profile": 0,
+        "randomness": 0,
+        "repair_search": 0,
+        "setup": 32,
+        "solve": 262,
+        "storage": 468
+      },
+      "denials": 0,
+      "limit_total": 4611686018427387903,
+      "operations": [
+        {
+          "category": "acquisition",
+          "operation": "ordinary_provider:cnf_checked_answer_release",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_episode_method_and_tape",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_exact_price_inputs",
+          "units": 24
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_canonical_order_comparisons",
+          "units": 25
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_exact_query_type",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_input_identity_words",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_literal_validation",
+          "units": 20
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_scalar_and_version_validation",
+          "units": 32
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_provider:cnf_solver_name_check",
+          "units": 2
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_whole_tape_shape_validation",
+          "units": 32
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:cnf_candidate_checker_agreement",
+          "units": 4
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:cnf_candidate_type_check",
+          "units": 8
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_assignment_existence_test",
+          "units": 8
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_assignment_tuple_generate",
+          "units": 40
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_clause_begin",
+          "units": 24
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_clause_conjunction",
+          "units": 12
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_product_initialization",
+          "units": 4
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:unsat_signed_literal_index_compare",
+          "units": 72
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_clause_begin",
+          "units": 6
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_clause_conjunction",
+          "units": 3
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_literal_shift_sign_compare",
+          "units": 18
+        },
+        {
+          "category": "check",
+          "operation": "ordinary_provider:witness_scalar_range",
+          "units": 4
+        },
+        {
+          "category": "check",
+          "operation": "owned_receipt_identity_status_version",
+          "units": 76
+        },
+        {
+          "category": "controller",
+          "operation": "ordinary_provider_cap_and_choice",
+          "units": 24
+        },
+        {
+          "category": "output",
+          "operation": "immutable_base_and_live_forecast",
+          "units": 60
+        },
+        {
+          "category": "output",
+          "operation": "ordinary_provider:cnf_final_response_prepaid",
+          "units": 160
+        },
+        {
+          "category": "output",
+          "operation": "reserved_final_status_words",
+          "units": 64
+        },
+        {
+          "category": "output",
+          "operation": "terminal_and_knowledge_record",
+          "units": 48
+        },
+        {
+          "category": "setup",
+          "operation": "ordinary_local_method_configuration",
+          "units": 32
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_assignment_branch",
+          "units": 14
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_assignment_loop",
+          "units": 28
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_clause_branch",
+          "units": 24
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_clause_read",
+          "units": 48
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_horizon_shift",
+          "units": 4
+        },
+        {
+          "category": "solve",
+          "operation": "ordinary_provider:enumeration_literal_evaluate",
+          "units": 144
+        },
+        {
+          "category": "storage",
+          "operation": "base_statistics_retention",
+          "units": 48
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_local_controller_state",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:cnf_checked_receipt_words",
+          "units": 60
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:cnf_final_cleanup_prepaid",
+          "units": 180
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:unsat_assignment_tuple_write",
+          "units": 24
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:unsat_bit_tuple_capacity",
+          "units": 3
+        },
+        {
+          "category": "storage",
+          "operation": "ordinary_provider:witness_word_read",
+          "units": 1
+        },
+        {
+          "category": "storage",
+          "operation": "reserved_failure_state_words",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "retained_issue_words",
+          "units": 88
+        }
+      ],
+      "reservations": {},
+      "total": 1598
+    },
+    "method": "proof_only",
+    "pending": null,
+    "price_record": {
+      "false_negative": [
+        1,
+        1
+      ],
+      "false_positive": [
+        1,
+        1
+      ],
+      "unit": [
+        0,
+        1
+      ]
+    },
+    "provider_failures": 0,
+    "purchase_count_meaning": "Physical provider attempts, including failures; exact cache uses are separate.",
+    "purchases": 2,
+    "random_bits_consumed": 0,
+    "randomness": null,
+    "remaining_requests": 0,
+    "rounds_closed": 2,
+    "rounds_issued": 2,
+    "setup_scope": "Local controller initialization included. Installed shared source registry is billed separately and equally by the experiment runner.",
+    "stage": "DEVELOPMENT",
+    "status": "success",
+    "successful_purchases": 2,
+    "successful_quota_contract": false,
+    "theorem_disposition": "Greedy marginal actions and optional/cached acquisition have no inherited randomized-action/one-cold-purchase guarantee.",
+    "trace": [
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 1,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 1,
+          "interval": [
+            1,
+            1
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 0,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 1,
+        "query_id": "proof-sat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 1
+      },
+      {
+        "advice": [],
+        "attempts": [
+          {
+            "kind": "proof_only",
+            "status": "success"
+          }
+        ],
+        "base_action": 0,
+        "base_q": [
+          32768,
+          65536
+        ],
+        "base_terminal": 0,
+        "block": 0,
+        "cached": false,
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          3,
+          [
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "cost_estimate": null,
+        "cost_estimate_source": null,
+        "emitted_q": [
+          32768,
+          65536
+        ],
+        "estimated_error_cost": null,
+        "forecast_immutable": true,
+        "hard_after": {
+          "answer": 0,
+          "interval": [
+            0,
+            0
+          ],
+          "status": "checked"
+        },
+        "hard_before": "unresolved",
+        "index": 1,
+        "propensity": null,
+        "prospective_action": 0,
+        "provider_status": "success",
+        "purchased": true,
+        "purchased_label": 0,
+        "query_id": "proof-unsat",
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1"
+        ],
+        "selected": false,
+        "terminal_action": 0
+      }
+    ],
+    "version": "p308-ordinary-controllers-v1.3",
+    "weights": null
+  },
+  "invalid_0": {
+    "blocks": [],
+    "common_source_setup_included": false,
+    "expectation_theorem_eligible": false,
+    "failure_detail": "Rejected: Proof solver must be enumeration or dpll.",
+    "invoices": [],
+    "local_setup_units": 0,
+    "meter": {
+      "by_category": {
+        "acquisition": 0,
+        "admission": 48,
+        "assessment": 0,
+        "cache": 0,
+        "check": 0,
+        "controller": 0,
+        "dependency_compile": 0,
+        "forecast": 0,
+        "output": 64,
+        "profile": 0,
+        "randomness": 0,
+        "repair_search": 0,
+        "setup": 0,
+        "solve": 0,
+        "storage": 32
+      },
+      "denials": 0,
+      "limit_total": 4611686018427387903,
+      "operations": [
+        {
+          "category": "admission",
+          "operation": "ordinary_episode_method_and_tape",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_whole_tape_shape_validation",
+          "units": 32
+        },
+        {
+          "category": "output",
+          "operation": "reserved_final_status_words",
+          "units": 64
+        },
+        {
+          "category": "storage",
+          "operation": "reserved_failure_state_words",
+          "units": 32
+        }
+      ],
+      "reservations": {},
+      "total": 144
+    },
+    "method": "proof_only",
+    "purchases": 0,
+    "rounds_closed": 0,
+    "stage": "DEVELOPMENT",
+    "status": "failed",
+    "successful_quota_contract": false,
+    "trace": [],
+    "version": "p308-ordinary-controllers-v1.3"
+  },
+  "invalid_oracle": {
+    "blocks": [],
+    "common_source_setup_included": false,
+    "expectation_theorem_eligible": false,
+    "failure_detail": "Rejected: Proof solver must be enumeration or dpll.",
+    "invoices": [],
+    "local_setup_units": 0,
+    "meter": {
+      "by_category": {
+        "acquisition": 0,
+        "admission": 48,
+        "assessment": 0,
+        "cache": 0,
+        "check": 0,
+        "controller": 0,
+        "dependency_compile": 0,
+        "forecast": 0,
+        "output": 64,
+        "profile": 0,
+        "randomness": 0,
+        "repair_search": 0,
+        "setup": 0,
+        "solve": 0,
+        "storage": 32
+      },
+      "denials": 0,
+      "limit_total": 4611686018427387903,
+      "operations": [
+        {
+          "category": "admission",
+          "operation": "ordinary_episode_method_and_tape",
+          "units": 16
+        },
+        {
+          "category": "admission",
+          "operation": "ordinary_whole_tape_shape_validation",
+          "units": 32
+        },
+        {
+          "category": "output",
+          "operation": "reserved_final_status_words",
+          "units": 64
+        },
+        {
+          "category": "storage",
+          "operation": "reserved_failure_state_words",
+          "units": 32
+        }
+      ],
+      "reservations": {},
+      "total": 144
+    },
+    "method": "proof_only",
+    "purchases": 0,
+    "rounds_closed": 0,
+    "stage": "DEVELOPMENT",
+    "status": "failed",
+    "successful_quota_contract": false,
+    "trace": [],
+    "version": "p308-ordinary-controllers-v1.3"
+  }
+}

@@ -3,7 +3,7 @@
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
 
-**Status: P3-01–07 complete at their declared task scopes.**
+**Status: P3-01–08 complete at their declared task scopes.**
 P3-01 supplies the questions and comparison contract; P3-02 supplies the
 [finite probability-information analysis](v3/derivations/02_probability_information.md).
 P3-03 supplies a [finite bounded uncertainty construction](v3/derivations/03_logical_uncertainty.md)
@@ -14,8 +14,8 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **754.515032780000 minutes**;
-**205.484967220000 minutes** remain to the 960-minute floor.
+Phase-three qualifying research is **844.753720675033 minutes**;
+**115.246279324967 minutes** remain to the 960-minute floor.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
 The [first 240-minute checkpoint](v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md)
@@ -42,7 +42,7 @@ five-question judgment. The selected **R-P3-B-A (option A) is COMPLETE**, with
 **90.146425900517 measured research minutes**. Its [additive checkpoint](v3/checkpoints/B_1_R_P3_B_A.md)
 and [current 21-duty overlay](v3/checkpoints/B_1_R_P3_B_A.v1.json) accept the finite
 paid-feedback and observable-performance guarantees and the source-specific
-ordinary-table cost obstruction. **Next: P3-08, unstarted.**
+ordinary-table cost obstruction. **P3-08 is COMPLETE at scoped U04 integration. Next: P3-09, recommended and unstarted.**
 Phase two remains complete; P3-C–D remain unattempted. P3-N01 is now
 **SUPPORTED at modest formal-adaptation and implementation-synthesis scope**;
 Q3 affirmative advantage over the strongest ordinary combination remains open. All executable evidence remains development; no final
@@ -283,7 +283,7 @@ performance superiority are separate claims and are not completion requirements.
 
 ## 6. Cycle III — build and run a discriminating challenge
 
-- [ ] **P3-08 — executable methods and ordinary controls. Research90.**
+- [x] **P3-08 — executable methods and ordinary controls. Research90.**
 
   Implement the accepted finite candidate, the proof/evaluation-only method,
   an ordinary probability-to-expected-cost method, a finite online predictor
@@ -293,6 +293,16 @@ performance superiority are separate claims and are not completion requirements.
   cost computation; randomizing task selection does not make their mathematical
   truth stochastic. Keep all development output labelled development. Artifact:
   `v3/experiments/development.md` with code and reproducible commands.
+
+  **Complete at finite owned-broker hard-state, paid-reporting and separate
+  structural integration scope**, with **90.238687895033 observed
+  research minutes**. The [development record](v3/experiments/development.md),
+  [closed session](v3/work_logs/P3_08_2026-10-10_S1.md) and
+  [21-duty overlay](v3/checkpoints/B_1_P3_08.md) retain all ordinary controls,
+  exact report/coupling checks, individual price windows and the adverse
+  ordinary-only balanced mean frontiers. P3-N01 remains supported at modest
+  synthesis scope; affirmative Q3 advantage stays open. All evidence is
+  DEVELOPMENT. No final challenge is frozen or exposed.
 
 - [ ] **P3-09 — freeze the final challenge. Research60.**
 
@@ -373,10 +383,10 @@ phase. Prospective replanning can replace an unstarted task with a better
 60/90-minute evidence chunk while retaining all five questions, the total
 floor, accepted obligations and the abandoned alternative's record.
 
-**Active repair queue: empty. P3-01–07 and selected recurrence R-P3-B-A are
+**Active repair queue: empty. P3-01–08 and selected recurrence R-P3-B-A are
 complete at their declared scopes. P3-A and P3-B retain their restricted PASS.
 P3-N01 is SUPPORTED at the recorded modest synthesis scope; its later author
-assessment remains open at P3-C. Next: P3-08, unstarted. P3-C–D remain
+assessment remains open at P3-C. Next: P3-09, recommended and unstarted. P3-C–D remain
 unattempted. Options B/C and R-P3-N01 are unselected.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original

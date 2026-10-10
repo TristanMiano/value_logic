@@ -1,0 +1,3141 @@
+{
+  "cases": [
+    {
+      "name": "source_binding",
+      "pass": true,
+      "result": {
+        "adapter_sha256": "6a7c5f28d2930d6b888638fddc86b486d95978f6e5da4823cb61dbf9c728bd1b",
+        "source_count": 10
+      },
+      "started_utc": "2026-10-10T17:21:55.805332+00:00"
+    },
+    {
+      "name": "new_id_and_accounting",
+      "pass": true,
+      "result": [
+        {
+          "audit_counts": {
+            "checked_cache_hits": 1,
+            "logical_selected_calls": 2,
+            "physical_cold_calls": 1
+          },
+          "direct_cache_hit_units": 123,
+          "expected_adapter_hit_units": 351,
+          "first": {
+            "answer": 0,
+            "checked": true,
+            "claim_key": [
+              "bounded-cnf-sat-v1",
+              "cnf-input-v1",
+              4,
+              [
+                [],
+                [
+                  1
+                ]
+              ]
+            ],
+            "detail": "Paid cold checked receipt retained",
+            "provider": "owned_cached_cnf_receipt",
+            "provider_version": "p308-selected-receipt-cache-v1",
+            "query_id": "new-id-first",
+            "resources": {
+              "by_category": {
+                "acquisition": 16,
+                "admission": 154,
+                "assessment": 0,
+                "cache": 0,
+                "check": 89,
+                "controller": 16,
+                "dependency_compile": 0,
+                "forecast": 0,
+                "output": 154,
+                "profile": 0,
+                "randomness": 0,
+                "repair_search": 0,
+                "setup": 0,
+                "solve": 7,
+                "storage": 230
+              },
+              "operations": [
+                {
+                  "category": "acquisition",
+                  "operation": "selected_cache_checked_answer_release",
+                  "units": 8
+                },
+                {
+                  "category": "acquisition",
+                  "operation": "selected_cache_cold_provider:cnf_checked_answer_release",
+                  "units": 8
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_cache_capacity_validation",
+                  "units": 2
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_canonical_order_comparisons",
+                  "units": 18
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_exact_query_type",
+                  "units": 2
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_input_identity_words",
+                  "units": 28
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_literal_validation",
+                  "units": 10
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_scalar_and_version_validation",
+                  "units": 32
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_canonical_order_comparisons",
+                  "units": 9
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_exact_query_type",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_input_identity_words",
+                  "units": 14
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_literal_validation",
+                  "units": 5
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_scalar_and_version_validation",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_solver_name_check",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_provider_contract",
+                  "units": 16
+                },
+                {
+                  "category": "check",
+                  "operation": "cnf_cache_receipt_binding",
+                  "units": 28
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_provider:cnf_candidate_checker_agreement",
+                  "units": 2
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_provider:cnf_candidate_type_check",
+                  "units": 4
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_provider:empty_clause_index_and_content",
+                  "units": 5
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_provider:simple_contradiction_proof_shape",
+                  "units": 6
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_receipt_binding",
+                  "units": 44
+                },
+                {
+                  "category": "controller",
+                  "operation": "selected_cache_cold_cap_and_reservation",
+                  "units": 8
+                },
+                {
+                  "category": "controller",
+                  "operation": "selected_cache_provider_call_counter",
+                  "units": 8
+                },
+                {
+                  "category": "output",
+                  "operation": "selected_cache_cold_provider:cnf_final_response_prepaid",
+                  "units": 78
+                },
+                {
+                  "category": "output",
+                  "operation": "selected_cache_final_receipt_prepaid",
+                  "units": 76
+                },
+                {
+                  "category": "solve",
+                  "operation": "selected_cache_cold_provider:simple_contradiction_array_initialization",
+                  "units": 4
+                },
+                {
+                  "category": "solve",
+                  "operation": "selected_cache_cold_provider:simple_contradiction_clause_shape",
+                  "units": 3
+                },
+                {
+                  "category": "storage",
+                  "operation": "cnf_cache_header_words",
+                  "units": 4
+                },
+                {
+                  "category": "storage",
+                  "operation": "cnf_cache_retained_entry_write",
+                  "units": 20
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_cold_provider:cnf_checked_receipt_words",
+                  "units": 28
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_cold_provider:cnf_final_cleanup_prepaid",
+                  "units": 92
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_cold_provider:simple_contradiction_clause_indices",
+                  "units": 10
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_call_state",
+                  "units": 32
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_record_words",
+                  "units": 44
+                }
+              ],
+              "total": 666
+            },
+            "status": "success",
+            "witness": null
+          },
+          "kind": "linear",
+          "second": {
+            "answer": 0,
+            "checked": true,
+            "claim_key": [
+              "bounded-cnf-sat-v1",
+              "cnf-input-v1",
+              4,
+              [
+                [],
+                [
+                  1
+                ]
+              ]
+            ],
+            "detail": "Paid current checked cache receipt",
+            "provider": "owned_cached_cnf_receipt",
+            "provider_version": "p308-selected-receipt-cache-v1",
+            "query_id": "new-id-second",
+            "resources": {
+              "by_category": {
+                "acquisition": 8,
+                "admission": 61,
+                "assessment": 0,
+                "cache": 13,
+                "check": 64,
+                "controller": 8,
+                "dependency_compile": 0,
+                "forecast": 0,
+                "output": 120,
+                "profile": 0,
+                "randomness": 0,
+                "repair_search": 0,
+                "setup": 0,
+                "solve": 0,
+                "storage": 77
+              },
+              "operations": [
+                {
+                  "category": "acquisition",
+                  "operation": "selected_cache_checked_answer_release",
+                  "units": 8
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_canonical_order_comparisons",
+                  "units": 9
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_exact_query_type",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_input_identity_words",
+                  "units": 14
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_literal_validation",
+                  "units": 5
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_scalar_and_version_validation",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_provider_contract",
+                  "units": 16
+                },
+                {
+                  "category": "cache",
+                  "operation": "cnf_cache_key_full_compare",
+                  "units": 13
+                },
+                {
+                  "category": "check",
+                  "operation": "cnf_cache_current_key_answer_binding",
+                  "units": 20
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_hit_receipt_binding",
+                  "units": 44
+                },
+                {
+                  "category": "controller",
+                  "operation": "selected_cache_provider_call_counter",
+                  "units": 8
+                },
+                {
+                  "category": "output",
+                  "operation": "cnf_cache_rebound_receipt_words",
+                  "units": 44
+                },
+                {
+                  "category": "output",
+                  "operation": "selected_cache_final_receipt_prepaid",
+                  "units": 76
+                },
+                {
+                  "category": "storage",
+                  "operation": "cnf_cache_entry_pointer_read",
+                  "units": 1
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_call_state",
+                  "units": 32
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_record_words",
+                  "units": 44
+                }
+              ],
+              "total": 351
+            },
+            "status": "success",
+            "witness": null
+          }
+        },
+        {
+          "audit_counts": {
+            "checked_cache_hits": 1,
+            "logical_selected_calls": 2,
+            "physical_cold_calls": 1
+          },
+          "direct_cache_hit_units": 186,
+          "expected_adapter_hit_units": 414,
+          "first": {
+            "answer": 0,
+            "checked": true,
+            "claim_key": [
+              "bounded-cnf-sat-v1",
+              "cnf-input-v1",
+              4,
+              [
+                [],
+                [
+                  1
+                ]
+              ]
+            ],
+            "detail": "Paid cold checked receipt retained",
+            "provider": "owned_cached_cnf_receipt",
+            "provider_version": "p308-selected-receipt-cache-v1",
+            "query_id": "new-id-first",
+            "resources": {
+              "by_category": {
+                "acquisition": 16,
+                "admission": 164,
+                "assessment": 0,
+                "cache": 40,
+                "check": 89,
+                "controller": 44,
+                "dependency_compile": 0,
+                "forecast": 0,
+                "output": 154,
+                "profile": 0,
+                "randomness": 0,
+                "repair_search": 0,
+                "setup": 0,
+                "solve": 7,
+                "storage": 474
+              },
+              "operations": [
+                {
+                  "category": "acquisition",
+                  "operation": "selected_cache_checked_answer_release",
+                  "units": 8
+                },
+                {
+                  "category": "acquisition",
+                  "operation": "selected_cache_cold_provider:cnf_checked_answer_release",
+                  "units": 8
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_canonical_order_comparisons",
+                  "units": 18
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_exact_query_type",
+                  "units": 2
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_input_identity_words",
+                  "units": 28
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_literal_validation",
+                  "units": 10
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_scalar_and_version_validation",
+                  "units": 32
+                },
+                {
+                  "category": "admission",
+                  "operation": "hashcache_bucket_helper_bounded_arguments",
+                  "units": 4
+                },
+                {
+                  "category": "admission",
+                  "operation": "hashcache_configuration_validation",
+                  "units": 4
+                },
+                {
+                  "category": "admission",
+                  "operation": "hashcache_key_helper_exact_query_type",
+                  "units": 4
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_canonical_order_comparisons",
+                  "units": 9
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_exact_query_type",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_input_identity_words",
+                  "units": 14
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_literal_validation",
+                  "units": 5
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_scalar_and_version_validation",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_solver_name_check",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_provider_contract",
+                  "units": 16
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_canonical_key_word_read",
+                  "units": 24
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_capacity_branch",
+                  "units": 2
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_digest_bucket_index",
+                  "units": 4
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_fifo_cursor_read_compare",
+                  "units": 2
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_sha256_input_block",
+                  "units": 4
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_temporary_buffer_release",
+                  "units": 4
+                },
+                {
+                  "category": "check",
+                  "operation": "hashcache_receipt_binding",
+                  "units": 28
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_provider:cnf_candidate_checker_agreement",
+                  "units": 2
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_provider:cnf_candidate_type_check",
+                  "units": 4
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_provider:empty_clause_index_and_content",
+                  "units": 5
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_provider:simple_contradiction_proof_shape",
+                  "units": 6
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_receipt_binding",
+                  "units": 44
+                },
+                {
+                  "category": "controller",
+                  "operation": "hashcache_canonical_word_encode",
+                  "units": 24
+                },
+                {
+                  "category": "controller",
+                  "operation": "hashcache_fifo_cursor_modulo_and_size",
+                  "units": 4
+                },
+                {
+                  "category": "controller",
+                  "operation": "selected_cache_cold_cap_and_reservation",
+                  "units": 8
+                },
+                {
+                  "category": "controller",
+                  "operation": "selected_cache_provider_call_counter",
+                  "units": 8
+                },
+                {
+                  "category": "output",
+                  "operation": "selected_cache_cold_provider:cnf_final_response_prepaid",
+                  "units": 78
+                },
+                {
+                  "category": "output",
+                  "operation": "selected_cache_final_receipt_prepaid",
+                  "units": 76
+                },
+                {
+                  "category": "solve",
+                  "operation": "selected_cache_cold_provider:simple_contradiction_array_initialization",
+                  "units": 4
+                },
+                {
+                  "category": "solve",
+                  "operation": "selected_cache_cold_provider:simple_contradiction_clause_shape",
+                  "units": 3
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_bucket_array_words",
+                  "units": 128
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_bucket_head_read",
+                  "units": 2
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_digest_words",
+                  "units": 8
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_encoding_buffer_words",
+                  "units": 24
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_fifo_cursor_count_size_write",
+                  "units": 3
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_fifo_slot_and_bucket_head_read",
+                  "units": 2
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_fifo_slot_array_words",
+                  "units": 64
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_header_words",
+                  "units": 8
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_insert_bucket_and_slot_write",
+                  "units": 2
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_retained_entry_write",
+                  "units": 27
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_cold_provider:cnf_checked_receipt_words",
+                  "units": 28
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_cold_provider:cnf_final_cleanup_prepaid",
+                  "units": 92
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_cold_provider:simple_contradiction_clause_indices",
+                  "units": 10
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_call_state",
+                  "units": 32
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_record_words",
+                  "units": 44
+                }
+              ],
+              "total": 988
+            },
+            "status": "success",
+            "witness": null
+          },
+          "kind": "hashed",
+          "second": {
+            "answer": 0,
+            "checked": true,
+            "claim_key": [
+              "bounded-cnf-sat-v1",
+              "cnf-input-v1",
+              4,
+              [
+                [],
+                [
+                  1
+                ]
+              ]
+            ],
+            "detail": "Paid current checked cache receipt",
+            "provider": "owned_cached_cnf_receipt",
+            "provider_version": "p308-selected-receipt-cache-v1",
+            "query_id": "new-id-second",
+            "resources": {
+              "by_category": {
+                "acquisition": 8,
+                "admission": 65,
+                "assessment": 0,
+                "cache": 38,
+                "check": 64,
+                "controller": 20,
+                "dependency_compile": 0,
+                "forecast": 0,
+                "output": 120,
+                "profile": 0,
+                "randomness": 0,
+                "repair_search": 0,
+                "setup": 0,
+                "solve": 0,
+                "storage": 99
+              },
+              "operations": [
+                {
+                  "category": "acquisition",
+                  "operation": "selected_cache_checked_answer_release",
+                  "units": 8
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_canonical_order_comparisons",
+                  "units": 9
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_exact_query_type",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_input_identity_words",
+                  "units": 14
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_literal_validation",
+                  "units": 5
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_scalar_and_version_validation",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "hashcache_bucket_helper_bounded_arguments",
+                  "units": 2
+                },
+                {
+                  "category": "admission",
+                  "operation": "hashcache_key_helper_exact_query_type",
+                  "units": 2
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_provider_contract",
+                  "units": 16
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_bucket_chain_step",
+                  "units": 2
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_canonical_key_word_read",
+                  "units": 12
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_capacity_branch",
+                  "units": 1
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_collision_safe_full_key_compare",
+                  "units": 13
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_digest_bucket_index",
+                  "units": 2
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_digest_compare",
+                  "units": 4
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_sha256_input_block",
+                  "units": 2
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_temporary_buffer_release",
+                  "units": 2
+                },
+                {
+                  "category": "check",
+                  "operation": "hashcache_current_key_answer_binding",
+                  "units": 20
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_hit_receipt_binding",
+                  "units": 44
+                },
+                {
+                  "category": "controller",
+                  "operation": "hashcache_canonical_word_encode",
+                  "units": 12
+                },
+                {
+                  "category": "controller",
+                  "operation": "selected_cache_provider_call_counter",
+                  "units": 8
+                },
+                {
+                  "category": "output",
+                  "operation": "hashcache_rebound_receipt_words",
+                  "units": 44
+                },
+                {
+                  "category": "output",
+                  "operation": "selected_cache_final_receipt_prepaid",
+                  "units": 76
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_bucket_head_read",
+                  "units": 1
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_digest_words",
+                  "units": 4
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_encoding_buffer_words",
+                  "units": 12
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_entry_digest_and_link_read",
+                  "units": 6
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_call_state",
+                  "units": 32
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_record_words",
+                  "units": 44
+                }
+              ],
+              "total": 414
+            },
+            "status": "success",
+            "witness": null
+          }
+        }
+      ],
+      "started_utc": "2026-10-10T17:21:55.805810+00:00"
+    },
+    {
+      "name": "source_version_and_eviction",
+      "pass": true,
+      "result": [
+        {
+          "cold_calls": 4,
+          "entries": 2,
+          "fifo_statuses": [
+            false,
+            false,
+            true,
+            false,
+            true,
+            false
+          ],
+          "hits": 2,
+          "kind": "linear",
+          "zero_capacity_calls": 2,
+          "zero_capacity_detail": "Paid cold checked receipt retained"
+        },
+        {
+          "cold_calls": 4,
+          "entries": 2,
+          "fifo_statuses": [
+            false,
+            false,
+            true,
+            false,
+            true,
+            false
+          ],
+          "hits": 2,
+          "kind": "hashed",
+          "zero_capacity_calls": 2,
+          "zero_capacity_detail": "Paid cold checked receipt retained"
+        }
+      ],
+      "started_utc": "2026-10-10T17:21:55.806828+00:00"
+    },
+    {
+      "name": "low_budget_and_invalid_inputs",
+      "pass": true,
+      "result": [
+        {
+          "kind": "linear",
+          "limit": 0,
+          "query_id": "rejected-input",
+          "status": "budget_exhausted",
+          "units": 0
+        },
+        {
+          "kind": "linear",
+          "limit": 47,
+          "query_id": "rejected-input",
+          "status": "budget_exhausted",
+          "units": 0
+        },
+        {
+          "kind": "linear",
+          "limit": 48,
+          "query_id": "limited-valid",
+          "status": "budget_exhausted",
+          "units": 48
+        },
+        {
+          "kind": "linear",
+          "limit": 100,
+          "query_id": "limited-valid",
+          "status": "budget_exhausted",
+          "units": 48
+        },
+        {
+          "exact_hit_budget": 316,
+          "exact_hit_success": true,
+          "invalid_status": "rejected",
+          "kind": "linear",
+          "one_less_checked_cache_hits": 1,
+          "one_less_spent": 308,
+          "one_less_status": "budget_exhausted"
+        },
+        {
+          "kind": "hashed",
+          "limit": 0,
+          "query_id": "rejected-input",
+          "status": "budget_exhausted",
+          "units": 0
+        },
+        {
+          "kind": "hashed",
+          "limit": 47,
+          "query_id": "rejected-input",
+          "status": "budget_exhausted",
+          "units": 0
+        },
+        {
+          "kind": "hashed",
+          "limit": 48,
+          "query_id": "limited-valid",
+          "status": "budget_exhausted",
+          "units": 48
+        },
+        {
+          "kind": "hashed",
+          "limit": 100,
+          "query_id": "limited-valid",
+          "status": "budget_exhausted",
+          "units": 48
+        },
+        {
+          "exact_hit_budget": 370,
+          "exact_hit_success": true,
+          "invalid_status": "rejected",
+          "kind": "hashed",
+          "one_less_checked_cache_hits": 1,
+          "one_less_spent": 362,
+          "one_less_status": "budget_exhausted"
+        }
+      ],
+      "started_utc": "2026-10-10T17:21:55.808949+00:00"
+    },
+    {
+      "name": "failed_child_invoice_disclosed_fixture",
+      "pass": true,
+      "result": [
+        {
+          "adapter": {
+            "answer": null,
+            "checked": false,
+            "claim_key": [
+              "bounded-cnf-sat-v1",
+              "cnf-input-v1",
+              4,
+              [
+                [],
+                [
+                  1
+                ]
+              ]
+            ],
+            "detail": "Rejected: Cold child did not complete a checked answer.",
+            "provider": "owned_cached_cnf_receipt",
+            "provider_version": "p308-selected-receipt-cache-v1",
+            "query_id": "injected-honest-child-failure",
+            "resources": {
+              "by_category": {
+                "acquisition": 0,
+                "admission": 113,
+                "assessment": 0,
+                "cache": 0,
+                "check": 44,
+                "controller": 16,
+                "dependency_compile": 0,
+                "forecast": 0,
+                "output": 76,
+                "profile": 0,
+                "randomness": 0,
+                "repair_search": 0,
+                "setup": 0,
+                "solve": 0,
+                "storage": 80
+              },
+              "operations": [
+                {
+                  "category": "admission",
+                  "operation": "cnf_cache_capacity_validation",
+                  "units": 2
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_canonical_order_comparisons",
+                  "units": 9
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_exact_query_type",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_input_identity_words",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_literal_validation",
+                  "units": 5
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_scalar_and_version_validation",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_canonical_order_comparisons",
+                  "units": 9
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_exact_query_type",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_input_identity_words",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_literal_validation",
+                  "units": 5
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_scalar_and_version_validation",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_solver_name_check",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_provider_contract",
+                  "units": 16
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_receipt_binding",
+                  "units": 44
+                },
+                {
+                  "category": "controller",
+                  "operation": "selected_cache_cold_cap_and_reservation",
+                  "units": 8
+                },
+                {
+                  "category": "controller",
+                  "operation": "selected_cache_provider_call_counter",
+                  "units": 8
+                },
+                {
+                  "category": "output",
+                  "operation": "selected_cache_final_receipt_prepaid",
+                  "units": 76
+                },
+                {
+                  "category": "storage",
+                  "operation": "cnf_cache_header_words",
+                  "units": 4
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_call_state",
+                  "units": 32
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_record_words",
+                  "units": 44
+                }
+              ],
+              "total": 329
+            },
+            "status": "rejected",
+            "witness": null
+          },
+          "child": {
+            "answer": null,
+            "checked": false,
+            "claim_key": [
+              "bounded-cnf-sat-v1",
+              "cnf-input-v1",
+              4,
+              [
+                [],
+                [
+                  1
+                ]
+              ]
+            ],
+            "detail": "Tariff bundle denied before the described operation.",
+            "provider": "bounded_cnf_checked",
+            "provider_version": "p308-bounded-cnf-services-v1.1",
+            "query_id": "injected-honest-child-failure",
+            "resources": {
+              "by_category": {
+                "acquisition": 0,
+                "admission": 48,
+                "assessment": 0,
+                "cache": 0,
+                "check": 0,
+                "controller": 0,
+                "dependency_compile": 0,
+                "forecast": 0,
+                "output": 0,
+                "profile": 0,
+                "randomness": 0,
+                "repair_search": 0,
+                "setup": 0,
+                "solve": 0,
+                "storage": 0
+              },
+              "operations": [
+                {
+                  "category": "admission",
+                  "operation": "cnf_canonical_order_comparisons",
+                  "units": 9
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_exact_query_type",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_input_identity_words",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_literal_validation",
+                  "units": 5
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_scalar_and_version_validation",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_solver_name_check",
+                  "units": 1
+                }
+              ],
+              "total": 48
+            },
+            "status": "budget_exhausted",
+            "witness": null
+          },
+          "fixture_invocations": [
+            [
+              "injected-honest-child-failure",
+              37336,
+              "dpll"
+            ]
+          ],
+          "kind": "linear"
+        },
+        {
+          "adapter": {
+            "answer": null,
+            "checked": false,
+            "claim_key": [
+              "bounded-cnf-sat-v1",
+              "cnf-input-v1",
+              4,
+              [
+                [],
+                [
+                  1
+                ]
+              ]
+            ],
+            "detail": "Rejected: Cold child did not complete a checked answer.",
+            "provider": "owned_cached_cnf_receipt",
+            "provider_version": "p308-selected-receipt-cache-v1",
+            "query_id": "injected-honest-child-failure",
+            "resources": {
+              "by_category": {
+                "acquisition": 0,
+                "admission": 119,
+                "assessment": 0,
+                "cache": 19,
+                "check": 44,
+                "controller": 28,
+                "dependency_compile": 0,
+                "forecast": 0,
+                "output": 76,
+                "profile": 0,
+                "randomness": 0,
+                "repair_search": 0,
+                "setup": 0,
+                "solve": 0,
+                "storage": 293
+              },
+              "operations": [
+                {
+                  "category": "admission",
+                  "operation": "cnf_canonical_order_comparisons",
+                  "units": 9
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_exact_query_type",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_input_identity_words",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_literal_validation",
+                  "units": 5
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_scalar_and_version_validation",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "hashcache_bucket_helper_bounded_arguments",
+                  "units": 2
+                },
+                {
+                  "category": "admission",
+                  "operation": "hashcache_configuration_validation",
+                  "units": 4
+                },
+                {
+                  "category": "admission",
+                  "operation": "hashcache_key_helper_exact_query_type",
+                  "units": 2
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_canonical_order_comparisons",
+                  "units": 9
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_exact_query_type",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_input_identity_words",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_literal_validation",
+                  "units": 5
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_scalar_and_version_validation",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_cold_provider:cnf_solver_name_check",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "selected_cache_provider_contract",
+                  "units": 16
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_canonical_key_word_read",
+                  "units": 12
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_capacity_branch",
+                  "units": 1
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_digest_bucket_index",
+                  "units": 2
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_sha256_input_block",
+                  "units": 2
+                },
+                {
+                  "category": "cache",
+                  "operation": "hashcache_temporary_buffer_release",
+                  "units": 2
+                },
+                {
+                  "category": "check",
+                  "operation": "selected_cache_cold_receipt_binding",
+                  "units": 44
+                },
+                {
+                  "category": "controller",
+                  "operation": "hashcache_canonical_word_encode",
+                  "units": 12
+                },
+                {
+                  "category": "controller",
+                  "operation": "selected_cache_cold_cap_and_reservation",
+                  "units": 8
+                },
+                {
+                  "category": "controller",
+                  "operation": "selected_cache_provider_call_counter",
+                  "units": 8
+                },
+                {
+                  "category": "output",
+                  "operation": "selected_cache_final_receipt_prepaid",
+                  "units": 76
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_bucket_array_words",
+                  "units": 128
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_bucket_head_read",
+                  "units": 1
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_digest_words",
+                  "units": 4
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_encoding_buffer_words",
+                  "units": 12
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_fifo_slot_array_words",
+                  "units": 64
+                },
+                {
+                  "category": "storage",
+                  "operation": "hashcache_header_words",
+                  "units": 8
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_call_state",
+                  "units": 32
+                },
+                {
+                  "category": "storage",
+                  "operation": "selected_cache_provider_record_words",
+                  "units": 44
+                }
+              ],
+              "total": 579
+            },
+            "status": "rejected",
+            "witness": null
+          },
+          "child": {
+            "answer": null,
+            "checked": false,
+            "claim_key": [
+              "bounded-cnf-sat-v1",
+              "cnf-input-v1",
+              4,
+              [
+                [],
+                [
+                  1
+                ]
+              ]
+            ],
+            "detail": "Tariff bundle denied before the described operation.",
+            "provider": "bounded_cnf_checked",
+            "provider_version": "p308-bounded-cnf-services-v1.1",
+            "query_id": "injected-honest-child-failure",
+            "resources": {
+              "by_category": {
+                "acquisition": 0,
+                "admission": 48,
+                "assessment": 0,
+                "cache": 0,
+                "check": 0,
+                "controller": 0,
+                "dependency_compile": 0,
+                "forecast": 0,
+                "output": 0,
+                "profile": 0,
+                "randomness": 0,
+                "repair_search": 0,
+                "setup": 0,
+                "solve": 0,
+                "storage": 0
+              },
+              "operations": [
+                {
+                  "category": "admission",
+                  "operation": "cnf_canonical_order_comparisons",
+                  "units": 9
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_exact_query_type",
+                  "units": 1
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_input_identity_words",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_literal_validation",
+                  "units": 5
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_scalar_and_version_validation",
+                  "units": 16
+                },
+                {
+                  "category": "admission",
+                  "operation": "cnf_solver_name_check",
+                  "units": 1
+                }
+              ],
+              "total": 48
+            },
+            "status": "budget_exhausted",
+            "witness": null
+          },
+          "fixture_invocations": [
+            [
+              "injected-honest-child-failure",
+              37336,
+              "dpll"
+            ]
+          ],
+          "kind": "hashed"
+        }
+      ],
+      "started_utc": "2026-10-10T17:21:55.810355+00:00"
+    },
+    {
+      "name": "maximum_key_full_cache_cap",
+      "pass": true,
+      "result": {
+        "conservative_Q512_nonchild_bounds": {
+          "hashed": 78137,
+          "linear": 72362
+        },
+        "paths": [
+          {
+            "all_path_overhead_allowance": 131072,
+            "calls": 66,
+            "capacity": 64,
+            "kind": "linear",
+            "largest_observed_nonchild_units": 49541,
+            "last_full_cache_miss": {
+              "answer": 1,
+              "checked": true,
+              "claim_key": [
+                "bounded-cnf-sat-v1",
+                "source-064-sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+                12,
+                [
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ]
+                ]
+              ],
+              "detail": "Paid cold checked receipt retained",
+              "provider": "owned_cached_cnf_receipt",
+              "provider_version": "p308-selected-receipt-cache-v1",
+              "query_id": "request-064-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+              "resources": {
+                "by_category": {
+                  "acquisition": 16,
+                  "admission": 5177,
+                  "assessment": 0,
+                  "cache": 44098,
+                  "check": 2472,
+                  "controller": 16,
+                  "dependency_compile": 0,
+                  "forecast": 0,
+                  "output": 830,
+                  "profile": 0,
+                  "randomness": 0,
+                  "repair_search": 0,
+                  "setup": 0,
+                  "solve": 5084,
+                  "storage": 2243
+                },
+                "operations": [
+                  {
+                    "category": "acquisition",
+                    "operation": "selected_cache_checked_answer_release",
+                    "units": 8
+                  },
+                  {
+                    "category": "acquisition",
+                    "operation": "selected_cache_cold_provider:cnf_checked_answer_release",
+                    "units": 8
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "cnf_canonical_order_comparisons",
+                    "units": 1024
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "cnf_exact_query_type",
+                    "units": 2
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "cnf_input_identity_words",
+                    "units": 718
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "cnf_literal_validation",
+                    "units": 1664
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "cnf_scalar_and_version_validation",
+                    "units": 32
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_canonical_order_comparisons",
+                    "units": 512
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_exact_query_type",
+                    "units": 1
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_input_identity_words",
+                    "units": 359
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_literal_validation",
+                    "units": 832
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_scalar_and_version_validation",
+                    "units": 16
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_solver_name_check",
+                    "units": 1
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_provider_contract",
+                    "units": 16
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "cnf_cache_fifo_eviction_shift",
+                    "units": 66
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "cnf_cache_insert_full_key_compare",
+                    "units": 22016
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "cnf_cache_key_full_compare",
+                    "units": 22016
+                  },
+                  {
+                    "category": "check",
+                    "operation": "cnf_cache_receipt_binding",
+                    "units": 359
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:cnf_candidate_checker_agreement",
+                    "units": 2
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:cnf_candidate_type_check",
+                    "units": 4
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:witness_clause_begin",
+                    "units": 128
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:witness_clause_conjunction",
+                    "units": 64
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:witness_literal_shift_sign_compare",
+                    "units": 1536
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:witness_scalar_range",
+                    "units": 4
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_receipt_binding",
+                    "units": 375
+                  },
+                  {
+                    "category": "controller",
+                    "operation": "selected_cache_cold_cap_and_reservation",
+                    "units": 8
+                  },
+                  {
+                    "category": "controller",
+                    "operation": "selected_cache_provider_call_counter",
+                    "units": 8
+                  },
+                  {
+                    "category": "output",
+                    "operation": "selected_cache_cold_provider:cnf_final_response_prepaid",
+                    "units": 423
+                  },
+                  {
+                    "category": "output",
+                    "operation": "selected_cache_final_receipt_prepaid",
+                    "units": 407
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_clause_read",
+                    "units": 256
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_clause_status_branch",
+                    "units": 384
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_formula_status_branch",
+                    "units": 2
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_literal_read_assignment",
+                    "units": 2560
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_node_enter",
+                    "units": 4
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_polarity_collect",
+                    "units": 1024
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_propagation_pass_begin",
+                    "units": 8
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_pure_literal_assignment",
+                    "units": 4
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_pure_literal_masks",
+                    "units": 6
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_unknown_literal_membership",
+                    "units": 640
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:simple_contradiction_array_initialization",
+                    "units": 4
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:simple_contradiction_clause_shape",
+                    "units": 192
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "cnf_cache_entry_pointer_read",
+                    "units": 64
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "cnf_cache_retained_entry_write",
+                    "units": 351
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:cnf_checked_receipt_words",
+                    "units": 359
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:cnf_final_cleanup_prepaid",
+                    "units": 455
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:dpll_frame_words",
+                    "units": 4
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:dpll_unknown_literal_write",
+                    "units": 256
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:dpll_unresolved_clause_write",
+                    "units": 320
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:simple_contradiction_clause_indices",
+                    "units": 26
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:witness_word_read",
+                    "units": 1
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_provider_call_state",
+                    "units": 32
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_provider_record_words",
+                    "units": 375
+                  }
+                ],
+                "total": 59936
+              },
+              "status": "success",
+              "witness": 15
+            },
+            "max_key_words": 343
+          },
+          {
+            "all_path_overhead_allowance": 131072,
+            "calls": 66,
+            "capacity": 64,
+            "kind": "hashed",
+            "largest_observed_nonchild_units": 7777,
+            "last_full_cache_miss": {
+              "answer": 1,
+              "checked": true,
+              "claim_key": [
+                "bounded-cnf-sat-v1",
+                "source-064-sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+                12,
+                [
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4
+                  ]
+                ]
+              ],
+              "detail": "Paid cold checked receipt retained",
+              "provider": "owned_cached_cnf_receipt",
+              "provider_version": "p308-selected-receipt-cache-v1",
+              "query_id": "request-064-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+              "resources": {
+                "by_category": {
+                  "acquisition": 16,
+                  "admission": 5185,
+                  "assessment": 0,
+                  "cache": 817,
+                  "check": 2472,
+                  "controller": 707,
+                  "dependency_compile": 0,
+                  "forecast": 0,
+                  "output": 830,
+                  "profile": 0,
+                  "randomness": 0,
+                  "repair_search": 0,
+                  "setup": 0,
+                  "solve": 5084,
+                  "storage": 2923
+                },
+                "operations": [
+                  {
+                    "category": "acquisition",
+                    "operation": "selected_cache_checked_answer_release",
+                    "units": 8
+                  },
+                  {
+                    "category": "acquisition",
+                    "operation": "selected_cache_cold_provider:cnf_checked_answer_release",
+                    "units": 8
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "cnf_canonical_order_comparisons",
+                    "units": 1024
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "cnf_exact_query_type",
+                    "units": 2
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "cnf_input_identity_words",
+                    "units": 718
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "cnf_literal_validation",
+                    "units": 1664
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "cnf_scalar_and_version_validation",
+                    "units": 32
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "hashcache_bucket_helper_bounded_arguments",
+                    "units": 4
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "hashcache_key_helper_exact_query_type",
+                    "units": 4
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_canonical_order_comparisons",
+                    "units": 512
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_exact_query_type",
+                    "units": 1
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_input_identity_words",
+                    "units": 359
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_literal_validation",
+                    "units": 832
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_scalar_and_version_validation",
+                    "units": 16
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_cold_provider:cnf_solver_name_check",
+                    "units": 1
+                  },
+                  {
+                    "category": "admission",
+                    "operation": "selected_cache_provider_contract",
+                    "units": 16
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "hashcache_bucket_chain_step",
+                    "units": 8
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "hashcache_canonical_key_word_read",
+                    "units": 686
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "hashcache_capacity_branch",
+                    "units": 2
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "hashcache_digest_bucket_index",
+                    "units": 4
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "hashcache_digest_compare",
+                    "units": 16
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "hashcache_fifo_cursor_read_compare",
+                    "units": 2
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "hashcache_fifo_eviction_link_plan",
+                    "units": 3
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "hashcache_fifo_eviction_reference_release",
+                    "units": 4
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "hashcache_sha256_input_block",
+                    "units": 88
+                  },
+                  {
+                    "category": "cache",
+                    "operation": "hashcache_temporary_buffer_release",
+                    "units": 4
+                  },
+                  {
+                    "category": "check",
+                    "operation": "hashcache_receipt_binding",
+                    "units": 359
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:cnf_candidate_checker_agreement",
+                    "units": 2
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:cnf_candidate_type_check",
+                    "units": 4
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:witness_clause_begin",
+                    "units": 128
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:witness_clause_conjunction",
+                    "units": 64
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:witness_literal_shift_sign_compare",
+                    "units": 1536
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_provider:witness_scalar_range",
+                    "units": 4
+                  },
+                  {
+                    "category": "check",
+                    "operation": "selected_cache_cold_receipt_binding",
+                    "units": 375
+                  },
+                  {
+                    "category": "controller",
+                    "operation": "hashcache_canonical_word_encode",
+                    "units": 686
+                  },
+                  {
+                    "category": "controller",
+                    "operation": "hashcache_fifo_cursor_modulo_and_size",
+                    "units": 4
+                  },
+                  {
+                    "category": "controller",
+                    "operation": "hashcache_retained_size_subtraction",
+                    "units": 1
+                  },
+                  {
+                    "category": "controller",
+                    "operation": "selected_cache_cold_cap_and_reservation",
+                    "units": 8
+                  },
+                  {
+                    "category": "controller",
+                    "operation": "selected_cache_provider_call_counter",
+                    "units": 8
+                  },
+                  {
+                    "category": "output",
+                    "operation": "selected_cache_cold_provider:cnf_final_response_prepaid",
+                    "units": 423
+                  },
+                  {
+                    "category": "output",
+                    "operation": "selected_cache_final_receipt_prepaid",
+                    "units": 407
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_clause_read",
+                    "units": 256
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_clause_status_branch",
+                    "units": 384
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_formula_status_branch",
+                    "units": 2
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_literal_read_assignment",
+                    "units": 2560
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_node_enter",
+                    "units": 4
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_polarity_collect",
+                    "units": 1024
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_propagation_pass_begin",
+                    "units": 8
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_pure_literal_assignment",
+                    "units": 4
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_pure_literal_masks",
+                    "units": 6
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:dpll_unknown_literal_membership",
+                    "units": 640
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:simple_contradiction_array_initialization",
+                    "units": 4
+                  },
+                  {
+                    "category": "solve",
+                    "operation": "selected_cache_cold_provider:simple_contradiction_clause_shape",
+                    "units": 192
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "hashcache_bucket_head_read",
+                    "units": 2
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "hashcache_digest_words",
+                    "units": 8
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "hashcache_encoding_buffer_words",
+                    "units": 686
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "hashcache_entry_digest_and_link_read",
+                    "units": 24
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "hashcache_fifo_cursor_count_size_write",
+                    "units": 3
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "hashcache_fifo_eviction_header_read",
+                    "units": 8
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "hashcache_fifo_eviction_link_write",
+                    "units": 1
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "hashcache_fifo_slot_and_bucket_head_read",
+                    "units": 2
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "hashcache_insert_bucket_and_slot_write",
+                    "units": 3
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "hashcache_retained_entry_write",
+                    "units": 358
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:cnf_checked_receipt_words",
+                    "units": 359
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:cnf_final_cleanup_prepaid",
+                    "units": 455
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:dpll_frame_words",
+                    "units": 4
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:dpll_unknown_literal_write",
+                    "units": 256
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:dpll_unresolved_clause_write",
+                    "units": 320
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:simple_contradiction_clause_indices",
+                    "units": 26
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_cold_provider:witness_word_read",
+                    "units": 1
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_provider_call_state",
+                    "units": 32
+                  },
+                  {
+                    "category": "storage",
+                    "operation": "selected_cache_provider_record_words",
+                    "units": 375
+                  }
+                ],
+                "total": 18034
+              },
+              "status": "success",
+              "witness": 15
+            },
+            "max_key_words": 343
+          }
+        ]
+      },
+      "started_utc": "2026-10-10T17:21:55.810596+00:00"
+    },
+    {
+      "name": "broker_coupling_and_reporting",
+      "pass": true,
+      "result": [
+        {
+          "below_cap_success_not_funded": true,
+          "cached_cap": 1470520,
+          "cached_local_units": 16344,
+          "cold_calls": 2,
+          "cold_cap": 684088,
+          "cold_local_units": 15350,
+          "hard": false,
+          "hits": 4,
+          "kind": "linear",
+          "logical_selected_calls": 6,
+          "report_units": 17952,
+          "selector": "uniform",
+          "wrong_provider_report_status": "failed"
+        },
+        {
+          "below_cap_success_not_funded": true,
+          "cached_cap": 1470520,
+          "cached_local_units": 16951,
+          "cold_calls": 2,
+          "cold_cap": 684088,
+          "cold_local_units": 15350,
+          "hard": false,
+          "hits": 4,
+          "kind": "hashed",
+          "logical_selected_calls": 6,
+          "report_units": 17952,
+          "selector": "uniform",
+          "wrong_provider_report_status": "failed"
+        },
+        {
+          "below_cap_success_not_funded": true,
+          "cached_cap": 1557304,
+          "cached_local_units": 20814,
+          "cold_calls": 2,
+          "cold_cap": 770872,
+          "cold_local_units": 19820,
+          "hard": true,
+          "hits": 4,
+          "kind": "linear",
+          "logical_selected_calls": 6,
+          "report_units": 18094,
+          "selector": "uniform",
+          "wrong_provider_report_status": "failed"
+        },
+        {
+          "below_cap_success_not_funded": true,
+          "cached_cap": 1557304,
+          "cached_local_units": 21421,
+          "cold_calls": 2,
+          "cold_cap": 770872,
+          "cold_local_units": 19820,
+          "hard": true,
+          "hits": 4,
+          "kind": "hashed",
+          "logical_selected_calls": 6,
+          "report_units": 18094,
+          "selector": "uniform",
+          "wrong_provider_report_status": "failed"
+        },
+        {
+          "below_cap_success_not_funded": true,
+          "cached_cap": 1470580,
+          "cached_local_units": 17990,
+          "cold_calls": 2,
+          "cold_cap": 684148,
+          "cold_local_units": 16996,
+          "hard": false,
+          "hits": 4,
+          "kind": "linear",
+          "logical_selected_calls": 6,
+          "report_units": 18286,
+          "selector": "tickets",
+          "wrong_provider_report_status": "failed"
+        },
+        {
+          "below_cap_success_not_funded": true,
+          "cached_cap": 1470580,
+          "cached_local_units": 18597,
+          "cold_calls": 2,
+          "cold_cap": 684148,
+          "cold_local_units": 16996,
+          "hard": false,
+          "hits": 4,
+          "kind": "hashed",
+          "logical_selected_calls": 6,
+          "report_units": 18286,
+          "selector": "tickets",
+          "wrong_provider_report_status": "failed"
+        },
+        {
+          "below_cap_success_not_funded": true,
+          "cached_cap": 1557364,
+          "cached_local_units": 22460,
+          "cold_calls": 2,
+          "cold_cap": 770932,
+          "cold_local_units": 21466,
+          "hard": true,
+          "hits": 4,
+          "kind": "linear",
+          "logical_selected_calls": 6,
+          "report_units": 18434,
+          "selector": "tickets",
+          "wrong_provider_report_status": "failed"
+        },
+        {
+          "below_cap_success_not_funded": true,
+          "cached_cap": 1557364,
+          "cached_local_units": 23067,
+          "cold_calls": 2,
+          "cold_cap": 770932,
+          "cold_local_units": 21466,
+          "hard": true,
+          "hits": 4,
+          "kind": "hashed",
+          "logical_selected_calls": 6,
+          "report_units": 18434,
+          "selector": "tickets",
+          "wrong_provider_report_status": "failed"
+        }
+      ],
+      "started_utc": "2026-10-10T17:21:56.138640+00:00"
+    }
+  ],
+  "finished_utc": "2026-10-10T17:21:56.266993+00:00",
+  "pass": true,
+  "passed_cases": 7,
+  "research_credit_seconds": 0,
+  "reviewer": "same-model nonblind independent focused source review",
+  "script_sha256": "a4d59c649b732d3aabd7c1a96cd2cc234c2dd88fa349df59845f11a5bf4a6f15",
+  "stage": "DEVELOPMENT",
+  "started_utc": "2026-10-10T17:21:55.805320+00:00"
+}

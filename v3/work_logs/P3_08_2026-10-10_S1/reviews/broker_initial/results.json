@@ -1,0 +1,391 @@
+{
+  "stage": "DEVELOPMENT",
+  "started_utc": "2026-10-10T16:20:34.532452+00:00",
+  "finished_utc": "2026-10-10T16:20:34.573673+00:00",
+  "source_manifest": "plan.json",
+  "script": "check_broker.py",
+  "principal_clock_credit_seconds": 0,
+  "passed": 7,
+  "failed": 8,
+  "results": [
+    {
+      "case": "numeric_uniform",
+      "status": "PASS",
+      "detail": {
+        "cases": [
+          {
+            "state_bits": 1,
+            "weights_after_each_block": [
+              [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              [
+                2,
+                3,
+                2,
+                2,
+                1,
+                2
+              ]
+            ],
+            "bits": 36
+          },
+          {
+            "state_bits": 16,
+            "weights_after_each_block": [
+              [
+                46261,
+                69391,
+                69391,
+                69391,
+                69391,
+                69391
+              ],
+              [
+                34194,
+                76934,
+                76933,
+                76933,
+                51289,
+                76933
+              ]
+            ],
+            "bits": 36
+          }
+        ],
+        "selected_labels_from_real_cnf": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "case": "numeric_tickets",
+      "status": "PASS",
+      "detail": {
+        "cases": [
+          {
+            "state_bits": 1,
+            "rows": [
+              {
+                "multiplicity": 1,
+                "weights": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  2,
+                  1
+                ]
+              },
+              {
+                "multiplicity": 5,
+                "weights": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  2,
+                  1
+                ]
+              },
+              {
+                "multiplicity": 1,
+                "weights": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  2,
+                  1
+                ]
+              },
+              {
+                "multiplicity": 5,
+                "weights": [
+                  3,
+                  3,
+                  2,
+                  2,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "state_bits": 16,
+            "rows": [
+              {
+                "multiplicity": 1,
+                "weights": [
+                  72435,
+                  62087,
+                  62087,
+                  62087,
+                  72434,
+                  62086
+                ]
+              },
+              {
+                "multiplicity": 5,
+                "weights": [
+                  71710,
+                  62228,
+                  62228,
+                  62227,
+                  72597,
+                  62226
+                ]
+              },
+              {
+                "multiplicity": 1,
+                "weights": [
+                  76928,
+                  57220,
+                  57219,
+                  66754,
+                  77878,
+                  57217
+                ]
+              },
+              {
+                "multiplicity": 5,
+                "weights": [
+                  76354,
+                  57498,
+                  57497,
+                  67077,
+                  77296,
+                  57494
+                ]
+              }
+            ]
+          }
+        ],
+        "scope": "Numerical recurrence only; no claim that manual feedback is an executable broker"
+      }
+    },
+    {
+      "case": "coupling_and_correction",
+      "status": "PASS",
+      "detail": {
+        "coupled_runs": {
+          "uniform": {
+            "base_brier": "181/64",
+            "live_brier": "25/64",
+            "base_errors": 3,
+            "live_errors": 0,
+            "meter_base": 5839,
+            "meter_live": 6386
+          },
+          "tickets": {
+            "base_brier": "25/8",
+            "live_brier": "25/64",
+            "base_errors": 3,
+            "live_errors": 0,
+            "meter_base": 6345,
+            "meter_live": 6892
+          }
+        },
+        "same_block": {
+          "first_q": [
+            10,
+            10,
+            16
+          ],
+          "second_base_numerator": 10,
+          "second_emitted_numerator": 0
+        }
+      }
+    },
+    {
+      "case": "owned_selector_and_issue",
+      "status": "PASS",
+      "detail": {
+        "second_begin": {
+          "type": "Rejected",
+          "message": "A block can start only at the next clean boundary."
+        },
+        "forged_issued_object": {
+          "type": "Rejected",
+          "message": "Close only the exact locally issued record."
+        },
+        "duplicate_close": {
+          "type": "Rejected",
+          "message": "Close only the exact locally issued record."
+        }
+      }
+    },
+    {
+      "case": "receipt_binding",
+      "status": "PASS",
+      "detail": {
+        "cases": [
+          {
+            "field": "query_id",
+            "detail": "Rejected: The owned provider did not return a current checked receipt.",
+            "actual_total": 3223,
+            "child_total": 302
+          },
+          {
+            "field": "claim_key",
+            "detail": "Rejected: The owned provider did not return a current checked receipt.",
+            "actual_total": 3223,
+            "child_total": 302
+          },
+          {
+            "field": "provider_version",
+            "detail": "Rejected: The owned provider did not return a current checked receipt.",
+            "actual_total": 3223,
+            "child_total": 302
+          },
+          {
+            "field": "provider",
+            "detail": "Rejected: The owned provider did not return a current checked receipt.",
+            "actual_total": 3223,
+            "child_total": 302
+          },
+          {
+            "field": "checked",
+            "detail": "Rejected: The owned provider did not return a current checked receipt.",
+            "actual_total": 3223,
+            "child_total": 302
+          },
+          {
+            "field": "status",
+            "detail": "Rejected: The owned provider did not return a current checked receipt.",
+            "actual_total": 3223,
+            "child_total": 302
+          },
+          {
+            "field": "answer",
+            "detail": "Rejected: The owned provider did not return a current checked receipt.",
+            "actual_total": 3223,
+            "child_total": 302
+          },
+          {
+            "field": "answer",
+            "detail": "Rejected: The owned provider did not return a current checked receipt.",
+            "actual_total": 3223,
+            "child_total": 302
+          }
+        ],
+        "trust_scope": "Provider facade mutates only the checked response boundary; no external authentication claim"
+      }
+    },
+    {
+      "case": "failures_and_funding",
+      "status": "FAIL",
+      "exception": "AssertionError",
+      "message": "Exactly actual paid realization did not finish",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 386, in main\n    detail = case()\n             ^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 246, in failures_and_funding\n    require(small[\"status\"] == \"success\", \"Exactly actual paid realization did not finish\")\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 29, in require\n    raise AssertionError(message)\nAssertionError: Exactly actual paid realization did not finish\n"
+    },
+    {
+      "case": "stale_generation",
+      "status": "PASS",
+      "detail": {
+        "hard_state": {
+          "scope": [
+            "bounded-cnf-sat-v1",
+            "cnf-input-v1",
+            "review-epoch"
+          ],
+          "entries_retained": 1,
+          "active_entries": 0,
+          "conflicts": 0,
+          "withdrawals": 3,
+          "generation": 3
+        },
+        "lookup": {
+          "status": "stale",
+          "answer": null,
+          "interval": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "case": "withdrawal_when_unfunded",
+      "status": "FAIL",
+      "exception": "AssertionError",
+      "message": "Denied withdrawal left an active successful broker and old hard warrants",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 386, in main\n    detail = case()\n             ^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 291, in withdrawal_when_unfunded\n    require(state[\"status\"] == \"failed\" and not state[\"successful_quota_contract\"],\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 29, in require\n    raise AssertionError(message)\nAssertionError: Denied withdrawal left an active successful broker and old hard warrants\n"
+    },
+    {
+      "case": "malformed_solver_typed_failure",
+      "status": "FAIL",
+      "exception": "Rejected",
+      "message": "Unknown query/solver for public cap.",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 386, in main\n    detail = case()\n             ^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 297, in malformed_solver_typed_failure\n    result = B.execute(S, tape(4), B.Contract(4, 4, 6, 4, 4),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/source_snapshot/v3/experiments/p308_broker.py\", line 434, in execute\n    cap = funded_cap(service, tape, contract, hard=hard, solver=purchase_solver)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/source_snapshot/v3/experiments/p308_broker.py\", line 408, in funded_cap\n    service_total = sum(max(service.service_cap(q, solver) for q in tape[start:start + b])\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/source_snapshot/v3/experiments/p308_broker.py\", line 408, in <genexpr>\n    service_total = sum(max(service.service_cap(q, solver) for q in tape[start:start + b])\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/source_snapshot/v3/experiments/p308_broker.py\", line 408, in <genexpr>\n    service_total = sum(max(service.service_cap(q, solver) for q in tape[start:start + b])\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/source_snapshot/v3/experiments/p308_cnf.py\", line 397, in service_cap\n    raise Rejected(\"Unknown query/solver for public cap.\")\np308_cnf.Rejected: Unknown query/solver for public cap.\n"
+    },
+    {
+      "case": "malformed_query_typed_failure",
+      "status": "FAIL",
+      "exception": "AttributeError",
+      "message": "'object' object has no attribute 'semantics_version'",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 386, in main\n    detail = case()\n             ^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 305, in malformed_query_typed_failure\n    result = B.execute(S, (object(),) * 4, B.Contract(4, 4, 6, 4, 4), seed=308775)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/source_snapshot/v3/experiments/p308_broker.py\", line 429, in execute\n    scope = (tape[0].semantics_version, tape[0].source_version, scope_epoch)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'object' object has no attribute 'semantics_version'\n"
+    },
+    {
+      "case": "state_none_admission",
+      "status": "FAIL",
+      "exception": "AssertionError",
+      "message": "Expected rejection did not occur",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 386, in main\n    detail = case()\n             ^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 312, in state_none_admission\n    rejected = catches(C.Rejected, lambda: B.Contract(4, 4, 6, 4, None))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 37, in catches\n    raise AssertionError(\"Expected rejection did not occur\")\nAssertionError: Expected rejection did not occur\n"
+    },
+    {
+      "case": "scope_type_admission",
+      "status": "FAIL",
+      "exception": "TypeError",
+      "message": "unhashable type: 'list'",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 386, in main\n    detail = case()\n             ^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 317, in scope_type_admission\n    result = B.execute(S, tape(4), B.Contract(4, 4, 6, 4, 4),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/source_snapshot/v3/experiments/p308_broker.py\", line 446, in execute\n    broker.close(broker.issue())\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/source_snapshot/v3/experiments/p308_broker.py\", line 350, in close\n    current = self.hard.lookup(issued.query) if self.hard_enabled else {\"status\": \"unresolved\", \"answer\": None, \"interval\": [0, 1]}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/source_snapshot/v3/experiments/p308_broker.py\", line 173, in lookup\n    if (self.generation, self.scope, key) in self.conflicts:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: unhashable type: 'list'\n"
+    },
+    {
+      "case": "history_detachment",
+      "status": "FAIL",
+      "exception": "AssertionError",
+      "message": "An earlier record changed when normal subsequent execution appended a round",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 386, in main\n    detail = case()\n             ^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 335, in history_detachment\n    require(len(saved[\"trace\"]) == original_length and saved[\"trace\"] is not broker.trace,\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 29, in require\n    raise AssertionError(message)\nAssertionError: An earlier record changed when normal subsequent execution appended a round\n"
+    },
+    {
+      "case": "completed_block_boundary",
+      "status": "FAIL",
+      "exception": "AssertionError",
+      "message": "Post-completion begin mutated a new prepared block before exhausting finite bits",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 386, in main\n    detail = case()\n             ^^^^^^\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 349, in completed_block_boundary\n    require(broker.advice_block is None,\n  File \"/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_08_2026-10-10_S1/reviews/broker_initial/check_broker.py\", line 29, in require\n    raise AssertionError(message)\nAssertionError: Post-completion begin mutated a new prepared block before exhausting finite bits\n"
+    },
+    {
+      "case": "maximal_public_shape",
+      "status": "PASS",
+      "detail": {
+        "key_words": 329,
+        "expert_actual": 4608,
+        "expert_cap": 8192,
+        "advice": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "funded_cap": 39188238,
+        "actual": 50857,
+        "peak_numeric_bits": 75
+      }
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "withdrawal_exception": {
+    "type": "BudgetExceeded",
+    "message": "Tariff bundle denied before the described operation."
+  },
+  "result": {
+    "stage": "DEVELOPMENT",
+    "version": "p308-program-broker-v1.1",
+    "contract": {
+      "version": "p308-program-broker-v1.1",
+      "horizon": 4,
+      "block_size": 4,
+      "expert_count": 6,
+      "action_bits": 4,
+      "state_bits": 4,
+      "selector": "uniform",
+      "hard_capacity": 128,
+      "quota": 1,
+      "random_bits": 18,
+      "maximum_operand_bits": 95
+    },
+    "status": "failed",
+    "successful_quota_contract": false,
+    "rounds_closed": 4,
+    "purchases": 1,
+    "remaining_requests": 0,
+    "failure_detail": "scope_withdrawal_stopped: BudgetExceeded: Tariff bundle denied before the described operation.",
+    "scope": [
+      "bounded-cnf-sat-v1",
+      "cnf-input-v1",
+      "review-epoch"
+    ],
+    "hard_state": {
+      "scope": [
+        "bounded-cnf-sat-v1",
+        "cnf-input-v1",
+        "review-epoch"
+      ],
+      "entries_retained": 1,
+      "active_entries": 1,
+      "conflicts": 0,
+      "withdrawals": 0,
+      "generation": 0
+    },
+    "weights": [
+      21,
+      14,
+      14,
+      14,
+      20,
+      13
+    ],
+    "peak_weight_bits": 5,
+    "peak_numeric_bits": 13,
+    "random_bits_consumed": 18,
+    "randomness": "deterministic-explicit-review-words",
+    "pending_query_id": null,
+    "trace": [
+      {
+        "index": 0,
+        "block": 0,
+        "query_id": "review-q-0",
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          2,
+          [
+            []
+          ]
+        ],
+        "advice": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "base_q": [
+          10,
+          16
+        ],
+        "emitted_q": [
+          10,
+          16
+        ],
+        "base_action": 1,
+        "prospective_action": 1,
+        "base_terminal": 0,
+        "terminal_action": 0,
+        "selected": true,
+        "propensity": [
+          1,
+          4
+        ],
+        "purchased_label": 0,
+        "hard_before": "unresolved",
+        "hard_after": {
+          "status": "checked",
+          "answer": 0,
+          "interval": [
+            0,
+            0
+          ]
+        },
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          "review-epoch"
+        ]
+      },
+      {
+        "index": 1,
+        "block": 0,
+        "query_id": "review-q-1",
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          2,
+          [
+            []
+          ]
+        ],
+        "advice": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "base_q": [
+          10,
+          16
+        ],
+        "emitted_q": [
+          0,
+          16
+        ],
+        "base_action": 1,
+        "prospective_action": 0,
+        "base_terminal": 1,
+        "terminal_action": 0,
+        "selected": false,
+        "propensity": [
+          1,
+          4
+        ],
+        "purchased_label": null,
+        "hard_before": "checked",
+        "hard_after": {
+          "status": "checked",
+          "answer": 0,
+          "interval": [
+            0,
+            0
+          ]
+        },
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          "review-epoch"
+        ]
+      },
+      {
+        "index": 2,
+        "block": 0,
+        "query_id": "review-q-2",
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          2,
+          [
+            []
+          ]
+        ],
+        "advice": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "base_q": [
+          10,
+          16
+        ],
+        "emitted_q": [
+          0,
+          16
+        ],
+        "base_action": 1,
+        "prospective_action": 0,
+        "base_terminal": 1,
+        "terminal_action": 0,
+        "selected": false,
+        "propensity": [
+          1,
+          4
+        ],
+        "purchased_label": null,
+        "hard_before": "checked",
+        "hard_after": {
+          "status": "checked",
+          "answer": 0,
+          "interval": [
+            0,
+            0
+          ]
+        },
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          "review-epoch"
+        ]
+      },
+      {
+        "index": 3,
+        "block": 0,
+        "query_id": "review-q-3",
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          2,
+          [
+            []
+          ]
+        ],
+        "advice": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "base_q": [
+          10,
+          16
+        ],
+        "emitted_q": [
+          0,
+          16
+        ],
+        "base_action": 1,
+        "prospective_action": 0,
+        "base_terminal": 1,
+        "terminal_action": 0,
+        "selected": false,
+        "propensity": [
+          1,
+          4
+        ],
+        "purchased_label": null,
+        "hard_before": "checked",
+        "hard_after": {
+          "status": "checked",
+          "answer": 0,
+          "interval": [
+            0,
+            0
+          ]
+        },
+        "scope": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          "review-epoch"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "block": 0,
+        "selected": 0,
+        "ticket": 0,
+        "favorite": 0,
+        "multiplicity": 1,
+        "propensities": [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "weights_before": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "weights_after": [
+          21,
+          14,
+          14,
+          14,
+          20,
+          13
+        ]
+      }
+    ],
+    "invoices": [
+      {
+        "query_id": "review-q-0",
+        "claim_key": [
+          "bounded-cnf-sat-v1",
+          "cnf-input-v1",
+          2,
+          [
+            []
+          ]
+        ],
+        "answer": 0,
+        "checked": true,
+        "status": "success",
+        "provider": "bounded_cnf_checked",
+        "provider_version": "p308-bounded-cnf-services-v1.1",
+        "resources": {
+          "total": 305,
+          "by_category": {
+            "admission": 35,
+            "solve": 26,
+            "check": 42,
+            "acquisition": 8,
+            "storage": 118,
+            "cache": 0,
+            "forecast": 0,
+            "assessment": 0,
+            "profile": 0,
+            "dependency_compile": 0,
+            "repair_search": 0,
+            "controller": 0,
+            "randomness": 0,
+            "output": 76,
+            "setup": 0
+          },
+          "operations": [
+            {
+              "category": "acquisition",
+              "operation": "cnf_checked_answer_release",
+              "units": 8
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_canonical_order_comparisons",
+              "units": 4
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_exact_query_type",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_input_identity_words",
+              "units": 12
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_literal_validation",
+              "units": 1
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_scalar_and_version_validation",
+              "units": 16
+            },
+            {
+              "category": "admission",
+              "operation": "cnf_solver_name_check",
+              "units": 1
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_checker_agreement",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "cnf_candidate_type_check",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "unsat_assignment_existence_test",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "unsat_assignment_tuple_generate",
+              "units": 16
+            },
+            {
+              "category": "check",
+              "operation": "unsat_clause_begin",
+              "units": 8
+            },
+            {
+              "category": "check",
+              "operation": "unsat_clause_conjunction",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "unsat_product_initialization",
+              "units": 4
+            },
+            {
+              "category": "output",
+              "operation": "cnf_final_response_prepaid",
+              "units": 76
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_assignment_branch",
+              "units": 4
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_assignment_loop",
+              "units": 8
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_clause_branch",
+              "units": 4
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_clause_read",
+              "units": 8
+            },
+            {
+              "category": "solve",
+              "operation": "enumeration_horizon_shift",
+              "units": 2
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_checked_receipt_words",
+              "units": 26
+            },
+            {
+              "category": "storage",
+              "operation": "cnf_final_cleanup_prepaid",
+              "units": 82
+            },
+            {
+              "category": "storage",
+              "operation": "unsat_assignment_tuple_write",
+              "units": 8
+            },
+            {
+              "category": "storage",
+              "operation": "unsat_bit_tuple_capacity",
+              "units": 2
+            }
+          ]
+        },
+        "witness": null,
+        "detail": "UNSAT independently checked by all assignments"
+      }
+    ]
+  },
+  "actual_total": 2000000
+}

@@ -1,0 +1,173 @@
+[
+  {
+    "check": "first_worker_and_first_leaf_have_every_opcode_event",
+    "expected_offsets": {
+      "cold_caller": [
+        2,
+        12,
+        20
+      ],
+      "cold_leaf": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    "invoice": {
+      "accounting_instrumentation_included": false,
+      "budget": 50000000,
+      "by_stage": {
+        "cold_first_worker": {
+          "python_opcodes": 7
+        }
+      },
+      "failure_readout_released": false,
+      "failure_readout_reserve": 1024,
+      "failures": [],
+      "max_retained_serialized_bytes": 0,
+      "max_serialized_object_bytes": 0,
+      "physical_cpu_and_heap_cap_claimed": false,
+      "tariff": "STRUCTURAL-VM-v1",
+      "terminal_reserve": 100000,
+      "total_units": 7
+    },
+    "observed_offsets": {
+      "cold_caller": [
+        2,
+        12,
+        20
+      ],
+      "cold_leaf": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    "opcode_units": 7,
+    "passed": true
+  },
+  {
+    "check": "invalid_account_rejected_before_paid_admission",
+    "passed": true,
+    "value": "True"
+  },
+  {
+    "check": "invalid_account_rejected_before_paid_admission",
+    "passed": true,
+    "value": "100000.0"
+  },
+  {
+    "check": "invalid_account_rejected_before_paid_admission",
+    "passed": true,
+    "value": "-1"
+  },
+  {
+    "check": "invalid_account_rejected_before_paid_admission",
+    "passed": true,
+    "value": "0"
+  },
+  {
+    "check": "invalid_account_rejected_before_paid_admission",
+    "passed": true,
+    "value": "99999"
+  },
+  {
+    "check": "fixed_failure_tranche_is_sufficient",
+    "fixed_payload_bytes": 140,
+    "fixed_receipt_units": 142,
+    "invoice": {
+      "accounting_instrumentation_included": false,
+      "budget": 100000,
+      "by_stage": {
+        "terminal_reporting": {
+          "normal_terminal_saturation": 98976,
+          "python_opcodes": 2,
+          "report_bytes": 140
+        }
+      },
+      "failure_readout_released": true,
+      "failure_readout_reserve": 1024,
+      "failures": [],
+      "max_retained_serialized_bytes": 0,
+      "max_serialized_object_bytes": 0,
+      "physical_cpu_and_heap_cap_claimed": false,
+      "tariff": "STRUCTURAL-VM-v1",
+      "terminal_reserve": 100000,
+      "total_units": 99118
+    },
+    "passed": true,
+    "reserve": 1024,
+    "traced_literal_return_units": 2
+  },
+  {
+    "admitted_sources": 0,
+    "check": "candidate_first_source_denied",
+    "failure_stage": "setup",
+    "fixed_failure_receipt_units": 142,
+    "input_complete": false,
+    "paid_prefix_units": 0,
+    "passed": true
+  },
+  {
+    "admitted_sources": 0,
+    "check": "ordinary_first_source_denied",
+    "failure_stage": "setup",
+    "fixed_failure_receipt_units": 142,
+    "input_complete": false,
+    "paid_prefix_units": 0,
+    "passed": true
+  },
+  {
+    "admitted_sources": 1,
+    "check": "candidate_second_source_denied",
+    "failure_stage": "setup",
+    "fixed_failure_receipt_units": 142,
+    "input_complete": false,
+    "paid_prefix_units": 46792,
+    "passed": true
+  },
+  {
+    "admitted_sources": 3,
+    "check": "candidate_input_admission_denied",
+    "failure_stage": "input_admission",
+    "fixed_failure_receipt_units": 142,
+    "input_complete": false,
+    "paid_prefix_units": 85975,
+    "passed": true
+  },
+  {
+    "admitted_sources": 1,
+    "check": "ordinary_input_admission_denied",
+    "failure_stage": "input_admission",
+    "fixed_failure_receipt_units": 142,
+    "input_complete": false,
+    "paid_prefix_units": 46792,
+    "passed": true
+  },
+  {
+    "admitted_sources": 1,
+    "check": "before_success_serialization",
+    "failure_stage": "terminal_reporting",
+    "fault_injection_not_a_performance_case": true,
+    "fixed_failure_receipt_units": 142,
+    "input_complete": true,
+    "paid_prefix_units": 49998976,
+    "passed": true
+  },
+  {
+    "admitted_sources": 1,
+    "check": "before_success_report_bytes",
+    "failure_stage": "terminal_reporting",
+    "fault_injection_not_a_performance_case": true,
+    "fixed_failure_receipt_units": 142,
+    "input_complete": true,
+    "paid_prefix_units": 49998976,
+    "passed": true
+  },
+  {
+    "check": "complete_source_closure_unchanged",
+    "passed": true
+  }
+]

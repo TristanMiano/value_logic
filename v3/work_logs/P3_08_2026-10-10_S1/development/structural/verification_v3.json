@@ -1,0 +1,144 @@
+{
+  "kind": "source and invoice closure, no policy replay",
+  "version": "p308-structural-v3",
+  "stage": "DEVELOPMENT",
+  "sources": [
+    {
+      "path": "v3/experiments/p308_structural.py",
+      "sha256": "4f61ecf8ffb6618225eb131f3a636a4c733161b53170bc22385415be1b4bf909",
+      "live_and_snapshot_sha256_match": true
+    },
+    {
+      "path": "v3/checks/04_counterfactual_repair.py",
+      "sha256": "c71692e2e84c52f915dd1d09048344bf1d6c53e7d0362fe82a598d8f3d0ab896",
+      "live_and_snapshot_sha256_match": true
+    },
+    {
+      "path": "v3/checks/05_counterfactual_transport.py",
+      "sha256": "48422eb4b23ab38d2b755de76000edaa38231dce6064c2f9cb71e45702c9ae35",
+      "live_and_snapshot_sha256_match": true
+    }
+  ],
+  "invoice_checks": [
+    {
+      "unit": "counterpossible_tied_minima",
+      "method": "candidate",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "counterpossible_tied_minima",
+      "method": "ordinary",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "external_sources_not_repairs",
+      "method": "candidate",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "external_sources_not_repairs",
+      "method": "ordinary",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "fixed_falsity_constant_infeasible",
+      "method": "candidate",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "fixed_falsity_constant_infeasible",
+      "method": "ordinary",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "conditioning",
+      "method": "candidate",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "conditioning",
+      "method": "ordinary",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "occurrence",
+      "method": "candidate",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "occurrence",
+      "method": "ordinary",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "actor_replacement",
+      "method": "candidate",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "actor_replacement",
+      "method": "ordinary",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "shared_replacement",
+      "method": "candidate",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "shared_replacement",
+      "method": "ordinary",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "shared_and_copy",
+      "method": "candidate",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "shared_and_copy",
+      "method": "ordinary",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "shared_copy_and_new_predictor",
+      "method": "candidate",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    },
+    {
+      "unit": "shared_copy_and_new_predictor",
+      "method": "ordinary",
+      "invoice_sum_matches": true,
+      "all_required_stages_present": true
+    }
+  ],
+  "same_full_transport_terminal_payload": true,
+  "bound_sequence": [
+    "-1",
+    "1",
+    "3"
+  ],
+  "actual_stale_warrant_read_rejected_on_both_edits": true,
+  "transport_max_object_includes_terminal": true,
+  "failed_costs_retained": true,
+  "parallel_principal_credit_ns": 0,
+  "same_model_nonblind_self_review": true,
+  "optional_verification_stopped": true
+}

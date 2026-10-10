@@ -1,0 +1,102 @@
+{
+  "stage": "DEVELOPMENT",
+  "preparation": "public shape-only fixture search",
+  "bucket": 10,
+  "attempts": 24,
+  "queries": [
+    {
+      "query_id": "collision-search-4",
+      "variables": 4,
+      "clauses": [
+        [],
+        [
+          -2
+        ]
+      ],
+      "source_version": "cnf-input-v1",
+      "semantics_version": "bounded-cnf-sat-v1"
+    },
+    {
+      "query_id": "collision-search-23",
+      "variables": 4,
+      "clauses": [
+        [
+          -4,
+          1
+        ]
+      ],
+      "source_version": "cnf-input-v1",
+      "semantics_version": "bounded-cnf-sat-v1"
+    }
+  ],
+  "meter": {
+    "limit_total": 4611686018427387903,
+    "total": 1188,
+    "by_category": {
+      "admission": 96,
+      "solve": 0,
+      "check": 0,
+      "acquisition": 0,
+      "storage": 380,
+      "cache": 428,
+      "forecast": 0,
+      "assessment": 0,
+      "profile": 0,
+      "dependency_compile": 0,
+      "repair_search": 0,
+      "controller": 284,
+      "randomness": 0,
+      "output": 0,
+      "setup": 0
+    },
+    "operations": [
+      {
+        "category": "admission",
+        "operation": "hashcache_bucket_helper_bounded_arguments",
+        "units": 48
+      },
+      {
+        "category": "admission",
+        "operation": "hashcache_key_helper_exact_query_type",
+        "units": 48
+      },
+      {
+        "category": "cache",
+        "operation": "hashcache_canonical_key_word_read",
+        "units": 284
+      },
+      {
+        "category": "cache",
+        "operation": "hashcache_digest_bucket_index",
+        "units": 48
+      },
+      {
+        "category": "cache",
+        "operation": "hashcache_sha256_input_block",
+        "units": 48
+      },
+      {
+        "category": "cache",
+        "operation": "hashcache_temporary_buffer_release",
+        "units": 48
+      },
+      {
+        "category": "controller",
+        "operation": "hashcache_canonical_word_encode",
+        "units": 284
+      },
+      {
+        "category": "storage",
+        "operation": "hashcache_digest_words",
+        "units": 96
+      },
+      {
+        "category": "storage",
+        "operation": "hashcache_encoding_buffer_words",
+        "units": 284
+      }
+    ],
+    "reservations": {},
+    "denials": 0
+  }
+}

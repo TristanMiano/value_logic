@@ -1,0 +1,4398 @@
+{
+  "stage": "DEVELOPMENT",
+  "record_count": 63,
+  "policy_runs_added": 0,
+  "records_are_not_independent_trials": true,
+  "new_paid_benchmark_deployments": 0,
+  "public_seal_sha256": "9f31546a8ae4315539a61b510eb0f6d6a66910d6197d9f5d7c97ad78af55fc22",
+  "private_truth_sha256": "ad547a9d16e35f226d828a43491460b65395de649a7f36b233cf6dec6058bd84",
+  "summary": {
+    "base_minus_half": {
+      "strictly_better": 63,
+      "equal": 0,
+      "strictly_worse": 0
+    },
+    "base_minus_best_fixed_expert": {
+      "strictly_better": 21,
+      "equal": 0,
+      "strictly_worse": 42
+    },
+    "live_minus_matched_half": {
+      "strictly_better": 61,
+      "equal": 0,
+      "strictly_worse": 2
+    },
+    "live_minus_matched_best_expert": {
+      "strictly_better": 23,
+      "equal": 0,
+      "strictly_worse": 40
+    }
+  },
+  "records": [
+    {
+      "run_id": "cold_mixed__finite_uniform__seed11__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        19402885883,
+        2147483648
+      ],
+      "live_brier": [
+        19402885883,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -14956852485,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        75533051,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -14956852485,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        75533051,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_uniform__seed11__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_uniform",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 1,
+      "base_brier": [
+        19402885883,
+        2147483648
+      ],
+      "live_brier": [
+        19268668155,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        63,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 30,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 36
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -14956852485,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        75533051,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -14554199301,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        -58684677,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_uniform_hashed__seed11__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_uniform_hashed",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 1,
+      "base_brier": [
+        19402885883,
+        2147483648
+      ],
+      "live_brier": [
+        19268668155,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        63,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 30,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 36
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -14956852485,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        75533051,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -14554199301,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        -58684677,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__finite_tickets__seed11__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_tickets",
+        "seed": 11,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        52619849023,
+        4294967296
+      ],
+      "live_brier": [
+        52619849023,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -16099627713,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        13965143359,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -16099627713,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        13965143359,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_tickets__seed11__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_tickets",
+        "seed": 11,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 4,
+      "base_brier": [
+        52619849023,
+        4294967296
+      ],
+      "live_brier": [
+        12538284885,
+        1073741824
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        15,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 28,
+        "sparse_sat": 20,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 32,
+        "literal_balance_sat": 34
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -16099627713,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        13965143359,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -3567842475,
+        1073741824
+      ],
+      "live_minus_matched_best_expert": [
+        2874608469,
+        1073741824
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_tickets_hashed__seed11__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_tickets_hashed",
+        "seed": 11,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 4,
+      "base_brier": [
+        52619849023,
+        4294967296
+      ],
+      "live_brier": [
+        12538284885,
+        1073741824
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        15,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 28,
+        "sparse_sat": 20,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 32,
+        "literal_balance_sat": 34
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -16099627713,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        13965143359,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -3567842475,
+        1073741824
+      ],
+      "live_minus_matched_best_expert": [
+        2874608469,
+        1073741824
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__finite_uniform_enumeration__seed11__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform_enumeration",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "enumeration"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        19402885883,
+        2147483648
+      ],
+      "live_brier": [
+        19402885883,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -14956852485,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        75533051,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -14956852485,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        75533051,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__finite_uniform__seed29__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        11851463459,
+        1073741824
+      ],
+      "live_brier": [
+        11851463459,
+        1073741824
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -5328405725,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        2187787043,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -5328405725,
+        1073741824
+      ],
+      "live_minus_matched_best_expert": [
+        2187787043,
+        1073741824
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_uniform__seed29__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_uniform",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 3,
+      "base_brier": [
+        11851463459,
+        1073741824
+      ],
+      "live_brier": [
+        23138252409,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        61,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 28,
+        "sparse_sat": 20,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 35
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -5328405725,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        2187787043,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -9610873223,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        3810899577,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_uniform_hashed__seed29__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_uniform_hashed",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 3,
+      "base_brier": [
+        11851463459,
+        1073741824
+      ],
+      "live_brier": [
+        23138252409,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        61,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 28,
+        "sparse_sat": 20,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 35
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -5328405725,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        2187787043,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -9610873223,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        3810899577,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__finite_tickets__seed29__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_tickets",
+        "seed": 29,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        53061642803,
+        4294967296
+      ],
+      "live_brier": [
+        53061642803,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -15657833933,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        14406937139,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -15657833933,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        14406937139,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_tickets__seed29__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_tickets",
+        "seed": 29,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 3,
+      "base_brier": [
+        53061642803,
+        4294967296
+      ],
+      "live_brier": [
+        51477348027,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        61,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 28,
+        "sparse_sat": 20,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 35
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -15657833933,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        14406937139,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -14020903237,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        12822642363,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_tickets_hashed__seed29__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_tickets_hashed",
+        "seed": 29,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 3,
+      "base_brier": [
+        53061642803,
+        4294967296
+      ],
+      "live_brier": [
+        51477348027,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        61,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 28,
+        "sparse_sat": 20,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 35
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -15657833933,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        14406937139,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -14020903237,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        12822642363,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__finite_uniform_enumeration__seed29__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform_enumeration",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "enumeration"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        11851463459,
+        1073741824
+      ],
+      "live_brier": [
+        11851463459,
+        1073741824
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -5328405725,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        2187787043,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -5328405725,
+        1073741824
+      ],
+      "live_minus_matched_best_expert": [
+        2187787043,
+        1073741824
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__finite_uniform__seed47__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        22240442273,
+        2147483648
+      ],
+      "live_brier": [
+        22240442273,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -12119296095,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        2913089441,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -12119296095,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        2913089441,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_uniform__seed47__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_uniform",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 2,
+      "base_brier": [
+        22240442273,
+        2147483648
+      ],
+      "live_brier": [
+        22087411567,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        31,
+        2
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 29,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 35
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -12119296095,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        2913089441,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -11198584977,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        2760058735,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_uniform_hashed__seed47__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_uniform_hashed",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 2,
+      "base_brier": [
+        22240442273,
+        2147483648
+      ],
+      "live_brier": [
+        22087411567,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        31,
+        2
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 29,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 35
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -12119296095,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        2913089441,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -11198584977,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        2760058735,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__finite_tickets__seed47__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_tickets",
+        "seed": 47,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        49457462459,
+        4294967296
+      ],
+      "live_brier": [
+        49457462459,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -19262014277,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        10802756795,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -19262014277,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        10802756795,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_tickets__seed47__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_tickets",
+        "seed": 47,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 4,
+      "base_brier": [
+        49457462459,
+        4294967296
+      ],
+      "live_brier": [
+        23559800143,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        15,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 27,
+        "sparse_sat": 19,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 34
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -19262014277,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        10802756795,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -8652454577,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        4232447311,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__value_tickets_hashed__seed47__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_tickets_hashed",
+        "seed": 47,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 4,
+      "base_brier": [
+        49457462459,
+        4294967296
+      ],
+      "live_brier": [
+        23559800143,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        15,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 27,
+        "sparse_sat": 19,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 34
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -19262014277,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        10802756795,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -8652454577,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        4232447311,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cold_mixed__finite_uniform_enumeration__seed47__pricefixed",
+      "scenario": "cold_mixed",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform_enumeration",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "enumeration"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        22240442273,
+        2147483648
+      ],
+      "live_brier": [
+        22240442273,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 33,
+        "constant_sat": 31,
+        "sparse_sat": 21,
+        "unit_consistency_sat": 9,
+        "pure_coverage_sat": 33,
+        "literal_balance_sat": 37
+      },
+      "hindsight_best_expert_brier": 9,
+      "matched_hindsight_best_expert_brier": 9,
+      "base_minus_half": [
+        -12119296095,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        2913089441,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -12119296095,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        2913089441,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__finite_uniform__seed11__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        83650762635,
+        4294967296
+      ],
+      "live_brier": [
+        83650762635,
+        4294967296
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        32,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 24,
+      "base_minus_half": [
+        -53788190837,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        -19428452469,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -53788190837,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        -19428452469,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_uniform__seed11__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_uniform",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 49,
+      "base_brier": [
+        83650762635,
+        4294967296
+      ],
+      "live_brier": [
+        64645573837,
+        4294967296
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        79,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 36,
+        "constant_sat": 43,
+        "sparse_sat": 17,
+        "unit_consistency_sat": 19,
+        "pure_coverage_sat": 36,
+        "literal_balance_sat": 42
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 17,
+      "base_minus_half": [
+        -53788190837,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        -19428452469,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -20180030259,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        -8368870195,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_uniform_hashed__seed11__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_uniform_hashed",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 49,
+      "base_brier": [
+        83650762635,
+        4294967296
+      ],
+      "live_brier": [
+        64645573837,
+        4294967296
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        79,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 36,
+        "constant_sat": 43,
+        "sparse_sat": 17,
+        "unit_consistency_sat": 19,
+        "pure_coverage_sat": 36,
+        "literal_balance_sat": 42
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 17,
+      "base_minus_half": [
+        -53788190837,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        -19428452469,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -20180030259,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        -8368870195,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__finite_tickets__seed11__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_tickets",
+        "seed": 11,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        22872623379,
+        1073741824
+      ],
+      "live_brier": [
+        22872623379,
+        1073741824
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        32,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 24,
+      "base_minus_half": [
+        -11487114989,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        -2897180397,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -11487114989,
+        1073741824
+      ],
+      "live_minus_matched_best_expert": [
+        -2897180397,
+        1073741824
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_tickets__seed11__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_tickets",
+        "seed": 11,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 43,
+      "base_brier": [
+        22872623379,
+        1073741824
+      ],
+      "live_brier": [
+        31717497433,
+        2147483648
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        85,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 48,
+        "constant_sat": 37,
+        "sparse_sat": 19,
+        "unit_consistency_sat": 19,
+        "pure_coverage_sat": 48,
+        "literal_balance_sat": 40
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 19,
+      "base_minus_half": [
+        -11487114989,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        -2897180397,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -13916530087,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        -9084691879,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_tickets_hashed__seed11__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_tickets_hashed",
+        "seed": 11,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 43,
+      "base_brier": [
+        22872623379,
+        1073741824
+      ],
+      "live_brier": [
+        31717497433,
+        2147483648
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        85,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 48,
+        "constant_sat": 37,
+        "sparse_sat": 19,
+        "unit_consistency_sat": 19,
+        "pure_coverage_sat": 48,
+        "literal_balance_sat": 40
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 19,
+      "base_minus_half": [
+        -11487114989,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        -2897180397,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -13916530087,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        -9084691879,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__finite_uniform_enumeration__seed11__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform_enumeration",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "enumeration"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        83650762635,
+        4294967296
+      ],
+      "live_brier": [
+        83650762635,
+        4294967296
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        32,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 24,
+      "base_minus_half": [
+        -53788190837,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        -19428452469,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -53788190837,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        -19428452469,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__finite_uniform__seed29__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        20866170843,
+        1073741824
+      ],
+      "live_brier": [
+        20866170843,
+        1073741824
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        32,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 24,
+      "base_minus_half": [
+        -13493567525,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        -4903632933,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -13493567525,
+        1073741824
+      ],
+      "live_minus_matched_best_expert": [
+        -4903632933,
+        1073741824
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_uniform__seed29__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_uniform",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 48,
+      "base_brier": [
+        20866170843,
+        1073741824
+      ],
+      "live_brier": [
+        58909289469,
+        4294967296
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        20,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 43,
+        "constant_sat": 37,
+        "sparse_sat": 20,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 43,
+        "literal_balance_sat": 47
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 16,
+      "base_minus_half": [
+        -13493567525,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        -4903632933,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -26990056451,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        -9810187267,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_uniform_hashed__seed29__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_uniform_hashed",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 48,
+      "base_brier": [
+        20866170843,
+        1073741824
+      ],
+      "live_brier": [
+        58909289469,
+        4294967296
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        20,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 43,
+        "constant_sat": 37,
+        "sparse_sat": 20,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 43,
+        "literal_balance_sat": 47
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 16,
+      "base_minus_half": [
+        -13493567525,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        -4903632933,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -26990056451,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        -9810187267,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__finite_tickets__seed29__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_tickets",
+        "seed": 29,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        94838364169,
+        4294967296
+      ],
+      "live_brier": [
+        94838364169,
+        4294967296
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        32,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 24,
+      "base_minus_half": [
+        -42600589303,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        -8240850935,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -42600589303,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        -8240850935,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_tickets__seed29__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_tickets",
+        "seed": 29,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 42,
+      "base_brier": [
+        94838364169,
+        4294967296
+      ],
+      "live_brier": [
+        7879875217,
+        536870912
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        43,
+        2
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 49,
+        "constant_sat": 37,
+        "sparse_sat": 19,
+        "unit_consistency_sat": 15,
+        "pure_coverage_sat": 49,
+        "literal_balance_sat": 40
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 15,
+      "base_minus_half": [
+        -42600589303,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        -8240850935,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -3662849391,
+        536870912
+      ],
+      "live_minus_matched_best_expert": [
+        -173188463,
+        536870912
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_tickets_hashed__seed29__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_tickets_hashed",
+        "seed": 29,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 42,
+      "base_brier": [
+        94838364169,
+        4294967296
+      ],
+      "live_brier": [
+        7879875217,
+        536870912
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        43,
+        2
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 49,
+        "constant_sat": 37,
+        "sparse_sat": 19,
+        "unit_consistency_sat": 15,
+        "pure_coverage_sat": 49,
+        "literal_balance_sat": 40
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 15,
+      "base_minus_half": [
+        -42600589303,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        -8240850935,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -3662849391,
+        536870912
+      ],
+      "live_minus_matched_best_expert": [
+        -173188463,
+        536870912
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__finite_uniform_enumeration__seed29__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform_enumeration",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "enumeration"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        20866170843,
+        1073741824
+      ],
+      "live_brier": [
+        20866170843,
+        1073741824
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        32,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 24,
+      "base_minus_half": [
+        -13493567525,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        -4903632933,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -13493567525,
+        1073741824
+      ],
+      "live_minus_matched_best_expert": [
+        -4903632933,
+        1073741824
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__finite_uniform__seed47__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        71050861271,
+        4294967296
+      ],
+      "live_brier": [
+        71050861271,
+        4294967296
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        32,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 24,
+      "base_minus_half": [
+        -66388092201,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        -32028353833,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -66388092201,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        -32028353833,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_uniform__seed47__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_uniform",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 47,
+      "base_brier": [
+        71050861271,
+        4294967296
+      ],
+      "live_brier": [
+        63545701599,
+        4294967296
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        81,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 37,
+        "constant_sat": 44,
+        "sparse_sat": 29,
+        "unit_consistency_sat": 21,
+        "pure_coverage_sat": 37,
+        "literal_balance_sat": 46
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 21,
+      "base_minus_half": [
+        -66388092201,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        -32028353833,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -23427386145,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        -26648611617,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_uniform_hashed__seed47__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_uniform_hashed",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 47,
+      "base_brier": [
+        71050861271,
+        4294967296
+      ],
+      "live_brier": [
+        63545701599,
+        4294967296
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        81,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 37,
+        "constant_sat": 44,
+        "sparse_sat": 29,
+        "unit_consistency_sat": 21,
+        "pure_coverage_sat": 37,
+        "literal_balance_sat": 46
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 21,
+      "base_minus_half": [
+        -66388092201,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        -32028353833,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -23427386145,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        -26648611617,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__finite_tickets__seed47__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_tickets",
+        "seed": 47,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        22583067401,
+        1073741824
+      ],
+      "live_brier": [
+        22583067401,
+        1073741824
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        32,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 24,
+      "base_minus_half": [
+        -11776670967,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        -3186736375,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -11776670967,
+        1073741824
+      ],
+      "live_minus_matched_best_expert": [
+        -3186736375,
+        1073741824
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_tickets__seed47__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_tickets",
+        "seed": 47,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 48,
+      "base_brier": [
+        22583067401,
+        1073741824
+      ],
+      "live_brier": [
+        3456446331,
+        268435456
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        20,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 39,
+        "constant_sat": 41,
+        "sparse_sat": 16,
+        "unit_consistency_sat": 18,
+        "pure_coverage_sat": 39,
+        "literal_balance_sat": 33
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 16,
+      "base_minus_half": [
+        -11776670967,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        -3186736375,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -1912262789,
+        268435456
+      ],
+      "live_minus_matched_best_expert": [
+        -838520965,
+        268435456
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__value_tickets_hashed__seed47__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_tickets_hashed",
+        "seed": 47,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 48,
+      "base_brier": [
+        22583067401,
+        1073741824
+      ],
+      "live_brier": [
+        3456446331,
+        268435456
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        20,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 39,
+        "constant_sat": 41,
+        "sparse_sat": 16,
+        "unit_consistency_sat": 18,
+        "pure_coverage_sat": 39,
+        "literal_balance_sat": 33
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 16,
+      "base_minus_half": [
+        -11776670967,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        -3186736375,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -1912262789,
+        268435456
+      ],
+      "live_minus_matched_best_expert": [
+        -838520965,
+        268435456
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "repeat_online__finite_uniform_enumeration__seed47__pricefixed",
+      "scenario": "repeat_online",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform_enumeration",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "enumeration"
+      },
+      "horizon": 128,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        71050861271,
+        4294967296
+      ],
+      "live_brier": [
+        71050861271,
+        4294967296
+      ],
+      "constant_half_brier": [
+        32,
+        1
+      ],
+      "matched_hard_half_brier": [
+        32,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 64,
+        "constant_sat": 64,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 24,
+        "pure_coverage_sat": 64,
+        "literal_balance_sat": 72
+      },
+      "hindsight_best_expert_brier": 24,
+      "matched_hindsight_best_expert_brier": 24,
+      "base_minus_half": [
+        -66388092201,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        -32028353833,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -66388092201,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        -32028353833,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__finite_uniform__seed11__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        16666340835,
+        2147483648
+      ],
+      "live_brier": [
+        16666340835,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -17693397533,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        16666340835,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -17693397533,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        16666340835,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_uniform__seed11__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_uniform",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 51,
+      "base_brier": [
+        16666340835,
+        2147483648
+      ],
+      "live_brier": [
+        6173264057,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        13,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 6,
+        "constant_sat": 7,
+        "sparse_sat": 7,
+        "unit_consistency_sat": 4,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 7
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -17693397533,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        16666340835,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -806057799,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        6173264057,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_uniform_hashed__seed11__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_uniform_hashed",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 51,
+      "base_brier": [
+        16666340835,
+        2147483648
+      ],
+      "live_brier": [
+        6173264057,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        13,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 6,
+        "constant_sat": 7,
+        "sparse_sat": 7,
+        "unit_consistency_sat": 4,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 7
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -17693397533,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        16666340835,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -806057799,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        6173264057,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__finite_tickets__seed11__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_tickets",
+        "seed": 11,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        24690360335,
+        2147483648
+      ],
+      "live_brier": [
+        24690360335,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -9669378033,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        24690360335,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -9669378033,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        24690360335,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_tickets__seed11__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_tickets",
+        "seed": 11,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 45,
+      "base_brier": [
+        24690360335,
+        2147483648
+      ],
+      "live_brier": [
+        11736485639,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        19,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 10,
+        "constant_sat": 9,
+        "sparse_sat": 9,
+        "unit_consistency_sat": 1,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 9
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -9669378033,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        24690360335,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -8664609017,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        11736485639,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_tickets_hashed__seed11__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_tickets_hashed",
+        "seed": 11,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 45,
+      "base_brier": [
+        24690360335,
+        2147483648
+      ],
+      "live_brier": [
+        11736485639,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        19,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 10,
+        "constant_sat": 9,
+        "sparse_sat": 9,
+        "unit_consistency_sat": 1,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 9
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -9669378033,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        24690360335,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -8664609017,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        11736485639,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__finite_uniform_enumeration__seed11__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform_enumeration",
+        "seed": 11,
+        "selector": "uniform",
+        "solver": "enumeration"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        16666340835,
+        2147483648
+      ],
+      "live_brier": [
+        16666340835,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -17693397533,
+        2147483648
+      ],
+      "base_minus_best_fixed_expert": [
+        16666340835,
+        2147483648
+      ],
+      "live_minus_matched_half": [
+        -17693397533,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        16666340835,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__finite_uniform__seed29__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        39522984663,
+        4294967296
+      ],
+      "live_brier": [
+        39522984663,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -29196492073,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        39522984663,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -29196492073,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        39522984663,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_uniform__seed29__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_uniform",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 48,
+      "base_brier": [
+        39522984663,
+        4294967296
+      ],
+      "live_brier": [
+        12227338737,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        4,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 3,
+        "constant_sat": 13,
+        "sparse_sat": 13,
+        "unit_consistency_sat": 8,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 13
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -29196492073,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        39522984663,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        3637404145,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        12227338737,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_uniform_hashed__seed29__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_uniform_hashed",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 48,
+      "base_brier": [
+        39522984663,
+        4294967296
+      ],
+      "live_brier": [
+        12227338737,
+        2147483648
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        4,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 3,
+        "constant_sat": 13,
+        "sparse_sat": 13,
+        "unit_consistency_sat": 8,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 13
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -29196492073,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        39522984663,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        3637404145,
+        2147483648
+      ],
+      "live_minus_matched_best_expert": [
+        12227338737,
+        2147483648
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__finite_tickets__seed29__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_tickets",
+        "seed": 29,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        12287783165,
+        1073741824
+      ],
+      "live_brier": [
+        12287783165,
+        1073741824
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -4892086019,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        12287783165,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -4892086019,
+        1073741824
+      ],
+      "live_minus_matched_best_expert": [
+        12287783165,
+        1073741824
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_tickets__seed29__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_tickets",
+        "seed": 29,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 51,
+      "base_brier": [
+        12287783165,
+        1073741824
+      ],
+      "live_brier": [
+        11165513053,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        13,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 5,
+        "constant_sat": 8,
+        "sparse_sat": 8,
+        "unit_consistency_sat": 2,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 8
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -4892086019,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        12287783165,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -2793130659,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        11165513053,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_tickets_hashed__seed29__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_tickets_hashed",
+        "seed": 29,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 51,
+      "base_brier": [
+        12287783165,
+        1073741824
+      ],
+      "live_brier": [
+        11165513053,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        13,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 5,
+        "constant_sat": 8,
+        "sparse_sat": 8,
+        "unit_consistency_sat": 2,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 8
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -4892086019,
+        1073741824
+      ],
+      "base_minus_best_fixed_expert": [
+        12287783165,
+        1073741824
+      ],
+      "live_minus_matched_half": [
+        -2793130659,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        11165513053,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__finite_uniform_enumeration__seed29__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform_enumeration",
+        "seed": 29,
+        "selector": "uniform",
+        "solver": "enumeration"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        39522984663,
+        4294967296
+      ],
+      "live_brier": [
+        39522984663,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -29196492073,
+        4294967296
+      ],
+      "base_minus_best_fixed_expert": [
+        39522984663,
+        4294967296
+      ],
+      "live_minus_matched_half": [
+        -29196492073,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        39522984663,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__finite_uniform__seed47__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        352985525,
+        67108864
+      ],
+      "live_brier": [
+        352985525,
+        67108864
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -720756299,
+        67108864
+      ],
+      "base_minus_best_fixed_expert": [
+        352985525,
+        67108864
+      ],
+      "live_minus_matched_half": [
+        -720756299,
+        67108864
+      ],
+      "live_minus_matched_best_expert": [
+        352985525,
+        67108864
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_uniform__seed47__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_uniform",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 49,
+      "base_brier": [
+        352985525,
+        67108864
+      ],
+      "live_brier": [
+        2068047363,
+        1073741824
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        15,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 10,
+        "constant_sat": 5,
+        "sparse_sat": 5,
+        "unit_consistency_sat": 2,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 5
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -720756299,
+        67108864
+      ],
+      "base_minus_best_fixed_expert": [
+        352985525,
+        67108864
+      ],
+      "live_minus_matched_half": [
+        -1958484477,
+        1073741824
+      ],
+      "live_minus_matched_best_expert": [
+        2068047363,
+        1073741824
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_uniform_hashed__seed47__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_uniform_hashed",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 49,
+      "base_brier": [
+        352985525,
+        67108864
+      ],
+      "live_brier": [
+        2068047363,
+        1073741824
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        15,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 10,
+        "constant_sat": 5,
+        "sparse_sat": 5,
+        "unit_consistency_sat": 2,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 5
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -720756299,
+        67108864
+      ],
+      "base_minus_best_fixed_expert": [
+        352985525,
+        67108864
+      ],
+      "live_minus_matched_half": [
+        -1958484477,
+        1073741824
+      ],
+      "live_minus_matched_best_expert": [
+        2068047363,
+        1073741824
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__finite_tickets__seed47__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_tickets",
+        "seed": 47,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        3047643931,
+        268435456
+      ],
+      "live_brier": [
+        3047643931,
+        268435456
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -1247323365,
+        268435456
+      ],
+      "base_minus_best_fixed_expert": [
+        3047643931,
+        268435456
+      ],
+      "live_minus_matched_half": [
+        -1247323365,
+        268435456
+      ],
+      "live_minus_matched_best_expert": [
+        3047643931,
+        268435456
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_tickets__seed47__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "kind": "broker",
+        "method": "value_tickets",
+        "seed": 47,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 47,
+      "base_brier": [
+        3047643931,
+        268435456
+      ],
+      "live_brier": [
+        17813778935,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        17,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 7,
+        "constant_sat": 10,
+        "sparse_sat": 10,
+        "unit_consistency_sat": 7,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 10
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -1247323365,
+        268435456
+      ],
+      "base_minus_best_fixed_expert": [
+        3047643931,
+        268435456
+      ],
+      "live_minus_matched_half": [
+        -439832073,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        17813778935,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__value_tickets_hashed__seed47__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": true,
+        "hard_index": "hashed",
+        "kind": "broker",
+        "method": "value_tickets_hashed",
+        "seed": 47,
+        "selector": "tickets",
+        "solver": "dpll"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 47,
+      "base_brier": [
+        3047643931,
+        268435456
+      ],
+      "live_brier": [
+        17813778935,
+        4294967296
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        17,
+        4
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 7,
+        "constant_sat": 10,
+        "sparse_sat": 10,
+        "unit_consistency_sat": 7,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 10
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -1247323365,
+        268435456
+      ],
+      "base_minus_best_fixed_expert": [
+        3047643931,
+        268435456
+      ],
+      "live_minus_matched_half": [
+        -439832073,
+        4294967296
+      ],
+      "live_minus_matched_best_expert": [
+        17813778935,
+        4294967296
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    },
+    {
+      "run_id": "cheap_structure__finite_uniform_enumeration__seed47__pricefixed",
+      "scenario": "cheap_structure",
+      "configuration": {
+        "hard": false,
+        "kind": "broker",
+        "method": "finite_uniform_enumeration",
+        "seed": 47,
+        "selector": "uniform",
+        "solver": "enumeration"
+      },
+      "horizon": 64,
+      "current_hard_before_issue": 0,
+      "base_brier": [
+        352985525,
+        67108864
+      ],
+      "live_brier": [
+        352985525,
+        67108864
+      ],
+      "constant_half_brier": [
+        16,
+        1
+      ],
+      "matched_hard_half_brier": [
+        16,
+        1
+      ],
+      "fixed_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "matched_hard_expert_brier": {
+        "constant_unsat": 32,
+        "constant_sat": 32,
+        "sparse_sat": 32,
+        "unit_consistency_sat": 16,
+        "pure_coverage_sat": 0,
+        "literal_balance_sat": 32
+      },
+      "hindsight_best_expert_brier": 0,
+      "matched_hindsight_best_expert_brier": 0,
+      "base_minus_half": [
+        -720756299,
+        67108864
+      ],
+      "base_minus_best_fixed_expert": [
+        352985525,
+        67108864
+      ],
+      "live_minus_matched_half": [
+        -720756299,
+        67108864
+      ],
+      "live_minus_matched_best_expert": [
+        352985525,
+        67108864
+      ],
+      "free_perfect_foresight_brier": [
+        0,
+        1
+      ],
+      "free_oracle_is_deployable_control": false
+    }
+  ]
+}

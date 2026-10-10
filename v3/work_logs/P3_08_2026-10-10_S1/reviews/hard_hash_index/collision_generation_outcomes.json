@@ -1,0 +1,344 @@
+[
+  {
+    "index": "linear",
+    "record": {
+      "scope": [
+        "bounded-cnf-sat-v1",
+        "cnf-input-v1",
+        "collision-epoch"
+      ],
+      "entries_retained": 4,
+      "index_kind": "linear",
+      "bucket_count": 0,
+      "active_entries": 2,
+      "conflicts": 1,
+      "withdrawals": 2,
+      "generation": 2
+    },
+    "node_count": 0,
+    "conflict": {
+      "type": "Rejected",
+      "message": "Contradictory checked receipts invalidate the coordinate."
+    },
+    "capacity_failure": {
+      "type": "BudgetExceeded",
+      "message": "Hard-answer capacity exhausted; new receipt is not admitted."
+    },
+    "meter": {
+      "limit_total": 4611686018427387903,
+      "total": 1240,
+      "by_category": {
+        "admission": 126,
+        "solve": 0,
+        "check": 18,
+        "acquisition": 0,
+        "storage": 184,
+        "cache": 912,
+        "forecast": 0,
+        "assessment": 0,
+        "profile": 0,
+        "dependency_compile": 0,
+        "repair_search": 0,
+        "controller": 0,
+        "randomness": 0,
+        "output": 0,
+        "setup": 0
+      },
+      "operations": [
+        {
+          "category": "admission",
+          "operation": "hard_scope_read",
+          "units": 72
+        },
+        {
+          "category": "admission",
+          "operation": "hard_store_initialization",
+          "units": 8
+        },
+        {
+          "category": "admission",
+          "operation": "scope_label_validation_words",
+          "units": 26
+        },
+        {
+          "category": "admission",
+          "operation": "scope_scalar_type_length_check",
+          "units": 12
+        },
+        {
+          "category": "admission",
+          "operation": "scope_shape_preflight",
+          "units": 8
+        },
+        {
+          "category": "cache",
+          "operation": "complete_semantic_key_comparison",
+          "units": 780
+        },
+        {
+          "category": "cache",
+          "operation": "hard_scope_comparison",
+          "units": 132
+        },
+        {
+          "category": "check",
+          "operation": "duplicate_hard_answer_comparison",
+          "units": 2
+        },
+        {
+          "category": "check",
+          "operation": "scope_epoch_change",
+          "units": 16
+        },
+        {
+          "category": "storage",
+          "operation": "hard_answer_and_full_key_write",
+          "units": 112
+        },
+        {
+          "category": "storage",
+          "operation": "hard_answer_read",
+          "units": 28
+        },
+        {
+          "category": "storage",
+          "operation": "hard_conflict_state_write",
+          "units": 20
+        },
+        {
+          "category": "storage",
+          "operation": "hard_store_state_words",
+          "units": 8
+        },
+        {
+          "category": "storage",
+          "operation": "scope_epoch_state_write",
+          "units": 16
+        }
+      ],
+      "reservations": {},
+      "denials": 0
+    }
+  },
+  {
+    "index": "hashed",
+    "record": {
+      "scope": [
+        "bounded-cnf-sat-v1",
+        "cnf-input-v1",
+        "collision-epoch"
+      ],
+      "entries_retained": 4,
+      "index_kind": "hashed",
+      "bucket_count": 128,
+      "active_entries": 2,
+      "conflicts": 1,
+      "withdrawals": 2,
+      "generation": 2
+    },
+    "node_count": 4,
+    "conflict": {
+      "type": "Rejected",
+      "message": "Contradictory checked receipts invalidate the coordinate."
+    },
+    "capacity_failure": {
+      "type": "BudgetExceeded",
+      "message": "Hard-answer capacity exhausted; new receipt is not admitted."
+    },
+    "meter": {
+      "limit_total": 4611686018427387903,
+      "total": 2374,
+      "by_category": {
+        "admission": 202,
+        "solve": 0,
+        "check": 18,
+        "acquisition": 0,
+        "storage": 719,
+        "cache": 1214,
+        "forecast": 0,
+        "assessment": 0,
+        "profile": 0,
+        "dependency_compile": 0,
+        "repair_search": 0,
+        "controller": 221,
+        "randomness": 0,
+        "output": 0,
+        "setup": 0
+      },
+      "operations": [
+        {
+          "category": "admission",
+          "operation": "hard_hash_fixed_bucket_configuration",
+          "units": 4
+        },
+        {
+          "category": "admission",
+          "operation": "hard_scope_read",
+          "units": 72
+        },
+        {
+          "category": "admission",
+          "operation": "hard_store_initialization",
+          "units": 8
+        },
+        {
+          "category": "admission",
+          "operation": "hashcache_bucket_helper_bounded_arguments",
+          "units": 36
+        },
+        {
+          "category": "admission",
+          "operation": "hashcache_key_helper_exact_query_type",
+          "units": 36
+        },
+        {
+          "category": "admission",
+          "operation": "scope_label_validation_words",
+          "units": 26
+        },
+        {
+          "category": "admission",
+          "operation": "scope_scalar_type_length_check",
+          "units": 12
+        },
+        {
+          "category": "admission",
+          "operation": "scope_shape_preflight",
+          "units": 8
+        },
+        {
+          "category": "cache",
+          "operation": "complete_semantic_key_comparison",
+          "units": 696
+        },
+        {
+          "category": "cache",
+          "operation": "hard_hash_bucket_chain_step",
+          "units": 58
+        },
+        {
+          "category": "cache",
+          "operation": "hard_hash_bucket_collision_step",
+          "units": 15
+        },
+        {
+          "category": "cache",
+          "operation": "hard_hash_conflict_slot_read",
+          "units": 8
+        },
+        {
+          "category": "cache",
+          "operation": "hard_scope_comparison",
+          "units": 116
+        },
+        {
+          "category": "cache",
+          "operation": "hashcache_canonical_key_word_read",
+          "units": 213
+        },
+        {
+          "category": "cache",
+          "operation": "hashcache_digest_bucket_index",
+          "units": 36
+        },
+        {
+          "category": "cache",
+          "operation": "hashcache_sha256_input_block",
+          "units": 36
+        },
+        {
+          "category": "cache",
+          "operation": "hashcache_temporary_buffer_release",
+          "units": 36
+        },
+        {
+          "category": "check",
+          "operation": "duplicate_hard_answer_comparison",
+          "units": 2
+        },
+        {
+          "category": "check",
+          "operation": "scope_epoch_change",
+          "units": 16
+        },
+        {
+          "category": "controller",
+          "operation": "hard_hash_chain_prepend",
+          "units": 8
+        },
+        {
+          "category": "controller",
+          "operation": "hashcache_canonical_word_encode",
+          "units": 213
+        },
+        {
+          "category": "storage",
+          "operation": "hard_answer_and_full_key_write",
+          "units": 112
+        },
+        {
+          "category": "storage",
+          "operation": "hard_answer_read",
+          "units": 28
+        },
+        {
+          "category": "storage",
+          "operation": "hard_conflict_state_write",
+          "units": 20
+        },
+        {
+          "category": "storage",
+          "operation": "hard_hash_bucket_count_word",
+          "units": 1
+        },
+        {
+          "category": "storage",
+          "operation": "hard_hash_bucket_head_read",
+          "units": 18
+        },
+        {
+          "category": "storage",
+          "operation": "hard_hash_bucket_head_words",
+          "units": 128
+        },
+        {
+          "category": "storage",
+          "operation": "hard_hash_entry_slot_retention",
+          "units": 4
+        },
+        {
+          "category": "storage",
+          "operation": "hard_hash_node_and_bucket_head_write",
+          "units": 12
+        },
+        {
+          "category": "storage",
+          "operation": "hard_hash_node_and_entry_slot_read",
+          "units": 87
+        },
+        {
+          "category": "storage",
+          "operation": "hard_store_state_words",
+          "units": 8
+        },
+        {
+          "category": "storage",
+          "operation": "hashcache_digest_words",
+          "units": 72
+        },
+        {
+          "category": "storage",
+          "operation": "hashcache_encoding_buffer_words",
+          "units": 213
+        },
+        {
+          "category": "storage",
+          "operation": "scope_epoch_state_write",
+          "units": 16
+        }
+      ],
+      "reservations": {},
+      "denials": 0
+    }
+  }
+]

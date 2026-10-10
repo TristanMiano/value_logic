@@ -1,0 +1,16 @@
+{
+  "stage": "DEVELOPMENT",
+  "principal_clock_credit_ns": 0,
+  "purpose": "Focused pre-comparison proof_solver amendment; no generated cohort and no broad regression rerun.",
+  "source_change": "Preserve p308_ordinary v1.2; add bounded enumeration or dpll selection to proof_only, retaining enumeration default and the existing purchase/accounting path.",
+  "public_tape": [
+    {"query_id": "proof-sat", "variables": 3, "clauses": [[1], [-2], [3]]},
+    {"query_id": "proof-unsat", "variables": 3, "clauses": [[1], [-1]]}
+  ],
+  "checks": [
+    "Both solvers close both handwritten formulas with a proof cap equal to the largest public service cap on this tape; match their receipts to the standalone checked provider.",
+    "Default proof_solver result equals explicit enumeration.",
+    "Each solver retains no hard answer and the named fallback after proof_cap=64, and after a provider_limit=64 clamps the larger supplied proof cap; all actual child invoices are absorbed.",
+    "Unsupported string and non-string proof_solver options reject before any provider attempt."
+  ]
+}

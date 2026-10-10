@@ -1,7 +1,7 @@
 # Phase-three claims and obligations
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 9, 2026 UTC.
-**P3-01–07 are complete at their declared task scopes, with their Research90
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 10, 2026 UTC.
+**P3-01–08 are complete at their declared task scopes, with their Research90
 minima and closing records. P3-A remains PASS at problem and restricted representation
 readiness; P3-B now passes at restricted mathematical/local implementation
 readiness and P3-C–D remain unattempted. P3-04 closes on separately versioned
@@ -12,7 +12,9 @@ scope with its observed Research90 and preserved evidence. P3-07 closes at
 bounded paid-computation, acquired-profile and versioned self-assessment scope,
 with observed Research90. P3-B is now PASS with no additional floor.
 Selected R-P3-B-A (option A) is complete at finite paid-feedback and
-observable-performance scope. Next: P3-08, unstarted. P3-N01 is SUPPORTED
+observable-performance scope. P3-08 is complete at finite owned-broker hard-state,
+paid-reporting and separate structural integration scope. Next: P3-09, recommended
+and unstarted. P3-N01 is SUPPORTED
 at the documented modest formal-adaptation and implementation-synthesis
 scope; Q3 affirmative comparative benefit remains open.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
@@ -381,3 +383,33 @@ or parallel recredit, and preserved prior ledger bytes. Phase research is
 P3-08 remains unstarted, P3-C/D unattempted, options B/C unselected, and no
 final challenge is frozen or exposed. Earlier P3-01–07 scientific files and
 the surviving defensive-forecasting addendum remain unchanged.
+
+
+## P3-08 implementation dispositions — October 10, 2026
+
+**COMPLETE at the declared finite scope**, with **90.238687895033 observed
+research minutes**; [closed actuals](work_logs/P3_08_2026-10-10_S1/actuals.json).
+The [development record](experiments/development.md),
+[scientific closure](work_logs/P3_08_2026-10-10_S1/review_closure.md),
+[contribution assessment](work_logs/P3_08_2026-10-10_S1/contribution_assessment.md)
+and [21-duty implementation overlay](checkpoints/B_1_P3_08.v1.json) control this
+additive assessment. Prior dated judgments, source snapshots and negative
+comparisons remain historical.
+
+| Record | Current finding | Scope and evidence |
+|---|---|---|
+| P3-08-U04 | Finite hard-answer integration is implemented. | Owned selector/propensity/receipt; immutable forecasts; current full-key and generation checks; spent failures and withdrawal. No universal reasoner or integration of the structural and feedback arms. |
+| P3-08-REPORT | Exact live corrections and predictable snapshots have priced fixed-end public reports. | Shared residual, finite predeclared rate grid and every-path funding premises. No post-selected success, anytime, multi-arm, calibration or coherent truth-law guarantee. |
+| P3-08-REUSE | Paid selected-receipt caching preserves the learning path under its own cap. | Logical receipt quota retained; 32 exact couplings. All reduce cold calls, but 20 cost more. Corrected direct response is prepaid. |
+| P3-08-U08 | Applicable fixed-expert bounds retain their original comparator and typed target. | Giving the experts the realized hard mask creates a different comparator. Static/hard-matched benchmark replays are descriptive and do not execute their own selector or prove new regret. |
+| P3-08-COMPARE | Ordinary controls cover exact, cached, bounded proof, greedy, fixed actions and the identical candidate kernel. | All native price cells have ordinary winners; some individual recorded feedback policies have intermediate-price windows. All balanced three-seed mean frontiers among 90 complete configurations are ordinary for every nonnegative external price. No expectation/population inference. |
+| P3-08-STRUCTURAL | Nine fixture outputs and current transport agree with an independent ordinary solver. | All ties, external sources and fixed receiving actions retained. The ordinary solver is cheaper. Exact CPython 3.12.14 event tariff; explicit resource-failure scope. |
+| P3-N01 current | **SUPPORTED** at modest formal-adaptation and implementation-synthesis scope. | Constructive composition and its resource/correctness interfaces qualify under the author's criterion. No generic new concentration method, optimal VOC, priority or superiority claim. |
+| P3-H03 / Q3 current | **OPEN** for affirmative advantage over the strongest credible ordinary combination. | Ordinary kernel identity and adverse aggregate comparisons remain consequential. Negative findings alone are not the constructive contribution. |
+
+Phase qualifying research is **844.753720675033 minutes**;
+**115.246279324967** remain to the phase floor. P3-09 is the
+recommended next unstarted task; its own floor and later task floors are not
+replaced by that phase remainder. Options B/C and R-P3-N01 remain unselected;
+P3-C/D remain unattempted. All evidence is DEVELOPMENT, with no final freeze
+or exposure.

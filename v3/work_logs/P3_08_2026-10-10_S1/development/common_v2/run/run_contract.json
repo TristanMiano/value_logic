@@ -1,0 +1,517 @@
+{
+  "core_sources": [
+    "v3/experiments/p308_common.py",
+    "v3/experiments/p308_broker.py",
+    "v3/experiments/p308_cnf.py",
+    "v3/experiments/p308_ordinary.py",
+    "v3/experiments/p308_mirrors.py",
+    "v3/checks/07_selective_feedback.py",
+    "v3/checks/07_selective_feedback_service.py",
+    "v3/checks/07_computation_adapter.py",
+    "v3/experiments/p308_hashcache.py"
+  ],
+  "development_inputs_previously_exposed_in_common_v1": true,
+  "jobs": [
+    {
+      "hard": false,
+      "kind": "broker",
+      "method": "finite_uniform",
+      "seed": 11,
+      "selector": "uniform",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "kind": "broker",
+      "method": "value_uniform",
+      "seed": 11,
+      "selector": "uniform",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "hard_index": "hashed",
+      "kind": "broker",
+      "method": "value_uniform_hashed",
+      "seed": 11,
+      "selector": "uniform",
+      "solver": "dpll"
+    },
+    {
+      "hard": false,
+      "kind": "broker",
+      "method": "finite_tickets",
+      "seed": 11,
+      "selector": "tickets",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "kind": "broker",
+      "method": "value_tickets",
+      "seed": 11,
+      "selector": "tickets",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "hard_index": "hashed",
+      "kind": "broker",
+      "method": "value_tickets_hashed",
+      "seed": 11,
+      "selector": "tickets",
+      "solver": "dpll"
+    },
+    {
+      "hard": false,
+      "kind": "broker",
+      "method": "finite_uniform_enumeration",
+      "seed": 11,
+      "selector": "uniform",
+      "solver": "enumeration"
+    },
+    {
+      "kind": "ordinary",
+      "method": "probability_cost",
+      "ordinary_method": "probability_cost",
+      "seed": 11
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 11,
+      "unit_price": "0"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 11,
+      "unit_price": "0"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 11,
+      "unit_price": "1/100000"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 11,
+      "unit_price": "1/100000"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 11,
+      "unit_price": "1/10000"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 11,
+      "unit_price": "1/10000"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 11,
+      "unit_price": "1/1000"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 11,
+      "unit_price": "1/1000"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 11,
+      "unit_price": "1/100"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 11,
+      "unit_price": "1/100"
+    },
+    {
+      "hard": false,
+      "kind": "broker",
+      "method": "finite_uniform",
+      "seed": 29,
+      "selector": "uniform",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "kind": "broker",
+      "method": "value_uniform",
+      "seed": 29,
+      "selector": "uniform",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "hard_index": "hashed",
+      "kind": "broker",
+      "method": "value_uniform_hashed",
+      "seed": 29,
+      "selector": "uniform",
+      "solver": "dpll"
+    },
+    {
+      "hard": false,
+      "kind": "broker",
+      "method": "finite_tickets",
+      "seed": 29,
+      "selector": "tickets",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "kind": "broker",
+      "method": "value_tickets",
+      "seed": 29,
+      "selector": "tickets",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "hard_index": "hashed",
+      "kind": "broker",
+      "method": "value_tickets_hashed",
+      "seed": 29,
+      "selector": "tickets",
+      "solver": "dpll"
+    },
+    {
+      "hard": false,
+      "kind": "broker",
+      "method": "finite_uniform_enumeration",
+      "seed": 29,
+      "selector": "uniform",
+      "solver": "enumeration"
+    },
+    {
+      "kind": "ordinary",
+      "method": "probability_cost",
+      "ordinary_method": "probability_cost",
+      "seed": 29
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 29,
+      "unit_price": "0"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 29,
+      "unit_price": "0"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 29,
+      "unit_price": "1/100000"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 29,
+      "unit_price": "1/100000"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 29,
+      "unit_price": "1/10000"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 29,
+      "unit_price": "1/10000"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 29,
+      "unit_price": "1/1000"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 29,
+      "unit_price": "1/1000"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 29,
+      "unit_price": "1/100"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 29,
+      "unit_price": "1/100"
+    },
+    {
+      "hard": false,
+      "kind": "broker",
+      "method": "finite_uniform",
+      "seed": 47,
+      "selector": "uniform",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "kind": "broker",
+      "method": "value_uniform",
+      "seed": 47,
+      "selector": "uniform",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "hard_index": "hashed",
+      "kind": "broker",
+      "method": "value_uniform_hashed",
+      "seed": 47,
+      "selector": "uniform",
+      "solver": "dpll"
+    },
+    {
+      "hard": false,
+      "kind": "broker",
+      "method": "finite_tickets",
+      "seed": 47,
+      "selector": "tickets",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "kind": "broker",
+      "method": "value_tickets",
+      "seed": 47,
+      "selector": "tickets",
+      "solver": "dpll"
+    },
+    {
+      "hard": true,
+      "hard_index": "hashed",
+      "kind": "broker",
+      "method": "value_tickets_hashed",
+      "seed": 47,
+      "selector": "tickets",
+      "solver": "dpll"
+    },
+    {
+      "hard": false,
+      "kind": "broker",
+      "method": "finite_uniform_enumeration",
+      "seed": 47,
+      "selector": "uniform",
+      "solver": "enumeration"
+    },
+    {
+      "kind": "ordinary",
+      "method": "probability_cost",
+      "ordinary_method": "probability_cost",
+      "seed": 47
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 47,
+      "unit_price": "0"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 47,
+      "unit_price": "0"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 47,
+      "unit_price": "1/100000"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 47,
+      "unit_price": "1/100000"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 47,
+      "unit_price": "1/10000"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 47,
+      "unit_price": "1/10000"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 47,
+      "unit_price": "1/1000"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 47,
+      "unit_price": "1/1000"
+    },
+    {
+      "kind": "ordinary",
+      "method": "ordinary_combo",
+      "ordinary_method": "ordinary_combo",
+      "seed": 47,
+      "unit_price": "1/100"
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "ordinary_combo_hashed",
+      "ordinary_method": "ordinary_combo",
+      "seed": 47,
+      "unit_price": "1/100"
+    },
+    {
+      "kind": "ordinary",
+      "method": "proof_enumeration",
+      "ordinary_method": "proof_only",
+      "proof_cap": 2048,
+      "proof_solver": "enumeration",
+      "seed": 11
+    },
+    {
+      "kind": "ordinary",
+      "method": "proof_dpll",
+      "ordinary_method": "proof_only",
+      "proof_cap": 2048,
+      "proof_solver": "dpll",
+      "seed": 11
+    },
+    {
+      "kind": "ordinary",
+      "method": "exact_enumeration",
+      "ordinary_method": "proof_only",
+      "proof_cap": 4294967296,
+      "proof_solver": "enumeration",
+      "seed": 11
+    },
+    {
+      "kind": "ordinary",
+      "method": "exact_dpll",
+      "ordinary_method": "exact_dpll",
+      "seed": 11
+    },
+    {
+      "kind": "ordinary",
+      "method": "exact_cache",
+      "ordinary_method": "exact_cache",
+      "seed": 11
+    },
+    {
+      "cache_kind": "hashed",
+      "kind": "ordinary",
+      "method": "exact_cache_hashed",
+      "ordinary_method": "exact_cache",
+      "seed": 11
+    },
+    {
+      "fallback_action": 0,
+      "kind": "ordinary",
+      "method": "no_compute_0",
+      "ordinary_method": "no_compute",
+      "seed": 11
+    },
+    {
+      "fallback_action": 1,
+      "kind": "ordinary",
+      "method": "no_compute_1",
+      "ordinary_method": "no_compute",
+      "seed": 11
+    }
+  ],
+  "ordinary_mirrors": "Same executable kernel and bill; representation controls, not extra trials.",
+  "plan": "comparison_plan_v2.md (additive to comparison_plan_v1.md)",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "policy_truth_access": false,
+  "public_generation_seed": 3081013,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "random_seed_is_coverage_evidence": false,
+  "report_source": "v3/experiments/p308_reporting.py",
+  "reporting": {
+    "basis": "snapshot",
+    "prospective_coverage_study": false,
+    "radius": "grid"
+  },
+  "resource_prices": [
+    "0",
+    "1/100000",
+    "1/10000",
+    "1/1000",
+    "1/100"
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "stage": "DEVELOPMENT",
+  "version": "p308-development-runner-v2"
+}

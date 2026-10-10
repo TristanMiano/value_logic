@@ -1,8 +1,8 @@
 # Phase Three: Reasoning About Unresolved Mathematics
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 9, 2026 UTC.
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 10, 2026 UTC.
 
-**P3-01–07 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
+**P3-01–08 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
 minimum of **16 measured hours of research**, with longer work possible.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -116,13 +116,14 @@ The [closing record](work_logs/P3_06_2026-10-09_S1.md) gives **90.210938375717**
 new research minutes. P3-07 is **complete** at its declared
 [bounded paid-reasoning scope](derivations/07_paid_reasoning.md), with
 **90.187687312067** observed research minutes. Phase research is
-**754.515032780000 minutes**, with **205.484967220000** remaining to the
+**844.753720675033 minutes**, with **115.246279324967** remaining to the
 960-minute floor. **P3-B has passed** at restricted mathematical/local implementation
 readiness. The author-selected **paid selective-feedback recurrence is complete**;
 see its [additive checkpoint](checkpoints/B_1_R_P3_B_A.md).
 P3-N01 is **SUPPORTED at modest formal-adaptation and implementation-synthesis
-scope**. Q3 comparative advantage remains open. P3-08 is the recommended next
-item and remains unstarted.
+scope**. Q3 comparative advantage remains open. P3-08 closes U04
+integration for the owned finite CNF broker, with paid reporting and a separate
+structural arm. P3-09 is recommended next and remains unstarted.
 
 ## Workspace
 
@@ -142,8 +143,9 @@ item and remains unstarted.
 | Counterfactual semantics | [Construction](derivations/04_counterfactual_semantics.md) · [Extensions](derivations/04_selection_extensions.md) · [Sources](literature/04_source_contracts.md) · [Replacement code](checks/04_README.md) |
 | Sequential cost forecasts | [Construction and duties](derivations/06_cost_forecast_refinement.md) · [Repricing](derivations/06_price_replay.md) · [Capital comparison](derivations/06_capital_comparison.md) · [Calibration](derivations/06_calibration_scope.md) · [BRIA boundary](derivations/06_bria_boundary.md) |
 | Paid reasoning | [Rule and costs](derivations/07_paid_reasoning.md) · [Four-action extension](derivations/07_multi_action_forecasting.md) · [Analytical ordinary control](derivations/07_ordinary_analytic_profile.md) · [Acquisition planner](derivations/07_acquisition_planning.md) · [Closing record](work_logs/P3_07_2026-10-09_S1.md) |
-| Mathematics and implementation readiness | [P3-B decision](checkpoints/B_1.md) · [Recurrence supplement](checkpoints/B_1_R_P3_B_A.md) · [Current 21-duty overlay](checkpoints/B_1_R_P3_B_A.v1.json) |
+| Mathematics and implementation readiness | [P3-B decision](checkpoints/B_1.md) · [Recurrence supplement](checkpoints/B_1_R_P3_B_A.md) · [Historical recurrence duties](checkpoints/B_1_R_P3_B_A.v1.json) · [Current implementation overlay](checkpoints/B_1_P3_08.v1.json) |
 | Paid selective feedback | [Finite construction](derivations/07_selective_feedback.md) · [Observable performance](derivations/07_observable_performance.md) · [Primary-source comparison](literature/07_selective_feedback_sources.md) · [Closed recurrence](work_logs/R_P3_B_A_2026-10-09_S1.md) |
+| Executable methods and matched controls | [Development record and commands](experiments/development.md) · [Review closure](work_logs/P3_08_2026-10-10_S1/review_closure.md) · [Closed P3-08 session](work_logs/P3_08_2026-10-10_S1.md) |
 | Mathematical Markdown | [Rendering conventions and guard](STYLE.md) |
 | Claims and open obligations | [Claim ledger](claim_ledger.md) |
 | Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |
@@ -277,3 +279,37 @@ Neither is selected. Phase research is **754.515032780000 minutes**, leaving
 **205.484967220000** to the 960-minute floor. Exact clocks, excluded recovery,
 append-only accounting and evidence preservation are in the
 [session close](work_logs/R_P3_B_A_2026-10-09_S1.md).
+
+
+## P3-08 completion — October 10, 2026
+
+**P3-08 is complete**, with **90.238687895033 measured research
+minutes**. The [development record](experiments/development.md) implements an
+owned finite CNF broker with checked current hard answers, immutable forecasts,
+actual paid selection and version/failure withdrawal. Exact public corrections
+and predictable snapshots support a separately priced reporting service.
+U04's finite integration gap is closed at that scope. The structural arm
+independently executes the supplied repair/counterpossible and transport duties.
+
+P3-N01 remains **SUPPORTED at modest formal-adaptation and implementation-
+synthesis scope**. The base learner improves descriptive Brier scores against
+half and static-mixture benchmarks on all 18 declared configurations. Some
+individual recorded policies occupy intermediate-price frontiers. The balanced
+three-seed comparison, however, has only ordinary frontier configurations at
+every nonnegative price. Exact ordinary-kernel equivalence, the old exact-table
+obstruction, cache overheads, report limits, asymmetric losses and cheaper
+ordinary structural results are preserved. Affirmative Q3 advantage remains open.
+
+The [scientific closure](work_logs/P3_08_2026-10-10_S1/review_closure.md),
+[contribution assessment](work_logs/P3_08_2026-10-10_S1/contribution_assessment.md)
+and [additive duty overlay](checkpoints/B_1_P3_08.md) state the precise boundaries.
+All outputs are DEVELOPMENT; no final challenge is frozen or exposed. Earlier
+dated completion sections above remain historical and are not rewritten.
+
+Phase research is **844.753720675033 minutes**, with
+**115.246279324967** left to the 960-minute floor.
+The protected floors of future tasks remain separate. **P3-09 is recommended
+next and remains unstarted.** Option B is optional before freeze if equal
+exported certificates matter; option C is optional later, preferably phase end,
+for counterpossible-policy robustness. Neither option nor R-P3-N01 is selected;
+P3-C/D remain unattempted.

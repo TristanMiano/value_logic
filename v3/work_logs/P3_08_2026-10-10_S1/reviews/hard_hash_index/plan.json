@@ -1,0 +1,72 @@
+{
+  "stage": "DEVELOPMENT",
+  "created_utc": "2026-10-10T16:47:20.238107+00:00",
+  "contributor": "ChatGPT (GPT-6 Astra Pro), integration_review sub-agent",
+  "principal_clock_credit_seconds": 0,
+  "agent_cost_and_elapsed": "unmeasured",
+  "authorization": "Root delegated optional paid hashed HardState/Broker index, preserving linear default, old sources, and failures; broker temporarily reviewer-owned.",
+  "question": "Can paid key hashing narrow hard-state lookup without changing issued forecasts, base learning, selectors, purchases, hard correction, version withdrawal or all-path eligibility?",
+  "implementation_plan": [
+    "Append hard_index=linear|hashed as last optional Contract field; version broker source as v1.2",
+    "Use ordinary_controls paid_key_bucket helper on canonical CNF key, excluding query ID and hard epoch/generation",
+    "Keep fixed128 bucket heads and immutable two-word linked nodes referring to append-only entry slots; compare full key, scope and generation at every candidate",
+    "Retain default linear search, no eviction, capacity/conflict/stale/fail-closed semantics",
+    "Pay bucket initialization, reads, links, collisions, complete comparisons, full key retention/copies and new configuration output",
+    "Explicitly add8 configuration output units to all-path cap and for hashed mode add256 initialization plus T*(16*key_max+256); keep worst-case full-collision search term"
+  ],
+  "planned_checks": [
+    "Old positional Contract compatibility and rejected invalid index type",
+    "Default linear vs captured old source forecasts/receipts/state and exact declared cost delta",
+    "Linear/hashed invariance for uniform and ticket episodes with repeated and distinct real CNF queries",
+    "Find real same-bucket different full keys with differing answers using public shape enumeration; no monkeypatch or digest-equality shortcut",
+    "Duplicate request IDs, same complete key with distinct query IDs, conflicting receipts and rejected insertion preserving state",
+    "Stale generation lookup after scope change and return; new active receipt recovery; capacity retained across generations",
+    "Provider/parent budget exhaustion and unfunded withdrawal remain fail closed with actual invoices retained",
+    "Exact funded_cap runs, completed sub-cap runs with eligibility withheld, and hash-disabled mode",
+    "Prospective maximal key/precision smoke without an expensive truth population"
+  ],
+  "test_budget": "Small deterministic development probes only; no final evaluation, no seed selection for favorable loss; helper collision search is public shape-only indexing preparation and all policy/private truth stages recorded separately",
+  "review_boundary": "Reviewer-authored implementation self-check plus requested separate same-model structural review; no external-authentication claim",
+  "sources_before": [
+    {
+      "path": "v3/experiments/p308_broker.py",
+      "bytes": 28044,
+      "sha256": "399080c950a48c1cd935efbee8ed7769a7af54b7afa14859b5671397638e2e4d"
+    },
+    {
+      "path": "v3/experiments/p308_common.py",
+      "bytes": 7024,
+      "sha256": "4928a5b9c80e05b497bd93116957139252c65f393e6e12ea4c7ad4727f300a29"
+    },
+    {
+      "path": "v3/experiments/p308_cnf.py",
+      "bytes": 27861,
+      "sha256": "46fd3e82505b9b6af9805836a562f2f78a3436384e0b3476c4f85cec355817a2"
+    },
+    {
+      "path": "v3/experiments/p308_hashcache.py",
+      "bytes": 11957,
+      "sha256": "a668abfff6c4dd6c7d18cb186ed99bbb9c794713ce9f93e8a27470320b07a914"
+    },
+    {
+      "path": "v3/checks/07_selective_feedback.py",
+      "bytes": 25953,
+      "sha256": "f872ec2eb07df4722720763730932c33055e380f0ab76ddc3c848d79a5e70f48"
+    },
+    {
+      "path": "v3/checks/07_selective_feedback_service.py",
+      "bytes": 26857,
+      "sha256": "68c8f04f7d893cb89fb63a29c98dcc71977d06318d9ef74252b4f38569b5ef32"
+    },
+    {
+      "path": "v3/checks/07_computation_adapter.py",
+      "bytes": 22795,
+      "sha256": "06324b8b02a8dca3d8fbb423a7adf20708d5cc6cb39c60e60e38e720a7b97615"
+    },
+    {
+      "path": "v3/checks/07_selective_feedback_allocation.py",
+      "bytes": 15470,
+      "sha256": "eaf79ecb0c4b297ffeec3de4026a025fabc23058ec3c119abe5fdd23434da070"
+    }
+  ]
+}

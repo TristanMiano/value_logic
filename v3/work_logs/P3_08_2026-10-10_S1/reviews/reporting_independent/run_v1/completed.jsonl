@@ -1,0 +1,38 @@
+{"case": "smoke_uniform_base_historical", "details": {"mismatches": [], "n_live": 6, "peak_integer_bits": 43, "report_units": 9536}, "passed": true}
+{"case": "smoke_uniform_base_current", "details": {"mismatches": [], "n_live": 6, "peak_integer_bits": 43, "report_units": 9536}, "passed": true}
+{"case": "smoke_uniform_hard_historical", "details": {"mismatches": [], "n_live": 0, "peak_integer_bits": 42, "report_units": 9004}, "passed": true}
+{"case": "smoke_uniform_hard_current", "details": {"mismatches": [], "n_live": 0, "peak_integer_bits": 42, "report_units": 9004}, "passed": true}
+{"case": "smoke_tickets_base_historical", "details": {"mismatches": [], "n_live": 6, "peak_integer_bits": 49, "report_units": 9888}, "passed": true}
+{"case": "smoke_tickets_base_current", "details": {"mismatches": [], "n_live": 6, "peak_integer_bits": 49, "report_units": 9888}, "passed": true}
+{"case": "smoke_tickets_hard_historical", "details": {"mismatches": [], "n_live": 0, "peak_integer_bits": 49, "report_units": 9382}, "passed": true}
+{"case": "smoke_tickets_hard_current", "details": {"mismatches": [], "n_live": 0, "peak_integer_bits": 49, "report_units": 9382}, "passed": true}
+{"case": "tag128_uniform_base", "details": {"mismatches": [], "n_live": 9, "peak_integer_bits": 44, "report_units": 15292}, "passed": true}
+{"case": "tag128_uniform_base_purchases_only", "details": {"paid_purchase_calls": ["independent-3", "independent-5", "independent-11"], "selected_rows": ["independent-3", "independent-5", "independent-11"]}, "passed": true}
+{"case": "tag128_uniform_base_non_all_known", "details": {"n_live": 9}, "passed": true}
+{"case": "tag128_uniform_hard", "details": {"mismatches": [], "n_live": 8, "peak_integer_bits": 44, "report_units": 15382}, "passed": true}
+{"case": "tag128_uniform_hard_purchases_only", "details": {"paid_purchase_calls": ["independent-3", "independent-5", "independent-11"], "selected_rows": ["independent-3", "independent-5", "independent-11"]}, "passed": true}
+{"case": "tag128_uniform_hard_non_all_known", "details": {"n_live": 8}, "passed": true}
+{"case": "tag128_tickets_base", "details": {"mismatches": [], "n_live": 9, "peak_integer_bits": 50, "report_units": 15879}, "passed": true}
+{"case": "tag128_tickets_base_purchases_only", "details": {"paid_purchase_calls": ["independent-3", "independent-5", "independent-9"], "selected_rows": ["independent-3", "independent-5", "independent-9"]}, "passed": true}
+{"case": "tag128_tickets_base_non_all_known", "details": {"n_live": 9}, "passed": true}
+{"case": "tag128_tickets_hard", "details": {"mismatches": [], "n_live": 8, "peak_integer_bits": 50, "report_units": 15975}, "passed": true}
+{"case": "tag128_tickets_hard_purchases_only", "details": {"paid_purchase_calls": ["independent-3", "independent-5", "independent-9"], "selected_rows": ["independent-3", "independent-5", "independent-9"]}, "passed": true}
+{"case": "tag128_tickets_hard_non_all_known", "details": {"n_live": 8}, "passed": true}
+{"case": "one_action_bit_tickets", "details": {"mismatches": [], "n_live": 2, "peak_integer_bits": 16, "report_units": 6462}, "passed": true}
+{"case": "current_receipt_cannot_retroactively_correct_forecast", "details": {"failure": "Rejected: A hard override lacks an earlier current owned receipt.", "spent": 2804}, "passed": true}
+{"case": "hard_override_must_equal_earlier_answer", "details": {"failure": "Rejected: A hard override lacks an earlier current owned receipt.", "spent": 1500}, "passed": true}
+{"case": "hard_answer_requires_complete_key", "details": {"failure": "Rejected: A hard override lacks an earlier current owned receipt.", "spent": 1500}, "passed": true}
+{"case": "scope_epoch_mismatch", "details": {"failure": "Rejected: Public row chronology or scope mismatch.", "spent": 874}, "passed": true}
+{"case": "stale_provider_version", "details": {"failure": "Rejected: Purchased row lacks its owned current checked receipt.", "spent": 3094}, "passed": true}
+{"case": "false_row_propensity", "details": {"failure": "Rejected: Reported probability is not the owned selector's actual law.", "spent": 874}, "passed": true}
+{"case": "false_block_propensity", "details": {"failure": "Rejected: Reported probability is not the owned selector's actual law.", "spent": 874}, "passed": true}
+{"case": "ticket_selection_binding", "details": {"failure": "Rejected: Ticket and selected position disagree.", "spent": 498}, "passed": true}
+{"case": "selected_terminal_requires_checked_correction", "details": {"failure": "Rejected: A selected terminal action was not corrected.", "spent": 3152}, "passed": true}
+{"case": "unselected_cannot_admit_unpurchased_label", "details": {"failure": "Rejected: An unselected row changes its owned terminal path.", "spent": 992}, "passed": true}
+{"case": "129_character_source_tag", "details": {"failure": "Rejected: Public semantic key outside the bounded source contract.", "spent": 626}, "passed": true}
+{"case": "query_and_reporter_source_cap_agree", "details": {"rejected_length": 129, "valid_length": 128}, "passed": true}
+{"case": "funding_eligibility_boundary", "details": {"at_cap_eligible": true, "below_cap_eligible": false, "missing_execution_premise_eligible": false}, "passed": true}
+{"case": "failed_reporting_retains_paid_prefix_and_suppresses_intervals", "details": {"detail": "BudgetExceeded: Tariff bundle denied before the described operation.", "failed_paid_prefix": 14358, "successful_report_bill": 15382}, "passed": true}
+{"case": "overwidth_operation_rejected_before_operation_charge", "details": {"after_rejection": 3, "paid_prior_operation": 3}, "passed": true}
+{"case": "finite_width_and_report_funding_bounds", "details": {"block_record_bound": 16973824, "conservative_all_preoperation_bits": 134, "cost_scope": "declared owned word-record report tariff; source enrollment is separate; not CPU or Python heap", "declared_width": 256, "funding_cap": 281474976710656, "funding_cap_sufficient": true, "global_arithmetic_output_bound": 16777216, "key_scan_and_selected_key_comparison_bound": 137581576192, "largest_named_magnitude_bits": 115, "other_row_bound": 819200000, "per_row_integer_call_sites_counting_both_branches": 50, "total_below_2_power_38": true, "total_report_tariff_bound": 138434527232}, "passed": true}
+{"case": "source_snapshot_unchanged", "details": {}, "passed": true}

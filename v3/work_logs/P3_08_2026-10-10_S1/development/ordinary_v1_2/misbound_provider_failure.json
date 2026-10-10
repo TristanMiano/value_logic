@@ -1,0 +1,537 @@
+{
+  "blocks": [],
+  "cache_hits": 0,
+  "cache_retained_words": 4,
+  "common_source_setup_included": false,
+  "configuration": {
+    "action_bits": 16,
+    "block_size": 4,
+    "cache_capacity": 64,
+    "fallback_action": 0,
+    "prior_cost_multiplier": [
+      1,
+      1
+    ],
+    "proof_cap": 2048,
+    "provider_limit": null,
+    "seed": 3081001,
+    "state_bits": null
+  },
+  "cost_estimate_meaning": "Public cold shape proxy or own prior successful full-call mean; fallible, with failures censored rather than treated as cheap completion.",
+  "cost_history": [],
+  "expectation_theorem_eligible": false,
+  "failed_full_calls_censored": 0,
+  "failure_detail": "Rejected: Owned ordinary provider returned a misbound receipt.",
+  "feedback_updates": 0,
+  "forecast_service": "Immutable forecast emitted before the current provider computation; current paid cache may supply an exact point.",
+  "invoices": [
+    {
+      "answer": 0,
+      "checked": true,
+      "claim_key": [
+        "bounded-cnf-sat-v1",
+        "cnf-input-v1",
+        3,
+        [
+          [
+            -1
+          ],
+          [
+            1
+          ]
+        ]
+      ],
+      "detail": "UNSAT cheap contradiction checked",
+      "index": 0,
+      "provider": "bounded_cnf_checked",
+      "provider_version": "p308-bounded-cnf-services-v1.1",
+      "purpose": "exact_full",
+      "query_id": "wrong-request",
+      "requested_cap": 18832,
+      "resources": {
+        "by_category": {
+          "acquisition": 8,
+          "admission": 50,
+          "assessment": 0,
+          "cache": 0,
+          "check": 24,
+          "controller": 0,
+          "dependency_compile": 0,
+          "forecast": 0,
+          "output": 78,
+          "profile": 0,
+          "randomness": 0,
+          "repair_search": 0,
+          "setup": 0,
+          "solve": 22,
+          "storage": 128
+        },
+        "operations": [
+          {
+            "category": "acquisition",
+            "operation": "cnf_checked_answer_release",
+            "units": 8
+          },
+          {
+            "category": "admission",
+            "operation": "cnf_canonical_order_comparisons",
+            "units": 10
+          },
+          {
+            "category": "admission",
+            "operation": "cnf_exact_query_type",
+            "units": 1
+          },
+          {
+            "category": "admission",
+            "operation": "cnf_input_identity_words",
+            "units": 14
+          },
+          {
+            "category": "admission",
+            "operation": "cnf_literal_validation",
+            "units": 8
+          },
+          {
+            "category": "admission",
+            "operation": "cnf_scalar_and_version_validation",
+            "units": 16
+          },
+          {
+            "category": "admission",
+            "operation": "cnf_solver_name_check",
+            "units": 1
+          },
+          {
+            "category": "check",
+            "operation": "cnf_candidate_checker_agreement",
+            "units": 2
+          },
+          {
+            "category": "check",
+            "operation": "cnf_candidate_type_check",
+            "units": 4
+          },
+          {
+            "category": "check",
+            "operation": "opposing_unit_indices_and_literals",
+            "units": 12
+          },
+          {
+            "category": "check",
+            "operation": "simple_contradiction_proof_shape",
+            "units": 6
+          },
+          {
+            "category": "output",
+            "operation": "cnf_final_response_prepaid",
+            "units": 78
+          },
+          {
+            "category": "solve",
+            "operation": "simple_contradiction_array_initialization",
+            "units": 4
+          },
+          {
+            "category": "solve",
+            "operation": "simple_contradiction_clause_shape",
+            "units": 6
+          },
+          {
+            "category": "solve",
+            "operation": "simple_contradiction_unit_lookup",
+            "units": 12
+          },
+          {
+            "category": "storage",
+            "operation": "cnf_checked_receipt_words",
+            "units": 29
+          },
+          {
+            "category": "storage",
+            "operation": "cnf_final_cleanup_prepaid",
+            "units": 89
+          },
+          {
+            "category": "storage",
+            "operation": "simple_contradiction_clause_indices",
+            "units": 8
+          },
+          {
+            "category": "storage",
+            "operation": "simple_contradiction_unit_index_write",
+            "units": 2
+          }
+        ],
+        "total": 310
+      },
+      "solver": "dpll",
+      "status": "success",
+      "witness": null
+    }
+  ],
+  "issued_trace": [
+    {
+      "advice": [],
+      "attempts": [],
+      "base_action": 0,
+      "base_q": [
+        32768,
+        65536
+      ],
+      "base_terminal": 0,
+      "block": 0,
+      "cached": false,
+      "claim_key": [
+        "bounded-cnf-sat-v1",
+        "cnf-input-v1",
+        3,
+        [
+          [
+            -1
+          ],
+          [
+            1
+          ]
+        ]
+      ],
+      "cost_estimate": null,
+      "cost_estimate_source": null,
+      "emitted_q": [
+        32768,
+        65536
+      ],
+      "estimated_error_cost": null,
+      "forecast_immutable": true,
+      "hard_after": {
+        "answer": null,
+        "interval": [
+          0,
+          1
+        ],
+        "status": "unresolved"
+      },
+      "hard_before": "unresolved",
+      "index": 0,
+      "propensity": null,
+      "prospective_action": 0,
+      "purchased": false,
+      "purchased_label": null,
+      "query_id": "q0",
+      "scope": [
+        "bounded-cnf-sat-v1",
+        "cnf-input-v1"
+      ],
+      "selected": false,
+      "terminal_action": 0
+    }
+  ],
+  "known_terminal_rounds": 0,
+  "local_setup_units": 32,
+  "meter": {
+    "by_category": {
+      "acquisition": 8,
+      "admission": 269,
+      "assessment": 0,
+      "cache": 0,
+      "check": 61,
+      "controller": 12,
+      "dependency_compile": 0,
+      "forecast": 0,
+      "output": 196,
+      "profile": 0,
+      "randomness": 0,
+      "repair_search": 0,
+      "setup": 32,
+      "solve": 22,
+      "storage": 263
+    },
+    "denials": 0,
+    "limit_total": 4611686018427387903,
+    "operations": [
+      {
+        "category": "acquisition",
+        "operation": "ordinary_provider:cnf_checked_answer_release",
+        "units": 8
+      },
+      {
+        "category": "admission",
+        "operation": "cnf_cache_capacity_validation",
+        "units": 2
+      },
+      {
+        "category": "admission",
+        "operation": "cnf_canonical_order_comparisons",
+        "units": 10
+      },
+      {
+        "category": "admission",
+        "operation": "cnf_exact_query_type",
+        "units": 1
+      },
+      {
+        "category": "admission",
+        "operation": "cnf_input_identity_words",
+        "units": 14
+      },
+      {
+        "category": "admission",
+        "operation": "cnf_literal_validation",
+        "units": 8
+      },
+      {
+        "category": "admission",
+        "operation": "cnf_scalar_and_version_validation",
+        "units": 16
+      },
+      {
+        "category": "admission",
+        "operation": "ordinary_episode_method_and_tape",
+        "units": 16
+      },
+      {
+        "category": "admission",
+        "operation": "ordinary_exact_price_inputs",
+        "units": 24
+      },
+      {
+        "category": "admission",
+        "operation": "ordinary_provider:cnf_canonical_order_comparisons",
+        "units": 10
+      },
+      {
+        "category": "admission",
+        "operation": "ordinary_provider:cnf_exact_query_type",
+        "units": 1
+      },
+      {
+        "category": "admission",
+        "operation": "ordinary_provider:cnf_input_identity_words",
+        "units": 14
+      },
+      {
+        "category": "admission",
+        "operation": "ordinary_provider:cnf_literal_validation",
+        "units": 8
+      },
+      {
+        "category": "admission",
+        "operation": "ordinary_provider:cnf_scalar_and_version_validation",
+        "units": 16
+      },
+      {
+        "category": "admission",
+        "operation": "ordinary_provider:cnf_solver_name_check",
+        "units": 1
+      },
+      {
+        "category": "admission",
+        "operation": "ordinary_whole_tape_shape_validation",
+        "units": 128
+      },
+      {
+        "category": "check",
+        "operation": "ordinary_provider:cnf_candidate_checker_agreement",
+        "units": 2
+      },
+      {
+        "category": "check",
+        "operation": "ordinary_provider:cnf_candidate_type_check",
+        "units": 4
+      },
+      {
+        "category": "check",
+        "operation": "ordinary_provider:opposing_unit_indices_and_literals",
+        "units": 12
+      },
+      {
+        "category": "check",
+        "operation": "ordinary_provider:simple_contradiction_proof_shape",
+        "units": 6
+      },
+      {
+        "category": "check",
+        "operation": "owned_receipt_identity_status_version",
+        "units": 37
+      },
+      {
+        "category": "controller",
+        "operation": "ordinary_provider_cap_and_choice",
+        "units": 12
+      },
+      {
+        "category": "output",
+        "operation": "immutable_base_and_live_forecast",
+        "units": 30
+      },
+      {
+        "category": "output",
+        "operation": "ordinary_provider:cnf_final_response_prepaid",
+        "units": 78
+      },
+      {
+        "category": "output",
+        "operation": "reserved_final_status_words",
+        "units": 64
+      },
+      {
+        "category": "output",
+        "operation": "terminal_and_knowledge_record",
+        "units": 24
+      },
+      {
+        "category": "setup",
+        "operation": "ordinary_local_method_configuration",
+        "units": 32
+      },
+      {
+        "category": "solve",
+        "operation": "ordinary_provider:simple_contradiction_array_initialization",
+        "units": 4
+      },
+      {
+        "category": "solve",
+        "operation": "ordinary_provider:simple_contradiction_clause_shape",
+        "units": 6
+      },
+      {
+        "category": "solve",
+        "operation": "ordinary_provider:simple_contradiction_unit_lookup",
+        "units": 12
+      },
+      {
+        "category": "storage",
+        "operation": "base_statistics_retention",
+        "units": 24
+      },
+      {
+        "category": "storage",
+        "operation": "cnf_cache_header_words",
+        "units": 4
+      },
+      {
+        "category": "storage",
+        "operation": "ordinary_local_controller_state",
+        "units": 32
+      },
+      {
+        "category": "storage",
+        "operation": "ordinary_provider:cnf_checked_receipt_words",
+        "units": 29
+      },
+      {
+        "category": "storage",
+        "operation": "ordinary_provider:cnf_final_cleanup_prepaid",
+        "units": 89
+      },
+      {
+        "category": "storage",
+        "operation": "ordinary_provider:simple_contradiction_clause_indices",
+        "units": 8
+      },
+      {
+        "category": "storage",
+        "operation": "ordinary_provider:simple_contradiction_unit_index_write",
+        "units": 2
+      },
+      {
+        "category": "storage",
+        "operation": "reserved_failure_state_words",
+        "units": 32
+      },
+      {
+        "category": "storage",
+        "operation": "retained_issue_words",
+        "units": 43
+      }
+    ],
+    "reservations": {},
+    "total": 863
+  },
+  "method": "exact_cache",
+  "pending": {
+    "advice": [],
+    "attempts": [],
+    "base_action": 0,
+    "base_q": [
+      32768,
+      65536
+    ],
+    "base_terminal": 0,
+    "block": 0,
+    "cached": false,
+    "claim_key": [
+      "bounded-cnf-sat-v1",
+      "cnf-input-v1",
+      3,
+      [
+        [
+          -1
+        ],
+        [
+          1
+        ]
+      ]
+    ],
+    "cost_estimate": null,
+    "cost_estimate_source": null,
+    "emitted_q": [
+      32768,
+      65536
+    ],
+    "estimated_error_cost": null,
+    "forecast_immutable": true,
+    "hard_after": {
+      "answer": null,
+      "interval": [
+        0,
+        1
+      ],
+      "status": "unresolved"
+    },
+    "hard_before": "unresolved",
+    "index": 0,
+    "propensity": null,
+    "prospective_action": 0,
+    "purchased": false,
+    "purchased_label": null,
+    "query_id": "q0",
+    "scope": [
+      "bounded-cnf-sat-v1",
+      "cnf-input-v1"
+    ],
+    "selected": false,
+    "terminal_action": 0
+  },
+  "price_record": {
+    "false_negative": [
+      1,
+      1
+    ],
+    "false_positive": [
+      1,
+      1
+    ],
+    "unit": [
+      0,
+      1
+    ]
+  },
+  "provider_failures": 0,
+  "purchase_count_meaning": "Physical provider attempts, including failures; exact cache uses are separate.",
+  "purchases": 1,
+  "random_bits_consumed": 0,
+  "randomness": null,
+  "remaining_requests": 8,
+  "rounds_closed": 0,
+  "rounds_issued": 1,
+  "setup_scope": "Local controller initialization included. Installed shared source registry is billed separately and equally by the experiment runner.",
+  "stage": "DEVELOPMENT",
+  "status": "failed",
+  "successful_purchases": 0,
+  "successful_quota_contract": false,
+  "theorem_disposition": "Greedy marginal actions and optional/cached acquisition have no inherited randomized-action/one-cold-purchase guarantee.",
+  "trace": [],
+  "version": "p308-ordinary-controllers-v1.2",
+  "weights": null
+}

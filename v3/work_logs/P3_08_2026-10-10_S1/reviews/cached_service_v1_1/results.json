@@ -1,0 +1,471 @@
+{
+  "cases": [
+    {
+      "name": "minimum_account_and_paid_denial",
+      "pass": true,
+      "result": [
+        {
+          "external_rejection": "Rejected",
+          "kind": "linear",
+          "limit": 0
+        },
+        {
+          "external_rejection": "Rejected",
+          "kind": "linear",
+          "limit": 48
+        },
+        {
+          "external_rejection": "Rejected",
+          "kind": "linear",
+          "limit": 575
+        },
+        {
+          "external_rejection": "Rejected",
+          "kind": "linear",
+          "limit": -1
+        },
+        {
+          "external_rejection": "Rejected",
+          "kind": "linear",
+          "limit": true
+        },
+        {
+          "external_rejection": "Rejected",
+          "kind": "linear",
+          "limit": 1.5
+        },
+        {
+          "kind": "linear",
+          "limit": 576,
+          "query_id": "rejected-input",
+          "response_units": 576,
+          "status": "budget_exhausted",
+          "units": 576
+        },
+        {
+          "kind": "linear",
+          "limit": 623,
+          "query_id": "rejected-input",
+          "response_units": 576,
+          "status": "budget_exhausted",
+          "units": 576
+        },
+        {
+          "kind": "linear",
+          "limit": 624,
+          "query_id": "boundary",
+          "response_units": 576,
+          "status": "budget_exhausted",
+          "units": 624
+        },
+        {
+          "kind": "linear",
+          "limit": 625,
+          "query_id": "boundary",
+          "response_units": 576,
+          "status": "budget_exhausted",
+          "units": 624
+        },
+        {
+          "kind": "linear",
+          "limit": 1024,
+          "query_id": "boundary",
+          "response_units": 576,
+          "status": "budget_exhausted",
+          "units": 714
+        },
+        {
+          "kind": "linear",
+          "late_failure_limit": 818,
+          "late_failure_units": 811,
+          "response_units": 576
+        },
+        {
+          "external_rejection": "Rejected",
+          "kind": "hashed",
+          "limit": 0
+        },
+        {
+          "external_rejection": "Rejected",
+          "kind": "hashed",
+          "limit": 48
+        },
+        {
+          "external_rejection": "Rejected",
+          "kind": "hashed",
+          "limit": 575
+        },
+        {
+          "external_rejection": "Rejected",
+          "kind": "hashed",
+          "limit": -1
+        },
+        {
+          "external_rejection": "Rejected",
+          "kind": "hashed",
+          "limit": true
+        },
+        {
+          "external_rejection": "Rejected",
+          "kind": "hashed",
+          "limit": 1.5
+        },
+        {
+          "kind": "hashed",
+          "limit": 576,
+          "query_id": "rejected-input",
+          "response_units": 576,
+          "status": "budget_exhausted",
+          "units": 576
+        },
+        {
+          "kind": "hashed",
+          "limit": 623,
+          "query_id": "rejected-input",
+          "response_units": 576,
+          "status": "budget_exhausted",
+          "units": 576
+        },
+        {
+          "kind": "hashed",
+          "limit": 624,
+          "query_id": "boundary",
+          "response_units": 576,
+          "status": "budget_exhausted",
+          "units": 624
+        },
+        {
+          "kind": "hashed",
+          "limit": 625,
+          "query_id": "boundary",
+          "response_units": 576,
+          "status": "budget_exhausted",
+          "units": 624
+        },
+        {
+          "kind": "hashed",
+          "limit": 1024,
+          "query_id": "boundary",
+          "response_units": 576,
+          "status": "budget_exhausted",
+          "units": 955
+        },
+        {
+          "kind": "hashed",
+          "late_failure_limit": 872,
+          "late_failure_units": 865,
+          "response_units": 576
+        }
+      ]
+    },
+    {
+      "name": "exact_v1_delta_and_version",
+      "pass": true,
+      "result": {
+        "calls": [
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 0,
+            "delta": 501,
+            "kind": "linear",
+            "new_units": 1133,
+            "old_units": 632,
+            "query_id": "first"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 0,
+            "delta": 501,
+            "kind": "linear",
+            "new_units": 1131,
+            "old_units": 630,
+            "query_id": "first-new-id"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 0,
+            "delta": 501,
+            "kind": "linear",
+            "new_units": 1131,
+            "old_units": 630,
+            "query_id": "version-miss"
+          },
+          {
+            "Q": 8,
+            "cache_hit": false,
+            "capacity": 0,
+            "delta": 504,
+            "kind": "linear",
+            "new_units": 1066,
+            "old_units": 562,
+            "query_id": "third-key"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 0,
+            "delta": 501,
+            "kind": "linear",
+            "new_units": 1131,
+            "old_units": 630,
+            "query_id": "first-again"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 2,
+            "delta": 501,
+            "kind": "linear",
+            "new_units": 1152,
+            "old_units": 651,
+            "query_id": "first"
+          },
+          {
+            "Q": 11,
+            "cache_hit": true,
+            "capacity": 2,
+            "delta": 501,
+            "kind": "linear",
+            "new_units": 845,
+            "old_units": 344,
+            "query_id": "first-new-id"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 2,
+            "delta": 501,
+            "kind": "linear",
+            "new_units": 1175,
+            "old_units": 674,
+            "query_id": "version-miss"
+          },
+          {
+            "Q": 8,
+            "cache_hit": false,
+            "capacity": 2,
+            "delta": 504,
+            "kind": "linear",
+            "new_units": 1136,
+            "old_units": 632,
+            "query_id": "third-key"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 2,
+            "delta": 501,
+            "kind": "linear",
+            "new_units": 1204,
+            "old_units": 703,
+            "query_id": "first-again"
+          },
+          {
+            "Q": 343,
+            "cache_hit": false,
+            "delta": 169,
+            "kind": "linear",
+            "new_units": 15949,
+            "old_units": 15780
+          },
+          {
+            "Q": 343,
+            "cache_hit": true,
+            "delta": 169,
+            "kind": "linear",
+            "new_units": 4181,
+            "old_units": 4012
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 0,
+            "delta": 501,
+            "kind": "hashed",
+            "new_units": 1141,
+            "old_units": 640,
+            "query_id": "first"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 0,
+            "delta": 501,
+            "kind": "hashed",
+            "new_units": 1133,
+            "old_units": 632,
+            "query_id": "first-new-id"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 0,
+            "delta": 501,
+            "kind": "hashed",
+            "new_units": 1133,
+            "old_units": 632,
+            "query_id": "version-miss"
+          },
+          {
+            "Q": 8,
+            "cache_hit": false,
+            "capacity": 0,
+            "delta": 504,
+            "kind": "hashed",
+            "new_units": 1068,
+            "old_units": 564,
+            "query_id": "third-key"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 0,
+            "delta": 501,
+            "kind": "hashed",
+            "new_units": 1133,
+            "old_units": 632,
+            "query_id": "first-again"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 2,
+            "delta": 501,
+            "kind": "hashed",
+            "new_units": 1406,
+            "old_units": 905,
+            "query_id": "first"
+          },
+          {
+            "Q": 11,
+            "cache_hit": true,
+            "capacity": 2,
+            "delta": 501,
+            "kind": "hashed",
+            "new_units": 905,
+            "old_units": 404,
+            "query_id": "first-new-id"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 2,
+            "delta": 501,
+            "kind": "hashed",
+            "new_units": 1268,
+            "old_units": 767,
+            "query_id": "version-miss"
+          },
+          {
+            "Q": 8,
+            "cache_hit": false,
+            "capacity": 2,
+            "delta": 504,
+            "kind": "hashed",
+            "new_units": 1199,
+            "old_units": 695,
+            "query_id": "third-key"
+          },
+          {
+            "Q": 11,
+            "cache_hit": false,
+            "capacity": 2,
+            "delta": 501,
+            "kind": "hashed",
+            "new_units": 1285,
+            "old_units": 784,
+            "query_id": "first-again"
+          },
+          {
+            "Q": 343,
+            "cache_hit": false,
+            "delta": 169,
+            "kind": "hashed",
+            "new_units": 18341,
+            "old_units": 18172
+          },
+          {
+            "Q": 343,
+            "cache_hit": true,
+            "delta": 169,
+            "kind": "hashed",
+            "new_units": 5279,
+            "old_units": 5110
+          }
+        ],
+        "source_based_nonchild_envelopes": {
+          "343": {
+            "hashed": 54139,
+            "linear": 49716
+          },
+          "512": {
+            "hashed": 78137,
+            "linear": 72362
+          }
+        }
+      }
+    },
+    {
+      "name": "broker_failure_footer",
+      "pass": true,
+      "result": [
+        {
+          "failed_receipts": 0,
+          "paid_broker_status_words": 72,
+          "provider_limit": 575,
+          "retained_abort_reservations": {
+            "selected_provider": 575
+          },
+          "service_logical_calls": 0,
+          "spent": 2757,
+          "status": "failed"
+        },
+        {
+          "failed_receipts": 1,
+          "paid_broker_status_words": 72,
+          "provider_limit": 576,
+          "retained_abort_reservations": {},
+          "service_logical_calls": 1,
+          "spent": 3366,
+          "status": "failed"
+        },
+        {
+          "failed_receipts": 1,
+          "paid_broker_status_words": 72,
+          "provider_limit": 624,
+          "retained_abort_reservations": {},
+          "service_logical_calls": 1,
+          "spent": 3414,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "name": "failed_child_paid_outer_response",
+      "pass": true,
+      "result": [
+        {
+          "child_units": 46,
+          "kind": "linear",
+          "outer_response_units": 576,
+          "outer_units": 825
+        },
+        {
+          "child_units": 46,
+          "kind": "hashed",
+          "outer_response_units": 576,
+          "outer_units": 1075
+        }
+      ]
+    }
+  ],
+  "finished_utc": "2026-10-10T17:29:45.167662+00:00",
+  "pass": true,
+  "research_credit_seconds": 0,
+  "script_sha256": "1ac84fbd159b4f023a48924844f144fec870b7f3607228ba5ef2e4ecc365923c",
+  "stage": "DEVELOPMENT",
+  "started_utc": "2026-10-10T17:29:45.148238+00:00"
+}
