@@ -1,0 +1,49 @@
+{
+  "schema": "rp3bb.source-fee-diagnostic.v1",
+  "stage": "DEVELOPMENT",
+  "status": "EXPECTED_DEFECT_REPRODUCED",
+  "service_sha256": "b8929dc8c75962d5ed8a8c29e8b12b32c8aef05c2e20e9d1b862e30fac0a623e",
+  "diagnostic_sha256": "24eb7909c236b3c40c01d490df466279536fa734cd649339c06342f1051765ce",
+  "declared_source_bytes": 194270,
+  "all_source_reads_and_hashes_completed_before_denied_charge": true,
+  "completion_evidence": "The denied source-byte charge follows the successful make_source_record return in the captured source.",
+  "charged_hash_input_bytes": 0,
+  "denied_category": "source_hash_input_bytes",
+  "source_enrolled": false,
+  "invoice": {
+    "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+    "total_units": 252819,
+    "consumer_units": 252804,
+    "budget": 389563,
+    "consumer_budget": null,
+    "by_stage": {
+      "common_source": {
+        "bounded_native_c_call_events": 3435,
+        "observed_python_opcode_events": 54986,
+        "source_program_bytes": 194270
+      },
+      "coordination": {
+        "observed_python_opcode_events": 15
+      },
+      "failure_terminal": {
+        "delivery_events": 1,
+        "state_eviction_events": 1,
+        "terminal_bytes": 111
+      }
+    },
+    "failure_terminal_reserve": 1024,
+    "max_serialized_object_bytes": 0,
+    "max_retained_serialized_bytes": 0,
+    "retained_proxy_bytes": {},
+    "failure": {
+      "type": "ResourceExhausted",
+      "message": "common_source: reserved budget exhausted",
+      "stage": "common_source"
+    },
+    "instrumentation_included": false,
+    "physical_cpu_or_heap_bound_claimed": false
+  },
+  "session_deliveries": 0,
+  "policy_runs": 0,
+  "principal_clock_credit_seconds": 0
+}

@@ -116,14 +116,20 @@ The [closing record](work_logs/P3_06_2026-10-09_S1.md) gives **90.210938375717**
 new research minutes. P3-07 is **complete** at its declared
 [bounded paid-reasoning scope](derivations/07_paid_reasoning.md), with
 **90.187687312067** observed research minutes. Phase research is
-**844.753720675033 minutes**, with **115.246279324967** remaining to the
+**935.063726446450 minutes**, with **24.936273553550** remaining to the
 960-minute floor. **P3-B has passed** at restricted mathematical/local implementation
 readiness. The author-selected **paid selective-feedback recurrence is complete**;
 see its [additive checkpoint](checkpoints/B_1_R_P3_B_A.md).
 P3-N01 is **SUPPORTED at modest formal-adaptation and implementation-synthesis
 scope**. Q3 comparative advantage remains open. P3-08 closes U04
 integration for the owned finite CNF broker, with paid reporting and a separate
-structural arm. P3-09 is recommended next and remains unstarted.
+structural arm. The selected **Option B recurrence is complete**, with an
+[ordinary checked-certificate bridge](derivations/05_equal_certificate_delivery.md)
+and [full resource comparison](experiments/certificate_delivery.md). Its
+**90.310005771417** observed research minutes are separately recorded.
+Direct ordinary checking has the least primary total in all eight tested cells;
+the broader affirmative plurality advantage remains open. P3-09 is recommended
+next and remains unstarted, with its own Research60 floor.
 
 ## Workspace
 
@@ -143,9 +149,10 @@ structural arm. P3-09 is recommended next and remains unstarted.
 | Counterfactual semantics | [Construction](derivations/04_counterfactual_semantics.md) · [Extensions](derivations/04_selection_extensions.md) · [Sources](literature/04_source_contracts.md) · [Replacement code](checks/04_README.md) |
 | Sequential cost forecasts | [Construction and duties](derivations/06_cost_forecast_refinement.md) · [Repricing](derivations/06_price_replay.md) · [Capital comparison](derivations/06_capital_comparison.md) · [Calibration](derivations/06_calibration_scope.md) · [BRIA boundary](derivations/06_bria_boundary.md) |
 | Paid reasoning | [Rule and costs](derivations/07_paid_reasoning.md) · [Four-action extension](derivations/07_multi_action_forecasting.md) · [Analytical ordinary control](derivations/07_ordinary_analytic_profile.md) · [Acquisition planner](derivations/07_acquisition_planning.md) · [Closing record](work_logs/P3_07_2026-10-09_S1.md) |
-| Mathematics and implementation readiness | [P3-B decision](checkpoints/B_1.md) · [Recurrence supplement](checkpoints/B_1_R_P3_B_A.md) · [Historical recurrence duties](checkpoints/B_1_R_P3_B_A.v1.json) · [Current implementation overlay](checkpoints/B_1_P3_08.v1.json) |
+| Mathematics and implementation readiness | [P3-B decision](checkpoints/B_1.md) · [Option A supplement](checkpoints/B_1_R_P3_B_A.md) · [P3-08 implementation overlay](checkpoints/B_1_P3_08.v1.json) · [Current Option B supplement](checkpoints/B_1_R_P3_B_B.md) · [Current 21-duty overlay](checkpoints/B_1_R_P3_B_B.v1.json) |
 | Paid selective feedback | [Finite construction](derivations/07_selective_feedback.md) · [Observable performance](derivations/07_observable_performance.md) · [Primary-source comparison](literature/07_selective_feedback_sources.md) · [Closed recurrence](work_logs/R_P3_B_A_2026-10-09_S1.md) |
 | Executable methods and matched controls | [Development record and commands](experiments/development.md) · [Review closure](work_logs/P3_08_2026-10-10_S1/review_closure.md) · [Closed P3-08 session](work_logs/P3_08_2026-10-10_S1.md) |
+| Equal certificate delivery | [Finite bridge and bounds](derivations/05_equal_certificate_delivery.md) · [Complete experiment](experiments/certificate_delivery.md) · [Primary-source comparison](literature/05_certificate_delivery_sources.md) · [Closed Option B session](work_logs/R_P3_B_B_2026-10-10_S1.md) |
 | Mathematical Markdown | [Rendering conventions and guard](STYLE.md) |
 | Claims and open obligations | [Claim ledger](claim_ledger.md) |
 | Setup record | [P3-SETUP](work_logs/P3_SETUP_2026-10-06_S1.md) |

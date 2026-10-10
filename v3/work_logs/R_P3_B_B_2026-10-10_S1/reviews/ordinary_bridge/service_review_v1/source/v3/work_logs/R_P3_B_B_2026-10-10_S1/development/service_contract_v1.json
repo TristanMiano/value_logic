@@ -1,0 +1,29 @@
+{
+  "schema": "value_logic.rp3bb.service-contract.v1",
+  "stage": "DEVELOPMENT",
+  "status": "prospective-before-benchmarks",
+  "task": "R-P3-B-B",
+  "scope": "Boolean rational finite current incumbent-sublevel upper-bound delivery, nonempty with a separately checked supplied incumbent",
+  "primary_streams": [
+    {"name": "constant_n3", "nbits": 3, "requests": 6},
+    {"name": "parity_n6", "nbits": 6, "requests": 6},
+    {"name": "complement_k3", "nbits": 5, "requests": 6},
+    {"name": "complement_k5", "nbits": 7, "requests": 6}
+  ],
+  "primary_methods": ["P-REUSE", "P-FRESH", "O-ADD-COLD", "O-ADD-WARM", "O-ENUM-RECEIVER", "O-ADD-PORTFOLIO"],
+  "recipient_modes": ["resident", "fresh"],
+  "legacy_tree_export": "separate receiver-format diagnostic; not a restricted ordinary benchmark substitute",
+  "runtime": "CPython 3.12.14",
+  "tariff": "observed worker Python opcode events, bounded native C-call events, each explicitly priced at one; input/output/source and serialized-state byte-periods each priced at one; declared delivery/eviction events each priced at one",
+  "primary_request_execution_budget_units": 134217728,
+  "failure_terminal_reserve_units": 1024,
+  "consumer_bill_thresholds_units": [1048576, 4194304, 16777216],
+  "threshold_interpretation": "Prospective affordability thresholds on the observed complete consumer bill; low-budget interruption probes are separately labelled executions.",
+  "common_source_enrollment": "The selected complete worker-source closure is byte-enrolled once per stream; source hashing/checking performed by worker is charged. The fixed CPython and standard-library installation and measurement apparatus are outside that program-byte tariff. Fresh recipient means empty verified facts, not reinstallation of the interpreter.",
+  "state_tariff": "Serialize every retained producer and recipient scientific state after each admitted request, charge serialization and its byte-period, report bytes separately from the declared scalar tariff. Include unique tables, Apply and expression caches, proof logs, admitted domains and current receipts.",
+  "failure_policy": "A denied or malformed attempt returns a reserved constant failure response and no current certificate. Publish only a fully paid candidate receiver. Evict warm mutable producer state on failure; stale prior current receipts cannot satisfy the new request ID. Paid work remains in the bill.",
+  "break_even": "Exact observed cumulative costs through prefixes 1..6, including setup; first crossing and sustained crossing only within that finite horizon. No infinite-horizon extrapolation.",
+  "ordinary_controls": "Shared portfolio kernels, independently checked ADD bootstrap and direct finite receiver recomputation are admissible. Witness acquisition is a common supplied input, excluded for all arms.",
+  "adversarial_scope": ["malformed or forged node/Apply/input linkage", "wrong current record or bound", "stale prefix, source, epoch, order or request ID", "hard-domain withdrawal and loss repricing", "resource denial and atomic recipient publication", "fresh recipient must replay full evidence"],
+  "publication_rule": "Preserve every executed source revision and failure; amendments must precede their affected runs, state why they changed, and retain the initial contract. No final challenge is frozen or exposed."
+}

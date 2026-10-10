@@ -14,8 +14,8 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **844.753720675033 minutes**;
-**115.246279324967 minutes** remain to the 960-minute floor.
+Phase-three qualifying research is **935.063726446450 minutes**;
+**24.936273553550 minutes** remain to the 960-minute floor.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
 The [first 240-minute checkpoint](v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md)
@@ -42,7 +42,11 @@ five-question judgment. The selected **R-P3-B-A (option A) is COMPLETE**, with
 **90.146425900517 measured research minutes**. Its [additive checkpoint](v3/checkpoints/B_1_R_P3_B_A.md)
 and [current 21-duty overlay](v3/checkpoints/B_1_R_P3_B_A.v1.json) accept the finite
 paid-feedback and observable-performance guarantees and the source-specific
-ordinary-table cost obstruction. **P3-08 is COMPLETE at scoped U04 integration. Next: P3-09, recommended and unstarted.**
+ordinary-table cost obstruction. **P3-08 is COMPLETE at scoped U04 integration.**
+The selected **R-P3-B-B (Option B) is COMPLETE** at finite equal certificate-delivery
+scope, with **90.310005771417 measured research minutes** and an
+[additive 21-duty checkpoint](v3/checkpoints/B_1_R_P3_B_B.md).
+**Next: P3-09, recommended and unstarted.**
 Phase two remains complete; P3-C–D remain unattempted. P3-N01 is now
 **SUPPORTED at modest formal-adaptation and implementation-synthesis scope**;
 Q3 affirmative advantage over the strongest ordinary combination remains open. All executable evidence remains development; no final
@@ -53,6 +57,24 @@ Read this plan with the [phase-three procedure](v3/RESEARCH_PROTOCOL.md),
 [workspace guide](v3/README.md), [claim ledger](v3/claim_ledger.md), and the
 selected task's prior sessions. The [primary-source orientation](v3/literature/00_orientation.md)
 supports planning; it is not a completed literature audit or theorem import.
+
+## Current author selection — October 10, 2026
+
+**Completed: R-P3-B-B — Option B, equal certificate-delivery service. Research90 satisfied.**
+The author selected this recurrence after P3-08 and before P3-09. Its
+[selection](v3/work_logs/R_P3_B_B_2026-10-10_S1/selection.json),
+[forecast](v3/work_logs/R_P3_B_B_2026-10-10_S1/forecast.json) and
+[session](v3/work_logs/R_P3_B_B_2026-10-10_S1.md) preserve the selected work.
+The [derivation](v3/derivations/05_equal_certificate_delivery.md),
+[complete comparison](v3/experiments/certificate_delivery.md),
+[assessment](v3/work_logs/R_P3_B_B_2026-10-10_S1/contribution_assessment.md)
+and [exact actuals](v3/work_logs/R_P3_B_B_2026-10-10_S1/actuals.json) close its
+finite scope. The ordinary checked interface is constructive; direct ordinary
+checking has the least primary total in all eight cells. The capped diagnostic
+retains 239 deliveries and 49 paid failures, with exact coverage/cost comparisons.
+Earlier dated recommendations remain historical. P3-09 is recommended and
+unstarted; its Research60 floor remains separate from the phase remainder.
+Option C and R-P3-N01 remain unselected. Work has stopped at this recurrence boundary.
 
 ## 1. The five questions
 
@@ -383,11 +405,11 @@ phase. Prospective replanning can replace an unstarted task with a better
 60/90-minute evidence chunk while retaining all five questions, the total
 floor, accepted obligations and the abandoned alternative's record.
 
-**Active repair queue: empty. P3-01–08 and selected recurrence R-P3-B-A are
+**Active repair queue: empty. P3-01–08 and selected recurrences R-P3-B-A/B are
 complete at their declared scopes. P3-A and P3-B retain their restricted PASS.
 P3-N01 is SUPPORTED at the recorded modest synthesis scope; its later author
 assessment remains open at P3-C. Next: P3-09, recommended and unstarted. P3-C–D remain
-unattempted. Options B/C and R-P3-N01 are unselected.**
+unattempted. Option B is complete; Option C and R-P3-N01 are unselected.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original
 register. Neither is required or activated by this plan. General neural

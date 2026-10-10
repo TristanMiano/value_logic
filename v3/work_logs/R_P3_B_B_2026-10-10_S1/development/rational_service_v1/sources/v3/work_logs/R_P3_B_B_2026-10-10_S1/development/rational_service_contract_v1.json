@@ -1,0 +1,56 @@
+{
+  "schema": "value_logic.rp3bb.rational-service-contract.v1",
+  "stage": "DEVELOPMENT",
+  "selection": "POST_PRIMARY_AND_SECONDARY_EXPOSURE_SCOPE_DIAGNOSTIC",
+  "task": "R-P3-B-B",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "question": "Which valid inherited inputs exceed each fixed backend fragment, and do paid failure, receipt withdrawal and recovery remain correct?",
+  "prior_witness": "reviews/receiver_reconstruction/rational_fragment_v1/fixture.json",
+  "worker_revision": "rp3bb-certificate-service-v5",
+  "worker_sha256": "b96cae82e0fe3f0f734671d57df81ac3a62350746f73228aef63c2f77bb1745f",
+  "methods": ["P-REUSE", "P-FRESH", "O-ADD-COLD", "O-ADD-WARM", "O-ENUM-RECEIVER", "O-ADD-PORTFOLIO"],
+  "recipient": "fresh",
+  "old_domains": [],
+  "units": 30,
+  "normal_budget": 134217728,
+  "denial_budget": 1024,
+  "sequence": [
+    {
+      "name": "large_negative_constant",
+      "input": "The exact previously saved 64-prime-power negative constant Frame; witness(0), bound0.",
+      "mathematical_truth": "True at both feasible tied minimizers; exact denominator7914bits.",
+      "expected_delivered": ["P-REUSE", "P-FRESH", "O-ENUM-RECEIVER", "O-ADD-PORTFOLIO"],
+      "expected_failures": {"O-ADD-COLD": "EvidenceLimit", "O-ADD-WARM": "EvidenceLimit"}
+    },
+    {
+      "name": "large_positive_constant",
+      "input": "Scale the same difference by minus one, with independent positive-case metadata; witness(0), bound0.",
+      "mathematical_truth": "False at both feasible tied minimizers.",
+      "expected_delivered": [],
+      "expected_failures": "All six methods; exact error reasons are retained, with no claim that every rejection diagnoses falsity."
+    },
+    {
+      "name": "large_incumbent_cutoff",
+      "input": "One bit; no hard rows; D=0; two distinct soft IDs with formula bit0 and weights1/p,1/q; p=2^127-1,q=2^127-3; witness(0), bound0.",
+      "mathematical_truth": "True on both sublevel points; only point1 is optimal; exact cutoff denominator254bits.",
+      "expected_delivered": ["O-ADD-COLD", "O-ADD-WARM", "O-ENUM-RECEIVER"],
+      "expected_failures": "Native and hybrid portfolio paths reject at _prepare/context_rows/K.lit(cutoff), before tree traversal."
+    },
+    {
+      "name": "zero_work_capacity",
+      "input": "A one-bit zero-loss no-row frame with budget equal to the1024-unit protected failure reserve.",
+      "mathematical_truth": "True, but no worker instruction is funded.",
+      "expected_delivered": [],
+      "expected_failures": "ResourceExhausted; exactly113 paid failure units; no stale receipt or scientific cache survives."
+    },
+    {
+      "name": "recovery_zero",
+      "input": "The same small zero-loss frame with the normal budget and a fresh current request identifier.",
+      "mathematical_truth": "True at both tied minimizers.",
+      "expected_delivered": ["P-REUSE", "P-FRESH", "O-ADD-COLD", "O-ADD-WARM", "O-ENUM-RECEIVER", "O-ADD-PORTFOLIO"],
+      "expected_failures": []
+    }
+  ],
+  "evidence": "Before the first delivery save canonical input records, all worker/observer source copies and this contract. Save every complete unit before assertions. Verify source bytes after every unit. Check paid sums, current input equality, stale receipt rejection and cache eviction. Retain unexpected outcomes without repair or retry.",
+  "scope_limit": "A source-bound scope/failure diagnostic, outside both cost competition populations. No budget tuning, fixture widening, price change, source edit, final challenge or principal credit from unattended runtime."
+}

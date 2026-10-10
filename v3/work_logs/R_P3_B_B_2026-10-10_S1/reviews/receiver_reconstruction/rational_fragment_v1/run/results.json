@@ -1,0 +1,263 @@
+{
+  "all_inherited_inputs_bridge_claimed": false,
+  "artifacts": [
+    {
+      "bytes": 1130,
+      "file": "worker_source_record.json",
+      "sha256": "d7cb63c15c06f4d45c3c3fd8b9a479c50f138a7eaf4cda428ca51a2eabefb93c"
+    },
+    {
+      "bytes": 13346,
+      "file": "current_frame_record.json",
+      "sha256": "121016b1999f065c8ab5bc8718593554cf2cfe93c04c57e670e6063de7748411"
+    },
+    {
+      "bytes": 5738,
+      "file": "independent_exact_bound.json",
+      "sha256": "9d19a4a8a3ac3f2920e360f95a79d8cef2790ce3ca258342d2434568c1002875"
+    },
+    {
+      "bytes": 14700,
+      "file": "old_add_report.json",
+      "sha256": "28dd43929e8ef15c4e320dc9024b8115e7d34dce64e9761a24aacd490785ad95"
+    },
+    {
+      "bytes": 128401,
+      "file": "new_producer_partial_state.json",
+      "sha256": "37b08aa9e05eb7078d713e2fd51d7066df4ecd008ca9dd6e97b648dd8b15dac1"
+    },
+    {
+      "bytes": 989,
+      "file": "new_producer_rejection.json",
+      "sha256": "5088aabde11e9b9261564b6c43782034049a933615a9b9f8eb89f583b6d16054"
+    },
+    {
+      "bytes": 66203,
+      "file": "attempted_out_of_fragment_packet.json",
+      "sha256": "beed1da62376806adf5e29a2987a99a6118e6b1f4699e9dbc76d02cfeb609f7a"
+    },
+    {
+      "bytes": 1994,
+      "file": "receiver_rejection.json",
+      "sha256": "74aa2e45d407aa46fa408f82c70245fc54beb96220ea116d038a0cadff3f0ece"
+    }
+  ],
+  "budget": {
+    "budget_scope": "Diagnostic process-CPU ceiling only; not a performance price or principal clock credit. Preserve any unexpected failure and stop.",
+    "common_service_or_tariff_runs": 0,
+    "cpu_hard_limit_seconds": 31,
+    "cpu_soft_limit_seconds": 30,
+    "declared_before_execution": true,
+    "fixed_fixture_count": 1,
+    "new_export_attempts": 1,
+    "old_add_queries": 1,
+    "policy_runs": 0,
+    "principal_clock_credit_seconds": 0,
+    "raw_receiver_attempts": 1,
+    "schema": "rp3bb.rational-fragment-budget.v1",
+    "stage": "DEVELOPMENT"
+  },
+  "common_service_deliveries": 0,
+  "diagnostic_sha256": "0915bd37591b6b9e9e14ea43a230e2e482b3e76d82eb133d05ee562363791421",
+  "error": null,
+  "groups": [
+    {
+      "all_domain_points_are_tied_minimizers": true,
+      "current_record_bytes": 4227,
+      "expression_nodes": 127,
+      "input_component_bits_max": 128,
+      "levels": 7,
+      "literal_count": 64,
+      "name": "inherited_input_valid",
+      "nbits": 1,
+      "nonempty_current_sublevel": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "rank_tiers": 1,
+      "root_zero_depth": 6,
+      "status": "PASS"
+    },
+    {
+      "denominator_bits": 7914,
+      "gcd": 1,
+      "name": "independent_exact_bound",
+      "numerator_bits": 7797,
+      "proper_subtree_denominator_bits_max": 3981,
+      "status": "PASS",
+      "strictly_below_zero": true
+    },
+    {
+      "exact_range_matches_independent_calculation": true,
+      "name": "old_add_construction",
+      "report_status": "EXACT_CURRENT_SUBLEVEL_RANGE",
+      "status": "PASS",
+      "storage": {
+        "apply_cache_entries": 65,
+        "diagram_nodes": 129,
+        "expression_cache_entries": 127,
+        "node_serialization_bytes": 32828,
+        "unique_entries": 129
+      },
+      "work": {
+        "apply_cache_misses": 65,
+        "apply_calls": 65,
+        "expression_cache_misses": 127,
+        "expression_record_characters": 3817,
+        "expression_visits": 127,
+        "extrema_calls": 1,
+        "max_rational_component_bits": 7914,
+        "nodes_created": 129,
+        "record_characters_compared": 4227,
+        "terminal_operations": 63,
+        "unique_hits": 2,
+        "unique_lookups": 131,
+        "validated_expressions": 1
+      }
+    },
+    {
+      "expected_rejection": {
+        "message": "Evidence rational component cap.",
+        "type": "EvidenceLimit"
+      },
+      "name": "new_producer_fragment_rejection",
+      "no_wire_emitted": true,
+      "status": "PASS",
+      "work": {
+        "apply_cache_misses": 65,
+        "apply_calls": 65,
+        "expression_cache_misses": 127,
+        "expression_record_characters": 3817,
+        "expression_visits": 127,
+        "max_rational_component_bits": 3981,
+        "max_requested_terminal_component_bits": 7914,
+        "max_wire_rational_component_bits": 3981,
+        "nodes_created": 128,
+        "producer_record_characters_compared": 8454,
+        "recorded_apply_facts": 64,
+        "recorded_expression_bindings": 126,
+        "recording_fresh_key_checks": 190,
+        "recording_manager_context_bytes": 909,
+        "recording_manager_order_entries": 1,
+        "terminal_operations": 63,
+        "unique_hits": 2,
+        "unique_lookups": 130,
+        "validated_expressions": 1,
+        "wire_rational_cap_checks": 131
+      }
+    },
+    {
+      "admitted_nodes": 0,
+      "attempted_packet_bytes": 66203,
+      "current_receipt": null,
+      "expected_rejection": {
+        "message": "JSON integer syntax or digit cap.",
+        "type": "Rejected"
+      },
+      "name": "receiver_wire_fragment_rejection",
+      "status": "PASS",
+      "work": {
+        "json_depth_scan_characters": 66203,
+        "wire_input_bytes": 66203
+      }
+    }
+  ],
+  "groups_passed": 5,
+  "ordinary_cost_superiority_claimed": false,
+  "physical_cost_or_paid_tariff_claimed": false,
+  "policy_runs": 0,
+  "principal_clock_credit_seconds": 0,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "schema": "rp3bb.rational-fragment-scope-result.v1",
+  "source_after": {
+    "v3/checks/04_counterfactual_repair.py": {
+      "bytes": 22823,
+      "sha256": "c71692e2e84c52f915dd1d09048344bf1d6c53e7d0362fe82a598d8f3d0ab896"
+    },
+    "v3/checks/05_add_evidence.py": {
+      "bytes": 34908,
+      "sha256": "1e40f1bf7a3cb2dc9cfe46beff9a3548392e99e7ff0fa81a6c79c2f53508bbdc"
+    },
+    "v3/checks/05_add_evidence_check.py": {
+      "bytes": 33036,
+      "sha256": "1f396bbb625614c87d48fa5fece438851999a7afeb58d5af6933812b4038c2bf"
+    },
+    "v3/checks/05_counterfactual_transport.py": {
+      "bytes": 16360,
+      "sha256": "48422eb4b23ab38d2b755de76000edaa38231dce6064c2f9cb71e45702c9ae35"
+    },
+    "v3/checks/05_ordinary_add.py": {
+      "bytes": 11008,
+      "sha256": "9263992673a815b15b489272aa827ea27066a0af264a85bbf905875f632abef7"
+    },
+    "v3/checks/05_portfolio_transport.py": {
+      "bytes": 24552,
+      "sha256": "9bf64849eae1072c9da6a2e754858af6f2f15c2c4f7e7ac55ffb556f2064b821"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/rational_fragment_v1/budget.json": {
+      "bytes": 537,
+      "sha256": "15cad06a8b8917ecf46fd15a973c2477e96fd7cf6eae3dab6196232adfeafb23"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/rational_fragment_v1/fixture.json": {
+      "bytes": 21586,
+      "sha256": "7708e40baa12f8c31a88f8babab166196b2d52d8ce1f79deb00a974047884250"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/rational_fragment_v1/plan.md": {
+      "bytes": 4579,
+      "sha256": "a9e648360ccc9b65df3c4409b4aab790df16c60fbfaf4f9e294130ec69d52960"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/rational_fragment_v1/scope_probe_v1.py": {
+      "bytes": 15125,
+      "sha256": "0915bd37591b6b9e9e14ea43a230e2e482b3e76d82eb133d05ee562363791421"
+    }
+  },
+  "source_before": {
+    "v3/checks/04_counterfactual_repair.py": {
+      "bytes": 22823,
+      "sha256": "c71692e2e84c52f915dd1d09048344bf1d6c53e7d0362fe82a598d8f3d0ab896"
+    },
+    "v3/checks/05_add_evidence.py": {
+      "bytes": 34908,
+      "sha256": "1e40f1bf7a3cb2dc9cfe46beff9a3548392e99e7ff0fa81a6c79c2f53508bbdc"
+    },
+    "v3/checks/05_add_evidence_check.py": {
+      "bytes": 33036,
+      "sha256": "1f396bbb625614c87d48fa5fece438851999a7afeb58d5af6933812b4038c2bf"
+    },
+    "v3/checks/05_counterfactual_transport.py": {
+      "bytes": 16360,
+      "sha256": "48422eb4b23ab38d2b755de76000edaa38231dce6064c2f9cb71e45702c9ae35"
+    },
+    "v3/checks/05_ordinary_add.py": {
+      "bytes": 11008,
+      "sha256": "9263992673a815b15b489272aa827ea27066a0af264a85bbf905875f632abef7"
+    },
+    "v3/checks/05_portfolio_transport.py": {
+      "bytes": 24552,
+      "sha256": "9bf64849eae1072c9da6a2e754858af6f2f15c2c4f7e7ac55ffb556f2064b821"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/rational_fragment_v1/budget.json": {
+      "bytes": 537,
+      "sha256": "15cad06a8b8917ecf46fd15a973c2477e96fd7cf6eae3dab6196232adfeafb23"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/rational_fragment_v1/fixture.json": {
+      "bytes": 21586,
+      "sha256": "7708e40baa12f8c31a88f8babab166196b2d52d8ce1f79deb00a974047884250"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/rational_fragment_v1/plan.md": {
+      "bytes": 4579,
+      "sha256": "a9e648360ccc9b65df3c4409b4aab790df16c60fbfaf4f9e294130ec69d52960"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/rational_fragment_v1/scope_probe_v1.py": {
+      "bytes": 15125,
+      "sha256": "0915bd37591b6b9e9e14ea43a230e2e482b3e76d82eb133d05ee562363791421"
+    }
+  },
+  "sources_unchanged": true,
+  "stage": "DEVELOPMENT",
+  "status": "PASS"
+}

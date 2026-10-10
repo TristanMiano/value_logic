@@ -1,0 +1,375 @@
+{
+  "all_inputs_unchanged": true,
+  "consumer_bill_plus_reserve_counts": {
+    "O-ADD-COLD": [
+      44,
+      48,
+      48
+    ],
+    "O-ADD-PORTFOLIO": [
+      37,
+      48,
+      48
+    ],
+    "O-ADD-WARM": [
+      41,
+      48,
+      48
+    ],
+    "O-ENUM-RECEIVER": [
+      46,
+      48,
+      48
+    ],
+    "P-FRESH": [
+      42,
+      48,
+      48
+    ],
+    "P-REUSE": [
+      37,
+      48,
+      48
+    ]
+  },
+  "direct_receiver_saved_work": {
+    "complementary_k3_n5/fresh": {
+      "assignments": 192,
+      "enumerated_requests": 6,
+      "requests": 6,
+      "screened_requests": 0
+    },
+    "complementary_k3_n5/resident": {
+      "assignments": 192,
+      "enumerated_requests": 6,
+      "requests": 6,
+      "screened_requests": 0
+    },
+    "complementary_k5_n7/fresh": {
+      "assignments": 768,
+      "enumerated_requests": 6,
+      "requests": 6,
+      "screened_requests": 0
+    },
+    "complementary_k5_n7/resident": {
+      "assignments": 768,
+      "enumerated_requests": 6,
+      "requests": 6,
+      "screened_requests": 0
+    },
+    "constant_n3/fresh": {
+      "assignments": 0,
+      "enumerated_requests": 0,
+      "requests": 6,
+      "screened_requests": 6
+    },
+    "constant_n3/resident": {
+      "assignments": 0,
+      "enumerated_requests": 0,
+      "requests": 6,
+      "screened_requests": 6
+    },
+    "parity_reassociation_n6/fresh": {
+      "assignments": 384,
+      "enumerated_requests": 6,
+      "requests": 6,
+      "screened_requests": 0
+    },
+    "parity_reassociation_n6/resident": {
+      "assignments": 384,
+      "enumerated_requests": 6,
+      "requests": 6,
+      "screened_requests": 0
+    }
+  },
+  "first_request_source_fees": {
+    "430041": 48
+  },
+  "inputs": {
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/primary_analysis_v1/analysis.json": {
+      "bytes": 23953,
+      "sha256": "610c9b107ef13c9d3075e11abdc16358a8a6a8eb4934cb7d60adc4d68af72464"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/primary_analysis_v1/per_request.csv": {
+      "bytes": 44131,
+      "sha256": "b5f0d5e0b6968a53e7fdef2906e388cf180e0d2848cb94953896b35db233a66b"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/primary_analysis_v1/totals.csv": {
+      "bytes": 6714,
+      "sha256": "bdc5cb91f2615dfdba665b5f86bba6eee815c4fdeb96b043369d7a8fd65d79fb"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/primary_v5/completed_units.jsonl": {
+      "bytes": 2511881,
+      "sha256": "555d0af18e958053f06b14940e6a725d28514877191a0982d976c91eb210254e"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/secondary_analysis_v1/per_request.csv": {
+      "bytes": 22408,
+      "sha256": "26a69c936dc79ebf2e82b98a7561e70665cf4f93c8468830d1071a34973263ac"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/secondary_analysis_v1/totals.csv": {
+      "bytes": 3536,
+      "sha256": "7670bbf869c49ea37c214cd2f823bd1a50ae0ee23c73636a60475b3cdae76b8c"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/synthesis_review_v1/observed_rational_completed_units_df3e500eac31c649b9afa3fc285b3d5428ed157ced94e2a63c462ff6bc92f69f.jsonl": {
+      "bytes": 143295,
+      "sha256": "df3e500eac31c649b9afa3fc285b3d5428ed157ced94e2a63c462ff6bc92f69f"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/synthesis_review_v1/source/v3/experiments/certificate_delivery.md": {
+      "bytes": 24094,
+      "sha256": "712d0c3c23c610b3e6fa495bcd0cc43309511e14383efba21e883e6c98832878"
+    }
+  },
+  "prefix_values_compared": 12,
+  "primary_table_values_compared": 48,
+  "principal_clock_credit": 0,
+  "pruning_request_patterns": {
+    "later_packet_and_consumer_reduction": 20,
+    "unchanged_first_packet_plus_three_consumer_units": 4
+  },
+  "pruning_table_values_compared": 30,
+  "rational_integrity": {
+    "declared_rows": 30,
+    "matches_summary": false,
+    "missing_expected_case": "O-ADD-PORTFOLIO final recovery",
+    "observed_rows": 29
+  },
+  "rational_saved_outcomes": {
+    "large_incumbent_cutoff": [
+      {
+        "error": {
+          "message": "Input rational exceeds 128-bit component cap.",
+          "type": "ValueError"
+        },
+        "method": "P-REUSE",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 66714
+      },
+      {
+        "error": {
+          "message": "Input rational exceeds 128-bit component cap.",
+          "type": "ValueError"
+        },
+        "method": "P-FRESH",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 66611
+      },
+      {
+        "error": null,
+        "method": "O-ADD-COLD",
+        "status": "DELIVERED",
+        "total_units": 274166
+      },
+      {
+        "error": null,
+        "method": "O-ADD-WARM",
+        "status": "DELIVERED",
+        "total_units": 274057
+      },
+      {
+        "error": null,
+        "method": "O-ENUM-RECEIVER",
+        "status": "DELIVERED",
+        "total_units": 55838
+      },
+      {
+        "error": {
+          "message": "Input rational exceeds 128-bit component cap.",
+          "type": "ValueError"
+        },
+        "method": "O-ADD-PORTFOLIO",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 66723
+      }
+    ],
+    "large_negative_constant": [
+      {
+        "error": null,
+        "method": "P-REUSE",
+        "status": "DELIVERED",
+        "total_units": 1313178
+      },
+      {
+        "error": null,
+        "method": "P-FRESH",
+        "status": "DELIVERED",
+        "total_units": 1313075
+      },
+      {
+        "error": {
+          "message": "Evidence rational component cap.",
+          "type": "EvidenceLimit"
+        },
+        "method": "O-ADD-COLD",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 1153170
+      },
+      {
+        "error": {
+          "message": "Evidence rational component cap.",
+          "type": "EvidenceLimit"
+        },
+        "method": "O-ADD-WARM",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 1148826
+      },
+      {
+        "error": null,
+        "method": "O-ENUM-RECEIVER",
+        "status": "DELIVERED",
+        "total_units": 839117
+      },
+      {
+        "error": null,
+        "method": "O-ADD-PORTFOLIO",
+        "status": "DELIVERED",
+        "total_units": 1313195
+      }
+    ],
+    "large_positive_constant": [
+      {
+        "error": {
+          "message": "Incumbent sublevel is not covered by the allowed proof vocabulary: (0,)",
+          "type": "Uncertified"
+        },
+        "method": "P-REUSE",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 716345
+      },
+      {
+        "error": {
+          "message": "Incumbent sublevel is not covered by the allowed proof vocabulary: (0,)",
+          "type": "Uncertified"
+        },
+        "method": "P-FRESH",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 716300
+      },
+      {
+        "error": {
+          "message": "Evidence rational component cap.",
+          "type": "EvidenceLimit"
+        },
+        "method": "O-ADD-COLD",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 713951
+      },
+      {
+        "error": {
+          "message": "Evidence rational component cap.",
+          "type": "EvidenceLimit"
+        },
+        "method": "O-ADD-WARM",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 713925
+      },
+      {
+        "error": {
+          "message": "Actual violating current-domain point: (0,)",
+          "type": "ValueError"
+        },
+        "method": "O-ENUM-RECEIVER",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 351285
+      },
+      {
+        "error": {
+          "message": "Incumbent sublevel is not covered by the allowed proof vocabulary: (0,)",
+          "type": "Uncertified"
+        },
+        "method": "O-ADD-PORTFOLIO",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 716348
+      }
+    ],
+    "recovery_zero": [
+      {
+        "error": null,
+        "method": "P-REUSE",
+        "status": "DELIVERED",
+        "total_units": 71687
+      },
+      {
+        "error": null,
+        "method": "P-FRESH",
+        "status": "DELIVERED",
+        "total_units": 71584
+      },
+      {
+        "error": null,
+        "method": "O-ADD-COLD",
+        "status": "DELIVERED",
+        "total_units": 155416
+      },
+      {
+        "error": null,
+        "method": "O-ADD-WARM",
+        "status": "DELIVERED",
+        "total_units": 155421
+      },
+      {
+        "error": null,
+        "method": "O-ENUM-RECEIVER",
+        "status": "DELIVERED",
+        "total_units": 35148
+      }
+    ],
+    "zero_work_capacity": [
+      {
+        "error": {
+          "message": "coordination: reserved budget exhausted",
+          "type": "ResourceExhausted"
+        },
+        "method": "P-REUSE",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 113
+      },
+      {
+        "error": {
+          "message": "coordination: reserved budget exhausted",
+          "type": "ResourceExhausted"
+        },
+        "method": "P-FRESH",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 113
+      },
+      {
+        "error": {
+          "message": "coordination: reserved budget exhausted",
+          "type": "ResourceExhausted"
+        },
+        "method": "O-ADD-COLD",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 113
+      },
+      {
+        "error": {
+          "message": "coordination: reserved budget exhausted",
+          "type": "ResourceExhausted"
+        },
+        "method": "O-ADD-WARM",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 113
+      },
+      {
+        "error": {
+          "message": "coordination: reserved budget exhausted",
+          "type": "ResourceExhausted"
+        },
+        "method": "O-ENUM-RECEIVER",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 113
+      },
+      {
+        "error": {
+          "message": "coordination: reserved budget exhausted",
+          "type": "ResourceExhausted"
+        },
+        "method": "O-ADD-PORTFOLIO",
+        "status": "NO_CURRENT_CERTIFICATE",
+        "total_units": 113
+      }
+    ]
+  },
+  "scope": "Read-only transcription and saved-counter arithmetic; no worker or policy execution.",
+  "status": "TRANSCRIPTIONS_PASS_RATIONAL_RECORD_INCOMPLETE"
+}

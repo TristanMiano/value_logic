@@ -1,0 +1,15 @@
+{
+  "schema": "value_logic.rp3bb.service-contract-amendment.v1",
+  "stage": "DEVELOPMENT",
+  "amendment": 4,
+  "timing": "After the complete source-bound service-v4 smoke (48 deliveries,24 reserved failures,14 reference cases;542 assertions PASS), before every primary comparison. The smoke and all review snapshots remain unchanged.",
+  "service_version": "rp3bb-certificate-service-v5",
+  "reason": "Independent review identified two exact accounting gaps in v4: the additional bootstrap snapshot period omitted current old-input/packet copies, and source-file byte charges were added after read/hash work rather than reserved before a possible partial failure.",
+  "bootstrap_correction": "Both native and ordinary-hybrid bootstrap snapshots now include the full current old request packet and its evidence packet alongside admitted tables. This makes the existing live-period declaration literal; ordinary input/output byte charges were already present in v4.",
+  "source_installation_rule": "Charge the source-record input before parsing. Validate the independently supplied canonical exact worker-file manifest. For each file, prepay program bytes, hash capacity bytes and one length-probe byte before reading at most expected_size+1 bytes; verify length and hash before proceeding. These are explicit installation-capacity fees retained on failure, not a claim that a missing-file attempt consumed every prepaid byte. Runtime event charges still preserve the actually observed instruction prefix.",
+  "source_scope": "Fixed module/endpoint creation remains covered by this declared program-byte installation tariff. It is not traced physical import time or a claim of CPU/heap completeness.",
+  "threshold_scope": "Observed consumer bill u<=threshold is an affordability statistic. Execution with this reserve normally requires an account of at least u+1024; low-budget executions are separately labelled and cannot be inferred from the statistic alone.",
+  "changed_category_label": "live_serialized_byte_periods replaces the earlier retained_serialized_byte_periods label to match the already declared boundary-period convention; its price remains one.",
+  "unchanged": "No family, request, method, bound, incumbent, primary budget, threshold or stopping boundary was selected from smoke outcomes. All results remain development.",
+  "predecessor_smoke": "service_smoke_v4/summary.json"
+}

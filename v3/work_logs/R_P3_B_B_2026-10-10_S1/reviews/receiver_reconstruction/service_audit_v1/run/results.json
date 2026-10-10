@@ -1,0 +1,334 @@
+{
+  "schema": "rp3bb.independent-service-diagnostic.v1",
+  "stage": "DEVELOPMENT",
+  "status": "PASS",
+  "source_service_sha256": "b8929dc8c75962d5ed8a8c29e8b12b32c8aef05c2e20e9d1b862e30fac0a623e",
+  "diagnostic_sha256": "b1a8519c9384a57c489bc56a4c6bb37aeb25778068a9149fcaaf47f062d03f1d",
+  "source_unchanged": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "case_count": 10,
+  "cases": [
+    {
+      "name": "first_executed_code_object_is_traced",
+      "status": "PASS",
+      "disassembly": [
+        {
+          "offset": 2,
+          "opname": "RETURN_CONST"
+        }
+      ],
+      "expected_opcode_events": 1,
+      "invoice": {
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 1,
+        "consumer_units": 1,
+        "budget": 134217728,
+        "consumer_budget": null,
+        "by_stage": {
+          "receiver_first_call": {
+            "observed_python_opcode_events": 1
+          }
+        },
+        "failure_terminal_reserve": 1024,
+        "max_serialized_object_bytes": 0,
+        "max_retained_serialized_bytes": 0,
+        "retained_proxy_bytes": {},
+        "failure": null,
+        "instrumentation_included": false,
+        "physical_cpu_or_heap_bound_claimed": false
+      }
+    },
+    {
+      "name": "nested_stages_preserve_all_outer_worker_events",
+      "status": "PASS",
+      "outer_disassembly": [
+        {
+          "offset": 2,
+          "opname": "LOAD_CONST"
+        },
+        {
+          "offset": 4,
+          "opname": "STORE_FAST"
+        },
+        {
+          "offset": 6,
+          "opname": "LOAD_GLOBAL"
+        },
+        {
+          "offset": 16,
+          "opname": "LOAD_ATTR"
+        },
+        {
+          "offset": 36,
+          "opname": "LOAD_CONST"
+        },
+        {
+          "offset": 38,
+          "opname": "LOAD_GLOBAL"
+        },
+        {
+          "offset": 48,
+          "opname": "CALL"
+        },
+        {
+          "offset": 56,
+          "opname": "STORE_FAST"
+        },
+        {
+          "offset": 58,
+          "opname": "LOAD_FAST"
+        },
+        {
+          "offset": 60,
+          "opname": "LOAD_FAST"
+        },
+        {
+          "offset": 62,
+          "opname": "BINARY_OP"
+        },
+        {
+          "offset": 66,
+          "opname": "RETURN_VALUE"
+        }
+      ],
+      "inner_disassembly": [
+        {
+          "offset": 2,
+          "opname": "RETURN_CONST"
+        }
+      ],
+      "invoice": {
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 13,
+        "consumer_units": 1,
+        "budget": 134217728,
+        "consumer_budget": null,
+        "by_stage": {
+          "coordination": {
+            "observed_python_opcode_events": 12
+          },
+          "receiver_nested": {
+            "observed_python_opcode_events": 1
+          }
+        },
+        "failure_terminal_reserve": 1024,
+        "max_serialized_object_bytes": 0,
+        "max_retained_serialized_bytes": 0,
+        "retained_proxy_bytes": {},
+        "failure": null,
+        "instrumentation_included": false,
+        "physical_cpu_or_heap_bound_claimed": false
+      }
+    },
+    {
+      "name": "bounded_native_call_event_is_additional",
+      "status": "PASS",
+      "disassembly": [
+        {
+          "offset": 2,
+          "opname": "LOAD_GLOBAL"
+        },
+        {
+          "offset": 12,
+          "opname": "LOAD_CONST"
+        },
+        {
+          "offset": 14,
+          "opname": "CALL"
+        },
+        {
+          "offset": 22,
+          "opname": "RETURN_VALUE"
+        }
+      ],
+      "invoice": {
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 5,
+        "consumer_units": 5,
+        "budget": 134217728,
+        "consumer_budget": null,
+        "by_stage": {
+          "receiver_native": {
+            "bounded_native_c_call_events": 1,
+            "observed_python_opcode_events": 4
+          }
+        },
+        "failure_terminal_reserve": 1024,
+        "max_serialized_object_bytes": 0,
+        "max_retained_serialized_bytes": 0,
+        "retained_proxy_bytes": {},
+        "failure": null,
+        "instrumentation_included": false,
+        "physical_cpu_or_heap_bound_claimed": false
+      }
+    },
+    {
+      "name": "reserve_only_account_returns_paid_failure",
+      "status": "PASS",
+      "paid_before_failure": 0,
+      "failure_output_bytes": 111,
+      "invoice": {
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 113,
+        "consumer_units": 113,
+        "budget": 1024,
+        "consumer_budget": null,
+        "by_stage": {
+          "failure_terminal": {
+            "delivery_events": 1,
+            "state_eviction_events": 1,
+            "terminal_bytes": 111
+          }
+        },
+        "failure_terminal_reserve": 1024,
+        "max_serialized_object_bytes": 0,
+        "max_retained_serialized_bytes": 0,
+        "retained_proxy_bytes": {},
+        "failure": {
+          "type": "ResourceExhausted",
+          "message": "receiver_denied: reserved budget exhausted",
+          "stage": "receiver_denied"
+        },
+        "instrumentation_included": false,
+        "physical_cpu_or_heap_bound_claimed": false
+      }
+    },
+    {
+      "name": "paid_prefix_survives_opcode_denial",
+      "status": "PASS",
+      "paid_before_failure": 40,
+      "failure_output_bytes": 111,
+      "invoice": {
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 153,
+        "consumer_units": 153,
+        "budget": 1064,
+        "consumer_budget": null,
+        "by_stage": {
+          "failure_terminal": {
+            "delivery_events": 1,
+            "state_eviction_events": 1,
+            "terminal_bytes": 111
+          },
+          "receiver_denied": {
+            "observed_python_opcode_events": 40
+          }
+        },
+        "failure_terminal_reserve": 1024,
+        "max_serialized_object_bytes": 0,
+        "max_retained_serialized_bytes": 0,
+        "retained_proxy_bytes": {},
+        "failure": {
+          "type": "ResourceExhausted",
+          "message": "receiver_denied: reserved budget exhausted",
+          "stage": "receiver_denied"
+        },
+        "instrumentation_included": false,
+        "physical_cpu_or_heap_bound_claimed": false
+      }
+    },
+    {
+      "name": "native_callback_denial_keeps_failure_reserve",
+      "status": "PASS",
+      "paid_before_failure": 3,
+      "failure_output_bytes": 111,
+      "invoice": {
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 116,
+        "consumer_units": 116,
+        "budget": 1027,
+        "consumer_budget": null,
+        "by_stage": {
+          "failure_terminal": {
+            "delivery_events": 1,
+            "state_eviction_events": 1,
+            "terminal_bytes": 111
+          },
+          "receiver_denied": {
+            "observed_python_opcode_events": 3
+          }
+        },
+        "failure_terminal_reserve": 1024,
+        "max_serialized_object_bytes": 0,
+        "max_retained_serialized_bytes": 0,
+        "retained_proxy_bytes": {},
+        "failure": {
+          "type": "ResourceExhausted",
+          "message": "receiver_denied: reserved budget exhausted",
+          "stage": "receiver_denied"
+        },
+        "instrumentation_included": false,
+        "physical_cpu_or_heap_bound_claimed": false
+      }
+    },
+    {
+      "name": "independent_consumer_reserve_is_enforced",
+      "status": "PASS",
+      "paid_before_failure": 20,
+      "failure_output_bytes": 111,
+      "invoice": {
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 133,
+        "consumer_units": 133,
+        "budget": 2024,
+        "consumer_budget": 1044,
+        "by_stage": {
+          "failure_terminal": {
+            "delivery_events": 1,
+            "state_eviction_events": 1,
+            "terminal_bytes": 111
+          },
+          "receiver_denied": {
+            "observed_python_opcode_events": 20
+          }
+        },
+        "failure_terminal_reserve": 1024,
+        "max_serialized_object_bytes": 0,
+        "max_retained_serialized_bytes": 0,
+        "retained_proxy_bytes": {},
+        "failure": {
+          "type": "ResourceExhausted",
+          "message": "receiver_denied: reserved budget exhausted",
+          "stage": "receiver_denied"
+        },
+        "instrumentation_included": false,
+        "physical_cpu_or_heap_bound_claimed": false
+      }
+    },
+    {
+      "name": "bill_threshold_is_not_reserved_execution_budget",
+      "status": "PASS",
+      "observed_complete_bill": 2048,
+      "threshold": 2048,
+      "bill_within_threshold": true,
+      "same_account_would_deny": true,
+      "same_path_required_consumer_account": 3072
+    },
+    {
+      "name": "native_witness_binding_gap_reproduced",
+      "status": "PASS",
+      "defect_present": true,
+      "supplied_witness": [
+        0
+      ],
+      "supplied_witness_is_feasible": false,
+      "actually_checked_proof_witness": [
+        1
+      ],
+      "equal_incumbent_ranks": true,
+      "receiving_bound_itself_is_true": true,
+      "scope": "Direct codec/native-verify/common-report boundary; no honest Session episode used a substituted proof."
+    },
+    {
+      "name": "old_frame_only_charge_omits_request_tuple",
+      "status": "PASS",
+      "frame_only_bytes": 251,
+      "complete_old_request_bytes": 387,
+      "omitted_bytes_for_this_exact_encoding": 136
+    }
+  ],
+  "session_deliveries": 0,
+  "policy_runs": 0,
+  "principal_clock_credit_seconds": 0,
+  "error": null
+}

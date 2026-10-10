@@ -1,0 +1,926 @@
+{
+  "schema": "rp3bb.receiver-focused-check.v1",
+  "stage": "DEVELOPMENT",
+  "status": "PASS",
+  "prepared_case_scope": "Finite functional grammar, full/delta, independent binding, admission/fork and malformed-wire probes; no scalar resource claim.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "utc": "2026-10-10T19:59:10.905574+00:00",
+  "source_before": {
+    "v3/checks/04_counterfactual_repair.py": {
+      "bytes": 22823,
+      "sha256": "c71692e2e84c52f915dd1d09048344bf1d6c53e7d0362fe82a598d8f3d0ab896"
+    },
+    "v3/checks/05_add_evidence.py": {
+      "bytes": 34908,
+      "sha256": "1e40f1bf7a3cb2dc9cfe46beff9a3548392e99e7ff0fa81a6c79c2f53508bbdc"
+    },
+    "v3/checks/05_add_evidence_check.py": {
+      "bytes": 33036,
+      "sha256": "1f396bbb625614c87d48fa5fece438851999a7afeb58d5af6933812b4038c2bf"
+    },
+    "v3/checks/05_counterfactual_transport.py": {
+      "bytes": 16360,
+      "sha256": "48422eb4b23ab38d2b755de76000edaa38231dce6064c2f9cb71e45702c9ae35"
+    },
+    "v3/checks/05_ordinary_add.py": {
+      "bytes": 11008,
+      "sha256": "9263992673a815b15b489272aa827ea27066a0af264a85bbf905875f632abef7"
+    },
+    "v3/checks/05_portfolio_transport.py": {
+      "bytes": 24552,
+      "sha256": "9bf64849eae1072c9da6a2e754858af6f2f15c2c4f7e7ac55ffb556f2064b821"
+    }
+  },
+  "source_after": {
+    "v3/checks/04_counterfactual_repair.py": {
+      "bytes": 22823,
+      "sha256": "c71692e2e84c52f915dd1d09048344bf1d6c53e7d0362fe82a598d8f3d0ab896"
+    },
+    "v3/checks/05_add_evidence.py": {
+      "bytes": 34908,
+      "sha256": "1e40f1bf7a3cb2dc9cfe46beff9a3548392e99e7ff0fa81a6c79c2f53508bbdc"
+    },
+    "v3/checks/05_add_evidence_check.py": {
+      "bytes": 33036,
+      "sha256": "1f396bbb625614c87d48fa5fece438851999a7afeb58d5af6933812b4038c2bf"
+    },
+    "v3/checks/05_counterfactual_transport.py": {
+      "bytes": 16360,
+      "sha256": "48422eb4b23ab38d2b755de76000edaa38231dce6064c2f9cb71e45702c9ae35"
+    },
+    "v3/checks/05_ordinary_add.py": {
+      "bytes": 11008,
+      "sha256": "9263992673a815b15b489272aa827ea27066a0af264a85bbf905875f632abef7"
+    },
+    "v3/checks/05_portfolio_transport.py": {
+      "bytes": 24552,
+      "sha256": "9bf64849eae1072c9da6a2e754858af6f2f15c2c4f7e7ac55ffb556f2064b821"
+    }
+  },
+  "source_unchanged": true,
+  "case_count": 42,
+  "cases": [
+    {
+      "name": "constant_full",
+      "status": "PASS",
+      "wire_sha256": "9b6ab67af3ecadf128f4fb3a0af1847c664c1ff474ff2fa4e40f3555511bed5a",
+      "wire_bytes": 1658,
+      "work": {
+        "wire_input_bytes": 1658,
+        "json_depth_scan_characters": 1670,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 466,
+        "rational_wire_checks": 4,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 11,
+        "node_rows_checked": 3,
+        "node_lookups": 17,
+        "applies_lookups": 8,
+        "apply_rows_checked": 4,
+        "terminal_equations_checked": 1,
+        "expression_syntax_nodes": 1,
+        "expressions_lookups": 2,
+        "expression_rows_checked": 1,
+        "claims_checked": 1
+      },
+      "admitted": {
+        "nodes": 3,
+        "applies": 4,
+        "expressions": 1
+      },
+      "storage": {
+        "nodes": 3,
+        "applies": 4,
+        "expressions": 1,
+        "receipts": 1,
+        "retained_serialization_bytes": 2541,
+        "scope": "Full retained node/index/Boolean/fact/receipt tables and source/order binding; not native heap size."
+      }
+    },
+    {
+      "name": "returned_report_cannot_mutate_receipt",
+      "status": "PASS"
+    },
+    {
+      "name": "constant_resident_delta",
+      "status": "PASS",
+      "wire_sha256": "72ab312607ffb120dd1c753f120edbc3d818fe8a9c3577dffd1da76a374dc8e4",
+      "wire_bytes": 1625,
+      "work": {
+        "wire_input_bytes": 1625,
+        "json_depth_scan_characters": 1634,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 494,
+        "rational_wire_checks": 1,
+        "max_rational_component_bits": 1,
+        "feasibility_rows_checked": 1,
+        "expression_nodes": 1,
+        "node_lookups": 15,
+        "resident_chunk_lookups": 24,
+        "unique_lookups": 9,
+        "node_rows_checked": 1,
+        "applies_lookups": 7,
+        "apply_rows_checked": 2,
+        "expression_syntax_nodes": 1,
+        "expressions_lookups": 3,
+        "expression_rows_checked": 1,
+        "claims_checked": 1
+      },
+      "admitted": {
+        "nodes": 4,
+        "applies": 6,
+        "expressions": 2
+      },
+      "storage": {
+        "nodes": 4,
+        "applies": 6,
+        "expressions": 2,
+        "receipts": 2,
+        "retained_serialization_bytes": 2764,
+        "scope": "Full retained node/index/Boolean/fact/receipt tables and source/order binding; not native heap size."
+      }
+    },
+    {
+      "name": "fork_commit_does_not_publish_to_owner",
+      "status": "PASS"
+    },
+    {
+      "name": "cold_full_after_delta",
+      "status": "PASS",
+      "wire_sha256": "7637f3f7cb7ad6ad2eceacc84736a17042c61565cabf7cc934890d5226dfb844",
+      "wire_bytes": 1732,
+      "work": {
+        "wire_input_bytes": 1732,
+        "json_depth_scan_characters": 1753,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 494,
+        "rational_wire_checks": 4,
+        "max_rational_component_bits": 1,
+        "feasibility_rows_checked": 1,
+        "expression_nodes": 1,
+        "unique_lookups": 16,
+        "node_rows_checked": 4,
+        "node_lookups": 28,
+        "applies_lookups": 11,
+        "apply_rows_checked": 6,
+        "terminal_equations_checked": 1,
+        "expression_syntax_nodes": 2,
+        "expressions_lookups": 4,
+        "expression_rows_checked": 2,
+        "claims_checked": 1
+      },
+      "admitted": {
+        "nodes": 4,
+        "applies": 6,
+        "expressions": 2
+      },
+      "storage": {
+        "nodes": 4,
+        "applies": 6,
+        "expressions": 2,
+        "receipts": 1,
+        "retained_serialization_bytes": 2664,
+        "scope": "Full retained node/index/Boolean/fact/receipt tables and source/order binding; not native heap size."
+      }
+    },
+    {
+      "name": "full_requires_fresh_receiver",
+      "status": "PASS",
+      "rejection": "Stale resident base counts.",
+      "wire_sha256": "7637f3f7cb7ad6ad2eceacc84736a17042c61565cabf7cc934890d5226dfb844",
+      "wire_bytes": 1732,
+      "work": {
+        "wire_input_bytes": 1732,
+        "json_depth_scan_characters": 1732,
+        "source_record_characters_compared": 909
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "grammar_natural_order",
+      "status": "PASS",
+      "wire_sha256": "e799d4a4c011f83433805171bd2cd473dc3145af7fd689ef289460708ee43814",
+      "wire_bytes": 4324,
+      "work": {
+        "wire_input_bytes": 4324,
+        "json_depth_scan_characters": 4977,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 1072,
+        "rational_wire_checks": 11,
+        "max_rational_component_bits": 3,
+        "expression_nodes": 3,
+        "incumbent_rank_rows_checked": 2,
+        "unique_lookups": 113,
+        "node_rows_checked": 35,
+        "node_lookups": 455,
+        "applies_lookups": 154,
+        "terminal_equations_checked": 25,
+        "apply_rows_checked": 69,
+        "shannon_equations_checked": 32,
+        "expression_syntax_nodes": 65,
+        "expressions_lookups": 36,
+        "expression_rows_checked": 16,
+        "claims_checked": 1
+      },
+      "admitted": {
+        "nodes": 35,
+        "applies": 69,
+        "expressions": 16
+      },
+      "storage": {
+        "nodes": 35,
+        "applies": 69,
+        "expressions": 16,
+        "receipts": 1,
+        "retained_serialization_bytes": 6099,
+        "scope": "Full retained node/index/Boolean/fact/receipt tables and source/order binding; not native heap size."
+      }
+    },
+    {
+      "name": "grammar_reversed_order",
+      "status": "PASS",
+      "wire_sha256": "13e0452cf96f22ed46d85a3c3badd293ba609fba0fb16a22c3da34813af3a36f",
+      "wire_bytes": 4423,
+      "work": {
+        "wire_input_bytes": 4423,
+        "json_depth_scan_characters": 5076,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 1072,
+        "rational_wire_checks": 11,
+        "max_rational_component_bits": 3,
+        "expression_nodes": 3,
+        "incumbent_rank_rows_checked": 2,
+        "unique_lookups": 119,
+        "node_rows_checked": 36,
+        "node_lookups": 501,
+        "applies_lookups": 172,
+        "terminal_equations_checked": 26,
+        "apply_rows_checked": 75,
+        "shannon_equations_checked": 38,
+        "expression_syntax_nodes": 65,
+        "expressions_lookups": 36,
+        "expression_rows_checked": 16,
+        "claims_checked": 1
+      },
+      "admitted": {
+        "nodes": 36,
+        "applies": 75,
+        "expressions": 16
+      },
+      "storage": {
+        "nodes": 36,
+        "applies": 75,
+        "expressions": 16,
+        "receipts": 1,
+        "retained_serialization_bytes": 6225,
+        "scope": "Full retained node/index/Boolean/fact/receipt tables and source/order binding; not native heap size."
+      }
+    },
+    {
+      "name": "parity_shared_dag",
+      "status": "PASS",
+      "wire_sha256": "101d1fe759744641ae4d7a3a5aef0e4bfa0276d3386f573a3d0aad35aa636bc7",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3977,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 4,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 75,
+        "node_rows_checked": 19,
+        "node_lookups": 337,
+        "applies_lookups": 120,
+        "apply_rows_checked": 44,
+        "terminal_equations_checked": 7,
+        "shannon_equations_checked": 31,
+        "expression_syntax_nodes": 67,
+        "expressions_lookups": 29,
+        "expression_rows_checked": 13,
+        "claims_checked": 1
+      },
+      "admitted": {
+        "nodes": 19,
+        "applies": 44,
+        "expressions": 13
+      },
+      "storage": {
+        "nodes": 19,
+        "applies": 44,
+        "expressions": 13,
+        "receipts": 1,
+        "retained_serialization_bytes": 4713,
+        "scope": "Full retained node/index/Boolean/fact/receipt tables and source/order binding; not native heap size."
+      }
+    },
+    {
+      "name": "parity_legacy_tree_checked",
+      "status": "PASS",
+      "native_counts": {
+        "reuse_leaves": 0,
+        "direct_leaves": 8,
+        "hard_exclusions": 0,
+        "rank_exclusions": 0,
+        "splits": 7
+      }
+    },
+    {
+      "name": "unknown_top_level_field",
+      "status": "PASS",
+      "rejection": "Wire: exact object keys required.",
+      "wire_sha256": "6ffc928062e93ae635b36aefa3f998e28f4aee9d69e0b994daf0e0f4a56b3dbb",
+      "wire_bytes": 3411,
+      "work": {
+        "wire_input_bytes": 3411,
+        "json_depth_scan_characters": 3411
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "boolean_root_id",
+      "status": "PASS",
+      "rejection": "Node id: exact bounded integer required.",
+      "wire_sha256": "cc4ff7c4c8c1d42906e28d7b90e8752b5eebab8258dac4a2bfb8b4b228e1dc26",
+      "wire_bytes": 3398,
+      "work": {
+        "wire_input_bytes": 3398,
+        "json_depth_scan_characters": 3981,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 4,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 71,
+        "node_rows_checked": 19,
+        "node_lookups": 333,
+        "applies_lookups": 116,
+        "apply_rows_checked": 44,
+        "terminal_equations_checked": 7,
+        "shannon_equations_checked": 31,
+        "expression_syntax_nodes": 67,
+        "expressions_lookups": 28,
+        "expression_rows_checked": 13
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "unreduced_terminal",
+      "status": "PASS",
+      "rejection": "Terminal: reduced canonical rational required.",
+      "wire_sha256": "5ec830f9816a68047b03485470dc0e9c40e6ff3ac98aff2bd1f744ab0a592971",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3394,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 2,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 1,
+        "node_rows_checked": 1
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "nonpositive_denominator",
+      "status": "PASS",
+      "rejection": "Terminal: exact numerator and positive denominator required.",
+      "wire_sha256": "10780515c463dc073cfa11c8f027bbaa9cb755f5619a4ca1b8b124eaf7c8fb39",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3394,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 2,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 1,
+        "node_rows_checked": 1
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "terminal_component_cap",
+      "status": "PASS",
+      "rejection": "Terminal: rational component cap exceeded.",
+      "wire_sha256": "cd9e061f05531251454562ab656d4dcb70a5ae3a29aedd738524c0d8aacf73b8",
+      "wire_bytes": 4627,
+      "work": {
+        "wire_input_bytes": 4627,
+        "json_depth_scan_characters": 4627,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 2,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 1,
+        "node_rows_checked": 1
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "forward_node_reference",
+      "status": "PASS",
+      "rejection": "Node id: exact bounded integer required.",
+      "wire_sha256": "513094e69c15e87f07eaa10b90d0ffcd6d78ce9f0be1fb21f74509344a27a0c5",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3394,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 3,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 2,
+        "node_rows_checked": 2
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "duplicate_node",
+      "status": "PASS",
+      "rejection": "Duplicate noncanonical diagram node.",
+      "wire_sha256": "ce0cbeba1224b62d8f07f1eab505a5f41a8e8d6ea28a3fece9d7603ce9b62d9c",
+      "wire_bytes": 3404,
+      "work": {
+        "wire_input_bytes": 3404,
+        "json_depth_scan_characters": 3404,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 5,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 20,
+        "node_rows_checked": 19,
+        "node_lookups": 64
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "wrong_apply_equation",
+      "status": "PASS",
+      "rejection": "Apply result is not justified by checked premises.",
+      "wire_sha256": "8c59c4cda74d292e254c4e6481e640d00f0f1d8362d7fc863968e710792ea6a1",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3394,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 4,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 20,
+        "node_rows_checked": 19,
+        "node_lookups": 67,
+        "applies_lookups": 1
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "reversed_apply_premises",
+      "status": "PASS",
+      "rejection": "Missing previously checked applies fact.",
+      "wire_sha256": "3a3326654666af98fcad1749c60248d5e9f8f472fb5f0dd5ab6cb030e5c74552",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3394,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 4,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 21,
+        "node_rows_checked": 19,
+        "node_lookups": 77,
+        "applies_lookups": 4,
+        "terminal_equations_checked": 1,
+        "apply_rows_checked": 2
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "missing_expression_child",
+      "status": "PASS",
+      "rejection": "Missing previously checked expressions fact.",
+      "wire_sha256": "473530ecc60eb55fde9456c367b7c9d2b35497811946f3e4eaf1e23702667e9e",
+      "wire_bytes": 3376,
+      "work": {
+        "wire_input_bytes": 3376,
+        "json_depth_scan_characters": 3411,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 4,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 60,
+        "node_rows_checked": 19,
+        "node_lookups": 322,
+        "applies_lookups": 106,
+        "apply_rows_checked": 44,
+        "terminal_equations_checked": 7,
+        "shannon_equations_checked": 31,
+        "expression_syntax_nodes": 4,
+        "expressions_lookups": 3,
+        "expression_rows_checked": 1
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "wrong_expression_denotation",
+      "status": "PASS",
+      "rejection": "Expression root lacks checked denotation.",
+      "wire_sha256": "dbe3d80f533546911a9f6dc1fbd23b74d8dfdb1993548cb8078b958d510c4829",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3403,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 4,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 60,
+        "node_rows_checked": 19,
+        "node_lookups": 321,
+        "applies_lookups": 106,
+        "apply_rows_checked": 44,
+        "terminal_equations_checked": 7,
+        "shannon_equations_checked": 31,
+        "expression_syntax_nodes": 1,
+        "expressions_lookups": 1
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "forged_guard_root",
+      "status": "PASS",
+      "rejection": "Claim roots do not follow from the current request.",
+      "wire_sha256": "f0dfc90601e9dc77598f420f453cbc89d4e6c2a5d39d171dd534c5e2ae50da47",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3977,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 4,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 75,
+        "node_rows_checked": 19,
+        "node_lookups": 337,
+        "applies_lookups": 120,
+        "apply_rows_checked": 44,
+        "terminal_equations_checked": 7,
+        "shannon_equations_checked": 31,
+        "expression_syntax_nodes": 67,
+        "expressions_lookups": 29,
+        "expression_rows_checked": 13
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "wrong_source_record",
+      "status": "PASS",
+      "rejection": "Independent source closure mismatch.",
+      "wire_sha256": "6ce056e619f3d1365ec08be4c51e9d6fb2e7ad7571271c1c6d7c621643f615ad",
+      "wire_bytes": 3395,
+      "work": {
+        "wire_input_bytes": 3395,
+        "json_depth_scan_characters": 3395
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "wrong_epoch",
+      "status": "PASS",
+      "rejection": "Stale or foreign epoch.",
+      "wire_sha256": "6c6e0b2556761774a29cb4a5a94ab5bd1ac2cb14bf825ec790d8546a0f4112d0",
+      "wire_bytes": 3396,
+      "work": {
+        "wire_input_bytes": 3396,
+        "json_depth_scan_characters": 3396,
+        "source_record_characters_compared": 909
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "wrong_variable_order",
+      "status": "PASS",
+      "rejection": "Variable-order mismatch.",
+      "wire_sha256": "c5837721f4469694cebbbad63585af8f75daab521d3085e0c28039a86260e407",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3394,
+        "source_record_characters_compared": 909
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "wrong_base_counts",
+      "status": "PASS",
+      "rejection": "Stale resident base counts.",
+      "wire_sha256": "acd1aebe89c07cea042d769478f0d3a34cf176e88b166007258e7de41a0247f5",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3394,
+        "source_record_characters_compared": 909
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "wire_incumbent_substitution",
+      "status": "PASS",
+      "rejection": "Incumbent substitution.",
+      "wire_sha256": "503ac33b639f6e160743effa78a11f072ec59a4c7b2111a17fef6954b434d690",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3394,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "wire_bound_substitution",
+      "status": "PASS",
+      "rejection": "Receiving bound substitution.",
+      "wire_sha256": "245c7c0905913fee1b0861a0431b28e40b78ec3881e981d8674364c9c59851a0",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3394,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 722,
+        "rational_wire_checks": 1,
+        "max_rational_component_bits": 1
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "float_bound",
+      "status": "PASS",
+      "rejection": "Floating-point and nonfinite JSON values are forbidden.",
+      "wire_sha256": "f133113e073590919a79021bcb441a3d9d3a7816232aa5b90fc9ae1d834af738",
+      "wire_bytes": 3396,
+      "work": {
+        "wire_input_bytes": 3396,
+        "json_depth_scan_characters": 3396
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "duplicate_json_key",
+      "status": "PASS",
+      "rejection": "Duplicate JSON object key.",
+      "wire_sha256": "f709af5ee128a62b6d0091dbecb8c8a9b3b3a90e2ca7d5a83d69eaff049bf792",
+      "wire_bytes": 3427,
+      "work": {
+        "wire_input_bytes": 3427,
+        "json_depth_scan_characters": 3427
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "outer_depth_cap",
+      "status": "PASS",
+      "rejection": "JSON nesting cap exceeded.",
+      "wire_sha256": "3980e669b3fcdfcab60600ec9227786745c3a832cd4e6907bbab903de3b39a75",
+      "wire_bytes": 27,
+      "work": {
+        "wire_input_bytes": 27
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "malformed_utf8",
+      "status": "PASS",
+      "rejection": "Wire must be valid UTF-8.",
+      "wire_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+      "wire_bytes": 1,
+      "work": {},
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "independent_exact_frame_type_binding",
+      "status": "PASS",
+      "rejection": "Independent current record mismatch.",
+      "wire_sha256": "49db2f6530bdbe58d52586a9f00f91a0dbcc8115587752a0fd43600f05161347",
+      "wire_bytes": 3412,
+      "work": {
+        "wire_input_bytes": 3412,
+        "json_depth_scan_characters": 3412,
+        "source_record_characters_compared": 909
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "infeasible_incumbent",
+      "status": "PASS",
+      "rejection": "Current incumbent is not feasible.",
+      "wire_sha256": "7df2a8142df117b50753f0c2d6891576f7b0a3c069f3fc7ac412c734cbd1a19f",
+      "wire_bytes": 3412,
+      "work": {
+        "wire_input_bytes": 3412,
+        "json_depth_scan_characters": 3412,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 754,
+        "rational_wire_checks": 1,
+        "max_rational_component_bits": 1,
+        "feasibility_rows_checked": 1,
+        "expression_nodes": 1
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "empty_current_domain",
+      "status": "PASS",
+      "rejection": "Current incumbent is not feasible.",
+      "wire_sha256": "060220dbaffb7b8f1a90fa7c24fc6ef43c9f08f8be96376bddbbe03a512a85e3",
+      "wire_bytes": 3273,
+      "work": {
+        "wire_input_bytes": 3273,
+        "json_depth_scan_characters": 3273,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 528,
+        "rational_wire_checks": 1,
+        "max_rational_component_bits": 1,
+        "feasibility_rows_checked": 1,
+        "expression_nodes": 1
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "all_tied_optima_valid_bound",
+      "status": "PASS",
+      "wire_sha256": "b28c454eb145b0d7458c7655b4974ab5e2d884a1400ed6e5c288f5c69596d18c",
+      "wire_bytes": 1944,
+      "work": {
+        "wire_input_bytes": 1944,
+        "json_depth_scan_characters": 1979,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 608,
+        "rational_wire_checks": 3,
+        "max_rational_component_bits": 1,
+        "expression_nodes": 2,
+        "incumbent_rank_rows_checked": 1,
+        "unique_lookups": 27,
+        "node_rows_checked": 5,
+        "node_lookups": 77,
+        "applies_lookups": 30,
+        "terminal_equations_checked": 3,
+        "apply_rows_checked": 14,
+        "shannon_equations_checked": 4,
+        "expression_syntax_nodes": 4,
+        "expressions_lookups": 6,
+        "expression_rows_checked": 3,
+        "claims_checked": 1
+      },
+      "admitted": {
+        "nodes": 5,
+        "applies": 14,
+        "expressions": 3
+      },
+      "storage": {
+        "nodes": 5,
+        "applies": 14,
+        "expressions": 3,
+        "receipts": 1,
+        "retained_serialization_bytes": 2942,
+        "scope": "Full retained node/index/Boolean/fact/receipt tables and source/order binding; not native heap size."
+      }
+    },
+    {
+      "name": "tied_optimum_exposes_false_bound",
+      "status": "PASS",
+      "counterexample": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "before_constraint_withdrawal",
+      "status": "PASS",
+      "wire_sha256": "2bfda75e73032e06a0a6a1dd843ba5791d7b7f884c814de00f615c374aafcf16",
+      "wire_bytes": 1796,
+      "work": {
+        "wire_input_bytes": 1796,
+        "json_depth_scan_characters": 1822,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 512,
+        "rational_wire_checks": 3,
+        "max_rational_component_bits": 1,
+        "feasibility_rows_checked": 1,
+        "expression_nodes": 2,
+        "unique_lookups": 20,
+        "node_rows_checked": 4,
+        "node_lookups": 56,
+        "applies_lookups": 22,
+        "terminal_equations_checked": 3,
+        "apply_rows_checked": 10,
+        "shannon_equations_checked": 3,
+        "expression_syntax_nodes": 3,
+        "expressions_lookups": 5,
+        "expression_rows_checked": 2,
+        "claims_checked": 1
+      },
+      "admitted": {
+        "nodes": 4,
+        "applies": 10,
+        "expressions": 2
+      },
+      "storage": {
+        "nodes": 4,
+        "applies": 10,
+        "expressions": 2,
+        "receipts": 1,
+        "retained_serialization_bytes": 2753,
+        "scope": "Full retained node/index/Boolean/fact/receipt tables and source/order binding; not native heap size."
+      }
+    },
+    {
+      "name": "stale_guard_after_withdrawal",
+      "status": "PASS",
+      "rejection": "Missing previously checked applies fact.",
+      "wire_sha256": "3aa72ff19a17121a6c768f9665283a670fa911f93c1b37a38719ff6ff8cce38b",
+      "wire_bytes": 1774,
+      "work": {
+        "wire_input_bytes": 1774,
+        "json_depth_scan_characters": 1800,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 476,
+        "rational_wire_checks": 3,
+        "max_rational_component_bits": 1,
+        "unique_lookups": 19,
+        "node_rows_checked": 4,
+        "node_lookups": 56,
+        "applies_lookups": 19,
+        "terminal_equations_checked": 3,
+        "apply_rows_checked": 10,
+        "shannon_equations_checked": 3,
+        "expression_syntax_nodes": 3,
+        "expressions_lookups": 3,
+        "expression_rows_checked": 2
+      },
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "withdrawal_rechecked_delta",
+      "status": "PASS",
+      "wire_sha256": "1bbbe9f0a24e87026d2f12c992dc0eb673227d1c6de1e789c1309ce28da4bd8a",
+      "wire_bytes": 1605,
+      "work": {
+        "wire_input_bytes": 1605,
+        "json_depth_scan_characters": 1605,
+        "source_record_characters_compared": 909,
+        "current_record_characters_compared": 476,
+        "rational_wire_checks": 1,
+        "max_rational_component_bits": 1,
+        "node_lookups": 20,
+        "resident_chunk_lookups": 33,
+        "applies_lookups": 10,
+        "apply_rows_checked": 4,
+        "terminal_equations_checked": 1,
+        "unique_lookups": 6,
+        "shannon_equations_checked": 1,
+        "expressions_lookups": 1,
+        "claims_checked": 1
+      },
+      "admitted": {
+        "nodes": 4,
+        "applies": 14,
+        "expressions": 2
+      },
+      "storage": {
+        "nodes": 4,
+        "applies": 14,
+        "expressions": 2,
+        "receipts": 2,
+        "retained_serialization_bytes": 2884,
+        "scope": "Full retained node/index/Boolean/fact/receipt tables and source/order binding; not native heap size."
+      }
+    },
+    {
+      "name": "receipt_cap_257th_attempt",
+      "status": "PASS",
+      "rejection": "Resident receipt cap reached.",
+      "wire_sha256": "046325e5aebe5ef1a82912d16ddde4992293102ed6073ff034916a902bb99dd0",
+      "wire_bytes": 1551,
+      "work": {},
+      "unchanged_admitted_chunks": true
+    },
+    {
+      "name": "old_wire_after_explicit_reset",
+      "status": "PASS",
+      "rejection": "Stale or foreign epoch.",
+      "wire_sha256": "101d1fe759744641ae4d7a3a5aef0e4bfa0276d3386f573a3d0aad35aa636bc7",
+      "wire_bytes": 3394,
+      "work": {
+        "wire_input_bytes": 3394,
+        "json_depth_scan_characters": 3394,
+        "source_record_characters_compared": 909
+      },
+      "unchanged_admitted_chunks": true
+    }
+  ],
+  "error": null,
+  "principal_clock_credit_seconds": 0
+}

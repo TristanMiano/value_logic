@@ -1,0 +1,3077 @@
+[
+  {
+    "all_line_domains": {
+      "O-ADD-COLD": {
+        "constraints": [
+          {
+            "boundary": "-6011/11442",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "96108/313741",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2464720/2228549",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "811211/242731",
+            "kind": "upper",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-264961/357108",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "96108/313741",
+        "method": "O-ADD-COLD",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-2464720/2228549"
+      },
+      "O-ADD-PORTFOLIO": {
+        "constraints": [
+          {
+            "boundary": "-6011/11442",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-1292229/1466404",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-3564733/4322435",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "1255751/1183424",
+            "kind": "upper",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-50855/170427",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-PORTFOLIO",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-1292229/1466404"
+      },
+      "O-ADD-WARM": {
+        "constraints": [
+          {
+            "boundary": "96108/313741",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-1292229/1466404",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-2272504/2856031",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "2529741/1041934",
+            "kind": "upper",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-987099/443842",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-WARM",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-2272504/2856031"
+      },
+      "O-ENUM-RECEIVER": {
+        "constraints": [
+          {
+            "boundary": "-2464720/2228549",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-3564733/4322435",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-2272504/2856031",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-7331986/772163",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-3259603/3299873",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      },
+      "P-FRESH": {
+        "constraints": [
+          {
+            "boundary": "811211/242731",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "1255751/1183424",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "2529741/1041934",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-7331986/772163",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "1357461/842570",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "811211/242731",
+        "method": "P-FRESH",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-7331986/772163"
+      },
+      "P-REUSE": {
+        "constraints": [
+          {
+            "boundary": "-264961/357108",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-50855/170427",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-987099/443842",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-3259603/3299873",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "1357461/842570",
+            "kind": "upper",
+            "other": "P-FRESH"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "P-REUSE",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-987099/443842"
+      }
+    },
+    "coordinates": {
+      "O-ADD-COLD": {
+        "consumer": 3950002,
+        "fixed_nonconsumer": 2725000,
+        "unit_price_total": 6675002
+      },
+      "O-ADD-PORTFOLIO": {
+        "consumer": 6043888,
+        "fixed_nonconsumer": 3825013,
+        "unit_price_total": 9868901
+      },
+      "O-ADD-WARM": {
+        "consumer": 4577484,
+        "fixed_nonconsumer": 2532784,
+        "unit_price_total": 7110268
+      },
+      "O-ENUM-RECEIVER": {
+        "consumer": 1721453,
+        "fixed_nonconsumer": 260280,
+        "unit_price_total": 1981733
+      },
+      "P-FRESH": {
+        "consumer": 2493616,
+        "fixed_nonconsumer": 7592266,
+        "unit_price_total": 10085882
+      },
+      "P-REUSE": {
+        "consumer": 5021326,
+        "fixed_nonconsumer": 3519883,
+        "unit_price_total": 8541209
+      }
+    },
+    "independent_partition_check": "PASS",
+    "nonnegative_pairwise_crossings_plus_zero": [
+      "0",
+      "96108/313741",
+      "1255751/1183424",
+      "1357461/842570",
+      "2529741/1041934",
+      "811211/242731"
+    ],
+    "ordinary_coordinate_dominators_of_portfolio": [
+      {
+        "consumer_saving": 1071324,
+        "fixed_nonconsumer_saving": 794883,
+        "method": "O-ADD-COLD"
+      },
+      {
+        "consumer_saving": 443842,
+        "fixed_nonconsumer_saving": 987099,
+        "method": "O-ADD-WARM"
+      },
+      {
+        "consumer_saving": 3299873,
+        "fixed_nonconsumer_saving": 3259603,
+        "method": "O-ENUM-RECEIVER"
+      }
+    ],
+    "partition_checks": [
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "260280",
+        "rho": "0"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "164383209942/313741",
+        "rho": "48054/313741"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "247105912404/313741",
+        "rho": "96108/313741"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "1067289113584058239/742577258368",
+        "rho": "507717088283/742577258368"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "2469737924923/1183424",
+        "rho": "1255751/1183424"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "2552944165001557351/997117559680",
+        "rho": "1332255023267/997117559680"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "2556109430433/842570",
+        "rho": "1357461/842570"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "820130881478242929/219475582595",
+        "rho": "443233580493/219475582595"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "4626024815193/1041934",
+        "rho": "2529741/1041934"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "2643727792102796725/505819363508",
+        "rho": "1459274884745/505819363508"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "1459639634263/242731",
+        "rho": "811211/242731"
+      },
+      {
+        "kind": "unbounded_tail",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "1877489642406/242731",
+        "rho": "1053942/242731"
+      }
+    ],
+    "portfolio_ever_minimizes_including_ties": false,
+    "recipient": "fresh",
+    "stream": "complementary_k3_n5",
+    "winning_intervals": [
+      {
+        "constraints": [
+          {
+            "boundary": "-2464720/2228549",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-3564733/4322435",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-2272504/2856031",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-7331986/772163",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-3259603/3299873",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      }
+    ]
+  },
+  {
+    "all_line_domains": {
+      "O-ADD-COLD": {
+        "constraints": [
+          {
+            "boundary": "524383/476667",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-324678/641695",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2464788/2228549",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "4867179/1456406",
+            "kind": "upper",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "773911/1124001",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-COLD",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-2464788/2228549"
+      },
+      "O-ADD-PORTFOLIO": {
+        "constraints": [
+          {
+            "boundary": "524383/476667",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-849061/165028",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-3513554/1275215",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "3818413/503072",
+            "kind": "upper",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-39265/24381",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "524383/476667",
+        "method": "O-ADD-PORTFOLIO",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-849061/165028"
+      },
+      "O-ADD-WARM": {
+        "constraints": [
+          {
+            "boundary": "-324678/641695",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-849061/165028",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-605144/315053",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "1838845/57672",
+            "kind": "upper",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-1423267/159389",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-WARM",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-605144/315053"
+      },
+      "O-ENUM-RECEIVER": {
+        "constraints": [
+          {
+            "boundary": "-2464788/2228549",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-3513554/1275215",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-605144/315053",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2443989/257381",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-3238699/1104548",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      },
+      "P-FRESH": {
+        "constraints": [
+          {
+            "boundary": "4867179/1456406",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "3818413/503072",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "1838845/57672",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2443989/257381",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "4093268/332405",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "1838845/57672",
+        "method": "P-FRESH",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-2443989/257381"
+      },
+      "P-REUSE": {
+        "constraints": [
+          {
+            "boundary": "773911/1124001",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-39265/24381",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-1423267/159389",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-3238699/1104548",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "4093268/332405",
+            "kind": "upper",
+            "other": "P-FRESH"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "773911/1124001",
+        "method": "P-REUSE",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-1423267/159389"
+      }
+    },
+    "coordinates": {
+      "O-ADD-COLD": {
+        "consumer": 3950002,
+        "fixed_nonconsumer": 2725080,
+        "unit_price_total": 6675082
+      },
+      "O-ADD-PORTFOLIO": {
+        "consumer": 2996668,
+        "fixed_nonconsumer": 3773846,
+        "unit_price_total": 6770514
+      },
+      "O-ADD-WARM": {
+        "consumer": 2666612,
+        "fixed_nonconsumer": 2075724,
+        "unit_price_total": 4742336
+      },
+      "O-ENUM-RECEIVER": {
+        "consumer": 1721453,
+        "fixed_nonconsumer": 260292,
+        "unit_price_total": 1981745
+      },
+      "P-FRESH": {
+        "consumer": 2493596,
+        "fixed_nonconsumer": 7592259,
+        "unit_price_total": 10085855
+      },
+      "P-REUSE": {
+        "consumer": 2826001,
+        "fixed_nonconsumer": 3498991,
+        "unit_price_total": 6324992
+      }
+    },
+    "independent_partition_check": "PASS",
+    "nonnegative_pairwise_crossings_plus_zero": [
+      "0",
+      "773911/1124001",
+      "524383/476667",
+      "4867179/1456406",
+      "3818413/503072",
+      "4093268/332405",
+      "1838845/57672"
+    ],
+    "ordinary_coordinate_dominators_of_portfolio": [
+      {
+        "consumer_saving": 159389,
+        "fixed_nonconsumer_saving": 1423267,
+        "method": "O-ADD-WARM"
+      },
+      {
+        "consumer_saving": 1104548,
+        "fixed_nonconsumer_saving": 3238699,
+        "method": "O-ENUM-RECEIVER"
+      }
+    ],
+    "partition_checks": [
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "260292",
+        "rho": "0"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "1917388349267/2248002",
+        "rho": "773911/2248002"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "1624819880975/1124001",
+        "rho": "773911/1124001"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "35714670904696622/19843488321",
+        "rho": "17746386130/19843488321"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "1026773295263/476667",
+        "rho": "524383/476667"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "5669910484412301991/1388441357604",
+        "rho": "3083738159891/1388441357604"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "8757710721639/1456406",
+        "rho": "4867179/1456406"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "7084871956847067443/732677079232",
+        "rho": "4004850538783/732677079232"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "6704164131113/503072",
+        "rho": "3818413/503072"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "5816855338997136573/334447296320",
+        "rho": "3328468092561/334447296320"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "7132890840664/332405",
+        "rho": "4093268/332405"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "1468581120034575853/38340922320",
+        "rho": "847308224321/38340922320"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "3180496802009/57672",
+        "rho": "1838845/57672"
+      },
+      {
+        "kind": "unbounded_tail",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "3279776439425/57672",
+        "rho": "1896517/57672"
+      }
+    ],
+    "portfolio_ever_minimizes_including_ties": false,
+    "recipient": "resident",
+    "stream": "complementary_k3_n5",
+    "winning_intervals": [
+      {
+        "constraints": [
+          {
+            "boundary": "-2464788/2228549",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-3513554/1275215",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-605144/315053",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2443989/257381",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-3238699/1104548",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      }
+    ]
+  },
+  {
+    "all_line_domains": {
+      "O-ADD-COLD": {
+        "constraints": [
+          {
+            "boundary": "-111601/287818",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "368977/888978",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-412096/107511",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-26886293/952820",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-1936915/3726054",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "368977/888978",
+        "method": "O-ADD-COLD",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-412096/107511"
+      },
+      "O-ADD-PORTFOLIO": {
+        "constraints": [
+          {
+            "boundary": "-111601/287818",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-686693/850692",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-523697/395329",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "12940942/818771",
+            "kind": "upper",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-466253/567846",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-PORTFOLIO",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-523697/395329"
+      },
+      "O-ADD-WARM": {
+        "constraints": [
+          {
+            "boundary": "368977/888978",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-686693/850692",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-3339887/1856577",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-13627635/31921",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-576473/709269",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-WARM",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-3339887/1856577"
+      },
+      "O-ENUM-RECEIVER": {
+        "constraints": [
+          {
+            "boundary": "-412096/107511",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-523697/395329",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-3339887/1856577",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-30595157/1920419",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-5645779/4693653",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      },
+      "P-FRESH": {
+        "constraints": [
+          {
+            "boundary": "-26886293/952820",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "12940942/818771",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-13627635/31921",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-30595157/1920419",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "12474689/1386617",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "12940942/818771",
+        "method": "P-FRESH",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-13627635/31921"
+      },
+      "P-REUSE": {
+        "constraints": [
+          {
+            "boundary": "-1936915/3726054",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-466253/567846",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-576473/709269",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-5645779/4693653",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "12474689/1386617",
+            "kind": "upper",
+            "other": "P-FRESH"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "P-REUSE",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-5645779/4693653"
+      }
+    },
+    "coordinates": {
+      "O-ADD-COLD": {
+        "consumer": 5640012,
+        "fixed_nonconsumer": 4054104,
+        "unit_price_total": 9694116
+      },
+      "O-ADD-PORTFOLIO": {
+        "consumer": 8230374,
+        "fixed_nonconsumer": 5058513,
+        "unit_price_total": 13288887
+      },
+      "O-ADD-WARM": {
+        "consumer": 6528990,
+        "fixed_nonconsumer": 3685127,
+        "unit_price_total": 10214117
+      },
+      "O-ENUM-RECEIVER": {
+        "consumer": 4672413,
+        "fixed_nonconsumer": 345240,
+        "unit_price_total": 5017653
+      },
+      "P-FRESH": {
+        "consumer": 6592832,
+        "fixed_nonconsumer": 30940397,
+        "unit_price_total": 37533229
+      },
+      "P-REUSE": {
+        "consumer": 9366066,
+        "fixed_nonconsumer": 5991019,
+        "unit_price_total": 15357085
+      }
+    },
+    "independent_partition_check": "PASS",
+    "nonnegative_pairwise_crossings_plus_zero": [
+      "0",
+      "368977/888978",
+      "12474689/1386617",
+      "12940942/818771"
+    ],
+    "ordinary_coordinate_dominators_of_portfolio": [
+      {
+        "consumer_saving": 3726054,
+        "fixed_nonconsumer_saving": 1936915,
+        "method": "O-ADD-COLD"
+      },
+      {
+        "consumer_saving": 2837076,
+        "fixed_nonconsumer_saving": 2305892,
+        "method": "O-ADD-WARM"
+      },
+      {
+        "consumer_saving": 4693653,
+        "fixed_nonconsumer_saving": 5645779,
+        "method": "O-ENUM-RECEIVER"
+      },
+      {
+        "consumer_saving": 1135692,
+        "fixed_nonconsumer_saving": 932506,
+        "method": "O-ADD-PORTFOLIO"
+      }
+    ],
+    "partition_checks": [
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "345240",
+        "rho": "0"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "779278153647/592652",
+        "rho": "368977/1777956"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "676974565407/296326",
+        "rho": "368977/888978"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "18352483984816199781/821781338284",
+        "rho": "11601353858651/2465344014852"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "58765614707637/1386617",
+        "rho": "12474689/1386617"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "132349926708791964189/2270643575414",
+        "rho": "28158043760433/2270643575414"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "60748098133086/818771",
+        "rho": "12940942/818771"
+      },
+      {
+        "kind": "unbounded_tail",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "64573734397509/818771",
+        "rho": "13759713/818771"
+      }
+    ],
+    "portfolio_ever_minimizes_including_ties": false,
+    "recipient": "fresh",
+    "stream": "complementary_k5_n7",
+    "winning_intervals": [
+      {
+        "constraints": [
+          {
+            "boundary": "-412096/107511",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-523697/395329",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-3339887/1856577",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-30595157/1920419",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-5645779/4693653",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      }
+    ]
+  },
+  {
+    "all_line_domains": {
+      "O-ADD-COLD": {
+        "constraints": [
+          {
+            "boundary": "936125/1886053",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-1152769/2203993",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-412096/107511",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-13443137/476400",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "1906131/1697011",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-COLD",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-412096/107511"
+      },
+      "O-ADD-PORTFOLIO": {
+        "constraints": [
+          {
+            "boundary": "936125/1886053",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-348149/52990",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "4644989/918454",
+            "kind": "lower",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-25950149/2838853",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-485003/94521",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "4644989/918454",
+        "method": "O-ADD-PORTFOLIO",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-348149/52990"
+      },
+      "O-ADD-WARM": {
+        "constraints": [
+          {
+            "boundary": "-1152769/2203993",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-348149/52990",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "2556095/1236394",
+            "kind": "lower",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-28039043/3156793",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-1529450/253491",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "2556095/1236394",
+        "method": "O-ADD-WARM",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      },
+      "O-ENUM-RECEIVER": {
+        "constraints": [
+          {
+            "boundary": "-412096/107511",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "4644989/918454",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "2556095/1236394",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-30595138/1920399",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "5614995/729412",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": "2556095/1236394"
+      },
+      "P-FRESH": {
+        "constraints": [
+          {
+            "boundary": "-13443137/476400",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-25950149/2838853",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-28039043/3156793",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-30595138/1920399",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-24980143/2649811",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "P-FRESH",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-13443137/476400"
+      },
+      "P-REUSE": {
+        "constraints": [
+          {
+            "boundary": "1906131/1697011",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-485003/94521",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-1529450/253491",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "5614995/729412",
+            "kind": "lower",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-24980143/2649811",
+            "kind": "lower",
+            "other": "P-FRESH"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "5614995/729412",
+        "method": "P-REUSE",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-1529450/253491"
+      }
+    },
+    "coordinates": {
+      "O-ADD-COLD": {
+        "consumer": 5640012,
+        "fixed_nonconsumer": 4054116,
+        "unit_price_total": 9694128
+      },
+      "O-ADD-PORTFOLIO": {
+        "consumer": 3753959,
+        "fixed_nonconsumer": 4990241,
+        "unit_price_total": 8744200
+      },
+      "O-ADD-WARM": {
+        "consumer": 3436019,
+        "fixed_nonconsumer": 2901347,
+        "unit_price_total": 6337366
+      },
+      "O-ENUM-RECEIVER": {
+        "consumer": 4672413,
+        "fixed_nonconsumer": 345252,
+        "unit_price_total": 5017665
+      },
+      "P-FRESH": {
+        "consumer": 6592812,
+        "fixed_nonconsumer": 30940390,
+        "unit_price_total": 37533202
+      },
+      "P-REUSE": {
+        "consumer": 3943001,
+        "fixed_nonconsumer": 5960247,
+        "unit_price_total": 9903248
+      }
+    },
+    "independent_partition_check": "PASS",
+    "nonnegative_pairwise_crossings_plus_zero": [
+      "0",
+      "936125/1886053",
+      "1906131/1697011",
+      "2556095/1236394",
+      "4644989/918454",
+      "5614995/729412"
+    ],
+    "ordinary_coordinate_dominators_of_portfolio": [
+      {
+        "consumer_saving": 506982,
+        "fixed_nonconsumer_saving": 3058900,
+        "method": "O-ADD-WARM"
+      },
+      {
+        "consumer_saving": 189042,
+        "fixed_nonconsumer_saving": 970006,
+        "method": "O-ADD-PORTFOLIO"
+      }
+    ],
+    "partition_checks": [
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "345252",
+        "rho": "0"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "5676289760337/3772106",
+        "rho": "936125/3772106"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "5025126189981/1886053",
+        "rho": "936125/1886053"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "13215175178417254083/3200652687583",
+        "rho": "2591839256659/3200652687583"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "9492127705875/1697011",
+        "rho": "1906131/1697011"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "32728034130230239503/4196348436668",
+        "rho": "6694450263659/4196348436668"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ADD-WARM",
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "12369999008523/1236394",
+        "rho": "2556095/1236394"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ADD-WARM"
+        ],
+        "minimum_cost": "8597285815074465267/567785507438",
+        "rho": "2022673051699/567785507438"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ADD-WARM"
+        ],
+        "minimum_cost": "18625024216329/918454",
+        "rho": "4644989/918454"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ADD-WARM"
+        ],
+        "minimum_cost": "16624481671586146537/669931369048",
+        "rho": "4272612667099/669931369048"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ADD-WARM"
+        ],
+        "minimum_cost": "21409506822869/729412",
+        "rho": "5614995/729412"
+      },
+      {
+        "kind": "unbounded_tail",
+        "minimizers": [
+          "O-ADD-WARM"
+        ],
+        "minimum_cost": "23915780313697/729412",
+        "rho": "6344407/729412"
+      }
+    ],
+    "portfolio_ever_minimizes_including_ties": false,
+    "recipient": "resident",
+    "stream": "complementary_k5_n7",
+    "winning_intervals": [
+      {
+        "constraints": [
+          {
+            "boundary": "-412096/107511",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "4644989/918454",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "2556095/1236394",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-30595138/1920399",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "5614995/729412",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": "2556095/1236394"
+      },
+      {
+        "constraints": [
+          {
+            "boundary": "-1152769/2203993",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-348149/52990",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "2556095/1236394",
+            "kind": "lower",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-28039043/3156793",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-1529450/253491",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "2556095/1236394",
+        "method": "O-ADD-WARM",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      }
+    ]
+  },
+  {
+    "all_line_domains": {
+      "O-ADD-COLD": {
+        "constraints": [
+          {
+            "boundary": "-263443/589276",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-56935/228283",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-613603/767396",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-263843/589276",
+            "kind": "upper",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-263515/589276",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-COLD",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-613603/767396"
+      },
+      "O-ADD-PORTFOLIO": {
+        "constraints": [
+          {
+            "boundary": "-263443/589276",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-320378/817559",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-8754/4453",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "kind": "parallel",
+            "other": "P-FRESH",
+            "rhs": -400,
+            "satisfied": false
+          },
+          {
+            "kind": "parallel",
+            "other": "P-REUSE",
+            "rhs": -72,
+            "satisfied": false
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-PORTFOLIO",
+        "nonempty": false,
+        "parallel_blockers": [
+          "P-FRESH",
+          "P-REUSE"
+        ],
+        "upper": "-8754/4453"
+      },
+      "O-ADD-WARM": {
+        "constraints": [
+          {
+            "boundary": "-56935/228283",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-320378/817559",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-670538/995679",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-320778/817559",
+            "kind": "upper",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-320450/817559",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-WARM",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-670538/995679"
+      },
+      "O-ENUM-RECEIVER": {
+        "constraints": [
+          {
+            "boundary": "-613603/767396",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-8754/4453",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-670538/995679",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-8744/4453",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-43761/22265",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      },
+      "P-FRESH": {
+        "constraints": [
+          {
+            "boundary": "-263843/589276",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "kind": "parallel",
+            "other": "O-ADD-PORTFOLIO",
+            "rhs": 400,
+            "satisfied": true
+          },
+          {
+            "boundary": "-320778/817559",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-8744/4453",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "kind": "parallel",
+            "other": "P-REUSE",
+            "rhs": 328,
+            "satisfied": true
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "P-FRESH",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-8744/4453"
+      },
+      "P-REUSE": {
+        "constraints": [
+          {
+            "boundary": "-263515/589276",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "kind": "parallel",
+            "other": "O-ADD-PORTFOLIO",
+            "rhs": 72,
+            "satisfied": true
+          },
+          {
+            "boundary": "-320450/817559",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-43761/22265",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "kind": "parallel",
+            "other": "P-FRESH",
+            "rhs": -328,
+            "satisfied": false
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "P-REUSE",
+        "nonempty": false,
+        "parallel_blockers": [
+          "P-FRESH"
+        ],
+        "upper": "-43761/22265"
+      }
+    },
+    "coordinates": {
+      "O-ADD-COLD": {
+        "consumer": 1546275,
+        "fixed_nonconsumer": 677381,
+        "unit_price_total": 2223656
+      },
+      "O-ADD-PORTFOLIO": {
+        "consumer": 956999,
+        "fixed_nonconsumer": 413938,
+        "unit_price_total": 1370937
+      },
+      "O-ADD-WARM": {
+        "consumer": 1774558,
+        "fixed_nonconsumer": 734316,
+        "unit_price_total": 2508874
+      },
+      "O-ENUM-RECEIVER": {
+        "consumer": 778879,
+        "fixed_nonconsumer": 63778,
+        "unit_price_total": 842657
+      },
+      "P-FRESH": {
+        "consumer": 956999,
+        "fixed_nonconsumer": 413538,
+        "unit_price_total": 1370537
+      },
+      "P-REUSE": {
+        "consumer": 956999,
+        "fixed_nonconsumer": 413866,
+        "unit_price_total": 1370865
+      }
+    },
+    "independent_partition_check": "PASS",
+    "nonnegative_pairwise_crossings_plus_zero": [
+      "0"
+    ],
+    "ordinary_coordinate_dominators_of_portfolio": [
+      {
+        "consumer_saving": 178120,
+        "fixed_nonconsumer_saving": 350088,
+        "method": "O-ENUM-RECEIVER"
+      }
+    ],
+    "partition_checks": [
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "63778",
+        "rho": "0"
+      },
+      {
+        "kind": "unbounded_tail",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "842657",
+        "rho": "1"
+      }
+    ],
+    "portfolio_ever_minimizes_including_ties": false,
+    "recipient": "fresh",
+    "stream": "constant_n3",
+    "winning_intervals": [
+      {
+        "constraints": [
+          {
+            "boundary": "-613603/767396",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-8754/4453",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-670538/995679",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-8744/4453",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-43761/22265",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      }
+    ]
+  },
+  {
+    "all_line_domains": {
+      "O-ADD-COLD": {
+        "constraints": [
+          {
+            "boundary": "-131953/294648",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "9265/140789",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-613807/767396",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-44011/98216",
+            "kind": "upper",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-263963/589296",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-COLD",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-613807/767396"
+      },
+      "O-ADD-PORTFOLIO": {
+        "constraints": [
+          {
+            "boundary": "-131953/294648",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-273171/448507",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-349901/178100",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "kind": "parallel",
+            "other": "P-FRESH",
+            "rhs": -160,
+            "satisfied": false
+          },
+          {
+            "kind": "parallel",
+            "other": "P-REUSE",
+            "rhs": -57,
+            "satisfied": false
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-PORTFOLIO",
+        "nonempty": false,
+        "parallel_blockers": [
+          "P-FRESH",
+          "P-REUSE"
+        ],
+        "upper": "-349901/178100"
+      },
+      "O-ADD-WARM": {
+        "constraints": [
+          {
+            "boundary": "9265/140789",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-273171/448507",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-623072/626607",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-273331/448507",
+            "kind": "upper",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-273228/448507",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "9265/140789",
+        "method": "O-ADD-WARM",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-623072/626607"
+      },
+      "O-ENUM-RECEIVER": {
+        "constraints": [
+          {
+            "boundary": "-613807/767396",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-349901/178100",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-623072/626607",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-349741/178100",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-87461/44525",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      },
+      "P-FRESH": {
+        "constraints": [
+          {
+            "boundary": "-44011/98216",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "kind": "parallel",
+            "other": "O-ADD-PORTFOLIO",
+            "rhs": 160,
+            "satisfied": true
+          },
+          {
+            "boundary": "-273331/448507",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-349741/178100",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "kind": "parallel",
+            "other": "P-REUSE",
+            "rhs": 103,
+            "satisfied": true
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "P-FRESH",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-349741/178100"
+      },
+      "P-REUSE": {
+        "constraints": [
+          {
+            "boundary": "-263963/589296",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "kind": "parallel",
+            "other": "O-ADD-PORTFOLIO",
+            "rhs": 57,
+            "satisfied": true
+          },
+          {
+            "boundary": "-273228/448507",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-87461/44525",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "kind": "parallel",
+            "other": "P-FRESH",
+            "rhs": -103,
+            "satisfied": false
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "P-REUSE",
+        "nonempty": false,
+        "parallel_blockers": [
+          "P-FRESH"
+        ],
+        "upper": "-87461/44525"
+      }
+    },
+    "coordinates": {
+      "O-ADD-COLD": {
+        "consumer": 1546275,
+        "fixed_nonconsumer": 677597,
+        "unit_price_total": 2223872
+      },
+      "O-ADD-PORTFOLIO": {
+        "consumer": 956979,
+        "fixed_nonconsumer": 413691,
+        "unit_price_total": 1370670
+      },
+      "O-ADD-WARM": {
+        "consumer": 1405486,
+        "fixed_nonconsumer": 686862,
+        "unit_price_total": 2092348
+      },
+      "O-ENUM-RECEIVER": {
+        "consumer": 778879,
+        "fixed_nonconsumer": 63790,
+        "unit_price_total": 842669
+      },
+      "P-FRESH": {
+        "consumer": 956979,
+        "fixed_nonconsumer": 413531,
+        "unit_price_total": 1370510
+      },
+      "P-REUSE": {
+        "consumer": 956979,
+        "fixed_nonconsumer": 413634,
+        "unit_price_total": 1370613
+      }
+    },
+    "independent_partition_check": "PASS",
+    "nonnegative_pairwise_crossings_plus_zero": [
+      "0",
+      "9265/140789"
+    ],
+    "ordinary_coordinate_dominators_of_portfolio": [
+      {
+        "consumer_saving": 178100,
+        "fixed_nonconsumer_saving": 349844,
+        "method": "O-ENUM-RECEIVER"
+      }
+    ],
+    "partition_checks": [
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "63790",
+        "rho": "0"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "25178174555/281578",
+        "rho": "9265/281578"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "16197244245/140789",
+        "rho": "9265/140789"
+      },
+      {
+        "kind": "unbounded_tail",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "125854839776/140789",
+        "rho": "150054/140789"
+      }
+    ],
+    "portfolio_ever_minimizes_including_ties": false,
+    "recipient": "resident",
+    "stream": "constant_n3",
+    "winning_intervals": [
+      {
+        "constraints": [
+          {
+            "boundary": "-613807/767396",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-349901/178100",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-623072/626607",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-349741/178100",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-87461/44525",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      }
+    ]
+  },
+  {
+    "all_line_domains": {
+      "O-ADD-COLD": {
+        "constraints": [
+          {
+            "boundary": "235519/300727",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "601083/225481",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2970295/2704377",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-2788486/320605",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "106823/1953334",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "601083/225481",
+        "method": "O-ADD-COLD",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-2970295/2704377"
+      },
+      "O-ADD-PORTFOLIO": {
+        "constraints": [
+          {
+            "boundary": "235519/300727",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "340993/977427",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2028219/3907285",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-8836496/360361",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-835253/750426",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-PORTFOLIO",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-2028219/3907285"
+      },
+      "O-ADD-WARM": {
+        "constraints": [
+          {
+            "boundary": "601083/225481",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "340993/977427",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-1184606/1464929",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-17331999/1698149",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-494260/1727853",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "340993/977427",
+        "method": "O-ADD-WARM",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-1184606/1464929"
+      },
+      "O-ENUM-RECEIVER": {
+        "constraints": [
+          {
+            "boundary": "-2970295/2704377",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-2028219/3907285",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-1184606/1464929",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-19701211/4628007",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-2863472/4657711",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      },
+      "P-FRESH": {
+        "constraints": [
+          {
+            "boundary": "-2788486/320605",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-8836496/360361",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-17331999/1698149",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-19701211/4628007",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "16837739/29704",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "16837739/29704",
+        "method": "P-FRESH",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-8836496/360361"
+      },
+      "P-REUSE": {
+        "constraints": [
+          {
+            "boundary": "106823/1953334",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-835253/750426",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-494260/1727853",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2863472/4657711",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "16837739/29704",
+            "kind": "upper",
+            "other": "P-FRESH"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "P-REUSE",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-835253/750426"
+      }
+    },
+    "coordinates": {
+      "O-ADD-COLD": {
+        "consumer": 4678975,
+        "fixed_nonconsumer": 3173380,
+        "unit_price_total": 7852355
+      },
+      "O-ADD-PORTFOLIO": {
+        "consumer": 5881883,
+        "fixed_nonconsumer": 2231304,
+        "unit_price_total": 8113187
+      },
+      "O-ADD-WARM": {
+        "consumer": 4904456,
+        "fixed_nonconsumer": 2572297,
+        "unit_price_total": 7476753
+      },
+      "O-ENUM-RECEIVER": {
+        "consumer": 1974598,
+        "fixed_nonconsumer": 203085,
+        "unit_price_total": 2177683
+      },
+      "P-FRESH": {
+        "consumer": 6602605,
+        "fixed_nonconsumer": 19904296,
+        "unit_price_total": 26506901
+      },
+      "P-REUSE": {
+        "consumer": 6632309,
+        "fixed_nonconsumer": 3066557,
+        "unit_price_total": 9698866
+      }
+    },
+    "independent_partition_check": "PASS",
+    "nonnegative_pairwise_crossings_plus_zero": [
+      "0",
+      "106823/1953334",
+      "340993/977427",
+      "235519/300727",
+      "601083/225481",
+      "16837739/29704"
+    ],
+    "ordinary_coordinate_dominators_of_portfolio": [
+      {
+        "consumer_saving": 1727853,
+        "fixed_nonconsumer_saving": 494260,
+        "method": "O-ADD-WARM"
+      },
+      {
+        "consumer_saving": 4657711,
+        "fixed_nonconsumer_saving": 2863472,
+        "method": "O-ENUM-RECEIVER"
+      },
+      {
+        "consumer_saving": 750426,
+        "fixed_nonconsumer_saving": 835253,
+        "method": "O-ADD-PORTFOLIO"
+      }
+    ],
+    "partition_checks": [
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "203085",
+        "rho": "0"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "502159076467/1953334",
+        "rho": "106823/3906668"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "303812658772/976667",
+        "rho": "106823/1953334"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "1148437264320282347/1909241391618",
+        "rho": "770484905083/3818482783236"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "871824858109/977427",
+        "rho": "340993/977427"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "388216732437902141/293938689429",
+        "rho": "166374215762/293938689429"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "526128489157/300727",
+        "rho": "235519/300727"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "244667436196966415/67808224687",
+        "rho": "116933473490/67808224687"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "1232689098519/225481",
+        "rho": "601083/225481"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "3767357733416807449/6697687624",
+        "rho": "3814444796891/13395375248"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "16626899095381/14852",
+        "rho": "16837739/29704"
+      },
+      {
+        "kind": "unbounded_tail",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "16656225824877/14852",
+        "rho": "16867443/29704"
+      }
+    ],
+    "portfolio_ever_minimizes_including_ties": false,
+    "recipient": "fresh",
+    "stream": "parity_reassociation_n6",
+    "winning_intervals": [
+      {
+        "constraints": [
+          {
+            "boundary": "-2970295/2704377",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-2028219/3907285",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-1184606/1464929",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-19701211/4628007",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-2863472/4657711",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      }
+    ]
+  },
+  {
+    "all_line_domains": {
+      "O-ADD-COLD": {
+        "constraints": [
+          {
+            "boundary": "-24275/56052",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-1210867/2236291",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2970295/2704377",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-16730897/1923610",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-127302/2173181",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-COLD",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-2970295/2704377"
+      },
+      "O-ADD-PORTFOLIO": {
+        "constraints": [
+          {
+            "boundary": "-24275/56052",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "16584/4757",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-131668/27083",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-8863086/2110871",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-867973/124951",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "16584/4757",
+        "method": "O-ADD-PORTFOLIO",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-131668/27083"
+      },
+      "O-ADD-WARM": {
+        "constraints": [
+          {
+            "boundary": "-1210867/2236291",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "16584/4757",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-879714/234043",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-437604/101461",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-216713/12622",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ADD-WARM",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-879714/234043"
+      },
+      "O-ENUM-RECEIVER": {
+        "constraints": [
+          {
+            "boundary": "-2970295/2704377",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-131668/27083",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-879714/234043",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2814456/661141",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-2842993/531196",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      },
+      "P-FRESH": {
+        "constraints": [
+          {
+            "boundary": "-16730897/1923610",
+            "kind": "upper",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-8863086/2110871",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-437604/101461",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2814456/661141",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-16858199/4096791",
+            "kind": "upper",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "P-FRESH",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-16730897/1923610"
+      },
+      "P-REUSE": {
+        "constraints": [
+          {
+            "boundary": "-127302/2173181",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-867973/124951",
+            "kind": "upper",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-216713/12622",
+            "kind": "upper",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2842993/531196",
+            "kind": "upper",
+            "other": "O-ENUM-RECEIVER"
+          },
+          {
+            "boundary": "-16858199/4096791",
+            "kind": "lower",
+            "other": "P-FRESH"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "P-REUSE",
+        "nonempty": false,
+        "parallel_blockers": [],
+        "upper": "-216713/12622"
+      }
+    },
+    "coordinates": {
+      "O-ADD-COLD": {
+        "consumer": 4678975,
+        "fixed_nonconsumer": 3173392,
+        "unit_price_total": 7852367
+      },
+      "O-ADD-PORTFOLIO": {
+        "consumer": 2380843,
+        "fixed_nonconsumer": 2178117,
+        "unit_price_total": 4558960
+      },
+      "O-ADD-WARM": {
+        "consumer": 2442684,
+        "fixed_nonconsumer": 1962525,
+        "unit_price_total": 4405209
+      },
+      "O-ENUM-RECEIVER": {
+        "consumer": 1974598,
+        "fixed_nonconsumer": 203097,
+        "unit_price_total": 2177695
+      },
+      "P-FRESH": {
+        "consumer": 6602585,
+        "fixed_nonconsumer": 19904289,
+        "unit_price_total": 26506874
+      },
+      "P-REUSE": {
+        "consumer": 2505794,
+        "fixed_nonconsumer": 3046090,
+        "unit_price_total": 5551884
+      }
+    },
+    "independent_partition_check": "PASS",
+    "nonnegative_pairwise_crossings_plus_zero": [
+      "0",
+      "16584/4757"
+    ],
+    "ordinary_coordinate_dominators_of_portfolio": [
+      {
+        "consumer_saving": 63110,
+        "fixed_nonconsumer_saving": 1083565,
+        "method": "O-ADD-WARM"
+      },
+      {
+        "consumer_saving": 531196,
+        "fixed_nonconsumer_saving": 2842993,
+        "method": "O-ENUM-RECEIVER"
+      },
+      {
+        "consumer_saving": 124951,
+        "fixed_nonconsumer_saving": 867973,
+        "method": "O-ADD-PORTFOLIO"
+      }
+    ],
+    "partition_checks": [
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "203097",
+        "rho": "0"
+      },
+      {
+        "kind": "between_crossings",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "17339499045/4757",
+        "rho": "8292/4757"
+      },
+      {
+        "kind": "crossing_or_zero",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "33712865661/4757",
+        "rho": "16584/4757"
+      },
+      {
+        "kind": "unbounded_tail",
+        "minimizers": [
+          "O-ENUM-RECEIVER"
+        ],
+        "minimum_cost": "43106028347/4757",
+        "rho": "21341/4757"
+      }
+    ],
+    "portfolio_ever_minimizes_including_ties": false,
+    "recipient": "resident",
+    "stream": "parity_reassociation_n6",
+    "winning_intervals": [
+      {
+        "constraints": [
+          {
+            "boundary": "-2970295/2704377",
+            "kind": "lower",
+            "other": "O-ADD-COLD"
+          },
+          {
+            "boundary": "-131668/27083",
+            "kind": "lower",
+            "other": "O-ADD-PORTFOLIO"
+          },
+          {
+            "boundary": "-879714/234043",
+            "kind": "lower",
+            "other": "O-ADD-WARM"
+          },
+          {
+            "boundary": "-2814456/661141",
+            "kind": "lower",
+            "other": "P-FRESH"
+          },
+          {
+            "boundary": "-2842993/531196",
+            "kind": "lower",
+            "other": "P-REUSE"
+          }
+        ],
+        "endpoints_closed": true,
+        "lower": "0",
+        "method": "O-ENUM-RECEIVER",
+        "nonempty": true,
+        "parallel_blockers": [],
+        "upper": null
+      }
+    ]
+  }
+]

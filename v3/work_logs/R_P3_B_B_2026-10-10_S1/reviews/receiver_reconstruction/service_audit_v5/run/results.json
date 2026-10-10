@@ -1,0 +1,440 @@
+{
+  "capacity_interpretation": "Nonrefundable prepaid installation/hash/length capacity. The invoice does not assert every capacity byte was actually read or hashed on a failed attempt.",
+  "diagnostic_sha256": "6ddde2ae7803922655fbbbc79aea07519f8bd9fa0cd12d6f85b584258ea16955",
+  "exact_source_file_count": 8,
+  "exact_source_record_ascii_bytes": 1199,
+  "exact_source_total_bytes": 197956,
+  "failure_terminal_reserve_units": 1024,
+  "failure_terminal_units": 113,
+  "groups": [
+    {
+      "error": null,
+      "expected_source_record_artifact": {
+        "bytes": 1488,
+        "sha256": "5750de16f8d0f94a111fdeb51d3355ed3e28fbda6938aa31ccafd0aba8df2564"
+      },
+      "expected_source_record_ascii_bytes": 1199,
+      "expected_source_record_file": "exact_success_expected_source.json",
+      "failure_payload": null,
+      "invoice": {
+        "budget": 134217728,
+        "by_stage": {
+          "common_source": {
+            "bounded_native_c_call_events": 427,
+            "observed_python_opcode_events": 33447,
+            "source_hash_bytes_prepaid": 197956,
+            "source_length_probe_bytes_prepaid": 8,
+            "source_program_bytes_prepaid": 197956,
+            "source_record_bytes": 1199
+          },
+          "coordination": {
+            "observed_python_opcode_events": 21
+          }
+        },
+        "consumer_budget": null,
+        "consumer_units": 430993,
+        "failure": null,
+        "failure_terminal_reserve": 1024,
+        "instrumentation_included": false,
+        "max_retained_serialized_bytes": 0,
+        "max_serialized_object_bytes": 1199,
+        "physical_cpu_or_heap_bound_claimed": false,
+        "retained_proxy_bytes": {},
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 431014
+      },
+      "name": "exact_success",
+      "outcome": "ENROLLED",
+      "prepaid_capacities": {
+        "hash_bytes": 197956,
+        "length_probe_bytes": 8,
+        "program_bytes": 197956
+      },
+      "prepaid_prefix_files": 8,
+      "session_deliveries": 0,
+      "source_enrolled": true,
+      "status": "PASS"
+    },
+    {
+      "error": {
+        "category": "source_program_bytes_prepaid",
+        "count": 24552,
+        "message": "common_source: reserved budget exhausted",
+        "stage": "common_source",
+        "type": "ResourceExhausted"
+      },
+      "expected_source_record_artifact": {
+        "bytes": 1488,
+        "sha256": "5750de16f8d0f94a111fdeb51d3355ed3e28fbda6938aa31ccafd0aba8df2564"
+      },
+      "expected_source_record_ascii_bytes": 1199,
+      "expected_source_record_file": "reserved_capacity_denial_expected_source.json",
+      "failure_payload": "{\"schema\":\"rp3bb.current-bound.v1\",\"status\":\"NO_CURRENT_CERTIFICATE\",\"reason\":\"RESOURCE_OR_VALIDATION_FAILURE\"}",
+      "invoice": {
+        "budget": 396935,
+        "by_stage": {
+          "common_source": {
+            "bounded_native_c_call_events": 390,
+            "observed_python_opcode_events": 32774,
+            "source_hash_bytes_prepaid": 173404,
+            "source_length_probe_bytes_prepaid": 7,
+            "source_program_bytes_prepaid": 173404,
+            "source_record_bytes": 1199
+          },
+          "coordination": {
+            "observed_python_opcode_events": 15
+          },
+          "failure_terminal": {
+            "delivery_events": 1,
+            "state_eviction_events": 1,
+            "terminal_bytes": 111
+          }
+        },
+        "consumer_budget": null,
+        "consumer_units": 381291,
+        "failure": {
+          "message": "common_source: reserved budget exhausted",
+          "stage": "common_source",
+          "type": "ResourceExhausted"
+        },
+        "failure_terminal_reserve": 1024,
+        "instrumentation_included": false,
+        "max_retained_serialized_bytes": 0,
+        "max_serialized_object_bytes": 1199,
+        "physical_cpu_or_heap_bound_claimed": false,
+        "retained_proxy_bytes": {},
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 381306
+      },
+      "name": "reserved_capacity_denial",
+      "outcome": "RESOURCE_FAILURE",
+      "prepaid_capacities": {
+        "hash_bytes": 173404,
+        "length_probe_bytes": 7,
+        "program_bytes": 173404
+      },
+      "prepaid_prefix_files": null,
+      "session_deliveries": 0,
+      "source_enrolled": false,
+      "status": "PASS"
+    },
+    {
+      "error": {
+        "message": "Live worker-source bytes differ from the declared installation.",
+        "type": "ValueError"
+      },
+      "expected_source_record_artifact": {
+        "bytes": 1488,
+        "sha256": "12492c1a202e1b2f82614184cb79a2b9ff2b368fd58f0a9531ef5875883c692b"
+      },
+      "expected_source_record_ascii_bytes": 1199,
+      "expected_source_record_file": "expected_length_short_expected_source.json",
+      "failure_payload": "{\"schema\":\"rp3bb.current-bound.v1\",\"status\":\"NO_CURRENT_CERTIFICATE\",\"reason\":\"RESOURCE_OR_VALIDATION_FAILURE\"}",
+      "invoice": {
+        "budget": 134217728,
+        "by_stage": {
+          "common_source": {
+            "bounded_native_c_call_events": 166,
+            "observed_python_opcode_events": 28516,
+            "source_hash_bytes_prepaid": 22822,
+            "source_length_probe_bytes_prepaid": 1,
+            "source_program_bytes_prepaid": 22822,
+            "source_record_bytes": 1199
+          },
+          "coordination": {
+            "observed_python_opcode_events": 15
+          },
+          "failure_terminal": {
+            "delivery_events": 1,
+            "state_eviction_events": 1,
+            "terminal_bytes": 111
+          }
+        },
+        "consumer_budget": null,
+        "consumer_units": 75639,
+        "failure": {
+          "message": "Live worker-source bytes differ from the declared installation.",
+          "stage": null,
+          "type": "ValueError"
+        },
+        "failure_terminal_reserve": 1024,
+        "instrumentation_included": false,
+        "max_retained_serialized_bytes": 0,
+        "max_serialized_object_bytes": 1199,
+        "physical_cpu_or_heap_bound_claimed": false,
+        "retained_proxy_bytes": {},
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 75654
+      },
+      "name": "expected_length_short",
+      "outcome": "VALIDATION_FAILURE",
+      "prepaid_capacities": {
+        "hash_bytes": 22822,
+        "length_probe_bytes": 1,
+        "program_bytes": 22822
+      },
+      "prepaid_prefix_files": 1,
+      "session_deliveries": 0,
+      "source_enrolled": false,
+      "status": "PASS"
+    },
+    {
+      "error": {
+        "message": "Live worker-source bytes differ from the declared installation.",
+        "type": "ValueError"
+      },
+      "expected_source_record_artifact": {
+        "bytes": 1488,
+        "sha256": "e6ae1e5b131f5e02b759bbbd1103803494c0e57caa96ed86c4a85d8b42af6491"
+      },
+      "expected_source_record_ascii_bytes": 1199,
+      "expected_source_record_file": "expected_length_long_expected_source.json",
+      "failure_payload": "{\"schema\":\"rp3bb.current-bound.v1\",\"status\":\"NO_CURRENT_CERTIFICATE\",\"reason\":\"RESOURCE_OR_VALIDATION_FAILURE\"}",
+      "invoice": {
+        "budget": 134217728,
+        "by_stage": {
+          "common_source": {
+            "bounded_native_c_call_events": 166,
+            "observed_python_opcode_events": 28516,
+            "source_hash_bytes_prepaid": 22824,
+            "source_length_probe_bytes_prepaid": 1,
+            "source_program_bytes_prepaid": 22824,
+            "source_record_bytes": 1199
+          },
+          "coordination": {
+            "observed_python_opcode_events": 15
+          },
+          "failure_terminal": {
+            "delivery_events": 1,
+            "state_eviction_events": 1,
+            "terminal_bytes": 111
+          }
+        },
+        "consumer_budget": null,
+        "consumer_units": 75643,
+        "failure": {
+          "message": "Live worker-source bytes differ from the declared installation.",
+          "stage": null,
+          "type": "ValueError"
+        },
+        "failure_terminal_reserve": 1024,
+        "instrumentation_included": false,
+        "max_retained_serialized_bytes": 0,
+        "max_serialized_object_bytes": 1199,
+        "physical_cpu_or_heap_bound_claimed": false,
+        "retained_proxy_bytes": {},
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 75658
+      },
+      "name": "expected_length_long",
+      "outcome": "VALIDATION_FAILURE",
+      "prepaid_capacities": {
+        "hash_bytes": 22824,
+        "length_probe_bytes": 1,
+        "program_bytes": 22824
+      },
+      "prepaid_prefix_files": 1,
+      "session_deliveries": 0,
+      "source_enrolled": false,
+      "status": "PASS"
+    },
+    {
+      "error": {
+        "message": "Live worker-source bytes differ from the declared installation.",
+        "type": "ValueError"
+      },
+      "expected_source_record_artifact": {
+        "bytes": 1488,
+        "sha256": "a13115fe06ef9f433996e24c7029d137565cabfc9cfa38c505f7f6707e95ac0b"
+      },
+      "expected_source_record_ascii_bytes": 1199,
+      "expected_source_record_file": "expected_last_hash_mismatch_expected_source.json",
+      "failure_payload": "{\"schema\":\"rp3bb.current-bound.v1\",\"status\":\"NO_CURRENT_CERTIFICATE\",\"reason\":\"RESOURCE_OR_VALIDATION_FAILURE\"}",
+      "invoice": {
+        "budget": 134217728,
+        "by_stage": {
+          "common_source": {
+            "bounded_native_c_call_events": 427,
+            "observed_python_opcode_events": 33448,
+            "source_hash_bytes_prepaid": 197956,
+            "source_length_probe_bytes_prepaid": 8,
+            "source_program_bytes_prepaid": 197956,
+            "source_record_bytes": 1199
+          },
+          "coordination": {
+            "observed_python_opcode_events": 15
+          },
+          "failure_terminal": {
+            "delivery_events": 1,
+            "state_eviction_events": 1,
+            "terminal_bytes": 111
+          }
+        },
+        "consumer_budget": null,
+        "consumer_units": 431107,
+        "failure": {
+          "message": "Live worker-source bytes differ from the declared installation.",
+          "stage": null,
+          "type": "ValueError"
+        },
+        "failure_terminal_reserve": 1024,
+        "instrumentation_included": false,
+        "max_retained_serialized_bytes": 0,
+        "max_serialized_object_bytes": 1199,
+        "physical_cpu_or_heap_bound_claimed": false,
+        "retained_proxy_bytes": {},
+        "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1",
+        "total_units": 431122
+      },
+      "name": "expected_last_hash_mismatch",
+      "outcome": "VALIDATION_FAILURE",
+      "prepaid_capacities": {
+        "hash_bytes": 197956,
+        "length_probe_bytes": 8,
+        "program_bytes": 197956
+      },
+      "prepaid_prefix_files": 8,
+      "session_deliveries": 0,
+      "source_enrolled": false,
+      "status": "PASS"
+    }
+  ],
+  "groups_passed": 5,
+  "io_trace_claimed": false,
+  "policy_runs": 0,
+  "principal_clock_credit_seconds": 0,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "schema": "rp3bb.independent-source-enrollment-diagnostic.v5",
+  "service_sha256": "b96cae82e0fe3f0f734671d57df81ac3a62350746f73228aef63c2f77bb1745f",
+  "service_version": "rp3bb-certificate-service-v5",
+  "session_deliveries": 0,
+  "source_after": {
+    "v3/checks/04_counterfactual_repair.py": {
+      "bytes": 22823,
+      "sha256": "c71692e2e84c52f915dd1d09048344bf1d6c53e7d0362fe82a598d8f3d0ab896"
+    },
+    "v3/checks/05_add_evidence.py": {
+      "bytes": 34908,
+      "sha256": "1e40f1bf7a3cb2dc9cfe46beff9a3548392e99e7ff0fa81a6c79c2f53508bbdc"
+    },
+    "v3/checks/05_add_evidence_check.py": {
+      "bytes": 33036,
+      "sha256": "1f396bbb625614c87d48fa5fece438851999a7afeb58d5af6933812b4038c2bf"
+    },
+    "v3/checks/05_certificate_delivery_cases.py": {
+      "bytes": 18685,
+      "sha256": "adfcaf7733b6b401033a7689815c277f746f8fcfe47c1ec7e1733ae8142ca163"
+    },
+    "v3/checks/05_certificate_delivery_service.py": {
+      "bytes": 36584,
+      "sha256": "b96cae82e0fe3f0f734671d57df81ac3a62350746f73228aef63c2f77bb1745f"
+    },
+    "v3/checks/05_counterfactual_transport.py": {
+      "bytes": 16360,
+      "sha256": "48422eb4b23ab38d2b755de76000edaa38231dce6064c2f9cb71e45702c9ae35"
+    },
+    "v3/checks/05_ordinary_add.py": {
+      "bytes": 11008,
+      "sha256": "9263992673a815b15b489272aa827ea27066a0af264a85bbf905875f632abef7"
+    },
+    "v3/checks/05_portfolio_transport.py": {
+      "bytes": 24552,
+      "sha256": "9bf64849eae1072c9da6a2e754858af6f2f15c2c4f7e7ac55ffb556f2064b821"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/service_contract_amendment_1.json": {
+      "bytes": 2434,
+      "sha256": "4721c59701e1f42121a337cbf9d7dcf19eaab6987ea7ce5a59a24b8123abaa16"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/service_contract_amendment_2.json": {
+      "bytes": 2046,
+      "sha256": "57c690c4316bb376cedaf7d0950ef143262a7feab3bd2129e28a9c192e84404f"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/service_contract_amendment_3.json": {
+      "bytes": 1235,
+      "sha256": "3e0568dd3a35cc99f67af973b316bed806000a8cb07562cd473e02219df170b3"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/service_contract_amendment_4.json": {
+      "bytes": 2398,
+      "sha256": "c979f41b0225d35751965b8a1b9599eb19696c3300c84d41fd6844b72d035dac"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/service_contract_v1.json": {
+      "bytes": 3352,
+      "sha256": "e2f6e535ab60ad491d1335909ce2d87cebec7d71e2ef0efc41a4f6b6df4bc242"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/service_audit_v5/enrollment_probe_v5.py": {
+      "bytes": 9245,
+      "sha256": "6ddde2ae7803922655fbbbc79aea07519f8bd9fa0cd12d6f85b584258ea16955"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/service_audit_v5/plan.md": {
+      "bytes": 2887,
+      "sha256": "7c716e1206fbba7d2bc0c0ef5c3e274c491c43f35923bd519d7b1f580e9c2595"
+    }
+  },
+  "source_before": {
+    "v3/checks/04_counterfactual_repair.py": {
+      "bytes": 22823,
+      "sha256": "c71692e2e84c52f915dd1d09048344bf1d6c53e7d0362fe82a598d8f3d0ab896"
+    },
+    "v3/checks/05_add_evidence.py": {
+      "bytes": 34908,
+      "sha256": "1e40f1bf7a3cb2dc9cfe46beff9a3548392e99e7ff0fa81a6c79c2f53508bbdc"
+    },
+    "v3/checks/05_add_evidence_check.py": {
+      "bytes": 33036,
+      "sha256": "1f396bbb625614c87d48fa5fece438851999a7afeb58d5af6933812b4038c2bf"
+    },
+    "v3/checks/05_certificate_delivery_cases.py": {
+      "bytes": 18685,
+      "sha256": "adfcaf7733b6b401033a7689815c277f746f8fcfe47c1ec7e1733ae8142ca163"
+    },
+    "v3/checks/05_certificate_delivery_service.py": {
+      "bytes": 36584,
+      "sha256": "b96cae82e0fe3f0f734671d57df81ac3a62350746f73228aef63c2f77bb1745f"
+    },
+    "v3/checks/05_counterfactual_transport.py": {
+      "bytes": 16360,
+      "sha256": "48422eb4b23ab38d2b755de76000edaa38231dce6064c2f9cb71e45702c9ae35"
+    },
+    "v3/checks/05_ordinary_add.py": {
+      "bytes": 11008,
+      "sha256": "9263992673a815b15b489272aa827ea27066a0af264a85bbf905875f632abef7"
+    },
+    "v3/checks/05_portfolio_transport.py": {
+      "bytes": 24552,
+      "sha256": "9bf64849eae1072c9da6a2e754858af6f2f15c2c4f7e7ac55ffb556f2064b821"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/service_contract_amendment_1.json": {
+      "bytes": 2434,
+      "sha256": "4721c59701e1f42121a337cbf9d7dcf19eaab6987ea7ce5a59a24b8123abaa16"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/service_contract_amendment_2.json": {
+      "bytes": 2046,
+      "sha256": "57c690c4316bb376cedaf7d0950ef143262a7feab3bd2129e28a9c192e84404f"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/service_contract_amendment_3.json": {
+      "bytes": 1235,
+      "sha256": "3e0568dd3a35cc99f67af973b316bed806000a8cb07562cd473e02219df170b3"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/service_contract_amendment_4.json": {
+      "bytes": 2398,
+      "sha256": "c979f41b0225d35751965b8a1b9599eb19696c3300c84d41fd6844b72d035dac"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/development/service_contract_v1.json": {
+      "bytes": 3352,
+      "sha256": "e2f6e535ab60ad491d1335909ce2d87cebec7d71e2ef0efc41a4f6b6df4bc242"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/service_audit_v5/enrollment_probe_v5.py": {
+      "bytes": 9245,
+      "sha256": "6ddde2ae7803922655fbbbc79aea07519f8bd9fa0cd12d6f85b584258ea16955"
+    },
+    "v3/work_logs/R_P3_B_B_2026-10-10_S1/reviews/receiver_reconstruction/service_audit_v5/plan.md": {
+      "bytes": 2887,
+      "sha256": "7c716e1206fbba7d2bc0c0ef5c3e274c491c43f35923bd519d7b1f580e9c2595"
+    }
+  },
+  "source_read_hash_precedence_evidence": "Static captured source control flow: all three per-file fees precede open/read; hash is evaluated only after the bounded read has exactly the declared length.",
+  "sources_unchanged": true,
+  "stage": "DEVELOPMENT",
+  "status": "PASS",
+  "tariff": "rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1"
+}

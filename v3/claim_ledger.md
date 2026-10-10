@@ -13,8 +13,10 @@ bounded paid-computation, acquired-profile and versioned self-assessment scope,
 with observed Research90. P3-B is now PASS with no additional floor.
 Selected R-P3-B-A (option A) is complete at finite paid-feedback and
 observable-performance scope. P3-08 is complete at finite owned-broker hard-state,
-paid-reporting and separate structural integration scope. Next: P3-09, recommended
-and unstarted. P3-N01 is SUPPORTED
+paid-reporting and separate structural integration scope. Selected R-P3-B-B
+(Option B) is complete at finite equal certificate-delivery scope, including
+the ordinary checked bridge and full resource/failure comparison. Next: P3-09,
+recommended and unstarted. P3-N01 is SUPPORTED
 at the documented modest formal-adaptation and implementation-synthesis
 scope; Q3 affirmative comparative benefit remains open.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
@@ -413,3 +415,41 @@ recommended next unstarted task; its own floor and later task floors are not
 replaced by that phase remainder. Options B/C and R-P3-N01 remain unselected;
 P3-C/D remain unattempted. All evidence is DEVELOPMENT, with no final freeze
 or exposure.
+
+## R-P3-B-B completion — October 10, 2026
+
+**COMPLETE at finite equal certificate-delivery scope**, with
+**90.310005771417 observed qualifying research minutes**. The author selected
+Option B after P3-08 and before P3-09. The
+[derivation](derivations/05_equal_certificate_delivery.md),
+[complete experiment](experiments/certificate_delivery.md),
+[principal assessment](work_logs/R_P3_B_B_2026-10-10_S1/contribution_assessment.md)
+and [current 21-duty overlay](checkpoints/B_1_R_P3_B_B.v1.json) supplement the
+earlier source-bound results; no earlier worker or scientific record is revised.
+
+| Record | Current finding | Scope and evidence |
+| --- | --- | --- |
+| P3-BB-01 | A constructive ordinary checked-evidence bridge is implemented. | Node/Apply/expression induction links an inert shared DAG to independently supplied current input, source, order, incumbent, bound and request ID. The receipt certifies a nonempty entire incumbent sublevel, including all minimizing ties. Conditional finite soundness, not formal verification of all Python or a universal compiler. |
+| P3-BB-02 | The inherited fresh tree language has an exponential parity-family obstruction, while the ordinary route has polynomial complete construction/export/fresh-checking work under named assumptions. | Exact fresh `BandProof`/empty-choice `PortfolioProof` rule schema; all allowed current-row multipliers included. Complete written keys, retained facts, scalar widths and source bytes are charged. Useful old lemmas, richer rules, arbitrary inputs and fixed-cap arbitrary-dimensional execution are outside the theorem. |
+| P3-BB-03 | Primary equal-service economics do not support affirmative native-reuse advantage. | All 288 deliveries succeed; direct ordinary checking is least total among all six methods in all eight complete cells and cheaper than reuse on all 48 request pairs. Reuse's cold-ADD crossings occur only in resident parity at request 4 and k3 at request 5 within the six-request horizon. |
+| P3-BB-04 | The primary reuse comparison is robust to fixed common nonnegative pooled-category prices on the recorded prefixes. | Ordinary direct checking uses no more of any pooled category at all 48 cumulative prefixes. Three individual parity requests have the declared native-call exception. Fixed-invoice repricing is not a changed-budget policy execution. |
+| P3-BB-05 | Paid ordinary pruning trades lower output/consumer cost for higher total work. | The separate 144-delivery run plus four expected failures retains 1,177 assertions. Aggregate proof bytes fall from 200,861 to 182,318; every one of 24 matched total bills rises. Full producer state remains charged; no minimal-proof or optimal-retention claim. |
+| P3-BB-06 | Actual funded history differs from static successful-path affordability. | Same 288 issued requests at the smaller consumer cap produce 239 deliveries and 49 paid failures. Ten resident k5 reuse/hybrid requests predicted affordable fail after eviction; two fresh warm-ADD requests predicted unaffordable deliver after history is cleared. All failed costs and current/stale authority checks remain. |
+| P3-BB-07 | Capped ordinary direct checking has superset delivered coverage at lower total in every complete cell. | All eight full cells and 46 nonempty prefixes; two first-prefix all-failure cases are not successful service. Equal counts need not mean equal delivered IDs. This is total-cost dominance: resident k5 warm ADD has a lower consumer bill on identical delivered IDs, with the fixed-history price crossing stated separately. |
+| P3-BB-08 | The two deployed rational admission domains are not nested. | A true negative constant exceeds the exact ADD terminal cap but has a native sign proof; a valid computed cutoff exceeds native input-literal preparation while direct ADD/ordinary checking succeeds. More budget does not remove format caps. Full 30-unit/13-delivery/17-failure recovery support belongs to one unchanged retry; the original 29-row/inconsistent-summary archive is preserved with unknown cause. |
+| P3-N01 current | **SUPPORTED** at the accepted modest formal-adaptation and implementation-synthesis scope. | The concrete receiving interface, scoped algorithmic distinction and full comparison add a substantive adaptation of established ordinary ideas. Neither a generic proof paradigm, priority, exclusive numerical capability nor a negative result alone is the contribution. |
+| P3-H03 / Q3 current | **OPEN** for affirmative advantage over the strongest credible ordinary combination. | The implemented primary total-cost claim is displaced. Complementary conditional warrants and savings against selected weaker controls do not establish a general plurality advantage or learned fallible-model benefit. |
+
+The [stopped-clock actuals](work_logs/R_P3_B_B_2026-10-10_S1/actuals.json)
+preserve five recovery exclusions, zero agent/historical credit and the complete
+prior ledger prefix. The [preservation audit](work_logs/R_P3_B_B_2026-10-10_S1/reviews/ordinary_bridge/final_preservation_v1/review.md)
+verifies all protected entry files, completed evidence and the documented
+original rational exception. The previous U04 broker closure and separate
+learning, calibration, probability and counterpossible premises remain intact.
+
+Phase qualifying research is **935.063726446450 minutes**, leaving
+**24.936273553550** to the phase floor. No new phase checkpoint is crossed.
+P3-09 is recommended and unstarted, with its own Research60 floor. Option C
+and R-P3-N01 remain unselected; P3-C/D are unattempted. Work stops at this
+recurrence boundary. All evidence remains DEVELOPMENT; no final freeze or
+evaluation exposure has occurred.
