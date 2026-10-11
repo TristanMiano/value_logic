@@ -55,3 +55,25 @@ one proposed application without requiring a prolonged literature audit.
   operation in that interface; initial implementation will reconstruct each
   priced separation call. No MaxSAT optimality proof is imported or checked
   merely by reading the API.
+
+## Prediction-assisted finite-population values
+
+- Angelopoulos, Bates, Fannjiang, Jordan, Zrnic,
+  [Prediction-Powered Inference, arXiv v4](https://arxiv.org/pdf/2301.09633),
+  §1.3 and Appendix B Corollary B.1 (PDF pp.3 and 23–24). The inspected mean
+  construction corrects a prediction average with a confidence interval for
+  prediction error; the finite-population corollary already covers fixed
+  unlabeled populations. S08 cannot claim that basic rectification as new.
+  A priced sequential decision service still needs its own sampling and
+  stopping contract; fixed-time asymptotic intervals are not imported.
+- Waudby-Smith and Ramdas,
+  [Confidence sequences for sampling without replacement](https://proceedings.neurips.cc/paper_files/paper/2020/file/e96c7de8f6390b1e6c71556e4e0a4959-Paper.pdf),
+  §2.1 Proposition 2.1, §2.2 Theorem 2.1 and §2.3. This is a stronger ordinary
+  sequential comparator than a repeated fixed-time interval: a working
+  full-support beta-binomial distribution can yield simultaneous coverage for
+  a fixed finite binary population. Its working distribution is not a claim
+  that the unknown truth count was sampled from that prior. S08 should use or
+  compare this confidence-sequence construction and charge its computation.
+  Support-changing boundary cases should be expressed through the sufficient
+  nonnegative-supermartingale inequality rather than silently assuming common
+  positive likelihood support. No broader statistical theorem is imported.

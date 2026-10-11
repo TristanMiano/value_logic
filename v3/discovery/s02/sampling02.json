@@ -1,0 +1,5866 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "start_utc": "2026-10-11T22:15:29.786172+00:00",
+  "command": [
+    "v3/discovery/s02/sampling_v2.py",
+    "v3/discovery/s02/sampling02.json"
+  ],
+  "sources": {
+    "sampling_v2.py": "0856ca6bfe5b9035e4471d46757c7e8b65ff92ff7fb7628046d3b000395af830",
+    "sampling_probe.py": "6f54b5bf62afc003394d330fdb85cca3e606cf6a5f34111ad1fc753ca470bef6"
+  },
+  "scope": "Same synthetic populations as sampling01, stronger ordinary control; runtime includes controller and synthetic labels, excludes unmeasured prediction inference and real mathematical evaluation",
+  "checks": {
+    "mixture_count_cases": 108,
+    "direct_composite_null_cases": 188,
+    "largest_mixture_risk": "1/7"
+  },
+  "rows": [
+    {
+      "actual_mean": "1065/2048",
+      "corruption": "0",
+      "predicted_ones": 2130,
+      "population_sha256": "5b19b51322eae8b1b62dead92ac037accad118bc48e5adb364930b335ecc2499",
+      "predictions_sha256": "5b19b51322eae8b1b62dead92ac037accad118bc48e5adb364930b335ecc2499",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 2048,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 23,
+          "binomial_calls": 92
+        },
+        "M0": 2047,
+        "M1": 2130,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 2,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 4,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 8,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 15,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 33,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 68,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 148,
+            "action": null
+          },
+          {
+            "queries": 512,
+            "ones": 275,
+            "action": null
+          },
+          {
+            "queries": 1024,
+            "ones": 531,
+            "action": null
+          },
+          {
+            "queries": 2048,
+            "ones": 1071,
+            "action": 1
+          }
+        ],
+        "controller_ns": 1447100
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 128,
+        "action": 1,
+        "lower": "1025/2048",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 8,
+          "binomial_calls": 200,
+          "membership_checks": 96,
+          "largest_integer_bits": 708
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "27/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "109/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "653/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "145/512",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "391/1024",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "57/128",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1971/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1025/2048",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 413000
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 256,
+        "action": 1,
+        "lower": "515/1024",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 9,
+          "binomial_calls": 225,
+          "membership_checks": 108,
+          "largest_integer_bits": 1137
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "27/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "195/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "71/512",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1023/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "355/1024",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1705/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "59/128",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1997/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 256,
+            "stratum_samples": [
+              0,
+              256
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "515/1024",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 527700
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 4096,
+        "action": 1,
+        "lower": "1065/2048",
+        "upper": "1065/2048",
+        "counts": {
+          "intervals": 13,
+          "binomial_calls": 538,
+          "membership_checks": 263,
+          "largest_integer_bits": 4100
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "103/4096",
+            "upper": "1"
+          },
+          {
+            "queries": 2,
+            "lower": "103/4096",
+            "upper": "4061/4096"
+          },
+          {
+            "queries": 4,
+            "lower": "11/256",
+            "upper": "245/256"
+          },
+          {
+            "queries": 8,
+            "lower": "217/2048",
+            "upper": "1831/2048"
+          },
+          {
+            "queries": 16,
+            "lower": "741/4096",
+            "upper": "3355/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "931/4096",
+            "upper": "2953/4096"
+          },
+          {
+            "queries": 64,
+            "lower": "1343/4096",
+            "upper": "2869/4096"
+          },
+          {
+            "queries": 128,
+            "lower": "1607/4096",
+            "upper": "683/1024"
+          },
+          {
+            "queries": 256,
+            "lower": "1955/4096",
+            "upper": "683/1024"
+          },
+          {
+            "queries": 512,
+            "lower": "1955/4096",
+            "upper": "2487/4096"
+          },
+          {
+            "queries": 1024,
+            "lower": "1955/4096",
+            "upper": "145/256"
+          },
+          {
+            "queries": 2048,
+            "lower": "2023/4096",
+            "upper": "565/1024"
+          },
+          {
+            "queries": 4096,
+            "lower": "1065/2048",
+            "upper": "1065/2048"
+          }
+        ],
+        "controller_ns": 6396300
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    },
+    {
+      "actual_mean": "1065/2048",
+      "corruption": "1/50",
+      "predicted_ones": 2132,
+      "population_sha256": "5b19b51322eae8b1b62dead92ac037accad118bc48e5adb364930b335ecc2499",
+      "predictions_sha256": "0313df1c9cf0d4afa36cbcfe9998ff6da275f152c2c98d5ee6f36cf60cb85e41",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 2048,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 23,
+          "binomial_calls": 92
+        },
+        "M0": 2047,
+        "M1": 2132,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 2,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 4,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 8,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 15,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 33,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 68,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 148,
+            "action": null
+          },
+          {
+            "queries": 512,
+            "ones": 275,
+            "action": null
+          },
+          {
+            "queries": 1024,
+            "ones": 531,
+            "action": null
+          },
+          {
+            "queries": 2048,
+            "ones": 1071,
+            "action": 1
+          }
+        ],
+        "controller_ns": 1393500
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 1024,
+        "action": 1,
+        "lower": "2053/4096",
+        "upper": "2037/2048",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 11,
+          "binomial_calls": 323,
+          "membership_checks": 156,
+          "largest_integer_bits": 2138
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "27/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "219/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "327/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1161/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "783/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1825/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              2
+            ],
+            "lower": "1825/4096",
+            "upper": "2047/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              2
+            ],
+            "lower": "959/2048",
+            "upper": "2047/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 256,
+            "stratum_samples": [
+              0,
+              256
+            ],
+            "observed_errors": [
+              0,
+              3
+            ],
+            "lower": "2005/4096",
+            "upper": "4093/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 512,
+            "stratum_samples": [
+              0,
+              512
+            ],
+            "observed_errors": [
+              0,
+              8
+            ],
+            "lower": "2035/4096",
+            "upper": "4087/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 1024,
+            "stratum_samples": [
+              0,
+              1024
+            ],
+            "observed_errors": [
+              0,
+              20
+            ],
+            "lower": "2053/4096",
+            "upper": "2037/2048"
+          }
+        ],
+        "controller_ns": 2367200
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 1024,
+        "action": 1,
+        "lower": "2055/4096",
+        "upper": "2037/2048",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 11,
+          "binomial_calls": 325,
+          "membership_checks": 157,
+          "largest_integer_bits": 2137
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "27/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "49/1024",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "569/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1/4",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1421/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1707/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              2
+            ],
+            "lower": "881/2048",
+            "upper": "2047/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              2
+            ],
+            "lower": "965/2048",
+            "upper": "2047/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 256,
+            "stratum_samples": [
+              0,
+              256
+            ],
+            "observed_errors": [
+              0,
+              3
+            ],
+            "lower": "2011/4096",
+            "upper": "4093/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 512,
+            "stratum_samples": [
+              0,
+              512
+            ],
+            "observed_errors": [
+              0,
+              8
+            ],
+            "lower": "1019/2048",
+            "upper": "4087/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 1024,
+            "stratum_samples": [
+              0,
+              1024
+            ],
+            "observed_errors": [
+              0,
+              20
+            ],
+            "lower": "2055/4096",
+            "upper": "2037/2048"
+          }
+        ],
+        "controller_ns": 2377400
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 4096,
+        "action": 1,
+        "lower": "1065/2048",
+        "upper": "1065/2048",
+        "counts": {
+          "intervals": 13,
+          "binomial_calls": 538,
+          "membership_checks": 263,
+          "largest_integer_bits": 4100
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "103/4096",
+            "upper": "1"
+          },
+          {
+            "queries": 2,
+            "lower": "103/4096",
+            "upper": "4061/4096"
+          },
+          {
+            "queries": 4,
+            "lower": "11/256",
+            "upper": "245/256"
+          },
+          {
+            "queries": 8,
+            "lower": "217/2048",
+            "upper": "1831/2048"
+          },
+          {
+            "queries": 16,
+            "lower": "741/4096",
+            "upper": "3355/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "931/4096",
+            "upper": "2953/4096"
+          },
+          {
+            "queries": 64,
+            "lower": "1343/4096",
+            "upper": "2869/4096"
+          },
+          {
+            "queries": 128,
+            "lower": "1607/4096",
+            "upper": "683/1024"
+          },
+          {
+            "queries": 256,
+            "lower": "1955/4096",
+            "upper": "683/1024"
+          },
+          {
+            "queries": 512,
+            "lower": "1955/4096",
+            "upper": "2487/4096"
+          },
+          {
+            "queries": 1024,
+            "lower": "1955/4096",
+            "upper": "145/256"
+          },
+          {
+            "queries": 2048,
+            "lower": "2023/4096",
+            "upper": "565/1024"
+          },
+          {
+            "queries": 4096,
+            "lower": "1065/2048",
+            "upper": "1065/2048"
+          }
+        ],
+        "controller_ns": 6938000
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    },
+    {
+      "actual_mean": "1065/2048",
+      "corruption": "1/5",
+      "predicted_ones": 2107,
+      "population_sha256": "5b19b51322eae8b1b62dead92ac037accad118bc48e5adb364930b335ecc2499",
+      "predictions_sha256": "76d34b6985712c7c0fee5f357dea99c8801bb1835294eea6148e8d7dfc18a94f",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 2048,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 23,
+          "binomial_calls": 92
+        },
+        "M0": 2047,
+        "M1": 2107,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 2,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 4,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 8,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 15,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 33,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 68,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 148,
+            "action": null
+          },
+          {
+            "queries": 512,
+            "ones": 275,
+            "action": null
+          },
+          {
+            "queries": 1024,
+            "ones": 531,
+            "action": null
+          },
+          {
+            "queries": 2048,
+            "ones": 1071,
+            "action": 1
+          }
+        ],
+        "controller_ns": 1391600
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 4096,
+        "action": 1,
+        "lower": "1065/2048",
+        "upper": "1065/2048",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 25,
+          "binomial_calls": 899,
+          "membership_checks": 438,
+          "largest_integer_bits": 2112
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "27/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "27/4096",
+            "upper": "4091/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "187/4096",
+            "upper": "4091/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              4
+            ],
+            "lower": "187/4096",
+            "upper": "3943/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              6
+            ],
+            "lower": "491/4096",
+            "upper": "983/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              10
+            ],
+            "lower": "51/256",
+            "upper": "487/512"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              22
+            ],
+            "lower": "925/4096",
+            "upper": "3749/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              31
+            ],
+            "lower": "1283/4096",
+            "upper": "3749/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 256,
+            "stratum_samples": [
+              0,
+              256
+            ],
+            "observed_errors": [
+              0,
+              61
+            ],
+            "lower": "695/2048",
+            "upper": "3749/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 512,
+            "stratum_samples": [
+              0,
+              512
+            ],
+            "observed_errors": [
+              0,
+              116
+            ],
+            "lower": "1489/4096",
+            "upper": "935/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 1024,
+            "stratum_samples": [
+              0,
+              1024
+            ],
+            "observed_errors": [
+              0,
+              216
+            ],
+            "lower": "1581/4096",
+            "upper": "931/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 2048,
+            "stratum_samples": [
+              0,
+              2048
+            ],
+            "observed_errors": [
+              0,
+              406
+            ],
+            "lower": "837/2048",
+            "upper": "3689/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 2107,
+            "stratum_samples": [
+              0,
+              2107
+            ],
+            "observed_errors": [
+              0,
+              415
+            ],
+            "lower": "423/1024",
+            "upper": "3681/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2108,
+            "stratum_samples": [
+              1,
+              2107
+            ],
+            "observed_errors": [
+              1,
+              415
+            ],
+            "lower": "1717/4096",
+            "upper": "3681/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2109,
+            "stratum_samples": [
+              2,
+              2107
+            ],
+            "observed_errors": [
+              2,
+              415
+            ],
+            "lower": "237/512",
+            "upper": "3681/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2111,
+            "stratum_samples": [
+              4,
+              2107
+            ],
+            "observed_errors": [
+              2,
+              415
+            ],
+            "lower": "237/512",
+            "upper": "3639/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2115,
+            "stratum_samples": [
+              8,
+              2107
+            ],
+            "observed_errors": [
+              3,
+              415
+            ],
+            "lower": "237/512",
+            "upper": "855/1024"
+          },
+          {
+            "stratum": 0,
+            "queries": 2123,
+            "stratum_samples": [
+              16,
+              2107
+            ],
+            "observed_errors": [
+              5,
+              415
+            ],
+            "lower": "237/512",
+            "upper": "1559/2048"
+          },
+          {
+            "stratum": 0,
+            "queries": 2139,
+            "stratum_samples": [
+              32,
+              2107
+            ],
+            "observed_errors": [
+              10,
+              415
+            ],
+            "lower": "237/512",
+            "upper": "1455/2048"
+          },
+          {
+            "stratum": 0,
+            "queries": 2171,
+            "stratum_samples": [
+              64,
+              2107
+            ],
+            "observed_errors": [
+              16,
+              415
+            ],
+            "lower": "237/512",
+            "upper": "1307/2048"
+          },
+          {
+            "stratum": 0,
+            "queries": 2235,
+            "stratum_samples": [
+              128,
+              2107
+            ],
+            "observed_errors": [
+              26,
+              415
+            ],
+            "lower": "237/512",
+            "upper": "2383/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2363,
+            "stratum_samples": [
+              256,
+              2107
+            ],
+            "observed_errors": [
+              59,
+              415
+            ],
+            "lower": "993/2048",
+            "upper": "2351/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2619,
+            "stratum_samples": [
+              512,
+              2107
+            ],
+            "observed_errors": [
+              108,
+              415
+            ],
+            "lower": "1001/2048",
+            "upper": "2241/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 3131,
+            "stratum_samples": [
+              1024,
+              2107
+            ],
+            "observed_errors": [
+              216,
+              415
+            ],
+            "lower": "2045/4096",
+            "upper": "2187/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 4096,
+            "stratum_samples": [
+              1989,
+              2107
+            ],
+            "observed_errors": [
+              438,
+              415
+            ],
+            "lower": "1065/2048",
+            "upper": "1065/2048"
+          }
+        ],
+        "controller_ns": 5774800
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 3131,
+        "action": 1,
+        "lower": "1/2",
+        "upper": "2183/4096",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 24,
+          "binomial_calls": 897,
+          "membership_checks": 437,
+          "largest_integer_bits": 2111
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "27/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "27/4096",
+            "upper": "4087/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "237/4096",
+            "upper": "4087/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              4
+            ],
+            "lower": "237/4096",
+            "upper": "3911/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              6
+            ],
+            "lower": "535/4096",
+            "upper": "3909/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              10
+            ],
+            "lower": "853/4096",
+            "upper": "3877/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              22
+            ],
+            "lower": "951/4096",
+            "upper": "933/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              31
+            ],
+            "lower": "1301/4096",
+            "upper": "933/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 256,
+            "stratum_samples": [
+              0,
+              256
+            ],
+            "observed_errors": [
+              0,
+              61
+            ],
+            "lower": "1401/4096",
+            "upper": "933/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 512,
+            "stratum_samples": [
+              0,
+              512
+            ],
+            "observed_errors": [
+              0,
+              116
+            ],
+            "lower": "187/512",
+            "upper": "933/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 1024,
+            "stratum_samples": [
+              0,
+              1024
+            ],
+            "observed_errors": [
+              0,
+              216
+            ],
+            "lower": "1585/4096",
+            "upper": "3721/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 2048,
+            "stratum_samples": [
+              0,
+              2048
+            ],
+            "observed_errors": [
+              0,
+              406
+            ],
+            "lower": "1675/4096",
+            "upper": "3689/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 2107,
+            "stratum_samples": [
+              0,
+              2107
+            ],
+            "observed_errors": [
+              0,
+              415
+            ],
+            "lower": "423/1024",
+            "upper": "3681/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2108,
+            "stratum_samples": [
+              1,
+              2107
+            ],
+            "observed_errors": [
+              1,
+              415
+            ],
+            "lower": "1717/4096",
+            "upper": "3681/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2109,
+            "stratum_samples": [
+              2,
+              2107
+            ],
+            "observed_errors": [
+              2,
+              415
+            ],
+            "lower": "1875/4096",
+            "upper": "3681/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2111,
+            "stratum_samples": [
+              4,
+              2107
+            ],
+            "observed_errors": [
+              2,
+              415
+            ],
+            "lower": "1875/4096",
+            "upper": "3621/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2115,
+            "stratum_samples": [
+              8,
+              2107
+            ],
+            "observed_errors": [
+              3,
+              415
+            ],
+            "lower": "1875/4096",
+            "upper": "3377/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2123,
+            "stratum_samples": [
+              16,
+              2107
+            ],
+            "observed_errors": [
+              5,
+              415
+            ],
+            "lower": "1875/4096",
+            "upper": "3073/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2139,
+            "stratum_samples": [
+              32,
+              2107
+            ],
+            "observed_errors": [
+              10,
+              415
+            ],
+            "lower": "1899/4096",
+            "upper": "719/1024"
+          },
+          {
+            "stratum": 0,
+            "queries": 2171,
+            "stratum_samples": [
+              64,
+              2107
+            ],
+            "observed_errors": [
+              16,
+              415
+            ],
+            "lower": "475/1024",
+            "upper": "2589/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2235,
+            "stratum_samples": [
+              128,
+              2107
+            ],
+            "observed_errors": [
+              26,
+              415
+            ],
+            "lower": "475/1024",
+            "upper": "1183/2048"
+          },
+          {
+            "stratum": 0,
+            "queries": 2363,
+            "stratum_samples": [
+              256,
+              2107
+            ],
+            "observed_errors": [
+              59,
+              415
+            ],
+            "lower": "1993/4096",
+            "upper": "585/1024"
+          },
+          {
+            "stratum": 0,
+            "queries": 2619,
+            "stratum_samples": [
+              512,
+              2107
+            ],
+            "observed_errors": [
+              108,
+              415
+            ],
+            "lower": "1003/2048",
+            "upper": "1117/2048"
+          },
+          {
+            "stratum": 0,
+            "queries": 3131,
+            "stratum_samples": [
+              1024,
+              2107
+            ],
+            "observed_errors": [
+              216,
+              415
+            ],
+            "lower": "1/2",
+            "upper": "2183/4096"
+          }
+        ],
+        "controller_ns": 5039800
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 4096,
+        "action": 1,
+        "lower": "1065/2048",
+        "upper": "1065/2048",
+        "counts": {
+          "intervals": 13,
+          "binomial_calls": 538,
+          "membership_checks": 263,
+          "largest_integer_bits": 4100
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "103/4096",
+            "upper": "1"
+          },
+          {
+            "queries": 2,
+            "lower": "103/4096",
+            "upper": "4061/4096"
+          },
+          {
+            "queries": 4,
+            "lower": "11/256",
+            "upper": "245/256"
+          },
+          {
+            "queries": 8,
+            "lower": "217/2048",
+            "upper": "1831/2048"
+          },
+          {
+            "queries": 16,
+            "lower": "741/4096",
+            "upper": "3355/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "931/4096",
+            "upper": "2953/4096"
+          },
+          {
+            "queries": 64,
+            "lower": "1343/4096",
+            "upper": "2869/4096"
+          },
+          {
+            "queries": 128,
+            "lower": "1607/4096",
+            "upper": "683/1024"
+          },
+          {
+            "queries": 256,
+            "lower": "1955/4096",
+            "upper": "683/1024"
+          },
+          {
+            "queries": 512,
+            "lower": "1955/4096",
+            "upper": "2487/4096"
+          },
+          {
+            "queries": 1024,
+            "lower": "1955/4096",
+            "upper": "145/256"
+          },
+          {
+            "queries": 2048,
+            "lower": "2023/4096",
+            "upper": "565/1024"
+          },
+          {
+            "queries": 4096,
+            "lower": "1065/2048",
+            "upper": "1065/2048"
+          }
+        ],
+        "controller_ns": 7020100
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    },
+    {
+      "actual_mean": "1065/2048",
+      "corruption": "1",
+      "predicted_ones": 1966,
+      "population_sha256": "5b19b51322eae8b1b62dead92ac037accad118bc48e5adb364930b335ecc2499",
+      "predictions_sha256": "d8d65bf4212da995c9f96e1a94e7e76cf5ed1a698e81e90e49c6925285bbf390",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 2048,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 23,
+          "binomial_calls": 92
+        },
+        "M0": 2047,
+        "M1": 2130,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 2,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 4,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 8,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 15,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 33,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 68,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 148,
+            "action": null
+          },
+          {
+            "queries": 512,
+            "ones": 275,
+            "action": null
+          },
+          {
+            "queries": 1024,
+            "ones": 531,
+            "action": null
+          },
+          {
+            "queries": 2048,
+            "ones": 1071,
+            "action": 1
+          }
+        ],
+        "controller_ns": 1387000
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 128,
+        "action": 1,
+        "lower": "1025/2048",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 8,
+          "binomial_calls": 200,
+          "membership_checks": 96,
+          "largest_integer_bits": 708
+        },
+        "stages": [
+          {
+            "stratum": 0,
+            "queries": 1,
+            "stratum_samples": [
+              1,
+              0
+            ],
+            "observed_errors": [
+              1,
+              0
+            ],
+            "lower": "27/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 2,
+            "stratum_samples": [
+              2,
+              0
+            ],
+            "observed_errors": [
+              2,
+              0
+            ],
+            "lower": "109/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 4,
+            "stratum_samples": [
+              4,
+              0
+            ],
+            "observed_errors": [
+              4,
+              0
+            ],
+            "lower": "653/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 8,
+            "stratum_samples": [
+              8,
+              0
+            ],
+            "observed_errors": [
+              8,
+              0
+            ],
+            "lower": "145/512",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 16,
+            "stratum_samples": [
+              16,
+              0
+            ],
+            "observed_errors": [
+              16,
+              0
+            ],
+            "lower": "391/1024",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 32,
+            "stratum_samples": [
+              32,
+              0
+            ],
+            "observed_errors": [
+              32,
+              0
+            ],
+            "lower": "57/128",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 64,
+            "stratum_samples": [
+              64,
+              0
+            ],
+            "observed_errors": [
+              64,
+              0
+            ],
+            "lower": "1971/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 128,
+            "stratum_samples": [
+              128,
+              0
+            ],
+            "observed_errors": [
+              128,
+              0
+            ],
+            "lower": "1025/2048",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 407400
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 256,
+        "action": 1,
+        "lower": "515/1024",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 9,
+          "binomial_calls": 225,
+          "membership_checks": 108,
+          "largest_integer_bits": 1137
+        },
+        "stages": [
+          {
+            "stratum": 0,
+            "queries": 1,
+            "stratum_samples": [
+              1,
+              0
+            ],
+            "observed_errors": [
+              1,
+              0
+            ],
+            "lower": "27/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 2,
+            "stratum_samples": [
+              2,
+              0
+            ],
+            "observed_errors": [
+              2,
+              0
+            ],
+            "lower": "195/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 4,
+            "stratum_samples": [
+              4,
+              0
+            ],
+            "observed_errors": [
+              4,
+              0
+            ],
+            "lower": "71/512",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 8,
+            "stratum_samples": [
+              8,
+              0
+            ],
+            "observed_errors": [
+              8,
+              0
+            ],
+            "lower": "1023/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 16,
+            "stratum_samples": [
+              16,
+              0
+            ],
+            "observed_errors": [
+              16,
+              0
+            ],
+            "lower": "355/1024",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 32,
+            "stratum_samples": [
+              32,
+              0
+            ],
+            "observed_errors": [
+              32,
+              0
+            ],
+            "lower": "1705/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 64,
+            "stratum_samples": [
+              64,
+              0
+            ],
+            "observed_errors": [
+              64,
+              0
+            ],
+            "lower": "59/128",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 128,
+            "stratum_samples": [
+              128,
+              0
+            ],
+            "observed_errors": [
+              128,
+              0
+            ],
+            "lower": "1997/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 256,
+            "stratum_samples": [
+              256,
+              0
+            ],
+            "observed_errors": [
+              256,
+              0
+            ],
+            "lower": "515/1024",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 539700
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 4096,
+        "action": 1,
+        "lower": "1065/2048",
+        "upper": "1065/2048",
+        "counts": {
+          "intervals": 13,
+          "binomial_calls": 538,
+          "membership_checks": 263,
+          "largest_integer_bits": 4100
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "103/4096",
+            "upper": "1"
+          },
+          {
+            "queries": 2,
+            "lower": "103/4096",
+            "upper": "4061/4096"
+          },
+          {
+            "queries": 4,
+            "lower": "11/256",
+            "upper": "245/256"
+          },
+          {
+            "queries": 8,
+            "lower": "217/2048",
+            "upper": "1831/2048"
+          },
+          {
+            "queries": 16,
+            "lower": "741/4096",
+            "upper": "3355/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "931/4096",
+            "upper": "2953/4096"
+          },
+          {
+            "queries": 64,
+            "lower": "1343/4096",
+            "upper": "2869/4096"
+          },
+          {
+            "queries": 128,
+            "lower": "1607/4096",
+            "upper": "683/1024"
+          },
+          {
+            "queries": 256,
+            "lower": "1955/4096",
+            "upper": "683/1024"
+          },
+          {
+            "queries": 512,
+            "lower": "1955/4096",
+            "upper": "2487/4096"
+          },
+          {
+            "queries": 1024,
+            "lower": "1955/4096",
+            "upper": "145/256"
+          },
+          {
+            "queries": 2048,
+            "lower": "2023/4096",
+            "upper": "565/1024"
+          },
+          {
+            "queries": 4096,
+            "lower": "1065/2048",
+            "upper": "1065/2048"
+          }
+        ],
+        "controller_ns": 6915300
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    },
+    {
+      "actual_mean": "2253/4096",
+      "corruption": "0",
+      "predicted_ones": 2253,
+      "population_sha256": "cc2356030ae3ee8ef75d386f4df9ac01d82008dcf888061aa39c12d6e5cb9829",
+      "predictions_sha256": "cc2356030ae3ee8ef75d386f4df9ac01d82008dcf888061aa39c12d6e5cb9829",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 512,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 19,
+          "binomial_calls": 76
+        },
+        "M0": 2047,
+        "M1": 2253,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 3,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 8,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 18,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 37,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 72,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 140,
+            "action": null
+          },
+          {
+            "queries": 512,
+            "ones": 291,
+            "action": 1
+          }
+        ],
+        "controller_ns": 314700
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 64,
+        "action": 1,
+        "lower": "2085/4096",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 7,
+          "binomial_calls": 181,
+          "membership_checks": 87,
+          "largest_integer_bits": 429
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "29/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "231/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "691/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1227/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1655/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1929/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "2085/4096",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 314400
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 128,
+        "action": 1,
+        "lower": "33/64",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 8,
+          "binomial_calls": 204,
+          "membership_checks": 98,
+          "largest_integer_bits": 717
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "29/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "207/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "601/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "541/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "751/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "451/1024",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1997/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "33/64",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 352400
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 1024,
+        "action": 1,
+        "lower": "2083/4096",
+        "upper": "1237/2048",
+        "counts": {
+          "intervals": 11,
+          "binomial_calls": 479,
+          "membership_checks": 234,
+          "largest_integer_bits": 3327
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "0",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 2,
+            "lower": "0",
+            "upper": "1783/2048"
+          },
+          {
+            "queries": 4,
+            "lower": "11/4096",
+            "upper": "1755/2048"
+          },
+          {
+            "queries": 8,
+            "lower": "13/256",
+            "upper": "3365/4096"
+          },
+          {
+            "queries": 16,
+            "lower": "741/4096",
+            "upper": "3355/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "627/2048",
+            "upper": "1633/2048"
+          },
+          {
+            "queries": 64,
+            "lower": "791/2048",
+            "upper": "773/1024"
+          },
+          {
+            "queries": 128,
+            "lower": "1731/4096",
+            "upper": "1425/2048"
+          },
+          {
+            "queries": 256,
+            "lower": "1827/4096",
+            "upper": "1321/2048"
+          },
+          {
+            "queries": 512,
+            "lower": "509/1024",
+            "upper": "653/1024"
+          },
+          {
+            "queries": 1024,
+            "lower": "2083/4096",
+            "upper": "1237/2048"
+          }
+        ],
+        "controller_ns": 2874800
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    },
+    {
+      "actual_mean": "2253/4096",
+      "corruption": "1/50",
+      "predicted_ones": 2248,
+      "population_sha256": "cc2356030ae3ee8ef75d386f4df9ac01d82008dcf888061aa39c12d6e5cb9829",
+      "predictions_sha256": "4e6461bbca9b9d9942001a6398b7e5728ee130373cd376adff3276deeb46cee7",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 512,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 19,
+          "binomial_calls": 76
+        },
+        "M0": 2047,
+        "M1": 2248,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 3,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 8,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 18,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 37,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 72,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 140,
+            "action": null
+          },
+          {
+            "queries": 512,
+            "ones": 291,
+            "action": 1
+          }
+        ],
+        "controller_ns": 302700
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 256,
+        "action": 1,
+        "lower": "2113/4096",
+        "upper": "4093/4096",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 9,
+          "binomial_calls": 277,
+          "membership_checks": 134,
+          "largest_integer_bits": 1157
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "29/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "115/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "689/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "153/512",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1651/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "1651/4096",
+            "upper": "4095/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "1897/4096",
+            "upper": "4095/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              2
+            ],
+            "lower": "1011/2048",
+            "upper": "2047/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 256,
+            "stratum_samples": [
+              0,
+              256
+            ],
+            "observed_errors": [
+              0,
+              3
+            ],
+            "lower": "2113/4096",
+            "upper": "4093/4096"
+          }
+        ],
+        "controller_ns": 814100
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 256,
+        "action": 1,
+        "lower": "265/512",
+        "upper": "4093/4096",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 9,
+          "binomial_calls": 275,
+          "membership_checks": 133,
+          "largest_integer_bits": 1156
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "29/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "103/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "599/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1079/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "749/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "1669/4096",
+            "upper": "4095/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "1919/4096",
+            "upper": "4095/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              2
+            ],
+            "lower": "2035/4096",
+            "upper": "2047/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 256,
+            "stratum_samples": [
+              0,
+              256
+            ],
+            "observed_errors": [
+              0,
+              3
+            ],
+            "lower": "265/512",
+            "upper": "4093/4096"
+          }
+        ],
+        "controller_ns": 611900
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 1024,
+        "action": 1,
+        "lower": "2083/4096",
+        "upper": "1237/2048",
+        "counts": {
+          "intervals": 11,
+          "binomial_calls": 479,
+          "membership_checks": 234,
+          "largest_integer_bits": 3327
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "0",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 2,
+            "lower": "0",
+            "upper": "1783/2048"
+          },
+          {
+            "queries": 4,
+            "lower": "11/4096",
+            "upper": "1755/2048"
+          },
+          {
+            "queries": 8,
+            "lower": "13/256",
+            "upper": "3365/4096"
+          },
+          {
+            "queries": 16,
+            "lower": "741/4096",
+            "upper": "3355/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "627/2048",
+            "upper": "1633/2048"
+          },
+          {
+            "queries": 64,
+            "lower": "791/2048",
+            "upper": "773/1024"
+          },
+          {
+            "queries": 128,
+            "lower": "1731/4096",
+            "upper": "1425/2048"
+          },
+          {
+            "queries": 256,
+            "lower": "1827/4096",
+            "upper": "1321/2048"
+          },
+          {
+            "queries": 512,
+            "lower": "509/1024",
+            "upper": "653/1024"
+          },
+          {
+            "queries": 1024,
+            "lower": "2083/4096",
+            "upper": "1237/2048"
+          }
+        ],
+        "controller_ns": 2578700
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    },
+    {
+      "actual_mean": "2253/4096",
+      "corruption": "1/5",
+      "predicted_ones": 2190,
+      "population_sha256": "cc2356030ae3ee8ef75d386f4df9ac01d82008dcf888061aa39c12d6e5cb9829",
+      "predictions_sha256": "fd39f3c563b38c874e0975a75c08bb420c4ed9e8fbb4dc6382c56eed4c093f25",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 512,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 19,
+          "binomial_calls": 76
+        },
+        "M0": 2047,
+        "M1": 2190,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 3,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 8,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 18,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 37,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 72,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 140,
+            "action": null
+          },
+          {
+            "queries": 512,
+            "ones": 291,
+            "action": 1
+          }
+        ],
+        "controller_ns": 305800
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 2446,
+        "action": 1,
+        "lower": "2061/4096",
+        "upper": "601/1024",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 22,
+          "binomial_calls": 785,
+          "membership_checks": 382,
+          "largest_integer_bits": 2190
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "0",
+            "upper": "1017/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "5/4096",
+            "upper": "1017/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "97/2048",
+            "upper": "1017/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "21/128",
+            "upper": "1017/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "1189/4096",
+            "upper": "1017/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              5
+            ],
+            "lower": "303/1024",
+            "upper": "2025/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              13
+            ],
+            "lower": "1289/4096",
+            "upper": "1973/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              22
+            ],
+            "lower": "1507/4096",
+            "upper": "1965/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 256,
+            "stratum_samples": [
+              0,
+              256
+            ],
+            "observed_errors": [
+              0,
+              46
+            ],
+            "lower": "793/2048",
+            "upper": "483/512"
+          },
+          {
+            "stratum": 1,
+            "queries": 512,
+            "stratum_samples": [
+              0,
+              512
+            ],
+            "observed_errors": [
+              0,
+              91
+            ],
+            "lower": "1663/4096",
+            "upper": "3821/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 1024,
+            "stratum_samples": [
+              0,
+              1024
+            ],
+            "observed_errors": [
+              0,
+              183
+            ],
+            "lower": "429/1024",
+            "upper": "59/64"
+          },
+          {
+            "stratum": 1,
+            "queries": 2048,
+            "stratum_samples": [
+              0,
+              2048
+            ],
+            "observed_errors": [
+              0,
+              364
+            ],
+            "lower": "1779/4096",
+            "upper": "3725/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 2190,
+            "stratum_samples": [
+              0,
+              2190
+            ],
+            "observed_errors": [
+              0,
+              393
+            ],
+            "lower": "1797/4096",
+            "upper": "3703/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2191,
+            "stratum_samples": [
+              1,
+              2190
+            ],
+            "observed_errors": [
+              0,
+              393
+            ],
+            "lower": "1797/4096",
+            "upper": "3679/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2192,
+            "stratum_samples": [
+              2,
+              2190
+            ],
+            "observed_errors": [
+              0,
+              393
+            ],
+            "lower": "1797/4096",
+            "upper": "877/1024"
+          },
+          {
+            "stratum": 0,
+            "queries": 2194,
+            "stratum_samples": [
+              4,
+              2190
+            ],
+            "observed_errors": [
+              0,
+              393
+            ],
+            "lower": "1797/4096",
+            "upper": "3119/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2198,
+            "stratum_samples": [
+              8,
+              2190
+            ],
+            "observed_errors": [
+              1,
+              393
+            ],
+            "lower": "899/2048",
+            "upper": "1559/2048"
+          },
+          {
+            "stratum": 0,
+            "queries": 2206,
+            "stratum_samples": [
+              16,
+              2190
+            ],
+            "observed_errors": [
+              2,
+              393
+            ],
+            "lower": "1803/4096",
+            "upper": "11/16"
+          },
+          {
+            "stratum": 0,
+            "queries": 2222,
+            "stratum_samples": [
+              32,
+              2190
+            ],
+            "observed_errors": [
+              2,
+              393
+            ],
+            "lower": "1803/4096",
+            "upper": "1207/2048"
+          },
+          {
+            "stratum": 0,
+            "queries": 2254,
+            "stratum_samples": [
+              64,
+              2190
+            ],
+            "observed_errors": [
+              11,
+              393
+            ],
+            "lower": "947/2048",
+            "upper": "1207/2048"
+          },
+          {
+            "stratum": 0,
+            "queries": 2318,
+            "stratum_samples": [
+              128,
+              2190
+            ],
+            "observed_errors": [
+              29,
+              393
+            ],
+            "lower": "1009/2048",
+            "upper": "1207/2048"
+          },
+          {
+            "stratum": 0,
+            "queries": 2446,
+            "stratum_samples": [
+              256,
+              2190
+            ],
+            "observed_errors": [
+              56,
+              393
+            ],
+            "lower": "2061/4096",
+            "upper": "601/1024"
+          }
+        ],
+        "controller_ns": 4629800
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 2446,
+        "action": 1,
+        "lower": "2067/4096",
+        "upper": "2379/4096",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 22,
+          "binomial_calls": 787,
+          "membership_checks": 383,
+          "largest_integer_bits": 2189
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "0",
+            "upper": "1017/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "5/2048",
+            "upper": "1017/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "247/4096",
+            "upper": "1017/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "747/4096",
+            "upper": "1017/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "625/2048",
+            "upper": "1017/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              5
+            ],
+            "lower": "1253/4096",
+            "upper": "2021/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              13
+            ],
+            "lower": "329/1024",
+            "upper": "3935/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              22
+            ],
+            "lower": "1525/4096",
+            "upper": "1961/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 256,
+            "stratum_samples": [
+              0,
+              256
+            ],
+            "observed_errors": [
+              0,
+              46
+            ],
+            "lower": "799/2048",
+            "upper": "1929/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 512,
+            "stratum_samples": [
+              0,
+              512
+            ],
+            "observed_errors": [
+              0,
+              91
+            ],
+            "lower": "835/2048",
+            "upper": "477/512"
+          },
+          {
+            "stratum": 1,
+            "queries": 1024,
+            "stratum_samples": [
+              0,
+              1024
+            ],
+            "observed_errors": [
+              0,
+              183
+            ],
+            "lower": "215/512",
+            "upper": "3773/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 2048,
+            "stratum_samples": [
+              0,
+              2048
+            ],
+            "observed_errors": [
+              0,
+              364
+            ],
+            "lower": "445/1024",
+            "upper": "931/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 2190,
+            "stratum_samples": [
+              0,
+              2190
+            ],
+            "observed_errors": [
+              0,
+              393
+            ],
+            "lower": "1797/4096",
+            "upper": "3703/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2191,
+            "stratum_samples": [
+              1,
+              2190
+            ],
+            "observed_errors": [
+              0,
+              393
+            ],
+            "lower": "1797/4096",
+            "upper": "3679/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2192,
+            "stratum_samples": [
+              2,
+              2190
+            ],
+            "observed_errors": [
+              0,
+              393
+            ],
+            "lower": "1797/4096",
+            "upper": "441/512"
+          },
+          {
+            "stratum": 0,
+            "queries": 2194,
+            "stratum_samples": [
+              4,
+              2190
+            ],
+            "observed_errors": [
+              0,
+              393
+            ],
+            "lower": "1797/4096",
+            "upper": "3195/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2198,
+            "stratum_samples": [
+              8,
+              2190
+            ],
+            "observed_errors": [
+              1,
+              393
+            ],
+            "lower": "899/2048",
+            "upper": "3053/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2206,
+            "stratum_samples": [
+              16,
+              2190
+            ],
+            "observed_errors": [
+              2,
+              393
+            ],
+            "lower": "1805/4096",
+            "upper": "691/1024"
+          },
+          {
+            "stratum": 0,
+            "queries": 2222,
+            "stratum_samples": [
+              32,
+              2190
+            ],
+            "observed_errors": [
+              2,
+              393
+            ],
+            "lower": "1805/4096",
+            "upper": "2379/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2254,
+            "stratum_samples": [
+              64,
+              2190
+            ],
+            "observed_errors": [
+              11,
+              393
+            ],
+            "lower": "951/2048",
+            "upper": "2379/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2318,
+            "stratum_samples": [
+              128,
+              2190
+            ],
+            "observed_errors": [
+              29,
+              393
+            ],
+            "lower": "2027/4096",
+            "upper": "2379/4096"
+          },
+          {
+            "stratum": 0,
+            "queries": 2446,
+            "stratum_samples": [
+              256,
+              2190
+            ],
+            "observed_errors": [
+              56,
+              393
+            ],
+            "lower": "2067/4096",
+            "upper": "2379/4096"
+          }
+        ],
+        "controller_ns": 3542100
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 1024,
+        "action": 1,
+        "lower": "2083/4096",
+        "upper": "1237/2048",
+        "counts": {
+          "intervals": 11,
+          "binomial_calls": 479,
+          "membership_checks": 234,
+          "largest_integer_bits": 3327
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "0",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 2,
+            "lower": "0",
+            "upper": "1783/2048"
+          },
+          {
+            "queries": 4,
+            "lower": "11/4096",
+            "upper": "1755/2048"
+          },
+          {
+            "queries": 8,
+            "lower": "13/256",
+            "upper": "3365/4096"
+          },
+          {
+            "queries": 16,
+            "lower": "741/4096",
+            "upper": "3355/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "627/2048",
+            "upper": "1633/2048"
+          },
+          {
+            "queries": 64,
+            "lower": "791/2048",
+            "upper": "773/1024"
+          },
+          {
+            "queries": 128,
+            "lower": "1731/4096",
+            "upper": "1425/2048"
+          },
+          {
+            "queries": 256,
+            "lower": "1827/4096",
+            "upper": "1321/2048"
+          },
+          {
+            "queries": 512,
+            "lower": "509/1024",
+            "upper": "653/1024"
+          },
+          {
+            "queries": 1024,
+            "lower": "2083/4096",
+            "upper": "1237/2048"
+          }
+        ],
+        "controller_ns": 2551900
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    },
+    {
+      "actual_mean": "2253/4096",
+      "corruption": "1",
+      "predicted_ones": 1843,
+      "population_sha256": "cc2356030ae3ee8ef75d386f4df9ac01d82008dcf888061aa39c12d6e5cb9829",
+      "predictions_sha256": "4aa9073d7b5632b6f1b012b61facf78a1609f1e0a7800da03478406dcbafd7d5",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 512,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 19,
+          "binomial_calls": 76
+        },
+        "M0": 2047,
+        "M1": 2253,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 3,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 8,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 18,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 37,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 72,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 140,
+            "action": null
+          },
+          {
+            "queries": 512,
+            "ones": 291,
+            "action": 1
+          }
+        ],
+        "controller_ns": 544300
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 64,
+        "action": 1,
+        "lower": "2085/4096",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 7,
+          "binomial_calls": 181,
+          "membership_checks": 87,
+          "largest_integer_bits": 429
+        },
+        "stages": [
+          {
+            "stratum": 0,
+            "queries": 1,
+            "stratum_samples": [
+              1,
+              0
+            ],
+            "observed_errors": [
+              1,
+              0
+            ],
+            "lower": "29/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 2,
+            "stratum_samples": [
+              2,
+              0
+            ],
+            "observed_errors": [
+              2,
+              0
+            ],
+            "lower": "231/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 4,
+            "stratum_samples": [
+              4,
+              0
+            ],
+            "observed_errors": [
+              4,
+              0
+            ],
+            "lower": "691/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 8,
+            "stratum_samples": [
+              8,
+              0
+            ],
+            "observed_errors": [
+              8,
+              0
+            ],
+            "lower": "1227/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 16,
+            "stratum_samples": [
+              16,
+              0
+            ],
+            "observed_errors": [
+              16,
+              0
+            ],
+            "lower": "1655/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 32,
+            "stratum_samples": [
+              32,
+              0
+            ],
+            "observed_errors": [
+              32,
+              0
+            ],
+            "lower": "1929/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 64,
+            "stratum_samples": [
+              64,
+              0
+            ],
+            "observed_errors": [
+              64,
+              0
+            ],
+            "lower": "2085/4096",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 330900
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 128,
+        "action": 1,
+        "lower": "33/64",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 8,
+          "binomial_calls": 204,
+          "membership_checks": 98,
+          "largest_integer_bits": 717
+        },
+        "stages": [
+          {
+            "stratum": 0,
+            "queries": 1,
+            "stratum_samples": [
+              1,
+              0
+            ],
+            "observed_errors": [
+              1,
+              0
+            ],
+            "lower": "29/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 2,
+            "stratum_samples": [
+              2,
+              0
+            ],
+            "observed_errors": [
+              2,
+              0
+            ],
+            "lower": "207/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 4,
+            "stratum_samples": [
+              4,
+              0
+            ],
+            "observed_errors": [
+              4,
+              0
+            ],
+            "lower": "601/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 8,
+            "stratum_samples": [
+              8,
+              0
+            ],
+            "observed_errors": [
+              8,
+              0
+            ],
+            "lower": "541/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 16,
+            "stratum_samples": [
+              16,
+              0
+            ],
+            "observed_errors": [
+              16,
+              0
+            ],
+            "lower": "751/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 32,
+            "stratum_samples": [
+              32,
+              0
+            ],
+            "observed_errors": [
+              32,
+              0
+            ],
+            "lower": "451/1024",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 64,
+            "stratum_samples": [
+              64,
+              0
+            ],
+            "observed_errors": [
+              64,
+              0
+            ],
+            "lower": "1997/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 128,
+            "stratum_samples": [
+              128,
+              0
+            ],
+            "observed_errors": [
+              128,
+              0
+            ],
+            "lower": "33/64",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 360400
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 1024,
+        "action": 1,
+        "lower": "2083/4096",
+        "upper": "1237/2048",
+        "counts": {
+          "intervals": 11,
+          "binomial_calls": 479,
+          "membership_checks": 234,
+          "largest_integer_bits": 3327
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "0",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 2,
+            "lower": "0",
+            "upper": "1783/2048"
+          },
+          {
+            "queries": 4,
+            "lower": "11/4096",
+            "upper": "1755/2048"
+          },
+          {
+            "queries": 8,
+            "lower": "13/256",
+            "upper": "3365/4096"
+          },
+          {
+            "queries": 16,
+            "lower": "741/4096",
+            "upper": "3355/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "627/2048",
+            "upper": "1633/2048"
+          },
+          {
+            "queries": 64,
+            "lower": "791/2048",
+            "upper": "773/1024"
+          },
+          {
+            "queries": 128,
+            "lower": "1731/4096",
+            "upper": "1425/2048"
+          },
+          {
+            "queries": 256,
+            "lower": "1827/4096",
+            "upper": "1321/2048"
+          },
+          {
+            "queries": 512,
+            "lower": "509/1024",
+            "upper": "653/1024"
+          },
+          {
+            "queries": 1024,
+            "lower": "2083/4096",
+            "upper": "1237/2048"
+          }
+        ],
+        "controller_ns": 2630000
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    },
+    {
+      "actual_mean": "2663/4096",
+      "corruption": "0",
+      "predicted_ones": 2663,
+      "population_sha256": "df6840384bb6976541ba9496ab244d9855c36c203559438c3b131a52ee903f1c",
+      "predictions_sha256": "df6840384bb6976541ba9496ab244d9855c36c203559438c3b131a52ee903f1c",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 256,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 17,
+          "binomial_calls": 68
+        },
+        "M0": 2047,
+        "M1": 2663,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 3,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 6,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 12,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 23,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 40,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 77,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 157,
+            "action": 1
+          }
+        ],
+        "controller_ns": 164400
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 32,
+        "action": 1,
+        "lower": "2279/4096",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 6,
+          "binomial_calls": 158,
+          "membership_checks": 76,
+          "largest_integer_bits": 257
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "17/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "273/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "51/256",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "725/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1955/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "2279/4096",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 263900
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 32,
+        "action": 1,
+        "lower": "2131/4096",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 6,
+          "binomial_calls": 158,
+          "membership_checks": 76,
+          "largest_integer_bits": 257
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "17/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "61/1024",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "355/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "639/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1775/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "2131/4096",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 228500
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 256,
+        "action": 1,
+        "lower": "525/1024",
+        "upper": "2899/4096",
+        "counts": {
+          "intervals": 9,
+          "binomial_calls": 403,
+          "membership_checks": 197,
+          "largest_integer_bits": 1385
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "0",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 2,
+            "lower": "35/4096",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 4,
+            "lower": "293/2048",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 8,
+            "lower": "275/1024",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 16,
+            "lower": "795/2048",
+            "upper": "3929/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "465/1024",
+            "upper": "3713/4096"
+          },
+          {
+            "queries": 64,
+            "lower": "465/1024",
+            "upper": "813/1024"
+          },
+          {
+            "queries": 128,
+            "lower": "1889/4096",
+            "upper": "2995/4096"
+          },
+          {
+            "queries": 256,
+            "lower": "525/1024",
+            "upper": "2899/4096"
+          }
+        ],
+        "controller_ns": 508800
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    },
+    {
+      "actual_mean": "2663/4096",
+      "corruption": "1/50",
+      "predicted_ones": 2638,
+      "population_sha256": "df6840384bb6976541ba9496ab244d9855c36c203559438c3b131a52ee903f1c",
+      "predictions_sha256": "600f1985ece2f9b2f94893625ef333d5e6da15bdb5516777ad53fc4414d47dfa",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 256,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 17,
+          "binomial_calls": 68
+        },
+        "M0": 2047,
+        "M1": 2638,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 3,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 6,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 12,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 23,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 40,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 77,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 157,
+            "action": 1
+          }
+        ],
+        "controller_ns": 156300
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 64,
+        "action": 1,
+        "lower": "2225/4096",
+        "upper": "4095/4096",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 7,
+          "binomial_calls": 221,
+          "membership_checks": 107,
+          "largest_integer_bits": 442
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "33/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "135/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "101/512",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "359/1024",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "359/1024",
+            "upper": "4095/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "1911/4096",
+            "upper": "4095/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "2225/4096",
+            "upper": "4095/4096"
+          }
+        ],
+        "controller_ns": 320000
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 64,
+        "action": 1,
+        "lower": "2251/4096",
+        "upper": "4095/4096",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 7,
+          "binomial_calls": 219,
+          "membership_checks": 106,
+          "largest_integer_bits": 441
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "33/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "121/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "703/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "633/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "1505/4096",
+            "upper": "4095/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "979/2048",
+            "upper": "4095/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "2251/4096",
+            "upper": "4095/4096"
+          }
+        ],
+        "controller_ns": 285300
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 256,
+        "action": 1,
+        "lower": "525/1024",
+        "upper": "2899/4096",
+        "counts": {
+          "intervals": 9,
+          "binomial_calls": 403,
+          "membership_checks": 197,
+          "largest_integer_bits": 1385
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "0",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 2,
+            "lower": "35/4096",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 4,
+            "lower": "293/2048",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 8,
+            "lower": "275/1024",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 16,
+            "lower": "795/2048",
+            "upper": "3929/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "465/1024",
+            "upper": "3713/4096"
+          },
+          {
+            "queries": 64,
+            "lower": "465/1024",
+            "upper": "813/1024"
+          },
+          {
+            "queries": 128,
+            "lower": "1889/4096",
+            "upper": "2995/4096"
+          },
+          {
+            "queries": 256,
+            "lower": "525/1024",
+            "upper": "2899/4096"
+          }
+        ],
+        "controller_ns": 502600
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    },
+    {
+      "actual_mean": "2663/4096",
+      "corruption": "1/5",
+      "predicted_ones": 2378,
+      "population_sha256": "df6840384bb6976541ba9496ab244d9855c36c203559438c3b131a52ee903f1c",
+      "predictions_sha256": "7d0670af23d3f414c4b0a3a63d797a09872b621b5054dc93a6721ab483faaa7d",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 256,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 17,
+          "binomial_calls": 68
+        },
+        "M0": 2047,
+        "M1": 2378,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 3,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 6,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 12,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 23,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 40,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 77,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 157,
+            "action": 1
+          }
+        ],
+        "controller_ns": 153400
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 2048,
+        "action": 1,
+        "lower": "2077/4096",
+        "upper": "481/512",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 12,
+          "binomial_calls": 420,
+          "membership_checks": 204,
+          "largest_integer_bits": 2351
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "15/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "61/1024",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "729/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "1295/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "1295/4096",
+            "upper": "4095/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              6
+            ],
+            "lower": "1295/4096",
+            "upper": "4019/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              8
+            ],
+            "lower": "1621/4096",
+            "upper": "4019/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              15
+            ],
+            "lower": "1793/4096",
+            "upper": "3999/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 256,
+            "stratum_samples": [
+              0,
+              256
+            ],
+            "observed_errors": [
+              0,
+              26
+            ],
+            "lower": "1939/4096",
+            "upper": "249/256"
+          },
+          {
+            "stratum": 1,
+            "queries": 512,
+            "stratum_samples": [
+              0,
+              512
+            ],
+            "observed_errors": [
+              0,
+              57
+            ],
+            "lower": "991/2048",
+            "upper": "1965/2048"
+          },
+          {
+            "stratum": 1,
+            "queries": 1024,
+            "stratum_samples": [
+              0,
+              1024
+            ],
+            "observed_errors": [
+              0,
+              122
+            ],
+            "lower": "1007/2048",
+            "upper": "3879/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 2048,
+            "stratum_samples": [
+              0,
+              2048
+            ],
+            "observed_errors": [
+              0,
+              234
+            ],
+            "lower": "2077/4096",
+            "upper": "481/512"
+          }
+        ],
+        "controller_ns": 3267900
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 2048,
+        "action": 1,
+        "lower": "1039/2048",
+        "upper": "3847/4096",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 12,
+          "binomial_calls": 420,
+          "membership_checks": 204,
+          "largest_integer_bits": 2350
+        },
+        "stages": [
+          {
+            "stratum": 1,
+            "queries": 1,
+            "stratum_samples": [
+              0,
+              1
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "15/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 2,
+            "stratum_samples": [
+              0,
+              2
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "109/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 4,
+            "stratum_samples": [
+              0,
+              4
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "317/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 8,
+            "stratum_samples": [
+              0,
+              8
+            ],
+            "observed_errors": [
+              0,
+              0
+            ],
+            "lower": "571/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 1,
+            "queries": 16,
+            "stratum_samples": [
+              0,
+              16
+            ],
+            "observed_errors": [
+              0,
+              1
+            ],
+            "lower": "1357/4096",
+            "upper": "4095/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 32,
+            "stratum_samples": [
+              0,
+              32
+            ],
+            "observed_errors": [
+              0,
+              6
+            ],
+            "lower": "1357/4096",
+            "upper": "501/512"
+          },
+          {
+            "stratum": 1,
+            "queries": 64,
+            "stratum_samples": [
+              0,
+              64
+            ],
+            "observed_errors": [
+              0,
+              8
+            ],
+            "lower": "825/2048",
+            "upper": "501/512"
+          },
+          {
+            "stratum": 1,
+            "queries": 128,
+            "stratum_samples": [
+              0,
+              128
+            ],
+            "observed_errors": [
+              0,
+              15
+            ],
+            "lower": "1811/4096",
+            "upper": "3993/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 256,
+            "stratum_samples": [
+              0,
+              256
+            ],
+            "observed_errors": [
+              0,
+              26
+            ],
+            "lower": "975/2048",
+            "upper": "3979/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 512,
+            "stratum_samples": [
+              0,
+              512
+            ],
+            "observed_errors": [
+              0,
+              57
+            ],
+            "lower": "497/1024",
+            "upper": "3927/4096"
+          },
+          {
+            "stratum": 1,
+            "queries": 1024,
+            "stratum_samples": [
+              0,
+              1024
+            ],
+            "observed_errors": [
+              0,
+              122
+            ],
+            "lower": "1009/2048",
+            "upper": "969/1024"
+          },
+          {
+            "stratum": 1,
+            "queries": 2048,
+            "stratum_samples": [
+              0,
+              2048
+            ],
+            "observed_errors": [
+              0,
+              234
+            ],
+            "lower": "1039/2048",
+            "upper": "3847/4096"
+          }
+        ],
+        "controller_ns": 3466700
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 256,
+        "action": 1,
+        "lower": "525/1024",
+        "upper": "2899/4096",
+        "counts": {
+          "intervals": 9,
+          "binomial_calls": 403,
+          "membership_checks": 197,
+          "largest_integer_bits": 1385
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "0",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 2,
+            "lower": "35/4096",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 4,
+            "lower": "293/2048",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 8,
+            "lower": "275/1024",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 16,
+            "lower": "795/2048",
+            "upper": "3929/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "465/1024",
+            "upper": "3713/4096"
+          },
+          {
+            "queries": 64,
+            "lower": "465/1024",
+            "upper": "813/1024"
+          },
+          {
+            "queries": 128,
+            "lower": "1889/4096",
+            "upper": "2995/4096"
+          },
+          {
+            "queries": 256,
+            "lower": "525/1024",
+            "upper": "2899/4096"
+          }
+        ],
+        "controller_ns": 564100
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    },
+    {
+      "actual_mean": "2663/4096",
+      "corruption": "1",
+      "predicted_ones": 1433,
+      "population_sha256": "df6840384bb6976541ba9496ab244d9855c36c203559438c3b131a52ee903f1c",
+      "predictions_sha256": "67d08dd976684960956ed768ebd7ad591f77cb462aa2d8226a22afde878c4aab",
+      "direct": {
+        "mode": "direct_prediction_gap",
+        "queries": 256,
+        "action": 1,
+        "counts": {
+          "prediction_reads": 4096,
+          "likelihood_tests": 17,
+          "binomial_calls": 68
+        },
+        "M0": 2047,
+        "M1": 2663,
+        "stages": [
+          {
+            "queries": 1,
+            "ones": 0,
+            "action": null
+          },
+          {
+            "queries": 2,
+            "ones": 1,
+            "action": null
+          },
+          {
+            "queries": 4,
+            "ones": 3,
+            "action": null
+          },
+          {
+            "queries": 8,
+            "ones": 6,
+            "action": null
+          },
+          {
+            "queries": 16,
+            "ones": 12,
+            "action": null
+          },
+          {
+            "queries": 32,
+            "ones": 23,
+            "action": null
+          },
+          {
+            "queries": 64,
+            "ones": 40,
+            "action": null
+          },
+          {
+            "queries": 128,
+            "ones": 77,
+            "action": null
+          },
+          {
+            "queries": 256,
+            "ones": 157,
+            "action": 1
+          }
+        ],
+        "controller_ns": 174300
+      },
+      "guided_mixture": {
+        "mode": "guided_extreme_mixture",
+        "queries": 32,
+        "action": 1,
+        "lower": "2279/4096",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 6,
+          "binomial_calls": 158,
+          "membership_checks": 76,
+          "largest_integer_bits": 257
+        },
+        "stages": [
+          {
+            "stratum": 0,
+            "queries": 1,
+            "stratum_samples": [
+              1,
+              0
+            ],
+            "observed_errors": [
+              1,
+              0
+            ],
+            "lower": "17/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 2,
+            "stratum_samples": [
+              2,
+              0
+            ],
+            "observed_errors": [
+              2,
+              0
+            ],
+            "lower": "273/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 4,
+            "stratum_samples": [
+              4,
+              0
+            ],
+            "observed_errors": [
+              4,
+              0
+            ],
+            "lower": "51/256",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 8,
+            "stratum_samples": [
+              8,
+              0
+            ],
+            "observed_errors": [
+              8,
+              0
+            ],
+            "lower": "725/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 16,
+            "stratum_samples": [
+              16,
+              0
+            ],
+            "observed_errors": [
+              16,
+              0
+            ],
+            "lower": "1955/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 32,
+            "stratum_samples": [
+              32,
+              0
+            ],
+            "observed_errors": [
+              32,
+              0
+            ],
+            "lower": "2279/4096",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 338700
+      },
+      "guided_uniform": {
+        "mode": "prediction_strata",
+        "queries": 32,
+        "action": 1,
+        "lower": "2131/4096",
+        "upper": "1",
+        "counts": {
+          "prediction_partition_reads": 4096,
+          "intervals": 6,
+          "binomial_calls": 158,
+          "membership_checks": 76,
+          "largest_integer_bits": 257
+        },
+        "stages": [
+          {
+            "stratum": 0,
+            "queries": 1,
+            "stratum_samples": [
+              1,
+              0
+            ],
+            "observed_errors": [
+              1,
+              0
+            ],
+            "lower": "17/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 2,
+            "stratum_samples": [
+              2,
+              0
+            ],
+            "observed_errors": [
+              2,
+              0
+            ],
+            "lower": "61/1024",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 4,
+            "stratum_samples": [
+              4,
+              0
+            ],
+            "observed_errors": [
+              4,
+              0
+            ],
+            "lower": "355/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 8,
+            "stratum_samples": [
+              8,
+              0
+            ],
+            "observed_errors": [
+              8,
+              0
+            ],
+            "lower": "639/2048",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 16,
+            "stratum_samples": [
+              16,
+              0
+            ],
+            "observed_errors": [
+              16,
+              0
+            ],
+            "lower": "1775/4096",
+            "upper": "1"
+          },
+          {
+            "stratum": 0,
+            "queries": 32,
+            "stratum_samples": [
+              32,
+              0
+            ],
+            "observed_errors": [
+              32,
+              0
+            ],
+            "lower": "2131/4096",
+            "upper": "1"
+          }
+        ],
+        "controller_ns": 233700
+      },
+      "ordinary_uniform": {
+        "mode": "ordinary_uniform",
+        "queries": 256,
+        "action": 1,
+        "lower": "525/1024",
+        "upper": "2899/4096",
+        "counts": {
+          "intervals": 9,
+          "binomial_calls": 403,
+          "membership_checks": 197,
+          "largest_integer_bits": 1385
+        },
+        "stages": [
+          {
+            "queries": 1,
+            "lower": "0",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 2,
+            "lower": "35/4096",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 4,
+            "lower": "293/2048",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 8,
+            "lower": "275/1024",
+            "upper": "3993/4096"
+          },
+          {
+            "queries": 16,
+            "lower": "795/2048",
+            "upper": "3929/4096"
+          },
+          {
+            "queries": 32,
+            "lower": "465/1024",
+            "upper": "3713/4096"
+          },
+          {
+            "queries": 64,
+            "lower": "465/1024",
+            "upper": "813/1024"
+          },
+          {
+            "queries": 128,
+            "lower": "1889/4096",
+            "upper": "2995/4096"
+          },
+          {
+            "queries": 256,
+            "lower": "525/1024",
+            "upper": "2899/4096"
+          }
+        ],
+        "controller_ns": 668900
+      },
+      "realized_correct": {
+        "direct": true,
+        "guided_mixture": true,
+        "guided_uniform": true,
+        "ordinary_uniform": true
+      }
+    }
+  ],
+  "elapsed_ns": 135637700,
+  "end_utc": "2026-10-11T22:15:29.921988+00:00"
+}

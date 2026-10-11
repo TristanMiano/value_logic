@@ -75,3 +75,28 @@ confirmation or P3-11 work has started; all named results are DEVELOPMENT.
 No material claim is promoted. These are supported developmental mechanisms,
 including elementary/established ingredients whose integration may still fail
 the complete-cost or substantive-delta requirement.
+
+## s02 second constructive revision
+
+- **S04/S07 tolerance refinement narrowed:** exact delta separation works,
+  but much of the initial speedup is an unchanged-source shortcut. Prepared
+  ordinary SAT reverses the first guard comparison; compiled guards are a
+  near tie. Preserve the threshold-encoding failure and its separate repair.
+  [Results](s02/tolerance_results.md). Deprioritize tuning these tiny fixtures.
+- **S08 added, S05/S06 lineage:** a priced finite-population value service
+  resolves deterministic mathematical queries through randomized sampling.
+  A fallible model supplies groups; checked samples determine their values.
+  Grouping quality differs from prediction accuracy: a globally inverted
+  partition can still have low variance. Exact confidence mixtures retain
+  coverage with arbitrary fixed errors, but noisy groups can be more expensive
+  than direct ordinary decision tests. [Construction](s02/value_sampling.md).
+  Finite-population PPI, stratification and without-replacement confidence
+  sequences are mandatory conventional antecedents, not claimed discoveries.
+- **Preferred next integration:** actual SAT-family values under explicit
+  clause edits, using common paid receipts, monotonicity and lazy witness
+  checks. Measure the complete evaluator/controller bill. This may connect
+  Q1/Q2/Q3/Q4/Q5 at an executable scope; it does not settle general logical
+  counterfactuals or establish a new contribution merely by recombination.
+
+Current continuation: [s02 checkpoint 2](s02/cp02.md). Readiness remains
+unassessed and P3-POS01 outstanding.

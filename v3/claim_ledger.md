@@ -613,4 +613,16 @@ and preserved raw observations/dispositions. Publication adds no research credit
 | DS-S06-LIMIT | Exact post-certificate feedback has a linear-time ordinary control; unrestricted positive-cost static threshold orders are equivalent or incomparable. | Constructive proof and 9,992 strict witnesses; narrows application of the earlier quadratic range kernel. |
 | DS-S07 | Explicit CNF edits maintain SAT witnesses/UNSAT supports; a lazy two-witness library avoids some repeated solver calls. | Warm small-stream engineering effect against fresh/full-check/native-incremental controls; identical ordinary integration allowed. Native UNSAT trust, cold cost, larger workloads and total retained memory remain limitations. |
 | DS-S04-S07 | Rational minimax-regret action refinement with weighted-MaxSAT separation and explicit source-revision rules. | 24 tiny instances matched enumeration; warm pools reduced oracle calls but increased total time slightly. Delta-region separation is the next developmental mechanism. |
+
+## P3-SEARCH-01-C001 — s02 checkpoint 2
+
+Codex (GPT-6). [Active checkpoint](discovery/s02/cp02.md): 59.670181295 new
+program research minutes, 180.329818705 remaining to C001's floor. Historical
+checkpoint values above retain their dated scope. DEVELOPMENT only;
+P3-POS01 OUTSTANDING, verification readiness unassessed, P3-11 deferred.
+
+| ID | Constructive finding / exact delta | Magnitude, comparison and limits |
+|---|---|---|
+| DS-S04-S07-DELTA | Single-clause deletion separation and tolerance-directed bounds restrict new work to newly admitted worlds. | 32 deletion comparisons match full optimization. Prepared ordinary SAT removes the first timing benefit; compiled guards are a near tie. Encoding failure preserved separately from repair. |
+| DS-S08 | Explicit sequential statistical value service for a fixed population of deterministic mathematical bits; checked samples orient fallible prediction groups. | Exact small coverage checks and 12 exposed synthetic populations. Low-heterogeneity grouping saves labels even under global inversion; 20% errors can lose badly to a direct ordinary decision test. Stratification/PPI/confidence-sequence ingredients are pre-existing; real evaluator economics remain open. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | No rigorous confirmation or author contribution gate attempted; P3-11 deferred. |

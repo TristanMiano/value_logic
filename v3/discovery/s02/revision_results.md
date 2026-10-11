@@ -83,3 +83,9 @@ claiming a bounded-log implementation. Even with a bounded activation log,
 the registry and native solver retain previously registered clauses; this is
 **not** a proof that total memory is O(active clauses). Future memory claims
 need retirement/reconstruction or an explicit finite historical-ID cap.
+
+The targeted [rebase check](rebase01.json) subsequently exercised 132 resets
+across nine n=4,8,12/capacity=1,2,4 runs. All 3,465 answers matched fresh native
+solving and the activation log stayed below its declared bound. This closes
+only that missing developmental branch check; the historical registry/native
+solver memory limitation remains.

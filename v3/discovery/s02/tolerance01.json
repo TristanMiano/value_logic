@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "evidence": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "start_utc": "2026-10-11T21:55:25.239288+00:00",
+  "command": [
+    "v3/discovery/s02/tolerance_probe.py",
+    "v3/discovery/s02/tolerance01.json"
+  ],
+  "source_sha256": "11d60fc240872df1ceb20d5161f6d98ae137e03d4648775f6e1921b0614345aa",
+  "input_record": {
+    "path": "delta01.json",
+    "sha256": "eb8490d3c528bdeb8edd7bd2310768602731e75e9fcf2c7688c7fc64881bd194"
+  },
+  "timing_scope": "matched warm tolerance queries; old warranted action/source certificate is shared pre-existing input; includes guard/threshold construction/solver calls, excludes import and harness",
+  "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\trist\\projects\\value_logic_2\\v3\\discovery\\s02\\tolerance_probe.py\", line 159, in main\n    result['encoding_assignments'] = encoding_checks()\n                                     ~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\trist\\projects\\value_logic_2\\v3\\discovery\\s02\\tolerance_probe.py\", line 144, in encoding_checks\n    assert got == expected\n           ^^^^^^^^^^^^^^^\nAssertionError\n",
+  "elapsed_ns": 4696800,
+  "end_utc": "2026-10-11T21:55:25.243971+00:00"
+}

@@ -168,3 +168,39 @@ warm time was 46.467 ms versus 44.407 ms cold. Thus this first integration
 source had only ten models; no large-source speedup follows. Full membership
 filtering was used, not the lazy edit-aware checker. Upper bounds trust RC2;
 enumeration independently checked only these tiny instances.
+
+## 9. Delta-region screen and a cheaper decision-directed repair
+
+The [delta probe](delta_probe.py) matched full new-source optimization on 32
+single-clause deletions (n=4,6,12,20); 16 n<=6 cases also matched enumeration.
+Sixteen changes had nonempty new regions, 12 were public duplicate/tautology
+shortcuts, and four had empty deltas. Aggregate delta time was 13.123 ms versus
+26.118 ms for full separation, but on the 16 nonempty cases the times were
+12.993 versus 13.154 ms. Most observed benefit came from avoiding unnecessary
+optimization on unchanged sources. This does not establish a nontrivial-region
+speedup. Sixteen action transports were sound against the exact solver, but
+only two were tight; the largest observed excess was 23/6 loss units.
+
+For an action with an accepted tolerance epsilon, exact new regret may be a
+stronger service than needed. On Delta, the deleted clause fixes its literals
+false. For each affine action contrast, substitute those fixed bits and bound
+every remaining bit by its independent 0/1 extreme. The maximum across
+comparators is a cheap U_delta_box. Then
+
+    R_new(p) <= max(U_old, U_delta_box).
+
+If this is <=epsilon, no SAT or MaxSAT query is needed, even when the newly
+admitted region is nonempty and changes mathematical possibilities. This is
+an ordinary relaxation/branch-and-bound bound; the intended new synthesis is
+a checked edit service that tries it before paying for full search. The bound
+has to be charged and compared against ordinary methods that use it too.
+
+When the box bound fails, the proper conventional comparison for a tolerance
+query is SAT search for a regret violation, not necessarily full MaxSAT value
+optimization. For each comparator, clear rational denominators and encode
+the integer strict threshold h_a(x)>epsilon as weighted Boolean threshold
+constraints. A found source model is a counterexample. UNSAT across all
+comparators warrants the tolerance, subject to the solver/proof trust contract.
+This may stop after one violating comparator. Charge encoding and integer
+growth; a pseudo-polynomial threshold construction is not a general cheap
+oracle. Next compare these matched decision services.
