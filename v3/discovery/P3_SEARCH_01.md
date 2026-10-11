@@ -4,8 +4,8 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 unfinished; P3-POS01 OUTSTANDING**.
-New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s02/cp04.md),
-[portfolio](candidates.md), [exact actuals](s02/effective_actuals.json).
+New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s03/cp01.md),
+[portfolio](candidates.md), [exact actuals](s03/effective_actuals.json).
 
 Current s02 direction: persistent value margins and targeted positive-proof
 repair under explicit local edits, with reusable censored count confidence.

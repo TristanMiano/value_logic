@@ -650,3 +650,17 @@ P3-POS01 OUTSTANDING, readiness unassessed, P3-11 deferred.
 | DS-S06-PILOT | A paid pilot learns proof-production yield and cumulative cost without buying unobserved truth labels. | 48 exposed warrants valid in the observed cohorts. Better than the weak bounded rule, worse than the strongest full-call statistical control on n=100; no economic advantage established. |
 | DS-S08-MARGIN | One acquired count margin survives supported local edits, can abstain, and restores on removal; cached-witness refinement is sharp for the stated information. | 464 witnesses support lower count 564; 145/273 states warranted without new edit-time solver calls. History/acquisition/binding dominate the .3364 ms edit bill. Ordinary identical transport is allowed; external authentication and broader usefulness remain open. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | No rigorous confirmation or author contribution gate attempted; P3-11 deferred. |
+
+## P3-SEARCH-01-C001 — s03 checkpoint 1
+
+Codex (GPT-6). [Active checkpoint](discovery/s03/cp01.md): approximately
+128.76240947 research minutes, 111.23759053 remaining to C001's fresh floor.
+Exact values are in the linked effective actuals. DEVELOPMENT only;
+P3-POS01 OUTSTANDING, readiness unassessed, P3-11 deferred.
+
+| ID | Constructive finding / delta | Magnitude, comparison and limits |
+|---|---|---|
+| DS-S09-TREE | Exact nested count projections and signed product-relation value bounds; hard receipts update along tree paths. | 360 small endpoint cases, 2,578 static projections and 90 dynamic cases matched; 1,000 prepared subtree queries at N=8,192 took 1.7958 ms. Supplied bounds omit acquisition; ordinary tree optimization is a direct antecedent. |
+| DS-S10-BET | Rational positive-production factors and a conservative remaining-count mean yield a joint confidence source under adaptive computation censoring. | Small sequential cases and 15,999 null-allocation vectors matched. Stratified supermartingale products and adaptive sampling are established; the censoring/count-profile specialization remains developmental. |
+| DS-S10-PROFILE | Numerical proposals receive exact rational exchange certificates before warranting the total-count claim. | On a paired exposed heterogeneous trace, 1,362.6001 ms full profiling fell to 29.5213 ms; imports cost 403.8213 ms. Naive proposals can remain expensive. This is a kernel capability, not an end-to-end economic or novel-contribution claim. |
+| P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | Complete evaluator integration and strongest ordinary comparisons remain necessary. No rigorous confirmation or contribution gate attempted. |

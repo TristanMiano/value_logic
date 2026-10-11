@@ -140,3 +140,26 @@ forecast. Keep the broader portfolio open; P3-POS01 remains OUTSTANDING.
 Next: targeted positive-proof repair and margin-investment economics, retaining
 the wider portfolio. [Current checkpoint](s02/cp04.md). All results remain
 DEVELOPMENT; no material claim is promoted and readiness is unassessed.
+
+## s03 constructive revision
+
+- **S08T repair comparison:** targeted positive-proof repair bought four more
+  warrants at higher call/time cost than broad repair. Preserve that tradeoff;
+  it is not a clear policy win. [Results](s02/margin_plan.md).
+- **S09 added, S05/S08T lineage:** nested count constraints retain information
+  for changing subgroup/value questions. Exact tree propagation and a merged
+  marginal-cost optimizer matched small sources; subtree queries are cheap,
+  weighted objectives less so. Paid acquisition remains open. Ordinary tree
+  dynamic programming is a direct comparator. [Development](s03/laminar.md).
+- **S10 added, S06/S08 lineage:** positive-proof production supports a rational
+  supermartingale under truth-dependent computation censoring. Exact convex
+  count allocation, a proposed-allocation exchange certificate and ordinary
+  numerical advice make joint-value profiling substantially cheaper in exposed
+  kernel examples. The joint statistical principles are established; complete
+  proof-service economics and any material contribution remain unresolved.
+  [Derivation and mixed results](s03/positive_bets.md).
+
+Preferred next work is a complete-cost heterogeneous evaluator integration,
+including strong cost-directed ordinary statistical controls. Keep the wider
+portfolio open. [Current checkpoint](s03/cp01.md). P3-POS01 OUTSTANDING;
+readiness unassessed, with no P3-11 promotion.

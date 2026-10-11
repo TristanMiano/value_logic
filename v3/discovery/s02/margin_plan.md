@@ -92,3 +92,55 @@ a deficient lower bound without a new sampling-risk charge: it pointwise
 refines the same base confidence source. A fallible scheduler can prioritize
 likely cheap positive repairs; every failed attempt is paid. Whether that
 policy is useful compared with ordinary exact witness repair remains open.
+
+## Prospective targeted-repair continuation
+
+Start both new controllers from the same saved bound, 464 serialized checked
+receipts, fixed source and exact local edit stream. Native solver state was
+closed by the earlier prototype; rebuild each queried instance lazily and
+charge that construction. Every accepted repair is checked against the fixed
+base formula, its unit 1, and the current local unit. It becomes a persistent
+base-positive receipt and can be rechecked under later changes. Negative or
+invalid proposals remain unknown; their outcomes may only guide scheduling.
+
+On an insufficient bound, allow at most eight new proof attempts per edit.
+Compare (a) target uncertain active coordinates first, then fall back to other
+unproved coordinates, and (b) a fixed broad order over unproved coordinates.
+Both use the same confidence bound and every accepted receipt, and both may
+abstain when the per-edit acquisition budget is exhausted. Avoid retrying the
+same failed source/index/unit proposal unless that local source changes.
+The strongest ordinary constraint-aware controller may implement the targeted
+rule identically; this is a mechanism comparison, not superiority over all
+ordinary methods. Preserve initial and cumulative costs, native builds, failed
+calls, action coverage and returned bounds.
+
+Local targeting has no universal advantage. For example, with N=8 and target
+4, a base lower bound T=5 and two affected unknown coordinates give lower 3.
+If the two affected instances are currently false and expensive, while a
+cheap outside positive would bring the exact receipt count from 3 to 4,
+targeted search can waste two expensive attempts before the useful outside
+proof. Even fewer required positive repairs does not determine total expected
+cost without a useful yield/cost model. This counterexample remains alongside
+any favorable developmental stream result.
+
+## Targeted-repair outcome
+
+[margin_repair01.json](margin_repair01.json) completed normally. All three
+controllers retained the same saved initial source and 272 edits. Transport
+alone warranted 144 edited states in 36.3687 ms of new lifecycle cost. Broad
+repair warranted 254 in 156.7923 ms, with 181 native calls and 80 accepted
+positive receipt events. Targeted repair warranted 258 in 171.4982 ms, with
+195 calls and 81 positive events. Each repair policy had the same eight-attempt
+cap per edit; this is not an equal wall-time budget. All returned bounds
+matched the saved exact reference. Three invalid repair proposals were rejected.
+
+Targeting bought four more warrants but used more calls and time. There is no
+clear policy winner, and this exposed stream does not justify further local
+tuning. Broad and targeted priority both used historical SAT hints only for
+scheduling; unsupported native negatives remained unknown. Persistent unique
+receipt counts finished at 533 and 528 respectively, below the accepted-event
+counts added to 464 because a coordinate's new witness can replace an old one.
+Both policies paid lazy native reconstruction, failed calls, checking and
+cleanup. Their shared historical input bill was 836.8468 ms, not new latency
+or new research credit. The strongest ordinary constraint-aware controller
+can implement the same rules. Preserve the locality counterexample above.
