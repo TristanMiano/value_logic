@@ -2,7 +2,7 @@
   "schema_version": 1,
   "phase": 3,
   "status": "research_in_progress",
-  "next_task": "P3-11",
+  "next_task": "P3-SEARCH-01",
   "phase_research_floor_minutes": 960,
   "qualifying_modes": [
     "D",
@@ -320,16 +320,25 @@
     },
     {
       "id": "P3-11",
-      "title": "adversarial reconstruction and contribution",
-      "status": "unstarted",
+      "title": "rigorous confirmation, adversarial reconstruction and contribution review",
+      "status": "deferred_unstarted",
       "research_floor_minutes": 90,
-      "mode_forecast_minutes": {
+      "requires": [
+        "P3-SEARCH-01 candidate meets evidence and forecast readiness",
+        "prospective candidate-specific confirmation plan and revised resource forecast"
+      ],
+      "original_mode_forecast_minutes": {
         "D": 60,
         "L": 30,
         "E": 0
       },
-      "central_research_minutes": 90,
-      "high_research_minutes": 180
+      "original_central_research_minutes": 90,
+      "original_high_research_minutes": 180,
+      "mode_forecast_minutes": null,
+      "central_research_minutes": null,
+      "high_research_minutes": null,
+      "forecast_status": "reestimate_at_candidate_promotion; original 90-minute floor remains in force",
+      "deferral_record": "v3/decisions/2026-10-11_discovery_first_amendment.md"
     }
   ],
   "traversal_research_floor_minutes": 960,
@@ -339,16 +348,20 @@
     "E": 240
   },
   "research_reserve_minutes": {
-    "central": 240,
-    "high": 480
+    "central": null,
+    "high": null,
+    "status": "replaced_by_open_ended_recurring_discovery"
   },
   "phase_research_forecast_minutes": {
-    "central": 1200,
-    "high": 2400
+    "central": null,
+    "high": null,
+    "status": "open_ended_no_credible_completion_time_forecast",
+    "first_discovery_cycle_forecast_record": "discovery_program.current_cycle"
   },
   "phase_O_forecast_minutes": {
-    "central": 120,
-    "high": 240
+    "central": null,
+    "high": null,
+    "status": "forecast_per_future_cycle; historical phase estimate retained in original_traversal_planning"
   },
   "gates": {
     "P3-A": {
@@ -384,7 +397,12 @@
     "P3-C": {
       "status": "unattempted",
       "after": "P3-11",
-      "type": "author_decision"
+      "type": "author_decision",
+      "additional_requires": [
+        "P3-SEARCH-01 readiness and prospective P3-11 confirmation prerequisites",
+        "P3-POS01 materially useful positive result supported at its specified scope"
+      ],
+      "unsupported_positive_objective_next": "P3-SEARCH-01"
     },
     "P3-D": {
       "status": "unattempted",
@@ -401,8 +419,11 @@
   "contribution_obligation": "P3-N01",
   "contribution_status": "SUPPORTED",
   "contribution_recurrence_if_needed": {
-    "id": "R-P3-N01",
-    "initial_research_floor_minutes": 90
+    "id": "P3-SEARCH-01",
+    "recurring_research_floor_minutes": 240,
+    "scope": "continuing discovery for P3-POS01; historical P3-N01 remains scoped",
+    "normal_disposition": "continue_or_recur",
+    "historical_short_option": "R-P3-N01 remains unselected"
   },
   "experimental_freeze_created": true,
   "final_evaluation_exposed": true,
@@ -415,7 +436,7 @@
     "remaining_floor_ns": 0,
     "source": "v3/work_logs/P3_10_2026-10-11_S1/actuals.json",
     "next_checkpoint_minutes": null,
-    "evidence_disposition": "P3-10 complete at explicit amended final-execution and interpretation scope, with Research90 and independent reconstructions. Original failure and unknown-prefix cost retained. P3-11 unstarted; author gates unattempted; Option C and R-P3-N01 unselected.",
+    "evidence_disposition": "P3-10 complete at its declared amended execution/interpretation scope; original failure and unknown-prefix cost retained. October 11 discovery amendment selects P3-SEARCH-01 with zero new research credit. P3-POS01 outstanding; P3-11 deferred and unstarted; author gates unattempted; Option C and R-P3-N01 unselected.",
     "research_minutes": "1086.131367364150"
   },
   "provisional_representation": {
@@ -459,11 +480,11 @@
     "selected_task": "R-P3-B-A",
     "selection_record": "v3/work_logs/R_P3_B_A_2026-10-09_S1/selection.json",
     "selected_task_status": "completed",
-    "current_recommendation": "P3-10 is complete at its declared amended execution/interpretation scope. Stop at this boundary. P3-11 is the next unstarted task; Option C, R-P3-N01 and author gates remain unselected or unattempted.",
+    "current_recommendation": "Enter P3-SEARCH-01-C001 for constructive discovery, with a fresh 240-minute minimum and 360/480-minute central/high research forecast. Continue or recur while the material positive objective is outstanding. Defer P3-11 pending evidence-backed candidate readiness.",
     "next_optional_selected": null,
     "completed_additional_option": "P3-B-OPTION-B"
   },
-  "selected_recurrence": null,
+  "selected_recurrence": "P3-SEARCH-01",
   "contribution_scope": "Modest formal adaptation and implementation synthesis with a source-specific economic obstruction; no generic learning/concentration novelty or superiority claim.",
   "contribution_assessment": "v3/work_logs/R_P3_B_B_2026-10-10_S1/contribution_assessment.md",
   "latest_mathematical_overlay": "v3/checkpoints/B_1_R_P3_B_B.v1.json",
@@ -503,11 +524,136 @@
     }
   ],
   "final_exposure_status": {
+    "scope": "historical P3-09/P3-10 experiment; new discovery remains DEVELOPMENT",
     "inputs_exposed": true,
-    "public_execution": "in_progress",
-    "private_evaluation_started": false,
-    "analysis_started": false,
+    "public_execution": "complete_under_P3_10_A1",
+    "private_evaluation_started": true,
+    "private_evaluation_status": "complete_under_P3_10_A1",
+    "analysis_started": true,
+    "analysis_status": "complete_under_P3_10_A1",
+    "original_public_execution_complete": false,
+    "original_public_units": 440,
+    "amended_public_units": 60,
+    "composite_public_units": 500,
+    "private_evaluation_units": 500,
+    "analysis_units": 1,
     "exposure_record": "v3/experiments/final_v1/exposure.json",
-    "meaning": "The final-data exposure flag includes generated final inputs; private scoring still awaits all public seals."
-  }
+    "completion_record": "v3/work_logs/P3_10_2026-10-11_S1/completion_release_A1.json",
+    "meaning": "The composite schedule completed under explicit P3-10-A1. The original failed public stage remains incomplete and its exact failed-prefix bill remains unknown."
+  },
+  "original_traversal_planning": {
+    "status": "historical_initial_plan_superseded_for_future_discovery",
+    "source_commit": "6c2bf47b44289acbb9728ab58230ee111b7d4cae",
+    "traversal_research_floor_minutes": 960,
+    "traversal_mode_forecast_minutes": {
+      "D": 570,
+      "L": 150,
+      "E": 240
+    },
+    "research_reserve_minutes": {
+      "central": 240,
+      "high": 480
+    },
+    "phase_research_forecast_minutes": {
+      "central": 1200,
+      "high": 2400
+    },
+    "phase_O_forecast_minutes": {
+      "central": 120,
+      "high": 240
+    },
+    "contribution_recurrence_if_needed": {
+      "id": "R-P3-N01",
+      "initial_research_floor_minutes": 90
+    }
+  },
+  "research_stage": "discovery_selected_unstarted",
+  "prospective_amendment": "v3/decisions/2026-10-11_discovery_first_amendment.md",
+  "traversal_planning_scope": "original_eleven_task_traversal; completed records retained; P3-11 deferred and to be reforecast at promotion",
+  "positive_discovery_obligation": {
+    "id": "P3-POS01",
+    "status": "OUTSTANDING",
+    "target": "Materially useful positive construction, mechanism, guarantee or demonstrated capability/resource benefit connected to the five author questions; existing modest P3-N01 support is insufficient by itself.",
+    "record": "v3/discovery/P3_SEARCH_01.md",
+    "rigorously_verified": false
+  },
+  "discovery_program": {
+    "id": "P3-SEARCH-01",
+    "record": "v3/discovery/P3_SEARCH_01.md",
+    "status": "selected_unstarted",
+    "stage": "DEVELOPMENT",
+    "research_ns": 0,
+    "positive_objective": "P3-POS01",
+    "positive_objective_status": "OUTSTANDING",
+    "recurring_cycle_floor_minutes": 240,
+    "program_research_ceiling_minutes": null,
+    "normal_boundary_disposition": "continue_or_recur",
+    "candidate_rejection_completes_program": false,
+    "floor_satisfaction_completes_program": false,
+    "routine_recurrence_requires_new_permission": false,
+    "program_disposition": "remains_open_until_explicit_author_disposition; candidate_promotion_alone_does_not_close_it",
+    "program_review_horizons_research_minutes": [
+      960,
+      2400,
+      6000
+    ],
+    "horizons_are_limits": false,
+    "purpose_priority_fraction": {
+      "generation_derivation_constructive_development": 0.75,
+      "cheap_feasibility_screening": 0.2,
+      "substantive_portfolio_readiness_synthesis": 0.05
+    },
+    "purpose_assessment_window_cycles": 2,
+    "purpose_is_distinct_from_DLE": true,
+    "lane_forecast_fraction": {
+      "R": 0.25,
+      "X": 0.75
+    },
+    "promotion": {
+      "minimum_subjective_probability": 0.8,
+      "preferred_subjective_probability": 0.9,
+      "forecast_event": "The specified candidate survives planned rigorous verification and establishes the specified materially useful positive claim at the stated scope.",
+      "basis_required": true,
+      "uncertainty_and_sensitivity_required": true,
+      "current_candidate": null,
+      "current_probability": null,
+      "forecast_status": "unassessed",
+      "calibration_status": "not_established",
+      "confirmation_task": "P3-11",
+      "confirmation_requires_prospective_claim_and_appropriate_evidence": true
+    },
+    "current_cycle": {
+      "id": "P3-SEARCH-01-C001",
+      "status": "selected_unstarted",
+      "research_ns": 0,
+      "research_floor_minutes": 240,
+      "research_floor_ns": 14400000000000,
+      "remaining_research_floor_ns": 14400000000000,
+      "research_floor_satisfied": false,
+      "central_research_minutes": 360,
+      "high_research_minutes": 480,
+      "central_mode_forecast_minutes": {
+        "D": 270,
+        "L": 54,
+        "E": 36
+      },
+      "high_mode_forecast_minutes": {
+        "D": 360,
+        "L": 72,
+        "E": 48
+      },
+      "central_O_minutes": 15,
+      "high_O_minutes": 30,
+      "estimates_are_ceiling": false,
+      "prior_phase_surplus_credited_ns": 0,
+      "amendment_research_credited_ns": 0,
+      "session": null,
+      "clock_started": false
+    },
+    "candidate_records": [],
+    "completed_cycles": [],
+    "checkpoint_is_handoff": false,
+    "end_session_only_because_floor_or_forecast_reached": false
+  },
+  "selected_discovery_program": "P3-SEARCH-01"
 }

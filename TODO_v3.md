@@ -2,6 +2,12 @@
 
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
+Current amendment: [discovery-first direction](v3/decisions/2026-10-11_discovery_first_amendment.md).
+
+**Selected next: P3-SEARCH-01, a continuing discovery program.** Its first
+240-minute research cycle is unstarted; central/high first-cycle forecasts are
+360/480 minutes. **P3-POS01, the materially useful positive-result objective,
+is OUTSTANDING. P3-11 is deferred pending discovery readiness.**
 
 **Status: P3-01–10 complete at their declared task scopes.**
 P3-01 supplies the questions and comparison contract; P3-02 supplies the
@@ -56,7 +62,7 @@ scope, with **90.310005771417 measured research minutes** and an
 **P3-10 is COMPLETE at explicit amended final-execution and interpretation
 scope**, with **90.283569405783 measured research minutes** and
 [independently reconstructed results](v3/experiments/results.md).
-**Next: P3-11, unstarted. Stop at the completed P3-10 boundary.**
+**Next: P3-SEARCH-01, selected and unstarted. P3-11 is deferred.**
 Phase two remains complete; P3-C–D remain unattempted. P3-N01 is now
 **SUPPORTED at modest formal-adaptation and implementation-synthesis scope**;
 Q3 affirmative advantage over the strongest ordinary combination remains open.
@@ -73,6 +79,29 @@ selected task's prior sessions. The [primary-source orientation](v3/literature/0
 supports planning; it is not a completed literature audit or theorem import.
 
 ## Current author selection — October 11, 2026
+
+**Adopted: discovery-first protocol amendment and P3-SEARCH-01 detour.**
+The author directs substantially more hypothesis generation and derivation,
+cheap early elimination, fewer longer tasks and frequent recurrence until
+materially promising candidates justify rigorous challenge. The
+[decision](v3/decisions/2026-10-11_discovery_first_amendment.md) and
+[continuing program](v3/discovery/P3_SEARCH_01.md) implement that direction.
+
+**P3-SEARCH-01-C001 is selected and unstarted**, with a fresh Research240 floor,
+a 360/480-minute central/high first-cycle research forecast and zero credited
+research. Its normal boundary disposition is continue/recur. The program has
+no fixed total ceiling; tens or hundreds of hours are plausible. Candidate
+rejection and elapsed floors do not close the search. **P3-11 remains unstarted
+and deferred** until evidence supports the intended 80% minimum, 90% preferred
+forecast of rigorously verifying a specified material positive claim.
+
+P3-N01 retains its supported modest historical scope. The new **P3-POS01**
+positive objective is outstanding and is not discharged by that support or a
+completed negative test. P3-C/D remain unattempted. Protocol amendment and
+publication are not new discovery research; all completed clocks, records,
+freezes and accepted scientific obligations remain unchanged.
+
+## Previous author selection — October 11, 2026, P3-10
 
 **Completed: P3-10 — frozen execution and interpretation. Research90 satisfied.**
 The author explicitly selected final execution, interpretation, exact closure
@@ -163,11 +192,12 @@ no research-floor credit. Use the separate [v3 ledger](v3/time_ledger.csv).
 The phase-two ledger and its final POST-B-1 balance remain preserved; no old
 minutes are transferred into the new floor.
 
-The initial traversal below allocates exactly **960 research minutes**, in ten
-Research90 chunks and one Research60 chunk. These are prospective protected
-chunk floors. The D/L/E subdivisions are forecasts, not additional quotas.
-Task completion also requires its evidence. Tasks and chunks may span sessions.
-The same allocations are recorded in [plan.v1.json](v3/plan.v1.json).
+The **original traversal** below allocated exactly **960 research minutes**, in
+ten Research90 chunks and one Research60 chunk. Completed commitments remain
+historical; P3-11 retains its separate downstream minimum and is deferred.
+The D/L/E subdivisions are the original forecasts, not additional quotas or the
+current discovery allocation. [plan.v1.json](v3/plan.v1.json) distinguishes the
+original traversal from the newly selected continuing program.
 
 | Task | Research floor | Nominal D / L / E minutes | Central / high research forecast |
 |---|---:|---:|---:|
@@ -184,22 +214,28 @@ The same allocations are recorded in [plan.v1.json](v3/plan.v1.json).
 | P3-11 — adversarial reconstruction and contribution | 90 | 60 / 30 / 0 | 90 / 180 |
 | **Traversal total** | **960** | **570 / 150 / 240** | **960 / 1,920** |
 
-Add a **240-minute central / 480-minute high recurrence reserve** to the
-forecast, allocated to named 60/90-minute chunks if needed. Initial research
-forecast including that reserve: **20 central / 40 high hours**, plus **2 / 4
-hours of O** for setup, records, report assembly, gate administration and
-delivery. Gate/report research consumes this research planning envelope and
-must be identified as such; if additional work exceeds it, revise the forecast.
-The reserve is not a mandatory consumption target. None of these estimates is
-an automatic stopping limit or permission to execute the entire phase now.
+The original **20-hour central / 40-hour high research forecasts**, including a
+240/480-minute recurrence reserve, and 2/4-hour O forecasts are retained as
+historical estimates. They are superseded as the current search budget. The
+original 4/8/16-hour checkpoint records remain intact.
 
-Review cumulative research at the first chunk boundary reaching **4, 8 and 16
-hours**, retaining overshoot. At sixteen hours assess the evidence and all
-remaining required work; complete the phase only if the done criteria hold.
-For further ambitions recommend a concrete 60/90-minute chunk, balancing added
-scope with stronger evidence. Do not automatically launch a 32-hour programme.
-Start with 60% reliable / 40% exploratory research and preserve at least 25%
-for each lane over two consecutive cycles, except a documented repair emergency.
+**Current discovery commitment:** P3-SEARCH-01 recurs in cycles with **at least
+240 new engaged D+L+E minutes** each. C001's central/high forecast is **360/480
+research minutes**, with D/L/E forecasts **270/54/36** and **360/72/48**, and O
+forecast separately at **15/30 minutes**. The program has no fixed total ceiling
+or credible finish-time estimate. Review its direction at useful boundaries
+after **16, 40 and 100 new research hours**; those horizons are neither mandatory
+consumption targets nor maxima. The old phase surplus cannot discharge a new
+cycle. Interruptions carry the same unfinished cycle and floor forward.
+
+Give approximately **75%** of discovery effort to generation, derivation and
+constructive development, **20%** to cheap screening and **5%** to substantive
+portfolio/readiness synthesis. These are purpose priorities across two cycles;
+D/L/E describes actual activities. Start R/X at **25/75** as a forecast.
+Retain honest clocks and proportionate records. At a minimum the normal course
+is to continue useful work or recur within this selected program, with no new
+permission request for routine recurrence. A pause records its actual reason
+and leaves the search open. Elapsed time never establishes positive progress.
 
 ## 3. Comparisons and contribution target
 
@@ -222,10 +258,21 @@ synthesis/application may supply a contribution. A change of notation, a
 known expectation identity, or an unexplained null result does not supply the
 delta. Phase two's supported C4-S result does not pre-approve a phase-three claim.
 
-Contribution obligation **P3-N01** is served initially by P3-01/02 and reviewed
-throughout, with a decisive challenge in P3-11. Record object, type, exact delta,
-magnitude, evidence and comparison scope. Worldwide priority and general
-performance superiority are separate claims and are not completion requirements.
+Contribution obligation **P3-N01** was served by the original traversal and
+retains its recorded modest support. Under the October 11 amendment,
+**P3-POS01** additionally requires a materially useful positive construction,
+mechanism, guarantee or demonstrated capability/resource benefit. Record its
+exact delta, magnitude, relevance and comparison before forecasting confirmation.
+An easier minor claim, a negative finding or the existing P3-N01 label cannot
+substitute for this objective. A useful synthesis must have a substantive new
+consequence tied to the organizing question.
+
+Worldwide priority and superiority on every benchmark remain separate claims.
+The conventional combined class can include an identical candidate; do not
+require strict superiority over every member of a class containing it. Use
+strong specified controls and fair resource terms for any performance claim.
+P3-11 follows discovery readiness, with a prospective candidate-specific
+confirmation plan. An adverse confirmation returns the objective to discovery.
 
 ## 4. Cycle I — define the objects and comparisons
 
@@ -422,8 +469,28 @@ performance superiority are separate claims and are not completion requirements.
   ordinary controls, independent reconstructions and exact time exclusions.
   The unknown-prefix global economic gate is false. P3-11 is not started.
 
-- [ ] **P3-11 — adversarial reconstruction and contribution review. Research90.**
+- [ ] **P3-SEARCH-01 — continuing constructive discovery. Research240 or longer per cycle.**
 
+  **Selected; C001 unstarted; P3-POS01 OUTSTANDING.** Generate and derive
+  materially different mechanisms across the five questions, keep a revisable
+  portfolio, discard poor candidates with cheap screens, and deepen promising
+  branches. The [program](v3/discovery/P3_SEARCH_01.md) defines the first cycle,
+  broad search directions, lightweight candidate record and continuation rules.
+  Floors, rejected hypotheses and completed tests do not close the program.
+  Default disposition: continue/recur, potentially over tens or hundreds of
+  cumulative research hours. Promotion requires a meaningful positive claim,
+  developmental evidence, a feasible confirmation plan and an evidence-backed
+  forecast meeting the intended 80% minimum, with 90% preferred. An unassessed
+  forecast leaves the candidate in discovery. Artifact: evolving derivations
+  and candidate records under `v3/discovery/`, linked from the program.
+
+- [ ] **P3-11 — rigorous confirmation, adversarial reconstruction and contribution review. Research90 minimum; deferred.**
+
+  **Unstarted; requires P3-SEARCH-01 candidate readiness and a prospective
+  confirmation plan.** Re-estimate effort and D/L/E allocation for the actual
+  candidate before execution; the original 60/30/0 split is historical planning.
+  Freeze a mature empirical candidate and obtain appropriate fresh verification
+  evidence; formal claims require rigorous proof and reconstruction.
   Reconstruct the main arguments and the strongest ordinary combined solution
   from their definitions. Challenge whether the fallible-model viewpoint adds
   anything operational and whether an equivalent established construction
@@ -433,12 +500,14 @@ performance superiority are separate claims and are not completion requirements.
 
 - [ ] **P3-C — evidence and contribution recommendation.**
 
-  Record `v3/checkpoints/C_1.md`. Require technical readiness and a supported
-  scoped contribution. Present the evaluator's PASS/BLOCKED recommendation and
-  argument; the author decides advancement or recurrence. If NOT YET SUPPORTED
-  or DISPLACED, select **R-P3-N01**, an initial Research90 comparison/evidence
-  chunk with a prospective D/L/E split and exact acceptance target. Do not use
-  the elapsed floor or a null result to manufacture a pass. No added gate floor.
+  Record `v3/checkpoints/C_1.md`. Require technical readiness, completion of
+  the amended discovery/confirmation prerequisites and support for **P3-POS01**
+  alongside the scoped contribution assessment. Present the evaluator's
+  PASS/BLOCKED recommendation and argument; the author decides advancement or
+  recurrence. If the material positive claim is unsupported, displaced or
+  inconclusive, return it to **P3-SEARCH-01**. R-P3-N01 remains an unselected
+  historical option, not the automatic short recurrence. The old P3-N01 support,
+  elapsed floor or null result does not manufacture a pass. No added gate floor.
 
 ## 7. Cycle IV — report and disposition
 
@@ -462,26 +531,31 @@ performance superiority are separate claims and are not completion requirements.
 
 ## 8. Done criteria and recurrence
 
-Completion requires all five questions answered at declared scopes; at least
-one coherent nonvacuous construction, characterization or useful limitation
-with checkable support; appropriate executable evidence; fair primary-source
-and ordinary-method comparisons; a supported scoped contribution; all selected
-protected floors and at least 960 actual research minutes; current gates and
-no unresolved blocking defect. Negative answers can be part of a successful
-phase. Their scientific or distinctive value must be demonstrated explicitly.
+Completion requires all five questions answered at declared scopes; a materially
+useful positive result supporting **P3-POS01**; appropriate proof and executable
+evidence; fair primary-source and conventional-method comparisons; a supported
+scoped contribution; all selected protected floors and at least 960 actual
+research minutes; current gates and no unresolved blocking defect. The author
+retains the final decision. Negative findings remain valuable evidence, but
+they do not by themselves discharge the new positive objective or terminate
+the search. Report task execution, scientific findings and positive advancement
+separately.
 
-Maintain stable repair IDs and a visible next pointer. After two unsuccessful
-chunks on one blocker compare at least two routes and select a discriminating
-next chunk. A suspended route remains documented and does not become a passed
-phase. Prospective replanning can replace an unstarted task with a better
-60/90-minute evidence chunk while retaining all five questions, the total
-floor, accepted obligations and the abandoned alternative's record.
+Maintain stable program, candidate and cycle IDs and a visible next pointer.
+At a cycle floor normally continue or recur in P3-SEARCH-01. After two cycles
+without constructive strengthening, reconsider the mechanism, representation,
+application or branch allocation. This triggers generative replanning, not a
+mandatory stop or another exhaustive challenge of the same weak candidate.
+Keep all earlier evidence and accumulated effort. A suspended or redirected
+program does not become a completed phase. No fixed total search ceiling is
+imposed; author direction and evidence determine its eventual disposition.
 
 **Active repair queue: empty. P3-01–10 and selected recurrences R-P3-B-A/B are
 complete at their declared scopes. P3-A and P3-B retain their restricted PASS.
-P3-N01 is SUPPORTED at the recorded modest synthesis scope; its later author
-assessment remains open at P3-C. Next: P3-11, unstarted. P3-C–D remain
-unattempted. Option B is complete; Option C and R-P3-N01 are unselected.**
+P3-N01 is SUPPORTED at the recorded modest synthesis scope. P3-POS01 is
+OUTSTANDING. Next: P3-SEARCH-01, selected; C001 unstarted with a fresh
+Research240 floor. P3-11 is deferred and unstarted. P3-C–D remain unattempted.
+Option B is complete; Option C and R-P3-N01 are unselected.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original
 register. Neither is required or activated by this plan. General neural

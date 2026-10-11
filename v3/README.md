@@ -5,8 +5,12 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 11, 2026 UTC.
 **P3-01–10 are complete at their declared scopes; P3-A/B retain their restricted passes.**
 P3-10 closes with an explicit preserved amendment and **90.283569405783
 qualifying research minutes**. Phase research is **1086.131367364150 minutes**.
-**P3-11 is next and unstarted; work stops at P3-10.** The author has set a
-minimum of **16 measured hours of research**, with longer work possible.
+**P3-SEARCH-01 is selected next; its first four-hour discovery cycle is
+unstarted. P3-11 is deferred pending a promising candidate.** The author has
+adopted a [discovery-first amendment](decisions/2026-10-11_discovery_first_amendment.md)
+with recurring long research cycles and open-ended search. The original
+**16 measured hours of research** remain a satisfied minimum; the new cycle
+has its own fresh floor and zero credited research.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
 
@@ -69,17 +73,25 @@ computing an answer remain separate objects.
 ## What would make this phase worthwhile?
 
 The central ambition is to connect uncertain mathematical prediction, paid
-reasoning and justified model changes in a precise, useful system. A restricted
-theorem, a constructive interface, an informative limitation or a modest
-synthesis/application can qualify when its difference from the closest checked
-work is supported. The [source orientation](literature/00_orientation.md)
-identifies strong existing alternatives for that comparison.
+reasoning and justified model changes in a precise, useful system. P3-N01
+retains support at its historical modest scope. The new **P3-POS01** objective
+is a materially useful positive construction, mechanism, guarantee or
+capability/resource benefit. Existing modest support and informative negative
+results do not by themselves satisfy it. The [source orientation](literature/00_orientation.md)
+identifies strong alternatives; the [discovery program](discovery/P3_SEARCH_01.md)
+keeps mechanisms and representations revisable while seeking a substantive delta.
 
-The programme has an initial 16-hour research traversal and a 4-hour central
-recurrence reserve. Its **20-hour central / 40-hour high research forecasts**
-remain estimates. Setup and routine administration are separate O time and
-do not reduce the sixteen-hour research requirement. Exact future effort is
-recorded in [time_ledger.csv](time_ledger.csv).
+The original **20-hour central / 40-hour high** phase research forecasts are
+historical estimates. Current discovery is open-ended, potentially spanning
+tens or hundreds of hours. Its cycles have **four-hour or longer research
+floors**; the first is forecast at **six hours central / eight hours high**.
+Generation, derivation and constructive development receive approximately 75%
+of discovery effort, with 20% cheap screening and 5% substantive synthesis.
+At a floor the normal disposition is continue/recur. A candidate must become
+materially promising before expensive confirmation, with an evidence-backed
+80% minimum intended readiness forecast and 90% preferred. No percentage or
+positive outcome follows from hours alone. O and waits remain outside research
+in [time_ledger.csv](time_ledger.csv).
 
 Phase two remains complete. Its records, clocks, paper and scientific freezes
 are preserved; its neural follow-ups remain optional. P3-01 supplies a
@@ -120,10 +132,11 @@ minutes. P3-06 is now **complete** at its declared
 The [closing record](work_logs/P3_06_2026-10-09_S1.md) gives **90.210938375717**
 new research minutes. P3-07 is **complete** at its declared
 [bounded paid-reasoning scope](derivations/07_paid_reasoning.md), with
-**90.187687312067** observed research minutes. Phase research is
-**995.847797958367 minutes**, passing the
-[960-minute checkpoint](work_logs/P3_09_2026-10-11_S1/checkpoint_960.md) by
-**35.847797958367 minutes**. Later task floors and gates remain separate. **P3-B has passed** at restricted mathematical/local implementation
+**90.187687312067** observed research minutes. Current phase research is
+**1086.131367364150 minutes**. The
+[960-minute checkpoint](work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
+was assessed at P3-09; new discovery floors and later gates remain separate.
+**P3-B has passed** at restricted mathematical/local implementation
 readiness. The author-selected **paid selective-feedback recurrence is complete**;
 see its [additive checkpoint](checkpoints/B_1_R_P3_B_A.md).
 P3-N01 is **SUPPORTED at modest formal-adaptation and implementation-synthesis
@@ -136,14 +149,18 @@ and [full resource comparison](experiments/certificate_delivery.md). Its
 Direct ordinary checking has the least primary total in all eight tested cells;
 the broader affirmative plurality advantage remains open. P3-09 is complete at
 prospective challenge-freeze scope, with **60.784071511917** qualifying research
-minutes. P3-10 is recommended next and remains unstarted, with its own Research90
-floor. No final input or evaluation has been generated.
+minutes. P3-10 has completed its explicit amended execution and interpretation;
+the original and A1 exposure records remain preserved. **P3-SEARCH-01 is next**,
+selected with its first cycle unstarted. P3-11 is deferred until discovery
+readiness; P3-POS01 remains outstanding.
 
 ## Workspace
 
 | Material | Location |
 |---|---|
 | Author direction | [Scope decision](decisions/2026-10-06_phase_three_scope.md) |
+| Current research amendment | [Discovery-first decision](decisions/2026-10-11_discovery_first_amendment.md) |
+| Continuing discovery | [P3-SEARCH-01 program and first cycle](discovery/P3_SEARCH_01.md) |
 | Tasks and completion criteria | [TODO_v3.md](../TODO_v3.md) |
 | Research execution | [Procedure](RESEARCH_PROTOCOL.md) · [Work-item template](templates/work_item.md) |
 | Initial literature | [Primary-source orientation](literature/00_orientation.md) |

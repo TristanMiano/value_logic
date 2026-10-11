@@ -19,8 +19,9 @@ paid-reporting and separate structural integration scope. Selected R-P3-B-B
 the ordinary checked bridge and full resource/failure comparison. The final
 challenge has completed P3-10 execution and interpretation under explicit A1,
 with the original failure preserved and **90.283569405783** principal research
-minutes. Phase research is **1086.131367364150 minutes**. Next: P3-11,
-unstarted; later author gates remain unattempted. P3-N01 is SUPPORTED
+minutes. Phase research is **1086.131367364150 minutes**. Next: P3-SEARCH-01,
+selected with C001 unstarted; P3-11 is deferred pending discovery readiness.
+P3-POS01 is OUTSTANDING; later author gates remain unattempted. P3-N01 is SUPPORTED
 at the documented modest formal-adaptation and implementation-synthesis
 scope; Q3 affirmative comparative benefit remains open.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
@@ -557,3 +558,30 @@ affected amended conformance records.
 P3-A/B retain restricted PASS. P3-C/D remain unattempted, Option C and
 R-P3-N01 remain unselected, and P3-11 remains unstarted. Earlier dated
 pre-exposure and next-task statements above are historical.
+
+
+## Discovery-first amendment — October 11, 2026
+
+The author's [prospective decision](decisions/2026-10-11_discovery_first_amendment.md)
+changes research allocation and advancement. These entries are new obligations
+and current planning dispositions, not newly established scientific findings.
+Earlier dated claims, accepted duties, negative results and actuals are preserved.
+
+| Record | Current status | Meaning and next evidence |
+|---|---|---|
+| P3-POS01 | OUTSTANDING | Find and rigorously support a materially useful positive construction, mechanism, guarantee or capability/resource benefit connected to the author's objectives. Its concrete delta and importance must be specified before a readiness forecast. |
+| P3-SEARCH-01 | SELECTED; FIRST CYCLE UNSTARTED | One continuing discovery program, with generation/derivation priority, cheap early screens and recurring cycles of at least four research hours. [Program and first cycle](discovery/P3_SEARCH_01.md). |
+| P3-SEARCH-01 readiness | UNASSESSED; NO CANDIDATE PROMOTED | The intended minimum forecast is 80%, with 90% preferred, for a specified material positive result surviving rigorous verification. No candidate has been assigned such a probability. |
+| P3-N01 | SUPPORTED AT PREVIOUSLY RECORDED MODEST SCOPE | The amendment neither withdraws that support nor lets it discharge P3-POS01 by itself. |
+| P3-11 | DEFERRED, UNSTARTED | Requires a promising candidate, an evidence-backed readiness forecast and a prospective confirmation plan; re-estimate its original forecast at promotion. |
+| P3-C / P3-D | UNATTEMPTED | Author decisions remain necessary. The new positive objective is part of the advancement assessment. |
+| Accounting | ZERO NEW DISCOVERY CREDIT | Phase research remains 65,167,882,041,849 ns (1086.131367364150 minutes). C001 has a fresh, wholly outstanding 14,400,000,000,000 ns floor. |
+
+A completed negative test is a search update, not automatic positive advancement
+or a stopping condition. At a floor, normally continue or recur. Candidate
+versions and useful intermediate results remain revisable development until
+promotion. Empirical confirmation uses appropriate fresh/separated evidence;
+formal claims require valid proof under explicit assumptions. P3-10's original
+and amended exposure history cannot be converted into fresh confirmation of
+newly selected claims. Routine protocol editing and publication add no research
+credit, and do not alter the completed P3-10 boundary.
