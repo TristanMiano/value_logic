@@ -1,8 +1,9 @@
 # Phase-three claims and obligations
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 10, 2026 UTC.
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 11, 2026 UTC.
 **P3-01–08 are complete at their declared task scopes, with their Research90
-minima and closing records. P3-A remains PASS at problem and restricted representation
+minima and closing records. P3-09 is complete at prospective challenge-freeze
+scope with its own Research60 minimum. P3-A remains PASS at problem and restricted representation
 readiness; P3-B now passes at restricted mathematical/local implementation
 readiness and P3-C–D remain unattempted. P3-04 closes on separately versioned
 S2 replacement evidence; its original missing run history is not recreated.
@@ -15,7 +16,8 @@ Selected R-P3-B-A (option A) is complete at finite paid-feedback and
 observable-performance scope. P3-08 is complete at finite owned-broker hard-state,
 paid-reporting and separate structural integration scope. Selected R-P3-B-B
 (Option B) is complete at finite equal certificate-delivery scope, including
-the ordinary checked bridge and full resource/failure comparison. Next: P3-09,
+the ordinary checked bridge and full resource/failure comparison. The final
+challenge is now prospectively frozen without final exposure. Next: P3-10,
 recommended and unstarted. P3-N01 is SUPPORTED
 at the documented modest formal-adaptation and implementation-synthesis
 scope; Q3 affirmative comparative benefit remains open.**
@@ -453,3 +455,44 @@ P3-09 is recommended and unstarted, with its own Research60 floor. Option C
 and R-P3-N01 remain unselected; P3-C/D are unattempted. Work stops at this
 recurrence boundary. All evidence remains DEVELOPMENT; no final freeze or
 evaluation exposure has occurred.
+
+
+## P3-09 completion — October 11, 2026
+
+**COMPLETE at prospective finite challenge-freeze scope.** The
+[protocol](experiments/protocol.md), [machine contract](experiments/protocol.v1.json)
+and [manifest](experiments/frozen_v1/manifest.json) cover all five questions and
+21 duties at their established evidence types. The freeze binds 50 source and
+contract files, 114 distinct saved method representations, 12 public groups
+and 500 scheduled units. No final population or evaluation has been generated.
+
+The [review closure](work_logs/P3_09_2026-10-11_S1/review_closure.md) and
+[preparation evidence](work_logs/P3_09_2026-10-11_S1/preparation_evidence.json)
+establish procedural readiness. Common-stakes rescoring removes manufactured
+action differences; output equality gates cost claims; whole configurations
+retain missing/failed denominators; reporting uses the paid deterministic
+envelope; certificate comparisons preserve delivered request IDs and disjoint
+primitive prices. The independent numerical review passes 2,726 checks.
+Source/runtime review binds actual startup behavior, copied payloads and the
+parent/child runtime identity. Completed seals, preserved interrupted attempts
+and the single unchanged retry rule govern later execution.
+
+Preparation is development evidence. Thirty broker episodes include paid
+provider/report failures. The 55 certificate attempts include 41 deliveries and
+14 expected no-current-certificate outcomes. All 21 successful V/F/Z report
+quantities show zero additional normalized width gain. These adverse findings
+remain recorded without tuning the final cohort or relabeling old source bills.
+
+No scientific support status is upgraded by freezing an experiment. The latest
+[21-duty overlay](checkpoints/B_1_R_P3_B_B.v1.json) remains in force; P3-N01 is
+supported at its modest adaptation/synthesis scope, and affirmative Q3 advantage
+remains open. An identical ordinary implementation exists for each candidate
+kernel. Finite comparisons against a distinct catalogue cannot establish
+exclusive superiority over all ordinary reasoning.
+
+The [actuals](work_logs/P3_09_2026-10-11_S1/actuals.json) close this task at
+**60.784071511917** qualifying research minutes and the phase at
+**995.847797958367 minutes**. The [960-minute checkpoint](work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
+records the exact overshoot and remaining obligations. P3-10 is next and
+unstarted; P3-C/D remain unattempted; Option C and R-P3-N01 remain unselected.
+Earlier dated dispositions above remain historical.

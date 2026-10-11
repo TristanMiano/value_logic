@@ -3,7 +3,7 @@
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
 
-**Status: P3-01–08 complete at their declared task scopes.**
+**Status: P3-01–09 complete at their declared task scopes.**
 P3-01 supplies the questions and comparison contract; P3-02 supplies the
 [finite probability-information analysis](v3/derivations/02_probability_information.md).
 P3-03 supplies a [finite bounded uncertainty construction](v3/derivations/03_logical_uncertainty.md)
@@ -14,8 +14,10 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **935.063726446450 minutes**;
-**24.936273553550 minutes** remain to the 960-minute floor.
+Phase-three qualifying research is **995.847797958367 minutes**.
+The [960-minute checkpoint](v3/work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
+is satisfied, with **35.847797958367 minutes** of observed overshoot.
+Later tasks and author gates remain necessary.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
 The [first 240-minute checkpoint](v3/work_logs/P3_03_2026-10-07_S1/checkpoint_240.md)
@@ -46,11 +48,15 @@ ordinary-table cost obstruction. **P3-08 is COMPLETE at scoped U04 integration.*
 The selected **R-P3-B-B (Option B) is COMPLETE** at finite equal certificate-delivery
 scope, with **90.310005771417 measured research minutes** and an
 [additive 21-duty checkpoint](v3/checkpoints/B_1_R_P3_B_B.md).
-**Next: P3-09, recommended and unstarted.**
+**P3-09 is COMPLETE at prospective challenge-freeze scope**, with
+**60.784071511917 measured research minutes** and a
+[verified freeze](v3/experiments/frozen_v1/manifest.json).
+**Next: P3-10, recommended and unstarted.**
 Phase two remains complete; P3-C–D remain unattempted. P3-N01 is now
 **SUPPORTED at modest formal-adaptation and implementation-synthesis scope**;
-Q3 affirmative advantage over the strongest ordinary combination remains open. All executable evidence remains development; no final
-challenge is frozen or exposed. The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)
+Q3 affirmative advantage over the strongest ordinary combination remains open.
+The final challenge is prospectively frozen; actual checks remain development
+and preparation evidence. No final evaluation has been generated or exposed. The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)
 also records the authorized Markdown repair and preserves prior history.
 
 Read this plan with the [phase-three procedure](v3/RESEARCH_PROTOCOL.md),
@@ -58,7 +64,23 @@ Read this plan with the [phase-three procedure](v3/RESEARCH_PROTOCOL.md),
 selected task's prior sessions. The [primary-source orientation](v3/literature/00_orientation.md)
 supports planning; it is not a completed literature audit or theorem import.
 
-## Current author selection — October 10, 2026
+## Current author selection — October 11, 2026
+
+**Completed: P3-09 — prospective challenge freeze. Research60 satisfied.**
+The author selected this task after confirming the published Option B update.
+The [protocol](v3/experiments/protocol.md),
+[machine contract](v3/experiments/protocol.v1.json),
+[freeze manifest](v3/experiments/frozen_v1/manifest.json),
+[review closure](v3/work_logs/P3_09_2026-10-11_S1/review_closure.md) and
+[closed session](v3/work_logs/P3_09_2026-10-11_S1.md) establish readiness.
+The freeze binds 50 source/contract files, 114 distinct method representations,
+12 public recipe groups and 500 scheduled units. No final population was
+materialized. P3-10 is next, remains unstarted and has its own Research90 floor.
+The phase's sixteen-hour checkpoint is assessed without discharging later
+work or upgrading the accepted contribution scope. Option C and R-P3-N01
+remain unselected; P3-C/D remain unattempted.
+
+## Previous author selection — October 10, 2026
 
 **Completed: R-P3-B-B — Option B, equal certificate-delivery service. Research90 satisfied.**
 The author selected this recurrence after P3-08 and before P3-09. Its
@@ -326,7 +348,7 @@ performance superiority are separate claims and are not completion requirements.
   synthesis scope; affirmative Q3 advantage stays open. All evidence is
   DEVELOPMENT. No final challenge is frozen or exposed.
 
-- [ ] **P3-09 — freeze the final challenge. Research60.**
+- [x] **P3-09 — freeze the final challenge. Research60.**
 
   Freeze code, dependency closure, environment, question families, feedback
   schedules, costs, baselines, seeds, counts, budgets, hypotheses, thresholds,
@@ -338,6 +360,16 @@ performance superiority are separate claims and are not completion requirements.
   configuration and selected representation before generating or revealing any
   final evaluation population. Artifact: `v3/experiments/protocol.md` plus a
   versioned machine-readable configuration and freeze manifest.
+
+  **Complete at prospective finite challenge-freeze scope**, with
+  **60.784071511917 observed research minutes**. The
+  [protocol](v3/experiments/protocol.md),
+  [manifest](v3/experiments/frozen_v1/manifest.json),
+  [review closure](v3/work_logs/P3_09_2026-10-11_S1/review_closure.md) and
+  [exact actuals](v3/work_logs/P3_09_2026-10-11_S1/actuals.json) preserve
+  current-source preparation, independent numerical/runtime review, fixed
+  ordinary controls, transfer/null construction and guarded retry semantics.
+  No final input, public execution or private evaluation has occurred.
 
 - [ ] **P3-10 — execute and interpret the frozen challenge. Research90.**
 
@@ -405,10 +437,10 @@ phase. Prospective replanning can replace an unstarted task with a better
 60/90-minute evidence chunk while retaining all five questions, the total
 floor, accepted obligations and the abandoned alternative's record.
 
-**Active repair queue: empty. P3-01–08 and selected recurrences R-P3-B-A/B are
+**Active repair queue: empty. P3-01–09 and selected recurrences R-P3-B-A/B are
 complete at their declared scopes. P3-A and P3-B retain their restricted PASS.
 P3-N01 is SUPPORTED at the recorded modest synthesis scope; its later author
-assessment remains open at P3-C. Next: P3-09, recommended and unstarted. P3-C–D remain
+assessment remains open at P3-C. Next: P3-10, recommended and unstarted. P3-C–D remain
 unattempted. Option B is complete; Option C and R-P3-N01 are unselected.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original

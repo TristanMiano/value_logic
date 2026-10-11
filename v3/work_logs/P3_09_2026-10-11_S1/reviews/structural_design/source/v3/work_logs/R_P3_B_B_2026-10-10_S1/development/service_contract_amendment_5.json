@@ -1,0 +1,48 @@
+{
+  "schema": "value_logic.rp3bb.service-contract-amendment.v1",
+  "number": 5,
+  "stage": "DEVELOPMENT",
+  "created_utc": "2026-10-10T20:31:37.567120+00:00",
+  "reason": "Post-primary-exposure strengthening of the ordinary fresh-recipient comparator using dependency pruning and removal of unused old input recipes. The primary v5 results remain immutable and control their original comparison.",
+  "exposed_before_selection": {
+    "primary_v5_manifest_sha256": "173291f1ba26a65ac0ef9d68d54c017c12d47bc7853c6ba89bb971fdade16cca",
+    "primary_v5_completed_units_sha256": "555d0af18e958053f06b14940e6a725d28514877191a0982d976c91eb210254e",
+    "primary_deliveries": 288,
+    "ordinary_pruner_diagnostics": "31 events already exposed in the separately prepared agent diagnostic; not a scalar-cost comparison."
+  },
+  "selected_streams": [
+    "constant_n3",
+    "parity_reassociation_n6",
+    "complementary_k3_n5",
+    "complementary_k5_n7"
+  ],
+  "requests_per_stream": 6,
+  "recipient": "fresh",
+  "methods": [
+    "P-REUSE",
+    "O-ADD-COLD",
+    "O-ADD-WARM",
+    "O-ADD-WARM-PRUNED",
+    "O-ENUM-RECEIVER",
+    "O-ADD-PORTFOLIO"
+  ],
+  "delivery_units": 144,
+  "failure_units": 4,
+  "failure_units_contract": "After the six successful or attempted pruned requests in each stream, set its local pruning limit to one and attempt the third current input again. Preserve paid full-export prefix, return no current certificate, evict state, and reject the previous receipt as current. These units are not ranked as cheap deliveries.",
+  "execution_budget_units": 134217728,
+  "prune_dependency_limit_steps": 8000000,
+  "consumer_thresholds_units": [
+    1048576,
+    4194304,
+    16777216
+  ],
+  "worker_changes": [
+    "New standalone source module only; old service v5, producer v1, receiver v1 and primary data unchanged.",
+    "Expanded common source closure includes the pruner and its service adapter for every compared method.",
+    "The pruned method retains and pays its complete warm producer state but sends a dependency-closed full proof to each empty receiver. Full export, pruning, remapping, encoding and checking are all executed inside the tariff.",
+    "Ordinary methods that never use old domain recipes receive an empty retained old_specs tuple. The caller offers the same source information; no unused old frames are serialized into those methods\u2019 state. Reuse methods retain the old inputs they need.",
+    "Storage uses the unchanged declared live admission/delivery period convention; temporary construction peaks remain outside a physical heap claim."
+  ],
+  "analysis": "All six methods, all four streams, exact bill/category/proof/retention vectors and prefixes. No selection of family, budget, threshold or subset based on secondary outcomes. No inference of infinite-horizon or optimized-library superiority.",
+  "truth_reference": "Reuse the unchanged primary v5 scalar reference source/input declarations; no fresh challenge population or truth labels enter the producer."
+}

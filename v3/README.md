@@ -1,8 +1,8 @@
 # Phase Three: Reasoning About Unresolved Mathematics
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 10, 2026 UTC.
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 11, 2026 UTC.
 
-**P3-01–08 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
+**P3-01–09 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
 minimum of **16 measured hours of research**, with longer work possible.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -97,7 +97,7 @@ separate finite-prefix completion, task certainty, source recovery and revision
 support. The general proof-stream adapter is mathematical; the actual prototype
 handles its declared finite Boolean/bounded-VM fragment. The P3-03 prototype itself supplies no anticipatory learner or
 paid-computation policy. Later P3-06/07 add scoped forecasting and paid selection;
-no final experiment has been established. P3-04 now supplies [finite counterfactual semantics](derivations/04_counterfactual_semantics.md),
+P3-09 now supplies the prospective final freeze, with final execution unstarted. P3-04 now supplies [finite counterfactual semantics](derivations/04_counterfactual_semantics.md),
 [selection extensions](derivations/04_selection_extensions.md), and
 [separately reconstructed executable evidence](work_logs/P3_04_2026-10-08_S2.md).
 It covers typed structural changes, explicitly exceptional paired-support
@@ -116,8 +116,9 @@ The [closing record](work_logs/P3_06_2026-10-09_S1.md) gives **90.210938375717**
 new research minutes. P3-07 is **complete** at its declared
 [bounded paid-reasoning scope](derivations/07_paid_reasoning.md), with
 **90.187687312067** observed research minutes. Phase research is
-**935.063726446450 minutes**, with **24.936273553550** remaining to the
-960-minute floor. **P3-B has passed** at restricted mathematical/local implementation
+**995.847797958367 minutes**, passing the
+[960-minute checkpoint](work_logs/P3_09_2026-10-11_S1/checkpoint_960.md) by
+**35.847797958367 minutes**. Later task floors and gates remain separate. **P3-B has passed** at restricted mathematical/local implementation
 readiness. The author-selected **paid selective-feedback recurrence is complete**;
 see its [additive checkpoint](checkpoints/B_1_R_P3_B_A.md).
 P3-N01 is **SUPPORTED at modest formal-adaptation and implementation-synthesis
@@ -128,8 +129,10 @@ structural arm. The selected **Option B recurrence is complete**, with an
 and [full resource comparison](experiments/certificate_delivery.md). Its
 **90.310005771417** observed research minutes are separately recorded.
 Direct ordinary checking has the least primary total in all eight tested cells;
-the broader affirmative plurality advantage remains open. P3-09 is recommended
-next and remains unstarted, with its own Research60 floor.
+the broader affirmative plurality advantage remains open. P3-09 is complete at
+prospective challenge-freeze scope, with **60.784071511917** qualifying research
+minutes. P3-10 is recommended next and remains unstarted, with its own Research90
+floor. No final input or evaluation has been generated.
 
 ## Workspace
 
@@ -320,3 +323,37 @@ next and remains unstarted.** Option B is optional before freeze if equal
 exported certificates matter; option C is optional later, preferably phase end,
 for counterpossible-policy robustness. Neither option nor R-P3-N01 is selected;
 P3-C/D remain unattempted.
+
+
+## P3-09 completion — October 11, 2026
+
+The [prospective protocol](experiments/protocol.md) and
+[machine contract](experiments/protocol.v1.json) freeze the final finite
+challenge before exposure. The [manifest](experiments/frozen_v1/manifest.json)
+binds 50 source/contract files, 114 saved method representations, a fixed
+runtime and 500 public units across 12 recipe groups. The schedule comprises
+336 broker episodes, 104 certificate histories containing 416 requests, and
+60 conformance units. These counts describe future work; no final population
+or result was generated during preparation.
+
+The [review closure](work_logs/P3_09_2026-10-11_S1/review_closure.md) records the
+common-stakes action comparison, equal-output cost gate, full-configuration
+aggregation, deterministic reporting comparator and request-ID coverage checks.
+The numerical reconstruction passes 2,726 observer checks. The copied current
+source passes its broker, certificate, conformance, lifecycle, analysis and
+preparation-barrier checks. Interpreter startup, dependency closure, copied
+payloads and the matching parent/child runtime are bound explicitly under the
+stated stable-filesystem assumption.
+
+The [closed session](work_logs/P3_09_2026-10-11_S1.md) and
+[exact actuals](work_logs/P3_09_2026-10-11_S1/actuals.json) record Research60
+completion at **60.784071511917 minutes**. Phase research is
+**995.847797958367 minutes**; the [sixteen-hour checkpoint](work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
+is assessed at this boundary. Recovery, waits, administration and overlapping
+reviewer effort supply no research credit.
+
+P3-10 is the next unstarted task. Its explicit selection and in-progress plan
+state are required before final execution. The modest supported P3-N01 scope,
+open affirmative Q3 comparison and existing 21-duty overlay are unchanged.
+P3-C/D remain unattempted; Option C and R-P3-N01 remain unselected. The dated
+completion sections above preserve the earlier historical states.

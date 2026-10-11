@@ -1,0 +1,239 @@
+{
+  "adapter_endpoint_calls": 0,
+  "final_population_generated_or_opened": false,
+  "observations": [
+    {
+      "analyzer_reported_target_minus_current": [
+        1,
+        3
+      ],
+      "both_paths_at_current_stakes": [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "correct_current_objective_delta": [
+        0,
+        1
+      ],
+      "correct_current_priced_objective_delta": [
+        0,
+        1
+      ],
+      "current_normalized_action_loss": [
+        1,
+        6
+      ],
+      "explanation": "The only change is the metric's stake vector and normalization; path, confusion counts and cost are identical.",
+      "name": "unchanged_actions_apparent_asymmetric_improvement",
+      "paired_normalized_price_example": [
+        1,
+        15000
+      ],
+      "reference_normalized_action_loss": [
+        1,
+        2
+      ],
+      "same_action_path": true,
+      "status": "REPRODUCED_INTERPRETATION_DEFECT"
+    },
+    {
+      "absence": "No cold cost ratio, 5 percent predicate, or relation-specific A1 eligibility field is recorded.",
+      "exact_cold_cost_ratio": [
+        47,
+        50
+      ],
+      "expected_A4_practical_saving_if_complete_equal_output": true,
+      "name": "equal_output_six_percent_saving_has_no_A4_predicate",
+      "paired_record": {
+        "differences": {
+          "action_loss_mean_target_minus_current": [
+            0,
+            1
+          ],
+          "brier_mean_target_minus_current": [
+            0,
+            1
+          ],
+          "cold_units_target_minus_current": [
+            6,
+            1
+          ],
+          "local_units_target_minus_current": [
+            6,
+            1
+          ],
+          "optional_reporting_units_target_minus_current": [
+            0,
+            1
+          ]
+        },
+        "ordinary_identity_pass": null,
+        "pairing_scope": "exact preserved broker paths only; other shared seeds do not imply shared feedback",
+        "path_equalities": {
+          "action_path_sha256": true,
+          "base_path_sha256": true,
+          "delivered_path_sha256": true
+        },
+        "relation": "cold_id",
+        "target_id": "dev-cold",
+        "unit_id": "dev-reuse"
+      },
+      "status": "REPRODUCED_MISSING_DECLARED_ENDPOINT"
+    },
+    {
+      "name": "incomplete_episode_keeps_cost_and_blocks_ranking",
+      "status": "PASS",
+      "summary": {
+        "complete_episodes": 0,
+        "complete_primary_denominator": false,
+        "configuration_id": "dev-symmetric",
+        "deterministic_control_replication": "single result per population is an exact analytic weight, not independent evidence",
+        "engine": "ordinary",
+        "executed_policy_seed_slots": [
+          null
+        ],
+        "family": "disjoint-development-illustration",
+        "group_ids": [
+          "dev-illustration"
+        ],
+        "known_total_executed_cold_units": 99,
+        "learning_comparator": "frozen equal-weight original expert advice; no adaptive hard-mask regret claim",
+        "mean_cold_units_per_request": [
+          99,
+          2
+        ],
+        "means": {
+          "action_loss_mean": null,
+          "base_brier_mean": null,
+          "brier_mean": null,
+          "cold_units": [
+            99,
+            1
+          ],
+          "local_units": [
+            80,
+            1
+          ],
+          "optional_reporting_units": [
+            0,
+            1
+          ],
+          "uniform_brier_mean": null
+        },
+        "method": "probability_cost",
+        "method_kind": "ordinary",
+        "missing_or_incomplete_unit_ids": [
+          "dev-symmetric"
+        ],
+        "native_price_normalized": [
+          1,
+          10000
+        ],
+        "planned_executions": 1,
+        "practical_learning_effect": false,
+        "scored_executions": 1,
+        "stakes": {
+          "fn": [
+            1,
+            1
+          ],
+          "fp": [
+            1,
+            1
+          ]
+        },
+        "uniform_minus_base_brier": null,
+        "unknown_cost_episodes": 0
+      }
+    },
+    {
+      "exception": "Analysis requires every scheduled private-score seal.",
+      "name": "missing_expected_seal_cannot_shrink_denominator",
+      "status": "PASS"
+    },
+    {
+      "absence": "The supplied observable envelope and resulting gain are omitted, so the promised reduction threshold is not computed.",
+      "actual_helper_output": {
+        "F": {
+          "confidence_conflict": false,
+          "lower": [
+            1,
+            1
+          ],
+          "upper": [
+            9,
+            1
+          ],
+          "width": [
+            8,
+            1
+          ],
+          "width_per_horizon": [
+            4,
+            5
+          ]
+        }
+      },
+      "deterministic_envelope_width_per_horizon": [
+        1,
+        1
+      ],
+      "expected_practical_gain_at_one_percent": true,
+      "name": "report_width_has_no_reduction_reference",
+      "status": "REPRODUCED_MISSING_DECLARED_ENDPOINT",
+      "strict_normalized_width_gain_from_supplied_envelope": [
+        1,
+        5
+      ]
+    },
+    {
+      "aggregate_comparison": {
+        "both_complete": true,
+        "budget_condition": "development",
+        "componentwise_resource_dominance": true,
+        "coverage_superset": true,
+        "identical_coverage": true,
+        "left": "left",
+        "left_practical_cost_dominance": true,
+        "left_to_right_total_cost_ratio": [
+          9,
+          10
+        ],
+        "left_weakly_dominates": true,
+        "recipient": "fresh",
+        "right": "right",
+        "right_minus_left_total_units": 10,
+        "scope": "dev-illustration"
+      },
+      "interpretation": "The predicate is correct for the five reported coordinates, but not an all-primitive-category dominance claim.",
+      "name": "named_stage_dominance_is_not_raw_tariff_dominance",
+      "native_price_two_opcode_price_one_costs": {
+        "left": 180,
+        "right": 100
+      },
+      "raw_tariff_vectors": {
+        "left": {
+          "native_calls": 90
+        },
+        "right": {
+          "opcode_events": 100
+        }
+      },
+      "status": "REPRODUCED_SCOPE_QUALIFICATION"
+    },
+    {
+      "name": "same_count_distinct_request_ids_not_equal_service",
+      "status": "PASS"
+    }
+  ],
+  "principal_clock_credit": 0,
+  "script_sha256": "13dd6c9aab9b2d8d4ecb253b885a63a15af6c21f67665a8236c8cb7deb46e2c1",
+  "source_manifest_sha256": "5200253acc73ef0a03c489bca4547476999a3c1eeb95cfa2ba57e71db4bb8d40",
+  "stage": "P3-09-DEVELOPMENT-OBSERVER-ONLY"
+}

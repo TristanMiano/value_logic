@@ -1,0 +1,95 @@
+{
+  "after": [
+    {
+      "bytes": 11,
+      "path": "bytecode_probe_run/toy_module/_p309_cached_toy.py",
+      "sha256": "a69d4e37f095ea0015e2629dadb887ef9d713eb7175d7943da697ebf2393fcb3"
+    },
+    {
+      "bytes": 289,
+      "path": "bytecode_probe_run/toy_module/__pycache__/_p309_cached_toy.cpython-312.pyc",
+      "sha256": "fb1d379c2f18fce566997721da54b9a89ce426537760abd6b6b3b40269ca9ae9"
+    }
+  ],
+  "before": [
+    {
+      "bytes": 11,
+      "path": "bytecode_probe_run/toy_module/_p309_cached_toy.py",
+      "sha256": "a69d4e37f095ea0015e2629dadb887ef9d713eb7175d7943da697ebf2393fcb3"
+    },
+    {
+      "bytes": 289,
+      "path": "bytecode_probe_run/toy_module/__pycache__/_p309_cached_toy.cpython-312.pyc",
+      "sha256": "fb1d379c2f18fce566997721da54b9a89ce426537760abd6b6b3b40269ca9ae9"
+    }
+  ],
+  "child_processes": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-E",
+        "-S",
+        "-B",
+        "-c",
+        "import sys,json;sys.path.insert(0,sys.argv[1]);import _p309_cached_toy as toy;print(json.dumps({'value':toy.VALUE,'source_path':toy.__file__,'derived_cache_path':toy.__cached__,'cache_prefix':sys.pycache_prefix,'dont_write_bytecode':sys.flags.dont_write_bytecode,'ignore_environment':sys.flags.ignore_environment,'no_site':sys.flags.no_site,'xoptions':dict(sys._xoptions)},sort_keys=True))",
+        "/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_09_2026-10-11_S1/reviews/structural_design/lifecycle_boundary_v1/bytecode_probe_run/toy_module"
+      ],
+      "label": "B_alone_reads_adjacent_cache",
+      "observed": {
+        "cache_prefix": null,
+        "derived_cache_path": "/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_09_2026-10-11_S1/reviews/structural_design/lifecycle_boundary_v1/bytecode_probe_run/toy_module/__pycache__/_p309_cached_toy.cpython-312.pyc",
+        "dont_write_bytecode": 1,
+        "ignore_environment": 1,
+        "no_site": 1,
+        "source_path": "/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_09_2026-10-11_S1/reviews/structural_design/lifecycle_boundary_v1/bytecode_probe_run/toy_module/_p309_cached_toy.py",
+        "value": 17,
+        "xoptions": {}
+      },
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-E",
+        "-S",
+        "-B",
+        "-X",
+        "pycache_prefix=/dev/null/value_logic_p309",
+        "-c",
+        "import sys,json;sys.path.insert(0,sys.argv[1]);import _p309_cached_toy as toy;print(json.dumps({'value':toy.VALUE,'source_path':toy.__file__,'derived_cache_path':toy.__cached__,'cache_prefix':sys.pycache_prefix,'dont_write_bytecode':sys.flags.dont_write_bytecode,'ignore_environment':sys.flags.ignore_environment,'no_site':sys.flags.no_site,'xoptions':dict(sys._xoptions)},sort_keys=True))",
+        "/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_09_2026-10-11_S1/reviews/structural_design/lifecycle_boundary_v1/bytecode_probe_run/toy_module"
+      ],
+      "label": "required_prefix_compiles_source",
+      "observed": {
+        "cache_prefix": "/dev/null/value_logic_p309",
+        "derived_cache_path": "/dev/null/value_logic_p309/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_09_2026-10-11_S1/reviews/structural_design/lifecycle_boundary_v1/bytecode_probe_run/toy_module/_p309_cached_toy.cpython-312.pyc",
+        "dont_write_bytecode": 1,
+        "ignore_environment": 1,
+        "no_site": 1,
+        "source_path": "/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_09_2026-10-11_S1/reviews/structural_design/lifecycle_boundary_v1/bytecode_probe_run/toy_module/_p309_cached_toy.py",
+        "value": 99,
+        "xoptions": {
+          "pycache_prefix": "/dev/null/value_logic_p309"
+        }
+      },
+      "returncode": 0
+    }
+  ],
+  "experiment_modules_imported": false,
+  "final_population_generated": false,
+  "interpreter": {
+    "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+    "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "principal_credit_seconds": 0,
+  "probe_source": {
+    "bytes": 4824,
+    "path": "bytecode_probe.py",
+    "sha256": "51e1e3495e534ca4b79e41acaaf09c8b8d235f82affae0e24ed072d29a769775"
+  },
+  "schema": "value_logic.p309.development_bytecode_probe.v1",
+  "stage": "DEVELOPMENT",
+  "status": "PASS",
+  "unchanged_source_and_cache": true
+}
