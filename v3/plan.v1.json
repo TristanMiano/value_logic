@@ -431,13 +431,13 @@
   "active_session": null,
   "last_completed_session": "v3/work_logs/P3_10_2026-10-11_S1.md",
   "observed_progress": {
-    "research_ns": 65167882041849,
-    "measured_engaged_ns": 72172636761688,
+    "research_ns": 66403806327949,
+    "measured_engaged_ns": 73603490833488,
     "remaining_floor_ns": 0,
-    "source": "v3/work_logs/P3_10_2026-10-11_S1/actuals.json",
+    "source": "v3/discovery/s01/actuals.json",
     "next_checkpoint_minutes": null,
-    "evidence_disposition": "P3-10 complete at its declared amended execution/interpretation scope; original failure and unknown-prefix cost retained. October 11 discovery amendment selects P3-SEARCH-01 with zero new research credit. P3-POS01 outstanding; P3-11 deferred and unstarted; author gates unattempted; Option C and R-P3-N01 unselected.",
-    "research_minutes": "1086.131367364150"
+    "evidence_disposition": "C001 in progress; s01 closed for execution-context continuation. DEVELOPMENT only; P3-POS01 outstanding, readiness unassessed, P3-11 deferred. Historical records retained.",
+    "research_minutes": "1106.730105465817"
   },
   "provisional_representation": {
     "id": "P3-A-REP01",
@@ -567,7 +567,7 @@
       "initial_research_floor_minutes": 90
     }
   },
-  "research_stage": "discovery_selected_unstarted",
+  "research_stage": "discovery_in_progress",
   "prospective_amendment": "v3/decisions/2026-10-11_discovery_first_amendment.md",
   "traversal_planning_scope": "original_eleven_task_traversal; completed records retained; P3-11 deferred and to be reforecast at promotion",
   "positive_discovery_obligation": {
@@ -580,9 +580,9 @@
   "discovery_program": {
     "id": "P3-SEARCH-01",
     "record": "v3/discovery/P3_SEARCH_01.md",
-    "status": "selected_unstarted",
+    "status": "in_progress",
     "stage": "DEVELOPMENT",
-    "research_ns": 0,
+    "research_ns": 1235924286100,
     "positive_objective": "P3-POS01",
     "positive_objective_status": "OUTSTANDING",
     "recurring_cycle_floor_minutes": 240,
@@ -624,11 +624,11 @@
     },
     "current_cycle": {
       "id": "P3-SEARCH-01-C001",
-      "status": "selected_unstarted",
-      "research_ns": 0,
+      "status": "in_progress",
+      "research_ns": 1235924286100,
       "research_floor_minutes": 240,
       "research_floor_ns": 14400000000000,
-      "remaining_research_floor_ns": 14400000000000,
+      "remaining_research_floor_ns": 13164075713900,
       "research_floor_satisfied": false,
       "central_research_minutes": 360,
       "high_research_minutes": 480,
@@ -647,13 +647,30 @@
       "estimates_are_ceiling": false,
       "prior_phase_surplus_credited_ns": 0,
       "amendment_research_credited_ns": 0,
-      "session": null,
-      "clock_started": false
+      "session": "v3/discovery/s01/session.md",
+      "clock_started": true,
+      "actuals": "v3/discovery/s01/actuals.json",
+      "clock_active": false,
+      "session_status": "closed_for_execution_context_continuation"
     },
-    "candidate_records": [],
+    "candidate_records": [
+      "v3/discovery/candidates.md"
+    ],
     "completed_cycles": [],
     "checkpoint_is_handoff": false,
-    "end_session_only_because_floor_or_forecast_reached": false
+    "end_session_only_because_floor_or_forecast_reached": false,
+    "latest_checkpoint": "v3/discovery/s01/checkpoint.md",
+    "actuals": "v3/discovery/s01/actuals.json",
+    "sessions": [
+      "v3/discovery/s01/session.md"
+    ],
+    "continuation_automation": {
+      "id": "continue-value-logic-discovery",
+      "status": "ACTIVE",
+      "cadence_minutes": 15,
+      "cadence_is_research_allocation": false
+    }
   },
-  "selected_discovery_program": "P3-SEARCH-01"
+  "selected_discovery_program": "P3-SEARCH-01",
+  "last_discovery_session": "v3/discovery/s01/session.md"
 }

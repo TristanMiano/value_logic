@@ -3,7 +3,9 @@
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
-Status: **selected; first discovery cycle unstarted; P3-POS01 OUTSTANDING**.
+Status: **in progress; C001 unfinished; P3-POS01 OUTSTANDING**.
+New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s01/checkpoint.md),
+[portfolio](candidates.md), [exact actuals](s01/actuals.json).
 
 ## 1. Objective and scope
 
@@ -44,7 +46,7 @@ storage and failure costs and name the strongest relevant pre-existing controls.
 | Item | Prospective commitment |
 |---|---|
 | Program | P3-SEARCH-01; open until an explicit author disposition |
-| First cycle | P3-SEARCH-01-C001; selected, unstarted |
+| First cycle | P3-SEARCH-01-C001; in progress, unfinished |
 | Fresh research floor | 240 engaged D+L+E minutes; 14,400,000,000,000 ns |
 | Central / high first-cycle research forecast | 360 / 480 minutes; planning estimates, neither a ceiling |
 | Central D / L / E forecast | 270 / 54 / 36 minutes |
@@ -52,7 +54,7 @@ storage and failure costs and name the strongest relevant pre-existing controls.
 | Central / high O forecast | 15 / 30 minutes, outside research |
 | Purpose priority | 75% generation/development; 20% cheap screening; 5% substantive synthesis/readiness |
 | Initial R / X lane forecast | 25% reliable / 75% exploratory; both may contain constructive generation |
-| Research already credited | 0 minutes; no active research session |
+| Research already credited | 20.598738101667 minutes; s01 clock closed, continuation pending |
 | Normal boundary disposition | Continue the current line or recur within this program |
 | Program duration | Open-ended; tens or hundreds of hours are plausible, with no forecast of guaranteed discovery |
 | Deeper portfolio reviews | At the first useful boundaries after 16, 40 and 100 new program research hours; retain overshoot |
@@ -72,9 +74,9 @@ session. When execution remains available, a checkpoint normally leads straight
 into more useful research or the next cycle. Merely marking the program open
 while routinely handing off at every minimum would violate this plan.
 
-At entry, establish the observed clock, session log and lightweight candidate
-record. Those execution records do not exist yet. Do not backdate them to this
-protocol amendment. Record actual pauses and interruptions; there is no claim
+At entry, inspect the latest observed clock, session log and candidate record.
+Execution began in [s01](s01/session.md); resume its unfinished C001 commitment.
+Do not backdate any execution to this protocol amendment. Record actual pauses and interruptions; there is no claim
 of background work while execution is inactive. A user pause can occur at any
 time, leaving the unfinished commitment visible.
 
@@ -211,11 +213,12 @@ finding is a search update. A completed cycle is an effort/accounting boundary.
 Neither is automatically a positive project milestone.
 
 Current state: **no discovery candidates have been promoted, no readiness
-probability has been assigned, and no new discovery research time is credited**.
+probability has been assigned; 20.598738101667 new discovery research minutes
+are credited, with 219.401261898333 minutes remaining in C001**.
 P3-11 is deferred and unstarted. P3-C/D remain unattempted. P3-N01's previous
 modest support and all P3-10 findings remain at their recorded scopes.
 
-The next work is entry into C001 under the revised template: start observed
-research, open the evolving candidate record, and generate/derive alternatives.
+The next work is continuation of C001 from [the saved checkpoint](s01/checkpoint.md):
+develop the coupled policy-cost comparison and its application while retaining alternatives.
 At its floor the normal disposition is continued discovery or recurrence,
 unless the evidence supports promotion or the author changes the direction.

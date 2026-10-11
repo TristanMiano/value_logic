@@ -19,8 +19,8 @@ paid-reporting and separate structural integration scope. Selected R-P3-B-B
 the ordinary checked bridge and full resource/failure comparison. The final
 challenge has completed P3-10 execution and interpretation under explicit A1,
 with the original failure preserved and **90.283569405783** principal research
-minutes. Phase research is **1086.131367364150 minutes**. Next: P3-SEARCH-01,
-selected with C001 unstarted; P3-11 is deferred pending discovery readiness.
+minutes. Phase research is **1106.730105465817 minutes**. Next: P3-SEARCH-01,
+in progress with C001 unfinished; P3-11 is deferred pending discovery readiness.
 P3-POS01 is OUTSTANDING; later author gates remain unattempted. P3-N01 is SUPPORTED
 at the documented modest formal-adaptation and implementation-synthesis
 scope; Q3 affirmative comparative benefit remains open.**
@@ -585,3 +585,18 @@ formal claims require valid proof under explicit assumptions. P3-10's original
 and amended exposure history cannot be converted into fresh confirmation of
 newly selected claims. Routine protocol editing and publication add no research
 credit, and do not alter the completed P3-10 boundary.
+
+## P3-SEARCH-01-C001 — first developmental checkpoint
+
+New contributor: **Codex (GPT-6)**. 20.598738101667 engaged research minutes;
+C001 remains unfinished with 219.401261898333 minutes owed to its floor.
+[Checkpoint](discovery/s01/checkpoint.md), [portfolio](discovery/candidates.md),
+[actuals](discovery/s01/actuals.json). No prior evidence or claims are upgraded.
+
+| Record | Developmental finding | Scope and remaining obligation |
+|---|---|---|
+| DS-S02 | Sound threshold certificates can be proposed by fallible models; two prediction errors can still force n probes. | Finite prototype and derivation; classical query-policy antecedents. No strongest-control economic advantage shown. |
+| DS-S04 | Exact regret certificates and paid diagnostic planning handle joint model conflicts and complementary queries. | Stipulated finite models; standard DRD/robust-planning comparison. Coverage and real application remain obligations. |
+| DS-S05 | Shared-nuisance value contrasts support regret-directed precision refinement. | Mostly inherited identification algebra plus a prospective paid refinement mechanism; no deployment result. |
+| DS-S06 | Exact cost-difference ranges for two fixed-order k-of-n procedures can be constructed in quadratic unit arithmetic; a polynomial outcome-local tariff extension and live-receipt reduction are implemented. | [Derivation and source-bound outputs](discovery/s01/comparison.md). 320 fixed-price fixtures/5,286 completions and 420 outcome-local comparisons/5,546 completions matched brute enumeration. Self-review only. Closest-method displacement, nontrivial application and complete economics remain open. |
+| P3-POS01 | **OUTSTANDING**; readiness **unassessed**. | Constructive development is not confirmed material usefulness. P3-11 remains deferred; P3-C/D unattempted. |

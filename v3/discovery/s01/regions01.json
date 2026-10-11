@@ -1,0 +1,783 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "source_sha256": "b6d4dd7bb0ab1628043037eecabe4bfa226dc3a01fd58531b9939ac42a9a5298",
+  "start_utc": "2026-10-11T21:08:46.605038+00:00",
+  "command": [
+    "v3/discovery/s01/region_probe.py",
+    "v3/discovery/s01/regions01.json"
+  ],
+  "triangle": {
+    "pairs": [
+      {
+        "action": [
+          "0",
+          "1",
+          "0"
+        ],
+        "regret": "0",
+        "dual": [
+          "0",
+          "1"
+        ],
+        "systems": 20
+      },
+      {
+        "action": [
+          "1",
+          "0",
+          "0"
+        ],
+        "regret": "0",
+        "dual": [
+          "0",
+          "1"
+        ],
+        "systems": 20
+      },
+      {
+        "action": [
+          "0",
+          "0",
+          "1"
+        ],
+        "regret": "0",
+        "dual": [
+          "0",
+          "1"
+        ],
+        "systems": 20
+      }
+    ],
+    "whole": {
+      "action": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "regret": "1/3",
+      "dual": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "systems": 40
+    }
+  },
+  "triangle_tolerances": {
+    "0": {
+      "root_cost": "1/10",
+      "first_test": 0,
+      "root_certificate": {
+        "action": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "regret": "1/3",
+        "dual": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "systems": 40
+      },
+      "paths": [
+        {
+          "model": 0,
+          "path": [
+            [
+              0,
+              0
+            ]
+          ],
+          "remaining_models": [
+            0
+          ],
+          "certificate": {
+            "action": [
+              "0",
+              "1",
+              "0"
+            ],
+            "regret": "0",
+            "dual": [
+              "1"
+            ],
+            "systems": 8
+          },
+          "query_cost": "1/10"
+        },
+        {
+          "model": 1,
+          "path": [
+            [
+              0,
+              1
+            ]
+          ],
+          "remaining_models": [
+            1,
+            2
+          ],
+          "certificate": {
+            "action": [
+              "0",
+              "0",
+              "1"
+            ],
+            "regret": "0",
+            "dual": [
+              "0",
+              "1"
+            ],
+            "systems": 20
+          },
+          "query_cost": "1/10"
+        },
+        {
+          "model": 2,
+          "path": [
+            [
+              0,
+              1
+            ]
+          ],
+          "remaining_models": [
+            1,
+            2
+          ],
+          "certificate": {
+            "action": [
+              "0",
+              "0",
+              "1"
+            ],
+            "regret": "0",
+            "dual": [
+              "0",
+              "1"
+            ],
+            "systems": 20
+          },
+          "query_cost": "1/10"
+        }
+      ],
+      "planning_states": 5,
+      "certificates": 5,
+      "rational_systems": 96
+    },
+    "1/4": {
+      "root_cost": "1/10",
+      "first_test": 0,
+      "root_certificate": {
+        "action": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "regret": "1/3",
+        "dual": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "systems": 40
+      },
+      "paths": [
+        {
+          "model": 0,
+          "path": [
+            [
+              0,
+              0
+            ]
+          ],
+          "remaining_models": [
+            0
+          ],
+          "certificate": {
+            "action": [
+              "0",
+              "1",
+              "0"
+            ],
+            "regret": "0",
+            "dual": [
+              "1"
+            ],
+            "systems": 8
+          },
+          "query_cost": "1/10"
+        },
+        {
+          "model": 1,
+          "path": [
+            [
+              0,
+              1
+            ]
+          ],
+          "remaining_models": [
+            1,
+            2
+          ],
+          "certificate": {
+            "action": [
+              "0",
+              "0",
+              "1"
+            ],
+            "regret": "0",
+            "dual": [
+              "0",
+              "1"
+            ],
+            "systems": 20
+          },
+          "query_cost": "1/10"
+        },
+        {
+          "model": 2,
+          "path": [
+            [
+              0,
+              1
+            ]
+          ],
+          "remaining_models": [
+            1,
+            2
+          ],
+          "certificate": {
+            "action": [
+              "0",
+              "0",
+              "1"
+            ],
+            "regret": "0",
+            "dual": [
+              "0",
+              "1"
+            ],
+            "systems": 20
+          },
+          "query_cost": "1/10"
+        }
+      ],
+      "planning_states": 5,
+      "certificates": 5,
+      "rational_systems": 96
+    },
+    "1/3": {
+      "root_cost": "0",
+      "first_test": null,
+      "root_certificate": {
+        "action": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "regret": "1/3",
+        "dual": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "systems": 40
+      },
+      "paths": [
+        {
+          "model": 0,
+          "path": [],
+          "remaining_models": [
+            0,
+            1,
+            2
+          ],
+          "certificate": {
+            "action": [
+              "1/3",
+              "1/3",
+              "1/3"
+            ],
+            "regret": "1/3",
+            "dual": [
+              "1/3",
+              "1/3",
+              "1/3"
+            ],
+            "systems": 40
+          },
+          "query_cost": 0
+        },
+        {
+          "model": 1,
+          "path": [],
+          "remaining_models": [
+            0,
+            1,
+            2
+          ],
+          "certificate": {
+            "action": [
+              "1/3",
+              "1/3",
+              "1/3"
+            ],
+            "regret": "1/3",
+            "dual": [
+              "1/3",
+              "1/3",
+              "1/3"
+            ],
+            "systems": 40
+          },
+          "query_cost": 0
+        },
+        {
+          "model": 2,
+          "path": [],
+          "remaining_models": [
+            0,
+            1,
+            2
+          ],
+          "certificate": {
+            "action": [
+              "1/3",
+              "1/3",
+              "1/3"
+            ],
+            "regret": "1/3",
+            "dual": [
+              "1/3",
+              "1/3",
+              "1/3"
+            ],
+            "systems": 40
+          },
+          "query_cost": 0
+        }
+      ],
+      "planning_states": 1,
+      "certificates": 1,
+      "rational_systems": 40
+    }
+  },
+  "triangle_economic": {
+    "root_cost": "1/10",
+    "first_test": 0,
+    "root_certificate": {
+      "action": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "regret": "1/3",
+      "dual": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "systems": 40
+    },
+    "paths": [
+      {
+        "model": 0,
+        "path": [
+          [
+            0,
+            0
+          ]
+        ],
+        "remaining_models": [
+          0
+        ],
+        "certificate": {
+          "action": [
+            "0",
+            "1",
+            "0"
+          ],
+          "regret": "0",
+          "dual": [
+            "1"
+          ],
+          "systems": 8
+        },
+        "query_cost": "1/10"
+      },
+      {
+        "model": 1,
+        "path": [
+          [
+            0,
+            1
+          ]
+        ],
+        "remaining_models": [
+          1,
+          2
+        ],
+        "certificate": {
+          "action": [
+            "0",
+            "0",
+            "1"
+          ],
+          "regret": "0",
+          "dual": [
+            "0",
+            "1"
+          ],
+          "systems": 20
+        },
+        "query_cost": "1/10"
+      },
+      {
+        "model": 2,
+        "path": [
+          [
+            0,
+            1
+          ]
+        ],
+        "remaining_models": [
+          1,
+          2
+        ],
+        "certificate": {
+          "action": [
+            "0",
+            "0",
+            "1"
+          ],
+          "regret": "0",
+          "dual": [
+            "0",
+            "1"
+          ],
+          "systems": 20
+        },
+        "query_cost": "1/10"
+      }
+    ],
+    "planning_states": 8,
+    "certificates": 6,
+    "rational_systems": 104
+  },
+  "triangle_identification_worst_cost": "3/10",
+  "indistinguishable_obstruction": {
+    "root_cost": null,
+    "first_test": null,
+    "root_certificate": {
+      "action": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "regret": "1/3",
+      "dual": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "systems": 40
+    },
+    "paths": [
+      {
+        "model": 0,
+        "path": [],
+        "remaining_models": [
+          0,
+          1,
+          2
+        ],
+        "certificate": {
+          "action": [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          "regret": "1/3",
+          "dual": [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          "systems": 40
+        },
+        "query_cost": 0
+      },
+      {
+        "model": 1,
+        "path": [],
+        "remaining_models": [
+          0,
+          1,
+          2
+        ],
+        "certificate": {
+          "action": [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          "regret": "1/3",
+          "dual": [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          "systems": 40
+        },
+        "query_cost": 0
+      },
+      {
+        "model": 2,
+        "path": [],
+        "remaining_models": [
+          0,
+          1,
+          2
+        ],
+        "certificate": {
+          "action": [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          "regret": "1/3",
+          "dual": [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          "systems": 40
+        },
+        "query_cost": 0
+      }
+    ],
+    "planning_states": 1,
+    "certificates": 1,
+    "rational_systems": 40
+  },
+  "xor_complementarity": {
+    "singleton": [
+      {
+        "action": [
+          "1/2",
+          "1/2"
+        ],
+        "regret": "1/2",
+        "dual": [
+          "1/2",
+          "1/2"
+        ],
+        "systems": 12
+      },
+      {
+        "action": [
+          "1/2",
+          "1/2"
+        ],
+        "regret": "1/2",
+        "dual": [
+          "1/2",
+          "1/2"
+        ],
+        "systems": 12
+      },
+      {
+        "action": [
+          "1/2",
+          "1/2"
+        ],
+        "regret": "1/2",
+        "dual": [
+          "1/2",
+          "1/2"
+        ],
+        "systems": 12
+      },
+      {
+        "action": [
+          "1/2",
+          "1/2"
+        ],
+        "regret": "1/2",
+        "dual": [
+          "1/2",
+          "1/2"
+        ],
+        "systems": 12
+      }
+    ],
+    "plan": {
+      "root_cost": "1/5",
+      "first_test": 0,
+      "root_certificate": {
+        "action": [
+          "1/2",
+          "1/2"
+        ],
+        "regret": "1/2",
+        "dual": [
+          "0",
+          "0",
+          "1/2",
+          "1/2"
+        ],
+        "systems": 30
+      },
+      "paths": [
+        {
+          "model": 0,
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "remaining_models": [
+            0
+          ],
+          "certificate": {
+            "action": [
+              "1",
+              "0"
+            ],
+            "regret": "0",
+            "dual": [
+              "1"
+            ],
+            "systems": 6
+          },
+          "query_cost": "1/5"
+        },
+        {
+          "model": 1,
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "remaining_models": [
+            1
+          ],
+          "certificate": {
+            "action": [
+              "0",
+              "1"
+            ],
+            "regret": "0",
+            "dual": [
+              "1"
+            ],
+            "systems": 6
+          },
+          "query_cost": "1/5"
+        },
+        {
+          "model": 2,
+          "path": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "remaining_models": [
+            2
+          ],
+          "certificate": {
+            "action": [
+              "0",
+              "1"
+            ],
+            "regret": "0",
+            "dual": [
+              "1"
+            ],
+            "systems": 6
+          },
+          "query_cost": "1/5"
+        },
+        {
+          "model": 3,
+          "path": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "remaining_models": [
+            3
+          ],
+          "certificate": {
+            "action": [
+              "1",
+              "0"
+            ],
+            "regret": "0",
+            "dual": [
+              "1"
+            ],
+            "systems": 6
+          },
+          "query_cost": "1/5"
+        }
+      ],
+      "planning_states": 9,
+      "certificates": 9,
+      "rational_systems": 102
+    }
+  },
+  "xor_price_sweep": [
+    {
+      "price": "0",
+      "cost": "0",
+      "first": 0
+    },
+    {
+      "price": "1/10",
+      "cost": "1/5",
+      "first": 0
+    },
+    {
+      "price": "1/4",
+      "cost": "1/2",
+      "first": null
+    },
+    {
+      "price": "3/10",
+      "cost": "1/2",
+      "first": null
+    },
+    {
+      "price": "1",
+      "cost": "1/2",
+      "first": null
+    }
+  ],
+  "elapsed_ns": 56424700,
+  "end_utc": "2026-10-11T21:08:46.661366+00:00"
+}

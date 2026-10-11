@@ -7,7 +7,8 @@ Applies to [TODO_v3.md](../TODO_v3.md), its selected repairs and gate attempts.
 **Current direction: discovery first.** The author's
 [October 11 amendment](decisions/2026-10-11_discovery_first_amendment.md)
 selects [P3-SEARCH-01](discovery/P3_SEARCH_01.md), a continuing generative search.
-Its first four-hour research cycle is selected and unstarted. P3-11 is deferred
+Its first four-hour research cycle is in progress; see the current discovery
+checkpoint for exact remaining commitment. P3-11 is deferred
 until a promising candidate is ready for rigorous confirmation. Completed
 scientific records retain their historical scopes and time accounting.
 

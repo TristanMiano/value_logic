@@ -1,0 +1,7582 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "start_utc": "2026-10-11T21:02:51.581522+00:00",
+  "python": "3.13.14",
+  "command": [
+    "v3/discovery/s01/probe.py",
+    "v3/discovery/s01/run01.json"
+  ],
+  "source_sha256": "229eaab1f4ec33e934b69f6b5119bba530c26b90f9ac55bd1415e721078a604a",
+  "cost_scope": "stipulated exact-query tariffs plus separate counted controller events; not solver wall time",
+  "guided_correctness_cases": 6372,
+  "two_error_witness": {
+    "n": 32,
+    "k": 2,
+    "values": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "prediction": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "hamming": 2,
+    "result": {
+      "answer": 1,
+      "known": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 1
+      },
+      "path": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "control": {
+        "prediction_reads": 32,
+        "selector_scores": 32,
+        "sort_comparisons": 31,
+        "bound_checks": 33,
+        "selector_calls": 32,
+        "membership_checks": 528,
+        "bound_updates": 32
+      },
+      "query_cost": 32
+    }
+  },
+  "product_model_checks": [
+    {
+      "n": 3,
+      "k": 1,
+      "sbb": "101/25",
+      "exact_bellman": "101/25",
+      "bellman_states": 20,
+      "index": "101/25",
+      "guided": "101/25"
+    },
+    {
+      "n": 3,
+      "k": 2,
+      "sbb": "108/25",
+      "exact_bellman": "108/25",
+      "bellman_states": 25,
+      "index": "108/25",
+      "guided": "128/25"
+    },
+    {
+      "n": 3,
+      "k": 3,
+      "sbb": "41/25",
+      "exact_bellman": "41/25",
+      "bellman_states": 20,
+      "index": "41/25",
+      "guided": "46/25"
+    },
+    {
+      "n": 5,
+      "k": 1,
+      "sbb": "1178/625",
+      "exact_bellman": "1178/625",
+      "bellman_states": 112,
+      "index": "2693/625",
+      "guided": "1214/625"
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "sbb": "4021/625",
+      "exact_bellman": "4021/625",
+      "bellman_states": 221,
+      "index": "4763/625",
+      "guided": "4764/625"
+    },
+    {
+      "n": 5,
+      "k": 5,
+      "sbb": "959/625",
+      "exact_bellman": "959/625",
+      "bellman_states": 112,
+      "index": "1103/625",
+      "guided": "989/625"
+    },
+    {
+      "n": 7,
+      "k": 1,
+      "sbb": "24808/15625",
+      "exact_bellman": "24808/15625",
+      "bellman_states": 576,
+      "index": "69053/15625",
+      "guided": "31109/15625"
+    },
+    {
+      "n": 7,
+      "k": 4,
+      "sbb": "29353/3125",
+      "exact_bellman": "29353/3125",
+      "bellman_states": 1989,
+      "index": "35013/3125",
+      "guided": "32311/3125"
+    },
+    {
+      "n": 7,
+      "k": 7,
+      "sbb": "23904/15625",
+      "exact_bellman": "23904/15625",
+      "bellman_states": 576,
+      "index": "27983/15625",
+      "guided": "24426/15625"
+    }
+  ],
+  "replay_records": [
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "index",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "1": 1
+        },
+        "path": [
+          0,
+          1
+        ],
+        "control": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "query_cost": 61
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 372,
+        "cheap": 151,
+        "weight": 151,
+        "guided": 124,
+        "sbb_cached": 124
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 32,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 144,
+          "intersection_items": 46,
+          "bound_updates": 4
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 61,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "weight": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "guided": {
+          "lower": 62,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 32,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "sbb_cached": {
+          "lower": 62,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 72,
+            "intersection_items": 25,
+            "bound_updates": 1
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "reverse",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "11": 0,
+          "10": 0,
+          "9": 0,
+          "8": 0,
+          "7": 0,
+          "6": 0,
+          "5": 0,
+          "4": 0,
+          "3": 0,
+          "2": 0,
+          "1": 1,
+          "0": 1
+        },
+        "path": [
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "control": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "query_cost": 372
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 372,
+        "cheap": 151,
+        "weight": 151,
+        "guided": 124,
+        "sbb_cached": 124
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 32,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 144,
+          "intersection_items": 46,
+          "bound_updates": 4
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 61,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "reverse": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "cheap": {
+          "lower": 151,
+          "upper": 151,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 6,
+            "selector_calls": 5,
+            "membership_checks": 15,
+            "bound_updates": 5
+          }
+        },
+        "weight": {
+          "lower": 151,
+          "upper": 151,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 6,
+            "selector_calls": 5,
+            "membership_checks": 15,
+            "bound_updates": 5
+          }
+        },
+        "guided": {
+          "lower": 124,
+          "upper": 124,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 32,
+            "bound_checks": 5,
+            "selector_calls": 4,
+            "membership_checks": 10,
+            "bound_updates": 4
+          }
+        },
+        "sbb_cached": {
+          "lower": 124,
+          "upper": 124,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 5,
+            "selector_calls": 4,
+            "membership_checks": 144,
+            "intersection_items": 46,
+            "bound_updates": 4
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "cheap",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "3": 0,
+          "6": 0,
+          "9": 0,
+          "1": 1
+        },
+        "path": [
+          0,
+          3,
+          6,
+          9,
+          1
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "query_cost": 151
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 372,
+        "cheap": 151,
+        "weight": 151,
+        "guided": 124,
+        "sbb_cached": 124
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 32,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 144,
+          "intersection_items": 46,
+          "bound_updates": 4
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 61,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 151,
+          "upper": 151,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 6,
+            "selector_calls": 5,
+            "membership_checks": 15,
+            "bound_updates": 5
+          }
+        },
+        "weight": {
+          "lower": 151,
+          "upper": 151,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 6,
+            "selector_calls": 5,
+            "membership_checks": 15,
+            "bound_updates": 5
+          }
+        },
+        "guided": {
+          "lower": 62,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 32,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "sbb_cached": {
+          "lower": 62,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 72,
+            "intersection_items": 25,
+            "bound_updates": 1
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "weight",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "3": 0,
+          "6": 0,
+          "9": 0,
+          "1": 1
+        },
+        "path": [
+          0,
+          3,
+          6,
+          9,
+          1
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "query_cost": 151
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 372,
+        "cheap": 151,
+        "weight": 151,
+        "guided": 124,
+        "sbb_cached": 124
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 32,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 144,
+          "intersection_items": 46,
+          "bound_updates": 4
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 61,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 151,
+          "upper": 151,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 6,
+            "selector_calls": 5,
+            "membership_checks": 15,
+            "bound_updates": 5
+          }
+        },
+        "weight": {
+          "lower": 151,
+          "upper": 151,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 6,
+            "selector_calls": 5,
+            "membership_checks": 15,
+            "bound_updates": 5
+          }
+        },
+        "guided": {
+          "lower": 62,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 32,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "sbb_cached": {
+          "lower": 62,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 72,
+            "intersection_items": 25,
+            "bound_updates": 1
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "guided",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "1": 1,
+          "10": 0,
+          "5": 0,
+          "0": 1
+        },
+        "path": [
+          1,
+          10,
+          5,
+          0
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 32,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "query_cost": 124
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 372,
+        "cheap": 151,
+        "weight": 151,
+        "guided": 124,
+        "sbb_cached": 124
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 32,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 144,
+          "intersection_items": 46,
+          "bound_updates": 4
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 61,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "weight": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "guided": {
+          "lower": 124,
+          "upper": 124,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 32,
+            "bound_checks": 5,
+            "selector_calls": 4,
+            "membership_checks": 10,
+            "bound_updates": 4
+          }
+        },
+        "sbb_cached": {
+          "lower": 124,
+          "upper": 124,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 5,
+            "selector_calls": 4,
+            "membership_checks": 144,
+            "intersection_items": 46,
+            "bound_updates": 4
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "sbb_cached",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "1": 1,
+          "10": 0,
+          "5": 0,
+          "0": 1
+        },
+        "path": [
+          1,
+          10,
+          5,
+          0
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 144,
+          "intersection_items": 46,
+          "bound_updates": 4
+        },
+        "query_cost": 124
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 372,
+        "cheap": 151,
+        "weight": 151,
+        "guided": 124,
+        "sbb_cached": 124
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 6,
+          "selector_calls": 5,
+          "membership_checks": 15,
+          "bound_updates": 5
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 32,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 144,
+          "intersection_items": 46,
+          "bound_updates": 4
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 61,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "weight": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "guided": {
+          "lower": 124,
+          "upper": 124,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 32,
+            "bound_checks": 5,
+            "selector_calls": 4,
+            "membership_checks": 10,
+            "bound_updates": 4
+          }
+        },
+        "sbb_cached": {
+          "lower": 124,
+          "upper": 124,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 5,
+            "selector_calls": 4,
+            "membership_checks": 144,
+            "intersection_items": 46,
+            "bound_updates": 4
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "prediction": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "selected": "index",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 1,
+          "11": 1
+        },
+        "path": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "control": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "query_cost": 372
+      },
+      "query_costs": {
+        "index": 372,
+        "reverse": 63,
+        "cheap": 372,
+        "weight": 372,
+        "guided": 308,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "reverse": {
+          "lower": 63,
+          "upper": 63,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "cheap": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "weight": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "guided": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "sbb_cached": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 360,
+            "intersection_items": 85,
+            "bound_updates": 10
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "prediction": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "selected": "reverse",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "11": 1,
+          "10": 1
+        },
+        "path": [
+          11,
+          10
+        ],
+        "control": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "query_cost": 63
+      },
+      "query_costs": {
+        "index": 372,
+        "reverse": 63,
+        "cheap": 372,
+        "weight": 372,
+        "guided": 308,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "reverse": {
+          "lower": 63,
+          "upper": 63,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "cheap": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "weight": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "guided": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "sbb_cached": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 36,
+            "intersection_items": 13
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "prediction": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "selected": "cheap",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 0,
+          "3": 0,
+          "6": 0,
+          "9": 0,
+          "1": 0,
+          "4": 0,
+          "7": 0,
+          "10": 1,
+          "2": 0,
+          "5": 0,
+          "8": 0,
+          "11": 1
+        },
+        "path": [
+          0,
+          3,
+          6,
+          9,
+          1,
+          4,
+          7,
+          10,
+          2,
+          5,
+          8,
+          11
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "query_cost": 372
+      },
+      "query_costs": {
+        "index": 372,
+        "reverse": 63,
+        "cheap": 372,
+        "weight": 372,
+        "guided": 308,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "reverse": {
+          "lower": 63,
+          "upper": 63,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "cheap": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "weight": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "guided": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "sbb_cached": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 360,
+            "intersection_items": 85,
+            "bound_updates": 10
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "prediction": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "selected": "weight",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 0,
+          "3": 0,
+          "6": 0,
+          "9": 0,
+          "1": 0,
+          "4": 0,
+          "7": 0,
+          "10": 1,
+          "2": 0,
+          "5": 0,
+          "8": 0,
+          "11": 1
+        },
+        "path": [
+          0,
+          3,
+          6,
+          9,
+          1,
+          4,
+          7,
+          10,
+          2,
+          5,
+          8,
+          11
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "query_cost": 372
+      },
+      "query_costs": {
+        "index": 372,
+        "reverse": 63,
+        "cheap": 372,
+        "weight": 372,
+        "guided": 308,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "reverse": {
+          "lower": 63,
+          "upper": 63,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "cheap": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "weight": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "guided": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "sbb_cached": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 360,
+            "intersection_items": 85,
+            "bound_updates": 10
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "prediction": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "selected": "guided",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 0,
+          "5": 0,
+          "11": 1,
+          "3": 0,
+          "6": 0,
+          "9": 0,
+          "1": 0,
+          "4": 0,
+          "7": 0,
+          "10": 1
+        },
+        "path": [
+          0,
+          5,
+          11,
+          3,
+          6,
+          9,
+          1,
+          4,
+          7,
+          10
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "query_cost": 308
+      },
+      "query_costs": {
+        "index": 372,
+        "reverse": 63,
+        "cheap": 372,
+        "weight": 372,
+        "guided": 308,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 93,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 2
+          }
+        },
+        "reverse": {
+          "lower": 63,
+          "upper": 63,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "cheap": {
+          "lower": 276,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 9,
+            "selector_calls": 9,
+            "membership_checks": 45,
+            "bound_updates": 8
+          }
+        },
+        "weight": {
+          "lower": 276,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 9,
+            "selector_calls": 9,
+            "membership_checks": 45,
+            "bound_updates": 8
+          }
+        },
+        "guided": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "sbb_cached": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 360,
+            "intersection_items": 85,
+            "bound_updates": 10
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "prediction": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "selected": "sbb_cached",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 0,
+          "5": 0,
+          "3": 0,
+          "6": 0,
+          "9": 0,
+          "1": 0,
+          "4": 0,
+          "7": 0,
+          "10": 1,
+          "11": 1
+        },
+        "path": [
+          0,
+          5,
+          3,
+          6,
+          9,
+          1,
+          4,
+          7,
+          10,
+          11
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        },
+        "query_cost": 308
+      },
+      "query_costs": {
+        "index": 372,
+        "reverse": 63,
+        "cheap": 372,
+        "weight": 372,
+        "guided": 308,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 93,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 2
+          }
+        },
+        "reverse": {
+          "lower": 63,
+          "upper": 63,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "cheap": {
+          "lower": 276,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 9,
+            "selector_calls": 9,
+            "membership_checks": 45,
+            "bound_updates": 8
+          }
+        },
+        "weight": {
+          "lower": 276,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 9,
+            "selector_calls": 9,
+            "membership_checks": 45,
+            "bound_updates": 8
+          }
+        },
+        "guided": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "sbb_cached": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 360,
+            "intersection_items": 85,
+            "bound_updates": 10
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "index",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "path": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "control": {
+          "bound_checks": 7,
+          "selector_calls": 6,
+          "membership_checks": 21,
+          "bound_updates": 6
+        },
+        "query_cost": 186
+      },
+      "query_costs": {
+        "index": 186,
+        "reverse": 372,
+        "cheap": 308,
+        "weight": 308,
+        "guided": 372,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 7,
+          "selector_calls": 6,
+          "membership_checks": 21,
+          "bound_updates": 6
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 62,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 186,
+          "upper": 186,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 7,
+            "selector_calls": 6,
+            "membership_checks": 21,
+            "bound_updates": 6
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 90,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 3,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 2
+          }
+        },
+        "weight": {
+          "lower": 90,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 3,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 2
+          }
+        },
+        "guided": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "sbb_cached": {
+          "lower": 153,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 62,
+            "bound_checks": 5,
+            "selector_calls": 5,
+            "membership_checks": 180,
+            "intersection_items": 55,
+            "bound_updates": 4
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "reverse",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "11": 0,
+          "10": 0,
+          "9": 0,
+          "8": 0,
+          "7": 0,
+          "6": 0,
+          "5": 1,
+          "4": 1,
+          "3": 1,
+          "2": 1,
+          "1": 1,
+          "0": 1
+        },
+        "path": [
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "control": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "query_cost": 372
+      },
+      "query_costs": {
+        "index": 186,
+        "reverse": 372,
+        "cheap": 308,
+        "weight": 308,
+        "guided": 372,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 7,
+          "selector_calls": 6,
+          "membership_checks": 21,
+          "bound_updates": 6
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 62,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 186,
+          "upper": 186,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 7,
+            "selector_calls": 6,
+            "membership_checks": 21,
+            "bound_updates": 6
+          }
+        },
+        "reverse": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "cheap": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "weight": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "guided": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "sbb_cached": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 62,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 360,
+            "intersection_items": 85,
+            "bound_updates": 10
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "cheap",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "3": 1,
+          "6": 0,
+          "9": 0,
+          "1": 1,
+          "4": 1,
+          "7": 0,
+          "10": 0,
+          "2": 1,
+          "5": 1
+        },
+        "path": [
+          0,
+          3,
+          6,
+          9,
+          1,
+          4,
+          7,
+          10,
+          2,
+          5
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "query_cost": 308
+      },
+      "query_costs": {
+        "index": 186,
+        "reverse": 372,
+        "cheap": 308,
+        "weight": 308,
+        "guided": 372,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 7,
+          "selector_calls": 6,
+          "membership_checks": 21,
+          "bound_updates": 6
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 62,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 186,
+          "upper": 186,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 7,
+            "selector_calls": 6,
+            "membership_checks": 21,
+            "bound_updates": 6
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "weight": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "guided": {
+          "lower": 185,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 6,
+            "selector_calls": 6,
+            "membership_checks": 21,
+            "bound_updates": 5
+          }
+        },
+        "sbb_cached": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 62,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 360,
+            "intersection_items": 85,
+            "bound_updates": 10
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "weight",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "3": 1,
+          "6": 0,
+          "9": 0,
+          "1": 1,
+          "4": 1,
+          "7": 0,
+          "10": 0,
+          "2": 1,
+          "5": 1
+        },
+        "path": [
+          0,
+          3,
+          6,
+          9,
+          1,
+          4,
+          7,
+          10,
+          2,
+          5
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "query_cost": 308
+      },
+      "query_costs": {
+        "index": 186,
+        "reverse": 372,
+        "cheap": 308,
+        "weight": 308,
+        "guided": 372,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 7,
+          "selector_calls": 6,
+          "membership_checks": 21,
+          "bound_updates": 6
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 62,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 186,
+          "upper": 186,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 7,
+            "selector_calls": 6,
+            "membership_checks": 21,
+            "bound_updates": 6
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "weight": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "guided": {
+          "lower": 185,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 6,
+            "selector_calls": 6,
+            "membership_checks": 21,
+            "bound_updates": 5
+          }
+        },
+        "sbb_cached": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 62,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 360,
+            "intersection_items": 85,
+            "bound_updates": 10
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "guided",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "6": 0,
+          "9": 0,
+          "7": 0,
+          "5": 1,
+          "8": 0,
+          "11": 0,
+          "3": 1,
+          "1": 1,
+          "4": 1,
+          "10": 0,
+          "2": 1
+        },
+        "path": [
+          0,
+          6,
+          9,
+          7,
+          5,
+          8,
+          11,
+          3,
+          1,
+          4,
+          10,
+          2
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "query_cost": 372
+      },
+      "query_costs": {
+        "index": 186,
+        "reverse": 372,
+        "cheap": 308,
+        "weight": 308,
+        "guided": 372,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 7,
+          "selector_calls": 6,
+          "membership_checks": 21,
+          "bound_updates": 6
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 62,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 186,
+          "upper": 186,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 7,
+            "selector_calls": 6,
+            "membership_checks": 21,
+            "bound_updates": 6
+          }
+        },
+        "reverse": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "cheap": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "weight": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "guided": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "sbb_cached": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 62,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 360,
+            "intersection_items": 85,
+            "bound_updates": 10
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "sbb_cached",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "3": 1,
+          "1": 1,
+          "4": 1,
+          "10": 0,
+          "6": 0,
+          "9": 0,
+          "7": 0,
+          "5": 1,
+          "2": 1
+        },
+        "path": [
+          0,
+          3,
+          1,
+          4,
+          10,
+          6,
+          9,
+          7,
+          5,
+          2
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 62,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        },
+        "query_cost": 308
+      },
+      "query_costs": {
+        "index": 186,
+        "reverse": 372,
+        "cheap": 308,
+        "weight": 308,
+        "guided": 372,
+        "sbb_cached": 308
+      },
+      "control": {
+        "index": {
+          "bound_checks": 7,
+          "selector_calls": 6,
+          "membership_checks": 21,
+          "bound_updates": 6
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 55,
+          "bound_updates": 10
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 62,
+          "bound_checks": 11,
+          "selector_calls": 10,
+          "membership_checks": 360,
+          "intersection_items": 85,
+          "bound_updates": 10
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 186,
+          "upper": 186,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 7,
+            "selector_calls": 6,
+            "membership_checks": 21,
+            "bound_updates": 6
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "weight": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 55,
+            "bound_updates": 10
+          }
+        },
+        "guided": {
+          "lower": 185,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 6,
+            "selector_calls": 6,
+            "membership_checks": 21,
+            "bound_updates": 5
+          }
+        },
+        "sbb_cached": {
+          "lower": 308,
+          "upper": 308,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 62,
+            "bound_checks": 11,
+            "selector_calls": 10,
+            "membership_checks": 360,
+            "intersection_items": 85,
+            "bound_updates": 10
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prediction": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "selected": "index",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 1,
+          "5": 0,
+          "6": 1,
+          "7": 0,
+          "8": 1,
+          "9": 0,
+          "10": 1
+        },
+        "path": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "control": {
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "query_cost": 340
+      },
+      "query_costs": {
+        "index": 340,
+        "reverse": 372,
+        "cheap": 340,
+        "weight": 340,
+        "guided": 372,
+        "sbb_cached": 340
+      },
+      "control": {
+        "index": {
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 59,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 396,
+          "intersection_items": 88,
+          "bound_updates": 11
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "weight": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "guided": {
+          "lower": 215,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 7,
+            "selector_calls": 7,
+            "membership_checks": 28,
+            "bound_updates": 6
+          }
+        },
+        "sbb_cached": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 59,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 396,
+            "intersection_items": 88,
+            "bound_updates": 11
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prediction": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "selected": "reverse",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "11": 0,
+          "10": 1,
+          "9": 0,
+          "8": 1,
+          "7": 0,
+          "6": 1,
+          "5": 0,
+          "4": 1,
+          "3": 0,
+          "2": 1,
+          "1": 0,
+          "0": 1
+        },
+        "path": [
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "control": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "query_cost": 372
+      },
+      "query_costs": {
+        "index": 340,
+        "reverse": 372,
+        "cheap": 340,
+        "weight": 340,
+        "guided": 372,
+        "sbb_cached": 340
+      },
+      "control": {
+        "index": {
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 59,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 396,
+          "intersection_items": 88,
+          "bound_updates": 11
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "reverse": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "cheap": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "weight": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "guided": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "sbb_cached": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 59,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 396,
+            "intersection_items": 88,
+            "bound_updates": 11
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prediction": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "selected": "cheap",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "3": 0,
+          "6": 1,
+          "9": 0,
+          "1": 0,
+          "4": 1,
+          "7": 0,
+          "10": 1,
+          "2": 1,
+          "5": 0,
+          "8": 1
+        },
+        "path": [
+          0,
+          3,
+          6,
+          9,
+          1,
+          4,
+          7,
+          10,
+          2,
+          5,
+          8
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "query_cost": 340
+      },
+      "query_costs": {
+        "index": 340,
+        "reverse": 372,
+        "cheap": 340,
+        "weight": 340,
+        "guided": 372,
+        "sbb_cached": 340
+      },
+      "control": {
+        "index": {
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 59,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 396,
+          "intersection_items": 88,
+          "bound_updates": 11
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "weight": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "guided": {
+          "lower": 215,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 7,
+            "selector_calls": 7,
+            "membership_checks": 28,
+            "bound_updates": 6
+          }
+        },
+        "sbb_cached": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 59,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 396,
+            "intersection_items": 88,
+            "bound_updates": 11
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prediction": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "selected": "weight",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "3": 0,
+          "6": 1,
+          "9": 0,
+          "1": 0,
+          "4": 1,
+          "7": 0,
+          "10": 1,
+          "2": 1,
+          "5": 0,
+          "8": 1
+        },
+        "path": [
+          0,
+          3,
+          6,
+          9,
+          1,
+          4,
+          7,
+          10,
+          2,
+          5,
+          8
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "query_cost": 340
+      },
+      "query_costs": {
+        "index": 340,
+        "reverse": 372,
+        "cheap": 340,
+        "weight": 340,
+        "guided": 372,
+        "sbb_cached": 340
+      },
+      "control": {
+        "index": {
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 59,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 396,
+          "intersection_items": 88,
+          "bound_updates": 11
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "weight": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "guided": {
+          "lower": 215,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 7,
+            "selector_calls": 7,
+            "membership_checks": 28,
+            "bound_updates": 6
+          }
+        },
+        "sbb_cached": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 59,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 396,
+            "intersection_items": 88,
+            "bound_updates": 11
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prediction": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "selected": "guided",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "3": 0,
+          "9": 0,
+          "1": 0,
+          "7": 0,
+          "10": 1,
+          "11": 0,
+          "6": 1,
+          "4": 1,
+          "2": 1,
+          "5": 0,
+          "8": 1
+        },
+        "path": [
+          0,
+          3,
+          9,
+          1,
+          7,
+          10,
+          11,
+          6,
+          4,
+          2,
+          5,
+          8
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "query_cost": 372
+      },
+      "query_costs": {
+        "index": 340,
+        "reverse": 372,
+        "cheap": 340,
+        "weight": 340,
+        "guided": 372,
+        "sbb_cached": 340
+      },
+      "control": {
+        "index": {
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 59,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 396,
+          "intersection_items": 88,
+          "bound_updates": 11
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "reverse": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "cheap": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "weight": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "guided": {
+          "lower": 372,
+          "upper": 372,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 13,
+            "selector_calls": 12,
+            "membership_checks": 78,
+            "bound_updates": 12
+          }
+        },
+        "sbb_cached": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 59,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 396,
+            "intersection_items": 88,
+            "bound_updates": 11
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "values": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prediction": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "selected": "sbb_cached",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "6": 1,
+          "4": 1,
+          "2": 1,
+          "5": 0,
+          "3": 0,
+          "9": 0,
+          "1": 0,
+          "7": 0,
+          "10": 1,
+          "8": 1
+        },
+        "path": [
+          0,
+          6,
+          4,
+          2,
+          5,
+          3,
+          9,
+          1,
+          7,
+          10,
+          8
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 59,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 396,
+          "intersection_items": 88,
+          "bound_updates": 11
+        },
+        "query_cost": 340
+      },
+      "query_costs": {
+        "index": 340,
+        "reverse": 372,
+        "cheap": 340,
+        "weight": 340,
+        "guided": 372,
+        "sbb_cached": 340
+      },
+      "control": {
+        "index": {
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "reverse": {
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 66,
+          "bound_updates": 11
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 13,
+          "selector_calls": 12,
+          "membership_checks": 78,
+          "bound_updates": 12
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 59,
+          "bound_checks": 12,
+          "selector_calls": 11,
+          "membership_checks": 396,
+          "intersection_items": 88,
+          "bound_updates": 11
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "weight": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 66,
+            "bound_updates": 11
+          }
+        },
+        "guided": {
+          "lower": 215,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 7,
+            "selector_calls": 7,
+            "membership_checks": 28,
+            "bound_updates": 6
+          }
+        },
+        "sbb_cached": {
+          "lower": 340,
+          "upper": 340,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 59,
+            "bound_checks": 12,
+            "selector_calls": 11,
+            "membership_checks": 396,
+            "intersection_items": 88,
+            "bound_updates": 11
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 11,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "index",
+      "selected_result": {
+        "answer": 0,
+        "known": {
+          "0": 1,
+          "1": 1,
+          "2": 0,
+          "3": 0
+        },
+        "path": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "control": {
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "query_cost": 123
+      },
+      "query_costs": {
+        "index": 123,
+        "reverse": 63,
+        "cheap": 90,
+        "weight": 90,
+        "guided": 90,
+        "sbb_cached": 90
+      },
+      "control": {
+        "index": {
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 108,
+          "intersection_items": 36,
+          "bound_updates": 3
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 123,
+          "upper": 123,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 5,
+            "selector_calls": 4,
+            "membership_checks": 10,
+            "bound_updates": 4
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 90,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 3,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 2
+          }
+        },
+        "weight": {
+          "lower": 90,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 3,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 2
+          }
+        },
+        "guided": {
+          "lower": 90,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 3,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 2
+          }
+        },
+        "sbb_cached": {
+          "lower": 90,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 3,
+            "selector_calls": 3,
+            "membership_checks": 108,
+            "intersection_items": 36,
+            "bound_updates": 2
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 11,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "reverse",
+      "selected_result": {
+        "answer": 0,
+        "known": {
+          "11": 0,
+          "10": 0
+        },
+        "path": [
+          11,
+          10
+        ],
+        "control": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "query_cost": 63
+      },
+      "query_costs": {
+        "index": 123,
+        "reverse": 63,
+        "cheap": 90,
+        "weight": 90,
+        "guided": 90,
+        "sbb_cached": 90
+      },
+      "control": {
+        "index": {
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 108,
+          "intersection_items": 36,
+          "bound_updates": 3
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "reverse": {
+          "lower": 63,
+          "upper": 63,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "cheap": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "weight": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "guided": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "sbb_cached": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 36,
+            "intersection_items": 13
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 11,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "cheap",
+      "selected_result": {
+        "answer": 0,
+        "known": {
+          "0": 1,
+          "3": 0,
+          "6": 0
+        },
+        "path": [
+          0,
+          3,
+          6
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "query_cost": 90
+      },
+      "query_costs": {
+        "index": 123,
+        "reverse": 63,
+        "cheap": 90,
+        "weight": 90,
+        "guided": 90,
+        "sbb_cached": 90
+      },
+      "control": {
+        "index": {
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 108,
+          "intersection_items": 36,
+          "bound_updates": 3
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "weight": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "guided": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "sbb_cached": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 108,
+            "intersection_items": 36,
+            "bound_updates": 3
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 11,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "weight",
+      "selected_result": {
+        "answer": 0,
+        "known": {
+          "0": 1,
+          "3": 0,
+          "6": 0
+        },
+        "path": [
+          0,
+          3,
+          6
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "query_cost": 90
+      },
+      "query_costs": {
+        "index": 123,
+        "reverse": 63,
+        "cheap": 90,
+        "weight": 90,
+        "guided": 90,
+        "sbb_cached": 90
+      },
+      "control": {
+        "index": {
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 108,
+          "intersection_items": 36,
+          "bound_updates": 3
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "weight": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "guided": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "sbb_cached": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 108,
+            "intersection_items": 36,
+            "bound_updates": 3
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 11,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "guided",
+      "selected_result": {
+        "answer": 0,
+        "known": {
+          "0": 1,
+          "3": 0,
+          "6": 0
+        },
+        "path": [
+          0,
+          3,
+          6
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "query_cost": 90
+      },
+      "query_costs": {
+        "index": 123,
+        "reverse": 63,
+        "cheap": 90,
+        "weight": 90,
+        "guided": 90,
+        "sbb_cached": 90
+      },
+      "control": {
+        "index": {
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 108,
+          "intersection_items": 36,
+          "bound_updates": 3
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "weight": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "guided": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "sbb_cached": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 108,
+            "intersection_items": 36,
+            "bound_updates": 3
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 11,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prediction": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "selected": "sbb_cached",
+      "selected_result": {
+        "answer": 0,
+        "known": {
+          "0": 1,
+          "3": 0,
+          "6": 0
+        },
+        "path": [
+          0,
+          3,
+          6
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 108,
+          "intersection_items": 36,
+          "bound_updates": 3
+        },
+        "query_cost": 90
+      },
+      "query_costs": {
+        "index": 123,
+        "reverse": 63,
+        "cheap": 90,
+        "weight": 90,
+        "guided": 90,
+        "sbb_cached": 90
+      },
+      "control": {
+        "index": {
+          "bound_checks": 5,
+          "selector_calls": 4,
+          "membership_checks": 10,
+          "bound_updates": 4
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 6,
+          "bound_updates": 3
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 61,
+          "bound_checks": 4,
+          "selector_calls": 3,
+          "membership_checks": 108,
+          "intersection_items": 36,
+          "bound_updates": 3
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "weight": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "guided": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 6,
+            "bound_updates": 3
+          }
+        },
+        "sbb_cached": {
+          "lower": 90,
+          "upper": 90,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 61,
+            "bound_checks": 4,
+            "selector_calls": 3,
+            "membership_checks": 108,
+            "intersection_items": 36,
+            "bound_updates": 3
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "selected": "index",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "1": 1
+        },
+        "path": [
+          0,
+          1
+        ],
+        "control": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "query_cost": 61
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 63,
+        "cheap": 60,
+        "weight": 60,
+        "guided": 60,
+        "sbb_cached": 60
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 72,
+          "intersection_items": 25,
+          "bound_updates": 2
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 61,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "weight": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "guided": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "sbb_cached": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 36,
+            "intersection_items": 13
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "selected": "reverse",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "11": 1,
+          "10": 1
+        },
+        "path": [
+          11,
+          10
+        ],
+        "control": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "query_cost": 63
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 63,
+        "cheap": 60,
+        "weight": 60,
+        "guided": 60,
+        "sbb_cached": 60
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 72,
+          "intersection_items": 25,
+          "bound_updates": 2
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "reverse": {
+          "lower": 63,
+          "upper": 63,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "cheap": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "weight": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "guided": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "sbb_cached": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 36,
+            "intersection_items": 13
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "selected": "cheap",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "3": 1
+        },
+        "path": [
+          0,
+          3
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "query_cost": 60
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 63,
+        "cheap": 60,
+        "weight": 60,
+        "guided": 60,
+        "sbb_cached": 60
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 72,
+          "intersection_items": 25,
+          "bound_updates": 2
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 60,
+          "upper": 60,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "weight": {
+          "lower": 60,
+          "upper": 60,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "guided": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "sbb_cached": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 72,
+            "intersection_items": 25,
+            "bound_updates": 1
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "selected": "weight",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "0": 1,
+          "3": 1
+        },
+        "path": [
+          0,
+          3
+        ],
+        "control": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "query_cost": 60
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 63,
+        "cheap": 60,
+        "weight": 60,
+        "guided": 60,
+        "sbb_cached": 60
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 72,
+          "intersection_items": 25,
+          "bound_updates": 2
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 61,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 60,
+          "upper": 60,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "weight": {
+          "lower": 60,
+          "upper": 60,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "guided": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 1
+          }
+        },
+        "sbb_cached": {
+          "lower": 60,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 2,
+            "selector_calls": 2,
+            "membership_checks": 72,
+            "intersection_items": 25,
+            "bound_updates": 1
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "selected": "guided",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "3": 1,
+          "6": 1
+        },
+        "path": [
+          3,
+          6
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "query_cost": 60
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 63,
+        "cheap": 60,
+        "weight": 60,
+        "guided": 60,
+        "sbb_cached": 60
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 72,
+          "intersection_items": 25,
+          "bound_updates": 2
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "weight": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "guided": {
+          "lower": 60,
+          "upper": 60,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "sbb_cached": {
+          "lower": 60,
+          "upper": 60,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 72,
+            "intersection_items": 25,
+            "bound_updates": 2
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "k": 2,
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "prediction": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "selected": "sbb_cached",
+      "selected_result": {
+        "answer": 1,
+        "known": {
+          "3": 1,
+          "6": 1
+        },
+        "path": [
+          3,
+          6
+        ],
+        "control": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 72,
+          "intersection_items": 25,
+          "bound_updates": 2
+        },
+        "query_cost": 60
+      },
+      "query_costs": {
+        "index": 61,
+        "reverse": 63,
+        "cheap": 60,
+        "weight": 60,
+        "guided": 60,
+        "sbb_cached": 60
+      },
+      "control": {
+        "index": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "reverse": {
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "cheap": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "weight": {
+          "selector_scores": 12,
+          "sort_comparisons": 29,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "guided": {
+          "prediction_reads": 12,
+          "selector_scores": 12,
+          "sort_comparisons": 30,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 3,
+          "bound_updates": 2
+        },
+        "sbb_cached": {
+          "prediction_reads": 12,
+          "selector_scores": 24,
+          "sort_comparisons": 60,
+          "bound_checks": 3,
+          "selector_calls": 2,
+          "membership_checks": 72,
+          "intersection_items": 25,
+          "bound_updates": 2
+        }
+      },
+      "bounds": {
+        "index": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "reverse": {
+          "lower": 32,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "cheap": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "weight": {
+          "lower": 30,
+          "upper": 372,
+          "exact": false,
+          "completed": false,
+          "control": {
+            "selector_scores": 12,
+            "sort_comparisons": 29,
+            "bound_checks": 1,
+            "selector_calls": 1,
+            "membership_checks": 1
+          }
+        },
+        "guided": {
+          "lower": 60,
+          "upper": 60,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 12,
+            "sort_comparisons": 30,
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 3,
+            "bound_updates": 2
+          }
+        },
+        "sbb_cached": {
+          "lower": 60,
+          "upper": 60,
+          "exact": true,
+          "completed": true,
+          "control": {
+            "prediction_reads": 12,
+            "selector_scores": 24,
+            "sort_comparisons": 60,
+            "bound_checks": 3,
+            "selector_calls": 2,
+            "membership_checks": 72,
+            "intersection_items": 25,
+            "bound_updates": 2
+          }
+        }
+      }
+    }
+  ],
+  "replay_summary": {
+    "records": 36,
+    "policy_intervals": 216,
+    "completed": 125,
+    "exact_cost": 125,
+    "replay_controller_events": 25834
+  },
+  "elapsed_ns": 193724900,
+  "end_utc": "2026-10-11T21:02:51.775246+00:00"
+}

@@ -1,0 +1,1891 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "start_utc": "2026-10-11T21:15:14.994126+00:00",
+  "command": [
+    "v3/discovery/s01/compare_probe.py",
+    "v3/discovery/s01/compare01.json"
+  ],
+  "source_sha256": "59c8f928d6c3fe48f9da3704128d495a1125ee54a4a8046586ba6e76fb854651",
+  "seed": 7401,
+  "contract": "fixed-order k-of-n; nonnegative integer fixed query prices; optional fixed setup/step tariffs",
+  "small_checks": {
+    "fixtures": 320,
+    "completions": 5286,
+    "narrower_than_independent": 171
+  },
+  "dominance_examples": [
+    {
+      "a": [
+        0,
+        2,
+        1
+      ],
+      "b": [
+        2,
+        0,
+        1
+      ],
+      "k": 2,
+      "prices": [
+        1,
+        0,
+        0
+      ],
+      "known": {
+        "2": 1
+      },
+      "setup": [
+        0,
+        0
+      ],
+      "step": [
+        2,
+        2
+      ],
+      "exact": {
+        "lower": 0,
+        "upper": 0,
+        "lower_witness": [
+          0,
+          0,
+          1
+        ],
+        "upper_witness": [
+          0,
+          0,
+          1
+        ],
+        "lower_stop": [
+          0,
+          2,
+          2
+        ],
+        "upper_stop": [
+          0,
+          2,
+          2
+        ],
+        "feasible_stop_pairs": 3,
+        "visited_pairs": 15,
+        "prefix_cells": 9
+      },
+      "enumeration": {
+        "lower": 0,
+        "upper": 0,
+        "independent_lower": -2,
+        "independent_upper": 2,
+        "completions": 4
+      }
+    },
+    {
+      "a": [
+        1,
+        2,
+        0
+      ],
+      "b": [
+        2,
+        1,
+        0
+      ],
+      "k": 2,
+      "prices": [
+        6,
+        7,
+        7
+      ],
+      "known": {
+        "2": 1
+      },
+      "setup": [
+        0,
+        0
+      ],
+      "step": [
+        0,
+        0
+      ],
+      "exact": {
+        "lower": 0,
+        "upper": 0,
+        "lower_witness": [
+          0,
+          0,
+          1
+        ],
+        "upper_witness": [
+          0,
+          0,
+          1
+        ],
+        "lower_stop": [
+          0,
+          2,
+          2
+        ],
+        "upper_stop": [
+          0,
+          2,
+          2
+        ],
+        "feasible_stop_pairs": 3,
+        "visited_pairs": 15,
+        "prefix_cells": 9
+      },
+      "enumeration": {
+        "lower": 0,
+        "upper": 0,
+        "independent_lower": -6,
+        "independent_upper": 6,
+        "completions": 4
+      }
+    },
+    {
+      "a": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "b": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "k": 4,
+      "prices": [
+        6,
+        4,
+        7,
+        8
+      ],
+      "known": {
+        "0": 1,
+        "1": 1
+      },
+      "setup": [
+        2,
+        2
+      ],
+      "step": [
+        2,
+        2
+      ],
+      "exact": {
+        "lower": -6,
+        "upper": 0,
+        "lower_witness": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "upper_witness": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "lower_stop": [
+          0,
+          0,
+          1
+        ],
+        "upper_stop": [
+          1,
+          3,
+          3
+        ],
+        "feasible_stop_pairs": 3,
+        "visited_pairs": 24,
+        "prefix_cells": 16
+      },
+      "enumeration": {
+        "lower": -6,
+        "upper": 0,
+        "independent_lower": -23,
+        "independent_upper": 17,
+        "completions": 4
+      }
+    },
+    {
+      "a": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "b": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "k": 2,
+      "prices": [
+        4,
+        2,
+        7,
+        9
+      ],
+      "known": {},
+      "setup": [
+        2,
+        0
+      ],
+      "step": [
+        0,
+        2
+      ],
+      "exact": {
+        "lower": -10,
+        "upper": -2,
+        "lower_witness": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "upper_witness": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "lower_stop": [
+          0,
+          2,
+          3
+        ],
+        "upper_stop": [
+          0,
+          3,
+          2
+        ],
+        "feasible_stop_pairs": 9,
+        "visited_pairs": 32,
+        "prefix_cells": 16
+      },
+      "enumeration": {
+        "lower": -10,
+        "upper": -2,
+        "independent_lower": -12,
+        "independent_upper": 4,
+        "completions": 16
+      }
+    },
+    {
+      "a": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "b": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "k": 2,
+      "prices": [
+        5,
+        5,
+        2,
+        7
+      ],
+      "known": {
+        "1": 0,
+        "3": 0
+      },
+      "setup": [
+        1,
+        3
+      ],
+      "step": [
+        2,
+        2
+      ],
+      "exact": {
+        "lower": -2,
+        "upper": -2,
+        "lower_witness": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "upper_witness": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "lower_stop": [
+          0,
+          2,
+          2
+        ],
+        "upper_stop": [
+          0,
+          2,
+          2
+        ],
+        "feasible_stop_pairs": 3,
+        "visited_pairs": 24,
+        "prefix_cells": 16
+      },
+      "enumeration": {
+        "lower": -2,
+        "upper": -2,
+        "independent_lower": -6,
+        "independent_upper": 2,
+        "completions": 4
+      }
+    },
+    {
+      "a": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "b": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "k": 1,
+      "prices": [
+        4,
+        6,
+        8,
+        1
+      ],
+      "known": {
+        "0": 0,
+        "1": 0
+      },
+      "setup": [
+        0,
+        3
+      ],
+      "step": [
+        2,
+        2
+      ],
+      "exact": {
+        "lower": -3,
+        "upper": -3,
+        "lower_witness": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "upper_witness": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "lower_stop": [
+          0,
+          3,
+          3
+        ],
+        "upper_stop": [
+          0,
+          3,
+          3
+        ],
+        "feasible_stop_pairs": 3,
+        "visited_pairs": 24,
+        "prefix_cells": 16
+      },
+      "enumeration": {
+        "lower": -3,
+        "upper": -3,
+        "independent_lower": -13,
+        "independent_upper": 7,
+        "completions": 4
+      }
+    },
+    {
+      "a": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "b": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "k": 4,
+      "prices": [
+        3,
+        3,
+        5,
+        0
+      ],
+      "known": {},
+      "setup": [
+        0,
+        1
+      ],
+      "step": [
+        0,
+        2
+      ],
+      "exact": {
+        "lower": -17,
+        "upper": 0,
+        "lower_witness": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "upper_witness": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "lower_stop": [
+          0,
+          1,
+          3
+        ],
+        "upper_stop": [
+          0,
+          2,
+          0
+        ],
+        "feasible_stop_pairs": 9,
+        "visited_pairs": 32,
+        "prefix_cells": 16
+      },
+      "enumeration": {
+        "lower": -17,
+        "upper": 0,
+        "independent_lower": -20,
+        "independent_upper": 3,
+        "completions": 16
+      }
+    },
+    {
+      "a": [
+        2,
+        1,
+        3,
+        0,
+        4
+      ],
+      "b": [
+        0,
+        3,
+        2,
+        4,
+        1
+      ],
+      "k": 2,
+      "prices": [
+        8,
+        0,
+        3,
+        0,
+        7
+      ],
+      "known": {
+        "2": 1
+      },
+      "setup": [
+        2,
+        2
+      ],
+      "step": [
+        0,
+        2
+      ],
+      "exact": {
+        "lower": -25,
+        "upper": -6,
+        "lower_witness": [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "upper_witness": [
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "lower_stop": [
+          1,
+          1,
+          4
+        ],
+        "upper_stop": [
+          1,
+          3,
+          2
+        ],
+        "feasible_stop_pairs": 9,
+        "visited_pairs": 45,
+        "prefix_cells": 25
+      },
+      "enumeration": {
+        "lower": -25,
+        "upper": -6,
+        "independent_lower": -25,
+        "independent_upper": 6,
+        "completions": 16
+      }
+    },
+    {
+      "a": [
+        0,
+        4,
+        2,
+        1,
+        3
+      ],
+      "b": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      "k": 4,
+      "prices": [
+        2,
+        2,
+        2,
+        3,
+        6
+      ],
+      "known": {
+        "3": 1
+      },
+      "setup": [
+        0,
+        2
+      ],
+      "step": [
+        1,
+        2
+      ],
+      "exact": {
+        "lower": -11,
+        "upper": -1,
+        "lower_witness": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "upper_witness": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "lower_stop": [
+          0,
+          3,
+          4
+        ],
+        "upper_stop": [
+          0,
+          2,
+          1
+        ],
+        "feasible_stop_pairs": 8,
+        "visited_pairs": 45,
+        "prefix_cells": 25
+      },
+      "enumeration": {
+        "lower": -11,
+        "upper": -1,
+        "independent_lower": -17,
+        "independent_upper": 6,
+        "completions": 16
+      }
+    },
+    {
+      "a": [
+        1,
+        0,
+        4,
+        2,
+        3
+      ],
+      "b": [
+        2,
+        0,
+        4,
+        3,
+        1
+      ],
+      "k": 3,
+      "prices": [
+        0,
+        2,
+        9,
+        7,
+        3
+      ],
+      "known": {
+        "1": 0
+      },
+      "setup": [
+        2,
+        3
+      ],
+      "step": [
+        1,
+        2
+      ],
+      "exact": {
+        "lower": -24,
+        "upper": -1,
+        "lower_witness": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "upper_witness": [
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "lower_stop": [
+          0,
+          2,
+          4
+        ],
+        "upper_stop": [
+          1,
+          3,
+          2
+        ],
+        "feasible_stop_pairs": 8,
+        "visited_pairs": 45,
+        "prefix_cells": 25
+      },
+      "enumeration": {
+        "lower": -24,
+        "upper": -1,
+        "independent_lower": -24,
+        "independent_upper": 7,
+        "completions": 16
+      }
+    },
+    {
+      "a": [
+        4,
+        3,
+        0,
+        2,
+        1
+      ],
+      "b": [
+        4,
+        1,
+        0,
+        2,
+        3
+      ],
+      "k": 1,
+      "prices": [
+        4,
+        3,
+        1,
+        4,
+        7
+      ],
+      "known": {
+        "1": 0,
+        "2": 1
+      },
+      "setup": [
+        0,
+        2
+      ],
+      "step": [
+        0,
+        2
+      ],
+      "exact": {
+        "lower": -14,
+        "upper": -4,
+        "lower_witness": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "upper_witness": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "lower_stop": [
+          1,
+          1,
+          3
+        ],
+        "upper_stop": [
+          1,
+          0,
+          0
+        ],
+        "feasible_stop_pairs": 5,
+        "visited_pairs": 40,
+        "prefix_cells": 25
+      },
+      "enumeration": {
+        "lower": -14,
+        "upper": -4,
+        "independent_lower": -18,
+        "independent_upper": 5,
+        "completions": 8
+      }
+    },
+    {
+      "a": [
+        0,
+        2,
+        5,
+        4,
+        3,
+        1
+      ],
+      "b": [
+        0,
+        2,
+        5,
+        1,
+        4,
+        3
+      ],
+      "k": 1,
+      "prices": [
+        3,
+        9,
+        1,
+        3,
+        7,
+        2
+      ],
+      "known": {
+        "2": 1
+      },
+      "setup": [
+        0,
+        3
+      ],
+      "step": [
+        2,
+        1
+      ],
+      "exact": {
+        "lower": -2,
+        "upper": -1,
+        "lower_witness": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "upper_witness": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "lower_stop": [
+          1,
+          0,
+          0
+        ],
+        "upper_stop": [
+          1,
+          1,
+          1
+        ],
+        "feasible_stop_pairs": 2,
+        "visited_pairs": 66,
+        "prefix_cells": 36
+      },
+      "enumeration": {
+        "lower": -2,
+        "upper": -1,
+        "independent_lower": -4,
+        "independent_upper": 1,
+        "completions": 32
+      }
+    },
+    {
+      "a": [
+        5,
+        2,
+        0,
+        3,
+        4,
+        1
+      ],
+      "b": [
+        5,
+        4,
+        2,
+        3,
+        1,
+        0
+      ],
+      "k": 6,
+      "prices": [
+        2,
+        5,
+        7,
+        5,
+        9,
+        1
+      ],
+      "known": {
+        "1": 0,
+        "3": 0,
+        "4": 1
+      },
+      "setup": [
+        0,
+        2
+      ],
+      "step": [
+        2,
+        2
+      ],
+      "exact": {
+        "lower": -16,
+        "upper": -2,
+        "lower_witness": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "upper_witness": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "lower_stop": [
+          0,
+          2,
+          3
+        ],
+        "upper_stop": [
+          0,
+          0,
+          0
+        ],
+        "feasible_stop_pairs": 4,
+        "visited_pairs": 54,
+        "prefix_cells": 36
+      },
+      "enumeration": {
+        "lower": -16,
+        "upper": -2,
+        "independent_lower": -29,
+        "independent_upper": 18,
+        "completions": 8
+      }
+    },
+    {
+      "a": [
+        4,
+        3,
+        5,
+        2,
+        0,
+        1
+      ],
+      "b": [
+        2,
+        3,
+        1,
+        5,
+        0,
+        4
+      ],
+      "k": 2,
+      "prices": [
+        1,
+        0,
+        2,
+        6,
+        0,
+        0
+      ],
+      "known": {
+        "0": 1,
+        "4": 1
+      },
+      "setup": [
+        0,
+        3
+      ],
+      "step": [
+        1,
+        1
+      ],
+      "exact": {
+        "lower": -9,
+        "upper": -2,
+        "lower_witness": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "upper_witness": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "lower_stop": [
+          1,
+          1,
+          4
+        ],
+        "upper_stop": [
+          1,
+          3,
+          2
+        ],
+        "feasible_stop_pairs": 11,
+        "visited_pairs": 60,
+        "prefix_cells": 36
+      },
+      "enumeration": {
+        "lower": -9,
+        "upper": -2,
+        "independent_lower": -10,
+        "independent_upper": 1,
+        "completions": 16
+      }
+    },
+    {
+      "a": [
+        1,
+        6,
+        4,
+        0,
+        5,
+        3,
+        2
+      ],
+      "b": [
+        4,
+        3,
+        5,
+        1,
+        6,
+        2,
+        0
+      ],
+      "k": 3,
+      "prices": [
+        2,
+        1,
+        8,
+        4,
+        0,
+        0,
+        6
+      ],
+      "known": {
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "setup": [
+        2,
+        0
+      ],
+      "step": [
+        0,
+        1
+      ],
+      "exact": {
+        "lower": -17,
+        "upper": -1,
+        "lower_witness": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "upper_witness": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lower_stop": [
+          0,
+          4,
+          6
+        ],
+        "upper_stop": [
+          0,
+          5,
+          4
+        ],
+        "feasible_stop_pairs": 12,
+        "visited_pairs": 77,
+        "prefix_cells": 49
+      },
+      "enumeration": {
+        "lower": -17,
+        "upper": -1,
+        "independent_lower": -17,
+        "independent_upper": 7,
+        "completions": 16
+      }
+    },
+    {
+      "a": [
+        1,
+        3,
+        4,
+        0,
+        5,
+        2,
+        6
+      ],
+      "b": [
+        6,
+        5,
+        0,
+        2,
+        4,
+        1,
+        3
+      ],
+      "k": 5,
+      "prices": [
+        3,
+        0,
+        2,
+        6,
+        2,
+        2,
+        4
+      ],
+      "known": {
+        "1": 0,
+        "3": 1
+      },
+      "setup": [
+        1,
+        1
+      ],
+      "step": [
+        0,
+        2
+      ],
+      "exact": {
+        "lower": -18,
+        "upper": -2,
+        "lower_witness": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "upper_witness": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "lower_stop": [
+          1,
+          5,
+          6
+        ],
+        "upper_stop": [
+          0,
+          4,
+          2
+        ],
+        "feasible_stop_pairs": 15,
+        "visited_pairs": 84,
+        "prefix_cells": 49
+      },
+      "enumeration": {
+        "lower": -18,
+        "upper": -2,
+        "independent_lower": -22,
+        "independent_upper": 4,
+        "completions": 32
+      }
+    },
+    {
+      "a": [
+        3,
+        0,
+        2,
+        6,
+        1,
+        5,
+        4
+      ],
+      "b": [
+        0,
+        5,
+        6,
+        1,
+        4,
+        3,
+        2
+      ],
+      "k": 1,
+      "prices": [
+        6,
+        9,
+        5,
+        1,
+        9,
+        3,
+        6
+      ],
+      "known": {
+        "1": 1,
+        "5": 0
+      },
+      "setup": [
+        3,
+        3
+      ],
+      "step": [
+        0,
+        1
+      ],
+      "exact": {
+        "lower": -27,
+        "upper": 0,
+        "lower_witness": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "upper_witness": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lower_stop": [
+          1,
+          0,
+          3
+        ],
+        "upper_stop": [
+          1,
+          1,
+          0
+        ],
+        "feasible_stop_pairs": 8,
+        "visited_pairs": 84,
+        "prefix_cells": 49
+      },
+      "enumeration": {
+        "lower": -27,
+        "upper": 0,
+        "independent_lower": -27,
+        "independent_upper": 20,
+        "completions": 32
+      }
+    },
+    {
+      "a": [
+        1,
+        2,
+        3,
+        7,
+        4,
+        5,
+        6,
+        0
+      ],
+      "b": [
+        1,
+        0,
+        2,
+        6,
+        5,
+        4,
+        3,
+        7
+      ],
+      "k": 1,
+      "prices": [
+        2,
+        5,
+        9,
+        7,
+        1,
+        4,
+        6,
+        0
+      ],
+      "known": {
+        "0": 0,
+        "3": 1,
+        "5": 1
+      },
+      "setup": [
+        1,
+        2
+      ],
+      "step": [
+        0,
+        2
+      ],
+      "exact": {
+        "lower": -16,
+        "upper": -3,
+        "lower_witness": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "upper_witness": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "lower_stop": [
+          1,
+          2,
+          4
+        ],
+        "upper_stop": [
+          1,
+          0,
+          0
+        ],
+        "feasible_stop_pairs": 4,
+        "visited_pairs": 104,
+        "prefix_cells": 64
+      },
+      "enumeration": {
+        "lower": -16,
+        "upper": -3,
+        "independent_lower": -32,
+        "independent_upper": 13,
+        "completions": 32
+      }
+    }
+  ],
+  "large_development": [
+    {
+      "n": 32,
+      "known_count": 0,
+      "exact": {
+        "lower": -200,
+        "upper": 100,
+        "lower_witness": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "upper_witness": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "lower_stop": [
+          0,
+          30,
+          31
+        ],
+        "upper_stop": [
+          0,
+          31,
+          30
+        ],
+        "feasible_stop_pairs": 37,
+        "visited_pairs": 2048,
+        "prefix_cells": 1024
+      },
+      "runtime_ns": 561100,
+      "note": "No brute-force enumeration at this size; endpoint witnesses checked. Simple exchange is a stronger cheap control."
+    },
+    {
+      "n": 64,
+      "known_count": 0,
+      "exact": {
+        "lower": -200,
+        "upper": 100,
+        "lower_witness": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "upper_witness": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "lower_stop": [
+          0,
+          62,
+          63
+        ],
+        "upper_stop": [
+          0,
+          63,
+          62
+        ],
+        "feasible_stop_pairs": 69,
+        "visited_pairs": 8192,
+        "prefix_cells": 4096
+      },
+      "runtime_ns": 2118300,
+      "note": "No brute-force enumeration at this size; endpoint witnesses checked. Simple exchange is a stronger cheap control."
+    },
+    {
+      "n": 128,
+      "known_count": 0,
+      "exact": {
+        "lower": -200,
+        "upper": 100,
+        "lower_witness": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "upper_witness": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "lower_stop": [
+          0,
+          126,
+          127
+        ],
+        "upper_stop": [
+          0,
+          127,
+          126
+        ],
+        "feasible_stop_pairs": 133,
+        "visited_pairs": 32768,
+        "prefix_cells": 16384
+      },
+      "runtime_ns": 8471200,
+      "note": "No brute-force enumeration at this size; endpoint witnesses checked. Simple exchange is a stronger cheap control."
+    }
+  ],
+  "elapsed_ns": 30806100,
+  "end_utc": "2026-10-11T21:15:15.024931+00:00"
+}
