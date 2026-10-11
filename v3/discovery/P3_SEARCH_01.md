@@ -4,12 +4,12 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 unfinished; P3-POS01 OUTSTANDING**.
-New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s02/cp02.md),
+New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s02/cp03.md),
 [portfolio](candidates.md), [exact actuals](s02/effective_actuals.json).
 
-Current s02 direction: prediction-assisted finite-population value sampling
-for actual mathematical evaluators under explicit edits, after ordinary
-prepared controls narrowed the tolerance-guard economic case. All results remain DEVELOPMENT. The current checkpoint
+Current s02 direction: checked positive-proof value warrants and transport
+of aggregate confidence through explicit local edits and changed task weights.
+Actual SAT costs show a scoped developmental lead; bounded scheduling can lose it. All results remain DEVELOPMENT. The current checkpoint
 is an active accounting boundary; C001 continues with its unfinished floor.
 
 ## 1. Objective and scope

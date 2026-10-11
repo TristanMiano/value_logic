@@ -625,4 +625,16 @@ P3-POS01 OUTSTANDING, verification readiness unassessed, P3-11 deferred.
 |---|---|---|
 | DS-S04-S07-DELTA | Single-clause deletion separation and tolerance-directed bounds restrict new work to newly admitted worlds. | 32 deletion comparisons match full optimization. Prepared ordinary SAT removes the first timing benefit; compiled guards are a near tie. Encoding failure preserved separately from repair. |
 | DS-S08 | Explicit sequential statistical value service for a fixed population of deterministic mathematical bits; checked samples orient fallible prediction groups. | Exact small coverage checks and 12 exposed synthetic populations. Low-heterogeneity grouping saves labels even under global inversion; 20% errors can lose badly to a direct ordinary decision test. Stratification/PPI/confidence-sequence ingredients are pre-existing; real evaluator economics remain open. |
+
+## P3-SEARCH-01-C001 — s02 checkpoint 3
+
+Codex (GPT-6). [Active checkpoint](discovery/s02/cp03.md): approximately
+80.515022 new research minutes, 159.484978 remaining to C001's fresh floor.
+Exact values reside in the linked effective actuals. DEVELOPMENT only;
+P3-POS01 OUTSTANDING, readiness unassessed, P3-11 deferred.
+
+| ID | Constructive finding / delta | Magnitude, comparison and limits |
+|---|---|---|
+| DS-S08-PROOF | Aggregate lower value warrants from verified SAT witnesses; unresolved or unsupported negative outputs do not become labels. | 80 developmental warrants matched two exposed SAT populations. Full statistical proof search reduced request time against full and bounded exact controls; the first bounded statistical scheduler lost most of that gain at n=100. Initial history and source/randomness binding remain obligations. |
+| DS-S08-TRANSPORT | A shared confidence source propagates through sound pointwise edits and later value weights; exact product-relation bounds via sorted rational deltas. | 350 small cases/7,712 pair worlds, 256 local-edit closed forms, explicit conflicts. Generic exact arithmetic cost is material. Ordinary confidence propagation and cardinality optimization are direct antecedents; no arbitrary coupled-CNF or novel theorem claim. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | No rigorous confirmation or author contribution gate attempted; P3-11 deferred. |

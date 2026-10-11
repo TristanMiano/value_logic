@@ -77,3 +77,18 @@ one proposed application without requiring a prolonged literature audit.
   Support-changing boundary cases should be expressed through the sufficient
   nonnegative-supermartingale inequality rather than silently assuming common
   positive likelihood support. No broader statistical theorem is imported.
+
+## Censored proof production
+
+- [PySAT solver API](https://pysathq.github.io/docs/html/api/solvers.html),
+  `conf_budget`, `solve_limited`, `get_model`, and warm-start notes: bounded
+  solving may return `None`; conflict limits are distinct from wall-time
+  limits. The planned prototype uses MiniSat22 assumptions, standard start
+  mode and positive budgets. It accepts only independently checked SAT models
+  in the new positive-only service. A native negative answer remains unknown.
+- Lindon and Kallus, [design-based inference with delayed outcomes](https://proceedings.mlr.press/v306/lindon26a.html),
+  inspected abstract only. Its treatment-assignment estimand and filtration
+  are different from the fixed finite SAT population. This is a literature
+  lead, not a theorem imported to justify arbitrary compute censoring. The
+  current outer-set/monotonicity argument is written directly in
+  [censored values](censored_values.md); novelty has not been established.

@@ -4,14 +4,14 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 11, 2026 UTC.
 
 **P3-01–10 are complete at their declared scopes; P3-A/B retain their restricted passes.**
 P3-10 closes with an explicit preserved amendment and **90.283569405783
-qualifying research minutes**. Phase research is **1145.80154865915 minutes**.
+qualifying research minutes**. Phase research is **1166.646388892483333333333333 minutes**.
 **P3-SEARCH-01-C001 is in progress; its four-hour commitment remains
 unfinished. P3-11 is deferred pending a promising candidate.** The author has
 adopted a [discovery-first amendment](decisions/2026-10-11_discovery_first_amendment.md)
 with recurring long research cycles and open-ended search. The original
 **16 measured hours of research** remain a satisfied minimum; the new cycle
-has its own fresh floor, with 59.670181295 research minutes credited.
-New discovery work is by **Codex (GPT-6)**; [checkpoint](discovery/s02/cp02.md)
+has its own fresh floor, with 80.51502152833333333333333333 research minutes credited.
+New discovery work is by **Codex (GPT-6)**; [checkpoint](discovery/s02/cp03.md)
 and [portfolio](discovery/candidates.md).
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -135,7 +135,7 @@ The [closing record](work_logs/P3_06_2026-10-09_S1.md) gives **90.210938375717**
 new research minutes. P3-07 is **complete** at its declared
 [bounded paid-reasoning scope](derivations/07_paid_reasoning.md), with
 **90.187687312067** observed research minutes. Current phase research is
-**1145.80154865915 minutes**. The
+**1166.646388892483333333333333 minutes**. The
 [960-minute checkpoint](work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
 was assessed at P3-09; new discovery floors and later gates remain separate.
 **P3-B has passed** at restricted mathematical/local implementation

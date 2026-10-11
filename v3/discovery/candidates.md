@@ -100,3 +100,24 @@ the complete-cost or substantive-delta requirement.
 
 Current continuation: [s02 checkpoint 2](s02/cp02.md). Readiness remains
 unassessed and P3-POS01 outstanding.
+
+## s02 third constructive revision
+
+- **S08 has an actual-evaluator lead:** proof-first statistical decisions
+  reduce solver calls and request cost on two larger exposed SAT populations;
+  small cohorts favored exact controls. Base-history costs and an unexplained
+  failed scaling invocation remain visible. [SAT results](s02/sat_value_results.md).
+- **S08 positive-only service:** checked SAT witnesses can warrant a lower
+  aggregate value despite outcome-dependent unresolved computations. Unsupported
+  negative answers stay unknown. Bounded exact scheduling is a strong control;
+  the first bounded statistical scheduler loses much of the gain at n=100.
+  [Censored-value development](s02/censored_values.md).
+- **S08T, linked to S01/S04/S07:** transport one aggregate confidence source
+  through justified local edits and adaptively chosen value weights. A sorted
+  exact kernel handles product relations and one count interval; uniform
+  weights have much cheaper closed forms. [Construction](s02/value_transport.md).
+  Next integrate source/version binding and measure repeated edit requests.
+
+Current continuation: [s02 checkpoint 3](s02/cp03.md). These developments do
+not establish novel statistical ingredients or a material-positive readiness
+forecast. Keep the broader portfolio open; P3-POS01 remains OUTSTANDING.
