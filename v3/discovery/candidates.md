@@ -50,3 +50,28 @@ mechanism directions, not an idea-count target or completed tasks.
 progress, but relevance, closest-method displacement and complete economics
 remain open. It is not yet a specified material P3-POS01 claim. No adversarial
 confirmation or P3-11 work has started; all named results are DEVELOPMENT.
+
+## s02 constructive revision
+
+- **S06 narrowed:** the pair kernel is unnecessary for exact post-certificate
+  feedback on static thresholds; two O(n) replays suffice. For positive prices
+  and equal setup fees, different live orders are equivalent or incomparable
+  on the unrestricted residual source. Explicit witnesses and finite checks
+  are in [comparison limits](s02/comparison_limits.md). Retain the range kernel
+  for tolerance/overhead questions, but do not prioritize robust elimination.
+- **S07 added, linked to S01/S04:** explicit clause edits permit local SAT
+  witness and UNSAT-support maintenance. A lazy, bounded witness library can
+  preserve temporarily invalid models until a later edit makes them useful.
+  [Derivation](s02/revision.md), [developmental results](s02/revision_results.md).
+  Ordinary incremental SAT and the identical kernel are direct comparators.
+  Warm small-stream savings merit development; cold economics, proof-carrying
+  UNSAT/upper bounds and historical memory remain open.
+- **S04/S07 preferred constructive next step:** exact rational action refinement
+  using MaxSAT counterexamples over a compact CNF source. Tiny source revisions
+  matched enumeration; warm pools saved oracle calls but slightly increased
+  time. Develop newly admitted-region separation and cheap action-change
+  transport before scaling or confirmation. [Construction](s02/constraint_generation.md).
+
+No material claim is promoted. These are supported developmental mechanisms,
+including elementary/established ingredients whose integration may still fail
+the complete-cost or substantive-delta requirement.

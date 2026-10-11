@@ -19,7 +19,7 @@ paid-reporting and separate structural integration scope. Selected R-P3-B-B
 the ordinary checked bridge and full resource/failure comparison. The final
 challenge has completed P3-10 execution and interpretation under explicit A1,
 with the original failure preserved and **90.283569405783** principal research
-minutes. Phase research is **1106.730105465817 minutes**. Next: P3-SEARCH-01,
+minutes. Phase research is **1123.712245154150 minutes**. Next: P3-SEARCH-01,
 in progress with C001 unfinished; P3-11 is deferred pending discovery readiness.
 P3-POS01 is OUTSTANDING; later author gates remain unattempted. P3-N01 is SUPPORTED
 at the documented modest formal-adaptation and implementation-synthesis
@@ -600,3 +600,17 @@ C001 remains unfinished with 219.401261898333 minutes owed to its floor.
 | DS-S05 | Shared-nuisance value contrasts support regret-directed precision refinement. | Mostly inherited identification algebra plus a prospective paid refinement mechanism; no deployment result. |
 | DS-S06 | Exact cost-difference ranges for two fixed-order k-of-n procedures can be constructed in quadratic unit arithmetic; a polynomial outcome-local tariff extension and live-receipt reduction are implemented. | [Derivation and source-bound outputs](discovery/s01/comparison.md). 320 fixed-price fixtures/5,286 completions and 420 outcome-local comparisons/5,546 completions matched brute enumeration. Self-review only. Closest-method displacement, nontrivial application and complete economics remain open. |
 | P3-POS01 | **OUTSTANDING**; readiness **unassessed**. | Constructive development is not confirmed material usefulness. P3-11 remains deferred; P3-C/D unattempted. |
+
+## P3-SEARCH-01-C001 — active s02 checkpoint
+
+Codex (GPT-6). At this [checkpoint](discovery/s02/checkpoint.md), cumulative
+discovery research is 37.58087779 minutes and the fresh floor remains unfinished
+by 202.41912221 minutes. See [effective actuals](discovery/s02/effective_actuals.json)
+and preserved raw observations/dispositions. Publication adds no research credit.
+
+| Record | Developmental change | Scope and outstanding work |
+|---|---|---|
+| DS-S06-LIMIT | Exact post-certificate feedback has a linear-time ordinary control; unrestricted positive-cost static threshold orders are equivalent or incomparable. | Constructive proof and 9,992 strict witnesses; narrows application of the earlier quadratic range kernel. |
+| DS-S07 | Explicit CNF edits maintain SAT witnesses/UNSAT supports; a lazy two-witness library avoids some repeated solver calls. | Warm small-stream engineering effect against fresh/full-check/native-incremental controls; identical ordinary integration allowed. Native UNSAT trust, cold cost, larger workloads and total retained memory remain limitations. |
+| DS-S04-S07 | Rational minimax-regret action refinement with weighted-MaxSAT separation and explicit source-revision rules. | 24 tiny instances matched enumeration; warm pools reduced oracle calls but increased total time slightly. Delta-region separation is the next developmental mechanism. |
+| P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | No rigorous confirmation or author contribution gate attempted; P3-11 deferred. |

@@ -1,0 +1,79 @@
+{
+  "observed": {
+    "utc": "2026-10-11T21:47:40.530757+00:00",
+    "monotonic_ns": 847846572482500,
+    "runtime": "python-pid-16168-1673a906-f77d-4ae8-8fc0-ac413f2779a5"
+  },
+  "closed_ns": {
+    "D": 617302602900,
+    "L": 98903250300,
+    "E": 302722528100,
+    "O": 114609691100,
+    "wait": 52426250900,
+    "idle": 0,
+    "unmeasured": 0
+  },
+  "research_ns": 1018928381300,
+  "session_config": {
+    "cycle": "P3-SEARCH-01-C001",
+    "cycle_floor_ns": 14400000000000,
+    "prior_cycle_research_ns": 1235924286100,
+    "prior_program_research_ns": 1235924286100,
+    "clock_source_sha256": "d57a1bbc92962595f9918679ee596db71e8f644a52614112eb2bbd28495cc8e7",
+    "note": "Prospective totals from inspected current plan; sessions do not reset an unfinished cycle."
+  },
+  "session_research_ns": 1018928381300,
+  "cycle_research_ns": 2254852667400,
+  "program_research_ns": 2254852667400,
+  "research_minutes": 16.982139688333334,
+  "total_engaged_ns": 1133538072400,
+  "purpose_ns": {
+    "generation": 798263509100,
+    "screening": 220664872200
+  },
+  "lane_ns": {
+    "X": 798263509100,
+    "R": 220664872200
+  },
+  "floor_ns": 14400000000000,
+  "remaining_floor_ns": 12145147332600,
+  "historical_phase_ns": 65167882041849,
+  "phase_research_ns": 67422734709249,
+  "open_segment": {
+    "utc": "2026-10-11T21:47:40.530757+00:00",
+    "monotonic_ns": 847846572482500,
+    "runtime": "python-pid-16168-1673a906-f77d-4ae8-8fc0-ac413f2779a5",
+    "mode": "O",
+    "lane": "-",
+    "purpose": "administration",
+    "note": "Save current pointers and effective clock accounting without ending C001"
+  },
+  "status": "active",
+  "applied_dispositions": [
+    {
+      "segment_start_monotonic_ns": 846794828775900,
+      "segment_end_monotonic_ns": 846810198372700,
+      "original_mode": "L",
+      "effective_mode": "wait",
+      "elapsed_ns": 15369596800,
+      "reason": "Initial web search was issued in the same call as an L mark; conservatively exclude the entire interval containing that retrieval instead of crediting unseparated network latency. Raw observations and ledger stay unchanged; effective actuals must apply this disposition at checkpoint."
+    },
+    {
+      "segment_start_monotonic_ns": 847732697776500,
+      "segment_end_monotonic_ns": 847807498303200,
+      "original_mode": "E",
+      "effective_mode": "D",
+      "purpose": "generation",
+      "lane": "X",
+      "elapsed_ns": 74800526700,
+      "reason": "The E mark remained active after the short run comparison while the principal derived source-difference separation and action-change transport, written in constraint_generation.md sections 6-7. Reclassify the predominantly mathematical interval as D; mode granularity includes the brief initial experiment interpretation. Total research credit is unchanged; this is not new time."
+    }
+  ],
+  "raw_actuals": "v3/discovery/s02/actuals.json",
+  "note": "Closed observed intervals only; no credit for open interval. Explicit dispositions override raw modes without modifying raw files.",
+  "exact_research_minutes": "16.98213968833333333333333333",
+  "exact_cycle_research_minutes": "37.58087779",
+  "exact_program_research_minutes": "37.58087779",
+  "exact_remaining_floor_minutes": "202.41912221",
+  "exact_phase_research_minutes": "1123.71224515415"
+}

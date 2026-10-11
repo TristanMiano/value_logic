@@ -4,8 +4,13 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 unfinished; P3-POS01 OUTSTANDING**.
-New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s01/checkpoint.md),
-[portfolio](candidates.md), [exact actuals](s01/actuals.json).
+New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s02/checkpoint.md),
+[portfolio](candidates.md), [exact actuals](s02/effective_actuals.json).
+
+Current s02 direction: explicit-edit evidence maintenance and decision
+refinement over compact logical sources, after narrowing the threshold-cost
+comparison use case. All results remain DEVELOPMENT. The current checkpoint
+is an active accounting boundary; C001 continues with its unfinished floor.
 
 ## 1. Objective and scope
 
@@ -54,7 +59,7 @@ storage and failure costs and name the strongest relevant pre-existing controls.
 | Central / high O forecast | 15 / 30 minutes, outside research |
 | Purpose priority | 75% generation/development; 20% cheap screening; 5% substantive synthesis/readiness |
 | Initial R / X lane forecast | 25% reliable / 75% exploratory; both may contain constructive generation |
-| Research already credited | 20.598738101667 minutes; s01 clock closed, continuation pending |
+| Research already credited | 37.58087779 minutes at active s02 checkpoint; continuation proceeds |
 | Normal boundary disposition | Continue the current line or recur within this program |
 | Program duration | Open-ended; tens or hundreds of hours are plausible, with no forecast of guaranteed discovery |
 | Deeper portfolio reviews | At the first useful boundaries after 16, 40 and 100 new program research hours; retain overshoot |
