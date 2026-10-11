@@ -170,3 +170,67 @@ first fresh-first budget scheduler is not a generally better computation
 policy. A malicious proposer can cause abstention, and random sample selection
 must be controlled by the verifier. There is no claim of a transferable
 deterministic proof of the probability guarantee from an untrusted chosen seed.
+
+## 8. A two-endpoint shortcut for the implemented count confidence family
+
+The uniform/extreme-mixture confidence family admits a useful specialization
+of the outer-set construction. Fix N,s and alpha, and use the working mixture
+with rho in [0,1), uniform mass 1-rho plus equal extreme atoms rho/2. Let
+[l(e),u(e)] be the hypergeometric confidence interval for an observed count e.
+Its endpoints are nondecreasing functions of e. This needs an argument; it
+does not hold by declaration for every imaginable confidence procedure.
+
+For interior e=1,...,s-1 the mixture threshold is the same
+alpha*(1-rho)/(s+1). The hypergeometric mass as a function of candidate M is
+unimodal, with a mode no larger than floor(e*(N+1)/s), after clipping to its
+feasible support. The mode is included, since its mass is at least 1/(s+1)
+and the threshold is smaller. Hence every M below l(e) is on the left of
+that mode and fails the confidence inequality. For consecutive observations,
+on positive support,
+
+    H_M(e+1)/H_M(e)
+      = (M-e)*(s-e) / ((e+1)*(N-M-s+e+1)).
+
+This ratio is at most one when
+
+    M <= (e+1)*(N+2)/(s+1)-1.
+
+The latter threshold exceeds e*(N+1)/s by
+
+    (s-e)*(N+1-s) / (s*(s+1)) >= 0.
+
+Thus a previously excluded candidate below the lower endpoint remains
+excluded at e+1 when both thresholds are interior. At e=0, l(0)=0 makes
+the first transition automatic. At the final transition to e=s, the extreme
+atom only raises the threshold, so exclusion below the previous lower bound
+is preserved. Impossible support points stay impossible. Full enumeration
+s=N has l(e)=u(e)=e directly. Symmetry gives u(e)=N-l(s-e), so the upper
+endpoint is nondecreasing too. The s=0 case is [0,N].
+
+For a prefix with k known ones, z known zeros and u_missing=s-k-z, the exact
+interval hull of the confidence sets for all compatible complete counts is
+therefore
+
+    [l(k), u(k+u_missing)].
+
+Only two endpoint evaluations are required. For positive proofs alone, the
+lower endpoint is l(k), with all unproved sampled bits conservatively set to
+zero for this calculation. It is still a confidence bound on the actual total
+number of true bits, not on the number the current solver happened to prove.
+Intersect these outer intervals across reports for an anytime-valid count
+source. Newly accepted proofs tighten them without treating earlier timeouts
+as labels. The sampling lottery and checker assumptions remain unchanged.
+
+This supplies the missing link to [value transport](value_transport.md):
+the resulting count source supports subsequent thresholds, outside-group
+positive receipts and weighted/edit queries by pointwise confidence-set
+propagation. The earlier fixed-boundary tests cannot be retargeted silently.
+This shortcut is a specific constructive derivation, with no claim of a new
+general confidence-sequence theorem or independent verification yet.
+
+The [initial implementation](censored_count01.json) checked 1,380 monotone
+prefix families through N=20 and 2,964 exact partial-label mass-union hulls
+through N=8, across the stated alpha/rho values. At N=10,000,s=256 with 136
+unknown sampled labels, two endpoints took .483 ms versus 29.456 ms for 137
+separate completion-count intervals in one run. This measures only arithmetic;
+receipt binding, sampling and evaluation remain additional costs.

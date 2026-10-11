@@ -637,4 +637,16 @@ P3-POS01 OUTSTANDING, readiness unassessed, P3-11 deferred.
 |---|---|---|
 | DS-S08-PROOF | Aggregate lower value warrants from verified SAT witnesses; unresolved or unsupported negative outputs do not become labels. | 80 developmental warrants matched two exposed SAT populations. Full statistical proof search reduced request time against full and bounded exact controls; the first bounded statistical scheduler lost most of that gain at n=100. Initial history and source/randomness binding remain obligations. |
 | DS-S08-TRANSPORT | A shared confidence source propagates through sound pointwise edits and later value weights; exact product-relation bounds via sorted rational deltas. | 350 small cases/7,712 pair worlds, 256 local-edit closed forms, explicit conflicts. Generic exact arithmetic cost is material. Ordinary confidence propagation and cardinality optimization are direct antecedents; no arbitrary coupled-CNF or novel theorem claim. |
+
+## P3-SEARCH-01-C001 — s02 checkpoint 4
+
+Codex (GPT-6). [Active checkpoint](discovery/s02/cp04.md): 99.88858198
+research minutes, 140.11141802 remaining to C001's floor. DEVELOPMENT only;
+P3-POS01 OUTSTANDING, readiness unassessed, P3-11 deferred.
+
+| ID | Constructive finding / delta | Magnitude, comparison and limits |
+|---|---|---|
+| DS-S08-CENSOR | Monotone confidence endpoints give an exact two-call interval hull under unknown sampled labels for the stated mixture family. | 1,380 finite prefix families and 2,964 exact mass-union cases; the larger arithmetic example drops from 137 interval calls to two. This does not authenticate receipts or randomness. |
+| DS-S06-PILOT | A paid pilot learns proof-production yield and cumulative cost without buying unobserved truth labels. | 48 exposed warrants valid in the observed cohorts. Better than the weak bounded rule, worse than the strongest full-call statistical control on n=100; no economic advantage established. |
+| DS-S08-MARGIN | One acquired count margin survives supported local edits, can abstain, and restores on removal; cached-witness refinement is sharp for the stated information. | 464 witnesses support lower count 564; 145/273 states warranted without new edit-time solver calls. History/acquisition/binding dominate the .3364 ms edit bill. Ordinary identical transport is allowed; external authentication and broader usefulness remain open. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | No rigorous confirmation or author contribution gate attempted; P3-11 deferred. |

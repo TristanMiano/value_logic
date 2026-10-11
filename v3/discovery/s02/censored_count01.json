@@ -1,0 +1,76 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "start_utc": "2026-10-11T22:46:37.614689+00:00",
+  "command": [
+    "v3/discovery/s02/censored_count.py",
+    "v3/discovery/s02/censored_count01.json"
+  ],
+  "sources": {
+    "censored_count.py": "bc86f9889fef8fa8eb3800e4894bc84868932a097b20e90829258d48f9bc0cb8",
+    "sampling_v2.py": "0856ca6bfe5b9035e4471d46757c7e8b65ff92ff7fb7628046d3b000395af830",
+    "sampling_probe.py": "6f54b5bf62afc003394d330fdb85cca3e606cf6a5f34111ad1fc753ca470bef6"
+  },
+  "scope": "Direct exact hypergeometric-mass union checks at N<=8, endpoint monotonicity at N<=20 for stated mixtures/levels. Larger single-pass timers compare count arithmetic only; source/receipt authentication and input acquisition are not included.",
+  "checks": {
+    "monotone_prefix_families": 1380,
+    "exact_partial_hulls": 2964,
+    "monotonicity_max_N": 20,
+    "full_mass_union_max_N": 8
+  },
+  "rows": [
+    {
+      "N": 1000,
+      "s": 64,
+      "known_ones": 20,
+      "known_zeros": 10,
+      "unknown": 34,
+      "bounds": [
+        152,
+        952
+      ],
+      "shortcut_ns": 74100,
+      "enumeration_ns": 930200,
+      "shortcut_counts": {
+        "intervals": 2,
+        "binomial_calls": 76,
+        "membership_checks": 37,
+        "largest_integer_bits": 348
+      },
+      "enumeration_counts": {
+        "intervals": 35,
+        "binomial_calls": 1333,
+        "membership_checks": 649,
+        "largest_integer_bits": 348
+      }
+    },
+    {
+      "N": 10000,
+      "s": 256,
+      "known_ones": 80,
+      "known_zeros": 40,
+      "unknown": 136,
+      "bounds": [
+        2180,
+        9129
+      ],
+      "shortcut_ns": 483000,
+      "enumeration_ns": 29455500,
+      "shortcut_counts": {
+        "intervals": 2,
+        "binomial_calls": 100,
+        "membership_checks": 49,
+        "largest_integer_bits": 1723
+      },
+      "enumeration_counts": {
+        "intervals": 137,
+        "binomial_calls": 7107,
+        "membership_checks": 3485,
+        "largest_integer_bits": 1723
+      }
+    }
+  ],
+  "elapsed_ns": 153807000,
+  "end_utc": "2026-10-11T22:46:37.768736+00:00"
+}

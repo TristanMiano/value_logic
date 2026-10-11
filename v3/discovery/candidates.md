@@ -121,3 +121,22 @@ unassessed and P3-POS01 outstanding.
 Current continuation: [s02 checkpoint 3](s02/cp03.md). These developments do
 not establish novel statistical ingredients or a material-positive readiness
 forecast. Keep the broader portfolio open; P3-POS01 remains OUTSTANDING.
+
+## s02 fourth constructive revision
+
+- **S08 censored counts:** two exact endpoints replace enumeration of missing
+  sampled labels for the implemented confidence family. This supplies a count
+  source usable for later value queries. [Argument](s02/censored_values.md).
+- **S06/S08 allocation narrowed:** paid nested proof-recipe profiles improve
+  the weak bounded policy but lose to full-call statistical proof search on
+  the harder cohort. Preserve the proof-yield obstruction and paid costs;
+  deprioritize pilot tuning. [Development](s02/proof_allocation.md).
+- **S08T persistent margin implemented:** 464 checked witnesses support a
+  statistical lower count of 564, transported through 272 versioned local
+  edits with explicit abstention/restoration. The cached-witness bound is
+  sharp for its product-relation/count information. Further improvement needs
+  new proof evidence or structural coupling. [Results](s02/margin_plan.md).
+
+Next: targeted positive-proof repair and margin-investment economics, retaining
+the wider portfolio. [Current checkpoint](s02/cp04.md). All results remain
+DEVELOPMENT; no material claim is promoted and readiness is unassessed.
