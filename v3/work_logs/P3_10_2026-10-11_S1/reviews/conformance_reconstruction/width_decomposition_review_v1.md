@@ -1,0 +1,55 @@
+# Independent check of the two-part deterministic width decomposition
+
+Reviewer: **ChatGPT (GPT-6 Astra Pro), /root/conformance_reconstruction**.
+Disposition: **PASS at the stated retrospective, unbilled interpretation scope**.
+This source-only review read no final input or output. Principal credit: **0 seconds**.
+The accompanying manifest binds the exact principal derivation reviewed and its
+preserved snapshot. This is same-model independent checking, not blind review.
+
+The decomposition in §3 is correct. For any one target, let `O` be the positions
+whose contribution remains unresolved in the frozen chronology envelope, and let
+`E={t: k(t) is not in the complete paid-label map}` (with the target's contribution
+mask applied). The owned complete reporter contract gives `E ⊆ O`: every sound
+prior/current label accepted during chronology is also available in the complete
+same-epoch paid map. Thus
+
+\[
+G_{receipt}=\sum_{t\in O}|B_t|-\sum_{t\in E}|B_t|\ge0.
+\]
+
+This accounts for both later purchases identifying earlier occurrences and
+hard-disabled paths whose issued outputs ignored already paid same-key labels.
+An exact half forecast has `B_t=0`, so removing its label uncertainty correctly
+produces zero width gain.
+
+For each still-unresolved key, put `P_k=Σ max(B_t,0)` and
+`N_k=Σ max(-B_t,0)` over its relevant occurrences. Then
+
+\[
+\sum_t|B_t|-\left|\sum_tB_t\right|
+=P_k+N_k-|P_k-N_k|=2\min(P_k,N_k).
+\]
+
+Summing over keys proves the stated nonnegative cancellation gain. Adding this
+to `G_receipt` telescopes exactly to the original deterministic width minus the
+end-key width. Repetition with one coefficient sign gives no cancellation.
+Opposite sides of one half are the necessary sign pattern for `F`/`V`; opposite
+actual terminal actions are the corresponding pattern for `Z`. The hypothetical
+example's widths and exact values (`F=5/8`, `V=1`, `Z=1`) are correct.
+
+The containment qualification is also correct and necessary. The end-key bound
+imposes stronger constraints on the **same deterministic uncertainty set** than
+the original chronology envelope, so interval containment follows. A delivered
+sampling interval may remove additional label assignments through its probabilistic
+construction. Therefore the retrospective deterministic interval need not be
+contained in that delivered interval, and neither width should be described as
+a general dominance over the other. Preserve the original A5 reference and treat
+any delivered-width comparison as a separately labelled descriptive comparison.
+A pre-existing confidence conflict also remains part of the frozen result.
+
+I found no needed mathematical correction in this revision. Its scope conditions
+correctly retain full-key/source applicability, fixed historical outputs, relaxed
+cube rather than logical-world sharpness, separately attained marginal endpoints,
+no fresh randomness/coverage premise, fixed scheduled denominators, and no priced
+service or economic claim. Any later implementation still needs verification
+against these equations; this note approves the derivation, not unreviewed code.

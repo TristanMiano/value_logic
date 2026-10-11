@@ -1,0 +1,70 @@
+{
+  "schema": "value_logic.p310.publication_helper_readiness.v1",
+  "status": "READY_FOR_ROOT_FINAL_PREPARATION_NOT_PUBLISHED",
+  "signed_by": "ChatGPT (GPT-6 Astra Pro), /root/conformance_reconstruction",
+  "signed_utc": "2026-10-11T17:02:21.200727+00:00",
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/095cdac579b7/p310_publication_prepare.py",
+      "bytes": 42959,
+      "sha256": "1e1e7adfd191364414c015605323c9fd42d56fadd8783b7491f2248bf0831dae"
+    },
+    {
+      "path": "/workspace/scratch/095cdac579b7/p310_publication_prepare_tests.py",
+      "bytes": 18465,
+      "sha256": "4fe2175fc232cd5c9515d5cd92dd63080420f561a31d91eafa53b9a7efd7e87a"
+    },
+    {
+      "path": "/workspace/scratch/095cdac579b7/p310_publication_prepare_GUIDE.md",
+      "bytes": 11603,
+      "sha256": "95012096282ba969432ec1edaa2e8bcd93c29d18116c01e99f986c43aa16d875"
+    },
+    {
+      "path": "/workspace/scratch/095cdac579b7/p310_publication_helper_test_01/failure.json",
+      "bytes": 10190,
+      "sha256": "0644daffae7ee03fd63e47bef0a020dbb72d9458c4ddb31469decc6c27a936a2"
+    },
+    {
+      "path": "/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/results.json",
+      "bytes": 14349,
+      "sha256": "419196205958854eceb966df9290e07611f0d3cc0dff7763d12223177e310978"
+    }
+  ],
+  "test_attempt_02": {
+    "status": "PASS",
+    "checks": 86,
+    "baseline_paths": 8373,
+    "prior_uploads": 20,
+    "prior_distinct_blobs": 164,
+    "prior_overlays": 3,
+    "prior_remote_commit_reconstructed": "ea3e20dd9889c2ee22141c17390595867d33d8ab"
+  },
+  "preserved_attempt_01": {
+    "status": "FAIL",
+    "message": "Author/date/message fields do not reproduce the remote commit; exact original timezone, encoding, headers or terminal bytes may be missing",
+    "cause": "API UTC-normalized identity dates did not preserve original Git numeric timezone offset; corrected only with full commit SHA acceptance"
+  },
+  "oversized_valid_text_encoding": "utf-8",
+  "binary_png_encoding": "base64",
+  "inline_serialized_utf8_request_cap": 3000000,
+  "inline_entries_max": 128,
+  "overlay_entries_max": 128,
+  "live_p310_inventory_prepared": false,
+  "network_calls": 0,
+  "git_data_writes": 0,
+  "scientific_executions": 0,
+  "principal_research_credit_ns": 0,
+  "remaining_root_steps": [
+    "Finish preservation checks before prepare",
+    "Prepare new exclusive final plan outside checkout",
+    "Verify complete working tree and exactly five permitted old-file edits",
+    "Inspect all intended additions and the two unique PNG blobs with duplicate snapshot path",
+    "Use actual authorized connector tool results and record resumable receipts",
+    "Commit/ref publication and later local object materialization are separate authorized operations"
+  ],
+  "limitations": [
+    "No remote request capacity, credentials, rate quota, write authorization or publication state is established",
+    "Stable file reads and ending checks are not a global filesystem lock",
+    "Commit reconstruction accepts only exact SHA matches; signed/extra-header/non-UTF-8 commits or unknown distinct offsets may require raw commit bytes"
+  ]
+}

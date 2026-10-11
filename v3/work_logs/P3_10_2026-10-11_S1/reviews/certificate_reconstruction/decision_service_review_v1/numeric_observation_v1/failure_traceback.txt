@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/decision_service_review_v1/numeric_check_v1.py", line 334, in main
+    result = inspect(root, reader)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/decision_service_review_v1/numeric_check_v1.py", line 147, in inspect
+    inp = r.sealed(inp_entry, "inputs", ORIGINAL_BINDING, ORIGINAL)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/decision_service_review_v1/numeric_check_v1.py", line 108, in sealed
+    self.eq(uid + ":seal.unit", seal["unit_sha256"], digest(canonical(start["unit"])))
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/decision_service_review_v1/numeric_check_v1.py", line 77, in eq
+    raise AssertionError(f"{name}: {actual!r} != {expected!r}")
+AssertionError: conformance_structural_legacy:seal.unit: 'b8b39f64ce591df731b1f8b4128858b35c664f9522cd824c2daf071f9f998c1c' != '4d89df102f1841988ad57f19853c49b8faf5372a7f7de2b97c05db5d22512677'

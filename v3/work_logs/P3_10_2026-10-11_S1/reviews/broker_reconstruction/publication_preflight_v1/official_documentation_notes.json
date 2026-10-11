@@ -1,0 +1,31 @@
+{
+  "schema": "value_logic.P3-10.publication_documentation_notes.v1",
+  "observed_date_utc": "2026-10-11",
+  "scope": "Current official GitHub documentation checked read-only. No credentials requested or exposed, no mutation issued.",
+  "sources": [
+    {
+      "url": "https://docs.github.com/en/rest/git/blobs?apiVersion=2022-11-28",
+      "claims": [
+        "Create-blob accepts UTF-8 or base64 content and returns a blob SHA.",
+        "The page's 100 MB note occurs under Get a blob; it is not evidence of a connector create-request ceiling."
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/rest/git/trees?apiVersion=2022-11-28",
+      "claims": [
+        "Create-tree entries can provide content or a blob SHA, but not both.",
+        "base_tree preserves its other entries while supplied paths replace matching entries.",
+        "Omitting base_tree creates a tree containing only supplied entries; publishing that partial tree could delete other tracked paths.",
+        "Get-tree's recursive response may be truncated; its documented 100,000-entry/7 MB limits are read-response limits, not stated create-request limits."
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+      "claims": [
+        "General secondary content-creation guidance is at most 80 requests per minute and 500 per hour; some endpoints may be lower, shared limits and undisclosed limits also apply.",
+        "Use response headers and honor retry-after or rate-limit reset; after a secondary limit without a provided interval, wait at least one minute, then increase backoff if needed.",
+        "These limits do not establish available quota for the active connector."
+      ]
+    }
+  ]
+}

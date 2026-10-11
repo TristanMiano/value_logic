@@ -1,0 +1,29 @@
+{
+  "classification": "SOURCE_REVIEW_OBSERVER_DEFECT_BEFORE_FINAL_DATA_ACCESS",
+  "contributor": "ChatGPT (GPT-6 Astra Pro), /root/conformance_reconstruction",
+  "correction": "Add separate lifecycle_digest for those two comparisons; preserve scientific payload hashing and all mathematical checks.",
+  "created_utc": "2026-10-11T15:10:08.037285+00:00",
+  "defect": "Lifecycle canonical JSON adds a trailing newline, but v1 reused the no-newline scientific-payload digest for lifecycle schedule and unit identities. It would incorrectly reject all valid lifecycle bindings.",
+  "final_inputs_read": 0,
+  "final_results_read": 0,
+  "frozen_sources_changed": false,
+  "new_observer": {
+    "bytes": 37416,
+    "path": "v3/work_logs/P3_10_2026-10-11_S1/reviews/conformance_reconstruction/observer_v2.py",
+    "sha256": "f6c57520c64d77cce87555c6ce620a0130e54fff1d6c177e1600dbb74ab4d2a3"
+  },
+  "observer_v1_executions": 0,
+  "old_observer": {
+    "bytes": 37070,
+    "path": "v3/work_logs/P3_10_2026-10-11_S1/reviews/conformance_reconstruction/observer_v1.py",
+    "sha256": "b10cacb0ea0763f5e0cbafe40507e3d1a12b58daf89d27a6332b4771933b75d5"
+  },
+  "principal_clock_credit_seconds": 0,
+  "reviewed_lifecycle_source": {
+    "path": "v3/experiments/frozen_v1/source/v3/experiments/p309_lifecycle.py",
+    "sha256": "5b8ff096f03cd6ecafaf8acb6db59ecc0a8cbb9f9ab963fa7844b3c0adf246bb"
+  },
+  "schema": "value_logic.p310.conformance_observer_revision.v1",
+  "scientific_retry": false,
+  "syntax": "AST parse passed"
+}

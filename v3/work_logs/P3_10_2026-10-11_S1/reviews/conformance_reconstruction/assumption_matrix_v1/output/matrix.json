@@ -1,0 +1,185 @@
+{
+  "accepted_status_changes": [],
+  "created_at_utc": "2026-10-11T16:00:56.041645+00:00",
+  "gate_changes": [],
+  "information_matrix": [
+    {
+      "checked": "36 requests: exact rational rows, dimensions, mode, requested targets, and certificate-to-request binding. Six named malformed requests are rejected. The independent observer also recomputes summary ranks.",
+      "hypothesis": "Exact finite request and input identity",
+      "id": "I1",
+      "sources": "AUD audit; VER verify; C _information_binding; O verify_information; R \u00a7\u00a7 Evidence, Six invalid-input controls",
+      "supplied_or_unchecked": "The supplied loss rows really mean those statewise quantities; a numerical type check cannot establish that meaning. The six controls exercise only their named schema boundaries."
+    },
+    {
+      "checked": "Affine row identities and every required law coordinate are checked. Known-scale recovery uses row([1; M]); normalization is retained. Prior results: 20/36 full-law designs and 22/36 complete target families recoverable.",
+      "hypothesis": "Global linear-target recovery and normalization (PI-1, PI-2)",
+      "id": "I2",
+      "sources": "PI \u00a7\u00a72, 4, 19; AUD target_certificate; O recoverable, verify_information; R \u00a7 Information findings",
+      "supplied_or_unchecked": "The source is the full normalized real simplex, the target is the declared linear family, and the observation is an exact expectation map. The necessity argument uses the simplex's interior. Twelve one-state designs are forced by normalization; four empty-target flags are vacuous."
+    },
+    {
+      "checked": "Offset differences M and the identities alpha M = 1 and beta M = c are checked for nonconstant unknown-scale targets. Witness scales are positive and known nuisance values remain fixed. An independent-row-scale tag is rejected.",
+      "hypothesis": "Shared nuisance and valid ratio denominator (PI-10)",
+      "id": "I3",
+      "sources": "PI \u00a710; AUD module contract; VER verify_target; O verify_target",
+      "supplied_or_unchecked": "One common positive scale s and, when unknown, one unrestricted common offset b apply to every row; known units were correctly removed. The denominator equals s under that contract. No future numerical observation or empirical shared-unit premise is tested."
+    },
+    {
+      "checked": "43 negative proof components: 27 target collisions and 16 law obstructions have interior normalized p and q, allowed nuisances, equal raw observations, and unequal targets.",
+      "hypothesis": "A collision defeats global exact decoding, not every local fiber",
+      "id": "I4",
+      "sources": "PI PI-1, PI-3, PI-4, PI-10 and \u00a716; VER verify_target; R \u00a7 What the exact certificates establish",
+      "supplied_or_unchecked": "Both witnesses are admissible because the full simplex is declared. A smaller or nonconvex source, bounded nuisance, or a particular boundary observation can identify more. Nonidentification does not mean that a record has no statistical information or that every observation is ambiguous."
+    },
+    {
+      "checked": "The independent rank deficit, raw-row construction, B h_j = 0, q_i h_j = delta_ij, and all repaired target identities are checked. Fourteen designs need positive repair; their minimum counts total 24 additional raw rows.",
+      "hypothesis": "Sharp additional-query repair (PI-17)",
+      "id": "I5",
+      "sources": "PI \u00a718; VER verify repair block; O verify_information; R \u00a7 What the exact certificates establish",
+      "supplied_or_unchecked": "Additional rows may be any fixed known rational losses, with the same law and nuisance as the old rows. These are proposed measurement designs, not 24 acquired observations. No restricted purchase menu, noisy acquisition, adaptive policy, bit cost, or paid access guarantee is established; exact target recovery need not recover the whole law or offset."
+    },
+    {
+      "checked": "The audit accepts L, C, n and a calibration tag, not a sample or forecast-truth transcript. The 36 accepted certificates check algebraic designs. They contain 138 positive proof components, not 138 independent prediction successes.",
+      "hypothesis": "Expected loss versus observed finite forecast accuracy",
+      "id": "I6",
+      "sources": "PI \u00a7\u00a72, 16, 19; AUD module contract; C run; R \u00a7 Information findings",
+      "supplied_or_unchecked": "Actual values must be exact expectations under one supplied law. A common realized batch has means L p_hat and an inverse recovers that empirical law; population accuracy needs a separate sampling/error argument. The 20/36 fraction is neither an accuracy rate nor evidence of learning, calibration, or broker improvement."
+    }
+  ],
+  "new_final_payload_reads": 0,
+  "new_scientific_executions": 0,
+  "previous_denominators": {
+    "invalid_controls": 6,
+    "structural": 18,
+    "total": 60,
+    "valid_information": 36
+  },
+  "principal_clock_seconds": 0,
+  "review_kind": "source-only assumption and implication review",
+  "schema": "p310.conformance.assumption-matrix.v1",
+  "scope": "P3-10-A1 inherited conformance; no P3-11, no author gate, no official/source edits",
+  "signed_by": "ChatGPT (GPT-6 Astra Pro), /root/conformance_reconstruction",
+  "source_bindings": {
+    "ADD": {
+      "bytes": 44290,
+      "path": "v3/experiments/frozen_v1/source/v3/derivations/05_equal_certificate_delivery.md",
+      "role": "frozen separate receiving-service theorem",
+      "sha256": "9873d58f8e5b837df8ee2e82a84d827316ab83f290f02e234643bf59d82f9340",
+      "snapshot": "source_snapshots/ADD__05_equal_certificate_delivery.md"
+    },
+    "AUD": {
+      "bytes": 14564,
+      "path": "v3/experiments/frozen_v1/source/v3/checks/02_finite_information_audit.py",
+      "role": "frozen information implementation",
+      "sha256": "546a4b12df2348d284582de7e48e19378bd8a5fbc3ea191b9190605aaa9879b0",
+      "snapshot": "source_snapshots/AUD__02_finite_information_audit.py"
+    },
+    "C": {
+      "bytes": 29443,
+      "path": "v3/experiments/frozen_v1/source/v3/experiments/p309_conformance.py",
+      "role": "frozen conformance roster and adapter",
+      "sha256": "b454f7ee72c5c2a3f3dfb0a45cde9cc4af81d6d82a9998a15c581cf869f76f7c",
+      "snapshot": "source_snapshots/C__p309_conformance.py"
+    },
+    "CF": {
+      "bytes": 38526,
+      "path": "v3/derivations/04_counterfactual_semantics.md",
+      "role": "current theoretical source; separately byte bound",
+      "sha256": "679d8f6cc0445f3990e26faa069dd993732de52fc497c0a3d07ce19d6338c9ae",
+      "snapshot": "source_snapshots/CF__04_counterfactual_semantics.md"
+    },
+    "D": {
+      "bytes": 11738,
+      "path": "v3/work_logs/P3_10_2026-10-11_S1/reviews/conformance_reconstruction/duty_attachment_v1/output/attachment.md",
+      "role": "previous read-only accepted-duty attachment",
+      "sha256": "c87c0396528787a4e95a945c17794914425575e70898082745551127a91db6f3",
+      "snapshot": "source_snapshots/D__attachment.md"
+    },
+    "O": {
+      "bytes": 47780,
+      "path": "v3/work_logs/P3_10_2026-10-11_S1/reviews/conformance_reconstruction/observer_v4.py",
+      "role": "previously executed independent observer source; not rerun",
+      "sha256": "172aee16c019122fe3feaae12e0601cf41681f070a7ed7761c08fa7bedf227a8",
+      "snapshot": "source_snapshots/O__observer_v4.py"
+    },
+    "PI": {
+      "bytes": 126694,
+      "path": "v3/experiments/frozen_v1/source/v3/derivations/02_probability_information.md",
+      "role": "frozen theorem statements",
+      "sha256": "faee4cd48d6f9477933e08af371ff95718f1468389ee11f61c38ffde0fd6f3af",
+      "snapshot": "source_snapshots/PI__02_probability_information.md"
+    },
+    "R": {
+      "bytes": 23112,
+      "path": "v3/work_logs/P3_10_2026-10-11_S1/reviews/conformance_reconstruction/REVIEW.md",
+      "role": "previous signed conformance result review; counts cited without reopening final payloads",
+      "sha256": "8785d5c4f295930d4e66aba233c1186078f607a72402297668a6c57637545b63",
+      "snapshot": "source_snapshots/R__REVIEW.md"
+    },
+    "S": {
+      "bytes": 46792,
+      "path": "v3/experiments/frozen_v1/source/v3/experiments/p308_structural.py",
+      "role": "frozen structural fixture and policy source",
+      "sha256": "84da8203ef7292623183212f7daf38c0a9e83bb6390ffdd0b0667c174975e026",
+      "snapshot": "source_snapshots/S__p308_structural.py"
+    },
+    "TR": {
+      "bytes": 28618,
+      "path": "v3/derivations/05_counterfactual_transport.md",
+      "role": "current theoretical source; separately byte bound",
+      "sha256": "44177a5887f3b3bb4464f2dd8cb7d2bd2a450609c3b14e8280dbcde4362fa0b9",
+      "snapshot": "source_snapshots/TR__05_counterfactual_transport.md"
+    },
+    "VER": {
+      "bytes": 8095,
+      "path": "v3/experiments/frozen_v1/source/v3/checks/02_finite_information_verify.py",
+      "role": "frozen independent arithmetic verifier",
+      "sha256": "9b1e2822a867f934fbbaa4b6b7fb1230ad69cbf9458565da1b3bf418e7d3f1f1",
+      "snapshot": "source_snapshots/VER__02_finite_information_verify.py"
+    }
+  },
+  "structural_matrix": [
+    {
+      "checked": "For 9 fixtures under both methods, the previous observer evaluates the original quoted antecedent, paired support or explicit routing, hard commitments, ranks and losses. It reconstructs all 18 complete terminal replies from the fixture definitions.",
+      "hypothesis": "Declared finite hypothetical semantics",
+      "id": "S1",
+      "sources": "CF \u00a7\u00a72\u20134; S fixtures, candidate_compile, ordinary_compile; O reconstruct_structural; R \u00a7 Structural findings",
+      "supplied_or_unchecked": "The finite grammar, baseline, exceptions, weights, hard frames, action menu, loss meanings and copy/predictor routing are supplied. Correct evaluation does not infer the causal graph, justify relevance weights, or make a paired-support case an ordinary world or a truth probability."
+    },
+    {
+      "checked": "The completed search/enumerator retains rank equality and the observer reconstructs every finite minimizer and loss image. The tied fixture retains both minima; the external-source fixture retains both sources despite minimum ranks 1 and 2.",
+      "hypothesis": "All ties and all declared unresolved sources",
+      "id": "S2",
+      "sources": "CF C04-5\u20136; TR \u00a72; S solve_candidate, solve_ordinary, choose_fixed_action; O reconstruct_structural",
+      "supplied_or_unchecked": "The declared domain and source roster exhaust the intended alternatives. Repair rank is minimized separately inside each source. These completions do not newly test interrupted-frontier coverage at arbitrary budgets, or justify discarding ties in another service."
+    },
+    {
+      "checked": "Seven nonempty fixtures per method give 14 action warrants. Fixed falsity and impossible ordinary conditioning give 4 complete infeasibility replies and no useful action. The choice function refuses an action if any retained source lacks a nonempty target.",
+      "hypothesis": "Established nonempty target before an action warrant",
+      "id": "S3",
+      "sources": "CF \u00a72 and C04-5\u20136; S choose_fixed_action; C units, default_config; R \u00a7 Evidence and denominator",
+      "supplied_or_unchecked": "This is exhaustive infeasibility in the declared finite domain. An empty implication or an interrupted search without a witness cannot replace nonemptiness. The 60-unit roster does not add low-budget structural failure controls."
+    },
+    {
+      "checked": "The selected action minimizes its maximum loss over all retained source/minimum pairs. Candidate and ordinary return the same action. The record explicitly refuses the hidden-case action oracle.",
+      "hypothesis": "Fixed minimax choice versus pointwise non-deterioration",
+      "id": "S4",
+      "sources": "CF \u00a74 and C04-6; TR CT05-1; S choose_fixed_action; O reconstruct_structural",
+      "supplied_or_unchecked": "Minimax is the supplied consumer policy. Lower maximum absolute loss does not prove a nonpositive same-case loss difference against every alternative. A named baseline and a bound on that difference are needed for uniform non-deterioration; see the concrete example below."
+    },
+    {
+      "checked": "No ADD current-bound receipt is produced by these 18 structural conformance calls. Their complete minimizer identities are a separate local service. The source roster calls run_method, not transport_development or the ADD receiving service.",
+      "hypothesis": "Whole incumbent-sublevel receiving certificate",
+      "id": "S5",
+      "sources": "ADD \u00a7\u00a71\u20132.3; CF C04-5\u20136; C run; S run_method, transport_development",
+      "supplied_or_unchecked": "The separate receiving theorem needs a checked feasible incumbent w, the complete current request and D, and a checked bound on every feasible x with rank(x) <= rank(w), including nonoptimal points and ties. When B <= 0 and D is the intended fixed-pair loss difference, this implies non-deterioration on the minima. Minimizer-only answers do not establish the larger sublevel bound."
+    },
+    {
+      "checked": "The fixture requests bind their complete current source and routing, and different routing masks give their declared outcomes. These 60 calls do not exercise an old-certificate admission, edit chain, domain-coverage bridge or repaired receipt.",
+      "hypothesis": "Reuse or repair after an edit (CT05-1, CT05-2, CT05-5)",
+      "id": "S6",
+      "sources": "TR \u00a7\u00a72\u20133, 8; CF \u00a77.2; S source_scope, fixtures; C run",
+      "supplied_or_unchecked": "Reuse needs valid old proof domains, a current feasible witness, a checked map into the old domain, the rank-drift/cutoff inequality, and a positive-unit numerical loss bridge covering every new minimum and unresolved source. A repaired allowance must still be <= 0 to warrant non-deterioration. Old winners, source names or a surviving candidate alone do not supply those premises."
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+--- observer.v3.py
++++ observer_a1.v1.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-'''Independent P3-10 broker arithmetic observer. Standard-library JSON only.
++'''Independent P3-10-A1 broker arithmetic observer. Standard-library JSON only.
+ 
+ Contributor: ChatGPT (GPT-6 Astra Pro), agent /root/freeze_review.
+ No frozen code is imported. No paid method is replayed. Final reads require
+@@ -145,6 +145,230 @@
+         audit.check(self.name + '.' + unit_id + '.start_binding', start,
+                     {'identity': self.identity, 'unit': unit, 'attempt': seal['attempt']})
+         return result['value'], seal['result_sha256']
++
++
++A1_ID = 'P3-10-A1'
++A1_MANIFEST_SHA256 = '36ddd4abc335afebf1e46d5c58e016adbc8d356a72809d14ad95338e05342359'
++ORIGINAL_MANIFEST_SHA256 = '69d4d4a84c649698a006bce00a87b0038d5f7d19f2da4e96e6ef3d4e42e37c70'
++ORIGINAL_PROTOCOL_SHA256 = 'dde9fe405ad39e65db3d49cb47d298e3ab6e498d7c5c485ff215ff884466b88f'
++ORIGINAL_FAILURE_SHA256 = '8a218fcdd465af660962cc608dbd87ecfecc46fcd9f673a63c01a0b7e4184d12'
++
++
++def bound_file(audit, path):
++    """Hash bytes without decoding payloads; retain the exact observer read set."""
++    path = path.resolve()
++    h, count = hashlib.sha256(), 0
++    with path.open('rb') as stream:
++        for block in iter(lambda: stream.read(1 << 20), b''):
++            h.update(block)
++            count += len(block)
++    record = {'path': str(path.relative_to(audit.repo)), 'bytes': count, 'sha256': h.hexdigest()}
++    prior = audit.files.get(record['path'])
++    audit.require(prior is None or prior == record, 'Input changed during observation: ' + record['path'])
++    audit.files[record['path']] = record
++    return record
++
++
++def exact(audit, label, got, wanted):
++    audit.check(label, got, wanted)
++    audit.require(wire(got) == wire(wanted), 'Provenance mismatch: ' + label)
++
++
++def fields(audit, label, got, wanted):
++    audit.check(label, got, wanted)
++    audit.require(type(got) is dict and all(key in got and wire(got[key]) == wire(value)
++                  for key, value in wanted.items()), 'Provenance fields mismatch: ' + label)
++
++
++def repository_path(audit, relative):
++    p = Path(relative)
++    audit.require(type(relative) is str and not p.is_absolute() and '..' not in p.parts
++                  and p.as_posix() == relative, 'Noncanonical repository-relative path')
++    path = audit.repo / p
++    audit.require(path.is_file() and not path.is_symlink() and path.resolve() == path,
++                  'Missing or symbolic provenance file: ' + relative)
++    return path
++
++
++def inventory(audit, name, rows, within=None):
++    audit.require(type(rows) is list and len({row['path'] for row in rows}) == len(rows),
++                  'Duplicate or malformed evidence inventory: ' + name)
++    for row in rows:
++        path = repository_path(audit, row['path'])
++        if within is not None:
++            audit.require(path.is_relative_to(within), 'Evidence outside its original root')
++        observed = bound_file(audit, path)
++        fields(audit, name + '.' + row['path'], observed,
++               {'path': row['path'], 'bytes': row['bytes'], 'sha256': row['sha256']})
++
++
++class ReferencedOriginalPublic(SealedStage):
++    """Original 500-unit identity, with only its 440 immutable completion references."""
++    def __init__(self, audit, final, expected, binding, references):
++        self.audit, self.final, self.name = audit, final, 'public'
++        self.expected = {unit['id']: unit for unit in expected}
++        self.identity = {'stage': 'public', 'binding': binding,
++                         'schedule_sha256': digest(expected, newline=True)}
++        exact(audit, 'original_public.schedule', audit.load(final / 'stages/public/schedule.json'),
++              dict(self.identity, schema='value_logic.p309.stage.v1', units=expected))
++        self.seals = {r['unit_id']: {'unit_id': r['unit_id'], 'path': r['seal_path'],
++                                   'sha256': r['seal_sha256']} for r in references}
++        audit.require(len(self.seals) == len(references), 'Repeated original reference')
++        exact(audit, 'original_public.reference_universe', sorted(self.seals),
++              sorted(u['id'] for u in expected if u['arm'] in ('broker', 'certificates')))
++
++
++class CompositePublic:
++    def __init__(self, original, amended):
++        self.original, self.amended = original, amended
++
++    def get(self, unit_id):
++        stage = self.original if unit_id in self.original.seals else self.amended
++        return stage.get(unit_id)
++
++
++def bind_seal_metadata(stage, unit_id):
++    """Verify metadata plus result bytes, without decoding the result payload."""
++    audit = stage.audit
++    index = stage.seals[unit_id]
++    p = Path(index['path'])
++    audit.require(not p.is_absolute() and '..' not in p.parts and p.as_posix() == index['path'],
++                  'Noncanonical seal reference')
++    path = stage.final / p
++    expected_parent = stage.final / 'stages' / stage.name / 'units' / unit_id
++    audit.require(path.is_file() and not path.is_symlink() and path.resolve() == path
++                  and path.name == 'seal.json' and path.parent.parent == expected_parent,
++                  'Seal outside its exact immutable unit directory')
++    actual_seals = list(expected_parent.glob('attempt_*/seal.json'))
++    audit.require(len(actual_seals) == 1 and actual_seals[0] == path,
++                  'Unit does not have exactly one referenced completion seal')
++    seal = audit.load(path)
++    fields(audit, stage.name + '.' + unit_id + '.metadata_seal', seal,
++           {'schema': 'value_logic.p309.unit_seal.v1', 'identity': stage.identity,
++            'unit_sha256': digest(stage.expected[unit_id], newline=True)})
++    exact(audit, unit_id + '.metadata_seal_hash', bound_file(audit, path)['sha256'], index['sha256'])
++    audit.require(type(seal['attempt']) is int and 1 <= seal['attempt'] <= 2
++                  and path.parent.name == 'attempt_%02d' % seal['attempt'], 'Invalid bound attempt directory')
++    start_path, result_path = path.parent / 'start.json', path.parent / 'result.json'
++    start = audit.load(start_path)
++    fields(audit, unit_id + '.metadata_start', start,
++           {'schema': 'value_logic.p309.unit_start.v1', 'identity': stage.identity,
++            'unit': stage.expected[unit_id], 'attempt': seal['attempt']})
++    exact(audit, unit_id + '.metadata_start_hash', bound_file(audit, start_path)['sha256'], seal['start_sha256'])
++    exact(audit, unit_id + '.metadata_result_hash', bound_file(audit, result_path)['sha256'], seal['result_sha256'])
++    return {'unit_id': unit_id, 'origin_root': stage.final.relative_to(audit.repo).as_posix(),
++            'seal_path': path.relative_to(stage.final).as_posix(),
++            'seal_sha256': index['sha256'],
++            'result_path': result_path.relative_to(stage.final).as_posix(),
++            'result_sha256': seal['result_sha256']}
++
++
++def a1_stages(audit, repo, release, freeze, schedule, old_binding):
++    """Independently reconstruct A1 lineage. No producer/helper code is imported."""
++    old = repo / 'v3/experiments/final_v1'
++    new = repo / 'v3/experiments/final_v1_amended_A1'
++    amendment = repo / 'v3/experiments/amendments/P3_10_A1'
++    exact(audit, 'pinned_original_manifest', old_binding['manifest_sha256'], ORIGINAL_MANIFEST_SHA256)
++    exact(audit, 'pinned_original_protocol', old_binding['protocol_sha256'], ORIGINAL_PROTOCOL_SHA256)
++    for stage in ('public', 'evaluation', 'analysis'):
++        audit.require((new / 'stages' / stage / 'complete.json').is_file(),
++                      'All amended public/evaluation/analysis completions are required')
++    audit.require((old / 'stages/inputs/complete.json').is_file()
++                  and not (old / 'stages/public/complete.json').exists()
++                  and not (old / 'stages/evaluation').exists() and not (old / 'stages/analysis').exists(),
++                  'Original failed lineage was changed or private work started there')
++    manifest_path = amendment / 'manifest.json'
++    manifest = audit.load(manifest_path)
++    manifest_hash = bound_file(audit, manifest_path)['sha256']
++    exact(audit, 'pinned_amendment_manifest', manifest_hash, A1_MANIFEST_SHA256)
++    exact(audit, 'released_amendment_manifest', manifest_hash, release['amendment_manifest_sha256'])
++    fields(audit, 'amendment_manifest', manifest,
++           {'amendment_id': A1_ID, 'status': 'SEALED_BEFORE_AMENDED_EXECUTION',
++            'original_manifest_sha256': ORIGINAL_MANIFEST_SHA256,
++            'original_protocol_sha256': ORIGINAL_PROTOCOL_SHA256,
++            'original_failure_sha256': ORIGINAL_FAILURE_SHA256,
++            'original_public_stage_complete': False, 'original_private_evaluation_started': False,
++            'new_input_generations': 0, 'original_failed_prefix_cost': 'unknown'})
++    inventory(audit, 'original_evidence', manifest['original_evidence'], within=old)
++    actual_paths = sorted(p.relative_to(repo).as_posix() for p in old.rglob('*')
++                          if p.is_file() and p.name != 'writer.lock')
++    exact(audit, 'original_evidence_exact_roster', actual_paths,
++          sorted(row['path'] for row in manifest['original_evidence']))
++    inventory(audit, 'amendment_sources', manifest['new_sources'])
++    for row in manifest['new_sources']:
++        snapshot = amendment / 'source' / row['path']
++        fields(audit, 'amendment_source_snapshot.' + row['path'], bound_file(audit, snapshot),
++               {'bytes': row['bytes'], 'sha256': row['sha256']})
++    for name, key in (('protocol.json', 'amendment_protocol_sha256'), ('protocol.md', 'amendment_prose_sha256')):
++        exact(audit, 'amendment_' + name, bound_file(audit, amendment / name)['sha256'], manifest[key])
++    exact(audit, 'original_failure', bound_file(audit, old / 'stages/public/attempts/attempt_01/failure.json')['sha256'],
++          ORIGINAL_FAILURE_SHA256)
++    binding = dict(old_binding, amendment_id=A1_ID, amendment_manifest_sha256=manifest_hash)
++    exact(audit, 'amendment_binding', audit.load(new / 'amendment_binding.json'), binding)
++    all_units, groups = schedule['units'], schedule['groups']
++    remaining = [u for u in all_units if u['arm'] == 'conformance']
++    reused = [u for u in all_units if u['arm'] in ('broker', 'certificates')]
++    exact(audit, 'amendment_remaining_schedule', manifest['remaining_public_units'], remaining)
++    exact(audit, 'amendment_reuse_schedule', manifest['reused_public_unit_ids'], [u['id'] for u in reused])
++    exact(audit, 'a1_unit_counts', [len(groups), len(all_units), len(reused), len(remaining)], [12, 500, 440, 60])
++    before = len(audit.mismatches)
++    inputs = SealedStage(audit, old, 'inputs', groups, old_binding)
++    amended_public = SealedStage(audit, new, 'public', remaining, binding)
++    evaluation = SealedStage(audit, new, 'evaluation',
++        [dict(u, id='score-' + u['id'], public_unit_id=u['id']) for u in all_units], binding)
++    analysis = SealedStage(audit, new, 'analysis', [{'id': 'all-frozen-endpoints', 'arm': 'analysis'}], binding)
++    audit.require(len(audit.mismatches) == before, 'Stage schedule/completion binding mismatch')
++    composite = audit.load(new / 'composite_public.json')
++    fields(audit, 'composite_public', composite,
++           {'schema': 'value_logic.p310_a1.composite_public.v1', 'binding': binding,
++            'expected_units': 500, 'completed_units': 500, 'original_units': 440, 'amended_units': 60,
++            'original_public_stage_complete': False, 'original_failure_sha256': ORIGINAL_FAILURE_SHA256})
++    exact(audit, 'composite_ordered_universe', [r['unit_id'] for r in composite['seals']], [u['id'] for u in all_units])
++    original_refs = [r for r, u in zip(composite['seals'], all_units) if u['arm'] != 'conformance']
++    original_public = ReferencedOriginalPublic(audit, old, all_units, old_binding, original_refs)
++    input_ref = audit.load(new / 'input_reference.json')
++    fields(audit, 'input_reference', input_ref,
++           {'schema': 'value_logic.p310_a1.input_reference.v1', 'binding': binding,
++            'expected_units': 12, 'completed_units': 12, 'new_generations': 0,
++            'original_exposure_sha256': bound_file(audit, old / 'exposure.json')['sha256']})
++    exact(audit, 'input_reference_ordered_universe', [r['unit_id'] for r in input_ref['seals']], [g['id'] for g in groups])
++    for group, ref in zip(groups, input_ref['seals']):
++        expected = dict(bind_seal_metadata(inputs, group['id']), evidence_class='original_prospective_input')
++        exact(audit, 'input_reference.' + group['id'], ref, expected)
++    for unit, ref in zip(all_units, composite['seals']):
++        is_new = unit['arm'] == 'conformance'
++        stage = amended_public if is_new else original_public
++        cls = 'post_exposure_amended_inherited_conformance' if is_new else 'original_prospective_unchanged_public_record'
++        expected = dict(bind_seal_metadata(stage, unit['id']), evidence_class=cls)
++        exact(audit, 'composite_reference.' + unit['id'], ref, expected)
++    for stage in (inputs, amended_public, original_public, evaluation, analysis):
++        physical_seals = list((stage.final / 'stages' / stage.name / 'units').glob('*/attempt_*/seal.json'))
++        exact(audit, str(stage.final.relative_to(repo)) + '.' + stage.name + '.physical_seal_count',
++              len(physical_seals), len(stage.seals))
++    for identifier in evaluation.expected:
++        bind_seal_metadata(evaluation, identifier)
++    bind_seal_metadata(analysis, 'all-frozen-endpoints')
++    audit.require(not (old / 'stages/public/complete.json').exists(), 'Original completion was created during observation')
++    return {'inputs': inputs, 'public': CompositePublic(original_public, amended_public),
++            'evaluation': evaluation, 'analysis': analysis}, (old, new), manifest_hash
++
++
++def a1_unknown_public(audit, roots):
++    unknown = []
++    for root in roots:
++        for unit_dir in sorted((root / 'stages/public/units').iterdir()):
++            if unit_dir.is_dir():
++                for attempt in sorted(unit_dir.glob('attempt_*')):
++                    if not (attempt / 'seal.json').is_file():
++                        if (attempt / 'start.json').is_file():
++                            bound_file(audit, attempt / 'start.json')
++                        unknown.append({'origin_root': root.relative_to(audit.repo).as_posix(),
++                                        'unit_id': unit_dir.name, 'attempt_directory': attempt.name})
++    audit.require(any(row['origin_root'] == 'v3/experiments/final_v1' and
++                      row['unit_id'] == 'conformance_structural_legacy__counterpossible_tied_minima__candidate'
++                      and row['attempt_directory'] == 'attempt_01' for row in unknown),
++                  'The original failed-prefix cost must remain unknown')
++    return unknown
+ 
+ 
+ def formula_key(query):
+@@ -585,8 +809,9 @@
+     if not release_path.is_relative_to(owned):
+         raise ValueError('Release receipt must be within the assigned review directory')
+     release = decode(release_path.read_bytes())
+-    if release.get('task') != 'P3-10' or release.get('all_public_evaluation_analysis_complete') is not True:
+-        raise PermissionError('Explicit principal completion release required before final reads')
++    if (release.get('task') != 'P3-10' or release.get('all_public_evaluation_analysis_complete') is not True
++            or release.get('amendment_id') != A1_ID or release.get('amendment_manifest_sha256') != A1_MANIFEST_SHA256):
++        raise PermissionError('Explicit principal A1 completion release with exact sealed manifest required before final reads')
+     out.mkdir(parents=True, exist_ok=False)
+     started = utc()
+     write_new(out / 'started.json', {'started_utc': started, 'contributor': 'ChatGPT (GPT-6 Astra Pro)',
+@@ -602,14 +827,10 @@
+         audit.check('frozen_protocol_hash', audit.files['v3/experiments/protocol.v1.json']['sha256'], freeze['protocol_sha256'])
+         audit.check('frozen_schedule_hash', audit.files['v3/experiments/frozen_v1/schedule.json']['sha256'], freeze['schedule_sha256'])
+         binding = {'freeze_id': freeze['freeze_id'], 'manifest_sha256': audit.files['v3/experiments/frozen_v1/manifest.json']['sha256'], 'protocol_sha256': freeze['protocol_sha256']}
+-        final = repo / 'v3/experiments/final_v1'
+         all_units, groups = schedule['units'], schedule['groups']
+         unit_schedule = [u for u in all_units if u['arm'] == 'broker']
+         group_map = {group['id']: group for group in groups}
+-        stages = {'inputs': SealedStage(audit, final, 'inputs', groups, binding),
+-            'public': SealedStage(audit, final, 'public', all_units, binding),
+-            'evaluation': SealedStage(audit, final, 'evaluation', [dict(u, id='score-' + u['id'], public_unit_id=u['id']) for u in all_units], binding),
+-            'analysis': SealedStage(audit, final, 'analysis', [{'id': 'all-frozen-endpoints', 'arm': 'analysis'}], binding)}
++        stages, lineage_roots, amendment_hash = a1_stages(audit, repo, release, freeze, schedule, binding)
+         final_analysis, analysis_hash = stages['analysis'].get('all-frozen-endpoints')
+         audit.check('analysis_denominator', final_analysis, {'expected_score_units': 500, 'received_score_units': 500})
+         audit.check('broker_unit_count', len(unit_schedule), 336)
+@@ -637,15 +858,15 @@
+             rows.append(episode_numbers(audit, unit, public, truths[unit['group_id']], paid_wrapper['paid_result'], score_wrapper['score'], config['arms']['broker']))
+             if index % 50 == 0:
+                 print(json.dumps({'completed_broker_observations': index, 'mismatches': len(audit.mismatches)}), flush=True)
+-        unknown_public = []
+-        for unit_dir in sorted((final / 'stages/public/units').iterdir()):
+-            if unit_dir.is_dir():
+-                for attempt in sorted(unit_dir.glob('attempt_*')):
+-                    if not (attempt / 'seal.json').is_file():
+-                        unknown_public.append({'unit_id': unit_dir.name, 'attempt_directory': attempt.name})
++        unknown_public = a1_unknown_public(audit, lineage_roots)
+         cost_known = not unknown_public
+         audit.check('complete_outer_paid_attempt_accounting', final_analysis['execution_attempt_audit']['complete_outer_paid_attempt_accounting'], cost_known)
+-        observed_unknown = [{'unit_id': row['unit_id'], 'attempt_directory': row['attempt_directory']} for row in final_analysis['execution_attempt_audit']['unknown_unsealed_public_attempts']]
++        audit.check('complete_outer_attempt_economic_claim_permitted', final_analysis['complete_outer_attempt_economic_claim_permitted'], False)
++        audit.check('amended_audit_fields', final_analysis['execution_attempt_audit'],
++                    {'amendment_id': A1_ID, 'complete_outer_paid_attempt_accounting': False,
++                     'complete_physical_run_accounting': False, 'original_public_stage_complete': False})
++        observed_unknown = [{key: row[key] for key in ('origin_root', 'unit_id', 'attempt_directory')}
++                            for row in final_analysis['execution_attempt_audit']['unknown_unsealed_public_attempts']]
+         audit.check('unknown_outer_public_attempts', observed_unknown, unknown_public)
+         broker = final_analysis['broker']
+         summaries = summarize(audit, rows, broker, config, group_map)
+@@ -671,9 +892,11 @@
+             'optional_report_statuses': dict(Counter(row['score']['paid_report_comparison']['status'] for row in rows if row['unit']['engine'] in ('broker', 'mirror'))),
+             'coupling_violations': violations, 'ordinary_identity_violations': identities,
+             'coupling_unavailable_pairs': unavailable, 'unknown_public_attempts': unknown_public,
+-            'analysis_result_sha256': analysis_hash, 'frozen_imports': [], 'paid_method_replays': 0,
++            'analysis_result_sha256': analysis_hash, 'amendment_id': A1_ID,
++            'amendment_manifest_sha256': amendment_hash, 'original_public_stage_complete': False,
++            'frozen_imports': [], 'paid_method_replays': 0,
+             'principal_research_minutes_claimed': 0,
+-            'scope': 'Independent saved-JSON truth/receipt/metric, denominator, report arithmetic, pairing and catalogue reconstruction. Mixture weight-update and selector numeric implementation are reviewed separately by the principal.'}
++            'scope': 'Independent saved-JSON broker reconstruction across explicit A1 lineage: unchanged original broker public records, original inputs, amended private scores/analysis, all 500 composite seals, and preserved unknown original public prefix. Arithmetic endpoints are unchanged from the v3 observer; mixture weight/selector numerical implementation is reviewed separately by the principal.'}
+         write_new(out / 'summary.json', summary)
+         write_new(out / 'mismatches.json', audit.mismatches)
+         write_new(out / 'input_manifest.json', {'observed_files': list(audit.files.values()), 'observer_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})

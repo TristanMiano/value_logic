@@ -1,0 +1,16 @@
+{
+  "schema": "value_logic.p310.administrative_verifier_failure.v1",
+  "observed_utc": "2026-10-11T16:59:46.021214+00:00",
+  "source": "v3/work_logs/P3_10_2026-10-11_S1/verify_closure.py",
+  "source_sha256": "dcfdac80605d92c4122e97e03023ad3f54bd3deac13454a4bb019362626f3214",
+  "command": [
+    "python3",
+    "-B",
+    "v3/work_logs/P3_10_2026-10-11_S1/verify_closure.py"
+  ],
+  "exit_code": 1,
+  "exception": "FileNotFoundError",
+  "missing_path": "v3/experiments/amendments/P3_10_A1/protocol.v1.json",
+  "cause": "Administrative verifier assumed a protocol filename instead of reading the amendment directory. All prior file/hash checks were read-only; no scientific method was run, no evidence changed, and no final verification receipt was created.",
+  "correction_policy": "Retain this first source and failure; use an explicit corrected verifier revision."
+}

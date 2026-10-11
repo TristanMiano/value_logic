@@ -1,0 +1,22 @@
+{
+  "change": "Remove erroneous numeric comparison to the forecast_readouts diagnostic dictionary; retain 64-position horizon/closed-round checks and all exact Brier comparisons; use an exclusive run_02 path.",
+  "created_at_utc": "2026-10-11T16:15:05.353885+00:00",
+  "mathematical_reconstruction_changes": false,
+  "new_source_sha256": "63438b39e021ee3c21dd51e0f0d3fa6cf7d0ba05c04f82a8c06da604ecbdd0ca",
+  "official_or_principal_source_edits": false,
+  "old_source_sha256": "a598fae63f67e31283ff91414e41da59204ec59f07bee812af3529b3d859bdaf",
+  "preserved_failure_sha256": "637945e913823af17cac3df61e03101cf4c6e7d46edbeb92cd0c08708c558dcd",
+  "principal_clock_seconds": 0,
+  "schema": "p310.gate-review-observer-revision.v2",
+  "signed_by": "ChatGPT (GPT-6 Astra Pro), /root/conformance_reconstruction",
+  "source_edits": [
+    {
+      "new": "out = HERE / \"run_02\"",
+      "old": "out = HERE / \"run_01\""
+    },
+    {
+      "new": "suffix[\"horizon\"] == suffix[\"rounds_closed\"] == 64 and",
+      "old": "suffix[\"horizon\"] == suffix[\"rounds_closed\"] == suffix[\"forecast_readouts\"] == 64 and"
+    }
+  ]
+}

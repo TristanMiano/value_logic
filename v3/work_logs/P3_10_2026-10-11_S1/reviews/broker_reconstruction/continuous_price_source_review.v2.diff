@@ -1,0 +1,64 @@
+--- v3/work_logs/P3_10_2026-10-11_S1/observer_source_snapshots/continuous_price_observer.v1.py
++++ v3/work_logs/P3_10_2026-10-11_S1/observer_source_snapshots/continuous_price_observer.v2.py
+@@ -162,7 +162,7 @@
+         interior = (point["price"] + right) / 2 if right is not None else point["price"] + 1
+         active_intervals.append({"lower": point["price"], "upper": right, "open": True,
+                                  "ties": minimizing(lines, interior)[1]})
+-    return {"candidate_pairwise_crossing_count": len(cuts), "active_boundary_points": active_points,
++    return {"distinct_cut_prices_including_zero": len(cuts), "active_boundary_points": active_points,
+             "active_open_intervals": active_intervals,
+             "minimizers_anywhere": sorted({identifier for point in points for identifier in point["ties"]}
+                                          | {identifier for interval in intervals for identifier in interval["ties"]})}
+@@ -188,6 +188,10 @@
+             require(marker.is_file(), "all_frozen_stages_complete", stage)
+             read(marker)
+         schedule = read(REPO / "v3/experiments/frozen_v1/schedule.json")
++        config_path = REPO / "v3/experiments/protocol.v1.json"
++        require(sha(config_path) == "dde9fe405ad39e65db3d49cb47d298e3ab6e498d7c5c485ff215ff884466b88f",
++                "unchanged_machine_protocol", str(config_path))
++        config = read(config_path)
+         analysis = sealed("analysis", "all-frozen-endpoints")["value"]
+         economic_complete = analysis["complete_outer_attempt_economic_claim_permitted"]
+         families = {g["id"]: g["recipe"]["family"] for g in schedule["groups"] if g["arm"] == "broker"}
+@@ -209,6 +213,15 @@
+                     "group_ids": sorted({unit["group_id"] for unit, _ in rows}),
+                     "planned_executions": len(rows), "method_kind": rows[0][0]["method_kind"],
+                     "complete": valid, "a": None, "b": None, "unit_ids": [unit["id"] for unit, _ in rows]}
++            planned_native_prices = set()
++            for unit, score in rows:
++                native = (F(unit["parameters"].get("unit_price", "0")) /
++                          max(rat(unit["stakes"]["fp"]), rat(unit["stakes"]["fn"]))) if unit["engine"] == "ordinary" else None
++                planned_native_prices.add(native)
++                require((None if score["native_price_normalized"] is None else rat(score["native_price_normalized"])) == native,
++                        "scheduled_native_price_binding", unit["id"])
++            require(len(planned_native_prices) == 1, "one_native_price_per_configuration", identifier)
++            line["native_price_normalized"] = next(iter(planned_native_prices))
+             if valid:
+                 def action(unit, score):
+                     fp, fn = rat(unit["stakes"]["fp"]), rat(unit["stakes"]["fn"])
+@@ -219,8 +232,10 @@
+         for row in analysis["broker"]["catalogue_comparisons"]:
+             if row["selection"] == "fixed_record_repricing":
+                 frozen_cells[(row["family"], canonical(row["stakes"]).decode().strip(), tuple(row["group_ids"]))].append(row)
++        require(set(frozen_cells) == set(cells), "complete_fixed_record_grid_cell_roster", sorted(frozen_cells))
+         records = []
+-        epsilon = F(1, 100)
++        epsilon = rat(config["analysis"]["loss_improvement_threshold"])
++        require(epsilon == F(1, 100), "unchanged_practical_threshold", epsilon)
+         for cell_key, lines in sorted(cells.items()):
+             family, stakes, groups = cell_key
+             ordinary = [line for line in lines if line["method_kind"] == "ordinary"]
+@@ -230,6 +245,13 @@
+                       "lines": lines, "complete_declared_cell": complete,
+                       "complete_outer_attempt_economic_claim_permitted": economic_complete,
+                       "candidate_regions": [], "frozen_grid_rows_checked": 0}
++            expected_prices = {rat(p) for p in config["analysis"]["repricing_grid"]}
++            expected_prices.update(line["native_price_normalized"] for line in lines if line["native_price_normalized"] is not None)
++            actual_prices = [rat(row["price_normalized_per_unit"]) for row in frozen_cells[cell_key]]
++            require(len(actual_prices) == len(set(actual_prices)) == len(expected_prices)
++                    and set(actual_prices) == expected_prices,
++                    "complete_distinct_frozen_price_roster", [family, stakes])
++            record["frozen_grid_prices_required"] = sorted(expected_prices)
+             if complete:
+                 for frozen in frozen_cells[cell_key]:
+                     price = rat(frozen["price_normalized_per_unit"])

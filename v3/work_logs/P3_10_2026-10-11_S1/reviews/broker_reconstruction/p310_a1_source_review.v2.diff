@@ -1,0 +1,38 @@
+--- p310_a1_continue.reviewed.v1.py
++++ p310_a1_continue.reviewed.v2.py
+@@ -83,6 +83,12 @@
+     command = ['python3'] + F.PYTHON_FLAGS + ['v3/experiments/p309_freeze.py', 'verify']
+     observed = L.utc_now()
+     child = subprocess.run(command, cwd=REPO, capture_output=True, text=True, check=False)
++    L.publish_json(ROOT / 'verification' / (stage + '.original_verifier.json'), {
++        'schema': 'value_logic.p310_a1.original_verifier_command.v1',
++        'command': command, 'cwd': str(REPO), 'started_utc': observed,
++        'finished_utc': L.utc_now(), 'returncode': child.returncode,
++        'stdout': child.stdout, 'stderr': child.stderr,
++        'scope': 'Exact unchanged verifier child; no final execution endpoint invoked.'})
+     require(child.returncode == 0, 'Original verification failed: ' + child.stderr)
+     verification = json.loads(child.stdout)
+     require(verification['status'] == 'VERIFIED' and
+@@ -118,10 +124,20 @@
+ 
+ def inherited_rows(old_binding, schedule, manifest):
+     inputs_stage = L.Stage(OLD, 'inputs', old_binding, schedule['groups'])
+-    inputs_stage.verify_complete()  # Exists and must compare exactly; never recreated.
++    require((OLD / 'stages/inputs/schedule.json').is_file() and
++            (OLD / 'stages/public/schedule.json').is_file() and
++            (OLD / 'stages/inputs/complete.json').is_file(),
++            'Original schedules and input completion must already exist')
++    require(L.read_json(OLD / 'stages/inputs/schedule.json') ==
++            dict(inputs_stage.identity, schema='value_logic.p309.stage.v1', units=schedule['groups']),
++            'Original input schedule changed')
++    inputs_stage.verify_complete()  # Existing schedule/index compare only under the old writer lock.
+     inputs = inputs_stage.completed()
+     old_stage = L.Stage(OLD, 'public', old_binding, schedule['units'])
+-    originals = [old_stage.completed_unit(u) for u in schedule['units']]
++    require(L.read_json(OLD / 'stages/public/schedule.json') ==
++            dict(old_stage.identity, schema='value_logic.p309.stage.v1', units=schedule['units']),
++            'Original public schedule changed')
++    originals = old_stage.completed(require_all=False)
+     reused = [r for r in originals if r is not None]
+     remaining = [u for u, r in zip(schedule['units'], originals) if r is None]
+     require(len(inputs) == 12 and len(reused) == 440 and len(remaining) == 60,

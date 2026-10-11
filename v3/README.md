@@ -2,7 +2,10 @@
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 11, 2026 UTC.
 
-**P3-01–09 are complete at their declared scopes; P3-A has passed at restricted-representation readiness scope.** The author has set a
+**P3-01–10 are complete at their declared scopes; P3-A/B retain their restricted passes.**
+P3-10 closes with an explicit preserved amendment and **90.283569405783
+qualifying research minutes**. Phase research is **1086.131367364150 minutes**.
+**P3-11 is next and unstarted; work stops at P3-10.** The author has set a
 minimum of **16 measured hours of research**, with longer work possible.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
@@ -97,7 +100,9 @@ separate finite-prefix completion, task certainty, source recovery and revision
 support. The general proof-stream adapter is mathematical; the actual prototype
 handles its declared finite Boolean/bounded-VM fragment. The P3-03 prototype itself supplies no anticipatory learner or
 paid-computation policy. Later P3-06/07 add scoped forecasting and paid selection;
-P3-09 now supplies the prospective final freeze, with final execution unstarted. P3-04 now supplies [finite counterfactual semantics](derivations/04_counterfactual_semantics.md),
+P3-09 supplies the prospective final freeze; P3-10 supplies its
+[explicit amended execution and interpretation](experiments/results.md).
+P3-04 now supplies [finite counterfactual semantics](derivations/04_counterfactual_semantics.md),
 [selection extensions](derivations/04_selection_extensions.md), and
 [separately reconstructed executable evidence](work_logs/P3_04_2026-10-08_S2.md).
 It covers typed structural changes, explicitly exceptional paired-support
@@ -357,3 +362,78 @@ state are required before final execution. The modest supported P3-N01 scope,
 open affirmative Q3 comparison and existing 21-duty overlay are unchanged.
 P3-C/D remain unattempted; Option C and R-P3-N01 remain unselected. The dated
 completion sections above preserve the earlier historical states.
+
+## P3-10 final scientific results — October 11, 2026
+
+The [final interpretation](experiments/results.md) reports both useful finite
+services and unfavorable primary economic comparisons. It preserves the
+original freeze, the deterministic failure and the separately sealed
+[P3-10-A1 continuation](experiments/amendments/P3_10_A1/protocol.md). The
+original public stage sealed all 336 broker episodes and 104 certificate
+histories before its first structural unit failed because an inherited loader
+had not been initialized. A1 reuses those 440 records unchanged and completes
+the remaining 60 public units, all 500 private scores and the frozen analysis.
+The original failed-prefix invoice remains unknown; no complete unamended
+500-unit experiment or positive global end-to-end economic result is claimed.
+
+The empirical questions have different answers. The base forecasts improve
+against equal initial advice in three of six distinct selector/family cells
+at the prespecified practical threshold. All six paired hardening action
+means improve, four practically. The transfer suffix is nevertheless adverse,
+and the gate hard-action gains all occur on its repeated prefix. Each family's
+strong distinct ordinary witness beats all four numerical candidates on both
+realized terminal loss and complete cold cost per request. Selected receipt
+caching preserves the mathematical path but increases every paired bill.
+
+That W/C result does not establish dominance of forecast quality. A separate
+post-outcome analysis of the saved score `W+lambda*C+mu*B`, where B is issued
+Brier loss, finds strict price regions for mixed uniform cold and gate
+ticketed cold/cached. The other nine candidate cells have exact ordinary
+contradiction/convex certificates. The [region figure and interpretation](experiments/results.md#44-forecast-quality-is-an-additional-objective-not-part-of-wc-dominance)
+retain all nineteen distinct ordinary controls and every boundary tie. These
+are three configuration cells, with two sharing the gate forecast/action
+path. Their price regions let both weights vary; no candidate remains a
+winner at every resource price while a finite forecast price is held fixed.
+They do not replace the frozen objective, establish prospective gains under
+a new acquisition policy, or defeat an identical ordinary kernel.
+
+All 126 paid reports deliver, with no aggregate practical F/V interval
+narrowing and four practical gate/uniform Z cells, including coupled paths.
+The later public-key geometry explains why F and V have an exact translation
+and why independently varying all marginal endpoints loses shared truth
+constraints. It is an external retrospective calculation. Polygon area and
+observed containment do not create a coverage theorem or an uncharged paid
+reporting improvement.
+
+The certificate arm supplies 356 valid current warrants and 60 paid denials
+over 416 scheduled attempts. Its checked object is an entire feasible
+incumbent sublevel; valid positive bounds do not establish a better action.
+Direct ordinary enumeration is the cheapest complete service in all eight
+full group/recipient cells. Under actual caps, each recipient's reuse method
+delivers 6/16 request IDs against direct checking's 14/16 and spends more in
+total. All failure bills remain included. Treating a full successful trace as
+if its affordable later steps would still be available after a failed
+bootstrap would invent twelve deliveries in four resident histories.
+
+The sixty conformance units are explicitly amended inherited regression.
+All eighteen structural outputs match their ordinary controls with complete
+ties and source distinctions. The tied pure-minimax fallback does not identify
+a probability law, and a hypothetical lottery optimizes a different risk
+quantifier. Of thirty-six information design/mode certificates, twenty permit
+global full-law recovery and sixteen certify nonidentification; thirty-seven
+of sixty-four requested target rows are recoverable. One-state and empty-target
+controls retain their trivial or vacuous meaning. The six malformed controls
+reject. Exact recovery requires the specified full-simplex, shared-calibration
+observation premises; this is not an empirical estimation or noisy-stability
+experiment.
+
+The [scientific review closure](work_logs/P3_10_2026-10-11_S1/scientific_review_closure.md)
+and [claim dispositions](claim_ledger.md#p3-10-scientific-dispositions--october-11-2026)
+separate independent reconstruction from replication and retain all review
+corrections. The [complete duty attachment](work_logs/P3_10_2026-10-11_S1/duty_evidence_attachment.json)
+preserves all twenty-one accepted status strings and residual obligations.
+P3-N01 remains SUPPORTED at the accepted modest formal-adaptation and
+implementation-synthesis scope; affirmative Q3 advantage over the strongest
+ordinary combination remains OPEN. P3-11 is unstarted, P3-C/D unattempted,
+and Option C and R-P3-N01 unselected. Exact task-time closure is recorded
+separately in the [P3-10 session](work_logs/P3_10_2026-10-11_S1.md).

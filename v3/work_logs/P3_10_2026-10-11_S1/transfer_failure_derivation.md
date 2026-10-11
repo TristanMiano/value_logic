@@ -1,0 +1,82 @@
+# Post-outcome decomposition of the gate-transfer failure
+
+Contributor: **ChatGPT (GPT-6 Astra Pro), principal /root**, 2026-10-11.
+Status: **post-outcome exploratory interpretation**, chosen after the completed
+frozen analysis showed an adverse uniform-selector gate-transfer Brier effect.
+This is neither a changed primary endpoint nor a new paid policy experiment.
+
+The prespecified gate-transfer family contains 64 mixed-prefix queries followed
+by 64 unique circuit-miter CNFs. The online state continues across that boundary.
+The frozen equal-advice-versus-base Brier difference is positive on the uniform
+prefix and negative on the transfer suffix. To explain the observed loss rather
+than simply name a distribution shift, inspect the actual six-advice signatures,
+label frequencies, selected feedback, and forecast trajectory.
+
+## An exact finite-sequence identity
+
+For a fixed slice of length `n>0`, let `y_i` be its verified binary labels and
+`p_i` its issued base forecasts. Define population-denominator empirical moments
+
+\[
+\bar p=n^{-1}\sum_i p_i,\quad\bar y=n^{-1}\sum_i y_i,\quad
+V_p=n^{-1}\sum_i(p_i-\bar p)^2,\quad
+C_{py}=n^{-1}\sum_i(p_i-\bar p)(y_i-\bar y).
+\]
+
+Direct expansion gives
+
+\[
+\frac1n\sum_i(p_i-y_i)^2
+=\bar y(1-\bar y)+(\bar p-\bar y)^2+V_p-2C_{py}.
+\]
+
+All terms are exact deterministic rational functions of a recorded finite path.
+No random-sampling, calibration or causal claim is needed. The label-variance
+term is common to forecasts compared on the same slice. The squared mean-bias
+term measures agreement of the average forecast with that slice's true-label
+fraction. Forecast variation can be useful when it covaries with truth; its
+separate nonnegative term must not be read as intrinsically harmful. Negative
+covariance makes the final term positive, exposing an actual adverse alignment
+on this one realized sequence without diagnosing why it arose.
+
+Apply the same identity to the frozen equal-advice mixture `r_i`. Then
+
+\[
+\Delta_{A2}
+=\big[(\bar r-\bar y)^2-(\bar p-\bar y)^2\big]
+ +(V_r-V_p)-2(C_{ry}-C_{py}).
+\]
+
+Compute within each original population/seed slice, then average using the frozen
+hierarchy. Pooling all positions first changes the moment decomposition by adding
+between-population/seed terms and does not explain the original endpoint.
+
+## Advice signatures and retrospective limits
+
+Record the complete six-bit original advice signature for every position, with
+its finite true/false counts and query-key uniqueness. These are diagnostic
+strata of the delivered public features, not independent cases or a new
+probability model. An identical signature does not imply identical CNF content.
+A policy could exploit other paid syntax or history; this audit concerns the
+actual inherited six-advice representation and the recorded learner state.
+
+For descriptive reference only, a constant prediction within a signature group
+has minimum retrospective Brier at that group's empirical true-label fraction,
+with total minimum `k*mean_y*(1-mean_y)`. This is a fitted finite-data oracle,
+not a deployed comparator, an online lower bound, or a replacement for the frozen
+ordinary catalogue. Do not compare it economically or award it a primary win.
+
+Selected-feedback true-label frequencies and weights at the transfer boundary
+help interpret the realized update path. They cannot isolate an acquisition
+mechanism causally: the two selectors also change importance factors and bit
+consumption. No ablation, reseeding, reset, fresh-policy run, or fitted replacement
+is authorized by this interpretation step, and none is performed.
+
+## Required audit output
+
+Keep all 126 broker/mirror trajectories and every scheduled whole, prefix,
+transfer and first-occurrence slice. Preserve all unavailable parents explicitly.
+Verify the moment identity against the independent exact Brier reconstruction.
+Report the original A2 difference and the three moment-difference contributions
+with their exact rational values. Describe the gate results as finite realized
+mechanisms, and retain favorable, adverse and small effects across every family.

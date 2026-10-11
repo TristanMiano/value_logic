@@ -1,0 +1,130 @@
+# Forecast quality and the terminal economic objective
+
+Contributor: **ChatGPT (GPT-6 Astra Pro), principal /root**, 2026-10-11.
+Status: **post-outcome exploratory fixed-record sensitivity**. The recorded
+terminal-objective ordinary dominance and its witnesses' worse issued Brier
+scores are already known. No new sensitivity coefficients or catalogue regions
+have been computed at this selection boundary.
+
+## Question and budget
+
+How far can the adverse terminal-objective result be extended if a user also
+values the quality of the forecast issued before buying the current label?
+The frozen endpoint is W + lambda C, where C is the complete terminal bill per
+scheduled request. It places no separate price on that issued forecast's Brier
+loss B. Calling the observed W/C dominance domination of the whole forecasting
+service would therefore overstate the result.
+
+Allocate an initial ten engaged principal minutes to exact algebra and one
+saved-summary reconstruction. Extend only for a concrete mathematical,
+denominator or source-binding issue. Preserve all attempts. Do not regenerate
+truth, call a paid controller, change a budget or use the new sensitivity to
+replace any frozen endpoint or practical flag. This is P3-10 interpretation,
+not selection of P3-11, a recurrence or a new author contribution gate.
+
+## Fixed-path comparison
+
+Consider the explicitly hypothetical descriptive scalarization
+
+\[
+K_{\lambda,\mu}=W+\lambda C+\mu B,
+\qquad \lambda,\mu\ge0.
+\]
+
+It values the *already issued* forecast score separately from terminal action
+loss. The action stakes and configuration hierarchy remain the frozen symmetric
+ones. C is the original cold terminal bill per scheduled request; optional paid
+report fees are excluded because a report is a further, unequal service, not
+the issued forecast. The global unknown-prefix accounting restriction remains.
+
+For a candidate c and ordinary witness o with lower W and lower C but higher B,
+define a=W_c-W_o>0, d=C_c-C_o>0 and g=B_o-B_c>0. Then
+
+\[
+K_c-K_o=a+\lambda d-\mu g.
+\]
+
+The candidate beats this witness precisely when
+`mu > a/g + lambda*d/g`; equality gives a tie. This only removes one witness.
+Every other complete ordinary configuration, including distinct exact-cache
+and combined methods, must still be considered before a catalogue statement.
+Ordinary kernel identity mirrors and candidate aliases are retained separately
+as identities rather than distinct algorithms.
+
+## Exact full-catalogue feasibility
+
+For each of the twelve family/candidate cells, intersect all halfplanes
+
+\[
+(C_c-C_o)\lambda+(B_c-B_o)\mu\le W_o-W_c
+\]
+
+over the complete distinct ordinary catalogue at the same symmetric stakes.
+Also retain lambda>=0 and mu>=0. A rational candidate point that satisfies
+every inequality proves a nonempty weak-minimum region. Empty-region claims
+need an exact contradiction certificate, not failure to find a grid point.
+
+In two dimensions, a nonempty closed intersection contained in the nonnegative
+quadrant has a vertex: minimize lambda+mu over the set, whose bounded sublevel
+sets are compact, and then choose an extreme point on the minimizing face.
+Hence one may enumerate pairwise boundary intersections, including both axes,
+and test each against every halfplane. Degenerate and coincident boundaries
+must retain ties. For emptiness, separately derive exact elimination bounds:
+each inequality with positive mu coefficient supplies an upper affine bound,
+each with negative coefficient a lower bound, zero coefficients constrain
+lambda, and every lower must be at most every upper. This reduces to one
+closed rational interval for lambda, whose empty endpoints are a certificate.
+
+For a strict improvement over all distinct ordinary configurations at some
+nonnegative prices, weak feasibility alone is insufficient. At any returned
+point, evaluate every exact slack and preserve all tied minimizers. A positive
+common margin can be witnessed explicitly; if only boundary ties exist, retain
+that fact. No open numerical tolerance or practical threshold is invented.
+
+The independent review emphasizes that vertices can all tie even when strict
+interior points exist. Vertex enumeration is used only for **weak feasibility**.
+The observer constructs a second point from the interior of the projected
+lambda interval and then the interior of its allowed mu interval, and checks
+all original slacks. A failure to find strict slack at vertices is never a
+certificate that strict improvement is impossible.
+
+## A constructive certificate for an empty price region
+
+Exact elimination retains the nonnegative multiplier of every original
+inequality. For an empty region it supplies a positive combination with both
+variable coefficients zero and a negative right side. Separate the ordinary
+multipliers alpha_i from those on `-lambda<=0` and `-mu<=0`, and let
+S=sum(alpha_i). The negative right side implies S>0. Normalize
+`pi_i=alpha_i/S`. The cancellation identities then give
+
+\[
+\sum_i\pi_i W_i<W_c,\qquad
+\sum_i\pi_i C_i\le C_c,\qquad
+\sum_i\pi_i B_i\le B_c.
+\]
+
+This convex combination is a mathematical certificate, not an executed
+randomized meta-controller. For each fixed pair of nonnegative score weights,
+at least one of its named ordinary components has score no greater than the
+combination, and hence strictly smaller than the candidate. The component
+attaining that fact may differ with the weights. No forecast or action is
+retrospectively replaced by this combination and no randomization/interface
+cost is treated as free in a paid comparison.
+
+## Denominators, evidence and interpretation
+
+Use only the independently reconstructed 76 whole-configuration summaries,
+pinning that file before reading values. Exclude asymmetric-stakes rows from
+the symmetric comparison and record every retained/excluded ID and reason.
+Require complete parent denominators, exact normalized W/C/B and full fixed
+seed/population aggregation. The first informative check is whether each
+family's named terminal witness actually has a positive forecast gap for all
+four candidates, and whether any other ordinary method closes that gap without
+losing W or C.
+
+The result concerns fixed saved trajectories with a new **descriptive** score
+weight. Changing lambda or mu in an actual acquisition objective could change
+queries, receipts and future forecasts, none of which is executed here. A
+winning sensitivity region would not repair the adverse frozen terminal
+endpoint, establish positive end-to-end economics, compare equal optional
+report services, or defeat an identical ordinary kernel.

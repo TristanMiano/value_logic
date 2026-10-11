@@ -3,7 +3,7 @@
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
 
-**Status: P3-01–09 complete at their declared task scopes.**
+**Status: P3-01–10 complete at their declared task scopes.**
 P3-01 supplies the questions and comparison contract; P3-02 supplies the
 [finite probability-information analysis](v3/derivations/02_probability_information.md).
 P3-03 supplies a [finite bounded uncertainty construction](v3/derivations/03_logical_uncertainty.md)
@@ -14,9 +14,11 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **995.847797958367 minutes**.
+Phase-three qualifying research is **1086.131367364150 minutes**.
 The [960-minute checkpoint](v3/work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
-is satisfied, with **35.847797958367 minutes** of observed overshoot.
+was satisfied at P3-09, with **35.847797958367 minutes** of observed overshoot
+at that assessment; current phase research exceeds 960 minutes by
+**126.131367364150 minutes**.
 Later tasks and author gates remain necessary.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
@@ -51,12 +53,18 @@ scope, with **90.310005771417 measured research minutes** and an
 **P3-09 is COMPLETE at prospective challenge-freeze scope**, with
 **60.784071511917 measured research minutes** and a
 [verified freeze](v3/experiments/frozen_v1/manifest.json).
-**Next: P3-10, recommended and unstarted.**
+**P3-10 is COMPLETE at explicit amended final-execution and interpretation
+scope**, with **90.283569405783 measured research minutes** and
+[independently reconstructed results](v3/experiments/results.md).
+**Next: P3-11, unstarted. Stop at the completed P3-10 boundary.**
 Phase two remains complete; P3-C–D remain unattempted. P3-N01 is now
 **SUPPORTED at modest formal-adaptation and implementation-synthesis scope**;
 Q3 affirmative advantage over the strongest ordinary combination remains open.
-The final challenge is prospectively frozen; actual checks remain development
-and preparation evidence. No final evaluation has been generated or exposed. The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)
+The original freeze and final exposure are preserved. Explicit P3-10-A1
+completes the finite schedule after the recorded deterministic failure;
+affected conformance is amended inherited regression. The original failed-prefix
+invoice remains unknown and the global positive economic gate remains false.
+The [P3-03 session](v3/work_logs/P3_03_2026-10-07_S1.md)
 also records the authorized Markdown repair and preserves prior history.
 
 Read this plan with the [phase-three procedure](v3/RESEARCH_PROTOCOL.md),
@@ -65,6 +73,28 @@ selected task's prior sessions. The [primary-source orientation](v3/literature/0
 supports planning; it is not a completed literature audit or theorem import.
 
 ## Current author selection — October 11, 2026
+
+**Completed: P3-10 — frozen execution and interpretation. Research90 satisfied.**
+The author explicitly selected final execution, interpretation, exact closure
+and publication. The [selection](v3/work_logs/P3_10_2026-10-11_S1/selection.json),
+[results](v3/experiments/results.md),
+[review closure](v3/work_logs/P3_10_2026-10-11_S1/review_closure.md),
+[closed session](v3/work_logs/P3_10_2026-10-11_S1.md) and
+[actuals](v3/work_logs/P3_10_2026-10-11_S1/actuals.json) preserve the boundary.
+The original public attempt sealed 440 units before a deterministic defect;
+explicit A1 reuses them unchanged and completes the remaining 60 public units,
+all 500 private scores and frozen analysis. There is no unamended full
+completion, no unchanged retry, and no reconstructed exact failed-prefix bill.
+
+The task records **5,417,014,164,347 ns** of qualifying principal research.
+Prior ledger bytes are preserved and 51 observed records appended. All 21
+accepted duties and residuals remain unchanged; positive forecast/action effects,
+adverse strongest-ordinary comparisons and retrospective three-coordinate
+price regions keep their separate scopes. P3-11 remains unstarted, P3-C/D
+unattempted, and Option C and R-P3-N01 unselected. This task does not make an
+author-contribution decision.
+
+## Previous author selection — October 11, 2026
 
 **Completed: P3-09 — prospective challenge freeze. Research60 satisfied.**
 The author selected this task after confirming the published Option B update.
@@ -371,7 +401,7 @@ performance superiority are separate claims and are not completion requirements.
   ordinary controls, transfer/null construction and guarded retry semantics.
   No final input, public execution or private evaluation has occurred.
 
-- [ ] **P3-10 — execute and interpret the frozen challenge. Research90.**
+- [x] **P3-10 — execute and interpret the frozen challenge. Research90.**
 
   Verify the freeze and inspect prior attempt/exposure markers before execution.
   Complete the preparation barrier for every method before any evaluation,
@@ -381,6 +411,16 @@ performance superiority are separate claims and are not completion requirements.
   counterfactual semantics and contribution support. Finite success supplies no
   unproved universal guarantee. Artifact: `v3/experiments/results.md`, complete
   machine-readable outputs, commands, hashes and exposure/completion records.
+
+  **Complete at explicit amended execution and interpretation scope**, with
+  **90.283569405783 qualifying principal research minutes**. The
+  [results](v3/experiments/results.md),
+  [scientific closure](v3/work_logs/P3_10_2026-10-11_S1/scientific_review_closure.md),
+  [administrative verification](v3/work_logs/P3_10_2026-10-11_S1/closing_verification.json)
+  and [actuals](v3/work_logs/P3_10_2026-10-11_S1/actuals.json) retain the original
+  failure, explicit A1, all scheduled denominators, failed-service costs,
+  ordinary controls, independent reconstructions and exact time exclusions.
+  The unknown-prefix global economic gate is false. P3-11 is not started.
 
 - [ ] **P3-11 — adversarial reconstruction and contribution review. Research90.**
 
@@ -437,10 +477,10 @@ phase. Prospective replanning can replace an unstarted task with a better
 60/90-minute evidence chunk while retaining all five questions, the total
 floor, accepted obligations and the abandoned alternative's record.
 
-**Active repair queue: empty. P3-01–09 and selected recurrences R-P3-B-A/B are
+**Active repair queue: empty. P3-01–10 and selected recurrences R-P3-B-A/B are
 complete at their declared scopes. P3-A and P3-B retain their restricted PASS.
 P3-N01 is SUPPORTED at the recorded modest synthesis scope; its later author
-assessment remains open at P3-C. Next: P3-10, recommended and unstarted. P3-C–D remain
+assessment remains open at P3-C. Next: P3-11, unstarted. P3-C–D remain
 unattempted. Option B is complete; Option C and R-P3-N01 are unselected.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original

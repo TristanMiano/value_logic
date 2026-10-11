@@ -1,0 +1,112 @@
+[
+  {
+    "function": "prepare",
+    "stdout": "{\"status\": \"PREPARED_NOT_PUBLISHED\", \"plan_id\": \"be95f13c37d145773dfa899809448c33d0f286234b2e4d085a46b588dacaa8d2\", \"changed_paths\": 13, \"new_distinct_blobs\": 8, \"new_distinct_bytes\": 2606, \"upload_requests\": 7, \"overlay_requests\": 5, \"largest_request_bytes\": 2595, \"final_tree\": \"313f6f1a683abea135292b1e9324f3305fed1703\"}\n",
+    "result": null
+  },
+  {
+    "function": "verify",
+    "stdout": "{\"status\": \"VERIFIED_LOCAL_PLAN\", \"plan_id\": \"be95f13c37d145773dfa899809448c33d0f286234b2e4d085a46b588dacaa8d2\", \"final_tree\": \"313f6f1a683abea135292b1e9324f3305fed1703\", \"working_tree_checked\": true, \"remote_or_publication_checked\": false}\n",
+    "result": null
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": false, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/overlay/0000/attempt_0001/receipt.json\", \"returned_sha\": \"ac5bcebca66bf9fa450572a0f4e7f94c56e2b830\", \"error\": \"Overlay result retained, but upload/predecessor receipts are not yet all verified; record this same result again after completing the receipt chain\"}\n",
+    "result": 2
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": false, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/upload/0000/attempt_0001/receipt.json\", \"returned_sha\": \"0000000000000000000000000000000000000000\", \"error\": \"Returned SHA differs from the independently computed request identity\"}\n",
+    "result": 2
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": false, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/upload/0000/attempt_0002/receipt.json\", \"returned_sha\": null, \"error\": \"Tool/API error flag present\"}\n",
+    "result": 2
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/upload/0000/attempt_0003/receipt.json\", \"returned_sha\": \"0e7b63a6035ae888f2067c66a4a24b10f4de365c\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/upload/0001/attempt_0001/receipt.json\", \"returned_sha\": \"20b5be91886d0b6f26dc98a225c0dac05fe2c86e\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/upload/0002/attempt_0001/receipt.json\", \"returned_sha\": \"3062a24f3d06c32462c0b2e80fd4bd6cd2318013\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/upload/0003/attempt_0001/receipt.json\", \"returned_sha\": \"04dfb9b7a8e5f6666c73bb0cf55a25fccc44eb2b\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/upload/0004/attempt_0001/receipt.json\", \"returned_sha\": \"7c8595cfbdb69b87de3eaf2514e60ac314a13294\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/upload/0005/attempt_0001/receipt.json\", \"returned_sha\": \"ff0b0fa10d0fd8e3534bac892225a80969b3668f\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/upload/0006/attempt_0001/receipt.json\", \"returned_sha\": \"a8b550fa1b471bf0296e8ed36e5a1742c0a9ed2c\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "status_report",
+    "stdout": "{\"plan_id\": \"be95f13c37d145773dfa899809448c33d0f286234b2e4d085a46b588dacaa8d2\", \"status\": \"PENDING\", \"verified\": {\"upload\": 7, \"overlay\": 0}, \"total\": {\"upload\": 7, \"overlay\": 5}, \"next_phase\": \"overlay\", \"next\": [{\"index\": 0, \"kind\": \"tree\", \"path\": \"overlay_batches/0000.json\", \"base_tree\": \"8b4ec00d201f5a5383fda61fd60baadb35ef6be2\", \"expected_sha\": \"ac5bcebca66bf9fa450572a0f4e7f94c56e2b830\", \"paths\": 3, \"request_bytes\": 346, \"request_sha256\": \"1ae236b071c9ef0032fa93f1d1b22953838faec9af67b1725b829814535a9d4e\", \"absolute_path\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/overlay_batches/0000.json\"}], \"publication_or_ref_verified\": false}\n",
+    "result": null
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/overlay/0000/attempt_0002/receipt.json\", \"returned_sha\": \"ac5bcebca66bf9fa450572a0f4e7f94c56e2b830\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/overlay/0001/attempt_0001/receipt.json\", \"returned_sha\": \"0375e94d55ff4d406b66d094683f6ed2d686c11a\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/overlay/0002/attempt_0001/receipt.json\", \"returned_sha\": \"b57cc497f12e53f45787b796d528a6d2411c0b81\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/overlay/0003/attempt_0001/receipt.json\", \"returned_sha\": \"7d5ff18a5b03552f074af5376fecea62f45efffc\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "record",
+    "stdout": "{\"verified\": true, \"receipt\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/synthetic_plan/receipts/overlay/0004/attempt_0001/receipt.json\", \"returned_sha\": \"313f6f1a683abea135292b1e9324f3305fed1703\", \"error\": null}\n",
+    "result": 0
+  },
+  {
+    "function": "status_report",
+    "stdout": "{\"plan_id\": \"be95f13c37d145773dfa899809448c33d0f286234b2e4d085a46b588dacaa8d2\", \"status\": \"UPLOAD_AND_OVERLAY_RECEIPTS_COMPLETE\", \"verified\": {\"upload\": 7, \"overlay\": 5}, \"total\": {\"upload\": 7, \"overlay\": 5}, \"next_phase\": null, \"next\": [], \"publication_or_ref_verified\": false}\n",
+    "result": null
+  },
+  {
+    "function": "verify",
+    "stdout": "{\"status\": \"VERIFIED_LOCAL_PLAN\", \"plan_id\": \"be95f13c37d145773dfa899809448c33d0f286234b2e4d085a46b588dacaa8d2\", \"final_tree\": \"313f6f1a683abea135292b1e9324f3305fed1703\", \"working_tree_checked\": true, \"remote_or_publication_checked\": false}\n",
+    "result": null
+  },
+  {
+    "function": "verify",
+    "stdout": "{\"status\": \"VERIFIED_LOCAL_PLAN\", \"plan_id\": \"be95f13c37d145773dfa899809448c33d0f286234b2e4d085a46b588dacaa8d2\", \"final_tree\": \"313f6f1a683abea135292b1e9324f3305fed1703\", \"working_tree_checked\": true, \"remote_or_publication_checked\": false}\n",
+    "result": null
+  },
+  {
+    "function": "commit_payload",
+    "stdout": "{\"status\": \"REMOTE_COMMIT_BYTES_RECONSTRUCTED_NOT_INSTALLED\", \"remote_commit\": \"42ed7d71bd43bf03fcdd57b8e7befec631acec5a\", \"raw_file\": \"/workspace/scratch/095cdac579b7/p310_publication_helper_test_02/future_install_instructions/commit.raw\"}\n",
+    "result": null
+  }
+]

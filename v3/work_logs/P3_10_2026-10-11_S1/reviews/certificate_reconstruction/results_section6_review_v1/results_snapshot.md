@@ -1,0 +1,720 @@
+# P3-10 — frozen execution and interpretation
+
+Contributor: **ChatGPT (GPT-6 Astra Pro), principal /root**, October 11, 2026 UTC.
+Execution identity: **P3-09-v1, continued by explicit amendment P3-10-A1**.
+Current document status: substantive interpretation in progress; the separate
+Research90 and publication records have not yet closed.
+
+## 1. Main findings and evidence status
+
+The finite challenge produces valid scoped services and several useful
+forecast/action effects, but it does not show the proposed methods outperforming
+the strongest ordinary comparators on the recorded economic objectives. The
+uniform learner improves substantially on the mixed and cheap-null families,
+then deteriorates on the new gate-CNF suffix. Selected receipt reuse preserves
+the coupled mathematical output but increases the complete broker bill. Direct
+ordinary enumeration is cheaper than proof reuse at complete certificate
+delivery and covers more request IDs under the actual cap. These are informative
+adverse results, alongside the positive interface and validity results.
+
+The execution also exposed a deterministic integration defect. The original
+public stage sealed all **336 broker episodes and 104 certificate histories**,
+then failed at its first structural conformance unit. Its original failure,
+partial attempt, 440 sealed outputs and exposure history remain immutable.
+The explicitly selected and sealed **P3-10-A1** amendment initialized the
+inherited structural loader before the unchanged adapter, reused those 440
+records byte for byte, and completed the remaining 60 public records, all 500
+private scores and the frozen analysis. There is **no complete unamended
+500-unit experiment**. The 60 conformance records and overall execution are
+explicitly amended; the unchanged earlier acquisitions retain their original
+prospective finite-cohort status.
+
+The original failed structural prefix escaped without its complete invoice.
+Its exact cost remains **unknown**. Consequently the frozen global gate for
+positive end-to-end economic claims is false. The negative completed-path
+comparisons below are independently supported by recorded costs and outcomes;
+they are not inferred merely from that unavailable gate. Broker, certificate
+and structural tariffs remain distinct, and no cross-tariff grand total is
+constructed.
+
+Evidence: [frozen protocol](protocol.md), [A1 protocol](amendments/P3_10_A1/protocol.md),
+[A1 manifest](amendments/P3_10_A1/manifest.json),
+[original failure](final_v1/stages/public/attempts/attempt_01/failure.json),
+[composite public index](final_v1_amended_A1/composite_public.json), and
+[complete frozen analysis](final_v1_amended_A1/stages/analysis/units/all-frozen-endpoints/attempt_01/result.json).
+
+### 1.1 Endpoint disposition
+
+| Endpoint | Recorded finding | Interpretation |
+| --- | --- | --- |
+| A0: admitted information and evidence | All 336 broker episodes complete; no independently reconstructed promised-interface violation. | Finite sound chronology, checked labels and current scope. |
+| A1: coupling and identity | All 150 prescribed pair records reconstruct; all 18 executed ordinary mirrors are identical on the promised fields. | Identity is a diagnostic and supplies no exclusive algorithmic advantage. |
+| A2: base prediction | Three of six distinct selector/family cells meet the 0.01 Brier-improvement convention; gate transfer is adverse. | Improvement relative to the original equal advice mixture, with all other readouts retained. |
+| A3: decisions | Current hardening improves all six paired action means, four practically; the two known-stakes orientations have different signs. | Forecast improvement, realized action improvement and a common-stakes readout effect are separate. |
+| A4: equal-output saving | Every cached/cold pair has a larger cached bill; no 5% saving. | A cache hit is insufficient to establish a complete paid saving. |
+| A5: paid reporting | All 126 requested reports deliver. No configuration has practical F or V narrowing; four gate/uniform configuration cells have practical Z narrowing, with duplicate paths retained. | Successful paid reporting with mostly null width gains; no seed-coverage theorem. |
+| B0/B1: current bounds | 356 valid current warrants and 60 explicit budget denials over 416 attempts; zero false or wrong-scope delivered warrants. | Certificate validity does not mean complete service or improved action. |
+| B2: reuse economy | Direct ordinary checking wins all eight full group/recipient cells and has strictly larger actual capped coverage than reuse. | No strongest-ordinary advantage for the named candidate on this cohort. |
+| C0: conformance | All 60 amended inherited checks reconstruct, including valid nonidentification and expected invalid-input rejection. | Known finite regression/conformance, with no new unseen transfer or general theorem established by the replay. |
+
+The numerical dispositions are supported by the separate
+[broker reconstruction](../work_logs/P3_10_2026-10-11_S1/reviews/broker_reconstruction/broker_reconstruction_review_A1.md),
+[certificate reconstruction](../work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/final_review_v1/review.md), and
+[conformance reconstruction](../work_logs/P3_10_2026-10-11_S1/reviews/conformance_reconstruction/REVIEW.md).
+These are independent implementations by other instances of the same model,
+with source access and explicit release after completion. They are not blinded
+third-party replications, and their overlapping time earns no principal credit.
+
+## 2. Population, denominators and interpretation rules
+
+The fixed schedule contains **12 groups and 500 public units**. The broker arm
+has six populations: two mixed CNF, two gate-transfer, and two cheap-exact-null
+populations. It executes 336 episodes and 28,160 positions, including 18 ordinary
+identity mirrors and their 1,536 positions. Those mirrors are explicit duplicate
+executions. The 126 numerical mixture/live/mirror paths comprise 10,752 positions
+and 2,688 four-position acquisition blocks. Each whole configuration averages
+its prescribed policy-seed slots within each public population, then equally
+over its two populations. Deterministic controls execute once per population;
+repeated algebraic weight does not create new observations.
+
+The certificate arm uses four deterministic construction streams: majority-DNF
+versus equivalent pair-clause CNF and selector mux versus its disjoint guarded
+sum, each at four and seven Boolean coordinates. Each method/recipient/budget
+combination has its own four-request history. There are 104 histories and 416
+attempts, split into 52 full and 52 actual-capped histories. Seven methods are
+eligible for fresh delivery and six for resident delivery; the pruned fresh
+receiver is deliberately ineligible for resident use. It is not an omitted
+resident result. Conformance comprises 18 structural executions, 36 information
+certificates and six invalid-input controls.
+
+The frozen action objective is `J(lambda) = W + lambda*T_cold/H`, where `W` is
+mean realized loss normalized by the maximum declared per-request stake, `H` is
+the scheduled horizon, and lambda is in those normalized loss units. Actual
+native acquisition prices and descriptive repricing are different objects.
+A changed-stakes comparison re-scores both saved action paths at the same
+stakes before subtraction. Catalogue minima are taken after averaging whole
+fixed configurations; there is no per-query or per-seed hindsight switching.
+All exact tied minimizers remain in the complete machine tables.
+
+The practical conventions are **0.01 absolute mean loss/width improvement** and
+**at least 5% complete paid saving**. They are prespecified conventions, not
+significance levels. Fixed pseudorandom policy paths do not establish independent
+fair bits, coverage, calibration or population generalization. A completed
+public history can contain unavailable services, and a valid collision
+certificate can be a successful conformance output. These distinctions are
+maintained throughout the report.
+
+Evidence: [fixed schedule](frozen_v1/schedule.json),
+[machine protocol](protocol.v1.json),
+[all broker means, slices, pairings and catalogue ties](../work_logs/P3_10_2026-10-11_S1/reviews/broker_reconstruction/findings_tables_A1.json), and
+[all certificate requests, fees and coverage sets](../work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/final_observation_v4/results.json).
+
+## 3. Broker prediction: positive within-family effects and failed transfer
+
+### 3.1 The primary A2 comparison
+
+A2 compares the **base** learned forecast with the exact equal-weight mixture
+of the six original advice values. It does not substitute the later checked
+hard forecast for evidence of learning. Cold and cached versions share the
+same base path, as do the corresponding live and nonhard versions. The table
+therefore shows six distinct selector/family numerical comparisons; the
+prescribed candidate roster contains twelve cold/cached cells, six of which
+meet the practical convention. Counting the duplicates as additional independent
+successes would change the interpretation without adding evidence.
+
+| Family | Selector | Equal-advice Brier | Base Brier | Equal minus base | Practical A2? |
+| --- | --- | --- | --- | --- | --- |
+| Cheap exact null | Uniform | 0.197265625 | 0.089430997 | +0.107834628 | Yes |
+| Cheap exact null | Tickets | 0.197265625 | 0.182717489 | +0.014548136 | Yes |
+| Mixed CNF | Uniform | 0.195963542 | 0.152822038 | +0.043141504 | Yes |
+| Mixed CNF | Tickets | 0.195963542 | 0.192116249 | +0.003847293 | No |
+| Gate transfer, whole | Uniform | 0.235243056 | 0.264044353 | −0.028801297 | No; adverse |
+| Gate transfer, whole | Tickets | 0.235243056 | 0.235294618 | −0.000051562 | No; adverse |
+
+Values displayed here are rounded; exact rationals, all six original experts,
+constant-half readouts, hard-mask descriptive readouts and every slice are
+preserved in the machine table. In particular, the uniform gate whole-episode
+base Brier is also worse than the constant-half value of 0.25. A positive A2
+effect elsewhere does not imply victory over the best individual expert or
+the strongest separately deployed ordinary controller.
+
+The first-occurrence slice is defined by the full public claim key independently
+of which labels were purchased. Its A2 differences are +0.0765567602 and
++0.0100588499 on cheap-null, +0.0410705697 and +0.002615947 on mixed, and
+−0.0313025743 and −0.000745588 on gate whole episodes, for uniform and tickets
+respectively. At all **8,946 first-occurrence positions across the recorded
+numerical paths**, there is no prior matching hard receipt and hence no
+prior-receipt hardening effect. These counts include repeated executions of the
+same population under different configurations and are not distinct CNFs.
+
+Evidence: [complete broker interpretation tables](../work_logs/P3_10_2026-10-11_S1/reviews/broker_reconstruction/findings_tables_A1.json),
+[independent numerical transcript](../work_logs/P3_10_2026-10-11_S1/numeric_observation_A1/results.json), and
+[forecast mechanism reconstruction](../work_logs/P3_10_2026-10-11_S1/forecast_mechanism_observation_A1/results.json).
+
+### 3.2 What the transfer failure diagnoses
+
+The gate episodes contain a 64-position mixed prefix followed by 64 new,
+unique-key gate-CNF queries. State continues across the boundary. Uniform A2
+changes from **+0.0371251707 in the prefix to −0.0947277652 in the suffix**.
+The ticketed path changes from +0.00335379 to −0.0034569141. The suffix contains
+31 true and 33 false claims in each population. Repeated-key hardening cannot
+rescue those unique suffix queries: all of its whole-episode terminal-action
+improvements occur in the prefix.
+
+A post-outcome moment decomposition explains the recorded uniform failure
+more precisely. Within each path/slice, exact expansion gives
+
+\[
+\overline{(p-y)^2}
+=\bar y(1-\bar y)+(\bar p-\bar y)^2
+ +\operatorname{Var}(p)-2\operatorname{Cov}(p,y).
+\]
+
+The equal-minus-base suffix Brier difference of −0.0947277652 separates into
+−0.0689171173 from squared mean bias, −0.0037935725 from forecast variance and
+−0.0220170754 from the negative-twice-covariance term. The uniform mean forecast
+is **0.73748418** against a true-label fraction of **0.484375**; its base suffix
+Brier is **0.35601249**. It enters transfer with about 0.727 of its mean weight
+on three advice coordinates that are identically one on these gate queries.
+The ticketed mean forecast is 0.61910605 and its suffix Brier is 0.26474164.
+
+The decomposition is computed within each slice and then uses the frozen
+seed/population hierarchy. Squaring the global mean forecast minus the global
+truth fraction would omit between-path terms and is not the reported mean
+squared-bias contribution. The calculation is a descriptive explanation of
+these saved trajectories. The selectors also differ in update factors and bit
+schedules; the experiment does not isolate a causal effect of acquisition
+selection, nor test a counterfactual corrected learner.
+
+Evidence: [pre-calculation exploratory derivation](../work_logs/P3_10_2026-10-11_S1/transfer_failure_derivation.md),
+[exact moment results](../work_logs/P3_10_2026-10-11_S1/transfer_failure_observation_A1/results.json), and
+[independent reconciliation to all 56 frozen A2 cells](../work_logs/P3_10_2026-10-11_S1/reviews/conformance_reconstruction/transfer_review_v1/REVIEW.md).
+
+### 3.3 Quantization, hard evidence and action are different mechanisms
+
+For binary truth, `(p-y)^2 = p+(1-2p)y-p(1-p)`. This separates a Brier comparison
+into a binary-error-functional comparison and a Bernoulli-parameter variance
+term `p(1-p)`, distinct from the within-slice temporal variance in Section 3.2.
+The two loss changes have the same sign pointwise, but their averages can have
+opposite signs. Neither the affine functional nor its Brier counterpart is the
+realized terminal action path. Interpreting the affine expression as an expected
+Bernoulli-action loss requires its matching bit hypothesis; reconstructing the
+fixed pseudorandom trace does not establish that hypothesis.
+
+The final projection from the already integer-rounded fixed-mass weights to a
+dyadic forecast has absolute Brier contribution at most **5/196608**, about
+0.0000254313, at every position. Thus an A2 effect of at least 0.01 cannot come
+from this final projection alone: the corresponding pre-projection mixture
+advantage is at least **49027/4915200**. This bound does not control accumulated
+weight-update rounding or compare against an unrounded real-weight learner.
+
+A prior sound matching receipt replaces an issued base forecast by its truth,
+so its Brier gain is exactly the old squared error and is nonnegative. A new
+receipt obtained at the current position arrives after forecast issuance and
+can correct only the current terminal action. Under the preserved coupled draw,
+the terminal gain from prior hardening is exactly the indicator that an
+unselected, previously resolved claim would otherwise receive the wrong base
+action. The reconstruction finds **526 prior-receipt forecast corrections**,
+**162 changed prospective actions**, and **98 terminal corrections**. Selected
+positions can have better hard forecasts without an additional terminal gain,
+because both terminal paths already use the purchased truth.
+
+These identities explain why a learning score, receipt hardening and a terminal
+decision effect cannot be exchanged as evidence for one another. They preserve
+the historical issuance record rather than rewriting earlier forecasts using
+later labels.
+
+Evidence: [mechanism derivation](../work_logs/P3_10_2026-10-11_S1/forecast_action_decomposition.md),
+[rounding/sign clarification](../work_logs/P3_10_2026-10-11_S1/forecast_action_decomposition_addendum.md),
+[complete mechanism results](../work_logs/P3_10_2026-10-11_S1/forecast_mechanism_observation_A1/results.json), and
+[independent forecast review](../work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/forecast_mechanism_review_v1/review.md).
+
+## 4. Decisions, equal-output cost and ordinary competition
+
+### 4.1 Current hardening helps some decisions, with the declared comparator
+
+The following paired action gains compare each live cold path with its
+corresponding nonhard finite mixture at the same public inputs, checked
+purchases and coupled action draws. Cached versions preserve these terminal
+actions. The reference is the matched finite mixture, not the distinct ordinary
+catalogue minimum.
+
+| Family | Selector | Exact mean terminal-error reduction | Decimal | At least 0.01? |
+| --- | --- | --- | --- | --- |
+| Cheap null | Uniform | 3/128 | 0.023437500 | Yes |
+| Cheap null | Tickets | 1/32 | 0.031250000 | Yes |
+| Mixed | Uniform | 1/192 | 0.005208333 | No |
+| Mixed | Tickets | 7/384 | 0.018229167 | Yes |
+| Gate, whole | Uniform | 1/256 | 0.003906250 | No |
+| Gate, whole | Tickets | 3/256 | 0.011718750 | Yes |
+
+The known asymmetric-stakes comparison is not uniformly favorable. Under
+false-positive/false-negative costs `(1/2,3/2)`, ordinary probability-to-cost
+readout improves common-stakes normalized action loss by **19/384**. Under
+`(3/2,1/2)`, its signed improvement is **−37/1152**. The hashed combined
+controller gives **1/128** and **−13/1152** respectively. The small positive
+combined-controller action effect misses the 0.01 convention. Its completed-path
+common-price differences can still be positive through cost changes, but the
+outer economic gate remains false. Subtracting the methods' originally reported
+means without common-stakes rescoring would compare different objectives.
+
+Evidence: [all 150 paired records and 25 configuration effects](../work_logs/P3_10_2026-10-11_S1/reviews/broker_reconstruction/findings_tables_A1.json).
+
+### 4.2 Selected receipt caching costs more on these paths
+
+Every cached/cold pair preserves the promised mathematical output and has
+greater cached cost. The independent reconstruction retains all 36 individual
+equal-output comparisons and all six aggregate provider effects; none meets
+the required ratio at most 19/20.
+
+| Family | Selector | Mean cold units/request | Mean cached units/request | Cached/cold ratio |
+| --- | --- | --- | --- | --- |
+| Cheap null | Uniform | 1,951.799479 | 2,196.565104 | 1.125405 |
+| Cheap null | Tickets | 2,024.932292 | 2,262.236979 | 1.117191 |
+| Mixed | Uniform | 17,405.929688 | 18,102.033854 | 1.039992 |
+| Mixed | Tickets | 21,453.333333 | 22,072.234375 | 1.028849 |
+| Gate, whole | Uniform | 52,297.805990 | 52,987.410156 | 1.013186 |
+| Gate, whole | Tickets | 64,118.205729 | 64,754.316406 | 1.009921 |
+
+The result prices the complete owned service, including indexing, receipt
+checks, output and retained state. It does not establish that caching is always
+bad, that a different cache would fail, or that warm lookup is physically slower.
+The exact same ordinary-kernel mirror ties its cached candidate on the promised
+mathematical fields and bill. Cold and cached paths tie on terminal action at
+zero resource price; cached is worse at every strictly positive price. The
+ordinary mirror ties the same cached path at every price.
+
+Evidence: [broker exact tables](../work_logs/P3_10_2026-10-11_S1/reviews/broker_reconstruction/findings_tables_A1.json) and
+[ordinary comparison boundary review](../work_logs/P3_10_2026-10-11_S1/reviews/broker_reconstruction/ordinary_dominance_boundary_A1.md).
+
+### 4.3 The adverse terminal objective is not a grid artifact
+
+For each family a single distinct ordinary witness has strictly lower mean
+terminal loss **and** lower cold units per request than all four value
+candidates. Each candidate's objective minus that witness's objective has a
+positive intercept and lambda times a positive slope. Therefore every candidate is worse on the
+recorded terminal objective for **all lambda at least zero**, including the
+entire frozen grid. The claim follows from exact affine inequalities, not an
+interpolation of a few sampled prices.
+
+| Family | Distinct ordinary witness | Mean terminal loss W | Cold units/request |
+| --- | --- | --- | --- |
+| Cheap null | `exact_dpll` | 0 | 27029/16 |
+| Mixed | `proof_dpll_fallback1` | 17/128 | 390121/128 |
+| Gate, whole | `probability_cost` | 31/96 | 12986347/256 |
+
+All twelve candidate-minus-witness intercepts and slopes are positive; hence
+there is no candidate/witness tie even at lambda zero. Strict inferiority need
+not reach the practical 0.01 convention: the uniform gate action gap is only
+**7/768**. The continuous-price observer also computes the full ordinary lower
+envelope and exact tie points. All twelve candidate weak, strict and practical
+advantage regions against the distinct ordinary catalogue are empty over the
+nonnegative price half-line.
+
+This is specifically a **terminal loss-plus-cost comparison**. All three
+witnesses have worse issued Brier than every live candidate in their family:
+the mixed and cheap witnesses issue Brier 0.25, and the gate witness has Brier
+about 0.272810200. Exact checking can improve the terminal action after a less
+informative pre-purchase forecast. It would be incorrect to describe the
+ordinary witnesses as dominating every forecast field or every possible
+multi-objective service. Optional candidate reports have their separate fees;
+the three witnesses request no report, so this table supplies no equal-report
+service comparison.
+
+The native-price and fixed-record catalogues also remain separate. Their
+minima or tie sets differ in five recorded rows: the cheap zero-price tie set,
+and the two asymmetric mixed conditions at zero and 1/100000. For example,
+repricing the saved asymmetric combined-controller path at zero permits it in
+the fixed-record catalogue, while the native catalogue excludes that
+price-sensitive path away from its own native price. This changes the minimum
+without producing another executed policy. All whole configurations and every
+tied ordinary minimizer remain in the full table.
+
+These conclusions apply to the fixed recorded paths under their declared
+tariff. They do not predict a changed-budget execution, physical CPU efficiency,
+all possible ordinary reasoning, or an intrinsic value assigned to a forecast
+outside the frozen terminal objective. The unknown original structural prefix
+still prevents a positive end-to-end economic claim.
+
+Evidence: [independent continuous-price analysis](../work_logs/P3_10_2026-10-11_S1/continuous_price_observation_A1/results.json),
+[exact ordinary intercept/slope review](../work_logs/P3_10_2026-10-11_S1/reviews/broker_reconstruction/ordinary_dominance_boundary_A1.md), and
+[native/fixed catalogue differences and all ties](../work_logs/P3_10_2026-10-11_S1/reviews/broker_reconstruction/findings_tables_A1.json).
+
+## 5. Paid reporting and what its intervals mean
+
+### 5.1 The frozen A5 result includes substantial nulls
+
+All 126 requested reports deliver, in 21 configuration/family cells. Here F is
+the sum of issued Brier loss, V is the declared binary-error functional for
+unselected actions, and Z is the realized terminal-error count. The conditional
+expected-action interpretation of V has its stated bit assumptions. A5 compares
+the delivered interval with its original deterministic observable envelope,
+then divides width improvement by the full scheduled horizon and uses the same
+configuration hierarchy.
+
+| Family and reporting path | F width gain/H | V width gain/H | Z width gain/H |
+| --- | --- | --- | --- |
+| Mixed, finite uniform | 0 | 0 | 0.0010175424 |
+| Mixed, other six configurations | 0 | 0 | 0 |
+| Cheap null, finite uniform | 0 | 0 | 0.0027000350 |
+| Cheap null, other six configurations | 0 | 0 | 0 |
+| Gate, finite uniform | 0.0062740114 | 0.0062740114 | **0.0762571847** |
+| Gate, value uniform cold/cached and ordinary mirror | 0.0028361347 | 0.0028361347 | **0.0608796168** |
+| Gate, finite tickets | 0 | 0 | 0.0060822381 |
+| Gate, value tickets cold/cached | 0 | 0 | 0.0030573857 |
+
+No configuration reaches 0.01 F or V narrowing. Four gate/uniform cells reach
+practical Z narrowing, but the live cold/cached/mirror cells are the same
+mathematical path under their respective interfaces. They are retained in the
+roster without being counted as independent successes. At the individual-report
+level, F and V each have 118 zero and eight positive width gains, with two
+individual gains at least 0.01; those individual observations do not replace
+the subthreshold aggregate means. Z has 95 zero and 31 positive gains, with
+25 individual gains at least 0.01.
+
+The complete additional report fee is **65,407,686 broker reporting units**:
+13,655,933 for mixed, 3,062,889 for cheap null and 48,688,864 for gate transfer,
+including the explicit mirrors. Fees remain charged when intervals do not
+narrow their deterministic envelopes. They are separate from terminal-only
+answer bills. All exact lower and upper endpoints, denominator fields, fees
+and unavailable/conflict fields are retained. No observed interval conflict
+or unavailable report is hidden in an aggregate.
+
+Evidence: [all 63 report endpoint cells and individual sign counts](../work_logs/P3_10_2026-10-11_S1/reviews/broker_reconstruction/findings_tables_A1.json) and
+[independent paid-report reconstruction](../work_logs/P3_10_2026-10-11_S1/reviews/broker_reconstruction/broker_reconstruction_review_A1.md).
+
+### 5.2 Later paid labels and repeated keys yield an unbilled diagnostic
+
+An additional observer uses all checked labels purchased by the end of the
+episode and ties repeated unresolved occurrences to the same full claim key.
+For each target it sums the affine coefficient of that unknown key before
+taking binary extremes. This gives sharp marginal bounds on the relaxed cube
+with one binary truth per unresolved key. Distinct CNFs can have logical
+relationships, so this cube can contain assignments that are not realizable
+mathematical worlds. The calculation does not discover or price those
+cross-key relationships.
+
+The new deterministic bounds lie inside the original deterministic envelopes
+for every report, with nonnegative reductions from later paid receipts and
+same-key coefficient cancellation. They need not lie inside the delivered
+sampling interval. For the live uniform gate path, the mean new deterministic
+width, after dividing widths by H, is actually wider than the frozen delivered
+width by about 0.00136358 for F/V and 0.04004628 for Z. Thus a claim that the retrospective construction
+uniformly improves the paid intervals would be false.
+
+This observer wrote and synchronized its public bounds before loading the
+independent truth transcript for containment checks. The investigator was
+already exposed to final outcomes; the extension is explicitly post-outcome
+exploratory interpretation. It neither changes A5 nor establishes a free
+reporting service, a coverage rate, or a new online feedback policy.
+
+Evidence: [retrospective derivation](../work_logs/P3_10_2026-10-11_S1/retrospective_report_derivation.md),
+[public-only bounds](../work_logs/P3_10_2026-10-11_S1/retrospective_report_observation_A1/public_bounds.json), and
+[later validation](../work_logs/P3_10_2026-10-11_S1/retrospective_report_observation_A1/validation.json).
+
+### 5.3 F and V share an exact public affine constraint
+
+For each complete saved episode, let S be the selected positions with delivered
+checked labels. Binary expansion gives the exact relation
+
+\[
+F-V=C=\sum_{t\in S}(q_t-y_t)^2
+      -\sum_{t\notin S}q_t(1-q_t).
+\]
+
+Every quantity on the right is public at the end of the episode. F and V are
+different scientific targets, but their remaining label uncertainty is a
+translation of the same coordinate. Their matching marginal widths therefore
+do not provide independent evidence. A rectangular display that varies F and
+V independently contains pairs inconsistent with this known equality; a valid
+marginal display can be conservative in precisely this way.
+
+The frozen reporter has the same sampling residual for its live F and V
+centers. Their centers and deterministic clipping envelopes are translated
+by C, and they use the same radius. Its actual delivered F and V intervals
+therefore translate by C as well. Independent saved-data reconstruction checks
+this on every endpoint and live center in all 126 reports. The snapshot
+reference centers require their separate within-block corrections; they are
+not silently identified with the live centers. This is an algebraic explanation
+of the F/V equality, consistent with the inherited joint confidence theorem's
+shared sampling event, not an additional empirical coverage result.
+
+After grouping all unresolved full keys, the remaining `(F,Z)` target is
+`A + sum_k b_k*y_k`, with rational two-coordinate vectors and binary key labels.
+Its exact convex hull is the Minkowski sum of the segments `[0,b_k]` translated
+by A. A separate public-only observer constructs that rational polygon, retains
+binary witnesses for its vertices, and checks direct support sums and corner
+compatibility before later truth validation. All **126** regions are
+two-dimensional; **all four** extreme corners of each separate marginal
+rectangle are incompatible with the joint key constraints. All 126 actual
+targets subsequently validate inside their public region.
+
+| Family | Mean polygon/rectangle area, uniform paths | Mean polygon/rectangle area, ticketed paths |
+| --- | --- | --- |
+| Cheap null | 0.499610505 | 0.627653086 |
+| Mixed | 0.605361632 | 0.689581040 |
+| Gate | 0.530679785 | 0.651921866 |
+
+Each area ratio is calculated per report and then uses the frozen hierarchy;
+it is a geometric description, not probability mass or a confidence level.
+The equal uniform or ticketed shapes across the corresponding hard/cold/cache
+variants arise from their common unresolved-key vectors; known-label effects
+translate the origin. The polygon concerns the relaxed label cube, and its
+interior includes convex mixtures rather than only discrete truth assignments.
+
+This interpretation preserves all three original endpoints and their fees. It
+does not replace the original reporter or its conditional theorem. A confidence
+claim for an intersection with a sampling region would retain that sampling
+region's original assumptions; no new joint level or empirical coverage is
+inferred from the observed containment checks.
+
+Evidence: [joint geometry derivation](../work_logs/P3_10_2026-10-11_S1/joint_report_geometry.md),
+[angular/degeneracy clarification](../work_logs/P3_10_2026-10-11_S1/joint_report_geometry_addendum.md),
+[saved public geometry](../work_logs/P3_10_2026-10-11_S1/joint_report_geometry_observation_A1/public_geometry.json), and
+[subsequent exact validation](../work_logs/P3_10_2026-10-11_S1/joint_report_geometry_observation_A1/validation.json).
+
+## 6. Current-bound certificates: valid delivery, costly reuse and cap failures
+
+### 6.1 The checked object is the whole current incumbent sublevel
+
+Of **416 scheduled delivery attempts**, 356 deliver valid current warrants
+and 60 return `NO_CURRENT_CERTIFICATE` with `ResourceExhausted`. No delivered
+warrant has a false bound, stale/current identity confusion, wrong source or
+request scope, or missing required sublevel member. All 104 history scores pass
+validity, while only **70 histories** deliver all four requests. In particular,
+all 52 full-budget histories deliver all 208 requests. Capped histories deliver
+148 of 208 requests, and 18 of their 52 histories achieve full service.
+
+Both construction families reduce pointwise to the signed loss difference
+`D = 2z-1`; the final edit gives `D = 2z-1/2`. The independent reference checks
+those identities at every Boolean assignment rather than trusting the ADD
+representation. The old complementary domains are disjoint halves, each of
+size 8 or 64, with exact old bounds −1 and +1. The current request can change
+hard information, rank, supplied incumbent or loss, so an old bound does not
+become a current warrant merely because its mathematical expression is familiar.
+
+| Edit slot | Hard-feasible states, n=4 / n=7 | Current sublevel | Minimizers | Incumbent rank | Exact D range | Current upper bound |
+| --- | --- | --- | --- | --- | --- | --- |
+| Initial | 16 / 128 | 16 / 128 | 16 / 128 | 0 | [−1,1] | 1 |
+| Hard/rank edit | 12 / 96 | 6 / 48 | 6 / 48 | 0 | [−1,1] | 1 |
+| Nonoptimal incumbent | 12 / 96 | 12 / 96 | 6 / 48 | 1 | [−1,1] | 1 |
+| Weight/loss scope edit | 12 / 96 | 6 / 48 | 6 / 48 | 0 | [−1/2,3/2] | 3/2 |
+
+The third slot deliberately includes nonminimal assignments at or below the supplied
+cutoff: the certificate is over the entire incumbent sublevel, not merely an
+arbitrarily chosen optimum. All minimizing ties remain included. The positive
+upper bounds are attained and valid; they do not certify action improvement or
+non-deterioration. The service is given its incumbent and bound as task inputs,
+so this experiment does not price an algorithm for acquiring an optimal action
+or incumbent. Those are distinct obligations.
+
+Evidence: [independent scalar and invoice reconstruction](../work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/final_observation_v4/results.json) and
+[certificate interpretation with all 104 history bills](../work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/final_review_v1/review.md).
+
+### 6.2 Direct ordinary checking wins complete service
+
+`O-ENUM-RECEIVER` is the unique cheapest complete ordinary method in all eight
+full group/recipient cells and all four corresponding family/recipient
+aggregates. The next table sums the two sizes within each family: two histories
+and eight requests per method, all delivered. Units are the separate declared
+`rp3bb-cpython31214-observed-events-plus-live-byte-periods-v1` certificate tariff.
+
+| Family | Recipient | P-REUSE units | Direct ordinary units | Reuse/direct ratio | P-FRESH rebuild units |
+| --- | --- | --- | --- | --- | --- |
+| Majority DNF/CNF | Fresh | 15,294,823 | 4,330,174 | 3.532150 | 19,814,051 |
+| Majority DNF/CNF | Resident | 11,029,502 | 4,330,190 | 2.547117 | 19,814,025 |
+| Selector mux/sum | Fresh | 17,103,740 | 4,492,110 | 3.807507 | 21,198,524 |
+| Selector mux/sum | Resident | 12,058,878 | 4,492,126 | 2.684448 | 21,198,498 |
+
+At individual full-history granularity, reuse costs 2.356317–3.864761 times
+direct enumeration at the same complete request-ID coverage. Resident receipt
+delivery reduces reuse's bill relative to fresh delivery but leaves the direct
+ordinary advantage intact. Narrower favorable reuse comparisons are preserved:
+it meets the completed-path 5% convention against P-FRESH for the n=7 streams,
+and against the ordinary ADD portfolio for the n=4 streams. They do not establish
+advantage over the cheapest complete ordinary service. Even a visually favorable
+aggregate can miss the threshold: majority fresh reuse costs 15,294,823 against
+portfolio 16,081,726, a ratio greater than 0.95.
+
+The full-service ordinary advantage also has a price-robust interpretation on
+the recorded primitive counts. Direct enumeration has no greater count in any
+category in all eight complete group/recipient cells. Therefore any common
+nonnegative prices on those primitive counts leave it no more expensive. A
+price vector assigning zero to every differing coordinate can produce a tie;
+strict saving at every possible price is not claimed. The statement holds the
+actual full paths fixed. It neither changes their budgets nor supplies a
+complete economic claim across the original failed experiment.
+
+Evidence: [all 156 certificate aggregate records and 864 directed comparisons](../work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/final_observation_v4/results.json),
+[complete comparison interpretation](../work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/final_review_v1/review.md), and
+[exact summary and primitive-price cells](../work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/final_review_v1/summary.json).
+
+### 6.3 Actual caps reveal a stateful coverage deficit
+
+The consumer cap is **1,048,576 units per attempt** within the common total
+per-attempt service budget of **134,217,728 units**. These are different scopes:
+a whole attempt's producer, enrollment and delivery bill is not identical to
+its consumer-cap subtotal. Each capped history starts separately and evolves
+through its actual successful or failed transitions.
+
+| Budget | Recipient | Method | Delivered request IDs /16 | Full histories /4 | All-attempt units |
+| --- | --- | --- | --- | --- | --- |
+| Full | Fresh | P-REUSE | 16/16 | 4/4 | 32,398,563 |
+| Full | Fresh | Direct ordinary | 16/16 | 4/4 | 8,822,284 |
+| Full | Resident | P-REUSE | 16/16 | 4/4 | 23,088,380 |
+| Full | Resident | Direct ordinary | 16/16 | 4/4 | 8,822,316 |
+| Capped | Fresh | P-REUSE | 6/16 | 0/4 | 40,700,598 |
+| Capped | Fresh | Direct ordinary | 14/16 | 2/4 | 8,322,314 |
+| Capped | Resident | P-REUSE | 6/16 | 0/4 | 39,242,612 |
+| Capped | Resident | Direct ordinary | 14/16 | 2/4 | 8,322,342 |
+
+At n=4, capped reuse loses the first request and delivers requests 2–4. At n=7
+it delivers none. Direct enumeration delivers every n=4 request and requests
+2–4 at n=7. Thus reuse has a strictly smaller covered set in every capped
+group/recipient cell. It fails the frozen coverage-superset condition
+independently of any resource price. No zero-cost assumption or allocation of
+unknown overhead could turn those same sealed missing request IDs into service.
+
+All 60 certificate denials are budget outcomes with complete internal invoices,
+not unexpected program failures. Their stages are **24 receiver checks,
+22 old-receipt checks, two old-input admissions and 12 receiver-storage steps**.
+Their retained paid fees sum to **168,462,843 units**, within the complete known
+certificate all-attempt total of **625,860,229 units**. Every history pays the
+common 561,239-unit source enrollment once, followed by three zero source
+charges. Source installation persists after failure; the scientific producer
+and receiver caches are evicted and the current receipt is withdrawn.
+
+There are 52 scheduled attempts following a failure: 28 subsequently deliver
+and 24 fail again. Four resident n=7 histories expose why retrospective cap
+filtering is invalid. Both P-REUSE and the ordinary ADD portfolio, in both
+families, have full-trace requests 2–4 whose consumer subtotals fit the cap.
+Their actual capped histories nevertheless deliver none because the successful
+bootstrap and retained evidence were never acquired. Filtering the full traces
+would invent **12 deliveries** across those four histories. They are the only
+coverage-set discrepancies among the 52 full-versus-actual-cap pairs, and the
+actual capped runs are authoritative.
+
+Full-service primitive dominance must not be copied into the capped setting.
+Direct enumeration publishes more successful receipts there, so some of its
+output counts are larger because its service coverage is larger. The capped
+conclusion follows from exact coverage and all-attempt bills, with every failed
+attempt retained, rather than from a claim of componentwise capped dominance
+or a cost average conditioned only on successful deliveries.
+
+Evidence: [request-level costs, failure stages and state transitions](../work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/final_observation_v4/results.json) and
+[failure census and the four cap counterexamples](../work_logs/P3_10_2026-10-11_S1/reviews/certificate_reconstruction/final_review_v1/review.md).
+
+## 7. Inherited structural and information conformance
+
+### 7.1 Complete ties and separate source quantifiers matter
+
+All **18 structural executions** reproduce the complete expected terminal
+output: 14 usable action warrants and four complete infeasibility reports.
+Candidate and ordinary methods agree for every one of the nine named fixtures.
+The tied counterpossible fixture retains two minimum paired-support states,
+despite having no ordinary Boolean satisfying valuation. A single implementable
+fallback action has worst loss 3. Each specialized action has worst loss 4;
+choosing a different specialized action after observing the minimizing state
+would attain zero but is an inadmissible pointwise oracle.
+
+The unresolved-source fixture retains both sources, whose minimum ranks are
+one and two. Minimizing jointly over source and repair would discard the
+second source and manufacture a loss-zero answer. The admitted quantifier
+retains both sources and again selects fallback with worst loss 3. These are
+minimax action conclusions under the supplied source set. A better worst case
+does not mean pointwise non-deterioration relative to every other action:
+fallback can be worse on a state where a specialized action has loss zero.
+
+The remaining fixtures retain their distinct intervention semantics. Fixed
+falsity and ordinary conditioning are infeasible and provide no action warrant.
+Occurrence change and actor replacement give routing state `(1,0,0,0)` with
+fallback loss 6. Shared replacement gives `(1,1,0,0)` and commit loss 5;
+also changing the stored copy gives `(1,1,1,0)` and loss 4; explicitly rerouting
+the predictor gives `(1,1,1,1)` and loss 2. The coordinates are actor, shared
+call, stored copy and predictor of the old program. No copy or predictor is
+silently changed merely because another occurrence changes.
+
+The ordinary method costs less on every fixture under both recorded structural
+measures. Totals over nine cases per method are **2,821,113 candidate versus
+1,603,090 ordinary cold units**, and **2,047,338 versus 1,181,962 local units**.
+These are the fixed nine-fixture STRUCTURAL-VM-v1 event/byte charges, separate
+from the original unknown failed prefix and from physical CPU measurements.
+The inherited wrapper is not generalized to arbitrary new structural inputs.
+
+Evidence: [independent structural enumeration and tables](../work_logs/P3_10_2026-10-11_S1/reviews/conformance_reconstruction/REVIEW.md),
+[complete conformance result](../work_logs/P3_10_2026-10-11_S1/reviews/conformance_reconstruction/runs/attempt_01/result.json), and
+[accepted finite semantics](../derivations/04_counterfactual_semantics.md).
+
+### 7.2 Recoverability is a property of an exact observation contract
+
+All 36 valid information requests produce correct exact certificates, and all
+six invalid-input controls receive their expected rejections. The certificates
+report **20 full-law recoveries and 16 nonidentifications**. They recover all
+requested target rows in 22 cases, while 14 have at least one nonidentified
+target. Across the 64 original target rows, 37 are recoverable and 27 are not.
+These totals include **12 one-state controls**, whose law is already forced;
+four controls have an empty target family, so their all-target success is
+vacuous. The fractions are fixed-design descriptions, not prediction accuracy
+or empirical general-identification rates.
+
+| Calibration mode | Full-law recoveries /9 | Entire target-family recoveries /9 | Minimum added raw queries, summed |
+| --- | --- | --- | --- |
+| Known units | 7/9 | 7/9 | 3 |
+| Shared unknown offset | 4/9 | 5/9 | 5 |
+| Shared unknown positive scale | 5/9 | 5/9 | 7 |
+| Shared unknown positive affine calibration | 4/9 | 5/9 | 9 |
+
+The observation model is `z = s L p + b 1`, for one law p on the full simplex,
+one shared positive scale s when unknown, and one shared offset b when unknown.
+With known offset, the effective rows are L; with unknown offset, they are
+differences from an existing loss row. If there is no old loss row, the
+effective matrix is empty. A constant target is already known.
+For a nonconstant target c, known scale requires c to lie in the span of the
+effective rows and the normalization row. Unknown scale additionally requires
+the normalization row itself in the effective row span, so the scale can be
+recovered before dividing. Merely obtaining full normalization-augmented rank
+is insufficient in that latter case.
+
+This distinction is concrete in the `rational_signed` unknown-scale case.
+Two positive interior laws, `(1/3,1/3,1/3)` and `(46/141,18/47,41/141)`, with
+positive scales 1 and 47/36, give the same observation `(37/90,−1/12)` but
+different nonconstant target values. One additional all-ones loss row measures
+the shared scale and attains the one-query repair. The original constant
+target remains known without repair.
+
+Conversely, a requested target can be identifiable while the full law is not.
+In the partial-target affine case, loss rows `(0,1,0)`, `(1,2,1)` and `(1,1,0)`
+give `p_1 = (z_2-z_0)/(z_1-z_0)` with positive denominator s. This identifies
+the first coordinate despite a collision in the remaining coordinates and
+offset. The Brier-anchor design supplies a scale normalizer and recovers the
+full law under all four modes. The exact decoder identities and collisions
+provide the conclusion; no inference from numerical forecasting success is
+substituted for them.
+
+The minimum repair distribution is **22 cases needing zero extra queries,
+six needing one, six needing two and two needing three**, for 24 in total.
+Each repair has an exact decoder and dual rank witness under the admitted menu
+of freely chosen fixed rational loss rows sharing the same law and nuisance.
+Those 24 queries are **hypothetical design additions**, not newly acquired
+observations or paid delivery events in P3-10. The observer checks 138 positive
+identities, 43 collision/obstruction certificates and 48 dual pairings; these
+are proof components inside the 36 cases, not additional independent cases.
+
+The six rejection controls distinguish Boolean state counts, inexact floating
+loss entries, unshared scale declarations, an unsupported restricted-source
+tag, wrong row dimensions and realized-score misuse. Their rejection checks
+show enforcement of the declared schema. They cannot establish from a numeric
+array alone that observations really are exact expectations, that every row
+shares one fixed law, or that calibration assumptions hold in an external
+application. Realized scores, unknown unshared stakes and arbitrary human value
+reports do not acquire the theorem's hypotheses through a successful replay.
+
+All 60 records remain **post-exposure amended inherited conformance**. The
+original nine structural and nine information designs were previously exposed.
+They check the inherited finite contracts and their implementation, while
+leaving unseen transfer, general counterpossible robustness and theorem
+applicability to other observation sources unestablished.
+
+Evidence: [information identities, obstructions and all 36 design/mode cells](../work_logs/P3_10_2026-10-11_S1/reviews/conformance_reconstruction/REVIEW.md),
+[exact extracted examples](../work_logs/P3_10_2026-10-11_S1/reviews/conformance_reconstruction/derived_v1/certificate_examples.json), and
+[inherited probability-information derivation](../derivations/02_probability_information.md).

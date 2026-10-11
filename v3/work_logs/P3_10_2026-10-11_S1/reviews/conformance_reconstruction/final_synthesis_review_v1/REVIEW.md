@@ -1,0 +1,110 @@
+# Independent final synthesis, conformance-scope and execution-record review
+
+**Disposition: PASS after the narrow Q1 wording clarification, whose exact diff is preserved. No numerical discrepancy was found in the five chronology or five resource rows.**
+
+Signed: **ChatGPT (GPT-6 Astra Pro), /root/conformance_reconstruction**  
+UTC: **2026-10-11T16:27:38.433429+00:00**  
+Task and scope: P3-10 `results.md` §§7.3, 8 and 9; read-only claim/status review and comparison with saved execution records. No paid method, official stage, principal observer, independent scientific observer, scorer or analyzer was rerun. This review changes no accepted record or gate and earns **zero principal Research90 clock credit**.
+
+## 1. Version binding and review method
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Original reviewed results snapshot, 67,646 bytes | `48b0f0dac6e06566206381edefd0e8bf094a3d252b5e95f448bbdb319f5be338` |
+| Revised snapshot after the sole Q1 clarification, 67,689 bytes | `b2d08db724eee71952d62a5c0fafb334d204bf3631ab165ef425beae5e1784f8` |
+| Saved-record comparison source | `fbd92f46e14faef7b2b3ca266e0ac017b172a6d9bff1cdc4eb4e2e5e7f7b62f2` |
+| Saved-record comparison result | `8b3a4732efcf4be582f610cad3b19c9250930a32196c14eb667590511627b321` |
+| Q1 closure record | `7713080beae43702e69e727579a7becb370887750836b867be621b1b0bd00a9c` |
+| Observed plan/status source | `55164df52122045cf6c108bc9733bca4d5c36efa842347cac69fd398608887b1` |
+
+`compare_saved_records.py` ran once as a document/metadata comparison, completing **125 checks with PASS, exit 0**, at 16:26:12.117327 UTC. It reads saved records using only standard-library JSON, decimal, path and hashing operations. It does not recompute an experimental outcome. The comparison preserves full draft snapshots, source-file hashes, every compared command row and stage count, and its start/result records in `record_comparison_01/`.
+
+The prose review also uses the previously signed conformance, assumption-matrix, transfer, gate, broker and certificate reviews. It does not newly certify all other sections of the evolving report. The Q1 revision is exactly one replacement; `q1_scope_closure.diff` and `q1_scope_closure.json` bind it. All sections containing the checked table values are unchanged by that revision.
+
+A preliminary read-only discovery command guessed `frozen_v1/prepared_methods.json`, which does not exist. The resulting `FileNotFoundError` is retained in `read_probe_failure_01.json`, with the actual tool chunk ID and the explicit absence of an exact invocation timestamp. The existing freeze review identifies the correct `frozen_v1/methods.json`; its bound 114-record content was then checked. This discovery error was neither a scientific outcome nor a failure of the exclusive 125-check comparison.
+
+## 2. Q1–Q5 and the 21-duty boundary
+
+| Question | Supported interpretation in the revised draft | Boundary preserved |
+| --- | --- | --- |
+| Q1: logical uncertainty | A finite source-bound process with before-purchase advice, checked paid receipts, immutable issuance, and current hardening on the 336 completed broker episodes. Positive mixed/cheap effects and adverse gate transfer are both retained. | The revised language says point forecasts do not provide or establish a coherent joint law. It does not claim a new general incoherence theorem, eventual correctness or Logical Induction. The separate current-bound receiver remains uncomposed with the learner. |
+| Q2: counterfactuals and counterpossibles | Explicit conditioning, occurrence, actor, shared-code, copy, predictor and exceptional-repair operations; complete tied minima and unresolved-source quantifiers; fixed deterministic minimax action service; a separate checked incumbent-sublevel service. | The graph, exceptional policy, ranks and source alternatives are supplied. No state-conditioned oracle action, learned causal identification, general exception justification, unseen counterpossible transfer or selective-feedback composition is inferred. The 60 conformance checks remain amended inherited regression. |
+| Q3: useful models and ordinary competition | Constructive ordinary equality of the promised service, adverse completed-path ordinary comparisons under the declared terminal objective and tariff, and larger direct capped request coverage. | Affirmative strongest-ordinary advantage remains **OPEN**; no impossibility of useful plurality is inferred. The transported warrants are sound conditional facts, not learned fallible models. Accepted modest P3-N01 support remains intact, with no author contribution decision or general exclusive algorithmic claim. Inferior ordinary issued Brier prevents extending the terminal-objective comparison to every objective. |
+| Q4: learning and usefulness | Three of six distinct A2 cells and four of six paired hardening action cells meet their declared conventions. Stakes, action gain, forecast loss, caching bill and reporting width are treated separately. | Before-resolution gains do not erase the adverse complete gate suffix. Fixed-expert/feedback/propensity/randomness hypotheses are retained. Later geometry and fitted decompositions are external post-outcome interpretations, not newly deployed learning or paid reporting gains. |
+| Q5: probability information in values | Exact expected-loss design certificates distinguish full-law recovery, target-only recovery, collisions and minimal hypothetical query repairs under the source/fiber/rank and calibration conditions. | Forced one-state laws, known constant targets and hypothetical repair queries keep their status. Numeric schema acceptance does not establish exact expectation, common law or shared calibration in an external application. Robust minimax values and positive uniform bounds are not automatically observations in that map. |
+
+The three-of-six and four-of-six endpoint counts and the terminal-versus-Brier distinction agree with the signed broker reconstruction and its displayed-claims review. Those are fixed cohort means under the prescribed hierarchy, not a count of independent replications or a general learning guarantee. The certificate and conformance portions agree with their signed arm reconstructions and the prior [assumption matrix](../assumption_matrix_v1/output/matrix.md).
+
+The separate [root attachment review](../root_attachment_review_v1/REVIEW.md) established exact preservation of **all 21 full accepted duty objects**, including every prior/current status, inherited scope and residual. The final synthesis links that additive attachment and does not reinterpret its historical task metadata as current. The observed plan independently retains P3-A and P3-B as passed at their respective restricted readiness scopes, P3-C/D unattempted, and P3-11 unstarted. P3-N01 remains SUPPORTED at the accepted modest scope; Option C and R-P3-N01 remain unselected. The current observation is preserved separately from any later principal bookkeeping changes.
+
+### FS-01 — Q1 epistemic strength, closed
+
+The original wording, “The learned point forecasts are not a coherent joint law,” could be read as a demonstrated incoherence result. That would be stronger than the accepted U03 boundary, under which joint forecast coherence is not claimed or established. The revised sentence reads:
+
+> The service supplies learned point forecasts; it does not provide or establish a coherent joint law over all represented claims.
+
+The exact one-replacement diff was inspected and closed at **16:27:08.421687 UTC**. No new computation or accepted-status change is needed to support the revised statement.
+
+### Prior attachment refinements remain preserved
+
+The existing signed root-attachment review retains **DA-01 (U05)**: the 52 follow-on attempts are scheduled immediate successors to failures, with 28 deliveries and 24 further failures; they are not a count of all arbitrarily later attempts. It also retains **DA-02 (V02)**: “20 designs permitting global full-law recovery” is more explicit than “20 full-law recoveries.” These are wording refinements to the unchanged hash-bound attachment. U02's 416 = 356 + 60 attempt accounting was checked and required no correction. This final synthesis review does not edit or overwrite that attachment.
+
+## 3. Section 7.3: the decision/expected-loss separation is correct
+
+For the same two retained states, the action rows are `(4,0)`, `(0,4)` and `(3,3)`. Their maxima select fallback uniquely from the fixed deterministic menu. Under any normalized law, the first two expected losses are `4p` and `4(1-p)`; their minimum is at most 2, strictly less than fallback's 3. Hence the fixed minimax reply need not be an expected-loss optimizer under any law on these states.
+
+The revised positive-affine-calibration argument is stronger than the initial known-units sum argument and is valid. If `v=sLp+b1` with shared `s>0`, then
+
+\[
+v_{\mathrm{fallback}}-\frac{v_{\mathrm{take\_p}}+v_{\mathrm{take\_r}}}{2}=s>0.
+\]
+
+For the recorded robust vector `(4,4,3)`, the same contrast is −1. The vector is therefore outside this exact observation map for these rows under every one of the four admitted calibration modes, which are subcases of the shared positive-affine model. This is not a restriction on arbitrary other encodings of probability information. Even inside the map, recovery still requires the appropriate source/fiber/rank criterion.
+
+The hypothetical lottery's worst-over-states **expected** loss 2 and worst-over-states-and-draw loss 4 are different risk quantifiers. No lottery belongs to the executed structural menu, and no paid competitor or economic gain is inferred. Likewise, adding `(100,0)` to every action row preserves same-state differences but changes the absolute minimax choice to `take_r`, with maxima `(104,100,103)`. Uniform fixed-pair difference bounds remain invariant to that common state-dependent offset.
+
+The general lexicographic rank and the deployed scalar incumbent tier are distinguished. Multiplication by a sourcewise positive scalar plus a constant vector preserves each lexicographic comparison and all ties; scalar incumbent sublevels are preserved under their corresponding transformation. Same feasible domain, checked feasible incumbent where required, and admitted transformed encoding remain necessary. Rank invariance does not preserve request identity, an old receipt's current authority, or its invoice. These are post-outcome algebraic interpretations, not additional executed structural fixtures or new general empirical evidence.
+
+Sources: the bound [initial interpretation](../../../decision_service_interpretation.md), SHA-256 `8e9c2766a7ed6f4239139e55befe682aff124db0a229fbdd318dcee3a68738a9`, and its [calibration/rank addendum](../../../decision_service_interpretation_addendum.md), SHA-256 `d4f783bc86fce565e2ea36574046e731102259c346d52ca97bb4819d108896f9`.
+
+## 4. Section 8: chronology and physical resource rows
+
+All displayed intervals and resource fields match the raw saved command records, including their stdout/stderr byte counts and hashes. Wall seconds were checked against the recorded monotonic nanosecond difference, not obtained by subtracting rounded UTC displays. Every start/completion pair has the same boot ID, and each next command starts after the preceding completion.
+
+| Command | Recorded UTC interval, October 11 | Wall seconds | User / system CPU seconds | Peak RSS KiB | Completion |
+| --- | --- | --- | --- | --- | --- |
+| Original inputs | 14:50:46.554698–14:50:47.131975 | 0.577288758 | 0.553868 / 0.025613 | 26,716 | 12 inputs, exit 0 |
+| Original public | 14:51:12.093871–15:20:33.534017 | 1761.440233787 | 1760.901368 / 0.388745 | 40,924 | 440 sealed, exit 1 |
+| A1 public | 15:33:18.105430–15:33:32.061967 | 13.956550244 | 13.324855 / 0.633138 | 588,024 | 60 amended, exit 0 |
+| A1 evaluation | 15:34:11.406473–15:34:54.518871 | 43.112428671 | 41.372457 / 1.737399 | 607,500 | 500 scores, exit 0 |
+| A1 analysis | 15:35:50.452323–15:35:57.216183 | 6.763867515 | 6.311963 / 0.453742 | 634,520 | 1 analysis, exit 0 |
+
+The original failure marker separately gives **15:20:33.505276 UTC**, before outer command completion, and the precise `AttributeError`/first structural-unit identity reported in the text. Its original 3,193-byte stderr is preserved. All three amended stderr streams are empty. These distinctions are accurately reported.
+
+The saved entry records support the checkout/remote-match observation, tree/commit IDs, Linux 6.18.44 x86-64/glibc 2.39 platform, CPython 3.12.14/Clang 22.1.3 and boot ID. The frozen runtime is little-endian, and its hash matches the pinned manifest. The source count **50**, prepared-representation count **114**, input-group count **12**, and public-unit count **500** are directly recorded in bound preparation metadata.
+
+The earlier independent freeze verification returned `VERIFIED` with final exposure absent. Its exact invocation start/end timestamps were not captured; its saved receipt explicitly preserves that limitation and records a later evidence-preservation time. Section 8 does not invent such timestamps. The source-bound stage barrier also requires freeze verification before final input generation; no verifier or initialization/preparation command was rerun for this review.
+
+The A1 manifest records **1,365 inventoried original files and 134,825,103 bytes**, and its seal time precedes the amended public command. Its original-public/private-start flags, zero input generations, 440 reused IDs and 60 remaining IDs match the narrative. Completion indices separately confirm 12 original inputs, 60 amended public units, 500 evaluations and one analysis. The composite has exactly 440 original prospective record classes and 60 amended inherited-conformance classes. Original public/evaluation/analysis completion markers remain absent. The **15:37:22.120309 UTC** release is after the amended analysis end and binds the composite and original input-reference hashes.
+
+The preserved loader omission is described as a deterministic integration defect, and A1 is correctly described as an explicit source-bound amendment. Its bootstrap placement outside the inherited paid meter is disclosed. Nothing in this review turns A1 into an unchanged infrastructure retry or restores unamended confirmatory status to the 60 conformance records.
+
+The resource interpretation is also correctly limited. These are outer process observations, including orchestration and verification, rather than paired-algorithm timing estimates or paid service invoices. The draft does not sum peak memory, convert physical CPU into principal research credit, combine the three tariffs, or double-count overlapping certificate diagnostics.
+
+## 5. Missing-prefix and economic scope
+
+The conditional structural-meter interval **85,976 to 49,900,000** agrees with the source-only cost review: 85,975 admitted source bytes plus positive input admission, and the 50,000,000 budget minus 100,000 terminal reserve. It is a bound on a lost declared counter conditional on the reported path and faithful meter behavior. It is not an exact invoice, a primitive vector, a physical resource bound or a cross-tariff conversion.
+
+The hypothetical same-tariff common-overhead calculation is correct:
+
+\[
+C+u\le\frac{19}{20}(O+u)
+\quad\Longleftrightarrow\quad
+u\le19O-20C.
+\]
+
+The absolute difference remains `C−O`; a common nonnegative overhead cannot create an already absent 5% saving, but can remove a previously satisfied percentage threshold. Unequal allocations have no such invariance. The actual missing prefix has no declared common allocation or exchange rate, so this algebra does not repair the frozen global economic gate. Recorded adverse invoices/coverage and finite prediction/action outcomes have their own evidence; an unknown-accounting gate alone proves no inferiority.
+
+Source: [cost-uncertainty source review](../../certificate_reconstruction/cost_uncertainty_source_review_v1/review.md), SHA-256 `c96e602fdf82451712f415908abaa3230ab99dcc84fd122d0e895d9a1947eba5`.
+
+All residuals, amended-status distinctions and post-outcome interpretation boundaries survive the reviewed synthesis. This signed review covers the two pinned draft versions and the documented Q1 diff, not future edits, publication completion, Research90 closure, P3-11 selection or an author gate.

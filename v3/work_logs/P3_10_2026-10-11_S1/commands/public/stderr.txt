@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p309_freeze.py", line 634, in <module>
+    main()
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p309_freeze.py", line 629, in main
+    result = final_stage(args.stage, args.task, args.retry_reason, args.failure_classification)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p309_freeze.py", line 583, in final_stage
+    return public_stage.execute(execute_public, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p309_lifecycle.py", line 266, in execute
+    value = callback(unit)
+            ^^^^^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p309_freeze.py", line 582, in execute_public
+    "paid_result": loaded[unit["arm"]].run(unit, public_input(unit), config["arms"][unit["arm"]])}
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p309_conformance.py", line 319, in run
+    inner = legacy.run_method(selected, unit["worker_method"], budget=config["structural_budget"])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p308_structural.py", line 628, in run_method
+    result = meter._meter_run("controller", lambda: method_execution(meter, spec, method))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p308_structural.py", line 171, in _meter_run
+    return function()
+           ^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p308_structural.py", line 628, in <lambda>
+    result = meter._meter_run("controller", lambda: method_execution(meter, spec, method))
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p308_structural.py", line 599, in method_execution
+    requests = meter._meter_run("dependency_construction", lambda: compiler(spec))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p308_structural.py", line 171, in _meter_run
+    return function()
+           ^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p308_structural.py", line 599, in <lambda>
+    requests = meter._meter_run("dependency_construction", lambda: compiler(spec))
+                                                                   ^^^^^^^^^^^^^^
+  File "/workspace/scratch/095cdac579b7/value_logic/v3/experiments/p308_structural.py", line 389, in candidate_compile
+    request = K.paired_request(spec["atoms"], spec["quote"], baseline,
+              ^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'paired_request'
