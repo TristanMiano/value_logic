@@ -161,6 +161,8 @@ readiness; P3-POS01 remains outstanding.
 | Author direction | [Scope decision](decisions/2026-10-06_phase_three_scope.md) |
 | Current research amendment | [Discovery-first decision](decisions/2026-10-11_discovery_first_amendment.md) |
 | Continuing discovery | [P3-SEARCH-01 program and first cycle](discovery/P3_SEARCH_01.md) |
+| Codex continuation | [Execute the first discovery cycle](handoffs/P3_SEARCH_01_CODEX.md) |
+| Portable checkout and evidence | [Windows recovery guide](../docs/windows_checkout.md) · [Historical snapshot location map](evidence/relocations.v1.json) |
 | Tasks and completion criteria | [TODO_v3.md](../TODO_v3.md) |
 | Research execution | [Procedure](RESEARCH_PROTOCOL.md) · [Work-item template](templates/work_item.md) |
 | Initial literature | [Primary-source orientation](literature/00_orientation.md) |

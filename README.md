@@ -93,5 +93,6 @@ comparison; a general mathematical learner is a further research objective.
 | Evidence and comparisons | [Claim ledger](v2/claim_ledger.md) · [Literature studies](v2/literature/) |
 | Research directions | [Logical uncertainty and counterfactuals](v3/README.md) · [Opportunity register](v2/opportunities.md) |
 | Contributor workflow | [Phase-three workspace](v3/README.md) · [Research procedure](v3/RESEARCH_PROTOCOL.md) · [Task plan](TODO_v3.md) · [Phase-two records](v2/README.md) |
+| Windows checkout | [Recovery and portable evidence](docs/windows_checkout.md) |
 
 The reports present the research; the workspace records preserve its derivations, experiments, decisions and attributed contributions.

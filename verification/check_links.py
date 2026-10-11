@@ -1,4 +1,4 @@
-"""Lightweight checker for local links in repository Markdown files."""
+"""Check local Markdown references, including verified historical relocations."""
 
 from __future__ import annotations
 
@@ -8,6 +8,11 @@ from pathlib import Path
 import re
 import sys
 from urllib.parse import unquote
+
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from tools.evidence_paths import MANIFEST, load_entries, resolve as resolve_evidence
 
 
 LINK = re.compile(r"(?<!!)\[[^\]]*\]\(([^)]+)\)")
@@ -54,6 +59,13 @@ def check_links(root: Path) -> list[BrokenLink]:
     root = root.resolve()
     broken: list[BrokenLink] = []
     slug_cache: dict[Path, set[str]] = {}
+    relocations: set[str] = set()
+    if (root / MANIFEST).exists():
+        try:
+            relocations = {entry["original_path"] for entry in load_entries(root)}
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            return [BrokenLink(root / MANIFEST, "", 1,
+                               f"invalid evidence relocation manifest: {exc}")]
     for source in markdown_files(root):
         text = source.read_text(encoding="utf-8")
         for match in LINK.finditer(text):
@@ -65,6 +77,7 @@ def check_links(root: Path) -> list[BrokenLink]:
             path_part, separator, fragment = target.partition("#")
             decoded_path = unquote(path_part)
             destination = source if not decoded_path else (source.parent / decoded_path).resolve()
+            logical_suffix = destination.suffix.lower()
             line = text.count("\n", 0, match.start()) + 1
             try:
                 destination.relative_to(root)
@@ -72,9 +85,18 @@ def check_links(root: Path) -> list[BrokenLink]:
                 broken.append(BrokenLink(source, target, line, "target escapes repository"))
                 continue
             if not destination.exists():
-                broken.append(BrokenLink(source, target, line, "target does not exist"))
-                continue
-            if separator and fragment and destination.suffix.lower() == ".md":
+                original = destination.relative_to(root).as_posix()
+                if original not in relocations:
+                    broken.append(BrokenLink(source, target, line, "target does not exist"))
+                    continue
+                try:
+                    destination = resolve_evidence(original, repo=root)
+                except (OSError, ValueError, KeyError, TypeError) as exc:
+                    broken.append(BrokenLink(source, target, line,
+                                             f"relocated target cannot be verified: {exc}"))
+                    continue
+            # Object filenames have no extension; retain the historical target type.
+            if separator and fragment and logical_suffix == ".md":
                 slugs = slug_cache.setdefault(destination, heading_slugs(destination))
                 if unquote(fragment).lower() not in slugs:
                     broken.append(BrokenLink(source, target, line, "heading anchor does not exist"))
