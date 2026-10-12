@@ -705,3 +705,16 @@ Codex (GPT-6). [Active checkpoint](discovery/s03/cp04.md). DEVELOPMENT only.
 | DS-S13-ADAPT | Common-baseline/flow bounds cover finite adaptive query trees under a supplied independent uniform-bit model. | 36 finite Bellman comparisons; one sharp 9/10 case. A four-bit matching proves at least 1/400 gap for terminal-only penalties. Sequential repair is exact on its fixture but slower than a simple ordinary control. No broad economic advantage. |
 | DS-S14-CODE | A prospectively fixed prefix prior permits later discovered programs and delayed evaluations with explicit complexity costs. | 2,047 prefix checks and a fresh 1,024-draw developmental lottery. Countable PAC-Bayes principles imported; one path does not calibrate confidence or demonstrate external usefulness. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | [Five-question synthesis](discovery/s03/synthesis04.md); P3-11 deferred, no confirmation promotion. |
+
+## P3-SEARCH-01-C001 — s03 checkpoint 5
+
+Codex (GPT-6). [Active checkpoint](discovery/s03/cp05.md): 241.835682655
+research minutes, continuing beyond the satisfied fresh floor. DEVELOPMENT only.
+
+| ID | Constructive finding / delta | Evidence, comparison and limits |
+|---|---|---|
+| DS-S13-FAMILY | Box and exact scalar-price certificates amortize checks over a family of changed requests. | Box: 22.651 ms versus 315.333 ms for 96 cold queries. Price profiles: 2,158 small exact queries; two 128-query services cost 85.027/118.175 ms versus 272.912/255.037 ms cold. Supplied graph; optimized ordinary parametric flow and external source costs not measured. |
+| DS-S13-REPAIR | Retained feasible-flow mass obeys an explicit sensitivity bound. | 80 perturbations and 32-step trace pass finite checks, but repair/check costs 170.247 ms versus 109.530 ms cold and is sometimes looser. Negative economic evidence retained. |
+| DS-S15-MODELS | Conditional-model acquisition bounds require the baseline value of identifying the model. | Two deterministic models each give zero conditional acquisition value while their mixture admits a profitable query. Ordinary conditional decision decomposition; warranted mixture still supplied. |
+| DS-S16-AUDITS | Revisable forecasts and randomized audits admit lower-proof censoring and delayed monotone refinement for a fixed program-value target. | Established prediction-powered e-value ingredients; 324 exact factor checks, a 1,024-path null tree and four refinements. Illustrative tariff screen has gains and severe losses, no external evaluator or confidence calibration claim. |
+| P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | [Five-question assessment](discovery/s03/synthesis05.md); no P3-11 promotion or contribution gate attempted. |

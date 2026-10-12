@@ -236,3 +236,24 @@ continue C001 from [checkpoint 3](s03/cp03.md), with P3-POS01 OUTSTANDING.
 Continue from [checkpoint 4](s03/cp04.md). Readiness remains unassessed and
 P3-POS01 OUTSTANDING; these components do not yet form a materially useful
 service. Prioritize cheap verified proposals and credible acquisition economics.
+
+## s03 fifth constructive revision
+
+- **S13F/P:** greedy certificates and per-query repairs have explicit losses;
+  parameter-family retention has scoped positive amortization. Exact price
+  profiles carry endpoint flow certificates and permit nonconstant answers.
+  [Results and comparison](s03/price_profiles.md). Optimized ordinary parametric
+  flow and semantic/source acquisition costs remain open; no broad superiority.
+- **S15:** combining conditional-model certificates requires paying for model
+  identification when their optimal actions differ. [Derivation](s03/model_mixture.md).
+  This standard decision decomposition prevents an unsafe averaging shortcut.
+- **S16:** known prediction-powered e-values combine revisable forecasts with
+  paid randomized audits; checked lower values and delayed evidence preserve
+  validity by domination. [Construction, checks and mixed economics](s03/audit_bets.md).
+  The fixed target can survive predictor updates; post-selected target programs
+  still need fresh or simultaneous evidence. Actual evaluator usefulness open.
+
+C001 is active beyond its satisfied four-hour floor. Continue from
+[checkpoint 5](s03/cp05.md) with a program-edit residual service rather than
+tuning the exposed flow graphs. P3-POS01 remains OUTSTANDING; readiness is
+unassessed and P3-11 deferred. All findings remain DEVELOPMENT.

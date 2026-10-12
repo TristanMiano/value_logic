@@ -5,7 +5,7 @@ Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.
 Current amendment: [discovery-first direction](v3/decisions/2026-10-11_discovery_first_amendment.md).
 
 **Selected next: P3-SEARCH-01, a continuing discovery program.** Its first
-240-minute research cycle is in progress (211.7553506683333333333333333 research minutes); central/high forecasts are
+240-minute research cycle is in progress (241.835682655 research minutes); central/high forecasts are
 360/480 minutes. **P3-POS01, the materially useful positive-result objective,
 is OUTSTANDING. P3-11 is deferred pending discovery readiness.**
 
@@ -20,11 +20,11 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **1297.886718032483333333333333 minutes**.
+Phase-three qualifying research is **1327.96705001915 minutes**.
 The [960-minute checkpoint](v3/work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
 was satisfied at P3-09, with **35.847797958367 minutes** of observed overshoot
 at that assessment; current phase research exceeds 960 minutes by
-**337.886718032483333333333333 minutes**.
+**367.96705001915 minutes**.
 Later tasks and author gates remain necessary.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
@@ -62,7 +62,7 @@ scope, with **90.310005771417 measured research minutes** and an
 **P3-10 is COMPLETE at explicit amended final-execution and interpretation
 scope**, with **90.283569405783 measured research minutes** and
 [independently reconstructed results](v3/experiments/results.md).
-**Next: continue P3-SEARCH-01-C001 from [s03](v3/discovery/s03/cp04.md). P3-11 is deferred.**
+**Next: continue P3-SEARCH-01-C001 from [s03](v3/discovery/s03/cp05.md). P3-11 is deferred.**
 Phase two remains complete; P3-C–D remain unattempted. P3-N01 is now
 **SUPPORTED at modest formal-adaptation and implementation-synthesis scope**;
 Q3 affirmative advantage over the strongest ordinary combination remains open.
@@ -88,9 +88,9 @@ materially promising candidates justify rigorous challenge. The
 [continuing program](v3/discovery/P3_SEARCH_01.md) implement that direction.
 
 **P3-SEARCH-01-C001 is in progress**, with a fresh Research240 floor,
-a 360/480-minute central/high forecast, **211.7553506683333333333333333** credited research
-minutes and **28.24464933166666666666666667** minutes remaining. New work is by **Codex (GPT-6)**;
-[checkpoint](v3/discovery/s03/cp04.md), [portfolio](v3/discovery/candidates.md),
+a 360/480-minute central/high forecast, **241.835682655** credited research
+minutes and **0** minutes remaining. New work is by **Codex (GPT-6)**;
+[checkpoint](v3/discovery/s03/cp05.md), [portfolio](v3/discovery/candidates.md),
 [exact actuals](v3/discovery/s03/effective_actuals.json). Its normal boundary disposition is continue/recur. The program has
 no fixed total ceiling; tens or hundreds of hours are plausible. Candidate
 rejection and elapsed floors do not close the search. **P3-11 remains unstarted
@@ -473,7 +473,7 @@ confirmation plan. An adverse confirmation returns the objective to discovery.
 
 - [ ] **P3-SEARCH-01 — continuing constructive discovery. Research240 or longer per cycle.**
 
-  **In progress; C001 unfinished; P3-POS01 OUTSTANDING.** Generate and derive
+  **In progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING.** Generate and derive
   materially different mechanisms across the five questions, keep a revisable
   portfolio, discard poor candidates with cheap screens, and deepen promising
   branches. The [program](v3/discovery/P3_SEARCH_01.md) defines the first cycle,
@@ -556,7 +556,7 @@ imposed; author direction and evidence determine its eventual disposition.
 complete at their declared scopes. P3-A and P3-B retain their restricted PASS.
 P3-N01 is SUPPORTED at the recorded modest synthesis scope. P3-POS01 is
 OUTSTANDING. Next: continue P3-SEARCH-01-C001 from its durable checkpoint;
-its fresh Research240 floor remains unfinished. P3-11 is deferred and unstarted. P3-C–D remain unattempted.
+its fresh Research240 floor is satisfied and research continues. P3-11 is deferred and unstarted. P3-C–D remain unattempted.
 Option B is complete; Option C and R-P3-N01 are unselected.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original
