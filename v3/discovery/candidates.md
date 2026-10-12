@@ -190,3 +190,27 @@ semantics and marginal bounds; acquisition, model learning, meaningful external
 scope and comparison remain open. Readiness is unassessed. Continue C001 from
 [checkpoint 2](s03/cp02.md), retaining the wider portfolio; no candidate is
 promoted and P3-POS01 remains OUTSTANDING.
+
+## s03 third constructive revision
+
+- **S11M:** informative probes require correlation moments, with a bounded-depth
+  sufficient hierarchy and a parity degree obstruction. Sparse policy-DAG
+  compilation can retain a single useful high-order contrast instead of the
+  generic hierarchy. Conventional belief compression and symbolic evaluation
+  are direct comparisons. [Development](s03/value_moments.md).
+- **S10/S11 interval bridge:** checked partial cost bounds yield graded lower
+  receipts and allow sound delayed refinement of fixed-source statistical
+  evidence. Parity computations retain an all-bits complementarity, while
+  additive terms refine incrementally. [Construction](s03/interval_values.md).
+- **S12 added:** an ordinary anytime PAC-Bayes event covers adaptive mixtures
+  of a fixed policy bank under partial evaluation. Exact log intervals check
+  numerical weight advice; known repricing and checked affine relations reuse
+  the same source. [Mechanism and first fixture](s03/policy_bank.md),
+  [weighted-query development](s03/bank_transport.md).
+
+The promising next question is paid acquisition for compiled value contrasts,
+including model usefulness, complementarities and cached context reuse. No
+economic advantage over equally informed conventional methods is established.
+The first moment enumerator's scaling defect, two failed 3.13 replay attempts
+and explicit 3.12 continuation remain recorded. Readiness remains unassessed;
+continue C001 from [checkpoint 3](s03/cp03.md), with P3-POS01 OUTSTANDING.

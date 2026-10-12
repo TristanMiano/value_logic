@@ -1,0 +1,21 @@
+{
+  "status": "failed_attempt",
+  "evidence": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "observed_record_utc": "2026-10-12T00:52:05.260892+00:00",
+  "attempt": 1,
+  "command": "python v3/discovery/s03/moment_v2_probe.py v3/discovery/s03/moment02.json",
+  "result_file_written": false,
+  "failure": "TypeError: super.__new__(Fraction): Fraction is not a subtype of super",
+  "call_site": "continuation.solve -> visit -> posterior division p/total -> fractions.py _div -> Fraction._from_coprime_ints -> super(Fraction, cls).__new__(cls)",
+  "root_cause": "Unknown; no deterministic implementation defect yet identified. Do not infer wrong completed arithmetic from this exception.",
+  "completed_prefix": "Not durably recorded; failing replay case and exact completed prefix unknown.",
+  "exit_code": "not retained by the first tool wrapper",
+  "sources": {
+    "moment_v2.py": "a956fa052d9851a5d1f5288bdd383aacded3f9efe5c44786146a9f5d7cdef89d",
+    "moment_v2_probe.py": "79f05339381a0690404e656768ac902b4689da4e5aef45aecb12143507d2c280",
+    "moment_probe.py": "c437f2c9bb030cef29a345660764a389c1b02d4c725382450348fc4b1c382c90",
+    "continuation.py": "c48ec190a8bc180678fccc3dac1625c6f7c87bd4dadcb13de6f00619aa94f187"
+  },
+  "disposition": "One unchanged retry with the same source, input record and destination; preserve this failure independently."
+}

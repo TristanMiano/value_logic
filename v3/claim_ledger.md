@@ -679,3 +679,17 @@ research. All new findings are DEVELOPMENT, with no confirmation promotion.
 | DS-S11-BASELINE | Fixed-reference action differences avoid an unnecessary common component in exact continuation features. | Proposed odd-m derivation gives m+1 versus 2^(m−1)+m dimensions; at m=11, 12 versus 1,035. Primary linear belief compression is a direct antecedent; no empirical external-task or novelty claim. |
 | DS-S11-REGRET | A proposed deterministic flip plan receives an exact box-regret bound and attaining competitor/mean witness by sorting. | 72 saved correlated-prior policy checks and 31,676 corner/plan comparisons. Supplied marginal intervals and known interventions/prices; no acquisition guarantee, general minimax-plan solver or randomized-policy optimum. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | Material usefulness beyond the stipulated examples and strongest ordinary comparison remain open. P3-11 deferred. |
+
+## P3-SEARCH-01-C001 — s03 checkpoint 3
+
+Codex (GPT-6). [Active checkpoint](discovery/s03/cp03.md):
+**182.6096894416666666666666667** research minutes, with
+**57.39031055833333333333333333** still owed to C001. DEVELOPMENT only.
+
+| ID | Constructive finding / delta | Magnitude, comparison and limits |
+|---|---|---|
+| DS-S11-MOMENTS | Depth-indexed moments preserve the stated finite observation planner; sparse policy contrasts can avoid the generic hierarchy. | 60 correlated-prior cases plus correlation/parity/point-mass checks matched explicit belief planning. 100 DAGs matched 2,370 worlds; a 65-bit parity controller compiled to two terms. Supplied semantics and feature acquisition; no new belief-compression principle or general optimality claim. |
+| DS-S10-GRADED | Graded partial cost receipts support a fixed-source anytime bound and delayed domination. | 2,187 domination, 4,374 refinement and 12,422 partial-polynomial checks; bounded-supermartingale methods are established. Native proof authentication and complete acquisition costs remain separate. |
+| DS-S12-BANK | Adaptive posterior policy weights share one ordinary anytime PAC-Bayes event despite incomplete/delayed evaluation. | Exact log-interval arithmetic checks a rational posterior. One supplied fixture improves lower utility from 0.484180 to 0.610157 on delayed evidence at 64 draws. Artificial receipt releases, no measured solver saving or confidence calibration. |
+| DS-S12-TRANSPORT | Known repricing, nonnegative affine version relations and proposed weighted-support bounds reuse the common event. | Algebraic development only; numerical weighted optimization and complete cost comparison remain unimplemented at this checkpoint. |
+| P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | All recorded failures retained; no extensive confirmation, P3-11 promotion or author contribution gate attempted. |

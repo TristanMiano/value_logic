@@ -1,19 +1,19 @@
 {
   "observed": {
-    "utc": "2026-10-12T00:38:29.583934+00:00",
-    "monotonic_ns": 858095625660000,
+    "utc": "2026-10-12T01:15:44.150995+00:00",
+    "monotonic_ns": 860330192719900,
     "runtime": "python-pid-24016-84f4efc5-9b30-40b1-b40a-62085a6f30e6"
   },
   "closed_ns": {
-    "D": 2080988729800,
-    "L": 43632630300,
-    "E": 875510740500,
-    "O": 340048824500,
-    "wait": 299304044600,
+    "D": 3290077825400,
+    "L": 75421003500,
+    "E": 1086421465200,
+    "O": 582019588800,
+    "wait": 310253222800,
     "idle": 0,
-    "unmeasured": 1156775020800
+    "unmeasured": 1686633944700
   },
-  "research_ns": 3000132100600,
+  "research_ns": 4451920294100,
   "session_config": {
     "cycle": "P3-SEARCH-01-C001",
     "cycle_floor_ns": 14400000000000,
@@ -22,32 +22,32 @@
     "clock_source_sha256": "d57a1bbc92962595f9918679ee596db71e8f644a52614112eb2bbd28495cc8e7",
     "note": "Prospective totals from inspected current plan; sessions do not reset an unfinished cycle."
   },
-  "session_research_ns": 3000132100600,
-  "cycle_research_ns": 9504793173000,
-  "program_research_ns": 9504793173000,
-  "research_minutes": 50.002201676666665,
-  "total_engaged_ns": 3340180925100,
+  "session_research_ns": 4451920294100,
+  "cycle_research_ns": 10956581366500,
+  "program_research_ns": 10956581366500,
+  "research_minutes": 74.19867156833334,
+  "total_engaged_ns": 5033939882900,
   "purpose_ns": {
-    "generation": 2855788839600,
-    "screening": 122286872700,
+    "generation": 4266073817000,
+    "screening": 163790088800,
     "synthesis": 22056388300
   },
   "lane_ns": {
-    "X": 2877845227900,
-    "R": 122286872700
+    "X": 4288130205300,
+    "R": 163790088800
   },
   "floor_ns": 14400000000000,
-  "remaining_floor_ns": 4895206827000,
+  "remaining_floor_ns": 3443418633500,
   "historical_phase_ns": 65167882041849,
-  "phase_research_ns": 74672675214849,
+  "phase_research_ns": 76124463408349,
   "open_segment": {
-    "utc": "2026-10-12T00:38:29.583934+00:00",
-    "monotonic_ns": 858095625660000,
+    "utc": "2026-10-12T01:15:44.150995+00:00",
+    "monotonic_ns": 860330192719900,
     "runtime": "python-pid-24016-84f4efc5-9b30-40b1-b40a-62085a6f30e6",
     "mode": "O",
     "lane": "-",
-    "purpose": "publication",
-    "note": "Save source-bound results, exact clock dispositions and durable current pointers"
+    "purpose": "recovery",
+    "note": "Observe after compaction; exclude mixed publication and recovery interval separately"
   },
   "status": "active",
   "applied_dispositions": [
@@ -164,13 +164,63 @@
       "lane": "X",
       "elapsed_ns": 65018046700,
       "reason": "No implementation occurred in this interval: mathematical development expanded to error cancellation and sharp box-regret certificates before code was drafted. No added time."
+    },
+    {
+      "segment_start_monotonic_ns": 858458503115700,
+      "segment_end_monotonic_ns": 858627938583800,
+      "original_mode": "E",
+      "effective_mode": "D",
+      "elapsed_ns": 169435468100,
+      "reason": "After implementing and inspecting the first moment probe, most of the interval derived sparse policy contrasts and the scaling/comparison limitations. No added research time.",
+      "purpose": "generation",
+      "lane": "X"
+    },
+    {
+      "segment_start_monotonic_ns": 858952750808200,
+      "segment_end_monotonic_ns": 859142605894000,
+      "original_mode": "O",
+      "effective_mode": "unmeasured",
+      "elapsed_ns": 189855085800,
+      "reason": "Environment recovery and later mathematical thinking were not separately bounded. Exclude this entire mixed interval conservatively from total engaged as well as research. No added research time.",
+      "purpose": "recovery",
+      "lane": "-"
+    },
+    {
+      "segment_start_monotonic_ns": 859210447993700,
+      "segment_end_monotonic_ns": 859462862708700,
+      "original_mode": "E",
+      "effective_mode": "D",
+      "elapsed_ns": 252414715000,
+      "reason": "The interval began with graded-factor implementation, but predominantly derived the subsequent adaptive policy-bank and PAC-Bayes construction. No added research time.",
+      "purpose": "generation",
+      "lane": "X"
+    },
+    {
+      "segment_start_monotonic_ns": 859636049593300,
+      "segment_end_monotonic_ns": 859886876927400,
+      "original_mode": "E",
+      "effective_mode": "D",
+      "elapsed_ns": 250827334100,
+      "reason": "After the small bound prototype, most work derived repricing, affine transport and weighted support certificates. The mode boundary lagged that shift. No added research time.",
+      "purpose": "generation",
+      "lane": "X"
+    },
+    {
+      "segment_start_monotonic_ns": 859990188881800,
+      "segment_end_monotonic_ns": 860330192719900,
+      "original_mode": "O",
+      "effective_mode": "unmeasured",
+      "elapsed_ns": 340003838100,
+      "reason": "Publication and remote compaction/recovery were not separately bounded. Exclude the whole mixed interval from total engaged; research was already zero.",
+      "purpose": "recovery",
+      "lane": "-"
     }
   ],
   "raw_actuals": "v3/discovery/s03/actuals.json",
   "note": "Closed observed intervals only; no credit for open interval. Explicit dispositions override raw modes without modifying raw files.",
-  "exact_research_minutes": "50.00220167666666666666666667",
-  "exact_cycle_research_minutes": "158.41321955",
-  "exact_program_research_minutes": "158.41321955",
-  "exact_remaining_floor_minutes": "81.58678045",
-  "exact_phase_research_minutes": "1244.54458691415"
+  "exact_research_minutes": "74.19867156833333333333333333",
+  "exact_cycle_research_minutes": "182.6096894416666666666666667",
+  "exact_program_research_minutes": "182.6096894416666666666666667",
+  "exact_remaining_floor_minutes": "57.39031055833333333333333333",
+  "exact_phase_research_minutes": "1268.741056805816666666666667"
 }
