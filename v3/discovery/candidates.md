@@ -4,11 +4,11 @@ Initial research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
 No candidate is promoted; material-positive readiness is unassessed.
 
 **Current continuation — October 12, 2026:** **ChatGPT (GPT-6 Astra Pro)**,
-[s05 checkpoint 1](s05/cp01.md), [effective actuals](s05/effective_actuals.json).
-The first author-directed hourly increment contains
-**60.115281713333333… research minutes**. C001 remains **OPEN** at
-**377.495235816666666… minutes**, beyond its already satisfied four-hour floor;
-phase research is **1463.626603180816666… minutes**. The next increment is one
+[s06 checkpoint 1](s06/cp01.md), [effective actuals](s06/effective_actuals.json).
+The latest author-directed hourly increment contains
+**60.07154650425 research minutes**. C001 remains **OPEN** at
+**437.566782320916666… minutes**, beyond its already satisfied four-hour floor;
+phase research is **1523.698149685066666… minutes**. The next increment is one
 requested hour under the [hourly direction](../decisions/2026-10-12_hourly_handoffs.md),
 not a new four-hour cycle. Earlier Codex attributions, findings and checkpoint
 totals below retain their historical scope. P3-POS01 remains OUTSTANDING.
@@ -392,3 +392,47 @@ Continue from [s05 checkpoint 1](s05/cp01.md) using the
 [portable prompt](CONTINUE.md). C001 is OPEN; P3-POS01 is OUTSTANDING,
 readiness unassessed and P3-11 deferred. This hour supports continued
 constructive discovery, not a confirmation promotion or an 80–90% forecast.
+
+
+## s06 constructive update — October 12, 2026, ChatGPT (GPT-6 Astra Pro)
+
+The prior s05 engineering targets above now have executed continuations.
+[C001 s06 checkpoint 1](s06/cp01.md) closes one author-directed hour at
+**60.07154650425 research minutes**; all three families remain DEVELOPMENT.
+
+- **S28, now linked concretely to S26/S27:** the [persistent native IHS adapter](s06/native_findings.md)
+  is callable with resident SAT learned clauses and HiGHS core/objective reuse.
+  Independently checked branching and [Glucose3 RUP bridges](s06/rup_findings.md)
+  supply lower receipts. Native status/core exports are still not independent
+  lower proofs. Failed warm-start and empty-export attempts are preserved.
+- **Joint calibrated repair:** the [finite-cohort service](s06/joint_findings.md)
+  actually buys cost observations and logical work. Logic-first can close
+  requests before full cost identification. Strong ordinary audit-first and
+  logic-first controls receive the same source and purchase interface; the
+  expensive shared-deficit rule has no established advantage. The separately
+  [executed complete fallback](s06/complete_findings.md) has a finite operation
+  contract, not a future CPU law. Unknown external prices remain unassigned.
+- **Preferred generative development:** [scalar-anchor transport](s06/source_anchor.md)
+  reuses paid lower proofs through rowwise support queries as cost observations
+  refine W. Complete audit and logical quotations keep action choice revisable
+  after observed outcomes and preserve complementary purchase bundles. A
+  [focused review](s06/source_anchor_review.md) binds the clamped evaluator to
+  nonnegative costs and the transport proof to concavity of the true optimum.
+  Next combine these formulas and existing tree/dual/hull bounds in an actual
+  source-bound controller, with warranted full prices or symbolic price regions.
+- **Available alternatives:** [vertex stitching](s06/vertex_derivation.md),
+  [grouped hulls](s06/hull_findings.md), [rational cut duals](s06/cut_dual_derivation.md)
+  and optional [action mixtures](s06/mix_findings.md) have reconstructable
+  derivations and scoped probes. Three improved chronological prefix gates are
+  on one request row and are not executed saved calls. Initial broad-source
+  queries retain zero tolerance closures; insufficient proof banks remain
+  unresolved, not rejected actions. S26 graph and S27 partial-threshold
+  acquisition remain available without being reduced to this fixture.
+
+[Reproduce](s06/reproduce.md) distinguishes replay from fresh acquisitions and
+preserves existing outputs. No robust total-cost superiority, calibrated unknown
+population law or material-positive claim is established. C001/program is OPEN
+at **437.566782320916666… research minutes**, with its four-hour floor already
+satisfied. P3-POS01 is OUTSTANDING, readiness unassessed, P3-11 deferred. Use the
+[current prompt](CONTINUE.md) for the next requested hour, with a fresh observed
+clock after recovering any newer work.

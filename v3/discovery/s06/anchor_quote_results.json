@@ -1,0 +1,323 @@
+{
+  "status": "passed",
+  "evidence": "DEVELOPMENT same-model correspondence check",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T17:37:52.709141+00:00",
+  "hashes": {
+    "anchor_quotes.py": "afa35592c6d800f78a60853a71f59d0a2e28ac279aeaf5b71a1026149de0a97a",
+    "anchor_quote_check.py": "89294895736efed5c5076470b87c5aad1bfeac45e8c713f2fcdb006ff6daae90",
+    "source_anchor.py": "b8f42879ee99ce99c849fb4409e3b9c47c482f1430345ae7259ccb5c25a730bc",
+    "contract_results.json": "1d056bc0d31815a84a40a83fc3f60de72b198e2c2642edac158c7181a6fdb4c0",
+    "contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482"
+  },
+  "source_id": "2a5608d4543687002a6a44f5018a2bf5e2a16abe420a86a5fa0df1efa5e0608f",
+  "admitted_anchor_lowers": [
+    3,
+    3
+  ],
+  "audit_quotes": [
+    {
+      "row": 0,
+      "coordinate": 0,
+      "before": "4",
+      "worst_bound": "4",
+      "guaranteed_gain": "0",
+      "outcomes": [
+        {
+          "value": 3,
+          "remaining_modes": [
+            0
+          ],
+          "response": {
+            "mask": 3,
+            "bound": "3",
+            "repair_gap": "3",
+            "replacement_gap": "-2",
+            "mode_anchor_lowers": [
+              "3",
+              "3"
+            ],
+            "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+            "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+          }
+        },
+        {
+          "value": 4,
+          "remaining_modes": [
+            1
+          ],
+          "response": {
+            "mask": 3,
+            "bound": "4",
+            "repair_gap": "4",
+            "replacement_gap": "-1",
+            "mode_anchor_lowers": [
+              "3",
+              "3"
+            ],
+            "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+            "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+          }
+        }
+      ],
+      "contract": "One exact source-bound cell observation with one of all declared outcomes; external price unassigned"
+    },
+    {
+      "row": 0,
+      "coordinate": 1,
+      "before": "4",
+      "worst_bound": "4",
+      "guaranteed_gain": "0",
+      "outcomes": [
+        {
+          "value": 3,
+          "remaining_modes": [
+            0,
+            1
+          ],
+          "response": {
+            "mask": 3,
+            "bound": "4",
+            "repair_gap": "4",
+            "replacement_gap": "-1",
+            "mode_anchor_lowers": [
+              "3",
+              "3"
+            ],
+            "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+            "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+          }
+        }
+      ],
+      "contract": "One exact source-bound cell observation with one of all declared outcomes; external price unassigned"
+    }
+  ],
+  "logical_complete_quote": {
+    "weights": [
+      3,
+      3
+    ],
+    "budget": 4,
+    "before": "4",
+    "SAT_uniform_cost_upper": 5,
+    "positive_box_margin": 1,
+    "current_uniform_lower": "3",
+    "SAT_bound": "2",
+    "UNSAT_anchor_lowers": [
+      "5",
+      "5"
+    ],
+    "UNSAT_bound": "2",
+    "no_progress_outcome": false,
+    "worst_bound": "2",
+    "guaranteed_gain": "2",
+    "premise": "Two checked outcomes only under an admitted complete-call contract; otherwise unresolved preserves the old bound"
+  },
+  "logical_with_cap_quote": {
+    "weights": [
+      3,
+      3
+    ],
+    "budget": 4,
+    "before": "4",
+    "SAT_uniform_cost_upper": 5,
+    "positive_box_margin": 1,
+    "current_uniform_lower": "3",
+    "SAT_bound": "2",
+    "UNSAT_anchor_lowers": [
+      "5",
+      "5"
+    ],
+    "UNSAT_bound": "2",
+    "no_progress_outcome": true,
+    "worst_bound": "4",
+    "guaranteed_gain": "0",
+    "premise": "Two checked outcomes only under an admitted complete-call contract; otherwise unresolved preserves the old bound"
+  },
+  "finite_provider_quote": {
+    "source_id": "d70a523190b83c8f711f2383927b5416d545a2f7bcce54964de08dd1af5933a9",
+    "variables": 2,
+    "soft_clauses": 2,
+    "maximum_tree_nodes": 7,
+    "maximum_tree_leaves": 4,
+    "provider_per_node": 14,
+    "provider_units": 98,
+    "negative_check_units": 63,
+    "witness_check_units": 10,
+    "tree_compile_units": 33,
+    "witness_compile_units": 16,
+    "raw_proof_words": 18,
+    "admission_units": 17,
+    "objective_update_units": 6,
+    "response_units": 16,
+    "witness_retention_units": 10,
+    "proof_retention_units": 26,
+    "complete_wrapper_units": 269,
+    "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+    "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+    "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+    "cpu_max_seconds": null,
+    "wall_max_seconds": null
+  },
+  "realized_existing_witness": {
+    "model": 2,
+    "violation_mask": 2,
+    "original_cost": 3
+  },
+  "realized_certificate": {
+    "mask": 2,
+    "bound": "0",
+    "repair_gap": "0",
+    "replacement_gap": "-5",
+    "mode_anchor_lowers": [
+      "3",
+      "3"
+    ],
+    "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+    "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+  },
+  "new_native_provider_or_audit_calls": 0,
+  "scope": "The already executed contract tiny example is reconstructed through a new scalar-anchor quotation; its historical two paid calls are not new execution or new validation.",
+  "invoice": {
+    "total": 8242,
+    "by_category": {
+      "check": 16,
+      "tree_compile": 10,
+      "storage": 11,
+      "witness_check": 5,
+      "witness_compile": 16,
+      "source_anchor_compile": 210,
+      "source_anchor_query": 293,
+      "audit_quote": 19,
+      "logical_quote": 72,
+      "input_admission": 7590
+    },
+    "operations": [
+      {
+        "category": "audit_quote",
+        "operation": "declared_partition_and_complete_outcome_maximum",
+        "units": 19
+      },
+      {
+        "category": "check",
+        "operation": "negative_clause_header",
+        "units": 3
+      },
+      {
+        "category": "check",
+        "operation": "negative_literal",
+        "units": 4
+      },
+      {
+        "category": "check",
+        "operation": "negative_proof_node",
+        "units": 5
+      },
+      {
+        "category": "check",
+        "operation": "negative_weight_add",
+        "units": 2
+      },
+      {
+        "category": "check",
+        "operation": "negative_weight_index",
+        "units": 2
+      },
+      {
+        "category": "input_admission",
+        "operation": "eight_byte_words",
+        "units": 6743
+      },
+      {
+        "category": "input_admission",
+        "operation": "hash_blocks",
+        "units": 847
+      },
+      {
+        "category": "logical_quote",
+        "operation": "coordinate_enclosure_and_scalar_cut_transport",
+        "units": 72
+      },
+      {
+        "category": "source_anchor_compile",
+        "operation": "mode_action_costs_and_lower_scaling",
+        "units": 210
+      },
+      {
+        "category": "source_anchor_query",
+        "operation": "cohort_sums_and_clipped_regret",
+        "units": 137
+      },
+      {
+        "category": "source_anchor_query",
+        "operation": "row_mode_contrast_extrema",
+        "units": 156
+      },
+      {
+        "category": "storage",
+        "operation": "compiled_tree_leaf_masks",
+        "units": 3
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 8
+      },
+      {
+        "category": "tree_compile",
+        "operation": "forced_clause_coefficient",
+        "units": 2
+      },
+      {
+        "category": "tree_compile",
+        "operation": "hard_leaf_omitted",
+        "units": 1
+      },
+      {
+        "category": "tree_compile",
+        "operation": "leaf_mask_deduplication",
+        "units": 2
+      },
+      {
+        "category": "tree_compile",
+        "operation": "proof_node_read",
+        "units": 5
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 2
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 3
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 6
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 2
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 4
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 4
+      }
+    ]
+  },
+  "timing": {
+    "wall_ns": 3421307,
+    "process_ns": 39415024
+  },
+  "accounting": "Prospective finite-provider quote is separate from actual replay arithmetic. External audit price, native/host timing laws and full economic conversion remain unspecified."
+}

@@ -1,0 +1,1594 @@
+{
+  "status": "passed",
+  "evidence": "DEVELOPMENT same-model focused reconstruction",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T17:55:05.928453+00:00",
+  "implementation_sha256": "51194fa9062a4b30b525b46cad8d4962eedaa68d94e9e3a29994646440215d6e",
+  "input_hashes": {
+    "joint_v2_results.json": "e463a48d97564d178489e36bde281e99f35ac3c51c9dbc0202fdc6e51ef99074",
+    "joint_source.json": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+    "joint_repair_v2.py": "5ff2523118bb0c84d58f42f9e5e25a6292a149e49a048c3d7ac21f68a0bfb209",
+    "joint_repair.py": "7e1a96f4a05107174554acc701ae43026528d6041e570500d840fb1b76060384",
+    "native_repair.py": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+    "native_stream.py": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+    "joint_check.py": "51194fa9062a4b30b525b46cad8d4962eedaa68d94e9e3a29994646440215d6e"
+  },
+  "input_bytes": {
+    "joint_v2_results.json": 3103145,
+    "joint_source.json": 3121,
+    "joint_repair_v2.py": 19440,
+    "joint_repair.py": 25327,
+    "native_repair.py": 20460,
+    "native_stream.py": 18159,
+    "joint_check.py": 17145
+  },
+  "initial_raw_and_compact_readmission": {
+    "scope": "Actual raw check and exact binding of existing cache pointwise witness/tree projection; cell geometry unused",
+    "hashes": {
+      "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+    },
+    "bytes": {
+      "maxsat_repair_results.json": 544143,
+      "regions_bundle.json": 8037,
+      "maxsat_repair.py": 21856,
+      "maxsat_reprice.py": 16431
+    },
+    "invoices": {
+      "admission_and_binding": {
+        "total": 84994,
+        "by_category": {
+          "raw_admission": 83037,
+          "cache_projection_binding": 1957
+        },
+        "operations": [
+          {
+            "category": "cache_projection_binding",
+            "operation": "negative_proof_id_and_fields",
+            "units": 1580
+          },
+          {
+            "category": "cache_projection_binding",
+            "operation": "witness_id_and_fields",
+            "units": 377
+          },
+          {
+            "category": "raw_admission",
+            "operation": "eight_byte_words",
+            "units": 73809
+          },
+          {
+            "category": "raw_admission",
+            "operation": "sha256_message_blocks",
+            "units": 9228
+          }
+        ]
+      },
+      "source_and_witness_check": {
+        "total": 4374,
+        "by_category": {
+          "source_admission": 1984,
+          "witness_check": 1445,
+          "witness_compile": 655,
+          "storage": 290
+        },
+        "operations": [
+          {
+            "category": "source_admission",
+            "operation": "checked_old_frontier_receipt",
+            "units": 128
+          },
+          {
+            "category": "source_admission",
+            "operation": "immutable_clause_and_weight_words",
+            "units": 1856
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 290
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 600
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 845
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 162
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 29
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 232
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 232
+          }
+        ]
+      },
+      "negative_proof_check_and_compile": {
+        "total": 3601,
+        "by_category": {
+          "check": 2282,
+          "tree_compile": 1154,
+          "storage": 165
+        },
+        "operations": [
+          {
+            "category": "check",
+            "operation": "negative_clause_header",
+            "units": 425
+          },
+          {
+            "category": "check",
+            "operation": "negative_literal",
+            "units": 731
+          },
+          {
+            "category": "check",
+            "operation": "negative_proof_node",
+            "units": 582
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_add",
+            "units": 272
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_index",
+            "units": 272
+          },
+          {
+            "category": "storage",
+            "operation": "compiled_tree_leaf_masks",
+            "units": 165
+          },
+          {
+            "category": "tree_compile",
+            "operation": "forced_clause_coefficient",
+            "units": 272
+          },
+          {
+            "category": "tree_compile",
+            "operation": "hard_leaf_omitted",
+            "units": 153
+          },
+          {
+            "category": "tree_compile",
+            "operation": "leaf_mask_deduplication",
+            "units": 147
+          },
+          {
+            "category": "tree_compile",
+            "operation": "proof_node_read",
+            "units": 582
+          }
+        ]
+      }
+    },
+    "total_declared_units": 92969,
+    "checked_witnesses": 29,
+    "checked_trees": 18,
+    "timing": {
+      "process_ns": 71595956,
+      "wall_ns": 7583783
+    }
+  },
+  "input_read_hash_invoice": {
+    "total": 450962,
+    "by_category": {
+      "input_read_hash": 450962
+    },
+    "operations": [
+      {
+        "category": "input_read_hash",
+        "operation": "eight_byte_words",
+        "units": 400853
+      },
+      {
+        "category": "input_read_hash",
+        "operation": "sha256_blocks",
+        "units": 50109
+      }
+    ]
+  },
+  "new_native_calls": 0,
+  "new_provider_calls": 0,
+  "new_cost_observations": 0,
+  "agent_clock_credit": 0,
+  "scope": "Recheck admitted compact projection, observed source values, new witnesses and raw branching proofs; independently reconstruct all request/event certificates and final gates.",
+  "exclusions": "No portfolio-quote or policy-optimality audit; no independent calibration of runtime prices; no new diagnostic optimum or validation population.",
+  "arms": [
+    {
+      "policy": "shared_deficit",
+      "summary": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 16,
+        "logical_purchases": 14,
+        "unresolved": 0
+      },
+      "new_witness_receipts_readmitted": 5,
+      "new_branching_receipts_readmitted": 9,
+      "final_gates": [
+        {
+          "request": 0,
+          "row": 0,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "f7cec9a91b3001e671f67ed8586f2a8c870b02a31f85339d28625721b9d6edab",
+          "closed_from_cache": false
+        },
+        {
+          "request": 1,
+          "row": 1,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 9,
+          "proof_id": "fa4c9da73340b2c0c566d81605fc79a30f07414ee28c1486c4e756d0603c008f",
+          "closed_from_cache": false
+        },
+        {
+          "request": 2,
+          "row": 2,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 67,
+          "proof_id": "01f0548249e2ed2158c520de293fa5c623206148d291def8ebb82f1569216c98",
+          "closed_from_cache": false
+        },
+        {
+          "request": 3,
+          "row": 3,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 65,
+          "proof_id": "e29b40f62bb9cf5b72f1241d667ffb6f65906236a16911a44f70799f24f7ca84",
+          "closed_from_cache": true
+        },
+        {
+          "request": 4,
+          "row": 4,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 1,
+          "proof_id": "nonnegative_objective",
+          "closed_from_cache": true
+        },
+        {
+          "request": 5,
+          "row": 5,
+          "status": "checked_action",
+          "bound": 2,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 128,
+          "proof_id": "238f49f2dee5a0d4e718dd29cd49f5e3953161707b9eb7a228d91071d1cab57c",
+          "closed_from_cache": false
+        },
+        {
+          "request": 6,
+          "row": 6,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "d3434378ad63720a400c13cf4fe15a47e9f388088fe439a6f4a92ef9894af8c6",
+          "closed_from_cache": true
+        },
+        {
+          "request": 7,
+          "row": 7,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 24,
+          "proof_id": "2f6dcc5fc9efd7eb2683269e4f9725f6d9b3c90905b8a4e4e7a88bbd89149dc3",
+          "closed_from_cache": false
+        },
+        {
+          "request": 8,
+          "row": 8,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 200,
+          "proof_id": "986d41c09831543f5176e0bc677ed70fb87eaa41aed769adddf4f1b12e377db0",
+          "closed_from_cache": false
+        },
+        {
+          "request": 9,
+          "row": 9,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 64,
+          "proof_id": "012a4be9b91e563d1c6ef99ebab04cc08707116e38c7a59c6f722da217919720",
+          "closed_from_cache": false
+        },
+        {
+          "request": 10,
+          "row": 10,
+          "status": "checked_action",
+          "bound": 2,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 8,
+          "proof_id": "5aaa7acb6520e38aa92b5e6f585432e22e589dfd76b886b551b309bcfcd2046a",
+          "closed_from_cache": false
+        },
+        {
+          "request": 11,
+          "row": 11,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 129,
+          "proof_id": "82843f37a01ac674ca907746d615a81cf24e0490f03812f3bdf20df55ed9e2e7",
+          "closed_from_cache": false
+        },
+        {
+          "request": 12,
+          "row": 12,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "da3d0f9108f68316239489f0a3427d9220f37ffd725db41f805fbc4c5f04eefb",
+          "closed_from_cache": true
+        },
+        {
+          "request": 13,
+          "row": 13,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 132,
+          "proof_id": "6c2d7c3025daf93c168691900cc63c3136d7c382313d54223e9d0b1482598bff",
+          "closed_from_cache": false
+        },
+        {
+          "request": 14,
+          "row": 14,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 24,
+          "proof_id": "9dc348a9982631d193dc30f2b14c18523bcdc3aa041728933710f8e5e6e09df6",
+          "closed_from_cache": false
+        },
+        {
+          "request": 15,
+          "row": 15,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "replace",
+          "model": null,
+          "proof_id": "9cf0884fe668cfab62ffc636a35853d1609e1a4fd39c00df41ddbc28c43f881b",
+          "closed_from_cache": true
+        }
+      ],
+      "invoice": {
+        "total": 554446,
+        "by_category": {
+          "cost_readmission": 392,
+          "certificate_reconstruction": 550248,
+          "new_receipt_readmission": 280,
+          "witness_check": 238,
+          "witness_compile": 103,
+          "storage": 149,
+          "checked_retention": 260,
+          "check": 1601,
+          "tree_compile": 791,
+          "output_reconstruction": 384
+        },
+        "operations": [
+          {
+            "category": "certificate_reconstruction",
+            "operation": "direct_mode_dot",
+            "units": 388880
+          },
+          {
+            "category": "certificate_reconstruction",
+            "operation": "pair_constraints_and_minimum",
+            "units": 4079
+          },
+          {
+            "category": "certificate_reconstruction",
+            "operation": "row_maximum_and_sum",
+            "units": 157289
+          },
+          {
+            "category": "check",
+            "operation": "negative_clause_header",
+            "units": 300
+          },
+          {
+            "category": "check",
+            "operation": "negative_literal",
+            "units": 530
+          },
+          {
+            "category": "check",
+            "operation": "negative_proof_node",
+            "units": 401
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_add",
+            "units": 185
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_index",
+            "units": 185
+          },
+          {
+            "category": "checked_retention",
+            "operation": "new_lower_proof",
+            "units": 180
+          },
+          {
+            "category": "checked_retention",
+            "operation": "new_witness",
+            "units": 80
+          },
+          {
+            "category": "cost_readmission",
+            "operation": "declared_modes_and_cohort",
+            "units": 72
+          },
+          {
+            "category": "cost_readmission",
+            "operation": "receipt_binding_committed_value_and_filter",
+            "units": 320
+          },
+          {
+            "category": "new_receipt_readmission",
+            "operation": "source_objective_and_budget_binding",
+            "units": 280
+          },
+          {
+            "category": "output_reconstruction",
+            "operation": "request_source_gate_and_response",
+            "units": 384
+          },
+          {
+            "category": "storage",
+            "operation": "compiled_tree_leaf_masks",
+            "units": 99
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 50
+          },
+          {
+            "category": "tree_compile",
+            "operation": "forced_clause_coefficient",
+            "units": 185
+          },
+          {
+            "category": "tree_compile",
+            "operation": "hard_leaf_omitted",
+            "units": 115
+          },
+          {
+            "category": "tree_compile",
+            "operation": "leaf_mask_deduplication",
+            "units": 90
+          },
+          {
+            "category": "tree_compile",
+            "operation": "proof_node_read",
+            "units": 401
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 108
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 130
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 18
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 5
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 40
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 40
+          }
+        ]
+      },
+      "timing": {
+        "wall_ns": 63286727,
+        "process_ns": 267787123
+      }
+    },
+    {
+      "policy": "audit_first",
+      "summary": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 14,
+        "logical_purchases": 13,
+        "unresolved": 0
+      },
+      "new_witness_receipts_readmitted": 4,
+      "new_branching_receipts_readmitted": 9,
+      "final_gates": [
+        {
+          "request": 0,
+          "row": 0,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "0b4b6168d685985a6a854c94550e08b1246250c2d2a4fe68ad52c43a0c0b85f3",
+          "closed_from_cache": false
+        },
+        {
+          "request": 1,
+          "row": 1,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 9,
+          "proof_id": "fa4c9da73340b2c0c566d81605fc79a30f07414ee28c1486c4e756d0603c008f",
+          "closed_from_cache": false
+        },
+        {
+          "request": 2,
+          "row": 2,
+          "status": "checked_action",
+          "bound": 2,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 10,
+          "proof_id": "f878ecfe7c4f71a0ab149eb7faf9af6ae5e902d8d4d98a749653ab6d5ef071e4",
+          "closed_from_cache": false
+        },
+        {
+          "request": 3,
+          "row": 3,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 65,
+          "proof_id": "e29b40f62bb9cf5b72f1241d667ffb6f65906236a16911a44f70799f24f7ca84",
+          "closed_from_cache": true
+        },
+        {
+          "request": 4,
+          "row": 4,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 1,
+          "proof_id": "nonnegative_objective",
+          "closed_from_cache": true
+        },
+        {
+          "request": 5,
+          "row": 5,
+          "status": "checked_action",
+          "bound": 2,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 128,
+          "proof_id": "238f49f2dee5a0d4e718dd29cd49f5e3953161707b9eb7a228d91071d1cab57c",
+          "closed_from_cache": false
+        },
+        {
+          "request": 6,
+          "row": 6,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "d3434378ad63720a400c13cf4fe15a47e9f388088fe439a6f4a92ef9894af8c6",
+          "closed_from_cache": true
+        },
+        {
+          "request": 7,
+          "row": 7,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 24,
+          "proof_id": "2f6dcc5fc9efd7eb2683269e4f9725f6d9b3c90905b8a4e4e7a88bbd89149dc3",
+          "closed_from_cache": false
+        },
+        {
+          "request": 8,
+          "row": 8,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 200,
+          "proof_id": "986d41c09831543f5176e0bc677ed70fb87eaa41aed769adddf4f1b12e377db0",
+          "closed_from_cache": false
+        },
+        {
+          "request": 9,
+          "row": 9,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 64,
+          "proof_id": "012a4be9b91e563d1c6ef99ebab04cc08707116e38c7a59c6f722da217919720",
+          "closed_from_cache": false
+        },
+        {
+          "request": 10,
+          "row": 10,
+          "status": "checked_action",
+          "bound": 2,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 8,
+          "proof_id": "5aaa7acb6520e38aa92b5e6f585432e22e589dfd76b886b551b309bcfcd2046a",
+          "closed_from_cache": false
+        },
+        {
+          "request": 11,
+          "row": 11,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 129,
+          "proof_id": "82843f37a01ac674ca907746d615a81cf24e0490f03812f3bdf20df55ed9e2e7",
+          "closed_from_cache": false
+        },
+        {
+          "request": 12,
+          "row": 12,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "da3d0f9108f68316239489f0a3427d9220f37ffd725db41f805fbc4c5f04eefb",
+          "closed_from_cache": true
+        },
+        {
+          "request": 13,
+          "row": 13,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 132,
+          "proof_id": "6c2d7c3025daf93c168691900cc63c3136d7c382313d54223e9d0b1482598bff",
+          "closed_from_cache": false
+        },
+        {
+          "request": 14,
+          "row": 14,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 24,
+          "proof_id": "9dc348a9982631d193dc30f2b14c18523bcdc3aa041728933710f8e5e6e09df6",
+          "closed_from_cache": false
+        },
+        {
+          "request": 15,
+          "row": 15,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "replace",
+          "model": null,
+          "proof_id": "9cf0884fe668cfab62ffc636a35853d1609e1a4fd39c00df41ddbc28c43f881b",
+          "closed_from_cache": true
+        }
+      ],
+      "invoice": {
+        "total": 550233,
+        "by_category": {
+          "cost_readmission": 361,
+          "certificate_reconstruction": 546027,
+          "new_receipt_readmission": 260,
+          "witness_check": 195,
+          "witness_compile": 80,
+          "storage": 144,
+          "checked_retention": 249,
+          "check": 1699,
+          "tree_compile": 834,
+          "output_reconstruction": 384
+        },
+        "operations": [
+          {
+            "category": "certificate_reconstruction",
+            "operation": "direct_mode_dot",
+            "units": 390688
+          },
+          {
+            "category": "certificate_reconstruction",
+            "operation": "pair_constraints_and_minimum",
+            "units": 3841
+          },
+          {
+            "category": "certificate_reconstruction",
+            "operation": "row_maximum_and_sum",
+            "units": 151498
+          },
+          {
+            "category": "check",
+            "operation": "negative_clause_header",
+            "units": 320
+          },
+          {
+            "category": "check",
+            "operation": "negative_literal",
+            "units": 558
+          },
+          {
+            "category": "check",
+            "operation": "negative_proof_node",
+            "units": 419
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_add",
+            "units": 201
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_index",
+            "units": 201
+          },
+          {
+            "category": "checked_retention",
+            "operation": "new_lower_proof",
+            "units": 185
+          },
+          {
+            "category": "checked_retention",
+            "operation": "new_witness",
+            "units": 64
+          },
+          {
+            "category": "cost_readmission",
+            "operation": "declared_modes_and_cohort",
+            "units": 72
+          },
+          {
+            "category": "cost_readmission",
+            "operation": "receipt_binding_committed_value_and_filter",
+            "units": 289
+          },
+          {
+            "category": "new_receipt_readmission",
+            "operation": "source_objective_and_budget_binding",
+            "units": 260
+          },
+          {
+            "category": "output_reconstruction",
+            "operation": "request_source_gate_and_response",
+            "units": 384
+          },
+          {
+            "category": "storage",
+            "operation": "compiled_tree_leaf_masks",
+            "units": 104
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 40
+          },
+          {
+            "category": "tree_compile",
+            "operation": "forced_clause_coefficient",
+            "units": 201
+          },
+          {
+            "category": "tree_compile",
+            "operation": "hard_leaf_omitted",
+            "units": 119
+          },
+          {
+            "category": "tree_compile",
+            "operation": "leaf_mask_deduplication",
+            "units": 95
+          },
+          {
+            "category": "tree_compile",
+            "operation": "proof_node_read",
+            "units": 419
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 90
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 105
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 12
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 4
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 32
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 32
+          }
+        ]
+      },
+      "timing": {
+        "wall_ns": 49152145,
+        "process_ns": 49143028
+      }
+    },
+    {
+      "policy": "logic_first",
+      "summary": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 14,
+        "logical_purchases": 18,
+        "unresolved": 0
+      },
+      "new_witness_receipts_readmitted": 5,
+      "new_branching_receipts_readmitted": 13,
+      "final_gates": [
+        {
+          "request": 0,
+          "row": 0,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "319f19112d027a8cf4ece01942293329a71f0403d146f5e8c755d06cb6a80809",
+          "closed_from_cache": false
+        },
+        {
+          "request": 1,
+          "row": 1,
+          "status": "checked_action",
+          "bound": 3,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 9,
+          "proof_id": "fa4c9da73340b2c0c566d81605fc79a30f07414ee28c1486c4e756d0603c008f",
+          "closed_from_cache": false
+        },
+        {
+          "request": 2,
+          "row": 2,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 67,
+          "proof_id": "d972c1ceb408bd1bc27327261df3a0dbf65384224badcd095655551b1cfe5b07",
+          "closed_from_cache": false
+        },
+        {
+          "request": 3,
+          "row": 3,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 65,
+          "proof_id": "e29b40f62bb9cf5b72f1241d667ffb6f65906236a16911a44f70799f24f7ca84",
+          "closed_from_cache": true
+        },
+        {
+          "request": 4,
+          "row": 4,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 1,
+          "proof_id": "nonnegative_objective",
+          "closed_from_cache": true
+        },
+        {
+          "request": 5,
+          "row": 5,
+          "status": "checked_action",
+          "bound": 3,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 128,
+          "proof_id": "238f49f2dee5a0d4e718dd29cd49f5e3953161707b9eb7a228d91071d1cab57c",
+          "closed_from_cache": false
+        },
+        {
+          "request": 6,
+          "row": 6,
+          "status": "checked_action",
+          "bound": 3,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "d3434378ad63720a400c13cf4fe15a47e9f388088fe439a6f4a92ef9894af8c6",
+          "closed_from_cache": true
+        },
+        {
+          "request": 7,
+          "row": 7,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 24,
+          "proof_id": "2f6dcc5fc9efd7eb2683269e4f9725f6d9b3c90905b8a4e4e7a88bbd89149dc3",
+          "closed_from_cache": false
+        },
+        {
+          "request": 8,
+          "row": 8,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 200,
+          "proof_id": "986d41c09831543f5176e0bc677ed70fb87eaa41aed769adddf4f1b12e377db0",
+          "closed_from_cache": false
+        },
+        {
+          "request": 9,
+          "row": 9,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 64,
+          "proof_id": "012a4be9b91e563d1c6ef99ebab04cc08707116e38c7a59c6f722da217919720",
+          "closed_from_cache": false
+        },
+        {
+          "request": 10,
+          "row": 10,
+          "status": "checked_action",
+          "bound": 2,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 8,
+          "proof_id": "5aaa7acb6520e38aa92b5e6f585432e22e589dfd76b886b551b309bcfcd2046a",
+          "closed_from_cache": false
+        },
+        {
+          "request": 11,
+          "row": 11,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 129,
+          "proof_id": "5903bca8b39855745dac6ab7c2e28ed7ce8ce5f9667766f94a165060fb1f4420",
+          "closed_from_cache": false
+        },
+        {
+          "request": 12,
+          "row": 12,
+          "status": "checked_action",
+          "bound": 3,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "da3d0f9108f68316239489f0a3427d9220f37ffd725db41f805fbc4c5f04eefb",
+          "closed_from_cache": true
+        },
+        {
+          "request": 13,
+          "row": 13,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 132,
+          "proof_id": "6c2d7c3025daf93c168691900cc63c3136d7c382313d54223e9d0b1482598bff",
+          "closed_from_cache": false
+        },
+        {
+          "request": 14,
+          "row": 14,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 24,
+          "proof_id": "9dc348a9982631d193dc30f2b14c18523bcdc3aa041728933710f8e5e6e09df6",
+          "closed_from_cache": false
+        },
+        {
+          "request": 15,
+          "row": 15,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "replace",
+          "model": null,
+          "proof_id": "9cf0884fe668cfab62ffc636a35853d1609e1a4fd39c00df41ddbc28c43f881b",
+          "closed_from_cache": true
+        }
+      ],
+      "invoice": {
+        "total": 1165384,
+        "by_category": {
+          "cost_readmission": 361,
+          "certificate_reconstruction": 1160079,
+          "new_receipt_readmission": 360,
+          "witness_check": 238,
+          "witness_compile": 103,
+          "storage": 193,
+          "checked_retention": 340,
+          "check": 2225,
+          "tree_compile": 1101,
+          "output_reconstruction": 384
+        },
+        "operations": [
+          {
+            "category": "certificate_reconstruction",
+            "operation": "direct_mode_dot",
+            "units": 894288
+          },
+          {
+            "category": "certificate_reconstruction",
+            "operation": "pair_constraints_and_minimum",
+            "units": 6426
+          },
+          {
+            "category": "certificate_reconstruction",
+            "operation": "row_maximum_and_sum",
+            "units": 259365
+          },
+          {
+            "category": "check",
+            "operation": "negative_clause_header",
+            "units": 418
+          },
+          {
+            "category": "check",
+            "operation": "negative_literal",
+            "units": 724
+          },
+          {
+            "category": "check",
+            "operation": "negative_proof_node",
+            "units": 553
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_add",
+            "units": 265
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_index",
+            "units": 265
+          },
+          {
+            "category": "checked_retention",
+            "operation": "new_lower_proof",
+            "units": 260
+          },
+          {
+            "category": "checked_retention",
+            "operation": "new_witness",
+            "units": 80
+          },
+          {
+            "category": "cost_readmission",
+            "operation": "declared_modes_and_cohort",
+            "units": 72
+          },
+          {
+            "category": "cost_readmission",
+            "operation": "receipt_binding_committed_value_and_filter",
+            "units": 289
+          },
+          {
+            "category": "new_receipt_readmission",
+            "operation": "source_objective_and_budget_binding",
+            "units": 360
+          },
+          {
+            "category": "output_reconstruction",
+            "operation": "request_source_gate_and_response",
+            "units": 384
+          },
+          {
+            "category": "storage",
+            "operation": "compiled_tree_leaf_masks",
+            "units": 143
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 50
+          },
+          {
+            "category": "tree_compile",
+            "operation": "forced_clause_coefficient",
+            "units": 265
+          },
+          {
+            "category": "tree_compile",
+            "operation": "hard_leaf_omitted",
+            "units": 153
+          },
+          {
+            "category": "tree_compile",
+            "operation": "leaf_mask_deduplication",
+            "units": 130
+          },
+          {
+            "category": "tree_compile",
+            "operation": "proof_node_read",
+            "units": 553
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 108
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 130
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 18
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 5
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 40
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 40
+          }
+        ]
+      },
+      "timing": {
+        "wall_ns": 100523246,
+        "process_ns": 100338744
+      }
+    },
+    {
+      "policy": "certificate_directed",
+      "summary": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 1,
+        "cost_observations": 15,
+        "logical_purchases": 23,
+        "unresolved": 0
+      },
+      "new_witness_receipts_readmitted": 7,
+      "new_branching_receipts_readmitted": 16,
+      "final_gates": [
+        {
+          "request": 0,
+          "row": 0,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "f2688e126179f6bde95413f565d91c608fca27c96ce291c6e511b3f5a7d88076",
+          "closed_from_cache": false
+        },
+        {
+          "request": 1,
+          "row": 1,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 9,
+          "proof_id": "fa4c9da73340b2c0c566d81605fc79a30f07414ee28c1486c4e756d0603c008f",
+          "closed_from_cache": false
+        },
+        {
+          "request": 2,
+          "row": 2,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 10,
+          "proof_id": "7d675d11ae9e13aaddb18d399cdda22b99306043c3229efefcad656da8acf52d",
+          "closed_from_cache": false
+        },
+        {
+          "request": 3,
+          "row": 3,
+          "status": "checked_action",
+          "bound": 2,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 65,
+          "proof_id": "5ffa5a05385921d1dd29973e96760d9d3d967db956d45a4b18c4077f9585a6f6",
+          "closed_from_cache": false
+        },
+        {
+          "request": 4,
+          "row": 4,
+          "status": "checked_action",
+          "bound": 2,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 1,
+          "proof_id": "a492d5083d00b5c8919533d38e9c3dd149d8600bdfa66d6e7fdc5ba93ce79b88",
+          "closed_from_cache": false
+        },
+        {
+          "request": 5,
+          "row": 5,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 73,
+          "proof_id": "1d6e0ee86a3b030c44d560ca97f16a47e7d8dae0a739984492c0a520f5e35677",
+          "closed_from_cache": false
+        },
+        {
+          "request": 6,
+          "row": 6,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "7d4ca61dc1f900694e6558815b42b455ef8dee20938329586dd2d11f5dc54d86",
+          "closed_from_cache": false
+        },
+        {
+          "request": 7,
+          "row": 7,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 24,
+          "proof_id": "2f6dcc5fc9efd7eb2683269e4f9725f6d9b3c90905b8a4e4e7a88bbd89149dc3",
+          "closed_from_cache": false
+        },
+        {
+          "request": 8,
+          "row": 8,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 200,
+          "proof_id": "986d41c09831543f5176e0bc677ed70fb87eaa41aed769adddf4f1b12e377db0",
+          "closed_from_cache": false
+        },
+        {
+          "request": 9,
+          "row": 9,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 64,
+          "proof_id": "012a4be9b91e563d1c6ef99ebab04cc08707116e38c7a59c6f722da217919720",
+          "closed_from_cache": false
+        },
+        {
+          "request": 10,
+          "row": 10,
+          "status": "checked_action",
+          "bound": 2,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 8,
+          "proof_id": "5aaa7acb6520e38aa92b5e6f585432e22e589dfd76b886b551b309bcfcd2046a",
+          "closed_from_cache": false
+        },
+        {
+          "request": 11,
+          "row": 11,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 129,
+          "proof_id": "df2ea46dbe0f8ccc95bd302ae52490cfdc3686aa1b0a8eeeafbe24a313062023",
+          "closed_from_cache": false
+        },
+        {
+          "request": 12,
+          "row": 12,
+          "status": "checked_action",
+          "bound": 1,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 16,
+          "proof_id": "261bb20ed700780baac5e6462709adba7618ea49d3611054f12b434a74f8e625",
+          "closed_from_cache": false
+        },
+        {
+          "request": 13,
+          "row": 13,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 132,
+          "proof_id": "6c2d7c3025daf93c168691900cc63c3136d7c382313d54223e9d0b1482598bff",
+          "closed_from_cache": false
+        },
+        {
+          "request": 14,
+          "row": 14,
+          "status": "checked_action",
+          "bound": 4,
+          "tolerance": 4,
+          "action": "repair",
+          "model": 24,
+          "proof_id": "9dc348a9982631d193dc30f2b14c18523bcdc3aa041728933710f8e5e6e09df6",
+          "closed_from_cache": false
+        },
+        {
+          "request": 15,
+          "row": 15,
+          "status": "checked_action",
+          "bound": 0,
+          "tolerance": 4,
+          "action": "replace",
+          "model": null,
+          "proof_id": "9cf0884fe668cfab62ffc636a35853d1609e1a4fd39c00df41ddbc28c43f881b",
+          "closed_from_cache": true
+        }
+      ],
+      "invoice": {
+        "total": 1013985,
+        "by_category": {
+          "cost_readmission": 376,
+          "certificate_reconstruction": 1007725,
+          "new_receipt_readmission": 460,
+          "witness_check": 350,
+          "witness_compile": 145,
+          "storage": 244,
+          "checked_retention": 430,
+          "check": 2584,
+          "tree_compile": 1287,
+          "output_reconstruction": 384
+        },
+        "operations": [
+          {
+            "category": "certificate_reconstruction",
+            "operation": "direct_mode_dot",
+            "units": 751568
+          },
+          {
+            "category": "certificate_reconstruction",
+            "operation": "pair_constraints_and_minimum",
+            "units": 6144
+          },
+          {
+            "category": "certificate_reconstruction",
+            "operation": "row_maximum_and_sum",
+            "units": 250013
+          },
+          {
+            "category": "check",
+            "operation": "negative_clause_header",
+            "units": 485
+          },
+          {
+            "category": "check",
+            "operation": "negative_literal",
+            "units": 829
+          },
+          {
+            "category": "check",
+            "operation": "negative_proof_node",
+            "units": 644
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_add",
+            "units": 313
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_index",
+            "units": 313
+          },
+          {
+            "category": "checked_retention",
+            "operation": "new_lower_proof",
+            "units": 318
+          },
+          {
+            "category": "checked_retention",
+            "operation": "new_witness",
+            "units": 112
+          },
+          {
+            "category": "cost_readmission",
+            "operation": "declared_modes_and_cohort",
+            "units": 72
+          },
+          {
+            "category": "cost_readmission",
+            "operation": "receipt_binding_committed_value_and_filter",
+            "units": 304
+          },
+          {
+            "category": "new_receipt_readmission",
+            "operation": "source_objective_and_budget_binding",
+            "units": 460
+          },
+          {
+            "category": "output_reconstruction",
+            "operation": "request_source_gate_and_response",
+            "units": 384
+          },
+          {
+            "category": "storage",
+            "operation": "compiled_tree_leaf_masks",
+            "units": 174
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 70
+          },
+          {
+            "category": "tree_compile",
+            "operation": "forced_clause_coefficient",
+            "units": 313
+          },
+          {
+            "category": "tree_compile",
+            "operation": "hard_leaf_omitted",
+            "units": 172
+          },
+          {
+            "category": "tree_compile",
+            "operation": "leaf_mask_deduplication",
+            "units": 158
+          },
+          {
+            "category": "tree_compile",
+            "operation": "proof_node_read",
+            "units": 644
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 156
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 194
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 26
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 7
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 56
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 56
+          }
+        ]
+      },
+      "timing": {
+        "wall_ns": 90025887,
+        "process_ns": 89972454
+      }
+    }
+  ],
+  "timing": {
+    "wall_ns": 335389578,
+    "process_ns": 763432417
+  },
+  "total_declared_units": 3827979,
+  "accounting": "Read/hash, raw proof and witness readmission, direct exact support and retention tariffs are explicit. Python/JSON execution is timed; serialization/allocation/storage bytes are not a full economic price. Historical acquisition is not rebilled as new calls. No helper time is credited."
+}

@@ -5,15 +5,21 @@ Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_a
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
 Latest execution contributor: **ChatGPT (GPT-6 Astra Pro)**; earlier
-**Codex (GPT-6)** work is preserved. [Current checkpoint](s05/cp01.md),
-[portfolio](candidates.md), [exact effective actuals](s05/effective_actuals.json).
+**Codex (GPT-6)** work is preserved. [Current checkpoint](s06/cp01.md),
+[portfolio](candidates.md), [exact effective actuals](s06/effective_actuals.json).
 
-Current s05 direction: **calibrated repair**, choosing between paid cost
-observations and logical evidence to certify a useful action. Paid graph
-calibration and partially observed threshold values remain connected branches.
-The actual reusable-proof service completes 80 repair requests and exposes
-setup-sensitive costs; all results remain DEVELOPMENT. The author directs
-[one-hour increments](../decisions/2026-10-12_hourly_handoffs.md). The s05 hour
+Current s06 direction: **calibrated repair**, choosing between paid cost
+observations and logical evidence to certify a useful action. The
+[persistent native service](s06/native_findings.md), independently checked
+[RUP bridge](s06/rup_findings.md), [joint source service](s06/joint_findings.md)
+and [complete finite fallback](s06/complete_findings.md) are callable.
+[Scalar-anchor transport](s06/source_anchor.md) now reuses paid lower proofs
+as observations refine the common cost source. Next integrate these bounds
+and complete audit/proof quotations into a small actual controller run.
+Paid graph calibration and threshold value acquisition remain connected
+alternatives. All results remain DEVELOPMENT; no robust total-cost advantage
+is established. The author directs
+[one-hour increments](../decisions/2026-10-12_hourly_handoffs.md). The s06 hour
 is closed, C001 remains open beyond its satisfied floor, and the
 [portable prompt](CONTINUE.md) governs the next requested increment.
 
@@ -64,7 +70,7 @@ storage and failure costs and name the strongest relevant pre-existing controls.
 | Central / high O forecast | 15 / 30 minutes, outside research |
 | Purpose priority | 75% generation/development; 20% cheap screening; 5% substantive synthesis/readiness |
 | Initial R / X lane forecast | 25% reliable / 75% exploratory; both may contain constructive generation |
-| Research already credited | 377.495235816667 minutes at closed s05 hourly checkpoint; C001 remains open |
+| Research already credited | 437.566782320917 minutes at closed s06 hourly checkpoint; C001 remains open |
 | Current execution cadence | One approximately 60-minute engaged research increment, then a portable handoff |
 | Normal boundary disposition | Continue the current line or recur within this program |
 | Program duration | Open-ended; tens or hundreds of hours are plausible, with no forecast of guaranteed discovery |
@@ -226,15 +232,17 @@ finding is a search update. A completed cycle is an effort/accounting boundary.
 Neither is automatically a positive project milestone.
 
 Current state: **no discovery candidates have been promoted, no readiness
-probability has been assigned; 377.495235816667 new discovery research minutes
+probability has been assigned; 437.566782320917 new discovery research minutes
 are credited, with 0 minutes remaining to C001's four-hour floor**. The cycle
-and program remain open; the s05 hourly research clock is closed.
+and program remain open; the s06 hourly research clock is closed.
 P3-11 is deferred and unstarted. P3-C/D remain unattempted. P3-N01's previous
 modest support and all P3-10 findings remain at their recorded scopes.
 
-The next work is continuation of C001 from [the saved checkpoint](s05/cp01.md),
-using [CONTINUE](CONTINUE.md): develop a small paid calibration-and-repair
-service that chooses between cost audits and logical proof work. Keep the
-compact/native-proof bridge and strong conventional comparisons explicit,
-while retaining alternative mechanisms. Continue for the next requested hour;
+The next work is continuation of C001 from [the saved checkpoint](s06/cp01.md),
+using [CONTINUE](CONTINUE.md): integrate the cheap scalar-anchor evaluator
+with the admitted tree/dual/hull service and quote a small complete audit/proof
+bundle. Use actual external observation prices or explicit symbolic regions;
+retain the callable native warm path, checked proof bridges and complete finite
+fallback. Give strong conventional controllers the same mechanisms and receipts,
+while retaining alternative discovery branches. Continue for the next requested hour;
 P3-POS01 remains outstanding after this administrative handoff.

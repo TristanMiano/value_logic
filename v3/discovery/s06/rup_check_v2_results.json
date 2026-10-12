@@ -1,0 +1,1298 @@
+{
+  "status": "PASS",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "start_utc": "2026-10-12T17:02:25.422574+00:00",
+  "implementation_sha256": "92d3a5d11d14f175fd2bc539a858b8e2ca89cc8e36861ba536a051590118aed9",
+  "bridge_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+  "source": {
+    "variables": 2,
+    "hard": [
+      [
+        1,
+        2
+      ]
+    ],
+    "soft": [
+      {
+        "clause": [
+          -1
+        ],
+        "weight": 2
+      },
+      {
+        "clause": [
+          -2
+        ],
+        "weight": 3
+      }
+    ],
+    "public_incumbent": 0,
+    "objective_max": 5,
+    "identity": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12"
+  },
+  "planned_queries": [
+    {
+      "weights": [
+        2,
+        3
+      ],
+      "budget": 1
+    },
+    {
+      "weights": [
+        2,
+        3
+      ],
+      "budget": 2
+    },
+    {
+      "weights": [
+        0,
+        3
+      ],
+      "budget": 0
+    },
+    {
+      "weights": [
+        2,
+        3
+      ],
+      "budget": 1,
+      "limits": {
+        "checking_units": 1
+      }
+    }
+  ],
+  "semantics": [
+    {
+      "source": "98b87f56fc04e62529b66fd6cc28e4f0aee4206a17eb743127cdcf526addbb47",
+      "budget": -1,
+      "assignments": 8,
+      "cnf_clauses": 11,
+      "auxiliary_variables": 0
+    },
+    {
+      "source": "98b87f56fc04e62529b66fd6cc28e4f0aee4206a17eb743127cdcf526addbb47",
+      "budget": 0,
+      "assignments": 8,
+      "cnf_clauses": 23,
+      "auxiliary_variables": 4
+    },
+    {
+      "source": "98b87f56fc04e62529b66fd6cc28e4f0aee4206a17eb743127cdcf526addbb47",
+      "budget": 2,
+      "assignments": 8,
+      "cnf_clauses": 33,
+      "auxiliary_variables": 7
+    },
+    {
+      "source": "98b87f56fc04e62529b66fd6cc28e4f0aee4206a17eb743127cdcf526addbb47",
+      "budget": 3,
+      "assignments": 8,
+      "cnf_clauses": 40,
+      "auxiliary_variables": 9
+    },
+    {
+      "source": "98b87f56fc04e62529b66fd6cc28e4f0aee4206a17eb743127cdcf526addbb47",
+      "budget": 9,
+      "assignments": 8,
+      "cnf_clauses": 10,
+      "auxiliary_variables": 0
+    },
+    {
+      "source": "98b87f56fc04e62529b66fd6cc28e4f0aee4206a17eb743127cdcf526addbb47",
+      "budget": 10,
+      "assignments": 8,
+      "cnf_clauses": 10,
+      "auxiliary_variables": 0
+    },
+    {
+      "source": "5c4f6b249e7487abb20716734a8fc86fa0a9a36da6192eb817fe55171fc01b08",
+      "budget": -1,
+      "assignments": 4,
+      "cnf_clauses": 6,
+      "auxiliary_variables": 0
+    },
+    {
+      "source": "5c4f6b249e7487abb20716734a8fc86fa0a9a36da6192eb817fe55171fc01b08",
+      "budget": 0,
+      "assignments": 4,
+      "cnf_clauses": 12,
+      "auxiliary_variables": 2
+    },
+    {
+      "source": "5c4f6b249e7487abb20716734a8fc86fa0a9a36da6192eb817fe55171fc01b08",
+      "budget": 2,
+      "assignments": 4,
+      "cnf_clauses": 12,
+      "auxiliary_variables": 2
+    },
+    {
+      "source": "5c4f6b249e7487abb20716734a8fc86fa0a9a36da6192eb817fe55171fc01b08",
+      "budget": 3,
+      "assignments": 4,
+      "cnf_clauses": 5,
+      "auxiliary_variables": 0
+    },
+    {
+      "source": "5c4f6b249e7487abb20716734a8fc86fa0a9a36da6192eb817fe55171fc01b08",
+      "budget": 3,
+      "assignments": 4,
+      "cnf_clauses": 5,
+      "auxiliary_variables": 0
+    },
+    {
+      "source": "5c4f6b249e7487abb20716734a8fc86fa0a9a36da6192eb817fe55171fc01b08",
+      "budget": 4,
+      "assignments": 4,
+      "cnf_clauses": 5,
+      "auxiliary_variables": 0
+    }
+  ],
+  "existing_export_recheck": {
+    "checked": true,
+    "kind": "strict_rup",
+    "additions": 2,
+    "ignored_deletions": 0,
+    "empty_clause_line": 1,
+    "proof_lines": 2,
+    "checker_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82"
+  },
+  "rejected": [
+    {
+      "case": "non_RUP_addition",
+      "reason": "Addition 0 is not RUP; no lower receipt admitted"
+    },
+    {
+      "case": "missing_empty",
+      "reason": "No checked empty clause"
+    },
+    {
+      "case": "unbound_variable",
+      "reason": "Proof variable outside admitted CNF universe"
+    }
+  ],
+  "calls": [
+    {
+      "version": "s06-weighted-rup-v2",
+      "status": "UNSAT",
+      "contributor": "ChatGPT (GPT-6 Astra Pro)",
+      "start_utc": "2026-10-12T17:02:25.422883+00:00",
+      "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+      "original_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+      "weights": [
+        2,
+        3
+      ],
+      "budget": 1,
+      "limits": {
+        "encoding_units": 1000000,
+        "checking_units": 5000000,
+        "native_conflicts": 100000,
+        "native_propagations": 10000000,
+        "max_proof_bytes": 2000000,
+        "projection_units": 1000000,
+        "max_projected_features": 16
+      },
+      "native_calls": 1,
+      "native_status": false,
+      "raw_proof": [],
+      "checked_lower_receipt": {
+        "checked": true,
+        "kind": "weighted_bound_rup_cut",
+        "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+        "original_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+        "weights": [
+          2,
+          3
+        ],
+        "budget": 1,
+        "checked_lower": 2,
+        "encoding_sha256": "4c7cdd04e86d81c8cfa46a4de6f86e94e23cb73e655985ee2fd6bcb46c94223f",
+        "raw_proof_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "admitted_proof_sha256": "a37bbbb0764cc5bf8d8c251cb1c95e3d2e142934792916ccb362ceb5902d9f0b",
+        "checker": {
+          "checked": true,
+          "kind": "strict_rup",
+          "additions": 1,
+          "ignored_deletions": 0,
+          "empty_clause_line": 0,
+          "proof_lines": 1,
+          "checker_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+          "independent_empty_completion": true
+        },
+        "dependency": "This purchase raw encoding and exported proof",
+        "receipt_id": "5b30c41beffeba0f19ff3a3b2022fb92131936d356a3038450f8dbd64da7c9bb"
+      },
+      "witness": null,
+      "implementation_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "dependencies": {
+        "python_sat": "1.8.dev24",
+        "wrapper_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+        "native_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089"
+      },
+      "encoding": {
+        "version": "explicit-soft-bdd-cnf-v1",
+        "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+        "original_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+        "weighted_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+        "source_variables": 2,
+        "violation_variables": [
+          3,
+          4
+        ],
+        "weights": [
+          2,
+          3
+        ],
+        "budget": 1,
+        "root": 6,
+        "nodes": [
+          {
+            "variable": 5,
+            "index": 1,
+            "budget": 1,
+            "when_zero": true,
+            "when_one": false
+          },
+          {
+            "variable": 6,
+            "index": 0,
+            "budget": 1,
+            "when_zero": 5,
+            "when_one": false
+          }
+        ],
+        "max_variable": 6,
+        "clauses": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            -3,
+            1
+          ],
+          [
+            4,
+            -2
+          ],
+          [
+            -4,
+            2
+          ],
+          [
+            -5,
+            -4
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            -6,
+            3,
+            5
+          ],
+          [
+            -6,
+            -3
+          ],
+          [
+            6,
+            3,
+            -5
+          ],
+          [
+            6
+          ]
+        ]
+      },
+      "native_stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0
+      },
+      "native_timing": {
+        "wall_ns": 445019,
+        "process_ns": 443358
+      },
+      "raw_proof_bytes": 0,
+      "invoice": {
+        "encoding": {
+          "total": 140,
+          "by_category": {
+            "encoding_admission": 21,
+            "encoding": 119
+          },
+          "operations": [
+            {
+              "category": "encoding",
+              "operation": "clause_input_literals",
+              "units": 49
+            },
+            {
+              "category": "encoding",
+              "operation": "clause_output_words",
+              "units": 34
+            },
+            {
+              "category": "encoding",
+              "operation": "node_manifest_storage",
+              "units": 12
+            },
+            {
+              "category": "encoding",
+              "operation": "suffix_weight_sum",
+              "units": 4
+            },
+            {
+              "category": "encoding",
+              "operation": "threshold_state_dispatch",
+              "units": 20
+            },
+            {
+              "category": "encoding_admission",
+              "operation": "source_and_objective_words",
+              "units": 21
+            }
+          ]
+        },
+        "checking": {
+          "total": 304,
+          "by_category": {
+            "encoding_admission": 21,
+            "encoding": 119,
+            "rup_completion": 1,
+            "rup_admission": 34,
+            "rup_parse": 2,
+            "rup_check": 127
+          },
+          "operations": [
+            {
+              "category": "encoding",
+              "operation": "clause_input_literals",
+              "units": 49
+            },
+            {
+              "category": "encoding",
+              "operation": "clause_output_words",
+              "units": 34
+            },
+            {
+              "category": "encoding",
+              "operation": "node_manifest_storage",
+              "units": 12
+            },
+            {
+              "category": "encoding",
+              "operation": "suffix_weight_sum",
+              "units": 4
+            },
+            {
+              "category": "encoding",
+              "operation": "threshold_state_dispatch",
+              "units": 20
+            },
+            {
+              "category": "encoding_admission",
+              "operation": "source_and_objective_words",
+              "units": 21
+            },
+            {
+              "category": "rup_admission",
+              "operation": "source_clause_words",
+              "units": 34
+            },
+            {
+              "category": "rup_check",
+              "operation": "admitted_clause_storage",
+              "units": 1
+            },
+            {
+              "category": "rup_check",
+              "operation": "clause_visit",
+              "units": 39
+            },
+            {
+              "category": "rup_check",
+              "operation": "literal_inspection",
+              "units": 75
+            },
+            {
+              "category": "rup_check",
+              "operation": "unit_assignment",
+              "units": 12
+            },
+            {
+              "category": "rup_completion",
+              "operation": "empty_candidate",
+              "units": 1
+            },
+            {
+              "category": "rup_parse",
+              "operation": "proof_bytes_and_words",
+              "units": 2
+            }
+          ]
+        },
+        "declared_units_excluding_native_search": 444,
+        "native_search_units": null
+      },
+      "timing": {
+        "wall_ns": 8252222,
+        "process_ns": 72320187
+      },
+      "end_utc": "2026-10-12T17:02:25.431132+00:00",
+      "accounting": "Includes named encoding, re-encoding admission and proof/witness-check work; native creation/solve/export and all Python execution measured. Serialization, allocator and host memory are not separately tariffed; no total economic or hard wall-time guarantee."
+    },
+    {
+      "version": "s06-weighted-rup-v2",
+      "status": "SAT",
+      "contributor": "ChatGPT (GPT-6 Astra Pro)",
+      "start_utc": "2026-10-12T17:02:25.431525+00:00",
+      "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+      "original_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+      "weights": [
+        2,
+        3
+      ],
+      "budget": 2,
+      "limits": {
+        "encoding_units": 1000000,
+        "checking_units": 5000000,
+        "native_conflicts": 100000,
+        "native_propagations": 10000000,
+        "max_proof_bytes": 2000000,
+        "projection_units": 1000000,
+        "max_projected_features": 16
+      },
+      "native_calls": 1,
+      "native_status": true,
+      "raw_proof": null,
+      "checked_lower_receipt": null,
+      "witness": {
+        "model": 1,
+        "violation_mask": 1,
+        "original_cost": 2
+      },
+      "implementation_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "dependencies": {
+        "python_sat": "1.8.dev24",
+        "wrapper_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+        "native_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089"
+      },
+      "encoding": {
+        "version": "explicit-soft-bdd-cnf-v1",
+        "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+        "original_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+        "weighted_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+        "source_variables": 2,
+        "violation_variables": [
+          3,
+          4
+        ],
+        "weights": [
+          2,
+          3
+        ],
+        "budget": 2,
+        "root": 7,
+        "nodes": [
+          {
+            "variable": 5,
+            "index": 1,
+            "budget": 2,
+            "when_zero": true,
+            "when_one": false
+          },
+          {
+            "variable": 6,
+            "index": 1,
+            "budget": 0,
+            "when_zero": true,
+            "when_one": false
+          },
+          {
+            "variable": 7,
+            "index": 0,
+            "budget": 2,
+            "when_zero": 5,
+            "when_one": 6
+          }
+        ],
+        "max_variable": 7,
+        "clauses": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            -3,
+            1
+          ],
+          [
+            4,
+            -2
+          ],
+          [
+            -4,
+            2
+          ],
+          [
+            -5,
+            -4
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            -6,
+            -4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            -7,
+            3,
+            5
+          ],
+          [
+            -7,
+            -3,
+            6
+          ],
+          [
+            7,
+            3,
+            -5
+          ],
+          [
+            7,
+            -3,
+            -6
+          ],
+          [
+            7
+          ]
+        ]
+      },
+      "native_stats": {
+        "restarts": 1,
+        "conflicts": 1,
+        "decisions": 4,
+        "propagations": 12
+      },
+      "native_timing": {
+        "wall_ns": 132787,
+        "process_ns": 131966
+      },
+      "invoice": {
+        "encoding": {
+          "total": 181,
+          "by_category": {
+            "encoding_admission": 21,
+            "encoding": 160
+          },
+          "operations": [
+            {
+              "category": "encoding",
+              "operation": "clause_input_literals",
+              "units": 65
+            },
+            {
+              "category": "encoding",
+              "operation": "clause_output_words",
+              "units": 45
+            },
+            {
+              "category": "encoding",
+              "operation": "node_manifest_storage",
+              "units": 18
+            },
+            {
+              "category": "encoding",
+              "operation": "suffix_weight_sum",
+              "units": 4
+            },
+            {
+              "category": "encoding",
+              "operation": "threshold_state_dispatch",
+              "units": 28
+            },
+            {
+              "category": "encoding_admission",
+              "operation": "source_and_objective_words",
+              "units": 21
+            }
+          ]
+        },
+        "checking": {
+          "total": 21,
+          "by_category": {
+            "check": 2,
+            "objective": 6,
+            "witness_check": 2,
+            "witness_compile": 7,
+            "storage": 4
+          },
+          "operations": [
+            {
+              "category": "check",
+              "operation": "witness_hard_clause_header",
+              "units": 1
+            },
+            {
+              "category": "check",
+              "operation": "witness_hard_literal",
+              "units": 1
+            },
+            {
+              "category": "objective",
+              "operation": "full_objective_pass",
+              "units": 1
+            },
+            {
+              "category": "objective",
+              "operation": "soft_clause_header",
+              "units": 2
+            },
+            {
+              "category": "objective",
+              "operation": "soft_literal",
+              "units": 2
+            },
+            {
+              "category": "objective",
+              "operation": "weight_add",
+              "units": 1
+            },
+            {
+              "category": "storage",
+              "operation": "retained_witness_and_violation_mask",
+              "units": 4
+            },
+            {
+              "category": "witness_check",
+              "operation": "retained_clause_header",
+              "units": 1
+            },
+            {
+              "category": "witness_check",
+              "operation": "retained_literal",
+              "units": 1
+            },
+            {
+              "category": "witness_compile",
+              "operation": "mask_and_original_weight",
+              "units": 2
+            },
+            {
+              "category": "witness_compile",
+              "operation": "objective_violation_pass",
+              "units": 1
+            },
+            {
+              "category": "witness_compile",
+              "operation": "retained_clause_header",
+              "units": 2
+            },
+            {
+              "category": "witness_compile",
+              "operation": "retained_literal",
+              "units": 2
+            }
+          ]
+        },
+        "declared_units_excluding_native_search": 202,
+        "native_search_units": null
+      },
+      "timing": {
+        "wall_ns": 5814802,
+        "process_ns": 68758334
+      },
+      "end_utc": "2026-10-12T17:02:25.437336+00:00",
+      "accounting": "Includes named encoding, re-encoding admission and proof/witness-check work; native creation/solve/export and all Python execution measured. Serialization, allocator and host memory are not separately tariffed; no total economic or hard wall-time guarantee."
+    },
+    {
+      "version": "s06-weighted-rup-v2",
+      "status": "SAT",
+      "contributor": "ChatGPT (GPT-6 Astra Pro)",
+      "start_utc": "2026-10-12T17:02:25.437865+00:00",
+      "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+      "original_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+      "weights": [
+        0,
+        3
+      ],
+      "budget": 0,
+      "limits": {
+        "encoding_units": 1000000,
+        "checking_units": 5000000,
+        "native_conflicts": 100000,
+        "native_propagations": 10000000,
+        "max_proof_bytes": 2000000,
+        "projection_units": 1000000,
+        "max_projected_features": 16
+      },
+      "native_calls": 1,
+      "native_status": true,
+      "raw_proof": null,
+      "checked_lower_receipt": null,
+      "witness": {
+        "model": 1,
+        "violation_mask": 1,
+        "original_cost": 0
+      },
+      "implementation_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "dependencies": {
+        "python_sat": "1.8.dev24",
+        "wrapper_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+        "native_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089"
+      },
+      "encoding": {
+        "version": "explicit-soft-bdd-cnf-v1",
+        "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+        "original_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+        "weighted_source_id": "5c4f6b249e7487abb20716734a8fc86fa0a9a36da6192eb817fe55171fc01b08",
+        "source_variables": 2,
+        "violation_variables": [
+          3,
+          4
+        ],
+        "weights": [
+          0,
+          3
+        ],
+        "budget": 0,
+        "root": 6,
+        "nodes": [
+          {
+            "variable": 5,
+            "index": 1,
+            "budget": 0,
+            "when_zero": true,
+            "when_one": false
+          },
+          {
+            "variable": 6,
+            "index": 0,
+            "budget": 0,
+            "when_zero": 5,
+            "when_one": 5
+          }
+        ],
+        "max_variable": 6,
+        "clauses": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            -3,
+            1
+          ],
+          [
+            4,
+            -2
+          ],
+          [
+            -4,
+            2
+          ],
+          [
+            -5,
+            -4
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            -6,
+            3,
+            5
+          ],
+          [
+            -6,
+            -3,
+            5
+          ],
+          [
+            6,
+            3,
+            -5
+          ],
+          [
+            6,
+            -3,
+            -5
+          ],
+          [
+            6
+          ]
+        ]
+      },
+      "native_stats": {
+        "restarts": 1,
+        "conflicts": 1,
+        "decisions": 4,
+        "propagations": 9
+      },
+      "native_timing": {
+        "wall_ns": 124615,
+        "process_ns": 124084
+      },
+      "invoice": {
+        "encoding": {
+          "total": 145,
+          "by_category": {
+            "encoding_admission": 21,
+            "encoding": 124
+          },
+          "operations": [
+            {
+              "category": "encoding",
+              "operation": "clause_input_literals",
+              "units": 49
+            },
+            {
+              "category": "encoding",
+              "operation": "clause_output_words",
+              "units": 39
+            },
+            {
+              "category": "encoding",
+              "operation": "node_manifest_storage",
+              "units": 12
+            },
+            {
+              "category": "encoding",
+              "operation": "suffix_weight_sum",
+              "units": 4
+            },
+            {
+              "category": "encoding",
+              "operation": "threshold_state_dispatch",
+              "units": 20
+            },
+            {
+              "category": "encoding_admission",
+              "operation": "source_and_objective_words",
+              "units": 21
+            }
+          ]
+        },
+        "checking": {
+          "total": 21,
+          "by_category": {
+            "check": 2,
+            "objective": 6,
+            "witness_check": 2,
+            "witness_compile": 7,
+            "storage": 4
+          },
+          "operations": [
+            {
+              "category": "check",
+              "operation": "witness_hard_clause_header",
+              "units": 1
+            },
+            {
+              "category": "check",
+              "operation": "witness_hard_literal",
+              "units": 1
+            },
+            {
+              "category": "objective",
+              "operation": "full_objective_pass",
+              "units": 1
+            },
+            {
+              "category": "objective",
+              "operation": "soft_clause_header",
+              "units": 2
+            },
+            {
+              "category": "objective",
+              "operation": "soft_literal",
+              "units": 2
+            },
+            {
+              "category": "objective",
+              "operation": "weight_add",
+              "units": 1
+            },
+            {
+              "category": "storage",
+              "operation": "retained_witness_and_violation_mask",
+              "units": 4
+            },
+            {
+              "category": "witness_check",
+              "operation": "retained_clause_header",
+              "units": 1
+            },
+            {
+              "category": "witness_check",
+              "operation": "retained_literal",
+              "units": 1
+            },
+            {
+              "category": "witness_compile",
+              "operation": "mask_and_original_weight",
+              "units": 2
+            },
+            {
+              "category": "witness_compile",
+              "operation": "objective_violation_pass",
+              "units": 1
+            },
+            {
+              "category": "witness_compile",
+              "operation": "retained_clause_header",
+              "units": 2
+            },
+            {
+              "category": "witness_compile",
+              "operation": "retained_literal",
+              "units": 2
+            }
+          ]
+        },
+        "declared_units_excluding_native_search": 166,
+        "native_search_units": null
+      },
+      "timing": {
+        "wall_ns": 5446326,
+        "process_ns": 43715543
+      },
+      "end_utc": "2026-10-12T17:02:25.443308+00:00",
+      "accounting": "Includes named encoding, re-encoding admission and proof/witness-check work; native creation/solve/export and all Python execution measured. Serialization, allocator and host memory are not separately tariffed; no total economic or hard wall-time guarantee."
+    },
+    {
+      "version": "s06-weighted-rup-v2",
+      "status": "UNRESOLVED",
+      "contributor": "ChatGPT (GPT-6 Astra Pro)",
+      "start_utc": "2026-10-12T17:02:25.444008+00:00",
+      "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+      "original_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+      "weights": [
+        2,
+        3
+      ],
+      "budget": 1,
+      "limits": {
+        "encoding_units": 1000000,
+        "checking_units": 1,
+        "native_conflicts": 100000,
+        "native_propagations": 10000000,
+        "max_proof_bytes": 2000000,
+        "projection_units": 1000000,
+        "max_projected_features": 16
+      },
+      "native_calls": 1,
+      "native_status": false,
+      "raw_proof": [],
+      "checked_lower_receipt": null,
+      "witness": null,
+      "implementation_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "dependencies": {
+        "python_sat": "1.8.dev24",
+        "wrapper_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+        "native_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089"
+      },
+      "encoding": {
+        "version": "explicit-soft-bdd-cnf-v1",
+        "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+        "original_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+        "weighted_source_id": "4f825d6b820e11e87fd8a321afda0dc948381ce80e7ffa189eef3d2c17cbfc12",
+        "source_variables": 2,
+        "violation_variables": [
+          3,
+          4
+        ],
+        "weights": [
+          2,
+          3
+        ],
+        "budget": 1,
+        "root": 6,
+        "nodes": [
+          {
+            "variable": 5,
+            "index": 1,
+            "budget": 1,
+            "when_zero": true,
+            "when_one": false
+          },
+          {
+            "variable": 6,
+            "index": 0,
+            "budget": 1,
+            "when_zero": 5,
+            "when_one": false
+          }
+        ],
+        "max_variable": 6,
+        "clauses": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            -3,
+            1
+          ],
+          [
+            4,
+            -2
+          ],
+          [
+            -4,
+            2
+          ],
+          [
+            -5,
+            -4
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            -6,
+            3,
+            5
+          ],
+          [
+            -6,
+            -3
+          ],
+          [
+            6,
+            3,
+            -5
+          ],
+          [
+            6
+          ]
+        ]
+      },
+      "native_stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0
+      },
+      "native_timing": {
+        "wall_ns": 112496,
+        "process_ns": 112147
+      },
+      "raw_proof_bytes": 0,
+      "reason": "encoding_or_checking_operation_cap",
+      "invoice": {
+        "encoding": {
+          "total": 140,
+          "by_category": {
+            "encoding_admission": 21,
+            "encoding": 119
+          },
+          "operations": [
+            {
+              "category": "encoding",
+              "operation": "clause_input_literals",
+              "units": 49
+            },
+            {
+              "category": "encoding",
+              "operation": "clause_output_words",
+              "units": 34
+            },
+            {
+              "category": "encoding",
+              "operation": "node_manifest_storage",
+              "units": 12
+            },
+            {
+              "category": "encoding",
+              "operation": "suffix_weight_sum",
+              "units": 4
+            },
+            {
+              "category": "encoding",
+              "operation": "threshold_state_dispatch",
+              "units": 20
+            },
+            {
+              "category": "encoding_admission",
+              "operation": "source_and_objective_words",
+              "units": 21
+            }
+          ]
+        },
+        "checking": {
+          "total": 0,
+          "by_category": {},
+          "operations": []
+        },
+        "declared_units_excluding_native_search": 140,
+        "native_search_units": null
+      },
+      "timing": {
+        "wall_ns": 4503430,
+        "process_ns": 36592288
+      },
+      "end_utc": "2026-10-12T17:02:25.448507+00:00",
+      "accounting": "Includes named encoding, re-encoding admission and proof/witness-check work; native creation/solve/export and all Python execution measured. Serialization, allocator and host memory are not separately tariffed; no total economic or hard wall-time guarantee."
+    }
+  ],
+  "new_native_calls": 4,
+  "new_branch_provider_calls": 0,
+  "replay_native_calls": 0,
+  "projection": {
+    "leaf_masks": [
+      1,
+      2
+    ],
+    "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+    "dependencies": [
+      "5b30c41beffeba0f19ff3a3b2022fb92131936d356a3038450f8dbd64da7c9bb"
+    ],
+    "kind": "checked_cut_objective_relaxation",
+    "objective_masks_examined": 4,
+    "compatible_masks": 3,
+    "domain": "Any nonnegative weights on the same ordered soft clauses",
+    "receipt_id": "8bb26be2d033ff4ad64bd1136997ca9cdf70886f0d4fa97c94c43bb2dd99856c"
+  },
+  "declaration": "Finite semantic checks plus actual SAT/UNSAT/export/cap paths. No runtime comparison or independent validation set.",
+  "check_invoice": {
+    "total": 2843,
+    "by_category": {
+      "encoding_admission": 372,
+      "encoding": 1957,
+      "rup_admission": 103,
+      "rup_parse": 22,
+      "rup_check": 361,
+      "rup_completion": 2,
+      "cut_projection": 26
+    },
+    "operations": [
+      {
+        "category": "cut_projection",
+        "operation": "mask_visit",
+        "units": 4
+      },
+      {
+        "category": "cut_projection",
+        "operation": "nonnegative_dominance_comparison",
+        "units": 4
+      },
+      {
+        "category": "cut_projection",
+        "operation": "objective_mask_and_cut",
+        "units": 16
+      },
+      {
+        "category": "cut_projection",
+        "operation": "support_storage",
+        "units": 2
+      },
+      {
+        "category": "encoding",
+        "operation": "clause_input_literals",
+        "units": 800
+      },
+      {
+        "category": "encoding",
+        "operation": "clause_output_words",
+        "units": 629
+      },
+      {
+        "category": "encoding",
+        "operation": "node_manifest_storage",
+        "units": 168
+      },
+      {
+        "category": "encoding",
+        "operation": "suffix_weight_sum",
+        "units": 80
+      },
+      {
+        "category": "encoding",
+        "operation": "threshold_state_dispatch",
+        "units": 280
+      },
+      {
+        "category": "encoding_admission",
+        "operation": "source_and_objective_words",
+        "units": 372
+      },
+      {
+        "category": "rup_admission",
+        "operation": "source_clause_words",
+        "units": 103
+      },
+      {
+        "category": "rup_check",
+        "operation": "admitted_clause_storage",
+        "units": 5
+      },
+      {
+        "category": "rup_check",
+        "operation": "assumption_assignment",
+        "units": 4
+      },
+      {
+        "category": "rup_check",
+        "operation": "clause_visit",
+        "units": 108
+      },
+      {
+        "category": "rup_check",
+        "operation": "literal_inspection",
+        "units": 204
+      },
+      {
+        "category": "rup_check",
+        "operation": "unit_assignment",
+        "units": 40
+      },
+      {
+        "category": "rup_completion",
+        "operation": "empty_candidate",
+        "units": 2
+      },
+      {
+        "category": "rup_parse",
+        "operation": "proof_bytes_and_words",
+        "units": 22
+      }
+    ]
+  },
+  "timing": {
+    "process_ns": 248884714,
+    "wall_ns": 29546670
+  }
+}

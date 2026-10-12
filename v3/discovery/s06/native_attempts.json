@@ -1,0 +1,37 @@
+[
+  {
+    "attempt": 1,
+    "kind": "exposed_development_integration",
+    "status": "failed_final_assertion",
+    "command": "python v3/discovery/s06/native_stream.py",
+    "error": "Development stream has unresolved requested actions",
+    "script_sha256": "432ec16d781c862de32005c7c251c26f638ade8d15721c68703bf92c6676a833",
+    "adapter_sha256": "461fe7ba95be95c118e778891b2defea861065380d22d5a03b852214c15d47d2",
+    "raw_receipts_saved": false,
+    "limitation": "Initial runner asserted before serialization; failed-arm raw receipts were lost when process ended. They provide no reusable checked bank or performance evidence. Next attempt will save all outcomes before judging completion.",
+    "earlier_smoke": "One unsaved three-purchase smoke on s05 row1, identity budget4; doubled budget4; doubled exact. SAT costs 2,4,4; exact checked lower4. Closed runtime. No receipts carried into comparison."
+  },
+  {
+    "attempt": 2,
+    "kind": "exposed_development_integration",
+    "status": "unresolved_development",
+    "raw_receipts": "native_attempt_02.json",
+    "preserved_adapter": "native_warm_attempt.py",
+    "preserved_runner": "native_attempt_runner.py",
+    "finding": "Optional MiniSat warm_start=True gave a SAT model inconsistent with updated soft-enforcement assumptions in exact path. Independent objective/proof checking prevented an incorrect lower; repeated no-progress purchases reached outer cap. All actual paid outcomes remain preserved.",
+    "exact_checked": 79,
+    "exact_unresolved": 1,
+    "exact_purchases": 273,
+    "discarded_from_repaired_comparison": true
+  },
+  {
+    "attempt": 3,
+    "kind": "corrected_exposed_development_integration",
+    "status": "complete",
+    "raw_receipts": "native_stream_results.json",
+    "repair": "Use ordinary incremental MiniSat object without warm_start=True; explicitly check SAT model assumptions and hitting-set objective; stop at a no-progress interval.",
+    "adapter_sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+    "runner_sha256": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+    "independent_validation": false
+  }
+]

@@ -19,12 +19,12 @@ paid-reporting and separate structural integration scope. Selected R-P3-B-B
 the ordinary checked bridge and full resource/failure comparison. The final
 challenge has completed P3-10 execution and interpretation under explicit A1,
 with the original failure preserved and **90.283569405783** principal research
-minutes. Current phase research is **1463.626603180816666… minutes**.
-P3-SEARCH-01-C001 remains **OPEN** at **377.495235816666666… minutes**, beyond
-its already satisfied four-hour floor. The first author-directed hourly
-increment adds **60.115281713333333… research minutes**. Next: continue
-discovery from [s05 checkpoint 1](discovery/s05/cp01.md), with exact totals and
-exclusions in [effective actuals](discovery/s05/effective_actuals.json).
+minutes. Current phase research is **1523.698149685066666… minutes**.
+P3-SEARCH-01-C001 remains **OPEN** at **437.566782320916666… minutes**, beyond
+its already satisfied four-hour floor. The latest author-directed hourly
+increment adds **60.07154650425 research minutes**. Next: continue
+discovery from [s06 checkpoint 1](discovery/s06/cp01.md), with exact totals and
+exclusions in [effective actuals](discovery/s06/effective_actuals.json).
 P3-11 is deferred pending discovery readiness.
 P3-POS01 is OUTSTANDING; later author gates remain unattempted. P3-N01 is SUPPORTED
 at the documented modest formal-adaptation and implementation-synthesis
@@ -794,3 +794,33 @@ another four-hour obligation. Earlier dated totals retain their history.
 | DS-S28-STREAM | The actual stateless-provider stream completes 80 requests at tolerance 1: tree uses 61 cache hits/19 calls, scalar 57/23; summed realized action costs are equal. Corrected common-setup tariffs are 71,919 tree and 72,848 scalar. | [v2 findings](discovery/s05/repair_stream_v2_findings.md). V2 rechecks/replays already-paid v1 receipts with zero new provider calls. Omitting another 1,319 unused initial scalar mask-compilation/storage units gives a standalone invoice adjustment of 71,529, 390 below tree; this is not a separately executed variant. The common-cache 929-unit margin does not establish a robust total-cost win. Historical acquisition remains charged separately; native persistent IHS comparison is outstanding. |
 | DS-S26-S28-CALIBRATED | A common confidence source W for penalty costs can be checked against retained action regions; paid audits shrink W while logical search improves feasible actions/lower proofs. A retained alternative may show that stronger lower proofs alone cannot rescue one fixed action over unchanged W. | [Calibrated repair](discovery/s05/calibrated_repair.md) is a DEVELOPMENT derivation and prospective synthesis, not an integrated statistical experiment. The next engineering boundary joins paid calls, compact caches and [persistent IHS/checked proof admission](discovery/s05/repair_service_next.md). [Frontier acquisition](discovery/s05/active_frontier.md) and [AOLS/CMOVE](discovery/s05/frontier_sources.md) retain strong conventional comparisons. Actual sampling, audit/search costs, proof capabilities and value remain obligations. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | Constructive capability and new integration directions support recurrence; no material-positive confirmation, 80–90% readiness forecast or P3-11 promotion. Continue one requested hour from the [portable prompt](discovery/CONTINUE.md), with hypotheses revisable and cheap screens. |
+
+
+## P3-SEARCH-01 s06 — calibrated repair development, October 12, 2026
+
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. One requested hourly increment is
+closed at **60.07154650425 engaged research minutes**. All findings below are
+DEVELOPMENT, with same-model focused reconstruction. They neither promote a
+candidate nor replace historical s05 results. [Checkpoint](discovery/s06/cp01.md),
+[exact effective actuals](discovery/s06/effective_actuals.json) and
+[reproduction guide](discovery/s06/reproduce.md).
+
+| ID | Supported scoped statement | Evidence and material limits |
+|---|---|---|
+| S06-IHS | A callable persistent MiniSat22/HiGHS IHS adapter retains actual SAT learned clauses, core rows and supported objective/MIP-start state, with separately checked lower proof acquisition. | [Native findings](discovery/s06/native_findings.md): all 80 requests in tolerance/exact arms; 61/19 and 62/18 cache/purchase counts. No retained HiGHS branch tree or proof from a raw core/optimum status. Failed attempts remain separate. Native search and physical costs are not fully priced by named tariffs. |
+| S06-RUP | A separate Glucose3 bounded call exports proof additions that an independent source-bound strict RUP checker admits, producing retained objective cuts. | [RUP findings](discovery/s06/rup_findings.md): 15/19 actual proof calls, all 160 gates replayed without new search. Raw exports, checked completion where needed and Boolean projection invoices remain explicit. Fresh proof calls are not persistent IHS proof exports; no tariff advantage over the branching bridge. |
+| S06-JOINT | A finite common cost source supports actual interleaved audit/logical purchases and certified repairs before complete cost identification. | [Joint v2](discovery/s06/joint_findings.md): four 16-output policies, 59 actual observations in total, own paid native/evidence state per arm. Fixed eight-row cohort, six public modes, no hidden-mode probability law or population guarantee. Expensive shared-deficit selection has no demonstrated advantage. |
+| S06-COMPLETE | A finite source/code-bound acquisition contract admits a complete fallback under sufficient operation caps and uninterrupted execution, and the recorded service delivers all 16 requested outputs. | [Contract](discovery/s06/contract_findings.md), [executed fallback](discovery/s06/complete_findings.md): 14 observations, 14 branching calls, zero native calls, 154,926 named current units plus unassigned external prices. No native CPU/host/economic deadline; different purchase menus prevent treating this as a matched overall cost ranking. |
+| S06-ANCHOR | Independently valid scalar lower bounds at source hull anchors can certify one fixed action uniformly; rowwise concavity transport reuses full-cohort mode anchors after partial observations without joint hull/mask enumeration. | [Construction and results](discovery/s06/source_anchor.md): 105 replay queries, zero new LP/logical/audit calls, prefix-12 closures while one cost row is unresolved. Conditional query evidence, not an executed acquisition policy's saved calls. [Domain qualifications](discovery/s06/source_anchor_review.md): nonnegative costs for clamped dual; true-optimum concavity supplies transport. |
+| S06-QUOTE | Complete audit partitions and SAT/UNSAT outcome bounds support prior-free acquisition quotations; changing action after an observation can yield positive guaranteed gain when any one action held fixed cannot. | [Quotation derivation](discovery/s06/source_anchor.md), [one actual audit example](discovery/s06/audit_results.json), [existing logical-example replay](discovery/s06/anchor_quote_results.json). Complete call is a warranted premise, unresolved outcomes retain the old bound, prices remain full or symbolic, and a local gain/cost ratio has no general optimality guarantee. |
+| S06-REPR | Rational cut duals, vertex stitching and grouped hulls offer different paid representations of retained evidence. | [Duals](discovery/s06/cut_dual_derivation.md), [vertices](discovery/s06/vertex_derivation.md), [hulls](discovery/s06/hull_findings.md). Three strict prefix gates are on one row, not three delivered requests or actual saved purchases; broad initial-source probes have no extra tolerance closure. Optional mixtures change the output duty and show no added tolerance closure. |
+
+C001/program research is **26,254,006,939,255 ns =437.566782320916666… minutes**;
+phase research is **91,421,888,981,104 ns =1523.698149685066666… minutes**.
+Three conservative exclusions total **449,972,974,946 ns**; all raw clock and
+ledger evidence is preserved with an appended correction notice. The s06
+runtime is closed. Publication and concurrent helper time add no research
+credit. **S26/S27/S28 remain DEVELOPMENT; P3-POS01 OUTSTANDING; readiness
+unassessed; P3-11 deferred; C001 OPEN.** The next requested hour should integrate
+the admitted evaluators and a small fully quoted audit/proof bundle, as set out
+in [CONTINUE](discovery/CONTINUE.md).

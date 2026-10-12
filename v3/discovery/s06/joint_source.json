@@ -1,0 +1,186 @@
+{
+  "version": "s06-joint-repair-v1",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T16:44:24.529997+00:00",
+  "design": "Fixed finite cohort with known possible cost vectors and unknown realized modes. No mode probabilities supplied to controllers.",
+  "seed": 261012606,
+  "possible_cost_modes": [
+    [
+      0,
+      1,
+      2,
+      0,
+      1,
+      2,
+      0,
+      1
+    ],
+    [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      1,
+      2
+    ],
+    [
+      2,
+      3,
+      4,
+      2,
+      3,
+      4,
+      2,
+      3
+    ],
+    [
+      2,
+      1,
+      4,
+      0,
+      3,
+      2,
+      2,
+      1
+    ],
+    [
+      0,
+      3,
+      2,
+      2,
+      1,
+      4,
+      0,
+      3
+    ],
+    [
+      0,
+      2,
+      4,
+      0,
+      2,
+      4,
+      0,
+      2
+    ]
+  ],
+  "cohort_size": 8,
+  "hidden_modes": [
+    1,
+    4,
+    1,
+    4,
+    5,
+    5,
+    2,
+    4
+  ],
+  "logical_archive": "v3/discovery/s05/maxsat_repair_results.json",
+  "logical_archive_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+  "schedule": [
+    {
+      "row": 0,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 1,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 2,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 3,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 4,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 5,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 6,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 7,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 8,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 9,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 10,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 11,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 12,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 13,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 14,
+      "price": 48,
+      "tolerance": 4
+    },
+    {
+      "row": 15,
+      "price": 48,
+      "tolerance": 4
+    }
+  ],
+  "scale": "Internal costs are cohort sums; divide price, regret and action costs by cohort_size for cohort means.",
+  "policies": [
+    "certificate_directed",
+    "audit_first",
+    "logic_first"
+  ],
+  "limits": {
+    "max_actions_per_request": 80,
+    "max_observations": 64,
+    "max_logical_purchases": 128,
+    "native": {
+      "max_rounds": 64,
+      "mip_seconds_per_call": 0.1,
+      "sat_conflicts_per_call": 10000,
+      "mip_nodes_per_call": 10000,
+      "proof_units": 1000000,
+      "adapter_units": 1000000
+    }
+  },
+  "pricing": "Each revealed cost coordinate is one paid external audit; expose its count and an unassigned monetary price. Named software-operation tariffs and native timings are separate, with no conversion into an economic headline.",
+  "source_identity": "8ff4d4165568151a25a530b085c2c27cda9bd77408b1a552d4358008211a33df"
+}

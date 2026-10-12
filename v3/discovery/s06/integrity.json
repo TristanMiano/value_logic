@@ -1,0 +1,2596 @@
+{
+  "schema": "s06-publication-integrity-v1",
+  "created_utc": "2026-10-12T17:54:24.106086+00:00",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_GAP",
+  "research_credit_ns": 0,
+  "new_audits": 0,
+  "new_native_calls": 0,
+  "new_proof_calls": 0,
+  "scope": [
+    "Byte identity and recorded file-hash bindings only; no proof admission or scientific rerun.",
+    "Every present s06 py/json/jsonl/txt file, stable reproduce.md, and four cited s05 dependencies.",
+    "This report is excluded from its own manifest; integrity.py is included. No self-hash cycle.",
+    "Handoff prose, pointers, time ledger, later publication artifacts and external package bytes are outside the repository content manifest.",
+    "Names absent from original scalar hash fields are explicitly content-resolved; semantic source identity and receipt validity remain the scientific checkers' responsibility.",
+    "Files without an earlier source binding receive a publication identity here, not retroactive execution provenance."
+  ],
+  "content_manifest": {
+    "v3/discovery/s06/acq_theory_checks.py": {
+      "bytes": 4748,
+      "sha256": "378f409929ae2a7393315297d88b03fe7c63b93e27c23abcbdaa68a0e293c835"
+    },
+    "v3/discovery/s06/acq_theory_results.json": {
+      "bytes": 2858,
+      "sha256": "d30e27ab7fcc83e2e239f8ba3621ff3692d88d1b5849c627500ce97669be9f01"
+    },
+    "v3/discovery/s06/actuals.json": {
+      "bytes": 1491,
+      "sha256": "2b058b9ef44ad195aafdc9e33f1ab62490529f5b51aa56dc54182004795f2ddb"
+    },
+    "v3/discovery/s06/anchor_quote_check.py": {
+      "bytes": 4099,
+      "sha256": "89294895736efed5c5076470b87c5aad1bfeac45e8c713f2fcdb006ff6daae90"
+    },
+    "v3/discovery/s06/anchor_quote_results.json": {
+      "bytes": 9377,
+      "sha256": "69b91c3fa922967a4cd041d8cd05b5293ba765273d72eddfc474deedf79a346e"
+    },
+    "v3/discovery/s06/anchor_quotes.py": {
+      "bytes": 3590,
+      "sha256": "afa35592c6d800f78a60853a71f59d0a2e28ac279aeaf5b71a1026149de0a97a"
+    },
+    "v3/discovery/s06/audit_example.py": {
+      "bytes": 3558,
+      "sha256": "dfe8ca045e800b300ffe488dece5b2089faa7c531d66385b0a0674bb23368e14"
+    },
+    "v3/discovery/s06/audit_results.json": {
+      "bytes": 9027,
+      "sha256": "408a7664eba0e1dd1422f6785da9036cb33501b05dc551811cd22b1f076db392"
+    },
+    "v3/discovery/s06/clock_source.py": {
+      "bytes": 5367,
+      "sha256": "d472accf08c2971c0fca032e59ad4c30c4322e3bb4fa1e21d3807d1bf57e533e"
+    },
+    "v3/discovery/s06/cohort_hull.py": {
+      "bytes": 2533,
+      "sha256": "52d6a1a5a635e0716fbbd6cbcebec4aa3e176897567247460bcbb22169817c74"
+    },
+    "v3/discovery/s06/complete_check.py": {
+      "bytes": 18417,
+      "sha256": "a50778cfc7c2a9718acb41981520459c2e65e3fb3ac485d4d5304b92d80b5a37"
+    },
+    "v3/discovery/s06/complete_check_results.json": {
+      "bytes": 14931,
+      "sha256": "02b3b84fc65ac2c7a4fc230dd33a2f2edf48e9b2982619b99eb2b7831798c109"
+    },
+    "v3/discovery/s06/complete_service.py": {
+      "bytes": 8391,
+      "sha256": "a86c4d1452dc5d78996b6965b076fed1505b74338bcf067272191b74363d97df"
+    },
+    "v3/discovery/s06/complete_service_results.json": {
+      "bytes": 210121,
+      "sha256": "5c2c5a19ebc865b5cbcac3973b6d9136a1a64353354ceb775265b2f2397e2ae1"
+    },
+    "v3/discovery/s06/contract_checks.py": {
+      "bytes": 7806,
+      "sha256": "26aaa9fc4c0ef69a19c3d5bf3afc6d30677bbf7ce68c9ca427395b6b42f6b978"
+    },
+    "v3/discovery/s06/contract_fallback.py": {
+      "bytes": 6044,
+      "sha256": "72228fca54e6add81d171e7238b383ed654c5b87c5d1c3b80ddde2f5db123f14"
+    },
+    "v3/discovery/s06/contract_fallback_results.json": {
+      "bytes": 33672,
+      "sha256": "76ed12e8abf68f7bd7febaf895ebf2dcc176cdbe9b189f768946a23b067a50af"
+    },
+    "v3/discovery/s06/contract_guard.py": {
+      "bytes": 2517,
+      "sha256": "5babe0a530fb33b97eb6af860c6da638a70f1d63f514d66c05cb1f55efefef5a"
+    },
+    "v3/discovery/s06/contract_guard_results.json": {
+      "bytes": 1553,
+      "sha256": "f9168ceafaded404989b0c5be5454b415a7e7c73080c0a86dd8190d273b4857d"
+    },
+    "v3/discovery/s06/contract_quote.py": {
+      "bytes": 9498,
+      "sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482"
+    },
+    "v3/discovery/s06/contract_results.json": {
+      "bytes": 34307,
+      "sha256": "1d056bc0d31815a84a40a83fc3f60de72b198e2c2642edac158c7181a6fdb4c0"
+    },
+    "v3/discovery/s06/cut_dual.py": {
+      "bytes": 7017,
+      "sha256": "4ab5a8f75a1d03cff77898f5fbc4bb9a307e68c144f0bafaa660173504059b4d"
+    },
+    "v3/discovery/s06/cut_dual_probe.py": {
+      "bytes": 4984,
+      "sha256": "5bc869577a0e4b2c1041f5d0d12c5f52b0baf9a6c8270efcddf5c4d545437408"
+    },
+    "v3/discovery/s06/cut_dual_results.json": {
+      "bytes": 294098,
+      "sha256": "060b31d83f7c526384da88a2821c08d4167263d62c30e8de6cd931f16d91dae2"
+    },
+    "v3/discovery/s06/dispositions.json": {
+      "bytes": 1359,
+      "sha256": "f2f80da956ddcbcaf82bcb69d111b59b7daee83505a310bc6f69276eaf360b17"
+    },
+    "v3/discovery/s06/dual_hull_probe.py": {
+      "bytes": 9252,
+      "sha256": "5e5c217aadc28f197de52f9c283d65da6c17940aa0042f6500d2da511984aab6"
+    },
+    "v3/discovery/s06/dual_hull_results.json": {
+      "bytes": 405924,
+      "sha256": "64d56979689941f5e08f9bd0f06267b9e10284b934a0e54e49de346d93e83526"
+    },
+    "v3/discovery/s06/effective_actuals.json": {
+      "bytes": 4138,
+      "sha256": "bff7ae16ebeb3128a4effe1771176a2b62a45ae34e643160a5002ffb79bf56bb"
+    },
+    "v3/discovery/s06/events.jsonl": {
+      "bytes": 11685,
+      "sha256": "69b5d1f5dbb9e88fe5a37dbe1f821bc39ef08e1673aa5fbb6770a6e98a975358"
+    },
+    "v3/discovery/s06/hull_replay.py": {
+      "bytes": 7128,
+      "sha256": "a18863d02d6f79fb57c2600a5c9225146f3498b0ff3c2e18eac8e6dcd2181824"
+    },
+    "v3/discovery/s06/hull_results.json": {
+      "bytes": 768544,
+      "sha256": "41e673064ab5b9c0411cf77cfce353e321bc9bec109381fd42d30f18d2892db5"
+    },
+    "v3/discovery/s06/integrity.py": {
+      "bytes": 15068,
+      "sha256": "123becff84b2425c00b1b501dd3c4fd00355ae0f8baad8c1cf032d616c029652"
+    },
+    "v3/discovery/s06/joint_check.py": {
+      "bytes": 17145,
+      "sha256": "51194fa9062a4b30b525b46cad8d4962eedaa68d94e9e3a29994646440215d6e"
+    },
+    "v3/discovery/s06/joint_check_results.json": {
+      "bytes": 47026,
+      "sha256": "ce8e66d497d962b0caddb786569455d228d8b6ddcc65f1ecc21906ccb48ae46a"
+    },
+    "v3/discovery/s06/joint_repair.py": {
+      "bytes": 25327,
+      "sha256": "7e1a96f4a05107174554acc701ae43026528d6041e570500d840fb1b76060384"
+    },
+    "v3/discovery/s06/joint_repair_v2.py": {
+      "bytes": 19440,
+      "sha256": "5ff2523118bb0c84d58f42f9e5e25a6292a149e49a048c3d7ac21f68a0bfb209"
+    },
+    "v3/discovery/s06/joint_results.json": {
+      "bytes": 2280999,
+      "sha256": "dbcbf10b5e855694064f470d10bd3c6cbc0a7891d396f007446540d042d46bcf"
+    },
+    "v3/discovery/s06/joint_source.json": {
+      "bytes": 3121,
+      "sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0"
+    },
+    "v3/discovery/s06/joint_v2_results.json": {
+      "bytes": 3103145,
+      "sha256": "e463a48d97564d178489e36bde281e99f35ac3c51c9dbc0202fdc6e51ef99074"
+    },
+    "v3/discovery/s06/mix_repair.py": {
+      "bytes": 17327,
+      "sha256": "f943ca1c8274a233b3027c09f294b3cfb923def53eff405fcbe998982d3f8eaf"
+    },
+    "v3/discovery/s06/mix_results.json": {
+      "bytes": 969841,
+      "sha256": "0dd016e66dd2aebb699f0e048aa7a18cf161aa69a33afb2e8dea273f6dd3a5e1"
+    },
+    "v3/discovery/s06/native_attempt_02.json": {
+      "bytes": 4774528,
+      "sha256": "bd5c5adc8ed2abe85dd78e48cef0d080ff65749a0dae8fb43428f2ac2885615f"
+    },
+    "v3/discovery/s06/native_attempt_runner.py": {
+      "bytes": 17921,
+      "sha256": "2226d8b0d9b81f2473bf31ae2e1e17ee35d5b31e8dbe042319ad4cf0eaf46854"
+    },
+    "v3/discovery/s06/native_attempts.json": {
+      "bytes": 2157,
+      "sha256": "862bd2dc30ccc76728eb30f2013c7dc63efc1f19049a34e6b9d37c5d20477114"
+    },
+    "v3/discovery/s06/native_check.py": {
+      "bytes": 5888,
+      "sha256": "37a1e89dcff57ff46f8fe778312f1023a422aad741d1ecf2cfc0f37edfe843a7"
+    },
+    "v3/discovery/s06/native_check_results.json": {
+      "bytes": 14441,
+      "sha256": "90fa8557d31ce8e4bded786056f211f8c70c7e4fdc84e798519293aa9edf7525"
+    },
+    "v3/discovery/s06/native_repair.py": {
+      "bytes": 20460,
+      "sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a"
+    },
+    "v3/discovery/s06/native_requirements.txt": {
+      "bytes": 186,
+      "sha256": "898ca70e1c4c7f43272d3139bb4339eda877e3844de7c5e29c4b0406af35aaec"
+    },
+    "v3/discovery/s06/native_rup.py": {
+      "bytes": 7913,
+      "sha256": "f3c037236fa82944f488f555978da6e91e7b89e5c9f651556cabe11322de43cd"
+    },
+    "v3/discovery/s06/native_stream.py": {
+      "bytes": 18159,
+      "sha256": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e"
+    },
+    "v3/discovery/s06/native_stream_results.json": {
+      "bytes": 1450243,
+      "sha256": "0515e63af72040b1c816497b5dc563b173ada4b16e492efd07e38e70ead55c9a"
+    },
+    "v3/discovery/s06/native_warm_attempt.py": {
+      "bytes": 19693,
+      "sha256": "461fe7ba95be95c118e778891b2defea861065380d22d5a03b852214c15d47d2"
+    },
+    "v3/discovery/s06/proof_cap_probe.py": {
+      "bytes": 3766,
+      "sha256": "d1d1bb4081f95fc7d5533eb86af3de7d51f368cdf8a1db64252cc1ec5bf188bd"
+    },
+    "v3/discovery/s06/proof_cap_results.json": {
+      "bytes": 3880,
+      "sha256": "bc2a585f6fd96ac4264c93ffd5cda30a6bac757cd966e803ef723a45a25551cb"
+    },
+    "v3/discovery/s06/reconcile.py": {
+      "bytes": 4685,
+      "sha256": "bff804ea1101ed7fff75dc1268a7993e1c2d2bd9484b6e28fe50d52be4f59fa5"
+    },
+    "v3/discovery/s06/reproduce.md": {
+      "bytes": 16713,
+      "sha256": "faedadf3c310ec3c6e2d2d266c29522df94d3c5f7603dd6d1ec7f5eac97ab8e2"
+    },
+    "v3/discovery/s06/research_requirements.txt": {
+      "bytes": 294,
+      "sha256": "87ff85eab4de83bdcad753d8b68ae3e8aecdaeaddfead8a14c8758bd8abaa4fd"
+    },
+    "v3/discovery/s06/rup_attempt_01.json": {
+      "bytes": 614,
+      "sha256": "85c2025c36a6ae5abb445830bbaa1e61dca3c103b975de0686430b9c1cd2b382"
+    },
+    "v3/discovery/s06/rup_bridge.py": {
+      "bytes": 16182,
+      "sha256": "e14cf4ce1eb8d709b97e825f33c6992d6665d04f826f4d8d7adacd6d097450ef"
+    },
+    "v3/discovery/s06/rup_bridge_v2.py": {
+      "bytes": 16637,
+      "sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82"
+    },
+    "v3/discovery/s06/rup_check_results.json": {
+      "bytes": 29227,
+      "sha256": "3f0478aa94bed68afbe4ce127b9d0fee67b512661b617d6a2ac85d7d4c6a3a63"
+    },
+    "v3/discovery/s06/rup_check_v2_results.json": {
+      "bytes": 34518,
+      "sha256": "e4365e2def3fe52a853a4354b4e8c8f5b5fd835d2bd07c2f67fea10993295923"
+    },
+    "v3/discovery/s06/rup_checks.py": {
+      "bytes": 5252,
+      "sha256": "830aea7c8d0c170711cff5c72cc764c7aa394ffafe9836ec37ff5f5b0f2d83a5"
+    },
+    "v3/discovery/s06/rup_checks_v2.py": {
+      "bytes": 5255,
+      "sha256": "92d3a5d11d14f175fd2bc539a858b8e2ca89cc8e36861ba536a051590118aed9"
+    },
+    "v3/discovery/s06/rup_replay.py": {
+      "bytes": 6335,
+      "sha256": "c34b5c0c5f8d608d40878c72a32826440f6ce4b3e940c425a046ccb9ac3b08aa"
+    },
+    "v3/discovery/s06/rup_replay_results.json": {
+      "bytes": 11098,
+      "sha256": "411742d9d9f99adee35abaf8b9a4fa6fa42ada0a87b58237191818639047ec68"
+    },
+    "v3/discovery/s06/rup_stream.py": {
+      "bytes": 18474,
+      "sha256": "37eaae5b3c95ab25788935948303930dd5430750865a75a479daeb4057f94bab"
+    },
+    "v3/discovery/s06/rup_stream_results.json": {
+      "bytes": 2042882,
+      "sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e"
+    },
+    "v3/discovery/s06/segments.jsonl": {
+      "bytes": 17891,
+      "sha256": "af921fe2849f2d83335f1e4c059d180b4f3108957e16e7f4cd05d91ff3d4e794"
+    },
+    "v3/discovery/s06/session_config.json": {
+      "bytes": 577,
+      "sha256": "3a20f7872392e4a5ae30fd0d5236e2bba02cb9b079ac9b67fc5648496b128cea"
+    },
+    "v3/discovery/s06/source_anchor.py": {
+      "bytes": 2432,
+      "sha256": "b8f42879ee99ce99c849fb4409e3b9c47c482f1430345ae7259ccb5c25a730bc"
+    },
+    "v3/discovery/s06/source_anchor_probe.py": {
+      "bytes": 8245,
+      "sha256": "5bad50cd510d2a4a3eea28e7c8e334376285fe5d395e0a90d048c4a6341687fa"
+    },
+    "v3/discovery/s06/source_anchor_results.json": {
+      "bytes": 106423,
+      "sha256": "8043d384f54e82c94e89e9bc207c3ec31195ea8be1b515bd4ff7222ffd631208"
+    },
+    "v3/discovery/s06/vertex_probe.py": {
+      "bytes": 8104,
+      "sha256": "d24820431e1906206845a22bafc475cd0841345f021e37faa7fdfe31fb06e9e2"
+    },
+    "v3/discovery/s06/vertex_repair.py": {
+      "bytes": 8422,
+      "sha256": "b466d20eae0c1d1e5fcbe6987278312b644a18293d7049fbcc6e2c317131ec7f"
+    },
+    "v3/discovery/s06/vertex_results.json": {
+      "bytes": 255161,
+      "sha256": "e21b20e571c5057a9061de74b7f9b1ffaf74dba87fe7055cedbc80caeb02ee0c"
+    },
+    "v3/discovery/s05/maxsat_repair.py": {
+      "bytes": 21856,
+      "sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086"
+    },
+    "v3/discovery/s05/maxsat_reprice.py": {
+      "bytes": 16431,
+      "sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+    },
+    "v3/discovery/s05/maxsat_repair_results.json": {
+      "bytes": 544143,
+      "sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326"
+    },
+    "v3/discovery/s05/regions_bundle.json": {
+      "bytes": 8037,
+      "sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc"
+    }
+  },
+  "manifest_file_count": 80,
+  "manifest_total_bytes": 17951596,
+  "scanned_json": [
+    "acq_theory_results.json",
+    "actuals.json",
+    "anchor_quote_results.json",
+    "audit_results.json",
+    "complete_check_results.json",
+    "complete_service_results.json",
+    "contract_fallback_results.json",
+    "contract_guard_results.json",
+    "contract_results.json",
+    "cut_dual_results.json",
+    "dispositions.json",
+    "dual_hull_results.json",
+    "effective_actuals.json",
+    "hull_results.json",
+    "joint_check_results.json",
+    "joint_results.json",
+    "joint_source.json",
+    "joint_v2_results.json",
+    "mix_results.json",
+    "native_attempt_02.json",
+    "native_attempts.json",
+    "native_check_results.json",
+    "native_stream_results.json",
+    "proof_cap_results.json",
+    "rup_attempt_01.json",
+    "rup_check_results.json",
+    "rup_check_v2_results.json",
+    "rup_replay_results.json",
+    "rup_stream_results.json",
+    "session_config.json",
+    "source_anchor_results.json",
+    "vertex_results.json"
+  ],
+  "binding_occurrences_by_status": {
+    "DOCUMENTED_MISSING_FIRST_ATTEMPT_RUNNER": 1,
+    "ENVIRONMENT_BINDING": 110,
+    "MATCH_ARCHIVED_VERSION": 3,
+    "MATCH_CONTENT_RESOLVED_FILE": 122,
+    "MATCH_NAMED_FILE": 243
+  },
+  "file_binding_groups": [
+    {
+      "result": "actuals.json",
+      "field": ".session_config.clock_source_sha256",
+      "recorded_sha256": "d472accf08c2971c0fca032e59ad4c30c4322e3bb4fa1e21d3807d1bf57e533e",
+      "recorded_target": "v3/discovery/s06/clock_source.py",
+      "resolved_file": "v3/discovery/s06/clock_source.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "anchor_quote_results.json",
+      "field": ".finite_provider_quote.compilation_sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "anchor_quote_results.json",
+      "field": ".finite_provider_quote.provider_sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "anchor_quote_results.json",
+      "field": ".hashes.anchor_quote_check.py",
+      "recorded_sha256": "89294895736efed5c5076470b87c5aad1bfeac45e8c713f2fcdb006ff6daae90",
+      "recorded_target": "v3/discovery/s06/anchor_quote_check.py",
+      "resolved_file": "v3/discovery/s06/anchor_quote_check.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "anchor_quote_results.json",
+      "field": ".hashes.anchor_quotes.py",
+      "recorded_sha256": "afa35592c6d800f78a60853a71f59d0a2e28ac279aeaf5b71a1026149de0a97a",
+      "recorded_target": "v3/discovery/s06/anchor_quotes.py",
+      "resolved_file": "v3/discovery/s06/anchor_quotes.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "anchor_quote_results.json",
+      "field": ".hashes.contract_quote.py",
+      "recorded_sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+      "recorded_target": "v3/discovery/s06/contract_quote.py",
+      "resolved_file": "v3/discovery/s06/contract_quote.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "anchor_quote_results.json",
+      "field": ".hashes.contract_results.json",
+      "recorded_sha256": "1d056bc0d31815a84a40a83fc3f60de72b198e2c2642edac158c7181a6fdb4c0",
+      "recorded_target": "v3/discovery/s06/contract_results.json",
+      "resolved_file": "v3/discovery/s06/contract_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "anchor_quote_results.json",
+      "field": ".hashes.source_anchor.py",
+      "recorded_sha256": "b8f42879ee99ce99c849fb4409e3b9c47c482f1430345ae7259ccb5c25a730bc",
+      "recorded_target": "v3/discovery/s06/source_anchor.py",
+      "resolved_file": "v3/discovery/s06/source_anchor.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "audit_results.json",
+      "field": ".dependencies.anchor_quotes.py",
+      "recorded_sha256": "afa35592c6d800f78a60853a71f59d0a2e28ac279aeaf5b71a1026149de0a97a",
+      "recorded_target": "v3/discovery/s06/anchor_quotes.py",
+      "resolved_file": "v3/discovery/s06/anchor_quotes.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "audit_results.json",
+      "field": ".dependencies.contract_results.json",
+      "recorded_sha256": "1d056bc0d31815a84a40a83fc3f60de72b198e2c2642edac158c7181a6fdb4c0",
+      "recorded_target": "v3/discovery/s06/contract_results.json",
+      "resolved_file": "v3/discovery/s06/contract_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "audit_results.json",
+      "field": ".dependencies.joint_repair.py",
+      "recorded_sha256": "7e1a96f4a05107174554acc701ae43026528d6041e570500d840fb1b76060384",
+      "recorded_target": "v3/discovery/s06/joint_repair.py",
+      "resolved_file": "v3/discovery/s06/joint_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "audit_results.json",
+      "field": ".dependencies.source_anchor.py",
+      "recorded_sha256": "b8f42879ee99ce99c849fb4409e3b9c47c482f1430345ae7259ccb5c25a730bc",
+      "recorded_target": "v3/discovery/s06/source_anchor.py",
+      "resolved_file": "v3/discovery/s06/source_anchor.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "audit_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "dfe8ca045e800b300ffe488dece5b2089faa7c531d66385b0a0674bb23368e14",
+      "recorded_target": "v3/discovery/s06/audit_example.py",
+      "resolved_file": "v3/discovery/s06/audit_example.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_check_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "a50778cfc7c2a9718acb41981520459c2e65e3fb3ac485d4d5304b92d80b5a37",
+      "recorded_target": "v3/discovery/s06/complete_check.py",
+      "resolved_file": "v3/discovery/s06/complete_check.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_check_results.json",
+      "field": ".replayed_code_admission.binding_rows[].sha256",
+      "recorded_sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+      "recorded_target": "v3/discovery/s06/contract_quote.py",
+      "resolved_file": "v3/discovery/s06/contract_quote.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_check_results.json",
+      "field": ".replayed_code_admission.binding_rows[].sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_check_results.json",
+      "field": ".replayed_code_admission.binding_rows[].sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_check_results.json",
+      "field": ".replayed_original_admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_check_results.json",
+      "field": ".replayed_original_admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_check_results.json",
+      "field": ".replayed_original_admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_check_results.json",
+      "field": ".replayed_original_admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_check_results.json",
+      "field": ".result_sha256",
+      "recorded_sha256": "5c2c5a19ebc865b5cbcac3973b6d9136a1a64353354ceb775265b2f2397e2ae1",
+      "recorded_target": "v3/discovery/s06/complete_service_results.json",
+      "resolved_file": "v3/discovery/s06/complete_service_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_check_results.json",
+      "field": ".service_sha256",
+      "recorded_sha256": "a86c4d1452dc5d78996b6965b076fed1505b74338bcf067272191b74363d97df",
+      "recorded_target": "v3/discovery/s06/complete_service.py",
+      "resolved_file": "v3/discovery/s06/complete_service.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_check_results.json",
+      "field": ".source_sha256",
+      "recorded_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+      "recorded_target": "v3/discovery/s06/joint_source.json",
+      "resolved_file": "v3/discovery/s06/joint_source.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_service_results.json",
+      "field": ".calls[].checked_call.quote.compilation_sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 14
+    },
+    {
+      "result": "complete_service_results.json",
+      "field": ".calls[].checked_call.quote.provider_sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 14
+    },
+    {
+      "result": "complete_service_results.json",
+      "field": ".complete_code_admission.binding_rows[].sha256",
+      "recorded_sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+      "recorded_target": "v3/discovery/s06/contract_quote.py",
+      "resolved_file": "v3/discovery/s06/contract_quote.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_service_results.json",
+      "field": ".complete_code_admission.binding_rows[].sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_service_results.json",
+      "field": ".complete_code_admission.binding_rows[].sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_service_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "a86c4d1452dc5d78996b6965b076fed1505b74338bcf067272191b74363d97df",
+      "recorded_target": "v3/discovery/s06/complete_service.py",
+      "resolved_file": "v3/discovery/s06/complete_service.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_service_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_service_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_service_results.json",
+      "field": ".initial_admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_service_results.json",
+      "field": ".initial_admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "complete_service_results.json",
+      "field": ".source_sha256",
+      "recorded_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+      "recorded_target": "v3/discovery/s06/joint_source.json",
+      "resolved_file": "v3/discovery/s06/joint_source.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_fallback_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "72228fca54e6add81d171e7238b383ed654c5b87c5d1c3b80ddde2f5db123f14",
+      "recorded_target": "v3/discovery/s06/contract_fallback.py",
+      "resolved_file": "v3/discovery/s06/contract_fallback.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_fallback_results.json",
+      "field": ".initial_code_admission.binding_rows[].sha256",
+      "recorded_sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+      "recorded_target": "v3/discovery/s06/contract_quote.py",
+      "resolved_file": "v3/discovery/s06/contract_quote.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_fallback_results.json",
+      "field": ".initial_code_admission.binding_rows[].sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_fallback_results.json",
+      "field": ".initial_code_admission.binding_rows[].sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_fallback_results.json",
+      "field": ".prior_quote_result_sha256",
+      "recorded_sha256": "1d056bc0d31815a84a40a83fc3f60de72b198e2c2642edac158c7181a6fdb4c0",
+      "recorded_target": "v3/discovery/s06/contract_results.json",
+      "resolved_file": "v3/discovery/s06/contract_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_guard_results.json",
+      "field": ".admission.binding_rows[].sha256",
+      "recorded_sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+      "recorded_target": "v3/discovery/s06/contract_quote.py",
+      "resolved_file": "v3/discovery/s06/contract_quote.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_guard_results.json",
+      "field": ".admission.binding_rows[].sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_guard_results.json",
+      "field": ".admission.binding_rows[].sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_guard_results.json",
+      "field": ".checked_prior_result_sha256",
+      "recorded_sha256": "1d056bc0d31815a84a40a83fc3f60de72b198e2c2642edac158c7181a6fdb4c0",
+      "recorded_target": "v3/discovery/s06/contract_results.json",
+      "resolved_file": "v3/discovery/s06/contract_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_guard_results.json",
+      "field": ".guard_sha256",
+      "recorded_sha256": "5babe0a530fb33b97eb6af860c6da638a70f1d63f514d66c05cb1f55efefef5a",
+      "recorded_target": "v3/discovery/s06/contract_guard.py",
+      "resolved_file": "v3/discovery/s06/contract_guard.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_results.json",
+      "field": ".checks_sha256",
+      "recorded_sha256": "26aaa9fc4c0ef69a19c3d5bf3afc6d30677bbf7ce68c9ca427395b6b42f6b978",
+      "recorded_target": "v3/discovery/s06/contract_checks.py",
+      "resolved_file": "v3/discovery/s06/contract_checks.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+      "recorded_target": "v3/discovery/s06/contract_quote.py",
+      "resolved_file": "v3/discovery/s06/contract_quote.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_results.json",
+      "field": ".public_source_complete_quotes[].compilation_sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 16
+    },
+    {
+      "result": "contract_results.json",
+      "field": ".public_source_complete_quotes[].provider_sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 16
+    },
+    {
+      "result": "contract_results.json",
+      "field": ".source_archive_sha256",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_results.json",
+      "field": ".tiny.initial_paid_lower_receipt.quote.compilation_sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_results.json",
+      "field": ".tiny.initial_paid_lower_receipt.quote.provider_sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_results.json",
+      "field": ".tiny.paid_query.quote.compilation_sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "contract_results.json",
+      "field": ".tiny.paid_query.quote.provider_sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "cut_dual_results.json",
+      "field": ".dual_sha256",
+      "recorded_sha256": "4ab5a8f75a1d03cff77898f5fbc4bb9a307e68c144f0bafaa660173504059b4d",
+      "recorded_target": "v3/discovery/s06/cut_dual.py",
+      "resolved_file": "v3/discovery/s06/cut_dual.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "cut_dual_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "5bc869577a0e4b2c1041f5d0d12c5f52b0baf9a6c8270efcddf5c4d545437408",
+      "recorded_target": "v3/discovery/s06/cut_dual_probe.py",
+      "resolved_file": "v3/discovery/s06/cut_dual_probe.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "cut_dual_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "cut_dual_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "cut_dual_results.json",
+      "field": ".initial_admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "cut_dual_results.json",
+      "field": ".initial_admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "cut_dual_results.json",
+      "field": ".source_sha256",
+      "recorded_sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+      "recorded_target": "v3/discovery/s06/rup_stream_results.json",
+      "resolved_file": "v3/discovery/s06/rup_stream_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".arms[].rows[].admitted_cuts[].checker.checker_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 34
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".hashes.cohort_hull.py",
+      "recorded_sha256": "52d6a1a5a635e0716fbbd6cbcebec4aa3e176897567247460bcbb22169817c74",
+      "recorded_target": "v3/discovery/s06/cohort_hull.py",
+      "resolved_file": "v3/discovery/s06/cohort_hull.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".hashes.cut_dual.py",
+      "recorded_sha256": "4ab5a8f75a1d03cff77898f5fbc4bb9a307e68c144f0bafaa660173504059b4d",
+      "recorded_target": "v3/discovery/s06/cut_dual.py",
+      "resolved_file": "v3/discovery/s06/cut_dual.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".hashes.dual_hull_probe.py",
+      "recorded_sha256": "5e5c217aadc28f197de52f9c283d65da6c17940aa0042f6500d2da511984aab6",
+      "recorded_target": "v3/discovery/s06/dual_hull_probe.py",
+      "resolved_file": "v3/discovery/s06/dual_hull_probe.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".hashes.joint_source.json",
+      "recorded_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+      "recorded_target": "v3/discovery/s06/joint_source.json",
+      "resolved_file": "v3/discovery/s06/joint_source.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".hashes.rup_bridge_v2.py",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": "v3/discovery/s06/rup_bridge_v2.py",
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".hashes.rup_stream_results.json",
+      "recorded_sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+      "recorded_target": "v3/discovery/s06/rup_stream_results.json",
+      "resolved_file": "v3/discovery/s06/rup_stream_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".hashes.vertex_repair.py",
+      "recorded_sha256": "b466d20eae0c1d1e5fcbe6987278312b644a18293d7049fbcc6e2c317131ec7f",
+      "recorded_target": "v3/discovery/s06/vertex_repair.py",
+      "resolved_file": "v3/discovery/s06/vertex_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".initial_admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "dual_hull_results.json",
+      "field": ".initial_admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "effective_actuals.json",
+      "field": ".session_config.clock_source_sha256",
+      "recorded_sha256": "d472accf08c2971c0fca032e59ad4c30c4322e3bb4fa1e21d3807d1bf57e533e",
+      "recorded_target": "v3/discovery/s06/clock_source.py",
+      "resolved_file": "v3/discovery/s06/clock_source.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "effective_actuals.json",
+      "field": ".source_hashes.actuals.json",
+      "recorded_sha256": "2b058b9ef44ad195aafdc9e33f1ab62490529f5b51aa56dc54182004795f2ddb",
+      "recorded_target": "v3/discovery/s06/actuals.json",
+      "resolved_file": "v3/discovery/s06/actuals.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "effective_actuals.json",
+      "field": ".source_hashes.clock_source.py",
+      "recorded_sha256": "d472accf08c2971c0fca032e59ad4c30c4322e3bb4fa1e21d3807d1bf57e533e",
+      "recorded_target": "v3/discovery/s06/clock_source.py",
+      "resolved_file": "v3/discovery/s06/clock_source.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "effective_actuals.json",
+      "field": ".source_hashes.dispositions.json",
+      "recorded_sha256": "f2f80da956ddcbcaf82bcb69d111b59b7daee83505a310bc6f69276eaf360b17",
+      "recorded_target": "v3/discovery/s06/dispositions.json",
+      "resolved_file": "v3/discovery/s06/dispositions.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "effective_actuals.json",
+      "field": ".source_hashes.events.jsonl",
+      "recorded_sha256": "69b5d1f5dbb9e88fe5a37dbe1f821bc39ef08e1673aa5fbb6770a6e98a975358",
+      "recorded_target": "v3/discovery/s06/events.jsonl",
+      "resolved_file": "v3/discovery/s06/events.jsonl",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "effective_actuals.json",
+      "field": ".source_hashes.segments.jsonl",
+      "recorded_sha256": "af921fe2849f2d83335f1e4c059d180b4f3108957e16e7f4cd05d91ff3d4e794",
+      "recorded_target": "v3/discovery/s06/segments.jsonl",
+      "resolved_file": "v3/discovery/s06/segments.jsonl",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "hull_results.json",
+      "field": ".hashes.cohort_hull.py",
+      "recorded_sha256": "52d6a1a5a635e0716fbbd6cbcebec4aa3e176897567247460bcbb22169817c74",
+      "recorded_target": "v3/discovery/s06/cohort_hull.py",
+      "resolved_file": "v3/discovery/s06/cohort_hull.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "hull_results.json",
+      "field": ".hashes.hull_replay.py",
+      "recorded_sha256": "a18863d02d6f79fb57c2600a5c9225146f3498b0ff3c2e18eac8e6dcd2181824",
+      "recorded_target": "v3/discovery/s06/hull_replay.py",
+      "resolved_file": "v3/discovery/s06/hull_replay.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "hull_results.json",
+      "field": ".hashes.joint_check.py",
+      "recorded_sha256": "51194fa9062a4b30b525b46cad8d4962eedaa68d94e9e3a29994646440215d6e",
+      "recorded_target": "v3/discovery/s06/joint_check.py",
+      "resolved_file": "v3/discovery/s06/joint_check.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "hull_results.json",
+      "field": ".hashes.joint_source.json",
+      "recorded_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+      "recorded_target": "v3/discovery/s06/joint_source.json",
+      "resolved_file": "v3/discovery/s06/joint_source.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "hull_results.json",
+      "field": ".hashes.joint_v2_results.json",
+      "recorded_sha256": "e463a48d97564d178489e36bde281e99f35ac3c51c9dbc0202fdc6e51ef99074",
+      "recorded_target": "v3/discovery/s06/joint_v2_results.json",
+      "resolved_file": "v3/discovery/s06/joint_v2_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "hull_results.json",
+      "field": ".hashes.vertex_repair.py",
+      "recorded_sha256": "b466d20eae0c1d1e5fcbe6987278312b644a18293d7049fbcc6e2c317131ec7f",
+      "recorded_target": "v3/discovery/s06/vertex_repair.py",
+      "resolved_file": "v3/discovery/s06/vertex_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "hull_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "hull_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "hull_results.json",
+      "field": ".initial_admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "hull_results.json",
+      "field": ".initial_admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "51194fa9062a4b30b525b46cad8d4962eedaa68d94e9e3a29994646440215d6e",
+      "recorded_target": "v3/discovery/s06/joint_check.py",
+      "resolved_file": "v3/discovery/s06/joint_check.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".initial_raw_and_compact_readmission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".initial_raw_and_compact_readmission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".initial_raw_and_compact_readmission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".initial_raw_and_compact_readmission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".input_hashes.joint_check.py",
+      "recorded_sha256": "51194fa9062a4b30b525b46cad8d4962eedaa68d94e9e3a29994646440215d6e",
+      "recorded_target": "v3/discovery/s06/joint_check.py",
+      "resolved_file": "v3/discovery/s06/joint_check.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".input_hashes.joint_repair.py",
+      "recorded_sha256": "7e1a96f4a05107174554acc701ae43026528d6041e570500d840fb1b76060384",
+      "recorded_target": "v3/discovery/s06/joint_repair.py",
+      "resolved_file": "v3/discovery/s06/joint_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".input_hashes.joint_repair_v2.py",
+      "recorded_sha256": "5ff2523118bb0c84d58f42f9e5e25a6292a149e49a048c3d7ac21f68a0bfb209",
+      "recorded_target": "v3/discovery/s06/joint_repair_v2.py",
+      "resolved_file": "v3/discovery/s06/joint_repair_v2.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".input_hashes.joint_source.json",
+      "recorded_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+      "recorded_target": "v3/discovery/s06/joint_source.json",
+      "resolved_file": "v3/discovery/s06/joint_source.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".input_hashes.joint_v2_results.json",
+      "recorded_sha256": "e463a48d97564d178489e36bde281e99f35ac3c51c9dbc0202fdc6e51ef99074",
+      "recorded_target": "v3/discovery/s06/joint_v2_results.json",
+      "resolved_file": "v3/discovery/s06/joint_v2_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".input_hashes.native_repair.py",
+      "recorded_sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+      "recorded_target": "v3/discovery/s06/native_repair.py",
+      "resolved_file": "v3/discovery/s06/native_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_check_results.json",
+      "field": ".input_hashes.native_stream.py",
+      "recorded_sha256": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+      "recorded_target": "v3/discovery/s06/native_stream.py",
+      "resolved_file": "v3/discovery/s06/native_stream.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".dependency_sha256.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".dependency_sha256.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "7e1a96f4a05107174554acc701ae43026528d6041e570500d840fb1b76060384",
+      "recorded_target": "v3/discovery/s06/joint_repair.py",
+      "resolved_file": "v3/discovery/s06/joint_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".initial_admission.raw_archive_sha256",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".native_capabilities.implementation_files.adapter.sha256",
+      "recorded_sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+      "recorded_target": "v3/discovery/s06/native_repair.py",
+      "resolved_file": "v3/discovery/s06/native_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".native_capabilities.implementation_files.checker.sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".native_capabilities.implementation_files.highs_native.sha256",
+      "recorded_sha256": "6ac24d07a9562de78cd67c18823fd257d273d8b43132d7cc2ad9783850f54e90",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".native_capabilities.implementation_files.highs_python.sha256",
+      "recorded_sha256": "d8cf9281501731f6a7257a22bfa4d9908c456939d3b23006ed989c90721374d1",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/highspy/highs.py",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/highspy/highs.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".native_capabilities.implementation_files.profile_compiler.sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".native_capabilities.implementation_files.pysat_native.sha256",
+      "recorded_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".native_capabilities.implementation_files.pysat_wrapper.sha256",
+      "recorded_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_results.json",
+      "field": ".source_sha256",
+      "recorded_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+      "recorded_target": "v3/discovery/s06/joint_source.json",
+      "resolved_file": "v3/discovery/s06/joint_source.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_source.json",
+      "field": ".logical_archive_sha256",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".capabilities.implementation_files.adapter.sha256",
+      "recorded_sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+      "recorded_target": "v3/discovery/s06/native_repair.py",
+      "resolved_file": "v3/discovery/s06/native_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".capabilities.implementation_files.checker.sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".capabilities.implementation_files.highs_native.sha256",
+      "recorded_sha256": "6ac24d07a9562de78cd67c18823fd257d273d8b43132d7cc2ad9783850f54e90",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".capabilities.implementation_files.highs_python.sha256",
+      "recorded_sha256": "d8cf9281501731f6a7257a22bfa4d9908c456939d3b23006ed989c90721374d1",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/highspy/highs.py",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/highspy/highs.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".capabilities.implementation_files.profile_compiler.sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".capabilities.implementation_files.pysat_native.sha256",
+      "recorded_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".capabilities.implementation_files.pysat_wrapper.sha256",
+      "recorded_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".dependencies.joint_repair.py",
+      "recorded_sha256": "7e1a96f4a05107174554acc701ae43026528d6041e570500d840fb1b76060384",
+      "recorded_target": "v3/discovery/s06/joint_repair.py",
+      "resolved_file": "v3/discovery/s06/joint_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".dependencies.native_repair.py",
+      "recorded_sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+      "recorded_target": "v3/discovery/s06/native_repair.py",
+      "resolved_file": "v3/discovery/s06/native_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".dependencies.native_stream.py",
+      "recorded_sha256": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+      "recorded_target": "v3/discovery/s06/native_stream.py",
+      "resolved_file": "v3/discovery/s06/native_stream.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "5ff2523118bb0c84d58f42f9e5e25a6292a149e49a048c3d7ac21f68a0bfb209",
+      "recorded_target": "v3/discovery/s06/joint_repair_v2.py",
+      "resolved_file": "v3/discovery/s06/joint_repair_v2.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".initial_admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".initial_admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "joint_v2_results.json",
+      "field": ".source_sha256",
+      "recorded_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+      "recorded_target": "v3/discovery/s06/joint_source.json",
+      "resolved_file": "v3/discovery/s06/joint_source.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "mix_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "f943ca1c8274a233b3027c09f294b3cfb923def53eff405fcbe998982d3f8eaf",
+      "recorded_target": "v3/discovery/s06/mix_repair.py",
+      "resolved_file": "v3/discovery/s06/mix_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "mix_results.json",
+      "field": ".input_sha256.v3/discovery/s05/maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "mix_results.json",
+      "field": ".input_sha256.v3/discovery/s05/maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "mix_results.json",
+      "field": ".input_sha256.v3/discovery/s05/maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "mix_results.json",
+      "field": ".input_sha256.v3/discovery/s06/joint_results.json",
+      "recorded_sha256": "dbcbf10b5e855694064f470d10bd3c6cbc0a7891d396f007446540d042d46bcf",
+      "recorded_target": "v3/discovery/s06/joint_results.json",
+      "resolved_file": "v3/discovery/s06/joint_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "mix_results.json",
+      "field": ".input_sha256.v3/discovery/s06/joint_source.json",
+      "recorded_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+      "recorded_target": "v3/discovery/s06/joint_source.json",
+      "resolved_file": "v3/discovery/s06/joint_source.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".capability.implementation_files.adapter.sha256",
+      "recorded_sha256": "461fe7ba95be95c118e778891b2defea861065380d22d5a03b852214c15d47d2",
+      "recorded_target": "v3/discovery/s06/native_repair.py",
+      "resolved_file": "v3/discovery/s06/native_warm_attempt.py",
+      "status": "MATCH_ARCHIVED_VERSION",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".capability.implementation_files.checker.sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".capability.implementation_files.highs_native.sha256",
+      "recorded_sha256": "6ac24d07a9562de78cd67c18823fd257d273d8b43132d7cc2ad9783850f54e90",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".capability.implementation_files.highs_python.sha256",
+      "recorded_sha256": "d8cf9281501731f6a7257a22bfa4d9908c456939d3b23006ed989c90721374d1",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/highspy/highs.py",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/highspy/highs.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".capability.implementation_files.profile_compiler.sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".capability.implementation_files.pysat_native.sha256",
+      "recorded_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".capability.implementation_files.pysat_wrapper.sha256",
+      "recorded_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempt_02.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "2226d8b0d9b81f2473bf31ae2e1e17ee35d5b31e8dbe042319ad4cf0eaf46854",
+      "recorded_target": "v3/discovery/s06/native_stream.py",
+      "resolved_file": "v3/discovery/s06/native_attempt_runner.py",
+      "status": "MATCH_ARCHIVED_VERSION",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempts.json",
+      "field": "[].adapter_sha256",
+      "recorded_sha256": "461fe7ba95be95c118e778891b2defea861065380d22d5a03b852214c15d47d2",
+      "recorded_target": "v3/discovery/s06/native_repair.py",
+      "resolved_file": "v3/discovery/s06/native_warm_attempt.py",
+      "status": "MATCH_ARCHIVED_VERSION",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempts.json",
+      "field": "[].adapter_sha256",
+      "recorded_sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+      "recorded_target": "v3/discovery/s06/native_repair.py",
+      "resolved_file": "v3/discovery/s06/native_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempts.json",
+      "field": "[].runner_sha256",
+      "recorded_sha256": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+      "recorded_target": "v3/discovery/s06/native_stream.py",
+      "resolved_file": "v3/discovery/s06/native_stream.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_attempts.json",
+      "field": "[].script_sha256",
+      "recorded_sha256": "432ec16d781c862de32005c7c251c26f638ade8d15721c68703bf92c6676a833",
+      "recorded_target": "v3/discovery/s06/native_stream.py",
+      "resolved_file": null,
+      "status": "DOCUMENTED_MISSING_FIRST_ATTEMPT_RUNNER",
+      "occurrences": 1
+    },
+    {
+      "result": "native_check_results.json",
+      "field": ".adapter_sha256",
+      "recorded_sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+      "recorded_target": "v3/discovery/s06/native_repair.py",
+      "resolved_file": "v3/discovery/s06/native_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_check_results.json",
+      "field": ".code_sha256",
+      "recorded_sha256": "37a1e89dcff57ff46f8fe778312f1023a422aad741d1ecf2cfc0f37edfe843a7",
+      "recorded_target": "v3/discovery/s06/native_check.py",
+      "resolved_file": "v3/discovery/s06/native_check.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_check_results.json",
+      "field": ".stream_sha256",
+      "recorded_sha256": "0515e63af72040b1c816497b5dc563b173ada4b16e492efd07e38e70ead55c9a",
+      "recorded_target": "v3/discovery/s06/native_stream_results.json",
+      "resolved_file": "v3/discovery/s06/native_stream_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".capability.implementation_files.adapter.sha256",
+      "recorded_sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+      "recorded_target": "v3/discovery/s06/native_repair.py",
+      "resolved_file": "v3/discovery/s06/native_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".capability.implementation_files.checker.sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".capability.implementation_files.highs_native.sha256",
+      "recorded_sha256": "6ac24d07a9562de78cd67c18823fd257d273d8b43132d7cc2ad9783850f54e90",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".capability.implementation_files.highs_python.sha256",
+      "recorded_sha256": "d8cf9281501731f6a7257a22bfa4d9908c456939d3b23006ed989c90721374d1",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/highspy/highs.py",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/highspy/highs.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".capability.implementation_files.profile_compiler.sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".capability.implementation_files.pysat_native.sha256",
+      "recorded_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".capability.implementation_files.pysat_wrapper.sha256",
+      "recorded_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "native_stream_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+      "recorded_target": "v3/discovery/s06/native_stream.py",
+      "resolved_file": "v3/discovery/s06/native_stream.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "proof_cap_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "d1d1bb4081f95fc7d5533eb86af3de7d51f368cdf8a1db64252cc1ec5bf188bd",
+      "recorded_target": "v3/discovery/s06/proof_cap_probe.py",
+      "resolved_file": "v3/discovery/s06/proof_cap_probe.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "proof_cap_results.json",
+      "field": ".solver.native_binary_sha256",
+      "recorded_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089",
+      "recorded_target": null,
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "proof_cap_results.json",
+      "field": ".solver.wrapper_sha256",
+      "recorded_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+      "recorded_target": null,
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_check_results.json",
+      "field": ".bridge_sha256",
+      "recorded_sha256": "e14cf4ce1eb8d709b97e825f33c6992d6665d04f826f4d8d7adacd6d097450ef",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_check_results.json",
+      "field": ".calls[].dependencies.native_sha256",
+      "recorded_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089",
+      "recorded_target": null,
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 4
+    },
+    {
+      "result": "rup_check_results.json",
+      "field": ".calls[].dependencies.wrapper_sha256",
+      "recorded_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+      "recorded_target": null,
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 4
+    },
+    {
+      "result": "rup_check_results.json",
+      "field": ".calls[].implementation_sha256",
+      "recorded_sha256": "e14cf4ce1eb8d709b97e825f33c6992d6665d04f826f4d8d7adacd6d097450ef",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 4
+    },
+    {
+      "result": "rup_check_results.json",
+      "field": ".existing_export_recheck.checker_sha256",
+      "recorded_sha256": "e14cf4ce1eb8d709b97e825f33c6992d6665d04f826f4d8d7adacd6d097450ef",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_check_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "830aea7c8d0c170711cff5c72cc764c7aa394ffafe9836ec37ff5f5b0f2d83a5",
+      "recorded_target": "v3/discovery/s06/rup_checks.py",
+      "resolved_file": "v3/discovery/s06/rup_checks.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_check_v2_results.json",
+      "field": ".bridge_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_check_v2_results.json",
+      "field": ".calls[].checked_lower_receipt.checker.checker_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_check_v2_results.json",
+      "field": ".calls[].dependencies.native_sha256",
+      "recorded_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089",
+      "recorded_target": null,
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 4
+    },
+    {
+      "result": "rup_check_v2_results.json",
+      "field": ".calls[].dependencies.wrapper_sha256",
+      "recorded_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+      "recorded_target": null,
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 4
+    },
+    {
+      "result": "rup_check_v2_results.json",
+      "field": ".calls[].implementation_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 4
+    },
+    {
+      "result": "rup_check_v2_results.json",
+      "field": ".existing_export_recheck.checker_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_check_v2_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "92d3a5d11d14f175fd2bc539a858b8e2ca89cc8e36861ba536a051590118aed9",
+      "recorded_target": "v3/discovery/s06/rup_checks_v2.py",
+      "resolved_file": "v3/discovery/s06/rup_checks_v2.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_replay_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "c34b5c0c5f8d608d40878c72a32826440f6ce4b3e940c425a046ccb9ac3b08aa",
+      "recorded_target": "v3/discovery/s06/rup_replay.py",
+      "resolved_file": "v3/discovery/s06/rup_replay.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_replay_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_replay_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_replay_results.json",
+      "field": ".initial_admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_replay_results.json",
+      "field": ".initial_admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_replay_results.json",
+      "field": ".rup_checker_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": "v3/discovery/s06/rup_bridge_v2.py",
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_replay_results.json",
+      "field": ".source_sha256",
+      "recorded_sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+      "recorded_target": "v3/discovery/s06/rup_stream_results.json",
+      "resolved_file": "v3/discovery/s06/rup_stream_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".arms[].purchases[].response.events[].purchase.checked_lower_receipt.checker.checker_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 34
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".arms[].purchases[].response.events[].purchase.dependencies.native_sha256",
+      "recorded_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089",
+      "recorded_target": null,
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 34
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".arms[].purchases[].response.events[].purchase.dependencies.wrapper_sha256",
+      "recorded_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+      "recorded_target": null,
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 34
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".arms[].purchases[].response.events[].purchase.implementation_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 34
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".capability.implementation_files.adapter.sha256",
+      "recorded_sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+      "recorded_target": "v3/discovery/s06/native_repair.py",
+      "resolved_file": "v3/discovery/s06/native_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".capability.implementation_files.checker.sha256",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".capability.implementation_files.highs_native.sha256",
+      "recorded_sha256": "6ac24d07a9562de78cd67c18823fd257d273d8b43132d7cc2ad9783850f54e90",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".capability.implementation_files.highs_python.sha256",
+      "recorded_sha256": "d8cf9281501731f6a7257a22bfa4d9908c456939d3b23006ed989c90721374d1",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/highspy/highs.py",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/highspy/highs.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".capability.implementation_files.profile_compiler.sha256",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".capability.implementation_files.pysat_native.sha256",
+      "recorded_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".capability.implementation_files.pysat_wrapper.sha256",
+      "recorded_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+      "recorded_target": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".capability.inherited_adapter_sha256",
+      "recorded_sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+      "recorded_target": "v3/discovery/s06/native_repair.py",
+      "resolved_file": "v3/discovery/s06/native_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".capability.rup_bridge_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": "v3/discovery/s06/rup_bridge_v2.py",
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".capability.wrapper_sha256",
+      "recorded_sha256": "f3c037236fa82944f488f555978da6e91e7b89e5c9f651556cabe11322de43cd",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/native_rup.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "rup_stream_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "37eaae5b3c95ab25788935948303930dd5430750865a75a479daeb4057f94bab",
+      "recorded_target": "v3/discovery/s06/rup_stream.py",
+      "resolved_file": "v3/discovery/s06/rup_stream.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "session_config.json",
+      "field": ".clock_source_sha256",
+      "recorded_sha256": "d472accf08c2971c0fca032e59ad4c30c4322e3bb4fa1e21d3807d1bf57e533e",
+      "recorded_target": "v3/discovery/s06/clock_source.py",
+      "resolved_file": "v3/discovery/s06/clock_source.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".hashes.cut_dual.py",
+      "recorded_sha256": "4ab5a8f75a1d03cff77898f5fbc4bb9a307e68c144f0bafaa660173504059b4d",
+      "recorded_target": "v3/discovery/s06/cut_dual.py",
+      "resolved_file": "v3/discovery/s06/cut_dual.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".hashes.dual_hull_results.json",
+      "recorded_sha256": "64d56979689941f5e08f9bd0f06267b9e10284b934a0e54e49de346d93e83526",
+      "recorded_target": "v3/discovery/s06/dual_hull_results.json",
+      "resolved_file": "v3/discovery/s06/dual_hull_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".hashes.joint_source.json",
+      "recorded_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+      "recorded_target": "v3/discovery/s06/joint_source.json",
+      "resolved_file": "v3/discovery/s06/joint_source.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".hashes.joint_v2_results.json",
+      "recorded_sha256": "e463a48d97564d178489e36bde281e99f35ac3c51c9dbc0202fdc6e51ef99074",
+      "recorded_target": "v3/discovery/s06/joint_v2_results.json",
+      "resolved_file": "v3/discovery/s06/joint_v2_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".hashes.rup_bridge_v2.py",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": "v3/discovery/s06/rup_bridge_v2.py",
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".hashes.rup_stream_results.json",
+      "recorded_sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+      "recorded_target": "v3/discovery/s06/rup_stream_results.json",
+      "resolved_file": "v3/discovery/s06/rup_stream_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".hashes.source_anchor.py",
+      "recorded_sha256": "b8f42879ee99ce99c849fb4409e3b9c47c482f1430345ae7259ccb5c25a730bc",
+      "recorded_target": "v3/discovery/s06/source_anchor.py",
+      "resolved_file": "v3/discovery/s06/source_anchor.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".hashes.source_anchor_probe.py",
+      "recorded_sha256": "5bad50cd510d2a4a3eea28e7c8e334376285fe5d395e0a90d048c4a6341687fa",
+      "recorded_target": "v3/discovery/s06/source_anchor_probe.py",
+      "resolved_file": "v3/discovery/s06/source_anchor_probe.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".initial_admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "source_anchor_results.json",
+      "field": ".initial_admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".implementation_sha256",
+      "recorded_sha256": "d24820431e1906206845a22bafc475cd0841345f021e37faa7fdfe31fb06e9e2",
+      "recorded_target": "v3/discovery/s06/vertex_probe.py",
+      "resolved_file": "v3/discovery/s06/vertex_probe.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair.py",
+      "recorded_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "recorded_target": "v3/discovery/s05/maxsat_repair.py",
+      "resolved_file": "v3/discovery/s05/maxsat_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".initial_admission.hashes.maxsat_repair_results.json",
+      "recorded_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "recorded_target": "v3/discovery/s05/maxsat_repair_results.json",
+      "resolved_file": "v3/discovery/s05/maxsat_repair_results.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".initial_admission.hashes.maxsat_reprice.py",
+      "recorded_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "recorded_target": "v3/discovery/s05/maxsat_reprice.py",
+      "resolved_file": "v3/discovery/s05/maxsat_reprice.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".initial_admission.hashes.regions_bundle.json",
+      "recorded_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "recorded_target": "v3/discovery/s05/regions_bundle.json",
+      "resolved_file": "v3/discovery/s05/regions_bundle.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".public_planning_source.parent_public_menu_sha256",
+      "recorded_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+      "recorded_target": "v3/discovery/s06/joint_source.json",
+      "resolved_file": "v3/discovery/s06/joint_source.json",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".rup_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": "v3/discovery/s06/rup_bridge_v2.py",
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".tiny.admitted_anchor_cuts[].checker.checker_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 2
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".tiny.purchases[].checked_lower_receipt.checker.checker_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 2
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".tiny.purchases[].dependencies.native_sha256",
+      "recorded_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089",
+      "recorded_target": null,
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 2
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".tiny.purchases[].dependencies.wrapper_sha256",
+      "recorded_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+      "recorded_target": null,
+      "resolved_file": "/root/.local/lib/python3.12/site-packages/pysat/solvers.py",
+      "status": "ENVIRONMENT_BINDING",
+      "occurrences": 2
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".tiny.purchases[].implementation_sha256",
+      "recorded_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+      "recorded_target": null,
+      "resolved_file": "v3/discovery/s06/rup_bridge_v2.py",
+      "status": "MATCH_CONTENT_RESOLVED_FILE",
+      "occurrences": 2
+    },
+    {
+      "result": "vertex_results.json",
+      "field": ".vertex_sha256",
+      "recorded_sha256": "b466d20eae0c1d1e5fcbe6987278312b644a18293d7049fbcc6e2c317131ec7f",
+      "recorded_target": "v3/discovery/s06/vertex_repair.py",
+      "resolved_file": "v3/discovery/s06/vertex_repair.py",
+      "status": "MATCH_NAMED_FILE",
+      "occurrences": 1
+    }
+  ],
+  "unexpected_failures": [],
+  "external_environment": {
+    "/root/.local/lib/python3.12/site-packages/pysat/solvers.py": {
+      "recorded_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+      "observed": {
+        "bytes": 229975,
+        "sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f"
+      },
+      "status": "MATCH"
+    },
+    "/root/.local/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so": {
+      "recorded_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089",
+      "observed": {
+        "bytes": 5659496,
+        "sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089"
+      },
+      "status": "MATCH"
+    },
+    "/root/.local/lib/python3.12/site-packages/highspy/highs.py": {
+      "recorded_sha256": "d8cf9281501731f6a7257a22bfa4d9908c456939d3b23006ed989c90721374d1",
+      "observed": {
+        "bytes": 90397,
+        "sha256": "d8cf9281501731f6a7257a22bfa4d9908c456939d3b23006ed989c90721374d1"
+      },
+      "status": "MATCH"
+    },
+    "/root/.local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so": {
+      "recorded_sha256": "6ac24d07a9562de78cd67c18823fd257d273d8b43132d7cc2ad9783850f54e90",
+      "observed": {
+        "bytes": 5503880,
+        "sha256": "6ac24d07a9562de78cd67c18823fd257d273d8b43132d7cc2ad9783850f54e90"
+      },
+      "status": "MATCH"
+    }
+  },
+  "embedded_payload_hashes_not_semantically_checked": {
+    "admitted_proof_sha256": 73,
+    "encoding_sha256": 73,
+    "raw_proof_sha256": 73
+  },
+  "source_and_receipt_identity_occurrences_outside_file_binding_scope": {
+    "admitted_cut_ids": 34,
+    "audit_receipts": 3858,
+    "cost_source_id": 128,
+    "cut_dependencies": 374,
+    "cut_receipts": 50,
+    "dependencies": 85,
+    "dual_receipt_id": 231,
+    "hull_state_id": 191,
+    "identity": 4,
+    "logical_source_id": 193,
+    "original_source_id": 161,
+    "point_proof_ids": 2026,
+    "proof_id": 2148,
+    "public_projection_id": 1,
+    "receipt_id": 1747,
+    "receipt_ids": 38,
+    "source": 24,
+    "source_id": 622,
+    "source_identity": 1310,
+    "state_id": 63,
+    "structural_source_id": 3168,
+    "weight_id": 492,
+    "weighted_source_id": 44,
+    "witness_id": 2279
+  },
+  "closed_clock_binding": {
+    "closed": true,
+    "research_minutes": "60.07154650425",
+    "session_research_ns": 3604292790255,
+    "research_closed_utc": "2026-10-12T17:43:04.228403+00:00",
+    "action": "Existing closed records hashed; no time credited or reconciled by this script."
+  },
+  "historical_limitations": [
+    {
+      "record": "native_attempts.json",
+      "attempt": 1,
+      "runner_sha256": "432ec16d781c862de32005c7c251c26f638ade8d15721c68703bf92c6676a833",
+      "status": "Exact first runner bytes and raw failed-run receipts were not preserved.",
+      "adapter": "Its exact adapter is preserved as native_warm_attempt.py.",
+      "consequence": "No reconstruction or reusable proof/performance evidence is claimed for lost receipts."
+    },
+    {
+      "record": "native_attempt_02.json",
+      "status": "Preserved unresolved development attempt; original code names refer to archived versions.",
+      "adapter": "native_warm_attempt.py",
+      "runner": "native_attempt_runner.py",
+      "consequence": "Keep this paid failed attempt separate from corrected native_stream_results.json."
+    },
+    {
+      "record": "rup_check_results.json",
+      "status": "Historical partial result retains its original running status, documented by rup_attempt_01.json.",
+      "source": "rup_checks.py and rup_bridge.py are preserved alongside v2 sources/results.",
+      "consequence": "No relabeling of unresolved RUP calls as checked lower proofs."
+    }
+  ]
+}
