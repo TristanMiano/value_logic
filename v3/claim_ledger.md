@@ -718,3 +718,16 @@ research minutes, continuing beyond the satisfied fresh floor. DEVELOPMENT only.
 | DS-S15-MODELS | Conditional-model acquisition bounds require the baseline value of identifying the model. | Two deterministic models each give zero conditional acquisition value while their mixture admits a profitable query. Ordinary conditional decision decomposition; warranted mixture still supplied. |
 | DS-S16-AUDITS | Revisable forecasts and randomized audits admit lower-proof censoring and delayed monotone refinement for a fixed program-value target. | Established prediction-powered e-value ingredients; 324 exact factor checks, a 1,024-path null tree and four refinements. Illustrative tariff screen has gains and severe losses, no external evaluator or confidence calibration claim. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | [Five-question assessment](discovery/s03/synthesis05.md); no P3-11 promotion or contribution gate attempted. |
+
+## P3-SEARCH-01-C001 — s03 checkpoint 6
+
+Codex (GPT-6). [Active checkpoint](discovery/s03/cp06.md):
+271.8865859216666666666666667 research minutes. DEVELOPMENT, beyond the floor.
+
+| ID | Constructive finding / delta | Evidence, comparison and limits |
+|---|---|---|
+| DS-S13-EXACT | Additive parity-output decisions reduce all adaptive pure coordinate-query policies to exact closure; expected-budget lotteries follow from its profile. | 28 full-belief cases / 5,562 states and 140 budget comparisons. Large supplied portfolio includes source/solve/check costs; ordinary closure is identical. Chosen-basis access does not include arbitrary cheaper physical queries. |
+| DS-S13-AFFINE | Replayed row operations compile correlated named facts, constant phases and invariant acquisition values across consistent RHS changes. | 532 RHS and 984 world checks; 48 larger consistent revisions plus 48 rejected inconsistent ones. Supplied source kernel: 5.464 ms retained versus 191.603 ms cold, not external semantic acquisition. |
+| DS-S18-RANK | Ordinary matroid prefixes solve rank-dependent query decisions; supported mixtures bound minimax log-score reliance on fallible models. | 36 planning cases / 7,036 belief states, 4,780 subset comparisons, 1,024 executable guesses, 1,836 partial report checks. Full-assignment objective can collapse to all-or-none; one unexplained report failure and unchanged retry preserved. |
+| DS-S19-TRANSPORT | Explicit affine decision isomorphisms reuse policy values and reports under nonuniform pushforward laws. | 32 finite correlated sources, 226 paired worlds and 4,652 policy states. Ordinary structural decision reuse; mapping, costs and real-program interpretation must be justified. |
+| P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | [Assessment](discovery/s03/synthesis06.md); no confirmation or contribution gate attempted. |

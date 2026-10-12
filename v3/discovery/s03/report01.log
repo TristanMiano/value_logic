@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic_2\v3\discovery\s03\report_probe.py", line 54, in <module>
+    if __name__=='__main__':main(Path(sys.argv[1]))
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic_2\v3\discovery\s03\report_probe.py", line 31, in main
+    selected=[x for x in worlds if (sum(((x>>j)&1)<<i for i,j in enumerate(report['free']))&known)==bits]
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic_2\v3\discovery\s03\report_probe.py", line 31, in <genexpr>
+    selected=[x for x in worlds if (sum(((x>>j)&1)<<i for i,j in enumerate(report['free']))&known)==bits]
+                                          ~^^~
+TypeError: unsupported operand type(s) for >>: 'int' and 'tuple'

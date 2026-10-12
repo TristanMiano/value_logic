@@ -257,3 +257,25 @@ C001 is active beyond its satisfied four-hour floor. Continue from
 [checkpoint 5](s03/cp05.md) with a program-edit residual service rather than
 tuning the exposed flow graphs. P3-POS01 remains OUTSTANDING; readiness is
 unassessed and P3-11 deferred. All findings remain DEVELOPMENT.
+
+## s03 sixth constructive revision
+
+- **S13Q:** closure becomes exact decision value for independently chosen,
+  additively scored parity outputs. An affine compiler reuses profiles across
+  checked assumption revisions; its chosen query basis can omit cheaper
+  alternatives. [Theorem, probes and boundary](s03/parity_portfolio.md).
+- **S17:** a checked affected-context guard and signed residual evidence can
+  update program values; two lower receipts cannot certify a lower difference.
+  Symbolic cancellation alone overlaps earlier work, so it was not turned into
+  an artificial benchmark. [Derivation](s03/edit_residuals.md).
+- **S18:** arbitrary linear queries admit an ordinary matroid cost profile for
+  rank-valued objectives. Minimax log reports need no uniform prior; protected
+  fallible mixtures have an explicit trust bill that changes on conditioning.
+  [Development and preserved failure/retry](s03/rank_values.md).
+- **S19:** an explicit affine correspondence transports adaptive policies and
+  reports under correlated laws, not just uniform sources. Equal values cannot
+  select the correspondence. [Construction and checks](s03/affine_transport.md).
+
+[Checkpoint 6](s03/cp06.md) continues C001 beyond its floor. Next develop
+alternative graph observations for the weighted fact-prediction objective.
+P3-POS01 remains OUTSTANDING, readiness unassessed, P3-11 deferred.
