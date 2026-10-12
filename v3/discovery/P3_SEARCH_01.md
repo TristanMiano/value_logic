@@ -234,14 +234,33 @@ update [the recurrence table](recurrences.md) and its
 Use one row per requested increment; the reconstructed older history uses
 recorded checkpoint increments, with credited interrupted tails and abandoned
 attempts distinguished. Report engaged D+L+E minutes and cumulative minutes,
-each rounded independently from exact effective nanoseconds. Include at least
-one useful quantitative progress metric with its units, denominator, comparison
-and source, plus a one-to-three-sentence account of what changed. Retain the
-new-family count as a breadth measure without treating it as a quota or a
-readiness score; distinguish new families from revisions. Preserve earlier
-rows and corrections, keep actual acquisitions separate from replay, and do
-not invent a common benchmark where duties differ. Refresh the checkpoint and
-portable prompt with this table. Table maintenance earns no research credit.
+each rounded independently from exact effective nanoseconds. Reuse a stable
+column for each quantitative metric and policy lane, with its units,
+denominator, duty and sources. Use **N/A** when a metric was not introduced,
+does not apply or was not newly measured; record which reason applies in the
+source record. For an actual comparable measurement, report the change since
+the last comparable measurement, even across intervening N/A rows. Show zero
+and adverse changes, use percentage points for coverage, and mark a first
+measurement without inventing an improvement. Give a new duty or useful metric
+its own column, with N/A in earlier rows; do not rerun workloads just to fill
+cells. End each row with a one-to-three-sentence account of what changed.
+Retain family counts as a breadth measure, distinguishing new families from
+revisions. Preserve earlier rows and corrections, keep actual acquisitions
+separate from replay, and record backend or spending-cap changes rather than
+inventing a common benchmark. Refresh the checkpoint and portable prompt with
+this table. Table maintenance earns no research credit.
+
+**Promotion-readiness metric — additional author direction, October 12, 2026:**
+include a fixed column for the §6 event-specific subjective confirmation
+probability or justified range, aiming toward the intended 80% minimum and
+90% preference. Briefly revisit the evidence each round. Keep N/A/unassessed
+when no defensible estimate exists; do not invent historical percentages.
+Attach the candidate version, material claim, domain, threshold, comparison,
+complete relevant costs and confirmation-plan version to every forecast.
+Report percentage-point changes only for the same event; a changed target
+starts a new series. Explain the main unresolved prerequisite when unassessed.
+An evidence checklist may make blockers visible, but its completion fraction,
+elapsed time and passing tests are not confirmation probabilities.
 
 Each checkpoint reports work performed, scientific findings, constructive
 progress, candidate readiness and the next action separately. A useful negative

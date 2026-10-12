@@ -500,9 +500,16 @@ confirmation plan. An adverse confirmation returns the objective to discovery.
   and candidate records under `v3/discovery/`, linked from the program.
   **At every recurrence round, update the [C001 progress table](v3/discovery/recurrences.md):**
   one row with effective research minutes, cumulative minutes (both rounded
-  from exact actuals), source-backed quantitative progress metrics and a
-  one-to-three-sentence description. Carry the table and this requirement
-  into each checkpoint and handoff; documentation adds no research credit.
+  from exact actuals), fixed columns for source-backed quantitative metrics,
+  and a one-to-three-sentence description. Use N/A for metrics not introduced,
+  inapplicable or not newly measured. For repeated comparable measurements,
+  show change since the last comparable result, including zero or negative
+  change; keep different duties and policy budgets in separate columns.
+  Include the event-specific promotion forecast (80% intended minimum,
+  90% preferred), or N/A/unassessed with its main blocker. Do not invent
+  historical probabilities or convert prerequisite counts into success odds.
+  Carry the table and this requirement into each checkpoint and handoff;
+  documentation adds no research credit.
 
 - [ ] **P3-11 — rigorous confirmation, adversarial reconstruction and contribution review. Research90 minimum; deferred.**
 

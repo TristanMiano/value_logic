@@ -25,12 +25,21 @@ Read `AGENTS.md`, [TODO_v3.md](../../TODO_v3.md),
 and the latest discovery checkpoint.
 The checkpoint known when this prompt was prepared is [s06 cp01](s06/cp01.md).
 The s06 handoff was merged through
-[PR #5](https://github.com/TristanMiano/value_logic/pull/5). The subsequent
-recurrence-table update is on `c001-recurrence-summary-20261012` until merged;
-if main predates it, inspect that published branch as well. Follow a newer
+[PR #5](https://github.com/TristanMiano/value_logic/pull/5), and the initial
+recurrence table through [PR #6](https://github.com/TristanMiano/value_logic/pull/6).
+The fixed-metric table and repository-check repairs are on
+`c001-metrics-and-repo-repair-20261012` until merged; if main predates them,
+inspect that published branch as well. Follow a newer
 authoritative pointer if present. Read only the relevant
 scientific sources, source records and executed contracts needed for the next
 construction; do not reopen the whole archive.
+
+The [repository-maintenance handoff](../../docs/checks_20261012.md) records the
+repaired link and mathematical-Markdown gates, full-suite verification and
+the fixed-metric/readiness reporting requirement. Historical failure receipts
+remain preserved. Use the current [archive-link](../../docs/archive_links.md)
+and [mathematical-Markdown](../../docs/math_markdown.md) guides when maintaining
+bound evidence; the maintenance adds no research credit or promotion claim.
 
 **P3-SEARCH-01-C001 remains OPEN and its four-hour floor is already satisfied.**
 Continue its cumulative record; do not reset a four-hour cycle. The explicit
@@ -208,12 +217,32 @@ clock, update the checkpoint and current pointers, and refresh this prompt with
 the best next constructive move. **Update [the recurrence table](recurrences.md)
 and [its exact source record](recurrences.json) every round:** add the new
 increment's effective research and cumulative minutes (round each from exact
-nanoseconds), new-family count, at least one useful source-backed numerical
-result with units/denominator and comparison scope, and a one-to-three-sentence
-description. Keep interrupted tails and excluded attempts explicit, preserve
-earlier rows, and distinguish actual acquisitions from replay. Link the updated
-table from the new checkpoint and handoff. This maintenance adds no research
-credit. Follow current publication instructions and
+nanoseconds) and a one-to-three-sentence description. Reuse the existing fixed
+metric columns and policy lanes, including the family count. Enter **N/A** when
+not introduced, inapplicable or not newly measured, with the reason in the source
+record. For each actual comparable measurement, show the change since the last
+comparable measurement, including zero or negative changes; use percentage
+points for coverage. First measurements have no invented improvement. Give new
+metrics or duties their own defined columns, with N/A in earlier rows, and
+retain their units, denominators, source contracts and spending caps. Do not
+rerun old workloads solely to populate the table. Keep interrupted tails and
+excluded attempts explicit, preserve earlier rows, and distinguish actual
+acquisitions from replay and action costs from complete service costs. Link
+the updated table from the new checkpoint and handoff.
+
+Keep **promotion readiness** as its own metric: the subjective probability or
+justified range that the specified candidate survives its planned rigorous
+verification and establishes its specified material-positive claim. The intended
+minimum is **80%**, with **90% preferred**. Earlier C001 rounds are unassessed;
+do not invent retrospective probabilities. Briefly revisit the current evidence
+and blockers each round. Specify candidate/version, claim, domain, materiality
+threshold, strongest comparison, complete costs and verification-plan version
+before assigning an estimate. Show percentage-point changes only for the same
+event; a changed event starts a new series. Use N/A/unassessed when the evidence
+cannot support a useful estimate. The current prerequisite tally in the table
+is not a success probability or a percentage of work completed.
+
+This maintenance adds no research credit. Follow current publication instructions and
 the author's existing authorization. Report what advanced, its evidence and
 costs, material limitations, exact actuals and the recommended next one-hour
 recurrence. Leave C001 open unless its substantive conditions truly change.
