@@ -664,3 +664,18 @@ P3-POS01 OUTSTANDING, readiness unassessed, P3-11 deferred.
 | DS-S10-BET | Rational positive-production factors and a conservative remaining-count mean yield a joint confidence source under adaptive computation censoring. | Small sequential cases and 15,999 null-allocation vectors matched. Stratified supermartingale products and adaptive sampling are established; the censoring/count-profile specialization remains developmental. |
 | DS-S10-PROFILE | Numerical proposals receive exact rational exchange certificates before warranting the total-count claim. | On a paired exposed heterogeneous trace, 1,362.6001 ms full profiling fell to 29.5213 ms; imports cost 403.8213 ms. Naive proposals can remain expensive. This is a kernel capability, not an end-to-end economic or novel-contribution claim. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | Complete evaluator integration and strongest ordinary comparisons remain necessary. No rigorous confirmation or contribution gate attempted. |
+
+## P3-SEARCH-01-C001 — s03 checkpoint 2
+
+Codex (GPT-6). [Active checkpoint](discovery/s03/cp02.md): **158.41321955**
+research minutes, **81.58678045** remaining to C001's fresh floor. The clock
+survived the reported remote compaction error; disconnected time earns zero
+research. All new findings are DEVELOPMENT, with no confirmation promotion.
+
+| ID | Constructive finding / delta | Magnitude, comparison and limits |
+|---|---|---|
+| DS-S10-DELAY | Delayed checked proofs update sampled factors without a new draw; completed evaluator service retains censoring and native-failure records. | 2,439 domination and 3,702 refinement checks. Strong ordinary allocation wins cohort A; B's sole completed warrant is hard evidence alone. No incremental joint economic advantage established. |
+| DS-S11-STATE | State-changing diagnostics require successor costs; cache preparation can complement later information. | Exact mutable toy and 120 finite continuation checks. Ordinary POMDP planning and potential-based transformations supply the comparison; semantics/prior are stipulated. |
+| DS-S11-BASELINE | Fixed-reference action differences avoid an unnecessary common component in exact continuation features. | Proposed odd-m derivation gives m+1 versus 2^(m−1)+m dimensions; at m=11, 12 versus 1,035. Primary linear belief compression is a direct antecedent; no empirical external-task or novelty claim. |
+| DS-S11-REGRET | A proposed deterministic flip plan receives an exact box-regret bound and attaining competitor/mean witness by sorting. | 72 saved correlated-prior policy checks and 31,676 corner/plan comparisons. Supplied marginal intervals and known interventions/prices; no acquisition guarantee, general minimax-plan solver or randomized-policy optimum. |
+| P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | Material usefulness beyond the stipulated examples and strongest ordinary comparison remain open. P3-11 deferred. |

@@ -4,12 +4,12 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 unfinished; P3-POS01 OUTSTANDING**.
-New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s03/cp01.md),
+New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s03/cp02.md),
 [portfolio](candidates.md), [exact actuals](s03/effective_actuals.json).
 
-Current s02 direction: persistent value margins and targeted positive-proof
-repair under explicit local edits, with reusable censored count confidence.
-Paid pilot selection narrowed the computation-scheduling lead. All results remain DEVELOPMENT. The current checkpoint
+Current s03 direction: stateful counterfactual probes, continuation-aware value
+representations and sharp marginal-value certificates. The heterogeneous proof
+service narrowed the joint-controller economic lead; preserve all outcomes. All results remain DEVELOPMENT. The current checkpoint
 is an active accounting boundary; C001 continues with its unfinished floor.
 
 ## 1. Objective and scope
@@ -59,7 +59,7 @@ storage and failure costs and name the strongest relevant pre-existing controls.
 | Central / high O forecast | 15 / 30 minutes, outside research |
 | Purpose priority | 75% generation/development; 20% cheap screening; 5% substantive synthesis/readiness |
 | Initial R / X lane forecast | 25% reliable / 75% exploratory; both may contain constructive generation |
-| Research already credited | 37.58087779 minutes at active s02 checkpoint; continuation proceeds |
+| Research already credited | 158.41321955 minutes at active s03 checkpoint; continuation proceeds |
 | Normal boundary disposition | Continue the current line or recur within this program |
 | Program duration | Open-ended; tens or hundreds of hours are plausible, with no forecast of guaranteed discovery |
 | Deeper portfolio reviews | At the first useful boundaries after 16, 40 and 100 new program research hours; retain overshoot |
@@ -218,12 +218,12 @@ finding is a search update. A completed cycle is an effort/accounting boundary.
 Neither is automatically a positive project milestone.
 
 Current state: **no discovery candidates have been promoted, no readiness
-probability has been assigned; 20.598738101667 new discovery research minutes
-are credited, with 219.401261898333 minutes remaining in C001**.
+probability has been assigned; 158.41321955 new discovery research minutes
+are credited, with 81.58678045 minutes remaining in C001**.
 P3-11 is deferred and unstarted. P3-C/D remain unattempted. P3-N01's previous
 modest support and all P3-10 findings remain at their recorded scopes.
 
-The next work is continuation of C001 from [the saved checkpoint](s01/checkpoint.md):
-develop the coupled policy-cost comparison and its application while retaining alternatives.
+The next work is continuation of C001 from [the saved checkpoint](s03/cp02.md):
+develop informative extensions and paid acquisition for the value representation, retaining alternatives.
 At its floor the normal disposition is continued discovery or recurrence,
 unless the evidence supports promotion or the author changes the direction.

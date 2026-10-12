@@ -1,0 +1,642 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "source_sha256": "8a48472c5fec93f1c99ba0de17f4aacdf3e0bed354d88b1f5831379df3c293cb",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "loss_tables": {
+    "none": {
+      "live": [
+        {
+          "observation": [],
+          "loss": 0
+        },
+        {
+          "observation": [],
+          "loss": 9
+        }
+      ],
+      "cached": [
+        {
+          "observation": [],
+          "loss": 0
+        },
+        {
+          "observation": [],
+          "loss": 9
+        }
+      ],
+      "frozen": [
+        {
+          "observation": [],
+          "loss": 0
+        },
+        {
+          "observation": [],
+          "loss": -1
+        }
+      ]
+    },
+    "one": {
+      "live": [
+        {
+          "observation": [
+            1
+          ],
+          "loss": 0
+        },
+        {
+          "observation": [
+            1
+          ],
+          "loss": 9
+        }
+      ],
+      "cached": [
+        {
+          "observation": [
+            1
+          ],
+          "loss": 10
+        },
+        {
+          "observation": [
+            1
+          ],
+          "loss": 9
+        }
+      ],
+      "frozen": [
+        {
+          "observation": [
+            0
+          ],
+          "loss": 0
+        },
+        {
+          "observation": [
+            0
+          ],
+          "loss": -1
+        }
+      ]
+    },
+    "two": {
+      "live": [
+        {
+          "observation": [
+            1,
+            0
+          ],
+          "loss": 0
+        },
+        {
+          "observation": [
+            1,
+            0
+          ],
+          "loss": 9
+        }
+      ],
+      "cached": [
+        {
+          "observation": [
+            1,
+            1
+          ],
+          "loss": 10
+        },
+        {
+          "observation": [
+            1,
+            1
+          ],
+          "loss": 9
+        }
+      ],
+      "frozen": [
+        {
+          "observation": [
+            0,
+            0
+          ],
+          "loss": 0
+        },
+        {
+          "observation": [
+            0,
+            0
+          ],
+          "loss": -1
+        }
+      ]
+    },
+    "restored": {
+      "live": [
+        {
+          "observation": [
+            1
+          ],
+          "loss": 0
+        },
+        {
+          "observation": [
+            1
+          ],
+          "loss": 9
+        }
+      ],
+      "cached": [
+        {
+          "observation": [
+            1
+          ],
+          "loss": 0
+        },
+        {
+          "observation": [
+            1
+          ],
+          "loss": 9
+        }
+      ],
+      "frozen": [
+        {
+          "observation": [
+            0
+          ],
+          "loss": 0
+        },
+        {
+          "observation": [
+            0
+          ],
+          "loss": -1
+        }
+      ]
+    }
+  },
+  "policies": {
+    "uniform": {
+      "prior": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "results": {
+        "none": {
+          "state_aware": {
+            "forecast": "0",
+            "actual": "0",
+            "policy": [
+              {
+                "observation": [],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 2
+          },
+          "pure_information": {
+            "forecast": "0",
+            "actual": "0",
+            "policy": [
+              {
+                "observation": [],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 2
+          }
+        },
+        "one": {
+          "state_aware": {
+            "forecast": "3",
+            "actual": "3",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          },
+          "pure_information": {
+            "forecast": "-1/3",
+            "actual": "3",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          }
+        },
+        "two": {
+          "state_aware": {
+            "forecast": "8/3",
+            "actual": "8/3",
+            "policy": [
+              {
+                "observation": [
+                  0,
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1,
+                  0
+                ],
+                "action": 0
+              },
+              {
+                "observation": [
+                  1,
+                  1
+                ],
+                "action": 1
+              }
+            ],
+            "enumerated_policies": 8
+          },
+          "pure_information": {
+            "forecast": "-1/3",
+            "actual": "3",
+            "policy": [
+              {
+                "observation": [
+                  0,
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1,
+                  0
+                ],
+                "action": 0
+              },
+              {
+                "observation": [
+                  1,
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 8
+          }
+        },
+        "restored": {
+          "state_aware": {
+            "forecast": "-1/3",
+            "actual": "-1/3",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          },
+          "pure_information": {
+            "forecast": "-1/3",
+            "actual": "-1/3",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          }
+        },
+        "paid_restoration": {
+          "0": {
+            "forecast": "-1/3",
+            "actual": "-1/3",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          },
+          "1/5": {
+            "forecast": "-2/15",
+            "actual": "-2/15",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          },
+          "2/5": {
+            "forecast": "1/15",
+            "actual": "1/15",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          }
+        }
+      }
+    },
+    "cache_heavy": {
+      "prior": [
+        "1/40",
+        "19/20",
+        "1/40"
+      ],
+      "results": {
+        "none": {
+          "state_aware": {
+            "forecast": "0",
+            "actual": "0",
+            "policy": [
+              {
+                "observation": [],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 2
+          },
+          "pure_information": {
+            "forecast": "0",
+            "actual": "0",
+            "policy": [
+              {
+                "observation": [],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 2
+          }
+        },
+        "one": {
+          "state_aware": {
+            "forecast": "35/4",
+            "actual": "35/4",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 1
+              }
+            ],
+            "enumerated_policies": 4
+          },
+          "pure_information": {
+            "forecast": "-1/40",
+            "actual": "379/40",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          }
+        },
+        "two": {
+          "state_aware": {
+            "forecast": "341/40",
+            "actual": "341/40",
+            "policy": [
+              {
+                "observation": [
+                  0,
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1,
+                  0
+                ],
+                "action": 0
+              },
+              {
+                "observation": [
+                  1,
+                  1
+                ],
+                "action": 1
+              }
+            ],
+            "enumerated_policies": 8
+          },
+          "pure_information": {
+            "forecast": "-1/40",
+            "actual": "379/40",
+            "policy": [
+              {
+                "observation": [
+                  0,
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1,
+                  0
+                ],
+                "action": 0
+              },
+              {
+                "observation": [
+                  1,
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 8
+          }
+        },
+        "restored": {
+          "state_aware": {
+            "forecast": "-1/40",
+            "actual": "-1/40",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          },
+          "pure_information": {
+            "forecast": "-1/40",
+            "actual": "-1/40",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          }
+        },
+        "paid_restoration": {
+          "0": {
+            "forecast": "-1/40",
+            "actual": "-1/40",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          },
+          "1/5": {
+            "forecast": "7/40",
+            "actual": "7/40",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          },
+          "2/5": {
+            "forecast": "3/8",
+            "actual": "3/8",
+            "policy": [
+              {
+                "observation": [
+                  0
+                ],
+                "action": 1
+              },
+              {
+                "observation": [
+                  1
+                ],
+                "action": 0
+              }
+            ],
+            "enumerated_policies": 4
+          }
+        }
+      }
+    }
+  },
+  "elapsed_ns": 1092000
+}

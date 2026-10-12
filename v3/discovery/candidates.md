@@ -163,3 +163,30 @@ Preferred next work is a complete-cost heterogeneous evaluator integration,
 including strong cost-directed ordinary statistical controls. Keep the wider
 portfolio open. [Current checkpoint](s03/cp01.md). P3-POS01 OUTSTANDING;
 readiness unassessed, with no P3-11 promotion.
+
+## s03 second constructive revision
+
+- **S10R:** delayed positive receipts refine existing sampled factors under
+  a full-truth domination argument. The first complete heterogeneous service
+  fails to establish incremental joint-statistical economic benefit; ordinary
+  Neyman allocation wins A and the B finisher relies on hard receipts alone.
+  Preserve the native failure and changed-engine outcome. Deprioritize tuning
+  this exposed scheduler. [Results](s03/service_results.md).
+- **S11, S04 lineage:** actual mutable predictors show why restoring a binding
+  is not restoring state. State-aware planning can reject harmful diagnostics
+  or deliberately prepare a cache before acquiring information. Ordinary
+  belief-state control supplies the repair. [Development](s03/stateful_cf.md).
+- **S11C/L:** continuation must preserve both relative action values and the
+  cost of changing their common baseline. A finite quotient and a linear
+  continuation analysis give a constructive design consequence: choosing each
+  world's minimum as baseline can inflate required features exponentially in
+  the stated Boolean-flip family. A fixed reference and a sharp proposed-plan
+  regret oracle avoid full probability recovery for that menu.
+  [Construction and limits](s03/linear_values.md).
+
+The prospective material objective is a useful, paid value-based computation
+controller under informative observations. Current examples stipulate their
+semantics and marginal bounds; acquisition, model learning, meaningful external
+scope and comparison remain open. Readiness is unassessed. Continue C001 from
+[checkpoint 2](s03/cp02.md), retaining the wider portfolio; no candidate is
+promoted and P3-POS01 remains OUTSTANDING.

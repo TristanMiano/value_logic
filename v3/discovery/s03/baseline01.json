@@ -1,0 +1,6225 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "seed": 11512,
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "sources": {
+    "flip_values.py": "fa95eeedc5fc94468c31dce65169bf4242b24641e2ff7661cfe7f5a3d8e14e28",
+    "baseline_probe.py": "f31b368e3dace60e3eacf6d2a107f645155d716ca8bf85420e41f9f747c4f77d"
+  },
+  "spectra": [
+    {
+      "variables": 1,
+      "states": 2,
+      "reference_dimension": 2,
+      "regret_dimension": 2,
+      "absolute_coefficients_by_degree": {
+        "0": "1",
+        "1": "0"
+      }
+    },
+    {
+      "variables": 3,
+      "states": 8,
+      "reference_dimension": 4,
+      "regret_dimension": 7,
+      "absolute_coefficients_by_degree": {
+        "0": "3/2",
+        "1": "0",
+        "2": "1/2",
+        "3": "0"
+      }
+    },
+    {
+      "variables": 5,
+      "states": 32,
+      "reference_dimension": 6,
+      "regret_dimension": 21,
+      "absolute_coefficients_by_degree": {
+        "0": "15/8",
+        "1": "0",
+        "2": "3/8",
+        "3": "0",
+        "4": "-1/8",
+        "5": "0"
+      }
+    },
+    {
+      "variables": 7,
+      "states": 128,
+      "reference_dimension": 8,
+      "regret_dimension": 71,
+      "absolute_coefficients_by_degree": {
+        "0": "35/16",
+        "1": "0",
+        "2": "5/16",
+        "3": "0",
+        "4": "-1/16",
+        "5": "0",
+        "6": "1/16",
+        "7": "0"
+      }
+    },
+    {
+      "variables": 9,
+      "states": 512,
+      "reference_dimension": 10,
+      "regret_dimension": 265,
+      "absolute_coefficients_by_degree": {
+        "0": "315/128",
+        "1": "0",
+        "2": "35/128",
+        "3": "0",
+        "4": "-5/128",
+        "5": "0",
+        "6": "3/128",
+        "7": "0",
+        "8": "-5/128",
+        "9": "0"
+      }
+    },
+    {
+      "variables": 11,
+      "states": 2048,
+      "reference_dimension": 12,
+      "regret_dimension": 1035,
+      "absolute_coefficients_by_degree": {
+        "0": "693/256",
+        "1": "0",
+        "2": "63/256",
+        "3": "0",
+        "4": "-7/256",
+        "5": "0",
+        "6": "3/256",
+        "7": "0",
+        "8": "-3/256",
+        "9": "0",
+        "10": "7/256",
+        "11": "0"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "variables": 2,
+      "horizon": 2,
+      "prices": [
+        "5/4",
+        "3/2"
+      ],
+      "prior_counts": [
+        3,
+        5,
+        5,
+        2
+      ],
+      "means": [
+        "1/15",
+        "1/15"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-3/4",
+        "-1"
+      ],
+      "upper": [
+        "-1/2",
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "7/4",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [
+            1
+          ],
+          "regret": "7/2",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 6,
+      "horizon": 0,
+      "prices": [
+        "0",
+        "1",
+        "1/2",
+        "1",
+        "3/2",
+        "1/4"
+      ],
+      "prior_counts": [
+        8,
+        6,
+        6,
+        4,
+        8,
+        6,
+        1,
+        7,
+        2,
+        3,
+        5,
+        4,
+        3,
+        1,
+        9,
+        5,
+        4,
+        1,
+        7,
+        4,
+        6,
+        7,
+        6,
+        9,
+        5,
+        2,
+        7,
+        3,
+        5,
+        1,
+        8,
+        6,
+        4,
+        3,
+        6,
+        7,
+        2,
+        6,
+        4,
+        4,
+        9,
+        4,
+        8,
+        3,
+        7,
+        2,
+        1,
+        1,
+        5,
+        4,
+        7,
+        8,
+        2,
+        1,
+        1,
+        1,
+        1,
+        6,
+        4,
+        1,
+        9,
+        1,
+        6,
+        8
+      ],
+      "means": [
+        "37/295",
+        "-27/295",
+        "7/295",
+        "3/59",
+        "3/295",
+        "23/295"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1",
+        "-3/4",
+        "-3/4",
+        "0",
+        "1/2",
+        "-3/4"
+      ],
+      "upper": [
+        "1/4",
+        "0",
+        "-1/4",
+        "1/4",
+        "3/4",
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "11/4",
+          "competitor": [],
+          "means": [
+            "-1",
+            "-3/4",
+            "-3/4",
+            "0",
+            "1/2",
+            "-3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "7/4",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "0",
+            "-1/4",
+            "1/4",
+            "3/4",
+            "3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 1,
+      "prices": [
+        "3/2"
+      ],
+      "prior_counts": [
+        3,
+        7
+      ],
+      "means": [
+        "-2/5"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-2/5",
+      "lower": [
+        "0"
+      ],
+      "upper": [
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "0",
+          "competitor": null,
+          "means": [
+            "0"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "1",
+          "competitor": null,
+          "means": [
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "3/2",
+          "competitor": [],
+          "means": [
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 0,
+      "prices": [
+        "1"
+      ],
+      "prior_counts": [
+        2,
+        9
+      ],
+      "means": [
+        "-7/11"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-7/11",
+      "lower": [
+        "1/4"
+      ],
+      "upper": [
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "0",
+          "competitor": null,
+          "means": [
+            "1/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "1/2",
+          "competitor": null,
+          "means": [
+            "1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 1,
+      "prices": [
+        "3/4",
+        "0",
+        "5/4",
+        "1/4",
+        "1/4"
+      ],
+      "prior_counts": [
+        2,
+        4,
+        6,
+        9,
+        5,
+        9,
+        5,
+        7,
+        2,
+        2,
+        5,
+        9,
+        1,
+        8,
+        6,
+        1,
+        5,
+        7,
+        6,
+        1,
+        5,
+        2,
+        5,
+        4,
+        2,
+        4,
+        3,
+        8,
+        9,
+        5,
+        1,
+        4
+      ],
+      "means": [
+        "-2/19",
+        "-1/19",
+        "-1/76",
+        "3/38",
+        "5/76"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-1/38",
+      "lower": [
+        "-1",
+        "-1/2",
+        "-3/4",
+        "-1",
+        "0"
+      ],
+      "upper": [
+        "0",
+        "3/4",
+        "3/4",
+        "-3/4",
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "15/4",
+          "competitor": [
+            4
+          ],
+          "means": [
+            "-1",
+            "-1/2",
+            "-3/4",
+            "-1",
+            "3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3/2",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "-1",
+            "3/4",
+            "-3/4",
+            "-1",
+            "0"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "17/4",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "-1",
+            "3/4",
+            "-3/4",
+            "-1",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 2,
+      "prices": [
+        "1/2",
+        "3/4"
+      ],
+      "prior_counts": [
+        7,
+        5,
+        7,
+        1
+      ],
+      "means": [
+        "2/5",
+        "1/5"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1/2",
+        "1/2"
+      ],
+      "upper": [
+        "1/2",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3/4",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "-1/2",
+            "1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "7/4",
+          "competitor": [
+            0,
+            1
+          ],
+          "means": [
+            "1/2",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "11/4",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "-1/2",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 6,
+      "horizon": 1,
+      "prices": [
+        "5/4",
+        "2",
+        "2",
+        "2",
+        "1/4",
+        "5/4"
+      ],
+      "prior_counts": [
+        8,
+        5,
+        2,
+        5,
+        6,
+        2,
+        7,
+        8,
+        8,
+        5,
+        9,
+        6,
+        9,
+        5,
+        8,
+        4,
+        2,
+        3,
+        6,
+        1,
+        7,
+        2,
+        1,
+        6,
+        9,
+        2,
+        9,
+        3,
+        9,
+        3,
+        5,
+        5,
+        5,
+        9,
+        9,
+        7,
+        5,
+        1,
+        6,
+        5,
+        1,
+        5,
+        1,
+        5,
+        3,
+        4,
+        2,
+        9,
+        4,
+        5,
+        2,
+        2,
+        1,
+        7,
+        5,
+        6,
+        9,
+        3,
+        9,
+        5,
+        9,
+        5,
+        4,
+        7
+      ],
+      "means": [
+        "1/11",
+        "-4/165",
+        "-1/165",
+        "-1/11",
+        "3/55",
+        "1/33"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "1/2",
+        "-1/4",
+        "-1/2",
+        "-3/4",
+        "-1/2",
+        "-1"
+      ],
+      "upper": [
+        "3/4",
+        "1/2",
+        "3/4",
+        "-1/2",
+        "1/4",
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/2",
+          "competitor": [],
+          "means": [
+            "1/2",
+            "-1/4",
+            "-1/2",
+            "-3/4",
+            "-1/2",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "7/4",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1/2",
+            "3/4",
+            "-1/2",
+            "1/4",
+            "0"
+          ]
+        },
+        {
+          "plan": [
+            1
+          ],
+          "regret": "7/2",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "-1/4",
+            "3/4",
+            "-1/2",
+            "1/4",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 0,
+      "prices": [
+        "1"
+      ],
+      "prior_counts": [
+        6,
+        8
+      ],
+      "means": [
+        "-1/7"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-1/7",
+      "lower": [
+        "-3/4"
+      ],
+      "upper": [
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3/4",
+          "competitor": [],
+          "means": [
+            "-3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 4,
+      "horizon": 4,
+      "prices": [
+        "1/2",
+        "0",
+        "7/4",
+        "0"
+      ],
+      "prior_counts": [
+        7,
+        6,
+        7,
+        3,
+        6,
+        3,
+        9,
+        5,
+        5,
+        3,
+        7,
+        8,
+        5,
+        8,
+        6,
+        9
+      ],
+      "means": [
+        "7/97",
+        "-11/97",
+        "-5/97",
+        "-5/97"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-14/97",
+      "lower": [
+        "-1/2",
+        "0",
+        "1/2",
+        "-1/4"
+      ],
+      "upper": [
+        "1/4",
+        "1",
+        "1",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "2",
+          "competitor": [
+            1,
+            3
+          ],
+          "means": [
+            "-1/2",
+            "1",
+            "1/2",
+            "1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "17/4",
+          "competitor": [
+            1,
+            2,
+            3
+          ],
+          "means": [
+            "-1/2",
+            "1",
+            "1",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 3,
+      "horizon": 1,
+      "prices": [
+        "3/2",
+        "5/4",
+        "1/2"
+      ],
+      "prior_counts": [
+        3,
+        1,
+        6,
+        7,
+        2,
+        2,
+        3,
+        1
+      ],
+      "means": [
+        "3/25",
+        "-9/25",
+        "9/25"
+      ],
+      "advised_plan": [
+        2
+      ],
+      "optimal_cost": "-1/10",
+      "lower": [
+        "-1/2",
+        "-3/4",
+        "-1"
+      ],
+      "upper": [
+        "1",
+        "-1/2",
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "9/4",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-3/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "1/2",
+          "competitor": [
+            0
+          ],
+          "means": [
+            "1",
+            "-3/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [
+            2
+          ],
+          "regret": "3",
+          "competitor": [
+            0
+          ],
+          "means": [
+            "1",
+            "-3/4",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 4,
+      "horizon": 0,
+      "prices": [
+        "3/2",
+        "3/4",
+        "1/2",
+        "7/4"
+      ],
+      "prior_counts": [
+        1,
+        2,
+        7,
+        4,
+        9,
+        1,
+        3,
+        9,
+        6,
+        8,
+        1,
+        7,
+        7,
+        9,
+        8,
+        8
+      ],
+      "means": [
+        "-1/15",
+        "-2/45",
+        "-1/5",
+        "-1/5"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-23/45",
+      "lower": [
+        "-1/2",
+        "1/2",
+        "-3/4",
+        "-1/2"
+      ],
+      "upper": [
+        "1/4",
+        "3/4",
+        "-1/2",
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/4",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "1/2",
+            "-3/4",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "5/4",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "3/4",
+            "-1/2",
+            "3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 0,
+      "prices": [
+        "3/4",
+        "2"
+      ],
+      "prior_counts": [
+        4,
+        7,
+        5,
+        9
+      ],
+      "means": [
+        "-7/25",
+        "-3/25"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-2/5",
+      "lower": [
+        "-1/2",
+        "-1/2"
+      ],
+      "upper": [
+        "1/4",
+        "-1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 0,
+      "prices": [
+        "3/2",
+        "7/4"
+      ],
+      "prior_counts": [
+        3,
+        3,
+        6,
+        7
+      ],
+      "means": [
+        "-1/19",
+        "-7/19"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-8/19",
+      "lower": [
+        "1/2",
+        "1/4"
+      ],
+      "upper": [
+        "3/4",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "0",
+          "competitor": null,
+          "means": [
+            "1/2",
+            "1/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "7/4",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 0,
+      "prices": [
+        "0"
+      ],
+      "prior_counts": [
+        7,
+        2
+      ],
+      "means": [
+        "5/9"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1/2"
+      ],
+      "upper": [
+        "-1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1/2",
+          "competitor": [],
+          "means": [
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 2,
+      "prices": [
+        "1/2",
+        "3/2"
+      ],
+      "prior_counts": [
+        6,
+        1,
+        9,
+        2
+      ],
+      "means": [
+        "2/3",
+        "-2/9"
+      ],
+      "advised_plan": [
+        0
+      ],
+      "optimal_cost": "-7/18",
+      "lower": [
+        "-1/2",
+        "-1"
+      ],
+      "upper": [
+        "0",
+        "-1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3/2",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-1"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "3/2",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 3,
+      "prices": [
+        "3/4",
+        "7/4",
+        "3/2",
+        "0",
+        "1/4"
+      ],
+      "prior_counts": [
+        7,
+        2,
+        5,
+        2,
+        1,
+        2,
+        6,
+        7,
+        2,
+        1,
+        7,
+        2,
+        3,
+        8,
+        1,
+        9,
+        4,
+        2,
+        5,
+        3,
+        2,
+        3,
+        7,
+        1,
+        9,
+        2,
+        7,
+        8,
+        6,
+        9,
+        1,
+        1
+      ],
+      "means": [
+        "11/135",
+        "-1/15",
+        "1/135",
+        "-17/135",
+        "-1/27"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-19/135",
+      "lower": [
+        "1/4",
+        "1/4",
+        "-1/4",
+        "-3/4",
+        "-3/4"
+      ],
+      "upper": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "0",
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/4",
+          "competitor": [],
+          "means": [
+            "1/4",
+            "1/4",
+            "-1/4",
+            "-3/4",
+            "-3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3/2",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "0",
+            "3/4"
+          ]
+        },
+        {
+          "plan": [
+            0,
+            2,
+            3
+          ],
+          "regret": "5",
+          "competitor": [
+            4
+          ],
+          "means": [
+            "1/4",
+            "1/4",
+            "-1/4",
+            "-3/4",
+            "3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 4,
+      "horizon": 4,
+      "prices": [
+        "1",
+        "1/4",
+        "2",
+        "0"
+      ],
+      "prior_counts": [
+        5,
+        1,
+        3,
+        1,
+        3,
+        7,
+        7,
+        8,
+        5,
+        5,
+        6,
+        8,
+        4,
+        1,
+        8,
+        2
+      ],
+      "means": [
+        "4/37",
+        "-6/37",
+        "-3/37",
+        "-2/37"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-7/37",
+      "lower": [
+        "-3/4",
+        "-3/4",
+        "0",
+        "-1"
+      ],
+      "upper": [
+        "1/4",
+        "1",
+        "1",
+        "1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/2",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-3/4",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "5/2",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "1",
+            "1",
+            "1/4"
+          ]
+        },
+        {
+          "plan": [
+            1,
+            2,
+            3
+          ],
+          "regret": "23/4",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-3/4",
+            "0",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 4,
+      "prices": [
+        "1",
+        "7/4",
+        "3/4",
+        "1",
+        "1/2"
+      ],
+      "prior_counts": [
+        2,
+        9,
+        4,
+        4,
+        2,
+        3,
+        1,
+        4,
+        7,
+        3,
+        1,
+        3,
+        5,
+        1,
+        8,
+        2,
+        1,
+        6,
+        1,
+        6,
+        7,
+        1,
+        9,
+        7,
+        2,
+        2,
+        5,
+        3,
+        6,
+        6,
+        5,
+        2
+      ],
+      "means": [
+        "1/32",
+        "-1/64",
+        "-5/64",
+        "3/64",
+        "-5/64"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-3/32",
+      "lower": [
+        "-1/2",
+        "-3/4",
+        "-1/4",
+        "-1/2",
+        "-3/4"
+      ],
+      "upper": [
+        "3/4",
+        "1/4",
+        "1/2",
+        "1",
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "11/4",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-3/4",
+            "-1/4",
+            "-1/2",
+            "-3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "5/2",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1/4",
+            "1/2",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "plan": [
+            2
+          ],
+          "regret": "3",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1/4",
+            "-1/4",
+            "1",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 1,
+      "prices": [
+        "7/4"
+      ],
+      "prior_counts": [
+        5,
+        9
+      ],
+      "means": [
+        "-2/7"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-2/7",
+      "lower": [
+        "0"
+      ],
+      "upper": [
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "0",
+          "competitor": null,
+          "means": [
+            "0"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3/4",
+          "competitor": null,
+          "means": [
+            "3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 0,
+      "prices": [
+        "2",
+        "1/4",
+        "3/2",
+        "1/4",
+        "1/2"
+      ],
+      "prior_counts": [
+        1,
+        5,
+        1,
+        1,
+        2,
+        9,
+        3,
+        6,
+        1,
+        3,
+        4,
+        2,
+        6,
+        6,
+        6,
+        9,
+        3,
+        6,
+        9,
+        2,
+        4,
+        1,
+        1,
+        7,
+        9,
+        2,
+        8,
+        6,
+        7,
+        2,
+        5,
+        3
+      ],
+      "means": [
+        "0",
+        "-3/70",
+        "-1/10",
+        "-9/70",
+        "-1/14"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-12/35",
+      "lower": [
+        "-1/2",
+        "-1/2",
+        "-1/4",
+        "-1/4",
+        "1/4"
+      ],
+      "upper": [
+        "1",
+        "-1/2",
+        "3/4",
+        "1",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/4",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-1/2",
+            "-1/4",
+            "-1/4",
+            "1/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "11/4",
+          "competitor": null,
+          "means": [
+            "1",
+            "-1/2",
+            "3/4",
+            "1",
+            "1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 4,
+      "horizon": 2,
+      "prices": [
+        "1",
+        "5/4",
+        "1",
+        "2"
+      ],
+      "prior_counts": [
+        5,
+        6,
+        5,
+        9,
+        6,
+        1,
+        2,
+        8,
+        7,
+        6,
+        3,
+        5,
+        4,
+        3,
+        3,
+        6
+      ],
+      "means": [
+        "-9/79",
+        "-3/79",
+        "13/79",
+        "5/79"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "1/4",
+        "-1/4",
+        "-1",
+        "-1"
+      ],
+      "upper": [
+        "1/2",
+        "3/4",
+        "-1/4",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "2",
+          "competitor": [],
+          "means": [
+            "1/4",
+            "-1/4",
+            "-1",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3/2",
+          "competitor": null,
+          "means": [
+            "1/2",
+            "3/4",
+            "-1/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [
+            0,
+            2
+          ],
+          "regret": "4",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "3/4",
+            "-1",
+            "1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 3,
+      "prices": [
+        "5/4",
+        "7/4",
+        "3/4",
+        "0",
+        "1/2"
+      ],
+      "prior_counts": [
+        8,
+        9,
+        2,
+        6,
+        7,
+        1,
+        8,
+        5,
+        2,
+        1,
+        5,
+        3,
+        8,
+        8,
+        6,
+        2,
+        8,
+        5,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        9,
+        1,
+        5,
+        9,
+        5,
+        1,
+        6,
+        9
+      ],
+      "means": [
+        "1/7",
+        "1/77",
+        "1/77",
+        "-3/77",
+        "4/77"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1/2",
+        "-3/4",
+        "-1/2",
+        "-3/4",
+        "-1/2"
+      ],
+      "upper": [
+        "3/4",
+        "-3/4",
+        "1/2",
+        "-1/2",
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-3/4",
+            "-1/2",
+            "-3/4",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3/2",
+          "competitor": [
+            0,
+            2,
+            4
+          ],
+          "means": [
+            "3/4",
+            "-3/4",
+            "1/2",
+            "-3/4",
+            "3/4"
+          ]
+        },
+        {
+          "plan": [
+            0,
+            4
+          ],
+          "regret": "4",
+          "competitor": [
+            2
+          ],
+          "means": [
+            "-1/2",
+            "-3/4",
+            "1/2",
+            "-3/4",
+            "-1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 3,
+      "horizon": 0,
+      "prices": [
+        "5/4",
+        "2",
+        "1"
+      ],
+      "prior_counts": [
+        8,
+        4,
+        8,
+        7,
+        9,
+        7,
+        9,
+        1
+      ],
+      "means": [
+        "15/53",
+        "3/53",
+        "1/53"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-3/4",
+        "1/4",
+        "-1/4"
+      ],
+      "upper": [
+        "-1/2",
+        "1/4",
+        "1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3/4",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "1/4",
+            "-1/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "1/4",
+            "-1/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 4,
+      "horizon": 2,
+      "prices": [
+        "1/2",
+        "0",
+        "1/2",
+        "3/2"
+      ],
+      "prior_counts": [
+        7,
+        3,
+        1,
+        9,
+        2,
+        4,
+        6,
+        3,
+        3,
+        9,
+        5,
+        5,
+        6,
+        8,
+        5,
+        7
+      ],
+      "means": [
+        "-13/83",
+        "1/83",
+        "1/83",
+        "-13/83"
+      ],
+      "advised_plan": [
+        1
+      ],
+      "optimal_cost": "-26/83",
+      "lower": [
+        "1/4",
+        "1/4",
+        "-3/4",
+        "-1/2"
+      ],
+      "upper": [
+        "3/4",
+        "1/2",
+        "1/4",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "2",
+          "competitor": [
+            0,
+            1
+          ],
+          "means": [
+            "3/4",
+            "1/2",
+            "-3/4",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "2",
+          "competitor": [
+            0,
+            1
+          ],
+          "means": [
+            "3/4",
+            "1/2",
+            "-3/4",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [
+            1
+          ],
+          "regret": "5/4",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1/4",
+            "1/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [
+            2,
+            3
+          ],
+          "regret": "13/2",
+          "competitor": [
+            0,
+            1
+          ],
+          "means": [
+            "3/4",
+            "1/2",
+            "-3/4",
+            "-1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 6,
+      "horizon": 0,
+      "prices": [
+        "1",
+        "2",
+        "3/4",
+        "1",
+        "2",
+        "7/4"
+      ],
+      "prior_counts": [
+        9,
+        4,
+        4,
+        6,
+        6,
+        4,
+        7,
+        7,
+        7,
+        2,
+        4,
+        8,
+        1,
+        9,
+        8,
+        8,
+        1,
+        6,
+        5,
+        4,
+        3,
+        5,
+        3,
+        3,
+        3,
+        7,
+        6,
+        7,
+        6,
+        2,
+        1,
+        3,
+        2,
+        5,
+        6,
+        2,
+        4,
+        8,
+        6,
+        5,
+        4,
+        4,
+        5,
+        1,
+        3,
+        1,
+        9,
+        5,
+        1,
+        8,
+        7,
+        8,
+        8,
+        5,
+        3,
+        1,
+        4,
+        2,
+        4,
+        5,
+        9,
+        1,
+        3,
+        2
+      ],
+      "means": [
+        "1/75",
+        "-1/25",
+        "1/150",
+        "1/25",
+        "7/75",
+        "3/50"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-3/4",
+        "0",
+        "1/2",
+        "-3/4",
+        "-3/4",
+        "-1/4"
+      ],
+      "upper": [
+        "3/4",
+        "0",
+        "3/4",
+        "0",
+        "0",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "2",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "0",
+            "1/2",
+            "-3/4",
+            "-3/4",
+            "-1/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "5/2",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "0",
+            "3/4",
+            "0",
+            "0",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 3,
+      "horizon": 1,
+      "prices": [
+        "3/2",
+        "1/4",
+        "5/4"
+      ],
+      "prior_counts": [
+        7,
+        1,
+        6,
+        7,
+        8,
+        7,
+        9,
+        2
+      ],
+      "means": [
+        "13/47",
+        "-1/47",
+        "-5/47"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1/2",
+        "-1",
+        "0"
+      ],
+      "upper": [
+        "1/2",
+        "-1/4",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3/2",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-1",
+            "0"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3/4",
+          "competitor": null,
+          "means": [
+            "1/2",
+            "-1/4",
+            "1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 5,
+      "prices": [
+        "1",
+        "3/2",
+        "5/4",
+        "2",
+        "3/2"
+      ],
+      "prior_counts": [
+        3,
+        5,
+        3,
+        3,
+        6,
+        9,
+        2,
+        9,
+        8,
+        7,
+        9,
+        5,
+        9,
+        7,
+        7,
+        3,
+        5,
+        2,
+        8,
+        2,
+        5,
+        9,
+        7,
+        1,
+        4,
+        6,
+        4,
+        8,
+        8,
+        4,
+        9,
+        1
+      ],
+      "means": [
+        "8/89",
+        "8/89",
+        "-7/89",
+        "-10/89",
+        "6/89"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "1/4",
+        "-1/2",
+        "-1",
+        "3/4",
+        "-1/2"
+      ],
+      "upper": [
+        "1/4",
+        "1",
+        "0",
+        "1",
+        "1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1",
+          "competitor": [],
+          "means": [
+            "1/4",
+            "-1/2",
+            "-1",
+            "3/4",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "5/2",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "1",
+            "0",
+            "1",
+            "1/4"
+          ]
+        },
+        {
+          "plan": [
+            4
+          ],
+          "regret": "17/4",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "1",
+            "0",
+            "1",
+            "-1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 3,
+      "horizon": 3,
+      "prices": [
+        "2",
+        "1",
+        "1/4"
+      ],
+      "prior_counts": [
+        8,
+        9,
+        2,
+        4,
+        1,
+        4,
+        2,
+        3
+      ],
+      "means": [
+        "-7/33",
+        "1/3",
+        "13/33"
+      ],
+      "advised_plan": [
+        2
+      ],
+      "optimal_cost": "-1/44",
+      "lower": [
+        "-1/4",
+        "1/2",
+        "0"
+      ],
+      "upper": [
+        "3/4",
+        "1",
+        "1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1/4",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "-1/4",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "2",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1",
+            "1/4"
+          ]
+        },
+        {
+          "plan": [
+            2
+          ],
+          "regret": "2",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "plan": [
+            1
+          ],
+          "regret": "3/2",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1/2",
+            "1/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 0,
+      "prices": [
+        "2"
+      ],
+      "prior_counts": [
+        2,
+        7
+      ],
+      "means": [
+        "-5/9"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-5/9",
+      "lower": [
+        "-3/4"
+      ],
+      "upper": [
+        "-3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3/4",
+          "competitor": [],
+          "means": [
+            "-3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 1,
+      "prices": [
+        "3/2",
+        "7/4"
+      ],
+      "prior_counts": [
+        9,
+        9,
+        6,
+        1
+      ],
+      "means": [
+        "1/5",
+        "11/25"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-3/4",
+        "-1/2"
+      ],
+      "upper": [
+        "1",
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/4",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "1",
+          "competitor": null,
+          "means": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "3",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 2,
+      "prices": [
+        "2",
+        "3/2",
+        "1",
+        "1/4",
+        "3/2"
+      ],
+      "prior_counts": [
+        8,
+        7,
+        4,
+        6,
+        4,
+        3,
+        1,
+        1,
+        5,
+        8,
+        4,
+        9,
+        1,
+        6,
+        4,
+        6,
+        7,
+        3,
+        6,
+        3,
+        8,
+        3,
+        6,
+        2,
+        1,
+        9,
+        9,
+        5,
+        1,
+        7,
+        4,
+        2
+      ],
+      "means": [
+        "-7/153",
+        "1/17",
+        "35/153",
+        "-1/17",
+        "1/153"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-3/4",
+        "-3/4",
+        "-1",
+        "-1/2",
+        "1/4"
+      ],
+      "upper": [
+        "-1/2",
+        "3/4",
+        "1",
+        "3/4",
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "11/4",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-3/4",
+            "-1",
+            "-1/2",
+            "1/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "11/4",
+          "competitor": null,
+          "means": [
+            "-1/2",
+            "3/4",
+            "1",
+            "3/4",
+            "3/4"
+          ]
+        },
+        {
+          "plan": [
+            1
+          ],
+          "regret": "21/4",
+          "competitor": [
+            2,
+            3
+          ],
+          "means": [
+            "-3/4",
+            "-3/4",
+            "1",
+            "3/4",
+            "1/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 6,
+      "horizon": 4,
+      "prices": [
+        "1/2",
+        "0",
+        "7/4",
+        "2",
+        "3/4",
+        "1/4"
+      ],
+      "prior_counts": [
+        3,
+        2,
+        9,
+        8,
+        5,
+        3,
+        4,
+        6,
+        4,
+        7,
+        8,
+        9,
+        6,
+        8,
+        3,
+        5,
+        5,
+        4,
+        8,
+        1,
+        1,
+        3,
+        8,
+        1,
+        7,
+        3,
+        6,
+        2,
+        4,
+        8,
+        7,
+        7,
+        5,
+        3,
+        1,
+        2,
+        9,
+        9,
+        9,
+        3,
+        9,
+        7,
+        9,
+        5,
+        2,
+        5,
+        2,
+        9,
+        1,
+        3,
+        2,
+        1,
+        8,
+        9,
+        5,
+        9,
+        9,
+        3,
+        8,
+        7,
+        2,
+        3,
+        3,
+        4
+      ],
+      "means": [
+        "13/331",
+        "-11/331",
+        "-9/331",
+        "-31/331",
+        "27/331",
+        "-1/331"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-12/331",
+      "lower": [
+        "1/2",
+        "-3/4",
+        "-1",
+        "-1",
+        "-1/2",
+        "-3/4"
+      ],
+      "upper": [
+        "3/4",
+        "3/4",
+        "-1/4",
+        "-1/2",
+        "3/4",
+        "1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "17/4",
+          "competitor": [
+            0
+          ],
+          "means": [
+            "3/4",
+            "-3/4",
+            "-1",
+            "-1",
+            "-1/2",
+            "-3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "7/2",
+          "competitor": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "means": [
+            "3/4",
+            "3/4",
+            "-1",
+            "-1",
+            "3/4",
+            "1/4"
+          ]
+        },
+        {
+          "plan": [
+            0,
+            3,
+            4
+          ],
+          "regret": "15/2",
+          "competitor": [
+            0,
+            1,
+            5
+          ],
+          "means": [
+            "1/2",
+            "3/4",
+            "-1",
+            "-1",
+            "-1/2",
+            "1/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 1,
+      "prices": [
+        "1/2",
+        "1/2"
+      ],
+      "prior_counts": [
+        7,
+        5,
+        3,
+        8
+      ],
+      "means": [
+        "-3/23",
+        "1/23"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-2/23",
+      "lower": [
+        "-3/4",
+        "-1/2"
+      ],
+      "upper": [
+        "-1/4",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/4",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "1/2",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "-3/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "5/2",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "-3/4",
+            "1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 1,
+      "prices": [
+        "3/2"
+      ],
+      "prior_counts": [
+        6,
+        2
+      ],
+      "means": [
+        "1/2"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1/4"
+      ],
+      "upper": [
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1/4",
+          "competitor": [],
+          "means": [
+            "-1/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3/4",
+          "competitor": null,
+          "means": [
+            "3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 3,
+      "horizon": 1,
+      "prices": [
+        "2",
+        "1",
+        "1"
+      ],
+      "prior_counts": [
+        7,
+        2,
+        3,
+        8,
+        4,
+        5,
+        8,
+        1
+      ],
+      "means": [
+        "3/19",
+        "-1/19",
+        "1/19"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1/2",
+        "-3/4",
+        "-1/4"
+      ],
+      "upper": [
+        "3/4",
+        "1/2",
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3/2",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-3/4",
+            "-1/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "2",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1/2",
+            "3/4"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "15/4",
+          "competitor": null,
+          "means": [
+            "-1/2",
+            "1/2",
+            "3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 1,
+      "prices": [
+        "3/2",
+        "1/2",
+        "3/4",
+        "3/4",
+        "3/2"
+      ],
+      "prior_counts": [
+        9,
+        2,
+        1,
+        4,
+        1,
+        5,
+        2,
+        1,
+        5,
+        8,
+        1,
+        1,
+        2,
+        5,
+        2,
+        1,
+        7,
+        1,
+        9,
+        2,
+        6,
+        9,
+        8,
+        7,
+        8,
+        6,
+        3,
+        3,
+        1,
+        1,
+        6,
+        6
+      ],
+      "means": [
+        "9/133",
+        "1/7",
+        "1/19",
+        "15/133",
+        "-33/133"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "1/2",
+        "-1/2",
+        "3/4",
+        "-1/4",
+        "0"
+      ],
+      "upper": [
+        "1",
+        "1/2",
+        "3/4",
+        "0",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1/4",
+          "competitor": [
+            2
+          ],
+          "means": [
+            "1/2",
+            "-1/2",
+            "3/4",
+            "-1/4",
+            "0"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "11/4",
+          "competitor": null,
+          "means": [
+            "1",
+            "1/2",
+            "3/4",
+            "0",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "11/4",
+          "competitor": null,
+          "means": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "0",
+            "1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 0,
+      "prices": [
+        "1"
+      ],
+      "prior_counts": [
+        4,
+        2
+      ],
+      "means": [
+        "1/3"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1"
+      ],
+      "upper": [
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1",
+          "competitor": [],
+          "means": [
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3/4",
+          "competitor": null,
+          "means": [
+            "3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 4,
+      "horizon": 4,
+      "prices": [
+        "0",
+        "2",
+        "2",
+        "1/4"
+      ],
+      "prior_counts": [
+        1,
+        5,
+        2,
+        3,
+        3,
+        1,
+        7,
+        8,
+        8,
+        3,
+        6,
+        2,
+        6,
+        1,
+        1,
+        2
+      ],
+      "means": [
+        "9/59",
+        "-3/59",
+        "1/59",
+        "1/59"
+      ],
+      "advised_plan": [
+        0
+      ],
+      "optimal_cost": "-10/59",
+      "lower": [
+        "-1/2",
+        "0",
+        "-1/4",
+        "0"
+      ],
+      "upper": [
+        "3/4",
+        "1/4",
+        "1/2",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/4",
+          "competitor": [
+            0,
+            3
+          ],
+          "means": [
+            "3/4",
+            "0",
+            "-1/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "9/4",
+          "competitor": [
+            0,
+            3
+          ],
+          "means": [
+            "3/4",
+            "0",
+            "-1/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "7/4",
+          "competitor": [
+            3
+          ],
+          "means": [
+            "-1/2",
+            "0",
+            "-1/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [
+            0,
+            2,
+            3
+          ],
+          "regret": "15/4",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "0",
+            "-1/4",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 1,
+      "prices": [
+        "5/4",
+        "1/2"
+      ],
+      "prior_counts": [
+        5,
+        8,
+        3,
+        4
+      ],
+      "means": [
+        "-1/5",
+        "3/10"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1",
+        "-1"
+      ],
+      "upper": [
+        "-1/2",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "2",
+          "competitor": [],
+          "means": [
+            "-1",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3/2",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "-1",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            1
+          ],
+          "regret": "5/2",
+          "competitor": [],
+          "means": [
+            "-1",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 4,
+      "horizon": 4,
+      "prices": [
+        "0",
+        "2",
+        "1/2",
+        "1/2"
+      ],
+      "prior_counts": [
+        2,
+        2,
+        9,
+        4,
+        2,
+        4,
+        2,
+        1,
+        7,
+        1,
+        5,
+        8,
+        4,
+        9,
+        5,
+        7
+      ],
+      "means": [
+        "0",
+        "-5/36",
+        "1/18",
+        "-5/18"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-13/36",
+      "lower": [
+        "-1/4",
+        "-1",
+        "-1/2",
+        "-1"
+      ],
+      "upper": [
+        "3/4",
+        "0",
+        "0",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "13/4",
+          "competitor": [
+            0
+          ],
+          "means": [
+            "3/4",
+            "-1",
+            "-1/2",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3",
+          "competitor": [
+            0,
+            3
+          ],
+          "means": [
+            "3/4",
+            "-1",
+            "-1/2",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            2
+          ],
+          "regret": "9/2",
+          "competitor": [
+            0,
+            3
+          ],
+          "means": [
+            "3/4",
+            "-1",
+            "-1/2",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 2,
+      "prices": [
+        "1",
+        "5/4"
+      ],
+      "prior_counts": [
+        2,
+        6,
+        9,
+        1
+      ],
+      "means": [
+        "2/9",
+        "-1/9"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-3/4",
+        "1/2"
+      ],
+      "upper": [
+        "1/4",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1/2",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "-3/4",
+            "1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "5/4",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            0,
+            1
+          ],
+          "regret": "11/4",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 4,
+      "horizon": 2,
+      "prices": [
+        "1/2",
+        "2",
+        "1",
+        "1"
+      ],
+      "prior_counts": [
+        6,
+        1,
+        4,
+        8,
+        9,
+        4,
+        8,
+        7,
+        8,
+        8,
+        8,
+        4,
+        5,
+        4,
+        6,
+        3
+      ],
+      "means": [
+        "5/31",
+        "-1/31",
+        "1/93",
+        "1/93"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "0",
+        "-1",
+        "1/2",
+        "-1/2"
+      ],
+      "upper": [
+        "1/4",
+        "1",
+        "1/2",
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1",
+          "competitor": [],
+          "means": [
+            "0",
+            "-1",
+            "1/2",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "7/4",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "1",
+            "1/2",
+            "0"
+          ]
+        },
+        {
+          "plan": [
+            1
+          ],
+          "regret": "4",
+          "competitor": [],
+          "means": [
+            "0",
+            "-1",
+            "1/2",
+            "-1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 0,
+      "prices": [
+        "0"
+      ],
+      "prior_counts": [
+        1,
+        9
+      ],
+      "means": [
+        "-4/5"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-4/5",
+      "lower": [
+        "-1/2"
+      ],
+      "upper": [
+        "-1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1/2",
+          "competitor": [],
+          "means": [
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 0,
+      "prices": [
+        "1/2",
+        "0",
+        "0",
+        "5/4",
+        "2"
+      ],
+      "prior_counts": [
+        5,
+        2,
+        8,
+        3,
+        4,
+        6,
+        8,
+        7,
+        1,
+        6,
+        3,
+        6,
+        5,
+        6,
+        9,
+        4,
+        3,
+        1,
+        6,
+        1,
+        4,
+        1,
+        7,
+        8,
+        3,
+        4,
+        5,
+        6,
+        9,
+        6,
+        9,
+        2
+      ],
+      "means": [
+        "10/79",
+        "-13/79",
+        "-16/79",
+        "-5/79",
+        "4/79"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-20/79",
+      "lower": [
+        "1/2",
+        "-1/2",
+        "-1/4",
+        "0",
+        "0"
+      ],
+      "upper": [
+        "3/4",
+        "1/2",
+        "1/2",
+        "1",
+        "1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1/4",
+          "competitor": [],
+          "means": [
+            "1/2",
+            "-1/2",
+            "-1/4",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1/2",
+            "1/2",
+            "1",
+            "1/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 4,
+      "prices": [
+        "1/2",
+        "0",
+        "3/2",
+        "3/4",
+        "0"
+      ],
+      "prior_counts": [
+        3,
+        8,
+        7,
+        4,
+        2,
+        9,
+        8,
+        7,
+        6,
+        3,
+        6,
+        9,
+        2,
+        9,
+        6,
+        3,
+        4,
+        6,
+        6,
+        3,
+        6,
+        9,
+        4,
+        2,
+        5,
+        5,
+        1,
+        5,
+        4,
+        7,
+        9,
+        2
+      ],
+      "means": [
+        "-6/85",
+        "3/85",
+        "-4/85",
+        "3/85",
+        "7/85"
+      ],
+      "advised_plan": [
+        1,
+        4
+      ],
+      "optimal_cost": "-1/5",
+      "lower": [
+        "1/2",
+        "1/2",
+        "-1/2",
+        "-3/4",
+        "1/4"
+      ],
+      "upper": [
+        "3/4",
+        "1/2",
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/2",
+          "competitor": [
+            0,
+            1,
+            4
+          ],
+          "means": [
+            "3/4",
+            "1/2",
+            "-1/2",
+            "-3/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3",
+          "competitor": [
+            0,
+            1,
+            4
+          ],
+          "means": [
+            "3/4",
+            "1/2",
+            "-1/2",
+            "-3/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [
+            1,
+            4
+          ],
+          "regret": "1",
+          "competitor": [
+            0,
+            1,
+            4
+          ],
+          "means": [
+            "3/4",
+            "1/2",
+            "-1/2",
+            "-3/4",
+            "1/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 1,
+      "prices": [
+        "7/4",
+        "1/4"
+      ],
+      "prior_counts": [
+        5,
+        2,
+        4,
+        3
+      ],
+      "means": [
+        "2/7",
+        "0"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "1/4",
+        "-1/2"
+      ],
+      "upper": [
+        "1/2",
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1/4",
+          "competitor": [],
+          "means": [
+            "1/4",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "5/4",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "1/4",
+            "3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 3,
+      "horizon": 1,
+      "prices": [
+        "0",
+        "7/4",
+        "1/2"
+      ],
+      "prior_counts": [
+        6,
+        3,
+        4,
+        6,
+        6,
+        4,
+        5,
+        8
+      ],
+      "means": [
+        "0",
+        "-2/21",
+        "-2/21"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-4/21",
+      "lower": [
+        "-1/2",
+        "-1/4",
+        "-1"
+      ],
+      "upper": [
+        "-1/4",
+        "1/4",
+        "-3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "7/4",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-1/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-1/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "1",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-1/4",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 6,
+      "horizon": 6,
+      "prices": [
+        "5/4",
+        "0",
+        "7/4",
+        "1",
+        "1/2",
+        "1"
+      ],
+      "prior_counts": [
+        3,
+        6,
+        9,
+        1,
+        3,
+        2,
+        8,
+        8,
+        8,
+        9,
+        7,
+        6,
+        9,
+        8,
+        9,
+        5,
+        9,
+        2,
+        3,
+        6,
+        6,
+        7,
+        2,
+        6,
+        1,
+        3,
+        2,
+        6,
+        4,
+        3,
+        9,
+        5,
+        5,
+        3,
+        5,
+        8,
+        8,
+        1,
+        1,
+        8,
+        8,
+        1,
+        9,
+        6,
+        1,
+        6,
+        7,
+        7,
+        4,
+        5,
+        6,
+        7,
+        6,
+        7,
+        4,
+        2,
+        9,
+        1,
+        3,
+        1,
+        7,
+        3,
+        4,
+        2
+      ],
+      "means": [
+        "14/165",
+        "-7/165",
+        "-1/55",
+        "-4/165",
+        "4/33",
+        "2/33"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1",
+        "0",
+        "1/4",
+        "0",
+        "-3/4",
+        "0"
+      ],
+      "upper": [
+        "1/2",
+        "3/4",
+        "1",
+        "1/2",
+        "3/4",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "9/4",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "-1",
+            "3/4",
+            "1/4",
+            "0",
+            "-3/4",
+            "0"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "4",
+          "competitor": null,
+          "means": [
+            "1/2",
+            "3/4",
+            "1",
+            "1/2",
+            "3/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "regret": "19/4",
+          "competitor": null,
+          "means": [
+            "1/2",
+            "0",
+            "1/4",
+            "0",
+            "3/4",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 6,
+      "horizon": 3,
+      "prices": [
+        "7/4",
+        "1",
+        "1",
+        "7/4",
+        "7/4",
+        "5/4"
+      ],
+      "prior_counts": [
+        2,
+        9,
+        7,
+        3,
+        3,
+        9,
+        7,
+        9,
+        8,
+        1,
+        6,
+        5,
+        7,
+        7,
+        3,
+        1,
+        7,
+        1,
+        1,
+        9,
+        6,
+        2,
+        6,
+        3,
+        7,
+        5,
+        6,
+        5,
+        1,
+        3,
+        5,
+        5,
+        4,
+        3,
+        2,
+        9,
+        5,
+        5,
+        1,
+        8,
+        9,
+        9,
+        1,
+        1,
+        5,
+        6,
+        8,
+        7,
+        8,
+        4,
+        2,
+        4,
+        9,
+        4,
+        5,
+        2,
+        1,
+        9,
+        4,
+        4,
+        1,
+        3,
+        2,
+        4
+      ],
+      "means": [
+        "-5/154",
+        "9/154",
+        "1/77",
+        "5/154",
+        "8/77",
+        "5/154"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "1/4",
+        "1",
+        "1/2",
+        "-3/4",
+        "-3/4",
+        "-1/4"
+      ],
+      "upper": [
+        "1",
+        "1",
+        "3/4",
+        "-1/2",
+        "0",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/4",
+          "competitor": [
+            1,
+            2
+          ],
+          "means": [
+            "1/4",
+            "1",
+            "3/4",
+            "-3/4",
+            "-3/4",
+            "-1/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "13/4",
+          "competitor": null,
+          "means": [
+            "1",
+            "1",
+            "3/4",
+            "-1/2",
+            "0",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            0,
+            1,
+            4
+          ],
+          "regret": "23/4",
+          "competitor": [
+            1,
+            2,
+            5
+          ],
+          "means": [
+            "1/4",
+            "1",
+            "3/4",
+            "-3/4",
+            "-3/4",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 1,
+      "prices": [
+        "2",
+        "1/2"
+      ],
+      "prior_counts": [
+        7,
+        6,
+        2,
+        9
+      ],
+      "means": [
+        "-1/4",
+        "1/12"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-1/6",
+      "lower": [
+        "-1/4",
+        "-1/4"
+      ],
+      "upper": [
+        "1/4",
+        "1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1/2",
+          "competitor": [],
+          "means": [
+            "-1/4",
+            "-1/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "1/2",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "1/4"
+          ]
+        },
+        {
+          "plan": [
+            1
+          ],
+          "regret": "1",
+          "competitor": [],
+          "means": [
+            "-1/4",
+            "-1/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 1,
+      "prices": [
+        "3/2"
+      ],
+      "prior_counts": [
+        1,
+        1
+      ],
+      "means": [
+        "0"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "1"
+      ],
+      "upper": [
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "0",
+          "competitor": null,
+          "means": [
+            "1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "1",
+          "competitor": null,
+          "means": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 2,
+      "prices": [
+        "0",
+        "2",
+        "0",
+        "2",
+        "5/4"
+      ],
+      "prior_counts": [
+        4,
+        7,
+        7,
+        4,
+        9,
+        6,
+        5,
+        1,
+        5,
+        1,
+        7,
+        3,
+        3,
+        1,
+        8,
+        4,
+        7,
+        6,
+        5,
+        8,
+        2,
+        5,
+        4,
+        9,
+        4,
+        6,
+        6,
+        3,
+        3,
+        7,
+        2,
+        9
+      ],
+      "means": [
+        "1/161",
+        "-9/161",
+        "5/161",
+        "17/161",
+        "-11/161"
+      ],
+      "advised_plan": [
+        0,
+        2
+      ],
+      "optimal_cost": "-9/161",
+      "lower": [
+        "0",
+        "-1",
+        "-1/4",
+        "1/4",
+        "-1"
+      ],
+      "upper": [
+        "1",
+        "1",
+        "1/4",
+        "3/4",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3",
+          "competitor": [
+            0
+          ],
+          "means": [
+            "1",
+            "-1",
+            "-1/4",
+            "1/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "4",
+          "competitor": null,
+          "means": [
+            "1",
+            "1",
+            "1/4",
+            "3/4",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            0,
+            2
+          ],
+          "regret": "3",
+          "competitor": null,
+          "means": [
+            "0",
+            "1",
+            "-1/4",
+            "3/4",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            3,
+            4
+          ],
+          "regret": "29/4",
+          "competitor": [
+            0,
+            2
+          ],
+          "means": [
+            "1",
+            "-1",
+            "1/4",
+            "1/4",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 4,
+      "horizon": 1,
+      "prices": [
+        "7/4",
+        "5/4",
+        "5/4",
+        "7/4"
+      ],
+      "prior_counts": [
+        2,
+        8,
+        9,
+        9,
+        7,
+        3,
+        1,
+        4,
+        6,
+        2,
+        4,
+        3,
+        9,
+        6,
+        1,
+        7
+      ],
+      "means": [
+        "-1/27",
+        "5/81",
+        "5/81",
+        "5/81"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1/4",
+        "-1",
+        "-1",
+        "-3/4"
+      ],
+      "upper": [
+        "3/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3",
+          "competitor": [],
+          "means": [
+            "-1/4",
+            "-1",
+            "-1",
+            "-3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1/2",
+            "3/4",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "17/4",
+          "competitor": null,
+          "means": [
+            "-1/4",
+            "1/2",
+            "3/4",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 0,
+      "prices": [
+        "3/2"
+      ],
+      "prior_counts": [
+        2,
+        3
+      ],
+      "means": [
+        "-1/5"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-1/5",
+      "lower": [
+        "-1/2"
+      ],
+      "upper": [
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1/2",
+          "competitor": [],
+          "means": [
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 0,
+      "prices": [
+        "0"
+      ],
+      "prior_counts": [
+        2,
+        6
+      ],
+      "means": [
+        "-1/2"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-1/2",
+      "lower": [
+        "3/4"
+      ],
+      "upper": [
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "0",
+          "competitor": null,
+          "means": [
+            "3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3/4",
+          "competitor": null,
+          "means": [
+            "3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 0,
+      "prices": [
+        "1"
+      ],
+      "prior_counts": [
+        3,
+        3
+      ],
+      "means": [
+        "0"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-3/4"
+      ],
+      "upper": [
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3/4",
+          "competitor": [],
+          "means": [
+            "-3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "1/2",
+          "competitor": null,
+          "means": [
+            "1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 6,
+      "horizon": 1,
+      "prices": [
+        "3/4",
+        "7/4",
+        "5/4",
+        "5/4",
+        "1",
+        "7/4"
+      ],
+      "prior_counts": [
+        3,
+        8,
+        5,
+        7,
+        8,
+        5,
+        2,
+        7,
+        1,
+        8,
+        5,
+        5,
+        1,
+        1,
+        2,
+        7,
+        5,
+        8,
+        8,
+        8,
+        7,
+        3,
+        3,
+        6,
+        5,
+        4,
+        1,
+        9,
+        2,
+        6,
+        9,
+        8,
+        7,
+        6,
+        3,
+        2,
+        9,
+        6,
+        8,
+        6,
+        8,
+        4,
+        8,
+        7,
+        8,
+        4,
+        1,
+        7,
+        3,
+        5,
+        2,
+        9,
+        9,
+        4,
+        5,
+        5,
+        7,
+        5,
+        4,
+        3,
+        1,
+        3,
+        3,
+        2
+      ],
+      "means": [
+        "-25/331",
+        "-3/331",
+        "15/331",
+        "33/331",
+        "7/331",
+        "3/331"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1/2",
+        "-1",
+        "-1/4",
+        "-3/4",
+        "1/2",
+        "-1"
+      ],
+      "upper": [
+        "-1/4",
+        "3/4",
+        "0",
+        "-1/2",
+        "1",
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "7/2",
+          "competitor": [
+            4
+          ],
+          "means": [
+            "-1/2",
+            "-1",
+            "-1/4",
+            "-3/4",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "1",
+          "competitor": [
+            4
+          ],
+          "means": [
+            "-1/2",
+            "-1",
+            "-1/4",
+            "-3/4",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "plan": [
+            5
+          ],
+          "regret": "19/4",
+          "competitor": [
+            4
+          ],
+          "means": [
+            "-1/2",
+            "-1",
+            "-1/4",
+            "-3/4",
+            "1",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 2,
+      "prices": [
+        "1/2",
+        "0"
+      ],
+      "prior_counts": [
+        2,
+        1,
+        2,
+        6
+      ],
+      "means": [
+        "-3/11",
+        "-5/11"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-8/11",
+      "lower": [
+        "-1/4",
+        "-1/4"
+      ],
+      "upper": [
+        "3/4",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3/4",
+          "competitor": [
+            1
+          ],
+          "means": [
+            "-1/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "2",
+          "competitor": [
+            0,
+            1
+          ],
+          "means": [
+            "3/4",
+            "1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 1,
+      "prices": [
+        "5/4",
+        "2"
+      ],
+      "prior_counts": [
+        8,
+        7,
+        1,
+        1
+      ],
+      "means": [
+        "1/17",
+        "13/17"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-3/4",
+        "-1"
+      ],
+      "upper": [
+        "1/4",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "7/4",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3/4",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "11/4",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 0,
+      "prices": [
+        "2",
+        "0",
+        "2",
+        "0",
+        "5/4"
+      ],
+      "prior_counts": [
+        8,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        2,
+        9,
+        3,
+        1,
+        8,
+        8,
+        2,
+        2,
+        9,
+        1,
+        8,
+        7,
+        2,
+        8,
+        5,
+        2,
+        4,
+        6,
+        4,
+        1,
+        9,
+        5,
+        8,
+        2,
+        7
+      ],
+      "means": [
+        "-9/155",
+        "21/155",
+        "-3/155",
+        "-13/155",
+        "-3/155"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-7/155",
+      "lower": [
+        "1/2",
+        "-1/4",
+        "0",
+        "-3/4",
+        "-3/4"
+      ],
+      "upper": [
+        "3/4",
+        "1/4",
+        "3/4",
+        "1",
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/4",
+          "competitor": [],
+          "means": [
+            "1/2",
+            "-1/4",
+            "0",
+            "-3/4",
+            "-3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "11/4",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1/4",
+            "3/4",
+            "1",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 1,
+      "horizon": 0,
+      "prices": [
+        "5/4"
+      ],
+      "prior_counts": [
+        9,
+        7
+      ],
+      "means": [
+        "1/8"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1/2"
+      ],
+      "upper": [
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "1/2",
+          "competitor": [],
+          "means": [
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "1",
+          "competitor": null,
+          "means": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 4,
+      "horizon": 2,
+      "prices": [
+        "1/2",
+        "5/4",
+        "5/4",
+        "1"
+      ],
+      "prior_counts": [
+        6,
+        4,
+        4,
+        6,
+        5,
+        8,
+        1,
+        4,
+        1,
+        2,
+        6,
+        6,
+        6,
+        2,
+        5,
+        3
+      ],
+      "means": [
+        "-1/69",
+        "-1/69",
+        "1/69",
+        "7/69"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "1/2",
+        "-3/4",
+        "1",
+        "-1/2"
+      ],
+      "upper": [
+        "3/4",
+        "3/4",
+        "1",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/4",
+          "competitor": [
+            0,
+            2
+          ],
+          "means": [
+            "3/4",
+            "-3/4",
+            "1",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "7/2",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "3/4",
+            "1",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            1
+          ],
+          "regret": "19/4",
+          "competitor": [
+            0,
+            3
+          ],
+          "means": [
+            "3/4",
+            "-3/4",
+            "1",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 3,
+      "prices": [
+        "1",
+        "2",
+        "0",
+        "3/2",
+        "2"
+      ],
+      "prior_counts": [
+        2,
+        6,
+        2,
+        7,
+        4,
+        4,
+        5,
+        7,
+        6,
+        2,
+        3,
+        7,
+        2,
+        2,
+        4,
+        4,
+        6,
+        2,
+        4,
+        1,
+        4,
+        8,
+        7,
+        3,
+        1,
+        3,
+        4,
+        6,
+        4,
+        5,
+        3,
+        2
+      ],
+      "means": [
+        "-4/65",
+        "-4/65",
+        "-3/65",
+        "7/65",
+        "2/65"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-2/65",
+      "lower": [
+        "1/4",
+        "-3/4",
+        "-1/4",
+        "-1",
+        "-1"
+      ],
+      "upper": [
+        "3/4",
+        "3/4",
+        "0",
+        "3/4",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "11/4",
+          "competitor": [],
+          "means": [
+            "1/4",
+            "-3/4",
+            "-1/4",
+            "-1",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "13/4",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "3/4",
+            "0",
+            "3/4",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            0,
+            1
+          ],
+          "regret": "21/4",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "-3/4",
+            "0",
+            "3/4",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 4,
+      "horizon": 0,
+      "prices": [
+        "1/4",
+        "5/4",
+        "3/2",
+        "7/4"
+      ],
+      "prior_counts": [
+        3,
+        4,
+        9,
+        7,
+        2,
+        7,
+        5,
+        9,
+        7,
+        6,
+        3,
+        8,
+        7,
+        2,
+        3,
+        3
+      ],
+      "means": [
+        "-7/85",
+        "-9/85",
+        "9/85",
+        "7/85"
+      ],
+      "advised_plan": null,
+      "optimal_cost": "0",
+      "lower": [
+        "-1/2",
+        "-1/2",
+        "-1/4",
+        "-1/2"
+      ],
+      "upper": [
+        "3/4",
+        "1",
+        "0",
+        "-1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "7/4",
+          "competitor": [],
+          "means": [
+            "-1/2",
+            "-1/2",
+            "-1/4",
+            "-1/2"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "5/4",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "1",
+            "0",
+            "-1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 2,
+      "horizon": 1,
+      "prices": [
+        "1/2",
+        "3/2"
+      ],
+      "prior_counts": [
+        2,
+        3,
+        6,
+        5
+      ],
+      "means": [
+        "0",
+        "-3/8"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-3/8",
+      "lower": [
+        "-3/4",
+        "-1"
+      ],
+      "upper": [
+        "-1/4",
+        "-3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "7/4",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "2",
+          "competitor": [],
+          "means": [
+            "-3/4",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 6,
+      "horizon": 4,
+      "prices": [
+        "5/4",
+        "2",
+        "2",
+        "2",
+        "7/4",
+        "3/2"
+      ],
+      "prior_counts": [
+        6,
+        1,
+        5,
+        9,
+        8,
+        5,
+        2,
+        3,
+        7,
+        8,
+        7,
+        7,
+        2,
+        5,
+        8,
+        2,
+        5,
+        7,
+        1,
+        5,
+        8,
+        6,
+        5,
+        9,
+        9,
+        9,
+        6,
+        5,
+        9,
+        3,
+        3,
+        5,
+        4,
+        8,
+        3,
+        8,
+        8,
+        4,
+        1,
+        6,
+        4,
+        9,
+        8,
+        2,
+        4,
+        9,
+        9,
+        7,
+        5,
+        1,
+        3,
+        2,
+        2,
+        9,
+        2,
+        6,
+        9,
+        9,
+        8,
+        7,
+        4,
+        4,
+        3,
+        8
+      ],
+      "means": [
+        "-5/89",
+        "13/178",
+        "9/178",
+        "-21/178",
+        "1/178",
+        "1/89"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-3/89",
+      "lower": [
+        "1/4",
+        "-1/2",
+        "-3/4",
+        "-3/4",
+        "1/4",
+        "-1"
+      ],
+      "upper": [
+        "1/4",
+        "1",
+        "1/4",
+        "1",
+        "1/2",
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "5/2",
+          "competitor": [],
+          "means": [
+            "1/4",
+            "-1/2",
+            "-3/4",
+            "-3/4",
+            "1/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "1",
+            "1/4",
+            "1",
+            "1/2",
+            "0"
+          ]
+        },
+        {
+          "plan": [
+            1,
+            4
+          ],
+          "regret": "11/2",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "-1/2",
+            "1/4",
+            "1",
+            "1/4",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 1,
+      "prices": [
+        "0",
+        "7/4",
+        "0",
+        "0",
+        "1/4"
+      ],
+      "prior_counts": [
+        6,
+        1,
+        8,
+        2,
+        7,
+        9,
+        9,
+        4,
+        7,
+        3,
+        7,
+        8,
+        4,
+        2,
+        7,
+        7,
+        3,
+        3,
+        4,
+        5,
+        3,
+        6,
+        4,
+        2,
+        8,
+        3,
+        2,
+        8,
+        3,
+        7,
+        6,
+        6
+      ],
+      "means": [
+        "3/41",
+        "-7/82",
+        "-2/41",
+        "-3/41",
+        "9/82"
+      ],
+      "advised_plan": [
+        0
+      ],
+      "optimal_cost": "-7/41",
+      "lower": [
+        "0",
+        "0",
+        "-3/4",
+        "-3/4",
+        "0"
+      ],
+      "upper": [
+        "1/4",
+        "3/4",
+        "3/4",
+        "1/2",
+        "1/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "7/4",
+          "competitor": [
+            0
+          ],
+          "means": [
+            "1/4",
+            "0",
+            "-3/4",
+            "-3/4",
+            "0"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "5/2",
+          "competitor": null,
+          "means": [
+            "1/4",
+            "3/4",
+            "3/4",
+            "1/2",
+            "1/4"
+          ]
+        },
+        {
+          "plan": [
+            0
+          ],
+          "regret": "9/4",
+          "competitor": null,
+          "means": [
+            "0",
+            "3/4",
+            "3/4",
+            "1/2",
+            "1/4"
+          ]
+        },
+        {
+          "plan": [
+            2
+          ],
+          "regret": "5/2",
+          "competitor": [
+            3
+          ],
+          "means": [
+            "0",
+            "0",
+            "-3/4",
+            "1/2",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 4,
+      "prices": [
+        "3/2",
+        "5/4",
+        "1/2",
+        "0",
+        "2"
+      ],
+      "prior_counts": [
+        2,
+        7,
+        3,
+        1,
+        9,
+        6,
+        7,
+        3,
+        1,
+        9,
+        2,
+        5,
+        3,
+        9,
+        9,
+        3,
+        3,
+        8,
+        3,
+        6,
+        8,
+        9,
+        3,
+        2,
+        3,
+        7,
+        3,
+        6,
+        1,
+        6,
+        1,
+        1
+      ],
+      "means": [
+        "-27/149",
+        "33/149",
+        "-11/149",
+        "11/149",
+        "9/149"
+      ],
+      "advised_plan": [
+        3
+      ],
+      "optimal_cost": "-7/149",
+      "lower": [
+        "-1/4",
+        "-1/2",
+        "-1",
+        "-3/4",
+        "-1"
+      ],
+      "upper": [
+        "3/4",
+        "-1/4",
+        "1/4",
+        "3/4",
+        "1/2"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "7/2",
+          "competitor": [],
+          "means": [
+            "-1/4",
+            "-1/2",
+            "-1",
+            "-3/4",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "2",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "-1/4",
+            "1/4",
+            "3/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [
+            3
+          ],
+          "regret": "2",
+          "competitor": null,
+          "means": [
+            "3/4",
+            "-1/4",
+            "1/4",
+            "-3/4",
+            "1/2"
+          ]
+        },
+        {
+          "plan": [
+            1,
+            2,
+            3
+          ],
+          "regret": "25/4",
+          "competitor": [],
+          "means": [
+            "-1/4",
+            "-1/2",
+            "-1",
+            "-3/4",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 6,
+      "horizon": 2,
+      "prices": [
+        "1/2",
+        "7/4",
+        "3/2",
+        "0",
+        "1/2",
+        "0"
+      ],
+      "prior_counts": [
+        4,
+        7,
+        9,
+        7,
+        6,
+        4,
+        4,
+        1,
+        2,
+        3,
+        6,
+        3,
+        9,
+        3,
+        9,
+        1,
+        1,
+        2,
+        7,
+        6,
+        7,
+        5,
+        2,
+        9,
+        4,
+        9,
+        6,
+        1,
+        8,
+        5,
+        7,
+        7,
+        8,
+        4,
+        1,
+        7,
+        2,
+        6,
+        3,
+        7,
+        2,
+        1,
+        7,
+        9,
+        5,
+        8,
+        3,
+        4,
+        8,
+        4,
+        5,
+        2,
+        9,
+        7,
+        5,
+        6,
+        2,
+        3,
+        7,
+        3,
+        6,
+        1,
+        3,
+        8
+      ],
+      "means": [
+        "7/160",
+        "-1/32",
+        "-1/16",
+        "1/32",
+        "-1/32",
+        "1/40"
+      ],
+      "advised_plan": [
+        3,
+        5
+      ],
+      "optimal_cost": "-11/80",
+      "lower": [
+        "-3/4",
+        "-1/4",
+        "-3/4",
+        "1/4",
+        "-1",
+        "1"
+      ],
+      "upper": [
+        "1",
+        "0",
+        "0",
+        "3/4",
+        "0",
+        "1"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "9/2",
+          "competitor": [
+            3,
+            5
+          ],
+          "means": [
+            "-3/4",
+            "-1/4",
+            "-3/4",
+            "3/4",
+            "-1",
+            "1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "7/2",
+          "competitor": [
+            0,
+            5
+          ],
+          "means": [
+            "1",
+            "-1/4",
+            "-3/4",
+            "1/4",
+            "-1",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            3,
+            5
+          ],
+          "regret": "1",
+          "competitor": [
+            0,
+            5
+          ],
+          "means": [
+            "1",
+            "-1/4",
+            "-3/4",
+            "1/4",
+            "-1",
+            "1"
+          ]
+        },
+        {
+          "plan": [
+            1,
+            5
+          ],
+          "regret": "15/4",
+          "competitor": [
+            0,
+            5
+          ],
+          "means": [
+            "1",
+            "-1/4",
+            "-3/4",
+            "1/4",
+            "-1",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 6,
+      "horizon": 3,
+      "prices": [
+        "1/2",
+        "2",
+        "1",
+        "2",
+        "5/4",
+        "1/2"
+      ],
+      "prior_counts": [
+        3,
+        2,
+        1,
+        5,
+        7,
+        8,
+        8,
+        9,
+        1,
+        6,
+        2,
+        4,
+        7,
+        9,
+        5,
+        5,
+        6,
+        3,
+        2,
+        2,
+        3,
+        7,
+        2,
+        6,
+        4,
+        8,
+        7,
+        7,
+        9,
+        1,
+        5,
+        3,
+        7,
+        4,
+        5,
+        1,
+        4,
+        2,
+        7,
+        3,
+        9,
+        4,
+        2,
+        7,
+        8,
+        6,
+        6,
+        8,
+        7,
+        3,
+        4,
+        1,
+        7,
+        3,
+        4,
+        3,
+        5,
+        2,
+        7,
+        2,
+        8,
+        4,
+        1,
+        9
+      ],
+      "means": [
+        "8/155",
+        "12/155",
+        "-22/155",
+        "-16/155",
+        "2/31",
+        "2/155"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-6/155",
+      "lower": [
+        "-1/4",
+        "-3/4",
+        "1/4",
+        "-1",
+        "1/4",
+        "1/4"
+      ],
+      "upper": [
+        "1/2",
+        "3/4",
+        "1/4",
+        "1/4",
+        "3/4",
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "7/4",
+          "competitor": [
+            5
+          ],
+          "means": [
+            "-1/4",
+            "-3/4",
+            "1/4",
+            "-1",
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "13/4",
+          "competitor": null,
+          "means": [
+            "1/2",
+            "3/4",
+            "1/4",
+            "1/4",
+            "3/4",
+            "3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 5,
+      "horizon": 2,
+      "prices": [
+        "2",
+        "3/2",
+        "7/4",
+        "1/2",
+        "5/4"
+      ],
+      "prior_counts": [
+        3,
+        6,
+        8,
+        2,
+        2,
+        3,
+        5,
+        6,
+        1,
+        8,
+        6,
+        3,
+        7,
+        5,
+        1,
+        7,
+        3,
+        7,
+        7,
+        6,
+        8,
+        3,
+        3,
+        4,
+        1,
+        9,
+        7,
+        9,
+        6,
+        2,
+        7,
+        2
+      ],
+      "means": [
+        "-7/157",
+        "-9/157",
+        "15/157",
+        "-5/157",
+        "-11/157"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-17/157",
+      "lower": [
+        "-1",
+        "-1/4",
+        "-1/4",
+        "3/4",
+        "-1"
+      ],
+      "upper": [
+        "1/2",
+        "0",
+        "3/4",
+        "1",
+        "3/4"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3",
+          "competitor": [
+            3
+          ],
+          "means": [
+            "-1",
+            "-1/4",
+            "-1/4",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "3",
+          "competitor": null,
+          "means": [
+            "1/2",
+            "0",
+            "3/4",
+            "1",
+            "3/4"
+          ]
+        },
+        {
+          "plan": [
+            2
+          ],
+          "regret": "17/4",
+          "competitor": null,
+          "means": [
+            "1/2",
+            "0",
+            "-1/4",
+            "1",
+            "3/4"
+          ]
+        }
+      ]
+    },
+    {
+      "variables": 3,
+      "horizon": 2,
+      "prices": [
+        "1/4",
+        "1",
+        "7/4"
+      ],
+      "prior_counts": [
+        3,
+        6,
+        4,
+        6,
+        4,
+        3,
+        9,
+        5
+      ],
+      "means": [
+        "0",
+        "-1/5",
+        "-1/20"
+      ],
+      "advised_plan": [],
+      "optimal_cost": "-1/4",
+      "lower": [
+        "-1",
+        "-1/4",
+        "-1/4"
+      ],
+      "upper": [
+        "-1/2",
+        "1/2",
+        "0"
+      ],
+      "regret_witnesses": [
+        {
+          "plan": null,
+          "regret": "3/2",
+          "competitor": [],
+          "means": [
+            "-1",
+            "-1/4",
+            "-1/4"
+          ]
+        },
+        {
+          "plan": [],
+          "regret": "0",
+          "competitor": [],
+          "means": [
+            "-1",
+            "-1/4",
+            "-1/4"
+          ]
+        },
+        {
+          "plan": [
+            1
+          ],
+          "regret": "3/2",
+          "competitor": [],
+          "means": [
+            "-1",
+            "-1/4",
+            "-1/4"
+          ]
+        }
+      ]
+    }
+  ],
+  "policy_checks": 72,
+  "corner_plan_pairs": 31676,
+  "elapsed_ns": 211042000
+}
