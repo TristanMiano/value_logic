@@ -1,0 +1,142 @@
+{
+  "schema": "c001_repository_maintenance_v1",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "base_commit": "e35fdac5858023c97052d8ce6d04634f3c78312f",
+  "research_credit_ns": 0,
+  "c001_research_ns_unchanged": 26254006939255,
+  "full_suite": {
+    "schema": "repository_verification_run_v1",
+    "contributor": "ChatGPT (GPT-6 Astra Pro)",
+    "purpose": "Author-requested repository test repair; administration, zero research credit",
+    "research_credit_ns": 0,
+    "command": "python -m verification",
+    "python": "3.13.16 (main, Oct  3 2026, 01:06:22) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "dependencies": {
+      "numpy": "2.2.5",
+      "matplotlib": "3.10.8",
+      "torch": "2.8.0+cpu"
+    },
+    "start_utc": "2026-10-12T19:24:48.323013+00:00",
+    "end_utc": "2026-10-12T19:27:37.219457+00:00",
+    "start_monotonic_ns": 19811491059505,
+    "end_monotonic_ns": 19980370077100,
+    "elapsed_ns": 168879017595,
+    "return_code": 0,
+    "log_sha256": "df61264f410229bd761a825e21e53701db57ec88a676e1e90a4c501514314d51",
+    "test_summary": [
+      "Ran 1728 tests in 163.256s",
+      "OK (skipped=2)"
+    ],
+    "log": "checks_20261012.txt"
+  },
+  "native_followup": {
+    "command": "python -m unittest verification.test_experiment_repair.NativeKernelTests -v",
+    "purpose": "Run the two tests skipped by the full suite before CMake installation",
+    "cmake": "4.4.4",
+    "start_utc": "2026-10-12T19:28:46.869582+00:00",
+    "end_utc": "2026-10-12T19:28:49.837293+00:00",
+    "start_monotonic_ns": 20050037681359,
+    "end_monotonic_ns": 20053005230827,
+    "elapsed_ns": 2967549468,
+    "return_code": 0,
+    "test_summary": [
+      "Ran 2 tests in 1.810s",
+      "OK"
+    ],
+    "log_sha256": "6d34a1fdcffb82e9cb1747bba059a5bc6e6f875d1f7dfd9926bb2893d91d8276",
+    "research_credit_ns": 0,
+    "log": "native_20261012.txt"
+  },
+  "final_publication_gates": {
+    "paths": {
+      "command": "python tools/check_repo_paths.py --checkout-root C:\\Users\\trist\\projects\\value_logic",
+      "start_utc": "2026-10-12T19:35:31.805115+00:00",
+      "end_utc": "2026-10-12T19:35:31.937688+00:00",
+      "elapsed_ns": 132563707,
+      "return_code": 0,
+      "output": "PASS: 12796 tracked files; 3231 attribute probes; longest relative path 200/200 UTF-16 units.\nLongest full Windows path: 236/259 UTF-16 units.\n"
+    },
+    "evidence": {
+      "command": "python tools/evidence_paths.py verify",
+      "start_utc": "2026-10-12T19:35:31.805369+00:00",
+      "end_utc": "2026-10-12T19:35:31.854257+00:00",
+      "elapsed_ns": 48877972,
+      "return_code": 0,
+      "output": "{\n  \"status\": \"verified\",\n  \"relocated_paths\": 32,\n  \"unique_objects\": 30,\n  \"original_bytes\": 5350075\n}\n"
+    },
+    "portability_regressions": {
+      "command": "python -m unittest verification.test_repo_paths verification.test_evidence_paths verification.test_relocated_links",
+      "start_utc": "2026-10-12T19:35:31.805589+00:00",
+      "end_utc": "2026-10-12T19:35:32.028673+00:00",
+      "elapsed_ns": 223076451,
+      "return_code": 0,
+      "output": "........................\n----------------------------------------------------------------------\nRan 24 tests in 0.136s\n\nOK\n"
+    },
+    "focused_repairs": {
+      "command": "python -m unittest verification.test_links verification.test_archive_origins verification.test_math_markdown verification.test_math_views",
+      "start_utc": "2026-10-12T19:35:31.805919+00:00",
+      "end_utc": "2026-10-12T19:35:46.563404+00:00",
+      "elapsed_ns": 14757476758,
+      "return_code": 0,
+      "output": ".........................................\n----------------------------------------------------------------------\nRan 41 tests in 14.669s\n\nOK\n"
+    },
+    "math": {
+      "command": "python v3/checks/math_markdown.py --receipt /workspace/scratch/455d40bd4c83/c001_math_publish_v2.json",
+      "start_utc": "2026-10-12T19:36:30.015890+00:00",
+      "end_utc": "2026-10-12T19:36:40.140051+00:00",
+      "elapsed_ns": 10124146618,
+      "return_code": 0,
+      "output": "{\"checker\": \"math-markdown-v3\", \"scope\": \"Portable Markdown math, with scientifically bound archival views; no live rendering or mathematical validation claim\", \"files_scanned\": 1309, \"math_spans\": 18471, \"verified_portable_views\": 63, \"fixed\": false, \"changed_file_count\": 0, \"issue_count\": 0, \"preserved_source_issue_count\": 374}\n"
+    },
+    "diff": {
+      "command": "git diff --cached --check",
+      "start_utc": "2026-10-12T19:35:31.937869+00:00",
+      "end_utc": "2026-10-12T19:35:31.952583+00:00",
+      "elapsed_ns": 14708017,
+      "return_code": 0,
+      "output": ""
+    }
+  },
+  "status": "PASS",
+  "science_clock_files_changed": false,
+  "fixed_metric_columns": 8,
+  "historical_recurrence_rows": 17,
+  "file_identities": {
+    "v3/checks/math_markdown.py": "8cc1a988576ebe0710c40fb5a1ba9b919194b9d7e9f850a05e25b3fab0c72f32",
+    "verification/check_links.py": "7fde11dc8ac7c45a3e4108ff71f9b254cfd331228e161375ce90ae492753f6ca",
+    "verification/archive_origins.py": "a381ffa14a1d631ebe4a66337de9d6db534d11afa2dd90914be0dc45e2831bf9",
+    "verification/math_views.py": "d779abc534cd7f08b316bb4f56c45cd7502c3613b3266a576ac1b851e4068da0",
+    "tools/document_origins.json": "87bca8f7f6809bdf0b0c211f3a5fd138bbd171624d51a39e7561911cfbb4ad15",
+    "tools/math_views.json": "12d86a0d81e9ecf8c836eb42f683032cf97c4feea0e4147241c80cd5587499be",
+    "v3/discovery/recurrences.json": "21d7e44182412516e0ffa895c21726d820707fa023088f5e9892d70b1dae6901"
+  },
+  "math_summary": {
+    "files_scanned": 1309,
+    "math_spans": 18471,
+    "actionable_issues": 0,
+    "preserved_source_issue_records": 374,
+    "verified_portable_views": 63
+  },
+  "post_full_suite_presentation_correction": {
+    "description": "One deterministic portable view changed two prose hard breaks to equivalent backslash-newline syntax; its source stayed unchanged. The final 41 focused repair tests include the updated integrity case and repository link check.",
+    "evidence": {
+      "path": "../tools/math_views.json",
+      "locator": "presentation_corrections"
+    },
+    "research_credit_ns": 0
+  },
+  "administrative_attempts": [
+    {
+      "reason": "The checker correctly refused to overwrite an existing receipt; rerun uses a fresh receipt path. This is not a mathematical-Markdown finding.",
+      "attempt": {
+        "command": "python v3/checks/math_markdown.py --receipt /workspace/scratch/455d40bd4c83/c001_math_final.json",
+        "start_utc": "2026-10-12T19:35:31.854303+00:00",
+        "end_utc": "2026-10-12T19:35:45.811441+00:00",
+        "elapsed_ns": 13957130297,
+        "return_code": 1,
+        "output": "Traceback (most recent call last):\n  File \"/workspace/scratch/455d40bd4c83/value_logic_review_f563/v3/checks/math_markdown.py\", line 377, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/workspace/scratch/455d40bd4c83/value_logic_review_f563/v3/checks/math_markdown.py\", line 362, in main\n    with args.receipt.open(\"x\") as f:\n         ~~~~~~~~~~~~~~~~~^^^^^\n  File \"/root/.local/share/uv/python/cpython-3.13.16-linux-x86_64-gnu/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/workspace/scratch/455d40bd4c83/c001_math_final.json'\n"
+      }
+    }
+  ]
+}

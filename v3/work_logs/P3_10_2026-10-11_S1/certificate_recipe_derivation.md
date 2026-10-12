@@ -10,10 +10,10 @@ delivery and paid cost remain separate questions for the sealed final results.
 The `majority_dnf_cnf` recipe compares two expressions for the same Boolean
 majority function on each triple of nonzero coordinates. For binary a,b,c,
 
-\[
+```math
 (a\wedge b)\vee(a\wedge c)\vee(b\wedge c)
  = (a\vee b)\wedge(a\vee c)\wedge(b\vee c).
-\]
+```
 
 If at least two coordinates are true, every right-hand pair contains a true
 coordinate and one left-hand conjunction is true. If at most one coordinate
@@ -31,9 +31,9 @@ syntax and one uses admitted rational addition.
 Let z be coordinate zero. It occurs in neither identity's address/data/triple
 expression. Both recipes therefore have the exact pointwise loss difference
 
-\[
+```math
 D(w)=2z-1+(left(w)-right(w))=2z-1.
-\]
+```
 
 The fourth request adds one half, so its law is `D(w)=2z-1/2`. These are
 derivations of the published recipes, not private labels supplied to a paid

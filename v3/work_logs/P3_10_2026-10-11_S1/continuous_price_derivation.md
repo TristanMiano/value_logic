@@ -24,9 +24,9 @@ one exact population value; it receives no invented independent replicas.
 
 For normalized unit price lambda, the recorded objective is
 
-\[
+```math
 J_i(\lambda)=a_i+\lambda b_i,\qquad \lambda\geq0.
-\]
+```
 
 All parent episodes must be complete and valid, and all incurred cold costs
 must be known, before a line is eligible for a complete-service comparison.
@@ -38,19 +38,19 @@ separate, as in the frozen objective, and certificate tariffs are not pooled.
 
 For candidate c and the complete distinct ordinary catalogue O, define
 
-\[
+```math
 \Delta_c(\lambda)=\min_{i\in O}J_i(\lambda)-J_c(\lambda).
-\]
+```
 
 The primary practical threshold is epsilon=1/100 in normalized loss units.
 The following equivalence is immediate from a minimum over a finite set:
 
-\[
+```math
 \Delta_c(\lambda)\geq\epsilon
 \quad\Longleftrightarrow\quad
 (a_i-a_c)+\lambda(b_i-b_c)\geq\epsilon
 \quad\text{for every }i\in O.
-\]
+```
 
 Each inequality is either a lower half-line, an upper half-line, the entire
 axis, or the empty set. With d_a=a_i-a_c and d_b=b_i-b_c:

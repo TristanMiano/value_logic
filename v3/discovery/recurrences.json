@@ -1,18 +1,105 @@
 {
-  "schema": "c001_recurrence_progress_v1",
+  "schema": "c001_recurrence_progress_v2",
   "cycle": "P3-SEARCH-01-C001",
   "status": "OPEN",
   "prepared_by": "ChatGPT (GPT-6 Astra Pro)",
   "prepared_date_utc": "2026-10-12",
-  "source_commit": "71df2d63d63335c336c2ff109ec462624853c284",
+  "source_commit": "e35fdac5858023c97052d8ce6d04634f3c78312f",
   "latest_checkpoint": "s06/cp01.md",
   "latest_effective_actuals": "s06/effective_actuals.json",
   "retrospective_research_credit_ns": 0,
   "rounding": "Nearest whole minute, half up, directly from integer nanoseconds: (ns + 30000000000) // 60000000000. Round each increment and each exact cumulative independently; never sum or double-round displayed minutes.",
   "row_scope": "15 published checkpoint increments, one separately credited s02 tail, and abandoned s04 at zero. Earlier checkpoint increments are not separately requested one-hour sessions.",
   "metric_definitions": {
-    "new_family_count": "First introduction of a top-level numbered S family, not a suffix revision. Breadth only; no quota or discovery/readiness score.",
-    "scoped_result": "Source-backed numerical capability, information, representation or resource result. Keep its supplied premises, denominator, comparator and actual/replay status; do not aggregate heterogeneous metrics."
+    "families_total": {
+      "label": "Numbered candidate families",
+      "scope_id": "c001_numbered_families",
+      "units": "families",
+      "direction": "breadth only; no readiness or efficiency implication",
+      "definition": "Cumulative first introduction of a top-level numbered S family; suffix revisions do not count. Baseline before C001 is zero."
+    },
+    "edit_transport_warrants": {
+      "label": "272-edit transport coverage",
+      "scope_id": "margin_edits_272_v1",
+      "variant_id": "transport_only",
+      "units": "warranted edit states",
+      "denominator": 272,
+      "direction": "higher coverage",
+      "definition": "Refined action-margin warrants on the fixed 272 edited states, excluding the initial state; no new repair acquisition."
+    },
+    "edit_broad_warrants": {
+      "label": "272-edit broad-repair coverage",
+      "scope_id": "margin_edits_272_v1",
+      "variant_id": "broad_8_attempts",
+      "units": "warranted edit states",
+      "denominator": 272,
+      "direction": "higher coverage at separately reported acquisition cost",
+      "definition": "Refined warrants after broad repair, up to eight attempts per edit. Distinct policy lane from zero-acquisition transport."
+    },
+    "edit_targeted_warrants": {
+      "label": "272-edit targeted-repair coverage",
+      "scope_id": "margin_edits_272_v1",
+      "variant_id": "targeted_8_attempts",
+      "units": "warranted edit states",
+      "denominator": 272,
+      "direction": "higher coverage at separately reported acquisition cost",
+      "definition": "Refined warrants after targeted repair, up to eight attempts per edit. Distinct policy lane from broad repair and transport."
+    },
+    "repair_checked_outputs": {
+      "label": "80-request checked outputs",
+      "scope_id": "repair_stream_80_p6_t1_v1",
+      "units": "checked outputs",
+      "denominator": 80,
+      "direction": "higher coverage",
+      "definition": "Requested-tolerance outputs carrying checked actions on the same ordered 80 supplied-weight requests."
+    },
+    "repair_cache_closures": {
+      "label": "80-request cache closures",
+      "scope_id": "repair_stream_80_p6_t1_v1",
+      "units": "requests closed without new logical acquisition",
+      "denominator": 80,
+      "direction": "higher reuse coverage; not a complete-cost claim",
+      "definition": "Requests actually closed from each arm's own paid retained evidence before any new logical purchase on that request."
+    },
+    "repair_action_cost": {
+      "label": "80-request action-cost sum",
+      "scope_id": "repair_stream_80_p6_t1_v1",
+      "units": "supplied-weight action-cost units",
+      "direction": "lower returned action cost at the same outer tolerance",
+      "definition": "Sum of the actual selected repair or replacement costs; excludes acquisition and service costs, which remain in their separate full invoices."
+    },
+    "confirmation_forecast_percent": {
+      "label": "Material-positive confirmation forecast",
+      "scope_id": "candidate_specific_confirmation_event",
+      "units": "subjective probability percent or justified percent range",
+      "direction": "higher probability of the same specified material-positive confirmation event",
+      "definition": "Probability that the specified candidate survives its planned rigorous verification and establishes the specified materially useful positive claim at its stated scope.",
+      "minimum_percent": 80,
+      "preferred_percent": 90,
+      "required_event_fields": [
+        "candidate_id",
+        "candidate_version",
+        "claim",
+        "intended_domain",
+        "materiality_threshold",
+        "comparison",
+        "complete_cost_scope",
+        "verification_plan_version"
+      ],
+      "reporting": "Give basis, principal risks, sensitivity and forecasting track record. Report change in percentage points only for the same event. A changed candidate or claim requires a new first forecast, not an apparent improvement.",
+      "unassessed": "Use N/A if no defensible event-specific estimate is recorded; N/A is not zero. Do not infer historical probabilities from elapsed time, code/test counts, favorable pilots or checklist completion.",
+      "range_rule": "A probability range extending below80% does not establish the minimum.",
+      "sources": [
+        {
+          "path": "P3_SEARCH_01.md",
+          "locator": "6. Promotion to rigorous confirmation"
+        },
+        {
+          "path": "../RESEARCH_PROTOCOL.md",
+          "locator": "Promotion/readiness requirements"
+        }
+      ]
+    }
   },
   "time_reconstruction": "For s01-s03, apply original dispositions by segment index or exact same-runtime start/end identifiers, sum closed effective D/L/E through the recorded boundary, add prior cycle research, then subtract the previous row cumulative. For s05-s06, use closed effective actuals with their full/partial exclusions. The abandoned s04 row contributes zero.",
   "total_research_ns": 26254006939255,
@@ -65,7 +152,85 @@
           "path": "s01/compare01.json",
           "locator": "small_checks"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s01_cp01",
+          "value": 6,
+          "units": "families",
+          "previous_comparable_row": null,
+          "absolute_delta": 6,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s01/checkpoint.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": "zero before C001"
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s01/checkpoint.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s02_cp01",
@@ -111,7 +276,85 @@
           "path": "s02/revision01.json",
           "locator": "Nine 97-request streams, five controllers, two passes"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s02_cp01",
+          "value": 7,
+          "units": "families",
+          "previous_comparable_row": "s01_cp01",
+          "absolute_delta": 1,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s02/checkpoint.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s02/checkpoint.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s02_cp02",
@@ -169,7 +412,85 @@
           "path": "s02/sampling02.json",
           "locator": "rows: direct.queries and guided_mixture.queries"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s02_cp02",
+          "value": 8,
+          "units": "families",
+          "previous_comparable_row": "s02_cp01",
+          "absolute_delta": 1,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s02/cp02.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s02/cp02.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s02_cp03",
@@ -211,7 +532,85 @@
           "path": "s02/transport01.json",
           "locator": "checks"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s02_cp03",
+          "value": 8,
+          "units": "families",
+          "previous_comparable_row": "s02_cp02",
+          "absolute_delta": 0,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s02/cp03.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s02/cp03.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s02_cp04",
@@ -256,7 +655,98 @@
           "path": "s02/margin_edits01.json",
           "locator": "Initial state plus 272 edits"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s02_cp04",
+          "value": 8,
+          "units": "families",
+          "previous_comparable_row": "s02_cp03",
+          "absolute_delta": 0,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s02/cp04.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "variant_id": "transport_only",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s02_cp04",
+          "value": 144,
+          "units": "warranted edit states",
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s02/margin_edits01.json",
+              "sha256": "81b7ce3bad1473595d36da68edbbae1f39dde4b942d98052b01141dff8642acd",
+              "locator": "sum(rows[1:].bounds.refined_warrant)"
+            }
+          ],
+          "denominator": 272,
+          "coverage_percent": 52.94117647058823,
+          "comparability_note": "Published 145/273 includes the initially warranted state. The fixed edited-state metric excludes it."
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "policy not introduced yet",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "policy not introduced yet",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s02/cp04.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s02_tail",
@@ -307,7 +797,126 @@
           "path": "s02/segments.jsonl",
           "locator": "Closed post-cp04 implementation, inspection and derivation intervals"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s02_tail",
+          "value": 8,
+          "units": "families",
+          "previous_comparable_row": "s02_cp04",
+          "absolute_delta": 0,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s02/interruption.json",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "variant_id": "transport_only",
+          "measurement_status": "measured",
+          "observed_in_row": "s02_tail",
+          "value": 144,
+          "units": "warranted edit states",
+          "previous_comparable_row": "s02_cp04",
+          "sources": [
+            {
+              "path": "s02/margin_repair01.json",
+              "sha256": "e88cac43e06d958f1d80ad8b3ef0fd77284533e353529b5afa8f68d947e80df0",
+              "locator": "units[mode=transport_only].warranted_states"
+            }
+          ],
+          "denominator": 272,
+          "coverage_percent": 52.94117647058823,
+          "absolute_delta": 0,
+          "delta_units": "warranted edit states",
+          "coverage_delta_percentage_points": 0.0
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "variant_id": "broad_8_attempts",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s02_tail",
+          "value": 254,
+          "units": "warranted edit states",
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s02/margin_repair01.json",
+              "sha256": "e88cac43e06d958f1d80ad8b3ef0fd77284533e353529b5afa8f68d947e80df0",
+              "locator": "units[mode=broad].warranted_states"
+            }
+          ],
+          "denominator": 272,
+          "coverage_percent": 93.38235294117646,
+          "comparability_note": "First actual measurement of this policy lane; 181 native calls, 156792300 ns new lifecycle cost, shared paid input separate."
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "variant_id": "targeted_8_attempts",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s02_tail",
+          "value": 258,
+          "units": "warranted edit states",
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s02/margin_repair01.json",
+              "sha256": "e88cac43e06d958f1d80ad8b3ef0fd77284533e353529b5afa8f68d947e80df0",
+              "locator": "units[mode=targeted].warranted_states"
+            }
+          ],
+          "denominator": 272,
+          "coverage_percent": 94.8529411764706,
+          "comparability_note": "First actual measurement of this policy lane; 195 native calls, 171498200 ns new lifecycle cost, shared paid input separate."
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "no separately recorded readiness assessment in the credited interrupted tail",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s02/interruption.json",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s03_cp01",
@@ -356,7 +965,85 @@
           "path": "s03/positive_bets.md",
           "locator": "Positive-proof betting construction"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s03_cp01",
+          "value": 10,
+          "units": "families",
+          "previous_comparable_row": "s02_tail",
+          "absolute_delta": 2,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s03/cp01.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s03/cp01.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s03_cp02",
@@ -404,7 +1091,85 @@
           "path": "s03/service_results.md",
           "locator": "Heterogeneous-service cost comparison"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s03_cp02",
+          "value": 11,
+          "units": "families",
+          "previous_comparable_row": "s03_cp01",
+          "absolute_delta": 1,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s03/cp02.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s03/cp02.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s03_cp03",
@@ -451,7 +1216,85 @@
           "path": "s03/policy01.json",
           "locator": "Compiler and skinny-chain checks"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s03_cp03",
+          "value": 12,
+          "units": "families",
+          "previous_comparable_row": "s03_cp02",
+          "absolute_delta": 1,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s03/cp03.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s03/cp03.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s03_cp04",
@@ -502,7 +1345,85 @@
           "path": "s03/sequential_bounds.md",
           "locator": "Complete-cost kernel screen"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s03_cp04",
+          "value": 14,
+          "units": "families",
+          "previous_comparable_row": "s03_cp03",
+          "absolute_delta": 2,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s03/cp04.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s03/cp04.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s03_cp05",
@@ -557,7 +1478,85 @@
           "path": "s03/audit_bets.md",
           "locator": "Paid forecast audit construction"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s03_cp05",
+          "value": 16,
+          "units": "families",
+          "previous_comparable_row": "s03_cp04",
+          "absolute_delta": 2,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s03/cp05.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s03/cp05.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s03_cp06",
@@ -607,7 +1606,85 @@
           "path": "s03/edit_residuals.md",
           "locator": "Signed program-edit residuals"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s03_cp06",
+          "value": 19,
+          "units": "families",
+          "previous_comparable_row": "s03_cp05",
+          "absolute_delta": 3,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s03/cp06.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s03/cp06.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s03_cp07",
@@ -663,7 +1740,85 @@
           "path": "candidates.md",
           "locator": "s03 seventh constructive revision"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s03_cp07",
+          "value": 23,
+          "units": "families",
+          "previous_comparable_row": "s03_cp06",
+          "absolute_delta": 4,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s03/cp07.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s03/cp07.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s03_cp08",
@@ -712,7 +1867,85 @@
           "path": "s03/cp08.md",
           "locator": "Checkpoint results and next acquisition direction"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s03_cp08",
+          "value": 25,
+          "units": "families",
+          "previous_comparable_row": "s03_cp07",
+          "absolute_delta": 2,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s03/cp08.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "not introduced yet",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s03/cp08.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s04_abandoned",
@@ -742,7 +1975,85 @@
           "path": "s04/effective_actuals.json",
           "locator": "session_research_ns = 0; excluded_open_segment = true"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s04_abandoned",
+          "value": 25,
+          "units": "families",
+          "previous_comparable_row": "s03_cp08",
+          "absolute_delta": 0,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s04/effective_actuals.json",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "excluded attempt",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "excluded attempt",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "excluded attempt",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "excluded attempt",
+          "value": null
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "excluded attempt",
+          "value": null
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "measurement_status": "N/A",
+          "reason": "excluded attempt",
+          "value": null
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "not applicable",
+          "reason": "abandoned startup; no candidate assessment",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s04/effective_actuals.json",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s05_cp01",
@@ -800,7 +2111,122 @@
           "path": "s05/regions_bundle_findings.md",
           "locator": "Admitted compact cache"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s05_cp01",
+          "value": 28,
+          "units": "families",
+          "previous_comparable_row": "s04_abandoned",
+          "absolute_delta": 3,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s05/cp01.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "tree_profile",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s05_cp01",
+          "value": 80,
+          "units": "checked outputs",
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s05/repair_stream_results.json",
+              "sha256": "c41e7cc488a9cd0bc0ac67c1acc0a68298370874165c2fb9d873569e10e27970",
+              "locator": "latest requested-tolerance arm.requests: count(status=checked_action)"
+            }
+          ],
+          "denominator": 80,
+          "coverage_percent": 100.0,
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends."
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "tree_profile",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s05_cp01",
+          "value": 61,
+          "units": "requests closed without new logical acquisition",
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s05/repair_stream_results.json",
+              "sha256": "c41e7cc488a9cd0bc0ac67c1acc0a68298370874165c2fb9d873569e10e27970",
+              "locator": "latest requested-tolerance arm.requests: sum(closed_from_cache)"
+            }
+          ],
+          "denominator": 80,
+          "coverage_percent": 76.25,
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends."
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "tree_profile",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s05_cp01",
+          "value": 223,
+          "units": "supplied-weight action-cost units",
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s05/repair_stream_results.json",
+              "sha256": "c41e7cc488a9cd0bc0ac67c1acc0a68298370874165c2fb9d873569e10e27970",
+              "locator": "latest requested-tolerance arm.requests: sum(action_cost)"
+            }
+          ],
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends."
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s05/cp01.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "s06_cp01",
@@ -854,7 +2280,286 @@
           "path": "s06/native_findings.md",
           "locator": "Persistent native service and proof boundary"
         }
-      ]
+      ],
+      "fixed_metrics": {
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s06_cp01",
+          "value": 28,
+          "units": "families",
+          "previous_comparable_row": "s05_cp01",
+          "absolute_delta": 0,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "first-introduced numbered family IDs"
+            },
+            {
+              "path": "s06/cp01.md",
+              "locator": "candidate introductions"
+            }
+          ],
+          "baseline": null
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "measurement_status": "N/A",
+          "reason": "no new measurement on this duty",
+          "value": null
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "native_requested_tolerance_rup",
+          "measurement_status": "measured",
+          "observed_in_row": "s06_cp01",
+          "value": 80,
+          "units": "checked outputs",
+          "previous_comparable_row": "s05_cp01",
+          "sources": [
+            {
+              "path": "s06/rup_stream_results.json",
+              "sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+              "locator": "latest requested-tolerance arm.requests: count(status=checked_action)"
+            }
+          ],
+          "denominator": 80,
+          "coverage_percent": 100.0,
+          "absolute_delta": 0,
+          "delta_units": "checked outputs",
+          "coverage_delta_percentage_points": 0.0,
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends."
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "native_requested_tolerance_rup",
+          "measurement_status": "measured",
+          "observed_in_row": "s06_cp01",
+          "value": 60,
+          "units": "requests closed without new logical acquisition",
+          "previous_comparable_row": "s05_cp01",
+          "sources": [
+            {
+              "path": "s06/rup_stream_results.json",
+              "sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+              "locator": "latest requested-tolerance arm.requests: sum(closed_from_cache)"
+            }
+          ],
+          "denominator": 80,
+          "coverage_percent": 75.0,
+          "absolute_delta": -1,
+          "delta_units": "requests closed without new logical acquisition",
+          "coverage_delta_percentage_points": -1.25,
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends."
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "native_requested_tolerance_rup",
+          "measurement_status": "measured",
+          "observed_in_row": "s06_cp01",
+          "value": 223,
+          "units": "supplied-weight action-cost units",
+          "previous_comparable_row": "s05_cp01",
+          "sources": [
+            {
+              "path": "s06/rup_stream_results.json",
+              "sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+              "locator": "latest requested-tolerance arm.requests: sum(action_cost)"
+            }
+          ],
+          "absolute_delta": 0,
+          "delta_units": "supplied-weight action-cost units",
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends."
+        },
+        "confirmation_forecast_percent": {
+          "scope_id": "candidate_specific_confirmation_event",
+          "measurement_status": "N/A",
+          "assessment_status": "unassessed",
+          "reason": "readiness explicitly unassessed; no recorded event-specific probability",
+          "value": null,
+          "probability_range_percent": null,
+          "previous_comparable_row": null,
+          "sources": [
+            {
+              "path": "s06/cp01.md",
+              "locator": "readiness/disposition or interruption record"
+            },
+            {
+              "path": "P3_SEARCH_01.md",
+              "locator": "Current state: no readiness probability has been assigned"
+            }
+          ]
+        }
+      }
     }
-  ]
+  ],
+  "previous_table_commit": "fcef141dba4ba2b162a26cbdda283481a746ea27",
+  "metric_policy": {
+    "columns": "One stable metric and policy lane per column; new scopes receive new metric IDs and columns, with N/A in earlier rows.",
+    "deltas": "Change since the latest previous comparable actual measurement, even if intervening rows are N/A. Use count/cost units and percentage points for coverage; retain adverse changes. First measurements have no invented improvement.",
+    "missing": "N/A means not introduced, not applicable, or no new measurement, as specified in the source row. It is not zero and does not imply an old measurement was rerun.",
+    "historical_numbers": "Existing metric_summary, metric_values and metric_sources retain the earlier one-off findings. They are not a common progress score or longitudinal delta series.",
+    "selection": "For the fixed 80-request requested-tolerance series, use the latest completed supported bridge in the recurrence, not the most favorable intermediate result. Preserve intermediate and exact-completion variants separately."
+  },
+  "comparison_scopes": {
+    "margin_edits_272_v1": {
+      "source": {
+        "path": "s02/margin_edits01.json",
+        "sha256": "81b7ce3bad1473595d36da68edbbae1f39dde4b942d98052b01141dff8642acd",
+        "locator": "rows[1:].bounds.refined_warrant"
+      },
+      "repair": {
+        "path": "s02/margin_repair01.json",
+        "sha256": "e88cac43e06d958f1d80ad8b3ef0fd77284533e353529b5afa8f68d947e80df0",
+        "locator": "input_sha256; units[].rows[].after.refined_warrant"
+      },
+      "binding": "The repair result input_sha256 equals the exact original edit-result SHA-256. All repair lanes share the same ordered (version,index,literal) trace.",
+      "initial_state_excluded": true,
+      "policy_budget_note": "Transport has zero new repair calls; broad and targeted permit up to eight attempts per edit. Cross-policy coverage gains are capability/cost tradeoffs, not equal-budget recurrence improvements."
+    },
+    "repair_stream_80_p6_t1_v1": {
+      "ordered_request_count": 80,
+      "source_rows": 16,
+      "weight_recipes": 5,
+      "replacement_price": 6,
+      "regret_tolerance": 1,
+      "signature_fields": [
+        "request",
+        "row",
+        "recipe",
+        "weights",
+        "price",
+        "tolerance"
+      ],
+      "signature_encoding": "UTF-8 JSON array of request dictionaries restricted to signature_fields, sort_keys=True, separators=(comma,colon)",
+      "signature_sha256": "b4284f4afef39378c31556a14bcc03e63b7b3deae77034cc436a8f1c9ff7cf3d",
+      "verified_sources": [
+        {
+          "path": "s05/repair_stream_results.json",
+          "sha256": "c41e7cc488a9cd0bc0ac67c1acc0a68298370874165c2fb9d873569e10e27970",
+          "locator": "arms[].requests"
+        },
+        {
+          "path": "s06/native_stream_results.json",
+          "sha256": "0515e63af72040b1c816497b5dc563b173ada4b16e492efd07e38e70ead55c9a",
+          "locator": "arms[].requests"
+        },
+        {
+          "path": "s06/rup_stream_results.json",
+          "sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+          "locator": "arms[].requests"
+        }
+      ],
+      "comparability": "The requested-tolerance lanes share every ordered request tuple. Backend and internal purchase composition change, so solver-call and total-tariff deltas are not compared. Each arm retains its own paid results.",
+      "intermediate_s06": {
+        "source": "s06/native_stream_results.json",
+        "variant_id": "native_requested_tolerance_branching",
+        "checked_outputs": 80,
+        "cache_closures": 61,
+        "action_cost": 223
+      },
+      "latest_s06": {
+        "source": "s06/rup_stream_results.json",
+        "variant_id": "native_requested_tolerance_rup",
+        "checked_outputs": 80,
+        "cache_closures": 60,
+        "action_cost": 223
+      }
+    }
+  },
+  "current_readiness_assessment": {
+    "prepared_by": "ChatGPT (GPT-6 Astra Pro)",
+    "assessment_utc": "2026-10-12T19:20:46.656696+00:00",
+    "basis_checkpoint": "s06/cp01.md",
+    "classification": "new administrative assessment of the existing research state; not a historical forecast or new recurrence",
+    "research_credit_ns": 0,
+    "candidate_direction": [
+      "S26",
+      "S27",
+      "S28"
+    ],
+    "confirmation_forecast_percent": null,
+    "forecast_status": "unassessed; a specified material-positive event and candidate-specific plan are still needed",
+    "promotion_status": "remain in discovery",
+    "evidence_elements": [
+      {
+        "element": "candidate/version, material claim, domain, threshold and exact verification event",
+        "status": "open",
+        "sources": [
+          "s06/cp01.md",
+          "P3_SEARCH_01.md"
+        ]
+      },
+      {
+        "element": "reconstructable mechanism",
+        "status": "available",
+        "sources": [
+          "s06/native_findings.md",
+          "s06/source_anchor.md"
+        ]
+      },
+      {
+        "element": "successful inexpensive developmental checks",
+        "status": "available",
+        "sources": [
+          "s06/native_findings.md",
+          "s06/rup_findings.md",
+          "s06/joint_findings.md"
+        ]
+      },
+      {
+        "element": "credible material benefit",
+        "status": "open",
+        "sources": [
+          "candidates.md",
+          "s06/joint_findings.md"
+        ]
+      },
+      {
+        "element": "strongest comparison and complete relevant cost contract",
+        "status": "partial",
+        "sources": [
+          "s06/native_findings.md",
+          "s06/joint_findings.md"
+        ]
+      },
+      {
+        "element": "explicit remaining risks and exposure",
+        "status": "available",
+        "sources": [
+          "s06/source_anchor_review.md",
+          "candidates.md"
+        ]
+      },
+      {
+        "element": "feasible candidate-specific rigorous confirmation plan",
+        "status": "open",
+        "sources": [
+          "s06/cp01.md",
+          "CONTINUE.md"
+        ]
+      }
+    ],
+    "evidence_tally": {
+      "available": 3,
+      "partial": 1,
+      "open": 3,
+      "total": 7
+    },
+    "tally_limit": "These unequal necessary conditions do not define a success probability, percent readiness or percent work remaining. This is a present-state evidence tally only; do not backfill it into past recurrences.",
+    "forecasting_track_record": "No relevant calibrated event-specific forecasting track record is documented in the discovery records."
+  }
 }
