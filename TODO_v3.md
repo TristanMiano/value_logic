@@ -519,18 +519,22 @@ confirmation plan. An adverse confirmation returns the objective to discovery.
   forecast meeting the intended 80% minimum, with 90% preferred. An unassessed
   forecast leaves the candidate in discovery. Artifact: evolving derivations
   and candidate records under `v3/discovery/`, linked from the program.
-  **At every recurrence round, update the [C001 progress table](v3/discovery/recurrences.md):**
-  one row with effective research minutes, cumulative minutes (both rounded
-  from exact actuals), fixed columns for source-backed quantitative metrics,
-  and a one-to-three-sentence description. Use N/A for metrics not introduced,
-  inapplicable or not newly measured. For repeated comparable measurements,
-  show change since the last comparable result, including zero or negative
-  change; keep different duties and policy budgets in separate columns.
-  Include the event-specific promotion forecast (80% intended minimum,
-  90% preferred), or N/A/unassessed with its main blocker. Do not invent
-  historical probabilities or convert prerequisite counts into success odds.
-  Carry the table and this requirement into each checkpoint and handoff;
-  documentation adds no research credit.
+  **At every recurrence round, append to the same single chronological
+  [C001 progress table](v3/discovery/recurrences.md)** and update its
+  [exact source](v3/discovery/recurrences.json). Keep exactly one table in that
+  document, with all historical rows and the latest round last. Each row gives
+  effective and cumulative research minutes (rounded independently from exact
+  actuals), several source-backed metric columns, Promotion forecast and a
+  one-to-three-sentence description. For repeated comparable measurements,
+  show changes including zero or adverse results; keep different duties and
+  policy budgets explicit. Carry unremeasured relevant values with their source
+  date and age. Use N/A only when not introduced, inapplicable or unavailable.
+  Reassess the event-specific promotion forecast numerically every round,
+  allowing broad uncertainty (80% intended minimum, 90% preferred). Preserve
+  original historical probabilities; do not convert prerequisite counts into
+  success odds. Put further detail in prose or linked notes, and check that the
+  table's final row contains the latest measurements and forecast. Carry this
+  requirement into each checkpoint and handoff; documentation adds no research credit.
 
 - [ ] **P3-11 — rigorous confirmation, adversarial reconstruction and contribution review. Research90 minimum; deferred.**
 

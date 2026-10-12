@@ -3043,6 +3043,7 @@
   ],
   "previous_table_commit": "e4700e17fc6fa4064b57fbc6ae616d9bdfdd10ba",
   "metric_policy": {
+    "layout": "Exactly one chronological Markdown table containing every recorded recurrence; append each future row to it. The final row must contain the latest measurements and Promotion forecast. Additional detail belongs in prose or linked evidence, not separate tables.",
     "authorization": "The author requires useful quantitative columns and a numerical promotion forecast at each recurrence; this overrides the older prospective N/A instruction, preserving history.",
     "columns": "Keep several useful active metrics and Promotion forecast; add/replace/retire metrics with explicit definitions and scopes, retaining historical series.",
     "deltas": "Use changes from the latest actual comparable measurement; first entries and carries have null deltas. Within-hour changes are not recurrence changes. Preserve adverse or zero actual changes.",
@@ -4538,5 +4539,112 @@
         }
       ]
     }
-  ]
+  ],
+  "rendered_table": {
+    "path": "recurrences.md",
+    "table_count": 1,
+    "row_ids": [
+      "s01_cp01",
+      "s02_cp01",
+      "s02_cp02",
+      "s02_cp03",
+      "s02_cp04",
+      "s02_tail",
+      "s03_cp01",
+      "s03_cp02",
+      "s03_cp03",
+      "s03_cp04",
+      "s03_cp05",
+      "s03_cp06",
+      "s03_cp07",
+      "s03_cp08",
+      "s04_abandoned",
+      "s05_cp01",
+      "s06_cp01",
+      "s07_cp01"
+    ],
+    "columns": [
+      {
+        "field": "checkpoint",
+        "label": "Recurrence / recorded boundary"
+      },
+      {
+        "field": "research_minutes_rounded",
+        "label": "Research min"
+      },
+      {
+        "field": "cumulative_minutes_rounded",
+        "label": "Cumulative min"
+      },
+      {
+        "field": "families_total",
+        "label": "Families (Δ)"
+      },
+      {
+        "field": "edit_transport_warrants",
+        "label": "272 edits: transport warrants"
+      },
+      {
+        "field": "edit_broad_warrants",
+        "label": "272 edits: broad-repair warrants"
+      },
+      {
+        "field": "edit_targeted_warrants",
+        "label": "272 edits: targeted-repair warrants"
+      },
+      {
+        "field": "repair_checked_outputs",
+        "label": "80 requests: checked outputs"
+      },
+      {
+        "field": "repair_cache_closures",
+        "label": "80 requests: cache closures"
+      },
+      {
+        "field": "repair_action_cost",
+        "label": "80 requests: action-cost sum"
+      },
+      {
+        "field": "joint16_checked_outputs",
+        "label": "S28: checked outputs / 16"
+      },
+      {
+        "field": "joint16_complete_plan_closures",
+        "label": "S28: complete-plan closures / 11"
+      },
+      {
+        "field": "joint16_quotation_units",
+        "label": "S28: quotation units"
+      },
+      {
+        "field": "joint16_named_ratio_audit_first",
+        "label": "S28: named bill / audit-first"
+      },
+      {
+        "field": "f01_demonstrated_cost_regions",
+        "label": "F01: ≥10% full-cost regions"
+      },
+      {
+        "field": "confirmation_forecast_percent",
+        "label": "Promotion forecast (80% minimum)"
+      },
+      {
+        "field": "description",
+        "label": "What changed"
+      }
+    ],
+    "latest_row_id": "s07_cp01",
+    "historical_display": "An em dash renders historical N/A metric values; Not assessed then renders the original unassessed probabilities. No historical values or probabilities are changed.",
+    "scope_rule": "The S28 16-request metrics are separate from the historical 80-request duty. Within-hour development and forecast changes are identified as such.",
+    "detail_location": "Prose in recurrences.md and existing linked source/checkpoint files; no additional Markdown tables in recurrences.md."
+  },
+  "active_row_ids_semantics": "Rows with measurements in the current active comparison scope; this is not a filter for the chronological rendered table, which includes every row.",
+  "presentation_update": {
+    "date_utc": "2026-10-12",
+    "contributor": "ChatGPT (GPT-6 Astra Pro)",
+    "source_commit": "5b1654058fc6bf9e4981063085a29f1bb1b158b5",
+    "reason": "Author requested repair of the split dashboard/history presentation into one continuously updated table.",
+    "research_credit_ns": 0,
+    "preserved": "All 18 original row objects, all measurements, all forecast assessments, clocks and scientific source records remain unchanged."
+  }
 }

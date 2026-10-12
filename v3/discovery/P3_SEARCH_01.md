@@ -210,8 +210,9 @@ Record an evidence-backed subjective probability or justified range. The
 intended minimum is **80%**, with **90% preferred**; a range extending
 below 80% is not evidence of meeting the minimum. Also record the basis,
 sensitivity to key assumptions and whether any relevant forecasting track
-record exists. **Unassessed** is valid and keeps the candidate in discovery.
-Neither a checklist, favorable pilot nor elapsed time mechanically assigns a
+record exists. An unassessed candidate remains in discovery; for the active
+recurrence, §7 requires a numerical reassessment of the specified event every
+round, permitting a broad range. Neither a checklist, favorable pilot nor elapsed time mechanically assigns a
 percentage. Preserve prospective forecasts and resolved outcomes so later
 confidence can be assessed against the actual record.
 
@@ -233,17 +234,20 @@ an explicit disposition.
 ## 7. Checkpoint report and current state
 
 **Recurring reporting requirement — author direction, October 12, 2026:**
-update [the recurrence table](recurrences.md) and its
-[exact source record](recurrences.json) at every recurrence round and handoff.
-Use one row per requested increment; the reconstructed older history uses
+append to **the same single chronological [recurrence table](recurrences.md)**
+and update its [exact source record](recurrences.json) at every round and
+handoff. Keep exactly one table in that document, with every historical row
+and the latest recurrence as its final row; place further detail in prose or
+linked notes. Use one row per requested increment; the reconstructed older history uses
 recorded checkpoint increments, with credited interrupted tails and abandoned
 attempts distinguished. Report engaged D+L+E minutes and cumulative minutes,
 each rounded independently from exact effective nanoseconds. Reuse a stable
 column for each quantitative metric and policy lane, with its units,
-denominator, duty and sources. Use **N/A** when a metric was not introduced,
-does not apply or was not newly measured; record which reason applies in the
-source record. For an actual comparable measurement, report the change since
-the last comparable measurement, even across intervening N/A rows. Show zero
+denominator, duty and sources. Carry an unremeasured relevant metric's latest
+value with its original observation date, source and age, explicitly marked
+carried. Use **N/A** only when not introduced, inapplicable or unavailable,
+with its reason in the source record. For an actual comparable measurement,
+report the change since the last comparable measurement. Show zero
 and adverse changes, use percentage points for coverage, and mark a first
 measurement without inventing an improvement. Give a new duty or useful metric
 its own column, with N/A in earlier rows; do not rerun workloads just to fill
@@ -257,12 +261,13 @@ this table. Table maintenance earns no research credit.
 **Promotion-readiness metric — additional author direction, October 12, 2026:**
 include a fixed column for the §6 event-specific subjective confirmation
 probability or justified range, aiming toward the intended 80% minimum and
-90% preference. Briefly revisit the evidence each round. Keep N/A/unassessed
-when no defensible estimate exists; do not invent historical percentages.
+90% preference. Reassess it numerically every round, permitting broad
+uncertainty. Preserve historical unassessed probabilities without inventing
+retrospective percentages. The final table row must show the latest assessment.
 Attach the candidate version, material claim, domain, threshold, comparison,
 complete relevant costs and confirmation-plan version to every forecast.
 Report percentage-point changes only for the same event; a changed target
-starts a new series. Explain the main unresolved prerequisite when unassessed.
+starts a new series. Explain the principal evidence and unresolved obstacle.
 An evidence checklist may make blockers visible, but its completion fraction,
 elapsed time and passing tests are not confirmation probabilities.
 

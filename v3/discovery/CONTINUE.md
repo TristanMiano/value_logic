@@ -17,7 +17,7 @@ latest remote/main, recent commits and any newer published continuation branch.
 Bring the authorized checkout up to date without overwriting local work. Read
 `AGENTS.md`, [TODO_v3.md](../../TODO_v3.md), [the research protocol](../RESEARCH_PROTOCOL.md),
 [hourly direction](../decisions/2026-10-12_hourly_handoffs.md),
-[portfolio](candidates.md), [recurrence dashboard](recurrences.md) and the newest
+[portfolio](candidates.md), [recurrence table](recurrences.md) and the newest
 checkpoint. The known current checkpoint is **[s07 cp01](s07/cp01.md)**,
 published on `discovery-hour-20261012-s07`; inspect that branch if main still
 predates it. The base for s07 was main
@@ -145,9 +145,12 @@ their correct import paths. Preserve all old executed bytes and source hashes.
 
 ## Numerical recurrence reporting and promotion decision
 
-The author's latest instruction replaces the old default of leaving current
-cells N/A or every promotion forecast unassessed. **At every recurrence update
-[the dashboard](recurrences.md) and [its exact source](recurrences.json).**
+The author's latest instruction requires **one continuously updated chronological
+table** in [recurrences.md](recurrences.md), with every recorded recurrence and
+the latest round as its final row. **Append to that same table at every recurrence
+and update [its exact source](recurrences.json).** Keep exactly one table in the
+document; put development details and forecast history in prose or linked notes.
+The final row must contain the current metrics and numerical Promotion forecast.
 Keep several useful quantitative metrics and **Promotion forecast**. Add,
 replace or remove other metrics when that makes the decision easier to assess.
 A family count or prerequisite tally is context, not a probability or percentage
@@ -162,8 +165,10 @@ for a genuinely inapplicable or unavailable quantity with a specific reason.
 Use bound contraction, required acquisitions, complete quote cost and decision
 coverage when raw full-identification counts miss the task's progress.
 
-Preserve the seventeen pre-s07 historical rows and unassessed probabilities;
-do not invent retrospective forecasts. s07 starts **F01**: S28-B1 surviving
+Preserve historical measurements and the seventeen pre-s07 unassessed
+probabilities within the same chronological table; do not invent retrospective
+forecasts or split historical and current rows into separate tables.
+s07 starts **F01**: S28-B1 surviving
 verification V1 and establishing at least 10% complete-cost benefit on the
 specified fresh 24-stream domain, against the strongest named equal-interface
 ordinary controls, over the specified robust price interval. The first
