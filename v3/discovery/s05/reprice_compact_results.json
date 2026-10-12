@@ -1,0 +1,6240 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "start_utc": "2026-10-12T15:51:23.901132+00:00",
+  "command": [
+    "v3/discovery/s05/reprice_compact.py"
+  ],
+  "implementation_sha256": "30997d8e845607d057f64592e68caab9e801375a3eb049f14ab5cfd2f6f602c5",
+  "input_result_sha256": "b47c3db2c3589f51416bee4fd06b323c25302870c82ea532734c65c1a814fed1",
+  "input_source_identity": "e80a346e2907fb87d60aae187df46cb11a63972d6cb546ce6415fc41494321e3",
+  "declared_edits": [
+    {
+      "name": "identity",
+      "weights": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "uniform_double",
+      "weights": [
+        2,
+        4,
+        6,
+        2,
+        4,
+        6,
+        2,
+        4
+      ]
+    },
+    {
+      "name": "double_first_half",
+      "weights": [
+        2,
+        4,
+        6,
+        2,
+        2,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "zero_last_half",
+      "weights": [
+        1,
+        2,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rotate_right",
+      "weights": [
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1
+      ]
+    }
+  ],
+  "new_solver_calls": 0,
+  "new_optimum_diagnostics": 0,
+  "tariff": "One unit per named operation. Original admissions, witness checks and proof checks are inherited/reproduced in full. New reductions charge each pair read, AND/equality, decision and profile word. Each LSB node charges compilation, three instruction words and a workspace cell; each edit charges seven units per node plus zero initialization. Selection reads/comparisons and price reports are charged. Original raw bills are preserved. A strengthened scalar control receives witness reduction, its own shared DAG and once-per-vector delta/ratio computation. JSON, hashing, Python bookkeeping and diagnostic report serialization are infrastructure, as in the original service tariff; units are not CPU instructions or bytes.",
+  "cases": [
+    {
+      "name": "identity",
+      "weights": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2
+      ],
+      "rows": {
+        "compact_tree": [
+          {
+            "row": 0,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 1,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 10,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "lower": 1,
+            "upper": 2,
+            "selected_witness": 65,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 1,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "lower": 3,
+            "upper": 4,
+            "selected_witness": 200,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "lower": 1,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 8,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 32,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "lower": 5,
+            "upper": 5,
+            "selected_witness": 132,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 5,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 5,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "lower": 6,
+            "upper": 7,
+            "selected_witness": 99,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 7,
+                "regret_bound": 1
+              }
+            ]
+          }
+        ],
+        "compact_scalar_ratio": [
+          {
+            "row": 0,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 1,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 10,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "lower": 1,
+            "upper": 2,
+            "selected_witness": 65,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 1,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "lower": 3,
+            "upper": 4,
+            "selected_witness": 200,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "lower": 1,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 8,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 32,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "lower": 5,
+            "upper": 5,
+            "selected_witness": 132,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 5,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 5,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "lower": 6,
+            "upper": 7,
+            "selected_witness": 99,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 7,
+                "regret_bound": 1
+              }
+            ]
+          }
+        ]
+      },
+      "incremental_units": {
+        "raw_tree": 2283,
+        "original_scalar_ratio": 1163,
+        "compact_tree": 752,
+        "compact_scalar_ratio": 535
+      },
+      "cumulative_units": {
+        "raw_tree": 10258,
+        "original_scalar_ratio": 5537,
+        "compact_tree": 14670,
+        "compact_scalar_ratio": 5768
+      }
+    },
+    {
+      "name": "uniform_double",
+      "weights": [
+        2,
+        4,
+        6,
+        2,
+        4,
+        6,
+        2,
+        4
+      ],
+      "rows": {
+        "compact_tree": [
+          {
+            "row": 0,
+            "lower": 4,
+            "upper": 4,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 1,
+            "lower": 4,
+            "upper": 6,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "lower": 4,
+            "upper": 6,
+            "selected_witness": 10,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "lower": 2,
+            "upper": 4,
+            "selected_witness": 65,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "lower": 0,
+            "upper": 2,
+            "selected_witness": 1,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "lower": 4,
+            "upper": 4,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "lower": 4,
+            "upper": 4,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "lower": 4,
+            "upper": 6,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "lower": 6,
+            "upper": 8,
+            "selected_witness": 200,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 8,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "lower": 2,
+            "upper": 4,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "lower": 0,
+            "upper": 2,
+            "selected_witness": 8,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "lower": 4,
+            "upper": 6,
+            "selected_witness": 32,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "lower": 4,
+            "upper": 4,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "lower": 10,
+            "upper": 10,
+            "selected_witness": 132,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 9,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "lower": 4,
+            "upper": 6,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "lower": 12,
+            "upper": 14,
+            "selected_witness": 99,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 9,
+                "regret_bound": 0
+              }
+            ]
+          }
+        ],
+        "compact_scalar_ratio": [
+          {
+            "row": 0,
+            "lower": 4,
+            "upper": 4,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 1,
+            "lower": 4,
+            "upper": 6,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "lower": 4,
+            "upper": 6,
+            "selected_witness": 10,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "lower": 2,
+            "upper": 4,
+            "selected_witness": 65,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "lower": 0,
+            "upper": 2,
+            "selected_witness": 1,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "lower": 4,
+            "upper": 4,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "lower": 4,
+            "upper": 4,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "lower": 4,
+            "upper": 6,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "lower": 6,
+            "upper": 8,
+            "selected_witness": 200,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 8,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "lower": 2,
+            "upper": 4,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "lower": 0,
+            "upper": 2,
+            "selected_witness": 8,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "lower": 4,
+            "upper": 6,
+            "selected_witness": 32,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "lower": 4,
+            "upper": 4,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "lower": 10,
+            "upper": 10,
+            "selected_witness": 132,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 9,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "lower": 4,
+            "upper": 6,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "lower": 12,
+            "upper": 14,
+            "selected_witness": 99,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 9,
+                "regret_bound": 0
+              }
+            ]
+          }
+        ]
+      },
+      "incremental_units": {
+        "raw_tree": 2283,
+        "original_scalar_ratio": 1163,
+        "compact_tree": 752,
+        "compact_scalar_ratio": 535
+      },
+      "cumulative_units": {
+        "raw_tree": 12541,
+        "original_scalar_ratio": 6700,
+        "compact_tree": 15422,
+        "compact_scalar_ratio": 6303
+      }
+    },
+    {
+      "name": "double_first_half",
+      "weights": [
+        2,
+        4,
+        6,
+        2,
+        2,
+        3,
+        1,
+        2
+      ],
+      "rows": {
+        "compact_tree": [
+          {
+            "row": 0,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 1,
+            "lower": 2,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "lower": 4,
+            "upper": 6,
+            "selected_witness": 10,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "lower": 1,
+            "upper": 3,
+            "selected_witness": 65,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "lower": 0,
+            "upper": 2,
+            "selected_witness": 1,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "lower": 2,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "lower": 4,
+            "upper": 5,
+            "selected_witness": 200,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 5,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 5,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "lower": 1,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "lower": 0,
+            "upper": 2,
+            "selected_witness": 8,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "lower": 3,
+            "upper": 3,
+            "selected_witness": 32,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "lower": 5,
+            "upper": 8,
+            "selected_witness": 132,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 8,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "lower": 4,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "lower": 9,
+            "upper": 10,
+            "selected_witness": 99,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 9,
+                "regret_bound": 0
+              }
+            ]
+          }
+        ],
+        "compact_scalar_ratio": [
+          {
+            "row": 0,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 1,
+            "lower": 2,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "lower": 2,
+            "upper": 6,
+            "selected_witness": 10,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 4
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 6,
+                "regret_bound": 4
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "lower": 1,
+            "upper": 3,
+            "selected_witness": 65,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "lower": 0,
+            "upper": 2,
+            "selected_witness": 1,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "lower": 2,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "lower": 3,
+            "upper": 5,
+            "selected_witness": 200,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 5,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 5,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "lower": 1,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "lower": 0,
+            "upper": 2,
+            "selected_witness": 8,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 32,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "lower": 2,
+            "upper": 2,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "lower": 5,
+            "upper": 8,
+            "selected_witness": 132,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 8,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "lower": 2,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "lower": 6,
+            "upper": 10,
+            "selected_witness": 99,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 9,
+                "regret_bound": 3
+              }
+            ]
+          }
+        ]
+      },
+      "incremental_units": {
+        "raw_tree": 2283,
+        "original_scalar_ratio": 1163,
+        "compact_tree": 752,
+        "compact_scalar_ratio": 535
+      },
+      "cumulative_units": {
+        "raw_tree": 14824,
+        "original_scalar_ratio": 7863,
+        "compact_tree": 16174,
+        "compact_scalar_ratio": 6838
+      }
+    },
+    {
+      "name": "zero_last_half",
+      "weights": [
+        1,
+        2,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rows": {
+        "compact_tree": [
+          {
+            "row": 0,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 1,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "lower": 2,
+            "upper": 3,
+            "selected_witness": 10,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 65,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 1,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 200,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 8,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 32,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "lower": 0,
+            "upper": 3,
+            "selected_witness": 132,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "lower": 3,
+            "upper": 3,
+            "selected_witness": 99,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              }
+            ]
+          }
+        ],
+        "compact_scalar_ratio": [
+          {
+            "row": 0,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 1,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "lower": 0,
+            "upper": 3,
+            "selected_witness": 10,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 65,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 1,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 200,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 8,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 32,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "lower": 0,
+            "upper": 0,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 0,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "lower": 0,
+            "upper": 3,
+            "selected_witness": 132,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "lower": 0,
+            "upper": 1,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "lower": 0,
+            "upper": 3,
+            "selected_witness": 99,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              }
+            ]
+          }
+        ]
+      },
+      "incremental_units": {
+        "raw_tree": 2283,
+        "original_scalar_ratio": 1163,
+        "compact_tree": 752,
+        "compact_scalar_ratio": 535
+      },
+      "cumulative_units": {
+        "raw_tree": 17107,
+        "original_scalar_ratio": 9026,
+        "compact_tree": 16926,
+        "compact_scalar_ratio": 7373
+      }
+    },
+    {
+      "name": "rotate_right",
+      "weights": [
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1
+      ],
+      "rows": {
+        "compact_tree": [
+          {
+            "row": 0,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 1,
+            "lower": 1,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "lower": 1,
+            "upper": 4,
+            "selected_witness": 10,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "lower": 1,
+            "upper": 5,
+            "selected_witness": 65,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 5,
+                "regret_bound": 4
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 5,
+                "regret_bound": 4
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "lower": 0,
+            "upper": 2,
+            "selected_witness": 1,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "lower": 1,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "lower": 2,
+            "upper": 7,
+            "selected_witness": 200,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 4
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 7,
+                "regret_bound": 5
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "lower": 0,
+            "upper": 3,
+            "selected_witness": 8,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "lower": 1,
+            "upper": 2,
+            "selected_witness": 32,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "lower": 3,
+            "upper": 3,
+            "selected_witness": 132,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "lower": 1,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "lower": 4,
+            "upper": 8,
+            "selected_witness": 99,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 8,
+                "regret_bound": 4
+              }
+            ]
+          }
+        ],
+        "compact_scalar_ratio": [
+          {
+            "row": 0,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 1,
+            "lower": 1,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "lower": 1,
+            "upper": 4,
+            "selected_witness": 10,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "lower": 1,
+            "upper": 5,
+            "selected_witness": 65,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 5,
+                "regret_bound": 4
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 5,
+                "regret_bound": 4
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "lower": 0,
+            "upper": 2,
+            "selected_witness": 1,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 2
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 128,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "lower": 1,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "lower": 2,
+            "upper": 7,
+            "selected_witness": 200,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 4
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 7,
+                "regret_bound": 5
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "lower": 0,
+            "upper": 3,
+            "selected_witness": 8,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "lower": 1,
+            "upper": 2,
+            "selected_witness": 32,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 2,
+                "regret_bound": 1
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "lower": 1,
+            "upper": 1,
+            "selected_witness": 16,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 1,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "lower": 3,
+            "upper": 3,
+            "selected_witness": 132,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "lower": 1,
+            "upper": 4,
+            "selected_witness": 24,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 2
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 4,
+                "regret_bound": 3
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "lower": 3,
+            "upper": 8,
+            "selected_witness": 99,
+            "prices": [
+              {
+                "price": 3,
+                "retained_action_cost": 3,
+                "regret_bound": 0
+              },
+              {
+                "price": 6,
+                "retained_action_cost": 6,
+                "regret_bound": 3
+              },
+              {
+                "price": 9,
+                "retained_action_cost": 8,
+                "regret_bound": 5
+              }
+            ]
+          }
+        ]
+      },
+      "incremental_units": {
+        "raw_tree": 2283,
+        "original_scalar_ratio": 1163,
+        "compact_tree": 752,
+        "compact_scalar_ratio": 535
+      },
+      "cumulative_units": {
+        "raw_tree": 19390,
+        "original_scalar_ratio": 10189,
+        "compact_tree": 17678,
+        "compact_scalar_ratio": 7908
+      }
+    }
+  ],
+  "compiled_profiles": [
+    {
+      "row": 0,
+      "source_identity": "0c2bda8ce323830998b0ce246ac6252dd55142a46b23ef5d3f0b5d8777c2af87",
+      "old_lower": 2,
+      "witnesses": [
+        {
+          "model": 128,
+          "violation_mask": 128,
+          "original_cost": 2
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 0,
+          "leaf_masks": [
+            2,
+            4,
+            9,
+            16,
+            65,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "row": 1,
+      "source_identity": "e57dce754c3d82260c732aae94d0144b6a5cfe528e0d7153c5b04262655e63df",
+      "old_lower": 2,
+      "witnesses": [
+        {
+          "model": 24,
+          "violation_mask": 24,
+          "original_cost": 3
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 0,
+          "leaf_masks": [
+            2,
+            4,
+            9,
+            16,
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "row": 2,
+      "source_identity": "33f6249568e4a393a20e74870842224a5ec7038cd0d54a8f2e748a02c546b53d",
+      "old_lower": 2,
+      "witnesses": [
+        {
+          "model": 10,
+          "violation_mask": 10,
+          "original_cost": 3
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 0,
+          "leaf_masks": [
+            2,
+            4,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "row": 3,
+      "source_identity": "1deb05bd4a286e846be5cb20f09c1ac87178d3264cd5d69ccd62adb009c9a8a8",
+      "old_lower": 1,
+      "witnesses": [
+        {
+          "model": 65,
+          "violation_mask": 65,
+          "original_cost": 2
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 0,
+          "leaf_masks": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            64,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "row": 4,
+      "source_identity": "3f27e5bf2bc0fc0526de18aa93db055005a0735176e4ebc1a1b2385b80f54667",
+      "old_lower": 0,
+      "witnesses": [
+        {
+          "model": 1,
+          "violation_mask": 1,
+          "original_cost": 1
+        },
+        {
+          "model": 102,
+          "violation_mask": 102,
+          "original_cost": 9
+        }
+      ],
+      "trees": []
+    },
+    {
+      "row": 5,
+      "source_identity": "f56391cc3fad8dd5f7893cded57aac0a55ad007f8c74a0231ded4238b5d692c2",
+      "old_lower": 2,
+      "witnesses": [
+        {
+          "model": 117,
+          "violation_mask": 117,
+          "original_cost": 10
+        },
+        {
+          "model": 128,
+          "violation_mask": 128,
+          "original_cost": 2
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 0,
+          "leaf_masks": [
+            2,
+            4,
+            9,
+            16,
+            32,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "row": 6,
+      "source_identity": "6957a2fac239fd4ccad0ed9c8377d6baf714488c339240ac59cd36a139d36c0c",
+      "old_lower": 2,
+      "witnesses": [
+        {
+          "model": 16,
+          "violation_mask": 16,
+          "original_cost": 2
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 0,
+          "leaf_masks": [
+            2,
+            4,
+            9,
+            16,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "row": 7,
+      "source_identity": "81aa30de402cc589ccf8705222f099869b4f28bd666ea769a4c9255cf6b72d78",
+      "old_lower": 2,
+      "witnesses": [
+        {
+          "model": 24,
+          "violation_mask": 24,
+          "original_cost": 3
+        },
+        {
+          "model": 83,
+          "violation_mask": 83,
+          "original_cost": 6
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 0,
+          "leaf_masks": [
+            2,
+            4,
+            9,
+            16,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "row": 8,
+      "source_identity": "16db1872c8d5ffa9270143966d7e540750059defb0dd0f1b6b62e08ce28a90c0",
+      "old_lower": 3,
+      "witnesses": [
+        {
+          "model": 155,
+          "violation_mask": 155,
+          "original_cost": 8
+        },
+        {
+          "model": 200,
+          "violation_mask": 200,
+          "original_cost": 4
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 1,
+          "leaf_masks": [
+            3,
+            4,
+            10,
+            18,
+            24,
+            66,
+            130,
+            200
+          ]
+        }
+      ]
+    },
+    {
+      "row": 9,
+      "source_identity": "56c8cd907115db4f8f0546811f467172c37aa2bd4e7cde0c185784ce606f6af4",
+      "old_lower": 1,
+      "witnesses": [
+        {
+          "model": 16,
+          "violation_mask": 16,
+          "original_cost": 2
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 0,
+          "leaf_masks": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            64
+          ]
+        }
+      ]
+    },
+    {
+      "row": 10,
+      "source_identity": "e3349a832ae99cf5ae320c38c89ed8f66dc72a71abb3c5f7332132a80d73e625",
+      "old_lower": 0,
+      "witnesses": [
+        {
+          "model": 8,
+          "violation_mask": 8,
+          "original_cost": 1
+        },
+        {
+          "model": 193,
+          "violation_mask": 193,
+          "original_cost": 4
+        }
+      ],
+      "trees": []
+    },
+    {
+      "row": 11,
+      "source_identity": "8a33a3fe798398e6cbf8e2690dc2fe1ceb1d422ff59c17438320eb79b8ece0b4",
+      "old_lower": 2,
+      "witnesses": [
+        {
+          "model": 32,
+          "violation_mask": 32,
+          "original_cost": 3
+        },
+        {
+          "model": 133,
+          "violation_mask": 133,
+          "original_cost": 6
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 0,
+          "leaf_masks": [
+            2,
+            4,
+            9,
+            24,
+            32,
+            129
+          ]
+        }
+      ]
+    },
+    {
+      "row": 12,
+      "source_identity": "fad8b85a729cd7ae30406108c3cb434dc7a9f99d827ca9db9e65354c4d41d457",
+      "old_lower": 2,
+      "witnesses": [
+        {
+          "model": 16,
+          "violation_mask": 16,
+          "original_cost": 2
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 0,
+          "leaf_masks": [
+            2,
+            4,
+            9,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "row": 13,
+      "source_identity": "67af919ea1a675011c9a616641037fee0627dff522fd971745a48d3bf1432464",
+      "old_lower": 5,
+      "witnesses": [
+        {
+          "model": 132,
+          "violation_mask": 132,
+          "original_cost": 5
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 1,
+          "leaf_masks": [
+            6,
+            20,
+            34,
+            36,
+            48,
+            132
+          ]
+        }
+      ]
+    },
+    {
+      "row": 14,
+      "source_identity": "59b47f14f8713824b69b66accecfec96cdb4bdb846a4dba57e6a29fc2ed1c5aa",
+      "old_lower": 2,
+      "witnesses": [
+        {
+          "model": 24,
+          "violation_mask": 24,
+          "original_cost": 3
+        },
+        {
+          "model": 71,
+          "violation_mask": 71,
+          "original_cost": 7
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 0,
+          "leaf_masks": [
+            2,
+            4,
+            9,
+            17,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "row": 15,
+      "source_identity": "dba0bf3a43edbade299d35787938f09bc21c668e8208ad73f6dde62e0401d8cf",
+      "old_lower": 6,
+      "witnesses": [
+        {
+          "model": 99,
+          "violation_mask": 99,
+          "original_cost": 7
+        }
+      ],
+      "trees": [
+        {
+          "original_tree_index": 2,
+          "leaf_masks": [
+            7,
+            14,
+            22,
+            35,
+            195
+          ]
+        }
+      ]
+    }
+  ],
+  "reduction_certificates": [
+    {
+      "row": 0,
+      "witness_removals": [
+        {
+          "removed_index": 1,
+          "dominator_index": 0
+        }
+      ],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 3,
+            "dominator_index": 2
+          },
+          {
+            "removed_index": 6,
+            "dominator_index": 5
+          },
+          {
+            "removed_index": 7,
+            "dominator_index": 5
+          },
+          {
+            "removed_index": 10,
+            "dominator_index": 9
+          },
+          {
+            "removed_index": 11,
+            "dominator_index": 9
+          }
+        ]
+      ],
+      "tree_removals": []
+    },
+    {
+      "row": 1,
+      "witness_removals": [
+        {
+          "removed_index": 1,
+          "dominator_index": 0
+        }
+      ],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 3,
+            "dominator_index": 2
+          },
+          {
+            "removed_index": 6,
+            "dominator_index": 5
+          },
+          {
+            "removed_index": 7,
+            "dominator_index": 5
+          }
+        ]
+      ],
+      "tree_removals": []
+    },
+    {
+      "row": 2,
+      "witness_removals": [
+        {
+          "removed_index": 1,
+          "dominator_index": 0
+        }
+      ],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 3,
+            "dominator_index": 2
+          }
+        ]
+      ],
+      "tree_removals": []
+    },
+    {
+      "row": 3,
+      "witness_removals": [],
+      "leaf_removals_by_original_tree": [
+        []
+      ],
+      "tree_removals": []
+    },
+    {
+      "row": 4,
+      "witness_removals": [],
+      "leaf_removals_by_original_tree": [],
+      "tree_removals": []
+    },
+    {
+      "row": 5,
+      "witness_removals": [],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 3,
+            "dominator_index": 2
+          },
+          {
+            "removed_index": 6,
+            "dominator_index": 5
+          },
+          {
+            "removed_index": 8,
+            "dominator_index": 7
+          },
+          {
+            "removed_index": 10,
+            "dominator_index": 9
+          }
+        ]
+      ],
+      "tree_removals": []
+    },
+    {
+      "row": 6,
+      "witness_removals": [
+        {
+          "removed_index": 1,
+          "dominator_index": 0
+        }
+      ],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 3,
+            "dominator_index": 2
+          },
+          {
+            "removed_index": 6,
+            "dominator_index": 5
+          },
+          {
+            "removed_index": 8,
+            "dominator_index": 7
+          },
+          {
+            "removed_index": 9,
+            "dominator_index": 7
+          }
+        ]
+      ],
+      "tree_removals": []
+    },
+    {
+      "row": 7,
+      "witness_removals": [],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 3,
+            "dominator_index": 2
+          },
+          {
+            "removed_index": 6,
+            "dominator_index": 5
+          },
+          {
+            "removed_index": 7,
+            "dominator_index": 5
+          }
+        ]
+      ],
+      "tree_removals": []
+    },
+    {
+      "row": 8,
+      "witness_removals": [],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 4,
+            "dominator_index": 3
+          }
+        ],
+        [
+          {
+            "removed_index": 2,
+            "dominator_index": 1
+          }
+        ]
+      ],
+      "tree_removals": [
+        {
+          "removed_index": 0,
+          "dominator_index": 1
+        }
+      ]
+    },
+    {
+      "row": 9,
+      "witness_removals": [],
+      "leaf_removals_by_original_tree": [
+        []
+      ],
+      "tree_removals": []
+    },
+    {
+      "row": 10,
+      "witness_removals": [],
+      "leaf_removals_by_original_tree": [],
+      "tree_removals": []
+    },
+    {
+      "row": 11,
+      "witness_removals": [],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 3,
+            "dominator_index": 2
+          }
+        ]
+      ],
+      "tree_removals": []
+    },
+    {
+      "row": 12,
+      "witness_removals": [
+        {
+          "removed_index": 1,
+          "dominator_index": 0
+        }
+      ],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 3,
+            "dominator_index": 2
+          },
+          {
+            "removed_index": 6,
+            "dominator_index": 5
+          },
+          {
+            "removed_index": 7,
+            "dominator_index": 5
+          }
+        ]
+      ],
+      "tree_removals": []
+    },
+    {
+      "row": 13,
+      "witness_removals": [
+        {
+          "removed_index": 1,
+          "dominator_index": 0
+        }
+      ],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 3,
+            "dominator_index": 2
+          },
+          {
+            "removed_index": 6,
+            "dominator_index": 5
+          },
+          {
+            "removed_index": 7,
+            "dominator_index": 5
+          },
+          {
+            "removed_index": 9,
+            "dominator_index": 8
+          }
+        ],
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 3,
+            "dominator_index": 2
+          },
+          {
+            "removed_index": 5,
+            "dominator_index": 4
+          },
+          {
+            "removed_index": 7,
+            "dominator_index": 4
+          },
+          {
+            "removed_index": 8,
+            "dominator_index": 4
+          },
+          {
+            "removed_index": 10,
+            "dominator_index": 9
+          },
+          {
+            "removed_index": 12,
+            "dominator_index": 11
+          }
+        ]
+      ],
+      "tree_removals": [
+        {
+          "removed_index": 0,
+          "dominator_index": 1
+        }
+      ]
+    },
+    {
+      "row": 14,
+      "witness_removals": [],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 3,
+            "dominator_index": 2
+          }
+        ]
+      ],
+      "tree_removals": []
+    },
+    {
+      "row": 15,
+      "witness_removals": [],
+      "leaf_removals_by_original_tree": [
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          }
+        ],
+        [
+          {
+            "removed_index": 1,
+            "dominator_index": 0
+          },
+          {
+            "removed_index": 4,
+            "dominator_index": 2
+          }
+        ],
+        [
+          {
+            "removed_index": 4,
+            "dominator_index": 3
+          },
+          {
+            "removed_index": 6,
+            "dominator_index": 5
+          }
+        ]
+      ],
+      "tree_removals": [
+        {
+          "removed_index": 0,
+          "dominator_index": 1
+        },
+        {
+          "removed_index": 1,
+          "dominator_index": 2
+        }
+      ]
+    }
+  ],
+  "dag": {
+    "tree_and_witness": [
+      {
+        "mask": 128,
+        "parent": 0,
+        "weight_index": 7
+      },
+      {
+        "mask": 2,
+        "parent": 0,
+        "weight_index": 1
+      },
+      {
+        "mask": 4,
+        "parent": 0,
+        "weight_index": 2
+      },
+      {
+        "mask": 8,
+        "parent": 0,
+        "weight_index": 3
+      },
+      {
+        "mask": 9,
+        "parent": 8,
+        "weight_index": 0
+      },
+      {
+        "mask": 16,
+        "parent": 0,
+        "weight_index": 4
+      },
+      {
+        "mask": 64,
+        "parent": 0,
+        "weight_index": 6
+      },
+      {
+        "mask": 65,
+        "parent": 64,
+        "weight_index": 0
+      },
+      {
+        "mask": 24,
+        "parent": 16,
+        "weight_index": 3
+      },
+      {
+        "mask": 32,
+        "parent": 0,
+        "weight_index": 5
+      },
+      {
+        "mask": 33,
+        "parent": 32,
+        "weight_index": 0
+      },
+      {
+        "mask": 10,
+        "parent": 8,
+        "weight_index": 1
+      },
+      {
+        "mask": 1,
+        "parent": 0,
+        "weight_index": 0
+      },
+      {
+        "mask": 96,
+        "parent": 64,
+        "weight_index": 5
+      },
+      {
+        "mask": 100,
+        "parent": 96,
+        "weight_index": 2
+      },
+      {
+        "mask": 102,
+        "parent": 100,
+        "weight_index": 1
+      },
+      {
+        "mask": 112,
+        "parent": 96,
+        "weight_index": 4
+      },
+      {
+        "mask": 116,
+        "parent": 112,
+        "weight_index": 2
+      },
+      {
+        "mask": 117,
+        "parent": 116,
+        "weight_index": 0
+      },
+      {
+        "mask": 80,
+        "parent": 64,
+        "weight_index": 4
+      },
+      {
+        "mask": 82,
+        "parent": 80,
+        "weight_index": 1
+      },
+      {
+        "mask": 83,
+        "parent": 82,
+        "weight_index": 0
+      },
+      {
+        "mask": 40,
+        "parent": 32,
+        "weight_index": 3
+      },
+      {
+        "mask": 144,
+        "parent": 128,
+        "weight_index": 4
+      },
+      {
+        "mask": 152,
+        "parent": 144,
+        "weight_index": 3
+      },
+      {
+        "mask": 154,
+        "parent": 152,
+        "weight_index": 1
+      },
+      {
+        "mask": 155,
+        "parent": 154,
+        "weight_index": 0
+      },
+      {
+        "mask": 192,
+        "parent": 128,
+        "weight_index": 6
+      },
+      {
+        "mask": 200,
+        "parent": 192,
+        "weight_index": 3
+      },
+      {
+        "mask": 3,
+        "parent": 2,
+        "weight_index": 0
+      },
+      {
+        "mask": 18,
+        "parent": 16,
+        "weight_index": 1
+      },
+      {
+        "mask": 66,
+        "parent": 64,
+        "weight_index": 1
+      },
+      {
+        "mask": 130,
+        "parent": 128,
+        "weight_index": 1
+      },
+      {
+        "mask": 193,
+        "parent": 192,
+        "weight_index": 0
+      },
+      {
+        "mask": 132,
+        "parent": 128,
+        "weight_index": 2
+      },
+      {
+        "mask": 133,
+        "parent": 132,
+        "weight_index": 0
+      },
+      {
+        "mask": 129,
+        "parent": 128,
+        "weight_index": 0
+      },
+      {
+        "mask": 6,
+        "parent": 4,
+        "weight_index": 1
+      },
+      {
+        "mask": 20,
+        "parent": 16,
+        "weight_index": 2
+      },
+      {
+        "mask": 34,
+        "parent": 32,
+        "weight_index": 1
+      },
+      {
+        "mask": 36,
+        "parent": 32,
+        "weight_index": 2
+      },
+      {
+        "mask": 48,
+        "parent": 32,
+        "weight_index": 4
+      },
+      {
+        "mask": 68,
+        "parent": 64,
+        "weight_index": 2
+      },
+      {
+        "mask": 70,
+        "parent": 68,
+        "weight_index": 1
+      },
+      {
+        "mask": 71,
+        "parent": 70,
+        "weight_index": 0
+      },
+      {
+        "mask": 17,
+        "parent": 16,
+        "weight_index": 0
+      },
+      {
+        "mask": 98,
+        "parent": 96,
+        "weight_index": 1
+      },
+      {
+        "mask": 99,
+        "parent": 98,
+        "weight_index": 0
+      },
+      {
+        "mask": 7,
+        "parent": 6,
+        "weight_index": 0
+      },
+      {
+        "mask": 12,
+        "parent": 8,
+        "weight_index": 2
+      },
+      {
+        "mask": 14,
+        "parent": 12,
+        "weight_index": 1
+      },
+      {
+        "mask": 22,
+        "parent": 20,
+        "weight_index": 1
+      },
+      {
+        "mask": 35,
+        "parent": 34,
+        "weight_index": 0
+      },
+      {
+        "mask": 194,
+        "parent": 192,
+        "weight_index": 1
+      },
+      {
+        "mask": 195,
+        "parent": 194,
+        "weight_index": 0
+      }
+    ],
+    "scalar_witness_only": [
+      {
+        "mask": 128,
+        "parent": 0,
+        "weight_index": 7
+      },
+      {
+        "mask": 16,
+        "parent": 0,
+        "weight_index": 4
+      },
+      {
+        "mask": 24,
+        "parent": 16,
+        "weight_index": 3
+      },
+      {
+        "mask": 8,
+        "parent": 0,
+        "weight_index": 3
+      },
+      {
+        "mask": 10,
+        "parent": 8,
+        "weight_index": 1
+      },
+      {
+        "mask": 64,
+        "parent": 0,
+        "weight_index": 6
+      },
+      {
+        "mask": 65,
+        "parent": 64,
+        "weight_index": 0
+      },
+      {
+        "mask": 1,
+        "parent": 0,
+        "weight_index": 0
+      },
+      {
+        "mask": 96,
+        "parent": 64,
+        "weight_index": 5
+      },
+      {
+        "mask": 100,
+        "parent": 96,
+        "weight_index": 2
+      },
+      {
+        "mask": 102,
+        "parent": 100,
+        "weight_index": 1
+      },
+      {
+        "mask": 112,
+        "parent": 96,
+        "weight_index": 4
+      },
+      {
+        "mask": 116,
+        "parent": 112,
+        "weight_index": 2
+      },
+      {
+        "mask": 117,
+        "parent": 116,
+        "weight_index": 0
+      },
+      {
+        "mask": 80,
+        "parent": 64,
+        "weight_index": 4
+      },
+      {
+        "mask": 82,
+        "parent": 80,
+        "weight_index": 1
+      },
+      {
+        "mask": 83,
+        "parent": 82,
+        "weight_index": 0
+      },
+      {
+        "mask": 144,
+        "parent": 128,
+        "weight_index": 4
+      },
+      {
+        "mask": 152,
+        "parent": 144,
+        "weight_index": 3
+      },
+      {
+        "mask": 154,
+        "parent": 152,
+        "weight_index": 1
+      },
+      {
+        "mask": 155,
+        "parent": 154,
+        "weight_index": 0
+      },
+      {
+        "mask": 192,
+        "parent": 128,
+        "weight_index": 6
+      },
+      {
+        "mask": 200,
+        "parent": 192,
+        "weight_index": 3
+      },
+      {
+        "mask": 193,
+        "parent": 192,
+        "weight_index": 0
+      },
+      {
+        "mask": 32,
+        "parent": 0,
+        "weight_index": 5
+      },
+      {
+        "mask": 132,
+        "parent": 128,
+        "weight_index": 2
+      },
+      {
+        "mask": 133,
+        "parent": 132,
+        "weight_index": 0
+      },
+      {
+        "mask": 68,
+        "parent": 64,
+        "weight_index": 2
+      },
+      {
+        "mask": 70,
+        "parent": 68,
+        "weight_index": 1
+      },
+      {
+        "mask": 71,
+        "parent": 70,
+        "weight_index": 0
+      },
+      {
+        "mask": 98,
+        "parent": 96,
+        "weight_index": 1
+      },
+      {
+        "mask": 99,
+        "parent": 98,
+        "weight_index": 0
+      }
+    ]
+  },
+  "compilation_invoices": {
+    "shared_original_admission": {
+      "total": 4374,
+      "by_category": {
+        "source_admission": 1984,
+        "witness_check": 1445,
+        "witness_compile": 655,
+        "storage": 290
+      },
+      "operations": [
+        {
+          "category": "source_admission",
+          "operation": "checked_old_frontier_receipt",
+          "units": 128
+        },
+        {
+          "category": "source_admission",
+          "operation": "immutable_clause_and_weight_words",
+          "units": 1856
+        },
+        {
+          "category": "storage",
+          "operation": "retained_witness_and_violation_mask",
+          "units": 290
+        },
+        {
+          "category": "witness_check",
+          "operation": "retained_clause_header",
+          "units": 600
+        },
+        {
+          "category": "witness_check",
+          "operation": "retained_literal",
+          "units": 845
+        },
+        {
+          "category": "witness_compile",
+          "operation": "mask_and_original_weight",
+          "units": 162
+        },
+        {
+          "category": "witness_compile",
+          "operation": "objective_violation_pass",
+          "units": 29
+        },
+        {
+          "category": "witness_compile",
+          "operation": "retained_clause_header",
+          "units": 232
+        },
+        {
+          "category": "witness_compile",
+          "operation": "retained_literal",
+          "units": 232
+        }
+      ]
+    },
+    "original_tree_check_and_compile": {
+      "total": 3601,
+      "by_category": {
+        "check": 2282,
+        "tree_compile": 1154,
+        "storage": 165
+      },
+      "operations": [
+        {
+          "category": "check",
+          "operation": "negative_clause_header",
+          "units": 425
+        },
+        {
+          "category": "check",
+          "operation": "negative_literal",
+          "units": 731
+        },
+        {
+          "category": "check",
+          "operation": "negative_proof_node",
+          "units": 582
+        },
+        {
+          "category": "check",
+          "operation": "negative_weight_add",
+          "units": 272
+        },
+        {
+          "category": "check",
+          "operation": "negative_weight_index",
+          "units": 272
+        },
+        {
+          "category": "storage",
+          "operation": "compiled_tree_leaf_masks",
+          "units": 165
+        },
+        {
+          "category": "tree_compile",
+          "operation": "forced_clause_coefficient",
+          "units": 272
+        },
+        {
+          "category": "tree_compile",
+          "operation": "hard_leaf_omitted",
+          "units": 153
+        },
+        {
+          "category": "tree_compile",
+          "operation": "leaf_mask_deduplication",
+          "units": 147
+        },
+        {
+          "category": "tree_compile",
+          "operation": "proof_node_read",
+          "units": 582
+        }
+      ]
+    },
+    "shared_witness_reduction": {
+      "total": 404,
+      "by_category": {
+        "witness_reduction": 174,
+        "storage": 230
+      },
+      "operations": [
+        {
+          "category": "storage",
+          "operation": "compact_witness_words",
+          "units": 230
+        },
+        {
+          "category": "witness_reduction",
+          "operation": "bitwise_and_and_equality",
+          "units": 52
+        },
+        {
+          "category": "witness_reduction",
+          "operation": "candidate_mask_read",
+          "units": 29
+        },
+        {
+          "category": "witness_reduction",
+          "operation": "mask_pair_read",
+          "units": 52
+        },
+        {
+          "category": "witness_reduction",
+          "operation": "reduction_decision_write",
+          "units": 29
+        },
+        {
+          "category": "witness_reduction",
+          "operation": "strict_or_earlier_tie_test",
+          "units": 12
+        }
+      ]
+    },
+    "tree_reduction": {
+      "total": 4577,
+      "by_category": {
+        "leaf_reduction": 4154,
+        "storage": 91,
+        "tree_family_reduction": 332
+      },
+      "operations": [
+        {
+          "category": "leaf_reduction",
+          "operation": "bitwise_and_and_equality",
+          "units": 1876
+        },
+        {
+          "category": "leaf_reduction",
+          "operation": "candidate_mask_read",
+          "units": 147
+        },
+        {
+          "category": "leaf_reduction",
+          "operation": "mask_pair_read",
+          "units": 1876
+        },
+        {
+          "category": "leaf_reduction",
+          "operation": "reduction_decision_write",
+          "units": 147
+        },
+        {
+          "category": "leaf_reduction",
+          "operation": "strict_or_earlier_tie_test",
+          "units": 108
+        },
+        {
+          "category": "storage",
+          "operation": "compact_tree_header_and_masks",
+          "units": 91
+        },
+        {
+          "category": "tree_family_reduction",
+          "operation": "bitwise_and_and_equality",
+          "units": 152
+        },
+        {
+          "category": "tree_family_reduction",
+          "operation": "dominance_and_tie_decision",
+          "units": 18
+        },
+        {
+          "category": "tree_family_reduction",
+          "operation": "mask_pair_read",
+          "units": 152
+        },
+        {
+          "category": "tree_family_reduction",
+          "operation": "relation_bit_write",
+          "units": 10
+        }
+      ]
+    },
+    "tree_dag": {
+      "total": 962,
+      "by_category": {
+        "storage": 222,
+        "dag_compile": 740
+      },
+      "operations": [
+        {
+          "category": "dag_compile",
+          "operation": "demanded_mask_read",
+          "units": 100
+        },
+        {
+          "category": "dag_compile",
+          "operation": "lsb_parent_and_index_arithmetic",
+          "units": 275
+        },
+        {
+          "category": "dag_compile",
+          "operation": "mask_read_and_seen_lookup",
+          "units": 310
+        },
+        {
+          "category": "dag_compile",
+          "operation": "node_registration",
+          "units": 55
+        },
+        {
+          "category": "storage",
+          "operation": "compiled_node_words",
+          "units": 165
+        },
+        {
+          "category": "storage",
+          "operation": "constant_zero_cell",
+          "units": 1
+        },
+        {
+          "category": "storage",
+          "operation": "evaluation_workspace_cells",
+          "units": 56
+        }
+      ]
+    },
+    "scalar_witness_dag": {
+      "total": 455,
+      "by_category": {
+        "storage": 130,
+        "dag_compile": 325
+      },
+      "operations": [
+        {
+          "category": "dag_compile",
+          "operation": "demanded_mask_read",
+          "units": 23
+        },
+        {
+          "category": "dag_compile",
+          "operation": "lsb_parent_and_index_arithmetic",
+          "units": 160
+        },
+        {
+          "category": "dag_compile",
+          "operation": "mask_read_and_seen_lookup",
+          "units": 110
+        },
+        {
+          "category": "dag_compile",
+          "operation": "node_registration",
+          "units": 32
+        },
+        {
+          "category": "storage",
+          "operation": "compiled_node_words",
+          "units": 96
+        },
+        {
+          "category": "storage",
+          "operation": "constant_zero_cell",
+          "units": 1
+        },
+        {
+          "category": "storage",
+          "operation": "evaluation_workspace_cells",
+          "units": 33
+        }
+      ]
+    }
+  },
+  "setup_totals": {
+    "raw_tree": 7975,
+    "original_scalar_ratio": 4374,
+    "compact_tree": 13918,
+    "compact_scalar_ratio": 5233,
+    "compact_tree_increment_from_existing_raw_profiles": 5943,
+    "compact_scalar_increment_from_existing_witness_profiles": 859
+  },
+  "storage": {
+    "scope": "Logical payload under the original witness n+2-word convention, one word per tree header/mask, three per DAG instruction and one zero cell. Excludes unchanged source/receipt archive, common row metadata, Python containers and execution stack. DAG workspace is shown separately. Old profile writes are still charged during migration although raw transient profiles may subsequently be released.",
+    "raw_tree": {
+      "witness_words": 290,
+      "tree_words": 165,
+      "dag_words": 0,
+      "persistent_words": 455,
+      "dag_workspace_cells": 0,
+      "persistent_plus_dag_workspace": 455
+    },
+    "original_scalar_ratio": {
+      "witness_words": 290,
+      "tree_words": 0,
+      "dag_words": 0,
+      "persistent_words": 290,
+      "dag_workspace_cells": 0,
+      "persistent_plus_dag_workspace": 290
+    },
+    "compact_tree": {
+      "witness_words": 230,
+      "tree_words": 91,
+      "dag_words": 166,
+      "persistent_words": 487,
+      "dag_workspace_cells": 56,
+      "persistent_plus_dag_workspace": 543
+    },
+    "compact_scalar_ratio": {
+      "witness_words": 230,
+      "tree_words": 0,
+      "dag_words": 97,
+      "persistent_words": 327,
+      "dag_workspace_cells": 33,
+      "persistent_plus_dag_workspace": 360
+    }
+  },
+  "counts": {
+    "raw_witnesses": 29,
+    "retained_witnesses": 23,
+    "raw_trees": 18,
+    "retained_trees": 14,
+    "raw_leaf_occurrences": 147,
+    "retained_leaf_occurrences": 77,
+    "tree_dag_nonzero_nodes": 55,
+    "scalar_dag_nonzero_nodes": 32
+  },
+  "evaluation_invoices": [
+    {
+      "name": "identity",
+      "tree": {
+        "total": 752,
+        "by_category": {
+          "weight_admission": 8,
+          "dag_evaluation": 386,
+          "witness_selection": 46,
+          "tree_selection": 168,
+          "price_profile": 144
+        },
+        "operations": [
+          {
+            "category": "dag_evaluation",
+            "operation": "instruction_words_read",
+            "units": 165
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "parent_value_and_weight_read",
+            "units": 110
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "sum_add_and_write",
+            "units": 110
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "zero_cell_write",
+            "units": 1
+          },
+          {
+            "category": "price_profile",
+            "operation": "regret_bound",
+            "units": 96
+          },
+          {
+            "category": "price_profile",
+            "operation": "retained_action_cost",
+            "units": 48
+          },
+          {
+            "category": "tree_selection",
+            "operation": "sum_lookup_and_leaf_minimum",
+            "units": 154
+          },
+          {
+            "category": "tree_selection",
+            "operation": "tree_maximum",
+            "units": 14
+          },
+          {
+            "category": "weight_admission",
+            "operation": "new_nonnegative_weight_words",
+            "units": 8
+          },
+          {
+            "category": "witness_selection",
+            "operation": "sum_lookup_and_minimum",
+            "units": 46
+          }
+        ]
+      },
+      "scalar": {
+        "total": 535,
+        "by_category": {
+          "weight_admission": 8,
+          "dag_evaluation": 225,
+          "scalar_global": 32,
+          "witness_selection": 46,
+          "scalar_row": 80,
+          "price_profile": 144
+        },
+        "operations": [
+          {
+            "category": "dag_evaluation",
+            "operation": "instruction_words_read",
+            "units": 96
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "parent_value_and_weight_read",
+            "units": 64
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "sum_add_and_write",
+            "units": 64
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "zero_cell_write",
+            "units": 1
+          },
+          {
+            "category": "price_profile",
+            "operation": "regret_bound",
+            "units": 96
+          },
+          {
+            "category": "price_profile",
+            "operation": "retained_action_cost",
+            "units": 48
+          },
+          {
+            "category": "scalar_global",
+            "operation": "delta_weight_bounds",
+            "units": 16
+          },
+          {
+            "category": "scalar_global",
+            "operation": "ratio_form_and_minimum",
+            "units": 16
+          },
+          {
+            "category": "scalar_row",
+            "operation": "additive_shift_clip_and_compare",
+            "units": 48
+          },
+          {
+            "category": "scalar_row",
+            "operation": "multiply_and_integer_round",
+            "units": 32
+          },
+          {
+            "category": "weight_admission",
+            "operation": "new_nonnegative_weight_words",
+            "units": 8
+          },
+          {
+            "category": "witness_selection",
+            "operation": "sum_lookup_and_minimum",
+            "units": 46
+          }
+        ]
+      }
+    },
+    {
+      "name": "uniform_double",
+      "tree": {
+        "total": 752,
+        "by_category": {
+          "weight_admission": 8,
+          "dag_evaluation": 386,
+          "witness_selection": 46,
+          "tree_selection": 168,
+          "price_profile": 144
+        },
+        "operations": [
+          {
+            "category": "dag_evaluation",
+            "operation": "instruction_words_read",
+            "units": 165
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "parent_value_and_weight_read",
+            "units": 110
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "sum_add_and_write",
+            "units": 110
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "zero_cell_write",
+            "units": 1
+          },
+          {
+            "category": "price_profile",
+            "operation": "regret_bound",
+            "units": 96
+          },
+          {
+            "category": "price_profile",
+            "operation": "retained_action_cost",
+            "units": 48
+          },
+          {
+            "category": "tree_selection",
+            "operation": "sum_lookup_and_leaf_minimum",
+            "units": 154
+          },
+          {
+            "category": "tree_selection",
+            "operation": "tree_maximum",
+            "units": 14
+          },
+          {
+            "category": "weight_admission",
+            "operation": "new_nonnegative_weight_words",
+            "units": 8
+          },
+          {
+            "category": "witness_selection",
+            "operation": "sum_lookup_and_minimum",
+            "units": 46
+          }
+        ]
+      },
+      "scalar": {
+        "total": 535,
+        "by_category": {
+          "weight_admission": 8,
+          "dag_evaluation": 225,
+          "scalar_global": 32,
+          "witness_selection": 46,
+          "scalar_row": 80,
+          "price_profile": 144
+        },
+        "operations": [
+          {
+            "category": "dag_evaluation",
+            "operation": "instruction_words_read",
+            "units": 96
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "parent_value_and_weight_read",
+            "units": 64
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "sum_add_and_write",
+            "units": 64
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "zero_cell_write",
+            "units": 1
+          },
+          {
+            "category": "price_profile",
+            "operation": "regret_bound",
+            "units": 96
+          },
+          {
+            "category": "price_profile",
+            "operation": "retained_action_cost",
+            "units": 48
+          },
+          {
+            "category": "scalar_global",
+            "operation": "delta_weight_bounds",
+            "units": 16
+          },
+          {
+            "category": "scalar_global",
+            "operation": "ratio_form_and_minimum",
+            "units": 16
+          },
+          {
+            "category": "scalar_row",
+            "operation": "additive_shift_clip_and_compare",
+            "units": 48
+          },
+          {
+            "category": "scalar_row",
+            "operation": "multiply_and_integer_round",
+            "units": 32
+          },
+          {
+            "category": "weight_admission",
+            "operation": "new_nonnegative_weight_words",
+            "units": 8
+          },
+          {
+            "category": "witness_selection",
+            "operation": "sum_lookup_and_minimum",
+            "units": 46
+          }
+        ]
+      }
+    },
+    {
+      "name": "double_first_half",
+      "tree": {
+        "total": 752,
+        "by_category": {
+          "weight_admission": 8,
+          "dag_evaluation": 386,
+          "witness_selection": 46,
+          "tree_selection": 168,
+          "price_profile": 144
+        },
+        "operations": [
+          {
+            "category": "dag_evaluation",
+            "operation": "instruction_words_read",
+            "units": 165
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "parent_value_and_weight_read",
+            "units": 110
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "sum_add_and_write",
+            "units": 110
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "zero_cell_write",
+            "units": 1
+          },
+          {
+            "category": "price_profile",
+            "operation": "regret_bound",
+            "units": 96
+          },
+          {
+            "category": "price_profile",
+            "operation": "retained_action_cost",
+            "units": 48
+          },
+          {
+            "category": "tree_selection",
+            "operation": "sum_lookup_and_leaf_minimum",
+            "units": 154
+          },
+          {
+            "category": "tree_selection",
+            "operation": "tree_maximum",
+            "units": 14
+          },
+          {
+            "category": "weight_admission",
+            "operation": "new_nonnegative_weight_words",
+            "units": 8
+          },
+          {
+            "category": "witness_selection",
+            "operation": "sum_lookup_and_minimum",
+            "units": 46
+          }
+        ]
+      },
+      "scalar": {
+        "total": 535,
+        "by_category": {
+          "weight_admission": 8,
+          "dag_evaluation": 225,
+          "scalar_global": 32,
+          "witness_selection": 46,
+          "scalar_row": 80,
+          "price_profile": 144
+        },
+        "operations": [
+          {
+            "category": "dag_evaluation",
+            "operation": "instruction_words_read",
+            "units": 96
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "parent_value_and_weight_read",
+            "units": 64
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "sum_add_and_write",
+            "units": 64
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "zero_cell_write",
+            "units": 1
+          },
+          {
+            "category": "price_profile",
+            "operation": "regret_bound",
+            "units": 96
+          },
+          {
+            "category": "price_profile",
+            "operation": "retained_action_cost",
+            "units": 48
+          },
+          {
+            "category": "scalar_global",
+            "operation": "delta_weight_bounds",
+            "units": 16
+          },
+          {
+            "category": "scalar_global",
+            "operation": "ratio_form_and_minimum",
+            "units": 16
+          },
+          {
+            "category": "scalar_row",
+            "operation": "additive_shift_clip_and_compare",
+            "units": 48
+          },
+          {
+            "category": "scalar_row",
+            "operation": "multiply_and_integer_round",
+            "units": 32
+          },
+          {
+            "category": "weight_admission",
+            "operation": "new_nonnegative_weight_words",
+            "units": 8
+          },
+          {
+            "category": "witness_selection",
+            "operation": "sum_lookup_and_minimum",
+            "units": 46
+          }
+        ]
+      }
+    },
+    {
+      "name": "zero_last_half",
+      "tree": {
+        "total": 752,
+        "by_category": {
+          "weight_admission": 8,
+          "dag_evaluation": 386,
+          "witness_selection": 46,
+          "tree_selection": 168,
+          "price_profile": 144
+        },
+        "operations": [
+          {
+            "category": "dag_evaluation",
+            "operation": "instruction_words_read",
+            "units": 165
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "parent_value_and_weight_read",
+            "units": 110
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "sum_add_and_write",
+            "units": 110
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "zero_cell_write",
+            "units": 1
+          },
+          {
+            "category": "price_profile",
+            "operation": "regret_bound",
+            "units": 96
+          },
+          {
+            "category": "price_profile",
+            "operation": "retained_action_cost",
+            "units": 48
+          },
+          {
+            "category": "tree_selection",
+            "operation": "sum_lookup_and_leaf_minimum",
+            "units": 154
+          },
+          {
+            "category": "tree_selection",
+            "operation": "tree_maximum",
+            "units": 14
+          },
+          {
+            "category": "weight_admission",
+            "operation": "new_nonnegative_weight_words",
+            "units": 8
+          },
+          {
+            "category": "witness_selection",
+            "operation": "sum_lookup_and_minimum",
+            "units": 46
+          }
+        ]
+      },
+      "scalar": {
+        "total": 535,
+        "by_category": {
+          "weight_admission": 8,
+          "dag_evaluation": 225,
+          "scalar_global": 32,
+          "witness_selection": 46,
+          "scalar_row": 80,
+          "price_profile": 144
+        },
+        "operations": [
+          {
+            "category": "dag_evaluation",
+            "operation": "instruction_words_read",
+            "units": 96
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "parent_value_and_weight_read",
+            "units": 64
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "sum_add_and_write",
+            "units": 64
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "zero_cell_write",
+            "units": 1
+          },
+          {
+            "category": "price_profile",
+            "operation": "regret_bound",
+            "units": 96
+          },
+          {
+            "category": "price_profile",
+            "operation": "retained_action_cost",
+            "units": 48
+          },
+          {
+            "category": "scalar_global",
+            "operation": "delta_weight_bounds",
+            "units": 16
+          },
+          {
+            "category": "scalar_global",
+            "operation": "ratio_form_and_minimum",
+            "units": 16
+          },
+          {
+            "category": "scalar_row",
+            "operation": "additive_shift_clip_and_compare",
+            "units": 48
+          },
+          {
+            "category": "scalar_row",
+            "operation": "multiply_and_integer_round",
+            "units": 32
+          },
+          {
+            "category": "weight_admission",
+            "operation": "new_nonnegative_weight_words",
+            "units": 8
+          },
+          {
+            "category": "witness_selection",
+            "operation": "sum_lookup_and_minimum",
+            "units": 46
+          }
+        ]
+      }
+    },
+    {
+      "name": "rotate_right",
+      "tree": {
+        "total": 752,
+        "by_category": {
+          "weight_admission": 8,
+          "dag_evaluation": 386,
+          "witness_selection": 46,
+          "tree_selection": 168,
+          "price_profile": 144
+        },
+        "operations": [
+          {
+            "category": "dag_evaluation",
+            "operation": "instruction_words_read",
+            "units": 165
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "parent_value_and_weight_read",
+            "units": 110
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "sum_add_and_write",
+            "units": 110
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "zero_cell_write",
+            "units": 1
+          },
+          {
+            "category": "price_profile",
+            "operation": "regret_bound",
+            "units": 96
+          },
+          {
+            "category": "price_profile",
+            "operation": "retained_action_cost",
+            "units": 48
+          },
+          {
+            "category": "tree_selection",
+            "operation": "sum_lookup_and_leaf_minimum",
+            "units": 154
+          },
+          {
+            "category": "tree_selection",
+            "operation": "tree_maximum",
+            "units": 14
+          },
+          {
+            "category": "weight_admission",
+            "operation": "new_nonnegative_weight_words",
+            "units": 8
+          },
+          {
+            "category": "witness_selection",
+            "operation": "sum_lookup_and_minimum",
+            "units": 46
+          }
+        ]
+      },
+      "scalar": {
+        "total": 535,
+        "by_category": {
+          "weight_admission": 8,
+          "dag_evaluation": 225,
+          "scalar_global": 32,
+          "witness_selection": 46,
+          "scalar_row": 80,
+          "price_profile": 144
+        },
+        "operations": [
+          {
+            "category": "dag_evaluation",
+            "operation": "instruction_words_read",
+            "units": 96
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "parent_value_and_weight_read",
+            "units": 64
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "sum_add_and_write",
+            "units": 64
+          },
+          {
+            "category": "dag_evaluation",
+            "operation": "zero_cell_write",
+            "units": 1
+          },
+          {
+            "category": "price_profile",
+            "operation": "regret_bound",
+            "units": 96
+          },
+          {
+            "category": "price_profile",
+            "operation": "retained_action_cost",
+            "units": 48
+          },
+          {
+            "category": "scalar_global",
+            "operation": "delta_weight_bounds",
+            "units": 16
+          },
+          {
+            "category": "scalar_global",
+            "operation": "ratio_form_and_minimum",
+            "units": 16
+          },
+          {
+            "category": "scalar_row",
+            "operation": "additive_shift_clip_and_compare",
+            "units": 48
+          },
+          {
+            "category": "scalar_row",
+            "operation": "multiply_and_integer_round",
+            "units": 32
+          },
+          {
+            "category": "weight_admission",
+            "operation": "new_nonnegative_weight_words",
+            "units": 8
+          },
+          {
+            "category": "witness_selection",
+            "operation": "sum_lookup_and_minimum",
+            "units": 46
+          }
+        ]
+      }
+    }
+  ],
+  "process_ns": 4971120,
+  "checks": {
+    "recompiled_raw_profiles_equal_saved": true,
+    "reproduced_original_setup_invoices": true,
+    "equal_tree_lower_and_witness_upper_row_edits": 80,
+    "equal_scalar_lower_row_edits": 80,
+    "changed_equal_cost_witness_ties": 0,
+    "original_files_unchanged": true,
+    "no_exact_optimum_field_used": true,
+    "all_five_exposed_recipes_retained": true
+  },
+  "end_utc": "2026-10-12T15:51:23.907082+00:00",
+  "elapsed_wall_ns": 9940965
+}

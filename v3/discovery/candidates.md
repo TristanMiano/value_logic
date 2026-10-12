@@ -1,7 +1,17 @@
 # P3-SEARCH-01 candidate portfolio
 
-New research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
+Initial research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
 No candidate is promoted; material-positive readiness is unassessed.
+
+**Current continuation — October 12, 2026:** **ChatGPT (GPT-6 Astra Pro)**,
+[s05 checkpoint 1](s05/cp01.md), [effective actuals](s05/effective_actuals.json).
+The first author-directed hourly increment contains
+**60.115281713333333… research minutes**. C001 remains **OPEN** at
+**377.495235816666666… minutes**, beyond its already satisfied four-hour floor;
+phase research is **1463.626603180816666… minutes**. The next increment is one
+requested hour under the [hourly direction](../decisions/2026-10-12_hourly_handoffs.md),
+not a new four-hour cycle. Earlier Codex attributions, findings and checkpoint
+totals below retain their historical scope. P3-POS01 remains OUTSTANDING.
 
 IDs S01 onward belong to this program, not separate clock commitments.
 
@@ -317,3 +327,68 @@ open. P3-POS01 OUTSTANDING, readiness unassessed, P3-11 deferred.
 [Checkpoint 8](s03/cp08.md) continues C001. Next compare paid marginal
 calibration with direct fixed-bank policy audits. Full source/learning costs
 and material usefulness remain open; P3-POS01 OUTSTANDING, readiness unassessed.
+
+## s05 first hourly continuation — October 12, 2026
+
+New contributor: **ChatGPT (GPT-6 Astra Pro)**. All three families below are
+**DEVELOPMENT**, with readiness **unassessed**. They extend the existing
+portfolio; their IDs are not separate time commitments or frozen hypotheses.
+
+- **S26 — paid graph calibration**, S20/S24/S25 and S12 lineage: compare
+  paying for individual edge errors with direct policy contrasts, grouped
+  parity receipts and retained proof work. A single parity target has sharp
+  closure through a minimum weighted T-join under the declared marginal
+  upper bounds; separate sharp targets need not give a sharp joint sum.
+  [Construction](s05/calibration_branches.md), [closure](s05/parity_closure.md).
+  An actual [CNF bridge](s05/cnf_bridge_findings.md) shows that a proof from an
+  unrequested weaker formula can save later work. Statistical feature precision
+  and future proof reuse therefore both belong in the acquisition objective.
+  Direct policy auditing and ordinary T-join/proof reuse are strong comparisons;
+  the first request saving does not establish durable complete-cost advantage.
+- **S27 — threshold partial-value calibration**, S05/S08T/S23/S26 lineage:
+  retain checked intervals for latent monotone thresholds, then answer changing
+  payoff contrasts from a common source without fully resolving every draw.
+  Exact CDF-band optimization, a stronger retained-row flow source and cheap
+  feasibility routing form a precision/cost hierarchy.
+  [Acquisition](s05/value_acquisition.md), [routing](s05/value_routing.md).
+  Fixed-source coverage, sample multiplicity and unresolved observations remain
+  explicit. The [nested-CNF continuation](s05/threshold_cnf_v3_findings.md)
+  sharpens threshold intervals while preserving the original native purchase
+  trace under its fixed-policy scope. Replanning may instead buy more expensive
+  proofs; a threshold value is not a calibrated solver-cost model. Next carry
+  this separation of statistical and logical purchases into the repair service.
+- **S28 — paid reusable weighted repair**, S04/S07/S08T/S13 and S27 lineage:
+  checked witnesses and proof structure supply action regret bounds under
+  changing penalties, replacement prices and requested tolerances. Exact
+  [profile compression](s05/reprice_compact_findings.md),
+  [uniform action regions](s05/reprice_regions_findings.md), a
+  [compact admitted cache](s05/regions_bundle_findings.md) and paid
+  [partition transport](s05/partition_transport_findings.md) make reuse
+  concrete. Six rows have positive symmetric weight radii, ten have zero;
+  the common radius remains zero. The small cache depends on an actual trusted
+  raw-checker admission, not on a checksum as a proof of unseen evidence.
+
+The [80-request paid stream and v2 correction](s05/repair_stream_v2_findings.md)
+close every request at tolerance 1: tree retains 61 cache hits/19 actual v1
+calls, scalar 57/23, with equal summed action cost. The corrected shared-setup
+tariffs are **71,919 tree versus 72,848 scalar**. A standalone scalar consumer
+can omit another **1,319** initial mask-compilation/storage units, giving an
+invoice-adjusted **71,529**, **390 below tree**. That second total is an
+explicit invoice adjustment, not a new executed variant. V2 replays already
+paid receipts with zero new source calls. **No robust total-cost win is
+established**; native persistent IHS with equal cache and tolerance access
+remains the stronger implementation comparison.
+
+The current generative aim is [calibrated repair](s05/calibrated_repair.md):
+use a justified common confidence source for penalty weights, then choose
+between cost audits that shrink it and logical search that improves feasible
+actions or lower proofs. The combined statistical repair service remains
+prospective. The next concrete integration joins the paid stream and compact
+cache to a [persistent native adapter with a checked proof bridge](s05/repair_service_next.md),
+while retaining [selective frontier acquisition](s05/active_frontier.md) and
+the [AOLS/CMOVE comparison](s05/frontier_sources.md) as alternatives.
+
+Continue from [s05 checkpoint 1](s05/cp01.md) using the
+[portable prompt](CONTINUE.md). C001 is OPEN; P3-POS01 is OUTSTANDING,
+readiness unassessed and P3-11 deferred. This hour supports continued
+constructive discovery, not a confirmation promotion or an 80–90% forecast.

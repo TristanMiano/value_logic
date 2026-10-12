@@ -1,0 +1,182 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "utc": "2026-10-12T15:54:37.754804+00:00",
+  "implementation_sha256": "68d79287935a29205a12f2a641f5dd41238137e5a90a520ce0122162c5ded10b",
+  "input_result_sha256": "bd6a5b43b79672147dbcd40222fb6ecb1d1a289988bb515539107441f7731a54",
+  "source": "reprice_compact_results.json",
+  "new_solver_calls": 0,
+  "new_source_diagnostic_calls": 0,
+  "new_empirical_exposure": false,
+  "analysis_kind": "Exact arithmetic on previously exposed fixed invoices",
+  "shared_raw_setup": 7975,
+  "additional_compilation": 5943,
+  "rows": [
+    {
+      "query": 1,
+      "mode": "raw",
+      "compilation_units": 0,
+      "cumulative_query_units": 2283,
+      "offline_two_representation_units": 2283,
+      "ratio": "1",
+      "recipe": "identity",
+      "total_with_shared_raw_setup": 10258,
+      "always_raw_total": 10258,
+      "compile_at_start_total": 14670
+    },
+    {
+      "query": 2,
+      "mode": "raw",
+      "compilation_units": 0,
+      "cumulative_query_units": 4566,
+      "offline_two_representation_units": 4566,
+      "ratio": "1",
+      "recipe": "uniform_double",
+      "total_with_shared_raw_setup": 12541,
+      "always_raw_total": 12541,
+      "compile_at_start_total": 15422
+    },
+    {
+      "query": 3,
+      "mode": "raw",
+      "compilation_units": 0,
+      "cumulative_query_units": 6849,
+      "offline_two_representation_units": 6849,
+      "ratio": "1",
+      "recipe": "double_first_half",
+      "total_with_shared_raw_setup": 14824,
+      "always_raw_total": 14824,
+      "compile_at_start_total": 16174
+    },
+    {
+      "query": 4,
+      "mode": "compile_then_evaluate",
+      "compilation_units": 5943,
+      "cumulative_query_units": 13544,
+      "offline_two_representation_units": 8951,
+      "ratio": "13544/8951",
+      "recipe": "zero_last_half",
+      "total_with_shared_raw_setup": 21519,
+      "always_raw_total": 17107,
+      "compile_at_start_total": 16926
+    },
+    {
+      "query": 5,
+      "mode": "compiled",
+      "compilation_units": 0,
+      "cumulative_query_units": 14296,
+      "offline_two_representation_units": 9703,
+      "ratio": "14296/9703",
+      "recipe": "rotate_right",
+      "total_with_shared_raw_setup": 22271,
+      "always_raw_total": 19390,
+      "compile_at_start_total": 17678
+    }
+  ],
+  "boundary_cases": [
+    {
+      "buy": 5,
+      "base": [
+        1,
+        1
+      ],
+      "deltas": [
+        0,
+        0
+      ],
+      "rows": [
+        {
+          "query": 1,
+          "mode": "raw",
+          "compilation_units": 0,
+          "cumulative_query_units": 1,
+          "offline_two_representation_units": 1,
+          "ratio": "1"
+        },
+        {
+          "query": 2,
+          "mode": "raw",
+          "compilation_units": 0,
+          "cumulative_query_units": 2,
+          "offline_two_representation_units": 2,
+          "ratio": "1"
+        }
+      ]
+    },
+    {
+      "buy": 5,
+      "base": [
+        1
+      ],
+      "deltas": [
+        5
+      ],
+      "rows": [
+        {
+          "query": 1,
+          "mode": "compile_then_evaluate",
+          "compilation_units": 5,
+          "cumulative_query_units": 6,
+          "offline_two_representation_units": 6,
+          "ratio": "1"
+        }
+      ]
+    },
+    {
+      "buy": 5,
+      "base": [
+        1,
+        1
+      ],
+      "deltas": [
+        4,
+        9
+      ],
+      "rows": [
+        {
+          "query": 1,
+          "mode": "raw",
+          "compilation_units": 0,
+          "cumulative_query_units": 5,
+          "offline_two_representation_units": 5,
+          "ratio": "1"
+        },
+        {
+          "query": 2,
+          "mode": "compile_then_evaluate",
+          "compilation_units": 5,
+          "cumulative_query_units": 11,
+          "offline_two_representation_units": 7,
+          "ratio": "11/7"
+        }
+      ]
+    },
+    {
+      "buy": 0,
+      "base": [
+        1
+      ],
+      "deltas": [
+        0
+      ],
+      "rows": [
+        {
+          "query": 1,
+          "mode": "compiled",
+          "compilation_units": 0,
+          "cumulative_query_units": 1,
+          "offline_two_representation_units": 1,
+          "ratio": "1"
+        }
+      ]
+    }
+  ],
+  "analysis_runtime_ns": 1184715,
+  "limits": [
+    "Two equivalent evaluators only, not all useful services",
+    "Stable admitted proof archive and fixed setup cost",
+    "Query cost differences known before serving; no free price oracle",
+    "Declared service units, not constant hardware or bit complexity"
+  ]
+}

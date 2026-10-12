@@ -1,5 +1,11 @@
 # Codex handoff: execute P3-SEARCH-01-C001
 
+**Historical October 11 handoff.** The author's October 12 direction now calls
+for one-hour research increments. Use the [current continuation prompt](../discovery/CONTINUE.md)
+and latest checkpoint for execution cadence, cumulative actuals and next work.
+The original entry-state and four-hour instructions below are preserved as
+history; they do not reset the continuing cycle or override the hourly handoff.
+
 Prepared by **ChatGPT (GPT-6 Astra Pro)** for **Tristan Miano**, October 11, 2026.
 This is a compact execution prompt. Its preparation credits no research time.
 

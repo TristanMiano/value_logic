@@ -1,0 +1,562 @@
+{
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "date_utc": "2026-10-12",
+  "status": "DEVELOPMENT",
+  "scope": "Exogenous complete-answer query prices; source-independent minimax and explicitly supplied-law expected planning",
+  "probe_plan": "All single pair targets and the all-pair vector for 2,3,4 vertices; three price vectors; enumerate all stopping query trees and roll out every threshold",
+  "systems": 36,
+  "mode_checks": 72,
+  "explicit_threshold_rollouts": 3600,
+  "robust_intermediate_bridge": {
+    "costs": [
+      10,
+      1,
+      12,
+      10
+    ],
+    "target_pair": [
+      0,
+      3
+    ],
+    "fixed_source_weights": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "minimax": {
+      "unrestricted_value": "11",
+      "endpoint_only_value": "20",
+      "unrestricted_first_query": 1,
+      "unrestricted_tree": [
+        "query",
+        1,
+        [
+          "query",
+          0,
+          [
+            "leaf",
+            [
+              0
+            ]
+          ],
+          [
+            "leaf",
+            [
+              1
+            ]
+          ]
+        ],
+        [
+          "query",
+          3,
+          [
+            "leaf",
+            [
+              1
+            ]
+          ],
+          [
+            "leaf",
+            [
+              0
+            ]
+          ]
+        ]
+      ],
+      "endpoint_tree": [
+        "query",
+        0,
+        [
+          "leaf",
+          [
+            0
+          ]
+        ],
+        [
+          "query",
+          3,
+          [
+            "leaf",
+            [
+              1
+            ]
+          ],
+          [
+            "leaf",
+            [
+              0
+            ]
+          ]
+        ]
+      ],
+      "per_threshold": [
+        {
+          "h": 0,
+          "work": "11",
+          "trace": [
+            [
+              1,
+              "UNSAT"
+            ],
+            [
+              0,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 1,
+          "work": "11",
+          "trace": [
+            [
+              1,
+              "UNSAT"
+            ],
+            [
+              0,
+              "SAT"
+            ]
+          ]
+        },
+        {
+          "h": 2,
+          "work": "11",
+          "trace": [
+            [
+              1,
+              "SAT"
+            ],
+            [
+              3,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 3,
+          "work": "11",
+          "trace": [
+            [
+              1,
+              "SAT"
+            ],
+            [
+              3,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 4,
+          "work": "11",
+          "trace": [
+            [
+              1,
+              "SAT"
+            ],
+            [
+              3,
+              "SAT"
+            ]
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "unrestricted_value": "11",
+      "endpoint_only_value": "18",
+      "unrestricted_first_query": 1,
+      "unrestricted_tree": [
+        "query",
+        1,
+        [
+          "query",
+          0,
+          [
+            "leaf",
+            [
+              0
+            ]
+          ],
+          [
+            "leaf",
+            [
+              1
+            ]
+          ]
+        ],
+        [
+          "query",
+          3,
+          [
+            "leaf",
+            [
+              1
+            ]
+          ],
+          [
+            "leaf",
+            [
+              0
+            ]
+          ]
+        ]
+      ],
+      "endpoint_tree": [
+        "query",
+        0,
+        [
+          "leaf",
+          [
+            0
+          ]
+        ],
+        [
+          "query",
+          3,
+          [
+            "leaf",
+            [
+              1
+            ]
+          ],
+          [
+            "leaf",
+            [
+              0
+            ]
+          ]
+        ]
+      ],
+      "per_threshold": [
+        {
+          "h": 0,
+          "work": "11",
+          "trace": [
+            [
+              1,
+              "UNSAT"
+            ],
+            [
+              0,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 1,
+          "work": "11",
+          "trace": [
+            [
+              1,
+              "UNSAT"
+            ],
+            [
+              0,
+              "SAT"
+            ]
+          ]
+        },
+        {
+          "h": 2,
+          "work": "11",
+          "trace": [
+            [
+              1,
+              "SAT"
+            ],
+            [
+              3,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 3,
+          "work": "11",
+          "trace": [
+            [
+              1,
+              "SAT"
+            ],
+            [
+              3,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 4,
+          "work": "11",
+          "trace": [
+            [
+              1,
+              "SAT"
+            ],
+            [
+              3,
+              "SAT"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "expected_weak_ancestor_bridge": {
+    "costs": [
+      1,
+      10,
+      10
+    ],
+    "target_pair": [
+      1,
+      2
+    ],
+    "fixed_source_weights": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "minimax": {
+      "unrestricted_value": "20",
+      "endpoint_only_value": "20",
+      "unrestricted_first_query": 1,
+      "unrestricted_tree": [
+        "query",
+        1,
+        [
+          "leaf",
+          [
+            0
+          ]
+        ],
+        [
+          "query",
+          2,
+          [
+            "leaf",
+            [
+              1
+            ]
+          ],
+          [
+            "leaf",
+            [
+              0
+            ]
+          ]
+        ]
+      ],
+      "endpoint_tree": [
+        "query",
+        1,
+        [
+          "leaf",
+          [
+            0
+          ]
+        ],
+        [
+          "query",
+          2,
+          [
+            "leaf",
+            [
+              1
+            ]
+          ],
+          [
+            "leaf",
+            [
+              0
+            ]
+          ]
+        ]
+      ],
+      "per_threshold": [
+        {
+          "h": 0,
+          "work": "10",
+          "trace": [
+            [
+              1,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 1,
+          "work": "10",
+          "trace": [
+            [
+              1,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 2,
+          "work": "20",
+          "trace": [
+            [
+              1,
+              "SAT"
+            ],
+            [
+              2,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 3,
+          "work": "20",
+          "trace": [
+            [
+              1,
+              "SAT"
+            ],
+            [
+              2,
+              "SAT"
+            ]
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "unrestricted_value": "27/2",
+      "endpoint_only_value": "15",
+      "unrestricted_first_query": 0,
+      "unrestricted_tree": [
+        "query",
+        0,
+        [
+          "leaf",
+          [
+            0
+          ]
+        ],
+        [
+          "query",
+          1,
+          [
+            "leaf",
+            [
+              0
+            ]
+          ],
+          [
+            "query",
+            2,
+            [
+              "leaf",
+              [
+                1
+              ]
+            ],
+            [
+              "leaf",
+              [
+                0
+              ]
+            ]
+          ]
+        ]
+      ],
+      "endpoint_tree": [
+        "query",
+        1,
+        [
+          "leaf",
+          [
+            0
+          ]
+        ],
+        [
+          "query",
+          2,
+          [
+            "leaf",
+            [
+              1
+            ]
+          ],
+          [
+            "leaf",
+            [
+              0
+            ]
+          ]
+        ]
+      ],
+      "per_threshold": [
+        {
+          "h": 0,
+          "work": "1",
+          "trace": [
+            [
+              0,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 1,
+          "work": "11",
+          "trace": [
+            [
+              0,
+              "SAT"
+            ],
+            [
+              1,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 2,
+          "work": "21",
+          "trace": [
+            [
+              0,
+              "SAT"
+            ],
+            [
+              1,
+              "SAT"
+            ],
+            [
+              2,
+              "UNSAT"
+            ]
+          ]
+        },
+        {
+          "h": 3,
+          "work": "21",
+          "trace": [
+            [
+              0,
+              "SAT"
+            ],
+            [
+              1,
+              "SAT"
+            ],
+            [
+              2,
+              "SAT"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "cnf_performance_claim": false,
+  "source_sha256": "986632eabed9a6c57586678f6c6796211b5b19e7284cd0505529bda8980c61d2"
+}

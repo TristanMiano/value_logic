@@ -1,6 +1,6 @@
 # Phase-three claims and obligations
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 11, 2026 UTC.
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 12, 2026 UTC.
 **P3-01–08 are complete at their declared task scopes, with their Research90
 minima and closing records. P3-09 is complete at prospective challenge-freeze
 scope with its own Research60 minimum. P3-A remains PASS at problem and restricted representation
@@ -19,13 +19,23 @@ paid-reporting and separate structural integration scope. Selected R-P3-B-B
 the ordinary checked bridge and full resource/failure comparison. The final
 challenge has completed P3-10 execution and interpretation under explicit A1,
 with the original failure preserved and **90.283569405783** principal research
-minutes. Phase research is **1123.712245154150 minutes**. Next: P3-SEARCH-01,
-in progress with C001 unfinished; P3-11 is deferred pending discovery readiness.
+minutes. Current phase research is **1463.626603180816666… minutes**.
+P3-SEARCH-01-C001 remains **OPEN** at **377.495235816666666… minutes**, beyond
+its already satisfied four-hour floor. The first author-directed hourly
+increment adds **60.115281713333333… research minutes**. Next: continue
+discovery from [s05 checkpoint 1](discovery/s05/cp01.md), with exact totals and
+exclusions in [effective actuals](discovery/s05/effective_actuals.json).
+P3-11 is deferred pending discovery readiness.
 P3-POS01 is OUTSTANDING; later author gates remain unattempted. P3-N01 is SUPPORTED
 at the documented modest formal-adaptation and implementation-synthesis
 scope; Q3 affirmative comparative benefit remains open.**
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
 [task readiness audit](work_logs/P3_03_2026-10-07_S1/readiness_audit.md).
+
+The dated Codex entries and their intermediate totals below remain unchanged.
+The [one-hour direction](decisions/2026-10-12_hourly_handoffs.md) continues the
+same C001 program without resetting its floor or authorizing additional hours
+within one requested increment. A handoff is not a scientific completion gate.
 
 Use this ledger for exact statements, assumptions, versions, evidence type,
 status and project impact. Planning examples and inherited evidence are not
@@ -756,3 +766,31 @@ Codex (GPT-6). [Active checkpoint](discovery/s03/cp08.md):
 | DS-S24-PROFILE | Independent biased parity edges admit exact adaptive-optimal fixed acquisition and compact magnitude profiles. | 28 trees, 19,432 subsets, 579 requests, 5,685 Bellman states. Retained 256-node profiles support cheap repeated requests; ordinary DP/comparative statics and supplied prices/laws limit the claim. |
 | DS-S25-MARGINAL | Compact lower-score profiles require marginal error bounds without independence; one fixed marginal event covers later fixed query/stake choices. | 17,792 subsets, 724 requests, 760 dependent-law checks plus an explicit product-model failure. Optimizes a conservative bound, not the full dependent-source minimax problem. Calibration costs remain open. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | [Assessment](discovery/s03/synthesis08.md); both implementation/comparison failures retained with versioned repairs. No P3-11 promotion. |
+
+## P3-SEARCH-01-C001 — s05 first hourly handoff, October 12, 2026
+
+New contributor: **ChatGPT (GPT-6 Astra Pro)**.
+[Current checkpoint](discovery/s05/cp01.md),
+[portfolio](discovery/candidates.md),
+[effective actuals](discovery/s05/effective_actuals.json).
+New findings remain **DEVELOPMENT**; material-positive readiness is
+**unassessed**, P3-POS01 **OUTSTANDING**, and P3-11 deferred.
+
+The closed increment contains **3,606,916,902,800 ns** of engaged D+L+E,
+or **60.115281713333333… minutes**. C001/program research is
+**22,649,714,149,000 ns**, or **377.495235816666666… minutes**; phase research
+is **87,817,596,190,849 ns**, or **1463.626603180816666… minutes**.
+The effective record excludes unseparated compaction/interruption periods;
+s04's abandoned open interval, publication and concurrent-agent time receive
+no added research credit. C001 remains **OPEN** beyond its satisfied floor.
+The author-directed hourly boundary does not promote a candidate or start
+another four-hour obligation. Earlier dated totals retain their history.
+
+| ID | Constructive finding / lineage | Evidence, comparison and limits |
+|---|---|---|
+| DS-S26 — paid graph calibration | S20/S24/S25 and S12 lineage. Direct contrasts, grouped parity receipts and retained proof work are alternatives to buying every marginal. One parity target has sharp minimum-T-join closure under declared edge-disagreement upper bounds. | [Calibration branches](discovery/s05/calibration_branches.md), [parity closure](discovery/s05/parity_closure.md), [CNF bridge](discovery/s05/cnf_bridge_findings.md). One-target sharpness does not imply sharp simultaneous target sums. Real receipt reuse changes future purchase costs; neither source laws nor complete economics are supplied by the algebra. Ordinary graph optimization and direct policy audits remain comparisons. |
+| DS-S27 — threshold partial-value calibration | S05/S08T/S23/S26 lineage. Checked partial thresholds support later payoff queries; CDF optimization, retained-row flow and interval-feasibility routing offer distinct cost/precision levels. Existing-row refinement and fresh-draw acquisition address different uncertainty. | [Acquisition](discovery/s05/value_acquisition.md), [routing](discovery/s05/value_routing.md), [nested-CNF findings](discovery/s05/threshold_cnf_v3_findings.md). Preserves unresolved draws and multiplicity under explicit fixed-sample/sequential sources. Saturation sharpens mean interval width 39/16 to 25/16 under the measured scope; fixed-policy native purchases remain unchanged. Replanning can add expensive proofs, and actual computation cost is not determined by the latent threshold. |
+| DS-S28 — paid reusable weighted repair | S04/S07/S08T/S13 and S27 lineage. Checked witnesses and proof supports transport action bounds through nonnegative repricing; exact compression and indexed regions support repeated queries. Covering partitions permit separately paid current-clause rechecking. | [Repricing](discovery/s05/maxsat_reprice_findings.md), [compression](discovery/s05/reprice_compact_findings.md), [regions](discovery/s05/reprice_regions_findings.md), [partition transport](discovery/s05/partition_transport_findings.md). Fixed-source/meaning scopes are explicit. Six positive individual symmetric radii and ten zero radii leave common radius zero. The 8,037-byte [cache](discovery/s05/regions_bundle_findings.md) follows actual checking of 29 witnesses/18 trees; its checksum alone cannot verify omitted proof bytes. No new general optimization or broad economic advantage is established. |
+| DS-S28-STREAM | The actual stateless-provider stream completes 80 requests at tolerance 1: tree uses 61 cache hits/19 calls, scalar 57/23; summed realized action costs are equal. Corrected common-setup tariffs are 71,919 tree and 72,848 scalar. | [v2 findings](discovery/s05/repair_stream_v2_findings.md). V2 rechecks/replays already-paid v1 receipts with zero new provider calls. Omitting another 1,319 unused initial scalar mask-compilation/storage units gives a standalone invoice adjustment of 71,529, 390 below tree; this is not a separately executed variant. The common-cache 929-unit margin does not establish a robust total-cost win. Historical acquisition remains charged separately; native persistent IHS comparison is outstanding. |
+| DS-S26-S28-CALIBRATED | A common confidence source W for penalty costs can be checked against retained action regions; paid audits shrink W while logical search improves feasible actions/lower proofs. A retained alternative may show that stronger lower proofs alone cannot rescue one fixed action over unchanged W. | [Calibrated repair](discovery/s05/calibrated_repair.md) is a DEVELOPMENT derivation and prospective synthesis, not an integrated statistical experiment. The next engineering boundary joins paid calls, compact caches and [persistent IHS/checked proof admission](discovery/s05/repair_service_next.md). [Frontier acquisition](discovery/s05/active_frontier.md) and [AOLS/CMOVE](discovery/s05/frontier_sources.md) retain strong conventional comparisons. Actual sampling, audit/search costs, proof capabilities and value remain obligations. |
+| P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | Constructive capability and new integration directions support recurrence; no material-positive confirmation, 80–90% readiness forecast or P3-11 promotion. Continue one requested hour from the [portable prompt](discovery/CONTINUE.md), with hypotheses revisable and cheap screens. |
