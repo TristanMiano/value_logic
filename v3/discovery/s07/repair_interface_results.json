@@ -1,0 +1,1331 @@
+{
+  "status": "passed",
+  "evidence": "DEVELOPMENT finite semantic probe",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T20:07:09.565052+00:00",
+  "hashes": {
+    "repair_interface.py": "1ec100e50c6ab11600d9074fa718b4136d8227192b112676de468979725a6b8a",
+    "repair_interface_check.py": "9a7ed833a047cb860ec79d6e857254cd52c51e9a49706dcbbd21462d25d75af7",
+    "joint_repair.py": "7e1a96f4a05107174554acc701ae43026528d6041e570500d840fb1b76060384",
+    "native_stream.py": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+    "rup_bridge_v2.py": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+    "source_anchor.py": "b8f42879ee99ce99c849fb4409e3b9c47c482f1430345ae7259ccb5c25a730bc",
+    "vertex_repair.py": "b466d20eae0c1d1e5fcbe6987278312b644a18293d7049fbcc6e2c317131ec7f",
+    "cohort_hull.py": "52d6a1a5a635e0716fbbd6cbcebec4aa3e176897567247460bcbb22169817c74",
+    "cut_dual.py": "4ab5a8f75a1d03cff77898f5fbc4bb9a307e68c144f0bafaa660173504059b4d",
+    "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+    "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+  },
+  "source": {
+    "row": 0,
+    "variables": 2,
+    "hard": [
+      [
+        1,
+        2
+      ]
+    ],
+    "soft": [
+      {
+        "weight": 1,
+        "clause": [
+          -1
+        ]
+      },
+      {
+        "weight": 1,
+        "clause": [
+          -2
+        ]
+      }
+    ],
+    "public_incumbent": 1,
+    "objective_max": 2,
+    "identity": "88041240bb48c2406fb1c0921bc6733d11a4edf9ac6f209c7b64e5805f104928"
+  },
+  "raw_tree": [
+    "b",
+    0,
+    [
+      "b",
+      1,
+      [
+        "h",
+        0
+      ],
+      [
+        "w",
+        [
+          1
+        ]
+      ]
+    ],
+    [
+      "w",
+      [
+        0
+      ]
+    ]
+  ],
+  "raw_retained_tree": [
+    "b",
+    0,
+    [
+      "b",
+      1,
+      [
+        "h",
+        0
+      ],
+      [
+        "w",
+        [
+          1
+        ]
+      ]
+    ],
+    [
+      "b",
+      1,
+      [
+        "w",
+        [
+          0
+        ]
+      ],
+      [
+        "w",
+        [
+          0,
+          1
+        ]
+      ]
+    ]
+  ],
+  "raw_cut_export": {
+    "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+    "original_source_id": "88041240bb48c2406fb1c0921bc6733d11a4edf9ac6f209c7b64e5805f104928",
+    "weights": [
+      1,
+      1
+    ],
+    "budget": 0,
+    "encoding": {
+      "version": "explicit-soft-bdd-cnf-v1",
+      "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+      "original_source_id": "88041240bb48c2406fb1c0921bc6733d11a4edf9ac6f209c7b64e5805f104928",
+      "weighted_source_id": "88041240bb48c2406fb1c0921bc6733d11a4edf9ac6f209c7b64e5805f104928",
+      "source_variables": 2,
+      "violation_variables": [
+        3,
+        4
+      ],
+      "weights": [
+        1,
+        1
+      ],
+      "budget": 0,
+      "root": 6,
+      "nodes": [
+        {
+          "variable": 5,
+          "index": 1,
+          "budget": 0,
+          "when_zero": true,
+          "when_one": false
+        },
+        {
+          "variable": 6,
+          "index": 0,
+          "budget": 0,
+          "when_zero": 5,
+          "when_one": false
+        }
+      ],
+      "max_variable": 6,
+      "clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          -4,
+          2
+        ],
+        [
+          -5,
+          -4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          -6,
+          3,
+          5
+        ],
+        [
+          -6,
+          -3
+        ],
+        [
+          6,
+          3,
+          -5
+        ],
+        [
+          6
+        ]
+      ]
+    },
+    "raw_proof": [
+      "0"
+    ]
+  },
+  "cost_contract": {
+    "modes": [
+      [
+        1,
+        3
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "cohort_size": 2,
+    "source_id": "bcb2b4f9d85c24b7af9192c8d4ba13e00c1180ddca533cd18c93b114e91a6bc3"
+  },
+  "summary": {
+    "compatible_source_price_cases": 18,
+    "method_regret_checks": 72,
+    "admission_rejections": 7,
+    "optional_hull_cap_falls_back": true,
+    "scalar_cache_reused": true,
+    "retained_tree_invalidates_anchor_cache": true
+  },
+  "cases": [
+    {
+      "possible": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "price": 3,
+      "best_method": "tree",
+      "best_bound": 1,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "dual_box",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "hull",
+          "bound": 1,
+          "actual_worst": 1
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "price": 7,
+      "best_method": "tree",
+      "best_bound": 4,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 4,
+          "actual_worst": 4
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 4,
+          "actual_worst": 4
+        },
+        {
+          "method": "dual_box",
+          "bound": 4,
+          "actual_worst": 4
+        },
+        {
+          "method": "hull",
+          "bound": 4,
+          "actual_worst": 4
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "price": 3,
+      "best_method": "tree",
+      "best_bound": 1,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "dual_box",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "hull",
+          "bound": 1,
+          "actual_worst": 1
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "price": 7,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "price": 3,
+      "best_method": "tree",
+      "best_bound": 1,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "dual_box",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "hull",
+          "bound": 1,
+          "actual_worst": 1
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "price": 7,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "price": 3,
+      "best_method": "tree",
+      "best_bound": 1,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "dual_box",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "hull",
+          "bound": 1,
+          "actual_worst": 1
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "price": 7,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "price": 3,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "price": 7,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "price": 3,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 1,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 1,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "price": 7,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "price": 3,
+      "best_method": "tree",
+      "best_bound": 1,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "dual_box",
+          "bound": 1,
+          "actual_worst": 1
+        },
+        {
+          "method": "hull",
+          "bound": 1,
+          "actual_worst": 1
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "price": 7,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "price": 3,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 1,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 1,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "price": 7,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 2,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "price": 3,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    },
+    {
+      "possible": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "price": 7,
+      "best_method": "tree",
+      "best_bound": 0,
+      "methods": [
+        {
+          "method": "tree",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "scalar_anchor",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "dual_box",
+          "bound": 0,
+          "actual_worst": 0
+        },
+        {
+          "method": "hull",
+          "bound": 0,
+          "actual_worst": 0
+        }
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "case": "foreign_cost_source",
+      "result": "rejected",
+      "reason": "Cost source, cohort, ordered modes or invoice meter changed"
+    },
+    {
+      "case": "negative_or_changed_cost_modes",
+      "result": "rejected",
+      "reason": "Cost source, cohort, ordered modes or invoice meter changed"
+    },
+    {
+      "case": "empty_cost_row",
+      "result": "rejected",
+      "reason": "Every fixed cost row needs a nonempty set of admitted mode IDs"
+    },
+    {
+      "case": "negative_replacement_price",
+      "result": "rejected",
+      "reason": "Nonnegative replacement price and requested regret required"
+    },
+    {
+      "case": "foreign_raw_cut",
+      "result": "rejected",
+      "reason": "Foreign source-bound proof"
+    },
+    {
+      "case": "mutated_retained_tree",
+      "result": "rejected",
+      "reason": "A retained tree receipt changed its admitted masks"
+    },
+    {
+      "case": "false_candidate_violation_mask",
+      "result": "rejected",
+      "reason": "Candidate mask differs from the actual hard-feasible assignment"
+    }
+  ],
+  "admitted_dual": {
+    "version": "s06-rational-cut-dual-v1",
+    "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+    "cut_dependencies": [
+      "52ac52afe5bacdf1f943d286a3736031e78c793185bba32143ddabc87bfcc66e"
+    ],
+    "multipliers": [
+      "2"
+    ],
+    "coefficient": [
+      "2",
+      "2"
+    ],
+    "constant": "2",
+    "domain": "Same source violation features; any real weight vector, with Boolean violations",
+    "receipt_id": "c032d5b571bf8022ea640c299205c1d3c74a9ce23cb78c65fc2f939d6b26884f"
+  },
+  "new_LP_SAT_IHS_proof_search_or_audit_calls": 0,
+  "invoice": {
+    "total": 11102,
+    "by_category": {
+      "check": 42,
+      "tree_compile": 25,
+      "storage": 27,
+      "witness_check": 12,
+      "witness_compile": 35,
+      "cache_admission": 16,
+      "cost_admission": 14,
+      "interface_binding": 806,
+      "interface_admission": 44,
+      "support": 3486,
+      "certificate": 990,
+      "interface_compile": 450,
+      "vertex_query": 552,
+      "interface_query": 566,
+      "source_anchor_compile": 570,
+      "source_anchor_query": 1171,
+      "hull_group": 108,
+      "hull_quote": 32,
+      "hull_compile": 162,
+      "vertex_certificate": 360,
+      "encoding_admission": 42,
+      "encoding": 238,
+      "rup_admission": 34,
+      "rup_parse": 2,
+      "rup_check": 127,
+      "dual_check": 7,
+      "dual_storage": 15,
+      "dual_evaluation": 1162,
+      "retention": 7
+    },
+    "operations": [
+      {
+        "category": "cache_admission",
+        "operation": "trusted_projected_cache_fields",
+        "units": 16
+      },
+      {
+        "category": "certificate",
+        "operation": "action_proof_pair_minimum",
+        "units": 63
+      },
+      {
+        "category": "certificate",
+        "operation": "constraint_maximum_and_record",
+        "units": 927
+      },
+      {
+        "category": "check",
+        "operation": "negative_clause_header",
+        "units": 8
+      },
+      {
+        "category": "check",
+        "operation": "negative_literal",
+        "units": 10
+      },
+      {
+        "category": "check",
+        "operation": "negative_proof_node",
+        "units": 12
+      },
+      {
+        "category": "check",
+        "operation": "negative_weight_add",
+        "units": 6
+      },
+      {
+        "category": "check",
+        "operation": "negative_weight_index",
+        "units": 6
+      },
+      {
+        "category": "cost_admission",
+        "operation": "mode_and_row_words",
+        "units": 14
+      },
+      {
+        "category": "dual_check",
+        "operation": "exact_cut_linear_combination",
+        "units": 7
+      },
+      {
+        "category": "dual_evaluation",
+        "operation": "exact_column_slack_and_sum",
+        "units": 352
+      },
+      {
+        "category": "dual_evaluation",
+        "operation": "fixed_action_box_regret",
+        "units": 810
+      },
+      {
+        "category": "dual_storage",
+        "operation": "multiplier_coefficient_and_dependency_words",
+        "units": 15
+      },
+      {
+        "category": "encoding",
+        "operation": "clause_input_literals",
+        "units": 98
+      },
+      {
+        "category": "encoding",
+        "operation": "clause_output_words",
+        "units": 68
+      },
+      {
+        "category": "encoding",
+        "operation": "node_manifest_storage",
+        "units": 24
+      },
+      {
+        "category": "encoding",
+        "operation": "suffix_weight_sum",
+        "units": 8
+      },
+      {
+        "category": "encoding",
+        "operation": "threshold_state_dispatch",
+        "units": 40
+      },
+      {
+        "category": "encoding_admission",
+        "operation": "source_and_objective_words",
+        "units": 42
+      },
+      {
+        "category": "hull_compile",
+        "operation": "generator_and_choice_storage",
+        "units": 66
+      },
+      {
+        "category": "hull_compile",
+        "operation": "group_scaled_coordinate_sums",
+        "units": 96
+      },
+      {
+        "category": "hull_group",
+        "operation": "admit_mode_ids_and_group_rows",
+        "units": 108
+      },
+      {
+        "category": "hull_quote",
+        "operation": "generator_count_product",
+        "units": 32
+      },
+      {
+        "category": "interface_admission",
+        "operation": "checked_candidate_binding_storage",
+        "units": 8
+      },
+      {
+        "category": "interface_admission",
+        "operation": "checked_dual_dependency_storage",
+        "units": 5
+      },
+      {
+        "category": "interface_admission",
+        "operation": "fixed_cost_source_and_mode_binding",
+        "units": 14
+      },
+      {
+        "category": "interface_admission",
+        "operation": "fixed_logical_source_and_feature_binding",
+        "units": 17
+      },
+      {
+        "category": "interface_binding",
+        "operation": "projected_action_and_proof_fields",
+        "units": 398
+      },
+      {
+        "category": "interface_binding",
+        "operation": "source_and_nonempty_mode_sets",
+        "units": 408
+      },
+      {
+        "category": "interface_compile",
+        "operation": "admitted_tree_point_minimum",
+        "units": 116
+      },
+      {
+        "category": "interface_compile",
+        "operation": "full_cohort_mode_scaling",
+        "units": 12
+      },
+      {
+        "category": "interface_compile",
+        "operation": "same_source_point_lower_maximum",
+        "units": 106
+      },
+      {
+        "category": "interface_compile",
+        "operation": "scalar_anchor_storage",
+        "units": 24
+      },
+      {
+        "category": "interface_compile",
+        "operation": "warranted_coordinate_enclosure",
+        "units": 192
+      },
+      {
+        "category": "interface_query",
+        "operation": "grouped_hull_cache_lookup",
+        "units": 20
+      },
+      {
+        "category": "interface_query",
+        "operation": "method_comparison_and_source_bound_output",
+        "units": 436
+      },
+      {
+        "category": "interface_query",
+        "operation": "scalar_anchor_cache_lookup_and_read",
+        "units": 110
+      },
+      {
+        "category": "retention",
+        "operation": "new_checked_tree_reference",
+        "units": 7
+      },
+      {
+        "category": "rup_admission",
+        "operation": "source_clause_words",
+        "units": 34
+      },
+      {
+        "category": "rup_check",
+        "operation": "admitted_clause_storage",
+        "units": 1
+      },
+      {
+        "category": "rup_check",
+        "operation": "clause_visit",
+        "units": 39
+      },
+      {
+        "category": "rup_check",
+        "operation": "literal_inspection",
+        "units": 75
+      },
+      {
+        "category": "rup_check",
+        "operation": "unit_assignment",
+        "units": 12
+      },
+      {
+        "category": "rup_parse",
+        "operation": "proof_bytes_and_words",
+        "units": 2
+      },
+      {
+        "category": "source_anchor_compile",
+        "operation": "mode_action_costs_and_lower_scaling",
+        "units": 570
+      },
+      {
+        "category": "source_anchor_query",
+        "operation": "cohort_sums_and_clipped_regret",
+        "units": 475
+      },
+      {
+        "category": "source_anchor_query",
+        "operation": "row_mode_contrast_extrema",
+        "units": 696
+      },
+      {
+        "category": "storage",
+        "operation": "compiled_tree_leaf_masks",
+        "units": 7
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 20
+      },
+      {
+        "category": "support",
+        "operation": "coefficient_products_and_sum",
+        "units": 1968
+      },
+      {
+        "category": "support",
+        "operation": "cohort_support_and_argmax_add",
+        "units": 1026
+      },
+      {
+        "category": "support",
+        "operation": "row_maximum",
+        "units": 492
+      },
+      {
+        "category": "tree_compile",
+        "operation": "forced_clause_coefficient",
+        "units": 6
+      },
+      {
+        "category": "tree_compile",
+        "operation": "hard_leaf_omitted",
+        "units": 2
+      },
+      {
+        "category": "tree_compile",
+        "operation": "leaf_mask_deduplication",
+        "units": 5
+      },
+      {
+        "category": "tree_compile",
+        "operation": "proof_node_read",
+        "units": 12
+      },
+      {
+        "category": "vertex_certificate",
+        "operation": "anchor_clipping_gap_and_maximum",
+        "units": 360
+      },
+      {
+        "category": "vertex_query",
+        "operation": "mask_weight_products_and_sum",
+        "units": 552
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 5
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 7
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 10
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 5
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 10
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 10
+      }
+    ]
+  },
+  "post_evaluation_diagnostic_invoice": {
+    "total": 1837,
+    "by_category": {
+      "witness_check": 10,
+      "witness_compile": 23,
+      "storage": 12,
+      "diagnostic": 1792
+    },
+    "operations": [
+      {
+        "category": "diagnostic",
+        "operation": "finite_source_actual_regret",
+        "units": 1792
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 12
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 4
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 6
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 8
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 3
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 6
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 6
+      }
+    ]
+  },
+  "timing": {
+    "wall_ns": 13578725,
+    "process_ns": 30199215
+  },
+  "scope": "All 18 declared price/refinement cases on this two-variable construction; no transfer claim or economic ranking"
+}

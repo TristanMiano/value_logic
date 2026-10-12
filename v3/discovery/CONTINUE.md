@@ -1,250 +1,196 @@
 # Portable next prompt: one hour of continuing discovery
 
-Use the following prompt in the next ChatGPT or Codex session. Resolve the
-repository's latest state before choosing work: this file is a continuation
-instruction, not evidence that its recorded checkpoint is still the newest.
+Use this prompt in the next ChatGPT or Codex session. Recover the latest
+published state first; this text is a continuation instruction, not evidence
+that its known checkpoint remains the newest.
 
 ---
 
-Please continue the `TristanMiano/value_logic` discovery program for **one hour
-of engaged research**, then save and publish a useful handoff. I intend to
-alternate between ChatGPT and Codex over many such increments.
+Please continue `TristanMiano/value_logic` for **one approximately 60-minute
+increment of actually engaged research**, then save and publish a useful
+handoff. I intend to alternate ChatGPT and Codex over many increments.
 
-## Recover the current state before research
+## Recover the current state
 
-Use the actual checkout root and preserve unrelated changes. Inspect git
-status, the latest remote/main and recent commits, then the current active
-pointers, session records and clocks. Bring the authorized checkout up to date
-without overwriting local work. Another environment may have advanced the
-program since this prompt was written; do not duplicate its completed work.
+Use the actual checkout root and preserve unrelated changes. Inspect git status,
+latest remote/main, recent commits and any newer published continuation branch.
+Bring the authorized checkout up to date without overwriting local work. Read
+`AGENTS.md`, [TODO_v3.md](../../TODO_v3.md), [the research protocol](../RESEARCH_PROTOCOL.md),
+[hourly direction](../decisions/2026-10-12_hourly_handoffs.md),
+[portfolio](candidates.md), [recurrence dashboard](recurrences.md) and the newest
+checkpoint. The known current checkpoint is **[s07 cp01](s07/cp01.md)**,
+published on `discovery-hour-20261012-s07`; inspect that branch if main still
+predates it. The base for s07 was main
+`0d0f5128abc4fa7445f5f41b5c6b03ab958dcee6`, with PRs 5, 6 and 7 merged.
+Follow any newer authoritative pointer. Do not duplicate completed work.
 
-Read `AGENTS.md`, [TODO_v3.md](../../TODO_v3.md),
-[the research protocol](../RESEARCH_PROTOCOL.md),
-[the one-hour direction](../decisions/2026-10-12_hourly_handoffs.md),
-[the candidate portfolio](candidates.md), [the recurrence progress table](recurrences.md),
-and the latest discovery checkpoint.
-The checkpoint known when this prompt was prepared is [s06 cp01](s06/cp01.md).
-The s06 handoff was merged through
-[PR #5](https://github.com/TristanMiano/value_logic/pull/5), and the initial
-recurrence table through [PR #6](https://github.com/TristanMiano/value_logic/pull/6).
-The fixed-metric table and repository-check repairs are on
-`c001-metrics-and-repo-repair-20261012` until merged; if main predates them,
-inspect that published branch as well. Follow a newer
-authoritative pointer if present. Read only the relevant
-scientific sources, source records and executed contracts needed for the next
-construction; do not reopen the whole archive.
+Read only the relevant source and executed contracts, rather than reopening
+the whole archive. [Publication maintenance](../../docs/checks_20261012.md),
+[archive links](../../docs/archive_links.md) and
+[mathematical Markdown](../../docs/math_markdown.md) explain the required
+repository gates and byte preservation. Earlier failed receipts stay historical.
 
-The [repository-maintenance handoff](../../docs/checks_20261012.md) records the
-repaired link and mathematical-Markdown gates, full-suite verification and
-the fixed-metric/readiness reporting requirement. Historical failure receipts
-remain preserved. Use the current [archive-link](../../docs/archive_links.md)
-and [mathematical-Markdown](../../docs/math_markdown.md) guides when maintaining
-bound evidence; the maintenance adds no research credit or promotion claim.
+**C001 is OPEN, its four-hour floor is already satisfied, and no candidate is
+promoted by time.** Run one requested increment, not a new four-hour block or
+several automatic recurrences. P3-POS01 is OUTSTANDING and P3-11 is deferred.
 
-**P3-SEARCH-01-C001 remains OPEN and its four-hour floor is already satisfied.**
-Continue its cumulative record; do not reset a four-hour cycle. The explicit
-hourly handoff takes precedence over older instructions to continue through
-every clock checkpoint. Run one requested increment, not several automatic
-recurrences or a new four-hour block. Discovery remains open after the handoff.
+## Start a fresh observed clock
 
-Start or resume only an actually observed resident runtime under the protocol.
-If a prior open runtime is unavailable, start a fresh same-runtime observed
-clock; never credit its stale interval, the handoff gap or abandoned s04 time.
-Use actual UTC and monotonic observations, not inferred elapsed time. Count
-engaged D/L/E once; setup, administration, waits and publication are outside
-research time. Concurrent agent time is not added to principal time. Do useful
-research for approximately 60 engaged minutes; waiting does not satisfy the
-increment.
+The s07 clock is closed and cannot be resumed. Exact s07 research is
+**3,595,127,627,292 ns =59.9187937882 minutes**. C001/program cumulative is
+**29,849,134,566,547 ns =497.485576109116666… minutes**; phase cumulative is
+**95,017,016,608,396 ns =1583.616943473266666… minutes**. Read
+[effective actuals](s07/effective_actuals.json) and the four conservative
+[exclusions](s07/dispositions.json). Raw records and correction notices remain.
 
-**The s06 clock is closed and cannot be resumed:** research
-**3,604,292,790,255 ns =60.07154650425 minutes**; C001/program cumulative
-**26,254,006,939,255 ns =437.566782320916666… minutes**; phase cumulative
-**91,421,888,981,104 ns =1523.698149685066666… minutes**. Read
-[effective actuals](s06/effective_actuals.json) and the three conservative
-[exclusions](s06/dispositions.json). A later session needs its own observed
-clock. The s05 and s06 raw records and correction notices remain historical.
+Start a newly observed resident runtime with same-runtime UTC/monotonic
+boundaries. Never credit a stale open interval, handoff gap, unavailable process,
+compaction, wait, administration, publication or the abandoned s04 time.
+Count engaged D/L/E once; concurrent helper effort adds no principal time.
+Do useful research for approximately sixty engaged minutes and close the clock.
+The previous signed-geometry helper follow-through completed after principal
+closure and is separately timestamped with zero additional principal credit.
 
-## Research direction
+## Constructive direction
 
-The author's discovery-first amendment calls for much more idea generation
-and derivation than adversarial elimination. Keep hypotheses revisable, remove
-poor ones cheaply, and develop promising mechanisms. Do not freeze one minor
-idea and spend the hour proving or disproving only that idea. Ending a branch
-does not complete the discovery program. No candidate is promoted by the clock.
+Follow the discovery-first amendment: emphasize idea generation, derivation
+and useful implementation, with inexpensive checks to remove poor ideas.
+Keep hypotheses revisable; ending one branch does not finish discovery.
+S26 paid graph calibration, S27 threshold value calibration, S28 reusable
+repair, S29 source geometry/quotients and S30 common-CDF fixed-action repair
+remain DEVELOPMENT. The portfolio records thirty families; this count is not
+readiness. Read [s07 findings](s07/findings.md) for the actual delta.
 
-The current families are **S26 paid graph calibration**, **S27 threshold value
-calibration** and **S28 reusable weighted repair**. All are DEVELOPMENT;
-readiness is unassessed, P3-POS01 OUTSTANDING, P3-11 deferred. Check the latest
-portfolio for subsequent changes. The generative aim remains
-[calibrated repair](s05/calibrated_repair.md): learn the costs relevant to an
-action while acquiring the logical evidence needed to certify that action.
-Cost audits shrink a common uncertainty source W; logical purchases improve
-checked feasible actions or lower proofs. Unknown source laws, supplied weights
-and proof-production costs are not free calibrated knowledge.
+The best next construction is **paid source geometry joined to a smaller
+cost-learning target**. Prove or reuse which original-source violation directions
+are fixed or shared across repairs, compile the contrasts that still matter,
+and quote a complete residual audit/proof route. The
+[signed geometry bridge](s07/signed_geometry.md) actually acquires three raw
+negative proofs at transformed nonnegative objectives and checks their meaning
+for the original source. Its one audit chooses a zero-regret repair while a
+mandatory cost remains 1 or 100. All three proofs are billed; a simpler ordinary
+mandatory-coordinate proof or propagation may be cheaper. It is a tiny capability
+example, not a comparative advantage.
 
-The latest useful construction is [scalar-anchor transport](s06/source_anchor.md).
-For N fixed cost rows with compatible public modes Q_i, independently checked
-`ell_k <= C*(N*m_k)` at full-cohort anchors yield a uniform regret certificate
-through rowwise maxima. It can tighten after actual observations without new
-LP/proof calls, hull vertices or Boolean-mask enumeration. Different anchors
-may use different admitted proofs; every returned action stays fixed throughout
-the source remaining after the observed outcome.
+[Affine transport](s07/s29_affine.md) explains why feasible-source equalities
+cannot simply be applied to old abstract leaf masks. A new receipt combines a
+checked scalar lower and separately admitted source geometry. An affine cost
+shift cancels between repairs but still matters against fixed-price replacement.
+The [cost quotient](s07/quotient_audits.md) and
+[closed-form audit plan](s07/quotient_closed_form.md) show how the resulting
+observation target can be smaller. The exact formula replaces 4,224 count states
+with one scalar plan on a 128-row case; all 135 small and nine larger saved
+comparisons agree. These are conditional planning checks, not new source
+acquisitions or full-cost wins. The [inexact-anchor extension](s07/inexact_anchor.md)
+needs only a checked auxiliary witness/lower gap within tolerance for a sufficient
+complete plan. A larger gap leaves an unresolved logical duty even after cost
+audits; retain and price that branch.
 
-Read the binding [focused qualifications](s06/source_anchor_review.md): the
-zero-clamped `cut_dual.point_lower` evaluator requires **nonnegative weights**.
-The raw unclamped expression has broader validity, but its zero clamp does not.
-The clamped dual surrogate need not be concave. Anchor transport uses
-concavity of the **true optimum** and individually valid scalar bounds.
-Preserve frozen executed files; enforce the domain in a new interface, or make
-an explicitly versioned correction with new dependent evidence.
+Use one prospectively declared small development family with explicit audit
+prices or a supported symbolic interval. Integrate actual proof/geometry
+acquisition and residual audits, report all outcomes and fees, and measure the
+reuse horizon needed to repay setup. Give a separately specified ordinary
+controller the same geometry, proposer, representation and warm capabilities.
+Do not invoke an unimplemented optimal oracle, but do not omit a practical
+ordinary threshold/AND-OR method because it matches the candidate.
 
-## Best next constructive move
+The S30 [population result](s07/population_findings.md) is another useful bridge:
+a common CDF event over a fixed sample supports partial task contrasts while
+latent values remain unknown. The corrected actual arm needs 29 audits versus
+58 for full identification, but the stronger direct-contrast control also
+needs 29 with the same 70,605 named units. A deterministic finite-population
+bound closes at that same prefix. Fixed-action regret at mean cost is distinct
+from mode-informed regret; keep sample identities, multiplicities and their
+acquisition costs. Partial task learning is already in earlier repository
+probability/value work; the new question is the paid logical integration.
 
-Put the cheap scalar-anchor evaluator and the existing tree/dual/hull bounds
-behind the **same admitted repair-service interface**, then execute a small
-controller that quotes a complete audit/proof bundle. This should advance the
-scientific acquisition mechanism, not become another broad infrastructure audit.
+## Preserve and use the completed S28 evidence
 
-The current [anchor quotation interface](s06/anchor_quotes.py) derives complete
-SAT/UNSAT outcome bounds and exact audit partitions. A paid observation may
-change which checked repair is selected after its actual outcome. For a truly
-fixed action and fixed proof bank, the worst audit outcome can retain the old
-bound; allowing outcome-dependent action choice can produce positive guaranteed
-gain. Two constructed examples show a useful logical-query regime and a useful
-audit regime. Complementary purchases can defeat singleton-greedy rules.
+The [common repair interface](s07/repair_interface.md) now includes admitted
+tree/scalar bounds and separately paid dual/hull escalation, with enforced
+nonnegative-weight domains. [Complete quotations](s07/bundle_theory.md) retain
+all SAT/UNSAT outcomes, unresolved attempts, actual checking and source binding.
+The complete branching bridge, persistent native IHS and separate checked RUP
+bridge are available; do not repeat an adapter-unavailable investigation.
 
-Use **actual external audit prices or explicit symbolic price regions**.
-Charge quotation construction, source admission, checking, objective updates,
-retention and all possible unresolved attempts. A local guaranteed-improvement
-per cost ratio is only a heuristic, not a general optimality theorem. A small
-AND/OR bundle can choose a complete logical call after an observation, but its
-cost and guarantee must include every compatible outcome. A capped native
-attempt with an unresolved/no-progress outcome does not have positive guaranteed
-singleton progress just because SAT and UNSAT would both be useful.
+Actual a01–a03 bundle runs deliver 16/16 checked outputs. Executable complete
+plans rise from 0/11 to 11/11; a02–a03 quotation units fall 38.57% to 1,718,749.
+The latest named arm bill is 2,306,193, still **4.7544 times** audit-first. Both
+buy fourteen audits and fourteen complete calls. There are zero demonstrated
+10%-benefit complete-cost regions. Even eliminating every measured quotation
+unit leaves **168,618.6 nonquotation units** beyond the named full-horizon 10%
+target. Read [the cost screen](s07/verification_review.md). Further quotation-only
+optimization on that unchanged trace is not the best next experiment.
 
-The [persistent native IHS adapter](s06/native_repair.py) is already callable:
-resident MiniSat22 learned clauses, HiGHS core rows, objective changes and MIP
-starts. No retained HiGHS branch-and-bound tree is claimed. A separately paid
-[Glucose3 RUP bridge](s06/rup_findings.md) exports bounded proofs and independently
-checks them after explicit source/objective encoding. It is a fresh proof call,
-not an exported native IHS optimum/core proof. The separately admitted
-[complete branching fallback](s06/complete_findings.md) is also callable.
-Its completion guarantee is conditional on the finite source/code contract,
-sufficient operation caps and normal uninterrupted execution; it is not a
-native CPU, host or economic deadline. Preserve interrupted work as unresolved.
+The [expanded ordinary witness menu](s07/witness_review.md) actually closes
+both schedules with sixteen outputs, fourteen audits and eight complete calls.
+Audit-before-witness uses eleven MIP proposals instead of twenty-five and
+658,633 versus 1,142,250 named arm units. This comparison has its own expanded
+menu and cannot be merged with a03. The whole-arm timing harness is asymmetric;
+no speed claim is supported. Native primal proposals are checked witnesses,
+not independent lower proofs. Warm objects/starts do not imply retained B&B.
 
-Keep these actual capabilities available rather than redoing the former
-"native adapter unavailable" investigation. [Reproduction instructions](s06/reproduce.md)
-separate new acquisitions from replay, pin dependencies and avoid overwriting
-historical result files. If integration becomes unpromising, retain
-[selective frontier acquisition](s05/active_frontier.md),
-[the AOLS/CMOVE bridge](s05/frontier_sources.md),
-[partial threshold value acquisition](s05/value_acquisition.md) and paid graph
-calibration as constructive alternatives.
+The ambiguity screens have valid lower-bound interpretations but poor observed
+costs; the stronger discrete floor catches no additional broad-trace states.
+Do not implement an assumed saving by merely deleting old calls from a trace.
+Any actual skip policy changes later state and needs its own execution record.
 
-## Existing evidence to use, not repeat
+Current raw initial-bank admission is 92,969 named units for 29 witnesses and
+18 proof trees; complete-code admission adds 6,725, and historical acquisition
+77,646 is separate. Quotes are already inside arm invoices. Source/CPU/native
+memory, external prices, retained byte-time, failed work and serialization are
+not zero by omission. Use [s07 reproduction](s07/reproduce.md) to distinguish
+read-only reconstruction from new acquisitions and restore frozen versions at
+their correct import paths. Preserve all old executed bytes and source hashes.
 
-The [joint v2 service](s06/joint_findings.md) actually interleaves cost audits
-and logical work on a committed eight-row/six-mode finite cost source. No
-outcome distribution or population guarantee is supplied. Its internal costs
-are cohort sums; replacement 48 and tolerance 4 mean 6 and 0.5 for the cohort
-mean. Four policies all deliver sixteen checked outputs. Audit-first uses
-14 observations/13 logical purchases; logic-first 14/18; certificate-directed
-15/23; the expensive shared-deficit policy 16/14. Shared-deficit has no supported
-complete-cost advantage. Logic-first closes its first request with six
-observations and two logical purchases while four rows remain unobserved.
-The [complete service](s06/complete_service_results.json) separately delivers
-all sixteen with 14 observations and 14 complete branching calls, no native
-IHS calls. It is a different purchase policy/menu, not a matched economic win.
+## Numerical recurrence reporting and promotion decision
 
-The [supplied-weight native stream](s06/native_findings.md) closes all eighty
-requests: tolerance arm 61 cache/19 purchases, exact control 62/18. The separate
-[RUP stream](s06/rup_findings.md) closes all eighty with 60/20 and 61/19. It
-establishes a supported proof-export capability, with no measured tariff
-advantage over the branching bridge. Failed warm-start and empty-export
-attempts remain in the archives; two early unsaved native outputs are explicitly
-unavailable. A backend optimum, raw core or generic UNSAT log never enters the
-independent lower bank on its own.
+The author's latest instruction replaces the old default of leaving current
+cells N/A or every promotion forecast unassessed. **At every recurrence update
+[the dashboard](recurrences.md) and [its exact source](recurrences.json).**
+Keep several useful quantitative metrics and **Promotion forecast**. Add,
+replace or remove other metrics when that makes the decision easier to assess.
+A family count or prerequisite tally is context, not a probability or percentage
+of completed work. Never force a favorable direction or fabricate measurements.
 
-[Grouped-hull replay](s06/hull_findings.md) finds **three extra prefix gates on
-one request row**, not three newly completed requests or actual saved calls.
-[Scalar-anchor replay](s06/source_anchor_results.json) uses each completed
-logical arm's own paid bank and the same fourteen historical cost observations.
-At prefixes 0,4,8,12,14 its tolerance-bank closure counts are 0,0,0,1,4 and its
-exact-bank counts 0,0,0,4,5. A cost row is unresolved at prefix 12. This is
-conditional representation-query evidence with zero new acquisitions, not an
-executed acquisition policy's savings. The broad initial-source dual/hull query
-has zero extra tolerance closures. Do not tune the exposed fixture to manufacture
-a positive headline; use it only at its declared development scope.
+For each metric, define units, denominator, source, request duty, candidate/control
+menu and caps, price convention, latest actual observation and comparison scope.
+Show changes from the last comparable measurement, including zero or negative
+changes. When no comparable new measurement occurs, carry the latest valid value
+with its measurement date/recurrence age and say it was not rerun. Reserve N/A
+for a genuinely inapplicable or unavailable quantity with a specific reason.
+Use bound contraction, required acquisitions, complete quote cost and decision
+coverage when raw full-identification counts miss the task's progress.
 
-The [8,037-byte s05 cache](s05/regions_bundle.json) requires a real raw-checker
-admission. New s06 consumers actually recheck 29 witnesses and 18 proof trees,
-then match the compact pointwise projection. Unused region geometry is not
-implicitly admitted. Preserve source IDs, variable/objective meanings, witness
-IDs, proof dependencies and raw archives. A checksum cannot validate unseen
-proof bytes. Current raw admission is 92,969 named units; historical acquisition
-77,646 remains separate. Native time and external observation prices remain
-unassigned additional resources in the relevant invoice tables.
+Preserve the seventeen pre-s07 historical rows and unassessed probabilities;
+do not invent retrospective forecasts. s07 starts **F01**: S28-B1 surviving
+verification V1 and establishing at least 10% complete-cost benefit on the
+specified fresh 24-stream domain, against the strongest named equal-interface
+ordinary controls, over the specified robust price interval. The first
+prospective forecast was 25–50%, central35%; the
+[final forecast](s07/forecast_final.md) is **20–45%, central30%**, down five
+percentage points. Central gaps: 50 points to the 80% minimum, 60 to the preferred
+90%. It is a subjective range, not a confidence interval or calibrated estimate.
 
-The old s05 stream v2 correction is still a zero-new-search replay. Its 929-unit
-shared-setup margin is conditional: omitting initial scalar mask compilation
-gives invoice-adjusted 71,529 versus tree 71,919, not a new executed variant.
-Read the [v2 findings](s05/repair_stream_v2_findings.md) before quoting it.
-No robust total-cost advantage or fresh validation is established by these
-exposed development fixtures.
+Reassess F01 numerically each round even when unchanged, state the new evidence
+and decisive obstacle, and identify the next measurement that could change the
+judgment. A changed mechanism, domain, comparison or threshold starts a new event
+with its own specification and baseline; do not relabel it as an F01 improvement.
+If the next matched construction still duplicates an ordinary method at higher
+cost with no supported full-cost region, keep that finding and redirect the
+next discovery effort. Do not predict a fixed number of hours to promotion
+without evidence. Crossing a forecast threshold does not waive the substantive
+protocol conditions or the planned confirmation.
 
-## Comparison contract and finish
+## Finish this increment
 
-Give conventional controllers the same checked receipts, compact representation,
-source observations, objective passes, actual warm state, spending caps and
-requested tolerance. Persistent IHS/MaxSAT with supported reuse and tolerance
-stopping remains a strong solver comparison. Give it the same scalar-anchor,
-cut-dual and hull evaluators when relevant. Retain each arm's own paid results
-for later requests. Distinguish historical acquisition, current replay, new
-calls, operation tariffs and measured CPU/wall time. Charge admission,
-compilation, objective updates, search, checking, storage and unresolved work.
-Do not use diagnostic optima to choose gates or treat optimum value as a
-runtime model. Return the actual repair or replacement, its evidence and invoice.
-
-Attribute new work to the actual model. Save reconstructable derivations,
-scoped examples and source-bound code/results. Keep paths within the repository's
-200 UTF-16-unit limit, preserve historical evidence, and run necessary focused
-checks plus the required repository publication gates. Do not build an
-adversarial campaign around an early mechanism.
-
-After approximately one engaged research hour, close and reconcile the actual
-clock, update the checkpoint and current pointers, and refresh this prompt with
-the best next constructive move. **Update [the recurrence table](recurrences.md)
-and [its exact source record](recurrences.json) every round:** add the new
-increment's effective research and cumulative minutes (round each from exact
-nanoseconds) and a one-to-three-sentence description. Reuse the existing fixed
-metric columns and policy lanes, including the family count. Enter **N/A** when
-not introduced, inapplicable or not newly measured, with the reason in the source
-record. For each actual comparable measurement, show the change since the last
-comparable measurement, including zero or negative changes; use percentage
-points for coverage. First measurements have no invented improvement. Give new
-metrics or duties their own defined columns, with N/A in earlier rows, and
-retain their units, denominators, source contracts and spending caps. Do not
-rerun old workloads solely to populate the table. Keep interrupted tails and
-excluded attempts explicit, preserve earlier rows, and distinguish actual
-acquisitions from replay and action costs from complete service costs. Link
-the updated table from the new checkpoint and handoff.
-
-Keep **promotion readiness** as its own metric: the subjective probability or
-justified range that the specified candidate survives its planned rigorous
-verification and establishes its specified material-positive claim. The intended
-minimum is **80%**, with **90% preferred**. Earlier C001 rounds are unassessed;
-do not invent retrospective probabilities. Briefly revisit the current evidence
-and blockers each round. Specify candidate/version, claim, domain, materiality
-threshold, strongest comparison, complete costs and verification-plan version
-before assigning an estimate. Show percentage-point changes only for the same
-event; a changed event starts a new series. Use N/A/unassessed when the evidence
-cannot support a useful estimate. The current prerequisite tally in the table
-is not a success probability or a percentage of work completed.
-
-This maintenance adds no research credit. Follow current publication instructions and
-the author's existing authorization. Report what advanced, its evidence and
-costs, material limitations, exact actuals and the recommended next one-hour
-recurrence. Leave C001 open unless its substantive conditions truly change.
-Do not claim material-positive verification or an 80–90% readiness forecast
-merely because the increment finished.
+Close and reconcile the observed clock after approximately one engaged hour.
+Update checkpoint, session, active pointers, claims/portfolio, recurrence metrics
+and this portable prompt. Round minutes from exact nanoseconds. Attribute new
+work to the actual model; preserve raw failed and interrupted records. Stage
+only intended changes, run the full verification suite, math, staged path,
+evidence and portability gates under the current guides, then commit and publish
+a reviewable branch/PR under the author's authorization. Report actual local
+and remote outcomes; repository checks and publication add no research credit.
+Leave C001 open unless its substantive conditions truly change. Stop after this
+handoff rather than starting another recurrence automatically.

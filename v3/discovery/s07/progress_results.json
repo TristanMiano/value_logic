@@ -1,0 +1,1230 @@
+{
+  "version": "s07-progress-extraction-v3",
+  "evidence": "DEVELOPMENT read-only extraction",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "new_acquisitions": 0,
+  "extractor_sha256": "0353a49367b7aaa109af30a711d5c36e9c8c1f3e2758e0eea03f974a3c4c3f70",
+  "supersedes_extractor": {
+    "path": "v3/discovery/s07/progress_report_v2.py",
+    "sha256": "51b155021357b33d39eedd7a64b46bd4a3aedd5c9f44c4f84bb4694fb745debc",
+    "correction": "Known a01 controls have no bundle planner: their three quotation-specific payloads are source-proven absent, not unknown. Older candidate payloads and all other missing costs remain unmeasured."
+  },
+  "arms": [
+    {
+      "measurement_status": "new actual acquisitions in the source run; this extraction is read-only",
+      "source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "version": "s07-complete-bundle-v1",
+      "policy": "bundle",
+      "implementation_sha256": "b2df479412f688a4b0b717a084a175a83fe248af276c4e671b5bd7682a7d44c4",
+      "dependency_hashes": {
+        "lattice_quotes.py": "480b72168c73f18c8d2914af05f25a3792b5d6654fa0612393cae61b2575b37d",
+        "repair_interface.py": "1ec100e50c6ab11600d9074fa718b4136d8227192b112676de468979725a6b8a",
+        "contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+        "native_stream.py": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+        "native_repair.py": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a"
+      },
+      "scope_id": "2ea4218036bd9f0550c15fa34462f3ce310f29e642f1621026561afd00bf3d9f",
+      "scope_binding": {
+        "source_identity": "8ff4d4165568151a25a530b085c2c27cda9bd77408b1a552d4358008211a33df",
+        "source_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+        "request_signature_sha256": "f21f611e311f5e506ede47cc75de486ff6375e6ad89828e6c2c6716ff2c65684",
+        "initial_admission_hashes": {
+          "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+          "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+          "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+          "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+        }
+      },
+      "configuration": {
+        "depth": 1,
+        "audit_price_slice": 1000,
+        "policies": [
+          "bundle",
+          "audit_first",
+          "logic_first",
+          "native_logic"
+        ]
+      },
+      "counts": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 14,
+        "complete_calls": 14,
+        "native_attempts": 0,
+        "logical_purchases": 14,
+        "unresolved": 0,
+        "executed_complete_bundles": 0,
+        "quoted_unclosed_states": 28
+      },
+      "checked_coverage_percent": 100.0,
+      "complete_plan_requests": [],
+      "complete_plan_request_coverage": {
+        "numerator": 0,
+        "denominator": 11,
+        "meaning": "Requests closed after executing a complete quoted plan / requests needing new work"
+      },
+      "complete_plan_root_kinds": {},
+      "quotation": {
+        "call_meter_delta_units": 2312300,
+        "initialization_units": 2112,
+        "initialization_basis": "known v1/v2 constructor's separately metered complete-call quotations",
+        "total_units": 2314412,
+        "arm_named_units_share_percent": 82.67971778154863,
+        "meaning": "Full per-plan meter deltas across all categories plus separately metered planner setup; included in the enclosing invoice, never added to it again",
+        "selectors": [
+          "sum(plans[].quote_units)",
+          "planner constructor meter delta or known v1/v2 initialization operation"
+        ]
+      },
+      "resources": {
+        "arm_named_units": 2799250,
+        "common_current_named_units": 99694,
+        "historical_acquisition_named_units": 77646,
+        "standalone_current_named_units": 2898944,
+        "full_horizon_named_units": 2976590,
+        "external_audits": 14,
+        "arm_process_ns": 1485255844,
+        "arm_wall_ns": 1146255959,
+        "recorded_current_process_ns": 1557464426,
+        "recorded_current_wall_ns": 1154461853,
+        "recorded_retained_bytes": 79445,
+        "recorded_common_storage_scope": "profile_bytes + planner_cache_bytes + cost_support.serialized_bytes",
+        "additional_quotation_payload_byte_components": null,
+        "additional_quotation_payload_bytes": null,
+        "all_reported_serialized_payload_bytes": null,
+        "quotation_payload_record": null,
+        "quotation_payload_measurement": {
+          "status": "unmeasured",
+          "basis": "No quotation_payload record and no exact reviewed implementation rule establishing absence"
+        },
+        "missing_payload_policy": "A missing quotation_payload record remains unmeasured unless an exact reviewed version/source hash and matching raw fields prove these specific objects absent. Source-backed structural absence is zero; all other missing payloads remain explicit symbolic terms, and other unmeasured host/native memory remains in R.",
+        "retained_bytes_components": {
+          "profile_bytes": 11197,
+          "planner_cache_bytes": 456,
+          "cost_support": {
+            "compiled_contrasts": 341,
+            "row_extrema": 1706,
+            "row_cache_hits": 40398,
+            "row_cache_misses": 1706,
+            "serialized_bytes": 67792
+          }
+        },
+        "storage_limit": "Serialized profile/planner/support records only; not complete live/native memory, archive storage or byte-time",
+        "time_limit": "Recorded current admission and arm intervals only; excludes unmeasured source I/O, historical CPU and unitemized host work"
+      },
+      "invoice_components": {
+        "controller_and_interface_units": 2747913,
+        "complete_wrapper_units": 51281,
+        "native_adapter_units": 0,
+        "native_proof_units": 0,
+        "native_setup_units": 0,
+        "audit_provider_software_units": 56
+      },
+      "demonstrated_ten_percent_full_cost_regions": {
+        "value": 0,
+        "status": "none established by these development invoices",
+        "meaning": "Count of warranted >=10% complete-cost price regions, not a claim that every symbolic assignment is impossible",
+        "remaining": "External rates, complete retained byte-time, unitemized host work/fees and fresh-domain verification remain open"
+      },
+      "output_certificate_limit": "Counts and bounds reconstructed from saved records; raw-proof rechecking is a separate verification artifact"
+    },
+    {
+      "measurement_status": "new actual acquisitions in the source run; this extraction is read-only",
+      "source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=audit_first]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "version": "s07-complete-bundle-v1",
+      "policy": "audit_first",
+      "implementation_sha256": "b2df479412f688a4b0b717a084a175a83fe248af276c4e671b5bd7682a7d44c4",
+      "dependency_hashes": {
+        "lattice_quotes.py": "480b72168c73f18c8d2914af05f25a3792b5d6654fa0612393cae61b2575b37d",
+        "repair_interface.py": "1ec100e50c6ab11600d9074fa718b4136d8227192b112676de468979725a6b8a",
+        "contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+        "native_stream.py": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+        "native_repair.py": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a"
+      },
+      "scope_id": "2ea4218036bd9f0550c15fa34462f3ce310f29e642f1621026561afd00bf3d9f",
+      "scope_binding": {
+        "source_identity": "8ff4d4165568151a25a530b085c2c27cda9bd77408b1a552d4358008211a33df",
+        "source_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+        "request_signature_sha256": "f21f611e311f5e506ede47cc75de486ff6375e6ad89828e6c2c6716ff2c65684",
+        "initial_admission_hashes": {
+          "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+          "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+          "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+          "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+        }
+      },
+      "configuration": {
+        "depth": 1,
+        "audit_price_slice": 1000,
+        "policies": [
+          "bundle",
+          "audit_first",
+          "logic_first",
+          "native_logic"
+        ]
+      },
+      "counts": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 14,
+        "complete_calls": 14,
+        "native_attempts": 0,
+        "logical_purchases": 14,
+        "unresolved": 0,
+        "executed_complete_bundles": 0,
+        "quoted_unclosed_states": 0
+      },
+      "checked_coverage_percent": 100.0,
+      "complete_plan_requests": [],
+      "complete_plan_request_coverage": {
+        "numerator": 0,
+        "denominator": 11,
+        "meaning": "Requests closed after executing a complete quoted plan / requests needing new work"
+      },
+      "complete_plan_root_kinds": {},
+      "quotation": {
+        "call_meter_delta_units": 0,
+        "initialization_units": 0,
+        "initialization_basis": "no bundle planner constructed",
+        "total_units": 0,
+        "arm_named_units_share_percent": 0.0,
+        "meaning": "Full per-plan meter deltas across all categories plus separately metered planner setup; included in the enclosing invoice, never added to it again",
+        "selectors": [
+          "sum(plans[].quote_units)",
+          "planner constructor meter delta or known v1/v2 initialization operation"
+        ]
+      },
+      "resources": {
+        "arm_named_units": 485066,
+        "common_current_named_units": 99694,
+        "historical_acquisition_named_units": 77646,
+        "standalone_current_named_units": 584760,
+        "full_horizon_named_units": 662406,
+        "external_audits": 14,
+        "arm_process_ns": 813890172,
+        "arm_wall_ns": 814974558,
+        "recorded_current_process_ns": 886098754,
+        "recorded_current_wall_ns": 823180452,
+        "recorded_retained_bytes": 71432,
+        "recorded_common_storage_scope": "profile_bytes + planner_cache_bytes + cost_support.serialized_bytes",
+        "additional_quotation_payload_byte_components": {
+          "prepared_quote_cache_bytes": 0,
+          "enclosure_cache_bytes": 0,
+          "margin_cache_bytes": 0
+        },
+        "additional_quotation_payload_bytes": 0,
+        "all_reported_serialized_payload_bytes": 71432,
+        "quotation_payload_record": null,
+        "quotation_payload_measurement": {
+          "status": "structurally_absent_in_verified_implementation",
+          "basis": "The exact archived run_arm constructs BundlePlanner only if policy=='bundle'; this control constructs none. The named quotation payloads belong to that planner and are absent here.",
+          "source_path": "v3/discovery/s07/a01/bundle_service.py",
+          "implementation_sha256": "b2df479412f688a4b0b717a084a175a83fe248af276c4e671b5bd7682a7d44c4",
+          "source_selectors": [
+            "run_arm: conditional BundlePlanner construction",
+            "run_arm: plans initialization and planner-conditional final fields"
+          ],
+          "corroborating_record_fields": {
+            "storage.planner_cache_bytes": 0,
+            "plans": [],
+            "planner_stats": {}
+          },
+          "limit": "Proves absence only of prepared quote, enclosure and margin payloads; no assertion about other unmeasured host/native memory"
+        },
+        "missing_payload_policy": "A missing quotation_payload record remains unmeasured unless an exact reviewed version/source hash and matching raw fields prove these specific objects absent. Source-backed structural absence is zero; all other missing payloads remain explicit symbolic terms, and other unmeasured host/native memory remains in R.",
+        "retained_bytes_components": {
+          "profile_bytes": 11197,
+          "planner_cache_bytes": 0,
+          "cost_support": {
+            "compiled_contrasts": 341,
+            "row_extrema": 1478,
+            "row_cache_hits": 13354,
+            "row_cache_misses": 1478,
+            "serialized_bytes": 60235
+          }
+        },
+        "storage_limit": "Serialized profile/planner/support records only; not complete live/native memory, archive storage or byte-time",
+        "time_limit": "Recorded current admission and arm intervals only; excludes unmeasured source I/O, historical CPU and unitemized host work"
+      },
+      "invoice_components": {
+        "controller_and_interface_units": 433729,
+        "complete_wrapper_units": 51281,
+        "native_adapter_units": 0,
+        "native_proof_units": 0,
+        "native_setup_units": 0,
+        "audit_provider_software_units": 56
+      },
+      "demonstrated_ten_percent_full_cost_regions": {
+        "value": 0,
+        "status": "none established by these development invoices",
+        "meaning": "Count of warranted >=10% complete-cost price regions, not a claim that every symbolic assignment is impossible",
+        "remaining": "External rates, complete retained byte-time, unitemized host work/fees and fresh-domain verification remain open"
+      },
+      "output_certificate_limit": "Counts and bounds reconstructed from saved records; raw-proof rechecking is a separate verification artifact"
+    },
+    {
+      "measurement_status": "new actual acquisitions in the source run; this extraction is read-only",
+      "source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=logic_first]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "version": "s07-complete-bundle-v1",
+      "policy": "logic_first",
+      "implementation_sha256": "b2df479412f688a4b0b717a084a175a83fe248af276c4e671b5bd7682a7d44c4",
+      "dependency_hashes": {
+        "lattice_quotes.py": "480b72168c73f18c8d2914af05f25a3792b5d6654fa0612393cae61b2575b37d",
+        "repair_interface.py": "1ec100e50c6ab11600d9074fa718b4136d8227192b112676de468979725a6b8a",
+        "contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+        "native_stream.py": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+        "native_repair.py": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a"
+      },
+      "scope_id": "2ea4218036bd9f0550c15fa34462f3ce310f29e642f1621026561afd00bf3d9f",
+      "scope_binding": {
+        "source_identity": "8ff4d4165568151a25a530b085c2c27cda9bd77408b1a552d4358008211a33df",
+        "source_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+        "request_signature_sha256": "f21f611e311f5e506ede47cc75de486ff6375e6ad89828e6c2c6716ff2c65684",
+        "initial_admission_hashes": {
+          "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+          "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+          "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+          "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+        }
+      },
+      "configuration": {
+        "depth": 1,
+        "audit_price_slice": 1000,
+        "policies": [
+          "bundle",
+          "audit_first",
+          "logic_first",
+          "native_logic"
+        ]
+      },
+      "counts": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 14,
+        "complete_calls": 18,
+        "native_attempts": 0,
+        "logical_purchases": 18,
+        "unresolved": 0,
+        "executed_complete_bundles": 0,
+        "quoted_unclosed_states": 0
+      },
+      "checked_coverage_percent": 100.0,
+      "complete_plan_requests": [],
+      "complete_plan_request_coverage": {
+        "numerator": 0,
+        "denominator": 11,
+        "meaning": "Requests closed after executing a complete quoted plan / requests needing new work"
+      },
+      "complete_plan_root_kinds": {},
+      "quotation": {
+        "call_meter_delta_units": 0,
+        "initialization_units": 0,
+        "initialization_basis": "no bundle planner constructed",
+        "total_units": 0,
+        "arm_named_units_share_percent": 0.0,
+        "meaning": "Full per-plan meter deltas across all categories plus separately metered planner setup; included in the enclosing invoice, never added to it again",
+        "selectors": [
+          "sum(plans[].quote_units)",
+          "planner constructor meter delta or known v1/v2 initialization operation"
+        ]
+      },
+      "resources": {
+        "arm_named_units": 704887,
+        "common_current_named_units": 99694,
+        "historical_acquisition_named_units": 77646,
+        "standalone_current_named_units": 804581,
+        "full_horizon_named_units": 882227,
+        "external_audits": 14,
+        "arm_process_ns": 1415414073,
+        "arm_wall_ns": 1416894346,
+        "recorded_current_process_ns": 1487622655,
+        "recorded_current_wall_ns": 1425100240,
+        "recorded_retained_bytes": 82207,
+        "recorded_common_storage_scope": "profile_bytes + planner_cache_bytes + cost_support.serialized_bytes",
+        "additional_quotation_payload_byte_components": {
+          "prepared_quote_cache_bytes": 0,
+          "enclosure_cache_bytes": 0,
+          "margin_cache_bytes": 0
+        },
+        "additional_quotation_payload_bytes": 0,
+        "all_reported_serialized_payload_bytes": 82207,
+        "quotation_payload_record": null,
+        "quotation_payload_measurement": {
+          "status": "structurally_absent_in_verified_implementation",
+          "basis": "The exact archived run_arm constructs BundlePlanner only if policy=='bundle'; this control constructs none. The named quotation payloads belong to that planner and are absent here.",
+          "source_path": "v3/discovery/s07/a01/bundle_service.py",
+          "implementation_sha256": "b2df479412f688a4b0b717a084a175a83fe248af276c4e671b5bd7682a7d44c4",
+          "source_selectors": [
+            "run_arm: conditional BundlePlanner construction",
+            "run_arm: plans initialization and planner-conditional final fields"
+          ],
+          "corroborating_record_fields": {
+            "storage.planner_cache_bytes": 0,
+            "plans": [],
+            "planner_stats": {}
+          },
+          "limit": "Proves absence only of prepared quote, enclosure and margin payloads; no assertion about other unmeasured host/native memory"
+        },
+        "missing_payload_policy": "A missing quotation_payload record remains unmeasured unless an exact reviewed version/source hash and matching raw fields prove these specific objects absent. Source-backed structural absence is zero; all other missing payloads remain explicit symbolic terms, and other unmeasured host/native memory remains in R.",
+        "retained_bytes_components": {
+          "profile_bytes": 11833,
+          "planner_cache_bytes": 0,
+          "cost_support": {
+            "compiled_contrasts": 334,
+            "row_extrema": 1749,
+            "row_cache_hits": 20859,
+            "row_cache_misses": 1749,
+            "serialized_bytes": 70374
+          }
+        },
+        "storage_limit": "Serialized profile/planner/support records only; not complete live/native memory, archive storage or byte-time",
+        "time_limit": "Recorded current admission and arm intervals only; excludes unmeasured source I/O, historical CPU and unitemized host work"
+      },
+      "invoice_components": {
+        "controller_and_interface_units": 640244,
+        "complete_wrapper_units": 64587,
+        "native_adapter_units": 0,
+        "native_proof_units": 0,
+        "native_setup_units": 0,
+        "audit_provider_software_units": 56
+      },
+      "demonstrated_ten_percent_full_cost_regions": {
+        "value": 0,
+        "status": "none established by these development invoices",
+        "meaning": "Count of warranted >=10% complete-cost price regions, not a claim that every symbolic assignment is impossible",
+        "remaining": "External rates, complete retained byte-time, unitemized host work/fees and fresh-domain verification remain open"
+      },
+      "output_certificate_limit": "Counts and bounds reconstructed from saved records; raw-proof rechecking is a separate verification artifact"
+    },
+    {
+      "measurement_status": "new actual acquisitions in the source run; this extraction is read-only",
+      "source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=native_logic]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "version": "s07-complete-bundle-v1",
+      "policy": "native_logic",
+      "implementation_sha256": "b2df479412f688a4b0b717a084a175a83fe248af276c4e671b5bd7682a7d44c4",
+      "dependency_hashes": {
+        "lattice_quotes.py": "480b72168c73f18c8d2914af05f25a3792b5d6654fa0612393cae61b2575b37d",
+        "repair_interface.py": "1ec100e50c6ab11600d9074fa718b4136d8227192b112676de468979725a6b8a",
+        "contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+        "native_stream.py": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+        "native_repair.py": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a"
+      },
+      "scope_id": "2ea4218036bd9f0550c15fa34462f3ce310f29e642f1621026561afd00bf3d9f",
+      "scope_binding": {
+        "source_identity": "8ff4d4165568151a25a530b085c2c27cda9bd77408b1a552d4358008211a33df",
+        "source_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+        "request_signature_sha256": "f21f611e311f5e506ede47cc75de486ff6375e6ad89828e6c2c6716ff2c65684",
+        "initial_admission_hashes": {
+          "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+          "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+          "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+          "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+        }
+      },
+      "configuration": {
+        "depth": 1,
+        "audit_price_slice": 1000,
+        "policies": [
+          "bundle",
+          "audit_first",
+          "logic_first",
+          "native_logic"
+        ]
+      },
+      "counts": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 14,
+        "complete_calls": 0,
+        "native_attempts": 18,
+        "logical_purchases": 18,
+        "unresolved": 0,
+        "executed_complete_bundles": 0,
+        "quoted_unclosed_states": 0
+      },
+      "checked_coverage_percent": 100.0,
+      "complete_plan_requests": [],
+      "complete_plan_request_coverage": {
+        "numerator": 0,
+        "denominator": 11,
+        "meaning": "Requests closed after executing a complete quoted plan / requests needing new work"
+      },
+      "complete_plan_root_kinds": {},
+      "quotation": {
+        "call_meter_delta_units": 0,
+        "initialization_units": 0,
+        "initialization_basis": "no bundle planner constructed",
+        "total_units": 0,
+        "arm_named_units_share_percent": 0.0,
+        "meaning": "Full per-plan meter deltas across all categories plus separately metered planner setup; included in the enclosing invoice, never added to it again",
+        "selectors": [
+          "sum(plans[].quote_units)",
+          "planner constructor meter delta or known v1/v2 initialization operation"
+        ]
+      },
+      "resources": {
+        "arm_named_units": 694776,
+        "common_current_named_units": 99694,
+        "historical_acquisition_named_units": 77646,
+        "standalone_current_named_units": 794470,
+        "full_horizon_named_units": 872116,
+        "external_audits": 14,
+        "arm_process_ns": 2264880042,
+        "arm_wall_ns": 2268054235,
+        "recorded_current_process_ns": 2337088624,
+        "recorded_current_wall_ns": 2276260129,
+        "recorded_retained_bytes": 82207,
+        "recorded_common_storage_scope": "profile_bytes + planner_cache_bytes + cost_support.serialized_bytes",
+        "additional_quotation_payload_byte_components": {
+          "prepared_quote_cache_bytes": 0,
+          "enclosure_cache_bytes": 0,
+          "margin_cache_bytes": 0
+        },
+        "additional_quotation_payload_bytes": 0,
+        "all_reported_serialized_payload_bytes": 82207,
+        "quotation_payload_record": null,
+        "quotation_payload_measurement": {
+          "status": "structurally_absent_in_verified_implementation",
+          "basis": "The exact archived run_arm constructs BundlePlanner only if policy=='bundle'; this control constructs none. The named quotation payloads belong to that planner and are absent here.",
+          "source_path": "v3/discovery/s07/a01/bundle_service.py",
+          "implementation_sha256": "b2df479412f688a4b0b717a084a175a83fe248af276c4e671b5bd7682a7d44c4",
+          "source_selectors": [
+            "run_arm: conditional BundlePlanner construction",
+            "run_arm: plans initialization and planner-conditional final fields"
+          ],
+          "corroborating_record_fields": {
+            "storage.planner_cache_bytes": 0,
+            "plans": [],
+            "planner_stats": {}
+          },
+          "limit": "Proves absence only of prepared quote, enclosure and margin payloads; no assertion about other unmeasured host/native memory"
+        },
+        "missing_payload_policy": "A missing quotation_payload record remains unmeasured unless an exact reviewed version/source hash and matching raw fields prove these specific objects absent. Source-backed structural absence is zero; all other missing payloads remain explicit symbolic terms, and other unmeasured host/native memory remains in R.",
+        "retained_bytes_components": {
+          "profile_bytes": 11833,
+          "planner_cache_bytes": 0,
+          "cost_support": {
+            "compiled_contrasts": 334,
+            "row_extrema": 1749,
+            "row_cache_hits": 20859,
+            "row_cache_misses": 1749,
+            "serialized_bytes": 70374
+          }
+        },
+        "storage_limit": "Serialized profile/planner/support records only; not complete live/native memory, archive storage or byte-time",
+        "time_limit": "Recorded current admission and arm intervals only; excludes unmeasured source I/O, historical CPU and unitemized host work"
+      },
+      "invoice_components": {
+        "controller_and_interface_units": 639884,
+        "complete_wrapper_units": 0,
+        "native_adapter_units": 8456,
+        "native_proof_units": 43276,
+        "native_setup_units": 3104,
+        "audit_provider_software_units": 56
+      },
+      "demonstrated_ten_percent_full_cost_regions": {
+        "value": 0,
+        "status": "none established by these development invoices",
+        "meaning": "Count of warranted >=10% complete-cost price regions, not a claim that every symbolic assignment is impossible",
+        "remaining": "External rates, complete retained byte-time, unitemized host work/fees and fresh-domain verification remain open"
+      },
+      "output_certificate_limit": "Counts and bounds reconstructed from saved records; raw-proof rechecking is a separate verification artifact"
+    },
+    {
+      "measurement_status": "new actual acquisitions in the source run; this extraction is read-only",
+      "source": {
+        "path": "v3/discovery/s07/a02/results.json",
+        "sha256": "5064970c09b46b68b4445e622a73ab80afe5db57904b19ce55995b91fb97c99c",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:11:46.773039+00:00",
+        "completed_utc": "2026-10-12T20:11:47.983429+00:00"
+      },
+      "version": "s07-complete-bundle-v2",
+      "policy": "bundle",
+      "implementation_sha256": "26d07bb4a0112539581d544c8db08dcf519479a98b9b5896a4c351adb07e4065",
+      "dependency_hashes": {
+        "lattice_quotes.py": "480b72168c73f18c8d2914af05f25a3792b5d6654fa0612393cae61b2575b37d",
+        "repair_interface.py": "1ec100e50c6ab11600d9074fa718b4136d8227192b112676de468979725a6b8a",
+        "contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+        "native_stream.py": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+        "native_repair.py": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a"
+      },
+      "scope_id": "2ea4218036bd9f0550c15fa34462f3ce310f29e642f1621026561afd00bf3d9f",
+      "scope_binding": {
+        "source_identity": "8ff4d4165568151a25a530b085c2c27cda9bd77408b1a552d4358008211a33df",
+        "source_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+        "request_signature_sha256": "f21f611e311f5e506ede47cc75de486ff6375e6ad89828e6c2c6716ff2c65684",
+        "initial_admission_hashes": {
+          "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+          "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+          "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+          "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+        }
+      },
+      "configuration": {
+        "depth": 1,
+        "audit_price_slice": 1000,
+        "policies": [
+          "bundle"
+        ]
+      },
+      "counts": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 14,
+        "complete_calls": 14,
+        "native_attempts": 0,
+        "logical_purchases": 14,
+        "unresolved": 0,
+        "executed_complete_bundles": 11,
+        "quoted_unclosed_states": 13
+      },
+      "checked_coverage_percent": 100.0,
+      "complete_plan_requests": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14
+      ],
+      "complete_plan_request_coverage": {
+        "numerator": 11,
+        "denominator": 11,
+        "meaning": "Requests closed after executing a complete quoted plan / requests needing new work"
+      },
+      "complete_plan_root_kinds": {
+        "audit": 1,
+        "bracket": 10
+      },
+      "quotation": {
+        "call_meter_delta_units": 2795599,
+        "initialization_units": 2112,
+        "initialization_basis": "known v1/v2 constructor's separately metered complete-call quotations",
+        "total_units": 2797711,
+        "arm_named_units_share_percent": 82.64978719469521,
+        "meaning": "Full per-plan meter deltas across all categories plus separately metered planner setup; included in the enclosing invoice, never added to it again",
+        "selectors": [
+          "sum(plans[].quote_units)",
+          "planner constructor meter delta or known v1/v2 initialization operation"
+        ]
+      },
+      "resources": {
+        "arm_named_units": 3385019,
+        "common_current_named_units": 99694,
+        "historical_acquisition_named_units": 77646,
+        "standalone_current_named_units": 3484713,
+        "full_horizon_named_units": 3562359,
+        "external_audits": 14,
+        "arm_process_ns": 1508110101,
+        "arm_wall_ns": 1192518133,
+        "recorded_current_process_ns": 1580095854,
+        "recorded_current_wall_ns": 1200463380,
+        "recorded_retained_bytes": 101123,
+        "recorded_common_storage_scope": "profile_bytes + planner_cache_bytes + cost_support.serialized_bytes",
+        "additional_quotation_payload_byte_components": null,
+        "additional_quotation_payload_bytes": null,
+        "all_reported_serialized_payload_bytes": null,
+        "quotation_payload_record": null,
+        "quotation_payload_measurement": {
+          "status": "unmeasured",
+          "basis": "No quotation_payload record and no exact reviewed implementation rule establishing absence"
+        },
+        "missing_payload_policy": "A missing quotation_payload record remains unmeasured unless an exact reviewed version/source hash and matching raw fields prove these specific objects absent. Source-backed structural absence is zero; all other missing payloads remain explicit symbolic terms, and other unmeasured host/native memory remains in R.",
+        "retained_bytes_components": {
+          "profile_bytes": 11197,
+          "planner_cache_bytes": 20865,
+          "cost_support": {
+            "compiled_contrasts": 341,
+            "row_extrema": 1744,
+            "row_cache_hits": 44376,
+            "row_cache_misses": 1744,
+            "serialized_bytes": 69061
+          }
+        },
+        "storage_limit": "Serialized profile/planner/support records only; not complete live/native memory, archive storage or byte-time",
+        "time_limit": "Recorded current admission and arm intervals only; excludes unmeasured source I/O, historical CPU and unitemized host work"
+      },
+      "invoice_components": {
+        "controller_and_interface_units": 3333682,
+        "complete_wrapper_units": 51281,
+        "native_adapter_units": 0,
+        "native_proof_units": 0,
+        "native_setup_units": 0,
+        "audit_provider_software_units": 56
+      },
+      "demonstrated_ten_percent_full_cost_regions": {
+        "value": 0,
+        "status": "none established by these development invoices",
+        "meaning": "Count of warranted >=10% complete-cost price regions, not a claim that every symbolic assignment is impossible",
+        "remaining": "External rates, complete retained byte-time, unitemized host work/fees and fresh-domain verification remain open"
+      },
+      "output_certificate_limit": "Counts and bounds reconstructed from saved records; raw-proof rechecking is a separate verification artifact"
+    },
+    {
+      "measurement_status": "new actual acquisitions in the source run; this extraction is read-only",
+      "source": {
+        "path": "v3/discovery/s07/a03/results.json",
+        "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:22:23.718701+00:00",
+        "completed_utc": "2026-10-12T20:22:24.594133+00:00"
+      },
+      "version": "s07-complete-bundle-v3",
+      "policy": "bundle",
+      "implementation_sha256": "b4e859642aa222e897b181b398da22b4ff3307fb3e9648a48e9431bccad5e88e",
+      "dependency_hashes": {
+        "lattice_quotes.py": "480b72168c73f18c8d2914af05f25a3792b5d6654fa0612393cae61b2575b37d",
+        "row_margins.py": "01a57695be8ea30d70e34f7e121d4671d745284fc153bd4c08e16273327d1a24",
+        "compiled_quotes.py": "9ac7acb9344629d0d1179287bbc97bb6748c8ae854bc53a285647e3c83faccef",
+        "repair_interface.py": "1ec100e50c6ab11600d9074fa718b4136d8227192b112676de468979725a6b8a",
+        "contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+        "native_stream.py": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+        "native_repair.py": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a"
+      },
+      "scope_id": "2ea4218036bd9f0550c15fa34462f3ce310f29e642f1621026561afd00bf3d9f",
+      "scope_binding": {
+        "source_identity": "8ff4d4165568151a25a530b085c2c27cda9bd77408b1a552d4358008211a33df",
+        "source_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+        "request_signature_sha256": "f21f611e311f5e506ede47cc75de486ff6375e6ad89828e6c2c6716ff2c65684",
+        "initial_admission_hashes": {
+          "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+          "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+          "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+          "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+        }
+      },
+      "configuration": {
+        "depth": 1,
+        "audit_price_slice": 1000,
+        "policies": [
+          "bundle"
+        ]
+      },
+      "counts": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 14,
+        "complete_calls": 14,
+        "native_attempts": 0,
+        "logical_purchases": 14,
+        "unresolved": 0,
+        "executed_complete_bundles": 11,
+        "quoted_unclosed_states": 13
+      },
+      "checked_coverage_percent": 100.0,
+      "complete_plan_requests": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14
+      ],
+      "complete_plan_request_coverage": {
+        "numerator": 11,
+        "denominator": 11,
+        "meaning": "Requests closed after executing a complete quoted plan / requests needing new work"
+      },
+      "complete_plan_root_kinds": {
+        "audit": 1,
+        "bracket": 10
+      },
+      "quotation": {
+        "call_meter_delta_units": 1716389,
+        "initialization_units": 2360,
+        "initialization_basis": "explicit constructor meter delta",
+        "total_units": 1718749,
+        "arm_named_units_share_percent": 74.52754387859126,
+        "meaning": "Full per-plan meter deltas across all categories plus separately metered planner setup; included in the enclosing invoice, never added to it again",
+        "selectors": [
+          "sum(plans[].quote_units)",
+          "planner constructor meter delta or known v1/v2 initialization operation"
+        ]
+      },
+      "resources": {
+        "arm_named_units": 2306193,
+        "common_current_named_units": 99694,
+        "historical_acquisition_named_units": 77646,
+        "standalone_current_named_units": 2405887,
+        "full_horizon_named_units": 2483533,
+        "external_audits": 14,
+        "arm_process_ns": 1158256054,
+        "arm_wall_ns": 843095108,
+        "recorded_current_process_ns": 1196213997,
+        "recorded_current_wall_ns": 849027475,
+        "recorded_retained_bytes": 129562,
+        "recorded_common_storage_scope": "profile_bytes + planner_cache_bytes + cost_support.serialized_bytes",
+        "additional_quotation_payload_byte_components": {
+          "prepared_quote_cache_bytes": 68462,
+          "enclosure_cache_bytes": 20456,
+          "margin_cache_bytes": 307259
+        },
+        "additional_quotation_payload_bytes": 396177,
+        "all_reported_serialized_payload_bytes": 525739,
+        "quotation_payload_record": {
+          "prepared_quote_cache_bytes": 68462,
+          "prepared_quote_stored_words": 18302,
+          "enclosure_cache_bytes": 20456,
+          "margin_cache_bytes": 307259,
+          "scope": "Serialized retained numerical payloads, not a measurement of peak allocator memory or byte-time"
+        },
+        "quotation_payload_measurement": {
+          "status": "recorded_payload",
+          "basis": "Explicit storage.quotation_payload record in the bound source run"
+        },
+        "missing_payload_policy": "A missing quotation_payload record remains unmeasured unless an exact reviewed version/source hash and matching raw fields prove these specific objects absent. Source-backed structural absence is zero; all other missing payloads remain explicit symbolic terms, and other unmeasured host/native memory remains in R.",
+        "retained_bytes_components": {
+          "profile_bytes": 11197,
+          "planner_cache_bytes": 49304,
+          "quotation_payload": {
+            "prepared_quote_cache_bytes": 68462,
+            "prepared_quote_stored_words": 18302,
+            "enclosure_cache_bytes": 20456,
+            "margin_cache_bytes": 307259,
+            "scope": "Serialized retained numerical payloads, not a measurement of peak allocator memory or byte-time"
+          },
+          "cost_support": {
+            "compiled_contrasts": 341,
+            "row_extrema": 1744,
+            "row_cache_hits": 44376,
+            "row_cache_misses": 1744,
+            "serialized_bytes": 69061
+          }
+        },
+        "storage_limit": "Serialized profile/planner/support records only; not complete live/native memory, archive storage or byte-time",
+        "time_limit": "Recorded current admission and arm intervals only; excludes unmeasured source I/O, historical CPU and unitemized host work"
+      },
+      "invoice_components": {
+        "controller_and_interface_units": 2254856,
+        "complete_wrapper_units": 51281,
+        "native_adapter_units": 0,
+        "native_proof_units": 0,
+        "native_setup_units": 0,
+        "audit_provider_software_units": 56
+      },
+      "demonstrated_ten_percent_full_cost_regions": {
+        "value": 0,
+        "status": "none established by these development invoices",
+        "meaning": "Count of warranted >=10% complete-cost price regions, not a claim that every symbolic assignment is impossible",
+        "remaining": "External rates, complete retained byte-time, unitemized host work/fees and fresh-domain verification remain open"
+      },
+      "output_certificate_limit": "Counts and bounds reconstructed from saved records; raw-proof rechecking is a separate verification artifact"
+    }
+  ],
+  "comparisons": [
+    {
+      "candidate_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "control_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=audit_first]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "candidate_version": "s07-complete-bundle-v1",
+      "control_policy": "audit_first",
+      "arm_named_unit_ratio": 5.770864171061258,
+      "arm_named_savings_percent": -477.08641710612574,
+      "full_horizon_named_savings_percent": -349.36036207401503,
+      "actual_audit_difference": 0,
+      "actual_complete_call_difference": 0,
+      "actual_native_attempt_difference": 0,
+      "common_evaluator_hash_equal": true,
+      "ten_percent_full_cost_condition": {
+        "coefficients": {
+          "constant_named_units": 23804246,
+          "audit_price_a": 14,
+          "cpu_rate_per_ns_rho": 7599755474,
+          "recorded_byte_retention_rate_s": 151562,
+          "candidate_unpriced_remainder": 10,
+          "control_unpriced_remainder": -9,
+          "known_additional_payload_bytes": 0
+        },
+        "unmeasured_payload_coefficients": {
+          "candidate_unmeasured_quotation_payload_bytes": 10
+        },
+        "inequality": "constant + a*A_coefficient + rho*T_coefficient + s*(B_coefficient + known_additional_payload_bytes + sum(unmeasured_payload_coefficient*payload_bytes)) + 10*R_candidate - 9*R_control <= 0",
+        "notes": "U includes history and current admission once per standalone full horizon. T and B are recorded components or narrowly source-proven absent objects. Older missing Q payloads remain explicit unknowns unless the recorded provenance proves absence; R retains all other missing components including host/native memory. Rates must avoid duplicate billing. This inequality is not an established economic saving."
+      },
+      "timing_limit": "One ordered development execution per input, not a repeated timing benchmark"
+    },
+    {
+      "candidate_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "control_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=logic_first]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "candidate_version": "s07-complete-bundle-v1",
+      "control_policy": "logic_first",
+      "arm_named_unit_ratio": 3.9712038950924047,
+      "arm_named_savings_percent": -297.1203895092405,
+      "full_horizon_named_savings_percent": -237.3950241831184,
+      "actual_audit_difference": 0,
+      "actual_complete_call_difference": -4,
+      "actual_native_attempt_difference": 0,
+      "common_evaluator_hash_equal": true,
+      "ten_percent_full_cost_condition": {
+        "coefficients": {
+          "constant_named_units": 21825857,
+          "audit_price_a": 14,
+          "cpu_rate_per_ns_rho": 2186040365,
+          "recorded_byte_retention_rate_s": 54587,
+          "candidate_unpriced_remainder": 10,
+          "control_unpriced_remainder": -9,
+          "known_additional_payload_bytes": 0
+        },
+        "unmeasured_payload_coefficients": {
+          "candidate_unmeasured_quotation_payload_bytes": 10
+        },
+        "inequality": "constant + a*A_coefficient + rho*T_coefficient + s*(B_coefficient + known_additional_payload_bytes + sum(unmeasured_payload_coefficient*payload_bytes)) + 10*R_candidate - 9*R_control <= 0",
+        "notes": "U includes history and current admission once per standalone full horizon. T and B are recorded components or narrowly source-proven absent objects. Older missing Q payloads remain explicit unknowns unless the recorded provenance proves absence; R retains all other missing components including host/native memory. Rates must avoid duplicate billing. This inequality is not an established economic saving."
+      },
+      "timing_limit": "One ordered development execution per input, not a repeated timing benchmark"
+    },
+    {
+      "candidate_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "control_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=native_logic]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "candidate_version": "s07-complete-bundle-v1",
+      "control_policy": "native_logic",
+      "arm_named_unit_ratio": 4.0289963959607125,
+      "arm_named_savings_percent": -302.89963959607127,
+      "full_horizon_named_savings_percent": -241.3066610405038,
+      "actual_audit_difference": 0,
+      "actual_complete_call_difference": 14,
+      "actual_native_attempt_difference": -18,
+      "common_evaluator_hash_equal": true,
+      "ten_percent_full_cost_condition": {
+        "coefficients": {
+          "constant_named_units": 21916856,
+          "audit_price_a": 14,
+          "cpu_rate_per_ns_rho": -5459153356,
+          "recorded_byte_retention_rate_s": 54587,
+          "candidate_unpriced_remainder": 10,
+          "control_unpriced_remainder": -9,
+          "known_additional_payload_bytes": 0
+        },
+        "unmeasured_payload_coefficients": {
+          "candidate_unmeasured_quotation_payload_bytes": 10
+        },
+        "inequality": "constant + a*A_coefficient + rho*T_coefficient + s*(B_coefficient + known_additional_payload_bytes + sum(unmeasured_payload_coefficient*payload_bytes)) + 10*R_candidate - 9*R_control <= 0",
+        "notes": "U includes history and current admission once per standalone full horizon. T and B are recorded components or narrowly source-proven absent objects. Older missing Q payloads remain explicit unknowns unless the recorded provenance proves absence; R retains all other missing components including host/native memory. Rates must avoid duplicate billing. This inequality is not an established economic saving."
+      },
+      "timing_limit": "One ordered development execution per input, not a repeated timing benchmark"
+    },
+    {
+      "candidate_source": {
+        "path": "v3/discovery/s07/a02/results.json",
+        "sha256": "5064970c09b46b68b4445e622a73ab80afe5db57904b19ce55995b91fb97c99c",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:11:46.773039+00:00",
+        "completed_utc": "2026-10-12T20:11:47.983429+00:00"
+      },
+      "control_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=audit_first]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "candidate_version": "s07-complete-bundle-v2",
+      "control_policy": "audit_first",
+      "arm_named_unit_ratio": 6.978470970960653,
+      "arm_named_savings_percent": -597.8470970960652,
+      "full_horizon_named_savings_percent": -437.7908714594976,
+      "actual_audit_difference": 0,
+      "actual_complete_call_difference": 0,
+      "actual_native_attempt_difference": 0,
+      "common_evaluator_hash_equal": true,
+      "ten_percent_full_cost_condition": {
+        "coefficients": {
+          "constant_named_units": 29661936,
+          "audit_price_a": 14,
+          "cpu_rate_per_ns_rho": 7826069754,
+          "recorded_byte_retention_rate_s": 368342,
+          "candidate_unpriced_remainder": 10,
+          "control_unpriced_remainder": -9,
+          "known_additional_payload_bytes": 0
+        },
+        "unmeasured_payload_coefficients": {
+          "candidate_unmeasured_quotation_payload_bytes": 10
+        },
+        "inequality": "constant + a*A_coefficient + rho*T_coefficient + s*(B_coefficient + known_additional_payload_bytes + sum(unmeasured_payload_coefficient*payload_bytes)) + 10*R_candidate - 9*R_control <= 0",
+        "notes": "U includes history and current admission once per standalone full horizon. T and B are recorded components or narrowly source-proven absent objects. Older missing Q payloads remain explicit unknowns unless the recorded provenance proves absence; R retains all other missing components including host/native memory. Rates must avoid duplicate billing. This inequality is not an established economic saving."
+      },
+      "timing_limit": "One ordered development execution per input, not a repeated timing benchmark"
+    },
+    {
+      "candidate_source": {
+        "path": "v3/discovery/s07/a02/results.json",
+        "sha256": "5064970c09b46b68b4445e622a73ab80afe5db57904b19ce55995b91fb97c99c",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:11:46.773039+00:00",
+        "completed_utc": "2026-10-12T20:11:47.983429+00:00"
+      },
+      "control_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=logic_first]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "candidate_version": "s07-complete-bundle-v2",
+      "control_policy": "logic_first",
+      "arm_named_unit_ratio": 4.80221510681854,
+      "arm_named_savings_percent": -380.22151068185394,
+      "full_horizon_named_savings_percent": -303.7916545288231,
+      "actual_audit_difference": 0,
+      "actual_complete_call_difference": -4,
+      "actual_native_attempt_difference": 0,
+      "common_evaluator_hash_equal": true,
+      "ten_percent_full_cost_condition": {
+        "coefficients": {
+          "constant_named_units": 27683547,
+          "audit_price_a": 14,
+          "cpu_rate_per_ns_rho": 2412354645,
+          "recorded_byte_retention_rate_s": 271367,
+          "candidate_unpriced_remainder": 10,
+          "control_unpriced_remainder": -9,
+          "known_additional_payload_bytes": 0
+        },
+        "unmeasured_payload_coefficients": {
+          "candidate_unmeasured_quotation_payload_bytes": 10
+        },
+        "inequality": "constant + a*A_coefficient + rho*T_coefficient + s*(B_coefficient + known_additional_payload_bytes + sum(unmeasured_payload_coefficient*payload_bytes)) + 10*R_candidate - 9*R_control <= 0",
+        "notes": "U includes history and current admission once per standalone full horizon. T and B are recorded components or narrowly source-proven absent objects. Older missing Q payloads remain explicit unknowns unless the recorded provenance proves absence; R retains all other missing components including host/native memory. Rates must avoid duplicate billing. This inequality is not an established economic saving."
+      },
+      "timing_limit": "One ordered development execution per input, not a repeated timing benchmark"
+    },
+    {
+      "candidate_source": {
+        "path": "v3/discovery/s07/a02/results.json",
+        "sha256": "5064970c09b46b68b4445e622a73ab80afe5db57904b19ce55995b91fb97c99c",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:11:46.773039+00:00",
+        "completed_utc": "2026-10-12T20:11:47.983429+00:00"
+      },
+      "control_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=native_logic]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "candidate_version": "s07-complete-bundle-v2",
+      "control_policy": "native_logic",
+      "arm_named_unit_ratio": 4.872101223991617,
+      "arm_named_savings_percent": -387.2101223991617,
+      "full_horizon_named_savings_percent": -308.47307009617987,
+      "actual_audit_difference": 0,
+      "actual_complete_call_difference": 14,
+      "actual_native_attempt_difference": -18,
+      "common_evaluator_hash_equal": true,
+      "ten_percent_full_cost_condition": {
+        "coefficients": {
+          "constant_named_units": 27774546,
+          "audit_price_a": 14,
+          "cpu_rate_per_ns_rho": -5232839076,
+          "recorded_byte_retention_rate_s": 271367,
+          "candidate_unpriced_remainder": 10,
+          "control_unpriced_remainder": -9,
+          "known_additional_payload_bytes": 0
+        },
+        "unmeasured_payload_coefficients": {
+          "candidate_unmeasured_quotation_payload_bytes": 10
+        },
+        "inequality": "constant + a*A_coefficient + rho*T_coefficient + s*(B_coefficient + known_additional_payload_bytes + sum(unmeasured_payload_coefficient*payload_bytes)) + 10*R_candidate - 9*R_control <= 0",
+        "notes": "U includes history and current admission once per standalone full horizon. T and B are recorded components or narrowly source-proven absent objects. Older missing Q payloads remain explicit unknowns unless the recorded provenance proves absence; R retains all other missing components including host/native memory. Rates must avoid duplicate billing. This inequality is not an established economic saving."
+      },
+      "timing_limit": "One ordered development execution per input, not a repeated timing benchmark"
+    },
+    {
+      "candidate_source": {
+        "path": "v3/discovery/s07/a03/results.json",
+        "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:22:23.718701+00:00",
+        "completed_utc": "2026-10-12T20:22:24.594133+00:00"
+      },
+      "control_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=audit_first]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "candidate_version": "s07-complete-bundle-v3",
+      "control_policy": "audit_first",
+      "arm_named_unit_ratio": 4.754390124230517,
+      "arm_named_savings_percent": -375.43901242305174,
+      "full_horizon_named_savings_percent": -274.9261027224995,
+      "actual_audit_difference": 0,
+      "actual_complete_call_difference": 0,
+      "actual_native_attempt_difference": 0,
+      "common_evaluator_hash_equal": true,
+      "ten_percent_full_cost_condition": {
+        "coefficients": {
+          "constant_named_units": 18873676,
+          "audit_price_a": 14,
+          "cpu_rate_per_ns_rho": 3987251184,
+          "recorded_byte_retention_rate_s": 652732,
+          "candidate_unpriced_remainder": 10,
+          "control_unpriced_remainder": -9,
+          "known_additional_payload_bytes": 3961770
+        },
+        "unmeasured_payload_coefficients": {},
+        "inequality": "constant + a*A_coefficient + rho*T_coefficient + s*(B_coefficient + known_additional_payload_bytes + sum(unmeasured_payload_coefficient*payload_bytes)) + 10*R_candidate - 9*R_control <= 0",
+        "notes": "U includes history and current admission once per standalone full horizon. T and B are recorded components or narrowly source-proven absent objects. Older missing Q payloads remain explicit unknowns unless the recorded provenance proves absence; R retains all other missing components including host/native memory. Rates must avoid duplicate billing. This inequality is not an established economic saving."
+      },
+      "timing_limit": "One ordered development execution per input, not a repeated timing benchmark"
+    },
+    {
+      "candidate_source": {
+        "path": "v3/discovery/s07/a03/results.json",
+        "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:22:23.718701+00:00",
+        "completed_utc": "2026-10-12T20:22:24.594133+00:00"
+      },
+      "control_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=logic_first]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "candidate_version": "s07-complete-bundle-v3",
+      "control_policy": "logic_first",
+      "arm_named_unit_ratio": 3.271720148052099,
+      "arm_named_savings_percent": -227.17201480520993,
+      "full_horizon_named_savings_percent": -181.507253802026,
+      "actual_audit_difference": 0,
+      "actual_complete_call_difference": -4,
+      "actual_native_attempt_difference": 0,
+      "common_evaluator_hash_equal": true,
+      "ten_percent_full_cost_condition": {
+        "coefficients": {
+          "constant_named_units": 16895287,
+          "audit_price_a": 14,
+          "cpu_rate_per_ns_rho": -1426463925,
+          "recorded_byte_retention_rate_s": 555757,
+          "candidate_unpriced_remainder": 10,
+          "control_unpriced_remainder": -9,
+          "known_additional_payload_bytes": 3961770
+        },
+        "unmeasured_payload_coefficients": {},
+        "inequality": "constant + a*A_coefficient + rho*T_coefficient + s*(B_coefficient + known_additional_payload_bytes + sum(unmeasured_payload_coefficient*payload_bytes)) + 10*R_candidate - 9*R_control <= 0",
+        "notes": "U includes history and current admission once per standalone full horizon. T and B are recorded components or narrowly source-proven absent objects. Older missing Q payloads remain explicit unknowns unless the recorded provenance proves absence; R retains all other missing components including host/native memory. Rates must avoid duplicate billing. This inequality is not an established economic saving."
+      },
+      "timing_limit": "One ordered development execution per input, not a repeated timing benchmark"
+    },
+    {
+      "candidate_source": {
+        "path": "v3/discovery/s07/a03/results.json",
+        "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+        "selector": "arms[policy=bundle]",
+        "started_utc": "2026-10-12T20:22:23.718701+00:00",
+        "completed_utc": "2026-10-12T20:22:24.594133+00:00"
+      },
+      "control_source": {
+        "path": "v3/discovery/s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=native_logic]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "candidate_version": "s07-complete-bundle-v3",
+      "control_policy": "native_logic",
+      "arm_named_unit_ratio": 3.3193331375867907,
+      "arm_named_savings_percent": -231.93331375867905,
+      "full_horizon_named_savings_percent": -184.77094790142596,
+      "actual_audit_difference": 0,
+      "actual_complete_call_difference": 14,
+      "actual_native_attempt_difference": -18,
+      "common_evaluator_hash_equal": true,
+      "ten_percent_full_cost_condition": {
+        "coefficients": {
+          "constant_named_units": 16986286,
+          "audit_price_a": 14,
+          "cpu_rate_per_ns_rho": -9071657646,
+          "recorded_byte_retention_rate_s": 555757,
+          "candidate_unpriced_remainder": 10,
+          "control_unpriced_remainder": -9,
+          "known_additional_payload_bytes": 3961770
+        },
+        "unmeasured_payload_coefficients": {},
+        "inequality": "constant + a*A_coefficient + rho*T_coefficient + s*(B_coefficient + known_additional_payload_bytes + sum(unmeasured_payload_coefficient*payload_bytes)) + 10*R_candidate - 9*R_control <= 0",
+        "notes": "U includes history and current admission once per standalone full horizon. T and B are recorded components or narrowly source-proven absent objects. Older missing Q payloads remain explicit unknowns unless the recorded provenance proves absence; R retains all other missing components including host/native memory. Rates must avoid duplicate billing. This inequality is not an established economic saving."
+      },
+      "timing_limit": "One ordered development execution per input, not a repeated timing benchmark"
+    }
+  ],
+  "policy": "Latest completed implementation for the active row; retain intermediate records. Carry prior measurements with source age, never an invented repeated measurement. All full-cost regions remain unestablished until complete pricing and verification support them."
+}

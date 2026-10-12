@@ -19,16 +19,21 @@ paid-reporting and separate structural integration scope. Selected R-P3-B-B
 the ordinary checked bridge and full resource/failure comparison. The final
 challenge has completed P3-10 execution and interpretation under explicit A1,
 with the original failure preserved and **90.283569405783** principal research
-minutes. Current phase research is **1523.698149685066666… minutes**.
-P3-SEARCH-01-C001 remains **OPEN** at **437.566782320916666… minutes**, beyond
+minutes. Current phase research is **1583.616943473266666… minutes**.
+P3-SEARCH-01-C001 remains **OPEN** at **497.485576109116666… minutes**, beyond
 its already satisfied four-hour floor. The latest author-directed hourly
-increment adds **60.07154650425 research minutes**. Next: continue
-discovery from [s06 checkpoint 1](discovery/s06/cp01.md), with exact totals and
-exclusions in [effective actuals](discovery/s06/effective_actuals.json).
+increment adds **59.9187937882 research minutes**. Next: continue
+discovery from [s07 checkpoint 1](discovery/s07/cp01.md), with exact totals and
+four conservative exclusions in [effective actuals](discovery/s07/effective_actuals.json).
 P3-11 is deferred pending discovery readiness.
 P3-POS01 is OUTSTANDING; later author gates remain unattempted. P3-N01 is SUPPORTED
 at the documented modest formal-adaptation and implementation-synthesis
 scope; Q3 affirmative comparative benefit remains open.**
+The current [F01/S28-B1/V1 forecast](discovery/s07/forecast_final.md) is
+**20–45%, central 30%**, five percentage points below its first assessment.
+**S26–S30 remain DEVELOPMENT; 30 families record breadth, not readiness.**
+No discovery candidate is promoted. Earlier dated unassessed forecasts and
+intermediate totals below remain historical.
 P3-03 has [exact actuals](work_logs/P3_03_2026-10-07_S1/actuals.json) and a
 [task readiness audit](work_logs/P3_03_2026-10-07_S1/readiness_audit.md).
 
@@ -824,3 +829,43 @@ credit. **S26/S27/S28 remain DEVELOPMENT; P3-POS01 OUTSTANDING; readiness
 unassessed; P3-11 deferred; C001 OPEN.** The next requested hour should integrate
 the admitted evaluators and a small fully quoted audit/proof bundle, as set out
 in [CONTINUE](discovery/CONTINUE.md).
+
+## P3-SEARCH-01 s07 — complete acquisition and smaller decision targets, October 12, 2026
+
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. [Checkpoint](discovery/s07/cp01.md),
+[findings](discovery/s07/findings.md), [reproduction guide](discovery/s07/reproduce.md).
+All new findings are **DEVELOPMENT**. Same-model reconstruction and conditional
+arithmetic checks do not establish independent scientific confirmation.
+The preceding dated s06 and earlier entries retain their original scopes.
+
+| ID | Supported scoped statement | Evidence and material limits |
+|---|---|---|
+| S07-BUNDLE | A complete audit/proof controller executes plans for all 11 initially open requests and delivers all 16 requested outputs; a02/a03 cover multi-call logical completion and repriced outcomes. | [Findings](discovery/s07/findings.md): a01 completes zero such plans; a02/a03 complete 11. Compiled a03 quotation work falls 38.57% from a02 and named arm work falls 31.87%. Independent trace reconstruction covers 96 outputs in six archived arms with no new acquisitions. Fourteen audits and fourteen complete calls remain unchanged from audit-first, while the named arm bill is 4.7544 times that control. Zero qualifying complete-cost benefit regions are established; this does not prove every possible price region empty. |
+| S07-WITNESS | Audit-before-proposal removes 14 unhelpful MIP proposals from an expanded witness menu while retaining six strict witness improvements and three proposal closures. | [Witness review](discovery/s07/witness_review.md): 11 versus 25 proposals, both with 14 audits/eight complete calls and 16 outputs; 483,617 fewer named units, a 42.339% reduction within that matched pair. The menu differs from a03, and asymmetric output-harness costs prevent a comparative whole-run speed claim. Native optimum status is not an independently checked lower proof. |
+| S07-AMBIGUITY | Checked scalar lower evidence at scenario mixtures and feasible scenario witnesses can certify a floor on every fixed action's worst compatible-source regret. If the floor exceeds tolerance, logical work alone cannot immediately close the unchanged source. Integer repair costs admit a stronger discrete necessary condition. | [Theory](discovery/s07/ambiguity_theory.md), [findings](discovery/s07/findings.md). Read-only probes identify two of six inspected states, but their own named costs exceed the potentially avoided native proposals. No executed skip-policy advantage or learned source probabilities; extra logical evidence can still help after later cost observations. |
+| DS-S29 — source geometry and decision quotients | Checked source-global affine equalities identify objective changes that add a common amount to every feasible repair. Repair rankings depend on a quotient; a remaining scalar affects replacement. Action-safe audit leaves can be coarser than complete mode or quotient identification. | [Actual affine construction](discovery/s07/s29_affine.md), [quotient interface](discovery/s07/quotient_audits.md). The tiny example buys one complete proof and zero audits, improving generic bound 2 to 0; the full paid tree ties and ordinary propagation is stronger. Equalities on retained witnesses alone do not justify the theorem, nor automatically constrain a tree relaxation. Original source identity, equality receipt, scalar proof and replacement clipping are required. Ordinary preprocessing and robust quotient methods have the same capability. |
+| S07-QUOTIENT-ACQUISITION | Under the declared homogeneous mandatory-cost and checked-anchor premises, a closed form replaces the count-state audit planner; uniform random ordering also yields a source-uniform expected audit bound without a source prior. | [Closed form](discovery/s07/quotient_closed_form.md), [random ordering](discovery/s07/random_order.md). Agreement covers 135 small and nine larger cases; 546 exact small random-order comparisons agree with literal enumeration. At n=128 the middle count example drops from 4,224 plan states to one record while observation tariff stays 128. These comparisons do not acquire the required source or proof premises; randomized expectation is over internal ordering, not source beliefs. No measured economic or conventional-method advantage. |
+| S07-INEXACT-ANCHOR | A checked auxiliary lower/witness gap no larger than tolerance can support the quotient stopping construction without exact auxiliary optimization. | [Derivation](discovery/s07/inexact_anchor.md). This is a sufficient checked policy bound, not an information-theoretic optimality result. A gap exceeding tolerance can leave a repair unresolved after every mandatory audit, requiring a paid logical branch. No new acquisition or implementation test establishes this extension. |
+| DS-S30 — common-CDF fixed-action bridge | One simultaneous source event can certify adaptively selected payoff contrasts for one fixed action at the population mean, with partial latent intervals and repeated identity multiplicity retained. | [Corrected actual v2 findings](discovery/s07/population_findings.md): population 64 and 128 precommitted draws with replacement; 29 relevant audits/one proof, bound 15/8, 70,605 named units, versus 58/one, the same bound and 122,283 for full latent identification. Ordinary direct contrast ties the relevant arm. Zero latent values are fully identified at 29 audits; a deterministic finite-population bound also closes at that prefix, so this example does not require the statistical event to stop. The new scope is the executed repair/proof connection, not invention of partial-value learning. |
+| P3-POS01 / F01 | **OUTSTANDING; no promotion.** Final F01/S28-B1/V1 subjective probability is **20–45%, central 30%**, unchanged since interim and **−5 percentage points** since the first assessment. | [Final forecast](discovery/s07/forecast_final.md). The unchanged event requires checked outputs and at least 10% complete-cost benefit against the specified strong ordinary controls on the declared fresh 24-stream domain and robust price interval. The central gap to the intended 80% minimum is 50 points. No calibrated forecasting track record; S29/S30 require separate event specifications rather than inheriting this probability. |
+
+The increment adds **3,595,127,627,292 ns =59.9187937882 research minutes**.
+C001/program is **29,849,134,566,547 ns =497.485576109116666… minutes**;
+phase research is **95,017,016,608,396 ns =1583.616943473266666… minutes**.
+[Effective actuals](discovery/s07/effective_actuals.json) retain four conservative
+exclusions totaling **757,050,410,734 ns**, preserving every raw clock and
+ledger record. All research clocks are closed; administration, publication and
+concurrent helper time add no research credit. **C001 remains OPEN;
+S26–S30 remain DEVELOPMENT; 30 families measure breadth, not readiness;
+P3-POS01 is OUTSTANDING; P3-11 remains deferred.**
+
+Next acquire or reuse checked original-source geometry and compile the cost
+contrasts it removes before quoting the remaining audit/proof route, with
+every outcome and fee represented. Use a prospectively declared development
+family, actual prices or supported symbolic intervals, and the same geometry,
+proposer and representation in an ordinary controller. The useful target is
+changed purchases or sufficient nonquotation savings to recover paid admission
+and compilation. If the route remains an ordinary method with a higher bill
+and no supported complete price region, preserve the F01 result and redirect.
+The next requested hour is not started; [CONTINUE](discovery/CONTINUE.md)
+governs its recovery and new observed clock.

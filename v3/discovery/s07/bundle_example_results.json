@@ -1,0 +1,1284 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT constructed complementarity family",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "start_utc": "2026-10-12T20:09:26.078551+00:00",
+  "implementation_sha256": "eaf7130783feea6c8bc9c8eca0cc85ee6be82949dd602989355a43e5757a49d0",
+  "dependencies": {
+    "s07/lattice_quotes.py": "480b72168c73f18c8d2914af05f25a3792b5d6654fa0612393cae61b2575b37d",
+    "s06/source_anchor.py": "b8f42879ee99ce99c849fb4409e3b9c47c482f1430345ae7259ccb5c25a730bc",
+    "s06/anchor_quotes.py": "afa35592c6d800f78a60853a71f59d0a2e28ac279aeaf5b71a1026149de0a97a",
+    "s06/contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+    "s06/contract_guard.py": "5babe0a530fb33b97eb6af860c6da638a70f1d63f514d66c05cb1f55efefef5a",
+    "s06/joint_repair.py": "7e1a96f4a05107174554acc701ae43026528d6041e570500d840fb1b76060384"
+  },
+  "logical_source": {
+    "row": "s07-zero-singleton-bundle",
+    "variables": 2,
+    "hard": [
+      [
+        1,
+        2
+      ]
+    ],
+    "soft": [
+      {
+        "weight": 2,
+        "clause": [
+          -1
+        ]
+      },
+      {
+        "weight": 2,
+        "clause": [
+          -2
+        ]
+      }
+    ],
+    "public_incumbent": 3,
+    "objective_max": 4,
+    "identity": "206ff01a637b5a41a349367fb93b6afbaa4102028add40b1557b1c087dbb177c"
+  },
+  "declared_cost_source": {
+    "version": "s07-zero-singleton-bundle-v1",
+    "possible_cost_modes": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "cohort_size": 1,
+    "hidden_modes": [
+      1
+    ],
+    "target": "One fixed synthetic row with no distribution over its two possible modes",
+    "logical_structure_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+    "source_identity": "186cd1ba3a70bb1fddfea024d4e3f7da6cf259010857648b42248474ecf94652"
+  },
+  "price": 3,
+  "tolerance": 0,
+  "initial_candidate_models": [
+    3
+  ],
+  "actual_audits": [
+    {
+      "source_id": "186cd1ba3a70bb1fddfea024d4e3f7da6cf259010857648b42248474ecf94652",
+      "row": 0,
+      "coordinate": 0,
+      "value": 2,
+      "provider_call": 0,
+      "observed_utc": "2026-10-12T20:09:26.082572+00:00",
+      "observation_units": 1,
+      "provider_software_units": 4,
+      "timing": {
+        "wall_ns": 10917,
+        "process_ns": 10395
+      },
+      "receipt_id": "c88d50630618b533ca5718990e40c2fb7778875eff90c6365142dee668871070"
+    }
+  ],
+  "actual_logical_calls": [
+    {
+      "role": "initial_lower",
+      "checked_call": {
+        "source_id": "19e75974e74abf5b61973368778d7d8e7463b7bcb2899e053d4e218481e7290c",
+        "budget": 0,
+        "provider_response": {
+          "status": "UNSAT",
+          "model": null,
+          "proof": [
+            "b",
+            0,
+            [
+              "b",
+              1,
+              [
+                "h",
+                0
+              ],
+              [
+                "w",
+                [
+                  1
+                ]
+              ]
+            ],
+            [
+              "w",
+              [
+                0
+              ]
+            ]
+          ],
+          "invoice": {
+            "total": 51,
+            "by_category": {
+              "solve": 51
+            },
+            "operations": [
+              {
+                "category": "solve",
+                "operation": "branch_node",
+                "units": 5
+              },
+              {
+                "category": "solve",
+                "operation": "budget_compare",
+                "units": 4
+              },
+              {
+                "category": "solve",
+                "operation": "clause_header",
+                "units": 13
+              },
+              {
+                "category": "solve",
+                "operation": "cost_leaf_create",
+                "units": 4
+              },
+              {
+                "category": "solve",
+                "operation": "forced_weight_add",
+                "units": 2
+              },
+              {
+                "category": "solve",
+                "operation": "hard_leaf_create",
+                "units": 2
+              },
+              {
+                "category": "solve",
+                "operation": "literal_inspection",
+                "units": 17
+              },
+              {
+                "category": "solve",
+                "operation": "split_certificate_create",
+                "units": 4
+              }
+            ]
+          }
+        },
+        "quote": {
+          "source_id": "19e75974e74abf5b61973368778d7d8e7463b7bcb2899e053d4e218481e7290c",
+          "variables": 2,
+          "soft_clauses": 2,
+          "maximum_tree_nodes": 7,
+          "maximum_tree_leaves": 4,
+          "provider_per_node": 14,
+          "provider_units": 98,
+          "negative_check_units": 63,
+          "witness_check_units": 10,
+          "tree_compile_units": 33,
+          "witness_compile_units": 16,
+          "raw_proof_words": 18,
+          "admission_units": 17,
+          "objective_update_units": 6,
+          "response_units": 16,
+          "witness_retention_units": 10,
+          "proof_retention_units": 26,
+          "complete_wrapper_units": 269,
+          "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+          "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+          "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+          "cpu_max_seconds": null,
+          "wall_max_seconds": null
+        },
+        "leaf_masks": [
+          1,
+          2
+        ],
+        "checked_lower": 1,
+        "wrapper_invoice": {
+          "total": 95,
+          "by_category": {
+            "contract_admission": 17,
+            "check": 18,
+            "objective": 7,
+            "objective_update": 6,
+            "tree_compile": 10,
+            "storage": 21,
+            "output": 16
+          },
+          "operations": [
+            {
+              "category": "check",
+              "operation": "negative_clause_header",
+              "units": 3
+            },
+            {
+              "category": "check",
+              "operation": "negative_literal",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "negative_proof_node",
+              "units": 5
+            },
+            {
+              "category": "check",
+              "operation": "negative_weight_add",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "negative_weight_index",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "witness_hard_clause_header",
+              "units": 1
+            },
+            {
+              "category": "check",
+              "operation": "witness_hard_literal",
+              "units": 1
+            },
+            {
+              "category": "contract_admission",
+              "operation": "source_words",
+              "units": 17
+            },
+            {
+              "category": "objective",
+              "operation": "full_objective_pass",
+              "units": 1
+            },
+            {
+              "category": "objective",
+              "operation": "soft_clause_header",
+              "units": 2
+            },
+            {
+              "category": "objective",
+              "operation": "soft_literal",
+              "units": 2
+            },
+            {
+              "category": "objective",
+              "operation": "weight_add",
+              "units": 2
+            },
+            {
+              "category": "objective_update",
+              "operation": "query_weight_words",
+              "units": 6
+            },
+            {
+              "category": "output",
+              "operation": "complete_query_response",
+              "units": 16
+            },
+            {
+              "category": "storage",
+              "operation": "compiled_tree_leaf_masks",
+              "units": 3
+            },
+            {
+              "category": "storage",
+              "operation": "complete_negative",
+              "units": 18
+            },
+            {
+              "category": "tree_compile",
+              "operation": "forced_clause_coefficient",
+              "units": 2
+            },
+            {
+              "category": "tree_compile",
+              "operation": "hard_leaf_omitted",
+              "units": 1
+            },
+            {
+              "category": "tree_compile",
+              "operation": "leaf_mask_deduplication",
+              "units": 2
+            },
+            {
+              "category": "tree_compile",
+              "operation": "proof_node_read",
+              "units": 5
+            }
+          ]
+        },
+        "total_operation_units": 146,
+        "timing": {
+          "process_ns": 171034,
+          "wall_ns": 172005
+        },
+        "receipt_id": "aa7407d69f604834eab3413895023cb244da2c243ab4a4f556e956b01d2ce344"
+      }
+    },
+    {
+      "role": "selected_child",
+      "checked_call": {
+        "source_id": "629b530e9472d27b8cb7ea12d3383b981bef75d23b0eb2518775e30636d3f7f9",
+        "budget": 0,
+        "provider_response": {
+          "status": "SAT",
+          "model": 2,
+          "proof": null,
+          "invoice": {
+            "total": 36,
+            "by_category": {
+              "solve": 36
+            },
+            "operations": [
+              {
+                "category": "solve",
+                "operation": "branch_node",
+                "units": 4
+              },
+              {
+                "category": "solve",
+                "operation": "budget_compare",
+                "units": 3
+              },
+              {
+                "category": "solve",
+                "operation": "clause_header",
+                "units": 10
+              },
+              {
+                "category": "solve",
+                "operation": "forced_weight_add",
+                "units": 1
+              },
+              {
+                "category": "solve",
+                "operation": "hard_leaf_create",
+                "units": 2
+              },
+              {
+                "category": "solve",
+                "operation": "literal_inspection",
+                "units": 14
+              },
+              {
+                "category": "solve",
+                "operation": "model_create",
+                "units": 2
+              }
+            ]
+          }
+        },
+        "quote": {
+          "source_id": "629b530e9472d27b8cb7ea12d3383b981bef75d23b0eb2518775e30636d3f7f9",
+          "variables": 2,
+          "soft_clauses": 2,
+          "maximum_tree_nodes": 7,
+          "maximum_tree_leaves": 4,
+          "provider_per_node": 14,
+          "provider_units": 98,
+          "negative_check_units": 63,
+          "witness_check_units": 10,
+          "tree_compile_units": 33,
+          "witness_compile_units": 16,
+          "raw_proof_words": 18,
+          "admission_units": 17,
+          "objective_update_units": 6,
+          "response_units": 16,
+          "witness_retention_units": 10,
+          "proof_retention_units": 26,
+          "complete_wrapper_units": 269,
+          "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+          "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+          "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+          "cpu_max_seconds": null,
+          "wall_max_seconds": null
+        },
+        "witness": {
+          "model": 2,
+          "violation_mask": 2,
+          "original_cost": 0
+        },
+        "wrapper_invoice": {
+          "total": 81,
+          "by_category": {
+            "contract_admission": 17,
+            "check": 5,
+            "objective": 13,
+            "objective_update": 6,
+            "witness_check": 3,
+            "witness_compile": 7,
+            "storage": 14,
+            "output": 16
+          },
+          "operations": [
+            {
+              "category": "check",
+              "operation": "witness_hard_clause_header",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "witness_hard_literal",
+              "units": 3
+            },
+            {
+              "category": "contract_admission",
+              "operation": "source_words",
+              "units": 17
+            },
+            {
+              "category": "objective",
+              "operation": "full_objective_pass",
+              "units": 2
+            },
+            {
+              "category": "objective",
+              "operation": "soft_clause_header",
+              "units": 4
+            },
+            {
+              "category": "objective",
+              "operation": "soft_literal",
+              "units": 4
+            },
+            {
+              "category": "objective",
+              "operation": "weight_add",
+              "units": 3
+            },
+            {
+              "category": "objective_update",
+              "operation": "query_weight_words",
+              "units": 6
+            },
+            {
+              "category": "output",
+              "operation": "complete_query_response",
+              "units": 16
+            },
+            {
+              "category": "storage",
+              "operation": "complete_witness",
+              "units": 10
+            },
+            {
+              "category": "storage",
+              "operation": "retained_witness_and_violation_mask",
+              "units": 4
+            },
+            {
+              "category": "witness_check",
+              "operation": "retained_clause_header",
+              "units": 1
+            },
+            {
+              "category": "witness_check",
+              "operation": "retained_literal",
+              "units": 2
+            },
+            {
+              "category": "witness_compile",
+              "operation": "mask_and_original_weight",
+              "units": 2
+            },
+            {
+              "category": "witness_compile",
+              "operation": "objective_violation_pass",
+              "units": 1
+            },
+            {
+              "category": "witness_compile",
+              "operation": "retained_clause_header",
+              "units": 2
+            },
+            {
+              "category": "witness_compile",
+              "operation": "retained_literal",
+              "units": 2
+            }
+          ]
+        },
+        "total_operation_units": 117,
+        "timing": {
+          "process_ns": 164112,
+          "wall_ns": 174168
+        },
+        "receipt_id": "21e9f73f8be280e67c4d4cb0bddf449dd128da96c38e8e6013dfc3a73aeb616c"
+      }
+    }
+  ],
+  "initial_checked_witness": {
+    "model": 3,
+    "violation_mask": 3,
+    "original_cost": 4
+  },
+  "initial_anchor_lowers": [
+    0,
+    0
+  ],
+  "before": {
+    "mask": 3,
+    "bound": "2",
+    "repair_gap": "2",
+    "replacement_gap": "-1",
+    "mode_anchor_lowers": [
+      "0",
+      "0"
+    ],
+    "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+    "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+  },
+  "audit_singletons": [
+    {
+      "row": 0,
+      "coordinate": 0,
+      "before": "2",
+      "worst_bound": "2",
+      "guaranteed_gain": "0",
+      "outcomes": [
+        {
+          "value": 0,
+          "remaining_modes": [
+            0
+          ],
+          "response": {
+            "mask": 3,
+            "bound": "2",
+            "repair_gap": "2",
+            "replacement_gap": "-1",
+            "mode_anchor_lowers": [
+              "0",
+              "0"
+            ],
+            "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+            "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+          }
+        },
+        {
+          "value": 2,
+          "remaining_modes": [
+            1
+          ],
+          "response": {
+            "mask": 3,
+            "bound": "2",
+            "repair_gap": "2",
+            "replacement_gap": "-1",
+            "mode_anchor_lowers": [
+              "0",
+              "0"
+            ],
+            "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+            "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+          }
+        }
+      ],
+      "contract": "One exact source-bound cell observation with one of all declared outcomes; external price unassigned"
+    },
+    {
+      "row": 0,
+      "coordinate": 1,
+      "before": "2",
+      "worst_bound": "2",
+      "guaranteed_gain": "0",
+      "outcomes": [
+        {
+          "value": 0,
+          "remaining_modes": [
+            1
+          ],
+          "response": {
+            "mask": 3,
+            "bound": "2",
+            "repair_gap": "2",
+            "replacement_gap": "-1",
+            "mode_anchor_lowers": [
+              "0",
+              "0"
+            ],
+            "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+            "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+          }
+        },
+        {
+          "value": 2,
+          "remaining_modes": [
+            0
+          ],
+          "response": {
+            "mask": 3,
+            "bound": "2",
+            "repair_gap": "2",
+            "replacement_gap": "-1",
+            "mode_anchor_lowers": [
+              "0",
+              "0"
+            ],
+            "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+            "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+          }
+        }
+      ],
+      "contract": "One exact source-bound cell observation with one of all declared outcomes; external price unassigned"
+    }
+  ],
+  "illustrative_logical_singletons": [
+    {
+      "weights": [
+        0,
+        2
+      ],
+      "budget": 0,
+      "objective_lattice": 2,
+      "before": "2",
+      "SAT_objective_upper": 0,
+      "UNSAT_objective_lower": 2,
+      "SAT_uniform_cost_upper": "2",
+      "positive_box_margin": "2",
+      "current_uniform_lower": "0",
+      "SAT_bound": "2",
+      "UNSAT_anchor_lowers": [
+        "2",
+        "0"
+      ],
+      "UNSAT_bound": "2",
+      "no_progress_outcome": false,
+      "worst_bound": "2",
+      "guaranteed_gain": "0",
+      "informative": true,
+      "premise": "Both answers independently checked under an admitted complete-call contract; a capped or interrupted attempt retains the old bound"
+    },
+    {
+      "weights": [
+        2,
+        0
+      ],
+      "budget": 0,
+      "objective_lattice": 2,
+      "before": "2",
+      "SAT_objective_upper": 0,
+      "UNSAT_objective_lower": 2,
+      "SAT_uniform_cost_upper": "2",
+      "positive_box_margin": "2",
+      "current_uniform_lower": "0",
+      "SAT_bound": "2",
+      "UNSAT_anchor_lowers": [
+        "0",
+        "2"
+      ],
+      "UNSAT_bound": "2",
+      "no_progress_outcome": false,
+      "worst_bound": "2",
+      "guaranteed_gain": "0",
+      "informative": true,
+      "premise": "Both answers independently checked under an admitted complete-call contract; a capped or interrupted attempt retains the old bound"
+    },
+    {
+      "weights": [
+        2,
+        2
+      ],
+      "budget": 0,
+      "objective_lattice": 2,
+      "before": "2",
+      "SAT_objective_upper": 0,
+      "UNSAT_objective_lower": 2,
+      "SAT_uniform_cost_upper": "0",
+      "positive_box_margin": "0",
+      "current_uniform_lower": "0",
+      "SAT_bound": "0",
+      "UNSAT_anchor_lowers": [
+        "0",
+        "0"
+      ],
+      "UNSAT_bound": "2",
+      "no_progress_outcome": false,
+      "worst_bound": "2",
+      "guaranteed_gain": "0",
+      "informative": true,
+      "premise": "Both answers independently checked under an admitted complete-call contract; a capped or interrupted attempt retains the old bound"
+    },
+    {
+      "weights": [
+        1,
+        1
+      ],
+      "budget": 0,
+      "objective_lattice": 1,
+      "before": "2",
+      "SAT_objective_upper": 0,
+      "UNSAT_objective_lower": 1,
+      "SAT_uniform_cost_upper": "2",
+      "positive_box_margin": "2",
+      "current_uniform_lower": "0",
+      "SAT_bound": "2",
+      "UNSAT_anchor_lowers": [
+        "0",
+        "0"
+      ],
+      "UNSAT_bound": "2",
+      "no_progress_outcome": false,
+      "worst_bound": "2",
+      "guaranteed_gain": "0",
+      "informative": true,
+      "premise": "Both answers independently checked under an admitted complete-call contract; a capped or interrupted attempt retains the old bound"
+    }
+  ],
+  "bundle_branches": [
+    {
+      "observed_value": 0,
+      "possible_modes": [
+        [
+          0
+        ]
+      ],
+      "child_query": {
+        "weights": [
+          0,
+          2
+        ],
+        "objective_lattice": 2,
+        "before": "2",
+        "tolerance": "0",
+        "quotation_scope": "Exact existence within the conservative scalar-anchor, coordinate-enclosure quotation",
+        "current_uniform_lower": "0",
+        "positive_box_margin": "0",
+        "largest_SAT_feasible_lattice_index": 0,
+        "largest_SAT_feasible_budget": 0,
+        "status": "closing_query",
+        "closes": true,
+        "needs_purchase": true,
+        "quote": {
+          "weights": [
+            0,
+            2
+          ],
+          "budget": 0,
+          "objective_lattice": 2,
+          "before": "2",
+          "SAT_objective_upper": 0,
+          "UNSAT_objective_lower": 2,
+          "SAT_uniform_cost_upper": "0",
+          "positive_box_margin": "0",
+          "current_uniform_lower": "0",
+          "SAT_bound": "0",
+          "UNSAT_anchor_lowers": [
+            "2",
+            "0"
+          ],
+          "UNSAT_bound": "0",
+          "no_progress_outcome": false,
+          "worst_bound": "0",
+          "guaranteed_gain": "2",
+          "informative": true,
+          "premise": "Both answers independently checked under an admitted complete-call contract; a capped or interrupted attempt retains the old bound"
+        },
+        "nonempty_budget_interval": true,
+        "integer_budget_high": 1,
+        "canonical_budget": 0,
+        "negative_branch_evaluations": 1,
+        "smallest_UNSAT_feasible_lattice_index": 0,
+        "integer_budget_low": 0,
+        "exact_budget_interval": true
+      },
+      "old_unit_step_quote": {
+        "weights": [
+          0,
+          2
+        ],
+        "budget": 0,
+        "before": "2",
+        "SAT_uniform_cost_upper": 0,
+        "positive_box_margin": 0,
+        "current_uniform_lower": "0",
+        "SAT_bound": "0",
+        "UNSAT_anchor_lowers": [
+          "1",
+          "0"
+        ],
+        "UNSAT_bound": "1",
+        "no_progress_outcome": false,
+        "worst_bound": "1",
+        "guaranteed_gain": "1",
+        "premise": "Two checked outcomes only under an admitted complete-call contract; otherwise unresolved preserves the old bound"
+      },
+      "interrupted_quote": {
+        "weights": [
+          0,
+          2
+        ],
+        "budget": 0,
+        "objective_lattice": 2,
+        "before": "2",
+        "SAT_objective_upper": 0,
+        "UNSAT_objective_lower": 2,
+        "SAT_uniform_cost_upper": "0",
+        "positive_box_margin": "0",
+        "current_uniform_lower": "0",
+        "SAT_bound": "0",
+        "UNSAT_anchor_lowers": [
+          "2",
+          "0"
+        ],
+        "UNSAT_bound": "0",
+        "no_progress_outcome": true,
+        "worst_bound": "2",
+        "guaranteed_gain": "0",
+        "informative": true,
+        "premise": "Both answers independently checked under an admitted complete-call contract; a capped or interrupted attempt retains the old bound"
+      },
+      "complete_provider_quote": {
+        "source_id": "366537f5131137c32416f63f5cacab505c7786e8682e0d091156328482ce3d0c",
+        "variables": 2,
+        "soft_clauses": 2,
+        "maximum_tree_nodes": 7,
+        "maximum_tree_leaves": 4,
+        "provider_per_node": 14,
+        "provider_units": 98,
+        "negative_check_units": 63,
+        "witness_check_units": 10,
+        "tree_compile_units": 33,
+        "witness_compile_units": 16,
+        "raw_proof_words": 18,
+        "admission_units": 17,
+        "objective_update_units": 6,
+        "response_units": 16,
+        "witness_retention_units": 10,
+        "proof_retention_units": 26,
+        "complete_wrapper_units": 269,
+        "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+        "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+        "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+        "cpu_max_seconds": null,
+        "wall_max_seconds": null
+      }
+    },
+    {
+      "observed_value": 2,
+      "possible_modes": [
+        [
+          1
+        ]
+      ],
+      "child_query": {
+        "weights": [
+          2,
+          0
+        ],
+        "objective_lattice": 2,
+        "before": "2",
+        "tolerance": "0",
+        "quotation_scope": "Exact existence within the conservative scalar-anchor, coordinate-enclosure quotation",
+        "current_uniform_lower": "0",
+        "positive_box_margin": "0",
+        "largest_SAT_feasible_lattice_index": 0,
+        "largest_SAT_feasible_budget": 0,
+        "status": "closing_query",
+        "closes": true,
+        "needs_purchase": true,
+        "quote": {
+          "weights": [
+            2,
+            0
+          ],
+          "budget": 0,
+          "objective_lattice": 2,
+          "before": "2",
+          "SAT_objective_upper": 0,
+          "UNSAT_objective_lower": 2,
+          "SAT_uniform_cost_upper": "0",
+          "positive_box_margin": "0",
+          "current_uniform_lower": "0",
+          "SAT_bound": "0",
+          "UNSAT_anchor_lowers": [
+            "0",
+            "2"
+          ],
+          "UNSAT_bound": "0",
+          "no_progress_outcome": false,
+          "worst_bound": "0",
+          "guaranteed_gain": "2",
+          "informative": true,
+          "premise": "Both answers independently checked under an admitted complete-call contract; a capped or interrupted attempt retains the old bound"
+        },
+        "nonempty_budget_interval": true,
+        "integer_budget_high": 1,
+        "canonical_budget": 0,
+        "negative_branch_evaluations": 1,
+        "smallest_UNSAT_feasible_lattice_index": 0,
+        "integer_budget_low": 0,
+        "exact_budget_interval": true
+      },
+      "old_unit_step_quote": {
+        "weights": [
+          2,
+          0
+        ],
+        "budget": 0,
+        "before": "2",
+        "SAT_uniform_cost_upper": 0,
+        "positive_box_margin": 0,
+        "current_uniform_lower": "0",
+        "SAT_bound": "0",
+        "UNSAT_anchor_lowers": [
+          "0",
+          "1"
+        ],
+        "UNSAT_bound": "1",
+        "no_progress_outcome": false,
+        "worst_bound": "1",
+        "guaranteed_gain": "1",
+        "premise": "Two checked outcomes only under an admitted complete-call contract; otherwise unresolved preserves the old bound"
+      },
+      "interrupted_quote": {
+        "weights": [
+          2,
+          0
+        ],
+        "budget": 0,
+        "objective_lattice": 2,
+        "before": "2",
+        "SAT_objective_upper": 0,
+        "UNSAT_objective_lower": 2,
+        "SAT_uniform_cost_upper": "0",
+        "positive_box_margin": "0",
+        "current_uniform_lower": "0",
+        "SAT_bound": "0",
+        "UNSAT_anchor_lowers": [
+          "0",
+          "2"
+        ],
+        "UNSAT_bound": "0",
+        "no_progress_outcome": true,
+        "worst_bound": "2",
+        "guaranteed_gain": "0",
+        "informative": true,
+        "premise": "Both answers independently checked under an admitted complete-call contract; a capped or interrupted attempt retains the old bound"
+      },
+      "complete_provider_quote": {
+        "source_id": "629b530e9472d27b8cb7ea12d3383b981bef75d23b0eb2518775e30636d3f7f9",
+        "variables": 2,
+        "soft_clauses": 2,
+        "maximum_tree_nodes": 7,
+        "maximum_tree_leaves": 4,
+        "provider_per_node": 14,
+        "provider_units": 98,
+        "negative_check_units": 63,
+        "witness_check_units": 10,
+        "tree_compile_units": 33,
+        "witness_compile_units": 16,
+        "raw_proof_words": 18,
+        "admission_units": 17,
+        "objective_update_units": 6,
+        "response_units": 16,
+        "witness_retention_units": 10,
+        "proof_retention_units": 26,
+        "complete_wrapper_units": 269,
+        "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+        "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+        "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+        "cpu_max_seconds": null,
+        "wall_max_seconds": null
+      }
+    }
+  ],
+  "bundle_worst_bound": 0,
+  "bundle_guaranteed_gain": 2,
+  "complete_provider_code_admission": {
+    "binding_rows": [
+      {
+        "file": "contract_quote.py",
+        "sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+        "bytes": 9498,
+        "read_words": 1188,
+        "sha256_blocks": 149,
+        "binding_compare_units": 1
+      },
+      {
+        "file": "maxsat_repair.py",
+        "sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+        "bytes": 21856,
+        "read_words": 2732,
+        "sha256_blocks": 342,
+        "binding_compare_units": 1
+      },
+      {
+        "file": "maxsat_reprice.py",
+        "sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+        "bytes": 16431,
+        "read_words": 2054,
+        "sha256_blocks": 257,
+        "binding_compare_units": 1
+      }
+    ],
+    "declared_admission_units": 6725,
+    "timing": {
+      "process_ns": 93759,
+      "wall_ns": 93198
+    },
+    "source_semantics": "Manual finite-procedure derivation in contract_findings.md; no checksum-only proof admission."
+  },
+  "nominal_initial_negative_lattice_lower": 2,
+  "nominal_initial_negative_raw_lower": 1,
+  "selected_branch_observed_value": 2,
+  "new_structurally_bound_witness": {
+    "model": 2,
+    "violation_mask": 2,
+    "original_cost": 2
+  },
+  "after": {
+    "mask": 2,
+    "bound": "0",
+    "repair_gap": "0",
+    "replacement_gap": "-3",
+    "mode_anchor_lowers": [
+      "0",
+      "0"
+    ],
+    "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+    "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+  },
+  "final_cost_state": {
+    "source_id": "186cd1ba3a70bb1fddfea024d4e3f7da6cf259010857648b42248474ecf94652",
+    "representation": "joint",
+    "cohort_size": 1,
+    "possible_modes": [
+      [
+        1
+      ]
+    ],
+    "audit_receipts": [
+      "c88d50630618b533ca5718990e40c2fb7778875eff90c6365142dee668871070"
+    ]
+  },
+  "reconstruction_checks": {
+    "objective_endpoint_cases": 288,
+    "exact_interval_cases": 96,
+    "monotonic_improvement_and_unit_gcd_cases": 192,
+    "logical_model_or_optimum_enumerations": 0,
+    "use": "Reconstruction only; not acquisition advice or empirical confirmation"
+  },
+  "summary": {
+    "initial_bound": 2,
+    "guaranteed_audit_singleton_gain": 0,
+    "guaranteed_any_logical_singleton_gain": 0,
+    "quoted_bundle_bound": 0,
+    "actual_output_bound": "0",
+    "external_audits": 1,
+    "initial_complete_calls": 1,
+    "child_complete_calls": 1,
+    "new_native_or_LP_calls": 0,
+    "prospective_objective_mask_enumerations": 0,
+    "prospective_logical_truth_outcome_enumerations": 0
+  },
+  "invoice": {
+    "controller_admission_and_reconstruction": {
+      "total": 227973,
+      "by_category": {
+        "cost_admission": 13,
+        "check": 16,
+        "tree_compile": 10,
+        "storage": 20,
+        "anchor_admission": 22,
+        "witness_check": 5,
+        "witness_compile": 16,
+        "source_anchor_compile": 65810,
+        "source_anchor_query": 82204,
+        "audit_quote": 20,
+        "lattice_quote": 70975,
+        "logical_quote": 6204,
+        "bundle_quote": 104,
+        "cost_check": 14,
+        "objective_update": 12,
+        "construction_check": 2528
+      },
+      "operations": [
+        {
+          "category": "anchor_admission",
+          "operation": "checked_tree_evaluation_at_mode_anchors",
+          "units": 22
+        },
+        {
+          "category": "audit_quote",
+          "operation": "declared_partition_and_complete_outcome_maximum",
+          "units": 20
+        },
+        {
+          "category": "bundle_quote",
+          "operation": "source_weight_copy_and_finite_tariff_arithmetic",
+          "units": 104
+        },
+        {
+          "category": "check",
+          "operation": "negative_clause_header",
+          "units": 3
+        },
+        {
+          "category": "check",
+          "operation": "negative_literal",
+          "units": 4
+        },
+        {
+          "category": "check",
+          "operation": "negative_proof_node",
+          "units": 5
+        },
+        {
+          "category": "check",
+          "operation": "negative_weight_add",
+          "units": 2
+        },
+        {
+          "category": "check",
+          "operation": "negative_weight_index",
+          "units": 2
+        },
+        {
+          "category": "construction_check",
+          "operation": "objective_lattice_endpoint_case",
+          "units": 2528
+        },
+        {
+          "category": "cost_admission",
+          "operation": "mode_and_row_words",
+          "units": 13
+        },
+        {
+          "category": "cost_check",
+          "operation": "receipt_binding_and_mode_filter",
+          "units": 14
+        },
+        {
+          "category": "lattice_quote",
+          "operation": "coordinate_enclosure_and_scalar_cut_transport",
+          "units": 47844
+        },
+        {
+          "category": "lattice_quote",
+          "operation": "exact_sat_interval_endpoint",
+          "units": 882
+        },
+        {
+          "category": "lattice_quote",
+          "operation": "lattice_endpoint_rounding_and_complete_outcome_maximum",
+          "units": 13980
+        },
+        {
+          "category": "lattice_quote",
+          "operation": "query_validation_and_euclidean_gcd",
+          "units": 8269
+        },
+        {
+          "category": "logical_quote",
+          "operation": "coordinate_enclosure_and_scalar_cut_transport",
+          "units": 6204
+        },
+        {
+          "category": "objective_update",
+          "operation": "weighted_source_copy",
+          "units": 12
+        },
+        {
+          "category": "source_anchor_compile",
+          "operation": "mode_action_costs_and_lower_scaling",
+          "units": 65810
+        },
+        {
+          "category": "source_anchor_query",
+          "operation": "cohort_sums_and_clipped_regret",
+          "units": 42777
+        },
+        {
+          "category": "source_anchor_query",
+          "operation": "row_mode_contrast_extrema",
+          "units": 39427
+        },
+        {
+          "category": "storage",
+          "operation": "compiled_tree_leaf_masks",
+          "units": 3
+        },
+        {
+          "category": "storage",
+          "operation": "cost_receipt_and_remaining_mode_ids",
+          "units": 9
+        },
+        {
+          "category": "storage",
+          "operation": "retained_witness_and_violation_mask",
+          "units": 8
+        },
+        {
+          "category": "tree_compile",
+          "operation": "forced_clause_coefficient",
+          "units": 2
+        },
+        {
+          "category": "tree_compile",
+          "operation": "hard_leaf_omitted",
+          "units": 1
+        },
+        {
+          "category": "tree_compile",
+          "operation": "leaf_mask_deduplication",
+          "units": 2
+        },
+        {
+          "category": "tree_compile",
+          "operation": "proof_node_read",
+          "units": 5
+        },
+        {
+          "category": "witness_check",
+          "operation": "retained_clause_header",
+          "units": 2
+        },
+        {
+          "category": "witness_check",
+          "operation": "retained_literal",
+          "units": 3
+        },
+        {
+          "category": "witness_compile",
+          "operation": "mask_and_original_weight",
+          "units": 6
+        },
+        {
+          "category": "witness_compile",
+          "operation": "objective_violation_pass",
+          "units": 2
+        },
+        {
+          "category": "witness_compile",
+          "operation": "retained_clause_header",
+          "units": 4
+        },
+        {
+          "category": "witness_compile",
+          "operation": "retained_literal",
+          "units": 4
+        }
+      ]
+    },
+    "complete_call_wrapper_units": 263,
+    "provider_code_admission_units": 6725,
+    "audit_provider_software_units": 4,
+    "total_declared_software_units": 234965,
+    "external_audits": 1,
+    "external_price": null,
+    "reconstruction_included": true,
+    "pricing": "A + sigma*K_declared + rho*T_CPU + eta*S_recorded + R_other; A, conversion coefficients, and other implementation costs remain unassigned. No prospective CPU/wall bound or economic dominance."
+  },
+  "guarantee_resource_contract": {
+    "external_audits_max": 1,
+    "complete_child_calls_max": 1,
+    "complete_child_wrapper_units_max": 269,
+    "limitation": "The finite provider's declared operation quote is prospective; full CPU, host, serialization and storage prices are not bounded by that quote."
+  },
+  "end_utc": "2026-10-12T20:09:26.261550+00:00",
+  "timing": {
+    "process_ns": 728799451,
+    "wall_ns": 183108384
+  },
+  "limitations": "Only the initially supplied both-true action is admitted before purchases. An ordinary controller may propose and check other witnesses cheaply; this illustrative bundle is no advantage over such a stronger shared-access control. Exact source support is supplied, not population-learned."
+}

@@ -1,0 +1,8297 @@
+{
+  "status": "passed",
+  "evidence": "DEVELOPMENT finite exact-correspondence and arithmetic-cost probe",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T20:20:37.015188+00:00",
+  "hashes": {
+    "compiled_quotes_check.py": "a6e29fdb0ca11b0c620f760dbb99c364778ba49a0297f13bb3e8fb97b12c489c",
+    "compiled_quotes.py": "9ac7acb9344629d0d1179287bbc97bb6748c8ae854bc53a285647e3c83faccef",
+    "lattice_quotes.py": "480b72168c73f18c8d2914af05f25a3792b5d6654fa0612393cae61b2575b37d",
+    "anchor_quotes.py": "afa35592c6d800f78a60853a71f59d0a2e28ac279aeaf5b71a1026149de0a97a",
+    "source_anchor.py": "b8f42879ee99ce99c849fb4409e3b9c47c482f1430345ae7259ccb5c25a730bc"
+  },
+  "source_contract": "Except the explicitly trivial zero-action source, Boolean z with z1 OR z2 and nonnegative remaining features; singleton masks 1 and 2 cover all feasible repairs and give C*(v)=min(v1,v2). Every tested action has one of the first two bits set; replacement alone is also allowed.",
+  "preliminary_screen": {
+    "cases": 1296,
+    "exact_output_matches": 1296,
+    "reference_units": 148870,
+    "compiled_units": 93020,
+    "scope": "Initial unsaved two-feature arithmetic screen before the saved varied probe; no acquisitions. An initial import-only harness attempt lacked the s05 path and executed no quotation."
+  },
+  "summary": {
+    "varied_grid_exact_matches": 170,
+    "explicit_closing_interval_matches": 5,
+    "amortization_exact_matches": 80,
+    "admission_rejections": 8
+  },
+  "grids": [
+    {
+      "family": {
+        "name": "integer_two_features",
+        "modes": [
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "n": 2,
+        "contexts": [
+          {
+            "masks": [
+              1
+            ],
+            "possible": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "factor": 1,
+            "price": 7
+          },
+          {
+            "masks": [
+              1,
+              2
+            ],
+            "possible": [
+              [
+                0
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "factor": "1/2",
+            "price": 5
+          },
+          {
+            "masks": [
+              1,
+              1,
+              3
+            ],
+            "possible": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0
+              ]
+            ],
+            "factor": "1/2",
+            "price": 5
+          },
+          {
+            "masks": [],
+            "possible": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                2
+              ]
+            ],
+            "factor": 0,
+            "price": 3
+          },
+          {
+            "masks": [
+              3,
+              1
+            ],
+            "possible": [
+              [
+                2
+              ],
+              [
+                2
+              ]
+            ],
+            "factor": 1,
+            "price": 8
+          },
+          {
+            "masks": [
+              1,
+              2
+            ],
+            "possible": [
+              [
+                2,
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ]
+            ],
+            "factor": 1,
+            "price": 0
+          }
+        ],
+        "objectives": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            7,
+            7
+          ]
+        ]
+      },
+      "exact_source_lowers": [
+        2,
+        2,
+        4
+      ],
+      "cases": 112,
+      "compiled_setup_units": 38,
+      "reference_units": 20116,
+      "compiled_units": 9777,
+      "compiled_storage_report_units": 9,
+      "stats": {
+        "calls": 112,
+        "mask_compilations": 3,
+        "mask_hits": 8,
+        "objective_compilations": 6,
+        "objective_hits": 106,
+        "loss_compilations": 1,
+        "source_compilations": 5,
+        "source_hits": 107,
+        "base_compilations": 8,
+        "base_hits": 116,
+        "upper_compilations": 9,
+        "upper_hits": 2
+      },
+      "storage": {
+        "mode_actions": 3,
+        "objectives": 6,
+        "raw_source_keys": 6,
+        "canonical_sources": 5,
+        "anchor_bases": 8,
+        "action_source_uppers": 9,
+        "stored_numerical_words": 399,
+        "scope": "Explicit admitted/compiled key-value word tariff; physical bytes and host allocator costs not measured"
+      },
+      "records": [
+        {
+          "context": 0,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 94,
+          "compiled_units": 234,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 94,
+          "compiled_units": 61,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 94,
+          "compiled_units": 61,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 0,
+          "reference_units": 171,
+          "compiled_units": 87,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": "1/2",
+          "reference_units": 171,
+          "compiled_units": 76,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 2,
+          "reference_units": 171,
+          "compiled_units": 76,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 0,
+          "reference_units": 171,
+          "compiled_units": 87,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": "1/2",
+          "reference_units": 171,
+          "compiled_units": 76,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 2,
+          "reference_units": 171,
+          "compiled_units": 76,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 171,
+          "compiled_units": 87,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 171,
+          "compiled_units": 76,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 171,
+          "compiled_units": 76,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 172,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 172,
+          "compiled_units": 76,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 172,
+          "compiled_units": 76,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 0,
+          "reference_units": 433,
+          "compiled_units": 167,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": 0,
+          "quoted_bound": 4
+        },
+        {
+          "context": 0,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": "1/2",
+          "reference_units": 433,
+          "compiled_units": 135,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": 0,
+          "quoted_bound": 4
+        },
+        {
+          "context": 0,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 2,
+          "reference_units": 433,
+          "compiled_units": 135,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": 0,
+          "quoted_bound": 4
+        },
+        {
+          "context": 1,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 122,
+          "compiled_units": 287,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 122,
+          "compiled_units": 63,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 122,
+          "compiled_units": 63,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 0,
+          "reference_units": 187,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": "1/2",
+          "reference_units": 187,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 2,
+          "reference_units": 187,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 0,
+          "reference_units": 187,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": "1/2",
+          "reference_units": 187,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 2,
+          "reference_units": 187,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 187,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 187,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 187,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 188,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 188,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 188,
+          "compiled_units": 78,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 0,
+          "reference_units": 493,
+          "compiled_units": 138,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 3
+        },
+        {
+          "context": 1,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": "1/2",
+          "reference_units": 493,
+          "compiled_units": 138,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 3
+        },
+        {
+          "context": 1,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 2,
+          "reference_units": 493,
+          "compiled_units": 138,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 3
+        },
+        {
+          "context": 2,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 162,
+          "compiled_units": 218,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 162,
+          "compiled_units": 65,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 162,
+          "compiled_units": 65,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 0,
+          "reference_units": 227,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": "1/2",
+          "reference_units": 227,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 2,
+          "reference_units": 227,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 0,
+          "reference_units": 227,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": "1/2",
+          "reference_units": 227,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 2,
+          "reference_units": 227,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 227,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 227,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 227,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 228,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 228,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 228,
+          "compiled_units": 80,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 0,
+          "reference_units": 613,
+          "compiled_units": 140,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 3
+        },
+        {
+          "context": 2,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": "1/2",
+          "reference_units": 613,
+          "compiled_units": 140,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 3
+        },
+        {
+          "context": 2,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 2,
+          "reference_units": 613,
+          "compiled_units": 140,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 3
+        },
+        {
+          "context": 3,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 42,
+          "compiled_units": 163,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 42,
+          "compiled_units": 52,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 42,
+          "compiled_units": 52,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 0,
+          "reference_units": 107,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": "1/2",
+          "reference_units": 107,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 2,
+          "reference_units": 107,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 0,
+          "reference_units": 107,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": "1/2",
+          "reference_units": 107,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 2,
+          "reference_units": 107,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 107,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 107,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 107,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 108,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 108,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 108,
+          "compiled_units": 67,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 3,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 0,
+          "reference_units": 253,
+          "compiled_units": 157,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 2
+        },
+        {
+          "context": 3,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": "1/2",
+          "reference_units": 253,
+          "compiled_units": 125,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 2
+        },
+        {
+          "context": 3,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 2,
+          "reference_units": 253,
+          "compiled_units": 125,
+          "status": "closing_query",
+          "closes": true,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 2
+        },
+        {
+          "context": 4,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 104,
+          "compiled_units": 187,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 104,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 104,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 0,
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": "1/2",
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 2,
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 0,
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": "1/2",
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 2,
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 107,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 107,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 107,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 0,
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": "1/2",
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 4,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 2,
+          "reference_units": 106,
+          "compiled_units": 59,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 131,
+          "compiled_units": 298,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 131,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            0,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 131,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 0,
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": "1/2",
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            1,
+            1
+          ],
+          "tolerance": 2,
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 0,
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": "1/2",
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            2,
+            2
+          ],
+          "tolerance": 2,
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            3,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 0,
+          "reference_units": 134,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": "1/2",
+          "reference_units": 134,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            1,
+            3
+          ],
+          "tolerance": 2,
+          "reference_units": 134,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 0,
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": "1/2",
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 5,
+          "q": [
+            7,
+            7
+          ],
+          "tolerance": 2,
+          "reference_units": 133,
+          "compiled_units": 65,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "options": {
+            "complete": false
+          },
+          "reference_units": 217,
+          "compiled_units": 171,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "options": {
+            "exact_interval": true
+          },
+          "reference_units": 217,
+          "compiled_units": 82,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "options": {
+            "known_query_upper": 2
+          },
+          "reference_units": 217,
+          "compiled_units": 87,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "options": {
+            "exact_interval": true,
+            "known_query_upper": 2
+          },
+          "reference_units": 217,
+          "compiled_units": 87,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        }
+      ],
+      "reference_invoice": {
+        "total": 20116,
+        "by_category": {
+          "lattice_quote": 5790,
+          "source_anchor_compile": 5400,
+          "source_anchor_query": 8926
+        },
+        "operations": [
+          {
+            "category": "lattice_quote",
+            "operation": "coordinate_enclosure_and_scalar_cut_transport",
+            "units": 4368
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "exact_sat_interval_endpoint",
+            "units": 576
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "lattice_endpoint_rounding_and_complete_outcome_maximum",
+            "units": 120
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "query_validation_and_euclidean_gcd",
+            "units": 726
+          },
+          {
+            "category": "source_anchor_compile",
+            "operation": "mode_action_costs_and_lower_scaling",
+            "units": 5400
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "cohort_sums_and_clipped_regret",
+            "units": 2968
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "row_mode_contrast_extrema",
+            "units": 5958
+          }
+        ]
+      },
+      "compiled_invoice": {
+        "total": 9786,
+        "by_category": {
+          "prepared_admission": 22,
+          "prepared_storage": 399,
+          "prepared_lookup": 4762,
+          "prepared_key": 822,
+          "prepared_compile": 579,
+          "prepared_query": 3202
+        },
+        "operations": [
+          {
+            "category": "prepared_admission",
+            "operation": "fixed_modes_fraction_conversion_and_scaling",
+            "units": 22
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "exchangeable_mode_set_grouping",
+            "units": 51
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_anchor_contrast_and_sum",
+            "units": 142
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_upper_and_sum",
+            "units": 86
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_common_lower_and_sum",
+            "units": 80
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_coordinate_maximum_and_cohort_sum",
+            "units": 98
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "integer_objective_euclidean_gcd",
+            "units": 35
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "mask_mode_cost_products_and_sum",
+            "units": 45
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "query_anchor_positive_difference_sums",
+            "units": 18
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "scalar_anchor_row_scaling",
+            "units": 24
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_append",
+            "units": 207
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_comparison",
+            "units": 96
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_move",
+            "units": 12
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_store",
+            "units": 207
+          },
+          {
+            "category": "prepared_key",
+            "operation": "duplicate_action_elimination",
+            "units": 300
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "action_source_upper_lookup",
+            "units": 44
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "anchor_base_numeric_key",
+            "units": 1301
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "canonical_source_lookup",
+            "units": 18
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "mode_action_cache_lookup",
+            "units": 11
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "possible_mode_admission_and_state_key",
+            "units": 1396
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "query_anchor_loss_lookup",
+            "units": 12
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "query_objective_admission_and_cache_key",
+            "units": 448
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "scalar_mask_admission_and_conversion",
+            "units": 1532
+          },
+          {
+            "category": "prepared_query",
+            "operation": "action_regret_clipping_and_best_selection",
+            "units": 55
+          },
+          {
+            "category": "prepared_query",
+            "operation": "cache_storage_summary",
+            "units": 9
+          },
+          {
+            "category": "prepared_query",
+            "operation": "checked_outcome_lattice_bounds_and_record",
+            "units": 468
+          },
+          {
+            "category": "prepared_query",
+            "operation": "closing_result_output",
+            "units": 108
+          },
+          {
+            "category": "prepared_query",
+            "operation": "closing_status_and_base_output",
+            "units": 1568
+          },
+          {
+            "category": "prepared_query",
+            "operation": "exact_sat_interval_endpoint",
+            "units": 576
+          },
+          {
+            "category": "prepared_query",
+            "operation": "known_feasible_query_upper_limit",
+            "units": 10
+          },
+          {
+            "category": "prepared_query",
+            "operation": "objective_enclosure_positive_margin",
+            "units": 384
+          },
+          {
+            "category": "prepared_query",
+            "operation": "replacement_bound",
+            "units": 24
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "immutable_cache_key_and_value_words",
+            "units": 383
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "mode_and_full_cohort_anchor_words",
+            "units": 16
+          }
+        ]
+      }
+    },
+    {
+      "family": {
+        "name": "rational_three_features",
+        "modes": [
+          [
+            "1/2",
+            "3/2",
+            0
+          ],
+          [
+            "3/2",
+            "1/2",
+            2
+          ],
+          [
+            1,
+            1,
+            "1/2"
+          ]
+        ],
+        "n": 3,
+        "contexts": [
+          {
+            "masks": [
+              1,
+              2,
+              5
+            ],
+            "possible": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "factor": 1,
+            "price": 5
+          },
+          {
+            "masks": [
+              1
+            ],
+            "possible": [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                0,
+                2
+              ]
+            ],
+            "factor": "1/3",
+            "price": 3
+          },
+          {
+            "masks": [
+              2,
+              3
+            ],
+            "possible": [
+              [
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "factor": 1,
+            "price": 7
+          }
+        ],
+        "objectives": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            0
+          ],
+          [
+            2,
+            4,
+            6
+          ],
+          [
+            8,
+            8,
+            8
+          ]
+        ]
+      },
+      "exact_source_lowers": [
+        "3/2",
+        "3/2",
+        3
+      ],
+      "cases": 58,
+      "compiled_setup_units": 53,
+      "reference_units": 20744,
+      "compiled_units": 6897,
+      "compiled_storage_report_units": 9,
+      "stats": {
+        "calls": 58,
+        "mask_compilations": 4,
+        "mask_hits": 4,
+        "objective_compilations": 6,
+        "objective_hits": 52,
+        "loss_compilations": 2,
+        "source_compilations": 3,
+        "source_hits": 55,
+        "base_compilations": 4,
+        "base_hits": 67,
+        "upper_compilations": 6,
+        "upper_hits": 2
+      },
+      "storage": {
+        "mode_actions": 4,
+        "objectives": 6,
+        "raw_source_keys": 3,
+        "canonical_sources": 3,
+        "anchor_bases": 4,
+        "action_source_uppers": 6,
+        "stored_numerical_words": 333,
+        "scope": "Explicit admitted/compiled key-value word tariff; physical bytes and host allocator costs not measured"
+      },
+      "records": [
+        {
+          "context": 0,
+          "q": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 262,
+          "compiled_units": 445,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 262,
+          "compiled_units": 83,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 262,
+          "compiled_units": 83,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            1,
+            1,
+            1
+          ],
+          "tolerance": 0,
+          "reference_units": 394,
+          "compiled_units": 115,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            1,
+            1,
+            1
+          ],
+          "tolerance": "1/2",
+          "reference_units": 394,
+          "compiled_units": 101,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            1,
+            1,
+            1
+          ],
+          "tolerance": 2,
+          "reference_units": 394,
+          "compiled_units": 101,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            2,
+            2,
+            2
+          ],
+          "tolerance": 0,
+          "reference_units": 394,
+          "compiled_units": 115,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            2,
+            2,
+            2
+          ],
+          "tolerance": "1/2",
+          "reference_units": 394,
+          "compiled_units": 101,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            2,
+            2,
+            2
+          ],
+          "tolerance": 2,
+          "reference_units": 394,
+          "compiled_units": 101,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            3,
+            3,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 393,
+          "compiled_units": 114,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            3,
+            3,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 393,
+          "compiled_units": 101,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            3,
+            3,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 393,
+          "compiled_units": 101,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            2,
+            4,
+            6
+          ],
+          "tolerance": 0,
+          "reference_units": 396,
+          "compiled_units": 117,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            2,
+            4,
+            6
+          ],
+          "tolerance": "1/2",
+          "reference_units": 396,
+          "compiled_units": 101,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 0,
+          "q": [
+            2,
+            4,
+            6
+          ],
+          "tolerance": 2,
+          "reference_units": 1050,
+          "compiled_units": 194,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 3
+        },
+        {
+          "context": 0,
+          "q": [
+            8,
+            8,
+            8
+          ],
+          "tolerance": 0,
+          "reference_units": 1046,
+          "compiled_units": 208,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 3
+        },
+        {
+          "context": 0,
+          "q": [
+            8,
+            8,
+            8
+          ],
+          "tolerance": "1/2",
+          "reference_units": 1046,
+          "compiled_units": 164,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 3
+        },
+        {
+          "context": 0,
+          "q": [
+            8,
+            8,
+            8
+          ],
+          "tolerance": 2,
+          "reference_units": 1046,
+          "compiled_units": 164,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": 0,
+          "quoted_bound": 3
+        },
+        {
+          "context": 1,
+          "q": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 102,
+          "compiled_units": 270,
+          "status": "zero_objective",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 102,
+          "compiled_units": 61,
+          "status": "zero_objective",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 102,
+          "compiled_units": 61,
+          "status": "zero_objective",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            1,
+            1,
+            1
+          ],
+          "tolerance": 0,
+          "reference_units": 189,
+          "compiled_units": 79,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            1,
+            1,
+            1
+          ],
+          "tolerance": "1/2",
+          "reference_units": 189,
+          "compiled_units": 79,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            1,
+            1,
+            1
+          ],
+          "tolerance": 2,
+          "reference_units": 189,
+          "compiled_units": 79,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            2,
+            2,
+            2
+          ],
+          "tolerance": 0,
+          "reference_units": 189,
+          "compiled_units": 79,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            2,
+            2,
+            2
+          ],
+          "tolerance": "1/2",
+          "reference_units": 189,
+          "compiled_units": 79,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            2,
+            2,
+            2
+          ],
+          "tolerance": 2,
+          "reference_units": 189,
+          "compiled_units": 79,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            3,
+            3,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 188,
+          "compiled_units": 79,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            3,
+            3,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 188,
+          "compiled_units": 79,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            3,
+            3,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 188,
+          "compiled_units": 79,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            2,
+            4,
+            6
+          ],
+          "tolerance": 0,
+          "reference_units": 191,
+          "compiled_units": 79,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 1,
+          "q": [
+            2,
+            4,
+            6
+          ],
+          "tolerance": "1/2",
+          "reference_units": 480,
+          "compiled_units": 140,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": 0,
+          "quoted_bound": "7/3"
+        },
+        {
+          "context": 1,
+          "q": [
+            2,
+            4,
+            6
+          ],
+          "tolerance": 2,
+          "reference_units": 480,
+          "compiled_units": 140,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": 0,
+          "quoted_bound": "7/3"
+        },
+        {
+          "context": 1,
+          "q": [
+            8,
+            8,
+            8
+          ],
+          "tolerance": 0,
+          "reference_units": 476,
+          "compiled_units": 140,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": 0,
+          "quoted_bound": "7/3"
+        },
+        {
+          "context": 1,
+          "q": [
+            8,
+            8,
+            8
+          ],
+          "tolerance": "1/2",
+          "reference_units": 476,
+          "compiled_units": 140,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": 0,
+          "quoted_bound": "7/3"
+        },
+        {
+          "context": 1,
+          "q": [
+            8,
+            8,
+            8
+          ],
+          "tolerance": 2,
+          "reference_units": 476,
+          "compiled_units": 140,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "7/3",
+          "canonical_budget": 0,
+          "quoted_bound": "7/3"
+        },
+        {
+          "context": 2,
+          "q": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 161,
+          "compiled_units": 385,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 161,
+          "compiled_units": 69,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 161,
+          "compiled_units": 69,
+          "status": "already_closed",
+          "closes": true,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            1,
+            1,
+            1
+          ],
+          "tolerance": 0,
+          "reference_units": 257,
+          "compiled_units": 87,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            1,
+            1,
+            1
+          ],
+          "tolerance": "1/2",
+          "reference_units": 257,
+          "compiled_units": 87,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            1,
+            1,
+            1
+          ],
+          "tolerance": 2,
+          "reference_units": 164,
+          "compiled_units": 69,
+          "status": "already_closed",
+          "closes": true,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            2,
+            2,
+            2
+          ],
+          "tolerance": 0,
+          "reference_units": 257,
+          "compiled_units": 87,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            2,
+            2,
+            2
+          ],
+          "tolerance": "1/2",
+          "reference_units": 257,
+          "compiled_units": 87,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            2,
+            2,
+            2
+          ],
+          "tolerance": 2,
+          "reference_units": 164,
+          "compiled_units": 69,
+          "status": "already_closed",
+          "closes": true,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            3,
+            3,
+            0
+          ],
+          "tolerance": 0,
+          "reference_units": 256,
+          "compiled_units": 87,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            3,
+            3,
+            0
+          ],
+          "tolerance": "1/2",
+          "reference_units": 256,
+          "compiled_units": 87,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            3,
+            3,
+            0
+          ],
+          "tolerance": 2,
+          "reference_units": 163,
+          "compiled_units": 69,
+          "status": "already_closed",
+          "closes": true,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            2,
+            4,
+            6
+          ],
+          "tolerance": 0,
+          "reference_units": 675,
+          "compiled_units": 149,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": 0,
+          "quoted_bound": 1
+        },
+        {
+          "context": 2,
+          "q": [
+            2,
+            4,
+            6
+          ],
+          "tolerance": "1/2",
+          "reference_units": 675,
+          "compiled_units": 149,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": 0,
+          "quoted_bound": 1
+        },
+        {
+          "context": 2,
+          "q": [
+            2,
+            4,
+            6
+          ],
+          "tolerance": 2,
+          "reference_units": 166,
+          "compiled_units": 69,
+          "status": "already_closed",
+          "closes": true,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "context": 2,
+          "q": [
+            8,
+            8,
+            8
+          ],
+          "tolerance": 0,
+          "reference_units": 671,
+          "compiled_units": 149,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": 0,
+          "quoted_bound": 1
+        },
+        {
+          "context": 2,
+          "q": [
+            8,
+            8,
+            8
+          ],
+          "tolerance": "1/2",
+          "reference_units": 671,
+          "compiled_units": 149,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 1,
+          "canonical_budget": 0,
+          "quoted_bound": 1
+        },
+        {
+          "context": 2,
+          "q": [
+            8,
+            8,
+            8
+          ],
+          "tolerance": 2,
+          "reference_units": 164,
+          "compiled_units": 69,
+          "status": "already_closed",
+          "closes": true,
+          "before": 1,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "options": {
+            "complete": false
+          },
+          "reference_units": 329,
+          "compiled_units": 172,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "options": {
+            "exact_interval": true
+          },
+          "reference_units": 329,
+          "compiled_units": 95,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "options": {
+            "known_query_upper": 2
+          },
+          "reference_units": 329,
+          "compiled_units": 100,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "options": {
+            "exact_interval": true,
+            "known_query_upper": 2
+          },
+          "reference_units": 329,
+          "compiled_units": 100,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 3,
+          "canonical_budget": null,
+          "quoted_bound": null
+        }
+      ],
+      "reference_invoice": {
+        "total": 20744,
+        "by_category": {
+          "lattice_quote": 6522,
+          "source_anchor_compile": 5250,
+          "source_anchor_query": 8972
+        },
+        "operations": [
+          {
+            "category": "lattice_quote",
+            "operation": "coordinate_enclosure_and_scalar_cut_transport",
+            "units": 5436
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "exact_sat_interval_endpoint",
+            "units": 396
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "lattice_endpoint_rounding_and_complete_outcome_maximum",
+            "units": 130
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "query_validation_and_euclidean_gcd",
+            "units": 560
+          },
+          {
+            "category": "source_anchor_compile",
+            "operation": "mode_action_costs_and_lower_scaling",
+            "units": 5250
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "cohort_sums_and_clipped_regret",
+            "units": 2498
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "row_mode_contrast_extrema",
+            "units": 6474
+          }
+        ]
+      },
+      "compiled_invoice": {
+        "total": 6906,
+        "by_category": {
+          "prepared_admission": 31,
+          "prepared_storage": 333,
+          "prepared_lookup": 3036,
+          "prepared_key": 543,
+          "prepared_compile": 593,
+          "prepared_query": 2370
+        },
+        "operations": [
+          {
+            "category": "prepared_admission",
+            "operation": "fixed_modes_fraction_conversion_and_scaling",
+            "units": 31
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "exchangeable_mode_set_grouping",
+            "units": 45
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_anchor_contrast_and_sum",
+            "units": 114
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_upper_and_sum",
+            "units": 71
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_common_lower_and_sum",
+            "units": 47
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_coordinate_maximum_and_cohort_sum",
+            "units": 120
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "integer_objective_euclidean_gcd",
+            "units": 46
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "mask_mode_cost_products_and_sum",
+            "units": 84
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "query_anchor_positive_difference_sums",
+            "units": 54
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "scalar_anchor_row_scaling",
+            "units": 12
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_append",
+            "units": 143
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_comparison",
+            "units": 75
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_move",
+            "units": 8
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_store",
+            "units": 143
+          },
+          {
+            "category": "prepared_key",
+            "operation": "duplicate_action_elimination",
+            "units": 174
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "action_source_upper_lookup",
+            "units": 40
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "anchor_base_numeric_key",
+            "units": 851
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "canonical_source_lookup",
+            "units": 12
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "mode_action_cache_lookup",
+            "units": 8
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "possible_mode_admission_and_state_key",
+            "units": 1010
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "query_anchor_loss_lookup",
+            "units": 13
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "query_objective_admission_and_cache_key",
+            "units": 290
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "scalar_mask_admission_and_conversion",
+            "units": 812
+          },
+          {
+            "category": "prepared_query",
+            "operation": "action_regret_clipping_and_best_selection",
+            "units": 40
+          },
+          {
+            "category": "prepared_query",
+            "operation": "cache_storage_summary",
+            "units": 9
+          },
+          {
+            "category": "prepared_query",
+            "operation": "checked_outcome_lattice_bounds_and_record",
+            "units": 520
+          },
+          {
+            "category": "prepared_query",
+            "operation": "closing_result_output",
+            "units": 117
+          },
+          {
+            "category": "prepared_query",
+            "operation": "closing_status_and_base_output",
+            "units": 870
+          },
+          {
+            "category": "prepared_query",
+            "operation": "exact_sat_interval_endpoint",
+            "units": 396
+          },
+          {
+            "category": "prepared_query",
+            "operation": "known_feasible_query_upper_limit",
+            "units": 10
+          },
+          {
+            "category": "prepared_query",
+            "operation": "objective_enclosure_positive_margin",
+            "units": 396
+          },
+          {
+            "category": "prepared_query",
+            "operation": "replacement_bound",
+            "units": 12
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "immutable_cache_key_and_value_words",
+            "units": 311
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "mode_and_full_cohort_anchor_words",
+            "units": 22
+          }
+        ]
+      }
+    }
+  ],
+  "closing_intervals": {
+    "modes": [
+      [
+        1,
+        3
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "cohort_size": 1,
+    "case": {
+      "masks": [
+        3
+      ],
+      "possible": [
+        [
+          0,
+          1
+        ]
+      ],
+      "lowers": [
+        1,
+        1
+      ],
+      "price": 8,
+      "q": [
+        3,
+        3
+      ],
+      "tolerance": 2
+    },
+    "records": [
+      {
+        "options": {},
+        "reference_units": 250,
+        "compiled_units": 287,
+        "status": "closing_query",
+        "closes": true,
+        "before": 3,
+        "canonical_budget": 3,
+        "quoted_bound": 2
+      },
+      {
+        "options": {
+          "exact_interval": true
+        },
+        "reference_units": 400,
+        "compiled_units": 168,
+        "status": "closing_query",
+        "closes": true,
+        "before": 3,
+        "canonical_budget": 3,
+        "quoted_bound": 2
+      },
+      {
+        "options": {
+          "known_query_upper": 6
+        },
+        "reference_units": 250,
+        "compiled_units": 122,
+        "status": "closing_query",
+        "closes": true,
+        "before": 3,
+        "canonical_budget": 3,
+        "quoted_bound": 2
+      },
+      {
+        "options": {
+          "exact_interval": true,
+          "known_query_upper": 6
+        },
+        "reference_units": 400,
+        "compiled_units": 173,
+        "status": "closing_query",
+        "closes": true,
+        "before": 3,
+        "canonical_budget": 3,
+        "quoted_bound": 2
+      },
+      {
+        "options": {
+          "complete": false
+        },
+        "reference_units": 250,
+        "compiled_units": 117,
+        "status": "no_closing_query",
+        "closes": false,
+        "before": 3,
+        "canonical_budget": 3,
+        "quoted_bound": 3
+      }
+    ],
+    "scope": "Actual closing, exact-interval bisection, feasible q-cost upper 6 from mask 3, and unresolved-completion branch",
+    "reference_invoice": {
+      "total": 1550,
+      "by_category": {
+        "lattice_quote": 619,
+        "source_anchor_compile": 380,
+        "source_anchor_query": 551
+      },
+      "operations": [
+        {
+          "category": "lattice_quote",
+          "operation": "coordinate_enclosure_and_scalar_cut_transport",
+          "units": 432
+        },
+        {
+          "category": "lattice_quote",
+          "operation": "exact_sat_interval_endpoint",
+          "units": 45
+        },
+        {
+          "category": "lattice_quote",
+          "operation": "lattice_endpoint_rounding_and_complete_outcome_maximum",
+          "units": 70
+        },
+        {
+          "category": "lattice_quote",
+          "operation": "query_validation_and_euclidean_gcd",
+          "units": 72
+        },
+        {
+          "category": "source_anchor_compile",
+          "operation": "mode_action_costs_and_lower_scaling",
+          "units": 380
+        },
+        {
+          "category": "source_anchor_query",
+          "operation": "cohort_sums_and_clipped_regret",
+          "units": 247
+        },
+        {
+          "category": "source_anchor_query",
+          "operation": "row_mode_contrast_extrema",
+          "units": 304
+        }
+      ]
+    },
+    "compiled_invoice": {
+      "total": 895,
+      "by_category": {
+        "prepared_admission": 16,
+        "prepared_storage": 66,
+        "prepared_lookup": 223,
+        "prepared_key": 27,
+        "prepared_compile": 83,
+        "prepared_query": 480
+      },
+      "operations": [
+        {
+          "category": "prepared_admission",
+          "operation": "fixed_modes_fraction_conversion_and_scaling",
+          "units": 16
+        },
+        {
+          "category": "prepared_compile",
+          "operation": "exchangeable_mode_set_grouping",
+          "units": 5
+        },
+        {
+          "category": "prepared_compile",
+          "operation": "grouped_action_anchor_contrast_and_sum",
+          "units": 16
+        },
+        {
+          "category": "prepared_compile",
+          "operation": "grouped_action_upper_and_sum",
+          "units": 6
+        },
+        {
+          "category": "prepared_compile",
+          "operation": "grouped_common_lower_and_sum",
+          "units": 12
+        },
+        {
+          "category": "prepared_compile",
+          "operation": "grouped_coordinate_maximum_and_cohort_sum",
+          "units": 12
+        },
+        {
+          "category": "prepared_compile",
+          "operation": "integer_objective_euclidean_gcd",
+          "units": 6
+        },
+        {
+          "category": "prepared_compile",
+          "operation": "mask_mode_cost_products_and_sum",
+          "units": 10
+        },
+        {
+          "category": "prepared_compile",
+          "operation": "query_anchor_positive_difference_sums",
+          "units": 12
+        },
+        {
+          "category": "prepared_compile",
+          "operation": "scalar_anchor_row_scaling",
+          "units": 4
+        },
+        {
+          "category": "prepared_key",
+          "operation": "canonical_item_append",
+          "units": 8
+        },
+        {
+          "category": "prepared_key",
+          "operation": "canonical_item_comparison",
+          "units": 1
+        },
+        {
+          "category": "prepared_key",
+          "operation": "canonical_item_store",
+          "units": 8
+        },
+        {
+          "category": "prepared_key",
+          "operation": "duplicate_action_elimination",
+          "units": 10
+        },
+        {
+          "category": "prepared_lookup",
+          "operation": "action_source_upper_lookup",
+          "units": 6
+        },
+        {
+          "category": "prepared_lookup",
+          "operation": "anchor_base_numeric_key",
+          "units": 96
+        },
+        {
+          "category": "prepared_lookup",
+          "operation": "canonical_source_lookup",
+          "units": 2
+        },
+        {
+          "category": "prepared_lookup",
+          "operation": "mode_action_cache_lookup",
+          "units": 2
+        },
+        {
+          "category": "prepared_lookup",
+          "operation": "possible_mode_admission_and_state_key",
+          "units": 35
+        },
+        {
+          "category": "prepared_lookup",
+          "operation": "query_anchor_loss_lookup",
+          "units": 7
+        },
+        {
+          "category": "prepared_lookup",
+          "operation": "query_objective_admission_and_cache_key",
+          "units": 20
+        },
+        {
+          "category": "prepared_lookup",
+          "operation": "scalar_mask_admission_and_conversion",
+          "units": 55
+        },
+        {
+          "category": "prepared_query",
+          "operation": "action_regret_clipping_and_best_selection",
+          "units": 10
+        },
+        {
+          "category": "prepared_query",
+          "operation": "checked_outcome_lattice_bounds_and_record",
+          "units": 252
+        },
+        {
+          "category": "prepared_query",
+          "operation": "closing_result_output",
+          "units": 45
+        },
+        {
+          "category": "prepared_query",
+          "operation": "closing_status_and_base_output",
+          "units": 70
+        },
+        {
+          "category": "prepared_query",
+          "operation": "exact_budget_interval_bisection",
+          "units": 12
+        },
+        {
+          "category": "prepared_query",
+          "operation": "exact_sat_interval_endpoint",
+          "units": 45
+        },
+        {
+          "category": "prepared_query",
+          "operation": "known_feasible_query_upper_limit",
+          "units": 10
+        },
+        {
+          "category": "prepared_query",
+          "operation": "objective_enclosure_positive_margin",
+          "units": 30
+        },
+        {
+          "category": "prepared_query",
+          "operation": "replacement_bound",
+          "units": 6
+        },
+        {
+          "category": "prepared_storage",
+          "operation": "immutable_cache_key_and_value_words",
+          "units": 54
+        },
+        {
+          "category": "prepared_storage",
+          "operation": "mode_and_full_cohort_anchor_words",
+          "units": 12
+        }
+      ]
+    }
+  },
+  "amortization": [
+    {
+      "name": "trivial_already_closed",
+      "purpose": "Cold and repeated trivial calls where preparation may never amortize",
+      "modes": [
+        [
+          0
+        ]
+      ],
+      "cohort_size": 1,
+      "cases": [
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "masks": [
+            0
+          ],
+          "possible": [
+            [
+              0
+            ]
+          ],
+          "lowers": [
+            0
+          ],
+          "price": 0,
+          "q": [
+            0
+          ],
+          "tolerance": 0
+        }
+      ],
+      "calls": 16,
+      "setup_units": 13,
+      "curve": [
+        {
+          "calls": 1,
+          "reference_units": 32,
+          "compiled_including_setup_units": 136,
+          "difference": 104
+        },
+        {
+          "calls": 2,
+          "reference_units": 64,
+          "compiled_including_setup_units": 177,
+          "difference": 113
+        },
+        {
+          "calls": 4,
+          "reference_units": 128,
+          "compiled_including_setup_units": 259,
+          "difference": 131
+        },
+        {
+          "calls": 8,
+          "reference_units": 256,
+          "compiled_including_setup_units": 423,
+          "difference": 167
+        },
+        {
+          "calls": 16,
+          "reference_units": 512,
+          "compiled_including_setup_units": 751,
+          "difference": 239
+        }
+      ],
+      "first_cumulative_gain_call": null,
+      "final_reference_units": 512,
+      "final_compiled_units": 751,
+      "difference": 239,
+      "percent_change": "5975/128",
+      "per_call": [
+        {
+          "reference_units": 32,
+          "compiled_units": 123,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 32,
+          "compiled_units": 41,
+          "status": "already_closed",
+          "closes": true,
+          "before": 0,
+          "canonical_budget": null,
+          "quoted_bound": null
+        }
+      ],
+      "stats": {
+        "calls": 16,
+        "mask_compilations": 1,
+        "mask_hits": 0,
+        "objective_compilations": 1,
+        "objective_hits": 15,
+        "loss_compilations": 0,
+        "source_compilations": 1,
+        "source_hits": 15,
+        "base_compilations": 1,
+        "base_hits": 15,
+        "upper_compilations": 1,
+        "upper_hits": 0
+      },
+      "reference_invoice": {
+        "total": 512,
+        "by_category": {
+          "lattice_quote": 48,
+          "source_anchor_compile": 96,
+          "source_anchor_query": 368
+        },
+        "operations": [
+          {
+            "category": "lattice_quote",
+            "operation": "query_validation_and_euclidean_gcd",
+            "units": 48
+          },
+          {
+            "category": "source_anchor_compile",
+            "operation": "mode_action_costs_and_lower_scaling",
+            "units": 96
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "cohort_sums_and_clipped_regret",
+            "units": 208
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "row_mode_contrast_extrema",
+            "units": 160
+          }
+        ]
+      },
+      "compiled_invoice": {
+        "total": 751,
+        "by_category": {
+          "prepared_admission": 7,
+          "prepared_storage": 38,
+          "prepared_lookup": 390,
+          "prepared_key": 68,
+          "prepared_compile": 32,
+          "prepared_query": 216
+        },
+        "operations": [
+          {
+            "category": "prepared_admission",
+            "operation": "fixed_modes_fraction_conversion_and_scaling",
+            "units": 7
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "exchangeable_mode_set_grouping",
+            "units": 4
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_anchor_contrast_and_sum",
+            "units": 6
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_upper_and_sum",
+            "units": 5
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_common_lower_and_sum",
+            "units": 5
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_coordinate_maximum_and_cohort_sum",
+            "units": 5
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "integer_objective_euclidean_gcd",
+            "units": 3
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "mask_mode_cost_products_and_sum",
+            "units": 3
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "scalar_anchor_row_scaling",
+            "units": 1
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_append",
+            "units": 18
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_store",
+            "units": 18
+          },
+          {
+            "category": "prepared_key",
+            "operation": "duplicate_action_elimination",
+            "units": 32
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "action_source_upper_lookup",
+            "units": 3
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "anchor_base_numeric_key",
+            "units": 112
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "canonical_source_lookup",
+            "units": 2
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "mode_action_cache_lookup",
+            "units": 1
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "possible_mode_admission_and_state_key",
+            "units": 80
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "query_objective_admission_and_cache_key",
+            "units": 48
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "scalar_mask_admission_and_conversion",
+            "units": 144
+          },
+          {
+            "category": "prepared_query",
+            "operation": "action_regret_clipping_and_best_selection",
+            "units": 5
+          },
+          {
+            "category": "prepared_query",
+            "operation": "closing_status_and_base_output",
+            "units": 208
+          },
+          {
+            "category": "prepared_query",
+            "operation": "replacement_bound",
+            "units": 3
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "immutable_cache_key_and_value_words",
+            "units": 32
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "mode_and_full_cohort_anchor_words",
+            "units": 6
+          }
+        ]
+      }
+    },
+    {
+      "name": "repeated_two_feature_menu",
+      "purpose": "Shared source/anchor state with six recurring public objectives",
+      "modes": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "cohort_size": 2,
+      "cases": [
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            0,
+            0
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            1,
+            1
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            2,
+            2
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            3,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            1,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            7,
+            7
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            0,
+            0
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            1,
+            1
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            2,
+            2
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            3,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            1,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            7,
+            7
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            0,
+            0
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            1,
+            1
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            2,
+            2
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            3,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            1,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            7,
+            7
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            0,
+            0
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            1,
+            1
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            2,
+            2
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            3,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            1,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            2,
+            2,
+            4
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            7,
+            7
+          ]
+        }
+      ],
+      "calls": 24,
+      "setup_units": 38,
+      "curve": [
+        {
+          "calls": 1,
+          "reference_units": 186,
+          "compiled_including_setup_units": 400,
+          "difference": 214
+        },
+        {
+          "calls": 2,
+          "reference_units": 449,
+          "compiled_including_setup_units": 499,
+          "difference": 50
+        },
+        {
+          "calls": 4,
+          "reference_units": 975,
+          "compiled_including_setup_units": 697,
+          "difference": -278
+        },
+        {
+          "calls": 8,
+          "reference_units": 2397,
+          "compiled_including_setup_units": 1139,
+          "difference": -1258
+        },
+        {
+          "calls": 16,
+          "reference_units": 4871,
+          "compiled_including_setup_units": 1889,
+          "difference": -2982
+        },
+        {
+          "calls": 24,
+          "reference_units": 7792,
+          "compiled_including_setup_units": 2700,
+          "difference": -5092
+        }
+      ],
+      "first_cumulative_gain_call": 3,
+      "final_reference_units": 7792,
+      "final_compiled_units": 2700,
+      "difference": -5092,
+      "percent_change": "-31825/487",
+      "per_call": [
+        {
+          "reference_units": 186,
+          "compiled_units": 362,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 99,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 99,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 99,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 264,
+          "compiled_units": 100,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 709,
+          "compiled_units": 181,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": 0,
+          "quoted_bound": 4
+        },
+        {
+          "reference_units": 186,
+          "compiled_units": 73,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 264,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 709,
+          "compiled_units": 149,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": 0,
+          "quoted_bound": 4
+        },
+        {
+          "reference_units": 186,
+          "compiled_units": 73,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 264,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 709,
+          "compiled_units": 149,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": 0,
+          "quoted_bound": 4
+        },
+        {
+          "reference_units": 186,
+          "compiled_units": 73,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 263,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 264,
+          "compiled_units": 88,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 709,
+          "compiled_units": 149,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 4,
+          "canonical_budget": 0,
+          "quoted_bound": 4
+        }
+      ],
+      "stats": {
+        "calls": 24,
+        "mask_compilations": 3,
+        "mask_hits": 0,
+        "objective_compilations": 6,
+        "objective_hits": 18,
+        "loss_compilations": 1,
+        "source_compilations": 1,
+        "source_hits": 23,
+        "base_compilations": 1,
+        "base_hits": 27,
+        "upper_compilations": 3,
+        "upper_hits": 0
+      },
+      "reference_invoice": {
+        "total": 7792,
+        "by_category": {
+          "lattice_quote": 1968,
+          "source_anchor_compile": 1920,
+          "source_anchor_query": 3904
+        },
+        "operations": [
+          {
+            "category": "lattice_quote",
+            "operation": "coordinate_enclosure_and_scalar_cut_transport",
+            "units": 1584
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "exact_sat_interval_endpoint",
+            "units": 180
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "lattice_endpoint_rounding_and_complete_outcome_maximum",
+            "units": 40
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "query_validation_and_euclidean_gcd",
+            "units": 164
+          },
+          {
+            "category": "source_anchor_compile",
+            "operation": "mode_action_costs_and_lower_scaling",
+            "units": 1920
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "cohort_sums_and_clipped_regret",
+            "units": 1088
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "row_mode_contrast_extrema",
+            "units": 2816
+          }
+        ]
+      },
+      "compiled_invoice": {
+        "total": 2700,
+        "by_category": {
+          "prepared_admission": 22,
+          "prepared_storage": 140,
+          "prepared_lookup": 1198,
+          "prepared_key": 309,
+          "prepared_compile": 185,
+          "prepared_query": 846
+        },
+        "operations": [
+          {
+            "category": "prepared_admission",
+            "operation": "fixed_modes_fraction_conversion_and_scaling",
+            "units": 22
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "exchangeable_mode_set_grouping",
+            "units": 12
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_anchor_contrast_and_sum",
+            "units": 30
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_upper_and_sum",
+            "units": 21
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_common_lower_and_sum",
+            "units": 7
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_coordinate_maximum_and_cohort_sum",
+            "units": 14
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "integer_objective_euclidean_gcd",
+            "units": 35
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "mask_mode_cost_products_and_sum",
+            "units": 45
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "query_anchor_positive_difference_sums",
+            "units": 18
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "scalar_anchor_row_scaling",
+            "units": 3
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_append",
+            "units": 80
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_comparison",
+            "units": 53
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_store",
+            "units": 80
+          },
+          {
+            "category": "prepared_key",
+            "operation": "duplicate_action_elimination",
+            "units": 96
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "action_source_upper_lookup",
+            "units": 12
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "anchor_base_numeric_key",
+            "units": 336
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "canonical_source_lookup",
+            "units": 3
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "mode_action_cache_lookup",
+            "units": 3
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "possible_mode_admission_and_state_key",
+            "units": 384
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "query_anchor_loss_lookup",
+            "units": 4
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "query_objective_admission_and_cache_key",
+            "units": 96
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "scalar_mask_admission_and_conversion",
+            "units": 360
+          },
+          {
+            "category": "prepared_query",
+            "operation": "action_regret_clipping_and_best_selection",
+            "units": 15
+          },
+          {
+            "category": "prepared_query",
+            "operation": "checked_outcome_lattice_bounds_and_record",
+            "units": 156
+          },
+          {
+            "category": "prepared_query",
+            "operation": "closing_result_output",
+            "units": 36
+          },
+          {
+            "category": "prepared_query",
+            "operation": "closing_status_and_base_output",
+            "units": 336
+          },
+          {
+            "category": "prepared_query",
+            "operation": "exact_sat_interval_endpoint",
+            "units": 180
+          },
+          {
+            "category": "prepared_query",
+            "operation": "objective_enclosure_positive_margin",
+            "units": 120
+          },
+          {
+            "category": "prepared_query",
+            "operation": "replacement_bound",
+            "units": 3
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "immutable_cache_key_and_value_words",
+            "units": 124
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "mode_and_full_cohort_anchor_words",
+            "units": 16
+          }
+        ]
+      }
+    },
+    {
+      "name": "changing_objectives_and_lowers",
+      "purpose": "Many cold numeric keys; low source-specific lowers are independently valid",
+      "modes": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "cohort_size": 2,
+      "cases": [
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            0,
+            0,
+            0
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            1,
+            2
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "1/8",
+            "1/8",
+            "1/4"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            2,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "1/4",
+            "1/4",
+            "1/2"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            3,
+            4
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "3/8",
+            "3/8",
+            "3/4"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            4,
+            5
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "1/2",
+            "1/2",
+            1
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            5,
+            6
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "5/8",
+            "5/8",
+            "5/4"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            6,
+            7
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "3/4",
+            "3/4",
+            "3/2"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            7,
+            8
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "7/8",
+            "7/8",
+            "7/4"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            8,
+            9
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            1,
+            1,
+            2
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            9,
+            10
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "9/8",
+            "9/8",
+            "9/4"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            10,
+            11
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "5/4",
+            "5/4",
+            "5/2"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            11,
+            12
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "11/8",
+            "11/8",
+            "11/4"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            12,
+            13
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "3/2",
+            "3/2",
+            3
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            13,
+            14
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "13/8",
+            "13/8",
+            "13/4"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            14,
+            15
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "7/4",
+            "7/4",
+            "7/2"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            15,
+            16
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "lowers": [
+            "15/8",
+            "15/8",
+            "15/4"
+          ],
+          "price": 7,
+          "tolerance": 2,
+          "q": [
+            16,
+            17
+          ]
+        }
+      ],
+      "calls": 16,
+      "setup_units": 38,
+      "curve": [
+        {
+          "calls": 1,
+          "reference_units": 264,
+          "compiled_including_setup_units": 418,
+          "difference": 154
+        },
+        {
+          "calls": 2,
+          "reference_units": 529,
+          "compiled_including_setup_units": 611,
+          "difference": 82
+        },
+        {
+          "calls": 4,
+          "reference_units": 1059,
+          "compiled_including_setup_units": 997,
+          "difference": -62
+        },
+        {
+          "calls": 8,
+          "reference_units": 3911,
+          "compiled_including_setup_units": 2097,
+          "difference": -1814
+        },
+        {
+          "calls": 16,
+          "reference_units": 9615,
+          "compiled_including_setup_units": 4297,
+          "difference": -5318
+        }
+      ],
+      "first_cumulative_gain_call": 4,
+      "final_reference_units": 9615,
+      "final_compiled_units": 4297,
+      "difference": -5318,
+      "percent_change": "-106360/1923",
+      "per_call": [
+        {
+          "reference_units": 264,
+          "compiled_units": 380,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 6,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 265,
+          "compiled_units": 193,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "47/8",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 265,
+          "compiled_units": 193,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "23/4",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 265,
+          "compiled_units": 193,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": "45/8",
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "11/2",
+          "canonical_budget": 1,
+          "quoted_bound": "11/2"
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "43/8",
+          "canonical_budget": 2,
+          "quoted_bound": "43/8"
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "21/4",
+          "canonical_budget": 2,
+          "quoted_bound": "21/4"
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "41/8",
+          "canonical_budget": 2,
+          "quoted_bound": "41/8"
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": 5,
+          "canonical_budget": 3,
+          "quoted_bound": 5
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "39/8",
+          "canonical_budget": 3,
+          "quoted_bound": "39/8"
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "19/4",
+          "canonical_budget": 3,
+          "quoted_bound": "19/4"
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "37/8",
+          "canonical_budget": 3,
+          "quoted_bound": "37/8"
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "9/2",
+          "canonical_budget": 3,
+          "quoted_bound": "9/2"
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "35/8",
+          "canonical_budget": 3,
+          "quoted_bound": "35/8"
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "17/4",
+          "canonical_budget": 3,
+          "quoted_bound": "17/4"
+        },
+        {
+          "reference_units": 713,
+          "compiled_units": 275,
+          "status": "no_closing_query",
+          "closes": false,
+          "before": "33/8",
+          "canonical_budget": 3,
+          "quoted_bound": "33/8"
+        }
+      ],
+      "stats": {
+        "calls": 16,
+        "mask_compilations": 3,
+        "mask_hits": 45,
+        "objective_compilations": 16,
+        "objective_hits": 0,
+        "loss_compilations": 12,
+        "source_compilations": 1,
+        "source_hits": 15,
+        "base_compilations": 16,
+        "base_hits": 12,
+        "upper_compilations": 3,
+        "upper_hits": 45
+      },
+      "reference_invoice": {
+        "total": 9615,
+        "by_category": {
+          "lattice_quote": 2335,
+          "source_anchor_compile": 2400,
+          "source_anchor_query": 4880
+        },
+        "operations": [
+          {
+            "category": "lattice_quote",
+            "operation": "coordinate_enclosure_and_scalar_cut_transport",
+            "units": 1848
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "exact_sat_interval_endpoint",
+            "units": 144
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "lattice_endpoint_rounding_and_complete_outcome_maximum",
+            "units": 120
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "query_validation_and_euclidean_gcd",
+            "units": 223
+          },
+          {
+            "category": "source_anchor_compile",
+            "operation": "mode_action_costs_and_lower_scaling",
+            "units": 2400
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "cohort_sums_and_clipped_regret",
+            "units": 1360
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "row_mode_contrast_extrema",
+            "units": 3520
+          }
+        ]
+      },
+      "compiled_invoice": {
+        "total": 4297,
+        "by_category": {
+          "prepared_admission": 22,
+          "prepared_storage": 508,
+          "prepared_lookup": 1151,
+          "prepared_key": 213,
+          "prepared_compile": 1075,
+          "prepared_query": 1328
+        },
+        "operations": [
+          {
+            "category": "prepared_admission",
+            "operation": "fixed_modes_fraction_conversion_and_scaling",
+            "units": 22
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "exchangeable_mode_set_grouping",
+            "units": 12
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_anchor_contrast_and_sum",
+            "units": 480
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_upper_and_sum",
+            "units": 21
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_common_lower_and_sum",
+            "units": 112
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_coordinate_maximum_and_cohort_sum",
+            "units": 14
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "integer_objective_euclidean_gcd",
+            "units": 127
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "mask_mode_cost_products_and_sum",
+            "units": 45
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "query_anchor_positive_difference_sums",
+            "units": 216
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "scalar_anchor_row_scaling",
+            "units": 48
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_append",
+            "units": 56
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_comparison",
+            "units": 37
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_store",
+            "units": 56
+          },
+          {
+            "category": "prepared_key",
+            "operation": "duplicate_action_elimination",
+            "units": 64
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "action_source_upper_lookup",
+            "units": 192
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "anchor_base_numeric_key",
+            "units": 336
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "canonical_source_lookup",
+            "units": 3
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "mode_action_cache_lookup",
+            "units": 48
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "possible_mode_admission_and_state_key",
+            "units": 256
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "query_anchor_loss_lookup",
+            "units": 12
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "query_objective_admission_and_cache_key",
+            "units": 64
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "scalar_mask_admission_and_conversion",
+            "units": 240
+          },
+          {
+            "category": "prepared_query",
+            "operation": "action_regret_clipping_and_best_selection",
+            "units": 240
+          },
+          {
+            "category": "prepared_query",
+            "operation": "checked_outcome_lattice_bounds_and_record",
+            "units": 468
+          },
+          {
+            "category": "prepared_query",
+            "operation": "closing_result_output",
+            "units": 108
+          },
+          {
+            "category": "prepared_query",
+            "operation": "closing_status_and_base_output",
+            "units": 224
+          },
+          {
+            "category": "prepared_query",
+            "operation": "exact_sat_interval_endpoint",
+            "units": 144
+          },
+          {
+            "category": "prepared_query",
+            "operation": "objective_enclosure_positive_margin",
+            "units": 96
+          },
+          {
+            "category": "prepared_query",
+            "operation": "replacement_bound",
+            "units": 48
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "immutable_cache_key_and_value_words",
+            "units": 492
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "mode_and_full_cohort_anchor_words",
+            "units": 16
+          }
+        ]
+      }
+    },
+    {
+      "name": "repeated_six_feature_menu",
+      "purpose": "Larger mode-action arithmetic shared across repeated quotation menus",
+      "modes": [
+        [
+          1,
+          3,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          2,
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          3,
+          0,
+          2
+        ]
+      ],
+      "cohort_size": 4,
+      "cases": [
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "masks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "possible": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "lowers": [
+            4,
+            4,
+            8,
+            4
+          ],
+          "price": 12,
+          "tolerance": 3,
+          "q": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      ],
+      "calls": 24,
+      "setup_units": 128,
+      "curve": [
+        {
+          "calls": 1,
+          "reference_units": 609,
+          "compiled_including_setup_units": 947,
+          "difference": 338
+        },
+        {
+          "calls": 2,
+          "reference_units": 1605,
+          "compiled_including_setup_units": 1111,
+          "difference": -494
+        },
+        {
+          "calls": 4,
+          "reference_units": 3597,
+          "compiled_including_setup_units": 1439,
+          "difference": -2158
+        },
+        {
+          "calls": 8,
+          "reference_units": 7194,
+          "compiled_including_setup_units": 2022,
+          "difference": -5172
+        },
+        {
+          "calls": 16,
+          "reference_units": 14775,
+          "compiled_including_setup_units": 3123,
+          "difference": -11652
+        },
+        {
+          "calls": 24,
+          "reference_units": 22356,
+          "compiled_including_setup_units": 4224,
+          "difference": -18132
+        }
+      ],
+      "first_cumulative_gain_call": 2,
+      "final_reference_units": 22356,
+      "final_compiled_units": 4224,
+      "difference": -18132,
+      "percent_change": "-151100/1863",
+      "per_call": [
+        {
+          "reference_units": 609,
+          "compiled_units": 819,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 164,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 164,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 164,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 164,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 164,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 609,
+          "compiled_units": 114,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 609,
+          "compiled_units": 114,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 609,
+          "compiled_units": 114,
+          "status": "zero_objective",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        },
+        {
+          "reference_units": 996,
+          "compiled_units": 141,
+          "status": "no_SAT_feasible_nonnegative_budget",
+          "closes": false,
+          "before": 8,
+          "canonical_budget": null,
+          "quoted_bound": null
+        }
+      ],
+      "stats": {
+        "calls": 24,
+        "mask_compilations": 4,
+        "mask_hits": 0,
+        "objective_compilations": 6,
+        "objective_hits": 18,
+        "loss_compilations": 0,
+        "source_compilations": 1,
+        "source_hits": 23,
+        "base_compilations": 1,
+        "base_hits": 23,
+        "upper_compilations": 4,
+        "upper_hits": 0
+      },
+      "reference_invoice": {
+        "total": 22356,
+        "by_category": {
+          "lattice_quote": 7932,
+          "source_anchor_compile": 6240,
+          "source_anchor_query": 8184
+        },
+        "operations": [
+          {
+            "category": "lattice_quote",
+            "operation": "coordinate_enclosure_and_scalar_cut_transport",
+            "units": 7440
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "exact_sat_interval_endpoint",
+            "units": 180
+          },
+          {
+            "category": "lattice_quote",
+            "operation": "query_validation_and_euclidean_gcd",
+            "units": 312
+          },
+          {
+            "category": "source_anchor_compile",
+            "operation": "mode_action_costs_and_lower_scaling",
+            "units": 6240
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "cohort_sums_and_clipped_regret",
+            "units": 1464
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "row_mode_contrast_extrema",
+            "units": 6720
+          }
+        ]
+      },
+      "compiled_invoice": {
+        "total": 4224,
+        "by_category": {
+          "prepared_admission": 76,
+          "prepared_storage": 307,
+          "prepared_lookup": 1953,
+          "prepared_key": 439,
+          "prepared_compile": 454,
+          "prepared_query": 995
+        },
+        "operations": [
+          {
+            "category": "prepared_admission",
+            "operation": "fixed_modes_fraction_conversion_and_scaling",
+            "units": 76
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "exchangeable_mode_set_grouping",
+            "units": 28
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_anchor_contrast_and_sum",
+            "units": 48
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_action_upper_and_sum",
+            "units": 32
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_common_lower_and_sum",
+            "units": 8
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "grouped_coordinate_maximum_and_cohort_sum",
+            "units": 48
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "integer_objective_euclidean_gcd",
+            "units": 78
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "mask_mode_cost_products_and_sum",
+            "units": 208
+          },
+          {
+            "category": "prepared_compile",
+            "operation": "scalar_anchor_row_scaling",
+            "units": 4
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_append",
+            "units": 116
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_comparison",
+            "units": 87
+          },
+          {
+            "category": "prepared_key",
+            "operation": "canonical_item_store",
+            "units": 116
+          },
+          {
+            "category": "prepared_key",
+            "operation": "duplicate_action_elimination",
+            "units": 120
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "action_source_upper_lookup",
+            "units": 24
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "anchor_base_numeric_key",
+            "units": 384
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "canonical_source_lookup",
+            "units": 5
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "mode_action_cache_lookup",
+            "units": 4
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "possible_mode_admission_and_state_key",
+            "units": 912
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "query_objective_admission_and_cache_key",
+            "units": 192
+          },
+          {
+            "category": "prepared_lookup",
+            "operation": "scalar_mask_admission_and_conversion",
+            "units": 432
+          },
+          {
+            "category": "prepared_query",
+            "operation": "action_regret_clipping_and_best_selection",
+            "units": 20
+          },
+          {
+            "category": "prepared_query",
+            "operation": "closing_status_and_base_output",
+            "units": 432
+          },
+          {
+            "category": "prepared_query",
+            "operation": "exact_sat_interval_endpoint",
+            "units": 180
+          },
+          {
+            "category": "prepared_query",
+            "operation": "objective_enclosure_positive_margin",
+            "units": 360
+          },
+          {
+            "category": "prepared_query",
+            "operation": "replacement_bound",
+            "units": 3
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "immutable_cache_key_and_value_words",
+            "units": 255
+          },
+          {
+            "category": "prepared_storage",
+            "operation": "mode_and_full_cohort_anchor_words",
+            "units": 52
+          }
+        ]
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "case": "negative_mode",
+      "status": "rejected",
+      "reason": "One ordered nonnegative cost-feature domain required"
+    },
+    {
+      "case": "different_cohort",
+      "status": "rejected",
+      "reason": "Fixed cohort size changed"
+    },
+    {
+      "case": "empty_source_row",
+      "status": "rejected",
+      "reason": "Each source row needs a nonempty set of admitted mode IDs"
+    },
+    {
+      "case": "negative_lower",
+      "status": "rejected",
+      "reason": "Admitted nonnegative prices/anchor lowers and checked Boolean masks required"
+    },
+    {
+      "case": "wrong_lower_dimension",
+      "status": "rejected",
+      "reason": "Admitted nonnegative prices/anchor lowers and checked Boolean masks required"
+    },
+    {
+      "case": "out_of_range_action",
+      "status": "rejected",
+      "reason": "Admitted nonnegative prices/anchor lowers and checked Boolean masks required"
+    },
+    {
+      "case": "fractional_query",
+      "status": "rejected",
+      "reason": "Same ordered nonnegative integral query objective required"
+    },
+    {
+      "case": "negative_query",
+      "status": "rejected",
+      "reason": "Same ordered nonnegative integral query objective required"
+    }
+  ],
+  "new_LP_SAT_IHS_proof_search_or_audit_calls": 0,
+  "timing": {
+    "wall_ns": 60800662,
+    "process_ns": 60781016
+  },
+  "accounting": "Compiled totals include mode admission, stored numerical words, cache-key work, misses, lookups, arithmetic and output tariffs. Named operation counts use the displayed implementations; they do not establish a CPU, physical-memory or complete-economic advantage. Cold and poor cases are retained."
+}

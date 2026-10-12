@@ -5,23 +5,27 @@ Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_a
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
 Latest execution contributor: **ChatGPT (GPT-6 Astra Pro)**; earlier
-**Codex (GPT-6)** work is preserved. [Current checkpoint](s06/cp01.md),
-[portfolio](candidates.md), [exact effective actuals](s06/effective_actuals.json).
+**Codex (GPT-6)** work is preserved. [Current checkpoint](s07/cp01.md),
+[portfolio](candidates.md), [exact effective actuals](s07/effective_actuals.json).
 The [C001 recurrence table](recurrences.md) reconstructs each recorded increment
 with its credited time, cumulative time and quantitative discovery results.
 
-Current s06 direction: **calibrated repair**, choosing between paid cost
-observations and logical evidence to certify a useful action. The
-[persistent native service](s06/native_findings.md), independently checked
-[RUP bridge](s06/rup_findings.md), [joint source service](s06/joint_findings.md)
-and [complete finite fallback](s06/complete_findings.md) are callable.
-[Scalar-anchor transport](s06/source_anchor.md) now reuses paid lower proofs
-as observations refine the common cost source. Next integrate these bounds
-and complete audit/proof quotations into a small actual controller run.
-Paid graph calibration and threshold value acquisition remain connected
-alternatives. All results remain DEVELOPMENT; no robust total-cost advantage
-is established. The author directs
-[one-hour increments](../decisions/2026-10-12_hourly_handoffs.md). The s06 hour
+Current s07 direction: **calibrated repair with decision-relevant cost
+observations and checked logical evidence**. [Complete acquisition plans now
+execute](s07/findings.md), including a multi-call reserve and cheaper compiled
+quotation. The latest plan still buys the same observations and proof calls as
+ordinary audit-first at a higher bill. Source geometry and cost quotients (S29),
+and a common-CDF bridge for one fixed population action (S30), open separate
+constructive branches. Next test a paid geometry/contrast route that changes
+actual purchases or enough nonquotation cost, with identical capabilities
+available to strong ordinary controls. **S26–S30 remain DEVELOPMENT; the 30
+families record breadth, not readiness.**
+
+The final [F01/S28-B1/V1 forecast](s07/forecast_final.md) is **20–45%, central
+30%**, five percentage points below the first assessment of the same event.
+No candidate is promoted or robust complete-cost advantage established. The
+author directs [one-hour increments](../decisions/2026-10-12_hourly_handoffs.md).
+The s07 hour
 is closed, C001 remains open beyond its satisfied floor, and the
 [portable prompt](CONTINUE.md) governs the next requested increment.
 
@@ -72,7 +76,7 @@ storage and failure costs and name the strongest relevant pre-existing controls.
 | Central / high O forecast | 15 / 30 minutes, outside research |
 | Purpose priority | 75% generation/development; 20% cheap screening; 5% substantive synthesis/readiness |
 | Initial R / X lane forecast | 25% reliable / 75% exploratory; both may contain constructive generation |
-| Research already credited | 437.566782320917 minutes at closed s06 hourly checkpoint; C001 remains open |
+| Research already credited | 497.485576109117 minutes at closed s07 hourly checkpoint; C001 remains open |
 | Current execution cadence | One approximately 60-minute engaged research increment, then a portable handoff |
 | Normal boundary disposition | Continue the current line or recur within this program |
 | Program duration | Open-ended; tens or hundreds of hours are plausible, with no forecast of guaranteed discovery |
@@ -267,18 +271,44 @@ progress, candidate readiness and the next action separately. A useful negative
 finding is a search update. A completed cycle is an effort/accounting boundary.
 Neither is automatically a positive project milestone.
 
-Current state: **no discovery candidates have been promoted, no readiness
-probability has been assigned; 437.566782320917 new discovery research minutes
-are credited, with 0 minutes remaining to C001's four-hour floor**. The cycle
-and program remain open; the s06 hourly research clock is closed.
+Current state: **no discovery candidates have been promoted; F01/S28-B1/V1
+has a 20–45% subjective promotion forecast, central 30%; 497.485576109117
+cumulative C001/program research minutes are credited, with 0 minutes remaining to C001's
+four-hour floor**. The cycle and program remain open; the s07 hourly research
+clock is closed. The forecast is five percentage points below its initial
+assessment and 50 points below the 80% minimum at the central estimate.
 P3-11 is deferred and unstarted. P3-C/D remain unattempted. P3-N01's previous
 modest support and all P3-10 findings remain at their recorded scopes.
 
-The next work is continuation of C001 from [the saved checkpoint](s06/cp01.md),
-using [CONTINUE](CONTINUE.md): integrate the cheap scalar-anchor evaluator
-with the admitted tree/dual/hull service and quote a small complete audit/proof
-bundle. Use actual external observation prices or explicit symbolic regions;
-retain the callable native warm path, checked proof bridges and complete finite
-fallback. Give strong conventional controllers the same mechanisms and receipts,
-while retaining alternative discovery branches. Continue for the next requested hour;
-P3-POS01 remains outstanding after this administrative handoff.
+The next work is continuation of C001 from [the saved checkpoint](s07/cp01.md),
+using [CONTINUE](CONTINUE.md): acquire or reuse original-source geometry,
+compile the cost contrasts it actually removes, and quote all remaining
+audit/proof outcomes and fees. The [inexact-anchor extension](s07/inexact_anchor.md)
+can use a checked logical gap within tolerance; larger gaps retain a paid
+logical branch. Declare the development family and actual external prices or
+supported symbolic intervals prospectively. Give an ordinary controller the
+same geometry, proposer and representation. Another quotation optimization
+alone on the unchanged trace cannot remove the measured nonquotation deficit.
+If the construction remains the same ordinary method with a higher bill and
+no supported complete price region, retain that finding and redirect discovery.
+A different S29/S30 claim or source domain starts a new forecast event; keep
+F01's history visible. The next requested hour is not started. P3-POS01 remains
+outstanding after this administrative handoff.
+
+### s07 handoff — October 12, 2026
+
+The [findings](s07/findings.md), [final forecast](s07/forecast_final.md) and
+[reproduction guide](s07/reproduce.md) separate executed service improvements,
+conditional derivations and ordinary-method ties. Complete plans rise from
+0/11 initially open requests in a01 to 11/11 in a02/a03; a02-to-a03 quotation
+work falls 38.57%. All 16 outputs are delivered, but the latest named arm bill
+remains 4.7544 times audit-first, with 14 audits and 14 complete calls in both.
+There are zero established qualifying complete-cost benefit regions. S29/S30
+extend the portfolio to 30 families without adding readiness credit.
+
+The increment adds **3,595,127,627,292 ns =59.9187937882 minutes**.
+C001/program totals **29,849,134,566,547 ns =497.485576109116666… minutes**;
+phase research totals **95,017,016,608,396 ns =1583.616943473266666… minutes**.
+[Effective actuals](s07/effective_actuals.json) apply four conservative
+exclusions totaling **757,050,410,734 ns** while preserving raw evidence.
+Administration, publication and concurrent helper time add no research credit.
