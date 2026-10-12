@@ -1,0 +1,68 @@
+{
+  "schema": "s06-publication-checks-v1",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "research_credit_ns": 0,
+  "new_acquisitions": 0,
+  "scope": "Required repository publication gates and focused handoff consistency; not a research or confirmation campaign.",
+  "base_commit": "13bca720c5e978928eee3cf155bd335fa4a099a1",
+  "branch": "discovery-hour-20261012-s06",
+  "integrity_manifest": "v3/discovery/s06/integrity.json",
+  "reproduction_wrapper": "v3/discovery/s06/pub/repro.json",
+  "prior_focused_checks": {
+    "python_compileall": "PASS; syntax compilation only, no scientific imports or acquisitions",
+    "local_relative_links": {
+      "checked_before_final_publication_links": 223,
+      "missing": 0
+    },
+    "current_pointer_totals_and_status": "PASS",
+    "previous_ledger_bytes_preserved": "PASS",
+    "effective_clock_reconciliation": "PASS; 3604292790255 research ns, closed",
+    "reproduction_wrapper": "Both original checker functions PASS with zero new acquisitions; 197 original non-cache files unchanged."
+  },
+  "gates": [
+    {
+      "command": [
+        "python",
+        "tools/check_repo_paths.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 12712 tracked files; 3230 attribute probes; longest relative path 200/200 UTF-16 units.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "tools/evidence_paths.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"verified\",\n  \"relocated_paths\": 32,\n  \"unique_objects\": 30,\n  \"original_bytes\": 5350075\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "v3/discovery/s06/integrity.py",
+        "verify",
+        "--environment"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS_WITH_DOCUMENTED_HISTORICAL_GAP\",\n  \"manifest_files_checked\": 80,\n  \"repository_failures\": [],\n  \"environment_checked\": true,\n  \"environment_failures\": [],\n  \"historical_missing_runner_count\": 1,\n  \"new_acquisitions\": 0,\n  \"research_credit_ns\": 0\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "observed_utc": "2026-10-12T17:57:24.455944+00:00",
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_INTEGRITY_GAP",
+  "historical_gap": "Exact first failed native runner bytes and its raw receipts are unavailable; current bindings match. See integrity.json."
+}

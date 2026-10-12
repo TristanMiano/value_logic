@@ -1,0 +1,522 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "utc": "2026-10-12T16:41:54.318579+00:00",
+  "code_sha256": "37a1e89dcff57ff46f8fe778312f1023a422aad741d1ecf2cfc0f37edfe843a7",
+  "adapter_sha256": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+  "stream_sha256": "0515e63af72040b1c816497b5dc563b173ada4b16e492efd07e38e70ead55c9a",
+  "checks": {
+    "checked_new_witnesses": 23,
+    "checked_new_lower_proofs": 32,
+    "purchases_with_verified_native_predecessor": 13,
+    "exact_native_completions_independently_certified": true,
+    "zero_native_round_cap_preserves_unresolved": true,
+    "zero_proof_cap_does_not_admit_native_lower": true
+  },
+  "replay_checker_invoice": {
+    "total": 8057,
+    "by_category": {
+      "witness_check": 1153,
+      "witness_compile": 479,
+      "storage": 508,
+      "check": 3944,
+      "tree_compile": 1973
+    },
+    "operations": [
+      {
+        "category": "check",
+        "operation": "negative_clause_header",
+        "units": 739
+      },
+      {
+        "category": "check",
+        "operation": "negative_literal",
+        "units": 1267
+      },
+      {
+        "category": "check",
+        "operation": "negative_proof_node",
+        "units": 988
+      },
+      {
+        "category": "check",
+        "operation": "negative_weight_add",
+        "units": 475
+      },
+      {
+        "category": "check",
+        "operation": "negative_weight_index",
+        "units": 475
+      },
+      {
+        "category": "storage",
+        "operation": "compiled_tree_leaf_masks",
+        "units": 278
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 230
+      },
+      {
+        "category": "tree_compile",
+        "operation": "forced_clause_coefficient",
+        "units": 475
+      },
+      {
+        "category": "tree_compile",
+        "operation": "hard_leaf_omitted",
+        "units": 264
+      },
+      {
+        "category": "tree_compile",
+        "operation": "leaf_mask_deduplication",
+        "units": 246
+      },
+      {
+        "category": "tree_compile",
+        "operation": "proof_node_read",
+        "units": 988
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 498
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 655
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 88
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 23
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 184
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 184
+      }
+    ]
+  },
+  "replay_new_source_calls": 0,
+  "cap_probes": [
+    {
+      "kind": "zero_native_rounds",
+      "setup": {
+        "invoice": {
+          "total": 304,
+          "by_category": {
+            "admission": 128,
+            "encoding": 176
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "source_and_clause_words",
+              "units": 128
+            },
+            {
+              "category": "encoding",
+              "operation": "native_hitting_set_column",
+              "units": 48
+            },
+            {
+              "category": "encoding",
+              "operation": "sat_clause_and_selector_words",
+              "units": 128
+            }
+          ]
+        },
+        "timing": {
+          "process_ns": 604097,
+          "wall_ns": 601851
+        }
+      },
+      "response": {
+        "status": "UNRESOLVED",
+        "model": null,
+        "proof": null,
+        "witness": null,
+        "checked_lower": null,
+        "checked_lower_receipt": null,
+        "reason": "native_round_limit",
+        "version": "s06-persistent-native-ihs-v2",
+        "source_identity": "e57dce754c3d82260c732aae94d0144b6a5cfe528e0d7153c5b04262655e63df",
+        "structural_source_id": "c4c8db1333b839010fbc24c6ba32e68747fe877b857f68a15e3ad25baa438a12",
+        "weight_id": "03c4fbd9757b859ab117843d946c2d76db73bb8cba893dbadced77471089bac4",
+        "weights": [
+          1,
+          2,
+          3,
+          1,
+          2,
+          3,
+          1,
+          2
+        ],
+        "requested_budget": 4,
+        "exact_requested": false,
+        "caps": {
+          "max_rounds": 0,
+          "sat_conflicts_per_call": 100000,
+          "mip_nodes_per_call": 100000,
+          "mip_seconds_per_call": 2.0,
+          "proof_units": 1000000,
+          "adapter_units": 1000000
+        },
+        "state_before": {
+          "state_id": "native-204592f488e54a84aca1d31509cf138a",
+          "structural_source_id": "c4c8db1333b839010fbc24c6ba32e68747fe877b857f68a15e3ad25baa438a12",
+          "sat_object_id": 140356233182960,
+          "highs_object_id": 140356241286608,
+          "core_rows": 0,
+          "native_row_count": 0,
+          "native_column_count": 8,
+          "objective_weights": null,
+          "sat_accumulated_stats": {
+            "restarts": 0,
+            "conflicts": 0,
+            "decisions": 0,
+            "propagations": 0
+          },
+          "last_hitting_set": null,
+          "calls": {}
+        },
+        "state_after": {
+          "state_id": "native-204592f488e54a84aca1d31509cf138a",
+          "structural_source_id": "c4c8db1333b839010fbc24c6ba32e68747fe877b857f68a15e3ad25baa438a12",
+          "sat_object_id": 140356233182960,
+          "highs_object_id": 140356241286608,
+          "core_rows": 0,
+          "native_row_count": 0,
+          "native_column_count": 8,
+          "objective_weights": [
+            1,
+            2,
+            3,
+            1,
+            2,
+            3,
+            1,
+            2
+          ],
+          "sat_accumulated_stats": {
+            "restarts": 0,
+            "conflicts": 0,
+            "decisions": 0,
+            "propagations": 0
+          },
+          "last_hitting_set": null,
+          "calls": {
+            "objective_updates": 1
+          }
+        },
+        "native_result": {
+          "status": "UNRESOLVED",
+          "reason": "native_round_limit"
+        },
+        "events": [
+          {
+            "kind": "objective_update",
+            "changed": true,
+            "old_weights": null,
+            "new_weights": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              3,
+              1,
+              2
+            ],
+            "existing_core_rows": 0,
+            "previous_mip_start": false
+          }
+        ],
+        "adapter_invoice": {
+          "total": 36,
+          "by_category": {
+            "admission": 18,
+            "objective_update": 18
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "weight_source_and_budget_words",
+              "units": 18
+            },
+            {
+              "category": "objective_update",
+              "operation": "weight_read_and_native_column_update",
+              "units": 18
+            }
+          ]
+        },
+        "proof_provider_invoice": null,
+        "native_search_units": null,
+        "native_cost_note": "Native search has measured timings, calls, SAT stats and MIP nodes; no DPLL-tariff conversion.",
+        "timing": {
+          "process_ns": 108160,
+          "wall_ns": 108691
+        }
+      }
+    },
+    {
+      "kind": "zero_negative_proof_budget",
+      "setup": {
+        "invoice": {
+          "total": 256,
+          "by_category": {
+            "admission": 104,
+            "encoding": 152
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "source_and_clause_words",
+              "units": 104
+            },
+            {
+              "category": "encoding",
+              "operation": "native_hitting_set_column",
+              "units": 48
+            },
+            {
+              "category": "encoding",
+              "operation": "sat_clause_and_selector_words",
+              "units": 104
+            }
+          ]
+        },
+        "timing": {
+          "process_ns": 224333,
+          "wall_ns": 224402
+        }
+      },
+      "response": {
+        "status": "UNRESOLVED",
+        "model": null,
+        "proof": null,
+        "witness": null,
+        "checked_lower": null,
+        "checked_lower_receipt": null,
+        "reason": "negative_proof_provider_limit",
+        "version": "s06-persistent-native-ihs-v2",
+        "source_identity": "0c2bda8ce323830998b0ce246ac6252dd55142a46b23ef5d3f0b5d8777c2af87",
+        "structural_source_id": "937af9d6cbc258c4ce2ad43ac3ac4f36e84eeb276c31b61ee84f3d7ae778ad14",
+        "weight_id": "03c4fbd9757b859ab117843d946c2d76db73bb8cba893dbadced77471089bac4",
+        "weights": [
+          1,
+          2,
+          3,
+          1,
+          2,
+          3,
+          1,
+          2
+        ],
+        "requested_budget": -1,
+        "exact_requested": false,
+        "caps": {
+          "max_rounds": 256,
+          "sat_conflicts_per_call": 100000,
+          "mip_nodes_per_call": 100000,
+          "mip_seconds_per_call": 2.0,
+          "proof_units": 0,
+          "adapter_units": 1000000
+        },
+        "state_before": {
+          "state_id": "native-101a498c5d2b461d8ecb895871270708",
+          "structural_source_id": "937af9d6cbc258c4ce2ad43ac3ac4f36e84eeb276c31b61ee84f3d7ae778ad14",
+          "sat_object_id": 140356233180560,
+          "highs_object_id": 140356241286704,
+          "core_rows": 0,
+          "native_row_count": 0,
+          "native_column_count": 8,
+          "objective_weights": null,
+          "sat_accumulated_stats": {
+            "restarts": 0,
+            "conflicts": 0,
+            "decisions": 0,
+            "propagations": 0
+          },
+          "last_hitting_set": null,
+          "calls": {}
+        },
+        "state_after": {
+          "state_id": "native-101a498c5d2b461d8ecb895871270708",
+          "structural_source_id": "937af9d6cbc258c4ce2ad43ac3ac4f36e84eeb276c31b61ee84f3d7ae778ad14",
+          "sat_object_id": 140356233180560,
+          "highs_object_id": 140356241286704,
+          "core_rows": 0,
+          "native_row_count": 0,
+          "native_column_count": 8,
+          "objective_weights": [
+            1,
+            2,
+            3,
+            1,
+            2,
+            3,
+            1,
+            2
+          ],
+          "sat_accumulated_stats": {
+            "restarts": 0,
+            "conflicts": 0,
+            "decisions": 0,
+            "propagations": 0
+          },
+          "last_hitting_set": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "calls": {
+            "objective_updates": 1,
+            "hitting_set_calls": 1,
+            "proof_provider_calls": 1
+          }
+        },
+        "native_result": {
+          "status": "LOWER_HINT",
+          "lower_hint": 0
+        },
+        "events": [
+          {
+            "kind": "objective_update",
+            "changed": true,
+            "old_weights": null,
+            "new_weights": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              3,
+              1,
+              2
+            ],
+            "existing_core_rows": 0,
+            "previous_mip_start": false
+          },
+          {
+            "kind": "native_hitting_set",
+            "round": 0,
+            "status": "HighsModelStatus.kOptimal",
+            "core_rows": 0,
+            "mip_nodes": 0,
+            "timing": {
+              "process_ns": 214788,
+              "wall_ns": 215379
+            },
+            "independently_checked_lower": false,
+            "hitting_set": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objective_hint": 0
+          },
+          {
+            "kind": "separate_bounded_proof_provider",
+            "source_identity": "0c2bda8ce323830998b0ce246ac6252dd55142a46b23ef5d3f0b5d8777c2af87",
+            "weights": [
+              1,
+              2,
+              3,
+              1,
+              2,
+              3,
+              1,
+              2
+            ],
+            "structural_source_id": "937af9d6cbc258c4ce2ad43ac3ac4f36e84eeb276c31b61ee84f3d7ae778ad14",
+            "budget": -1,
+            "cap": 0,
+            "timing": {
+              "process_ns": 11317,
+              "wall_ns": 11427
+            },
+            "checked": false,
+            "status": "UNRESOLVED",
+            "model": null,
+            "proof": null,
+            "invoice": {
+              "total": 0,
+              "by_category": {},
+              "operations": []
+            }
+          }
+        ],
+        "adapter_invoice": {
+          "total": 61,
+          "by_category": {
+            "admission": 18,
+            "objective_update": 18,
+            "native_dispatch": 1,
+            "native_result": 24
+          },
+          "operations": [
+            {
+              "category": "admission",
+              "operation": "weight_source_and_budget_words",
+              "units": 18
+            },
+            {
+              "category": "native_dispatch",
+              "operation": "hitting_set_solve_call",
+              "units": 1
+            },
+            {
+              "category": "native_result",
+              "operation": "hitting_set_values_and_objective",
+              "units": 24
+            },
+            {
+              "category": "objective_update",
+              "operation": "weight_read_and_native_column_update",
+              "units": 18
+            }
+          ]
+        },
+        "proof_provider_invoice": {
+          "total": 0,
+          "by_category": {},
+          "operations": []
+        },
+        "native_search_units": null,
+        "native_cost_note": "Native search has measured timings, calls, SAT stats and MIP nodes; no DPLL-tariff conversion.",
+        "timing": {
+          "process_ns": 330781,
+          "wall_ns": 330659
+        }
+      }
+    }
+  ],
+  "diagnostic_optimum_calls": 0
+}

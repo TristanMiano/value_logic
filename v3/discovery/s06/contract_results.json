@@ -1,0 +1,1093 @@
+{
+  "version": "s06-complete-acquisition-contract-v1",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T16:56:23.968331+00:00",
+  "implementation_sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+  "checks_sha256": "26aaa9fc4c0ef69a19c3d5bf3afc6d30677bbf7ce68c9ca427395b6b42f6b978",
+  "source_archive_sha256": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+  "new_native_calls": 0,
+  "new_complete_branch_calls": 2,
+  "new_external_cost_observations": 0,
+  "tiny_source": {
+    "row": "contract_example",
+    "variables": 2,
+    "hard": [
+      [
+        1,
+        2
+      ]
+    ],
+    "soft": [
+      {
+        "weight": 3,
+        "clause": [
+          -1
+        ]
+      },
+      {
+        "weight": 3,
+        "clause": [
+          -2
+        ]
+      }
+    ],
+    "public_incumbent": 3,
+    "objective_max": 6,
+    "identity": "2a5608d4543687002a6a44f5018a2bf5e2a16abe420a86a5fa0df1efa5e0608f"
+  },
+  "tiny_cost_contract": {
+    "possible_cost_modes": [
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "cohort_size": 1,
+    "target": "The single fixed row; unknown realized mode, no outcome law."
+  },
+  "tiny": {
+    "before": {
+      "bound": 4,
+      "model": 3,
+      "mask": 3,
+      "action": "repair",
+      "tree_index": 0,
+      "proof_id": "364e6bf6c176e70a5fe686bc8976486f5da9ed765a78c77abd6e3217b2a06321",
+      "critical_coefficient": [
+        1,
+        0
+      ],
+      "critical_constant": 0,
+      "critical_weights": [
+        4,
+        3
+      ],
+      "critical_role": "proof_leaf"
+    },
+    "transfer_margins": {
+      "alpha": 1,
+      "delta": 0,
+      "alpha_mask": 1,
+      "delta_mask": 0,
+      "objective_masks": 4
+    },
+    "complete_quote": {
+      "integer_budget_low": 4,
+      "integer_budget_high": 4,
+      "nonempty_budget_interval": true,
+      "current_scalar_bound": {
+        "numerator": 4,
+        "denominator": 1
+      },
+      "budget": 4,
+      "sat_bound": {
+        "numerator": 2,
+        "denominator": 1
+      },
+      "checked_unsat_bound": {
+        "numerator": 2,
+        "denominator": 1
+      },
+      "complete_worst_bound": {
+        "numerator": 2,
+        "denominator": 1
+      },
+      "guaranteed_scalar_reduction": {
+        "numerator": 2,
+        "denominator": 1
+      },
+      "cap_timeout_worst_bound": {
+        "numerator": 4,
+        "denominator": 1
+      }
+    },
+    "proposed_audit_outcomes": [
+      {
+        "value": 3,
+        "bound": 3
+      },
+      {
+        "value": 4,
+        "bound": 4
+      }
+    ],
+    "audit_worst_bound": 4,
+    "audit_guaranteed_reduction": 0,
+    "logical_guaranteed_reduction": {
+      "numerator": 2,
+      "denominator": 1
+    },
+    "initial_paid_lower_receipt": {
+      "source_id": "d70a523190b83c8f711f2383927b5416d545a2f7bcce54964de08dd1af5933a9",
+      "budget": 2,
+      "provider_response": {
+        "status": "UNSAT",
+        "model": null,
+        "proof": [
+          "b",
+          0,
+          [
+            "b",
+            1,
+            [
+              "h",
+              0
+            ],
+            [
+              "w",
+              [
+                1
+              ]
+            ]
+          ],
+          [
+            "w",
+            [
+              0
+            ]
+          ]
+        ],
+        "invoice": {
+          "total": 51,
+          "by_category": {
+            "solve": 51
+          },
+          "operations": [
+            {
+              "category": "solve",
+              "operation": "branch_node",
+              "units": 5
+            },
+            {
+              "category": "solve",
+              "operation": "budget_compare",
+              "units": 4
+            },
+            {
+              "category": "solve",
+              "operation": "clause_header",
+              "units": 13
+            },
+            {
+              "category": "solve",
+              "operation": "cost_leaf_create",
+              "units": 4
+            },
+            {
+              "category": "solve",
+              "operation": "forced_weight_add",
+              "units": 2
+            },
+            {
+              "category": "solve",
+              "operation": "hard_leaf_create",
+              "units": 2
+            },
+            {
+              "category": "solve",
+              "operation": "literal_inspection",
+              "units": 17
+            },
+            {
+              "category": "solve",
+              "operation": "split_certificate_create",
+              "units": 4
+            }
+          ]
+        }
+      },
+      "quote": {
+        "source_id": "d70a523190b83c8f711f2383927b5416d545a2f7bcce54964de08dd1af5933a9",
+        "variables": 2,
+        "soft_clauses": 2,
+        "maximum_tree_nodes": 7,
+        "maximum_tree_leaves": 4,
+        "provider_per_node": 14,
+        "provider_units": 98,
+        "negative_check_units": 63,
+        "witness_check_units": 10,
+        "tree_compile_units": 33,
+        "witness_compile_units": 16,
+        "raw_proof_words": 18,
+        "admission_units": 17,
+        "objective_update_units": 6,
+        "response_units": 16,
+        "witness_retention_units": 10,
+        "proof_retention_units": 26,
+        "complete_wrapper_units": 269,
+        "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+        "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+        "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+        "cpu_max_seconds": null,
+        "wall_max_seconds": null
+      },
+      "leaf_masks": [
+        1,
+        2
+      ],
+      "checked_lower": 3,
+      "wrapper_invoice": {
+        "total": 95,
+        "by_category": {
+          "contract_admission": 17,
+          "check": 18,
+          "objective": 7,
+          "objective_update": 6,
+          "tree_compile": 10,
+          "storage": 21,
+          "output": 16
+        },
+        "operations": [
+          {
+            "category": "check",
+            "operation": "negative_clause_header",
+            "units": 3
+          },
+          {
+            "category": "check",
+            "operation": "negative_literal",
+            "units": 4
+          },
+          {
+            "category": "check",
+            "operation": "negative_proof_node",
+            "units": 5
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_add",
+            "units": 2
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_index",
+            "units": 2
+          },
+          {
+            "category": "check",
+            "operation": "witness_hard_clause_header",
+            "units": 1
+          },
+          {
+            "category": "check",
+            "operation": "witness_hard_literal",
+            "units": 1
+          },
+          {
+            "category": "contract_admission",
+            "operation": "source_words",
+            "units": 17
+          },
+          {
+            "category": "objective",
+            "operation": "full_objective_pass",
+            "units": 1
+          },
+          {
+            "category": "objective",
+            "operation": "soft_clause_header",
+            "units": 2
+          },
+          {
+            "category": "objective",
+            "operation": "soft_literal",
+            "units": 2
+          },
+          {
+            "category": "objective",
+            "operation": "weight_add",
+            "units": 2
+          },
+          {
+            "category": "objective_update",
+            "operation": "query_weight_words",
+            "units": 6
+          },
+          {
+            "category": "output",
+            "operation": "complete_query_response",
+            "units": 16
+          },
+          {
+            "category": "storage",
+            "operation": "compiled_tree_leaf_masks",
+            "units": 3
+          },
+          {
+            "category": "storage",
+            "operation": "complete_negative",
+            "units": 18
+          },
+          {
+            "category": "tree_compile",
+            "operation": "forced_clause_coefficient",
+            "units": 2
+          },
+          {
+            "category": "tree_compile",
+            "operation": "hard_leaf_omitted",
+            "units": 1
+          },
+          {
+            "category": "tree_compile",
+            "operation": "leaf_mask_deduplication",
+            "units": 2
+          },
+          {
+            "category": "tree_compile",
+            "operation": "proof_node_read",
+            "units": 5
+          }
+        ]
+      },
+      "total_operation_units": 146,
+      "timing": {
+        "process_ns": 244653,
+        "wall_ns": 245884
+      },
+      "receipt_id": "364e6bf6c176e70a5fe686bc8976486f5da9ed765a78c77abd6e3217b2a06321"
+    },
+    "paid_query": {
+      "source_id": "d70a523190b83c8f711f2383927b5416d545a2f7bcce54964de08dd1af5933a9",
+      "budget": 4,
+      "provider_response": {
+        "status": "SAT",
+        "model": 2,
+        "proof": null,
+        "invoice": {
+          "total": 36,
+          "by_category": {
+            "solve": 36
+          },
+          "operations": [
+            {
+              "category": "solve",
+              "operation": "branch_node",
+              "units": 4
+            },
+            {
+              "category": "solve",
+              "operation": "budget_compare",
+              "units": 3
+            },
+            {
+              "category": "solve",
+              "operation": "clause_header",
+              "units": 10
+            },
+            {
+              "category": "solve",
+              "operation": "forced_weight_add",
+              "units": 1
+            },
+            {
+              "category": "solve",
+              "operation": "hard_leaf_create",
+              "units": 2
+            },
+            {
+              "category": "solve",
+              "operation": "literal_inspection",
+              "units": 14
+            },
+            {
+              "category": "solve",
+              "operation": "model_create",
+              "units": 2
+            }
+          ]
+        }
+      },
+      "quote": {
+        "source_id": "d70a523190b83c8f711f2383927b5416d545a2f7bcce54964de08dd1af5933a9",
+        "variables": 2,
+        "soft_clauses": 2,
+        "maximum_tree_nodes": 7,
+        "maximum_tree_leaves": 4,
+        "provider_per_node": 14,
+        "provider_units": 98,
+        "negative_check_units": 63,
+        "witness_check_units": 10,
+        "tree_compile_units": 33,
+        "witness_compile_units": 16,
+        "raw_proof_words": 18,
+        "admission_units": 17,
+        "objective_update_units": 6,
+        "response_units": 16,
+        "witness_retention_units": 10,
+        "proof_retention_units": 26,
+        "complete_wrapper_units": 269,
+        "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+        "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+        "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+        "cpu_max_seconds": null,
+        "wall_max_seconds": null
+      },
+      "witness": {
+        "model": 2,
+        "violation_mask": 2,
+        "original_cost": 3
+      },
+      "wrapper_invoice": {
+        "total": 81,
+        "by_category": {
+          "contract_admission": 17,
+          "check": 5,
+          "objective": 13,
+          "objective_update": 6,
+          "witness_check": 3,
+          "witness_compile": 7,
+          "storage": 14,
+          "output": 16
+        },
+        "operations": [
+          {
+            "category": "check",
+            "operation": "witness_hard_clause_header",
+            "units": 2
+          },
+          {
+            "category": "check",
+            "operation": "witness_hard_literal",
+            "units": 3
+          },
+          {
+            "category": "contract_admission",
+            "operation": "source_words",
+            "units": 17
+          },
+          {
+            "category": "objective",
+            "operation": "full_objective_pass",
+            "units": 2
+          },
+          {
+            "category": "objective",
+            "operation": "soft_clause_header",
+            "units": 4
+          },
+          {
+            "category": "objective",
+            "operation": "soft_literal",
+            "units": 4
+          },
+          {
+            "category": "objective",
+            "operation": "weight_add",
+            "units": 3
+          },
+          {
+            "category": "objective_update",
+            "operation": "query_weight_words",
+            "units": 6
+          },
+          {
+            "category": "output",
+            "operation": "complete_query_response",
+            "units": 16
+          },
+          {
+            "category": "storage",
+            "operation": "complete_witness",
+            "units": 10
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 4
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 1
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 2
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 2
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 1
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 2
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 2
+          }
+        ]
+      },
+      "total_operation_units": 117,
+      "timing": {
+        "process_ns": 155190,
+        "wall_ns": 156362
+      },
+      "receipt_id": "1a2695282790e6e36b0e01273b224ede5bc028c61fcaee03b868b52b9eb46710"
+    },
+    "after": {
+      "bound": 0,
+      "model": 2,
+      "mask": 2,
+      "action": "repair",
+      "tree_index": 0,
+      "proof_id": "364e6bf6c176e70a5fe686bc8976486f5da9ed765a78c77abd6e3217b2a06321",
+      "critical_coefficient": [
+        -1,
+        1
+      ],
+      "critical_constant": 0,
+      "critical_weights": [
+        3,
+        3
+      ],
+      "critical_role": "proof_leaf"
+    },
+    "checked_objective_transfer_cases": 8
+  },
+  "common_source_margin_example": {
+    "joint": {
+      "alpha": 1,
+      "delta": 1,
+      "alpha_mask": 1,
+      "delta_mask": 1,
+      "objective_masks": 4
+    },
+    "box": {
+      "alpha": 2,
+      "delta": 2,
+      "alpha_mask": 3,
+      "delta_mask": 3,
+      "objective_masks": 4
+    }
+  },
+  "illustrative_price_threshold": {
+    "numerator": 45,
+    "denominator": 1
+  },
+  "price_scope": "Invented prospective tariff example only; no native runtime-law or economic claim.",
+  "public_source_complete_quotes": [
+    {
+      "source_id": "5090f926d60de294df5f5209fdb2b642a9d761480326627b26ff6bc1d940eb8d",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 107,
+      "provider_units": 54677,
+      "negative_check_units": 16863,
+      "witness_check_units": 97,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 115,
+      "raw_proof_words": 2814,
+      "admission_units": 104,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 79964,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "b8def24977254e7fe137a0d866fdba65d6d2c9e613a5a30a7b1b5767bf887ee9",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 131,
+      "provider_units": 66941,
+      "negative_check_units": 16863,
+      "witness_check_units": 121,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 139,
+      "raw_proof_words": 2814,
+      "admission_units": 128,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 92276,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "8ee8ebf76d1a1108aa359ba6bca314e236231fc01e615c1bf9d467de8fcdccf7",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 107,
+      "provider_units": 54677,
+      "negative_check_units": 16863,
+      "witness_check_units": 97,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 115,
+      "raw_proof_words": 2814,
+      "admission_units": 104,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 79964,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "40a414e24b8ea43ee9957fe9bf2a4b2f64880e5d3b2791d439be0bab79a5004a",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 131,
+      "provider_units": 66941,
+      "negative_check_units": 16863,
+      "witness_check_units": 121,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 139,
+      "raw_proof_words": 2814,
+      "admission_units": 128,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 92276,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "daa6a9298fa8124fcbc70a624994e3b319df2bbc3311a6c03d3de2cae611c5b0",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 107,
+      "provider_units": 54677,
+      "negative_check_units": 16863,
+      "witness_check_units": 97,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 115,
+      "raw_proof_words": 2814,
+      "admission_units": 104,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 79964,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "9c531423f83397e40026fa5e76610335076f583122ccd012400dfb86f43d45e6",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 131,
+      "provider_units": 66941,
+      "negative_check_units": 16863,
+      "witness_check_units": 121,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 139,
+      "raw_proof_words": 2814,
+      "admission_units": 128,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 92276,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "c97d0ff15d8308d191ef183fe9ee2e8a39fb4fefdb05844fd1db4d9d31c34dc3",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 107,
+      "provider_units": 54677,
+      "negative_check_units": 16863,
+      "witness_check_units": 97,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 115,
+      "raw_proof_words": 2814,
+      "admission_units": 104,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 79964,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "0cc068d08c166ea63e7beda0f950c053a566f12aaed5e7678e5a7b9289e28a5e",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 131,
+      "provider_units": 66941,
+      "negative_check_units": 16863,
+      "witness_check_units": 121,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 139,
+      "raw_proof_words": 2814,
+      "admission_units": 128,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 92276,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "aed30671cb3cd23cfb78c5448a53eeb10246377bda3d258aae8459fa608a283e",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 107,
+      "provider_units": 54677,
+      "negative_check_units": 16863,
+      "witness_check_units": 97,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 115,
+      "raw_proof_words": 2814,
+      "admission_units": 104,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 79964,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "eb69421c306e62d86b80bb6bec275058c6d7468800d6cef9e126b8f8badb5907",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 131,
+      "provider_units": 66941,
+      "negative_check_units": 16863,
+      "witness_check_units": 121,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 139,
+      "raw_proof_words": 2814,
+      "admission_units": 128,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 92276,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "c40b7d028abcd3362adc2b2a200e5b4de466c9f5d439fe36c4216c1f42d05248",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 107,
+      "provider_units": 54677,
+      "negative_check_units": 16863,
+      "witness_check_units": 97,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 115,
+      "raw_proof_words": 2814,
+      "admission_units": 104,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 79964,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "cceea6169d9e44d1921b3d82593bc536b3b368892f83f3850944c11b2e8115fb",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 131,
+      "provider_units": 66941,
+      "negative_check_units": 16863,
+      "witness_check_units": 121,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 139,
+      "raw_proof_words": 2814,
+      "admission_units": 128,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 92276,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "bd1616e43e3f31532033d40ea56f27fd9685aaaa4489436f2fc39e4e72611535",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 107,
+      "provider_units": 54677,
+      "negative_check_units": 16863,
+      "witness_check_units": 97,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 115,
+      "raw_proof_words": 2814,
+      "admission_units": 104,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 79964,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "bfb9ba5ed2766e3de14d27eaf6c402f760589974b1de3df6f521652576c71999",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 131,
+      "provider_units": 66941,
+      "negative_check_units": 16863,
+      "witness_check_units": 121,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 139,
+      "raw_proof_words": 2814,
+      "admission_units": 128,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 92276,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "6f4540791ec5085e29f6c9b7909ea3c0f55069e2c18102374823fddd755818bd",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 107,
+      "provider_units": 54677,
+      "negative_check_units": 16863,
+      "witness_check_units": 97,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 115,
+      "raw_proof_words": 2814,
+      "admission_units": 104,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 79964,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    {
+      "source_id": "69225a5aabb7bdbd93a8e9b24ee92887301464a782d67bee88132ce347a99e54",
+      "variables": 8,
+      "soft_clauses": 8,
+      "maximum_tree_nodes": 511,
+      "maximum_tree_leaves": 256,
+      "provider_per_node": 131,
+      "provider_units": 66941,
+      "negative_check_units": 16863,
+      "witness_check_units": 121,
+      "tree_compile_units": 5367,
+      "witness_compile_units": 139,
+      "raw_proof_words": 2814,
+      "admission_units": 128,
+      "objective_update_units": 18,
+      "response_units": 16,
+      "witness_retention_units": 16,
+      "proof_retention_units": 2822,
+      "complete_wrapper_units": 92276,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    }
+  ],
+  "declared_checks_operations": {
+    "total": 929,
+    "by_category": {
+      "cost_admission": 65,
+      "witness_check": 2,
+      "witness_compile": 9,
+      "storage": 4,
+      "support": 545,
+      "certificate": 140,
+      "contract_quote": 96,
+      "audit_quote": 4,
+      "constructive_check": 64
+    },
+    "operations": [
+      {
+        "category": "audit_quote",
+        "operation": "prospective_mode_filter",
+        "units": 4
+      },
+      {
+        "category": "certificate",
+        "operation": "action_proof_pair_minimum",
+        "units": 9
+      },
+      {
+        "category": "certificate",
+        "operation": "constraint_maximum_and_record",
+        "units": 131
+      },
+      {
+        "category": "constructive_check",
+        "operation": "objective_transfer_case",
+        "units": 64
+      },
+      {
+        "category": "contract_quote",
+        "operation": "mask_objective_and_transfer_comparison",
+        "units": 96
+      },
+      {
+        "category": "cost_admission",
+        "operation": "mode_and_row_words",
+        "units": 65
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 4
+      },
+      {
+        "category": "support",
+        "operation": "coefficient_products_and_sum",
+        "units": 304
+      },
+      {
+        "category": "support",
+        "operation": "cohort_support_and_argmax_add",
+        "units": 141
+      },
+      {
+        "category": "support",
+        "operation": "coordinate_box_extrema",
+        "units": 32
+      },
+      {
+        "category": "support",
+        "operation": "row_maximum",
+        "units": 68
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 1
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 1
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 4
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 1
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 2
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 2
+      }
+    ]
+  },
+  "measured_total_timing": {
+    "process_ns": 67915216,
+    "wall_ns": 6264059
+  },
+  "result": "PASS at the finite arithmetic and source-bound callable illustration scope",
+  "limitations": "No guaranteed CPU/wall bound, no native completion guarantee, no hidden-source fixture optimization, no held-out validation."
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "discovery-timing-dispositions-v1",
+  "session": "s06",
+  "raw_records_preserved": true,
+  "note": "Preserve raw observations; conservative principal-time exclusions only. Concurrent agent work is never added.",
+  "overrides": [
+    {
+      "start_monotonic_ns": 10323963651658,
+      "end_monotonic_ns": 10547324827952,
+      "elapsed_ns": 223361176294,
+      "raw_mode": "L",
+      "effective_mode": "unmeasured",
+      "reason": "Mixed literature/derivation and context-compaction interval without an independent boundary; conservatively exclude the entire interval."
+    },
+    {
+      "start_monotonic_ns": 12012120340027,
+      "end_monotonic_ns": 12028498316840,
+      "elapsed_ns": 16377976813,
+      "raw_mode": "L",
+      "effective_mode": "unmeasured",
+      "reason": "Conservative exclusion of mixed reading/connection-interruption interval after user-reported interruption; same resident clock confirmed alive at observed end."
+    },
+    {
+      "start_monotonic_ns": 12037626047719,
+      "end_monotonic_ns": 12247859869558,
+      "elapsed_ns": 210233821839,
+      "raw_mode": "L",
+      "effective_mode": "unmeasured",
+      "reason": "Mixed substantive reading and context-compaction interval without an independent boundary; conservatively exclude the entire interval, with same resident process observed at end."
+    }
+  ]
+}

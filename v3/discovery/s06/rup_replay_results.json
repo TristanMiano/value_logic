@@ -1,0 +1,409 @@
+{
+  "status": "PASS",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T17:06:44.276888+00:00",
+  "implementation_sha256": "c34b5c0c5f8d608d40878c72a32826440f6ce4b3e940c425a046ccb9ac3b08aa",
+  "source_sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+  "rup_checker_sha256": "20cd044b4c8c74636819bf739ed22cb99b91cab01061e8a6abfaa978597b9f82",
+  "initial_admission": {
+    "scope": "Actual raw check and exact binding of existing cache pointwise witness/tree projection; cell geometry unused",
+    "hashes": {
+      "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+    },
+    "bytes": {
+      "maxsat_repair_results.json": 544143,
+      "regions_bundle.json": 8037,
+      "maxsat_repair.py": 21856,
+      "maxsat_reprice.py": 16431
+    },
+    "invoices": {
+      "admission_and_binding": {
+        "total": 84994,
+        "by_category": {
+          "raw_admission": 83037,
+          "cache_projection_binding": 1957
+        },
+        "operations": [
+          {
+            "category": "cache_projection_binding",
+            "operation": "negative_proof_id_and_fields",
+            "units": 1580
+          },
+          {
+            "category": "cache_projection_binding",
+            "operation": "witness_id_and_fields",
+            "units": 377
+          },
+          {
+            "category": "raw_admission",
+            "operation": "eight_byte_words",
+            "units": 73809
+          },
+          {
+            "category": "raw_admission",
+            "operation": "sha256_message_blocks",
+            "units": 9228
+          }
+        ]
+      },
+      "source_and_witness_check": {
+        "total": 4374,
+        "by_category": {
+          "source_admission": 1984,
+          "witness_check": 1445,
+          "witness_compile": 655,
+          "storage": 290
+        },
+        "operations": [
+          {
+            "category": "source_admission",
+            "operation": "checked_old_frontier_receipt",
+            "units": 128
+          },
+          {
+            "category": "source_admission",
+            "operation": "immutable_clause_and_weight_words",
+            "units": 1856
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 290
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 600
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 845
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 162
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 29
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 232
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 232
+          }
+        ]
+      },
+      "negative_proof_check_and_compile": {
+        "total": 3601,
+        "by_category": {
+          "check": 2282,
+          "tree_compile": 1154,
+          "storage": 165
+        },
+        "operations": [
+          {
+            "category": "check",
+            "operation": "negative_clause_header",
+            "units": 425
+          },
+          {
+            "category": "check",
+            "operation": "negative_literal",
+            "units": 731
+          },
+          {
+            "category": "check",
+            "operation": "negative_proof_node",
+            "units": 582
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_add",
+            "units": 272
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_index",
+            "units": 272
+          },
+          {
+            "category": "storage",
+            "operation": "compiled_tree_leaf_masks",
+            "units": 165
+          },
+          {
+            "category": "tree_compile",
+            "operation": "forced_clause_coefficient",
+            "units": 272
+          },
+          {
+            "category": "tree_compile",
+            "operation": "hard_leaf_omitted",
+            "units": 153
+          },
+          {
+            "category": "tree_compile",
+            "operation": "leaf_mask_deduplication",
+            "units": 147
+          },
+          {
+            "category": "tree_compile",
+            "operation": "proof_node_read",
+            "units": 582
+          }
+        ]
+      }
+    },
+    "total_declared_units": 92969,
+    "checked_witnesses": 29,
+    "checked_trees": 18,
+    "timing": {
+      "process_ns": 72788481,
+      "wall_ns": 7143050
+    }
+  },
+  "arms": [
+    {
+      "mode": "native_requested_tolerance",
+      "checked_requests": 80,
+      "newly_readmitted_RUP_proofs": 15,
+      "checked_new_witnesses": 5,
+      "resident_links": 8,
+      "final_own_checked_cuts": 15
+    },
+    {
+      "mode": "native_exact",
+      "checked_requests": 80,
+      "newly_readmitted_RUP_proofs": 19,
+      "checked_new_witnesses": 19,
+      "resident_links": 7,
+      "final_own_checked_cuts": 19
+    }
+  ],
+  "new_native_calls": 0,
+  "new_branch_provider_calls": 0,
+  "new_cost_observations": 0,
+  "replay_invoice": {
+    "total": 740129,
+    "by_category": {
+      "archive_read": 287282,
+      "cache_admission": 740,
+      "weight_update": 80,
+      "dag_compile": 2320,
+      "dag_query": 5720,
+      "selection": 5996,
+      "dag_update": 4648,
+      "witness_check": 1192,
+      "witness_compile": 500,
+      "storage": 240,
+      "retention": 735,
+      "encoding_admission": 4488,
+      "encoding": 34331,
+      "rup_admission": 11545,
+      "rup_parse": 1962,
+      "rup_check": 193929,
+      "cut_projection": 184415,
+      "rup_completion": 6
+    },
+    "operations": [
+      {
+        "category": "archive_read",
+        "operation": "words_and_sha_blocks",
+        "units": 287282
+      },
+      {
+        "category": "cache_admission",
+        "operation": "trusted_projected_cache_fields",
+        "units": 740
+      },
+      {
+        "category": "cut_projection",
+        "operation": "mask_visit",
+        "units": 8704
+      },
+      {
+        "category": "cut_projection",
+        "operation": "nonnegative_dominance_comparison",
+        "units": 48724
+      },
+      {
+        "category": "cut_projection",
+        "operation": "objective_mask_and_cut",
+        "units": 126440
+      },
+      {
+        "category": "cut_projection",
+        "operation": "support_storage",
+        "units": 547
+      },
+      {
+        "category": "dag_compile",
+        "operation": "mask_lsb_parent_index",
+        "units": 1160
+      },
+      {
+        "category": "dag_compile",
+        "operation": "node_storage_and_initial_value",
+        "units": 1160
+      },
+      {
+        "category": "dag_query",
+        "operation": "sum_lookup",
+        "units": 5720
+      },
+      {
+        "category": "dag_update",
+        "operation": "compiled_instruction_read_sum_write",
+        "units": 4648
+      },
+      {
+        "category": "encoding",
+        "operation": "clause_input_literals",
+        "units": 13916
+      },
+      {
+        "category": "encoding",
+        "operation": "clause_output_words",
+        "units": 11545
+      },
+      {
+        "category": "encoding",
+        "operation": "node_manifest_storage",
+        "units": 3510
+      },
+      {
+        "category": "encoding",
+        "operation": "suffix_weight_sum",
+        "units": 544
+      },
+      {
+        "category": "encoding",
+        "operation": "threshold_state_dispatch",
+        "units": 4816
+      },
+      {
+        "category": "encoding_admission",
+        "operation": "source_and_objective_words",
+        "units": 4488
+      },
+      {
+        "category": "retention",
+        "operation": "new_checked_tree_reference",
+        "units": 683
+      },
+      {
+        "category": "retention",
+        "operation": "new_checked_witness_reference",
+        "units": 52
+      },
+      {
+        "category": "rup_admission",
+        "operation": "source_clause_words",
+        "units": 11545
+      },
+      {
+        "category": "rup_check",
+        "operation": "admitted_clause_storage",
+        "units": 249
+      },
+      {
+        "category": "rup_check",
+        "operation": "assumption_assignment",
+        "units": 280
+      },
+      {
+        "category": "rup_check",
+        "operation": "clause_visit",
+        "units": 55633
+      },
+      {
+        "category": "rup_check",
+        "operation": "literal_inspection",
+        "units": 133707
+      },
+      {
+        "category": "rup_check",
+        "operation": "unit_assignment",
+        "units": 4060
+      },
+      {
+        "category": "rup_completion",
+        "operation": "empty_candidate",
+        "units": 6
+      },
+      {
+        "category": "rup_parse",
+        "operation": "proof_bytes_and_words",
+        "units": 1962
+      },
+      {
+        "category": "selection",
+        "operation": "tree_leaf_minimum_and_bank_maximum",
+        "units": 5369
+      },
+      {
+        "category": "selection",
+        "operation": "witness_minimum",
+        "units": 627
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 240
+      },
+      {
+        "category": "weight_update",
+        "operation": "weight_admission",
+        "units": 80
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 516
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 676
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 92
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 24
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 192
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 192
+      }
+    ]
+  },
+  "timing": {
+    "process_ns": 635249975,
+    "wall_ns": 147428047
+  },
+  "meaning": "Actual raw clause proof rechecks and objective projection from freshly admitted cuts, followed by all160 supplied-weight gates. This establishes this checker-relative reconstruction, not formal verification or a new acquisition run."
+}

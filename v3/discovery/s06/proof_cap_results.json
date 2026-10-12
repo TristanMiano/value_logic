@@ -1,0 +1,148 @@
+{
+  "status": "exported",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "start_utc": "2026-10-12T16:57:00.161550+00:00",
+  "end_utc": "2026-10-12T16:57:00.161891+00:00",
+  "implementation_sha256": "d1d1bb4081f95fc7d5533eb86af3de7d51f368cdf8a1db64252cc1ec5bf188bd",
+  "solver": {
+    "python_sat": "1.8.dev24",
+    "wrapper": "Glucose3",
+    "solver_version": "Glucose 3.0",
+    "wrapper_sha256": "d3463ac8a357bc938b03b9786880e0b9e15b34cf65b773e4993d8ec41e37690f",
+    "native_binary_sha256": "e8b25021797356ae56e2a76aeae01e3b25305ecd75c1e62b4133c2cccb9ed089"
+  },
+  "source": {
+    "variables": 4,
+    "hard": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "soft": [
+      {
+        "clause": [
+          -1
+        ],
+        "weight": 2
+      },
+      {
+        "clause": [
+          -2
+        ],
+        "weight": 2
+      },
+      {
+        "clause": [
+          -3
+        ],
+        "weight": 2
+      },
+      {
+        "clause": [
+          -4
+        ],
+        "weight": 2
+      }
+    ],
+    "budget": 3
+  },
+  "encoding": {
+    "kind": "uniform_weight2_budget3_pairwise_atmost1",
+    "budget_clauses": [
+      [
+        -1,
+        -2
+      ],
+      [
+        -1,
+        -3
+      ],
+      [
+        -1,
+        -4
+      ],
+      [
+        -2,
+        -3
+      ],
+      [
+        -2,
+        -4
+      ],
+      [
+        -3,
+        -4
+      ]
+    ],
+    "full_cnf": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        -1,
+        -2
+      ],
+      [
+        -1,
+        -3
+      ],
+      [
+        -1,
+        -4
+      ],
+      [
+        -2,
+        -3
+      ],
+      [
+        -2,
+        -4
+      ],
+      [
+        -3,
+        -4
+      ]
+    ],
+    "clauses": 8,
+    "literal_occurrences": 16,
+    "auxiliaries": 0
+  },
+  "native_status": "UNSAT",
+  "proof_lines": [
+    "-3 0",
+    "0"
+  ],
+  "proof_ascii_bytes": 7,
+  "model": null,
+  "stats": {
+    "restarts": 1,
+    "conflicts": 2,
+    "decisions": 2,
+    "propagations": 1
+  },
+  "timing": {
+    "process_ns": 323200,
+    "wall_ns": 322248
+  },
+  "new_native_calls": 1,
+  "new_diagnostic_optimum_calls": 0,
+  "conflict_cap": 10000,
+  "assumptions": [],
+  "independent_checker_executed": false,
+  "checked_lower_admitted": false,
+  "source_read": {
+    "Glucose3_new": "    def new(self, bootstrap_with=None, use_timer=False, incr=False,\n            with_proof=False, warm_start=False):\n        \"\"\"\n            Actual constructor of the solver.\n        \"\"\"\n\n        assert not incr or not with_proof, 'Incremental mode and proof tracing cannot be set together.'\n\n        if not self.glucose:\n            self.glucose = pysolvers.glucose3_new()\n\n            if bootstrap_with:\n                if type(bootstrap_with) == CNFPlus and bootstrap_with.atmosts:\n                    raise NotImplementedError('Atmost constraints are not supported by Glucose3')\n\n                for clause in bootstrap_with:\n                    self.add_clause(clause)\n\n            self.use_timer = use_timer\n            self.call_time = 0.0  # time spent for the last call to oracle\n            self.accu_time = 0.0  # time accumulated for all calls to oracle\n\n            if incr:\n                pysolvers.glucose3_setincr(self.glucose)\n\n            if with_proof:\n                self.prfile = tempfile.TemporaryFile()\n                pysolvers.glucose3_tracepr(self.glucose, self.prfile)\n\n            if warm_start:\n                self.start_mode(warm=True)\n",
+    "Glucose3_get_proof": "    def get_proof(self):\n        \"\"\"\n            Get a proof produced when deciding the formula.\n        \"\"\"\n\n        if self.glucose and self.prfile:\n            self.prfile.seek(0)\n            return [line.rstrip().decode('ascii') for line in self.prfile.readlines()]\n"
+  }
+}

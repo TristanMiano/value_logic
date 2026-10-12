@@ -4,18 +4,22 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 12, 2026 UTC.
 
 **P3-01–10 are complete at their declared scopes; P3-A/B retain their restricted passes.**
 P3-10 closes with an explicit preserved amendment and **90.283569405783
-qualifying research minutes**. Phase research is **1463.626603180817 minutes**.
+qualifying research minutes**. Phase research is **1523.698149685067 minutes**.
 **P3-SEARCH-01-C001 is in progress; its four-hour floor is satisfied and work continues. P3-11 is deferred pending a promising candidate.** The author has
 adopted a [discovery-first amendment](decisions/2026-10-11_discovery_first_amendment.md)
 with recurring long research cycles and open-ended search. The original
 **16 measured hours of research** remain a satisfied minimum; the new cycle
-has **377.495235816667 research minutes** credited and its floor is satisfied.
-The latest **ChatGPT (GPT-6 Astra Pro)** increment adds **60.115281713333…**
+has **437.566782320917 research minutes** credited and its floor is satisfied.
+The latest **ChatGPT (GPT-6 Astra Pro)** increment adds **60.07154650425**
 research minutes, preserving earlier **Codex (GPT-6)** work. The author now
 directs [one-hour handoffs](decisions/2026-10-12_hourly_handoffs.md), carrying
-C001 forward between ChatGPT and Codex. See the [checkpoint](discovery/s05/cp01.md),
-[portfolio](discovery/candidates.md), [effective actuals](discovery/s05/effective_actuals.json)
+C001 forward between ChatGPT and Codex. See the [checkpoint](discovery/s06/cp01.md),
+[portfolio](discovery/candidates.md), [effective actuals](discovery/s06/effective_actuals.json)
 and [current continuation prompt](discovery/CONTINUE.md).
+The latest hour makes [persistent repair and checked proof acquisition](discovery/s06/native_findings.md)
+callable, executes a [joint cost-observation service](discovery/s06/joint_findings.md),
+and develops [scalar-anchor transport and acquisition quotations](discovery/s06/source_anchor.md).
+All remain DEVELOPMENT; no total-cost advantage or readiness forecast is established.
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
 
@@ -141,7 +145,7 @@ The [closing record](work_logs/P3_06_2026-10-09_S1.md) gives **90.210938375717**
 new research minutes. P3-07 is **complete** at its declared
 [bounded paid-reasoning scope](derivations/07_paid_reasoning.md), with
 **90.187687312067** observed research minutes. Current phase research is
-**1463.626603180817 minutes**. The
+**1523.698149685067 minutes**. The
 [960-minute checkpoint](work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
 was assessed at P3-09; new discovery floors and later gates remain separate.
 **P3-B has passed** at restricted mathematical/local implementation

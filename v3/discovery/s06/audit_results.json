@@ -1,0 +1,312 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT constructed source",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "start_utc": "2026-10-12T17:42:26.073725+00:00",
+  "implementation_sha256": "dfe8ca045e800b300ffe488dece5b2089faa7c531d66385b0a0674bb23368e14",
+  "dependencies": {
+    "anchor_quotes.py": "afa35592c6d800f78a60853a71f59d0a2e28ac279aeaf5b71a1026149de0a97a",
+    "source_anchor.py": "b8f42879ee99ce99c849fb4409e3b9c47c482f1430345ae7259ccb5c25a730bc",
+    "joint_repair.py": "7e1a96f4a05107174554acc701ae43026528d6041e570500d840fb1b76060384",
+    "contract_results.json": "1d056bc0d31815a84a40a83fc3f60de72b198e2c2642edac158c7181a6fdb4c0"
+  },
+  "declared_source": {
+    "possible_cost_modes": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "cohort_size": 1,
+    "hidden_modes": [
+      1
+    ],
+    "target": "One fixed synthetic row; no outcome probabilities",
+    "logical_source_id": "2a5608d4543687002a6a44f5018a2bf5e2a16abe420a86a5fa0df1efa5e0608f",
+    "source_identity": "f99c2d1b8217b5a1c9773c3604b92ecdacd69ab4639f74436f711a7c97e249e6"
+  },
+  "candidate_models": [
+    1,
+    2
+  ],
+  "checked_witnesses": [
+    {
+      "model": 1,
+      "violation_mask": 1,
+      "original_cost": 3
+    },
+    {
+      "model": 2,
+      "violation_mask": 2,
+      "original_cost": 3
+    }
+  ],
+  "quote": {
+    "row": 0,
+    "coordinate": 0,
+    "before": "2",
+    "worst_bound": "0",
+    "guaranteed_gain": "2",
+    "outcomes": [
+      {
+        "value": 0,
+        "remaining_modes": [
+          0
+        ],
+        "response": {
+          "mask": 1,
+          "bound": "0",
+          "repair_gap": "0",
+          "replacement_gap": "-3",
+          "mode_anchor_lowers": [
+            "0",
+            "0"
+          ],
+          "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+          "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+        }
+      },
+      {
+        "value": 2,
+        "remaining_modes": [
+          1
+        ],
+        "response": {
+          "mask": 2,
+          "bound": "0",
+          "repair_gap": "0",
+          "replacement_gap": "-3",
+          "mode_anchor_lowers": [
+            "0",
+            "0"
+          ],
+          "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+          "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+        }
+      }
+    ],
+    "contract": "One exact source-bound cell observation with one of all declared outcomes; external price unassigned"
+  },
+  "fixed_action_quotes": [
+    {
+      "row": 0,
+      "coordinate": 0,
+      "before": "2",
+      "worst_bound": "2",
+      "guaranteed_gain": "0",
+      "outcomes": [
+        {
+          "value": 0,
+          "remaining_modes": [
+            0
+          ],
+          "response": {
+            "mask": 1,
+            "bound": "0",
+            "repair_gap": "0",
+            "replacement_gap": "-3",
+            "mode_anchor_lowers": [
+              "0",
+              "0"
+            ],
+            "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+            "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+          }
+        },
+        {
+          "value": 2,
+          "remaining_modes": [
+            1
+          ],
+          "response": {
+            "mask": 1,
+            "bound": "2",
+            "repair_gap": "2",
+            "replacement_gap": "-1",
+            "mode_anchor_lowers": [
+              "0",
+              "0"
+            ],
+            "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+            "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+          }
+        }
+      ],
+      "contract": "One exact source-bound cell observation with one of all declared outcomes; external price unassigned"
+    },
+    {
+      "row": 0,
+      "coordinate": 0,
+      "before": "2",
+      "worst_bound": "2",
+      "guaranteed_gain": "0",
+      "outcomes": [
+        {
+          "value": 0,
+          "remaining_modes": [
+            0
+          ],
+          "response": {
+            "mask": 2,
+            "bound": "2",
+            "repair_gap": "2",
+            "replacement_gap": "-1",
+            "mode_anchor_lowers": [
+              "0",
+              "0"
+            ],
+            "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+            "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+          }
+        },
+        {
+          "value": 2,
+          "remaining_modes": [
+            1
+          ],
+          "response": {
+            "mask": 2,
+            "bound": "0",
+            "repair_gap": "0",
+            "replacement_gap": "-3",
+            "mode_anchor_lowers": [
+              "0",
+              "0"
+            ],
+            "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+            "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+          }
+        }
+      ],
+      "contract": "One exact source-bound cell observation with one of all declared outcomes; external price unassigned"
+    }
+  ],
+  "price": 3,
+  "tolerance": 0,
+  "new_logical_or_LP_calls": 0,
+  "new_external_observations": 1,
+  "actual_observation": {
+    "source_id": "f99c2d1b8217b5a1c9773c3604b92ecdacd69ab4639f74436f711a7c97e249e6",
+    "row": 0,
+    "coordinate": 0,
+    "value": 2,
+    "provider_call": 0,
+    "observed_utc": "2026-10-12T17:42:26.074270+00:00",
+    "observation_units": 1,
+    "provider_software_units": 4,
+    "timing": {
+      "wall_ns": 9524,
+      "process_ns": 9374
+    },
+    "receipt_id": "2e02a3a09091c550e91274507a7f9fc61ad80ecef91383bfb32f6ed3e9833878"
+  },
+  "answer": {
+    "mask": 2,
+    "bound": "0",
+    "repair_gap": "0",
+    "replacement_gap": "-3",
+    "mode_anchor_lowers": [
+      "0",
+      "0"
+    ],
+    "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+    "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+  },
+  "observation_external_price": null,
+  "provider_software_units": 4,
+  "invoice": {
+    "total": 632,
+    "by_category": {
+      "witness_check": 5,
+      "witness_compile": 14,
+      "storage": 17,
+      "cost_admission": 13,
+      "source_anchor_compile": 240,
+      "source_anchor_query": 299,
+      "audit_quote": 30,
+      "cost_check": 14
+    },
+    "operations": [
+      {
+        "category": "audit_quote",
+        "operation": "declared_partition_and_complete_outcome_maximum",
+        "units": 30
+      },
+      {
+        "category": "cost_admission",
+        "operation": "mode_and_row_words",
+        "units": 13
+      },
+      {
+        "category": "cost_check",
+        "operation": "receipt_binding_and_mode_filter",
+        "units": 14
+      },
+      {
+        "category": "source_anchor_compile",
+        "operation": "mode_action_costs_and_lower_scaling",
+        "units": 240
+      },
+      {
+        "category": "source_anchor_query",
+        "operation": "cohort_sums_and_clipped_regret",
+        "units": 158
+      },
+      {
+        "category": "source_anchor_query",
+        "operation": "row_mode_contrast_extrema",
+        "units": 141
+      },
+      {
+        "category": "storage",
+        "operation": "cost_receipt_and_remaining_mode_ids",
+        "units": 9
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 8
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 2
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 3
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 4
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 2
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 4
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 4
+      }
+    ]
+  },
+  "end_utc": "2026-10-12T17:42:26.074483+00:00",
+  "timing": {
+    "wall_ns": 3580217,
+    "process_ns": 32473461
+  },
+  "scope": "Supplied candidate assignments are explicitly checked and charged. The cost-source support is a synthetic design premise, not learned population calibration. One actual cell audit selects an already checked fixed repair; no hidden value was used to select the audit."
+}

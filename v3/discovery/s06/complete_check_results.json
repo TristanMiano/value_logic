@@ -1,0 +1,580 @@
+{
+  "status": "PASS",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T17:22:18.749336+00:00",
+  "implementation_sha256": "a50778cfc7c2a9718acb41981520459c2e65e3fb3ac485d4d5304b92d80b5a37",
+  "result_sha256": "5c2c5a19ebc865b5cbcac3973b6d9136a1a64353354ceb775265b2f2397e2ae1",
+  "service_sha256": "a86c4d1452dc5d78996b6965b076fed1505b74338bcf067272191b74363d97df",
+  "source_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+  "scope": "Raw admission, exact committed cost-audit receipts, new witness/proof checks, chronological independent mask sums, final 16 action gates and arithmetic invoices.",
+  "original_service_summary": {
+    "checked_requests": 16,
+    "cost_observations": 14,
+    "complete_branch_calls": 14,
+    "new_native_calls": 0,
+    "cache_hits": 5,
+    "summed_action_cost": 330,
+    "largest_certified_regret": 4
+  },
+  "replayed_original_admission": {
+    "scope": "Actual raw check and exact binding of existing cache pointwise witness/tree projection; cell geometry unused",
+    "hashes": {
+      "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+    },
+    "bytes": {
+      "maxsat_repair_results.json": 544143,
+      "regions_bundle.json": 8037,
+      "maxsat_repair.py": 21856,
+      "maxsat_reprice.py": 16431
+    },
+    "invoices": {
+      "admission_and_binding": {
+        "total": 84994,
+        "by_category": {
+          "raw_admission": 83037,
+          "cache_projection_binding": 1957
+        },
+        "operations": [
+          {
+            "category": "cache_projection_binding",
+            "operation": "negative_proof_id_and_fields",
+            "units": 1580
+          },
+          {
+            "category": "cache_projection_binding",
+            "operation": "witness_id_and_fields",
+            "units": 377
+          },
+          {
+            "category": "raw_admission",
+            "operation": "eight_byte_words",
+            "units": 73809
+          },
+          {
+            "category": "raw_admission",
+            "operation": "sha256_message_blocks",
+            "units": 9228
+          }
+        ]
+      },
+      "source_and_witness_check": {
+        "total": 4374,
+        "by_category": {
+          "source_admission": 1984,
+          "witness_check": 1445,
+          "witness_compile": 655,
+          "storage": 290
+        },
+        "operations": [
+          {
+            "category": "source_admission",
+            "operation": "checked_old_frontier_receipt",
+            "units": 128
+          },
+          {
+            "category": "source_admission",
+            "operation": "immutable_clause_and_weight_words",
+            "units": 1856
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 290
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 600
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 845
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 162
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 29
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 232
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 232
+          }
+        ]
+      },
+      "negative_proof_check_and_compile": {
+        "total": 3601,
+        "by_category": {
+          "check": 2282,
+          "tree_compile": 1154,
+          "storage": 165
+        },
+        "operations": [
+          {
+            "category": "check",
+            "operation": "negative_clause_header",
+            "units": 425
+          },
+          {
+            "category": "check",
+            "operation": "negative_literal",
+            "units": 731
+          },
+          {
+            "category": "check",
+            "operation": "negative_proof_node",
+            "units": 582
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_add",
+            "units": 272
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_index",
+            "units": 272
+          },
+          {
+            "category": "storage",
+            "operation": "compiled_tree_leaf_masks",
+            "units": 165
+          },
+          {
+            "category": "tree_compile",
+            "operation": "forced_clause_coefficient",
+            "units": 272
+          },
+          {
+            "category": "tree_compile",
+            "operation": "hard_leaf_omitted",
+            "units": 153
+          },
+          {
+            "category": "tree_compile",
+            "operation": "leaf_mask_deduplication",
+            "units": 147
+          },
+          {
+            "category": "tree_compile",
+            "operation": "proof_node_read",
+            "units": 582
+          }
+        ]
+      }
+    },
+    "total_declared_units": 92969,
+    "checked_witnesses": 29,
+    "checked_trees": 18,
+    "timing": {
+      "process_ns": 71186365,
+      "wall_ns": 7199863
+    }
+  },
+  "replayed_code_admission": {
+    "binding_rows": [
+      {
+        "file": "contract_quote.py",
+        "sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+        "bytes": 9498,
+        "read_words": 1188,
+        "sha256_blocks": 149,
+        "binding_compare_units": 1
+      },
+      {
+        "file": "maxsat_repair.py",
+        "sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+        "bytes": 21856,
+        "read_words": 2732,
+        "sha256_blocks": 342,
+        "binding_compare_units": 1
+      },
+      {
+        "file": "maxsat_reprice.py",
+        "sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+        "bytes": 16431,
+        "read_words": 2054,
+        "sha256_blocks": 257,
+        "binding_compare_units": 1
+      }
+    ],
+    "declared_admission_units": 6725,
+    "timing": {
+      "process_ns": 103234,
+      "wall_ns": 102852
+    },
+    "source_semantics": "Manual finite-procedure derivation in contract_findings.md; no checksum-only proof admission."
+  },
+  "replayed_new_witnesses": 4,
+  "replayed_new_negative_proofs": 10,
+  "checked_audit_receipts": 14,
+  "checked_final_gates": [
+    {
+      "request": 0,
+      "row": 0,
+      "action": "repair",
+      "action_cost": 14,
+      "regret_bound": 0,
+      "tolerance": 4,
+      "complete_calls": 2
+    },
+    {
+      "request": 1,
+      "row": 1,
+      "action": "repair",
+      "action_cost": 14,
+      "regret_bound": 0,
+      "tolerance": 4,
+      "complete_calls": 1
+    },
+    {
+      "request": 2,
+      "row": 2,
+      "action": "repair",
+      "action_cost": 30,
+      "regret_bound": 2,
+      "tolerance": 4,
+      "complete_calls": 2
+    },
+    {
+      "request": 3,
+      "row": 3,
+      "action": "repair",
+      "action_cost": 8,
+      "regret_bound": 4,
+      "tolerance": 4,
+      "complete_calls": 0
+    },
+    {
+      "request": 4,
+      "row": 4,
+      "action": "repair",
+      "action_cost": 4,
+      "regret_bound": 4,
+      "tolerance": 4,
+      "complete_calls": 0
+    },
+    {
+      "request": 5,
+      "row": 5,
+      "action": "repair",
+      "action_cost": 20,
+      "regret_bound": 2,
+      "tolerance": 4,
+      "complete_calls": 1
+    },
+    {
+      "request": 6,
+      "row": 6,
+      "action": "repair",
+      "action_cost": 14,
+      "regret_bound": 0,
+      "tolerance": 4,
+      "complete_calls": 0
+    },
+    {
+      "request": 7,
+      "row": 7,
+      "action": "repair",
+      "action_cost": 24,
+      "regret_bound": 4,
+      "tolerance": 4,
+      "complete_calls": 1
+    },
+    {
+      "request": 8,
+      "row": 8,
+      "action": "repair",
+      "action_cost": 34,
+      "regret_bound": 4,
+      "tolerance": 4,
+      "complete_calls": 1
+    },
+    {
+      "request": 9,
+      "row": 9,
+      "action": "repair",
+      "action_cost": 4,
+      "regret_bound": 0,
+      "tolerance": 4,
+      "complete_calls": 1
+    },
+    {
+      "request": 10,
+      "row": 10,
+      "action": "repair",
+      "action_cost": 10,
+      "regret_bound": 2,
+      "tolerance": 4,
+      "complete_calls": 1
+    },
+    {
+      "request": 11,
+      "row": 11,
+      "action": "repair",
+      "action_cost": 24,
+      "regret_bound": 0,
+      "tolerance": 4,
+      "complete_calls": 2
+    },
+    {
+      "request": 12,
+      "row": 12,
+      "action": "repair",
+      "action_cost": 14,
+      "regret_bound": 0,
+      "tolerance": 4,
+      "complete_calls": 0
+    },
+    {
+      "request": 13,
+      "row": 13,
+      "action": "repair",
+      "action_cost": 44,
+      "regret_bound": 2,
+      "tolerance": 4,
+      "complete_calls": 1
+    },
+    {
+      "request": 14,
+      "row": 14,
+      "action": "repair",
+      "action_cost": 24,
+      "regret_bound": 4,
+      "tolerance": 4,
+      "complete_calls": 1
+    },
+    {
+      "request": 15,
+      "row": 15,
+      "action": "replace",
+      "action_cost": 48,
+      "regret_bound": 0,
+      "tolerance": 4,
+      "complete_calls": 0
+    }
+  ],
+  "new_branch_provider_calls": 0,
+  "new_native_calls": 0,
+  "new_external_cost_observations": 0,
+  "diagnostic_optimum_calls": 0,
+  "replay_check_invoice": {
+    "total": 43108,
+    "by_category": {
+      "replay_input": 33762,
+      "replay_audit": 308,
+      "replay_objective": 7769,
+      "replay_bound": 286,
+      "check": 704,
+      "objective": 279
+    },
+    "operations": [
+      {
+        "category": "check",
+        "operation": "witness_hard_clause_header",
+        "units": 312
+      },
+      {
+        "category": "check",
+        "operation": "witness_hard_literal",
+        "units": 392
+      },
+      {
+        "category": "objective",
+        "operation": "full_objective_pass",
+        "units": 15
+      },
+      {
+        "category": "objective",
+        "operation": "soft_clause_header",
+        "units": 120
+      },
+      {
+        "category": "objective",
+        "operation": "soft_literal",
+        "units": 120
+      },
+      {
+        "category": "objective",
+        "operation": "weight_add",
+        "units": 24
+      },
+      {
+        "category": "replay_audit",
+        "operation": "source_receipt_and_mode_filter",
+        "units": 308
+      },
+      {
+        "category": "replay_bound",
+        "operation": "selection_and_binding",
+        "units": 286
+      },
+      {
+        "category": "replay_input",
+        "operation": "read_words_and_hash_blocks",
+        "units": 33762
+      },
+      {
+        "category": "replay_objective",
+        "operation": "mask_weight_products_and_sum",
+        "units": 7769
+      }
+    ]
+  },
+  "new_raw_receipt_checker_invoice": {
+    "total": 4501,
+    "by_category": {
+      "check": 2789,
+      "objective": 364,
+      "storage": 153,
+      "witness_check": 195,
+      "witness_compile": 80,
+      "tree_compile": 920
+    },
+    "operations": [
+      {
+        "category": "check",
+        "operation": "negative_clause_header",
+        "units": 353
+      },
+      {
+        "category": "check",
+        "operation": "negative_literal",
+        "units": 621
+      },
+      {
+        "category": "check",
+        "operation": "negative_proof_node",
+        "units": 464
+      },
+      {
+        "category": "check",
+        "operation": "negative_weight_add",
+        "units": 219
+      },
+      {
+        "category": "check",
+        "operation": "negative_weight_index",
+        "units": 219
+      },
+      {
+        "category": "check",
+        "operation": "witness_hard_clause_header",
+        "units": 384
+      },
+      {
+        "category": "check",
+        "operation": "witness_hard_literal",
+        "units": 529
+      },
+      {
+        "category": "objective",
+        "operation": "full_objective_pass",
+        "units": 18
+      },
+      {
+        "category": "objective",
+        "operation": "soft_clause_header",
+        "units": 144
+      },
+      {
+        "category": "objective",
+        "operation": "soft_literal",
+        "units": 144
+      },
+      {
+        "category": "objective",
+        "operation": "weight_add",
+        "units": 58
+      },
+      {
+        "category": "storage",
+        "operation": "compiled_tree_leaf_masks",
+        "units": 113
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 40
+      },
+      {
+        "category": "tree_compile",
+        "operation": "forced_clause_coefficient",
+        "units": 219
+      },
+      {
+        "category": "tree_compile",
+        "operation": "hard_leaf_omitted",
+        "units": 134
+      },
+      {
+        "category": "tree_compile",
+        "operation": "leaf_mask_deduplication",
+        "units": 103
+      },
+      {
+        "category": "tree_compile",
+        "operation": "proof_node_read",
+        "units": 464
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 90
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 105
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 12
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 4
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 32
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 32
+      }
+    ]
+  },
+  "raw_result_archive_bytes": 210121,
+  "retained_cache_bytes": 11187,
+  "original_named_operation_total": 154926,
+  "timing": {
+    "process_ns": 174031089,
+    "wall_ns": 18044405
+  },
+  "limitations": [
+    "Same-model focused reconstruction, not independent external confirmation",
+    "Provider search operation receipts and timings are retained historical measurements; search is not replayed",
+    "Controller invoice categories reconcile arithmetically; this checker uses separate direct objective sums",
+    "No runtime, monetary efficiency, population cost inference or native-solver comparison is established"
+  ]
+}
