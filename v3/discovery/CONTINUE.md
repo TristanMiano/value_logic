@@ -21,12 +21,14 @@ program since this prompt was written; do not duplicate its completed work.
 Read `AGENTS.md`, [TODO_v3.md](../../TODO_v3.md),
 [the research protocol](../RESEARCH_PROTOCOL.md),
 [the one-hour direction](../decisions/2026-10-12_hourly_handoffs.md),
-[the candidate portfolio](candidates.md), and the latest discovery checkpoint.
+[the candidate portfolio](candidates.md), [the recurrence progress table](recurrences.md),
+and the latest discovery checkpoint.
 The checkpoint known when this prompt was prepared is [s06 cp01](s06/cp01.md).
-Its published branch is `discovery-hour-20261012-s06`, in
-[PR #5](https://github.com/TristanMiano/value_logic/pull/5). If main still
-predates that handoff, inspect and recover the published branch before choosing
-research. Follow a newer authoritative pointer if present. Read only the relevant
+The s06 handoff was merged through
+[PR #5](https://github.com/TristanMiano/value_logic/pull/5). The subsequent
+recurrence-table update is on `c001-recurrence-summary-20261012` until merged;
+if main predates it, inspect that published branch as well. Follow a newer
+authoritative pointer if present. Read only the relevant
 scientific sources, source records and executed contracts needed for the next
 construction; do not reopen the whole archive.
 
@@ -203,7 +205,15 @@ adversarial campaign around an early mechanism.
 
 After approximately one engaged research hour, close and reconcile the actual
 clock, update the checkpoint and current pointers, and refresh this prompt with
-the best next constructive move. Follow current publication instructions and
+the best next constructive move. **Update [the recurrence table](recurrences.md)
+and [its exact source record](recurrences.json) every round:** add the new
+increment's effective research and cumulative minutes (round each from exact
+nanoseconds), new-family count, at least one useful source-backed numerical
+result with units/denominator and comparison scope, and a one-to-three-sentence
+description. Keep interrupted tails and excluded attempts explicit, preserve
+earlier rows, and distinguish actual acquisitions from replay. Link the updated
+table from the new checkpoint and handoff. This maintenance adds no research
+credit. Follow current publication instructions and
 the author's existing authorization. Report what advanced, its evidence and
 costs, material limitations, exact actuals and the recommended next one-hour
 recurrence. Leave C001 open unless its substantive conditions truly change.
