@@ -23,7 +23,10 @@ Read `AGENTS.md`, [TODO_v3.md](../../TODO_v3.md),
 [the one-hour direction](../decisions/2026-10-12_hourly_handoffs.md),
 [the candidate portfolio](candidates.md), and the latest discovery checkpoint.
 The checkpoint known when this prompt was prepared is [s06 cp01](s06/cp01.md).
-Follow a newer authoritative pointer if present. Read only the relevant
+Its published branch is `discovery-hour-20261012-s06`, in
+[PR #5](https://github.com/TristanMiano/value_logic/pull/5). If main still
+predates that handoff, inspect and recover the published branch before choosing
+research. Follow a newer authoritative pointer if present. Read only the relevant
 scientific sources, source records and executed contracts needed for the next
 construction; do not reopen the whole archive.
 
