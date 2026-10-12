@@ -1,15 +1,15 @@
 {
-  "schema": "c001_recurrence_progress_v2",
+  "schema": "c001_recurrence_progress_v3",
   "cycle": "P3-SEARCH-01-C001",
   "status": "OPEN",
   "prepared_by": "ChatGPT (GPT-6 Astra Pro)",
   "prepared_date_utc": "2026-10-12",
-  "source_commit": "e35fdac5858023c97052d8ce6d04634f3c78312f",
-  "latest_checkpoint": "s06/cp01.md",
-  "latest_effective_actuals": "s06/effective_actuals.json",
+  "source_commit": "0d0f5128abc4fa7445f5f41b5c6b03ab958dcee6",
+  "latest_checkpoint": "s07/cp01.md",
+  "latest_effective_actuals": "s07/effective_actuals.json",
   "retrospective_research_credit_ns": 0,
   "rounding": "Nearest whole minute, half up, directly from integer nanoseconds: (ns + 30000000000) // 60000000000. Round each increment and each exact cumulative independently; never sum or double-round displayed minutes.",
-  "row_scope": "15 published checkpoint increments, one separately credited s02 tail, and abandoned s04 at zero. Earlier checkpoint increments are not separately requested one-hour sessions.",
+  "row_scope": "18 recorded boundaries: preserve all 17 through s06 and add one s07 recurrence. a01/a02/a03 are within-hour development measurements.",
   "metric_definitions": {
     "families_total": {
       "label": "Numbered candidate families",
@@ -87,8 +87,8 @@
         "verification_plan_version"
       ],
       "reporting": "Give basis, principal risks, sensitivity and forecasting track record. Report change in percentage points only for the same event. A changed candidate or claim requires a new first forecast, not an apparent improvement.",
-      "unassessed": "Use N/A if no defensible event-specific estimate is recorded; N/A is not zero. Do not infer historical probabilities from elapsed time, code/test counts, favorable pilots or checklist completion.",
-      "range_rule": "A probability range extending below80% does not establish the minimum.",
+      "unassessed": "Historical N/A cells are preserved. From s07 onward, reassess the declared event numerically every recurrence, permitting broad uncertainty.",
+      "range_rule": "The current F01 range of 20–45% lies entirely below 80%, so it does not support promotion.",
       "sources": [
         {
           "path": "P3_SEARCH_01.md",
@@ -99,11 +99,76 @@
           "locator": "Promotion/readiness requirements"
         }
       ]
+    },
+    "joint16_checked_outputs": {
+      "label": "Checked outputs",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "units": "checked outputs",
+      "definition": "count checked_action requests with bound <= tolerance",
+      "direction": "Higher checked coverage, or fewer resources at unchanged output duty; no forced monotonicity or full-cost implication.",
+      "denominator": 16
+    },
+    "joint16_complete_plan_closures": {
+      "label": "Complete-plan closures",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "units": "closed requests",
+      "definition": "distinct nonnull plans[].request with checked final request; denominator requests minus initial cache closures",
+      "direction": "Higher checked coverage, or fewer resources at unchanged output duty; no forced monotonicity or full-cost implication.",
+      "denominator": 11
+    },
+    "joint16_audits": {
+      "label": "Actual cost audits",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "units": "audits",
+      "definition": "count events[kind=audit]",
+      "direction": "Higher checked coverage, or fewer resources at unchanged output duty; no forced monotonicity or full-cost implication."
+    },
+    "joint16_complete_calls": {
+      "label": "Complete logical calls",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "units": "complete calls",
+      "definition": "count events[kind=complete]",
+      "direction": "Higher checked coverage, or fewer resources at unchanged output duty; no forced monotonicity or full-cost implication."
+    },
+    "joint16_native_ihs_attempts": {
+      "label": "Native-IHS attempts",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "units": "native-IHS attempts",
+      "definition": "count events[kind=native]",
+      "direction": "Higher checked coverage, or fewer resources at unchanged output duty; no forced monotonicity or full-cost implication."
+    },
+    "joint16_quotation_units": {
+      "label": "Complete quotation work",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "units": "named units",
+      "definition": "sum(plans[].quote_units) + invoice.planner_initialization_units",
+      "direction": "Higher checked coverage, or fewer resources at unchanged output duty; no forced monotonicity or full-cost implication."
+    },
+    "joint16_named_arm_units": {
+      "label": "Named arm bill",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "units": "named units",
+      "definition": "invoice.operation_units",
+      "direction": "Higher checked coverage, or fewer resources at unchanged output duty; no forced monotonicity or full-cost implication."
+    },
+    "joint16_named_ratio_audit_first": {
+      "label": "Named bill / audit-first",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "units": "dimensionless named-unit ratio",
+      "definition": "a03 bundle invoice.operation_units / a01 audit_first invoice.operation_units",
+      "direction": "Higher checked coverage, or fewer resources at unchanged output duty; no forced monotonicity or full-cost implication."
+    },
+    "f01_demonstrated_cost_regions": {
+      "label": "Demonstrated 10% full-cost regions",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "units": "warranted regions",
+      "definition": "Number of evidence-supported complete-price regions satisfying the unchanged F01 claim. Zero is none established, not every symbolic assignment disproved.",
+      "direction": "More supported qualifying regions for the same claim"
     }
   },
-  "time_reconstruction": "For s01-s03, apply original dispositions by segment index or exact same-runtime start/end identifiers, sum closed effective D/L/E through the recorded boundary, add prior cycle research, then subtract the previous row cumulative. For s05-s06, use closed effective actuals with their full/partial exclusions. The abandoned s04 row contributes zero.",
-  "total_research_ns": 26254006939255,
-  "total_minutes_rounded": 438,
+  "time_reconstruction": "For s01-s03, apply original dispositions by segment index or exact same-runtime start/end identifiers, sum closed effective D/L/E through the recorded boundary, add prior cycle research, then subtract the previous row cumulative. For s05-s06, use closed effective actuals with their full/partial exclusions. The abandoned s04 row contributes zero. For s07 use closed effective session_research_ns/cycle_research_ns after all dispositions; no overlapping helper or publication time is added.",
+  "total_research_ns": 29849134566547,
+  "total_minutes_rounded": 497,
   "rows": [
     {
       "id": "s01_cp01",
@@ -2404,15 +2469,590 @@
           ]
         }
       }
+    },
+    {
+      "id": "s07_cp01",
+      "label": "s07 hourly round",
+      "checkpoint": "s07/cp01.md",
+      "session": "s07",
+      "contributor": "ChatGPT (GPT-6 Astra Pro)",
+      "research_ns": 3595127627292,
+      "cumulative_research_ns": 29849134566547,
+      "research_minutes_rounded": 60,
+      "cumulative_minutes_rounded": 497,
+      "new_family_ids": [
+        "S29",
+        "S30"
+      ],
+      "cumulative_new_family_count": 30,
+      "metric_summary": "Latest bundle: 16/16 checked, 11/11 complete-plan closures, 14 audits/14 complete calls, 1718749 quote units and 4.7544x audit-first named bill; zero established full-cost regions. Final F01 20–45%, central 30%.",
+      "metric_values": {
+        "metric_type": "actual complete bundle development with separate new-scope constructions",
+        "scope_id": "s28_b1_joint16_menu1_v1",
+        "latest_version": "s07-complete-bundle-v3",
+        "counts": {
+          "requests": 16,
+          "checked": 16,
+          "cache_hits": 5,
+          "cost_observations": 14,
+          "complete_calls": 14,
+          "native_attempts": 0,
+          "logical_purchases": 14,
+          "unresolved": 0,
+          "executed_complete_bundles": 11,
+          "quoted_unclosed_states": 13
+        },
+        "quotation_units": 1718749,
+        "named_arm_units": 2306193,
+        "named_ratio_audit_first": 4.754390124230517,
+        "demonstrated_cost_regions": 0,
+        "separate_scope_ids": [
+          "joint16_robust_witness_menu2_v1",
+          "s29_affine_exactly_one_v1",
+          "s30_common_cdf64_draw128_v2"
+        ]
+      },
+      "description": "Complete plans became executable and a02-to-a03 quotation work fell 38.57%, but purchases stayed flat and the named bill exceeds audit-first. Expanded witness/S29/S30 results have separate scopes; final F01 remains 20–45%, central 30%.",
+      "time_evidence": {
+        "actuals": "s07/effective_actuals.json",
+        "sha256": "9d9d1d5d6b77deb4434993c959de899cf50c18965d7d09d248549c31f3ebe54c",
+        "actuals_field": "session_research_ns",
+        "cumulative_actuals_field": "cycle_research_ns",
+        "dispositions": "s07/dispositions.json",
+        "effective_observation": {
+          "utc": "2026-10-12T21:15:37.722187+00:00",
+          "monotonic_ns": 26460890243288,
+          "runtime": "python-pid-2-8e495504-e57a-4b29-a963-b91f56e43ac0"
+        },
+        "research_closed_utc": "2026-10-12T21:15:29.379292+00:00",
+        "runtime": "python-pid-2-8e495504-e57a-4b29-a963-b91f56e43ac0",
+        "note": "Effective closed totals after exclusions; no publication or overlapping helper credit."
+      },
+      "metric_sources": [
+        {
+          "path": "s07/progress_results.json",
+          "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+          "locator": "six arms/nine comparisons"
+        },
+        {
+          "path": "s07/forecast_final.md",
+          "sha256": "3f7d08b520a52f640731cdab51ad5032791cc70f94003f8d689e46e834878f52",
+          "locator": "Final assessment"
+        },
+        {
+          "path": "s07/findings.md",
+          "locator": "Scientific synthesis"
+        }
+      ],
+      "fixed_metrics": {
+        "joint16_checked_outputs": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 0,
+          "value": 16,
+          "units": "checked outputs",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: count checked_action requests with bound <= tolerance"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].counts.checked"
+            }
+          ],
+          "denominator": 16,
+          "coverage_percent": 100.0,
+          "coverage_delta_percentage_points": null
+        },
+        "joint16_complete_plan_closures": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 0,
+          "value": 11,
+          "units": "closed requests",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: distinct nonnull plans[].request with checked final request; denominator requests minus initial cache closures"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].complete_plan_request_coverage.numerator"
+            }
+          ],
+          "denominator": 11,
+          "coverage_percent": 100.0,
+          "coverage_delta_percentage_points": null
+        },
+        "joint16_audits": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 0,
+          "value": 14,
+          "units": "audits",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: count events[kind=audit]"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].counts.cost_observations"
+            }
+          ]
+        },
+        "joint16_complete_calls": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 0,
+          "value": 14,
+          "units": "complete calls",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: count events[kind=complete]"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].counts.complete_calls"
+            }
+          ]
+        },
+        "joint16_native_ihs_attempts": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 0,
+          "value": 0,
+          "units": "native-IHS attempts",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: count events[kind=native]"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].counts.native_attempts"
+            }
+          ]
+        },
+        "joint16_quotation_units": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 0,
+          "value": 1718749,
+          "units": "named units",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: sum(plans[].quote_units) + invoice.planner_initialization_units"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].quotation.total_units"
+            }
+          ],
+          "comparability_note": "All per-plan meter deltas plus constructor work; already included in the controller bill, never added twice."
+        },
+        "joint16_named_arm_units": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 0,
+          "value": 2306193,
+          "units": "named units",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: invoice.operation_units"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].resources.arm_named_units"
+            }
+          ]
+        },
+        "joint16_named_ratio_audit_first": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "first measurement",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 0,
+          "value": 4.754390124230517,
+          "units": "dimensionless named-unit ratio",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle].invoice.operation_units"
+            },
+            {
+              "path": "s07/a01/results.json",
+              "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+              "locator": "arms[policy=audit_first].invoice.operation_units"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "comparisons[candidate_version=s07-complete-bundle-v3,control_policy=audit_first].arm_named_unit_ratio"
+            }
+          ],
+          "numerator_value": 2306193,
+          "denominator_value": 485066,
+          "denominator_measurement_utc": "2026-10-12T20:08:46.807687+00:00",
+          "denominator_observed_in_row": "s07_cp01",
+          "denominator_development_run": "a01",
+          "denominator_status": "Retained actual control, not rerun in a03",
+          "comparability_note": "Named component ratio; complete costs retain unpriced terms."
+        },
+        "f01_demonstrated_cost_regions": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "event_id": "F01",
+          "measurement_status": "new assessment",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T21:15:17.034344+00:00",
+          "age_in_recurrences": 0,
+          "value": 0,
+          "units": "warranted complete-cost regions",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "assessment_limit": "Full pricing and fresh-domain confirmation remain open.",
+          "sources": [
+            {
+              "path": "s07/forecast_final.md",
+              "sha256": "3f7d08b520a52f640731cdab51ad5032791cc70f94003f8d689e46e834878f52",
+              "locator": "Final evidence assessment"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].demonstrated_ten_percent_full_cost_regions"
+            }
+          ]
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "variant_id": "transport_only",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s02_tail",
+          "value": 144,
+          "units": "warranted edit states",
+          "previous_comparable_row": "s02_tail",
+          "sources": [
+            {
+              "path": "s02/margin_repair01.json",
+              "sha256": "e88cac43e06d958f1d80ad8b3ef0fd77284533e353529b5afa8f68d947e80df0",
+              "locator": "units[mode=transport_only].warranted_states"
+            }
+          ],
+          "denominator": 272,
+          "coverage_percent": 52.94117647058823,
+          "absolute_delta": null,
+          "delta_units": "warranted edit states",
+          "coverage_delta_percentage_points": null,
+          "measurement_utc": "2026-10-11T23:12:23.271094+00:00",
+          "age_in_recurrences": 12,
+          "carried_in_row": "s07_cp01",
+          "carried_from_row": "s02_tail",
+          "last_actual_row": "s02_tail",
+          "reason": "No new acquisition on this retired duty in s07; latest actual retained as dated evidence."
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "variant_id": "broad_8_attempts",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s02_tail",
+          "value": 254,
+          "units": "warranted edit states",
+          "previous_comparable_row": "s02_tail",
+          "sources": [
+            {
+              "path": "s02/margin_repair01.json",
+              "sha256": "e88cac43e06d958f1d80ad8b3ef0fd77284533e353529b5afa8f68d947e80df0",
+              "locator": "units[mode=broad].warranted_states"
+            }
+          ],
+          "denominator": 272,
+          "coverage_percent": 93.38235294117646,
+          "comparability_note": "First actual measurement of this policy lane; 181 native calls, 156792300 ns new lifecycle cost, shared paid input separate.",
+          "measurement_utc": "2026-10-11T23:12:23.271094+00:00",
+          "age_in_recurrences": 12,
+          "carried_in_row": "s07_cp01",
+          "carried_from_row": "s02_tail",
+          "last_actual_row": "s02_tail",
+          "absolute_delta": null,
+          "reason": "No new acquisition on this retired duty in s07; latest actual retained as dated evidence."
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "variant_id": "targeted_8_attempts",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s02_tail",
+          "value": 258,
+          "units": "warranted edit states",
+          "previous_comparable_row": "s02_tail",
+          "sources": [
+            {
+              "path": "s02/margin_repair01.json",
+              "sha256": "e88cac43e06d958f1d80ad8b3ef0fd77284533e353529b5afa8f68d947e80df0",
+              "locator": "units[mode=targeted].warranted_states"
+            }
+          ],
+          "denominator": 272,
+          "coverage_percent": 94.8529411764706,
+          "comparability_note": "First actual measurement of this policy lane; 195 native calls, 171498200 ns new lifecycle cost, shared paid input separate.",
+          "measurement_utc": "2026-10-11T23:12:23.271094+00:00",
+          "age_in_recurrences": 12,
+          "carried_in_row": "s07_cp01",
+          "carried_from_row": "s02_tail",
+          "last_actual_row": "s02_tail",
+          "absolute_delta": null,
+          "reason": "No new acquisition on this retired duty in s07; latest actual retained as dated evidence."
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "native_requested_tolerance_rup",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s06_cp01",
+          "value": 80,
+          "units": "checked outputs",
+          "previous_comparable_row": "s06_cp01",
+          "sources": [
+            {
+              "path": "s06/rup_stream_results.json",
+              "sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+              "locator": "latest requested-tolerance arm.requests: count(status=checked_action)"
+            }
+          ],
+          "denominator": 80,
+          "coverage_percent": 100.0,
+          "absolute_delta": null,
+          "delta_units": "checked outputs",
+          "coverage_delta_percentage_points": null,
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends.",
+          "measurement_utc": "2026-10-12T17:03:32.626949+00:00",
+          "age_in_recurrences": 1,
+          "carried_in_row": "s07_cp01",
+          "carried_from_row": "s06_cp01",
+          "last_actual_row": "s06_cp01",
+          "reason": "No new acquisition on this retired duty in s07; latest actual retained as dated evidence."
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "native_requested_tolerance_rup",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s06_cp01",
+          "value": 60,
+          "units": "requests closed without new logical acquisition",
+          "previous_comparable_row": "s06_cp01",
+          "sources": [
+            {
+              "path": "s06/rup_stream_results.json",
+              "sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+              "locator": "latest requested-tolerance arm.requests: sum(closed_from_cache)"
+            }
+          ],
+          "denominator": 80,
+          "coverage_percent": 75.0,
+          "absolute_delta": null,
+          "delta_units": "requests closed without new logical acquisition",
+          "coverage_delta_percentage_points": null,
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends.",
+          "measurement_utc": "2026-10-12T17:03:32.626949+00:00",
+          "age_in_recurrences": 1,
+          "carried_in_row": "s07_cp01",
+          "carried_from_row": "s06_cp01",
+          "last_actual_row": "s06_cp01",
+          "reason": "No new acquisition on this retired duty in s07; latest actual retained as dated evidence."
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "native_requested_tolerance_rup",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s06_cp01",
+          "value": 223,
+          "units": "supplied-weight action-cost units",
+          "previous_comparable_row": "s06_cp01",
+          "sources": [
+            {
+              "path": "s06/rup_stream_results.json",
+              "sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+              "locator": "latest requested-tolerance arm.requests: sum(action_cost)"
+            }
+          ],
+          "absolute_delta": null,
+          "delta_units": "supplied-weight action-cost units",
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends.",
+          "measurement_utc": "2026-10-12T17:03:32.626949+00:00",
+          "age_in_recurrences": 1,
+          "carried_in_row": "s07_cp01",
+          "carried_from_row": "s06_cp01",
+          "last_actual_row": "s06_cp01",
+          "reason": "No new acquisition on this retired duty in s07; latest actual retained as dated evidence."
+        },
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "measured",
+          "observed_in_row": "s07_cp01",
+          "age_in_recurrences": 0,
+          "value": 30,
+          "units": "families",
+          "previous_comparable_row": "s06_cp01",
+          "absolute_delta": 2,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "S29 and S30 first introductions"
+            },
+            {
+              "path": "s07/findings.md",
+              "locator": "S29 and S30 constructions"
+            }
+          ],
+          "interpretation": "Portfolio breadth only; not readiness."
+        },
+        "confirmation_forecast_percent": {
+          "assessment_id": "F01_s07_final",
+          "event_id": "F01",
+          "scope_id": "candidate_specific_confirmation_event",
+          "candidate_id": "S28",
+          "candidate_version": "S28-B1",
+          "verification_plan_version": "V1",
+          "observed_in_row": "s07_cp01",
+          "assessment_utc": "2026-10-12T21:15:17.034344+00:00",
+          "measurement_status": "new assessment",
+          "assessment_status": "assessed; remain in discovery",
+          "value": 30,
+          "central_percent": 30,
+          "probability_range_percent": [
+            20,
+            45
+          ],
+          "units": "subjective probability percent",
+          "previous_comparable_row": null,
+          "recurrence_absolute_delta": null,
+          "previous_comparable_assessment_id": "F01_s07_interim",
+          "change_since_previous_assessment_percentage_points": 0,
+          "range_endpoint_changes_percentage_points": [
+            0,
+            0
+          ],
+          "gap_to_80_central_percentage_points": 50,
+          "gap_to_90_central_percentage_points": 60,
+          "gap_to_80_range_percentage_points": [
+            35,
+            60
+          ],
+          "gap_to_90_range_percentage_points": [
+            45,
+            70
+          ],
+          "rationale": "Raw-trace checks support soundness, while unchanged purchases, remaining nonquotation cost and stronger ordinary alternatives prevent an upward revision. Separate scopes do not establish F01.",
+          "uncertainty": "Judgmental range, not a confidence interval; no relevant calibrated forecast track record documented.",
+          "sources": [
+            {
+              "path": "s07/forecast_final.md",
+              "sha256": "3f7d08b520a52f640731cdab51ad5032791cc70f94003f8d689e46e834878f52",
+              "locator": "Timestamped same-event forecast and rationale"
+            }
+          ],
+          "change_since_first_assessment_percentage_points": -5,
+          "range_endpoint_changes_since_first_percentage_points": [
+            -5,
+            -5
+          ],
+          "implementation_evidence": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "latest same-scope acquisitions"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "resource reconstruction"
+            },
+            {
+              "path": "s07/trace_check_results.json",
+              "sha256": "d59c612ea625542313dcd16e469e86fd98fd3274c1a5e5cdb839b08cb953e26e",
+              "locator": "independent raw-trace check"
+            }
+          ],
+          "sensitivity": {
+            "raise_forecast": "Matched material complete-cost gains across varied sources and a robust supported price region.",
+            "lower_forecast": "Same ordinary method with a higher bill, inability to alter purchases/nonquotation costs, or immaterial source assumptions."
+          },
+          "next_decision": "Test a prospectively declared matched purchase route addressing the measured deficit; redirect this implementation if it still has no supported cost region.",
+          "age_in_recurrences": 0,
+          "absolute_delta": null
+        }
+      }
     }
   ],
-  "previous_table_commit": "fcef141dba4ba2b162a26cbdda283481a746ea27",
+  "previous_table_commit": "e4700e17fc6fa4064b57fbc6ae616d9bdfdd10ba",
   "metric_policy": {
-    "columns": "One stable metric and policy lane per column; new scopes receive new metric IDs and columns, with N/A in earlier rows.",
-    "deltas": "Change since the latest previous comparable actual measurement, even if intervening rows are N/A. Use count/cost units and percentage points for coverage; retain adverse changes. First measurements have no invented improvement.",
-    "missing": "N/A means not introduced, not applicable, or no new measurement, as specified in the source row. It is not zero and does not imply an old measurement was rerun.",
-    "historical_numbers": "Existing metric_summary, metric_values and metric_sources retain the earlier one-off findings. They are not a common progress score or longitudinal delta series.",
-    "selection": "For the fixed 80-request requested-tolerance series, use the latest completed supported bridge in the recurrence, not the most favorable intermediate result. Preserve intermediate and exact-completion variants separately."
+    "authorization": "The author requires useful quantitative columns and a numerical promotion forecast at each recurrence; this overrides the older prospective N/A instruction, preserving history.",
+    "columns": "Keep several useful active metrics and Promotion forecast; add/replace/retire metrics with explicit definitions and scopes, retaining historical series.",
+    "deltas": "Use changes from the latest actual comparable measurement; first entries and carries have null deltas. Within-hour changes are not recurrence changes. Preserve adverse or zero actual changes.",
+    "missing": "Carry an unremeasured relevant value with original source/hash/UTC, observed_in_row, age_in_recurrences, carried_in_row and reason; never present it as a new run or fake zero change.",
+    "age_definition": "Count later rows in this recorded-boundary series, including historic checkpoints/tails/excluded attempts; not elapsed hours.",
+    "selection": "Use the latest completed supported implementation, not a more favorable intermediate version. Retained control records keep their own actual dates.",
+    "scopes": "Bind source, ordered duty, tolerance, initial evidence, menu, caps and tariff; an outer source/request hash alone is insufficient.",
+    "forecast": "Numerically reassess the same declared event every recurrence, with central estimate, subjective range, rationale, risks, same-event percentage-point changes and gaps to 80/90. A different event starts a new series. Never reconstruct older probabilities.",
+    "cost": "Keep named bills, action costs, acquisitions, host resources and unknown fees distinct. Zero demonstrated benefit regions means none established, not universal impossibility.",
+    "historical_numbers": "Earlier one-off findings remain scoped history. Family/test/file/time counts are not readiness measures."
   },
   "comparison_scopes": {
     "margin_edits_272_v1": {
@@ -2478,88 +3118,1425 @@
         "cache_closures": 60,
         "action_cost": 223
       }
+    },
+    "s28_b1_joint16_menu1_v1": {
+      "contract": {
+        "source_binding": {
+          "source_identity": "8ff4d4165568151a25a530b085c2c27cda9bd77408b1a552d4358008211a33df",
+          "source_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+          "request_signature_sha256": "f21f611e311f5e506ede47cc75de486ff6375e6ad89828e6c2c6716ff2c65684",
+          "initial_admission_hashes": {
+            "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+            "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+            "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+            "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+          }
+        },
+        "source_binding_sha256": "2ea4218036bd9f0550c15fa34462f3ce310f29e642f1621026561afd00bf3d9f",
+        "source_rows": 8,
+        "possible_modes": 6,
+        "ordered_requests": 16,
+        "internal_price": 48,
+        "internal_tolerance": 4,
+        "mean_price": 6,
+        "mean_tolerance": "1/2",
+        "initial_witnesses": 29,
+        "initial_trees": 18,
+        "evaluator_sha256": "1ec100e50c6ab11600d9074fa718b4136d8227192b112676de468979725a6b8a",
+        "evaluator": "Shared admitted tree/scalar anchors; optional paid dual/hull methods. Executed bundle uses tree/scalar_anchor.",
+        "purchase_menu": [
+          "source-bound coordinate audit",
+          "admitted complete finite branching call",
+          "persistent native IHS with supported proof bridge"
+        ],
+        "caps": {
+          "max_actions_per_request": 80,
+          "max_observations": 64,
+          "max_logical_purchases": 128,
+          "native": {
+            "max_rounds": 64,
+            "mip_seconds_per_call": 0.1,
+            "sat_conflicts_per_call": 10000,
+            "mip_nodes_per_call": 10000,
+            "proof_units": 1000000,
+            "adapter_units": 1000000
+          }
+        },
+        "bundle_audit_depth": 1,
+        "price_policy_slice": 1000,
+        "price_policy_meaning": "Conditional a/sigma selection parameter, not a measured external rate",
+        "full_cost": "U+a*A+rho*T+s*B+R; no duplicate billing or omitted cost assigned zero",
+        "current_common_named_units": 99694,
+        "historical_acquisition_named_units": 77646,
+        "tariff_bindings": {
+          "lattice_quotes.py": "480b72168c73f18c8d2914af05f25a3792b5d6654fa0612393cae61b2575b37d",
+          "row_margins.py": "01a57695be8ea30d70e34f7e121d4671d745284fc153bd4c08e16273327d1a24",
+          "compiled_quotes.py": "9ac7acb9344629d0d1179287bbc97bb6748c8ae854bc53a285647e3c83faccef",
+          "repair_interface.py": "1ec100e50c6ab11600d9074fa718b4136d8227192b112676de468979725a6b8a",
+          "contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+          "native_stream.py": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e",
+          "native_repair.py": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a"
+        },
+        "sources": [
+          {
+            "path": "s06/joint_source.json",
+            "sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+            "locator": "full source, requests and limits"
+          },
+          {
+            "path": "s07/a03/bundle_service.py",
+            "sha256": "b4e859642aa222e897b181b398da22b4ff3307fb3e9648a48e9431bccad5e88e",
+            "locator": "menu, actual controller caps and metering"
+          },
+          {
+            "path": "s07/a01/results.json",
+            "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+            "locator": "three actually acquired controls"
+          },
+          {
+            "path": "s07/a03/results.json",
+            "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+            "locator": "latest actual candidate"
+          }
+        ]
+      },
+      "contract_sha256": "2ce59edb6a1cf83aa145db6ef5401f90e085b81bfaa55a399eec1fe587d9bfe8",
+      "source_binding_sha256": "2ea4218036bd9f0550c15fa34462f3ce310f29e642f1621026561afd00bf3d9f",
+      "scope_kind": "Exposed finite-cohort development; not fresh F01 validation",
+      "implementation_versions": [
+        "s07-complete-bundle-v1",
+        "s07-complete-bundle-v2",
+        "s07-complete-bundle-v3"
+      ],
+      "comparability": "Versioned implementation development within the declared outer duty/menu/caps/tariff; a02/a03 reuse actual a01 controls. Multi-call reserve changes implementation, recorded by version.",
+      "derived_report": {
+        "path": "s07/progress_results.json",
+        "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+        "locator": "arms and comparisons"
+      },
+      "cost_condition": {
+        "coefficients": {
+          "constant_named_units": 18873676,
+          "audit_price_a": 14,
+          "cpu_rate_per_ns_rho": 3987251184,
+          "recorded_byte_retention_rate_s": 652732,
+          "candidate_unpriced_remainder": 10,
+          "control_unpriced_remainder": -9,
+          "known_additional_payload_bytes": 3961770
+        },
+        "unmeasured_payload_coefficients": {},
+        "inequality": "constant + a*A_coefficient + rho*T_coefficient + s*(B_coefficient + known_additional_payload_bytes + sum(unmeasured_payload_coefficient*payload_bytes)) + 10*R_candidate - 9*R_control <= 0",
+        "notes": "U includes history and current admission once per standalone full horizon. T and B are recorded components or narrowly source-proven absent objects. Older missing Q payloads remain explicit unknowns unless the recorded provenance proves absence; R retains all other missing components including host/native memory. Rates must avoid duplicate billing. This inequality is not an established economic saving."
+      }
+    },
+    "joint16_robust_witness_menu2_v1": {
+      "contract": {
+        "source_binding": {
+          "source_identity": "8ff4d4165568151a25a530b085c2c27cda9bd77408b1a552d4358008211a33df",
+          "source_sha256": "59714c7fc872a06c4df23049d6ea79e3179b4562d50d4c4c7658315f6ad078a0",
+          "request_signature_sha256": "f21f611e311f5e506ede47cc75de486ff6375e6ad89828e6c2c6716ff2c65684",
+          "initial_admission_hashes": {
+            "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+            "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+            "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+            "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+          }
+        },
+        "source_binding_sha256": "2ea4218036bd9f0550c15fa34462f3ce310f29e642f1621026561afd00bf3d9f",
+        "purchase_menu": [
+          "coordinate audit",
+          "complete branching call",
+          "persistent robust-witness MIP proposal with exact source checking"
+        ],
+        "policies": [
+          "witness_before_audit",
+          "audit_before_witness"
+        ],
+        "native_proposal_caps": {
+          "seconds_per_call": "1/10",
+          "nodes_per_call": 1000
+        },
+        "source_limits": {
+          "max_actions_per_request": 80,
+          "max_observations": 64,
+          "max_logical_purchases": 128,
+          "native": {
+            "max_rounds": 64,
+            "mip_seconds_per_call": 0.1,
+            "sat_conflicts_per_call": 10000,
+            "mip_nodes_per_call": 10000,
+            "proof_units": 1000000,
+            "adapter_units": 1000000
+          }
+        },
+        "tariff": "Actual setup/proposal/API/check/complete/audit units plus U+a*A+rho*T+s*B+R; host/native memory and other unpriced fees retained.",
+        "controller_sha256": "36779318459154fdd96025103c548cefa97feb7b000774c5b0056ffea8972c6e",
+        "dependencies": {
+          "bundle_service.py": "b4e859642aa222e897b181b398da22b4ff3307fb3e9648a48e9431bccad5e88e",
+          "robust_witness.py": "91e774218d0261d47d58a5e4d505c318d97f11f81aa25e6df873805420208dfa",
+          "repair_interface.py": "1ec100e50c6ab11600d9074fa718b4136d8227192b112676de468979725a6b8a",
+          "native_stream.py": "e3f103c36cad9d9298c24176f6310e4af9b360c4a98213b87cd106456d51379e"
+        }
+      },
+      "contract_sha256": "63beae8bc8f46fc1b50a70ef4c54d348a944b8c2843781893fdf142749449666",
+      "sources": [
+        {
+          "path": "s07/witness_service_results.json",
+          "sha256": "48693dfafd45f12ba833759baafaf507b5f5535891e3fd7dd660eeddab68e2bb",
+          "locator": "both actual schedules"
+        },
+        {
+          "path": "s07/witness_check_results.json",
+          "sha256": "bc75beb5009b3452673b6f076ba51188f6b73decbd735d39da2cbe28f3190481",
+          "locator": "receipt-only reconstruction"
+        }
+      ],
+      "relationship_to_f01": "Different menu; not a matched 14-to-8 complete-call improvement over a03.",
+      "timing_limit": "Asymmetric repeated serialization of previous arms confounds whole-arm speed comparisons."
+    },
+    "s29_affine_exactly_one_v1": {
+      "candidate_id": "S29",
+      "source_identity": "90c2c914ecac0b935f47387dcfc138bf18189e92679355388f19c45c61a32bea",
+      "contract": {
+        "cohort_size": 1,
+        "possible_cost_modes": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "hidden_modes": [
+          1
+        ],
+        "logical_structure_id": "7c54128681e0287b64c02b7562a949fd91494b425ea7db4fe9c86cffeb30a68b",
+        "interpretation": "Fixed synthetic source; no mode law, observations or learned population guarantee",
+        "source_identity": "90c2c914ecac0b935f47387dcfc138bf18189e92679355388f19c45c61a32bea"
+      },
+      "logical_source_identity": "c7df8a9a5bc4c383a3643236e28b97a17645098b6e94d1f78136b3653e739ee7",
+      "purchase_menu": "One admitted complete point-proof call; no audits/native/LP calls",
+      "caps_and_tariff": "Admitted finite complete-call quotation, source/code admission and actual operation invoice; host/storage remainder explicit.",
+      "implementation_sha256": "7125114f72063cc9706500555783958e31ec113a4f466af162014a906ddab673",
+      "dependencies": {
+        "contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+        "contract_guard.py": "5babe0a530fb33b97eb6af860c6da638a70f1d63f514d66c05cb1f55efefef5a",
+        "source_anchor.py": "b8f42879ee99ce99c849fb4409e3b9c47c482f1430345ae7259ccb5c25a730bc",
+        "anchor_quotes.py": "afa35592c6d800f78a60853a71f59d0a2e28ac279aeaf5b71a1026149de0a97a",
+        "row_margins.py": "01a57695be8ea30d70e34f7e121d4671d745284fc153bd4c08e16273327d1a24"
+      },
+      "sources": [
+        {
+          "path": "s07/s29_affine_results.json",
+          "sha256": "a4c4d5157776614efb37ddf8275c2a8f8b5ba24312046373668d56c780c980c1",
+          "locator": "source, actual call and same-tree comparison"
+        }
+      ],
+      "relationship_to_f01": "Separate source geometry; ordinary full-tree bound ties, no established economic win."
+    },
+    "s30_common_cdf64_draw128_v2": {
+      "candidate_id": "S30",
+      "source_identity": "aa2bd1ac60ea57936d87c0a4d644f7cbe42ddb91d93c81a5534dc22224b1c05e",
+      "public_contract": {
+        "version": "s07-common-cdf-repair-v2",
+        "draws": [
+          2,
+          34,
+          3,
+          62,
+          18,
+          12,
+          52,
+          1,
+          31,
+          37,
+          13,
+          12,
+          40,
+          24,
+          29,
+          29,
+          1,
+          12,
+          34,
+          10,
+          48,
+          1,
+          49,
+          36,
+          14,
+          7,
+          22,
+          31,
+          33,
+          9,
+          56,
+          3,
+          39,
+          1,
+          50,
+          33,
+          54,
+          39,
+          18,
+          57,
+          29,
+          40,
+          20,
+          14,
+          62,
+          5,
+          57,
+          32,
+          36,
+          30,
+          58,
+          14,
+          10,
+          19,
+          0,
+          20,
+          10,
+          20,
+          28,
+          56,
+          22,
+          17,
+          50,
+          38,
+          15,
+          58,
+          0,
+          31,
+          36,
+          20,
+          60,
+          26,
+          49,
+          25,
+          58,
+          12,
+          20,
+          36,
+          47,
+          35,
+          11,
+          60,
+          29,
+          9,
+          16,
+          49,
+          55,
+          16,
+          31,
+          55,
+          49,
+          50,
+          8,
+          44,
+          6,
+          22,
+          36,
+          21,
+          37,
+          52,
+          63,
+          53,
+          3,
+          15,
+          35,
+          45,
+          60,
+          14,
+          58,
+          48,
+          23,
+          27,
+          35,
+          59,
+          9,
+          18,
+          41,
+          29,
+          41,
+          13,
+          51,
+          31,
+          18,
+          23,
+          45,
+          12,
+          52,
+          20
+        ],
+        "population_size": 64,
+        "support_max": 3,
+        "modes": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "sample_size": 128,
+        "radius": "1/8",
+        "failure_probability": "1/20",
+        "seed": 261012730,
+        "law": "Draw all 128 identities iid uniformly with replacement from the fixed 64-row source before any inspections. No source probabilities or H values are supplied to controllers.",
+        "price": 6,
+        "tolerance": 2,
+        "initial_checked_models": [
+          1,
+          2
+        ],
+        "logical_source": {
+          "row": "s30-two-repair-common-law",
+          "variables": 2,
+          "hard": [
+            [
+              1,
+              2
+            ]
+          ],
+          "soft": [
+            {
+              "weight": 1,
+              "clause": [
+                -1
+              ]
+            },
+            {
+              "weight": 1,
+              "clause": [
+                -2
+              ]
+            }
+          ],
+          "public_incumbent": 3,
+          "objective_max": 2,
+          "identity": "4aa048b13aa430134822cfae1bdd0dbd2f03d157e5065dc549f5f988d5191b25"
+        },
+        "policies": [
+          "relevant_cut",
+          "full_latent",
+          "direct_contrast"
+        ],
+        "policy_contract": "Fixed first-appearance row order. relevant_cut/direct_contrast inspect cut1 only; full_latent completes ordinary binary identification of each inspected H before reevaluating the gate. Each arm buys its own common q=(1,1),b=0 proof.",
+        "source_identity": "aa2bd1ac60ea57936d87c0a4d644f7cbe42ddb91d93c81a5534dc22224b1c05e"
+      },
+      "purchase_menu": "Own q=(1,1), budget-zero complete proof and threshold cell audits for each relevant_cut/full_latent/direct_contrast policy",
+      "caps_and_tariff": "128 fixed iid draws from 64 rows; H in 0..3; radius 1/8 and delta 1/20; admitted complete call. U+a*A+d*128+rho*T+s*B+R retains full costs.",
+      "implementation_sha256": "6c5675a5413e1a0aa723716730343f8b64fde3cb41471ec3b570cc64869114d4",
+      "dependencies": {
+        "cdf_sweep.py": "dbdb251523b002ec74d69bfba66297b56a457bbfe9fc4f237de298a45eb66029",
+        "joint_repair.py": "7e1a96f4a05107174554acc701ae43026528d6041e570500d840fb1b76060384",
+        "contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482"
+      },
+      "sources": [
+        {
+          "path": "s07/population_v2_results.json",
+          "sha256": "8772d38dfb68c1d7026fd67bf75d992733b470514d41d2acfe31e1ded313fa77",
+          "locator": "source and all arms"
+        },
+        {
+          "path": "s07/population_check_results.json",
+          "sha256": "d48d5cbf563043e8963ffa1d9d84d058348f319573b959fc91d27bb862fc0fe2",
+          "locator": "raw-proof/CDF reconstruction"
+        }
+      ],
+      "relationship_to_f01": "Different population target/law; direct contrast ties. No F01 audit reduction or changed forecast event."
     }
   },
   "current_readiness_assessment": {
     "prepared_by": "ChatGPT (GPT-6 Astra Pro)",
-    "assessment_utc": "2026-10-12T19:20:46.656696+00:00",
-    "basis_checkpoint": "s06/cp01.md",
-    "classification": "new administrative assessment of the existing research state; not a historical forecast or new recurrence",
-    "research_credit_ns": 0,
-    "candidate_direction": [
-      "S26",
-      "S27",
-      "S28"
+    "assessment_utc": "2026-10-12T21:15:17.034344+00:00",
+    "basis_checkpoint": "s07/cp01.md",
+    "event_id": "F01",
+    "candidate_id": "S28",
+    "candidate_version": "S28-B1",
+    "verification_plan_version": "V1",
+    "confirmation_forecast_percent": 30,
+    "probability_range_percent": [
+      20,
+      45
     ],
-    "confirmation_forecast_percent": null,
-    "forecast_status": "unassessed; a specified material-positive event and candidate-specific plan are still needed",
-    "promotion_status": "remain in discovery",
-    "evidence_elements": [
+    "forecast_status": "assessed",
+    "promotion_status": "remain in discovery; do not promote",
+    "gap_to_80_central_percentage_points": 50,
+    "gap_to_90_central_percentage_points": 60,
+    "central_change_since_interim_percentage_points": 0,
+    "central_change_since_first_percentage_points": -5,
+    "principal_blocker": "No >=10% complete-cost region established; a03 has the same purchases as audit-first, a 4.7544x named bill, and a 168618.6-unit nonquotation deficit even after hypothetical removal of all measured quote work.",
+    "sources": [
       {
-        "element": "candidate/version, material claim, domain, threshold and exact verification event",
-        "status": "open",
-        "sources": [
-          "s06/cp01.md",
-          "P3_SEARCH_01.md"
-        ]
+        "path": "s07/forecast_final.md",
+        "sha256": "3f7d08b520a52f640731cdab51ad5032791cc70f94003f8d689e46e834878f52",
+        "locator": "Final reassessment"
       },
       {
-        "element": "reconstructable mechanism",
-        "status": "available",
-        "sources": [
-          "s06/native_findings.md",
-          "s06/source_anchor.md"
-        ]
+        "path": "s07/verification_review.md",
+        "sha256": "1120dd647fb5e2663374ae7da5d041c6ff172c917b72f4ce3b083a5ef3852f57",
+        "locator": "Complete-cost threshold"
+      }
+    ]
+  },
+  "reporting_history": [
+    {
+      "schema": "c001_recurrence_progress_v2",
+      "prepared_date_utc": "2026-10-12",
+      "source_commit": "e35fdac5858023c97052d8ce6d04634f3c78312f",
+      "previous_table_commit": "fcef141dba4ba2b162a26cbdda283481a746ea27"
+    }
+  ],
+  "metric_policy_history": [
+    {
+      "columns": "One stable metric and policy lane per column; new scopes receive new metric IDs and columns, with N/A in earlier rows.",
+      "deltas": "Change since the latest previous comparable actual measurement, even if intervening rows are N/A. Use count/cost units and percentage points for coverage; retain adverse changes. First measurements have no invented improvement.",
+      "missing": "N/A means not introduced, not applicable, or no new measurement, as specified in the source row. It is not zero and does not imply an old measurement was rerun.",
+      "historical_numbers": "Existing metric_summary, metric_values and metric_sources retain the earlier one-off findings. They are not a common progress score or longitudinal delta series.",
+      "selection": "For the fixed 80-request requested-tolerance series, use the latest completed supported bridge in the recurrence, not the most favorable intermediate result. Preserve intermediate and exact-completion variants separately."
+    }
+  ],
+  "readiness_assessment_history": [
+    {
+      "prepared_by": "ChatGPT (GPT-6 Astra Pro)",
+      "assessment_utc": "2026-10-12T19:20:46.656696+00:00",
+      "basis_checkpoint": "s06/cp01.md",
+      "classification": "new administrative assessment of the existing research state; not a historical forecast or new recurrence",
+      "research_credit_ns": 0,
+      "candidate_direction": [
+        "S26",
+        "S27",
+        "S28"
+      ],
+      "confirmation_forecast_percent": null,
+      "forecast_status": "unassessed; a specified material-positive event and candidate-specific plan are still needed",
+      "promotion_status": "remain in discovery",
+      "evidence_elements": [
+        {
+          "element": "candidate/version, material claim, domain, threshold and exact verification event",
+          "status": "open",
+          "sources": [
+            "s06/cp01.md",
+            "P3_SEARCH_01.md"
+          ]
+        },
+        {
+          "element": "reconstructable mechanism",
+          "status": "available",
+          "sources": [
+            "s06/native_findings.md",
+            "s06/source_anchor.md"
+          ]
+        },
+        {
+          "element": "successful inexpensive developmental checks",
+          "status": "available",
+          "sources": [
+            "s06/native_findings.md",
+            "s06/rup_findings.md",
+            "s06/joint_findings.md"
+          ]
+        },
+        {
+          "element": "credible material benefit",
+          "status": "open",
+          "sources": [
+            "candidates.md",
+            "s06/joint_findings.md"
+          ]
+        },
+        {
+          "element": "strongest comparison and complete relevant cost contract",
+          "status": "partial",
+          "sources": [
+            "s06/native_findings.md",
+            "s06/joint_findings.md"
+          ]
+        },
+        {
+          "element": "explicit remaining risks and exposure",
+          "status": "available",
+          "sources": [
+            "s06/source_anchor_review.md",
+            "candidates.md"
+          ]
+        },
+        {
+          "element": "feasible candidate-specific rigorous confirmation plan",
+          "status": "open",
+          "sources": [
+            "s06/cp01.md",
+            "CONTINUE.md"
+          ]
+        }
+      ],
+      "evidence_tally": {
+        "available": 3,
+        "partial": 1,
+        "open": 3,
+        "total": 7
       },
-      {
-        "element": "successful inexpensive developmental checks",
-        "status": "available",
+      "tally_limit": "These unequal necessary conditions do not define a success probability, percent readiness or percent work remaining. This is a present-state evidence tally only; do not backfill it into past recurrences.",
+      "forecasting_track_record": "No relevant calibrated event-specific forecasting track record is documented in the discovery records."
+    }
+  ],
+  "metric_definition_history": [
+    {
+      "metric_id": "confirmation_forecast_percent",
+      "through_row": "s06_cp01",
+      "definition": {
+        "label": "Material-positive confirmation forecast",
+        "scope_id": "candidate_specific_confirmation_event",
+        "units": "subjective probability percent or justified percent range",
+        "direction": "higher probability of the same specified material-positive confirmation event",
+        "definition": "Probability that the specified candidate survives its planned rigorous verification and establishes the specified materially useful positive claim at its stated scope.",
+        "minimum_percent": 80,
+        "preferred_percent": 90,
+        "required_event_fields": [
+          "candidate_id",
+          "candidate_version",
+          "claim",
+          "intended_domain",
+          "materiality_threshold",
+          "comparison",
+          "complete_cost_scope",
+          "verification_plan_version"
+        ],
+        "reporting": "Give basis, principal risks, sensitivity and forecasting track record. Report change in percentage points only for the same event. A changed candidate or claim requires a new first forecast, not an apparent improvement.",
+        "unassessed": "Use N/A if no defensible event-specific estimate is recorded; N/A is not zero. Do not infer historical probabilities from elapsed time, code/test counts, favorable pilots or checklist completion.",
+        "range_rule": "A probability range extending below80% does not establish the minimum.",
         "sources": [
-          "s06/native_findings.md",
-          "s06/rup_findings.md",
-          "s06/joint_findings.md"
-        ]
-      },
-      {
-        "element": "credible material benefit",
-        "status": "open",
-        "sources": [
-          "candidates.md",
-          "s06/joint_findings.md"
-        ]
-      },
-      {
-        "element": "strongest comparison and complete relevant cost contract",
-        "status": "partial",
-        "sources": [
-          "s06/native_findings.md",
-          "s06/joint_findings.md"
-        ]
-      },
-      {
-        "element": "explicit remaining risks and exposure",
-        "status": "available",
-        "sources": [
-          "s06/source_anchor_review.md",
-          "candidates.md"
-        ]
-      },
-      {
-        "element": "feasible candidate-specific rigorous confirmation plan",
-        "status": "open",
-        "sources": [
-          "s06/cp01.md",
-          "CONTINUE.md"
+          {
+            "path": "P3_SEARCH_01.md",
+            "locator": "6. Promotion to rigorous confirmation"
+          },
+          {
+            "path": "../RESEARCH_PROTOCOL.md",
+            "locator": "Promotion/readiness requirements"
+          }
         ]
       }
-    ],
-    "evidence_tally": {
-      "available": 3,
-      "partial": 1,
-      "open": 3,
-      "total": 7
+    }
+  ],
+  "total_research_minutes": "497.4855761091166666666666666666666666667",
+  "program_research_ns": 29849134566547,
+  "phase_research_ns": 95017016608396,
+  "historical_preservation": {
+    "row_count": 17,
+    "through_row": "s06_cp01",
+    "canonical_rows_sha256": "38c8bd2da3c00fc97772c47d5a61136c3539302c6ec77bf22cd21558d1acac41",
+    "encoding": "UTF-8 JSON of rows[0:17], sort_keys=True, separators=(comma,colon)",
+    "previous_source_record_sha256": "21d7e44182412516e0ffa895c21726d820707fa023088f5e9892d70b1dae6901",
+    "policy": "All old row objects, values and historical probabilities remain unchanged."
+  },
+  "forecast_events": {
+    "F01": {
+      "event_id": "F01",
+      "candidate_id": "S28",
+      "candidate_version": "S28-B1",
+      "verification_plan_version": "V1",
+      "established_utc": "2026-10-12T20:03:17+00:00",
+      "claim": "Uniformly checked tolerance-valid outputs and >=10% complete acquisition/service cost saving against the strongest specified equal-interface warm conventional control on the fixed varied fresh domain.",
+      "intended_domain": {
+        "streams": 24,
+        "requests_per_stream": 16,
+        "planted_variables": 8,
+        "cohort_sizes": [
+          4,
+          8,
+          16
+        ],
+        "mode_counts": [
+          3,
+          6
+        ],
+        "replicates_per_cell": 4,
+        "cost_coordinates": 8,
+        "cost_coordinates_inclusive_range": [
+          0,
+          4
+        ],
+        "mean_replacement_price": 6,
+        "mean_tolerance": "1/2",
+        "exposed_joint16": "development only"
+      },
+      "materiality_threshold": {
+        "pooled_full_cost_saving_percent": 10,
+        "nonnegative_mean_saving_each_cell": true,
+        "audit_price_interval_endpoint_ratio_at_least": 2,
+        "analysis": "One-sided 95% lower paired, six-cell-stratified bootstrap bound exceeds 10%; all outputs checked, all streams retained, simultaneous price-region treatment."
+      },
+      "comparison": {
+        "controls": [
+          "audit-first",
+          "logic-first",
+          "strongest specified one-step cost-directed controller",
+          "persistent warm native IHS/MaxSAT with supported proof bridges",
+          "separately implemented ordinary robust finite AND/OR/Bellman planner where applicable"
+        ],
+        "fairness": "Same admitted evidence, interface, menu, tolerance and caps; own paid warm state and complete bill.",
+        "clarification": "An ordinary planner may choose identical acquisitions with a different actual planning bill; a byte-identical candidate copy is a duplicate arm, while equal ordinary methods/bills do not establish a 10% claim."
+      },
+      "complete_cost_scope": {
+        "expression": "U+a*A+c*T+s*B+other actual fees",
+        "includes": [
+          "historical acquisition over declared reuse horizon",
+          "current raw/code admission",
+          "quotation/compilation/selection",
+          "successful and unresolved native/proof work",
+          "checking",
+          "external audits/handling",
+          "serialization",
+          "host CPU",
+          "retained byte-time/native memory"
+        ],
+        "convention": "No duplicate billing and no omitted component priced at zero.",
+        "prospective_reference_region": {
+          "a_over_a0": [
+            "1/4",
+            4
+          ],
+          "c_over_c0": [
+            "1/2",
+            2
+          ],
+          "s_over_s0": [
+            "1/2",
+            2
+          ]
+        },
+        "remaining": "Positive reference rates and residual bounds remain to be fixed before fresh exposure; unbounded missing costs prevent a pass."
+      },
+      "verification_plan_status": "Prospective V1; exact generator/seeds, rates, caps, candidate/control dependency closures and analysis must be frozen before confirmation exposure. Three timing repeats do not create extra independent streams.",
+      "development_scope_id": "s28_b1_joint16_menu1_v1",
+      "event_change_rule": "New mechanism/domain, easier threshold or excluded comparator starts a new event; expanded witness/S29/S30 cannot silently replace F01.",
+      "sources": [
+        {
+          "path": "s07/forecast_design.md",
+          "sha256": "098c9d7694d41e198ec618831450261c1d8ba733779a72a26457219f8f1637ce",
+          "locator": "Complete F01 specification and V1"
+        },
+        {
+          "path": "s07/verification_review.md",
+          "sha256": "1120dd647fb5e2663374ae7da5d041c6ff172c917b72f4ce3b083a5ef3852f57",
+          "locator": "Comparator clarification and detailed preregistration obligations"
+        }
+      ]
+    }
+  },
+  "forecast_assessments": [
+    {
+      "assessment_id": "F01_s07_start",
+      "event_id": "F01",
+      "scope_id": "candidate_specific_confirmation_event",
+      "candidate_id": "S28",
+      "candidate_version": "S28-B1",
+      "verification_plan_version": "V1",
+      "observed_in_row": "s07_cp01",
+      "assessment_utc": "2026-10-12T20:03:17+00:00",
+      "measurement_status": "new assessment",
+      "assessment_status": "assessed; remain in discovery",
+      "value": 35,
+      "central_percent": 35,
+      "probability_range_percent": [
+        25,
+        50
+      ],
+      "units": "subjective probability percent",
+      "previous_comparable_row": null,
+      "recurrence_absolute_delta": null,
+      "previous_comparable_assessment_id": null,
+      "change_since_previous_assessment_percentage_points": null,
+      "range_endpoint_changes_percentage_points": null,
+      "gap_to_80_central_percentage_points": 45,
+      "gap_to_90_central_percentage_points": 55,
+      "gap_to_80_range_percentage_points": [
+        30,
+        55
+      ],
+      "gap_to_90_range_percentage_points": [
+        40,
+        65
+      ],
+      "rationale": "Existing checked services and source anchors support a plausible mechanism; economic benefit and fresh-domain transfer remain uncertain.",
+      "uncertainty": "Judgmental range, not a confidence interval; no relevant calibrated forecast track record documented.",
+      "sources": [
+        {
+          "path": "s07/forecast_design.md",
+          "sha256": "098c9d7694d41e198ec618831450261c1d8ba733779a72a26457219f8f1637ce",
+          "locator": "Timestamped same-event forecast and rationale"
+        }
+      ]
     },
-    "tally_limit": "These unequal necessary conditions do not define a success probability, percent readiness or percent work remaining. This is a present-state evidence tally only; do not backfill it into past recurrences.",
-    "forecasting_track_record": "No relevant calibrated event-specific forecasting track record is documented in the discovery records."
-  }
+    {
+      "assessment_id": "F01_s07_interim",
+      "event_id": "F01",
+      "scope_id": "candidate_specific_confirmation_event",
+      "candidate_id": "S28",
+      "candidate_version": "S28-B1",
+      "verification_plan_version": "V1",
+      "observed_in_row": "s07_cp01",
+      "assessment_utc": "2026-10-12T20:34:42+00:00",
+      "measurement_status": "new assessment",
+      "assessment_status": "assessed; remain in discovery",
+      "value": 30,
+      "central_percent": 30,
+      "probability_range_percent": [
+        20,
+        45
+      ],
+      "units": "subjective probability percent",
+      "previous_comparable_row": null,
+      "recurrence_absolute_delta": null,
+      "previous_comparable_assessment_id": "F01_s07_start",
+      "change_since_previous_assessment_percentage_points": -5,
+      "range_endpoint_changes_percentage_points": [
+        -5,
+        -5
+      ],
+      "gap_to_80_central_percentage_points": 50,
+      "gap_to_90_central_percentage_points": 60,
+      "gap_to_80_range_percentage_points": [
+        35,
+        60
+      ],
+      "gap_to_90_range_percentage_points": [
+        45,
+        70
+      ],
+      "rationale": "Complete plans execute and quotation work improves, but purchases stay unchanged and overhead remains large.",
+      "uncertainty": "Judgmental range, not a confidence interval; no relevant calibrated forecast track record documented.",
+      "sources": [
+        {
+          "path": "s07/forecast_update.md",
+          "sha256": "76a2155e8745a2c807f8d3e30ef40c9530a26262c465349675daa961282cfca7",
+          "locator": "Timestamped same-event forecast and rationale"
+        }
+      ]
+    },
+    {
+      "assessment_id": "F01_s07_final",
+      "event_id": "F01",
+      "scope_id": "candidate_specific_confirmation_event",
+      "candidate_id": "S28",
+      "candidate_version": "S28-B1",
+      "verification_plan_version": "V1",
+      "observed_in_row": "s07_cp01",
+      "assessment_utc": "2026-10-12T21:15:17.034344+00:00",
+      "measurement_status": "new assessment",
+      "assessment_status": "assessed; remain in discovery",
+      "value": 30,
+      "central_percent": 30,
+      "probability_range_percent": [
+        20,
+        45
+      ],
+      "units": "subjective probability percent",
+      "previous_comparable_row": null,
+      "recurrence_absolute_delta": null,
+      "previous_comparable_assessment_id": "F01_s07_interim",
+      "change_since_previous_assessment_percentage_points": 0,
+      "range_endpoint_changes_percentage_points": [
+        0,
+        0
+      ],
+      "gap_to_80_central_percentage_points": 50,
+      "gap_to_90_central_percentage_points": 60,
+      "gap_to_80_range_percentage_points": [
+        35,
+        60
+      ],
+      "gap_to_90_range_percentage_points": [
+        45,
+        70
+      ],
+      "rationale": "Raw-trace checks support soundness, while unchanged purchases, remaining nonquotation cost and stronger ordinary alternatives prevent an upward revision. Separate scopes do not establish F01.",
+      "uncertainty": "Judgmental range, not a confidence interval; no relevant calibrated forecast track record documented.",
+      "sources": [
+        {
+          "path": "s07/forecast_final.md",
+          "sha256": "3f7d08b520a52f640731cdab51ad5032791cc70f94003f8d689e46e834878f52",
+          "locator": "Timestamped same-event forecast and rationale"
+        }
+      ],
+      "change_since_first_assessment_percentage_points": -5,
+      "range_endpoint_changes_since_first_percentage_points": [
+        -5,
+        -5
+      ],
+      "implementation_evidence": [
+        {
+          "path": "s07/a03/results.json",
+          "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+          "locator": "latest same-scope acquisitions"
+        },
+        {
+          "path": "s07/progress_results.json",
+          "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+          "locator": "resource reconstruction"
+        },
+        {
+          "path": "s07/trace_check_results.json",
+          "sha256": "d59c612ea625542313dcd16e469e86fd98fd3274c1a5e5cdb839b08cb953e26e",
+          "locator": "independent raw-trace check"
+        }
+      ],
+      "sensitivity": {
+        "raise_forecast": "Matched material complete-cost gains across varied sources and a robust supported price region.",
+        "lower_forecast": "Same ordinary method with a higher bill, inability to alter purchases/nonquotation costs, or immaterial source assumptions."
+      },
+      "next_decision": "Test a prospectively declared matched purchase route addressing the measured deficit; redirect this implementation if it still has no supported cost region."
+    }
+  ],
+  "current_forecast": {
+    "assessment_id": "F01_s07_final",
+    "event_id": "F01",
+    "scope_id": "candidate_specific_confirmation_event",
+    "candidate_id": "S28",
+    "candidate_version": "S28-B1",
+    "verification_plan_version": "V1",
+    "observed_in_row": "s07_cp01",
+    "assessment_utc": "2026-10-12T21:15:17.034344+00:00",
+    "measurement_status": "new assessment",
+    "assessment_status": "assessed; remain in discovery",
+    "value": 30,
+    "central_percent": 30,
+    "probability_range_percent": [
+      20,
+      45
+    ],
+    "units": "subjective probability percent",
+    "previous_comparable_row": null,
+    "recurrence_absolute_delta": null,
+    "previous_comparable_assessment_id": "F01_s07_interim",
+    "change_since_previous_assessment_percentage_points": 0,
+    "range_endpoint_changes_percentage_points": [
+      0,
+      0
+    ],
+    "gap_to_80_central_percentage_points": 50,
+    "gap_to_90_central_percentage_points": 60,
+    "gap_to_80_range_percentage_points": [
+      35,
+      60
+    ],
+    "gap_to_90_range_percentage_points": [
+      45,
+      70
+    ],
+    "rationale": "Raw-trace checks support soundness, while unchanged purchases, remaining nonquotation cost and stronger ordinary alternatives prevent an upward revision. Separate scopes do not establish F01.",
+    "uncertainty": "Judgmental range, not a confidence interval; no relevant calibrated forecast track record documented.",
+    "sources": [
+      {
+        "path": "s07/forecast_final.md",
+        "sha256": "3f7d08b520a52f640731cdab51ad5032791cc70f94003f8d689e46e834878f52",
+        "locator": "Timestamped same-event forecast and rationale"
+      }
+    ],
+    "change_since_first_assessment_percentage_points": -5,
+    "range_endpoint_changes_since_first_percentage_points": [
+      -5,
+      -5
+    ],
+    "implementation_evidence": [
+      {
+        "path": "s07/a03/results.json",
+        "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+        "locator": "latest same-scope acquisitions"
+      },
+      {
+        "path": "s07/progress_results.json",
+        "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+        "locator": "resource reconstruction"
+      },
+      {
+        "path": "s07/trace_check_results.json",
+        "sha256": "d59c612ea625542313dcd16e469e86fd98fd3274c1a5e5cdb839b08cb953e26e",
+        "locator": "independent raw-trace check"
+      }
+    ],
+    "sensitivity": {
+      "raise_forecast": "Matched material complete-cost gains across varied sources and a robust supported price region.",
+      "lower_forecast": "Same ordinary method with a higher bill, inability to alter purchases/nonquotation costs, or immaterial source assumptions."
+    },
+    "next_decision": "Test a prospectively declared matched purchase route addressing the measured deficit; redirect this implementation if it still has no supported cost region."
+  },
+  "active_scope_id": "s28_b1_joint16_menu1_v1",
+  "active_row_ids": [
+    "s07_cp01"
+  ],
+  "active_metric_ids": [
+    "joint16_checked_outputs",
+    "joint16_complete_plan_closures",
+    "joint16_audits",
+    "joint16_complete_calls",
+    "joint16_native_ihs_attempts",
+    "joint16_quotation_units",
+    "joint16_named_arm_units",
+    "joint16_named_ratio_audit_first",
+    "f01_demonstrated_cost_regions",
+    "confirmation_forecast_percent"
+  ],
+  "carried_legacy_metric_ids": [
+    "edit_transport_warrants",
+    "edit_broad_warrants",
+    "edit_targeted_warrants",
+    "repair_checked_outputs",
+    "repair_cache_closures",
+    "repair_action_cost"
+  ],
+  "development_measurements": [
+    {
+      "recurrence_row": "s07_cp01",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "development_run": "a01",
+      "variant_id": "s07-complete-bundle-v1",
+      "measurement_status": "actual acquisition within s07; extraction is read-only",
+      "measurement_utc": "2026-10-12T20:08:46.807687+00:00",
+      "sources": [
+        {
+          "path": "s07/a01/results.json",
+          "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+          "selector": "arms[policy=bundle]",
+          "started_utc": "2026-10-12T20:08:41.012026+00:00",
+          "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+        }
+      ],
+      "counts": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 14,
+        "complete_calls": 14,
+        "native_attempts": 0,
+        "logical_purchases": 14,
+        "unresolved": 0,
+        "executed_complete_bundles": 0,
+        "quoted_unclosed_states": 28
+      },
+      "complete_plan_request_coverage": {
+        "numerator": 0,
+        "denominator": 11,
+        "meaning": "Requests closed after executing a complete quoted plan / requests needing new work"
+      },
+      "quotation": {
+        "call_meter_delta_units": 2312300,
+        "initialization_units": 2112,
+        "initialization_basis": "known v1/v2 constructor's separately metered complete-call quotations",
+        "total_units": 2314412,
+        "arm_named_units_share_percent": 82.67971778154863,
+        "meaning": "Full per-plan meter deltas across all categories plus separately metered planner setup; included in the enclosing invoice, never added to it again",
+        "selectors": [
+          "sum(plans[].quote_units)",
+          "planner constructor meter delta or known v1/v2 initialization operation"
+        ]
+      },
+      "resources": {
+        "arm_named_units": 2799250,
+        "common_current_named_units": 99694,
+        "historical_acquisition_named_units": 77646,
+        "standalone_current_named_units": 2898944,
+        "full_horizon_named_units": 2976590,
+        "external_audits": 14,
+        "arm_process_ns": 1485255844,
+        "arm_wall_ns": 1146255959,
+        "recorded_current_process_ns": 1557464426,
+        "recorded_current_wall_ns": 1154461853,
+        "recorded_retained_bytes": 79445,
+        "recorded_common_storage_scope": "profile_bytes + planner_cache_bytes + cost_support.serialized_bytes",
+        "additional_quotation_payload_byte_components": null,
+        "additional_quotation_payload_bytes": null,
+        "all_reported_serialized_payload_bytes": null,
+        "quotation_payload_record": null,
+        "quotation_payload_measurement": {
+          "status": "unmeasured",
+          "basis": "No quotation_payload record and no exact reviewed implementation rule establishing absence"
+        },
+        "missing_payload_policy": "A missing quotation_payload record remains unmeasured unless an exact reviewed version/source hash and matching raw fields prove these specific objects absent. Source-backed structural absence is zero; all other missing payloads remain explicit symbolic terms, and other unmeasured host/native memory remains in R.",
+        "retained_bytes_components": {
+          "profile_bytes": 11197,
+          "planner_cache_bytes": 456,
+          "cost_support": {
+            "compiled_contrasts": 341,
+            "row_extrema": 1706,
+            "row_cache_hits": 40398,
+            "row_cache_misses": 1706,
+            "serialized_bytes": 67792
+          }
+        },
+        "storage_limit": "Serialized profile/planner/support records only; not complete live/native memory, archive storage or byte-time",
+        "time_limit": "Recorded current admission and arm intervals only; excludes unmeasured source I/O, historical CPU and unitemized host work"
+      },
+      "named_ratio_audit_first": 5.770864171061258,
+      "control_source": {
+        "path": "s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=audit_first]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "control_status": "Actual a01 control retained; not rerun in a02/a03",
+      "previous_development_run": null,
+      "delta_since_previous_development": null
+    },
+    {
+      "recurrence_row": "s07_cp01",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "development_run": "a02",
+      "variant_id": "s07-complete-bundle-v2",
+      "measurement_status": "actual acquisition within s07; extraction is read-only",
+      "measurement_utc": "2026-10-12T20:11:47.983429+00:00",
+      "sources": [
+        {
+          "path": "s07/a02/results.json",
+          "sha256": "5064970c09b46b68b4445e622a73ab80afe5db57904b19ce55995b91fb97c99c",
+          "selector": "arms[policy=bundle]",
+          "started_utc": "2026-10-12T20:11:46.773039+00:00",
+          "completed_utc": "2026-10-12T20:11:47.983429+00:00"
+        }
+      ],
+      "counts": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 14,
+        "complete_calls": 14,
+        "native_attempts": 0,
+        "logical_purchases": 14,
+        "unresolved": 0,
+        "executed_complete_bundles": 11,
+        "quoted_unclosed_states": 13
+      },
+      "complete_plan_request_coverage": {
+        "numerator": 11,
+        "denominator": 11,
+        "meaning": "Requests closed after executing a complete quoted plan / requests needing new work"
+      },
+      "quotation": {
+        "call_meter_delta_units": 2795599,
+        "initialization_units": 2112,
+        "initialization_basis": "known v1/v2 constructor's separately metered complete-call quotations",
+        "total_units": 2797711,
+        "arm_named_units_share_percent": 82.64978719469521,
+        "meaning": "Full per-plan meter deltas across all categories plus separately metered planner setup; included in the enclosing invoice, never added to it again",
+        "selectors": [
+          "sum(plans[].quote_units)",
+          "planner constructor meter delta or known v1/v2 initialization operation"
+        ]
+      },
+      "resources": {
+        "arm_named_units": 3385019,
+        "common_current_named_units": 99694,
+        "historical_acquisition_named_units": 77646,
+        "standalone_current_named_units": 3484713,
+        "full_horizon_named_units": 3562359,
+        "external_audits": 14,
+        "arm_process_ns": 1508110101,
+        "arm_wall_ns": 1192518133,
+        "recorded_current_process_ns": 1580095854,
+        "recorded_current_wall_ns": 1200463380,
+        "recorded_retained_bytes": 101123,
+        "recorded_common_storage_scope": "profile_bytes + planner_cache_bytes + cost_support.serialized_bytes",
+        "additional_quotation_payload_byte_components": null,
+        "additional_quotation_payload_bytes": null,
+        "all_reported_serialized_payload_bytes": null,
+        "quotation_payload_record": null,
+        "quotation_payload_measurement": {
+          "status": "unmeasured",
+          "basis": "No quotation_payload record and no exact reviewed implementation rule establishing absence"
+        },
+        "missing_payload_policy": "A missing quotation_payload record remains unmeasured unless an exact reviewed version/source hash and matching raw fields prove these specific objects absent. Source-backed structural absence is zero; all other missing payloads remain explicit symbolic terms, and other unmeasured host/native memory remains in R.",
+        "retained_bytes_components": {
+          "profile_bytes": 11197,
+          "planner_cache_bytes": 20865,
+          "cost_support": {
+            "compiled_contrasts": 341,
+            "row_extrema": 1744,
+            "row_cache_hits": 44376,
+            "row_cache_misses": 1744,
+            "serialized_bytes": 69061
+          }
+        },
+        "storage_limit": "Serialized profile/planner/support records only; not complete live/native memory, archive storage or byte-time",
+        "time_limit": "Recorded current admission and arm intervals only; excludes unmeasured source I/O, historical CPU and unitemized host work"
+      },
+      "named_ratio_audit_first": 6.978470970960653,
+      "control_source": {
+        "path": "s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=audit_first]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "control_status": "Actual a01 control retained; not rerun in a02/a03",
+      "previous_development_run": "a01",
+      "delta_since_previous_development": {
+        "complete_plan_closures": 11,
+        "quotation_units": 483299,
+        "quotation_percent": 20.88215062832375,
+        "named_arm_units": 585769,
+        "named_arm_percent": 20.925926587478784
+      }
+    },
+    {
+      "recurrence_row": "s07_cp01",
+      "scope_id": "s28_b1_joint16_menu1_v1",
+      "development_run": "a03",
+      "variant_id": "s07-complete-bundle-v3",
+      "measurement_status": "actual acquisition within s07; extraction is read-only",
+      "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+      "sources": [
+        {
+          "path": "s07/a03/results.json",
+          "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+          "selector": "arms[policy=bundle]",
+          "started_utc": "2026-10-12T20:22:23.718701+00:00",
+          "completed_utc": "2026-10-12T20:22:24.594133+00:00"
+        }
+      ],
+      "counts": {
+        "requests": 16,
+        "checked": 16,
+        "cache_hits": 5,
+        "cost_observations": 14,
+        "complete_calls": 14,
+        "native_attempts": 0,
+        "logical_purchases": 14,
+        "unresolved": 0,
+        "executed_complete_bundles": 11,
+        "quoted_unclosed_states": 13
+      },
+      "complete_plan_request_coverage": {
+        "numerator": 11,
+        "denominator": 11,
+        "meaning": "Requests closed after executing a complete quoted plan / requests needing new work"
+      },
+      "quotation": {
+        "call_meter_delta_units": 1716389,
+        "initialization_units": 2360,
+        "initialization_basis": "explicit constructor meter delta",
+        "total_units": 1718749,
+        "arm_named_units_share_percent": 74.52754387859126,
+        "meaning": "Full per-plan meter deltas across all categories plus separately metered planner setup; included in the enclosing invoice, never added to it again",
+        "selectors": [
+          "sum(plans[].quote_units)",
+          "planner constructor meter delta or known v1/v2 initialization operation"
+        ]
+      },
+      "resources": {
+        "arm_named_units": 2306193,
+        "common_current_named_units": 99694,
+        "historical_acquisition_named_units": 77646,
+        "standalone_current_named_units": 2405887,
+        "full_horizon_named_units": 2483533,
+        "external_audits": 14,
+        "arm_process_ns": 1158256054,
+        "arm_wall_ns": 843095108,
+        "recorded_current_process_ns": 1196213997,
+        "recorded_current_wall_ns": 849027475,
+        "recorded_retained_bytes": 129562,
+        "recorded_common_storage_scope": "profile_bytes + planner_cache_bytes + cost_support.serialized_bytes",
+        "additional_quotation_payload_byte_components": {
+          "prepared_quote_cache_bytes": 68462,
+          "enclosure_cache_bytes": 20456,
+          "margin_cache_bytes": 307259
+        },
+        "additional_quotation_payload_bytes": 396177,
+        "all_reported_serialized_payload_bytes": 525739,
+        "quotation_payload_record": {
+          "prepared_quote_cache_bytes": 68462,
+          "prepared_quote_stored_words": 18302,
+          "enclosure_cache_bytes": 20456,
+          "margin_cache_bytes": 307259,
+          "scope": "Serialized retained numerical payloads, not a measurement of peak allocator memory or byte-time"
+        },
+        "quotation_payload_measurement": {
+          "status": "recorded_payload",
+          "basis": "Explicit storage.quotation_payload record in the bound source run"
+        },
+        "missing_payload_policy": "A missing quotation_payload record remains unmeasured unless an exact reviewed version/source hash and matching raw fields prove these specific objects absent. Source-backed structural absence is zero; all other missing payloads remain explicit symbolic terms, and other unmeasured host/native memory remains in R.",
+        "retained_bytes_components": {
+          "profile_bytes": 11197,
+          "planner_cache_bytes": 49304,
+          "quotation_payload": {
+            "prepared_quote_cache_bytes": 68462,
+            "prepared_quote_stored_words": 18302,
+            "enclosure_cache_bytes": 20456,
+            "margin_cache_bytes": 307259,
+            "scope": "Serialized retained numerical payloads, not a measurement of peak allocator memory or byte-time"
+          },
+          "cost_support": {
+            "compiled_contrasts": 341,
+            "row_extrema": 1744,
+            "row_cache_hits": 44376,
+            "row_cache_misses": 1744,
+            "serialized_bytes": 69061
+          }
+        },
+        "storage_limit": "Serialized profile/planner/support records only; not complete live/native memory, archive storage or byte-time",
+        "time_limit": "Recorded current admission and arm intervals only; excludes unmeasured source I/O, historical CPU and unitemized host work"
+      },
+      "named_ratio_audit_first": 4.754390124230517,
+      "control_source": {
+        "path": "s07/a01/results.json",
+        "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+        "selector": "arms[policy=audit_first]",
+        "started_utc": "2026-10-12T20:08:41.012026+00:00",
+        "completed_utc": "2026-10-12T20:08:46.807687+00:00"
+      },
+      "control_status": "Actual a01 control retained; not rerun in a02/a03",
+      "previous_development_run": "a02",
+      "delta_since_previous_development": {
+        "complete_plan_closures": 0,
+        "quotation_units": -1078962,
+        "quotation_percent": -38.565884753643246,
+        "named_arm_units": -1078826,
+        "named_arm_percent": -31.87060397593041
+      }
+    }
+  ],
+  "separate_scope_measurements": [
+    {
+      "recurrence_row": "s07_cp01",
+      "scope_id": "joint16_robust_witness_menu2_v1",
+      "measurement_status": "new actual acquisition",
+      "measurement_utc": "2026-10-12T20:39:40.146313+00:00",
+      "age_in_recurrences": 0,
+      "policies": [
+        {
+          "policy": "witness_before_audit",
+          "counts": {
+            "requests": 16,
+            "checked": 16,
+            "cache_hits": 5,
+            "cost_observations": 14,
+            "complete_calls": 8,
+            "robust_witness_calls": 25,
+            "logical_purchases": 33,
+            "witness_calls_with_strict_bound_improvement": 6,
+            "native_unresolved": 0,
+            "unresolved": 0,
+            "largest_final_bound": 4
+          },
+          "named_arm_units": 1142250
+        },
+        {
+          "policy": "audit_before_witness",
+          "counts": {
+            "requests": 16,
+            "checked": 16,
+            "cache_hits": 5,
+            "cost_observations": 14,
+            "complete_calls": 8,
+            "robust_witness_calls": 11,
+            "logical_purchases": 19,
+            "witness_calls_with_strict_bound_improvement": 6,
+            "native_unresolved": 0,
+            "unresolved": 0,
+            "largest_final_bound": 4
+          },
+          "named_arm_units": 658633
+        }
+      ],
+      "sources": [
+        {
+          "path": "s07/witness_service_results.json",
+          "sha256": "48693dfafd45f12ba833759baafaf507b5f5535891e3fd7dd660eeddab68e2bb",
+          "locator": "both arms"
+        }
+      ]
+    },
+    {
+      "recurrence_row": "s07_cp01",
+      "scope_id": "s29_affine_exactly_one_v1",
+      "measurement_status": "new actual acquisition",
+      "measurement_utc": "2026-10-12T20:27:14.105798+00:00",
+      "age_in_recurrences": 0,
+      "complete_calls": 1,
+      "audits": 0,
+      "sources": [
+        {
+          "path": "s07/s29_affine_results.json",
+          "sha256": "a4c4d5157776614efb37ddf8275c2a8f8b5ba24312046373668d56c780c980c1",
+          "locator": "actual calls and same-tree comparison"
+        }
+      ]
+    },
+    {
+      "recurrence_row": "s07_cp01",
+      "scope_id": "s30_common_cdf64_draw128_v2",
+      "measurement_status": "new actual acquisition",
+      "measurement_utc": "2026-10-12T20:32:53.950211+00:00",
+      "age_in_recurrences": 0,
+      "policies": [
+        {
+          "policy": "relevant_cut",
+          "counts": {
+            "checked_outputs": 1,
+            "requested_outputs": 1,
+            "complete_logical_calls": 1,
+            "external_cut_audits": 29,
+            "fixed_iid_draw_occurrences": 128,
+            "distinct_audited_rows": 29,
+            "fully_identified_rows": 0,
+            "final_bound": "15/8"
+          },
+          "named_units": 70605
+        },
+        {
+          "policy": "full_latent",
+          "counts": {
+            "checked_outputs": 1,
+            "requested_outputs": 1,
+            "complete_logical_calls": 1,
+            "external_cut_audits": 58,
+            "fixed_iid_draw_occurrences": 128,
+            "distinct_audited_rows": 29,
+            "fully_identified_rows": 29,
+            "final_bound": "15/8"
+          },
+          "named_units": 122283
+        },
+        {
+          "policy": "direct_contrast",
+          "counts": {
+            "checked_outputs": 1,
+            "requested_outputs": 1,
+            "complete_logical_calls": 1,
+            "external_cut_audits": 29,
+            "fixed_iid_draw_occurrences": 128,
+            "distinct_audited_rows": 29,
+            "fully_identified_rows": 0,
+            "final_bound": "15/8"
+          },
+          "named_units": 70605
+        }
+      ],
+      "sources": [
+        {
+          "path": "s07/population_v2_results.json",
+          "sha256": "8772d38dfb68c1d7026fd67bf75d992733b470514d41d2acfe31e1ded313fa77",
+          "locator": "all three arms"
+        }
+      ]
+    }
+  ]
 }

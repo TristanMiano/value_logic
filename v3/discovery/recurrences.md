@@ -1,49 +1,139 @@
 # C001 recurrence progress
 
-Requested by **Tristan Miano**, October 12, 2026. Reconstructed and revised by
-**ChatGPT (GPT-6 Astra Pro)** from the saved checkpoints, clocks and results
-through main commit e35fdac5858023c97052d8ce6d04634f3c78312f.
-This documentation update adds **zero research credit**.
+Requested by **Tristan Miano**, October 12, 2026. Updated by
+**ChatGPT (GPT-6 Astra Pro)** from completed s07 evidence, preserving all
+17 earlier rows and historical probabilities. This reporting update adds
+**zero research credit**.
 
-**C001 remains OPEN at 437.566782320916666... research minutes (438 rounded).**
-The [exact source record](recurrences.json) binds every row to its clock boundary,
-metric definition, comparable predecessor and result sources. Historical clocks
-and scientific result files remain unchanged.
+**C001 remains OPEN at 497.485576109116666... research minutes (497 rounded).**
+The s07 increment is **59.9187937882 minutes (60 rounded)**. Each display is
+rounded independently from the [effective actuals](s07/effective_actuals.json);
+adding rounded rows would give a different cumulative display. The
+[exact source record](recurrences.json) holds all 18 recurrence rows, bindings,
+metric ages and forecast assessments. Final F01: **20–45%, central 30%**.
 
-## Reading the fixed metrics
+## Current recurrence dashboard: S28-B1 / F01
 
-- Every metric has its own column and a stable duty. **N/A** means it was not
-  introduced, did not apply, or was not measured in that round; the source record
-  distinguishes these cases. It does not mean zero or imply a repeated run.
-- **Δ** is the change from the most recent comparable actual measurement, even
-  across intervening N/A rows. **pp** means percentage points. First measurements
-  are marked **first**; an adverse change remains visible. Family counts show
-  their change in number of families, starting from zero before C001.
-- **Families** measures breadth, not readiness. The three **272-edit** columns
-  measure the fraction of the same edited states with a supported decision
-  certificate under three distinct acquisition policies. Their budgets differ,
-  so a newly introduced paid policy does not inherit the zero-new-acquisition transport policy's baseline.
-- The three **80-request** columns measure checked output coverage, closure from
-  retained evidence before new logical work, and summed returned action cost on
-  the same supplied-weight requests (replacement price 6, tolerance 1). Action
-  cost excludes acquisition/service costs. The table uses the latest completed
-  requested-tolerance bridge, including its one-closure decline in s06.
-- Older rows are recorded checkpoint increments, not invented one-hour tasks:
-  15 published boundaries, one credited s02 tail and one excluded s04 attempt.
-  Requested hourly rounds begin with s05. Original s01-s03 work is **Codex
-  (GPT-6)**; s04-s06 is **ChatGPT (GPT-6 Astra Pro)**.
-- Time is engaged **D+L+E only**. Round each increment and its exact cumulative
-  separately; displayed increments need not sum to the displayed total.
+| Recurrence | Research min | Cumulative min | Checked outputs | Complete-plan closures | Audits / complete / native-IHS calls | Quotation units | Named bill / audit-first | Demonstrated 10% full-cost regions | Promotion forecast |
+|---|---:|---:|---:|---:|---:|---:|---|---:|---|
+| [s07 hourly round](s07/cp01.md) | 60 | 497 | 16/16 | 11/11 needing work | 14 / 14 / 0 | 1,718,749 | 2,306,193 / 485,066 = **4.7544×** | **0** | **F01: 20–45%, central 30%**; 0 pp since interim, −5 pp since initial |
 
-The **promotion forecast** column is reserved for the probability that a
-specified candidate survives its planned rigorous verification and establishes
-the specified materially useful positive claim. The intended minimum is **80%**,
-with **90% preferred**. No prior C001 round recorded that probability, so its
-historical cells are **N/A — unassessed**, not 0%. See the
-[promotion rule](P3_SEARCH_01.md#6-promotion-to-rigorous-confirmation) and the
-current assessment below.
+These are **first recurrence measurements** in this active scope; recurrence
+deltas are unset, not invented changes from s06. The latest actual candidate
+is **a03/v3, measured October 12 at 20:22:24.594133 UTC**, age **0 recurrences**.
+Its control was measured in **a01 at 20:08:46.807687 UTC** and retained; a03 did
+not rerun it. The region count is an evidence assessment at
+**21:15:17.034344 UTC**. Sources: [derived report](s07/progress_results.json),
+[a03 acquisitions](s07/a03/results.json), [a01 controls](s07/a01/results.json),
+[raw-trace reconstruction](s07/trace_check_results.json).
 
-## Reconstructed rounds
+Five requests closed from initially retained evidence; the complete-plan
+denominator is the eleven needing new work. Audit and logical call types
+remain distinct. Quotation units include all per-plan meter deltas plus setup,
+already contained in the named bill. The ratio is a named-unit component,
+not an all-in economic ratio. **Zero demonstrated regions** means none
+established with complete costs and evidence; it does not prove every symbolic
+price assignment impossible. Unpriced host, native memory, storage and other
+fees remain in the [full-cost inequality](s07/verification_review.md).
+
+The scope **`s28_b1_joint16_menu1_v1`** binds the eight-row, six-mode source,
+ordered sixteen requests, mean price/tolerance **6/0.5**, initial raw evidence,
+shared interface, complete/native purchase menu, caps and tariff contract.
+The audit-price slice **1000** is a policy parameter, not a measured external
+price. [JSON scope bindings](recurrences.json) retain the whole contract;
+equality of an outer source/request hash alone is insufficient.
+
+### Actual development within this one recurrence
+
+| Actual version | Checked outputs | Complete-plan closures | Audits / complete calls | Quotation units, including setup | Named arm units | Named ratio to audit-first |
+|---|---:|---:|---:|---:|---:|---:|
+| [a01 / v1](s07/a01/results.json) | 16/16 | 0/11 | 14 / 14 | 2,314,412 | 2,799,250 | 5.7709× |
+| [a02 / v2](s07/a02/results.json) | 16/16 | 11/11 | 14 / 14 | 2,797,711; +20.88% | 3,385,019; +20.93% | 6.9785× |
+| [a03 / v3](s07/a03/results.json) | 16/16 | 11/11 | 14 / 14 | 1,718,749; **−38.57%** | 2,306,193; **−31.87%** | 4.7544× |
+
+Percentages compare consecutive development versions, not recurrence rows.
+Plans became executable and quotation work then became cheaper, while
+purchase counts stayed flat. These three versions occupy **one** recurrence.
+The latest completed version supplies the active row, even when an earlier
+version would make a metric look better. [Interpretation](s07/findings.md).
+
+## Current promotion assessment
+
+**F01 remains 20–45%, central 30%; continue discovery and do not promote.**
+The fixed event is that **S28-B1 passes V1 and establishes at least 10%
+complete-cost benefit** on its specified fresh, varied **24-stream** domain,
+against the strongest named equal-interface warm ordinary controls, throughout
+a qualifying audit-price interval at least **twofold** wide. All outputs must
+close with checked certificates under the common caps. Sources:
+[prospective event/V1](s07/forecast_design.md), [comparison clarification](s07/verification_review.md),
+[final assessment](s07/forecast_final.md).
+
+| Assessment within s07 | UTC, October 12 | Subjective range | Central estimate | Same-event central change |
+|---|---|---:|---:|---|
+| Prospective first | 20:03:17 | 25–50% | 35% | First assessment |
+| Interim | 20:34:42 | 20–45% | 30% | −5 percentage points |
+| Final | 21:15:17.034344 | **20–45%** | **30%** | **0 since interim; −5 since first** |
+
+This is a judgmental range, not a confidence interval; no relevant calibrated
+forecasting record is documented. Central gaps are **50 percentage points to
+the 80% minimum** and **60 to the preferred 90%**. This entire range remains below 80%, so it does not support promotion. No F01 probability is assigned to an older
+recurrence, and the within-hour −5 pp is not a delta from s06.
+
+Complete plans and independent checks support soundness. The main obstacle is
+material cost: fourteen audits and fourteen complete calls, equal to audit-first,
+a **4.7544×** named bill, and no established complete-cost region. Even removing
+all measured quotation work leaves **168,618.6 additional nonquotation named
+units** beyond the 10% full-horizon target. Expanded witness, geometry and CDF
+results have different contracts and stronger ordinary alternatives; they do
+not silently change F01. The unchanged final number is an explicit reassessment.
+
+Next, test a prospectively specified matched route that changes purchases or
+enough nonquotation cost to address the deficit. Price actual admission,
+planning, failed calls, checking and retention; give ordinary controls the
+same capabilities. If this implementation remains the same ordinary method
+with a higher bill and no supported region, record that result and redirect
+discovery. A different S29/S30 integration needs a new forecast event.
+
+## Carried evidence remains visible
+
+These old duties were **not remeasured in s07**. Their latest actual values
+remain useful; their new-measurement deltas are unset.
+
+| Carried duty | Latest actual values | Original measurement UTC | Age at s07 |
+|---|---|---|---|
+| [272 edited states](s02/margin_repair01.json) | Transport **144/272**; broad **254/272**; targeted **258/272** | October 11, 23:12:23.271094; s02 tail | **12 recorded boundaries**; carried, no new measurement |
+| [80 requested-tolerance repairs](s06/rup_stream_results.json) | Checked **80/80**; cache **60/80**; action-cost sum **223** | October 12, 17:03:32.626949; s06 | **1 recurrence**; carried, no new measurement |
+
+Age counts later rows in the recorded-boundary series, including old
+checkpoints, tails and the excluded attempt; it is not elapsed hours. JSON
+retains the original source/hash/date, `observed_in_row`, `age_in_recurrences`,
+`carried_in_row`, reason and `absolute_delta=null`. If s08 does not remeasure
+quotation work, carry **1,718,749 from s07**, age **1**, with the original a03
+date. Its promotion forecast still requires a fresh numerical reassessment.
+
+## Separate s07 scopes
+
+| Scope | Useful measurement | Comparison limit |
+|---|---|---|
+| [Expanded witness menu](s07/witness_review.md) | Both **16/16 outputs, 14 audits, 8 complete calls**; audit-before uses **11** MIP proposals versus **25**, named bill **658,633 versus 1,142,250** | Different menu from a03; output-harness timing is confounded. No matched F01 win. |
+| [S29 affine geometry](s07/s29_affine.md) | **1** actual complete proof, **0** audits; displayed repair bound closes at **0** | The same admitted full-tree ordinary bound also closes; no established economic win. |
+| [S29 quotient closed form](s07/quotient_closed_form.md) | Displayed n=128 case: **4,224 count states become 1 plan record**, observation tariff **128** unchanged | Conditional planning arithmetic, not a newly acquired service or paid geometry advantage. |
+| [S30 partial CDF](s07/population_findings.md) | Relevant/direct: **29 audits + 1 proof**, bound **15/8**, **70,605** named units; full latent: **58 audits**, **122,283** units | New population target/law; ordinary direct contrast ties. No fully identified latent values are needed in the relevant arm. |
+
+The portfolio reaches **30 families (+2: S29 and S30)**, measuring breadth
+only. Separate scopes do not replace the active fourteen-audit count with an
+unrelated measurement. The late signed-geometry helper record is outside the
+21:15:17 final F01 assessment and contributes no additional principal time.
+
+## Historical measured duties through s06
+
+All **17 original rows and their probability cells below remain unchanged**.
+Their N/A values mean not introduced, inapplicable or not measured at that
+boundary, with original reasons in JSON. New carry-forward semantics apply
+prospectively from s07. Historical deltas compare actual measurements of the
+same duty/policy. The former administrative prerequisite assessment is
+preserved unchanged in `readiness_assessment_history`; the numerical F01
+assessment above replaces it as the current view.
 
 | Recurrence / recorded boundary | Research min | Cumulative min | Families (Δ) | 272 edits: transport warrants | 272 edits: broad-repair warrants | 272 edits: targeted-repair warrants | 80 requests: checked outputs | 80 requests: cache closures | 80 requests: action-cost sum | Promotion forecast (80% minimum) | What changed |
 |---|---:|---:|---:|---|---|---|---|---|---|---|---|
@@ -65,7 +155,8 @@ current assessment below.
 | [s05 hourly round](s05/cp01.md) | 60 | 377 | 28 (+3) | N/A | N/A | N/A | 80/80 (100.00%); first | 61/80 (76.25%); first | 223; first | N/A — unassessed | Introduced paid graph and threshold calibration, then built an actual repair stream with reusable checked proofs. The v2 replay made zero new calls and established no robust total-cost advantage. |
 | [s06 hourly round](s06/cp01.md) | 60 | 438 | 28 (0) | N/A | N/A | N/A | 80/80 (100.00%); Δ0 (0 pp) | 60/80 (75.00%); Δ-1 (-1.25 pp) | 223; Δ0 | N/A — unassessed | Integrated persistent native IHS and checked proof bridges with cost-observation services. Derived scalar-anchor reuse and complete audit/proof quotations; the 21-bank result is replay, not new acquisition savings. |
 
-## What the comparable measurements show
+
+## What the historical comparable measurements show
 
 ### The same 272 edits, with policy costs kept separate
 
@@ -112,42 +203,6 @@ do not replace the requested-tolerance series. Sources:
 [s06 RUP stream](s06/rup_stream_results.json), and
 [cost and capability interpretation](s06/native_findings.md).
 
-## Current readiness for rigorous confirmation
-
-**Present assessment: remain in discovery; confirmation probability is still
-unassessed.** This is a new administrative review of the closed s06 research
-state by ChatGPT (GPT-6 Astra Pro), not a retrospective probability assignment.
-The research has a reconstructable mechanism and executed checked services.
-The records still leave the material-positive claim, complete relevant cost
-comparison and candidate-specific confirmation plan open. An estimate of
-eventual usefulness would answer a different question from the 80% promotion
-criterion. Sources: [current checkpoint](s06/cp01.md),
-[portfolio](candidates.md), [joint-service interpretation](s06/joint_findings.md).
-
-| Prerequisite evidence for the current repair direction | Assessment | Basis |
-|---|---|---|
-| Candidate/version, material claim, domain, threshold and exact verification event | Open | [The checkpoint still calls for this specification](s06/cp01.md). |
-| Reconstructable mechanism | Available | [Persistent service](s06/native_findings.md) and [scalar-anchor construction](s06/source_anchor.md). |
-| Successful inexpensive developmental checks | Available | [Native](s06/native_findings.md), [RUP](s06/rup_findings.md) and [joint-service](s06/joint_findings.md) executed records. |
-| Credible material benefit | Open | [No robust total-cost superiority or material-positive claim established](candidates.md). |
-| Strongest comparison and complete relevant cost contract | Partial | [Warm controls are implemented](s06/native_findings.md); [external prices and full cost comparison remain open](s06/joint_findings.md). |
-| Explicit remaining risks and exposure | Available | [Domain/concavity qualifications](s06/source_anchor_review.md) and [portfolio limitations](candidates.md). |
-| Feasible candidate-specific rigorous confirmation plan | Open | [Next work is further constructive integration](s06/cp01.md), before a specified confirmation event. |
-
-This is **3 of 7 evidence elements available, 1 partial and 3 open**. Their
-difficulty and importance differ: this tally is not 43% readiness, a success
-probability or a fraction of work remaining. It identifies what a future
-forecast must explain. No relevant calibrated forecasting track record is
-documented. The principal next uncertainty is whether the integrated service
-has a materially useful consequence under a complete, fair comparison.
-
-At each recurrence, revisit this assessment briefly. Once a sufficiently
-specified candidate/claim/verification event supports an estimate, record an
-evidence-backed subjective probability or justified range, its risks and
-sensitivity, and the gap to 80%/90%. Subsequent changes are percentage-point
-changes for that same event. A change of target starts a new forecast series;
-a range extending below 80% does not meet the intended minimum. Do not turn
-time spent, passing tests or this prerequisite tally into promotion odds.
 
 ## Other numerical findings retained from earlier rounds
 
@@ -176,6 +231,7 @@ preserves the original numeric fields and citations.
 | s05 hourly round | [80/80 repair outputs; tree/scalar arms made 19/23 actual calls; checked cache 8,037 bytes.](s05/cp01.md) |
 | s06 hourly round | [Joint service: 16/16 outputs per policy; first logic-first output after 6 audits + 2 logical purchases with 4 cost rows unobserved. Replay tightened 21/21 banks.](s06/joint_findings.md) |
 
+
 ## Reconstruction details that affect the accounting
 
 The s02 post-cp04 tail is **511,346,153,600 ns (8.522435893333... minutes)** of
@@ -197,8 +253,9 @@ Family IDs first introduced by row are recorded explicitly in
 [recurrences.json](recurrences.json), following [the portfolio](candidates.md):
 S01-S06, S07, S08, then S09-S25 across the eight s03 checkpoints, and S26-S28
 in s05. S23's initial derivation belongs to s03 cp07, with further execution in
-cp08. No family is promoted by inclusion in this table; P3-POS01 remains
-OUTSTANDING and readiness remains unassessed.
+cp08. S29 and S30 are first introduced in s07, bringing the portfolio to 30 families.
+No family is promoted by inclusion in this table; P3-POS01 remains OUTSTANDING.
+The current numerical F01 assessment is recorded above.
 
 The s05 cost comparison retains its [v2 setup/cost sensitivity](s05/repair_stream_v2_findings.md);
 19 versus 23 provider calls is an actual call-count result, not a robust total-cost
@@ -208,35 +265,40 @@ The source record carries these distinctions rather than adding unlike bills.
 
 ## Update at every recurrence round
 
-This is a standing requirement in [the discovery task](P3_SEARCH_01.md),
-[TODO_v3](../../TODO_v3.md) and [the portable handoff prompt](CONTINUE.md).
-At each subsequent requested round:
+This remains a standing requirement in [the discovery task](P3_SEARCH_01.md),
+[TODO_v3](../../TODO_v3.md) and [the handoff prompt](CONTINUE.md). The author's
+request for incremental numerical forecasts and useful measurements supersedes
+the earlier prospective N/A instruction.
 
-1. Reconcile the actual clock and add one row to this table and its exact source
-   record. Keep separately credited tails and excluded attempts explicit.
-   Derive whole-minute displays directly from integer nanoseconds using
-   (ns + 30000000000) // 60000000000. Cumulative values use exact accumulated
-   research, not the sum of rounded displays.
-2. Reuse the fixed metric columns and their duties. Enter N/A when a metric is
-   not introduced, inapplicable or not newly measured, recording the reason in
-   the source record. Never relabel an old result as a new measurement. If the
-   scientific work introduces a different useful metric or duty, give it its own
-   defined column and metric ID, with N/A in the earlier rows.
-3. For each actual comparable measurement, show its value and change from the
-   last comparable measurement (including zero or negative change), and identify
-   that previous row. Use natural count/cost units and percentage points for
-   coverage. Keep units, denominator, source assumptions, policy, spending caps,
-   evidence sources and backend changes explicit. First measurements have no
-   invented improvement. Do not rerun old workloads solely to fill the table.
-4. Revisit the promotion forecast and current prerequisite assessment. Use N/A
-   when no defensible event-specific probability is available; never invent
-   historical forecasts. Keep the candidate/version, material claim, comparison,
-   full cost scope and confirmation plan attached to any percentage or range.
-5. End each row with one to three sentences explaining what changed. Preserve
-   prior rows and corrections; distinguish new acquisitions from replay, and
-   returned action costs from full service costs. Link the table from the new
-   checkpoint and refresh the handoff with this update requirement.
+1. Reconcile closed effective clocks and append **one recurrence row** here
+   and in JSON. Derive whole-minute displays from integer nanoseconds using
+   `(ns + 30000000000) // 60000000000`; round increments and cumulative values
+   independently. Keep development iterations inside their actual recurrence.
+2. Keep **several useful quantitative metrics and Promotion forecast** active.
+   Add, replace or retire irrelevant metrics with declared definitions/scopes,
+   preserving their historical series. Family, test and elapsed-time counts
+   do not provide readiness percentages.
+3. Report actual comparable values and changes since the last actual
+   measurement, including adverse or zero changes. Bind source, requests,
+   tolerance, denominator, menu, caps, tariff and implementation. A different
+   source/menu gets a separate scope rather than an apparent improvement.
+4. Carry an unremeasured relevant metric's **latest actual value**, original
+   source/hash/date, observation row, age and reason. Mark it carried and leave
+   the new-measurement delta unset. Do not label a carry as a rerun or rerun
+   an old duty solely to populate a cell.
+5. **Reassess the promotion forecast numerically every recurrence**, even if
+   experimental metrics are carried. Preserve its event, range, central
+   judgment, rationale, risks, percentage-point change and gap to 80%/90%.
+   Unchanged or lower assessments are valid. A materially changed event starts
+   a new forecast series; historical probabilities are never reconstructed.
+6. Keep named bills, action costs, acquisitions and full service costs
+   separate. Record zero demonstrated qualifying regions when none is
+   established, with missing costs explicit; unpriced does not mean zero.
+7. Explain what changed, distinguish actual acquisitions from replay and
+   conditional constructions, and refresh checkpoint/handoff links. The next
+   constructive decision is in [the final assessment](s07/forecast_final.md)
+   and [findings](s07/findings.md).
 
-Maintaining this table creates no scientific run or research credit. The next
-research direction remains the constructive controller integration specified
-in [s06 cp01](s06/cp01.md).
+Maintaining this table creates no scientific run or research credit. Promotion
+requires its substantive claim, fair complete-cost comparison and forecast
+threshold, independently of the author-directed hourly handoff.

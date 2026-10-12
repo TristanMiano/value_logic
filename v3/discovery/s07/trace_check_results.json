@@ -1,0 +1,3163 @@
+{
+  "status": "passed",
+  "evidence": "DEVELOPMENT independent reconstruction",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T20:25:43.750412+00:00",
+  "checker_sha256": "0fad8e4b4ed4a39cb919f0c66c9ad072faa9ae0b671fa4b2195d22c15f7b3eb8",
+  "initial_raw_admission": {
+    "scope": "Actual raw check and exact binding of existing cache pointwise witness/tree projection; cell geometry unused",
+    "hashes": {
+      "maxsat_repair_results.json": "a4f6eb6f45d08db50b149182636bf62416ec5fedb3b6938587430769cffff326",
+      "regions_bundle.json": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+      "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+    },
+    "bytes": {
+      "maxsat_repair_results.json": 544143,
+      "regions_bundle.json": 8037,
+      "maxsat_repair.py": 21856,
+      "maxsat_reprice.py": 16431
+    },
+    "invoices": {
+      "admission_and_binding": {
+        "total": 84994,
+        "by_category": {
+          "raw_admission": 83037,
+          "cache_projection_binding": 1957
+        },
+        "operations": [
+          {
+            "category": "cache_projection_binding",
+            "operation": "negative_proof_id_and_fields",
+            "units": 1580
+          },
+          {
+            "category": "cache_projection_binding",
+            "operation": "witness_id_and_fields",
+            "units": 377
+          },
+          {
+            "category": "raw_admission",
+            "operation": "eight_byte_words",
+            "units": 73809
+          },
+          {
+            "category": "raw_admission",
+            "operation": "sha256_message_blocks",
+            "units": 9228
+          }
+        ]
+      },
+      "source_and_witness_check": {
+        "total": 4374,
+        "by_category": {
+          "source_admission": 1984,
+          "witness_check": 1445,
+          "witness_compile": 655,
+          "storage": 290
+        },
+        "operations": [
+          {
+            "category": "source_admission",
+            "operation": "checked_old_frontier_receipt",
+            "units": 128
+          },
+          {
+            "category": "source_admission",
+            "operation": "immutable_clause_and_weight_words",
+            "units": 1856
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 290
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 600
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 845
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 162
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 29
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 232
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 232
+          }
+        ]
+      },
+      "negative_proof_check_and_compile": {
+        "total": 3601,
+        "by_category": {
+          "check": 2282,
+          "tree_compile": 1154,
+          "storage": 165
+        },
+        "operations": [
+          {
+            "category": "check",
+            "operation": "negative_clause_header",
+            "units": 425
+          },
+          {
+            "category": "check",
+            "operation": "negative_literal",
+            "units": 731
+          },
+          {
+            "category": "check",
+            "operation": "negative_proof_node",
+            "units": 582
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_add",
+            "units": 272
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_index",
+            "units": 272
+          },
+          {
+            "category": "storage",
+            "operation": "compiled_tree_leaf_masks",
+            "units": 165
+          },
+          {
+            "category": "tree_compile",
+            "operation": "forced_clause_coefficient",
+            "units": 272
+          },
+          {
+            "category": "tree_compile",
+            "operation": "hard_leaf_omitted",
+            "units": 153
+          },
+          {
+            "category": "tree_compile",
+            "operation": "leaf_mask_deduplication",
+            "units": 147
+          },
+          {
+            "category": "tree_compile",
+            "operation": "proof_node_read",
+            "units": 582
+          }
+        ]
+      }
+    },
+    "total_declared_units": 92969,
+    "checked_witnesses": 29,
+    "checked_trees": 18,
+    "timing": {
+      "process_ns": 71694870,
+      "wall_ns": 7698404
+    }
+  },
+  "runs": [
+    {
+      "path": "v3/discovery/s07/a01/results.json",
+      "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+      "arms": [
+        {
+          "policy": "bundle",
+          "requests": 16,
+          "counts": {
+            "audit": 14,
+            "complete": 14,
+            "native": 0,
+            "SAT": 4,
+            "UNSAT": 10,
+            "UNRESOLVED": 0
+          },
+          "final_outputs_with_strict_certificate_slack": 7,
+          "largest_final_exact_regret": 2,
+          "reconstruction_invoice": {
+            "total": 322570,
+            "by_category": {
+              "cost_admission": 64,
+              "cache_admission": 370,
+              "interface_binding": 3329,
+              "interface_admission": 2052,
+              "witness_check": 1835,
+              "witness_compile": 815,
+              "storage": 620,
+              "contrast_lookup": 116419,
+              "contrast_compile": 37510,
+              "contrast_update": 5798,
+              "contrast_query": 92952,
+              "certificate": 3150,
+              "interface_compile": 5346,
+              "vertex_query": 32640,
+              "interface_query": 1056,
+              "source_anchor_compile": 9588,
+              "source_anchor_query": 5838,
+              "cost_check": 233,
+              "retention": 159,
+              "check": 1876,
+              "tree_compile": 920
+            },
+            "operations": [
+              {
+                "category": "cache_admission",
+                "operation": "trusted_projected_cache_fields",
+                "units": 370
+              },
+              {
+                "category": "certificate",
+                "operation": "action_proof_pair_minimum",
+                "units": 143
+              },
+              {
+                "category": "certificate",
+                "operation": "constraint_maximum_and_record",
+                "units": 3007
+              },
+              {
+                "category": "check",
+                "operation": "negative_clause_header",
+                "units": 353
+              },
+              {
+                "category": "check",
+                "operation": "negative_literal",
+                "units": 621
+              },
+              {
+                "category": "check",
+                "operation": "negative_proof_node",
+                "units": 464
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_add",
+                "units": 219
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_index",
+                "units": 219
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "coefficient_products_and_sum",
+                "units": 32736
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "compiled_mode_values_storage",
+                "units": 4774
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "coefficient_key_and_lookup",
+                "units": 11619
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "row_key_and_lookup",
+                "units": 104800
+              },
+              {
+                "category": "contrast_query",
+                "operation": "support_and_argmax_sum",
+                "units": 92952
+              },
+              {
+                "category": "contrast_update",
+                "operation": "row_maximum_and_record",
+                "units": 5798
+              },
+              {
+                "category": "cost_admission",
+                "operation": "mode_and_row_words",
+                "units": 64
+              },
+              {
+                "category": "cost_check",
+                "operation": "receipt_binding_and_mode_filter",
+                "units": 233
+              },
+              {
+                "category": "interface_admission",
+                "operation": "checked_candidate_binding_storage",
+                "units": 132
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_cost_source_and_mode_binding",
+                "units": 64
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_logical_source_and_feature_binding",
+                "units": 1856
+              },
+              {
+                "category": "interface_binding",
+                "operation": "projected_action_and_proof_fields",
+                "units": 1137
+              },
+              {
+                "category": "interface_binding",
+                "operation": "source_and_nonempty_mode_sets",
+                "units": 2192
+              },
+              {
+                "category": "interface_compile",
+                "operation": "admitted_tree_point_minimum",
+                "units": 2268
+              },
+              {
+                "category": "interface_compile",
+                "operation": "full_cohort_mode_scaling",
+                "units": 1200
+              },
+              {
+                "category": "interface_compile",
+                "operation": "same_source_point_lower_maximum",
+                "units": 378
+              },
+              {
+                "category": "interface_compile",
+                "operation": "scalar_anchor_storage",
+                "units": 1500
+              },
+              {
+                "category": "interface_query",
+                "operation": "method_comparison_and_source_bound_output",
+                "units": 640
+              },
+              {
+                "category": "interface_query",
+                "operation": "scalar_anchor_cache_lookup_and_read",
+                "units": 416
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_tree_reference",
+                "units": 143
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_witness_reference",
+                "units": 16
+              },
+              {
+                "category": "source_anchor_compile",
+                "operation": "mode_action_costs_and_lower_scaling",
+                "units": 9588
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "cohort_sums_and_clipped_regret",
+                "units": 1718
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "row_mode_contrast_extrema",
+                "units": 4120
+              },
+              {
+                "category": "storage",
+                "operation": "compiled_tree_leaf_masks",
+                "units": 113
+              },
+              {
+                "category": "storage",
+                "operation": "cost_receipt_and_remaining_mode_ids",
+                "units": 137
+              },
+              {
+                "category": "storage",
+                "operation": "retained_witness_and_violation_mask",
+                "units": 370
+              },
+              {
+                "category": "tree_compile",
+                "operation": "forced_clause_coefficient",
+                "units": 219
+              },
+              {
+                "category": "tree_compile",
+                "operation": "hard_leaf_omitted",
+                "units": 134
+              },
+              {
+                "category": "tree_compile",
+                "operation": "leaf_mask_deduplication",
+                "units": 103
+              },
+              {
+                "category": "tree_compile",
+                "operation": "proof_node_read",
+                "units": 464
+              },
+              {
+                "category": "vertex_query",
+                "operation": "mask_weight_products_and_sum",
+                "units": 32640
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_clause_header",
+                "units": 780
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_literal",
+                "units": 1055
+              },
+              {
+                "category": "witness_compile",
+                "operation": "mask_and_original_weight",
+                "units": 186
+              },
+              {
+                "category": "witness_compile",
+                "operation": "objective_violation_pass",
+                "units": 37
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_clause_header",
+                "units": 296
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_literal",
+                "units": 296
+              }
+            ]
+          },
+          "outputs": [
+            {
+              "request": 0,
+              "before": {
+                "bound": 24,
+                "exact_finite_regret": 16,
+                "slack": 8
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 1,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 10,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 2,
+              "before": {
+                "bound": 16,
+                "exact_finite_regret": 2,
+                "slack": 14
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 2,
+                "slack": 0
+              }
+            },
+            {
+              "request": 3,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 4,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 5,
+              "before": {
+                "bound": 6,
+                "exact_finite_regret": 2,
+                "slack": 4
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 2,
+                "slack": 0
+              }
+            },
+            {
+              "request": 6,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 7,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 8,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 9,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 10,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 10,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 0,
+                "slack": 2
+              }
+            },
+            {
+              "request": 11,
+              "before": {
+                "bound": 16,
+                "exact_finite_regret": 6,
+                "slack": 10
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 12,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 13,
+              "before": {
+                "bound": 6,
+                "exact_finite_regret": 0,
+                "slack": 6
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 0,
+                "slack": 2
+              }
+            },
+            {
+              "request": 14,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 15,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "audit_first",
+          "requests": 16,
+          "counts": {
+            "audit": 14,
+            "complete": 14,
+            "native": 0,
+            "SAT": 4,
+            "UNSAT": 10,
+            "UNRESOLVED": 0
+          },
+          "final_outputs_with_strict_certificate_slack": 7,
+          "largest_final_exact_regret": 2,
+          "reconstruction_invoice": {
+            "total": 322570,
+            "by_category": {
+              "cost_admission": 64,
+              "cache_admission": 370,
+              "interface_binding": 3329,
+              "interface_admission": 2052,
+              "witness_check": 1835,
+              "witness_compile": 815,
+              "storage": 620,
+              "contrast_lookup": 116419,
+              "contrast_compile": 37510,
+              "contrast_update": 5798,
+              "contrast_query": 92952,
+              "certificate": 3150,
+              "interface_compile": 5346,
+              "vertex_query": 32640,
+              "interface_query": 1056,
+              "source_anchor_compile": 9588,
+              "source_anchor_query": 5838,
+              "cost_check": 233,
+              "retention": 159,
+              "check": 1876,
+              "tree_compile": 920
+            },
+            "operations": [
+              {
+                "category": "cache_admission",
+                "operation": "trusted_projected_cache_fields",
+                "units": 370
+              },
+              {
+                "category": "certificate",
+                "operation": "action_proof_pair_minimum",
+                "units": 143
+              },
+              {
+                "category": "certificate",
+                "operation": "constraint_maximum_and_record",
+                "units": 3007
+              },
+              {
+                "category": "check",
+                "operation": "negative_clause_header",
+                "units": 353
+              },
+              {
+                "category": "check",
+                "operation": "negative_literal",
+                "units": 621
+              },
+              {
+                "category": "check",
+                "operation": "negative_proof_node",
+                "units": 464
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_add",
+                "units": 219
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_index",
+                "units": 219
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "coefficient_products_and_sum",
+                "units": 32736
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "compiled_mode_values_storage",
+                "units": 4774
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "coefficient_key_and_lookup",
+                "units": 11619
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "row_key_and_lookup",
+                "units": 104800
+              },
+              {
+                "category": "contrast_query",
+                "operation": "support_and_argmax_sum",
+                "units": 92952
+              },
+              {
+                "category": "contrast_update",
+                "operation": "row_maximum_and_record",
+                "units": 5798
+              },
+              {
+                "category": "cost_admission",
+                "operation": "mode_and_row_words",
+                "units": 64
+              },
+              {
+                "category": "cost_check",
+                "operation": "receipt_binding_and_mode_filter",
+                "units": 233
+              },
+              {
+                "category": "interface_admission",
+                "operation": "checked_candidate_binding_storage",
+                "units": 132
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_cost_source_and_mode_binding",
+                "units": 64
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_logical_source_and_feature_binding",
+                "units": 1856
+              },
+              {
+                "category": "interface_binding",
+                "operation": "projected_action_and_proof_fields",
+                "units": 1137
+              },
+              {
+                "category": "interface_binding",
+                "operation": "source_and_nonempty_mode_sets",
+                "units": 2192
+              },
+              {
+                "category": "interface_compile",
+                "operation": "admitted_tree_point_minimum",
+                "units": 2268
+              },
+              {
+                "category": "interface_compile",
+                "operation": "full_cohort_mode_scaling",
+                "units": 1200
+              },
+              {
+                "category": "interface_compile",
+                "operation": "same_source_point_lower_maximum",
+                "units": 378
+              },
+              {
+                "category": "interface_compile",
+                "operation": "scalar_anchor_storage",
+                "units": 1500
+              },
+              {
+                "category": "interface_query",
+                "operation": "method_comparison_and_source_bound_output",
+                "units": 640
+              },
+              {
+                "category": "interface_query",
+                "operation": "scalar_anchor_cache_lookup_and_read",
+                "units": 416
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_tree_reference",
+                "units": 143
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_witness_reference",
+                "units": 16
+              },
+              {
+                "category": "source_anchor_compile",
+                "operation": "mode_action_costs_and_lower_scaling",
+                "units": 9588
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "cohort_sums_and_clipped_regret",
+                "units": 1718
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "row_mode_contrast_extrema",
+                "units": 4120
+              },
+              {
+                "category": "storage",
+                "operation": "compiled_tree_leaf_masks",
+                "units": 113
+              },
+              {
+                "category": "storage",
+                "operation": "cost_receipt_and_remaining_mode_ids",
+                "units": 137
+              },
+              {
+                "category": "storage",
+                "operation": "retained_witness_and_violation_mask",
+                "units": 370
+              },
+              {
+                "category": "tree_compile",
+                "operation": "forced_clause_coefficient",
+                "units": 219
+              },
+              {
+                "category": "tree_compile",
+                "operation": "hard_leaf_omitted",
+                "units": 134
+              },
+              {
+                "category": "tree_compile",
+                "operation": "leaf_mask_deduplication",
+                "units": 103
+              },
+              {
+                "category": "tree_compile",
+                "operation": "proof_node_read",
+                "units": 464
+              },
+              {
+                "category": "vertex_query",
+                "operation": "mask_weight_products_and_sum",
+                "units": 32640
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_clause_header",
+                "units": 780
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_literal",
+                "units": 1055
+              },
+              {
+                "category": "witness_compile",
+                "operation": "mask_and_original_weight",
+                "units": 186
+              },
+              {
+                "category": "witness_compile",
+                "operation": "objective_violation_pass",
+                "units": 37
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_clause_header",
+                "units": 296
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_literal",
+                "units": 296
+              }
+            ]
+          },
+          "outputs": [
+            {
+              "request": 0,
+              "before": {
+                "bound": 24,
+                "exact_finite_regret": 16,
+                "slack": 8
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 1,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 10,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 2,
+              "before": {
+                "bound": 16,
+                "exact_finite_regret": 2,
+                "slack": 14
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 2,
+                "slack": 0
+              }
+            },
+            {
+              "request": 3,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 4,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 5,
+              "before": {
+                "bound": 6,
+                "exact_finite_regret": 2,
+                "slack": 4
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 2,
+                "slack": 0
+              }
+            },
+            {
+              "request": 6,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 7,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 8,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 9,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 10,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 10,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 0,
+                "slack": 2
+              }
+            },
+            {
+              "request": 11,
+              "before": {
+                "bound": 16,
+                "exact_finite_regret": 6,
+                "slack": 10
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 12,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 13,
+              "before": {
+                "bound": 6,
+                "exact_finite_regret": 0,
+                "slack": 6
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 0,
+                "slack": 2
+              }
+            },
+            {
+              "request": 14,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 15,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "logic_first",
+          "requests": 16,
+          "counts": {
+            "audit": 14,
+            "complete": 18,
+            "native": 0,
+            "SAT": 5,
+            "UNSAT": 13,
+            "UNRESOLVED": 0
+          },
+          "final_outputs_with_strict_certificate_slack": 12,
+          "largest_final_exact_regret": 4,
+          "reconstruction_invoice": {
+            "total": 354423,
+            "by_category": {
+              "cost_admission": 64,
+              "cache_admission": 370,
+              "interface_binding": 3479,
+              "interface_admission": 2056,
+              "witness_check": 1921,
+              "witness_compile": 861,
+              "storage": 670,
+              "contrast_lookup": 132568,
+              "contrast_compile": 36740,
+              "contrast_update": 7604,
+              "contrast_query": 101304,
+              "certificate": 3435,
+              "interface_compile": 5724,
+              "vertex_query": 36096,
+              "interface_query": 1056,
+              "source_anchor_compile": 9690,
+              "source_anchor_query": 7024,
+              "retention": 202,
+              "cost_check": 233,
+              "check": 2225,
+              "tree_compile": 1101
+            },
+            "operations": [
+              {
+                "category": "cache_admission",
+                "operation": "trusted_projected_cache_fields",
+                "units": 370
+              },
+              {
+                "category": "certificate",
+                "operation": "action_proof_pair_minimum",
+                "units": 156
+              },
+              {
+                "category": "certificate",
+                "operation": "constraint_maximum_and_record",
+                "units": 3279
+              },
+              {
+                "category": "check",
+                "operation": "negative_clause_header",
+                "units": 418
+              },
+              {
+                "category": "check",
+                "operation": "negative_literal",
+                "units": 724
+              },
+              {
+                "category": "check",
+                "operation": "negative_proof_node",
+                "units": 553
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_add",
+                "units": 265
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_index",
+                "units": 265
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "coefficient_products_and_sum",
+                "units": 32064
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "compiled_mode_values_storage",
+                "units": 4676
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "coefficient_key_and_lookup",
+                "units": 12663
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "row_key_and_lookup",
+                "units": 119905
+              },
+              {
+                "category": "contrast_query",
+                "operation": "support_and_argmax_sum",
+                "units": 101304
+              },
+              {
+                "category": "contrast_update",
+                "operation": "row_maximum_and_record",
+                "units": 7604
+              },
+              {
+                "category": "cost_admission",
+                "operation": "mode_and_row_words",
+                "units": 64
+              },
+              {
+                "category": "cost_check",
+                "operation": "receipt_binding_and_mode_filter",
+                "units": 233
+              },
+              {
+                "category": "interface_admission",
+                "operation": "checked_candidate_binding_storage",
+                "units": 136
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_cost_source_and_mode_binding",
+                "units": 64
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_logical_source_and_feature_binding",
+                "units": 1856
+              },
+              {
+                "category": "interface_binding",
+                "operation": "projected_action_and_proof_fields",
+                "units": 1173
+              },
+              {
+                "category": "interface_binding",
+                "operation": "source_and_nonempty_mode_sets",
+                "units": 2306
+              },
+              {
+                "category": "interface_compile",
+                "operation": "admitted_tree_point_minimum",
+                "units": 2508
+              },
+              {
+                "category": "interface_compile",
+                "operation": "full_cohort_mode_scaling",
+                "units": 1248
+              },
+              {
+                "category": "interface_compile",
+                "operation": "same_source_point_lower_maximum",
+                "units": 408
+              },
+              {
+                "category": "interface_compile",
+                "operation": "scalar_anchor_storage",
+                "units": 1560
+              },
+              {
+                "category": "interface_query",
+                "operation": "method_comparison_and_source_bound_output",
+                "units": 640
+              },
+              {
+                "category": "interface_query",
+                "operation": "scalar_anchor_cache_lookup_and_read",
+                "units": 416
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_tree_reference",
+                "units": 182
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_witness_reference",
+                "units": 20
+              },
+              {
+                "category": "source_anchor_compile",
+                "operation": "mode_action_costs_and_lower_scaling",
+                "units": 9690
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "cohort_sums_and_clipped_regret",
+                "units": 1739
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "row_mode_contrast_extrema",
+                "units": 5285
+              },
+              {
+                "category": "storage",
+                "operation": "compiled_tree_leaf_masks",
+                "units": 143
+              },
+              {
+                "category": "storage",
+                "operation": "cost_receipt_and_remaining_mode_ids",
+                "units": 137
+              },
+              {
+                "category": "storage",
+                "operation": "retained_witness_and_violation_mask",
+                "units": 390
+              },
+              {
+                "category": "tree_compile",
+                "operation": "forced_clause_coefficient",
+                "units": 265
+              },
+              {
+                "category": "tree_compile",
+                "operation": "hard_leaf_omitted",
+                "units": 153
+              },
+              {
+                "category": "tree_compile",
+                "operation": "leaf_mask_deduplication",
+                "units": 130
+              },
+              {
+                "category": "tree_compile",
+                "operation": "proof_node_read",
+                "units": 553
+              },
+              {
+                "category": "vertex_query",
+                "operation": "mask_weight_products_and_sum",
+                "units": 36096
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_clause_header",
+                "units": 816
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_literal",
+                "units": 1105
+              },
+              {
+                "category": "witness_compile",
+                "operation": "mask_and_original_weight",
+                "units": 198
+              },
+              {
+                "category": "witness_compile",
+                "operation": "objective_violation_pass",
+                "units": 39
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_clause_header",
+                "units": 312
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_literal",
+                "units": 312
+              }
+            ]
+          },
+          "outputs": [
+            {
+              "request": 0,
+              "before": {
+                "bound": 24,
+                "exact_finite_regret": 16,
+                "slack": 8
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 4,
+                "slack": 0
+              }
+            },
+            {
+              "request": 1,
+              "before": {
+                "bound": 14,
+                "exact_finite_regret": 12,
+                "slack": 2
+              },
+              "after": {
+                "bound": 3,
+                "exact_finite_regret": 0,
+                "slack": 3
+              }
+            },
+            {
+              "request": 2,
+              "before": {
+                "bound": 19,
+                "exact_finite_regret": 8,
+                "slack": 11
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 3,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 4,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 5,
+              "before": {
+                "bound": 7,
+                "exact_finite_regret": 3,
+                "slack": 4
+              },
+              "after": {
+                "bound": 3,
+                "exact_finite_regret": 3,
+                "slack": 0
+              }
+            },
+            {
+              "request": 6,
+              "before": {
+                "bound": 3,
+                "exact_finite_regret": 0,
+                "slack": 3
+              },
+              "after": {
+                "bound": 3,
+                "exact_finite_regret": 0,
+                "slack": 3
+              }
+            },
+            {
+              "request": 7,
+              "before": {
+                "bound": 11,
+                "exact_finite_regret": 0,
+                "slack": 11
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 8,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 9,
+              "before": {
+                "bound": 11,
+                "exact_finite_regret": 11,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 10,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 0,
+                "slack": 2
+              }
+            },
+            {
+              "request": 11,
+              "before": {
+                "bound": 18,
+                "exact_finite_regret": 7,
+                "slack": 11
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 12,
+              "before": {
+                "bound": 3,
+                "exact_finite_regret": 0,
+                "slack": 3
+              },
+              "after": {
+                "bound": 3,
+                "exact_finite_regret": 0,
+                "slack": 3
+              }
+            },
+            {
+              "request": 13,
+              "before": {
+                "bound": 6,
+                "exact_finite_regret": 0,
+                "slack": 6
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 14,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 15,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "native_logic",
+          "requests": 16,
+          "counts": {
+            "audit": 14,
+            "complete": 0,
+            "native": 18,
+            "SAT": 5,
+            "UNSAT": 13,
+            "UNRESOLVED": 0
+          },
+          "final_outputs_with_strict_certificate_slack": 12,
+          "largest_final_exact_regret": 4,
+          "reconstruction_invoice": {
+            "total": 354423,
+            "by_category": {
+              "cost_admission": 64,
+              "cache_admission": 370,
+              "interface_binding": 3479,
+              "interface_admission": 2056,
+              "witness_check": 1921,
+              "witness_compile": 861,
+              "storage": 670,
+              "contrast_lookup": 132568,
+              "contrast_compile": 36740,
+              "contrast_update": 7604,
+              "contrast_query": 101304,
+              "certificate": 3435,
+              "interface_compile": 5724,
+              "vertex_query": 36096,
+              "interface_query": 1056,
+              "source_anchor_compile": 9690,
+              "source_anchor_query": 7024,
+              "retention": 202,
+              "cost_check": 233,
+              "check": 2225,
+              "tree_compile": 1101
+            },
+            "operations": [
+              {
+                "category": "cache_admission",
+                "operation": "trusted_projected_cache_fields",
+                "units": 370
+              },
+              {
+                "category": "certificate",
+                "operation": "action_proof_pair_minimum",
+                "units": 156
+              },
+              {
+                "category": "certificate",
+                "operation": "constraint_maximum_and_record",
+                "units": 3279
+              },
+              {
+                "category": "check",
+                "operation": "negative_clause_header",
+                "units": 418
+              },
+              {
+                "category": "check",
+                "operation": "negative_literal",
+                "units": 724
+              },
+              {
+                "category": "check",
+                "operation": "negative_proof_node",
+                "units": 553
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_add",
+                "units": 265
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_index",
+                "units": 265
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "coefficient_products_and_sum",
+                "units": 32064
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "compiled_mode_values_storage",
+                "units": 4676
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "coefficient_key_and_lookup",
+                "units": 12663
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "row_key_and_lookup",
+                "units": 119905
+              },
+              {
+                "category": "contrast_query",
+                "operation": "support_and_argmax_sum",
+                "units": 101304
+              },
+              {
+                "category": "contrast_update",
+                "operation": "row_maximum_and_record",
+                "units": 7604
+              },
+              {
+                "category": "cost_admission",
+                "operation": "mode_and_row_words",
+                "units": 64
+              },
+              {
+                "category": "cost_check",
+                "operation": "receipt_binding_and_mode_filter",
+                "units": 233
+              },
+              {
+                "category": "interface_admission",
+                "operation": "checked_candidate_binding_storage",
+                "units": 136
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_cost_source_and_mode_binding",
+                "units": 64
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_logical_source_and_feature_binding",
+                "units": 1856
+              },
+              {
+                "category": "interface_binding",
+                "operation": "projected_action_and_proof_fields",
+                "units": 1173
+              },
+              {
+                "category": "interface_binding",
+                "operation": "source_and_nonempty_mode_sets",
+                "units": 2306
+              },
+              {
+                "category": "interface_compile",
+                "operation": "admitted_tree_point_minimum",
+                "units": 2508
+              },
+              {
+                "category": "interface_compile",
+                "operation": "full_cohort_mode_scaling",
+                "units": 1248
+              },
+              {
+                "category": "interface_compile",
+                "operation": "same_source_point_lower_maximum",
+                "units": 408
+              },
+              {
+                "category": "interface_compile",
+                "operation": "scalar_anchor_storage",
+                "units": 1560
+              },
+              {
+                "category": "interface_query",
+                "operation": "method_comparison_and_source_bound_output",
+                "units": 640
+              },
+              {
+                "category": "interface_query",
+                "operation": "scalar_anchor_cache_lookup_and_read",
+                "units": 416
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_tree_reference",
+                "units": 182
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_witness_reference",
+                "units": 20
+              },
+              {
+                "category": "source_anchor_compile",
+                "operation": "mode_action_costs_and_lower_scaling",
+                "units": 9690
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "cohort_sums_and_clipped_regret",
+                "units": 1739
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "row_mode_contrast_extrema",
+                "units": 5285
+              },
+              {
+                "category": "storage",
+                "operation": "compiled_tree_leaf_masks",
+                "units": 143
+              },
+              {
+                "category": "storage",
+                "operation": "cost_receipt_and_remaining_mode_ids",
+                "units": 137
+              },
+              {
+                "category": "storage",
+                "operation": "retained_witness_and_violation_mask",
+                "units": 390
+              },
+              {
+                "category": "tree_compile",
+                "operation": "forced_clause_coefficient",
+                "units": 265
+              },
+              {
+                "category": "tree_compile",
+                "operation": "hard_leaf_omitted",
+                "units": 153
+              },
+              {
+                "category": "tree_compile",
+                "operation": "leaf_mask_deduplication",
+                "units": 130
+              },
+              {
+                "category": "tree_compile",
+                "operation": "proof_node_read",
+                "units": 553
+              },
+              {
+                "category": "vertex_query",
+                "operation": "mask_weight_products_and_sum",
+                "units": 36096
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_clause_header",
+                "units": 816
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_literal",
+                "units": 1105
+              },
+              {
+                "category": "witness_compile",
+                "operation": "mask_and_original_weight",
+                "units": 198
+              },
+              {
+                "category": "witness_compile",
+                "operation": "objective_violation_pass",
+                "units": 39
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_clause_header",
+                "units": 312
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_literal",
+                "units": 312
+              }
+            ]
+          },
+          "outputs": [
+            {
+              "request": 0,
+              "before": {
+                "bound": 24,
+                "exact_finite_regret": 16,
+                "slack": 8
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 4,
+                "slack": 0
+              }
+            },
+            {
+              "request": 1,
+              "before": {
+                "bound": 14,
+                "exact_finite_regret": 12,
+                "slack": 2
+              },
+              "after": {
+                "bound": 3,
+                "exact_finite_regret": 0,
+                "slack": 3
+              }
+            },
+            {
+              "request": 2,
+              "before": {
+                "bound": 19,
+                "exact_finite_regret": 8,
+                "slack": 11
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 3,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 4,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 5,
+              "before": {
+                "bound": 7,
+                "exact_finite_regret": 3,
+                "slack": 4
+              },
+              "after": {
+                "bound": 3,
+                "exact_finite_regret": 3,
+                "slack": 0
+              }
+            },
+            {
+              "request": 6,
+              "before": {
+                "bound": 3,
+                "exact_finite_regret": 0,
+                "slack": 3
+              },
+              "after": {
+                "bound": 3,
+                "exact_finite_regret": 0,
+                "slack": 3
+              }
+            },
+            {
+              "request": 7,
+              "before": {
+                "bound": 11,
+                "exact_finite_regret": 0,
+                "slack": 11
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 8,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 9,
+              "before": {
+                "bound": 11,
+                "exact_finite_regret": 11,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 10,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 0,
+                "slack": 2
+              }
+            },
+            {
+              "request": 11,
+              "before": {
+                "bound": 18,
+                "exact_finite_regret": 7,
+                "slack": 11
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 12,
+              "before": {
+                "bound": 3,
+                "exact_finite_regret": 0,
+                "slack": 3
+              },
+              "after": {
+                "bound": 3,
+                "exact_finite_regret": 0,
+                "slack": 3
+              }
+            },
+            {
+              "request": 13,
+              "before": {
+                "bound": 6,
+                "exact_finite_regret": 0,
+                "slack": 6
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 14,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 15,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "v3/discovery/s07/a02/results.json",
+      "sha256": "5064970c09b46b68b4445e622a73ab80afe5db57904b19ce55995b91fb97c99c",
+      "arms": [
+        {
+          "policy": "bundle",
+          "requests": 16,
+          "counts": {
+            "audit": 14,
+            "complete": 14,
+            "native": 0,
+            "SAT": 4,
+            "UNSAT": 10,
+            "UNRESOLVED": 0
+          },
+          "final_outputs_with_strict_certificate_slack": 7,
+          "largest_final_exact_regret": 2,
+          "reconstruction_invoice": {
+            "total": 322570,
+            "by_category": {
+              "cost_admission": 64,
+              "cache_admission": 370,
+              "interface_binding": 3329,
+              "interface_admission": 2052,
+              "witness_check": 1835,
+              "witness_compile": 815,
+              "storage": 620,
+              "contrast_lookup": 116419,
+              "contrast_compile": 37510,
+              "contrast_update": 5798,
+              "contrast_query": 92952,
+              "certificate": 3150,
+              "interface_compile": 5346,
+              "vertex_query": 32640,
+              "interface_query": 1056,
+              "source_anchor_compile": 9588,
+              "source_anchor_query": 5838,
+              "cost_check": 233,
+              "retention": 159,
+              "check": 1876,
+              "tree_compile": 920
+            },
+            "operations": [
+              {
+                "category": "cache_admission",
+                "operation": "trusted_projected_cache_fields",
+                "units": 370
+              },
+              {
+                "category": "certificate",
+                "operation": "action_proof_pair_minimum",
+                "units": 143
+              },
+              {
+                "category": "certificate",
+                "operation": "constraint_maximum_and_record",
+                "units": 3007
+              },
+              {
+                "category": "check",
+                "operation": "negative_clause_header",
+                "units": 353
+              },
+              {
+                "category": "check",
+                "operation": "negative_literal",
+                "units": 621
+              },
+              {
+                "category": "check",
+                "operation": "negative_proof_node",
+                "units": 464
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_add",
+                "units": 219
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_index",
+                "units": 219
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "coefficient_products_and_sum",
+                "units": 32736
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "compiled_mode_values_storage",
+                "units": 4774
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "coefficient_key_and_lookup",
+                "units": 11619
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "row_key_and_lookup",
+                "units": 104800
+              },
+              {
+                "category": "contrast_query",
+                "operation": "support_and_argmax_sum",
+                "units": 92952
+              },
+              {
+                "category": "contrast_update",
+                "operation": "row_maximum_and_record",
+                "units": 5798
+              },
+              {
+                "category": "cost_admission",
+                "operation": "mode_and_row_words",
+                "units": 64
+              },
+              {
+                "category": "cost_check",
+                "operation": "receipt_binding_and_mode_filter",
+                "units": 233
+              },
+              {
+                "category": "interface_admission",
+                "operation": "checked_candidate_binding_storage",
+                "units": 132
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_cost_source_and_mode_binding",
+                "units": 64
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_logical_source_and_feature_binding",
+                "units": 1856
+              },
+              {
+                "category": "interface_binding",
+                "operation": "projected_action_and_proof_fields",
+                "units": 1137
+              },
+              {
+                "category": "interface_binding",
+                "operation": "source_and_nonempty_mode_sets",
+                "units": 2192
+              },
+              {
+                "category": "interface_compile",
+                "operation": "admitted_tree_point_minimum",
+                "units": 2268
+              },
+              {
+                "category": "interface_compile",
+                "operation": "full_cohort_mode_scaling",
+                "units": 1200
+              },
+              {
+                "category": "interface_compile",
+                "operation": "same_source_point_lower_maximum",
+                "units": 378
+              },
+              {
+                "category": "interface_compile",
+                "operation": "scalar_anchor_storage",
+                "units": 1500
+              },
+              {
+                "category": "interface_query",
+                "operation": "method_comparison_and_source_bound_output",
+                "units": 640
+              },
+              {
+                "category": "interface_query",
+                "operation": "scalar_anchor_cache_lookup_and_read",
+                "units": 416
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_tree_reference",
+                "units": 143
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_witness_reference",
+                "units": 16
+              },
+              {
+                "category": "source_anchor_compile",
+                "operation": "mode_action_costs_and_lower_scaling",
+                "units": 9588
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "cohort_sums_and_clipped_regret",
+                "units": 1718
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "row_mode_contrast_extrema",
+                "units": 4120
+              },
+              {
+                "category": "storage",
+                "operation": "compiled_tree_leaf_masks",
+                "units": 113
+              },
+              {
+                "category": "storage",
+                "operation": "cost_receipt_and_remaining_mode_ids",
+                "units": 137
+              },
+              {
+                "category": "storage",
+                "operation": "retained_witness_and_violation_mask",
+                "units": 370
+              },
+              {
+                "category": "tree_compile",
+                "operation": "forced_clause_coefficient",
+                "units": 219
+              },
+              {
+                "category": "tree_compile",
+                "operation": "hard_leaf_omitted",
+                "units": 134
+              },
+              {
+                "category": "tree_compile",
+                "operation": "leaf_mask_deduplication",
+                "units": 103
+              },
+              {
+                "category": "tree_compile",
+                "operation": "proof_node_read",
+                "units": 464
+              },
+              {
+                "category": "vertex_query",
+                "operation": "mask_weight_products_and_sum",
+                "units": 32640
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_clause_header",
+                "units": 780
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_literal",
+                "units": 1055
+              },
+              {
+                "category": "witness_compile",
+                "operation": "mask_and_original_weight",
+                "units": 186
+              },
+              {
+                "category": "witness_compile",
+                "operation": "objective_violation_pass",
+                "units": 37
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_clause_header",
+                "units": 296
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_literal",
+                "units": 296
+              }
+            ]
+          },
+          "outputs": [
+            {
+              "request": 0,
+              "before": {
+                "bound": 24,
+                "exact_finite_regret": 16,
+                "slack": 8
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 1,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 10,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 2,
+              "before": {
+                "bound": 16,
+                "exact_finite_regret": 2,
+                "slack": 14
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 2,
+                "slack": 0
+              }
+            },
+            {
+              "request": 3,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 4,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 5,
+              "before": {
+                "bound": 6,
+                "exact_finite_regret": 2,
+                "slack": 4
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 2,
+                "slack": 0
+              }
+            },
+            {
+              "request": 6,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 7,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 8,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 9,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 10,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 10,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 0,
+                "slack": 2
+              }
+            },
+            {
+              "request": 11,
+              "before": {
+                "bound": 16,
+                "exact_finite_regret": 6,
+                "slack": 10
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 12,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 13,
+              "before": {
+                "bound": 6,
+                "exact_finite_regret": 0,
+                "slack": 6
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 0,
+                "slack": 2
+              }
+            },
+            {
+              "request": 14,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 15,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "v3/discovery/s07/a03/results.json",
+      "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+      "arms": [
+        {
+          "policy": "bundle",
+          "requests": 16,
+          "counts": {
+            "audit": 14,
+            "complete": 14,
+            "native": 0,
+            "SAT": 4,
+            "UNSAT": 10,
+            "UNRESOLVED": 0
+          },
+          "final_outputs_with_strict_certificate_slack": 7,
+          "largest_final_exact_regret": 2,
+          "reconstruction_invoice": {
+            "total": 322570,
+            "by_category": {
+              "cost_admission": 64,
+              "cache_admission": 370,
+              "interface_binding": 3329,
+              "interface_admission": 2052,
+              "witness_check": 1835,
+              "witness_compile": 815,
+              "storage": 620,
+              "contrast_lookup": 116419,
+              "contrast_compile": 37510,
+              "contrast_update": 5798,
+              "contrast_query": 92952,
+              "certificate": 3150,
+              "interface_compile": 5346,
+              "vertex_query": 32640,
+              "interface_query": 1056,
+              "source_anchor_compile": 9588,
+              "source_anchor_query": 5838,
+              "cost_check": 233,
+              "retention": 159,
+              "check": 1876,
+              "tree_compile": 920
+            },
+            "operations": [
+              {
+                "category": "cache_admission",
+                "operation": "trusted_projected_cache_fields",
+                "units": 370
+              },
+              {
+                "category": "certificate",
+                "operation": "action_proof_pair_minimum",
+                "units": 143
+              },
+              {
+                "category": "certificate",
+                "operation": "constraint_maximum_and_record",
+                "units": 3007
+              },
+              {
+                "category": "check",
+                "operation": "negative_clause_header",
+                "units": 353
+              },
+              {
+                "category": "check",
+                "operation": "negative_literal",
+                "units": 621
+              },
+              {
+                "category": "check",
+                "operation": "negative_proof_node",
+                "units": 464
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_add",
+                "units": 219
+              },
+              {
+                "category": "check",
+                "operation": "negative_weight_index",
+                "units": 219
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "coefficient_products_and_sum",
+                "units": 32736
+              },
+              {
+                "category": "contrast_compile",
+                "operation": "compiled_mode_values_storage",
+                "units": 4774
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "coefficient_key_and_lookup",
+                "units": 11619
+              },
+              {
+                "category": "contrast_lookup",
+                "operation": "row_key_and_lookup",
+                "units": 104800
+              },
+              {
+                "category": "contrast_query",
+                "operation": "support_and_argmax_sum",
+                "units": 92952
+              },
+              {
+                "category": "contrast_update",
+                "operation": "row_maximum_and_record",
+                "units": 5798
+              },
+              {
+                "category": "cost_admission",
+                "operation": "mode_and_row_words",
+                "units": 64
+              },
+              {
+                "category": "cost_check",
+                "operation": "receipt_binding_and_mode_filter",
+                "units": 233
+              },
+              {
+                "category": "interface_admission",
+                "operation": "checked_candidate_binding_storage",
+                "units": 132
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_cost_source_and_mode_binding",
+                "units": 64
+              },
+              {
+                "category": "interface_admission",
+                "operation": "fixed_logical_source_and_feature_binding",
+                "units": 1856
+              },
+              {
+                "category": "interface_binding",
+                "operation": "projected_action_and_proof_fields",
+                "units": 1137
+              },
+              {
+                "category": "interface_binding",
+                "operation": "source_and_nonempty_mode_sets",
+                "units": 2192
+              },
+              {
+                "category": "interface_compile",
+                "operation": "admitted_tree_point_minimum",
+                "units": 2268
+              },
+              {
+                "category": "interface_compile",
+                "operation": "full_cohort_mode_scaling",
+                "units": 1200
+              },
+              {
+                "category": "interface_compile",
+                "operation": "same_source_point_lower_maximum",
+                "units": 378
+              },
+              {
+                "category": "interface_compile",
+                "operation": "scalar_anchor_storage",
+                "units": 1500
+              },
+              {
+                "category": "interface_query",
+                "operation": "method_comparison_and_source_bound_output",
+                "units": 640
+              },
+              {
+                "category": "interface_query",
+                "operation": "scalar_anchor_cache_lookup_and_read",
+                "units": 416
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_tree_reference",
+                "units": 143
+              },
+              {
+                "category": "retention",
+                "operation": "new_checked_witness_reference",
+                "units": 16
+              },
+              {
+                "category": "source_anchor_compile",
+                "operation": "mode_action_costs_and_lower_scaling",
+                "units": 9588
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "cohort_sums_and_clipped_regret",
+                "units": 1718
+              },
+              {
+                "category": "source_anchor_query",
+                "operation": "row_mode_contrast_extrema",
+                "units": 4120
+              },
+              {
+                "category": "storage",
+                "operation": "compiled_tree_leaf_masks",
+                "units": 113
+              },
+              {
+                "category": "storage",
+                "operation": "cost_receipt_and_remaining_mode_ids",
+                "units": 137
+              },
+              {
+                "category": "storage",
+                "operation": "retained_witness_and_violation_mask",
+                "units": 370
+              },
+              {
+                "category": "tree_compile",
+                "operation": "forced_clause_coefficient",
+                "units": 219
+              },
+              {
+                "category": "tree_compile",
+                "operation": "hard_leaf_omitted",
+                "units": 134
+              },
+              {
+                "category": "tree_compile",
+                "operation": "leaf_mask_deduplication",
+                "units": 103
+              },
+              {
+                "category": "tree_compile",
+                "operation": "proof_node_read",
+                "units": 464
+              },
+              {
+                "category": "vertex_query",
+                "operation": "mask_weight_products_and_sum",
+                "units": 32640
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_clause_header",
+                "units": 780
+              },
+              {
+                "category": "witness_check",
+                "operation": "retained_literal",
+                "units": 1055
+              },
+              {
+                "category": "witness_compile",
+                "operation": "mask_and_original_weight",
+                "units": 186
+              },
+              {
+                "category": "witness_compile",
+                "operation": "objective_violation_pass",
+                "units": 37
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_clause_header",
+                "units": 296
+              },
+              {
+                "category": "witness_compile",
+                "operation": "retained_literal",
+                "units": 296
+              }
+            ]
+          },
+          "outputs": [
+            {
+              "request": 0,
+              "before": {
+                "bound": 24,
+                "exact_finite_regret": 16,
+                "slack": 8
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 1,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 10,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 2,
+              "before": {
+                "bound": 16,
+                "exact_finite_regret": 2,
+                "slack": 14
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 2,
+                "slack": 0
+              }
+            },
+            {
+              "request": 3,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 4,
+              "before": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 5,
+              "before": {
+                "bound": 6,
+                "exact_finite_regret": 2,
+                "slack": 4
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 2,
+                "slack": 0
+              }
+            },
+            {
+              "request": 6,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 7,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 8,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 9,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 10,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 10,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 0,
+                "slack": 2
+              }
+            },
+            {
+              "request": 11,
+              "before": {
+                "bound": 16,
+                "exact_finite_regret": 6,
+                "slack": 10
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 12,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            },
+            {
+              "request": 13,
+              "before": {
+                "bound": 6,
+                "exact_finite_regret": 0,
+                "slack": 6
+              },
+              "after": {
+                "bound": 2,
+                "exact_finite_regret": 0,
+                "slack": 2
+              }
+            },
+            {
+              "request": 14,
+              "before": {
+                "bound": 10,
+                "exact_finite_regret": 0,
+                "slack": 10
+              },
+              "after": {
+                "bound": 4,
+                "exact_finite_regret": 0,
+                "slack": 4
+              }
+            },
+            {
+              "request": 15,
+              "before": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              },
+              "after": {
+                "bound": 0,
+                "exact_finite_regret": 0,
+                "slack": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feasible_mask_counts": [
+    24,
+    10,
+    22,
+    9,
+    38,
+    9,
+    20,
+    6,
+    22,
+    7,
+    33,
+    5,
+    16,
+    28,
+    22,
+    18
+  ],
+  "diagnostic_invoice": {
+    "total": 828316,
+    "by_category": {
+      "witness_check": 92439,
+      "witness_compile": 7335,
+      "storage": 2890,
+      "diagnostic": 725652
+    },
+    "operations": [
+      {
+        "category": "diagnostic",
+        "operation": "finite_model_cohort_support",
+        "units": 725652
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 2890
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 35462
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 56977
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 2422
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 289
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 2312
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 2312
+      }
+    ]
+  },
+  "actual_new_acquisition_calls": 0,
+  "scope": "Checker enumerates logical assignments for exact finite semantic validation; controllers did not receive them. No hidden-source outcomes enter acquisition policies.",
+  "timing": {
+    "process_ns": 866691809,
+    "wall_ns": 375986615
+  }
+}

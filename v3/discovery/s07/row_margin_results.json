@@ -1,0 +1,639 @@
+{
+  "status": "passed",
+  "evidence": "DEVELOPMENT exact arithmetic reconstruction",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T20:13:42.921330+00:00",
+  "source_sha256": "01a57695be8ea30d70e34f7e121d4671d745284fc153bd4c08e16273327d1a24",
+  "check_sha256": "313d553257a6498c07eeb85cd806dd470ef85d67fd2af082c7b966fe3697ecae",
+  "cases": [
+    {
+      "name": "one_anticorrelated_row",
+      "modes": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "possible": [
+        [
+          0,
+          1
+        ]
+      ],
+      "q": [
+        1,
+        1
+      ],
+      "quote": {
+        "alpha": "1",
+        "delta": "1",
+        "box_alpha": "2",
+        "box_delta": "2",
+        "row_alpha": "1",
+        "row_delta": "1",
+        "strict_improvement": true,
+        "decompositions": [
+          {
+            "method": "row_integer_midpoints_with_one_residual",
+            "references": [
+              [
+                1,
+                1
+              ]
+            ],
+            "rows": [
+              {
+                "alpha": "1",
+                "delta": "1"
+              }
+            ],
+            "alpha": "1",
+            "delta": "1"
+          },
+          {
+            "method": "uniform_query_share",
+            "references": [
+              [
+                "1",
+                "1"
+              ]
+            ],
+            "rows": [
+              {
+                "alpha": "1",
+                "delta": "1"
+              }
+            ],
+            "alpha": "1",
+            "delta": "1"
+          }
+        ],
+        "residual_row": 0,
+        "references": [
+          [
+            1,
+            1
+          ]
+        ],
+        "objective_masks_enumerated": 0,
+        "row_product_enumerated": 0,
+        "premise": "Every compatible cohort sum, and its rowwise convex relaxation, with fixed ordered Boolean objective features"
+      },
+      "direct_configurations_and_objective_masks": 8
+    },
+    {
+      "name": "different_fixed_rows",
+      "modes": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "possible": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "q": [
+        2,
+        2
+      ],
+      "quote": {
+        "alpha": "0",
+        "delta": "0",
+        "box_alpha": "0",
+        "box_delta": "0",
+        "row_alpha": "0",
+        "row_delta": "0",
+        "strict_improvement": false,
+        "decompositions": [
+          {
+            "method": "row_integer_midpoints_with_one_residual",
+            "references": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                0
+              ]
+            ],
+            "rows": [
+              {
+                "alpha": "0",
+                "delta": "0"
+              },
+              {
+                "alpha": "0",
+                "delta": "0"
+              }
+            ],
+            "alpha": "0",
+            "delta": "0"
+          },
+          {
+            "method": "uniform_query_share",
+            "references": [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "1",
+                "1"
+              ]
+            ],
+            "rows": [
+              {
+                "alpha": "1",
+                "delta": "1"
+              },
+              {
+                "alpha": "1",
+                "delta": "1"
+              }
+            ],
+            "alpha": "2",
+            "delta": "2"
+          }
+        ],
+        "residual_row": 1,
+        "references": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "objective_masks_enumerated": 0,
+        "row_product_enumerated": 0,
+        "premise": "Every compatible cohort sum, and its rowwise convex relaxation, with fixed ordered Boolean objective features"
+      },
+      "direct_configurations_and_objective_masks": 4
+    },
+    {
+      "name": "known_plus_unknown_row",
+      "modes": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "possible": [
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "q": [
+        1,
+        3
+      ],
+      "quote": {
+        "alpha": "1",
+        "delta": "1",
+        "box_alpha": "2",
+        "box_delta": "2",
+        "row_alpha": "1",
+        "row_delta": "1",
+        "strict_improvement": true,
+        "decompositions": [
+          {
+            "method": "row_integer_midpoints_with_one_residual",
+            "references": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "rows": [
+              {
+                "alpha": "0",
+                "delta": "0"
+              },
+              {
+                "alpha": "1",
+                "delta": "1"
+              }
+            ],
+            "alpha": "1",
+            "delta": "1"
+          },
+          {
+            "method": "uniform_query_share",
+            "references": [
+              [
+                "1/2",
+                "3/2"
+              ],
+              [
+                "1/2",
+                "3/2"
+              ]
+            ],
+            "rows": [
+              {
+                "alpha": "1/2",
+                "delta": "1/2"
+              },
+              {
+                "alpha": "3/2",
+                "delta": "3/2"
+              }
+            ],
+            "alpha": "2",
+            "delta": "2"
+          }
+        ],
+        "residual_row": 1,
+        "references": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "objective_masks_enumerated": 0,
+        "row_product_enumerated": 0,
+        "premise": "Every compatible cohort sum, and its rowwise convex relaxation, with fixed ordered Boolean objective features"
+      },
+      "direct_configurations_and_objective_masks": 8
+    },
+    {
+      "name": "zero_query_residual",
+      "modes": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "possible": [
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "q": [
+        0,
+        0
+      ],
+      "quote": {
+        "alpha": "4",
+        "delta": "0",
+        "box_alpha": "6",
+        "box_delta": "0",
+        "row_alpha": "4",
+        "row_delta": "0",
+        "strict_improvement": true,
+        "decompositions": [
+          {
+            "method": "row_integer_midpoints_with_one_residual",
+            "references": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                -2
+              ]
+            ],
+            "rows": [
+              {
+                "alpha": "0",
+                "delta": "0"
+              },
+              {
+                "alpha": "4",
+                "delta": "0"
+              }
+            ],
+            "alpha": "4",
+            "delta": "0"
+          },
+          {
+            "method": "uniform_query_share",
+            "references": [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            "rows": [
+              {
+                "alpha": "2",
+                "delta": "0"
+              },
+              {
+                "alpha": "2",
+                "delta": "0"
+              }
+            ],
+            "alpha": "4",
+            "delta": "0"
+          }
+        ],
+        "residual_row": 1,
+        "references": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            -2
+          ]
+        ],
+        "objective_masks_enumerated": 0,
+        "row_product_enumerated": 0,
+        "premise": "Every compatible cohort sum, and its rowwise convex relaxation, with fixed ordered Boolean objective features"
+      },
+      "direct_configurations_and_objective_masks": 8
+    },
+    {
+      "name": "three_features",
+      "modes": [
+        [
+          1,
+          4,
+          0
+        ],
+        [
+          4,
+          0,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ]
+      ],
+      "possible": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "q": [
+        5,
+        3,
+        2
+      ],
+      "quote": {
+        "alpha": "5",
+        "delta": "3",
+        "box_alpha": "9",
+        "box_delta": "6",
+        "row_alpha": "5",
+        "row_delta": "3",
+        "strict_improvement": true,
+        "decompositions": [
+          {
+            "method": "row_integer_midpoints_with_one_residual",
+            "references": [
+              [
+                2,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                1
+              ]
+            ],
+            "rows": [
+              {
+                "alpha": "3",
+                "delta": "2"
+              },
+              {
+                "alpha": "2",
+                "delta": "1"
+              }
+            ],
+            "alpha": "5",
+            "delta": "3"
+          },
+          {
+            "method": "uniform_query_share",
+            "references": [
+              [
+                "5/2",
+                "3/2",
+                "1"
+              ],
+              [
+                "5/2",
+                "3/2",
+                "1"
+              ]
+            ],
+            "rows": [
+              {
+                "alpha": "5/2",
+                "delta": "5/2"
+              },
+              {
+                "alpha": "5/2",
+                "delta": "3/2"
+              }
+            ],
+            "alpha": "5",
+            "delta": "4"
+          }
+        ],
+        "residual_row": 1,
+        "references": [
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ],
+        "objective_masks_enumerated": 0,
+        "row_product_enumerated": 0,
+        "premise": "Every compatible cohort sum, and its rowwise convex relaxation, with fixed ordered Boolean objective features"
+      },
+      "direct_configurations_and_objective_masks": 32
+    },
+    {
+      "name": "signed_supplied_reference",
+      "modes": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "possible": [
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "q": [
+        1,
+        3
+      ],
+      "references": [
+        [
+          -1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "quote": {
+        "alpha": "2",
+        "delta": "2",
+        "box_alpha": "2",
+        "box_delta": "2",
+        "row_alpha": "2",
+        "row_delta": "2",
+        "strict_improvement": false,
+        "decompositions": [
+          {
+            "method": "supplied_exact_decomposition",
+            "references": [
+              [
+                "-1",
+                "2"
+              ],
+              [
+                "2",
+                "1"
+              ]
+            ],
+            "rows": [
+              {
+                "alpha": "1",
+                "delta": "0"
+              },
+              {
+                "alpha": "1",
+                "delta": "2"
+              }
+            ],
+            "alpha": "2",
+            "delta": "2"
+          }
+        ],
+        "residual_row": null,
+        "references": [
+          [
+            "-1",
+            "2"
+          ],
+          [
+            "2",
+            "1"
+          ]
+        ],
+        "objective_masks_enumerated": 0,
+        "row_product_enumerated": 0,
+        "premise": "Every compatible cohort sum, and its rowwise convex relaxation, with fixed ordered Boolean objective features"
+      },
+      "direct_configurations_and_objective_masks": 8
+    }
+  ],
+  "direct_finite_checks": 68,
+  "actual_acquisition_calls": 0,
+  "scope": "The check enumerates only these declared small source configurations and objective masks. Production quotations never enumerate either set.",
+  "invoice": {
+    "total": 2317,
+    "by_category": {
+      "row_margin_quote": 1341,
+      "construction_check": 976
+    },
+    "operations": [
+      {
+        "category": "construction_check",
+        "operation": "direct_finite_objective_transfer",
+        "units": 976
+      },
+      {
+        "category": "row_margin_quote",
+        "operation": "independent_safe_margin_minima",
+        "units": 46
+      },
+      {
+        "category": "row_margin_quote",
+        "operation": "positive_negative_parts_and_row_extrema",
+        "units": 750
+      },
+      {
+        "category": "row_margin_quote",
+        "operation": "two_public_reference_decompositions",
+        "units": 142
+      },
+      {
+        "category": "row_margin_quote",
+        "operation": "validation_coordinate_enclosures_and_box_margins",
+        "units": 403
+      }
+    ]
+  },
+  "timing": {
+    "process_ns": 1122657,
+    "wall_ns": 1127089
+  }
+}

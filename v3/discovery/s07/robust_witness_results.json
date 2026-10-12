@@ -1,0 +1,3700 @@
+{
+  "status": "passed",
+  "evidence": "DEVELOPMENT actual small constructed native proposals",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T20:31:16.940305+00:00",
+  "hashes": {
+    "robust_witness_check.py": "70067789a8529830d935e2090862188dc91e3736823b6bbe9f555247da1b43cd",
+    "robust_witness.py": "91e774218d0261d47d58a5e4d505c318d97f11f81aa25e6df873805420208dfa",
+    "repair_interface.py": "1ec100e50c6ab11600d9074fa718b4136d8227192b112676de468979725a6b8a",
+    "native_repair.py": "a357f9f33658b1a34b605d69d65b9f96283ac7cad769b15da1d9f7220dabe01a",
+    "maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+    "maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+    "__init__.py": "06ba40c04e9abc995d4a16cfada4d7341add1a1c297bc2d575e15245c4d3953a",
+    "_core.cpython-312-x86_64-linux-gnu.so": "6ac24d07a9562de78cd67c18823fd257d273d8b43132d7cc2ad9783850f54e90"
+  },
+  "highspy_version": "1.11.0",
+  "API_basis": "Installed HiGHS 1.11.0 method docstrings plus the already source-bound native_repair.py addCol/addRow/changeRowBounds/setSolution/run/getSolution interface; no unsupported persistence claim.",
+  "sources": [
+    {
+      "source": {
+        "row": 0,
+        "variables": 2,
+        "hard": [
+          [
+            1,
+            2
+          ]
+        ],
+        "soft": [
+          {
+            "weight": 1,
+            "clause": [
+              -1
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -2
+            ]
+          }
+        ],
+        "public_incumbent": 3,
+        "objective_max": 2,
+        "identity": "2b72b50550c51b1699283aefe973cb72f018ee834433e4c5405af66134eaa0e0"
+      },
+      "cost_manifest": {
+        "version": "s07-robust-witness-constructed-cost-source-v1",
+        "possible_cost_modes": [
+          [
+            3,
+            1
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "cohort_size": 1,
+        "hidden_modes": [
+          0
+        ],
+        "source_identity": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090"
+      },
+      "raw_initial_proof": [
+        "b",
+        0,
+        [
+          "b",
+          1,
+          [
+            "h",
+            0
+          ],
+          [
+            "w",
+            [
+              1
+            ]
+          ]
+        ],
+        [
+          "w",
+          [
+            0
+          ]
+        ]
+      ],
+      "initial_native_state": {
+        "state_id": "robust-a8a6ed39fcdb48b4beb96154e412ab72",
+        "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+        "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+        "highs_object_id": 139688340690352,
+        "native_row_count": 11,
+        "native_column_count": 7,
+        "last_checked_model": 3,
+        "last_checked_mask": 3,
+        "calls": {}
+      },
+      "stages": [
+        {
+          "stage": "initial_full_source",
+          "costs": {
+            "source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+            "representation": "joint",
+            "cohort_size": 1,
+            "possible_modes": [
+              [
+                0,
+                1
+              ]
+            ],
+            "audit_receipts": []
+          },
+          "anchor_lowers": [
+            1,
+            1
+          ],
+          "before": {
+            "bound": 3,
+            "model": 3,
+            "mask": 3,
+            "action": "repair",
+            "tree_index": 0,
+            "proof_id": "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+            "critical_coefficient": [
+              0,
+              1
+            ],
+            "critical_constant": 0,
+            "critical_weights": [
+              1,
+              3
+            ],
+            "critical_role": "proof_leaf",
+            "witness_id": "c274275ac3f9d50c96f5fd4d253edc2f02bfa069a3300e399f05b5cef97323fd",
+            "method": "tree",
+            "version": "s07-admitted-repair-evaluator-v1",
+            "row": 0,
+            "price": 8,
+            "tolerance": 0,
+            "status": "unresolved",
+            "logical_source_id": "2b72b50550c51b1699283aefe973cb72f018ee834433e4c5405af66134eaa0e0",
+            "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+            "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+            "possible_modes": [
+              [
+                0,
+                1
+              ]
+            ],
+            "method_bounds": {
+              "tree": 3,
+              "scalar_anchor": 3
+            },
+            "method_answers": {
+              "tree": {
+                "bound": 3,
+                "model": 3,
+                "mask": 3,
+                "action": "repair",
+                "tree_index": 0,
+                "proof_id": "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+                "critical_coefficient": [
+                  0,
+                  1
+                ],
+                "critical_constant": 0,
+                "critical_weights": [
+                  1,
+                  3
+                ],
+                "critical_role": "proof_leaf",
+                "witness_id": "c274275ac3f9d50c96f5fd4d253edc2f02bfa069a3300e399f05b5cef97323fd"
+              },
+              "scalar_anchor": {
+                "action": "repair",
+                "model": 3,
+                "mask": 3,
+                "witness_id": "c274275ac3f9d50c96f5fd4d253edc2f02bfa069a3300e399f05b5cef97323fd",
+                "bound": 3,
+                "repair_gap": 3,
+                "replacement_gap": -4,
+                "mode_anchor_lowers": [
+                  1,
+                  1
+                ],
+                "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+                "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size",
+                "anchor_proof_ids": [
+                  "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+                  "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e"
+                ]
+              }
+            },
+            "unavailable": {},
+            "evidence": {
+              "tree_receipt_ids": [
+                "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e"
+              ],
+              "cut_receipt_ids": [],
+              "dual_receipt_ids": [],
+              "cost_receipt_ids": []
+            },
+            "invoice": {
+              "evaluation_units": 233,
+              "cumulative_common_meter_units": 618
+            },
+            "domain": "One checked action over all compatible finite-row configurations and their convex hull; nonnegative objective costs",
+            "admission": "Compact trees require upstream actual raw-proof admission; candidate assignments and new cut exports are checked here"
+          },
+          "proposal": {
+            "version": "s07-persistent-robust-witness-v1",
+            "status": "CHECKED_WITNESS",
+            "witness": {
+              "model": 2,
+              "violation_mask": 2,
+              "original_cost": 1,
+              "receipt_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03"
+            },
+            "model": 2,
+            "source_identity": "2b72b50550c51b1699283aefe973cb72f018ee834433e4c5405af66134eaa0e0",
+            "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+            "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+            "possible_modes": [
+              [
+                0,
+                1
+              ]
+            ],
+            "anchor_lowers": [
+              1,
+              1
+            ],
+            "price": 8,
+            "caps": {
+              "seconds": 0.1,
+              "nodes": 1000
+            },
+            "checked_lower_receipt": null,
+            "independently_checked_lower": false,
+            "native_lower_is_guidance_only": true,
+            "state_before": {
+              "state_id": "robust-a8a6ed39fcdb48b4beb96154e412ab72",
+              "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+              "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+              "highs_object_id": 139688340690352,
+              "native_row_count": 11,
+              "native_column_count": 7,
+              "last_checked_model": 3,
+              "last_checked_mask": 3,
+              "calls": {}
+            },
+            "changed_native_row_bounds": 5,
+            "native": {
+              "api_status": "HighsStatus.kOk",
+              "model_status": "HighsModelStatus.kOptimal",
+              "objective_hint": 2.0,
+              "mip_dual_hint": 2.0,
+              "mip_gap_hint": 0.0,
+              "nodes": 0,
+              "simplex_iterations": 0,
+              "value_valid": true,
+              "timing": {
+                "process_ns": 446884,
+                "wall_ns": 449185
+              }
+            },
+            "repeats_previous_model": false,
+            "state_after": {
+              "state_id": "robust-a8a6ed39fcdb48b4beb96154e412ab72",
+              "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+              "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+              "highs_object_id": 139688340690352,
+              "native_row_count": 11,
+              "native_column_count": 7,
+              "last_checked_model": 2,
+              "last_checked_mask": 2,
+              "calls": {
+                "proposals": 1,
+                "explicit_mip_starts": 1,
+                "native_mip_calls": 1,
+                "checked_witnesses": 1
+              }
+            },
+            "invoice": {
+              "total": 194,
+              "by_category": {
+                "witness_check": 3,
+                "witness_compile": 7,
+                "storage": 4,
+                "robust_admission": 27,
+                "robust_update": 42,
+                "robust_start": 39,
+                "robust_dispatch": 1,
+                "robust_result": 31,
+                "robust_retention": 12,
+                "robust_output": 28
+              },
+              "operations": [
+                {
+                  "category": "robust_admission",
+                  "operation": "anchor_price_and_cap_words",
+                  "units": 12
+                },
+                {
+                  "category": "robust_admission",
+                  "operation": "public_mode_and_possible_source_words",
+                  "units": 15
+                },
+                {
+                  "category": "robust_dispatch",
+                  "operation": "native_mip_run",
+                  "units": 1
+                },
+                {
+                  "category": "robust_output",
+                  "operation": "source_caps_witness_and_invoice_fields",
+                  "units": 28
+                },
+                {
+                  "category": "robust_result",
+                  "operation": "native_binary_primal_admission",
+                  "units": 12
+                },
+                {
+                  "category": "robust_result",
+                  "operation": "native_status_and_primal_values",
+                  "units": 19
+                },
+                {
+                  "category": "robust_retention",
+                  "operation": "checked_proposal_and_warm_assignment",
+                  "units": 12
+                },
+                {
+                  "category": "robust_start",
+                  "operation": "checked_assignment_and_full_mip_start",
+                  "units": 29
+                },
+                {
+                  "category": "robust_start",
+                  "operation": "exact_row_epigraph_values",
+                  "units": 10
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "active_mode_set",
+                  "units": 3
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "native_row_bound_change_and_storage",
+                  "units": 25
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "native_time_and_node_caps",
+                  "units": 4
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "row_bound_lookup_and_comparison",
+                  "units": 10
+                },
+                {
+                  "category": "storage",
+                  "operation": "retained_witness_and_violation_mask",
+                  "units": 4
+                },
+                {
+                  "category": "witness_check",
+                  "operation": "retained_clause_header",
+                  "units": 1
+                },
+                {
+                  "category": "witness_check",
+                  "operation": "retained_literal",
+                  "units": 2
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "mask_and_original_weight",
+                  "units": 2
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "objective_violation_pass",
+                  "units": 1
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "retained_clause_header",
+                  "units": 2
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "retained_literal",
+                  "units": 2
+                }
+              ]
+            },
+            "timing": {
+              "process_ns": 818565,
+              "wall_ns": 820375
+            },
+            "native_timing": {
+              "process_ns": 446884,
+              "wall_ns": 449185
+            },
+            "certificate_contract": "Only the checked action is exportable. Native robust objective, status and dual bound do not certify regret or optimality; use RepairEvaluator with admitted evidence.",
+            "costs": "Actual setup/API/checking named units and native CPU/wall; native-search operation conversion, physical memory and economic price remain unassigned."
+          },
+          "after": {
+            "bound": 2,
+            "model": 2,
+            "mask": 2,
+            "action": "repair",
+            "tree_index": 0,
+            "proof_id": "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+            "critical_coefficient": [
+              -1,
+              1
+            ],
+            "critical_constant": 0,
+            "critical_weights": [
+              1,
+              3
+            ],
+            "critical_role": "proof_leaf",
+            "witness_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03",
+            "method": "tree",
+            "version": "s07-admitted-repair-evaluator-v1",
+            "row": 0,
+            "price": 8,
+            "tolerance": 0,
+            "status": "unresolved",
+            "logical_source_id": "2b72b50550c51b1699283aefe973cb72f018ee834433e4c5405af66134eaa0e0",
+            "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+            "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+            "possible_modes": [
+              [
+                0,
+                1
+              ]
+            ],
+            "method_bounds": {
+              "tree": 2,
+              "scalar_anchor": 2
+            },
+            "method_answers": {
+              "tree": {
+                "bound": 2,
+                "model": 2,
+                "mask": 2,
+                "action": "repair",
+                "tree_index": 0,
+                "proof_id": "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+                "critical_coefficient": [
+                  -1,
+                  1
+                ],
+                "critical_constant": 0,
+                "critical_weights": [
+                  1,
+                  3
+                ],
+                "critical_role": "proof_leaf",
+                "witness_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03"
+              },
+              "scalar_anchor": {
+                "action": "repair",
+                "model": 2,
+                "mask": 2,
+                "witness_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03",
+                "bound": 2,
+                "repair_gap": 2,
+                "replacement_gap": -5,
+                "mode_anchor_lowers": [
+                  1,
+                  1
+                ],
+                "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+                "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size",
+                "anchor_proof_ids": [
+                  "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+                  "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e"
+                ]
+              }
+            },
+            "unavailable": {},
+            "evidence": {
+              "tree_receipt_ids": [
+                "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e"
+              ],
+              "cut_receipt_ids": [],
+              "dual_receipt_ids": [],
+              "cost_receipt_ids": []
+            },
+            "invoice": {
+              "evaluation_units": 296,
+              "cumulative_common_meter_units": 1142
+            },
+            "domain": "One checked action over all compatible finite-row configurations and their convex hull; nonnegative objective costs",
+            "admission": "Compact trees require upstream actual raw-proof admission; candidate assignments and new cut exports are checked here"
+          }
+        },
+        {
+          "stage": "zero_search_cap_retains_paid_attempt",
+          "costs": {
+            "source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+            "representation": "joint",
+            "cohort_size": 1,
+            "possible_modes": [
+              [
+                0,
+                1
+              ]
+            ],
+            "audit_receipts": []
+          },
+          "anchor_lowers": [
+            1,
+            1
+          ],
+          "before": {
+            "bound": 2,
+            "model": 2,
+            "mask": 2,
+            "action": "repair",
+            "tree_index": 0,
+            "proof_id": "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+            "critical_coefficient": [
+              -1,
+              1
+            ],
+            "critical_constant": 0,
+            "critical_weights": [
+              1,
+              3
+            ],
+            "critical_role": "proof_leaf",
+            "witness_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03",
+            "method": "tree",
+            "version": "s07-admitted-repair-evaluator-v1",
+            "row": 0,
+            "price": 8,
+            "tolerance": 0,
+            "status": "unresolved",
+            "logical_source_id": "2b72b50550c51b1699283aefe973cb72f018ee834433e4c5405af66134eaa0e0",
+            "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+            "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+            "possible_modes": [
+              [
+                0,
+                1
+              ]
+            ],
+            "method_bounds": {
+              "tree": 2,
+              "scalar_anchor": 2
+            },
+            "method_answers": {
+              "tree": {
+                "bound": 2,
+                "model": 2,
+                "mask": 2,
+                "action": "repair",
+                "tree_index": 0,
+                "proof_id": "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+                "critical_coefficient": [
+                  -1,
+                  1
+                ],
+                "critical_constant": 0,
+                "critical_weights": [
+                  1,
+                  3
+                ],
+                "critical_role": "proof_leaf",
+                "witness_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03"
+              },
+              "scalar_anchor": {
+                "action": "repair",
+                "model": 2,
+                "mask": 2,
+                "witness_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03",
+                "bound": 2,
+                "repair_gap": 2,
+                "replacement_gap": -5,
+                "mode_anchor_lowers": [
+                  1,
+                  1
+                ],
+                "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+                "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size",
+                "anchor_proof_ids": [
+                  "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+                  "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e"
+                ]
+              }
+            },
+            "unavailable": {},
+            "evidence": {
+              "tree_receipt_ids": [
+                "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e"
+              ],
+              "cut_receipt_ids": [],
+              "dual_receipt_ids": [],
+              "cost_receipt_ids": []
+            },
+            "invoice": {
+              "evaluation_units": 278,
+              "cumulative_common_meter_units": 1420
+            },
+            "domain": "One checked action over all compatible finite-row configurations and their convex hull; nonnegative objective costs",
+            "admission": "Compact trees require upstream actual raw-proof admission; candidate assignments and new cut exports are checked here"
+          },
+          "proposal": {
+            "version": "s07-persistent-robust-witness-v1",
+            "status": "CHECKED_WITNESS",
+            "witness": {
+              "model": 2,
+              "violation_mask": 2,
+              "original_cost": 1,
+              "receipt_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03"
+            },
+            "model": 2,
+            "source_identity": "2b72b50550c51b1699283aefe973cb72f018ee834433e4c5405af66134eaa0e0",
+            "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+            "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+            "possible_modes": [
+              [
+                0,
+                1
+              ]
+            ],
+            "anchor_lowers": [
+              1,
+              1
+            ],
+            "price": 8,
+            "caps": {
+              "seconds": 0,
+              "nodes": 0
+            },
+            "checked_lower_receipt": null,
+            "independently_checked_lower": false,
+            "native_lower_is_guidance_only": true,
+            "state_before": {
+              "state_id": "robust-a8a6ed39fcdb48b4beb96154e412ab72",
+              "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+              "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+              "highs_object_id": 139688340690352,
+              "native_row_count": 11,
+              "native_column_count": 7,
+              "last_checked_model": 2,
+              "last_checked_mask": 2,
+              "calls": {
+                "proposals": 1,
+                "explicit_mip_starts": 1,
+                "native_mip_calls": 1,
+                "checked_witnesses": 1
+              }
+            },
+            "changed_native_row_bounds": 0,
+            "native": {
+              "api_status": "HighsStatus.kWarning",
+              "model_status": "HighsModelStatus.kTimeLimit",
+              "objective_hint": 2.0,
+              "mip_dual_hint": null,
+              "mip_gap_hint": null,
+              "nodes": 0,
+              "simplex_iterations": 0,
+              "value_valid": true,
+              "timing": {
+                "process_ns": 107159,
+                "wall_ns": 108340
+              }
+            },
+            "repeats_previous_model": true,
+            "state_after": {
+              "state_id": "robust-a8a6ed39fcdb48b4beb96154e412ab72",
+              "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+              "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+              "highs_object_id": 139688340690352,
+              "native_row_count": 11,
+              "native_column_count": 7,
+              "last_checked_model": 2,
+              "last_checked_mask": 2,
+              "calls": {
+                "proposals": 2,
+                "explicit_mip_starts": 2,
+                "native_mip_calls": 2,
+                "checked_witnesses": 2
+              }
+            },
+            "invoice": {
+              "total": 169,
+              "by_category": {
+                "witness_check": 3,
+                "witness_compile": 7,
+                "storage": 4,
+                "robust_admission": 27,
+                "robust_update": 17,
+                "robust_start": 39,
+                "robust_dispatch": 1,
+                "robust_result": 31,
+                "robust_retention": 12,
+                "robust_output": 28
+              },
+              "operations": [
+                {
+                  "category": "robust_admission",
+                  "operation": "anchor_price_and_cap_words",
+                  "units": 12
+                },
+                {
+                  "category": "robust_admission",
+                  "operation": "public_mode_and_possible_source_words",
+                  "units": 15
+                },
+                {
+                  "category": "robust_dispatch",
+                  "operation": "native_mip_run",
+                  "units": 1
+                },
+                {
+                  "category": "robust_output",
+                  "operation": "source_caps_witness_and_invoice_fields",
+                  "units": 28
+                },
+                {
+                  "category": "robust_result",
+                  "operation": "native_binary_primal_admission",
+                  "units": 12
+                },
+                {
+                  "category": "robust_result",
+                  "operation": "native_status_and_primal_values",
+                  "units": 19
+                },
+                {
+                  "category": "robust_retention",
+                  "operation": "checked_proposal_and_warm_assignment",
+                  "units": 12
+                },
+                {
+                  "category": "robust_start",
+                  "operation": "checked_assignment_and_full_mip_start",
+                  "units": 29
+                },
+                {
+                  "category": "robust_start",
+                  "operation": "exact_row_epigraph_values",
+                  "units": 10
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "active_mode_set",
+                  "units": 3
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "native_time_and_node_caps",
+                  "units": 4
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "row_bound_lookup_and_comparison",
+                  "units": 10
+                },
+                {
+                  "category": "storage",
+                  "operation": "retained_witness_and_violation_mask",
+                  "units": 4
+                },
+                {
+                  "category": "witness_check",
+                  "operation": "retained_clause_header",
+                  "units": 1
+                },
+                {
+                  "category": "witness_check",
+                  "operation": "retained_literal",
+                  "units": 2
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "mask_and_original_weight",
+                  "units": 2
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "objective_violation_pass",
+                  "units": 1
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "retained_clause_header",
+                  "units": 2
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "retained_literal",
+                  "units": 2
+                }
+              ]
+            },
+            "timing": {
+              "process_ns": 353665,
+              "wall_ns": 355056
+            },
+            "native_timing": {
+              "process_ns": 107159,
+              "wall_ns": 108340
+            },
+            "certificate_contract": "Only the checked action is exportable. Native robust objective, status and dual bound do not certify regret or optimality; use RepairEvaluator with admitted evidence.",
+            "costs": "Actual setup/API/checking named units and native CPU/wall; native-search operation conversion, physical memory and economic price remain unassigned."
+          },
+          "after": {
+            "bound": 2,
+            "model": 2,
+            "mask": 2,
+            "action": "repair",
+            "tree_index": 0,
+            "proof_id": "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+            "critical_coefficient": [
+              -1,
+              1
+            ],
+            "critical_constant": 0,
+            "critical_weights": [
+              1,
+              3
+            ],
+            "critical_role": "proof_leaf",
+            "witness_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03",
+            "method": "tree",
+            "version": "s07-admitted-repair-evaluator-v1",
+            "row": 0,
+            "price": 8,
+            "tolerance": 0,
+            "status": "unresolved",
+            "logical_source_id": "2b72b50550c51b1699283aefe973cb72f018ee834433e4c5405af66134eaa0e0",
+            "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+            "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+            "possible_modes": [
+              [
+                0,
+                1
+              ]
+            ],
+            "method_bounds": {
+              "tree": 2,
+              "scalar_anchor": 2
+            },
+            "method_answers": {
+              "tree": {
+                "bound": 2,
+                "model": 2,
+                "mask": 2,
+                "action": "repair",
+                "tree_index": 0,
+                "proof_id": "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+                "critical_coefficient": [
+                  -1,
+                  1
+                ],
+                "critical_constant": 0,
+                "critical_weights": [
+                  1,
+                  3
+                ],
+                "critical_role": "proof_leaf",
+                "witness_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03"
+              },
+              "scalar_anchor": {
+                "action": "repair",
+                "model": 2,
+                "mask": 2,
+                "witness_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03",
+                "bound": 2,
+                "repair_gap": 2,
+                "replacement_gap": -5,
+                "mode_anchor_lowers": [
+                  1,
+                  1
+                ],
+                "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+                "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size",
+                "anchor_proof_ids": [
+                  "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e",
+                  "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e"
+                ]
+              }
+            },
+            "unavailable": {},
+            "evidence": {
+              "tree_receipt_ids": [
+                "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e"
+              ],
+              "cut_receipt_ids": [],
+              "dual_receipt_ids": [],
+              "cost_receipt_ids": []
+            },
+            "invoice": {
+              "evaluation_units": 278,
+              "cumulative_common_meter_units": 1900
+            },
+            "domain": "One checked action over all compatible finite-row configurations and their convex hull; nonnegative objective costs",
+            "admission": "Compact trees require upstream actual raw-proof admission; candidate assignments and new cut exports are checked here"
+          }
+        }
+      ],
+      "final_native_state": {
+        "state_id": "robust-a8a6ed39fcdb48b4beb96154e412ab72",
+        "structural_source_id": "48a9aada814fe4ca18ccccccebfbc1651c3d5eaf7d15f6e710c8e212ad38660f",
+        "cost_source_id": "4acd69ccf050bcc6e9afcb4edc88f89cc4ded66ba2a566118264224cab065090",
+        "highs_object_id": 139688340690352,
+        "native_row_count": 11,
+        "native_column_count": 7,
+        "last_checked_model": 2,
+        "last_checked_mask": 2,
+        "calls": {
+          "proposals": 2,
+          "explicit_mip_starts": 2,
+          "native_mip_calls": 2,
+          "checked_witnesses": 2
+        }
+      },
+      "setup_invoice": {
+        "total": 241,
+        "by_category": {
+          "witness_check": 2,
+          "witness_compile": 9,
+          "storage": 4,
+          "robust_admission": 32,
+          "robust_setup": 60,
+          "robust_encoding": 134
+        },
+        "operations": [
+          {
+            "category": "robust_admission",
+            "operation": "logical_source_and_clause_words",
+            "units": 17
+          },
+          {
+            "category": "robust_admission",
+            "operation": "public_mode_and_possible_source_words",
+            "units": 15
+          },
+          {
+            "category": "robust_encoding",
+            "operation": "clause_literal_linear_truth",
+            "units": 16
+          },
+          {
+            "category": "robust_encoding",
+            "operation": "native_linear_row_and_coefficient_words",
+            "units": 118
+          },
+          {
+            "category": "robust_setup",
+            "operation": "native_column_and_integrality",
+            "units": 50
+          },
+          {
+            "category": "robust_setup",
+            "operation": "native_option_dispatch",
+            "units": 10
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 4
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 1
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 1
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 4
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 1
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 2
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 2
+          }
+        ]
+      },
+      "setup_timing": {
+        "process_ns": 32858092,
+        "wall_ns": 863820
+      },
+      "operation_invoice": {
+        "total": 1900,
+        "by_category": {
+          "cost_admission": 13,
+          "witness_check": 15,
+          "witness_compile": 48,
+          "storage": 27,
+          "check": 16,
+          "tree_compile": 10,
+          "cache_admission": 13,
+          "interface_binding": 187,
+          "interface_admission": 38,
+          "robust_admission": 86,
+          "robust_setup": 60,
+          "robust_encoding": 134,
+          "support": 377,
+          "certificate": 172,
+          "interface_compile": 22,
+          "vertex_query": 16,
+          "interface_query": 110,
+          "source_anchor_compile": 110,
+          "source_anchor_query": 161,
+          "robust_update": 59,
+          "robust_start": 78,
+          "robust_dispatch": 2,
+          "robust_result": 62,
+          "robust_retention": 24,
+          "robust_output": 56,
+          "retention": 4
+        },
+        "operations": [
+          {
+            "category": "cache_admission",
+            "operation": "trusted_projected_cache_fields",
+            "units": 13
+          },
+          {
+            "category": "certificate",
+            "operation": "action_proof_pair_minimum",
+            "units": 11
+          },
+          {
+            "category": "certificate",
+            "operation": "constraint_maximum_and_record",
+            "units": 161
+          },
+          {
+            "category": "check",
+            "operation": "negative_clause_header",
+            "units": 3
+          },
+          {
+            "category": "check",
+            "operation": "negative_literal",
+            "units": 4
+          },
+          {
+            "category": "check",
+            "operation": "negative_proof_node",
+            "units": 5
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_add",
+            "units": 2
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_index",
+            "units": 2
+          },
+          {
+            "category": "cost_admission",
+            "operation": "mode_and_row_words",
+            "units": 13
+          },
+          {
+            "category": "interface_admission",
+            "operation": "checked_candidate_binding_storage",
+            "units": 8
+          },
+          {
+            "category": "interface_admission",
+            "operation": "fixed_cost_source_and_mode_binding",
+            "units": 13
+          },
+          {
+            "category": "interface_admission",
+            "operation": "fixed_logical_source_and_feature_binding",
+            "units": 17
+          },
+          {
+            "category": "interface_binding",
+            "operation": "projected_action_and_proof_fields",
+            "units": 89
+          },
+          {
+            "category": "interface_binding",
+            "operation": "source_and_nonempty_mode_sets",
+            "units": 98
+          },
+          {
+            "category": "interface_compile",
+            "operation": "admitted_tree_point_minimum",
+            "units": 6
+          },
+          {
+            "category": "interface_compile",
+            "operation": "full_cohort_mode_scaling",
+            "units": 4
+          },
+          {
+            "category": "interface_compile",
+            "operation": "same_source_point_lower_maximum",
+            "units": 4
+          },
+          {
+            "category": "interface_compile",
+            "operation": "scalar_anchor_storage",
+            "units": 8
+          },
+          {
+            "category": "interface_query",
+            "operation": "method_comparison_and_source_bound_output",
+            "units": 80
+          },
+          {
+            "category": "interface_query",
+            "operation": "scalar_anchor_cache_lookup_and_read",
+            "units": 30
+          },
+          {
+            "category": "retention",
+            "operation": "new_checked_witness_reference",
+            "units": 4
+          },
+          {
+            "category": "robust_admission",
+            "operation": "anchor_price_and_cap_words",
+            "units": 24
+          },
+          {
+            "category": "robust_admission",
+            "operation": "logical_source_and_clause_words",
+            "units": 17
+          },
+          {
+            "category": "robust_admission",
+            "operation": "public_mode_and_possible_source_words",
+            "units": 45
+          },
+          {
+            "category": "robust_dispatch",
+            "operation": "native_mip_run",
+            "units": 2
+          },
+          {
+            "category": "robust_encoding",
+            "operation": "clause_literal_linear_truth",
+            "units": 16
+          },
+          {
+            "category": "robust_encoding",
+            "operation": "native_linear_row_and_coefficient_words",
+            "units": 118
+          },
+          {
+            "category": "robust_output",
+            "operation": "source_caps_witness_and_invoice_fields",
+            "units": 56
+          },
+          {
+            "category": "robust_result",
+            "operation": "native_binary_primal_admission",
+            "units": 24
+          },
+          {
+            "category": "robust_result",
+            "operation": "native_status_and_primal_values",
+            "units": 38
+          },
+          {
+            "category": "robust_retention",
+            "operation": "checked_proposal_and_warm_assignment",
+            "units": 24
+          },
+          {
+            "category": "robust_setup",
+            "operation": "native_column_and_integrality",
+            "units": 50
+          },
+          {
+            "category": "robust_setup",
+            "operation": "native_option_dispatch",
+            "units": 10
+          },
+          {
+            "category": "robust_start",
+            "operation": "checked_assignment_and_full_mip_start",
+            "units": 58
+          },
+          {
+            "category": "robust_start",
+            "operation": "exact_row_epigraph_values",
+            "units": 20
+          },
+          {
+            "category": "robust_update",
+            "operation": "active_mode_set",
+            "units": 6
+          },
+          {
+            "category": "robust_update",
+            "operation": "native_row_bound_change_and_storage",
+            "units": 25
+          },
+          {
+            "category": "robust_update",
+            "operation": "native_time_and_node_caps",
+            "units": 8
+          },
+          {
+            "category": "robust_update",
+            "operation": "row_bound_lookup_and_comparison",
+            "units": 20
+          },
+          {
+            "category": "source_anchor_compile",
+            "operation": "mode_action_costs_and_lower_scaling",
+            "units": 110
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "cohort_sums_and_clipped_regret",
+            "units": 73
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "row_mode_contrast_extrema",
+            "units": 88
+          },
+          {
+            "category": "storage",
+            "operation": "compiled_tree_leaf_masks",
+            "units": 3
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 24
+          },
+          {
+            "category": "support",
+            "operation": "coefficient_products_and_sum",
+            "units": 232
+          },
+          {
+            "category": "support",
+            "operation": "cohort_support_and_argmax_add",
+            "units": 87
+          },
+          {
+            "category": "support",
+            "operation": "row_maximum",
+            "units": 58
+          },
+          {
+            "category": "tree_compile",
+            "operation": "forced_clause_coefficient",
+            "units": 2
+          },
+          {
+            "category": "tree_compile",
+            "operation": "hard_leaf_omitted",
+            "units": 1
+          },
+          {
+            "category": "tree_compile",
+            "operation": "leaf_mask_deduplication",
+            "units": 2
+          },
+          {
+            "category": "tree_compile",
+            "operation": "proof_node_read",
+            "units": 5
+          },
+          {
+            "category": "vertex_query",
+            "operation": "mask_weight_products_and_sum",
+            "units": 16
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 6
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 9
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 18
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 6
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 12
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 12
+          }
+        ]
+      },
+      "actual_audits": [],
+      "final_profiles": [
+        {
+          "row": 0,
+          "source_identity": "2b72b50550c51b1699283aefe973cb72f018ee834433e4c5405af66134eaa0e0",
+          "witnesses": [
+            {
+              "model": 3,
+              "violation_mask": 3,
+              "original_cost": 2,
+              "receipt_id": "c274275ac3f9d50c96f5fd4d253edc2f02bfa069a3300e399f05b5cef97323fd"
+            },
+            {
+              "model": 2,
+              "violation_mask": 2,
+              "receipt_id": "120434cdc372c0fc405979de7c7c0fff6cfc45b8f5911f4140a5a3ce8ece2f03",
+              "purchase": "initial_full_source"
+            }
+          ],
+          "trees": [
+            {
+              "original_budget": 0,
+              "leaf_masks": [
+                1,
+                2
+              ],
+              "receipt_id": "c3e144c949f3c4ff5c45b14e058900f8628ae3c96d38e0abd8ad346db590df4e"
+            }
+          ]
+        }
+      ],
+      "post_call_diagnostic": {
+        "records": [
+          {
+            "stage": "initial_full_source",
+            "exact_best_scalar_repair_bound": 2,
+            "one_best_model": 1,
+            "proposed_model": 2,
+            "proposed_scalar_bound": 2,
+            "proposal_suboptimality": 0,
+            "final_evaluator_bound": 2,
+            "actual_worst_regret": 2,
+            "compatible_configurations": 2
+          },
+          {
+            "stage": "zero_search_cap_retains_paid_attempt",
+            "exact_best_scalar_repair_bound": 2,
+            "one_best_model": 1,
+            "proposed_model": 2,
+            "proposed_scalar_bound": 2,
+            "proposal_suboptimality": 0,
+            "final_evaluator_bound": 2,
+            "actual_worst_regret": 2,
+            "compatible_configurations": 2
+          }
+        ],
+        "invoice": {
+          "total": 271,
+          "by_category": {
+            "witness_check": 10,
+            "witness_compile": 23,
+            "storage": 12,
+            "source_anchor_compile": 60,
+            "source_anchor_query": 90,
+            "post_proposal_diagnostic": 76
+          },
+          "operations": [
+            {
+              "category": "post_proposal_diagnostic",
+              "operation": "actual_finite_configuration_costs_and_regret",
+              "units": 76
+            },
+            {
+              "category": "source_anchor_compile",
+              "operation": "mode_action_costs_and_lower_scaling",
+              "units": 60
+            },
+            {
+              "category": "source_anchor_query",
+              "operation": "cohort_sums_and_clipped_regret",
+              "units": 42
+            },
+            {
+              "category": "source_anchor_query",
+              "operation": "row_mode_contrast_extrema",
+              "units": 48
+            },
+            {
+              "category": "storage",
+              "operation": "retained_witness_and_violation_mask",
+              "units": 12
+            },
+            {
+              "category": "witness_check",
+              "operation": "retained_clause_header",
+              "units": 4
+            },
+            {
+              "category": "witness_check",
+              "operation": "retained_literal",
+              "units": 6
+            },
+            {
+              "category": "witness_compile",
+              "operation": "mask_and_original_weight",
+              "units": 8
+            },
+            {
+              "category": "witness_compile",
+              "operation": "objective_violation_pass",
+              "units": 3
+            },
+            {
+              "category": "witness_compile",
+              "operation": "retained_clause_header",
+              "units": 6
+            },
+            {
+              "category": "witness_compile",
+              "operation": "retained_literal",
+              "units": 6
+            }
+          ]
+        },
+        "scope": "Post-call exact small-source diagnostics only; no optimum/native bound feeds any proposal or certificate"
+      }
+    },
+    {
+      "source": {
+        "row": 0,
+        "variables": 3,
+        "hard": [
+          [
+            1,
+            2
+          ],
+          [
+            -1,
+            3
+          ]
+        ],
+        "soft": [
+          {
+            "weight": 1,
+            "clause": [
+              -1
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -2
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -3
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              1,
+              -2
+            ]
+          }
+        ],
+        "public_incumbent": 7,
+        "objective_max": 4,
+        "identity": "72f8e485687f850e86e5cfc3a6586aeaca57769c1cf00a66fdb77ee7b1e0d230"
+      },
+      "cost_manifest": {
+        "version": "s07-robust-witness-constructed-cost-source-v1",
+        "possible_cost_modes": [
+          [
+            4,
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            4,
+            3,
+            1
+          ],
+          [
+            2,
+            2,
+            1,
+            4
+          ]
+        ],
+        "cohort_size": 2,
+        "hidden_modes": [
+          0,
+          1
+        ],
+        "source_identity": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353"
+      },
+      "raw_initial_proof": [
+        "b",
+        0,
+        [
+          "b",
+          1,
+          [
+            "h",
+            0
+          ],
+          [
+            "w",
+            [
+              1
+            ]
+          ]
+        ],
+        [
+          "w",
+          [
+            0
+          ]
+        ]
+      ],
+      "raw_stronger_proof": {
+        "budget": 1,
+        "proof": [
+          "b",
+          0,
+          [
+            "b",
+            1,
+            [
+              "h",
+              0
+            ],
+            [
+              "b",
+              2,
+              [
+                "w",
+                [
+                  1,
+                  3
+                ]
+              ],
+              [
+                "w",
+                [
+                  1,
+                  2,
+                  3
+                ]
+              ]
+            ]
+          ],
+          [
+            "b",
+            2,
+            [
+              "h",
+              1
+            ],
+            [
+              "b",
+              1,
+              [
+                "w",
+                [
+                  0,
+                  2
+                ]
+              ],
+              [
+                "w",
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_native_state": {
+        "state_id": "robust-f74ca85fe6f443cd9e9e4367ef25e14d",
+        "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+        "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+        "highs_object_id": 139688340692656,
+        "native_row_count": 25,
+        "native_column_count": 12,
+        "last_checked_model": 7,
+        "last_checked_mask": 7,
+        "calls": {}
+      },
+      "stages": [
+        {
+          "stage": "weak_admitted_anchors",
+          "costs": {
+            "source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "representation": "joint",
+            "cohort_size": 2,
+            "possible_modes": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "audit_receipts": []
+          },
+          "anchor_lowers": [
+            2,
+            2,
+            4
+          ],
+          "before": {
+            "bound": 13,
+            "model": null,
+            "mask": null,
+            "action": "replace",
+            "tree_index": 0,
+            "proof_id": "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+            "critical_coefficient": [
+              -1,
+              0,
+              0,
+              0
+            ],
+            "critical_constant": 15,
+            "critical_weights": [
+              2,
+              8,
+              6,
+              2
+            ],
+            "critical_role": "proof_leaf",
+            "witness_id": null,
+            "method": "tree",
+            "version": "s07-admitted-repair-evaluator-v1",
+            "row": 0,
+            "price": 15,
+            "tolerance": 0,
+            "status": "unresolved",
+            "logical_source_id": "72f8e485687f850e86e5cfc3a6586aeaca57769c1cf00a66fdb77ee7b1e0d230",
+            "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+            "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "possible_modes": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "method_bounds": {
+              "tree": 13,
+              "scalar_anchor": 13
+            },
+            "method_answers": {
+              "tree": {
+                "bound": 13,
+                "model": null,
+                "mask": null,
+                "action": "replace",
+                "tree_index": 0,
+                "proof_id": "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+                "critical_coefficient": [
+                  -1,
+                  0,
+                  0,
+                  0
+                ],
+                "critical_constant": 15,
+                "critical_weights": [
+                  2,
+                  8,
+                  6,
+                  2
+                ],
+                "critical_role": "proof_leaf",
+                "witness_id": null
+              },
+              "scalar_anchor": {
+                "action": "replace",
+                "model": null,
+                "mask": null,
+                "witness_id": null,
+                "bound": 13,
+                "repair_gap": 13,
+                "replacement_gap": 0,
+                "mode_anchor_lowers": [
+                  2,
+                  2,
+                  4
+                ],
+                "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+                "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size",
+                "anchor_proof_ids": [
+                  "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+                  "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+                  "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328"
+                ]
+              }
+            },
+            "unavailable": {},
+            "evidence": {
+              "tree_receipt_ids": [
+                "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328"
+              ],
+              "cut_receipt_ids": [],
+              "dual_receipt_ids": [],
+              "cost_receipt_ids": []
+            },
+            "invoice": {
+              "evaluation_units": 622,
+              "cumulative_common_meter_units": 1366
+            },
+            "domain": "One checked action over all compatible finite-row configurations and their convex hull; nonnegative objective costs",
+            "admission": "Compact trees require upstream actual raw-proof admission; candidate assignments and new cut exports are checked here"
+          },
+          "proposal": {
+            "version": "s07-persistent-robust-witness-v1",
+            "status": "CHECKED_WITNESS",
+            "witness": {
+              "model": 2,
+              "violation_mask": 10,
+              "original_cost": 2,
+              "receipt_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0"
+            },
+            "model": 2,
+            "source_identity": "72f8e485687f850e86e5cfc3a6586aeaca57769c1cf00a66fdb77ee7b1e0d230",
+            "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+            "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "possible_modes": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "anchor_lowers": [
+              2,
+              2,
+              4
+            ],
+            "price": 15,
+            "caps": {
+              "seconds": 0.1,
+              "nodes": 1000
+            },
+            "checked_lower_receipt": null,
+            "independently_checked_lower": false,
+            "native_lower_is_guidance_only": true,
+            "state_before": {
+              "state_id": "robust-f74ca85fe6f443cd9e9e4367ef25e14d",
+              "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+              "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+              "highs_object_id": 139688340692656,
+              "native_row_count": 25,
+              "native_column_count": 12,
+              "last_checked_model": 7,
+              "last_checked_mask": 7,
+              "calls": {}
+            },
+            "changed_native_row_bounds": 13,
+            "native": {
+              "api_status": "HighsStatus.kOk",
+              "model_status": "HighsModelStatus.kOptimal",
+              "objective_hint": 8.0,
+              "mip_dual_hint": 8.0,
+              "mip_gap_hint": 0.0,
+              "nodes": 1,
+              "simplex_iterations": 6,
+              "value_valid": true,
+              "timing": {
+                "process_ns": 72061292,
+                "wall_ns": 8122761
+              }
+            },
+            "repeats_previous_model": false,
+            "state_after": {
+              "state_id": "robust-f74ca85fe6f443cd9e9e4367ef25e14d",
+              "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+              "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+              "highs_object_id": 139688340692656,
+              "native_row_count": 25,
+              "native_column_count": 12,
+              "last_checked_model": 2,
+              "last_checked_mask": 10,
+              "calls": {
+                "proposals": 1,
+                "explicit_mip_starts": 1,
+                "native_mip_calls": 1,
+                "checked_witnesses": 1
+              }
+            },
+            "invoice": {
+              "total": 339,
+              "by_category": {
+                "witness_check": 5,
+                "witness_compile": 14,
+                "storage": 5,
+                "robust_admission": 42,
+                "robust_update": 103,
+                "robust_start": 81,
+                "robust_dispatch": 1,
+                "robust_result": 45,
+                "robust_retention": 15,
+                "robust_output": 28
+              },
+              "operations": [
+                {
+                  "category": "robust_admission",
+                  "operation": "anchor_price_and_cap_words",
+                  "units": 14
+                },
+                {
+                  "category": "robust_admission",
+                  "operation": "public_mode_and_possible_source_words",
+                  "units": 28
+                },
+                {
+                  "category": "robust_dispatch",
+                  "operation": "native_mip_run",
+                  "units": 1
+                },
+                {
+                  "category": "robust_output",
+                  "operation": "source_caps_witness_and_invoice_fields",
+                  "units": 28
+                },
+                {
+                  "category": "robust_result",
+                  "operation": "native_binary_primal_admission",
+                  "units": 21
+                },
+                {
+                  "category": "robust_result",
+                  "operation": "native_status_and_primal_values",
+                  "units": 24
+                },
+                {
+                  "category": "robust_retention",
+                  "operation": "checked_proposal_and_warm_assignment",
+                  "units": 15
+                },
+                {
+                  "category": "robust_start",
+                  "operation": "checked_assignment_and_full_mip_start",
+                  "units": 55
+                },
+                {
+                  "category": "robust_start",
+                  "operation": "exact_row_epigraph_values",
+                  "units": 26
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "active_mode_set",
+                  "units": 8
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "native_row_bound_change_and_storage",
+                  "units": 65
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "native_time_and_node_caps",
+                  "units": 4
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "row_bound_lookup_and_comparison",
+                  "units": 26
+                },
+                {
+                  "category": "storage",
+                  "operation": "retained_witness_and_violation_mask",
+                  "units": 5
+                },
+                {
+                  "category": "witness_check",
+                  "operation": "retained_clause_header",
+                  "units": 2
+                },
+                {
+                  "category": "witness_check",
+                  "operation": "retained_literal",
+                  "units": 3
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "mask_and_original_weight",
+                  "units": 4
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "objective_violation_pass",
+                  "units": 1
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "retained_clause_header",
+                  "units": 4
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "retained_literal",
+                  "units": 5
+                }
+              ]
+            },
+            "timing": {
+              "process_ns": 104514354,
+              "wall_ns": 8571486
+            },
+            "native_timing": {
+              "process_ns": 72061292,
+              "wall_ns": 8122761
+            },
+            "certificate_contract": "Only the checked action is exportable. Native robust objective, status and dual bound do not certify regret or optimality; use RepairEvaluator with admitted evidence.",
+            "costs": "Actual setup/API/checking named units and native CPU/wall; native-search operation conversion, physical memory and economic price remain unassigned."
+          },
+          "after": {
+            "bound": 8,
+            "model": 2,
+            "mask": 10,
+            "action": "repair",
+            "tree_index": 0,
+            "proof_id": "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+            "critical_coefficient": [
+              -1,
+              1,
+              0,
+              1
+            ],
+            "critical_constant": 0,
+            "critical_weights": [
+              4,
+              4,
+              2,
+              8
+            ],
+            "critical_role": "proof_leaf",
+            "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0",
+            "method": "tree",
+            "version": "s07-admitted-repair-evaluator-v1",
+            "row": 0,
+            "price": 15,
+            "tolerance": 0,
+            "status": "unresolved",
+            "logical_source_id": "72f8e485687f850e86e5cfc3a6586aeaca57769c1cf00a66fdb77ee7b1e0d230",
+            "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+            "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "possible_modes": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "method_bounds": {
+              "tree": 8,
+              "scalar_anchor": 8
+            },
+            "method_answers": {
+              "tree": {
+                "bound": 8,
+                "model": 2,
+                "mask": 10,
+                "action": "repair",
+                "tree_index": 0,
+                "proof_id": "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+                "critical_coefficient": [
+                  -1,
+                  1,
+                  0,
+                  1
+                ],
+                "critical_constant": 0,
+                "critical_weights": [
+                  4,
+                  4,
+                  2,
+                  8
+                ],
+                "critical_role": "proof_leaf",
+                "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0"
+              },
+              "scalar_anchor": {
+                "action": "repair",
+                "model": 2,
+                "mask": 10,
+                "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0",
+                "bound": 8,
+                "repair_gap": 8,
+                "replacement_gap": -3,
+                "mode_anchor_lowers": [
+                  2,
+                  2,
+                  4
+                ],
+                "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+                "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size",
+                "anchor_proof_ids": [
+                  "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+                  "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+                  "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328"
+                ]
+              }
+            },
+            "unavailable": {},
+            "evidence": {
+              "tree_receipt_ids": [
+                "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328"
+              ],
+              "cut_receipt_ids": [],
+              "dual_receipt_ids": [],
+              "cost_receipt_ids": []
+            },
+            "invoice": {
+              "evaluation_units": 826,
+              "cumulative_common_meter_units": 2579
+            },
+            "domain": "One checked action over all compatible finite-row configurations and their convex hull; nonnegative objective costs",
+            "admission": "Compact trees require upstream actual raw-proof admission; candidate assignments and new cut exports are checked here"
+          }
+        },
+        {
+          "stage": "stronger_raw_checked_anchors",
+          "costs": {
+            "source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "representation": "joint",
+            "cohort_size": 2,
+            "possible_modes": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "audit_receipts": []
+          },
+          "anchor_lowers": [
+            8,
+            8,
+            6
+          ],
+          "before": {
+            "bound": 6,
+            "model": 2,
+            "mask": 10,
+            "action": "repair",
+            "tree_index": 1,
+            "proof_id": "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+            "critical_coefficient": [
+              -1,
+              1,
+              -1,
+              1
+            ],
+            "critical_constant": 0,
+            "critical_weights": [
+              4,
+              4,
+              2,
+              8
+            ],
+            "critical_role": "proof_leaf",
+            "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0",
+            "method": "tree",
+            "version": "s07-admitted-repair-evaluator-v1",
+            "row": 0,
+            "price": 15,
+            "tolerance": 0,
+            "status": "unresolved",
+            "logical_source_id": "72f8e485687f850e86e5cfc3a6586aeaca57769c1cf00a66fdb77ee7b1e0d230",
+            "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+            "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "possible_modes": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "method_bounds": {
+              "tree": 6,
+              "scalar_anchor": 6
+            },
+            "method_answers": {
+              "tree": {
+                "bound": 6,
+                "model": 2,
+                "mask": 10,
+                "action": "repair",
+                "tree_index": 1,
+                "proof_id": "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                "critical_coefficient": [
+                  -1,
+                  1,
+                  -1,
+                  1
+                ],
+                "critical_constant": 0,
+                "critical_weights": [
+                  4,
+                  4,
+                  2,
+                  8
+                ],
+                "critical_role": "proof_leaf",
+                "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0"
+              },
+              "scalar_anchor": {
+                "action": "repair",
+                "model": 2,
+                "mask": 10,
+                "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0",
+                "bound": 6,
+                "repair_gap": 6,
+                "replacement_gap": -3,
+                "mode_anchor_lowers": [
+                  8,
+                  8,
+                  6
+                ],
+                "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+                "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size",
+                "anchor_proof_ids": [
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5"
+                ]
+              }
+            },
+            "unavailable": {},
+            "evidence": {
+              "tree_receipt_ids": [
+                "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+                "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5"
+              ],
+              "cut_receipt_ids": [],
+              "dual_receipt_ids": [],
+              "cost_receipt_ids": []
+            },
+            "invoice": {
+              "evaluation_units": 1960,
+              "cumulative_common_meter_units": 4638
+            },
+            "domain": "One checked action over all compatible finite-row configurations and their convex hull; nonnegative objective costs",
+            "admission": "Compact trees require upstream actual raw-proof admission; candidate assignments and new cut exports are checked here"
+          },
+          "proposal": {
+            "version": "s07-persistent-robust-witness-v1",
+            "status": "CHECKED_WITNESS",
+            "witness": {
+              "model": 5,
+              "violation_mask": 5,
+              "original_cost": 2,
+              "receipt_id": "b60362f9123c55566b74791b9f189b3b21e68955eb775425ea6a41fb70d1899f"
+            },
+            "model": 5,
+            "source_identity": "72f8e485687f850e86e5cfc3a6586aeaca57769c1cf00a66fdb77ee7b1e0d230",
+            "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+            "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "possible_modes": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "anchor_lowers": [
+              8,
+              8,
+              6
+            ],
+            "price": 15,
+            "caps": {
+              "seconds": 0.1,
+              "nodes": 1000
+            },
+            "checked_lower_receipt": null,
+            "independently_checked_lower": false,
+            "native_lower_is_guidance_only": true,
+            "state_before": {
+              "state_id": "robust-f74ca85fe6f443cd9e9e4367ef25e14d",
+              "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+              "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+              "highs_object_id": 139688340692656,
+              "native_row_count": 25,
+              "native_column_count": 12,
+              "last_checked_model": 2,
+              "last_checked_mask": 10,
+              "calls": {
+                "proposals": 1,
+                "explicit_mip_starts": 1,
+                "native_mip_calls": 1,
+                "checked_witnesses": 1
+              }
+            },
+            "changed_native_row_bounds": 6,
+            "native": {
+              "api_status": "HighsStatus.kOk",
+              "model_status": "HighsModelStatus.kOptimal",
+              "objective_hint": 4.0,
+              "mip_dual_hint": 4.0,
+              "mip_gap_hint": 0.0,
+              "nodes": 1,
+              "simplex_iterations": 0,
+              "value_valid": true,
+              "timing": {
+                "process_ns": 70684258,
+                "wall_ns": 6728096
+              }
+            },
+            "repeats_previous_model": false,
+            "state_after": {
+              "state_id": "robust-f74ca85fe6f443cd9e9e4367ef25e14d",
+              "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+              "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+              "highs_object_id": 139688340692656,
+              "native_row_count": 25,
+              "native_column_count": 12,
+              "last_checked_model": 5,
+              "last_checked_mask": 5,
+              "calls": {
+                "proposals": 2,
+                "explicit_mip_starts": 2,
+                "native_mip_calls": 2,
+                "checked_witnesses": 2
+              }
+            },
+            "invoice": {
+              "total": 303,
+              "by_category": {
+                "witness_check": 5,
+                "witness_compile": 13,
+                "storage": 5,
+                "robust_admission": 42,
+                "robust_update": 68,
+                "robust_start": 81,
+                "robust_dispatch": 1,
+                "robust_result": 45,
+                "robust_retention": 15,
+                "robust_output": 28
+              },
+              "operations": [
+                {
+                  "category": "robust_admission",
+                  "operation": "anchor_price_and_cap_words",
+                  "units": 14
+                },
+                {
+                  "category": "robust_admission",
+                  "operation": "public_mode_and_possible_source_words",
+                  "units": 28
+                },
+                {
+                  "category": "robust_dispatch",
+                  "operation": "native_mip_run",
+                  "units": 1
+                },
+                {
+                  "category": "robust_output",
+                  "operation": "source_caps_witness_and_invoice_fields",
+                  "units": 28
+                },
+                {
+                  "category": "robust_result",
+                  "operation": "native_binary_primal_admission",
+                  "units": 21
+                },
+                {
+                  "category": "robust_result",
+                  "operation": "native_status_and_primal_values",
+                  "units": 24
+                },
+                {
+                  "category": "robust_retention",
+                  "operation": "checked_proposal_and_warm_assignment",
+                  "units": 15
+                },
+                {
+                  "category": "robust_start",
+                  "operation": "checked_assignment_and_full_mip_start",
+                  "units": 55
+                },
+                {
+                  "category": "robust_start",
+                  "operation": "exact_row_epigraph_values",
+                  "units": 26
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "active_mode_set",
+                  "units": 8
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "native_row_bound_change_and_storage",
+                  "units": 30
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "native_time_and_node_caps",
+                  "units": 4
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "row_bound_lookup_and_comparison",
+                  "units": 26
+                },
+                {
+                  "category": "storage",
+                  "operation": "retained_witness_and_violation_mask",
+                  "units": 5
+                },
+                {
+                  "category": "witness_check",
+                  "operation": "retained_clause_header",
+                  "units": 2
+                },
+                {
+                  "category": "witness_check",
+                  "operation": "retained_literal",
+                  "units": 3
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "mask_and_original_weight",
+                  "units": 4
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "objective_violation_pass",
+                  "units": 1
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "retained_clause_header",
+                  "units": 4
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "retained_literal",
+                  "units": 4
+                }
+              ]
+            },
+            "timing": {
+              "process_ns": 71066134,
+              "wall_ns": 7109060
+            },
+            "native_timing": {
+              "process_ns": 70684258,
+              "wall_ns": 6728096
+            },
+            "certificate_contract": "Only the checked action is exportable. Native robust objective, status and dual bound do not certify regret or optimality; use RepairEvaluator with admitted evidence.",
+            "costs": "Actual setup/API/checking named units and native CPU/wall; native-search operation conversion, physical memory and economic price remain unassigned."
+          },
+          "after": {
+            "bound": 4,
+            "model": 5,
+            "mask": 5,
+            "action": "repair",
+            "tree_index": 1,
+            "proof_id": "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+            "critical_coefficient": [
+              1,
+              -1,
+              1,
+              -1
+            ],
+            "critical_constant": 0,
+            "critical_weights": [
+              8,
+              2,
+              4,
+              6
+            ],
+            "critical_role": "proof_leaf",
+            "witness_id": "b60362f9123c55566b74791b9f189b3b21e68955eb775425ea6a41fb70d1899f",
+            "method": "tree",
+            "version": "s07-admitted-repair-evaluator-v1",
+            "row": 0,
+            "price": 15,
+            "tolerance": 0,
+            "status": "unresolved",
+            "logical_source_id": "72f8e485687f850e86e5cfc3a6586aeaca57769c1cf00a66fdb77ee7b1e0d230",
+            "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+            "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "possible_modes": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "method_bounds": {
+              "tree": 4,
+              "scalar_anchor": 4
+            },
+            "method_answers": {
+              "tree": {
+                "bound": 4,
+                "model": 5,
+                "mask": 5,
+                "action": "repair",
+                "tree_index": 1,
+                "proof_id": "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                "critical_coefficient": [
+                  1,
+                  -1,
+                  1,
+                  -1
+                ],
+                "critical_constant": 0,
+                "critical_weights": [
+                  8,
+                  2,
+                  4,
+                  6
+                ],
+                "critical_role": "proof_leaf",
+                "witness_id": "b60362f9123c55566b74791b9f189b3b21e68955eb775425ea6a41fb70d1899f"
+              },
+              "scalar_anchor": {
+                "action": "repair",
+                "model": 5,
+                "mask": 5,
+                "witness_id": "b60362f9123c55566b74791b9f189b3b21e68955eb775425ea6a41fb70d1899f",
+                "bound": 4,
+                "repair_gap": 4,
+                "replacement_gap": -3,
+                "mode_anchor_lowers": [
+                  8,
+                  8,
+                  6
+                ],
+                "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+                "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size",
+                "anchor_proof_ids": [
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5"
+                ]
+              }
+            },
+            "unavailable": {},
+            "evidence": {
+              "tree_receipt_ids": [
+                "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+                "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5"
+              ],
+              "cut_receipt_ids": [],
+              "dual_receipt_ids": [],
+              "cost_receipt_ids": []
+            },
+            "invoice": {
+              "evaluation_units": 2387,
+              "cumulative_common_meter_units": 7385
+            },
+            "domain": "One checked action over all compatible finite-row configurations and their convex hull; nonnegative objective costs",
+            "admission": "Compact trees require upstream actual raw-proof admission; candidate assignments and new cut exports are checked here"
+          }
+        },
+        {
+          "stage": "after_actual_row_zero_coordinate_zero_audit",
+          "costs": {
+            "source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "representation": "joint",
+            "cohort_size": 2,
+            "possible_modes": [
+              [
+                0
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "audit_receipts": [
+              "e5e8cb4e6ecdf877292dda7a08a2323e03848781cca2b7ce61cbf9cfe3b76b11"
+            ]
+          },
+          "anchor_lowers": [
+            8,
+            8,
+            6
+          ],
+          "before": {
+            "bound": 1,
+            "model": 2,
+            "mask": 10,
+            "action": "repair",
+            "tree_index": 1,
+            "proof_id": "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+            "critical_coefficient": [
+              -1,
+              1,
+              -1,
+              1
+            ],
+            "critical_constant": 0,
+            "critical_weights": [
+              6,
+              3,
+              3,
+              7
+            ],
+            "critical_role": "proof_leaf",
+            "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0",
+            "method": "tree",
+            "version": "s07-admitted-repair-evaluator-v1",
+            "row": 0,
+            "price": 15,
+            "tolerance": 0,
+            "status": "unresolved",
+            "logical_source_id": "72f8e485687f850e86e5cfc3a6586aeaca57769c1cf00a66fdb77ee7b1e0d230",
+            "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+            "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "possible_modes": [
+              [
+                0
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "method_bounds": {
+              "tree": 1,
+              "scalar_anchor": 3
+            },
+            "method_answers": {
+              "tree": {
+                "bound": 1,
+                "model": 2,
+                "mask": 10,
+                "action": "repair",
+                "tree_index": 1,
+                "proof_id": "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                "critical_coefficient": [
+                  -1,
+                  1,
+                  -1,
+                  1
+                ],
+                "critical_constant": 0,
+                "critical_weights": [
+                  6,
+                  3,
+                  3,
+                  7
+                ],
+                "critical_role": "proof_leaf",
+                "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0"
+              },
+              "scalar_anchor": {
+                "action": "repair",
+                "model": 2,
+                "mask": 10,
+                "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0",
+                "bound": 3,
+                "repair_gap": 3,
+                "replacement_gap": -5,
+                "mode_anchor_lowers": [
+                  8,
+                  8,
+                  6
+                ],
+                "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+                "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size",
+                "anchor_proof_ids": [
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5"
+                ]
+              }
+            },
+            "unavailable": {},
+            "evidence": {
+              "tree_receipt_ids": [
+                "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+                "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5"
+              ],
+              "cut_receipt_ids": [],
+              "dual_receipt_ids": [],
+              "cost_receipt_ids": [
+                "e5e8cb4e6ecdf877292dda7a08a2323e03848781cca2b7ce61cbf9cfe3b76b11"
+              ]
+            },
+            "invoice": {
+              "evaluation_units": 1794,
+              "cumulative_common_meter_units": 9203
+            },
+            "domain": "One checked action over all compatible finite-row configurations and their convex hull; nonnegative objective costs",
+            "admission": "Compact trees require upstream actual raw-proof admission; candidate assignments and new cut exports are checked here"
+          },
+          "proposal": {
+            "version": "s07-persistent-robust-witness-v1",
+            "status": "CHECKED_WITNESS",
+            "witness": {
+              "model": 2,
+              "violation_mask": 10,
+              "original_cost": 2,
+              "receipt_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0"
+            },
+            "model": 2,
+            "source_identity": "72f8e485687f850e86e5cfc3a6586aeaca57769c1cf00a66fdb77ee7b1e0d230",
+            "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+            "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "possible_modes": [
+              [
+                0
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "anchor_lowers": [
+              8,
+              8,
+              6
+            ],
+            "price": 15,
+            "caps": {
+              "seconds": 0.1,
+              "nodes": 1000
+            },
+            "checked_lower_receipt": null,
+            "independently_checked_lower": false,
+            "native_lower_is_guidance_only": true,
+            "state_before": {
+              "state_id": "robust-f74ca85fe6f443cd9e9e4367ef25e14d",
+              "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+              "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+              "highs_object_id": 139688340692656,
+              "native_row_count": 25,
+              "native_column_count": 12,
+              "last_checked_model": 5,
+              "last_checked_mask": 5,
+              "calls": {
+                "proposals": 2,
+                "explicit_mip_starts": 2,
+                "native_mip_calls": 2,
+                "checked_witnesses": 2
+              }
+            },
+            "changed_native_row_bounds": 4,
+            "native": {
+              "api_status": "HighsStatus.kOk",
+              "model_status": "HighsModelStatus.kOptimal",
+              "objective_hint": 3.0,
+              "mip_dual_hint": 3.0,
+              "mip_gap_hint": 0.0,
+              "nodes": 0,
+              "simplex_iterations": 0,
+              "value_valid": true,
+              "timing": {
+                "process_ns": 361907,
+                "wall_ns": 363749
+              }
+            },
+            "repeats_previous_model": false,
+            "state_after": {
+              "state_id": "robust-f74ca85fe6f443cd9e9e4367ef25e14d",
+              "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+              "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+              "highs_object_id": 139688340692656,
+              "native_row_count": 25,
+              "native_column_count": 12,
+              "last_checked_model": 2,
+              "last_checked_mask": 10,
+              "calls": {
+                "proposals": 3,
+                "explicit_mip_starts": 3,
+                "native_mip_calls": 3,
+                "checked_witnesses": 3
+              }
+            },
+            "invoice": {
+              "total": 284,
+              "by_category": {
+                "witness_check": 5,
+                "witness_compile": 14,
+                "storage": 5,
+                "robust_admission": 40,
+                "robust_update": 56,
+                "robust_start": 75,
+                "robust_dispatch": 1,
+                "robust_result": 45,
+                "robust_retention": 15,
+                "robust_output": 28
+              },
+              "operations": [
+                {
+                  "category": "robust_admission",
+                  "operation": "anchor_price_and_cap_words",
+                  "units": 14
+                },
+                {
+                  "category": "robust_admission",
+                  "operation": "public_mode_and_possible_source_words",
+                  "units": 26
+                },
+                {
+                  "category": "robust_dispatch",
+                  "operation": "native_mip_run",
+                  "units": 1
+                },
+                {
+                  "category": "robust_output",
+                  "operation": "source_caps_witness_and_invoice_fields",
+                  "units": 28
+                },
+                {
+                  "category": "robust_result",
+                  "operation": "native_binary_primal_admission",
+                  "units": 21
+                },
+                {
+                  "category": "robust_result",
+                  "operation": "native_status_and_primal_values",
+                  "units": 24
+                },
+                {
+                  "category": "robust_retention",
+                  "operation": "checked_proposal_and_warm_assignment",
+                  "units": 15
+                },
+                {
+                  "category": "robust_start",
+                  "operation": "checked_assignment_and_full_mip_start",
+                  "units": 55
+                },
+                {
+                  "category": "robust_start",
+                  "operation": "exact_row_epigraph_values",
+                  "units": 20
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "active_mode_set",
+                  "units": 6
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "native_row_bound_change_and_storage",
+                  "units": 20
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "native_time_and_node_caps",
+                  "units": 4
+                },
+                {
+                  "category": "robust_update",
+                  "operation": "row_bound_lookup_and_comparison",
+                  "units": 26
+                },
+                {
+                  "category": "storage",
+                  "operation": "retained_witness_and_violation_mask",
+                  "units": 5
+                },
+                {
+                  "category": "witness_check",
+                  "operation": "retained_clause_header",
+                  "units": 2
+                },
+                {
+                  "category": "witness_check",
+                  "operation": "retained_literal",
+                  "units": 3
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "mask_and_original_weight",
+                  "units": 4
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "objective_violation_pass",
+                  "units": 1
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "retained_clause_header",
+                  "units": 4
+                },
+                {
+                  "category": "witness_compile",
+                  "operation": "retained_literal",
+                  "units": 5
+                }
+              ]
+            },
+            "timing": {
+              "process_ns": 739177,
+              "wall_ns": 740457
+            },
+            "native_timing": {
+              "process_ns": 361907,
+              "wall_ns": 363749
+            },
+            "certificate_contract": "Only the checked action is exportable. Native robust objective, status and dual bound do not certify regret or optimality; use RepairEvaluator with admitted evidence.",
+            "costs": "Actual setup/API/checking named units and native CPU/wall; native-search operation conversion, physical memory and economic price remain unassigned."
+          },
+          "after": {
+            "bound": 1,
+            "model": 2,
+            "mask": 10,
+            "action": "repair",
+            "tree_index": 1,
+            "proof_id": "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+            "critical_coefficient": [
+              -1,
+              1,
+              -1,
+              1
+            ],
+            "critical_constant": 0,
+            "critical_weights": [
+              6,
+              3,
+              3,
+              7
+            ],
+            "critical_role": "proof_leaf",
+            "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0",
+            "method": "tree",
+            "version": "s07-admitted-repair-evaluator-v1",
+            "row": 0,
+            "price": 15,
+            "tolerance": 0,
+            "status": "unresolved",
+            "logical_source_id": "72f8e485687f850e86e5cfc3a6586aeaca57769c1cf00a66fdb77ee7b1e0d230",
+            "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+            "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+            "possible_modes": [
+              [
+                0
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "method_bounds": {
+              "tree": 1,
+              "scalar_anchor": 3
+            },
+            "method_answers": {
+              "tree": {
+                "bound": 1,
+                "model": 2,
+                "mask": 10,
+                "action": "repair",
+                "tree_index": 1,
+                "proof_id": "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                "critical_coefficient": [
+                  -1,
+                  1,
+                  -1,
+                  1
+                ],
+                "critical_constant": 0,
+                "critical_weights": [
+                  6,
+                  3,
+                  3,
+                  7
+                ],
+                "critical_role": "proof_leaf",
+                "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0"
+              },
+              "scalar_anchor": {
+                "action": "repair",
+                "model": 2,
+                "mask": 10,
+                "witness_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0",
+                "bound": 3,
+                "repair_gap": 3,
+                "replacement_gap": -5,
+                "mode_anchor_lowers": [
+                  8,
+                  8,
+                  6
+                ],
+                "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+                "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size",
+                "anchor_proof_ids": [
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+                  "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5"
+                ]
+              }
+            },
+            "unavailable": {},
+            "evidence": {
+              "tree_receipt_ids": [
+                "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328",
+                "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5"
+              ],
+              "cut_receipt_ids": [],
+              "dual_receipt_ids": [],
+              "cost_receipt_ids": [
+                "e5e8cb4e6ecdf877292dda7a08a2323e03848781cca2b7ce61cbf9cfe3b76b11"
+              ]
+            },
+            "invoice": {
+              "evaluation_units": 1794,
+              "cumulative_common_meter_units": 11335
+            },
+            "domain": "One checked action over all compatible finite-row configurations and their convex hull; nonnegative objective costs",
+            "admission": "Compact trees require upstream actual raw-proof admission; candidate assignments and new cut exports are checked here"
+          }
+        }
+      ],
+      "final_native_state": {
+        "state_id": "robust-f74ca85fe6f443cd9e9e4367ef25e14d",
+        "structural_source_id": "29681fabff8312b3bd1d60c4a228c22b614eed140bcc159e2a9497e018af1298",
+        "cost_source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+        "highs_object_id": 139688340692656,
+        "native_row_count": 25,
+        "native_column_count": 12,
+        "last_checked_model": 2,
+        "last_checked_mask": 10,
+        "calls": {
+          "proposals": 3,
+          "explicit_mip_starts": 3,
+          "native_mip_calls": 3,
+          "checked_witnesses": 3
+        }
+      },
+      "setup_invoice": {
+        "total": 540,
+        "by_category": {
+          "witness_check": 5,
+          "witness_compile": 15,
+          "storage": 5,
+          "robust_admission": 55,
+          "robust_setup": 96,
+          "robust_encoding": 364
+        },
+        "operations": [
+          {
+            "category": "robust_admission",
+            "operation": "logical_source_and_clause_words",
+            "units": 27
+          },
+          {
+            "category": "robust_admission",
+            "operation": "public_mode_and_possible_source_words",
+            "units": 28
+          },
+          {
+            "category": "robust_encoding",
+            "operation": "clause_literal_linear_truth",
+            "units": 36
+          },
+          {
+            "category": "robust_encoding",
+            "operation": "native_linear_row_and_coefficient_words",
+            "units": 328
+          },
+          {
+            "category": "robust_setup",
+            "operation": "native_column_and_integrality",
+            "units": 86
+          },
+          {
+            "category": "robust_setup",
+            "operation": "native_option_dispatch",
+            "units": 10
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 5
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 2
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 3
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 6
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 1
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 4
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 4
+          }
+        ]
+      },
+      "setup_timing": {
+        "process_ns": 581523,
+        "wall_ns": 584095
+      },
+      "operation_invoice": {
+        "total": 11335,
+        "by_category": {
+          "cost_admission": 22,
+          "witness_check": 40,
+          "witness_compile": 113,
+          "storage": 57,
+          "check": 75,
+          "tree_compile": 37,
+          "cache_admission": 13,
+          "interface_binding": 433,
+          "interface_admission": 61,
+          "robust_admission": 179,
+          "robust_setup": 96,
+          "robust_encoding": 364,
+          "support": 6920,
+          "certificate": 580,
+          "interface_compile": 108,
+          "vertex_query": 192,
+          "interface_query": 183,
+          "source_anchor_compile": 540,
+          "source_anchor_query": 560,
+          "robust_update": 227,
+          "robust_start": 237,
+          "robust_dispatch": 3,
+          "robust_result": 135,
+          "robust_retention": 45,
+          "robust_output": 84,
+          "retention": 16,
+          "cost_check": 15
+        },
+        "operations": [
+          {
+            "category": "cache_admission",
+            "operation": "trusted_projected_cache_fields",
+            "units": 13
+          },
+          {
+            "category": "certificate",
+            "operation": "action_proof_pair_minimum",
+            "units": 35
+          },
+          {
+            "category": "certificate",
+            "operation": "constraint_maximum_and_record",
+            "units": 545
+          },
+          {
+            "category": "check",
+            "operation": "negative_clause_header",
+            "units": 15
+          },
+          {
+            "category": "check",
+            "operation": "negative_literal",
+            "units": 20
+          },
+          {
+            "category": "check",
+            "operation": "negative_proof_node",
+            "units": 16
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_add",
+            "units": 12
+          },
+          {
+            "category": "check",
+            "operation": "negative_weight_index",
+            "units": 12
+          },
+          {
+            "category": "cost_admission",
+            "operation": "mode_and_row_words",
+            "units": 22
+          },
+          {
+            "category": "cost_check",
+            "operation": "receipt_binding_and_mode_filter",
+            "units": 15
+          },
+          {
+            "category": "interface_admission",
+            "operation": "checked_candidate_binding_storage",
+            "units": 12
+          },
+          {
+            "category": "interface_admission",
+            "operation": "fixed_cost_source_and_mode_binding",
+            "units": 22
+          },
+          {
+            "category": "interface_admission",
+            "operation": "fixed_logical_source_and_feature_binding",
+            "units": 27
+          },
+          {
+            "category": "interface_binding",
+            "operation": "projected_action_and_proof_fields",
+            "units": 179
+          },
+          {
+            "category": "interface_binding",
+            "operation": "source_and_nonempty_mode_sets",
+            "units": 254
+          },
+          {
+            "category": "interface_compile",
+            "operation": "admitted_tree_point_minimum",
+            "units": 33
+          },
+          {
+            "category": "interface_compile",
+            "operation": "full_cohort_mode_scaling",
+            "units": 24
+          },
+          {
+            "category": "interface_compile",
+            "operation": "same_source_point_lower_maximum",
+            "units": 15
+          },
+          {
+            "category": "interface_compile",
+            "operation": "scalar_anchor_storage",
+            "units": 36
+          },
+          {
+            "category": "interface_query",
+            "operation": "method_comparison_and_source_bound_output",
+            "units": 120
+          },
+          {
+            "category": "interface_query",
+            "operation": "scalar_anchor_cache_lookup_and_read",
+            "units": 63
+          },
+          {
+            "category": "retention",
+            "operation": "new_checked_tree_reference",
+            "units": 8
+          },
+          {
+            "category": "retention",
+            "operation": "new_checked_witness_reference",
+            "units": 8
+          },
+          {
+            "category": "robust_admission",
+            "operation": "anchor_price_and_cap_words",
+            "units": 42
+          },
+          {
+            "category": "robust_admission",
+            "operation": "logical_source_and_clause_words",
+            "units": 27
+          },
+          {
+            "category": "robust_admission",
+            "operation": "public_mode_and_possible_source_words",
+            "units": 110
+          },
+          {
+            "category": "robust_dispatch",
+            "operation": "native_mip_run",
+            "units": 3
+          },
+          {
+            "category": "robust_encoding",
+            "operation": "clause_literal_linear_truth",
+            "units": 36
+          },
+          {
+            "category": "robust_encoding",
+            "operation": "native_linear_row_and_coefficient_words",
+            "units": 328
+          },
+          {
+            "category": "robust_output",
+            "operation": "source_caps_witness_and_invoice_fields",
+            "units": 84
+          },
+          {
+            "category": "robust_result",
+            "operation": "native_binary_primal_admission",
+            "units": 63
+          },
+          {
+            "category": "robust_result",
+            "operation": "native_status_and_primal_values",
+            "units": 72
+          },
+          {
+            "category": "robust_retention",
+            "operation": "checked_proposal_and_warm_assignment",
+            "units": 45
+          },
+          {
+            "category": "robust_setup",
+            "operation": "native_column_and_integrality",
+            "units": 86
+          },
+          {
+            "category": "robust_setup",
+            "operation": "native_option_dispatch",
+            "units": 10
+          },
+          {
+            "category": "robust_start",
+            "operation": "checked_assignment_and_full_mip_start",
+            "units": 165
+          },
+          {
+            "category": "robust_start",
+            "operation": "exact_row_epigraph_values",
+            "units": 72
+          },
+          {
+            "category": "robust_update",
+            "operation": "active_mode_set",
+            "units": 22
+          },
+          {
+            "category": "robust_update",
+            "operation": "native_row_bound_change_and_storage",
+            "units": 115
+          },
+          {
+            "category": "robust_update",
+            "operation": "native_time_and_node_caps",
+            "units": 12
+          },
+          {
+            "category": "robust_update",
+            "operation": "row_bound_lookup_and_comparison",
+            "units": 78
+          },
+          {
+            "category": "source_anchor_compile",
+            "operation": "mode_action_costs_and_lower_scaling",
+            "units": 540
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "cohort_sums_and_clipped_regret",
+            "units": 168
+          },
+          {
+            "category": "source_anchor_query",
+            "operation": "row_mode_contrast_extrema",
+            "units": 392
+          },
+          {
+            "category": "storage",
+            "operation": "compiled_tree_leaf_masks",
+            "units": 8
+          },
+          {
+            "category": "storage",
+            "operation": "cost_receipt_and_remaining_mode_ids",
+            "units": 9
+          },
+          {
+            "category": "storage",
+            "operation": "retained_witness_and_violation_mask",
+            "units": 40
+          },
+          {
+            "category": "support",
+            "operation": "coefficient_products_and_sum",
+            "units": 5040
+          },
+          {
+            "category": "support",
+            "operation": "cohort_support_and_argmax_add",
+            "units": 1250
+          },
+          {
+            "category": "support",
+            "operation": "row_maximum",
+            "units": 630
+          },
+          {
+            "category": "tree_compile",
+            "operation": "forced_clause_coefficient",
+            "units": 12
+          },
+          {
+            "category": "tree_compile",
+            "operation": "hard_leaf_omitted",
+            "units": 3
+          },
+          {
+            "category": "tree_compile",
+            "operation": "leaf_mask_deduplication",
+            "units": 6
+          },
+          {
+            "category": "tree_compile",
+            "operation": "proof_node_read",
+            "units": 16
+          },
+          {
+            "category": "vertex_query",
+            "operation": "mask_weight_products_and_sum",
+            "units": 192
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_clause_header",
+            "units": 16
+          },
+          {
+            "category": "witness_check",
+            "operation": "retained_literal",
+            "units": 24
+          },
+          {
+            "category": "witness_compile",
+            "operation": "mask_and_original_weight",
+            "units": 38
+          },
+          {
+            "category": "witness_compile",
+            "operation": "objective_violation_pass",
+            "units": 8
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_clause_header",
+            "units": 32
+          },
+          {
+            "category": "witness_compile",
+            "operation": "retained_literal",
+            "units": 35
+          }
+        ]
+      },
+      "actual_audits": [
+        {
+          "source_id": "bebed65228e1e7583ee9e10738b1bc5c55be0cbc2b62169beb10af9f98302353",
+          "row": 0,
+          "coordinate": 0,
+          "value": 4,
+          "provider_call": 0,
+          "observed_utc": "2026-10-12T20:31:16.937315+00:00",
+          "observation_units": 1,
+          "provider_software_units": 4,
+          "timing": {
+            "wall_ns": 22644,
+            "process_ns": 21893
+          },
+          "receipt_id": "e5e8cb4e6ecdf877292dda7a08a2323e03848781cca2b7ce61cbf9cfe3b76b11"
+        }
+      ],
+      "final_profiles": [
+        {
+          "row": 0,
+          "source_identity": "72f8e485687f850e86e5cfc3a6586aeaca57769c1cf00a66fdb77ee7b1e0d230",
+          "witnesses": [
+            {
+              "model": 7,
+              "violation_mask": 7,
+              "original_cost": 3,
+              "receipt_id": "04edfb3d01858c8836f8e648cde3dc00cb7c5875a108ae1b5d2076f4688eb377"
+            },
+            {
+              "model": 2,
+              "violation_mask": 10,
+              "receipt_id": "1d67b4a5a0d8bf408121031222870ee95342ca7e24963ca4aef9b4aa834e15a0",
+              "purchase": "weak_admitted_anchors"
+            },
+            {
+              "model": 5,
+              "violation_mask": 5,
+              "receipt_id": "b60362f9123c55566b74791b9f189b3b21e68955eb775425ea6a41fb70d1899f",
+              "purchase": "stronger_raw_checked_anchors"
+            }
+          ],
+          "trees": [
+            {
+              "original_budget": 0,
+              "leaf_masks": [
+                1,
+                2
+              ],
+              "receipt_id": "f1865210eb4922f806283361f3bcdf0a700d24782681de56ae5319a705762328"
+            },
+            {
+              "original_budget": 1,
+              "leaf_masks": [
+                5,
+                7,
+                10,
+                14
+              ],
+              "receipt_id": "19bacd28c90a66f5377a572ee30fc6f4ca1d9784bf8c3c9c3bee5e7b856a2df5",
+              "dependency": {
+                "purchase": "hand_constructed_checked_stronger_tree"
+              }
+            }
+          ]
+        }
+      ],
+      "post_call_diagnostic": {
+        "records": [
+          {
+            "stage": "weak_admitted_anchors",
+            "exact_best_scalar_repair_bound": 8,
+            "one_best_model": 2,
+            "proposed_model": 2,
+            "proposed_scalar_bound": 8,
+            "proposal_suboptimality": 0,
+            "final_evaluator_bound": 8,
+            "actual_worst_regret": 6,
+            "compatible_configurations": 9
+          },
+          {
+            "stage": "stronger_raw_checked_anchors",
+            "exact_best_scalar_repair_bound": 4,
+            "one_best_model": 5,
+            "proposed_model": 5,
+            "proposed_scalar_bound": 4,
+            "proposal_suboptimality": 0,
+            "final_evaluator_bound": 4,
+            "actual_worst_regret": 4,
+            "compatible_configurations": 9
+          },
+          {
+            "stage": "after_actual_row_zero_coordinate_zero_audit",
+            "exact_best_scalar_repair_bound": 3,
+            "one_best_model": 2,
+            "proposed_model": 2,
+            "proposed_scalar_bound": 3,
+            "proposal_suboptimality": 0,
+            "final_evaluator_bound": 1,
+            "actual_worst_regret": 1,
+            "compatible_configurations": 3
+          }
+        ],
+        "invoice": {
+          "total": 1542,
+          "by_category": {
+            "witness_check": 36,
+            "witness_compile": 58,
+            "storage": 20,
+            "source_anchor_compile": 324,
+            "source_anchor_query": 348,
+            "post_proposal_diagnostic": 756
+          },
+          "operations": [
+            {
+              "category": "post_proposal_diagnostic",
+              "operation": "actual_finite_configuration_costs_and_regret",
+              "units": 756
+            },
+            {
+              "category": "source_anchor_compile",
+              "operation": "mode_action_costs_and_lower_scaling",
+              "units": 324
+            },
+            {
+              "category": "source_anchor_query",
+              "operation": "cohort_sums_and_clipped_regret",
+              "units": 108
+            },
+            {
+              "category": "source_anchor_query",
+              "operation": "row_mode_contrast_extrema",
+              "units": 240
+            },
+            {
+              "category": "storage",
+              "operation": "retained_witness_and_violation_mask",
+              "units": 20
+            },
+            {
+              "category": "witness_check",
+              "operation": "retained_clause_header",
+              "units": 14
+            },
+            {
+              "category": "witness_check",
+              "operation": "retained_literal",
+              "units": 22
+            },
+            {
+              "category": "witness_compile",
+              "operation": "mask_and_original_weight",
+              "units": 20
+            },
+            {
+              "category": "witness_compile",
+              "operation": "objective_violation_pass",
+              "units": 4
+            },
+            {
+              "category": "witness_compile",
+              "operation": "retained_clause_header",
+              "units": 16
+            },
+            {
+              "category": "witness_compile",
+              "operation": "retained_literal",
+              "units": 18
+            }
+          ]
+        },
+        "scope": "Post-call exact small-source diagnostics only; no optimum/native bound feeds any proposal or certificate"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "source": 0,
+      "stage": "initial_full_source",
+      "before": 3,
+      "after": 2,
+      "new_bound_reduction": 1,
+      "proposed_model": 2,
+      "native_status": "HighsModelStatus.kOptimal",
+      "proposal_status": "CHECKED_WITNESS",
+      "named_units": 194
+    },
+    {
+      "source": 0,
+      "stage": "zero_search_cap_retains_paid_attempt",
+      "before": 2,
+      "after": 2,
+      "new_bound_reduction": 0,
+      "proposed_model": 2,
+      "native_status": "HighsModelStatus.kTimeLimit",
+      "proposal_status": "CHECKED_WITNESS",
+      "named_units": 169
+    },
+    {
+      "source": 1,
+      "stage": "weak_admitted_anchors",
+      "before": 13,
+      "after": 8,
+      "new_bound_reduction": 5,
+      "proposed_model": 2,
+      "native_status": "HighsModelStatus.kOptimal",
+      "proposal_status": "CHECKED_WITNESS",
+      "named_units": 339
+    },
+    {
+      "source": 1,
+      "stage": "stronger_raw_checked_anchors",
+      "before": 6,
+      "after": 4,
+      "new_bound_reduction": 2,
+      "proposed_model": 5,
+      "native_status": "HighsModelStatus.kOptimal",
+      "proposal_status": "CHECKED_WITNESS",
+      "named_units": 303
+    },
+    {
+      "source": 1,
+      "stage": "after_actual_row_zero_coordinate_zero_audit",
+      "before": 1,
+      "after": 1,
+      "new_bound_reduction": 0,
+      "proposed_model": 2,
+      "native_status": "HighsModelStatus.kOptimal",
+      "proposal_status": "CHECKED_WITNESS",
+      "named_units": 284
+    }
+  ],
+  "summary": {
+    "native_mip_calls": 5,
+    "checked_witness_proposals": 5,
+    "unresolved_proposals": 0,
+    "strict_post_proposal_bound_improvements": 3,
+    "cost_observations": 1,
+    "raw_negative_trees_checked": 3,
+    "separate_SAT_IHS_LP_or_proof_search_calls": 0,
+    "setup_units": 781,
+    "proposal_units": 1289,
+    "total_common_operation_units": 13235,
+    "audit_provider_software_units": 4
+  },
+  "timings": {
+    "native_process_ns": 143661500,
+    "native_wall_ns": 15772131,
+    "whole_process_ns": 270502033,
+    "whole_wall_ns": 36098881
+  },
+  "scope": "An ordinary persistent robust-action comparator, available equally to later controllers. No acquisition on the 16-source historical workload and no strict superiority or native lower-certificate claim.",
+  "prices": {
+    "external_cost_audit": null,
+    "native_search_operation_conversion": null,
+    "CPU_memory_monetary_conversion": null
+  }
+}

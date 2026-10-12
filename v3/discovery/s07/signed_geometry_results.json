@@ -1,0 +1,1778 @@
+{
+  "version": "s07-signed-geometry-v1",
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "created_utc": "2026-10-12T21:15:58.545092+00:00",
+  "implementation_sha256": "d1e2278d517b07926fc4caa15b2591c16bbe5c5ec15accb698358675475aa739",
+  "original_source": {
+    "row": "signed-derived-mandatory-pair",
+    "variables": 4,
+    "hard": [
+      [
+        -1,
+        3
+      ],
+      [
+        1,
+        -3
+      ],
+      [
+        -2,
+        -3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        -3,
+        4
+      ]
+    ],
+    "soft": [
+      {
+        "weight": 1,
+        "clause": [
+          -1
+        ]
+      },
+      {
+        "weight": 1,
+        "clause": [
+          -2
+        ]
+      },
+      {
+        "weight": 1,
+        "clause": [
+          -4
+        ]
+      }
+    ],
+    "public_incumbent": 13,
+    "objective_max": 3,
+    "identity": "be348a4e676d81ad5f7d3bbe8eb7f912a5f2bbed1f55a92bac5ff8b5a51d1cb8"
+  },
+  "cost_source": {
+    "version": "s07-signed-geometry-v1",
+    "possible_cost_modes": [
+      [
+        0,
+        4,
+        1
+      ],
+      [
+        0,
+        4,
+        100
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        4,
+        0,
+        100
+      ]
+    ],
+    "cohort_size": 1,
+    "hidden_modes": [
+      1
+    ],
+    "chosen_audit": {
+      "row": 0,
+      "coordinate": 0
+    },
+    "price": 105,
+    "tolerance": 0,
+    "source_identity": "a56ed325ed1d3a52ec60d4992ba427a010c846ae89fd993e13406581561624bb"
+  },
+  "targets": [
+    {
+      "coefficient": [
+        0,
+        0,
+        1
+      ],
+      "lower": 1
+    },
+    {
+      "coefficient": [
+        1,
+        1,
+        0
+      ],
+      "lower": 1
+    },
+    {
+      "coefficient": [
+        -1,
+        -1,
+        0
+      ],
+      "lower": -1
+    }
+  ],
+  "dependencies": {
+    "v3/discovery/s06/contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+    "v3/discovery/s05/maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+    "v3/discovery/s05/maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+    "v3/discovery/s06/joint_repair.py": "7e1a96f4a05107174554acc701ae43026528d6041e570500d840fb1b76060384"
+  },
+  "acquisitions": [
+    {
+      "kind": "complete",
+      "index": 0,
+      "response": {
+        "source_id": "7e2b84979ea369d1e2c0ce6f1f792fdbcc9a1bc113ac3d78f70d5b38affdcb8c",
+        "budget": 0,
+        "provider_response": {
+          "status": "UNSAT",
+          "model": null,
+          "proof": [
+            "b",
+            0,
+            [
+              "b",
+              1,
+              [
+                "b",
+                2,
+                [
+                  "h",
+                  3
+                ],
+                [
+                  "h",
+                  1
+                ]
+              ],
+              [
+                "b",
+                2,
+                [
+                  "b",
+                  3,
+                  [
+                    "h",
+                    4
+                  ],
+                  [
+                    "b",
+                    4,
+                    [
+                      "b",
+                      5,
+                      [
+                        "h",
+                        8
+                      ],
+                      [
+                        "b",
+                        6,
+                        [
+                          "h",
+                          10
+                        ],
+                        [
+                          "w",
+                          [
+                            1,
+                            2
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      "h",
+                      7
+                    ]
+                  ]
+                ],
+                [
+                  "h",
+                  1
+                ]
+              ]
+            ],
+            [
+              "b",
+              1,
+              [
+                "b",
+                2,
+                [
+                  "h",
+                  0
+                ],
+                [
+                  "b",
+                  3,
+                  [
+                    "h",
+                    5
+                  ],
+                  [
+                    "b",
+                    4,
+                    [
+                      "h",
+                      6
+                    ],
+                    [
+                      "b",
+                      5,
+                      [
+                        "b",
+                        6,
+                        [
+                          "h",
+                          10
+                        ],
+                        [
+                          "w",
+                          [
+                            0,
+                            2
+                          ]
+                        ]
+                      ],
+                      [
+                        "h",
+                        9
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "b",
+                2,
+                [
+                  "h",
+                  0
+                ],
+                [
+                  "h",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "invoice": {
+            "total": 985,
+            "by_category": {
+              "solve": 985
+            },
+            "operations": [
+              {
+                "category": "solve",
+                "operation": "branch_node",
+                "units": 31
+              },
+              {
+                "category": "solve",
+                "operation": "budget_compare",
+                "units": 17
+              },
+              {
+                "category": "solve",
+                "operation": "clause_header",
+                "units": 335
+              },
+              {
+                "category": "solve",
+                "operation": "cost_leaf_create",
+                "units": 6
+              },
+              {
+                "category": "solve",
+                "operation": "forced_weight_add",
+                "units": 7
+              },
+              {
+                "category": "solve",
+                "operation": "hard_leaf_create",
+                "units": 28
+              },
+              {
+                "category": "solve",
+                "operation": "literal_inspection",
+                "units": 531
+              },
+              {
+                "category": "solve",
+                "operation": "split_certificate_create",
+                "units": 30
+              }
+            ]
+          }
+        },
+        "quote": {
+          "source_id": "7e2b84979ea369d1e2c0ce6f1f792fdbcc9a1bc113ac3d78f70d5b38affdcb8c",
+          "variables": 7,
+          "soft_clauses": 3,
+          "maximum_tree_nodes": 255,
+          "maximum_tree_leaves": 128,
+          "provider_per_node": 54,
+          "provider_units": 13770,
+          "negative_check_units": 3315,
+          "witness_check_units": 46,
+          "tree_compile_units": 1404,
+          "witness_compile_units": 58,
+          "raw_proof_words": 766,
+          "admission_units": 53,
+          "objective_update_units": 8,
+          "response_units": 16,
+          "witness_retention_units": 15,
+          "proof_retention_units": 774,
+          "complete_wrapper_units": 19386,
+          "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+          "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+          "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+          "cpu_max_seconds": null,
+          "wall_max_seconds": null
+        },
+        "leaf_masks": [
+          5,
+          6
+        ],
+        "checked_lower": 1,
+        "wrapper_invoice": {
+          "total": 331,
+          "by_category": {
+            "contract_admission": 53,
+            "check": 119,
+            "objective": 9,
+            "objective_update": 8,
+            "tree_compile": 51,
+            "storage": 75,
+            "output": 16
+          },
+          "operations": [
+            {
+              "category": "check",
+              "operation": "negative_clause_header",
+              "units": 18
+            },
+            {
+              "category": "check",
+              "operation": "negative_literal",
+              "units": 32
+            },
+            {
+              "category": "check",
+              "operation": "negative_proof_node",
+              "units": 31
+            },
+            {
+              "category": "check",
+              "operation": "negative_weight_add",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "negative_weight_index",
+              "units": 4
+            },
+            {
+              "category": "check",
+              "operation": "witness_hard_clause_header",
+              "units": 12
+            },
+            {
+              "category": "check",
+              "operation": "witness_hard_literal",
+              "units": 18
+            },
+            {
+              "category": "contract_admission",
+              "operation": "source_words",
+              "units": 53
+            },
+            {
+              "category": "objective",
+              "operation": "full_objective_pass",
+              "units": 1
+            },
+            {
+              "category": "objective",
+              "operation": "soft_clause_header",
+              "units": 3
+            },
+            {
+              "category": "objective",
+              "operation": "soft_literal",
+              "units": 3
+            },
+            {
+              "category": "objective",
+              "operation": "weight_add",
+              "units": 2
+            },
+            {
+              "category": "objective_update",
+              "operation": "query_weight_words",
+              "units": 8
+            },
+            {
+              "category": "output",
+              "operation": "complete_query_response",
+              "units": 16
+            },
+            {
+              "category": "storage",
+              "operation": "compiled_tree_leaf_masks",
+              "units": 3
+            },
+            {
+              "category": "storage",
+              "operation": "complete_negative",
+              "units": 72
+            },
+            {
+              "category": "tree_compile",
+              "operation": "forced_clause_coefficient",
+              "units": 4
+            },
+            {
+              "category": "tree_compile",
+              "operation": "hard_leaf_omitted",
+              "units": 14
+            },
+            {
+              "category": "tree_compile",
+              "operation": "leaf_mask_deduplication",
+              "units": 2
+            },
+            {
+              "category": "tree_compile",
+              "operation": "proof_node_read",
+              "units": 31
+            }
+          ]
+        },
+        "total_operation_units": 1316,
+        "timing": {
+          "process_ns": 549285,
+          "wall_ns": 557656
+        },
+        "receipt_id": "f2f661e2af39a71bb476e32a8bce9cc5cbcdbf737254e159d178f2bcfedda954"
+      }
+    },
+    {
+      "kind": "complete",
+      "index": 1,
+      "response": {
+        "source_id": "9966a71c0fb401cf6c854a4ad3af3bb87b55263bac110d92458788b484624ae6",
+        "budget": 0,
+        "provider_response": {
+          "status": "UNSAT",
+          "model": null,
+          "proof": [
+            "b",
+            0,
+            [
+              "b",
+              1,
+              [
+                "b",
+                2,
+                [
+                  "h",
+                  3
+                ],
+                [
+                  "h",
+                  1
+                ]
+              ],
+              [
+                "b",
+                2,
+                [
+                  "b",
+                  3,
+                  [
+                    "h",
+                    4
+                  ],
+                  [
+                    "b",
+                    4,
+                    [
+                      "b",
+                      5,
+                      [
+                        "h",
+                        8
+                      ],
+                      [
+                        "w",
+                        [
+                          1
+                        ]
+                      ]
+                    ],
+                    [
+                      "h",
+                      7
+                    ]
+                  ]
+                ],
+                [
+                  "h",
+                  1
+                ]
+              ]
+            ],
+            [
+              "b",
+              1,
+              [
+                "b",
+                2,
+                [
+                  "h",
+                  0
+                ],
+                [
+                  "b",
+                  3,
+                  [
+                    "h",
+                    5
+                  ],
+                  [
+                    "b",
+                    4,
+                    [
+                      "h",
+                      6
+                    ],
+                    [
+                      "w",
+                      [
+                        0
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "b",
+                2,
+                [
+                  "h",
+                  0
+                ],
+                [
+                  "h",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "invoice": {
+            "total": 767,
+            "by_category": {
+              "solve": 767
+            },
+            "operations": [
+              {
+                "category": "solve",
+                "operation": "branch_node",
+                "units": 25
+              },
+              {
+                "category": "solve",
+                "operation": "budget_compare",
+                "units": 14
+              },
+              {
+                "category": "solve",
+                "operation": "clause_header",
+                "units": 258
+              },
+              {
+                "category": "solve",
+                "operation": "cost_leaf_create",
+                "units": 4
+              },
+              {
+                "category": "solve",
+                "operation": "forced_weight_add",
+                "units": 2
+              },
+              {
+                "category": "solve",
+                "operation": "hard_leaf_create",
+                "units": 22
+              },
+              {
+                "category": "solve",
+                "operation": "literal_inspection",
+                "units": 418
+              },
+              {
+                "category": "solve",
+                "operation": "split_certificate_create",
+                "units": 24
+              }
+            ]
+          }
+        },
+        "quote": {
+          "source_id": "9966a71c0fb401cf6c854a4ad3af3bb87b55263bac110d92458788b484624ae6",
+          "variables": 7,
+          "soft_clauses": 3,
+          "maximum_tree_nodes": 255,
+          "maximum_tree_leaves": 128,
+          "provider_per_node": 54,
+          "provider_units": 13770,
+          "negative_check_units": 3315,
+          "witness_check_units": 46,
+          "tree_compile_units": 1404,
+          "witness_compile_units": 58,
+          "raw_proof_words": 766,
+          "admission_units": 53,
+          "objective_update_units": 8,
+          "response_units": 16,
+          "witness_retention_units": 15,
+          "proof_retention_units": 774,
+          "complete_wrapper_units": 19386,
+          "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+          "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+          "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+          "cpu_max_seconds": null,
+          "wall_max_seconds": null
+        },
+        "leaf_masks": [
+          1,
+          2
+        ],
+        "checked_lower": 1,
+        "wrapper_invoice": {
+          "total": 283,
+          "by_category": {
+            "contract_admission": 53,
+            "check": 96,
+            "objective": 9,
+            "objective_update": 8,
+            "tree_compile": 40,
+            "storage": 61,
+            "output": 16
+          },
+          "operations": [
+            {
+              "category": "check",
+              "operation": "negative_clause_header",
+              "units": 13
+            },
+            {
+              "category": "check",
+              "operation": "negative_literal",
+              "units": 24
+            },
+            {
+              "category": "check",
+              "operation": "negative_proof_node",
+              "units": 25
+            },
+            {
+              "category": "check",
+              "operation": "negative_weight_add",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "negative_weight_index",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "witness_hard_clause_header",
+              "units": 12
+            },
+            {
+              "category": "check",
+              "operation": "witness_hard_literal",
+              "units": 18
+            },
+            {
+              "category": "contract_admission",
+              "operation": "source_words",
+              "units": 53
+            },
+            {
+              "category": "objective",
+              "operation": "full_objective_pass",
+              "units": 1
+            },
+            {
+              "category": "objective",
+              "operation": "soft_clause_header",
+              "units": 3
+            },
+            {
+              "category": "objective",
+              "operation": "soft_literal",
+              "units": 3
+            },
+            {
+              "category": "objective",
+              "operation": "weight_add",
+              "units": 2
+            },
+            {
+              "category": "objective_update",
+              "operation": "query_weight_words",
+              "units": 8
+            },
+            {
+              "category": "output",
+              "operation": "complete_query_response",
+              "units": 16
+            },
+            {
+              "category": "storage",
+              "operation": "compiled_tree_leaf_masks",
+              "units": 3
+            },
+            {
+              "category": "storage",
+              "operation": "complete_negative",
+              "units": 58
+            },
+            {
+              "category": "tree_compile",
+              "operation": "forced_clause_coefficient",
+              "units": 2
+            },
+            {
+              "category": "tree_compile",
+              "operation": "hard_leaf_omitted",
+              "units": 11
+            },
+            {
+              "category": "tree_compile",
+              "operation": "leaf_mask_deduplication",
+              "units": 2
+            },
+            {
+              "category": "tree_compile",
+              "operation": "proof_node_read",
+              "units": 25
+            }
+          ]
+        },
+        "total_operation_units": 1050,
+        "timing": {
+          "process_ns": 1572024,
+          "wall_ns": 1579810
+        },
+        "receipt_id": "0688552348c9c4ae22b92c57e6145d5f5c8c3edc22f4aebc01c5d06c1858ee29"
+      }
+    },
+    {
+      "kind": "complete",
+      "index": 2,
+      "response": {
+        "source_id": "f0810416f83f66c7eae569cd2815c1040bed02ddfa6185d8439a347e648a0777",
+        "budget": 0,
+        "provider_response": {
+          "status": "UNSAT",
+          "model": null,
+          "proof": [
+            "b",
+            0,
+            [
+              "b",
+              1,
+              [
+                "b",
+                2,
+                [
+                  "h",
+                  3
+                ],
+                [
+                  "h",
+                  1
+                ]
+              ],
+              [
+                "b",
+                2,
+                [
+                  "b",
+                  3,
+                  [
+                    "h",
+                    4
+                  ],
+                  [
+                    "b",
+                    4,
+                    [
+                      "w",
+                      [
+                        0
+                      ]
+                    ],
+                    [
+                      "h",
+                      7
+                    ]
+                  ]
+                ],
+                [
+                  "h",
+                  1
+                ]
+              ]
+            ],
+            [
+              "b",
+              1,
+              [
+                "b",
+                2,
+                [
+                  "h",
+                  0
+                ],
+                [
+                  "b",
+                  3,
+                  [
+                    "h",
+                    5
+                  ],
+                  [
+                    "b",
+                    4,
+                    [
+                      "h",
+                      6
+                    ],
+                    [
+                      "b",
+                      5,
+                      [
+                        "w",
+                        [
+                          1
+                        ]
+                      ],
+                      [
+                        "h",
+                        9
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "b",
+                2,
+                [
+                  "h",
+                  0
+                ],
+                [
+                  "h",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "invoice": {
+            "total": 769,
+            "by_category": {
+              "solve": 769
+            },
+            "operations": [
+              {
+                "category": "solve",
+                "operation": "branch_node",
+                "units": 25
+              },
+              {
+                "category": "solve",
+                "operation": "budget_compare",
+                "units": 14
+              },
+              {
+                "category": "solve",
+                "operation": "clause_header",
+                "units": 259
+              },
+              {
+                "category": "solve",
+                "operation": "cost_leaf_create",
+                "units": 4
+              },
+              {
+                "category": "solve",
+                "operation": "forced_weight_add",
+                "units": 2
+              },
+              {
+                "category": "solve",
+                "operation": "hard_leaf_create",
+                "units": 22
+              },
+              {
+                "category": "solve",
+                "operation": "literal_inspection",
+                "units": 419
+              },
+              {
+                "category": "solve",
+                "operation": "split_certificate_create",
+                "units": 24
+              }
+            ]
+          }
+        },
+        "quote": {
+          "source_id": "f0810416f83f66c7eae569cd2815c1040bed02ddfa6185d8439a347e648a0777",
+          "variables": 7,
+          "soft_clauses": 3,
+          "maximum_tree_nodes": 255,
+          "maximum_tree_leaves": 128,
+          "provider_per_node": 54,
+          "provider_units": 13770,
+          "negative_check_units": 3315,
+          "witness_check_units": 46,
+          "tree_compile_units": 1404,
+          "witness_compile_units": 58,
+          "raw_proof_words": 766,
+          "admission_units": 53,
+          "objective_update_units": 8,
+          "response_units": 16,
+          "witness_retention_units": 15,
+          "proof_retention_units": 774,
+          "complete_wrapper_units": 19386,
+          "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+          "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+          "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+          "cpu_max_seconds": null,
+          "wall_max_seconds": null
+        },
+        "leaf_masks": [
+          1,
+          2
+        ],
+        "checked_lower": 1,
+        "wrapper_invoice": {
+          "total": 283,
+          "by_category": {
+            "contract_admission": 53,
+            "check": 96,
+            "objective": 9,
+            "objective_update": 8,
+            "tree_compile": 40,
+            "storage": 61,
+            "output": 16
+          },
+          "operations": [
+            {
+              "category": "check",
+              "operation": "negative_clause_header",
+              "units": 13
+            },
+            {
+              "category": "check",
+              "operation": "negative_literal",
+              "units": 24
+            },
+            {
+              "category": "check",
+              "operation": "negative_proof_node",
+              "units": 25
+            },
+            {
+              "category": "check",
+              "operation": "negative_weight_add",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "negative_weight_index",
+              "units": 2
+            },
+            {
+              "category": "check",
+              "operation": "witness_hard_clause_header",
+              "units": 12
+            },
+            {
+              "category": "check",
+              "operation": "witness_hard_literal",
+              "units": 18
+            },
+            {
+              "category": "contract_admission",
+              "operation": "source_words",
+              "units": 53
+            },
+            {
+              "category": "objective",
+              "operation": "full_objective_pass",
+              "units": 1
+            },
+            {
+              "category": "objective",
+              "operation": "soft_clause_header",
+              "units": 3
+            },
+            {
+              "category": "objective",
+              "operation": "soft_literal",
+              "units": 3
+            },
+            {
+              "category": "objective",
+              "operation": "weight_add",
+              "units": 2
+            },
+            {
+              "category": "objective_update",
+              "operation": "query_weight_words",
+              "units": 8
+            },
+            {
+              "category": "output",
+              "operation": "complete_query_response",
+              "units": 16
+            },
+            {
+              "category": "storage",
+              "operation": "compiled_tree_leaf_masks",
+              "units": 3
+            },
+            {
+              "category": "storage",
+              "operation": "complete_negative",
+              "units": 58
+            },
+            {
+              "category": "tree_compile",
+              "operation": "forced_clause_coefficient",
+              "units": 2
+            },
+            {
+              "category": "tree_compile",
+              "operation": "hard_leaf_omitted",
+              "units": 11
+            },
+            {
+              "category": "tree_compile",
+              "operation": "leaf_mask_deduplication",
+              "units": 2
+            },
+            {
+              "category": "tree_compile",
+              "operation": "proof_node_read",
+              "units": 25
+            }
+          ]
+        },
+        "total_operation_units": 1052,
+        "timing": {
+          "process_ns": 480223,
+          "wall_ns": 488914
+        },
+        "receipt_id": "607898f73b81352c65bfded94ae248c99582c19e5ea148e15b5982d47c46dd0a"
+      }
+    },
+    {
+      "kind": "audit",
+      "receipt": {
+        "source_id": "a56ed325ed1d3a52ec60d4992ba427a010c846ae89fd993e13406581561624bb",
+        "row": 0,
+        "coordinate": 0,
+        "value": 0,
+        "provider_call": 0,
+        "observed_utc": "2026-10-12T21:15:58.559151+00:00",
+        "observation_units": 1,
+        "provider_software_units": 4,
+        "timing": {
+          "wall_ns": 15303,
+          "process_ns": 14913
+        },
+        "receipt_id": "9572952142348bc1fec5d13ebc7675204a1e8fcd45f792f865ed24317da5d8b1"
+      }
+    }
+  ],
+  "signed_receipts": [
+    {
+      "original_source": "be348a4e676d81ad5f7d3bbe8eb7f912a5f2bbed1f55a92bac5ff8b5a51d1cb8",
+      "coefficient": [
+        0,
+        0,
+        1
+      ],
+      "lower": 1,
+      "objective_offset": 0,
+      "transformed_source": "24f20709f15e5a03fbbf698b00dfea3803553d3699868e630646eacbea42200c",
+      "raw_proof_receipt": "f2f661e2af39a71bb476e32a8bce9cc5cbcdbf737254e159d178f2bcfedda954",
+      "checked": true,
+      "receipt_id": "7539b785e75de55932d67a8c0dc119b6dfaa811ec785f1eee4a32fe34cf0a1ad"
+    },
+    {
+      "original_source": "be348a4e676d81ad5f7d3bbe8eb7f912a5f2bbed1f55a92bac5ff8b5a51d1cb8",
+      "coefficient": [
+        1,
+        1,
+        0
+      ],
+      "lower": 1,
+      "objective_offset": 0,
+      "transformed_source": "1a278a293d98f247405a495ea2cd962528730a80925a7f5102aff3302dffe3a6",
+      "raw_proof_receipt": "0688552348c9c4ae22b92c57e6145d5f5c8c3edc22f4aebc01c5d06c1858ee29",
+      "checked": true,
+      "receipt_id": "c8aa6ba4ae76456fd3d372ad75cd3176892b159e38d250aec15bb4166672d105"
+    },
+    {
+      "original_source": "be348a4e676d81ad5f7d3bbe8eb7f912a5f2bbed1f55a92bac5ff8b5a51d1cb8",
+      "coefficient": [
+        -1,
+        -1,
+        0
+      ],
+      "lower": -1,
+      "objective_offset": 2,
+      "transformed_source": "69ab013e033dc06b367b26d4ba96894825f4ba6d24fd730af0dffc461b5e8c7a",
+      "raw_proof_receipt": "607898f73b81352c65bfded94ae248c99582c19e5ea148e15b5982d47c46dd0a",
+      "checked": true,
+      "receipt_id": "c91ec25d2a46887db2a3b781aa210bfe041dac0386dbd97351cdef998d2f2277"
+    }
+  ],
+  "actual_new_proof_calls": 3,
+  "actual_cost_audits": 1,
+  "policy": "Check all three frozen geometry targets, then inspect the single frozen coordinate0 audit. Select a checked fixed repair by mandatory-cost contrasts at p105,tau0. No hidden mode is an input to the gate.",
+  "local_invoice": {
+    "total": 3698,
+    "by_category": {
+      "signed_admission": 1745,
+      "witness_check": 120,
+      "witness_compile": 88,
+      "storage": 67,
+      "signed_compile": 654,
+      "check": 221,
+      "tree_compile": 131,
+      "signed_check": 308,
+      "output": 113,
+      "geometry_compile": 18,
+      "cost_admission": 21,
+      "geometry_gate": 196,
+      "cost_check": 16
+    },
+    "operations": [
+      {
+        "category": "check",
+        "operation": "negative_clause_header",
+        "units": 44
+      },
+      {
+        "category": "check",
+        "operation": "negative_literal",
+        "units": 80
+      },
+      {
+        "category": "check",
+        "operation": "negative_proof_node",
+        "units": 81
+      },
+      {
+        "category": "check",
+        "operation": "negative_weight_add",
+        "units": 8
+      },
+      {
+        "category": "check",
+        "operation": "negative_weight_index",
+        "units": 8
+      },
+      {
+        "category": "cost_admission",
+        "operation": "mode_and_row_words",
+        "units": 21
+      },
+      {
+        "category": "cost_check",
+        "operation": "receipt_binding_and_mode_filter",
+        "units": 16
+      },
+      {
+        "category": "geometry_compile",
+        "operation": "two_signed_inequalities_and_boolean_upper",
+        "units": 18
+      },
+      {
+        "category": "geometry_gate",
+        "operation": "checked_fixed_action_minimum_and_record",
+        "units": 28
+      },
+      {
+        "category": "geometry_gate",
+        "operation": "feasible_cost_mandatory_lower_and_replacement_contrast",
+        "units": 168
+      },
+      {
+        "category": "output",
+        "operation": "derived_geometry_receipt_record",
+        "units": 81
+      },
+      {
+        "category": "output",
+        "operation": "final_source_bound_fixed_action_and_invoice",
+        "units": 32
+      },
+      {
+        "category": "signed_admission",
+        "operation": "bridge_code_words_and_hash_blocks",
+        "units": 1659
+      },
+      {
+        "category": "signed_admission",
+        "operation": "fixed_original_source_cost_modes_targets_and_policy_words",
+        "units": 86
+      },
+      {
+        "category": "signed_check",
+        "operation": "exact_extension_projection_objective_identity_and_receipt_binding",
+        "units": 308
+      },
+      {
+        "category": "signed_compile",
+        "operation": "fresh_violation_definition_and_ordered_binding",
+        "units": 252
+      },
+      {
+        "category": "signed_compile",
+        "operation": "source_copy_signed_weights_offset_and_identity",
+        "units": 402
+      },
+      {
+        "category": "storage",
+        "operation": "compiled_tree_leaf_masks",
+        "units": 9
+      },
+      {
+        "category": "storage",
+        "operation": "cost_receipt_and_remaining_mode_ids",
+        "units": 10
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 48
+      },
+      {
+        "category": "tree_compile",
+        "operation": "forced_clause_coefficient",
+        "units": 8
+      },
+      {
+        "category": "tree_compile",
+        "operation": "hard_leaf_omitted",
+        "units": 36
+      },
+      {
+        "category": "tree_compile",
+        "operation": "leaf_mask_deduplication",
+        "units": 6
+      },
+      {
+        "category": "tree_compile",
+        "operation": "proof_node_read",
+        "units": 81
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 48
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 72
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 32
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 8
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 24
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 24
+      }
+    ]
+  },
+  "timing": {
+    "process_ns": 143147440,
+    "wall_ns": 15290002
+  },
+  "code_admission": {
+    "binding_rows": [
+      {
+        "file": "contract_quote.py",
+        "sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+        "bytes": 9498,
+        "read_words": 1188,
+        "sha256_blocks": 149,
+        "binding_compare_units": 1
+      },
+      {
+        "file": "maxsat_repair.py",
+        "sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+        "bytes": 21856,
+        "read_words": 2732,
+        "sha256_blocks": 342,
+        "binding_compare_units": 1
+      },
+      {
+        "file": "maxsat_reprice.py",
+        "sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+        "bytes": 16431,
+        "read_words": 2054,
+        "sha256_blocks": 257,
+        "binding_compare_units": 1
+      }
+    ],
+    "declared_admission_units": 6725,
+    "timing": {
+      "process_ns": 87750,
+      "wall_ns": 87169
+    },
+    "source_semantics": "Manual finite-procedure derivation in contract_findings.md; no checksum-only proof admission."
+  },
+  "checked_original_witnesses": [
+    {
+      "model": 13,
+      "violation_mask": 5,
+      "original_cost": 2
+    },
+    {
+      "model": 10,
+      "violation_mask": 6,
+      "original_cost": 2
+    }
+  ],
+  "prepared_queries": [
+    {
+      "query": {
+        "row": "signed-derived-mandatory-pair-signed",
+        "variables": 7,
+        "hard": [
+          [
+            -1,
+            3
+          ],
+          [
+            1,
+            -3
+          ],
+          [
+            -2,
+            -3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            -3,
+            4
+          ],
+          [
+            5,
+            -1
+          ],
+          [
+            -5,
+            1
+          ],
+          [
+            6,
+            -2
+          ],
+          [
+            -6,
+            2
+          ],
+          [
+            7,
+            -4
+          ],
+          [
+            -7,
+            4
+          ]
+        ],
+        "soft": [
+          {
+            "weight": 0,
+            "clause": [
+              -5
+            ]
+          },
+          {
+            "weight": 0,
+            "clause": [
+              -6
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -7
+            ]
+          }
+        ],
+        "public_incumbent": 93,
+        "objective_max": 1,
+        "original_source": "be348a4e676d81ad5f7d3bbe8eb7f912a5f2bbed1f55a92bac5ff8b5a51d1cb8",
+        "ordered_violation_binding": [
+          {
+            "soft_index": 0,
+            "variable": 5,
+            "original_clause": [
+              -1
+            ]
+          },
+          {
+            "soft_index": 1,
+            "variable": 6,
+            "original_clause": [
+              -2
+            ]
+          },
+          {
+            "soft_index": 2,
+            "variable": 7,
+            "original_clause": [
+              -4
+            ]
+          }
+        ],
+        "signed_coefficient": [
+          0,
+          0,
+          1
+        ],
+        "identity": "24f20709f15e5a03fbbf698b00dfea3803553d3699868e630646eacbea42200c"
+      },
+      "offset": 0,
+      "budget": 0
+    },
+    {
+      "query": {
+        "row": "signed-derived-mandatory-pair-signed",
+        "variables": 7,
+        "hard": [
+          [
+            -1,
+            3
+          ],
+          [
+            1,
+            -3
+          ],
+          [
+            -2,
+            -3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            -3,
+            4
+          ],
+          [
+            5,
+            -1
+          ],
+          [
+            -5,
+            1
+          ],
+          [
+            6,
+            -2
+          ],
+          [
+            -6,
+            2
+          ],
+          [
+            7,
+            -4
+          ],
+          [
+            -7,
+            4
+          ]
+        ],
+        "soft": [
+          {
+            "weight": 1,
+            "clause": [
+              -5
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -6
+            ]
+          },
+          {
+            "weight": 0,
+            "clause": [
+              -7
+            ]
+          }
+        ],
+        "public_incumbent": 93,
+        "objective_max": 2,
+        "original_source": "be348a4e676d81ad5f7d3bbe8eb7f912a5f2bbed1f55a92bac5ff8b5a51d1cb8",
+        "ordered_violation_binding": [
+          {
+            "soft_index": 0,
+            "variable": 5,
+            "original_clause": [
+              -1
+            ]
+          },
+          {
+            "soft_index": 1,
+            "variable": 6,
+            "original_clause": [
+              -2
+            ]
+          },
+          {
+            "soft_index": 2,
+            "variable": 7,
+            "original_clause": [
+              -4
+            ]
+          }
+        ],
+        "signed_coefficient": [
+          1,
+          1,
+          0
+        ],
+        "identity": "1a278a293d98f247405a495ea2cd962528730a80925a7f5102aff3302dffe3a6"
+      },
+      "offset": 0,
+      "budget": 0
+    },
+    {
+      "query": {
+        "row": "signed-derived-mandatory-pair-signed",
+        "variables": 7,
+        "hard": [
+          [
+            -1,
+            3
+          ],
+          [
+            1,
+            -3
+          ],
+          [
+            -2,
+            -3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            -3,
+            4
+          ],
+          [
+            5,
+            -1
+          ],
+          [
+            -5,
+            1
+          ],
+          [
+            6,
+            -2
+          ],
+          [
+            -6,
+            2
+          ],
+          [
+            7,
+            -4
+          ],
+          [
+            -7,
+            4
+          ]
+        ],
+        "soft": [
+          {
+            "weight": 1,
+            "clause": [
+              5
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              6
+            ]
+          },
+          {
+            "weight": 0,
+            "clause": [
+              -7
+            ]
+          }
+        ],
+        "public_incumbent": 93,
+        "objective_max": 2,
+        "original_source": "be348a4e676d81ad5f7d3bbe8eb7f912a5f2bbed1f55a92bac5ff8b5a51d1cb8",
+        "ordered_violation_binding": [
+          {
+            "soft_index": 0,
+            "variable": 5,
+            "original_clause": [
+              -1
+            ]
+          },
+          {
+            "soft_index": 1,
+            "variable": 6,
+            "original_clause": [
+              -2
+            ]
+          },
+          {
+            "soft_index": 2,
+            "variable": 7,
+            "original_clause": [
+              -4
+            ]
+          }
+        ],
+        "signed_coefficient": [
+          -1,
+          -1,
+          0
+        ],
+        "identity": "69ab013e033dc06b367b26d4ba96894825f4ba6d24fd730af0dffc461b5e8c7a"
+      },
+      "offset": 2,
+      "budget": 0
+    }
+  ],
+  "derived_equalities": [
+    {
+      "coefficient": [
+        0,
+        0,
+        1
+      ],
+      "value": 1,
+      "lower_receipt": "7539b785e75de55932d67a8c0dc119b6dfaa811ec785f1eee4a32fe34cf0a1ad",
+      "upper": "Boolean original violation variable <=1"
+    },
+    {
+      "coefficient": [
+        1,
+        1,
+        0
+      ],
+      "value": 1,
+      "lower_receipt": "c8aa6ba4ae76456fd3d372ad75cd3176892b159e38d250aec15bb4166672d105",
+      "upper_receipt": "c91ec25d2a46887db2a3b781aa210bfe041dac0386dbd97351cdef998d2f2277"
+    }
+  ],
+  "before_audit": {
+    "model": 10,
+    "violation_mask": 6,
+    "bound": 4,
+    "cost_source": "a56ed325ed1d3a52ec60d4992ba427a010c846ae89fd993e13406581561624bb",
+    "logical_source": "be348a4e676d81ad5f7d3bbe8eb7f912a5f2bbed1f55a92bac5ff8b5a51d1cb8",
+    "proof": "7539b785e75de55932d67a8c0dc119b6dfaa811ec785f1eee4a32fe34cf0a1ad"
+  },
+  "final_answer": {
+    "model": 13,
+    "violation_mask": 5,
+    "bound": 0,
+    "cost_source": "a56ed325ed1d3a52ec60d4992ba427a010c846ae89fd993e13406581561624bb",
+    "logical_source": "be348a4e676d81ad5f7d3bbe8eb7f912a5f2bbed1f55a92bac5ff8b5a51d1cb8",
+    "proof": "7539b785e75de55932d67a8c0dc119b6dfaa811ec785f1eee4a32fe34cf0a1ad"
+  },
+  "final_cost_state": {
+    "source_id": "a56ed325ed1d3a52ec60d4992ba427a010c846ae89fd993e13406581561624bb",
+    "representation": "joint",
+    "cohort_size": 1,
+    "possible_modes": [
+      [
+        0,
+        1
+      ]
+    ],
+    "audit_receipts": [
+      "9572952142348bc1fec5d13ebc7675204a1e8fcd45f792f865ed24317da5d8b1"
+    ]
+  },
+  "invoice": {
+    "local_preparation_checking_gate_units": 3698,
+    "complete_proof_wrapper_and_provider_units": 3418,
+    "audit_provider_software_units": 4,
+    "complete_code_admission_units": 6725,
+    "total_named_units": 13845,
+    "external_proof_calls": 3,
+    "external_cost_audits": 1,
+    "full_cost": "Named U plus actual proof/audit fees, CPU/wall, storage/byte-time and all remaining host costs; unassigned rates are not zero."
+  }
+}

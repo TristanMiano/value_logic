@@ -1,17 +1,25 @@
 # P3-SEARCH-01 candidate portfolio
 
 Initial research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
-No candidate is promoted; material-positive readiness is unassessed.
+No candidate is promoted. The current event-specific forecast is recorded below;
+earlier unassessed entries retain their dated historical scope.
 
 **Current continuation — October 12, 2026:** **ChatGPT (GPT-6 Astra Pro)**,
-[s06 checkpoint 1](s06/cp01.md), [effective actuals](s06/effective_actuals.json).
+[s07 checkpoint 1](s07/cp01.md), [effective actuals](s07/effective_actuals.json).
 The latest author-directed hourly increment contains
-**60.07154650425 research minutes**. C001 remains **OPEN** at
-**437.566782320916666… minutes**, beyond its already satisfied four-hour floor;
-phase research is **1523.698149685066666… minutes**. The next increment is one
+**59.9187937882 research minutes**. C001 remains **OPEN** at
+**497.485576109116666… minutes**, beyond its already satisfied four-hour floor;
+phase research is **1583.616943473266666… minutes**. Four conservative exclusions
+preserve the raw timing evidence. The next increment is one
 requested hour under the [hourly direction](../decisions/2026-10-12_hourly_handoffs.md),
 not a new four-hour cycle. Earlier Codex attributions, findings and checkpoint
 totals below retain their historical scope. P3-POS01 remains OUTSTANDING.
+
+The [final F01/S28-B1/V1 promotion forecast](s07/forecast_final.md) is
+**20–45%, central 30%**, **−5 percentage points** since the first same-event
+assessment; P3-11 remains deferred. The portfolio now contains **30 families**,
+including new S29 and S30 below. This is a breadth count, not a readiness score.
+**S26–S30 remain DEVELOPMENT.**
 
 IDs S01 onward belong to this program, not separate clock commitments.
 
@@ -436,3 +444,39 @@ at **437.566782320916666… research minutes**, with its four-hour floor already
 satisfied. P3-POS01 is OUTSTANDING, readiness unassessed, P3-11 deferred. Use the
 [current prompt](CONTINUE.md) for the next requested hour, with a fresh observed
 clock after recovering any newer work.
+
+## s07 constructive update — October 12, 2026, ChatGPT (GPT-6 Astra Pro)
+
+[Checkpoint](s07/cp01.md), [findings](s07/findings.md),
+[reproduction guide](s07/reproduce.md). The requested hourly increment is closed;
+the continuing program and material-positive objective remain open.
+
+| Family | Constructive development and lineage | Evidence, obstacle and strongest ordinary comparison | Disposition |
+|---|---|---|---|
+| S28 — paid reusable weighted repair | Complete audit/proof bundles now execute from the shared admitted source and evidence interface. Lattice bounds, multi-call reserves and compiled signed margins keep every complete outcome covered. | [Executed findings](s07/findings.md): a01 has 0/11 completing plans on initially open requests; a02/a03 have 11/11. A02-to-a03 quotation work falls 38.57% and named arm work 31.87%, but a03 still costs 4.7544 times ordinary audit-first with the same 14 audits/14 complete calls. Zero qualifying complete-cost benefit regions are established. Expanded witness-menu schedules reduce proposals from 25 to 11, saving 483,617 named units, but are a different comparison from a03. | DEVELOPMENT; F01 forecast 20–45%, central 30% |
+| **S29 — checked source geometry and decision quotients** | S01/S04/S28 lineage. Source-global affine constraints identify objective directions that add the same cost to every repair; the remaining quotient determines repair ranking and an additional scalar controls replacement. Audit leaves can target an action-safe region before identifying the full mode or quotient. | [Source-bound construction](s07/s29_affine.md), [quotient audits](s07/quotient_audits.md), [closed form](s07/quotient_closed_form.md). The tiny actual example buys one complete proof and zero audits, reducing generic bound 2 to 0; the full paid tree ties and ordinary propagation is stronger. Count/closed-form agreement covers 135 small and nine larger cases; 546 random-order comparisons concern conditional arithmetic, not paid acquisition of source/proof premises. The [inexact-anchor extension](s07/inexact_anchor.md) is derivation only. Ordinary preprocessing, robust optimization and decision-tree evaluation receive the same checked equalities. | DEVELOPMENT; separate claim/event needed before promotion forecasting |
+| **S30 — common-CDF bridge to one fixed population action** | S05/S08T/S27/S28/S29 lineage. A single simultaneous CDF event supports adaptive payoff contrasts for one fixed action at the population mean, retaining partial latent observations and repeated-draw multiplicity. Checked logical evidence connects the statistical source to repair/replacement output. | [Corrected population findings](s07/population_findings.md): fixed population 64, 128 precommitted identity draws with replacement. Relevant contrasts use 29 audits/one proof and 70,605 named units versus 58/one and 122,283 for full latent identification, both with bound 15/8. Ordinary direct contrast ties 29 audits/70,605 units; a deterministic finite-population bound also closes at that prefix. None of the latent values is fully identified after 29 audits. This extends inherited partial-value learning; no new statistical principle or complete economic win is claimed. | DEVELOPMENT; separate claim/event needed before promotion forecasting |
+
+Checked [source ambiguity floors](s07/ambiguity_theory.md) can show that
+additional logical work alone cannot immediately close a fixed-action request
+over unchanged cost uncertainty. The saved probes detect this in two of six
+states, but cost more than the native proposals they might avoid. They are
+read-only diagnostics, not executed scheduling savings or learned probabilities.
+
+**Preferred next constructive task:** acquire or reuse original-source geometry,
+compile the actual remaining cost contrasts, and quote the complete paid
+audit/proof route on a prospectively declared family. Use measured external
+prices or supported symbolic intervals; charge proof acquisition, checking,
+compilation, failed calls and retention. Give an ordinary controller the same
+geometry and proposer. A checked logical gap within tolerance can suffice under
+the inexact-anchor derivation; a larger gap must retain a paid logical branch.
+Seek changed purchases or enough nonquotation savings to recover the initial
+costs. Further quotation savings on an unchanged trace do not resolve the
+current F01 deficit. If the result is the same ordinary method with a higher
+bill and no complete price region, retain that negative finding and redirect.
+
+The final [same-event forecast](s07/forecast_final.md) remains **20–45%, central
+30%** after reassessment, unchanged from the interim assessment and **−5 points**
+from the first. It is subjective and has no calibrated forecasting track
+record. Different S29/S30 claims must not inherit or relabel F01. **C001 OPEN;
+P3-POS01 OUTSTANDING; P3-11 deferred; no candidate promoted.**

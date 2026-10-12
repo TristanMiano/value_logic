@@ -1,0 +1,841 @@
+{
+  "status": "complete",
+  "candidate": "S29 source-proved affine cost invariance",
+  "evidence": "DEVELOPMENT separate generative branch from S28-B1",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "start_utc": "2026-10-12T20:27:14.103075+00:00",
+  "implementation_sha256": "7125114f72063cc9706500555783958e31ec113a4f466af162014a906ddab673",
+  "dependencies": {
+    "contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+    "contract_guard.py": "5babe0a530fb33b97eb6af860c6da638a70f1d63f514d66c05cb1f55efefef5a",
+    "source_anchor.py": "b8f42879ee99ce99c849fb4409e3b9c47c482f1430345ae7259ccb5c25a730bc",
+    "anchor_quotes.py": "afa35592c6d800f78a60853a71f59d0a2e28ac279aeaf5b71a1026149de0a97a",
+    "row_margins.py": "01a57695be8ea30d70e34f7e121d4671d745284fc153bd4c08e16273327d1a24"
+  },
+  "logical_source": {
+    "row": "s29-affine-shift",
+    "variables": 4,
+    "hard": [
+      [
+        1,
+        -2,
+        3,
+        -4
+      ],
+      [
+        -1,
+        2
+      ],
+      [
+        -1,
+        -3
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        2,
+        -3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        -3,
+        4
+      ],
+      [
+        -1
+      ]
+    ],
+    "soft": [
+      {
+        "weight": 3,
+        "clause": [
+          -1
+        ]
+      },
+      {
+        "weight": 4,
+        "clause": [
+          2
+        ]
+      },
+      {
+        "weight": 5,
+        "clause": [
+          -3
+        ]
+      },
+      {
+        "weight": 6,
+        "clause": [
+          4
+        ]
+      }
+    ],
+    "public_incumbent": 8,
+    "objective_max": 18,
+    "identity": "c7df8a9a5bc4c383a3643236e28b97a17645098b6e94d1f78136b3653e739ee7"
+  },
+  "cost_source": {
+    "cohort_size": 1,
+    "possible_cost_modes": [
+      [
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        5,
+        6,
+        7,
+        8
+      ]
+    ],
+    "hidden_modes": [
+      1
+    ],
+    "logical_structure_id": "7c54128681e0287b64c02b7562a949fd91494b425ea7db4fe9c86cffeb30a68b",
+    "interpretation": "Fixed synthetic source; no mode law, observations or learned population guarantee",
+    "source_identity": "90c2c914ecac0b935f47387dcfc138bf18189e92679355388f19c45c61a32bea"
+  },
+  "actual_audits": 0,
+  "actual_native_or_LP_calls": 0,
+  "actual_complete_calls": 1,
+  "actual_paid_point_proof": {
+    "source_id": "e57d6ec8a4e6a4b28180958a11b4dd4f5a473947598c01dbf422dd6507215956",
+    "budget": 3,
+    "provider_response": {
+      "status": "UNSAT",
+      "model": null,
+      "proof": [
+        "b",
+        0,
+        [
+          "b",
+          1,
+          [
+            "w",
+            [
+              1
+            ]
+          ],
+          [
+            "b",
+            2,
+            [
+              "b",
+              3,
+              [
+                "w",
+                [
+                  3
+                ]
+              ],
+              [
+                "h",
+                0
+              ]
+            ],
+            [
+              "w",
+              [
+                2
+              ]
+            ]
+          ]
+        ],
+        [
+          "h",
+          7
+        ]
+      ],
+      "invoice": {
+        "total": 264,
+        "by_category": {
+          "solve": 264
+        },
+        "operations": [
+          {
+            "category": "solve",
+            "operation": "branch_node",
+            "units": 9
+          },
+          {
+            "category": "solve",
+            "operation": "budget_compare",
+            "units": 7
+          },
+          {
+            "category": "solve",
+            "operation": "clause_header",
+            "units": 93
+          },
+          {
+            "category": "solve",
+            "operation": "cost_leaf_create",
+            "units": 6
+          },
+          {
+            "category": "solve",
+            "operation": "forced_weight_add",
+            "units": 3
+          },
+          {
+            "category": "solve",
+            "operation": "hard_leaf_create",
+            "units": 4
+          },
+          {
+            "category": "solve",
+            "operation": "literal_inspection",
+            "units": 134
+          },
+          {
+            "category": "solve",
+            "operation": "split_certificate_create",
+            "units": 8
+          }
+        ]
+      }
+    },
+    "quote": {
+      "source_id": "e57d6ec8a4e6a4b28180958a11b4dd4f5a473947598c01dbf422dd6507215956",
+      "variables": 4,
+      "soft_clauses": 4,
+      "maximum_tree_nodes": 31,
+      "maximum_tree_leaves": 16,
+      "provider_per_node": 44,
+      "provider_units": 1364,
+      "negative_check_units": 527,
+      "witness_check_units": 38,
+      "tree_compile_units": 203,
+      "witness_compile_units": 48,
+      "raw_proof_words": 110,
+      "admission_units": 45,
+      "objective_update_units": 10,
+      "response_units": 16,
+      "witness_retention_units": 12,
+      "proof_retention_units": 118,
+      "complete_wrapper_units": 2321,
+      "provider_sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+      "compilation_sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+      "meter_contract": "Named operation tariff only; all Python execution is also measured as CPU/wall time.",
+      "cpu_max_seconds": null,
+      "wall_max_seconds": null
+    },
+    "leaf_masks": [
+      2,
+      4,
+      8
+    ],
+    "checked_lower": 4,
+    "wrapper_invoice": {
+      "total": 175,
+      "by_category": {
+        "contract_admission": 45,
+        "check": 47,
+        "objective": 10,
+        "objective_update": 10,
+        "tree_compile": 17,
+        "storage": 30,
+        "output": 16
+      },
+      "operations": [
+        {
+          "category": "check",
+          "operation": "negative_clause_header",
+          "units": 5
+        },
+        {
+          "category": "check",
+          "operation": "negative_literal",
+          "units": 8
+        },
+        {
+          "category": "check",
+          "operation": "negative_proof_node",
+          "units": 9
+        },
+        {
+          "category": "check",
+          "operation": "negative_weight_add",
+          "units": 3
+        },
+        {
+          "category": "check",
+          "operation": "negative_weight_index",
+          "units": 3
+        },
+        {
+          "category": "check",
+          "operation": "witness_hard_clause_header",
+          "units": 8
+        },
+        {
+          "category": "check",
+          "operation": "witness_hard_literal",
+          "units": 11
+        },
+        {
+          "category": "contract_admission",
+          "operation": "source_words",
+          "units": 45
+        },
+        {
+          "category": "objective",
+          "operation": "full_objective_pass",
+          "units": 1
+        },
+        {
+          "category": "objective",
+          "operation": "soft_clause_header",
+          "units": 4
+        },
+        {
+          "category": "objective",
+          "operation": "soft_literal",
+          "units": 4
+        },
+        {
+          "category": "objective",
+          "operation": "weight_add",
+          "units": 1
+        },
+        {
+          "category": "objective_update",
+          "operation": "query_weight_words",
+          "units": 10
+        },
+        {
+          "category": "output",
+          "operation": "complete_query_response",
+          "units": 16
+        },
+        {
+          "category": "storage",
+          "operation": "compiled_tree_leaf_masks",
+          "units": 4
+        },
+        {
+          "category": "storage",
+          "operation": "complete_negative",
+          "units": 26
+        },
+        {
+          "category": "tree_compile",
+          "operation": "forced_clause_coefficient",
+          "units": 3
+        },
+        {
+          "category": "tree_compile",
+          "operation": "hard_leaf_omitted",
+          "units": 2
+        },
+        {
+          "category": "tree_compile",
+          "operation": "leaf_mask_deduplication",
+          "units": 3
+        },
+        {
+          "category": "tree_compile",
+          "operation": "proof_node_read",
+          "units": 9
+        }
+      ]
+    },
+    "total_operation_units": 439,
+    "timing": {
+      "process_ns": 16629958,
+      "wall_ns": 359412
+    },
+    "receipt_id": "2f1342c53e7fa7ade910a133420362f745917a28b01a17a77e1478aa340735d7"
+  },
+  "nominal_checked_witness": {
+    "model": 8,
+    "violation_mask": 2,
+    "original_cost": 4
+  },
+  "source_geometry_receipt": {
+    "kind": "checked_atomic_exactly_one_v1",
+    "original_source_identity": "c7df8a9a5bc4c383a3643236e28b97a17645098b6e94d1f78136b3653e739ee7",
+    "structure_identity": "7c54128681e0287b64c02b7562a949fd91494b425ea7db4fe9c86cffeb30a68b",
+    "ordered_violation_literals": [
+      1,
+      -2,
+      3,
+      -4
+    ],
+    "raw_clause_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "relaxation": "z>=0; sum(z)=1 contains every feasible Boolean violation vector",
+    "receipt_id": "35310e718dc6130a7ab4910fa15b42deb6e719f39727673a8c38358e9688ec5d"
+  },
+  "code_admission": {
+    "binding_rows": [
+      {
+        "file": "contract_quote.py",
+        "sha256": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+        "bytes": 9498,
+        "read_words": 1188,
+        "sha256_blocks": 149,
+        "binding_compare_units": 1
+      },
+      {
+        "file": "maxsat_repair.py",
+        "sha256": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+        "bytes": 21856,
+        "read_words": 2732,
+        "sha256_blocks": 342,
+        "binding_compare_units": 1
+      },
+      {
+        "file": "maxsat_reprice.py",
+        "sha256": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99",
+        "bytes": 16431,
+        "read_words": 2054,
+        "sha256_blocks": 257,
+        "binding_compare_units": 1
+      }
+    ],
+    "declared_admission_units": 6725,
+    "timing": {
+      "process_ns": 3721314,
+      "wall_ns": 128841
+    },
+    "source_semantics": "Manual finite-procedure derivation in contract_findings.md; no checksum-only proof admission."
+  },
+  "scalar_transport_receipts": [
+    {
+      "kind": "source_feasible_simplex_scalar_transport_v1",
+      "original_source_identity": "c7df8a9a5bc4c383a3643236e28b97a17645098b6e94d1f78136b3653e739ee7",
+      "structure_identity": "7c54128681e0287b64c02b7562a949fd91494b425ea7db4fe9c86cffeb30a68b",
+      "original_query": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "target_weights": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "checked_point_lower": 4,
+      "signed_displacement": [
+        "-2",
+        "-2",
+        "-2",
+        "-2"
+      ],
+      "simplex_support_minimum": "-2",
+      "target_scalar_lower": "2",
+      "geometry_receipt_id": "35310e718dc6130a7ab4910fa15b42deb6e719f39727673a8c38358e9688ec5d",
+      "raw_negative_receipt_id": "2f1342c53e7fa7ade910a133420362f745917a28b01a17a77e1478aa340735d7",
+      "justification": "For every feasible z, target.z=q.z+(target-q).z >= Lq+min(simplex,(target-q).z). Zero clamp uses nonnegative target weights.",
+      "receipt_id": "ef6faaa11254a17e36d220bc77b4fd87fb4006b7f7cdc6bb2672b36c19777f68"
+    },
+    {
+      "kind": "source_feasible_simplex_scalar_transport_v1",
+      "original_source_identity": "c7df8a9a5bc4c383a3643236e28b97a17645098b6e94d1f78136b3653e739ee7",
+      "structure_identity": "7c54128681e0287b64c02b7562a949fd91494b425ea7db4fe9c86cffeb30a68b",
+      "original_query": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "target_weights": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "checked_point_lower": 4,
+      "signed_displacement": [
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "simplex_support_minimum": "2",
+      "target_scalar_lower": "6",
+      "geometry_receipt_id": "35310e718dc6130a7ab4910fa15b42deb6e719f39727673a8c38358e9688ec5d",
+      "raw_negative_receipt_id": "2f1342c53e7fa7ade910a133420362f745917a28b01a17a77e1478aa340735d7",
+      "justification": "For every feasible z, target.z=q.z+(target-q).z >= Lq+min(simplex,(target-q).z). Zero clamp uses nonnegative target weights.",
+      "receipt_id": "5c08d236ba269ff9d33348979d875aa00972335b6cc746879ea9137ebaf76289"
+    }
+  ],
+  "checked_point_interval": [
+    4,
+    4
+  ],
+  "nominal_simplex_only_lower": 3,
+  "generic_boolean_anchor_lowers": [
+    0,
+    4
+  ],
+  "source_aware_anchor_lowers": [
+    "2",
+    "6"
+  ],
+  "same_paid_tree_anchor_lowers": [
+    2,
+    6
+  ],
+  "row_correlation_margins": {
+    "alpha": "8",
+    "delta": "8",
+    "box_alpha": "8",
+    "box_delta": "8",
+    "row_alpha": "8",
+    "row_delta": "8",
+    "strict_improvement": false,
+    "decompositions": [
+      {
+        "method": "row_integer_midpoints_with_one_residual",
+        "references": [
+          [
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "rows": [
+          {
+            "alpha": "8",
+            "delta": "8"
+          }
+        ],
+        "alpha": "8",
+        "delta": "8"
+      },
+      {
+        "method": "uniform_query_share",
+        "references": [
+          [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        ],
+        "rows": [
+          {
+            "alpha": "8",
+            "delta": "8"
+          }
+        ],
+        "alpha": "8",
+        "delta": "8"
+      }
+    ],
+    "residual_row": 0,
+    "references": [
+      [
+        3,
+        4,
+        5,
+        6
+      ]
+    ],
+    "objective_masks_enumerated": 0,
+    "row_product_enumerated": 0,
+    "premise": "Every compatible cohort sum, and its rowwise convex relaxation, with fixed ordered Boolean objective features"
+  },
+  "feasible_simplex_margins": {
+    "alpha": "2",
+    "delta": "2"
+  },
+  "common_shift_range": [
+    -2,
+    2
+  ],
+  "price_cases": [
+    {
+      "price": 7,
+      "generic_transport": {
+        "mask": 2,
+        "bound": "2",
+        "repair_gap": "2",
+        "replacement_gap": "-1",
+        "mode_anchor_lowers": [
+          "0",
+          "4"
+        ],
+        "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+        "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+      },
+      "source_aware_transport": {
+        "mask": 2,
+        "bound": "0",
+        "repair_gap": "0",
+        "replacement_gap": "-1",
+        "mode_anchor_lowers": [
+          "2",
+          "6"
+        ],
+        "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+        "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+      },
+      "affine_repair_bound": 0,
+      "affine_replacement_bound": 5
+    },
+    {
+      "price": 5,
+      "generic_transport": {
+        "mask": 2,
+        "bound": "2",
+        "repair_gap": "2",
+        "replacement_gap": "1",
+        "mode_anchor_lowers": [
+          "0",
+          "4"
+        ],
+        "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+        "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+      },
+      "source_aware_transport": {
+        "mask": 2,
+        "bound": "1",
+        "repair_gap": "0",
+        "replacement_gap": "1",
+        "mode_anchor_lowers": [
+          "2",
+          "6"
+        ],
+        "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+        "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+      },
+      "affine_repair_bound": 1,
+      "affine_replacement_bound": 3
+    },
+    {
+      "price": 1,
+      "generic_transport": {
+        "mask": null,
+        "bound": "1",
+        "repair_gap": "1",
+        "replacement_gap": "0",
+        "mode_anchor_lowers": [
+          "0",
+          "4"
+        ],
+        "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+        "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+      },
+      "source_aware_transport": {
+        "mask": null,
+        "bound": "0",
+        "repair_gap": "-1",
+        "replacement_gap": "0",
+        "mode_anchor_lowers": [
+          "2",
+          "6"
+        ],
+        "domain": "All compatible partial-row configurations and their convex hull, for this fixed checked action",
+        "method": "Concavity/homogeneity transports each scalar anchor lower by one over cohort size"
+      },
+      "affine_repair_bound": 5,
+      "affine_replacement_bound": 0
+    }
+  ],
+  "negative_controls": [
+    {
+      "case": "wrong_atomic_polarity",
+      "rejected": true,
+      "reason": "Missing source clause for exactly-one violation semantics"
+    },
+    {
+      "case": "missing_pair_exclusion",
+      "rejected": true,
+      "reason": "Missing source clause for exactly-one violation semantics"
+    },
+    {
+      "case": "nonaffine_cost_change",
+      "rejected": true,
+      "reason": "Displacement is not a common affine shift for this exactly-one source"
+    }
+  ],
+  "summary": {
+    "generic_anchor_bound_at_price7": 2,
+    "source_aware_bound_at_price7": 0,
+    "replacement_sensitive_bound_at_price5": 1,
+    "row_margin_sum": 16,
+    "simplex_margin_sum": 4,
+    "affine_repair_comparison_uncertainty": 0,
+    "actual_complete_calls": 1,
+    "actual_observations": 0,
+    "new_LP_or_native_calls": 0,
+    "new_logical_model_enumerations": 0,
+    "matches_same_paid_tree_in_this_example": true
+  },
+  "invoice": {
+    "local_operations": {
+      "total": 1567,
+      "by_category": {
+        "source_geometry_check": 592,
+        "witness_check": 19,
+        "witness_compile": 11,
+        "storage": 6,
+        "source_affine_check": 42,
+        "check": 56,
+        "source_scalar_transport": 48,
+        "comparison": 118,
+        "row_margin_quote": 285,
+        "source_anchor_compile": 216,
+        "source_anchor_query": 174
+      },
+      "operations": [
+        {
+          "category": "check",
+          "operation": "negative_clause_header",
+          "units": 10
+        },
+        {
+          "category": "check",
+          "operation": "negative_literal",
+          "units": 16
+        },
+        {
+          "category": "check",
+          "operation": "negative_proof_node",
+          "units": 18
+        },
+        {
+          "category": "check",
+          "operation": "negative_weight_add",
+          "units": 6
+        },
+        {
+          "category": "check",
+          "operation": "negative_weight_index",
+          "units": 6
+        },
+        {
+          "category": "comparison",
+          "operation": "generic_boolean_displacement_lower",
+          "units": 32
+        },
+        {
+          "category": "comparison",
+          "operation": "same_paid_tree_revaluation",
+          "units": 54
+        },
+        {
+          "category": "comparison",
+          "operation": "simplex_signed_upper_margins",
+          "units": 32
+        },
+        {
+          "category": "row_margin_quote",
+          "operation": "independent_safe_margin_minima",
+          "units": 8
+        },
+        {
+          "category": "row_margin_quote",
+          "operation": "positive_negative_parts_and_row_extrema",
+          "units": 156
+        },
+        {
+          "category": "row_margin_quote",
+          "operation": "two_public_reference_decompositions",
+          "units": 33
+        },
+        {
+          "category": "row_margin_quote",
+          "operation": "validation_coordinate_enclosures_and_box_margins",
+          "units": 88
+        },
+        {
+          "category": "source_affine_check",
+          "operation": "common_shift_comparison",
+          "units": 42
+        },
+        {
+          "category": "source_anchor_compile",
+          "operation": "mode_action_costs_and_lower_scaling",
+          "units": 216
+        },
+        {
+          "category": "source_anchor_query",
+          "operation": "cohort_sums_and_clipped_regret",
+          "units": 78
+        },
+        {
+          "category": "source_anchor_query",
+          "operation": "row_mode_contrast_extrema",
+          "units": 96
+        },
+        {
+          "category": "source_geometry_check",
+          "operation": "raw_clause_index_and_exact_violation_polarities",
+          "units": 592
+        },
+        {
+          "category": "source_scalar_transport",
+          "operation": "signed_simplex_minimum_and_nonnegative_lower",
+          "units": 48
+        },
+        {
+          "category": "storage",
+          "operation": "retained_witness_and_violation_mask",
+          "units": 6
+        },
+        {
+          "category": "witness_check",
+          "operation": "retained_clause_header",
+          "units": 8
+        },
+        {
+          "category": "witness_check",
+          "operation": "retained_literal",
+          "units": 11
+        },
+        {
+          "category": "witness_compile",
+          "operation": "mask_and_original_weight",
+          "units": 2
+        },
+        {
+          "category": "witness_compile",
+          "operation": "objective_violation_pass",
+          "units": 1
+        },
+        {
+          "category": "witness_compile",
+          "operation": "retained_clause_header",
+          "units": 4
+        },
+        {
+          "category": "witness_compile",
+          "operation": "retained_literal",
+          "units": 4
+        }
+      ]
+    },
+    "complete_wrapper_units": 439,
+    "provider_code_admission_units": 6725,
+    "total_declared_units": 8731,
+    "scope": "All example checks included. Source support is a declared synthetic contract. CPU/storage/serialization and economic conversions are separately unpriced."
+  },
+  "end_utc": "2026-10-12T20:27:14.105798+00:00",
+  "timing": {
+    "process_ns": 35190072,
+    "wall_ns": 2831120
+  },
+  "limitations": "The ordinary simplex/robust method receives the same source constraint. Full retained-tree revaluation already matches these bounds on this small family. No advantage over those controls, broad transfer or S28-B1 confirmation is established."
+}
