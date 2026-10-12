@@ -498,6 +498,11 @@ confirmation plan. An adverse confirmation returns the objective to discovery.
   forecast meeting the intended 80% minimum, with 90% preferred. An unassessed
   forecast leaves the candidate in discovery. Artifact: evolving derivations
   and candidate records under `v3/discovery/`, linked from the program.
+  **At every recurrence round, update the [C001 progress table](v3/discovery/recurrences.md):**
+  one row with effective research minutes, cumulative minutes (both rounded
+  from exact actuals), source-backed quantitative progress metrics and a
+  one-to-three-sentence description. Carry the table and this requirement
+  into each checkpoint and handoff; documentation adds no research credit.
 
 - [ ] **P3-11 — rigorous confirmation, adversarial reconstruction and contribution review. Research90 minimum; deferred.**
 

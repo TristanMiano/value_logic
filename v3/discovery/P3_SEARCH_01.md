@@ -7,6 +7,8 @@ Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTS
 Latest execution contributor: **ChatGPT (GPT-6 Astra Pro)**; earlier
 **Codex (GPT-6)** work is preserved. [Current checkpoint](s06/cp01.md),
 [portfolio](candidates.md), [exact effective actuals](s06/effective_actuals.json).
+The [C001 recurrence table](recurrences.md) reconstructs each recorded increment
+with its credited time, cumulative time and quantitative discovery results.
 
 Current s06 direction: **calibrated repair**, choosing between paid cost
 observations and logical evidence to certify a useful action. The
@@ -225,6 +227,21 @@ declare all five questions solved. Author redirection or completion remains
 an explicit disposition.
 
 ## 7. Checkpoint report and current state
+
+**Recurring reporting requirement — author direction, October 12, 2026:**
+update [the recurrence table](recurrences.md) and its
+[exact source record](recurrences.json) at every recurrence round and handoff.
+Use one row per requested increment; the reconstructed older history uses
+recorded checkpoint increments, with credited interrupted tails and abandoned
+attempts distinguished. Report engaged D+L+E minutes and cumulative minutes,
+each rounded independently from exact effective nanoseconds. Include at least
+one useful quantitative progress metric with its units, denominator, comparison
+and source, plus a one-to-three-sentence account of what changed. Retain the
+new-family count as a breadth measure without treating it as a quota or a
+readiness score; distinguish new families from revisions. Preserve earlier
+rows and corrections, keep actual acquisitions separate from replay, and do
+not invent a common benchmark where duties differ. Refresh the checkpoint and
+portable prompt with this table. Table maintenance earns no research credit.
 
 Each checkpoint reports work performed, scientific findings, constructive
 progress, candidate readiness and the next action separately. A useful negative
