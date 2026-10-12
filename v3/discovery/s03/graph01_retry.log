@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic_2\v3\discovery\s03\graph_probe.py", line 67, in <module>
+    if __name__=='__main__':main(Path(sys.argv[1]))
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic_2\v3\discovery\s03\graph_probe.py", line 42, in main
+    adaptive,states=bellman(weights,anchors,edges) if k<12 else (None,0)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic_2\v3\discovery\s03\graph_probe.py", line 25, in bellman
+    return best(tuple(range(1<<n))),best.cache_info().currsize
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic_2\v3\discovery\s03\graph_probe.py", line 23, in best
+    value=max(value,-c+F(len(zero),len(worlds))*best(zero)+F(len(one),len(worlds))*best(one))
+                                                                                   ^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic_2\v3\discovery\s03\graph_probe.py", line 23, in best
+    value=max(value,-c+F(len(zero),len(worlds))*best(zero)+F(len(one),len(worlds))*best(one))
+                                                ^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic_2\v3\discovery\s03\graph_probe.py", line 23, in best
+    value=max(value,-c+F(len(zero),len(worlds))*best(zero)+F(len(one),len(worlds))*best(one))
+                                                ^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic_2\v3\discovery\s03\graph_probe.py", line 18, in best
+    stop=sum(w*F(max(sum(x>>v&1 for x in worlds),sum(1-(x>>v&1) for x in worlds)),len(worlds)) for v,w in enumerate(weights))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic_2\v3\discovery\s03\graph_probe.py", line 18, in <genexpr>
+    stop=sum(w*F(max(sum(x>>v&1 for x in worlds),sum(1-(x>>v&1) for x in worlds)),len(worlds)) for v,w in enumerate(weights))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'tuple_iterator' object is not callable

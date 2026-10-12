@@ -731,3 +731,16 @@ Codex (GPT-6). [Active checkpoint](discovery/s03/cp06.md):
 | DS-S18-RANK | Ordinary matroid prefixes solve rank-dependent query decisions; supported mixtures bound minimax log-score reliance on fallible models. | 36 planning cases / 7,036 belief states, 4,780 subset comparisons, 1,024 executable guesses, 1,836 partial report checks. Full-assignment objective can collapse to all-or-none; one unexplained report failure and unchanged retry preserved. |
 | DS-S19-TRANSPORT | Explicit affine decision isomorphisms reuse policy values and reports under nonuniform pushforward laws. | 32 finite correlated sources, 226 paired worlds and 4,652 policy states. Ordinary structural decision reuse; mapping, costs and real-program interpretation must be justified. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | [Assessment](discovery/s03/synthesis06.md); no confirmation or contribution gate attempted. |
+
+## P3-SEARCH-01-C001 — s03 checkpoint 7
+
+Codex (GPT-6). [Active checkpoint](discovery/s03/cp07.md): 296.10743256
+research minutes, beyond the floor. All findings remain DEVELOPMENT.
+
+| ID | Constructive finding / delta | Evidence, comparison and limits |
+|---|---|---|
+| DS-S20-GRAPH | Alternative graph observations give exact physical-tree acquisition value and a scoped randomized minimax interpretation. | 32 trees, 6,216 subsets, 744 world scores, 12 Bellman cases. Ordinary prize-collecting trees are the comparator; supplied costs. Original Python crash and failed unchanged retry retained, followed by explicit same-input Node amendment. |
+| DS-S21-FAILURE | Success-conditioned acquisition can beat all fixed batches; conditional lower success bounds support robust planning. | Exact 21/400 separation; 24 small cases and 12 explicit-world comparisons. Per-history bounds are supplied, not inferred from pooled success rates. |
+| DS-S21-CAPS | Capped single-anchor outward tree policies admit linear all-root interval planning with width at most n/D. | 32 trees, 3,148 exact rooted choices; 4,096-node planning kernels about 8.5–9.3 ms. Restricted policy class, supplied bounds, no solver execution or external economic benefit. |
+| DS-S22-RETRY | Latent mixture hazards decrease on failures; cap values reconstruct bounded survival information and avoid unstable hazard-based decisions. | 24 mixtures, 384 hazard identities, 408 reconstructions. Ordinary Bayesian stopping; supplied priors. Pooled average success can give a finite price when true completion has infinite expected cost. |
+| P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | [Assessment](discovery/s03/synthesis07.md); S23 develops learning from censored computation. P3-11 deferred. |

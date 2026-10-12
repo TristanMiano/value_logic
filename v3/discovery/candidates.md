@@ -279,3 +279,23 @@ unassessed and P3-11 deferred. All findings remain DEVELOPMENT.
 [Checkpoint 6](s03/cp06.md) continues C001 beyond its floor. Next develop
 alternative graph observations for the weighted fact-prediction objective.
 P3-POS01 remains OUTSTANDING, readiness unassessed, P3-11 deferred.
+
+## s03 seventh constructive revision
+
+- **S20:** alternative node/parity observations admit an exact physical-tree
+  planner and a general ordinary prize-collecting-tree reduction. Uniform-source
+  and randomized minimax values agree at the declared interface.
+  [Derivation and amended implementation](s03/graph_values.md).
+- **S21:** failed-query adaptation can strictly beat fixed batches. Conditional
+  success bounds support robust planning; capped outward tree policies have
+  a linear all-root planner with explicit grid error.
+  [Construction and checks](s03/failed_queries.md).
+- **S22:** latent runtime heterogeneity breaks pooled geometric retry pricing.
+  Cutoff values preserve bounded-horizon survival information and directly
+  support regret certificates. [Development](s03/retry_models.md).
+- **S23:** censoring-safe cutoff value learning is the next integration of
+  paid audits and incomplete runs. [Initial derivation](s03/censored_values.md).
+
+[Checkpoint 7](s03/cp07.md) continues C001 beyond its floor. Probability bounds
+and costs in the planners remain supplied; actual learning/usefulness remains
+open. P3-POS01 OUTSTANDING, readiness unassessed, P3-11 deferred.
