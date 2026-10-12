@@ -693,3 +693,15 @@ Codex (GPT-6). [Active checkpoint](discovery/s03/cp03.md):
 | DS-S12-BANK | Adaptive posterior policy weights share one ordinary anytime PAC-Bayes event despite incomplete/delayed evaluation. | Exact log-interval arithmetic checks a rational posterior. One supplied fixture improves lower utility from 0.484180 to 0.610157 on delayed evidence at 64 draws. Artificial receipt releases, no measured solver saving or confidence calibration. |
 | DS-S12-TRANSPORT | Known repricing, nonnegative affine version relations and proposed weighted-support bounds reuse the common event. | Algebraic development only; numerical weighted optimization and complete cost comparison remain unimplemented at this checkpoint. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | All recorded failures retained; no extensive confirmation, P3-11 promotion or author contribution gate attempted. |
+
+## P3-SEARCH-01-C001 — s03 checkpoint 4
+
+Codex (GPT-6). [Active checkpoint](discovery/s03/cp04.md). DEVELOPMENT only.
+
+| ID | Constructive finding / delta | Evidence, comparison and limits |
+|---|---|---|
+| DS-S12-COMPACT | Outward dyadic logs and checked weighted-query advice retain the common event with bounded rounding loss. | 10 exposed-stage replays, 100 numerical support queries. Ordinary convex support optimization; acquisition economics absent. |
+| DS-S13-BATCH | Paid shared prerequisites for termwise receipts map to ordinary maximum closure. | 100 exhaustive batch comparisons, 226 refinement and 156 expectation checks. A common-value counterexample rejects certificate gain as decision VOI. |
+| DS-S13-ADAPT | Common-baseline/flow bounds cover finite adaptive query trees under a supplied independent uniform-bit model. | 36 finite Bellman comparisons; one sharp 9/10 case. A four-bit matching proves at least 1/400 gap for terminal-only penalties. Sequential repair is exact on its fixture but slower than a simple ordinary control. No broad economic advantage. |
+| DS-S14-CODE | A prospectively fixed prefix prior permits later discovered programs and delayed evaluations with explicit complexity costs. | 2,047 prefix checks and a fresh 1,024-draw developmental lottery. Countable PAC-Bayes principles imported; one path does not calibrate confidence or demonstrate external usefulness. |
+| P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | [Five-question synthesis](discovery/s03/synthesis04.md); P3-11 deferred, no confirmation promotion. |

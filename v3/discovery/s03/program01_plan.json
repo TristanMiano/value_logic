@@ -1,0 +1,17 @@
+{
+  "status": "prospective_development_source",
+  "contributor": "Codex (GPT-6)",
+  "seed": 24613,
+  "dimension": 8,
+  "target_mask": 51,
+  "prior": "Fixed gamma-length envelope for every binary payload; valid bounded prediction programs get mass 2^-code_length, unused mass dummy.",
+  "lottery": "1024 fresh with-replacement uniform context draws; programs proposed from observed pairs at 16/64/256/1024.",
+  "alpha": "1/20",
+  "lambda_grid": "2^-k for k>=0, alpha_k=alpha/((k+1)*(k+2)); implementation checks k=0..16.",
+  "sources": {
+    "bank_bounds.py": "e579023b8b4f762b33fac128c50c22b5ceaaddc91f0a262972471bf9dc625c7b",
+    "bank_compact.py": "64678c305cddfd0d8378e6ff87eb1106033566efa219902433c03d0f8419cb69",
+    "program_bound.py": "7aad03efba4ebcef7986b0833bd369f79293f5bc5e34dcaac44f30587229b4cf",
+    "program_probe.py": "70b131470435642fbf74f38bd71f9b3c39946bf89f251d6b835637ca9e1c165c"
+  }
+}

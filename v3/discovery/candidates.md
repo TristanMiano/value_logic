@@ -214,3 +214,25 @@ economic advantage over equally informed conventional methods is established.
 The first moment enumerator's scaling defect, two failed 3.13 replay attempts
 and explicit 3.12 continuation remain recorded. Readiness remains unassessed;
 continue C001 from [checkpoint 3](s03/cp03.md), with P3-POS01 OUTSTANDING.
+
+## s03 fourth constructive revision
+
+- **S12T:** compact dyadic log certificates and checked weighted-query advice
+  reduce arithmetic representation overhead. No new statistical information
+  or complete acquisition economy is claimed. [Record](s03/compact_queries.md).
+- **S13:** paid prerequisite bundles map to conventional maximum closure.
+  Certificate-improvement value can be irrelevant to actual action choice;
+  retain that counterexample and restrict this primitive's objective.
+- **S13C/A/S:** action contrasts, parity rank and common-baseline flow bounds
+  supply compact batch planning and an upper certificate for adaptive trees.
+  A known type of subcube/decision-tree obstruction yields an explicit gap;
+  local sequential bounds repair it. The simple initializer wins the first
+  complete-cost kernel screen. [Development](s03/adaptive_bounds.md).
+- **S14:** a fixed prefix-code prior permits later proposed programs with
+  checked delayed evaluations. An explicit lambda risk grid refines bounds;
+  description cost can make the sample requirement impractical.
+  [Source and fresh development](s03/open_family.md).
+
+Continue from [checkpoint 4](s03/cp04.md). Readiness remains unassessed and
+P3-POS01 OUTSTANDING; these components do not yet form a materially useful
+service. Prioritize cheap verified proposals and credible acquisition economics.
