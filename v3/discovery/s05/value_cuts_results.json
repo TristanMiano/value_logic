@@ -1,0 +1,6067 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "utc": "2026-10-12T15:57:23.848737+00:00",
+  "implementation_sha256": "8f141f16b29c9b5037ac96b7435739b06901a52b2e755b46b6cfd639e04a5cab",
+  "input_result_sha256": "bd6a5b43b79672147dbcd40222fb6ecb1d1a289988bb515539107441f7731a54",
+  "source": "reprice_compact_results.json",
+  "scipy_version": "1.17.0",
+  "new_solver_calls": 0,
+  "new_source_diagnostic_calls": 0,
+  "new_empirical_exposure": false,
+  "auxiliary_numerical_lp_calls": 81,
+  "cases": [
+    {
+      "name": "identity",
+      "weights": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2
+      ],
+      "rows": [
+        {
+          "row": 0,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 3173019,
+            "exact_check_runtime_ns": 334536,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 1,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 1413233,
+            "exact_check_runtime_ns": 172896,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 3
+        },
+        {
+          "row": 2,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 1352533,
+            "exact_check_runtime_ns": 83254,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 3
+        },
+        {
+          "row": 3,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 1057827,
+            "exact_check_runtime_ns": 83474,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 4,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 1186277,
+            "exact_check_runtime_ns": 340464,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 5,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 993911,
+            "exact_check_runtime_ns": 79508,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 6,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 875647,
+            "exact_check_runtime_ns": 202711,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 7,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 963707,
+            "exact_check_runtime_ns": 117744,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 3
+        },
+        {
+          "row": 8,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 3,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 3,
+            "rational_lower": "3",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 3.0,
+            "proposal_runtime_ns": 967603,
+            "exact_check_runtime_ns": 109532,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 3,
+          "current_scalar_lower_comparison_only": 3,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 9,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 1047741,
+            "exact_check_runtime_ns": 121710,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 10,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 5949285,
+            "exact_check_runtime_ns": 87440,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 11,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 1161980,
+            "exact_check_runtime_ns": 285083,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 3
+        },
+        {
+          "row": 12,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 1041182,
+            "exact_check_runtime_ns": 80840,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 13,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 5,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 5,
+            "rational_lower": "5",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 5.0,
+            "proposal_runtime_ns": 972119,
+            "exact_check_runtime_ns": 81631,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 5,
+          "current_scalar_lower_comparison_only": 5,
+          "shared_witness_upper_comparison_only": 5
+        },
+        {
+          "row": 14,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 961844,
+            "exact_check_runtime_ns": 79317,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 3
+        },
+        {
+          "row": 15,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 6,
+              "receipt": "original_checked_budget_lower"
+            }
+          ],
+          "combined": {
+            "integer_lower": 6,
+            "rational_lower": "6",
+            "nonnegative_cut_multipliers": [
+              "1"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 6.0,
+            "proposal_runtime_ns": 989065,
+            "exact_check_runtime_ns": 78796,
+            "cut_count": 1,
+            "checker_rational_products": 17
+          },
+          "current_tree_lower_comparison_only": 6,
+          "current_scalar_lower_comparison_only": 6,
+          "shared_witness_upper_comparison_only": 7
+        }
+      ],
+      "strict_improvement_over_scalar": 0,
+      "strict_improvement_over_current_tree": 0
+    },
+    {
+      "name": "uniform_double",
+      "weights": [
+        2,
+        4,
+        6,
+        2,
+        4,
+        6,
+        2,
+        4
+      ],
+      "rows": [
+        {
+          "row": 0,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 4,
+            "rational_lower": "4",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 4.0,
+            "proposal_runtime_ns": 875216,
+            "exact_check_runtime_ns": 101130,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 4,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 1,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 4,
+            "rational_lower": "4",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 4.0,
+            "proposal_runtime_ns": 889587,
+            "exact_check_runtime_ns": 99928,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 4,
+          "shared_witness_upper_comparison_only": 6
+        },
+        {
+          "row": 2,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 4,
+            "rational_lower": "4",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 4.0,
+            "proposal_runtime_ns": 822027,
+            "exact_check_runtime_ns": 101229,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 4,
+          "shared_witness_upper_comparison_only": 6
+        },
+        {
+          "row": 3,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 1123634,
+            "exact_check_runtime_ns": 102342,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 4,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 850199,
+            "exact_check_runtime_ns": 99157,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 5,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 4,
+            "rational_lower": "4",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 4.0,
+            "proposal_runtime_ns": 936867,
+            "exact_check_runtime_ns": 99867,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 4,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 6,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 4,
+            "rational_lower": "4",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 4.0,
+            "proposal_runtime_ns": 950287,
+            "exact_check_runtime_ns": 100508,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 4,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 7,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 4,
+            "rational_lower": "4",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 4.0,
+            "proposal_runtime_ns": 1092248,
+            "exact_check_runtime_ns": 121701,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 4,
+          "shared_witness_upper_comparison_only": 6
+        },
+        {
+          "row": 8,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 3,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 3,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 6,
+            "rational_lower": "6",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 6.0,
+            "proposal_runtime_ns": 939491,
+            "exact_check_runtime_ns": 101069,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 6,
+          "current_scalar_lower_comparison_only": 6,
+          "shared_witness_upper_comparison_only": 8
+        },
+        {
+          "row": 9,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 834747,
+            "exact_check_runtime_ns": 99337,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 10,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 861176,
+            "exact_check_runtime_ns": 99057,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 11,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 4,
+            "rational_lower": "4",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 4.0,
+            "proposal_runtime_ns": 890909,
+            "exact_check_runtime_ns": 102722,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 4,
+          "shared_witness_upper_comparison_only": 6
+        },
+        {
+          "row": 12,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 4,
+            "rational_lower": "4",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 4.0,
+            "proposal_runtime_ns": 920513,
+            "exact_check_runtime_ns": 99477,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 4,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 13,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 5,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 5,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 10,
+            "rational_lower": "10",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 10.0,
+            "proposal_runtime_ns": 853233,
+            "exact_check_runtime_ns": 98135,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 10,
+          "current_scalar_lower_comparison_only": 10,
+          "shared_witness_upper_comparison_only": 10
+        },
+        {
+          "row": 14,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 4,
+            "rational_lower": "4",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 4.0,
+            "proposal_runtime_ns": 1169131,
+            "exact_check_runtime_ns": 108581,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 4,
+          "shared_witness_upper_comparison_only": 6
+        },
+        {
+          "row": 15,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 6,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 6,
+              "receipt": "saved_tree_profile:identity"
+            }
+          ],
+          "combined": {
+            "integer_lower": 12,
+            "rational_lower": "12",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 12.0,
+            "proposal_runtime_ns": 876337,
+            "exact_check_runtime_ns": 101000,
+            "cut_count": 2,
+            "checker_rational_products": 34
+          },
+          "current_tree_lower_comparison_only": 12,
+          "current_scalar_lower_comparison_only": 12,
+          "shared_witness_upper_comparison_only": 14
+        }
+      ],
+      "strict_improvement_over_scalar": 0,
+      "strict_improvement_over_current_tree": 0
+    },
+    {
+      "name": "double_first_half",
+      "weights": [
+        2,
+        4,
+        6,
+        2,
+        2,
+        3,
+        1,
+        2
+      ],
+      "rows": [
+        {
+          "row": 0,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 1184144,
+            "exact_check_runtime_ns": 123503,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 1,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 982374,
+            "exact_check_runtime_ns": 199425,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 2,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 990476,
+            "exact_check_runtime_ns": 119016,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 6
+        },
+        {
+          "row": 3,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 1006411,
+            "exact_check_runtime_ns": 120028,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 3
+        },
+        {
+          "row": 4,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 867865,
+            "exact_check_runtime_ns": 121099,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 5,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 912861,
+            "exact_check_runtime_ns": 300174,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 6,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 1561573,
+            "exact_check_runtime_ns": 121890,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 7,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 998569,
+            "exact_check_runtime_ns": 363468,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 8,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 3,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 3,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 6,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 3,
+            "rational_lower": "3",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 3.0,
+            "proposal_runtime_ns": 1064597,
+            "exact_check_runtime_ns": 209340,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 3,
+          "shared_witness_upper_comparison_only": 5
+        },
+        {
+          "row": 9,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 1028603,
+            "exact_check_runtime_ns": 119587,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 10,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 930457,
+            "exact_check_runtime_ns": 121410,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 11,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 1133348,
+            "exact_check_runtime_ns": 122772,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 3,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 3
+        },
+        {
+          "row": 12,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 958199,
+            "exact_check_runtime_ns": 151123,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 13,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 5,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 5,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 10,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 5,
+            "rational_lower": "5",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 5.0,
+            "proposal_runtime_ns": 884129,
+            "exact_check_runtime_ns": 149100,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 5,
+          "current_scalar_lower_comparison_only": 5,
+          "shared_witness_upper_comparison_only": 8
+        },
+        {
+          "row": 14,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "2",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.0,
+            "proposal_runtime_ns": 1223862,
+            "exact_check_runtime_ns": 146517,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 15,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 6,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 6,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 12,
+              "receipt": "saved_tree_profile:uniform_double"
+            }
+          ],
+          "combined": {
+            "integer_lower": 6,
+            "rational_lower": "6",
+            "nonnegative_cut_multipliers": [
+              "1",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 6.0,
+            "proposal_runtime_ns": 1228809,
+            "exact_check_runtime_ns": 123153,
+            "cut_count": 3,
+            "checker_rational_products": 51
+          },
+          "current_tree_lower_comparison_only": 9,
+          "current_scalar_lower_comparison_only": 6,
+          "shared_witness_upper_comparison_only": 10
+        }
+      ],
+      "strict_improvement_over_scalar": 0,
+      "strict_improvement_over_current_tree": 0
+    },
+    {
+      "name": "zero_last_half",
+      "weights": [
+        1,
+        2,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rows": [
+        {
+          "row": 0,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 1289509,
+            "exact_check_runtime_ns": 143903,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 0
+        },
+        {
+          "row": 1,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 990036,
+            "exact_check_runtime_ns": 150753,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 2,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 1162031,
+            "exact_check_runtime_ns": 149852,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 3
+        },
+        {
+          "row": 3,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 1118016,
+            "exact_check_runtime_ns": 219725,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 4,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 873643,
+            "exact_check_runtime_ns": 198273,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 5,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 996256,
+            "exact_check_runtime_ns": 141950,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 0
+        },
+        {
+          "row": 6,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 1109523,
+            "exact_check_runtime_ns": 140338,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 0
+        },
+        {
+          "row": 7,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 905852,
+            "exact_check_runtime_ns": 138776,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 8,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 3,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 3,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 6,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 1823260,
+            "exact_check_runtime_ns": 146727,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 9,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 958269,
+            "exact_check_runtime_ns": 146186,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 0
+        },
+        {
+          "row": 10,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 861856,
+            "exact_check_runtime_ns": 140569,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 11,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 3,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 1113329,
+            "exact_check_runtime_ns": 141570,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 0
+        },
+        {
+          "row": 12,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 1090094,
+            "exact_check_runtime_ns": 143422,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 0
+        },
+        {
+          "row": 13,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 5,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 5,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 10,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 5,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 943847,
+            "exact_check_runtime_ns": 139877,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 3
+        },
+        {
+          "row": 14,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 912631,
+            "exact_check_runtime_ns": 138235,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 15,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 6,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 6,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 12,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 9,
+              "receipt": "saved_tree_profile:double_first_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1/2",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "1/2"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "3/2",
+              "1/2",
+              "1"
+            ],
+            "numerical_relaxation_value": 0.5,
+            "proposal_runtime_ns": 917840,
+            "exact_check_runtime_ns": 185655,
+            "cut_count": 4,
+            "checker_rational_products": 68
+          },
+          "current_tree_lower_comparison_only": 3,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 3
+        }
+      ],
+      "strict_improvement_over_scalar": 1,
+      "strict_improvement_over_current_tree": 0
+    },
+    {
+      "name": "rotate_right",
+      "weights": [
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1
+      ],
+      "rows": [
+        {
+          "row": 0,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 988685,
+            "exact_check_runtime_ns": 162801,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 1,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 938670,
+            "exact_check_runtime_ns": 160708,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 2,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 925020,
+            "exact_check_runtime_ns": 161169,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 3,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1/2",
+            "nonnegative_cut_multipliers": [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.5,
+            "proposal_runtime_ns": 972780,
+            "exact_check_runtime_ns": 187868,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 5
+        },
+        {
+          "row": 4,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 831471,
+            "exact_check_runtime_ns": 183411,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 5,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 1072237,
+            "exact_check_runtime_ns": 170633,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 6,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 1090986,
+            "exact_check_runtime_ns": 162461,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 7,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 1002274,
+            "exact_check_runtime_ns": 247747,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 8,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 3,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 3,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 6,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 2,
+            "rational_lower": "3/2",
+            "nonnegative_cut_multipliers": [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.5,
+            "proposal_runtime_ns": 1258553,
+            "exact_check_runtime_ns": 162360,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 2,
+          "current_scalar_lower_comparison_only": 2,
+          "shared_witness_upper_comparison_only": 7
+        },
+        {
+          "row": 9,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1/2",
+            "nonnegative_cut_multipliers": [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.5,
+            "proposal_runtime_ns": 1037527,
+            "exact_check_runtime_ns": 191323,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 10,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 0,
+            "rational_lower": "0",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 0.0,
+            "proposal_runtime_ns": 1004518,
+            "exact_check_runtime_ns": 163382,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 0,
+          "current_scalar_lower_comparison_only": 0,
+          "shared_witness_upper_comparison_only": 3
+        },
+        {
+          "row": 11,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 3,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 1052469,
+            "exact_check_runtime_ns": 241568,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 2
+        },
+        {
+          "row": 12,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 1090845,
+            "exact_check_runtime_ns": 159967,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 1
+        },
+        {
+          "row": 13,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 5,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 5,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 10,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 5,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 0,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 3,
+            "rational_lower": "5/2",
+            "nonnegative_cut_multipliers": [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 2.5,
+            "proposal_runtime_ns": 972771,
+            "exact_check_runtime_ns": 159717,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 3,
+          "current_scalar_lower_comparison_only": 3,
+          "shared_witness_upper_comparison_only": 3
+        },
+        {
+          "row": 14,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 2,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 4,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 1,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 1,
+            "rational_lower": "1",
+            "nonnegative_cut_multipliers": [
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 1.0,
+            "proposal_runtime_ns": 1169491,
+            "exact_check_runtime_ns": 162531,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 1,
+          "current_scalar_lower_comparison_only": 1,
+          "shared_witness_upper_comparison_only": 4
+        },
+        {
+          "row": 15,
+          "prior_cuts": [
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 6,
+              "receipt": "original_checked_budget_lower"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 6,
+              "receipt": "saved_tree_profile:identity"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                4,
+                6,
+                2,
+                4
+              ],
+              "lower": 12,
+              "receipt": "saved_tree_profile:uniform_double"
+            },
+            {
+              "weights": [
+                2,
+                4,
+                6,
+                2,
+                2,
+                3,
+                1,
+                2
+              ],
+              "lower": 9,
+              "receipt": "saved_tree_profile:double_first_half"
+            },
+            {
+              "weights": [
+                1,
+                2,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "lower": 3,
+              "receipt": "saved_tree_profile:zero_last_half"
+            }
+          ],
+          "combined": {
+            "integer_lower": 4,
+            "rational_lower": "19/6",
+            "nonnegative_cut_multipliers": [
+              "1/3",
+              "0",
+              "0",
+              "1/6",
+              "0"
+            ],
+            "box_multipliers": [
+              "0",
+              "1/3",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "numerical_relaxation_value": 3.1666666666666665,
+            "proposal_runtime_ns": 1256751,
+            "exact_check_runtime_ns": 210742,
+            "cut_count": 5,
+            "checker_rational_products": 85
+          },
+          "current_tree_lower_comparison_only": 4,
+          "current_scalar_lower_comparison_only": 3,
+          "shared_witness_upper_comparison_only": 8
+        }
+      ],
+      "strict_improvement_over_scalar": 1,
+      "strict_improvement_over_current_tree": 0
+    }
+  ],
+  "illustrative_complementary_cuts": {
+    "cuts": [
+      {
+        "weights": [
+          1,
+          0
+        ],
+        "lower": 1
+      },
+      {
+        "weights": [
+          0,
+          1
+        ],
+        "lower": 1
+      }
+    ],
+    "weights": [
+      1,
+      1
+    ],
+    "combined": {
+      "integer_lower": 2,
+      "rational_lower": "2",
+      "nonnegative_cut_multipliers": [
+        "1",
+        "1"
+      ],
+      "box_multipliers": [
+        "0",
+        "0"
+      ],
+      "numerical_relaxation_value": 2.0,
+      "proposal_runtime_ns": 883688,
+      "exact_check_runtime_ns": 48232,
+      "cut_count": 2,
+      "checker_rational_products": 10
+    }
+  },
+  "accounting": {
+    "source_bundle_bytes_read": 150833,
+    "proposal_runtime_ns": 89679892,
+    "exact_check_runtime_ns": 11939980,
+    "complete_native_instruction_invoice": false
+  },
+  "scope": "Exact valid lower certificates; no claim of LP optimality, net cost benefit, or native MaxSAT superiority"
+}

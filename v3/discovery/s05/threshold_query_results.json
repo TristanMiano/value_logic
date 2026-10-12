@@ -1,0 +1,6144 @@
+{
+  "status": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "generated_utc": "2026-10-12T15:20:58.491586+00:00",
+  "command": [
+    "v3/discovery/s05/threshold_queries.py",
+    "v3/discovery/s05/threshold_query_results.json"
+  ],
+  "sources": {
+    "threshold_queries.py": "c92a5313e0e74416ecb8903223010c93cf15db15a68f22bb7e7b3d47d9af86da",
+    "threshold_cnf_results.json": "89b1a40494b2bca70b4d6c64839c87d7c2d81a847ee1cdb3d80d70840f902025"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "scipy": "1.17.0"
+  },
+  "query_definitions": {
+    "original_pair_3_4": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "later_pair_0_7": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "two_interval_union": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "all_pair_disagreements": [
+      0,
+      7,
+      12,
+      15,
+      16,
+      15,
+      12,
+      7,
+      0
+    ],
+    "lower_first_query_count": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "upper_first_query_count": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "paired_order_count_difference": [
+      -1,
+      -1,
+      -1,
+      -1,
+      0,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "new_source_evaluations": 0,
+  "source_warrant": "Inherited fixed-n rational outward DKW bands; selected-query coverage is conditional on the stated sampling law",
+  "scope": "Post-exposure query interface; exact LP dual/primal certificates. Query-count prices are illustrative complete unit tariffs, not actual solver bills. Acquisition invoices are inherited, not repaid or credited as zero cost.",
+  "exact_certificates": 126,
+  "exact_optima": 126,
+  "lp_proposal_ns": 158258589,
+  "exact_check_ns": 97403362,
+  "rows": [
+    {
+      "mode": "endpoint_bank",
+      "stage": 0,
+      "source_acquisition_units": 1244893,
+      "lower_cdf": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "7/80",
+        "7/80",
+        "7/80",
+        "7/80"
+      ],
+      "upper_cdf": [
+        "3/5",
+        "3/5",
+        "3/5",
+        "3/5",
+        "63/80",
+        "1",
+        "1",
+        "1"
+      ],
+      "outputs": {
+        "original_pair_3_4": {
+          "lower": "0",
+          "upper": "63/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "0",
+              "0",
+              "0",
+              "0",
+              "73/80"
+            ],
+            "proposal_ns": 3308070,
+            "check_ns": 994833,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-63/80",
+            "primal_value": "-63/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1662042,
+            "check_ns": 897509,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "71/80"
+          ],
+          "intersection": [
+            "0",
+            "63/80"
+          ]
+        },
+        "later_pair_0_7": {
+          "lower": "0",
+          "upper": "1",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "7/80",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "73/80"
+            ],
+            "proposal_ns": 1361527,
+            "check_ns": 915696,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1",
+            "primal_value": "-1",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "73/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1390159,
+            "check_ns": 815889,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "1"
+          ]
+        },
+        "two_interval_union": {
+          "lower": "0",
+          "upper": "1",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1069484,
+            "check_ns": 763641,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1",
+            "primal_value": "-1",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5",
+              "0"
+            ],
+            "proposal_ns": 1104716,
+            "check_ns": 922997,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "1"
+          ]
+        },
+        "all_pair_disagreements": {
+          "lower": "0",
+          "upper": "1263/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "7/80",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "73/80"
+            ],
+            "proposal_ns": 1078056,
+            "check_ns": 1110264,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1263/80",
+            "primal_value": "-1263/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-15",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "17/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1130274,
+            "check_ns": 732485,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "16"
+          ],
+          "intersection": [
+            "0",
+            "1263/80"
+          ]
+        },
+        "lower_first_query_count": {
+          "lower": "7/5",
+          "upper": "2",
+          "minimum_certificate": {
+            "lower": "7/5",
+            "primal_value": "7/5",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1292604,
+            "check_ns": 835737,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-2",
+            "primal_value": "-2",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "73/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1187899,
+            "check_ns": 639968,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "7/5",
+            "2"
+          ],
+          "intersection": [
+            "7/5",
+            "2"
+          ]
+        },
+        "upper_first_query_count": {
+          "lower": "87/80",
+          "upper": "143/80",
+          "minimum_certificate": {
+            "lower": "87/80",
+            "primal_value": "87/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "73/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1140810,
+            "check_ns": 988464,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-143/80",
+            "primal_value": "-143/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "17/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1200158,
+            "check_ns": 876338,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "87/80",
+            "143/80"
+          ],
+          "intersection": [
+            "87/80",
+            "143/80"
+          ]
+        },
+        "paired_order_count_difference": {
+          "lower": "-31/80",
+          "upper": "73/80",
+          "minimum_certificate": {
+            "lower": "-31/80",
+            "primal_value": "-31/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "3/16",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1148441,
+            "check_ns": 789670,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-73/80",
+            "primal_value": "-73/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "73/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1359052,
+            "check_ns": 767567,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "-31/80",
+            "1"
+          ],
+          "intersection": [
+            "-31/80",
+            "73/80"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "endpoint_bank",
+      "stage": 1,
+      "source_acquisition_units": 1708598,
+      "lower_cdf": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "7/80",
+        "7/80",
+        "11/40",
+        "11/40"
+      ],
+      "upper_cdf": [
+        "7/20",
+        "7/20",
+        "3/5",
+        "3/5",
+        "63/80",
+        "39/40",
+        "39/40",
+        "1"
+      ],
+      "outputs": {
+        "original_pair_3_4": {
+          "lower": "0",
+          "upper": "63/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1270962,
+            "check_ns": 639748,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-63/80",
+            "primal_value": "-63/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1052539,
+            "check_ns": 687688,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "71/80"
+          ],
+          "intersection": [
+            "0",
+            "63/80"
+          ]
+        },
+        "later_pair_0_7": {
+          "lower": "0",
+          "upper": "1",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1256090,
+            "check_ns": 1416057,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1",
+            "primal_value": "-1",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "1/40",
+              "0"
+            ],
+            "proposal_ns": 1254167,
+            "check_ns": 773636,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "1"
+          ]
+        },
+        "two_interval_union": {
+          "lower": "0",
+          "upper": "1",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1229130,
+            "check_ns": 679837,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1",
+            "primal_value": "-1",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5",
+              "0"
+            ],
+            "proposal_ns": 1352423,
+            "check_ns": 1782109,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "1"
+          ]
+        },
+        "all_pair_disagreements": {
+          "lower": "0",
+          "upper": "1247/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1695310,
+            "check_ns": 698494,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1247/80",
+            "primal_value": "-1247/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-3",
+              "0",
+              "-5",
+              "0",
+              "-7",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "3/16",
+              "0",
+              "1/40",
+              "0"
+            ],
+            "proposal_ns": 1174369,
+            "check_ns": 692635,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "16"
+          ],
+          "intersection": [
+            "0",
+            "1247/80"
+          ]
+        },
+        "lower_first_query_count": {
+          "lower": "7/5",
+          "upper": "2",
+          "minimum_certificate": {
+            "lower": "7/5",
+            "primal_value": "7/5",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1044367,
+            "check_ns": 872192,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-2",
+            "primal_value": "-2",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1586880,
+            "check_ns": 770421,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "7/5",
+            "2"
+          ],
+          "intersection": [
+            "7/5",
+            "2"
+          ]
+        },
+        "upper_first_query_count": {
+          "lower": "87/80",
+          "upper": "143/80",
+          "minimum_certificate": {
+            "lower": "87/80",
+            "primal_value": "87/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1184234,
+            "check_ns": 746726,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-143/80",
+            "primal_value": "-143/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "3/16",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1442446,
+            "check_ns": 763951,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "87/80",
+            "143/80"
+          ],
+          "intersection": [
+            "87/80",
+            "143/80"
+          ]
+        },
+        "paired_order_count_difference": {
+          "lower": "-31/80",
+          "upper": "73/80",
+          "minimum_certificate": {
+            "lower": "-31/80",
+            "primal_value": "-31/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "3/16",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1208550,
+            "check_ns": 714629,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-73/80",
+            "primal_value": "-73/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1083084,
+            "check_ns": 772735,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "-31/80",
+            "1"
+          ],
+          "intersection": [
+            "-31/80",
+            "73/80"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "endpoint_bank",
+      "stage": 2,
+      "source_acquisition_units": 1715764,
+      "lower_cdf": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "7/80",
+        "7/80",
+        "11/40",
+        "11/40"
+      ],
+      "upper_cdf": [
+        "7/20",
+        "7/20",
+        "3/5",
+        "3/5",
+        "63/80",
+        "39/40",
+        "39/40",
+        "39/40"
+      ],
+      "outputs": {
+        "original_pair_3_4": {
+          "lower": "0",
+          "upper": "63/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1198785,
+            "check_ns": 812373,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-63/80",
+            "primal_value": "-63/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1258834,
+            "check_ns": 685315,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "71/80"
+          ],
+          "intersection": [
+            "0",
+            "63/80"
+          ]
+        },
+        "later_pair_0_7": {
+          "lower": "0",
+          "upper": "39/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1000652,
+            "check_ns": 790631,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-39/40",
+            "primal_value": "-39/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1119999,
+            "check_ns": 675250,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "39/40"
+          ]
+        },
+        "two_interval_union": {
+          "lower": "0",
+          "upper": "39/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1014503,
+            "check_ns": 687018,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-39/40",
+            "primal_value": "-39/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3/8",
+              "1/40"
+            ],
+            "proposal_ns": 1497658,
+            "check_ns": 675380,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "39/40"
+          ]
+        },
+        "all_pair_disagreements": {
+          "lower": "0",
+          "upper": "1233/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1164705,
+            "check_ns": 693728,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1233/80",
+            "primal_value": "-1233/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-15",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "3/16",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1081141,
+            "check_ns": 776239,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "16"
+          ],
+          "intersection": [
+            "0",
+            "1233/80"
+          ]
+        },
+        "lower_first_query_count": {
+          "lower": "7/5",
+          "upper": "2",
+          "minimum_certificate": {
+            "lower": "7/5",
+            "primal_value": "7/5",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1459983,
+            "check_ns": 680818,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-2",
+            "primal_value": "-2",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1203482,
+            "check_ns": 678645,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "7/5",
+            "2"
+          ],
+          "intersection": [
+            "7/5",
+            "2"
+          ]
+        },
+        "upper_first_query_count": {
+          "lower": "87/80",
+          "upper": "143/80",
+          "minimum_certificate": {
+            "lower": "87/80",
+            "primal_value": "87/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1144886,
+            "check_ns": 682390,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-143/80",
+            "primal_value": "-143/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "3/16",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1114190,
+            "check_ns": 646918,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "87/80",
+            "143/80"
+          ],
+          "intersection": [
+            "87/80",
+            "143/80"
+          ]
+        },
+        "paired_order_count_difference": {
+          "lower": "-31/80",
+          "upper": "73/80",
+          "minimum_certificate": {
+            "lower": "-31/80",
+            "primal_value": "-31/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "3/16",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1076274,
+            "check_ns": 734818,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-73/80",
+            "primal_value": "-73/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1384881,
+            "check_ns": 675140,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "-31/80",
+            "1"
+          ],
+          "intersection": [
+            "-31/80",
+            "73/80"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "midpoint_full_threshold",
+      "stage": 0,
+      "source_acquisition_units": 2240964,
+      "lower_cdf": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "7/80",
+        "17/80",
+        "11/40",
+        "11/40"
+      ],
+      "upper_cdf": [
+        "7/20",
+        "7/20",
+        "33/80",
+        "3/5",
+        "63/80",
+        "73/80",
+        "39/40",
+        "39/40"
+      ],
+      "outputs": {
+        "original_pair_3_4": {
+          "lower": "0",
+          "upper": "63/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1277792,
+            "check_ns": 771833,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-63/80",
+            "primal_value": "-63/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1087050,
+            "check_ns": 792403,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "71/80"
+          ],
+          "intersection": [
+            "0",
+            "63/80"
+          ]
+        },
+        "later_pair_0_7": {
+          "lower": "0",
+          "upper": "39/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1064927,
+            "check_ns": 666778,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-39/40",
+            "primal_value": "-39/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "1/16",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1116924,
+            "check_ns": 670673,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "39/40"
+          ]
+        },
+        "two_interval_union": {
+          "lower": "0",
+          "upper": "39/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1022574,
+            "check_ns": 683802,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-39/40",
+            "primal_value": "-39/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "33/80",
+              "0",
+              "0",
+              "0",
+              "0",
+              "9/16",
+              "1/40"
+            ],
+            "proposal_ns": 1443738,
+            "check_ns": 783200,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "39/40"
+          ]
+        },
+        "all_pair_disagreements": {
+          "lower": "0",
+          "upper": "609/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1090185,
+            "check_ns": 916858,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-609/40",
+            "primal_value": "-609/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-3",
+              "0",
+              "0",
+              "0",
+              "-12",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "1/8",
+              "1/16",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1172196,
+            "check_ns": 864661,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "16"
+          ],
+          "intersection": [
+            "0",
+            "609/40"
+          ]
+        },
+        "lower_first_query_count": {
+          "lower": "7/5",
+          "upper": "2",
+          "minimum_certificate": {
+            "lower": "7/5",
+            "primal_value": "7/5",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1117645,
+            "check_ns": 757061,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-2",
+            "primal_value": "-2",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1108482,
+            "check_ns": 855597,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "7/5",
+            "2"
+          ],
+          "intersection": [
+            "7/5",
+            "2"
+          ]
+        },
+        "upper_first_query_count": {
+          "lower": "87/80",
+          "upper": "143/80",
+          "minimum_certificate": {
+            "lower": "87/80",
+            "primal_value": "87/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1162322,
+            "check_ns": 676562,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-143/80",
+            "primal_value": "-143/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "1/8",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1086639,
+            "check_ns": 683672,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "87/80",
+            "143/80"
+          ],
+          "intersection": [
+            "87/80",
+            "143/80"
+          ]
+        },
+        "paired_order_count_difference": {
+          "lower": "-31/80",
+          "upper": "73/80",
+          "minimum_certificate": {
+            "lower": "-31/80",
+            "primal_value": "-31/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "3/16",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1431861,
+            "check_ns": 689321,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-73/80",
+            "primal_value": "-73/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1382988,
+            "check_ns": 679817,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "-31/80",
+            "1"
+          ],
+          "intersection": [
+            "-31/80",
+            "73/80"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "midpoint_full_threshold",
+      "stage": 1,
+      "source_acquisition_units": 2244852,
+      "lower_cdf": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "7/80",
+        "17/80",
+        "11/40",
+        "11/40"
+      ],
+      "upper_cdf": [
+        "7/20",
+        "7/20",
+        "33/80",
+        "3/5",
+        "63/80",
+        "73/80",
+        "39/40",
+        "39/40"
+      ],
+      "outputs": {
+        "original_pair_3_4": {
+          "lower": "0",
+          "upper": "63/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1130745,
+            "check_ns": 781377,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-63/80",
+            "primal_value": "-63/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1151996,
+            "check_ns": 980552,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "71/80"
+          ],
+          "intersection": [
+            "0",
+            "63/80"
+          ]
+        },
+        "later_pair_0_7": {
+          "lower": "0",
+          "upper": "39/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 3493864,
+            "check_ns": 744863,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-39/40",
+            "primal_value": "-39/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "1/16",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1261429,
+            "check_ns": 683913,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "39/40"
+          ]
+        },
+        "two_interval_union": {
+          "lower": "0",
+          "upper": "39/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1054001,
+            "check_ns": 647419,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-39/40",
+            "primal_value": "-39/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "33/80",
+              "0",
+              "0",
+              "0",
+              "0",
+              "9/16",
+              "1/40"
+            ],
+            "proposal_ns": 1437048,
+            "check_ns": 750491,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "39/40"
+          ]
+        },
+        "all_pair_disagreements": {
+          "lower": "0",
+          "upper": "609/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1119077,
+            "check_ns": 694780,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-609/40",
+            "primal_value": "-609/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-3",
+              "0",
+              "0",
+              "0",
+              "-12",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "1/8",
+              "1/16",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1416318,
+            "check_ns": 729230,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "16"
+          ],
+          "intersection": [
+            "0",
+            "609/40"
+          ]
+        },
+        "lower_first_query_count": {
+          "lower": "7/5",
+          "upper": "2",
+          "minimum_certificate": {
+            "lower": "7/5",
+            "primal_value": "7/5",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1299375,
+            "check_ns": 714127,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-2",
+            "primal_value": "-2",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1105037,
+            "check_ns": 1105598,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "7/5",
+            "2"
+          ],
+          "intersection": [
+            "7/5",
+            "2"
+          ]
+        },
+        "upper_first_query_count": {
+          "lower": "87/80",
+          "upper": "143/80",
+          "minimum_certificate": {
+            "lower": "87/80",
+            "primal_value": "87/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1568163,
+            "check_ns": 814607,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-143/80",
+            "primal_value": "-143/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "1/8",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1343510,
+            "check_ns": 703542,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "87/80",
+            "143/80"
+          ],
+          "intersection": [
+            "87/80",
+            "143/80"
+          ]
+        },
+        "paired_order_count_difference": {
+          "lower": "-31/80",
+          "upper": "73/80",
+          "minimum_certificate": {
+            "lower": "-31/80",
+            "primal_value": "-31/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "3/16",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1405182,
+            "check_ns": 886393,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-73/80",
+            "primal_value": "-73/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1463478,
+            "check_ns": 757142,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "-31/80",
+            "1"
+          ],
+          "intersection": [
+            "-31/80",
+            "73/80"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "midpoint_full_threshold",
+      "stage": 2,
+      "source_acquisition_units": 2248740,
+      "lower_cdf": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "7/80",
+        "17/80",
+        "11/40",
+        "11/40"
+      ],
+      "upper_cdf": [
+        "7/20",
+        "7/20",
+        "33/80",
+        "3/5",
+        "63/80",
+        "73/80",
+        "39/40",
+        "39/40"
+      ],
+      "outputs": {
+        "original_pair_3_4": {
+          "lower": "0",
+          "upper": "63/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1318273,
+            "check_ns": 739556,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-63/80",
+            "primal_value": "-63/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1133549,
+            "check_ns": 798092,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "71/80"
+          ],
+          "intersection": [
+            "0",
+            "63/80"
+          ]
+        },
+        "later_pair_0_7": {
+          "lower": "0",
+          "upper": "39/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1534633,
+            "check_ns": 716371,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-39/40",
+            "primal_value": "-39/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "1/16",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1259345,
+            "check_ns": 695070,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "39/40"
+          ]
+        },
+        "two_interval_union": {
+          "lower": "0",
+          "upper": "39/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1339043,
+            "check_ns": 681790,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-39/40",
+            "primal_value": "-39/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "33/80",
+              "0",
+              "0",
+              "0",
+              "0",
+              "9/16",
+              "1/40"
+            ],
+            "proposal_ns": 1147900,
+            "check_ns": 772995,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "39/40"
+          ]
+        },
+        "all_pair_disagreements": {
+          "lower": "0",
+          "upper": "609/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1088101,
+            "check_ns": 710061,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-609/40",
+            "primal_value": "-609/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-3",
+              "0",
+              "0",
+              "0",
+              "-12",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "1/8",
+              "1/16",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1108181,
+            "check_ns": 695030,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "16"
+          ],
+          "intersection": [
+            "0",
+            "609/40"
+          ]
+        },
+        "lower_first_query_count": {
+          "lower": "7/5",
+          "upper": "2",
+          "minimum_certificate": {
+            "lower": "7/5",
+            "primal_value": "7/5",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1145647,
+            "check_ns": 640870,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-2",
+            "primal_value": "-2",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1546840,
+            "check_ns": 779845,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "7/5",
+            "2"
+          ],
+          "intersection": [
+            "7/5",
+            "2"
+          ]
+        },
+        "upper_first_query_count": {
+          "lower": "87/80",
+          "upper": "143/80",
+          "minimum_certificate": {
+            "lower": "87/80",
+            "primal_value": "87/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1290602,
+            "check_ns": 686566,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-143/80",
+            "primal_value": "-143/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "1/8",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1161370,
+            "check_ns": 677373,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "87/80",
+            "143/80"
+          ],
+          "intersection": [
+            "87/80",
+            "143/80"
+          ]
+        },
+        "paired_order_count_difference": {
+          "lower": "-31/80",
+          "upper": "73/80",
+          "minimum_certificate": {
+            "lower": "-31/80",
+            "primal_value": "-31/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "3/16",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1066910,
+            "check_ns": 791262,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-73/80",
+            "primal_value": "-73/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "33/40",
+              "0",
+              "0",
+              "7/80"
+            ],
+            "proposal_ns": 1191094,
+            "check_ns": 1051287,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "-31/80",
+            "1"
+          ],
+          "intersection": [
+            "-31/80",
+            "73/80"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "minimax_query_count",
+      "stage": 0,
+      "source_acquisition_units": 1245010,
+      "lower_cdf": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "7/80",
+        "7/80",
+        "7/80",
+        "7/80"
+      ],
+      "upper_cdf": [
+        "3/5",
+        "3/5",
+        "3/5",
+        "3/5",
+        "63/80",
+        "1",
+        "1",
+        "1"
+      ],
+      "outputs": {
+        "original_pair_3_4": {
+          "lower": "0",
+          "upper": "63/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "0",
+              "0",
+              "0",
+              "0",
+              "73/80"
+            ],
+            "proposal_ns": 1293786,
+            "check_ns": 737162,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-63/80",
+            "primal_value": "-63/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1332874,
+            "check_ns": 658656,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "71/80"
+          ],
+          "intersection": [
+            "0",
+            "63/80"
+          ]
+        },
+        "later_pair_0_7": {
+          "lower": "0",
+          "upper": "1",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "7/80",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "73/80"
+            ],
+            "proposal_ns": 1126147,
+            "check_ns": 706787,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1",
+            "primal_value": "-1",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "73/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1596064,
+            "check_ns": 963758,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "1"
+          ]
+        },
+        "two_interval_union": {
+          "lower": "0",
+          "upper": "1",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1350871,
+            "check_ns": 766946,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1",
+            "primal_value": "-1",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5",
+              "0"
+            ],
+            "proposal_ns": 1131075,
+            "check_ns": 655041,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "1"
+          ]
+        },
+        "all_pair_disagreements": {
+          "lower": "0",
+          "upper": "1263/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "7/80",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "73/80"
+            ],
+            "proposal_ns": 1091247,
+            "check_ns": 803090,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1263/80",
+            "primal_value": "-1263/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-15",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "17/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1097295,
+            "check_ns": 692216,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "16"
+          ],
+          "intersection": [
+            "0",
+            "1263/80"
+          ]
+        },
+        "lower_first_query_count": {
+          "lower": "7/5",
+          "upper": "2",
+          "minimum_certificate": {
+            "lower": "7/5",
+            "primal_value": "7/5",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1001393,
+            "check_ns": 663963,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-2",
+            "primal_value": "-2",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "73/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1188891,
+            "check_ns": 881355,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "7/5",
+            "2"
+          ],
+          "intersection": [
+            "7/5",
+            "2"
+          ]
+        },
+        "upper_first_query_count": {
+          "lower": "87/80",
+          "upper": "143/80",
+          "minimum_certificate": {
+            "lower": "87/80",
+            "primal_value": "87/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "73/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1150895,
+            "check_ns": 862618,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-143/80",
+            "primal_value": "-143/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "17/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1191565,
+            "check_ns": 773546,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "87/80",
+            "143/80"
+          ],
+          "intersection": [
+            "87/80",
+            "143/80"
+          ]
+        },
+        "paired_order_count_difference": {
+          "lower": "-31/80",
+          "upper": "73/80",
+          "minimum_certificate": {
+            "lower": "-31/80",
+            "primal_value": "-31/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "3/16",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1143884,
+            "check_ns": 1018108,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-73/80",
+            "primal_value": "-73/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "73/80",
+              "0",
+              "0",
+              "0"
+            ],
+            "proposal_ns": 1092338,
+            "check_ns": 768188,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "-31/80",
+            "1"
+          ],
+          "intersection": [
+            "-31/80",
+            "73/80"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "minimax_query_count",
+      "stage": 1,
+      "source_acquisition_units": 1708067,
+      "lower_cdf": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "7/80",
+        "7/80",
+        "11/40",
+        "11/40"
+      ],
+      "upper_cdf": [
+        "7/20",
+        "7/20",
+        "3/5",
+        "3/5",
+        "63/80",
+        "39/40",
+        "39/40",
+        "1"
+      ],
+      "outputs": {
+        "original_pair_3_4": {
+          "lower": "0",
+          "upper": "63/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1236351,
+            "check_ns": 902176,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-63/80",
+            "primal_value": "-63/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1207158,
+            "check_ns": 711053,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "71/80"
+          ],
+          "intersection": [
+            "0",
+            "63/80"
+          ]
+        },
+        "later_pair_0_7": {
+          "lower": "0",
+          "upper": "1",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1233918,
+            "check_ns": 683432,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1",
+            "primal_value": "-1",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "1/40",
+              "0"
+            ],
+            "proposal_ns": 1038258,
+            "check_ns": 771202,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "1"
+          ]
+        },
+        "two_interval_union": {
+          "lower": "0",
+          "upper": "1",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1275819,
+            "check_ns": 674869,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1",
+            "primal_value": "-1",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5",
+              "0"
+            ],
+            "proposal_ns": 1166498,
+            "check_ns": 673167,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "1"
+          ]
+        },
+        "all_pair_disagreements": {
+          "lower": "0",
+          "upper": "1247/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1132648,
+            "check_ns": 1058137,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1247/80",
+            "primal_value": "-1247/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-3",
+              "0",
+              "-5",
+              "0",
+              "-7",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "3/16",
+              "0",
+              "1/40",
+              "0"
+            ],
+            "proposal_ns": 1089123,
+            "check_ns": 782498,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "16"
+          ],
+          "intersection": [
+            "0",
+            "1247/80"
+          ]
+        },
+        "lower_first_query_count": {
+          "lower": "7/5",
+          "upper": "2",
+          "minimum_certificate": {
+            "lower": "7/5",
+            "primal_value": "7/5",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1152748,
+            "check_ns": 738234,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-2",
+            "primal_value": "-2",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1093400,
+            "check_ns": 689091,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "7/5",
+            "2"
+          ],
+          "intersection": [
+            "7/5",
+            "2"
+          ]
+        },
+        "upper_first_query_count": {
+          "lower": "87/80",
+          "upper": "143/80",
+          "minimum_certificate": {
+            "lower": "87/80",
+            "primal_value": "87/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1152397,
+            "check_ns": 717232,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-143/80",
+            "primal_value": "-143/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "3/16",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1634441,
+            "check_ns": 732174,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "87/80",
+            "143/80"
+          ],
+          "intersection": [
+            "87/80",
+            "143/80"
+          ]
+        },
+        "paired_order_count_difference": {
+          "lower": "-31/80",
+          "upper": "73/80",
+          "minimum_certificate": {
+            "lower": "-31/80",
+            "primal_value": "-31/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "3/16",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1171315,
+            "check_ns": 658446,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-73/80",
+            "primal_value": "-73/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1250422,
+            "check_ns": 644625,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "-31/80",
+            "1"
+          ],
+          "intersection": [
+            "-31/80",
+            "73/80"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "minimax_query_count",
+      "stage": 2,
+      "source_acquisition_units": 1714969,
+      "lower_cdf": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "7/80",
+        "7/80",
+        "11/40",
+        "11/40"
+      ],
+      "upper_cdf": [
+        "7/20",
+        "7/20",
+        "3/5",
+        "3/5",
+        "63/80",
+        "39/40",
+        "39/40",
+        "39/40"
+      ],
+      "outputs": {
+        "original_pair_3_4": {
+          "lower": "0",
+          "upper": "63/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1191254,
+            "check_ns": 689161,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-63/80",
+            "primal_value": "-63/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1309259,
+            "check_ns": 824211,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "71/80"
+          ],
+          "intersection": [
+            "0",
+            "63/80"
+          ]
+        },
+        "later_pair_0_7": {
+          "lower": "0",
+          "upper": "39/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1017798,
+            "check_ns": 973933,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-39/40",
+            "primal_value": "-39/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1086659,
+            "check_ns": 667258,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "39/40"
+          ]
+        },
+        "two_interval_union": {
+          "lower": "0",
+          "upper": "39/40",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1147369,
+            "check_ns": 654569,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-39/40",
+            "primal_value": "-39/40",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3/8",
+              "1/40"
+            ],
+            "proposal_ns": 1043475,
+            "check_ns": 664765,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "1"
+          ],
+          "intersection": [
+            "0",
+            "39/40"
+          ]
+        },
+        "all_pair_disagreements": {
+          "lower": "0",
+          "upper": "1233/80",
+          "minimum_certificate": {
+            "lower": "0",
+            "primal_value": "0",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "11/40",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "29/40"
+            ],
+            "proposal_ns": 1360205,
+            "check_ns": 671324,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-1233/80",
+            "primal_value": "-1233/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-15",
+              "0"
+            ],
+            "dual_nu": "0",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "3/16",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1174649,
+            "check_ns": 819764,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "0",
+            "16"
+          ],
+          "intersection": [
+            "0",
+            "1233/80"
+          ]
+        },
+        "lower_first_query_count": {
+          "lower": "7/5",
+          "upper": "2",
+          "minimum_certificate": {
+            "lower": "7/5",
+            "primal_value": "7/5",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/5"
+            ],
+            "proposal_ns": 1419592,
+            "check_ns": 850329,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-2",
+            "primal_value": "-2",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-2",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1089333,
+            "check_ns": 667128,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "7/5",
+            "2"
+          ],
+          "intersection": [
+            "7/5",
+            "2"
+          ]
+        },
+        "upper_first_query_count": {
+          "lower": "87/80",
+          "upper": "143/80",
+          "minimum_certificate": {
+            "lower": "87/80",
+            "primal_value": "87/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1128892,
+            "check_ns": 689632,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-143/80",
+            "primal_value": "-143/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "63/80",
+              "3/16",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1130284,
+            "check_ns": 640999,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "87/80",
+            "143/80"
+          ],
+          "intersection": [
+            "87/80",
+            "143/80"
+          ]
+        },
+        "paired_order_count_difference": {
+          "lower": "-31/80",
+          "upper": "73/80",
+          "minimum_certificate": {
+            "lower": "-31/80",
+            "primal_value": "-31/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "3/16",
+              "0",
+              "0",
+              "0",
+              "17/80"
+            ],
+            "proposal_ns": 1353855,
+            "check_ns": 678765,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "negative_minimum_certificate": {
+            "lower": "-73/80",
+            "primal_value": "-73/80",
+            "exact_optimality": true,
+            "exact_gap": "0",
+            "dual_y": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "dual_nu": "-1",
+            "primal": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/80",
+              "71/80",
+              "0",
+              "0",
+              "1/40"
+            ],
+            "proposal_ns": 1049294,
+            "check_ns": 644735,
+            "checked_dual_constraints": 9,
+            "checked_primal_constraints": 16
+          },
+          "partial_variation_interval": [
+            "-31/80",
+            "1"
+          ],
+          "intersection": [
+            "-31/80",
+            "73/80"
+          ]
+        }
+      }
+    }
+  ]
+}

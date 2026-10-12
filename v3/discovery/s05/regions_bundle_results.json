@@ -1,0 +1,1180 @@
+{
+  "status": "complete",
+  "evidence": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "command": [
+    "python",
+    "v3/discovery/s05/regions_bundle.py"
+  ],
+  "new_solver_calls": 0,
+  "diagnostic_optima_used": false,
+  "trusted_checker_receipt": {
+    "bundle_sha256": "a625f389cee1b4efab246aeb2c69683a5d6be73dc28c32e5eac519f9ca264fbc",
+    "source_identity": "e80a346e2907fb87d60aae187df46cb11a63972d6cb546ce6415fc41494321e3",
+    "raw_proof_trees_checked": 18,
+    "feasible_witnesses_checked": 29,
+    "authority_scope": "Same-session checked export; later consumers must already trust this receipt or recheck raw evidence."
+  },
+  "bytes": {
+    "raw_source_result": 544143,
+    "compact_bundle": 8037,
+    "admitted_builder_inputs": 596790,
+    "original_full_region_profile": 289959
+  },
+  "invoices": {
+    "raw_archive_admission": {
+      "total": 83926,
+      "operations": {
+        "input_read_eight_byte_words": 74599,
+        "sha256_message_blocks": 9327
+      }
+    },
+    "raw_source_and_witness_check": {
+      "total": 4374,
+      "by_category": {
+        "source_admission": 1984,
+        "witness_check": 1445,
+        "witness_compile": 655,
+        "storage": 290
+      },
+      "operations": [
+        {
+          "category": "source_admission",
+          "operation": "checked_old_frontier_receipt",
+          "units": 128
+        },
+        {
+          "category": "source_admission",
+          "operation": "immutable_clause_and_weight_words",
+          "units": 1856
+        },
+        {
+          "category": "storage",
+          "operation": "retained_witness_and_violation_mask",
+          "units": 290
+        },
+        {
+          "category": "witness_check",
+          "operation": "retained_clause_header",
+          "units": 600
+        },
+        {
+          "category": "witness_check",
+          "operation": "retained_literal",
+          "units": 845
+        },
+        {
+          "category": "witness_compile",
+          "operation": "mask_and_original_weight",
+          "units": 162
+        },
+        {
+          "category": "witness_compile",
+          "operation": "objective_violation_pass",
+          "units": 29
+        },
+        {
+          "category": "witness_compile",
+          "operation": "retained_clause_header",
+          "units": 232
+        },
+        {
+          "category": "witness_compile",
+          "operation": "retained_literal",
+          "units": 232
+        }
+      ]
+    },
+    "raw_tree_check_and_support_compile": {
+      "total": 3601,
+      "by_category": {
+        "check": 2282,
+        "tree_compile": 1154,
+        "storage": 165
+      },
+      "operations": [
+        {
+          "category": "check",
+          "operation": "negative_clause_header",
+          "units": 425
+        },
+        {
+          "category": "check",
+          "operation": "negative_literal",
+          "units": 731
+        },
+        {
+          "category": "check",
+          "operation": "negative_proof_node",
+          "units": 582
+        },
+        {
+          "category": "check",
+          "operation": "negative_weight_add",
+          "units": 272
+        },
+        {
+          "category": "check",
+          "operation": "negative_weight_index",
+          "units": 272
+        },
+        {
+          "category": "storage",
+          "operation": "compiled_tree_leaf_masks",
+          "units": 165
+        },
+        {
+          "category": "tree_compile",
+          "operation": "forced_clause_coefficient",
+          "units": 272
+        },
+        {
+          "category": "tree_compile",
+          "operation": "hard_leaf_omitted",
+          "units": 153
+        },
+        {
+          "category": "tree_compile",
+          "operation": "leaf_mask_deduplication",
+          "units": 147
+        },
+        {
+          "category": "tree_compile",
+          "operation": "proof_node_read",
+          "units": 582
+        }
+      ]
+    },
+    "raw_receipt_ids": {
+      "total": 1473,
+      "operations": {
+        "canonical_receipt_eight_byte_words": 1294,
+        "receipt_sha256_message_blocks": 179
+      }
+    },
+    "region_compilation": {
+      "total": 20510,
+      "operations": {
+        "coefficient_read_multiply_accumulate": 14464,
+        "constant_inequality_case": 13,
+        "fixed_pair_selection": 19,
+        "leaf_support_admission": 3753,
+        "price_coefficient_multiply": 452,
+        "radius_cap_comparison": 166,
+        "radius_division": 439,
+        "retained_action_center_cost": 300,
+        "slack_subtraction_and_comparison": 904
+      }
+    },
+    "price_tolerance_index": {
+      "total": 1552,
+      "operations": {
+        "cell_leaf_support_value_and_maximum": 1072,
+        "cell_repair_upper": 70,
+        "cell_tree_lower": 338,
+        "repair_index_record_shift": 12,
+        "repair_index_sort_comparison": 25,
+        "repair_prefix_minimum_comparison": 35
+      }
+    },
+    "trusted_cache_admission": {
+      "total": 1661,
+      "operations": {
+        "cache_row_and_cell_binding": 128,
+        "input_read_eight_byte_words": 1005,
+        "region_index_record_admission": 96,
+        "sha256_message_blocks": 126,
+        "tree_role_admission": 219,
+        "witness_role_admission": 87
+      }
+    },
+    "complete_queries": {
+      "total": 4885,
+      "operations": {
+        "accepted_query_output_fields": 453,
+        "action_and_proof_receipt_lookups": 192,
+        "certified_action_selection": 48,
+        "price_tolerance_read_and_nonnegative_check": 256,
+        "relative_cell_coordinate_bounds": 3072,
+        "repair_index_comparison_and_position": 192,
+        "repair_prefix_read_and_price_test": 192,
+        "replacement_subtraction_and_comparison": 128,
+        "source_row_and_query_binding": 256,
+        "unanswered_query_output": 32,
+        "weight_vector_length_check": 64
+      }
+    }
+  },
+  "measurement": {
+    "build_process_ns": 24334768,
+    "build_wall_ns": 24341463,
+    "trusted_admission_process_ns": 323260,
+    "query_process_ns": 2380765,
+    "scope": "Build includes compact JSON serialization and file write; query includes action/proof output construction. Final result-file serialization and external delivery are additional."
+  },
+  "tuple_fields": {
+    "witnesses": [
+      "model",
+      "violation_mask",
+      "checked_assignment_id"
+    ],
+    "trees": [
+      "original_budget",
+      "leaf_masks",
+      "raw_proof_id",
+      "raw_event_index"
+    ],
+    "repair_index": [
+      "D",
+      "B",
+      "model",
+      "tree_index"
+    ],
+    "replacement_index": [
+      "A",
+      "tree_index"
+    ]
+  },
+  "repair_index_records": 16,
+  "proof_leaf_masks": 147,
+  "query_results": [
+    {
+      "query": "base",
+      "row": 0,
+      "answer": {
+        "accepted": true,
+        "row": 0,
+        "source": "0c2bda8ce323830998b0ce246ac6252dd55142a46b23ef5d3f0b5d8777c2af87",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "9d0a7d872d43687831807393b38ea963132922f30802e238f9df4b821353e9bb",
+        "action": "repair",
+        "model": 128,
+        "witness_id": "30e6dbbb2de1903db1b61cb24ac92b4070acc635921bd4e9b812c47be4ba7cbc",
+        "violation_mask": 128,
+        "quoted_cost_upper": "5/2"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 1,
+      "answer": {
+        "accepted": true,
+        "row": 1,
+        "source": "e57dce754c3d82260c732aae94d0144b6a5cfe528e0d7153c5b04262655e63df",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "fa4c9da73340b2c0c566d81605fc79a30f07414ee28c1486c4e756d0603c008f",
+        "action": "repair",
+        "model": 24,
+        "witness_id": "cc66f7f7468962834a5aa4208818360b2cd816ceca56ec88b7517578873802ce",
+        "violation_mask": 24,
+        "quoted_cost_upper": "3"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 2,
+      "answer": {
+        "accepted": true,
+        "row": 2,
+        "source": "33f6249568e4a393a20e74870842224a5ec7038cd0d54a8f2e748a02c546b53d",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "7760b2da9aa4a0d7b8d40b2981bb727a8703b7f2e4600f847640fe63489f297d",
+        "action": "repair",
+        "model": 10,
+        "witness_id": "678660df2a68e6325f27d2499faf1a2f555d4e93b53f4420e9dbb30f8b369f2c",
+        "violation_mask": 10,
+        "quoted_cost_upper": "3"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 3,
+      "answer": {
+        "accepted": true,
+        "row": 3,
+        "source": "1deb05bd4a286e846be5cb20f09c1ac87178d3264cd5d69ccd62adb009c9a8a8",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "e29b40f62bb9cf5b72f1241d667ffb6f65906236a16911a44f70799f24f7ca84",
+        "action": "repair",
+        "model": 65,
+        "witness_id": "a84ae70a5de0336b84002f46734d93f0af19be0441dd0ebbfc2f16956f44d744",
+        "violation_mask": 65,
+        "quoted_cost_upper": "2"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 4,
+      "answer": {
+        "accepted": true,
+        "row": 4,
+        "source": "3f27e5bf2bc0fc0526de18aa93db055005a0735176e4ebc1a1b2385b80f54667",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "nonnegative_objective",
+        "action": "repair",
+        "model": 1,
+        "witness_id": "91e0690b85a643c954f5899056d01114f7d603d2e3b3d523a643b4d319ec6fca",
+        "violation_mask": 1,
+        "quoted_cost_upper": "1"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 5,
+      "answer": {
+        "accepted": true,
+        "row": 5,
+        "source": "f56391cc3fad8dd5f7893cded57aac0a55ad007f8c74a0231ded4238b5d692c2",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "1d6e0ee86a3b030c44d560ca97f16a47e7d8dae0a739984492c0a520f5e35677",
+        "action": "repair",
+        "model": 128,
+        "witness_id": "880f0625f7e155bae00ac7339f8493af0313bdf3c4e972750eebb700decda6f6",
+        "violation_mask": 128,
+        "quoted_cost_upper": "5/2"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 6,
+      "answer": {
+        "accepted": true,
+        "row": 6,
+        "source": "6957a2fac239fd4ccad0ed9c8377d6baf714488c339240ac59cd36a139d36c0c",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "d3434378ad63720a400c13cf4fe15a47e9f388088fe439a6f4a92ef9894af8c6",
+        "action": "repair",
+        "model": 16,
+        "witness_id": "4115c10cadd0d07a64375daf3870d3c524e8e2f87b549703918d949fedc3f0e4",
+        "violation_mask": 16,
+        "quoted_cost_upper": "5/2"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 7,
+      "answer": {
+        "accepted": true,
+        "row": 7,
+        "source": "81aa30de402cc589ccf8705222f099869b4f28bd666ea769a4c9255cf6b72d78",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "e67ccedf9a74cf8addea91684af9d8438671cd3599534857c5b26752740971b1",
+        "action": "repair",
+        "model": 24,
+        "witness_id": "162c40a14a941dedd718b4ffa01c5e2b20d99753e0bda2589494f3da731d9532",
+        "violation_mask": 24,
+        "quoted_cost_upper": "3"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 8,
+      "answer": {
+        "accepted": true,
+        "row": 8,
+        "source": "16db1872c8d5ffa9270143966d7e540750059defb0dd0f1b6b62e08ce28a90c0",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "055c8322c7cb7698d71fb1b7899cb4439fbe72ba35f18feff0bc775eb01e40bc",
+        "action": "repair",
+        "model": 200,
+        "witness_id": "d0804b3e258bf0e014c2f3742326e8a858f4979a0194a883c4cbcaea2fbdc4bf",
+        "violation_mask": 200,
+        "quoted_cost_upper": "4"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 9,
+      "answer": {
+        "accepted": true,
+        "row": 9,
+        "source": "56c8cd907115db4f8f0546811f467172c37aa2bd4e7cde0c185784ce606f6af4",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "012a4be9b91e563d1c6ef99ebab04cc08707116e38c7a59c6f722da217919720",
+        "action": "repair",
+        "model": 16,
+        "witness_id": "81ff5696b22c474ff15b6ce181bc9f27db481a0b5a62379b576c6a575c6e92ce",
+        "violation_mask": 16,
+        "quoted_cost_upper": "2"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 10,
+      "answer": {
+        "accepted": true,
+        "row": 10,
+        "source": "e3349a832ae99cf5ae320c38c89ed8f66dc72a71abb3c5f7332132a80d73e625",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "nonnegative_objective",
+        "action": "repair",
+        "model": 8,
+        "witness_id": "4178180a6d3a139383fd0d327eb95087f86ff19ed3c50d155440389d7e7c5cfe",
+        "violation_mask": 8,
+        "quoted_cost_upper": "1"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 11,
+      "answer": {
+        "accepted": true,
+        "row": 11,
+        "source": "8a33a3fe798398e6cbf8e2690dc2fe1ceb1d422ff59c17438320eb79b8ece0b4",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "3ea9ae9248cf333b11c899f9bf711b12cb1be87d4117f0137a4fa62f56602eaf",
+        "action": "repair",
+        "model": 32,
+        "witness_id": "66748a488d129407e2bbea4accfc777bf56a757f22c6f63743beb145b0e52c6f",
+        "violation_mask": 32,
+        "quoted_cost_upper": "3"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 12,
+      "answer": {
+        "accepted": true,
+        "row": 12,
+        "source": "fad8b85a729cd7ae30406108c3cb434dc7a9f99d827ca9db9e65354c4d41d457",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "da3d0f9108f68316239489f0a3427d9220f37ffd725db41f805fbc4c5f04eefb",
+        "action": "repair",
+        "model": 16,
+        "witness_id": "e33d625c91e68e76501a5efcf9f3841e8504846c40ff98f114344275589a4528",
+        "violation_mask": 16,
+        "quoted_cost_upper": "5/2"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 13,
+      "answer": {
+        "accepted": true,
+        "row": 13,
+        "source": "67af919ea1a675011c9a616641037fee0627dff522fd971745a48d3bf1432464",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "1b74ee4b014e1d5288ddb6306f3d7ea1d3817c951fd1aac89c607518d3b54d53",
+        "action": "repair",
+        "model": 132,
+        "witness_id": "4b24a57f660803a8f0af59b27768f0e31aaf1ccd0ef29cc59442c4cd80ca68e8",
+        "violation_mask": 132,
+        "quoted_cost_upper": "11/2"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 14,
+      "answer": {
+        "accepted": true,
+        "row": 14,
+        "source": "59b47f14f8713824b69b66accecfec96cdb4bdb846a4dba57e6a29fc2ed1c5aa",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "8f9b902ddc3ea5b77eb9e14acb51109867f38eb21478aa5623594fae27aa2fcc",
+        "action": "repair",
+        "model": 24,
+        "witness_id": "add46c2c5d619e25ef503cfdec85b96ac1927cb6057b505c63c3efcebaf9318a",
+        "violation_mask": 24,
+        "quoted_cost_upper": "3"
+      },
+      "units": 81
+    },
+    {
+      "query": "base",
+      "row": 15,
+      "answer": {
+        "accepted": true,
+        "row": 15,
+        "source": "dba0bf3a43edbade299d35787938f09bc21c668e8208ad73f6dde62e0401d8cf",
+        "price": "6",
+        "tolerance": "1",
+        "proof_id": "9cf0884fe668cfab62ffc636a35853d1609e1a4fd39c00df41ddbc28c43f881b",
+        "action": "replacement",
+        "quoted_cost_upper": "6"
+      },
+      "units": 78
+    },
+    {
+      "query": "changed_price",
+      "row": 0,
+      "answer": {
+        "accepted": true,
+        "row": 0,
+        "source": "0c2bda8ce323830998b0ce246ac6252dd55142a46b23ef5d3f0b5d8777c2af87",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "9d0a7d872d43687831807393b38ea963132922f30802e238f9df4b821353e9bb",
+        "action": "repair",
+        "model": 128,
+        "witness_id": "30e6dbbb2de1903db1b61cb24ac92b4070acc635921bd4e9b812c47be4ba7cbc",
+        "violation_mask": 128,
+        "quoted_cost_upper": "5/2"
+      },
+      "units": 81
+    },
+    {
+      "query": "changed_price",
+      "row": 1,
+      "answer": {
+        "accepted": true,
+        "row": 1,
+        "source": "e57dce754c3d82260c732aae94d0144b6a5cfe528e0d7153c5b04262655e63df",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "fa4c9da73340b2c0c566d81605fc79a30f07414ee28c1486c4e756d0603c008f",
+        "action": "replacement",
+        "quoted_cost_upper": "3"
+      },
+      "units": 78
+    },
+    {
+      "query": "changed_price",
+      "row": 2,
+      "answer": {
+        "accepted": true,
+        "row": 2,
+        "source": "33f6249568e4a393a20e74870842224a5ec7038cd0d54a8f2e748a02c546b53d",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "7760b2da9aa4a0d7b8d40b2981bb727a8703b7f2e4600f847640fe63489f297d",
+        "action": "replacement",
+        "quoted_cost_upper": "3"
+      },
+      "units": 78
+    },
+    {
+      "query": "changed_price",
+      "row": 3,
+      "answer": {
+        "accepted": true,
+        "row": 3,
+        "source": "1deb05bd4a286e846be5cb20f09c1ac87178d3264cd5d69ccd62adb009c9a8a8",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "e29b40f62bb9cf5b72f1241d667ffb6f65906236a16911a44f70799f24f7ca84",
+        "action": "repair",
+        "model": 65,
+        "witness_id": "a84ae70a5de0336b84002f46734d93f0af19be0441dd0ebbfc2f16956f44d744",
+        "violation_mask": 65,
+        "quoted_cost_upper": "2"
+      },
+      "units": 81
+    },
+    {
+      "query": "changed_price",
+      "row": 4,
+      "answer": {
+        "accepted": true,
+        "row": 4,
+        "source": "3f27e5bf2bc0fc0526de18aa93db055005a0735176e4ebc1a1b2385b80f54667",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "nonnegative_objective",
+        "action": "repair",
+        "model": 1,
+        "witness_id": "91e0690b85a643c954f5899056d01114f7d603d2e3b3d523a643b4d319ec6fca",
+        "violation_mask": 1,
+        "quoted_cost_upper": "1"
+      },
+      "units": 81
+    },
+    {
+      "query": "changed_price",
+      "row": 5,
+      "answer": {
+        "accepted": true,
+        "row": 5,
+        "source": "f56391cc3fad8dd5f7893cded57aac0a55ad007f8c74a0231ded4238b5d692c2",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "1d6e0ee86a3b030c44d560ca97f16a47e7d8dae0a739984492c0a520f5e35677",
+        "action": "repair",
+        "model": 128,
+        "witness_id": "880f0625f7e155bae00ac7339f8493af0313bdf3c4e972750eebb700decda6f6",
+        "violation_mask": 128,
+        "quoted_cost_upper": "5/2"
+      },
+      "units": 81
+    },
+    {
+      "query": "changed_price",
+      "row": 6,
+      "answer": {
+        "accepted": true,
+        "row": 6,
+        "source": "6957a2fac239fd4ccad0ed9c8377d6baf714488c339240ac59cd36a139d36c0c",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "d3434378ad63720a400c13cf4fe15a47e9f388088fe439a6f4a92ef9894af8c6",
+        "action": "repair",
+        "model": 16,
+        "witness_id": "4115c10cadd0d07a64375daf3870d3c524e8e2f87b549703918d949fedc3f0e4",
+        "violation_mask": 16,
+        "quoted_cost_upper": "5/2"
+      },
+      "units": 81
+    },
+    {
+      "query": "changed_price",
+      "row": 7,
+      "answer": {
+        "accepted": true,
+        "row": 7,
+        "source": "81aa30de402cc589ccf8705222f099869b4f28bd666ea769a4c9255cf6b72d78",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "e67ccedf9a74cf8addea91684af9d8438671cd3599534857c5b26752740971b1",
+        "action": "replacement",
+        "quoted_cost_upper": "3"
+      },
+      "units": 78
+    },
+    {
+      "query": "changed_price",
+      "row": 8,
+      "answer": {
+        "accepted": true,
+        "row": 8,
+        "source": "16db1872c8d5ffa9270143966d7e540750059defb0dd0f1b6b62e08ce28a90c0",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "055c8322c7cb7698d71fb1b7899cb4439fbe72ba35f18feff0bc775eb01e40bc",
+        "action": "replacement",
+        "quoted_cost_upper": "3"
+      },
+      "units": 78
+    },
+    {
+      "query": "changed_price",
+      "row": 9,
+      "answer": {
+        "accepted": true,
+        "row": 9,
+        "source": "56c8cd907115db4f8f0546811f467172c37aa2bd4e7cde0c185784ce606f6af4",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "012a4be9b91e563d1c6ef99ebab04cc08707116e38c7a59c6f722da217919720",
+        "action": "repair",
+        "model": 16,
+        "witness_id": "81ff5696b22c474ff15b6ce181bc9f27db481a0b5a62379b576c6a575c6e92ce",
+        "violation_mask": 16,
+        "quoted_cost_upper": "2"
+      },
+      "units": 81
+    },
+    {
+      "query": "changed_price",
+      "row": 10,
+      "answer": {
+        "accepted": true,
+        "row": 10,
+        "source": "e3349a832ae99cf5ae320c38c89ed8f66dc72a71abb3c5f7332132a80d73e625",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "nonnegative_objective",
+        "action": "repair",
+        "model": 8,
+        "witness_id": "4178180a6d3a139383fd0d327eb95087f86ff19ed3c50d155440389d7e7c5cfe",
+        "violation_mask": 8,
+        "quoted_cost_upper": "1"
+      },
+      "units": 81
+    },
+    {
+      "query": "changed_price",
+      "row": 11,
+      "answer": {
+        "accepted": true,
+        "row": 11,
+        "source": "8a33a3fe798398e6cbf8e2690dc2fe1ceb1d422ff59c17438320eb79b8ece0b4",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "3ea9ae9248cf333b11c899f9bf711b12cb1be87d4117f0137a4fa62f56602eaf",
+        "action": "replacement",
+        "quoted_cost_upper": "3"
+      },
+      "units": 78
+    },
+    {
+      "query": "changed_price",
+      "row": 12,
+      "answer": {
+        "accepted": true,
+        "row": 12,
+        "source": "fad8b85a729cd7ae30406108c3cb434dc7a9f99d827ca9db9e65354c4d41d457",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "da3d0f9108f68316239489f0a3427d9220f37ffd725db41f805fbc4c5f04eefb",
+        "action": "repair",
+        "model": 16,
+        "witness_id": "e33d625c91e68e76501a5efcf9f3841e8504846c40ff98f114344275589a4528",
+        "violation_mask": 16,
+        "quoted_cost_upper": "5/2"
+      },
+      "units": 81
+    },
+    {
+      "query": "changed_price",
+      "row": 13,
+      "answer": {
+        "accepted": true,
+        "row": 13,
+        "source": "67af919ea1a675011c9a616641037fee0627dff522fd971745a48d3bf1432464",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "1b74ee4b014e1d5288ddb6306f3d7ea1d3817c951fd1aac89c607518d3b54d53",
+        "action": "replacement",
+        "quoted_cost_upper": "3"
+      },
+      "units": 78
+    },
+    {
+      "query": "changed_price",
+      "row": 14,
+      "answer": {
+        "accepted": true,
+        "row": 14,
+        "source": "59b47f14f8713824b69b66accecfec96cdb4bdb846a4dba57e6a29fc2ed1c5aa",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "8f9b902ddc3ea5b77eb9e14acb51109867f38eb21478aa5623594fae27aa2fcc",
+        "action": "replacement",
+        "quoted_cost_upper": "3"
+      },
+      "units": 78
+    },
+    {
+      "query": "changed_price",
+      "row": 15,
+      "answer": {
+        "accepted": true,
+        "row": 15,
+        "source": "dba0bf3a43edbade299d35787938f09bc21c668e8208ad73f6dde62e0401d8cf",
+        "price": "3",
+        "tolerance": "1",
+        "proof_id": "9cf0884fe668cfab62ffc636a35853d1609e1a4fd39c00df41ddbc28c43f881b",
+        "action": "replacement",
+        "quoted_cost_upper": "3"
+      },
+      "units": 78
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 0,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 1,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 2,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 3,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 4,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 5,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 6,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 7,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 8,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 9,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 10,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 11,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 12,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 13,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 14,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "tighter_tolerance",
+      "row": 15,
+      "answer": {
+        "accepted": false,
+        "reason": "cell_wide_regions_do_not_certify_tolerance"
+      },
+      "units": 67
+    },
+    {
+      "query": "free_replacement",
+      "row": 0,
+      "answer": {
+        "accepted": true,
+        "row": 0,
+        "source": "0c2bda8ce323830998b0ce246ac6252dd55142a46b23ef5d3f0b5d8777c2af87",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "9d0a7d872d43687831807393b38ea963132922f30802e238f9df4b821353e9bb",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 1,
+      "answer": {
+        "accepted": true,
+        "row": 1,
+        "source": "e57dce754c3d82260c732aae94d0144b6a5cfe528e0d7153c5b04262655e63df",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "fa4c9da73340b2c0c566d81605fc79a30f07414ee28c1486c4e756d0603c008f",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 2,
+      "answer": {
+        "accepted": true,
+        "row": 2,
+        "source": "33f6249568e4a393a20e74870842224a5ec7038cd0d54a8f2e748a02c546b53d",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "7760b2da9aa4a0d7b8d40b2981bb727a8703b7f2e4600f847640fe63489f297d",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 3,
+      "answer": {
+        "accepted": true,
+        "row": 3,
+        "source": "1deb05bd4a286e846be5cb20f09c1ac87178d3264cd5d69ccd62adb009c9a8a8",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "e29b40f62bb9cf5b72f1241d667ffb6f65906236a16911a44f70799f24f7ca84",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 4,
+      "answer": {
+        "accepted": true,
+        "row": 4,
+        "source": "3f27e5bf2bc0fc0526de18aa93db055005a0735176e4ebc1a1b2385b80f54667",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "nonnegative_objective",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 5,
+      "answer": {
+        "accepted": true,
+        "row": 5,
+        "source": "f56391cc3fad8dd5f7893cded57aac0a55ad007f8c74a0231ded4238b5d692c2",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "1d6e0ee86a3b030c44d560ca97f16a47e7d8dae0a739984492c0a520f5e35677",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 6,
+      "answer": {
+        "accepted": true,
+        "row": 6,
+        "source": "6957a2fac239fd4ccad0ed9c8377d6baf714488c339240ac59cd36a139d36c0c",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "d3434378ad63720a400c13cf4fe15a47e9f388088fe439a6f4a92ef9894af8c6",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 7,
+      "answer": {
+        "accepted": true,
+        "row": 7,
+        "source": "81aa30de402cc589ccf8705222f099869b4f28bd666ea769a4c9255cf6b72d78",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "e67ccedf9a74cf8addea91684af9d8438671cd3599534857c5b26752740971b1",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 8,
+      "answer": {
+        "accepted": true,
+        "row": 8,
+        "source": "16db1872c8d5ffa9270143966d7e540750059defb0dd0f1b6b62e08ce28a90c0",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "055c8322c7cb7698d71fb1b7899cb4439fbe72ba35f18feff0bc775eb01e40bc",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 9,
+      "answer": {
+        "accepted": true,
+        "row": 9,
+        "source": "56c8cd907115db4f8f0546811f467172c37aa2bd4e7cde0c185784ce606f6af4",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "012a4be9b91e563d1c6ef99ebab04cc08707116e38c7a59c6f722da217919720",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 10,
+      "answer": {
+        "accepted": true,
+        "row": 10,
+        "source": "e3349a832ae99cf5ae320c38c89ed8f66dc72a71abb3c5f7332132a80d73e625",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "nonnegative_objective",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 11,
+      "answer": {
+        "accepted": true,
+        "row": 11,
+        "source": "8a33a3fe798398e6cbf8e2690dc2fe1ceb1d422ff59c17438320eb79b8ece0b4",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "3ea9ae9248cf333b11c899f9bf711b12cb1be87d4117f0137a4fa62f56602eaf",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 12,
+      "answer": {
+        "accepted": true,
+        "row": 12,
+        "source": "fad8b85a729cd7ae30406108c3cb434dc7a9f99d827ca9db9e65354c4d41d457",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "da3d0f9108f68316239489f0a3427d9220f37ffd725db41f805fbc4c5f04eefb",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 13,
+      "answer": {
+        "accepted": true,
+        "row": 13,
+        "source": "67af919ea1a675011c9a616641037fee0627dff522fd971745a48d3bf1432464",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "1b74ee4b014e1d5288ddb6306f3d7ea1d3817c951fd1aac89c607518d3b54d53",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 14,
+      "answer": {
+        "accepted": true,
+        "row": 14,
+        "source": "59b47f14f8713824b69b66accecfec96cdb4bdb846a4dba57e6a29fc2ed1c5aa",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "8f9b902ddc3ea5b77eb9e14acb51109867f38eb21478aa5623594fae27aa2fcc",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    },
+    {
+      "query": "free_replacement",
+      "row": 15,
+      "answer": {
+        "accepted": true,
+        "row": 15,
+        "source": "dba0bf3a43edbade299d35787938f09bc21c668e8208ad73f6dde62e0401d8cf",
+        "price": "0",
+        "tolerance": "0",
+        "proof_id": "9cf0884fe668cfab62ffc636a35853d1609e1a4fd39c00df41ddbc28c43f881b",
+        "action": "replacement",
+        "quoted_cost_upper": "0"
+      },
+      "units": 78
+    }
+  ],
+  "checks": {
+    "all_base_queries_admitted": true,
+    "missing_trusted_receipt_rejected": true,
+    "scope": "Checksum identity is tested; omitted proofs were validated only by the one-time raw-checker pass, not by checksum admission."
+  }
+}

@@ -5,8 +5,10 @@ Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.
 Current amendment: [discovery-first direction](v3/decisions/2026-10-11_discovery_first_amendment.md).
 
 **Selected next: P3-SEARCH-01, a continuing discovery program.** Its first
-240-minute research cycle is in progress (317.3799541033333333333333333 research minutes); central/high forecasts are
-360/480 minutes. **P3-POS01, the materially useful positive-result objective,
+240-minute research cycle remains open with **377.495235816667 research minutes**
+credited. Its floor is satisfied. The author now directs **one-hour increments**
+with a portable handoff after each; historical central/high cycle forecasts
+remain 360/480 minutes. **P3-POS01, the materially useful positive-result objective,
 is OUTSTANDING. P3-11 is deferred pending discovery readiness.**
 
 **Status: P3-01–10 complete at their declared task scopes.**
@@ -20,11 +22,11 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **1403.511321467483333333333333 minutes**.
+Phase-three qualifying research is **1463.626603180817 minutes**.
 The [960-minute checkpoint](v3/work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
 was satisfied at P3-09, with **35.847797958367 minutes** of observed overshoot
 at that assessment; current phase research exceeds 960 minutes by
-**443.511321467483333333333333 minutes**.
+**503.626603180817 minutes**.
 Later tasks and author gates remain necessary.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
@@ -62,7 +64,8 @@ scope, with **90.310005771417 measured research minutes** and an
 **P3-10 is COMPLETE at explicit amended final-execution and interpretation
 scope**, with **90.283569405783 measured research minutes** and
 [independently reconstructed results](v3/experiments/results.md).
-**Next: continue P3-SEARCH-01-C001 from [s03](v3/discovery/s03/cp08.md). P3-11 is deferred.**
+**Next: continue P3-SEARCH-01-C001 from [s05](v3/discovery/s05/cp01.md), using
+[the current prompt](v3/discovery/CONTINUE.md) for one further requested hour. P3-11 is deferred.**
 Phase two remains complete; P3-C–D remain unattempted. P3-N01 is now
 **SUPPORTED at modest formal-adaptation and implementation-synthesis scope**;
 Q3 affirmative advantage over the strongest ordinary combination remains open.
@@ -78,7 +81,7 @@ Read this plan with the [phase-three procedure](v3/RESEARCH_PROTOCOL.md),
 selected task's prior sessions. The [primary-source orientation](v3/literature/00_orientation.md)
 supports planning; it is not a completed literature audit or theorem import.
 
-## Current author selection — October 11, 2026
+## Current author selection — October 12, 2026
 
 **Adopted: discovery-first protocol amendment and P3-SEARCH-01 detour.**
 The author directs substantially more hypothesis generation and derivation,
@@ -87,11 +90,18 @@ materially promising candidates justify rigorous challenge. The
 [decision](v3/decisions/2026-10-11_discovery_first_amendment.md) and
 [continuing program](v3/discovery/P3_SEARCH_01.md) implement that direction.
 
-**P3-SEARCH-01-C001 is in progress**, with a fresh Research240 floor,
-a 360/480-minute central/high forecast, **317.3799541033333333333333333** credited research
-minutes and **0** minutes remaining. New work is by **Codex (GPT-6)**;
-[checkpoint](v3/discovery/s03/cp08.md), [portfolio](v3/discovery/candidates.md),
-[exact actuals](v3/discovery/s03/effective_actuals.json). Its normal boundary disposition is continue/recur. The program has
+**P3-SEARCH-01-C001 remains open**, with its Research240 floor already satisfied
+and **377.495235816667** credited research minutes. The latest **ChatGPT
+(GPT-6 Astra Pro)** increment adds **60.115281713333… minutes**, preserving
+earlier **Codex (GPT-6)** work. The [one-hour direction](v3/decisions/2026-10-12_hourly_handoffs.md)
+supersedes older instructions to continue an active session through each clock
+boundary; it does not reset C001 or complete discovery. See the
+[checkpoint](v3/discovery/s05/cp01.md), [portfolio](v3/discovery/candidates.md),
+[exact effective actuals](v3/discovery/s05/effective_actuals.json) and
+[portable next prompt](v3/discovery/CONTINUE.md). All research clocks are closed
+for this increment. Continue in the next requested hour, developing joint
+acquisition of cost observations and logical evidence for repair decisions.
+The program has
 no fixed total ceiling; tens or hundreds of hours are plausible. Candidate
 rejection and elapsed floors do not close the search. **P3-11 remains unstarted
 and deferred** until evidence supports the intended 80% minimum, 90% preferred

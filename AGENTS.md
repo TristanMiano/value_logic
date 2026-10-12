@@ -5,7 +5,7 @@ scientific records. Attribute new research to the model actually doing it.
 
 For phase-three research, read the current state in [TODO_v3.md](TODO_v3.md)
 and [v3/RESEARCH_PROTOCOL.md](v3/RESEARCH_PROTOCOL.md). The next discovery task
-is described in [the Codex handoff](v3/handoffs/P3_SEARCH_01_CODEX.md); inspect
+is described in [the current continuation prompt](v3/discovery/CONTINUE.md); inspect
 current session records before starting or resuming its clock.
 
 ## Portable evidence and paths

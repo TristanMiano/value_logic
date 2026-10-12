@@ -1,0 +1,260 @@
+{
+  "status": "DEVELOPMENT deterministic numerical width comparison",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "alpha_family": 0.05,
+  "threshold_cuts": 16,
+  "alpha_per_cut": 0.003125,
+  "scope": {
+    "beta_uniform_anytime": "all cuts and every sample count; uniform Beta(1,1) mixture",
+    "hoeffding_per_cut_anytime": "all cuts and every sample count; a/[n(n+1)] spending",
+    "dkw_anytime": "all thresholds and every sample count; alpha/[n(n+1)] spending",
+    "dkw_fixed_n": "all thresholds at one prespecified sample count"
+  },
+  "rows": [
+    {
+      "n": 64,
+      "slo": 0,
+      "shi": 0,
+      "intervals": {
+        "beta_uniform_anytime": [
+          0.0,
+          0.14388863897910917
+        ],
+        "hoeffding_per_cut_anytime": [
+          0.0,
+          0.33997631500234027
+        ],
+        "dkw_anytime": [
+          0.0,
+          0.306468669475482
+        ],
+        "dkw_fixed_n": [
+          0.0,
+          0.16976268946757744
+        ]
+      },
+      "widths": {
+        "beta_uniform_anytime": 0.14388863897910917,
+        "hoeffding_per_cut_anytime": 0.33997631500234027,
+        "dkw_anytime": 0.306468669475482,
+        "dkw_fixed_n": 0.16976268946757744
+      }
+    },
+    {
+      "n": 64,
+      "slo": 32,
+      "shi": 32,
+      "intervals": {
+        "beta_uniform_anytime": [
+          0.269657893048113,
+          0.7303421069518871
+        ],
+        "hoeffding_per_cut_anytime": [
+          0.16002368499765973,
+          0.8399763150023403
+        ],
+        "dkw_anytime": [
+          0.19353133052451799,
+          0.806468669475482
+        ],
+        "dkw_fixed_n": [
+          0.33023731053242256,
+          0.6697626894675774
+        ]
+      },
+      "widths": {
+        "beta_uniform_anytime": 0.46068421390377406,
+        "hoeffding_per_cut_anytime": 0.6799526300046805,
+        "dkw_anytime": 0.612937338950964,
+        "dkw_fixed_n": 0.3395253789351549
+      }
+    },
+    {
+      "n": 256,
+      "slo": 0,
+      "shi": 0,
+      "intervals": {
+        "beta_uniform_anytime": [
+          0.0,
+          0.04324562541338238
+        ],
+        "hoeffding_per_cut_anytime": [
+          0.0,
+          0.18517159327634727
+        ],
+        "dkw_anytime": [
+          0.0,
+          0.16992147188738804
+        ],
+        "dkw_fixed_n": [
+          0.0,
+          0.08488134473378872
+        ]
+      },
+      "widths": {
+        "beta_uniform_anytime": 0.04324562541338238,
+        "hoeffding_per_cut_anytime": 0.18517159327634727,
+        "dkw_anytime": 0.16992147188738804,
+        "dkw_fixed_n": 0.08488134473378872
+      }
+    },
+    {
+      "n": 256,
+      "slo": 128,
+      "shi": 128,
+      "intervals": {
+        "beta_uniform_anytime": [
+          0.37458250627325124,
+          0.6254174937267488
+        ],
+        "hoeffding_per_cut_anytime": [
+          0.31482840672365275,
+          0.6851715932763472
+        ],
+        "dkw_anytime": [
+          0.33007852811261196,
+          0.669921471887388
+        ],
+        "dkw_fixed_n": [
+          0.4151186552662113,
+          0.5848813447337887
+        ]
+      },
+      "widths": {
+        "beta_uniform_anytime": 0.2508349874534976,
+        "hoeffding_per_cut_anytime": 0.3703431865526945,
+        "dkw_anytime": 0.3398429437747761,
+        "dkw_fixed_n": 0.16976268946757744
+      }
+    },
+    {
+      "n": 1024,
+      "slo": 0,
+      "shi": 0,
+      "intervals": {
+        "beta_uniform_anytime": [
+          0.0,
+          0.012326493263543072
+        ],
+        "hoeffding_per_cut_anytime": [
+          0.0,
+          0.09962181386433375
+        ],
+        "dkw_anytime": [
+          0.0,
+          0.0925780897976882
+        ],
+        "dkw_fixed_n": [
+          0.0,
+          0.04244067236689436
+        ]
+      },
+      "widths": {
+        "beta_uniform_anytime": 0.012326493263543072,
+        "hoeffding_per_cut_anytime": 0.09962181386433375,
+        "dkw_anytime": 0.0925780897976882,
+        "dkw_fixed_n": 0.04244067236689436
+      }
+    },
+    {
+      "n": 1024,
+      "slo": 512,
+      "shi": 512,
+      "intervals": {
+        "beta_uniform_anytime": [
+          0.4339663004397782,
+          0.5660336995602219
+        ],
+        "hoeffding_per_cut_anytime": [
+          0.4003781861356662,
+          0.5996218138643338
+        ],
+        "dkw_anytime": [
+          0.4074219102023118,
+          0.5925780897976882
+        ],
+        "dkw_fixed_n": [
+          0.45755932763310564,
+          0.5424406723668944
+        ]
+      },
+      "widths": {
+        "beta_uniform_anytime": 0.13206739912044368,
+        "hoeffding_per_cut_anytime": 0.19924362772866755,
+        "dkw_anytime": 0.18515617959537645,
+        "dkw_fixed_n": 0.08488134473378878
+      }
+    },
+    {
+      "n": 256,
+      "slo": 0,
+      "shi": 8,
+      "intervals": {
+        "beta_uniform_anytime": [
+          0.0,
+          0.10210294985880651
+        ],
+        "hoeffding_per_cut_anytime": [
+          0.0,
+          0.21642159327634727
+        ],
+        "dkw_anytime": [
+          0.0,
+          0.20117147188738804
+        ],
+        "dkw_fixed_n": [
+          0.0,
+          0.11613134473378872
+        ]
+      },
+      "widths": {
+        "beta_uniform_anytime": 0.10210294985880651,
+        "hoeffding_per_cut_anytime": 0.21642159327634727,
+        "dkw_anytime": 0.20117147188738804,
+        "dkw_fixed_n": 0.11613134473378872
+      }
+    },
+    {
+      "n": 256,
+      "slo": 64,
+      "shi": 72,
+      "intervals": {
+        "beta_uniform_anytime": [
+          0.15100421681750809,
+          0.40432182362495517
+        ],
+        "hoeffding_per_cut_anytime": [
+          0.06482840672365273,
+          0.46642159327634725
+        ],
+        "dkw_anytime": [
+          0.08007852811261196,
+          0.45117147188738804
+        ],
+        "dkw_fixed_n": [
+          0.16511865526621128,
+          0.3661313447337887
+        ]
+      },
+      "widths": {
+        "beta_uniform_anytime": 0.2533176068074471,
+        "hoeffding_per_cut_anytime": 0.4015931865526945,
+        "dkw_anytime": 0.3710929437747761,
+        "dkw_fixed_n": 0.20101268946757744
+      }
+    }
+  ],
+  "checks": {
+    "adjacent_count_pairs": 4160,
+    "n_range": [
+      1,
+      64
+    ],
+    "allowances": [
+      0.05,
+      0.003125
+    ],
+    "max_zero_count_endpoint_abs_error": 9.71445146547012e-16
+  },
+  "limitation": "Floating approximations. The note supplies the coverage argument; these are not coverage simulations."
+}

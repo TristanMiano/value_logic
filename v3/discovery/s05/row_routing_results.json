@@ -1,0 +1,2602 @@
+{
+  "status": "DEVELOPMENT",
+  "contributor": "ChatGPT (GPT-6 Astra Pro)",
+  "command": [
+    "python",
+    "v3/discovery/s05/row_routing.py"
+  ],
+  "new_source_evaluations": 0,
+  "scope": "Exact interval-row source only; proposed-candidate rejection does not establish an optimal-value gap. Synthetic checks are not a confirmation campaign.",
+  "sources": {
+    "v3/discovery/s05/row_routing.py": "16ea15f5579bd0fd4347824b8c197c8b83d7c4f29712da8049adec94a41d622b",
+    "v3/discovery/s05/row_flow.py": "57ae490bc0f18b637d07953a7ea9a71e6f652602fc73a1d72cf4a6faa411dc37",
+    "v3/discovery/s05/cdf_sweep.py": "dbdb251523b002ec74d69bfba66297b56a457bbfe9fc4f237de298a45eb66029"
+  },
+  "feasibility_cases": 24,
+  "routing_cases": 6,
+  "feasibility": [
+    {
+      "size": 3,
+      "intervals": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "weights": [
+        "1/2",
+        "1/2"
+      ],
+      "epsilon": "0",
+      "probability": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "1/2",
+        "witness": {
+          "interval": [
+            1,
+            1
+          ],
+          "forced_mass": "1/2",
+          "available_mass": "0"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-1/2"
+          },
+          {
+            "right": 1,
+            "left": 1,
+            "maximum_deficit": "1/2"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 17,
+          "right_endpoints": 3,
+          "row_prefix_updates": 2,
+          "represented_intervals": 6
+        }
+      },
+      "exact_maxflow": "1/2"
+    },
+    {
+      "size": 3,
+      "intervals": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "weights": [
+        "1/2",
+        "1/2"
+      ],
+      "epsilon": "1/8",
+      "probability": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "1/4",
+        "witness": {
+          "interval": [
+            1,
+            1
+          ],
+          "forced_mass": "1/2",
+          "available_mass": "1/4"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-5/8"
+          },
+          {
+            "right": 1,
+            "left": 1,
+            "maximum_deficit": "1/4"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 17,
+          "right_endpoints": 3,
+          "row_prefix_updates": 2,
+          "represented_intervals": 6
+        }
+      },
+      "exact_maxflow": "3/4"
+    },
+    {
+      "size": 3,
+      "intervals": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "weights": [
+        "1/2",
+        "1/2"
+      ],
+      "epsilon": "1/4",
+      "probability": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "answer": {
+        "feasible": true,
+        "maximum_deficit": "0",
+        "witness": {
+          "interval": [
+            1,
+            1
+          ],
+          "forced_mass": "1/2",
+          "available_mass": "1/2"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-3/4"
+          },
+          {
+            "right": 1,
+            "left": 1,
+            "maximum_deficit": "0"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 17,
+          "right_endpoints": 3,
+          "row_prefix_updates": 2,
+          "represented_intervals": 6
+        }
+      },
+      "exact_maxflow": "1"
+    },
+    {
+      "size": 2,
+      "intervals": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "weights": [
+        "1/7",
+        "2/7",
+        "3/7",
+        "1/7"
+      ],
+      "epsilon": "1/8",
+      "probability": [
+        "1/2",
+        "1/2"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "13/56",
+        "witness": {
+          "interval": [
+            0,
+            0
+          ],
+          "forced_mass": "6/7",
+          "available_mass": "5/8"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "13/56"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 15,
+          "right_endpoints": 2,
+          "row_prefix_updates": 4,
+          "represented_intervals": 3
+        }
+      },
+      "exact_maxflow": "43/56"
+    },
+    {
+      "size": 4,
+      "intervals": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "weights": [
+        "1/9",
+        "4/9",
+        "2/9",
+        "2/9"
+      ],
+      "epsilon": "1/3",
+      "probability": [
+        "1/6",
+        "1/2",
+        "1/6",
+        "1/6"
+      ],
+      "answer": {
+        "feasible": true,
+        "maximum_deficit": "0",
+        "witness": {
+          "interval": [
+            0,
+            3
+          ],
+          "forced_mass": "1",
+          "available_mass": "1"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-1/18"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "-5/9"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "-13/18"
+          },
+          {
+            "right": 3,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 32,
+          "right_endpoints": 4,
+          "row_prefix_updates": 4,
+          "represented_intervals": 10
+        }
+      },
+      "exact_maxflow": "1"
+    },
+    {
+      "size": 4,
+      "intervals": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "weights": [
+        "4/11",
+        "4/11",
+        "3/11"
+      ],
+      "epsilon": "0",
+      "probability": [
+        "0",
+        "2/7",
+        "2/7",
+        "3/7"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "1/77",
+        "witness": {
+          "interval": [
+            2,
+            3
+          ],
+          "forced_mass": "8/11",
+          "available_mass": "5/7"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "0"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "-1/77"
+          },
+          {
+            "right": 2,
+            "left": 2,
+            "maximum_deficit": "-2/7"
+          },
+          {
+            "right": 3,
+            "left": 2,
+            "maximum_deficit": "1/77"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 30,
+          "right_endpoints": 4,
+          "row_prefix_updates": 3,
+          "represented_intervals": 10
+        }
+      },
+      "exact_maxflow": "76/77"
+    },
+    {
+      "size": 5,
+      "intervals": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "weights": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "epsilon": "1/8",
+      "probability": [
+        "0",
+        "1/4",
+        "0",
+        "3/4",
+        "0"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "5/24",
+        "witness": {
+          "interval": [
+            0,
+            0
+          ],
+          "forced_mass": "1/3",
+          "available_mass": "1/8"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "5/24"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "-1/24"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "-1/24"
+          },
+          {
+            "right": 3,
+            "left": 0,
+            "maximum_deficit": "-1/8"
+          },
+          {
+            "right": 4,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 34,
+          "right_endpoints": 5,
+          "row_prefix_updates": 3,
+          "represented_intervals": 15
+        }
+      },
+      "exact_maxflow": "19/24"
+    },
+    {
+      "size": 2,
+      "intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "weights": [
+        "2/3",
+        "1/3"
+      ],
+      "epsilon": "0",
+      "probability": [
+        "3/7",
+        "4/7"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "2/21",
+        "witness": {
+          "interval": [
+            1,
+            1
+          ],
+          "forced_mass": "2/3",
+          "available_mass": "4/7"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-2/21"
+          },
+          {
+            "right": 1,
+            "left": 1,
+            "maximum_deficit": "2/21"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 10,
+          "right_endpoints": 2,
+          "row_prefix_updates": 2,
+          "represented_intervals": 3
+        }
+      },
+      "exact_maxflow": "19/21"
+    },
+    {
+      "size": 3,
+      "intervals": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "weights": [
+        "1/4",
+        "3/8",
+        "1/8",
+        "1/4"
+      ],
+      "epsilon": "0",
+      "probability": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "1/8",
+        "witness": {
+          "interval": [
+            2,
+            2
+          ],
+          "forced_mass": "3/8",
+          "available_mass": "1/4"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-1/4"
+          },
+          {
+            "right": 1,
+            "left": 1,
+            "maximum_deficit": "-1/2"
+          },
+          {
+            "right": 2,
+            "left": 2,
+            "maximum_deficit": "1/8"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 24,
+          "right_endpoints": 3,
+          "row_prefix_updates": 4,
+          "represented_intervals": 6
+        }
+      },
+      "exact_maxflow": "7/8"
+    },
+    {
+      "size": 3,
+      "intervals": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "weights": [
+        "1/2",
+        "1/2"
+      ],
+      "epsilon": "0",
+      "probability": [
+        "1/7",
+        "2/7",
+        "4/7"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "1/14",
+        "witness": {
+          "interval": [
+            0,
+            1
+          ],
+          "forced_mass": "1/2",
+          "available_mass": "3/7"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-1/7"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "1/14"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 20,
+          "right_endpoints": 3,
+          "row_prefix_updates": 2,
+          "represented_intervals": 6
+        }
+      },
+      "exact_maxflow": "13/14"
+    },
+    {
+      "size": 2,
+      "intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "weights": [
+        "1/4",
+        "1/4",
+        "1/2"
+      ],
+      "epsilon": "0",
+      "probability": [
+        "2/3",
+        "1/3"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "1/6",
+        "witness": {
+          "interval": [
+            1,
+            1
+          ],
+          "forced_mass": "1/2",
+          "available_mass": "1/3"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-2/3"
+          },
+          {
+            "right": 1,
+            "left": 1,
+            "maximum_deficit": "1/6"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 11,
+          "right_endpoints": 2,
+          "row_prefix_updates": 3,
+          "represented_intervals": 3
+        }
+      },
+      "exact_maxflow": "5/6"
+    },
+    {
+      "size": 5,
+      "intervals": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "weights": [
+        "2/9",
+        "4/9",
+        "1/3"
+      ],
+      "epsilon": "1/3",
+      "probability": [
+        "1/4",
+        "1/6",
+        "1/3",
+        "1/4",
+        "0"
+      ],
+      "answer": {
+        "feasible": true,
+        "maximum_deficit": "0",
+        "witness": {
+          "interval": [
+            0,
+            4
+          ],
+          "forced_mass": "1",
+          "available_mass": "1"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-7/12"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "-19/36"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "-5/12"
+          },
+          {
+            "right": 3,
+            "left": 0,
+            "maximum_deficit": "-2/3"
+          },
+          {
+            "right": 4,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 39,
+          "right_endpoints": 5,
+          "row_prefix_updates": 3,
+          "represented_intervals": 15
+        }
+      },
+      "exact_maxflow": "1"
+    },
+    {
+      "size": 4,
+      "intervals": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "weights": [
+        "3/5",
+        "2/5"
+      ],
+      "epsilon": "0",
+      "probability": [
+        "3/10",
+        "1/10",
+        "2/5",
+        "1/5"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "3/10",
+        "witness": {
+          "interval": [
+            1,
+            3
+          ],
+          "forced_mass": "1",
+          "available_mass": "7/10"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-3/10"
+          },
+          {
+            "right": 1,
+            "left": 1,
+            "maximum_deficit": "-1/10"
+          },
+          {
+            "right": 2,
+            "left": 1,
+            "maximum_deficit": "1/10"
+          },
+          {
+            "right": 3,
+            "left": 1,
+            "maximum_deficit": "3/10"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 26,
+          "right_endpoints": 4,
+          "row_prefix_updates": 2,
+          "represented_intervals": 10
+        }
+      },
+      "exact_maxflow": "7/10"
+    },
+    {
+      "size": 3,
+      "intervals": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "weights": [
+        "3/13",
+        "4/13",
+        "2/13",
+        "4/13"
+      ],
+      "epsilon": "0",
+      "probability": [
+        "1/5",
+        "1/5",
+        "3/5"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "29/65",
+        "witness": {
+          "interval": [
+            0,
+            1
+          ],
+          "forced_mass": "11/13",
+          "available_mass": "2/5"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "7/65"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "29/65"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 26,
+          "right_endpoints": 3,
+          "row_prefix_updates": 4,
+          "represented_intervals": 6
+        }
+      },
+      "exact_maxflow": "36/65"
+    },
+    {
+      "size": 5,
+      "intervals": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "weights": [
+        "2/3",
+        "1/3"
+      ],
+      "epsilon": "1/8",
+      "probability": [
+        "2/11",
+        "4/11",
+        "2/11",
+        "2/11",
+        "1/11"
+      ],
+      "answer": {
+        "feasible": true,
+        "maximum_deficit": "0",
+        "witness": {
+          "interval": [
+            0,
+            4
+          ],
+          "forced_mass": "1",
+          "available_mass": "1"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-27/88"
+          },
+          {
+            "right": 1,
+            "left": 1,
+            "maximum_deficit": "-27/44"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "-49/264"
+          },
+          {
+            "right": 3,
+            "left": 0,
+            "maximum_deficit": "-97/264"
+          },
+          {
+            "right": 4,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 37,
+          "right_endpoints": 5,
+          "row_prefix_updates": 2,
+          "represented_intervals": 15
+        }
+      },
+      "exact_maxflow": "1"
+    },
+    {
+      "size": 4,
+      "intervals": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "weights": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/2"
+      ],
+      "epsilon": "1/3",
+      "probability": [
+        "2/5",
+        "1/10",
+        "1/10",
+        "2/5"
+      ],
+      "answer": {
+        "feasible": true,
+        "maximum_deficit": "0",
+        "witness": {
+          "interval": [
+            0,
+            3
+          ],
+          "forced_mass": "1",
+          "available_mass": "1"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-11/15"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "-2/3"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "-13/30"
+          },
+          {
+            "right": 3,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 33,
+          "right_endpoints": 4,
+          "row_prefix_updates": 4,
+          "represented_intervals": 10
+        }
+      },
+      "exact_maxflow": "1"
+    },
+    {
+      "size": 4,
+      "intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "weights": [
+        "3/10",
+        "1/5",
+        "1/5",
+        "3/10"
+      ],
+      "epsilon": "1/8",
+      "probability": [
+        "3/11",
+        "4/11",
+        "2/11",
+        "2/11"
+      ],
+      "answer": {
+        "feasible": true,
+        "maximum_deficit": "0",
+        "witness": {
+          "interval": [
+            0,
+            3
+          ],
+          "forced_mass": "1",
+          "available_mass": "1"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-87/440"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "-27/440"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "-107/440"
+          },
+          {
+            "right": 3,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 31,
+          "right_endpoints": 4,
+          "row_prefix_updates": 4,
+          "represented_intervals": 10
+        }
+      },
+      "exact_maxflow": "1"
+    },
+    {
+      "size": 4,
+      "intervals": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "weights": [
+        "1/3",
+        "1/6",
+        "1/2"
+      ],
+      "epsilon": "1/8",
+      "probability": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "1/24",
+        "witness": {
+          "interval": [
+            0,
+            1
+          ],
+          "forced_mass": "1/3",
+          "available_mass": "7/24"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-1/8"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "1/24"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "-1/8"
+          },
+          {
+            "right": 3,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 28,
+          "right_endpoints": 4,
+          "row_prefix_updates": 3,
+          "represented_intervals": 10
+        }
+      },
+      "exact_maxflow": "23/24"
+    },
+    {
+      "size": 5,
+      "intervals": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "weights": [
+        "4/11",
+        "3/11",
+        "3/11",
+        "1/11"
+      ],
+      "epsilon": "1/3",
+      "probability": [
+        "0",
+        "0",
+        "0",
+        "4/5",
+        "1/5"
+      ],
+      "answer": {
+        "feasible": true,
+        "maximum_deficit": "0",
+        "witness": {
+          "interval": [
+            0,
+            4
+          ],
+          "forced_mass": "1",
+          "available_mass": "1"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-1/3"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "-1/3"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "-2/33"
+          },
+          {
+            "right": 3,
+            "left": 0,
+            "maximum_deficit": "-2/15"
+          },
+          {
+            "right": 4,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 36,
+          "right_endpoints": 5,
+          "row_prefix_updates": 4,
+          "represented_intervals": 15
+        }
+      },
+      "exact_maxflow": "1"
+    },
+    {
+      "size": 5,
+      "intervals": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "weights": [
+        "1/2",
+        "1/8",
+        "3/8"
+      ],
+      "epsilon": "1/8",
+      "probability": [
+        "1/6",
+        "1/3",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "1/24",
+        "witness": {
+          "interval": [
+            0,
+            3
+          ],
+          "forced_mass": "1",
+          "available_mass": "23/24"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-7/24"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "-1/8"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "-7/24"
+          },
+          {
+            "right": 3,
+            "left": 0,
+            "maximum_deficit": "1/24"
+          },
+          {
+            "right": 4,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 40,
+          "right_endpoints": 5,
+          "row_prefix_updates": 3,
+          "represented_intervals": 15
+        }
+      },
+      "exact_maxflow": "23/24"
+    },
+    {
+      "size": 3,
+      "intervals": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "weights": [
+        "2/5",
+        "3/5"
+      ],
+      "epsilon": "1/8",
+      "probability": [
+        "1/5",
+        "3/5",
+        "1/5"
+      ],
+      "answer": {
+        "feasible": false,
+        "maximum_deficit": "3/40",
+        "witness": {
+          "interval": [
+            1,
+            2
+          ],
+          "forced_mass": "1",
+          "available_mass": "37/40"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-13/40"
+          },
+          {
+            "right": 1,
+            "left": 1,
+            "maximum_deficit": "-17/20"
+          },
+          {
+            "right": 2,
+            "left": 1,
+            "maximum_deficit": "3/40"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 18,
+          "right_endpoints": 3,
+          "row_prefix_updates": 2,
+          "represented_intervals": 6
+        }
+      },
+      "exact_maxflow": "37/40"
+    },
+    {
+      "size": 2,
+      "intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "weights": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "epsilon": "1/8",
+      "probability": [
+        "0",
+        "1"
+      ],
+      "answer": {
+        "feasible": true,
+        "maximum_deficit": "0",
+        "witness": {
+          "interval": [
+            0,
+            1
+          ],
+          "forced_mass": "1",
+          "available_mass": "1"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-1/8"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 9,
+          "right_endpoints": 2,
+          "row_prefix_updates": 3,
+          "represented_intervals": 3
+        }
+      },
+      "exact_maxflow": "1"
+    },
+    {
+      "size": 4,
+      "intervals": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "weights": [
+        "4/7",
+        "3/7"
+      ],
+      "epsilon": "1/8",
+      "probability": [
+        "1/9",
+        "2/9",
+        "1/3",
+        "1/3"
+      ],
+      "answer": {
+        "feasible": true,
+        "maximum_deficit": "0",
+        "witness": {
+          "interval": [
+            0,
+            3
+          ],
+          "forced_mass": "1",
+          "available_mass": "1"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-17/72"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "-11/24"
+          },
+          {
+            "right": 2,
+            "left": 0,
+            "maximum_deficit": "-61/168"
+          },
+          {
+            "right": 3,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 28,
+          "right_endpoints": 4,
+          "row_prefix_updates": 2,
+          "represented_intervals": 10
+        }
+      },
+      "exact_maxflow": "1"
+    },
+    {
+      "size": 2,
+      "intervals": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "weights": [
+        "1/10",
+        "3/10",
+        "1/5",
+        "2/5"
+      ],
+      "epsilon": "0",
+      "probability": [
+        "1/3",
+        "2/3"
+      ],
+      "answer": {
+        "feasible": true,
+        "maximum_deficit": "0",
+        "witness": {
+          "interval": [
+            0,
+            1
+          ],
+          "forced_mass": "1",
+          "available_mass": "1"
+        },
+        "sweep": [
+          {
+            "right": 0,
+            "left": 0,
+            "maximum_deficit": "-1/3"
+          },
+          {
+            "right": 1,
+            "left": 0,
+            "maximum_deficit": "0"
+          }
+        ],
+        "operations": {
+          "tree_node_visits": 15,
+          "right_endpoints": 2,
+          "row_prefix_updates": 4,
+          "represented_intervals": 3
+        }
+      },
+      "exact_maxflow": "1"
+    }
+  ],
+  "routing": [
+    {
+      "intervals": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "epsilon": "0",
+      "payoff": [
+        0,
+        1,
+        2
+      ],
+      "route": {
+        "lower": "1/2",
+        "upper": "3/2",
+        "original_size": 3,
+        "compressed_size": 3,
+        "mapping": [
+          0,
+          1,
+          2
+        ],
+        "compressed_payoff": [
+          "0",
+          "1",
+          "2"
+        ],
+        "compressed_intervals": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "monotone_payoff": true,
+        "source_equality_certified_by_interior_mass": false,
+        "interior_row_mass": "1/2",
+        "cheap_certificates": {
+          "lower": "1/2",
+          "upper": "3/2",
+          "lower_certificate": {
+            "value": "1/2",
+            "probability": [
+              "1/2",
+              "1/2",
+              "0"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "1/2",
+                "a": 0,
+                "b": 1,
+                "chosen": 0
+              },
+              {
+                "left": "1/2",
+                "right": "1",
+                "a": 1,
+                "b": 2,
+                "chosen": 1
+              }
+            ],
+            "operations": {
+              "pushes": 3,
+              "back_pops": 0,
+              "front_pops": 1,
+              "payoff_comparisons": 2,
+              "windows": 2
+            }
+          },
+          "negative_upper_certificate": {
+            "value": "-3/2",
+            "probability": [
+              "0",
+              "1/2",
+              "1/2"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "1/2",
+                "a": 0,
+                "b": 1,
+                "chosen": 1
+              },
+              {
+                "left": "1/2",
+                "right": "1",
+                "a": 1,
+                "b": 2,
+                "chosen": 2
+              }
+            ],
+            "operations": {
+              "pushes": 3,
+              "back_pops": 2,
+              "front_pops": 0,
+              "payoff_comparisons": 2,
+              "windows": 2
+            }
+          }
+        },
+        "lower_equality_certified": true,
+        "lower_route": "monotone",
+        "upper_equality_certified": true,
+        "upper_route": "monotone"
+      },
+      "exact_row_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "exact_compressed_interval": [
+        "1/2",
+        "3/2"
+      ]
+    },
+    {
+      "intervals": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "epsilon": "0",
+      "payoff": [
+        0,
+        1,
+        0
+      ],
+      "route": {
+        "lower": "0",
+        "upper": "1",
+        "original_size": 3,
+        "compressed_size": 3,
+        "mapping": [
+          0,
+          1,
+          2
+        ],
+        "compressed_payoff": [
+          "0",
+          "1",
+          "0"
+        ],
+        "compressed_intervals": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "monotone_payoff": false,
+        "source_equality_certified_by_interior_mass": false,
+        "interior_row_mass": "1/2",
+        "cheap_certificates": {
+          "lower": "0",
+          "upper": "1",
+          "lower_certificate": {
+            "value": "0",
+            "probability": [
+              "1/2",
+              "0",
+              "1/2"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "1/2",
+                "a": 0,
+                "b": 1,
+                "chosen": 0
+              },
+              {
+                "left": "1/2",
+                "right": "1",
+                "a": 1,
+                "b": 2,
+                "chosen": 2
+              }
+            ],
+            "operations": {
+              "pushes": 3,
+              "back_pops": 1,
+              "front_pops": 1,
+              "payoff_comparisons": 3,
+              "windows": 2
+            }
+          },
+          "negative_upper_certificate": {
+            "value": "-1",
+            "probability": [
+              "0",
+              "1",
+              "0"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "1/2",
+                "a": 0,
+                "b": 1,
+                "chosen": 1
+              },
+              {
+                "left": "1/2",
+                "right": "1",
+                "a": 1,
+                "b": 2,
+                "chosen": 1
+              }
+            ],
+            "operations": {
+              "pushes": 3,
+              "back_pops": 1,
+              "front_pops": 0,
+              "payoff_comparisons": 2,
+              "windows": 2
+            }
+          }
+        },
+        "lower_equality_certified": false,
+        "lower_route": "candidate_membership",
+        "lower_membership": {
+          "feasible": false,
+          "maximum_deficit": "1/2",
+          "witness": {
+            "interval": [
+              1,
+              1
+            ],
+            "forced_mass": "1/2",
+            "available_mass": "0"
+          },
+          "sweep": [
+            {
+              "right": 0,
+              "left": 0,
+              "maximum_deficit": "-1/2"
+            },
+            {
+              "right": 1,
+              "left": 1,
+              "maximum_deficit": "1/2"
+            },
+            {
+              "right": 2,
+              "left": 0,
+              "maximum_deficit": "0"
+            }
+          ],
+          "operations": {
+            "tree_node_visits": 17,
+            "right_endpoints": 3,
+            "row_prefix_updates": 2,
+            "represented_intervals": 6
+          }
+        },
+        "upper_equality_certified": true,
+        "upper_route": "candidate_membership",
+        "upper_membership": {
+          "feasible": true,
+          "maximum_deficit": "0",
+          "witness": {
+            "interval": [
+              0,
+              0
+            ],
+            "forced_mass": "0",
+            "available_mass": "0"
+          },
+          "sweep": [
+            {
+              "right": 0,
+              "left": 0,
+              "maximum_deficit": "0"
+            },
+            {
+              "right": 1,
+              "left": 0,
+              "maximum_deficit": "-1/2"
+            },
+            {
+              "right": 2,
+              "left": 0,
+              "maximum_deficit": "0"
+            }
+          ],
+          "operations": {
+            "tree_node_visits": 15,
+            "right_endpoints": 3,
+            "row_prefix_updates": 2,
+            "represented_intervals": 6
+          }
+        }
+      },
+      "exact_row_interval": [
+        "1/2",
+        "1"
+      ],
+      "exact_compressed_interval": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "intervals": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "epsilon": "1/8",
+      "payoff": [
+        0,
+        1,
+        0
+      ],
+      "route": {
+        "lower": "0",
+        "upper": "1",
+        "original_size": 3,
+        "compressed_size": 3,
+        "mapping": [
+          0,
+          1,
+          2
+        ],
+        "compressed_payoff": [
+          "0",
+          "1",
+          "0"
+        ],
+        "compressed_intervals": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "monotone_payoff": false,
+        "source_equality_certified_by_interior_mass": false,
+        "interior_row_mass": "1/2",
+        "cheap_certificates": {
+          "lower": "0",
+          "upper": "1",
+          "lower_certificate": {
+            "value": "0",
+            "probability": [
+              "5/8",
+              "0",
+              "3/8"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "3/8",
+                "a": 0,
+                "b": 1,
+                "chosen": 0
+              },
+              {
+                "left": "3/8",
+                "right": "5/8",
+                "a": 0,
+                "b": 2,
+                "chosen": 0
+              },
+              {
+                "left": "5/8",
+                "right": "1",
+                "a": 1,
+                "b": 2,
+                "chosen": 2
+              }
+            ],
+            "operations": {
+              "pushes": 3,
+              "back_pops": 1,
+              "front_pops": 1,
+              "payoff_comparisons": 3,
+              "windows": 3
+            }
+          },
+          "negative_upper_certificate": {
+            "value": "-1",
+            "probability": [
+              "0",
+              "1",
+              "0"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "3/8",
+                "a": 0,
+                "b": 1,
+                "chosen": 1
+              },
+              {
+                "left": "3/8",
+                "right": "5/8",
+                "a": 0,
+                "b": 2,
+                "chosen": 1
+              },
+              {
+                "left": "5/8",
+                "right": "1",
+                "a": 1,
+                "b": 2,
+                "chosen": 1
+              }
+            ],
+            "operations": {
+              "pushes": 3,
+              "back_pops": 1,
+              "front_pops": 0,
+              "payoff_comparisons": 2,
+              "windows": 3
+            }
+          }
+        },
+        "lower_equality_certified": false,
+        "lower_route": "candidate_membership",
+        "lower_membership": {
+          "feasible": false,
+          "maximum_deficit": "1/4",
+          "witness": {
+            "interval": [
+              1,
+              1
+            ],
+            "forced_mass": "1/2",
+            "available_mass": "1/4"
+          },
+          "sweep": [
+            {
+              "right": 0,
+              "left": 0,
+              "maximum_deficit": "-3/4"
+            },
+            {
+              "right": 1,
+              "left": 1,
+              "maximum_deficit": "1/4"
+            },
+            {
+              "right": 2,
+              "left": 0,
+              "maximum_deficit": "0"
+            }
+          ],
+          "operations": {
+            "tree_node_visits": 17,
+            "right_endpoints": 3,
+            "row_prefix_updates": 2,
+            "represented_intervals": 6
+          }
+        },
+        "upper_equality_certified": true,
+        "upper_route": "candidate_membership",
+        "upper_membership": {
+          "feasible": true,
+          "maximum_deficit": "0",
+          "witness": {
+            "interval": [
+              0,
+              2
+            ],
+            "forced_mass": "1",
+            "available_mass": "1"
+          },
+          "sweep": [
+            {
+              "right": 0,
+              "left": 0,
+              "maximum_deficit": "-1/8"
+            },
+            {
+              "right": 1,
+              "left": 0,
+              "maximum_deficit": "-5/8"
+            },
+            {
+              "right": 2,
+              "left": 0,
+              "maximum_deficit": "0"
+            }
+          ],
+          "operations": {
+            "tree_node_visits": 15,
+            "right_endpoints": 3,
+            "row_prefix_updates": 2,
+            "represented_intervals": 6
+          }
+        }
+      },
+      "exact_row_interval": [
+        "1/4",
+        "1"
+      ],
+      "exact_compressed_interval": [
+        "1/4",
+        "1"
+      ]
+    },
+    {
+      "intervals": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "epsilon": "0",
+      "payoff": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "route": {
+        "lower": "0",
+        "upper": "1",
+        "original_size": 5,
+        "compressed_size": 3,
+        "mapping": [
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "compressed_payoff": [
+          "0",
+          "1",
+          "0"
+        ],
+        "compressed_intervals": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "monotone_payoff": false,
+        "source_equality_certified_by_interior_mass": false,
+        "interior_row_mass": "1/2",
+        "cheap_certificates": {
+          "lower": "0",
+          "upper": "1",
+          "lower_certificate": {
+            "value": "0",
+            "probability": [
+              "1/2",
+              "0",
+              "1/2"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "1/2",
+                "a": 0,
+                "b": 1,
+                "chosen": 0
+              },
+              {
+                "left": "1/2",
+                "right": "1",
+                "a": 1,
+                "b": 2,
+                "chosen": 2
+              }
+            ],
+            "operations": {
+              "pushes": 3,
+              "back_pops": 1,
+              "front_pops": 1,
+              "payoff_comparisons": 3,
+              "windows": 2
+            }
+          },
+          "negative_upper_certificate": {
+            "value": "-1",
+            "probability": [
+              "0",
+              "1",
+              "0"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "1/2",
+                "a": 0,
+                "b": 1,
+                "chosen": 1
+              },
+              {
+                "left": "1/2",
+                "right": "1",
+                "a": 1,
+                "b": 2,
+                "chosen": 1
+              }
+            ],
+            "operations": {
+              "pushes": 3,
+              "back_pops": 1,
+              "front_pops": 0,
+              "payoff_comparisons": 2,
+              "windows": 2
+            }
+          }
+        },
+        "lower_equality_certified": false,
+        "lower_route": "candidate_membership",
+        "lower_membership": {
+          "feasible": false,
+          "maximum_deficit": "1/2",
+          "witness": {
+            "interval": [
+              1,
+              1
+            ],
+            "forced_mass": "1/2",
+            "available_mass": "0"
+          },
+          "sweep": [
+            {
+              "right": 0,
+              "left": 0,
+              "maximum_deficit": "-1/2"
+            },
+            {
+              "right": 1,
+              "left": 1,
+              "maximum_deficit": "1/2"
+            },
+            {
+              "right": 2,
+              "left": 0,
+              "maximum_deficit": "0"
+            }
+          ],
+          "operations": {
+            "tree_node_visits": 17,
+            "right_endpoints": 3,
+            "row_prefix_updates": 2,
+            "represented_intervals": 6
+          }
+        },
+        "upper_equality_certified": true,
+        "upper_route": "candidate_membership",
+        "upper_membership": {
+          "feasible": true,
+          "maximum_deficit": "0",
+          "witness": {
+            "interval": [
+              0,
+              0
+            ],
+            "forced_mass": "0",
+            "available_mass": "0"
+          },
+          "sweep": [
+            {
+              "right": 0,
+              "left": 0,
+              "maximum_deficit": "0"
+            },
+            {
+              "right": 1,
+              "left": 0,
+              "maximum_deficit": "-1/2"
+            },
+            {
+              "right": 2,
+              "left": 0,
+              "maximum_deficit": "0"
+            }
+          ],
+          "operations": {
+            "tree_node_visits": 15,
+            "right_endpoints": 3,
+            "row_prefix_updates": 2,
+            "represented_intervals": 6
+          }
+        }
+      },
+      "exact_row_interval": [
+        "1/2",
+        "1"
+      ],
+      "exact_compressed_interval": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "intervals": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "epsilon": "0",
+      "payoff": [
+        2,
+        -1,
+        -1,
+        3,
+        0
+      ],
+      "route": {
+        "lower": "-1",
+        "upper": "3",
+        "original_size": 5,
+        "compressed_size": 4,
+        "mapping": [
+          0,
+          1,
+          1,
+          2,
+          3
+        ],
+        "compressed_payoff": [
+          "2",
+          "-1",
+          "3",
+          "0"
+        ],
+        "compressed_intervals": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "monotone_payoff": false,
+        "source_equality_certified_by_interior_mass": true,
+        "interior_row_mass": "0",
+        "cheap_certificates": {
+          "lower": "-1",
+          "upper": "3",
+          "lower_certificate": {
+            "value": "-1",
+            "probability": [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "1/2",
+                "a": 0,
+                "b": 2,
+                "chosen": 1
+              },
+              {
+                "left": "1/2",
+                "right": "1",
+                "a": 1,
+                "b": 3,
+                "chosen": 1
+              }
+            ],
+            "operations": {
+              "pushes": 4,
+              "back_pops": 2,
+              "front_pops": 0,
+              "payoff_comparisons": 4,
+              "windows": 2
+            }
+          },
+          "negative_upper_certificate": {
+            "value": "-3",
+            "probability": [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "1/2",
+                "a": 0,
+                "b": 2,
+                "chosen": 2
+              },
+              {
+                "left": "1/2",
+                "right": "1",
+                "a": 1,
+                "b": 3,
+                "chosen": 2
+              }
+            ],
+            "operations": {
+              "pushes": 4,
+              "back_pops": 2,
+              "front_pops": 0,
+              "payoff_comparisons": 4,
+              "windows": 2
+            }
+          }
+        },
+        "lower_equality_certified": true,
+        "lower_route": "interior_mass",
+        "upper_equality_certified": true,
+        "upper_route": "interior_mass"
+      },
+      "exact_row_interval": [
+        "-1",
+        "3"
+      ],
+      "exact_compressed_interval": [
+        "-1",
+        "3"
+      ]
+    },
+    {
+      "intervals": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "epsilon": "1/2",
+      "payoff": [
+        1,
+        0,
+        0,
+        2,
+        -1
+      ],
+      "route": {
+        "lower": "-1",
+        "upper": "2",
+        "original_size": 5,
+        "compressed_size": 4,
+        "mapping": [
+          0,
+          1,
+          1,
+          2,
+          3
+        ],
+        "compressed_payoff": [
+          "1",
+          "0",
+          "2",
+          "-1"
+        ],
+        "compressed_intervals": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "monotone_payoff": false,
+        "source_equality_certified_by_interior_mass": true,
+        "interior_row_mass": "1/2",
+        "cheap_certificates": {
+          "lower": "-1",
+          "upper": "2",
+          "lower_certificate": {
+            "value": "-1",
+            "probability": [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "1",
+                "a": 0,
+                "b": 3,
+                "chosen": 3
+              }
+            ],
+            "operations": {
+              "pushes": 4,
+              "back_pops": 3,
+              "front_pops": 0,
+              "payoff_comparisons": 4,
+              "windows": 1
+            }
+          },
+          "negative_upper_certificate": {
+            "value": "-2",
+            "probability": [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "trace": [
+              {
+                "left": "0",
+                "right": "1",
+                "a": 0,
+                "b": 3,
+                "chosen": 2
+              }
+            ],
+            "operations": {
+              "pushes": 4,
+              "back_pops": 2,
+              "front_pops": 0,
+              "payoff_comparisons": 4,
+              "windows": 1
+            }
+          }
+        },
+        "lower_equality_certified": true,
+        "lower_route": "interior_mass",
+        "upper_equality_certified": true,
+        "upper_route": "interior_mass"
+      },
+      "exact_row_interval": [
+        "-1",
+        "2"
+      ],
+      "exact_compressed_interval": [
+        "-1",
+        "2"
+      ]
+    }
+  ]
+}

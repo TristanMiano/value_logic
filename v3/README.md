@@ -1,17 +1,21 @@
 # Phase Three: Reasoning About Unresolved Mathematics
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 11, 2026 UTC.
+Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 12, 2026 UTC.
 
 **P3-01–10 are complete at their declared scopes; P3-A/B retain their restricted passes.**
 P3-10 closes with an explicit preserved amendment and **90.283569405783
-qualifying research minutes**. Phase research is **1403.511321467483333333333333 minutes**.
+qualifying research minutes**. Phase research is **1463.626603180817 minutes**.
 **P3-SEARCH-01-C001 is in progress; its four-hour floor is satisfied and work continues. P3-11 is deferred pending a promising candidate.** The author has
 adopted a [discovery-first amendment](decisions/2026-10-11_discovery_first_amendment.md)
 with recurring long research cycles and open-ended search. The original
 **16 measured hours of research** remain a satisfied minimum; the new cycle
-has its own fresh floor, with 317.3799541033333333333333333 research minutes credited.
-New discovery work is by **Codex (GPT-6)**; [checkpoint](discovery/s03/cp08.md)
-and [portfolio](discovery/candidates.md).
+has **377.495235816667 research minutes** credited and its floor is satisfied.
+The latest **ChatGPT (GPT-6 Astra Pro)** increment adds **60.115281713333…**
+research minutes, preserving earlier **Codex (GPT-6)** work. The author now
+directs [one-hour handoffs](decisions/2026-10-12_hourly_handoffs.md), carrying
+C001 forward between ChatGPT and Codex. See the [checkpoint](discovery/s05/cp01.md),
+[portfolio](discovery/candidates.md), [effective actuals](discovery/s05/effective_actuals.json)
+and [current continuation prompt](discovery/CONTINUE.md).
 [TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
 [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
 
@@ -85,7 +89,10 @@ keeps mechanisms and representations revisable while seeking a substantive delta
 The original **20-hour central / 40-hour high** phase research forecasts are
 historical estimates. Current discovery is open-ended, potentially spanning
 tens or hundreds of hours. Its cycles have **four-hour or longer research
-floors**; the first is forecast at **six hours central / eight hours high**.
+floors**; the first was forecast at **six hours central / eight hours high**.
+The October 12 direction executes the continuing program in **one-hour
+increments**, followed by a handoff. Those session boundaries do not reset
+cycle floors or close the open discovery objective.
 Generation, derivation and constructive development receive approximately 75%
 of discovery effort, with 20% cheap screening and 5% substantive synthesis.
 At a floor the normal disposition is continue/recur. A candidate must become
@@ -134,7 +141,7 @@ The [closing record](work_logs/P3_06_2026-10-09_S1.md) gives **90.210938375717**
 new research minutes. P3-07 is **complete** at its declared
 [bounded paid-reasoning scope](derivations/07_paid_reasoning.md), with
 **90.187687312067** observed research minutes. Current phase research is
-**1403.511321467483333333333333 minutes**. The
+**1463.626603180817 minutes**. The
 [960-minute checkpoint](work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
 was assessed at P3-09; new discovery floors and later gates remain separate.
 **P3-B has passed** at restricted mathematical/local implementation
@@ -162,7 +169,7 @@ readiness; P3-POS01 remains outstanding.
 | Author direction | [Scope decision](decisions/2026-10-06_phase_three_scope.md) |
 | Current research amendment | [Discovery-first decision](decisions/2026-10-11_discovery_first_amendment.md) |
 | Continuing discovery | [P3-SEARCH-01 program and first cycle](discovery/P3_SEARCH_01.md) |
-| Codex continuation | [Execute the first discovery cycle](handoffs/P3_SEARCH_01_CODEX.md) |
+| ChatGPT / Codex continuation | [Resume for one requested hour](discovery/CONTINUE.md) |
 | Portable checkout and evidence | [Windows recovery guide](../docs/windows_checkout.md) · [Historical snapshot location map](evidence/relocations.v1.json) |
 | Tasks and completion criteria | [TODO_v3.md](../TODO_v3.md) |
 | Research execution | [Procedure](RESEARCH_PROTOCOL.md) · [Work-item template](templates/work_item.md) |

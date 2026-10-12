@@ -4,13 +4,18 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
-New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s03/cp08.md),
-[portfolio](candidates.md), [exact actuals](s03/effective_actuals.json).
+Latest execution contributor: **ChatGPT (GPT-6 Astra Pro)**; earlier
+**Codex (GPT-6)** work is preserved. [Current checkpoint](s05/cp01.md),
+[portfolio](candidates.md), [exact effective actuals](s05/effective_actuals.json).
 
-Current s03 direction: compact profiles for graded or marginally calibrated
-forecasts, and paid calibration of their reusable premises. The heterogeneous proof
-service narrowed the joint-controller economic lead; preserve all outcomes. All results remain DEVELOPMENT. The current checkpoint
-is an active accounting boundary; C001 continues beyond its satisfied floor.
+Current s05 direction: **calibrated repair**, choosing between paid cost
+observations and logical evidence to certify a useful action. Paid graph
+calibration and partially observed threshold values remain connected branches.
+The actual reusable-proof service completes 80 repair requests and exposes
+setup-sensitive costs; all results remain DEVELOPMENT. The author directs
+[one-hour increments](../decisions/2026-10-12_hourly_handoffs.md). The s05 hour
+is closed, C001 remains open beyond its satisfied floor, and the
+[portable prompt](CONTINUE.md) governs the next requested increment.
 
 ## 1. Objective and scope
 
@@ -59,7 +64,8 @@ storage and failure costs and name the strongest relevant pre-existing controls.
 | Central / high O forecast | 15 / 30 minutes, outside research |
 | Purpose priority | 75% generation/development; 20% cheap screening; 5% substantive synthesis/readiness |
 | Initial R / X lane forecast | 25% reliable / 75% exploratory; both may contain constructive generation |
-| Research already credited | 317.3799541033333333333333333 minutes at active s03 checkpoint; continuation proceeds |
+| Research already credited | 377.495235816667 minutes at closed s05 hourly checkpoint; C001 remains open |
+| Current execution cadence | One approximately 60-minute engaged research increment, then a portable handoff |
 | Normal boundary disposition | Continue the current line or recur within this program |
 | Program duration | Open-ended; tens or hundreds of hours are plausible, with no forecast of guaranteed discovery |
 | Deeper portfolio reviews | At the first useful boundaries after 16, 40 and 100 new program research hours; retain overshoot |
@@ -74,10 +80,12 @@ realistic forecast based on the actual search state. Routine recurrence within
 this selected scope is already the intended course; it is not an optional
 reserve requiring a fresh permission request at every boundary.
 
-Reaching the floor or central/high forecast is not a reason to end an active
-session. When execution remains available, a checkpoint normally leads straight
-into more useful research or the next cycle. Merely marking the program open
-while routinely handing off at every minimum would violate this plan.
+Reaching the cycle floor or central/high forecast does not complete discovery.
+The original October 11 plan normally continued through such checkpoints. The
+author's explicit **October 12 one-hour cadence** now requires a handoff after
+each requested increment, even while the program remains open. This author
+direction supersedes the older continuous-session instruction; it creates
+neither a new four-hour obligation at each handoff nor automatic extra hours.
 
 At entry, inspect the latest observed clock, session log and candidate record.
 Execution began in [s01](s01/session.md); continue C001 beyond its now-satisfied floor.
@@ -218,12 +226,15 @@ finding is a search update. A completed cycle is an effort/accounting boundary.
 Neither is automatically a positive project milestone.
 
 Current state: **no discovery candidates have been promoted, no readiness
-probability has been assigned; 317.3799541033333333333333333 new discovery research minutes
-are credited, with 0 minutes remaining in C001**.
+probability has been assigned; 377.495235816667 new discovery research minutes
+are credited, with 0 minutes remaining to C001's four-hour floor**. The cycle
+and program remain open; the s05 hourly research clock is closed.
 P3-11 is deferred and unstarted. P3-C/D remain unattempted. P3-N01's previous
 modest support and all P3-10 findings remain at their recorded scopes.
 
-The next work is continuation of C001 from [the saved checkpoint](s03/cp08.md):
-develop paid marginal calibration versus direct policy audits, retaining alternatives.
-At its floor the normal disposition is continued discovery or recurrence,
-unless the evidence supports promotion or the author changes the direction.
+The next work is continuation of C001 from [the saved checkpoint](s05/cp01.md),
+using [CONTINUE](CONTINUE.md): develop a small paid calibration-and-repair
+service that chooses between cost audits and logical proof work. Keep the
+compact/native-proof bridge and strong conventional comparisons explicit,
+while retaining alternative mechanisms. Continue for the next requested hour;
+P3-POS01 remains outstanding after this administrative handoff.

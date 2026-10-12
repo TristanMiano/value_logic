@@ -1,6 +1,6 @@
 # Phase-three research procedure
 
-Established October 6; amended October 11, 2026 UTC.
+Established October 6; amended October 11 and 12, 2026 UTC.
 Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Applies to [TODO_v3.md](../TODO_v3.md), its selected repairs and gate attempts.
 
@@ -11,6 +11,12 @@ Its first research cycle continues beyond its satisfied four-hour floor; see
 the current discovery checkpoint for exact actuals. P3-11 is deferred
 until a promising candidate is ready for rigorous confirmation. Completed
 scientific records retain their historical scopes and time accounting.
+
+**Current execution cadence:** the author's [October 12 direction](decisions/2026-10-12_hourly_handoffs.md)
+requests one-hour engaged-research sessions with durable handoffs between
+ChatGPT and Codex. These explicit session boundaries take precedence over the
+general instruction below to continue through every checkpoint. Cycle totals,
+unfinished commitments and the open discovery objective carry across sessions.
 
 ## 1. Inheritance and authority
 
