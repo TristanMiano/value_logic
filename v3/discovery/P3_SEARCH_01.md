@@ -4,11 +4,11 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
-New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s03/cp07.md),
+New execution contributor: **Codex (GPT-6)**. [Current checkpoint](s03/cp08.md),
 [portfolio](candidates.md), [exact actuals](s03/effective_actuals.json).
 
-Current s03 direction: graph observation policies, capped/failed computations
-and learning decision values from incomplete execution. The heterogeneous proof
+Current s03 direction: compact profiles for graded or marginally calibrated
+forecasts, and paid calibration of their reusable premises. The heterogeneous proof
 service narrowed the joint-controller economic lead; preserve all outcomes. All results remain DEVELOPMENT. The current checkpoint
 is an active accounting boundary; C001 continues beyond its satisfied floor.
 
@@ -59,7 +59,7 @@ storage and failure costs and name the strongest relevant pre-existing controls.
 | Central / high O forecast | 15 / 30 minutes, outside research |
 | Purpose priority | 75% generation/development; 20% cheap screening; 5% substantive synthesis/readiness |
 | Initial R / X lane forecast | 25% reliable / 75% exploratory; both may contain constructive generation |
-| Research already credited | 296.10743256 minutes at active s03 checkpoint; continuation proceeds |
+| Research already credited | 317.3799541033333333333333333 minutes at active s03 checkpoint; continuation proceeds |
 | Normal boundary disposition | Continue the current line or recur within this program |
 | Program duration | Open-ended; tens or hundreds of hours are plausible, with no forecast of guaranteed discovery |
 | Deeper portfolio reviews | At the first useful boundaries after 16, 40 and 100 new program research hours; retain overshoot |
@@ -218,12 +218,12 @@ finding is a search update. A completed cycle is an effort/accounting boundary.
 Neither is automatically a positive project milestone.
 
 Current state: **no discovery candidates have been promoted, no readiness
-probability has been assigned; 296.10743256 new discovery research minutes
+probability has been assigned; 317.3799541033333333333333333 new discovery research minutes
 are credited, with 0 minutes remaining in C001**.
 P3-11 is deferred and unstarted. P3-C/D remain unattempted. P3-N01's previous
 modest support and all P3-10 findings remain at their recorded scopes.
 
-The next work is continuation of C001 from [the saved checkpoint](s03/cp07.md):
-develop censoring-safe learning of cutoff-policy values, retaining alternatives.
+The next work is continuation of C001 from [the saved checkpoint](s03/cp08.md):
+develop paid marginal calibration versus direct policy audits, retaining alternatives.
 At its floor the normal disposition is continued discovery or recurrence,
 unless the evidence supports promotion or the author changes the direction.

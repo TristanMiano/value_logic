@@ -299,3 +299,21 @@ P3-POS01 remains OUTSTANDING, readiness unassessed, P3-11 deferred.
 [Checkpoint 7](s03/cp07.md) continues C001 beyond its floor. Probability bounds
 and costs in the planners remain supplied; actual learning/usefulness remains
 open. P3-POS01 OUTSTANDING, readiness unassessed, P3-11 deferred.
+
+## s03 eighth constructive revision
+
+- **S23:** nested-censoring estimators preserve cap values under revisable
+  forecasts, with exact tail-residual variance. Most arbitrary designs lose to
+  simple endpoint audits; a targeted repair gives modest oracle improvements.
+  [Derivation, losses and repair](s03/censored_values.md). Deprioritize further
+  allocation tuning until a real workload supports it.
+- **S24:** independent biased edge sources admit exact compact tree value
+  profiles and attaining query sets. Nested maximizers connect to established
+  lattice optimization. [Construction and finite checks](s03/biased_tree.md).
+- **S25:** marginal error budgets give compact conservative profiles without
+  edge independence. A common marginal confidence source can cover later
+  fixed-plan and stake choices. [Mechanism and dependent cases](s03/robust_tree.md).
+
+[Checkpoint 8](s03/cp08.md) continues C001. Next compare paid marginal
+calibration with direct fixed-bank policy audits. Full source/learning costs
+and material usefulness remain open; P3-POS01 OUTSTANDING, readiness unassessed.

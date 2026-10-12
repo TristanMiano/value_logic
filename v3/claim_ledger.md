@@ -744,3 +744,15 @@ research minutes, beyond the floor. All findings remain DEVELOPMENT.
 | DS-S21-CAPS | Capped single-anchor outward tree policies admit linear all-root interval planning with width at most n/D. | 32 trees, 3,148 exact rooted choices; 4,096-node planning kernels about 8.5–9.3 ms. Restricted policy class, supplied bounds, no solver execution or external economic benefit. |
 | DS-S22-RETRY | Latent mixture hazards decrease on failures; cap values reconstruct bounded survival information and avoid unstable hazard-based decisions. | 24 mixtures, 384 hazard identities, 408 reconstructions. Ordinary Bayesian stopping; supplied priors. Pooled average success can give a finite price when true completion has infinite expected cost. |
 | P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | [Assessment](discovery/s03/synthesis07.md); S23 develops learning from censored computation. P3-11 deferred. |
+
+## P3-SEARCH-01-C001 — s03 checkpoint 8
+
+Codex (GPT-6). [Active checkpoint](discovery/s03/cp08.md):
+317.3799541033333333333333333 research minutes. DEVELOPMENT, beyond the floor.
+
+| ID | Constructive finding / delta | Evidence, comparison and limits |
+|---|---|---|
+| DS-S23-CENSOR | Forecast-assisted nested cutoff values have exact tail-residual variance; direct contrasts cancel shared prefixes. | 25,873 conditional checks, 3,528 contrasts. Arbitrary nesting loses 65/72 matched-work cases; ordinary two-level allocation repairs 48 but oracle mean gain is only about 0.6% before overhead. Random truncation is established. |
+| DS-S24-PROFILE | Independent biased parity edges admit exact adaptive-optimal fixed acquisition and compact magnitude profiles. | 28 trees, 19,432 subsets, 579 requests, 5,685 Bellman states. Retained 256-node profiles support cheap repeated requests; ordinary DP/comparative statics and supplied prices/laws limit the claim. |
+| DS-S25-MARGINAL | Compact lower-score profiles require marginal error bounds without independence; one fixed marginal event covers later fixed query/stake choices. | 17,792 subsets, 724 requests, 760 dependent-law checks plus an explicit product-model failure. Optimizes a conservative bound, not the full dependent-source minimax problem. Calibration costs remain open. |
+| P3-POS01 | **OUTSTANDING**, readiness **unassessed**. | [Assessment](discovery/s03/synthesis08.md); both implementation/comparison failures retained with versioned repairs. No P3-11 promotion. |
