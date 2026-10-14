@@ -1,0 +1,27 @@
+name: S09 temporary checkout transfer
+on:
+  push:
+    branches: [chatgpt/discovery-20261014-s09]
+    paths: [.github/workflows/s09-transfer.yml]
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Export verified repository objects
+        run: |
+          git bundle create /tmp/value_logic.bundle --all
+          git bundle verify /tmp/value_logic.bundle
+          sha256sum /tmp/value_logic.bundle > /tmp/value_logic.bundle.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s09-checkout
+          path: |
+            /tmp/value_logic.bundle
+            /tmp/value_logic.bundle.sha256
+          retention-days: 1
