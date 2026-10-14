@@ -1,0 +1,102 @@
+{
+  "contract": {
+    "request": "n0-gap1-ordinary_compiled-10",
+    "n": 0,
+    "price": "3",
+    "tolerance": 1,
+    "supports": "mandatory1or2; decision0or4; auxiliary1fixed",
+    "original_source": "842160d0a21aa9f3c06a1c6327c3711570823c0f5f739b66bc2158ab7279915f",
+    "identity": "6558f86ec9b84bde48910632689129e6381989ee7a3243076961223137a58aa3"
+  },
+  "policy": "ordinary_compiled",
+  "initial_bank": {
+    "lower": 2,
+    "upper": 2,
+    "witness": 3,
+    "source": "842160d0a21aa9f3c06a1c6327c3711570823c0f5f739b66bc2158ab7279915f",
+    "raw_receipt": "72e9242190eede10c44d6777636b3cd9f0f9ca71fc0f0740e88ed6b7c9fd0356"
+  },
+  "events": [],
+  "complete_quote": {
+    "maximum_mandatory_audits": 0,
+    "maximum_decision_audits": 1,
+    "maximum_additional_proof_calls": 0,
+    "proof_outcomes": [],
+    "proof_named_cap": 0,
+    "tariff": "n*A + D + optional(P + complete proof named cap); source/local/check/host/storage additional"
+  },
+  "status": "complete",
+  "local_invoice": {
+    "total": 91,
+    "by_category": {
+      "request_admission": 16,
+      "policy_compile": 22,
+      "quote": 12,
+      "policy_select": 9,
+      "output_certificate": 32
+    },
+    "operations": [
+      {
+        "category": "output_certificate",
+        "operation": "source_geometry_logical_receipt_and_uniform_bound",
+        "units": 32
+      },
+      {
+        "category": "policy_compile",
+        "operation": "thresholds_gap_and_complete_cap",
+        "units": 22
+      },
+      {
+        "category": "policy_select",
+        "operation": "two_threshold_tests_gap_and_action",
+        "units": 9
+      },
+      {
+        "category": "quote",
+        "operation": "complete_audit_and_proof_reserve",
+        "units": 12
+      },
+      {
+        "category": "request_admission",
+        "operation": "contract_public_support_price_tolerance",
+        "units": 16
+      }
+    ]
+  },
+  "timing": {
+    "wall_ns": 336000,
+    "process_ns": 0
+  },
+  "answer": {
+    "kind": "replace",
+    "bound": 1,
+    "witness": null,
+    "source": "842160d0a21aa9f3c06a1c6327c3711570823c0f5f739b66bc2158ab7279915f",
+    "cost_source": "6558f86ec9b84bde48910632689129e6381989ee7a3243076961223137a58aa3",
+    "proof": "72e9242190eede10c44d6777636b3cd9f0f9ca71fc0f0740e88ed6b7c9fd0356",
+    "geometry": "57de056357ee9a5ca6a21ea7f76a0e8a5c7da2ada9670ccd7c0a187f32dc6746",
+    "remaining_modes": 2,
+    "lower": 2,
+    "upper": 2,
+    "mandatory_interval": [
+      0,
+      0
+    ]
+  },
+  "known": {},
+  "final_bank": {
+    "lower": 2,
+    "upper": 2,
+    "witness": 3,
+    "source": "842160d0a21aa9f3c06a1c6327c3711570823c0f5f739b66bc2158ab7279915f",
+    "raw_receipt": "72e9242190eede10c44d6777636b3cd9f0f9ca71fc0f0740e88ed6b7c9fd0356"
+  },
+  "invoice": {
+    "named_units": 91,
+    "local_units": 91,
+    "provider_software_units": 0,
+    "mandatory_audits": 0,
+    "decision_audits": 0,
+    "proof_calls": 0
+  }
+}

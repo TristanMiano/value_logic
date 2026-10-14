@@ -1,0 +1,368 @@
+{
+  "status": "complete",
+  "name": "n8r0",
+  "n": 8,
+  "costs": [
+    7,
+    5,
+    5,
+    6,
+    8,
+    6,
+    2,
+    8
+  ],
+  "policies": [
+    "r1",
+    "r3",
+    "r5",
+    "left",
+    "right",
+    "middle"
+  ],
+  "aliases": {
+    "r1": [
+      "r1"
+    ],
+    "r3": [
+      "r3"
+    ],
+    "r5": [
+      "r5",
+      "r7",
+      "r9"
+    ],
+    "left": [
+      "left"
+    ],
+    "right": [
+      "right"
+    ],
+    "middle": [
+      "middle"
+    ]
+  },
+  "totals": {
+    "cases": 3840,
+    "target_fee": 2922,
+    "replay_fee": 10710,
+    "wins": 794,
+    "losses": 18,
+    "ties": 3028,
+    "zero_target": 3424,
+    "zero_replay": 2671
+  },
+  "subgroups": {
+    "model_pair": {
+      "cases": 768,
+      "target_fee": 922,
+      "replay_fee": 914,
+      "wins": 2,
+      "losses": 2,
+      "ties": 764,
+      "zero_target": 634,
+      "zero_replay": 634
+    },
+    "expanded_pair": {
+      "cases": 3072,
+      "target_fee": 2000,
+      "replay_fee": 9796,
+      "wins": 792,
+      "losses": 16,
+      "ties": 2264,
+      "zero_target": 2790,
+      "zero_replay": 2037
+    }
+  },
+  "completion_checks": 10072,
+  "syntax_nodes": 55,
+  "cofactor_cache": 880,
+  "invoice": {
+    "total": 152067,
+    "by_category": {
+      "proposal": 25292,
+      "preparation": 11288,
+      "evaluation": 115487
+    },
+    "operations": [
+      {
+        "category": "evaluation",
+        "operation": "all_direct_circuit_evaluation",
+        "units": 114524
+      },
+      {
+        "category": "evaluation",
+        "operation": "retained_cofactor_circuit_construction",
+        "units": 963
+      },
+      {
+        "category": "preparation",
+        "operation": "local_source_invoice_recurrence_check",
+        "units": 7560
+      },
+      {
+        "category": "preparation",
+        "operation": "original_syntax_compilation",
+        "units": 3728
+      },
+      {
+        "category": "proposal",
+        "operation": "same_markov_menu",
+        "units": 25040
+      },
+      {
+        "category": "proposal",
+        "operation": "simple_interval_root_rule",
+        "units": 252
+      }
+    ]
+  },
+  "physical_audits": 0,
+  "witnesses": [
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "logger": "r1",
+      "alternative": "left",
+      "logger_queries": [
+        6,
+        5,
+        3,
+        1,
+        7
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        0,
+        2,
+        4
+      ],
+      "target_fee": 0,
+      "replay_fee": 20,
+      "contrast": -20,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "logger": "r1",
+      "alternative": "right",
+      "logger_queries": [
+        6,
+        5,
+        3,
+        1,
+        7
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        4,
+        2
+      ],
+      "target_fee": 0,
+      "replay_fee": 13,
+      "contrast": -13,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "logger": "r3",
+      "alternative": "left",
+      "logger_queries": [
+        6,
+        5,
+        3,
+        1,
+        7
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        0,
+        2,
+        4
+      ],
+      "target_fee": 0,
+      "replay_fee": 20,
+      "contrast": -20,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "logger": "r3",
+      "alternative": "right",
+      "logger_queries": [
+        6,
+        5,
+        3,
+        1,
+        7
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        4,
+        2
+      ],
+      "target_fee": 0,
+      "replay_fee": 13,
+      "contrast": -13,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "logger": "r5",
+      "alternative": "left",
+      "logger_queries": [
+        1,
+        6,
+        5,
+        3,
+        7
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        0,
+        2,
+        4
+      ],
+      "target_fee": 0,
+      "replay_fee": 20,
+      "contrast": -20,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "logger": "r5",
+      "alternative": "right",
+      "logger_queries": [
+        1,
+        6,
+        5,
+        3,
+        7
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        4,
+        2
+      ],
+      "target_fee": 0,
+      "replay_fee": 13,
+      "contrast": -13,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "logger": "right",
+      "alternative": "left",
+      "logger_queries": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        0
+      ],
+      "target_fee": 0,
+      "replay_fee": 7,
+      "contrast": -7,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "logger": "middle",
+      "alternative": "left",
+      "logger_queries": [
+        3,
+        1,
+        5,
+        6,
+        7
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        0,
+        2,
+        4
+      ],
+      "target_fee": 0,
+      "replay_fee": 20,
+      "contrast": -20,
+      "subgroup": "expanded_pair"
+    }
+  ]
+}

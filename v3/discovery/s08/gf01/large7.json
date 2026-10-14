@@ -1,0 +1,349 @@
+{
+  "group": {
+    "name": "large7",
+    "interval": [
+      2,
+      4
+    ],
+    "weights": [
+      6,
+      9,
+      8,
+      4,
+      7,
+      5
+    ],
+    "centers": [
+      2,
+      2,
+      2,
+      2,
+      3,
+      3
+    ]
+  },
+  "certificate": {
+    "source": "fee2ceca2b5a42ebad6ca551659b346bdab5eb376258c6b0b3e44a8f0d3b9889",
+    "rows": [
+      [
+        [
+          0,
+          0,
+          []
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            2,
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          14,
+          [
+            2,
+            2,
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          7,
+          7,
+          [
+            2,
+            2,
+            2,
+            2,
+            1
+          ]
+        ],
+        [
+          14,
+          0,
+          [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          24,
+          [
+            2,
+            2,
+            2,
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          5,
+          19,
+          [
+            2,
+            2,
+            2,
+            2,
+            0,
+            1
+          ]
+        ],
+        [
+          7,
+          17,
+          [
+            2,
+            2,
+            2,
+            2,
+            1,
+            0
+          ]
+        ],
+        [
+          10,
+          14,
+          [
+            2,
+            2,
+            2,
+            2,
+            0,
+            2
+          ]
+        ],
+        [
+          12,
+          12,
+          [
+            2,
+            2,
+            2,
+            2,
+            1,
+            1
+          ]
+        ],
+        [
+          14,
+          10,
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          17,
+          7,
+          [
+            2,
+            2,
+            2,
+            2,
+            1,
+            2
+          ]
+        ],
+        [
+          19,
+          5,
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            1
+          ]
+        ],
+        [
+          24,
+          0,
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ]
+      ]
+    ],
+    "frontier": [
+      [
+        12,
+        192,
+        [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      [
+        14,
+        190,
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0
+        ]
+      ],
+      [
+        17,
+        187,
+        [
+          2,
+          2,
+          2,
+          2,
+          1,
+          2
+        ]
+      ],
+      [
+        19,
+        185,
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1
+        ]
+      ],
+      [
+        24,
+        180,
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      ]
+    ]
+  },
+  "checked": {
+    "states": 16,
+    "transitions": 24,
+    "frontier_size": 5
+  },
+  "action_checks": 729,
+  "target_checks": 133,
+  "nominal_actions": 89,
+  "nominal_regret": 12,
+  "robust_regret": 12,
+  "strict": false,
+  "negative_checks": 3,
+  "invoice": {
+    "total": 449,
+    "by_category": {
+      "planning": 449
+    },
+    "operations": [
+      {
+        "category": "planning",
+        "operation": "local_frontier_transition",
+        "units": 315
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_point_comparison",
+        "units": 99
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sort_upper_comparisons",
+        "units": 15
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sorted_scan",
+        "units": 20
+      }
+    ]
+  },
+  "checking_invoice": {
+    "total": 1042,
+    "by_category": {
+      "dp_check": 1042
+    },
+    "operations": [
+      {
+        "category": "dp_check",
+        "operation": "exact_transition_and_argmin",
+        "units": 387
+      },
+      {
+        "category": "dp_check",
+        "operation": "independent_returned_endpoint_bound",
+        "units": 360
+      },
+      {
+        "category": "dp_check",
+        "operation": "pairwise_dominance_comparison",
+        "units": 295
+      }
+    ]
+  }
+}

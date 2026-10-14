@@ -1,0 +1,206 @@
+{
+  "contract": {
+    "request": "n4-gap1-full_identification-182",
+    "n": 4,
+    "price": "11",
+    "tolerance": 1,
+    "supports": "mandatory1or2; decision0or4; auxiliary1fixed",
+    "original_source": "7b5867d399368b4fec2b2b90fcee74e5eae087d1f2e097d73e339f049c5a7264",
+    "identity": "bc4ee1742f2c3deb8fd83d8234ce795697156dc758a66d3ab216f9f026b03d9c"
+  },
+  "policy": "full_identification",
+  "initial_bank": {
+    "lower": 2,
+    "upper": 2,
+    "witness": 3,
+    "source": "7b5867d399368b4fec2b2b90fcee74e5eae087d1f2e097d73e339f049c5a7264",
+    "raw_receipt": "5759618b01e7d7bf12ec70fa7cfd60a7b9d8fbf23940a32ef33e461b1e889596"
+  },
+  "events": [
+    {
+      "kind": "audit",
+      "receipt": {
+        "cost_source": "bc4ee1742f2c3deb8fd83d8234ce795697156dc758a66d3ab216f9f026b03d9c",
+        "coordinate": 0,
+        "value": 2,
+        "sequence": 0,
+        "provider_software_units": 4,
+        "identity": "06fdcd7883f6167dc6728791bf46426150ee6a2162ea0b3b3bc86ee0ad465543"
+      }
+    },
+    {
+      "kind": "audit",
+      "receipt": {
+        "cost_source": "bc4ee1742f2c3deb8fd83d8234ce795697156dc758a66d3ab216f9f026b03d9c",
+        "coordinate": 1,
+        "value": 1,
+        "sequence": 1,
+        "provider_software_units": 4,
+        "identity": "2827464ef570067a10c77be10143090ed1f10f1598195283c0b0c42afaea9636"
+      }
+    },
+    {
+      "kind": "audit",
+      "receipt": {
+        "cost_source": "bc4ee1742f2c3deb8fd83d8234ce795697156dc758a66d3ab216f9f026b03d9c",
+        "coordinate": 2,
+        "value": 2,
+        "sequence": 2,
+        "provider_software_units": 4,
+        "identity": "0a4805af9e479b308881aa8d71d4303cb066ad2de448eb172f92da51124b1ec5"
+      }
+    },
+    {
+      "kind": "audit",
+      "receipt": {
+        "cost_source": "bc4ee1742f2c3deb8fd83d8234ce795697156dc758a66d3ab216f9f026b03d9c",
+        "coordinate": 3,
+        "value": 2,
+        "sequence": 3,
+        "provider_software_units": 4,
+        "identity": "52fc87b588e9ffd95dc61731bf2e567f535eb962c374fa4a512e9f0d4cdd8338"
+      }
+    },
+    {
+      "kind": "audit",
+      "receipt": {
+        "cost_source": "bc4ee1742f2c3deb8fd83d8234ce795697156dc758a66d3ab216f9f026b03d9c",
+        "coordinate": 4,
+        "value": 0,
+        "sequence": 4,
+        "provider_software_units": 4,
+        "identity": "51ba6058aa03d244ad69eba7deb5961d25cf3159dd2555185b27df0f7dd2a300"
+      }
+    }
+  ],
+  "complete_quote": {
+    "maximum_mandatory_audits": 4,
+    "maximum_decision_audits": 1,
+    "maximum_additional_proof_calls": 0,
+    "proof_outcomes": [],
+    "proof_named_cap": 0,
+    "tariff": "n*A + D + optional(P + complete proof named cap); source/local/check/host/storage additional"
+  },
+  "status": "complete",
+  "local_invoice": {
+    "total": 261,
+    "by_category": {
+      "request_admission": 20,
+      "quote": 12,
+      "audit_check": 100,
+      "policy_select": 15,
+      "witness_check": 37,
+      "witness_compile": 33,
+      "storage": 12,
+      "output_certificate": 32
+    },
+    "operations": [
+      {
+        "category": "audit_check",
+        "operation": "source_receipt_support_and_state_update",
+        "units": 100
+      },
+      {
+        "category": "output_certificate",
+        "operation": "source_geometry_logical_receipt_and_uniform_bound",
+        "units": 32
+      },
+      {
+        "category": "policy_select",
+        "operation": "direct_interval_arithmetic_gap_and_action",
+        "units": 15
+      },
+      {
+        "category": "quote",
+        "operation": "complete_audit_and_proof_reserve",
+        "units": 12
+      },
+      {
+        "category": "request_admission",
+        "operation": "contract_public_support_price_tolerance",
+        "units": 20
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 12
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 15
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 22
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 14
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 1
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 9
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 9
+      }
+    ]
+  },
+  "timing": {
+    "wall_ns": 2230600,
+    "process_ns": 0
+  },
+  "answer": {
+    "kind": "repair",
+    "bound": 0,
+    "witness": {
+      "model": 509,
+      "violation_mask": 253,
+      "original_cost": 10
+    },
+    "source": "7b5867d399368b4fec2b2b90fcee74e5eae087d1f2e097d73e339f049c5a7264",
+    "cost_source": "bc4ee1742f2c3deb8fd83d8234ce795697156dc758a66d3ab216f9f026b03d9c",
+    "proof": "5759618b01e7d7bf12ec70fa7cfd60a7b9d8fbf23940a32ef33e461b1e889596",
+    "geometry": "11459f16d9992fe65a4e0bc82e2e84d7d0087c4c7a99c84278ab67727a446c1a",
+    "remaining_modes": 1,
+    "lower": 2,
+    "upper": 2,
+    "mandatory_interval": [
+      7,
+      7
+    ]
+  },
+  "known": {
+    "0": 2,
+    "1": 1,
+    "2": 2,
+    "3": 2,
+    "4": 0
+  },
+  "final_bank": {
+    "lower": 2,
+    "upper": 2,
+    "witness": 3,
+    "source": "7b5867d399368b4fec2b2b90fcee74e5eae087d1f2e097d73e339f049c5a7264",
+    "raw_receipt": "5759618b01e7d7bf12ec70fa7cfd60a7b9d8fbf23940a32ef33e461b1e889596"
+  },
+  "invoice": {
+    "named_units": 281,
+    "local_units": 261,
+    "provider_software_units": 20,
+    "mandatory_audits": 4,
+    "decision_audits": 1,
+    "proof_calls": 0
+  }
+}

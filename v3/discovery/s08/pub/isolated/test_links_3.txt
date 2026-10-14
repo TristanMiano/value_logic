@@ -1,0 +1,26 @@
+test_missing_file_and_anchor_are_reported (verification.test_links.LinkCheckerTests.test_missing_file_and_anchor_are_reported) ... ok
+test_repository_links_are_valid (verification.test_links.LinkCheckerTests.test_repository_links_are_valid) ... FAIL
+test_code_math_and_escaped_brackets_are_not_links (verification.test_links.LinkParserTests.test_code_math_and_escaped_brackets_are_not_links) ... ok
+test_custom_fragment_case_and_empty_links (verification.test_links.LinkParserTests.test_custom_fragment_case_and_empty_links) ... ok
+test_github_heading_spaces_and_custom_anchors (verification.test_links.LinkParserTests.test_github_heading_spaces_and_custom_anchors) ... ok
+test_hidden_headings_and_anchor_markup_do_not_create_targets (verification.test_links.LinkParserTests.test_hidden_headings_and_anchor_markup_do_not_create_targets) ... ok
+
+======================================================================
+FAIL: test_repository_links_are_valid (verification.test_links.LinkCheckerTests.test_repository_links_are_valid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\verification\test_links.py", line 15, in test_repository_links_are_valid
+    self.assertEqual(check_links(root), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [BrokenLink(source=WindowsPath('C:/Users/t[672 chars]st')] != []
+
+First list contains 4 additional elements.
+First extra element 0:
+BrokenLink(source=WindowsPath('C:/Users/trist/projects/value_logic/v3/discovery/s08/aa01/declaration.md'), target='joint_guard.md', line=4, detail='target does not exist')
+
+Diff is 904 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 6 tests in 7.781s
+
+FAILED (failures=1)

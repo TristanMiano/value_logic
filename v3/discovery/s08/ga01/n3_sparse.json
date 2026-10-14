@@ -1,0 +1,157 @@
+{
+  "name": "n3_sparse",
+  "plan": {
+    "source": "49bbaf93c2a6148058b43b2bed6c739398309bbf6a62d73b65b3186d3b0823be",
+    "cover": [],
+    "dual": []
+  },
+  "worlds": [
+    {
+      "bits": [
+        0,
+        0,
+        0
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    }
+  ],
+  "negative_controls": [
+    "dual",
+    "source",
+    "bound"
+  ],
+  "invoice": {
+    "total": 125,
+    "by_category": {
+      "source": 23,
+      "planning": 0,
+      "dual_check": 54,
+      "execution": 0,
+      "bound": 24,
+      "bound_check": 24
+    },
+    "operations": [
+      {
+        "category": "bound",
+        "operation": "mandatory_fee_and_remaining_dual",
+        "units": 24
+      },
+      {
+        "category": "bound_check",
+        "operation": "independent_mandatory_incidence_scan",
+        "units": 0
+      },
+      {
+        "category": "bound_check",
+        "operation": "sum_mandatory_cost_and_residual_dual",
+        "units": 24
+      },
+      {
+        "category": "dual_check",
+        "operation": "all_vertex_capacity_checks",
+        "units": 54
+      },
+      {
+        "category": "dual_check",
+        "operation": "tight_cover_and_complete_edge_coverage",
+        "units": 0
+      },
+      {
+        "category": "execution",
+        "operation": "dispatch_cover_and_forced_queries",
+        "units": 0
+      },
+      {
+        "category": "planning",
+        "operation": "emit_cover_and_dual",
+        "units": 0
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_graph_alphabet_and_fees",
+        "units": 23
+      }
+    ]
+  },
+  "physical_audits": 0
+}

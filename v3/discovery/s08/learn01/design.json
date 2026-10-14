@@ -1,0 +1,741 @@
+{
+  "version": "s08-star-learning-v1",
+  "contributor": "Codex (GPT-6)",
+  "stage": "DEVELOPMENT",
+  "created_utc": "2026-10-14T00:15:02.862045+00:00",
+  "cases": [
+    {
+      "name": "favorable",
+      "costs": [
+        10,
+        1,
+        1,
+        1,
+        1
+      ],
+      "p": [
+        "1/2",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10"
+      ],
+      "seed": 814140
+    },
+    {
+      "name": "unfavorable",
+      "costs": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "p": [
+        "4/5",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "seed": 814141
+    },
+    {
+      "name": "unequal",
+      "costs": [
+        9,
+        1,
+        2,
+        1,
+        3
+      ],
+      "p": [
+        "2/5",
+        "19/20",
+        "4/5",
+        "9/10",
+        "3/5"
+      ],
+      "seed": 814142
+    }
+  ],
+  "arms": [
+    "center",
+    "full",
+    "learner",
+    "ordinary_learner",
+    "oracle"
+  ],
+  "requests_per_case": 2048,
+  "alpha": "1/20",
+  "python": "3.13.14",
+  "source_declarations": [
+    {
+      "n": 5,
+      "variables": 16,
+      "hard": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          -3,
+          -4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          -5,
+          -6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          -7,
+          -8
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          -9,
+          -10
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          -11,
+          -12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          -13,
+          -14
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          -15,
+          -16
+        ]
+      ],
+      "features": [
+        {
+          "clause": [
+            -1
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -2
+          ],
+          "node": 1,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -3
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -4
+          ],
+          "node": 1,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -5
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -6
+          ],
+          "node": 2,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -7
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -8
+          ],
+          "node": 2,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -9
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -10
+          ],
+          "node": 3,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -11
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -12
+          ],
+          "node": 3,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -13
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -14
+          ],
+          "node": 4,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -15
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -16
+          ],
+          "node": 4,
+          "scale": 1
+        }
+      ],
+      "audit_costs": [
+        10,
+        1,
+        1,
+        1,
+        1
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          1
+        ]
+      ],
+      "bit_source": "independent fresh rows; mutually independent ternary vertices",
+      "alphabet": [
+        0,
+        1,
+        2
+      ],
+      "identity": "bc8c5501ab651bc2136f0e302aaeebf353b2ec1a6b587007ec53a372d00dccfc"
+    },
+    {
+      "n": 5,
+      "variables": 16,
+      "hard": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          -3,
+          -4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          -5,
+          -6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          -7,
+          -8
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          -9,
+          -10
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          -11,
+          -12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          -13,
+          -14
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          -15,
+          -16
+        ]
+      ],
+      "features": [
+        {
+          "clause": [
+            -1
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -2
+          ],
+          "node": 1,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -3
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -4
+          ],
+          "node": 1,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -5
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -6
+          ],
+          "node": 2,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -7
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -8
+          ],
+          "node": 2,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -9
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -10
+          ],
+          "node": 3,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -11
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -12
+          ],
+          "node": 3,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -13
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -14
+          ],
+          "node": 4,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -15
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -16
+          ],
+          "node": 4,
+          "scale": 1
+        }
+      ],
+      "audit_costs": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          1
+        ]
+      ],
+      "bit_source": "independent fresh rows; mutually independent ternary vertices",
+      "alphabet": [
+        0,
+        1,
+        2
+      ],
+      "identity": "bef908959d4b95fd06206f35bda9220cf3f388b01406f9c8e068972b42a950ce"
+    },
+    {
+      "n": 5,
+      "variables": 16,
+      "hard": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          -3,
+          -4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          -5,
+          -6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          -7,
+          -8
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          -9,
+          -10
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          -11,
+          -12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          -13,
+          -14
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          -15,
+          -16
+        ]
+      ],
+      "features": [
+        {
+          "clause": [
+            -1
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -2
+          ],
+          "node": 1,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -3
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -4
+          ],
+          "node": 1,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -5
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -6
+          ],
+          "node": 2,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -7
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -8
+          ],
+          "node": 2,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -9
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -10
+          ],
+          "node": 3,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -11
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -12
+          ],
+          "node": 3,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -13
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -14
+          ],
+          "node": 4,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -15
+          ],
+          "node": 0,
+          "scale": 1
+        },
+        {
+          "clause": [
+            -16
+          ],
+          "node": 4,
+          "scale": 1
+        }
+      ],
+      "audit_costs": [
+        9,
+        1,
+        2,
+        1,
+        3
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          1
+        ]
+      ],
+      "bit_source": "independent fresh rows; mutually independent ternary vertices",
+      "alphabet": [
+        0,
+        1,
+        2
+      ],
+      "identity": "9956189a5fbc5811ff282f7ecddff5c99e2f5b2fa5f3df3d5f4e603ec4b27d2a"
+    }
+  ],
+  "source_sha256": "cef092f27eb7fd132100db5bafd682d206be6f65bfd25e699f1c59d3a17b1e90",
+  "declaration_sha256": "c901985bdf8c53bdb01748e060cc0a6b009a5e9d87a9a91a1dfb551b2504a2fb",
+  "dependencies": {
+    "star_check.py": "6829ad095e0ce3a6e9da6f805587f23bc92fd6ca7611f525ed17e5d016ffd549",
+    "action_audits.py": "6893c90015e1d15ad708a8c2b820449a34d336aeb49f9f708ff57ca406312f4e",
+    "g01.py": "022bbfa2e587a4a840ef3784399e14ed2c13183d16fba614e0c3cb969ecf5a87"
+  }
+}

@@ -1,0 +1,68 @@
+setUpClass (v2.checks.f06_derived_cases.F06DerivedCaseTests) ... ERROR
+
+======================================================================
+ERROR: setUpClass (v2.checks.f06_derived_cases.F06DerivedCaseTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_derived_cases.py", line 729, in setUpClass
+    cls.abs=absolute_case_example()
+            ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_derived_cases.py", line 681, in absolute_case_example
+    return ctx,compile_sign_split(ctx,cut,*branches),tuple(branches)
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_derived_cases.py", line 349, in compile_sign_split
+    a = discharge_branch(parent, cut, False, negative, limits)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_derived_cases.py", line 273, in discharge_branch
+    return GuardAllowance(finish(b, j, limits), env.baseline, env.gain, guard, root.new, root.old)
+                          ~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_derived_cases.py", line 61, in finish
+    R.check(b.ctx, p)
+    ~~~~~~~^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 209, in check
+    if b!=expected or not same_difference(step.new,step.old,t,s,ctx.signature):
+                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 72, in same_difference
+    return len(set(units)) == 1 and _form(sub(t, s), sig) == _form(sub(a, b), sig)
+                                    ~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 34, in _form
+    infer(t, sig)  # Check every child, including those multiplied by zero.
+    ~~~~~^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 158, in infer
+    if infer(t.args[1], sig, env) != unit:
+       ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 158, in infer
+    if infer(t.args[1], sig, env) != unit:
+       ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  [Previous line repeated 3 more times]
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 158, in infer
+    if infer(t.args[1], sig, env) != unit:
+       ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 158, in infer
+    if infer(t.args[1], sig, env) != unit:
+       ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 158, in infer
+    if infer(t.args[1], sig, env) != unit:
+       ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 134, in infer
+    rat(t.value)
+    ~~~^^^^^^^^^
+TypeError: 'bool' object does not support the context manager protocol
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.614s
+
+FAILED (errors=1)

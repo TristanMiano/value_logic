@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\matroid_cover.py", line 73, in <module>
+    else:run(root,next(c for c in json.loads((root/'design.json').read_text())['cases'] if c['name']==sys.argv[1]))
+         ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\matroid_cover.py", line 60, in run
+    assert vals[mask|1<<i]+vals[mask|1<<j]>=value+vals[mask|1<<i|1<<j];comparisons+=1
+                     ~^^~
+TypeError: unsupported operand type(s) for <<: 'enumerate' and 'int'

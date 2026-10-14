@@ -1,0 +1,554 @@
+{
+  "version": "s08-g01-v1",
+  "contributor": "Codex (GPT-6)",
+  "stage": "DEVELOPMENT",
+  "created_utc": "2026-10-13T23:44:03.474729+00:00",
+  "python": "3.13.14",
+  "code": {
+    "v3\\discovery\\s08\\g01.py": "022bbfa2e587a4a840ef3784399e14ed2c13183d16fba614e0c3cb969ecf5a87",
+    "v3\\discovery\\s06\\contract_quote.py": "37ba5bcca266df999407e5819648e1d8fce6b79d055442daa3a8d80ca2867482",
+    "v3\\discovery\\s05\\maxsat_repair.py": "9ffa16975dea8d892a9379d3fa119ae63c1eaf70e30f171965457aa469835086",
+    "v3\\discovery\\s05\\maxsat_reprice.py": "cff64423b29dc9cb230c87d9126b17684f60e7bded43052117fc7362955c9f99"
+  },
+  "declaration_sha256": "fe2acc83dc226853f998c329f3935ddc41d4c725217c21d1822fbe5470af91b2",
+  "sources": [
+    {
+      "original": {
+        "row": "g01-n0",
+        "variables": 6,
+        "hard": [
+          [
+            -1,
+            3
+          ],
+          [
+            1,
+            -3
+          ],
+          [
+            -2,
+            -3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "soft": [
+          {
+            "weight": 4,
+            "clause": [
+              -1
+            ]
+          },
+          {
+            "weight": 4,
+            "clause": [
+              -2
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -4
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -5
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -6
+            ]
+          }
+        ],
+        "public_incumbent": 29,
+        "objective_max": 11,
+        "identity": "842160d0a21aa9f3c06a1c6327c3711570823c0f5f739b66bc2158ab7279915f"
+      },
+      "auxiliary": {
+        "row": "g01-aux-triangle",
+        "variables": 3,
+        "hard": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "soft": [
+          {
+            "weight": 1,
+            "clause": [
+              -1
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -2
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -3
+            ]
+          }
+        ],
+        "public_incumbent": 3,
+        "objective_max": 3,
+        "identity": "50a2c51aef1cd7242de0cb863c5a20e758006d04128b0707f4bbcf92116f7d4c"
+      },
+      "auxiliary_variables": [
+        4,
+        5,
+        6
+      ],
+      "mandatory_variables": [],
+      "resolution_proposal": [
+        {
+          "left": 0,
+          "right": 2,
+          "pivot": 3
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "pivot": 3
+        }
+      ]
+    },
+    {
+      "original": {
+        "row": "g01-n2",
+        "variables": 8,
+        "hard": [
+          [
+            -1,
+            3
+          ],
+          [
+            1,
+            -3
+          ],
+          [
+            -2,
+            -3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            -3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            -3,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            6
+          ]
+        ],
+        "soft": [
+          {
+            "weight": 4,
+            "clause": [
+              -1
+            ]
+          },
+          {
+            "weight": 4,
+            "clause": [
+              -2
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -4
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -5
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -6
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -7
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -8
+            ]
+          }
+        ],
+        "public_incumbent": 125,
+        "objective_max": 13,
+        "identity": "f3d374f844cdc1f47bd0a5533d8b44c208b15692425c814807abd9d896eb54d0"
+      },
+      "auxiliary": {
+        "row": "g01-aux-triangle",
+        "variables": 3,
+        "hard": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "soft": [
+          {
+            "weight": 1,
+            "clause": [
+              -1
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -2
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -3
+            ]
+          }
+        ],
+        "public_incumbent": 3,
+        "objective_max": 3,
+        "identity": "50a2c51aef1cd7242de0cb863c5a20e758006d04128b0707f4bbcf92116f7d4c"
+      },
+      "auxiliary_variables": [
+        6,
+        7,
+        8
+      ],
+      "mandatory_variables": [
+        4,
+        5
+      ],
+      "resolution_proposal": [
+        {
+          "left": 0,
+          "right": 2,
+          "pivot": 3
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "pivot": 3
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "pivot": 3
+        },
+        {
+          "left": 6,
+          "right": 7,
+          "pivot": 3
+        }
+      ]
+    },
+    {
+      "original": {
+        "row": "g01-n4",
+        "variables": 10,
+        "hard": [
+          [
+            -1,
+            3
+          ],
+          [
+            1,
+            -3
+          ],
+          [
+            -2,
+            -3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            -3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            -3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            -3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            -3,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            8
+          ]
+        ],
+        "soft": [
+          {
+            "weight": 4,
+            "clause": [
+              -1
+            ]
+          },
+          {
+            "weight": 4,
+            "clause": [
+              -2
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -4
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -5
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -6
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -7
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -8
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -9
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -10
+            ]
+          }
+        ],
+        "public_incumbent": 509,
+        "objective_max": 15,
+        "identity": "7b5867d399368b4fec2b2b90fcee74e5eae087d1f2e097d73e339f049c5a7264"
+      },
+      "auxiliary": {
+        "row": "g01-aux-triangle",
+        "variables": 3,
+        "hard": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "soft": [
+          {
+            "weight": 1,
+            "clause": [
+              -1
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -2
+            ]
+          },
+          {
+            "weight": 1,
+            "clause": [
+              -3
+            ]
+          }
+        ],
+        "public_incumbent": 3,
+        "objective_max": 3,
+        "identity": "50a2c51aef1cd7242de0cb863c5a20e758006d04128b0707f4bbcf92116f7d4c"
+      },
+      "auxiliary_variables": [
+        8,
+        9,
+        10
+      ],
+      "mandatory_variables": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "resolution_proposal": [
+        {
+          "left": 0,
+          "right": 2,
+          "pivot": 3
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "pivot": 3
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "pivot": 3
+        },
+        {
+          "left": 6,
+          "right": 7,
+          "pivot": 3
+        },
+        {
+          "left": 8,
+          "right": 9,
+          "pivot": 3
+        },
+        {
+          "left": 10,
+          "right": 11,
+          "pivot": 3
+        }
+      ]
+    }
+  ],
+  "n_values": [
+    0,
+    2,
+    4
+  ],
+  "tolerances": [
+    0,
+    1
+  ],
+  "price_recipe": [
+    "2+n-1",
+    "2+3*n/2",
+    "2+2*n+1"
+  ],
+  "policies": [
+    "quotient",
+    "ordinary_compiled",
+    "ordinary_interval",
+    "full_identification"
+  ],
+  "logical_banks": [
+    "exact",
+    "gap1"
+  ],
+  "hidden_schedule": "lexicographic exhaustive independent binary supports; new audit source per request",
+  "setup_accounting": "Actual physical geometry/proofs acquired once per n and starting bank; each matched arm is billed the same setup allocation. No duplicate physical acquisition count."
+}

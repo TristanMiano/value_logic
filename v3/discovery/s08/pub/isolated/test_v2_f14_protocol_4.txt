@@ -1,0 +1,35 @@
+test_changed_budget_or_labels_rejected_even_with_valid_hash (verification.test_v2_f14_protocol.FreezeContracts.test_changed_budget_or_labels_rejected_even_with_valid_hash) ... ok
+test_configuration_binding_rejects_alternate_valid_object (verification.test_v2_f14_protocol.FreezeContracts.test_configuration_binding_rejects_alternate_valid_object) ... ok
+test_current_configuration_and_development_discovery (verification.test_v2_f14_protocol.FreezeContracts.test_current_configuration_and_development_discovery) ... ok
+test_dependency_closure_includes_parent_initializers_and_relative_imports (verification.test_v2_f14_protocol.FreezeContracts.test_dependency_closure_includes_parent_initializers_and_relative_imports) ... FAIL
+test_json_rejects_duplicates_nonfinite_and_overflow (verification.test_v2_f14_protocol.FreezeContracts.test_json_rejects_duplicates_nonfinite_and_overflow) ... ok
+test_manifest_cannot_be_overwritten_and_detects_changed_source (verification.test_v2_f14_protocol.FreezeContracts.test_manifest_cannot_be_overwritten_and_detects_changed_source) ... ok
+test_missing_control_or_per_role_budget_cannot_hide_in_aggregate (verification.test_v2_f14_protocol.FreezeContracts.test_missing_control_or_per_role_budget_cannot_hide_in_aggregate) ... ok
+test_saved_network_and_decoder_dimensions_preflighted (verification.test_v2_f14_protocol.FreezeContracts.test_saved_network_and_decoder_dimensions_preflighted) ... ok
+test_all_discovery_files_durable_before_any_evaluation (verification.test_v2_f14_protocol.RunnerContracts.test_all_discovery_files_durable_before_any_evaluation) ... ok
+test_evaluation_retry_reuses_cases_and_never_refits (verification.test_v2_f14_protocol.RunnerContracts.test_evaluation_retry_reuses_cases_and_never_refits) ... ok
+test_late_invalid_model_blocks_all_retention_exposure (verification.test_v2_f14_protocol.RunnerContracts.test_late_invalid_model_blocks_all_retention_exposure) ... ok
+test_preparation_retry_reuses_completed_model_and_is_bounded (verification.test_v2_f14_protocol.RunnerContracts.test_preparation_retry_reuses_completed_model_and_is_bounded) ... ok
+test_retry_requires_reason_and_original_preparation_digest (verification.test_v2_f14_protocol.RunnerContracts.test_retry_requires_reason_and_original_preparation_digest) ... ok
+
+======================================================================
+FAIL: test_dependency_closure_includes_parent_initializers_and_relative_imports (verification.test_v2_f14_protocol.FreezeContracts.test_dependency_closure_includes_parent_initializers_and_relative_imports)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\verification\test_v2_f14_protocol.py", line 95, in test_dependency_closure_includes_parent_initializers_and_relative_imports
+    self.assertEqual(actual, set(files))
+AssertionError: Items in the first set but not the second:
+'pkg\\helper.py'
+'pkg\\__init__.py'
+'pkg\\sub\\__init__.py'
+'pkg\\sub\\main.py'
+Items in the second set but not the first:
+'pkg/helper.py'
+'pkg/sub/main.py'
+'pkg/__init__.py'
+'pkg/sub/__init__.py'
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.773s
+
+FAILED (failures=1)

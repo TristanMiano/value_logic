@@ -1,0 +1,140 @@
+{
+  "version": "s08-improving-maps-v2",
+  "status": "complete",
+  "setups": [
+    {
+      "n": 1,
+      "named_units": 40
+    },
+    {
+      "n": 3,
+      "named_units": 104
+    },
+    {
+      "n": 5,
+      "named_units": 184
+    }
+  ],
+  "arms": [
+    {
+      "n": 1,
+      "policy": "quotient",
+      "totals": {
+        "decision_audits": 4,
+        "outputs": 4,
+        "named_units": 936
+      }
+    },
+    {
+      "n": 1,
+      "policy": "ordinary_star",
+      "totals": {
+        "decision_audits": 4,
+        "outputs": 4,
+        "named_units": 936
+      }
+    },
+    {
+      "n": 1,
+      "policy": "full_identification",
+      "totals": {
+        "theta_audits": 4,
+        "decision_audits": 4,
+        "outputs": 4,
+        "named_units": 952
+      }
+    },
+    {
+      "n": 3,
+      "policy": "quotient",
+      "totals": {
+        "decision_audits": 16,
+        "outputs": 16,
+        "named_units": 10848
+      }
+    },
+    {
+      "n": 3,
+      "policy": "ordinary_star",
+      "totals": {
+        "decision_audits": 16,
+        "outputs": 16,
+        "named_units": 10848
+      }
+    },
+    {
+      "n": 3,
+      "policy": "full_identification",
+      "totals": {
+        "theta_audits": 48,
+        "decision_audits": 16,
+        "outputs": 16,
+        "named_units": 10272
+      }
+    },
+    {
+      "n": 5,
+      "policy": "quotient",
+      "totals": {
+        "decision_audits": 64,
+        "outputs": 64,
+        "named_units": 88192
+      }
+    },
+    {
+      "n": 5,
+      "policy": "ordinary_star",
+      "totals": {
+        "decision_audits": 64,
+        "outputs": 64,
+        "named_units": 88192
+      }
+    },
+    {
+      "n": 5,
+      "policy": "full_identification",
+      "totals": {
+        "theta_audits": 320,
+        "decision_audits": 64,
+        "outputs": 64,
+        "named_units": 79232
+      }
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "infeasible_map",
+      "rejected": true,
+      "reason": "Feasibility of mapped hard clause is unproved"
+    },
+    {
+      "name": "negative_weight_guard",
+      "rejected": true,
+      "reason": "Nonincrease guard cannot admit negative feature weights"
+    }
+  ],
+  "epsilon": {
+    "weights": [
+      -3,
+      5,
+      0
+    ],
+    "original_optimum": -3,
+    "reduced_optimum": 0,
+    "error": 3,
+    "selected_reduced_cost": 0,
+    "actual_regret": 3,
+    "naive_no_error_bound": 0,
+    "corrected_bound": 3,
+    "replacement_price": 10,
+    "actual_replacement_regret": 13,
+    "wrong_nonnegative_clamp_bound": 10,
+    "correct_unclamped_replacement_bound": 13
+  },
+  "completed_utc": "2026-10-13T23:53:16.353439+00:00",
+  "whole_development_timing": {
+    "process_ns": 1062500000,
+    "wall_ns": 1129858500,
+    "scope": "All arms plus enumeration diagnostics, export and negative controls; not a service-speed comparison"
+  }
+}

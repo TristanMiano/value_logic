@@ -1,0 +1,230 @@
+{
+  "name": "n3_path",
+  "plan": {
+    "source": "f9e5e19c7d0f2e491ccc2562bd774028380e5bb855fd3e122bdc252880779df4",
+    "cover": [
+      0,
+      2
+    ],
+    "dual": [
+      1,
+      1
+    ]
+  },
+  "worlds": [
+    {
+      "bits": [
+        0,
+        0,
+        0
+      ],
+      "fee": 2,
+      "optimum": 2,
+      "lower": 2,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1
+      ],
+      "fee": 9,
+      "optimum": 7,
+      "lower": 7,
+      "mandatory": [
+        1
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0
+      ],
+      "fee": 2,
+      "optimum": 2,
+      "lower": 2,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1
+      ],
+      "fee": 9,
+      "optimum": 9,
+      "lower": 9,
+      "mandatory": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0
+      ],
+      "fee": 9,
+      "optimum": 7,
+      "lower": 7,
+      "mandatory": [
+        1
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1
+      ],
+      "fee": 9,
+      "optimum": 7,
+      "lower": 7,
+      "mandatory": [
+        1
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0
+      ],
+      "fee": 9,
+      "optimum": 9,
+      "lower": 9,
+      "mandatory": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1
+      ],
+      "fee": 9,
+      "optimum": 9,
+      "lower": 9,
+      "mandatory": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "negative_controls": [
+    "dual",
+    "source",
+    "bound",
+    "receipt"
+  ],
+  "invoice": {
+    "total": 2103,
+    "by_category": {
+      "source": 87,
+      "planning": 28,
+      "dual_check": 174,
+      "execution": 118,
+      "receipt": 330,
+      "action": 192,
+      "check": 384,
+      "bound": 152,
+      "bound_check": 638
+    },
+    "operations": [
+      {
+        "category": "action",
+        "operation": "two_component_endpoint_choice",
+        "units": 192
+      },
+      {
+        "category": "bound",
+        "operation": "mandatory_fee_and_remaining_dual",
+        "units": 88
+      },
+      {
+        "category": "bound",
+        "operation": "observed_middle_mandatory_neighbors",
+        "units": 64
+      },
+      {
+        "category": "bound_check",
+        "operation": "independent_mandatory_incidence_scan",
+        "units": 192
+      },
+      {
+        "category": "bound_check",
+        "operation": "independent_receipt_binding",
+        "units": 374
+      },
+      {
+        "category": "bound_check",
+        "operation": "sum_mandatory_cost_and_residual_dual",
+        "units": 72
+      },
+      {
+        "category": "check",
+        "operation": "compatible_local_cost_comparison",
+        "units": 192
+      },
+      {
+        "category": "check",
+        "operation": "original_clause",
+        "units": 192
+      },
+      {
+        "category": "dual_check",
+        "operation": "all_vertex_capacity_checks",
+        "units": 54
+      },
+      {
+        "category": "dual_check",
+        "operation": "nonnegative_edge_and_endpoint_loads",
+        "units": 108
+      },
+      {
+        "category": "dual_check",
+        "operation": "tight_cover_and_complete_edge_coverage",
+        "units": 12
+      },
+      {
+        "category": "execution",
+        "operation": "dispatch_cover_and_forced_queries",
+        "units": 22
+      },
+      {
+        "category": "execution",
+        "operation": "identify_unqueried_mandatory_neighbor",
+        "units": 96
+      },
+      {
+        "category": "planning",
+        "operation": "emit_cover_and_dual",
+        "units": 4
+      },
+      {
+        "category": "planning",
+        "operation": "uncovered_edge_dual_raise_and_tight_vertices",
+        "units": 24
+      },
+      {
+        "category": "receipt",
+        "operation": "bind_source_request_value_and_fee",
+        "units": 330
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_graph_alphabet_and_fees",
+        "units": 87
+      }
+    ]
+  },
+  "physical_audits": 0
+}

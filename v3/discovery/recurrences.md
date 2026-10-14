@@ -1,10 +1,10 @@
 # C001 recurrence progress
 
-Requested by **Tristan Miano**. Maintained by **ChatGPT (GPT-6 Astra Pro)**.
-This is the single chronological recurrence table: **18 recorded rows, ending
-with s07**. Append each future recurrence to this same table.
+Requested by **Tristan Miano**. Current maintenance: **Codex (GPT-6)**; earlier attributions preserved.
+This is the single chronological recurrence table: **19 recorded rows, ending
+with s08**. Append each future recurrence to this same table.
 
-**C001 OPEN · 497 cumulative research minutes · latest promotion forecast:
+**C001 OPEN · 738 cumulative research minutes · latest promotion forecast:
 20–45%, central 30%.** Minutes are rounded independently from exact nanoseconds;
 the [source record](recurrences.json) retains the exact clocks, measurements,
 scopes and forecast history. This layout repair adds no research time.
@@ -37,6 +37,7 @@ separate columns because their measurements are not interchangeable.
 | [s05 hourly round](s05/cp01.md) | 60 | 377 | 28 (+3) | — | — | — | 80/80 (100.00%); first | 61/80 (76.25%); first | 223; first | — | — | — | — | — | Not assessed then | Introduced paid graph and threshold calibration, then built an actual repair stream with reusable checked proofs. The v2 replay made zero new calls and established no robust total-cost advantage. |
 | [s06 hourly round](s06/cp01.md) | 60 | 438 | 28 (0) | — | — | — | 80/80 (100.00%); Δ0 (0 pp) | 60/80 (75.00%); Δ-1 (-1.25 pp) | 223; Δ0 | — | — | — | — | — | Not assessed then | Integrated persistent native IHS and checked proof bridges with cost-observation services. Derived scalar-anchor reuse and complete audit/proof quotations; the 21-bank result is replay, not new acquisition savings. |
 | **[s07 hourly round](s07/cp01.md)** | **60** | **497** | **30 (+2)** | 144/272 (52.94%); carried, age 12 | 254/272 (93.38%); carried, age 12 | 258/272 (94.85%); carried, age 12 | 80/80 (100%); carried, age 1 | 60/80 (75%); carried, age 1 | 223; carried, age 1 | **16/16**; first | **11/11**; first | **1,718,749**; first | **4.7544×**; first | **0**; first | **F01: 20–45%, central 30%**; first assessed recurrence; −5 pp within s07 | Complete plans rose from 0/11 to 11/11 and a02-to-a03 quotation work fell 38.57%; the latest arm bought 14 audits and 14 complete calls, with no native-IHS calls. Its named bill remains above audit-first; S29/S30 add separate constructive directions. |
+| [s08 cp01](s08/cp01.md) | 240 | 738 | 33 (+3) | 144/272; carried, age13 | 254/272; carried, age13 | 258/272; carried, age13 | 80/80; carried, age2 | 60/80; carried, age2 | 223; carried, age2 | 16/16; carried, age1 | 11/11; carried, age1 | 1,718,749; carried, age1 | 4.7544Ã—; carried, age1 | 0; carried, age1 | **20â€“45%, central30%; Î”0 pp** | Four-hour override. New bc02 scope: budget/ordinary tie at2,886 fee/137,310 named units for512 outputs each; cover2,937/157,452, anchor4,608/152,022. gc02 graph fees save6.00% versus anchor with much higher computation. Matroid/group-query and six actual scalar proofs extend capability. No F01 rerun or promotion. |
 
 ## Latest row: scope and evidence
 
@@ -132,3 +133,26 @@ and [exclusions](s07/dispositions.json) retain the clock accounting. All earlier
 reconstruction details and scoped numerical findings remain in
 [recurrences.json](recurrences.json) and the linked historical checkpoints.
 C001 remains OPEN; P3-POS01 is OUTSTANDING and P3-11 deferred.
+
+## s08 closing update
+
+The final row is the October13â€“14 **Codex (GPT-6)** four-hour override, one
+recurrence. Exact research is **14,402,318,580,700 ns =240.038643011666666â€¦ minutes**;
+C001/program **44,251,453,147,247 ns =737.524219120783333â€¦ minutes**;
+phase **109,419,335,189,096 ns =1823.655586484933333â€¦ minutes**.
+[Effective actuals](s08/effective_actuals.json) and [checkpoint](s08/cp01.md).
+
+The old272-edit measurement remains October11,23:12:23.271094 UTC, age13;
+the80-request duty remains October12,17:03:32.626949 UTC, age2. S28 a03 remains
+October12,20:22:24.594133 UTC, age1 (ordinary comparison20:08:46.807687).
+They were not rerun. New bc02/gc02 observations are October14,2026, age0, in
+separate duties with their declarations, complete-arm denominators, raw source
+hashes and failed-prefix accounting in [progress](s08/progress_results.json),
+[graph summary](s08/gc02/summary.json) and the JSON comparison scopes.
+
+Within bc02, budget minus greedy-cover is **âˆ’51 physical fee, âˆ’20,142 named
+units**; against ordinary-budget both deltas are zero. These are within-run
+comparisons, not improvement on the old F01 duty. Complete economic costs are
+unknown. [F01 reassessment](s08/forecast_final.md) stays20â€“45%, central30%,
+change0 points; central gaps50/60 points to80%/90%. New branch events remain
+unspecified and unassessed. C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred.

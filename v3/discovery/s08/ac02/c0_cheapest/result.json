@@ -1,0 +1,78 @@
+{
+  "outputs": 128,
+  "base_audit_fee": 684,
+  "physical_audits": 250,
+  "named_units": 155872,
+  "setup_units": 152,
+  "invoice": {
+    "total": 155872,
+    "by_category": {
+      "source": 113,
+      "geometry": 28,
+      "shared_geometry": 11,
+      "bounds": 56600,
+      "planning": 81198,
+      "selection": 3000,
+      "provider": 3250,
+      "receipt_check": 5000,
+      "action_check": 3600,
+      "export": 3072
+    },
+    "operations": [
+      {
+        "category": "action_check",
+        "operation": "original_clause",
+        "units": 3600
+      },
+      {
+        "category": "bounds",
+        "operation": "source_endpoint_regret_upper_and_optimum_lower",
+        "units": 56600
+      },
+      {
+        "category": "export",
+        "operation": "completed_original_action_and_invoice",
+        "units": 3072
+      },
+      {
+        "category": "geometry",
+        "operation": "exact_original_resolution_check",
+        "units": 28
+      },
+      {
+        "category": "planning",
+        "operation": "partial_star_dp_transition",
+        "units": 81198
+      },
+      {
+        "category": "provider",
+        "operation": "physical_cost_receipt_export",
+        "units": 3250
+      },
+      {
+        "category": "receipt_check",
+        "operation": "bound_source_request_fee_sequence",
+        "units": 5000
+      },
+      {
+        "category": "selection",
+        "operation": "cheapest_unseen_coordinate",
+        "units": 3000
+      },
+      {
+        "category": "shared_geometry",
+        "operation": "actual_original_resolution_reuse",
+        "units": 11
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_support_and_fee_admission",
+        "units": 113
+      }
+    ]
+  },
+  "observed_max_fee": 18,
+  "declared_query_cap": 4,
+  "cpu_ns": 15625000,
+  "wall_ns": 14989400
+}

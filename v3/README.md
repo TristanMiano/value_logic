@@ -1,45 +1,34 @@
 # Phase Three: Reasoning About Unresolved Mathematics
 
-Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 12, 2026 UTC.
+Current update: **Codex (GPT-6), October 14, 2026 UTC**. Earlier contributor
+attributions and scientific records retain their original scope.
 
-**P3-01–10 are complete at their declared scopes; P3-A/B retain their restricted passes.**
-P3-10 closes with an explicit preserved amendment and **90.283569405783
-qualifying research minutes**. Phase research is **1583.616943473267 minutes**.
-**P3-SEARCH-01-C001 is in progress; its four-hour floor is satisfied and work continues. P3-11 is deferred pending a promising candidate.** The author has
-adopted a [discovery-first amendment](decisions/2026-10-11_discovery_first_amendment.md)
-with recurring long research cycles and open-ended search. The original
-**16 measured hours of research** remain a satisfied minimum; the new cycle
-has **497.485576109117 research minutes** credited and its floor is satisfied.
-The latest **ChatGPT (GPT-6 Astra Pro)** increment adds **59.9187937882**
-research minutes, preserving earlier **Codex (GPT-6)** work. The author now
-directs [one-hour handoffs](decisions/2026-10-12_hourly_handoffs.md), carrying
-C001 forward between ChatGPT and Codex. See the [checkpoint](discovery/s07/cp01.md),
-[portfolio](discovery/candidates.md), [effective actuals](discovery/s07/effective_actuals.json)
-and [current continuation prompt](discovery/CONTINUE.md).
-The raw timing records are preserved with four conservative exclusions; all
-research clocks for this increment are closed. Exact C001/program research is
-**29,849,134,566,547 ns**, and phase research is **95,017,016,608,396 ns**.
+**P3-01–10 are complete at their declared scopes. P3-SEARCH-01-C001 remains
+OPEN; P3-POS01 OUTSTANDING; P3-11 deferred.** C001's original four-hour floor
+is satisfied. The latest explicitly requested four-hour increment adds
+**240.038643011666666… research minutes**. Cumulative C001/program research is
+**737.524219120783333… minutes**; phase research is **1823.655586484933333…**.
+All research clocks are closed. Default sessions are 60 minutes, subject to
+[explicit author overrides](decisions/2026-10-13_four_hour_session.md).
 
-The [s07 findings](discovery/s07/findings.md) add executed complete acquisition
-plans on all 11 initially open requests. Compiled quotation work falls 38.57%,
-but the latest named arm bill remains 4.7544 times ordinary audit-first and no
-qualifying complete-cost benefit region is established. Source geometry and
-decision quotients (S29), and a common-CDF bridge for one fixed population action
-(S30), provide separate constructive directions with strong ordinary controls.
-**S26–S30 remain DEVELOPMENT; 30 recorded families measure breadth, not readiness.**
-The final [F01/S28-B1/V1 promotion forecast](discovery/s07/forecast_final.md) is
-**20–45%, central 30%**, five percentage points below its initial assessment
-and below the intended 80% minimum. P3-POS01 remains OUTSTANDING.
+Read [s08 checkpoint](discovery/s08/cp01.md), [findings](discovery/s08/findings.md),
+[effective actuals](discovery/s08/effective_actuals.json),
+[portfolio](discovery/candidates.md), [single recurrence table](discovery/recurrences.md),
+and [portable continuation](discovery/CONTINUE.md).
 
-Next test whether paid source geometry removes actual cost observations or
-enough nonquotation work to recover its admission and compilation costs, using
-the same capabilities in an ordinary control. The
-[inexact logical anchor](discovery/s07/inexact_anchor.md) is a derivation with
-explicit unresolved-proof branches, not a newly acquired result. The
-[reproduction guide](discovery/s07/reproduce.md) separates actual purchases,
-replays and conditional arithmetic comparisons.
-[TODO_v3.md](../TODO_v3.md) contains the tasks, gates and acceptance criteria;
-[RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) controls execution and accounting.
+The latest paid budgeted-query construction improves both recorded fee and
+named computation against anchor/greedy cover on four star streams; ordinary
+budgeted selection ties it. Broader graph results expose a computation cost
+obstacle. Matroid/group-query cover and scalar box-regret proof bridges extend
+capability, with explicit Cartesian versus shared-cost limits. None establishes
+the complete-cost confirmation event. **F01 remains 20–45%, central 30%, change
+0 points since s07.** The 33 candidate families measure breadth, not readiness.
+
+Next construct a small paid matroid/group-query service with a cheap anchor
+and priced lookahead; test source generality and setup repayment. Preserve
+all failed attempts and use [reproduction](discovery/s08/reproduce.md) to separate
+old evidence reconstruction from new acquisition. [TODO_v3.md](../TODO_v3.md)
+and [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) govern the open program.
 
 ## Research direction
 

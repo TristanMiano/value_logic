@@ -1,0 +1,76 @@
+{
+  "parent_policy_sha256": "e4910ee8f28a122835aac4e0b4e7af8bf71b406ac7b7706ae7be938129bc7caa",
+  "parent_build_sha256": "1381040aacd8adf11d3a9314920e22576f6fd14777f6fc32003695eb6e48dc6d",
+  "original_build_units": 52645,
+  "extraction_invoice": {
+    "total": 2370,
+    "by_category": {
+      "policy_extraction": 2370
+    },
+    "operations": [
+      {
+        "category": "policy_extraction",
+        "operation": "read_actual_unpruned_policy_words",
+        "units": 2328
+      },
+      {
+        "category": "policy_extraction",
+        "operation": "retain_reachable_selected_node",
+        "units": 42
+      }
+    ]
+  },
+  "safety_invoice": {
+    "total": 425,
+    "by_category": {
+      "source": 113,
+      "geometry": 28,
+      "policy_check": 84,
+      "bounds": 200
+    },
+    "operations": [
+      {
+        "category": "bounds",
+        "operation": "source_endpoint_regret_upper_and_optimum_lower",
+        "units": 200
+      },
+      {
+        "category": "geometry",
+        "operation": "exact_original_resolution_check",
+        "units": 28
+      },
+      {
+        "category": "policy_check",
+        "operation": "every_actual_response_branch",
+        "units": 18
+      },
+      {
+        "category": "policy_check",
+        "operation": "source_state_node_lookup",
+        "units": 36
+      },
+      {
+        "category": "policy_check",
+        "operation": "terminal_original_clause",
+        "units": 30
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_support_and_fee_admission",
+        "units": 113
+      }
+    ]
+  },
+  "checked": {
+    "status": "complete",
+    "reachable_states": 3,
+    "worst_fee": 9,
+    "contract": "safe complete action and upper fee only; no optimality premise"
+  },
+  "negative_controls": [
+    "source",
+    "fee",
+    "terminal",
+    "branch"
+  ]
+}

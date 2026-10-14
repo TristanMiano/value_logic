@@ -1,0 +1,140 @@
+{
+  "contract": {
+    "request": "n2-exact-full_identification-2",
+    "n": 2,
+    "price": "3",
+    "tolerance": 0,
+    "supports": "mandatory1or2; decision0or4; auxiliary1fixed",
+    "original_source": "f3d374f844cdc1f47bd0a5533d8b44c208b15692425c814807abd9d896eb54d0",
+    "identity": "349e141706645377e9fc16e40c4385a8bde171e2191ed113079434f603cbe0da"
+  },
+  "policy": "full_identification",
+  "initial_bank": {
+    "lower": 2,
+    "upper": 2,
+    "witness": 3,
+    "source": "f3d374f844cdc1f47bd0a5533d8b44c208b15692425c814807abd9d896eb54d0",
+    "raw_receipt": "3cb0d31e7f134e2e552f6edf96b48df3207175bf394f035ebf97a4cbc233d051"
+  },
+  "events": [
+    {
+      "kind": "audit",
+      "receipt": {
+        "cost_source": "349e141706645377e9fc16e40c4385a8bde171e2191ed113079434f603cbe0da",
+        "coordinate": 0,
+        "value": 1,
+        "sequence": 0,
+        "provider_software_units": 4,
+        "identity": "da969bf7629dcb419aab908209f4683800c178c0f620910faff60b7fe560d68e"
+      }
+    },
+    {
+      "kind": "audit",
+      "receipt": {
+        "cost_source": "349e141706645377e9fc16e40c4385a8bde171e2191ed113079434f603cbe0da",
+        "coordinate": 1,
+        "value": 2,
+        "sequence": 1,
+        "provider_software_units": 4,
+        "identity": "88e738df24718a4de4930324ff9753082ca66976fba772f0dd969873a87291eb"
+      }
+    },
+    {
+      "kind": "audit",
+      "receipt": {
+        "cost_source": "349e141706645377e9fc16e40c4385a8bde171e2191ed113079434f603cbe0da",
+        "coordinate": 2,
+        "value": 0,
+        "sequence": 2,
+        "provider_software_units": 4,
+        "identity": "fa712c9daa7bfdd14db6942a3f9b7e0f852fe8e41bd879ffdc19d6db385f93b7"
+      }
+    }
+  ],
+  "complete_quote": {
+    "maximum_mandatory_audits": 2,
+    "maximum_decision_audits": 1,
+    "maximum_additional_proof_calls": 0,
+    "proof_outcomes": [],
+    "proof_named_cap": 0,
+    "tariff": "n*A + D + optional(P + complete proof named cap); source/local/check/host/storage additional"
+  },
+  "status": "complete",
+  "local_invoice": {
+    "total": 137,
+    "by_category": {
+      "request_admission": 18,
+      "quote": 12,
+      "audit_check": 60,
+      "policy_select": 15,
+      "output_certificate": 32
+    },
+    "operations": [
+      {
+        "category": "audit_check",
+        "operation": "source_receipt_support_and_state_update",
+        "units": 60
+      },
+      {
+        "category": "output_certificate",
+        "operation": "source_geometry_logical_receipt_and_uniform_bound",
+        "units": 32
+      },
+      {
+        "category": "policy_select",
+        "operation": "direct_interval_arithmetic_gap_and_action",
+        "units": 15
+      },
+      {
+        "category": "quote",
+        "operation": "complete_audit_and_proof_reserve",
+        "units": 12
+      },
+      {
+        "category": "request_admission",
+        "operation": "contract_public_support_price_tolerance",
+        "units": 18
+      }
+    ]
+  },
+  "timing": {
+    "wall_ns": 1467100,
+    "process_ns": 15625000
+  },
+  "answer": {
+    "kind": "replace",
+    "bound": 0,
+    "witness": null,
+    "source": "f3d374f844cdc1f47bd0a5533d8b44c208b15692425c814807abd9d896eb54d0",
+    "cost_source": "349e141706645377e9fc16e40c4385a8bde171e2191ed113079434f603cbe0da",
+    "proof": "3cb0d31e7f134e2e552f6edf96b48df3207175bf394f035ebf97a4cbc233d051",
+    "geometry": "cb85a4549a203c4b0f38680fc6089c7d82802b0209cb7c3c38f614eb153a42d9",
+    "remaining_modes": 1,
+    "lower": 2,
+    "upper": 2,
+    "mandatory_interval": [
+      3,
+      3
+    ]
+  },
+  "known": {
+    "0": 1,
+    "1": 2,
+    "2": 0
+  },
+  "final_bank": {
+    "lower": 2,
+    "upper": 2,
+    "witness": 3,
+    "source": "f3d374f844cdc1f47bd0a5533d8b44c208b15692425c814807abd9d896eb54d0",
+    "raw_receipt": "3cb0d31e7f134e2e552f6edf96b48df3207175bf394f035ebf97a4cbc233d051"
+  },
+  "invoice": {
+    "named_units": 149,
+    "local_units": 137,
+    "provider_software_units": 12,
+    "mandatory_audits": 2,
+    "decision_audits": 1,
+    "proof_calls": 0
+  }
+}

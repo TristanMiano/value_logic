@@ -1,0 +1,207 @@
+{
+  "stage": "DEVELOPMENT post-screen analysis",
+  "name": "n10r0",
+  "invoice_equivalence_groups": [
+    [
+      "r1",
+      "r3"
+    ],
+    [
+      "r5"
+    ],
+    [
+      "r7"
+    ],
+    [
+      "left"
+    ],
+    [
+      "right"
+    ],
+    [
+      "middle"
+    ]
+  ],
+  "dominance_witnesses": {
+    "left": "r5"
+  },
+  "retained_representatives": [
+    "middle",
+    "r1",
+    "r5",
+    "r7",
+    "right"
+  ],
+  "conditional_comparison": {
+    "cases": 2560,
+    "target_fee": 5009,
+    "replay_fee": 10348,
+    "wins": 488,
+    "losses": 39,
+    "ties": 2033
+  },
+  "witnesses": [
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "logger": "r1",
+      "alternative": "right",
+      "logger_queries": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0,
+        6,
+        7,
+        9
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        8
+      ],
+      "target_fee": 0,
+      "replay_fee": 9,
+      "contrast": -9,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "logger": "r1",
+      "alternative": "right",
+      "logger_queries": [
+        5,
+        3,
+        1,
+        0,
+        2,
+        7,
+        6,
+        8
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        9,
+        4
+      ],
+      "target_fee": 0,
+      "replay_fee": 17,
+      "contrast": -17,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "logger": "r5",
+      "alternative": "right",
+      "logger_queries": [
+        5,
+        3,
+        1,
+        0,
+        2,
+        8,
+        6,
+        7
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        9,
+        4
+      ],
+      "target_fee": 0,
+      "replay_fee": 17,
+      "contrast": -17,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "logger": "r7",
+      "alternative": "right",
+      "logger_queries": [
+        8,
+        6,
+        5,
+        3,
+        0,
+        2,
+        7
+      ],
+      "target_queries": [
+        1
+      ],
+      "replay_queries": [
+        9,
+        4,
+        1
+      ],
+      "target_fee": 8,
+      "replay_fee": 25,
+      "contrast": -25,
+      "subgroup": "expanded_pair"
+    }
+  ],
+  "invoice": {
+    "total": 1110496,
+    "by_category": {
+      "ordinary_pruning": 1110496
+    },
+    "operations": [
+      {
+        "category": "ordinary_pruning",
+        "operation": "complete_policy_world_execution",
+        "units": 1082848
+      },
+      {
+        "category": "ordinary_pruning",
+        "operation": "pointwise_invoice_comparison",
+        "units": 27648
+      }
+    ]
+  },
+  "physical_audits": 0,
+  "warning": "All-world pruning is an executed exponential ordinary screen; its bill is not free and no full-cost advantage is claimed"
+}

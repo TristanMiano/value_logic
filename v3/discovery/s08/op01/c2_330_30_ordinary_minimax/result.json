@@ -1,0 +1,79 @@
+{
+  "outputs": 64,
+  "base_audit_fee": 0,
+  "physical_audits": 0,
+  "named_units": 17956,
+  "setup_units": 3428,
+  "invoice": {
+    "total": 17956,
+    "by_category": {
+      "source": 149,
+      "geometry": 28,
+      "shared_acquisition": 11,
+      "shared_planning": 1122,
+      "shared_checking": 2097,
+      "policy_load": 21,
+      "selection": 640,
+      "action_check": 2688,
+      "bounds": 9600,
+      "export": 1600
+    },
+    "operations": [
+      {
+        "category": "action_check",
+        "operation": "original_clause",
+        "units": 2688
+      },
+      {
+        "category": "bounds",
+        "operation": "source_endpoint_regret_upper_and_optimum_lower",
+        "units": 9600
+      },
+      {
+        "category": "export",
+        "operation": "source_action_receipts_and_bill",
+        "units": 1600
+      },
+      {
+        "category": "geometry",
+        "operation": "exact_original_resolution_check",
+        "units": 28
+      },
+      {
+        "category": "policy_load",
+        "operation": "source_bound_policy_words",
+        "units": 21
+      },
+      {
+        "category": "selection",
+        "operation": "policy_state_lookup",
+        "units": 640
+      },
+      {
+        "category": "shared_acquisition",
+        "operation": "allocated_original_resolution",
+        "units": 11
+      },
+      {
+        "category": "shared_checking",
+        "operation": "allocated_actual_policy_reconstruction",
+        "units": 2097
+      },
+      {
+        "category": "shared_planning",
+        "operation": "allocated_actual_policy_build",
+        "units": 1122
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_support_and_fee_admission",
+        "units": 149
+      }
+    ]
+  },
+  "observed_max_fee": 0,
+  "policy_worst_fee": 0,
+  "complete_query_cap": 5,
+  "cpu_ns": 0,
+  "wall_ns": 6496100
+}

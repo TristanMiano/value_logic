@@ -1,0 +1,273 @@
+{
+  "stage": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "prepared_date_utc": "2026-10-14",
+  "research_credit_ns": 0,
+  "scope_id": "s32_bc02_star4_h128_v1",
+  "measurement_date_utc": "2026-10-14",
+  "denominator_per_arm": 512,
+  "duty": "Same original-source tolerance/replacement duties on four fresh 128-row star streams",
+  "seeds": [
+    8141740,
+    8141741,
+    8141742,
+    8141743
+  ],
+  "menu": [
+    "budget",
+    "ordinary_budget",
+    "cover",
+    "anchor"
+  ],
+  "source": {
+    "stage": "DEVELOPMENT",
+    "contributor": "Codex (GPT-6)",
+    "cases": [
+      {
+        "name": "c0",
+        "weights": [
+          1,
+          1
+        ],
+        "H": 5,
+        "A": 100,
+        "alphabet": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "fees": [
+          1,
+          5,
+          3,
+          9
+        ],
+        "seed": 8141740,
+        "duties": [
+          [
+            100,
+            10
+          ]
+        ]
+      },
+      {
+        "name": "c1",
+        "weights": [
+          5,
+          2
+        ],
+        "H": 5,
+        "A": 350,
+        "alphabet": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "fees": [
+          4,
+          1,
+          6,
+          9
+        ],
+        "seed": 8141741,
+        "duties": [
+          [
+            350,
+            35
+          ]
+        ]
+      },
+      {
+        "name": "c2",
+        "weights": [
+          1,
+          2,
+          3
+        ],
+        "H": 5,
+        "A": 300,
+        "alphabet": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "fees": [
+          2,
+          4,
+          6,
+          2,
+          9
+        ],
+        "seed": 8141742,
+        "duties": [
+          [
+            300,
+            30
+          ]
+        ]
+      },
+      {
+        "name": "c3",
+        "weights": [
+          2,
+          3,
+          5,
+          1
+        ],
+        "H": 5,
+        "A": 550,
+        "alphabet": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "fees": [
+          2,
+          6,
+          7,
+          1,
+          4,
+          9
+        ],
+        "seed": 8141743,
+        "duties": [
+          [
+            550,
+            55
+          ]
+        ]
+      }
+    ],
+    "arms": [
+      "budget",
+      "ordinary_budget",
+      "cover",
+      "anchor"
+    ],
+    "source_sha256": "4e3389e66297d7895a40f60ce0bab721c5d41feffe968da427ec147bc813ec78",
+    "dependencies": {
+      "budget_cover.py": "4ca459342cdbbeefada7b5dd56ed94469843cf704ea467e85be6ed82283ec08d",
+      "anchor_service.py": "9c580f2206a31826a23e3f0996ee8c8a6f2352e1ce0157124a04c705ea6009a3",
+      "anchor_cover.py": "5bad4218e53f9afb45ff501a984cc3d33be5ac5747c2ea36a7f59c8e0abded61",
+      "observation_policy.py": "9e7ea5dcbb6c2622944d7a0698089d75a681855a96be570269a7c09a784bf274",
+      "policy_safety.py": "cfa20f22c424a57fd855d17958bfd31d313a8ef88f615d2f7083e9c8f9c72a84",
+      "partial_star.py": "4f0aa9faad48751c80670569937161a72d8657d79071f3052fb0d11d05a7ab8b",
+      "frontier_service.py": "35fce4ad46ba7555868dfd2abd7a1ca5f6e66c7e13da1099c3bf31930c2f584f",
+      "replacement_frontier.py": "e43ab55f2923c7492a52badcbf6c4fcfc2af9796b1cb385168879f64749c5eec",
+      "action_audits.py": "6893c90015e1d15ad708a8c2b820449a34d336aeb49f9f708ff57ca406312f4e",
+      "g01.py": "022bbfa2e587a4a840ef3784399e14ed2c13183d16fba614e0c3cb969ecf5a87",
+      "joint_guard.py": "ecfecc272122220a40b43af377d14e9a4a42da5caeb1a897a995181f9e81bdf7"
+    },
+    "physical_requests_per_duty_arm": 64,
+    "logical_acquisition": "one original mandatory-feature resolution per case, shared with all arms",
+    "complete_sat_calls": 0,
+    "physical_requests_per_case_arm": 128,
+    "new_resolution_steps": 0,
+    "reused_resolution_steps": 4
+  },
+  "cost_convention": "Physical base audit fees and instrumented named work reported separately; setup included; no complete economic conversion, unmeasured host/native/retention costs not zero.",
+  "logical_acquisition": "Four historical resolution steps reused, zero new complete SAT calls",
+  "totals": {
+    "budget": {
+      "outputs": 512,
+      "base_audit_fee": 2886,
+      "physical_audits": 897,
+      "named_units": 137310,
+      "setup_units": 27809
+    },
+    "ordinary_budget": {
+      "outputs": 512,
+      "base_audit_fee": 2886,
+      "physical_audits": 897,
+      "named_units": 137310,
+      "setup_units": 27809
+    },
+    "cover": {
+      "outputs": 512,
+      "base_audit_fee": 2937,
+      "physical_audits": 1029,
+      "named_units": 157452,
+      "setup_units": 41398
+    },
+    "anchor": {
+      "outputs": 512,
+      "base_audit_fee": 4608,
+      "physical_audits": 512,
+      "named_units": 152022,
+      "setup_units": 716
+    }
+  },
+  "sources": [
+    {
+      "path": "s08/bc02/c0_budget/result.json",
+      "sha256": "015329b13e3e5ac773c70c848144cfa0b4dc17c48086524e1c8e35f2e2a55937"
+    },
+    {
+      "path": "s08/bc02/c1_budget/result.json",
+      "sha256": "7f353e689d01cb72ae26627a437f9519946ac048fe67aa4205cbb6dde1a533bc"
+    },
+    {
+      "path": "s08/bc02/c2_budget/result.json",
+      "sha256": "a0f687097ee2422ebf1f9f98e1d75b4012b22a3f205925c3b6bf3bfba0d8d8c4"
+    },
+    {
+      "path": "s08/bc02/c3_budget/result.json",
+      "sha256": "ec741518a6ff8e62a04bb4521e082ae2835ad897d27adc46e4b77599410cee8f"
+    },
+    {
+      "path": "s08/bc02/c0_ordinary_budget/result.json",
+      "sha256": "689f52367077d89782a2be63a6d724139300cae7cb9e0bbd7fc934e9cd55df7c"
+    },
+    {
+      "path": "s08/bc02/c1_ordinary_budget/result.json",
+      "sha256": "e411751d0f0b4f0d70a89555094648850fbea1245281ed1572bb183060bf391c"
+    },
+    {
+      "path": "s08/bc02/c2_ordinary_budget/result.json",
+      "sha256": "3867a14d27f614b64617e01eb723ec5f96beb97a72b8490ecce93f23c71c1cb7"
+    },
+    {
+      "path": "s08/bc02/c3_ordinary_budget/result.json",
+      "sha256": "d2c34b9438917e6e21578bab2a054a136a97599fe264a294cad736eaef399ffb"
+    },
+    {
+      "path": "s08/bc02/c0_cover/result.json",
+      "sha256": "58e925ab96b1de4c6a16a45db2bd2112d9fddbb98bdcca274a2e3e2b6d12925c"
+    },
+    {
+      "path": "s08/bc02/c1_cover/result.json",
+      "sha256": "ac9d5bd16f3126831ebb17fa87537b514f8a43bfdaaa4893cf5315b17e5d95d5"
+    },
+    {
+      "path": "s08/bc02/c2_cover/result.json",
+      "sha256": "42cb7ba2afe791d4aa9bf2eac1cb25707313a3983bd223401b5cc3d2963d4f72"
+    },
+    {
+      "path": "s08/bc02/c3_cover/result.json",
+      "sha256": "6fc242e45d76df293fe7d2525bb6df794b939dbd214f3a87945ac14da1b4bc1f"
+    },
+    {
+      "path": "s08/bc02/c0_anchor/result.json",
+      "sha256": "74d43c5cff8117782cdba3290b9ea781241538eece151dc81b94fd87f1b4fa71"
+    },
+    {
+      "path": "s08/bc02/c1_anchor/result.json",
+      "sha256": "03955abe012038b38c18af27ce9651bfca618e0991a86a1e6a39c598e9f066da"
+    },
+    {
+      "path": "s08/bc02/c2_anchor/result.json",
+      "sha256": "8e07e04c49260d1718f59790bd0e5cd50ba9e55ec3cc453158e46654e5678c41"
+    },
+    {
+      "path": "s08/bc02/c3_anchor/result.json",
+      "sha256": "15a04165b11277dfcc8052472f4650babb82b82ed4879f8907c4aa0ec5a35082"
+    }
+  ],
+  "all_16_acquisitions_first_attempt": true,
+  "failed_checking_attempts": 1,
+  "comparison_scope": "Within bc02 only; not a rerun of ac02 or F01."
+}

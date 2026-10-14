@@ -1,0 +1,219 @@
+{
+  "status": "complete",
+  "costs": [
+    4,
+    3,
+    4,
+    9,
+    3,
+    2,
+    9,
+    6
+  ],
+  "n": 8,
+  "created_nodes": 1708,
+  "apply_states": 2838,
+  "root_map_groups": 4,
+  "invoice_groups": [
+    [
+      1,
+      3
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      9
+    ]
+  ],
+  "pairs": [
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "root": 0,
+      "global_interval": [
+        0,
+        0
+      ],
+      "reachable_nodes": 1,
+      "identical_invoice": true
+    },
+    {
+      "pair": [
+        1,
+        5
+      ],
+      "root": 1649,
+      "global_interval": [
+        -16,
+        17
+      ],
+      "reachable_nodes": 63,
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        1,
+        7
+      ],
+      "root": 1649,
+      "global_interval": [
+        -16,
+        17
+      ],
+      "reachable_nodes": 63,
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        1,
+        9
+      ],
+      "root": 1696,
+      "global_interval": [
+        -9,
+        11
+      ],
+      "reachable_nodes": 60,
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        3,
+        5
+      ],
+      "root": 1649,
+      "global_interval": [
+        -16,
+        17
+      ],
+      "reachable_nodes": 63,
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        3,
+        7
+      ],
+      "root": 1649,
+      "global_interval": [
+        -16,
+        17
+      ],
+      "reachable_nodes": 63,
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        3,
+        9
+      ],
+      "root": 1696,
+      "global_interval": [
+        -9,
+        11
+      ],
+      "reachable_nodes": 60,
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        5,
+        7
+      ],
+      "root": 0,
+      "global_interval": [
+        0,
+        0
+      ],
+      "reachable_nodes": 1,
+      "identical_invoice": true
+    },
+    {
+      "pair": [
+        5,
+        9
+      ],
+      "root": 1706,
+      "global_interval": [
+        -8,
+        9
+      ],
+      "reachable_nodes": 15,
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        7,
+        9
+      ],
+      "root": 1706,
+      "global_interval": [
+        -8,
+        9
+      ],
+      "reachable_nodes": 15,
+      "identical_invoice": false
+    }
+  ],
+  "truth_checks": 1280,
+  "negative_controls": [
+    "altered_final_invoice_rejected"
+  ],
+  "invoice": {
+    "total": 286810,
+    "by_category": {
+      "add": 42511,
+      "proposal": 25040,
+      "compile": 2160,
+      "admission": 134557,
+      "restriction": 82542
+    },
+    "operations": [
+      {
+        "category": "add",
+        "operation": "arithmetic_apply_state",
+        "units": 21540
+      },
+      {
+        "category": "add",
+        "operation": "canonical_record_lookup",
+        "units": 14815
+      },
+      {
+        "category": "add",
+        "operation": "ordered_indicator_ite_state",
+        "units": 6156
+      },
+      {
+        "category": "admission",
+        "operation": "independent_invoice_recurrence_check",
+        "units": 134557
+      },
+      {
+        "category": "compile",
+        "operation": "retain_invoice_recurrence",
+        "units": 2160
+      },
+      {
+        "category": "proposal",
+        "operation": "markov_policy_proposal_only",
+        "units": 25040
+      },
+      {
+        "category": "restriction",
+        "operation": "joint_extremum",
+        "units": 81580
+      },
+      {
+        "category": "restriction",
+        "operation": "terminal_range",
+        "units": 962
+      }
+    ]
+  },
+  "physical_audits": 0
+}

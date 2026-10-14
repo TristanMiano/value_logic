@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\check_fs01.py", line 60, in <module>
+    if __name__=='__main__':run(sys.argv[1])
+                            ~~~^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\check_fs01.py", line 43, in run
+    value=sum(feature['scale']*world[feature['node']] for j,feature in enumerate(data['features']) if decision['model']>>j&1)
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\check_fs01.py", line 43, in <genexpr>
+    value=sum(feature['scale']*world[feature['node']] for j,feature in enumerate(data['features']) if decision['model']>>j&1)
+                                                                                                      ~~~~~~~~~~~~~~~~~~~~^~
+TypeError: unsupported operand type(s) for &: 'cell' and 'int'

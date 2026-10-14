@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\check_gc02.py", line 48, in <module>
+    if __name__=='__main__':run(sys.argv[1],sys.argv[2],len(sys.argv)>3)
+                            ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\check_gc02.py", line 19, in run
+    request=f'{request_name}-{arm}-{index}';query=state.select()
+                                                  ~~~~~~~~~~~~^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\graph_cover_service.py", line 51, in select
+    proposal=(-self.score(i),i)
+               ~~~~~~~~~~^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\graph_cover_service.py", line 41, in score
+    self.meter.pay('selection','adjacency_response_gain_scan',4+8*len(self.c['adj'][i]))
+                                                                      ~~~~~~~~~~~~~^^^
+KeyError: 14

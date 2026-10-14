@@ -1,0 +1,406 @@
+{
+  "status": "complete",
+  "name": "n10r1",
+  "n": 10,
+  "costs": [
+    2,
+    9,
+    9,
+    5,
+    6,
+    6,
+    7,
+    2,
+    5,
+    7
+  ],
+  "policies": [
+    "r1",
+    "r3",
+    "r5",
+    "r7",
+    "left",
+    "right",
+    "middle"
+  ],
+  "aliases": {
+    "r1": [
+      "r1"
+    ],
+    "r3": [
+      "r3"
+    ],
+    "r5": [
+      "r5",
+      "r9"
+    ],
+    "r7": [
+      "r7"
+    ],
+    "left": [
+      "left"
+    ],
+    "right": [
+      "right"
+    ],
+    "middle": [
+      "middle"
+    ]
+  },
+  "totals": {
+    "cases": 5376,
+    "target_fee": 6562,
+    "replay_fee": 18118,
+    "wins": 1243,
+    "losses": 31,
+    "ties": 4102,
+    "zero_target": 4420,
+    "zero_replay": 3316
+  },
+  "subgroups": {
+    "model_pair": {
+      "cases": 1536,
+      "target_fee": 2423,
+      "replay_fee": 2483,
+      "wins": 29,
+      "losses": 14,
+      "ties": 1493,
+      "zero_target": 1185,
+      "zero_replay": 1163
+    },
+    "expanded_pair": {
+      "cases": 3840,
+      "target_fee": 4139,
+      "replay_fee": 15635,
+      "wins": 1214,
+      "losses": 17,
+      "ties": 2609,
+      "zero_target": 3235,
+      "zero_replay": 2153
+    }
+  },
+  "completion_checks": 18289,
+  "syntax_nodes": 141,
+  "cofactor_cache": 3508,
+  "invoice": {
+    "total": 315581,
+    "by_category": {
+      "proposal": 44105,
+      "preparation": 18648,
+      "evaluation": 252828
+    },
+    "operations": [
+      {
+        "category": "evaluation",
+        "operation": "all_direct_circuit_evaluation",
+        "units": 244476
+      },
+      {
+        "category": "evaluation",
+        "operation": "retained_cofactor_circuit_construction",
+        "units": 8352
+      },
+      {
+        "category": "preparation",
+        "operation": "local_source_invoice_recurrence_check",
+        "units": 12475
+      },
+      {
+        "category": "preparation",
+        "operation": "original_syntax_compilation",
+        "units": 6173
+      },
+      {
+        "category": "proposal",
+        "operation": "same_markov_menu",
+        "units": 43700
+      },
+      {
+        "category": "proposal",
+        "operation": "simple_interval_root_rule",
+        "units": 405
+      }
+    ]
+  },
+  "physical_audits": 0,
+  "witnesses": [
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "logger": "r1",
+      "alternative": "left",
+      "logger_queries": [
+        7,
+        5,
+        4,
+        2,
+        0,
+        1,
+        6,
+        9,
+        8
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        3
+      ],
+      "target_fee": 0,
+      "replay_fee": 5,
+      "contrast": 2,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "logger": "r1",
+      "alternative": "right",
+      "logger_queries": [
+        7,
+        5,
+        4,
+        2,
+        0,
+        1,
+        6,
+        9,
+        8
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        3
+      ],
+      "target_fee": 0,
+      "replay_fee": 5,
+      "contrast": -3,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "logger": "r3",
+      "alternative": "left",
+      "logger_queries": [
+        7,
+        5,
+        4,
+        2,
+        0,
+        1,
+        6,
+        9,
+        8
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        3
+      ],
+      "target_fee": 0,
+      "replay_fee": 5,
+      "contrast": 2,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "logger": "r3",
+      "alternative": "right",
+      "logger_queries": [
+        7,
+        5,
+        4,
+        2,
+        0,
+        1,
+        6,
+        9,
+        8
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        3
+      ],
+      "target_fee": 0,
+      "replay_fee": 5,
+      "contrast": -3,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "logger": "r5",
+      "alternative": "left",
+      "logger_queries": [
+        8,
+        3,
+        2,
+        0,
+        1,
+        4,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        5,
+        7
+      ],
+      "target_fee": 0,
+      "replay_fee": 8,
+      "contrast": -8,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "logger": "r5",
+      "alternative": "right",
+      "logger_queries": [
+        8,
+        3,
+        2,
+        0,
+        1,
+        4,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        9,
+        7,
+        5
+      ],
+      "target_fee": 0,
+      "replay_fee": 15,
+      "contrast": -13,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "logger": "r7",
+      "alternative": "left",
+      "logger_queries": [
+        8,
+        5,
+        4,
+        0,
+        1,
+        3,
+        2,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        7
+      ],
+      "target_fee": 0,
+      "replay_fee": 2,
+      "contrast": -2,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "logger": "r7",
+      "alternative": "right",
+      "logger_queries": [
+        8,
+        5,
+        4,
+        0,
+        1,
+        3,
+        2,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        9,
+        7
+      ],
+      "target_fee": 0,
+      "replay_fee": 9,
+      "contrast": -7,
+      "subgroup": "expanded_pair"
+    }
+  ]
+}

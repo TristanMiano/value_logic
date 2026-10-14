@@ -1,0 +1,153 @@
+{
+  "group": {
+    "name": "g2",
+    "interval": [
+      6,
+      7
+    ],
+    "weights": [
+      2,
+      1,
+      3
+    ],
+    "centers": [
+      6,
+      6,
+      7
+    ]
+  },
+  "certificate": {
+    "source": "a61155390927183f5ddf47851dbe3fd172f699366fee0b82aa414f9de945c549",
+    "rows": [
+      [
+        [
+          0,
+          0,
+          []
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          3,
+          0,
+          [
+            2,
+            2,
+            1
+          ]
+        ],
+        [
+          6,
+          0,
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ]
+    ],
+    "frontier": [
+      [
+        0,
+        78,
+        [
+          2,
+          2,
+          0
+        ]
+      ]
+    ]
+  },
+  "checked": {
+    "states": 5,
+    "transitions": 9,
+    "frontier_size": 1
+  },
+  "action_checks": 27,
+  "target_checks": 7,
+  "nominal_actions": 11,
+  "nominal_regret": 0,
+  "robust_regret": 0,
+  "strict": false,
+  "negative_checks": 3,
+  "invoice": {
+    "total": 141,
+    "by_category": {
+      "planning": 141
+    },
+    "operations": [
+      {
+        "category": "planning",
+        "operation": "local_frontier_transition",
+        "units": 99
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_point_comparison",
+        "units": 24
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sort_upper_comparisons",
+        "units": 6
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sorted_scan",
+        "units": 12
+      }
+    ]
+  },
+  "checking_invoice": {
+    "total": 187,
+    "by_category": {
+      "dp_check": 187
+    },
+    "operations": [
+      {
+        "category": "dp_check",
+        "operation": "exact_transition_and_argmin",
+        "units": 126
+      },
+      {
+        "category": "dp_check",
+        "operation": "independent_returned_endpoint_bound",
+        "units": 36
+      },
+      {
+        "category": "dp_check",
+        "operation": "pairwise_dominance_comparison",
+        "units": 25
+      }
+    ]
+  }
+}

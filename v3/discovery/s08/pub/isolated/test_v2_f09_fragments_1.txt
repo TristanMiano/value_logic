@@ -1,0 +1,59 @@
+test_all_supplied_certificates_received (v2.checks.f09_fragments.F09BooleanTests.test_all_supplied_certificates_received) ... ERROR
+test_equivalent_boolean_implications_differ_continuously (v2.checks.f09_fragments.F09BooleanTests.test_equivalent_boolean_implications_differ_continuously) ... ok
+test_every_case_required_and_literal_pair_bound (v2.checks.f09_fragments.F09BooleanTests.test_every_case_required_and_literal_pair_bound) ... ok
+test_finite_truth_table_against_independent_boolean_interpreter (v2.checks.f09_fragments.F09BooleanTests.test_finite_truth_table_against_independent_boolean_interpreter) ... ok
+test_interval_excluded_middle_countermodel (v2.checks.f09_fragments.F09BooleanTests.test_interval_excluded_middle_countermodel) ... ok
+test_invalid_entailment_returns_countervaluation (v2.checks.f09_fragments.F09BooleanTests.test_invalid_entailment_returns_countervaluation) ... ok
+test_not_closed_under_addition (v2.checks.f09_fragments.F09BooleanTests.test_not_closed_under_addition) ... ok
+test_actual_improvement_consumer_exact_rectangles (v2.checks.f09_fragments.F09PhaseOneTests.test_actual_improvement_consumer_exact_rectangles) ... ok
+test_actual_upper_bound_consumer_exact_endpoints (v2.checks.f09_fragments.F09PhaseOneTests.test_actual_upper_bound_consumer_exact_endpoints) ... ok
+test_correlated_open_atoms_jointly_refuted (v2.checks.f09_fragments.F09PhaseOneTests.test_correlated_open_atoms_jointly_refuted) ... ok
+test_equality_is_supported_not_refuted (v2.checks.f09_fragments.F09PhaseOneTests.test_equality_is_supported_not_refuted) ... ok
+test_exact_status_meet_embedding_all_families_up_to_four (v2.checks.f09_fragments.F09PhaseOneTests.test_exact_status_meet_embedding_all_families_up_to_four) ... ok
+test_full_assessment_not_determined_by_numeric_projection (v2.checks.f09_fragments.F09PhaseOneTests.test_full_assessment_not_determined_by_numeric_projection) ... ok
+test_joint_improvement_is_stronger_than_rectangle_adapter (v2.checks.f09_fragments.F09PhaseOneTests.test_joint_improvement_is_stronger_than_rectangle_adapter) ... ok
+test_missing_evidence_remains_open_with_obstacle (v2.checks.f09_fragments.F09PhaseOneTests.test_missing_evidence_remains_open_with_obstacle) ... ok
+test_product_domain_recovers_atomwise_aggregation (v2.checks.f09_fragments.F09PhaseOneTests.test_product_domain_recovers_atomwise_aggregation) ... ok
+test_status_constant_forgets_provenance (v2.checks.f09_fragments.F09PhaseOneTests.test_status_constant_forgets_provenance) ... ok
+
+======================================================================
+ERROR: test_all_supplied_certificates_received (v2.checks.f09_fragments.F09BooleanTests.test_all_supplied_certificates_received)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f09_fragments.py", line 159, in test_all_supplied_certificates_received
+    for name, (ctx, proof, expected) in examples().items():
+                                        ~~~~~~~~^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f09_fragments.py", line 151, in examples
+    'modus_ponens': entailment_certificate(('p','q'), (p,('implies',p,q)), q),
+                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f09_fragments.py", line 126, in entailment_certificate
+    roots.append(T._copy_into(outer, local))
+                 ~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 108, in _copy_into
+    proof = prune(builder.ctx, proof)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 48, in prune
+    R.check(ctx, proof)
+    ~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 209, in check
+    if b!=expected or not same_difference(step.new,step.old,t,s,ctx.signature):
+                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 72, in same_difference
+    return len(set(units)) == 1 and _form(sub(t, s), sig) == _form(sub(a, b), sig)
+                                    ~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 34, in _form
+    infer(t, sig)  # Check every child, including those multiplied by zero.
+    ~~~~~^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 127, in infer
+    sig.validate()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 47, in validate
+    if any(not isinstance(u, str) or not u for u in self.units):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'tuple_iterator' object is not callable
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.269s
+
+FAILED (errors=1)

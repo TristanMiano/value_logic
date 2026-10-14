@@ -1,0 +1,127 @@
+{
+  "name": "n3_path",
+  "states": 64,
+  "compatible_world_checks": 216,
+  "action_checks": 576,
+  "strict_edgewise_gap": 0,
+  "policies": [
+    {
+      "tau": 0,
+      "minimax_fee": 10,
+      "knapsack": {
+        "fee": 10,
+        "chosen": [
+          0,
+          1,
+          2
+        ],
+        "target": 4
+      },
+      "bellman_states": 26,
+      "max_greedy_ratio": "10/9"
+    },
+    {
+      "tau": 1,
+      "minimax_fee": 3,
+      "knapsack": {
+        "fee": 3,
+        "chosen": [
+          0,
+          1
+        ],
+        "target": 3
+      },
+      "bellman_states": 21,
+      "max_greedy_ratio": 1
+    },
+    {
+      "tau": 2,
+      "minimax_fee": 1,
+      "knapsack": {
+        "fee": 1,
+        "chosen": [
+          1
+        ],
+        "target": 2
+      },
+      "bellman_states": 14,
+      "max_greedy_ratio": 1
+    },
+    {
+      "tau": 4,
+      "minimax_fee": 0,
+      "knapsack": {
+        "fee": 0,
+        "chosen": [],
+        "target": 0
+      },
+      "bellman_states": 1,
+      "max_greedy_ratio": 1
+    }
+  ],
+  "invoice": {
+    "total": 10119,
+    "by_category": {
+      "source": 87,
+      "geometry": 16,
+      "action": 1728,
+      "geometry_check": 576,
+      "action_check": 5056,
+      "receipt_check": 2448,
+      "planning": 208
+    },
+    "operations": [
+      {
+        "category": "action",
+        "operation": "balanced_unresolved_and_exact_resolved_components",
+        "units": 1728
+      },
+      {
+        "category": "action_check",
+        "operation": "all_compatible_local_regrets",
+        "units": 2304
+      },
+      {
+        "category": "action_check",
+        "operation": "joint_attaining_original_objective",
+        "units": 1216
+      },
+      {
+        "category": "action_check",
+        "operation": "original_hard_clause",
+        "units": 1536
+      },
+      {
+        "category": "geometry",
+        "operation": "bipartite_color_edge",
+        "units": 16
+      },
+      {
+        "category": "geometry_check",
+        "operation": "complete_bipartite_coloring",
+        "units": 576
+      },
+      {
+        "category": "planning",
+        "operation": "degree_quota_and_chosen_plan",
+        "units": 34
+      },
+      {
+        "category": "planning",
+        "operation": "degree_quota_knapsack_transition",
+        "units": 174
+      },
+      {
+        "category": "receipt_check",
+        "operation": "bind_ternary_source_request_and_fee",
+        "units": 2448
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_graph_alphabet_and_fees",
+        "units": 87
+      }
+    ]
+  },
+  "physical_audits": 0
+}

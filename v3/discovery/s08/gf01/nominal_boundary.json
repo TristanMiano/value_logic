@@ -1,0 +1,223 @@
+{
+  "group": {
+    "name": "nominal_boundary",
+    "interval": [
+      0,
+      5
+    ],
+    "weights": [
+      5,
+      2
+    ],
+    "centers": [
+      2,
+      3
+    ]
+  },
+  "certificate": {
+    "source": "dd05f8bf0f20f95b3ab8bce0a2fc1346abe75a1fc593788a5bc9f4e3471f80de",
+    "rows": [
+      [
+        [
+          0,
+          0,
+          []
+        ]
+      ],
+      [
+        [
+          0,
+          30,
+          [
+            0
+          ]
+        ],
+        [
+          10,
+          15,
+          [
+            1
+          ]
+        ],
+        [
+          20,
+          0,
+          [
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          38,
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          6,
+          34,
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          10,
+          23,
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          12,
+          30,
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          16,
+          19,
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          20,
+          8,
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          22,
+          15,
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          26,
+          4,
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          32,
+          0,
+          [
+            2,
+            2
+          ]
+        ]
+      ]
+    ],
+    "frontier": [
+      [
+        19,
+        51,
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        20,
+        40,
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        26,
+        36,
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        32,
+        32,
+        [
+          2,
+          2
+        ]
+      ]
+    ]
+  },
+  "checked": {
+    "states": 12,
+    "transitions": 12,
+    "frontier_size": 4
+  },
+  "action_checks": 9,
+  "target_checks": 39,
+  "nominal_actions": 5,
+  "nominal_regret": 20,
+  "robust_regret": 19,
+  "strict": true,
+  "negative_checks": 3,
+  "invoice": {
+    "total": 264,
+    "by_category": {
+      "planning": 264
+    },
+    "operations": [
+      {
+        "category": "planning",
+        "operation": "local_frontier_transition",
+        "units": 129
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_point_comparison",
+        "units": 63
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sort_upper_comparisons",
+        "units": 36
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sorted_scan",
+        "units": 36
+      }
+    ]
+  },
+  "checking_invoice": {
+    "total": 536,
+    "by_category": {
+      "dp_check": 536
+    },
+    "operations": [
+      {
+        "category": "dp_check",
+        "operation": "exact_transition_and_argmin",
+        "units": 165
+      },
+      {
+        "category": "dp_check",
+        "operation": "independent_returned_endpoint_bound",
+        "units": 96
+      },
+      {
+        "category": "dp_check",
+        "operation": "pairwise_dominance_comparison",
+        "units": 275
+      }
+    ]
+  }
+}

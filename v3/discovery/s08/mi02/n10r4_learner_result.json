@@ -1,0 +1,251 @@
+{
+  "outputs": 1024,
+  "base_audit_fee": 32981,
+  "physical_audits": 8059,
+  "named_units": 1407998,
+  "setup_units": 748547,
+  "invoice": {
+    "total": 1407998,
+    "by_category": {
+      "source": 322,
+      "preparation": 367175,
+      "restriction": 85050,
+      "table_prepare": 35200,
+      "table_check": 260800,
+      "selection": 5076,
+      "execution": 86718,
+      "provider": 96708,
+      "receipt": 120885,
+      "action": 110592,
+      "check": 237760,
+      "learning": 231,
+      "confidence": 1481
+    },
+    "operations": [
+      {
+        "category": "action",
+        "operation": "two_component_endpoint_choice",
+        "units": 110592
+      },
+      {
+        "category": "check",
+        "operation": "compatible_local_cost_comparison",
+        "units": 127168
+      },
+      {
+        "category": "check",
+        "operation": "original_clause",
+        "units": 110592
+      },
+      {
+        "category": "confidence",
+        "operation": "binomial_factor_grid_bracketing_and_retention",
+        "units": 157
+      },
+      {
+        "category": "confidence",
+        "operation": "exact_grid_power_and_integer_likelihood_comparison",
+        "units": 1324
+      },
+      {
+        "category": "execution",
+        "operation": "branch_and_push_continuations",
+        "units": 48354
+      },
+      {
+        "category": "execution",
+        "operation": "pop_interval_task",
+        "units": 38364
+      },
+      {
+        "category": "learning",
+        "operation": "retain_compulsory_pair_count",
+        "units": 231
+      },
+      {
+        "category": "preparation",
+        "operation": "continuum_polynomial_production",
+        "units": 205975
+      },
+      {
+        "category": "preparation",
+        "operation": "independent_polynomial_identity_check",
+        "units": 117500
+      },
+      {
+        "category": "preparation",
+        "operation": "model_policy_proposal",
+        "units": 43700
+      },
+      {
+        "category": "provider",
+        "operation": "construct_and_export_receipt_words",
+        "units": 96708
+      },
+      {
+        "category": "receipt",
+        "operation": "bind_source_request_value_and_fee",
+        "units": 120885
+      },
+      {
+        "category": "restriction",
+        "operation": "de_casteljau_convex_combination",
+        "units": 85050
+      },
+      {
+        "category": "selection",
+        "operation": "intersect_acceptable_policy_masks",
+        "units": 1645
+      },
+      {
+        "category": "selection",
+        "operation": "maximum_fee_across_relevant_bins",
+        "units": 1645
+      },
+      {
+        "category": "selection",
+        "operation": "reuse_admitted_policy_epoch",
+        "units": 1018
+      },
+      {
+        "category": "selection",
+        "operation": "scan_intersected_certified_bins",
+        "units": 768
+      },
+      {
+        "category": "source",
+        "operation": "read_original_path_factors_and_continuum_source",
+        "units": 322
+      },
+      {
+        "category": "table_check",
+        "operation": "affine_power_substitution",
+        "units": 105600
+      },
+      {
+        "category": "table_check",
+        "operation": "all_pairwise_regret_inequalities",
+        "units": 32000
+      },
+      {
+        "category": "table_check",
+        "operation": "bernstein_to_power",
+        "units": 70400
+      },
+      {
+        "category": "table_check",
+        "operation": "power_to_local_bernstein",
+        "units": 52800
+      },
+      {
+        "category": "table_prepare",
+        "operation": "fee_coefficient_maxima",
+        "units": 3200
+      },
+      {
+        "category": "table_prepare",
+        "operation": "pairwise_regret_coefficient_maxima",
+        "units": 32000
+      }
+    ]
+  },
+  "learning_samples": 16,
+  "repeats": 10,
+  "decision_epochs": 6,
+  "decisions": [
+    {
+      "before_request": 0,
+      "interval": [
+        0,
+        1
+      ],
+      "selected": 3,
+      "samples": 0,
+      "fee_upper": "2536410384325/77309411328",
+      "certified_epsilon_optimal": false,
+      "intersected_bins": 64
+    },
+    {
+      "before_request": 4,
+      "interval": [
+        "51/2048",
+        1
+      ],
+      "selected": 3,
+      "samples": 1,
+      "fee_upper": "2536410384325/77309411328",
+      "certified_epsilon_optimal": false,
+      "intersected_bins": 63
+    },
+    {
+      "before_request": 9,
+      "interval": [
+        "33/256",
+        1
+      ],
+      "selected": 3,
+      "samples": 2,
+      "fee_upper": "2536410384325/77309411328",
+      "certified_epsilon_optimal": false,
+      "intersected_bins": 56
+    },
+    {
+      "before_request": 13,
+      "interval": [
+        "585/4096",
+        "2043/2048"
+      ],
+      "selected": 3,
+      "samples": 4,
+      "fee_upper": "2536410384325/77309411328",
+      "certified_epsilon_optimal": false,
+      "intersected_bins": 55
+    },
+    {
+      "before_request": 18,
+      "interval": [
+        "729/4096",
+        "1945/2048"
+      ],
+      "selected": 3,
+      "samples": 8,
+      "fee_upper": "2536410384325/77309411328",
+      "certified_epsilon_optimal": false,
+      "intersected_bins": 50
+    },
+    {
+      "before_request": 40,
+      "interval": [
+        "1129/4096",
+        "3683/4096"
+      ],
+      "selected": 3,
+      "samples": 16,
+      "fee_upper": "2536410384325/77309411328",
+      "certified_epsilon_optimal": true,
+      "intersected_bins": 41
+    }
+  ],
+  "stop_before_request": 40,
+  "final_interval": [
+    "1129/4096",
+    "3683/4096"
+  ],
+  "selected_policies": {
+    "3": 1024
+  },
+  "observed_coverage_failures": 0,
+  "cumulative_expected_bank_fee_regret": 0,
+  "worst_conditional_expected_bank_fee_regret": 0,
+  "diagnostic_bank_values": {
+    "1": "25484583/781250",
+    "3": "5031777/156250",
+    "5": "5031777/156250",
+    "7": "5031777/156250",
+    "9": "5031777/156250"
+  },
+  "trace_bytes": 2432631,
+  "diagnostic_bytes": 171986,
+  "arm_cpu_ns": 546875000,
+  "arm_wall_ns": 569774700
+}

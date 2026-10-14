@@ -1,0 +1,79 @@
+{
+  "outputs": 64,
+  "base_audit_fee": 190,
+  "physical_audits": 95,
+  "named_units": 105216,
+  "setup_units": 188,
+  "invoice": {
+    "total": 105216,
+    "by_category": {
+      "source": 149,
+      "geometry": 28,
+      "shared_acquisition": 11,
+      "bounds": 26325,
+      "planning": 69855,
+      "selection": 1425,
+      "provider": 1235,
+      "receipt_check": 1900,
+      "action_check": 2688,
+      "export": 1600
+    },
+    "operations": [
+      {
+        "category": "action_check",
+        "operation": "original_clause",
+        "units": 2688
+      },
+      {
+        "category": "bounds",
+        "operation": "source_endpoint_regret_upper_and_optimum_lower",
+        "units": 26325
+      },
+      {
+        "category": "export",
+        "operation": "source_action_receipts_and_bill",
+        "units": 1600
+      },
+      {
+        "category": "geometry",
+        "operation": "exact_original_resolution_check",
+        "units": 28
+      },
+      {
+        "category": "planning",
+        "operation": "partial_star_dp_transition",
+        "units": 69855
+      },
+      {
+        "category": "provider",
+        "operation": "physical_cost_receipt_export",
+        "units": 1235
+      },
+      {
+        "category": "receipt_check",
+        "operation": "bound_source_request_fee_sequence",
+        "units": 1900
+      },
+      {
+        "category": "selection",
+        "operation": "cheapest_unseen_query",
+        "units": 1425
+      },
+      {
+        "category": "shared_acquisition",
+        "operation": "allocated_original_resolution",
+        "units": 11
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_support_and_fee_admission",
+        "units": 149
+      }
+    ]
+  },
+  "observed_max_fee": 4,
+  "policy_worst_fee": null,
+  "complete_query_cap": 5,
+  "cpu_ns": 0,
+  "wall_ns": 9935700
+}

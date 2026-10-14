@@ -1,0 +1,207 @@
+{
+  "group": {
+    "name": "g16",
+    "interval": [
+      3,
+      5
+    ],
+    "weights": [
+      2,
+      5
+    ],
+    "centers": [
+      4,
+      5
+    ]
+  },
+  "certificate": {
+    "source": "561477679932f328c8e202507b0a6018afbc1b95fe17d45eda6b86a2067c89f3",
+    "rows": [
+      [
+        [
+          0,
+          0,
+          []
+        ]
+      ],
+      [
+        [
+          0,
+          4,
+          [
+            0
+          ]
+        ],
+        [
+          2,
+          2,
+          [
+            1
+          ]
+        ],
+        [
+          4,
+          0,
+          [
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          4,
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          2,
+          2,
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          4,
+          0,
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          10,
+          4,
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          12,
+          2,
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          14,
+          0,
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          20,
+          4,
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          22,
+          2,
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          24,
+          0,
+          [
+            2,
+            2
+          ]
+        ]
+      ]
+    ],
+    "frontier": [
+      [
+        2,
+        68,
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        4,
+        66,
+        [
+          2,
+          0
+        ]
+      ]
+    ]
+  },
+  "checked": {
+    "states": 12,
+    "transitions": 12,
+    "frontier_size": 2
+  },
+  "action_checks": 9,
+  "target_checks": 25,
+  "nominal_actions": 5,
+  "nominal_regret": 2,
+  "robust_regret": 2,
+  "strict": false,
+  "negative_checks": 3,
+  "invoice": {
+    "total": 256,
+    "by_category": {
+      "planning": 256
+    },
+    "operations": [
+      {
+        "category": "planning",
+        "operation": "local_frontier_transition",
+        "units": 129
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_point_comparison",
+        "units": 63
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sort_upper_comparisons",
+        "units": 32
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sorted_scan",
+        "units": 32
+      }
+    ]
+  },
+  "checking_invoice": {
+    "total": 373,
+    "by_category": {
+      "dp_check": 373
+    },
+    "operations": [
+      {
+        "category": "dp_check",
+        "operation": "exact_transition_and_argmin",
+        "units": 165
+      },
+      {
+        "category": "dp_check",
+        "operation": "independent_returned_endpoint_bound",
+        "units": 48
+      },
+      {
+        "category": "dp_check",
+        "operation": "pairwise_dominance_comparison",
+        "units": 160
+      }
+    ]
+  }
+}

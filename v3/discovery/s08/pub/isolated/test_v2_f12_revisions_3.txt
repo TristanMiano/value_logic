@@ -1,0 +1,30 @@
+test_catalogue_schema_rebuilds_are_not_free (verification.test_v2_f12_revisions.F12CostContractTests.test_catalogue_schema_rebuilds_are_not_free) ... ok
+test_fresh_sequence_has_common_receiver_costs_and_no_unearned_retention (verification.test_v2_f12_revisions.F12CostContractTests.test_fresh_sequence_has_common_receiver_costs_and_no_unearned_retention) ... Windows fatal exception: access violation
+
+Current thread 0x000069f4 (most recent call first):
+  Garbage-collecting
+  File "C:\Users\trist\projects\value_logic\v2\verification\receipts.py", line 49 in _no_duplicate_fields
+  File "C:\Python313\Lib\json\decoder.py", line 361 in raw_decode
+  File "C:\Python313\Lib\json\decoder.py", line 345 in decode
+  File "C:\Python313\Lib\json\__init__.py", line 365 in loads
+  File "C:\Users\trist\projects\value_logic\v2\verification\receipts.py", line 61 in loads
+  File "C:\Users\trist\projects\value_logic\v2\verification\sequence_cost.py", line 89 in <lambda>
+  File "C:\Users\trist\projects\value_logic\v2\verification\sequence_cost.py", line 53 in measured
+  File "C:\Users\trist\projects\value_logic\v2\verification\sequence_cost.py", line 89 in answer
+  File "C:\Users\trist\projects\value_logic\v2\verification\sequence_cost.py", line 108 in run
+  File "C:\Users\trist\projects\value_logic\verification\test_v2_f12_revisions.py", line 122 in test_fresh_sequence_has_common_receiver_costs_and_no_unearned_retention
+  File "C:\Python313\Lib\unittest\case.py", line 606 in _callTestMethod
+  File "C:\Python313\Lib\unittest\case.py", line 651 in run
+  File "C:\Python313\Lib\unittest\case.py", line 707 in __call__
+  File "C:\Python313\Lib\unittest\suite.py", line 122 in run
+  File "C:\Python313\Lib\unittest\suite.py", line 84 in __call__
+  File "C:\Python313\Lib\unittest\suite.py", line 122 in run
+  File "C:\Python313\Lib\unittest\suite.py", line 84 in __call__
+  File "C:\Python313\Lib\unittest\suite.py", line 122 in run
+  File "C:\Python313\Lib\unittest\suite.py", line 84 in __call__
+  File "C:\Python313\Lib\unittest\runner.py", line 240 in run
+  File "C:\Python313\Lib\unittest\main.py", line 270 in runTests
+  File "C:\Python313\Lib\unittest\main.py", line 104 in __init__
+  File "C:\Python313\Lib\unittest\__main__.py", line 18 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 203 in _run_module_as_main

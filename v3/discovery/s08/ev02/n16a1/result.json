@@ -1,0 +1,251 @@
+{
+  "status": "complete",
+  "n": 16,
+  "costs": [
+    8,
+    5,
+    3,
+    9,
+    5,
+    7,
+    5,
+    1,
+    2,
+    3,
+    4,
+    8,
+    8,
+    1,
+    8,
+    6
+  ],
+  "created_nodes": 6729,
+  "apply_states": 12436,
+  "invoice_groups": [
+    [
+      1
+    ],
+    [
+      3
+    ],
+    [
+      5
+    ],
+    [
+      7
+    ],
+    [
+      9
+    ]
+  ],
+  "world_checks": 1280,
+  "pairs": [
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "edge": [
+        0,
+        6298
+      ],
+      "global_interval": [
+        -9,
+        13
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        1,
+        5
+      ],
+      "edge": [
+        3,
+        6379
+      ],
+      "global_interval": [
+        -13,
+        19
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        1,
+        7
+      ],
+      "edge": [
+        3,
+        6452
+      ],
+      "global_interval": [
+        -13,
+        24
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        1,
+        9
+      ],
+      "edge": [
+        3,
+        6504
+      ],
+      "global_interval": [
+        -13,
+        19
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        3,
+        5
+      ],
+      "edge": [
+        3,
+        6587
+      ],
+      "global_interval": [
+        -13,
+        12
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        3,
+        7
+      ],
+      "edge": [
+        3,
+        6643
+      ],
+      "global_interval": [
+        -13,
+        15
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        3,
+        9
+      ],
+      "edge": [
+        3,
+        6673
+      ],
+      "global_interval": [
+        -13,
+        12
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        5,
+        7
+      ],
+      "edge": [
+        0,
+        6703
+      ],
+      "global_interval": [
+        -8,
+        9
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        5,
+        9
+      ],
+      "edge": [
+        0,
+        6713
+      ],
+      "global_interval": [
+        -8,
+        9
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        7,
+        9
+      ],
+      "edge": [
+        0,
+        6728
+      ],
+      "global_interval": [
+        -7,
+        8
+      ],
+      "identical_invoice": false
+    }
+  ],
+  "negative_controls": [
+    "changed_root_offset_rejected",
+    "outside_variable_rejected"
+  ],
+  "invoice": {
+    "total": 1977460,
+    "by_category": {
+      "proposal": 147360,
+      "compile": 8160,
+      "evbdd": 230219,
+      "admission": 1581033,
+      "restriction": 10688
+    },
+    "operations": [
+      {
+        "category": "admission",
+        "operation": "independent_edge_invoice_check",
+        "units": 1564983
+      },
+      {
+        "category": "admission",
+        "operation": "independent_pair_subtraction_check",
+        "units": 16050
+      },
+      {
+        "category": "compile",
+        "operation": "retain_invoice_recurrence",
+        "units": 8160
+      },
+      {
+        "category": "evbdd",
+        "operation": "normalize_edge_and_unique_lookup",
+        "units": 86436
+      },
+      {
+        "category": "evbdd",
+        "operation": "offset_normalized_indicator_ite",
+        "units": 59939
+      },
+      {
+        "category": "evbdd",
+        "operation": "offset_quotient_arithmetic_apply",
+        "units": 83844
+      },
+      {
+        "category": "proposal",
+        "operation": "same_markov_root_proposal",
+        "units": 147360
+      },
+      {
+        "category": "restriction",
+        "operation": "reachable_edge_extrema",
+        "units": 10688
+      }
+    ]
+  },
+  "physical_audits": 0
+}

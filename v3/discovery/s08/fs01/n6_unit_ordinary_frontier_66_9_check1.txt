@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\check_fs01.py", line 71, in <module>
+    if __name__=='__main__':run(sys.argv[1],sys.argv[2] if len(sys.argv)>2 else None,list(map(int,sys.argv[3:5])) if len(sys.argv)>3 else None)
+                            ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\check_fs01.py", line 47, in run
+    opt=world[-1]+sum(2*w*min(world[0],world[i]) for i,w in enumerate(case['weights'],1))
+                  ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\check_fs01.py", line 47, in <genexpr>
+    opt=world[-1]+sum(2*w*min(world[0],world[i]) for i,w in enumerate(case['weights'],1))
+                                                     ^^^
+TypeError: cannot unpack non-iterable int object

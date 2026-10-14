@@ -1,0 +1,128 @@
+{
+  "curve": [
+    {
+      "cap": 9,
+      "expected": 9,
+      "query": 3
+    },
+    {
+      "cap": 10,
+      "expected": "31/4",
+      "query": 1
+    },
+    {
+      "cap": 11,
+      "expected": "31/4",
+      "query": 1
+    },
+    {
+      "cap": 12,
+      "expected": "31/4",
+      "query": 1
+    },
+    {
+      "cap": 13,
+      "expected": "31/4",
+      "query": 1
+    },
+    {
+      "cap": 14,
+      "expected": "109/16",
+      "query": 1
+    },
+    {
+      "cap": 15,
+      "expected": "109/16",
+      "query": 1
+    },
+    {
+      "cap": 16,
+      "expected": "109/16",
+      "query": 1
+    },
+    {
+      "cap": 17,
+      "expected": "109/16",
+      "query": 1
+    },
+    {
+      "cap": 18,
+      "expected": "109/16",
+      "query": 1
+    },
+    {
+      "cap": 19,
+      "expected": "109/16",
+      "query": 1
+    },
+    {
+      "cap": 20,
+      "expected": "433/64",
+      "query": 1
+    }
+  ],
+  "scores": {
+    "original_minimax": {
+      "expected": 9,
+      "worst": 9,
+      "worlds": 128,
+      "total_fee": 1152,
+      "safety_units": 425,
+      "states": 3
+    },
+    "lexicographic": {
+      "expected": 9,
+      "worst": 9,
+      "worlds": 128,
+      "total_fee": 1152,
+      "safety_units": 425,
+      "states": 3
+    },
+    "expected": {
+      "expected": "433/64",
+      "worst": 20,
+      "worlds": 128,
+      "total_fee": 866,
+      "safety_units": 2363,
+      "states": 31
+    },
+    "cheapest": {
+      "expected": "251/32",
+      "worst": 20,
+      "worlds": 128,
+      "total_fee": 1004,
+      "safety_units": 4487,
+      "states": 65
+    },
+    "direct": {
+      "expected": "251/32",
+      "worst": 20,
+      "worlds": 128,
+      "total_fee": 1004,
+      "safety_units": 4487,
+      "states": 65
+    }
+  },
+  "budget_states": 4053,
+  "invoice": {
+    "total": 66144,
+    "by_category": {
+      "tradeoff": 66144
+    },
+    "operations": [
+      {
+        "category": "tradeoff",
+        "operation": "budget_child_value_and_probability",
+        "units": 54936
+      },
+      {
+        "category": "tradeoff",
+        "operation": "exact_expected_query_candidate",
+        "units": 11208
+      }
+    ]
+  },
+  "parent_policy_sha256": "e4910ee8f28a122835aac4e0b4e7af8bf71b406ac7b7706ae7be938129bc7caa",
+  "physical_audits": 0,
+  "status": "complete"
+}
