@@ -1,0 +1,370 @@
+{
+  "status": "complete",
+  "name": "n8r1",
+  "n": 8,
+  "costs": [
+    7,
+    6,
+    5,
+    6,
+    3,
+    1,
+    8,
+    7
+  ],
+  "policies": [
+    "r1",
+    "r3",
+    "r5",
+    "r7",
+    "left",
+    "right",
+    "middle"
+  ],
+  "aliases": {
+    "r1": [
+      "r1"
+    ],
+    "r3": [
+      "r3"
+    ],
+    "r5": [
+      "r5",
+      "r9"
+    ],
+    "r7": [
+      "r7"
+    ],
+    "left": [
+      "left"
+    ],
+    "right": [
+      "right"
+    ],
+    "middle": [
+      "middle"
+    ]
+  },
+  "totals": {
+    "cases": 5376,
+    "target_fee": 8012,
+    "replay_fee": 17170,
+    "wins": 1052,
+    "losses": 33,
+    "ties": 4291,
+    "zero_target": 4230,
+    "zero_replay": 3291
+  },
+  "subgroups": {
+    "model_pair": {
+      "cases": 1536,
+      "target_fee": 3149,
+      "replay_fee": 3149,
+      "wins": 0,
+      "losses": 0,
+      "ties": 1536,
+      "zero_target": 1071,
+      "zero_replay": 1071
+    },
+    "expanded_pair": {
+      "cases": 3840,
+      "target_fee": 4863,
+      "replay_fee": 14021,
+      "wins": 1052,
+      "losses": 33,
+      "ties": 2755,
+      "zero_target": 3159,
+      "zero_replay": 2220
+    }
+  },
+  "completion_checks": 17043,
+  "syntax_nodes": 85,
+  "cofactor_cache": 1440,
+  "invoice": {
+    "total": 224159,
+    "by_category": {
+      "proposal": 25292,
+      "preparation": 13788,
+      "evaluation": 185079
+    },
+    "operations": [
+      {
+        "category": "evaluation",
+        "operation": "all_direct_circuit_evaluation",
+        "units": 182247
+      },
+      {
+        "category": "evaluation",
+        "operation": "retained_cofactor_circuit_construction",
+        "units": 2832
+      },
+      {
+        "category": "preparation",
+        "operation": "local_source_invoice_recurrence_check",
+        "units": 9369
+      },
+      {
+        "category": "preparation",
+        "operation": "original_syntax_compilation",
+        "units": 4419
+      },
+      {
+        "category": "proposal",
+        "operation": "same_markov_menu",
+        "units": 25040
+      },
+      {
+        "category": "proposal",
+        "operation": "simple_interval_root_rule",
+        "units": 252
+      }
+    ]
+  },
+  "physical_audits": 0,
+  "witnesses": [
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "logger": "r1",
+      "alternative": "left",
+      "logger_queries": [
+        5,
+        4,
+        2,
+        0,
+        1,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        3
+      ],
+      "target_fee": 0,
+      "replay_fee": 6,
+      "contrast": -6,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "logger": "r1",
+      "alternative": "right",
+      "logger_queries": [
+        5,
+        4,
+        2,
+        0,
+        1,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        7,
+        3
+      ],
+      "target_fee": 0,
+      "replay_fee": 13,
+      "contrast": -13,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "logger": "r3",
+      "alternative": "left",
+      "logger_queries": [
+        5,
+        4,
+        2,
+        0,
+        1,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        3
+      ],
+      "target_fee": 0,
+      "replay_fee": 6,
+      "contrast": -6,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "logger": "r3",
+      "alternative": "right",
+      "logger_queries": [
+        5,
+        4,
+        2,
+        0,
+        1,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        7,
+        3
+      ],
+      "target_fee": 0,
+      "replay_fee": 13,
+      "contrast": -13,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "logger": "r5",
+      "alternative": "left",
+      "logger_queries": [
+        1,
+        0,
+        2,
+        4,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        3,
+        5
+      ],
+      "target_fee": 0,
+      "replay_fee": 7,
+      "contrast": -7,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "logger": "r5",
+      "alternative": "right",
+      "logger_queries": [
+        1,
+        0,
+        2,
+        4,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        7,
+        5,
+        3
+      ],
+      "target_fee": 0,
+      "replay_fee": 14,
+      "contrast": -14,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "logger": "r7",
+      "alternative": "left",
+      "logger_queries": [
+        1,
+        0,
+        2,
+        4,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        3,
+        5
+      ],
+      "target_fee": 0,
+      "replay_fee": 7,
+      "contrast": -7,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "logger": "r7",
+      "alternative": "right",
+      "logger_queries": [
+        1,
+        0,
+        2,
+        4,
+        6
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        7,
+        5,
+        3
+      ],
+      "target_fee": 0,
+      "replay_fee": 14,
+      "contrast": -14,
+      "subgroup": "expanded_pair"
+    }
+  ]
+}

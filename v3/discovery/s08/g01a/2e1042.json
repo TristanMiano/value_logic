@@ -1,0 +1,164 @@
+{
+  "contract": {
+    "request": "n2-exact-ordinary_compiled-42",
+    "n": 2,
+    "price": "7",
+    "tolerance": 1,
+    "supports": "mandatory1or2; decision0or4; auxiliary1fixed",
+    "original_source": "f3d374f844cdc1f47bd0a5533d8b44c208b15692425c814807abd9d896eb54d0",
+    "identity": "b87787923faf260ef9edc11ea0e98212418f42a97133d3e9f4c3f432cff75e2c"
+  },
+  "policy": "ordinary_compiled",
+  "initial_bank": {
+    "lower": 2,
+    "upper": 2,
+    "witness": 3,
+    "source": "f3d374f844cdc1f47bd0a5533d8b44c208b15692425c814807abd9d896eb54d0",
+    "raw_receipt": "3cb0d31e7f134e2e552f6edf96b48df3207175bf394f035ebf97a4cbc233d051"
+  },
+  "events": [
+    {
+      "kind": "audit",
+      "receipt": {
+        "cost_source": "b87787923faf260ef9edc11ea0e98212418f42a97133d3e9f4c3f432cff75e2c",
+        "coordinate": 2,
+        "value": 0,
+        "sequence": 0,
+        "provider_software_units": 4,
+        "identity": "e12484f2f6a633c820e11730602c4b363d4bd17e5cffdf92ba858b64b5aafc21"
+      }
+    }
+  ],
+  "complete_quote": {
+    "maximum_mandatory_audits": 2,
+    "maximum_decision_audits": 1,
+    "maximum_additional_proof_calls": 0,
+    "proof_outcomes": [],
+    "proof_named_cap": 0,
+    "tariff": "n*A + D + optional(P + complete proof named cap); source/local/check/host/storage additional"
+  },
+  "status": "complete",
+  "local_invoice": {
+    "total": 175,
+    "by_category": {
+      "request_admission": 18,
+      "policy_compile": 22,
+      "quote": 12,
+      "policy_select": 9,
+      "audit_check": 20,
+      "witness_check": 27,
+      "witness_compile": 25,
+      "storage": 10,
+      "output_certificate": 32
+    },
+    "operations": [
+      {
+        "category": "audit_check",
+        "operation": "source_receipt_support_and_state_update",
+        "units": 20
+      },
+      {
+        "category": "output_certificate",
+        "operation": "source_geometry_logical_receipt_and_uniform_bound",
+        "units": 32
+      },
+      {
+        "category": "policy_compile",
+        "operation": "thresholds_gap_and_complete_cap",
+        "units": 22
+      },
+      {
+        "category": "policy_select",
+        "operation": "two_threshold_tests_gap_and_action",
+        "units": 9
+      },
+      {
+        "category": "quote",
+        "operation": "complete_audit_and_proof_reserve",
+        "units": 12
+      },
+      {
+        "category": "request_admission",
+        "operation": "contract_public_support_price_tolerance",
+        "units": 18
+      },
+      {
+        "category": "storage",
+        "operation": "retained_witness_and_violation_mask",
+        "units": 10
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_clause_header",
+        "units": 11
+      },
+      {
+        "category": "witness_check",
+        "operation": "retained_literal",
+        "units": 16
+      },
+      {
+        "category": "witness_compile",
+        "operation": "mask_and_original_weight",
+        "units": 10
+      },
+      {
+        "category": "witness_compile",
+        "operation": "objective_violation_pass",
+        "units": 1
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_clause_header",
+        "units": 7
+      },
+      {
+        "category": "witness_compile",
+        "operation": "retained_literal",
+        "units": 7
+      }
+    ]
+  },
+  "timing": {
+    "wall_ns": 647900,
+    "process_ns": 0
+  },
+  "answer": {
+    "kind": "repair",
+    "bound": 0,
+    "witness": {
+      "model": 125,
+      "violation_mask": 61,
+      "original_cost": 8
+    },
+    "source": "f3d374f844cdc1f47bd0a5533d8b44c208b15692425c814807abd9d896eb54d0",
+    "cost_source": "b87787923faf260ef9edc11ea0e98212418f42a97133d3e9f4c3f432cff75e2c",
+    "proof": "3cb0d31e7f134e2e552f6edf96b48df3207175bf394f035ebf97a4cbc233d051",
+    "geometry": "cb85a4549a203c4b0f38680fc6089c7d82802b0209cb7c3c38f614eb153a42d9",
+    "remaining_modes": 4,
+    "lower": 2,
+    "upper": 2,
+    "mandatory_interval": [
+      2,
+      4
+    ]
+  },
+  "known": {
+    "2": 0
+  },
+  "final_bank": {
+    "lower": 2,
+    "upper": 2,
+    "witness": 3,
+    "source": "f3d374f844cdc1f47bd0a5533d8b44c208b15692425c814807abd9d896eb54d0",
+    "raw_receipt": "3cb0d31e7f134e2e552f6edf96b48df3207175bf394f035ebf97a4cbc233d051"
+  },
+  "invoice": {
+    "named_units": 179,
+    "local_units": 175,
+    "provider_software_units": 4,
+    "mandatory_audits": 0,
+    "decision_audits": 1,
+    "proof_calls": 0
+  }
+}

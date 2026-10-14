@@ -1,0 +1,152 @@
+{
+  "outputs": 32,
+  "base_audit_fee": 8969,
+  "physical_audits": 1867,
+  "named_units": 453852,
+  "setup_units": 4576,
+  "lower_bound_sum": 8206,
+  "aggregate_checked_ratio": "8969/8206",
+  "max_checked_ratio": "33/20",
+  "invoice": {
+    "total": 453852,
+    "by_category": {
+      "source": 4020,
+      "preparation": 556,
+      "execution": 122767,
+      "provider": 22404,
+      "receipt": 28005,
+      "action": 47232,
+      "check": 86656,
+      "bound": 33536,
+      "dual_check": 27712,
+      "bound_check": 67069,
+      "export": 13895
+    },
+    "operations": [
+      {
+        "category": "action",
+        "operation": "two_component_endpoint_choice",
+        "units": 47232
+      },
+      {
+        "category": "bound",
+        "operation": "mandatory_fee_and_remaining_dual",
+        "units": 17792
+      },
+      {
+        "category": "bound",
+        "operation": "observed_middle_mandatory_neighbors",
+        "units": 15744
+      },
+      {
+        "category": "bound_check",
+        "operation": "independent_adjacency_mandatory_expansion",
+        "units": 21474
+      },
+      {
+        "category": "bound_check",
+        "operation": "independent_receipt_binding",
+        "units": 31739
+      },
+      {
+        "category": "bound_check",
+        "operation": "sum_mandatory_cost_and_residual_dual",
+        "units": 13856
+      },
+      {
+        "category": "check",
+        "operation": "compatible_local_cost_comparison",
+        "units": 39424
+      },
+      {
+        "category": "check",
+        "operation": "original_clause",
+        "units": 47232
+      },
+      {
+        "category": "dual_check",
+        "operation": "all_vertex_capacity_checks",
+        "units": 4096
+      },
+      {
+        "category": "dual_check",
+        "operation": "nonnegative_edge_and_endpoint_loads",
+        "units": 23616
+      },
+      {
+        "category": "execution",
+        "operation": "adaptive_dual_edge_raise",
+        "units": 3640
+      },
+      {
+        "category": "execution",
+        "operation": "adaptive_dual_edge_state",
+        "units": 19680
+      },
+      {
+        "category": "execution",
+        "operation": "heap_integer_ratio_comparison",
+        "units": 44310
+      },
+      {
+        "category": "execution",
+        "operation": "heap_pop_words",
+        "units": 5388
+      },
+      {
+        "category": "execution",
+        "operation": "heap_push_words",
+        "units": 5388
+      },
+      {
+        "category": "execution",
+        "operation": "heap_sift_words",
+        "units": 15948
+      },
+      {
+        "category": "execution",
+        "operation": "initialize_and_emit_dynamic_dual",
+        "units": 8032
+      },
+      {
+        "category": "execution",
+        "operation": "middle_neighbor_mandatory_expansion",
+        "units": 11046
+      },
+      {
+        "category": "execution",
+        "operation": "record_tight_or_mandatory_query",
+        "units": 9335
+      },
+      {
+        "category": "export",
+        "operation": "action_and_cost_certificate_words",
+        "units": 13895
+      },
+      {
+        "category": "preparation",
+        "operation": "graph_adjacency_words",
+        "units": 556
+      },
+      {
+        "category": "provider",
+        "operation": "construct_and_export_receipt_words",
+        "units": 22404
+      },
+      {
+        "category": "receipt",
+        "operation": "bind_source_request_value_and_fee",
+        "units": 28005
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_graph_alphabet_and_fees",
+        "units": 4020
+      }
+    ]
+  },
+  "trace_bytes": 570621,
+  "diagnostic_bytes": 8470,
+  "arm_cpu_ns": 46875000,
+  "arm_wall_ns": 61418800
+}

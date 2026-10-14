@@ -1,0 +1,27 @@
+test_adaptive_acquisition_skips_sufficient_retained_information (verification.test_v2_f14_retention.RetentionDevelopment.test_adaptive_acquisition_skips_sufficient_retained_information) ... ok
+test_adaptive_mean_repair_does_not_read_full_law (verification.test_v2_f14_retention.RetentionDevelopment.test_adaptive_mean_repair_does_not_read_full_law) ... ok
+test_budget_failure_is_not_partial_success (verification.test_v2_f14_retention.RetentionDevelopment.test_budget_failure_is_not_partial_success) ... ok
+test_common_production_and_full_source_truth_are_explicit (verification.test_v2_f14_retention.RetentionDevelopment.test_common_production_and_full_source_truth_are_explicit) ... ERROR
+test_discarded_source_cannot_be_read_by_selective_solver (verification.test_v2_f14_retention.RetentionDevelopment.test_discarded_source_cannot_be_read_by_selective_solver) ... Windows fatal exception: access violation
+
+Current thread 0x00002a24 (most recent call first):
+  File "C:\Users\trist\projects\value_logic\v2\experiments\retention.py", line 93 in _dot
+  File "C:\Users\trist\projects\value_logic\v2\experiments\retention.py", line 155 in <genexpr>
+  File "C:\Users\trist\projects\value_logic\v2\experiments\retention.py", line 155 in __init__
+  File "C:\Users\trist\projects\value_logic\v2\experiments\retention.py", line 398 in recover_fiber
+  File "C:\Users\trist\projects\value_logic\verification\test_v2_f14_retention.py", line 122 in test_discarded_source_cannot_be_read_by_selective_solver
+  File "C:\Python313\Lib\unittest\case.py", line 606 in _callTestMethod
+  File "C:\Python313\Lib\unittest\case.py", line 651 in run
+  File "C:\Python313\Lib\unittest\case.py", line 707 in __call__
+  File "C:\Python313\Lib\unittest\suite.py", line 122 in run
+  File "C:\Python313\Lib\unittest\suite.py", line 84 in __call__
+  File "C:\Python313\Lib\unittest\suite.py", line 122 in run
+  File "C:\Python313\Lib\unittest\suite.py", line 84 in __call__
+  File "C:\Python313\Lib\unittest\suite.py", line 122 in run
+  File "C:\Python313\Lib\unittest\suite.py", line 84 in __call__
+  File "C:\Python313\Lib\unittest\runner.py", line 240 in run
+  File "C:\Python313\Lib\unittest\main.py", line 270 in runTests
+  File "C:\Python313\Lib\unittest\main.py", line 104 in __init__
+  File "C:\Python313\Lib\unittest\__main__.py", line 18 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 203 in _run_module_as_main

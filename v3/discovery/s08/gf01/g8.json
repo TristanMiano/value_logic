@@ -1,0 +1,278 @@
+{
+  "group": {
+    "name": "g8",
+    "interval": [
+      2,
+      7
+    ],
+    "weights": [
+      4,
+      2,
+      5,
+      3
+    ],
+    "centers": [
+      3,
+      2,
+      2,
+      7
+    ]
+  },
+  "certificate": {
+    "source": "be48af1b185c5362f9e0eb0869d7ac3c76e1ab276c65d55381a01a6e81828cd8",
+    "rows": [
+      [
+        [
+          0,
+          0,
+          []
+        ]
+      ],
+      [
+        [
+          0,
+          32,
+          [
+            0
+          ]
+        ],
+        [
+          4,
+          16,
+          [
+            1
+          ]
+        ],
+        [
+          8,
+          0,
+          [
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          32,
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          4,
+          16,
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          8,
+          0,
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          32,
+          [
+            0,
+            2,
+            2
+          ]
+        ],
+        [
+          4,
+          16,
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        [
+          8,
+          0,
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          32,
+          [
+            0,
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          4,
+          16,
+          [
+            1,
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          8,
+          0,
+          [
+            2,
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          15,
+          32,
+          [
+            0,
+            2,
+            2,
+            1
+          ]
+        ],
+        [
+          19,
+          16,
+          [
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        [
+          23,
+          0,
+          [
+            2,
+            2,
+            2,
+            1
+          ]
+        ],
+        [
+          30,
+          32,
+          [
+            0,
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          34,
+          16,
+          [
+            1,
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          38,
+          0,
+          [
+            2,
+            2,
+            2,
+            2
+          ]
+        ]
+      ]
+    ],
+    "frontier": [
+      [
+        8,
+        94,
+        [
+          2,
+          2,
+          2,
+          0
+        ]
+      ]
+    ]
+  },
+  "checked": {
+    "states": 18,
+    "transitions": 30,
+    "frontier_size": 1
+  },
+  "action_checks": 81,
+  "target_checks": 103,
+  "nominal_actions": 13,
+  "nominal_regret": 8,
+  "robust_regret": 8,
+  "strict": false,
+  "negative_checks": 3,
+  "invoice": {
+    "total": 484,
+    "by_category": {
+      "planning": 484
+    },
+    "operations": [
+      {
+        "category": "planning",
+        "operation": "local_frontier_transition",
+        "units": 354
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_point_comparison",
+        "units": 81
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sort_upper_comparisons",
+        "units": 21
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sorted_scan",
+        "units": 28
+      }
+    ]
+  },
+  "checking_invoice": {
+    "total": 602,
+    "by_category": {
+      "dp_check": 602
+    },
+    "operations": [
+      {
+        "category": "dp_check",
+        "operation": "exact_transition_and_argmin",
+        "units": 444
+      },
+      {
+        "category": "dp_check",
+        "operation": "independent_returned_endpoint_bound",
+        "units": 48
+      },
+      {
+        "category": "dp_check",
+        "operation": "pairwise_dominance_comparison",
+        "units": 110
+      }
+    ]
+  }
+}

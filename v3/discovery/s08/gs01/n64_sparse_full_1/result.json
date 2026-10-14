@@ -1,0 +1,122 @@
+{
+  "outputs": 32,
+  "base_audit_fee": 10080,
+  "physical_audits": 2048,
+  "named_units": 339679,
+  "setup_units": 7058,
+  "lower_bound_sum": 8183,
+  "aggregate_checked_ratio": "1440/1169",
+  "max_checked_ratio": "9/4",
+  "invoice": {
+    "total": 339679,
+    "by_category": {
+      "source": 4020,
+      "planning": 1650,
+      "dual_check": 29100,
+      "provider": 24576,
+      "execution": 9920,
+      "receipt": 30720,
+      "action": 47232,
+      "check": 78720,
+      "bound": 33536,
+      "bound_check": 70229,
+      "export": 9976
+    },
+    "operations": [
+      {
+        "category": "action",
+        "operation": "two_component_endpoint_choice",
+        "units": 47232
+      },
+      {
+        "category": "bound",
+        "operation": "mandatory_fee_and_remaining_dual",
+        "units": 17792
+      },
+      {
+        "category": "bound",
+        "operation": "observed_middle_mandatory_neighbors",
+        "units": 15744
+      },
+      {
+        "category": "bound_check",
+        "operation": "independent_adjacency_mandatory_expansion",
+        "units": 21557
+      },
+      {
+        "category": "bound_check",
+        "operation": "independent_receipt_binding",
+        "units": 34816
+      },
+      {
+        "category": "bound_check",
+        "operation": "sum_mandatory_cost_and_residual_dual",
+        "units": 13856
+      },
+      {
+        "category": "check",
+        "operation": "compatible_local_cost_comparison",
+        "units": 31488
+      },
+      {
+        "category": "check",
+        "operation": "original_clause",
+        "units": 47232
+      },
+      {
+        "category": "dual_check",
+        "operation": "all_vertex_capacity_checks",
+        "units": 4224
+      },
+      {
+        "category": "dual_check",
+        "operation": "nonnegative_edge_and_endpoint_loads",
+        "units": 24354
+      },
+      {
+        "category": "dual_check",
+        "operation": "tight_cover_and_complete_edge_coverage",
+        "units": 522
+      },
+      {
+        "category": "execution",
+        "operation": "full_nonisolated_query_list",
+        "units": 9920
+      },
+      {
+        "category": "export",
+        "operation": "action_and_cost_certificate_words",
+        "units": 9976
+      },
+      {
+        "category": "planning",
+        "operation": "emit_cover_and_dual",
+        "units": 174
+      },
+      {
+        "category": "planning",
+        "operation": "uncovered_edge_dual_raise_and_tight_vertices",
+        "units": 1476
+      },
+      {
+        "category": "provider",
+        "operation": "construct_and_export_receipt_words",
+        "units": 24576
+      },
+      {
+        "category": "receipt",
+        "operation": "bind_source_request_value_and_fee",
+        "units": 30720
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_graph_alphabet_and_fees",
+        "units": 4020
+      }
+    ]
+  },
+  "trace_bytes": 576465,
+  "diagnostic_bytes": 8054,
+  "arm_cpu_ns": 62500000,
+  "arm_wall_ns": 55055900
+}

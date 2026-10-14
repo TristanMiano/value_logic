@@ -1,0 +1,122 @@
+{
+  "group": {
+    "name": "g15",
+    "interval": [
+      0,
+      3
+    ],
+    "weights": [
+      5
+    ],
+    "centers": [
+      3
+    ]
+  },
+  "certificate": {
+    "source": "c12dd3e0f3558c8546ef50bf4924fc5f671b57809c2cc42673826a62a5a7b139",
+    "rows": [
+      [
+        [
+          0,
+          0,
+          []
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            0
+          ]
+        ],
+        [
+          15,
+          0,
+          [
+            1
+          ]
+        ],
+        [
+          30,
+          0,
+          [
+            2
+          ]
+        ]
+      ]
+    ],
+    "frontier": [
+      [
+        0,
+        30,
+        [
+          0
+        ]
+      ]
+    ]
+  },
+  "checked": {
+    "states": 3,
+    "transitions": 3,
+    "frontier_size": 1
+  },
+  "action_checks": 3,
+  "target_checks": 31,
+  "nominal_actions": 3,
+  "nominal_regret": 0,
+  "robust_regret": 0,
+  "strict": false,
+  "negative_checks": 3,
+  "invoice": {
+    "total": 66,
+    "by_category": {
+      "planning": 66
+    },
+    "operations": [
+      {
+        "category": "planning",
+        "operation": "local_frontier_transition",
+        "units": 30
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_point_comparison",
+        "units": 18
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sort_upper_comparisons",
+        "units": 6
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sorted_scan",
+        "units": 12
+      }
+    ]
+  },
+  "checking_invoice": {
+    "total": 76,
+    "by_category": {
+      "dp_check": 76
+    },
+    "operations": [
+      {
+        "category": "dp_check",
+        "operation": "exact_transition_and_argmin",
+        "units": 39
+      },
+      {
+        "category": "dp_check",
+        "operation": "independent_returned_endpoint_bound",
+        "units": 12
+      },
+      {
+        "category": "dp_check",
+        "operation": "pairwise_dominance_comparison",
+        "units": 25
+      }
+    ]
+  }
+}

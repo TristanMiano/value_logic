@@ -1,0 +1,1558 @@
+{
+  "status": "complete",
+  "cases": [
+    {
+      "name": "n2_path",
+      "states": 16,
+      "compatible_world_checks": 36,
+      "action_checks": 48,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 5,
+          "knapsack": {
+            "fee": 5,
+            "chosen": [
+              0,
+              1
+            ],
+            "target": 2
+          },
+          "bellman_states": 8,
+          "max_greedy_ratio": "5/4"
+        },
+        {
+          "tau": 1,
+          "minimax_fee": 1,
+          "knapsack": {
+            "fee": 1,
+            "chosen": [
+              1
+            ],
+            "target": 1
+          },
+          "bellman_states": 5,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 2,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 1487,
+        "by_category": {
+          "source": 54,
+          "geometry": 8,
+          "action": 224,
+          "geometry_check": 80,
+          "action_check": 640,
+          "receipt_check": 408,
+          "planning": 73
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 224
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 288
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 160
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 192
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 8
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 80
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 15
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 58
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 408
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 54
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "n2_star",
+      "states": 16,
+      "compatible_world_checks": 36,
+      "action_checks": 48,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 12,
+          "knapsack": {
+            "fee": 12,
+            "chosen": [
+              0,
+              1
+            ],
+            "target": 2
+          },
+          "bellman_states": 8,
+          "max_greedy_ratio": "12/7"
+        },
+        {
+          "tau": 1,
+          "minimax_fee": 5,
+          "knapsack": {
+            "fee": 5,
+            "chosen": [
+              0
+            ],
+            "target": 1
+          },
+          "bellman_states": 5,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 2,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 1487,
+        "by_category": {
+          "source": 54,
+          "geometry": 8,
+          "action": 224,
+          "geometry_check": 80,
+          "action_check": 640,
+          "receipt_check": 408,
+          "planning": 73
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 224
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 288
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 160
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 192
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 8
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 80
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 15
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 58
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 408
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 54
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "n3_path",
+      "states": 64,
+      "compatible_world_checks": 216,
+      "action_checks": 576,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 10,
+          "knapsack": {
+            "fee": 10,
+            "chosen": [
+              0,
+              1,
+              2
+            ],
+            "target": 4
+          },
+          "bellman_states": 26,
+          "max_greedy_ratio": "10/9"
+        },
+        {
+          "tau": 1,
+          "minimax_fee": 3,
+          "knapsack": {
+            "fee": 3,
+            "chosen": [
+              0,
+              1
+            ],
+            "target": 3
+          },
+          "bellman_states": 21,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 2,
+          "minimax_fee": 1,
+          "knapsack": {
+            "fee": 1,
+            "chosen": [
+              1
+            ],
+            "target": 2
+          },
+          "bellman_states": 14,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 4,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 10119,
+        "by_category": {
+          "source": 87,
+          "geometry": 16,
+          "action": 1728,
+          "geometry_check": 576,
+          "action_check": 5056,
+          "receipt_check": 2448,
+          "planning": 208
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 1728
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 2304
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 1216
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 1536
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 16
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 576
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 34
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 174
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 2448
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 87
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "n3_star",
+      "states": 64,
+      "compatible_world_checks": 216,
+      "action_checks": 576,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 15,
+          "knapsack": {
+            "fee": 15,
+            "chosen": [
+              0,
+              1,
+              2
+            ],
+            "target": 4
+          },
+          "bellman_states": 26,
+          "max_greedy_ratio": "5/4"
+        },
+        {
+          "tau": 1,
+          "minimax_fee": 8,
+          "knapsack": {
+            "fee": 8,
+            "chosen": [
+              0,
+              2
+            ],
+            "target": 3
+          },
+          "bellman_states": 21,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 2,
+          "minimax_fee": 3,
+          "knapsack": {
+            "fee": 3,
+            "chosen": [
+              0
+            ],
+            "target": 2
+          },
+          "bellman_states": 14,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 4,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 10119,
+        "by_category": {
+          "source": 87,
+          "geometry": 16,
+          "action": 1728,
+          "geometry_check": 576,
+          "action_check": 5056,
+          "receipt_check": 2448,
+          "planning": 208
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 1728
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 2304
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 1216
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 1536
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 16
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 576
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 34
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 174
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 2448
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 87
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "n4_path",
+      "states": 256,
+      "compatible_world_checks": 1296,
+      "action_checks": 6912,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 18,
+          "knapsack": {
+            "fee": 18,
+            "chosen": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "target": 6
+          },
+          "bellman_states": 80,
+          "max_greedy_ratio": "11/8"
+        },
+        {
+          "tau": 1,
+          "minimax_fee": 11,
+          "knapsack": {
+            "fee": 11,
+            "chosen": [
+              1,
+              2,
+              3
+            ],
+            "target": 5
+          },
+          "bellman_states": 72,
+          "max_greedy_ratio": "11/8"
+        },
+        {
+          "tau": 3,
+          "minimax_fee": 4,
+          "knapsack": {
+            "fee": 4,
+            "chosen": [
+              1,
+              3
+            ],
+            "target": 3
+          },
+          "bellman_states": 36,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 6,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 57349,
+        "by_category": {
+          "source": 120,
+          "geometry": 24,
+          "action": 10240,
+          "geometry_check": 3328,
+          "action_check": 30208,
+          "receipt_check": 13056,
+          "planning": 373
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 10240
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 13824
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 7168
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 9216
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 24
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 3328
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 49
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 324
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 13056
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 120
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "n4_star",
+      "states": 256,
+      "compatible_world_checks": 1296,
+      "action_checks": 6912,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 20,
+          "knapsack": {
+            "fee": 20,
+            "chosen": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "target": 6
+          },
+          "bellman_states": 80,
+          "max_greedy_ratio": "20/13"
+        },
+        {
+          "tau": 1,
+          "minimax_fee": 15,
+          "knapsack": {
+            "fee": 15,
+            "chosen": [
+              0,
+              1,
+              2
+            ],
+            "target": 5
+          },
+          "bellman_states": 73,
+          "max_greedy_ratio": "15/13"
+        },
+        {
+          "tau": 3,
+          "minimax_fee": 7,
+          "knapsack": {
+            "fee": 7,
+            "chosen": [
+              0
+            ],
+            "target": 3
+          },
+          "bellman_states": 43,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 6,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 57339,
+        "by_category": {
+          "source": 120,
+          "geometry": 24,
+          "action": 10240,
+          "geometry_check": 3328,
+          "action_check": 30208,
+          "receipt_check": 13056,
+          "planning": 363
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 10240
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 13824
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 7168
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 9216
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 24
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 3328
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 48
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 315
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 13056
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 120
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "n4_cycle",
+      "states": 256,
+      "compatible_world_checks": 1296,
+      "action_checks": 20736,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 17,
+          "knapsack": {
+            "fee": 17,
+            "chosen": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "target": 8
+          },
+          "bellman_states": 80,
+          "max_greedy_ratio": "17/11"
+        },
+        {
+          "tau": 2,
+          "minimax_fee": 10,
+          "knapsack": {
+            "fee": 10,
+            "chosen": [
+              0,
+              1,
+              2
+            ],
+            "target": 6
+          },
+          "bellman_states": 61,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 4,
+          "minimax_fee": 6,
+          "knapsack": {
+            "fee": 6,
+            "chosen": [
+              0,
+              2
+            ],
+            "target": 4
+          },
+          "bellman_states": 27,
+          "max_greedy_ratio": 2
+        },
+        {
+          "tau": 8,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 70899,
+        "by_category": {
+          "source": 152,
+          "geometry": 32,
+          "action": 13312,
+          "geometry_check": 4096,
+          "action_check": 39936,
+          "receipt_check": 13056,
+          "planning": 315
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 13312
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 18432
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 9216
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 12288
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 32
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 4096
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 57
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 258
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 13056
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 152
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "n5_path",
+      "states": 1024,
+      "compatible_world_checks": 7776,
+      "action_checks": 0,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 12,
+          "knapsack": {
+            "fee": 12,
+            "chosen": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "target": 8
+          },
+          "bellman_states": 242,
+          "max_greedy_ratio": "3/2"
+        },
+        {
+          "tau": 2,
+          "minimax_fee": 6,
+          "knapsack": {
+            "fee": 6,
+            "chosen": [
+              1,
+              2,
+              3
+            ],
+            "target": 6
+          },
+          "bellman_states": 191,
+          "max_greedy_ratio": "3/2"
+        },
+        {
+          "tau": 4,
+          "minimax_fee": 4,
+          "knapsack": {
+            "fee": 4,
+            "chosen": [
+              1,
+              2
+            ],
+            "target": 4
+          },
+          "bellman_states": 94,
+          "max_greedy_ratio": 2
+        },
+        {
+          "tau": 8,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 298489,
+        "by_category": {
+          "source": 153,
+          "geometry": 32,
+          "action": 54272,
+          "geometry_check": 17408,
+          "action_check": 160768,
+          "receipt_check": 65280,
+          "planning": 576
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 54272
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 73728
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 37888
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 49152
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 32
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 17408
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 62
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 514
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 65280
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 153
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "n5_star",
+      "states": 1024,
+      "compatible_world_checks": 7776,
+      "action_checks": 0,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 15,
+          "knapsack": {
+            "fee": 15,
+            "chosen": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "target": 8
+          },
+          "bellman_states": 242,
+          "max_greedy_ratio": "15/13"
+        },
+        {
+          "tau": 2,
+          "minimax_fee": 5,
+          "knapsack": {
+            "fee": 5,
+            "chosen": [
+              0,
+              2,
+              3
+            ],
+            "target": 6
+          },
+          "bellman_states": 212,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 4,
+          "minimax_fee": 2,
+          "knapsack": {
+            "fee": 2,
+            "chosen": [
+              0
+            ],
+            "target": 4
+          },
+          "bellman_states": 128,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 8,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 298471,
+        "by_category": {
+          "source": 153,
+          "geometry": 32,
+          "action": 54272,
+          "geometry_check": 17408,
+          "action_check": 160768,
+          "receipt_check": 65280,
+          "planning": 558
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 54272
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 73728
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 37888
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 49152
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 32
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 17408
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 61
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 497
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 65280
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 153
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "n6_path",
+      "states": 4096,
+      "compatible_world_checks": 46656,
+      "action_checks": 0,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 26,
+          "knapsack": {
+            "fee": 26,
+            "chosen": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "target": 10
+          },
+          "bellman_states": 728,
+          "max_greedy_ratio": "13/8"
+        },
+        {
+          "tau": 2,
+          "minimax_fee": 19,
+          "knapsack": {
+            "fee": 19,
+            "chosen": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ],
+            "target": 8
+          },
+          "bellman_states": 623,
+          "max_greedy_ratio": "17/9"
+        },
+        {
+          "tau": 5,
+          "minimax_fee": 9,
+          "knapsack": {
+            "fee": 9,
+            "chosen": [
+              2,
+              4,
+              5
+            ],
+            "target": 5
+          },
+          "bellman_states": 235,
+          "max_greedy_ratio": "9/7"
+        },
+        {
+          "tau": 10,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 1473597,
+        "by_category": {
+          "source": 186,
+          "geometry": 40,
+          "action": 270336,
+          "geometry_check": 86016,
+          "action_check": 802816,
+          "receipt_check": 313344,
+          "planning": 859
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 270336
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 368640
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 188416
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 245760
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 40
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 86016
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 78
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 781
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 313344
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 186
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "n6_star",
+      "states": 4096,
+      "compatible_world_checks": 46656,
+      "action_checks": 0,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 18,
+          "knapsack": {
+            "fee": 18,
+            "chosen": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "target": 10
+          },
+          "bellman_states": 728,
+          "max_greedy_ratio": "9/7"
+        },
+        {
+          "tau": 2,
+          "minimax_fee": 8,
+          "knapsack": {
+            "fee": 8,
+            "chosen": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "target": 8
+          },
+          "bellman_states": 686,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 5,
+          "minimax_fee": 4,
+          "knapsack": {
+            "fee": 4,
+            "chosen": [
+              0
+            ],
+            "target": 5
+          },
+          "bellman_states": 384,
+          "max_greedy_ratio": 1
+        },
+        {
+          "tau": 10,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 1473559,
+        "by_category": {
+          "source": 186,
+          "geometry": 40,
+          "action": 270336,
+          "geometry_check": 86016,
+          "action_check": 802816,
+          "receipt_check": 313344,
+          "planning": 821
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 270336
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 368640
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 188416
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 245760
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 40
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 86016
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 75
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 746
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 313344
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 186
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "n6_cycle",
+      "states": 4096,
+      "compatible_world_checks": 46656,
+      "action_checks": 0,
+      "strict_edgewise_gap": 0,
+      "policies": [
+        {
+          "tau": 0,
+          "minimax_fee": 22,
+          "knapsack": {
+            "fee": 22,
+            "chosen": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "target": 12
+          },
+          "bellman_states": 728,
+          "max_greedy_ratio": "3/2"
+        },
+        {
+          "tau": 3,
+          "minimax_fee": 15,
+          "knapsack": {
+            "fee": 15,
+            "chosen": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "target": 9
+          },
+          "bellman_states": 560,
+          "max_greedy_ratio": "15/11"
+        },
+        {
+          "tau": 6,
+          "minimax_fee": 6,
+          "knapsack": {
+            "fee": 6,
+            "chosen": [
+              1,
+              4,
+              5
+            ],
+            "target": 6
+          },
+          "bellman_states": 195,
+          "max_greedy_ratio": "6/5"
+        },
+        {
+          "tau": 12,
+          "minimax_fee": 0,
+          "knapsack": {
+            "fee": 0,
+            "chosen": [],
+            "target": 0
+          },
+          "bellman_states": 1,
+          "max_greedy_ratio": 1
+        }
+      ],
+      "invoice": {
+        "total": 1690506,
+        "by_category": {
+          "source": 218,
+          "geometry": 48,
+          "action": 319488,
+          "geometry_check": 98304,
+          "action_check": 958464,
+          "receipt_check": 313344,
+          "planning": 640
+        },
+        "operations": [
+          {
+            "category": "action",
+            "operation": "balanced_unresolved_and_exact_resolved_components",
+            "units": 319488
+          },
+          {
+            "category": "action_check",
+            "operation": "all_compatible_local_regrets",
+            "units": 442368
+          },
+          {
+            "category": "action_check",
+            "operation": "joint_attaining_original_objective",
+            "units": 221184
+          },
+          {
+            "category": "action_check",
+            "operation": "original_hard_clause",
+            "units": 294912
+          },
+          {
+            "category": "geometry",
+            "operation": "bipartite_color_edge",
+            "units": 48
+          },
+          {
+            "category": "geometry_check",
+            "operation": "complete_bipartite_coloring",
+            "units": 98304
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_and_chosen_plan",
+            "units": 86
+          },
+          {
+            "category": "planning",
+            "operation": "degree_quota_knapsack_transition",
+            "units": 554
+          },
+          {
+            "category": "receipt_check",
+            "operation": "bind_ternary_source_request_and_fee",
+            "units": 313344
+          },
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 218
+          }
+        ]
+      },
+      "physical_audits": 0
+    },
+    {
+      "name": "triangle",
+      "states": 64,
+      "compatible_world_checks": 216,
+      "action_checks": 1728,
+      "strict_edgewise_gap": 1,
+      "policies": [],
+      "invoice": {
+        "total": 119,
+        "by_category": {
+          "source": 119
+        },
+        "operations": [
+          {
+            "category": "source",
+            "operation": "original_clauses_features_graph_alphabet_and_fees",
+            "units": 119
+          }
+        ]
+      },
+      "physical_audits": 0
+    }
+  ],
+  "physical_audits": 0
+}

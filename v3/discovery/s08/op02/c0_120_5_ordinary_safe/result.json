@@ -1,0 +1,97 @@
+{
+  "outputs": 64,
+  "base_audit_fee": 160,
+  "physical_audits": 96,
+  "named_units": 67375,
+  "setup_units": 56111,
+  "invoice": {
+    "total": 67375,
+    "by_category": {
+      "source": 113,
+      "geometry": 28,
+      "shared_acquisition": 11,
+      "shared_planning": 52368,
+      "shared_extraction": 2246,
+      "shared_admission": 1205,
+      "policy_load": 140,
+      "selection": 1440,
+      "provider": 1248,
+      "receipt_check": 1920,
+      "action_check": 1920,
+      "bounds": 3200,
+      "export": 1536
+    },
+    "operations": [
+      {
+        "category": "action_check",
+        "operation": "original_clause",
+        "units": 1920
+      },
+      {
+        "category": "bounds",
+        "operation": "source_endpoint_regret_upper_and_optimum_lower",
+        "units": 3200
+      },
+      {
+        "category": "export",
+        "operation": "source_action_receipts_and_bill",
+        "units": 1536
+      },
+      {
+        "category": "geometry",
+        "operation": "exact_original_resolution_check",
+        "units": 28
+      },
+      {
+        "category": "policy_load",
+        "operation": "compact_policy_words",
+        "units": 140
+      },
+      {
+        "category": "provider",
+        "operation": "physical_cost_receipt_export",
+        "units": 1248
+      },
+      {
+        "category": "receipt_check",
+        "operation": "bound_source_request_fee_sequence",
+        "units": 1920
+      },
+      {
+        "category": "selection",
+        "operation": "policy_state_lookup",
+        "units": 1440
+      },
+      {
+        "category": "shared_acquisition",
+        "operation": "allocated_original_resolution",
+        "units": 11
+      },
+      {
+        "category": "shared_admission",
+        "operation": "actual_safe_policy_check",
+        "units": 1205
+      },
+      {
+        "category": "shared_extraction",
+        "operation": "actual_reachable_extraction",
+        "units": 2246
+      },
+      {
+        "category": "shared_planning",
+        "operation": "actual_original_build_including_discarded_states",
+        "units": 52368
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_support_and_fee_admission",
+        "units": 113
+      }
+    ]
+  },
+  "observed_max_fee": 4,
+  "policy_worst_fee": 4,
+  "complete_query_cap": 4,
+  "cpu_ns": 0,
+  "wall_ns": 6171000
+}

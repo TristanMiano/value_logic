@@ -869,3 +869,22 @@ and compilation. If the route remains an ordinary method with a higher bill
 and no supported complete price region, preserve the F01 result and redirect.
 The next requested hour is not started; [CONTINUE](discovery/CONTINUE.md)
 governs its recovery and new observed clock.
+
+## Discovery s08 â€” October 13â€“14, 2026; Codex (GPT-6)
+
+The [four-hour checkpoint](discovery/s08/cp01.md) adds **240.038643011666666â€¦**
+research minutes; C001/program **737.524219120783333â€¦**, phase
+**1823.655586484933333â€¦**. [Exact effective records](discovery/s08/effective_actuals.json)
+exclude compaction, crashed open time and publication. All clocks are closed.
+
+| Claim | Current disposition | Evidence and restriction |
+|---|---|---|
+| DS-S31 invoice-target learning | DEVELOPMENT | [Paid comparison](discovery/s08/invoice_service_findings.md): query targets can contract, but direct on-policy learning wins physical fee on the 20 nontrivial fresh development duties. Pair calibration alone does not establish policy adequacy; no general learning superiority. |
+| DS-S32 source-bound budgeted cover | DEVELOPMENT | [Actual service](discovery/s08/graph_cover_findings.md): bc02 delivers 512 outputs per arm, budget 2,886 fee/137,310 named units versus cover 2,937/157,452 and anchor 4,608/152,022. Ordinary budget ties. General graph computation remains costly; complete economic prices unknown. |
+| DS-S32 matroid/group queries | DEVELOPMENT | [Finite extension](discovery/s08/matroid_findings.md): weighted rank cover under stated geometry, shared groups retain cover submodularity, but robust action selection can remain hard. Generated source admission is not a general recognizer. |
+| DS-S33 robust frontiers and box proof | DEVELOPMENT | [Shared frontier](discovery/s08/shared_findings.md), [six actual scalar proofs](discovery/s08/box_bridge.md). Cartesian cost boxes support the exact induced objective; correlated groups need their own geometry and only inherit the box upper. Ordinary interval optimization is prior art. |
+| P3-POS01 / F01 | OUTSTANDING; no promotion | [Same-event reassessment](discovery/s08/forecast_final.md): 20â€“45%, central30%, change0 points since s07. New branches do not inherit F01. Ordinary mirroring rules out superiority over that mirror but does not alone disqualify substantial synthesis. |
+
+S31â€“S33 add three families, bringing breadth to 33. Next use the
+[portable continuation](discovery/CONTINUE.md); default60 minutes with explicit
+author duration overrides. P3-11 remains deferred.

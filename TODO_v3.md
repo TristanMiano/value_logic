@@ -5,8 +5,8 @@ Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.
 Current amendment: [discovery-first direction](v3/decisions/2026-10-11_discovery_first_amendment.md).
 
 **Selected next: P3-SEARCH-01, a continuing discovery program.** Its first
-240-minute research cycle remains open with **497.485576109117 research minutes**
-credited. Its floor is satisfied. The author now directs **one-hour increments**
+240-minute research cycle remains open with **737.524219120783 research minutes**
+credited. Its floor is satisfied. The default is **one-hour increments**, subject to explicit author overrides,
 with a portable handoff after each; historical central/high cycle forecasts
 remain 360/480 minutes. **P3-POS01, the materially useful positive-result objective,
 is OUTSTANDING. P3-11 is deferred pending discovery readiness.**
@@ -22,11 +22,11 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **1583.616943473267 minutes**.
+Phase-three qualifying research is **1823.655586484933 minutes**.
 The [960-minute checkpoint](v3/work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
 was satisfied at P3-09, with **35.847797958367 minutes** of observed overshoot
 at that assessment; current phase research exceeds 960 minutes by
-**623.616943473267 minutes**.
+**863.655586484933 minutes**.
 Later tasks and author gates remain necessary.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
@@ -64,8 +64,8 @@ scope, with **90.310005771417 measured research minutes** and an
 **P3-10 is COMPLETE at explicit amended final-execution and interpretation
 scope**, with **90.283569405783 measured research minutes** and
 [independently reconstructed results](v3/experiments/results.md).
-**Next: continue P3-SEARCH-01-C001 from [s07](v3/discovery/s07/cp01.md), using
-[the current prompt](v3/discovery/CONTINUE.md) for one further requested hour. P3-11 is deferred.**
+**Next: continue P3-SEARCH-01-C001 from [s08](v3/discovery/s08/cp01.md), using
+[the current prompt](v3/discovery/CONTINUE.md) for the next requested duration (default one hour). P3-11 is deferred.**
 Phase two remains complete; P3-C–D remain unattempted. P3-N01 is now
 **SUPPORTED at modest formal-adaptation and implementation-synthesis scope**;
 Q3 affirmative advantage over the strongest ordinary combination remains open.
@@ -81,50 +81,40 @@ Read this plan with the [phase-three procedure](v3/RESEARCH_PROTOCOL.md),
 selected task's prior sessions. The [primary-source orientation](v3/literature/00_orientation.md)
 supports planning; it is not a completed literature audit or theorem import.
 
-## Current author selection — October 12, 2026
+## Current author selection — October 13–14, 2026
 
-**Adopted: discovery-first protocol amendment and P3-SEARCH-01 detour.**
-The author directs substantially more hypothesis generation and derivation,
-cheap early elimination, fewer longer tasks and frequent recurrence until
-materially promising candidates justify rigorous challenge. The
-[decision](v3/decisions/2026-10-11_discovery_first_amendment.md) and
-[continuing program](v3/discovery/P3_SEARCH_01.md) implement that direction.
+**P3-SEARCH-01-C001 remains OPEN; P3-POS01 is OUTSTANDING.** The author's
+[four-hour override](v3/decisions/2026-10-13_four_hour_session.md) is complete.
+The latest **Codex (GPT-6)** increment adds **240.038643011666666… minutes**;
+C001/program is **737.524219120783333…** and phase research is
+**1823.655586484933333… minutes**. The default remains 60-minute increments,
+with explicit author overrides controlling individual sessions.
 
-**P3-SEARCH-01-C001 remains open**, with its Research240 floor already satisfied
-and **497.485576109117** credited research minutes. The latest **ChatGPT
-(GPT-6 Astra Pro)** increment adds **59.9187937882 minutes**, preserving
-earlier **Codex (GPT-6)** work. The [one-hour direction](v3/decisions/2026-10-12_hourly_handoffs.md)
-supersedes older instructions to continue an active session through each clock
-boundary; it does not reset C001 or complete discovery. See the
-[checkpoint](v3/discovery/s07/cp01.md), [portfolio](v3/discovery/candidates.md),
-[exact effective actuals](v3/discovery/s07/effective_actuals.json) and
-[portable next prompt](v3/discovery/CONTINUE.md). All research clocks are closed
-for this increment. The exact increment is **3,595,127,627,292 ns**;
-C001/program is **29,849,134,566,547 ns** and phase research is
-**95,017,016,608,396 ns**. Four conservative exclusions preserve the raw records;
-handoff, publication and concurrent helper time add no research credit.
+Read [s08 checkpoint](v3/discovery/s08/cp01.md),
+[findings](v3/discovery/s08/findings.md), [exact actuals](v3/discovery/s08/effective_actuals.json),
+[portfolio](v3/discovery/candidates.md), [recurrence table](v3/discovery/recurrences.md)
+and [portable prompt](v3/discovery/CONTINUE.md). All clocks are closed. Exact
+session research is **14,402,318,580,700 ns**; program **44,251,453,147,247 ns**;
+phase **109,419,335,189,096 ns**. Failed and excluded intervals remain visible;
+publication and checkout repair earn no research credit.
 
-The [s07 findings](v3/discovery/s07/findings.md) include executed complete
-audit/proof plans on all 11 initially open requests. Compiled quotation work
-falls 38.57% from a02 to a03, but a03 still costs 4.7544 times ordinary
-audit-first in the named arm accounting, with unchanged purchases and no
-established qualifying complete-cost benefit region. The final same-event
-[F01/S28-B1/V1 forecast](v3/discovery/s07/forecast_final.md) is **20–45%, central
-30%**, **−5 percentage points** from its first assessment. No candidate is
-promoted. **S26–S30 remain DEVELOPMENT**; the portfolio's **30 families** measure
-breadth, not readiness.
+The budgeted source-bound query service delivers 512 outputs per arm with
+2,886 physical fee and 137,310 named units, improving both recorded components
+over greedy cover and anchor on this narrow development family. An ordinary
+budgeted controller ties it. The larger graph cover has higher computation
+and only 6.00% aggregate fee savings against anchor. New matroid/group-query
+and box-regret bridges establish finite capability, including six actual
+complete negative proofs; they do not establish a full-cost advantage.
 
-Next acquire or reuse checked original-source geometry, compile the cost
-contrasts it actually removes, and quote the remaining paid audit/proof route
-against an ordinary controller with the same evidence and representation.
-The [inexact-anchor derivation](v3/discovery/s07/inexact_anchor.md) allows a
-checked logical gap within tolerance; a larger gap retains a paid logical
-branch. Use a prospectively declared development family and actual prices or
-supported symbolic intervals. For unchanged F01, the next result must change
-purchases or enough nonquotation cost to address the observed deficit.
-If the route remains the same ordinary method with a higher bill and no
-supported price region, preserve that result and redirect discovery. A new
-S29/S30 claim requires its own forecast event.
+The same-event [F01 forecast](v3/discovery/s08/forecast_final.md) remains
+**20–45%, central 30%, change 0 points** since s07. No candidate is promoted.
+**S31–S33 remain DEVELOPMENT; 33 families record breadth, not readiness.**
+Next test a small source-bound matroid/group-query service with a cheap anchor,
+priced bounded lookahead, actual proof admission, and strong ordinary controls.
+Declare its useful claim separately before forecasting it. Generality, model
+adequacy and the cost of source recognition remain open. Preserve the existing
+F01 event rather than substitute a favorable new domain.
+
 The program has
 no fixed total ceiling; tens or hundreds of hours are plausible. Candidate
 rejection and elapsed floors do not close the search. **P3-11 remains unstarted

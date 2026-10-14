@@ -1,0 +1,113 @@
+{
+  "invoice": {
+    "total": 109400,
+    "by_category": {
+      "source": 113,
+      "geometry": 28,
+      "bounds": 1200,
+      "planning": 111,
+      "region_build": 45848,
+      "selection": 1455,
+      "scoring": 60645
+    },
+    "operations": [
+      {
+        "category": "bounds",
+        "operation": "source_endpoint_regret_upper_and_optimum_lower",
+        "units": 1200
+      },
+      {
+        "category": "geometry",
+        "operation": "exact_original_resolution_check",
+        "units": 28
+      },
+      {
+        "category": "planning",
+        "operation": "partial_star_dp_transition",
+        "units": 111
+      },
+      {
+        "category": "region_build",
+        "operation": "bitset_region_containment",
+        "units": 600
+      },
+      {
+        "category": "region_build",
+        "operation": "membership_signature_and_class_bitset",
+        "units": 2112
+      },
+      {
+        "category": "region_build",
+        "operation": "source_action_world_loss_and_region_bit",
+        "units": 40320
+      },
+      {
+        "category": "region_build",
+        "operation": "world_query_signature_words",
+        "units": 2816
+      },
+      {
+        "category": "scoring",
+        "operation": "cached_version_bitset_lookup",
+        "units": 31
+      },
+      {
+        "category": "scoring",
+        "operation": "class_mass_bitset_intersection",
+        "units": 12423
+      },
+      {
+        "category": "scoring",
+        "operation": "ecd_mass_square_and_sum",
+        "units": 45600
+      },
+      {
+        "category": "scoring",
+        "operation": "exact_query_gain",
+        "units": 117
+      },
+      {
+        "category": "scoring",
+        "operation": "query_response_bitset",
+        "units": 300
+      },
+      {
+        "category": "scoring",
+        "operation": "residual_product_word_operations",
+        "units": 1915
+      },
+      {
+        "category": "scoring",
+        "operation": "response_expectation_word_operations",
+        "units": 259
+      },
+      {
+        "category": "selection",
+        "operation": "chosen_policy_branch_and_expected_fee",
+        "units": 420
+      },
+      {
+        "category": "selection",
+        "operation": "rational_gain_cross_product_comparison",
+        "units": 157
+      },
+      {
+        "category": "selection",
+        "operation": "region_containment_terminal",
+        "units": 878
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_support_and_fee_admission",
+        "units": 113
+      }
+    ]
+  },
+  "fast_root": false,
+  "expanded_worlds": 128,
+  "retained_regions": 10,
+  "classes": 41,
+  "expected_fee": "275/64",
+  "scored_versions": 63,
+  "max_product_bits": 123
+}

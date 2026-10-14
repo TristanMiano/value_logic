@@ -1,0 +1,59 @@
+test_all_evaluation_feature_panels_match_frozen_object_path (verification.test_experiment_repair.DataAdapterTests.test_all_evaluation_feature_panels_match_frozen_object_path) ... ok
+test_fast_training_projection_matches_frozen_object_path (verification.test_experiment_repair.DataAdapterTests.test_fast_training_projection_matches_frozen_object_path) ... ok
+test_one_prediction_builds_same_two_calibration_bundles (verification.test_experiment_repair.DataAdapterTests.test_one_prediction_builds_same_two_calibration_bundles) ... ok
+test_cpp_matches_numpy_on_random_block (verification.test_experiment_repair.NativeKernelTests.test_cpp_matches_numpy_on_random_block) ... ok
+test_repaired_world_result_matches_frozen_evaluator (verification.test_experiment_repair.NativeKernelTests.test_repaired_world_result_matches_frozen_evaluator) ... ERROR
+test_production_and_final_stages_require_distinct_exact_tokens (verification.test_experiment_repair.StageGuardTests.test_production_and_final_stages_require_distinct_exact_tokens) ... ok
+test_v1_1_contract_hashes_are_current (verification.test_experiment_repair.StageGuardTests.test_v1_1_contract_hashes_are_current) ... ERROR
+
+======================================================================
+ERROR: test_repaired_world_result_matches_frozen_evaluator (verification.test_experiment_repair.NativeKernelTests.test_repaired_world_result_matches_frozen_evaluator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\verification\test_experiment_repair.py", line 91, in test_repaired_world_result_matches_frozen_evaluator
+    calibration_panel = materialize_training_panel_fast(Role.PILOT, 0, 256)
+  File "C:\Users\trist\projects\value_logic\experiments\repaired_evaluator.py", line 447, in materialize_training_panel_fast
+    world = generate_world(role, index, allow_final=allow_final)
+  File "C:\Users\trist\projects\value_logic\experiments\protocol.py", line 820, in generate_world
+    probes.extend(
+    ~~~~~~~~~~~~~^
+        _make_probe(
+        ^^^^^^^^^^^^
+    ...<9 lines>...
+        for probe_index, (stratum, cell) in enumerate(zip(strata, cells))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trist\projects\value_logic\experiments\protocol.py", line 821, in <genexpr>
+    _make_probe(
+    ~~~~~~~~~~~^
+        identity,
+        ^^^^^^^^^
+    ...<6 lines>...
+        latency_intercepts,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trist\projects\value_logic\experiments\protocol.py", line 539, in _make_probe
+    mode = _mode_for_stratum(stratum, index)
+TypeError: 'AtomStratum' object does not support the context manager protocol
+
+======================================================================
+ERROR: test_v1_1_contract_hashes_are_current (verification.test_experiment_repair.StageGuardTests.test_v1_1_contract_hashes_are_current)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\verification\test_experiment_repair.py", line 140, in test_v1_1_contract_hashes_are_current
+    contract = verify_repaired_sources()
+  File "C:\Users\trist\projects\value_logic\experiments\run_repaired_experiment.py", line 137, in verify_repaired_sources
+    raise RuntimeError(f"repaired implementation source drift: {mismatches}")
+RuntimeError: repaired implementation source drift: {'experiments/cpp/value_logic_kernel.h': {'expected': '0f1b6d4dc90cf70fe943a7b3e51749d58fcb11d0b12e87547cbf5fb68409e263', 'observed': 'e936622c49cf7892854a9e68ac043a818d174a867b55aebbfcefa484f74c2908'}, 'experiments/cpp/value_logic_kernel.cpp': {'expected': '4c7b30b1bd51503ea9492246e11717c9b2005278499d8f554c6d56eb0c2e421e', 'observed': '99b9da3b341ebeca71b4917df033b338181ca71490669321fdb239bdf1150272'}, 'experiments/cpp/value_logic_kernel_self_test.cpp': {'expected': 'b93a80190855bf0a074b9e773418a8da8040f5ecbec99144afbe0d3824e1c51d', 'observed': '4bec61d6ea471f0cb3665a3d8d98b8ea50b09185312a154dd6e464dacc388678'}}
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.296s
+
+FAILED (errors=2)
+Windows fatal exception: access violation
+
+Current thread 0x0000979c (most recent call first):
+  Garbage-collecting
+  <no Python frame>

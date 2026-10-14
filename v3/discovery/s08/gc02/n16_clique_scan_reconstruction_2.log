@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\check_gc02.py", line 48, in <module>
+    if __name__=='__main__':run(sys.argv[1],sys.argv[2],len(sys.argv)>3)
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\check_gc02.py", line 23, in run
+    assert min(state.G,compiled['Q'])==gc.utility(data,state.known,compiled['K'],Meter())
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\graph_cover.py", line 59, in utility
+    da=0 if state[a] is None else H-state[a];db=0 if state[b] is None else H-state[b];score+=2*w*max(da,db);meter.pay('cover','graph_edge_maximum_score',7)
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s05\maxsat_repair.py", line 48, in pay
+    self.operations[category, operation] += units
+TypeError: can only concatenate tuple (not "int") to tuple
+Windows fatal exception: access violation
+
+Current thread 0x00005f8c (most recent call first):
+  Garbage-collecting
+  <no Python frame>

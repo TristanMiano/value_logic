@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "cut_upper": 4,
+  "actual_maxcut": 4,
+  "edge_weight": 4,
+  "cut_checks": 16,
+  "negative_controls": [
+    "source",
+    "bound",
+    "capacity",
+    "non_clique"
+  ],
+  "checks": {
+    "partial_states": 768,
+    "action_checks": 62208,
+    "corner_checks": 151875,
+    "terminal_actions": 704
+  },
+  "invoice": {
+    "total": 248,
+    "by_category": {
+      "cut_acquisition": 40,
+      "source": 180,
+      "geometry_check": 28
+    },
+    "operations": [
+      {
+        "category": "cut_acquisition",
+        "operation": "propose_triangle_residual",
+        "units": 32
+      },
+      {
+        "category": "cut_acquisition",
+        "operation": "test_full_clique",
+        "units": 8
+      },
+      {
+        "category": "geometry_check",
+        "operation": "mandatory_resolution",
+        "units": 28
+      },
+      {
+        "category": "source",
+        "operation": "all_original_clauses_and_scaled_features",
+        "units": 180
+      }
+    ]
+  },
+  "physical_audits": 0,
+  "resolution_steps": 1
+}

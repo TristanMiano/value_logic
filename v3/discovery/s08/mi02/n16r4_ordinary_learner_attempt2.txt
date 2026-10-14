@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\mixture_service.py", line 62, in <module>
+    if len(sys.argv)>1:child(sys.argv[2],sys.argv[3])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\mixture_service.py", line 26, in child
+    result=service.run_arm(ROOT,case,data,rows,arm);g01.save(ROOT/f'{name}_{arm}_result.json',result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\cs01\impl.py", line 125, in run_arm
+    bank,polynomials,table,bank_hash=prepare(directory,case['name'],data,arm,meter);setup=meter.total
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\cs01\impl.py", line 99, in prepare
+    table=table_for(polynomials,with_masks,meter);check_table(polynomials,table,with_masks,meter)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\cs01\impl.py", line 77, in check_table
+    if row['local']!=local or row['upper']!={r:max(c) for r,c in local.items()}:raise ValueError('Invalid region coefficient or fee')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid region coefficient or fee

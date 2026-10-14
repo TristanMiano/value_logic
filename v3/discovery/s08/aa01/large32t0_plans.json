@@ -1,0 +1,156 @@
+{
+  "source": "d4e30c3761afac77272ba9d05cad3caba38bbddf3e128d3799b9ef097d8199a3",
+  "tau": 0,
+  "plans": {
+    "residual_dp": {
+      "mask": 1476846547,
+      "fee": 37,
+      "residual": 0,
+      "invoice": {
+        "total": 1406,
+        "by_category": {
+          "planning": 1406
+        },
+        "operations": [
+          {
+            "category": "planning",
+            "operation": "residual_dp_transition",
+            "units": 1116
+          },
+          {
+            "category": "planning",
+            "operation": "retain_residual_state_words",
+            "units": 256
+          },
+          {
+            "category": "planning",
+            "operation": "select_root_and_emit_audit_set",
+            "units": 34
+          }
+        ]
+      },
+      "states": 64
+    },
+    "ordinary_budget_dp": {
+      "mask": 1476846547,
+      "fee": 37,
+      "residual": 0,
+      "invoice": {
+        "total": 81846,
+        "by_category": {
+          "planning": 81846
+        },
+        "operations": [
+          {
+            "category": "planning",
+            "operation": "choose_sufficient_budget_and_set",
+            "units": 230
+          },
+          {
+            "category": "planning",
+            "operation": "ordinary_budget_transition",
+            "units": 79136
+          },
+          {
+            "category": "planning",
+            "operation": "retain_budget_state_words",
+            "units": 2480
+          }
+        ]
+      },
+      "states": 620
+    },
+    "greedy": {
+      "mask": 3356419027,
+      "fee": 39,
+      "residual": 0,
+      "invoice": {
+        "total": 49784,
+        "by_category": {
+          "planning": 49784
+        },
+        "operations": [
+          {
+            "category": "planning",
+            "operation": "greedy_uncovered_incidence_scan",
+            "units": 49784
+          }
+        ]
+      },
+      "states": 0
+    },
+    "full": {
+      "mask": 4294967295,
+      "fee": 99,
+      "residual": 0,
+      "invoice": {
+        "total": 32,
+        "by_category": {
+          "planning": 32
+        },
+        "operations": [
+          {
+            "category": "planning",
+            "operation": "full_identification_list",
+            "units": 32
+          }
+        ]
+      },
+      "states": 0
+    }
+  },
+  "checks": {
+    "residual_dp": {
+      "total": 251,
+      "by_category": {
+        "plan_check": 251
+      },
+      "operations": [
+        {
+          "category": "plan_check",
+          "operation": "audit_set_fee_and_uncovered_edges",
+          "units": 251
+        }
+      ]
+    },
+    "ordinary_budget_dp": {
+      "total": 251,
+      "by_category": {
+        "plan_check": 251
+      },
+      "operations": [
+        {
+          "category": "plan_check",
+          "operation": "audit_set_fee_and_uncovered_edges",
+          "units": 251
+        }
+      ]
+    },
+    "greedy": {
+      "total": 251,
+      "by_category": {
+        "plan_check": 251
+      },
+      "operations": [
+        {
+          "category": "plan_check",
+          "operation": "audit_set_fee_and_uncovered_edges",
+          "units": 251
+        }
+      ]
+    },
+    "full": {
+      "total": 251,
+      "by_category": {
+        "plan_check": 251
+      },
+      "operations": [
+        {
+          "category": "plan_check",
+          "operation": "audit_set_fee_and_uncovered_edges",
+          "units": 251
+        }
+      ]
+    }
+  }
+}

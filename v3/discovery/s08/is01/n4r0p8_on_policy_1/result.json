@@ -1,0 +1,150 @@
+{
+  "outputs": 256,
+  "base_audit_fee": 2562,
+  "action_fee": 2562,
+  "pilot_fee": 0,
+  "physical_audits": 782,
+  "action_audits": 782,
+  "pilot_audits": 0,
+  "named_units": 93245,
+  "setup_units": 14474,
+  "invoice": {
+    "total": 93245,
+    "by_category": {
+      "source": 124,
+      "preparation": 14350,
+      "selection": 3072,
+      "execution": 8997,
+      "provider": 9384,
+      "receipt": 11730,
+      "action": 9216,
+      "check": 20864,
+      "learning": 6077,
+      "confidence": 9431
+    },
+    "operations": [
+      {
+        "category": "action",
+        "operation": "two_component_endpoint_choice",
+        "units": 9216
+      },
+      {
+        "category": "check",
+        "operation": "compatible_local_cost_comparison",
+        "units": 11648
+      },
+      {
+        "category": "check",
+        "operation": "original_clause",
+        "units": 9216
+      },
+      {
+        "category": "confidence",
+        "operation": "integer_tail_grid_and_clipped_interval",
+        "units": 9431
+      },
+      {
+        "category": "execution",
+        "operation": "branch_and_push_continuations",
+        "units": 4692
+      },
+      {
+        "category": "execution",
+        "operation": "pop_interval_task",
+        "units": 4305
+      },
+      {
+        "category": "learning",
+        "operation": "retain_observed_complete_invoice",
+        "units": 6077
+      },
+      {
+        "category": "preparation",
+        "operation": "ordinary_model_policy_proposals",
+        "units": 4840
+      },
+      {
+        "category": "preparation",
+        "operation": "ordinary_simple_policy_proposals",
+        "units": 54
+      },
+      {
+        "category": "preparation",
+        "operation": "produce_and_independently_check_invoice_world",
+        "units": 8880
+      },
+      {
+        "category": "preparation",
+        "operation": "whole_world_dominance_check",
+        "units": 576
+      },
+      {
+        "category": "provider",
+        "operation": "construct_and_export_receipt_words",
+        "units": 9384
+      },
+      {
+        "category": "receipt",
+        "operation": "bind_source_request_value_and_fee",
+        "units": 11730
+      },
+      {
+        "category": "selection",
+        "operation": "choose_policy_from_observed_invoice_state",
+        "units": 3072
+      },
+      {
+        "category": "source",
+        "operation": "original_source_admission",
+        "units": 124
+      }
+    ]
+  },
+  "retained_policies": [
+    "r1",
+    "r3",
+    "middle"
+  ],
+  "selected_policies": {
+    "r3": 174,
+    "r1": 82
+  },
+  "complete_calibration_vectors": 0,
+  "counts": {
+    "r1": 82,
+    "r3": 174,
+    "middle": 0
+  },
+  "sums": {
+    "r1": 838,
+    "r3": 1724,
+    "middle": 0
+  },
+  "final_choice": "r1",
+  "final_intervals": {
+    "r1": [
+      "85247/10496",
+      "495593/40448"
+    ],
+    "r3": [
+      "362783/44544",
+      "457843/39424"
+    ],
+    "middle": [
+      9,
+      13
+    ]
+  },
+  "final_mean_fee_regret_upper": "6850287/1658368",
+  "diagnostic_means": {
+    "r1": "1289/125",
+    "r3": "254/25",
+    "middle": 11
+  },
+  "cumulative_expected_action_fee_regret": "1558/125",
+  "final_observed_coverage_failures": 0,
+  "trace_bytes": 319392,
+  "target_cache_bytes": 0,
+  "arm_cpu_ns": 31250000,
+  "arm_wall_ns": 43511100
+}

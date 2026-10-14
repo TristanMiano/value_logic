@@ -4,22 +4,16 @@ Initial research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
 No candidate is promoted. The current event-specific forecast is recorded below;
 earlier unassessed entries retain their dated historical scope.
 
-**Current continuation — October 12, 2026:** **ChatGPT (GPT-6 Astra Pro)**,
-[s07 checkpoint 1](s07/cp01.md), [effective actuals](s07/effective_actuals.json).
-The latest author-directed hourly increment contains
-**59.9187937882 research minutes**. C001 remains **OPEN** at
-**497.485576109116666… minutes**, beyond its already satisfied four-hour floor;
-phase research is **1583.616943473266666… minutes**. Four conservative exclusions
-preserve the raw timing evidence. The next increment is one
-requested hour under the [hourly direction](../decisions/2026-10-12_hourly_handoffs.md),
-not a new four-hour cycle. Earlier Codex attributions, findings and checkpoint
-totals below retain their historical scope. P3-POS01 remains OUTSTANDING.
+**Current continuation â€” October 14, 2026:** **Codex (GPT-6)**,
+[s08 checkpoint](s08/cp01.md), [effective actuals](s08/effective_actuals.json).
+The explicit four-hour increment contributes **240.038643011666666â€¦ minutes**;
+C001 remains OPEN at **737.524219120783333â€¦**, phase **1823.655586484933333â€¦**.
+All clocks are closed. Default next duration is 60 minutes with explicit author
+overrides. Earlier entries and attributions retain their historical scope.
 
-The [final F01/S28-B1/V1 promotion forecast](s07/forecast_final.md) is
-**20–45%, central 30%**, **−5 percentage points** since the first same-event
-assessment; P3-11 remains deferred. The portfolio now contains **30 families**,
-including new S29 and S30 below. This is a breadth count, not a readiness score.
-**S26–S30 remain DEVELOPMENT.**
+[F01/S28-B1/V1](s08/forecast_final.md) remains **20â€“45%, central 30%, change
+0 points** since s07; P3-POS01 OUTSTANDING, P3-11 deferred. **33 families**
+record breadth, not readiness. New S31â€“S33 remain DEVELOPMENT.
 
 IDs S01 onward belong to this program, not separate clock commitments.
 
@@ -480,3 +474,11 @@ The final [same-event forecast](s07/forecast_final.md) remains **20–45%, centr
 from the first. It is subjective and has no calibrated forecasting track
 record. Different S29/S30 claims must not inherit or relabel F01. **C001 OPEN;
 P3-POS01 OUTSTANDING; P3-11 deferred; no candidate promoted.**
+
+## s08 constructive update â€” October 14, 2026, Codex (GPT-6)
+
+| ID | Mechanism and lineage | Intended useful delta / comparison | Evidence and obstacle | Disposition |
+|---|---|---|---|---|
+| S31 | Policy-invoice learning under partial feedback; continuation of S01/S25/S26. Q1/3/4. | Learn which computation is worth buying without identifying the entire latent law. Compare compulsory calibration, direct on-policy LCB and policy replay/circuit queries. | Calibrated pair observations can leave policy ranking unidentified. Circuit targets contract but paid pilot learning loses physical fee to direct on-policy learning on all 20 nontrivial is01 duties. Large exact diagrams hit caps. [Findings](s08/invoice_service_findings.md). | DEVELOPMENT; adequacy and calibration cost unresolved |
+| S32 | Source-bound action-query and certificate-cover service, including graph/matroid rank and budgeted anchor policies. Q1/4/5. | Deliver a robust original-source action using fewer paid observations, with priced compilation and fallback. Compare ordinary stochastic cover, uncertainty queries and identical budgeted policy improvement. | bc02 improves recorded fee/computation against greedy/anchor; ordinary budgeted controller ties. General graphs retain a large computation bill. Matroid proof recognition is generated-family specific. [Findings](s08/graph_cover_findings.md), [matroids](s08/matroid_findings.md). | DEVELOPMENT; next constructive focus |
+| S33 | Shared-cost robust action/replacement frontiers and scalar interval-regret proof transport. Q2/4/5. | Use nonnominal actions and retained source proofs under partial costs; compare ordinary robust optimization and exact/minimax policy planning. | Shared costs need two-copy frontiers and can encode MaxCut despite simple matroid geometry. Six actual scalar proofs establish a tiny Cartesian-box bridge; correlated costs only inherit an upper bound. [Shared frontiers](s08/shared_findings.md), [box proof](s08/box_bridge.md). | DEVELOPMENT; no complete-cost or novelty claim |

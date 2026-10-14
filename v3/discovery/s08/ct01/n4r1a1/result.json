@@ -1,0 +1,306 @@
+{
+  "status": "complete",
+  "name": "n4r1",
+  "n": 4,
+  "costs": [
+    3,
+    7,
+    3,
+    5
+  ],
+  "policies": [
+    "r1",
+    "r5",
+    "r9",
+    "left",
+    "right",
+    "middle"
+  ],
+  "aliases": {
+    "r1": [
+      "r1",
+      "r3"
+    ],
+    "r5": [
+      "r5",
+      "r7"
+    ],
+    "r9": [
+      "r9"
+    ],
+    "left": [
+      "left"
+    ],
+    "right": [
+      "right"
+    ],
+    "middle": [
+      "middle"
+    ]
+  },
+  "totals": {
+    "cases": 480,
+    "target_fee": 240,
+    "replay_fee": 608,
+    "wins": 80,
+    "losses": 0,
+    "ties": 400,
+    "zero_target": 432,
+    "zero_replay": 364
+  },
+  "subgroups": {
+    "model_pair": {
+      "cases": 96,
+      "target_fee": 0,
+      "replay_fee": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 96,
+      "zero_target": 96,
+      "zero_replay": 96
+    },
+    "expanded_pair": {
+      "cases": 384,
+      "target_fee": 240,
+      "replay_fee": 608,
+      "wins": 80,
+      "losses": 0,
+      "ties": 304,
+      "zero_target": 336,
+      "zero_replay": 268
+    }
+  },
+  "completion_checks": 876,
+  "syntax_nodes": 6,
+  "cofactor_cache": 25,
+  "invoice": {
+    "total": 16777,
+    "by_category": {
+      "proposal": 4894,
+      "preparation": 3145,
+      "evaluation": 8738
+    },
+    "operations": [
+      {
+        "category": "evaluation",
+        "operation": "all_direct_circuit_evaluation",
+        "units": 8706
+      },
+      {
+        "category": "evaluation",
+        "operation": "retained_cofactor_circuit_construction",
+        "units": 32
+      },
+      {
+        "category": "preparation",
+        "operation": "local_source_invoice_recurrence_check",
+        "units": 2048
+      },
+      {
+        "category": "preparation",
+        "operation": "original_syntax_compilation",
+        "units": 1097
+      },
+      {
+        "category": "proposal",
+        "operation": "same_markov_menu",
+        "units": 4840
+      },
+      {
+        "category": "proposal",
+        "operation": "simple_interval_root_rule",
+        "units": 54
+      }
+    ]
+  },
+  "physical_audits": 0,
+  "witnesses": [
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logger": "r1",
+      "alternative": "left",
+      "logger_queries": [
+        2,
+        0
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        1
+      ],
+      "target_fee": 0,
+      "replay_fee": 7,
+      "contrast": -7,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logger": "r1",
+      "alternative": "right",
+      "logger_queries": [
+        2,
+        0
+      ],
+      "target_queries": [
+        1
+      ],
+      "replay_queries": [
+        3,
+        1
+      ],
+      "target_fee": 7,
+      "replay_fee": 12,
+      "contrast": -9,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logger": "r5",
+      "alternative": "left",
+      "logger_queries": [
+        2,
+        0
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        1
+      ],
+      "target_fee": 0,
+      "replay_fee": 7,
+      "contrast": -7,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logger": "r5",
+      "alternative": "right",
+      "logger_queries": [
+        2,
+        0
+      ],
+      "target_queries": [
+        1
+      ],
+      "replay_queries": [
+        3,
+        1
+      ],
+      "target_fee": 7,
+      "replay_fee": 12,
+      "contrast": -9,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logger": "r9",
+      "alternative": "left",
+      "logger_queries": [
+        2,
+        0
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        1
+      ],
+      "target_fee": 0,
+      "replay_fee": 7,
+      "contrast": -7,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logger": "r9",
+      "alternative": "right",
+      "logger_queries": [
+        2,
+        0
+      ],
+      "target_queries": [
+        1
+      ],
+      "replay_queries": [
+        3,
+        1
+      ],
+      "target_fee": 7,
+      "replay_fee": 12,
+      "contrast": -9,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logger": "left",
+      "alternative": "right",
+      "logger_queries": [
+        0,
+        1,
+        2
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        3
+      ],
+      "target_fee": 0,
+      "replay_fee": 5,
+      "contrast": -2,
+      "subgroup": "expanded_pair"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logger": "right",
+      "alternative": "left",
+      "logger_queries": [
+        3,
+        2,
+        1
+      ],
+      "target_queries": [],
+      "replay_queries": [
+        0
+      ],
+      "target_fee": 0,
+      "replay_fee": 3,
+      "contrast": 2,
+      "subgroup": "expanded_pair"
+    }
+  ]
+}

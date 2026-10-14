@@ -4,30 +4,28 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
-Latest execution contributor: **ChatGPT (GPT-6 Astra Pro)**; earlier
-**Codex (GPT-6)** work is preserved. [Current checkpoint](s07/cp01.md),
-[portfolio](candidates.md), [exact effective actuals](s07/effective_actuals.json).
-The [C001 recurrence table](recurrences.md) reconstructs each recorded increment
-with its credited time, cumulative time and quantitative discovery results.
+Latest execution contributor: **Codex (GPT-6)**. Earlier records retain their
+original attributions. [Current checkpoint](s08/cp01.md), [findings](s08/findings.md),
+[portfolio](candidates.md), [exact actuals](s08/effective_actuals.json), and
+[single recurrence table](recurrences.md) give the closing state.
 
-Current s07 direction: **calibrated repair with decision-relevant cost
-observations and checked logical evidence**. [Complete acquisition plans now
-execute](s07/findings.md), including a multi-call reserve and cheaper compiled
-quotation. The latest plan still buys the same observations and proof calls as
-ordinary audit-first at a higher bill. Source geometry and cost quotients (S29),
-and a common-CDF bridge for one fixed population action (S30), open separate
-constructive branches. Next test a paid geometry/contrast route that changes
-actual purchases or enough nonquotation cost, with identical capabilities
-available to strong ordinary controls. **S26–S30 remain DEVELOPMENT; the 30
-families record breadth, not readiness.**
+The explicit four-hour s08 increment is closed at **240.038643011666666…
+research minutes**. Program/C001 research is **737.524219120783333… minutes**.
+The default next session is 60 minutes; explicit author overrides take priority.
+The [portable prompt](CONTINUE.md) governs recovery and a fresh observed clock.
 
-The final [F01/S28-B1/V1 forecast](s07/forecast_final.md) is **20–45%, central
-30%**, five percentage points below the first assessment of the same event.
-No candidate is promoted or robust complete-cost advantage established. The
-author directs [one-hour increments](../decisions/2026-10-12_hourly_handoffs.md).
-The s07 hour
-is closed, C001 remains open beyond its satisfied floor, and the
-[portable prompt](CONTINUE.md) governs the next requested increment.
+Current direction: source-bound action queries and inexpensive anchor-backed
+policies, with policy-invoice learning and shared-cost action frontiers as
+separate branches. The budgeted star service improves both recorded fee and
+computation, while an ordinary matching controller ties. General graph cover
+still has a large computation bill; generated matroid geometry and scalar
+box-regret proofs provide new capability but not demonstrated economic advantage.
+**S31–S33 remain DEVELOPMENT; 33 families record breadth, not readiness.**
+
+[F01/S28-B1/V1](s08/forecast_final.md) remains **20–45%, central 30%, change
+0 percentage points** since s07. No candidate is promoted. Next test a small
+paid matroid/group-query construction with bounded lookahead and strong
+ordinary methods, keeping a new confirmation event separate from F01.
 
 ## 1. Objective and scope
 

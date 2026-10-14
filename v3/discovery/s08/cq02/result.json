@@ -1,0 +1,138 @@
+{
+  "status": "complete",
+  "n": 10,
+  "world_logger_cases": 2048,
+  "target_fee_sum": 1852,
+  "replay_fee_sum": 1788,
+  "full_fee_sum": 22484,
+  "cheaper_target_cases": 0,
+  "more_expensive_target_cases": 8,
+  "zero_target_cases": 1596,
+  "planning_states": 19,
+  "cofactor_states": 394,
+  "evbdd_nodes": 997,
+  "expected": [
+    {
+      "r": 2,
+      "logger": 1,
+      "target_fee": "361301/390625",
+      "replay_fee": "361301/390625",
+      "full_fee": "11458077/781250",
+      "quote": "384149/390625"
+    },
+    {
+      "r": 2,
+      "logger": 3,
+      "target_fee": "159857/156250",
+      "replay_fee": "125041/156250",
+      "full_fee": "1136068/78125",
+      "quote": "159857/156250"
+    },
+    {
+      "r": 4,
+      "logger": 1,
+      "target_fee": "251446/390625",
+      "replay_fee": "251446/390625",
+      "full_fee": "8890417/781250",
+      "quote": "264784/390625"
+    },
+    {
+      "r": 4,
+      "logger": 3,
+      "target_fee": "91283/78125",
+      "replay_fee": "82859/78125",
+      "full_fee": "1843223/156250",
+      "quote": "91283/78125"
+    },
+    {
+      "r": 8,
+      "logger": 1,
+      "target_fee": "227171/390625",
+      "replay_fee": "227171/390625",
+      "full_fee": "8730567/781250",
+      "quote": "228599/390625"
+    },
+    {
+      "r": 8,
+      "logger": 3,
+      "target_fee": "121114/78125",
+      "replay_fee": "120842/78125",
+      "full_fee": "1896929/156250",
+      "quote": "121114/78125"
+    }
+  ],
+  "negative_controls": [
+    "underquoted_target_rejected"
+  ],
+  "invoice": {
+    "total": 244498,
+    "by_category": {
+      "preparation": 186924,
+      "planning": 43027,
+      "checking": 14547
+    },
+    "operations": [
+      {
+        "category": "checking",
+        "operation": "independent_target_quote_checks",
+        "units": 14547
+      },
+      {
+        "category": "planning",
+        "operation": "all_target_query_planning",
+        "units": 41823
+      },
+      {
+        "category": "planning",
+        "operation": "residual_cofactor_graph_construction",
+        "units": 1204
+      },
+      {
+        "category": "preparation",
+        "operation": "checked_invoice_equivalence_lookup",
+        "units": 20
+      },
+      {
+        "category": "preparation",
+        "operation": "independent_contrast_identity",
+        "units": 1447
+      },
+      {
+        "category": "preparation",
+        "operation": "independent_invoice_diagram_check",
+        "units": 67412
+      },
+      {
+        "category": "preparation",
+        "operation": "independent_syntax_recurrence_check",
+        "units": 15389
+      },
+      {
+        "category": "preparation",
+        "operation": "invoice_diagram_compilation",
+        "units": 35045
+      },
+      {
+        "category": "preparation",
+        "operation": "retained_policy_global_invoice_range",
+        "units": 7070
+      },
+      {
+        "category": "preparation",
+        "operation": "retained_policy_range_check",
+        "units": 8110
+      },
+      {
+        "category": "preparation",
+        "operation": "same_ordinary_policy_proposals",
+        "units": 43700
+      },
+      {
+        "category": "preparation",
+        "operation": "shared_syntax_compilation",
+        "units": 8731
+      }
+    ]
+  },
+  "physical_audits": 0
+}

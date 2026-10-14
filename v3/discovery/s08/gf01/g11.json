@@ -1,0 +1,199 @@
+{
+  "group": {
+    "name": "g11",
+    "interval": [
+      3,
+      7
+    ],
+    "weights": [
+      6,
+      1
+    ],
+    "centers": [
+      4,
+      7
+    ]
+  },
+  "certificate": {
+    "source": "f3fdc56f70a0e9c5ef239303bd017d519195b94f881952421d78cceb76b81720",
+    "rows": [
+      [
+        [
+          0,
+          0,
+          []
+        ]
+      ],
+      [
+        [
+          0,
+          36,
+          [
+            0
+          ]
+        ],
+        [
+          6,
+          18,
+          [
+            1
+          ]
+        ],
+        [
+          12,
+          0,
+          [
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          36,
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          4,
+          36,
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          6,
+          18,
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          8,
+          36,
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          10,
+          18,
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          12,
+          0,
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          14,
+          18,
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          16,
+          0,
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          20,
+          0,
+          [
+            2,
+            2
+          ]
+        ]
+      ]
+    ],
+    "frontier": [
+      [
+        12,
+        62,
+        [
+          2,
+          0
+        ]
+      ]
+    ]
+  },
+  "checked": {
+    "states": 12,
+    "transitions": 12,
+    "frontier_size": 1
+  },
+  "action_checks": 9,
+  "target_checks": 37,
+  "nominal_actions": 5,
+  "nominal_regret": 12,
+  "robust_regret": 12,
+  "strict": false,
+  "negative_checks": 3,
+  "invoice": {
+    "total": 227,
+    "by_category": {
+      "planning": 227
+    },
+    "operations": [
+      {
+        "category": "planning",
+        "operation": "local_frontier_transition",
+        "units": 129
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_point_comparison",
+        "units": 63
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sort_upper_comparisons",
+        "units": 15
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sorted_scan",
+        "units": 20
+      }
+    ]
+  },
+  "checking_invoice": {
+    "total": 269,
+    "by_category": {
+      "dp_check": 269
+    },
+    "operations": [
+      {
+        "category": "dp_check",
+        "operation": "exact_transition_and_argmin",
+        "units": 165
+      },
+      {
+        "category": "dp_check",
+        "operation": "independent_returned_endpoint_bound",
+        "units": 24
+      },
+      {
+        "category": "dp_check",
+        "operation": "pairwise_dominance_comparison",
+        "units": 80
+      }
+    ]
+  }
+}

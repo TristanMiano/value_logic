@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\graph_cover_service.py", line 166, in <module>
+    case=next(c for c in design['cases'] if c['name']==sys.argv[3]);run(root,case,sys.argv[4],Path(sys.argv[5]))
+                                                                    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\graph_cover_service.py", line 142, in run
+    i=state.select()
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\graph_cover_service.py", line 51, in select
+    proposal=(-self.score(i),i)
+               ~~~~~~~~~~^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\graph_cover_service.py", line 39, in score
+    for v in self.data['supports'][i]:
+             ~~~~~~~~~~~~~~~~~~~~~^^^
+TypeError: 'list_iterator' object is not subscriptable

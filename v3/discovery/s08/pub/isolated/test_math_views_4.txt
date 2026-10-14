@@ -1,0 +1,63 @@
+test_bound_view_preserves_source_and_rebases_actual_links (verification.test_math_views.PortableMathViewIntegrityTests.test_bound_view_preserves_source_and_rebases_actual_links) ... ERROR
+test_generation_cannot_launder_rehashed_view_tampering (verification.test_math_views.PortableMathViewIntegrityTests.test_generation_cannot_launder_rehashed_view_tampering) ... ok
+test_generation_keeps_registered_sources_and_ignores_unregistered_files (verification.test_math_views.PortableMathViewIntegrityTests.test_generation_keeps_registered_sources_and_ignores_unregistered_files) ... ERROR
+test_generation_reconstructs_only_the_missing_registered_view (verification.test_math_views.PortableMathViewIntegrityTests.test_generation_reconstructs_only_the_missing_registered_view) ... ERROR
+test_missing_preservation_provenance_is_rejected (verification.test_math_views.PortableMathViewIntegrityTests.test_missing_preservation_provenance_is_rejected) ... ok
+test_provenance_content_tampering_is_rejected (verification.test_math_views.PortableMathViewIntegrityTests.test_provenance_content_tampering_is_rejected) ... ok
+test_rehashed_receipt_for_another_source_is_not_a_binding (verification.test_math_views.PortableMathViewIntegrityTests.test_rehashed_receipt_for_another_source_is_not_a_binding) ... ok
+test_rehashed_source_and_new_exact_view_still_need_original_receipt (verification.test_math_views.PortableMathViewIntegrityTests.test_rehashed_source_and_new_exact_view_still_need_original_receipt) ... ok
+test_rehashing_a_changed_view_cannot_replace_exact_derivation (verification.test_math_views.PortableMathViewIntegrityTests.test_rehashing_a_changed_view_cannot_replace_exact_derivation) ... ok
+test_source_tampering_is_rejected (verification.test_math_views.PortableMathViewIntegrityTests.test_source_tampering_is_rejected) ... ok
+test_supplied_origin_map_cannot_invent_archive_authority (verification.test_math_views.PortableMathViewIntegrityTests.test_supplied_origin_map_cannot_invent_archive_authority) ... ok
+test_verified_archive_does_not_hide_an_unbound_active_violation (verification.test_math_views.PortableMathViewIntegrityTests.test_verified_archive_does_not_hide_an_unbound_active_violation) ... ERROR
+test_view_tampering_is_rejected (verification.test_math_views.PortableMathViewIntegrityTests.test_view_tampering_is_rejected) ... ok
+
+======================================================================
+ERROR: test_bound_view_preserves_source_and_rebases_actual_links (verification.test_math_views.PortableMathViewIntegrityTests.test_bound_view_preserves_source_and_rebases_actual_links)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\verification\test_math_views.py", line 80, in test_bound_view_preserves_source_and_rebases_actual_links
+    self.assertEqual(verify_views(root, {}), {SOURCE: document["entries"][0]})
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\verification\math_views.py", line 261, in verify_views
+    raise ValueError(f"Portable view differs from its source transformation: {view}")
+ValueError: Portable view differs from its source transformation: docs/math/fixture.md
+
+======================================================================
+ERROR: test_generation_keeps_registered_sources_and_ignores_unregistered_files (verification.test_math_views.PortableMathViewIntegrityTests.test_generation_keeps_registered_sources_and_ignores_unregistered_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\verification\test_math_views.py", line 210, in test_generation_keeps_registered_sources_and_ignores_unregistered_files
+    generate(root)
+  File "C:\Users\trist\projects\value_logic\verification\math_views.py", line 283, in generate
+    raise ValueError(f"Registered view identity differs from source transformation: {view_path}")
+ValueError: Registered view identity differs from source transformation: docs/math/fixture.md
+
+======================================================================
+ERROR: test_generation_reconstructs_only_the_missing_registered_view (verification.test_math_views.PortableMathViewIntegrityTests.test_generation_reconstructs_only_the_missing_registered_view)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\verification\test_math_views.py", line 221, in test_generation_reconstructs_only_the_missing_registered_view
+    generate(root)
+  File "C:\Users\trist\projects\value_logic\verification\math_views.py", line 283, in generate
+    raise ValueError(f"Registered view identity differs from source transformation: {view_path}")
+ValueError: Registered view identity differs from source transformation: docs/math/fixture.md
+
+======================================================================
+ERROR: test_verified_archive_does_not_hide_an_unbound_active_violation (verification.test_math_views.PortableMathViewIntegrityTests.test_verified_archive_does_not_hide_an_unbound_active_violation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\verification\test_math_views.py", line 193, in test_verified_archive_does_not_hide_an_unbound_active_violation
+    result = analyze_documents(root, [Path(SOURCE), Path(VIEW), Path("v3/live.md")])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\checks\math_markdown.py", line 288, in analyze_documents
+    views = verify_views(root)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\verification\math_views.py", line 261, in verify_views
+    raise ValueError(f"Portable view differs from its source transformation: {view}")
+ValueError: Portable view differs from its source transformation: docs/math/fixture.md
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.122s
+
+FAILED (errors=4)

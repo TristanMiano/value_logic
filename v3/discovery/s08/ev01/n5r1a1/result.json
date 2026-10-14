@@ -1,0 +1,236 @@
+{
+  "status": "complete",
+  "n": 5,
+  "costs": [
+    8,
+    7,
+    6,
+    6,
+    6
+  ],
+  "created_nodes": 88,
+  "apply_states": 175,
+  "invoice_groups": [
+    [
+      1
+    ],
+    [
+      3
+    ],
+    [
+      5,
+      7,
+      9
+    ]
+  ],
+  "world_checks": 160,
+  "pairs": [
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "edge": [
+        0,
+        81
+      ],
+      "global_interval": [
+        -7,
+        8
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        1,
+        5
+      ],
+      "edge": [
+        0,
+        84
+      ],
+      "global_interval": [
+        -7,
+        8
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        1,
+        7
+      ],
+      "edge": [
+        0,
+        84
+      ],
+      "global_interval": [
+        -7,
+        8
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        1,
+        9
+      ],
+      "edge": [
+        0,
+        84
+      ],
+      "global_interval": [
+        -7,
+        8
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        3,
+        5
+      ],
+      "edge": [
+        0,
+        87
+      ],
+      "global_interval": [
+        -6,
+        6
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        3,
+        7
+      ],
+      "edge": [
+        0,
+        87
+      ],
+      "global_interval": [
+        -6,
+        6
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        3,
+        9
+      ],
+      "edge": [
+        0,
+        87
+      ],
+      "global_interval": [
+        -6,
+        6
+      ],
+      "identical_invoice": false
+    },
+    {
+      "pair": [
+        5,
+        7
+      ],
+      "edge": [
+        0,
+        0
+      ],
+      "global_interval": [
+        0,
+        0
+      ],
+      "identical_invoice": true
+    },
+    {
+      "pair": [
+        5,
+        9
+      ],
+      "edge": [
+        0,
+        0
+      ],
+      "global_interval": [
+        0,
+        0
+      ],
+      "identical_invoice": true
+    },
+    {
+      "pair": [
+        7,
+        9
+      ],
+      "edge": [
+        0,
+        0
+      ],
+      "global_interval": [
+        0,
+        0
+      ],
+      "identical_invoice": true
+    }
+  ],
+  "negative_controls": [
+    "changed_root_offset_rejected",
+    "outside_variable_rejected"
+  ],
+  "invoice": {
+    "total": 23016,
+    "by_category": {
+      "proposal": 8100,
+      "compile": 900,
+      "evbdd": 3148,
+      "admission": 10460,
+      "restriction": 408
+    },
+    "operations": [
+      {
+        "category": "admission",
+        "operation": "independent_edge_invoice_check",
+        "units": 10077
+      },
+      {
+        "category": "admission",
+        "operation": "independent_pair_subtraction_check",
+        "units": 383
+      },
+      {
+        "category": "compile",
+        "operation": "retain_invoice_recurrence",
+        "units": 900
+      },
+      {
+        "category": "evbdd",
+        "operation": "normalize_edge_and_unique_lookup",
+        "units": 1127
+      },
+      {
+        "category": "evbdd",
+        "operation": "offset_normalized_indicator_ite",
+        "units": 869
+      },
+      {
+        "category": "evbdd",
+        "operation": "offset_quotient_arithmetic_apply",
+        "units": 1152
+      },
+      {
+        "category": "proposal",
+        "operation": "same_markov_root_proposal",
+        "units": 8100
+      },
+      {
+        "category": "restriction",
+        "operation": "reachable_edge_extrema",
+        "units": 408
+      }
+    ]
+  },
+  "physical_audits": 0
+}

@@ -1,0 +1,129 @@
+{
+  "group": {
+    "name": "g5",
+    "interval": [
+      6,
+      8
+    ],
+    "weights": [
+      4
+    ],
+    "centers": [
+      7
+    ]
+  },
+  "certificate": {
+    "source": "ee302975a2523fc32b1c973505d464d726edf6e83515daa61d2ca144fb5ca28e",
+    "rows": [
+      [
+        [
+          0,
+          0,
+          []
+        ]
+      ],
+      [
+        [
+          0,
+          8,
+          [
+            0
+          ]
+        ],
+        [
+          4,
+          4,
+          [
+            1
+          ]
+        ],
+        [
+          8,
+          0,
+          [
+            2
+          ]
+        ]
+      ]
+    ],
+    "frontier": [
+      [
+        4,
+        60,
+        [
+          1
+        ]
+      ],
+      [
+        8,
+        56,
+        [
+          2
+        ]
+      ]
+    ]
+  },
+  "checked": {
+    "states": 3,
+    "transitions": 3,
+    "frontier_size": 2
+  },
+  "action_checks": 3,
+  "target_checks": 9,
+  "nominal_actions": 3,
+  "nominal_regret": 4,
+  "robust_regret": 4,
+  "strict": false,
+  "negative_checks": 3,
+  "invoice": {
+    "total": 60,
+    "by_category": {
+      "planning": 60
+    },
+    "operations": [
+      {
+        "category": "planning",
+        "operation": "local_frontier_transition",
+        "units": 30
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_point_comparison",
+        "units": 18
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sort_upper_comparisons",
+        "units": 4
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sorted_scan",
+        "units": 8
+      }
+    ]
+  },
+  "checking_invoice": {
+    "total": 103,
+    "by_category": {
+      "dp_check": 103
+    },
+    "operations": [
+      {
+        "category": "dp_check",
+        "operation": "exact_transition_and_argmin",
+        "units": 39
+      },
+      {
+        "category": "dp_check",
+        "operation": "independent_returned_endpoint_bound",
+        "units": 24
+      },
+      {
+        "category": "dp_check",
+        "operation": "pairwise_dominance_comparison",
+        "units": 40
+      }
+    ]
+  }
+}

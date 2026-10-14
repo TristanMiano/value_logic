@@ -1,0 +1,62 @@
+setUpClass (v2.checks.f08_unit_characterization.F08FiniteCaseConstructionTests) ... ERROR
+test_affine_certificate_rejects_bad_multipliers_and_budget (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_affine_certificate_rejects_bad_multipliers_and_budget) ... ok
+test_affine_certificate_rejects_unconverted_nonzero_row (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_affine_certificate_rejects_unconverted_nonzero_row) ... ok
+test_all_three_unit_graphs_against_independent_transitive_closure (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_all_three_unit_graphs_against_independent_transitive_closure) ... ok
+test_constant_comparison_with_no_rows (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_constant_comparison_with_no_rows) ... ok
+test_converted_context_is_same_reduct_not_same_full_source (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_converted_context_is_same_reduct_not_same_full_source) ... ok
+test_disconnected_unit_does_not_require_conversion (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_disconnected_unit_does_not_require_conversion) ... ok
+test_empty_path_and_nested_nonlinear_children (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_empty_path_and_nested_nonlinear_children) ... ok
+test_empty_source_signature_weakens_graph_only_requirement (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_empty_source_signature_weakens_graph_only_requirement) ... ok
+test_exact_converted_proof_grafts_to_current_request (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_exact_converted_proof_grafts_to_current_request) ... ok
+test_foreign_dead_let_does_not_invalidate_dependency_lemma (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_foreign_dead_let_does_not_invalidate_dependency_lemma) ... ok
+test_inaccessible_row_can_hide_arbitrarily_large_gap (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_inaccessible_row_can_hide_arbitrarily_large_gap) ... ok
+test_invalid_path_and_unknown_unit_fail (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_invalid_path_and_unknown_unit_fail) ... ok
+test_lattice_conversion_requires_more_than_collected_identity (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_lattice_conversion_requires_more_than_collected_identity) ... ok
+test_multiedge_path_with_fractional_gain (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_multiedge_path_with_fractional_gain) ... ok
+test_one_way_reduct_countermodel_is_not_original_countermodel (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_one_way_reduct_countermodel_is_not_original_countermodel) ... ok
+test_return_path_repairs_inference_even_with_nonreciprocal_factors (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_return_path_repairs_inference_even_with_nonreciprocal_factors) ... ok
+test_source_after_fork_can_be_closed (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_source_after_fork_can_be_closed) ... ok
+test_source_closed_direction (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_source_closed_direction) ... ok
+test_source_upstream_of_fork_is_relevant (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_source_upstream_of_fork_is_relevant) ... ok
+test_unused_foreign_instruction_is_not_root_evidence (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_unused_foreign_instruction_is_not_root_evidence) ... ok
+test_zero_conversion_is_outside_fragment (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_zero_conversion_is_outside_fragment) ... ok
+test_zero_weight_does_not_import_foreign_evidence (v2.checks.f08_unit_characterization.F08UnitCharacterizationTests.test_zero_weight_does_not_import_foreign_evidence) ... ok
+
+======================================================================
+ERROR: setUpClass (v2.checks.f08_unit_characterization.F08FiniteCaseConstructionTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 439, in setUpClass
+    cls.ctx, cls.proof, cls.methods = three_region_example()
+                                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f08_unit_characterization.py", line 258, in three_region_example
+    result = D.compile_sign_split(ctx, x, D.LiveBranch(negative, neg_result.proof),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_derived_cases.py", line 361, in compile_sign_split
+    return CaseResult(finish(b, root, limits), 'derived-sign', (a.baseline,c.baseline), (a.gain,c.gain))
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_derived_cases.py", line 60, in finish
+    p = T.prune(b.ctx, p); bounded(p, limits)
+        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_source_transport.py", line 53, in prune
+    R.check(ctx, out)
+  File "C:\Users\trist\projects\value_logic\v2\checks\f06_inference_rules.py", line 206, in check
+    if infer(step.new,ctx.signature)!=infer(step.old,ctx.signature):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 149, in infer
+    unit = infer(t.args[0], sig, env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 158, in infer
+    if infer(t.args[1], sig, env) != unit:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 127, in infer
+    sig.validate()
+  File "C:\Users\trist\projects\value_logic\v2\checks\f05_semantics.py", line 57, in validate
+    for c in self.conversions:
+             ^^^^^^^^^^^^^^^^
+SystemError: bad BUILD_CONST_KEY_MAP keys argument
+
+----------------------------------------------------------------------
+Ran 22 tests in 6.628s
+
+FAILED (errors=1)

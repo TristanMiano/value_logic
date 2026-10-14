@@ -1,0 +1,109 @@
+{
+  "name": "n2_sparse",
+  "plan": {
+    "source": "3267070247b751b63aab26213d6934a66a2dd73ad4b2f1353e6b8d4aaea32463",
+    "cover": [],
+    "dual": []
+  },
+  "worlds": [
+    {
+      "bits": [
+        0,
+        0
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        0,
+        1
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        1,
+        0
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        1,
+        1
+      ],
+      "fee": 0,
+      "optimum": 0,
+      "lower": 0,
+      "mandatory": []
+    }
+  ],
+  "negative_controls": [
+    "dual",
+    "source",
+    "bound"
+  ],
+  "invoice": {
+    "total": 58,
+    "by_category": {
+      "source": 22,
+      "planning": 0,
+      "dual_check": 20,
+      "execution": 0,
+      "bound": 8,
+      "bound_check": 8
+    },
+    "operations": [
+      {
+        "category": "bound",
+        "operation": "mandatory_fee_and_remaining_dual",
+        "units": 8
+      },
+      {
+        "category": "bound_check",
+        "operation": "independent_mandatory_incidence_scan",
+        "units": 0
+      },
+      {
+        "category": "bound_check",
+        "operation": "sum_mandatory_cost_and_residual_dual",
+        "units": 8
+      },
+      {
+        "category": "dual_check",
+        "operation": "all_vertex_capacity_checks",
+        "units": 20
+      },
+      {
+        "category": "dual_check",
+        "operation": "tight_cover_and_complete_edge_coverage",
+        "units": 0
+      },
+      {
+        "category": "execution",
+        "operation": "dispatch_cover_and_forced_queries",
+        "units": 0
+      },
+      {
+        "category": "planning",
+        "operation": "emit_cover_and_dual",
+        "units": 0
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_graph_alphabet_and_fees",
+        "units": 22
+      }
+    ]
+  },
+  "physical_audits": 0
+}

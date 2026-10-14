@@ -1,0 +1,188 @@
+{
+  "group": {
+    "name": "g3",
+    "interval": [
+      6,
+      7
+    ],
+    "weights": [
+      2,
+      4,
+      4,
+      6
+    ],
+    "centers": [
+      6,
+      6,
+      7,
+      6
+    ]
+  },
+  "certificate": {
+    "source": "928ed4623d090de0dea086c82a847fd96258471514fcb1f67a320b52e8bcf254",
+    "rows": [
+      [
+        [
+          0,
+          0,
+          []
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          4,
+          0,
+          [
+            2,
+            2,
+            1
+          ]
+        ],
+        [
+          8,
+          0,
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          [
+            2,
+            2,
+            0,
+            2
+          ]
+        ],
+        [
+          4,
+          0,
+          [
+            2,
+            2,
+            1,
+            2
+          ]
+        ],
+        [
+          8,
+          0,
+          [
+            2,
+            2,
+            2,
+            2
+          ]
+        ]
+      ]
+    ],
+    "frontier": [
+      [
+        0,
+        200,
+        [
+          2,
+          2,
+          0,
+          2
+        ]
+      ]
+    ]
+  },
+  "checked": {
+    "states": 8,
+    "transitions": 18,
+    "frontier_size": 1
+  },
+  "action_checks": 81,
+  "target_checks": 25,
+  "nominal_actions": 29,
+  "nominal_regret": 0,
+  "robust_regret": 0,
+  "strict": false,
+  "negative_checks": 3,
+  "invoice": {
+    "total": 261,
+    "by_category": {
+      "planning": 261
+    },
+    "operations": [
+      {
+        "category": "planning",
+        "operation": "local_frontier_transition",
+        "units": 216
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_point_comparison",
+        "units": 27
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sort_upper_comparisons",
+        "units": 6
+      },
+      {
+        "category": "planning",
+        "operation": "pareto_sorted_scan",
+        "units": 12
+      }
+    ]
+  },
+  "checking_invoice": {
+    "total": 343,
+    "by_category": {
+      "dp_check": 343
+    },
+    "operations": [
+      {
+        "category": "dp_check",
+        "operation": "exact_transition_and_argmin",
+        "units": 270
+      },
+      {
+        "category": "dp_check",
+        "operation": "independent_returned_endpoint_bound",
+        "units": 48
+      },
+      {
+        "category": "dp_check",
+        "operation": "pairwise_dominance_comparison",
+        "units": 25
+      }
+    ]
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "outputs": 1024,
+  "base_audit_fee": 32734,
+  "physical_audits": 8026,
+  "named_units": 1405196,
+  "setup_units": 748547,
+  "invoice": {
+    "total": 1405196,
+    "by_category": {
+      "source": 322,
+      "preparation": 367175,
+      "restriction": 85050,
+      "table_prepare": 35200,
+      "table_check": 260800,
+      "selection": 4509,
+      "execution": 84669,
+      "provider": 96312,
+      "receipt": 120390,
+      "action": 110592,
+      "check": 238976,
+      "learning": 103,
+      "confidence": 1098
+    },
+    "operations": [
+      {
+        "category": "action",
+        "operation": "two_component_endpoint_choice",
+        "units": 110592
+      },
+      {
+        "category": "check",
+        "operation": "compatible_local_cost_comparison",
+        "units": 128384
+      },
+      {
+        "category": "check",
+        "operation": "original_clause",
+        "units": 110592
+      },
+      {
+        "category": "confidence",
+        "operation": "binomial_factor_grid_bracketing_and_retention",
+        "units": 113
+      },
+      {
+        "category": "confidence",
+        "operation": "exact_grid_power_and_integer_likelihood_comparison",
+        "units": 985
+      },
+      {
+        "category": "execution",
+        "operation": "branch_and_push_continuations",
+        "units": 48156
+      },
+      {
+        "category": "execution",
+        "operation": "pop_interval_task",
+        "units": 36513
+      },
+      {
+        "category": "learning",
+        "operation": "retain_compulsory_pair_count",
+        "units": 103
+      },
+      {
+        "category": "preparation",
+        "operation": "continuum_polynomial_production",
+        "units": 205975
+      },
+      {
+        "category": "preparation",
+        "operation": "independent_polynomial_identity_check",
+        "units": 117500
+      },
+      {
+        "category": "preparation",
+        "operation": "model_policy_proposal",
+        "units": 43700
+      },
+      {
+        "category": "provider",
+        "operation": "construct_and_export_receipt_words",
+        "units": 96312
+      },
+      {
+        "category": "receipt",
+        "operation": "bind_source_request_value_and_fee",
+        "units": 120390
+      },
+      {
+        "category": "restriction",
+        "operation": "de_casteljau_convex_combination",
+        "units": 85050
+      },
+      {
+        "category": "selection",
+        "operation": "intersect_acceptable_policy_masks",
+        "units": 1425
+      },
+      {
+        "category": "selection",
+        "operation": "maximum_fee_across_relevant_bins",
+        "units": 1425
+      },
+      {
+        "category": "selection",
+        "operation": "reuse_admitted_policy_epoch",
+        "units": 1019
+      },
+      {
+        "category": "selection",
+        "operation": "scan_intersected_certified_bins",
+        "units": 640
+      },
+      {
+        "category": "source",
+        "operation": "read_original_path_factors_and_continuum_source",
+        "units": 322
+      },
+      {
+        "category": "table_check",
+        "operation": "affine_power_substitution",
+        "units": 105600
+      },
+      {
+        "category": "table_check",
+        "operation": "all_pairwise_regret_inequalities",
+        "units": 32000
+      },
+      {
+        "category": "table_check",
+        "operation": "bernstein_to_power",
+        "units": 70400
+      },
+      {
+        "category": "table_check",
+        "operation": "power_to_local_bernstein",
+        "units": 52800
+      },
+      {
+        "category": "table_prepare",
+        "operation": "fee_coefficient_maxima",
+        "units": 3200
+      },
+      {
+        "category": "table_prepare",
+        "operation": "pairwise_regret_coefficient_maxima",
+        "units": 32000
+      }
+    ]
+  },
+  "learning_samples": 8,
+  "repeats": 7,
+  "decision_epochs": 5,
+  "decisions": [
+    {
+      "before_request": 0,
+      "interval": [
+        0,
+        1
+      ],
+      "selected": 3,
+      "samples": 0,
+      "fee_upper": "2536410384325/77309411328",
+      "certified_epsilon_optimal": false,
+      "intersected_bins": 64
+    },
+    {
+      "before_request": 3,
+      "interval": [
+        "51/2048",
+        1
+      ],
+      "selected": 3,
+      "samples": 1,
+      "fee_upper": "2536410384325/77309411328",
+      "certified_epsilon_optimal": false,
+      "intersected_bins": 63
+    },
+    {
+      "before_request": 4,
+      "interval": [
+        "51/2048",
+        "2031/2048"
+      ],
+      "selected": 3,
+      "samples": 2,
+      "fee_upper": "2536410384325/77309411328",
+      "certified_epsilon_optimal": false,
+      "intersected_bins": 63
+    },
+    {
+      "before_request": 12,
+      "interval": [
+        "585/4096",
+        "2031/2048"
+      ],
+      "selected": 3,
+      "samples": 4,
+      "fee_upper": "2536410384325/77309411328",
+      "certified_epsilon_optimal": false,
+      "intersected_bins": 55
+    },
+    {
+      "before_request": 21,
+      "interval": [
+        "1551/4096",
+        "2031/2048"
+      ],
+      "selected": 3,
+      "samples": 8,
+      "fee_upper": "2536410384325/77309411328",
+      "certified_epsilon_optimal": true,
+      "intersected_bins": 40
+    }
+  ],
+  "stop_before_request": 21,
+  "final_interval": [
+    "1551/4096",
+    "2031/2048"
+  ],
+  "selected_policies": {
+    "3": 1024
+  },
+  "observed_coverage_failures": 0,
+  "cumulative_expected_bank_fee_regret": 0,
+  "worst_conditional_expected_bank_fee_regret": 0,
+  "diagnostic_bank_values": {
+    "1": "25644433/781250",
+    "3": "4978071/156250",
+    "5": "4978071/156250",
+    "7": "4978071/156250",
+    "9": "4978071/156250"
+  },
+  "trace_bytes": 2512848,
+  "diagnostic_bytes": 171967,
+  "arm_cpu_ns": 562500000,
+  "arm_wall_ns": 583741300
+}

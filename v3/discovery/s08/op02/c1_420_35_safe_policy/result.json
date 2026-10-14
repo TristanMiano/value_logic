@@ -1,0 +1,85 @@
+{
+  "outputs": 64,
+  "base_audit_fee": 0,
+  "physical_audits": 0,
+  "named_units": 11377,
+  "setup_units": 945,
+  "invoice": {
+    "total": 11377,
+    "by_category": {
+      "source": 113,
+      "geometry": 28,
+      "shared_acquisition": 11,
+      "shared_planning": 452,
+      "shared_extraction": 38,
+      "shared_admission": 283,
+      "policy_load": 20,
+      "selection": 576,
+      "action_check": 1920,
+      "bounds": 6400,
+      "export": 1536
+    },
+    "operations": [
+      {
+        "category": "action_check",
+        "operation": "original_clause",
+        "units": 1920
+      },
+      {
+        "category": "bounds",
+        "operation": "source_endpoint_regret_upper_and_optimum_lower",
+        "units": 6400
+      },
+      {
+        "category": "export",
+        "operation": "source_action_receipts_and_bill",
+        "units": 1536
+      },
+      {
+        "category": "geometry",
+        "operation": "exact_original_resolution_check",
+        "units": 28
+      },
+      {
+        "category": "policy_load",
+        "operation": "compact_policy_words",
+        "units": 20
+      },
+      {
+        "category": "selection",
+        "operation": "policy_state_lookup",
+        "units": 576
+      },
+      {
+        "category": "shared_acquisition",
+        "operation": "allocated_original_resolution",
+        "units": 11
+      },
+      {
+        "category": "shared_admission",
+        "operation": "actual_safe_policy_check",
+        "units": 283
+      },
+      {
+        "category": "shared_extraction",
+        "operation": "actual_reachable_extraction",
+        "units": 38
+      },
+      {
+        "category": "shared_planning",
+        "operation": "actual_original_build_including_discarded_states",
+        "units": 452
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_support_and_fee_admission",
+        "units": 113
+      }
+    ]
+  },
+  "observed_max_fee": 0,
+  "policy_worst_fee": 0,
+  "complete_query_cap": 4,
+  "cpu_ns": 0,
+  "wall_ns": 3081600
+}

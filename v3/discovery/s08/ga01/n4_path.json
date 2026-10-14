@@ -1,0 +1,363 @@
+{
+  "name": "n4_path",
+  "plan": {
+    "source": "cf86d6f5cac44c7524b508f3571b78f5853d9718c3dc5928de63cadaaf909863",
+    "cover": [
+      1,
+      3
+    ],
+    "dual": [
+      1,
+      0,
+      4
+    ]
+  },
+  "worlds": [
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fee": 5,
+      "optimum": 5,
+      "lower": 5,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "fee": 11,
+      "optimum": 7,
+      "lower": 7,
+      "mandatory": [
+        2
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "fee": 5,
+      "optimum": 5,
+      "lower": 5,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "fee": 11,
+      "optimum": 11,
+      "lower": 11,
+      "mandatory": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "fee": 19,
+      "optimum": 14,
+      "lower": 14,
+      "mandatory": [
+        0,
+        2
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "fee": 19,
+      "optimum": 14,
+      "lower": 14,
+      "mandatory": [
+        0,
+        2
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "fee": 19,
+      "optimum": 19,
+      "lower": 19,
+      "mandatory": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "fee": 19,
+      "optimum": 19,
+      "lower": 19,
+      "mandatory": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "fee": 5,
+      "optimum": 5,
+      "lower": 5,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "fee": 11,
+      "optimum": 7,
+      "lower": 7,
+      "mandatory": [
+        2
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "fee": 5,
+      "optimum": 5,
+      "lower": 5,
+      "mandatory": []
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "fee": 11,
+      "optimum": 11,
+      "lower": 11,
+      "mandatory": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "fee": 19,
+      "optimum": 15,
+      "lower": 15,
+      "mandatory": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "fee": 19,
+      "optimum": 15,
+      "lower": 15,
+      "mandatory": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "fee": 19,
+      "optimum": 19,
+      "lower": 19,
+      "mandatory": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "fee": 19,
+      "optimum": 19,
+      "lower": 19,
+      "mandatory": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "negative_controls": [
+    "dual",
+    "source",
+    "bound",
+    "receipt"
+  ],
+  "invoice": {
+    "total": 5838,
+    "by_category": {
+      "source": 120,
+      "planning": 41,
+      "dual_check": 457,
+      "execution": 340,
+      "receipt": 780,
+      "action": 576,
+      "check": 1216,
+      "bound": 448,
+      "bound_check": 1860
+    },
+    "operations": [
+      {
+        "category": "action",
+        "operation": "two_component_endpoint_choice",
+        "units": 576
+      },
+      {
+        "category": "bound",
+        "operation": "mandatory_fee_and_remaining_dual",
+        "units": 256
+      },
+      {
+        "category": "bound",
+        "operation": "observed_middle_mandatory_neighbors",
+        "units": 192
+      },
+      {
+        "category": "bound_check",
+        "operation": "independent_mandatory_incidence_scan",
+        "units": 768
+      },
+      {
+        "category": "bound_check",
+        "operation": "independent_receipt_binding",
+        "units": 884
+      },
+      {
+        "category": "bound_check",
+        "operation": "sum_mandatory_cost_and_residual_dual",
+        "units": 208
+      },
+      {
+        "category": "check",
+        "operation": "compatible_local_cost_comparison",
+        "units": 640
+      },
+      {
+        "category": "check",
+        "operation": "original_clause",
+        "units": 576
+      },
+      {
+        "category": "dual_check",
+        "operation": "all_vertex_capacity_checks",
+        "units": 136
+      },
+      {
+        "category": "dual_check",
+        "operation": "nonnegative_edge_and_endpoint_loads",
+        "units": 306
+      },
+      {
+        "category": "dual_check",
+        "operation": "tight_cover_and_complete_edge_coverage",
+        "units": 15
+      },
+      {
+        "category": "execution",
+        "operation": "dispatch_cover_and_forced_queries",
+        "units": 52
+      },
+      {
+        "category": "execution",
+        "operation": "identify_unqueried_mandatory_neighbor",
+        "units": 288
+      },
+      {
+        "category": "planning",
+        "operation": "emit_cover_and_dual",
+        "units": 5
+      },
+      {
+        "category": "planning",
+        "operation": "uncovered_edge_dual_raise_and_tight_vertices",
+        "units": 36
+      },
+      {
+        "category": "receipt",
+        "operation": "bind_source_request_value_and_fee",
+        "units": 780
+      },
+      {
+        "category": "source",
+        "operation": "original_clauses_features_graph_alphabet_and_fees",
+        "units": 120
+      }
+    ]
+  },
+  "physical_audits": 0
+}

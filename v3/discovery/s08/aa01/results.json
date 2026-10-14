@@ -1,0 +1,5895 @@
+{
+  "status": "complete",
+  "cases": [
+    {
+      "name": "n2r0t0",
+      "n": 2,
+      "tau": 0,
+      "source": "80b9111852d38f843462f95136a3a01b5fbbfa2dc38e72ca99f913c8f8852afa",
+      "admission": {
+        "total": 62,
+        "by_category": {
+          "source_admission": 46,
+          "admission": 16
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 8
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 8
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 46
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 56,
+              "by_category": {
+                "planning": 56
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 36
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 16
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 4
+                }
+              ]
+            },
+            "states": 4
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 4,
+            "base_audit_fee": 12,
+            "setup_units": 129,
+            "service_units": 224,
+            "trace_bytes": 5110,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 62,
+              "by_category": {
+                "planning": 62
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 6
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 32
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 24
+                }
+              ]
+            },
+            "states": 6
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 4,
+            "base_audit_fee": 12,
+            "setup_units": 135,
+            "service_units": 224,
+            "trace_bytes": 5194,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 1,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 14,
+              "by_category": {
+                "planning": 14
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 14
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 4,
+            "base_audit_fee": 12,
+            "setup_units": 87,
+            "service_units": 224,
+            "trace_bytes": 5050,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 3,
+            "fee": 7,
+            "residual": 0,
+            "invoice": {
+              "total": 2,
+              "by_category": {
+                "planning": 2
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 2
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 8,
+            "base_audit_fee": 28,
+            "setup_units": 75,
+            "service_units": 272,
+            "trace_bytes": 7101,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n2r0t1",
+      "n": 2,
+      "tau": 1,
+      "source": "80b9111852d38f843462f95136a3a01b5fbbfa2dc38e72ca99f913c8f8852afa",
+      "admission": {
+        "total": 62,
+        "by_category": {
+          "source_admission": 46,
+          "admission": 16
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 8
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 8
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 46
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 56,
+              "by_category": {
+                "planning": 56
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 36
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 16
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 4
+                }
+              ]
+            },
+            "states": 4
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 4,
+            "base_audit_fee": 12,
+            "setup_units": 129,
+            "service_units": 224,
+            "trace_bytes": 5110,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 62,
+              "by_category": {
+                "planning": 62
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 6
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 32
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 24
+                }
+              ]
+            },
+            "states": 6
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 4,
+            "base_audit_fee": 12,
+            "setup_units": 135,
+            "service_units": 224,
+            "trace_bytes": 5194,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 1,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 14,
+              "by_category": {
+                "planning": 14
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 14
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 4,
+            "base_audit_fee": 12,
+            "setup_units": 87,
+            "service_units": 224,
+            "trace_bytes": 5050,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 3,
+            "fee": 7,
+            "residual": 0,
+            "invoice": {
+              "total": 2,
+              "by_category": {
+                "planning": 2
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 2
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 8,
+            "base_audit_fee": 28,
+            "setup_units": 75,
+            "service_units": 272,
+            "trace_bytes": 7101,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n2r1t0",
+      "n": 2,
+      "tau": 0,
+      "source": "dae8aaaba17ed4dffb8faef613e6b905b3258ff27dbef30613c942b8cb99d09a",
+      "admission": {
+        "total": 62,
+        "by_category": {
+          "source_admission": 46,
+          "admission": 16
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 8
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 8
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 46
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 56,
+              "by_category": {
+                "planning": 56
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 36
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 16
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 4
+                }
+              ]
+            },
+            "states": 4
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 4,
+            "base_audit_fee": 12,
+            "setup_units": 129,
+            "service_units": 224,
+            "trace_bytes": 5110,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 62,
+              "by_category": {
+                "planning": 62
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 6
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 32
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 24
+                }
+              ]
+            },
+            "states": 6
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 4,
+            "base_audit_fee": 12,
+            "setup_units": 135,
+            "service_units": 224,
+            "trace_bytes": 5194,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 1,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 14,
+              "by_category": {
+                "planning": 14
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 14
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 4,
+            "base_audit_fee": 12,
+            "setup_units": 87,
+            "service_units": 224,
+            "trace_bytes": 5050,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 3,
+            "fee": 7,
+            "residual": 0,
+            "invoice": {
+              "total": 2,
+              "by_category": {
+                "planning": 2
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 2
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 11,
+            "by_category": {
+              "plan_check": 11
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 11
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 4,
+            "physical_audits": 8,
+            "base_audit_fee": 28,
+            "setup_units": 75,
+            "service_units": 272,
+            "trace_bytes": 7101,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n3r0t0",
+      "n": 3,
+      "tau": 0,
+      "source": "fb3308b13ef27b686cee83f0675891e5f2200c3f586ba132659a83210cbc7c7d",
+      "admission": {
+        "total": 108,
+        "by_category": {
+          "source_admission": 79,
+          "admission": 29
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 16
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 13
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 79
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 4,
+            "residual": 0,
+            "invoice": {
+              "total": 101,
+              "by_category": {
+                "planning": 101
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 72
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 24
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 5
+                }
+              ]
+            },
+            "states": 6
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 8,
+            "base_audit_fee": 32,
+            "setup_units": 228,
+            "service_units": 800,
+            "trace_bytes": 10300,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 4,
+            "residual": 0,
+            "invoice": {
+              "total": 155,
+              "by_category": {
+                "planning": 155
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 11
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 96
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 48
+                }
+              ]
+            },
+            "states": 12
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 8,
+            "base_audit_fee": 32,
+            "setup_units": 282,
+            "service_units": 800,
+            "trace_bytes": 10468,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 3,
+            "fee": 5,
+            "residual": 0,
+            "invoice": {
+              "total": 55,
+              "by_category": {
+                "planning": 55
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 55
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 16,
+            "base_audit_fee": 40,
+            "setup_units": 182,
+            "service_units": 896,
+            "trace_bytes": 14364,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 7,
+            "fee": 9,
+            "residual": 0,
+            "invoice": {
+              "total": 3,
+              "by_category": {
+                "planning": 3
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 3
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 24,
+            "base_audit_fee": 72,
+            "setup_units": 130,
+            "service_units": 992,
+            "trace_bytes": 18434,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n3r0t1",
+      "n": 3,
+      "tau": 1,
+      "source": "fb3308b13ef27b686cee83f0675891e5f2200c3f586ba132659a83210cbc7c7d",
+      "admission": {
+        "total": 108,
+        "by_category": {
+          "source_admission": 79,
+          "admission": 29
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 16
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 13
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 79
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 4,
+            "residual": 0,
+            "invoice": {
+              "total": 101,
+              "by_category": {
+                "planning": 101
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 72
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 24
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 5
+                }
+              ]
+            },
+            "states": 6
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 8,
+            "base_audit_fee": 32,
+            "setup_units": 228,
+            "service_units": 800,
+            "trace_bytes": 10300,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 4,
+            "residual": 0,
+            "invoice": {
+              "total": 155,
+              "by_category": {
+                "planning": 155
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 11
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 96
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 48
+                }
+              ]
+            },
+            "states": 12
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 8,
+            "base_audit_fee": 32,
+            "setup_units": 282,
+            "service_units": 800,
+            "trace_bytes": 10468,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 3,
+            "fee": 5,
+            "residual": 0,
+            "invoice": {
+              "total": 55,
+              "by_category": {
+                "planning": 55
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 55
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 16,
+            "base_audit_fee": 40,
+            "setup_units": 182,
+            "service_units": 896,
+            "trace_bytes": 14364,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 7,
+            "fee": 9,
+            "residual": 0,
+            "invoice": {
+              "total": 3,
+              "by_category": {
+                "planning": 3
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 3
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 24,
+            "base_audit_fee": 72,
+            "setup_units": 130,
+            "service_units": 992,
+            "trace_bytes": 18434,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n3r1t0",
+      "n": 3,
+      "tau": 0,
+      "source": "233e9cee32f729432844821074e8846f79e2e3f36c4c2b0b32f7925de66e7a44",
+      "admission": {
+        "total": 108,
+        "by_category": {
+          "source_admission": 79,
+          "admission": 29
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 16
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 13
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 79
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 1,
+            "residual": 0,
+            "invoice": {
+              "total": 101,
+              "by_category": {
+                "planning": 101
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 72
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 24
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 5
+                }
+              ]
+            },
+            "states": 6
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 8,
+            "base_audit_fee": 8,
+            "setup_units": 228,
+            "service_units": 800,
+            "trace_bytes": 10300,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 1,
+            "fee": 1,
+            "residual": 0,
+            "invoice": {
+              "total": 155,
+              "by_category": {
+                "planning": 155
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 11
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 96
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 48
+                }
+              ]
+            },
+            "states": 12
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 8,
+            "base_audit_fee": 8,
+            "setup_units": 282,
+            "service_units": 800,
+            "trace_bytes": 10468,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 1,
+            "fee": 1,
+            "residual": 0,
+            "invoice": {
+              "total": 33,
+              "by_category": {
+                "planning": 33
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 33
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 8,
+            "base_audit_fee": 8,
+            "setup_units": 160,
+            "service_units": 800,
+            "trace_bytes": 10180,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 7,
+            "fee": 4,
+            "residual": 0,
+            "invoice": {
+              "total": 3,
+              "by_category": {
+                "planning": 3
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 3
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 19,
+            "by_category": {
+              "plan_check": 19
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 19
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 24,
+            "base_audit_fee": 32,
+            "setup_units": 130,
+            "service_units": 992,
+            "trace_bytes": 18434,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n4r0t0",
+      "n": 4,
+      "tau": 0,
+      "source": "78a0139c5d50542a0233f9188a27cfd0f90e74da7c79953167e3a141f9cb541b",
+      "admission": {
+        "total": 154,
+        "by_category": {
+          "source_admission": 112,
+          "admission": 42
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 24
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 18
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 112
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 3,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 146,
+              "by_category": {
+                "planning": 146
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 108
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 32
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 6
+                }
+              ]
+            },
+            "states": 8
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 32,
+            "base_audit_fee": 48,
+            "setup_units": 327,
+            "service_units": 2496,
+            "trace_bytes": 29310,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 3,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 340,
+              "by_category": {
+                "planning": 340
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 20
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 224
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 96
+                }
+              ]
+            },
+            "states": 24
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 32,
+            "base_audit_fee": 48,
+            "setup_units": 521,
+            "service_units": 2496,
+            "trace_bytes": 29870,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 3,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 105,
+              "by_category": {
+                "planning": 105
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 105
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 32,
+            "base_audit_fee": 48,
+            "setup_units": 286,
+            "service_units": 2496,
+            "trace_bytes": 28910,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 15,
+            "fee": 11,
+            "residual": 0,
+            "invoice": {
+              "total": 4,
+              "by_category": {
+                "planning": 4
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 4
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 64,
+            "base_audit_fee": 176,
+            "setup_units": 185,
+            "service_units": 2880,
+            "trace_bytes": 45398,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n4r0t1",
+      "n": 4,
+      "tau": 1,
+      "source": "78a0139c5d50542a0233f9188a27cfd0f90e74da7c79953167e3a141f9cb541b",
+      "admission": {
+        "total": 154,
+        "by_category": {
+          "source_admission": 112,
+          "admission": 42
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 24
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 18
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 112
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 2,
+            "fee": 1,
+            "residual": 1,
+            "invoice": {
+              "total": 151,
+              "by_category": {
+                "planning": 151
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 108
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 36
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 7
+                }
+              ]
+            },
+            "states": 9
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 16,
+            "base_audit_fee": 16,
+            "setup_units": 332,
+            "service_units": 2304,
+            "trace_bytes": 20770,
+            "realized_regret": 8
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 2,
+            "fee": 1,
+            "residual": 1,
+            "invoice": {
+              "total": 340,
+              "by_category": {
+                "planning": 340
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 20
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 224
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 96
+                }
+              ]
+            },
+            "states": 24
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 16,
+            "base_audit_fee": 16,
+            "setup_units": 521,
+            "service_units": 2304,
+            "trace_bytes": 21106,
+            "realized_regret": 8
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 2,
+            "fee": 1,
+            "residual": 1,
+            "invoice": {
+              "total": 60,
+              "by_category": {
+                "planning": 60
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 60
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 16,
+            "base_audit_fee": 16,
+            "setup_units": 241,
+            "service_units": 2304,
+            "trace_bytes": 20530,
+            "realized_regret": 8
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 15,
+            "fee": 11,
+            "residual": 0,
+            "invoice": {
+              "total": 4,
+              "by_category": {
+                "planning": 4
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 4
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 64,
+            "base_audit_fee": 176,
+            "setup_units": 185,
+            "service_units": 2880,
+            "trace_bytes": 45398,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n4r1t0",
+      "n": 4,
+      "tau": 0,
+      "source": "2f4e451a0656543756513fd06b1a83efd16b2704260335206bbd55fa3e68e4b5",
+      "admission": {
+        "total": 154,
+        "by_category": {
+          "source_admission": 112,
+          "admission": 42
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 24
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 18
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 112
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 2,
+            "fee": 5,
+            "residual": 0,
+            "invoice": {
+              "total": 146,
+              "by_category": {
+                "planning": 146
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 108
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 32
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 6
+                }
+              ]
+            },
+            "states": 8
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 16,
+            "base_audit_fee": 80,
+            "setup_units": 327,
+            "service_units": 2304,
+            "trace_bytes": 20770,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 2,
+            "fee": 5,
+            "residual": 0,
+            "invoice": {
+              "total": 346,
+              "by_category": {
+                "planning": 346
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 18
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 224
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 104
+                }
+              ]
+            },
+            "states": 26
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 16,
+            "base_audit_fee": 80,
+            "setup_units": 527,
+            "service_units": 2304,
+            "trace_bytes": 21106,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 13,
+            "fee": 7,
+            "residual": 0,
+            "invoice": {
+              "total": 135,
+              "by_category": {
+                "planning": 135
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 135
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 48,
+            "base_audit_fee": 112,
+            "setup_units": 316,
+            "service_units": 2688,
+            "trace_bytes": 37290,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 15,
+            "fee": 12,
+            "residual": 0,
+            "invoice": {
+              "total": 4,
+              "by_category": {
+                "planning": 4
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 4
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 64,
+            "base_audit_fee": 192,
+            "setup_units": 185,
+            "service_units": 2880,
+            "trace_bytes": 45398,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n4r1t3",
+      "n": 4,
+      "tau": 3,
+      "source": "2f4e451a0656543756513fd06b1a83efd16b2704260335206bbd55fa3e68e4b5",
+      "admission": {
+        "total": 154,
+        "by_category": {
+          "source_admission": 112,
+          "admission": 42
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 24
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 18
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 112
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 2,
+            "fee": 5,
+            "residual": 0,
+            "invoice": {
+              "total": 173,
+              "by_category": {
+                "planning": 173
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 126
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 40
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 7
+                }
+              ]
+            },
+            "states": 10
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 16,
+            "base_audit_fee": 80,
+            "setup_units": 354,
+            "service_units": 2304,
+            "trace_bytes": 20770,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 2,
+            "fee": 5,
+            "residual": 0,
+            "invoice": {
+              "total": 346,
+              "by_category": {
+                "planning": 346
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 18
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 224
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 104
+                }
+              ]
+            },
+            "states": 26
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 16,
+            "base_audit_fee": 80,
+            "setup_units": 527,
+            "service_units": 2304,
+            "trace_bytes": 21106,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 13,
+            "fee": 7,
+            "residual": 0,
+            "invoice": {
+              "total": 135,
+              "by_category": {
+                "planning": 135
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 135
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 48,
+            "base_audit_fee": 112,
+            "setup_units": 316,
+            "service_units": 2688,
+            "trace_bytes": 37290,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 15,
+            "fee": 12,
+            "residual": 0,
+            "invoice": {
+              "total": 4,
+              "by_category": {
+                "planning": 4
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 4
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 27,
+            "by_category": {
+              "plan_check": 27
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 27
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 16,
+            "physical_audits": 64,
+            "base_audit_fee": 192,
+            "setup_units": 185,
+            "service_units": 2880,
+            "trace_bytes": 45398,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n5r0t0",
+      "n": 5,
+      "tau": 0,
+      "source": "69c26e107f6be0f8f1488b202fdab2cdc6abb80d5e915e6f4dc9c62d1f84809d",
+      "admission": {
+        "total": 200,
+        "by_category": {
+          "source_admission": 145,
+          "admission": 55
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 32
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 23
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 145
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 10,
+            "fee": 5,
+            "residual": 0,
+            "invoice": {
+              "total": 191,
+              "by_category": {
+                "planning": 191
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 144
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 40
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 7
+                }
+              ]
+            },
+            "states": 10
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 64,
+            "base_audit_fee": 160,
+            "setup_units": 426,
+            "service_units": 6400,
+            "trace_bytes": 58894,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 10,
+            "fee": 5,
+            "residual": 0,
+            "invoice": {
+              "total": 569,
+              "by_category": {
+                "planning": 569
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 25
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 384
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 160
+                }
+              ]
+            },
+            "states": 40
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 64,
+            "base_audit_fee": 160,
+            "setup_units": 804,
+            "service_units": 6400,
+            "trace_bytes": 60014,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 13,
+            "fee": 8,
+            "residual": 0,
+            "invoice": {
+              "total": 228,
+              "by_category": {
+                "planning": 228
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 228
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 96,
+            "base_audit_fee": 256,
+            "setup_units": 463,
+            "service_units": 6784,
+            "trace_bytes": 74874,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 31,
+            "fee": 15,
+            "residual": 0,
+            "invoice": {
+              "total": 5,
+              "by_category": {
+                "planning": 5
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 5
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 160,
+            "base_audit_fee": 480,
+            "setup_units": 240,
+            "service_units": 7552,
+            "trace_bytes": 107762,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n5r0t3",
+      "n": 5,
+      "tau": 3,
+      "source": "69c26e107f6be0f8f1488b202fdab2cdc6abb80d5e915e6f4dc9c62d1f84809d",
+      "admission": {
+        "total": 200,
+        "by_category": {
+          "source_admission": 145,
+          "admission": 55
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 32
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 23
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 145
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 2,
+            "fee": 4,
+            "residual": 3,
+            "invoice": {
+              "total": 299,
+              "by_category": {
+                "planning": 299
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 225
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 64
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 10
+                }
+              ]
+            },
+            "states": 16
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 32,
+            "base_audit_fee": 128,
+            "setup_units": 534,
+            "service_units": 6016,
+            "trace_bytes": 41794,
+            "realized_regret": 48
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 12,
+            "fee": 4,
+            "residual": 1,
+            "invoice": {
+              "total": 569,
+              "by_category": {
+                "planning": 569
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 25
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 384
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 160
+                }
+              ]
+            },
+            "states": 40
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 64,
+            "base_audit_fee": 128,
+            "setup_units": 804,
+            "service_units": 6400,
+            "trace_bytes": 60014,
+            "realized_regret": 16
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 12,
+            "fee": 4,
+            "residual": 1,
+            "invoice": {
+              "total": 171,
+              "by_category": {
+                "planning": 171
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 171
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 64,
+            "base_audit_fee": 128,
+            "setup_units": 406,
+            "service_units": 6400,
+            "trace_bytes": 58094,
+            "realized_regret": 16
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 31,
+            "fee": 15,
+            "residual": 0,
+            "invoice": {
+              "total": 5,
+              "by_category": {
+                "planning": 5
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 5
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 160,
+            "base_audit_fee": 480,
+            "setup_units": 240,
+            "service_units": 7552,
+            "trace_bytes": 107762,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n5r1t0",
+      "n": 5,
+      "tau": 0,
+      "source": "fc338dc39679bfcc4bbe51e0e05cbd7eae2df1ba693a0a8f9b83508c44bedf23",
+      "admission": {
+        "total": 200,
+        "by_category": {
+          "source_admission": 145,
+          "admission": 55
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 32
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 23
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 145
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 10,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 191,
+              "by_category": {
+                "planning": 191
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 144
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 40
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 7
+                }
+              ]
+            },
+            "states": 10
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 64,
+            "base_audit_fee": 96,
+            "setup_units": 426,
+            "service_units": 6400,
+            "trace_bytes": 58894,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 10,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 661,
+              "by_category": {
+                "planning": 661
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 29
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 480
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 152
+                }
+              ]
+            },
+            "states": 38
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 64,
+            "base_audit_fee": 96,
+            "setup_units": 896,
+            "service_units": 6400,
+            "trace_bytes": 60014,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 10,
+            "fee": 3,
+            "residual": 0,
+            "invoice": {
+              "total": 171,
+              "by_category": {
+                "planning": 171
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 171
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 64,
+            "base_audit_fee": 96,
+            "setup_units": 406,
+            "service_units": 6400,
+            "trace_bytes": 58094,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 31,
+            "fee": 14,
+            "residual": 0,
+            "invoice": {
+              "total": 5,
+              "by_category": {
+                "planning": 5
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 5
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 160,
+            "base_audit_fee": 448,
+            "setup_units": 240,
+            "service_units": 7552,
+            "trace_bytes": 107762,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n5r1t3",
+      "n": 5,
+      "tau": 3,
+      "source": "fc338dc39679bfcc4bbe51e0e05cbd7eae2df1ba693a0a8f9b83508c44bedf23",
+      "admission": {
+        "total": 200,
+        "by_category": {
+          "source_admission": 145,
+          "admission": 55
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 32
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 23
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 145
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 2,
+            "fee": 1,
+            "residual": 1,
+            "invoice": {
+              "total": 259,
+              "by_category": {
+                "planning": 259
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 198
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 52
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 9
+                }
+              ]
+            },
+            "states": 13
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 32,
+            "base_audit_fee": 32,
+            "setup_units": 494,
+            "service_units": 6016,
+            "trace_bytes": 41794,
+            "realized_regret": 16
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 2,
+            "fee": 1,
+            "residual": 1,
+            "invoice": {
+              "total": 661,
+              "by_category": {
+                "planning": 661
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 29
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 480
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 152
+                }
+              ]
+            },
+            "states": 38
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 32,
+            "base_audit_fee": 32,
+            "setup_units": 896,
+            "service_units": 6016,
+            "trace_bytes": 42466,
+            "realized_regret": 16
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 2,
+            "fee": 1,
+            "residual": 1,
+            "invoice": {
+              "total": 95,
+              "by_category": {
+                "planning": 95
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 95
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 32,
+            "base_audit_fee": 32,
+            "setup_units": 330,
+            "service_units": 6016,
+            "trace_bytes": 41314,
+            "realized_regret": 16
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 31,
+            "fee": 14,
+            "residual": 0,
+            "invoice": {
+              "total": 5,
+              "by_category": {
+                "planning": 5
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 5
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 35,
+            "by_category": {
+              "plan_check": 35
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 35
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 32,
+            "physical_audits": 160,
+            "base_audit_fee": 448,
+            "setup_units": 240,
+            "service_units": 7552,
+            "trace_bytes": 107762,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n6r0t0",
+      "n": 6,
+      "tau": 0,
+      "source": "b39ef6acc3769a2566cab45bff7a8e01688b36a93b478bc6033dc3d4e5bc8cc7",
+      "admission": {
+        "total": 246,
+        "by_category": {
+          "source_admission": 178,
+          "admission": 68
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 40
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 28
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 178
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 13,
+            "fee": 9,
+            "residual": 0,
+            "invoice": {
+              "total": 236,
+              "by_category": {
+                "planning": 236
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 180
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 48
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 8
+                }
+              ]
+            },
+            "states": 12
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 192,
+            "base_audit_fee": 576,
+            "setup_units": 525,
+            "service_units": 16384,
+            "trace_bytes": 152570,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 13,
+            "fee": 9,
+            "residual": 0,
+            "invoice": {
+              "total": 952,
+              "by_category": {
+                "planning": 952
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 32
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 672
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 248
+                }
+              ]
+            },
+            "states": 62
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 192,
+            "base_audit_fee": 576,
+            "setup_units": 1241,
+            "service_units": 16384,
+            "trace_bytes": 155706,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 13,
+            "fee": 9,
+            "residual": 0,
+            "invoice": {
+              "total": 345,
+              "by_category": {
+                "planning": 345
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 345
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 192,
+            "base_audit_fee": 576,
+            "setup_units": 634,
+            "service_units": 16384,
+            "trace_bytes": 150330,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 63,
+            "fee": 19,
+            "residual": 0,
+            "invoice": {
+              "total": 6,
+              "by_category": {
+                "planning": 6
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 6
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 384,
+            "base_audit_fee": 1216,
+            "setup_units": 295,
+            "service_units": 18688,
+            "trace_bytes": 249534,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n6r0t5",
+      "n": 6,
+      "tau": 5,
+      "source": "b39ef6acc3769a2566cab45bff7a8e01688b36a93b478bc6033dc3d4e5bc8cc7",
+      "admission": {
+        "total": 246,
+        "by_category": {
+          "source_admission": 178,
+          "admission": 68
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 40
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 28
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 178
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 4,
+            "fee": 2,
+            "residual": 5,
+            "invoice": {
+              "total": 523,
+              "by_category": {
+                "planning": 523
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 396
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 112
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 15
+                }
+              ]
+            },
+            "states": 28
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 64,
+            "base_audit_fee": 128,
+            "setup_units": 812,
+            "service_units": 14848,
+            "trace_bytes": 84130,
+            "realized_regret": 160
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 4,
+            "fee": 2,
+            "residual": 5,
+            "invoice": {
+              "total": 952,
+              "by_category": {
+                "planning": 952
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 32
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 672
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 248
+                }
+              ]
+            },
+            "states": 62
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 64,
+            "base_audit_fee": 128,
+            "setup_units": 1241,
+            "service_units": 14848,
+            "trace_bytes": 85474,
+            "realized_regret": 160
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 4,
+            "fee": 2,
+            "residual": 5,
+            "invoice": {
+              "total": 138,
+              "by_category": {
+                "planning": 138
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 138
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 64,
+            "base_audit_fee": 128,
+            "setup_units": 427,
+            "service_units": 14848,
+            "trace_bytes": 83170,
+            "realized_regret": 160
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 63,
+            "fee": 19,
+            "residual": 0,
+            "invoice": {
+              "total": 6,
+              "by_category": {
+                "planning": 6
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 6
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 384,
+            "base_audit_fee": 1216,
+            "setup_units": 295,
+            "service_units": 18688,
+            "trace_bytes": 249534,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n6r1t0",
+      "n": 6,
+      "tau": 0,
+      "source": "ecfceadd5677b3eed53b8ac78dcfd32ed5acf2ec97ebeff6e3558f254428a1ce",
+      "admission": {
+        "total": 246,
+        "by_category": {
+          "source_admission": 178,
+          "admission": 68
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 40
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 28
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 178
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 3,
+            "fee": 10,
+            "residual": 0,
+            "invoice": {
+              "total": 236,
+              "by_category": {
+                "planning": 236
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 180
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 48
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 8
+                }
+              ]
+            },
+            "states": 12
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 128,
+            "base_audit_fee": 640,
+            "setup_units": 525,
+            "service_units": 15616,
+            "trace_bytes": 118414,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 3,
+            "fee": 10,
+            "residual": 0,
+            "invoice": {
+              "total": 962,
+              "by_category": {
+                "planning": 962
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 34
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 736
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 192
+                }
+              ]
+            },
+            "states": 48
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 128,
+            "base_audit_fee": 640,
+            "setup_units": 1251,
+            "service_units": 15616,
+            "trace_bytes": 120654,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 19,
+            "fee": 11,
+            "residual": 0,
+            "invoice": {
+              "total": 345,
+              "by_category": {
+                "planning": 345
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 345
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 192,
+            "base_audit_fee": 704,
+            "setup_units": 634,
+            "service_units": 16384,
+            "trace_bytes": 150394,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 63,
+            "fee": 24,
+            "residual": 0,
+            "invoice": {
+              "total": 6,
+              "by_category": {
+                "planning": 6
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 6
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 384,
+            "base_audit_fee": 1536,
+            "setup_units": 295,
+            "service_units": 18688,
+            "trace_bytes": 249534,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n6r1t4",
+      "n": 6,
+      "tau": 4,
+      "source": "ecfceadd5677b3eed53b8ac78dcfd32ed5acf2ec97ebeff6e3558f254428a1ce",
+      "admission": {
+        "total": 246,
+        "by_category": {
+          "source_admission": 178,
+          "admission": 68
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 40
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 28
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 178
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 2,
+            "fee": 5,
+            "residual": 3,
+            "invoice": {
+              "total": 498,
+              "by_category": {
+                "planning": 498
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 396
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 88
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 14
+                }
+              ]
+            },
+            "states": 22
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 64,
+            "base_audit_fee": 320,
+            "setup_units": 787,
+            "service_units": 14848,
+            "trace_bytes": 84130,
+            "realized_regret": 96
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 2,
+            "fee": 5,
+            "residual": 3,
+            "invoice": {
+              "total": 962,
+              "by_category": {
+                "planning": 962
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 34
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 736
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 192
+                }
+              ]
+            },
+            "states": 48
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 64,
+            "base_audit_fee": 320,
+            "setup_units": 1251,
+            "service_units": 14848,
+            "trace_bytes": 85474,
+            "realized_regret": 96
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 17,
+            "fee": 6,
+            "residual": 3,
+            "invoice": {
+              "total": 253,
+              "by_category": {
+                "planning": 253
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 253
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 128,
+            "base_audit_fee": 384,
+            "setup_units": 542,
+            "service_units": 15616,
+            "trace_bytes": 116750,
+            "realized_regret": 96
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 63,
+            "fee": 24,
+            "residual": 0,
+            "invoice": {
+              "total": 6,
+              "by_category": {
+                "planning": 6
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 6
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 43,
+            "by_category": {
+              "plan_check": 43
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 43
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 64,
+            "physical_audits": 384,
+            "base_audit_fee": 1536,
+            "setup_units": 295,
+            "service_units": 18688,
+            "trace_bytes": 249534,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n7r0t0",
+      "n": 7,
+      "tau": 0,
+      "source": "f64ecffdd63507ae7d2faaa7f4e27c230d2ea8070840de472aa642bfa3311821",
+      "admission": {
+        "total": 292,
+        "by_category": {
+          "source_admission": 211,
+          "admission": 81
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 48
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 33
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 211
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 38,
+            "fee": 10,
+            "residual": 0,
+            "invoice": {
+              "total": 281,
+              "by_category": {
+                "planning": 281
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 216
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 56
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 9
+                }
+              ]
+            },
+            "states": 14
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 384,
+            "base_audit_fee": 1280,
+            "setup_units": 624,
+            "service_units": 38400,
+            "trace_bytes": 306494,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 38,
+            "fee": 10,
+            "residual": 0,
+            "invoice": {
+              "total": 1433,
+              "by_category": {
+                "planning": 1433
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 49
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 1088
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 296
+                }
+              ]
+            },
+            "states": 74
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 384,
+            "base_audit_fee": 1280,
+            "setup_units": 1776,
+            "service_units": 38400,
+            "trace_bytes": 312766,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 45,
+            "fee": 12,
+            "residual": 0,
+            "invoice": {
+              "total": 594,
+              "by_category": {
+                "planning": 594
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 594
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 512,
+            "base_audit_fee": 1536,
+            "setup_units": 937,
+            "service_units": 39936,
+            "trace_bytes": 369250,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 127,
+            "fee": 23,
+            "residual": 0,
+            "invoice": {
+              "total": 7,
+              "by_category": {
+                "planning": 7
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 7
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 896,
+            "base_audit_fee": 2944,
+            "setup_units": 350,
+            "service_units": 44544,
+            "trace_bytes": 567214,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n7r0t3",
+      "n": 7,
+      "tau": 3,
+      "source": "f64ecffdd63507ae7d2faaa7f4e27c230d2ea8070840de472aa642bfa3311821",
+      "admission": {
+        "total": 292,
+        "by_category": {
+          "source_admission": 211,
+          "admission": 81
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 48
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 33
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 211
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 40,
+            "fee": 6,
+            "residual": 3,
+            "invoice": {
+              "total": 556,
+              "by_category": {
+                "planning": 556
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 441
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 100
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 15
+                }
+              ]
+            },
+            "states": 25
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 256,
+            "base_audit_fee": 768,
+            "setup_units": 899,
+            "service_units": 36864,
+            "trace_bytes": 237850,
+            "realized_regret": 192
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 40,
+            "fee": 6,
+            "residual": 3,
+            "invoice": {
+              "total": 1433,
+              "by_category": {
+                "planning": 1433
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 49
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 1088
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 296
+                }
+              ]
+            },
+            "states": 74
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 256,
+            "base_audit_fee": 768,
+            "setup_units": 1776,
+            "service_units": 36864,
+            "trace_bytes": 242330,
+            "realized_regret": 192
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 40,
+            "fee": 6,
+            "residual": 3,
+            "invoice": {
+              "total": 351,
+              "by_category": {
+                "planning": 351
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 351
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 256,
+            "base_audit_fee": 768,
+            "setup_units": 694,
+            "service_units": 36864,
+            "trace_bytes": 234650,
+            "realized_regret": 192
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 127,
+            "fee": 23,
+            "residual": 0,
+            "invoice": {
+              "total": 7,
+              "by_category": {
+                "planning": 7
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 7
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 896,
+            "base_audit_fee": 2944,
+            "setup_units": 350,
+            "service_units": 44544,
+            "trace_bytes": 567214,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n7r1t0",
+      "n": 7,
+      "tau": 0,
+      "source": "c41b743d0278f7369c8fb576d4e2bb84e195006e6e90f210e1c16032129bd99e",
+      "admission": {
+        "total": 292,
+        "by_category": {
+          "source_admission": 211,
+          "admission": 81
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 48
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 33
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 211
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 9,
+            "fee": 2,
+            "residual": 0,
+            "invoice": {
+              "total": 281,
+              "by_category": {
+                "planning": 281
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 216
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 56
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 9
+                }
+              ]
+            },
+            "states": 14
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 256,
+            "base_audit_fee": 256,
+            "setup_units": 624,
+            "service_units": 36864,
+            "trace_bytes": 237850,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 9,
+            "fee": 2,
+            "residual": 0,
+            "invoice": {
+              "total": 1251,
+              "by_category": {
+                "planning": 1251
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 43
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 992
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 216
+                }
+              ]
+            },
+            "states": 54
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 256,
+            "base_audit_fee": 256,
+            "setup_units": 1594,
+            "service_units": 36864,
+            "trace_bytes": 242330,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 9,
+            "fee": 2,
+            "residual": 0,
+            "invoice": {
+              "total": 351,
+              "by_category": {
+                "planning": 351
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 351
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 256,
+            "base_audit_fee": 256,
+            "setup_units": 694,
+            "service_units": 36864,
+            "trace_bytes": 234650,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 127,
+            "fee": 18,
+            "residual": 0,
+            "invoice": {
+              "total": 7,
+              "by_category": {
+                "planning": 7
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 7
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 896,
+            "base_audit_fee": 2304,
+            "setup_units": 350,
+            "service_units": 44544,
+            "trace_bytes": 567214,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "n7r1t6",
+      "n": 7,
+      "tau": 6,
+      "source": "c41b743d0278f7369c8fb576d4e2bb84e195006e6e90f210e1c16032129bd99e",
+      "admission": {
+        "total": 292,
+        "by_category": {
+          "source_admission": 211,
+          "admission": 81
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 48
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 33
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 211
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 9,
+            "fee": 2,
+            "residual": 0,
+            "invoice": {
+              "total": 562,
+              "by_category": {
+                "planning": 562
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 450
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 96
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 16
+                }
+              ]
+            },
+            "states": 24
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 256,
+            "base_audit_fee": 256,
+            "setup_units": 905,
+            "service_units": 36864,
+            "trace_bytes": 237850,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 9,
+            "fee": 2,
+            "residual": 0,
+            "invoice": {
+              "total": 1251,
+              "by_category": {
+                "planning": 1251
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 43
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 992
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 216
+                }
+              ]
+            },
+            "states": 54
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 256,
+            "base_audit_fee": 256,
+            "setup_units": 1594,
+            "service_units": 36864,
+            "trace_bytes": 242330,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 9,
+            "fee": 2,
+            "residual": 0,
+            "invoice": {
+              "total": 351,
+              "by_category": {
+                "planning": 351
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 351
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 256,
+            "base_audit_fee": 256,
+            "setup_units": 694,
+            "service_units": 36864,
+            "trace_bytes": 234650,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 127,
+            "fee": 18,
+            "residual": 0,
+            "invoice": {
+              "total": 7,
+              "by_category": {
+                "planning": 7
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 7
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 51,
+            "by_category": {
+              "plan_check": 51
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 51
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 128,
+            "physical_audits": 896,
+            "base_audit_fee": 2304,
+            "setup_units": 350,
+            "service_units": 44544,
+            "trace_bytes": 567214,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "large32t0",
+      "n": 32,
+      "tau": 0,
+      "source": "d4e30c3761afac77272ba9d05cad3caba38bbddf3e128d3799b9ef097d8199a3",
+      "admission": {
+        "total": 1442,
+        "by_category": {
+          "source_admission": 1036,
+          "admission": 406
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 248
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 158
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 1036
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 1476846547,
+            "fee": 37,
+            "residual": 0,
+            "invoice": {
+              "total": 1406,
+              "by_category": {
+                "planning": 1406
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 1116
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 256
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 34
+                }
+              ]
+            },
+            "states": 64
+          },
+          "plan_check": {
+            "total": 251,
+            "by_category": {
+              "plan_check": 251
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 251
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 120,
+            "base_audit_fee": 296,
+            "setup_units": 3099,
+            "service_units": 12352,
+            "trace_bytes": 73002,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 1476846547,
+            "fee": 37,
+            "residual": 0,
+            "invoice": {
+              "total": 81846,
+              "by_category": {
+                "planning": 81846
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 230
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 79136
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 2480
+                }
+              ]
+            },
+            "states": 620
+          },
+          "plan_check": {
+            "total": 251,
+            "by_category": {
+              "plan_check": 251
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 251
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 120,
+            "base_audit_fee": 296,
+            "setup_units": 83539,
+            "service_units": 12352,
+            "trace_bytes": 74738,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 3356419027,
+            "fee": 39,
+            "residual": 0,
+            "invoice": {
+              "total": 49784,
+              "by_category": {
+                "planning": 49784
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 49784
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 251,
+            "by_category": {
+              "plan_check": 251
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 251
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 128,
+            "base_audit_fee": 312,
+            "setup_units": 51477,
+            "service_units": 12448,
+            "trace_bytes": 76030,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 4294967295,
+            "fee": 99,
+            "residual": 0,
+            "invoice": {
+              "total": 32,
+              "by_category": {
+                "planning": 32
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 32
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 251,
+            "by_category": {
+              "plan_check": 251
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 251
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 256,
+            "base_audit_fee": 792,
+            "setup_units": 1725,
+            "service_units": 13984,
+            "trace_bytes": 143204,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "large32t10",
+      "n": 32,
+      "tau": 10,
+      "source": "d4e30c3761afac77272ba9d05cad3caba38bbddf3e128d3799b9ef097d8199a3",
+      "admission": {
+        "total": 1442,
+        "by_category": {
+          "source_admission": 1036,
+          "admission": 406
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 248
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 158
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 1036
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 1074586435,
+            "fee": 26,
+            "residual": 10,
+            "invoice": {
+              "total": 13237,
+              "by_category": {
+                "planning": 13237
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 12303
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 880
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 54
+                }
+              ]
+            },
+            "states": 220
+          },
+          "plan_check": {
+            "total": 251,
+            "by_category": {
+              "plan_check": 251
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 251
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 88,
+            "base_audit_fee": 208,
+            "setup_units": 14930,
+            "service_units": 11968,
+            "trace_bytes": 55848,
+            "realized_regret": 36
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 1074586435,
+            "fee": 26,
+            "residual": 10,
+            "invoice": {
+              "total": 81846,
+              "by_category": {
+                "planning": 81846
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 230
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 79136
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 2480
+                }
+              ]
+            },
+            "states": 620
+          },
+          "plan_check": {
+            "total": 251,
+            "by_category": {
+              "plan_check": 251
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 251
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 88,
+            "base_audit_fee": 208,
+            "setup_units": 83539,
+            "service_units": 11968,
+            "trace_bytes": 57136,
+            "realized_regret": 36
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 3222201155,
+            "fee": 28,
+            "residual": 8,
+            "invoice": {
+              "total": 42926,
+              "by_category": {
+                "planning": 42926
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 42926
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 251,
+            "by_category": {
+              "plan_check": 251
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 251
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 104,
+            "base_audit_fee": 224,
+            "setup_units": 44619,
+            "service_units": 12160,
+            "trace_bytes": 63478,
+            "realized_regret": 30
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 4294967295,
+            "fee": 99,
+            "residual": 0,
+            "invoice": {
+              "total": 32,
+              "by_category": {
+                "planning": 32
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 32
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 251,
+            "by_category": {
+              "plan_check": 251
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 251
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 256,
+            "base_audit_fee": 792,
+            "setup_units": 1725,
+            "service_units": 13984,
+            "trace_bytes": 143724,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "large128t0",
+      "n": 128,
+      "tau": 0,
+      "source": "8e161dea37156985ed20f4a5ffbb01fcd2b7a2701765766d5e29baf5b75193e0",
+      "admission": {
+        "total": 5858,
+        "by_category": {
+          "source_admission": 4204,
+          "admission": 1654
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 1016
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 638
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 4204
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 5317665126110780623764730799204431258,
+            "fee": 131,
+            "residual": 0,
+            "invoice": {
+              "total": 5726,
+              "by_category": {
+                "planning": 5726
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 4572
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 1024
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 130
+                }
+              ]
+            },
+            "states": 256
+          },
+          "plan_check": {
+            "total": 1019,
+            "by_category": {
+              "plan_check": 1019
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 1019
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 424,
+            "base_audit_fee": 1048,
+            "setup_units": 12603,
+            "service_units": 49792,
+            "trace_bytes": 246350,
+            "realized_regret": 0
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 5317665126110780623764730799204431258,
+            "fee": 131,
+            "residual": 0,
+            "invoice": {
+              "total": 1759000,
+              "by_category": {
+                "planning": 1759000
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 888
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 1741760
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 16352
+                }
+              ]
+            },
+            "states": 4088
+          },
+          "plan_check": {
+            "total": 1019,
+            "by_category": {
+              "plan_check": 1019
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 1019
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 424,
+            "base_audit_fee": 1048,
+            "setup_units": 1765877,
+            "service_units": 49792,
+            "trace_bytes": 252342,
+            "realized_regret": 0
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 5348820174926946107093201564175529659,
+            "fee": 136,
+            "residual": 0,
+            "invoice": {
+              "total": 2984751,
+              "by_category": {
+                "planning": 2984751
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 2984751
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 1019,
+            "by_category": {
+              "plan_check": 1019
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 1019
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 472,
+            "base_audit_fee": 1088,
+            "setup_units": 2991628,
+            "service_units": 50368,
+            "trace_bytes": 267790,
+            "realized_regret": 0
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 340282366920938463463374607431768211455,
+            "fee": 381,
+            "residual": 0,
+            "invoice": {
+              "total": 128,
+              "by_category": {
+                "planning": 128
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 128
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 1019,
+            "by_category": {
+              "plan_check": 1019
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 1019
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 1024,
+            "base_audit_fee": 3048,
+            "setup_units": 7005,
+            "service_units": 56992,
+            "trace_bytes": 559848,
+            "realized_regret": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "large128t41",
+      "n": 128,
+      "tau": 41,
+      "source": "8e161dea37156985ed20f4a5ffbb01fcd2b7a2701765766d5e29baf5b75193e0",
+      "admission": {
+        "total": 5858,
+        "by_category": {
+          "source_admission": 4204,
+          "admission": 1654
+        },
+        "operations": [
+          {
+            "category": "admission",
+            "operation": "edge_endpoints_weight_and_duplicate_check",
+            "units": 1016
+          },
+          {
+            "category": "admission",
+            "operation": "supports_and_connected_tree_check",
+            "units": 638
+          },
+          {
+            "category": "source_admission",
+            "operation": "read_clauses_features_costs_and_bind_factorization",
+            "units": 4204
+          }
+        ]
+      },
+      "arms": {
+        "residual_dp": {
+          "plan": {
+            "mask": 5327377706507238710873543226275210795,
+            "fee": 78,
+            "residual": 41,
+            "invoice": {
+              "total": 292835,
+              "by_category": {
+                "planning": 292835
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "residual_dp_transition",
+                  "units": 286875
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_residual_state_words",
+                  "units": 5748
+                },
+                {
+                  "category": "planning",
+                  "operation": "select_root_and_emit_audit_set",
+                  "units": 212
+                }
+              ]
+            },
+            "states": 1437
+          },
+          "plan_check": {
+            "total": 1019,
+            "by_category": {
+              "plan_check": 1019
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 1019
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 312,
+            "base_audit_fee": 624,
+            "setup_units": 299712,
+            "service_units": 48448,
+            "trace_bytes": 185896,
+            "realized_regret": 163
+          }
+        },
+        "ordinary_budget_dp": {
+          "plan": {
+            "mask": 5327377706507238710873543226275210795,
+            "fee": 78,
+            "residual": 41,
+            "invoice": {
+              "total": 1759000,
+              "by_category": {
+                "planning": 1759000
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "choose_sufficient_budget_and_set",
+                  "units": 888
+                },
+                {
+                  "category": "planning",
+                  "operation": "ordinary_budget_transition",
+                  "units": 1741760
+                },
+                {
+                  "category": "planning",
+                  "operation": "retain_budget_state_words",
+                  "units": 16352
+                }
+              ]
+            },
+            "states": 4088
+          },
+          "plan_check": {
+            "total": 1019,
+            "by_category": {
+              "plan_check": 1019
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 1019
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 312,
+            "base_audit_fee": 624,
+            "setup_units": 1765877,
+            "service_units": 48448,
+            "trace_bytes": 190320,
+            "realized_regret": 163
+          }
+        },
+        "greedy": {
+          "plan": {
+            "mask": 5328028011301499125008675824584173099,
+            "fee": 80,
+            "residual": 39,
+            "invoice": {
+              "total": 2307165,
+              "by_category": {
+                "planning": 2307165
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "greedy_uncovered_incidence_scan",
+                  "units": 2307165
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 1019,
+            "by_category": {
+              "plan_check": 1019
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 1019
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 336,
+            "base_audit_fee": 640,
+            "setup_units": 2314042,
+            "service_units": 48736,
+            "trace_bytes": 195660,
+            "realized_regret": 161
+          }
+        },
+        "full": {
+          "plan": {
+            "mask": 340282366920938463463374607431768211455,
+            "fee": 381,
+            "residual": 0,
+            "invoice": {
+              "total": 128,
+              "by_category": {
+                "planning": 128
+              },
+              "operations": [
+                {
+                  "category": "planning",
+                  "operation": "full_identification_list",
+                  "units": 128
+                }
+              ]
+            },
+            "states": 0
+          },
+          "plan_check": {
+            "total": 1019,
+            "by_category": {
+              "plan_check": 1019
+            },
+            "operations": [
+              {
+                "category": "plan_check",
+                "operation": "audit_set_fee_and_uncovered_edges",
+                "units": 1019
+              }
+            ]
+          },
+          "bill": {
+            "outputs": 8,
+            "physical_audits": 1024,
+            "base_audit_fee": 3048,
+            "setup_units": 7005,
+            "service_units": 56992,
+            "trace_bytes": 561904,
+            "realized_regret": 0
+          }
+        }
+      }
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "extra_hard_clause",
+      "rejected": true,
+      "reason": "Original source is not the declared independent exactly-one product"
+    },
+    {
+      "name": "negative_scale",
+      "rejected": true,
+      "reason": "Malformed nonnegative edge"
+    },
+    {
+      "name": "cyclic_source",
+      "rejected": true,
+      "reason": "Nonempty binary supports and n-1 tree edges required"
+    },
+    {
+      "name": "insufficient_plan",
+      "rejected": true,
+      "reason": "Insufficient plan"
+    }
+  ],
+  "summary": {
+    "residual_dp": {
+      "outputs": 1028,
+      "physical_audits": 2852,
+      "base_audit_fee": 7148,
+      "setup_units": 340336,
+      "service_units": 370560,
+      "trace_bytes": 2359610,
+      "realized_regret": 719
+    },
+    "ordinary_budget_dp": {
+      "outputs": 1028,
+      "physical_audits": 2884,
+      "base_audit_fee": 7148,
+      "setup_units": 3717303,
+      "service_units": 370944,
+      "trace_bytes": 2424282,
+      "realized_regret": 687
+    },
+    "greedy": {
+      "outputs": 1028,
+      "physical_audits": 3348,
+      "base_audit_fee": 7796,
+      "setup_units": 5410571,
+      "service_units": 376512,
+      "trace_bytes": 2587256,
+      "realized_regret": 679
+    },
+    "full": {
+      "outputs": 1028,
+      "physical_audits": 8672,
+      "base_audit_fee": 26532,
+      "setup_units": 22355,
+      "service_units": 440400,
+      "trace_bytes": 5364917,
+      "realized_regret": 0
+    }
+  },
+  "completed_utc": "2026-10-14T00:06:44.372990+00:00",
+  "development_resource": {
+    "cpu_ns": 3750000000,
+    "wall_ns": 3838981200,
+    "scope": "All arms and exhaustive diagnostics combined; not isolated service speed."
+  }
+}

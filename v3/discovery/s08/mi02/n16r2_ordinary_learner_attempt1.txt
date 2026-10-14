@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\mixture_service.py", line 62, in <module>
+    if len(sys.argv)>1:child(sys.argv[2],sys.argv[3])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\mixture_service.py", line 26, in child
+    result=service.run_arm(ROOT,case,data,rows,arm);g01.save(ROOT/f'{name}_{arm}_result.json',result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\cs01\impl.py", line 125, in run_arm
+    bank,polynomials,table,bank_hash=prepare(directory,case['name'],data,arm,meter);setup=meter.total
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\cs01\impl.py", line 91, in prepare
+    proof=cp.produce(data['audit_costs'],bank[r]);checked=cp.check_polynomial(data['audit_costs'],bank[r],proof)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\continuum_policy.py", line 128, in produce
+    cert=value_certificate(costs,rho,roots);certs.append(cert)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s08\continuum_policy.py", line 54, in value_certificate
+    p=probability(a,b,mode,i);tables[mode][a,b]=costs[i]+p*e+(1-p)*m
+                                                             ~~~~~^~
+TypeError: unsupported operand type(s) for *: 'Fraction' and 'dict'
