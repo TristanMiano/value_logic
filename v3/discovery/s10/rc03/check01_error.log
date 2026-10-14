@@ -1,0 +1,16 @@
+C:\Users\trist\projects\value_logic\v3\discovery\s10\check_rc03.cjs:6
+function truthModels(source){const models=[];for(let x=0;x<2**source.variables;x++){if(source.hard.every(clause=>clause.some(lit=>((Math.floor(x/2**(Math.abs(lit)-1))%2)===Number(lit>0))))models.push({mask:x,v:source.features.map(i=>Math.floor(x/2**(i-1))%2)});}assert(models.length);return models;}
+                                                                                                                                                                                            ^^^^^^
+
+SyntaxError: Unexpected identifier 'models'
+    at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+    at Module._compile (node:internal/modules/cjs/loader:1704:20)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.15.1

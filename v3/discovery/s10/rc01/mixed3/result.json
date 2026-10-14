@@ -1,0 +1,233 @@
+{
+  "source": "mixed3",
+  "status": "pass",
+  "feature_count": 3,
+  "variables": 3,
+  "models": 3,
+  "feature_vectors": 3,
+  "extraction": {
+    "version": "s10-retained-v1",
+    "source_id": "e787e8492e43580b6ea3fe5ac6fc0138fe6a336f90aea78594683cd08d429897",
+    "feature_map": [
+      1,
+      2,
+      3
+    ],
+    "steps": [
+      {
+        "left": 1,
+        "right": 2,
+        "pivot": 3,
+        "out": [
+          -2,
+          1
+        ]
+      },
+      {
+        "left": 0,
+        "right": 3,
+        "pivot": 2,
+        "out": [
+          -1,
+          3
+        ]
+      },
+      {
+        "left": 1,
+        "right": 3,
+        "pivot": 1,
+        "out": [
+          -2,
+          3
+        ]
+      },
+      {
+        "left": 0,
+        "right": 5,
+        "pivot": 1,
+        "out": [
+          2,
+          3
+        ]
+      },
+      {
+        "left": 1,
+        "right": 5,
+        "pivot": 2,
+        "out": [
+          1,
+          3
+        ]
+      },
+      {
+        "left": 8,
+        "right": 9,
+        "pivot": 2,
+        "out": [
+          3
+        ]
+      }
+    ],
+    "cuts": [
+      {
+        "clause": 5,
+        "features": [
+          0,
+          1,
+          2
+        ],
+        "rhs": 1
+      },
+      {
+        "clause": 9,
+        "features": [
+          1,
+          2
+        ],
+        "rhs": 1
+      },
+      {
+        "clause": 10,
+        "features": [
+          0,
+          2
+        ],
+        "rhs": 1
+      },
+      {
+        "clause": 11,
+        "features": [
+          2
+        ],
+        "rhs": 1
+      }
+    ],
+    "caps": {
+      "width": 4,
+      "derived": 256,
+      "candidates": 50000
+    },
+    "examined": 46,
+    "stopped": null,
+    "id": "893f598cc649e2090a4d58b9978610c8d28b0202f582acf0f28cb522be2658c9"
+  },
+  "actions": [
+    {
+      "m": 1,
+      "models": [
+        4
+      ],
+      "a": [
+        0,
+        0,
+        1
+      ],
+      "certificate": {
+        "version": "s10-retained-v1",
+        "source_id": "e787e8492e43580b6ea3fe5ac6fc0138fe6a336f90aea78594683cd08d429897",
+        "extraction_id": "893f598cc649e2090a4d58b9978610c8d28b0202f582acf0f28cb522be2658c9",
+        "lambda": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "b": [
+          0,
+          0,
+          4
+        ],
+        "K": 4,
+        "id": "e0e5d67799a703b84899cfab33cccb6ec7b16bc72300addc00645ec6f3449b96"
+      },
+      "initial_bound": 0,
+      "states": 216,
+      "strict_contractions_over_scalar_only": 0
+    },
+    {
+      "m": 3,
+      "models": [
+        4,
+        7,
+        5
+      ],
+      "a": [
+        2,
+        1,
+        3
+      ],
+      "certificate": {
+        "version": "s10-retained-v1",
+        "source_id": "e787e8492e43580b6ea3fe5ac6fc0138fe6a336f90aea78594683cd08d429897",
+        "extraction_id": "893f598cc649e2090a4d58b9978610c8d28b0202f582acf0f28cb522be2658c9",
+        "lambda": [
+          0,
+          0,
+          0,
+          12
+        ],
+        "b": [
+          0,
+          0,
+          12
+        ],
+        "K": 12,
+        "id": "58084e1d4b4bc19de45b4bf806daaf01d2f51e9f53ce1d9da99bb687c760de8f"
+      },
+      "initial_bound": 12,
+      "states": 216,
+      "strict_contractions_over_scalar_only": 108
+    }
+  ],
+  "states": 432,
+  "corners": 1458,
+  "audits": 1296,
+  "convolutions": 16,
+  "strict": 108,
+  "negative_controls": [
+    "changed_source",
+    "feature_map",
+    "pivot",
+    "cut",
+    "negative_multiplier_m1",
+    "receipt_outside_box_m1",
+    "negative_multiplier_m3",
+    "receipt_outside_box_m3"
+  ],
+  "setup": {
+    "named_units": 1170,
+    "categories": {
+      "source_words": 72,
+      "source_binding": 42,
+      "resolution_candidate": 384,
+      "resolution_emit": 29,
+      "cover_scan": 29,
+      "model_literal": 72,
+      "model_features": 12,
+      "packing_order": 24,
+      "packing_update": 48,
+      "resolution_check": 230,
+      "cover_check": 48,
+      "extraction_retention_words": 106,
+      "dual_combination": 48,
+      "dual_retention_words": 26
+    },
+    "native_cpu_memory_and_io_prices": "unknown"
+  },
+  "diagnostic": {
+    "named_units": 115407,
+    "categories": {
+      "enumeration_literal": 102,
+      "enumeration_feature": 9,
+      "bound_coordinate": 51888,
+      "exact_objective": 9072,
+      "corner_objective": 39366,
+      "audit_score": 11826,
+      "convolution_transition": 1416,
+      "enumerated_probability": 1728
+    },
+    "native_cpu_memory_and_io_prices": "unknown"
+  },
+  "physical_audits": 0,
+  "complete_calls": 0
+}
