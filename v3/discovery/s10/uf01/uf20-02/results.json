@@ -1,0 +1,141 @@
+{
+  "name": "uf20-02",
+  "status": "complete",
+  "proposals": [
+    {
+      "model": 41409,
+      "nodes": 600,
+      "trial": 0,
+      "invoice": {
+        "named_units": 115476,
+        "categories": {
+          "source_words": 364,
+          "source_binding": 48,
+          "proposal_node": 1200,
+          "proposal_literal": 113571,
+          "model_literal": 273,
+          "model_features": 20
+        },
+        "native_cpu_memory_and_io_prices": "unknown"
+      }
+    },
+    {
+      "model": 322033,
+      "nodes": 180,
+      "trial": 1,
+      "invoice": {
+        "named_units": 37878,
+        "categories": {
+          "source_words": 364,
+          "source_binding": 48,
+          "proposal_node": 360,
+          "proposal_literal": 36813,
+          "model_literal": 273,
+          "model_features": 20
+        },
+        "native_cpu_memory_and_io_prices": "unknown"
+      }
+    },
+    {
+      "model": 305616,
+      "nodes": 6393,
+      "trial": 2,
+      "invoice": {
+        "named_units": 1310487,
+        "categories": {
+          "source_words": 364,
+          "source_binding": 48,
+          "proposal_node": 12786,
+          "proposal_literal": 1296996,
+          "model_literal": 273,
+          "model_features": 20
+        },
+        "native_cpu_memory_and_io_prices": "unknown"
+      }
+    }
+  ],
+  "distinct_models": 3,
+  "levels": [
+    {
+      "depth": 0,
+      "cuts": 11,
+      "steps": 0,
+      "cap": null,
+      "constants": [],
+      "initial": [
+        92,
+        60,
+        120,
+        96
+      ],
+      "units": 5113
+    },
+    {
+      "depth": 1,
+      "cuts": 18,
+      "steps": 256,
+      "cap": "derived_cap",
+      "constants": [],
+      "initial": [
+        84,
+        60,
+        108,
+        84
+      ],
+      "units": 48574
+    },
+    {
+      "depth": 256,
+      "cuts": 18,
+      "steps": 256,
+      "cap": "derived_cap",
+      "constants": [],
+      "initial": [
+        84,
+        60,
+        108,
+        84
+      ],
+      "units": 48574
+    }
+  ],
+  "exact": [
+    {
+      "action": 0,
+      "lower": 56,
+      "regret": 44,
+      "provider_units": 479116,
+      "check_units": 4863,
+      "nodes": 1209,
+      "proof_nodes": 1057
+    },
+    {
+      "action": 1,
+      "lower": 48,
+      "regret": 24,
+      "provider_units": 447435,
+      "check_units": 4324,
+      "nodes": 1235,
+      "proof_nodes": 903
+    },
+    {
+      "action": 2,
+      "lower": 60,
+      "regret": 72,
+      "provider_units": 415737,
+      "check_units": 4509,
+      "nodes": 1061,
+      "proof_nodes": 883
+    },
+    {
+      "action": 3,
+      "lower": 60,
+      "regret": 36,
+      "provider_units": 463199,
+      "check_units": 5060,
+      "nodes": 1089,
+      "proof_nodes": 1089
+    }
+  ],
+  "actual_complete_calls": 4
+}

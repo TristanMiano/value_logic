@@ -4,16 +4,21 @@ Initial research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
 No candidate is promoted. The current event-specific forecast is recorded below;
 earlier unassessed entries retain their dated historical scope.
 
-**Current continuation â€” October 14, 2026:** **Codex (GPT-6)**,
-[s08 checkpoint](s08/cp01.md), [effective actuals](s08/effective_actuals.json).
-The explicit four-hour increment contributes **240.038643011666666â€¦ minutes**;
-C001 remains OPEN at **737.524219120783333â€¦**, phase **1823.655586484933333â€¦**.
-All clocks are closed. Default next duration is 60 minutes with explicit author
-overrides. Earlier entries and attributions retain their historical scope.
+**Current continuation — October14,2026, Codex (GPT-6):**
+[s10 checkpoint](s10/checkpoint.md), [findings](s10/findings.md),
+[exact actuals](s10/effective_actuals.json), [single recurrence table](recurrences.md).
+The two-hour increment adds120.072217133333333… research minutes;
+C001/program is857.596436254116666… and phase1943.727803618266666….
+All clocks are closed. Default next session60 minutes, explicit overrides allowed.
 
-[F01/S28-B1/V1](s08/forecast_final.md) remains **20â€“45%, central 30%, change
-0 points** since s07; P3-POS01 OUTSTANDING, P3-11 deferred. **33 families**
-record breadth, not readiness. New S31â€“S33 remain DEVELOPMENT.
+**C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no candidate promoted.**
+[F01](s10/forecast_final.md) remains20–45%, central30%, change0 points since s08.
+The35 families measure breadth. Cheaper source compilation and conditioning,
+response-certificate reuse, scalar policies and dependence-robust score bounds
+are DEVELOPMENT. Ordinary equivalents tie; threshold controls and broader
+negative transfers limit the resource claims. Use [CONTINUE](CONTINUE.md) for
+the next priced construction and recover remote state before starting a clock.
+Earlier dated sections below retain their historical scope.
 
 IDs S01 onward belong to this program, not separate clock commitments.
 
@@ -482,3 +487,16 @@ P3-POS01 OUTSTANDING; P3-11 deferred; no candidate promoted.**
 | S31 | Policy-invoice learning under partial feedback; continuation of S01/S25/S26. Q1/3/4. | Learn which computation is worth buying without identifying the entire latent law. Compare compulsory calibration, direct on-policy LCB and policy replay/circuit queries. | Calibrated pair observations can leave policy ranking unidentified. Circuit targets contract but paid pilot learning loses physical fee to direct on-policy learning on all 20 nontrivial is01 duties. Large exact diagrams hit caps. [Findings](s08/invoice_service_findings.md). | DEVELOPMENT; adequacy and calibration cost unresolved |
 | S32 | Source-bound action-query and certificate-cover service, including graph/matroid rank and budgeted anchor policies. Q1/4/5. | Deliver a robust original-source action using fewer paid observations, with priced compilation and fallback. Compare ordinary stochastic cover, uncertainty queries and identical budgeted policy improvement. | bc02 improves recorded fee/computation against greedy/anchor; ordinary budgeted controller ties. General graphs retain a large computation bill. Matroid proof recognition is generated-family specific. [Findings](s08/graph_cover_findings.md), [matroids](s08/matroid_findings.md). | DEVELOPMENT; next constructive focus |
 | S33 | Shared-cost robust action/replacement frontiers and scalar interval-regret proof transport. Q2/4/5. | Use nonnominal actions and retained source proofs under partial costs; compare ordinary robust optimization and exact/minimax policy planning. | Shared costs need two-copy frontiers and can encode MaxCut despite simple matroid geometry. Six actual scalar proofs establish a tiny Cartesian-box bridge; correlated costs only inherit an upper bound. [Shared frontiers](s08/shared_findings.md), [box proof](s08/box_bridge.md). | DEVELOPMENT; no complete-cost or novelty claim |
+
+## s10 constructive update — October14,2026, Codex (GPT-6)
+
+| ID | Mechanism and lineage | Useful comparison | Evidence and obstacle | Disposition |
+|---|---|---|---|---|
+| S34 | Checked unit-propagated source diagrams, signed objectives and hard-source conditioning; extends S09/S19/S33. | Reuse source-complete computations across objectives and constraint changes; compare fresh compilation and persistent native solving. |39-source predecessor comparison−90.15% named work;168 patches−69.61% at six-patch horizon; native prices unknown and one-patch setup often loses. [Findings](s10/findings.md), [conditioning](s10/source_patches.md). | DEVELOPMENT |
+| S35 | Positive affine response covers, negative witness regions and response neighborhoods; extends S29/S30/S33. | Reuse proofs over ranges of observations instead of exact-value cache hits; compare ordinary local and threshold methods. | Broader wt02 saves under1% fees with over5× full-audit computation. Scalar scores are cheaper; ordinary counterparts tie. [Findings](s10/findings.md). | DEVELOPMENT |
+
+S31 learning now has actual receipt-based confidence policies and wrong-law
+stress tests. S33 gains a sharp three-score marginal bound and a proposed
+dependence-robust learning composition. These are extensions, not extra family
+counts. [Assessment](s10/scientific_assessment.md) separates useful capability,
+unknown full-cost benefit and unchanged confirmation readiness.

@@ -1,0 +1,221 @@
+{
+  "source": "split4",
+  "status": "pass",
+  "feature_count": 4,
+  "variables": 8,
+  "models": 112,
+  "feature_vectors": 7,
+  "extraction": {
+    "version": "s10-retained-v1",
+    "source_id": "befd50617ecdcd42c618dcf109372ba5c7c48ba2ca03273acc7c76b1e4202eee",
+    "feature_map": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "steps": [
+      {
+        "left": 0,
+        "right": 1,
+        "pivot": 5,
+        "out": [
+          1,
+          2
+        ]
+      },
+      {
+        "left": 2,
+        "right": 3,
+        "pivot": 6,
+        "out": [
+          2,
+          3
+        ]
+      },
+      {
+        "left": 4,
+        "right": 5,
+        "pivot": 7,
+        "out": [
+          3,
+          4
+        ]
+      },
+      {
+        "left": 6,
+        "right": 7,
+        "pivot": 8,
+        "out": [
+          1,
+          4
+        ]
+      }
+    ],
+    "cuts": [
+      {
+        "clause": 8,
+        "features": [
+          0,
+          1
+        ],
+        "rhs": 1
+      },
+      {
+        "clause": 9,
+        "features": [
+          1,
+          2
+        ],
+        "rhs": 1
+      },
+      {
+        "clause": 10,
+        "features": [
+          2,
+          3
+        ],
+        "rhs": 1
+      },
+      {
+        "clause": 11,
+        "features": [
+          0,
+          3
+        ],
+        "rhs": 1
+      }
+    ],
+    "caps": {
+      "width": 4,
+      "derived": 256,
+      "candidates": 50000
+    },
+    "examined": 4,
+    "stopped": null,
+    "id": "93b8e80fb5f5008c4e856570cec307a5fb3b6c8057a274410a5afc02ab0bfe34"
+  },
+  "actions": [
+    {
+      "m": 1,
+      "models": [
+        245
+      ],
+      "a": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "certificate": {
+        "version": "s10-retained-v1",
+        "source_id": "befd50617ecdcd42c618dcf109372ba5c7c48ba2ca03273acc7c76b1e4202eee",
+        "extraction_id": "93b8e80fb5f5008c4e856570cec307a5fb3b6c8057a274410a5afc02ab0bfe34",
+        "lambda": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "K": 0,
+        "id": "025069132c19c6d1f5b65e3067c7bcc85db4fc19850b53faa2c6467578e0e656"
+      },
+      "initial_bound": 8,
+      "states": 1296,
+      "strict_contractions_over_scalar_only": 1296
+    },
+    {
+      "m": 3,
+      "models": [
+        245,
+        250,
+        255
+      ],
+      "a": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "certificate": {
+        "version": "s10-retained-v1",
+        "source_id": "befd50617ecdcd42c618dcf109372ba5c7c48ba2ca03273acc7c76b1e4202eee",
+        "extraction_id": "93b8e80fb5f5008c4e856570cec307a5fb3b6c8057a274410a5afc02ab0bfe34",
+        "lambda": [
+          8,
+          0,
+          8,
+          0
+        ],
+        "b": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "K": 16,
+        "id": "8915773ba91513215a7af7bd7d7858c97e6f1db4467ed69c461e480bfcf36364"
+      },
+      "initial_bound": 16,
+      "states": 1296,
+      "strict_contractions_over_scalar_only": 864
+    }
+  ],
+  "states": 2592,
+  "corners": 13122,
+  "audits": 10368,
+  "convolutions": 27,
+  "strict": 2160,
+  "negative_controls": [
+    "changed_source",
+    "feature_map",
+    "pivot",
+    "cut",
+    "negative_multiplier_m1",
+    "receipt_outside_box_m1",
+    "negative_multiplier_m3",
+    "receipt_outside_box_m3"
+  ],
+  "setup": {
+    "named_units": 800,
+    "categories": {
+      "source_words": 96,
+      "source_binding": 60,
+      "resolution_candidate": 36,
+      "resolution_emit": 20,
+      "cover_scan": 32,
+      "model_literal": 96,
+      "model_features": 16,
+      "packing_order": 24,
+      "packing_update": 48,
+      "resolution_check": 160,
+      "cover_check": 48,
+      "extraction_retention_words": 88,
+      "dual_combination": 48,
+      "dual_retention_words": 28
+    },
+    "native_cpu_memory_and_io_prices": "unknown"
+  },
+  "diagnostic": {
+    "named_units": 1704821,
+    "categories": {
+      "enumeration_literal": 4200,
+      "enumeration_feature": 448,
+      "bound_coordinate": 497728,
+      "exact_objective": 163296,
+      "corner_objective": 931662,
+      "audit_score": 93528,
+      "convolution_transition": 3024,
+      "enumerated_probability": 10935
+    },
+    "native_cpu_memory_and_io_prices": "unknown"
+  },
+  "physical_audits": 0,
+  "complete_calls": 0
+}

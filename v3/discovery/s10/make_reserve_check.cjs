@@ -1,0 +1,11 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');let s=fs.readFileSync(path.join(__dirname,'check_scalar.cjs'),'utf8');s=s.replaceAll("'sf01'","'rv01'").replaceAll("'sf01:'","'rv01:'");
+s=s.replace('const hidden=Array.from({length:2*c.source.features.length},()=>Math.floor(rand()*24001)),known=',"const hidden=Array.from({length:2*c.source.features.length},()=>{const x=rand();return c.law==='endpoints'||(c.law==='switch'&&row.request>=64)?(x<.5?0:24000):Math.floor(x*24001);}),known=");
+s=s.replace("if(arm==='scalar_prefix')baseline.push(behavior);if(arm==='ordinary_scalar_prefix')","if(arm==='reserve_scalar')baseline.push(behavior);if(arm==='ordinary_reserve_scalar')");
+s=s.replace('let feeSum=0,namedSum=setup.invoice.named_units,calls=0,logIndex=0;','let feeSum=0,namedSum=setup.invoice.named_units,calls=0,logIndex=0,bank=setup.C;');
+s=s.replace('assert.equal(fee,row.physical_fee);','assert.equal(fee,row.physical_fee);assert.equal(row.bank_before,bank);bank+=setup.C-fee;assert.equal(row.bank_after,bank);if(row.reserved){assert(bank>=0);assert(feeSum+fee<=(row.request+2)*setup.C);}');
+s=s.replace('assert.equal(logIndex,logged.length);','assert.equal(logIndex,logged.length);assert.equal(bank,summary.final_reserve);');
+s=s.replaceAll('strata[c.stratum]','strata[c.stratum+":"+c.law]');
+s=s.replace("meter.pay('latent_independent_regret',4);",'');
+s=s.replace('function regret(models,a,lo,hi){let worst=-Infinity;','function regret(models,a,lo,hi){meter.pay("latent_independent_regret",4*models.length*a.length);let worst=-Infinity;');
+fs.writeFileSync(path.join(__dirname,'check_reserve.cjs'),s);

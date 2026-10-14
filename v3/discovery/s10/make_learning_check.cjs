@@ -1,0 +1,32 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');let s=fs.readFileSync(path.join(__dirname,'check_reserve.cjs'),'utf8');s=s.replaceAll("'rv01'","'rl01'").replaceAll("'rv01:'","'rl01:'");
+s=s.replace("const hidden=Array.from({length:2*c.source.features.length},()=>{const x=rand();return c.law==='endpoints'||(c.law==='switch'&&row.request>=64)?(x<.5?0:24000):Math.floor(x*24001);}),known=", "const shared=rand(),hidden=Array.from({length:2*c.source.features.length},()=>{const x=rand();return c.law==='correlated'?Math.floor(shared*24001):c.law==='endpoints'||(c.law==='switch'&&row.request>=128)?(x<.5?0:24000):Math.floor(x*24001);}),known=");
+s=s.replace("if(arm==='reserve_scalar')baseline.push(behavior);if(arm==='ordinary_reserve_scalar')","if(arm==='learn_prefix')baseline.push(behavior);if(arm==='ordinary_learn_prefix')");
+s=s.replace('const strata={};','const strata={};let learnedPolicies=0,coverageViolations=0;const coverage=[];');
+const at=s.indexOf('for(const a of [1,2])');s=s.slice(0,at)+String.raw`
+function scoreOf(a,kind,t){return Math.floor((kind==='true'?Math.min(a*(24000-t),(3-a)*t):Math.min(a*t,(3-a)*(24000-t)))/6000);}
+function typeOf(a,kind){return (a-1)*2+(kind==='false'?1:0);}
+function learnedCheck(c,setup,epoch,hist){
+ k.checkSeal(epoch);assert.equal(epoch.source_id,c.source.id);const p=epoch.policy;assert.deepEqual(p.histograms,hist);assert.equal(p.quota,setup.quota);
+ for(let i=0;i<4;i++){const h=hist[i],n=k.sum(h),b=p.bounds[i];assert.equal(b.n,n);if(!n){assert.deepEqual(b.weights,[1000,0,0]);continue;}
+  let radius=0;if(p.confidence){const target=1600n*BigInt(n)*BigInt(n),power=1n<<BigInt(b.b);assert(power>=target&&power/2n<target);radius=b.radius;const rhs=7n*BigInt(b.b)*1000000n;assert(20n*BigInt(n)*BigInt(radius)**2n>=rhs);assert(radius===0||20n*BigInt(n)*BigInt(radius-1)**2n<rhs);}else{assert.equal(b.radius,0);assert.equal(b.b,0);}
+  const l1=Math.max(0,Math.floor((h[1]+h[2])*1000/n)-radius),l2=Math.min(l1,Math.max(0,Math.floor(h[2]*1000/n)-radius));assert.deepEqual(b.tails,[l1,l2]);assert.deepEqual(b.weights,[1000-l1,l1-l2,l2]);
+  const endpoint=c.law==='endpoints'||(c.law==='switch'&&epoch.request>=128),truth=endpoint?[0,0]:[15001,6001],bad=l1*24001>truth[0]*1000||l2*24001>truth[1]*1000;if(p.confidence&&bad){coverageViolations++;coverage.push({source:c.name,request:epoch.request,type:i,law:c.law,bounds:b.tails,assumptions_hold:c.law==='uniform'||c.law==='endpoints'});}
+ }
+ let bestNum=BigInt(p.quota===0?0:setup.C),bestDen=1n,selected=[];
+ for(const o of p.orders){let spent=0;for(let length=1;length<=o.order.length;length++){spent+=setup.fees[o.order[length-1]];if(spent>setup.C)break;let value=Array(p.quota).fill(BigInt(setup.C)).concat([0n]),den=1n;for(let j=length-1;j>=0;j--){den*=1000n;const q=setup.queries[o.order[j]],w=p.bounds[typeOf(setup.initial.a[q.coordinate],q.kind)].weights.map(BigInt),next=Array(p.quota+1).fill(0n);for(let score=0;score<p.quota;score++){next[score]=BigInt(setup.fees[o.order[j]])*den;for(let d=0;d<3;d++)next[score]+=w[d]*value[Math.min(p.quota,score+d)];}value=next;}const num=value[0],stored=o.rows[length-1];assert.equal(num*BigInt(stored.denominator),BigInt(stored.numerator)*den);if(num*bestDen<bestNum*den){bestNum=num;bestDen=den;selected=o.order.slice(0,length);}}}
+ assert.deepEqual(p.order,selected);assert.equal(bestNum*BigInt(p.denominator),BigInt(p.numerator)*bestDen);assert(bestNum<=BigInt(setup.C)*bestDen);learnedPolicies++;
+}
+function executionCheck(setup,row,hidden,epoch){const known=hidden.map(()=>null),expected=[];let spent=0,score=0,closed=setup.initial.regret<=6000*setup.tolerance;const slot=q=>2*q.coordinate+(q.kind==='false'?1:0);
+ if(!closed)for(const index of epoch.policy.order){const price=setup.fees[index];if(spent+price>setup.C||(row.reserved&&spent+price>row.bank_before))break;expected.push(index);spent+=price;const q=setup.queries[index];known[slot(q)]=hidden[slot(q)];score+=scoreOf(setup.initial.a[q.coordinate],q.kind,hidden[slot(q)]);if(score>=setup.quota){closed=true;break;}}
+ if(!closed){const remaining=setup.queries.map((q,i)=>known[slot(q)]===null?i:null).filter(x=>x!==null);if(k.sum(remaining.map(i=>setup.fees[i]))<setup.C)expected.push(...remaining);else if(remaining.length)expected.push('all');}
+ assert.deepEqual(row.receipts.map(r=>r.query),expected);assert.equal(row.result.kind,closed?'retained':'fallback');assert.equal(row.score,score);
+}
+`+s.slice(at);
+s=s.replace('prefixCheck(setup);',"const learning=summary.learning,epochs=lines(path.join(out,'policies.jsonl')),hist=Array.from({length:4},()=>[0,0,0]);let epochIndex=0,currentEpoch=null;if(!learning)prefixCheck(setup);");
+s=s.replace("let fee=0;assert.equal(row.request_id",String.raw`let fee=0;if(learning){if(epochIndex<epochs.length&&epochs[epochIndex].request===row.request){currentEpoch=epochs[epochIndex++];learnedCheck(c,setup,currentEpoch,hist);}assert(currentEpoch);assert.equal(row.policy_epoch,currentEpoch.id);executionCheck(setup,row,hidden,currentEpoch);}assert.equal(row.request_id`);
+s=s.replace('assert.deepEqual(known,row.known);',String.raw`if(learning){const seen=new Set();for(const r of row.receipts)for(const [index,t]of r.observations){if(seen.has(index))continue;seen.add(index);const q=setup.queries[index],a=setup.initial.a[q.coordinate];if(a===1||a===2)hist[typeOf(a,q.kind)][scoreOf(a,q.kind,t)]++;}assert.deepEqual(row.calibration_after,hist);}assert.deepEqual(known,row.known);`);
+s=s.replace('assert.equal(logIndex,logged.length);',"if(learning){assert.equal(epochIndex,epochs.length);assert.deepEqual(hist,summary.final_histograms);assert.deepEqual(epochs.map(x=>x.request),[0,1,2,4,8,16,32,64,128]);}assert.equal(logIndex,logged.length);");
+s=s.replace('outputs,purchases,equivalences,policies,histogramChecks,negativeControls,totals,strata','outputs,purchases,equivalences,policies,histogramChecks,learnedPolicies,coverageViolations,coverage,negativeControls,totals,strata');
+s=s.replace('Named totals reconstructed, no full-economic claim.','Every learned policy is reconstructed from unique first observations; exact integer confidence bounds and separate backward expectation recurrence checked; actual learned query execution reconstructed. Coverage violations on correlated/changing laws are descriptive assumption challenges. Named totals reconstructed, no full-economic claim.');
+fs.writeFileSync(path.join(__dirname,'check_learning.cjs'),s);

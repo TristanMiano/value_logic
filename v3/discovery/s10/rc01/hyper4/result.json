@@ -1,0 +1,184 @@
+{
+  "source": "hyper4",
+  "status": "pass",
+  "feature_count": 4,
+  "variables": 4,
+  "models": 11,
+  "feature_vectors": 11,
+  "extraction": {
+    "version": "s10-retained-v1",
+    "source_id": "91bbc29a2ed9c6695f74e3ec0a0213bda41ef9807e636bbd3c088f1347eb322b",
+    "feature_map": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "steps": [],
+    "cuts": [
+      {
+        "clause": 0,
+        "features": [
+          0,
+          1,
+          2
+        ],
+        "rhs": 1
+      },
+      {
+        "clause": 1,
+        "features": [
+          1,
+          2,
+          3
+        ],
+        "rhs": 1
+      },
+      {
+        "clause": 2,
+        "features": [
+          0,
+          2,
+          3
+        ],
+        "rhs": 1
+      },
+      {
+        "clause": 3,
+        "features": [
+          0,
+          1,
+          3
+        ],
+        "rhs": 1
+      }
+    ],
+    "caps": {
+      "width": 4,
+      "derived": 256,
+      "candidates": 50000
+    },
+    "examined": 0,
+    "stopped": null,
+    "id": "041321b849f367abea7ee0e37196265b91a6d0a3cf9407ca3f641fe843cc50dd"
+  },
+  "actions": [
+    {
+      "m": 1,
+      "models": [
+        3
+      ],
+      "a": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "certificate": {
+        "version": "s10-retained-v1",
+        "source_id": "91bbc29a2ed9c6695f74e3ec0a0213bda41ef9807e636bbd3c088f1347eb322b",
+        "extraction_id": "041321b849f367abea7ee0e37196265b91a6d0a3cf9407ca3f641fe843cc50dd",
+        "lambda": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "K": 0,
+        "id": "d9be28e9a7cce138c8dafc3837a5c521e6d65f8e12f2fffb5e63e960d35e415b"
+      },
+      "initial_bound": 8,
+      "states": 1296,
+      "strict_contractions_over_scalar_only": 1296
+    },
+    {
+      "m": 3,
+      "models": [
+        3,
+        12,
+        15
+      ],
+      "a": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "certificate": {
+        "version": "s10-retained-v1",
+        "source_id": "91bbc29a2ed9c6695f74e3ec0a0213bda41ef9807e636bbd3c088f1347eb322b",
+        "extraction_id": "041321b849f367abea7ee0e37196265b91a6d0a3cf9407ca3f641fe843cc50dd",
+        "lambda": [
+          8,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          8,
+          8,
+          8,
+          0
+        ],
+        "K": 8,
+        "id": "0c477ce9032849a18e06019a7b006de03dfc870c986c17efb5bffd8df62a95f3"
+      },
+      "initial_bound": 24,
+      "states": 1296,
+      "strict_contractions_over_scalar_only": 1296
+    }
+  ],
+  "states": 2592,
+  "corners": 13122,
+  "audits": 10368,
+  "convolutions": 27,
+  "strict": 2592,
+  "negative_controls": [
+    "changed_source",
+    "feature_map",
+    "cut",
+    "negative_multiplier_m1",
+    "receipt_outside_box_m1",
+    "negative_multiplier_m3",
+    "receipt_outside_box_m3"
+  ],
+  "setup": {
+    "named_units": 464,
+    "categories": {
+      "source_words": 48,
+      "source_binding": 48,
+      "cover_scan": 12,
+      "model_literal": 48,
+      "model_features": 16,
+      "packing_order": 24,
+      "packing_update": 64,
+      "cover_check": 56,
+      "extraction_retention_words": 56,
+      "dual_combination": 64,
+      "dual_retention_words": 28
+    },
+    "native_cpu_memory_and_io_prices": "unknown"
+  },
+  "diagnostic": {
+    "named_units": 2266182,
+    "categories": {
+      "enumeration_literal": 165,
+      "enumeration_feature": 44,
+      "bound_coordinate": 497728,
+      "exact_objective": 256608,
+      "corner_objective": 1404054,
+      "audit_score": 93528,
+      "convolution_transition": 3120,
+      "enumerated_probability": 10935
+    },
+    "native_cpu_memory_and_io_prices": "unknown"
+  },
+  "physical_audits": 0,
+  "complete_calls": 0
+}
