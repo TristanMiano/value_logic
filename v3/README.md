@@ -5,28 +5,28 @@ attributions and scientific records retain their original scope.
 
 **P3-01–10 are complete at their declared scopes. P3-SEARCH-01-C001 remains
 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred.** C001's original four-hour floor
-is satisfied. The latest explicitly requested four-hour increment adds
-**240.038643011666666… research minutes**. Cumulative C001/program research is
-**737.524219120783333… minutes**; phase research is **1823.655586484933333…**.
+is satisfied. The latest explicitly requested two-hour increment adds
+**120.072217133333333… research minutes**. Cumulative C001/program research is
+**857.596436254116666… minutes**; phase research is **1943.727803618266666…**.
 All research clocks are closed. Default sessions are 60 minutes, subject to
-[explicit author overrides](decisions/2026-10-13_four_hour_session.md).
+[explicit author overrides](decisions/2026-10-14_two_hour_metrics.md).
 
-Read [s08 checkpoint](discovery/s08/cp01.md), [findings](discovery/s08/findings.md),
-[effective actuals](discovery/s08/effective_actuals.json),
+Read [s10 checkpoint](discovery/s10/checkpoint.md), [findings](discovery/s10/findings.md),
+[effective actuals](discovery/s10/effective_actuals.json),
 [portfolio](discovery/candidates.md), [single recurrence table](discovery/recurrences.md),
 and [portable continuation](discovery/CONTINUE.md).
 
-The latest paid budgeted-query construction improves both recorded fee and
-named computation against anchor/greedy cover on four star streams; ordinary
-budgeted selection ties it. Broader graph results expose a computation cost
-obstacle. Matroid/group-query cover and scalar box-regret proof bridges extend
-capability, with explicit Cartesian versus shared-cost limits. None establishes
-the complete-cost confirmation event. **F01 remains 20–45%, central 30%, change
-0 points since s07.** The 33 candidate families measure breadth, not readiness.
+The latest28-source scalar construction reduces audit fees57.12% and counted
+computation9.53% against full audit near the target tolerance; its ordinary
+equivalent ties. Fixed tolerance yields smaller gains and stronger thresholds
+expose fee/computation tradeoffs. Cheaper checked source compilation, constraint
+conditioning and sharp dependence bounds extend capability. Unknown complete
+prices and broader negative comparisons prevent confirmation. **F01 remains
+20–45%, central30%, change0 since s08.** The35 families measure breadth, not readiness.
 
-Next construct a small paid matroid/group-query service with a cheap anchor
-and priced lookahead; test source generality and setup repayment. Preserve
-all failed attempts and use [reproduction](discovery/s08/reproduce.md) to separate
+Next test a small fresh service with priced source changes or conservative
+score learning, against strong ordinary methods. Preserve all failed attempts
+and use [reproduction](discovery/s10/reproduce.md) to separate
 old evidence reconstruction from new acquisition. [TODO_v3.md](../TODO_v3.md)
 and [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) govern the open program.
 

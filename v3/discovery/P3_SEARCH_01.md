@@ -4,28 +4,21 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
-Latest execution contributor: **Codex (GPT-6)**. Earlier records retain their
-original attributions. [Current checkpoint](s08/cp01.md), [findings](s08/findings.md),
-[portfolio](candidates.md), [exact actuals](s08/effective_actuals.json), and
-[single recurrence table](recurrences.md) give the closing state.
+**Current continuation — October14,2026, Codex (GPT-6):**
+[s10 checkpoint](s10/checkpoint.md), [findings](s10/findings.md),
+[exact actuals](s10/effective_actuals.json), [single recurrence table](recurrences.md).
+The two-hour increment adds120.072217133333333… research minutes;
+C001/program is857.596436254116666… and phase1943.727803618266666….
+All clocks are closed. Default next session60 minutes, explicit overrides allowed.
 
-The explicit four-hour s08 increment is closed at **240.038643011666666…
-research minutes**. Program/C001 research is **737.524219120783333… minutes**.
-The default next session is 60 minutes; explicit author overrides take priority.
-The [portable prompt](CONTINUE.md) governs recovery and a fresh observed clock.
-
-Current direction: source-bound action queries and inexpensive anchor-backed
-policies, with policy-invoice learning and shared-cost action frontiers as
-separate branches. The budgeted star service improves both recorded fee and
-computation, while an ordinary matching controller ties. General graph cover
-still has a large computation bill; generated matroid geometry and scalar
-box-regret proofs provide new capability but not demonstrated economic advantage.
-**S31–S33 remain DEVELOPMENT; 33 families record breadth, not readiness.**
-
-[F01/S28-B1/V1](s08/forecast_final.md) remains **20–45%, central 30%, change
-0 percentage points** since s07. No candidate is promoted. Next test a small
-paid matroid/group-query construction with bounded lookahead and strong
-ordinary methods, keeping a new confirmation event separate from F01.
+**C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no candidate promoted.**
+[F01](s10/forecast_final.md) remains20–45%, central30%, change0 points since s08.
+The35 families measure breadth. Cheaper source compilation and conditioning,
+response-certificate reuse, scalar policies and dependence-robust score bounds
+are DEVELOPMENT. Ordinary equivalents tie; threshold controls and broader
+negative transfers limit the resource claims. Use [CONTINUE](CONTINUE.md) for
+the next priced construction and recover remote state before starting a clock.
+Earlier dated sections below retain their historical scope.
 
 ## 1. Objective and scope
 
@@ -274,7 +267,7 @@ progress, candidate readiness and the next action separately. A useful negative
 finding is a search update. A completed cycle is an effort/accounting boundary.
 Neither is automatically a positive project milestone.
 
-Current state: **no discovery candidates have been promoted; F01/S28-B1/V1
+Historical s07 checkpoint state: **no discovery candidates have been promoted; F01/S28-B1/V1
 has a 20–45% subjective promotion forecast, central 30%; 497.485576109117
 cumulative C001/program research minutes are credited, with 0 minutes remaining to C001's
 four-hour floor**. The cycle and program remain open; the s07 hourly research

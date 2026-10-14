@@ -888,3 +888,17 @@ exclude compaction, crashed open time and publication. All clocks are closed.
 S31â€“S33 add three families, bringing breadth to 33. Next use the
 [portable continuation](discovery/CONTINUE.md); default60 minutes with explicit
 author duration overrides. P3-11 remains deferred.
+
+## s10 additive discovery update — October14,2026, Codex (GPT-6)
+
+All new findings are DEVELOPMENT and same-model reviewed. Prior dated claims
+retain their scope. [Checkpoint](discovery/s10/checkpoint.md), [findings](discovery/s10/findings.md).
+
+| ID | Supported scoped statement | Evidence and limits |
+|---|---|---|
+| DS-S34 | Checked source compilation and exact unit conditioning reduce repeated source work on the declared finite sources. |39-source prior-compiler named reduction90.15%;168 patches69.61% with parent admission. Ordinary SAT/compilation mechanisms; no native-runtime or general tractability claim. |
+| DS-S35 | Affine positive and witness-negative regions support checked response reuse beyond exact-value matches. |Broader transfer remains costly; no general economic benefit. All ordinary mirrors tie. |
+| S10-SCALAR |28-source near-target scalar prefix reduces audit fees57.12% and counted work9.53% against full audit on3,584 outputs per arm. |Fixed18 gives7.37%/1.65%; exact threshold uses fewer fees but more computation; ordinary scalar implementation ties. Unknown complete prices. |
+| S10-DEPENDENCE |Three elementary bounds give the sharp worst prefix survival for identical three-valued score marginals with arbitrary dependence. |[Proof](discovery/s10/three_score_sharp.md),47,520 exact allocation checks. Individual-prefix sharpness does not make the summed invoice jointly sharp; robust service benefit not yet measured. |
+| S10-LEARNING |Confidence policies and a pathwise physical-fee reserve have distinct premises and guarantees. |[Learning interpretation](discovery/s10/learning_interpretation.md), [reserve](discovery/s10/fee_reserve.md).36 changed-law confidence violations retained; no best-policy regret rate or full-cost guarantee. |
+| Current P3-POS01 / Q3 |OUTSTANDING / affirmative strongest-ordinary advantage OPEN. |F01 remains20–45%, central30%, Δ0; P3-11 deferred; no promotion. |

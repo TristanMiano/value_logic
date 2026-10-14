@@ -16,7 +16,8 @@ scientific records retain their historical scopes and time accounting.
 sets a default of one-hour engaged-research sessions with durable handoffs
 between ChatGPT and Codex. Explicit author duration overrides take precedence
 for that session; the [October 13 four-hour instruction](decisions/2026-10-13_four_hour_session.md)
-is one such override. It does not change the default for later sessions. These explicit session boundaries take precedence over the
+and the [October14 two-hour instruction](decisions/2026-10-14_two_hour_metrics.md)
+are such overrides. They do not change the default for later sessions. These explicit session boundaries take precedence over the
 general instruction below to continue through every checkpoint. Cycle totals,
 unfinished commitments and the open discovery objective carry across sessions.
 
