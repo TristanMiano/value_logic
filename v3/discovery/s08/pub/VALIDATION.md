@@ -41,3 +41,7 @@ The final research total remains 14,402,318,580,700 ns; no test adds credit.
 Staged path checks and remote CI results are recorded below after execution.
 
 Staged path checks pass:22,965 files,3,962 ancestor attribute probes, longest relative path200/200 UTF-16 units and full Windows path236/259. The24 portability/evidence/link-relocation unit tests pass. Later small publication files are rechecked before commit. `git diff --check` reports preserved blank lines in executed Python sources and whitespace in raw failure logs; these raw records are retained unchanged. Standalone local link attempt1 also crashes; remote CI remains pending at this commit.
+
+## Post-crash completion
+
+The saved research commit is `d75b3ff49acbb31404844731c54c1bb917c8e66c`. Research remains closed. Three executed declaration copies now have verified original link namespaces; the aa01 portable view was mechanically rederived with that namespace. Raw declarations and the scientific manifest remain unchanged. The complete local link checker passes on1,449 documents (`links_2.txt`). The first branch upload ended with HTTP408; remote readback found no branch, so a transport retry is required.
