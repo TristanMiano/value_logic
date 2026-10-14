@@ -1,7 +1,9 @@
 # Phase-three research procedure
 
-Established October 6; amended October 11 and 12, 2026 UTC.
-Contributor: **ChatGPT (GPT-6 Astra Pro)**.
+Established October 6; amended October 11, 12 and 14, 2026.
+Original contributor: **ChatGPT (GPT-6 Astra Pro)**.
+October 14 contribution-standard clarification: **Codex (GPT-6)**, recording
+**Tristan Miano's** direction; zero research credit.
 Applies to [TODO_v3.md](../TODO_v3.md), its selected repairs and gate attempts.
 
 **Current direction: discovery first.** The author's
@@ -11,6 +13,18 @@ Its first research cycle continues beyond its satisfied four-hour floor; see
 the current discovery checkpoint for exact actuals. P3-11 is deferred
 until a promising candidate is ready for rigorous confirmation. Completed
 scientific records retain their historical scopes and time accounting.
+
+**Broader goal and worthwhile outcome:** find mechanisms that let a bounded
+reasoner make materially better use of unresolved mathematics, fallible models,
+reasoning costs or counterfactual changes, across all five author questions and
+their connections. The author's
+[October 14 clarification](decisions/2026-10-14_contribution_standard.md)
+accepts a **useful, moderately novel contribution** with an explicit delta,
+honest literature comparison and credible verification path as a worthwhile
+outcome. Continued concrete gains justify continued discovery. General
+mathematical-uncertainty learning, final metaphysical answers and universal
+superiority over conventional reasoning are not prerequisites. A narrow
+candidate or an initially minor obstacle must not become the whole program.
 
 **Current execution cadence:** the author's [October 12 direction](decisions/2026-10-12_hourly_handoffs.md)
 sets a default of one-hour engaged-research sessions with durable handoffs
@@ -169,13 +183,24 @@ alternatives. After two cycles without constructive strengthening, reconsider
 the mechanism, representation, application or allocation before another long
 challenge of the same approach. This triggers replanning, not termination.
 
+Assess breadth by materially different mechanisms and connections across the
+five questions, rather than the number of variants within one harness. Review
+cumulative gains periodically: what can now be constructed, proved, retained or
+used; how that differs from the closest prior work; and which open questions
+the gain advances. Development labels, family counts and large test panels do
+not replace that assessment. Keep screens proportionate to a candidate's
+promise and use their results to redirect the portfolio early.
+
 Preserve the historical P3-N01 contribution and its exact modest scope. The
-new **P3-POS01** objective requires a materially useful positive construction,
-mechanism, guarantee or demonstrated capability/resource benefit tied to the
-author's organizing question. A useful synthesis can qualify if its substantive
-new consequence is supported; simply restating the existing modest contribution
-does not meet the new objective. Explain why the claim matters before forecasting
-its verification. Do not choose an easier minor target merely to obtain a pass.
+**P3-POS01** objective seeks a useful, moderately novel positive contribution
+tied to the author's organizing question. A mechanism, guarantee, representation,
+formal adaptation, useful synthesis or demonstrated capability/resource benefit
+can qualify when its supported practical or mathematical delta is explicit.
+Identify established machinery, reproduced results, adaptations and new
+consequences against the closest literature. Explain why the delta matters
+before forecasting verification. Mere relabelling, a contrived weak comparison
+or restating P3-N01 is insufficient; a general solution to the five questions
+is not required for a contribution to be worthwhile.
 
 Record object, type, exact delta, magnitude, evidence and named comparison scope
 in [claim_ledger.md](claim_ledger.md). Report **work performed**, **scientific
@@ -193,6 +218,12 @@ serve as a demand for strict superiority over every member. Name the strongest
 relevant pre-existing implementations and distinguish a new mechanism or guarantee
 from empirical superiority. Neither a weak baseline, superficial relabelling,
 elapsed floor nor negative result alone satisfies the positive objective.
+
+Value Logic and conventional methods overlap. An ordinary equivalent can embody
+the same task-relative reasoning about usefulness, reliance and revision. A tie
+limits a superiority claim but does not by itself disqualify a useful synthesis
+with an independently supported delta. Preserve relevant strong controls and
+distinguish attribution from performance whenever interpreting that tie.
 
 When a candidate is rejected or confirmation does not support the positive
 claim, return the unresolved objective to P3-SEARCH-01. R-P3-N01 remains an
@@ -229,6 +260,15 @@ extending below 80% does not establish the minimum. Include proof,
 implementation, resource, comparison and empirical-transfer risks relevant to
 the claim; do not condition away its difficult parts or weaken it to inflate
 confidence. An **unassessed** forecast leaves the candidate in discovery.
+
+Apply this readiness threshold to the useful contribution actually proposed.
+Do not silently enlarge a moderately novel claim into a general learner or a
+metaphysical solution. F01/S28-B1/V1 remains one specific cost-advantage event;
+its percentage is not overall program readiness. Preserve its history and
+specification, label forecasts by candidate and event, and assess a different
+promising contribution under its own event. An unchanged or rejected branch
+does not erase gains elsewhere. Candidate-specific time estimates are not
+program-wide deadlines or research commitments.
 
 This is a subjective probability unless stronger calibration evidence exists;
 neither hours, a checklist, enthusiasm nor agreement among agents establishes
