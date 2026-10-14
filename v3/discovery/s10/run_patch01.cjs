@@ -1,0 +1,3 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),p=require('node:child_process'),root=path.join(__dirname,'patch01'),design=JSON.parse(fs.readFileSync(path.join(root,'design.json'),'utf8'));
+for(const source of design.sources){const start=new Date().toISOString(),r=p.spawnSync(process.execPath,[path.join(__dirname,'patch_screen.cjs'),source.name],{encoding:'utf8',windowsHide:true,timeout:120000,maxBuffer:2**20});fs.writeFileSync(path.join(root,'runs',source.name+'.log'),r.stdout+'\n'+r.stderr);fs.writeFileSync(path.join(root,'runs',source.name+'.json'),JSON.stringify({start,end:new Date().toISOString(),status:r.status,signal:r.signal,error:r.error?String(r.error):null},null,2));console.log(source.name,r.status,r.stdout.trim(),r.stderr.slice(-500));}

@@ -1,0 +1,161 @@
+{
+  "version": "s10-signed-v1",
+  "original_source_id": "29885095063f26cd822bcaada61068cd774bf91af4d0f805efa5acd7bda0a3c5",
+  "objective": [
+    12,
+    12,
+    -12,
+    12
+  ],
+  "normalization": {
+    "source": {
+      "name": "clique4:flip4",
+      "variables": 4,
+      "features": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "hard": [
+        [
+          1,
+          2
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          -3,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          -3,
+          4
+        ]
+      ],
+      "id": "6fbeb7745b432c62ddb808dd1fab9c9ce2bf8e6a32862712bd05eb7f98dc0457"
+    },
+    "weights": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "constant": -12,
+    "flipMask": 4
+  },
+  "receipt": {
+    "version": "s10-complete-v1",
+    "request_id": "clique4:signed2",
+    "source_id": "6fbeb7745b432c62ddb808dd1fab9c9ce2bf8e6a32862712bd05eb7f98dc0457",
+    "weights": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "budget": 23,
+    "lower": 24,
+    "model": 10,
+    "proof": [
+      "split",
+      0,
+      [
+        "split",
+        1,
+        [
+          "clause",
+          0
+        ],
+        [
+          "split",
+          2,
+          [
+            "split",
+            3,
+            [
+              "clause",
+              2
+            ],
+            [
+              "bound"
+            ]
+          ],
+          [
+            "clause",
+            1
+          ]
+        ]
+      ],
+      [
+        "split",
+        1,
+        [
+          "split",
+          2,
+          [
+            "split",
+            3,
+            [
+              "clause",
+              4
+            ],
+            [
+              "bound"
+            ]
+          ],
+          [
+            "clause",
+            3
+          ]
+        ],
+        [
+          "bound"
+        ]
+      ]
+    ],
+    "search_nodes": 15,
+    "proof_nodes": 15,
+    "provider_invoice": {
+      "named_units": 559,
+      "categories": {
+        "source_words": 18,
+        "source_binding": 16,
+        "model_literal": 12,
+        "model_features": 4,
+        "complete_order": 12,
+        "complete_search_node": 30,
+        "complete_partial_literal": 300,
+        "complete_partial_cost": 80,
+        "complete_proof_node": 30,
+        "complete_export_words": 57
+      },
+      "native_cpu_memory_and_io_prices": "unknown"
+    },
+    "id": "0a7902c452d554dd8a7bdcfffd5e8ff9031ef946c974c13e5146e7a4115bb89e"
+  },
+  "invoice": {
+    "named_units": 669,
+    "categories": {
+      "model_literal": 36,
+      "model_features": 12,
+      "source_words": 18,
+      "source_binding": 16,
+      "signed_objective_normalization": 16,
+      "signed_clause_substitution": 12,
+      "signed_provider_invoice": 559
+    },
+    "native_cpu_memory_and_io_prices": "unknown"
+  },
+  "id": "f11cd270de69111047a3181aa81cb0eecabf61335c3c997fee47103ccb3463a9"
+}

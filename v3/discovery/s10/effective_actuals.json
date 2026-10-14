@@ -1,0 +1,120 @@
+{
+  "observed": {
+    "utc": "2026-10-14T22:27:06.252529+00:00",
+    "monotonic_ns": 1109408236839200,
+    "runtime": "python-pid-10916-ed9154a0-6e3c-4ff8-911b-2a8b20272d98"
+  },
+  "closed_ns": {
+    "D": 1912419054500,
+    "L": 332670351000,
+    "E": 4959243622500,
+    "O": 239159881100,
+    "wait": 0,
+    "idle": 0,
+    "unmeasured": 579919643000
+  },
+  "research_ns": 7204333028000,
+  "session_config": {
+    "cycle": "P3-SEARCH-01-C001",
+    "cycle_floor_ns": 14400000000000,
+    "prior_cycle_research_ns": 44251453147247,
+    "prior_program_research_ns": 44251453147247,
+    "prior_effective_actuals": "v3/discovery/s08/effective_actuals.json",
+    "contributor": "Codex (GPT-6)",
+    "session_research_target_ns": 7200000000000,
+    "authority": "v3/decisions/2026-10-14_two_hour_metrics.md",
+    "clock_source_sha256": "d57a1bbc92962595f9918679ee596db71e8f644a52614112eb2bbd28495cc8e7",
+    "note": "Fresh s10 runtime; s08 closed, s09 remote transfer reserved with no scientific credit."
+  },
+  "session_research_ns": 7204333028000,
+  "cycle_research_ns": 51455786175247,
+  "program_research_ns": 51455786175247,
+  "research_minutes": "120.072217133333333333333333333333333333333333",
+  "total_engaged_ns": 7443492909100,
+  "purpose_ns": {
+    "generation": 5979187934300,
+    "screening": 1132825195800,
+    "synthesis": 92319897900
+  },
+  "lane_ns": {
+    "X": 5773701959500,
+    "R": 1430631068500
+  },
+  "floor_ns": 14400000000000,
+  "remaining_floor_ns": 0,
+  "historical_phase_ns": 65167882041849,
+  "phase_research_ns": 116623668217096,
+  "open_segment": null,
+  "status": "closed_author_directed_two_hour_handoff",
+  "raw_actuals": "actuals.json",
+  "applied_dispositions": [
+    {
+      "start_monotonic_ns": 1103366127475400,
+      "end_monotonic_ns": 1103504124279200,
+      "elapsed_ns": 137996803800,
+      "raw_mode": "D",
+      "effective_mode": "E",
+      "reason": "The interval implemented signed.cjs and its controls; generation purpose and X lane unchanged."
+    },
+    {
+      "start_monotonic_ns": 1103702329365200,
+      "end_monotonic_ns": 1103879838220400,
+      "elapsed_ns": 177508855200,
+      "raw_mode": "L",
+      "effective_mode": "unmeasured",
+      "reason": "Context refresh occurred in this open segment. Exclude the entire interval conservatively; no reconstructed research credit."
+    },
+    {
+      "start_monotonic_ns": 1106163285804500,
+      "end_monotonic_ns": 1106356435807800,
+      "elapsed_ns": 193150003300,
+      "raw_mode": "O",
+      "effective_mode": "unmeasured",
+      "reason": "Entire context-refresh checkpoint gap excluded from engaged time; no research credit was recorded."
+    },
+    {
+      "start_monotonic_ns": 1107146050543900,
+      "end_monotonic_ns": 1107291739240400,
+      "raw_mode": "E",
+      "effective_mode": "O",
+      "reason": "Mixed compiler analysis and native dependency installation lacked a separate setup boundary; conservatively charge this entire observed interval to administration.",
+      "elapsed_ns": 145688696500
+    },
+    {
+      "start_monotonic_ns": 1108374346965900,
+      "end_monotonic_ns": 1108583607750400,
+      "raw_mode": "E",
+      "effective_mode": "unmeasured",
+      "reason": "Entire open segment containing context refresh is excluded; completed checker evidence is retained without reconstructing time credit.",
+      "elapsed_ns": 209260784500
+    }
+  ],
+  "clock_active": false,
+  "research_closed_utc": "2026-10-14T22:26:55.832669+00:00",
+  "session_target_ns": 7200000000000,
+  "session_overshoot_ns": 4333028000,
+  "publication_research_credit_ns": 0,
+  "segment_count": 78,
+  "note": "One resident runtime. Two research context-refresh intervals and one setup interval excluded from research; another O context gap excluded from engagement. No s09, helper, stale clock or publication credit.",
+  "cycle_research_minutes": "857.596436254116666666666666666666666666666667",
+  "program_research_minutes": "857.596436254116666666666666666666666666666667",
+  "phase_research_minutes": "1943.72780361826666666666666666666666666666667",
+  "total_engaged_minutes": "124.058215151666666666666666666666666666666667",
+  "mode_minutes": {
+    "D": "31.8736509083333333333333333333333333333333333",
+    "L": "5.54450585",
+    "E": "82.654060375",
+    "O": "3.98599801833333333333333333333333333333333333",
+    "wait": "0",
+    "idle": "0",
+    "unmeasured": "9.66532738333333333333333333333333333333333333"
+  },
+  "source_hashes": {
+    "actuals.json": "0f48bab283f6f5a6afeaf97a345c86fe97735b3446f098633431fb36d8184e83",
+    "events.jsonl": "5183f30a0cf16325f963ee41bb6b5f450c3f5cdccabe725f55d8dc1a050fd313",
+    "segments.jsonl": "887931e976d0c2ea562858fad03588c65df9189c295cb1d437a519b7af33dc10",
+    "dispositions.json": "4ee7d1eaccbf633d92a2c6ca172e966433115a8327b901ae6bcdcf8998280740",
+    "clock_source.py": "d57a1bbc92962595f9918679ee596db71e8f644a52614112eb2bbd28495cc8e7",
+    "session_config.json": "6b6a32caa0858e86457634a23648b9bee1b32d7340b33f5bf4af5d2440df9ca0"
+  }
+}

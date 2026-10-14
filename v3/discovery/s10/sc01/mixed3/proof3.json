@@ -1,0 +1,155 @@
+{
+  "version": "s10-signed-v1",
+  "original_source_id": "e787e8492e43580b6ea3fe5ac6fc0138fe6a336f90aea78594683cd08d429897",
+  "objective": [
+    12,
+    -12,
+    12
+  ],
+  "normalization": {
+    "source": {
+      "name": "mixed3:flip2",
+      "variables": 3,
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "hard": [
+        [
+          -2,
+          -1,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          -3,
+          1,
+          2
+        ],
+        [
+          -1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          -2,
+          1,
+          3
+        ]
+      ],
+      "id": "d9e6416660d9a8a103588b04349e68ced584d44722794fc051ecf0b94f6f13fe"
+    },
+    "weights": [
+      12,
+      12,
+      12
+    ],
+    "constant": -12,
+    "flipMask": 2
+  },
+  "receipt": {
+    "version": "s10-complete-v1",
+    "request_id": "mixed3:signed3",
+    "source_id": "d9e6416660d9a8a103588b04349e68ced584d44722794fc051ecf0b94f6f13fe",
+    "weights": [
+      12,
+      12,
+      12
+    ],
+    "budget": 23,
+    "lower": 24,
+    "model": 6,
+    "proof": [
+      "split",
+      0,
+      [
+        "split",
+        1,
+        [
+          "split",
+          2,
+          [
+            "clause",
+            1
+          ],
+          [
+            "clause",
+            2
+          ]
+        ],
+        [
+          "split",
+          2,
+          [
+            "clause",
+            5
+          ],
+          [
+            "bound"
+          ]
+        ]
+      ],
+      [
+        "split",
+        1,
+        [
+          "split",
+          2,
+          [
+            "clause",
+            3
+          ],
+          [
+            "bound"
+          ]
+        ],
+        [
+          "bound"
+        ]
+      ]
+    ],
+    "search_nodes": 13,
+    "proof_nodes": 13,
+    "provider_invoice": {
+      "named_units": 647,
+      "categories": {
+        "source_words": 24,
+        "source_binding": 14,
+        "model_literal": 18,
+        "model_features": 3,
+        "complete_order": 18,
+        "complete_search_node": 26,
+        "complete_partial_literal": 414,
+        "complete_partial_cost": 54,
+        "complete_proof_node": 26,
+        "complete_export_words": 50
+      },
+      "native_cpu_memory_and_io_prices": "unknown"
+    },
+    "id": "c017ba406d82f1f072950de07bff55508dcd4b4d4005fda2644546e886f62154"
+  },
+  "invoice": {
+    "named_units": 778,
+    "categories": {
+      "model_literal": 54,
+      "model_features": 9,
+      "source_words": 24,
+      "source_binding": 14,
+      "signed_objective_normalization": 12,
+      "signed_clause_substitution": 18,
+      "signed_provider_invoice": 647
+    },
+    "native_cpu_memory_and_io_prices": "unknown"
+  },
+  "id": "f283d7efb8736cac637ac163ea3b37eb7d4da0979c0d40b7209148a51232483f"
+}

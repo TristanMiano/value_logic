@@ -1,0 +1,141 @@
+{
+  "name": "uf20-07",
+  "status": "complete",
+  "proposals": [
+    {
+      "model": 940300,
+      "nodes": 114,
+      "trial": 0,
+      "invoice": {
+        "named_units": 23367,
+        "categories": {
+          "source_words": 364,
+          "source_binding": 48,
+          "proposal_node": 228,
+          "proposal_literal": 22434,
+          "model_literal": 273,
+          "model_features": 20
+        },
+        "native_cpu_memory_and_io_prices": "unknown"
+      }
+    },
+    {
+      "model": 748236,
+      "nodes": 574,
+      "trial": 1,
+      "invoice": {
+        "named_units": 112148,
+        "categories": {
+          "source_words": 364,
+          "source_binding": 48,
+          "proposal_node": 1148,
+          "proposal_literal": 110295,
+          "model_literal": 273,
+          "model_features": 20
+        },
+        "native_cpu_memory_and_io_prices": "unknown"
+      }
+    },
+    {
+      "model": 936172,
+      "nodes": 6523,
+      "trial": 2,
+      "invoice": {
+        "named_units": 1312640,
+        "categories": {
+          "source_words": 364,
+          "source_binding": 48,
+          "proposal_node": 13046,
+          "proposal_literal": 1298889,
+          "model_literal": 273,
+          "model_features": 20
+        },
+        "native_cpu_memory_and_io_prices": "unknown"
+      }
+    }
+  ],
+  "distinct_models": 3,
+  "levels": [
+    {
+      "depth": 0,
+      "cuts": 13,
+      "steps": 0,
+      "cap": null,
+      "constants": [],
+      "initial": [
+        104,
+        96,
+        120,
+        108
+      ],
+      "units": 5401
+    },
+    {
+      "depth": 1,
+      "cuts": 33,
+      "steps": 256,
+      "cap": "derived_cap",
+      "constants": [],
+      "initial": [
+        100,
+        96,
+        120,
+        108
+      ],
+      "units": 50915
+    },
+    {
+      "depth": 256,
+      "cuts": 33,
+      "steps": 256,
+      "cap": "derived_cap",
+      "constants": [],
+      "initial": [
+        100,
+        96,
+        120,
+        108
+      ],
+      "units": 50915
+    }
+  ],
+  "exact": [
+    {
+      "action": 0,
+      "lower": 80,
+      "regret": 40,
+      "provider_units": 728124,
+      "check_units": 7328,
+      "nodes": 1705,
+      "proof_nodes": 1703
+    },
+    {
+      "action": 1,
+      "lower": 72,
+      "regret": 36,
+      "provider_units": 727476,
+      "check_units": 7157,
+      "nodes": 1723,
+      "proof_nodes": 1693
+    },
+    {
+      "action": 2,
+      "lower": 60,
+      "regret": 72,
+      "provider_units": 396092,
+      "check_units": 4513,
+      "nodes": 893,
+      "proof_nodes": 889
+    },
+    {
+      "action": 3,
+      "lower": 84,
+      "regret": 36,
+      "provider_units": 696329,
+      "check_units": 7015,
+      "nodes": 1633,
+      "proof_nodes": 1633
+    }
+  ],
+  "actual_complete_calls": 4
+}
