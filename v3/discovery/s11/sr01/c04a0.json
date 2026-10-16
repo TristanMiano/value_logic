@@ -1,0 +1,259 @@
+{
+  "contributor": "Codex (GPT-6)",
+  "status": "DEVELOPMENT",
+  "case": 4,
+  "m": 5,
+  "r": 0,
+  "H": 7,
+  "weights": [
+    "1",
+    "2",
+    "-2",
+    "-2",
+    "3"
+  ],
+  "flip_fee": [
+    "3/4",
+    "3/4",
+    "1/4",
+    "1/2",
+    "1/4"
+  ],
+  "query_fee": [],
+  "relations": [
+    [
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        -1
+      ]
+    ],
+    [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        -1
+      ]
+    ]
+  ],
+  "menus": [
+    {
+      "history": [],
+      "relations": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ]
+        ]
+      ]
+    }
+  ],
+  "counts": {
+    "histories": 1,
+    "unreachable_histories": 0,
+    "pair_checks": 32,
+    "menu_checks": 40,
+    "mask_universal_checks": 32,
+    "point_source_planners": 8,
+    "unrestricted_states": 768,
+    "mask_dp_extensions": 96
+  },
+  "point_source_comparators": [
+    {
+      "truth": [
+        -1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "value": "0",
+      "choice": [
+        "stop0"
+      ]
+    },
+    {
+      "truth": [
+        -1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "value": "0",
+      "choice": [
+        "stop0"
+      ]
+    },
+    {
+      "truth": [
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "value": "-5/2",
+      "choice": [
+        "stop1",
+        [],
+        3
+      ]
+    },
+    {
+      "truth": [
+        -1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "value": "-13/2",
+      "choice": [
+        "stop1",
+        [],
+        3
+      ]
+    },
+    {
+      "truth": [
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "value": "0",
+      "choice": [
+        "stop0"
+      ]
+    },
+    {
+      "truth": [
+        1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "value": "0",
+      "choice": [
+        "stop0"
+      ]
+    },
+    {
+      "truth": [
+        1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "value": "-4",
+      "choice": [
+        "stop1",
+        [],
+        0
+      ]
+    },
+    {
+      "truth": [
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "value": "-8",
+      "choice": [
+        "stop1",
+        [],
+        0
+      ]
+    }
+  ],
+  "worked_example": null,
+  "source_sha256": "ca54f521e942cd648e3d734c4256292d551a52504fd9cdb3f40580e6895abeb2",
+  "dependency_hashes": {
+    "logical_chain.py": "57b9296e48d488c314691ef9a97b20e7c05f1cdcec56dbee7835ab4f644ff7c1",
+    "query_flip.py": "0a7a46d9ae9b7c0e2606cd970a8b0e67456b186a4864a615a793f59a23ae8dd3"
+  },
+  "scope": "Menu universal-feasibility identities and comparator query-normal form, finite checks. No optimized full controller yet."
+}

@@ -1,0 +1,40 @@
+{"name": "irrelevant_common_nuisance", "states": 8, "canonical_dimension": 2, "baseline_dimensions": {"zero": 4, "pointwise_min": 2, "arbitrary": 6, "terminal_0": 2, "terminal_1": 2}, "horizon_policy_counts": [2, 7, 15], "horizon_two_difference_rank": 2, "exact_recursion_checks": 62, "basis_operator_applications": 6}
+{"name": "changed_nuisance_operation", "states": 8, "canonical_dimension": 5, "baseline_dimensions": {"zero": 5, "pointwise_min": 5, "arbitrary": 8, "terminal_0": 5, "terminal_1": 5}, "horizon_policy_counts": [2, 6, 12], "horizon_two_difference_rank": 4, "exact_recursion_checks": 16, "basis_operator_applications": 10}
+{"name": "all_zero", "states": 3, "canonical_dimension": 0, "baseline_dimensions": {"zero": 0, "pointwise_min": 0, "arbitrary": 3, "terminal_0": 0, "terminal_1": 0}, "horizon_policy_counts": [1, 1, 1], "horizon_two_difference_rank": 0, "exact_recursion_checks": 2, "basis_operator_applications": 0}
+{"name": "signed_flip_3", "states": 8, "canonical_dimension": 4, "baseline_dimensions": {"zero": 4, "pointwise_min": 7, "arbitrary": 7, "terminal_0": 4, "terminal_1": 4}, "horizon_policy_counts": [2, 6, 11], "horizon_two_difference_rank": 4, "exact_recursion_checks": 24, "basis_operator_applications": 12}
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\potential_probe.py", line 228, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\potential_probe.py", line 213, in main
+    row = evaluate(model, 1000 + i)
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\potential_probe.py", line 107, in evaluate
+    candidate, _ = model_span(model, potential)
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\potential_probe.py", line 91, in model_span
+    terminal, charges = transform(model, b)
+                        ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\potential_probe.py", line 85, in transform
+    expected_b = tuple(sum((mul(K, b)[i] for K in op['K']), F(0)) for i in range(n))
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\potential_probe.py", line 85, in <genexpr>
+    expected_b = tuple(sum((mul(K, b)[i] for K in op['K']), F(0)) for i in range(n))
+                       ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\potential_probe.py", line 85, in <genexpr>
+    expected_b = tuple(sum((mul(K, b)[i] for K in op['K']), F(0)) for i in range(n))
+                            ~~~^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\potential_probe.py", line 25, in mul
+    return tuple(sum((x * y for x, y in zip(row, v)), F(0)) for row in K)
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\potential_probe.py", line 25, in <genexpr>
+    return tuple(sum((x * y for x, y in zip(row, v)), F(0)) for row in K)
+                 ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\potential_probe.py", line 25, in <genexpr>
+    return tuple(sum((x * y for x, y in zip(row, v)), F(0)) for row in K)
+                      ~~^~~
+  File "C:\Python313\Lib\fractions.py", line 668, in forward
+    return monomorphic_operator(a, b)
+  File "C:\Python313\Lib\fractions.py", line 807, in _mul
+    return Fraction._from_coprime_ints(na * nb, db * da)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\fractions.py", line 341, in _from_coprime_ints
+    obj = super(Fraction, cls).__new__(cls)
+TypeError: super.__new__(Fraction): Fraction is not a subtype of super

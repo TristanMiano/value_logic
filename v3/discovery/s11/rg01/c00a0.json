@@ -1,0 +1,179 @@
+{
+  "case": 0,
+  "m": 1,
+  "r": 0,
+  "H": 0,
+  "mass": [
+    "1"
+  ],
+  "weights": [
+    "1"
+  ],
+  "flip_fee": [
+    "1/4"
+  ],
+  "query_fee": [],
+  "box": [
+    [
+      [
+        "-1",
+        "1"
+      ]
+    ]
+  ],
+  "status": "certified_gap",
+  "nominal_regret": "1",
+  "zero_regret": "1",
+  "history": [
+    {
+      "iteration": 0,
+      "policies": 1,
+      "scenarios": 3,
+      "upper": "1",
+      "lower": "0",
+      "gap": "1",
+      "alpha": [
+        "1"
+      ],
+      "beta": [
+        "0",
+        "1",
+        "0"
+      ],
+      "lp_proposal": {
+        "alpha_raw": [
+          1.0
+        ],
+        "beta_raw": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "numeric_value": 1.0
+      },
+      "oracle_work": {
+        "contexts": 1,
+        "support_terms": 3,
+        "flip_keys_sorted": 1,
+        "query_options": 0
+      },
+      "worst_means": [
+        [
+          "-1"
+        ]
+      ]
+    },
+    {
+      "iteration": 1,
+      "policies": 2,
+      "scenarios": 3,
+      "upper": "1/2",
+      "lower": "1/2",
+      "gap": "0",
+      "alpha": [
+        "1/2",
+        "1/2"
+      ],
+      "beta": [
+        "0",
+        "1/2",
+        "1/2"
+      ],
+      "lp_proposal": {
+        "alpha_raw": [
+          0.5,
+          0.5
+        ],
+        "beta_raw": [
+          0.0,
+          0.5,
+          0.5
+        ],
+        "numeric_value": 0.5
+      },
+      "oracle_work": {
+        "contexts": 1,
+        "support_terms": 3,
+        "flip_keys_sorted": 1,
+        "query_options": 0
+      },
+      "worst_means": [
+        [
+          "1"
+        ]
+      ]
+    }
+  ],
+  "elapsed_ns": 2990300,
+  "policies": [
+    {
+      "rows": [
+        {
+          "fee": "0",
+          "coefficients": [
+            "0"
+          ]
+        }
+      ],
+      "plan": {
+        ":0": {
+          "value": "0",
+          "action": [
+            "terminal_0"
+          ]
+        }
+      }
+    },
+    {
+      "rows": [
+        {
+          "fee": "0",
+          "coefficients": [
+            "1"
+          ]
+        }
+      ],
+      "plan": {
+        ":0": {
+          "value": "-1",
+          "action": [
+            "terminal_1",
+            []
+          ]
+        }
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "means": [
+        [
+          "0"
+        ]
+      ],
+      "optimum": "0"
+    },
+    {
+      "means": [
+        [
+          "-1"
+        ]
+      ],
+      "optimum": "-1"
+    },
+    {
+      "means": [
+        [
+          "1"
+        ]
+      ],
+      "optimum": "0"
+    }
+  ],
+  "scope": "Expected minimax regret over privately randomized admissible policies; known masses and valid rectangular conditional mean source. No acquisition bill or broad novelty claim.",
+  "source_sha256": "6396a96bb04039fb6bf2c1a052f39b5ccf127a7446b2d12c8a939995e797ced1",
+  "dependencies": {
+    "query_flip.py": "0a7a46d9ae9b7c0e2606cd970a8b0e67456b186a4864a615a793f59a23ae8dd3",
+    "robust_flip.py": "7a7041f3097496971945893ad9bc7d8a4979541d8bf1fce9228f6d877222bab9"
+  }
+}

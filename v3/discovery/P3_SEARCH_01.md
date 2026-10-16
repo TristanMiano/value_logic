@@ -4,21 +4,29 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
-**Current continuation — October14,2026, Codex (GPT-6):**
-[s10 checkpoint](s10/checkpoint.md), [findings](s10/findings.md),
-[exact actuals](s10/effective_actuals.json), [single recurrence table](recurrences.md).
-The two-hour increment adds120.072217133333333… research minutes;
-C001/program is857.596436254116666… and phase1943.727803618266666….
-All clocks are closed. Default next session60 minutes, explicit overrides allowed.
+**Current continuation — October 15, 2026, Codex (GPT-6):**
+[s11 checkpoint](s11/checkpoint.md), [findings](s11/findings.md),
+[exact actuals](s11/effective_actuals.json), [single recurrence table](recurrences.md).
+The four-hour increment is CLOSED: 240.069234431666666… research minutes;
+C001/program is 1097.665670685783333… and phase 2183.797038049933333….
+The effective clock is closed; the first dead runtime's raw open record is
+preserved with zero credit for its unclosed interval. Default next session is
+60 minutes, with explicit author overrides taking precedence.
 
 **C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no candidate promoted.**
-[F01](s10/forecast_final.md) remains20–45%, central30%, change0 points since s08.
-The35 families measure breadth. Cheaper source compilation and conditioning,
-response-certificate reuse, scalar policies and dependence-robust score bounds
-are DEVELOPMENT. Ordinary equivalents tie; threshold controls and broader
-negative transfers limit the resource claims. Use [CONTINUE](CONTINUE.md) for
-the next priced construction and recover remote state before starting a clock.
-Earlier dated sections below retain their historical scope.
+[F01](s11/forecast_final.md) carries its October 14 assessment: 20–45%, central
+30%, without reassessment. Repair and invoice mathematical targets are
+UNASSESSED. The 35 numbered families are unchanged; s11 develops connections
+among S01/S04/S05/S06/S11/S31 rather than counting each variant as a new family.
+Queries can enable certified edits; two of six exposed CNFs reduce minimax
+regret by at least 46.0078% / 56.5029% against an equally querying static-menu
+class. Exact ordinary realizations tie. Local feedback saves fees against full
+feedback, but the ordinary bandit has the lowest total fees on the four streams.
+Invoice information, source sensitivity and repeated-instance composition add
+separate mathematical mechanisms. All are DEVELOPMENT. Read the
+[scientific assessment](s11/scientific_assessment.md) and
+[sixteen-hour portfolio review](s11/portfolio16.md), then use
+[CONTINUE](CONTINUE.md) for broad discovery. Earlier dated records retain their scope.
 
 ## 1. Objective and scope
 

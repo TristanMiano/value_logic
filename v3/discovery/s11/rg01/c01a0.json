@@ -1,0 +1,220 @@
+{
+  "case": 1,
+  "m": 3,
+  "r": 1,
+  "H": 2,
+  "mass": [
+    "3/5",
+    "2/5"
+  ],
+  "weights": [
+    "-1",
+    "2",
+    "-1"
+  ],
+  "flip_fee": [
+    "1/4",
+    "3/4",
+    "3/4"
+  ],
+  "query_fee": [
+    "1/8"
+  ],
+  "box": [
+    [
+      [
+        "-1",
+        "-1/2"
+      ],
+      [
+        "-1",
+        "0"
+      ]
+    ],
+    [
+      [
+        "1/4",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ]
+  ],
+  "status": "certified_gap",
+  "nominal_regret": "0",
+  "zero_regret": "113/40",
+  "history": [
+    {
+      "iteration": 0,
+      "policies": 2,
+      "scenarios": 3,
+      "upper": "0",
+      "lower": "0",
+      "gap": "0",
+      "alpha": [
+        "1",
+        "0"
+      ],
+      "beta": [
+        "0",
+        "0",
+        "1"
+      ],
+      "lp_proposal": {
+        "alpha_raw": [
+          1.0,
+          0.0
+        ],
+        "beta_raw": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "numeric_value": 0.0
+      },
+      "oracle_work": {
+        "contexts": 3,
+        "support_terms": 36,
+        "flip_keys_sorted": 9,
+        "query_options": 1
+      },
+      "worst_means": [
+        [
+          "-1",
+          "-1"
+        ],
+        [
+          "1/4",
+          "0"
+        ]
+      ]
+    }
+  ],
+  "elapsed_ns": 2757300,
+  "policies": [
+    {
+      "rows": [
+        {
+          "fee": "3/8",
+          "coefficients": [
+            "-1",
+            "1",
+            "1"
+          ]
+        },
+        {
+          "fee": "7/8",
+          "coefficients": [
+            "1",
+            "-1",
+            "1"
+          ]
+        }
+      ],
+      "plan": {
+        "?:2": {
+          "value": "-69/40",
+          "action": [
+            "query",
+            0
+          ]
+        },
+        "-:1": {
+          "value": "-21/20",
+          "action": [
+            "terminal_1",
+            [
+              0
+            ]
+          ]
+        },
+        "+:1": {
+          "value": "-4/5",
+          "action": [
+            "terminal_1",
+            [
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "rows": [
+        {
+          "fee": "0",
+          "coefficients": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "fee": "0",
+          "coefficients": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "plan": {
+        "?:2": {
+          "value": "0",
+          "action": [
+            "terminal_0"
+          ]
+        }
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "means": [
+        [
+          "-3/4",
+          "-1/2"
+        ],
+        [
+          "5/8",
+          "1/2"
+        ]
+      ],
+      "optimum": "-69/40"
+    },
+    {
+      "means": [
+        [
+          "-1",
+          "-1"
+        ],
+        [
+          "1/4",
+          "0"
+        ]
+      ],
+      "optimum": "-49/40"
+    },
+    {
+      "means": [
+        [
+          "-1/2",
+          "0"
+        ],
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "optimum": "-89/40"
+    }
+  ],
+  "scope": "Expected minimax regret over privately randomized admissible policies; known masses and valid rectangular conditional mean source. No acquisition bill or broad novelty claim.",
+  "source_sha256": "6396a96bb04039fb6bf2c1a052f39b5ccf127a7446b2d12c8a939995e797ced1",
+  "dependencies": {
+    "query_flip.py": "0a7a46d9ae9b7c0e2606cd970a8b0e67456b186a4864a615a793f59a23ae8dd3",
+    "robust_flip.py": "7a7041f3097496971945893ad9bc7d8a4979541d8bf1fce9228f6d877222bab9"
+  }
+}

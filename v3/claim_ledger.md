@@ -1,5 +1,7 @@
 # Phase-three claims and obligations
 
+**Current pointer — October 15, 2026, Codex (GPT-6):** [s11 assessment](discovery/s11/scientific_assessment.md) and [claim-specific targets](discovery/s11/verification_targets.md). P3-POS01 OUTSTANDING; no promotion. Earlier dated entries below retain their scope.
+
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 12, 2026 UTC.
 **P3-01–08 are complete at their declared task scopes, with their Research90
 minima and closing records. P3-09 is complete at prospective challenge-freeze
@@ -902,3 +904,18 @@ retain their scope. [Checkpoint](discovery/s10/checkpoint.md), [findings](discov
 | S10-DEPENDENCE |Three elementary bounds give the sharp worst prefix survival for identical three-valued score marginals with arbitrary dependence. |[Proof](discovery/s10/three_score_sharp.md),47,520 exact allocation checks. Individual-prefix sharpness does not make the summed invoice jointly sharp; robust service benefit not yet measured. |
 | S10-LEARNING |Confidence policies and a pathwise physical-fee reserve have distinct premises and guarantees. |[Learning interpretation](discovery/s10/learning_interpretation.md), [reserve](discovery/s10/fee_reserve.md).36 changed-law confidence violations retained; no best-policy regret rate or full-cost guarantee. |
 | Current P3-POS01 / Q3 |OUTSTANDING / affirmative strongest-ordinary advantage OPEN. |F01 remains20–45%, central30%, Δ0; P3-11 deferred; no promotion. |
+
+## s11 broad discovery closure — October 15, 2026
+
+Contributor: Codex (GPT-6). All evidence DEVELOPMENT; no new confirmation.
+
+| Object / type | Explicit useful delta | Comparison and limitations | Evidence |
+| --- | --- | --- | --- |
+| Certified repair / mechanism and compact representation | Observations enable universally valid edit masks; two of six inherited CNFs reduce regret at least 46.0078% / 56.5029% against equally querying static menus | Query fees included; preparation and native prices unknown. Identical ordinary optimizer ties. Bounded-width extension is derived, not implemented. | [CNF results](discovery/s11/cnf_results.md), [prior comparison](discovery/s11/repair_prior.md), [structured extension](discovery/s11/structured_repair.md) |
+| Local feedback / acquisition and learning | Feedback-only fees 4999 vs 112193, total 940053 vs 1047247 full feedback over four streams | Ordinary bandit0 is cheaper at 937656. Free estimator costs 938744; path control 944395. No complete-compute percentage. | [Paid results](discovery/s11/local_service_results.md), [path results](discovery/s11/path_results.md) |
+| Invoice-limited information / mathematical characterization | Cap H gives degree H−1 span; checked support can restore identification; repeated same-instance episodes compose degrees | Explicit source-misspecification instability; fixed task surrogate bills, not general optimal experimental design or application validation | [Information](discovery/s11/invoice_information.md), [robust design](discovery/s11/invoice_design.md), [composition](discovery/s11/invoice_composition.md) |
+
+R11-M and I11-M are proposed mathematical verification targets with UNASSESSED
+readiness. The October 14 F01/S28-B1/V1 forecast is carried, not reassessed.
+These developments support continued search for a useful, moderately novel
+contribution; they do not establish priority or satisfy P3-POS01 yet.

@@ -1,0 +1,126 @@
+{
+  "contributor": "Codex (GPT-6)",
+  "status": "DEVELOPMENT",
+  "case": 2,
+  "n": 6,
+  "rounds": 512,
+  "stream": "all_zero",
+  "world_seed": 31002,
+  "sampling_seed": 32002,
+  "fees": [
+    1,
+    3,
+    2,
+    4,
+    1,
+    2
+  ],
+  "K": 1,
+  "models": [
+    "zero",
+    "both_first_queries_certify",
+    "half_max_fee_first_edge"
+  ],
+  "worlds_sha256": "cec90e3de7ba74dc428b9f9fb899edf2c000d3dd3fb8d21bd92ab32dc289824b",
+  "arms": [
+    {
+      "kind": "learned_model",
+      "execution_fees": 6656,
+      "truth_purchases": 3072,
+      "feedback_purchases": 0,
+      "model_score_sums": [
+        0.0,
+        2760.930006785427,
+        3384.590912161728
+      ],
+      "weighted_model_score_sum": 2019.7739331300097,
+      "mixture_score_sum": 1324.7692764834808,
+      "small_loss_upper": 83153.74609320314,
+      "estimated_matching_regret": 35.49226335748658,
+      "estimated_matching_bound": 710.4784936268014,
+      "max_eta_estimated_matching_loss": 0.012019406802672774,
+      "finite_mean_checks": 80,
+      "validation_world_reads": 1248,
+      "gamma": 0.14539226694455581,
+      "eta": 0.0036348066736138955,
+      "B": 37844.90076750081,
+      "final_model_logweights": [
+        0.0,
+        -0.07295381810477258,
+        -0.08943320879488821
+      ],
+      "counts": {
+        "mixture_coins": 512,
+        "uniform_coins": 288,
+        "uniform_partition_additions": 5,
+        "feedback_estimates": 0,
+        "nonzero_updates": 0,
+        "event_probability_evaluations": 0,
+        "model_score_terms": 5958,
+        "model_exponentials": 1536,
+        "model_predictions": 1536
+      },
+      "matrix_counts": {
+        "matrix_products": 12967,
+        "updates": 512,
+        "suffix_queries": 3396,
+        "coin_choices": 1698,
+        "interval_queries": 2048
+      },
+      "trajectory_sha256": "c6699d3767a784f7e6f0da2c5fb1f2bc94ff57a9dc521424f5dd681b23c215eb"
+    },
+    {
+      "kind": "zero_same_tuning",
+      "execution_fees": 6656,
+      "truth_purchases": 3072,
+      "feedback_purchases": 0,
+      "model_score_sums": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "weighted_model_score_sum": 0.0,
+      "mixture_score_sum": 0.0,
+      "small_loss_upper": 83153.74609320314,
+      "estimated_matching_regret": 0.0,
+      "estimated_matching_bound": 705.6632134196407,
+      "max_eta_estimated_matching_loss": 0.0,
+      "finite_mean_checks": 80,
+      "validation_world_reads": 1248,
+      "gamma": 0.14539226694455581,
+      "eta": 0.0036348066736138955,
+      "B": 37844.90076750081,
+      "final_model_logweights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": {
+        "mixture_coins": 512,
+        "uniform_coins": 281,
+        "uniform_partition_additions": 5,
+        "feedback_estimates": 0,
+        "nonzero_updates": 0,
+        "event_probability_evaluations": 0,
+        "model_score_terms": 0,
+        "model_exponentials": 0,
+        "model_predictions": 0
+      },
+      "matrix_counts": {
+        "matrix_products": 11485,
+        "updates": 0,
+        "suffix_queries": 3418,
+        "coin_choices": 1709,
+        "interval_queries": 2048
+      },
+      "trajectory_sha256": "875f1aaca7608317c30a4ca87a6cf2ecbd04d89e2e7407934178a84b97ced977"
+    }
+  ],
+  "hashes": {
+    "model_probe.py": "72debb51978dc2d1c3b512d2aebc971f9e468ad7d30f865e55bd2cbb85eca158",
+    "free_core.py": "b32c113eadcecb67cf2a74abb482ae6e498b18d099810ad7ea9856a2768f06d7",
+    "matching_core.py": "898279febb513518ab02ec26fc07fdfba7e2c91aa31614d5f54930351ef84c6c",
+    "local_service.py": "a26c2f09edb9a40e4d48d5d1ab629bc772038bb027c4b4b8bc7ff7da52b55487"
+  },
+  "scope": "Joint-update and purchase-boundary screen; floats checked with declared tolerances, not formal arithmetic. Observed score inequalities do not certify realized expected regret. Compute unpriced; no broad service advantage."
+}

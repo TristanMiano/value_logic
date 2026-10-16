@@ -1,0 +1,126 @@
+{
+  "contributor": "Codex (GPT-6)",
+  "status": "DEVELOPMENT",
+  "case": 1,
+  "n": 6,
+  "rounds": 512,
+  "stream": "all_one",
+  "world_seed": 31001,
+  "sampling_seed": 32001,
+  "fees": [
+    1,
+    3,
+    2,
+    4,
+    1,
+    2
+  ],
+  "K": 1,
+  "models": [
+    "zero",
+    "both_first_queries_certify",
+    "half_max_fee_first_edge"
+  ],
+  "worlds_sha256": "979d2e8a4972f67978c0713a2c8867f07cd9433655a14a14d10f2eca802ec13d",
+  "arms": [
+    {
+      "kind": "learned_model",
+      "execution_fees": 670,
+      "truth_purchases": 512,
+      "feedback_purchases": 0,
+      "model_score_sums": [
+        1094.6518231471114,
+        256.7529600913891,
+        396.5487809950136
+      ],
+      "weighted_model_score_sum": 580.8897004341478,
+      "mixture_score_sum": 299.1061759953545,
+      "small_loss_upper": 83667.25201338592,
+      "estimated_matching_regret": 129.98013265838696,
+      "estimated_matching_bound": 706.7504065442677,
+      "max_eta_estimated_matching_loss": 0.010292324656904661,
+      "finite_mean_checks": 80,
+      "validation_world_reads": 1248,
+      "gamma": 0.14539226694455581,
+      "eta": 0.0036348066736138955,
+      "B": 37844.90076750081,
+      "final_model_logweights": [
+        -0.0289246847249535,
+        -0.0067843475576470445,
+        -0.010478261878164289
+      ],
+      "counts": {
+        "mixture_coins": 512,
+        "uniform_coins": 75,
+        "uniform_partition_additions": 5,
+        "feedback_estimates": 0,
+        "nonzero_updates": 0,
+        "event_probability_evaluations": 0,
+        "model_score_terms": 1536,
+        "model_exponentials": 1536,
+        "model_predictions": 1536
+      },
+      "matrix_counts": {
+        "matrix_products": 7749,
+        "updates": 512,
+        "suffix_queries": 874,
+        "coin_choices": 437,
+        "interval_queries": 2048
+      },
+      "trajectory_sha256": "39882d7c781f5e2ffcdc0104e9e9f36b29ea9cd07faa4eeba8472fac6368244d"
+    },
+    {
+      "kind": "zero_same_tuning",
+      "execution_fees": 664,
+      "truth_purchases": 512,
+      "feedback_purchases": 0,
+      "model_score_sums": [
+        1049.544045176395,
+        1049.544045176395,
+        1049.544045176395
+      ],
+      "weighted_model_score_sum": 1049.544045176395,
+      "mixture_score_sum": 1049.5440451763952,
+      "small_loss_upper": 85252.83418355593,
+      "estimated_matching_regret": 131.50912876338663,
+      "estimated_matching_bound": 709.4781031192996,
+      "max_eta_estimated_matching_loss": 0.05466595983795941,
+      "finite_mean_checks": 80,
+      "validation_world_reads": 1248,
+      "gamma": 0.14539226694455581,
+      "eta": 0.0036348066736138955,
+      "B": 37844.90076750081,
+      "final_model_logweights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": {
+        "mixture_coins": 512,
+        "uniform_coins": 75,
+        "uniform_partition_additions": 5,
+        "feedback_estimates": 0,
+        "nonzero_updates": 0,
+        "event_probability_evaluations": 0,
+        "model_score_terms": 0,
+        "model_exponentials": 0,
+        "model_predictions": 0
+      },
+      "matrix_counts": {
+        "matrix_products": 7749,
+        "updates": 512,
+        "suffix_queries": 874,
+        "coin_choices": 437,
+        "interval_queries": 2048
+      },
+      "trajectory_sha256": "2d3fb99502983ebfecf551549a13de6a1eb34f71c738afe2a1fe342563aa3f49"
+    }
+  ],
+  "hashes": {
+    "model_probe.py": "72debb51978dc2d1c3b512d2aebc971f9e468ad7d30f865e55bd2cbb85eca158",
+    "free_core.py": "b32c113eadcecb67cf2a74abb482ae6e498b18d099810ad7ea9856a2768f06d7",
+    "matching_core.py": "898279febb513518ab02ec26fc07fdfba7e2c91aa31614d5f54930351ef84c6c",
+    "local_service.py": "a26c2f09edb9a40e4d48d5d1ab629bc772038bb027c4b4b8bc7ff7da52b55487"
+  },
+  "scope": "Joint-update and purchase-boundary screen; floats checked with declared tolerances, not formal arithmetic. Observed score inequalities do not certify realized expected regret. Compute unpriced; no broad service advantage."
+}
