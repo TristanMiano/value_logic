@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\policy_flow.py", line 168, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\policy_flow.py", line 161, in main
+    result=case(args.case);result['source_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\policy_flow.py", line 147, in case
+    if not add(worst):status='stalled_existing_response';break
+           ~~~^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\policy_flow.py", line 118, in add
+    scenarios.append({'means':mu,'optimum':opt,'cost':source_cost(src,mu,w,f,q,arch)})
+                                                      ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\policy_flow.py", line 56, in source_cost
+    for i,x in enumerate(z+tuple(row)):moments[i]+=p*x
+                                       ~~~~~~~^^^
+TypeError: 'list_iterator' object does not support item assignment

@@ -1,0 +1,16 @@
+Exception ignored in: <generator object satisfies.<locals>.<genexpr>.<genexpr> at 0x000002091DFF2140>
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\cnf_repair.py", line 17, in <genexpr>
+    return all(any(bool(mask&(1<<(abs(lit)-1)))==(lit>0) for lit in clause) for clause in clauses)
+ValueError: generator already executing
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\cnf_select.py", line 52, in <module>
+    a=p.parse_args();result=case(a.case)
+                            ~~~~^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\cnf_select.py", line 38, in case
+    arms=[run_arm(source,worlds,masks,histories,reuse) for reuse in (False,True)]
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s11\cnf_repair.py", line 74, in run_arm
+    assert satisfies(counter,clauses) and consistent(counter,h)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

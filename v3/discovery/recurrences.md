@@ -1,11 +1,11 @@
 # C001 recurrence progress
 
 Requested by **Tristan Miano**. Current maintenance: **Codex (GPT-6)**; earlier attributions preserved.
-This is the single chronological recurrence table: **20 recorded rows, ending
-with s10**. Append each future recurrence to this same table.
+This is the single chronological recurrence table: **21 recorded rows, ending
+with s11**. Append each future recurrence to this same table.
 
-**C001 OPEN · 858 cumulative research minutes · latest promotion forecast:
-20–45%, central 30%.** Minutes are rounded independently from exact nanoseconds;
+**C001 OPEN · 1098 cumulative research minutes · F01 forecast carried from
+October 14: 20–45%, central 30%; new mathematical targets UNASSESSED.** Minutes are rounded independently from exact nanoseconds;
 the [source record](recurrences.json) retains the exact clocks, measurements,
 scopes and forecast history. This layout repair adds no research time.
 
@@ -14,7 +14,7 @@ that historical boundary; original reasons are retained in JSON. **Carried**
 means the latest recorded value is shown without a new measurement, with its
 age in recorded boundaries. **First** means the first recurrence measurement
 for that scope. Earlier forecasts are historical assessments; the latest
-assessment is in the final row. The 80-request and S28 16-request duties have
+dated assessment is carried explicitly in the final row when not reassessed. The 80-request and S28 16-request duties have
 separate labeled cells because their measurements are not interchangeable. Audit-fee and
 counted-computation comparisons now have visible columns. These are scoped
 components, not complete economic cost or elapsed runtime. Percent changes use
@@ -43,6 +43,7 @@ implementation is shown explicitly even when it ties.
 | **[s07 hourly round](s07/cp01.md)** | **60** | **497** | **30 (+2)** | S28 a03, 16 outputs; Oct 12 | 14 audits / 14 audit-first; monetary tariff not established | 2,306,193 / 485,066 audit-first; **4.7544×** | Audit-first uses fewer named units; same 14 audits and 14 complete calls | Transport: 144/272 (52.94%); carried, age 12<br>Broad: 254/272 (93.38%); carried, age 12<br>Targeted: 258/272 (94.85%); carried, age 12 | Outputs: 80/80 (100%); carried, age 1<br>Cache: 60/80 (75%); carried, age 1<br>Action cost: 223; carried, age 1 | Outputs: **16/16**; first<br>Plans: **11/11**; first<br>Quotes: **1,718,749**; first<br>Ratio: **4.7544×**; first | **0**; first | **F01: 20–45%, central 30%**; first assessed recurrence; −5 pp within s07 | Complete plans rose from 0/11 to 11/11 and a02-to-a03 quotation work fell 38.57%; the latest arm bought 14 audits and 14 complete calls, with no native-IHS calls. Its named bill remains above audit-first; S29/S30 add separate constructive directions. |
 | [s08 cp01](s08/cp01.md) | 240 | 738 | 33 (+3) | **bc02:** 512 outputs/arm, 4 fresh streams<br>**gc02:** 768 outputs/arm, 12 graphs; Oct 14 | **bc02: 2,886 vs 4,608 fallback; −37.37%**<br>gc02: 33,448 vs 35,584 fallback; −6.00% | **bc02: 137,310 vs 152,022 fallback; −9.68%**<br>gc02: 4,640,221 vs 378,534 fallback; **+1,125.84%** | **Identical ordinary controllers tie both metrics.** bc02 vs ordinary greedy cover: fee −1.74%, computation −12.79% | Transport: 144/272; carried, age13<br>Broad: 254/272; carried, age13<br>Targeted: 258/272; carried, age13 | Outputs: 80/80; carried, age2<br>Cache: 60/80; carried, age2<br>Action cost: 223; carried, age2 | Outputs: 16/16; carried, age1<br>Plans: 11/11; carried, age1<br>Quotes: 1,718,749; carried, age1<br>Ratio: 4.7544×; carried, age1 | 0; carried, age1 | **20–45%, central30%; Δ0 pp** | Four-hour override. bc02 improves both recorded components against fallback; gc02 saves fees with much higher computation. The failed gc02 scan adds 6,595 fee and ≥18,576,219 named units outside these completed-arm comparisons. Matroid/group queries and six scalar proofs extend capability. No F01 rerun or promotion. |
 | **[s10 cp01](s10/checkpoint.md)** | **120** | **858** | **35 (+2)** | **sf01:** 3,584 outputs/arm/stratum, 28 sources ×128; Oct14<br>Unit compilation:39 sources; conditioning:168 patches | **Near target:31,010 vs72,320 full audit; −57.12%**<br>Fixed18:66,991 vs72,320; −7.37% | **Near target:14,586,157 vs16,123,044; −9.53%**<br>Fixed18:15,857,399 vs16,123,044; −1.65%<br>Source compilation−90.15%; six-patch reuse−69.61% | **Ordinary scalar prefix ties.** Near target exact threshold:9,657 fees/19,261,900 units; scalar threshold:32,302/14,453,502 | 144/272;254/272;258/272; carried, age14 | 80/80;60/80;223; carried, age3 | 16/16;11/11;1,718,749;4.7544×; carried, age2 | 0; carried, age2 | **20–45%, central30%; Δ0 pp** | Two-hour override. Cheaper checked sources, response/source reuse, paid scalar policy, learning/reserve stress tests and sharp dependence bounds. Setup repayment at28/88 observed requests per source; broad full-cost claim remains open. |
+| **[s11 four-hour round](s11/checkpoint.md)** | **240** | **1098** | **35 (0)** | **Learning:** four exposed streams ×2000 rounds; **repair:** six inherited CNFs; Oct16 UTC | **Local 940,053 vs full 1,047,247; −10.24%**<br>Feedback only 4,999 vs112,193; −95.54%<br>Free 938,744; bandit0 **937,656** | Local/full both **2,008,402 matrix products**; free1,658,916, with different other operations. Complete computation change unknown.<br>s10 near-target −9.53% carried, age1 | **Bandit0 beats local/free fees. Identical repair optimizers tie.** Local +0.256%, free +0.116% vs bandit0 | 144/272;254/272;258/272; carried, age15 | 80/80;60/80;223; carried, age4 | 16/16;11/11;1,718,749;4.7544×; carried, age3 | 0; carried, age3 | **F01 Oct14 carry:20–45%, central30%; age1. R11-M/I11-M unassessed** | **Certified-repair regret ≥46.01% / ≥56.50% lower than an equally querying static-menu class on two of six CNFs.** Three zero ties; one predictive-only gain. Invoice span, misspecification and same-instance composition results. 16-hour portfolio review complete; no promotion. |
 
 ## Resource columns: scope and evidence
 
@@ -192,3 +193,21 @@ fee/computation tradeoffs. The source compiler comparison is against the prior
 branching compiler, and conditioning amortizes one parent over six patches.
 Neither percentage is native runtime or an economic tariff. [F01](s10/forecast_final.md)
 remains20–45%, central30%, change0 points. No candidate is promoted.
+
+## s11 scope and relevant gains
+
+[Metrics and source hashes](s11/progress_metrics.json) preserve the four-stream
+fee totals and partial counters. The local/full trajectories are identical;
+local observation purchases are cheaper. Bandit0 has lower total fees than
+both local and free learning, and the ordinary path learner costs 944395.
+No complete computation improvement is claimed. The s10 near-target result is
+a dated carry at age one, not a new measurement on these streams.
+
+The [repair comparison](s11/cnf_results.md) concerns minimax regret with query
+fees and certified edits. Its static-menu comparator can query but cannot add
+newly certified masks. Two of six cases benefit from that capability; a third
+benefits from prediction alone, and three have zero regret already. It is not
+a superiority claim over the identical ordinary optimizer or a complete-cost
+comparison. [Invoice results](s11/invoice_information.md) and
+[composition](s11/invoice_composition.md) are mathematical deltas, not empirical
+fee percentages. [Assessment](s11/scientific_assessment.md) separates each claim.

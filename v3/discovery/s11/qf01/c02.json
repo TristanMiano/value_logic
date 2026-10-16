@@ -1,0 +1,117 @@
+{
+  "index": 2,
+  "m": 5,
+  "r": 1,
+  "horizon": 4,
+  "source_entries": 10,
+  "full_joint_slots": 32,
+  "compact_value": "-59/16",
+  "root_action": [
+    "query",
+    0
+  ],
+  "plan": {
+    "?:4": {
+      "value": "-59/16",
+      "action": [
+        "query",
+        0
+      ]
+    },
+    "-:3": {
+      "value": "-21/16",
+      "action": [
+        "terminal_1",
+        [
+          3,
+          2,
+          4
+        ]
+      ]
+    },
+    "+:3": {
+      "value": "-39/16",
+      "action": [
+        "terminal_1",
+        [
+          0,
+          3,
+          4
+        ]
+      ]
+    }
+  },
+  "compact_work": {
+    "contexts": 3,
+    "source_rows_read": 6,
+    "moment_terms_added": 20,
+    "stop_options": 3,
+    "query_options": 1,
+    "flip_keys_sorted": 15
+  },
+  "compact_elapsed_ns": 147400,
+  "full_comparisons": [
+    {
+      "dependence": "conditional_independent",
+      "nonzero_worlds": 16,
+      "value": "-59/16",
+      "work": {
+        "states": 112,
+        "world_visits": 48,
+        "flip_options": 330,
+        "query_options": 32
+      }
+    },
+    {
+      "dependence": "common_uniform",
+      "nonzero_worlds": 6,
+      "value": "-59/16",
+      "work": {
+        "states": 112,
+        "world_visits": 18,
+        "flip_options": 330,
+        "query_options": 32
+      }
+    }
+  ],
+  "ordinary_equivalent": "exact value, chosen plan and counted work tie",
+  "source": {
+    "mass": [
+      "1/4",
+      "3/4"
+    ],
+    "thresholds": [
+      [
+        5,
+        2,
+        8,
+        2
+      ],
+      [
+        6,
+        4,
+        6,
+        0
+      ]
+    ],
+    "weights": [
+      "2",
+      "-1",
+      "-2",
+      "3",
+      "-1"
+    ],
+    "flip_fees": [
+      "1/2",
+      "1",
+      "1/4",
+      "1",
+      "1/4"
+    ],
+    "query_fees": [
+      "1/16"
+    ]
+  },
+  "limitations": "Supplied compact value source; no sample-learning or full economic-cost claim. Full-joint large comparator is a slot count, not an executed allocation.",
+  "source_sha256": "0a7a46d9ae9b7c0e2606cd970a8b0e67456b186a4864a615a793f59a23ae8dd3"
+}
