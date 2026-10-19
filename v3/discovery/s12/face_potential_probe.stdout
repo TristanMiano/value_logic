@@ -1,0 +1,62 @@
+{
+  "status": "COMPLETED",
+  "scope": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "elapsed_ns": 6383629400,
+  "hashes": {
+    "face_potential_probe.py": "9dddb809ddcd842eab9bd4b35bd51264d5f8ed7fb1bffd26bf4ce919449bbec7",
+    "parity_price_probe.py": "6f6a63153a4a191a3c50bf72a7421d77f9cc0b0e05b1d47d48550a9a032f2f80"
+  },
+  "results": [
+    {
+      "n": 3,
+      "status": "no_counterexample_in_enumerated_panel",
+      "checks": 20952,
+      "full_cube_potential": 30,
+      "programs": 100
+    },
+    {
+      "n": 4,
+      "status": "counterexample",
+      "checks": 14632490,
+      "source_mask": 16383,
+      "source_worlds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "lhs": 63,
+      "rhs": 61,
+      "groups": [
+        {
+          "cost": 1,
+          "mask": 5461,
+          "potential": 21
+        },
+        {
+          "cost": 2,
+          "mask": 170,
+          "potential": 10
+        },
+        {
+          "cost": 3,
+          "mask": 10752,
+          "potential": 6
+        }
+      ]
+    }
+  ],
+  "limitations": "Tests the displayed Bellman potential only; a counterexample rejects that proof route, not the prefix construction."
+}

@@ -1,5 +1,7 @@
 # Phase-three claims and obligations
 
+**Latest pointer — October 19, 2026 UTC, Codex (GPT-6):** [s12 assessment](discovery/s12/scientific_assessment.md), [targets](discovery/s12/verification_targets.md). P3-POS01 OUTSTANDING; no promotion. Earlier dated entries retain their scope.
+
 **Current pointer — October 15, 2026, Codex (GPT-6):** [s11 assessment](discovery/s11/scientific_assessment.md) and [claim-specific targets](discovery/s11/verification_targets.md). P3-POS01 OUTSTANDING; no promotion. Earlier dated entries below retain their scope.
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Updated October 12, 2026 UTC.
@@ -919,3 +921,22 @@ R11-M and I11-M are proposed mathematical verification targets with UNASSESSED
 readiness. The October 14 F01/S28-B1/V1 forecast is carried, not reassessed.
 These developments support continued search for a useful, moderately novel
 contribution; they do not establish priority or satisfy P3-POS01 yet.
+
+## s12 broad discovery closure — October 19, 2026 UTC
+
+Contributor: **Codex (GPT-6)**. DEVELOPMENT, same-model arguments and screens;
+no independent confirmation, candidate promotion or P3-POS01 completion.
+
+| Object / type | Explicit delta and magnitude | Comparison and limits | Evidence |
+| --- | --- | --- | --- |
+| Task-scoped permission service / mechanism and representation | Complete local action compiler, exact binary receipt/lineage reuse, weaker task and joint-model adequacy | Models can all be globally false; actual coverage of the declared envelope remains a premise. Ordinary forgetting, abstraction and regression underlie the construction; novelty and full-service cost unassessed. | [Service](discovery/s12/scoped_service.md), [joint event](discovery/s12/union_adequacy.md) |
+| Ordered/temporal reuse / algorithmic adapter | Exact interval pruning; O(n) per unary bound and O(1) requested difference after preparation | Median closure and fixed reference required; nonconvex counterexample; established temporal closure, no implementation-priority claim | [Ordered](discovery/s12/ordered_sources.md), [temporal](discovery/s12/temporal_receipts.md) |
+| Invoice acquisition / mathematical and finite-count reduction | Cap-two private choices1,769,400 vs7,470,800 (−76.3158%), same632,040 states; exact hard-price/readout/source bounds | No separate runtime or complete-cost reduction; ordinary oriented tests are identical | [Cap two](discovery/s12/cap_two.md), [source](discovery/s12/transcript_sources.md), [metrics](discovery/s12/progress_metrics.json) |
+| Variable invoice acquisition / constructed resource comparison | n100/cap4 query bill−8.1458% at zero reset/coin price; query/reset−3.0612% at reset1/4, coin0 | Shared-coin ordinary control erases4/12 earlier gains; controller/preparation excluded; equivalent routines tie; all-size expected optimum open | [Randomness](discovery/s12/randomness_price.md), [five-bit result](discovery/s12/prefix_complete.json), [metadata correction](discovery/s12/prefix_complete_disposition.md) |
+| Reliability and model repair / scoped guarantees and boundaries | Sharp support/coherence/cut bounds; all optimal repairs retained; exact tolerance margins | Supplied premises and calibration costs; ordinary PSAT/codes/cuts/min-marginals; integral audits and per-task model selection defeat easy superiority claims | [Assessment](discovery/s12/scientific_assessment.md), [repair](discovery/s12/repair_margins.md), [audits](discovery/s12/audit_integrality.md) |
+
+R12-S/I12-M/E12-R and earlier R11-M/I11-M are UNASSESSED at their full
+contribution events. F01 is an unchanged dated October14 carry. The exact
+session/program/phase research nanoseconds are14,422,390,000,000 /
+80,282,330,241,147 /145,450,212,282,996. See [checkpoint](discovery/s12/checkpoint.md),
+[targets](discovery/s12/verification_targets.md) and [single progress table](discovery/recurrences.md).

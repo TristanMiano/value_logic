@@ -1,0 +1,83 @@
+{
+  "status": "COMPLETED",
+  "scope": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "elapsed_ns": 46147343800,
+  "hashes": {
+    "reachable_probe.py": "48647c371f7108a533428e5e9e305bed07724249dc3e5bc68fde5926304bd404",
+    "parity_price_probe.py": "6f6a63153a4a191a3c50bf72a7421d77f9cc0b0e05b1d47d48550a9a032f2f80"
+  },
+  "results": [
+    {
+      "n": 3,
+      "status": "no_counterexample_in_enumerated_panel",
+      "states": 166,
+      "checks": 12504,
+      "programs": 100,
+      "full_cube_potential": 30,
+      "elapsed_ns": 5914200
+    },
+    {
+      "n": 4,
+      "status": "no_counterexample_in_enumerated_panel",
+      "states": 4170,
+      "checks": 844428,
+      "programs": 232,
+      "full_cube_potential": 78,
+      "elapsed_ns": 384039100
+    },
+    {
+      "n": 5,
+      "status": "reachable_counterexample",
+      "states": 224716,
+      "checks": 93752110,
+      "source_mask": 4144959,
+      "lhs": 83,
+      "rhs": 81,
+      "source_worlds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "groups": [
+        {
+          "cost": 1,
+          "mask": 1381653,
+          "potential": 28
+        },
+        {
+          "cost": 2,
+          "mask": 10794,
+          "potential": 17
+        },
+        {
+          "cost": 3,
+          "mask": 2752512,
+          "potential": 6
+        }
+      ],
+      "elapsed_ns": 45751348500
+    }
+  ],
+  "limits": {
+    "max_sources": 300000,
+    "seconds_per_panel": 55
+  },
+  "limitations": "Finite screening of reachable source characterization and a candidate lower bound. Counterexamples reject the proposed potential; they do not refute the prefix upper bound or prove a better full-cube policy."
+}

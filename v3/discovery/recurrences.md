@@ -1,10 +1,10 @@
 # C001 recurrence progress
 
 Requested by **Tristan Miano**. Current maintenance: **Codex (GPT-6)**; earlier attributions preserved.
-This is the single chronological recurrence table: **21 recorded rows, ending
-with s11**. Append each future recurrence to this same table.
+This is the single chronological recurrence table: **22 recorded rows, ending
+with s12**. Append each future recurrence to this same table.
 
-**C001 OPEN · 1098 cumulative research minutes · F01 forecast carried from
+**C001 OPEN · 1338 cumulative research minutes · F01 forecast carried from
 October 14: 20–45%, central 30%; new mathematical targets UNASSESSED.** Minutes are rounded independently from exact nanoseconds;
 the [source record](recurrences.json) retains the exact clocks, measurements,
 scopes and forecast history. This layout repair adds no research time.
@@ -21,7 +21,7 @@ components, not complete economic cost or elapsed runtime. Percent changes use
 (candidate − comparator) / comparator; negative is a saving. The same ordinary
 implementation is shown explicitly even when it ties.
 
-| Recurrence / recorded boundary | Research min | Cumulative min | Families (Δ) | Resource comparison scope | Audit fees | Counted computation | Ordinary-method comparison | 272 edits: transport / broad / targeted | 80 requests: outputs / cache / action cost | S28: outputs / plans / quotation / bill ratio | F01: ≥10% full-cost regions | Promotion forecast (80% minimum) | What changed |
+| Recurrence / recorded boundary | Research min | Cumulative min | Families (Δ) | Resource comparison scope | Audit / acquisition fees | Counted computation | Ordinary-method comparison | 272 edits: transport / broad / targeted | 80 requests: outputs / cache / action cost | S28: outputs / plans / quotation / bill ratio | F01: ≥10% full-cost regions | Promotion forecast (80% minimum) | What changed |
 | --- | ---: | ---: | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [s01 checkpoint](s01/checkpoint.md) | 21 | 21 | 6 (+6) | — | — | — | See scoped finding | — | — | — | — | Not assessed then | Opened six lines of inquiry and built exact coupled comparisons of computation policies, alongside decision-region and noisy-value mechanisms. |
 | [s02 cp01](s02/checkpoint.md) | 17 | 38 | 7 (+1) | — | — | — | See scoped finding | — | — | — | — | Not assessed then | Added reusable SAT evidence under explicit source edits and a lazy witness library. Simpler conventional comparisons narrowed the earlier policy-comparison claim. |
@@ -44,6 +44,7 @@ implementation is shown explicitly even when it ties.
 | [s08 cp01](s08/cp01.md) | 240 | 738 | 33 (+3) | **bc02:** 512 outputs/arm, 4 fresh streams<br>**gc02:** 768 outputs/arm, 12 graphs; Oct 14 | **bc02: 2,886 vs 4,608 fallback; −37.37%**<br>gc02: 33,448 vs 35,584 fallback; −6.00% | **bc02: 137,310 vs 152,022 fallback; −9.68%**<br>gc02: 4,640,221 vs 378,534 fallback; **+1,125.84%** | **Identical ordinary controllers tie both metrics.** bc02 vs ordinary greedy cover: fee −1.74%, computation −12.79% | Transport: 144/272; carried, age13<br>Broad: 254/272; carried, age13<br>Targeted: 258/272; carried, age13 | Outputs: 80/80; carried, age2<br>Cache: 60/80; carried, age2<br>Action cost: 223; carried, age2 | Outputs: 16/16; carried, age1<br>Plans: 11/11; carried, age1<br>Quotes: 1,718,749; carried, age1<br>Ratio: 4.7544×; carried, age1 | 0; carried, age1 | **20–45%, central30%; Δ0 pp** | Four-hour override. bc02 improves both recorded components against fallback; gc02 saves fees with much higher computation. The failed gc02 scan adds 6,595 fee and ≥18,576,219 named units outside these completed-arm comparisons. Matroid/group queries and six scalar proofs extend capability. No F01 rerun or promotion. |
 | **[s10 cp01](s10/checkpoint.md)** | **120** | **858** | **35 (+2)** | **sf01:** 3,584 outputs/arm/stratum, 28 sources ×128; Oct14<br>Unit compilation:39 sources; conditioning:168 patches | **Near target:31,010 vs72,320 full audit; −57.12%**<br>Fixed18:66,991 vs72,320; −7.37% | **Near target:14,586,157 vs16,123,044; −9.53%**<br>Fixed18:15,857,399 vs16,123,044; −1.65%<br>Source compilation−90.15%; six-patch reuse−69.61% | **Ordinary scalar prefix ties.** Near target exact threshold:9,657 fees/19,261,900 units; scalar threshold:32,302/14,453,502 | 144/272;254/272;258/272; carried, age14 | 80/80;60/80;223; carried, age3 | 16/16;11/11;1,718,749;4.7544×; carried, age2 | 0; carried, age2 | **20–45%, central30%; Δ0 pp** | Two-hour override. Cheaper checked sources, response/source reuse, paid scalar policy, learning/reserve stress tests and sharp dependence bounds. Setup repayment at28/88 observed requests per source; broad full-cost claim remains open. |
 | **[s11 four-hour round](s11/checkpoint.md)** | **240** | **1098** | **35 (0)** | **Learning:** four exposed streams ×2000 rounds; **repair:** six inherited CNFs; Oct16 UTC | **Local 940,053 vs full 1,047,247; −10.24%**<br>Feedback only 4,999 vs112,193; −95.54%<br>Free 938,744; bandit0 **937,656** | Local/full both **2,008,402 matrix products**; free1,658,916, with different other operations. Complete computation change unknown.<br>s10 near-target −9.53% carried, age1 | **Bandit0 beats local/free fees. Identical repair optimizers tie.** Local +0.256%, free +0.116% vs bandit0 | 144/272;254/272;258/272; carried, age15 | 80/80;60/80;223; carried, age4 | 16/16;11/11;1,718,749;4.7544×; carried, age3 | 0; carried, age3 | **F01 Oct14 carry:20–45%, central30%; age1. R11-M/I11-M unassessed** | **Certified-repair regret ≥46.01% / ≥56.50% lower than an equally querying static-menu class on two of six CNFs.** Three zero ties; one predictive-only gain. Invoice span, misspecification and same-instance composition results. 16-hour portfolio review complete; no promotion. |
+| **[s12 four-hour round](s12/checkpoint.md)** | **240** | **1338** | **35 (0)** | Exact constructed invoice bills; finite cap-two search; scoped mathematical services; Oct19 UTC | **Constructed query −8.1458%; query/reset −3.0612%** at n100, H4, stated zero coin price. No new measured audit saving. s10 near-target audit **−57.12% carried, age2** | **1,769,400 vs 7,470,800 choices: −76.3158%**, same632,040 states; no separate runtime or complete-cost saving. s10 named work −9.53% carried, age2 | **Identical ordinary routines tie.** Shared-coin control erases4/12 earlier gains; per-task model selection matches marginal ensemble bound | 144/272;254/272;258/272; carried, age16 | 80/80;60/80;223; carried, age5 | 16/16;11/11;1,718,749;4.7544×; carried, age4 | 0; carried, age4 | **F01 Oct14 carry20–45%, central30%; age2. R12-S/I12-M/E12-R UNASSESSED** | **Task and joint-model adequacy can support edits even when all full models are false.** Exact receipt/lineage reuse; median/temporal extension; invoice source/readout/prices; five-bit optimum97/16. No promotion. |
 
 ## Resource columns: scope and evidence
 
@@ -211,3 +212,20 @@ a superiority claim over the identical ordinary optimizer or a complete-cost
 comparison. [Invoice results](s11/invoice_information.md) and
 [composition](s11/invoice_composition.md) are mathematical deltas, not empirical
 fee percentages. [Assessment](s11/scientific_assessment.md) separates each claim.
+
+## s12 scope and relevant gains
+
+[Metrics](s12/progress_metrics.json) distinguish constructed acquisition bills,
+one named search-operation count and historical audit measurements. The cap-two
+arms share 632,040 states; no separate wall-time reduction was measured. The
+noisy-readout example's 89.7406% lower worst fee is also a constructed comparison
+under one sufficient precision bound, not an application result. Ordinary
+implementations tie. Stronger shared randomness erases four of twelve earlier
+gains and positive random-choice prices can erase the remaining advantage.
+
+[Task adequacy](s12/task_adequacy.md), [joint models](s12/union_adequacy.md),
+[reuse](s12/scoped_service.md) and [temporal constraints](s12/temporal_receipts.md)
+are explicit mathematical/capability deltas. The envelope is an ordinary
+closure-based abstraction; contribution novelty and economical deployment
+remain unassessed. [Assessment](s12/scientific_assessment.md) retains strong
+ordinary controls and cheap rejections. All earlier rows and their dates remain.
