@@ -7,10 +7,10 @@ b815009c1fcc458b85bd83129f2ab23c554e65eb. PR13 was already merged and its
 remote branch removed before s12 began. The separate s09 transfer branch and
 historical scientific records are preserved.
 
-Current status: preparing repository checks and a reviewable branch/PR.
-No s12 merge is claimed. Final check results and publication references will
-be appended after they are observed. No author research credit is assigned
-to these steps, and publication does not close C001 or P3-POS01.
+Current status: published in [PR14](https://github.com/TristanMiano/value_logic/pull/14),
+open against main and attached to the Codex chat. No s12 merge is claimed.
+No author research credit is assigned to publication, and publication does
+not close C001 or P3-POS01.
 
 ## Observed local validation
 
@@ -40,3 +40,21 @@ The GitHub connector reports its metadata tool unavailable despite discovery.
 Normal Git transport and GitHub's authenticated API are the publication fallback;
 credentials are handled in memory and are not included in logs or artifacts.
 Linux CI status will be reported separately from local failures.
+
+## Publication receipt
+
+Research commit **a7073b93883a0959ca524ed93354b08d63243e68** was pushed to
+codex/discovery-20261018-s12. PR14's creation response reports that exact head.
+The [creation response](pub/pr_created.json) and [initial workflow snapshot](pub/ci_initial.json)
+are retained. Linux finite verification, mathematical Markdown and Linux/Windows
+checkout workflows started; that snapshot is pending, not a success claim.
+
+This publication-receipt commit follows the research commit. Recover the exact
+latest head from Git/PR14 and inspect its live checks rather than treating the
+earlier SHA or initial CI snapshot as final. Subsequent observed CI outcomes
+are reported in the chat/PR checks. The earlier PR13 merge and removed remote
+branch were independently rechecked in [prior_pr.json](pub/prior_pr.json).
+The local checkout and remote branch are verified after the receipt push.
+
+This is the useful handoff for s12. No active research clock, automatic next
+session, scheduled automation change, merge or author promotion follows.
