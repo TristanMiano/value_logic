@@ -4,29 +4,27 @@ Initial research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
 No candidate is promoted. The current event-specific forecast is recorded below;
 earlier unassessed entries retain their dated historical scope.
 
-**Current continuation — October 15, 2026, Codex (GPT-6):**
-[s11 checkpoint](s11/checkpoint.md), [findings](s11/findings.md),
-[exact actuals](s11/effective_actuals.json), [single recurrence table](recurrences.md).
-The four-hour increment is CLOSED: 240.069234431666666… research minutes;
-C001/program is 1097.665670685783333… and phase 2183.797038049933333….
-The effective clock is closed; the first dead runtime's raw open record is
-preserved with zero credit for its unclosed interval. Default next session is
-60 minutes, with explicit author overrides taking precedence.
+**Current continuation — October 19, 2026 UTC, Codex (GPT-6):**
+[s12 checkpoint](s12/checkpoint.md), [findings](s12/findings.md),
+[exact actuals](s12/effective_actuals.json), [single recurrence table](recurrences.md).
+The fresh four-hour increment is CLOSED: 240.373166666666666… research minutes;
+C001/program is 1338.03883735245 and phase 2424.1702047166 minutes.
+159 closed intervals in one runtime; seven interrupted research intervals and
+explicit context/recovery intervals excluded. No active research clock remains.
 
 **C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no candidate promoted.**
-[F01](s11/forecast_final.md) carries its October 14 assessment: 20–45%, central
-30%, without reassessment. Repair and invoice mathematical targets are
-UNASSESSED. The 35 numbered families are unchanged; s11 develops connections
-among S01/S04/S05/S06/S11/S31 rather than counting each variant as a new family.
-Queries can enable certified edits; two of six exposed CNFs reduce minimax
-regret by at least 46.0078% / 56.5029% against an equally querying static-menu
-class. Exact ordinary realizations tie. Local feedback saves fees against full
-feedback, but the ordinary bandit has the lowest total fees on the four streams.
-Invoice information, source sensitivity and repeated-instance composition add
-separate mathematical mechanisms. All are DEVELOPMENT. Read the
-[scientific assessment](s11/scientific_assessment.md) and
-[sixteen-hour portfolio review](s11/portfolio16.md), then use
-[CONTINUE](CONTINUE.md) for broad discovery. Earlier dated records retain their scope.
+The 35-family count is unchanged: s12 develops connections and adapters.
+Task-scoped permissions can survive globally false models, with an explicit
+joint-model adequacy extension, exact receipt/lineage reuse and a temporal
+adapter. Cap-two reduction cuts one named search count by 76.3158%; constructed
+invoice fees improve in some stated regimes. Ordinary realizations tie and
+stronger ordinary controls erase or constrain several apparent gains.
+See the [assessment](s12/scientific_assessment.md) and
+[claim-specific targets](s12/verification_targets.md); those targets remain
+UNASSESSED. F01 carries its October 14 20–45%, central 30% assessment.
+Continue broad discovery under the useful, moderately novel contribution
+standard. The next session defaults to one hour unless explicitly overridden;
+no automatic session or automation starts. Earlier dated records retain scope.
 
 IDs S01 onward belong to this program, not separate clock commitments.
 

@@ -1,9 +1,10 @@
 # Portable next prompt: continuing discovery, default one hour
 
-Latest completed research: **s11**, Codex (GPT-6), October 15, 2026
-America/Los_Angeles / October 16 UTC. Its explicit **four-hour floor is complete**.
-Recover publication and branch state before starting any new clock. A context
-refresh does not create a new research commitment.
+Latest completed research: **s12**, Codex (GPT-6), October 19, 2026 UTC.
+The explicit **four-hour floor is complete**: 240.373166666666666… engaged
+research minutes. The runtime is closed. Inspect [publication](s12/publication.md)
+and remote state before starting a new clock; a context refresh does not
+create another commitment. No s12 merge is implied by this handoff.
 
 Please continue TristanMiano/value_logic for the requested engaged-research
 duration. The default is **one hour**; an explicit author duration overrides it
@@ -50,155 +51,129 @@ replace that comparison.
 
 ## Recover current state
 
-Use the actual checkout root. Inspect AGENTS.md, status, main, recent remote
-branches, [TODO](../../TODO_v3.md), [portfolio](candidates.md),
-[single progress table](recurrences.md), and the newest session records.
-Preserve unrelated work. Read relevant sources rather than the whole archive.
+Use the actual checkout root. Read AGENTS.md, status, main, remote branches,
+[TODO](../../TODO_v3.md), [portfolio](candidates.md), [single table](recurrences.md)
+and [s12 checkpoint](s12/checkpoint.md). Preserve unrelated local work and
+historical evidence. s12 began from main b815009c1fcc458b85bd83129f2ab23c554e65eb
+on codex/discovery-20261018-s12. PR13 was merged and its remote branch removed
+before this recurrence. Recheck the newer [publication record](s12/publication.md).
+The separate chatgpt/discovery-20261014-s09 transfer branch is not new research.
 
-The contribution-standard clarification was merged in
-[PR12](https://github.com/TristanMiano/value_logic/pull/12) at
-131f534c55cbd2b366074e255d4075e08e0b0933; its branch
-codex/contribution-standard-20261014 was deleted. This was documentation only.
-s11 starts from that main commit on **codex/discovery-20261015-s11**.
-Consult [publication](s11/publication.md) for its final commit/PR status, then
-recheck remote state. The separate chatgpt/discovery-20261014-s09 branch was
-last seen at 0c51f4795d988620b71e54a570f85a6d065ce361 with transfer workflow
-only; no scientific credit was inferred. Follow any newer authoritative record.
+Read [findings](s12/findings.md), [assessment](s12/scientific_assessment.md),
+[targets](s12/verification_targets.md), [failures](s12/failures.md) and relevant
+primary-source sections in [literature](s12/literature.md). Do not reread the
+whole archive or rerun expensive screens merely to refresh context.
+**C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no candidate promoted.**
+The count remains 35 numbered families; variants/search passes are not families.
 
-Read [s11 checkpoint](s11/checkpoint.md), [findings](s11/findings.md),
-[scientific assessment](s11/scientific_assessment.md),
-[interpretation](s11/interpretation.md) and [verification targets](s11/verification_targets.md).
-**C001 OPEN; its original floor is satisfied. P3-POS01 OUTSTANDING;
-P3-11 deferred. No candidate promoted.** The 35-family count is unchanged:
-s11 develops connections and extensions, not a new family per variant.
+## Closed clock and next-session accounting
 
-## Closed clock and fresh-session accounting
+s12: **14,422,390,000,000 ns =240.373166666666666… research minutes**.
+C001/program: **80,282,330,241,147 ns =1338.03883735245 minutes**.
+Phase: **145,450,212,282,996 ns =2424.1702047166 minutes**.
+[Effective actuals](s12/effective_actuals.json) and [reconciliation](s12/reconcile.py)
+check 159 closed intervals in one runtime. Seven interrupted research intervals
+are excluded in full, and explicit O/context intervals are excluded from total
+engagement. Research closed at2026-10-19T09:02:56.247919 UTC; runtime at
+09:02:56.323638. The raw actuals deliberately include replaced intervals.
 
-s11 adds **14,404,154,065,900 ns = 240.069234431666666… research minutes**.
-C001/program: **65,859,940,241,147 ns = 1097.665670685783333… minutes**.
-Phase: **131,027,822,282,996 ns = 2183.797038049933333… minutes**.
-[Effective actuals](s11/effective_actuals.json) and [reconciliation](s11/reconcile.py)
-check 143 closed segments across two runtimes, six complete context exclusions,
-and zero credit for the dead runtime's final open interval. Its raw active
-actuals are deliberately preserved; they do not mean research remains active.
-Research ended 2026-10-16T04:31:32.823678 UTC, second runtime closed
-04:31:33.129541. The first runtime exited after an invalid O/X command;
-do not attribute that known command error to the CPU.
+A newly authorized session needs a fresh scope, D/L/E/O forecasts and observed
+UTC/monotonic boundaries. Mark mode changes and at least every15 active minutes.
+Subtract only within one runtime. Count engaged D/L/E once; exclude installation,
+publication, context recovery, waits and unknown intervals. Earlier surplus
+pays none of a fresh commitment. Do not infer time from output size or pad work.
+The unstable-host note permits unchanged retries: preserve all failed outputs,
+additional purchases and unknown costs without assuming a hardware cause.
 
-A new authorized session needs a fresh prospective scope, D/L/E/O forecasts
-and observed UTC/monotonic boundaries. Mark mode changes and at least every
-15 active minutes. Subtract only within one runtime. Count engaged D/L/E once;
-exclude installation, publication, refreshes, waits, recovery and unknown open
-intervals. No previous surplus pays a fresh session commitment. Do not infer
-time from output size or pad work. The user permits unchanged retries after
-apparently stochastic failures on this unstable host; preserve all failures,
-additional purchases and unknown costs. Success does not establish the cause.
+s12 purpose shares:74.96% generation/development,19.42% cheap screening,5.61%
+synthesis. Lanes89.14% X/10.86% R are same-model work, not independent review.
+The 16-program-hour portfolio review is complete; next horizons40/100 hours.
+The program currently has about22.30 hours. No automatic new recurrence follows.
 
-s11 purpose actuals: 85.53% generation/development, 8.86% cheap screening,
-5.60% synthesis. Raw lanes: 91.38% X, 8.62% R; same-model finite checks are
-not independent confirmation. The [16-program-hour review](s11/portfolio16.md)
-is complete. Next deeper review horizons are 40 and 100 program hours.
+## Current constructive options and their ordinary comparisons
 
-## Promising directions and boundaries
+**Task-scoped reliance and safe operations.** [Permission compilation](s12/permission_compiler.md)
+uses local source projections; [binary receipt reuse](s12/receipt_width.md) and
+[lineage](s12/lineage.md) support exact updates through restricted edits.
+[Task adequacy](s12/task_adequacy.md) requires only the observable/target
+projections to be right. [Joint-model adequacy](s12/union_adequacy.md) can hold
+when all full models and individual envelopes fail. It is ordinary abstract
+join, not a new algebra; ordinary per-task model selection matches the simple
+marginal-error bound. [The service](s12/scoped_service.md) has charged preparation
+and an explicit post-preparation work bound; its complete execution and useful
+closest-prior delta remain unassessed. Physical adequacy/calibration is not free.
 
-**Certified repair.** Queries can enable edit masks that are certified for
-every source world compatible with the observations. The comparator obeys the
-same certification interface even when a point law is supplied. Query fees
-enter regret; source preparation remains separate. Compact chain optimization,
-an exact branching example and a proposed bounded-treewidth adapter retain one
-globally compatible source and a pathwise action cap.
-[Construction](s11/safe_revision.md), [prior comparison](s11/repair_prior.md),
-[structured extension](s11/structured_repair.md), [star witness](s11/star_example.md).
+**Broader representations and counterfactuals.** [Median sources](s12/ordered_sources.md)
+allow exact interval pruning; [temporal constraints](s12/temporal_receipts.md)
+have O(n) per unary bound and O(1) requested differences after paid closure.
+[Endpoint adequacy](s12/temporal_adequacy.md) gives a concrete edit with false
+intermediate model claims. Nonconvex observations invalidate the shortcut.
+[Optimal repair sources](s12/optimal_repair_source.md) and
+[min-marginal tolerances](s12/repair_margins.md) use established cuts; positive
+slack destroys the optimal binary update rule. No causal-control claim follows.
 
-On six inherited CNFs, two show at least **46.0078% / 56.5029%** lower regret
-than an equally querying static-menu class; a third improves only through
-prediction, and three already tie at zero. The exact ordinary optimizer ties.
-These are exposed development cases, not new truth purchases or complete-cost
-gains. Model-count splitting is a selection heuristic, not a uniform belief.
-[Results](s11/cnf_results.md) retain native checks, failed attempts, and the
-two-case Python 3.12 amendment. A globally warranted source-failure bound gives
-unconditional release safety, not automatic conditional safety or regret
-transport outside the source: [fallible repair](s11/fallible_repair.md).
+**Invoice information and acquisition prices.** [Cap two](s12/cap_two.md)
+reduces private-program search to ordinary value-dependent tests:1,769,400
+versus7,470,800 candidate choices (−76.3158%), with equal632,040 state counts.
+This is not a separately measured runtime or complete-cost improvement.
+[Transcript sources](s12/transcript_sources.md), [readout](s12/quantized_invoices.md),
+[shared randomness](s12/randomness_price.md) and [noise](s12/noisy_invoices.md)
+state exact information and price boundaries. Constructed n100/cap4 query
+bills improve8.1458% at zero reset/coin prices; query-plus-reset improves3.0612%
+at reset1/4 and zero coin price. Four earlier gains disappear under the stronger
+shared-coin control. All identical ordinary implementations tie.
 
-**Feedback and fallible models.** Nearby query procedures permit bounded local
-feedback and sparse updates. Over four exposed 2000-round streams, local
-feedback fees are **4999 vs112193** full feedback; total fees are
-**940053 vs1047247** (10.24% lower). Both use **2008402 matrix products**.
-The ordinary bandit0 nevertheless costs **937656**, below local and the free
-estimator's **938744**. The ordinary path learner costs **944395**; its
-square-root regret analysis is established semi-bandit machinery. The model
-learner shows no fee gain in three small screens. No complete-computation
-percentage is established from these different operation counts.
-[Metrics](s11/progress_metrics.json), [paid results](s11/local_service_results.md),
-[free estimator](s11/free_feedback.md), [model selection](s11/model_selection.md),
-[path control](s11/path_results.md), [off-path warning](s11/offpath_plan.md).
-Do not continue tuning this family merely because a harness exists.
+The five-bit finite oracle completes at97/16 for parity and full recovery.
+[Metadata correction](s12/prefix_complete_disposition.md) fixes the wrapper's
+unused95/16 label without rewriting executed bytes. All-size expected
+optimality remains open; both proposed potential proofs fail. The valid
+[entropy bound](s12/invoice_entropy.md) is weaker and uses actual output entropy.
+A useful invoice-only measurement setting and complete controller prices are
+still needed before claiming practical benefit.
 
-**Information in costs.** Under the explicit invoice-only interface, cap H
-permits exactly the span of characters through degree H−1. Checked support
-can restore identification; a sharp misspecification example makes full-law
-recovery unstable while a permitted task cost remains identifiable. Finite
-sampling and a cost/robustness design tradeoff optimize only their specified
-surrogate/menu. Repeated reset evaluators on the same hidden instance compose
-degrees through min(n,sum(H_j−1)); fresh independent instances do not.
-[Information](s11/invoice_information.md), [source sensitivity](s11/support_sensitivity.md),
-[sampling](s11/invoice_estimation.md), [design](s11/invoice_design.md),
-[composition](s11/invoice_composition.md). Constructed fee examples are not
-empirical performance claims. Seek a useful measurement setting and closer
-priority comparison before promotion.
-
-Other branches and short rejections remain in [search](s11/search.md) and
-[findings](s11/findings.md). Joint-invoice bounds sometimes improve separate
-prefix bounds, but large-case primal reconstruction fails and calibration
-bills can be prohibitive. Keep the surviving dual upper certificate distinct
-from primal attainment. Preserve negative ordinary controls and all failures.
-
-Useful next options include a task-motivated source/target repair family, a
-cheap source-validity interface, an application of invoice-limited estimation,
-or a materially different connection across the author questions. These are
-options, not a mandatory benchmark or narrow pipeline.
+**Reliability reserve and early negatives.** Proof-support, cycle/cut-space and
+coherence adapters give scoped sharp bounds. Generic audits for narrow clauses,
+fresh component calibration and integral-certificate sampling can be poor
+purchases. [Search](s12/search.md) retains those negatives and other discarded
+leads. A naturally motivated configuration/schedule duty, an invoice-limited
+measurement setting, or a materially different cross-question mechanism are
+options. Keep broad generation; do not make one available harness mandatory.
 
 ## Forecasts and the single progress table
 
-R11-M and I11-M are proposed mathematical targets, **UNASSESSED**, not frozen
-confirmation plans. They do not inherit F01's probability. The **October 14**
-F01/S28-B1/V1 assessment remains **20–45%, central30%**, carried without
-reassessment. Its exact event remains at least10% pooled complete-cost benefit
-on the specified fresh24-stream domain, nonnegative cell means, against strong
-ordinary controls over an audit-price interval with endpoint ratio at least2.
-[Forecast carry](s11/forecast_final.md), [original event](s07/forecast_design.md).
-A different useful contribution needs its own event and evidence-backed
-forecast. The 80% threshold, 90% preferred, applies to that exact claim.
-Neither F01 nor a time-to-readiness estimate measures the whole program.
+R12-S/I12-M/E12-R and older R11-M/I11-M remain **UNASSESSED** at their useful
+contribution events. [F01](s12/forecast_final.md) carries the **October14
+20–45%, central30%** assessment, without new execution or reassessment. Its
+specified fresh24-stream complete-cost event is not program-wide readiness.
+A different contribution requires its own exact event and evidence-backed
+forecast. The80% minimum,90% preferred, concerns that event. No new time-to-80%
+interval was inferred from elapsed time or document counts.
 
-Append **exactly one row** per new recurrence to the same chronological table;
-s11 is row21. Update [JSON](recurrences.json) and preserve all historical rows.
-Make relevant benefits, adverse comparisons, units, denominators, dates and
-unknowns visible. Include fees, counted computation, ordinary controls and new
-mathematical/capability deltas when relevant. A dated carry is not a new zero.
-
-Historical s10 near-target service (28 sources,3584 outputs/arm) remains
-31010 audit fee/14586157 named units versus full72320/16123044, reductions
-57.12%/9.53%; ordinary scalar prefix ties. Exact threshold trades lower fees
-for more computation. The fixed18 stratum, source compilation and six-patch
-reuse are separate duties. s11 did not rerun them. Old272-edit,80-request,S28
-and s08 metrics keep their dates, scope and recurrence ages.
+Append **exactly one row** per new recurrence to [the same table](recurrences.md)
+and [JSON](recurrences.json); s12 is row22. Preserve historical rows and dates.
+Keep fees, named computation, mathematical capabilities, ordinary controls,
+denominators and unknowns visible. Constructed bill examples, finite operation
+counts and measured stream audit fees are different metrics. A dated carry is
+not a new zero. s10 near-target audit/named work savings57.12%/9.53% remain
+historical at age2; s11 repair and feedback measurements retain their dates
+and adverse ordinary comparisons. None was rerun in s12.
 
 ## Close and publish
 
-At a useful checkpoint after the requested research duration, close/reconcile
-the clock and update session, checkpoint, TODO, plan, claims, portfolio, table
-and this prompt. Preserve executed bytes and failed logs. Follow
-[reproduction](s11/reproduce.md); never rerun old clock starters as reproduction.
+After the requested research duration and a useful scientific checkpoint,
+close/reconcile the clock; update session, checkpoint, TODO, plan, claims,
+portfolio, table and this prompt. Preserve executed bytes, failures and exact
+clocks. [Reproduction](s12/reproduce.md) explains isolated replay; never rerun
+old clock starters. Review the current publication status before claiming merge.
 
-Stage intended changes. Run full verification, math, index path and evidence
-checks under the [checkout](../../docs/windows_checkout.md),
-[archive-link](../../docs/archive_links.md), and [math](../../docs/math_markdown.md)
-guides. Tracked paths, including ancestor attribute lookups, stay within
-200 UTF-16 code units relative to the root. Preserve raw evidence and historical
-manifests; use short immutable objects or Git blobs for snapshots.
+Stage intended changes, then run full verification, math, index path and
+historical evidence checks under the [checkout](../../docs/windows_checkout.md),
+[archive-link](../../docs/archive_links.md) and [math](../../docs/math_markdown.md)
+guides. Tracked paths and ancestor attribute lookups stay within200 UTF-16
+units relative to root. Use short immutable objects or Git references for
+historical copies, preserving source manifests and bytes.
 
 Commit/publish the authorized reviewable branch/PR, attach it to the chat,
 verify remote head and report actual checks and failures. If transport fails,
-prepare the authorized portable handoff. Administration earns no research time.
-Stop after this handoff; no automatic new recurrence or automation change.
+prepare the authorized portable handoff. Administration earns no research credit.
+Stop after this handoff; no automatic next session or automation change.

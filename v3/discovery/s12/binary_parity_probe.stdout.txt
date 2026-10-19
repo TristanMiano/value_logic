@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "scope": "DEVELOPMENT",
+  "contributor": "Codex (GPT-6)",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sources": [
+    {
+      "n": 1,
+      "nonempty_sources": 3,
+      "parity_checks": 6
+    },
+    {
+      "n": 2,
+      "nonempty_sources": 15,
+      "parity_checks": 60
+    },
+    {
+      "n": 3,
+      "nonempty_sources": 165,
+      "parity_checks": 1320
+    },
+    {
+      "n": 4,
+      "nonempty_sources": 4169,
+      "parity_checks": 66704
+    }
+  ],
+  "chain": {
+    "comparisons": 128,
+    "rows": [
+      {
+        "positions": 2,
+        "optimal_invoice_fee": 2,
+        "balanced_invoice_fee": 2
+      },
+      {
+        "positions": 3,
+        "optimal_invoice_fee": 3,
+        "balanced_invoice_fee": 3
+      },
+      {
+        "positions": 4,
+        "optimal_invoice_fee": 4,
+        "balanced_invoice_fee": 4
+      },
+      {
+        "positions": 8,
+        "optimal_invoice_fee": 5,
+        "balanced_invoice_fee": 6
+      },
+      {
+        "positions": 16,
+        "optimal_invoice_fee": 7,
+        "balanced_invoice_fee": 8
+      },
+      {
+        "positions": 32,
+        "optimal_invoice_fee": 8,
+        "balanced_invoice_fee": 10
+      },
+      {
+        "positions": 64,
+        "optimal_invoice_fee": 10,
+        "balanced_invoice_fee": 12
+      },
+      {
+        "positions": 128,
+        "optimal_invoice_fee": 11,
+        "balanced_invoice_fee": 14
+      }
+    ],
+    "limitation": "Initial source, controller computation and resets excluded; ordinary optimal unequal-cost search ties."
+  },
+  "elapsed_ns": 57991900,
+  "hashes": {
+    "binary_parity_probe.py": "e6bcd513bf0693e51dc4b5385ee5997639c9853d1167a71ac42e9160e3bd274f",
+    "reachable_probe.py": "48647c371f7108a533428e5e9e305bed07724249dc3e5bc68fde5926304bd404",
+    "parity_price_probe.py": "6f6a63153a4a191a3c50bf72a7421d77f9cc0b0e05b1d47d48550a9a032f2f80"
+  }
+}
