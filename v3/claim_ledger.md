@@ -1,5 +1,11 @@
 # Phase-three claims and obligations
 
+**Latest pointer — October21,2026 UTC, Codex (GPT-6):** [s13 assessment](discovery/s13/scientific_assessment.md),
+[targets](discovery/s13/verification_targets.md), [metrics](discovery/s13/progress_metrics.json).
+P3-POS01 OUTSTANDING; no promotion. I13-R/v1 subjective55–75%, central65%,
+below80%; F01 remains a separate dated carry. Earlier entries retain scope.
+
+
 **Latest pointer — October 19, 2026 UTC, Codex (GPT-6):** [s12 assessment](discovery/s12/scientific_assessment.md), [targets](discovery/s12/verification_targets.md). P3-POS01 OUTSTANDING; no promotion. Earlier dated entries retain their scope.
 
 **Current pointer — October 15, 2026, Codex (GPT-6):** [s11 assessment](discovery/s11/scientific_assessment.md) and [claim-specific targets](discovery/s11/verification_targets.md). P3-POS01 OUTSTANDING; no promotion. Earlier dated entries below retain their scope.
@@ -940,3 +946,15 @@ contribution events. F01 is an unchanged dated October14 carry. The exact
 session/program/phase research nanoseconds are14,422,390,000,000 /
 80,282,330,241,147 /145,450,212,282,996. See [checkpoint](discovery/s12/checkpoint.md),
 [targets](discovery/s12/verification_targets.md) and [single progress table](discovery/recurrences.md).
+
+## s13 constructive claims — October21,2026, Codex (GPT-6)
+
+| Object | Type and explicit delta | Evidence / comparison / limitation |
+| --- | --- | --- |
+| I13-R/v1 | Proposed optimal asymptotic query/reset acquisition rate at all n>=H>=2; near-optimal binary decision frontier. Named n100/H4/f1/2 fee improves2.370985%, preparation592 vs494 increases. | [Rate](discovery/s13/invoice_rate.md), [frontier](discovery/s13/experiment_frontier.md), [metrics](discovery/s13/progress_metrics.json). Same-model development; ordinary identical realization ties; arithmetic tariffs can erase gain. Closest-prior delta and interface usefulness unresolved. |
+| R13-W | Partial-receipt task warrants, constrained margins and price-ray reuse; separate robust inspection/write budgets. | [Calibration](discovery/s13/calibrated_slack.md), [ray](discovery/s13/price_ray.md), [budget](discovery/s13/inspection_budget.md). Conventional cuts/tolerance/abstraction are ingredients; common-menu economics and a focused contribution remain unassessed. |
+| N13-V | Joint-edit counterexamples, sharp scalar-value decision bands and partial-computation threshold certificates; worked regret<0.0053. | [Decision](discovery/s13/two_value_decision.md), [intervals](discovery/s13/interval_value_certificate.md), [literature](discovery/s13/literature.md). Established Stieltjes/moment methods match; no empirical speed or receipt-cost gain, novelty unassessed. |
+
+All new claims are DEVELOPMENT. [Failures](discovery/s13/failures.md) preserve
+the refuted biased potential and n2/cap3 interface correction. F01/S28-B1/V1
+was neither executed nor reassessed. See the exact [verification events](discovery/s13/verification_targets.md).

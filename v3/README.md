@@ -1,34 +1,28 @@
 # Phase Three: Reasoning About Unresolved Mathematics
 
-Current update: **Codex (GPT-6), October 14, 2026 UTC**. Earlier contributor
-attributions and scientific records retain their original scope.
+Current update: **Codex (GPT-6), October21,2026 UTC**. Earlier attributions
+and scientific records retain their original scopes.
 
-**P3-01–10 are complete at their declared scopes. P3-SEARCH-01-C001 remains
-OPEN; P3-POS01 OUTSTANDING; P3-11 deferred.** C001's original four-hour floor
-is satisfied. The latest explicitly requested two-hour increment adds
-**120.072217133333333… research minutes**. Cumulative C001/program research is
-**857.596436254116666… minutes**; phase research is **1943.727803618266666…**.
-All research clocks are closed. Default sessions are 60 minutes, subject to
-[explicit author overrides](decisions/2026-10-14_two_hour_metrics.md).
+**P3-01–10 complete at their declared scopes; C001 OPEN; P3-POS01 OUTSTANDING;
+P3-11 deferred.** The latest author-requested four-hour recurrence adds
+240.555733333333… research minutes. Program1578.594570685783… minutes;
+phase2664.725938049933… minutes. All research clocks are closed. Default
+sessions are one hour, subject to explicit author duration overrides.
 
-Read [s10 checkpoint](discovery/s10/checkpoint.md), [findings](discovery/s10/findings.md),
-[effective actuals](discovery/s10/effective_actuals.json),
-[portfolio](discovery/candidates.md), [single recurrence table](discovery/recurrences.md),
-and [portable continuation](discovery/CONTINUE.md).
+Read [s13 checkpoint](discovery/s13/checkpoint.md), [findings](discovery/s13/findings.md),
+[assessment](discovery/s13/scientific_assessment.md), [table](discovery/recurrences.md)
+and [continuation](discovery/CONTINUE.md). The strongest new candidate is an
+all-size acquisition rate and binary decision frontier. Its named fee example
+improves2.370985%, with increased preparation and an ordinary-method tie.
+Partial-receipt task warrants and scalar numerical intervention certificates
+extend other routes. Classical antecedents and complete-cost limits are explicit.
 
-The latest28-source scalar construction reduces audit fees57.12% and counted
-computation9.53% against full audit near the target tolerance; its ordinary
-equivalent ties. Fixed tolerance yields smaller gains and stronger thresholds
-expose fee/computation tradeoffs. Cheaper checked source compilation, constraint
-conditioning and sharp dependence bounds extend capability. Unknown complete
-prices and broader negative comparisons prevent confirmation. **F01 remains
-20–45%, central30%, change0 since s08.** The35 families measure breadth, not readiness.
-
-Next test a small fresh service with priced source changes or conservative
-score learning, against strong ordinary methods. Preserve all failed attempts
-and use [reproduction](discovery/s10/reproduce.md) to separate
-old evidence reconstruction from new acquisition. [TODO_v3.md](../TODO_v3.md)
-and [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) govern the open program.
+I13-R/v1 readiness is subjective55–75%, central65%, below80%. R13-W/N13-V
+remain unassessed. F01's dated20–45%, central30%, concerns a different event.
+A useful, moderately novel contribution is the target; no universal learner
+or superiority over every conventional method is required. Continue broad
+generation and early rejection. [TODO](../TODO_v3.md) and [protocol](RESEARCH_PROTOCOL.md)
+govern the open program; [reproduction](discovery/s13/reproduce.md) preserves evidence.
 
 ## Research direction
 
