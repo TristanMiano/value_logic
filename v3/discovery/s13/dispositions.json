@@ -1,0 +1,78 @@
+{
+  "contributor": "Codex (GPT-6)",
+  "rule": "Append-only corrections; raw clock observations remain unchanged. Apply each exact segment replacement once.",
+  "entries": [
+    {
+      "start_monotonic_ns": 153317703000000,
+      "end_monotonic_ns": 153496187000000,
+      "elapsed_ns": 178484000000,
+      "raw_mode": "L",
+      "effective_mode": "unmeasured",
+      "reason": "Context refresh truncated the literature-search output. Exclude the entire interval through the recovery boundary; unread results are not counted as read."
+    },
+    {
+      "start_monotonic_ns": 155346781000000,
+      "end_monotonic_ns": 155633718000000,
+      "elapsed_ns": 286937000000,
+      "raw_mode": "D",
+      "effective_mode": "unmeasured",
+      "reason": "Context refresh interrupted the open derivation interval. Conservatively exclude that entire interval through the recovery boundary; retain its completed files but claim no research time for it."
+    },
+    {
+      "start_monotonic_ns": 157564687000000,
+      "end_monotonic_ns": 157769750000000,
+      "elapsed_ns": 205063000000,
+      "raw_mode": "D",
+      "effective_mode": "unmeasured",
+      "reason": "Context refresh interrupted multivalued-fact derivation and truncated the literature search output. Exclude the entire open interval through recovery; unread search results receive no read claim."
+    },
+    {
+      "start_monotonic_ns": 159468421000000,
+      "end_monotonic_ns": 159686156000000,
+      "elapsed_ns": 217735000000,
+      "raw_mode": "D",
+      "effective_mode": "unmeasured",
+      "reason": "Context refresh interrupted the open generation interval and truncated repository reading. Conservatively exclude the entire interval through recovery; the truncated material has not been treated as read."
+    },
+    {
+      "start_monotonic_ns": 161431437000000,
+      "end_monotonic_ns": 161664500000000,
+      "elapsed_ns": 233063000000,
+      "raw_mode": "E",
+      "effective_mode": "unmeasured",
+      "reason": "Context refresh truncated the oracle execution output. Exclude its entire open interval through recovery; retain executed evidence and inspect it after recovery."
+    },
+    {
+      "start_monotonic_ns": 163190968000000,
+      "end_monotonic_ns": 163439843000000,
+      "elapsed_ns": 248875000000,
+      "raw_mode": "L",
+      "effective_mode": "unmeasured",
+      "reason": "Context refresh truncated the natural-application literature search. Exclude the entire interval through recovery; unread search results receive no read claim."
+    }
+    ,{
+      "start_monotonic_ns": 165215203000000,
+      "end_monotonic_ns": 165442468000000,
+      "elapsed_ns": 227265000000,
+      "raw_mode": "L",
+      "effective_mode": "unmeasured",
+      "reason": "Context refresh truncated the port-reduction literature output. Conservatively exclude the entire open interval through recovery; no read claim for the unread PDF results."
+    }
+    ,{
+      "start_monotonic_ns": 166887562000000,
+      "end_monotonic_ns": 167131250000000,
+      "elapsed_ns": 243688000000,
+      "raw_mode": "L",
+      "effective_mode": "unmeasured",
+      "reason": "Context refresh truncated the final closest-prior source output. Exclude the entire open interval through recovery; no new read claim for that output."
+    }
+    ,{
+      "start_monotonic_ns": 167780609000000,
+      "end_monotonic_ns": 167943031000000,
+      "elapsed_ns": 162422000000,
+      "raw_mode": "D",
+      "effective_mode": "unmeasured",
+      "reason": "The first closing marker used an unsupported purpose and failed before observing a boundary. Conservatively exclude this entire mixed final-synthesis/boundary-recovery interval rather than estimate its administrative tail. Completed scientific notes remain retained."
+    }
+  ]
+}

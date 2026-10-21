@@ -4,27 +4,25 @@ Initial research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
 No candidate is promoted. The current event-specific forecast is recorded below;
 earlier unassessed entries retain their dated historical scope.
 
-**Current continuation — October 19, 2026 UTC, Codex (GPT-6):**
-[s12 checkpoint](s12/checkpoint.md), [findings](s12/findings.md),
-[exact actuals](s12/effective_actuals.json), [single recurrence table](recurrences.md).
-The fresh four-hour increment is CLOSED: 240.373166666666666… research minutes;
-C001/program is 1338.03883735245 and phase 2424.1702047166 minutes.
-159 closed intervals in one runtime; seven interrupted research intervals and
-explicit context/recovery intervals excluded. No active research clock remains.
+**Current continuation — October 21, 2026 UTC, Codex (GPT-6):**
+[s13 checkpoint](s13/checkpoint.md), [findings](s13/findings.md),
+[exact actuals](s13/effective_actuals.json), [single recurrence table](recurrences.md).
+The fresh four-hour increment is CLOSED: 240.555733333333333… research minutes.
+C001/program is 1578.594570685783333… and phase
+2664.725938049933333… minutes. All183 intervals share one runtime;
+nine interrupted/mixed research intervals and explicit recovery are excluded.
+No active research clock remains.
 
-**C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no candidate promoted.**
-The 35-family count is unchanged: s12 develops connections and adapters.
-Task-scoped permissions can survive globally false models, with an explicit
-joint-model adequacy extension, exact receipt/lineage reuse and a temporal
-adapter. Cap-two reduction cuts one named search count by 76.3158%; constructed
-invoice fees improve in some stated regimes. Ordinary realizations tie and
-stronger ordinary controls erase or constrain several apparent gains.
-See the [assessment](s12/scientific_assessment.md) and
-[claim-specific targets](s12/verification_targets.md); those targets remain
-UNASSESSED. F01 carries its October 14 20–45%, central 30% assessment.
+**C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no promotion.**
+The35-family count is unchanged. A general acquisition-rate construction cuts
+the stated n100/H4/reset1/2 query/reset bill2.370985%, while preparation rises
+592 versus494 choices. Ordinary implementations tie. Partial-receipt action
+warrants and scalar-value intervention certificates broaden the portfolio.
+[I13-R/v1 readiness](s13/forecast_final.md) is55–75%, central65%, subjective
+and below80%; R13-W/N13-V remain UNASSESSED. F01's October14 range20–45%,
+central30%, is an unchanged different event. See [targets](s13/verification_targets.md).
 Continue broad discovery under the useful, moderately novel contribution
-standard. The next session defaults to one hour unless explicitly overridden;
-no automatic session or automation starts. Earlier dated records retain scope.
+standard; default one hour unless the author overrides. No automatic session.
 
 IDs S01 onward belong to this program, not separate clock commitments.
 

@@ -1,11 +1,11 @@
 # C001 recurrence progress
 
 Requested by **Tristan Miano**. Current maintenance: **Codex (GPT-6)**; earlier attributions preserved.
-This is the single chronological recurrence table: **22 recorded rows, ending
-with s12**. Append each future recurrence to this same table.
+This is the single chronological recurrence table: **23 recorded rows, ending
+with s13**. Append each future recurrence to this same table.
 
-**C001 OPEN · 1338 cumulative research minutes · F01 forecast carried from
-October 14: 20–45%, central 30%; new mathematical targets UNASSESSED.** Minutes are rounded independently from exact nanoseconds;
+**C001 OPEN · 1579 cumulative research minutes · F01 forecast carried from
+October 14: 20–45%, central 30%; I13-R/v1 subjective55–75%, central65%; R13-W/N13-V UNASSESSED.** Minutes are rounded independently from exact nanoseconds;
 the [source record](recurrences.json) retains the exact clocks, measurements,
 scopes and forecast history. This layout repair adds no research time.
 
@@ -45,6 +45,8 @@ implementation is shown explicitly even when it ties.
 | **[s10 cp01](s10/checkpoint.md)** | **120** | **858** | **35 (+2)** | **sf01:** 3,584 outputs/arm/stratum, 28 sources ×128; Oct14<br>Unit compilation:39 sources; conditioning:168 patches | **Near target:31,010 vs72,320 full audit; −57.12%**<br>Fixed18:66,991 vs72,320; −7.37% | **Near target:14,586,157 vs16,123,044; −9.53%**<br>Fixed18:15,857,399 vs16,123,044; −1.65%<br>Source compilation−90.15%; six-patch reuse−69.61% | **Ordinary scalar prefix ties.** Near target exact threshold:9,657 fees/19,261,900 units; scalar threshold:32,302/14,453,502 | 144/272;254/272;258/272; carried, age14 | 80/80;60/80;223; carried, age3 | 16/16;11/11;1,718,749;4.7544×; carried, age2 | 0; carried, age2 | **20–45%, central30%; Δ0 pp** | Two-hour override. Cheaper checked sources, response/source reuse, paid scalar policy, learning/reserve stress tests and sharp dependence bounds. Setup repayment at28/88 observed requests per source; broad full-cost claim remains open. |
 | **[s11 four-hour round](s11/checkpoint.md)** | **240** | **1098** | **35 (0)** | **Learning:** four exposed streams ×2000 rounds; **repair:** six inherited CNFs; Oct16 UTC | **Local 940,053 vs full 1,047,247; −10.24%**<br>Feedback only 4,999 vs112,193; −95.54%<br>Free 938,744; bandit0 **937,656** | Local/full both **2,008,402 matrix products**; free1,658,916, with different other operations. Complete computation change unknown.<br>s10 near-target −9.53% carried, age1 | **Bandit0 beats local/free fees. Identical repair optimizers tie.** Local +0.256%, free +0.116% vs bandit0 | 144/272;254/272;258/272; carried, age15 | 80/80;60/80;223; carried, age4 | 16/16;11/11;1,718,749;4.7544×; carried, age3 | 0; carried, age3 | **F01 Oct14 carry:20–45%, central30%; age1. R11-M/I11-M unassessed** | **Certified-repair regret ≥46.01% / ≥56.50% lower than an equally querying static-menu class on two of six CNFs.** Three zero ties; one predictive-only gain. Invoice span, misspecification and same-instance composition results. 16-hour portfolio review complete; no promotion. |
 | **[s12 four-hour round](s12/checkpoint.md)** | **240** | **1338** | **35 (0)** | Exact constructed invoice bills; finite cap-two search; scoped mathematical services; Oct19 UTC | **Constructed query −8.1458%; query/reset −3.0612%** at n100, H4, stated zero coin price. No new measured audit saving. s10 near-target audit **−57.12% carried, age2** | **1,769,400 vs 7,470,800 choices: −76.3158%**, same632,040 states; no separate runtime or complete-cost saving. s10 named work −9.53% carried, age2 | **Identical ordinary routines tie.** Shared-coin control erases4/12 earlier gains; per-task model selection matches marginal ensemble bound | 144/272;254/272;258/272; carried, age16 | 80/80;60/80;223; carried, age5 | 16/16;11/11;1,718,749;4.7544×; carried, age4 | 0; carried, age4 | **F01 Oct14 carry20–45%, central30%; age2. R12-S/I12-M/E12-R UNASSESSED** | **Task and joint-model adequacy can support edits even when all full models are false.** Exact receipt/lineage reuse; median/temporal extension; invoice source/readout/prices; five-bit optimum97/16. No promotion. |
+
+| **[s13 four-hour round](s13/checkpoint.md)** | **241** | **1579** | **35 (0)** | Constructed invoice rate/frontier; partial-receipt warrants; numerical decisions; Oct21 UTC | **130.265 vs133.428571: −2.370985%** query/reset fees, n100/H4/f1/2, stronger prior menu. No fresh audit saving; s10 **−57.12% carried, age3** | **592 vs494 preparation options: +19.84%**. No runtime or complete-computation gain. s10 named work **−9.53% carried, age3** | **Identical ordinary methods tie.** Extra XOR prices erase fee gain; classical moment methods match value bounds | 144/272;254/272;258/272; carried, age17 | 80/80;60/80;223; carried, age6 | 16/16;11/11;1,718,749;4.7544×; carried, age5 | 0; carried, age5 | **I13-R/v1:55–75%, central65%, below80.** F01 Oct14 carry20–45%, central30%, age3; different event. R13-W/N13-V unassessed | **General optimal acquisition-rate candidate; binary frontier within0.204% of its lower bound in the example.** Partial-receipt action warrants; numerical two-value decision regret<0.0053. Scoped mathematical gains; no promotion. |
 
 ## Resource columns: scope and evidence
 
@@ -229,3 +231,13 @@ are explicit mathematical/capability deltas. The envelope is an ordinary
 closure-based abstraction; contribution novelty and economical deployment
 remain unassessed. [Assessment](s12/scientific_assessment.md) retains strong
 ordinary controls and cheap rejections. All earlier rows and their dates remain.
+
+## s13 scope and relevant gains
+
+[Metrics](s13/progress_metrics.json) separate constructed fee savings from
+increased preparation and unknown complete cost. The0.204% frontier gap is
+derived, not a measured runtime gain. No new audit-stream panel was run.
+[Findings](s13/findings.md) and [assessment](s13/scientific_assessment.md) retain
+strong ordinary comparisons and the numerical method's classical antecedents.
+The new65% readiness concerns I13-R/v1; it does not update F01's30%. Earlier
+rows, scopes and dated measurements remain intact.
