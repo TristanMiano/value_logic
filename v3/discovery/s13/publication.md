@@ -6,9 +6,9 @@ Base main5d15dae2a6bc0903ff0589e242c9d9a3450ad9b5; branch
 codex/discovery-20261020-s13. PR14 was verified merged and its remote branch
 removed before s13 began. The separate older transfer branch is unrelated.
 
-Research is closed; validation and publication are in progress. This record
-will be updated with observed outcomes. No merge is implied or authorized by
-this publication step. Scientific output remains DEVELOPMENT.
+Research is closed and published in [PR15](https://github.com/TristanMiano/value_logic/pull/15),
+open against main and attached to the Codex chat. No merge is implied or
+authorized by this publication step. Scientific output remains DEVELOPMENT.
 
 ## Observed local validation
 
@@ -36,3 +36,20 @@ in mutable mixed-ending reports retain their original bytes; new lines use LF.
 
 These are integrity checks, not independent mathematical confirmation.
 Linux CI and publication status are recorded separately below when observed.
+
+## Publication receipt
+
+Research commit **da7fe54552a0fabeba9a02b532dc9802fbf10c6d** was pushed to
+codex/discovery-20261020-s13. [PR creation](pub/pr_created.json) reports that
+exact head. The [initial CI snapshot](pub/ci_initial.json) records mathematical
+Markdown, finite verification and checkout-portability workflows in progress,
+for push and pull-request events. Pending is not a success claim.
+
+The receipt commit follows the research commit. Read Git/PR15 for the exact
+latest head and live checks; do not treat the earlier SHA as the final head.
+Observed final CI status is also reported in the chat. The current local and
+remote branch are verified after pushing the receipt. Credentials are handled
+in memory and are absent from all saved outputs.
+
+This closes the requested s13 handoff. No active research clock, automatic
+next session, automation change, merge or author promotion follows.
