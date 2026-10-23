@@ -1,11 +1,11 @@
 # C001 recurrence progress
 
 Requested by **Tristan Miano**. Current maintenance: **Codex (GPT-6)**; earlier attributions preserved.
-This is the single chronological recurrence table: **24 recorded rows, ending
-with s14**. Append each future recurrence to this same table.
+This is the single chronological recurrence table: **25 recorded rows, ending
+with s15**. Append each future recurrence to this same table.
 
-**C001 OPEN · 1819 cumulative research minutes · F01 forecast carried from
-October 14: 20–45%, central 30%; I13-R/v1 historical55–75%, central65%; new s14 events UNASSESSED.** Minutes are rounded independently from exact nanoseconds;
+**C001 OPEN · 2059 cumulative research minutes · F01 forecast carried from
+October 14: 20–45%, central 30%; I13-R/v1 historical55–75%, central65%; new s15 events UNASSESSED.** Minutes are rounded independently from exact nanoseconds;
 the [source record](recurrences.json) retains the exact clocks, measurements,
 scopes and forecast history. This layout repair adds no research time.
 
@@ -47,6 +47,7 @@ implementation is shown explicitly even when it ties.
 | **[s12 four-hour round](s12/checkpoint.md)** | **240** | **1338** | **35 (0)** | Exact constructed invoice bills; finite cap-two search; scoped mathematical services; Oct19 UTC | **Constructed query −8.1458%; query/reset −3.0612%** at n100, H4, stated zero coin price. No new measured audit saving. s10 near-target audit **−57.12% carried, age2** | **1,769,400 vs 7,470,800 choices: −76.3158%**, same632,040 states; no separate runtime or complete-cost saving. s10 named work −9.53% carried, age2 | **Identical ordinary routines tie.** Shared-coin control erases4/12 earlier gains; per-task model selection matches marginal ensemble bound | 144/272;254/272;258/272; carried, age16 | 80/80;60/80;223; carried, age5 | 16/16;11/11;1,718,749;4.7544×; carried, age4 | 0; carried, age4 | **F01 Oct14 carry20–45%, central30%; age2. R12-S/I12-M/E12-R UNASSESSED** | **Task and joint-model adequacy can support edits even when all full models are false.** Exact receipt/lineage reuse; median/temporal extension; invoice source/readout/prices; five-bit optimum97/16. No promotion. |
 | **[s13 four-hour round](s13/checkpoint.md)** | **241** | **1579** | **35 (0)** | Constructed invoice rate/frontier; partial-receipt warrants; numerical decisions; Oct21 UTC | **130.265 vs133.428571: −2.370985%** query/reset fees, n100/H4/f1/2, stronger prior menu. No fresh audit saving; s10 **−57.12% carried, age3** | **592 vs494 preparation options: +19.84%**. No runtime or complete-computation gain. s10 named work **−9.53% carried, age3** | **Identical ordinary methods tie.** Extra XOR prices erase fee gain; classical moment methods match value bounds | 144/272;254/272;258/272; carried, age17 | 80/80;60/80;223; carried, age6 | 16/16;11/11;1,718,749;4.7544×; carried, age5 | 0; carried, age5 | **I13-R/v1:55–75%, central65%, below80.** F01 Oct14 carry20–45%, central30%, age3; different event. R13-W/N13-V unassessed | **General optimal acquisition-rate candidate; binary frontier within0.204% of its lower bound in the example.** Partial-receipt action warrants; numerical two-value decision regret<0.0053. Scoped mathematical gains; no promotion. |
 | **[s14 four-hour round](s14/checkpoint.md)** | **240** | **1819** | **35 (0)** | Constructed nonlinear invoice; retained numerical receipts; partial/joint learned scope; Oct 23 UTC | **114.5 vs affine lower bound 121.9167: at least 6.0834% lower fees**, cap 22/reset 100, 12.5% mean error. No fresh audit saving; s10 **−57.12% carried, age 4** | **0 new operator calls in the partial-receipt certificate**, original acquisition paid; no CPU/complete-work gain. Pure-summary queries 23 vs 30 at smaller cap 7 vs 8, same 4 episodes. s10 work **−9.53% carried, age 4** | **Identical ordinary methods tie.** Established scenario bound slightly beats new elementary bound; Hamming, robust LS and matrix completion are prior ingredients | 144/272;254/272;258/272; carried, age 18 | 80/80;60/80;223; carried, age 7 | 16/16;11/11;1,718,749;4.7544×; carried, age 6 | 0; carried, age 6 | **New N14-T/R14-L/I14-Q UNASSESSED.** I13-R/v1 55–75%, central 65%, carried age 1; F01 20–45%, central 30%, age 4 | **Two partial receipts certify value < 0.24 where one admits 0.256.** Authorized budget 1→5; retaining cross-case dependence tightens the same risk certificate 17.21%→3.37%; four-receipt width −49.68%. No promotion. |
+| **[s15 resumed four-hour round](s15/checkpoint.md)** | **240** | **2059** | **35 (0)** | General-norm counterfactuals; polynomial-model correction; partial proofs; count-only interfaces; Oct23 UTC | **No fresh audit-fee run.** s10 **−57.12% carried, age5**. Constructed feature repair: **1008 vs4480 truth-coordinate outputs (−77.5%)**; full access/computation costs unpriced | Forecast: **expected full-vector probes at most6.060819 vs baseline at least6.995 (at least−13.35499%), cap7 retained**. Analytic, rank4/degree4/grid257/error.001. No new runtime/complete-work gain; s10 work **−9.53% carried, age5** | **Identical ordinary methods tie.** Halt Fast! precedes safe learned mixtures; two-sided interpolation is a strong correction control. No universal superiority claim | 144/272;254/272;258/272; carried, age19 | 80/80;60/80;223; carried, age8 | 16/16;11/11;1,718,749;4.7544×; carried, age7 | 0; carried, age7 | **N15-P/R15-C/I15-Q UNASSESSED.** I13-R/v1 55–75%, central65%, carried age2; F01 20–45%, central30%, age5 | **Sharp joint model/target/scale envelopes across finite norms.** Shared evidence supports all-input correction and late proof refinement. Same-receipt conditional risk upper13% vs27.66% is a guarantee comparison, not observed error. No promotion. |
 
 ## Resource columns: scope and evidence
 
@@ -251,3 +252,15 @@ is retained-information value, not observed error reduction or a new bound.
 The elementary statistical bound lost to a closer established comparator.
 [Assessment](s14/scientific_assessment.md) and [targets](s14/verification_targets.md)
 keep the broader useful-contribution goal and exact ordinary comparisons.
+
+## s15 scope and relevant gains
+
+[Metrics](s15/progress_metrics.json) distinguish analytic expected-probe
+bounds, constructed coordinate-output counts, mathematical capability and
+unknown complete cost. Both percentages in the latest row have explicit
+comparators; neither is a fresh audit-fee or CPU measurement. The latter
+historical measures remain visibly dated carries. The conditional-risk
+comparison uses the same calibration failure bound about0.010654775,
+below0.05; its risk bound is a separate probability quantity. See
+[assessment](s15/scientific_assessment.md) and [targets](s15/verification_targets.md)
+for the broader useful-contribution goal and strong ordinary comparisons.

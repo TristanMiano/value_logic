@@ -5,26 +5,26 @@ Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_a
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
 **Current continuation — October 23, 2026 UTC, Codex (GPT-6):**
-[s14 checkpoint](s14/checkpoint.md), [findings](s14/findings.md),
-[actuals](s14/effective_actuals.json), [single recurrence table](recurrences.md).
-The fresh four-hour recurrence is CLOSED: 240.117933333333… research minutes.
-C001/program is 1818.712504019117… and phase 2904.843871383267… minutes.
-The142 same-runtime intervals have fourteen research exclusions and one
-E-to-D reclassification; explicit context recovery is also excluded.
-No active research clock remains. The35-family count is unchanged.
+[s15 checkpoint](s15/checkpoint.md), [findings](s15/findings.md),
+[actuals](s15/effective_actuals.json), [single recurrence table](recurrences.md).
+The fresh four-hour recurrence is CLOSED: 240.221316666666… research minutes.
+C001/program is 2058.933820685783… and phase 3145.065188049933… minutes.
+The 136 same-runtime intervals have sixteen research exclusions; explicit
+context recovery and the long interruption are excluded. No active clock
+remains. The 35-family inventory is unchanged; 39 passes are not new families.
 
 **C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no promotion.**
-Small numerical receipts now certify new counterfactual thresholds; partial
-and joint evidence supports changing model scopes; a nonlinear query/reset
-construction saves at least6.0834% against its declared affine class at12.5%
-mean error/reset100. Ordinary identical implementations tie. No new CPU or
-audit-stream gain is claimed. A closer established scenario bound beats the
-new elementary bound on its headline example; that comparison is retained.
-[New contribution targets](s14/verification_targets.md) are UNASSESSED.
-I13-R/v1's historical55-75%, central65% and F01's20-45%, central30% concern
-different events and are unchanged. Continue broad discovery under the
-useful, moderately novel contribution standard; default one hour unless
-the author overrides. No automatic next session.
+Sharp counterfactual envelopes now cover general finite norms and joint
+edits. A fallible forecast cuts an analytic expected-probe bound by at least
+13.35499% against a declared control while retaining cap7. Structured model
+repair and retained features give a 77.5% truth-coordinate reduction in a
+constructed example. These are scoped resource/capability gains, not new
+audit-stream fees or complete CPU savings. Identical ordinary methods tie.
+[New targets](s15/verification_targets.md) N15-P/R15-C/I15-Q are UNASSESSED.
+I13-R/v1's historical 55–75%, central65% and F01's 20–45%, central30% remain
+different, unchanged events. Continue broad discovery under the useful,
+moderately novel contribution standard. Default one hour unless overridden;
+no automatic next session. Next deeper portfolio review:40 program hours.
 
 ## 1. Objective and scope
 

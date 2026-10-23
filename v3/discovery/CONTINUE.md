@@ -1,130 +1,134 @@
 # Portable continuation: broad discovery, default one hour
 
-Latest completed research: **s14**, Codex (GPT-6), October 23, 2026 UTC.
-The four-hour floor is complete: **240.117933333333… research minutes**.
-The resident clock is closed. Read [checkpoint](s14/checkpoint.md),
-[actuals](s14/effective_actuals.json) and [publication](s14/publication.md)
-before continuing. A context refresh creates neither a clock nor a commitment.
-Do not infer that s14 was merged from this handoff.
+Latest completed research: **s15**, Codex (GPT-6), October 23, 2026 UTC.
+The resumed four-hour commitment is CLOSED: **240.221316666666… research minutes**.
+No active clock or unfinished s15 floor remains. Read [checkpoint](s15/checkpoint.md),
+[actuals](s15/effective_actuals.json) and [publication](s15/publication.md) before
+continuing. A context refresh creates neither a clock nor a new commitment.
+Do not infer that s15 was merged from this handoff.
 
-Continue TristanMiano/value_logic for the author-requested engaged research
-duration. Default: **one hour**; explicit overrides apply to that session
-only. We alternate ChatGPT and Codex and refresh contexts over long workloads.
-Preserve attribution and scientific records. Complete authorized publication
-without routine permission questions. Stop at the requested session's useful
-handoff; do not automatically start another recurrence or change an automation.
+Continue TristanMiano/value_logic for the next author-requested engaged research
+duration. Default: **one hour**; explicit overrides apply to that session only.
+We alternate ChatGPT and Codex and refresh contexts over long workloads. Preserve
+attribution and scientific records. Complete authorized publication without
+routine permission questions. Stop at the requested session's useful handoff;
+do not automatically start another recurrence or change an automation.
 
 ## Broader goal and contribution standard
 
 Follow [the protocol](../RESEARCH_PROTOCOL.md) and [author clarification](../decisions/2026-10-14_contribution_standard.md).
 Find mechanisms through which a bounded reasoner can make materially better
-use of unresolved mathematics, fallible models, reasoning costs or
-counterfactual changes. Search across all five questions and their connections.
-A **useful, moderately novel contribution** with an explicit delta, honest
-literature comparison and credible verification path is worthwhile. A new
-mechanism, guarantee, representation, formal adaptation or useful synthesis
-can qualify. A general uncertainty learner, final metaphysical answers and
-universal superiority are not prerequisites. Continued concrete gains justify
-continued discovery. One narrow candidate or forecast must not become the goal.
+use of unresolved mathematics, fallible models, reasoning costs or counterfactual
+changes. Search across all five questions and their connections. A **useful,
+moderately novel contribution** with an explicit delta, honest literature
+comparison and credible verification path is worthwhile. A new mechanism,
+guarantee, representation, formal adaptation or useful synthesis can qualify.
+General uncertainty learning, final metaphysical answers and universal superiority
+are not prerequisites. Continued concrete gains justify continued discovery.
+One narrow candidate or forecast must not become the whole program.
 
-Keep approximately 75% generation/development, 20% cheap screens and 5%
-substantive synthesis. Generate different mechanisms and discard weak ones
-early. Deepen promising lines progressively; reserve expensive confirmation
-for a ready specific contribution. Harness and document counts are not breadth.
-Conventional statistics, coding, logic and numerical methods can embody the
-same concerns. An identical ordinary implementation ties by construction;
-that limits superiority claims without deciding novelty. Compare the closest
-previous formulation and strong methods with fair information and resources.
+Keep approximately 75% generation/development,20% cheap screens and 5% substantive
+synthesis. Generate different mechanisms and discard weak ones early. Deepen
+promising lines progressively; reserve expensive confirmation for a ready specific
+contribution. Harness/document counts are not breadth. Conventional statistics,
+coding, logic and numerical methods can embody value logic's concerns. An identical
+ordinary implementation ties by construction; this limits superiority claims
+without deciding novelty. Compare the closest previous formulation and strong
+methods with fair information and resources.
 
 ## Recover state and clocks
 
 Use the actual checkout root. Read AGENTS.md, git status/main/remotes,
 [TODO](../../TODO_v3.md), [portfolio](candidates.md), [single table](recurrences.md),
-[findings](s14/findings.md), [assessment](s14/scientific_assessment.md),
-[targets](s14/verification_targets.md), [failures](s14/failures.md) and relevant
-[literature](s14/literature.md). Do not reread the archive or rerun probes just
+[findings](s15/findings.md), [assessment](s15/scientific_assessment.md),
+[targets](s15/verification_targets.md), [failures](s15/failures.md) and relevant
+[literature](s15/literature.md). Do not reread the archive or rerun probes just
 to refresh context. Preserve unrelated local work.
 
-s14 began from main e2fa680858db59b502991789f21db18d4854d7ec on
-codex/discovery-20261022-s14. PR15 had merged and its remote branch was absent.
-Recheck the newer s14 publication record. The older s09 transfer branch is
-unrelated. **C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no promotion.**
-The 35 families remain unchanged; s14's 45 passes are not 45 new families.
+s15 began from main462249f13494709217cb1de71e552da576dbd4ca on
+codex/discovery-20261023-s15. PR 16 was verified merged and its remote branch
+absent. Recheck the newer s15 publication record and actual remote state.
+**C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no promotion.**
+The 35 families remain unchanged; s15's39 passes are not39 new families.
 
-s14: 14,407,076,000,000 ns = 240.117933333333… research minutes.
-Program: 109,122,750,241,147 ns = 1818.712504019117… minutes.
-Phase: 174,290,632,282,996 ns = 2904.843871383267… minutes.
-[Reconciliation](s14/reconcile.py) checks 142 same-runtime intervals: fourteen
-research intervals excluded, one E-to-D reclassification, O/context recovery
-excluded. Research ended 02:30:28.289602 UTC; runtime 02:30:49.755995 UTC on
-October 23. Raw observations and earlier ledger bytes remain intact.
+s15:14,413,279,000,000 ns =240.221316666666… research minutes.
+Program:123,536,029,241,147 ns =2058.933820685783… minutes.
+Phase:188,703,911,282,996 ns =3145.065188049933… minutes.
+[Reconciliation](s15/reconcile.py) checks 136 same-runtime intervals: sixteen
+research exclusions, explicit context recovery and the long pause excluded.
+Research ended19:11:50.215867 UTC; runtime19:17:47.329172 UTC on October 23.
+The raw observations and earlier ledger bytes remain intact. Do not count
+probe runtime again or reconstruct paused time from output volume.
 
 New authorization needs a fresh scope, forecasts and observed resident clock.
-Mark mode changes and at least every 15 active minutes. Count D+L+E once;
+Mark mode changes and at least every15 active minutes. Count D+L+E once;
 setup, publication, recovery, waits and unknown tails earn no research credit.
-Old surplus pays none of a fresh commitment. Never pad or infer time from
-output volume. The unstable-host retry allowance requires preserving failed
-outputs and costs; do not guess that deterministic errors are hardware.
+Old surplus pays none of a fresh commitment. The unstable-host retry allowance
+requires preserving failures and costs; do not guess deterministic errors are
+hardware. No subagents are authorized by this continuation alone.
 
-s14 generation/screens/synthesis 82.37%/14.95%/2.67%; X/R 88.44%/11.56%.
-This favored exploratory construction, not retrospective quota repair.
-Program total is about 30.31 hours; the 16-hour review is complete, next 40/100.
+s15 generation/screens/synthesis 71.57% / 22.77% / 5.67%; X/R 94.81% / 5.19%.
+These observed coarse classifications are not repaired quotas. Program total
+is about 34.32 hours; the 16-hour review is complete, next40/100 hours.
 
 ## Promising routes and cheap next screens
 
-**N14-T/v1, numerical receipts.** [Finite envelopes](s14/finite_transport.md),
-[second scalar](s14/second_receipt.md), [sharp upper](s14/two_scalar_upper.md)
-and [partial decision](s14/receipt_decision.md) give a focused mathematical
-target. Two partial receipts certify value < 0.24 where one permits 0.256;
-the checker makes zero new operator calls AFTER acquiring its evidence.
-[Norm caps](s14/capped_response.md) and [receipt design](s14/receipt_design.md)
-are separate extensions. First compare the exact information contract to
-robust least squares, graph-gap geometry and operator/Gram-SDP methods.
-Use [economic screens](s14/cost_screen.md) before another broad numerical grid.
+**N15-P/v1, sharp numerical receipts.** [Norm envelopes](s15/norm_transport.md),
+[joint target](s15/joint_target.md) and [relative scale](s15/relative_scale.md)
+extend the information contract to arbitrary finite norms and p>1. Endpoint
+and rank-one path adapters are separate. First compare the exact envelope
+and sharpness witnesses to quotient/graph norms, robust least squares and
+operator interpolation. A mathematical contribution can succeed without a
+CPU benchmark. For a bounded usable receipt, start with rational p and outward
+intervals; strict thresholds can be certified, equality may remain unresolved.
+Do not treat floating optimizers as outward proofs or original receipts as free.
 
-**R14-L/v1, incomplete model evidence.** [Hidden rank](s14/hidden_rank.md),
-[sequential certification](s14/sequential_rank.md), [joint receipts](s14/joint_receipts.md)
-and [learned scope](s14/learned_scope.md) support a common protected event.
-A graph example expands budget 1→5; retaining cross-case dependence tightens
-the SAME imported scenario risk upper 17.21%→3.37% with 980 equations.
-[The closer baseline](s14/scenario_baseline.md) already beats our elementary
-bound on its initial example: do not promote that weaker-baseline comparison
-as a new statistical advance. Find one economical acquisition duty and
-compare partial-label/scenario methods and direct policy validation.
-Preserve fixed features, iid latent cases, truthfulness, cohort retention and
-[confidence scope](s14/confidence_scope.md). [Counterfactual pullbacks](s14/counterfactual_rules.md)
-require independently justified intervention semantics.
+**R15-C/v1, structured model correction.** [Error skeleton](s15/error_skeleton.md),
+[forecast range](s15/forecast_range.md), [private scope](s15/private_scope.md) and
+[feature repair](s15/feature_repair.md) offer alternative acquisition routes.
+Select one plausible paid access regime before expanding the harness. The
+rank 4 forecast comparison gives at least 13.35499% fewer expected full-vector
+probes than its declared fixed-theta control, retaining cap 7; it is an analytic
+bound. Halt Fast! precedes generic safe learned mixtures. Retained input features
+strengthen ordinary correction: the constructed1008 versus 4480 coordinate-output
+example saves77.5% of that component, but identical interpolation ties and full
+cost is unknown. Give controls known rank, feature caching, symbolic factoring
+and shared solves when available. Private validation hides samples and retires
+on rejection; algebraic edits and fresh statistical recompression have different
+confidence costs. Approximate membership needs an independent residual warrant.
 
-**I14-Q/v1, nonlinear acquisition.** [Perfect-code readout](s14/perfect_code_invoice.md)
-has 12.5% mean error, one error/block and at least 6.0834% fee advantage over
-the affine-terminal-cell class at reset 100. Hamming coding is classical;
-an identical ordinary nonlinear controller ties. Encoder/decoder work is
-unpriced. Resolve the close cost/causal-coding match and the usefulness of
-the joint acquisition/delivery restriction. [Pure cap7](s14/pure_cap7.md)
-is a separate finite, stronger information duty. Keep its failed conjectures
-and v3 reporting defect visible. The high-reset cap-three lossy optimum
-remains open; avoid expanding its oracle merely because small panels passed.
+**I15-Q/v1, information through computation.** [Query criteria](s15/pure_query_criteria.md),
+[balanced summary](s15/balanced_summary.md), [symmetric flows](s15/symmetric_flows.md)
+and [approximate purity](s15/approx_purity.md) distinguish approximate and exact
+random-time identification. Fresh randomness, hidden state, per-tape purity and
+approximate purity are different contracts. Find a natural client needing the
+count-only restriction and compare the closest randomized-query formulation.
+The Hamming cap 6 result changes the previous cap 7 duty and uses more episodes;
+it is not a new fee win. Reject an artificial interface before more engineering.
 
-Keep other mechanisms and cross-question connections available. These three
-routes do not exhaust the search. Rediscoveries are labelled in search.md.
+Keep partial-proof program selection, conditional transport, model-error
+cancellation and other cross-question mechanisms available. The new targets
+are alternatives, not prerequisites for one giant gate. Known generic methods
+are labelled in search/literature/failures. A savings claim needs complete cost;
+a theorem needs its exact proof and useful information contract. Apply the
+hurdle appropriate to the contribution being claimed.
 
 ## Forecasts, table and publication
 
-New N14-T/v1, R14-L/v1 and I14-Q/v1 events are UNASSESSED. I13-R/v1's
-historical 55–75%, central 65% concerns its own exact acquisition event;
-F01/S28-B1/V1's 20–45%, central 30% concerns complete-cost empirical transfer.
-Neither was reassessed or rerun. There is no new 80% readiness or program-wide
-probability. Do not weaken a target to inflate its forecast.
+N15-P/v1, R15-C/v1 and I15-Q/v1 are UNASSESSED. I13-R/v1's historical 55–75%,
+central 65% concerns its earlier acquisition event; F01/S28-B1/V1's 20–45%,
+central 30% concerns complete-cost empirical transfer. Neither was reassessed
+or rerun. There is no new 80% readiness or program-wide probability. Do not
+weaken a target or inherit another event's number to inflate its forecast.
 
 Append exactly one next boundary to the SAME [table](recurrences.md) and
-[JSON](recurrences.json), preserving all 24 earlier row objects, dates and
-scopes. Keep capability, fees, counted computation, ordinary comparisons and
-guarantees visible. s10's 57.12% audit-fee and 9.53% named-work reductions are
-historical carries, age 4 at s14. Do not mix constructed tariffs, confidence
-envelopes and observed performance.
+[JSON](recurrences.json), preserving all 25 earlier row objects, dates and scopes.
+Keep capability, fees, counted computation, ordinary comparisons and guarantees
+visible. s10's 57.12% audit-fee and 9.53% named-work reductions are historical
+carries, age 5 at s15. Do not mix tariffs, confidence bounds and observed performance.
 
 Synchronize TODO/plan/claims/actuals/work log, evidence and failure records.
 Stage intended changes and run AGENTS.md path/evidence checks. Use authorized
-commit/publication, verify the branch/PR head and actual CI state, and attach
-the PR. No merge, promotion or automatic next recurrence follows. Transport
-and packaging are not research. End with a short self-contained chat summary.
+commit/publication, verify branch/PR head and actual CI state, and attach the PR.
+No merge, promotion or automatic next recurrence follows. Transport and packaging
+are not research. End with a short self-contained chat summary.

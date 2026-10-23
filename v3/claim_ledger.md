@@ -1,5 +1,15 @@
 # Phase-three claims and obligations
 
+**Latest pointer — October 23, 2026 UTC, Codex (GPT-6):** [s15 assessment](discovery/s15/scientific_assessment.md),
+[targets](discovery/s15/verification_targets.md), [metrics](discovery/s15/progress_metrics.json).
+Sharp normed counterfactual envelopes, structured model correction and partial-proof
+selection remain DEVELOPMENT. The13.35499% probe-bound and77.5% coordinate-output
+comparisons have separate analytic/constructed scopes, not fresh audit or CPU gains.
+Ordinary identical implementations tie. N15-P/R15-C/I15-Q are UNASSESSED;
+I13-R/v1 and F01 remain dated historical forecasts. P3-POS01 OUTSTANDING;
+no promotion. Earlier dated entries retain their exact scopes.
+
+
 **Latest pointer — October21,2026 UTC, Codex (GPT-6):** [s13 assessment](discovery/s13/scientific_assessment.md),
 [targets](discovery/s13/verification_targets.md), [metrics](discovery/s13/progress_metrics.json).
 P3-POS01 OUTSTANDING; no promotion. I13-R/v1 subjective55–75%, central65%,
