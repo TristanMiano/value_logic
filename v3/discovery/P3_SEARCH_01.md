@@ -4,25 +4,27 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
-**Current continuation — October 21, 2026 UTC, Codex (GPT-6):**
-[s13 checkpoint](s13/checkpoint.md), [findings](s13/findings.md),
-[exact actuals](s13/effective_actuals.json), [single recurrence table](recurrences.md).
-The fresh four-hour increment is CLOSED: 240.555733333333333… research minutes.
-C001/program is 1578.594570685783333… and phase
-2664.725938049933333… minutes. All183 intervals share one runtime;
-nine interrupted/mixed research intervals and explicit recovery are excluded.
-No active research clock remains.
+**Current continuation — October 23, 2026 UTC, Codex (GPT-6):**
+[s14 checkpoint](s14/checkpoint.md), [findings](s14/findings.md),
+[actuals](s14/effective_actuals.json), [single recurrence table](recurrences.md).
+The fresh four-hour recurrence is CLOSED: 240.117933333333… research minutes.
+C001/program is 1818.712504019117… and phase 2904.843871383267… minutes.
+The142 same-runtime intervals have fourteen research exclusions and one
+E-to-D reclassification; explicit context recovery is also excluded.
+No active research clock remains. The35-family count is unchanged.
 
 **C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no promotion.**
-The35-family count is unchanged. A general acquisition-rate construction cuts
-the stated n100/H4/reset1/2 query/reset bill2.370985%, while preparation rises
-592 versus494 choices. Ordinary implementations tie. Partial-receipt action
-warrants and scalar-value intervention certificates broaden the portfolio.
-[I13-R/v1 readiness](s13/forecast_final.md) is55–75%, central65%, subjective
-and below80%; R13-W/N13-V remain UNASSESSED. F01's October14 range20–45%,
-central30%, is an unchanged different event. See [targets](s13/verification_targets.md).
-Continue broad discovery under the useful, moderately novel contribution
-standard; default one hour unless the author overrides. No automatic session.
+Small numerical receipts now certify new counterfactual thresholds; partial
+and joint evidence supports changing model scopes; a nonlinear query/reset
+construction saves at least6.0834% against its declared affine class at12.5%
+mean error/reset100. Ordinary identical implementations tie. No new CPU or
+audit-stream gain is claimed. A closer established scenario bound beats the
+new elementary bound on its headline example; that comparison is retained.
+[New contribution targets](s14/verification_targets.md) are UNASSESSED.
+I13-R/v1's historical55-75%, central65% and F01's20-45%, central30% concern
+different events and are unchanged. Continue broad discovery under the
+useful, moderately novel contribution standard; default one hour unless
+the author overrides. No automatic next session.
 
 ## 1. Objective and scope
 
