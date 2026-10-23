@@ -19,7 +19,7 @@ one dependency-closure test expects POSIX separators. These eight outcomes
 match the documented s13 local limitations. The additional link failure
 occurred because the full suite started before this session's manifest was
 created. The original [failed run](pub/verification_initial.txt) is retained.
-The [targeted link rerun](pub/links_after_manifest.txt) records the check
+The [targeted link rerun](pub/links_after_manifest.txt) passes all six tests
 after creating that target. No unrelated implementation was changed or
 failure attributed to hardware. The local full suite is not reported as passing.
 
@@ -41,5 +41,19 @@ Linux CI with the declared dependencies is assessed separately below.
 
 ## Publication receipt
 
-Pending publication. This paragraph will be replaced with the observed
-branch/PR identity and CI state. No passing CI result is presumed.
+Research commit **9067fdebba8b5fe9240a266830554c36fef99105** was pushed to
+codex/discovery-20261022-s14. [PR 16](https://github.com/TristanMiano/value_logic/pull/16)
+is open against main and attached to this chat. [Creation receipt](pub/pr_created.json)
+reports that exact research head. The connector was unavailable; the
+repository-scoped REST helper used the configured Git credential in memory,
+without logging or persisting it. No merge was performed.
+
+The [initial CI snapshot](pub/ci_initial.json) records the push mathematical
+Markdown workflow passing and the remaining push/pull-request workflows
+running. Pending is not a success claim. The publication receipt commit
+follows the research commit; inspect Git/PR 16 for its exact latest SHA and
+checks. Final local/remote/PR-head agreement and observed CI are also reported
+in the closing chat, avoiding a self-referential commit receipt.
+
+This completes the requested s14 handoff. No active research clock, automatic
+next recurrence, automation change, merge or author promotion follows.
