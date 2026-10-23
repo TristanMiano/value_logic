@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "contributor": "Codex (GPT-6)",
+  "scope": "exact 3-, 7- and 15-bit quantizer and count checks; exact 7-bit fee inequality",
+  "started_utc": "2026-10-23T00:50:17.723475+00:00",
+  "ended_utc": "2026-10-23T00:50:17.863762+00:00",
+  "panels": [
+    {
+      "r": 2,
+      "block": 3,
+      "cap": 4,
+      "worlds": 8,
+      "cells": 2,
+      "queries": "7/2",
+      "error_fraction": "1/4",
+      "comparisons": [
+        {
+          "f": 10,
+          "candidate_fee": "27/2",
+          "affine_lower_float": 9.0,
+          "saving_percent_float": -50.0
+        },
+        {
+          "f": 100,
+          "candidate_fee": "207/2",
+          "affine_lower_float": 76.5,
+          "saving_percent_float": -35.29411764705883
+        },
+        {
+          "f": 1000,
+          "candidate_fee": "2007/2",
+          "affine_lower_float": 751.5,
+          "saving_percent_float": -33.532934131736525
+        },
+        {
+          "f": 10000,
+          "candidate_fee": "20007/2",
+          "affine_lower_float": 7501.5,
+          "saving_percent_float": -33.35332933413318
+        }
+      ]
+    },
+    {
+      "r": 3,
+      "block": 7,
+      "cap": 22,
+      "worlds": 128,
+      "cells": 16,
+      "queries": "29/2",
+      "error_fraction": "1/8",
+      "comparisons": [
+        {
+          "f": 10,
+          "candidate_fee": "49/2",
+          "affine_lower_float": 17.022800771422713,
+          "saving_percent_float": -43.924612224386415,
+          "conservative_exact_lower": "203/12",
+          "conservative_exact_saving": "-13/29",
+          "conservative_saving_percent_float": -44.827586206896555
+        },
+        {
+          "f": 100,
+          "candidate_fee": "229/2",
+          "affine_lower_float": 122.97800771422709,
+          "saving_percent_float": 6.893921825378769,
+          "conservative_exact_lower": "1463/12",
+          "conservative_exact_saving": "89/1463",
+          "conservative_saving_percent_float": 6.08339029391661
+        },
+        {
+          "f": 1000,
+          "candidate_fee": "2029/2",
+          "affine_lower_float": 1182.530077142271,
+          "saving_percent_float": 14.209370263827559,
+          "conservative_exact_lower": "14063/12",
+          "conservative_exact_saving": "1889/14063",
+          "conservative_saving_percent_float": 13.43241129204295
+        },
+        {
+          "f": 10000,
+          "candidate_fee": "20029/2",
+          "affine_lower_float": 11778.050771422711,
+          "saving_percent_float": 14.973197226332601,
+          "conservative_exact_lower": "140063/12",
+          "conservative_exact_saving": "19889/140063",
+          "conservative_saving_percent_float": 14.200038554079237
+        }
+      ]
+    },
+    {
+      "r": 4,
+      "block": 15,
+      "cap": 2062,
+      "worlds": 32768,
+      "cells": 2048,
+      "queries": "2077/2",
+      "error_fraction": "1/16",
+      "comparisons": [
+        {
+          "f": 10,
+          "candidate_fee": "2097/2",
+          "affine_lower_float": 25.04616649236046,
+          "saving_percent_float": -4086.269385056638
+        },
+        {
+          "f": 100,
+          "candidate_fee": "2277/2",
+          "affine_lower_float": 132.3366649236046,
+          "saving_percent_float": -760.3057970799205
+        },
+        {
+          "f": 1000,
+          "candidate_fee": "4077/2",
+          "affine_lower_float": 1205.241649236046,
+          "saving_percent_float": -69.13620611203758
+        },
+        {
+          "f": 10000,
+          "candidate_fee": "22077/2",
+          "affine_lower_float": 11934.29149236046,
+          "saving_percent_float": 7.506029938466696
+        }
+      ]
+    }
+  ],
+  "parity_checks": 2064,
+  "ordinary_equivalent": "identical Hamming quantizer and invoice adapter ties",
+  "complete_cost_or_cpu_gain": false,
+  "elapsed_ns": 139644300,
+  "source_sha256": "4bad40792742ddceffce8c9970759873c1c3ad991bdf37b9ca6bbc28cb9e84f7"
+}

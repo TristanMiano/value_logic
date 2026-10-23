@@ -1,28 +1,28 @@
 # Phase Three: Reasoning About Unresolved Mathematics
 
-Current update: **Codex (GPT-6), October21,2026 UTC**. Earlier attributions
-and scientific records retain their original scopes.
+Current update: **Codex (GPT-6), October 23, 2026 UTC**. Earlier records and
+attributions retain their historical scopes.
 
 **P3-01–10 complete at their declared scopes; C001 OPEN; P3-POS01 OUTSTANDING;
-P3-11 deferred.** The latest author-requested four-hour recurrence adds
-240.555733333333… research minutes. Program1578.594570685783… minutes;
-phase2664.725938049933… minutes. All research clocks are closed. Default
-sessions are one hour, subject to explicit author duration overrides.
+P3-11 deferred.** The latest four-hour recurrence adds 240.117933333333…
+research minutes. Program 1818.712504019117… minutes; phase 2904.843871383267…
+minutes. Research clocks are closed. Default sessions are one hour unless
+the author explicitly overrides the duration.
 
-Read [s13 checkpoint](discovery/s13/checkpoint.md), [findings](discovery/s13/findings.md),
-[assessment](discovery/s13/scientific_assessment.md), [table](discovery/recurrences.md)
-and [continuation](discovery/CONTINUE.md). The strongest new candidate is an
-all-size acquisition rate and binary decision frontier. Its named fee example
-improves2.370985%, with increased preparation and an ordinary-method tie.
-Partial-receipt task warrants and scalar numerical intervention certificates
-extend other routes. Classical antecedents and complete-cost limits are explicit.
+Read [s14 checkpoint](discovery/s14/checkpoint.md), [findings](discovery/s14/findings.md),
+[assessment](discovery/s14/scientific_assessment.md), [table](discovery/recurrences.md)
+and [continuation](discovery/CONTINUE.md). Small numerical receipts now support
+new counterfactual decisions; incomplete evidence supports jointly protected
+model scopes; nonlinear acquisition supplies a scoped fee advantage at
+moderate error. Identical ordinary methods tie. Strong classical antecedents,
+the closer statistical baseline and unknown complete costs remain explicit.
 
-I13-R/v1 readiness is subjective55–75%, central65%, below80%. R13-W/N13-V
-remain unassessed. F01's dated20–45%, central30%, concerns a different event.
-A useful, moderately novel contribution is the target; no universal learner
-or superiority over every conventional method is required. Continue broad
-generation and early rejection. [TODO](../TODO_v3.md) and [protocol](RESEARCH_PROTOCOL.md)
-govern the open program; [reproduction](discovery/s13/reproduce.md) preserves evidence.
+New [contribution events](discovery/s14/verification_targets.md) are UNASSESSED.
+I13-R/v1's 55–75%, central 65% and F01's 20–45%, central 30% are unchanged
+historical forecasts for different events. A useful, moderately novel
+contribution is worthwhile; no general learner or universal superiority is
+required. Continue broad generation and early rejection. [TODO](../TODO_v3.md)
+and [protocol](RESEARCH_PROTOCOL.md) govern the open program.
 
 ## Research direction
 

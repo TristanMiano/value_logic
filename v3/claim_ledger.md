@@ -958,3 +958,19 @@ session/program/phase research nanoseconds are14,422,390,000,000 /
 All new claims are DEVELOPMENT. [Failures](discovery/s13/failures.md) preserve
 the refuted biased potential and n2/cap3 interface correction. F01/S28-B1/V1
 was neither executed nor reassessed. See the exact [verification events](discovery/s13/verification_targets.md).
+
+## s14 constructive claims — October23,2026, Codex (GPT-6)
+
+All entries DEVELOPMENT; no independent confirmation or promotion.
+
+| Object | Type and explicit delta | Evidence / strongest comparison / limit |
+| --- | --- | --- |
+| N14-T/v1 | Sharp counterfactual value envelopes from one/two retained scalars; two partial receipts certify<0.24 while one admits0.256. Paid norm cap separately certifies>0.045. | [Decision](discovery/s14/receipt_decision.md), [cap](discovery/s14/capped_decision.md). Robust least squares/operator interpolation are close prior. Zero new calls after evidence is a capability, not a complete-cost claim. |
+| R14-L/v1 | Hidden-rank certificates and one common event support partial/joint evidence, sequential acquisition and revised inference scope. Worked budget1→5; same scenario upper17.21%→3.37% from cross-case dependence. | [Scope](discovery/s14/learned_scope.md), [joint evidence](discovery/s14/joint_receipts.md), [closer baseline](discovery/s14/scenario_baseline.md). Classical scenario/Rado/completion/abstraction ingredients. No observed-error or acquisition saving; new elementary statistical bound loses to closer prior. |
+| I14-Q/v1 | Nonlinear code readout beats the entire affine-terminal-cell class at the same12.5% error by at least6.0834% query/reset fees at reset100. | [Construction](discovery/s14/perfect_code_invoice.md). Classical Hamming quantization; identical ordinary nonlinear realization ties. Internal work unpriced. |
+| Small information contracts | Four-receipt width−49.68%; finite pure-summary cap7 and23 mean queries versus cap8/30 in four episodes. | [Design](discovery/s14/receipt_design.md), [pure cap](discovery/s14/pure_cap7.md). Named restricted comparators; stronger purity contract, no generic speedup or mean-bill optimum. |
+
+[Assessment](discovery/s14/scientific_assessment.md), [targets](discovery/s14/verification_targets.md)
+and [failures](discovery/s14/failures.md) distinguish established ingredients,
+adaptations, useful consequences and open novelty. The three new events are
+unassessed; I13-R/v1 and F01 forecasts are historical carries, not updates.
