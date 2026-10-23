@@ -1,0 +1,7 @@
+This completes the resumed four-hour discovery recurrence after PR #16 was merged. It develops sharp counterfactual bounds across finite normed spaces, structured correction of fallible polynomial models, partial-proof policy selection, and information through restricted computation counts. The session records 240.221316666666… credited research minutes; interruptions and recovery are excluded.
+
+The progress table now shows the relevant scoped gains: at least 13.35499% fewer expected range probes against a declared control, with the same cap of seven, and 1008 versus 4480 truth-coordinate outputs in a constructed correction example. These are analytic bounds/component counts, not new audit-fee or CPU measurements. Identical ordinary methods tie; closest-prior limits and failed probes remain visible. New contribution targets are unassessed, and no promotion is claimed.
+
+The continuation prompt keeps the broader five-question goal and useful, moderately novel contribution standard. All 24 prior recurrence objects and the earlier ledger prefix are preserved. The 35-family inventory is unchanged.
+
+Validation: evidence/source bindings, staged bytes, mathematical Markdown, path length, and historical relocation checks pass. The local full suite ran 1,697 tests with the same eight documented Windows/dependency limitations (three missing-package imports, four newline fixtures, one separator expectation); no link failure occurred. GitHub CI is reported separately on this PR. No merge is requested by this publication.

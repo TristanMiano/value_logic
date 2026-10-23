@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "linear_cases": [
+    {
+      "source": "uniform_F2_image",
+      "rank": 0,
+      "delta": "1/10",
+      "false_probability": "0",
+      "cap": 6
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 0,
+      "delta": "1/100",
+      "false_probability": "0",
+      "cap": 12
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 1,
+      "delta": "1/10",
+      "false_probability": "1/64",
+      "cap": 9
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 1,
+      "delta": "1/100",
+      "false_probability": "1/4096",
+      "cap": 15
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 2,
+      "delta": "1/10",
+      "false_probability": "197/32768",
+      "cap": 12
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 2,
+      "delta": "1/100",
+      "false_probability": "12293/134217728",
+      "cap": 17
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 3,
+      "delta": "1/10",
+      "false_probability": "232037/134217728",
+      "cap": 14
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 3,
+      "delta": "1/100",
+      "false_probability": "939552961/17592186044416",
+      "cap": 20
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 4,
+      "delta": "1/10",
+      "false_probability": "2014718297/2199023255552",
+      "cap": 17
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 4,
+      "delta": "1/100",
+      "false_probability": "263906282821561/18446744073709551616",
+      "cap": 23
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 5,
+      "delta": "1/10",
+      "false_probability": "68274449547649/288230376151711744",
+      "cap": 20
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 5,
+      "delta": "1/100",
+      "false_probability": "571862708990715308993/154742504910672534362390528",
+      "cap": 25
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 6,
+      "delta": "1/10",
+      "false_probability": "18165755751198505129/302231454903657293676544",
+      "cap": 22
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 6,
+      "delta": "1/100",
+      "false_probability": "9748789822949706396230761141/5192296858534827628530496329220096",
+      "cap": 28
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 7,
+      "delta": "1/10",
+      "false_probability": "38384168985359629774228861/1267650600228229401496703205376",
+      "cap": 25
+    },
+    {
+      "source": "uniform_F2_image",
+      "rank": 7,
+      "delta": "1/100",
+      "false_probability": "659423764539400354573431872559455581/1393796574908163946345982392040522594123776",
+      "cap": 31
+    }
+  ],
+  "polynomial_case": {
+    "source": "F3:(x,y)->(x,x*y)",
+    "false_probability": "30794281739/68630377364883",
+    "delta": "1/10",
+    "cap": 19
+  },
+  "cap_examples": [
+    {
+      "rank": 0,
+      "theta_half_cap": 2,
+      "theta_tenth_cap": 4,
+      "mixture_cap": 3,
+      "earlier_consecutive_three_cap": 3
+    },
+    {
+      "rank": 1,
+      "theta_half_cap": 4,
+      "theta_tenth_cap": 5,
+      "mixture_cap": 4,
+      "earlier_consecutive_three_cap": 6
+    },
+    {
+      "rank": 4,
+      "theta_half_cap": 7,
+      "theta_tenth_cap": 8,
+      "mixture_cap": 7,
+      "earlier_consecutive_three_cap": 15
+    },
+    {
+      "rank": 16,
+      "theta_half_cap": 22,
+      "theta_tenth_cap": 21,
+      "mixture_cap": 21,
+      "earlier_consecutive_three_cap": 51
+    },
+    {
+      "rank": 128,
+      "theta_half_cap": 155,
+      "theta_tenth_cap": 138,
+      "mixture_cap": 139,
+      "earlier_consecutive_three_cap": 387
+    }
+  ],
+  "stale_span_counterexample": {
+    "source": "identity_F2_dimension8",
+    "probes_before_false_certificate": 6,
+    "false_certificate_probability": "1",
+    "reason": "Reclassifying each probe as belonging to the span after adding it makes every indicator one; six vectors cannot span dimension eight."
+  },
+  "source_sha256": "4d44ed2e4cdc94be5e061af6ff58f914795d484839bfc42e7a69f731dae0ebb1",
+  "python": "3.12.14",
+  "elapsed_ns": 0,
+  "scope": "Exact finite laws and cap arithmetic; no measured acquisition cost or asynchronous cap."
+}
