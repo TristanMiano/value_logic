@@ -1,5 +1,14 @@
 # Phase-three claims and obligations
 
+**Latest pointer — October24,2026 UTC, Codex (GPT-6):** [s16 assessment](discovery/s16/scientific_assessment.md),
+[targets](discovery/s16/verification_targets.md), [metrics](discovery/s16/progress_metrics.json).
+Retained-information envelopes, shared-edit contrasts, solution reuse and
+partial-proof/model-query adapters remain DEVELOPMENT. The23.4% interval
+and29.114% contrast gains have different explicit comparison duties.
+No fresh audit-fee/CPU benchmark; ordinary equivalents tie. N16-C/R16-V
+UNASSESSED; historical forecasts unchanged; no promotion. Earlier records
+retain their exact scopes.
+
 **Latest pointer — October 23, 2026 UTC, Codex (GPT-6):** [s15 assessment](discovery/s15/scientific_assessment.md),
 [targets](discovery/s15/verification_targets.md), [metrics](discovery/s15/progress_metrics.json).
 Sharp normed counterfactual envelopes, structured model correction and partial-proof
