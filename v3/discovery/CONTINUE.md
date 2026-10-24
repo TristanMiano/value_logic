@@ -1,5 +1,16 @@
 # Portable continuation: broad discovery, default one hour
 
+**Active override: s17 is in progress.** The author requested a fresh four-hour
+recurrence focused on assessing N16-C/v1, with a temporary exception to the
+usual allocation. Read [s17 session](s17/session.md), [claim](s17/claim.md) and
+[authority](../decisions/2026-10-24_s17_assessment.md) before doing anything with
+its clock. PR18 was verified merged at e709bc316c352547242fbb43b4fcd6d7ce97927b.
+The resident s17 clock and its exclusion dispositions, not this older completed
+summary, determine the remaining commitment. A context refresh must resume s17.
+The [active checkpoint](s17/active_checkpoint.md) records the latest durable
+mid-session state, the completed forty-hour portfolio review and the current
+claim-specific readiness assessment. It is not a session closure.
+
 Latest completed research: **s16**, Codex (GPT-6), October24,2026 UTC.
 The fresh four-hour commitment is CLOSED: **240.159616666666… research minutes**.
 No active clock or unfinished s16 floor remains. Read [checkpoint](s16/checkpoint.md),

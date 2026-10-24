@@ -1,5 +1,10 @@
 # Value Logic Phase Three: Logical Uncertainty and Counterfactuals
 
+**Active recurrence:** [s17](v3/discovery/s17/session.md) assesses the bounded
+N16-C/v1 contribution under the author's fresh four-hour override. PR18 is
+verified merged. The completed totals below exclude this active session; see
+its observed clock and dispositions for progress. No promotion has occurred.
+
 **Latest recurrence — October24,2026 UTC:** [s16](v3/discovery/s16/checkpoint.md)
 is CLOSED after240.159616666666… research minutes under the
 [four-hour override](v3/decisions/2026-10-23_s16_four_hours.md).
