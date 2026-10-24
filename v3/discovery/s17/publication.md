@@ -39,3 +39,13 @@ uses the normal authorized repository API. An open-PR lookup found no existing
 s17 PR before creation. This file and pub/ logs are excluded from the research
 manifest to avoid circularity. Final local/remote/PR-head agreement and observed
 CI state are reported in chat after the last receipt commit. No merge follows.
+
+Closing research commit **e47f76bff3be980b345615e820eac33092c4f813** was pushed.
+[PR19](https://github.com/TristanMiano/value_logic/pull/19) is open against main
+and attached to this chat; the [creation receipt](pub/pr_created.json) binds
+that head. The [initial CI receipt](pub/ci_initial.json) records six push/PR
+workflows queued or running. Pending is not success. This publication-receipt
+commit follows that research commit, so its exact latest head and CI must be
+checked after pushing. Final observed agreement and results are reported in
+the closing chat, avoiding a self-referential receipt. No merge, promotion,
+automatic recurrence or automation change has occurred.
