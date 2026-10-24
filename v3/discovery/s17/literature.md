@@ -430,3 +430,201 @@ search also returned already inspected robust-LS parameter-selection work
 and unrelated statistical-rate results. Search results are leads, not a
 novelty certificate. This closes this particular search pass; the precise
 operator-interpolation comparison remains the strongest identified control.
+
+## Further exact-learning and robust-value comparisons
+
+**Angluin and Dohrn (2017), [The Power of Random Counterexamples](https://proceedings.mlr.press/v76/angluin17a/angluin17a.pdf).**
+Read Sections 1--3's query contract and Section 5, including Theorem 21's
+induction and Theorem 23's high-probability argument. The elimination-graph
+existence proof in Section 4 was not reconstructed. This strengthens the
+existing comparison to public counterexample learning: a random witness is
+an established information resource, and small query count does not imply
+cheap hypothesis computation. It does not establish the private-check
+service's complete economics or provide an all-input polynomial margin.
+
+**Cherapanamjeri et al. (2023), [Robust Algorithms on Adaptive Inputs from
+Bounded Adversaries](https://arxiv.org/pdf/2304.07413).** Read the introduction,
+dynamic-regression contract and Theorems 1.1--1.2 statements; locate Section
+5.1's unlimited-query KDE setting. The later algorithmic proofs were not
+audited. This is relevant prior work on protecting reused randomness and
+restricting adaptive interactions. Its approximate regression/KDE duties
+differ from exact polynomial scope checks with independently bought public
+repairs. No new adaptive-data principle or quantitative theorem is imported.
+Hardt--Woodruff's adaptive-sketching abstract was also located; no proof from
+that paper was read in this pass.
+
+**Beck and Ben-Tal (2009), [Duality in robust optimization: Primal worst
+equals dual best](https://www.tau.ac.il/~becka/25.pdf).** Read the introduction,
+Section 2 through Example 2.2's robust and optimistic least-squares reduction,
+and Theorem 4.1 with its proof and Example 4.2. The former reduces a fixed
+matrix's favorable perturbation to a positive-part residual norm difference;
+the latter explicitly requires concavity in uncertainty for its minimax
+equality and exhibits failure without it. These are direct predecessors of
+the scalar parameter and quantifier discussion. They do not justify applying
+a minimax exchange to the N16 compatibility class. The separate
+[fixed-source S-lemma reduction](fixed_source.md) remains the stronger exact
+value comparison for this claim. Section 3's LP derivation was not audited.
+
+**Golub, Hansen and O'Leary, [Tikhonov Regularization and Total Least
+Squares](https://drum.lib.umd.edu/bitstreams/1502d531-6ec5-4fd5-8eb1-779241ecc65e/download),
+1998 technical report.** Read the introduction, Section 2 formulations and
+Theorem 2.2 with its proof; inspect Theorem 2.3's statement. The retrieved
+text has poor mathematical character extraction. The source studies a
+joint matrix/right-hand-side fitting error under a solution-norm constraint,
+including positive and negative regularization parameters. Those established
+connections caution against claiming novelty for optimistic quadratic
+fitting or secular equations. No precise constant from this source is used,
+and it is not identified as the compressed-response endpoint theorem.
+
+Moazeni--Coleman--Li's [Regularized robust optimization: the optimal portfolio
+execution case](https://cs.uwaterloo.ca/~yuying/papers/regularized_robust.pdf)
+was a search lead. Its abstract and located stability-theorem context concern
+a different uncertainty-set problem; the full portfolio analysis was not
+read or imported. These additional screens refine attribution, not a proof
+that the relevant literature contains no equivalent analytic result.
+
+## Relative graphs, spectral subspaces and Poisson kernels
+
+**Ryu, Hannah and Yin, [Scaled Relative Graphs](https://arxiv.org/pdf/1902.09788),
+v4, June 2021.** Read Section 3.3's SRG-full definition and Theorem 2,
+Theorems 3--4 and their proofs, Section 4.4's sum theorem and proof, and the
+composition statement and failure example around Theorem 7. The inversion
+theorem was located, but its whole proof was not reconstructed. Their exact
+class calculus requires SRG-fullness and, for the stated equality for sums,
+a chord property. Finite anchored observations of a particular resolvent
+are not automatically such an operator class. This supplies a strong
+geometric comparison and cautions against importing a scalar diagram as a
+matrix theorem; the rest of the 49-page paper was not audited.
+
+**Pates, [The Scaled Relative Graph of a Linear Operator](https://arxiv.org/pdf/2106.05650),
+v2, August 2021.** Read the introduction, Beltrami--Klein setup, Theorem 1's
+statement and the proof of equation (3.1), plus Theorem 2 and its proof for
+real complexification. The graph isometry involving
+`(I+T*T)^(-1/2)` connects the transformed SRG to a numerical range. The
+real two-dimensional exception matters. The spectral/similarity portions
+of Theorem 1 were not fully reconstructed. This establishes relevant
+graph/resolvent geometry, not the particular constrained ridge-value
+endpoint result under an additive factor budget.
+
+**Quan, Bodard, Oikonomidis and Patrinos, [Scaled relative graphs for pairs
+of operators beyond classical monotonicity](https://arxiv.org/pdf/2511.20209),
+v2, August 2026.** Read the introduction, Definitions II.1--II.2,
+Proposition II.3's statement, and the proofs of Propositions III.1--III.3
+on transformed/warped resolvents and preconditioning. The appendix calculus
+and circuit applications were not fully audited. Paired operator geometry
+is established prior work; its whole-class incremental premises differ
+from the finite anchored block C. No direct specialization giving N16's
+scalar endpoints or finite witnesses was identified in the inspected parts.
+
+**Motovilov and Selin, [Some Sharp Norm Estimates in the Subspace
+Perturbation Problem](https://arxiv.org/pdf/math/0409558), v2, April 2006.**
+Read the introduction, Theorem 1's hypotheses/statement, and Theorem 4.7
+with its reduction to Theorem 1. Its selfadjoint spectral-gap and
+off-diagonal-perturbation assumptions are material. The main proof of
+Theorem 1 was not audited. This comparison does not turn a spectral
+subspace norm bound into a sharp compressed-value information bound.
+
+**Chalendar (2003), [The Operator-valued Poisson Kernel and its
+Applications](https://www.irishmathsoc.org/bull51/S5101.pdf).** Read the
+introduction and Section 2 through Proposition 2.5's proof. The kernel's
+factorization proves positivity for contractions and supports the usual
+polynomial norm inequality. Its premise concerns a contraction and disk
+parameter, not two unknown ridge factors at a specified norm distance.
+The later functional-calculus and invariant-subspace applications were
+not audited. No direct N16 endpoint theorem is imported. The earlier
+Harnack-domination comparison remains distinct from an additive edit bound.
+
+The attempted PDF screenshot calls for the relative-graph sources returned
+references without visible image pixels. Reading claims above concern the
+retrieved text, not visual inspection. Searches also found local solution
+stability and causal sensitivity work; search snippets alone do not settle
+this theorem's novelty.
+
+**Cui, Hoheisel, Nghia and Sun, [Lipschitz Stability of Least-Squares
+Problems Regularized by Functions with C2-Cone Reducible Conjugates](https://arxiv.org/pdf/2409.13118),
+v1, September 2024.** Read the introduction, Theorem 3.5 with its reduction
+to earlier lemmas, and Theorem 3.8's equivalence statement and short proof.
+The full prerequisite strong-regularity machinery was not reconstructed.
+This concerns local single-valued/Lipschitz solution maps for general
+regularizers. It is a relevant stability predecessor, but does not directly
+give global worst edited values over sources sharing a compressed inverse.
+
+**Christensen and Connault (2023), [Counterfactual Sensitivity and
+Robustness](https://discovery.ucl.ac.uk/10160441/2/Christensen_Econometrica%20-%202023%20-%20Christensen%20-%20Counterfactual%20Sensitivity%20and%20Robustness.pdf).**
+Read the introduction, Section 2.1's moment-constrained setup, Section
+2.3's divergence assumptions and Proposition 2.1's dual formulation,
+and Section 2.5's qualification definitions and Theorem 2.1 statement.
+The supplemental proofs and empirical/statistical-inference analysis were
+not audited. Sharp sensitivity bounds with unresolved model features and
+finite dual programs are already conventional research goals. Its
+distributional neighborhood and moment constraints differ from N16's
+operator edit and resolvent information, so no theorem is imported as an
+endpoint solution. The source supports conceptual attribution, not an
+empirical claim for the present construction.
+
+## Additional comparison for the shared-source follow-on
+
+**Lin and Sinnamon (2012), [The Generalized Wielandt Inequality in Inner
+Product Spaces](https://www.math.uwo.ca/faculty/sinnamon/pdf/wielandt.pdf).**
+Read the introduction, the two-inner-product definitions and Lemma 2.1,
+Theorem 2.4's two-dimensional proof and equality construction, Theorem
+2.8 and Corollary 2.9 with proofs, and Theorems 3.1--3.2's matrix
+formulation. The later statistical corollaries were not fully audited.
+These results give sharp angle/cosine comparisons from norm-equivalence
+constants. They are relevant to graph-shear and relative-condition
+interpretations. They do not directly state the diameter of two ridge
+resolvents normalized by their common old resolvent under separate additive
+factor budgets. A reduction could still be possible; the inspected result
+is not excluded merely because its notation differs.
+
+The Hansen UCLA report [cam89-04](https://ww3.math.ucla.edu/camreport/cam89-04.pdf)
+was located through an indexed Section 4 perturbation excerpt. Opening the
+PDF returned zero extracted text lines, so no full theorem/proof audit is
+claimed. The excerpt concerns perturbed regularized solutions rather than
+the common-source relative value contrast. Further search results on
+resolvent diameters were mostly spectral/PDE or statistical concentration
+problems; no theorem is imported from those snippets. The earlier
+Bousselmi--Hendrickx--Glineur interpolation result remains the strongest
+identified constructive formulation for the new Gram certificate too.
+# Late comparison: relative resolvent diameter and conditioning
+
+The two-edit follow-on is separate from N16-C/v1. Searches for a sharp
+relative resolvent diameter, regularized-inverse perturbation constants,
+Tikhonov sensitivity and the unit-radius decimal coefficient did not locate
+an exact matching theorem. Search failure is not novelty evidence. The
+strongest comparison instead came from a direct combination of the already
+credited Young bounds, giving [an exact analytic coefficient](pair_radius.md)
+for every radius. It supersedes the apparent SDP coefficient advantage.
+
+* Diao, Wei and Qiao, [Structured Condition Numbers of Structured Tikhonov
+  Regularization Problem and their Estimations](https://arxiv.org/pdf/1601.02333),
+  v1 January11,2016: read the introduction, the target map and limiting
+  condition-number definitions in section2 (equation2.7), and section3.1's
+  Lemma3 derivative proof and Theorem1 statement/proof. These concern local
+  changes of a linear functional of the regularized solution, with known
+  structured source and data. They establish conventional target-specific
+  sensitivity machinery. The inspected result does not give the global
+  common-center two-edit value diameter. Sections3.2 onward, nonlinear
+  structure proofs and experiments were not audited. No theorem imported.
+* Malyshev, [A Unified Theory of Conditioning for Linear Least Squares and
+  Tikhonov Regularization Solutions](https://epubs.siam.org/doi/10.1137/S0895479801389564),
+  2003: publisher abstract and references only. Exact Frobenius condition
+  numbers and spectral-norm estimates are described; the full proof is
+  subscription content and was not read. It remains a closer conditioning
+  lead, not an excluded prior theorem.
+* Gulliksson, Wedin and Wei, [Perturbation Identities for Regularized Tikhonov
+  Inverses and Weighted Pseudoinverses](https://link.springer.com/article/10.1023/A:1022319830134),
+  2000: publisher abstract and references only. It describes GSVD-based
+  perturbation identities for the regularized inverse and weighted
+  pseudoinverse; no full statement or proof was accessible. No result
+  beyond this scope is inferred.
+* Chu, Lin, Tan and Wei, [Condition numbers and perturbation analysis for the
+  Tikhonov regularization of discrete ill-posed problems](https://research.manchester.ac.uk/en/publications/condition-numbers-and-perturbation-analysis-for-the-tikhonov-regu),
+  2011: author-institution abstract only. The indexed CiteSeer PDF returned
+  HTTP403. It describes normwise/componentwise conditioning, but was not
+  inspected at theorem level.
+
+The initial dblp and DOI tool opens failed; publisher URLs subsequently
+provided the abstracts above. No paid access, inferred full reading or
+hardware diagnosis is claimed. The new exact diameter has a short ordinary
+derivation and remains unassessed for moderate novelty.

@@ -111,6 +111,14 @@ retention and a single targeted value query. No new core implementation blocker
 was found. Independent reconstruction is the purpose of a future confirmation
 task, not an extra full confirmation secretly required before proposing one.
 
+Late comparison refinement: [commuting_control.md](commuting_control.md)
+rules out a scalar spectral-mixture shortcut at non-eigenvector interior
+targets. It helps locate the remaining operator content, but does not
+remove the ordinary SDP or close-prior uncertainty. The separate
+[exact two-edit diameter](pair_radius.md) eliminates its own apparent
+coefficient advantage by a short ordinary proof. Neither finding changes
+the current N16 assessment of60--85%, central75%.
+
 Keep the second-block/source-norm route, solution reuse, private/public repair,
 invoice information and partial-proof selection available. Their events and
 historical probabilities remain separate. This assessment does not start P3-11

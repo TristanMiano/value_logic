@@ -67,6 +67,15 @@ use of fallible, partial information. Attribution and the explicit new
 consequence, rather than an opposition to ordinary methods, determine
 whether this is a worthwhile contribution.
 
+A later [scalar-mixture obstruction](commuting_control.md) rejects another
+tempting reduction: even closed matrix-valued spectral mixtures of scalar
+perturbation bounds can be strictly weaker than the N16 upper endpoint.
+The interior equality construction uses noncommuting edited responses.
+This gives content to the operator aspect of the solution, while leaving
+the strongest ordinary noncommuting SDP comparison intact. Likewise the
+separate [paired contrast](pair_block.md) can have only limiting attainment,
+showing why finite attainment is not automatic from a closed SDP.
+
 ## Main comparison risk
 
 The general interpolation formulation is a routine specialization of prior

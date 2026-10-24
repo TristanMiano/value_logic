@@ -1,10 +1,10 @@
 # Active s17 checkpoint: four-hour floor unfinished
 
 Codex (GPT-6), October 24, 2026 UTC. DEVELOPMENT; not a closing record.
-At the observed 07:31:49.685775 UTC boundary (resident monotonic
-444200484000000), effective closed research was 7,774,984,000,000 ns,
-or 129.583066666... minutes. The remaining commitment was
-6,625,016,000,000 ns, or 110.416933333... minutes. The resident clock is
+At the observed 09:01:26.699793 UTC boundary (resident monotonic
+449577500000000), effective closed research was 11,785,109,000,000 ns,
+or 196.418483333... minutes. The remaining commitment was
+2,614,891,000,000 ns, or 43.581516666... minutes. The resident clock is
 in O/administration while this checkpoint is saved. Read status.py and
 dispositions.json before resuming; raw actuals include excluded intervals.
 
@@ -20,6 +20,26 @@ observed boundary. The prior program total was 137,945,606,241,147 ns; the
 checkpoint does not reset that total or the current floor.
 
 New results after the core assessment are kept separate:
+
+* [Commuting-control obstruction](commuting_control.md): at an interior
+  upper optimizer and a non-eigenvector target, even closed matrix-valued
+  mixtures of scalar perturbations fall strictly below the N16 endpoint.
+  This rejects one shortcut; the conventional noncommuting SDP still ties.
+* [Exact two-edit diameter](pair_radius.md): a short ordinary Young-bound
+  proof gives the best universal relative coefficient for every radius,
+  with a scalar extremizer. At radius one it is2.15964366313254... .
+  Exact identities, root enclosures and a rational quadratic certificate
+  pass. This **supersedes** the earlier0.33156% apparent advantage in
+  relative_pair.md; no positive advantage over the strongest control remains.
+  [Low-response blocks](pair_block.md) have a sharp shared-source contrast
+  supremum that is not finitely attained, unlike each N16 endpoint.
+* [Precision](precision.md) gives explicit truncation and continuity bounds;
+  [finite witnesses](precision_witness.md) show the square-root order is
+  necessary near the boundary. A hand-derived numerator error in the first
+  script was preserved and corrected in a separately versioned script.
+* [Known structured updates](structured_update.md) use ordinary Schur/Woodbury
+  information before the remaining uncertain edit. A worked exact threshold
+  improves on norm-only treatment; the extra retained source actions matter.
 
 * [Targeted retention control](retention_tradeoff.md): one proposed scalar
   query suffices for the selected upper decision; uniform subspace approval
@@ -38,6 +58,11 @@ New results after the core assessment are kept separate:
   bounds 379/6375 and 1664/6195, crossing thresholds 1/20 and 27/100.
   Its full interval equals the intersection of the C-only interval and a
   scalar-plus-norm interval, limiting any standalone novelty interpretation.
+
+The deterministic later-target query bound and public-reference control are
+also saved in late_targets.md and public_reference.md. There is no new
+complete-cost, audit-fee or CPU gain. All these developments remain separate
+from the numerical readiness event. N16 remains60--85%, central75%.
 
 Continue substantive authorized research for the remaining commitment. Do
 not rerun the passed probes without a new concern or spend the floor on
