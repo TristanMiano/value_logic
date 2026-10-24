@@ -44,6 +44,15 @@ not changed.
 The [PR17 verification](pub/pr17_verified.json) reconfirms its merged/closed
 state and the session's base. The repository-scoped REST helper uses the
 configured Git credential only in memory without logging or persisting it.
-The new PR and exact-head remote checks will be recorded after publication.
-A pending check is not success. No merge, promotion, automatic recurrence
-or automation change follows.
+Research commit **32494bc6020cb3dc769c9da6942d9da35ef608b5** was pushed to
+codex/discovery-20261023-s16. [PR18](https://github.com/TristanMiano/value_logic/pull/18)
+is open against main and attached to this chat; the [creation receipt](pub/pr_created.json)
+binds that research head. No merge was performed.
+
+The [initial CI snapshot](pub/ci_initial.json) records six push/PR workflows
+queued or running on the research commit. Pending is not success. This
+publication-receipt commit follows that research commit; inspect the live PR
+for its exact latest head and checks. Final local/remote/PR-head agreement
+and observed CI are reported in the closing chat, avoiding a self-referential
+commit receipt. No merge, promotion, automatic recurrence or automation change
+follows. The research clock remains closed.
