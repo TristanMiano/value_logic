@@ -1,0 +1,185 @@
+{
+  "status": "PASS",
+  "source": [
+    [
+      "40",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1/3",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "40"
+    ]
+  ],
+  "queries": [
+    {
+      "name": "e1",
+      "z": [
+        1,
+        0
+      ],
+      "x": [
+        [
+          "1/40"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "w": [
+        [
+          "1/1600"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "lower": "1599/2560000",
+      "upper": "1/1600",
+      "exact_audit": "1/1601"
+    },
+    {
+      "name": "e2",
+      "z": [
+        0,
+        1
+      ],
+      "x": [
+        [
+          "0"
+        ],
+        [
+          "3/10"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "w": [
+        [
+          "0"
+        ],
+        [
+          "9/10"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "lower": "9/10",
+      "upper": "9/10",
+      "exact_audit": "9/10"
+    },
+    {
+      "name": "e1+e2",
+      "z": [
+        1,
+        1
+      ],
+      "x": [
+        [
+          "1/40"
+        ],
+        [
+          "3/10"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "w": [
+        [
+          "1/1600"
+        ],
+        [
+          "9/10"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "lower": "2305599/2560000",
+      "upper": "1441/1600",
+      "exact_audit": "14419/16010"
+    }
+  ],
+  "midpoint": [
+    [
+      "3199/5120000",
+      "0"
+    ],
+    [
+      "0",
+      "9/10"
+    ]
+  ],
+  "half_width": "1/2560000",
+  "receipt": {
+    "schema": "response-block-v1",
+    "source_id": "s17-primal-dual-acquisition",
+    "dimension": 2,
+    "C_minus": [
+      [
+        "3197/5120000",
+        "0"
+      ],
+      [
+        "0",
+        "2303999/2560000"
+      ]
+    ],
+    "C_plus": [
+      [
+        "3201/5120000",
+        "0"
+      ],
+      [
+        "0",
+        "2304001/2560000"
+      ]
+    ],
+    "V": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "1/2"
+      ]
+    ],
+    "edit_squared": "9",
+    "t_lower": "10",
+    "t_upper": "100",
+    "threshold": "3/5"
+  },
+  "result": {
+    "schema": "response-block-result-v1",
+    "source_id": "s17-primal-dual-acquisition",
+    "lower": "6492488901151970/157298614853884803",
+    "upper": "6638538943999339100/11472231479226969481",
+    "threshold": "3/5",
+    "verdict": "below",
+    "scope": "Conditional on truthful compression, task-basis and edit-norm warrants; exact rational calculation only."
+  },
+  "acquisition_matvec_calls": 6,
+  "acquisition_inverse_calls": 0,
+  "elapsed_ns": 446700,
+  "python": "3.12.14",
+  "source_sha256": "2ce446011ef6ed1a78145615f249185643f40982b70460f56db7e8fbce7cd6a5",
+  "helper_sha256": "22a4ac95cae1953d5a2637f6586a5836a136a01923e5042394c5e60f6ecf14a3",
+  "checker_sha256": "ce818e6154059b8c7f6ef64f0819f6d22afe1b41baffcdf65e5e8bd32515e6b4",
+  "scope": "One constructed exact acquisition pipeline; counts are not an advantage over a strong solver or a complete price."
+}

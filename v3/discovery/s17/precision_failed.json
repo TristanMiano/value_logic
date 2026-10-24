@@ -1,0 +1,13 @@
+{
+  "status": "FAILED",
+  "script": "precision_check.py",
+  "source_sha256": "ba6783a54675db267cb139fd0137c1d1c1bb72c267d9b7c806e984f2241f59a3",
+  "command": "python -X utf8 v3/discovery/s17/precision_check.py",
+  "exit_code": 1,
+  "exception": "AssertionError",
+  "line": 32,
+  "completed_rows": 0,
+  "elapsed_ns": null,
+  "diagnosis": "Deterministic algebra transcription error: the displayed two-by-two inverse numerator is q+3+q^(-2)+2R, not q+2+q^(-2)+2R. The direct inverse calculation exposed the mismatch. No hardware failure is inferred.",
+  "disposition": "Preserve this executed script and failure. Repair in precision_check_v2.py and use a distinct result path. No confirmation claim or favorable retry selection."
+}

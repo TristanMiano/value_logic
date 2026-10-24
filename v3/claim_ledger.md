@@ -1,5 +1,14 @@
 # Phase-three claims and obligations
 
+**Latest pointer — October24,2026 UTC, Codex (GPT-6):**
+[s17 claim](discovery/s17/claim.md), [assessment](discovery/s17/scientific_assessment.md),
+[metrics](discovery/s17/progress_metrics.json). N16-C/v1 is DEVELOPMENT,
+60–85%, central75%; continue developing. The critical proof, prior exact SDP
+comparison and conditional checker are reconstructed. A valid-input formatting
+failure has a versioned repair. Moderate novelty/usefulness of the analytic
+increment remains unresolved. No fresh economic gain or promotion. Other
+targets and historical forecasts retain their scopes;40-hour review completed.
+
 **Latest pointer — October24,2026 UTC, Codex (GPT-6):** [s16 assessment](discovery/s16/scientific_assessment.md),
 [targets](discovery/s16/verification_targets.md), [metrics](discovery/s16/progress_metrics.json).
 Retained-information envelopes, shared-edit contrasts, solution reuse and
