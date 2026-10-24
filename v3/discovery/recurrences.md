@@ -1,11 +1,11 @@
 # C001 recurrence progress
 
 Requested by **Tristan Miano**. Current maintenance: **Codex (GPT-6)**; earlier attributions preserved.
-This is the single chronological recurrence table: **26 recorded rows, ending
-with s16**. Append each future recurrence to this same table.
+This is the single chronological recurrence table: **27 recorded rows, ending
+with s17**. Append each future recurrence to this same table.
 
-**C001 OPEN · 2299 cumulative research minutes · F01 forecast carried from
-October 14: 20–45%, central 30%; I13-R/v1 historical55–75%, central65%; new s16 events UNASSESSED.** Minutes are rounded independently from exact nanoseconds;
+**C001 OPEN · 2539 cumulative research minutes · F01 forecast carried from
+October 14: 20–45%, central 30%; I13-R/v1 historical55–75%, central65%; N16-C/v1 60–85%, central75%, continue developing.** Minutes are rounded independently from exact nanoseconds;
 the [source record](recurrences.json) retains the exact clocks, measurements,
 scopes and forecast history. This layout repair adds no research time.
 
@@ -49,6 +49,7 @@ implementation is shown explicitly even when it ties.
 | **[s14 four-hour round](s14/checkpoint.md)** | **240** | **1819** | **35 (0)** | Constructed nonlinear invoice; retained numerical receipts; partial/joint learned scope; Oct 23 UTC | **114.5 vs affine lower bound 121.9167: at least 6.0834% lower fees**, cap 22/reset 100, 12.5% mean error. No fresh audit saving; s10 **−57.12% carried, age 4** | **0 new operator calls in the partial-receipt certificate**, original acquisition paid; no CPU/complete-work gain. Pure-summary queries 23 vs 30 at smaller cap 7 vs 8, same 4 episodes. s10 work **−9.53% carried, age 4** | **Identical ordinary methods tie.** Established scenario bound slightly beats new elementary bound; Hamming, robust LS and matrix completion are prior ingredients | 144/272;254/272;258/272; carried, age 18 | 80/80;60/80;223; carried, age 7 | 16/16;11/11;1,718,749;4.7544×; carried, age 6 | 0; carried, age 6 | **New N14-T/R14-L/I14-Q UNASSESSED.** I13-R/v1 55–75%, central 65%, carried age 1; F01 20–45%, central 30%, age 4 | **Two partial receipts certify value < 0.24 where one admits 0.256.** Authorized budget 1→5; retaining cross-case dependence tightens the same risk certificate 17.21%→3.37%; four-receipt width −49.68%. No promotion. |
 | **[s15 resumed four-hour round](s15/checkpoint.md)** | **240** | **2059** | **35 (0)** | General-norm counterfactuals; polynomial-model correction; partial proofs; count-only interfaces; Oct23 UTC | **No fresh audit-fee run.** s10 **−57.12% carried, age5**. Constructed feature repair: **1008 vs4480 truth-coordinate outputs (−77.5%)**; full access/computation costs unpriced | Forecast: **expected full-vector probes at most6.060819 vs baseline at least6.995 (at least−13.35499%), cap7 retained**. Analytic, rank4/degree4/grid257/error.001. No new runtime/complete-work gain; s10 work **−9.53% carried, age5** | **Identical ordinary methods tie.** Halt Fast! precedes safe learned mixtures; two-sided interpolation is a strong correction control. No universal superiority claim | 144/272;254/272;258/272; carried, age19 | 80/80;60/80;223; carried, age8 | 16/16;11/11;1,718,749;4.7544×; carried, age7 | 0; carried, age7 | **N15-P/R15-C/I15-Q UNASSESSED.** I13-R/v1 55–75%, central65%, carried age2; F01 20–45%, central30%, age5 | **Sharp joint model/target/scale envelopes across finite norms.** Shared evidence supports all-input correction and late proof refinement. Same-receipt conditional risk upper13% vs27.66% is a guarantee comparison, not observed error. No promotion. |
 | **[s16 four-hour round](s16/checkpoint.md)** | **240** | **2299** | **35 (0)** | Retained response blocks; shared edits; solution reuse; model checks and partial proofs; Oct23–24 UTC | **No fresh audit-fee run.** s10 **−57.12% carried, age6**. Fixed independent-threshold example: **>23.4% fewer expected full-value calls**, conditional on paid three-value receipts | **No new CPU/complete-work gain.** s10 named work **−9.53% carried, age6**. Sharp reuse ratio **(1+e²/2)²** bounds the benefit of another solve | **Identical ordinary methods tie.** Joint robust control matches; **five-query interpolation beats6.063 private-check bound** | 144/272;254/272;258/272; carried, age20 | 80/80;60/80;223; carried, age9 | 16/16;11/11;1,718,749;4.7544×; carried, age8 | 0; carried, age8 | **N16-C/R16-V UNASSESSED.** I13-R/v1 55–75%, central65%, carried age3; F01 20–45%, central30%, age6 | **>23.4% narrower three-value interval;29.114% smaller same-information joint contrast radius**, settling a worked action. Rounded exact checker and model-proposed query witnesses. No novelty or promotion claim. |
+| **[s17 N16 assessment](s17/checkpoint.md)** | **240** | **2539** | **35 (0)** | Sharp retained-block contribution assessment; Oct24 UTC;40h portfolio review | **No fresh audit-fee run.** s10 **−57.12% carried, age7**. Three queries acquire a block; **one targeted query also settles the chosen upper decision** | **No new CPU/count saving.** s10 named work **−9.53% carried, age7**. Exact checker serialization repaired; bounded format remains incomplete | **Exact prior SDP ties.** Strong old-vector control leaves **1.80049–1.80553% width gain**; universal two-edit analytic coefficient ties | 144/272;254/272;258/272; carried, age21 | 80/80;60/80;223; carried, age10 | 16/16;11/11;1,718,749;4.7544×; carried, age9 | 0; carried, age9 | **N16-C/v1 60–85%, central75%; continue developing.** I13 central65%, age4; F01 central30%, age7; distinct events | Explicit endpoint proof and finite witnesses; **rounded upper0.58311909<0.6 versus old-vector-compatible1**. Separate exact two-edit block criterion/gap. Novelty remains unresolved; no promotion. |
 
 ## Resource columns: scope and evidence
 
@@ -275,3 +276,15 @@ comparison requires a fresh threshold independent of fixed truthful receipts;
 The29.114% contrast gain is against separate bounds with the same information;
 ordinary joint optimization ties. Complete economic costs remain unknown.
 See [assessment](s16/scientific_assessment.md) and [targets](s16/verification_targets.md).
+
+## s17 scope and relevant gains
+
+[Metrics](s17/progress_metrics.json) and [assessment](s17/scientific_assessment.md)
+separate the analytic contribution from information gains and dated resource
+carries. The previous23.4% width headline becomes about1.80% against a stronger
+old-vector control. The rounded upper decision compares different retained
+information; one targeted query also suffices. Ordinary identical optimization
+ties, including the exact prior SDP. The checker repair is an availability
+improvement, not a measured CPU saving. No new audit-fee or counted-work gain.
+The first N16 forecast is60–85%, central75%, for [this event](s17/claim.md).
+Historical I13 and F01 forecasts remain different, unchanged events.

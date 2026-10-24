@@ -1,0 +1,213 @@
+{
+  "contributor": "Codex (GPT-6)",
+  "status": "DEVELOPMENT",
+  "scope_id": "s17_N16_C_contribution_assessment_v1",
+  "observation_date_utc": "2026-10-24",
+  "observed_in_row": "s17_cp01",
+  "age_in_recurrences": 0,
+  "retained_block": {
+    "comparator": "Strong old-vector/two-scalar information bound, not the original one-value bound",
+    "certified_width": "12734227389446053514047101/166238441730663215229059900",
+    "comparator_width_interval": [
+      "1955042341022048790690101610789365092408630440598876267/25062497362989905798630702559433480000000000000000000000",
+      "2116113035074621076387036573/27125937271229900000000000000"
+    ],
+    "reduction_fraction_interval": [
+      "58516519212677120193653033870283275909343292511126012419528534939529428313933/3250031922889732603903761643319809377484634515756131975834328534939529428313933",
+      "63514801130579464626854865198238165259691537077227/3517793334767492804000699132881046160458691537077227"
+    ],
+    "reduction_percent_approx": [
+      1.800490598278424,
+      1.805529634240934
+    ],
+    "interpretation": "Scoped width improvement from additional retained information; not fee, variance or CPU saving"
+  },
+  "decision": {
+    "rounded_upper_bound_approx": 0.58311909,
+    "threshold": 0.6,
+    "old_vector_compatible_value": 1,
+    "source_norm_warrant_matched": true,
+    "sufficient_block_acquisition_queries": 3,
+    "targeted_sufficient_queries": 1,
+    "no_minimal_acquisition_claim": true
+  },
+  "analytic_representation": {
+    "stationary_parameter_degree_bound": "4k-2",
+    "strict_threshold_polynomial_degree_bound": "2k",
+    "generic_prior_SDP_exact": true,
+    "measured_solver_speed_advantage": null
+  },
+  "checker": {
+    "original_version": "s16/block_check.py",
+    "repaired_version": "s17/block_check_v2.py",
+    "repaired_defect": "Valid-input output serialization exceeded Python decimal digit guard",
+    "false_approval_observed": false,
+    "input_rational_bit_limit": 4096,
+    "example_sufficient_witness_bits": 8189,
+    "bounded_format_complete": false,
+    "process_digit_guard_unchanged": true
+  },
+  "separate_pair": {
+    "universal_coefficient_at_radius_one": 2.1596436631325404,
+    "strongest_ordinary_coefficient_gain_percent": 0,
+    "superseded_weaker_comparator_gain_percent_approx": 0.33156,
+    "exact_block_equality_criterion": true,
+    "equal_first_two_moments_block_gap_at_least": "8835006207069881667/41021651174048000000000",
+    "bounded_source_deficit_order": "Theta(1/B^2) in the specified strict low-block regime",
+    "novelty": "UNASSESSED; separate from N16-C/v1"
+  },
+  "readiness": {
+    "candidate": "N16-C/v1",
+    "central_percent": 75,
+    "range_percent": [
+      60,
+      85
+    ],
+    "event": "s17/claim.md",
+    "record": "s17/readiness.md",
+    "calibrated": false,
+    "independent_confirmation": false,
+    "disposition": "continue developing",
+    "blocker": "Moderate novelty/usefulness of the analytic endpoint solution beyond exact prior SDP and routine reductions"
+  },
+  "new_measured_audit_fee_reduction": null,
+  "new_measured_runtime_reduction": null,
+  "new_measured_counted_computation_reduction": null,
+  "complete_economic_cost": null,
+  "historical_audit": {
+    "session": "s10",
+    "observation_date_utc": "2026-10-14",
+    "age_in_recurrences": 7,
+    "near_target_fee_reduction_percent": 57.12,
+    "named_work_reduction_percent": 9.53,
+    "measurement_status": "dated carry; no new audit-stream run"
+  },
+  "ordinary_comparison": "The exact prior operator-interpolation SDP ties. Strong old-vector control reduces the previous width headline to about1.80%; one targeted query suffices for the upper decision; the two-edit universal ordinary coefficient ties.",
+  "limitations": "Same-model development; novelty unresolved; no new complete-cost, audit-fee or counted-work saving; no promotion.",
+  "sources": [
+    {
+      "path": "s17/claim.md",
+      "sha256": "399cd77d47f39811ce534264187177f1007c5e78c7d4ef65c6f3b6f9e59e6a6c"
+    },
+    {
+      "path": "s17/proof.md",
+      "sha256": "8bd8142db8abf76ff79c58d9fea91ddbd180dc0fbe8a4e057ee9636d1ef4aa6a"
+    },
+    {
+      "path": "s17/comparison.md",
+      "sha256": "3f06c531979a424eca86e4ed0aebf20717485f41b398ea4877d2bdbe3e239db5"
+    },
+    {
+      "path": "s17/gram_sdp.md",
+      "sha256": "8bfbb976760613877e3a759c7a1b2d12a28901e37db5be3f8186102b0f21e685"
+    },
+    {
+      "path": "s17/gram_result.json",
+      "sha256": "3e9bb8936cac4285ab11c0b90fd0a91b964f2f5785741b00613308351aab5275"
+    },
+    {
+      "path": "s17/dual_certificates.md",
+      "sha256": "3b65c806c3f842934117dbc45433825e008840d4e72784a8be4b70a0c6f3d7bf"
+    },
+    {
+      "path": "s17/endpoint_result.json",
+      "sha256": "5bf46cf22cd9a85907176f5b0d2131e84329c2fe9a983c64bb6b05575a6cde16"
+    },
+    {
+      "path": "s17/width_result.json",
+      "sha256": "e1ce865c79580d123a0574d935d1923e79432be25e7bf7b048f49a851953ee9d"
+    },
+    {
+      "path": "s17/cancellation_result.json",
+      "sha256": "1910e7f5e324abf1770e2f1bda3cb02289398662dab5331ba7a12762739f9730"
+    },
+    {
+      "path": "s17/retention_tradeoff.md",
+      "sha256": "4bf5078ab204a03a5c23013d13500fdc14dae0f095c06ee0da8845fa4205ee05"
+    },
+    {
+      "path": "s17/acquisition_result.json",
+      "sha256": "e85cb0552da7f0c86d7141dc8d084830286a53d87dc6c39b6fff3979c91b4c5f"
+    },
+    {
+      "path": "s17/checker_review.md",
+      "sha256": "d37b10764b96caecb94dfd60ae661fd8f96bce07302976cdd363a313183d48a9"
+    },
+    {
+      "path": "s17/format_limits.md",
+      "sha256": "11f9e1ac97da877b43dc6b6aa35f9e9afaa502bb0603c1ab699b4191bd2ca9bc"
+    },
+    {
+      "path": "s17/format_result.json",
+      "sha256": "a9a69e72488ea30e1a00ce9c736b9702b169eb86a747e029928c18165d2b0b92"
+    },
+    {
+      "path": "s17/block_check_v2.py",
+      "sha256": "c88078fb69e0b8e074b752ec3214a7a05da1146f5b7bb915679c8ff6c2be32c3"
+    },
+    {
+      "path": "s17/format_repair_result.json",
+      "sha256": "8ff8248771bcf01ea7454febccfebf2a0b9257135905994a89199e2f6efce63d"
+    },
+    {
+      "path": "s17/search_guarantee.md",
+      "sha256": "6ee203b7e4d28dc8da275667abb3bcd67c596cb2cd05c6db5945c88c3f70cbc8"
+    },
+    {
+      "path": "s17/scalar_search_result.json",
+      "sha256": "41d7bbe3489e92a3f80c6c3926e341e38e2ac04f6dd06ed9c189514ef0513874"
+    },
+    {
+      "path": "s17/algebraic_result.json",
+      "sha256": "1a2edc7ebdd40db8d0ce46214c66dd896022d5cba88d9d4c7d16ab5fae08fd9e"
+    },
+    {
+      "path": "s17/rejection_result.json",
+      "sha256": "8746799f6283fa3d714179c97b835663be44413b59ef9a688fdbd1cbbd1ede8b"
+    },
+    {
+      "path": "s17/pair_radius.md",
+      "sha256": "94ea5383f4a703b59c48abf54fc5ac36121938479c9274d35b45633f64cf0579"
+    },
+    {
+      "path": "s17/pair_radius_result.json",
+      "sha256": "96191264fbc1945e2ec126ae471cf804524593ae82a0e13d8934942965b40a07"
+    },
+    {
+      "path": "s17/pair_criterion.md",
+      "sha256": "fc5b4e8866f542d1e9e8ccddc2977f2a5cc0c9d8727cffacd508bde5bd9867f3"
+    },
+    {
+      "path": "s17/criterion_result.json",
+      "sha256": "c33038969d4a0af9fce169b2c1f215b486edd8ff5a0b8b18306f9927b70ff94f"
+    },
+    {
+      "path": "s17/pair_gap.md",
+      "sha256": "d1d3b67edbd9254e0bd9ee7ecf32dbdc50f587a67bc89b916e2fcd484755a8d3"
+    },
+    {
+      "path": "s17/gap_result.json",
+      "sha256": "b5a1ff32965cea88d4ccaf32bd9d1425a524f77ea81fcfca10916eaf2401e247"
+    },
+    {
+      "path": "s17/pair_norm.md",
+      "sha256": "6d2d7c1ff34f5f696e66a0587a1e0cae0ece723fbda6cfce5bc1f474456ac16a"
+    },
+    {
+      "path": "s17/portfolio40.md",
+      "sha256": "b37f20556e4974561ec67563d25142b58922d3e3ee29957fe67658031cbbb608"
+    },
+    {
+      "path": "s17/scientific_assessment.md",
+      "sha256": "e6cfec0f4856c1f52f7db67582faaa0a8763be189999a40abfa3249b5c720e5e"
+    },
+    {
+      "path": "s17/verification_targets.md",
+      "sha256": "0b92ae3ec7933977f8be96e87f9a2fdef704a9970cca25377c678b3dc537af2d"
+    },
+    {
+      "path": "s17/readiness.md",
+      "sha256": "8ccd353bdd0fab050e70c5cc713f91877d1464938601d24a656ab0e7307c25f4"
+    }
+  ]
+}

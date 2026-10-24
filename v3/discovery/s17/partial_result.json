@@ -1,0 +1,169 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "C1",
+      "certificate": {
+        "schema": "response-block-v1",
+        "source_id": "s17-disjunction-C1",
+        "dimension": 2,
+        "C_minus": [
+          [
+            "1/100",
+            "0"
+          ],
+          [
+            "0",
+            "61/100"
+          ]
+        ],
+        "C_plus": [
+          [
+            "1/100",
+            "0"
+          ],
+          [
+            "0",
+            "61/100"
+          ]
+        ],
+        "V": [
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ]
+        ],
+        "edit_squared": "1/2",
+        "t_lower": "1",
+        "t_upper": "2",
+        "threshold": "603/1000"
+      },
+      "checked": {
+        "schema": "response-block-result-v1",
+        "source_id": "s17-disjunction-C1",
+        "lower": "31/200",
+        "upper": "3388/6345",
+        "threshold": "603/1000",
+        "verdict": "below",
+        "scope": "Conditional on truthful compression, task-basis and edit-norm warrants; exact rational calculation only."
+      }
+    },
+    {
+      "case": "C2",
+      "certificate": {
+        "schema": "response-block-v1",
+        "source_id": "s17-disjunction-C2",
+        "dimension": 2,
+        "C_minus": [
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ]
+        ],
+        "C_plus": [
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ]
+        ],
+        "V": [
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ]
+        ],
+        "edit_squared": "1/2",
+        "t_lower": "1",
+        "t_upper": "1",
+        "threshold": "603/1000"
+      },
+      "checked": {
+        "schema": "response-block-result-v1",
+        "source_id": "s17-disjunction-C2",
+        "lower": "3/20",
+        "upper": "3/5",
+        "threshold": "603/1000",
+        "verdict": "below",
+        "scope": "Conditional on truthful compression, task-basis and edit-norm warrants; exact rational calculation only."
+      }
+    },
+    {
+      "case": "convex_hull",
+      "certificate": {
+        "schema": "response-block-v1",
+        "source_id": "s17-disjunction-convex_hull",
+        "dimension": 2,
+        "C_minus": [
+          [
+            "91/400",
+            "0"
+          ],
+          [
+            "0",
+            "151/400"
+          ]
+        ],
+        "C_plus": [
+          [
+            "91/400",
+            "0"
+          ],
+          [
+            "0",
+            "151/400"
+          ]
+        ],
+        "V": [
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ]
+        ],
+        "edit_squared": "1/2",
+        "t_lower": "1",
+        "t_upper": "1",
+        "threshold": "603/1000"
+      },
+      "checked": {
+        "schema": "response-block-result-v1",
+        "source_id": "s17-disjunction-convex_hull",
+        "lower": "121/800",
+        "upper": "121/200",
+        "threshold": "603/1000",
+        "verdict": "unresolved",
+        "scope": "Conditional on truthful compression, task-basis and edit-norm warrants; exact rational calculation only."
+      }
+    }
+  ],
+  "attainment_premise": {
+    "s": "121/400",
+    "m": "15541/160000",
+    "upper_cap_criterion": "m < s/3",
+    "theorem_dependency": "proof.md section 7 and parameter_cases.md"
+  },
+  "elapsed_ns": 665300,
+  "python": "3.12.14",
+  "source_sha256": "66322b965223d8fb92786650e90fdddbd9ef5467e3fd63a25cc5c99010555292",
+  "checker_sha256": "ce818e6154059b8c7f6ef64f0819f6d22afe1b41baffcdf65e5e8bd32515e6b4",
+  "scope": "Exact certificates and cap premise; the finite adverse source comes from the stated theorem, not the checker verdict alone."
+}

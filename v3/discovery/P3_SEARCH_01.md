@@ -5,26 +5,27 @@ Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_a
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
 **Current continuation — October24,2026 UTC, Codex (GPT-6):**
-[s16 checkpoint](s16/checkpoint.md), [findings](s16/findings.md),
-[actuals](s16/effective_actuals.json), [single recurrence table](recurrences.md).
-The fresh four-hour recurrence is CLOSED:240.159616666666… research minutes.
-C001/program is2299.09343735245 and phase3385.2248047166 minutes.
-All152 same-runtime intervals are reconciled; twelve research exclusions,
-one E-to-D correction and explicit context recovery are recorded. No active
-clock remains. The35-family inventory is unchanged;63 passes are not63 families.
+[s17 checkpoint](s17/checkpoint.md), [findings](s17/findings.md),
+[actuals](s17/effective_actuals.json), [single recurrence table](recurrences.md).
+The focused four-hour assessment is CLOSED:240.395316666666… research minutes.
+Program2539.488754019116… and phase3625.620121383266… minutes. No active
+clock remains;178 same-runtime segments and explicit exclusions are reconciled.
+The35-family inventory is unchanged. C001 OPEN; P3-POS01 OUTSTANDING;
+P3-11 deferred; no promotion.
 
-**C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no promotion.**
-Retained response blocks yield a worked interval>23.4% narrower than one
-old value; shared-edit coupling gives29.114% less contrast radius than
-separate sharp bounds with the same information. Exact rounded certificates,
-query witnesses and sharp solution-reuse bounds provide usable interfaces.
-These are scoped formal gains, not new audit fees or complete CPU savings.
-Identical ordinary methods tie; strong interpolation defeats a proposed
-private-check saving. [N16-C/R16-V targets](s16/verification_targets.md)
-are UNASSESSED. Historical I13-R/v1 and F01 forecasts remain unchanged.
-Continue broad discovery toward a useful, moderately novel contribution.
-Default one hour unless overridden; no automatic next session. Next deeper
-portfolio review:40 program hours, with38.32 hours now recorded.
+**N16-C/v1:60–85%, central75%; continue developing.** The bounded event includes
+useful moderate novelty. The critical proof and finite witnesses are reconstructed;
+the exact prior operator-interpolation SDP ties. The remaining blocker is the
+analytic solution's useful increment beyond routine prior reductions. Stronger
+old-vector comparison leaves about1.80% width gain. Rounded upper0.58311909<0.6
+contrasts with compatible1, but one targeted query also suffices. No fresh fees
+or counted-work saving. The checker serialization repair preserves old evidence.
+
+The [40-hour review](s17/portfolio40.md) is complete; the next deeper review is
+100 program hours, with42.32 hours now recorded. Restore broad75/20/5 discovery
+and keep the other promising routes. Default next duration one hour unless
+freshly overridden; no automatic recurrence or merge. Historical forecasts
+remain scoped to their own events. [Next prompt](CONTINUE.md).
 
 ## 1. Objective and scope
 
