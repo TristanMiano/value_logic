@@ -4,27 +4,27 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
-**Current continuation — October 23, 2026 UTC, Codex (GPT-6):**
-[s15 checkpoint](s15/checkpoint.md), [findings](s15/findings.md),
-[actuals](s15/effective_actuals.json), [single recurrence table](recurrences.md).
-The fresh four-hour recurrence is CLOSED: 240.221316666666… research minutes.
-C001/program is 2058.933820685783… and phase 3145.065188049933… minutes.
-The 136 same-runtime intervals have sixteen research exclusions; explicit
-context recovery and the long interruption are excluded. No active clock
-remains. The 35-family inventory is unchanged; 39 passes are not new families.
+**Current continuation — October24,2026 UTC, Codex (GPT-6):**
+[s16 checkpoint](s16/checkpoint.md), [findings](s16/findings.md),
+[actuals](s16/effective_actuals.json), [single recurrence table](recurrences.md).
+The fresh four-hour recurrence is CLOSED:240.159616666666… research minutes.
+C001/program is2299.09343735245 and phase3385.2248047166 minutes.
+All152 same-runtime intervals are reconciled; twelve research exclusions,
+one E-to-D correction and explicit context recovery are recorded. No active
+clock remains. The35-family inventory is unchanged;63 passes are not63 families.
 
 **C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no promotion.**
-Sharp counterfactual envelopes now cover general finite norms and joint
-edits. A fallible forecast cuts an analytic expected-probe bound by at least
-13.35499% against a declared control while retaining cap7. Structured model
-repair and retained features give a 77.5% truth-coordinate reduction in a
-constructed example. These are scoped resource/capability gains, not new
-audit-stream fees or complete CPU savings. Identical ordinary methods tie.
-[New targets](s15/verification_targets.md) N15-P/R15-C/I15-Q are UNASSESSED.
-I13-R/v1's historical 55–75%, central65% and F01's 20–45%, central30% remain
-different, unchanged events. Continue broad discovery under the useful,
-moderately novel contribution standard. Default one hour unless overridden;
-no automatic next session. Next deeper portfolio review:40 program hours.
+Retained response blocks yield a worked interval>23.4% narrower than one
+old value; shared-edit coupling gives29.114% less contrast radius than
+separate sharp bounds with the same information. Exact rounded certificates,
+query witnesses and sharp solution-reuse bounds provide usable interfaces.
+These are scoped formal gains, not new audit fees or complete CPU savings.
+Identical ordinary methods tie; strong interpolation defeats a proposed
+private-check saving. [N16-C/R16-V targets](s16/verification_targets.md)
+are UNASSESSED. Historical I13-R/v1 and F01 forecasts remain unchanged.
+Continue broad discovery toward a useful, moderately novel contribution.
+Default one hour unless overridden; no automatic next session. Next deeper
+portfolio review:40 program hours, with38.32 hours now recorded.
 
 ## 1. Objective and scope
 
