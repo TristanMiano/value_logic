@@ -90,3 +90,13 @@ and acquisition remain charged work in a complete decision comparison.
 No implementation change is necessary for the bounded conditional claim
 based on this review. Independent reconstruction remains a confirmation
 duty; an expanded trusted-input or service claim would require new work.
+# Late large-input finding and versioned repair
+
+The later [format review](format_limits.md) found a valid-input output
+serialization failure in the original checker. Its arithmetic did not
+produce a false approval; Python rejected conversion of the resulting
+large integer to decimal text. [v2](block_check_v2.py) repairs only that
+serialization, with [targeted regression evidence](format_repair_result.json).
+The historical checker and its executed evidence are preserved. The same
+review proves that some premises within4096 bits require an upper witness
+beyond that cap, making fixed-format incompleteness concrete.

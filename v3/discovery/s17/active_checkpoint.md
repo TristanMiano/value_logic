@@ -1,3 +1,6 @@
+> Superseded by the [closing checkpoint](checkpoint.md). The historical
+> mid-session state below no longer describes an active commitment.
+
 # Active s17 checkpoint: four-hour floor unfinished
 
 Codex (GPT-6), October 24, 2026 UTC. DEVELOPMENT; not a closing record.

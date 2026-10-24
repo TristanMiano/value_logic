@@ -628,3 +628,64 @@ The initial dblp and DOI tool opens failed; publisher URLs subsequently
 provided the abstracts above. No paid access, inferred full reading or
 hardware diagnosis is claimed. The new exact diameter has a short ordinary
 derivation and remains unassessed for moderate novelty.
+
+Sion, [On general minimax theorems](https://msp.org/pjm/1958/8-1/pjm-v8-n1-p14-p.pdf),
+Pacific Journal of Mathematics8(1958),171--176: read the introduction,
+definitions2.1--2.9, statements and displayed arguments3.1--3.3, and
+Theorem3.4's proof and its compactness corollary. The external KKM/Helly
+results used in those arguments were not independently reconstructed.
+Section4 was inspected at statement level. The imported Theorem3.4 applies
+to the separately continuous convex/concave objectives on compact convex
+domains in partial_blocks.md; their spectral brackets give continuity at
+the closed scalar endpoints. It does not apply to the two-point nonconvex
+model set in the worked counterexample. This is a conventional theorem
+application, not an N16 novelty claim.
+# Late algebraic and analytic-solution comparison
+
+Codex (GPT-6), October24. Same-model DEVELOPMENT.
+
+- Nie, Ranestad and Sturmfels, [The Algebraic Degree of Semidefinite
+  Programming](https://arxiv.org/pdf/math/0611562), v3 September8,2008;
+  journal issue2010. Read introduction, section2 through Example4 and the
+  genericity qualifications in section3. Their symbolic SDP analysis already
+  supplies algebraic solutions through polynomial optimality systems. Their
+  generic degree results are not a lower bound for our structured Gram SDP.
+  No generic-SDP complexity or algebraic-degree superiority is claimed here.
+  Later intersection-theoretic proofs were not reconstructed. Our elementary
+  determinant argument gives the particular all-input degree bound in
+  [algebraic_endpoints.md](algebraic_endpoints.md), conditional on N16's formula.
+- Bousselmi--Hendrickx--Glineur [v3](https://arxiv.org/pdf/2302.08781):
+  extended the earlier section3 audit to section4.1.2's Conjectures4.1--4.2,
+  Theorem4.3 and Corollary4.4 statements/proof, section4.2.2's Theorem4.8
+  proof, and section5's distinctions between analytical, conjectured and
+  numerical guarantees. Analytic solutions and explicit extremizers can
+  remain useful contributions after an exact SDP is available. This is a
+  methodological precedent, not an endorsement of N16 or evidence that its
+  formula is novel. The gradient-method scalar reduction is explicitly
+  conjectural at its general stated scope in this version; it must not be
+  imported as a universal scalar-extremizer theorem.
+
+# Matrix-moment comparison and a localized source defect
+
+Read Curto, Ech-charyfy, Idrissi and Zerouali,
+[A Recursive Approach to the Matrix Moment Problem](https://link.springer.com/article/10.1007/s11785-026-02044-x),
+published October5,2026; also checked the publisher PDF and arXiv2209.01630v3.
+Inspected definitions in section2, Theorem3.8 and its displayed proof,
+Proposition3.10, Theorem4.1's Lagrange-polynomial proof, and section4.3.1.
+The two-atom weights in equation4.2 are the familiar elementary interval
+completion underlying pair_block.md; no novelty is assigned to that step.
+
+Do **not** import Remark4.10's positive-measure iff A>=0 statement as printed
+(publisher PDF page16). For A=[-1], the positive measure delta_{-1} has
+moments A^n. More generally a real symmetric A has its positive spectral
+measure on R, irrespective of eigenvalue signs. The paper's own definition
+of positive matrix measure permits support on R. Example3.9(3) also prints
+an expression for A^n which gives A, not I, at n=0; reversing its displayed
+negative-atom weight fixes that specific example. These are localized
+counterexamples, not a judgment that every theorem in the paper fails.
+Our new completion proof uses direct Schur identities, not these statements.
+
+Kimsey--Woerdeman2013 was located through its institutional record and
+conference abstract. The AMS full-text URL returned403; its theorem proofs
+were not inspected and no theorem from it is imported. Searches did not
+locate a correction to the above remark; this is not evidence that none exists.

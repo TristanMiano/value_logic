@@ -106,3 +106,9 @@ moment-completion route, but its complete necessity/limiting realization
 argument has not been reconstructed here. It is not part of the proven
 development claim B1, no readiness estimate is attached, and no numerical
 success is substituted for that missing argument.
+
+Later s17 development: [pair_criterion.md](pair_criterion.md) supplies the
+missing necessity and finite limiting construction for B3, using a
+second-moment obstruction and one added output. This supersedes the
+screened-only status above while preserving the earlier partial argument.
+It remains a separate DEVELOPMENT result with novelty unassessed.

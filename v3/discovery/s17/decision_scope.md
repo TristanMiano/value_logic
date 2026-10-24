@@ -76,3 +76,19 @@ value query gives no such fee saving. The break-even identity in decision.md
 applies only when those are actually distinct paid operations. The bounded
 contribution can still be a useful explicit guarantee without a measured
 production speedup, under the author's moderate-contribution standard.
+# Finite attainment determines strict boundary decisions
+
+The final path argument in [proof.md](proof.md) fills the entire N16
+interval with finite realizations. In particular, if a threshold equals
+either sharp endpoint, the corresponding universal strict inequality fails
+because an equality witness exists. For this core claim, saying the sharp
+upper endpoint is below a threshold is therefore equivalent to saying
+every compatible value is strictly below it.
+
+This equivalence must not be transferred to the separate
+[paired nonattainment regime](pair_block.md). There every finite contrast
+is strictly below g*s, while its supremum equals g*s. A qualitative
+strict statement can then hold without a positive uniform margin. A
+finite source-norm warrant restores a quantitative margin as described
+in [pair_norm.md](pair_norm.md). The distinction concerns quantifiers,
+not numerical rounding or a solver's tolerance.

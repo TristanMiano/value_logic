@@ -1,6 +1,11 @@
 # s17 N16-C contribution assessment
 
-Codex (GPT-6), October 24, 2026 UTC. DEVELOPMENT; ACTIVE.
+Codex (GPT-6), October 24, 2026 UTC. DEVELOPMENT; CLOSED.
+
+The four-hour commitment closed at 240.395316666666… effective research
+minutes. See [checkpoint](checkpoint.md) and [actuals](effective_actuals.json).
+No active clock or unfinished session floor remains. The prospective plan
+below is preserved; publication earns no research credit.
 
 Authority: [temporary assessment and four-hour override](../../decisions/2026-10-24_s17_assessment.md).
 Base main e709bc316c352547242fbb43b4fcd6d7ce97927b; branch

@@ -119,6 +119,15 @@ remove the ordinary SDP or close-prior uncertainty. The separate
 coefficient advantage by a short ordinary proof. Neither finding changes
 the current N16 assessment of60--85%, central75%.
 
+Closing implementation qualification: the late [format review](format_limits.md)
+found a valid-input serialization failure in the original checker, with no
+false approval observed. The separately hashed [v2 repair](block_check_v2.py)
+passes its [regression](format_repair_result.json); confirmation must select
+that version explicitly if claiming the repair. The fixed 4096-bit format
+remains incomplete even for admissible premises. This availability defect
+and repair qualify the earlier statement about implementation blockers; they
+do not change the mathematical contribution event or its current estimate.
+
 Keep the second-block/source-norm route, solution reuse, private/public repair,
 invoice information and partial-proof selection available. Their events and
 historical probabilities remain separate. This assessment does not start P3-11

@@ -222,6 +222,20 @@ contract without treating numerical matches as proof of these universal claims.
 
 ## Focused development checks
 
+An additional elementary consequence is that every value between the two
+endpoints is attainable, not only the endpoints. Express both constructed
+witnesses in dimension2k with W=[I;0]; pad a k-dimensional canonical
+witness using an unused identity source block and zero edit. Both old
+resolvents S0,S1 are then strictly between0 and I with the same compression C.
+For0<=theta<=1, set S_theta=(1-theta)S0+theta*S1,
+M_theta=(S_theta^(-1)-I)^(1/2), and interpolate the two displayed edits
+linearly. Their norm remains at most e. The resulting edited value is
+continuous in theta and has the two sharp endpoint values at its ends.
+The intermediate value theorem fills the interval. This is a finite
+realization argument, not a probabilistic mixture of different sources.
+It strengthens the information interpretation without adding a new
+promotion prerequisite or claiming novelty for the path argument.
+
 [endpoint_check.py](endpoint_check.py) and its [exact record](endpoint_result.json)
 cover eight branch examples: both interior endpoints, derivative equality at
 each cap, upper cancellation with both slack and tight budget, and two

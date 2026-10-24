@@ -1,6 +1,6 @@
 # s17 failures, warnings and exclusions
 
-Codex (GPT-6), October24,2026 UTC. DEVELOPMENT; active session record.
+Codex (GPT-6), October24,2026 UTC. DEVELOPMENT; closed session record.
 Preserve executed source/result bytes. No observed failure has been
 diagnosed as the host's possible hardware instability.
 
@@ -30,9 +30,27 @@ diagnosed as the host's possible hardware instability.
   complete intervals affected by recovery/compaction or unmarked mixed
   modes. Those intervals earn no qualifying research credit; no internal
   boundary is inferred from token volume or output. Final reconciliation
-  will append ledger corrections and preserve the original ledger prefix.
+  appended ledger corrections and preserved the original ledger prefix:
+  twenty research intervals and one O interval are excluded explicitly,
+  with separate O/context intervals also excluded from engagement.
+
+* **Deterministic adapter error:** criterion_check.py expected a `cases`
+  key where the preserved radius result uses `radii`. It failed before its
+  timer. The failed version and criterion_failed.json remain; the separately
+  versioned criterion_check_v2.py passes in criterion_result.json. No failed
+  standalone duration is fabricated.
+* **Checker availability defect:** admissible large parameters caused the
+  original checker's decimal serialization to exceed Python's digit guard.
+  format_result.json preserves the ValueError. block_check_v2.py repairs
+  serialization without changing verdict arithmetic or the process guard;
+  format_repair_result.json passes. No false approval was observed. The
+  separate bounded-format incompleteness is a limitation, not a repaired bug.
+* **Localized primary-source defects:** literature.md records erroneous
+  printed assertions in Remark4.10 and Example3.9(3) of the inspected
+  Curto et al. manuscript. Those assertions are not imported. This does not
+  invalidate the whole paper or establish novelty of the present work.
 
 The core endpoint reconstruction, exact checker audit and named exact
 decision certificates have no observed failed mathematical check. This is
-same-model development, not independent confirmation. New later failures,
-if any, must be added before closure.
+same-model development, not independent confirmation. Publication checks and
+any maintenance failures are reported separately in publication.md.

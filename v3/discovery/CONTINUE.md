@@ -1,29 +1,19 @@
 # Portable continuation: broad discovery, default one hour
 
-**Active override: s17 is in progress.** The author requested a fresh four-hour
-recurrence focused on assessing N16-C/v1, with a temporary exception to the
-usual allocation. Read [s17 session](s17/session.md), [claim](s17/claim.md) and
-[authority](../decisions/2026-10-24_s17_assessment.md) before doing anything with
-its clock. PR18 was verified merged at e709bc316c352547242fbb43b4fcd6d7ce97927b.
-The resident s17 clock and its exclusion dispositions, not this older completed
-summary, determine the remaining commitment. A context refresh must resume s17.
-The [active checkpoint](s17/active_checkpoint.md) records the latest durable
-mid-session state, the completed forty-hour portfolio review and the current
-claim-specific readiness assessment. It is not a session closure.
+Latest completed research: **s17**, Codex (GPT-6), October24,2026 UTC.
+The focused four-hour N16 assessment is **CLOSED**, at **240.395316666666…
+effective research minutes**. No active clock or unfinished floor remains.
+Read [checkpoint](s17/checkpoint.md), [actuals](s17/effective_actuals.json)
+and [publication](s17/publication.md). Context refresh creates no new clock
+or commitment. Verify actual PR/remote state before a newly authorized recurrence.
 
-Latest completed research: **s16**, Codex (GPT-6), October24,2026 UTC.
-The fresh four-hour commitment is CLOSED: **240.159616666666… research minutes**.
-No active clock or unfinished s16 floor remains. Read [checkpoint](s16/checkpoint.md),
-[actuals](s16/effective_actuals.json) and [publication](s16/publication.md) before
-continuing. A context refresh creates neither a clock nor a new commitment.
-Do not infer that the s16 PR was merged from this handoff.
-
-Continue TristanMiano/value_logic for the next author-requested engaged research
-duration. Default: **one hour**; explicit overrides apply to that session only.
-We alternate ChatGPT and Codex and refresh contexts over long workloads. Preserve
-attribution and scientific records. Complete authorized publication without
-routine permission questions. Stop at the requested session's useful handoff;
+Continue TristanMiano/value_logic for the next author-requested engaged
+research duration. Default **one hour**; overrides apply to that session only.
+We alternate ChatGPT and Codex with context refreshes over long workloads.
+Preserve attribution and scientific records. Complete authorized publication
+without routine permission questions. Stop at the requested useful handoff;
 do not automatically start another recurrence or change an automation.
+s17's temporary focus exception has ended.
 
 ## Broader goal and contribution standard
 
@@ -38,118 +28,120 @@ General uncertainty learning, final metaphysical answers and universal superiori
 are not prerequisites. Continued concrete gains justify continued discovery.
 One narrow candidate or forecast must not become the whole program.
 
-Keep approximately75% generation/development,20% cheap screens and5% substantive
-synthesis. Generate different mechanisms and discard weak ones early. Deepen
-promising lines progressively; reserve expensive confirmation for a ready specific
-contribution. Harness/document counts are not breadth. Conventional statistics,
-coding, logic and numerical methods can embody value logic's concerns. An identical
-ordinary implementation ties by construction; this limits superiority claims
-without deciding novelty. Compare closest prior formulations and strong methods
-with fair information and resources.
+Restore approximately75% generation/development,20% cheap screens and5%
+substantive synthesis. Generate different mechanisms and discard weak ones
+early. Deepen promising lines progressively; reserve expensive confirmation
+for a ready specific contribution. Harness/document counts are not breadth.
+Conventional methods can embody value logic's concerns. An identical ordinary
+implementation ties by construction; this limits superiority claims without
+deciding novelty. Compare close prior formulations and strong methods with
+fair information and resources.
 
 ## Recover state and clocks
 
 Use the actual checkout root. Read AGENTS.md, git status/main/remotes,
 [TODO](../../TODO_v3.md), [portfolio](candidates.md), [single table](recurrences.md),
-[findings](s16/findings.md), [assessment](s16/scientific_assessment.md),
-[targets](s16/verification_targets.md), [failures](s16/failures.md) and relevant
-[literature](s16/literature.md). Do not reread the archive or rerun probes just
-to refresh context. Preserve unrelated local work.
+[findings](s17/findings.md), [assessment](s17/scientific_assessment.md),
+[targets](s17/verification_targets.md), [failures](s17/failures.md) and relevant
+[literature](s17/literature.md). Do not reread the archive or rerun probes
+merely to refresh context. Preserve unrelated local work.
 
-s16 began from main8b1ed04967871a6e505e62e01c83fa401d35fa91 on
-codex/discovery-20261023-s16. PR17 was verified merged/closed at
-2026-10-23T19:33:54Z and its remote branch absent. Recheck the newer s16
-publication record and actual remote state before a new recurrence.
+s17 began from main e709bc316c352547242fbb43b4fcd6d7ce97927b on
+codex/discovery-20261024-s17 after PR18 was verified merged/closed.
+Recheck its publication record and remote state before a new recurrence.
 **C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no promotion.**
-The35 families remain unchanged; s16's63 passes are not63 new families.
+The35-family inventory is unchanged; connected derivations are not new families.
 
-s16:14,409,577,000,000ns =240.159616666666… research minutes.
-Program:137,945,606,241,147ns =2299.09343735245 minutes, about38.32h.
-Phase:203,113,488,282,996ns =3385.2248047166 minutes.
-[Reconciliation](s16/reconcile.py) checks152 same-runtime intervals: twelve
-research exclusions, one E-to-D correction without extra research credit,
-and explicit context recovery. Research ended03:04:57.202342 UTC;
-runtime closed03:05:07.758541 UTC on October24. Raw observations and earlier
-ledger bytes remain intact. Never count probe runtime again or reconstruct
-paused time from output volume. Publication and handoff earn zero research credit.
+s17:14,423,719,000,000ns =240.395316666666… research minutes.
+Program:152,369,325,241,147ns =2539.488754019116… minutes, about42.32h.
+Phase:217,537,207,282,996ns =3625.620121383266… minutes.
+[Reconciliation](s17/reconcile.py) checks178 same-runtime intervals, twenty
+research exclusions and one O exclusion, with O/context recovery also excluded.
+Research ended09:58:02.272547 UTC; resident closed09:58:24.652144 UTC.
+Raw observations and prior ledger bytes remain intact. Probe runtime is never
+added again. Recorded O is partial administration. Publication, recovery,
+waits and unknown intervals earn no research credit.
 
-New authorization needs a fresh scope, forecasts and observed resident clock.
-Mark mode changes and at least every15 active minutes. Count D+L+E once;
-setup, publication, recovery, waits and unknown tails earn no research credit.
+Fresh authorization needs fresh scope, forecasts and an observed resident clock.
+Mark mode changes and at least every15 active minutes. Count D+L+E once.
 Old surplus pays none of a fresh commitment. The unstable-host retry allowance
 requires preserving failures and costs; do not guess deterministic errors are
 hardware. No subagents are authorized by this continuation alone.
 
-s16 purpose shares70.80%/24.87%/4.33%; X/R95.67%/4.33%. These are coarse
-observed classifications, not quotas to repair. The16-hour review is complete;
-next deeper review at40 program hours, about100.91 research minutes away.
+s17 purpose shares25.22%/59.45%/15.33% reflect the assessment exception;
+R/X77.38%/22.62%. These are not quotas to repair. The
+[40-hour review](s17/portfolio40.md) is complete; next deeper review100 hours.
 
 ## Promising routes and cheap next screens
 
-**N16-C/v1, retained response information.** The [matrix envelopes](s16/matrix_receipt.md)
-and [lower companion](s16/matrix_lower.md) are sharp development claims for
-0<C<I with unrestricted compatible source dimensions. The [operator proof](s16/operator_receipt.md)
-is simpler; fixed shapes, eigenvalue1 and shared budgets have separate duties.
-First compare the exact information/quantifier/sharpness contract to robust
-least squares, operator completion and optimal recovery. [Quantifier scope](s16/quantifier_scope.md)
-explains why robust action and reoptimized value are different. s14 already
-proved sharp TWO-MOMENT scalar bounds; do not rediscover them as new.
+**N16-C/v1: bounded analytic retained-information contribution.** The
+[claim](s17/claim.md) fixes0<C<I, a unit target, spectral edit budget,
+unrestricted compatible finite sources and reoptimized ridge value. Its
+scalar endpoints have finite witnesses of dimension at most2k. Read
+[proof](s17/proof.md), [comparison](s17/comparison.md),
+[exact prior SDP](s17/gram_sdp.md), [checker review](s17/checker_review.md),
+[decision](s17/cancellation_decision.md) and [assessment](s17/scientific_assessment.md).
+The blocker is moderate novelty/usefulness of the explicit analytic solution
+beyond the routine exact prior SDP and simpler sufficient certificates.
+A focused comparison should identify a prior reduction giving the whole
+contract or explain the remaining nonroutine equality step and its usefulness.
+Do not rerun floating grids or require every extension to decide this event.
 
-The [rational checker](s16/block_checker.md) is implemented with rounded block
-receipts and finite development probes. Reconstruct it under a selected claim
-instead of building another large harness. [Scalar acquisition](s16/block_acquisition.md)
-prices the conversion into a matrix-order bracket. The worked width gain
->23.4% uses three old values versus one; it is not a23.4% variance or CPU gain.
-The29.114% [joint contrast](s16/joint_allocation.md) gain uses the SAME
-information versus separate bounds; ordinary joint optimization ties, and
-ordinary first-order sensitivity already predicts a similar percentage.
+Its first forecast is **60–85%, central75%; continue developing**. This includes
+novelty uncertainty and is not calibrated. A range below80% does not meet the
+minimum. Historical I13-R/v1 central65% and F01 central30% forecast different
+unchanged events; they are not earlier N16 forecasts. No promotion occurred.
 
-**Task-directed queries and solution reuse.** A model can propose [value
-witnesses](s16/query_witness.md); validity comes from truthful old values,
-not model accuracy. Two queries support one declared target, while a full
-block supports all later targets. [Exact](s16/value_refinement.md) and
-[rounded](s16/rounded_queries.md) refinement use standard coordinate descent.
-[Query limits](s16/query_limits.md) distinguish exact reconstruction from
-valid bounds. Seek a natural priced interface before extending this route.
-[Sharp quadratic reuse](s16/reuse_ratio.md), [nonquadratic reuse](s16/nonquadratic_reuse.md)
-and [inexact dual receipts](s16/dual_reuse.md) can bound the value of another
-solve. A common utility tariff and edit warrant remain necessary.
+The strongest old-vector control reduces the old23.4% width headline to about
+**1.80%**. A rounded upper0.58311909<0.6 excludes an old-vector-compatible value1,
+with matched norm information, but **one targeted query also suffices**. Three
+unfinished value queries are sufficient block acquisition, not minimal.
+Full retention supports later directions/budgets and must pay acquisition/storage.
+An upper-value bound does not return an optimizer. A lower rejection decision
+can avoid solving a dominated option; its strongest old-vector control also works.
 
-**R16-V/v1, private checks and public repair.** A sealed batch can survive
-rejections when repairs are independently public and reduce a rank/mistake
-potential. The apparent6.063-versus8 query example is BEATEN by five-query
-univariate interpolation. Known rank, full-vector access, symbolic factoring,
-shared solves and lazy checks belong in strong controls. [Cost leakage](s16/cost_leakage.md)
-shows why private evaluation invoices need an explicit disclosure contract.
-Choose a credible paid application before expanding abstract machinery.
+The original checker's large-output formatting failure is preserved. Future
+verification claiming its repair must name/hash [v2](s17/block_check_v2.py).
+Arithmetic and strict verdicts are unchanged. The4096-bit format is incomplete:
+admissible premises can need an8189-bit sufficient parameter. A separate
+[decision rule](s17/boundary_decision.md) bypasses that example, so it is not a
+general bounded-reasoning lower bound. Rational search and algebraic degree
+bounds apply conventional tools to the explicit formula; no new speed claim.
 
-**Broader proof and observation alternatives.** Partial aggregate proofs can
-support valid decisions before individual computations finish. [Completion
-bias](s16/completion_bias.md) requires preserving original sampled slots.
-A [pooled proof](s16/pooled_proofs.md) example lost18-versus4 to a direct paired
-test. [Adaptive thresholds](s16/adaptive_thresholds.md) show that average
-certificate width is not fallback frequency when queries depend on the
-threshold. Keep these early negative screens and return to materially
-different mechanisms when a route loses its useful delta.
+**Stronger information and paired edits.** [Second block](s17/second_block.md),
+[source norm](s17/source_norm.md) and [bounded source](s17/bounded_source.md)
+retain separate duties, including nonattainment. The exact universal
+[two-edit coefficient](s17/pair_radius.md) has an ordinary tie, eliminating
+the earlier0.33156% advantage. The [block criterion](s17/pair_criterion.md),
+[positive gap](s17/pair_gap.md) and [norm deficit](s17/pair_norm.md) are separate
+developments with novelty unassessed. Screen close prior reductions before
+expanding them; their progress does not silently raise N16's probability.
 
-## Forecasts, metrics and completion
+**Solution reuse and task-directed queries.** Keep [quadratic reuse](s16/reuse_ratio.md),
+[nonquadratic reuse](s16/nonquadratic_reuse.md) and [dual receipts](s16/dual_reuse.md).
+Fallible models may propose useful witnesses; validity comes from truthful
+values, not model accuracy. Natural paid access and full accounting would
+better discriminate usefulness than another abstract parameter grid.
 
-N16-C/v1 and R16-V/v1 remain **UNASSESSED**. Historical I13-R/v1's
-October21 range55–75%, central65%, and F01/S28-B1/V1's October14 range20–45%,
-central30%, are distinct unchanged events. No new candidate inherits those
-probabilities. The80% minimum applies to its explicit useful contribution,
-not to solving every foundational question. Do not invent confidence to
-unlock promotion. Appropriate rigorous verification follows readiness.
+**Private checks, public repair, invoices and partial proofs.** Preserve
+R16-V/v1, I13/I15 and proof-selection routes. Five-query interpolation beats
+the private-check bound above six; shared solves, known rank, returned answers
+and invoice disclosure belong in strong controls. Partial truth can support
+decisions without a fully correct model. The [disjunctive example](s17/partial_blocks.md)
+shows a decision lost by convexifying a finite model class, crediting ordinary
+disjunctive optimization. Keep broader candidate generation active.
 
-Append ONE new row to the existing recurrence table, preserving historical
-row objects and bytes. Keep relevant gains visible, with comparators and
-units. s10 audit-fee57.12% and named-work9.53% reductions are dated carries,
-now age6; s16 made no fresh audit-stream measurement. Computation counters,
-query counts, uncertainty widths and elapsed runtime are not interchangeable.
+## Metrics and completion
+
+Append ONE row to the existing recurrence table, preserving historical row
+objects and bytes. Show relevant gains with comparator, units and information
+contract. s10 audit-fee57.12% and named-work9.53% reductions are dated carries,
+now age7; s17 made no fresh audit-stream measurement. Query counts, width
+reductions, bit lengths, named work and runtime are distinct.
 
 At the useful authorized boundary synchronize TODO, plan, claims, work log,
-actuals, portfolio, metrics and this prompt. Preserve failed versions and
-execution hashes. Run staged path checks and historical evidence verification,
-plus appropriate semantic/link and evidence checks. Publish the authorized
-branch/PR, attach it and verify its exact head and checks. Do not merge or
-start another recurrence without the applicable author instruction.
+actuals, portfolio, metrics and this prompt. Preserve failures and execution
+hashes. Run staged path checks, historical evidence verification and appropriate
+semantic/link/evidence checks. Publish the authorized branch/PR, attach it and
+verify its exact head and checks. Do not merge or start another recurrence
+without the applicable author instruction.

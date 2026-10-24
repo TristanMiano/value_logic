@@ -78,4 +78,3 @@ The [exact ordinary diameter](pair_radius.md) is stronger than this
 primal/dual-reuse control and the earlier rational SDP coefficient. Preserve
 the computations below, but use zero positive advantage against that strongest
 comparison in the final assessment.
-
