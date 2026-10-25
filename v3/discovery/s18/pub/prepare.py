@@ -1,4 +1,4 @@
-"""One-time s18 handoff synchronization. Administration, zero research credit."""
+"""Initial one-time s18 handoff synchronization; later checked editorial corrections live in the committed records. Administration, zero research credit."""
 from pathlib import Path
 from decimal import Decimal
 import copy
@@ -37,7 +37,7 @@ metrics=dict(contributor='Codex (GPT-6)',status='DEVELOPMENT',
         warm_bound_work_before=10655,warm_bound_work_after=9060,
         reduction_percent=str(Decimal(1595)*100/Decimal(10655)),
         tariff='Declared warm bound-work units, not CPU or complete cost',
-        setup_tree_work=10655,selection_admission_work=7975,
+        setup_tree_work=10655,admission_and_profile_check_work=7975,
         ordinary_selector='ties;68 local subsets and709 DP transitions',
         complete_cost_saving=None),
     n16=dict(event='N16-C/v1 unchanged from s17/claim.md',

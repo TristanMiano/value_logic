@@ -133,7 +133,7 @@ mechanism can be a useful ingredient without supporting a new theorem claim.
 Append ONE row to the existing recurrence table, preserving historical row
 objects and bytes. Show relevant gains with comparator, units and information
 contract. s18's warm retention tariff10655→9060 is14.97% lower with the same
-55/80 tree closures; setup10655 and selection/admission7975 remain payable.
+55/80 tree closures; setup10655 and admission7975 plus selection remain payable.
 The ordinary selector ties. s10 audit-fee57.12% and named-work9.53% reductions
 are dated carries, now age8; no new audit-stream saving was measured in s18.
 Query counts, information widths, bits, named work and runtime are distinct.
