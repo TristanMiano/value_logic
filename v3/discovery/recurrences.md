@@ -1,11 +1,11 @@
 # C001 recurrence progress
 
 Requested by **Tristan Miano**. Current maintenance: **Codex (GPT-6)**; earlier attributions preserved.
-This is the single chronological recurrence table: **27 recorded rows, ending
-with s17**. Append each future recurrence to this same table.
+This is the single chronological recurrence table: **28 recorded rows, ending
+with s18**. Append each future recurrence to this same table.
 
-**C001 OPEN · 2539 cumulative research minutes · F01 forecast carried from
-October 14: 20–45%, central 30%; I13-R/v1 historical55–75%, central65%; N16-C/v1 60–85%, central75%, continue developing.** Minutes are rounded independently from exact nanoseconds;
+**C001 OPEN · 2780 cumulative research minutes · F01 forecast carried from
+October 14: 20–45%, central 30%; I13-R/v1 historical55–75%, central65%; N16-C/v1 55–80%, central65%; O18-M/v1 45–75%, central60%, continue developing.** Minutes are rounded independently from exact nanoseconds;
 the [source record](recurrences.json) retains the exact clocks, measurements,
 scopes and forecast history. This layout repair adds no research time.
 
@@ -50,6 +50,7 @@ implementation is shown explicitly even when it ties.
 | **[s15 resumed four-hour round](s15/checkpoint.md)** | **240** | **2059** | **35 (0)** | General-norm counterfactuals; polynomial-model correction; partial proofs; count-only interfaces; Oct23 UTC | **No fresh audit-fee run.** s10 **−57.12% carried, age5**. Constructed feature repair: **1008 vs4480 truth-coordinate outputs (−77.5%)**; full access/computation costs unpriced | Forecast: **expected full-vector probes at most6.060819 vs baseline at least6.995 (at least−13.35499%), cap7 retained**. Analytic, rank4/degree4/grid257/error.001. No new runtime/complete-work gain; s10 work **−9.53% carried, age5** | **Identical ordinary methods tie.** Halt Fast! precedes safe learned mixtures; two-sided interpolation is a strong correction control. No universal superiority claim | 144/272;254/272;258/272; carried, age19 | 80/80;60/80;223; carried, age8 | 16/16;11/11;1,718,749;4.7544×; carried, age7 | 0; carried, age7 | **N15-P/R15-C/I15-Q UNASSESSED.** I13-R/v1 55–75%, central65%, carried age2; F01 20–45%, central30%, age5 | **Sharp joint model/target/scale envelopes across finite norms.** Shared evidence supports all-input correction and late proof refinement. Same-receipt conditional risk upper13% vs27.66% is a guarantee comparison, not observed error. No promotion. |
 | **[s16 four-hour round](s16/checkpoint.md)** | **240** | **2299** | **35 (0)** | Retained response blocks; shared edits; solution reuse; model checks and partial proofs; Oct23–24 UTC | **No fresh audit-fee run.** s10 **−57.12% carried, age6**. Fixed independent-threshold example: **>23.4% fewer expected full-value calls**, conditional on paid three-value receipts | **No new CPU/complete-work gain.** s10 named work **−9.53% carried, age6**. Sharp reuse ratio **(1+e²/2)²** bounds the benefit of another solve | **Identical ordinary methods tie.** Joint robust control matches; **five-query interpolation beats6.063 private-check bound** | 144/272;254/272;258/272; carried, age20 | 80/80;60/80;223; carried, age9 | 16/16;11/11;1,718,749;4.7544×; carried, age8 | 0; carried, age8 | **N16-C/R16-V UNASSESSED.** I13-R/v1 55–75%, central65%, carried age3; F01 20–45%, central30%, age6 | **>23.4% narrower three-value interval;29.114% smaller same-information joint contrast radius**, settling a worked action. Rounded exact checker and model-proposed query witnesses. No novelty or promotion claim. |
 | **[s17 N16 assessment](s17/checkpoint.md)** | **240** | **2539** | **35 (0)** | Sharp retained-block contribution assessment; Oct24 UTC;40h portfolio review | **No fresh audit-fee run.** s10 **−57.12% carried, age7**. Three queries acquire a block; **one targeted query also settles the chosen upper decision** | **No new CPU/count saving.** s10 named work **−9.53% carried, age7**. Exact checker serialization repaired; bounded format remains incomplete | **Exact prior SDP ties.** Strong old-vector control leaves **1.80049–1.80553% width gain**; universal two-edit analytic coefficient ties | 144/272;254/272;258/272; carried, age21 | 80/80;60/80;223; carried, age10 | 16/16;11/11;1,718,749;4.7544×; carried, age9 | 0; carried, age9 | **N16-C/v1 60–85%, central75%; continue developing.** I13 central65%, age4; F01 central30%, age7; distinct events | Explicit endpoint proof and finite witnesses; **rounded upper0.58311909<0.6 versus old-vector-compatible1**. Separate exact two-edit block criterion/gap. Novelty remains unresolved; no promotion. |
+| **[s18 four-hour broad round](s18/checkpoint.md)** | **240** | **2780** | **36 (+1)** | Warm retention fixture; tied/corrupted feedback; conditional optimum receipts; Oct25 UTC | **No fresh audit-stream saving.** s10 **−57.12% carried, age8**. Known-budget query bound d(d−1)(C0+1) is theoretical, with paid reports | **Warm bound tariff10655→9060 (−14.97%)**, same55/80 tree closures; setup10655 and selection/admission7975 payable. Named-item path update O(d²). s10 **−9.53% carried, age8**; no CPU/full-cost gain | **Identical ordinary methods tie.** Strong cache q+C mistakes on q contexts; prior known-budget general regret and distinct-coordinate results constrain novelty | 144/272;254/272;258/272; carried, age22 | 80/80;60/80;223; carried, age11 | 16/16;11/11;1,718,749;4.7544×; carried, age10 | 0; carried, age10 | **O18-M/v1 45–75%, central60%. N16-C/v1 55–80%, central65% (−10pp).** Conditional receipts UNASSESSED; no promotion | **Joint receipts: upper4→exact1; two-bit certified attainer action.** Tied unknown-budget matroid mistakes≤binom(d,2)(C+1)+C. Conditional face/subset algorithm; N16 finite witnesses2k→k+1. |
 
 ## Resource columns: scope and evidence
 
@@ -288,3 +289,12 @@ ties, including the exact prior SDP. The checker repair is an availability
 improvement, not a measured CPU saving. No new audit-fee or counted-work gain.
 The first N16 forecast is60–85%, central75%, for [this event](s17/claim.md).
 Historical I13 and F01 forecasts remain different, unchanged events.
+
+## s18 scope and relevant gains
+
+[Metrics](s18/progress_metrics.json) distinguish warm tariff, theoretical information
+and mistake guarantees, and dated fee/work carries. The14.97% tariff reduction
+does not include all setup/selection or host costs. Conditional values and
+attainer metadata change what can be decided; ordinary equal-information
+methods tie. See [assessment](s18/scientific_assessment.md) for the separate
+O18-M and unchanged N16 contribution events and their remaining novelty blockers.

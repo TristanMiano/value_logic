@@ -1,5 +1,15 @@
 # Phase-three claims and obligations
 
+**Latest pointer — October25,2026 UTC, Codex (GPT-6):**
+[s18 assessment](discovery/s18/scientific_assessment.md),
+[targets](discovery/s18/verification_targets.md), [metrics](discovery/s18/progress_metrics.json).
+O18-M/v1 is DEVELOPMENT,45–75%, central60%; its tied/unknown-corruption matroid
+guarantee has a remaining novelty blocker. N16-C/v1 is55–80%, central65% for
+the unchanged event, down10pp after the moment/minimax comparison. Conditional
+optimum receipts remain unassessed. Ordinary equivalents tie; warm tariff and
+information gains have bounded scopes. No fresh audit/full-cost gain or promotion.
+Program46.33h; next deeper review100h. Earlier dated records retain their scopes.
+
 **Latest pointer — October24,2026 UTC, Codex (GPT-6):**
 [s17 claim](discovery/s17/claim.md), [assessment](discovery/s17/scientific_assessment.md),
 [metrics](discovery/s17/progress_metrics.json). N16-C/v1 is DEVELOPMENT,

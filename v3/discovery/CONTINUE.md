@@ -1,147 +1,146 @@
 # Portable continuation: broad discovery, default one hour
 
-Latest completed research: **s17**, Codex (GPT-6), October24,2026 UTC.
-The focused four-hour N16 assessment is **CLOSED**, at **240.395316666666…
-effective research minutes**. No active clock or unfinished floor remains.
-Read [checkpoint](s17/checkpoint.md), [actuals](s17/effective_actuals.json)
-and [publication](s17/publication.md). Context refresh creates no new clock
-or commitment. Verify actual PR/remote state before a newly authorized recurrence.
+Latest completed research: **s18**, Codex (GPT-6), October25,2026 UTC.
+The author-directed four-hour broad recurrence is **CLOSED**, at
+**240.243283333333… effective research minutes**. No active clock or unfinished
+floor remains. Read [checkpoint](s18/checkpoint.md), [actuals](s18/effective_actuals.json)
+and [publication](s18/publication.md). Verify actual PR/main state before a
+newly authorized recurrence. Context refresh creates no new commitment.
 
 Continue TristanMiano/value_logic for the next author-requested engaged
-research duration. Default **one hour**; overrides apply to that session only.
-We alternate ChatGPT and Codex with context refreshes over long workloads.
-Preserve attribution and scientific records. Complete authorized publication
-without routine permission questions. Stop at the requested useful handoff;
-do not automatically start another recurrence or change an automation.
-s17's temporary focus exception has ended.
+research duration. Default **one hour**; duration overrides apply to that
+session only. Preserve attribution and scientific records. Complete authorized
+publication without routine permission questions. Stop at the requested useful
+handoff; do not automatically start another recurrence, merge or change an
+automation. s18's reserved N16 screen has ended.
 
 ## Broader goal and contribution standard
 
 Follow [the protocol](../RESEARCH_PROTOCOL.md) and [author clarification](../decisions/2026-10-14_contribution_standard.md).
 Find mechanisms through which a bounded reasoner can make materially better
 use of unresolved mathematics, fallible models, reasoning costs or counterfactual
-changes, across all five questions and their connections. A **useful,
-moderately novel contribution** with an explicit delta, honest literature
-comparison and credible verification path is worthwhile. A new mechanism,
-guarantee, representation, formal adaptation or useful synthesis can qualify.
-General uncertainty learning, final metaphysical answers and universal superiority
-are not prerequisites. Continued concrete gains justify continued discovery.
-One narrow candidate or forecast must not become the whole program.
+changes, across all five questions and their connections. A **useful, moderately
+novel contribution** with an explicit delta, honest literature comparison and
+credible verification path is worthwhile. General uncertainty learning, final
+metaphysical answers and universal superiority are not prerequisites.
+Continued concrete gains justify continued discovery. One method or forecast
+must not become the whole program.
 
-Restore approximately75% generation/development,20% cheap screens and5%
+Aim for approximately75% generation/development,20% cheap screens and5%
 substantive synthesis. Generate different mechanisms and discard weak ones
 early. Deepen promising lines progressively; reserve expensive confirmation
-for a ready specific contribution. Harness/document counts are not breadth.
-Conventional methods can embody value logic's concerns. An identical ordinary
-implementation ties by construction; this limits superiority claims without
-deciding novelty. Compare close prior formulations and strong methods with
-fair information and resources.
+for a ready specific contribution. Document/probe counts are not breadth.
+Conventional methods can embody value logic's concerns. Identical ordinary
+implementations tie; novelty and useful synthesis require separate evidence.
+Give close prior methods fair information, outputs, resources and retention.
 
 ## Recover state and clocks
 
 Use the actual checkout root. Read AGENTS.md, git status/main/remotes,
 [TODO](../../TODO_v3.md), [portfolio](candidates.md), [single table](recurrences.md),
-[findings](s17/findings.md), [assessment](s17/scientific_assessment.md),
-[targets](s17/verification_targets.md), [failures](s17/failures.md) and relevant
-[literature](s17/literature.md). Do not reread the archive or rerun probes
+[findings](s18/findings.md), [assessment](s18/scientific_assessment.md),
+[targets](s18/verification_targets.md), [failures](s18/failures.md) and relevant
+[literature](s18/literature.md). Do not reread the archive or rerun probes
 merely to refresh context. Preserve unrelated local work.
 
-s17 began from main e709bc316c352547242fbb43b4fcd6d7ce97927b on
-codex/discovery-20261024-s17 after PR18 was verified merged/closed.
-Recheck its publication record and remote state before a new recurrence.
-**C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no promotion.**
-The35-family inventory is unchanged; connected derivations are not new families.
+s18 began from main64828a50e704ca17af79be693aee164b7ffb35ec on
+codex/discovery-20261025-s18 after PR19 was verified merged/closed.
+The inventory is36 families: S36 ordinal feedback is the only new family.
+C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no promotion.
 
-s17:14,423,719,000,000ns =240.395316666666… research minutes.
-Program:152,369,325,241,147ns =2539.488754019116… minutes, about42.32h.
-Phase:217,537,207,282,996ns =3625.620121383266… minutes.
-[Reconciliation](s17/reconcile.py) checks178 same-runtime intervals, twenty
-research exclusions and one O exclusion, with O/context recovery also excluded.
-Research ended09:58:02.272547 UTC; resident closed09:58:24.652144 UTC.
-Raw observations and prior ledger bytes remain intact. Probe runtime is never
-added again. Recorded O is partial administration. Publication, recovery,
-waits and unknown intervals earn no research credit.
+s18 research:14,414,597,000,000ns =240.243283333333… minutes.
+Program:166,783,922,241,147ns =2779.73203735245 minutes, about46.33h.
+Phase:231,951,804,282,996ns =3865.8634047166 minutes.
+[Reconciliation](s18/reconcile.py) checks184 same-runtime intervals,22 explicit
+research exclusions and additional O/context recovery. Research ended
+23:34:48.922112 UTC; resident closed23:35:04.018735 UTC. Raw observations and
+prior ledger bytes remain intact. Probe runtime is never added again.
+Recorded O is partial administration. Publication, recovery, waits and unknown
+intervals earn no research credit. Raw actuals overstate qualifying research;
+use effective_actuals.json.
 
-Fresh authorization needs fresh scope, forecasts and an observed resident clock.
-Mark mode changes and at least every15 active minutes. Count D+L+E once.
-Old surplus pays none of a fresh commitment. The unstable-host retry allowance
-requires preserving failures and costs; do not guess deterministic errors are
-hardware. No subagents are authorized by this continuation alone.
+Fresh authorization needs fresh scope, forecasts and an observed resident
+clock. Mark mode changes and at least every15 active minutes. Count D+L+E
+once; old surplus pays none of a fresh commitment. Preserve failures and
+costs under the unstable-host retry allowance. Deterministic bugs are not
+hardware diagnoses. No subagents are authorized by this continuation alone.
 
-s17 purpose shares25.22%/59.45%/15.33% reflect the assessment exception;
-R/X77.38%/22.62%. These are not quotas to repair. The
-[40-hour review](s17/portfolio40.md) is complete; next deeper review100 hours.
+Observed generation/screening/synthesis shares86.63%/11.23%/2.14% and R/X
+5.72%/94.28% are coarse classifications, not quotas to repair retrospectively.
+The [40-hour review](s17/portfolio40.md) is complete; next deeper review100h.
 
 ## Promising routes and cheap next screens
 
-**N16-C/v1: bounded analytic retained-information contribution.** The
-[claim](s17/claim.md) fixes0<C<I, a unit target, spectral edit budget,
-unrestricted compatible finite sources and reoptimized ridge value. Its
-scalar endpoints have finite witnesses of dimension at most2k. Read
-[proof](s17/proof.md), [comparison](s17/comparison.md),
-[exact prior SDP](s17/gram_sdp.md), [checker review](s17/checker_review.md),
-[decision](s17/cancellation_decision.md) and [assessment](s17/scientific_assessment.md).
-The blocker is moderate novelty/usefulness of the explicit analytic solution
-beyond the routine exact prior SDP and simpler sufficient certificates.
-A focused comparison should identify a prior reduction giving the whole
-contract or explain the remaining nonroutine equality step and its usefulness.
-Do not rerun floating grids or require every extension to decide this event.
+**S36 / O18-M/v1: tied ordinal feedback with unknown corruption.** Read the
+[bounded event](s18/scientific_assessment.md), [matroid proof](s18/matroid_feedback.md),
+[current comparison](s18/ordinal_comparison.md) and [targets](s18/verification_targets.md).
+The proposed bound is binom(d,2)*(C+1)+C strict mistakes with arbitrary true
+ties and changing matroids. Conventional strongest paths and greedy selection
+implement it. A one-sided ordered exchange matching supports the proof.
+[Incremental paths](s18/ordinal_incremental.md) apply to monotone raw counts;
+the winning-edge variant does not satisfy that update assumption.
 
-Its first forecast is **60–85%, central75%; continue developing**. This includes
-novelty uncertainty and is not calibrated. A range below80% does not meet the
-minimum. Historical I13-R/v1 central65% and F01 central30% forecast different
-unchanged events; they are not earlier N16 forecasts. No promotion occurred.
+Subjective readiness **45–75%, central60%**, not calibrated; continue with
+novelty blocker. Give its exact tie/unknown-budget/resource combination one
+capped early comparison against robust ordering and contextual search.
+Check the published ICML Oki–Sakaue version; only its May arXivv2 was read.
+September Cai/Sakaue results already give strong general regret guarantees;
+rank rescaling supplies a known-budget finite-mistake control. Ordinary
+last-response caching gives q+C mistakes on q repeating contexts. A useful
+contribution must survive those controls. If it reduces routinely to prior
+work, park it promptly and return to broader generation.
 
-The strongest old-vector control reduces the old23.4% width headline to about
-**1.80%**. A rounded upper0.58311909<0.6 excludes an old-vector-compatible value1,
-with matched norm information, but **one targeted query also suffices**. Three
-unfinished value queries are sufficient block acquisition, not minimal.
-Full retention supports later directions/budgets and must pay acquisition/storage.
-An upper-value bound does not return an optimizer. A lower rejection decision
-can avoid solving a dominated option; its strongest old-vector control also works.
+[Selective queries](s18/ordinal_queries.md), [report cuts](s18/ordinal_cuts.md),
+[scope](s18/ordinal_scope.md) and [matroid warrant hardness](s18/matroid_warrants.md)
+are separate extensions, not compulsory hurdles or evidence automatically
+raising O18-M readiness. Do not spend the next recurrence polishing all of them.
 
-The original checker's large-output formatting failure is preserved. Future
-verification claiming its repair must name/hash [v2](s17/block_check_v2.py).
-Arithmetic and strict verdicts are unchanged. The4096-bit format is incomplete:
-admissible premises can need an8189-bit sufficient parameter. A separate
-[decision rule](s17/boundary_decision.md) bypasses that example, so it is not a
-general bounded-reasoning lower bound. Rational search and algebraic degree
-bounds apply conventional tools to the explicit formula; no new speed claim.
+**Conditional optimum receipts: strongest new alternative.** Read
+[attainer DP](s18/attainer_dp.md), [sieve](s18/attainer_sieve.md),
+[extensions](s18/receipt_extensions.md) and [worked decisions](s18/partial_receipt_proofs.md).
+For independently uncertain hull generators, retained scalar optimum values
+induce disjunctive attainer constraints. Face LPs plus subset covering give
+sharp future values and source witnesses. A value-adequate surrogate need
+not remain valid after new receipts. The sieve refinement is derived but
+not implemented; the earlier DP has passing exact developmental checks.
 
-**Stronger information and paired edits.** [Second block](s17/second_block.md),
-[source norm](s17/source_norm.md) and [bounded source](s17/bounded_source.md)
-retain separate duties, including nonattainment. The exact universal
-[two-edit coefficient](s17/pair_radius.md) has an ordinary tie, eliminating
-the earlier0.33156% advantage. The [block criterion](s17/pair_criterion.md),
-[positive gap](s17/pair_gap.md) and [norm deficit](s17/pair_norm.md) are separate
-developments with novelty unassessed. Screen close prior reductions before
-expanding them; their progress does not silently raise N16's probability.
+Three receipts can force value1 where any two permit4; two bits of certified
+attainer metadata can identify an optimal action in the small example.
+Approximate receipts give min(4,1+3*epsilon). These are explicit information
+consequences, not observed service-fee gains. Prior inverse-optimal-value
+inference, uncertain polytope learning and covering sieves must be credited.
+The natural scalar-only retention duty, strongest full-optimizer control and
+moderate novelty remain unresolved. No contribution-event forecast yet.
 
-**Solution reuse and task-directed queries.** Keep [quadratic reuse](s16/reuse_ratio.md),
-[nonquadratic reuse](s16/nonquadratic_reuse.md) and [dual receipts](s16/dual_reuse.md).
-Fallible models may propose useful witnesses; validity comes from truthful
-values, not model accuracy. Natural paid access and full accounting would
-better discriminate usefulness than another abstract parameter grid.
+**N16-C/v1: preserve, but do not tunnel into it.** The same event from
+[s17/claim.md](s17/claim.md) is now **55–80%, central65%**, down10pp from s17.
+The [moment/minimax comparison](s18/n16_reduction.md) strengthens the proof
+while making a nonroutine analytic increment less certain. Finite scalar
+witnesses improve from at most2k to at most k+1 output coordinates; this is
+separate from the unchanged event. [Assessment](s18/n16_assessment.md).
+The stronger old-vector control leaves about1.80% width gain; one targeted
+query suffices for the earlier decision. Retention must pay acquisition and
+storage. Prior checker external premises and fixed-format incompleteness
+remain. No full N16 reaudit or floating grid is justified just by continuation.
 
-**Private checks, public repair, invoices and partial proofs.** Preserve
-R16-V/v1, I13/I15 and proof-selection routes. Five-query interpolation beats
-the private-check bound above six; shared solves, known rank, returned answers
-and invoice disclosure belong in strong controls. Partial truth can support
-decisions without a fully correct model. The [disjunctive example](s17/partial_blocks.md)
-shows a decision lost by convexifying a finite model class, crediting ordinary
-disjunctive optimization. Keep broader candidate generation active.
+Keep model correction, partial proofs, calibration, closed-contact summaries,
+solution reuse and paid acquisition available. See the [broad search](s18/search.md)
+for constructive adapters and early ordinary reductions. An elementary known
+mechanism can be a useful ingredient without supporting a new theorem claim.
 
 ## Metrics and completion
 
 Append ONE row to the existing recurrence table, preserving historical row
 objects and bytes. Show relevant gains with comparator, units and information
-contract. s10 audit-fee57.12% and named-work9.53% reductions are dated carries,
-now age7; s17 made no fresh audit-stream measurement. Query counts, width
-reductions, bit lengths, named work and runtime are distinct.
+contract. s18's warm retention tariff10655→9060 is14.97% lower with the same
+55/80 tree closures; setup10655 and selection/admission7975 remain payable.
+The ordinary selector ties. s10 audit-fee57.12% and named-work9.53% reductions
+are dated carries, now age8; no new audit-stream saving was measured in s18.
+Query counts, information widths, bits, named work and runtime are distinct.
 
-At the useful authorized boundary synchronize TODO, plan, claims, work log,
-actuals, portfolio, metrics and this prompt. Preserve failures and execution
-hashes. Run staged path checks, historical evidence verification and appropriate
-semantic/link/evidence checks. Publish the authorized branch/PR, attach it and
-verify its exact head and checks. Do not merge or start another recurrence
-without the applicable author instruction.
+At the authorized useful boundary synchronize TODO, plan, claims, work log,
+actuals, portfolio, metrics and this prompt. Preserve failures and executed
+source hashes. Run staged path checks, historical evidence verification and
+appropriate semantic/link/evidence checks. Publish the authorized branch/PR,
+attach it and verify its exact head/checks. Do not merge or begin another
+recurrence without the applicable author instruction.
