@@ -1,0 +1,139 @@
+{
+  "contributor": "Codex (GPT-6)",
+  "status": "DEVELOPMENT",
+  "scope_id": "s18_broad_information_and_feedback_v1",
+  "observation_date_utc": "2026-10-25",
+  "observed_in_row": "s18_cp01",
+  "age_in_recurrences": 0,
+  "ordinal": {
+    "candidate": "O18-M/v1",
+    "mistake_bound": "binom(d,2)*(C+1)+C",
+    "assumptions": "Fixed component utilities with arbitrary ties; changing matroids; C arbitrary feasible bad reports; C unknown",
+    "basic_work": "O(d^3) elementary path work plus independence queries",
+    "named_item_incremental_work": "O(d^2) elementary work per round",
+    "storage": "O(d^2 log T) counter bits",
+    "comparator": "Oki-Sakaue distinct-coordinate stronger rate; Cai et al known-budget general regret; ordinary last-response cache q+C on q repeat contexts",
+    "empirical_superiority": null
+  },
+  "conditional_receipts": {
+    "face_optimizations_at_most": "2*n*2^k",
+    "implemented_dp_work": "O(n*3^k)",
+    "derived_cover_feasibility": "O(n*k*2^k) integer operations",
+    "sieve_implemented": false,
+    "cover_integer_bits": "O(n*k+k)",
+    "two_of_three_receipts_upper": 4,
+    "all_three_receipts_exact": 1,
+    "certified_attainer_message_bits": 2,
+    "approximate_receipt_upper": "min(4,1+3*epsilon)",
+    "decision_tolerance": "epsilon<1/6 with solve fee1/2 and fallback2",
+    "ordinary_equivalent": "ties",
+    "complete_cost_saving": null
+  },
+  "paired_retention": {
+    "contexts": 80,
+    "tree_closures_preserved": 55,
+    "warm_bound_work_before": 10655,
+    "warm_bound_work_after": 9060,
+    "reduction_percent": "14.96949788831534490849366495",
+    "tariff": "Declared warm bound-work units, not CPU or complete cost",
+    "setup_tree_work": 10655,
+    "ordinary_selector": "ties;68 local subsets and709 DP transitions",
+    "complete_cost_saving": null,
+    "admission_and_profile_check_work": 7975,
+    "selection_note": "Selection is additional:709 DP transitions for the ordinary exact control; no complete-cost total is asserted."
+  },
+  "n16": {
+    "event": "N16-C/v1 unchanged from s17/claim.md",
+    "output_witness_dimension_before": "at most2k",
+    "output_witness_dimension_after": "at most k+1",
+    "readiness_range_percent": [
+      55,
+      80
+    ],
+    "central_percent": 65,
+    "central_change_percentage_points": -10
+  },
+  "readiness": {
+    "event": "O18-M/v1",
+    "range_percent": [
+      45,
+      75
+    ],
+    "central_percent": 60,
+    "status": "continue developing with novelty blocker; no promotion",
+    "record": "s18/scientific_assessment.md"
+  },
+  "carried_resources": {
+    "observed_in_row": "s10_cp01",
+    "age_in_recurrences": 8,
+    "audit_fee_reduction_percent": 57.12,
+    "named_work_reduction_percent": 9.53,
+    "note": "Dated carry only; no fresh audit stream. Complete costs remain unknown."
+  },
+  "sources": [
+    {
+      "path": "s18/matroid_feedback.md",
+      "sha256": "aaff6bdbae0adae4912d11247a5df59ee954ae2534b04d1b495c6ced6c6fdf0c"
+    },
+    {
+      "path": "s18/ordinal_comparison.md",
+      "sha256": "69ce6068a0be77724a072bb13a673b8751b89b122c228e18bf13c33cfa9a3868"
+    },
+    {
+      "path": "s18/ordinal_incremental.md",
+      "sha256": "24e8682f39f7634bd93b5457fff166f2f99355b95812f2bfd46f6ac8623530bd"
+    },
+    {
+      "path": "s18/ordinal_result.json",
+      "sha256": "451f7cfa82339d5700c67875f383dd1bf8fce448ff4326cfaac7aa2c4294508a"
+    },
+    {
+      "path": "s18/matroid_result.json",
+      "sha256": "9ee9eda5fc52eb96e61100bd78194b98702751715b3c14fd326081621676049b"
+    },
+    {
+      "path": "s18/path_update_result.json",
+      "sha256": "579db68d98218f810f4f4ff35f163159225fd425a8fc9c7897eed1e08f35ae9a"
+    },
+    {
+      "path": "s18/attainer_dp.md",
+      "sha256": "d38e661b9798547445bf37297d3670c9a4e9059dc1c58d963cafa61c162f116c"
+    },
+    {
+      "path": "s18/attainer_sieve.md",
+      "sha256": "35c3bdb359c42adcd1c9170cc0b1c18248f0b3594c135b40e7a0ac3b1f83025a"
+    },
+    {
+      "path": "s18/attainer_result.json",
+      "sha256": "d524e45ac0bb040f292b60ab87b5e775a196adc0a6e46ba239440570d781ea8d"
+    },
+    {
+      "path": "s18/partial_receipt_proofs.md",
+      "sha256": "3e2943c36400123603c62fe2808e26eee2307a6db47ec3708f022607a8091571"
+    },
+    {
+      "path": "s18/retention_result.json",
+      "sha256": "ace08a4d3c9ee5b421b884a2976d3cbfa23259a6b4ce09708e6058385008a94b"
+    },
+    {
+      "path": "s18/retention_findings.md",
+      "sha256": "9e7418bb07f54e30a542cb81adf25733920110178a7328ca644ca79f9a7d3bdd"
+    },
+    {
+      "path": "s18/n16_reduction.md",
+      "sha256": "eba2b0cca2b9f5174f749107c5c6f3ff6b2f1d537b3d9f5f1295cad645c93b05"
+    },
+    {
+      "path": "s18/n16_assessment.md",
+      "sha256": "7c071e079439e47d78dd890bacc1e404ee281b5a0800b0dc385e6d4f4f31029c"
+    },
+    {
+      "path": "s18/scientific_assessment.md",
+      "sha256": "3524fe20d4595de19c61301eef33cfc35a28e52ae3d3224b1b635086d9e36004"
+    },
+    {
+      "path": "s18/verification_targets.md",
+      "sha256": "ce7fc1055e35eac21fb4b0848fb03800e5ceec7dacb621a74adf6391306e6e4f"
+    }
+  ]
+}

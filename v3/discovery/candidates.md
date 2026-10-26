@@ -4,28 +4,26 @@ Initial research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
 No candidate is promoted. The current event-specific forecast is recorded below;
 earlier unassessed entries retain their dated historical scope.
 
-**Current continuation — October24,2026 UTC, Codex (GPT-6):**
-[s17 checkpoint](s17/checkpoint.md), [findings](s17/findings.md),
-[actuals](s17/effective_actuals.json), [single recurrence table](recurrences.md).
-The focused four-hour assessment is CLOSED:240.395316666666… research minutes.
-Program2539.488754019116… and phase3625.620121383266… minutes. No active
-clock remains;178 same-runtime segments and explicit exclusions are reconciled.
-The35-family inventory is unchanged. C001 OPEN; P3-POS01 OUTSTANDING;
+**Current continuation — October25,2026 UTC, Codex (GPT-6):**
+[s18 checkpoint](s18/checkpoint.md), [findings](s18/findings.md),
+[actuals](s18/effective_actuals.json), [single recurrence table](recurrences.md).
+The broad four-hour recurrence is CLOSED:240.243283333333… research minutes.
+Program2779.73203735245 and phase3865.8634047166 minutes. No active clock.
+The inventory grows35 to36 families. C001 OPEN; P3-POS01 OUTSTANDING;
 P3-11 deferred; no promotion.
 
-**N16-C/v1:60–85%, central75%; continue developing.** The bounded event includes
-useful moderate novelty. The critical proof and finite witnesses are reconstructed;
-the exact prior operator-interpolation SDP ties. The remaining blocker is the
-analytic solution's useful increment beyond routine prior reductions. Stronger
-old-vector comparison leaves about1.80% width gain. Rounded upper0.58311909<0.6
-contrasts with compatible1, but one targeted query also suffices. No fresh fees
-or counted-work saving. The checker serialization repair preserves old evidence.
+**O18-M/v1:45–75%, central60%; N16-C/v1:55–80%, central65%.**
+Both continue with explicit novelty blockers. Conditional optimum receipts
+remain a strong unassessed alternative. The [assessment](s18/scientific_assessment.md)
+and [targets](s18/verification_targets.md) distinguish the events and scope.
+The ordinal guarantee covers genuine ties and unknown corruption; strong
+prior regret methods and a q+C ordinary cache prevent inflated comparisons.
+The conditional-receipt information gains and warm retention tariff are
+useful bounded results, with ordinary equivalents tied and complete costs unknown.
 
-The [40-hour review](s17/portfolio40.md) is complete; the next deeper review is
-100 program hours, with42.32 hours now recorded. Restore broad75/20/5 discovery
-and keep the other promising routes. Default next duration one hour unless
-freshly overridden; no automatic recurrence or merge. Historical forecasts
-remain scoped to their own events. [Next prompt](CONTINUE.md).
+Current program46.33h; the [40-hour review](s17/portfolio40.md) is complete,
+next deeper review100h. Continue broad discovery only when next authorized;
+default one hour unless freshly overridden. [Next prompt](CONTINUE.md).
 
 IDs S01 onward belong to this program, not separate clock commitments.
 
@@ -507,3 +505,17 @@ stress tests. S33 gains a sharp three-score marginal bound and a proposed
 dependence-robust learning composition. These are extensions, not extra family
 counts. [Assessment](s10/scientific_assessment.md) separates useful capability,
 unknown full-cost benefit and unchanged confirmation readiness.
+
+## s18 constructive update — October25,2026, Codex (GPT-6)
+
+| ID | Mechanism and lineage | Useful comparison | Evidence and obstacle | Disposition |
+|---|---|---|---|---|
+| S36 | Ordinal choice feedback with genuine ties, unknown finite corruption and changing matroids; connected to S31/S32/S35 | Transfer pair information across contexts with binom(d,2)*(C+1)+C mistakes and polynomial work, without knowing C | [Proof](s18/matroid_feedback.md), [comparison](s18/ordinal_comparison.md). Existing strongest paths, greedy optimization, known-budget general regret and q+C ordinary caching are mandatory controls. Exact combined novelty remains unresolved | O18-M/v1 DEVELOPMENT;45–75%, central60%; continue |
+
+S35/retained-information branches gain [conditional optimum receipts](s18/attainer_dp.md),
+[covering-sieve adaptation](s18/attainer_sieve.md) and [partial-proof decisions](s18/partial_receipt_proofs.md).
+These are connected developments, not additional families. Scalar-only inverse
+inference is established; the structured algorithm, natural retention duty and
+metadata tradeoff need closer comparison. Readiness UNASSESSED. N16's smaller
+witness and ordinary reduction lower its same-event central estimate75% to65%.
+The broader [search](s18/search.md) preserves parked and alternative mechanisms.
