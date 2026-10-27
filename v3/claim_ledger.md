@@ -1012,3 +1012,20 @@ All entries DEVELOPMENT; no independent confirmation or promotion.
 and [failures](discovery/s14/failures.md) distinguish established ingredients,
 adaptations, useful consequences and open novelty. The three new events are
 unassessed; I13-R/v1 and F01 forecasts are historical carries, not updates.
+
+## s19 — exact retained-value ranges and broader screens
+
+Codex (GPT-6), October26--27,2026, DEVELOPMENT. [Bounded V19-R/v1 event](discovery/s19/claim.md):
+at most2*n*2^k local LPs, O(n*3^k) combination work plus sorting, at most n*2^k
+intervals, rational source witnesses and complete local certificates. Compared
+with s18 attainer enumeration and ordinary disjunctive inference; no observed
+speed or complete-cost superiority. The noisy example rejects a later report
+and bounds a reciprocal; direct single-band queries remain a strong control.
+[Evidence and readiness](discovery/s19/readiness.md):50--80%, central65%, continue.
+
+[O18 same-event assessment](discovery/s19/o18_assessment.md):35--70%, central50%.
+N16's prior55--80%, central65% is carried, not reassessed. Sparse forest/cycle
+inference is separately unassessed. Actual paid-proof integration exceeds
+fallback overall; generic fusion/recovery claims have close prior reductions.
+[Five-question synthesis](discovery/s19/scientific_assessment.md) states the
+useful deltas, ordinary ties and remaining blockers. No promotion.

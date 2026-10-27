@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "source_sha256": "aabfc44edeb8fa08fb52d262a961e6dd4f1b7181d629afa31ebb42c01a420ea5",
+  "exception": "AssertionError: ('positive mistake cycle', 3, (0, 1, 0), ((0, -1, 1), 1), ((0, 0, 0), 1))",
+  "diagnosis": "Deterministic checker defect: first-pass iterative DFS marked sibling vertices seen when pushing all neighbors, allowing incorrect finish order. The alleged positive cycle contradicts monotonic integer utility potential on the already-used corruption layer. Replace DFS with an iterator stack; preserve this source and failed observation. Not attributed to host instability."
+}

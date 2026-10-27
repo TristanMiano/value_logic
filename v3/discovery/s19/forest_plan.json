@@ -1,0 +1,16 @@
+{
+  "status": "prospective DEVELOPMENT screen",
+  "seed": 191936,
+  "question": "Do forest threshold messages, exact boundary handling, source reconstruction and feedback-edge branches match the general range DP?",
+  "budget": "72 fixed seeded small rational cases and two tight cycle-rank examples; no adaptation to exposed outcomes. Local blocks at most two-dimensional.",
+  "command": "python v3/discovery/s19/forest_probe.py",
+  "failure_policy": "Preserve executed files/results. Repairs require a new version.",
+  "dependencies": {
+    "forest_solver.py": "60347bad890c4c16497ba05efcc077a23b331383d64eabd2c278f2a660a074fa",
+    "forest_probe.py": "f2d0d1e5322d1a1f2ce61ba4b7efd81ec43a3bdc8ed719915c73cf4476c936e3",
+    "exact_flat_probe.py": "9b6de9a5dce8e9d80982b75d083b502877a43593c133c5a43cc6040b00abdeb3",
+    "anchor_range_check.py": "0b52864e3bf5d46585e330b2fcff4135ee67e7e0e51bb777bf88bd870446a3c8",
+    "value_set_check.py": "4a8d5cd8b46afa9d96735ff1939fa211e9c6a333bf713af27cf1eb8ba4f81715"
+  },
+  "limitation": "Both methods share rational vertex enumeration; no independent proof confirmation, generic production LP implementation or practical speed claim."
+}

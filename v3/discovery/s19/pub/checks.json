@@ -1,0 +1,13 @@
+{
+  "classification": "administration; zero research credit",
+  "contributor": "Codex (GPT-6)",
+  "checks": [
+    {"command": "python tools/check_repo_paths.py", "status": "PASS", "tracked_files": 57327, "attribute_probes": 6005, "maximum_relative_utf16_units": 200},
+    {"command": "python tools/evidence_paths.py verify", "status": "verified", "relocated_paths": 32, "unique_objects": 30},
+    {"command": "python -m unittest verification.test_links verification.test_repo_paths verification.test_evidence_paths verification.test_relocated_links", "status": "PASS", "tests": 30, "elapsed_seconds": 17.247},
+    {"command": "python v3/checks/math_markdown.py", "status": "PASS", "files_scanned": 2159, "math_spans": 19113, "verified_portable_views": 64, "issue_count": 0, "preserved_source_issue_count": 376},
+    {"command": "python v3/discovery/s19/verify_evidence.py --index", "status": "PASS", "manifest_files": 148, "execution_input_bindings": 238, "prior_rows_byte_preserved": 28, "prior_ledger_prefix_preserved": true, "recurrence_rows": 29},
+    {"command": "git diff --cached --check", "status": "PASS"}
+  ],
+  "note": "Administrative checks are not independent mathematical confirmation. Final staged identity and path checks are repeated after adding publication records. No scientific probe was rerun."
+}

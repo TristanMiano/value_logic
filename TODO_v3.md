@@ -1,19 +1,19 @@
 # Value Logic Phase Three: Logical Uncertainty and Counterfactuals
 
-**Latest recurrence — October25,2026 UTC:** [s18](v3/discovery/s18/checkpoint.md)
-is CLOSED after240.243283333333… effective research minutes. The fresh four-hour
-broad recurrence included a capped N16 novelty screen; PR19 was verified merged.
-[Findings](v3/discovery/s18/findings.md) develop ordinal feedback and conditional
-optimum receipts while preserving broad alternatives. O18-M/v1 has subjective
-45–75%, central60%; N16-C/v1 is55–80%, central65%. Both continue with novelty
-blockers. C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred; no promotion or active clock.
+**Latest recurrence — October26--27,2026 UTC:** [s19](v3/discovery/s19/checkpoint.md)
+is CLOSED after240.051583333333… effective research minutes. PR20 was verified
+merged before the four-hour broad recurrence, including a capped O18 screen.
+[Findings](v3/discovery/s19/findings.md): V19-R/v1 exact gap-preserving ranges
+and rational certificates;50--80%, central65%. O18-M/v1 is35--70%, central50%;
+N16 carries55--80%, central65%. No active clock, unfinished floor or promotion.
+C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred.
 
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
 Current amendment: [discovery-first direction](v3/decisions/2026-10-11_discovery_first_amendment.md).
 
 **Selected next: P3-SEARCH-01, a continuing discovery program.** Its first
-240-minute research cycle remains open with **2779.73203735245 research minutes**
+240-minute research cycle remains open with **3019.783620685783… research minutes**
 credited. Its floor is satisfied. The default is **one-hour increments**, subject to explicit author overrides,
 with a portable handoff after each; historical central/high cycle forecasts
 remain 360/480 minutes. **P3-POS01, the materially useful positive-result objective,
@@ -30,11 +30,11 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **3865.8634047166 minutes**.
+Phase-three qualifying research is **4105.914988049933… minutes**.
 The [960-minute checkpoint](v3/work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
 was satisfied at P3-09, with **35.847797958367 minutes** of observed overshoot
 at that assessment; current phase research exceeds 960 minutes by
-**2905.8634047166 minutes**.
+**3145.914988049933… minutes**.
 Later tasks and author gates remain necessary.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
@@ -72,7 +72,7 @@ scope, with **90.310005771417 measured research minutes** and an
 **P3-10 is COMPLETE at explicit amended final-execution and interpretation
 scope**, with **90.283569405783 measured research minutes** and
 [independently reconstructed results](v3/experiments/results.md).
-**Next: continue P3-SEARCH-01-C001 from [s18](v3/discovery/s18/checkpoint.md), using
+**Next: continue P3-SEARCH-01-C001 from [s19](v3/discovery/s19/checkpoint.md), using
 [the current prompt](v3/discovery/CONTINUE.md) for the next requested duration (default one hour). P3-11 is deferred.**
 Phase two remains complete; P3-C–D remain unattempted. P3-N01 is now
 **SUPPORTED at modest formal-adaptation and implementation-synthesis scope**;
@@ -89,7 +89,16 @@ Read this plan with the [phase-three procedure](v3/RESEARCH_PROTOCOL.md),
 selected task's prior sessions. The [primary-source orientation](v3/literature/00_orientation.md)
 supports planning; it is not a completed literature audit or theorem import.
 
-## Current author selection — October 25, 2026 UTC
+## Current author selection — October26--27,2026 UTC
+
+The broad four-hour recurrence is complete. [Assessment](v3/discovery/s19/scientific_assessment.md)
+keeps the five-question goal and useful moderate novelty in view. Program50.33h;
+36 numbered families. Continue broad discovery only when authorized, with a
+short V19 exact-contract comparison before further deepening. O18's reserved
+screen is complete; other promising candidates remain available. The40-hour
+review is complete; next review100h. [Current prompt](v3/discovery/CONTINUE.md).
+
+## Previous author selection — October 25, 2026 UTC
 
 The broad four-hour recurrence is complete. Read [findings](v3/discovery/s18/findings.md),
 [assessment](v3/discovery/s18/scientific_assessment.md) and the
