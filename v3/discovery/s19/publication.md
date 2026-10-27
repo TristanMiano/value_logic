@@ -15,3 +15,10 @@ issues; tracked-path and relocated-evidence checks;148 manifest files and238
 hash bindings; all28 earlier recurrence rows and the old ledger prefix preserved.
 The current forecast pointer now names V19-R/v1 explicitly; F01 is retained
 as a separate historical forecast. See[check record](pub/checks.json).
+
+Published and attached [PR21](https://github.com/TristanMiano/value_logic/pull/21)
+from research commit bcf3f2642a2024ced823eb2f87342f82459278fa. The
+[creation snapshot](pub/pr_created.json) records the base/head and timestamp.
+CI outcomes are available on the PR for the actual published head. This
+publication record makes no claim of independent mathematical confirmation.
+No automatic merge or subsequent recurrence is performed.
