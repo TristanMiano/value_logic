@@ -4,26 +4,25 @@ Initial research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
 No candidate is promoted. The current event-specific forecast is recorded below;
 earlier unassessed entries retain their dated historical scope.
 
-**Current continuation — October25,2026 UTC, Codex (GPT-6):**
-[s18 checkpoint](s18/checkpoint.md), [findings](s18/findings.md),
-[actuals](s18/effective_actuals.json), [single recurrence table](recurrences.md).
-The broad four-hour recurrence is CLOSED:240.243283333333… research minutes.
-Program2779.73203735245 and phase3865.8634047166 minutes. No active clock.
-The inventory grows35 to36 families. C001 OPEN; P3-POS01 OUTSTANDING;
+**Current continuation — October26--27,2026 UTC, Codex (GPT-6):**
+[s19 checkpoint](s19/checkpoint.md), [findings](s19/findings.md),
+[actuals](s19/effective_actuals.json), [single recurrence table](recurrences.md).
+The broad four-hour recurrence is CLOSED:240.051583333333… research minutes.
+Program3019.783620685783… and phase4105.914988049933… minutes; no active clock.
+The36-family inventory is unchanged. C001 OPEN; P3-POS01 OUTSTANDING;
 P3-11 deferred; no promotion.
 
-**O18-M/v1:45–75%, central60%; N16-C/v1:55–80%, central65%.**
-Both continue with explicit novelty blockers. Conditional optimum receipts
-remain a strong unassessed alternative. The [assessment](s18/scientific_assessment.md)
-and [targets](s18/verification_targets.md) distinguish the events and scope.
-The ordinal guarantee covers genuine ties and unknown corruption; strong
-prior regret methods and a q+C ordinary cache prevent inflated comparisons.
-The conditional-receipt information gains and warm retention tariff are
-useful bounded results, with ordinary equivalents tied and complete costs unknown.
+**V19-R/v1:50--80%, central65%; O18-M/v1:35--70%, central50%; N16-C/v1
+carried55--80%, central65%.** [Assessment](s19/scientific_assessment.md) and
+[targets](s19/verification_targets.md) keep these events distinct. Exact scalar
+ranges and rational certificates are promising; novelty and a justified duty
+remain open. Ordinary equivalent methods tie. Actual shared-proof costs exceed
+fallback overall; no new audit or complete-cost saving is claimed.
 
-Current program46.33h; the [40-hour review](s17/portfolio40.md) is complete,
-next deeper review100h. Continue broad discovery only when next authorized;
-default one hour unless freshly overridden. [Next prompt](CONTINUE.md).
+Program50.33h; the[40-hour review](s17/portfolio40.md) is complete, next deeper
+review100h. Continue broad discovery only when authorized, with a short V19
+comparison before further deepening. Default one hour unless freshly overridden.
+O18's capped screen is finished. [Next prompt](CONTINUE.md).
 
 IDs S01 onward belong to this program, not separate clock commitments.
 
@@ -519,3 +518,16 @@ inference is established; the structured algorithm, natural retention duty and
 metadata tradeoff need closer comparison. Readiness UNASSESSED. N16's smaller
 witness and ordinary reduction lower its same-event central estimate75% to65%.
 The broader [search](s18/search.md) preserves parked and alternative mechanisms.
+
+## s19 constructive update
+
+Codex (GPT-6), DEVELOPMENT. No new numbered family: the principal variants
+extend retained-information, paid-computation and model-combination lines.
+[V19-R/v1](s19/claim.md) introduces a bounded event for exact scalar ranges,
+50--80%, central65%. [O18](s19/o18_assessment.md) falls to35--70%, central50%;
+N16 retains its separate prior assessment. Sparse forest/cycle inference and
+source-coupled edit contrasts remain available. Fusion and generic recovery
+screens have direct prior reductions; paid-proof integration is negative
+overall. See[findings](s19/findings.md),[readiness](s19/readiness.md) and the
+[five-question assessment](s19/scientific_assessment.md). Broad discovery remains
+the default, not an open-ended confirmation campaign around AR1.

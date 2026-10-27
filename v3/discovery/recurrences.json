@@ -3,13 +3,13 @@
   "cycle": "P3-SEARCH-01-C001",
   "status": "OPEN",
   "prepared_by": "Codex (GPT-6)",
-  "prepared_date_utc": "2026-10-25",
-  "source_commit": "64828a50e704ca17af79be693aee164b7ffb35ec",
-  "latest_checkpoint": "s18/checkpoint.md",
-  "latest_effective_actuals": "s18/effective_actuals.json",
+  "prepared_date_utc": "2026-10-27",
+  "source_commit": "d1c7443f216ddb37c6083d5c503618d7a2441e97",
+  "latest_checkpoint": "s19/checkpoint.md",
+  "latest_effective_actuals": "s19/effective_actuals.json",
   "retrospective_research_credit_ns": 0,
   "rounding": "Nearest whole minute, half up, directly from integer nanoseconds: (ns + 30000000000) // 60000000000. Round each increment and each exact cumulative independently; never sum or double-round displayed minutes.",
-  "row_scope": "28 chronological boundaries; one s18 recurrence; all27 earlier row objects byte-preserved.",
+  "row_scope": "29 chronological boundaries; one s19 recurrence; all28 earlier row objects byte-preserved.",
   "metric_definitions": {
     "families_total": {
       "label": "Numbered candidate families",
@@ -167,8 +167,8 @@
     }
   },
   "time_reconstruction": "For s01-s03, apply original dispositions by segment index or exact same-runtime start/end identifiers, sum closed effective D/L/E through the recorded boundary, add prior cycle research, then subtract the previous row cumulative. For s05-s06, use closed effective actuals with their full/partial exclusions. The abandoned s04 row contributes zero. For s07 use closed effective session_research_ns/cycle_research_ns after all dispositions; no overlapping helper or publication time is added.",
-  "total_research_ns": 166783922241147,
-  "total_minutes_rounded": 2780,
+  "total_research_ns": 181187017241147,
+  "total_minutes_rounded": 3020,
   "rows": [
     {
       "id": "s01_cp01",
@@ -9508,9 +9508,679 @@
         },
         "conditional_receipts": "UNASSESSED"
       }
+    },
+    {
+      "id": "s19_cp01",
+      "label": "s19 four-hour broad discovery",
+      "checkpoint": "s19/checkpoint.md",
+      "session": "s19",
+      "contributor": "Codex (GPT-6)",
+      "research_ns": 14403095000000,
+      "cumulative_research_ns": 181187017241147,
+      "research_minutes_rounded": 240,
+      "cumulative_minutes_rounded": 3020,
+      "new_family_ids": [],
+      "cumulative_new_family_count": 36,
+      "metric_summary": "Exact gap-preserving ranges and rational certificates; O18 novelty estimate lower; actual shared-proof bill exceeds fallback; no fresh audit-fee or full-cost saving.",
+      "metric_values": {
+        "scope_id": "s19_broad_ranges_and_paid_proofs_v1",
+        "source": "s19/progress_metrics.json",
+        "sha256": "110dc8a2a2c9c0f76decc2af35c6017daa3dc6ee187769fe4f26b89c41e6159a"
+      },
+      "description": "Broad discovery; capped O18 screen; V19-R/v1 bounded event introduced; ordinary reductions parked; no promotion.",
+      "time_evidence": {
+        "actuals": "s19/effective_actuals.json",
+        "sha256": "67c7c93dc4f479c9855d4a5c9ca8a0daffe7a02cab56cb26c4a193aef2506c87",
+        "actuals_field": "session_research_ns",
+        "cumulative_actuals_field": "cycle_research_ns",
+        "research_closed_utc": "2026-10-27T00:10:08.877510+00:00",
+        "note": "153 segments;21 research exclusions plus O/context recovery; publication zero credit."
+      },
+      "metric_sources": [
+        {
+          "path": "s19/claim.md",
+          "sha256": "d7de614fd2ab5148ee66527d564a3846c1b5e3997ffae824f663e60e28c71b0f"
+        },
+        {
+          "path": "s19/anchor_ranges.md",
+          "sha256": "4d45754cddcdfe169838fd705a44e9d1dccc6ec92c795ca7fdfb8d476fd488ef"
+        },
+        {
+          "path": "s19/anchor_range_result.json",
+          "sha256": "06f85d83fdf58632714008aa1bb353393bfca712099b38e875c966cd736656df"
+        },
+        {
+          "path": "s19/range_certificates.md",
+          "sha256": "9ee5174020954c18673edde5d375206f9305b2330934c90e54d51c34bc3f2103"
+        },
+        {
+          "path": "s19/range_cert_result.json",
+          "sha256": "420802fef25259b70ef681d94c1e26c07c2de804c28b85b3ad9b4513efd8cb3c"
+        },
+        {
+          "path": "s19/robust_gap.md",
+          "sha256": "8e208540f23cd52cf0c1014f64da453ad2341e66dbcbec2015cf88b5399d7fa4"
+        },
+        {
+          "path": "s19/range_decisions.md",
+          "sha256": "a3c578a0d84d1401d84938b6bbcdaeb62fc7e154ba342bb497e47b8124e78780"
+        },
+        {
+          "path": "s19/forest_receipts.md",
+          "sha256": "b59f38ea12c237d54004a2aac004f71ccd5e12ff2bb292a979548a7849c3420b"
+        },
+        {
+          "path": "s19/forest_result.json",
+          "sha256": "0534e20a5a7c1be37fce66057ab7baafa0b4111103573218a57465d1026c4a2a"
+        },
+        {
+          "path": "s19/forest_cert_result.json",
+          "sha256": "6a811b8d6cb8421bec9f1c160393648072a01a90579451e3beae44886f6a58dc"
+        },
+        {
+          "path": "s19/proof_integration.md",
+          "sha256": "227eee88a2a7f304448c137c14155567ca79cdbc7498d773fda8444ab6fe3e08"
+        },
+        {
+          "path": "s19/proof_machine_result.json",
+          "sha256": "9c9c7a1dcf57fd42a38bc8ca3355816c9ec1d9828f94e8b458f136de5cf485df"
+        },
+        {
+          "path": "s19/o18_assessment.md",
+          "sha256": "278f9f02bace7f09bca0a4f07780c9286ec6ccfd2af4f0e5f38bf6c9374a6338"
+        },
+        {
+          "path": "s19/ordinal_perceptron.md",
+          "sha256": "53c29acceb644c648477a294fe4411ca5aaed4aa5a1f076ec9dc0f9bfb9450a8"
+        },
+        {
+          "path": "s19/perceptron_v1_failure.json",
+          "sha256": "2a0011d5e2cf3d921b4b3537c47cd1b723e42c629a89dd826f3766e68e6549c7"
+        },
+        {
+          "path": "s19/perceptron_result.json",
+          "sha256": "9fd0f5022e1abcde734fed76e959c280c1ddc45e0a95f1181f3b7cee2bcefa12"
+        },
+        {
+          "path": "s19/readiness.md",
+          "sha256": "195bb98f7bf8b2431fcdfe897e587c6073ddb717101c461a9149ed0ed61a9978"
+        },
+        {
+          "path": "s19/scientific_assessment.md",
+          "sha256": "3961950d18ac378b395b643759e9b7560792d7311314fb0db75b471445dd315f"
+        },
+        {
+          "path": "s19/comparison.md",
+          "sha256": "b6ce62be189a3ea9586177ce0a81102e92463a41f6707979763960e8b064d926"
+        },
+        {
+          "path": "s19/verification_targets.md",
+          "sha256": "9bc3039fc7008050c1c1cc4d5317838a00e487881bdeeeb88209d61b7b129be5"
+        }
+      ],
+      "fixed_metrics": {
+        "joint16_checked_outputs": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 11,
+          "value": 16,
+          "units": "checked outputs",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: count checked_action requests with bound <= tolerance"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].counts.checked"
+            }
+          ],
+          "denominator": 16,
+          "coverage_percent": 100,
+          "coverage_delta_percentage_points": null,
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s07_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "joint16_complete_plan_closures": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 11,
+          "value": 11,
+          "units": "closed requests",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: distinct nonnull plans[].request with checked final request; denominator requests minus initial cache closures"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].complete_plan_request_coverage.numerator"
+            }
+          ],
+          "denominator": 11,
+          "coverage_percent": 100,
+          "coverage_delta_percentage_points": null,
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s07_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "joint16_audits": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 11,
+          "value": 14,
+          "units": "audits",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: count events[kind=audit]"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].counts.cost_observations"
+            }
+          ],
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s07_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "joint16_complete_calls": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 11,
+          "value": 14,
+          "units": "complete calls",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: count events[kind=complete]"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].counts.complete_calls"
+            }
+          ],
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s07_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "joint16_native_ihs_attempts": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 11,
+          "value": 0,
+          "units": "native-IHS attempts",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: count events[kind=native]"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].counts.native_attempts"
+            }
+          ],
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s07_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "joint16_quotation_units": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 11,
+          "value": 1718749,
+          "units": "named units",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: sum(plans[].quote_units) + invoice.planner_initialization_units"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].quotation.total_units"
+            }
+          ],
+          "comparability_note": "All per-plan meter deltas plus constructor work; already included in the controller bill, never added twice.",
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s07_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "joint16_named_arm_units": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 11,
+          "value": 2306193,
+          "units": "named units",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle]: invoice.operation_units"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].resources.arm_named_units"
+            }
+          ],
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s07_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "joint16_named_ratio_audit_first": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "variant_id": "s07-complete-bundle-v3",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T20:22:24.594133+00:00",
+          "age_in_recurrences": 11,
+          "value": 4.754390124230517,
+          "units": "dimensionless named-unit ratio",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "sources": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "arms[policy=bundle].invoice.operation_units"
+            },
+            {
+              "path": "s07/a01/results.json",
+              "sha256": "3981dccf06f97221972c67abe9d9a6d88eede8c8cada37633ed6b1e7946ecfa1",
+              "locator": "arms[policy=audit_first].invoice.operation_units"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "comparisons[candidate_version=s07-complete-bundle-v3,control_policy=audit_first].arm_named_unit_ratio"
+            }
+          ],
+          "numerator_value": 2306193,
+          "denominator_value": 485066,
+          "denominator_measurement_utc": "2026-10-12T20:08:46.807687+00:00",
+          "denominator_observed_in_row": "s07_cp01",
+          "denominator_development_run": "a01",
+          "denominator_status": "Retained actual control, not rerun in a03",
+          "comparability_note": "Named component ratio; complete costs retain unpriced terms.",
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s07_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "f01_demonstrated_cost_regions": {
+          "scope_id": "s28_b1_joint16_menu1_v1",
+          "event_id": "F01",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s07_cp01",
+          "measurement_utc": "2026-10-12T21:15:17.034344+00:00",
+          "age_in_recurrences": 11,
+          "value": 0,
+          "units": "warranted complete-cost regions",
+          "previous_comparable_row": null,
+          "absolute_delta": null,
+          "assessment_limit": "Full pricing and fresh-domain confirmation remain open.",
+          "sources": [
+            {
+              "path": "s07/forecast_final.md",
+              "sha256": "3f7d08b520a52f640731cdab51ad5032791cc70f94003f8d689e46e834878f52",
+              "locator": "Final evidence assessment"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "arms[version=s07-complete-bundle-v3,policy=bundle].demonstrated_ten_percent_full_cost_regions"
+            }
+          ],
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s07_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "edit_transport_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "variant_id": "transport_only",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s02_tail",
+          "value": 144,
+          "units": "warranted edit states",
+          "previous_comparable_row": "s02_tail",
+          "sources": [
+            {
+              "path": "s02/margin_repair01.json",
+              "sha256": "e88cac43e06d958f1d80ad8b3ef0fd77284533e353529b5afa8f68d947e80df0",
+              "locator": "units[mode=transport_only].warranted_states"
+            }
+          ],
+          "denominator": 272,
+          "coverage_percent": 52.94117647058823,
+          "absolute_delta": null,
+          "delta_units": "warranted edit states",
+          "coverage_delta_percentage_points": null,
+          "measurement_utc": "2026-10-11T23:12:23.271094+00:00",
+          "age_in_recurrences": 23,
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s02_tail",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "edit_broad_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "variant_id": "broad_8_attempts",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s02_tail",
+          "value": 254,
+          "units": "warranted edit states",
+          "previous_comparable_row": "s02_tail",
+          "sources": [
+            {
+              "path": "s02/margin_repair01.json",
+              "sha256": "e88cac43e06d958f1d80ad8b3ef0fd77284533e353529b5afa8f68d947e80df0",
+              "locator": "units[mode=broad].warranted_states"
+            }
+          ],
+          "denominator": 272,
+          "coverage_percent": 93.38235294117646,
+          "comparability_note": "First actual measurement of this policy lane; 181 native calls, 156792300 ns new lifecycle cost, shared paid input separate.",
+          "measurement_utc": "2026-10-11T23:12:23.271094+00:00",
+          "age_in_recurrences": 23,
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s02_tail",
+          "absolute_delta": null,
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "edit_targeted_warrants": {
+          "scope_id": "margin_edits_272_v1",
+          "variant_id": "targeted_8_attempts",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s02_tail",
+          "value": 258,
+          "units": "warranted edit states",
+          "previous_comparable_row": "s02_tail",
+          "sources": [
+            {
+              "path": "s02/margin_repair01.json",
+              "sha256": "e88cac43e06d958f1d80ad8b3ef0fd77284533e353529b5afa8f68d947e80df0",
+              "locator": "units[mode=targeted].warranted_states"
+            }
+          ],
+          "denominator": 272,
+          "coverage_percent": 94.8529411764706,
+          "comparability_note": "First actual measurement of this policy lane; 195 native calls, 171498200 ns new lifecycle cost, shared paid input separate.",
+          "measurement_utc": "2026-10-11T23:12:23.271094+00:00",
+          "age_in_recurrences": 23,
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s02_tail",
+          "absolute_delta": null,
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "repair_checked_outputs": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "native_requested_tolerance_rup",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s06_cp01",
+          "value": 80,
+          "units": "checked outputs",
+          "previous_comparable_row": "s06_cp01",
+          "sources": [
+            {
+              "path": "s06/rup_stream_results.json",
+              "sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+              "locator": "latest requested-tolerance arm.requests: count(status=checked_action)"
+            }
+          ],
+          "denominator": 80,
+          "coverage_percent": 100,
+          "absolute_delta": null,
+          "delta_units": "checked outputs",
+          "coverage_delta_percentage_points": null,
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends.",
+          "measurement_utc": "2026-10-12T17:03:32.626949+00:00",
+          "age_in_recurrences": 12,
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s06_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "repair_cache_closures": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "native_requested_tolerance_rup",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s06_cp01",
+          "value": 60,
+          "units": "requests closed without new logical acquisition",
+          "previous_comparable_row": "s06_cp01",
+          "sources": [
+            {
+              "path": "s06/rup_stream_results.json",
+              "sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+              "locator": "latest requested-tolerance arm.requests: sum(closed_from_cache)"
+            }
+          ],
+          "denominator": 80,
+          "coverage_percent": 75,
+          "absolute_delta": null,
+          "delta_units": "requests closed without new logical acquisition",
+          "coverage_delta_percentage_points": null,
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends.",
+          "measurement_utc": "2026-10-12T17:03:32.626949+00:00",
+          "age_in_recurrences": 12,
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s06_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "repair_action_cost": {
+          "scope_id": "repair_stream_80_p6_t1_v1",
+          "variant_id": "native_requested_tolerance_rup",
+          "measurement_status": "carried_forward",
+          "observed_in_row": "s06_cp01",
+          "value": 223,
+          "units": "supplied-weight action-cost units",
+          "previous_comparable_row": "s06_cp01",
+          "sources": [
+            {
+              "path": "s06/rup_stream_results.json",
+              "sha256": "b416102c2e79b07bd11214c53f9fdbfbc821be78704982b5975b6d2063537d2e",
+              "locator": "latest requested-tolerance arm.requests: sum(action_cost)"
+            }
+          ],
+          "absolute_delta": null,
+          "delta_units": "supplied-weight action-cost units",
+          "comparability_note": "Same ordered 80-request outer duty; bridge implementation changes. New solver-call units and complete service invoices are not interchangeable across these backends.",
+          "measurement_utc": "2026-10-12T17:03:32.626949+00:00",
+          "age_in_recurrences": 12,
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "last_actual_row": "s06_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        },
+        "families_total": {
+          "scope_id": "c001_numbered_families",
+          "measurement_status": "current inventory",
+          "observed_in_row": "s19_cp01",
+          "age_in_recurrences": 0,
+          "value": 36,
+          "units": "families",
+          "previous_comparable_row": "s18_cp01",
+          "absolute_delta": 0,
+          "delta_units": "families",
+          "sources": [
+            {
+              "path": "candidates.md",
+              "locator": "s19 constructive update; variants not separate families"
+            }
+          ],
+          "interpretation": "Breadth inventory, not readiness."
+        },
+        "confirmation_forecast_percent": {
+          "assessment_id": "F01_s10_final",
+          "event_id": "F01",
+          "scope_id": "candidate_specific_confirmation_event",
+          "candidate_id": "S28",
+          "candidate_version": "S28-B1",
+          "verification_plan_version": "V1",
+          "observed_in_row": "s10_cp01",
+          "assessment_utc": "2026-10-14T22:25:05.909460+00:00",
+          "measurement_status": "carried_forward",
+          "assessment_status": "assessed; remain in discovery",
+          "value": 30,
+          "central_percent": 30,
+          "probability_range_percent": [
+            20,
+            45
+          ],
+          "units": "subjective probability percent",
+          "previous_comparable_row": "s08_cp01",
+          "recurrence_absolute_delta": 0,
+          "previous_comparable_assessment_id": "F01_s08_final",
+          "change_since_previous_assessment_percentage_points": 0,
+          "range_endpoint_changes_percentage_points": [
+            0,
+            0
+          ],
+          "gap_to_80_central_percentage_points": 50,
+          "gap_to_90_central_percentage_points": 60,
+          "gap_to_80_range_percentage_points": [
+            35,
+            60
+          ],
+          "gap_to_90_range_percentage_points": [
+            45,
+            70
+          ],
+          "rationale": "Constructive source, response and dependence results are different duties. Ordinary mirrors tie, stronger thresholds trade fees against computation, and full prices remain unknown. No new F01 complete-cost evidence.",
+          "uncertainty": "Judgmental range, not a confidence interval; no relevant calibrated forecast track record documented.",
+          "sources": [
+            {
+              "path": "s10/forecast_final.md",
+              "sha256": "65a48ec82adc4998ffef3528a4aaad8c493df8f8266338dc9f73a182305f613b",
+              "locator": "Unchanged-event final assessment"
+            }
+          ],
+          "change_since_first_assessment_percentage_points": -5,
+          "range_endpoint_changes_since_first_percentage_points": [
+            -5,
+            -5
+          ],
+          "implementation_evidence": [
+            {
+              "path": "s07/a03/results.json",
+              "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+              "locator": "latest same-scope acquisitions"
+            },
+            {
+              "path": "s07/progress_results.json",
+              "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+              "locator": "resource reconstruction"
+            },
+            {
+              "path": "s07/trace_check_results.json",
+              "sha256": "d59c612ea625542313dcd16e469e86fd98fd3274c1a5e5cdb839b08cb953e26e",
+              "locator": "independent raw-trace check"
+            }
+          ],
+          "sensitivity": {
+            "raise_forecast": "Material matched complete-cost gains on the specified F01 domain with a robust price region and sound checked outputs.",
+            "lower_forecast": "Further inability to change purchases or nonquotation costs on that domain, or failure of required soundness/generalization assumptions."
+          },
+          "next_decision": "Target cheap source admission/conditioning and conservative score learning on fresh priced services; keep a new event separate from F01.",
+          "assessment_time_scope": "Recorded end of in-session synthesis containing the final assessment",
+          "age_in_recurrences": 9,
+          "carried_in_row": "s19_cp01",
+          "carried_from_row": "s18_cp01",
+          "reason": "No comparable fresh legacy-stream measurement or F01 reassessment in s19; original scope/date retained."
+        }
+      },
+      "candidate_readiness": {
+        "candidate": "V19-R/v1",
+        "range_percent": [
+          50,
+          80
+        ],
+        "central_percent": 65,
+        "status": "continue developing; no promotion",
+        "event": "s19/claim.md",
+        "record": "s19/readiness.md",
+        "o18_same_event": {
+          "event": "O18-M/v1 unchanged",
+          "range_percent": [
+            35,
+            70
+          ],
+          "central_percent": 50,
+          "central_change_percentage_points": -10,
+          "record": "s19/o18_assessment.md"
+        },
+        "n16_carried": {
+          "event": "N16-C/v1",
+          "range_percent": [
+            55,
+            80
+          ],
+          "central_percent": 65,
+          "measurement_status": "carried from s18; not reassessed"
+        }
+      }
     }
   ],
-  "previous_table_commit": "e709bc316c352547242fbb43b4fcd6d7ce97927b",
+  "previous_table_commit": "d1c7443f216ddb37c6083d5c503618d7a2441e97",
   "metric_policy": {
     "layout": "Exactly one chronological Markdown table containing every recorded recurrence; append each future row to it. The final row must contain the latest measurements and Promotion forecast. Additional detail belongs in prose or linked evidence, not separate tables.",
     "authorization": "The author requires relevant progress metrics and a visible promotion forecast with candidate/event scope. The October 14 clarification distinguishes the broad program from F01; dated carries and new unassessed targets are explicit.",
@@ -10115,25 +10785,34 @@
     }
   },
   "current_readiness_assessment": {
-    "candidate": "O18-M/v1",
+    "candidate": "V19-R/v1",
     "range_percent": [
-      45,
-      75
+      50,
+      80
     ],
-    "central_percent": 60,
+    "central_percent": 65,
     "status": "continue developing; no promotion",
-    "event": "s18/scientific_assessment.md",
-    "n16_same_event": {
-      "candidate": "N16-C/v1",
+    "event": "s19/claim.md",
+    "record": "s19/readiness.md",
+    "o18_same_event": {
+      "event": "O18-M/v1 unchanged",
+      "range_percent": [
+        35,
+        70
+      ],
+      "central_percent": 50,
+      "central_change_percentage_points": -10,
+      "record": "s19/o18_assessment.md"
+    },
+    "n16_carried": {
+      "event": "N16-C/v1",
       "range_percent": [
         55,
         80
       ],
       "central_percent": 65,
-      "change_percentage_points": -10,
-      "record": "s18/n16_assessment.md"
-    },
-    "conditional_receipts": "UNASSESSED"
+      "measurement_status": "carried from s18; not reassessed"
+    }
   },
   "reporting_history": [
     {
@@ -10302,6 +10981,36 @@
         }
       ],
       "central_change_since_previous_recurrence_percentage_points": 0
+    },
+    {
+      "candidate": "V19-R/v1",
+      "range_percent": [
+        50,
+        80
+      ],
+      "central_percent": 65,
+      "status": "continue developing; no promotion",
+      "event": "s19/claim.md",
+      "record": "s19/readiness.md",
+      "o18_same_event": {
+        "event": "O18-M/v1 unchanged",
+        "range_percent": [
+          35,
+          70
+        ],
+        "central_percent": 50,
+        "central_change_percentage_points": -10,
+        "record": "s19/o18_assessment.md"
+      },
+      "n16_carried": {
+        "event": "N16-C/v1",
+        "range_percent": [
+          55,
+          80
+        ],
+        "central_percent": 65,
+        "measurement_status": "carried from s18; not reassessed"
+      }
     }
   ],
   "metric_definition_history": [
@@ -10342,9 +11051,9 @@
       }
     }
   ],
-  "total_research_minutes": "2779.73203735245",
-  "program_research_ns": 166783922241147,
-  "phase_research_ns": 231951804282996,
+  "total_research_minutes": "3019.78362068578333333333333333333333333333333",
+  "program_research_ns": 181187017241147,
+  "phase_research_ns": 246354899282996,
   "historical_preservation": {
     "row_count": 17,
     "through_row": "s06_cp01",
@@ -10446,6 +11155,14 @@
           "locator": "Comparator clarification and detailed preregistration obligations"
         }
       ]
+    },
+    "V19-R/v1": {
+      "event_id": "V19-R/v1",
+      "claim": "s19/claim.md",
+      "assessment": "s19/readiness.md",
+      "standard": "Useful moderately novel exact-range algorithm/certificate/consequence synthesis",
+      "optional_extensions_required": false,
+      "confirmation_plan_status": "not frozen; DEVELOPMENT"
     }
   },
   "forecast_assessments": [
@@ -10758,89 +11475,75 @@
       },
       "next_decision": "Target cheap source admission/conditioning and conservative score learning on fresh priced services; keep a new event separate from F01.",
       "assessment_time_scope": "Recorded end of in-session synthesis containing the final assessment"
+    },
+    {
+      "assessment_id": "V19_R_s19",
+      "event_id": "V19-R/v1",
+      "candidate_id": "retained_optimum_ranges",
+      "candidate_version": "V19-R/v1",
+      "scope_id": "candidate_specific_confirmation_event",
+      "observed_in_row": "s19_cp01",
+      "measurement_status": "first same-model assessment",
+      "assessment_status": "continue with specific blockers; no promotion",
+      "central_percent": 65,
+      "probability_range_percent": [
+        50,
+        80
+      ],
+      "value": 65,
+      "units": "subjective probability percent",
+      "previous_comparable_assessment_id": null,
+      "change_since_previous_assessment_percentage_points": null,
+      "gap_to_80_central_percentage_points": 15,
+      "calibration_status": "not established",
+      "sources": [
+        {
+          "path": "s19/claim.md",
+          "sha256": "d7de614fd2ab5148ee66527d564a3846c1b5e3997ffae824f663e60e28c71b0f"
+        },
+        {
+          "path": "s19/readiness.md",
+          "sha256": "195bb98f7bf8b2431fcdfe897e587c6073ddb717101c461a9149ed0ed61a9978"
+        }
+      ],
+      "uncertainty": "Judgmental range, not a confidence interval; new event distinct from N16, O18 and F01."
     }
   ],
   "current_forecast": {
-    "assessment_id": "F01_s10_final",
-    "event_id": "F01",
+    "assessment_id": "V19_R_s19",
+    "event_id": "V19-R/v1",
+    "candidate_id": "retained_optimum_ranges",
+    "candidate_version": "V19-R/v1",
     "scope_id": "candidate_specific_confirmation_event",
-    "candidate_id": "S28",
-    "candidate_version": "S28-B1",
-    "verification_plan_version": "V1",
-    "observed_in_row": "s10_cp01",
-    "assessment_utc": "2026-10-14T22:25:05.909460+00:00",
-    "measurement_status": "carried_forward",
-    "assessment_status": "assessed; remain in discovery",
-    "value": 30,
-    "central_percent": 30,
+    "observed_in_row": "s19_cp01",
+    "measurement_status": "first same-model assessment",
+    "assessment_status": "continue with specific blockers; no promotion",
+    "central_percent": 65,
     "probability_range_percent": [
-      20,
-      45
+      50,
+      80
     ],
+    "value": 65,
     "units": "subjective probability percent",
-    "previous_comparable_row": "s08_cp01",
-    "recurrence_absolute_delta": 0,
-    "previous_comparable_assessment_id": "F01_s08_final",
-    "change_since_previous_assessment_percentage_points": 0,
-    "range_endpoint_changes_percentage_points": [
-      0,
-      0
-    ],
-    "gap_to_80_central_percentage_points": 50,
-    "gap_to_90_central_percentage_points": 60,
-    "gap_to_80_range_percentage_points": [
-      35,
-      60
-    ],
-    "gap_to_90_range_percentage_points": [
-      45,
-      70
-    ],
-    "rationale": "Constructive source, response and dependence results are different duties. Ordinary mirrors tie, stronger thresholds trade fees against computation, and full prices remain unknown. No new F01 complete-cost evidence.",
-    "uncertainty": "Judgmental range, not a confidence interval; no relevant calibrated forecast track record documented.",
+    "previous_comparable_assessment_id": null,
+    "change_since_previous_assessment_percentage_points": null,
+    "gap_to_80_central_percentage_points": 15,
+    "calibration_status": "not established",
     "sources": [
       {
-        "path": "s10/forecast_final.md",
-        "sha256": "65a48ec82adc4998ffef3528a4aaad8c493df8f8266338dc9f73a182305f613b",
-        "locator": "Unchanged-event final assessment"
-      }
-    ],
-    "change_since_first_assessment_percentage_points": -5,
-    "range_endpoint_changes_since_first_percentage_points": [
-      -5,
-      -5
-    ],
-    "implementation_evidence": [
-      {
-        "path": "s07/a03/results.json",
-        "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
-        "locator": "latest same-scope acquisitions"
+        "path": "s19/claim.md",
+        "sha256": "d7de614fd2ab5148ee66527d564a3846c1b5e3997ffae824f663e60e28c71b0f"
       },
       {
-        "path": "s07/progress_results.json",
-        "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
-        "locator": "resource reconstruction"
-      },
-      {
-        "path": "s07/trace_check_results.json",
-        "sha256": "d59c612ea625542313dcd16e469e86fd98fd3274c1a5e5cdb839b08cb953e26e",
-        "locator": "independent raw-trace check"
+        "path": "s19/readiness.md",
+        "sha256": "195bb98f7bf8b2431fcdfe897e587c6073ddb717101c461a9149ed0ed61a9978"
       }
     ],
-    "sensitivity": {
-      "raise_forecast": "Material matched complete-cost gains on the specified F01 domain with a robust price region and sound checked outputs.",
-      "lower_forecast": "Further inability to change purchases or nonquotation costs on that domain, or failure of required soundness/generalization assumptions."
-    },
-    "next_decision": "Target cheap source admission/conditioning and conservative score learning on fresh priced services; keep a new event separate from F01.",
-    "assessment_time_scope": "Recorded end of in-session synthesis containing the final assessment",
-    "age_in_recurrences": 8,
-    "carried_in_row": "s18_cp01",
-    "carried_from_row": "s17_cp01",
-    "reason": "No comparable new stream measurement or F01 reassessment in s15; dates/scopes retained."
+    "uncertainty": "Judgmental range, not a confidence interval; new event distinct from N16, O18 and F01."
   },
-  "active_scope_id": "s18_broad_information_and_feedback_v1",
+  "active_scope_id": "s19_broad_ranges_and_paid_proofs_v1",
   "active_row_ids": [
-    "s18_cp01"
+    "s19_cp01"
   ],
   "active_metric_ids": [
     "families_total",
@@ -11530,7 +12233,8 @@
       "s15_cp01",
       "s16_cp01",
       "s17_cp01",
-      "s18_cp01"
+      "s18_cp01",
+      "s19_cp01"
     ],
     "columns": [
       {
@@ -11590,7 +12294,7 @@
         "label": "What changed"
       }
     ],
-    "latest_row_id": "s18_cp01",
+    "latest_row_id": "s19_cp01",
     "historical_display": "An em dash renders historical N/A metric values; Not assessed then renders the original unassessed probabilities. No historical values or probabilities are changed.",
     "scope_rule": "The S28 16-request metrics are separate from the historical 80-request duty. Within-hour development and forecast changes are identified as such.",
     "detail_location": "Prose in recurrences.md and existing linked source/checkpoint files; no additional Markdown tables in recurrences.md."
@@ -11605,7 +12309,7 @@
     "preserved": "All 18 original row objects, all measurements, all forecast assessments, clocks and scientific source records remain unchanged."
   },
   "current_separate_scope_ids": [
-    "s18_broad_information_and_feedback_v1"
+    "s19_broad_ranges_and_paid_proofs_v1"
   ],
   "visible_resource_metrics": {
     "prepared_by": "Codex (GPT-6)",
@@ -11849,6 +12553,90 @@
       "sha256": "f056f8892c449a075519cdf01893f3c8bc88d14d327097a2fd7ccf3e5da147ee",
       "observation_date_utc": "2026-10-25",
       "age_at_s18": 0
+    },
+    "s19": {
+      "source": "s19/progress_metrics.json",
+      "sha256": "110dc8a2a2c9c0f76decc2af35c6017daa3dc6ee187769fe4f26b89c41e6159a",
+      "observation_date_utc": "2026-10-27",
+      "age_at_s19": 0
     }
+  },
+  "carried_f01_forecast": {
+    "assessment_id": "F01_s10_final",
+    "event_id": "F01",
+    "scope_id": "candidate_specific_confirmation_event",
+    "candidate_id": "S28",
+    "candidate_version": "S28-B1",
+    "verification_plan_version": "V1",
+    "observed_in_row": "s10_cp01",
+    "assessment_utc": "2026-10-14T22:25:05.909460+00:00",
+    "measurement_status": "carried_forward",
+    "assessment_status": "assessed; remain in discovery",
+    "value": 30,
+    "central_percent": 30,
+    "probability_range_percent": [
+      20,
+      45
+    ],
+    "units": "subjective probability percent",
+    "previous_comparable_row": "s08_cp01",
+    "recurrence_absolute_delta": 0,
+    "previous_comparable_assessment_id": "F01_s08_final",
+    "change_since_previous_assessment_percentage_points": 0,
+    "range_endpoint_changes_percentage_points": [
+      0,
+      0
+    ],
+    "gap_to_80_central_percentage_points": 50,
+    "gap_to_90_central_percentage_points": 60,
+    "gap_to_80_range_percentage_points": [
+      35,
+      60
+    ],
+    "gap_to_90_range_percentage_points": [
+      45,
+      70
+    ],
+    "rationale": "Constructive source, response and dependence results are different duties. Ordinary mirrors tie, stronger thresholds trade fees against computation, and full prices remain unknown. No new F01 complete-cost evidence.",
+    "uncertainty": "Judgmental range, not a confidence interval; no relevant calibrated forecast track record documented.",
+    "sources": [
+      {
+        "path": "s10/forecast_final.md",
+        "sha256": "65a48ec82adc4998ffef3528a4aaad8c493df8f8266338dc9f73a182305f613b",
+        "locator": "Unchanged-event final assessment"
+      }
+    ],
+    "change_since_first_assessment_percentage_points": -5,
+    "range_endpoint_changes_since_first_percentage_points": [
+      -5,
+      -5
+    ],
+    "implementation_evidence": [
+      {
+        "path": "s07/a03/results.json",
+        "sha256": "64687890283a2082bdefe37b760c82bffb9195f7a759b51adfee426e54b2eda9",
+        "locator": "latest same-scope acquisitions"
+      },
+      {
+        "path": "s07/progress_results.json",
+        "sha256": "390692c2017f5f072f4689ff18bef7232293f0f7e4e54072a4986a33838d505f",
+        "locator": "resource reconstruction"
+      },
+      {
+        "path": "s07/trace_check_results.json",
+        "sha256": "d59c612ea625542313dcd16e469e86fd98fd3274c1a5e5cdb839b08cb953e26e",
+        "locator": "independent raw-trace check"
+      }
+    ],
+    "sensitivity": {
+      "raise_forecast": "Material matched complete-cost gains on the specified F01 domain with a robust price region and sound checked outputs.",
+      "lower_forecast": "Further inability to change purchases or nonquotation costs on that domain, or failure of required soundness/generalization assumptions."
+    },
+    "next_decision": "Target cheap source admission/conditioning and conservative score learning on fresh priced services; keep a new event separate from F01.",
+    "assessment_time_scope": "Recorded end of in-session synthesis containing the final assessment",
+    "age_in_recurrences": 9,
+    "carried_in_row": "s19_cp01",
+    "carried_from_row": "s18_cp01",
+    "reason": "F01 not reassessed in s19; distinct V19 event introduced."
   }
 }

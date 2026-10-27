@@ -4,28 +4,25 @@ Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
 Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
-**Current continuation — October24,2026 UTC, Codex (GPT-6):**
-[s17 checkpoint](s17/checkpoint.md), [findings](s17/findings.md),
-[actuals](s17/effective_actuals.json), [single recurrence table](recurrences.md).
-The focused four-hour assessment is CLOSED:240.395316666666… research minutes.
-Program2539.488754019116… and phase3625.620121383266… minutes. No active
-clock remains;178 same-runtime segments and explicit exclusions are reconciled.
-The35-family inventory is unchanged. C001 OPEN; P3-POS01 OUTSTANDING;
+**Current continuation — October26--27,2026 UTC, Codex (GPT-6):**
+[s19 checkpoint](s19/checkpoint.md), [findings](s19/findings.md),
+[actuals](s19/effective_actuals.json), [single recurrence table](recurrences.md).
+The broad four-hour recurrence is CLOSED:240.051583333333… research minutes.
+Program3019.783620685783… and phase4105.914988049933… minutes; no active clock.
+The36-family inventory is unchanged. C001 OPEN; P3-POS01 OUTSTANDING;
 P3-11 deferred; no promotion.
 
-**N16-C/v1:60–85%, central75%; continue developing.** The bounded event includes
-useful moderate novelty. The critical proof and finite witnesses are reconstructed;
-the exact prior operator-interpolation SDP ties. The remaining blocker is the
-analytic solution's useful increment beyond routine prior reductions. Stronger
-old-vector comparison leaves about1.80% width gain. Rounded upper0.58311909<0.6
-contrasts with compatible1, but one targeted query also suffices. No fresh fees
-or counted-work saving. The checker serialization repair preserves old evidence.
+**V19-R/v1:50--80%, central65%; O18-M/v1:35--70%, central50%; N16-C/v1
+carried55--80%, central65%.** [Assessment](s19/scientific_assessment.md) and
+[targets](s19/verification_targets.md) keep these events distinct. Exact scalar
+ranges and rational certificates are promising; novelty and a justified duty
+remain open. Ordinary equivalent methods tie. Actual shared-proof costs exceed
+fallback overall; no new audit or complete-cost saving is claimed.
 
-The [40-hour review](s17/portfolio40.md) is complete; the next deeper review is
-100 program hours, with42.32 hours now recorded. Restore broad75/20/5 discovery
-and keep the other promising routes. Default next duration one hour unless
-freshly overridden; no automatic recurrence or merge. Historical forecasts
-remain scoped to their own events. [Next prompt](CONTINUE.md).
+Program50.33h; the[40-hour review](s17/portfolio40.md) is complete, next deeper
+review100h. Continue broad discovery only when authorized, with a short V19
+comparison before further deepening. Default one hour unless freshly overridden.
+O18's capped screen is finished. [Next prompt](CONTINUE.md).
 
 ## 1. Objective and scope
 
