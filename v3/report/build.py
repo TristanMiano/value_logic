@@ -53,7 +53,9 @@ def main():
             key=lab[1]
             if tex: return '\n```{=latex}\n\\begin{equation}\n'+body.strip()+'\n\\end{equation}\n```\n'
             # Protect TeX backslashes from GitHub's Markdown escape processing.
-            body=body.replace(lab[0],r'\tag{'+str(labels[key][1])+r'}').strip()
+            # Keep a single grouped expression in GitHub's numbered MathML
+            # cell; otherwise native rendering stacks its sibling terms.
+            body='{\n'+body.replace(lab[0],'').strip()+'\n}\n'+r'\tag{'+str(labels[key][1])+r'}'
             # Avoid GitHub's HTML-like interpretation of literal inequalities
             # and its extra backslash on bare aligned-row endings.
             body=body.replace('<',r'\lt ').replace('>',r'\gt ')

@@ -70,10 +70,12 @@ Let $`n\geq1`$. Independently uncertain vectors $`x_i`$ lie in supplied nonempty
 <a id="eq-source"></a>
 
 ```math
+{
 a_j\leq\min_{1\leq i\leq n}g_{ji}(x_i)\leq b_j
  \quad(j\in K=\{1,\ldots,k\}),\qquad
  V(x)=\min_i f_i(x_i).
- \tag{1}
+}
+\tag{1}
 ```
 
 Every old lower bound applies to every block; each old upper bound needs at least one witnessing block. For a receipt subset $`T\subseteq K`$, form
@@ -82,9 +84,11 @@ Every old lower bound applies to every block; each old upper bound needs at leas
 <a id="eq-slice"></a>
 
 ```math
+{
 Q_i(T)=B_i\cap\bigcap_{j\in K}\{g_{ji}\geq a_j\}
               \cap\bigcap_{j\in T}\{g_{ji}\leq b_j\}.
- \tag{2}
+}
+\tag{2}
 ```
 
 If this slice is nonempty, let $`\ell_i(T)`$ and $`u_i(T)`$ be the minimum and maximum of $`f_i`$ on it, with attaining points. Its affine image is the entire interval between them. Empty slices are unavailable, rather than assigned invented endpoints.
@@ -95,8 +99,10 @@ For a block index set $`I`$ and receipt subset $`S`$, define the bottleneck
 <a id="eq-bottleneck"></a>
 
 ```math
+{
 U_I(S)=\max_{\bigsqcup_{i\in I}T_i=S}\ \min_{i\in I}u_i(T_i),
- \tag{3}
+}
+\tag{3}
 ```
 
 where partitions with an empty slice are omitted. Set $`U_I(S)=-\infty`$ when no feasible partition exists; $`U_\varnothing(\varnothing)=+\infty`$ and $`U_\varnothing(S)=-\infty`$ for nonempty $`S`$.
@@ -111,10 +117,12 @@ Under [Equation 1](#eq-source), the entire attainable set is
 <a id="eq-range"></a>
 
 ```math
+{
 V(\mathcal X_H)=
  \bigcup_{i,T}
  \left[\ell_i(T),\ \min\{u_i(T),U_{[n]\setminus\{i\}}(K\setminus T)\}\right],
- \tag{4}
+}
+\tag{4}
 ```
 
 omitting unavailable slices and intervals with upper endpoint below lower endpoint. The set has at most $`n2^k`$ closed intervals before merging. It can be computed using at most $`2n2^k`$ local rational LP solves and $`O(n3^k+n2^k\log(n2^k))`$ additional comparisons, with $`O(n2^k)`$ scalar table entries plus input, backpointers, and local certificates. Every requested attainable rational value has a reconstructable rational source. An empty union certifies inconsistency of the supplied premises.
@@ -141,9 +149,11 @@ A positive-cost example uses independent local variables and two response vector
 <a id="eq-positive-example"></a>
 
 ```math
+{
 x_1=(10+2t+u,\ 11-t+v),\qquad
  x_2=(10+s+u',\ 12-2s+v'),
- \tag{5}
+}
+\tag{5}
 ```
 
 with $`0\leq t,s\leq1`$ and $`0\leq u,v,u',v'\leq1/10`$. Each coordinate-minimum receipt lies in $`[10,10.1]`$. Neither block can witness both upper bounds: before thickening, the least possible maximum of its two excess coordinates is $`2/3>1/10`$. The two split assignments give, for the future minimum total response,
@@ -152,8 +162,10 @@ with $`0\leq t,s\leq1`$ and $`0\leq u,v,u',v'\leq1/10`$. Each coordinate-minimum
 <a id="eq-positive-range"></a>
 
 ```math
+{
 R=[21,21.2]\ \cup\ [21.9,22.2].
- \tag{6}
+}
+\tag{6}
 ```
 
 For the first assignment the excess total ranges from $`1`$ to $`1.2`$; for the reverse it ranges from $`1.9`$ to $`2.2`$. Independence permits both local extrema and interpolation. Hence a later band $`[21.4,21.6]`$ contradicts the retained model, while its interval hull admits that band. The same gap certifies $`|1/(V-21.5)|\leq10/3`$. This is a model-criticism and numerical-stability consequence, not a probability claim.
@@ -194,10 +206,12 @@ Let $`S_1`$ be the nonempty family of currently selected alternatives. For every
 <a id="eq-transport"></a>
 
 ```math
+{
 \max_{y\in S_1}d_1(y)
  \leq\max_{y\in S_1}\min_{(i,x)\in I(y)}
        \{\alpha_iB_i(x)+\delta_i(x,y)\}.
- \tag{7}
+}
+\tag{7}
 ```
 
 
@@ -217,9 +231,11 @@ Let $`M`$ be an unretained finite real matrix, $`W`$ an isometry with $`k`$ colu
 <a id="eq-ridge"></a>
 
 ```math
+{
 F(N;Wc)=\min_z\{\|Wc-Nz\|^2+\|z\|^2\}
         =c^TW^T(I+NN^T)^{-1}Wc.
- \tag{8}
+}
+\tag{8}
 ```
 
 The information class ranges over **all finite compatible sources and edits**, with unrestricted finite source dimensions. This differs from choosing one robust solution before an edit of a completely known matrix. Acquisition of $`C`$, the isometry interface, and the edit warrant are substantive inputs.
@@ -236,10 +252,12 @@ The infimum and supremum of [Equation 8](#eq-ridge) over the stated information 
 <a id="eq-n16"></a>
 
 ```math
+{
 \underline F=\max_{t\geq h}c^TL_t(C)c,
  \qquad
  \overline F=\inf_{t\geq h}c^TU_t(C)c,
- \tag{9}
+}
+\tag{9}
 ```
 
 where the upper family includes its limit $`1`$ at infinity. Each endpoint is attained by a finite compatible source and edit; the sources may differ. A construction uses at most $`2k`$ input and output coordinates. Sharpness is for the specified scalar direction $`c`$, not a simultaneous least or greatest matrix envelope.
@@ -261,9 +279,11 @@ For every positive definite real matrix $`A`$ and isometry $`W`$, $`W^TA^{-1}W\s
 <a id="eq-young"></a>
 
 ```math
+{
 NN^T\preceq aMM^T+(1+1/t)EI,
  \qquad MM^T\preceq aNN^T+(1+1/t)EI.
- \tag{10}
+}
+\tag{10}
 ```
 
 Invert the positive expressions and compress them using the dual inequality. Because $`d\geq0`$ and $`a-d>0`$, the resulting bounds are precisely $`L_t(C)`$ and $`U_t(C)`$. This proves validity for every compatible source, rather than only for a tested matrix.
@@ -274,10 +294,12 @@ Sharpness needs more. At an interior optimum, choose the canonical source $`M=(C
 <a id="eq-dilation"></a>
 
 ```math
+{
 S_\tau=\begin{pmatrix}C&\sqrt{\tau CH}\\\sqrt{\tau CH}&H\end{pmatrix},
  \quad 0\leq\tau\lt 1,
  \quad c^TW^TS_\tau^2Wc=m_0+\tau(s-m_0)
- \tag{11}
+}
+\tag{11}
 ```
 
 realizes the needed moment while preserving $`C`$. Each eigenvalue block has positive determinant $`(1-\tau)\lambda(1-\lambda)`$ and trace $`1`$, so $`0\prec S_\tau\prec I`$ and it corresponds to a finite source. The endpoint derivative conditions select moments $`s(1+h)/(2+h)`$ for the lower cap and $`s/(2+h)`$ for the upper cap, each in $`[m_0,s)`$ when that branch applies. The corresponding rank-one edits satisfy the new normal equations. The remaining upper branch is cancellation, giving value $`1`$. [Appendix A's N16 entry](v3/report/claims.md#n16) links the complete branch calculations, including boundary equality and the later smaller-witness construction. This is a reconstructed developmental theorem, not a consequence of V19's review.
@@ -310,8 +332,10 @@ For every input in the warranted domain,
 <a id="eq-correction"></a>
 
 ```math
+{
 A(x)=B(x)+U(U_J)^{-1}\bigl(A_J(x)-B_J(x)\bigr).
- \tag{12}
+}
+\tag{12}
 ```
 
 Thus $`d`$ paid true coordinates, together with model evaluation and matrix arithmetic, suffice for the complete corrected output. A contrast $`w^TB(x)`$ is already exact whenever $`w^TU=0`$.
@@ -350,13 +374,15 @@ For a versioned binary answer $`y_t`$, a known affine loss $`b_t(a)+d_t(a)y_t`$ 
 <a id="eq-forecast"></a>
 
 ```math
+{
 \begin{aligned}
  R_{t-1}&=\sum_{s\lt t}(y_s-p_s)\Phi_s(p_s),\\[0pt]
  S_t(p)&=\langle R_{t-1},\Phi_t(p)\rangle
              +\tfrac{1-2p}{2}\|\Phi_t(p)\|^2,\\[0pt]
  A_t&=2\max\{0,(1-p_t)S_t(p_t),-p_tS_t(p_t)\}.
  \end{aligned}
- \tag{13}
+}
+\tag{13}
 ```
 
 Choose a favorable endpoint or search for a root; an interrupted root search retains the actual allowance $`A_t`$. For binary $`y`$, the identity $`(y-p)^2=p(1-p)+(1-2p)(y-p)`$ proves
@@ -365,9 +391,11 @@ Choose a favorable endpoint or search for a root; an interrupted root search ret
 <a id="eq-potential"></a>
 
 ```math
+{
 \|R_T\|^2\leq
  B_T:=\sum_{t\leq T}p_t(1-p_t)\|\Phi_t(p_t)\|^2+\sum_{t\leq T}A_t.
- \tag{14}
+}
+\tag{14}
 ```
 
 It follows by expanding one potential increment and telescoping. Here $`p_t,q_{t,i}\in[0,1]`$, the finite weights $`w_t\geq0`$ and expert values are available before the current answer, and $`\alpha,\beta>0`$ are fixed feature scales. Expert features $`\alpha w_t(q_{t,i}-p)`$ yield weighted Brier regret at most $`2\sqrt{B_T}/\alpha`$ to each supplied expert. Calibration features $`\beta w_tb_j(p)`$ yield residuals at most $`\sqrt{B_T}/\beta`$ in the declared continuous bins. These are meaningful finite guarantees with charged computation and truthful feedback. They neither discover arbitrary mathematical structure absent from the experts nor supply a universal convergence rate. Zero-allowance potential control and concatenated features are established machinery; the adaptation is the bounded rational calculation, versioning, feedback, and loss interface.
@@ -390,9 +418,11 @@ For at least two actions, the largest possible robust suboptimality of incumbent
 <a id="eq-gap"></a>
 
 ```math
+{
 \Gamma_a=\max\left\{0,\ \max_{b\ne a}\max_{j\in P}
           \bigl[v_{ja}-\max\{l_b,v_{jb}\}\bigr]\right\}.
- \tag{15}
+}
+\tag{15}
 ```
 
 For one action it is zero. Direct computation uses $`O(|P|\,|\mathcal A|^2)`$ scalar work. The bound is sharp for the signature, whose permitted supports may be more numerous than those realizable by the original source model.
@@ -419,9 +449,11 @@ For a deterministic truthful signal $`s(j)`$ and unrestricted deterministic acti
 <a id="eq-observation"></a>
 
 ```math
+{
 B(J)=\min_a W_a(J),\qquad
  Q(J)=\max_{s:J_s\ne\varnothing}\min_a\max_{j\in J_s}v_{ja}.
- \tag{16}
+}
+\tag{16}
 ```
 
 $`B(J)-Q(J)`$ is the ideal information value relative to the **best constant action**. Relative to an arbitrary incumbent, the relevant total improvement is instead
@@ -430,9 +462,11 @@ $`B(J)-Q(J)`$ is the ideal information value relative to the **best constant act
 <a id="eq-incumbent"></a>
 
 ```math
+{
 U_a=\max_{K\subseteq J\subseteq P,\ J\ne\varnothing}
              \{W_a(J)-Q(J)\}.
- \tag{17}
+}
+\tag{17}
 ```
 
 This includes improvement from selecting a better constant action. For each threshold $`t`$ among the finite loss entries, a branch action $`h`$ is legal when it has loss at most $`t`$ on every known cell in that branch. Its allowed set is $`A_{sh}(t)=\{j\in P_s:v_{jh}\leq t\}`$. Discard a threshold if a branch has no legal action or all allowed sets are empty. Put $`M_a(t)=\max_{s,h\text{ legal},j\in A_{sh}(t)}v_{ja}`$.
@@ -447,8 +481,10 @@ Under the preceding signal and policy contract,
 <a id="eq-observation-threshold"></a>
 
 ```math
+{
 U_a=\max_t\{M_a(t)-t\}.
- \tag{18}
+}
+\tag{18}
 ```
 
 It takes $`O(|V|\,|P|\,|\mathcal A|)`$ scalar work for one incumbent, where $`|V|`$ is the number of distinct loss entries. An observation and its required policy calculation costing at least $`U_a`$ cannot strictly improve this single-use robust criterion net of the fee.
@@ -509,8 +545,10 @@ There are two blocks $`(x_i,y_i)\in[0,1]^2`$. Their sums lie in $`[1.19,1.21]`$ 
 <a id="eq-episode-range"></a>
 
 ```math
+{
 O=[-281/200,-11/8]\ \cup\ [-221/200,-43/40],
- \tag{19}
+}
+\tag{19}
 ```
 
 which misses $`H`$. The saved run records 134 row visits, 28 coordinate-bound updates, and zero optimizer calls. A tailored ordinary calculation derives the same answer. The chosen propagation route is a demonstrated operation, not a claim that it was the optimal computation to purchase. A later complete range certificate agrees with this union, but the partial service correctly does not label its current state exact without corresponding inner coverage.
@@ -523,9 +561,11 @@ which misses $`H`$. The saved run records 134 row visits, 28 coordinate-bound up
 <a id="eq-dual-reuse"></a>
 
 ```math
+{
 c'^Tx+d'\leq d'+z^Tb'
        +\sum_r\max\{(c'-A'^Tz)_r l_r,(c'-A'^Tz)_r u_r\}.
- \tag{20}
+}
+\tag{20}
 ```
 
 Insert and subtract $`z^TA'x`$, use the new inequalities, and maximize the remaining linear residual on the new box to prove it. A corresponding lower bound follows with a nonnegative lower multiplier. Rebuilding all indexed outer slices from these corrected bounds preserves a sound range enclosure. An old empty slice must be reconsidered unless its infeasibility certificate still works. An added source block, changed coordinate identity, unwarranted new box, or changed loss semantics is outside this reuse step and requires a new binding or proof.

@@ -34,6 +34,8 @@ The Markdown conversion also uses explicit zero-space row breaks (`\\[0pt]`)
 and `\lt` / `\gt` for literal inequalities. Live GitHub testing isolated a
 failure even in the standalone sum with subscript `s<t`; the macro spelling
 avoids HTML-like parsing. All mathematical terms and numbers are unchanged.
+Each numbered expression is grouped so its terms stay in one native MathML
+row rather than stacking vertically in GitHub's equation-number table.
 [GitHub documents this display syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
 [consistency.json](consistency.json) records
 the common source hashes, citation order, and delivered artifact hashes.
@@ -66,7 +68,7 @@ threshold, writing [episode_result.json](episode_result.json); it is not another
 confirmation attempt. `verify.py` checks local links, shared-source labels,
 artifact/source hashes, preserved V19 seals, upstream copied bytes, and table
 claims. It also compares all display payloads with the canonical source, allowing
-only equation-label conversion, inequality spelling and zero-space row breaks.
+only equation-label conversion, display grouping, inequality spelling and zero-space row breaks.
 This protects TeX escapes; it is not itself a
 live GitHub rendering test. These checks do not prove the truth of external
 mathematical premises.

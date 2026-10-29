@@ -43,6 +43,7 @@ def main():
     expected=re.findall(r'^```math\n(.*?)^```\s*$',source,re.M|re.S)
     expected=[re.sub(r'\\label\{([\w-]+)\}',lambda m:r'\tag{'+str(manifest['labels'][m[1]][1])+'}',s).strip() for s in expected]
     def math_tokens(parts):
+        parts=[re.sub(r'^\{\n(.*)\n\}\n(\\tag\{\d+\})\s*$',r'\1\n\2',s.strip(),flags=re.S) for s in parts]
         s='\n'.join(parts)
         s=s.replace(r'\lt ', '<').replace(r'\gt ', '>').replace(r'\\[0pt]',r'\\')
         return re.sub(r'\s+','',s)
