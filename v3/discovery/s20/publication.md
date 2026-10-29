@@ -23,4 +23,9 @@ Local validation passed:30 link/path/evidence tests; no new mathematical
 Markdown issues; tracked paths and all32 relocated paths verified. The83 unique
 original-candidate/exit-seal staged blobs match their hashes. Git diff whitespace
 checks pass with raw CRLF evidence preserved explicitly. See[checks.json](checks.json).
-Branch publication is in progress; the concrete PR will be recorded before handoff.
+Published and attached[PR22](https://github.com/TristanMiano/value_logic/pull/22)
+from research commit9c6b7ab034551534d6079ad33dafcca850a369b6 against merged main
+54685b9b55039e2513d1aeda263841ed43fa82cd. The[creation snapshot](pr_created.json)
+records the concrete refs. The PR is open for review and is not automatically
+merged. CI applies to the actual final published head; its live status is on
+that PR. Publication metadata changes no scientific result or author gate.
