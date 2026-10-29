@@ -1,22 +1,25 @@
-# Portable continuation: contribution decision pending
+# Portable continuation: report complete; final author gate remains
+
+**Current direction:** [Author acceptance](../checkpoints/C_1_acceptance.md) closed C001. P3-12 is complete: [Markdown](../../paper_v3.md), [PDF](../../paper_v3.pdf), [sources/build](../report/README.md), [claim map](../report/claims.md), [portfolio](../report/portfolio.md), [review](../report/review.md), and [checkpoint](../report/log/checkpoint.md). Recommendation: ready for P3-D final audit and author decision. No active clock or minimum remains. Final phase completion has NOT been declared. Do not start another recurrence or merge automatically. Inspect [publication](../report/log/publication.md) before any authorized next work.
+
 
 Latest research: **s20 CLOSED**, Codex (GPT-6), October28--29,2026 UTC.
 The author's four-hour minimum and selected completion-oriented work are done.
 PR21 was verified merged before entry. Read[checkpoint](s20/checkpoint.md),
 [actuals](s20/effective_actuals.json),[findings](s20/findings.md),
 [assessment](s20/scientific_assessment.md) and[publication](s20/publication.md).
-There is no active clock or remaining minimum. Do not start another recurrence
+There is no active discovery clock or remaining minimum. Do not start another recurrence
 or merge automatically. Verify the current PR/main state before authorized work.
 
-## Concrete next decision
+## Prior recommendation, now accepted
 
 **P3-11-A1 PASS for unchanged V19-R/v1. P3-POS01 evaluator-supported.**
 The[review](../contribution_review.md) and[P3-C recommendation](../checkpoints/C_1.md)
-are complete; **author acceptance is pending** under[protocol section6](../RESEARCH_PROTOCOL.md#6-gates-and-publication).
+are complete; **author acceptance was subsequently recorded** under[protocol section6](../RESEARCH_PROTOCOL.md#6-gates-and-publication).
 Recommend accepting the useful moderately novel synthesis and closing the
 original discovery objective, then selecting P3-12 report assembly and the
 later P3-D final audit. Do not infer author acceptance from a code merge alone.
-C001 remains open until the author disposes of it. P3-12/P3-D are unstarted.
+C001 is now closed by explicit author disposition. P3-12 is complete; P3-D remains unpassed.
 All authorized review and publication work should be concrete before that gate.
 
 V19 recovers the complete attainable scalar range from retained interval

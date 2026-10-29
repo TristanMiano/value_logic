@@ -1,5 +1,8 @@
 # P3-SEARCH-01 candidate portfolio
 
+**Author decision, October 29, 2026:** [P3-C accepted at its bounded scope](../checkpoints/C_1_acceptance.md); P3-SEARCH-01/C001 CLOSED. P3-12 report assembly is complete; synchronized Markdown/PDF and supporting sources are available in `paper_v3.md`, `paper_v3.pdf`, and `v3/report/`. Recommendation: ready for P3-D final audit and author decision. The portfolio and open research directions remain available. Final phase-three completion and P3-D remain pending. Dated status records below preserve their historical meaning.
+
+
 Initial research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
 Earlier entries retain their DEVELOPMENT scopes. V19 alone has completed the
 prospectively frozen P3-11-A1 review; author acceptance remains pending.

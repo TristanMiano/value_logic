@@ -4,8 +4,9 @@
 
 Value Logic investigates how a model, theory, representation or course of action serves an intended purpose, at a tolerable error and resource cost. Its central question is what reasoning should preserve when neither our models nor our criteria for using them can be assumed final.
 
-The project develops mathematical semantics, inference rules, executable checkers and controlled applications. Two research reports present complementary approaches:
+The project develops mathematical semantics, inference rules, executable checkers and controlled applications. Three research reports present complementary approaches:
 
+- **[Useful Decisions under Unresolved Mathematics](paper_v3.md)** ([PDF](paper_v3.pdf)) synthesizes finite logical uncertainty, counterfactual reuse, fallible-model correction, and the value of further reasoning, with exact retained-range guarantees.
 - **[Loss Comparisons and Information Retention Under Revision](paper_v2.md)** develops a value-based calculus and studies how much information must survive changes in the costs of correlated procedures.
 - **[Scoped Reliance on Fallible Models Under Open-Ended Succession](paper.md)** develops an evidence-relative framework for deciding when a model is licensed for a particular use.
 
