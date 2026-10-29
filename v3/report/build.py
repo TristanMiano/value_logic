@@ -49,10 +49,11 @@ def main():
         s=re.sub(r'^::: proof\n(.*?)^:::\s*$',proof,s,flags=re.M|re.S)
         def eq(m):
             body=m[1];lab=re.search(r'\\label\{([\w-]+)\}',body)
-            if not lab: return m[0]
+            if not lab: return m[0] if tex else '```math\n'+body+'\n```'
             key=lab[1]
             if tex: return '\n```{=latex}\n\\begin{equation}\n'+body.strip()+'\n\\end{equation}\n```\n'
-            return f'\n<a id="{key}"></a>\n\n$$\n'+body.replace(lab[0],r'\tag{'+str(labels[key][1])+r'}').strip()+'\n$$\n'
+            # Protect TeX backslashes from GitHub's Markdown escape processing.
+            return f'\n<a id="{key}"></a>\n\n```math\n'+body.replace(lab[0],r'\tag{'+str(labels[key][1])+r'}').strip()+'\n```\n'
         s=re.sub(r'\$\$\n(.*?)\n\$\$',eq,s,flags=re.S)
         s=re.sub(r'\{\{([\w-]+)\}\}',lambda m:xref(m,tex),s)
         s=re.sub(r'\[@([\w-]+)\]',lambda m:('\\citep{'+m[1]+'}') if tex else f'[{order.index(m[1])+1}](#ref-{m[1]})',s)

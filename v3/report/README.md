@@ -24,10 +24,14 @@ python -X utf8 v3/report/build.py --pandoc C:/tools/pandoc.exe --tectonic C:/too
 The first Tectonic invocation needs network access to acquire its TeX bundle;
 subsequent builds use its cache. The build reads `content.md`, expands tables
 generated from preserved records, emits GitHub Markdown with explicit anchors
-and numbered MathJax equations, emits equivalent TeX with real theorem/proof
+and numbered MathJax equations in protected `math` fences, emits equivalent TeX with real theorem/proof
 environments and cross-references, generates BibTeX from `references.json`,
 and compiles/copies the PDF to the repository root. It checks every result and
-equation label and citation key. [consistency.json](consistency.json) records
+equation label and citation key. GitHub's Markdown escape processing can consume
+TeX backslashes in ordinary dollar-delimited displays; keep the generated math
+fences, including for aligned equations, escaped braces and norm symbols.
+[GitHub documents this display syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
+[consistency.json](consistency.json) records
 the common source hashes, citation order, and delivered artifact hashes.
 
 For an existing TeX installation, build `tex/main.tex` with pdfLaTeX or XeLaTeX,
@@ -57,7 +61,10 @@ reconstruction on the exposed worked example plus the existing N16 rational
 threshold, writing [episode_result.json](episode_result.json); it is not another
 confirmation attempt. `verify.py` checks local links, shared-source labels,
 artifact/source hashes, preserved V19 seals, upstream copied bytes, and table
-claims. These checks do not prove the truth of external mathematical premises.
+claims. It also compares all display payloads with the canonical source, allowing
+only equation-label conversion. This protects TeX escapes; it is not itself a
+live GitHub rendering test. These checks do not prove the truth of external
+mathematical premises.
 
 [claims.md](claims.md) maps paper claims to proofs, code, tests, and literature
 read scopes. [portfolio.md](portfolio.md) preserves secondary directions and
