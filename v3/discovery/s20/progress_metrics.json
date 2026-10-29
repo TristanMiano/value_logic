@@ -1,0 +1,212 @@
+{
+  "contributor": "Codex (GPT-6)",
+  "date_utc": "2026-10-29",
+  "scope_id": "s20_confirmation_and_partial_decisions_v1",
+  "classification": "Fixed V19 confirmation plus separately labeled development",
+  "confirmation": {
+    "event": "V19-R/v1",
+    "status": "PASS",
+    "source": "v3/confirmation/v19a/result.json",
+    "sha256": "95ea99cf860f0a73fa6230dda3165929073bf714ac77f1c28283b6abd41a9a82",
+    "prospective_range_percent": [
+      80,
+      90
+    ],
+    "prospective_central_percent": 85,
+    "previous_central_percent": 65,
+    "post_review_confidence_range_percent": [
+      80,
+      90
+    ],
+    "post_review_confidence_central_percent": 85,
+    "author_acceptance": false,
+    "ordinary_equivalent": "ties outputs and resource bounds",
+    "calibrated": false
+  },
+  "measurements": {
+    "greatest_runs/a01/result.json": {
+      "source": "s20/greatest_runs/a01/result.json",
+      "sha256": "97d5ba362d90da14465aca4b600113b89a1fc08147c3a3521f849739f1c5c83a",
+      "scalars": {
+        "status": "PASS",
+        "label": "DEVELOPMENT; same-model; finite exact controls",
+        "shortcut_optimizer_calls": 34,
+        "full_optimizer_calls": 266,
+        "witnesses": 23,
+        "elapsed_ns": 305364600,
+        "freeze_sha256": "8dde49d001cc337acaafcafa457e912e46d5a2fad72b1cb5febd2a4a8ed109fa",
+        "records_sha256": "04454af2cdfa51c4901e95a27b20e56dd85cc2f5e608fc743deea31771d249ef"
+      }
+    },
+    "partial_runs/a01/result.json": {
+      "source": "s20/partial_runs/a01/result.json",
+      "sha256": "8427e0beb6215f8c0b6ad230dd00615302badcaf7d15b744a0349822fedc4668",
+      "scalars": {
+        "status": "PASS",
+        "label": "DEVELOPMENT; same model; exposed controls",
+        "python": "3.13.14",
+        "new_optimizer_calls": 0,
+        "elapsed_ns": 61632400,
+        "records_sha256": "5dce23f4b31644a76257f1f9fd8fa31bd2eac48e5f5151f64269740996aa62c3",
+        "freeze_sha256": "1d4f108e86c4f6b7b14fc5a90d59c8a9422f04632a34fb92f43056f762190c18"
+      }
+    },
+    "refine_runs/a01/result.json": {
+      "source": "s20/refine_runs/a01/result.json",
+      "sha256": "cdc2820fe9dbae745b6e53dcbff32ec76a4750e9f364de1ddb788ef54e61e31b",
+      "scalars": {
+        "status": "PASS",
+        "label": "DEVELOPMENT; exact finite enumeration",
+        "brackets": 2904,
+        "supports": 11904,
+        "action_bounds": 6776,
+        "strict_improvements": 728,
+        "newly_certified_actions": 118,
+        "support_witnesses": 6776,
+        "elapsed_ns": 441900000,
+        "freeze_sha256": "0549dd2ba1f64bb9c6ac3fb5ab7bc81db70a0bf347ad449a1a938912ab3db7db",
+        "records_sha256": "ba00ae5c3c80d39733fda29a90436deb2036d8e38049c8fb1b45b54bd3e9c8d3"
+      }
+    },
+    "observe_runs/a01/result.json": {
+      "source": "s20/observe_runs/a01/result.json",
+      "sha256": "d24775ba4c3cacf83566bbe82bea2f83e241e78b50141edf88733c52743c44e9",
+      "scalars": {
+        "status": "PASS",
+        "label": "DEVELOPMENT; exposed finite matrices",
+        "brackets": 5808,
+        "support_controls": 744,
+        "enumerated_policies": 5016,
+        "support_uses": 23808,
+        "strict_upper_improvements": 1578,
+        "dp_transitions": 152267,
+        "elapsed_ns": 1248679400,
+        "freeze_sha256": "a104e19f6d79ff02c2b137f888b2e7d83c067dbded16115603d1650987a9652b",
+        "records_sha256": "1a37382ee3dbc81e4ebbe601b2260d29c8722983dd3b9fe9b2ed87769d69807b"
+      }
+    },
+    "incumbent_runs/a01/result.json": {
+      "source": "s20/incumbent_runs/a01/result.json",
+      "sha256": "01581393c038abf64c26f933624cdf5fb97aeb74874a845397da517bfff29127",
+      "scalars": {
+        "status": "PASS",
+        "label": "DEVELOPMENT; exposed matrices plus fixed counterexample",
+        "brackets": 7260,
+        "support_controls": 930,
+        "enumerated_policies": 5916,
+        "action_bounds": 14520,
+        "strict_decomposition_improvements": 2435,
+        "inspected_cell_action_options": 271518,
+        "elapsed_ns": 2838159600,
+        "freeze_sha256": "94ae79010b633fe62ba1b4656f2dddde17f15f91a86bb300a64be4000603f71b",
+        "records_sha256": "a2f199c4ba611ff9a00da81b2fd3dc02896c8e94b40b421a1e380602bd444e6f"
+      }
+    },
+    "integration_runs/a01/result.json": {
+      "source": "s20/integration_runs/a01/result.json",
+      "sha256": "1ff2f1fdd895beb40700288933ad06c4cc1d8431ef9da1fcfdc650732b422bc4",
+      "scalars": {
+        "status": "PASS",
+        "label": "DEVELOPMENT; exposed end-to-end examples",
+        "source_checks": 3,
+        "optimizer_calls": 0,
+        "elapsed_ns": 7078600,
+        "freeze_sha256": "1900c44bd3c1e26835046279f263be32693954e6860a0148a458a3afad839a28"
+      }
+    },
+    "continuous_runs/a01/result.json": {
+      "source": "s20/continuous_runs/a01/result.json",
+      "sha256": "bcdbd3ee3cd5cc42dc041da3ad927fdccd16fe93bd22d94303cd390f6f4e4121",
+      "scalars": {
+        "status": "PASS",
+        "label": "DEVELOPMENT; exact LP controls",
+        "optimizer_calls": 76,
+        "candidate_evaluations": 161,
+        "elapsed_ns": 56902200,
+        "freeze_sha256": "fbffe0e0d6d144ce144156b84269db938746f7c3f652916085dac17175ca9d64"
+      }
+    },
+    "transport_runs/a01/result.json": {
+      "source": "s20/transport_runs/a01/result.json",
+      "sha256": "90621bf5a3c8a748fded0de8ed89d97e5add9be2fffb7bbc6277af6c0584c817",
+      "scalars": {
+        "status": "PASS",
+        "classification": "same-model DEVELOPMENT extension",
+        "changed_model_controls": 21,
+        "producer_linprog_calls": 312,
+        "reuse_lp_calls": 0,
+        "artificial_cases": 120,
+        "finite_radii": 88,
+        "infinite_radii": 32,
+        "zero_radii": 8,
+        "elapsed_ns": 1083779900,
+        "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.26300-SP0",
+        "records_sha256": "27103224395ae614af92805173b6c0b820370c72bfdae38c8b3048f6c10d5320",
+        "freeze_sha256": "e22eb03dd3267d1a8a830141abb5a5b641ace5c8a91d3fc5d8f21137698b0c69"
+      }
+    },
+    "noise_runs/a02/result.json": {
+      "source": "s20/noise_runs/a02/result.json",
+      "sha256": "ef4c82d7a18f7c768267e12def0c2d9fe3040150bda0aa6a6d84b71259930623",
+      "scalars": {
+        "status": "PASS",
+        "classification": "same-model DEVELOPMENT extension",
+        "elapsed_ns": 6362402600,
+        "records_sha256": "b1075a919d6043951ea85585461af5cc6632b270828e463aecb3fb19170dc82d",
+        "freeze_sha256": "240485395f0ed8786c403045834d2fd09ec62a2f519f5086d0f7baebaaa930d1",
+        "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.26300-SP0"
+      }
+    }
+  },
+  "greatest_point_control": {
+    "cases": 9,
+    "feasible": 7,
+    "inconsistent": 2,
+    "shortcut_optimizer_calls": 34,
+    "complete_mask_optimizer_calls": 266,
+    "relative_call_change_percent": -87.21804511278195,
+    "scope": "Restricted max-closed structural class; ordinary same shortcut ties; calls are not runtime or complete costs."
+  },
+  "partial_noisy_band": {
+    "optimizer_calls": 0,
+    "row_visits": 134,
+    "coordinate_updates": 28,
+    "scope": "Specific band exclusion, not full range reconstruction or calibrated premises."
+  },
+  "new_economic_gain": {
+    "audit_fee": null,
+    "host_cpu": null,
+    "complete_cost": null,
+    "reason": "Not measured; no fresh saving claimed."
+  },
+  "carried_resource_measurements": {
+    "source": "s10/sf01/checked.json",
+    "sha256": "7a2ccdb6499821faf1d6c875d4251537bf7882137e876a05aef726bcacf69780",
+    "observed_session": "s10",
+    "date_utc": "2026-10-14",
+    "age_in_recurrences": 10,
+    "audit_fee_change_percent": -57.12,
+    "counted_work_change_percent": -9.53,
+    "comparison": "Prior scoped near6 scalar-prefix versus audit baseline; ordinary mirror ties; rounded historical values, not new data."
+  },
+  "source_records": [
+    {
+      "path": "v3/discovery/s20/decision_findings.md",
+      "sha256": "35797bac9b36e1794a8e0dfd192e8b5d9e70f1b21ec75ba55b1227a814234ea5"
+    },
+    {
+      "path": "v3/discovery/s20/scientific_assessment.md",
+      "sha256": "4d3b25639f1cd8ae28d3eb884b035fdd09a956a1bce9895d27c8d6f1c59195e6"
+    },
+    {
+      "path": "v3/discovery/s20/readiness_pre.md",
+      "sha256": "dbf735eb21476a73a27771ce994cf3ada0255de875ef6f5817c666bc8340a3ef"
+    },
+    {
+      "path": "v3/contribution_review.md",
+      "sha256": "5e35e130e393ce24ae70b3d37513e7769d24f4ca695ae4a165d169936ab09fcf"
+    }
+  ]
+}

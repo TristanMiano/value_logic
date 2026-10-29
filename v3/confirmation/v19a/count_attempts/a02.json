@@ -1,0 +1,17 @@
+{
+  "attempt": 2,
+  "source": "v3/confirmation/v19a/count_attempts/a02.lean",
+  "sha256": "b363731e2862e99b11c98869de87a78912c5cde89ffb6445b40f6dcadbd4de45",
+  "runner_sha256": "555c7ae6f9982e8051fc49da0a57ab4445e59ea34d0d9ebc8996e8628e327c44",
+  "scope_sha256": "a3aadc0abb0ebbb81141a252ac1e837a763be97167f5c4033eb1678bd05cd281",
+  "created_utc": "2026-10-28T23:24:41.301147+00:00",
+  "command": [
+    "lean",
+    "v3/confirmation/v19a/count_attempts/a02.lean"
+  ],
+  "status": "COMPILER_FAILURE",
+  "exit_code": 1,
+  "stdout": "C:\\Users\\trist\\projects\\value_logic\\v3\\confirmation\\v19a\\count_attempts\\a02.lean:29:15: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  (List.flatMap (fun a => List.map ?m.44 (words alphabet k)) alphabet).length\nin the target expression\n  (List.flatMap (fun a => List.map (fun f i => Fin.cases a f i) (words alphabet k)) alphabet).length =\n    alphabet.length ^ (k + 1)\n\ncase succ\nA : Type u\nalphabet : List A\nk : Nat\nih : (words alphabet k).length = alphabet.length ^ k\n\u22a2 (List.flatMap (fun a => List.map (fun f i => Fin.cases a f i) (words alphabet k)) alphabet).length =\n    alphabet.length ^ (k + 1)\nC:\\Users\\trist\\projects\\value_logic\\v3\\confirmation\\v19a\\count_attempts\\a02.lean:30:65: error: failed to elaborate eliminator, expected type is not available\nC:\\Users\\trist\\projects\\value_logic\\v3\\confirmation\\v19a\\count_attempts\\a02.lean:30:39: error: Application type mismatch: The argument\n  fun f j => ?m.39\nhas type\n  (f : Fin k \u2192 A) \u2192 (j : Fin (k + 1)) \u2192 ?m.41 f j\nbut is expected to have type\n  (Fin k \u2192 A) \u2192 ?m.30\nin the application\n  List.map fun f j => ?m.39\n'V19Count.words_length' depends on axioms: [propext, sorryAx]\n'V19Count.words_complete' depends on axioms: [propext, Quot.sound]\n'V19Count.binaryMasks_length' depends on axioms: [propext, sorryAx]\n'V19Count.binaryMasks_complete' depends on axioms: [propext, Quot.sound]\n'V19Count.assignments_length' depends on axioms: [propext, sorryAx]\n'V19Count.assignments_complete' depends on axioms: [propext, Quot.sound]\n'V19Count.nestedPairs_length' depends on axioms: [propext, sorryAx]\n'V19Count.nestedPairs_sound' depends on axioms: [propext, Quot.sound]\n'V19Count.nestedPairs_complete' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "runtime_ns": 699019300
+}

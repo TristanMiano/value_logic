@@ -1,28 +1,26 @@
 # P3-SEARCH-01 candidate portfolio
 
 Initial research: **Codex (GPT-6)**, October 11, 2026. All entries DEVELOPMENT.
-No candidate is promoted. The current event-specific forecast is recorded below;
-earlier unassessed entries retain their dated historical scope.
+Earlier entries retain their DEVELOPMENT scopes. V19 alone has completed the
+prospectively frozen P3-11-A1 review; author acceptance remains pending.
 
-**Current continuation — October26--27,2026 UTC, Codex (GPT-6):**
-[s19 checkpoint](s19/checkpoint.md), [findings](s19/findings.md),
-[actuals](s19/effective_actuals.json), [single recurrence table](recurrences.md).
-The broad four-hour recurrence is CLOSED:240.051583333333… research minutes.
-Program3019.783620685783… and phase4105.914988049933… minutes; no active clock.
-The36-family inventory is unchanged. C001 OPEN; P3-POS01 OUTSTANDING;
-P3-11 deferred; no promotion.
+**Current checkpoint — October29,2026 UTC, Codex (GPT-6):**
+[s20](s20/checkpoint.md) is CLOSED at240.079755078333… engaged research minutes,
+including90.410959541666… P3-11-A1 confirmation minutes and149.668795536666…
+new discovery minutes. Program3169.45241622245 minutes (52.82h); phase4345.994743128266…
+minutes. No active clock or unfinished minimum. PR21 verified merged before entry.
 
-**V19-R/v1:50--80%, central65%; O18-M/v1:35--70%, central50%; N16-C/v1
-carried55--80%, central65%.** [Assessment](s19/scientific_assessment.md) and
-[targets](s19/verification_targets.md) keep these events distinct. Exact scalar
-ranges and rational certificates are promising; novelty and a justified duty
-remain open. Ordinary equivalent methods tie. Actual shared-proof costs exceed
-fallback overall; no new audit or complete-cost saving is claimed.
+**V19-R/v1: P3-11-A1 PASS; P3-POS01 evaluator-supported; P3-C author decision
+PENDING.** Confidence80--90%, central85%, for the bounded useful-moderate-synthesis
+judgment; ordinary equivalent ties. See[review](../contribution_review.md),
+[recommendation](../checkpoints/C_1.md),[assessment](s20/scientific_assessment.md)
+and[metrics](s20/progress_metrics.json). C001 remains open pending disposition.
+N16 carries55--80%, central65%; O18 carries35--70%, central50%; neither reassessed.
+No fresh audit-fee or complete-cost saving. The36-family inventory is unchanged.
 
-Program50.33h; the[40-hour review](s17/portfolio40.md) is complete, next deeper
-review100h. Continue broad discovery only when authorized, with a short V19
-comparison before further deepening. Default one hour unless freshly overridden.
-O18's capped screen is finished. [Next prompt](CONTINUE.md).
+Recommend author acceptance and report assembly, rather than automatic further
+recurrence. P3-12 and P3-D have not begun. The40-hour review is complete; next100h.
+[Continuation](CONTINUE.md) preserves alternatives and the author gate.
 
 IDs S01 onward belong to this program, not separate clock commitments.
 
@@ -531,3 +529,11 @@ screens have direct prior reductions; paid-proof integration is negative
 overall. See[findings](s19/findings.md),[readiness](s19/readiness.md) and the
 [five-question assessment](s19/scientific_assessment.md). Broad discovery remains
 the default, not an open-ended confirmation campaign around AR1.
+
+## s20 contribution disposition
+
+V19-R/v1 has completed mathematical and contribution reconstruction at its fixed
+event. [P3-C recommendation](../checkpoints/C_1.md) is pending author acceptance.
+Separate partial-range, decision, greatest-point, transport and output-geometry
+extensions remain DEVELOPMENT, with standalone novelty UNASSESSED. No new family
+ID is assigned merely for variants. N16, O18 and the broader portfolio remain.

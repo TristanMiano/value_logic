@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "label": "DEVELOPMENT; same-model; finite exact controls",
+  "cases": [
+    {
+      "name": "no_receipts",
+      "kind": "interval",
+      "range": [
+        [
+          "1/2",
+          "16/5"
+        ]
+      ],
+      "shortcut_optimizer_calls": 2,
+      "full_optimizer_calls": 2,
+      "witnesses": 5,
+      "shortcut_certificate_bytes": 312,
+      "full_certificate_bytes": 255
+    },
+    {
+      "name": "two_coupled",
+      "kind": "interval",
+      "range": [
+        [
+          "-1/5",
+          "-1/5"
+        ]
+      ],
+      "shortcut_optimizer_calls": 4,
+      "full_optimizer_calls": 16,
+      "witnesses": 1,
+      "shortcut_certificate_bytes": 683,
+      "full_certificate_bytes": 2042
+    },
+    {
+      "name": "single_four",
+      "kind": "interval",
+      "range": [
+        [
+          "9/20",
+          "19/20"
+        ]
+      ],
+      "shortcut_optimizer_calls": 2,
+      "full_optimizer_calls": 32,
+      "witnesses": 5,
+      "shortcut_certificate_bytes": 529,
+      "full_certificate_bytes": 5482
+    },
+    {
+      "name": "many_mixed",
+      "kind": "interval",
+      "range": [
+        [
+          "-3/20",
+          "3/20"
+        ]
+      ],
+      "shortcut_optimizer_calls": 8,
+      "full_optimizer_calls": 128,
+      "witnesses": 5,
+      "shortcut_certificate_bytes": 1286,
+      "full_certificate_bytes": 11562
+    },
+    {
+      "name": "exact_reports",
+      "kind": "interval",
+      "range": [
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "shortcut_optimizer_calls": 6,
+      "full_optimizer_calls": 48,
+      "witnesses": 1,
+      "shortcut_certificate_bytes": 892,
+      "full_certificate_bytes": 4748
+    },
+    {
+      "name": "constant_future",
+      "kind": "interval",
+      "range": [
+        [
+          "3",
+          "3"
+        ]
+      ],
+      "shortcut_optimizer_calls": 4,
+      "full_optimizer_calls": 16,
+      "witnesses": 1,
+      "shortcut_certificate_bytes": 683,
+      "full_certificate_bytes": 1399
+    },
+    {
+      "name": "tied_outside",
+      "kind": "interval",
+      "range": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "shortcut_optimizer_calls": 4,
+      "full_optimizer_calls": 8,
+      "witnesses": 5,
+      "shortcut_certificate_bytes": 454,
+      "full_certificate_bytes": 629
+    },
+    {
+      "name": "missed_receipt",
+      "kind": "missed_receipt",
+      "range": [],
+      "shortcut_optimizer_calls": 2,
+      "full_optimizer_calls": 8,
+      "witnesses": 0,
+      "shortcut_certificate_bytes": 291,
+      "full_certificate_bytes": 451
+    },
+    {
+      "name": "empty_block",
+      "kind": "empty_block",
+      "range": [],
+      "shortcut_optimizer_calls": 2,
+      "full_optimizer_calls": 8,
+      "witnesses": 0,
+      "shortcut_certificate_bytes": 174,
+      "full_certificate_bytes": 301
+    }
+  ],
+  "negative_controls": [
+    {
+      "label": "two_positive_row",
+      "error": "base row is not syntactically max-closed"
+    },
+    {
+      "label": "positive_receipt",
+      "error": "receipt is not a negated nonnegative coordinate form"
+    },
+    {
+      "label": "negative_future",
+      "error": "future is not monotone"
+    },
+    {
+      "label": "binding",
+      "error": "problem digest mismatch"
+    },
+    {
+      "label": "missing_peak",
+      "error": "peak count"
+    },
+    {
+      "label": "missing_lower",
+      "error": "lower certificate count"
+    },
+    {
+      "label": "wrong_range",
+      "error": "range mismatch"
+    },
+    {
+      "label": "bad_primal",
+      "error": "infeasible primal"
+    },
+    {
+      "label": "bad_dual",
+      "error": "dual coefficient identity"
+    },
+    {
+      "label": "false_miss",
+      "error": "receipt actually feasible"
+    },
+    {
+      "label": "query_outside",
+      "error": "value outside range"
+    },
+    {
+      "label": "float_query",
+      "error": "rational must be an exact string"
+    }
+  ],
+  "shortcut_optimizer_calls": 34,
+  "full_optimizer_calls": 266,
+  "witnesses": 23,
+  "elapsed_ns": 305364600,
+  "freeze_sha256": "8dde49d001cc337acaafcafa457e912e46d5a2fad72b1cb5febd2a4a8ed109fa",
+  "records_sha256": "04454af2cdfa51c4901e95a27b20e56dd85cc2f5e608fc743deea31771d249ef"
+}

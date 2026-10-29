@@ -1,14 +1,16 @@
 # C001 recurrence progress
 
 Requested by **Tristan Miano**. Current maintenance: **Codex (GPT-6)**; earlier attributions preserved.
-This is the single chronological recurrence table: **29 recorded rows, ending
-with s19**. Append future recurrences to this same table.
+This is the single chronological recurrence table: **30 recorded rows, ending
+with s20**. Append future recurrences to this same table.
 
-**C001 OPEN · 3020 cumulative research minutes · V19-R/v1 50--80%, central65%;
-O18-M/v1 35--70%, central50%; N16-C/v1 carried55--80%, central65%.** Historical
-F01 remains20--45%, central30%; I13-R/v1 remains55--75%, central65% at its
-dated scope. No promotion. The[source record](recurrences.json) retains exact
-clocks, measurements and distinct forecast events. Publication adds no research.
+**C001 OPEN pending author disposition · 3169 cumulative discovery minutes ·
+V19-R/v1 P3-11-A1 PASS; P3-C acceptance pending.** Prospective readiness and
+post-review confidence80--90%, central85%; ordinary equivalent ties. O18 carries
+35--70%, central50%; N16 carries55--80%, central65%. Historical F01 and I13
+retain their dated scopes. The[source record](recurrences.json) keeps exact clocks.
+s20's240.08-minute session contains149.67 discovery plus90.41 confirmation
+minutes; only discovery enters this table's cumulative program total.
 
 **Reading the table:** `—` means not introduced, inapplicable or not measured at
 that historical boundary; original reasons are retained in JSON. **Carried**
@@ -53,6 +55,7 @@ implementation is shown explicitly even when it ties.
 | **[s17 N16 assessment](s17/checkpoint.md)** | **240** | **2539** | **35 (0)** | Sharp retained-block contribution assessment; Oct24 UTC;40h portfolio review | **No fresh audit-fee run.** s10 **−57.12% carried, age7**. Three queries acquire a block; **one targeted query also settles the chosen upper decision** | **No new CPU/count saving.** s10 named work **−9.53% carried, age7**. Exact checker serialization repaired; bounded format remains incomplete | **Exact prior SDP ties.** Strong old-vector control leaves **1.80049–1.80553% width gain**; universal two-edit analytic coefficient ties | 144/272;254/272;258/272; carried, age21 | 80/80;60/80;223; carried, age10 | 16/16;11/11;1,718,749;4.7544×; carried, age9 | 0; carried, age9 | **N16-C/v1 60–85%, central75%; continue developing.** I13 central65%, age4; F01 central30%, age7; distinct events | Explicit endpoint proof and finite witnesses; **rounded upper0.58311909<0.6 versus old-vector-compatible1**. Separate exact two-edit block criterion/gap. Novelty remains unresolved; no promotion. |
 | **[s18 four-hour broad round](s18/checkpoint.md)** | **240** | **2780** | **36 (+1)** | Warm retention fixture; tied/corrupted feedback; conditional optimum receipts; Oct25 UTC | **No fresh audit-stream saving.** s10 **−57.12% carried, age8**. Known-budget query bound d(d−1)(C0+1) is theoretical, with paid reports | **Warm bound tariff10655→9060 (−14.97%)**, same55/80 tree closures; setup10655 and admission7975 plus selection payable. Named-item path update O(d²). s10 **−9.53% carried, age8**; no CPU/full-cost gain | **Identical ordinary methods tie.** Strong cache q+C mistakes on q contexts; prior known-budget general regret and distinct-coordinate results constrain novelty | 144/272;254/272;258/272; carried, age22 | 80/80;60/80;223; carried, age11 | 16/16;11/11;1,718,749;4.7544×; carried, age10 | 0; carried, age10 | **O18-M/v1 45–75%, central60%. N16-C/v1 55–80%, central65% (−10pp).** Conditional receipts UNASSESSED; no promotion | **Joint receipts: upper4→exact1; two-bit certified attainer action.** Tied unknown-budget matroid mistakes≤binom(d,2)(C+1)+C. Conditional face/subset algorithm; N16 finite witnesses2k→k+1. |
 | **[s19 four-hour broad round](s19/checkpoint.md)** | **240** | **3020** | **36 (0)** | Exact scalar ranges;24 artificial shared-proof streams; Oct26--27 UTC | **No fresh audit saving.** Mixed proof/fallback bill: uniform **+50.61%**, fixed advice **+12.41%/+10.07%** versus fallback; controller extra. s10 −57.12% carried, age9 | **At most2n2^k local LPs; O(n3^k) combination plus sorting**, whole range ≤n2^k intervals; theoretical, no measured speedup. Proof controller23897/5083 membership/credit counts uniform. s10 −9.53% carried, age9 | **Identical ordinary inference ties.** Direct band queries, winner labels, max-affine/disjunctive solvers and homogeneous shortcuts are strong controls; fusion reductions parked | 144/272;254/272;258/272; carried, age23 | 80/80;60/80;223; carried, age12 | 16/16;11/11;1,718,749;4.7544×; carried, age11 | 0; carried, age11 | **V19-R/v1 50--80%, central65%; O18-M/v1 35--70%, central50% (−10pp)**. N16 carried55--80%, central65%; no promotion | **Gap-preserving values and rational certificates:**180 cases/472 source witnesses;44 bundles/273 corruption rejections. Noisy range[21,21.2]∪[21.9,22.2] rejects band[21.4,21.6]. Sparse forest/cycle extension retained separately. |
+| **[s20 completion-oriented round](s20/checkpoint.md)** | **150 discovery +90.41 confirmation (240.08 session)** | **3169** | **36 (0)** | Fixed V19 confirmation; separate structural/partial-decision development; Oct28--29 UTC | **No fresh audit saving.** s10 −57.12% carried, age10; previous proof-service cost excess unchanged | **34 vs266 optimizer calls** on9 restricted-class cases; **0 LP** band exclusion after134 row visits/28 updates. Not a runtime/full-cost saving. s10 −9.53% carried, age10 | **Identical ordinary construction ties.** Greatest-point shortcut credited to established machinery; direct band, winner-label and full-source controls retained | 144/272;254/272;258/272; carried, age24 | 80/80;60/80;223; carried, age13 | 16/16;11/11;1,718,749;4.7544×; carried, age12 | 0; carried, age12 | **V19 80--90%, central85% (+20pp), then P3-11-A1 PASS.** Same confidence retained; P3-C author acceptance pending. N16/O18 carried | **Useful moderate synthesis supported:** complete gap-preserving range, rational checker and source recovery;12 supplemental Lean units with limits. Separate sharp stopping adds118 optimality certificates; incumbent-aware observation and continuous-loss controls. |
 
 ## Resource columns: scope and evidence
 
@@ -310,3 +313,15 @@ controller and host costs; no aggregate saving against fallback is claimed.
 The range construction gives a new bounded contribution event, not an update
 to N16, O18 or F01. See[claim](s19/claim.md),[comparison](s19/comparison.md) and
 [readiness](s19/readiness.md). All28 prior rows remain unchanged.
+
+## s20 scope and relevant gains
+
+[Metrics](s20/progress_metrics.json),[review](../contribution_review.md) and
+[assessment](s20/scientific_assessment.md) separate completed confirmation from
+optional development. The restricted34/266 call comparison is not universal
+superiority or measured CPU saving. The zero-LP band duty can finish before
+full range reconstruction. Ordinary equivalents tie. No fresh fee/full-cost
+measurement is implied by dated carries. The240.08-minute session includes
+90.41 confirmation minutes excluded from this discovery cumulative total.
+All29 previous row objects and rendered rows are unchanged. The author gate
+remains pending; no phase completion is inferred from a code merge.

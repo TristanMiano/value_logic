@@ -1,0 +1,243 @@
+{
+  "status": "PASS",
+  "label": "DEVELOPMENT; same model; exposed controls",
+  "python": "3.13.14",
+  "cases": [
+    {
+      "name": "no_receipts",
+      "supplied_certificates": 1,
+      "first_exact_after_certificates": 1,
+      "query_answers": 27,
+      "source_answers": 7,
+      "compilations": 60,
+      "propagation_row_visits": 2,
+      "coordinate_updates": 0,
+      "retained_evidence_bytes": 221,
+      "noisy_query_before": null,
+      "noisy_query_after_box": null
+    },
+    {
+      "name": "noisy_envelope",
+      "supplied_certificates": 8,
+      "first_exact_after_certificates": 7,
+      "query_answers": 289,
+      "source_answers": 48,
+      "compilations": 616,
+      "propagation_row_visits": 134,
+      "coordinate_updates": 28,
+      "retained_evidence_bytes": 2355,
+      "noisy_query_before": {
+        "status": "UNRESOLVED",
+        "problem_sha256": "9153239be1ff316a6abcdaf08fdc438fcfea6ef95933d82de101c27919e588ec",
+        "inconsistent": false
+      },
+      "noisy_query_after_box": {
+        "status": "EXCLUDED",
+        "problem_sha256": "9153239be1ff316a6abcdaf08fdc438fcfea6ef95933d82de101c27919e588ec",
+        "inconsistent": false
+      }
+    },
+    {
+      "name": "degenerate_segment",
+      "supplied_certificates": 2,
+      "first_exact_after_certificates": 1,
+      "query_answers": 45,
+      "source_answers": 14,
+      "compilations": 100,
+      "propagation_row_visits": 39,
+      "coordinate_updates": 0,
+      "retained_evidence_bytes": 890,
+      "noisy_query_before": null,
+      "noisy_query_after_box": null
+    },
+    {
+      "name": "huge_constant",
+      "supplied_certificates": 1,
+      "first_exact_after_certificates": 1,
+      "query_answers": 15,
+      "source_answers": 3,
+      "compilations": 36,
+      "propagation_row_visits": 6,
+      "coordinate_updates": 0,
+      "retained_evidence_bytes": 1089,
+      "noisy_query_before": null,
+      "noisy_query_after_box": null
+    },
+    {
+      "name": "inconsistent_constant",
+      "supplied_certificates": 4,
+      "first_exact_after_certificates": 0,
+      "query_answers": 81,
+      "source_answers": 0,
+      "compilations": 180,
+      "propagation_row_visits": 28,
+      "coordinate_updates": 0,
+      "retained_evidence_bytes": 706,
+      "noisy_query_before": null,
+      "noisy_query_after_box": null
+    },
+    {
+      "name": "maximal_cover_loss",
+      "supplied_certificates": 4,
+      "first_exact_after_certificates": 3,
+      "query_answers": 81,
+      "source_answers": 14,
+      "compilations": 180,
+      "propagation_row_visits": 22,
+      "coordinate_updates": 2,
+      "retained_evidence_bytes": 938,
+      "noisy_query_before": null,
+      "noisy_query_after_box": null
+    }
+  ],
+  "unsupported_inputs": [
+    {
+      "name": "mixed_1_3_7",
+      "error": "new model lacks explicit finite coordinate bounds"
+    },
+    {
+      "name": "mixed_2_5",
+      "error": "new model lacks explicit finite coordinate bounds"
+    },
+    {
+      "name": "single_7",
+      "error": "new model lacks explicit finite coordinate bounds"
+    },
+    {
+      "name": "three_4",
+      "error": "new model lacks explicit finite coordinate bounds"
+    },
+    {
+      "name": "four_3",
+      "error": "new model lacks explicit finite coordinate bounds"
+    },
+    {
+      "name": "exact_mixed",
+      "error": "new model lacks explicit finite coordinate bounds"
+    },
+    {
+      "name": "empty_receipts_mixed",
+      "error": "new model lacks explicit finite coordinate bounds"
+    }
+  ],
+  "manual": {
+    "support_upper_core": 1,
+    "point_cover": 6,
+    "farkas_core": 3,
+    "rejects": [
+      {
+        "label": "digest",
+        "exception": "ValueError",
+        "message": "problem digest mismatch"
+      },
+      {
+        "label": "negative_block",
+        "exception": "ValueError",
+        "message": "block index"
+      },
+      {
+        "label": "bool_block",
+        "exception": "ValueError",
+        "message": "block index"
+      },
+      {
+        "label": "negative_mask",
+        "exception": "ValueError",
+        "message": "mask index"
+      },
+      {
+        "label": "extra_mask",
+        "exception": "ValueError",
+        "message": "mask index"
+      },
+      {
+        "label": "dimension",
+        "exception": "ValueError",
+        "message": "vector shape"
+      },
+      {
+        "label": "float_point",
+        "exception": "ValueError",
+        "message": "rational must be an exact string"
+      },
+      {
+        "label": "infeasible_point",
+        "exception": "ValueError",
+        "message": "point violates base or receipt lower bound"
+      },
+      {
+        "label": "negative_dual",
+        "exception": "ValueError",
+        "message": "negative multiplier"
+      },
+      {
+        "label": "wrong_identity",
+        "exception": "ValueError",
+        "message": "dual coefficient identity"
+      },
+      {
+        "label": "nonstrict_farkas",
+        "exception": "ValueError",
+        "message": "nonnegative Farkas bound"
+      },
+      {
+        "label": "bad_side",
+        "exception": "ValueError",
+        "message": "dual side"
+      },
+      {
+        "label": "reversed_query",
+        "exception": "ValueError",
+        "message": "reversed query band"
+      },
+      {
+        "label": "bad_passes",
+        "exception": "ValueError",
+        "message": "sweep budget"
+      },
+      {
+        "label": "late_bad_dual_atomic",
+        "exception": "ValueError",
+        "message": "dual coefficient identity"
+      },
+      {
+        "label": "extra_fields",
+        "exception": "ValueError",
+        "message": "bounded fields"
+      },
+      {
+        "label": "wrong_endpoint",
+        "exception": "ValueError",
+        "message": "primal objective"
+      }
+    ],
+    "final": {
+      "problem_sha256": "4766b0cd8ff40445001f7ce160da7d549a980d26aed53f5c28ac5974a8136dd9",
+      "inner": [
+        [
+          "0",
+          "1/2"
+        ]
+      ],
+      "outer": [
+        [
+          "0",
+          "1/2"
+        ]
+      ],
+      "exact": true,
+      "inconsistent": false
+    },
+    "empty": {
+      "problem_sha256": "625baaee99ba5d1f68f3f72fdf69149154f245faa3acded60e2ffe5e140fd7dc",
+      "inner": [],
+      "outer": [],
+      "exact": true,
+      "inconsistent": true
+    }
+  },
+  "new_optimizer_calls": 0,
+  "elapsed_ns": 61632400,
+  "records_sha256": "5dce23f4b31644a76257f1f9fd8fa31bd2eac48e5f5151f64269740996aa62c3",
+  "freeze_sha256": "1d4f108e86c4f6b7b14fc5a90d59c8a9422f04632a34fb92f43056f762190c18"
+}

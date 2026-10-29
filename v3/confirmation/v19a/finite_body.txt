@@ -1,0 +1,124 @@
+
+namespace V19Finite
+
+open Std Lean.Grind V19Dual V19Local V19Source V19Certified V19
+
+universe u v
+variable {R : Type u} [Field R] [LE R] [LT R]
+  [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R]
+variable {I : Type v} {k : Nat}
+
+def extendMask (mask : Fin k → Bool) (j : Nat) : Bool :=
+  if hj : j < k then mask ⟨j,hj⟩ else false
+
+noncomputable def finiteLabel (assignment : Fin k → I) (i : I) : Fin k → Bool := by
+  classical
+  exact fun j => decide (assignment j=i)
+
+theorem source_iff_finite_assignment {X : I → Type u}
+    (base : (i : I) → X i → Prop)
+    (g : Nat → (i : I) → X i → R) (lower upper : Nat → R)
+    (x : (i : I) → X i) :
+    source k base g lower upper x ↔
+      ∃ assignment : Fin k → I,
+        ∀ i, cell k base g lower upper i (extendMask (finiteLabel assignment i)) (x i) := by
+  classical
+  constructor
+  · intro h
+    let assignment : Fin k → I := fun j => Classical.choose (h.2.2 j.val j.isLt)
+    refine ⟨assignment, fun i => ⟨h.1 i, ?_, ?_⟩⟩
+    · intro j hj
+      exact h.2.1 j hj i
+    · intro j hj selected
+      have equal : assignment ⟨j,hj⟩=i := by
+        simpa [extendMask, finiteLabel, hj] using selected
+      have chosen : g j (assignment ⟨j,hj⟩) (x (assignment ⟨j,hj⟩)) ≤ upper j :=
+        Classical.choose_spec (h.2.2 j hj)
+      rw [equal] at chosen
+      exact chosen
+  · rintro ⟨assignment, cells⟩
+    refine ⟨fun i => (cells i).1, ?_, ?_⟩
+    · intro j hj i
+      exact (cells i).2.1 j hj
+    · intro j hj
+      exact ⟨assignment ⟨j,hj⟩, (cells (assignment ⟨j,hj⟩)).2.2 j hj
+        (by simp [extendMask, finiteLabel, hj])⟩
+
+theorem finite_source_image_iff_union {X : I → Type u}
+    (base : (i : I) → X i → Prop)
+    (g : Nat → (i : I) → X i → R) (lower upper : Nat → R)
+    (f : (i : I) → X i → R) (available : I → (Fin k → Bool) → Prop)
+    (lo hi : I → (Fin k → Bool) → R)
+    (local_image : ∀ i mask q,
+      (∃ x, cell k base g lower upper i (extendMask mask) x ∧ f i x=q) ↔
+        available i mask ∧ Interval (fun a b : R => a ≤ b) (lo i mask) (hi i mask) q)
+    (q : R) :
+    sourceImage k base g lower upper f q ↔
+      UnionImage (fun a b : R => a ≤ b)
+        (fun assignment => ∀ i, available i (finiteLabel assignment i)) finiteLabel lo hi q := by
+  classical
+  constructor
+  · rintro ⟨x, hx, minimum⟩
+    obtain ⟨assignment, cells⟩ := (source_iff_finite_assignment base g lower upper x).mp hx
+    have localFacts : ∀ i, available i (finiteLabel assignment i) ∧
+        Interval (fun a b : R => a ≤ b) (lo i (finiteLabel assignment i))
+          (hi i (finiteLabel assignment i)) (f i (x i)) := by
+      intro i
+      exact (local_image i (finiteLabel assignment i) (f i (x i))).mp ⟨x i, cells i, rfl⟩
+    exact ⟨assignment, fun i => (localFacts i).1,
+      (fun i => f i (x i)), (fun i => (localFacts i).2), minimum⟩
+  · rintro ⟨assignment, good, values, intervals, minimum⟩
+    have witnesses : ∀ i, ∃ x,
+        cell k base g lower upper i (extendMask (finiteLabel assignment i)) x ∧
+        f i x=values i := by
+      intro i
+      exact (local_image i (finiteLabel assignment i) (values i)).mpr ⟨good i, intervals i⟩
+    let x : (i : I) → X i := fun i => Classical.choose (witnesses i)
+    have facts : ∀ i,
+        cell k base g lower upper i (extendMask (finiteLabel assignment i)) (x i) ∧
+        f i (x i)=values i := fun i => Classical.choose_spec (witnesses i)
+    have equal : (fun i => f i (x i))=values := funext (fun i => (facts i).2)
+    refine ⟨x, (source_iff_finite_assignment base g lower upper x).mpr
+      ⟨assignment, fun i => (facts i).1⟩, ?_⟩
+    rw [equal]
+    exact minimum
+
+theorem finite_complete_certificate_image
+    (m d : I → Nat) (A G : I → Nat → Nat → R)
+    (base offset : I → Nat → R) (lower upper : Nat → R)
+    (c : I → Nat → R) (futureOffset : I → R)
+    (certs : ∀ i (mask : Fin k → Bool), ReceiptCertificate (m i) (d i) k (A i) (G i)
+      (base i) (offset i) lower upper (extendMask mask) (c i) (futureOffset i))
+    (q : R) :
+    sourceImage k (fun i x => feasible (m i) (d i) (A i) (base i) x)
+      (fun j i x => dot (d i) (G i j) x+offset i j) lower upper
+      (fun i x => dot (d i) (c i) x+futureOffset i) q ↔
+    AnchoredImage (fun a b : R => a ≤ b)
+      (fun assignment => ∀ i, (certs i (finiteLabel assignment i)).available) finiteLabel
+      (fun i mask => (certs i mask).lo) (fun i mask => (certs i mask).hi) q := by
+  have locals : ∀ i mask value,
+      (∃ x, cell k (fun i x => feasible (m i) (d i) (A i) (base i) x)
+        (fun j i x => dot (d i) (G i j) x+offset i j) lower upper i (extendMask mask) x ∧
+        dot (d i) (c i) x+futureOffset i=value) ↔
+      (certs i mask).available ∧
+        Interval (fun a b : R => a ≤ b) (certs i mask).lo (certs i mask).hi value := by
+    intro i mask value
+    exact receipt_certificate_image (m i) (d i) k (A i) (G i)
+      (base i) (offset i) lower upper (extendMask mask) (c i) (futureOffset i) (certs i mask) value
+  apply (finite_source_image_iff_union
+    (fun i x => feasible (m i) (d i) (A i) (base i) x)
+    (fun j i x => dot (d i) (G i j) x+offset i j) lower upper
+    (fun i x => dot (d i) (c i) x+futureOffset i)
+    (fun i mask => (certs i mask).available)
+    (fun i mask => (certs i mask).lo) (fun i mask => (certs i mask).hi) locals q).trans
+  exact anchor_rearrangement (fun a b : R => a ≤ b) (fun _ => Std.le_refl _)
+    (fun _ _ _ h1 h2 => Std.le_trans h1 h2)
+    (fun assignment => ∀ i, (certs i (finiteLabel assignment i)).available)
+    finiteLabel (fun i mask => (certs i mask).lo) (fun i mask => (certs i mask).hi)
+    (fun assignment good i => (certs i (finiteLabel assignment i)).ordered (good i)) q
+
+#print axioms source_iff_finite_assignment
+#print axioms finite_source_image_iff_union
+#print axioms finite_complete_certificate_image
+
+end V19Finite

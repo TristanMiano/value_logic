@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s20\noise_probe.py", line 127, in run
+    answer = V.verify(problem,cert)
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s19\range_cert_verify.py", line 92, in verify
+    rows,rhs,c,d=constraints(problem,i,mask)
+                 ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s19\range_cert_verify.py", line 28, in constraints
+    rows=[vector(row,n) for row in g['A']]; rhs=vector(g['b'],len(rows))
+          ~~~~~~^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s19\range_cert_verify.py", line 18, in vector
+    return [rational(v) for v in values]
+            ~~~~~~~~^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s19\range_cert_verify.py", line 13, in rational
+    require(isinstance(value,str),'rational must be an exact string')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trist\projects\value_logic\v3\discovery\s19\range_cert_verify.py", line 7, in require
+    if not ok: raise ValueError(message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: rational must be an exact string

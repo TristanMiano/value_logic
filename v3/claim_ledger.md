@@ -1,5 +1,11 @@
 # Phase-three claims and obligations
 
+**Current pointer — October29,2026, Codex (GPT-6):** V19-R/v1 has completed
+[P3-11-A1](confirmation/v19a/result.json). P3-POS01 is evaluator-supported;
+[P3-C recommendation](checkpoints/C_1.md) awaits author acceptance. Same-model
+confidence80--90%, central85%; ordinary equivalent ties. No new fee/full-cost
+advantage. N16/O18 retain their dated events. Earlier pointers below are historical.
+
 **Latest pointer — October25,2026 UTC, Codex (GPT-6):**
 [s18 assessment](discovery/s18/scientific_assessment.md),
 [targets](discovery/s18/verification_targets.md), [metrics](discovery/s18/progress_metrics.json).
@@ -1029,3 +1035,22 @@ inference is separately unassessed. Actual paid-proof integration exceeds
 fallback overall; generic fusion/recovery claims have close prior reductions.
 [Five-question synthesis](discovery/s19/scientific_assessment.md) states the
 useful deltas, ordinary ties and remaining blockers. No promotion.
+
+## s20 — retained-value whole-image contribution and bounded decision use
+
+Codex (GPT-6), October28--29,2026. V19-R/v1: useful moderate mathematical
+synthesis, reconstructed at unchanged event;[review](contribution_review.md).
+At most2n2^k local LPs, O(n3^k+n2^k log(n2^k)) combination/sorting comparisons,
+at most n2^k intervals, exact rational checks and original-source witnesses.
+The noisy two-component image excludes a band and bounds a reciprocal where
+the sharp hull cannot. Strong ordinary subset/max-marginal inference ties;
+this is a capability/guarantee claim, not universal runtime superiority.
+
+Separate development:[findings](discovery/s20/findings.md),
+[metrics](discovery/s20/progress_metrics.json),[decision consequences](discovery/s20/decision_findings.md).
+Restricted greatest-point control34 versus266 optimizer calls on nine cases;
+zero-LP band exclusion after134 row visits/28 updates; sharper fixed-model
+computation stopping and incumbent-aware observation bounds. These counts
+have explicit controls and do not imply audit-fee, CPU or complete-cost savings.
+Standalone novelty of extensions is unassessed; they are not borrowed into A1.
+N16/O18 unchanged. Author acceptance and phase completion remain distinct.

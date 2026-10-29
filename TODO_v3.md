@@ -1,23 +1,32 @@
 # Value Logic Phase Three: Logical Uncertainty and Counterfactuals
 
-**Latest recurrence — October26--27,2026 UTC:** [s19](v3/discovery/s19/checkpoint.md)
-is CLOSED after240.051583333333… effective research minutes. PR20 was verified
-merged before the four-hour broad recurrence, including a capped O18 screen.
-[Findings](v3/discovery/s19/findings.md): V19-R/v1 exact gap-preserving ranges
-and rational certificates;50--80%, central65%. O18-M/v1 is35--70%, central50%;
-N16 carries55--80%, central65%. No active clock, unfinished floor or promotion.
-C001 OPEN; P3-POS01 OUTSTANDING; P3-11 deferred.
+**Current checkpoint — October29,2026 UTC, Codex (GPT-6):**
+[s20](v3/discovery/s20/checkpoint.md) is CLOSED at240.079755078333… engaged research minutes,
+including90.410959541666… P3-11-A1 confirmation minutes and149.668795536666…
+new discovery minutes. Program3169.45241622245 minutes (52.82h); phase4345.994743128266…
+minutes. No active clock or unfinished minimum. PR21 verified merged before entry.
+
+**V19-R/v1: P3-11-A1 PASS; P3-POS01 evaluator-supported; P3-C author decision
+PENDING.** Confidence80--90%, central85%, for the bounded useful-moderate-synthesis
+judgment; ordinary equivalent ties. See[review](v3/contribution_review.md),
+[recommendation](v3/checkpoints/C_1.md),[assessment](v3/discovery/s20/scientific_assessment.md)
+and[metrics](v3/discovery/s20/progress_metrics.json). C001 remains open pending disposition.
+N16 carries55--80%, central65%; O18 carries35--70%, central50%; neither reassessed.
+No fresh audit-fee or complete-cost saving. The36-family inventory is unchanged.
+
+Recommend author acceptance and report assembly, rather than automatic further
+recurrence. P3-12 and P3-D have not begun. The40-hour review is complete; next100h.
+[Continuation](v3/discovery/CONTINUE.md) preserves alternatives and the author gate.
 
 Established October 6, 2026 UTC. Contributor: **ChatGPT (GPT-6 Astra Pro)**.
 Author direction: [phase-three scope](v3/decisions/2026-10-06_phase_three_scope.md).
 Current amendment: [discovery-first direction](v3/decisions/2026-10-11_discovery_first_amendment.md).
 
-**Selected next: P3-SEARCH-01, a continuing discovery program.** Its first
-240-minute research cycle remains open with **3019.783620685783… research minutes**
-credited. Its floor is satisfied. The default is **one-hour increments**, subject to explicit author overrides,
-with a portable handoff after each; historical central/high cycle forecasts
-remain 360/480 minutes. **P3-POS01, the materially useful positive-result objective,
-is OUTSTANDING. P3-11 is deferred pending discovery readiness.**
+**Selected next: P3-C author disposition** on the completed V19-R/v1 contribution
+review. P3-11-A1 passed; P3-POS01 is evaluator-supported. C001's discovery
+research is3169.45241622245 minutes and its floor is satisfied. No automatic
+recurrence or report task begins before the author decision. Default future
+discovery sessions remain one hour unless explicitly overridden.
 
 **Status: P3-01–10 complete at their declared task scopes.**
 P3-01 supplies the questions and comparison contract; P3-02 supplies the
@@ -30,11 +39,11 @@ P3-04 is complete at finite counterfactual-semantics scope, with new,
 [separately versioned replacement evidence](v3/work_logs/P3_04_2026-10-08_S2.md).
 Its original Research90 interval remains unchanged; S2 adds **11.794846725917 minutes**
 of measured research repair. The task total is **102.250516541683 minutes**.
-Phase-three qualifying research is **4105.914988049933… minutes**.
+Phase-three qualifying research is **4345.994743128266… minutes**.
 The [960-minute checkpoint](v3/work_logs/P3_09_2026-10-11_S1/checkpoint_960.md)
 was satisfied at P3-09, with **35.847797958367 minutes** of observed overshoot
 at that assessment; current phase research exceeds 960 minutes by
-**3145.914988049933… minutes**.
+**3385.994743128266… minutes**.
 Later tasks and author gates remain necessary.
 The old code/run archives remain missing historically, not silently recreated.
 **P3-A remains PASS** at problem and restricted-representation readiness scope.
@@ -72,9 +81,9 @@ scope, with **90.310005771417 measured research minutes** and an
 **P3-10 is COMPLETE at explicit amended final-execution and interpretation
 scope**, with **90.283569405783 measured research minutes** and
 [independently reconstructed results](v3/experiments/results.md).
-**Next: continue P3-SEARCH-01-C001 from [s19](v3/discovery/s19/checkpoint.md), using
-[the current prompt](v3/discovery/CONTINUE.md) for the next requested duration (default one hour). P3-11 is deferred.**
-Phase two remains complete; P3-C–D remain unattempted. P3-N01 is now
+**Next: author disposition on [P3-C](v3/checkpoints/C_1.md); see
+[the current prompt](v3/discovery/CONTINUE.md). P3-11-A1 is complete.**
+Phase two remains complete; P3-C acceptance is pending and P3-D unstarted. P3-N01 is now
 **SUPPORTED at modest formal-adaptation and implementation-synthesis scope**;
 Q3 affirmative advantage over the strongest ordinary combination remains open.
 The original freeze and final exposure are preserved. Explicit P3-10-A1
@@ -89,7 +98,7 @@ Read this plan with the [phase-three procedure](v3/RESEARCH_PROTOCOL.md),
 selected task's prior sessions. The [primary-source orientation](v3/literature/00_orientation.md)
 supports planning; it is not a completed literature audit or theorem import.
 
-## Current author selection — October26--27,2026 UTC
+## Previous author selection — October26--27,2026 UTC
 
 The broad four-hour recurrence is complete. [Assessment](v3/discovery/s19/scientific_assessment.md)
 keeps the five-question goal and useful moderate novelty in view. Program50.33h;
@@ -581,11 +590,13 @@ confirmation plan. An adverse confirmation returns the objective to discovery.
   and [actuals](v3/work_logs/P3_10_2026-10-11_S1/actuals.json) retain the original
   failure, explicit A1, all scheduled denominators, failed-service costs,
   ordinary controls, independent reconstructions and exact time exclusions.
-  The unknown-prefix global economic gate is false. P3-11 is not started.
+  The unknown-prefix global economic gate was false at the P3-10 boundary;
+  that historical result is unchanged by the later bounded-synthesis review.
 
 - [ ] **P3-SEARCH-01 — continuing constructive discovery. Research240 or longer per cycle.**
 
-  **In progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING.** Generate and derive
+  **C001 OPEN pending author disposition; P3-POS01 evaluator-supported.**
+  The following remains the discovery protocol if further search is selected: generate and derive
   materially different mechanisms across the five questions, keep a revisable
   portfolio, discard poor candidates with cheap screens, and deepen promising
   branches. The [program](v3/discovery/P3_SEARCH_01.md) defines the first cycle,
@@ -614,10 +625,11 @@ confirmation plan. An adverse confirmation returns the objective to discovery.
   table's final row contains the latest measurements and forecast. Carry this
   requirement into each checkpoint and handoff; documentation adds no research credit.
 
-- [ ] **P3-11 — rigorous confirmation, adversarial reconstruction and contribution review. Research90 minimum; deferred.**
+- [x] **P3-11 — rigorous confirmation, adversarial reconstruction and contribution review. Research90 minimum satisfied.**
 
-  **Unstarted; requires P3-SEARCH-01 candidate readiness and a prospective
-  confirmation plan.** Re-estimate effort and D/L/E allocation for the actual
+  **P3-11-A1 PASS**, V19-R/v1;90.410959541666… research minutes.
+  [Review](v3/contribution_review.md) and[attempt](v3/confirmation/v19a/result.json).
+  The remaining paragraph preserves the prospective duties: re-estimate effort and D/L/E allocation for the actual
   candidate before execution; the original 60/30/0 split is historical planning.
   Freeze a mature empirical candidate and obtain appropriate fresh verification
   evidence; formal claims require rigorous proof and reconstruction.
@@ -630,7 +642,8 @@ confirmation plan. An adverse confirmation returns the objective to discovery.
 
 - [ ] **P3-C — evidence and contribution recommendation.**
 
-  Record `v3/checkpoints/C_1.md`. Require technical readiness, completion of
+  **Evaluator recommendation PASS; author acceptance PENDING.**
+  [Concrete record](v3/checkpoints/C_1.md). Require technical readiness, completion of
   the amended discovery/confirmation prerequisites and support for **P3-POS01**
   alongside the scoped contribution assessment. Present the evaluator's
   PASS/BLOCKED recommendation and argument; the author decides advancement or
@@ -680,11 +693,11 @@ Keep all earlier evidence and accumulated effort. A suspended or redirected
 program does not become a completed phase. No fixed total search ceiling is
 imposed; author direction and evidence determine its eventual disposition.
 
-**Active repair queue: empty. P3-01–10 and selected recurrences R-P3-B-A/B are
-complete at their declared scopes. P3-A and P3-B retain their restricted PASS.
-P3-N01 is SUPPORTED at the recorded modest synthesis scope. P3-POS01 is
-OUTSTANDING. Next: continue P3-SEARCH-01-C001 from its durable checkpoint;
-its fresh Research240 floor is satisfied and research continues. P3-11 is deferred and unstarted. P3-C–D remain unattempted.
+**Active repair queue: empty at the supported bounded claim. P3-01–11 and
+selected recurrences R-P3-B-A/B are complete at their declared scopes. P3-A/B
+retain their restricted PASS. P3-N01 retains historical support; P3-POS01 is
+evaluator-supported by V19-R/v1. Next: P3-C author acceptance or redirection.
+C001 remains open pending that disposition. P3-12 and P3-D are unstarted.
 Option B is complete; Option C and R-P3-N01 are unselected.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original

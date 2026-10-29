@@ -1,0 +1,140 @@
+
+namespace V19Certified
+
+open Std Lean.Grind V19Dual V19Local V19Source V19
+
+universe u v
+variable {R : Type u} [Field R] [LE R] [LT R]
+  [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R]
+
+structure Bounds (m d : Nat) (A : Nat → Nat → R)
+    (b c : Nat → R) (offset : R) where
+  lo : R
+  hi : R
+  lowPoint : Nat → R
+  highPoint : Nat → R
+  lowDual : Nat → R
+  highDual : Nat → R
+  lowNonnegative : ∀ r, r < m → 0 ≤ lowDual r
+  highNonnegative : ∀ r, r < m → 0 ≤ highDual r
+  lowColumns : ∀ j, j < d → total m (fun r => lowDual r*A r j) = -c j
+  highColumns : ∀ j, j < d → total m (fun r => highDual r*A r j) = c j
+  lowFeasible : feasible m d A b lowPoint
+  highFeasible : feasible m d A b highPoint
+  lowValue : dot d c lowPoint+offset=lo
+  highValue : dot d c highPoint+offset=hi
+  lowBound : offset-total m (fun r => lowDual r*b r)=lo
+  highBound : offset+total m (fun r => highDual r*b r)=hi
+
+inductive Certificate (m d : Nat) (A : Nat → Nat → R)
+    (b c : Nat → R) (offset : R) where
+  | empty (dual : Nat → R)
+      (nonnegative : ∀ r, r < m → 0 ≤ dual r)
+      (columns : ∀ j, j < d → total m (fun r => dual r*A r j)=0)
+      (negative : total m (fun r => dual r*b r)<0)
+  | bounded (data : Bounds m d A b c offset)
+
+namespace Certificate
+
+variable {m d : Nat} {A : Nat → Nat → R} {b c : Nat → R} {offset : R}
+
+def available : Certificate m d A b c offset → Prop
+  | .empty .. => False
+  | .bounded _ => True
+
+def lo : Certificate m d A b c offset → R
+  | .empty .. => 0
+  | .bounded data => data.lo
+
+def hi : Certificate m d A b c offset → R
+  | .empty .. => 0
+  | .bounded data => data.hi
+
+theorem image (cert : Certificate m d A b c offset) (q : R) :
+    (∃ x, feasible m d A b x ∧ dot d c x+offset=q) ↔
+      cert.available ∧ Interval (fun a b : R => a ≤ b) cert.lo cert.hi q := by
+  cases cert with
+  | empty dual nonnegative columns negative =>
+    constructor
+    · rintro ⟨x, hx, _⟩
+      exact False.elim ((farkas_exclusion m d A b dual nonnegative columns negative) ⟨x, hx⟩)
+    · rintro ⟨impossible, _⟩
+      exact False.elim impossible
+  | bounded data =>
+    have equal := certified_interval_image m d A b c data.lowPoint data.highPoint
+      data.lowDual data.highDual offset data.lo data.hi q
+      data.lowNonnegative data.highNonnegative data.lowColumns data.highColumns
+      data.lowFeasible data.highFeasible data.lowValue data.highValue
+      data.lowBound data.highBound
+    change (∃ x, feasible m d A b x ∧ dot d c x+offset=q) ↔
+      True ∧ (data.lo ≤ q ∧ q ≤ data.hi)
+    exact equal.trans (by simp)
+
+theorem ordered (cert : Certificate m d A b c offset) :
+    cert.available → cert.lo ≤ cert.hi := by
+  cases cert with
+  | empty dual nonnegative columns negative =>
+    intro impossible
+    exact False.elim impossible
+  | bounded data =>
+    intro _
+    have inside := (image (.bounded data) data.lo).mp
+      ⟨data.lowPoint, data.lowFeasible, data.lowValue⟩
+    exact inside.2.2
+
+end Certificate
+
+abbrev ReceiptCertificate (m d k : Nat) (A G : Nat → Nat → R)
+    (base offset lower upper : Nat → R) (mask : Nat → Bool)
+    (c : Nat → R) (futureOffset : R) :=
+  Certificate (m+2*k) d (rowA m k A G mask)
+    (rowB m k base offset lower upper mask) c futureOffset
+
+theorem receipt_certificate_image (m d k : Nat) (A G : Nat → Nat → R)
+    (base offset lower upper : Nat → R) (mask : Nat → Bool)
+    (c : Nat → R) (futureOffset : R)
+    (cert : ReceiptCertificate m d k A G base offset lower upper mask c futureOffset)
+    (q : R) :
+    (∃ x, affineCell m d k A G base offset lower upper mask x ∧
+      dot d c x+futureOffset=q) ↔
+      cert.available ∧ Interval (fun a b : R => a ≤ b) cert.lo cert.hi q := by
+  have equal := cert.image q
+  constructor
+  · rintro ⟨x, hx, value⟩
+    exact equal.mp ⟨x, (padded_rows_iff m d k A G base offset lower upper mask x).mpr hx, value⟩
+  · intro accepted
+    obtain ⟨x, hx, value⟩ := equal.mpr accepted
+    exact ⟨x, (padded_rows_iff m d k A G base offset lower upper mask x).mp hx, value⟩
+
+variable {I : Type v}
+
+theorem complete_certificate_source_image (i0 : I) (k : Nat)
+    (m d : I → Nat) (A G : I → Nat → Nat → R)
+    (base offset : I → Nat → R) (lower upper : Nat → R)
+    (c : I → Nat → R) (futureOffset : I → R)
+    (certs : ∀ i mask, ReceiptCertificate (m i) (d i) k (A i) (G i)
+      (base i) (offset i) lower upper mask (c i) (futureOffset i))
+    (q : R) :
+    sourceImage k (fun i x => feasible (m i) (d i) (A i) (base i) x)
+      (fun j i x => dot (d i) (G i j) x+offset i j) lower upper
+      (fun i x => dot (d i) (c i) x+futureOffset i) q ↔
+    AnchoredImage (fun a b : R => a ≤ b)
+      (fun assignment => ∀ i, (certs i (label assignment i)).available) label
+      (fun i mask => (certs i mask).lo) (fun i mask => (certs i mask).hi) q := by
+  apply source_image_iff_anchor i0 k
+    (fun i x => feasible (m i) (d i) (A i) (base i) x)
+    (fun j i x => dot (d i) (G i j) x+offset i j) lower upper
+    (fun i x => dot (d i) (c i) x+futureOffset i)
+    (fun i mask => (certs i mask).available)
+    (fun i mask => (certs i mask).lo) (fun i mask => (certs i mask).hi)
+    (fun i mask => (certs i mask).ordered)
+  intro i mask value
+  exact receipt_certificate_image (m i) (d i) k (A i) (G i)
+    (base i) (offset i) lower upper mask (c i) (futureOffset i) (certs i mask) value
+
+#print axioms Certificate.image
+#print axioms Certificate.ordered
+#print axioms receipt_certificate_image
+#print axioms complete_certificate_source_image
+
+end V19Certified

@@ -1,0 +1,62 @@
+namespace V19Mask
+
+variable {k : Nat}
+
+def Labels (available : Nat → Mask k → Prop) : Nat → List (Edge k) → Prop
+  | 0, [] => True
+  | 0, _ :: _ => False
+  | _+1, [] => False
+  | n+1, (j,t) :: rest => j=n ∧ available n t ∧ Labels available n rest
+
+theorem good_iff_labels_counts (available : Nat → Mask k → Prop) (n : Nat)
+    (state : Mask k) (path : List (Edge k)) :
+    Good available n state path ↔ Labels available n path ∧
+      ∀ j, hits j path=if state j then 1 else 0 := by
+  induction n generalizing state path with
+  | zero =>
+    cases path with
+    | nil =>
+      constructor
+      · intro good
+        exact ⟨True.intro,good_assigns_once available 0 state [] good⟩
+      · rintro ⟨_,counts⟩
+        intro j
+        have count := counts j
+        cases hs : state j <;> simp_all [hits]
+    | cons head rest => simp [Good,Labels]
+  | succ n ih =>
+    cases path with
+    | nil => simp [Good,Labels]
+    | cons edge rest =>
+      rcases edge with ⟨layer,t⟩
+      constructor
+      · intro good
+        have counts := good_assigns_once available (n+1) state ((layer,t)::rest) good
+        obtain ⟨same,_,allowed,tail⟩ := good
+        exact ⟨⟨same,allowed,((ih _ _).mp tail).1⟩,
+          counts⟩
+      · rintro ⟨labels,counts⟩
+        obtain ⟨same,allowed,tailLabels⟩ := labels
+        have nested : Subset t state := by
+          intro j selected
+          have count := counts j
+          cases hs : state j <;> simp_all [hits]
+        have tailCounts : ∀ j, hits j rest=if difference state t j then 1 else 0 := by
+          intro j
+          have count := counts j
+          have contained := nested j
+          cases ht : t j <;> cases hs : state j <;>
+            simp_all [hits,difference]
+        exact ⟨same,nested,allowed,(ih _ _).mpr ⟨tailLabels,tailCounts⟩⟩
+
+theorem paths_iff_exact_partition (available : Nat → Mask k → Prop) (n : Nat)
+    (state : Mask k) (path : List (Edge k)) :
+    path ∈ V19Layer.paths (choices available) next terminal n state ↔
+      Labels available n path ∧ ∀ j, hits j path=if state j then 1 else 0 := by
+  exact (paths_iff_good available n state path).trans
+    (good_iff_labels_counts available n state path)
+
+end V19Mask
+
+#print axioms V19Mask.good_iff_labels_counts
+#print axioms V19Mask.paths_iff_exact_partition
