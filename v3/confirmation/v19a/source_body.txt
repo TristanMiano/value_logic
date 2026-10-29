@@ -1,0 +1,179 @@
+
+namespace V19Source
+
+open Std Lean.Grind V19Dual V19Local V19
+
+universe u v
+variable {R : Type u} [Field R] [LE R] [LT R]
+  [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R]
+
+def rowA (m k : Nat) (A G : Nat → Nat → R) (mask : Nat → Bool)
+    (r : Nat) : Nat → R :=
+  if r < m then A r else if r < m+k then (fun h => -G (r-m) h)
+  else if mask (r-(m+k)) then G (r-(m+k)) else (fun _ => 0)
+
+def rowB (m k : Nat) (base offset lower upper : Nat → R)
+    (mask : Nat → Bool) (r : Nat) : R :=
+  if r < m then base r else if r < m+k then offset (r-m)-lower (r-m)
+  else if mask (r-(m+k)) then upper (r-(m+k))-offset (r-(m+k)) else 0
+
+def affineCell (m d k : Nat) (A G : Nat → Nat → R)
+    (base offset lower upper : Nat → R) (mask : Nat → Bool) (x : Nat → R) : Prop :=
+  feasible m d A base x ∧
+  (∀ j, j < k → lower j ≤ dot d (G j) x+offset j) ∧
+  (∀ j, j < k → mask j=true → dot d (G j) x+offset j ≤ upper j)
+
+theorem padded_rows_iff (m d k : Nat) (A G : Nat → Nat → R)
+    (base offset lower upper : Nat → R) (mask : Nat → Bool) (x : Nat → R) :
+    feasible (m+2*k) d (rowA m k A G mask)
+      (rowB m k base offset lower upper mask) x ↔
+    affineCell m d k A G base offset lower upper mask x := by
+  constructor
+  · intro h
+    refine ⟨?_, ?_, ?_⟩
+    · intro r hr
+      have bound := h r (by omega)
+      simpa [rowA, rowB, hr] using bound
+    · intro j hj
+      have bound := h (m+j) (by omega)
+      have notbase : ¬m+j < m := by omega
+      have islower : m+j < m+k := by omega
+      simp only [rowA, rowB, if_neg notbase, if_pos islower,
+        Nat.add_sub_cancel_left, dot_neg] at bound
+      grind
+    · intro j hj selected
+      have bound := h (m+k+j) (by omega)
+      have notbase : ¬m+k+j < m := by omega
+      have notlower : ¬m+k+j < m+k := by omega
+      simp [rowA, rowB, notbase, notlower, selected] at bound
+      grind
+  · intro h r hr
+    by_cases isbase : r < m
+    · simpa [rowA, rowB, isbase] using h.1 r isbase
+    · by_cases islower : r < m+k
+      · have bound := h.2.1 (r-m) (by omega)
+        simp only [rowA, rowB, if_neg isbase, if_pos islower, dot_neg]
+        grind
+      · have valid : r-(m+k) < k := by omega
+        by_cases selected : mask (r-(m+k))=true
+        · have bound := h.2.2 (r-(m+k)) valid selected
+          simp [rowA, rowB, isbase, islower, selected]
+          grind
+        · simp [rowA, rowB, isbase, islower, selected, dot_zero]
+
+variable {I : Type v} {X : I → Type u}
+
+def source (k : Nat) (base : (i : I) → X i → Prop)
+    (g : Nat → (i : I) → X i → R) (lower upper : Nat → R)
+    (x : (i : I) → X i) : Prop :=
+  (∀ i, base i (x i)) ∧
+  (∀ j, j < k → ∀ i, lower j ≤ g j i (x i)) ∧
+  (∀ j, j < k → ∃ i, g j i (x i) ≤ upper j)
+
+def cell (k : Nat) (base : (i : I) → X i → Prop)
+    (g : Nat → (i : I) → X i → R) (lower upper : Nat → R)
+    (i : I) (mask : Nat → Bool) (x : X i) : Prop :=
+  base i x ∧ (∀ j, j < k → lower j ≤ g j i x) ∧
+    (∀ j, j < k → mask j=true → g j i x ≤ upper j)
+
+noncomputable def label (assignment : Nat → I) (i : I) : Nat → Bool := by
+  classical
+  exact fun j => decide (assignment j=i)
+
+theorem source_iff_assignment (i0 : I) (k : Nat) (base : (i : I) → X i → Prop)
+    (g : Nat → (i : I) → X i → R) (lower upper : Nat → R)
+    (x : (i : I) → X i) :
+    source k base g lower upper x ↔
+      ∃ assignment : Nat → I,
+        ∀ i, cell k base g lower upper i (label assignment i) (x i) := by
+  classical
+  constructor
+  · intro h
+    let assignment : Nat → I := fun j =>
+      if hj : j < k then Classical.choose (h.2.2 j hj) else i0
+    refine ⟨assignment, fun i => ⟨h.1 i, ?_, ?_⟩⟩
+    · intro j hj
+      exact h.2.1 j hj i
+    · intro j hj selected
+      have equal : assignment j=i := by simpa [label] using selected
+      have chosenIndex : Classical.choose (h.2.2 j hj)=i := by
+        simpa [assignment, hj] using equal
+      have chosen := Classical.choose_spec (h.2.2 j hj)
+      rw [chosenIndex] at chosen
+      exact chosen
+  · rintro ⟨assignment, cells⟩
+    refine ⟨fun i => (cells i).1, ?_, ?_⟩
+    · intro j hj i
+      exact (cells i).2.1 j hj
+    · intro j hj
+      exact ⟨assignment j, (cells (assignment j)).2.2 j hj (by simp [label])⟩
+
+def sourceImage (k : Nat) (base : (i : I) → X i → Prop)
+    (g : Nat → (i : I) → X i → R) (lower upper : Nat → R)
+    (f : (i : I) → X i → R) (q : R) : Prop :=
+  ∃ x : (i : I) → X i, source k base g lower upper x ∧
+    AttainedMinimum (fun a b : R => a ≤ b) (fun i => f i (x i)) q
+
+theorem source_image_iff_union (i0 : I) (k : Nat)
+    (base : (i : I) → X i → Prop)
+    (g : Nat → (i : I) → X i → R) (lower upper : Nat → R)
+    (f : (i : I) → X i → R) (available : I → (Nat → Bool) → Prop)
+    (lo hi : I → (Nat → Bool) → R)
+    (local_image : ∀ i mask q,
+      (∃ x, cell k base g lower upper i mask x ∧ f i x=q) ↔
+        available i mask ∧ Interval (fun a b : R => a ≤ b) (lo i mask) (hi i mask) q)
+    (q : R) :
+    sourceImage k base g lower upper f q ↔
+      UnionImage (fun a b : R => a ≤ b)
+        (fun assignment => ∀ i, available i (label assignment i)) label lo hi q := by
+  classical
+  constructor
+  · rintro ⟨x, hx, minimum⟩
+    obtain ⟨assignment, cells⟩ :=
+      (source_iff_assignment i0 k base g lower upper x).mp hx
+    have localFacts : ∀ i, available i (label assignment i) ∧
+        Interval (fun a b : R => a ≤ b) (lo i (label assignment i))
+          (hi i (label assignment i)) (f i (x i)) := by
+      intro i
+      exact (local_image i (label assignment i) (f i (x i))).mp ⟨x i, cells i, rfl⟩
+    exact ⟨assignment, fun i => (localFacts i).1,
+      (fun i => f i (x i)), (fun i => (localFacts i).2), minimum⟩
+  · rintro ⟨assignment, good, values, intervals, minimum⟩
+    have witnesses : ∀ i, ∃ x, cell k base g lower upper i (label assignment i) x ∧
+        f i x=values i := by
+      intro i
+      exact (local_image i (label assignment i) (values i)).mpr ⟨good i, intervals i⟩
+    let x : (i : I) → X i := fun i => Classical.choose (witnesses i)
+    have facts : ∀ i, cell k base g lower upper i (label assignment i) (x i) ∧
+        f i (x i)=values i := fun i => Classical.choose_spec (witnesses i)
+    have equal : (fun i => f i (x i))=values := funext (fun i => (facts i).2)
+    refine ⟨x, (source_iff_assignment i0 k base g lower upper x).mpr
+      ⟨assignment, fun i => (facts i).1⟩, ?_⟩
+    rw [equal]
+    exact minimum
+
+theorem source_image_iff_anchor (i0 : I) (k : Nat)
+    (base : (i : I) → X i → Prop)
+    (g : Nat → (i : I) → X i → R) (lower upper : Nat → R)
+    (f : (i : I) → X i → R) (available : I → (Nat → Bool) → Prop)
+    (lo hi : I → (Nat → Bool) → R)
+    (nonempty : ∀ i mask, available i mask → lo i mask ≤ hi i mask)
+    (local_image : ∀ i mask q,
+      (∃ x, cell k base g lower upper i mask x ∧ f i x=q) ↔
+        available i mask ∧ Interval (fun a b : R => a ≤ b) (lo i mask) (hi i mask) q)
+    (q : R) :
+    sourceImage k base g lower upper f q ↔
+      AnchoredImage (fun a b : R => a ≤ b)
+        (fun assignment => ∀ i, available i (label assignment i)) label lo hi q := by
+  apply (source_image_iff_union i0 k base g lower upper f available lo hi local_image q).trans
+  exact anchor_rearrangement (fun a b : R => a ≤ b) (fun _ => Std.le_refl _)
+    (fun _ _ _ h1 h2 => Std.le_trans h1 h2)
+    (fun assignment => ∀ i, available i (label assignment i)) label lo hi
+    (fun assignment good i => nonempty i (label assignment i) (good i)) q
+
+#print axioms padded_rows_iff
+#print axioms source_iff_assignment
+#print axioms source_image_iff_union
+#print axioms source_image_iff_anchor
+
+end V19Source

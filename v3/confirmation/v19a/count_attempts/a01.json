@@ -1,0 +1,17 @@
+{
+  "attempt": 1,
+  "source": "v3/confirmation/v19a/count_attempts/a01.lean",
+  "sha256": "8b22f1a46de2c2b862b10299d31a239734dbee4dcc7ab08e3707d3a80da6bf20",
+  "runner_sha256": "555c7ae6f9982e8051fc49da0a57ab4445e59ea34d0d9ebc8996e8628e327c44",
+  "scope_sha256": "a3aadc0abb0ebbb81141a252ac1e837a763be97167f5c4033eb1678bd05cd281",
+  "created_utc": "2026-10-28T23:24:28.852127+00:00",
+  "command": [
+    "lean",
+    "v3/confirmation/v19a/count_attempts/a01.lean"
+  ],
+  "status": "COMPILER_FAILURE",
+  "exit_code": 1,
+  "stdout": "C:\\Users\\trist\\projects\\value_logic\\v3\\confirmation\\v19a\\count_attempts\\a01.lean:29:15: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  (List.flatMap (fun a => List.map (fun f => ?m.32) (words alphabet k)) alphabet).length\nin the target expression\n  (List.flatMap (fun a => List.map (fun f i => Fin.cases a f i) (words alphabet k)) alphabet).length =\n    alphabet.length ^ (k + 1)\n\ncase succ\nA : Type u\nalphabet : List A\nk : Nat\nih : (words alphabet k).length = alphabet.length ^ k\n\u22a2 (List.flatMap (fun a => List.map (fun f i => Fin.cases a f i) (words alphabet k)) alphabet).length =\n    alphabet.length ^ (k + 1)\nC:\\Users\\trist\\projects\\value_logic\\v3\\confirmation\\v19a\\count_attempts\\a01.lean:30:49: error: failed to elaborate eliminator, expected type is not available\n'V19Count.words_length' depends on axioms: [propext, sorryAx]\n'V19Count.words_complete' depends on axioms: [propext, Quot.sound]\n'V19Count.binaryMasks_length' depends on axioms: [propext, sorryAx]\n'V19Count.binaryMasks_complete' depends on axioms: [propext, Quot.sound]\n'V19Count.assignments_length' depends on axioms: [propext, sorryAx]\n'V19Count.assignments_complete' depends on axioms: [propext, Quot.sound]\n'V19Count.nestedPairs_length' depends on axioms: [propext, sorryAx]\n'V19Count.nestedPairs_sound' depends on axioms: [propext, Quot.sound]\n'V19Count.nestedPairs_complete' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "runtime_ns": 710778200
+}

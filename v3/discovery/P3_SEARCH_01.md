@@ -3,26 +3,24 @@
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
-Status: **in progress; C001 continuing beyond its satisfied floor; P3-POS01 OUTSTANDING**.
-**Current continuation — October26--27,2026 UTC, Codex (GPT-6):**
-[s19 checkpoint](s19/checkpoint.md), [findings](s19/findings.md),
-[actuals](s19/effective_actuals.json), [single recurrence table](recurrences.md).
-The broad four-hour recurrence is CLOSED:240.051583333333… research minutes.
-Program3019.783620685783… and phase4105.914988049933… minutes; no active clock.
-The36-family inventory is unchanged. C001 OPEN; P3-POS01 OUTSTANDING;
-P3-11 deferred; no promotion.
+Status: **C001 OPEN pending author disposition; positive objective evaluator-supported.**
+**Current checkpoint — October29,2026 UTC, Codex (GPT-6):**
+[s20](s20/checkpoint.md) is CLOSED at240.079755078333… engaged research minutes,
+including90.410959541666… P3-11-A1 confirmation minutes and149.668795536666…
+new discovery minutes. Program3169.45241622245 minutes (52.82h); phase4345.994743128266…
+minutes. No active clock or unfinished minimum. PR21 verified merged before entry.
 
-**V19-R/v1:50--80%, central65%; O18-M/v1:35--70%, central50%; N16-C/v1
-carried55--80%, central65%.** [Assessment](s19/scientific_assessment.md) and
-[targets](s19/verification_targets.md) keep these events distinct. Exact scalar
-ranges and rational certificates are promising; novelty and a justified duty
-remain open. Ordinary equivalent methods tie. Actual shared-proof costs exceed
-fallback overall; no new audit or complete-cost saving is claimed.
+**V19-R/v1: P3-11-A1 PASS; P3-POS01 evaluator-supported; P3-C author decision
+PENDING.** Confidence80--90%, central85%, for the bounded useful-moderate-synthesis
+judgment; ordinary equivalent ties. See[review](../contribution_review.md),
+[recommendation](../checkpoints/C_1.md),[assessment](s20/scientific_assessment.md)
+and[metrics](s20/progress_metrics.json). C001 remains open pending disposition.
+N16 carries55--80%, central65%; O18 carries35--70%, central50%; neither reassessed.
+No fresh audit-fee or complete-cost saving. The36-family inventory is unchanged.
 
-Program50.33h; the[40-hour review](s17/portfolio40.md) is complete, next deeper
-review100h. Continue broad discovery only when authorized, with a short V19
-comparison before further deepening. Default one hour unless freshly overridden.
-O18's capped screen is finished. [Next prompt](CONTINUE.md).
+Recommend author acceptance and report assembly, rather than automatic further
+recurrence. P3-12 and P3-D have not begun. The40-hour review is complete; next100h.
+[Continuation](CONTINUE.md) preserves alternatives and the author gate.
 
 ## 1. Objective and scope
 

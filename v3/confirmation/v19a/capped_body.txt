@@ -1,0 +1,153 @@
+
+namespace V19Capped
+
+open Std Lean.Grind V19 V19DP
+
+universe u v w z
+variable {R : Type u} [Field R] [LE R] [LT R]
+  [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R]
+variable {I : Type v} {J : Type w} {B : Type z}
+
+noncomputable def meet (a b : R) : R := by
+  classical
+  exact if a ≤ b then a else b
+
+theorem le_meet_iff (q a b : R) : q ≤ meet a b ↔ q ≤ a ∧ q ≤ b := by
+  classical
+  unfold meet
+  split <;> grind
+
+noncomputable def foldMeet (ceiling : R) : List R → R
+  | [] => ceiling
+  | a :: rest => meet a (foldMeet ceiling rest)
+
+theorem le_foldMeet_iff (q ceiling : R) (values : List R) :
+    q ≤ foldMeet ceiling values ↔ q ≤ ceiling ∧ ∀ a, a ∈ values → q ≤ a := by
+  induction values with
+  | nil => simp [foldMeet]
+  | cons a rest ih =>
+    rw [foldMeet, le_meet_iff, ih]
+    constructor
+    · rintro ⟨ha, hceiling, hrest⟩
+      refine ⟨hceiling, ?_⟩
+      intro x hx
+      rcases List.mem_cons.mp hx with same | member
+      · simpa [same] using ha
+      · exact hrest x member
+    · rintro ⟨hceiling, hvalues⟩
+      exact ⟨hvalues a (by simp), hceiling,
+        fun x hx => hvalues x (List.mem_cons_of_mem a hx)⟩
+
+noncomputable def outsideScore (blocks : List I) (label : B → I → J)
+    (hi : I → J → R) (ceiling : R) (b : B) (i : I) : R := by
+  classical
+  exact foldMeet ceiling (blocks.map (fun j => if j=i then ceiling else hi j (label b j)))
+
+theorem le_outsideScore_iff (blocks : List I) (complete : ∀ i, i ∈ blocks)
+    (label : B → I → J) (hi : I → J → R) (ceiling q : R) (b : B) (i : I) :
+    q ≤ outsideScore blocks label hi ceiling b i ↔
+      q ≤ ceiling ∧ ∀ j, j ≠ i → q ≤ hi j (label b j) := by
+  classical
+  unfold outsideScore
+  rw [le_foldMeet_iff]
+  constructor
+  · rintro ⟨hceiling, hvalues⟩
+    refine ⟨hceiling, ?_⟩
+    intro j different
+    have bound := hvalues (if j=i then ceiling else hi j (label b j))
+      (List.mem_map.mpr ⟨j, complete j, rfl⟩)
+    simpa [different] using bound
+  · rintro ⟨hceiling, houtside⟩
+    refine ⟨hceiling, ?_⟩
+    intro value member
+    obtain ⟨j, _, rfl⟩ := List.mem_map.mp member
+    by_cases same : j=i
+    · simpa [same] using hceiling
+    · simpa [same] using houtside j same
+
+noncomputable def eligible (assignments : List B) (good : B → Prop)
+    (label : B → I → J) (i : I) (t : J) : List B := by
+  classical
+  exact assignments.filter (fun b => decide (good b ∧ label b i=t))
+
+theorem mem_eligible_iff (assignments : List B) (complete : ∀ b, b ∈ assignments)
+    (good : B → Prop) (label : B → I → J) (i : I) (t : J) (b : B) :
+    b ∈ eligible assignments good label i t ↔ good b ∧ label b i=t := by
+  classical
+  simp [eligible, complete b]
+
+noncomputable def selected (blocks : List I) (assignments : List B)
+    (good : B → Prop) (label : B → I → J) (hi : I → J → R)
+    (ceiling : R) (i : I) (t : J) : Option B := by
+  classical
+  exact best (fun a b : R => a ≤ b) (fun b => outsideScore blocks label hi ceiling b i)
+    (eligible assignments good label i t)
+
+theorem outside_threshold_iff (blocks : List I) (completeBlocks : ∀ i, i ∈ blocks)
+    (assignments : List B) (completeAssignments : ∀ b, b ∈ assignments)
+    (good : B → Prop) (label : B → I → J) (hi : I → J → R)
+    (ceiling q : R) (bounded : q ≤ ceiling) (i : I) (t : J) :
+    (∃ b, good b ∧ label b i=t ∧ ∀ j, j ≠ i → q ≤ hi j (label b j)) ↔
+      ∃ winner, selected blocks assignments good label hi ceiling i t=some winner ∧
+        q ≤ outsideScore blocks label hi ceiling winner i := by
+  classical
+  let score : B → R := fun b => outsideScore blocks label hi ceiling b i
+  let candidates := eligible assignments good label i t
+  have specification : ∀ winner,
+      selected blocks assignments good label hi ceiling i t=some winner →
+      winner ∈ candidates ∧ ∀ b, b ∈ candidates → score b ≤ score winner := by
+    intro winner answer
+    exact best_spec (fun a b : R => a ≤ b) (fun _ => Std.le_refl _)
+      (fun _ _ _ h1 h2 => Std.le_trans h1 h2) (by intro a b; grind)
+      score candidates winner answer
+  constructor
+  · rintro ⟨b, goodB, labelB, outsideB⟩
+    have member : b ∈ candidates :=
+      (mem_eligible_iff assignments completeAssignments good label i t b).mpr ⟨goodB, labelB⟩
+    have value : q ≤ score b :=
+      (le_outsideScore_iff blocks completeBlocks label hi ceiling q b i).mpr ⟨bounded, outsideB⟩
+    cases answer : selected blocks assignments good label hi ceiling i t with
+    | none =>
+      have empty : candidates=[] :=
+        (best_none_iff (fun a b : R => a ≤ b) score candidates).mp answer
+      simp [empty] at member
+    | some winner =>
+      exact ⟨winner, rfl, Std.le_trans value ((specification winner answer).2 b member)⟩
+  · rintro ⟨winner, answer, value⟩
+    have allowed := (mem_eligible_iff assignments completeAssignments good label i t winner).mp
+      (specification winner answer).1
+    exact ⟨winner, allowed.1, allowed.2,
+      ((le_outsideScore_iff blocks completeBlocks label hi ceiling q winner i).mp value).2⟩
+
+theorem anchored_capped_iff (blocks : List I) (completeBlocks : ∀ i, i ∈ blocks)
+    (assignments : List B) (completeAssignments : ∀ b, b ∈ assignments)
+    (good : B → Prop) (label : B → I → J) (lo hi : I → J → R)
+    (ceiling : R) (upper : ∀ i t, hi i t ≤ ceiling) (q : R) :
+    AnchoredImage (fun a b : R => a ≤ b) good label lo hi q ↔
+      ∃ i t winner, selected blocks assignments good label hi ceiling i t=some winner ∧
+        Interval (fun a b : R => a ≤ b) (lo i t)
+          (meet (hi i t) (outsideScore blocks label hi ceiling winner i)) q := by
+  constructor
+  · rintro ⟨i, t, localInterval, outside⟩
+    have bounded := Std.le_trans localInterval.2 (upper i t)
+    obtain ⟨winner, answer, value⟩ :=
+      (outside_threshold_iff blocks completeBlocks assignments completeAssignments
+        good label hi ceiling q bounded i t).mp outside
+    exact ⟨i, t, winner, answer, localInterval.1,
+      (le_meet_iff q (hi i t) (outsideScore blocks label hi ceiling winner i)).mpr
+        ⟨localInterval.2, value⟩⟩
+  · rintro ⟨i, t, winner, answer, localInterval⟩
+    have bounds := (le_meet_iff q (hi i t)
+      (outsideScore blocks label hi ceiling winner i)).mp localInterval.2
+    have bounded := Std.le_trans bounds.1 (upper i t)
+    exact ⟨i, t, ⟨localInterval.1, bounds.1⟩,
+      (outside_threshold_iff blocks completeBlocks assignments completeAssignments
+        good label hi ceiling q bounded i t).mpr ⟨winner, answer, bounds.2⟩⟩
+
+#print axioms le_meet_iff
+#print axioms le_foldMeet_iff
+#print axioms le_outsideScore_iff
+#print axioms outside_threshold_iff
+#print axioms anchored_capped_iff
+
+end V19Capped

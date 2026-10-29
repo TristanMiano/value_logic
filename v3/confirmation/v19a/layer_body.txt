@@ -1,0 +1,123 @@
+
+namespace V19Layer
+
+universe u v w
+variable {S : Type u} {G : Type v} {Q : Type w}
+
+def Correct (le : S → S → Prop) (cost : G → S)
+    (answer : Option G) (all : List G) : Prop :=
+  (answer=none ↔ all=[]) ∧
+    ∀ winner, answer=some winner →
+      winner ∈ all ∧ ∀ candidate, candidate ∈ all → le (cost candidate) (cost winner)
+
+theorem best_of_cover (le : S → S → Prop) [DecidableRel le]
+    (refl : ∀ a, le a a)
+    (trans : ∀ a b c, le a b → le b c → le a c)
+    (total : ∀ a b, le a b ∨ le b a)
+    (cost : G → S) (thin wide : List G)
+    (sound : ∀ p, p ∈ thin → p ∈ wide)
+    (cover : ∀ p, p ∈ wide → ∃ q, q ∈ thin ∧ le (cost p) (cost q)) :
+    Correct le cost (V19DP.best le cost thin) wide := by
+  constructor
+  · rw [V19DP.best_none_iff]
+    constructor
+    · intro empty
+      apply List.eq_nil_iff_forall_not_mem.mpr
+      intro p hp
+      obtain ⟨q,hq,_⟩ := cover p hp
+      simp [empty] at hq
+    · intro empty
+      apply List.eq_nil_iff_forall_not_mem.mpr
+      intro p hp
+      have hw := sound p hp
+      simp [empty] at hw
+  · intro winner answer
+    have hw := V19DP.best_spec le refl trans total cost thin winner answer
+    constructor
+    · exact sound winner hw.1
+    · intro p hp
+      obtain ⟨q,hq,hpq⟩ := cover p hp
+      exact trans (cost p) (cost q) (cost winner) hpq (hw.2 q hq)
+
+def pathCost (meet : S → S → S) (weight : G → S) (top : S) : List G → S
+  | [] => top
+  | g :: rest => meet (weight g) (pathCost meet weight top rest)
+
+def paths (choices : Nat → Q → List G) (next : Nat → Q → G → Q)
+    (terminal : Q → Bool) : Nat → Q → List (List G)
+  | 0, state => if terminal state then [[]] else []
+  | n+1, state => (choices n state).flatMap
+      (fun g => (paths choices next terminal n (next n state g)).map (g :: ·))
+
+def solve (le : S → S → Prop) [DecidableRel le]
+    (meet : S → S → S) (weight : G → S) (top : S)
+    (choices : Nat → Q → List G) (next : Nat → Q → G → Q)
+    (terminal : Q → Bool) : Nat → Q → Option (List G)
+  | 0, state => if terminal state then some [] else none
+  | n+1, state => V19DP.best le (pathCost meet weight top)
+      ((choices n state).flatMap (fun g =>
+        (solve le meet weight top choices next terminal n (next n state g)).toList.map (g :: ·)))
+
+theorem solve_correct (le : S → S → Prop) [DecidableRel le]
+    (refl : ∀ a, le a a)
+    (trans : ∀ a b c, le a b → le b c → le a c)
+    (total : ∀ a b, le a b ∨ le b a)
+    (meet : S → S → S) (weight : G → S) (top : S)
+    (monotone : ∀ a b c, le b c → le (meet a b) (meet a c))
+    (choices : Nat → Q → List G) (next : Nat → Q → G → Q)
+    (terminal : Q → Bool) (n : Nat) (state : Q) :
+    Correct le (pathCost meet weight top)
+      (solve le meet weight top choices next terminal n state)
+      (paths choices next terminal n state) := by
+  induction n generalizing state with
+  | zero =>
+    cases h : terminal state
+    · simp [solve, paths, h, Correct]
+    · simp [solve, paths, h, Correct, refl]
+  | succ n ih =>
+    apply best_of_cover le refl trans total
+    · intro path member
+      obtain ⟨g,hg,hpath⟩ := List.mem_flatMap.mp member
+      obtain ⟨tail,htail,equal⟩ := List.mem_map.mp hpath
+      have selected : solve le meet weight top choices next terminal n (next n state g)=some tail :=
+        by simpa using htail
+      have legal := (ih (next n state g)).2 tail selected
+      apply List.mem_flatMap.mpr
+      refine ⟨g,hg,?_⟩
+      exact List.mem_map.mpr ⟨tail,legal.1,equal⟩
+    · intro path member
+      obtain ⟨g,hg,hpath⟩ := List.mem_flatMap.mp member
+      obtain ⟨tail,htail,equal⟩ := List.mem_map.mp hpath
+      cases answer : solve le meet weight top choices next terminal n (next n state g) with
+      | none =>
+        have empty := (ih (next n state g)).1.mp answer
+        simp [empty] at htail
+      | some chosen =>
+        have optimal := (ih (next n state g)).2 chosen answer
+        refine ⟨g :: chosen, ?_, ?_⟩
+        · apply List.mem_flatMap.mpr
+          refine ⟨g,hg,?_⟩
+          apply List.mem_map.mpr
+          exact ⟨chosen,by simp [answer],rfl⟩
+        · rw [← equal]
+          exact monotone (weight g) (pathCost meet weight top tail)
+            (pathCost meet weight top chosen) (optimal.2 tail htail)
+
+theorem paths_length (choices : Nat → Q → List G) (next : Nat → Q → G → Q)
+    (terminal : Q → Bool) (n : Nat) (state : Q) (path : List G)
+    (legal : path ∈ paths choices next terminal n state) : path.length=n := by
+  induction n generalizing state path with
+  | zero =>
+    cases h : terminal state <;> simp [paths,h] at legal
+    subst path
+    rfl
+  | succ n ih =>
+    obtain ⟨g,_,hpath⟩ := List.mem_flatMap.mp legal
+    obtain ⟨tail,htail,rfl⟩ := List.mem_map.mp hpath
+    simpa using congrArg Nat.succ (ih (next n state g) tail htail)
+
+end V19Layer
+
+#print axioms V19Layer.best_of_cover
+#print axioms V19Layer.solve_correct
+#print axioms V19Layer.paths_length
