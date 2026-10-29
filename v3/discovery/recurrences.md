@@ -1,5 +1,8 @@
 # C001 recurrence progress
 
+**Author decision, October 29, 2026:** [P3-C accepted at its bounded scope](../checkpoints/C_1_acceptance.md); P3-SEARCH-01/C001 CLOSED. P3-12 report assembly is complete; synchronized Markdown/PDF and supporting sources are available in `paper_v3.md`, `paper_v3.pdf`, and `v3/report/`. Recommendation: ready for P3-D final audit and author decision. The portfolio and open research directions remain available. Final phase-three completion and P3-D remain pending. Dated status records below preserve their historical meaning.
+
+
 Requested by **Tristan Miano**. Current maintenance: **Codex (GPT-6)**; earlier attributions preserved.
 This is the single chronological recurrence table: **30 recorded rows, ending
 with s20**. Append future recurrences to this same table.

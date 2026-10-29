@@ -1,0 +1,114 @@
+{
+  "schema": "p3_report_tables_v1",
+  "contributor": "Codex (GPT-6)",
+  "source_sha256": {
+    "v3/discovery/s20/audit_results.json": "279b10e4559505894276bdabc95463a716380a2cd8fe343ab0bf0efe4036cb39",
+    "v3/discovery/s20/partial_runs/a01/result.json": "8427e0beb6215f8c0b6ad230dd00615302badcaf7d15b744a0349822fedc4668",
+    "v3/discovery/s20/refine_runs/a01/result.json": "cdc2820fe9dbae745b6e53dcbff32ec76a4750e9f364de1ddb788ef54e61e31b",
+    "v3/discovery/s20/incumbent_runs/a01/result.json": "01581393c038abf64c26f933624cdf5fb97aeb74874a845397da517bfff29127",
+    "v3/discovery/s15/feature_probe.json": "10729f4d2c189dc30af4c46c1e45287f691adb6bd4d16a0de65676ba160b1dd8",
+    "v3/discovery/s20/greatest_runs/a01/result.json": "97d5ba362d90da14465aca4b600113b89a1fc08147c3a3521f849739f1c5c83a",
+    "v3/discovery/s20/integration_runs/a01/result.json": "1ff2f1fdd895beb40700288933ad06c4cc1d8431ef9da1fcfdc650732b422bc4",
+    "v3/discovery/s08/progress_results.json": "8f9a7a095d22c384e47e588831f81de67fb3f0dc1f69d6cd586ffd5d3f142135",
+    "v3/discovery/s08/bc02/c0_budget/result.json": "015329b13e3e5ac773c70c848144cfa0b4dc17c48086524e1c8e35f2e2a55937",
+    "v3/discovery/s08/bc02/c1_budget/result.json": "7f353e689d01cb72ae26627a437f9519946ac048fe67aa4205cbb6dde1a533bc",
+    "v3/discovery/s08/bc02/c2_budget/result.json": "a0f687097ee2422ebf1f9f98e1d75b4012b22a3f205925c3b6bf3bfba0d8d8c4",
+    "v3/discovery/s08/bc02/c3_budget/result.json": "ec741518a6ff8e62a04bb4521e082ae2835ad897d27adc46e4b77599410cee8f",
+    "v3/discovery/s08/bc02/c0_ordinary_budget/result.json": "689f52367077d89782a2be63a6d724139300cae7cb9e0bbd7fc934e9cd55df7c",
+    "v3/discovery/s08/bc02/c1_ordinary_budget/result.json": "e411751d0f0b4f0d70a89555094648850fbea1245281ed1572bb183060bf391c",
+    "v3/discovery/s08/bc02/c2_ordinary_budget/result.json": "3867a14d27f614b64617e01eb723ec5f96beb97a72b8490ecce93f23c71c1cb7",
+    "v3/discovery/s08/bc02/c3_ordinary_budget/result.json": "d2c34b9438917e6e21578bab2a054a136a97599fe264a294cad736eaef399ffb",
+    "v3/discovery/s08/bc02/c0_cover/result.json": "58e925ab96b1de4c6a16a45db2bd2112d9fddbb98bdcca274a2e3e2b6d12925c",
+    "v3/discovery/s08/bc02/c1_cover/result.json": "ac9d5bd16f3126831ebb17fa87537b514f8a43bfdaaa4893cf5315b17e5d95d5",
+    "v3/discovery/s08/bc02/c2_cover/result.json": "42cb7ba2afe791d4aa9bf2eac1cb25707313a3983bd223401b5cc3d2963d4f72",
+    "v3/discovery/s08/bc02/c3_cover/result.json": "6fc242e45d76df293fe7d2525bb6df794b939dbd214f3a87945ac14da1b4bc1f",
+    "v3/discovery/s08/bc02/c0_anchor/result.json": "74d43c5cff8117782cdba3290b9ea781241538eece151dc81b94fd87f1b4fa71",
+    "v3/discovery/s08/bc02/c1_anchor/result.json": "03955abe012038b38c18af27ce9651bfca618e0991a86a1e6a39c598e9f066da",
+    "v3/discovery/s08/bc02/c2_anchor/result.json": "8e07e04c49260d1718f59790bd0e5cd50ba9e55ec3cc453158e46654e5678c41",
+    "v3/discovery/s08/bc02/c3_anchor/result.json": "15a04165b11277dfcc8052472f4650babb82b82ed4879f8907c4aa0ec5a35082"
+  },
+  "results": [
+    [
+      "Range certificate audit",
+      "13 problems; 143 bounded and 24 empty slices",
+      "37 source witnesses; 114 rejected mutations",
+      "Development; local checker, not end-to-end proof"
+    ],
+    [
+      "Partial range service",
+      "6 problems; 538 answers",
+      "86 checked attainable answers",
+      "Development; exposed examples"
+    ],
+    [
+      "Sharp stopping gap",
+      "2,904 brackets; 11,904 support uses",
+      "728 tighter bounds; 118 new optimality certificates",
+      "Development; exhaustive finite controls"
+    ],
+    [
+      "Incumbent observation bound",
+      "7,260 brackets; 930 distinct support controls",
+      "2,435 tighter bounds than sum of separate maxima",
+      "Development; finite controls"
+    ],
+    [
+      "Structured model correction",
+      "729 maps over the three-element field",
+      "19,683 repaired vectors",
+      "Development; exact finite-field scope"
+    ],
+    [
+      "Greatest-point shortcut",
+      "9 restricted cases",
+      "34 versus 266 LP calls",
+      "Structural shortcut; not general speedup"
+    ],
+    [
+      "Bound source-to-action service",
+      "3 source checks; 2 invalid inputs rejected",
+      "0 optimizer calls",
+      "Implemented composition on exposed example"
+    ]
+  ],
+  "cost": [
+    [
+      "Selective controller",
+      512,
+      "2,886",
+      "137,310"
+    ],
+    [
+      "Same controller, ordinary label",
+      512,
+      "2,886",
+      "137,310"
+    ],
+    [
+      "Distinct greedy-cover control",
+      512,
+      "2,937",
+      "157,452"
+    ],
+    [
+      "Always-fallback control",
+      512,
+      "4,608",
+      "152,022"
+    ]
+  ],
+  "saving_vs_fallback": {
+    "audit_fraction": "287/768",
+    "counted_work_fraction": "2452/25337"
+  },
+  "analytic_coordinate_example": {
+    "n": 128,
+    "M": 35,
+    "d": 4,
+    "initial_feature_rank": 7,
+    "repaired": 1008,
+    "full": 4480,
+    "saving_fraction": "31/40"
+  },
+  "no_reacquisition": true
+}

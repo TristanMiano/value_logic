@@ -1,0 +1,71 @@
+test_bound_view_preserves_source_and_rebases_actual_links (verification.test_math_views.PortableMathViewIntegrityTests.test_bound_view_preserves_source_and_rebases_actual_links) ... ERROR
+test_generation_keeps_registered_sources_and_ignores_unregistered_files (verification.test_math_views.PortableMathViewIntegrityTests.test_generation_keeps_registered_sources_and_ignores_unregistered_files) ... ERROR
+test_generation_reconstructs_only_the_missing_registered_view (verification.test_math_views.PortableMathViewIntegrityTests.test_generation_reconstructs_only_the_missing_registered_view) ... ERROR
+test_verified_archive_does_not_hide_an_unbound_active_violation (verification.test_math_views.PortableMathViewIntegrityTests.test_verified_archive_does_not_hide_an_unbound_active_violation) ... ERROR
+test_v2_f14_protocol (unittest.loader._FailedTest.test_v2_f14_protocol) ... ERROR
+
+======================================================================
+ERROR: test_bound_view_preserves_source_and_rebases_actual_links (verification.test_math_views.PortableMathViewIntegrityTests.test_bound_view_preserves_source_and_rebases_actual_links)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\verification\test_math_views.py", line 80, in test_bound_view_preserves_source_and_rebases_actual_links
+    self.assertEqual(verify_views(root, {}), {SOURCE: document["entries"][0]})
+                     ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\verification\math_views.py", line 261, in verify_views
+    raise ValueError(f"Portable view differs from its source transformation: {view}")
+ValueError: Portable view differs from its source transformation: docs/math/fixture.md
+
+======================================================================
+ERROR: test_generation_keeps_registered_sources_and_ignores_unregistered_files (verification.test_math_views.PortableMathViewIntegrityTests.test_generation_keeps_registered_sources_and_ignores_unregistered_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\verification\test_math_views.py", line 210, in test_generation_keeps_registered_sources_and_ignores_unregistered_files
+    generate(root)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\verification\math_views.py", line 283, in generate
+    raise ValueError(f"Registered view identity differs from source transformation: {view_path}")
+ValueError: Registered view identity differs from source transformation: docs/math/fixture.md
+
+======================================================================
+ERROR: test_generation_reconstructs_only_the_missing_registered_view (verification.test_math_views.PortableMathViewIntegrityTests.test_generation_reconstructs_only_the_missing_registered_view)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\verification\test_math_views.py", line 221, in test_generation_reconstructs_only_the_missing_registered_view
+    generate(root)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\verification\math_views.py", line 283, in generate
+    raise ValueError(f"Registered view identity differs from source transformation: {view_path}")
+ValueError: Registered view identity differs from source transformation: docs/math/fixture.md
+
+======================================================================
+ERROR: test_verified_archive_does_not_hide_an_unbound_active_violation (verification.test_math_views.PortableMathViewIntegrityTests.test_verified_archive_does_not_hide_an_unbound_active_violation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\verification\test_math_views.py", line 193, in test_verified_archive_does_not_hide_an_unbound_active_violation
+    result = analyze_documents(root, [Path(SOURCE), Path(VIEW), Path("v3/live.md")])
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\v3\checks\math_markdown.py", line 288, in analyze_documents
+    views = verify_views(root)
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\verification\math_views.py", line 261, in verify_views
+    raise ValueError(f"Portable view differs from its source transformation: {view}")
+ValueError: Portable view differs from its source transformation: docs/math/fixture.md
+
+======================================================================
+ERROR: test_v2_f14_protocol (unittest.loader._FailedTest.test_v2_f14_protocol)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v2_f14_protocol
+Traceback (most recent call last):
+  File "C:\Python313\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\verification\test_v2_f14_protocol.py", line 16, in <module>
+    from v2.experiments import runner as R
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\v2\experiments\runner.py", line 23, in <module>
+    from . import retention as R
+  File "C:\Users\trist\AppData\Local\Temp\vl-p3-base-z_ictdjg\v2\experiments\retention.py", line 19, in <module>
+    from v2.checks import f06_inference_rules as K
+ModuleNotFoundError: No module named 'v2.checks'
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.052s
+
+FAILED (errors=5)
