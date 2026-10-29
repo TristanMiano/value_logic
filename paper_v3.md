@@ -275,7 +275,7 @@ Sharpness needs more. At an interior optimum, choose the canonical source $`M=(C
 
 ```math
 S_\tau=\begin{pmatrix}C&\sqrt{\tau CH}\\\sqrt{\tau CH}&H\end{pmatrix},
- \quad 0\leq\tau<1,
+ \quad 0\leq\tau\lt 1,
  \quad c^TW^TS_\tau^2Wc=m_0+\tau(s-m_0)
  \tag{11}
 ```
@@ -350,17 +350,13 @@ For a versioned binary answer $`y_t`$, a known affine loss $`b_t(a)+d_t(a)y_t`$ 
 <a id="eq-forecast"></a>
 
 ```math
-R_{t-1}=\sum_{s<t}(y_s-p_s)\Phi_s(p_s),
-```
-
-```math
-S_t(p)=\langle R_{t-1},\Phi_t(p)\rangle
-             +\tfrac{1-2p}{2}\|\Phi_t(p)\|^2,
-```
-
-```math
-A_t=2\max\{0,(1-p_t)S_t(p_t),-p_tS_t(p_t)\}.
-\tag{13}
+\begin{aligned}
+ R_{t-1}&=\sum_{s\lt t}(y_s-p_s)\Phi_s(p_s),\\[0pt]
+ S_t(p)&=\langle R_{t-1},\Phi_t(p)\rangle
+             +\tfrac{1-2p}{2}\|\Phi_t(p)\|^2,\\[0pt]
+ A_t&=2\max\{0,(1-p_t)S_t(p_t),-p_tS_t(p_t)\}.
+ \end{aligned}
+ \tag{13}
 ```
 
 Choose a favorable endpoint or search for a root; an interrupted root search retains the actual allowance $`A_t`$. For binary $`y`$, the identity $`(y-p)^2=p(1-p)+(1-2p)(y-p)`$ proves

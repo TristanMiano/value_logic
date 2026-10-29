@@ -54,15 +54,11 @@ def main():
             if tex: return '\n```{=latex}\n\\begin{equation}\n'+body.strip()+'\n\\end{equation}\n```\n'
             # Protect TeX backslashes from GitHub's Markdown escape processing.
             body=body.replace(lab[0],r'\tag{'+str(labels[key][1])+r'}').strip()
-            # GitHub's live renderer rejected the aligned environment even
-            # after escapes were preserved. Stack its unchanged rows as separate
-            # displays, with the shared number on the final row.
-            aligned=re.fullmatch(r'\\begin\{aligned\}(.*?)\\end\{aligned\}\s*(\\tag\{\d+\})',body,re.S)
-            if aligned:
-                rows=[s.replace('&','').strip() for s in re.split(r'\\\\',aligned[1])]
-                rows[-1]+='\n'+aligned[2]
-            else: rows=[body]
-            return f'\n<a id="{key}"></a>\n\n'+'\n\n'.join('```math\n'+s+'\n```' for s in rows)+'\n'
+            # Avoid GitHub's HTML-like interpretation of literal inequalities
+            # and its extra backslash on bare aligned-row endings.
+            body=body.replace('<',r'\lt ').replace('>',r'\gt ')
+            body=re.sub(r'\\\\[ \t]*\n',lambda _:r'\\[0pt]'+'\n',body)
+            return f'\n<a id="{key}"></a>\n\n```math\n'+body+'\n```\n'
         s=re.sub(r'\$\$\n(.*?)\n\$\$',eq,s,flags=re.S)
         s=re.sub(r'\{\{([\w-]+)\}\}',lambda m:xref(m,tex),s)
         s=re.sub(r'\[@([\w-]+)\]',lambda m:('\\citep{'+m[1]+'}') if tex else f'[{order.index(m[1])+1}](#ref-{m[1]})',s)

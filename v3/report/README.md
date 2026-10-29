@@ -30,10 +30,10 @@ and compiles/copies the PDF to the repository root. It checks every result and
 equation label and citation key. GitHub's Markdown escape processing can consume
 TeX backslashes in ordinary dollar-delimited displays; keep the generated math
 fences, including for aligned equations, escaped braces and norm symbols.
-The Markdown conversion stacks the three definitions in equation 13 as separate
-displays with the shared number on the final row. GitHub's live renderer rejected
-the aligned environment even after protecting its escapes. The TeX edition keeps
-the aligned layout; all mathematical terms and equation numbers are identical.
+The Markdown conversion also uses explicit zero-space row breaks (`\\[0pt]`)
+and `\lt` / `\gt` for literal inequalities. Live GitHub testing isolated a
+failure even in the standalone sum with subscript `s<t`; the macro spelling
+avoids HTML-like parsing. All mathematical terms and numbers are unchanged.
 [GitHub documents this display syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
 [consistency.json](consistency.json) records
 the common source hashes, citation order, and delivered artifact hashes.
@@ -66,7 +66,8 @@ threshold, writing [episode_result.json](episode_result.json); it is not another
 confirmation attempt. `verify.py` checks local links, shared-source labels,
 artifact/source hashes, preserved V19 seals, upstream copied bytes, and table
 claims. It also compares all display payloads with the canonical source, allowing
-only equation-label conversion and display layout changes. This protects TeX escapes; it is not itself a
+only equation-label conversion, inequality spelling and zero-space row breaks.
+This protects TeX escapes; it is not itself a
 live GitHub rendering test. These checks do not prove the truth of external
 mathematical premises.
 

@@ -44,8 +44,8 @@ def main():
     expected=[re.sub(r'\\label\{([\w-]+)\}',lambda m:r'\tag{'+str(manifest['labels'][m[1]][1])+'}',s).strip() for s in expected]
     def math_tokens(parts):
         s='\n'.join(parts)
-        s=re.sub(r'\\(?:begin|end)\{aligned\}|\\\\|&|\s+','',s)
-        return s
+        s=s.replace(r'\lt ', '<').replace(r'\gt ', '>').replace(r'\\[0pt]',r'\\')
+        return re.sub(r'\s+','',s)
     assert math_tokens(displays)==math_tokens(expected), 'GitHub mathematical payload differs from canonical TeX'
     assert re.findall(r'\\tag\{\d+\}', '\n'.join(displays))==re.findall(r'\\tag\{\d+\}', '\n'.join(expected))
     assert not re.search(r'^:::|\{\{[\w:-]+\}\}',md,re.M)
