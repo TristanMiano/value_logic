@@ -49,6 +49,10 @@ def main():
         s=re.sub(r'^::: proof\n(.*?)^:::\s*$',proof,s,flags=re.M|re.S)
         def eq(m):
             body=m[1];lab=re.search(r'\\label\{([\w-]+)\}',body)
+            if not tex:
+                # GitHub adds a slash to a bare row-ending \\ even in a math
+                # fence. An explicit zero-space row break survives that pass.
+                body=re.sub(r'\\\\[ \t]*\n',lambda _:r'\\[0pt]'+'\n',body)
             if not lab: return m[0] if tex else '```math\n'+body+'\n```'
             key=lab[1]
             if tex: return '\n```{=latex}\n\\begin{equation}\n'+body.strip()+'\n\\end{equation}\n```\n'

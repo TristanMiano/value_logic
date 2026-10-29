@@ -351,9 +351,9 @@ For a versioned binary answer $`y_t`$, a known affine loss $`b_t(a)+d_t(a)y_t`$ 
 
 ```math
 \begin{aligned}
- R_{t-1}&=\sum_{s<t}(y_s-p_s)\Phi_s(p_s),\\
+ R_{t-1}&=\sum_{s<t}(y_s-p_s)\Phi_s(p_s),\\[0pt]
  S_t(p)&=\langle R_{t-1},\Phi_t(p)\rangle
-             +\tfrac{1-2p}{2}\|\Phi_t(p)\|^2,\\
+             +\tfrac{1-2p}{2}\|\Phi_t(p)\|^2,\\[0pt]
  A_t&=2\max\{0,(1-p_t)S_t(p_t),-p_tS_t(p_t)\}.
  \end{aligned}
  \tag{13}
