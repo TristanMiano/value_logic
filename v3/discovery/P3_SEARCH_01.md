@@ -1,13 +1,13 @@
 # P3-SEARCH-01 — continuing search for a useful positive construction
 
-**Author decision, October 29, 2026:** [P3-C accepted at its bounded scope](../checkpoints/C_1_acceptance.md); P3-SEARCH-01/C001 CLOSED. P3-12 report assembly is complete; synchronized Markdown/PDF and supporting sources are available in `paper_v3.md`, `paper_v3.pdf`, and `v3/report/`. Recommendation: ready for P3-D final audit and author decision. The portfolio and open research directions remain available. Final phase-three completion and P3-D remain pending. Dated status records below preserve their historical meaning.
+**Current disposition, October 29, 2026:** PR23 is merged. [P3-D final audit](../checkpoints/D_1.md) recommends PASS at the declared restricted scopes; the author's final phase-completion decision is PENDING. P3-C is accepted, P3-12 is complete, and P3-SEARCH-01/C001 remains author-closed with its portfolio preserved. No active clock, outstanding minimum, new recurrence or next phase. Phase research is 4358.489988973266… minutes; discovery remains 3169.45241622245 minutes. Earlier dated records below are historical.
 
 
 Contributor: **ChatGPT (GPT-6 Astra Pro)**. Established October 11, 2026 UTC.
 Authority: [discovery-first amendment](../decisions/2026-10-11_discovery_first_amendment.md).
 Procedure: [research protocol](../RESEARCH_PROTOCOL.md).
-Status: **C001 OPEN pending author disposition; positive objective evaluator-supported.**
-**Current checkpoint — October29,2026 UTC, Codex (GPT-6):**
+Status: **C001 CLOSED by explicit author acceptance; portfolio preserved.**
+**Historical checkpoint — October29,2026 UTC, Codex (GPT-6):**
 [s20](s20/checkpoint.md) is CLOSED at240.079755078333… engaged research minutes,
 including90.410959541666… P3-11-A1 confirmation minutes and149.668795536666…
 new discovery minutes. Program3169.45241622245 minutes (52.82h); phase4345.994743128266…

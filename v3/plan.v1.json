@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "phase": 3,
-  "status": "awaiting_final_audit_and_author_decision",
-  "next_task": "P3-D",
+  "status": "awaiting_author_phase_completion_decision",
+  "next_task": "P3-D author decision",
   "phase_research_floor_minutes": 960,
   "qualifying_modes": [
     "D",
@@ -423,12 +423,17 @@
       "acceptance_record": "v3/checkpoints/C_1_acceptance.md"
     },
     "P3-D": {
-      "status": "unattempted",
+      "status": "evaluator_pass_author_decision_pending",
       "after": "P3-12",
       "type": "author_decision",
       "readiness_recommendation": "ready_for_final_audit_and_author_decision",
       "readiness_record": "v3/report/review.md",
-      "author_acceptance": false
+      "author_acceptance": false,
+      "attempt_id": "P3-D-A1",
+      "recommendation": "PASS",
+      "record": "v3/checkpoints/D_1.md",
+      "actuals": "v3/checkpoints/d1/actuals.json",
+      "research_ns": 252743669100
     }
   },
   "report_task": {
@@ -456,14 +461,14 @@
   "final_evaluation_exposed": true,
   "neural_recurrence_selected": false,
   "active_session": null,
-  "last_completed_session": "v3/report/log/session.md",
+  "last_completed_session": "v3/checkpoints/d1/session.md",
   "observed_progress": {
-    "research_ns": 261256655669296,
+    "research_ns": 261509399338396,
     "remaining_floor_ns": 0,
-    "source": "v3/report/log/effective_actuals.json",
+    "source": "v3/checkpoints/d1/completion.json",
     "next_checkpoint_minutes": null,
-    "evidence_disposition": "P3-12 closed; compaction crossing excluded; discovery unchanged; build and publication zero research credit.",
-    "research_minutes": "4354.277594488266666666666667",
+    "evidence_disposition": "P3-D audit closed; same-runtime accounting reconstructed; discovery unchanged; final author decision pending.",
+    "research_minutes": "4358.489988973266666666666667",
     "historical_s06_measured_engaged_ns": 100832857416922,
     "measured_engaged_ns": null,
     "measured_engaged_scope_note": "Current phase-wide D/L/E/O total not recomputed; exact qualifying research is reconstructed."
@@ -498,7 +503,7 @@
       "overshoot_ns": 2150867877502
     }
   ],
-  "last_preserved_session": "v3/discovery/s20/session.md",
+  "last_preserved_session": "v3/checkpoints/d1/session.md",
   "optional_recurrence_advice": {
     "record": "v3/work_logs/P3_B_2026-10-09_S1/recurrence_options.json",
     "recommended": "P3-B-OPTION-A",
@@ -509,11 +514,11 @@
     "selected_task": "R-P3-B-A",
     "selection_record": "v3/work_logs/R_P3_B_A_2026-10-09_S1/selection.json",
     "selected_task_status": "completed",
-    "current_recommendation": "Broad discovery when authorized; short V19 exact-contract novelty/duty comparison; preserve alternatives. O18 capped screen complete. No automatic recurrence.",
+    "current_recommendation": "After author disposition, prioritize a natural repeated-decision application with equal-information full-cost controls; keep N16 specialist comparison separate. No recurrence is selected.",
     "next_optional_selected": null,
     "completed_additional_option": "P3-B-OPTION-B"
   },
-  "selected_recurrence": "P3-SEARCH-01",
+  "selected_recurrence": null,
   "contribution_scope": "Modest formal adaptation and implementation synthesis with a source-specific economic obstruction; no generic learning/concentration novelty or superiority claim.",
   "contribution_assessment": "v3/work_logs/R_P3_B_B_2026-10-10_S1/contribution_assessment.md",
   "latest_mathematical_overlay": "v3/checkpoints/B_1_R_P3_B_B.v1.json",
@@ -596,7 +601,7 @@
       "initial_research_floor_minutes": 90
     }
   },
-  "research_stage": "confirmation_complete_author_decision_pending",
+  "research_stage": "final_audit_complete_author_completion_pending",
   "prospective_amendment": "v3/decisions/2026-10-11_discovery_first_amendment.md",
   "traversal_planning_scope": "Original traversal retained; P3-11-A1 completed at V19-R/v1 scope.",
   "positive_discovery_obligation": {

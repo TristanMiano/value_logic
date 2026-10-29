@@ -1,9 +1,18 @@
-# Portable continuation: report complete; final author gate remains
+# Portable continuation: final audit complete; author decision remains
 
-**Current direction:** [Author acceptance](../checkpoints/C_1_acceptance.md) closed C001. P3-12 is complete: [Markdown](../../paper_v3.md), [PDF](../../paper_v3.pdf), [sources/build](../report/README.md), [claim map](../report/claims.md), [portfolio](../report/portfolio.md), [review](../report/review.md), and [checkpoint](../report/log/checkpoint.md). Recommendation: ready for P3-D final audit and author decision. No active clock or minimum remains. Final phase completion has NOT been declared. Do not start another recurrence or merge automatically. Inspect [publication](../report/log/publication.md) before any authorized next work.
+**Current direction:** PR23 is merged. [P3-D's final audit](../checkpoints/D_1.md)
+is complete and recommends PASS at the stated restricted scopes. The author's
+final phase-completion decision remains PENDING; do not infer it from a merge.
+P3-C is accepted, C001 is author-closed, and P3-12 is complete. The paper's
+forecasting assumptions were made explicit in both editions during this audit.
+Read [publication](../checkpoints/d1/publication.md), [completion/actuals](../checkpoints/d1/completion.json),
+and [accounting](../checkpoints/d1/accounting.json). No active clock, outstanding
+minimum, new recurrence or next phase remains selected. After explicit author
+acceptance, record it separately and then update phase status; preserve the
+pre-decision audit. Do not merge automatically.
 
 
-Latest research: **s20 CLOSED**, Codex (GPT-6), October28--29,2026 UTC.
+Historical discovery: **s20 CLOSED**, Codex (GPT-6), October28--29,2026 UTC.
 The author's four-hour minimum and selected completion-oriented work are done.
 PR21 was verified merged before entry. Read[checkpoint](s20/checkpoint.md),
 [actuals](s20/effective_actuals.json),[findings](s20/findings.md),
@@ -50,7 +59,8 @@ s20 session14,404,785,304,700ns =240.079755078333… research minutes.
 P3-11-A1 used5,424,657,572,500ns =90.410959541666… within that session and phase,
 but zero discovery credit. New discovery8,980,127,732,200ns =149.668795536666… minutes.
 Program190,167,144,973,347ns =3169.45241622245 minutes (52.82h).
-Phase260,759,684,587,696ns =4345.994743128266… minutes.
+Historical s20 phase260,759,684,587,696ns =4345.994743128266… minutes.
+Current audited phase261,509,399,338,396ns =4358.489988973266… minutes.
 Reconciliation checks256 same-runtime segments and additive ledger corrections.
 Recovery, context gaps, waits and publication earn no research credit.
 The40-hour portfolio review is complete; next100h. No subagents authorized here.

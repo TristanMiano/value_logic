@@ -1,9 +1,11 @@
 # Value Logic Phase Three: Logical Uncertainty and Counterfactuals
 
-**Author decision, October 29, 2026:** [P3-C accepted at its bounded scope](v3/checkpoints/C_1_acceptance.md); P3-SEARCH-01/C001 CLOSED. P3-12 report assembly is complete; synchronized Markdown/PDF and supporting sources are available in `paper_v3.md`, `paper_v3.pdf`, and `v3/report/`. Recommendation: ready for P3-D final audit and author decision. The portfolio and open research directions remain available. Final phase-three completion and P3-D remain pending. Dated status records below preserve their historical meaning.
+**Current disposition, October 29, 2026:** PR23 is merged. [P3-D final audit](v3/checkpoints/D_1.md) recommends PASS at the declared restricted scopes; the author's final phase-completion decision is PENDING. P3-C is accepted, P3-12 is complete, and P3-SEARCH-01/C001 remains author-closed with its portfolio preserved. No active clock, outstanding minimum, new recurrence or next phase. Phase research is 4358.489988973266… minutes; discovery remains 3169.45241622245 minutes. Earlier dated records below are historical.
 
 
-**Current checkpoint — October29,2026 UTC, Codex (GPT-6):**
+## Historical progress records through s20
+
+**Checkpoint — October29,2026 UTC, Codex (GPT-6):**
 [s20](v3/discovery/s20/checkpoint.md) is CLOSED at240.079755078333… engaged research minutes,
 including90.410959541666… P3-11-A1 confirmation minutes and149.668795536666…
 new discovery minutes. Program3169.45241622245 minutes (52.82h); phase4345.994743128266…
@@ -643,9 +645,9 @@ confirmation plan. An adverse confirmation returns the objective to discovery.
   comparison scope, or the precise displacement. Resolve paper/implementation
   mismatches. Artifact: `v3/contribution_review.md` and review records.
 
-- [ ] **P3-C — evidence and contribution recommendation.**
+- [x] **P3-C — evidence and contribution recommendation.**
 
-  **Evaluator recommendation PASS; author acceptance PENDING.**
+  **PASS accepted by the author; see [acceptance](v3/checkpoints/C_1_acceptance.md).**
   [Concrete record](v3/checkpoints/C_1.md). Require technical readiness, completion of
   the amended discovery/confirmation prerequisites and support for **P3-POS01**
   alongside the scoped contribution assessment. Present the evaluator's
@@ -657,7 +659,9 @@ confirmation plan. An adverse confirmation returns the objective to discovery.
 
 ## 7. Cycle IV — report and disposition
 
-- [ ] **P3-12 — assemble the research report.**
+- [x] **P3-12 — assemble the research report.**
+
+  Complete: [Markdown](paper_v3.md), [PDF](paper_v3.pdf), [sources/build](v3/report/README.md), and [audit repair](v3/checkpoints/d1/report_check.md).
 
   After accepted P3-C, write `paper_v3.md`, source/claim mappings and reproducible
   tables. Answer all five author questions directly. Explain inherited results,
@@ -667,6 +671,9 @@ confirmation plan. An adverse confirmation returns the objective to discovery.
   Report assembly has no artificial research floor; actual D/L/E/O remain separate.
 
 - [ ] **P3-D — final audit and author disposition.**
+
+  **Evaluator audit complete: recommend PASS. Author completion decision PENDING.**
+  See [pre-decision audit](v3/checkpoints/D_1.md), [accounting](v3/checkpoints/d1/accounting.json), and [current actuals](v3/checkpoints/d1/completion.json).
 
   Audit current claims, comparisons, versions, attempts, all chunk minima,
   the 960-minute research floor, accounting and open repairs. Give a reasoned
@@ -696,12 +703,13 @@ Keep all earlier evidence and accumulated effort. A suspended or redirected
 program does not become a completed phase. No fixed total search ceiling is
 imposed; author direction and evidence determine its eventual disposition.
 
-**Active repair queue: empty at the supported bounded claim. P3-01–11 and
-selected recurrences R-P3-B-A/B are complete at their declared scopes. P3-A/B
-retain their restricted PASS. P3-N01 retains historical support; P3-POS01 is
-evaluator-supported by V19-R/v1. Next: P3-C author acceptance or redirection.
-C001 remains open pending that disposition. P3-12 and P3-D are unstarted.
-Option B is complete; Option C and R-P3-N01 are unselected.**
+**Active repair queue: empty at the supported bounded completion scope after
+P3-D's report-premise and pointer repairs. P3-01–12 and selected recurrences
+R-P3-B-A/B are complete at their declared scopes; P3-A/B retain restricted PASS,
+P3-C is accepted, and C001 is author-closed. P3-D recommends PASS and awaits
+only the author's phase-completion decision. The full candidate portfolio and
+nonblocking open research directions remain available. No new phase or
+recurrence is selected.**
 
 The optional phase-two F15-ND02 and F15-EXT-01 remain available in their original
 register. Neither is required or activated by this plan. General neural

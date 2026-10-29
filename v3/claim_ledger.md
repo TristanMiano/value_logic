@@ -1,9 +1,9 @@
 # Phase-three claims and obligations
 
-**Author decision, October 29, 2026:** [P3-C accepted at its bounded scope](checkpoints/C_1_acceptance.md); P3-SEARCH-01/C001 CLOSED. P3-12 report assembly is complete; synchronized Markdown/PDF and supporting sources are available in `paper_v3.md`, `paper_v3.pdf`, and `v3/report/`. Recommendation: ready for P3-D final audit and author decision. The portfolio and open research directions remain available. Final phase-three completion and P3-D remain pending. Dated status records below preserve their historical meaning.
+**Current disposition, October 29, 2026:** PR23 is merged. [P3-D final audit](checkpoints/D_1.md) recommends PASS at the declared restricted scopes; the author's final phase-completion decision is PENDING. P3-C is accepted, P3-12 is complete, and P3-SEARCH-01/C001 remains author-closed with its portfolio preserved. No active clock, outstanding minimum, new recurrence or next phase. Phase research is 4358.489988973266… minutes; discovery remains 3169.45241622245 minutes. Earlier dated records below are historical.
 
 
-**Current pointer — October29,2026, Codex (GPT-6):** V19-R/v1 has completed
+**Historical pointer — October29,2026, Codex (GPT-6):** V19-R/v1 has completed
 [P3-11-A1](confirmation/v19a/result.json). P3-POS01 is evaluator-supported;
 [P3-C recommendation](checkpoints/C_1.md) awaits author acceptance. Same-model
 confidence80--90%, central85%; ordinary equivalent ties. No new fee/full-cost

@@ -61,3 +61,12 @@ decision. The author has accepted P3-C and closed C001, but has not declared
 phase three complete. The most informative next research direction is a natural
 repeated-decision application with equal-information full-cost controls;
 N16's remaining novelty comparison is a separate bounded follow-up.
+
+## Subsequent P3-D clarification
+
+The final audit found that Section 5.1's summary omitted explicit forecasting
+hypotheses already present in its original derivation. Both editions now state
+bounded forecasts/experts, nonnegative finite weights and positive fixed scales.
+[The P3-D report check](../checkpoints/d1/report_check.md) records the rebuilt
+14-page PDF, inspection of every changed page, and updated artifact hashes.
+This additive note preserves the original P3-12 review's historical scope.
