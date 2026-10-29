@@ -22,8 +22,14 @@ all 275 extracted code/config files match the working checkout. See
 Four fixtures write CRLF bytes where the portable-view verifier requires its
 exact LF transformation; the other compares Windows path separators to slash
 literals. No historical implementation or test was changed for this report.
-The two incomplete baseline extraction setups are preserved as well. Linux CI
-status and the pull-request link will be recorded after publication.
+The two incomplete baseline extraction setups are preserved as well.
+
+Published as [PR23](https://github.com/TristanMiano/value_logic/pull/23), open and
+unmerged, on October 29, 2026 at 22:36:56 UTC. Its scientific/report commit is
+`1b02a6319783b4f075608ed9583ed87a14d2bb76`; the connector verified that head and
+the unchanged main base. This additive publication note is a later administrative
+commit. Linux CI was pending at this record's preparation; consult the PR checks
+for the current result. No merge was performed, and no research credit was added.
 
 See [checkpoint](checkpoint.md), [review](../review.md), and
 [build instructions](../README.md). P3-12 recommends proceeding to P3-D's final
