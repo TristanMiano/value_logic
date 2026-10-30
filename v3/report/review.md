@@ -70,3 +70,11 @@ bounded forecasts/experts, nonnegative finite weights and positive fixed scales.
 [The P3-D report check](../checkpoints/d1/report_check.md) records the rebuilt
 14-page PDF, inspection of every changed page, and updated artifact hashes.
 This additive note preserves the original P3-12 review's historical scope.
+
+## Post-audit presentation repair and author acceptance
+
+The author accepted P3-D and requested phase completion after fixing the GitHub
+Markdown equations. The [additive acceptance](../checkpoints/D_1_acceptance.md)
+records completion; the [repair record](../checkpoints/d1/math_repair.md) records
+the live renderer and PDF-equivalence checks. The canonical science and audited
+PDF are unchanged. Earlier assessments retain their original dates and scopes.

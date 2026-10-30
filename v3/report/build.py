@@ -49,10 +49,18 @@ def main():
         s=re.sub(r'^::: proof\n(.*?)^:::\s*$',proof,s,flags=re.M|re.S)
         def eq(m):
             body=m[1];lab=re.search(r'\\label\{([\w-]+)\}',body)
-            if not lab: return m[0]
+            if not lab: return m[0] if tex else '```math\n'+body+'\n```'
             key=lab[1]
             if tex: return '\n```{=latex}\n\\begin{equation}\n'+body.strip()+'\n\\end{equation}\n```\n'
-            return f'\n<a id="{key}"></a>\n\n$$\n'+body.replace(lab[0],r'\tag{'+str(labels[key][1])+r'}').strip()+'\n$$\n'
+            # Protect TeX backslashes from GitHub's Markdown escape processing.
+            # Keep a single grouped expression in GitHub's numbered MathML
+            # cell; otherwise native rendering stacks its sibling terms.
+            body='{\n'+body.replace(lab[0],'').strip()+'\n}\n'+r'\tag{'+str(labels[key][1])+r'}'
+            # Avoid GitHub's HTML-like interpretation of literal inequalities
+            # and its extra backslash on bare aligned-row endings.
+            body=body.replace('<',r'\lt ').replace('>',r'\gt ')
+            body=re.sub(r'\\\\[ \t]*\n',lambda _:r'\\[0pt]'+'\n',body)
+            return f'\n<a id="{key}"></a>\n\n```math\n'+body+'\n```\n'
         s=re.sub(r'\$\$\n(.*?)\n\$\$',eq,s,flags=re.S)
         s=re.sub(r'\{\{([\w-]+)\}\}',lambda m:xref(m,tex),s)
         s=re.sub(r'\[@([\w-]+)\]',lambda m:('\\citep{'+m[1]+'}') if tex else f'[{order.index(m[1])+1}](#ref-{m[1]})',s)

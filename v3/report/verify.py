@@ -34,13 +34,27 @@ def main():
             links+=1
     md=(ROOT/'paper_v3.md').read_text(encoding='utf-8')
     assert not re.search(r'\\(?:cite\w*|eqref|ref|label)\b',md)
-    assert md.count('$$')%2==0
+    # GitHub must receive the exact display payload, including escaped braces,
+    # double backslashes in aligned rows, and double-bar norm delimiters.
+    # A balanced $$ count alone did not catch the reported rendering failure.
+    assert '$$' not in md
+    displays=re.findall(r'^```math\n(.*?)^```\s*$',md,re.M|re.S)
+    source=(HERE/'content.md').read_text(encoding='utf-8')
+    expected=re.findall(r'^```math\n(.*?)^```\s*$',source,re.M|re.S)
+    expected=[re.sub(r'\\label\{([\w-]+)\}',lambda m:r'\tag{'+str(manifest['labels'][m[1]][1])+'}',s).strip() for s in expected]
+    def math_tokens(parts):
+        parts=[re.sub(r'^\{\n(.*)\n\}\n(\\tag\{\d+\})\s*$',r'\1\n\2',s.strip(),flags=re.S) for s in parts]
+        s='\n'.join(parts)
+        s=s.replace(r'\lt ', '<').replace(r'\gt ', '>').replace(r'\\[0pt]',r'\\')
+        return re.sub(r'\s+','',s)
+    assert math_tokens(displays)==math_tokens(expected), 'GitHub mathematical payload differs from canonical TeX'
+    assert re.findall(r'\\tag\{\d+\}', '\n'.join(displays))==re.findall(r'\\tag\{\d+\}', '\n'.join(expected))
     assert not re.search(r'^:::|\{\{[\w:-]+\}\}',md,re.M)
     # Closing the commitment may change metadata, never the recurrence rows.
     old=json.loads(subprocess.check_output(['git','show','2b9de3ada09521c02eac9094587b2e1d98962f0b:v3/discovery/recurrences.json']))
     new=read(ROOT/'v3/discovery/recurrences.json')
     assert old['rows']==new['rows'] and new['status']=='CLOSED'
-    result={'status':'PASS','local_links':links,'preserved_seals':seals,'preserved_recurrence_rows':len(new['rows']),'result_and_equation_labels':len(manifest['labels']),'references':len(manifest['citation_order']),'pdf_sha256':sha(ROOT/'paper_v3.pdf'),'scope':'Package, preserved evidence and format checks; not independent scientific review.'}
+    result={'status':'PASS','local_links':links,'preserved_seals':seals,'preserved_recurrence_rows':len(new['rows']),'result_and_equation_labels':len(manifest['labels']),'references':len(manifest['citation_order']),'protected_display_payloads':len(displays),'pdf_sha256':sha(ROOT/'paper_v3.pdf'),'scope':'Package, preserved evidence and format checks; not independent scientific review.'}
     (HERE/'verification.json').write_bytes((json.dumps(result,indent=2)+'\n').encode())
     print(json.dumps(result))
 if __name__=='__main__':main()

@@ -1,93 +1,61 @@
-# Portable continuation: final audit complete; author decision remains
+# Portable continuation: phase three complete; await author direction
 
-**Current direction:** PR23 is merged. [P3-D's final audit](../checkpoints/D_1.md)
-is complete and recommends PASS at the stated restricted scopes. The author's
-final phase-completion decision remains PENDING; do not infer it from a merge.
-P3-C is accepted, C001 is author-closed, and P3-12 is complete. The paper's
-forecasting assumptions were made explicit in both editions during this audit.
-Read [publication](../checkpoints/d1/publication.md), [completion/actuals](../checkpoints/d1/completion.json),
-and [accounting](../checkpoints/d1/accounting.json). No active clock, outstanding
-minimum, new recurrence or next phase remains selected. After explicit author
-acceptance, record it separately and then update phase status; preserve the
-pre-decision audit. Do not merge automatically.
+**Current direction, October 29, 2026:** PR24 is verified merged into main.
+The author explicitly [accepted P3-D](../checkpoints/D_1_acceptance.md) at its
+stated bounded scope and instructed phase-three completion after the Markdown
+repair. That repair is complete and live-checked. **Phase three is COMPLETE.**
+P3-C is accepted, P3-12 is complete, and P3-SEARCH-01/C001 remains author-closed.
+No active clock, remaining minimum, selected recurrence or next phase exists.
 
+Read [completion](../checkpoints/completion.json), the
+[pre-decision audit](../checkpoints/D_1.md), and the
+[rendering repair](../checkpoints/d1/math_repair.md). Keep the audit's earlier
+pending-author fields intact; the additive acceptance supersedes that disposition.
+Verify the current PR/main state before any newly authorized work. Do not merge
+automatically or infer authorization for another research session.
 
-Historical discovery: **s20 CLOSED**, Codex (GPT-6), October28--29,2026 UTC.
-The author's four-hour minimum and selected completion-oriented work are done.
-PR21 was verified merged before entry. Read[checkpoint](s20/checkpoint.md),
-[actuals](s20/effective_actuals.json),[findings](s20/findings.md),
-[assessment](s20/scientific_assessment.md) and[publication](s20/publication.md).
-There is no active discovery clock or remaining minimum. Do not start another recurrence
-or merge automatically. Verify the current PR/main state before authorized work.
+## Advisory questions, not a selected next phase
 
-## Prior recommendation, now accepted
+The author requested a fresh assessment of the largest remaining gaps and five
+questions in the spirit of the whole project. [That assessment](../next_questions.md)
+proposes learned mathematical structure, allocation of reasoning and observation,
+retention across future changes, reliance on fallible models, and revisable
+criteria of value. It is a portfolio for consideration. **Do not create a
+phase-four TODO or activate a research commitment without author direction.**
 
-**P3-11-A1 PASS for unchanged V19-R/v1. P3-POS01 evaluator-supported.**
-The[review](../contribution_review.md) and[P3-C recommendation](../checkpoints/C_1.md)
-are complete; **author acceptance was subsequently recorded** under[protocol section6](../RESEARCH_PROTOCOL.md#6-gates-and-publication).
-Recommend accepting the useful moderately novel synthesis and closing the
-original discovery objective, then selecting P3-12 report assembly and the
-later P3-D final audit. Do not infer author acceptance from a code merge alone.
-C001 is now closed by explicit author disposition. P3-12 is complete; P3-D remains unpassed.
-All authorized review and publication work should be concrete before that gate.
+## Preserve the scientific and resource record
 
-V19 recovers the complete attainable scalar range from retained interval
-minimum-affine receipts over independent rational source polytopes, with
-explicit report-parameter bounds, exact rational checks and source witnesses.
-The whole range preserves useful gaps. The ordinary equivalent ties. This is
-conditional inference and a moderate synthesis; no universal superiority,
-general uncertainty learner or fresh economic saving is claimed.
+V19-R/v1 remains the principal accepted useful, moderately novel synthesis.
+Its same-model confirmation does not transfer to secondary results. The broadest
+original questions, full-service economic advantage, general mathematical
+learning, adaptive revision integration and specialist novelty judgments remain
+open at the scopes recorded in the paper and portfolio.
 
-The prospective readiness was80--90%, central85%, and the same range is retained
-as subjective confidence that further competent review upholds the bounded
-contribution. It is not the probability of the already recorded PASS or a
-calibrated frequency. Expert routine-specialization judgment, unread close full
-texts, conditional premises and unformalized implementation bridges remain
-explicit. See[targets](s20/verification_targets.md) and[literature](s20/literature.md).
-Do not force a higher estimate through additional variants or test counts.
+The final audited phase total is **261,509,399,338,396 ns =
+4358.489988973266... minutes**. Discovery remains **190,167,144,973,347 ns =
+3169.45241622245 minutes**, including the completed s20 discovery contribution
+but excluding its separately counted P3-11 confirmation. No acceptance,
+formatting, publication or advisory-reassessment time was added to these totals.
+The raw clocks, accounting corrections, recurrence rows, frozen evidence and
+phase-two ledger remain intact.
 
-## Recover and account accurately
+The [candidate portfolio](candidates.md), [progress table](recurrences.md) and
+[selected secondary results](../report/portfolio.md) remain available. N16's
+55--80%, central65%, and O18's35--70%, central50%, are historical event-specific
+subjective assessments, not updated forecasts. Adverse costs and failed
+alternatives remain evidence. Completion does not erase them.
 
-Use the actual checkout root and read AGENTS.md,[TODO](../../TODO_v3.md),
-[protocol](../RESEARCH_PROTOCOL.md),[portfolio](candidates.md) and the
-[single recurrence table](recurrences.md). Preserve unrelated work, historical
-attribution, frozen evidence and failed attempts. Inspect stage/exposure markers;
-never rerun accepted units merely to refresh context. The hardware instability
-allows appropriate unexplained retries; deterministic bugs need versioned repair.
+## If new research is explicitly selected
 
-s20 session14,404,785,304,700ns =240.079755078333… research minutes.
-P3-11-A1 used5,424,657,572,500ns =90.410959541666… within that session and phase,
-but zero discovery credit. New discovery8,980,127,732,200ns =149.668795536666… minutes.
-Program190,167,144,973,347ns =3169.45241622245 minutes (52.82h).
-Historical s20 phase260,759,684,587,696ns =4345.994743128266… minutes.
-Current audited phase261,509,399,338,396ns =4358.489988973266… minutes.
-Reconciliation checks256 same-runtime segments and additive ledger corrections.
-Recovery, context gaps, waits and publication earn no research credit.
-The40-hour portfolio review is complete; next100h. No subagents authorized here.
+Read AGENTS.md, [TODO](../../TODO_v3.md), [protocol](../RESEARCH_PROTOCOL.md),
+the new author direction and relevant session/exposure records. Specify the
+actual new scope, comparisons, forecast and observed clock before substantive
+research. The old four-hour overrides have expired; no floor is active now.
+Any new phase needs its own author-selected plan. Preserve attribution to the
+model actually doing the work and do not count old surplus toward a new floor.
 
-## If further discovery is explicitly requested
-
-Retain the broad original goal: mechanisms improving bounded use of unresolved
-mathematics, fallible models, reasoning costs or counterfactual changes across
-all five questions. A useful, moderately novel contribution is worthwhile.
-General learning and final metaphysical answers are not prerequisites. Ordinary
-methods can embody the same concerns; an identical equivalent necessarily ties.
-
-Default one-hour sessions; an explicit duration overrides only that session.
-Start a fresh prospective scope, forecast and observed clock. Never credit old
-surplus to a new minimum. Ordinarily allocate about75% generation/development,
-20% cheap screens and5% substantive synthesis, unless newly overridden. Prefer
-materially different mechanisms and early rejection to a narrow endless audit.
-The s20 allocation override has expired. Keep reported metrics relevant and
-source-backed, including fees, counted work and strongest ordinary comparisons.
-
-N16-C/v1 carries55--80%, central65%, from[s18](s18/n16_assessment.md).
-O18-M/v1 carries35--70%, central50%, from[s19](s19/o18_assessment.md).
-Neither was reassessed in s20. Sparse forest/cycle receipts, source-coupled
-contrasts and paid proof reuse remain available. The new partial-range,
-continuous/finite decision, observation, greatest-point, transport and component
-extensions have their own developmental evidence and unassessed standalone
-novelty. They are optional, not new completion hurdles for V19. A concrete
-application or specialist comparison would now be more informative than another
-large random range panel. Preserve unfavorable proof-service costs and dated
-fee/work carries; do not present them as fresh gains.
+Keep the broad organizing goal in view: useful bounded reasoning with unresolved
+mathematics, fallible models, reasoning costs and counterfactual change. A useful,
+moderately novel contribution is worthwhile. Generate distinct candidates and
+discard weak ones early; do not let another narrow novelty audit become the
+entire program. No subagents are authorized by this handoff.
