@@ -62,5 +62,7 @@ benchmark. Historical fee/work gains remain dated component measurements.
    Validate source identity, all affected slices, policy class, and simultaneous
    coverage before claiming an integrated adaptive reasoner.
 
-This ordering is a research recommendation. The current authorization is report
-assembly and preparation for P3-D, not another recurrence or confirmation campaign.
+This ordering records the report-assembly recommendation. The author has since
+[accepted P3-D and completed phase three](../checkpoints/D_1_acceptance.md).
+The later [five-question reassessment](../next_questions.md) broadens the possible
+next directions; no recurrence, confirmation campaign or next phase is selected.

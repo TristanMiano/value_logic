@@ -1,6 +1,6 @@
 # Value Logic Phase Three: Logical Uncertainty and Counterfactuals
 
-**Current disposition, October 29, 2026:** PR23 is merged. [P3-D final audit](v3/checkpoints/D_1.md) recommends PASS at the declared restricted scopes; the author's final phase-completion decision is PENDING. P3-C is accepted, P3-12 is complete, and P3-SEARCH-01/C001 remains author-closed with its portfolio preserved. No active clock, outstanding minimum, new recurrence or next phase. Phase research is 4358.489988973266… minutes; discovery remains 3169.45241622245 minutes. Earlier dated records below are historical.
+**Current disposition, October 29, 2026: PHASE THREE COMPLETE.** PR24 is verified merged into main. The author explicitly accepted [P3-D at its bounded scope](v3/checkpoints/D_1_acceptance.md); the reported Markdown rendering defects are repaired and live-checked. P3-C is accepted, P3-12 is complete, and P3-SEARCH-01/C001 remains author-closed with its portfolio preserved. Phase research remains 4358.489988973266... minutes; discovery remains 3169.45241622245 minutes. No active clock, remaining minimum, new recurrence or next phase. [Five proposed questions](v3/next_questions.md) are advisory only; no phase-four TODO is created. Earlier dated records below are historical.
 
 
 ## Historical progress records through s20
@@ -670,10 +670,10 @@ confirmation plan. An adverse confirmation returns the objective to discovery.
   and counterfactual choices. Preserve proof notes and failed alternatives.
   Report assembly has no artificial research floor; actual D/L/E/O remain separate.
 
-- [ ] **P3-D — final audit and author disposition.**
+- [x] **P3-D — final audit and author disposition.**
 
-  **Evaluator audit complete: recommend PASS. Author completion decision PENDING.**
-  See [pre-decision audit](v3/checkpoints/D_1.md), [accounting](v3/checkpoints/d1/accounting.json), and [current actuals](v3/checkpoints/d1/completion.json).
+  **ACCEPTED/PASS. Phase three COMPLETE by explicit author decision; see [acceptance](v3/checkpoints/D_1_acceptance.md).**
+  See [pre-decision audit](v3/checkpoints/D_1.md), [accounting](v3/checkpoints/d1/accounting.json), [audit actuals](v3/checkpoints/d1/completion.json), and [author completion](v3/checkpoints/completion.json).
 
   Audit current claims, comparisons, versions, attempts, all chunk minima,
   the 960-minute research floor, accounting and open repairs. Give a reasoned
@@ -706,8 +706,8 @@ imposed; author direction and evidence determine its eventual disposition.
 **Active repair queue: empty at the supported bounded completion scope after
 P3-D's report-premise and pointer repairs. P3-01–12 and selected recurrences
 R-P3-B-A/B are complete at their declared scopes; P3-A/B retain restricted PASS,
-P3-C is accepted, and C001 is author-closed. P3-D recommends PASS and awaits
-only the author's phase-completion decision. The full candidate portfolio and
+P3-C and P3-D are accepted, C001 is author-closed, and phase three is complete
+after the final Markdown rendering repair. The full candidate portfolio and
 nonblocking open research directions remain available. No new phase or
 recurrence is selected.**
 

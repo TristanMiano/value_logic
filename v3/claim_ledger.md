@@ -1,6 +1,6 @@
 # Phase-three claims and obligations
 
-**Current disposition, October 29, 2026:** PR23 is merged. [P3-D final audit](checkpoints/D_1.md) recommends PASS at the declared restricted scopes; the author's final phase-completion decision is PENDING. P3-C is accepted, P3-12 is complete, and P3-SEARCH-01/C001 remains author-closed with its portfolio preserved. No active clock, outstanding minimum, new recurrence or next phase. Phase research is 4358.489988973266… minutes; discovery remains 3169.45241622245 minutes. Earlier dated records below are historical.
+**Current disposition, October 29, 2026: PHASE THREE COMPLETE.** PR24 is verified merged into main. The author explicitly accepted [P3-D at its bounded scope](checkpoints/D_1_acceptance.md); the reported Markdown rendering defects are repaired and live-checked. P3-C is accepted, P3-12 is complete, and P3-SEARCH-01/C001 remains author-closed with its portfolio preserved. Phase research remains 4358.489988973266... minutes; discovery remains 3169.45241622245 minutes. No active clock, remaining minimum, new recurrence or next phase. [Five proposed questions](next_questions.md) are advisory only; no phase-four TODO is created. Earlier dated records below are historical.
 
 
 **Historical pointer — October29,2026, Codex (GPT-6):** V19-R/v1 has completed
