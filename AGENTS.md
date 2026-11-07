@@ -1,5 +1,11 @@
 # Working in this repository
 
+**Start with the [project charter](v4/CHARTER.md).** It states the project's
+theses and sits above every phase plan, protocol and audit. Read its
+**Drift** section before starting any task. Phase-four work follows
+[TODO_v4.md](TODO_v4.md) once the author approves the charter. The phase-three
+notes below are historical.
+
 Use the actual checkout root. Preserve unrelated local work and historical
 scientific records. Attribute new research to the model actually doing it.
 
