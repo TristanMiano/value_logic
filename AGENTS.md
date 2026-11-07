@@ -3,8 +3,10 @@
 **Start with the [project charter](v4/CHARTER.md).** It states the project's
 theses and sits above every phase plan, protocol and audit. Read its
 **Drift** section before starting any task, and follow the binding
-[aim-balance policy](v4/AIM_BALANCE.md): pursue the most defensible reading of
-a thesis and defend it, prefer informative positive conditional statements to
+[aim-balance policy](v4/AIM_BALANCE.md): hunt for the kernel of truth
+in a thesis, the most faithful reading that can be proved (optimizing
+faithfulness and defensibility together, never retreating to its negation or
+to the easiest statement), prefer informative positive conditional statements to
 bare negations, pair every search for failures with an equally explicit
 search for constructions, and perform its end-of-task review after every task,
 including documentation edits. Phase-four work follows

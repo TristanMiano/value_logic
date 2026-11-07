@@ -48,13 +48,17 @@ as success. A thesis can be refuted. It cannot be quietly abandoned.
 The binding [aim-balance policy](AIM_BALANCE.md) governs how every task
 interprets and reports on the theses. Its two central rules:
 
-- **Find the most defensible interpretation, then defend it.** The theses are
-  intuitions stated informally. The task is to find the reading that keeps
-  their core content and has the best prospect of being true, then try
-  rigorously to prove it. Refuting the most ambitious reading does not answer
-  a thesis; it locates part of a boundary. When a reading fails, find the
-  nearest reading that survives before reporting. Finding the right reading
-  is itself valuable work and is credited as a contribution.
+- **Hunt for the kernel of truth.** The theses are intuitions stated
+  informally. Given a thesis "X implies Y," the task is to find and prove
+  **X′ ⇒ Y′**, where X′ is as close to X and Y′ as close to Y as possible
+  while the implication is true and provable: the precise statement that
+  seems to generate the intuition. Faithfulness and defensibility are
+  optimized together. Proving "X does not always imply Y," or retreating to
+  whatever reading is easiest to defend, does not discharge a thesis.
+  Refuting the most ambitious reading does not either; it shows which
+  condition is missing or which conclusion is too strong, and that is the
+  next step toward the most faithful statement that holds. Finding the
+  kernel is itself valuable work and is credited as a contribution.
 - **Prefer informative statements.** "X does not imply Y" and "it is not
   always the case that X" are the start of an answer, not the end. Ask what
   does imply Y, when X does hold, and which conditions separate the cases.
@@ -73,8 +77,9 @@ these:
 2. **Unifies:** shows that two founding ideas are the same structure.
 3. **Refutes informatively:** shows that a thesis fails *and* states the
    repaired thesis that the failure points to.
-4. **Interprets:** finds and justifies the most defensible precise reading of
-   an informal thesis, making it ready to prove.
+4. **Interprets:** finds the kernel of an informal thesis, a precise reading
+   that is both faithful to it and credibly provable, making it ready to
+   prove.
 
 Obstructions, counterexamples and characterized limits are legitimate
 contributions. Constructions, sufficient conditions, successful repairs and
@@ -116,8 +121,9 @@ Stop and re-align when any of these appear:
   judgment, supersession or self-application.
 - A thesis is weakened, renamed, deferred or moved to "motivation only"
   without a proposed repaired version.
-- A thesis is "answered" by refuting its most sweeping reading, with no
-  attempt at the most defensible one.
+- A thesis is "answered" by refuting its most sweeping reading, or by
+  proving a reading so weakened that little of the thesis remains, with no
+  attempt at the most faithful provable one.
 - Headlines and dispositions are mostly negations: "does not imply," "not
   always," "not established," "ordinary methods tie."
 - The work is chosen mainly because a measurable computational delta against

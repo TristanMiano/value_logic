@@ -12,7 +12,7 @@ request. It adapts the aim-balance policy of the author's
 [corrigibility-games](https://github.com/TristanMiano/corrigibility-games/blob/main/research/AIM_BALANCE.md)
 project to Value Logic and adds a rule about interpretation.
 
-## 1. Two failure patterns this document corrects
+## 1. Three failure patterns this document corrects
 
 **Refuting the most ambitious reading and stopping.** An agent receives an
 intuitive thesis, chooses its most sweeping reading ("judgment *always*
@@ -20,6 +20,13 @@ recovers fact," "T *equals* J² as functions"), finds a counterexample or a
 typing gap, and reports the task finished. That reading was the easiest one
 to refute, not the one the author most likely meant. The refutation is often
 correct and almost always uninformative about the thesis.
+
+**Retreating to the safest statement.** Asked to prove "X implies Y," an agent
+notices that a literal reading may be false and instead proves "X does not
+always imply Y," or a reading so weakened that it is trivially true. Each is
+easy to defend, and each gives up nearly all of the contribution the thesis
+was reaching for. Defensibility alone is not the goal; maximizing it picks
+the emptiest statement available.
 
 **Answering with negations.** "It is not always the case that X." "X does not
 imply Y." "Ordinary methods reproduce it." "Not established." Each is true,
@@ -37,36 +44,103 @@ blocks, but the test of the distributed reading was deferred. Phase contribution
 reviews repeatedly closed with "ordinary methods tie." These are not
 mistakes of mathematics; they are mistakes of aim.
 
-## 2. Find the most defensible interpretation, then defend it
+## 2. Hunt for the kernel of truth: faithful and defensible together
 
 When a task starts from an author's thesis, intuition, essay passage or
-informal claim, the first job is interpretive and it is real work.
+informal claim, the first job is interpretive, and it is real work. The goal
+is the **kernel of truth**: the precise statement that seems to be generating
+the original intuition, and that explains why the intuition looked right.
 
-1. **Collect candidate readings.** Write down several precise readings of the
-   statement, varying the quantifiers ("always," "under conditions C,"
-   "generically," "in the limit"), the objects (functions, fixed points,
-   partitions, distributions), and the sense of key relations ("equals,"
-   "is determined by," "recovers," "is a limit of").
-2. **Rank by defensibility, not ambition.** The most defensible reading is
-   the one that best combines two things: it keeps the intuition's core
-   content (what would make the author say "yes, that's what I meant"), and
-   it has the best prospect of being true and provable. A trivially true
-   reading fails the first test; the most sweeping reading usually fails the
-   second.
-3. **Defend it rigorously.** Try to prove it. State the conditions it needs.
-   Build examples where it holds. This is where most of the effort goes.
-4. **When it fails, repair before reporting.** Find the nearest reading that
-   survives the obstacle, and say what the obstacle teaches. A counterexample
-   to one reading is evidence about where the true statement lives, not an
-   answer to the thesis.
-5. **Record the interpretive work.** The candidate readings, the chosen one,
-   and the reasons for choosing it go in the task record. Finding the right
-   reading of an intuition is a contribution in its own right and is credited
-   as such.
+### The target
 
-A reading may be abandoned only after the most defensible reading has been
-given a serious attempt and repairs have been tried. Then say so prominently,
-state what survives, and name the obligation that remains.
+Suppose the thesis is "X implies Y," and a literal reading may be false. The
+task is **not** to prove "X does not always imply Y," and **not** to pick
+whatever reading is easiest to defend. It is to find and prove
+
+> **X′ ⇒ Y′,** where X′ and Y′ are interpretations of X and Y, X′ is as close
+> to X as possible, and Y′ is as close to Y as possible, subject to X′ ⇒ Y′
+> being true and provable.
+
+Two quantities are optimized **jointly**:
+
+- **Faithfulness:** how much of the thesis's content X′ ⇒ Y′ keeps. Would the
+  author say "yes, that is what I meant, made precise"? Does it keep the
+  thesis's direction, its central objects and its surprising part?
+- **Defensibility:** how good the prospects are that X′ ⇒ Y′ is true and can
+  actually be proved.
+
+Neither is maximized at the expense of the other. The most sweeping reading
+maximizes faithfulness and usually fails. The trivially true reading
+maximizes defensibility and is worthless. Ambition is not disfavored: among
+readings that are provable, prefer the most faithful, and push toward the
+most faithful reading that can be proved, rather than settling for the first
+one that can.
+
+The same shape applies to theses that are not implications. For "A equals
+B," seek the closest relation A′ ~ B′ that holds (equality on a quotient, at
+a fixed point, in a limit). For "there exists a Z with property P," seek the
+closest Z′ and P′. For "truth is the limit of value," seek the closest notion
+of limit and of truth under which it holds.
+
+### Moves that weaken the thesis, and their costs
+
+There are two basic ways to make X ⇒ Y provable, and each spends
+faithfulness:
+
+- **Strengthen the hypothesis:** add conditions, X′ = X ∧ C.
+- **Weaken the conclusion:** Y′ = a bounded, approximate, eventual,
+  generic or probabilistic version of Y.
+
+Movement in the other direction is welcome. If a reading with a weaker
+hypothesis or a stronger conclusion than the thesis can be proved, that is a
+better outcome, not drift, provided it is still a reading of the thesis.
+
+Spend as little as possible. Name every condition C and every weakening of Y
+explicitly, say why it was needed, and check whether it can be relaxed. A
+condition that the founding intuition itself suggests (for example, temporal
+recurrence in "yes means I expect it to reappear") costs less than an
+arbitrary one.
+
+**Excluded as endpoints:** replacing the thesis with its negation or with a
+non-implication ("X does not always imply Y"); vacuous readings (X′ never
+holds, or Y′ always holds); and readings that keep the words but none of the
+content. These may appear as lemmas or as boundary markers along the way.
+They do not discharge the task.
+
+### Procedure
+
+1. **Locate the kernel.** Ask what mechanism would make the intuition true
+   when it is true. The kernel is usually a mechanism, not a slogan: for
+   T = J², something like "the task partition and the judge weighting are
+   determined by each other at a fixed point."
+2. **Collect candidate readings.** Write several precise versions of X′ ⇒ Y′,
+   varying the quantifiers ("always," "under C," "generically," "in the
+   limit"), the objects (functions, fixed points, partitions,
+   distributions), and the sense of key relations ("equals," "is determined
+   by," "recovers," "is a limit of").
+3. **Place them on the faithfulness–defensibility frontier.** Discard
+   readings beaten on both counts. Begin with the most faithful reading that
+   has a credible path to proof.
+4. **Defend it rigorously.** Try to prove it. Build examples where it holds.
+   This is where most of the effort goes.
+5. **When it fails, use the failure to move along the frontier, not off
+   it.** A counterexample shows which condition was missing or which part of
+   Y was too strong. Turn that into the smallest added C or the smallest
+   weakening of Y′, and try again. Also check whether the counterexample
+   attacks the kernel itself or only an inessential feature of the reading.
+6. **Report the most faithful statement proved**, together with the gap
+   between it and the thesis: which conditions were added, which parts of Y
+   were weakened, and which stronger readings remain open or were refuted.
+   The gap is a named obligation, not a reason to stop.
+7. **Record the interpretive work.** The candidate readings, the kernel
+   hypothesis, the frontier, and the reasons for each move go in the task
+   record. Finding the kernel of an intuition is a contribution in its own
+   right and is credited as such.
+
+A thesis may be judged false only after its kernel has been sought, the most
+faithful credible readings have had a serious attempt, and repairs have been
+tried. Then say so prominently, state the most faithful statement that does
+hold, and name the obligation that remains.
 
 This is not a license to defend anything. The same rigor applies: a proof is
 a proof, a counterexample is a counterexample, and a reading that keeps
@@ -153,7 +227,8 @@ establish and what constructive or limiting question remains.
 Begin each task by restating:
 
 1. the charter thesis it serves, in the author's terms;
-2. the most defensible reading being pursued, and why (§2);
+2. the kernel hypothesis and the reading X′ ⇒ Y′ being pursued, with why it
+   sits where it does on the faithfulness–defensibility frontier (§2);
 3. the quantifier and model class;
 4. which positive and which limiting possibilities the task can distinguish.
 
@@ -177,9 +252,11 @@ edits, literature tasks, audits, reports and revisions of this document.
 Read the complete changed material and the active instructions around it.
 Check:
 
-1. **Interpretation.** Which readings of the thesis were considered? Was the
-   most defensible one pursued, or the easiest to refute? Is the
-   interpretive work recorded?
+1. **Interpretation.** Which readings of the thesis were considered, and what
+   kernel was hypothesized? Was the most faithful credible reading pursued,
+   or one chosen because it was easiest to refute or easiest to prove? Were
+   added conditions and weakenings minimal and named? Is the interpretive
+   work recorded?
 2. **Quantifiers and target.** Did a conditional or possibility question
    become a demand for a universal claim, or a search only for failure? Did a
    local result become a broad pessimistic or optimistic claim?

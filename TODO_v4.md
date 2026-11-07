@@ -12,8 +12,11 @@ authorizes it as toolkit work.
 
 For every task:
 
-1. Begin by recording the candidate readings of the thesis, the most
-   defensible one chosen, and why ([AIM_BALANCE §2](v4/AIM_BALANCE.md#2-find-the-most-defensible-interpretation-then-defend-it)).
+1. Begin by recording the kernel hypothesis, the candidate readings
+   X′ ⇒ Y′, and why the chosen one is the most faithful reading with a
+   credible path to proof ([AIM_BALANCE §2](v4/AIM_BALANCE.md#2-hunt-for-the-kernel-of-truth-faithful-and-defensible-together)).
+   End by reporting the most faithful statement proved and its named gap to
+   the thesis.
 2. Seek the construction and the obstruction with equal seriousness. A
    counterexample is followed by a characterization attempt: what does imply
    the conclusion, and where does the claim hold?
