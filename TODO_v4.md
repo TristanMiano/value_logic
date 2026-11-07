@@ -4,10 +4,24 @@
 November 7, 2026, at Tristan Miano's request. The author's approval of
 [the charter](v4/CHARTER.md) (M0) is required before any task begins.
 
-Phase four is governed by [`v4/CHARTER.md`](v4/CHARTER.md). Read its
+Phase four is governed by [`v4/CHARTER.md`](v4/CHARTER.md) and its binding
+companion [`v4/AIM_BALANCE.md`](v4/AIM_BALANCE.md). Read the charter's
 **Drift** section before starting any task. Each task below names the charter
 theses it serves; a task that serves none is out of scope unless the author
 authorizes it as toolkit work.
+
+For every task:
+
+1. Begin by recording the kernel hypothesis, the candidate readings
+   X′ ⇒ Y′, and why the chosen one is the most faithful reading with a
+   credible path to proof ([AIM_BALANCE §2](v4/AIM_BALANCE.md#2-hunt-for-the-kernel-of-truth-faithful-and-defensible-together)).
+   End by reporting the most faithful statement proved and its named gap to
+   the thesis.
+2. Seek the construction and the obstruction with equal seriousness. A
+   counterexample is followed by a characterization attempt: what does imply
+   the conclusion, and where does the claim hold?
+3. End with the [end-of-task review](v4/AIM_BALANCE.md#6-end-of-task-review),
+   recorded in the task record or PR, and a closing de-biasing paragraph.
 
 ## Organizing question
 
@@ -77,10 +91,17 @@ contribution.
       no-drag). Check whether gluing failures carry real information or only
       notation.
 
-**M1 checkpoint.** Start with the charter's alignment review. If W1
-identifiability fails in every natural variant, state the repaired thesis the
-failure reveals and redirect C1 toward it. Do not narrow scope silently. If
-the sheaf adds nothing beyond notation, say so and redesign W3 before M2.
+**M1 checkpoint.** Start with the charter's alignment review.
+
+- If W1 identifiability holds in the toy model, state the result as a positive
+  conditional theorem, test its consequential perturbations (fewer judges,
+  correlated judge errors, no temporal recurrence), and pursue the widest
+  class it extends to. If it fails in every natural variant, state the
+  repaired thesis the failure reveals and redirect C1 toward it. Do not
+  narrow scope silently, and do not widen a claim beyond its proof.
+- If gluing failures in the W3 sheaf carry real information, characterize
+  what they detect and carry that into W3.2. If the sheaf adds nothing beyond
+  notation, say so and redesign W3 before M2.
 
 ### M2 — Fixed points, limits and self-trust (C2, C3, C5)
 
@@ -154,14 +175,25 @@ applied to theories instead of trees?
 
 These are guidance for allocation, not clocks. Track milestones, not minutes.
 
-## Known risks
+## Risks and opportunities
 
-- **W1 may reduce to known latent-variable identifiability.** That is
-  acceptable if the reflexive fixed-point characterization (W1.4) is new.
-  Check Dawid–Skene and peer-prediction work at the start of W1.2.
-- **W3's sheaf may be decorative.** The M1 checkpoint tests this directly.
-- **W4 is the most speculative.** Bound it to one obstruction theorem before
-  extending it.
-- **Drift.** The charter's warning signs apply to this plan too. If this plan
-  itself starts pulling away from the theses, amend the plan, not the
-  charter.
+Each limiting risk is paired with the constructive possibility it sits
+beside.
+
+- **W1 and existing identifiability results.** Risk: W1 may reduce to known
+  latent-variable identifiability. Opportunity: those results may supply most
+  of the proof, leaving the reflexive fixed-point characterization (W1.4) as
+  the new content; that is a good outcome, not a lesser one. Check
+  Dawid–Skene and peer-prediction work at the start of W1.2, searching for
+  enabling theorems as explicitly as for prior art.
+- **W3's sheaf.** Risk: it may be decorative. Opportunity: gluing failures
+  may give the first precise formal statement of "no final theory." The M1
+  checkpoint tests both.
+- **W4.** Risk: it is the most speculative workstream. Opportunity: a
+  stratified self-trust result would connect C5 to C1 directly. Bound W4 to
+  one theorem, an obstruction or a positive stratified self-licensing result,
+  before extending it.
+- **Drift and its reciprocal.** The charter's warning signs apply to this
+  plan too: if the plan starts pulling away from the theses, amend the plan,
+  not the charter. Equally, do not present a restricted success as broader
+  than it is.

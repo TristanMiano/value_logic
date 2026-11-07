@@ -43,6 +43,30 @@ as success. A thesis can be refuted. It cannot be quietly abandoned.
 | C6 | **Neural networks implement a value logic, and their geometry is an atlas.** | Measured alignment between ReLU linear regions and domain-of-validity boundaries; evidence on whether depth is forced. |
 | C7 | **Policy and value are dual; a capable policy's value function is as complex as the policy.** | Identification results separating what behavior determines (decisions) from what it does not (a unique belief/value split), plus a compressibility question that bears on value fragility. |
 
+## How the theses are to be read
+
+The binding [aim-balance policy](AIM_BALANCE.md) governs how every task
+interprets and reports on the theses. Its two central rules:
+
+- **Hunt for the kernel of truth.** The theses are intuitions stated
+  informally. Given a thesis "X implies Y," the task is to find and prove
+  **X′ ⇒ Y′**, where X′ is as close to X and Y′ as close to Y as possible
+  while the implication is true and provable: the precise statement that
+  seems to generate the intuition. Faithfulness and defensibility are
+  optimized together. Proving "X does not always imply Y," or retreating to
+  whatever reading is easiest to defend, does not discharge a thesis.
+  Refuting the most ambitious reading does not either; it shows which
+  condition is missing or which conclusion is too strong, and that is the
+  next step toward the most faithful statement that holds. Finding the
+  kernel is itself valuable work and is credited as a contribution.
+- **Prefer informative statements.** "X does not imply Y" and "it is not
+  always the case that X" are the start of an answer, not the end. Ask what
+  does imply Y, when X does hold, and which conditions separate the cases.
+  Headlines are positive conditional claims followed by their limits.
+
+The search for limits stays real. Constructions and obstructions get equal
+effort and equal standards, and neither direction is presumed in advance.
+
 ## What counts as a contribution
 
 This is foundational research. A result counts when it does at least one of
@@ -53,6 +77,14 @@ these:
 2. **Unifies:** shows that two founding ideas are the same structure.
 3. **Refutes informatively:** shows that a thesis fails *and* states the
    repaired thesis that the failure points to.
+4. **Interprets:** finds the kernel of an informal thesis, a precise reading
+   that is both faithful to it and credibly provable, making it ready to
+   prove.
+
+Obstructions, counterexamples and characterized limits are legitimate
+contributions. Constructions, sufficient conditions, successful repairs and
+characterized regions where a thesis holds are equally legitimate, and
+agents must seek them with equal seriousness.
 
 "Ordinary methods reproduce it" is information to report, not a verdict.
 Classical logic can simulate intuitionistic proofs by translation, and that
@@ -73,8 +105,8 @@ to a calculus of loss bounds, to a parametric linear-programming range
 algorithm. T = J² was demoted as "untyped" and never typed. Excellence
 centroids were excluded. Reflection stayed acyclic despite an explicit
 statement that this was temporary. Ontology change shrank to adding entries
-to a fixed library. No single step was unreasonable. Each one chose the most
-defensible next problem, and audits, including Claude's, rewarded claims that
+to a fixed library. No single step was unreasonable. Each one chose the safest
+next problem, the one least exposed to critique, and audits, including Claude's, rewarded claims that
 survive critique, which means narrower claims. Nothing protected the
 ambition.
 
@@ -89,6 +121,11 @@ Stop and re-align when any of these appear:
   judgment, supersession or self-application.
 - A thesis is weakened, renamed, deferred or moved to "motivation only"
   without a proposed repaired version.
+- A thesis is "answered" by refuting its most sweeping reading, or by
+  proving a reading so weakened that little of the thesis remains, with no
+  attempt at the most faithful provable one.
+- Headlines and dispositions are mostly negations: "does not imply," "not
+  always," "not established," "ordinary methods tie."
 - The work is chosen mainly because a measurable computational delta against
   conventional methods is available.
 - Bookkeeping (clocks, gates, recurrence ledgers, trace archives) is growing
@@ -98,6 +135,13 @@ Stop and re-align when any of these appear:
   moves.
 - The author's essays and the current paper no longer sound like the same
   project.
+
+Drift has a reciprocal form, and it is also a warning sign:
+
+- A success on a restricted class is announced as the thesis proved in
+  general, or a construction's assumptions disappear from its summary.
+- An inconvenient but independently motivated obstruction is set aside
+  rather than characterized.
 
 ### The re-alignment rule
 
@@ -114,13 +158,20 @@ Stop and re-align when any of these appear:
    chosen to move one of them.
 4. **Every audit asks two questions:** "Is it correct?" and "Did it preserve
    or recover a thesis?" An audit that answers only the first is incomplete.
-5. **When in doubt, re-read the founding essays** and ask whether their
+5. **Every task ends with the end-of-task review** in
+   [AIM_BALANCE.md §6](AIM_BALANCE.md#6-end-of-task-review), recorded in the
+   task record or pull request.
+6. **When in doubt, re-read the founding essays** and ask whether their
    author would recognize the current work as theirs. If the answer is
    unclear, ask the author.
 
 Narrowing a claim to make it true is often right. Narrowing the *project*
-silently is not. When a thesis really does fail, say so prominently, keep
-what was learned, and state the strongest version that survives.
+silently is not. The reciprocal also holds: widening a claim beyond its proof
+is not right either, and a successful construction keeps its real
+assumptions. When a thesis really does fail, say so prominently, keep what
+was learned, and state the strongest version that survives. When a thesis
+succeeds on a restricted class, say so prominently too, and pursue its
+extension.
 
 ## Working norms
 
