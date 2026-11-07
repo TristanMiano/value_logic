@@ -2,7 +2,12 @@
 
 **Start with the [project charter](v4/CHARTER.md).** It states the project's
 theses and sits above every phase plan, protocol and audit. Read its
-**Drift** section before starting any task. Phase-four work follows
+**Drift** section before starting any task, and follow the binding
+[aim-balance policy](v4/AIM_BALANCE.md): pursue the most defensible reading of
+a thesis and defend it, prefer informative positive conditional statements to
+bare negations, pair every search for failures with an equally explicit
+search for constructions, and perform its end-of-task review after every task,
+including documentation edits. Phase-four work follows
 [TODO_v4.md](TODO_v4.md) once the author approves the charter. The phase-three
 notes below are historical.
 
