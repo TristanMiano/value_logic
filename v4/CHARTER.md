@@ -1,8 +1,10 @@
 # Value Logic Charter
 
-**Status:** draft for the author to rewrite. Drafted by **Claude (Opus 5.5)**
-on November 7, 2026, at Tristan Miano's request. Until the author replaces or
-approves this text, treat it as a proposal, not as the author's voice.
+**Status: APPROVED by Tristan Miano on November 8, 2026.** Drafted by
+**Claude (Opus 5.5)** on November 7, 2026. Approval and the author's accompanying
+recurrence-floor amendment are recorded in the
+[dated decision](decisions/2026-11-08_approval.md) by **Codex (GPT-6)**.
+Approval adopts the research charter; its theses remain research targets.
 
 This charter sits above every phase plan, protocol, gate and audit. When a
 procedure in this repository conflicts with the charter, the charter wins.
@@ -184,8 +186,13 @@ extension.
   history. Use releases or Git LFS, and keep individual commits small.
 - **Attribution stays honest.** Record which model or person produced each
   result. Model-generated analysis is not third-party endorsement.
-- **Milestones replace minute ledgers.** Track what was shown, not how many
-  minutes were spent.
+- **Milestones assess progress; recurrence floors protect sustained work.**
+  Under the author's November 8 amendment, each selected research recurrence
+  has a four-hour engaged-research floor unless explicitly overridden for that
+  recurrence. Keep a small observed timing record, with administration and
+  waiting excluded. Time alone does not discharge a thesis. The
+  [recurrence procedure](RECURRENCE.md) implements this without importing the
+  phase-three archive or its accumulated time.
 
 ## Amending this charter
 

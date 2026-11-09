@@ -34,10 +34,15 @@ adds little information, and closes a question that was not actually
 answered. A long list of such statements can look like rigorous progress
 while the project's positive content shrinks.
 
-The project's history contains both patterns. T = J² was demoted as an
+The project's history contains these patterns. T = J² was demoted as an
 "untyped slogan" and not typed. The recursive-judgment countermodel
-J_m = J₀ showed when recursion adds *no* information, and the question of when
-it *does* was not asked. The neural probe tested a localist reading (clean
+J_m = J₀ showed when recursion adds *no* information. The
+[phase-one proper-score bridge](../paper.md#f4-proper-score-information-and-the-task-quotient)
+also gave a positive conditional connection between predictive judgment and
+task information, and characterized incremental information beyond earlier
+reports. Full latent-task recovery and a coupled T/J² construction remained
+open. Preserve that positive starting point while pursuing the stronger theses.
+The neural probe tested a localist reading (clean
 eight-neuron cost blocks) that the policy/value intuition does not predict;
 the report itself noted that ordinary training gives no reason for such
 blocks, but the test of the distributed reading was deferred. Phase contribution

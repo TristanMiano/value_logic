@@ -9,9 +9,11 @@ faithfulness and defensibility together, never retreating to its negation or
 to the easiest statement), prefer informative positive conditional statements to
 bare negations, pair every search for failures with an equally explicit
 search for constructions, and perform its end-of-task review after every task,
-including documentation edits. Phase-four work follows
-[TODO_v4.md](TODO_v4.md) once the author approves the charter. The phase-three
-notes below are historical.
+including documentation edits. The author approved the charter on November 8,
+2026. Phase-four work follows [TODO_v4.md](TODO_v4.md) and the
+[four-hour recurrence procedure](v4/RECURRENCE.md). Inspect the active cycle and
+its observed timing before starting or resuming research; a context refresh
+does not start a new cycle. The phase-three notes below are historical.
 
 Use the actual checkout root. Preserve unrelated local work and historical
 scientific records. Attribute new research to the model actually doing it.
