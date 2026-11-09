@@ -8,9 +8,10 @@ See the [author decision](v4/decisions/2026-11-08_approval.md) and
 [initialization review](v4/reviews/2026-11-08_initialization.md).
 
 **Active cycle: none. Completed cycles: none. Credited research: 0 minutes.**
-Next research, when selected: P4-R1-C001. The physics-task world is a
-provisional example, with the separate author choice in M0.2 still open.
-This revision itself starts no four-hour clock.
+Next research, when selected: P4-R1-C001. On November 9 the author chose a
+**hybrid running example** for M0.2; see the
+[decision](v4/decisions/2026-11-09_running_example.md), recorded by
+**Claude (Fable 5.2)**. Neither revision starts a four-hour clock.
 
 ## Aim and authority
 
@@ -67,33 +68,52 @@ no separate four-hour floor and are not a checklist whose first traversal
 closes the subject. Keep lightweight notebook records and a single cycle index
 at the end of this plan; no phase-three-sized trace archive is required.
 
-## Running example
+## Running examples
 
-Provisional starting point: a **physics-task world** with performers/models,
-noisy judges and tasks across Newtonian, relativistic and drag-sensitive regimes.
-Specify which observations are available to performers, judges and the evaluator;
-hidden regime labels may score a synthetic experiment but cannot secretly train
-an algorithm advertised as recovering them from judgments.
+Author choice, November 9: a **hybrid** of linked worlds around one core
+([decision](v4/decisions/2026-11-09_running_example.md)).
 
-Add explicit actions, scarce resources and repeated environmental feedback for
-W6; add inherited or transmitted evaluation rules, variation and differential
-persistence/reproduction for W7. Keep internal preferences, received approvals,
-measured predictive success and external selection payoffs distinct until a
-bridge between them is proved. The environment may also change in response to
-agents. A bare prediction table is not yet an evolutionary environment.
+- **Abstract judgment core.** Type performers, task instances, outcomes, judges
+  and the two levels of evaluation once, independent of any world. W1's
+  definitions and results are stated here. Exhibit every core result in at
+  least one instance, so that it stays a statement about judgment and value.
+- **Physics-task world** (instance). Performers/models, noisy judges and tasks
+  across Newtonian, relativistic and drag-sensitive regimes. Primary for C3,
+  C4 and C6. For W1, prefer many heterogeneous model builds with costs, and
+  tasks that carry a tolerance, so that skill transfers unevenly and judges
+  have something to be good or bad at.
+- **Multi-agent game-like world** (instance). Agents with goals, explicit
+  actions, scarce resources and repeated environmental feedback for W6;
+  inherited or transmitted evaluation rules, variation and differential
+  persistence/reproduction for W7. Also a natural setting for C7. The
+  environment may change in response to agents. A bare prediction table is not
+  yet an evolutionary environment.
 
-Use the same example where it illuminates the connection. If one world would
-predetermine a thesis or omit a necessary mechanism, document a linked companion
-example and the correspondence. Construct supportive and contrasting cases
-under comparable naturalness standards. Do not force every phenomenon into an
-inadequate simulation merely to claim integration.
+Add further task families as instances when a thesis needs them. Each instance
+documents its correspondence to the core: what plays performer, task, outcome
+and judge, and which observations are available to performers, judges and the
+evaluator. Hidden labels may score a synthetic experiment but cannot secretly
+train an algorithm advertised as recovering them from judgments. Keep internal
+preferences, received approvals, measured predictive success and external
+selection payoffs distinct until a bridge between them is proved.
+
+Instance designs are settled by the cycle that first needs them. Connection
+across worlds is a research question for P4-R8, not a property of the setup:
+seek results that transfer through the core and the conditions that make them
+transfer, and equally seek separating examples showing where a result is
+specific to one world. A result shown in one instance is claimed for that
+instance until the transfer is argued. Construct supportive and contrasting
+cases under comparable naturalness standards. Do not force every phenomenon
+into an inadequate simulation merely to claim integration.
 
 ## M0 — Approval and preparation
 
 - [x] **M0.1** Author approves the charter, November 8, 2026, with the recurrence
   direction recorded separately.
-- [ ] **M0.2** Author confirms the physics-task running example or chooses another.
-  Provisional design can be prepared; approval of this choice is not inferred.
+- [x] **M0.2** Author chooses a hybrid running example, November 9, 2026: an
+  abstract judgment core with the physics-task world and a multi-agent game-like
+  world as linked instances. See the
+  [decision](v4/decisions/2026-11-09_running_example.md).
 - [x] **M0.3** Establish [notebook](v4/notebook/README.md) and
   [results](v4/results/README.md) directories; bulk outputs stay out of git history.
 - [x] **M0.4** Review Opus's initialization and repair the execution plan and
