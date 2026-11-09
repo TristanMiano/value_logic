@@ -1,0 +1,131 @@
+# P4-R1-C001: recursive judgment and task recovery
+
+**Contributor:** Claude (Fable 5.2). **Opened:** November 9, 2026.
+**Authorization:** Tristan Miano, November 9: "You can now begin P4-R1-C001
+with the 240 minute floor." **Module:** P4-R1 / W1. **Theses:** C1, C2 (C5 later).
+**Example:** the abstract judgment core, exhibited in the physics-task instance
+([M0.2 decision](../../decisions/2026-11-09_running_example.md)).
+**Floor:** 240 engaged research minutes, no override. Observed clock:
+[timing.jsonl](timing.jsonl), tool [clock.py](../clock.py). Exploratory notebook
+record; stated results go to [results](../../results/).
+
+## Thesis in the author's terms
+
+"Judgment is itself a task. A judge can be judged." A good judge predicts that
+a performer who did well at T will do well at T again, and that requires
+knowing what T is: "a judge who cannot tell the difference between T, U, and V
+will make bad predictions." So judging judges forces recovery of the real
+boundaries between task types (C1), and delineating tasks and judging judgments
+are one operation, T = J² (C2). "Yes" means "I expect it to reappear."
+
+## Kernel hypothesis
+
+A judgment is a forecast of recurrence. Judging the judge scores that forecast
+against the later outcome. A forecast must generalize from past instances to a
+future one, and the judge's task delineation is exactly its rule for which past
+instances bear on which future ones. Hence the second-order score is a function
+of the delineation, and the delineations it rewards are the ones that respect
+real differences in how skill transfers. The mechanism needs the performer to
+*reappear*; without recurrence there is nothing to generalize.
+
+## Candidate readings (faithfulness / defensibility)
+
+| | Reading | Faithful? | Provable? |
+|---|---|---|---|
+| R0 | T = J∘J as functions | Literal | No common type; refuted as stated in phase one. Boundary marker only. |
+| R1 | **T = argmax J²**: rank delineations by the best second-order score they support; the optimal ones are exactly those that separate every pair of task types with different skill transfer | High: keeps direction (judging judges ⇒ delineation), objects and the surprising part (facts recovered from value) | Credible: sufficiency plus a strictness argument |
+| R2 | **T = symmetry of the J²-optimal judge**: every judge implicitly delineates tasks by what it treats as interchangeable; for the optimal judge that relation is the factual one; partition ↦ judge ↦ partition has the factual partition as its unique optimal fixed point | Higher: gives the mutual determination C2 asks for | Credible given R1 |
+| R3 | Judges weighted by other judges, no outcome oracle; coupled fixed point of weighting and delineation; grounded versus self-confirming equilibria | Highest: this is the essay's society of judgers | Open; needs R1/R2 first, then independence or anchoring conditions |
+| R4 | "Sufficiently good judges carry some task information" (phase one F.4) | Low: weaker conclusion, already proved | Done |
+
+Start with R1 and R2, which sit strictly above R4 and have a path to proof;
+R3 is the named obligation they leave. Spending: R1/R2 assume an evaluator
+with outcome access and score the *best* forecast a delineation supports.
+
+## Declared model, quantifiers, comparison
+
+Performers with latent skill θ ~ P; task instances x with type z(x), drawn
+independently of skill; outcome Y ~ f(· | θ, z); conditional independence
+across performances. A judge with delineation c sees a performer's n past
+(cell, outcome) pairs and the target's cell, and forecasts the target outcome.
+J² is expected log score. Quantifiers: all delineations c, all n ≥ 0, all
+finite outcome sets, arbitrary skill law. Comparison: (a) no recurrence
+(n = 0, or performer identity unlinked), the "first-order" baseline given the
+same outcomes; (b) equally informed non-recursive methods (latent-class and
+co-clustering identifiability). Constructive targets: exact recovery
+statement, the threshold n at which it starts, an instance in the physics
+world. Limiting targets with repairs: no skill variation, unlinked identity,
+skill-dependent task selection, suboptimal judges, duplicated labels.
+
+## Forecast and directions
+
+Rough forecast: 240 to 300 research minutes over several sessions; overhead
+30 to 45 minutes. No result is promised. Directions, revisable:
+1. Type the core; prove or break R1; find the recurrence threshold.
+2. R2 fixed point. 3. Exact numerical check on small worlds, including a
+   tolerance-dependent physics instance. 4. Literature: latent block /
+   exchangeable-array identifiability, Dawid–Skene, peer prediction.
+5. Stability (near-optimal judges recover approximately), then R3.
+
+## Session log
+
+### S1, 2026-11-09 (Claude, Fable 5.2)
+
+**Alignment first.** C1 moved forward at a restricted scope: with an outcome
+evaluator, judging judges recovers exactly the transfer facts that judging
+performances without reappearance cannot. C2 moved forward: a typed
+judge/delineation correspondence with the factual partition as its unique
+optimal fixed point. C5 did not move. The headline cannot be stated without
+judgment and value, and no thesis was weakened or renamed.
+
+**Done.** Typed the core model. Proved R1 (Theorem 1), a stability bound
+(Theorem 2) and R2 (Theorem 3); proved the no-reappearance limit and the
+identifiable-assignment repair for skill-dependent task choice. Exact checks
+on designed, physics and random worlds. Bounded literature comparison. Stated
+in [R1.1](../../results/R1_recurrent_recovery.md).
+
+**Raw findings worth keeping.** (1) The whole gain from difficulty to
+transfer happens at the first reappearance; nothing in the statement needs
+long histories. (2) Merge deficits are not monotone in history length
+(22 of 1,200 cases). (3) With skill-dependent task choice, specialists who
+never leave their niche make distinct tasks indistinguishable; 1% random
+assignment already restores a deficit. (4) In the physics instance the
+recovered task partition changes with the tolerance of judgment.
+
+**Interpretive choice the author should confirm.** "First-order judgment
+cannot" is read here as "judgment without reappearance of the performer,
+given the same outcomes." A first-order table of approvals with performer
+identities does contain the transfer facts; extracting them means scoring
+which judgments predict which later ones, which is the second-order score.
+
+**Self-review (aim balance).** Readings R0 to R4 were laid out before work
+and the two most faithful provable ones were pursued; conditions added (an
+outcome evaluator, tasks met independently of skill, best forecast per
+delineation) are named in the result with their repairs or open status.
+Construction and limits both received work: three theorems, two limiting
+propositions, and probes that produced unwelcome facts (non-monotone
+deficits, failure under specialist selection). Identified risks: the core of
+Theorem 1 is close to known sufficiency results, so its novelty may be
+overstated, which section 7 of the result tries to bound without a full
+literature reconstruction; the model was chosen where the construction
+works, which the selection probe only partly offsets; proofs and checks come
+from one model in one session. Possible risk: the reading of "first-order"
+above is the one under which the thesis holds cleanly. This is a
+self-review and does not guarantee impartiality.
+
+**Observed time.** 302,977,203,168 ns of D+L+E, which is 5.05 minutes
+(D 3.87, L 0.21, E 0.97), plus 1.58 minutes of administration, across 11
+observations in one runtime. Derivation done before the first observation
+is unobserved and uncredited. **Floor remaining: 234.95 minutes.** At this
+rate of work per observed minute the floor corresponds to several dozen
+sessions of this size; the author has been asked how to treat it. The cycle
+stays open and unfinished.
+
+**Next move on resume.** R3: judges weighted only by other judges. Use
+conditional independence of judges given outcomes (Kong and Schoenebeck's
+mutual-information results; three-view latent-class identifiability) to seek
+conditions under which every fixed point of the coupled weighting and
+delineation is grounded, and construct the self-confirming fixed points that
+correlated conventions allow. Then: judges who learn outcome laws from
+finite data (does a needless split now cost score?), a stability bound for
+general n, and whether unflagged random assignment suffices.
