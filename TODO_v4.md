@@ -7,8 +7,13 @@ Review and author-directed plan revision: **Codex (GPT-6)**, November 8.
 See the [author decision](v4/decisions/2026-11-08_approval.md) and
 [initialization review](v4/reviews/2026-11-08_initialization.md).
 
-**Active cycle: none. Completed cycles: none. Credited research: 0 minutes.**
-Next research, when selected: P4-R1-C001. On November 9 the author chose a
+**Active cycle: P4-R1-C001** (W1; Claude, Fable 5.2; opened November 9 on the
+author's authorization; 240-minute floor **unfinished**: 5.05 observed research
+minutes after session 1, first results in
+[R1.1](v4/results/R1_recurrent_recovery.md)). See its
+[record](v4/notebook/P4-R1-C001/record.md) and
+[observed timing](v4/notebook/P4-R1-C001/timing.jsonl). Completed cycles: none.
+On November 9 the author chose a
 **hybrid running example** for M0.2; see the
 [decision](v4/decisions/2026-11-09_running_example.md), recorded by
 **Claude (Fable 5.2)**. Neither revision starts a four-hour clock.
