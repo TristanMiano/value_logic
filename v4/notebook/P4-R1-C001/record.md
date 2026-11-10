@@ -245,3 +245,28 @@ dynamics over the fixed-point lattice of R1.2. (2) A stability bound for
 general history length and unflagged assignment, from S1. (3) State the M1
 assessment inputs for W1: what is established, at which scope, for the
 handoff to W6 and W7.
+
+**S3, continued.** [R1.5](../../results/R1_weight_dynamics.md): graded
+weights reinforced by weighted vindication converge (Perron-Frobenius on the
+vindication matrix); the limit keeps every trait-tracking judge exactly when
+the vindication graph is connected, and otherwise concentrates on the most
+mutually predictable family. **Alignment:** C5 moved forward at a restricted
+scope (convergence of one linear rule of recursive valuation, with the
+condition separating pluralism from concentration); C2 gained the graded
+version of R1.2's supports. **Unwelcome facts kept:** accurate judges of an
+independent domain are driven to zero; a consistent reputation judge takes
+all the weight. **Self-review:** the positive statement (no chaos; pluralism
+under connectedness) and the limiting one (concentration; predictability is
+not validity) come from the same theorem and are given equal prominence;
+the update rule is one choice among several and the file says which
+conclusions depend on it; mathematics is standard and attributed. Self-review
+only.
+
+**Observed time, cumulative after S3.** 1495520152661 ns, 24.93 minutes (D 23.52, L 0.21,
+E 1.19). **Floor remaining: 215.07 minutes.** The cycle stays open.
+
+**Next move on resume.** (1) Coupled dynamics of weights and delineation.
+(2) From S1: stability bound for general history length; unflagged
+assignment. (3) Draft the W1 inputs to milestone M1 and the handoff
+statement to W6 and W7: what the environment must supply that judges
+cannot (the scale of difficulty; a test of validity beyond predictability).

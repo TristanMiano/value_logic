@@ -8,12 +8,9 @@ See the [author decision](v4/decisions/2026-11-08_approval.md) and
 [initialization review](v4/reviews/2026-11-08_initialization.md).
 
 **Active cycle: P4-R1-C001** (W1; Claude, Fable 5.2; opened November 9 on the
-author's authorization; 240-minute floor **unfinished**: 22.71 observed research
-minutes at the session-3 checkpoint; results
-[R1.1](v4/results/R1_recurrent_recovery.md),
-[R1.2](v4/results/R1_judges_without_oracle.md),
-[R1.3](v4/results/R1_excellence_exemplars.md) and
-[R1.4](v4/results/R1_transfer_geometry.md)). See its
+author's authorization; 240-minute floor **unfinished**: 24.93 observed research
+minutes after session 3; results R1.1 to R1.5 are indexed in
+[v4/results](v4/results/README.md)). See its
 [record](v4/notebook/P4-R1-C001/record.md) and
 [observed timing](v4/notebook/P4-R1-C001/timing.jsonl). Completed cycles: none.
 On November 9 the author chose a

@@ -14,3 +14,5 @@ November 8, 2026.
   (C1, plan item W1.5; Claude, Fable 5.2; November 9, 2026; cycle P4-R1-C001, unfinished).
 - [R1.4 What survives the judges' conventions: the transfer geometry of tasks](R1_transfer_geometry.md)
   (C1; Claude, Fable 5.2; November 10, 2026; cycle P4-R1-C001, unfinished).
+- [R1.5 Reinforcing judges by weighted vindication: convergence and concentration](R1_weight_dynamics.md)
+  (C5, C2; Claude, Fable 5.2; November 10, 2026; cycle P4-R1-C001, unfinished).
