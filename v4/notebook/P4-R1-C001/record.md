@@ -179,3 +179,26 @@ judges with different criteria over multi-attribute objects; which objects
 are ever chosen, what the chosen set reveals, what nonlinear criteria add.
 (3) Graded weights and update dynamics; vindication with longer histories.
 (4) From S1: stability bound for general n; unflagged assignment.
+
+**S2, continued.** [R1.3](../../results/R1_excellence_exemplars.md) takes up
+the tree argument (W1.5): the set of objects ever picked as best is the same
+for every diverse population of judges; with shared causes it depends on the
+criteria only through the cone of the transfer kernel; an explicit count for
+planar Gaussian causes; linear versus min-type judges. Mostly standard
+ingredients, assembled as the kernel of the tree argument and tied to R1.1.
+Two defects in the first simulation run (memory, and a reused loop variable
+that silently disabled one comparison) were found and fixed before any
+number was recorded. C1 moved slightly; the "great judge" who recovers why
+the dimensions are connected is still open. Self-review: the exact
+low-rank assumption does most of the work, and the result says so; the
+unwelcome column (idiosyncratic components enlarge the set) is reported
+beside the favourable one.
+
+**Observed time, cumulative after S2.** 1,142,371,825,989 ns of D+L+E, which
+is 19.04 minutes (D 17.75, L 0.21, E 1.08). **Correction applied:** three E
+intervals totalling 1,673,922,558,208 ns (27.90 minutes) were spent waiting
+on the exemplar simulation and are removed in full by an appended exclusion
+record; they are not engaged research under the recurrence procedure. Long
+computations will run under mode O from now on. One interval is uncredited
+because it spans the pause between sessions and a change of runtime.
+**Floor remaining: 220.96 minutes.** The cycle stays open.

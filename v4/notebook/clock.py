@@ -9,6 +9,11 @@ not pause/stop, and the gap is at most 15 minutes. Research credit is D+L+E.
 
   clock.py FILE MODE EVENT [note]   MODE in D L E O; EVENT in start tick pause resume stop
   clock.py FILE --sum
+
+A correction is an appended record with event "exclude", a mode and
+"exclude_ns": that many nanoseconds are removed from the mode's credit, for
+example when an interval turns out to have been waiting on a computation.
+Run long computations under mode O so that waiting is never credited.
 """
 import datetime, json, pathlib, socket, sys, time
 
@@ -40,11 +45,14 @@ def credit(path):
     excluded = 0
     for a, b in zip(rows, rows[1:]):
         gap = b["mono_ns"] - a["mono_ns"]
-        if (a["runtime"] == b["runtime"] and a["event"] not in ("pause", "stop")
-                and 0 <= gap <= MAX_GAP_NS):
+        if (a["runtime"] == b["runtime"] and a["event"] not in ("pause", "stop", "exclude")
+                and b["event"] != "exclude" and 0 <= gap <= MAX_GAP_NS):
             total[a["mode"]] += gap
         else:
             excluded += 1
+    for row in rows:
+        if row["event"] == "exclude":
+            total[row["mode"]] -= row["exclude_ns"]
     research = total["D"] + total["L"] + total["E"]
     return {"ns": total, "research_ns": research, "research_min": research / 6e10,
             "floor_remaining_min": max(0.0, 240 - research / 6e10),
