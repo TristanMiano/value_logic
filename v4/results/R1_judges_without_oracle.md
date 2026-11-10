@@ -300,7 +300,9 @@ These are small designed worlds, not a sample of worlds.
   performance and not who performed it, approvals can depend on a performer's
   traits only through the performance, so a judge of reputation alone is a
   random judge and world F has the fixed points of world A. Candidate
-  repairs not yet worked out: independent communities whose biases differ, taking
+  repairs: [R1.4](R1_transfer_geometry.md) shows which facts about tasks
+  survive task-specific conventions (transfer, not difficulty). Not yet
+  worked out: independent communities whose biases differ, taking
   what all of them distinguish; an anchor in consequences that no judge
   controls, which is where the environment modules W6 and W7 enter.
 - **History length one.** Vindication is defined with one past performance.
