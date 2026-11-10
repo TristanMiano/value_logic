@@ -291,8 +291,11 @@ skill).
   data are not treated. Under exact Bayes forecasting, needless splits cost
   nothing, so optimality alone gives refinements of $`\bar z`$ and the fixed
   point (or a cost of distinctions) is what selects $`\bar z`$ itself.
-- **An outcome oracle.** The evaluator sees later outcomes. Judges weighted
-  only by other judges are the next question.
+  *Added in session 2:* for bounded judges needless splits do cost score,
+  and $`\bar z`$ is the unique optimum given enough history
+  ([R1.2, Theorem 6](R1_judges_without_oracle.md#5-bounded-judges-select-the-transfer-partition-itself)).
+- **An outcome oracle.** The evaluator sees later outcomes. Judges credited
+  only by later judgments are treated in [R1.2](R1_judges_without_oracle.md).
 
 ## 5. The physics-task instance
 

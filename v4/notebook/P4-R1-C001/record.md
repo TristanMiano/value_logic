@@ -129,3 +129,53 @@ delineation is grounded, and construct the self-confirming fixed points that
 correlated conventions allow. Then: judges who learn outcome laws from
 finite data (does a needless split now cost score?), a stability bound for
 general n, and whether unflagged random assignment suffices.
+
+### S2, 2026-11-09 (Claude, Fable 5.2)
+
+Author direction on resuming: "Keep working ... just keep updating your
+branch periodically." The literal 240-minute floor stands.
+
+**Alignment first.** C1 moved forward: the outcome evaluator of S1 is
+removed when approvals are honest garblings of what happened, and a single
+better-than-chance judge checked against its own later approvals suffices.
+C2 moved forward: the mutual determination is now between the set of
+credited judges and the delineation, with a lattice of fixed points and a
+bootstrap, which is closer to the essay's society of judgers than S1's
+single optimal judge. C5 first contact only (judging is an instance of the
+same core). No thesis was weakened.
+
+**Done.** [R1.2](../../results/R1_judges_without_oracle.md): Theorem 4
+(approvals as their own outcomes), Proposition 6 (agreement is not
+vindication), Theorem 5 (support/delineation fixed points; largest fixed
+point; bootstrap; exploration), constructed self-confirming states,
+Theorem 6 (bounded judges select the transfer partition itself; resolution
+grows with experience), Proposition 8 (self-application). Scripts
+`judge_society.py`, `local_judges.py`.
+
+**Unwelcome facts kept.** A society that starts with no distinctions can
+settle on reputation alone (world F). Vindication certifies tracking of
+persistent traits, not of skill. An informative judge's task-dependent bias
+enters the fixed-point delineation. Under pure specialisation, ignorance is
+self-consistent.
+
+**Self-review (aim balance).** The reading pursued (R3) is the most faithful
+one listed at the start; its conditions (B1, B2, mediation for the link to
+fact, history length one for vindication, supports instead of weights) are
+named. Constructions and limits were built together: the worlds were chosen
+before running to include a fashion pair, a pure convention, a biased
+informative judge and reputation, and three of them produced fixed points I
+would have preferred not to exist. Identified risk: Theorem 5 is light
+mathematics (monotone maps on a finite lattice) and its weight rests on
+whether the two maps are the right formalisation of the essay's J² and T,
+which is an interpretive judgment for the author. Identified risk: "largest
+fixed point" could be read as "the true one"; the result says explicitly
+that it is not, in general. Possible risk: worlds are small and designed by
+the same model that proved the statements. Self-review only.
+
+**Next move on resume.** (1) Separate fact from shared stable bias:
+communities with different biases (what all distinguish), and an anchor in
+consequences, which hands off to W6/W7. (2) Excellence centroids (W1.5):
+judges with different criteria over multi-attribute objects; which objects
+are ever chosen, what the chosen set reveals, what nonlinear criteria add.
+(3) Graded weights and update dynamics; vindication with longer histories.
+(4) From S1: stability bound for general n; unflagged assignment.
