@@ -202,3 +202,71 @@ record; they are not engaged research under the recurrence procedure. Long
 computations will run under mode O from now on. One interval is uncredited
 because it spans the pause between sessions and a change of runtime.
 **Floor remaining: 220.96 minutes.** The cycle stays open.
+
+### S3, 2026-11-10 (Claude, Fable 5.2)
+
+Author direction: "The latest work has been merged. You can continue working."
+
+**Alignment first.** C1 moved forward on the point where S2 stopped: among
+judges who respond to performances, the part of their judgments that does
+not depend on their conventions is identified exactly. It is the transfer
+geometry of tasks; difficulty is the part confounded with convention. The
+"great judge" of the tree argument gets a precise object (the matrix of
+transfer correlations) and R1.3's open item on recovering the causes is
+closed up to rotation. C2 and C5 did not move this session.
+
+**Done.** [R1.4](../../results/R1_transfer_geometry.md): Theorem 9 (binary:
+identification, invariance, sharpness), Theorem 10 (general grades:
+canonical correlations between skill spaces), Corollary 11 (tree world).
+Script `transfer_geometry.py`.
+
+**Unwelcome facts kept.** The central identity is Spearman's correction for
+attenuation, so the mathematics is classical. Difficulty cannot be
+recovered from approvals under free task conventions. A first estimator for
+two raters with different scales was wrong by up to 0.52 and was replaced.
+
+**Self-review (aim balance).** The question was posed by S2's limit
+("vindication is not validity") and answered with a positive
+characterisation and its exact boundary, not with the non-identifiability
+alone. The positive result needs performance mediation and
+better-than-chance raters; both are stated, and reputation is outside it.
+Identified risk: presenting a classical identity as a contribution; the
+result file names the source and claims only the reading and the sharpness
+statement. Possible risk: "difficulty is convention-confounded" may read as
+"difficulty is not a fact"; it is a fact that needs an anchor outside
+approvals, which is the stated handoff to W6 and W7. Self-review only.
+
+**Observed time, cumulative at this checkpoint.** 1362763369497 ns, 22.71 minutes;
+floor remaining 217.29 minutes. The simulations ran in seconds under E; no
+exclusion needed.
+
+**Next move on resume.** (1) Graded judge weights and their update
+dynamics over the fixed-point lattice of R1.2. (2) A stability bound for
+general history length and unflagged assignment, from S1. (3) State the M1
+assessment inputs for W1: what is established, at which scope, for the
+handoff to W6 and W7.
+
+**S3, continued.** [R1.5](../../results/R1_weight_dynamics.md): graded
+weights reinforced by weighted vindication converge (Perron-Frobenius on the
+vindication matrix); the limit keeps every trait-tracking judge exactly when
+the vindication graph is connected, and otherwise concentrates on the most
+mutually predictable family. **Alignment:** C5 moved forward at a restricted
+scope (convergence of one linear rule of recursive valuation, with the
+condition separating pluralism from concentration); C2 gained the graded
+version of R1.2's supports. **Unwelcome facts kept:** accurate judges of an
+independent domain are driven to zero; a consistent reputation judge takes
+all the weight. **Self-review:** the positive statement (no chaos; pluralism
+under connectedness) and the limiting one (concentration; predictability is
+not validity) come from the same theorem and are given equal prominence;
+the update rule is one choice among several and the file says which
+conclusions depend on it; mathematics is standard and attributed. Self-review
+only.
+
+**Observed time, cumulative after S3.** 1495520152661 ns, 24.93 minutes (D 23.52, L 0.21,
+E 1.19). **Floor remaining: 215.07 minutes.** The cycle stays open.
+
+**Next move on resume.** (1) Coupled dynamics of weights and delineation.
+(2) From S1: stability bound for general history length; unflagged
+assignment. (3) Draft the W1 inputs to milestone M1 and the handoff
+statement to W6 and W7: what the environment must supply that judges
+cannot (the scale of difficulty; a test of validity beyond predictability).
