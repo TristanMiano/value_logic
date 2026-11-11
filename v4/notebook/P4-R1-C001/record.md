@@ -9,6 +9,12 @@ with the 240 minute floor." **Module:** P4-R1 / W1. **Theses:** C1, C2 (C5 later
 [timing.jsonl](timing.jsonl), tool [clock.py](../clock.py). Exploratory notebook
 record; stated results go to [results](../../results/).
 
+**Closed November 11, 2026, after S6 by Codex (GPT-6):** the existing cycle
+completed **240.4442427858 engaged research minutes**. See the closing entry
+below and the [W1 assessment](assessment.md). Earlier session statuses remain
+historical. W1 advances at a stated scope and remains available to recur;
+phase four is not complete.
+
 ## Thesis in the author's terms
 
 "Judgment is itself a task. A judge can be judged." A good judge predicts that
@@ -462,3 +468,137 @@ sufficient budgets and stronger ordinary comparators are retained beside the
 positive constructions. The change from exact expectations to observed
 updates is explicitly bounded to the binary fixed-share case. The final
 complete changed-material review remains due after the floor.
+
+**S6 fourth checkpoint, November 11, 2026, 08:11 UTC.** Alignment first:
+C1/C2 advance through joint judgments with bounded representations and
+through ordered temporal recurrence. The coalition construction gives a
+faithful case where even single-performance full observations do not identify
+the tasks, while repeated judgments do. A controlled-probe composition links
+observed evidence to useful concept adoption, with a coarse-adequacy option.
+C3 gains a directed grounding condition; C4 and C6--C7 are unchanged, and
+C5 self-licensing remains open.
+
+R1.14 separates joint coalition information from factorwise prediction.
+Classical exponential-family identification and composite likelihood support
+its bounded-interaction recovery condition. Three independent latent skills
+make the six-judge example's full one-performance law uniform on all tasks;
+repeated observations recover four classes among eight labels in the saved
+finite experiment. Higher-order parity and anchor-bundled conventions remain
+explicit boundaries, with richer coalition and mediation repairs.
+
+R1.15 extends the population theorem to directed laws with fixed reference
+context frequencies. A three-cycle carries 0.12849650 nats while every common
+binary partition carries zero; a role-specific binary pair carries 0.04402454.
+A small symmetric perturbation preserves a large joint-versus-single-split
+gap. A seeded fine-concept proposal recovers the directed law in the ODE.
+This strengthens the obligation to generate compound distinctions; it does
+not implement an endogenous proposal policy or a general adaptive-chain learner.
+
+R1.13 Corollary 28B implements probing, certified adoption, and subsequent
+calibration under compatible assumptions. In the weak-exposure run, its final
+MSE is 0.008891 versus passive coupled selection's 0.323874 and always-fine's
+0.008680. The extra intervention authority is explicit. The boundary-cost
+case exhausts its probe budget without a strict certificate, so this is not
+an economically optimal query policy.
+
+Observed cumulative research: **12,954,892,213,848 ns**, or
+**215.9148702308 minutes**. Remaining floor: **24.0851297692 minutes**.
+The cycle stays open; this checkpoint's administration is excluded.
+Next: finish the bounded source comparisons and assess the strongest supported
+W1 reading, its integrated and separate components, and the next thesis-level
+question. Complete the final aim-balance review after the research floor.
+
+Checkpoint self-review: small coalitions could have silently reintroduced a
+full joint law; the explicit factorwise restriction repairs that risk. The
+initial shared-trait example allowed one-performance task discrimination;
+independent skill coordinates now demonstrate why repeated judgment matters.
+Practical speed claims are bounded by the stronger fine comparator and by
+unpriced interventions. Both the directed refinement obstruction and its
+constructive repairs receive explicit proofs.
+
+### S6 closing assessment, November 11, 2026
+
+**Alignment before correctness.** C1/C2 advance from ideal recurrence scores
+to explicit coupled concepts and several observed-data constructions. C3 gains
+a conditional environmental limit; C5 gains convergence for specified recursive
+updates. C4/C6/C7 are unchanged here, and C5 logical self-trust remains open.
+The [assessment](assessment.md) states the strongest supported reading and
+recommends **advance W1 at stated scope; available to recur**. M1 still needs
+the W6/W7 environmental contracts. No new recurrence or phase completion is
+authorized by this closure.
+
+**Closing scientific additions.** A finite decision-sufficiency argument and
+an explicit family of threshold goals connect factual distinctions to useful
+action. Their average value gap equals predictive squared error, with a
+finite-menu resolution bound. A compatible reference-decision consequence of
+R1.9's convergence is mathematical rather than a claim that wager income
+automatically induces its learning rule. The directed checker passed 20 exact
+goal-family identities and 100 finite-menu comparisons. Twenty-five additional
+rational scalar checks verified the reference-wager integral. The strongest
+close comparison, the Schervish cost-loss representation in Gneiting--Raftery,
+was read and credited. This is a useful synthesis, not a new scoring rule.
+
+**Timing.** Final research boundary: **2026-11-11 08:44:38 UTC**. Cumulative
+research is **14,426,654,567,148 ns = 240.4442427858 minutes**. The inherited
+Fable balance is **1,697,189,080,848 ns = 28.2864846808 minutes**; S6 adds
+**12,729,465,486,300 ns = 212.1577581050 minutes**. The raw log has 167
+observations, with explicit exclusions and pauses. A preliminary stop left
+0.2293807042 minutes and was followed by a same-cycle resumption and further
+decision-composition checking; only the final stop closes the floor.
+Repository maintenance, execution waiting and context recovery are excluded.
+
+**Scientific validation.** S6 ran the fifteen companion programs listed in
+[REPRODUCE.md](REPRODUCE.md), plus the directed checker, with their saved
+results. The exact and high-precision checks, population simulations and
+finite observed learners are distinct evidence levels. The final scientific
+edit reran the directed checker successfully. The witness lower-bound statement
+now explicitly clips negative endpoints at zero before squaring, matching the
+existing implementation; the positive saved certificate is unchanged. A
+delimiter in that equation was repaired. Earlier failed finite-horizon or
+economic comparisons remain in the results rather than being overwritten by
+later positive examples.
+
+**Repository validation (administrative, no research credit).** All 23 changed
+Markdown files passed the math guard; 191 local link targets resolved. The 16
+S6 Python programs compiled and their 16 JSON records parsed. The staged path
+check and all 32 relocated evidence paths passed, preserving 5,350,075 original
+bytes. The full verification run exposed a deterministic Windows fixture issue:
+`verification/test_math_views.py` wrote CRLF where the existing portable-view
+generator and byte-level verifier require LF. Two fixture writes now explicitly
+use LF; all 13 focused integrity tests pass. The 1,728-test run also found a
+pre-existing Windows path-separator assertion in
+`verification/test_v2_f14_protocol.py`. A diagnostic change to `Path.as_posix()`
+made all 1,728 tests pass, but that file is hash-bound by the historical F14
+freeze. The diagnostic change was therefore reverted, preserving its exact
+Git blob hash `0c00634f9282b827acf8d6dfe17299d37462c0a74ba05da2c37779ef407a868a`.
+The remaining local Windows limitation is this one known assertion; do not
+describe the final local suite as entirely passing. The Linux CI run uses the
+unchanged historical test. The actual committed fixture repair is confined to
+`verification/test_math_views.py`; production rules and historical artifacts
+were not relaxed or rewritten. This administrative work earns no recurrence
+credit.
+
+**Complete changed-material self-review.** Reviewed the active charter,
+AIM_BALANCE, recurrence procedure, W1 plan and original handoff; the complete
+changed result texts R1.1--R1.15 and result index; S6's scripts and saved
+results; `review_s6.md`, `extensions_s6.md`, this record and timing; and the
+closing `assessment.md`, `HANDOFF.md`, `REPRODUCE.md` and TODO changes. The
+assessment's result map identifies the supporting statements and obligations.
+Fable's historical scripts, outputs and model attribution remain unchanged.
+
+The substantive corrections preserve positive constructions while tightening
+their targets: distinct prediction objectives, affine calibration, tied Perron
+components, low-rank exemplar counts, coalition versus joint information,
+fixed reference contexts and certified versus expected forecast gain. The final
+review also distinguishes pairwise-separated weight components from joint
+independence, with a vector-judge repair. The coupled-recovery potential and
+boundary argument were reconstructed again before closure.
+
+An actual risk of aim inversion appeared when tighter certificates were treated
+as a reason to buy more evidence; the adverse cost result and a Bayesian
+decision alternative repair that interpretation. Another risk is treating a
+supplied vocabulary's convergence as ontology invention. The next W6/W7 work
+and the priority W1 return to funded compound proposals keep that obligation
+active. Stronger conventional methods and the appropriate established
+mathematics are preserved alongside the constructive results. This is a
+self-review, not independent endorsement or a guarantee of impartiality.

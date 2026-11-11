@@ -39,6 +39,11 @@ $`\sum_y\mu_yR_{xy}=1`$ for every x. It forecasts the next event by
 $`P_R(Y=y\mid X=x)=\mu_yR_{xy}`$. Thus all such recurrence laws have marginal
 mu and are reversible. This is a substantive model restriction.
 
+The later [R1.15, Corollary 32A](R1_directed_reappearance.md#2-the-coupled-dynamics-do-not-require-reversibility)
+extends this theorem to directed densities preserving mu on both margins.
+The population reference-context condition remains explicit; that extension
+does not assert arbitrary adaptive-chain estimation from stationary matrices.
+
 The environment has one admissible density F. In the conditional-i.i.d. model
 of R1.6 it is
 

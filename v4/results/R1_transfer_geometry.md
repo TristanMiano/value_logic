@@ -200,7 +200,11 @@ The identity in Theorem 9(i) is Spearman's correction for attenuation from
 classical test theory: the correlation between true scores is the observed
 cross-correlation divided by the geometric mean of the reliabilities, with
 reliability measured by repeated measurement. Corollary 11 is the starting
-point of factor analysis. Both are quoted from memory. What is added is the
+point of factor analysis. The S6 review checked Spearman's original
+attenuation discussion, including unequal measurement reliability, in
+[Part II, section 2, of the 2010 reprint](https://gwern.net/doc/psychology/1904-spearman.pdf)
+of the 1904 paper. The factor-analysis historical comparison has not received
+a separate primary-source reconstruction here. What is added is the
 use: reading the corrected correlation as the convention-free part of what
 judges' approvals say about tasks, the sharpness statement (iii) that
 positive affine calibration is precisely what these channels can hide, and the link to

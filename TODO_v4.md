@@ -1,21 +1,24 @@
 # Value Logic Phase Four: Recursive Value
 
-**Status, November 10, 2026:** the author has **APPROVED the charter**.
+**Status, November 11, 2026:** the author has **APPROVED the charter**.
 The research plan uses recurring four-hour modules; the first cycle is
-**in progress**. Original initialization: **Claude (Opus 5.5)**, November 7.
+**complete at a stated W1 scope**. Phase four remains open.
+Original initialization: **Claude (Opus 5.5)**, November 7.
 Review and author-directed plan revision: **Codex (GPT-6)**, November 8.
 See the [author decision](v4/decisions/2026-11-08_approval.md) and
 [initialization review](v4/reviews/2026-11-08_initialization.md).
 
-**Active cycle: P4-R1-C001** (W1; opened by Claude, Fable 5.2, November 9;
-resumed by Codex, GPT-6, November 10 on the author's authorization;
-240-minute floor **unfinished**: 184.77 observed research
-minutes at S6's third checkpoint; results R1.1 to R1.13 are indexed in
-[v4/results](v4/results/README.md); a
-[handoff note](v4/notebook/P4-R1-C001/HANDOFF.md) is written for the next
-contributor). See its
-[record](v4/notebook/P4-R1-C001/record.md) and
-[observed timing](v4/notebook/P4-R1-C001/timing.jsonl). Completed cycles: none.
+**Active cycle: none.** P4-R1-C001 completed its existing floor with
+**240.4442427858 observed research minutes**: 28.2864846808 by Claude
+(Fable 5.2), then 212.1577581050 by Codex (GPT-6). Its
+[assessment](v4/notebook/P4-R1-C001/assessment.md) recommends **advance at
+stated scope; available to recur** for W1. Results R1.1--R1.15 are indexed in
+[v4/results](v4/results/README.md). See the
+[record](v4/notebook/P4-R1-C001/record.md),
+[timing](v4/notebook/P4-R1-C001/timing.jsonl), and
+[current handoff](v4/notebook/P4-R1-C001/HANDOFF.md).
+The recommended next module is W6, followed by W7; neither is started.
+M1 still needs their environmental contracts. Completed cycles: one.
 On November 9 the author chose a
 **hybrid running example** for M0.2; see the
 [decision](v4/decisions/2026-11-09_running_example.md), recorded by
@@ -131,7 +134,7 @@ into an inadequate simulation merely to claim integration.
 
 | Module | Continuing question | Theses | Floor for each selected cycle | Status |
 | --- | --- | --- | --- | --- |
-| P4-R1 / W1 | Recursive judgment, task recovery and T = J² | C1, C2, C5 | 4 research hours | P4-R1-C001 in progress |
+| P4-R1 / W1 | Recursive judgment, task recovery and T = J² | C1, C2, C5 | 4 research hours | C001 complete; advance at stated scope, available to recur |
 | P4-R6 / W6 | Instrumental convergence and shared value-relevant structure | C1, C2, C3, C5, C7 | 4 research hours | Not started |
 | P4-R7 / W7 | Evolution, environmental selection and meta-value | C1, C3, C4, C5, C7 | 4 research hours | Not started |
 | P4-R2 / W2 | Truth as a limit or fixed point of successful judgment | C3, C2, C5 | 4 research hours | Not started |
@@ -415,10 +418,12 @@ by these modules, protected floors and result-based milestone assessments.
 
 ## Cycle index
 
-No research cycles have been selected or completed. Add one row per completed
-cycle and retain the active pointer at the top while a cycle is unfinished.
-Record ID, scope, exact observed research time, thesis movement, outcome, next
-unresolved question and notebook/result link. An unfinished floor stays visible.
+| Cycle | Scope and observed research time | Thesis movement | Outcome and next question |
+| --- | --- | --- | --- |
+| [P4-R1-C001](v4/notebook/P4-R1-C001/assessment.md), November 9--11, 2026 | W1 recovery, coupled concepts, finite evidence, coalition and temporal extensions; **14,426,654,567,148 ns = 240.4442427858 min** | C1/C2 advanced; bounded C3 grounding and C5 convergence mechanisms; C4/C6/C7 unchanged, logical self-trust open | Advance W1 at stated scope; recur on budgeted concept generation and finite adaptive recovery. Next recommended module W6 asks when varied goals reward the recovered distinctions; W7 asks which environments select the needed learning practices. |
+
+An unfinished selected cycle retains the single active pointer above. Completing
+a cycle does not close its module or authorize another four-hour block.
 
 ## Planning review
 

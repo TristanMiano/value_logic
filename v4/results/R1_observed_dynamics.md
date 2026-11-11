@@ -1,6 +1,6 @@
 # R1.13 Coupled judgment from observed outcomes
 
-**Author:** Codex (GPT-6), November 10, 2026. **Cycle:**
+**Author:** Codex (GPT-6), November 10--11, 2026. **Cycle:**
 [P4-R1-C001, S6](../notebook/P4-R1-C001/record.md).
 **Theses:** C1/C2, with a conditional C3 connection. **Evidence:** an
 almost-sure convergence proof, finite-observation bounds and an implemented
@@ -226,7 +226,93 @@ influence to the fine model, its update becomes the same as the comparator;
 under the common random numbers their late numerical paths coincide. That
 explains the ties without turning them into an independent performance gain.
 
-## 5. Established machinery and the remaining contribution
+## 5. A tested intervention can select a useful concept earlier
+
+The slow weak-exposure run suggests a constructive change in the experiment.
+Suppose the controller can carry out the exact exclusion probes of R1.11:
+it randomly proposes a sign, its own component reproduces that sign, and the
+source share is chosen before the proposal. Accepted marks estimate the
+environmental a even when that share is unknown. This is additional control
+authority; it was not available to the passive learner in (28.2).
+
+**Corollary 28B (certified adoption and subsequent grounding).** Fix a fine
+concept cost kappa in [0,1), and use R1.11's confidence sequence I=[l,u]
+with failure probability alpha. While probing, choose the first applicable
+decision:
+
+- Adopt the fine concept when dist(0,I)^2>kappa, initialized with
+  b*=proj_I(0), the point of I closest to zero.
+- Choose the coarse concept when max(l^2,u^2)<kappa.
+- Otherwise continue the stated experiment, or retain an unresolved decision
+  if the authorized query budget ends.
+
+On the simultaneous confidence event, fine adoption has strictly positive
+reference-environment score gain 2ab*-(b*)^2-kappa over coarse. Freezing that
+forecast preserves this guarantee while a stays fixed. A coarse decision is
+oracle-optimal among the two concept classes at this cost. Assume that on
+any path of indefinite probing its cumulative exposure diverges. If
+a^2!=kappa, the decision occurs in finite time almost surely.
+
+After fine adoption, an alternative is to give that concept full influence
+and continue calibration with deterministic steps gamma_t<=1,
+sum gamma_t=infinity and sum gamma_t^2<infinity. If subsequent predictable
+environmental shares have a positive lower bound, then b_t and the actual
+conditional mean converge almost surely to a. This convergence statement
+does not turn every intermediate calibrated forecast into a certified one.
+
+*Proof.* When I is positive, a>=l=b*>0, hence
+2ab*-(b*)^2>=l^2>kappa. The negative case is symmetric. If the whole
+interval has squared magnitude below kappa, even the best fine forecast
+has lower net value than coarse. Infinite cumulative probe exposure produces
+infinitely many accepted marks; their mean converges to a and the confidence
+radius tends to zero. Strict separation from the decision boundary then
+forces a finite decision, whether or not an earlier confidence failure
+occurred. Correctness of that decision has the stated confidence guarantee.
+
+For calibration after adoption, let x_t=b_t-a. Under full influence,
+the conditional drift of x_t^2 is at most
+-2e_min gamma_t x_t^2+4gamma_t^2. The nonnegative supermartingale obtained
+by adding the remaining 4 sum gamma_t^2 tail converges, and its drift gives
+sum gamma_t x_t^2<infinity. Thus x_t^2 tends to zero, and so does the
+actual-mean error. The argument applies conditionally after the random
+adoption time, with the step schedule restarted there. QED.
+
+This is a mathematical composition of R1.11's experiment and the single-fine
+case of stochastic calibration, with an explicit selection step. The
+companion [probe_adoption.py](../notebook/P4-R1-C001/probe_adoption.py)
+implements that composition, including cases
+where the coarse concept is worth keeping. It does not implement an
+evolutionary incentive to perform the experiment. Probe feasibility, changes
+caused by forced actions, query fees and foregone deployment utility must be
+priced in an application; trial counts alone do not establish a net gain.
+
+Its [saved output](../notebook/P4-R1-C001/probe_adoption.json) uses twelve
+paths per setting, 100,000 raw observations per method and path, kappa=0.04
+and 95% confidence per path. The methods induce different streams, coupled
+by common random numbers. At a=0.6,e=0.05 all twelve paths adopt fine,
+with median decision trial 3,499 (range 288--7,379). Final forecast MSE is
+0.008891, versus 0.323874 for passive coupled selection and 0.008680 for
+always using the fine predictor. The intervention repairs the selection
+delay; it does not outperform the already adequate fine comparator here.
+At a=0,e=0.05 every path selects coarse, with median decision trial 16,422.
+
+At a=0.1,e=0.05, ten paths certify coarse and two remain unresolved at the
+budget. At the exact boundary a=0.2, all twelve exhaust 100,000 probes
+without a strict decision; coarse already has oracle value there. This is
+a material cost failure of certificate-only querying. R1.11 Proposition 24
+provides a sufficient information-cost cap, and its Bayesian calculation
+shows a positive query-selection route under a prior. Neither turns this
+unpriced experiment into an economically optimal controller. Coverage in
+the table is per path, not a simultaneous 95% claim across all 72 paths.
+
+An ordinary experiment-design and confidence-bound controller implementing
+these steps is the same method. Its value here is the mechanism: a judgment
+can earn influence by predicting what survives a controlled check against
+its own causal effect, and can then become calibrated to that grounded
+recurrence. It also supports an adequate coarse judgment when the remaining
+distinction is too small to repay its declared use cost.
+
+## 6. Established machinery and the remaining contribution
 
 [Mendler-Dunner et al. (2020), Theorem 3.2](https://proceedings.neurips.cc/paper_files/paper/2020/file/33e75ff09dd601bbe69f351039152189-Paper.pdf)
 already prove stochastic performative retraining rates under strong convexity,
@@ -246,7 +332,9 @@ grounding guarantee and its integration with concept selection, not a claim
 that conventional learning cannot express it.
 
 The next extensions are multi-concept finite-data recovery, endogenous
-creation of missing distinctions, strategic adoption of the calibration
-rule, and faster decisions when a coarse representation is already adequate.
+creation of missing distinctions, and strategic adoption of the calibration
+or intervention rule. Corollary 28B supplies a bounded faster-selection route
+and a coarse-adequacy decision; a useful application still needs its full
+intervention economics.
 The decreasing-exposure theorem in R1.12 is a separate population result;
 its thresholds have not been transferred to this stochastic step schedule.

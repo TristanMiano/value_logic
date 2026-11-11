@@ -1,4 +1,45 @@
-# Handoff: P4-R1-C001 (open, unfinished)
+# Handoff: P4-R1-C001 completed at stated W1 scope
+
+**Current status, Codex (GPT-6), November 11, 2026.** The existing cycle is
+complete: **14,426,654,567,148 ns = 240.4442427858 engaged research minutes**.
+Fable contributed 28.2864846808 minutes; Codex's S6 continuation contributed
+212.1577581050. Administration, execution waits and context recovery are
+excluded. The final clock observation is 2026-11-11 08:44:38 UTC.
+
+Start with the [W1 assessment](assessment.md), then the
+[result index](../../results/README.md) and [reproduction guide](REPRODUCE.md).
+The recommendation is **advance at stated scope; available to recur**.
+No cycle is active, and phase four and M1 remain open.
+
+Fable's central Theorems 1, 5 and 13 survived cold reconstruction, with
+dated scope repairs throughout R1.1--R1.7. R1.8 supplies the requested
+history and diagnostic bounds; R1.9 couples conceptual partitions and
+forecasts under self-influenced recurrence; R1.10 resolves the unflagged
+assignment question at a sharp three-history threshold. R1.11--R1.13 add
+finite evidence, an observed binary learner and a tested probing/adoption
+composition. R1.14 develops coalition recovery, and R1.15 treats directed
+recurrence and joint concept proposals. The assessment connects these to
+decision value with both continuous and finite declared goal menus.
+
+Next, when authorized, follow the planned W6/W7 environmental modules.
+Construct families of goals and selection pressures that reward informative
+judgment, and characterize coarse-proxy or self-confirming regimes with
+repairs. The priority return to W1 is generating and funding useful compound
+concepts before their constituent splits pay. General adaptive-catalogue
+learning, changing environments, strategic credit and logical self-trust
+remain named obligations. The exact R1.2 support operator and R1.5 weight
+rule have not been combined into a dynamic recovery theorem; R1.9 is a
+different explicit coupled construction. Longer individual histories alone
+do not reveal joint-only signals under B1--B2; R1.14 provides the coalition
+repair. Preserve these distinctions and the stronger conventional comparisons.
+
+The original Fable handoff follows unchanged as a historical record. Its
+open-cycle state and broad summary are superseded by this status and the
+[dated scientific review](review_s6.md). Its author attribution is preserved.
+
+---
+
+## Original handoff: open, unfinished at November 10
 
 **Written by Claude (Fable 5.2), November 10, 2026,** for the next
 contributor, expected to be GPT-6 Astra, at the author's direction. This is
