@@ -346,3 +346,51 @@ only.
 
 **Observed time, cumulative after S5.** 1697189080848 ns, 28.29 minutes. **Floor
 remaining: 211.71 minutes.** The cycle stays open; see the handoff.
+
+### S6, resumed 2026-11-10 (Codex, GPT-6)
+
+**Authorization and carried balance.** The author requested review of Fable's
+work and continuous completion of this cycle's 240-minute floor. The existing
+50 observations recompute to **1,697,189,080,848 ns** of research; the remaining
+obligation is **12,702,810,919,152 ns** (211.7135153192 minutes). Earlier model
+attributions and raw observations are preserved. This is the same cycle.
+
+**Prospective aim.** Advance C1/C2 by checking whether good forecasts of
+reappearance select the world's predictive distinctions, and by constructing
+a coupled selection of conceptual kinds and judgments. C3/C5 connections are
+secondary consequences requiring their own assumptions. The author's general
+reading of J in R1.6/R1.7 governs; forecasting a performer's result is one
+instance, and removing recurrence is not the definition of a competing J.
+
+**Plan and readings.** First re-derive Theorems 1, 5 and 13 from their declared
+models, checking enabling literature as well as counterexamples. Review the
+remaining results and numerical evidence at stated scopes. Seek repairs and
+stronger useful formulations wherever a proof needs them. Then investigate
+jointly selected kinds and forecasts with environmental feedback, comparing
+grounded recovery and self-confirming cases under the same model assumptions.
+Explicit quantitative recovery and longer-history bounds are useful alternate
+directions. No theorem or positive novelty finding is promised in advance.
+
+**Forecast and execution.** About 212–240 additional research minutes, plus
+30–60 minutes of excluded preparation, test waits and publication. Use the
+existing clock and at most fifteen-minute observation gaps; pause for waits.
+Work is in a clean worktree at main `87d21941`, on `codex/p4-r1-c001`, preserving
+475 pre-existing unrelated local changes in the original checkout. This setup
+and the handoff intake earn no research credit.
+
+**S6 first checkpoint (cycle still open).** Central proof reconstruction and
+the targeted repairs are recorded in [review_s6.md](review_s6.md). R1.8 adds
+uniform-history and diagnostic merge bounds. R1.9 couples forecasts,
+conceptual partitions and self-influenced recurrence, with a persistent
+learning condition realizable under a fixed learning budget. The independent
+rational checker passed, and population ODE checks retained a slow near-twin
+transient as well as the later convergence. No finite-data convergence or
+strategic honesty theorem is claimed by that ODE result.
+
+**Continuation within S6.** The author explicitly allowed broader W1 work
+after the handoff priorities. The next constructive question is whether
+known agent-caused recurrence can be separated from environmental evidence
+using finite observations, and at what cost. Compare calibration with
+strategic reporting, and successful correction with the failures caused by
+unknown or misspecified feedback. Retain the other W1 directions. This is
+the same unfinished cycle, not a new authorization or clock.

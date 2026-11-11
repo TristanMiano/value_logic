@@ -7,6 +7,11 @@
 Perron-Frobenius theorem and exact computations on small worlds, by one
 model; not independently reviewed.
 
+**S6 review and extension, Codex (GPT-6), November 10, 2026:** tied maximal
+components are included below, and the count-based update is identified as
+linear reinforcement. Earlier simulations remain unchanged. See the
+[review](../notebook/P4-R1-C001/review_s6.md).
+
 ## What this shows
 
 R1.2 described which *sets* of judges are self-consistent. Here judges carry
@@ -24,17 +29,19 @@ does not "go absolutely wild."
   from any such judge to any other through pairs whose approvals of
   different performances of a performer are dependent. By R1.4 this is a
   statement about the transfer geometry of the domain.
-- **When they are not connected, weight concentrates on one family and the
-  rest go to zero** (Theorem 12(ii)). The winner is the family whose members
+- **Disconnected families with smaller Perron roots lose weight; families
+  tied at the largest root can coexist** (Theorem 12(ii)). The winner, when
+  unique, is the family whose members
   bear each other out most strongly, not the one that is most right. In the
   example with a reputation judge beside two outcome trackers, the
   reputation judge takes all the weight when it is consistent enough and
   none when it is not.
 
 So the essay's remark that the dimensions of excellence "are connected" is
-not only an observation about trees. It is the condition under which a
-society that reinforces its judges recursively keeps all of its competent
-judges instead of collapsing onto its most self-consistent family.
+not only an observation about trees. Connectedness is a sufficient condition
+for an initialization-independent limit that retains every nonzero judge.
+It is not necessary for coexistence from a specified start: disconnected
+families with equal maximal roots can all survive.
 
 ## 1. Setting and result
 
@@ -58,12 +65,15 @@ w\;\mapsto\;\frac{M_c\,w}{\|M_c\,w\|_1}.
 
 **Theorem 12. Evidence: proved; computed in eight worlds.**
 
-- **(i)** From any starting weights with $`M_cw\ne0`$ the iteration
-  converges, provided that among the components of the vindication graph
-  that carry starting weight one has a strictly largest Perron root. A judge
+- **(i)** From any nonnegative starting weights with $`M_cw\ne0`$ the iteration
+  converges. A judge
   with a zero row has weight zero from the first step.
-- **(ii)** The limit is the Perron vector of that component and is zero
-  outside it.
+- **(ii)** Only components tied at the largest Perron root among those
+  carrying starting weight survive. Let u_B be the positive unit-Euclidean
+  Perron vector on such a block B, extended by zero elsewhere. The limit is
+  the L1 normalization of the sum of u_B times its inner product with the
+  starting weights. With a unique maximal block this is its Perron vector;
+  with ties the mixture depends on initialization.
 - **(iii)** If the vindication graph on the judges with nonzero rows is
   connected, the limit is the same for all starting weights that touch it,
   and is strictly positive on every such judge.
@@ -74,17 +84,40 @@ judge whose approvals depend on any other judge's across performances also
 depends on its own, so each block has a positive diagonal entry and is
 primitive. By the Perron-Frobenius theorem the powers of a primitive block,
 normalised, converge to its positive Perron vector, at the rate of its
-Perron root; across blocks the largest root dominates. $`\square`$
+Perron root. Across blocks the largest root dominates; symmetry gives
+orthogonal Perron projections, yielding the stated mixture when roots tie.
+$`\square`$
 
 The step "depends on another's, hence on its own" holds because a nonzero
 covariance between $`\tilde k_{j,\kappa}`$ and another kernel forces
 $`\tilde k_{j,\kappa}`$ to vary with the traits, and then its variance, the
 covariance with itself on the same cell, is positive.
 
-A count-based version, in which each judge accumulates credit earned from
-the current shares, was run alongside and approached the same limits in every
-world (it is a replicator dynamic with the same rest points; no proof is
-given here).
+A count-based version adds M_c w to a count vector a, with w=a/sum(a).
+Its continuous normalized analogue is
+
+```math
+\dot w=M_cw-(\mathbf 1^\top M_cw)w,
+\qquad
+w(t)=\frac{\exp(tM_c)w(0)}{\mathbf 1^\top\exp(tM_c)w(0)}.
+```
+
+This is linear reinforcement; the ordinary replicator equation instead
+multiplies each component's relative payoff by its own weight.
+
+**S6 extension (the discrete count update).** The implemented recurrence
+a_(n+1)=(I+M_c/A_n)a_n, where A_n=sum(a_n), converges after normalization
+to the same Perron mixture as Theorem 12. To see this, diagonalize the
+symmetric matrix. Every update is a polynomial in M_c, so it multiplies an
+eigencomponent of eigenvalue lambda by 1+lambda/A_n. Total counts grow at
+most linearly because each step adds at most the largest column sum of
+M_c. Hence the sum of 1/A_n diverges. The positive maximal Perron component
+grows without bound, so A_n tends to infinity. Relative to it every smaller
+eigencomponent vanishes: eventually its log multiplier ratio is bounded
+above by a negative constant times 1/A_n. Tied maximal components receive
+the same multiplier and preserve their initial projections. Zero-row counts
+stay constant and their normalized weights vanish asymptotically, unlike
+their immediate removal in the original power update.
 
 ## 2. Computations
 
@@ -116,8 +149,8 @@ grow with the strength of the connection.
 - **One update rule.** Rules in which credit does not depend on the
   creditors' weights (plain vindication, as in R1.2) do not concentrate.
   Which rule a real community follows is an empirical matter. The result
-  says what recursion on weights adds: convergence, and concentration when
-  the domain is disconnected.
+  says what recursion on weights adds: convergence, and concentration on
+  the maximal-root components when the domain is disconnected.
 - **Predictability is not validity,** as in R1.2: the winning family is the
   most mutually predictable one.
 - **C5.** This is a convergence statement for one linear rule of recursive
@@ -131,4 +164,6 @@ related ranking methods, and the proof is the Perron-Frobenius theorem; both
 are quoted from memory. What is added is the choice of matrix, vindication
 across a performer's reappearances instead of agreement or endorsement, the
 identification of its components with independent families of tracked
-traits, and the reading of connectedness as the condition for pluralism.
+traits, and connectedness as a sufficient condition for an
+initialization-independent form of pluralism. Equal maximal roots give the
+separate coexistence case described above.

@@ -6,6 +6,13 @@
 **Status:** stated results with proofs and exact checks on small worlds,
 written and checked by one model. Not independently reviewed.
 
+**S6 review, Codex (GPT-6), November 10, 2026:** Theorems 4--6 were
+reconstructed, with particular attention to Theorem 5. Its finite setting
+and positive-mass trait condition are explicit below. The individual credit
+rule has a self-repeatability characterization; coalition credit supplies a
+constructive extension for joint-only signals. See the
+[review](../notebook/P4-R1-C001/review_s6.md).
+
 ## What this shows
 
 R1.1 needed an evaluator who sees later outcomes. Here nobody sees outcomes.
@@ -35,8 +42,8 @@ by later judgments of the same performer's *new* performances.
 - **Bounded judges select the true delineation itself** (Theorem 6). A judge
   who uses only a performer's past results on the same task is strictly hurt
   by needless splits, so with enough history the transfer partition is the
-  unique optimum, and with little history coarser delineations win: task
-  resolution grows with experience.
+  unique optimum. In the examples, coarser delineations win with little
+  history: the useful resolution can grow with experience.
 
 What this does not show: that vindication certifies tracking of *skill*. It
 certifies tracking of persistent traits as the panel sees them, and these
@@ -52,6 +59,10 @@ $`k_S`$ is its marginal for $`S\subseteq J`$ and $`k_j`$ for one judge. No
 outcome variable is needed for the definitions. $`\theta`$ collects every
 persistent trait of the performer that affects any judge: ability, and also
 reputation if judges respond to it.
+
+The panel J is finite and there are finitely many positive-mass instance
+kernel classes under k_J. All partitions used below are therefore finite;
+null classes are ignored.
 
 - **B1.** Instances are i.i.d. from $`q`$, independently of traits.
 - **B2.** Given traits and instances, the panel's approval vectors on
@@ -126,7 +137,7 @@ judgment was made.
 
 Let $`J_{\mathrm{tr}}`$ be the judges whose approvals depend on traits:
 $`k_j(\cdot\mid\theta,x)`$ is not almost surely constant in $`\theta`$ for
-almost every $`x`$. Let $`J_{\mathrm{gen}}\subseteq J_{\mathrm{tr}}`$ be those
+a positive-q-mass set of $`x`$. Let $`J_{\mathrm{gen}}\subseteq J_{\mathrm{tr}}`$ be those
 whose instance-averaged kernel $`\sum_x q(x)k_j(\cdot\mid\theta,x)`$ depends
 on $`\theta`$: they respond to a trait that shows without any task labels.
 
@@ -176,6 +187,27 @@ $`\Sigma(\pi(\emptyset))=J_{\mathrm{gen}}`$. (iv) By (ii),
 $`\Sigma(c_0)\subseteq J_{\mathrm{tr}}`$ and $`\Phi(S)\supseteq S`$ for every
 $`S\subseteq J_{\mathrm{tr}}`$, so the chain increases; by monotonicity its
 limit lies below every fixed point containing $`\Sigma(c_0)`$. $`\square`$
+
+**S6 lemma (self-repeatability and longer histories).** A judge belongs to
+Sigma(c) exactly when some cell-averaged marginal approval probability of
+that judge varies with theta. If one varies, its covariance with its own
+later approval on the same cell is its positive variance, and the later
+panel includes that approval. If none varies, the judge's approval is
+independent of theta given its cell; every covariance defining Sigma is
+zero. Under B1--B2, any finite history of that judge's own approvals is then
+independent of theta given its cell labels. Increasing the history length
+alone cannot vindicate an individually uninformative judge in this model.
+
+This makes the operator's scope precise: access to the full later panel
+does not create additional individual credit beyond self-repeatability.
+It also identifies a useful extension. Suppose two judges output R and
+R XOR theta, where R is a fresh fair bit at each performance and theta is
+a persistent fair bit. Neither judge individually earns credit; together
+they reveal theta at every performance. Treat selected coalitions as
+judges with vector-valued approvals. B1--B2 still hold, so Theorem 5 applies
+unchanged to this finite coalition catalogue and credits the informative
+pair. This credits the joint representation, without claiming that each
+member is informative alone or solving strategic credit allocation.
 
 **Reading for C2.** J², "judgments vindicated by later judgments," is the
 map $`\Sigma`$. T, "what the vindicated judges tell apart," is the map
@@ -270,10 +302,10 @@ theirs by 0.05, and a fourth type on the opposite skill, the unique optimum
 merges the near-twin with the twins up to about a hundred past results and
 is the transfer partition from $`n=128`$ on; with a difference of 0.02 the
 change comes between $`n=128`$ and $`192`$, and with 0.15 the transfer
-partition is optimal from $`n=1`$. So for bounded judges the optimal
-delineation is single-valued, it is $`\bar z`$ once experience suffices, and
-before that it is $`\bar z`$ seen at a coarser resolution. No crossover rate
-is claimed.
+partition is optimal from $`n=1`$. Theorem 6 guarantees eventual uniqueness.
+These finite-history examples have coarser optima, but do not prove that
+every finite-history optimum is unique, coarser than bar z, or part of a
+nested sequence. No crossover rate is claimed.
 
 ## 6. Checks
 
@@ -301,15 +333,21 @@ These are small designed worlds, not a sample of worlds.
   traits only through the performance, so a judge of reputation alone is a
   random judge and world F has the fixed points of world A. Candidate
   repairs: [R1.4](R1_transfer_geometry.md) shows which facts about tasks
-  survive task-specific conventions (transfer, not difficulty). Not yet
+  survive task-specific conventions (standardized transfer geometry, with
+  mean and sensitivity still confounded). Not yet
   worked out: independent communities whose biases differ, taking
   what all of them distinguish; an anchor in consequences that no judge
   controls, which is where the environment modules W6 and W7 enter.
-- **History length one.** Vindication is defined with one past performance.
-  Dependence that appears only with longer histories is not captured.
+- **Individual rather than joint credit.** Longer histories of an
+  individual's approvals do not enlarge this vindication support under
+  B1--B2, by the S6 lemma. Joint-only information requires coalition
+  approval vectors or a different conditional-credit rule. Selecting a
+  tractable coalition catalogue and paying its cost remain open.
 - **Supports, not weights.** The fixed points are sets of credited judges.
-  Graded weights and the dynamics of an actual society updating them are
-  open.
+  [R1.5](R1_weight_dynamics.md) adds graded weights at fixed delineation;
+  [R1.9](R1_coupled_reappearance.md) couples calibrated forecasts and
+  representation weights in a different, explicit population model. A
+  dynamic realization of this particular support operator remains open.
 - **Performance-mediated approvals** are an assumption about judges, not a
   property verified from approvals.
 - **Bounded judges.** Theorem 6 treats one kind of bounded judge, who knows

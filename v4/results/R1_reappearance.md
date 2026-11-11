@@ -5,6 +5,12 @@
 **Theses:** C1, C2. **Status:** proof and checks by one model; not
 independently reviewed. The partition involved is classical (section 6).
 
+**S6 review, Codex (GPT-6), November 10, 2026:** Theorem 13 was
+reconstructed and checked using a separate rational-probability implementation.
+The comparison with R1.1 is corrected in section 3: a common proper-scoring
+framework does not make the two objectives identical.
+[R1.8](R1_quantitative_recovery.md) supplies an explicit diagnostic bound.
+
 ## The author's statement this formalises
 
 Tristan Miano, November 10, 2026:
@@ -20,7 +26,8 @@ Tristan Miano, November 10, 2026:
 
 Earlier results in this cycle read J more narrowly, as a forecast of a
 performer's later *result*. Here J forecasts that *what was seen* will be
-seen again, which is the author's reading and contains the earlier one.
+seen again, which is the author's reading. Proper forecasting accommodates
+both questions, with their different targets and side information explicit.
 
 ## What this shows
 
@@ -68,6 +75,14 @@ proportional as functions of the state,
 $`L(w\mid\theta)/L(w)=L(w'\mid\theta)/L(w')`$ almost surely. Write $`c^*`$
 for the conceptualisation that merges exactly the equally diagnostic things.
 
+Only observations with positive marginal probability are included. I(c) is
+the best log-score gain over the unconditional baseline for the c-label,
+not its unadjusted probability of reappearing. In an i.i.d. world with
+unequal event frequencies and no varying state, c* has one cell and I=0.
+The individual frequencies still matter for forecasting: a one-cell model
+can retain them in an explicit within-cell decoder. The theorem recovers
+state-diagnostic distinctions, not every difference in marginal frequency.
+
 ## 2. Result
 
 **Theorem 13. Evidence: proved; checked on 200 random worlds over all 203
@@ -111,28 +126,40 @@ successive splits are non-negative and sum to $`I(W_1;W_2)`$. A hierarchy of
 types and sub-types is such a chain with every gain positive. The order of
 splits is not unique, and a gain depends on what has already been split.
 
-## 3. One structure for both readings
+## 3. One forecasting framework, with distinct questions
 
 Let a thing be a task instance together with its result, $`W=(x,y)`$, in the
 model of R1.1. Its likelihood is
 $`q(x\mid\theta)\,f(y\mid\theta,z(x))`$, where $`q`$ may depend on the
 state if performers choose their tasks.
 
-- Twin task types of R1.1 give equally diagnostic things: $`(x,y)`$ and
-  $`(x',y)`$ are merged by $`c^*`$ for every result $`y`$. Theorem 1 is the
-  corresponding statement when only the instance is labelled and only the
-  result is forecast.
-- With skill-dependent choice of tasks, R1.1 reported, without proof, that
-  optimal delineations matched the partition by proportional joint kernels
-  in 200 random worlds and failed to in a degenerate case. Theorem 13
-  explains both: for the forecast of the *whole* next thing, task and
-  result, that partition is exactly $`c^*`$ and the statement is a theorem;
-  the degenerate case arose because only the result was being forecast.
+- Under R1.1's independent assignment, twin tasks give equally diagnostic
+  things (x,y) and (x',y), for every positive-mass result y. With
+  skill-dependent assignment, their normalized joint likelihoods need not
+  agree; assignment itself can convey persistent state.
+- Theorem 13 applies directly to whole observations even under
+  skill-dependent task choice: c* is the partition of individual
+  (task,result) observations by proportional likelihoods. A task partition
+  c induces the restricted representation (c(x),y). It is sufficient for
+  this whole-observation game exactly when that induced representation
+  refines c*. This is a statement about each retained result y, not an
+  identification of a task partition with a partition of task/result pairs.
+- It does not settle R1.1's open question about *outcome-only* prediction
+  with unflagged assignment. Even under independent assignment,
+  ```math
+  I((c(X_1),Y_1);(c(X_2),Y_2))
+  =H(Y_2\mid c(X_2))+V_1(c).
+  ```
+  The baseline depends on c. With no varying skill and task success
+  probabilities 0.2 and 0.8, preserving task identity improves V_1 by
+  0.1927447570 nats while all these pairwise mutual informations are zero.
+  [R1.8, section 3](R1_quantitative_recovery.md#3-what-the-two-games-share-and-what-they-do-not)
+  records the comparison.
 
-So "the performer will succeed again" and "this kind of thing will be seen
-again" are the same judgment at different scopes, and T = J² reads: the
-kinds worth having are the ones that the scoring of reappearance forecasts
-selects.
+Thus both readings make a conceptualisation answerable to future experience.
+The precise predictive question determines which distinctions are useful.
+T = J² reads here: scoring reappearance forecasts selects the kinds that
+retain the predictive information relevant to that declared question.
 
 ## 4. Judges who learn from limited experience
 
@@ -153,8 +180,9 @@ entry; expected log score, higher is better):
 
 Refinement follows experience, and the level that splits things the world
 treats alike is never best. This is a simulation of one estimator in one
-world, not a theorem; R1.2, Theorem 6 proves the corresponding statement for
-a different bounded judge.
+world, not a theorem; R1.2, Theorem 6 proves eventual selection of the twin
+partition for a different bounded judge, not a universally nested path of
+finite-history optima.
 
 ## 5. Checks
 
@@ -183,19 +211,23 @@ one-step, exchangeable counterpart of Shalizi and Crutchfield's refinement
 lemma for causal states. That the best resolution of a learned model grows
 with the amount of data is the content of minimum-description-length and
 histogram-resolution results. What is added is small: the identification of
-this structure with the author's J and T, the unification with Theorem 1,
-and the settling of R1.1's open observation.
+this structure with the author's J and T and the explicit one-step Gram
+argument. The S6 review read [Shalizi and Crutchfield's refinement lemma
+and proof](https://arxiv.org/abs/cond-mat/9907176v2). Section 3 now states
+the relation to Theorem 1 without identifying their optimization problems.
 
 ## 7. Limits and named obligations
 
 - **No feedback from rating to recurrence.** Things are seen again here
   because of the state, not because they were rated well. If a positive
   rating is also a cause of repetition, the process is a selection dynamic.
-  That is the subject of the evolution module W7 and is not modelled here.
+  That is not modelled here; [R1.9](R1_coupled_reappearance.md) provides a
+  bounded simultaneous forecast/representation dynamic as a bridge to W7.
 - **Conditionally independent sightings.** No learning by the performer and
   no order effects within a history.
 - **A rating is coarser than a forecast.** A yes or no carries at most the
   information of the forecast it summarises. The theorem is about forecasts.
-- **No explicit bound** for Corollary 14 in terms of how different two
-  kinds are; R1.1, Theorem 2 gives one in the narrower setting.
+- **Explicit bound added:** [R1.8, Theorem 17](R1_quantitative_recovery.md)
+  bounds the information loss using kind frequencies and normalized
+  likelihood separation, with an asymptotically sharp binary example.
 - **Capability as experience** is shown by simulation only.

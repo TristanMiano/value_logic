@@ -6,6 +6,11 @@
 linear model with elementary proofs and matching simulations, by one model;
 not independently reviewed. It is a first model, not a general theory.
 
+**S6 review, Codex (GPT-6), November 10, 2026:** the adaptive-consensus
+argument is retained; centering and the neutral stability boundary are made
+explicit below. A simultaneous forecast/concept-weight construction with
+actual probability forecasts is developed in [R1.9](R1_coupled_reappearance.md).
+
 ## The author's framing
 
 Tristan Miano, November 10, 2026, on why J should be the general forecast of
@@ -37,7 +42,9 @@ on its own terms.
   lock in.** A consensus around one rater is stable exactly when no rival
   tracks the environment better by more than a margin that grows with the
   strength of rating-caused recurrence and with the rival's dissimilarity.
-  The best available tracker's consensus is always stable; worse ones
+  Strict inequalities give asymptotic stability; equality needs the boundary
+  analysis below. The best available tracker's consensus is stable, with
+  neutral ties possible; worse ones
   survive when the environment's share is small (Theorem 15(c)).
 
 Read as a statement about truth as a limit (C3): the factual limit exists
@@ -47,7 +54,9 @@ among fixed judges.
 
 ## 1. Model
 
-Things $`w`$ have an environmental fitness $`\varphi(w)`$. Rater $`j`$ has a
+Things $`w`$ have an environmental fitness $`\varphi(w)`$. Subtract its
+mean over the fixed reference set; henceforth phi denotes this centered
+vector. Adding a constant to growth does not alter the comparisons. Rater $`j`$ has a
 rating vector $`r_j`$ over things, centred and of unit norm, and weight
 $`w_j`$; $`\bar r=\sum_jw_jr_j`$. The log growth of a thing is
 
@@ -72,19 +81,24 @@ case run.**
   common rating vector: all consensuses are equally and fully vindicated.
 - **(b) Adaptive ratings.** Let each rater move its rating vector up the
   gradient of its own vindication, staying on the unit sphere, starting from
-  a common vector. If $`e>0`$ the ratings converge to
+  a common vector. If $`e>0`$ and the centered phi is nonzero, the ratings converge to
   $`\varphi/\|\varphi\|`$ from every start except its exact opposite, the
   alignment $`a=\langle r,\varphi\rangle/\|\varphi\|`$ obeys
   $`\dot a=e\|\varphi\|(1-a^2)`$, and $`\beta`$ does not enter.
 - **(c) Fixed raters.** Let weights follow the replicator dynamic
   $`\dot w_j=w_j(s_j-\sum_kw_ks_k)`$. Consensus on rater $`j`$ is
-  asymptotically stable if, and unstable unless, for every other rater
+  asymptotically stable if, for every other rater
   $`k`$
   ```math
   e\,(h_k-h_j)<\beta\,\bigl(1-\langle r_k,r_j\rangle\bigr).
   ```
-  Consensus on a rater with the largest alignment is stable for all
-  $`\beta`$ and $`e`$.
+  If the inequality is reversed strictly for some rival, consensus is
+  unstable. At equality with beta>0 and distinct rating vectors it is also
+  unstable, by the second-order edge calculation below. Equality with
+  beta=0, or between identical rating vectors, can instead give a neutral
+  face. The largest-alignment rater is asymptotically stable when beta>0
+  and all rivals have distinct vectors, or when beta=0, e>0 and its
+  alignment is uniquely largest. Tied maxima at beta=0 are neutrally stable.
 
 *Proof.* (a) $`\langle r,\beta r\rangle=\beta`$ on the unit sphere. (b) The
 gradient of $`\langle r,\beta r+e\varphi\rangle`$ with the creditors' mean
@@ -95,7 +109,12 @@ $`\langle r,\varphi\rangle`$ on the sphere, which gives the equation for
 $`a`$. (c) At the vertex $`j`$, $`s_j=\beta+eh_j`$ and
 $`s_k=\beta\langle r_k,r_j\rangle+eh_k`$. A vertex is asymptotically stable
 under the replicator dynamic when it is a strict best reply to itself and
-unstable when some other strategy does strictly better against it.
+unstable when some other strategy does strictly better against it. To handle
+equality, put mass x on rival k and 1-x on j. Let
+d=1-<r_k,r_j> and D=e(h_k-h_j)-beta d. The rival's payoff advantage on
+this edge is D+2 beta d x. At D=0, beta d>0 implies positive advantage for
+every x>0, so the vertex is unstable. If beta d=0, the advantage is zero
+on the whole edge, giving a neutral direction rather than attraction.
 $`\square`$
 
 ## 3. Simulations
@@ -127,7 +146,8 @@ seed 20261110.
 The earlier results of this cycle that needed an outcome evaluator
 (R1.1), or approvals that are honest reports of outcomes (R1.2, R1.4), are
 cases where the environment's share is supplied by assumption. R1.4 found
-that judges alone cannot fix the scale of difficulty; here the same role
+that unconstrained task-specific approval channels conceal positive affine
+calibration, including mean and sensitivity; here a related role
 appears dynamically: the environment's share is what selects among
 otherwise equally self-consistent ratings.
 
@@ -141,10 +161,11 @@ otherwise equally self-consistent ratings.
   depends on what agents do or value, is exactly the subject of W7.
   Instrumental convergence (W6) would enter as structure shared by the
   fitness functions of different goals.
-- **No conceptualisation.** Things are taken as given kinds. Coupling this
-  dynamic to the choice of kinds (R1.6) is open.
-- **Two idealised regimes.** Real communities mix adaptation of ratings
-  with redistribution of influence; the mixed case is not analysed.
+- **Conceptualisation and simultaneous adaptation.** Things are taken as
+  given kinds here. [R1.9](R1_coupled_reappearance.md) now gives a distinct
+  coupled construction with different partitions, calibrated probability
+  forecasts and changing influence. It supplies one bridge, not a proof
+  that every mixed extension of this unit-sphere model converges.
 
 ## 6. Closest established work
 

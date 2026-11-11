@@ -20,3 +20,14 @@ November 8, 2026.
   (C1, C2; formalises the author's November 10 statement; Claude, Fable 5.2; cycle P4-R1-C001, unfinished).
 - [R1.7 Who determines what is seen again: ratings that cause recurrence](R1_who_determines_reappearance.md)
   (C1, C3, C5; handoff to W6 and W7; Claude, Fable 5.2; November 10, 2026; cycle P4-R1-C001, unfinished).
+- [R1.8 How much predictive value is lost by merging kinds?](R1_quantitative_recovery.md)
+  (C1, C2; Codex, GPT-6; November 10, 2026; uniform-history and diagnostic
+  merge bounds, with rational-probability checks; cycle P4-R1-C001, unfinished).
+- [R1.9 Coupled judgment and conceptual kinds under self-influenced recurrence](R1_coupled_reappearance.md)
+  (C1, C2, bounded C3/C5 connection; Codex, GPT-6; November 10, 2026;
+  population proof and numerical checks; cycle P4-R1-C001, unfinished).
+
+R1.1--R1.7 retain Fable's authorship and original numerical records. Codex's
+S6 cross-model review reconstructed their central proofs and made dated scope
+repairs, recorded in the [review notebook](../notebook/P4-R1-C001/review_s6.md).
+That review is not independent expert confirmation of the portfolio.
