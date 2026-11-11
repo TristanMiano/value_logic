@@ -6,6 +6,12 @@
 checks, written and checked by the same model in one session. Not
 independently reviewed. Evidence levels are marked per result.
 
+**S6 review, Codex (GPT-6), November 10, 2026:** Theorems 1--3 were
+reconstructed and Theorems 1--2 checked with a separate implementation.
+[R1.8](R1_quantitative_recovery.md) extends Theorem 2's bound to all n>=1.
+The earlier records and attribution are preserved; see the
+[review](../notebook/P4-R1-C001/review_s6.md).
+
 ## What this shows
 
 Score a judge by how well its judgments of a performer predict that
@@ -193,7 +199,11 @@ $`D_A/\alpha+D_B/\beta\le(\alpha+\beta)/(\alpha\beta)`$. $`\square`$
 
 The deficit of a merge is not always increasing in $`n`$ (22 of 1,200
 random cases over $`n=1,2,3`$), so the bound is stated for the
-single-reappearance game. A bound for general $`n`$ is open.
+single-reappearance game in the original session. **S6 extension:**
+[R1.8, Theorem 16](R1_quantitative_recovery.md) proves this same lower
+bound for every n>=1, by conditioning on the remaining fine history and
+averaging posterior second moments. This does not require monotonicity of
+the actual deficit.
 
 ## 3. The judge and the delineation determine each other
 
@@ -362,9 +372,9 @@ proof was reconstructed from them and no novelty clearance is claimed.
   outcome kernel on the task side.
 - **Latent block models.**
   [Keribin, Brault, Celeux and Govaert](https://doi.org/10.1007/s11222-014-9472-2)
-  give sufficient conditions for identifiability of the Bernoulli latent
-  block model. Co-clustering a performer-by-task table is an equally
-  informed way to recover the same column classes.
+  study estimation and selection for categorical latent block models,
+  extending earlier binary models. Under suitable identification assumptions,
+  co-clustering a performer-by-task table can target the same column classes.
 - **Information elicitation.**
   [Kong and Schoenebeck](https://arxiv.org/abs/1605.01021) pay agents an
   information-monotone measure of dependence between their reports, and in
@@ -378,9 +388,10 @@ of the reappearance threshold (difficulty at $`n=0`$, transfer at every
 $`n\ge1`$) with an elementary second-moment proof; the explicit stability
 bound; the typed judge/delineation correspondence with its unique optimal
 fixed point; and the reading of these as C1 and C2. An equally informed
-co-clustering method recovers the same partition. That equivalence is
-itself informative: such a method works by finding which judgments predict
-which later judgments, which is the second-order score.
+co-clustering method can recover the same population partition. This common
+target is informative, but it does not make a likelihood-based co-clustering
+algorithm identical to the conditional prediction objective V_n. Their
+finite-data assumptions, costs and procedures require separate comparison.
 
 ## 8. Gap to the theses
 
@@ -392,6 +403,8 @@ which later judgments, which is the second-order score.
   other. Shown: the partition and the optimal judge do, at a unique fixed
   point. Not shown: a weighting over many fallible judges, and the dynamics
   that reach or miss the grounded fixed point.
-- Excellence centroids (W1.5), the incremental-information criterion over
-  time (W1.3) beyond the $`n=0`$ versus $`n\ge1`$ threshold, and C5 are
-  untouched.
+- This result alone does not treat excellence exemplars, learned judge
+  weights, or C5. Subsequent cycle results address those restricted topics
+  in [R1.2](R1_judges_without_oracle.md), [R1.3](R1_excellence_exemplars.md),
+  [R1.5](R1_weight_dynamics.md) and [R1.9](R1_coupled_reappearance.md).
+  Broad self-trust and the full incremental-information question remain open.

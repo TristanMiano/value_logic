@@ -1,14 +1,15 @@
 # Value Logic Phase Four: Recursive Value
 
-**Status, November 8, 2026:** the author has **APPROVED the charter**.
-The research plan is revised to recurring four-hour modules; research is
-**not started**. Original initialization: **Claude (Opus 5.5)**, November 7.
+**Status, November 10, 2026:** the author has **APPROVED the charter**.
+The research plan uses recurring four-hour modules; the first cycle is
+**in progress**. Original initialization: **Claude (Opus 5.5)**, November 7.
 Review and author-directed plan revision: **Codex (GPT-6)**, November 8.
 See the [author decision](v4/decisions/2026-11-08_approval.md) and
 [initialization review](v4/reviews/2026-11-08_initialization.md).
 
-**Active cycle: P4-R1-C001** (W1; Claude, Fable 5.2; opened November 9 on the
-author's authorization; 240-minute floor **unfinished**: 28.29 observed research
+**Active cycle: P4-R1-C001** (W1; opened by Claude, Fable 5.2, November 9;
+resumed by Codex, GPT-6, November 10 on the author's authorization;
+240-minute floor **unfinished**: 28.29 observed research
 minutes after session 5; results R1.1 to R1.7 are indexed in
 [v4/results](v4/results/README.md); a
 [handoff note](v4/notebook/P4-R1-C001/HANDOFF.md) is written for the next

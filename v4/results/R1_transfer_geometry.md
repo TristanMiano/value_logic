@@ -8,6 +8,12 @@
 model; not independently reviewed. The central identity is classical
 (section 6).
 
+**S6 review, Codex (GPT-6), November 10, 2026:** the covariance identity
+and invariant geometry are retained. The quotient is by positive affine
+calibration, including sensitivity, and rank identifies a linear span unless
+an identifiable factor model is supplied. See the
+[review](../notebook/P4-R1-C001/review_s6.md).
+
 ## What this shows
 
 R1.2 ended on an open problem: from approvals alone, a fact about tasks
@@ -22,19 +28,19 @@ says exactly how much can be told.
   from approvals of two performances by the same performer, and comes out
   the same whatever the leniencies (Theorem 9). Two communities with
   different conventions recover the same matrix.
-- **Difficulty is exactly what conventions can hide.** Two task types with
-  transfer correlation one differ only in how hard they are, and for any
-  such pair there is a pattern of leniency under which a community's
-  approvals cannot distinguish them. Nothing else can be hidden. So the
-  convention-free facts are which skill a task draws on and how the skills
-  of different tasks are related; "this task is harder" cannot be separated
-  from "the judges are stricter here" without something beyond approvals
-  (Theorem 9(iii)).
+- **Positive affine calibration is exactly what these conventions can
+  hide.** Two nonconstant task profiles with transfer correlation one are
+  positively affinely related. Suitable approval channels can make them
+  coincide, hiding their means and sensitivity to skill. Profiles with
+  correlation below one cannot be made identical by such channels
+  (Theorem 9(iii)). The invariant is their standardized skill geometry.
 - **The same holds with any number of outcome and approval grades,** for the
   angles between the tasks' skill spaces (Theorem 10).
 - **This is the great judge's knowledge.** The matrix of transfer
-  correlations is the "latent geometry" of the domain: its rank is the number
-  of independent underlying causes, and in the tree world of R1.3 it is the
+  correlations is a linear "latent geometry" of the domain: its rank is the
+  dimension of the centered skill-profile span. Under a full-rank factor
+  model this equals the number of represented factors. In the tree world
+  of R1.3 it is the
   matrix of cosines between the criteria's loadings, which fixes the cone of
   excellences up to rotation. It is recovered from noisy ratings with unknown
   scales, without knowing the loadings (Corollary 11).
@@ -102,12 +108,19 @@ chance of a yes for every $`\theta`$. Conversely equal approval kernels make
 $`\varphi_z`$ and $`\varphi_{z'}`$ positively affinely related. $`\square`$
 
 The classes with $`r=1`$ are coarser than the transfer partition
-$`\bar z`$ of R1.1, which also separates tasks by difficulty. With an
+$`\bar z`$ of R1.1, which also separates tasks by mean and sensitivity. With an
 outcome evaluator, or with judges known to apply one standard across tasks,
 $`\bar z`$ is recovered (R1.1, R1.2 Theorem 4); with free task conventions
 only the coarser partition and the correlations are. If raters may also
 reverse the meaning of approval on some tasks, the sign of $`r`$ is lost and
 $`|r|`$ remains.
+
+For example, two equally likely skills give success profiles (0.1,0.9)
+and (0.4,0.6). Both tasks have mean difficulty 0.5 and their correlation
+is one, but their sensitivity differs. Positive approval channels with
+(intercept,slope)=(19/32,1/16) and (1/2,1/4), respectively, give the same
+approval profile (0.6,0.65). This is an explicit reason to retain affine
+calibration, rather than average difficulty alone, in the interpretation.
 
 ## 3. Any number of grades: angles between skill spaces
 
@@ -139,8 +152,9 @@ independent ratings on each criterion, each rating an unknown positive
 rescaling and shift of the score plus independent noise. Then
 $`r(d,d')=\cos(b_d,b_{d'})`$ is recovered by the formula of Theorem 9(i)
 applied to rating covariances. The matrix $`(r(d,d'))`$ has rank equal to
-the number of causes that the criteria load on, and determines the
-directions of the loadings up to a common rotation. So the shape of the
+the rank of the loading matrix B, and determines the directions of the
+loadings up to a common orthogonal transformation of their span. If B has
+full column rank r, this identifies r. So the shape of the
 cone $`K`$ that governs the exemplars (R1.3, Theorem 7(b)) is recovered
 from ratings alone.
 
@@ -150,8 +164,9 @@ object by different raters, including $`d=d'`$. $`\square`$
 
 This is what the essay's great judge adds to the broad judge. The broad
 judge knows the exemplars. The great judge knows the matrix: which
-excellences go together, how strongly, and how many independent causes lie
-behind them.
+excellences go together, how strongly, and the dimension of their linear
+span. Interpreting that dimension as a number of causal mechanisms requires
+additional causal and factor-identification assumptions.
 
 ## 5. Checks
 
@@ -188,7 +203,7 @@ reliability measured by repeated measurement. Corollary 11 is the starting
 point of factor analysis. Both are quoted from memory. What is added is the
 use: reading the corrected correlation as the convention-free part of what
 judges' approvals say about tasks, the sharpness statement (iii) that
-difficulty and nothing else is confounded with convention, and the link to
+positive affine calibration is precisely what these channels can hide, and the link to
 the exemplar cone.
 
 ## 7. Limits and named obligations
@@ -203,7 +218,7 @@ the exemplar cone.
   performances); a shared error that persists across a performer's
   performances is a reputation effect.
 - **Population statements.** No finite-sample rates.
-- **Difficulty remains unrecovered** from approvals with free conventions. A
+- **Mean and sensitivity remain unrecovered** from approvals with free conventions. A
   consequence that no judge controls would fix it. That is the handoff to
   the environment modules W6 and W7: what the world's own pushback adds to
   the judges' is the scale.
