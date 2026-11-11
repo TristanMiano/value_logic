@@ -383,8 +383,10 @@ adaptive finite-sample policies require separate care.
   needed distinction may remain insufficient. Mutation or exploration that
   introduces distinctions is an important extension, not supplied here.
 - **Population expectation.** Finite-data calibration, noisy competition,
-  limited computation and endogenous reference frequencies remain open.
-  The potential provides a starting point for robustness bounds and tests.
+  limited computation and endogenous reference frequencies require further
+  work. [R1.13](R1_observed_dynamics.md) now realizes the binary fixed-share
+  case from observed outcomes, with almost-sure recovery and finite bounds;
+  the full multi-concept result remains a population theorem.
 - **External kernel.** F is fixed while ratings change the sightings. A
   changing environment can create new useful distinctions; the conditions
   for tracking them belong to the next development of this construction.
@@ -460,3 +462,8 @@ that can self-confirm incorrectly.
 Proper scoring, projection, replicator dynamics and potential arguments are
 established ingredients. The comparison supports developing this synthesis;
 it is not an exhaustive theorem-level novelty clearance.
+
+[R1.12](R1_weak_exposure.md) extends the binary simultaneous dynamics to
+decreasing environmental shares and characterizes a grounding repair using
+controlled probes. Its finite-learning-rate result does not assume that
+forecasts equilibrate instantly, and its observation costs are kept explicit.

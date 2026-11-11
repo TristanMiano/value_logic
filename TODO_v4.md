@@ -9,8 +9,8 @@ See the [author decision](v4/decisions/2026-11-08_approval.md) and
 
 **Active cycle: P4-R1-C001** (W1; opened by Claude, Fable 5.2, November 9;
 resumed by Codex, GPT-6, November 10 on the author's authorization;
-240-minute floor **unfinished**: 141.97 observed research
-minutes at S6's second checkpoint; results R1.1 to R1.11 are indexed in
+240-minute floor **unfinished**: 184.77 observed research
+minutes at S6's third checkpoint; results R1.1 to R1.13 are indexed in
 [v4/results](v4/results/README.md); a
 [handoff note](v4/notebook/P4-R1-C001/HANDOFF.md) is written for the next
 contributor). See its

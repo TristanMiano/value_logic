@@ -430,3 +430,35 @@ an ordinary cost-aware alternative. The result remains a contribution to
 conditional conceptual recovery; neither successful simulations nor familiar
 statistical ingredients settle the full philosophical theses. Final review
 of all changed material remains due at the cycle boundary.
+
+**S6 third checkpoint, 2026-11-11 07:30 UTC (November 10 locally).**
+Alignment first: C1 now has a quantitative connection from observed transfer
+evidence to a learned judgment, and C2 has an actual stochastic realization
+of the binary coupled-selection model. C3's grounding bridge gains explicit
+conditions under weakening exposure, with a controlled experiment enlarging
+the successful region and a known-imperfect-control repair at adequate
+exposure. These do not settle general truth, evolution or strategic self-trust.
+
+R1.10 Theorem 19A proves a witness-to-value bound of quadratic order,
+with a matching-order interior family; Proposition 22A connects it to
+independent conditional-table training. The saved observed-data run includes
+the stronger correctly specified grouped-mixture EM baseline. R1.12 proves
+the decreasing-exposure result at finite calibration speed, retains the very
+slow threshold trajectory, and distinguishes insufficient interior feedback
+from successful exclusion. R1.13 proves almost-sure observed learning and
+gives conservative finite-observation bounds. Its weak-exposure simulation
+remains much worse than using a single fine representation from the start.
+All are Codex-generated results and checks, not independent confirmation.
+
+Observed cumulative research: **11,086,191,076,948 ns**, or
+**184.7698512825 minutes**. Remaining floor: **55.2301487175 minutes**.
+The cycle remains open. Checkpoint administration earns no research credit.
+Next: return to joint approval information and structured coalition credit,
+then assess the combined W1 contribution and unresolved obligations.
+
+Checkpoint self-review: the principal risk was treating eventual grounding
+as practical success. Slow trajectories, a finite-information limit, large
+sufficient budgets and stronger ordinary comparators are retained beside the
+positive constructions. The change from exact expectations to observed
+updates is explicitly bounded to the binary fixed-share case. The final
+complete changed-material review remains due after the floor.

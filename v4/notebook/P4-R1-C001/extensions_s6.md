@@ -223,3 +223,216 @@ likelihood and the varying-unknown-share accepted stream have different
 nuisance assumptions. A neutral fixed feedback b=0 with known e has
 information e^2/(1-e^2 a^2), so the e^-2 versus e^-1 contrast comes from
 the experiment, not an inherent superiority of a newly named estimator.
+
+## F. Quantitative selected-task recovery: current derivation
+
+The following derivation was begun during the second checkpoint's excluded
+administrative interval. No research time is reclaimed for that interval.
+It now becomes the next active mathematical question; a cold reconstruction
+and rational checks are still needed before promoting the statement.
+
+For two refined labels A,B in one coarse cell K, define
+d = E sum_y D_y^2, D_y=g_Ay q_B-g_By q_A. Let G be the n=3 fine/coarse
+log-score gap. For a two-history prefix H and last outcome y, the two swapped
+inputs have masses d1=E[H g_Ay q_B], d2=E[H g_By q_A], common numerator
+N=E[H g_Ay g_By], and fine forecasts u1=N/d1,u2=N/d2. Their coarse forecast
+p is the same. Exactly p(d1-d2)=d1(p-u1)-d2(p-u2), including zero masses.
+Weighted Cauchy and scalar Pinsker therefore control the squared mass
+difference by their log-score regret whenever p is bounded below.
+
+Expand d=sum_y sum_{v!=y}(Delta_HA-Delta_HB), where
+H_A=g_Ay g_Bv, H_B=g_By g_Av and Delta_H=E[H D_y]. The sum T of all selected
+input masses is E q_A^2 q_B^2 sum_y (f_Ay+f_By)(f_Ay+f_By-2f_Ay f_By),
+at most 2 E q_A^2q_B^2 <=1/8. Hence the contribution from coarse forecasts
+p>=gamma is at most sqrt(G)/(4 gamma).
+
+The low-p part has a positive exchangeability bound. For history outcomes
+(y,v,y), all three coarse tasks and target in K, put
+den_yv=E[g_Ky^2 g_Kv q_K], num_yv=E[g_Ky^3 g_Kv],
+B_yv=E[g_Ky g_Kv q_K^2]. Coarse p=num/den. Cauchy gives den^2<=num*B;
+therefore p<gamma implies den<=gamma B. The four selected fine inputs are
+disjoint subsets of this coarse input, and sum_yv B_yv<=E q_K^4<=1.
+Thus the absolute low-p contribution is at most gamma. Combining,
+d<=gamma+sqrt(G)/(4 gamma). Choosing gamma=d/2 suggests **G>=d^4**,
+without an outcome-positivity assumption. For n>3, reveal the remaining
+fine prefix to both forecasters, apply the bound to its posterior, and
+use Jensen on the fourth power. This should retain the same bound.
+
+If the two task outcome laws are pointwise at least gamma for each outcome,
+the swapped fine forecasts are at least gamma, even if other tasks in K
+have smaller probabilities. The weighted-variance argument then controls
+all selected inputs directly and gives the stronger **G>=16 gamma^2 d^2**.
+Neither constant nor the fourth-power universal rate is claimed optimal.
+The new question is to verify every disjointness and conditioning step,
+then search equally for sharper constructive bounds and examples limiting
+them. A tiny bound can certify strict relevance without justifying its
+practical acquisition cost.
+
+**Stronger simplification, next.** No threshold split is needed. For each
+coarse input (y,v,y), p=num/den and Holder gives
+den <= num^(2/3) C_v^(1/3), C_v=E[g_Kv q_K^3]. Hence
+den/p^2=den^3/num^2 <= C_v. All four selected fine inputs are disjoint
+subsets of that coarse input. Using the exact p Delta identity directly,
+weighted Cauchy bounds d^2 by
+(sum_selected input_mass/p^2) * (sum_selected input_mass*(u-p)^2).
+The first factor is at most (|Y|-1) sum_v C_v <= |Y|-1. The second is
+at most G/2 by scalar Pinsker, since no selected fine input is counted
+twice. This yields the much stronger universal bound
+
+```math
+V_n(c,\bar z)-V_n(c)\ \ge\ \frac{2d_{AB}^2}{|Y|-1},\qquad n\ge3.
+```
+
+If den>0 then num>0 by nonnegativity of the joint likelihoods, so division
+by p is valid on every contributing coarse input. The same posterior/Jensen
+argument extends from three to all longer histories. This subsumes the
+preliminary fourth- and third-power bounds; keep their derivation here as
+the actual path rather than promoting redundant weaker claims.
+
+A sharpness-in-order family extends the moment-matched example: take
+R=1-h with probability 1/2+h/4 and R=1+h otherwise, 0<h<1. Then
+E R^2=1 and d_AB=(4h^2-h^4)/2048. The four-observation joint law is an
+affine perturbation in 4h^2-h^4 of an interior model with independent
+task/outcome sequences. Smooth conditional KL therefore gives G_3=O(d_AB^2).
+Together with the proposed universal lower bound, the quadratic order is
+sharp in this family; the constant is not claimed sharp. Exact checks and
+a careful Taylor/positivity explanation are still needed.
+
+**Resolution.** The cold reconstruction and rational checks passed;
+R1.10 Theorem 19A now states the quadratic bound and its sharpness in order.
+Its finite conditional-table composition is Proposition 22A. The observed
+run preserves a stronger grouped-mixture comparator and distinguishes
+validation confidence from expected training regret. Xu--Liu--Sutherland
+(2026), section 4.1, supplies a close HSIC/MI comparison, but applying their
+bound inside the latent state would target a different information quantity.
+
+## G. When environmental influence diminishes
+
+The next reading of C1/C2 and the C3 bridge is: successful judgment can
+retain contact with environmental structure even when its own causal
+influence grows, provided the remaining environmental evidence is used in
+an identifiable way. Compare passive calibrated selection and controlled
+probes under the same decreasing exposure schedule. Seek a positive
+grounding theorem and a genuine insufficient-information regime, with an
+intervention that repairs the latter. This extends W1.4; it does not start
+the broader evolution or instrumental-convergence modules.
+
+First considered instantaneous calibration of a fine binary forecast:
+b*=ea/[1-(1-e)w], w'=w(1-w)b*^2. That admits a useful exposure-energy
+criterion, but assuming infinite calibration speed spends faithfulness.
+The actual simultaneous equations yield a stronger route, so pursue them.
+
+For environmental correlation a!=0, coarse forecast zero, fine forecast b,
+fine weight w, and constant calibration speed eta>0, write
+q=ea+(1-e)wb. Then
+
+```math
+b'=\eta(q-b),\qquad
+w'=w(1-w)(2bq-b^2),\qquad
+\log\frac{w(t)}{1-w(t)}
+=\log\frac{w_0}{1-w_0}+\int_0^t b(s)^2\,ds+
+                       \frac{b(t)^2-b_0^2}{\eta}.
+```
+
+The last identity follows by substituting q=b+b'/eta. It preserves finite
+calibration speed and makes accumulated squared forecasts the selection
+currency. Take b0=0, 0<w0<1 and e(t)=e0(1+t)^(-p), 0<e0<=1, p>=0.
+Changing signs reduces a<0 to a>0; then 0<=b<=a is invariant.
+
+For p<=1/2, the variation-of-constants lower bound over the last unit
+interval gives b(t)>=a e(t)(1-exp(-eta)) for t>=1, since the damping
+d=1-w+ew is at most one and e decreases. Thus integral b^2 diverges and
+w->1. For p<1/2, the identity makes 1-w decay at least as a stretched
+exponential; therefore (1-w)/e->0. At p=1/2, d->0. For every K, eventually
+d<=epsilon and, over a fixed sufficiently long window,
+b(t)>=a e(t)(1-exp(-eta epsilon T))/epsilon >=K e(t).
+Consequently 1-w decays faster than any specified polynomial, which again
+gives (1-w)/e->0. The fine update in time tau=integral eta e becomes
+db/dtau=a-[w+(1-w)/e]b, so b->a. This is a simultaneous-learning result,
+not merely an instantaneous-calibration calculation.
+
+For p>1/2, select c in (w0,1), d0=1-c. While w<=c, the energy inequality
+(b^2)'<=eta a^2 e^2/d0-eta d0 b^2 gives
+integral b^2+b(t)^2/(eta d0)<=a^2 integral e^2/d0^2.
+Since d0<=1, the logit identity bounds its increase by
+a^2 e0^2/[(1-c)^2(2p-1)]. If this is less than logit(c)-logit(w0),
+the first crossing of c is impossible. Hence the fine concept stays
+underweighted, b->0 and w has a limit strictly below c. This is a proved
+failure region, not an iff characterization for all starting weights.
+
+Exclusion probes in R1.11 have accepted probability e_t/2. With discrete
+e_t=e0(1+t)^(-p), the accepted count diverges almost surely for p<=1,
+and retained marks consistently identify a. Thus the interval
+1/2<p<=1 separates a passive failure region from a constructive grounding
+experiment. Continuous selection time and discrete observation counts are
+not a measured full-cost benchmark.
+
+There is a corresponding information boundary, not only an ODE example.
+If every own-component mean stays in [-beta,beta] with beta<1, compare
+environmental parameters +/-a0, 0<a0<1. Both observed conditional means
+stay in [-r,r], r=max(beta,a0)<1. The one-step Bernoulli KL is at most
+4a0^2 e_t^2/(1-r^2), even for adaptive controls. Finite sum e_t^2 bounds
+the KL of the full record and leaves a positive testing error. Source
+flags are not available in this experiment. Thus no learner can obtain
+uniformly consistent grounding there merely by reweighting interior
+feedback. Exact exclusion changes the experiment and changes the evidence
+order from e^2 to e. Need a careful primary-source comparison and exact
+checks before promoting this package.
+
+**Resolution.** The simultaneous-calibration proof and its checks are now
+R1.12. The weak p=1/2 trajectory remains far from recovery at a million
+population time units and is retained beside the eventual theorem. A
+known-imperfect-control moment correction repairs accepted-only bias when
+average exposure stays positive; exact rational Fisher calculations show
+why fixed imperfect control does not preserve exclusion's small-share order.
+
+## H. A genuinely observed realization of coupled judgment
+
+The next constructive gap is whether the binary population coupling can be
+realized without giving the learner expected scores or the environmental
+parameter. Pursue the same two-concept recurrence, now with one observed
+Z_t in {-1,+1}, conditional mean q_t=e a+(1-e)w_t b_t, fixed e>0, and
+the pre-observation forecast b_t. The learner does not receive a or e.
+
+Use diminishing common step gamma_t, sum gamma infinite and sum gamma^2
+finite, with eta gamma<=1. Update b_next=b+eta gamma(Z-b), and update fine
+log odds L_next=L+gamma(2bZ-b^2). The score is genuinely prequential; using
+the same observation for later calibration does not leak it into its score.
+These are familiar running-mean and exponential-weight updates.
+
+There is an exact pathwise identity:
+
+```math
+L_N=L_0+\sum_{t<N}\gamma_t b_t^2+
+ \frac{b_N^2-b_0^2}{\eta}
+ -\eta\sum_{t<N}\gamma_t^2(Z_t-b_t)^2.
+```
+
+This replaces a difficult generic stochastic-approximation argument at the
+weight-simplex boundary. The last sum is finite, so an initially positive
+fine weight cannot be lost through an unbounded early negative log-odds
+excursion. If sum gamma b^2 were finite while a!=0, telescope the b update
+and divide by sum gamma. The martingale sum sum gamma(Z-q) converges;
+weighted Cauchy makes sum gamma d_t b_t/sum gamma tend to zero, where
+d_t=1-(1-e)w_t. The telescoped equation would give 0=e a, a contradiction.
+Thus the positive energy term diverges, L->infinity and w->1.
+
+For b->a, write x_next=(1-eta e gamma)x+eta gamma r_t+
+eta gamma xi_t, where r_t=-(1-e)(1-w_t)b_t->0. The martingale
+M_t=eta sum_{s<t}gamma_s xi_s converges. The noise-corrected error
+y_t=x_t+(M_infinity-M_t) follows a stable scalar averaging recursion
+with forcing r_t+e(M_infinity-M_t)->0. Therefore y and x tend to zero.
+When a=0, expected squared-error drift is at most
+-2eta e gamma b^2+4eta^2 gamma^2. A nonnegative supermartingale argument
+gives b->0 and sum gamma b^2 finite; the log odds converge to a finite
+random limit. Thus equal concepts can coexist; no complexity penalty has
+been supplied that would remove idle labels.
+
+This would implement the binary fixed-exposure case, not the general
+catalogue theorem or its decreasing-exposure extension. Compare with an
+equally informed ordinary implementation (identical algorithm), and with
+a single fine predictor calibrated from the start (different, often faster
+method, without representation selection). Test both noise and wrong-sign
+initial forecasts; retain slow finite results and seek finite-time bounds
+as well as consistency. No superiority or new stochastic-approximation
+machinery is assumed.

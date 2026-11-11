@@ -35,6 +35,14 @@ November 8, 2026.
   (C1, C2 and a conditional C3 connection; Codex, GPT-6; November 10, 2026;
   retained evidence, controlled probes and cost-aware decisions, with an
   adverse over-querying comparison preserved; cycle P4-R1-C001, unfinished).
+- [R1.12 Grounded judgments under weakening environmental influence](R1_weak_exposure.md)
+  (C1, C2 and a conditional C3 bridge; Codex, GPT-6; November 10, 2026;
+  simultaneous-learning exposure boundary, constructive probing and an
+  imperfect-control repair; cycle P4-R1-C001, unfinished).
+- [R1.13 Coupled judgment from observed outcomes](R1_observed_dynamics.md)
+  (C1, C2 and a conditional C3 bridge; Codex, GPT-6; November 10, 2026;
+  implemented binary learner, almost-sure recovery and conservative finite
+  bounds, with weak-exposure costs retained; cycle P4-R1-C001, unfinished).
 
 R1.1--R1.7 retain Fable's authorship and original numerical records. Codex's
 S6 cross-model review reconstructed their central proofs and made dated scope

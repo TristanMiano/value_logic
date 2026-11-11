@@ -1,0 +1,100 @@
+{
+  "author": "Codex (GPT-6)",
+  "status": "calculated",
+  "initial_forecast": -0.5,
+  "initial_weight": 0.01,
+  "step_rule": "gamma_t=(t+25)^(-0.6), eta=1",
+  "records": [
+    {
+      "a": 0.6,
+      "environmental_share": 0.5,
+      "sufficient_budget": {
+        "observations": 509644,
+        "midpoint": 254822,
+        "joint_failure_bound": 0.05,
+        "squared_step_sum_upper": 2.647540026838997,
+        "fine_weight_lower_from_midpoint_onward": 0.9999962783050996,
+        "forecast_absolute_error_upper": 0.09999995576691335,
+        "error_terms": {
+          "initial_transient": 1.2201194480239151e-25,
+          "residual_coarse_influence": 3.7216949002712526e-06,
+          "martingale_noise": 0.09999623407201308
+        }
+      },
+      "at_one_million": {
+        "observations": 1000000,
+        "midpoint": 500000,
+        "joint_failure_bound": 0.05,
+        "squared_step_sum_upper": 2.647540026838997,
+        "fine_weight_lower_from_midpoint_onward": 0.9999999998456459,
+        "forecast_absolute_error_upper": 0.0816902052797999,
+        "error_terms": {
+          "initial_transient": 1.9174820232579046e-33,
+          "residual_coarse_influence": 1.5435419258784855e-10,
+          "martingale_noise": 0.0816902051254457
+        }
+      }
+    },
+    {
+      "a": 0.6,
+      "environmental_share": 0.2,
+      "sufficient_budget": {
+        "observations": 17977084,
+        "midpoint": 8988542,
+        "joint_failure_bound": 0.05,
+        "squared_step_sum_upper": 2.647540026838997,
+        "fine_weight_lower_from_midpoint_onward": 0.9900000031295867,
+        "forecast_absolute_error_upper": 0.09429130342837524,
+        "error_terms": {
+          "initial_transient": 2.2544660950986733e-42,
+          "residual_coarse_influence": 0.039999987481653516,
+          "martingale_noise": 0.05429131594672172
+        }
+      },
+      "at_one_million": {
+        "observations": 1000000,
+        "midpoint": 500000,
+        "joint_failure_bound": 0.05,
+        "squared_step_sum_upper": 2.647540026838997,
+        "fine_weight_lower_from_midpoint_onward": 3.539224255070367e-05,
+        "forecast_absolute_error_upper": 4.129021986391306,
+        "error_terms": {
+          "initial_transient": 1.240824950884647e-13,
+          "residual_coarse_influence": 3.9998584310297978,
+          "martingale_noise": 0.12916355536138469
+        }
+      }
+    },
+    {
+      "a": 0.6,
+      "environmental_share": 0.05,
+      "sufficient_budget": {
+        "observations": 17320022212,
+        "midpoint": 8660011106,
+        "joint_failure_bound": 0.05,
+        "squared_step_sum_upper": 2.647540026838997,
+        "fine_weight_lower_from_midpoint_onward": 0.9954643846033342,
+        "forecast_absolute_error_upper": 0.09999999997434304,
+        "error_terms": {
+          "initial_transient": 3.5503574311027366e-164,
+          "residual_coarse_influence": 0.08617669253664972,
+          "martingale_noise": 0.013823307437693316
+        }
+      },
+      "at_one_million": {
+        "observations": 1000000,
+        "midpoint": 500000,
+        "joint_failure_bound": 0.05,
+        "squared_step_sum_upper": 2.647540026838997,
+        "fine_weight_lower_from_midpoint_onward": 2.2111510456656794e-07,
+        "forecast_absolute_error_upper": 19.25932106945333,
+        "error_terms": {
+          "initial_transient": 0.0009981599175492666,
+          "residual_coarse_influence": 18.999995798813007,
+          "martingale_noise": 0.25832711072276937
+        }
+      }
+    }
+  ],
+  "scope": "Conservative sufficient budgets at specified model parameters; not necessary budgets or observed performance."
+}

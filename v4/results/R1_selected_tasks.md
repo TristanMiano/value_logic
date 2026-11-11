@@ -120,6 +120,120 @@ This proof handles missing outcome support directly. It does not assume
 that every possible result has positive probability, and it does not assume
 the learner can observe whether a task was randomly assigned.
 
+### 2.1 An observable lower bound on the value of a distinction
+
+The strict result admits a quantitative strengthening. Write m=|Y|>=2
+and, for two refined labels A,B in one coarse cell, define
+
+```math
+d_{AB}=\mathbb E\left[q_A^2q_B^2\|f_A-f_B\|_2^2\right].
+```
+
+This quantity is the mean of the four-performance statistic in
+Proposition 22 below.
+
+**Theorem 19A (quantitative recovery under selection).** Under the same
+finite, conditionally i.i.d. setting, for every n>=3,
+
+```math
+V_n(c,\bar z)-V_n(c)\ge\frac{2d_{AB}^2}{m-1}.                 \tag{19.5}
+```
+
+No positive lower bound on assignment or outcome probabilities is required.
+More generally the inequality holds between any coarse partition c and
+refinement d that separates the two cells A,B used to define d_AB. For
+original task types merged by c, their d_AB also lower-bounds the gain of
+adding the transfer partition: aggregation within their true twin classes
+only increases the pair's assignment masses. The quadratic order in d_AB
+cannot be uniformly improved to a smaller power, even in an interior binary
+model. The constant in (19.5) is not claimed optimal.
+
+*Proof.* First take n=3. Retain the notation D_y,H,d_1,d_2,N_H from the
+proof above. The two swapped inputs have fine forecasts u_1=N_H/d_1 and
+u_2=N_H/d_2 for outcome y, and one common coarse forecast p. Terms of zero
+mass contribute zero. Exactly,
+
+```math
+p(d_1-d_2)=d_1(p-u_1)-d_2(p-u_2).                            \tag{19.6}
+```
+
+Expand the nonnegative witness as
+
+```math
+d_{AB}=\sum_y\sum_{v\ne y}
+\left(\mathbb E[g_{Ay}g_{Bv}D_y]
+      -\mathbb E[g_{By}g_{Av}D_y]\right).                     \tag{19.7}
+```
+
+For each ordered y,v, equation (19.6) applies to prefixes
+H_A=g_Ay g_Bv and H_B=g_By g_Av. The resulting four fine inputs have task
+patterns (A,B,A;B), (A,B,B;A), (B,A,A;B), (B,A,B;A), history outcomes
+(y,v,y), and target in the same coarse cell K. Across y,v and these
+patterns no fine input is counted twice. All share the coarse forecast
+for that history and target.
+
+Let g_Ky=sum_{x in K}g_xy and q_K=sum_{x in K}q_x. This coarse input has
+mass h_yv and forecast p_yv given by
+
+```math
+h_{yv}=\mathbb E[g_{Ky}^2g_{Kv}q_K],\qquad
+p_{yv}=\frac{\mathbb E[g_{Ky}^3g_{Kv}]}{h_{yv}}.
+```
+
+Whenever h_yv>0 the numerator is positive. Holder's inequality yields
+
+```math
+h_{yv}^3\le
+ \left(\mathbb E[g_{Ky}^3g_{Kv}]\right)^2
+ \mathbb E[g_{Kv}q_K^3],\qquad
+\frac{h_{yv}}{p_{yv}^2}\le\mathbb E[g_{Kv}q_K^3].              \tag{19.8}
+```
+
+For example, apply the moment interpolation inequality to
+r=g_Ky/q_K under the finite measure with density g_Kv q_K^3; zero q_K
+contributes nothing. The four selected fine-input masses sum to at most
+h_yv. Summing (19.8) over v and the m-1 choices of y!=v therefore gives
+
+```math
+\sum_{i\ \mathrm{selected}}\frac{w_i}{p_i^2}
+\le(m-1)\mathbb E[q_K^4]\le m-1.                             \tag{19.9}
+```
+
+By (19.6)--(19.7), d_AB is a signed sum of w_i(p_i-u_i)/p_i over those
+inputs. Cauchy--Schwarz and scalar Pinsker now give
+
+```math
+d_{AB}^2\le(m-1)\sum_iw_i(u_i-p_i)^2
+\le\frac{m-1}{2}\,[V_3(d)-V_3(c)].                          \tag{19.10}
+```
+
+The last inequality follows from KL(fine||coarse)>=2(u_y-p_y)^2 for each
+selected input; the total gap is the expected conditional KL. This proves
+the bound, including boundary supports. For n>3, reveal the other n-3 fine
+history positions to both forecasters. The remaining gap is no larger than
+the original gap, and the n=3 proof applies with the resulting posterior.
+Average and use Jensen on d_AB squared. QED.
+
+For sharpness in order, replace R in (20.1) by 1-h with probability
+1/2+h/4 and by 1+h otherwise, with 0<h<1. Then E R^2=1 and
+d_AB=(4h^2-h^4)/2048. The four-performance law is an affine perturbation
+in tau=4h^2-h^4 of the strictly positive h=0 law, in which task and outcome
+sequences are independent. Conditional KL is smooth there, is zero at
+tau=0, and has zero first derivative. Hence its gain is O(tau^2)=O(d_AB^2).
+Together with (19.5), this proves the claimed order. In this particular
+family the exact limiting gain/d_AB^2 is
+63530243981312/607702516875, approximately 104.54168.
+
+[selected_bounds.py](../notebook/P4-R1-C001/selected_bounds.py) computes
+that coefficient from rational joint-law derivatives, not a curve fit.
+Its [output](../notebook/P4-R1-C001/selected_bounds.json) also checks
+60 history bounds in 36 rational worlds, including missing assignment
+and outcome support, and eight scales of the sharp family. A positive
+statistical lower bound L on d_AB thus implies a lower bound 2L^2/(m-1)
+on the best predictive value available from the distinction. Realizing that
+value with a learned forecast requires an estimation guarantee in addition
+to the representation certificate; this theorem does not silently supply it.
+
 ## 3. The threshold is sharp, while one history is generically enough
 
 **Proposition 20 (sharp example and generic behavior).**
@@ -387,3 +501,124 @@ certify that all extra assignment labels are useless for inferring skill.
 Independent performer episodes are also different evidence from additional
 attempts by one persistent performer. These distinctions keep the finite
 construction compatible with the mathematical recovery target.
+
+## 7. From a discovered distinction to an actual learned judgment
+
+The representation certificate can be connected to a fitted forecaster with
+an explicit estimation allowance. This is an implemented composition of
+observed concept discovery, independent validation and prediction. It does
+not implement the population selection dynamics of R1.9.
+
+**Proposition 22A (finite learned-forecast composition).** Suppose a proposed
+refinement d is fixed independently of a validation sample and a training
+sample. Let m be the number of outcomes, and let D bound the number of
+possible d-labeled forecast inputs (history plus target task). A validation
+lower bound L on the witness for two d-cells merged by c, with coverage
+1-alpha, implies, on that validation event,
+
+```math
+\mathbb E_{\mathrm{train}}\!left[
+  \mathrm{score}(\widehat p_d)-V_n(c)\right]
+\ge \frac{2L^2}{m-1}-\frac{D(m-1)}{N+1},\qquad n\ge3.        \tag{22.4}
+```
+
+Here the N training episodes are independent draws from the same model,
+and each conditional outcome row is estimated by add-one smoothing.
+The expectation is over that independent training sample; it is not a
+confidence statement about the realized loss of one fitted table. Neither
+the proposal's being the true transfer partition nor knowledge of the
+latent-state distribution is needed for this bound. Validation must test
+the actual cells proposed, and all stages must use the same episode law.
+
+*Proof.* For one row with true outcome law p, k samples and outcome counts
+N_y, the fitted probabilities are (N_y+1)/(k+m). Jensen's inequality and
+the binomial identity
+
+```math
+\mathbb E\frac{1}{N_y+1}
+=\frac{1-(1-p_y)^{k+1}}{(k+1)p_y},\qquad p_y>0,
+```
+
+give expected conditional KL at most
+log((k+m)/(k+1)) <= (m-1)/(k+1). Zero-probability outcomes contribute
+zero. If the input row has probability pi, its count K is Binomial(N,pi),
+so pi E[1/(K+1)] <= 1/(N+1). Summing over at most D rows bounds the
+expected estimation deficit by D(m-1)/(N+1). Subtract this deficit from
+Theorem 19A's oracle-value bound. Independence allows the argument
+conditional on the selected representation and validation evidence. QED.
+
+The estimation step is classical Laplace smoothing, not a new learning
+algorithm; compare [Mourtada (2026), equation 1.4](https://doi.org/10.4171/MSL/55).
+The contribution of the composition is its explicit connection between
+observed transfer evidence and the usefulness of a learned judgment, with
+the sampling and information conditions exposed.
+
+### A complete observed-data run and its comparators
+
+[observed_judgment.py](../notebook/P4-R1-C001/observed_judgment.py) implements
+the three stages in the four-task world above. The proposal uses 100,000
+four-performance episodes, validation uses 5,000 new episodes, and
+forecast training uses 20,000 further episodes: **500,000 performances in
+total**. The learner gets task/outcome arrays; hidden-state laws enter only
+the evaluation code. The proposal is {0,1}/{2,3}. On the validation sample,
+the two proposed cells have witness lower bound 0.06626953 at 97.5%
+coverage conditional on the proposal. Equation (22.4) gives
+
+```math
+\frac{2L^2}{m-1}=0.00878330,\qquad
+\frac{D(m-1)}{N+1}=\frac{128}{20001}=0.00639968,
+```
+
+and hence a **0.00238362-nat gain in expectation over independent training**
+relative to the best coarse forecast. The population evaluation of the
+saved fitted table is much stronger. These are distinct statements.
+
+The [saved output](../notebook/P4-R1-C001/observed_judgment.json) evaluates
+all 4,096 possible ordered episodes, rather than using a noisy test score:
+
+| Forecast | Episodes used to fit forecasts | Gain over best coarse forecast, nats | Representation size |
+|---|---:|---:|---:|
+| Coarse add-one table | All 125,000 | -0.00001826 | 16 probability entries |
+| Discovered partition, independent training | 20,000, plus 105,000 for discovery/validation | 0.32351713 | 256 entries |
+| Full-label add-one table, equal training stage | 20,000 | 0.29795464 | 4,096 entries |
+| Full-label add-one table, equal total observations | All 125,000 | 0.32227817 | 4,096 entries |
+| Two-component grouped-mixture EM | All 125,000 | 0.32991949 | 15 free parameters |
+| Oracle using discovered partition | Known law | 0.32680744 | 256 entries |
+| Oracle using full labels | Known law | 0.32993577 | 4,096 entries |
+
+The equal-training table is a diagnostic, not a comparison at equal total
+acquisition cost. The next row supplies that comparison. The grouped-mixture
+baseline is stronger here: it is given the correct two-component,
+conditionally i.i.d. model class and fitted from the same total observations,
+with six EM initializations and no latent labels. Its near-oracle result
+shows the benefit of a good parametric model. No global-optimum guarantee
+for EM or statistical superiority across worlds is claimed.
+
+The transfer partition removes distinctions that matter only for inferring
+the hidden performer from assignment. Consequently, the full-label oracle
+still has a small finite-history advantage, exactly as Theorem 21 allows.
+The finite construction demonstrates that repeated judgments can uncover
+and use the task distinctions obscured by marginal success averages. An
+implementation described as grouped HSIC followed by conditional Laplace
+prediction is the same algorithm. The mixture model is a genuinely
+different competing method with additional structural assumptions.
+
+### Relationship of the value bound to existing information bounds
+
+[Xu, Liu and Sutherland (2026), section 4.1](https://arxiv.org/html/2409.06890v3#S4.SS1)
+relate bounded-kernel HSIC to mutual information by a total-variation and
+Pinsker argument. That is close enabling machinery, but the objects here
+are different: d_AB averages within-performer dependence over an unobserved
+state, while V_3(d)-V_3(c) is a conditional predictive gain in the
+four-observation mixture. Applying an information bound inside each state
+would bound an average conditional-on-state information, not this observable
+gain. The swapped-history argument establishes the missing connection.
+The sharp family shows why a uniformly linear bound in d_AB for this
+predictive target cannot follow: its gain is of order d_AB squared.
+
+The candidate mathematical contribution is thus the sharp history threshold
+and the quadratic-order value bound for this judgment game. The observable
+statistic, concentration technique, table estimator and mixture comparator
+are established ingredients. A close prior-art search for this particular
+connection remains an obligation; the current checks support its mathematics,
+not a completed novelty assessment.
