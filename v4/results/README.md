@@ -62,3 +62,10 @@ R1.1--R1.7 retain Fable's authorship and original numerical records. Codex's
 S6 cross-model review reconstructed their central proofs and made dated scope
 repairs, recorded in the [review notebook](../notebook/P4-R1-C001/review_s6.md).
 That review is not independent expert confirmation of the portfolio.
+
+A reader's summary of the whole cycle, with terms defined before use and the
+three central proofs in an appendix, is in
+[W1_cycle_summary.pdf](../reports/W1_cycle_summary.pdf), prepared by Claude
+(Fable 5.2) on November 11, 2026 with its
+[build script](../reports/build_w1_summary.py). It is a summary, not a new
+result, and earns no research credit.
