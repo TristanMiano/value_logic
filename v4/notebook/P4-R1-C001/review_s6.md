@@ -165,3 +165,72 @@ The remaining research time will investigate finite observations, known
 self-caused recurrence corrections, and practical costs, while retaining
 the broader W1 questions. This is a checkpoint, not cycle completion or the
 final aim-balance self-review.
+
+## Closing source comparison, November 11
+
+[Kong and Schoenebeck, 1802.08887v3](https://arxiv.org/html/1802.08887v3),
+sections 3--5: Definitions 3.2--3.3, Theorem 4.4 and its proof, Theorem 5.2's
+statement, and Theorem 5.4 with its proper-score proof were read. Their
+latent-posterior identification needs their uniqueness condition; strict
+strategic incentives additionally use stability, and the multitask result
+uses randomly ordered comparable tasks. This is a stronger strategic target
+than our prescribed calibration rule. R1.2 instead recovers a task quotient
+from repeated approvals, and R1.14 admits within-performance joint signals.
+The models overlap through conditional independence across views, but neither
+the quotient target nor the endogenous observation mechanism is identical.
+The paper's explicit shared-nuisance example confirms why a desired factual
+target needs a separating observation/selection assumption. This is an
+enabling comparison, not evidence that strategic grounding has been solved here.
+
+[Wainwright and Jordan (2008)](https://www.cs.columbia.edu/~blei/fogm/2023F/readings/WainwrightJordan2008.pdf),
+section 3.5.2 Proposition 3.2 and proof: read for R1.14's moment identification.
+[Varin, Reid and Firth (2011)](https://www3.stat.sinica.edu.tw/statistica/oldpdf/A21n11.pdf),
+section 2.1: read for its marginal composite-likelihood objective. Neither
+ingredient is claimed as a new statistical principle.
+
+Spearman's Part II, section 2 was read in the
+[2010 reprint](https://gwern.net/doc/psychology/1904-spearman.pdf), checking the
+attenuation and unequal-reliability comparison in R1.4.
+[MacCluer (2000), section 1](https://epubs.siam.org/doi/full/10.1137/S0036144599359449)
+supports the standard matrix-convergence attribution in R1.5. A final
+interpretive repair distinguishes pairwise-separated graph components from
+joint independence; the U,V,UV example has a coalition repair.
+
+The original Blackwell 1953 article's publisher full text was blocked by an
+access check; no claim of reading its proof is made.
+[Brooks, Frankel and Kamenica, March 2024](https://benjaminbrooks.net/downloads/bfk_comparisons.pdf),
+introduction and section 2, were read to distinguish the value of an experiment
+in isolation from its value alongside correlated information. The elementary
+decision bridge in the closing assessment is derived directly, and its
+conditioning information is fixed. No universal robustness to arbitrary
+additional correlated signals is inferred.
+
+[Gneiting and Raftery (2007)](https://sites.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf),
+section 3.2, Theorem 3, its proof sketch and equations (14)--(15), were read
+for the closing goal-family bridge. The cost-loss mixture and its quadratic
+special case are established. The assessment derives their conditional
+representation consequence directly, including a finite midpoint-price menu
+with an explicit resolution allowance; it does not claim a new scoring rule.
+
+The closing scientific review also repaired Proposition 22A's statement:
+clip a negative witness lower endpoint at zero before squaring it, as the
+existing implementation already does. Its saved positive certificate is
+unchanged. A malformed mathematical delimiter in equation (22.4) was corrected.
+
+The final cold check of R1.9 reconstructed the steps that distinguish its
+grounding claim from potential ascent alone. At simultaneous calibration,
+the fine model's advantage is e squared times squared environmental error
+plus forecast variance; a persistent positive potential gap would force its
+log weight to grow without bound. Calibration remains active even at zero
+influence, which is why this comparison remains available at the boundary.
+The sufficient-catalogue extension at e=1/2 needs its separate zero-advantage
+argument; below that threshold, noncommuting projections really do admit
+an attracting incorrect boundary. The stated proof preserves these conditions.
+
+The closing assessment connects this population convergence to vanishing
+regret on a fixed family of reference-outcome decisions. Its compatibility
+conditions are explicit. The finite price-menu bound concerns the optimal
+action supported by each representation; it is not asserted for arbitrary
+miscalibrated forecast thresholds. The directed checker verifies the exact
+goal-value identity and all 100 finite-menu comparisons. These are further
+self-checks by Codex, not a second independent confirmation.

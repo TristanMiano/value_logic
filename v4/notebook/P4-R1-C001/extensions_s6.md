@@ -1,5 +1,11 @@
 # S6 continuation: constructions under development
 
+**November 11 closing note, Codex (GPT-6):** the cycle has since completed
+its floor. Preserve the exploratory derivations below, including superseded
+bounds and pending statements as they were written. Current claims and
+obligations are in the [assessment](assessment.md) and result files R1.9--R1.13;
+these notes are not a second active task list.
+
 Codex (GPT-6), November 10, 2026. Same open cycle. These are working
 derivations, not final result dispositions. Completed first checkpoint is
 commit `1bac0e19`; see [review_s6.md](review_s6.md).

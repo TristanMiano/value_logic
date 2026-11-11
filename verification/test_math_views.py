@@ -50,7 +50,8 @@ class PortableMathViewIntegrityTests(unittest.TestCase):
         )
         _write_json(root / RECEIPT, {"files": [{"path": SOURCE, "sha256": _hash(source)}]})
         view = root / VIEW
-        view.write_text(view_text(root, SOURCE, VIEW, {}), encoding="utf-8")
+        # Portable views have canonical LF bytes on every host, like generate().
+        view.write_text(view_text(root, SOURCE, VIEW, {}), encoding="utf-8", newline="\n")
         document = {
             "schema": SCHEMA,
             "entries": [{
@@ -141,7 +142,7 @@ class PortableMathViewIntegrityTests(unittest.TestCase):
             source.write_text(source.read_text(encoding="utf-8").replace("x+1", "x+2"),
                               encoding="utf-8")
             view = root / VIEW
-            view.write_text(view_text(root, SOURCE, VIEW, {}), encoding="utf-8")
+            view.write_text(view_text(root, SOURCE, VIEW, {}), encoding="utf-8", newline="\n")
             entry = document["entries"][0]
             entry["source_sha256"] = _hash(source)
             entry["view_sha256"] = _hash(view)

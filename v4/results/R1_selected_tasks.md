@@ -512,18 +512,20 @@ not implement the population selection dynamics of R1.9.
 **Proposition 22A (finite learned-forecast composition).** Suppose a proposed
 refinement d is fixed independently of a validation sample and a training
 sample. Let m be the number of outcomes, and let D bound the number of
-possible d-labeled forecast inputs (history plus target task). A validation
-lower bound L on the witness for two d-cells merged by c, with coverage
+possible d-labeled forecast inputs (history plus target task). A nonnegative
+validation lower bound L on the witness for two d-cells merged by c, with coverage
 1-alpha, implies, on that validation event,
 
 ```math
-\mathbb E_{\mathrm{train}}\!left[
+\mathbb E_{\mathrm{train}}\!\left[
   \mathrm{score}(\widehat p_d)-V_n(c)\right]
 \ge \frac{2L^2}{m-1}-\frac{D(m-1)}{N+1},\qquad n\ge3.        \tag{22.4}
 ```
 
 Here the N training episodes are independent draws from the same model,
 and each conditional outcome row is estimated by add-one smoothing.
+Replace any negative raw witness lower endpoint by zero before applying
+the square in (22.4); the true witness is nonnegative.
 The expectation is over that independent training sample; it is not a
 confidence statement about the realized loss of one fitted table. Neither
 the proposal's being the true transfer partition nor knowledge of the

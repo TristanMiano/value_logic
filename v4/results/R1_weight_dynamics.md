@@ -153,17 +153,28 @@ grow with the strength of the connection.
   the maximal-root components when the domain is disconnected.
 - **Predictability is not validity,** as in R1.2: the winning family is the
   most mutually predictable one.
+- **Pairwise credit has a specific resolution.** Disconnected graph blocks
+  have no pairwise cross-performance information, but need not be jointly
+  independent. For independent fair signs U,V, the three persistent judges
+  U,V,UV give M=(log 2)I: every pair is independent, while the first two
+  jointly determine the third. Adding the vector-valued judge (U,V) connects
+  all three in the enlarged vindication graph. This is a constructive
+  coalition repair, not a rule for allocating strategic credit to its members;
+  [R1.14](R1_coalition_recovery.md) studies the representation restriction.
 - **C5.** This is a convergence statement for one linear rule of recursive
   valuation. It is not a general theorem on value drift and says nothing on
   self-trust in the Löb sense.
 
 ## 4. Closest established work
 
-The update is eigenvector centrality on a weighted graph, as in PageRank and
-related ranking methods, and the proof is the Perron-Frobenius theorem; both
-are quoted from memory. What is added is the choice of matrix, vindication
+The update is eigenvector centrality on a weighted graph, and the proof uses
+the Perron-Frobenius theorem. Related ranking methods such as PageRank have
+their own matrix construction; they are not automatically the same update.
+The S6 source check read [MacCluer (2000), section 1](https://epubs.siam.org/doi/full/10.1137/S0036144599359449)
+on positive/nonnegative matrices and power convergence. The positive-diagonal
+and tied-block arguments needed here are explicit above. What is added is the choice of matrix, vindication
 across a performer's reappearances instead of agreement or endorsement, the
-identification of its components with independent families of tracked
-traits, and connectedness as a sufficient condition for an
+identification of its components with families lacking pairwise
+cross-performance information, and connectedness as a sufficient condition for an
 initialization-independent form of pluralism. Equal maximal roots give the
 separate coexistence case described above.
