@@ -394,3 +394,71 @@ using finite observations, and at what cost. Compare calibration with
 strategic reporting, and successful correction with the failures caused by
 unknown or misspecified feedback. Retain the other W1 directions. This is
 the same unfinished cycle, not a new authorization or clock.
+
+**S6 second checkpoint, 2026-11-11 06:29 UTC (November 10 locally).**
+Alignment first: C1 gains sharp recovery under skill-dependent task choice
+and a finite observed-data distinction between transfer classes and marginal
+success averages. C2 gains coupled catalogue conditions, including the sharp
+one-half exposure guarantee when merely sufficient noncommuting concepts
+compete. C3 gains a bounded experimental route to environmental grounding,
+with the actual-recurrence/reference-target distinction explicit. C5 proper
+self-licensing remains open; the dynamics only address its convergence side.
+
+R1.10 proves the three-history threshold and supplies a positive moment-matched
+example hiding the distinction through two histories. The four-observation
+witness is exactly an established unbiased HSIC statistic in the binary-task
+case; its role and finite-data learner are recorded without claiming a new
+statistic. R1.11 combines known-feedback correction and controlled exclusion
+probes in one retained confidence record, then connects uncertainty to
+representation choice and stopping. A certificate-seeking policy spent more
+than acting immediately on its saved path; that adverse comparison is retained.
+An explicit-prior, exact Bayesian batch calculation supplies a cost-aware
+alternative at its stated scope. None of these finite-data constructions
+silently claims to implement the population ODE.
+
+Observed cumulative research: **8,518,422,772,848 ns**, or
+**141.9737128808 minutes**. Remaining floor: **98.0262871192 minutes**.
+Checkpoint formatting and publication receive no research credit. The next
+research will test quantitative and robustness consequences of the newly
+specified recovery mechanisms, retaining both successful constructions and
+their characterizing limits. The cycle is still open.
+
+Checkpoint self-review: a concrete risk appeared when a confidence upper
+bound was used as a reason to keep querying. It was corrected by preserving
+the cost failure, distinguishing stopping from query selection, and comparing
+an ordinary cost-aware alternative. The result remains a contribution to
+conditional conceptual recovery; neither successful simulations nor familiar
+statistical ingredients settle the full philosophical theses. Final review
+of all changed material remains due at the cycle boundary.
+
+**S6 third checkpoint, 2026-11-11 07:30 UTC (November 10 locally).**
+Alignment first: C1 now has a quantitative connection from observed transfer
+evidence to a learned judgment, and C2 has an actual stochastic realization
+of the binary coupled-selection model. C3's grounding bridge gains explicit
+conditions under weakening exposure, with a controlled experiment enlarging
+the successful region and a known-imperfect-control repair at adequate
+exposure. These do not settle general truth, evolution or strategic self-trust.
+
+R1.10 Theorem 19A proves a witness-to-value bound of quadratic order,
+with a matching-order interior family; Proposition 22A connects it to
+independent conditional-table training. The saved observed-data run includes
+the stronger correctly specified grouped-mixture EM baseline. R1.12 proves
+the decreasing-exposure result at finite calibration speed, retains the very
+slow threshold trajectory, and distinguishes insufficient interior feedback
+from successful exclusion. R1.13 proves almost-sure observed learning and
+gives conservative finite-observation bounds. Its weak-exposure simulation
+remains much worse than using a single fine representation from the start.
+All are Codex-generated results and checks, not independent confirmation.
+
+Observed cumulative research: **11,086,191,076,948 ns**, or
+**184.7698512825 minutes**. Remaining floor: **55.2301487175 minutes**.
+The cycle remains open. Checkpoint administration earns no research credit.
+Next: return to joint approval information and structured coalition credit,
+then assess the combined W1 contribution and unresolved obligations.
+
+Checkpoint self-review: the principal risk was treating eventual grounding
+as practical success. Slow trajectories, a finite-information limit, large
+sufficient budgets and stronger ordinary comparators are retained beside the
+positive constructions. The change from exact expectations to observed
+updates is explicitly bounded to the binary fixed-share case. The final
+complete changed-material review remains due after the floor.

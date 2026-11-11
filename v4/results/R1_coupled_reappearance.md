@@ -266,6 +266,109 @@ or of predictive separation is claimed.
 
 ## 6. Other limits with constructive follow-ups
 
+### 6.1 Sufficient concepts can replace the finest one under precise conditions
+
+The richest representation is a convenient sufficient condition, not always
+a necessary one. Let g be an initially present concept with Pi_g F=F,
+but do not require an identity projection in the catalogue.
+
+**Corollary 18A (adequate catalogues).** The conclusions of Theorem 18
+still hold if either (i) e>=1/2, or (ii) Pi_g commutes with every catalogue
+projection. Condition (ii) allows every e>0; in particular, it holds for
+nested partitions. Without either condition, a sufficient concept may be
+excluded. The uniform threshold 1/2 in (i) is sharp over finite partition
+catalogues.
+
+*Proof of recovery.* All steps of Theorem 18 up to closeness to simultaneous
+calibration use neither an identity nor a sufficient projection. At a
+calibrated profile decompose d=F-bar R as d_parallel=Pi_g d and
+d_perp=d-Pi_g d. Orthogonality gives the exact advantage
+
+```math
+s_g-\sum_cw_cs_c
+=e^2\|d_\parallel\|_\mu^2+(2e-1)\|d_\perp\|_\mu^2+V.       \tag{18.4}
+```
+
+Indeed, s_g=||Pi_g Q||^2, the average score is <Q,bar R>, and
+V=e<d,bar R>. For e>1/2 this is positive whenever the potential gap E is
+positive. At e=1/2, zero advantage implies V=0 and d_parallel=0. Since
+F is in g's range, <F,d>=0, while V=e<F-d,d>=-e||d||^2; hence d=0.
+Compactness therefore gives a positive lower advantage on every calibrated
+set with E bounded away from zero. The log-weight contradiction proves
+E tends to zero, and the remaining convergence proof is unchanged.
+
+For (ii), put A=sum_c w_c Pi_c. It commutes with Pi_g. The calibrated
+equation Q=eF+(1-e)AQ implies
+(I-Pi_g)Q=(1-e)A(I-Pi_g)Q. Since ||A||<=1 and e>0, Q lies in g's range.
+Thus R_g=Q and the original advantage identity applies. QED.
+
+**Sharpness and a repair.** The following family explains the role of
+compatible concepts. Take three observations with reference masses
+(1/2-t,t,1/2), where 0<t<1/2. Let g=(0,0,1), c=(0,1,1), u=(1,1,-1),
+and F=1+a uu^T with 0<a<1. The sufficient g and incorrect c are the only
+concepts. Their unit matrix contrast directions have inner product
+
+```math
+r=\frac{1/2-t}{1/2+t},\qquad 0<r<1.
+```
+
+At the c-only boundary its calibrated contrast is y=ar and the rare
+g-model's is x=a[e+(1-e)r^2]. Its invasion advantage is x^2-y^2, negative
+exactly when
+
+```math
+e<\frac{r}{1+r}=\frac12-t.                                  \tag{18.5}
+```
+
+In coordinates (g-weight,x,y), the linearization has eigenvalues
+x^2-y^2, -1 and -e when both learning rates are one. All are negative
+under (18.5), so a neighborhood containing positive g-weights converges to
+this incorrect boundary. For every e<1/2, some positive t satisfies the
+inequality. This proves sharpness in the original finite partition class,
+with strictly positive environmental densities and persistent learning.
+
+The success and failure regions are both explicit. Adding the finest
+concept, using a commuting catalogue, or increasing exposure to at least
+one half restores the global guarantee. Initial support also matters below
+the threshold. In the idealized version that equilibrates forecasts after
+each weight change, the good concept gains above
+
+```math
+w_* = \frac{r/(1+r)-e}{1-e}
+```
+
+when this number is positive, and loses below it. This formula is for the
+equilibrated version, not a claimed separatrix for arbitrary initial
+forecasts in the simultaneous dynamics. The local attraction result applies
+to the simultaneous dynamics themselves.
+
+[catalogue_geometry.py](../notebook/P4-R1-C001/catalogue_geometry.py)
+checks the advantage identity against full density projections and records
+exact invasion eigenvalues, plus illustrative trajectories in its
+[output](../notebook/P4-R1-C001/catalogue_geometry.json). Thus the conceptual
+content of a catalogue, not merely the existence of one correct model,
+can determine whether recursive predictive success reaches the environment.
+
+### 6.2 Symmetry can be relaxed with a declared context law
+
+Theorem 18 and Corollary 18A also hold in a finite-dimensional Hilbert
+space with a compact convex forecast set K, orthogonal projections preserving
+K, and F in K. Use the maximum over concepts of their Hilbert norms for the
+contraction and tracking steps. The potential and advantage identities are
+unchanged. For example, finite input/output densities relative to a fixed
+positive context law mu and output reference law nu, with nonnegative rows
+integrating to one, allow nonreversible conditional kernels and separate
+input/output partitions.
+
+This extension needs a fixed context distribution for evaluation. It covers
+freshly sampled contexts or an explicitly maintained reference experiment.
+It does not by itself justify replacing an evolving Markov chain's endogenous
+state frequencies by a fixed law. In the symmetric construction above, a
+deterministic population path preserves the common stationary marginal;
+adaptive finite-sample policies require separate care.
+
+### 6.3 Further obligations
+
 - **Environmental share.** With e=0, an arbitrary consensus recurrence
   density can sustain itself. Positive e supplies a route to grounding under
   the other assumptions; it is not by itself a universal guarantee.
@@ -275,13 +378,15 @@ or of predictive separation is claimed.
   The present construction specifies calibration; incentives to adopt it
   need a mechanism or behavioral argument. Reference-policy evaluation or
   correction for known self-caused recurrence offers a constructive route.
-- **Available concepts.** The finest partition is present with positive
-  starting weight. A catalogue without a needed distinction may remain
-  insufficient. Mutation or exploration that introduces the distinction is
-  an important extension, not supplied by this theorem.
+- **Available concepts.** Theorem 18 uses a finest concept; Corollary 18A
+  supplies alternatives with their exact conditions. A catalogue without a
+  needed distinction may remain insufficient. Mutation or exploration that
+  introduces distinctions is an important extension, not supplied here.
 - **Population expectation.** Finite-data calibration, noisy competition,
-  limited computation and endogenous reference frequencies remain open.
-  The potential provides a starting point for robustness bounds and tests.
+  limited computation and endogenous reference frequencies require further
+  work. [R1.13](R1_observed_dynamics.md) now realizes the binary fixed-share
+  case from observed outcomes, with almost-sure recovery and finite bounds;
+  the full multi-concept result remains a population theorem.
 - **External kernel.** F is fixed while ratings change the sightings. A
   changing environment can create new useful distinctions; the conditions
   for tracking them belong to the next development of this construction.
@@ -333,6 +438,17 @@ The closest established comparisons clarify what is and is not added:
   geometry. Potential ascent alone does not establish environmental recovery:
   the continued calibration and positive finest-model weight argument
   exclude insufficient boundary limits here.
+- [Farina and Perdomo (2026), The Stability of Online Algorithms in
+  Performative Prediction](https://arxiv.org/abs/2602.24207v3), Definition 1
+  and its main no-regret reduction, gives mixed performative stability
+  without restricting the response map. Their
+  [deployment-efficient extension](https://arxiv.org/abs/2609.14065v1),
+  Theorem 2 and section 3, strengthens stability and deployment guarantees.
+  These are stronger general learning results for stability. The present
+  target is recovery of the external F and retention of sufficient
+  representations under a specific common-outcome feedback rule. Stability
+  alone need not identify F; the catalogue example above makes the added
+  obligation concrete. No general algorithmic superiority is claimed.
 - [Boeken, Zoeter and Mooij (2025)](https://arxiv.org/abs/2510.21335v1),
   sections 2--5 and Appendix D, treats conditional forecasts, performative
   divergence and inverse-probability corrections. It supplies relevant
@@ -340,7 +456,14 @@ The closest established comparisons clarify what is and is not added:
   different assumptions from the dynamics proved here.
 
 The candidate contribution is the explicit coupled construction, its
-representation-recovery conclusion and the fixed-budget failure/repair.
+representation-recovery conclusion, the fixed-budget failure/repair, and
+the conditions separating sufficient catalogues that recover from those
+that can self-confirm incorrectly.
 Proper scoring, projection, replicator dynamics and potential arguments are
 established ingredients. The comparison supports developing this synthesis;
 it is not an exhaustive theorem-level novelty clearance.
+
+[R1.12](R1_weak_exposure.md) extends the binary simultaneous dynamics to
+decreasing environmental shares and characterizes a grounding repair using
+controlled probes. Its finite-learning-rate result does not assume that
+forecasts equilibrate instantly, and its observation costs are kept explicit.

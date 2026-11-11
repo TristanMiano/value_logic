@@ -283,8 +283,13 @@ examples; (b) proved.**
 Under (b) optimal delineations may be strictly finer than $`\bar z`$: they
 can also record who chooses what, which is a fact about the population. In
 the specialist example an unflagged assignment share of 1% already makes the
-merge costly (0.0086 nats at $`n=2`$); whether unflagged assignment suffices
-in general is open. In 200 random worlds with full-support skill-dependent
+merge costly (0.0086 nats at $`n=2`$). The general unflagged-assignment
+question was open in the original session. **S6, Codex (GPT-6):**
+[R1.10, Theorem 19](R1_selected_tasks.md) proves recovery for n>=3, and
+Proposition 20 gives a strictly positive example showing that two past
+performances can be insufficient. One history suffices for almost every
+positive assignment kernel in a finite-state model, while Theorem 21
+identifies the limiting optima. In the original 200 random worlds with full-support skill-dependent
 choice, the optimal delineations at $`n=1`$ were exactly the refinements of
 the partition by proportional joint kernels
 $`q(z\mid\theta)f(\cdot\mid\theta,z)`$; this is not a theorem, and it fails
@@ -293,8 +298,11 @@ skill).
 
 **Other limits of this result.**
 
-- **Twins are invisible.** Raw labels that differ only within a twin class
-  are not recovered by any outcome-based evaluation (phase one, F.4).
+- **Twins are invisible under independent assignment.** Under A1, raw
+  labels that differ only within a twin class are not recovered by any
+  outcome-based evaluation (phase one, F.4). Under skill-dependent choice,
+  assignment labels can carry additional finite-history information, as
+  Proposition 5 and R1.10 explain.
 - **Best forecast, known model.** $`V_n(c)`$ scores the best judge using
   $`c`$. A poor judge with the right delineation can score below a good judge
   with a coarser one, and judges who must learn the outcome laws from finite
