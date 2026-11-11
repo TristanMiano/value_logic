@@ -224,7 +224,10 @@ the relation to Theorem 1 without identifying their optimization problems.
   That is not modelled here; [R1.9](R1_coupled_reappearance.md) provides a
   bounded simultaneous forecast/representation dynamic as a bridge to W7.
 - **Conditionally independent sightings.** No learning by the performer and
-  no order effects within a history.
+  no order effects within a history. [R1.15](R1_directed_reappearance.md)
+  gives a directed ordered-pair extension: sufficient common concepts still
+  exist, and a cyclic example shows when joint or role-specific refinements
+  are useful despite uninformative individual binary splits.
 - **A rating is coarser than a forecast.** A yes or no carries at most the
   information of the forecast it summarises. The theorem is about forecasts.
 - **Explicit bound added:** [R1.8, Theorem 17](R1_quantitative_recovery.md)

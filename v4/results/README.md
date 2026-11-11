@@ -42,7 +42,16 @@ November 8, 2026.
 - [R1.13 Coupled judgment from observed outcomes](R1_observed_dynamics.md)
   (C1, C2 and a conditional C3 bridge; Codex, GPT-6; November 10, 2026;
   implemented binary learner, almost-sure recovery and conservative finite
-  bounds, with weak-exposure costs retained; cycle P4-R1-C001, unfinished).
+  bounds, with weak-exposure costs retained and a tested probing/adoption
+  repair; cycle P4-R1-C001, unfinished).
+- [R1.14 Small coalitions can recover joint judgment structure](R1_coalition_recovery.md)
+  (C1, C2; Codex, GPT-6; November 10--11, 2026; factorwise coalition
+  recursion, a bounded-interaction bootstrap, and finite observed recovery;
+  cycle P4-R1-C001, unfinished).
+- [R1.15 Directed reappearance: useful concepts can require a joint refinement](R1_directed_reappearance.md)
+  (C1, C2 and a conditional C3 connection; Codex, GPT-6; November 11, 2026;
+  directed population grounding, a robust refinement plateau and constructive
+  joint/role-specific repairs; cycle P4-R1-C001, unfinished).
 
 R1.1--R1.7 retain Fable's authorship and original numerical records. Codex's
 S6 cross-model review reconstructed their central proofs and made dated scope

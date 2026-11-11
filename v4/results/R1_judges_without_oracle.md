@@ -209,6 +209,14 @@ unchanged to this finite coalition catalogue and credits the informative
 pair. This credits the joint representation, without claiming that each
 member is informative alone or solving strategic credit allocation.
 
+**S6 extension, November 10--11:** [R1.14](R1_coalition_recovery.md) distinguishes
+the joint catalogue from one that retains only separate coalition marginals.
+It gives the latter a typed fixed-point theorem, bounded-interaction and
+anchor conditions for recovering the full task partition, and an observed
+repeated-judgment implementation with a stated finite-separation assumption.
+Its parity construction identifies the higher-order information that such a
+restricted catalogue can miss, together with a representation repair.
+
 **Reading for C2.** J², "judgments vindicated by later judgments," is the
 map $`\Sigma`$. T, "what the vindicated judges tell apart," is the map
 $`\pi`$. Neither is primary: the stable states are the fixed points of their

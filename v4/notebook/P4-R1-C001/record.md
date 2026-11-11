@@ -462,3 +462,50 @@ sufficient budgets and stronger ordinary comparators are retained beside the
 positive constructions. The change from exact expectations to observed
 updates is explicitly bounded to the binary fixed-share case. The final
 complete changed-material review remains due after the floor.
+
+**S6 fourth checkpoint, November 11, 2026, 08:11 UTC.** Alignment first:
+C1/C2 advance through joint judgments with bounded representations and
+through ordered temporal recurrence. The coalition construction gives a
+faithful case where even single-performance full observations do not identify
+the tasks, while repeated judgments do. A controlled-probe composition links
+observed evidence to useful concept adoption, with a coarse-adequacy option.
+C3 gains a directed grounding condition; C4 and C6--C7 are unchanged, and
+C5 self-licensing remains open.
+
+R1.14 separates joint coalition information from factorwise prediction.
+Classical exponential-family identification and composite likelihood support
+its bounded-interaction recovery condition. Three independent latent skills
+make the six-judge example's full one-performance law uniform on all tasks;
+repeated observations recover four classes among eight labels in the saved
+finite experiment. Higher-order parity and anchor-bundled conventions remain
+explicit boundaries, with richer coalition and mediation repairs.
+
+R1.15 extends the population theorem to directed laws with fixed reference
+context frequencies. A three-cycle carries 0.12849650 nats while every common
+binary partition carries zero; a role-specific binary pair carries 0.04402454.
+A small symmetric perturbation preserves a large joint-versus-single-split
+gap. A seeded fine-concept proposal recovers the directed law in the ODE.
+This strengthens the obligation to generate compound distinctions; it does
+not implement an endogenous proposal policy or a general adaptive-chain learner.
+
+R1.13 Corollary 28B implements probing, certified adoption, and subsequent
+calibration under compatible assumptions. In the weak-exposure run, its final
+MSE is 0.008891 versus passive coupled selection's 0.323874 and always-fine's
+0.008680. The extra intervention authority is explicit. The boundary-cost
+case exhausts its probe budget without a strict certificate, so this is not
+an economically optimal query policy.
+
+Observed cumulative research: **12,954,892,213,848 ns**, or
+**215.9148702308 minutes**. Remaining floor: **24.0851297692 minutes**.
+The cycle stays open; this checkpoint's administration is excluded.
+Next: finish the bounded source comparisons and assess the strongest supported
+W1 reading, its integrated and separate components, and the next thesis-level
+question. Complete the final aim-balance review after the research floor.
+
+Checkpoint self-review: small coalitions could have silently reintroduced a
+full joint law; the explicit factorwise restriction repairs that risk. The
+initial shared-trait example allowed one-performance task discrimination;
+independent skill coordinates now demonstrate why repeated judgment matters.
+Practical speed claims are bounded by the stronger fine comparator and by
+unpriced interventions. Both the directed refinement obstruction and its
+constructive repairs receive explicit proofs.
