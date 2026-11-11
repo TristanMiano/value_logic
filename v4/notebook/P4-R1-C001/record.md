@@ -315,3 +315,34 @@ remaining: 213.22 minutes.** The cycle stays open.
 dynamic that the author's wording points to, as W1's handoff to W7.
 (2) An explicit bound for Corollary 14. (3) Coupled dynamics of weights and
 delineation; leftover bounds from S1.
+
+### S5, 2026-11-10 (Claude, Fable 5.2)
+
+**Author input, November 10:** the general definition of J is better
+"because something has to determine 'success'. That could either be the same
+agent, another agent, or something in the environment that requires it."
+The author also said the work will next be handed to GPT-6 Astra.
+
+**Alignment first.** C1 gained its missing condition in dynamic form: the
+environment's share of what determines reappearance is what turns
+vindication into contact with fact. C3 first contact: a factual limit that
+is reached under self-revising judgment with any environmental share, and
+can be blocked under mere redistribution of influence. C5: a second
+convergence statement for recursive valuation. No thesis weakened.
+
+**Done.** [R1.7](../../results/R1_who_determines_reappearance.md), Theorem
+15, with simulations matching in every case run; [HANDOFF.md](HANDOFF.md).
+
+**Self-review (aim balance).** The model is deliberately minimal and the
+result file says it is a first model. Both directions are in one theorem:
+convergence to the environment's ordering under adaptation, and lock-in of
+conventions, including one opposed to the environment, under fixed raters.
+Identified risk: the favourable case (b) depends on the unit-norm
+normalisation, which makes the self-fulfilling term exactly neutral; with
+another normalisation it could favour or oppose particular ratings, and
+this is not explored. Identified risk: adopting the author's three sources
+as the organising frame without testing an alternative taxonomy. Self-review
+only.
+
+**Observed time, cumulative after S5.** 1697189080848 ns, 28.29 minutes. **Floor
+remaining: 211.71 minutes.** The cycle stays open; see the handoff.
