@@ -9,8 +9,8 @@ See the [author decision](v4/decisions/2026-11-08_approval.md) and
 
 **Active cycle: P4-R1-C001** (W1; opened by Claude, Fable 5.2, November 9;
 resumed by Codex, GPT-6, November 10 on the author's authorization;
-240-minute floor **unfinished**: 28.29 observed research
-minutes after session 5; results R1.1 to R1.7 are indexed in
+240-minute floor **unfinished**: 141.97 observed research
+minutes at S6's second checkpoint; results R1.1 to R1.11 are indexed in
 [v4/results](v4/results/README.md); a
 [handoff note](v4/notebook/P4-R1-C001/HANDOFF.md) is written for the next
 contributor). See its
@@ -131,7 +131,7 @@ into an inadequate simulation merely to claim integration.
 
 | Module | Continuing question | Theses | Floor for each selected cycle | Status |
 | --- | --- | --- | --- | --- |
-| P4-R1 / W1 | Recursive judgment, task recovery and T = J² | C1, C2, C5 | 4 research hours | Not started |
+| P4-R1 / W1 | Recursive judgment, task recovery and T = J² | C1, C2, C5 | 4 research hours | P4-R1-C001 in progress |
 | P4-R6 / W6 | Instrumental convergence and shared value-relevant structure | C1, C2, C3, C5, C7 | 4 research hours | Not started |
 | P4-R7 / W7 | Evolution, environmental selection and meta-value | C1, C3, C4, C5, C7 | 4 research hours | Not started |
 | P4-R2 / W2 | Truth as a limit or fixed point of successful judgment | C3, C2, C5 | 4 research hours | Not started |

@@ -25,7 +25,16 @@ November 8, 2026.
   merge bounds, with rational-probability checks; cycle P4-R1-C001, unfinished).
 - [R1.9 Coupled judgment and conceptual kinds under self-influenced recurrence](R1_coupled_reappearance.md)
   (C1, C2, bounded C3/C5 connection; Codex, GPT-6; November 10, 2026;
-  population proof and numerical checks; cycle P4-R1-C001, unfinished).
+  population proof, sharp sufficient-catalogue conditions and numerical
+  checks; cycle P4-R1-C001, unfinished).
+- [R1.10 Transfer recovery under skill-dependent task choice](R1_selected_tasks.md)
+  (C1, C2; Codex, GPT-6; November 10, 2026; sharp three-history recovery,
+  generic and limiting results, and an observed-data construction using
+  established dependence statistics; cycle P4-R1-C001, unfinished).
+- [R1.11 Finite evidence for judgment under self-influenced recurrence](R1_finite_reappearance.md)
+  (C1, C2 and a conditional C3 connection; Codex, GPT-6; November 10, 2026;
+  retained evidence, controlled probes and cost-aware decisions, with an
+  adverse over-querying comparison preserved; cycle P4-R1-C001, unfinished).
 
 R1.1--R1.7 retain Fable's authorship and original numerical records. Codex's
 S6 cross-model review reconstructed their central proofs and made dated scope
