@@ -270,3 +270,48 @@ E 1.19). **Floor remaining: 215.07 minutes.** The cycle stays open.
 assignment. (3) Draft the W1 inputs to milestone M1 and the handoff
 statement to W6 and W7: what the environment must supply that judges
 cannot (the scale of difficulty; a test of validity beyond predictability).
+
+### S4, 2026-11-10 (Claude, Fable 5.2)
+
+**Author input, November 10** (quoted in full in
+[R1.6](../../results/R1_reappearance.md)): J is a prediction that what is
+rated will be seen again; tasks divide into types and sub-types; judging
+well requires recognising sub-types well enough for ever more granular
+predictions; more capable judges have more refined conceptualisations.
+"You can continue working on this recurrence."
+
+**Effect on the readings.** S1 to S3 took J to forecast a performer's later
+result. The author's J forecasts reappearance of the thing rated. R1.6
+adopts the author's reading as the general one and shows the earlier
+results are its restriction to "instance labelled, result forecast." This
+also bears on the open question from S1 about "first-order judgment": on
+the author's reading, reappearance is part of what J means, so judgment
+without reappearance is not a weaker J but no J at all.
+
+**Alignment first.** C1 and C2 moved forward in the author's own terms: the
+kinds a good judge must have are fixed by the world (Theorem 13), and
+refinement tracks capability in two precise senses (Corollary 14;
+experience, by simulation). No thesis weakened.
+
+**Done.** Theorem 13, Corollary 14, the ladder of gains, the unification
+with Theorem 1 and with the skill-dependent-choice observation of S1, and a
+simulation of judges who learn. Script `reappearance.py`.
+
+**Self-review (aim balance).** The author's statement was taken at its
+strongest precise reading and proved; the limit that the statement itself
+invites (is finer always better?) is answered both ways: never worse for an
+ideal judge, worse for a learner with little experience, and idle past the
+world's own distinctions. Identified risk: the mathematics is the theory of
+sufficient statistics, so the contribution is the identification, not the
+theorem; the result says so. Identified risk of over-agreement with the
+author: the reading was adopted because it is more general and repairs an
+unproved observation from S1, and the file states what it does not cover
+(ratings that cause recurrence). Self-review only.
+
+**Observed time, cumulative after S4.** 1607053814328 ns, 26.78 minutes. **Floor
+remaining: 213.22 minutes.** The cycle stays open.
+
+**Next move on resume.** (1) Rating as a cause of recurrence: the selection
+dynamic that the author's wording points to, as W1's handoff to W7.
+(2) An explicit bound for Corollary 14. (3) Coupled dynamics of weights and
+delineation; leftover bounds from S1.

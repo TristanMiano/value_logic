@@ -16,3 +16,5 @@ November 8, 2026.
   (C1; Claude, Fable 5.2; November 10, 2026; cycle P4-R1-C001, unfinished).
 - [R1.5 Reinforcing judges by weighted vindication: convergence and concentration](R1_weight_dynamics.md)
   (C5, C2; Claude, Fable 5.2; November 10, 2026; cycle P4-R1-C001, unfinished).
+- [R1.6 Judgment as a forecast of reappearance: finer concepts capture more, up to the world's own distinctions](R1_reappearance.md)
+  (C1, C2; formalises the author's November 10 statement; Claude, Fable 5.2; cycle P4-R1-C001, unfinished).
