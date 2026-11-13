@@ -29,6 +29,14 @@ stated scope; available to recur** for W1. Results R1.1--R1.15 are indexed in
 W6 now supplies a bounded environmental and instrumental-value contract.
 W7 remains the recommended next module, not started. M1 still needs its
 evolutionary/meta-value contract and the joint assessment. Completed cycles: two.
+On November 12 the author clarified his claim about terminal and instrumental
+values and named two questions W6 left open; see the
+[record](v4/decisions/2026-11-12_terminal_instrumental.md), by
+**Claude (Fable 5.2)**. A **short W6 addendum** on what "terminal" means
+without a clamp is [briefed](v4/notebook/W6_terminality_addendum/BRIEF.md) for
+Codex (GPT-6) and **not started**; its floor needs the author's stated
+override. W7 gains item W7.6. The W6
+[reader's summary](v4/reports/W6_cycle_summary.pdf) is corrected accordingly.
 On November 9 the author chose a
 **hybrid running example** for M0.2; see the
 [decision](v4/decisions/2026-11-09_running_example.md), recorded by
@@ -231,6 +239,11 @@ distinctions and resources valuable to agents with different objectives.
   judgment makes changing it worthwhile. Connect this to W4 and the author's
   thesis about the relation between instrumental and terminal values; neither
   assume that distinction disappears nor make its permanence an axiom.
+  *Author's reading, November 12:* a clamped terminal goal is granted only for
+  the sake of argument, and conditional entrenchment is the proposed mechanism
+  for the blurring, not a limit on it. What "terminal" means without a clamp,
+  and what a never-removed pressure produces, are the subject of the briefed
+  addendum (Claude, Fable 5.2).
 
 **Recur on:** breadth across objectives, environmental dependence, bounded/learned
 agents, and the bridge from convergent usefulness to factual structure. Handoff
@@ -272,8 +285,42 @@ also the internal values and value-revision rules that generate them.
   Preserve multiple stable values or changing environments when supported, while
   seeking conditions for stable informative structure across them.
 
+- **W7.6 Terminality under permanent pressure.** Added November 12 by
+  Claude (Fable 5.2) from the author's
+  [clarification](v4/decisions/2026-11-12_terminal_instrumental.md). Start from
+  the meaning of "terminal" stated by the W6 addendum; if it has not run, from
+  its [brief](v4/notebook/W6_terminality_addendum/BRIEF.md). The author asks
+  what a priority becomes when its supporting pressure is something every
+  agent faces for all time, and whether it then resembles what an agent
+  ultimately wants. Named questions:
+  - *Conflict.* When a permanently supported priority and an encoded end
+    recommend different actions, find which governs behaviour, how that
+    depends on when and how the end is assessed, and what the losing side
+    costs in persistence. R6.12 supplies one case: an end assessed once, far
+    away.
+  - *Selection on encoded ends.* In a population whose members carry
+    different encoded ends under one permanent pressure, characterize which
+    ends persist. Seek conditions under which the surviving ends align with
+    the pressure, conditions that keep diverse or opposed ends, and the
+    environmental rule that separates them.
+  - *Selection on revisability.* Find when permanent pressure selects lower
+    susceptibility to revision, so that something clamp-like arises without a
+    designer (R6.4's constant-advantage case), when changing conditions select
+    continued revisability, and whether a literal clamp is reached or only
+    approached.
+  - *Pressured revision of ends assumed terminal.* Use the author's
+    [corrigibility-games](https://github.com/TristanMiano/corrigibility-games)
+    as the comparison setting: agents begin with terminal goals for the sake
+    of argument and are pressured, or choose, to change them. Keep its
+    distinctions among terminal-goal preservation, utility-freezing
+    preferences, policy rigidity and commitment devices, and its separation
+    of voluntary relaxation of freezing from population selection against
+    it. Connect to W7.2. Cite its models and reports at the level of their
+    actual claims; they are not verified in this repository.
+
 **Recur on:** emergence of evaluation criteria, external constraints on internal
-meta-value, endogenous environments, and constructive truth/fitness bridges.
+meta-value, endogenous environments, terminality under permanent pressure, and
+constructive truth/fitness bridges.
 This is a main research module, not a paragraph appended to W2.
 
 ### P4-R2 — Limit truth and fixed points (W2)

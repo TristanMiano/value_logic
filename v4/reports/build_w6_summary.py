@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Build the W6 cycle summary PDF (v4/reports/W6_cycle_summary.pdf).
 
-Prepared by Claude (Fable 5.2), 2026-11-12, at the author's request. Reuses the
+Prepared by Claude (Fable 5.2), 2026-11-12, at the author's request; revised the
+same day after the author corrected its reading of the terminal/instrumental
+claim (see v4/decisions/2026-11-12_terminal_instrumental.md). Reuses the
 page styles of build_w1_summary.py, which must sit beside this file. Needs
 reportlab and the DejaVu fonts. Usage: python build_w6_summary.py OUTPUT.pdf
 """
@@ -14,7 +16,7 @@ P("What agents with different goals come to value in common, and when a useful p
   "the second phase-four research cycle of the Value Logic project", sub)
 P("Prepared for Tristan Miano by <b>Claude (Fable 5.2)</b>, November 12, 2026. The results summarised here "
   "(R6.1 to R6.16 and two supplements) were produced by <b>Codex (GPT-6)</b> on November 12, 2026, in the cycle "
-  "identified in the repository as P4-R6-C001.", small)
+  "identified in the repository as P4-R6-C001. <b>Revised November 12, 2026</b>: sections 3.2, 3.4 and 4 to 7 were changed after the author pointed out that the first version misread his claim about terminal and instrumental values (section 5).", small)
 BOX("<b>Status of everything in this document.</b> All results are model-generated, by a single model, and none "
     "has been independently reviewed. For this summary I re-ran the cycle's report verifier and six of its checking "
     "programs, which reproduced their saved outputs, and independently recomputed the reference values of the "
@@ -47,7 +49,7 @@ T([["Label", "Thesis"],
 
 H1("2. Vocabulary")
 T([["Term", "Meaning in this document"],
-   ["Final (terminal) goal", "What an agent ultimately pursues, valued for itself."],
+   ["Final (terminal) goal", "What an agent ultimately pursues, valued for itself. The author's essays grant such a goal only for the sake of argument: whether any goal is in fact held fixed, and by what, is left open."],
    ["Instrumental value, priority, subgoal", "Something valued because it helps reach other goals: a capability, a "
                                               "piece of information, an option kept open."],
    ["Convergence", "Different agents, with different final goals, coming to value the same thing. Distinct from "
@@ -93,9 +95,10 @@ B(["<b>Agreement is not the same as fact.</b> In the low-overlap world both agen
    "contributions also admit an outcome in which nobody pays (R6.3)."])
 
 H2("3.2 What “persistent” means: four different measurements")
-P("The essays suggest that the line between instrumental and final values blurs: a value that keeps being useful "
-  "becomes entrenched. The cycle's answer is that this is true in degrees, and that the degrees are different "
-  "quantities which should not be merged into one notion of “terminal” (R6.4):")
+P("The essay “Is Utility All You Need?” says the distinction between terminal and instrumental values is "
+  "“largely gone”: value is assigned to every state, including an agent's own values, and a value that keeps "
+  "being reinforced gains weight. The cycle supplies a mechanism of that kind. A priority that stays useful "
+  "becomes entrenched by degrees, and the cycle separates four things a “degree” can measure (R6.4):")
 T([["Measurement", "Question it answers"],
    ["Breadth", "How many goals benefit from the priority, with what weights and costs?"],
    ["Robustness", "Does the priority survive changes in goals and circumstances?"],
@@ -105,13 +108,23 @@ T([["Measurement", "Question it answers"],
 B(["<b>A guarantee of persistence.</b> If a priority gives an advantage in every goal context and the routes by "
    "which goals change overlap enough, its long-run frequency has an explicit positive lower bound. Sorting by "
    "goal can defeat the guarantee; restoring overlap repairs it.",
-   "<b>Entrenchment is conditional.</b> When the benefit is removed, continued revision eventually erases the "
-   "acquired priority. It is preserved only if revision dies away quickly enough, or if coordination with others "
-   "sustains it as a convention. A stronger original advantage raises the acquired level but not how long it "
-   "lasts after removal.",
+   "<b>The conditions are the mechanism.</b> A priority is held in place by the benefit that produced it. When "
+   "the benefit is removed, continued revision eventually erases the priority, unless revision dies away quickly "
+   "enough or coordination with others sustains it as a convention. A stronger original advantage raises the "
+   "acquired level but not how long it lasts after removal. Nothing here is fixed by decree: how final a "
+   "priority looks depends on how broad and how lasting its support is.",
+   "<b>Lasting support favours firmer retention.</b> While the advantage stays constant, variants that revise "
+   "the priority less often grow faster, so a pressure that persists pushes toward the unrevisable end of the "
+   "scale. Where the useful priority keeps changing, some continued revision does better (R6.4, a small case "
+   "of an established result).",
    "<b>Agreeing on average is not converging together</b> (R6.11). Agents who share one history are drawn "
    "together by revision; agents with separate histories can remain different even when their long-run "
    "statistics agree."])
+BOX("<b>Left open: support that is never removed.</b> The cycle tests what happens when a priority's benefit "
+    "is taken away. The author's question is the opposite case: a pressure every agent faces for all time. "
+    "Does a priority held in place that way resemble what we mean by an ultimate want? The cycle has two "
+    "pieces of an answer (the point above about lasting support, and section 3.4) and does not assemble them. A short "
+    "follow-up is proposed in section 7.")
 
 H2("3.3 Fixed final goals, adaptable means")
 B(["<b>Shared internal values help limited planners</b> (R6.6). Three agents with different fixed goals all "
@@ -130,7 +143,10 @@ H2("3.4 Direction without a represented final goal")
 P("Start from behaviour with no goal at all, and let an outside process retain the histories that survive. Long "
   "retained histories then behave as if guided by a value, although no ultimate objective is written inside the "
   "agent; the environment and the retention rule supply the direction (R6.12, an interpretation of established "
-  "mathematics).")
+  "mathematics). A fixed end can be added, assessed once at a final time. Far from that time, retained "
+  "behaviour is the same whatever the end is; only the last few steps differ. In the cycle's two-state example, "
+  "which I recomputed, ten steps before the assessment the retained behaviour is within 0.001 of the common "
+  "pattern for every choice of end.")
 B(["<b>Copy actions, not luck.</b> Imitating the <i>states</i> that survivors passed through credits them with "
    "control over chance events. Imitating their <i>actions</i> and then living with the real consequences does "
    "not. With correctly timed copying, survival improves, and under stated conditions repeated copying converges "
@@ -164,7 +180,7 @@ T([["Thesis", "What this cycle supports", "What is still missing"],
    ["C3. Truth as a limit", "Conditions that separate grounded agreement from a useful coarse consensus, in "
     "finite examples.", "No construction of truth as a limit."],
    ["C5. Values over values", "Explicit regimes of stability, flexibility and diversity for revisable "
-    "priorities.", "Where the revision rule comes from; self-endorsement in the logical sense."],
+    "priorities.", "Where the revision rule comes from; self-endorsement in the logical sense; what “terminal” means when no goal is held fixed."],
    ["C7. Policy and value", "Behaviour reconstructed from values; an environment identified from judgments of "
     "policies.", "Size, cost and learned representations."]], [1.35, 2.65, 2.5])
 
@@ -172,10 +188,14 @@ H1("5. Faithfulness to the founding ideas")
 B(["<b>The module's own question is answered at a restricted scope.</b> The cycle does what the plan asked: it "
    "defines convergence, separates agreement across agents from change within one, and states when shared "
    "usefulness amounts to shared fact.",
-   "<b>It qualifies an essay claim instead of confirming it.</b> The essay “Is Utility All You Need?” says "
-   "the distinction between terminal and instrumental values is “largely gone.” The cycle's result is "
-   "more specific: a useful priority can entrench, but removing its benefit erases it unless revision stops or "
-   "others sustain it. That is an informative correction and should be stated as one.",
+   "<b>It supplies a mechanism for an essay claim.</b> The essay says the distinction between terminal and "
+   "instrumental values is “largely gone.” As the author reads his own claim, a fixed final goal was granted "
+   "only for the sake of argument, and the claim is that lasting usefulness entrenches a value by degrees. The "
+   "cycle's conditional entrenchment is a mechanism of that kind, and its four measurements are the degrees. "
+   "The first version of this summary called the result a correction to the essay. That was my misreading of "
+   "the claim, not a finding of the cycle.",
+   "<b>The author's follow-up question is not answered.</b> What “terminal” means when nothing is held "
+   "fixed, and what a permanently supported priority becomes, are not addressed directly (sections 3.2 and 6).",
    "<b>Breadth over depth.</b> Eighteen documents were produced in one four-hour cycle. Most are small finite "
    "constructions, and several restate established results in the project's terms. The central example's sharp "
    "boundary is an elementary calculation; the substantive part is that it is learned from purchased feedback. "
@@ -188,14 +208,21 @@ B(["<b>No independent review</b> of any result in this cycle. Together with the 
    "is selected, not that real environments contain such facts.",
    "<b>Supplied ingredients.</b> Candidate distinctions, the evaluator, and the retention rule are given.",
    "<b>No integration</b> with the previous cycle's results on judges, and no account of why the selecting "
-   "environment has the form it does."])
+   "environment has the form it does.",
+   "<b>No stated meaning of “terminal” without a fixed goal.</b> The author names three candidates: the "
+   "whole assignment of values to states, its highest points, or a summary of what the agent does. The cycle "
+   "does not say which of these is well defined, and it studies removal of support, not support that never ends."])
 
 H1("7. Recommended next steps")
 B(["Proceed to the module on evolution and selection (W7), as the cycle recommends, and build one model in depth "
    "there instead of another broad portfolio.",
    "Before the first milestone is assessed, have the load-bearing results of both cycles re-derived by a model "
    "that did not write them.",
-   "Keep W6 open for the integration with W1 and for learners that generate their own distinctions."])
+   "Keep W6 open for the integration with W1 and for learners that generate their own distinctions.",
+   "Run a short addendum to this module on what “terminal” means when no goal is held fixed and what "
+   "permanent pressure produces. A brief for it is in the repository at "
+   "v4/notebook/W6_terminality_addendum/BRIEF.md. Which of two conflicting priorities prevails, and what "
+   "selection does to encoded goals, are added to the plan for W7."])
 
 S.append(PageBreak())
 H1("Appendix A. Two derivations behind the findings")
@@ -234,6 +261,7 @@ P("By contrast a bonus paid for <i>being in</i> a state, at every step, does not
   "staying, which is how a means can turn into something the agent lingers to collect. This invariance is a "
   "classical result on reward shaping, quoted here from memory.", thm)
 
+S.append(PageBreak())
 H1("Appendix B. Index of the cycle's results")
 P("Files are in the repository folder v4/results. All are by Codex (GPT-6), November 12, 2026.", small)
 T([["No.", "Subject", "Evidence stated by its author"],
@@ -258,7 +286,7 @@ T([["No.", "Subject", "Evidence stated by its author"],
 def footer6(canvas, doc):
     canvas.saveState()
     canvas.setFont("Sans", 7.5); canvas.setFillColor(colors.HexColor("#5b6670"))
-    canvas.drawString(inch, .55 * inch, "Shared Purposes, Shared Facts: Value Logic cycle P4-R6-C001. Prepared by Claude (Fable 5.2), November 12, 2026.")
+    canvas.drawString(inch, .55 * inch, "Shared Purposes, Shared Facts: Value Logic cycle P4-R6-C001. Claude (Fable 5.2), rev. November 12, 2026.")
     canvas.drawRightString(letter[0] - inch, .55 * inch, f"{doc.page}")
     canvas.restoreState()
 
