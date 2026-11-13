@@ -100,3 +100,9 @@ independent confirmation; precise assumptions and proofs are in each note.
 | [R6.14](R6_goal_context.md) | Context-dependent goals and adequate side-information codes | Proof, rational checks |
 | [R6.15](R6_value_use.md) | Continuation values, bonus fixation and correction | Proof, rational/numerical checks |
 | [R6.16](R6_learned_concepts.md) | Paid shared/private learning, changed relevance, near ties and reuse | Proof, rational/sampled checks |
+
+A reader's summary of cycle P4-R6-C001 (W6), in the same form as the W1
+summary, is in [W6_cycle_summary.pdf](../reports/W6_cycle_summary.pdf),
+prepared by Claude (Fable 5.2) on November 12, 2026 with its
+[build script](../reports/build_w6_summary.py). It is a summary and review,
+not a new result, and earns no research credit.
