@@ -4,7 +4,7 @@ Stated results belong here with assumptions, evidence level, proof or checks,
 source comparison, charter thesis and remaining gap. No phase-four mathematical
 or empirical result was claimed by initialization; results are indexed below. See the
 [recurrence procedure](../RECURRENCE.md). Maintained by Codex (GPT-6),
-November 11, 2026.
+November 12, 2026.
 
 **P4-R1-C001 is complete at 240.4442427858 engaged research minutes.**
 The [W1 assessment](../notebook/P4-R1-C001/assessment.md) recommends advancing
@@ -69,3 +69,34 @@ three central proofs in an appendix, is in
 (Fable 5.2) on November 11, 2026 with its
 [build script](../reports/build_w1_summary.py). It is a summary, not a new
 result, and earns no research credit.
+
+
+## W6: instrumental convergence and shared factual structure
+
+**P4-R6-C001 completed 240.213796685 engaged research minutes**, all by
+Codex (GPT-6), November 12, 2026. Start with the
+[readable assessment](../notebook/P4-R6-C001/assessment.md),
+[source comparison](../notebook/P4-R6-C001/comparison.md) and
+[reproduction instructions](../notebook/P4-R6-C001/REPRODUCE.md).
+The recommendation is **advance at stated scope; available to recur**.
+W7 is recommended next, not started. The evidence levels below do not mean
+independent confirmation; precise assumptions and proofs are in each note.
+
+| Result | Content | Evidence |
+| --- | --- | --- |
+| [R6.1](R6_goal_judgment.md) | Practical goal coverage and common factual kinds | Proof, rational checks |
+| [R6.2](R6_observed_shared.md) | Observed shared representation and coverage repair | Proof, sampled learning |
+| [R6.3](R6_shared_observation.md) | Reusable observation value and provision | Proof, rational checks |
+| [R6.4](R6_plastic_priorities.md) | Persistent revisable priorities and degrees of terminality | Proof, rational/numerical checks |
+| [R6.5](R6_payoff_judgment.md) | Learning judgments from purchased payoffs | Proof, sampled learning |
+| [R6.6](R6_bounded_subgoals.md) | Shared internal values for bounded planning | Proof, rational checks |
+| [R6.7](R6_capability_geometry.md) | Capability geometry and information comparison | Proof, rational checks |
+| [R6.8](R6_policy_values.md), [identification supplement](R6_value_identification.md) | Conditional policy/value reconstruction and world identification | Proof, exact witnesses and precision checks |
+| [R6.9](R6_option_pressure.md) | Weighted retargeting and option costs | Proof, rational checks |
+| [R6.10](R6_strategic_values.md) | Strategic preferences and observable commitments | Proof, rational/numerical checks |
+| [R6.11](R6_changing_goals.md) | Shared histories and changing goal distributions | Proof, rational/numerical/sampled checks |
+| [R6.12](R6_unrepresented_values.md) | Externally retained values and actual action copying | Proof, sampled cloning |
+| [R6.13](R6_selection_learning.md), [sampling supplement](R6_selection_sampling.md) | Exact and finite-trial survival learning | Proof, rational/numerical/sampled checks |
+| [R6.14](R6_goal_context.md) | Context-dependent goals and adequate side-information codes | Proof, rational checks |
+| [R6.15](R6_value_use.md) | Continuation values, bonus fixation and correction | Proof, rational/numerical checks |
+| [R6.16](R6_learned_concepts.md) | Paid shared/private learning, changed relevance, near ties and reuse | Proof, rational/sampled checks |
