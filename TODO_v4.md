@@ -1,16 +1,16 @@
 # Value Logic Phase Four: Recursive Value
 
-**Status, November 12, 2026:** the author has **APPROVED the charter**.
+**Status, November 18, 2026:** the author has **APPROVED the charter**.
 The research plan uses recurring four-hour modules; W1's first cycle is
-complete at a stated scope. **W6's first cycle is also complete**, with the
-recommendation to advance at its stated scope and keep it available to recur.
+complete at a stated scope. **W6's first cycle and its terminality addendum are complete.**
+The recommendation is to advance at the stated scope and keep W6 available to recur.
 Phase four remains open.
 Original initialization: **Claude (Opus 5.5)**, November 7.
 Review and author-directed plan revision: **Codex (GPT-6)**, November 8.
 See the [author decision](v4/decisions/2026-11-08_approval.md) and
 [initialization review](v4/reviews/2026-11-08_initialization.md).
 
-**Active cycle: none.** P4-R6-C001 (W6) completed
+**Active cycle: none.** [P4-R6-C002](v4/notebook/W6_terminality_addendum/record.md) completed its author-selected 60-minute floor at **60.339443105 engaged research minutes**. P4-R6-C001 (W6) completed
 **240.213796685 observed research minutes**, all by Codex (GPT-6), after
 verifying PR #37's merge. Read its [assessment](v4/notebook/P4-R6-C001/assessment.md),
 [record](v4/notebook/P4-R6-C001/record.md) and
@@ -28,14 +28,13 @@ stated scope; available to recur** for W1. Results R1.1--R1.15 are indexed in
 [current handoff](v4/notebook/P4-R1-C001/HANDOFF.md).
 W6 now supplies a bounded environmental and instrumental-value contract.
 W7 remains the recommended next module, not started. M1 still needs its
-evolutionary/meta-value contract and the joint assessment. Completed cycles: two.
+evolutionary/meta-value contract and the joint assessment. Completed cycles: three.
 On November 12 the author clarified his claim about terminal and instrumental
 values and named two questions W6 left open; see the
 [record](v4/decisions/2026-11-12_terminal_instrumental.md), by
-**Claude (Fable 5.2)**. A **short W6 addendum** on what "terminal" means
-without a clamp is [briefed](v4/notebook/W6_terminality_addendum/BRIEF.md) for
-Codex (GPT-6) and **not started**; its floor needs the author's stated
-override. W7 gains item W7.6. The W6
+**Claude (Fable 5.2)**. On November 18 Codex (GPT-6.2 Astra) completed the
+[W6 addendum on terminality](v4/results/R6_terminality.md) under the author’s
+one-hour override. W7.6 carries its proposed test forward. The W6
 [reader's summary](v4/reports/W6_cycle_summary.pdf) is corrected accordingly.
 On November 9 the author chose a
 **hybrid running example** for M0.2; see the
@@ -153,7 +152,7 @@ into an inadequate simulation merely to claim integration.
 | Module | Continuing question | Theses | Floor for each selected cycle | Status |
 | --- | --- | --- | --- | --- |
 | P4-R1 / W1 | Recursive judgment, task recovery and T = J² | C1, C2, C5 | 4 research hours | C001 complete; advance at stated scope, available to recur |
-| P4-R6 / W6 | Instrumental convergence and shared value-relevant structure | C1, C2, C3, C5, C7 | 4 research hours | C001 complete; advance at stated scope, available to recur |
+| P4-R6 / W6 | Instrumental convergence and shared value-relevant structure | C1, C2, C3, C5, C7 | 4 research hours unless overridden | C001 and C002 complete; advance at stated scope, available to recur |
 | P4-R7 / W7 | Evolution, environmental selection and meta-value | C1, C3, C4, C5, C7 | 4 research hours | Not started |
 | P4-R2 / W2 | Truth as a limit or fixed point of successful judgment | C3, C2, C5 | 4 research hours | Not started |
 | P4-R3 / W3 | Local supersession, licenses and ontology change | C4, C3 | 4 research hours | Not started |
@@ -242,8 +241,8 @@ distinctions and resources valuable to agents with different objectives.
   *Author's reading, November 12:* a clamped terminal goal is granted only for
   the sake of argument, and conditional entrenchment is the proposed mechanism
   for the blurring, not a limit on it. What "terminal" means without a clamp,
-  and what a never-removed pressure produces, are the subject of the briefed
-  addendum (Claude, Fable 5.2).
+  and what a never-removed pressure produces, are addressed in the completed
+  [R6.17 addendum](v4/results/R6_terminality.md).
 
 **Recur on:** breadth across objectives, environmental dependence, bounded/learned
 agents, and the bridge from convergent usefulness to factual structure. Handoff
@@ -288,8 +287,8 @@ also the internal values and value-revision rules that generate them.
 - **W7.6 Terminality under permanent pressure.** Added November 12 by
   Claude (Fable 5.2) from the author's
   [clarification](v4/decisions/2026-11-12_terminal_instrumental.md). Start from
-  the meaning of "terminal" stated by the W6 addendum; if it has not run, from
-  its [brief](v4/notebook/W6_terminality_addendum/BRIEF.md). The author asks
+  the priced-choice definition and matched-prospects test in the completed
+  [W6 addendum](v4/results/R6_terminality.md). The author asks
   what a priority becomes when its supporting pressure is something every
   agent faces for all time, and whether it then resembles what an agent
   ultimately wants. Named questions:
@@ -479,6 +478,7 @@ by these modules, protected floors and result-based milestone assessments.
 | --- | --- | --- | --- |
 | [P4-R1-C001](v4/notebook/P4-R1-C001/assessment.md), November 9--11, 2026 | W1 recovery, coupled concepts, finite evidence, coalition and temporal extensions; **14,426,654,567,148 ns = 240.4442427858 min** | C1/C2 advanced; bounded C3 grounding and C5 convergence mechanisms; C4/C6/C7 unchanged, logical self-trust open | Advance W1 at stated scope; recur on budgeted concept generation and finite adaptive recovery. Next recommended module W6 asks when varied goals reward the recovered distinctions; W7 asks which environments select the needed learning practices. |
 | [P4-R6-C001](v4/notebook/P4-R6-C001/assessment.md), November 12, 2026 | W6 shared facts, revisable priorities, survival learning and policy/value identification; **14,412,827,801,100 ns = 240.213796685 min** | C1/C2/C5/C7 advanced; bounded C3 bridge; broad C4/C6 unchanged | Advance at stated finite scope. Paid selective learning yields **0.136466 / 0.127174** net return per opportunity versus **0.131509 / 0.122723** with forced purchases and **0.125000** with a known constant forecast in two synthetic worlds. Near-tie diversity and acquisition costs remain visible. Next W7 asks which environments select the learning and revision rules; preserve evidence reuse and W1/W6 integration. |
+| [P4-R6-C002](v4/notebook/W6_terminality_addendum/record.md), November 18, 2026 | W6 terminality under permanent pressure, author override; **3,620,366,586,300 ns = 60.339443105 min** | C5/C7 advanced; bounded C3 judgment tested against outcomes | Advance at stated scope; available to recur. Starting with zero adoption and strictly positive revision rates, the checked model reaches **99.21%** adoption by generation 512. All 16 trained controllers accepted an extra one-third risk when it improved both final assessments. W7.6 asks whether agents still pay under matched downstream prospects. |
 
 An unfinished selected cycle retains the single active pointer above. Completing
 a cycle does not close its module or authorize another four-hour block.

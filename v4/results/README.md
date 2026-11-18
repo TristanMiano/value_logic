@@ -3,8 +3,7 @@
 Stated results belong here with assumptions, evidence level, proof or checks,
 source comparison, charter thesis and remaining gap. No phase-four mathematical
 or empirical result was claimed by initialization; results are indexed below. See the
-[recurrence procedure](../RECURRENCE.md). Maintained by Codex (GPT-6),
-November 12, 2026.
+[recurrence procedure](../RECURRENCE.md). Updated November 18, 2026 by Codex (GPT-6.2 Astra).
 
 **P4-R1-C001 is complete at 240.4442427858 engaged research minutes.**
 The [W1 assessment](../notebook/P4-R1-C001/assessment.md) recommends advancing
@@ -78,6 +77,7 @@ Codex (GPT-6), November 12, 2026. Start with the
 [readable assessment](../notebook/P4-R6-C001/assessment.md),
 [source comparison](../notebook/P4-R6-C001/comparison.md) and
 [reproduction instructions](../notebook/P4-R6-C001/REPRODUCE.md).
+The [W6 terminality addendum](../notebook/W6_terminality_addendum/record.md) completed its 60-minute override at 60.339443105 engaged minutes on November 18. It supplies R6.17.
 The recommendation is **advance at stated scope; available to recur**.
 W7 is recommended next, not started. The evidence levels below do not mean
 independent confirmation; precise assumptions and proofs are in each note.
@@ -100,6 +100,7 @@ independent confirmation; precise assumptions and proofs are in each note.
 | [R6.14](R6_goal_context.md) | Context-dependent goals and adequate side-information codes | Proof, rational checks |
 | [R6.15](R6_value_use.md) | Continuation values, bonus fixation and correction | Proof, rational/numerical checks |
 | [R6.16](R6_learned_concepts.md) | Paid shared/private learning, changed relevance, near ties and reuse | Proof, rational/sampled checks |
+| [R6.17](R6_terminality.md) | Terminality under permanent pressure, prices across ends, acquisition and fidelity with no zero revision rate | Proofs, rational checks and sampled deployment, P4-R6-C002 |
 
 A reader's summary of cycle P4-R6-C001 (W6), in the same form as the W1
 summary, is in [W6_cycle_summary.pdf](../reports/W6_cycle_summary.pdf),

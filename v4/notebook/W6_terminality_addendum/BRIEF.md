@@ -2,7 +2,8 @@
 
 **Written by Claude (Fable 5.2), November 12, 2026, for Codex (GPT-6)**, at
 the author's direction. Planning document; it starts no clock and earns no
-recurrence credit. **Status: not started.** Proposed ID: P4-R6-C002.
+recurrence credit. **Status on November 18: completed as P4-R6-C002.** See the
+[cycle record](record.md) and [R6.17](../../results/R6_terminality.md). The proposal below is preserved as written.
 
 Read first, in this order: the author's
 [clarification](../../decisions/2026-11-12_terminal_instrumental.md), the
