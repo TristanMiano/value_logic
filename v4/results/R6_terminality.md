@@ -128,10 +128,8 @@ The difference between forward transmission and the history of a successful line
 <details>
 <summary>Which prices and horizons favor installing the priority?</summary>
 
-The same calculation gives a **threshold for acquiring the priority**. Imagine choosing once whether to install type 1 or 0, and then running the stated transmission rule. For any one-time cost multiplier $`d\ge1`$, type 1 eventually pays for that cost for *all* final assessments exactly when
-```math
-R>\frac{1-\mu+\mu d}{1-\mu+\mu/d}.
-```
+The same calculation gives a **threshold for acquiring the priority**. Imagine choosing once whether to install type 1 or 0, and then running the stated transmission rule. For any one-time cost multiplier $`d\ge1`$, type 1 eventually pays for that cost for *all* final assessments exactly when $`R>\frac{1-\mu+\mu d}{1-\mu+\mu/d}`$.
+
 Indeed the positive root exceeds $`d`$ exactly when the quadratic is negative at $`d`$. Statement 1 then supplies uniform strict preference. If the root is at or below $`d`$, the end $`u=h`$ (rescaled for acceptance) witnesses failure at every horizon. For the numerical example, at $`d=6/5`$ five subsequent transmissions suffice, and four do not. The same guarantee holds if the advantage varies by generation but always exceeds a common lower bound that clears the displayed threshold. Backward propagation takes a successor weight ratio $`z`$ to $`R_t[\mu+(1-\mu)z]/[1-\mu+\mu z]`$, increasing in both $`z`$ and $`R_t`$. Starting from zero and taking the lowest allowed advantage at each step gives the worst case, including an end accepting type 0 only.
 
 The time needed for this result matters as revision becomes rare. For fixed $`R>1`$, $`H`$ grows without bound as $`\mu`$ tends to zero. But for *fixed* $`m`$ the end accepting only 0 gives $`(M^m)_{10}/(M^m)_{00}\to0`$, since the matrix tends to $`\mathrm{diag}(1,R)`$. A slow update can look fixed throughout a finite test. At literal zero the end that vetoes type 1 keeps that veto for every horizon. A soft end with both weights positive instead gives a ratio $`R^m u_1/u_0`$ at zero revision. These distinctions explain why a common permanent need can dominate distant choices without making every clamped purpose disappear.
