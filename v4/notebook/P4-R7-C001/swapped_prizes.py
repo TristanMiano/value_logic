@@ -44,7 +44,32 @@ def recover(q,venues):
     return [(c,normalized([exp(reached[i]) for i in c])) for c in components]
 
 
+def moving_odds():
+    # All numbers in this assay are log odds. A and B swap the two prizes.
+    odds = list(map(F,["-.5","-.2",".1"]))
+    prizes = list(map(F,["1.2","1.1","1.0"]))
+    earlier, previous = [odds[i]+prizes[i] for i in (0,1)]
+    last = odds[2]-prizes[2]
+    estimate = (2*previous-earlier+last)/2
+    assert estimate == odds[2] and (previous+last)/2 == 0
+    curve, precision = F(".04"), F(".005")
+    radius = curve/2 + 2*precision
+    for direction in (-1,1):
+        # Opposing readout errors and maximal curvature attain each endpoint.
+        past_a = earlier - direction*precision
+        prior_a = previous + direction*precision
+        true_b = last + direction*precision
+        current_a = 2*prior_a-past_a+direction*curve
+        target = (current_a+true_b)/2
+        assert target == estimate+direction*radius
+    lo, hi = [1/(1+exp(-float(x))) for x in (estimate-radius,estimate+radius)]
+    assert lo > .51
+    print("Current physical probability, bounded range, naive adjacent-swap estimate",
+          round(1/(1+exp(-float(estimate))),6), (round(lo,6),round(hi,6)), .5)
+
+
 def main():
+    moving_odds()
     p=list(map(F,[".4",".3",".2",".1"]))
     prizes=[4,1,2,3]
     identity=(0,1,2,3); shifts=(1,0,3,2); cycle=(1,2,3,0)

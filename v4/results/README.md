@@ -3,7 +3,7 @@
 Stated results belong here with assumptions, evidence level, proof or checks,
 source comparison, charter thesis and remaining gap. No phase-four mathematical
 or empirical result was claimed by initialization; results are indexed below. See the
-[recurrence procedure](../RECURRENCE.md). Updated November 18, 2026 by Codex (GPT-6.2 Astra).
+[recurrence procedure](../RECURRENCE.md). W7 results added November 19, 2026 by Codex (GPT-6).
 
 **P4-R1-C001 is complete at 240.4442427858 engaged research minutes.**
 The [W1 assessment](../notebook/P4-R1-C001/assessment.md) recommends advancing
@@ -107,3 +107,16 @@ summary, is in [W6_cycle_summary.pdf](../reports/W6_cycle_summary.pdf),
 prepared by Claude (Fable 5.2) on November 12, 2026 with its
 [build script](../reports/build_w6_summary.py). It is a summary and review,
 not a new result, and earns no research credit.
+
+## W7 evolution, environmental selection and meta-value
+
+The [cycle assessment](../notebook/P4-R7-C001/record.md) maps the six questions, evidence, time and next obligations. W7 advances at its stated scopes and remains available to recur. The [reproduction guide](../notebook/P4-R7-C001/reproduce.md) gives the inputs for the numerical results.
+
+| Result | What it establishes | Evidence |
+| --- | --- | --- |
+| [W7.1 Environmental inheritance](R7_environment.md) | Feedback can settle or cycle; infrastructure, teachers and individual action carry different parts of a practice. | Proofs and numerical checks; pigeon and great-tit archives |
+| [W7.2 Values and their revision](R7_revision.md) | Who files and who pays for checking can select different ways of judging changes to an end. | Solved games, adaptive-policy checks, publication and peer-review comparisons |
+| [W7.3 Factual recovery](R7_task_selection.md) | Scarce transferable observations can identify the current valuable option before they identify its history. | Incentive and identification arguments; held-out predictions and licensed decisions in human groups |
+| [W7.4 Reasons for endorsement](R7_reasons.md) | Feasible joint guarantees and compensation can give differently placed agents reasons to accept a selected rule. | Bargaining and authorization examples, certified lotteries on recorded ballots, voluntary savings choices |
+| [W7.5 Grounded truth and self-judgment](R7_grounded_limits.md) | Success can preserve the use of a physical distinction through competing self-forecasts, changing schools or changing vocabularies. | Fixed-point and limit proofs, priced calibration, physical benchmark and naming archive |
+| [W7.6 Terminality under permanent pressure](R7_persistent_ends.md) | A directly priced end can arise from an empty register, remain partially revisable, and sustain commitments through succession. | Exact preference comparisons, finite-population and optimization checks, human choice evidence |

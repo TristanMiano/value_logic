@@ -23,6 +23,7 @@ def unknown_schedule(series, difficulty, truth, unchanged, known_day=None, min_a
     keep=np.ones(len(weights),dtype=bool)
     accuracy=[]
     first_good=None
+    first_dates=[]
     wrong=False
     dates=[]
     cash=cash_for_earnings=0.
@@ -44,6 +45,7 @@ def unknown_schedule(series, difficulty, truth, unchanged, known_day=None, min_a
                 if truth[1] in live:
                     if first_good is None:
                         first_good=t
+                        first_dates=sorted(set(start[keep]))
                 else:
                     wrong=True
         if t==70:
@@ -55,7 +57,7 @@ def unknown_schedule(series, difficulty, truth, unchanged, known_day=None, min_a
             grade=np.where((t>=start)&(receipt.arm==new),2,(receipt.arm==old).astype(int))
             net+=np.take(logs,grade)
         keep &= logsumexp(np.log(weights)+net)-net < np.log(20)
-    return (mean(accuracy) if accuracy else None),first_good,wrong,dates,cash,cash_for_earnings
+    return (mean(accuracy) if accuracy else None),first_good,wrong,dates,cash,cash_for_earnings,first_dates
 
 
 def main(path):
@@ -65,6 +67,11 @@ def main(path):
         for diff in GAP:
             outcomes=[unknown_schedule(s,diff,answer,null) for _,b,s,answer in rooms if b[0]==diff]
             known=[scheduled[name] for name,b,_,_ in rooms if b[0]==diff]
+            if null==.5:
+                first=[v[6] for v in outcomes if v[1] is not None]
+                print("First correct action: count, exact true date, no-change still possible, median schedules",
+                      len(first),sum(s==[41] for s in first),sum(71 in s for s in first),
+                      median(map(len,first)) if first else None)
             print("Exact change day at 70, extra cents from knowing the schedule",
                   sum(v[3]==[41] for v in outcomes),round(mean(k[4]-v[4] for k,v in zip(known,outcomes)),4))
             print("Decision for money minus most likely winner, unknown/known date; calendar gain under money",
