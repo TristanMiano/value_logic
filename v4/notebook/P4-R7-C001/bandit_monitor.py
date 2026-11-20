@@ -22,7 +22,7 @@ LAYOUTS=list(permutations(ARMS,2))
 PROGRAM={1:(2,0),2:(2,1),3:(1,0),4:(1,2),5:(0,1),6:(0,2)}
 
 
-def read(path):
+def read(path, eligible_only=True):
     assert sha256(path.read_bytes()).hexdigest()==EXPECTED
     data=defaultdict(lambda:defaultdict(list))
     block={}
@@ -40,7 +40,8 @@ def read(path):
             answer[name]=(old,new)
             data[name][t].append(Choice(int(row["machine"]),int(row["performance"]),
                                         Decimal(row["result"])))
-    return [(name,block[name],series,answer[name]) for name,series in sorted(data.items()) if select_room(series)]
+    return [(name,block[name],series,answer[name]) for name,series in sorted(data.items())
+            if not eligible_only or select_room(series)]
 
 
 def shares(s,first,last):
@@ -216,6 +217,36 @@ def supremum(candidate,success,total):
     return log_binom_fit(pooled_y,pooled_n)+sum(log_binom_fit(success[i],total[i]) for i in unpooled)
 
 
+def check_order_fit():
+    """Compare the pooled fit with exact rational profile maxima in small tables."""
+    from fractions import Fraction as F
+    from itertools import product
+    from math import log
+    outcomes=[(n,y) for n in range(4) for y in range(n+1)]
+    checked=0
+    for table in product(outcomes,repeat=3):
+        n,y=zip(*table)
+        for candidate in ARMS:
+            others=[i for i in ARMS if i!=candidate]
+            levels={F(0),F(1)}
+            for flags in product((False,True),repeat=2):
+                tied=[candidate]+[i for i, active in zip(others,flags) if active]
+                weight=sum(n[i] for i in tied)
+                if weight:
+                    levels.add(F(sum(y[i] for i in tied),weight))
+            levels.update(F(hits,size) for size,hits in table if size)
+            def likelihood(top):
+                value=1
+                for i in ARMS:
+                    fitted=top if i==candidate or not n[i] else min(top,F(y[i],n[i]))
+                    value*=fitted**y[i]*(1-fitted)**(n[i]-y[i])
+                return value
+            exact=max(map(likelihood,levels))
+            assert abs(log(exact)-supremum(candidate,y,n))<1e-10
+            checked+=1
+    print("Exact small-sample null fits",checked)
+
+
 def threshold_monitor(s,answer,target):
     success=[0,0,0]; total=[0,0,0]
     survive=set(ARMS)
@@ -238,6 +269,7 @@ def threshold_monitor(s,answer,target):
 
 
 def main(path):
+    check_order_fit()
     rooms=read(path)
     print("Rooms/held-out experiment blocks",len(rooms),len(set(b for _,b,_,_ in rooms)))
     for diff in GAP:

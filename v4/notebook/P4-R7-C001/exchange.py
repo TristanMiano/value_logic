@@ -51,5 +51,18 @@ def test_network():
     print("First information circuit net, then rereading its record",F(7,100),-charge)
 
 
+def revising_a_commitment():
+    p,fee=F(1,4),F(1,5)
+    for G,L in ((3,2),(5,1)):
+        automatic=p*G-(1-p)*L
+        for sensitivity,false in ((F(9,10),F(1,10)),(F(4,5),F(1,5))):
+            costly=p*sensitivity*G-(1-p)*false*L-fee
+            assert costly>max(0,automatic)
+            print("Enduring gain / passing loss",G,L,"accuracy",sensitivity,false,
+                  "always release / screened",automatic,costly,
+                  "gain over better unconditional procedure",costly-max(0,automatic))
+
+
 if __name__=="__main__":
     test_network()
+    revising_a_commitment()

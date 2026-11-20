@@ -251,5 +251,50 @@ def main():
     print("Tested relaxation",float(payoff(relaxed,all_guard,1)))
 
 
+def testing_a_review_rule():
+    """Hide a rule assignment until filing or announce it in advance."""
+    def value(tau, cheap):
+        u = F(1,10)+F(9,10)*tau
+        share = max(0,min(1,(u-LOW)/(HIGH-LOW))) if cheap else 0
+        return F(21,40)+F(9,40)*tau-F(3,2)*u*share
+    cutoff = F(7,18)
+    guarded, open_a, open_b = value(0,True), value(1,True), value(1,False)
+    baseline = value(cutoff,True)
+    assert guarded==F(21,40) and open_a==-F(3,4) and open_b==F(3,4)
+    assert baseline==value(cutoff,False)==F(49,80)
+    for k in range(101):
+        tau=F(k,100)
+        assert (value(tau,True)+value(tau,False))/2 <= baseline
+    revealing=(HIGH-F(1,10))/F(9,10)
+    assert revealing==F(11,18)
+    now=(value(revealing,True)+value(revealing,False))/2
+    assert now==F(7,40)
+    for h in (8,9):
+        gain=now-baseline+h*F(3,8)*(open_b-baseline)
+        assert (gain>0)==(h==9)
+        print("Announced mixed pilot",revealing,"future",h,"net advantage",gain)
+    for h in range(17):
+        ordinary=2+(h+1)*baseline
+        change_a=open_a-baseline
+        change_b=(open_b-baseline)*(1+F(3,4)*h)
+        product_gain=(ordinary+change_a)*(ordinary+change_b)-ordinary**2
+        assert (product_gain>0)==(h>=14)
+        pilot_a=value(revealing,True)-baseline
+        pilot_b=value(revealing,False)-baseline+F(3,4)*h*(open_b-baseline)
+        partial_product=(ordinary+pilot_a)*(ordinary+pilot_b)-ordinary**2
+        assert (partial_product>0)==(h>=10)
+        if h in (9,10):
+            print("Mixed pilot ecological change",h,(pilot_a+pilot_b)/2,partial_product)
+        if h in (12,13,14):
+            print("Later jobs",h,"arithmetic gain",(change_a+change_b)/2,
+                  "two-habitat product gain",product_gain)
+    for control in (guarded, baseline):
+        advantage = F(3,8)*(open_b-control)
+        for future in (6,7,11,12):
+            print("Pre-filing pilot: comparator",control,"later jobs",future,
+                  "increment",future*advantage-control)
+
+
 if __name__=="__main__":
     main()
+    testing_a_review_rule()

@@ -21,7 +21,7 @@ SOURCES={
 }
 
 
-def read_ballots(path):
+def read_ballots(path, strata=None):
     data=path.read_bytes()
     assert sha256(data).hexdigest()==SOURCES[path.name],"unexpected data revision"
     lines=[line for line in data.decode("utf-8-sig").splitlines() if line.strip()]
@@ -33,7 +33,12 @@ def read_ballots(path):
     ballots=Counter()
     for r in csv.DictReader(lines[b+1:],delimiter=";"):
         choices=set(r["vote"].split(",")) if r["vote"] else set()
-        ballots[sum(1<<lookup[p] for p in choices)]+=1
+        mask=sum(1<<lookup[p] for p in choices)
+        ballots[mask]+=1
+        if strata is not None:
+            length='one' if len(choices)==1 else ('two to four' if len(choices)<=4 else 'five or more')
+            strata.setdefault('projects: '+length,Counter())[mask]+=1
+            strata.setdefault('voting: '+r['voting_method'],Counter())[mask]+=1
     assert meta["vote_type"]=="approval" and meta["rule"]=="greedy"
     assert len(lookup)==int(meta["num_projects"]) and sum(ballots.values())==int(meta["num_votes"])
     return meta,projects,ballots
@@ -131,7 +136,8 @@ def lottery(n,singles,feasible,coverage,tally,initial,min_target=None):
 
 
 def evaluate(path):
-    meta,projects,ballots=read_ballots(path)
+    strata={}
+    meta,projects,ballots=read_ballots(path,strata)
     n=len(projects)
     costs=np.array([int(r["cost"]) for r in projects],dtype=np.int64)
     official=sum(1<<j for j,r in enumerate(projects) if r["selected"]=="1")
@@ -212,6 +218,13 @@ def evaluate(path):
     print("Award coverage under one exact efficient lottery: originally represented / unrepresented",
           in_old,in_missed,"prior probability of exclusion above which it beats official",
           crossing,float(crossing))
+    for label,data in sorted(strata.items()):
+        size=sum(data.values())
+        represented=sum(w for v,w in data.items() if v&official)
+        expected=sum(w*int(tickets[(cols&v)!=0].sum()) for v,w in data.items())
+        print("Ballot stratum",label,"size / official / lottery / difference in pp",
+              size,represented,round(expected/(total*size),5),
+              round(100*(expected/total-represented)/size,3))
     costs_all=additive(costs)
     cheapest=int(min(costs[j] for j in range(n) if not official&(1<<j)))
     extra_subset=next(1<<j for j in range(n) if not official&(1<<j) and costs[j]==cheapest)
