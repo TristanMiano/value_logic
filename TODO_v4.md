@@ -10,7 +10,7 @@ Review and author-directed plan revision: **Codex (GPT-6)**, November 8.
 See the [author decision](v4/decisions/2026-11-08_approval.md) and
 [initialization review](v4/reviews/2026-11-08_initialization.md).
 
-**Active cycle: none.** [P4-R6-C002](v4/notebook/W6_terminality_addendum/record.md) completed its author-selected 60-minute floor at **60.339443105 engaged research minutes**. P4-R6-C001 (W6) completed
+**Active cycle: [P4-R7-C001](v4/notebook/P4-R7-C001/record.md).** [P4-R6-C002](v4/notebook/W6_terminality_addendum/record.md) completed its author-selected 60-minute floor at **60.339443105 engaged research minutes**. P4-R6-C001 (W6) completed
 **240.213796685 observed research minutes**, all by Codex (GPT-6), after
 verifying PR #37's merge. Read its [assessment](v4/notebook/P4-R6-C001/assessment.md),
 [record](v4/notebook/P4-R6-C001/record.md) and
