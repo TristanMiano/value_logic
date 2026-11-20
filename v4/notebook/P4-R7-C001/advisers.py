@@ -125,7 +125,83 @@ def funded_signal():
     print("Optional adviser investigation",private_value,receiver_return-GUARD.upkeep)
 
 
+def optimal_response(resident,disclosure,screen):
+    # At fixed false acceptance u, admitting passed certificates first
+    # maximizes useful acceptance t. Each filing segment is quadratic in u.
+    f,s=GUARD.mistaken,GUARD.useful
+    points={F(0),LOW,HIGH,F(1)}
+    if screen:
+        points.add(f)
+        for threshold in (LOW,HIGH):
+            u=threshold*f/s if threshold<=s else f+(1-f)*(threshold-s)/(1-s)
+            points.add(u)
+    def value(u):
+        t=min(s*u/f,s+(1-s)*(u-f)/(1-f)) if screen else u
+        rule=Rule("challenger",t,u,GUARD.upkeep if screen else F(0))
+        return payoff(rule,resident,disclosure)
+    checks=sorted(points)
+    for left,right in zip(checks,checks[1:]):
+        a,b,mid=value(left),value(right),value((left+right)/2)
+        curvature=2*(a+b-2*mid)
+        linear=b-a-curvature
+        if curvature<0:
+            vertex=-linear/(2*curvature)
+            if 0<vertex<1:
+                points.add(left+vertex*(right-left))
+    return max((value(u),u) for u in points)
+
+
+def disclosure_thresholds():
+    relaxed=Rule("optimal visible",F(169,180),LOW,GUARD.upkeep)
+    visible=((relaxed,F(1)),)
+    rigid=((RIGID,F(1)),)
+    hidden=((OPEN,F(23,54)),(GUARD,F(31,54)))
+    assert optimal_response(hidden,0,True)==(F(1,2),GUARD.mistaken)
+    assert optimal_response(hidden,0,False)==(F(1,2),F(1))
+    for q in (F(47,360),F(9,50),F(36,169),F(1)):
+        own=payoff(relaxed,visible,q)
+        assert optimal_response(visible,q,True)==(own,LOW)
+        assert optimal_response(visible,q,False)[0]<=own
+        assert optimal_response(rigid,q,True)[0]==q*F(169,240)-GUARD.upkeep
+        print("Full certificate menu; visibility, rare in rigid, guard among own",
+              q,optimal_response(rigid,q,True)[0],own)
+    assert optimal_response(rigid,F(36,169),True)[0]==0
+    assert optimal_response(visible,F(47,360),False)[0]==F(133,240)
+
+
+def who_learns():
+    # A fixed license is bought before an adviser learns its client's type.
+    from math import log,sqrt
+    gross=F(153,560)
+    info=F(9,896)
+    private_fee=F(1,125)
+    x_star,y_star=private_fee/info,GUARD.upkeep/gross
+    def signed_root(reference,x):
+        d=reference*log(reference/x)+(1-reference)*log((1-reference)/(1-x))
+        return (1 if x>=reference else -1)*sqrt(max(0,d))
+    for x in (.1,.5,.95):
+        lo,hi=0.,1.
+        for _ in range(50):
+            y=(lo+hi)/2
+            if sqrt(float(info))*signed_root(float(x_star),x)+sqrt(float(gross))*signed_root(float(y_star),y)>0:
+                hi=y
+            else:
+                lo=y
+        print("Initial reviewers, critical trained advisers",x,round((lo+hi)/2,6))
+    # The private adoption prize values advance access to a realized
+    # certificate differently from learning a new fact about production.
+    correct_tip,wrong_tip=F(27,280),F(9,1120)
+    correct_leak,wrong_leak=F(9,40),F(3,40)
+    assert 3*(correct_leak-correct_tip)/(wrong_leak-wrong_tip)==F(144,25)
+    for loss in (2,8):
+        print("Loss from a bad switch; independent/advance certificate payoffs",
+              loss,3*correct_tip-loss*wrong_tip-GUARD.upkeep,
+              3*correct_leak-loss*wrong_leak-GUARD.upkeep)
+
+
 def main():
+    disclosure_thresholds()
+    who_learns()
     funded_signal()
     joint_dynamics()
     pooled_review()

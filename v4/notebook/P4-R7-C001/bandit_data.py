@@ -11,7 +11,7 @@ from fractions import Fraction as F
 from hashlib import sha256
 from itertools import permutations
 from pathlib import Path
-from statistics import mean
+from statistics import mean, median
 import sys
 
 EXPECTED = "f10baa02c49abf3407cd7daa5fb9628de9cafc45480649e5c4158e71ac791dd0"
@@ -84,6 +84,34 @@ def predict(series,possible):
     return rows
 
 
+def uptake(series,run):
+    encounter=onset=None
+    streak=0
+    for t in range(41,71):
+        choices=series.get(t,())
+        picked=sum(x.grade==3 for x in choices)
+        if len(choices)>=2 and picked and encounter is None:
+            encounter=t
+        streak=streak+1 if len(choices)>=2 and 2*picked>len(choices) else 0
+        if streak>=run and onset is None:
+            onset=t-run+1
+    return encounter,onset
+
+
+def print_uptake(group):
+    for run in (1,3,5):
+        all_times=[uptake(s,run) for s in group]
+        observed=[e for e,t in all_times if e is not None]
+        changes=[(e,t) for e,t in all_times if t is not None]
+        early=[(e,t) for e,t in all_times if e is not None and e<=50]
+        assert all(e<=t for e,t in changes)
+        print("Encountered by 50/70, sustained",run,"rounds by 70,",
+              "median encounter/conditional lag, early encounter still no run",
+              len(early),len(observed),len(changes),median(observed) if observed else None,
+              median(t-e for e,t in changes) if changes else None,
+              sum(t is None for e,t in early))
+
+
 def main(path):
     assert sha256(path.read_bytes()).hexdigest()==EXPECTED,"wrong edition of source table"
     rooms=defaultdict(lambda:defaultdict(list))
@@ -103,6 +131,7 @@ def main(path):
     for diff in ["25%","50%","78%"]:
         group=[s for name,s in keep.items() if difficulty[name]==diff]
         print("Difficulty",diff,"rooms",len(group))
+        print_uptake(group)
         windows=defaultdict(list)
         forecasts=[]
         membership=[]
