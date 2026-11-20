@@ -25,11 +25,11 @@ def stage(counts, equal):
             for i,v in counts.items()}
 
 
-def decompose(left, right, roster, cutoff):
+def decompose(left, right, roster, cutoff, center_position=F(1,2)):
     def average(data):
         return sum(w*p for w,p in data.values())
     a,b = average(left),average(right)
-    center = (a+b)/2
+    center = a + center_position*(b-a)
     within = weight = replacements = activity = F(0)
     for i in left.keys() | right.keys():
         if i in left and i in right:
@@ -87,6 +87,98 @@ def experienced_speed(solves):
         print("Median log1p time advantage",round(median(a for a,c in keep),4))
 
 
+def separated_choices(solves, residents):
+    """Registered nontutors, including low-use birds in each denominator."""
+    from math import comb
+    outcomes = solves[solves.Event.isin(["efficient", "inefficient"])]
+    subjects = {(row.population,row.ID):str(row.condition) for row in residents.itertuples()}
+    assert len(subjects)==len(residents)
+    for width in (15,5):
+        summary = Counter()
+        sites = defaultdict(set)
+        for key, data in outcomes.groupby(["population","ID"]):
+            if key not in subjects:
+                assert set(data.tutor.astype(str)) == {"1"}
+                continue
+            rows = data.sort_values("ind_solve_count")
+            if len(rows)<2*width:
+                continue
+            first, last = rows.iloc[:width], rows.iloc[-width:]
+            if last.exp_day_count.min()-first.exp_day_count.max()<7:
+                continue
+            a = int((first.Event=="efficient").sum())
+            b = int((last.Event=="efficient").sum())
+            direction = (a>width//2,b>width//2)
+            name = subjects[key]
+            summary[name,direction] += 1
+            sites[name,direction].add(key[0])
+            total = a+b
+            # Conditional on both windows' total, all equal-size partitions
+            # are equiprobable under within-bird order exchangeability.
+            pval = F(sum(comb(width,j)*comb(width,total-j)
+                         for j in range(max(0,total-width), min(width,total)+1)
+                         if abs(total-2*j)>=abs(b-a)), comb(2*width,total))
+            if pval <= F(1,20*len(residents)) and a!=b:
+                summary[name,"up" if b>a else "down"] += 1
+        for name, n in sorted(Counter(subjects.values()).items()):
+            order = [(False,False),(False,True),(True,False),(True,True)]
+            counts = [summary[name,k] for k in order]
+            print("Separated windows",width,name,"roster/eligible",n,sum(counts),
+                  "low-low/low-high/high-low/high-high",counts,
+                  "aviaries with low-high/high-low",[len(sites[name,k]) for k in order[1:3]],
+                  "adjusted up/down", summary[name,"up"],summary[name,"down"])
+
+
+def entrance_choices(solves,residents):
+    roster = {(r.population,r.ID):r.date_in_aviary for r in residents.itertuples()}
+    events = solves[solves.Event.isin(["efficient","inefficient"])]
+    for include_entry in (False,True):
+        summary=defaultdict(Counter)
+        forecasts=[]
+        for population,room in events.groupby("population"):
+            room=room.sort_values(["full_timestamp","pop_solve_index"])
+            for bird,visits in room.groupby("ID"):
+                if (population,bird) not in roster:
+                    continue
+                case=visits.iloc[0]
+                date=roster[population,bird]
+                exposed=(room.YMD>=date) if include_entry else (room.YMD>date)
+                past=room[exposed & (room.full_timestamp<case.full_timestamp)]
+                assert not (past.ID==bird).any()
+                out=summary[str(case.condition)]
+                out["first"]+=1
+                actual=case.Event=="efficient"
+                recent=None if len(past)<5 else (past.Event.iloc[-5:]=="efficient").sum()>=3
+                forecasts.append((population,str(case.condition),str(case.week),actual,recent))
+                if recent is None:
+                    continue
+                out["recent"]+=1
+                out["right"]+=int(recent==actual)
+                out["constant"]+=int(not actual)
+                out["predict_high"]+=int(recent)
+                out["high_right"]+=int(recent and actual)
+                older=past.iloc[:-5]
+                votes=int((older.Event=="efficient").sum())
+                if not len(older) or 2*votes==len(older):
+                    continue
+                old=2*votes>len(older)
+                out["joint"]+=1
+                out["disagree"]+=int(old!=recent)
+                out["recent_wins"]+=int(old!=recent and recent==actual)
+        for pop,name,stage,actual,recent in forecasts:
+            if recent is None:
+                continue
+            pool=[x for x in forecasts if x[0]!=pop and x[1]==name]
+            stage_pool=[x for x in pool if x[2]==stage] or pool
+            prediction=2*sum(x[3] for x in stage_pool)>len(stage_pool)
+            out=summary[name]
+            out["calendar_right"]+=int(prediction==actual)
+            out["calendar_disagree"]+=int(prediction!=recent)
+            out["recent_beats_calendar"]+=int(prediction!=recent and recent==actual)
+        for name,result in sorted(summary.items()):
+            print("Entry forecast",name,"include entry day",include_entry,dict(sorted(result.items())))
+
+
 def read(solve_path, roster_path):
     assert sha256(solve_path.read_bytes()).hexdigest()==SOLVES
     assert sha256(roster_path.read_bytes()).hexdigest()==ROSTER
@@ -94,6 +186,8 @@ def read(solve_path, roster_path):
         warnings.filterwarnings("ignore", category=UserWarning, module="rdata")
         solves = rdata.read_rda(solve_path)["df_solves"]
         residents = rdata.read_rda(roster_path)["df_surv"]
+    separated_choices(solves, residents)
+    entrance_choices(solves, residents)
     solves = solves[solves.solver.astype(str)=="1"].copy()
     experienced_speed(solves)
     solves["base"] = solves.YMD-solves.exp_day_count
@@ -156,8 +250,27 @@ def report(groups,equal=False,alternate=False):
     return summary
 
 
+def centering(groups):
+    ranges = defaultdict(list)
+    for name,weeks,dates,_ in groups.values():
+        if len(weeks)!=5:
+            continue
+        stages = {n:stage(rows,False) for n, rows in weeks.items()}
+        bounds = []
+        for n in range(1,5):
+            pair = [decompose(stages[n],stages[n+1],dates,7*n,b) for b in (0,1)]
+            bounds.append([(min(x),max(x)) for x in zip(*pair)])
+        ranges[name].append([(sum(x[0] for x in col),sum(x[1] for x in col))
+                             for col in zip(*bounds)])
+    for name, panels in sorted(ranges.items()):
+        print("Center freely within adjacent group means",name,
+              [(round(float(mean(x[0] for x in col)),4),
+                round(float(mean(x[1] for x in col)),4)) for col in zip(*panels)])
+
+
 if __name__ == "__main__":
     data = read(*map(Path,sys.argv[1:]))
+    centering(data)
     baseline = report(data)
     report(data,equal=True)
     sensitivity = report(data,alternate=True)

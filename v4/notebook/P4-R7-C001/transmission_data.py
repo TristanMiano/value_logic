@@ -91,6 +91,18 @@ def matched_surrogates(actual, controls, roles):
     print("Distinct-pair controls per focal flight",focal.mean().round(6).to_dict())
     print("Actual minus matched controls by direction",excess.mean().round(6).to_dict(),
           "positive flights",(excess>0).sum().to_dict())
+    chain = actual.set_index(["Pair","Release"]).chain
+    by_chain = excess.groupby(chain).mean()
+    assert len(by_chain)==10
+    print("Corrected flight excess by chain: positive/min/max in each direction",
+          (by_chain>0).sum().to_dict(),by_chain.min().round(6).to_dict(),
+          by_chain.max().round(6).to_dict())
+    matched_release=clean[clean.Release==clean.ControlRelease]
+    exposed=matched_release.groupby(["focal","Release"])[["TEenr","TEner"]].mean()
+    exposed.index=exposed.index.set_names(["Pair","Release"])
+    repeated=physical.loc[exposed.index]-exposed
+    print("Different pair, same training release: coverage/mean excess/positive",
+          len(exposed),repeated.mean().round(6).to_dict(),(repeated>0).sum().to_dict())
     pair=excess.groupby(level="Pair").mean().join(roles.set_index("Pair")["Generation"])
     corrected=(pair.TEner-pair.TEenr).groupby(pair.Generation).mean()
     print("Adjusted novice-minus-experienced by generation",corrected.round(6).to_dict())
