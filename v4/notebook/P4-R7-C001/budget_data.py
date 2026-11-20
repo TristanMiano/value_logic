@@ -127,7 +127,7 @@ def lottery(n,singles,feasible,coverage,tally,initial,min_target=None):
         prices=integer_prices+coverage.astype(np.int64)*dual_denom
         upper=F(int(prices[feasible].max()),tally*dual_denom)-min_target*F(int(dual.sum()),tally*dual_denom)
         assert minimum>=min_target and avg==upper
-    return minimum,avg,upper,chosen
+    return minimum,avg,upper,chosen,tickets
 
 
 def evaluate(path):
@@ -184,13 +184,41 @@ def evaluate(path):
           "prior winners; number of coverage-preserving slates",int(weak.sum()),
           "fewest count losses when coverage strictly expands",min(losers))
     initial=[1<<j for j in singles]+[official,example,int(np.flatnonzero(feasible&(coverage==maxmean))[0])]
-    lower,avg,upper,support=lottery(n,singles,feasible,coverage,tally,initial)
+    lower,avg,upper,support,_=lottery(n,singles,feasible,coverage,tally,initial)
     print("Worst-ballot coverage certified",lower,float(upper),"support",len(support))
     target=lower
-    worst,average,bound,cols=lottery(n,singles,feasible,coverage,tally,
+    worst,average,bound,cols,tickets=lottery(n,singles,feasible,coverage,tally,
                                      initial+support.tolist(),target)
     print("Best mean with exact worst coverage; worst/mean/upper",
           worst,average,float(bound),"support",len(cols))
+    # The old/unrepresented mixture is an explicit prior over one's future
+    # ballot. A different optimum could distribute gains differently.
+    # Pinned schedule for the two-constituency calculation, since optimizing
+    # the primary and secondary objectives need not specify all ticket weights.
+    # Bit j selects the j-th project in the pinned source, indexed from zero.
+    witness=[(1371147,47),(1183151,297),(1396620,186),(510757,220),(518022,15),
+             (1435050,224),(1368876,54),(1566218,162),(502444,118),(475309,56),
+             (321317,23),(192043,101),(1190951,135),(240519,209),(1336233,85),
+             (1435267,140),(191269,17)]
+    cols,tickets=map(np.array,zip(*witness))
+    total=int(tickets.sum())
+    assert all(feasible[cols]) and total==2089
+    assert F(min(int(tickets[(cols & (1 << j))!=0].sum()) for j in singles),total)==lower
+    assert F(int(coverage[cols]@tickets),tally*total)==average
+    in_old=F(int(protected[cols]@tickets),baseline*total)
+    in_missed=F(int((coverage[cols]-protected[cols])@tickets),(tally-baseline)*total)
+    crossing=(1-in_old)/(1-in_old+in_missed)
+    assert F(baseline,tally)*in_old+F(tally-baseline,tally)*in_missed==average
+    print("Award coverage under one exact efficient lottery: originally represented / unrepresented",
+          in_old,in_missed,"prior probability of exclusion above which it beats official",
+          crossing,float(crossing))
+    costs_all=additive(costs)
+    cheapest=int(min(costs[j] for j in range(n) if not official&(1<<j)))
+    extra_subset=next(1<<j for j in range(n) if not official&(1<<j) and costs[j]==cheapest)
+    print("Minimal added budget to improve counts / reach all / do both",
+          spent+cheapest-budget,int(costs_all[essentials])-budget,
+          int(costs_all[essentials|official])-budget,
+          "newly represented on cheapest extension",coverage[official|extra_subset]-baseline)
     print("Full arbitrary approved-project weights: slack / least unfunded cost",
           budget-spent,min(int(costs[j]) for j in range(n) if not (official&(1<<j))))
 

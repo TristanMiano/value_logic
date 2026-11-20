@@ -97,9 +97,30 @@ def procurement():
             assert first > 1 and rho+(1-rho)/(first-1) >= critical
 
 
+def multiple_judgments():
+    anchor = F(3,11)
+    def q(p,theta):
+        return (1-anchor)*(3*p*p-2*p**3)+anchor*theta
+    for p in (F(1,4),F(1,2),F(3,4)):
+        assert q(p,F(1,2))==p
+        slope=(1-anchor)*6*p*(1-p)
+        effect=q(p,F(3,4))-q(p,F(1,4))
+        assert effect==F(3,22)
+        print("Self-consistent judgment / updating slope / common action surplus",
+              p,slope,effect-F(1,10))
+    for start in (.249,.49,.51,.751):
+        p=start
+        for _ in range(300):
+            p=float(q(p,.5))
+        assert abs(p-(.25 if start<.5 else .75))<1e-9
+    print("Confounded difference using different announcements",
+          q(F(1,4),F(3,4))-q(F(3,4),F(1,4)))
+
+
 if __name__ == "__main__":
     contest()
     contest(fixed_batch=True)
     archived_contest()
     physical_scale()
     procurement()
+    multiple_judgments()
